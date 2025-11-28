@@ -1,0 +1,1719 @@
+{
+  "submission": {
+    "id": "f0710664-9178-461f-bf3c-67e1a2d5f572",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:02:20.448192Z",
+    "updated_at": "2025-11-28T21:02:20.448192Z"
+  },
+  "content": [
+    {
+      "id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "submission_id": "f0710664-9178-461f-bf3c-67e1a2d5f572",
+      "content_type": "manuscript",
+      "content_text": "# Insect endosymbiont proliferation is limited by lipid availability\n\n## Authors\n\n- Jeremy K Herren<sup>1</sup> ([ORCID: 0000-0003-2239-7275](https://orcid.org/0000-0003-2239-7275)) \u2020\n- Juan C Paredes<sup>1</sup>\n- Fanny Sch\u00fcpfer<sup>1</sup>\n- Karim Arafah<sup>2</sup>\n- Philippe Bulet<sup>2</sup>\n- Bruno Lemaitre<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Global Health Institute School of Life Sciences, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL) Lausanne Switzerland\n2. Platform BioPark Archamps Saint Julien en Genevois France\n3. Universit\u00e9 Joseph Fourier, AGIM FRE CNRS La Tronche France\n\n\u2020 Corresponding author\n\n## Abstract\n\nSpiroplasma poulsonii is a maternally transmitted bacterial endosymbiont that is naturally associated with Drosophila melanogaster. S. poulsonii resides extracellularly in the hemolymph, where it must acquire metabolites to sustain proliferation. In this study, we find that Spiroplasma proliferation specifically depletes host hemolymph diacylglyceride, the major lipid class transported by the lipoprotein, Lpp. RNAi-mediated knockdown of Lpp expression, which reduces the amount of circulating lipids, inhibits Spiroplasma proliferation demonstrating that bacterial proliferation requires hemolymph-lipids. Altogether, our study shows that an insect endosymbiont acquires specific lipidic metabolites from the transport lipoproteins in the hemolymph of its host. In addition, we show that the proliferation of this endosymbiont is limited by the availability of hemolymph lipids. This feature could limit endosymbiont over-proliferation under conditions of host nutrient limitation as lipid availability is strongly influenced by the nutritional state.\n\n## Introduction\n\nMany insects harbor facultative bacterial endosymbionts, which despite not being required for host survival have important implications for host biology (Wernegreen, 2012). Two of the most prevalent and well-characterized facultative insect endosymbionts are Wolbachia and Spiroplasma, which are estimated to infect \u223c40% and 5\u201310% of all insects species, respectively (Hackett and Clark, 1979; Duron et al., 2008; Hilgenboecker et al., 2008). While Wolbachia principally resides intracellularly (Dobson et al., 1999; Albertson et al., 2009), Spiroplasma occupies an extracellular niche, proliferating mainly in the hemolymph that fills the body cavity of arthropods (Sakaguchi and Poulson, 1961; Anbutsu and Fukatsu, 2006). Spiroplasma and Wolbachia are both maternally transmitted and have developed unique strategies to colonize the germline of their female hosts for transmission to the next generation (Frydman et al., 2006; Serbus and Sullivan, 2007; Herren et al., 2013).\n\nFacultative endosymbionts with strict maternal transmission, including Wolbachia and Spiroplasma, increase their prevalence in host populations by virtue of two strategies: (i) manipulating host reproduction to increase the fitness of infected hosts (Werren and O'Neill, 1997); (ii) inducing a direct increase in host fitness in a manner that is usually condition dependent, for example protecting hosts against different classes of parasites (Hedges et al., 2008; Jaenike et al., 2010; Teixeira et al., 2008). Protective endosymbionts of disease vectors may be useful for the control of vector borne disease, and they are increasingly being studied in this context (Moreira et al., 2009). While these interactions are clearly of importance, more fundamental features of facultative endosymbioses are poorly understood and frequently overlooked, including metabolic exchanges and the mitigation of host fitness costs.\n\nGenome sequencing has indicated that endosymbiotic bacteria have highly reduced metabolic capacities and depend heavily on their hosts to provide them with a diversity of compounds needed for their sustained proliferation (Klein et al., 2012; Moran et al., 2008). However, the direct study of the metabolism of endosymbiotic bacteria is challenging, due to the high level of integration and interdependence between endosymbionts and their hosts. Therefore, despite a general, genome-centric understanding of the metabolic capacities of numerous endosymbionts, little is known about the nature of specific metabolites required for endosymbiont proliferation and the implications of metabolite acquisition by endosymbionts on host physiology and fitness.\n\nStrict maternal transmission is expected to result in the evolution of endosymbionts that have minimized host fitness costs (Werren and O'Neill, 1997). Experimental studies are generally in line with this prediction, for example Wolbachia and Spiroplasma have relatively minor effects on host fitness (Martins et al., 2010; Unckless and Jaenike, 2012), however, fitness costs usually become apparent as hosts age (Ebbert, 1991; Min and Benzer, 1997; Fry et al., 2004). For endosymbionts that colonize the germline from the adult soma, it has been demonstrated that endosymbiont titers are positively correlated with transmission fidelity (Dyer et al., 2005; Unckless et al., 2009). In general, endosymbiont titers (and hence proliferation rates) will therefore be determined by a compromise between the need to minimize host fitness costs and maximize transmission fidelity (Jaenike, 2009). Since host fitness costs are most likely minimized by the limiting excessive endosymbiont proliferation, the factors that limit endosymbiont proliferation are of central importance for the biology of endosymbionts; however, few mechanisms that are capable of limiting endosymbiont proliferation have been identified (Login et al., 2011). The proliferation of bacteria is often controlled by host immune systems; however, it is notable certain endosymbionts, including Spiroplasma, are not susceptible to host immune responses (Herren and Lemaitre, 2011) suggesting that other factors are likely to be of importance for limiting their proliferation.\n\nIn this study, we used the genetically tractable insect, Drosophila melanogaster and its endosymbiotic Spiroplasma (MSRO strain) to analyze the mechanisms that govern Spiroplasma proliferation and the effects of endosymbiont proliferation on host physiology. We find that under normal rearing conditions MSRO Spiroplasma (henceforth referred to as Spiroplasma) shortens the life span of its host, D. melanogaster. Interestingly, under nutrient limitation, where increased competition between Spiroplasma and its host could be expected, Spiroplasma proliferation is compromised with minimal effect on host fitness. We noted that under nutrient limitation, host hemolymph lipids decline significantly and that under normal rearing conditions, the first observable effect of Spiroplasma-infection on host physiology is a depletion of host lipids. We then used RNAi-based strategies to reduce the hemolymph lipid concentration and find that this inhibits Spiroplasma proliferation and extends the life span of Spiroplasma-harboring flies. We therefore demonstrate that: (i) specific hemolymph lipids are utilized by Spiroplasma and (ii) the availability of hemolymph-lipids limits the proliferation of Spiroplasma.\n\n## Results\n\n### The implications of harboring Spiroplasma on host fitness\n\nWe investigated the impact of harboring Spiroplasma on its host's fitness by measuring survival and egg production in both virgin and mated Spiroplasma-infected and uninfected female flies. When maintained on a rich Drosophila diet, flies-harboring Spiroplasma have a significantly shortened life span compared to flies that do not harbor Spiroplasma (Figure 1A, Figure 1\u2014figure supplement 1A), which is in agreement with a previous study on Drosophila willistoni and WSRO Spiroplasma (Ebbert, 1991). Notably, the presence of Spiroplasma did not significantly affect the death rate until flies were about 21\u201325 days old but flies began to exhibit signs of Spiroplasma-induced pathology between 14 and 21 days, as demonstrated by decreased performance in climbing assays (Figure 1B). Prior to death, aged Spiroplasma-harboring flies exhibit an apparent lack of coordination and tremors. The increase in Spiroplasma-induced lethality and pathology in old flies correlates with the increase of Spiroplasma titers, observed by qPCR of whole flies (Figure 1C) and fluorescence microscopy of hemolymph (Figure 1D). Consistent with previous studies on other Drosophila-endosymbiotic Spiroplasma strains (Anbutsu and Fukatsu, 2003; Haselkorn et al., 2013), we noticed that Spiroplasma titers reached a plateau in old flies (age >28 days) suggesting that a factor might limit Spiroplasma proliferation at this stage. In light of the finding that Spiroplama reduces fly life span and the apparent trade-off between life span and reproductive output in Drosophila (Partridge et al., 1987; Sgr\u00f2 and Partridge, 1999), we also compared the rate of egg production between Spiroplasma-infected and uninfected females. There was a twofold increase in the number of eggs laid by Spiroplasma-infected virgin flies compared to Spiroplasma-uninfected virgin flies over 14 days (Figure 1E). The number of eggs laid by Spiroplasma-infected mated flies over a 14-day period was similar to Spiroplasma-uninfected mated flies, however, Spiroplasma-infected mated flies laid an increased number of eggs in the first 2 days post-eclosion (Figure 1\u2014figure supplement 1B). These results indicate that the presence of Spiroplasma stimulates egg production in virgin flies and also in mated flies over the first 2 days post eclosion, while causing a minor decline in egg production of mated flies at later time points. Collectively, these experiments demonstrate that (i) Spiroplasma has a low impact on the general fitness of its host, negatively affecting survival and egg laying only in old flies and (ii) that this decrease in host fitness correlates with higher Spiroplasma titers.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02964/elife-02964-fig1-v2.jpg)\n\n**Figure 1.:** (A) Life span of virgin flies-harboring Spiroplasma (Sp (+)) relative to control flies that do not harbor Spiroplasma (Sp (\u2212)) when kept on a rich Drosophila diet. ***p<0.0001, N = 50 flies per condition. Shown is one representative experiment out of three independent experiments. (B) The climbing activity of virgin flies-harboring Spiroplasma (Sp (+)) relative to uninfected flies (Sp (\u2212)) over time. ***p<0.0001, N = 20 flies per condition. Shown is one representative experiment out of three independent experiments. (C) qPCR quantification of the titers of Spiroplasma in virgin flies over aging. Values for each timepoint have at least three samples (five flies pooled per sample). Shown is one representative experiment out of three independent experiments. (D) Fluorescent microscopy images depicting SYTO-9 stained Spiroplasma in Drosophila hemolymph at 7 days (D1) and 21 days (D2) of fly age. (E) The number of eggs laid by virgin flies-harboring Spiroplasma (Sp (+)) relative to control flies that do not harbor Spiroplasma (Sp (\u2212)), in total over 14 days (left panel) and in 2-day period over 14 days (right panel). In total, Spiroplasma-infected virgin flies laid significantly more eggs. *p=0.02. Shown is the mean \u00b1 SEM of data pooled from four independent experiments, N = 20 flies per experiment.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02964/elife-02964-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Life span of mated flies-harboring Spiroplasma (Sp (+)) relative to control flies that do not harbor Spiroplasma (Sp (\u2212)) when kept on a rich Drosophila diet. ***p<0.0001, N = 20 flies per condition. Shown is one representative experiment out of three independent experiments. (B) The number of eggs laid by mated flies-harboring Spiroplasma (Sp (+)) relative to control flies that do not harbor Spiroplasma (Sp (\u2212)), in total over 14 days (left panel) and in a 2-day period over 14 days (right panel). In total, there was no significant difference between the number of eggs laid by Spiroplasma-infected and Spiroplasma-uninfected mated flies. *p=0.02 and NS (p=0.16). Over the first 2 days, Spiroplasma-infected mated females produced significantly more eggs than their uninfected counterparts. ***p=0.0005. Shown is the mean \u00b1 SEM of data pooled from four independent experiments, N = 20 flies per experiment.\n\n### Effects of nutrient limitation on host survival and Spiroplasma proliferation\n\nWe had initially speculated that the competition for resources between Spiroplasma and its host would be more conspicuous upon nutrient scarcity and that under these conditions Spiroplasma might have a more detrimental effect on host fitness. To test this hypothesis, we maintained adult flies on a nutrient poor diet. Under these nutrient-limiting conditions, Drosophila survival is significantly compromised, however it is important to note that this diet still contains sufficient nutritional content to support an entire Drosophila life-cycle (Vijendravarma et al., 2012). It is also worth mentioning that we only examined the effects of nutrient deprivation in adult flies and that for all the experiments conducted Drosophila larvae were raised under normal conditions. Surprisingly, Spiroplasma-infected and uninfected virgin flies had a similar life span (Figure 2A) and produced similar numbers of eggs under nutrient-limiting conditions (Figure 2B). For mated flies under nutrient limitation, harboring Spiroplasma resulted in a minor reduction in survival relative to flies that did not harbor Spiroplasma (Figure 2\u2014figure supplement 1A). Spiroplasma-infected mated flies produced more eggs than Spiroplasma-uninfected mated flies under nutrient-limiting conditions (Figure 2\u2014figure supplement 1B). These findings suggest that, in contrast to our initial hypothesis, harboring Spiroplasma has a rather limited fitness cost under nutrient-limiting conditions. Importantly, we observed that Spiroplasma proliferation in whole flies (Figure 2B) and hemolymph (Figure 2\u2014figure supplement 2) was also significantly inhibited when flies are maintained on a nutrient poor diet. Thus, the inhibition of Spiroplasma proliferation in flies that are maintained under nutrient-limiting conditions could explain why Spiroplasma has limited fitness costs under these conditions. For consistency, and to facilitate the maintenance of flies under identical conditions, subsequent experiments were carried out on virgin females (unless otherwise specified).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02964/elife-02964-fig2-v2.jpg)\n\n**Figure 2.:** (A) Survival of virgin flies on a nutritionally poor diet. Flies-harboring Spiroplasma (Sp (+)) do not have significantly different mortality from flies that do not harbor Spiroplasma (Sp (\u2212)). NS (p=0.9378). N = 50 flies per condition. Shown is one representative experiment out of three independent experiments. (B) The number of eggs laid by virgin flies-harboring Spiroplasma (Sp (+)) relative to control flies that do not harbor Spiroplasma (Sp (\u2212)), in total over 14 days (left panel) and in 2-day period over 14 days (right panel). Overall, there is no significant difference in the number of eggs laid between Spiroplasma-infected and uninfected virgin flies under nutrient deprivation. NS (p=0.77). Shown is the mean \u00b1 SEM of data pooled from four independent experiments, N = 20 flies per experiment. (C) Quantification of Spiroplasma titers by qPCR reveals that virgin female flies maintained on the same nutritionally poor diet as in panel A have significantly lower Spiroplasma titers after 8 and 12 days than flies maintained on a rich diet. *p=0.015 and ***p=0.0002, respectively. Values for each time-point have at least three samples (five flies pooled per sample). Shown is the mean \u00b1 SEM of one representative experiment out of the three independent experiments that were conducted.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02964/elife-02964-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Survival of mated flies on a nutritionally poor diet. Mated flies-harboring Spiroplasma (Sp (+)) do have significantly higher mortality relative to mated flies that do not harbor Spiroplasma (Sp (\u2212)) on a nutritionally poor diet. ***p<0.0001. N = 20 flies per condition. Shown is one representative experiment out of three independent experiments. (B) The number of eggs laid by mated flies-harboring Spiroplasma (Sp (+)) relative to control flies that do not harbor Spiroplasma (Sp (\u2212)), on a nutrient poor diet, in total over 14 days (left panel) and in 2-day period over 14 days (right panel). In total, Spiroplasma-infected mated flies laid significantly more eggs. *p=0.02. Shown is the mean \u00b1 SEM of data pooled from four independent experiments, N = 20 flies per experiment.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02964/elife-02964-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Quantification by qPCR reveals that Spiroplasma titers are significantly lower in the hemolymph of flies maintained on a nutrient poor diet for 12 days than flies maintained on a rich diet. *p=0.04. Values are the mean \u00b1 SEM of at least three samples (hemolymph from 12 flies pooled per sample). Shown is one representative experiment out of the three independent experiments that were conducted.\n\n### Spiroplasma proliferation is influenced by the nutrient composition of the diet\n\nThe results above suggest that Spiroplasma proliferation might be dependent on the availability of host factors that are nutritional state-dependent. To identify these factors, we examined the effect that maintaining uninfected flies for 12 days on a nutrient poor diet had on the concentration of metabolites in the hemolymph (where Spiroplasma reside). We found that raising flies on a nutrient poor diet resulted in significantly lower concentrations of protein, sterol and diacylglyceride (DAG, the main transport lipid in Drosophila) (Figure 3A\u2013C), while levels of glucose and trehalose were not changed significantly (Figure 3\u2014figure supplement 1A,B) and L-amino acids increased (Figure 3\u2014figure supplement 1C). Thus, nutrient limitation led to a specific decline in hemolymphatic protein and lipid concentrations. We then complemented the nutrient poor diet with either inactivated yeast (rich in protein and lipids) or sucrose, we found that only inactivated yeast extract was able to recover the Spiroplasma proliferation rates observed on rich media (Figure 4). This indicates that Spiroplasma proliferation is not only affected by the caloric content of the food but by the composition of the diet. Taken together, these results lend support to the hypothesis that Spiroplasma proliferation is heavily dependent on hemolymph metabolite composition and that certain metabolites (e.g., lipids and protein) could play a more important role than others (e.g., sugars).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02964/elife-02964-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013C) The protein (A), sterol (B), and DAG (C) concentration of the hemolymph of flies maintained on nutritionally poor diets for 12 days is significantly lowered relative to flies maintained on a nutritionally rich diet. Mean \u00b1 SEM of three independent experiments is shown, *p=0.038, *p=0.023, and **p=0.0018, respectively.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02964/elife-02964-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Quantification of glucose (A), trehalose (B), and L-amino acid (C) concentration of the hemolymph of flies maintained on nutritionally poor diets for 12 days relative to flies maintained on a rich diet. L-amino acid concentration of the hemolymph is significantly higher in nutrient poor media relative to flies maintained under nutrient rich conditions while glucose and trehalose concentrations remain unchanged. Mean \u00b1 SEM of three independent experiments is shown, NS (p=0.1319 and p=0.357) and **p=0.0027.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02964/elife-02964-fig4-v2.jpg)\n\n**Figure 4.:** Quantification of Spiroplasma titers by qPCR reveals that complementing nutrient poor media with inactivated yeast results in a significant increase in Spiroplasma titers after 12 days. ***p=0.0003. In contrast, complementing nutrient poor media with sucrose does not significantly increase Spiroplasma titers. NS (p=0.5). Values are the mean \u00b1 SEM of at least four samples (five flies per sample). Shown is one representative experiment out of the three independent experiments that were conducted.\n\n### Spiroplasma proliferation depletes lipids from the hemolymph and fat body\n\nTo gain a better insight into the relationship between Spiroplasma and host physiology, we monitored the effects of harboring Spiroplasma on the concentration of metabolites in the hemolymph of flies raised on a rich diet. We observed that the concentration of measured sugars was not changed and that the L-amino acid concentration was even increased in the presence of Spiroplasma (Figure 5A\u2013C). We also found that the hemolymph of flies-harboring Spiroplasma had an increased concentration of proteins and sterol (Figure 5D,E). However, after centrifugation to remove bacterial cells, the protein and sterol concentration was no longer significantly different between Spiroplasma-infected and Spiroplasma-uninfected hemolymph samples. This suggests that Spiroplasma cells contain a substantial amount of proteins and sterol, but that the presence of this endosymbiont does not deplete either of these factors in the hemolymph. Notably, we observed that Spiroplasma-infected flies experienced a significant drop in the concentration of DAG within the hemolymph (Figure 5F). Importantly, this difference is not caused by the previously noted differences in the rate of egg production between Spiroplasma-infected and Spiroplasma-uninfected virgin flies, as a decrease in DAG was also observed in mated flies (Figure 5\u2014figure supplement 1A), where Spiroplasma did not affect the number of eggs laid over 14 days (Figure 1\u2014figure supplement 1B). We also observed that there was a more marked decline in DAG levels in 28-day-old Spiroplasma-infected relative to uninfected flies (Figure 5\u2014figure supplement 1B), where Spiroplasma titers have nearly reached their maximum levels (Figure 1C) and egg production declines (David et al., 1975; Partridge et al., 1987). We then investigated the impact of Spiroplasma on metabolite storage in the fat body by quantifying the amount of triacylglyceride (TAG, the main storage lipid in Drosophila) and glycogen (the main storage carbohydrate in Drosophila). Quantifications of whole female flies (reflecting mainly insect fat body energy storage but also the energy contents of the ovaries) showed a decrease in the amount of TAG in Spiroplasma-infected flies compared to Spiroplasma-uninfected flies (Figure 5G), while the amount of glycogen was not affected by the presence of Spiroplasma (Figure 5\u2014figure supplement 2). Consistent with the decrease in TAG reserves, 12-day-old Spiroplasma-infected flies succumb more rapidly to acute starvation, in which flies are only given a source of water but no source of nutrition (Figure 5H). Since TAG stored in the fat body largely derived from hemolymph DAG (Canavoso et al., 2001), the decrease of TAG is likely to be the outcome of the depletion of hemolymphatic DAG by Spiroplasma. Thus, our analyses show that the proliferation of Spiroplasma in flies is associated with a specific depletion of hemolymph DAG as well as a decrease in the amount of fat body lipid storage. These findings, together with the observation that DAG is depleted under nutrient deprivation, suggest that DAG availability limits Spiroplasma proliferation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02964/elife-02964-fig5-v2.jpg)\n\n**Figure 5.:** Quantification of metabolites in flies that have been maintained on rich media for 12 days. Glucose (A), trehalose (B), and L-amino acid (C) concentration within the hemolymph of uninfected flies (Sp (\u2212)) and Spiroplasma-infected flies (Sp (+)). L-amino acid concentration in the hemolymph is significantly higher in Spiroplasma-infected flies while glucose and trehalose concentrations remain unchanged. Mean \u00b1 SEM of three independent experiments is shown, NS (p=0.798 and p=0.977) and **p=0.0056. (D\u2013E) Quantifications of protein (D) and sterol (E) concentration in hemolymph from flies that harbor Spiroplasma (Sp (+)) and uninfected flies (Sp (\u2212)). Hemolymph samples denoted as \u2018supernatant\u2019 have been subjected to an additional centrifugation to remove Spiroplasma cells, whereas all other hemolymph samples contain both Spiroplasma cells and hemolymph. Flies-harboring Spiroplasma have significantly higher total levels of protein and sterol in the hemolymph. Mean \u00b1 SEM of three independent experiments is shown, *p=0.04 and *p=0.037. After centrifugation to remove bacteria from the hemolymph, there was no longer any significant difference in protein and sterol concentrations between Spiroplasma-infected and uninfected hemolymph. Mean \u00b1 SEM of three independent experiments is shown, NS (p=0.881 and p=0.491, respectively). (F) Quantification of DAG content of hemolymph extracts from flies that harbor Spiroplasma (Sp (+)) and flies that do not (Sp (\u2212)). *p=0.0266. Mean \u00b1 SEM of three independent experiments is shown. (G) Quantification of whole-fly (reflecting mainly fat body) TAG levels in flies that harbor Spiroplasma (Sp (+)) and uninfected flies (Sp (\u2212)). **p=0.0043. Mean \u00b1 SEM of three independent experiments is shown. (H) Survival of flies subjected to an acute starvation after being maintained on rich media for 12 days. Flies-harboring Spiroplasma (Sp (+)) have significantly greater mortality rate than flies that do not harbor Spiroplasma (Sp (\u2212)). ***p<0.0001. N = 20 flies per condition, shown is one representative experiment out of three independent.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02964/elife-02964-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Quantification of DAG content of hemolymph extracts from 12-day-old mated flies (A) and 28-day-old virgin flies (B) that harbor Spiroplasma (Sp (+)) and flies that do not (Sp (\u2212)). *p=0.03 and **p=0.0008, respectively. Mean \u00b1 SEM of three independent experiments is shown.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02964/elife-02964-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Whole fly (reflecting mainly fat body stores) glycogen concentrations in 12-day-old flies uninfected (Sp (\u2212)) and infected (Sp (+)) with Spiroplasma. Mean \u00b1 SEM of three independent experiments is shown, NS (p=0.9226).\n\n### Spiroplasma proliferation is associated with the production of cardiolipin\n\nSince the hemolymph derived from Spiroplasma-infected flies contained Spiroplasma and had reduced DAG, it is likely that Spiroplasma is not directly incorporating DAG into their membrane but rather metabolize DAG into another compound. The main classes of lipids that are present in Spiroplasma are phosphatidylglycerols, sterols, sphingolipids, and cardiolipins (Freeman et al., 1976). Cardiolipins are a class of lipids found exclusively in eubacteria and in the mitochondria of eukaryotic cells (Hawthorne and Ansell, 1982). In contrast to other major lipidic components of Spiroplasma membranes, cardiolipins are not present at detectable levels in the Drosophila hemolymph (Carvalho et al., 2012). Cardiolipins are comprised of four acyl chains, two phosphate groups and three glycerols, and therefore are made up of similar components to DAGs, which consist of two acyl chains and a glycerol. Analysis of the Spiroplasma genome reveals that Spiroplasma is nearly devoid of lipid metabolic capacities but possess genes involved in the synthesis of cardiolipin from the precursor DAG through a pathway involving DAG-3-phosphate and cytidine diphosphate-DAG (unpublished data). To investigate the production of cardiolipin by Spiroplasma, we conducted a MALDI time-of-flight mass spectrometry (MALDI-Tof-MS) analysis of lipid species in fly hemolymph and found that there were only peaks at m/z values that correspond to cardiolipin in the hemolymph of flies-harboring Spiroplasma (Figure 6A). A major ion at m/z 1425.05 was isolated and fragmented, which confirmed the presence of cardiolipin and revealed that the cardiolipins were comprised of C16:0 and C18:1 acyl chains (Figure 6B). In addition, we used liquid chromatography\u2013tandem mass spectrometry (LC-MS/MS) to quantify the effect of Spiroplasma infection on the concentration of individual DAG species in Drosophila hemolymph. We observed that overall DAG concentration declined by 16.3%, however certain DAG species (e.g., C32:1 and C34:1 DAG) declined to a much greater extent (Table 1). It is notable that DAG species that decline to the greatest extent in the presence of Spiroplasma are those likely to contain (based on Drosophila fatty acid composition) one saturated (e.g., C14:0 or C16:0) and one mono-unsaturated (e.g., C16:1 or C18:1) medium-length acyl chain (Shen et al., 2010). The observation that Spiroplasma-generated cardiolipin contains the same configuration of one saturated and one mono-unsaturated medium-length acyl chain (predominately C16:0, C18:1) indicates that Spiroplasma most likely produce cardiolipin using fly hemolymph DAG. The transformation of DAG into cardiolipin offers an explanation for the observed decrease in hemolymph DAG levels in the presence of Spiroplasma.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02964/elife-02964-fig6-v2.jpg)\n\n**Figure 6.:** (A) Negative MALDI-TOF/MS lipid profile of hemolymph from Spiroplasma-uninfected (top) and Spiroplasma-infected flies (bottom). The m/z signal peaks in the 1380\u20131460 range of Spiroplasma-uninfected hemolymph do not correspond to m/z values of cardiolipin, whereas the peaks in this region for Spiroplasma-infected hemolymph profile (e.g., 1403.11, 1425.05) do correspond to cardiolipin. (B) The isolation and fragmentation of the m/z 1425.05 parent ion resulted in the generation of daughter ions with peaks at m/z 281.36 and 255.35 that have been characterized as oleic acid (C18:1) and palmitic acid (C16:0) using Lipid MS Predict software with an error tolerance set to 0.1 u.m.a. The peak at m/z 79.02 detected in the same experiment corresponds to a phosphate ion. Six additional peaks (m/z 153.11, 311.09, 391.29, 417.33, 491.29 and 831.33) were also detected corresponding to phosphatidyl moieties and the cardiolipin \u2018backbone\u2019 (Hsu and Turk, 2006). Altogether, this indicates that the molecular ion corresponds to the cardiolipid species [M-2H+Na]\u2212 m/z 1425.05.\n\n**Table 1.**\n Characterization and quantification of hemolymph of DAG species\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Component name</th>\n      <th>Sp \u2212 (\u00b5g/ml)</th>\n      <th>Sp + (\u00b5g/ml)</th>\n      <th>% Of total mass decline</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>C28:0 DAG</td>\n      <td>13.4</td>\n      <td>12.3</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>C28:1 DAG</td>\n      <td>0.8</td>\n      <td>0.6</td>\n      <td>1.2</td>\n    </tr>\n    <tr>\n      <td>C30:2 DAG</td>\n      <td>0.7</td>\n      <td>0.5</td>\n      <td>1.2</td>\n    </tr>\n    <tr>\n      <td>C30:0 DAG</td>\n      <td>0.1</td>\n      <td>0.2</td>\n      <td>\u22121.0</td>\n    </tr>\n    <tr>\n      <td>C32:3 DAG</td>\n      <td>1.2</td>\n      <td>1.1</td>\n      <td>0.7</td>\n    </tr>\n    <tr>\n      <td>C32:2 DAG</td>\n      <td>23.1</td>\n      <td>21.8</td>\n      <td>8.2</td>\n    </tr>\n    <tr>\n      <td>C32:1 DAG</td>\n      <td>19.8</td>\n      <td>15.1</td>\n      <td>30.1</td>\n    </tr>\n    <tr>\n      <td>C34:2 DAG</td>\n      <td>11.5</td>\n      <td>10.8</td>\n      <td>4.9</td>\n    </tr>\n    <tr>\n      <td>C34:1 DAG</td>\n      <td>9.7</td>\n      <td>6.9</td>\n      <td>19.3</td>\n    </tr>\n    <tr>\n      <td>C34:0 DAG</td>\n      <td>1.4</td>\n      <td>0.5</td>\n      <td>5.6</td>\n    </tr>\n    <tr>\n      <td>C36:4 DAG</td>\n      <td>0.8</td>\n      <td>0.5</td>\n      <td>1.8</td>\n    </tr>\n    <tr>\n      <td>C36:3 DAG</td>\n      <td>2.9</td>\n      <td>2.2</td>\n      <td>5.3</td>\n    </tr>\n    <tr>\n      <td>C36:2 DAG</td>\n      <td>4.2</td>\n      <td>2.9</td>\n      <td>9.3</td>\n    </tr>\n    <tr>\n      <td>C36:1 DAG</td>\n      <td>0.8</td>\n      <td>0.9</td>\n      <td>\u22120.3</td>\n    </tr>\n    <tr>\n      <td>C36:0 DAG</td>\n      <td>1.7</td>\n      <td>0.7</td>\n      <td>6.9</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>92.1</td>\n      <td>77</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_Quantification of the absolute concentration of individual DAG species in the hemolymph of Spiroplasma-uninfected (Sp (\u2212)) and Spiroplasma-infected (Sp (+)) mated flies by LC-MS/MS. The % of total mass decline reflects the percentage of the total decline between Spiroplasma-uninfected and infected samples (a total of 15.1 \u03bcg/ml or 16.3%) that can be attributed to each DAG species. It is notable that C32:1 and C34:1 DAG species decline to a greater extent than other common DAG species such as C28:0 and C32:2. This suggests that Spiroplasma is preferentially incorporating DAGs that have one saturated and one mono-unsaturated acyl chain. Notably, C34:1 DAGs are likely to be made up of oleic (C18:1) and palmitic (C16:0) acids, which have exactly the same acyl chains that were identified in Spiroplasma-generated cardiolipins (Figure 6B)._\n\n### Spiroplasma acquires hemolymph-lipids prior to storage in the fat body\n\nIn Drosophila, dietary lipids are broken down in the gut lumen by lipases prior to absorption by intestinal cells (Sieber and Thummel, 2012). In the enterocytes, these compounds are used for the synthesis of DAG, which is packaged together with phosphoethanolamine, sterol, other minor lipids, and the apolipophorin protein (Lpp), to form lipoprotein particles. Lpp is produced in the fat body but travels to the gut where it gets loaded with lipids prior to trafficking throughout the body (Palm et al., 2012). Lpp is the main hemolymph lipid carrier, since more than 95% of the hemolymph lipids in Drosophila co-fractionate with Lpp (Palm et al., 2012).\n\nOur results are consistent with Spiroplasma subverting and utilizing the lipids contained in hemolymph lipoprotein particles prior to their arrival at the fat body. This has the consequence of decreasing the observed levels of stored lipids. To rule out the possibility that Spiroplasma induces the mobilization of lipid stores, which could also decrease TAG levels, we quantified the effect of Spiroplasma on TAG levels in AKHR and Bmm double mutant flies. Adipokinetic hormone receptor (AKHR) and the Brummer lipase (Bmm) are components of two independent pathways that mobilize lipids from Drosophila fat bodies. Signaling through AKHR initiates mobilization of stored lipid in the insect fat body (G\u00e4de and Auerswald, 2003), and Bmm is a TAG lipase involved in mobilization of stored lipid (Gr\u00f6nke et al., 2005). AKHR1;bmm1 double mutant flies exhibit an \u2018obese\u2019 phenotype because the fat bodies of these flies store lipids but are not subsequently able to mobilize or release lipids (Gr\u00f6nke et al., 2007). We found that fat body TAG levels in AKHR1;bmm1 double mutants that harbored Spiroplasma were still significantly lower after 12 days than flies with the same genotype that did not harbor Spiroplasma (Figure 7). While we cannot rule out other, as of yet uncharacterized, lipid mobilization pathways that could theoretically be activated by Spiroplasma, these results are still a strong indication that Spiroplasma lipid acquisition most likely occurs in the hemolymph before the point of lipid entry into the fat body stores.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/02964/elife-02964-fig7-v2.jpg)\n\n**Figure 7.:** TAG levels in AKHR1;Bmm1 double mutants that harbor Spiroplasma (AKHR1;Bmm1 Sp (+)) relative to the same genotype without Spiroplasma (AKHR1;Bmm1 Sp (\u2212)). *p<0.0153. Flies were maintained on a rich Drosophila diet for 12 days prior to TAG analysis. Mean \u00b1 SEM of three independent experiments is shown.\n\n### Spiroplasma proliferation depends on hemolymph lipid availability\n\nWe have observed that: (i) Spiroplasma's proliferation is affected by host nutrient limitation and (ii) Spiroplasma consumes the hemolymph DAGs. These findings lead us to hypothesize that the proliferation of Spiroplasma could be constrained by the availability of lipids in the hemolymph, which is known to be heavily dependent on the insect nutritional status (Canavoso et al., 2001). To further investigate the lipid-centric metabolic interplay between Spiroplasma and Drosophila, we monitored Spiroplasma proliferation in flies with a reduced capacity for inter-organ lipid transport and hence decreased hemolymph lipid concentrations. A recent study has shown that RNAi-mediated knockdown of Lpp in the fat body resulted in a decrease in circulating lipoprotein particles and a blockage of lipid export from the gut of Drosophila larvae (Palm et al., 2012). Based on these findings, we used a similar RNAi strategy to knockdown Lpp in the fat body of adult flies. In this experiment, we specifically expressed Lpp-RNAi in the fat bodies of adult flies using a flippase-mediated activation strategy (Marois and Eaton, 2007). We established that RNAi-mediated knockdown of Lpp does not significantly decrease the overall levels of protein in the adult hemolymph (Figure 8\u2014figure supplement 1) but does decrease adult hemolymph-lipids, as shown by quantification of hemolymph DAG and sterol (Figure 8A,B). We then investigated the effect of this lipid reduction on the Drosophila\u2013Spiroplasma interaction. We found that under conditions of Lpp knockdown, Spiroplasma proliferation was severely inhibited resulting in lower Spiroplasma titers in flies after 14, 21, and 28 days of aging (Figure 8C). To rule out any possibility that the genetic background of Lpp-RNAi flies was causing the observed decrease in Spiroplasma titers, we quantified Spiroplasma titers in the absence of activation of Lpp-RNAi by heat-shock and found no significant difference between flies containing the Lpp-RNAi construct and those that did not (Figure 8\u2014figure supplement 2A). In addition, we used an independent Lpp-RNAi construct with another fat body specific driver and activation strategy to confirm that the decrease in Spiroplasma titers was specifically caused by RNAi-mediated Lpp knockdown (Figure 8\u2014figure supplement 2B). It is noteworthy that Spiroplasmas are not known to have the capacity to utilize proteins as nutrient sources (Chang and Chen, 1983), supporting the claim that lipids carried by Lpp (and not the Lpp protein itself) are the factors required for the proliferation of Spiroplasma. Another striking effect of the RNAi-mediated knockdown of Lpp was strongly diminished Spiroplasma-induced old age mortality (Figure 8D).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/02964/elife-02964-fig8-v2.jpg)\n\n**Figure 8.:** (A) Quantification of DAG levels in hemolymph of 12-day-old flies 8 days after knockdown of Lpp by RNAi. Mean \u00b1 SEM of three independent experiments is shown, *p=0.015. (B) Quantification of sterol concentration in hemolymph of 12-day-old flies 8 days after knockdown of Lpp by RNAi. *p=0.0125. Mean \u00b1 SEM of three independent experiments is shown. (C) Spiroplasma titers quantified by qPCR in flies which have Lpp expression knocked down by RNAi relative to control flies. Spiroplasma titers were quantified at 7, 14, 21, and 28 days after activation of RNAi. Mean \u00b1 SEM of at least three samples is shown (five flies pooled per sample). ***p=0.0005 (14 days), *p<0.01 (21 days), and *p<0.01 (28 days). Shown is one representative experiment out of three independent experiments. (D) The survival of Spiroplasma-infected (Sp (+)) and Spiroplasma-uninfected (Sp (\u2212)) flies with or without RNAi-mediated Lpp knocked down. ***p<0.0001, N = 18 flies per condition. Shown is one representative experiment out of three independent experiments.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02964/elife-02964-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Protein concentration in the hemolymph of flies that are 12 days old, 8 days after activation of Lpp-RNAi. NS (p=0.908). Mean \u00b1 SEM of three independent experiments is shown.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02964/elife-02964-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (A) Spiroplasma titers quantified by qPCR in flies which have Lpp-RNAi construct which has not been activated by heat shock relative to control flies without the Lpp-RNAi construct, NS (p=0.587), and an additional control where Lpp-RNAi has been activated, **p=0.0037. Spiroplasma titers were quantified at 14 days of fly age. Mean \u00b1 SEM of at least three samples is shown (five flies pooled per sample). Shown is one representative experiment out of the three independent experiments. (B) Spiroplasma titers quantified by qPCR in flies in which Lpp has been knocked down by the expression of the UAS-LppRNAi(46) using the C564>gal4TS driver. Flies were raised at the restrictive temperature of 18\u00b0C where C564>gal4 activity is repressed by gal80ts and then shifted to 29\u00b0C at 4 days post-eclosion (Lpp-RNAi is then activated) where they were maintained for 25 days. *p=0.0215. Mean \u00b1 SEM of at least three samples is shown (five flies pooled per sample). Shown is one representative experiment out of the three independent experiments.\n\n## Discussion\n\nWe have demonstrated that Spiroplasma subverts specific host lipids and that its proliferation is limited by the availability of host hemolymph-lipids. This finding is based on several observations: (i) Spiroplasma proliferation rate is decreased in the hemolymph of nutrient deprived flies and old flies, two conditions in which hemolymph\u2013lipid concentration is decreased; (ii) the proliferation of Spiroplasma depletes hemolymph and fat body lipids; and (iii) a genetically induced reduction in Lpp-lipids inhibits Spiroplasma proliferation.\n\nNatural selection is expected to favor vertically transmitted endosymbionts with adaptations that minimize fitness costs to their hosts (Werren and O'Neill, 1997). We hypothesize that Spiroplasma's dependence on hemolymph-lipid availability for proliferation could be of adaptive significance, since it would enable Spiroplasma to limit its proliferation in the face of host nutrient deprivation, and therefore avoid the costly depletion of its host's energy and other vital metabolites. If the proliferation rate of Spiroplasma were to be determined by metabolites that do not decline under nutrient-limiting conditions, for example sugars and L-amino acids, then Spiroplasma proliferation would not be limited under host nutritional deprivation. Such a lack of restriction could result in greater negative effects on its host's fitness. For example, we might expect a striking decrease in reproductive output or survival, which was not observed for Spiroplasma-infected flies maintained on a nutrient poor diet. We only observed that mated flies-harboring Spiroplasma had increased mortality after about 7 days under nutrient-limiting conditions, and this is not likely to have a major impact on host fitness since increased mortality occurred after the production of eggs had stopped.\n\nUnder normal conditions, Spiroplasma's significantly decreases the life span of its host Drosophila (also shown in Ebbert, 1991). However, aspects of this Spiroplasma-induced pathogenesis, including the late onset of symptoms, suggest that Spiroplasma may be employing strategies to minimize host fitness costs. Spiroplasma's capacity to utilize available host lipids for proliferation results in depleted hemolymph-lipids and reduced fat body stores. This depletion also has a fitness consequence for flies, since Spiroplasma-infected flies die more rapidly when subjected to a period of acute starvation, but it is possible that Spiroplasma's reliance on these lipids might be less detrimental than usage of other more critical metabolites that would impact host fitness more directly.\n\nDrosophila fitness and longevity are linked to egg production rates (Partridge et al., 1987), which can be affected by the presence of facultative endosymbionts (Fast et al., 2011). On nutrient rich media, we found that despite increasing early egg production Spiroplasma infection status did not affect the total number of eggs laid over a 14-day period. The Spiroplasma-induced early increase in egg production has been described previously for other Spiroplasma strains (Ebbert, 1991; Martins et al., 2010). While the mechanistic basis of this increase is unknown, it offers a possible explanation for the greater number of eggs laid by Spiroplasma-infected flies on nutrient poor media, where the majority of eggs laid by all flies are in the first 2 days post-eclosion. Under rich nutritive conditions, we observed that Spiroplasma increased by twofold the number of eggs laid by virgin flies over a 14-day period. This finding is suggestive of a Spiroplasma-mediated disruption in the balance between egg retention and laying of virgin flies. One could speculate that Spiroplasma interferes with the signaling pathways (e.g., Juvenile Hormone and/or Ecdysone), which have previously been shown to regulate the production of eggs (Soller et al., 1999).\n\nWe observed a decrease in Spiroplasma proliferation in flies after 28 days. A late decline in Spiroplasma proliferation has been demonstrated for a number of other Spiroplasma strains (Anbutsu and Fukatsu, 2003; Haselkorn et al., 2013). It is notable that flies aged for 28 days also experience a decline in DAG concentration, which is likely to explain the declining Spiroplasma proliferation rate. We suspect that Spiroplasma proliferation over the life of flies results in elevated Spiroplasma titers that ultimately deplete host hemolymph lipid and constrain further proliferation. In the MSRO-Spiroplasma system, this decline in proliferation does not appear to limit Spiroplasma-induced mortality, however, other Drosophila\u2013Spiroplasma strains appear to reach maximal titers at earlier time points and therefore this is an aspect of the endosymbiont's biology could play a more important role in limiting fitness costs in other systems.\n\nWe noted that Spiroplasma-infected flies had higher levels of cardiolipin, suggesting that Spiroplasma synthesize cardiolipin, most likely using DAG acquired from host lipoproteins. We observed that Spiroplasma specifically depleted host DAG species that contained one saturated and one mono-unsaturated acyl chain, which was also the most abundant acyl chain configuration in Spiroplasma-produced cardiolipin (which contained C16:0 and C18:1 acyl chains). The basis of this acyl chain specificity is not known, but it could be linked to biophysical properties of cardiolipins in the highly curved Spiroplasma membrane. The utilization of DAG as a precursor for cardiolipin synthesis is supported by the annotation of the Spiroplasma genome (unpublished data), which enabled the identification of a biosynthetic pathway similar to that described in Mycoplasma synoviae and Mycoplasma hyopneumoniae for the synthesis of cardiolipin from acylglycerols through DAG-3-phosphate and cytidine diphosphate-DAG (Arraes et al., 2007). A number of studies have demonstrated links between cardiolipin and cell death (Gonzalvez and Gottlieb, 2007), which raise the possibility that cardiolipin produced by Spiroplasma could be involved in its pathological effects in old flies.\n\nThe other lipids that comprise a smaller fraction of Lpp's cargo, including sterols and sphingolipids (Palm et al., 2012) might also be important for Spiroplasma proliferation but these lipids would most likely be incorporated unchanged into the membrane of Spiroplasma. Of the other lipid classes contained in lipoproteins, sterols are of particular interest as they have been shown to be required for proliferation of all species of Spiroplasma, and to be highly abundant in the Spiroplasma plasma membrane (Freeman et al., 1976). Amongst bacteria, this requirement for sterol is unique to mollicutes (Dahl, 1993). Since insects are auxotrophic for sterols (Canavoso et al., 2001), their concentrations are determined by dietary uptake. Although it is therefore possible that the sterol availability could play a key role in coordinating Spiroplasma proliferation with host nutritional state, we were unable to recover normal Spiroplasma proliferation rates when flies were maintained on nutrient poor media complemented with sterol (unpublished data). This finding suggests that, while sterol might be important for Spiroplasma proliferation, it is not sufficient to induce proliferation under conditions of nutrient limitation.\n\nThe strategies employed in different insect endosymbioses to limit over-proliferation of endosymbionts are not well characterized. We have proposed a model in which Spiroplasma's dependence on host hemolymph-lipid availability could limit its over-proliferation, primarily in the face of host nutritional scarcity. This mechanism could be important for the controlling proliferation of diverse extracellular endosymbionts. Different mechanisms are likely to be involved in intracellular endosymbiont control. For example, proliferation and localization of the obligate Sitophilus primary endosymbiont (SPE) is controlled by the expression of a specific antimicrobial peptide from its host, Sitophilus weevils (Login et al., 2011). In aphids, studies suggest the activation of the host lysosomal system is involved in controlling titers of the obligate intracellular endosymbiont, Buchnera (Nishikori et al., 2009).\n\nThe metabolic exchanges between endosymbiotic bacteria and their arthropod hosts are generally not well understood, partly due to challenges associated with high levels of integration and interdependence between partners. Most of the available information is indirect, coming from the study of endosymbiont genomes, which reveals limited metabolic capacities and high levels of dependence on hosts (Zientz et al., 2004; Gosalbes et al., 2010). There are a number of studies that examined metabolic exchanges between hosts and obligate endosymbionts, which provide their hosts with one or more vital metabolite that is missing from the host's diet (Douglas, 1998; Russell et al., 2013). These studies usually consider metabolic transfers from endosymbiont to host and not in the reverse direction (Dale and Moran, 2006). We have identified a transfer of metabolites from host to endosymbiont, showing that Drosophila Lpp-lipids are used by Spiroplasma for proliferation and more specifically provide evidence indicating that host-derived DAG is converted to cardiolipin by Spiroplasma.\n\nA number of recent studies have revealed that facultative endosymbionts protect their hosts from parasites and pathogens (Oliver et al., 2003; Hedges et al., 2008; Teixeira et al., 2008). Endosymbiotic Spiroplasma has been implicated in a number of cases, including protecting diverse hosts from various eukaryotic parasites including parasitoid wasps, parasitic nematodes, and fungi (Jaenike et al., 2010; Xie et al., 2010; \u0141ukasik et al., 2012). We speculate that Spiroplasma-mediated protection could be linked to lipid utilization. Indeed, many parasitoid wasps are unable to synthesize fatty acids and their development requires the acquisition of host lipids (Visser et al., 2010). Thus, sequestration of lipid by Spiroplasma might limit availability to any parasites or pathogens that occupy the same niche.\n\nHere, we have shown that the rate of Spiroplasma proliferation and onset of fly mortality are decreased upon depletion of hemolymph lipids. It is noteworthy that a variety of other microorganisms known to proliferate in Drosophila hemolymph and to cause pathogenesis such as Erwinia carotovora strain 15, Listeria monocytogenes, Candida albicans, and Enterococcus fecalis do not appear to have attenuated virulence when hemolymph lipids are depleted (unpublished data). Many of these pathogens are free-living and are likely to have retained well-developed metabolic capacities (including the capacity to synthesize lipids). It is interesting to speculate that increased reliance on host provision of lipids is part of a suite of adaptations that facilitate the evolution of chronic, low-virulence infection strategies. It is notable that a number of pathogens that have the capacity to form chronic infections in humans including Mycobacterium tuberculosis and Chlamydia trachomatis have been shown to be heavily dependent on lipids acquired from their hosts (Ehrt and Schnappinger, 2007; Robertson et al., 2009). Thus, the findings discussed here for endosymbionts could be of more general importance for host\u2013microbe interactions.\n\n## Materials and methods\n\n### Fly stocks and handling\n\nWe used a wild-type Oregon-R (ORR) fly stock that harbors MSRO Spiroplasma (Pool et al., 2006; Herren and Lemaitre, 2011) but not Wolbachia. The w;AKHR1;bmm1 stocks used have been described (Gr\u00f6nke et al., 2007). RNAi-mediated knockdown of Lpp was achieved using a pFRiPE-mediated inducible RNAi element (Marois and Eaton, 2007), placed in the presence of a heat-shock inducible flippase and an Adh-GAL-4 driver that is mostly active in the fat body. The strategy and stocks used are analogous to a previously published study, except that we induced RNAi in adults, as opposed to larvae (Palm et al., 2012). We induced the flippase by heat-shock (1.5 hr at 37\u00b0C in a water bath) in 4- to 5-day-old adult flies. This results in the excision of an upstream spacer region and activation of the UAS-Lpp-RNAi construct driven by Adh-GAL-4 and the silencing of Lpp in the fat body, specifically at the adult stage. An additional strategy used to knockdown the expression of Lpp involved the C564-GAL-4 driver (also mostly active in the fat body) in conjunction with tubulin-gal80ts, a temperature-sensitive repressor of GAL-4 expression, which blocks GAL-4 expression at 18\u00b0C but not 29\u00b0C (McGuire et al., 2003). Flies that contained both the C564-GAL-4, tubulin-gal80ts, and UAS-Lpp-RNAi(46) elements were maintained at 18\u00b0C and then shifted to 29\u00b0C as adults to induce UAS-Lpp-RNAi(46) and knockdown Lpp expression. The UAS-Lpp-RNAi(46) stock is TRiP #HM05157 originating from the transgenic RNAi project at the Harvard Medical School. Since Spiroplasma MSRO is vertically transmitted and kills male embryos, Spiroplasma-infected stocks were generated in several steps: (1) Crossing an infected ORR female with males carrying appropriate balancer chromosomes (2) Crossing the balanced female progeny with males of the genotype of interest (either w;AKHR;Bmm, w,HS-FLP;adh-GAL-4/bcg or Dipt-GFP,C564-GAL-4;tub-GAL80ts) (3) Several back-crosses were then carried out, resulting in a homozygous Spiroplasma-infected female with the appropriate genotype. These stocks were then maintained by crossing females with non-infected males of the same genotype. Spiroplasma-infected females carrying a GAL-4 construct were then crossed with males carrying UAS-RNAi constructs or controls (w background). All flies were maintained at 25\u00b0C unless otherwise specified. The density of animals per vial was equilibrated between Spiroplasma-infected and Spiroplasma-uninfected stocks for development under similar levels of larval competition. Unless otherwise specified, all flies used were females and virgins. For survival experiments, counts were made every 24 hr and flies were transferred to new tubes every 3\u20134 days (2 days for mated flies). Climbing assays were carried out as described (Barone and Bohmann, 2013). Acute starvation assays have been described previously (Gr\u00f6nke et al., 2007). To quantify the number of eggs laid, flies were collected immediately post-eclosion and maintained in individual Drosophila vials that each contained five flies. Eggs were counted every 48 hr over a 14-day period, and the number of eggs laid per 48 hr per fly was calculated (correcting for any fly mortality). For experiments that required mated flies, males (three for every five females) were placed in the Drosophila vials and then removed after 7 days, males that died prior to this were replaced.\n\n### Drosophila media\n\nFlies were raised and maintained on a standard cornmeal-agar diet, referred to as \u2018rich media\u2019. Normal media contain 4.5 g agar, 58.8 g inactivated yeast (Springaline BA95/0; Biospringer, Milwaukee, WI, USA), 35 g maize flour (Farigel Maize; Westhove, Ennezat, France), 34.8 ml of 1:1 mix of grape and multi-fruit juice (approximately 8.2 g of sugar), 3.6 ml of propionic acid, and 18 ml of a 10% solution of methyl paraben in 85% ethanol per 600 ml of water. For nutrient deprivation, adults were maintained on a restrictive diet referred to as \u2018poor media\u2019, which contains 9 g agar, 1.9 g inactivated yeast, 7.5 g maize flour, 4.5 g sucrose, 9 g glucose, 0.3 g MgSO4, 0.3 g CaCl2, 3.6 ml propionic acid, and 18 ml of a 10% solution of methyl paraben in 85% ethanol per 600 ml of water (Vijendravarma et al., 2012). Poor media complemented with inactivated yeast contain an additional 34 g of inactivated yeast. Poor media complemented with sucrose contain an additional 35.5 g of sucrose. In all cases, larvae were raised on rich media.\n\n### Imaging\n\nTo observe Spiroplasma in fly hemolymph, flies were dissected on microscope slides in 5 \u03bcl PBS containing 0.02 mM SYTO9 (Invitrogen, Carlsbad, CA, USA). Slides were then mounted and observed on an Axioimager Z1 (Zeiss, Oberkochen, Germany). Images were captured with an Axiocam MRn camera and Axiovision software.\n\n### DNA extraction and qPCR\n\nWe extracted DNA from five flies per sample. The DNA extraction and quantitative PCR protocols have been previously described (Anbutsu and Fukatsu, 2003; Herren and Lemaitre, 2011). To determine the absolute number of bacteria per extraction, we extracted infected fly hemolymph and used fluorescence microscopy to calculate the concentration of Spiroplasma cells stained using SYTO9 (as described above). A dilution series of known concentrations of Spiroplasma cell equivalents (SE) was then combined with five uninfected flies prior to DNA extraction and qPCR, which enabled us to generate a calibration curve. In subsequent analyses, to account for differences between qPCR runs, we always used a positive control of known Spiroplasma concentration. The results for all experiments involving Spiroplasma titers are given in SE per fly, which represents the absolute quantities of Spiroplasma per fly. A host gene, RPS17, was also always quantified to verify the quality of the extraction but did not use this value in the analyses. To quantify bacteria in hemolymph samples, 0.5 \u03bcl of hemolymph (collected as described for metabolite analyses) was diluted in 300 \u03bcl cell lysis buffer prior to DNA extraction and qPCRs as previously described (Herren and Lemaitre, 2011).\n\n### Metabolite analyses\n\nDrosophila hemolymph was collected from flies individually using a Drummond nanoject and pulled capillary needle. Metabolic quantifications are given as the mass (\u00b5g) of metabolite per \u00b5l or ml of Drosophila hemolymph. For each hemolymph sample, we collected 2 \u00b5l (\u223c25 flies), which was then diluted in 100 \u00b5l H2O prior to subsequent analyses. For all analyses hemolymph samples were centrifuged at 13,000\u00d7g for 2 min to remove Drosophila cells. Protein concentration was determined using a Bradford assay (Bio-Rad, Hercules, CA). Glucose and trehalose concentration was quantified using glucose HK kit (Sigma-Aldrich, St. Louis, MO, USA). Samples were treated with or without trehalase (11 mU, Sigma-Aldrich) overnight at 37\u00b0C, and trehalose levels were obtained by subtracting the amount of free glucose in the untreated sample from the total glucose present in the sample treated with trehalase. L-amino acid concentration was quantified by a coupled enzyme reaction, using the L-amino acid quantitation kit (Sigma-Aldrich). Hemolymph DAG and fat body TAG were analyzed using a coupled colorimetric assay (Hildebrandt et al., 2011). Sterols were quantified using the Amplex Red Cholesterol Assay kit (ThermoFisher Scientific, Waltham, MA, USA), which detects primarily cholesterol but also other sterols found in Drosophila (e.g., ergosterol). For protein and sterol assays, Spiroplasma were removed from hemolymph samples by centrifugation at 15,000\u00d7g for 15 min. For whole fly analyses, 10 flies were homogenized in 250 \u03bcl PBS and the quantifications are given per fly. Note that there was no significant difference in the mass of virgin flies with and without Spiroplasma at 7 and 14 days of age (unpublished data). There was also no significant difference in the feeding rate of virgin flies with and without Spiroplasma (unpublished data) as measured by CAFE assay (Ja et al., 2007) over a period of 4 hr at 3, 10, and 12 days of age.\n\n### MALDI-ToF-MS and MS/MS\n\nDrosophila hemolymph (collected as described for metabolite analyses) was diluted in 1:10 in H2O. Lipids were extracted using a mixture of chloroform/methanol (50/50 vol:vol). After mixing and centrifugation, 1 \u03bcl of the lipid extract was diluted with 1 \u03bcl of 9-aminoacridine matrix (25 mg/ml, dissolved in isopropanol/acetonitrile [3/2, vol/vol]). For MALDI-Tof-MS analysis, 1 \u03bcl of the mixture was rapidly spotted on an MTP 384 polished steel MALDI plate (Bruker Daltonics, Billerica, MA, USA). MALDI-Tof mass spectra of the Drosophila hemolymph samples were acquired using FlexControl 3.0 (Bruker Daltonics) on a Bruker AutoFlex III Smartbeam (Bruker Daltonics) in a negative reflectron mode at a laser beam attenuation of 50 and focus of 40 at 100 Hz as laser repetition rate. A total of 1000 shots were acquired in the mass range of 400 to 2000 m/z. Data were processed with FlexAnalysis 3.0 (Bruker Daltonics). Calibration of the instrument was performed using Peptide Standard Calibration II (Bruker Daltonics). 1000 ion counts were accumulated in the mass spectrometer prior to fragmentation. Fragmentation was performed with the Bruker designed method and at a laser beam attenuation of 42%, a laser repetition rate of 100 Hz and a reflector detector voltage set to 1.861 kV in a negative mode.\n\n### LC-MS/MS\n\nHemolymph was extracted from 1250 7-day-old adult Spiroplasma-infected and Spiroplasma-uninfected mated female flies by pricking flies in the abdomen and thorax before centrifugation of flies at 16000\u00d7g at 4\u00b0C for 30 min in a 10-\u03bcm filter spin column (Mobitec, Goettingen, Germany). Hemolymph was subsequently filtered in Ultrafree-MC Centrifugal Filter Units (0.22 \u00b5m pores) at 16000\u00d7g at 4\u00b0C for 10 min. These samples were then sent to Avanti Polar Lipids analytical services division (http://www.avantilipids.com) where lipids were extracted (Folch et al., 1957) prior to extracts being spiked with internal standards for LC-MS/MS quantification of diacylglygerol species concentrations (Hutchins et al., 2008).\n\n### Data treatment and statistical analysis\n\nStatistical significance was calculated using a Gehan-Breslow-Wilcoxon test for survivals and an unpaired Student's t test for all other experiments (with GraphPad Prism 5.0) and considered significant if p-values were lower than 0.05. Asterisks indicate the level of significance: *p<0.05, **p<0.01, and ***p<0.001 and NS (non-significant).\n",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "665a2bb4-8e63-4491-bb96-bcc4dd5f3a4c",
+      "submission_id": "f0710664-9178-461f-bf3c-67e1a2d5f572",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Utpal Banerjee, University of California, Los Angeles , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02964.020](https://doi.org/10.7554/eLife.02964.020)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cRegulation of Insect Endosymbiont Proliferation by Lipid Availability\u201d for consideration at eLife. Your article has been evaluated by Richard Losick (Senior editor), a Reviewing editor, and 3 reviewers.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached the decision that some major revisions are needed before this manuscript is accepted for publication. The Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nAlthough the experiments have been done well and the reviewers are largely satisfied with the quality of data, every reviewer is concerned with the interpretations and the underlying model presented in this paper. Each reviewer pointed out that there is no evidence presented for an adaptive mechanism and the results can easily be explained as representing a control of bacterial growth depending upon the limitations of lipid supply provided by the fly. In the revised version, please make sure that this discussion is reversed in the abstract and the main article. It may be OK to provide a clearly stated speculation at the end, but the idea that the data point to fitness needs to be modified. Please do take this suggestion seriously as the reviewers were quite unconvinced by the arguments.\n\nWe summarize some of the comments of the reviewers along these lines here:\n\n1) The authors interpret their results in terms of a parasite strategy to limits its own titer to preserve the fitness of the flies: \u201c... Spiroplasma proliferation is optimized to minimize fitness costs to the host under conditions of nutrient limitation.\u201d None of the reviewers agree with this conclusion. In fact, the reviewers all agree that this likely happens for any internal parasite uniquely dependent on its host for growth. Also, the reviewers do not agree with the title of the manuscript as it offers no proof of regulation. One way to address the question would be to manipulate the parasite, something that is not feasible at present. One reviewer suggested that the authors could use Spiroplasma citri, a parasite that supposedly cannot control its own growth. The authors may wish to consider this suggestion, but it may be simpler to reword the title and manuscript.\n\n2) Is there a control mechanism? Titers continuously increase with age of flies as shown in Figure 1 \u2013 up to the last day sampled (day 28) in flies on rich diets. If symbionts become ever denser until the fly dies at an old age, it's hard to argue that titer is adaptively regulated to optimize a tradeoff between host fitness and symbiont transmission (as hypothesized). It would appear instead that they start at a low titer and are expanding as the fly ages but never reaching their \u201climit\u201d imposed by the DAG levels. Or maybe the point is that such a limit is only imposed on poor diets. On these, it does appear that the titers level off. Since intracellular bacteria can have very long doubling times, maybe these are only starting to reach their limit after 21 days.\n\n3) The experiments show that a limit is imposed when DAG is low. But would a higher titer be reached when DAG is increased above that achieved by normal flies on rich diet? If DAG could be experimentally elevated without altering fly diet, it would be interesting to see whether the symbionts increase faster across the lifespan.\n\nEven if that cannot be tested, it is still meaningful that on poor diets, DAG contributes to controlling numbers. The arguments about the adaptiveness of using DAG rather than glucose or trehalose make sense, but are not really proof of an adaptive control. Maybe Spiroplasma is limited by lipids and reaches ecological carrying capacity, and this happens to be at a titer that does not kill the fly but may still not be optimal for the \u201ctrade-off\u201d. The paper is claiming this mechanism that has evolved to achieve some optimal level of proliferation (e.g., in the Abstract) but maybe has only shown that Spiroplasma is limited by lipids.\n\n4) The experiments claiming that poor diet reduces bacterial growth and pathogenesis are over interpreted, at best. The diet is so poor that these flies live a max of 15 days, with mortality starting at day 2 or 3. So, this diet is basically lethal and it is unclear is much can be learned from this assay. The authors should consider removing this part from the paper or provide alternative conditions. The connection between DAG to cardiolipin is not developed and needs better clarification and explanations.\n\n5) The choice of performing this study on virgins is not discussed and justified in any manner. As egg production requires the bulk of lipids, one wonders what happens to egg production in mated females under nutrient-poor conditions and how the parasite is able to optimize its transmission under these adverse conditions. What happens then to oogenesis and parasite transmission? If there are not enough lipids around to sustain oogenesis, will the parasite titer remain low so as to benefit should conditions ultimately improve? Clearly, it would be essential to monitor egg production as well as parasite transmission under these nutrient-poor conditions (which might be actually too harsh given the premature death of flies; flies given only a sucrose diet live much longer), and not just parasite titer and host longevity.\n\nOf note, even virgin females do lay eggs after a few days. These represent also a loss of lipids. What happens under normal conditions: is there a difference in egg production between infected and non-infected flies? Are the virgin flies still laying eggs under nutrient-poor conditions?\n",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "55286bbb-c4f8-4a2e-9d09-4368b7fc04cd",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C1",
+      "claim": "Spiroplasma poulsonii is a maternally transmitted bacterial endosymbiont that is naturally associated with Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "Spiroplasma poulsonii is a maternally transmitted bacterial endosymbiont that is naturally associated with Drosophila melanogaster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about the Spiroplasma-Drosophila association.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "55f82f7d-cdf0-4430-ac22-fe80c83b8161",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C2",
+      "claim": "S. poulsonii resides extracellularly in the hemolymph.",
+      "claim_type": "EXPLICIT",
+      "source": "S. poulsonii resides extracellularly in the hemolymph, where it must acquire metabolites to sustain proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Spiroplasma's localization in the host.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "e4a2894c-c3e4-43c9-9804-8a2321c022f7",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C3",
+      "claim": "Spiroplasma proliferation specifically depletes host hemolymph diacylglyceride.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we find that Spiroplasma proliferation specifically depletes host hemolymph diacylglyceride, the major lipid class transported by the lipoprotein, Lpp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript showing DAG depletion in Spiroplasma-infected flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "c3fa3920-bdd9-4c64-a3b4-c691c525c0a7",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C4",
+      "claim": "Diacylglyceride is the major lipid class transported by the lipoprotein, Lpp.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we find that Spiroplasma proliferation specifically depletes host hemolymph diacylglyceride, the major lipid class transported by the lipoprotein, Lpp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila lipid transport.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "4fbf8b15-1004-4785-b703-5b8a3d16a8f5",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C5",
+      "claim": "RNAi-mediated knockdown of Lpp expression reduces the amount of circulating lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi-mediated knockdown of Lpp expression, which reduces the amount of circulating lipids, inhibits Spiroplasma proliferation demonstrating that bacterial proliferation requires hemolymph-lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing reduced hemolymph lipids upon Lpp knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "37403e00-be46-43ad-ab7f-669af00439d7",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C6",
+      "claim": "RNAi-mediated knockdown of Lpp expression inhibits Spiroplasma proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi-mediated knockdown of Lpp expression, which reduces the amount of circulating lipids, inhibits Spiroplasma proliferation demonstrating that bacterial proliferation requires hemolymph-lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing reduced Spiroplasma titers upon Lpp knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "306ab059-4153-44df-a239-2ee47f0744bb",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C7",
+      "claim": "Bacterial proliferation requires hemolymph-lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi-mediated knockdown of Lpp expression, which reduces the amount of circulating lipids, inhibits Spiroplasma proliferation demonstrating that bacterial proliferation requires hemolymph-lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observation that reducing hemolymph lipids inhibits Spiroplasma proliferation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "89e2b338-4714-4103-9961-a1e27d06d55d",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C8",
+      "claim": "An insect endosymbiont acquires specific lipidic metabolites from the transport lipoproteins in the hemolymph of its host.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our study shows that an insect endosymbiont acquires specific lipidic metabolites from the transport lipoproteins in the hemolymph of its host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing DAG depletion and cardiolipin production by Spiroplasma.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "37c1613a-324f-45c9-b830-f5b82b7c506c",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C9",
+      "claim": "The proliferation of this endosymbiont is limited by the availability of hemolymph lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we show that the proliferation of this endosymbiont is limited by the availability of hemolymph lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing reduced Spiroplasma proliferation under nutrient limitation and Lpp knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "a1caabe7-2c7e-4532-a1ba-80fa4766985b",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C10",
+      "claim": "Lipid availability is strongly influenced by the nutritional state.",
+      "claim_type": "EXPLICIT",
+      "source": "This feature could limit endosymbiont over-proliferation under conditions of host nutrient limitation as lipid availability is strongly influenced by the nutritional state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing reduced hemolymph lipids under nutrient limitation.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "354d72fb-b8f6-40cf-b715-d158ca53d7c7",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C11",
+      "claim": "Wolbachia and Spiroplasma are estimated to infect \u223c40% and 5\u201310% of all insects species, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the most prevalent and well-characterized facultative insect endosymbionts are Wolbachia and Spiroplasma, which are estimated to infect \u223c40% and 5\u201310% of all insects species, respectively (Hackett and Clark, 1979; Duron et al., 2008; Hilgenboecker et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "2f2b178b-01f0-4e3f-8510-af1dca5c8b52",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C12",
+      "claim": "Wolbachia principally resides intracellularly.",
+      "claim_type": "EXPLICIT",
+      "source": "While Wolbachia principally resides intracellularly (Dobson et al., 1999; Albertson et al., 2009), Spiroplasma occupies an extracellular niche, proliferating mainly in the hemolymph that fills the body cavity of arthropods (Sakaguchi and Poulson, 1961; Anbutsu and Fukatsu, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "0c1d0c2d-3fca-4793-8f83-6dd72e60cb9b",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C13",
+      "claim": "Spiroplasma occupies an extracellular niche, proliferating mainly in the hemolymph that fills the body cavity of arthropods.",
+      "claim_type": "EXPLICIT",
+      "source": "While Wolbachia principally resides intracellularly (Dobson et al., 1999; Albertson et al., 2009), Spiroplasma occupies an extracellular niche, proliferating mainly in the hemolymph that fills the body cavity of arthropods (Sakaguchi and Poulson, 1961; Anbutsu and Fukatsu, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "0b0d55bb-e7ae-405a-9a2c-e947975845da",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C14",
+      "claim": "Spiroplasma and Wolbachia are both maternally transmitted.",
+      "claim_type": "EXPLICIT",
+      "source": "Spiroplasma and Wolbachia are both maternally transmitted and have developed unique strategies to colonize the germline of their female hosts for transmission to the next generation (Frydman et al., 2006; Serbus and Sullivan, 2007; Herren et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "5631b485-9901-436f-94fd-b1346b3ef4b1",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C15",
+      "claim": "Spiroplasma and Wolbachia have developed unique strategies to colonize the germline of their female hosts for transmission to the next generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Spiroplasma and Wolbachia are both maternally transmitted and have developed unique strategies to colonize the germline of their female hosts for transmission to the next generation (Frydman et al., 2006; Serbus and Sullivan, 2007; Herren et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "5eb5429b-da13-4c9d-8e4a-55ef47bca5be",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C16",
+      "claim": "Genome sequencing has indicated that endosymbiotic bacteria have highly reduced metabolic capacities and depend heavily on their hosts to provide them with a diversity of compounds needed for their sustained proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome sequencing has indicated that endosymbiotic bacteria have highly reduced metabolic capacities and depend heavily on their hosts to provide them with a diversity of compounds needed for their sustained proliferation (Klein et al., 2012; Moran et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous genomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "c816dd90-6106-4b5c-b2b8-3555e766a3f2",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C17",
+      "claim": "Flies-harboring Spiroplasma have a significantly shortened life span compared to flies that do not harbor Spiroplasma when maintained on a rich Drosophila diet.",
+      "claim_type": "EXPLICIT",
+      "source": "When maintained on a rich Drosophila diet, flies-harboring Spiroplasma have a significantly shortened life span compared to flies that do not harbor Spiroplasma (Figure 1A, Figure 1\u2014figure supplement 1A), which is in agreement with a previous study on Drosophila willistoni and WSRO Spiroplasma (Ebbert, 1991).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental survival data shown in Figure 1A and cited previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "8c4dec31-2c96-4529-b246-d9d94ec116b7",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C18",
+      "claim": "The presence of Spiroplasma did not significantly affect the death rate until flies were about 21\u201325 days old.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the presence of Spiroplasma did not significantly affect the death rate until flies were about 21\u201325 days old but flies began to exhibit signs of Spiroplasma-induced pathology between 14 and 21 days, as demonstrated by decreased performance in climbing assays (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A and Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "003430e3-e6ea-4739-99d1-d6ecc2f0ac72",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C19",
+      "claim": "Flies began to exhibit signs of Spiroplasma-induced pathology between 14 and 21 days, as demonstrated by decreased performance in climbing assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the presence of Spiroplasma did not significantly affect the death rate until flies were about 21\u201325 days old but flies began to exhibit signs of Spiroplasma-induced pathology between 14 and 21 days, as demonstrated by decreased performance in climbing assays (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "83bd7c31-cb6b-45e6-9b10-8f0fd3903a24",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C20",
+      "claim": "The increase in Spiroplasma-induced lethality and pathology in old flies correlates with the increase of Spiroplasma titers.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in Spiroplasma-induced lethality and pathology in old flies correlates with the increase of Spiroplasma titers, observed by qPCR of whole flies (Figure 1C) and fluorescence microscopy of hemolymph (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "90aba4aa-31f9-4fdd-aab3-c917db9b5e35",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C21",
+      "claim": "Spiroplasma titers reached a plateau in old flies (age >28 days).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies on other Drosophila-endosymbiotic Spiroplasma strains (Anbutsu and Fukatsu, 2003; Haselkorn et al., 2013), we noticed that Spiroplasma titers reached a plateau in old flies (age >28 days) suggesting that a factor might limit Spiroplasma proliferation at this stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "7f3d3b46-8dc2-4fb3-b351-ccfe8c115365",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C22",
+      "claim": "There was a twofold increase in the number of eggs laid by Spiroplasma-infected virgin flies compared to Spiroplasma-uninfected virgin flies over 14 days.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a twofold increase in the number of eggs laid by Spiroplasma-infected virgin flies compared to Spiroplasma-uninfected virgin flies over 14 days (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "14a2cc28-17ef-4584-9507-55af2cd3057b",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C23",
+      "claim": "Spiroplasma-infected mated flies laid an increased number of eggs in the first 2 days post-eclosion.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of eggs laid by Spiroplasma-infected mated flies over a 14-day period was similar to Spiroplasma-uninfected mated flies, however, Spiroplasma-infected mated flies laid an increased number of eggs in the first 2 days post-eclosion (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "b641b454-5ab4-41dc-823e-f808ce10695e",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C24",
+      "claim": "Spiroplasma-infected and uninfected virgin flies had a similar life span under nutrient-limiting conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, Spiroplasma-infected and uninfected virgin flies had a similar life span (Figure 2A) and produced similar numbers of eggs under nutrient-limiting conditions (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "f1ef9c59-1a3a-49f0-a51d-527236273252",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C25",
+      "claim": "Spiroplasma-infected and uninfected virgin flies produced similar numbers of eggs under nutrient-limiting conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, Spiroplasma-infected and uninfected virgin flies had a similar life span (Figure 2A) and produced similar numbers of eggs under nutrient-limiting conditions (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "a4aac91a-1f27-45df-b61e-6b14f206144c",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C26",
+      "claim": "Spiroplasma proliferation in whole flies was significantly inhibited when flies are maintained on a nutrient poor diet.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed that Spiroplasma proliferation in whole flies (Figure 2B) and hemolymph (Figure 2\u2014figure supplement 2) was also significantly inhibited when flies are maintained on a nutrient poor diet.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "a43f5e19-db65-4863-854c-b29019585db2",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C27",
+      "claim": "Raising flies on a nutrient poor diet resulted in significantly lower concentrations of protein, sterol and diacylglyceride in the hemolymph.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that raising flies on a nutrient poor diet resulted in significantly lower concentrations of protein, sterol and diacylglyceride (DAG, the main transport lipid in Drosophila) (Figure 3A\u2013C), while levels of glucose and trehalose were not changed significantly (Figure 3\u2014figure supplement 1A,B) and L-amino acids increased (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "21210800-1f96-4210-989a-dab4d51e517f",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C28",
+      "claim": "Levels of glucose and trehalose were not changed significantly under nutrient limitation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that raising flies on a nutrient poor diet resulted in significantly lower concentrations of protein, sterol and diacylglyceride (DAG, the main transport lipid in Drosophila) (Figure 3A\u2013C), while levels of glucose and trehalose were not changed significantly (Figure 3\u2014figure supplement 1A,B) and L-amino acids increased (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "44500732-14e4-4261-846a-f5b3f260bd66",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C29",
+      "claim": "L-amino acids increased under nutrient limitation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that raising flies on a nutrient poor diet resulted in significantly lower concentrations of protein, sterol and diacylglyceride (DAG, the main transport lipid in Drosophila) (Figure 3A\u2013C), while levels of glucose and trehalose were not changed significantly (Figure 3\u2014figure supplement 1A,B) and L-amino acids increased (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "d34ff512-d00d-47d6-9166-d4c7f71edbff",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C30",
+      "claim": "Only inactivated yeast extract was able to recover the Spiroplasma proliferation rates observed on rich media.",
+      "claim_type": "EXPLICIT",
+      "source": "We then complemented the nutrient poor diet with either inactivated yeast (rich in protein and lipids) or sucrose, we found that only inactivated yeast extract was able to recover the Spiroplasma proliferation rates observed on rich media (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "12401e2c-1342-48f9-a76a-02ed1b546f68",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C31",
+      "claim": "The concentration of measured sugars was not changed in the hemolymph of flies-harboring Spiroplasma raised on a rich diet.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the concentration of measured sugars was not changed and that the L-amino acid concentration was even increased in the presence of Spiroplasma (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "d1f5e0ab-9002-4bfe-bdd8-d8f94f6575c0",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C32",
+      "claim": "The L-amino acid concentration was increased in the presence of Spiroplasma.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the concentration of measured sugars was not changed and that the L-amino acid concentration was even increased in the presence of Spiroplasma (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "25400cc5-c475-499f-abab-900764ddd8b4",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C33",
+      "claim": "The hemolymph of flies-harboring Spiroplasma had an increased concentration of proteins and sterol.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the hemolymph of flies-harboring Spiroplasma had an increased concentration of proteins and sterol (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 5D and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "8da99708-82a1-4cd5-9c89-e3d2dbfcd136",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C34",
+      "claim": "After centrifugation to remove bacterial cells, the protein and sterol concentration was no longer significantly different between Spiroplasma-infected and Spiroplasma-uninfected hemolymph samples.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after centrifugation to remove bacterial cells, the protein and sterol concentration was no longer significantly different between Spiroplasma-infected and Spiroplasma-uninfected hemolymph samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figures 5D and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "362ae68c-14f4-41c7-8d4b-09e1f353d0dc",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C35",
+      "claim": "Spiroplasma cells contain a substantial amount of proteins and sterol.",
+      "claim_type": "IMPLICIT",
+      "source": "This suggests that Spiroplasma cells contain a substantial amount of proteins and sterol, but that the presence of this endosymbiont does not deplete either of these factors in the hemolymph.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that protein and sterol levels are higher in total hemolymph but not in supernatant after removing Spiroplasma cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "eec2639a-ea5f-4aa0-aded-a5248ee9948a",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C36",
+      "claim": "The presence of Spiroplasma does not deplete protein or sterol in the hemolymph.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Spiroplasma cells contain a substantial amount of proteins and sterol, but that the presence of this endosymbiont does not deplete either of these factors in the hemolymph.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from experimental data showing no difference in supernatant protein and sterol levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "8e144ef2-4d3f-4970-b99f-0e07bb553822",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C37",
+      "claim": "Spiroplasma-infected flies experienced a significant drop in the concentration of DAG within the hemolymph.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observed that Spiroplasma-infected flies experienced a significant drop in the concentration of DAG within the hemolymph (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "74ad671a-b10f-4def-8832-7a9880d45da2",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C38",
+      "claim": "There was a decrease in the amount of TAG in Spiroplasma-infected flies compared to Spiroplasma-uninfected flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantifications of whole female flies (reflecting mainly insect fat body energy storage but also the energy contents of the ovaries) showed a decrease in the amount of TAG in Spiroplasma-infected flies compared to Spiroplasma-uninfected flies (Figure 5G), while the amount of glycogen was not affected by the presence of Spiroplasma (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "8872b7b4-657e-4f74-8ea0-9f028ecda5e7",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C39",
+      "claim": "The amount of glycogen was not affected by the presence of Spiroplasma.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantifications of whole female flies (reflecting mainly insect fat body energy storage but also the energy contents of the ovaries) showed a decrease in the amount of TAG in Spiroplasma-infected flies compared to Spiroplasma-uninfected flies (Figure 5G), while the amount of glycogen was not affected by the presence of Spiroplasma (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "295f4ff1-dd04-415e-9ca0-3b4b75c618e9",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C40",
+      "claim": "12-day-old Spiroplasma-infected flies succumb more rapidly to acute starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the decrease in TAG reserves, 12-day-old Spiroplasma-infected flies succumb more rapidly to acute starvation, in which flies are only given a source of water but no source of nutrition (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "bce8da28-6fc6-442f-b7a2-20ef3a5afbee",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C41",
+      "claim": "TAG stored in the fat body largely derived from hemolymph DAG.",
+      "claim_type": "EXPLICIT",
+      "source": "Since TAG stored in the fat body largely derived from hemolymph DAG (Canavoso et al., 2001), the decrease of TAG is likely to be the outcome of the depletion of hemolymphatic DAG by Spiroplasma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "19b007bc-962c-4451-ba0a-6e419dc5c0e4",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C42",
+      "claim": "The decrease of TAG is likely to be the outcome of the depletion of hemolymphatic DAG by Spiroplasma.",
+      "claim_type": "EXPLICIT",
+      "source": "Since TAG stored in the fat body largely derived from hemolymph DAG (Canavoso et al., 2001), the decrease of TAG is likely to be the outcome of the depletion of hemolymphatic DAG by Spiroplasma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that both hemolymph DAG and fat body TAG are depleted in Spiroplasma-infected flies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "6ac4948b-821c-4e98-b72c-339a0384cd45",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C43",
+      "claim": "The main classes of lipids that are present in Spiroplasma are phosphatidylglycerols, sterols, sphingolipids, and cardiolipins.",
+      "claim_type": "EXPLICIT",
+      "source": "The main classes of lipids that are present in Spiroplasma are phosphatidylglycerols, sterols, sphingolipids, and cardiolipins (Freeman et al., 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "4143b6e2-ea17-4da2-94cc-0927ed4c2afe",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C44",
+      "claim": "Cardiolipins are a class of lipids found exclusively in eubacteria and in the mitochondria of eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiolipins are a class of lipids found exclusively in eubacteria and in the mitochondria of eukaryotic cells (Hawthorne and Ansell, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "7857ef36-209a-44ce-a106-58075b2edeb0",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C45",
+      "claim": "Cardiolipins are not present at detectable levels in the Drosophila hemolymph.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to other major lipidic components of Spiroplasma membranes, cardiolipins are not present at detectable levels in the Drosophila hemolymph (Carvalho et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "86a50bcd-33ef-4c50-a87b-2dc66a885eab",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C46",
+      "claim": "There were only peaks at m/z values that correspond to cardiolipin in the hemolymph of flies-harboring Spiroplasma.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the production of cardiolipin by Spiroplasma, we conducted a MALDI time-of-flight mass spectrometry (MALDI-Tof-MS) analysis of lipid species in fly hemolymph and found that there were only peaks at m/z values that correspond to cardiolipin in the hemolymph of flies-harboring Spiroplasma (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental mass spectrometry data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "c48d6a83-76f3-423e-a79c-d9a00f53218f",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C47",
+      "claim": "The cardiolipins were comprised of C16:0 and C18:1 acyl chains.",
+      "claim_type": "EXPLICIT",
+      "source": "A major ion at m/z 1425.05 was isolated and fragmented, which confirmed the presence of cardiolipin and revealed that the cardiolipins were comprised of C16:0 and C18:1 acyl chains (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental mass spectrometry data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "6b8d4e1b-57b7-47cb-9c85-42ace47c317b",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C48",
+      "claim": "Overall DAG concentration declined by 16.3% in the presence of Spiroplasma.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that overall DAG concentration declined by 16.3%, however certain DAG species (e.g., C32:1 and C34:1 DAG) declined to a much greater extent (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental LC-MS/MS data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "9b03ab07-4d99-4142-be07-1e4eeb05e702",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C49",
+      "claim": "Certain DAG species (e.g., C32:1 and C34:1 DAG) declined to a much greater extent than overall DAG.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that overall DAG concentration declined by 16.3%, however certain DAG species (e.g., C32:1 and C34:1 DAG) declined to a much greater extent (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental LC-MS/MS data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "26aaeb7e-2be8-496f-9221-e83dd2800c1b",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C50",
+      "claim": "Spiroplasma most likely produce cardiolipin using fly hemolymph DAG.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that Spiroplasma-generated cardiolipin contains the same configuration of one saturated and one mono-unsaturated medium-length acyl chain (predominately C16:0, C18:1) indicates that Spiroplasma most likely produce cardiolipin using fly hemolymph DAG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that cardiolipin acyl chains match those of depleted DAG species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "145b939f-4285-47ca-930d-98418fcd8931",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C51",
+      "claim": "The transformation of DAG into cardiolipin offers an explanation for the observed decrease in hemolymph DAG levels in the presence of Spiroplasma.",
+      "claim_type": "EXPLICIT",
+      "source": "The transformation of DAG into cardiolipin offers an explanation for the observed decrease in hemolymph DAG levels in the presence of Spiroplasma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that DAG is depleted and cardiolipin is produced in Spiroplasma-infected flies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "c88be383-48ce-40ed-9d82-64ed8a363d72",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C52",
+      "claim": "Lpp is produced in the fat body but travels to the gut where it gets loaded with lipids prior to trafficking throughout the body.",
+      "claim_type": "EXPLICIT",
+      "source": "Lpp is produced in the fat body but travels to the gut where it gets loaded with lipids prior to trafficking throughout the body (Palm et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "5df12ccd-c730-4cc3-9dab-2a3aaa7467bb",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C53",
+      "claim": "More than 95% of the hemolymph lipids in Drosophila co-fractionate with Lpp.",
+      "claim_type": "EXPLICIT",
+      "source": "Lpp is the main hemolymph lipid carrier, since more than 95% of the hemolymph lipids in Drosophila co-fractionate with Lpp (Palm et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "1c38f324-a112-4880-8a5b-69b538151fd8",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C54",
+      "claim": "Fat body TAG levels in AKHR1;bmm1 double mutants that harbored Spiroplasma were significantly lower after 12 days than flies with the same genotype that did not harbor Spiroplasma.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that fat body TAG levels in AKHR1;bmm1 double mutants that harbored Spiroplasma were still significantly lower after 12 days than flies with the same genotype that did not harbor Spiroplasma (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "52476401-4eb2-4a91-ae7a-6f52d206fc20",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C55",
+      "claim": "Spiroplasma lipid acquisition most likely occurs in the hemolymph before the point of lipid entry into the fat body stores.",
+      "claim_type": "EXPLICIT",
+      "source": "While we cannot rule out other, as of yet uncharacterized, lipid mobilization pathways that could theoretically be activated by Spiroplasma, these results are still a strong indication that Spiroplasma lipid acquisition most likely occurs in the hemolymph before the point of lipid entry into the fat body stores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that TAG is depleted even in mutants that cannot mobilize lipids from fat body.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "8a3a690b-0cf7-46f6-aadd-21a459dd543e",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C56",
+      "claim": "RNAi-mediated knockdown of Lpp in the fat body resulted in a decrease in circulating lipoprotein particles and a blockage of lipid export from the gut of Drosophila larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study has shown that RNAi-mediated knockdown of Lpp in the fat body resulted in a decrease in circulating lipoprotein particles and a blockage of lipid export from the gut of Drosophila larvae (Palm et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "d2c18f0a-c088-4fc4-bd60-c8e6405ad019",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C57",
+      "claim": "RNAi-mediated knockdown of Lpp does not significantly decrease the overall levels of protein in the adult hemolymph.",
+      "claim_type": "EXPLICIT",
+      "source": "We established that RNAi-mediated knockdown of Lpp does not significantly decrease the overall levels of protein in the adult hemolymph (Figure 8\u2014figure supplement 1) but does decrease adult hemolymph-lipids, as shown by quantification of hemolymph DAG and sterol (Figure 8A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "33b738f1-352a-4262-ac93-696745d2e0c9",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C58",
+      "claim": "RNAi-mediated knockdown of Lpp does decrease adult hemolymph-lipids, as shown by quantification of hemolymph DAG and sterol.",
+      "claim_type": "EXPLICIT",
+      "source": "We established that RNAi-mediated knockdown of Lpp does not significantly decrease the overall levels of protein in the adult hemolymph (Figure 8\u2014figure supplement 1) but does decrease adult hemolymph-lipids, as shown by quantification of hemolymph DAG and sterol (Figure 8A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 8A and 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "1247ebd1-8ffe-47a5-826d-af5c92848ce7",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C59",
+      "claim": "Under conditions of Lpp knockdown, Spiroplasma proliferation was severely inhibited resulting in lower Spiroplasma titers in flies after 14, 21, and 28 days of aging.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that under conditions of Lpp knockdown, Spiroplasma proliferation was severely inhibited resulting in lower Spiroplasma titers in flies after 14, 21, and 28 days of aging (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "0e4448d3-7496-4769-9eb5-8b138c62dfe1",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C60",
+      "claim": "RNAi-mediated knockdown of Lpp strongly diminished Spiroplasma-induced old age mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Another striking effect of the RNAi-mediated knockdown of Lpp was strongly diminished Spiroplasma-induced old age mortality (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "65675013-1200-4d47-b5e6-f249a0fe807d",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C61",
+      "claim": "Spiroplasmas are not known to have the capacity to utilize proteins as nutrient sources.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that Spiroplasmas are not known to have the capacity to utilize proteins as nutrient sources (Chang and Chen, 1983), supporting the claim that lipids carried by Lpp (and not the Lpp protein itself) are the factors required for the proliferation of Spiroplasma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "7f4a66a9-342e-400b-9bd7-6325e0f1b8e1",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C62",
+      "claim": "Lipids carried by Lpp (and not the Lpp protein itself) are the factors required for the proliferation of Spiroplasma.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that Spiroplasmas are not known to have the capacity to utilize proteins as nutrient sources (Chang and Chen, 1983), supporting the claim that lipids carried by Lpp (and not the Lpp protein itself) are the factors required for the proliferation of Spiroplasma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Lpp knockdown reduces lipids and inhibits Spiroplasma proliferation, combined with knowledge that Spiroplasma cannot use proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "8d7f09db-fe21-4716-bdbd-963cdd5c5db8",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C63",
+      "claim": "Natural selection is expected to favor vertically transmitted endosymbionts with adaptations that minimize fitness costs to their hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural selection is expected to favor vertically transmitted endosymbionts with adaptations that minimize fitness costs to their hosts (Werren and O'Neill, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "2e729c4b-7700-46f3-8fb1-f4ba605fc412",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C64",
+      "claim": "Spiroplasma's dependence on hemolymph-lipid availability for proliferation could be of adaptive significance, since it would enable Spiroplasma to limit its proliferation in the face of host nutrient deprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that Spiroplasma's dependence on hemolymph-lipid availability for proliferation could be of adaptive significance, since it would enable Spiroplasma to limit its proliferation in the face of host nutrient deprivation, and therefore avoid the costly depletion of its host's energy and other vital metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "1aaac832-9d4b-46eb-b6e8-2402f2d2c011",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C65",
+      "claim": "Spiroplasma infection status did not affect the total number of eggs laid over a 14-day period on nutrient rich media.",
+      "claim_type": "EXPLICIT",
+      "source": "On nutrient rich media, we found that despite increasing early egg production Spiroplasma infection status did not affect the total number of eggs laid over a 14-day period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data on egg production.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "de5cc4bf-2be9-41e5-a613-5bc3188d3a9b",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C66",
+      "claim": "Spiroplasma increased by twofold the number of eggs laid by virgin flies over a 14-day period under rich nutritive conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under rich nutritive conditions, we observed that Spiroplasma increased by twofold the number of eggs laid by virgin flies over a 14-day period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "957c353b-3bf6-4d55-ae83-5301880e44e3",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C67",
+      "claim": "Flies aged for 28 days experience a decline in DAG concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that flies aged for 28 days also experience a decline in DAG concentration, which is likely to explain the declining Spiroplasma proliferation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "990a2002-148c-494a-b8ef-44183af2a6e3",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C68",
+      "claim": "Spiroplasma proliferation over the life of flies results in elevated Spiroplasma titers that ultimately deplete host hemolymph lipid and constrain further proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect that Spiroplasma proliferation over the life of flies results in elevated Spiroplasma titers that ultimately deplete host hemolymph lipid and constrain further proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental observations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "bf64830a-f55a-4617-859f-d5e2fc30928d",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C69",
+      "claim": "Spiroplasma synthesize cardiolipin, most likely using DAG acquired from host lipoproteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that Spiroplasma-infected flies had higher levels of cardiolipin, suggesting that Spiroplasma synthesize cardiolipin, most likely using DAG acquired from host lipoproteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that cardiolipin is present only in Spiroplasma-infected flies and has acyl chains matching depleted DAG species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "56eac9bf-f6fb-4724-99e9-82cef4e427a4",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C70",
+      "claim": "The utilization of DAG as a precursor for cardiolipin synthesis is supported by the annotation of the Spiroplasma genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The utilization of DAG as a precursor for cardiolipin synthesis is supported by the annotation of the Spiroplasma genome (unpublished data), which enabled the identification of a biosynthetic pathway similar to that described in Mycoplasma synoviae and Mycoplasma hyopneumoniae for the synthesis of cardiolipin from acylglycerols through DAG-3-phosphate and cytidine diphosphate-DAG (Arraes et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genomic analysis and citation to previous studies on related bacteria.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "5b2bfb62-cabb-4dda-8cee-8b0e76371ba8",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C71",
+      "claim": "Cardiolipin produced by Spiroplasma could be involved in its pathological effects in old flies.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of studies have demonstrated links between cardiolipin and cell death (Gonzalvez and Gottlieb, 2007), which raise the possibility that cardiolipin produced by Spiroplasma could be involved in its pathological effects in old flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on cited literature and experimental observations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "8d99de7d-1454-48d4-aef4-3ac6b530217c",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C72",
+      "claim": "Sterols have been shown to be required for proliferation of all species of Spiroplasma.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the other lipid classes contained in lipoproteins, sterols are of particular interest as they have been shown to be required for proliferation of all species of Spiroplasma, and to be highly abundant in the Spiroplasma plasma membrane (Freeman et al., 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "eac4b320-d5cb-4924-bef7-3aa8d86a2ac7",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C73",
+      "claim": "The requirement for sterol is unique to mollicutes amongst bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst bacteria, this requirement for sterol is unique to mollicutes (Dahl, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "3812eb43-e7ae-4f1a-be1c-c313d004e3d3",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C74",
+      "claim": "Insects are auxotrophic for sterols.",
+      "claim_type": "EXPLICIT",
+      "source": "Since insects are auxotrophic for sterols (Canavoso et al., 2001), their concentrations are determined by dietary uptake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "975b1135-e94a-43da-a877-793e004df3ba",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C75",
+      "claim": "Proliferation and localization of the obligate Sitophilus primary endosymbiont (SPE) is controlled by the expression of a specific antimicrobial peptide from its host, Sitophilus weevils.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, proliferation and localization of the obligate Sitophilus primary endosymbiont (SPE) is controlled by the expression of a specific antimicrobial peptide from its host, Sitophilus weevils (Login et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "d15fb36c-488b-4b62-a116-7dccb7a860d0",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C76",
+      "claim": "In aphids, studies suggest the activation of the host lysosomal system is involved in controlling titers of the obligate intracellular endosymbiont, Buchnera.",
+      "claim_type": "EXPLICIT",
+      "source": "In aphids, studies suggest the activation of the host lysosomal system is involved in controlling titers of the obligate intracellular endosymbiont, Buchnera (Nishikori et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "5d9d7da4-323f-481e-ba88-0f72d180af27",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C77",
+      "claim": "Endosymbiotic Spiroplasma has been implicated in protecting diverse hosts from various eukaryotic parasites including parasitoid wasps, parasitic nematodes, and fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "Endosymbiotic Spiroplasma has been implicated in a number of cases, including protecting diverse hosts from various eukaryotic parasites including parasitoid wasps, parasitic nematodes, and fungi (Jaenike et al., 2010; Xie et al., 2010; \u0141ukasik et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "2765aa88-ccab-4001-9acf-ed02a4d2bfc2",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C78",
+      "claim": "Spiroplasma-mediated protection could be linked to lipid utilization.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that Spiroplasma-mediated protection could be linked to lipid utilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "5d91bca4-ad5f-4ab9-990f-e6d766f3adb2",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C79",
+      "claim": "Many parasitoid wasps are unable to synthesize fatty acids and their development requires the acquisition of host lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, many parasitoid wasps are unable to synthesize fatty acids and their development requires the acquisition of host lipids (Visser et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "6a496ee8-82ce-4dfd-8ef0-ba9ebd4d7096",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C80",
+      "claim": "Sequestration of lipid by Spiroplasma might limit availability to any parasites or pathogens that occupy the same niche.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, sequestration of lipid by Spiroplasma might limit availability to any parasites or pathogens that occupy the same niche.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the observation that Spiroplasma depletes lipids.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "1756afb9-cdac-41ee-8a0c-bb3e2387a3b5",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C81",
+      "claim": "A variety of other microorganisms known to proliferate in Drosophila hemolymph and to cause pathogenesis such as Erwinia carotovora strain 15, Listeria monocytogenes, Candida albicans, and Enterococcus fecalis do not appear to have attenuated virulence when hemolymph lipids are depleted.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that a variety of other microorganisms known to proliferate in Drosophila hemolymph and to cause pathogenesis such as Erwinia carotovora strain 15, Listeria monocytogenes, Candida albicans, and Enterococcus fecalis do not appear to have attenuated virulence when hemolymph lipids are depleted (unpublished data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on unpublished experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "ae6bc2b6-c50f-4f77-b294-bd841e479022",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C82",
+      "claim": "Increased reliance on host provision of lipids is part of a suite of adaptations that facilitate the evolution of chronic, low-virulence infection strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to speculate that increased reliance on host provision of lipids is part of a suite of adaptations that facilitate the evolution of chronic, low-virulence infection strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "0c68fb28-cb76-454b-9aaa-422fcf8ea0d5",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "claim_id": "C83",
+      "claim": "Mycobacterium tuberculosis and Chlamydia trachomatis have been shown to be heavily dependent on lipids acquired from their hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that a number of pathogens that have the capacity to form chronic infections in humans including Mycobacterium tuberculosis and Chlamydia trachomatis have been shown to be heavily dependent on lipids acquired from their hosts (Ehrt and Schnappinger, 2007; Robertson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fbe5f8fc-a586-4df8-943d-9b691499bac7",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Spiroplasma infection reduces fly lifespan on rich media, with pathology and mortality correlating with increasing bacterial titers that plateau after 28 days. The presence of Spiroplasma significantly shortens lifespan (C17), with mortality effects appearing after 21-25 days (C18) but pathology detectable earlier at 14-21 days (C19). Both lethality and pathology correlate with increasing Spiroplasma titers (C20), which reach a plateau in flies older than 28 days (C21).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 are well-supported by survival data (Figure 1A), climbing assays (Figure 1B), qPCR quantification (Figure 1C), and microscopy (Figure 1D). The temporal correlation between titer increase and pathology/mortality is clearly demonstrated, and the plateau observation is consistent with cited prior studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "7b255f66-ffdf-4ff9-ab2e-432139d1bddf",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Spiroplasma infection increases early egg production in flies on rich media. Virgin Spiroplasma-infected flies laid twice as many eggs over 14 days compared to uninfected flies (C22, C66), while mated infected flies showed increased egg production only in the first 2 days post-eclosion (C23), with no difference in total eggs over 14 days (C65).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C23, C65, and C66 are supported by experimental egg-laying data shown in Figure 1E and Figure 1\u2014figure supplement 1B. The distinction between virgin and mated fly phenotypes is clearly documented with appropriate statistical analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "b4aeadbb-ec96-4cb2-9b3c-edd63e72115a",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Under nutrient limitation, Spiroplasma has minimal fitness costs on virgin flies and shows reduced proliferation. Spiroplasma-infected and uninfected virgin flies had similar lifespans (C24) and egg production (C25) under nutrient-poor conditions, while Spiroplasma proliferation was significantly inhibited (C26).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 are supported by survival data (Figure 2A), egg production data (Figure 2B), and qPCR measurements of bacterial titers (Figure 2C, Figure 2\u2014figure supplement 2). The reduced proliferation provides a mechanistic explanation for the lack of fitness costs under nutrient limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "94792b5d-7f24-4f7f-a7f0-c5c2c7c7aff6",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Nutrient limitation specifically reduces hemolymph protein, sterol, and DAG concentrations while not affecting glucose and trehalose, and increasing L-amino acids. Flies on nutrient-poor diet showed significantly lower protein, sterol, and DAG (C27), unchanged glucose and trehalose (C28), and increased L-amino acids (C29).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 are supported by metabolite quantification data shown in Figures 3A-C and Figure 3\u2014figure supplement 1A-C. The selective depletion of certain metabolites but not others is clearly demonstrated with appropriate statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "5c5a61ec-cb1d-47ac-b11a-039ef2d77171",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Complementing nutrient-poor diet with inactivated yeast, but not sucrose, recovers Spiroplasma proliferation rates. Only yeast supplementation (rich in protein and lipids) restored proliferation to levels observed on rich media (C30).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 is supported by qPCR data shown in Figure 4, demonstrating that yeast but not sucrose supplementation rescues Spiroplasma proliferation. This indicates that specific nutrients (likely lipids/proteins) rather than just calories are required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "b765a786-f8db-40fc-88bd-a3978ee48e99",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Spiroplasma infection does not deplete hemolymph sugars or increase host L-amino acids, and while total protein and sterol appear elevated, this is due to bacterial content rather than host depletion. Sugar concentrations were unchanged (C31), L-amino acids increased (C32), and protein/sterol were elevated in total hemolymph (C33) but not in supernatant after removing bacteria (C34), indicating Spiroplasma cells contain substantial protein/sterol (C35) without depleting host levels (C36).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 are supported by metabolite quantification data in Figures 5A-E. The experimental design of comparing total hemolymph versus supernatant after bacterial removal provides strong evidence that elevated protein/sterol reflects bacterial content rather than host changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "5fd8ff50-5e52-44eb-b166-764fc8685656",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Spiroplasma infection specifically depletes hemolymph DAG and fat body TAG stores, reducing starvation resistance. Infected flies showed reduced hemolymph DAG (C37), decreased whole-fly TAG (C38), unchanged glycogen (C39), and increased mortality during acute starvation (C40). Since fat body TAG derives from hemolymph DAG (C41), the TAG decrease likely results from DAG depletion by Spiroplasma (C42).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 are supported by lipid quantification data (Figures 5F-G, Figure 5\u2014figure supplement 2) and starvation survival data (Figure 5H). The mechanistic link between DAG depletion and TAG reduction is supported by cited literature (C41) and the experimental observations form a coherent narrative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "318e07ff-4274-43ab-b244-2c1bb4a47d2c",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Aged flies (28 days) experience a decline in DAG concentration. This observation is supported by experimental data shown in Figure 5\u2014figure supplement 1B.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is supported by experimental data showing DAG decline in aged flies. This provides a mechanistic explanation for the plateau in Spiroplasma proliferation observed in old flies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "be4ae430-45c3-4a35-b597-f839dd322e19",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Spiroplasma produces cardiolipin from host hemolymph DAG, with preferential utilization of specific DAG species. Cardiolipin was detected only in Spiroplasma-infected hemolymph (C46) with C16:0 and C18:1 acyl chains (C47). Overall DAG declined 16.3% (C48), with certain species (C32:1, C34:1) declining more (C49). The matching acyl chain composition indicates Spiroplasma produces cardiolipin from host DAG (C50, C51, C69).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 and C69 are strongly supported by MALDI-TOF-MS data (Figure 6A-B) and LC-MS/MS quantification (Table 1). The matching acyl chain composition between depleted DAG species and produced cardiolipin provides compelling evidence for the proposed metabolic conversion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "74a5ad1a-f943-4789-993a-8238c7b829c9",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Genomic analysis supports DAG as a precursor for cardiolipin synthesis in Spiroplasma. The Spiroplasma genome contains a biosynthetic pathway similar to related Mycoplasma species for synthesizing cardiolipin from DAG through DAG-3-phosphate and CDP-DAG intermediates (C70).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C70 is based on unpublished genomic data and citations to related bacteria. While the cited pathway in Mycoplasma species is established, the Spiroplasma genome annotation is not presented or peer-reviewed, making this claim uncertain despite being plausible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "b595474a-9c25-4804-bd85-5ce6714e9086",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Spiroplasma acquires lipids from hemolymph before they enter fat body stores. TAG levels were reduced in Spiroplasma-infected AKHR1;bmm1 double mutants that cannot mobilize fat body lipids (C54), indicating lipid acquisition occurs in hemolymph before fat body entry (C55).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 are supported by TAG quantification in lipid mobilization mutants (Figure 7). The use of AKHR1;bmm1 double mutants that block two independent lipid mobilization pathways provides strong genetic evidence, though the authors appropriately note they cannot rule out uncharacterized pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "7a78eea2-6fe5-442d-9e42-c3739f41d184",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "RNAi-mediated knockdown of the lipoprotein Lpp reduces hemolymph lipids, inhibits Spiroplasma proliferation, and extends infected fly lifespan. Lpp knockdown reduced circulating lipids (C5, C58) without affecting protein levels (C57), severely inhibited Spiroplasma proliferation (C6, C59), and diminished Spiroplasma-induced mortality (C60). This demonstrates that hemolymph lipids, not Lpp protein itself, are required for bacterial proliferation (C7, C62).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 and C57-C60, C62 are strongly supported by experimental data from Lpp RNAi experiments (Figures 8A-D, Figure 8\u2014figure supplement 1-2). Multiple RNAi constructs and drivers were used as controls, and the specificity for lipids over protein is supported by metabolite measurements and cited literature on Spiroplasma metabolism (C61).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "e4a4ceea-d371-4384-9e15-b8be2854d1fd",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Spiroplasma proliferation specifically depletes host hemolymph DAG and is limited by hemolymph lipid availability, which is influenced by nutritional state. The study demonstrates that Spiroplasma depletes hemolymph DAG (C3), acquires specific lipids from host lipoproteins (C8), and its proliferation is limited by lipid availability (C9), which varies with nutritional state (C10).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C8-C10 represent the main conclusions of the study and are supported by the collective evidence from metabolite analyses, nutrient limitation experiments, and Lpp knockdown experiments. The integration of multiple experimental approaches provides strong support for these central claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "bedbc6c2-842d-49d2-b30f-2141f4ae9aa0",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors hypothesize that Spiroplasma's dependence on hemolymph lipids may be adaptive, limiting proliferation during host nutrient deprivation and preventing over-proliferation through lipid depletion. This dependence could enable Spiroplasma to avoid costly host metabolite depletion (C64), and elevated titers may ultimately deplete lipids and constrain further proliferation (C68).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64 and C68 are explicitly speculative hypotheses about adaptive significance and mechanisms. While consistent with the experimental observations, these evolutionary and mechanistic interpretations go beyond what the data directly demonstrate and would require additional experiments to test.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "8401f550-0062-49bc-a101-78768ec3d24c",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors speculate that Spiroplasma-produced cardiolipin could be involved in pathological effects in old flies, based on literature linking cardiolipin to cell death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 is explicitly speculative, based on cited literature about cardiolipin and cell death but without direct experimental evidence linking Spiroplasma cardiolipin to the observed pathology. This hypothesis would require additional experiments to test.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "4da06f7a-82f6-4202-956e-0ee23740ec23",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors speculate that Spiroplasma-mediated protection against parasites could be linked to lipid sequestration. Since parasitoid wasps require host lipids (C79), Spiroplasma's lipid sequestration might limit availability to parasites (C80), potentially explaining protective effects (C78).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C80 are explicitly speculative. While C79 is supported by citation, the connection to Spiroplasma-mediated protection (C78, C80) is hypothetical and not tested in this study. This would require experiments with parasites to evaluate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "8744b648-ef5d-4878-8a2a-d9e623af02af",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors report that other hemolymph pathogens do not show attenuated virulence when lipids are depleted, and speculate that lipid dependence may facilitate chronic, low-virulence infection strategies. Various pathogens (E. carotovora, L. monocytogenes, C. albicans, E. fecalis) do not show reduced virulence with lipid depletion (C81), leading to speculation that lipid dependence is part of adaptations for chronic infection (C82).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C81 is based on unpublished data, making it impossible to evaluate the experimental design, controls, or statistical rigor. Claim C82 is explicitly speculative. Without access to the unpublished data, these claims cannot be properly assessed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background claims about Spiroplasma, endosymbionts, and related biological systems. These include established knowledge about Spiroplasma biology (C1-C2, C13), endosymbiont prevalence (C11), localization patterns (C12), transmission (C14-C15), metabolic dependence (C16), lipid composition (C43-C45), lipoprotein function (C52-C53), Spiroplasma metabolism (C61), sterol requirements (C72-C74), and examples from other systems (C75-C77, C83).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C1-C2, C11-C16, C43-C45, C52-C53, C61, C72-C77, C83) are supported by appropriate citations to prior literature. They provide necessary context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    },
+    {
+      "id": "7dff2bc3-f52c-4ee0-a5dd-4a30304fad7a",
+      "content_id": "17019d48-6db9-48d8-8bf2-867b838d1b73",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Natural selection is expected to favor vertically transmitted endosymbionts with adaptations that minimize host fitness costs, based on evolutionary theory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 is a well-established theoretical principle in evolutionary biology, supported by appropriate citation. This provides the theoretical framework for interpreting the experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:20.448192Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c816dd90-6106-4b5c-b2b8-3555e766a3f2",
+      "result_id": "fbe5f8fc-a586-4df8-943d-9b691499bac7"
+    },
+    {
+      "claim_id": "8c4dec31-2c96-4529-b246-d9d94ec116b7",
+      "result_id": "fbe5f8fc-a586-4df8-943d-9b691499bac7"
+    },
+    {
+      "claim_id": "003430e3-e6ea-4739-99d1-d6ecc2f0ac72",
+      "result_id": "fbe5f8fc-a586-4df8-943d-9b691499bac7"
+    },
+    {
+      "claim_id": "83bd7c31-cb6b-45e6-9b10-8f0fd3903a24",
+      "result_id": "fbe5f8fc-a586-4df8-943d-9b691499bac7"
+    },
+    {
+      "claim_id": "90aba4aa-31f9-4fdd-aab3-c917db9b5e35",
+      "result_id": "fbe5f8fc-a586-4df8-943d-9b691499bac7"
+    },
+    {
+      "claim_id": "7f3d3b46-8dc2-4fb3-b351-ccfe8c115365",
+      "result_id": "7b255f66-ffdf-4ff9-ab2e-432139d1bddf"
+    },
+    {
+      "claim_id": "14a2cc28-17ef-4584-9507-55af2cd3057b",
+      "result_id": "7b255f66-ffdf-4ff9-ab2e-432139d1bddf"
+    },
+    {
+      "claim_id": "1aaac832-9d4b-46eb-b6e8-2402f2d2c011",
+      "result_id": "7b255f66-ffdf-4ff9-ab2e-432139d1bddf"
+    },
+    {
+      "claim_id": "de5cc4bf-2be9-41e5-a613-5bc3188d3a9b",
+      "result_id": "7b255f66-ffdf-4ff9-ab2e-432139d1bddf"
+    },
+    {
+      "claim_id": "b641b454-5ab4-41dc-823e-f808ce10695e",
+      "result_id": "b4aeadbb-ec96-4cb2-9b3c-edd63e72115a"
+    },
+    {
+      "claim_id": "f1ef9c59-1a3a-49f0-a51d-527236273252",
+      "result_id": "b4aeadbb-ec96-4cb2-9b3c-edd63e72115a"
+    },
+    {
+      "claim_id": "a4aac91a-1f27-45df-b61e-6b14f206144c",
+      "result_id": "b4aeadbb-ec96-4cb2-9b3c-edd63e72115a"
+    },
+    {
+      "claim_id": "a43f5e19-db65-4863-854c-b29019585db2",
+      "result_id": "94792b5d-7f24-4f7f-a7f0-c5c2c7c7aff6"
+    },
+    {
+      "claim_id": "21210800-1f96-4210-989a-dab4d51e517f",
+      "result_id": "94792b5d-7f24-4f7f-a7f0-c5c2c7c7aff6"
+    },
+    {
+      "claim_id": "44500732-14e4-4261-846a-f5b3f260bd66",
+      "result_id": "94792b5d-7f24-4f7f-a7f0-c5c2c7c7aff6"
+    },
+    {
+      "claim_id": "d34ff512-d00d-47d6-9166-d4c7f71edbff",
+      "result_id": "5c5a61ec-cb1d-47ac-b11a-039ef2d77171"
+    },
+    {
+      "claim_id": "12401e2c-1342-48f9-a76a-02ed1b546f68",
+      "result_id": "b765a786-f8db-40fc-88bd-a3978ee48e99"
+    },
+    {
+      "claim_id": "d1f5e0ab-9002-4bfe-bdd8-d8f94f6575c0",
+      "result_id": "b765a786-f8db-40fc-88bd-a3978ee48e99"
+    },
+    {
+      "claim_id": "25400cc5-c475-499f-abab-900764ddd8b4",
+      "result_id": "b765a786-f8db-40fc-88bd-a3978ee48e99"
+    },
+    {
+      "claim_id": "8da99708-82a1-4cd5-9c89-e3d2dbfcd136",
+      "result_id": "b765a786-f8db-40fc-88bd-a3978ee48e99"
+    },
+    {
+      "claim_id": "362ae68c-14f4-41c7-8d4b-09e1f353d0dc",
+      "result_id": "b765a786-f8db-40fc-88bd-a3978ee48e99"
+    },
+    {
+      "claim_id": "eec2639a-ea5f-4aa0-aded-a5248ee9948a",
+      "result_id": "b765a786-f8db-40fc-88bd-a3978ee48e99"
+    },
+    {
+      "claim_id": "8e144ef2-4d3f-4970-b99f-0e07bb553822",
+      "result_id": "5fd8ff50-5e52-44eb-b166-764fc8685656"
+    },
+    {
+      "claim_id": "74ad671a-b10f-4def-8832-7a9880d45da2",
+      "result_id": "5fd8ff50-5e52-44eb-b166-764fc8685656"
+    },
+    {
+      "claim_id": "8872b7b4-657e-4f74-8ea0-9f028ecda5e7",
+      "result_id": "5fd8ff50-5e52-44eb-b166-764fc8685656"
+    },
+    {
+      "claim_id": "295f4ff1-dd04-415e-9ca0-3b4b75c618e9",
+      "result_id": "5fd8ff50-5e52-44eb-b166-764fc8685656"
+    },
+    {
+      "claim_id": "bce8da28-6fc6-442f-b7a2-20ef3a5afbee",
+      "result_id": "5fd8ff50-5e52-44eb-b166-764fc8685656"
+    },
+    {
+      "claim_id": "19b007bc-962c-4451-ba0a-6e419dc5c0e4",
+      "result_id": "5fd8ff50-5e52-44eb-b166-764fc8685656"
+    },
+    {
+      "claim_id": "957c353b-3bf6-4d55-ae83-5301880e44e3",
+      "result_id": "318e07ff-4274-43ab-b244-2c1bb4a47d2c"
+    },
+    {
+      "claim_id": "86a50bcd-33ef-4c50-a87b-2dc66a885eab",
+      "result_id": "be4ae430-45c3-4a35-b597-f839dd322e19"
+    },
+    {
+      "claim_id": "c48d6a83-76f3-423e-a79c-d9a00f53218f",
+      "result_id": "be4ae430-45c3-4a35-b597-f839dd322e19"
+    },
+    {
+      "claim_id": "6b8d4e1b-57b7-47cb-9c85-42ace47c317b",
+      "result_id": "be4ae430-45c3-4a35-b597-f839dd322e19"
+    },
+    {
+      "claim_id": "9b03ab07-4d99-4142-be07-1e4eeb05e702",
+      "result_id": "be4ae430-45c3-4a35-b597-f839dd322e19"
+    },
+    {
+      "claim_id": "26aaeb7e-2be8-496f-9221-e83dd2800c1b",
+      "result_id": "be4ae430-45c3-4a35-b597-f839dd322e19"
+    },
+    {
+      "claim_id": "145b939f-4285-47ca-930d-98418fcd8931",
+      "result_id": "be4ae430-45c3-4a35-b597-f839dd322e19"
+    },
+    {
+      "claim_id": "bf64830a-f55a-4617-859f-d5e2fc30928d",
+      "result_id": "be4ae430-45c3-4a35-b597-f839dd322e19"
+    },
+    {
+      "claim_id": "56eac9bf-f6fb-4724-99e9-82cef4e427a4",
+      "result_id": "74a5ad1a-f943-4789-993a-8238c7b829c9"
+    },
+    {
+      "claim_id": "1c38f324-a112-4880-8a5b-69b538151fd8",
+      "result_id": "b595474a-9c25-4804-bd85-5ce6714e9086"
+    },
+    {
+      "claim_id": "52476401-4eb2-4a91-ae7a-6f52d206fc20",
+      "result_id": "b595474a-9c25-4804-bd85-5ce6714e9086"
+    },
+    {
+      "claim_id": "4fbf8b15-1004-4785-b703-5b8a3d16a8f5",
+      "result_id": "7a78eea2-6fe5-442d-9e42-c3739f41d184"
+    },
+    {
+      "claim_id": "37403e00-be46-43ad-ab7f-669af00439d7",
+      "result_id": "7a78eea2-6fe5-442d-9e42-c3739f41d184"
+    },
+    {
+      "claim_id": "306ab059-4153-44df-a239-2ee47f0744bb",
+      "result_id": "7a78eea2-6fe5-442d-9e42-c3739f41d184"
+    },
+    {
+      "claim_id": "d2c18f0a-c088-4fc4-bd60-c8e6405ad019",
+      "result_id": "7a78eea2-6fe5-442d-9e42-c3739f41d184"
+    },
+    {
+      "claim_id": "33b738f1-352a-4262-ac93-696745d2e0c9",
+      "result_id": "7a78eea2-6fe5-442d-9e42-c3739f41d184"
+    },
+    {
+      "claim_id": "1247ebd1-8ffe-47a5-826d-af5c92848ce7",
+      "result_id": "7a78eea2-6fe5-442d-9e42-c3739f41d184"
+    },
+    {
+      "claim_id": "0e4448d3-7496-4769-9eb5-8b138c62dfe1",
+      "result_id": "7a78eea2-6fe5-442d-9e42-c3739f41d184"
+    },
+    {
+      "claim_id": "7f4a66a9-342e-400b-9bd7-6325e0f1b8e1",
+      "result_id": "7a78eea2-6fe5-442d-9e42-c3739f41d184"
+    },
+    {
+      "claim_id": "e4a2894c-c3e4-43c9-9804-8a2321c022f7",
+      "result_id": "e4a4ceea-d371-4384-9e15-b8be2854d1fd"
+    },
+    {
+      "claim_id": "89e2b338-4714-4103-9961-a1e27d06d55d",
+      "result_id": "e4a4ceea-d371-4384-9e15-b8be2854d1fd"
+    },
+    {
+      "claim_id": "37c1613a-324f-45c9-b830-f5b82b7c506c",
+      "result_id": "e4a4ceea-d371-4384-9e15-b8be2854d1fd"
+    },
+    {
+      "claim_id": "a1caabe7-2c7e-4532-a1ba-80fa4766985b",
+      "result_id": "e4a4ceea-d371-4384-9e15-b8be2854d1fd"
+    },
+    {
+      "claim_id": "2e729c4b-7700-46f3-8fb1-f4ba605fc412",
+      "result_id": "bedbc6c2-842d-49d2-b30f-2141f4ae9aa0"
+    },
+    {
+      "claim_id": "990a2002-148c-494a-b8ef-44183af2a6e3",
+      "result_id": "bedbc6c2-842d-49d2-b30f-2141f4ae9aa0"
+    },
+    {
+      "claim_id": "5b2bfb62-cabb-4dda-8cee-8b0e76371ba8",
+      "result_id": "8401f550-0062-49bc-a101-78768ec3d24c"
+    },
+    {
+      "claim_id": "2765aa88-ccab-4001-9acf-ed02a4d2bfc2",
+      "result_id": "4da06f7a-82f6-4202-956e-0ee23740ec23"
+    },
+    {
+      "claim_id": "5d91bca4-ad5f-4ab9-990f-e6d766f3adb2",
+      "result_id": "4da06f7a-82f6-4202-956e-0ee23740ec23"
+    },
+    {
+      "claim_id": "6a496ee8-82ce-4dfd-8ef0-ba9ebd4d7096",
+      "result_id": "4da06f7a-82f6-4202-956e-0ee23740ec23"
+    },
+    {
+      "claim_id": "1756afb9-cdac-41ee-8a0c-bb3e2387a3b5",
+      "result_id": "8744b648-ef5d-4878-8a2a-d9e623af02af"
+    },
+    {
+      "claim_id": "ae6bc2b6-c50f-4f77-b294-bd841e479022",
+      "result_id": "8744b648-ef5d-4878-8a2a-d9e623af02af"
+    },
+    {
+      "claim_id": "55286bbb-c4f8-4a2e-9d09-4368b7fc04cd",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "55f82f7d-cdf0-4430-ac22-fe80c83b8161",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "354d72fb-b8f6-40cf-b715-d158ca53d7c7",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "2f2b178b-01f0-4e3f-8510-af1dca5c8b52",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "0c1d0c2d-3fca-4793-8f83-6dd72e60cb9b",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "0b0d55bb-e7ae-405a-9a2c-e947975845da",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "5631b485-9901-436f-94fd-b1346b3ef4b1",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "5eb5429b-da13-4c9d-8e4a-55ef47bca5be",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "6ac4948b-821c-4e98-b72c-339a0384cd45",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "4143b6e2-ea17-4da2-94cc-0927ed4c2afe",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "7857ef36-209a-44ce-a106-58075b2edeb0",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "c88be383-48ce-40ed-9d82-64ed8a363d72",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "5df12ccd-c730-4cc3-9dab-2a3aaa7467bb",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "65675013-1200-4d47-b5e6-f249a0fe807d",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "8d99de7d-1454-48d4-aef4-3ac6b530217c",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "eac4b320-d5cb-4924-bef7-3aa8d86a2ac7",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "3812eb43-e7ae-4f1a-be1c-c313d004e3d3",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "975b1135-e94a-43da-a877-793e004df3ba",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "d15fb36c-488b-4b62-a116-7dccb7a860d0",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "5d9d7da4-323f-481e-ba88-0f72d180af27",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "0c68fb28-cb76-454b-9aaa-422fcf8ea0d5",
+      "result_id": "3d32173e-df6c-4fb2-b596-9cf512e48dd4"
+    },
+    {
+      "claim_id": "8d7f09db-fe21-4716-bdbd-963cdd5c5db8",
+      "result_id": "7dff2bc3-f52c-4ee0-a5dd-4a30304fad7a"
+    }
+  ],
+  "comparisons": []
+}

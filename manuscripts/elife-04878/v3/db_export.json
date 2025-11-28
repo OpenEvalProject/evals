@@ -1,0 +1,1995 @@
+{
+  "submission": {
+    "id": "eedfaacf-b6fb-4dc5-8565-2f14614086e1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:00:32.019517Z",
+    "updated_at": "2025-11-28T22:00:32.019517Z"
+  },
+  "content": [
+    {
+      "id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "submission_id": "eedfaacf-b6fb-4dc5-8565-2f14614086e1",
+      "content_type": "manuscript",
+      "content_text": "# A dedicated visual pathway for prey detection in larval zebrafish\n\n## Authors\n\n- Julia L Semmelhack<sup>1</sup>\n- Joseph C Donovan<sup>1</sup>\n- Tod R Thiele<sup>1</sup>\n- Enrico Kuehn<sup>1</sup>\n- Eva Laurell<sup>1</sup>\n- Herwig Baier<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department Genes-Circuits-Behavior Max Planck Institute of Neurobiology Martinsried Germany\n2. Program in Neuroscience University of California at San Francisco San Francisco\n\n\u2020 Corresponding author\n\n## Abstract\n\nZebrafish larvae show characteristic prey capture behavior in response to small moving objects. The neural mechanism used to recognize objects as prey remains largely unknown. We devised a machine learning behavior classification system to quantify hunting kinematics in semi-restrained animals exposed to a range of virtual stimuli. Two-photon calcium imaging revealed a small visual area, AF7, that was activated specifically by the optimal prey stimulus. This pretectal region is innervated by two types of retinal ganglion cells, which also send collaterals to the optic tectum. Laser ablation of AF7 markedly reduced prey capture behavior. We identified neurons with arbors in AF7 and found that they projected to multiple sensory and premotor areas: the optic tectum, the nucleus of the medial longitudinal fasciculus (nMLF) and the hindbrain. These findings indicate that computations in the retina give rise to a visual stream which transforms sensory information into a directed prey capture response.\n\n## Introduction\n\nThe visual systems of many species have an innate capacity to respond to features that denote either prey or predators (Olberg et al., 2000; Ewert et al., 2001; Simmons et al., 2010; Yilmaz and Meister, 2013). However, the circuits underlying these responses are mostly unknown. Zebrafish larvae have an instinctive ability to hunt small moving prey objects, such as paramecia, as soon as they start to swim at five days post fertilization (5 dpf). Before initiating a prey capture swim, a larva must select the target from its surroundings, calculate its location, and make a decision as to whether the target is worth pursuing. It then initiates a multi-step motor routine involving bouts of turning and swimming toward the prey, culminating in a consummatory strike (Budick and O'Malley, 2000; Borla et al., 2002; Gahtan et al., 2005; McElligott and O'Malley, 2005). Precise maneuvers are required, and so prey capture tail movements are quite different from those observed during routine swims or escapes. To orient towards a paramecium on the left or right, larvae perform j-turns\u2014unilateral bends where the tail is held in a J shape. If the prey is directly ahead, they slowly swim toward it, with back and forth undulations of the tail (Patterson et al., 2013). These movements appear to be triggered by small moving objects, but it is unclear how or where in the brain these objects are identified as prey.\n\nUnder the appropriate conditions, larvae can be induced to perform hunting swims when they are partially restrained in agarose. A head-fixed preparation facilitates automated tracking of tail movements, stimulus control, and functional imaging. Two recent studies have shown that a moving dot can evoke eye convergence and approach swims in head-fixed larvae (Bianco et al., 2011; Trivedi and Bollmann, 2013). However, these studies did not investigate the specific tail kinematics evoked by prey stimuli, or seek to categorize the tail movements as distinct from other types of swims. Here, we identified the distinctive features of prey capture swims in head fixed larvae, and developed a machine learning algorithm to quantify and distinguish these swims from other types of behavior. This allowed us to quantify the tail movements produced in response to a range of artificial prey stimuli, and determine the ideal stimulus to evoke the prey capture response.\n\nTo begin to identify the neural circuits for prey identification, we focused on the retinal ganglion cells (RGCs), the output neurons of the retina. There is a precedent for RGCs acting as prey detectors\u2014a classic study in the frog found RGCs that responded to small (1\u20133\u00b0) objects moving through the visual field (Lettvin et al., 1959). In the mammalian visual system, certain RGC types act as feature detectors for one aspect of the visual scene, and the axons of these RGCs project to visual nuclei that mediate the response to that feature. For example, intrinsically photosensitive RGCs project to nuclei that control circadian rhythms and the pupillary light reflex (Chen et al., 2011), and RGCs that respond to whole field motion innervate nuclei that drive compensatory eye movements (Simpson, 1984; Dhande et al., 2013). In zebrafish, RGC axons terminate in ten retinorecipient areas called arborization fields (AFs) (Burrill and Easter, 1994), most of which have not been functionally characterized. We hypothesized that there could be a class of RGCs that respond specifically to prey-like visual stimuli and project to one or more of these AFs.\n\nBy imaging RGC axons in the AFs, we identified one visual area, AF7, which responds specifically to the optimal artificial prey stimulus, as well as to actual paramecia. Targeted laser ablation showed that this area is important for the behavior. Finally, we found that neurons with arbors in the AF7 neuropil innervate multiple areas known to be involved in prey capture behavior and locomotion in general\u2014the optic tectum, nMLF, and hindbrain. These results identify AF7 as vital part of the prey capture pathway, and link a dedicated retinal output to an ecologically relevant behavior.\n\n## Results\n\n### Analysis and classification of prey capture swims\n\nTo investigate how prey objects are identified, we developed a head-fixed prey capture assay and automated behavioral classification system. Larvae were embedded in agarose at 6 dpf, and their tails were freed so that swimming movements could be recorded with a high-speed camera. Visual stimulation was provided by a small OLED screen in front of the larva. In preliminary experiments, we found that a small (\u223c3\u00b0 of the visual field) white dot moving horizontally across a black screen was effective in evoking behavior. Larvae performed two types of behavior in response to this virtual prey: forward swims, which consisted of low amplitude oscillations of the tail, and j-turns (Figure 1A) (McElligott and O'Malley, 2005). These swims were accompanied by eye convergence, which is another kinematic feature of prey capture (Bianco et al., 2011; Patterson et al., 2013). Larvae also performed spontaneous swims in the absence of visual stimuli. To analyze tail movements, we digitized the tail, using a custom algorithm to assign \u223c40 points along its length in each frame (Figure 1B). Plotting the position of the tip of the tail during prey capture and spontaneous swims over time revealed several kinematic differences between the behaviors (Figure 1C). Prey capture forward swims and spontaneous swims both consist of back and forth movements of the tail, but the amplitude of the prey capture swim is much lower. In contrast, during a j-turn the tail is deflected to one side, often for hundreds of milliseconds.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04878/elife-04878-fig1-v3.jpg)\n\n**Figure 1.:** (A) Overlay of 50 frames (167 ms) of high-speed video showing examples of behavior in head fixed larvae. Larvae performed forward swims in response to a 3\u00b0 dot. j-turns were observed when the same dot was to the right or left. Spontaneous swims were often observed in the absence of any stimulus. (B) Example video frame showing points assigned by the digitization algorithm. (C) The position of the tip of the tail over time for the videos in (A). (D) The distribution of tail beat amplitudes for each bout in expert-classified prey capture and spontaneous swim videos. (E) Duration of the longest bend greater than 20\u00b0 during each bout. (F) Overview of support vector machine (SVM) based bout classification procedure, displaying only two parameters (maximum tail bend and mean tail tip deflection) for clarity. Bouts are extracted using a threshold on the normalized and smoothed first derivative of tail bend angles. Values for each parameter are calculated for all bouts and used to train an SVM. The SVM is then used to classify unlabeled bouts. See Figure 1\u2014figure supplement 1 for plots of each of the five parameters, and accuracy of the SVM vs number of parameters.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04878/elife-04878-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Each parameter used in the virtual prey SVM is plotted vs the other four. (B) Accuracy of the virtual prey SVM as more parameters are used to classify the bouts as prey capture or spontaneous swims. The dotted line represents the number of parameters used in the final version. The parameters plotted were: 1. Maximum tail curvature, 2. Number of peaks in tail angle, 3. Mean tip angle, 4. Maximum tail angle, 5. Mean tip position. (C). Accuracy of the paramecium SVM plotted vs number of parameters. The parameters shown here were 1. Mean tip angle, 2. Maximum tail curvature, 3. Number of peaks in tail angle, 4. Mean tip position, 5. Mean number of frames between peaks, 6. Maximum tail angle.\n\nThe apparent differences between spontaneous swims and prey capture were confirmed when we analyzed several hundred expert-classified prey capture and spontaneous swim videos. The average amplitude of the tail movements for prey capture bouts was 17% of tail length, while for spontaneous swims it was 48% of tail length (Figure 1D). We also observed the sustained tail deflections characteristic of j-turns. Plotting the duration of the longest tail deflection for each bout reveals a single peak at 27 ms for the spontaneous swims (Figure 1E). For prey capture swims, we also see a peak at this duration, representing the back and forth motion during forward swims, but in addition we see a long shoulder of turns of much longer duration, which consists of j-turns (Figure 1E). These stark differences suggest that prey detection triggers a specialized motor program.\n\nIn order to characterize the stimuli that evoke prey capture, we needed an objective method to quantify the behavior and distinguish it from spontaneous swims. We used a support vector machine (SVM), a supervised learning algorithm that allows for multi-dimensional classification, to train a classifier, which could then categorize new data. For this classification, prey capture forward swims and j-turns were not distinguished; both were included within the category of prey capture.\n\nWe trained the SVM on a set of 369 expert-labeled and digitized videos (Figure 1F). Bouts of swimming within the videos were identified using a thresholding operation on the smoothed derivative of the tail bend angle. For the dimensions of the SVM, we choose relatively simple parameters that allowed us to collapse a feature of the bout (e.g. tail curvature) into a single number. During training, each bout was assigned a position in 5-dimensional space corresponding to its values for the 5 parameters (Figure 1\u2014figure supplement 1), and decision boundaries were drawn in multidimensional space to separate the two types of behavior. The trained SVM could then be used to classify new videos. Using this approach, we were able to achieve a cross-validated accuracy of 96% (Figure 1\u2014figure supplement 1).\n\n### Identifying the ideal prey stimulus\n\nWe next used the virtual prey assay and the SVM classifier to determine the ideal stimulus for evoking prey capture behavior. We presented head-fixed larvae with white dots ranging in size from 0.5\u201330\u00b0 in diameter, while recording tail movements. To quantify the behavior, we used the trained SVM to identify swim bouts as prey capture or spontaneous swims. We calculated a prey capture score based on the percentage of time during each trial that the larva performed prey capture bouts. We found that a 3\u00b0 dot was the optimal size to trigger prey capture (Video 1), and that the behavior was strikingly reduced when we increased the size to 10\u00b0 (Figure 2A), which is consistent with data from free swimming and head-fixed larvae (Bianco et al., 2011; Trivedi and Bollmann, 2013). We also tested the response to dots traveling at a wide range of speeds, and found that 90\u00b0/s is the ideal speed for prey stimuli, and that larvae respond minimally to stimuli moving slower than 12\u00b0/s or faster than 360\u00b0/s (Figure 2B).\n\n![Video 1.](https://cdn.elifesciences.org/articles/04878/elife-04878-media1.avi.jpg)\n\n**Video 1.:** A head-fixed larva responds to a 3\u00b0 dot moving at 90\u00b0/s.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04878/elife-04878-fig2-v3.jpg)\n\n**Figure 2.:** (A) Larvae were shown white dots of various sizes moving at 90\u00b0/s. Trials were scored by using the SVM to classify each bout and calculating the percentage of the trial that consisted of prey capture bouts. Scores are expressed as a percentage of the maximum for that larva. n = 16 larvae. (B) Prey capture behavior in response to a 3\u00b0 dot moving at 6 to 480\u00b0/s. n = 9 larvae. Error bars = \u00b1SEM.\n\n### Functional imaging of RGC axons\n\nGiven the highly selective nature of this innate behavioral response, we hypothesized that the preference for prey stimuli of a certain size and speed might arise in the retina. In that case, there should be a population of RGCs that responds specifically to prey. A recent functional imaging study reported responses to prey in the largest AF, the optic tectum (Muto et al., 2013). However, the tectum receives input from many different types of RGCs, and responds to a wide variety of stimuli other than prey (Gabriel et al., 2012; Nikolaou et al., 2012), which makes it difficult to determine whether the tectal RGCs are responding selectively to prey. We thus focused our imaging experiments on AFs 1\u20139. We performed two-photon imaging of RGC axons in larvae with the calcium indicator GCaMP6 driven by an RGC-specific promoter. In these larvae, the ten AFs can be identified as distinct regions of fluorescent neuropil (Figure 3A,C). We asked whether the axons in any of these regions would respond to the ideal prey stimulus identified in our behavioral assay (3\u00b0, 90\u00b0/s). In our preparation, we could image all but the most ventral arborization field, AF1. We stimulated larvae with the prey stimulus while imaging RGC axons in AFs 2\u20139, and found one area, AF7, whose RGC axons responded robustly to the stimulus (Figure 3B), while seven other AFs did not respond to virtual prey. Some RGC axons in the optic tectum responded to the 3\u00b0 stimulus, but the tectum response was much larger for stimuli of >10\u00b0 (Figure 3\u2014figure supplement 1). We next varied the size of the stimulus while imaging in the AF7 plane, and found that AF7 RGC axons responded maximally to dots 2\u20133\u00b0 in diameter, and much less to stimuli larger than 6\u00b0 in diameter (Figure 3C\u2013I). Interestingly, AF9, another AF in the same plane, did not respond to small dots but began to respond as the stimulus size was increased above 6\u00b0 in diameter (Figure 3C\u2013F). We also measured the response of AF7 to stimuli of varying speeds, and found that the optimal speed was 90\u00b0/s, and stimuli slower than 12\u00b0/s or faster than 360\u00b0/s evoked a much smaller response in these axons (Figure 3G). These tuning curves are strikingly similar to the behavioral tuning curves for size and speed (Figure 2A,B, grey trace in Figure 3F,G). At speeds above 360\u00b0/s the strong correlation between behavioral tuning and AF7 response degrades, since the behavioral response to extremely fast speeds is quite low.This could be caused by a threshold or non-linearity in the neural circuit, such as the weak activation of the AF7 RGC axons being insufficient to drive the downstream neurons. We next tested the direction selectivity of the axons in AF7, and found that the area as a whole responded to prey stimuli moving in all four cardinal directions (Figure 3I), although the response was more robust to stimuli moving horizontally (p < 0.001, t-test).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04878/elife-04878-fig3-v3.jpg)\n\n**Figure 3.:** (A) Schematic frontal view of the brain showing AFs. Red line indicates imaging plane for C\u2013G. (B) Response to the ideal prey stimulus (3\u00b0 dot, 90\u00b0/s) in other AFs in an Isl2b:Gal4, UAS:GCaMP6s transgenic larva. n = 9 larvae. (C) Baseline fluorescence of RGCs in an Isl2b:Gal4, UAS:GCaMP3 larva. (D) Peak frame in the response to a 2\u00b0 dot. (E) Peak frame in the response to a 10\u00b0 dot. (F) Response of all larvae (n = 9) to stimuli 0.5\u201314\u00b0 in diameter. ROIs were defined anatomically as in (C). The \u0394F/F is plotted as a percentage of the maximum response for that larva. Grey lines represent the behavioral tuning curve from Figure 2A. (G) Response of AF7 RGC axons to a 3\u00b0 dot travelling at a speed of 6\u2013800\u00b0/s. Grey lines represent the behavioral tuning curve from Figure 2B. (H) Responses of AF7 to a range of different size stimuli. Blue box represents the one second interval when the stimulus was onscreen. (I) AF7 response to 3\u00b0 dot moving in various directions. n = 10 larvae. Error bars = \u00b1SEM. See Figure 3\u2014figure supplement 1 for tuning properties of tectal RGC axons.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04878/elife-04878-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Baseline fluorescence of RGC axons in the anterior half of the tectum, 50 \u00b5M below the dorsal surface of the tectum. Dotted line shows ROI, which includes the SO, SFGS, and SGC. (B) Traces showing responses to a range of different size stimuli in RGC axons in the anterior tectum of one larva. Ath5:Gal4, UAS:GCaMP6s larvae were used for these experiments. (C) Average response of five larvae to stimuli 1\u201320\u00b0 in diameter.\n\n### Response to paramecia\n\nIf AF7-projecting RGCs are mediating behavioral responses to virtual prey, we reasoned that they should also respond to natural prey, such as paramecia. We found that head-fixed larvae will perform j-turns and forward swims when paramecia are added to the surrounding medium (Figure 4A). In the absence of paramecia, head-fixed larvae perform spontaneous swims but rarely prey capture (Figure 4B), while after paramecia were added to the dish we observed frequent prey capture bouts (Figure 4C). Like the behavior evoked by virtual prey, these swims could be reliably classified by an SVM. We next asked whether the paramecia were activating AF7 RGC axons. We recorded baseline activity for 30 s and then added a drop of a dense paramecia culture to the petri dish. We found that AF7 RGC axons were strongly activated during the paramecium trials, whereas AF9 axons were not (Figure 4D, Video 2). When we quantified the \u0394F/F in AF7 and AF9 for nine fish, we found that the peak response was significantly higher in AF7 during trials with paramecia (Figure 4E). The AF9 peak response in the same larvae was not significantly different in the presence of paramecia. The finding that AF7 axons respond to actual prey supports a role for this area in generating prey capture behavior.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04878/elife-04878-fig4-v3.jpg)\n\n**Figure 4.:** (A) Overlay of 50 frames (167 ms) of high-speed video showing a head fixed larva responding to paramecia. (B) The position of the tip of the tail of the larva in A without paramecia, showing spontaneous swims. (C) The same larva after paramecia were added to the dish. Bouts that were identified as prey capture by the SVM are colored blue. (D) Ath5:Gal4, UAS:GCaMP6s larvae were imaged before and after addition of paramecia. Pseudocolor represents the ratio of the \u0394F/F with paramecia to without. (E) AF7 and AF9 responses to paramecia in nine larvae. Maximum \u0394F/F is plotted for each trial. The AF7 response was significantly higher in trials with paramecia (p = 9.6 \u00d7 10\u22125, Wilcoxon rank sum test), whereas the AF9 response was not significantly different (p = 0.083). n = 10 larvae. Error bars = \u00b1SEM. See also Video 2.\n\n![Video 2.](https://cdn.elifesciences.org/articles/04878/elife-04878-media2.avi.jpg)\n\n**Video 2.:** Ath5:Gal4, UAS:GCaMP6s axons are activated in the presence of paramecia. Pseudocolor represents the ratio of the \u0394F/F with paramecia to without. Scale is the same as in Figure 4D. Imaging frame rate was 3.3 Hz.\n\n### Anatomy of AF7-projecting RGCs\n\nThe activation of AF7 RGC axons specifically by small moving dots and paramecia suggests that there could be a specialized class of RGCs that project to this area. A subpopulation of RGCs has been previously shown to innervate AF7 and the stratum opticum (SO), the most superficial layer of the tectum (Xiao and Baier, 2007). However, little is known about their dendritic morphology, and it is unclear if these are the only inputs to AF7. We set out to characterize the anatomy of the AF7-targeting RGCs using BGUG (Xiao and Baier, 2007), a highly variegated UAS:mGFP reporter that allows the visualization of individual neurons within a Gal4 line. By expressing mCherry and BGUG in RGCs, we labeled most RGCs red and <1% of them green. We could thus identify single RGCs with arbors in AF7 (Figure 5A) and trace the axon back to the retina to observe the cell\u2019s dendritic morphology. We identified 19 larvae with an arbor in AF7. All 19 RGCs exhibited the same axonal morphology, projecting to AF7 and the SO, but not to any other AFs (Figure 5A,B). Thus, a prey-specific information channel is routed to two distinct visual areas by each axon. Examining the dendritic morphology of these AF7-targeting RGCs revealed that AF7 receives inputs from two distinct RGC types. Thirteen cells (out of 19) had bistratified arbors with branches in ON and OFF layers of the inner plexiform layer (IPL) (Figure 5C), and the other six formed diffuse arbors spanning the entire IPL (Figure 5D). These dendritic morphologies correspond to two of the 14 RGC classes previously described in the zebrafish retina (Robles et al., 2014), known as B2 and D1 These two types also project to other AFs, in much smaller numbers. However, the B2 and D1 neurons that project to AF7 only arborize in AF7 and the tectum. The RGC axon responses to prey stimuli in AF7 could be due to either B2 or D1 neurons, or both, as our Gal4 line labels both types.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04878/elife-04878-fig5-v3.jpg)\n\n**Figure 5.:** (A) A single GFP-expressing RGC axon (cyan) arborizes in AF7 in an Ath5:Gal4, UAS:mCherry, BGUG larva. (B) The same axon also innervates the SO layer of the tectum. (C) Section of the retina showing dendritic morphology of a bistratified AF7-projecting RGC. Bracket indicates borders of the IPL (16 \u00b5M). (D) Dendritic morphology of a diffuse bistratified AF7-projecting RGC.\n\n### Ablation of AF7 neuropil\n\nTo test whether the AF7-projecting RGCs play a role in prey capture behavior, we performed two-photon laser ablations targeting the AF7 neuropil. Ablations were performed bilaterally in larvae expressing the fluorescent protein Dendra in RGCs (Figure 6A). Within 3 hr, degeneration of axons that project to AF7 could be observed (Figure 6B). Ablation of AF7 did not detectably change the projection of nearby RGC axons on their course to the tectum, nor did it decrease the intensity of RGC axon labeling in the SO (Figure 6\u2014figure supplement 1A\u2013D). We also observed that tectal neuron responses to small stimuli remained intact after AF7 ablation (Figure 6\u2014figure supplement 1E\u2013H). These findings suggest that the ablation was restricted to the AF7 neuropil.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04878/elife-04878-fig6-v3.jpg)\n\n**Figure 6.:** (A) Intact Ath5:Gal4, UAS:Dendra larva at 8dpf. (B) Ath5:Gal4, UAS:Dendra larva after ablation of AF7 neuropil. (C) Pre-ablation response to paramecia in one example larva. Behavior was recorded for 5 min and the videos were edited to display all swim bouts. Each bout was classified by the same SVM as in Figure 4C. (D) The same larva after 2P laser ablation of AF7. (E) Total duration of prey capture bouts during the five 1 min trials before and after AF7 ablations. n = 14 larvae. p = 2.59 \u00d7 10\u22124, Wilcoxon rank sum test. (F) Prey capture time before and after AF9 ablations. n = 15 larvae. (G) Duration of prey capture bouts after ablation as a percent of initial prey capture time. p = 2.68 \u00d7 10\u22124, Wilcoxon rank sum test. (H) Optomotor response to moving gratings after AF7 and AF9 ablation. AF7ablation n = 7 larvae, AF9 ablation n = 9 larvae. p = 5.2 \u00d7 10\u22123, Wilcoxon rank sum test. Error bars = \u00b1SEM. See Figure 6\u2014figure supplement 1 for AF7 and SO axon anatomy and periventricular neuron activity before and after ablation.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04878/elife-04878-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Ath5:Gal, UAS:Dendra transgenes label RGC axons in AF7 and 9. (B) The same larva 3 hr after laser ablation of AF7. (C) RGC axons in the tectum in the same larva as above, before ablation. (D) SO axons 3 hr after AF7 ablation. (E) Responses of tectal neurons in the same larva as in A-D. Periventricular neurons of the tectum labeled by elavl3:GCaMP5G responded to a prey stimulus (3\u00b0 dot moving at 90\u00b0/s). (F) The same field of view after AF7 ablation. (G) Traces showing the responses of the individual cell bodies. (H) Responses in the same six cells after AF7 ablation.\n\nWe recorded responses to swimming paramecia for 5 min before the ablation and again several hours afterwards, and used our SVM to categorize the bouts (Figure 6C,D). As a control, we ablated a similarly sized region of AF9. We found that larvae with AF9 ablations spent as much time performing prey capture bouts as before ablation, whereas in AF7-ablated larvae prey capture time was significantly reduced (Figure 6E,F). On average, the AF7-ablated larvae spent 40% as much time performing prey capture bouts as they did before the ablation (Figure 6G). Although the effect was robust, ablated larvae did perform some prey capture bouts, which could reflect a failure to ablate all AF7 RGC axons, or a contribution from other retinal inputs to the behavior. To confirm that the AF7 ablation did not generally impair visual function, we tested the optomotor response (OMR) before and after ablations in AF7 or AF9. We found that, consistent with previous work (Roeser and Baier, 2003) the OMR was not impaired in AF7-ablated larvae, but was reduced in AF9-ablated larvae (Figure 6H). These data suggest that AF7-projecting RGC axons are specifically required for prey capture behavior.\n\n### Pretectal neurons with arbors in AF7 project to the tectum, nMLF and hindbrain\n\nWe used single cell electroporation to identify AF7's putative postsynaptic partners, by targeting cell bodies near AF7. We identified two classes of neurons with a proximal arbor located in the AF7 neuropil and distal arbors in other brain areas. The first class of neurons with processes in AF7, as well as the neighboring non-retinorecipient neuropil, formed a distinct projection to the tectum (Figure 7A,B). In all cases (n = 12) the tectal branch was located in a region between the SO and SFGS layers that does not receive RGC axons. We also observed that all of these projections terminated in the anterior fifth of the tectum (Figure 7B,C, and Figure 7\u2014figure supplement 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04878/elife-04878-fig7-v3.jpg)\n\n**Figure 7.:** (A) Single cells were electroporated with tetramethylrhodamine (TMR) dextran (cyan) in an Ath5:Gal4, UAS:GCaMP6s larva (red). These neurons innervate AF7, as well as the adjacent non-retinorecipient neuropil in the same plane. (B) The cell imaged in (A) projects to the rostral tectum. (C) Tracing of the same cell, showing pretectal and tectal arbors. (D\u2013E) Confocal images of a single electroporated cell in an Ath5:Gal4, Gal4s1171t UAS:GCaMP6s larva. (F) Tracing of the same cell as in (D) and (E) overlaid on a confocal image showing the Gal4s1171t labeling to identify the nMLF. See Figure 7\u2014figure supplement 1 for more examples.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04878/elife-04878-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A\u2013C). Tracings of example neurons with projections in AF7 and the tectum. (D) Overlay of tracings from four neurons with arbors in AF7 and the nMLF. In two cases, the projections toward the hindbrain became too faint to follow.\n\nA second type of neuron with dendrites in AF7 formed a projection to the nucleus of the medial longitudinal fasciculus (nMLF) and hindbrain (Figure 7D\u2013F, and Figure 7\u2014figure supplement 1). The line Gal4s1171t, which labels neurons in the midbrain tegumentum, including the nMLF (Thiele et al., 2014), was used as a landmark to identify the nMLF. These neurons (n = 4) projected to the ipsi- and contralateral nMLF before terminating in the contralateral hindbrain. Thus, these AF7-innervating neurons could be directly involved in generating prey capture swims and j-turns.\n\n## Discussion\n\nWhile it was previously established that larvae respond to small moving stimuli (Bianco et al., 2011; Trivedi and Bollmann, 2013), little was known about where in the visual system this selectivity is generated. Our finding that a subset of RGC axons is tuned to prey stimuli suggests that the selectivity is generated early in the visual pathway, by circuits in the retina. There are examples of retinal circuits that generate a similar degree of stimulus selectivity. Experiments in the rabbit have identified local edge detectors\u2014RGCs that respond only to slowly moving targets less than 1\u00b0 in diameter (Levick, 1967), and a similar type has been found in the mouse retina (Zhang et al., 2012). The unusually strong surround suppression in these cells is thought to be a consequence of amacrine cells acting presynaptically to inhibit bipolar cells as well as RGCs (van Wyk et al., 2006; Russell and Werblin, 2010). A similar mechanism could account for the size tuning of AF7-projecting RGCs.\n\nIn many cases, RGCs detect features that have a clear survival value for the animal. For example, fast-OFF RGCs in the salamander anticipate the location of a moving object (Berry et al., 1999), a feature that could be used to predict the location of moving prey (Leonardo and Meister, 2013). A classic study in the frog found RGCs that responded to small (1\u20133\u00b0) objects moving though the visual field; these cells were hypothesized to act as \u2018bug detectors\u2019 (Lettvin et al., 1959). These examples show that the retina can perform computations to detect ecologically important objects, allowing RGCs to transmit pre-processed information to the brain to coordinate behavior. Our data support a model in which retinal circuitry confers prey selectivity on a subset of RGCs, which transmit this information to two visual areas in the midbrain: AF7 and the SO layer of the optic tectum.\n\nBased on the axonal branching pattern of its RGCs, we can identify AF7 as the parvocellular superficial pretectal nucleus (PSp). The PSp is a retinorecipient brain area innervated by RGC axons that also form an arbor in the most superficial retinorecipient layer of the tectum in goldfish (Springer and Mednick, 1985). PSp was one of the two possible adult brain areas suggested for AF7 based on its location in classical dye tracing work (Burrill and Easter, 1994). This nucleus was originally identified as the homologue of the lateral geniculate nucleus (LGN) in the mammalian thalamus (Schnitzlein, 1962), although this is controversial (Northcutt and Butler, 1976). PSp has been anatomically described in several fish species, and is known to receive topographically organized retinal input (Springer and Mednick, 1985), although little functional information is available. Our group has recently demonstrated that AF7/PSp contains a retinotopic map. Most of the RGCs that project to this area reside in the temporal retina, creating a high-resolution representation of the anterior visual field (Robles et al., 2014). This is the part of the visual environment in which the prey is usually located during prey capture behavior (Patterson et al., 2013).\n\nWhy might it be advantageous to route prey-responsive RGCs to both AF7 and the tectum? One possibility is that tectal neurons are responsible for directing the orienting movements towards a particular point in visual space, while AF7 neurons modulate or gate the tectal output, based on behavioral state (e.g. hunger, arousal). The tectum and its mammalian homologue, the superior colliculus, have been shown to be involved in the transformation of sensory information encoded in terms of visual space into the appropriate motor command (Bergeron et al., 2003; du Lac and Knudsen, 1990). The tectum has also been implicated in zebrafish prey capture in several recent studies. Ablation experiments have shown that the tectal neuropil and, more specifically, inhibitory tectal neurons in the most superficial layer play a role in prey capture (Gahtan et al., 2005; Del Bene et al., 2010), and functional imaging experiments have found that tectal neurons are activated by moving paramecia (Muto et al., 2013). Thus, the tectal circuits could translate a prey object\u2019s precise location in visual space into a swimming movement that results in pursuit of the prey.\n\nWe have identified a class of pretectal neurons that have dendrites in the AF7 neuropil and also project to the most rostral fifth of the tectum (Figure 7A\u2013C, Figure 7\u2014figure supplement 1) which corresponds to the anterior visual field. If the motor map is roughly faithful to the visual map, tectal output neurons in this region could trigger prey capture forward swims. Within the pretectum, the AF7/tectum neurons also have processes in the non-retinorecipient neuropil next to AF7, which most likely corresponds to the magnocellular superficial pretectal nucleus (PSm). We hypothesize that these neurons could be integrating the retinal response to prey with information on behavioral state, and then providing excitatory input to the tectum when appropriate. These AF7 neurons project to a layer of the tectum just ventral to SO, the tectal layer that receives prey-responsive RGC axons (Figure 5B, Figure 8). Tectal neurons with dendrites in these superficial layers could thus receive positional information from the raw retinal input in the SO, and excitatory input from the AF7 neurons that would release prey capture behavior only under certain conditions. However, at this point we do not know the response properties or type of neurotransmitter released by these neurons, so we can only speculate as to the input they provide to the tectum.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/04878/elife-04878-fig8-v3.jpg)\n\n**Figure 8.:** A prey stimulus on the left activates RGCs in the left eye (blue) which project to AF7 and the SO layer of the right tectum. Pretectal neurons (red) arborize in AF7 and send projections to the tectum or the nMLF and hindbrain. Activation of this circuitry produces a j-turn to the left, turning the larva in the direction of the prey. Previous studies have demonstrated connections between the tectum and nMLF (Gahtan et al., 2005) and between the tectum and hindbrain (Robles et al., 2011) (gray arrows).\n\nModulation of the tectum by other visual areas is a common motif in vertebrate systems, and in many cases suppression or facilitation of tectal activity determines whether a behavioral response will occur. For example, a GABAergic projection from the basal ganglia to the superior colliculus is thought to act as a gate for the saccade-generating neurons of the superior colliculus, providing tonic inhibition whose cessation releases saccade movements (Shires et al., 2010). Another example of tectal modulation is the local cholinergic and global GABAergic feedback to the tectum provided by the isthmic nuclei in birds (Knudsen, 2011). The focal enhancement by cholinergic input has been shown to be necessary for the transmission of visual information to the area downstream of the tectum (Mar\u00edn et al., 2007). Finally, studies of prey capture in toads have identified a pretectal area that provides inhibitory input to the tectum, resulting in the preference for worm-like prey stimuli (Ewert et al., 2001). The sign of this modulation is opposite to that described in our model, but this might be explained by the different types of stimuli being selected by the two systems (i.e., elongated objects moving in the direction of their long axis, vs small moving circles).\n\nIn addition to the class of AF7-innervating neurons that project to the tectum, we found another class which projects bilaterally to the nMLF and contralaterally to the caudal hindbrain (Figure 7D\u2013F and Figure 7\u2014figure supplement 1). The nMLF is a cluster of reticulospinal neurons that are involved in controlling swim orientation (Thiele et al., 2014), as well as speed (Severi et al., 2014). Two of the identified nMLF cells, MeLr and MeLc, have also been shown to be necessary for successful prey capture (Gahtan et al., 2005). Projections from AF7 to the nMLF could therefore be involved in generating prey capture tail movements. The hindbrain also plays an important role in locomotion. Neurons in the hindbrain project to the spinal cord, and activation of the caudal hindbrain has been shown to drive swimming behavior (Arrenberg et al., 2009; Kimura et al., 2013). Thus far, the tectum has been considered the main output pathway to premotor centers in zebrafish. However, in other systems, multiple areas project to the premotor nuclei and may drive behavior independently or direct different aspects of a behavior; for example, in primates, both the frontal eye fields and the superior colliculus provide input to the brainstem regions controlling eye movements (Scudder et al., 2002). It remains to be seen what role the neurons projecting from AF7 to the nMLF and hindbrain might play in the various components of prey capture behavior.\n\nOur results identify a specific pretectal, retinorecipient region as a key component of the prey detection circuit. They also point toward a series of parallel and interconnected pathways between multiple areas involved in this elementary form of object recognition. Finally, they identify potential anatomical links of the visual network to midbrain and hindbrain areas that serve to coordinate the locomotor maneuvers involved in capturing prey. Further studies should shed light on what role each area plays in the behavior and how they interact.\n\n## Materials and methods\n\n### Fish\n\nEmbryos were raised in Danieau's solution (17 mM NaCl, 2 mM KCl, 0.12 mM MgSO4, 1.8 mM Ca(NO3)2, 1.5 mM HEPES) at 27.5\u00b0C on a 14/10 light/dark cycle. Wild type TL larvae were used for behavioral experiments, and TLN larvae (nacre mutants) were used for imaging. Since gonadal differentiation has not occurred at this stage, males and females were used indiscriminately. All animal procedures conformed to the institutional guidelines of the Max Planck Society and the local government (Regierung von Oberbayern).\n\n### Transgenic lines\n\nThe following transgenic lines were used: Tg(Atoh7:Gal4-VP16)s1992t (written as Ath5:Gal4), Tg(UAS:Dendra-Kras)s1998t, Tg(UAS:mCherry), Tg(pou4f3:Gal4, UAS:mGFP) (a.k.a. BGUG), Gal4s1171t, Tg(Isl2b.2:Gal4-VP16) and Tg(elavl3:GCaMP5G). To construct the UAS:GCaMP6s line, a fragment encoding GCaMP6s (Addgene) was cloned into a 14xUAS, pTol2 plasmid.\n\n### Behavioral experiments\n\nAt 5 dpf, each dish of larvae was fed about 2 ml of a dense culture of paramecia. At 6 dpf, the larvae were embedded in 2.5% low melting point agarose (Invitrogen, Carlsbad, California) in Danieau's solution and positioned 3 mm from the edge of a 35 mm Petri dish lid. After the agarose had set, the dish was filled with Danieau's solution and some of the agarose was cut away, leaving the tail caudal to the swim bladder free to move. After embedding, larvae were kept at 27.5\u00b0C for 48 hr. Behavioral experiments were conducted at 8 dpf in a 27.5\u00b0C chamber. For virtual prey experiments, larvae with a prey capture score (percent of the trial spent in prey capture bouts) of less than 30% for the 3\u00b0 stimulus were excluded from the analysis.\n\nVisual stimuli were designed using a custom program in the Python-based Vision Egg software (Straw, 2008). The stimulus was a white dot on a black background, moving horizontally from left to right. Stimuli were presented on a 12 \u00d7 9 mm OLED Microdisplay (Emagin, Bellevue, WA) covered with three magenta Wratten filters (Edmund Optics, Barrington, NJ) and positioned 1 cm from the larva. Larvae were illuminated from below with an IR light source. We used a high-speed camera (Photonfocus, Switzerland) to record tail movements at 300 frames/second (f/s), with a resolution of 300 \u00d7 300 pixels.\n\nFor behavioral experiments with paramecia, we embedded 6 dpf larvae in the center of a 35 mm Petri dish and cut away some of the agarose in front of the eyes by making an incision perpendicular to the body axis 1 mm from the head. The tail below the swim bladder was also freed. As we did for the virtual prey experiments, we waited 48 hr after embedding to test behavior. We added a few drops of paramecia (Paramecium multimicronucleatum, Carolina Biological Supply Company, Burlington, NC) to the dish and recorded at 300 f/s for 5 min. The procedure was repeated a few hours after laser ablations. For post-ablation behavioral experiments, the experimenter was blinded as to whether the animal was in the AF7 or AF9 ablation group.\n\nTo test the OMR, each embedded larva was positioned in an arena surrounded by three LED screens (5.5 \u00d7 7.5 cm). Gratings moving leftward at 20\u00b0/s were displayed on all three screens to produce turns. Stimulus presentation was controlled with a custom LabVIEW script, and tail movements were recorded at 250 f/s. The same procedure was repeated a few hours after laser ablations. To measure the number of swims, we digitized the tail as described below and used a thresholding operation on the smoothed derivative of the tail bend angle to identify swim bouts.\n\n### Tail digitization\n\nWe developed a custom Python program that quantifies the tail position in each frame as a series of points, with approximately 40 points covering the tail. The program uses the OpenCV library to load videos. At the start of each video, the user is queried to select the base of the tail. From that point, the program iterates through the tail in each frame, taking a slice through the image where the next tail midpoint is expected to be. This slice is smoothed, convolved with a tail-like kernel, and the maximum is taken to determine the midpoint of the tail. This sequence is repeated until the end of the tail, which is detected using a threshold for change in luminance across the slice. To improve accuracy, the width and contrast of the tail in the first frame of video are characterized and used to refine the tracking for the rest of video.\n\n### Support vector machine (SVM)\n\nThe SVM code was written in Python. The SVM and cross-validation procedures were provided by the scikit-learn library (Pedregosa et al., 2011), which uses LIBSVM (Chang and Lin, 2011) for the SVM implementation. To avoid testing and training on the same dataset, we used fivefold stratified cross-validation for training (Kohavi, 1995). For this validation, data are split into five groups of approximately equal mean. One group is reserved for testing while the others are used for training, and this procedure is repeated five times before the results are combined. We quantified 16 parameters for each bout. A radial basis function (RBF) kernel shape was used to draw the decision boundaries. A subset of the 16 parameters was selected by plotting the accuracy vs number of parameters. The point that maximized performance while minimizing the number of parameters was selected. For the virtual prey SVM, five parameters were optimal (Figure 1\u2014figure supplement 1).\n\nThe virtual prey SVM was trained on 248 prey bouts and 121 spontaneous bouts. The paramecia SVM was trained on 273 prey bouts and 396 spontaneous bouts.\n\nFor the parameters described below, \u2018tail angle\u2019 is the angle of deflection of tail center of mass, \u2018tail tip\u2019 is defined as the last eight points of tail, and \u2018tip angle\u2019 is the angle of a line dawn through the last eight points of the tail, with respect to vertical. Parameters 1\u20135 were used in the virtual prey SVM; parameters 1\u20136 were used in the paramecia SVM.\u2018Maximum tail curvature\u2019: maximum over the bout.\u2018Number of peaks in tail angle\u2019.\u2018Mean tip angle\u2019: absolute value of tip angle in each frame, averaged across the bout.\u2018Maximum tail angle\u2019: maximum of the bout.\u2018Mean tip position\u2019: average position of last eight points in the tail (horizontal deflection as a fraction of the tail length).\u2018Number of frames between peaks\u2019: mean (over bout) number of frames between peaks in the tail angle.\u2018Medium frequency power of tail angles\u2019: power of middle frequency band of fourier transform of tail angle.\u2018Low frequency power of tail angles\u2019: power of low frequency band of fourier transform of tail angle.\u2018Tail angle vs tip angle\u2019: mean (over bout) difference in angle of deflection between tail center of mass and tip center of mass.\u2018Tail angle vs. tip angle at frame of maximum tail angle\u2019: difference in angle of deflection between tail center of mass and tip center of mass in the frame with the maximum tail angle.\u2018Variance in tail angle\u2019: over entire bout.\u2018Mean tail curvature\u2019: mean curvature over entire bout.\u2018Mean tail tip angle\u2019: mean over entire bout\u2018Mean tail position\u2019: average position of tail from 12th point to end (horizontal deflection as a fraction of the tail).\u2018Mean tail curvature vs. tail angle\u2019: mean (over bout) difference between tail curvature and tail angle.\u2018Maximum tip horizontal deviation\u2019.\n\n### Two-photon calcium imaging\n\nLarvae were embedded as for behavioral experiments. Imaging experiments were performed at 7 or 8 dpf. Stimuli were presented on the same type of OLED screen as for behavior, also covered with three magenta wratten filters. Imaging was performed on a movable objective microscope (Sutter, Novato, CA) using a 40\u00d7 objective (Olympus, Japan). Excitation light was generated by a Ti: Sapphire laser (Coherent, Santa Clara, CA) tuned to 920 nm. Time series were recorded at 3.6 Hz with a resolution of 128 \u00d7 128 pixels. We used a red LED to provide some ambient light to the larva during imaging, and we heated the microscope box to 27\u00b0C.\n\n### Confocal imaging\n\nIn order to record the response to paramecia in RGC axons, we embedded larvae in the center of a dish as for the paramecium behavior experiments and again cut away the agarose in front of the eyes and below the swim bladder. Since bright ambient light was required to allow the larvae to see the paramecia, we performed these imaging experiments on a confocal microscope (Zeiss 780) rather than a two-photon. Time series were acquired at a rate of 3.3 Hz and a resolution of 128 \u00d7 128 pixels. Experiments were performed with overhead lights on and a white LED illuminating the dish to enhance the visibility of the prey. Temporal series of the same field of view with and without paramecia were joined together. The resulting stack was registered with StackReg in Fiji to reduce motion artifacts and pixel misalignment between the two acquisitions. From the raw data, \u0394F/F was computed pixel-wise by a custom Matlab routine. Because we did not know when a paramecium was within the field of view, we calculated the baseline F for each pixel as the value of that pixel during a period of low activity. This was defined as the eighth percentile of the pixel's fluorescence over a sliding window of 25 frames. Maximum intensity projections of \u0394F/F, computed independently for the two segments of the stack (before and after addition of paramecia), were divided to give the \u0394F/F ratio between the two conditions for the pseudocolor image shown in Figure 4D. From the \u0394F/F maximum intensity projections, the average values over regions of interest corresponding to AF7 and AF9 were computed to compare the activity between the two arborization fields. During the 30 s windows we imaged over, occasional responses were observed in AF7 and AF9 in the absence of paramecia added to the bath. This could be the result of spontaneous activity, or small objects, for example bubbles or debris, floating in the solution.\n\n### RGC anatomy\n\nUAS:mCherry, BGUG, Islet2b:Gal4 (or Ath5:Gal4) larvae were treated with 0.2 mM 1-phenyl-2-thiocarbamide (PTU) from 1 dpf to reduce pigmentation of the retina. Larvae with sparse GFP in AF7 were identified, and confocal stacks of the axonal projections were acquired. To visualize dendritic arbors in the retina, vibratome sectioning was performed as previously described (Robles et al., 2013). Briefly, 50 \u00b5m vibratome sections were cut from larvae embedded in gelatin/albumin/sucrose and stained with a chick anti-GFP primary antibody (Catalog number GTX13970; GeneTex, Irvine, CA) and an Alexa 488 anti-chick secondary antibody (Catalog number A-11039; Invitrogen).\n\n### Two-photon laser ablation\n\nAblations were performed in 8 dpf Ath5:Gal4 UAS:Dendra, TLN larvae, using the same two-photon microscope as for the imaging experiments. We found that treating the larvae with 0.1 mM PTU starting at 1 dpf was helpful in preventing tissue damage during ablation. Axons were killed by scanning an 850 nm beam for 750 ms over a 3 \u00d7 3 \u00b5M area. Post-objective laser power was 80 mW/mm2. 4\u20135 scans were usually sufficient to ablate the AF7 neuropil. A Z stack of the area was taken 24 hr later to assess completeness of the ablation, and larvae with less than 80% of the volume ablated bilaterally were not used for the analysis. As a control, we ablated a similar volume of AF9 neuropil, with 4\u20135 scans.\n\n### Electroporations\n\n6 or 7 dpf larvae were embedded in agarose, immersed in extracellular solution and anesthetized with 0.02% tricane. Larvae with the transgenes Ath5:Gal4, UAS:GCaMP6s, and for some experiments Gal4s1171t were used. Patch pipettes (25\u201332 M\u03a9) were filled with 15% tetramethylrhodamine dextran (3000 MW) in intracellular saline. AF7 and AF9 were used as landmarks to locate AF7 cells. Following contact with a cell, a voltage train was applied (1 s duration, 150 Hz, 1.4 ms pulse width, 2\u20136 V) by an Axon Axoporator (Molecular Devices, Sunnyvale, CA). Labeled cells were imaged on a Zeiss LSM780 confocal microscope.\n\n### Statistical analysis\n\nThe Jarque\u2013Bera test was used to determine whether data were normally distributed. The t-test was used to evaluate normally distributed data. For non-normally distributed data, we used the Wilcoxon rank sum test. Variance was tested and found to be similar between groups by Levene's test.\n\n### Code Repository\n\nAll custom software is available at https://bitbucket.org/mpinbaierlab/semmelhack-et-al.-2014.\n",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "bf62ef25-0053-421a-ae65-6db4835bec4e",
+      "submission_id": "eedfaacf-b6fb-4dc5-8565-2f14614086e1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ole Kiehn, Karolinska Institute , Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04878.017](https://doi.org/10.7554/eLife.04878.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cA dedicated sensorimotor pathway for prey detection and capture in larval zebrafish\u201d for consideration at eLife. Your article has been favorably evaluated by Eve Marder (Senior editor) and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nSemmelhack and colleagues, in their study in embryonic zebrafish establish that there is a retinal to pretectal connection that seems to convey sensory information from a small subset of retinal ganglion cells about prey items. Elimination of ganglion cell input to this pretectal area, AF7, strongly reduces prey capture behavior. These observations point to an initial sensory pathway that is focused on stimuli that represent prey and convey visual signals to AF7. The authors also attempt to anatomically link the sensory AF7 pathway with brainstem motor command systems. Altogether the authors suggest that they have identified a dedicated sensorimotor pathway for prey detection and capture in larval zebrafish.\n\nIn general the work is interesting. The strong and convincing part of the study is the characterizations of the initial sensory pathway in the prey capture behavior. The importance of study is that it appears to be the first time that feature selective ganglion cells activity has been linked to prey capture behavior outside the tectum. The less convincing part of the study is the link to motor output pathways. Moreover, the results appear to be oversold in places with too strong conclusions based on the available data. It is recommended that the authors' focus on what can clearly be said based on strong evidence and tone down strong statements and discussions based on weak evidence. The details are outlined below in addition to other points for improvements of the manuscript.\n\n1) The title is: \u201cA dedicated sensorimotor pathway for prey detection and capture in larval zebrafish.\u201d The title is a statement that goes beyond the evidence. The sensory side seems fairly dedicated (although role of tectum needs to be considered), but the evidence for the motor end is weak.\n\n2) It cannot be concluded, as in the Introduction\u2014\u201c(\u2026) targeted laser ablation showed that this area is necessary for the behavior\u201d\u2014 and otherwise, that AF7 is necessary for the behavior. As shown in the Results section, deletion of input to AF7 only reduces the prey capture behavior. Hence, it is not necessary. If the animals can do the prey capture behavior at all without the region then it is cannot be said to be \u201crequired\u201d. A balanced discussion for the lack of necessity is required.\n\n3) Please comment about the mismatch between behavioral response and AF7 at high speeds shown in Figure 3G.\n\n4) Please clarify if AF7 is only activated in prey capture behavior. For example, are escape responses observed and if so how do they relate to the parameters presented in Figure 2? Moreover, it seems that there are bigger AF7 responses when paramecia are present, but still there are responses even without paramecia. This would seem to refute the notion that the area is dedicated to prey responses, which is a basic conclusion of the work. If the area is responding when no prey stimuli are there, then the paper should make that clear.\n\n5) How is the tectum responding to the optimal stimulus? (Please show traces and selectivity, as in Figure 3F\u2013G).\n\n6) There are some ambiguities whether the two ganglion cells that are said to project exclusively to AF7 only project there (Figure 5) or if they also project to other AFs. Based on the data in Figure 5 in the authors Current Biology paper (2014), it appears that the two ganglion cell types that project to AF7 also project to other AFs. Please clarify this point.\n\n7) The link between an anatomical class of ganglion cells (Figure 5) and the prey capture behavior is indirect. In a strict sense the authors have only shown that some ganglion cells activate the AF7 but not the type shown in Figure 5. This should be clear in the text.\n\n8) The evidence for output pathways from the pretectal area consists of fills of a few neurons in the vicinity of the pretectal arborization region. It is not known whether the neurons are driven by the stimulus or whether they actually get inputs from the retina or have connections in their projection area. All of the output part, including several paragraphs of the Discussion section, are based on these findings. This is too weak a foundation for the speculations that a dedicated motor output pathway has been identified. Please adjust the text accordingly.\n\n9) It is too strong to say \u201cpinpoint the anatomical links of the visual network\u2026\u201d, since not all pieces have been found.\n\n10) The statement \u201cWe identified a class of pretectal neurons that could function as a gate for tectal output\u201d is highly speculative. This strong statement cannot be accepted as long as the authors do not provide any indication about the molecular identity of the found AF7-OT connection and the following discussion can be left out.\n\nOther points for improvements of the manuscript:\n\n1) Ewert's classic work addressed the innate capacity to respond to prey although in frogs/toads. Please cite his work in the initial opening sentences.\n\n2) Figure 3 would be stronger by showing some real traces of responses from AF7.\n\n3) Please comment about the mismatch between behavioral response and AF7 at high speeds shown in Figure 3G.\n\n4) What is the average size and the swimming speed of paramecia? It would be nice seeing it compared to the optimal behavioral parameters found.\n\n5) Some more information should be provided about BGUG in the Results section in order to make the anatomy part more easily understandable for the lay reader.\n\n6) The enlarged LGN in mammals can depend on a number of different causes and it might not be justified to stress the possible homology with the mammalian LGN in the Discussion.\n\n7) From the sentences \u201cFrom the raw data, \u0394F/F was computed pixel-wise by a custom Matlab routine with F resulting from the eighth percentile of the sample distribution over a sliding window of 25 frames. Maximum intensity projections of \u0394F/F, computed independently for the two segments of the stack, were divided to give the \u0394F/F ratio between the two conditions\u201d (Materials and methods section), it was hard to understand how exactly the data analysis was done. This needs to be more clearly explained. What is meant by sliding window here?\n",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b943f467-b83d-49c3-8230-2931e85aa6bd",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C1",
+      "claim": "Zebrafish larvae show characteristic prey capture behavior in response to small moving objects.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish larvae show characteristic prey capture behavior in response to small moving objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a foundational observation of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "e352fb28-21de-4423-beed-fbaecb0145fe",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C2",
+      "claim": "Two-photon calcium imaging revealed a small visual area, AF7, that was activated specifically by the optimal prey stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-photon calcium imaging revealed a small visual area, AF7, that was activated specifically by the optimal prey stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is directly stated in the abstract and supported by imaging data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "39ba6a16-7dfb-4c7c-9698-7363b73eb128",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C3",
+      "claim": "The pretectal region AF7 is innervated by two types of retinal ganglion cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This pretectal region is innervated by two types of retinal ganglion cells, which also send collaterals to the optic tectum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by anatomical data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "84d82a48-6078-4a39-926f-0d5748c44ca3",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C4",
+      "claim": "Retinal ganglion cells that innervate AF7 also send collaterals to the optic tectum.",
+      "claim_type": "EXPLICIT",
+      "source": "This pretectal region is innervated by two types of retinal ganglion cells, which also send collaterals to the optic tectum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "d5c47464-ac48-400e-b1a9-3b28c1007e10",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C5",
+      "claim": "Laser ablation of AF7 markedly reduced prey capture behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Laser ablation of AF7 markedly reduced prey capture behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by behavioral data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "640d692b-0b05-4811-b3a3-5b27f42404db",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C6",
+      "claim": "Neurons with arbors in AF7 project to the optic tectum.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified neurons with arbors in AF7 and found that they projected to multiple sensory and premotor areas: the optic tectum, the nucleus of the medial longitudinal fasciculus (nMLF) and the hindbrain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 7A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "707991b1-5c4e-4238-b1d4-ac8a4cd4e176",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C7",
+      "claim": "Neurons with arbors in AF7 project to the nucleus of the medial longitudinal fasciculus (nMLF).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified neurons with arbors in AF7 and found that they projected to multiple sensory and premotor areas: the optic tectum, the nucleus of the medial longitudinal fasciculus (nMLF) and the hindbrain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 7D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "e5f2f8be-ba65-4b08-8bbd-cfd787bb6e1e",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C8",
+      "claim": "Neurons with arbors in AF7 project to the hindbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified neurons with arbors in AF7 and found that they projected to multiple sensory and premotor areas: the optic tectum, the nucleus of the medial longitudinal fasciculus (nMLF) and the hindbrain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 7D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "3ed920e8-4f56-46f1-b5cb-2296d3e51f0d",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C9",
+      "claim": "Zebrafish larvae start to swim at five days post fertilization (5 dpf).",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish larvae have an instinctive ability to hunt small moving prey objects, such as paramecia, as soon as they start to swim at five days post fertilization (5 dpf).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known developmental fact in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "174357e9-793f-4371-8964-bed82de1ecf6",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C10",
+      "claim": "Zebrafish larvae have an instinctive ability to hunt small moving prey objects, such as paramecia.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish larvae have an instinctive ability to hunt small moving prey objects, such as paramecia, as soon as they start to swim at five days post fertilization (5 dpf).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and is established knowledge about zebrafish behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "aec986c8-2c8e-42aa-96c4-a9a36544eea0",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C11",
+      "claim": "Prey capture in zebrafish larvae involves a multi-step motor routine including bouts of turning and swimming toward the prey, culminating in a consummatory strike.",
+      "claim_type": "EXPLICIT",
+      "source": "It then initiates a multi-step motor routine involving bouts of turning and swimming toward the prey, culminating in a consummatory strike (Budick and O'Malley, 2000; Borla et al., 2002; Gahtan et al., 2005; McElligott and O'Malley, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "a1dd3de5-5f92-49ad-9937-fff103ebb445",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C12",
+      "claim": "Prey capture tail movements in zebrafish larvae are quite different from those observed during routine swims or escapes.",
+      "claim_type": "EXPLICIT",
+      "source": "Precise maneuvers are required, and so prey capture tail movements are quite different from those observed during routine swims or escapes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by kinematic analysis in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "a965db4e-2f18-47b4-ba0b-5d779e652449",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C13",
+      "claim": "Larvae perform j-turns (unilateral bends where the tail is held in a J shape) to orient towards a paramecium on the left or right.",
+      "claim_type": "EXPLICIT",
+      "source": "To orient towards a paramecium on the left or right, larvae perform j-turns\u2014unilateral bends where the tail is held in a J shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and demonstrated in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "3d33f0df-2d4d-4708-82d0-26fc19f09a58",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C14",
+      "claim": "When prey is directly ahead, zebrafish larvae slowly swim toward it with back and forth undulations of the tail.",
+      "claim_type": "EXPLICIT",
+      "source": "If the prey is directly ahead, they slowly swim toward it, with back and forth undulations of the tail (Patterson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "b22dfce5-398e-4b84-89dc-4dffab89da9e",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C15",
+      "claim": "A moving dot can evoke eye convergence and approach swims in head-fixed zebrafish larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Two recent studies have shown that a moving dot can evoke eye convergence and approach swims in head-fixed larvae (Bianco et al., 2011; Trivedi and Bollmann, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "115fbe09-a566-4cd9-94da-3a02428e622f",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C16",
+      "claim": "A classic study in the frog found RGCs that responded to small (1\u20133\u00b0) objects moving through the visual field.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a precedent for RGCs acting as prey detectors\u2014a classic study in the frog found RGCs that responded to small (1\u20133\u00b0) objects moving through the visual field (Lettvin et al., 1959).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation to Lettvin et al., 1959.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "4a4207f6-67c2-4c52-bbd3-0fe6a244fae1",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C17",
+      "claim": "Intrinsically photosensitive RGCs project to nuclei that control circadian rhythms and the pupillary light reflex.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, intrinsically photosensitive RGCs project to nuclei that control circadian rhythms and the pupillary light reflex (Chen et al., 2011), and RGCs that respond to whole field motion innervate nuclei that drive compensatory eye movements (Simpson, 1984; Dhande et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "58e33220-bf6f-4302-8ffe-6de1119e272d",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C18",
+      "claim": "RGCs that respond to whole field motion innervate nuclei that drive compensatory eye movements.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, intrinsically photosensitive RGCs project to nuclei that control circadian rhythms and the pupillary light reflex (Chen et al., 2011), and RGCs that respond to whole field motion innervate nuclei that drive compensatory eye movements (Simpson, 1984; Dhande et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "74a05ce7-a6f4-4ace-bb23-e5d835a52635",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C19",
+      "claim": "In zebrafish, RGC axons terminate in ten retinorecipient areas called arborization fields (AFs).",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, RGC axons terminate in ten retinorecipient areas called arborization fields (AFs) (Burrill and Easter, 1994), most of which have not been functionally characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "9ddbfc89-767d-4f43-8b1c-ca55fa8329b5",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C20",
+      "claim": "Most arborization fields in zebrafish have not been functionally characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, RGC axons terminate in ten retinorecipient areas called arborization fields (AFs) (Burrill and Easter, 1994), most of which have not been functionally characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as background information.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "cebc53ed-44b2-4b34-83ba-01e41a22673c",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C21",
+      "claim": "Larvae performed two types of behavior in response to virtual prey: forward swims and j-turns.",
+      "claim_type": "EXPLICIT",
+      "source": "Larvae performed two types of behavior in response to this virtual prey: forward swims, which consisted of low amplitude oscillations of the tail, and j-turns (Figure 1A) (McElligott and O'Malley, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and demonstrated in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "87b61064-3324-4d69-b63d-c6cda3e9fec3",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C22",
+      "claim": "Forward swims consist of low amplitude oscillations of the tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Larvae performed two types of behavior in response to this virtual prey: forward swims, which consisted of low amplitude oscillations of the tail, and j-turns (Figure 1A) (McElligott and O'Malley, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "2a31aa38-504e-49dd-a165-4bd550f4fd6b",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C23",
+      "claim": "Prey capture swims are accompanied by eye convergence.",
+      "claim_type": "EXPLICIT",
+      "source": "These swims were accompanied by eye convergence, which is another kinematic feature of prey capture (Bianco et al., 2011; Patterson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "a47406fc-66a4-485e-b418-079402898625",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C24",
+      "claim": "The average amplitude of tail movements for prey capture bouts was 17% of tail length.",
+      "claim_type": "EXPLICIT",
+      "source": "The average amplitude of the tail movements for prey capture bouts was 17% of tail length, while for spontaneous swims it was 48% of tail length (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "a741ba8f-68df-4e77-9324-87eb8c648f5f",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C25",
+      "claim": "The average amplitude of tail movements for spontaneous swims was 48% of tail length.",
+      "claim_type": "EXPLICIT",
+      "source": "The average amplitude of the tail movements for prey capture bouts was 17% of tail length, while for spontaneous swims it was 48% of tail length (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "c24266a2-ea37-4805-8954-6603aa4ac63f",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C26",
+      "claim": "The support vector machine classifier achieved a cross-validated accuracy of 96%.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we were able to achieve a cross-validated accuracy of 96% (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "6d932bca-a63d-4e15-b712-00b00dba3126",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C27",
+      "claim": "A 3\u00b0 dot was the optimal size to trigger prey capture.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a 3\u00b0 dot was the optimal size to trigger prey capture (Video 1), and that the behavior was strikingly reduced when we increased the size to 10\u00b0 (Figure 2A), which is consistent with data from free swimming and head-fixed larvae (Bianco et al., 2011; Trivedi and Bollmann, 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "e3167712-cd06-4cc3-bdf0-2c5e7c04f9ee",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C28",
+      "claim": "Prey capture behavior was strikingly reduced when stimulus size was increased to 10\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a 3\u00b0 dot was the optimal size to trigger prey capture (Video 1), and that the behavior was strikingly reduced when we increased the size to 10\u00b0 (Figure 2A), which is consistent with data from free swimming and head-fixed larvae (Bianco et al., 2011; Trivedi and Bollmann, 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "eb514a46-59eb-4853-9b64-40653b6024a7",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C29",
+      "claim": "90\u00b0/s is the ideal speed for prey stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested the response to dots traveling at a wide range of speeds, and found that 90\u00b0/s is the ideal speed for prey stimuli, and that larvae respond minimally to stimuli moving slower than 12\u00b0/s or faster than 360\u00b0/s (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "06e4ff9d-b285-41b2-8495-82f67439b4b0",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C30",
+      "claim": "Larvae respond minimally to stimuli moving slower than 12\u00b0/s or faster than 360\u00b0/s.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested the response to dots traveling at a wide range of speeds, and found that 90\u00b0/s is the ideal speed for prey stimuli, and that larvae respond minimally to stimuli moving slower than 12\u00b0/s or faster than 360\u00b0/s (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "fd8ed8ad-890d-4f03-8c8a-23fb10f8278a",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C31",
+      "claim": "AF7 RGC axons responded robustly to the prey stimulus (3\u00b0, 90\u00b0/s).",
+      "claim_type": "EXPLICIT",
+      "source": "We stimulated larvae with the prey stimulus while imaging RGC axons in AFs 2\u20139, and found one area, AF7, whose RGC axons responded robustly to the stimulus (Figure 3B), while seven other AFs did not respond to virtual prey.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "d4091710-936a-43d5-92f2-3eacd4279a71",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C32",
+      "claim": "Seven arborization fields (AFs 2-6, 8, 9) did not respond to virtual prey.",
+      "claim_type": "EXPLICIT",
+      "source": "We stimulated larvae with the prey stimulus while imaging RGC axons in AFs 2\u20139, and found one area, AF7, whose RGC axons responded robustly to the stimulus (Figure 3B), while seven other AFs did not respond to virtual prey.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "62c71169-96c6-432f-9d5d-14797b6be3a6",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C33",
+      "claim": "AF7 RGC axons responded maximally to dots 2\u20133\u00b0 in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "We next varied the size of the stimulus while imaging in the AF7 plane, and found that AF7 RGC axons responded maximally to dots 2\u20133\u00b0 in diameter, and much less to stimuli larger than 6\u00b0 in diameter (Figure 3C\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "1c106204-1eeb-4a89-b996-383255927dac",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C34",
+      "claim": "AF7 RGC axons responded much less to stimuli larger than 6\u00b0 in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "We next varied the size of the stimulus while imaging in the AF7 plane, and found that AF7 RGC axons responded maximally to dots 2\u20133\u00b0 in diameter, and much less to stimuli larger than 6\u00b0 in diameter (Figure 3C\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "e854afdc-fb58-49f9-859a-61f37bb64626",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C35",
+      "claim": "AF9 did not respond to small dots but began to respond as the stimulus size was increased above 6\u00b0 in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, AF9, another AF in the same plane, did not respond to small dots but began to respond as the stimulus size was increased above 6\u00b0 in diameter (Figure 3C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "1c653768-61e0-4c65-8bb4-59f4a1a1d575",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C36",
+      "claim": "The optimal speed for AF7 response was 90\u00b0/s.",
+      "claim_type": "EXPLICIT",
+      "source": "We also measured the response of AF7 to stimuli of varying speeds, and found that the optimal speed was 90\u00b0/s, and stimuli slower than 12\u00b0/s or faster than 360\u00b0/s evoked a much smaller response in these axons (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "3a581437-1100-4b54-a987-2adec77b0e3c",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C37",
+      "claim": "Stimuli slower than 12\u00b0/s or faster than 360\u00b0/s evoked a much smaller response in AF7 axons.",
+      "claim_type": "EXPLICIT",
+      "source": "We also measured the response of AF7 to stimuli of varying speeds, and found that the optimal speed was 90\u00b0/s, and stimuli slower than 12\u00b0/s or faster than 360\u00b0/s evoked a much smaller response in these axons (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "0b2936cf-2afb-401f-b6b9-127b8da79d3b",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C38",
+      "claim": "AF7 tuning curves for size and speed are strikingly similar to the behavioral tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "These tuning curves are strikingly similar to the behavioral tuning curves for size and speed (Figure 2A,B, grey trace in Figure 3F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown by comparing Figure 2 and Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "f8b9f90b-b03c-4b03-88de-553a2ca2daeb",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C39",
+      "claim": "AF7 as a whole responded to prey stimuli moving in all four cardinal directions.",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested the direction selectivity of the axons in AF7, and found that the area as a whole responded to prey stimuli moving in all four cardinal directions (Figure 3I), although the response was more robust to stimuli moving horizontally (p < 0.001, t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "851d36d1-64bf-4182-b681-b2ca8a383bfd",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C40",
+      "claim": "AF7 response was more robust to stimuli moving horizontally than vertically (p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We next tested the direction selectivity of the axons in AF7, and found that the area as a whole responded to prey stimuli moving in all four cardinal directions (Figure 3I), although the response was more robust to stimuli moving horizontally (p < 0.001, t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "0d4934e6-4589-4d55-a964-6b79cf2d524d",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C41",
+      "claim": "Head-fixed larvae perform j-turns and forward swims when paramecia are added to the surrounding medium.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that head-fixed larvae will perform j-turns and forward swims when paramecia are added to the surrounding medium (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "7885e354-1493-4496-ab1e-b83bbd5b83f9",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C42",
+      "claim": "AF7 RGC axons were strongly activated during paramecium trials.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that AF7 RGC axons were strongly activated during the paramecium trials, whereas AF9 axons were not (Figure 4D, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4D and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "aeece96d-45cf-43c9-9c26-09b90aef7ddd",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C43",
+      "claim": "AF9 axons were not activated during paramecium trials.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that AF7 RGC axons were strongly activated during the paramecium trials, whereas AF9 axons were not (Figure 4D, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "dd90250d-7267-458b-99cc-acc9901d6d6b",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C44",
+      "claim": "The AF7 peak response was significantly higher in the presence of paramecia.",
+      "claim_type": "EXPLICIT",
+      "source": "When we quantified the \u0394F/F in AF7 and AF9 for nine fish, we found that the peak response was significantly higher in AF7 during trials with paramecia (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "1d653d9e-dd7d-420e-8568-70ef3f1ea8d5",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C45",
+      "claim": "The AF9 peak response was not significantly different in the presence of paramecia.",
+      "claim_type": "EXPLICIT",
+      "source": "The AF9 peak response in the same larvae was not significantly different in the presence of paramecia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "d7c543d1-8ae1-41ea-b78b-84d69be76ac1",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C46",
+      "claim": "All 19 AF7-targeting RGCs exhibited the same axonal morphology, projecting to AF7 and the SO, but not to any other AFs.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 19 larvae with an arbor in AF7. All 19 RGCs exhibited the same axonal morphology, projecting to AF7 and the SO, but not to any other AFs (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "b7ed89c4-32b8-4e49-9a95-4ca15ad05c90",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C47",
+      "claim": "AF7 receives inputs from two distinct RGC types.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining the dendritic morphology of these AF7-targeting RGCs revealed that AF7 receives inputs from two distinct RGC types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "2546c000-de60-4486-a31a-56d83c9fcea8",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C48",
+      "claim": "Thirteen out of 19 AF7-targeting RGCs had bistratified arbors with branches in ON and OFF layers of the inner plexiform layer (IPL).",
+      "claim_type": "EXPLICIT",
+      "source": "Thirteen cells (out of 19) had bistratified arbors with branches in ON and OFF layers of the inner plexiform layer (IPL) (Figure 5C), and the other six formed diffuse arbors spanning the entire IPL (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "3676670a-3f90-4cc8-bb99-c73b36350d68",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C49",
+      "claim": "Six out of 19 AF7-targeting RGCs formed diffuse arbors spanning the entire IPL.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirteen cells (out of 19) had bistratified arbors with branches in ON and OFF layers of the inner plexiform layer (IPL) (Figure 5C), and the other six formed diffuse arbors spanning the entire IPL (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "708be1ec-f98a-49f1-9f29-fde915cfd5f9",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C50",
+      "claim": "The dendritic morphologies of AF7-targeting RGCs correspond to two RGC classes known as B2 and D1.",
+      "claim_type": "EXPLICIT",
+      "source": "These dendritic morphologies correspond to two of the 14 RGC classes previously described in the zebrafish retina (Robles et al., 2014), known as B2 and D1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "31488bcf-a36f-41c3-8d5c-4fd668ebdb64",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C51",
+      "claim": "Ablation of AF7 did not detectably change the projection of nearby RGC axons on their course to the tectum.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation of AF7 did not detectably change the projection of nearby RGC axons on their course to the tectum, nor did it decrease the intensity of RGC axon labeling in the SO (Figure 6\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6\u2014figure supplement 1A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "42ad487c-c18b-4c27-b526-9e788e9f9575",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C52",
+      "claim": "AF7 ablation did not decrease the intensity of RGC axon labeling in the SO.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation of AF7 did not detectably change the projection of nearby RGC axons on their course to the tectum, nor did it decrease the intensity of RGC axon labeling in the SO (Figure 6\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6\u2014figure supplement 1A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "631eea08-fd84-431a-87b3-26175fa1f195",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C53",
+      "claim": "Tectal neuron responses to small stimuli remained intact after AF7 ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that tectal neuron responses to small stimuli remained intact after AF7 ablation (Figure 6\u2014figure supplement 1E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6\u2014figure supplement 1E\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "16fe8b32-5e91-4c1a-b856-f200fe476362",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C54",
+      "claim": "Larvae with AF9 ablations spent as much time performing prey capture bouts as before ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that larvae with AF9 ablations spent as much time performing prey capture bouts as before ablation, whereas in AF7-ablated larvae prey capture time was significantly reduced (Figure 6E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "fae6b8c6-f23f-4122-ac82-c9c6f011ff15",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C55",
+      "claim": "In AF7-ablated larvae, prey capture time was significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that larvae with AF9 ablations spent as much time performing prey capture bouts as before ablation, whereas in AF7-ablated larvae prey capture time was significantly reduced (Figure 6E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "251fc913-0372-47ba-9cb4-a22e657ea10c",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C56",
+      "claim": "AF7-ablated larvae spent 40% as much time performing prey capture bouts as they did before the ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the AF7-ablated larvae spent 40% as much time performing prey capture bouts as they did before the ablation (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "7d90866c-2ec9-4f42-9bc4-c16f1b973c7a",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C57",
+      "claim": "The optomotor response (OMR) was not impaired in AF7-ablated larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, consistent with previous work (Roeser and Baier, 2003) the OMR was not impaired in AF7-ablated larvae, but was reduced in AF9-ablated larvae (Figure 6H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6H.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "2950e3f9-bf9c-4dbb-9ad7-4e0f8b52f90a",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C58",
+      "claim": "The optomotor response (OMR) was reduced in AF9-ablated larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, consistent with previous work (Roeser and Baier, 2003) the OMR was not impaired in AF7-ablated larvae, but was reduced in AF9-ablated larvae (Figure 6H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "acd17505-ae36-4571-b50a-d022be7bfe95",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C59",
+      "claim": "Neurons with processes in AF7 form a distinct projection to the tectum.",
+      "claim_type": "EXPLICIT",
+      "source": "The first class of neurons with processes in AF7, as well as the neighboring non-retinorecipient neuropil, formed a distinct projection to the tectum (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "97edd115-880f-469f-a0ac-a1582fb6b6e4",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C60",
+      "claim": "All tectal projections from AF7 neurons terminated in the anterior fifth of the tectum.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that all of these projections terminated in the anterior fifth of the tectum (Figure 7B,C, and Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "4c06452c-b7a8-46a2-9d1d-cc0c63ffc450",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C61",
+      "claim": "The tectal branch of AF7 neurons was located in a region between the SO and SFGS layers that does not receive RGC axons.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases (n = 12) the tectal branch was located in a region between the SO and SFGS layers that does not receive RGC axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "a778630c-1718-46ea-bf76-597e3a84d01a",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C62",
+      "claim": "A second type of neuron with dendrites in AF7 formed a projection to the nucleus of the medial longitudinal fasciculus (nMLF) and hindbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "A second type of neuron with dendrites in AF7 formed a projection to the nucleus of the medial longitudinal fasciculus (nMLF) and hindbrain (Figure 7D\u2013F, and Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "717711cd-ae10-4b99-b662-57c79e728b13",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C63",
+      "claim": "AF7/nMLF neurons projected to the ipsi- and contralateral nMLF before terminating in the contralateral hindbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons (n = 4) projected to the ipsi- and contralateral nMLF before terminating in the contralateral hindbrain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "77563512-6f18-473b-802a-4a4249bdf858",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C64",
+      "claim": "The selectivity for prey stimuli is generated early in the visual pathway, by circuits in the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that a subset of RGC axons is tuned to prey stimuli suggests that the selectivity is generated early in the visual pathway, by circuits in the retina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an inference from the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "fc6e2729-d2b4-4d33-8c1d-762f3b23c78a",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C65",
+      "claim": "Local edge detectors in the rabbit are RGCs that respond only to slowly moving targets less than 1\u00b0 in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments in the rabbit have identified local edge detectors\u2014RGCs that respond only to slowly moving targets less than 1\u00b0 in diameter (Levick, 1967), and a similar type has been found in the mouse retina (Zhang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "2c63282e-1b50-4182-ad99-d60432cb3542",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C66",
+      "claim": "A similar type of local edge detector has been found in the mouse retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments in the rabbit have identified local edge detectors\u2014RGCs that respond only to slowly moving targets less than 1\u00b0 in diameter (Levick, 1967), and a similar type has been found in the mouse retina (Zhang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "1e2d9e24-2cd2-4574-b925-ccc07e48532b",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C67",
+      "claim": "Fast-OFF RGCs in the salamander anticipate the location of a moving object.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, fast-OFF RGCs in the salamander anticipate the location of a moving object (Berry et al., 1999), a feature that could be used to predict the location of moving prey (Leonardo and Meister, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "d53775f0-b406-4149-bafa-b028144d4ca9",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C68",
+      "claim": "AF7 can be identified as the parvocellular superficial pretectal nucleus (PSp).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the axonal branching pattern of its RGCs, we can identify AF7 as the parvocellular superficial pretectal nucleus (PSp).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an inference from anatomical data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "2026c031-f35f-4b7f-a316-42b39dd6f250",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C69",
+      "claim": "PSp is innervated by RGC axons that also form an arbor in the most superficial retinorecipient layer of the tectum in goldfish.",
+      "claim_type": "EXPLICIT",
+      "source": "The PSp is a retinorecipient brain area innervated by RGC axons that also form an arbor in the most superficial retinorecipient layer of the tectum in goldfish (Springer and Mednick, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "bee57d7d-ba52-44d1-acb9-8620e82a3c98",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C70",
+      "claim": "PSp was one of the two possible adult brain areas suggested for AF7 based on its location in classical dye tracing work.",
+      "claim_type": "EXPLICIT",
+      "source": "PSp was one of the two possible adult brain areas suggested for AF7 based on its location in classical dye tracing work (Burrill and Easter, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "13681a4d-6135-42dc-8e36-754989b9453f",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C71",
+      "claim": "AF7/PSp contains a retinotopic map.",
+      "claim_type": "EXPLICIT",
+      "source": "Our group has recently demonstrated that AF7/PSp contains a retinotopic map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a recent finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "92be85cd-51f2-4574-be12-d90ede385902",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C72",
+      "claim": "Most of the RGCs that project to AF7/PSp reside in the temporal retina, creating a high-resolution representation of the anterior visual field.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the RGCs that project to this area reside in the temporal retina, creating a high-resolution representation of the anterior visual field (Robles et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "74d7ed98-805b-4d8e-bcdd-c8c9044cd93a",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C73",
+      "claim": "The tectum and its mammalian homologue, the superior colliculus, have been shown to be involved in the transformation of sensory information encoded in terms of visual space into the appropriate motor command.",
+      "claim_type": "EXPLICIT",
+      "source": "The tectum and its mammalian homologue, the superior colliculus, have been shown to be involved in the transformation of sensory information encoded in terms of visual space into the appropriate motor command (Bergeron et al., 2003; du Lac and Knudsen, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "a2d4c473-7cc4-45a4-931f-fed09c061e0e",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C74",
+      "claim": "Ablation experiments have shown that the tectal neuropil plays a role in prey capture.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation experiments have shown that the tectal neuropil and, more specifically, inhibitory tectal neurons in the most superficial layer play a role in prey capture (Gahtan et al., 2005; Del Bene et al., 2010), and functional imaging experiments have found that tectal neurons are activated by moving paramecia (Muto et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "888aaa09-3a33-4af1-af7f-1c6d67ad77fb",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C75",
+      "claim": "Inhibitory tectal neurons in the most superficial layer play a role in prey capture.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation experiments have shown that the tectal neuropil and, more specifically, inhibitory tectal neurons in the most superficial layer play a role in prey capture (Gahtan et al., 2005; Del Bene et al., 2010), and functional imaging experiments have found that tectal neurons are activated by moving paramecia (Muto et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "e7237734-c963-42e1-a6ab-09304f89ef39",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C76",
+      "claim": "Functional imaging experiments have found that tectal neurons are activated by moving paramecia.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation experiments have shown that the tectal neuropil and, more specifically, inhibitory tectal neurons in the most superficial layer play a role in prey capture (Gahtan et al., 2005; Del Bene et al., 2010), and functional imaging experiments have found that tectal neurons are activated by moving paramecia (Muto et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "180326e0-cc41-42a3-9227-9eee80351540",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C77",
+      "claim": "A GABAergic projection from the basal ganglia to the superior colliculus acts as a gate for the saccade-generating neurons of the superior colliculus.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a GABAergic projection from the basal ganglia to the superior colliculus is thought to act as a gate for the saccade-generating neurons of the superior colliculus, providing tonic inhibition whose cessation releases saccade movements (Shires et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "9f232e81-7ef4-429a-b4e3-c9cbeb94cbb9",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C78",
+      "claim": "The focal enhancement by cholinergic input from isthmic nuclei has been shown to be necessary for the transmission of visual information to the area downstream of the tectum in birds.",
+      "claim_type": "EXPLICIT",
+      "source": "The focal enhancement by cholinergic input has been shown to be necessary for the transmission of visual information to the area downstream of the tectum (Mar\u00edn et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "53f13a20-c27b-49b9-b879-b774445d49bb",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C79",
+      "claim": "Studies of prey capture in toads have identified a pretectal area that provides inhibitory input to the tectum, resulting in the preference for worm-like prey stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, studies of prey capture in toads have identified a pretectal area that provides inhibitory input to the tectum, resulting in the preference for worm-like prey stimuli (Ewert et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "d2b8ffc2-bf39-4004-918d-cd72c6ba9cf5",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C80",
+      "claim": "The nMLF is a cluster of reticulospinal neurons that are involved in controlling swim orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "The nMLF is a cluster of reticulospinal neurons that are involved in controlling swim orientation (Thiele et al., 2014), as well as speed (Severi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "56d3d13e-a976-4bc4-b20f-28c2efec5df1",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C81",
+      "claim": "The nMLF is involved in controlling swim speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The nMLF is a cluster of reticulospinal neurons that are involved in controlling swim orientation (Thiele et al., 2014), as well as speed (Severi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "e6ecbf3d-8af2-49af-8c31-11c73959f99e",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C82",
+      "claim": "Two identified nMLF cells, MeLr and MeLc, have been shown to be necessary for successful prey capture.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the identified nMLF cells, MeLr and MeLc, have also been shown to be necessary for successful prey capture (Gahtan et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "fa6ebd82-3dc2-45d9-9696-a4b563755b73",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C83",
+      "claim": "Activation of the caudal hindbrain has been shown to drive swimming behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons in the hindbrain project to the spinal cord, and activation of the caudal hindbrain has been shown to drive swimming behavior (Arrenberg et al., 2009; Kimura et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "6872fcb3-b76f-44a4-bebe-50848c25e590",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C84",
+      "claim": "In primates, both the frontal eye fields and the superior colliculus provide input to the brainstem regions controlling eye movements.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in other systems, multiple areas project to the premotor nuclei and may drive behavior independently or direct different aspects of a behavior; for example, in primates, both the frontal eye fields and the superior colliculus provide input to the brainstem regions controlling eye movements (Scudder et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "f8a2745a-19e8-4a47-b2cb-e5d081ba647c",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C85",
+      "claim": "Tectal circuits could translate a prey object's precise location in visual space into a swimming movement that results in pursuit of the prey.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the tectal circuits could translate a prey object's precise location in visual space into a swimming movement that results in pursuit of the prey.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a hypothesis based on the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "2a368fa8-6038-43f8-8e8a-c6c9f1b74009",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C86",
+      "claim": "AF7/tectum neurons could be integrating the retinal response to prey with information on behavioral state, and then providing excitatory input to the tectum when appropriate.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that these neurons could be integrating the retinal response to prey with information on behavioral state, and then providing excitatory input to the tectum when appropriate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "add13918-2dd2-4995-ac16-a3e1009fc70c",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C87",
+      "claim": "AF7-innervating neurons that project to the nMLF and hindbrain could be involved in generating prey capture tail movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Projections from AF7 to the nMLF could therefore be involved in generating prey capture tail movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "df13f216-dba6-4b8b-991e-e0aa3d1b0891",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C88",
+      "claim": "The tectum has been considered the main output pathway to premotor centers in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus far, the tectum has been considered the main output pathway to premotor centers in zebrafish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "930541ec-7cbb-427e-a404-ccd8cfbc2765",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C89",
+      "claim": "Computations in the retina give rise to a visual stream which transforms sensory information into a directed prey capture response.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that computations in the retina give rise to a visual stream which transforms sensory information into a directed prey capture response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a conclusion from the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "a4bc14bc-f9a9-48ef-b433-0e4adb52a7f5",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C90",
+      "claim": "The RGC axon responses to prey stimuli in AF7 could be due to either B2 or D1 neurons, or both.",
+      "claim_type": "EXPLICIT",
+      "source": "The RGC axon responses to prey stimuli in AF7 could be due to either B2 or D1 neurons, or both, as our Gal4 line labels both types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an acknowledgment of uncertainty.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "bdd9a548-ff63-4460-8b8f-7648b8eb3c6c",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C91",
+      "claim": "Ablated larvae did perform some prey capture bouts, which could reflect a failure to ablate all AF7 RGC axons, or a contribution from other retinal inputs to the behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the effect was robust, ablated larvae did perform some prey capture bouts, which could reflect a failure to ablate all AF7 RGC axons, or a contribution from other retinal inputs to the behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a possible explanation for incomplete behavioral loss.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "203fcf82-3abe-4744-a020-91c35f970133",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C92",
+      "claim": "The strong correlation between behavioral tuning and AF7 response degrades at speeds above 360\u00b0/s.",
+      "claim_type": "EXPLICIT",
+      "source": "At speeds above 360\u00b0/s the strong correlation between behavioral tuning and AF7 response degrades, since the behavioral response to extremely fast speeds is quite low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "ee711494-d25f-4869-9020-4424c0c49835",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C93",
+      "claim": "The weak behavioral response to extremely fast speeds could be caused by a threshold or non-linearity in the neural circuit, such as the weak activation of the AF7 RGC axons being insufficient to drive the downstream neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be caused by a threshold or non-linearity in the neural circuit, such as the weak activation of the AF7 RGC axons being insufficient to drive the downstream neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a possible explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "2c8e63fd-0dab-4add-8035-51a7c8857319",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C94",
+      "claim": "The unusually strong surround suppression in local edge detector RGCs is thought to be a consequence of amacrine cells acting presynaptically to inhibit bipolar cells as well as RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The unusually strong surround suppression in these cells is thought to be a consequence of amacrine cells acting presynaptically to inhibit bipolar cells as well as RGCs (van Wyk et al., 2006; Russell and Werblin, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "f537792e-45b5-451d-b90e-77b476ecd59a",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C95",
+      "claim": "A similar mechanism could account for the size tuning of AF7-projecting RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar mechanism could account for the size tuning of AF7-projecting RGCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "e2661ff9-c0f4-4a5c-b7b6-8e6ca5df6a17",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C96",
+      "claim": "The anterior fifth of the tectum corresponds to the anterior visual field.",
+      "claim_type": "EXPLICIT",
+      "source": "We have identified a class of pretectal neurons that have dendrites in the AF7 neuropil and also project to the most rostral fifth of the tectum (Figure 7A\u2013C, Figure 7\u2014figure supplement 1) which corresponds to the anterior visual field.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion as an inference from anatomical data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "3695911b-a712-479a-8c57-bee8ae1217fc",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C97",
+      "claim": "AF7/tectum neurons also have processes in the non-retinorecipient neuropil next to AF7, which most likely corresponds to the magnocellular superficial pretectal nucleus (PSm).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the pretectum, the AF7/tectum neurons also have processes in the non-retinorecipient neuropil next to AF7, which most likely corresponds to the magnocellular superficial pretectal nucleus (PSm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an inference from anatomical location.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "ab64538a-eaa5-43d7-bf5a-3354e059c8f3",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C98",
+      "claim": "AF7 neurons project to a layer of the tectum just ventral to SO, the tectal layer that receives prey-responsive RGC axons.",
+      "claim_type": "EXPLICIT",
+      "source": "These AF7 neurons project to a layer of the tectum just ventral to SO, the tectal layer that receives prey-responsive RGC axons (Figure 5B, Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion and shown in Figure 5B and Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "1f0b1f3d-a990-4d01-8d1a-ae30ebe5810a",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "claim_id": "C99",
+      "claim": "Tectal neurons with dendrites in the superficial layers could receive positional information from the raw retinal input in the SO, and excitatory input from the AF7 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Tectal neurons with dendrites in these superficial layers could thus receive positional information from the raw retinal input in the SO, and excitatory input from the AF7 neurons that would release prey capture behavior only under certain conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f5a06049-d37f-446c-8e5f-6c0d903a9de0",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a machine learning classifier (SVM) to distinguish prey capture behavior from spontaneous swims in head-fixed zebrafish larvae. Prey capture swims (forward swims and j-turns) have significantly lower tail amplitude (17% vs 48% tail length) and are accompanied by eye convergence. The SVM achieved 96% cross-validated accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26 provide converging evidence from behavioral observation (C21-C23), quantitative kinematic analysis (C24-C25), and machine learning validation (C26). The 96% accuracy demonstrates robust classification, and the kinematic differences are clearly quantified and visualized in Figure 1. The methodology is sound and the results are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "600bf2dd-290a-4be7-81db-da2c4314c5e5",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Virtual prey stimuli of 3\u00b0 diameter moving at 90\u00b0/s optimally trigger prey capture behavior. Behavior is markedly reduced for stimuli larger than 10\u00b0 or moving slower than 12\u00b0/s or faster than 360\u00b0/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are directly supported by behavioral data in Figure 2A-B showing clear tuning curves. The optimal parameters (3\u00b0, 90\u00b0/s) are well-defined with appropriate controls across a range of stimulus parameters. Sample size (n=16 for size, n=9 for speed) appears adequate, and results are consistent with prior literature (C27-C28 cite Bianco et al., 2011; Trivedi and Bollmann, 2013).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "ad849bf7-b15d-4915-9fdc-5e735f4e2f85",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AF7 is the only arborization field (among AFs 2-9) that responds specifically to prey-sized stimuli. AF7 RGC axons show maximal response to 2-3\u00b0 dots at 90\u00b0/s, with much reduced response to stimuli >6\u00b0 or outside the 12-360\u00b0/s speed range. AF7 tuning curves closely match behavioral tuning curves. AF9 shows complementary size tuning, responding to larger stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38 are well-supported by two-photon calcium imaging data (Figure 3B-I). The specificity of AF7 is demonstrated by screening multiple AFs (C31-C32), and the tuning properties closely parallel behavioral responses (C38). The complementary tuning of AF9 (C35) provides an important control. Sample size (n=9 larvae) is reasonable for imaging experiments. The correlation between neural and behavioral tuning is striking and supports the functional relevance of AF7.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "f4422ac9-c35a-433e-b962-e717fa7cc49f",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "AF7 responds to prey stimuli moving in all four cardinal directions, with significantly stronger responses to horizontal motion (p < 0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 are supported by imaging data (Figure 3I) with appropriate statistical testing (t-test, p<0.001). The directional bias toward horizontal motion is biologically plausible given that prey typically moves horizontally in the larva's visual field. However, the manuscript does not specify whether multiple testing correction was applied for the four directions tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "909756ac-265b-4706-97a6-f2849d2eec37",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "AF7 RGC axons are strongly activated by live paramecia, while AF9 axons are not. The AF7 peak response is significantly higher during paramecium trials compared to baseline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 are supported by confocal imaging data (Figure 4) showing AF7 activation by natural prey. The use of actual paramecia validates the virtual prey findings. Statistical significance is reported for AF7 (C44) with n=9 larvae. The negative result for AF9 (C43, C45) provides an important control. However, the manuscript notes that occasional responses were observed in baseline conditions, possibly due to debris or spontaneous activity, which introduces some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "9f9762df-351a-4ea1-ad4d-7b667a5fe5cd",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "All 19 AF7-targeting RGCs exhibit identical axonal morphology, projecting to both AF7 and the stratum opticum (SO) of the tectum. AF7 receives input from two distinct RGC types with different dendritic morphologies: 13 with bistratified arbors (B2 type) and 6 with diffuse arbors spanning the entire IPL (D1 type).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 are supported by anatomical data using sparse labeling (BGUG) to visualize individual RGCs (Figure 5). The sample size (n=19) is adequate for anatomical characterization. The identification of two RGC types is based on dendritic morphology and correspondence to previously characterized classes (Robles et al., 2014). The consistent axonal projection pattern across all 19 cells is a strong finding. However, C90 acknowledges uncertainty about which RGC type(s) mediate the functional responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "e38c162e-0b47-4102-aab2-8f2c35b3f3da",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Laser ablation of AF7 significantly reduces prey capture behavior to 40% of pre-ablation levels (p=2.59\u00d710\u207b\u2074), while AF9 ablation has no effect. AF7 ablation does not affect nearby RGC axon projections, SO labeling intensity, or tectal neuron responses to small stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C51-C56 provide strong causal evidence for AF7's role in prey capture through ablation experiments. The behavioral deficit is robust and statistically significant (C55-C56) with appropriate controls (AF9 ablation, C54). The specificity controls (C51-C53) demonstrate that the effect is not due to collateral damage. Sample sizes are adequate (n=14 for AF7, n=15 for AF9). However, C91 notes that ablated larvae still perform some prey capture, suggesting incomplete ablation or contributions from other pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "34aab57a-2a4d-49aa-b033-5d89e112b877",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The optomotor response (OMR) is not impaired in AF7-ablated larvae but is reduced in AF9-ablated larvae, consistent with previous work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 are supported by behavioral data (Figure 6H) and consistent with prior literature (Roeser and Baier, 2003). This double dissociation strengthens the specificity of AF7's role in prey capture versus other visual behaviors. Sample sizes are n=7 for AF7 and n=9 for AF9 ablations. Statistical significance is reported (p=5.2\u00d710\u207b\u00b3).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "4d025807-a63e-4bbe-8f1a-6233a004b038",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A class of pretectal neurons with dendrites in AF7 projects to the anterior fifth of the optic tectum, terminating in a layer between SO and SFGS that does not receive direct RGC input.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C59-C61 are supported by single-cell electroporation data (Figure 7A-C). All 12 labeled cells showed consistent projection patterns to the rostral tectum. The anatomical specificity (anterior fifth, specific tectal layer) is well-documented. This provides a potential pathway for AF7 to modulate tectal processing of prey information.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "d418dbbe-325e-4e0d-bec6-95458e372444",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A second class of AF7 neurons projects bilaterally to the nucleus of the medial longitudinal fasciculus (nMLF) and contralaterally to the hindbrain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C62-C63 are supported by electroporation data (Figure 7D-F) showing a distinct projection pattern from AF7 to premotor areas. Sample size is smaller (n=4) but the projection pattern is consistent. This provides a potential direct pathway from AF7 to motor control centers, bypassing the tectum.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "8c8ce6f4-6393-4cc1-838f-019390da648f",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The selectivity for prey stimuli is generated early in the visual pathway by retinal circuits, giving rise to a visual stream that transforms sensory information into directed prey capture responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64 and C89 represent the main conclusion of the study, integrating findings from behavioral characterization, neural imaging, anatomy, and ablation experiments. The evidence strongly supports early (retinal) generation of prey selectivity, with AF7 as a key node. However, this is an inference from the data rather than direct demonstration of retinal circuit mechanisms. The conclusion is well-justified by the convergent evidence from multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "2a3a3a6b-7341-4307-9916-01c91655c017",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "AF7 can be identified as the parvocellular superficial pretectal nucleus (PSp) based on RGC projection patterns. PSp contains a retinotopic map with high-resolution representation of the anterior visual field.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C68-C72 establish the anatomical identity of AF7 as PSp. The identification is based on axonal branching patterns (C68-C70) consistent with prior literature. Claims C71-C72 cite recent work from the same group (Robles et al., 2014) on retinotopic organization. The anatomical identification is well-reasoned, though C68 notes this is an inference rather than definitive proof.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "92d42677-32de-43f1-9f8f-c295b92813f0",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The correlation between behavioral tuning and AF7 response degrades at speeds above 360\u00b0/s, possibly due to threshold effects or nonlinearities in downstream circuits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92-C93 identify a discrepancy between neural and behavioral responses at very high speeds. While C92 is an observation from the data, C93 is speculation about the mechanism. The manuscript does not provide direct evidence for the proposed threshold mechanism. This represents an interesting observation that would require additional experiments to resolve.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "bce63226-7269-428c-beb3-05c73aa5cbc7",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The specific RGC type(s) (B2 vs D1) responsible for prey responses in AF7 remain uncertain, and incomplete behavioral loss after ablation may reflect incomplete ablation or contributions from other pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C91 explicitly acknowledge limitations and uncertainties in the study. C90 notes that the Gal4 line labels both B2 and D1 RGCs, preventing determination of which type mediates prey responses. C91 discusses alternative explanations for incomplete behavioral loss. These are honest assessments of experimental limitations rather than supported results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "30e2b2a8-6810-404d-9e93-74863611759c",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Zebrafish larvae exhibit innate prey capture behavior starting at 5 dpf, involving a multi-step motor routine with j-turns and forward swims that differ kinematically from routine swims or escapes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C14 establish the behavioral context and are supported by established literature (multiple citations) and the authors' own observations (Figure 1). These are well-established facts about zebrafish behavior that provide the foundation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "0f98b142-9392-4848-8300-649fceaf3ad1",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work has shown that moving dots evoke prey capture in head-fixed larvae, that RGCs can act as feature detectors in other species, and that zebrafish have ten arborization fields, most of which are functionally uncharacterized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 summarize relevant prior work with appropriate citations. These establish the scientific context and rationale for the current study. The claims accurately represent the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "a2ad283e-4368-4805-ba23-97f39ed03163",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The Discussion contextualizes findings within prior work on retinal feature detection, tectal function, and motor control across species, drawing parallels to local edge detectors in rabbit/mouse, prey detection in frogs/toads, and tectal modulation in various vertebrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67, C73-C84, C94 summarize relevant literature with appropriate citations. These comparisons are reasonable and help interpret the current findings in a broader context. The cited work is accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "f51dee99-4821-47fe-ac77-25bc950a6df1",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors propose mechanistic hypotheses for how AF7 circuits might function: tectal projections may provide spatial information for prey pursuit, AF7/tectum neurons may gate tectal output based on behavioral state, and AF7/nMLF projections may generate prey capture tail movements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-C87, C95-C99 are explicitly presented as hypotheses and speculation in the Discussion. While these are reasonable interpretations of the anatomical and functional data, they lack direct experimental support. The authors appropriately frame these as hypotheses requiring future testing. These represent thoughtful interpretation rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    },
+    {
+      "id": "11a406f1-b890-4ec0-bd09-a0b2583d74d5",
+      "content_id": "7f58a454-1577-45a2-b523-73bb608e8f3b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The tectum has been considered the main output pathway to premotor centers in zebrafish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 summarizes established knowledge about zebrafish motor control. This provides context for the novel finding of direct AF7 projections to premotor areas (nMLF, hindbrain), which represents an alternative pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:00:32.019517Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cebc53ed-44b2-4b34-83ba-01e41a22673c",
+      "result_id": "f5a06049-d37f-446c-8e5f-6c0d903a9de0"
+    },
+    {
+      "claim_id": "87b61064-3324-4d69-b63d-c6cda3e9fec3",
+      "result_id": "f5a06049-d37f-446c-8e5f-6c0d903a9de0"
+    },
+    {
+      "claim_id": "2a31aa38-504e-49dd-a165-4bd550f4fd6b",
+      "result_id": "f5a06049-d37f-446c-8e5f-6c0d903a9de0"
+    },
+    {
+      "claim_id": "a47406fc-66a4-485e-b418-079402898625",
+      "result_id": "f5a06049-d37f-446c-8e5f-6c0d903a9de0"
+    },
+    {
+      "claim_id": "a741ba8f-68df-4e77-9324-87eb8c648f5f",
+      "result_id": "f5a06049-d37f-446c-8e5f-6c0d903a9de0"
+    },
+    {
+      "claim_id": "c24266a2-ea37-4805-8954-6603aa4ac63f",
+      "result_id": "f5a06049-d37f-446c-8e5f-6c0d903a9de0"
+    },
+    {
+      "claim_id": "6d932bca-a63d-4e15-b712-00b00dba3126",
+      "result_id": "600bf2dd-290a-4be7-81db-da2c4314c5e5"
+    },
+    {
+      "claim_id": "e3167712-cd06-4cc3-bdf0-2c5e7c04f9ee",
+      "result_id": "600bf2dd-290a-4be7-81db-da2c4314c5e5"
+    },
+    {
+      "claim_id": "eb514a46-59eb-4853-9b64-40653b6024a7",
+      "result_id": "600bf2dd-290a-4be7-81db-da2c4314c5e5"
+    },
+    {
+      "claim_id": "06e4ff9d-b285-41b2-8495-82f67439b4b0",
+      "result_id": "600bf2dd-290a-4be7-81db-da2c4314c5e5"
+    },
+    {
+      "claim_id": "fd8ed8ad-890d-4f03-8c8a-23fb10f8278a",
+      "result_id": "ad849bf7-b15d-4915-9fdc-5e735f4e2f85"
+    },
+    {
+      "claim_id": "d4091710-936a-43d5-92f2-3eacd4279a71",
+      "result_id": "ad849bf7-b15d-4915-9fdc-5e735f4e2f85"
+    },
+    {
+      "claim_id": "62c71169-96c6-432f-9d5d-14797b6be3a6",
+      "result_id": "ad849bf7-b15d-4915-9fdc-5e735f4e2f85"
+    },
+    {
+      "claim_id": "1c106204-1eeb-4a89-b996-383255927dac",
+      "result_id": "ad849bf7-b15d-4915-9fdc-5e735f4e2f85"
+    },
+    {
+      "claim_id": "e854afdc-fb58-49f9-859a-61f37bb64626",
+      "result_id": "ad849bf7-b15d-4915-9fdc-5e735f4e2f85"
+    },
+    {
+      "claim_id": "1c653768-61e0-4c65-8bb4-59f4a1a1d575",
+      "result_id": "ad849bf7-b15d-4915-9fdc-5e735f4e2f85"
+    },
+    {
+      "claim_id": "3a581437-1100-4b54-a987-2adec77b0e3c",
+      "result_id": "ad849bf7-b15d-4915-9fdc-5e735f4e2f85"
+    },
+    {
+      "claim_id": "0b2936cf-2afb-401f-b6b9-127b8da79d3b",
+      "result_id": "ad849bf7-b15d-4915-9fdc-5e735f4e2f85"
+    },
+    {
+      "claim_id": "f8b9f90b-b03c-4b03-88de-553a2ca2daeb",
+      "result_id": "f4422ac9-c35a-433e-b962-e717fa7cc49f"
+    },
+    {
+      "claim_id": "851d36d1-64bf-4182-b681-b2ca8a383bfd",
+      "result_id": "f4422ac9-c35a-433e-b962-e717fa7cc49f"
+    },
+    {
+      "claim_id": "0d4934e6-4589-4d55-a964-6b79cf2d524d",
+      "result_id": "909756ac-265b-4706-97a6-f2849d2eec37"
+    },
+    {
+      "claim_id": "7885e354-1493-4496-ab1e-b83bbd5b83f9",
+      "result_id": "909756ac-265b-4706-97a6-f2849d2eec37"
+    },
+    {
+      "claim_id": "aeece96d-45cf-43c9-9c26-09b90aef7ddd",
+      "result_id": "909756ac-265b-4706-97a6-f2849d2eec37"
+    },
+    {
+      "claim_id": "dd90250d-7267-458b-99cc-acc9901d6d6b",
+      "result_id": "909756ac-265b-4706-97a6-f2849d2eec37"
+    },
+    {
+      "claim_id": "1d653d9e-dd7d-420e-8568-70ef3f1ea8d5",
+      "result_id": "909756ac-265b-4706-97a6-f2849d2eec37"
+    },
+    {
+      "claim_id": "d7c543d1-8ae1-41ea-b78b-84d69be76ac1",
+      "result_id": "9f9762df-351a-4ea1-ad4d-7b667a5fe5cd"
+    },
+    {
+      "claim_id": "b7ed89c4-32b8-4e49-9a95-4ca15ad05c90",
+      "result_id": "9f9762df-351a-4ea1-ad4d-7b667a5fe5cd"
+    },
+    {
+      "claim_id": "2546c000-de60-4486-a31a-56d83c9fcea8",
+      "result_id": "9f9762df-351a-4ea1-ad4d-7b667a5fe5cd"
+    },
+    {
+      "claim_id": "3676670a-3f90-4cc8-bb99-c73b36350d68",
+      "result_id": "9f9762df-351a-4ea1-ad4d-7b667a5fe5cd"
+    },
+    {
+      "claim_id": "708be1ec-f98a-49f1-9f29-fde915cfd5f9",
+      "result_id": "9f9762df-351a-4ea1-ad4d-7b667a5fe5cd"
+    },
+    {
+      "claim_id": "d5c47464-ac48-400e-b1a9-3b28c1007e10",
+      "result_id": "e38c162e-0b47-4102-aab2-8f2c35b3f3da"
+    },
+    {
+      "claim_id": "31488bcf-a36f-41c3-8d5c-4fd668ebdb64",
+      "result_id": "e38c162e-0b47-4102-aab2-8f2c35b3f3da"
+    },
+    {
+      "claim_id": "42ad487c-c18b-4c27-b526-9e788e9f9575",
+      "result_id": "e38c162e-0b47-4102-aab2-8f2c35b3f3da"
+    },
+    {
+      "claim_id": "631eea08-fd84-431a-87b3-26175fa1f195",
+      "result_id": "e38c162e-0b47-4102-aab2-8f2c35b3f3da"
+    },
+    {
+      "claim_id": "16fe8b32-5e91-4c1a-b856-f200fe476362",
+      "result_id": "e38c162e-0b47-4102-aab2-8f2c35b3f3da"
+    },
+    {
+      "claim_id": "fae6b8c6-f23f-4122-ac82-c9c6f011ff15",
+      "result_id": "e38c162e-0b47-4102-aab2-8f2c35b3f3da"
+    },
+    {
+      "claim_id": "251fc913-0372-47ba-9cb4-a22e657ea10c",
+      "result_id": "e38c162e-0b47-4102-aab2-8f2c35b3f3da"
+    },
+    {
+      "claim_id": "7d90866c-2ec9-4f42-9bc4-c16f1b973c7a",
+      "result_id": "34aab57a-2a4d-49aa-b033-5d89e112b877"
+    },
+    {
+      "claim_id": "2950e3f9-bf9c-4dbb-9ad7-4e0f8b52f90a",
+      "result_id": "34aab57a-2a4d-49aa-b033-5d89e112b877"
+    },
+    {
+      "claim_id": "640d692b-0b05-4811-b3a3-5b27f42404db",
+      "result_id": "4d025807-a63e-4bbe-8f1a-6233a004b038"
+    },
+    {
+      "claim_id": "acd17505-ae36-4571-b50a-d022be7bfe95",
+      "result_id": "4d025807-a63e-4bbe-8f1a-6233a004b038"
+    },
+    {
+      "claim_id": "97edd115-880f-469f-a0ac-a1582fb6b6e4",
+      "result_id": "4d025807-a63e-4bbe-8f1a-6233a004b038"
+    },
+    {
+      "claim_id": "4c06452c-b7a8-46a2-9d1d-cc0c63ffc450",
+      "result_id": "4d025807-a63e-4bbe-8f1a-6233a004b038"
+    },
+    {
+      "claim_id": "707991b1-5c4e-4238-b1d4-ac8a4cd4e176",
+      "result_id": "d418dbbe-325e-4e0d-bec6-95458e372444"
+    },
+    {
+      "claim_id": "e5f2f8be-ba65-4b08-8bbd-cfd787bb6e1e",
+      "result_id": "d418dbbe-325e-4e0d-bec6-95458e372444"
+    },
+    {
+      "claim_id": "a778630c-1718-46ea-bf76-597e3a84d01a",
+      "result_id": "d418dbbe-325e-4e0d-bec6-95458e372444"
+    },
+    {
+      "claim_id": "717711cd-ae10-4b99-b662-57c79e728b13",
+      "result_id": "d418dbbe-325e-4e0d-bec6-95458e372444"
+    },
+    {
+      "claim_id": "77563512-6f18-473b-802a-4a4249bdf858",
+      "result_id": "8c8ce6f4-6393-4cc1-838f-019390da648f"
+    },
+    {
+      "claim_id": "930541ec-7cbb-427e-a404-ccd8cfbc2765",
+      "result_id": "8c8ce6f4-6393-4cc1-838f-019390da648f"
+    },
+    {
+      "claim_id": "39ba6a16-7dfb-4c7c-9698-7363b73eb128",
+      "result_id": "2a3a3a6b-7341-4307-9916-01c91655c017"
+    },
+    {
+      "claim_id": "84d82a48-6078-4a39-926f-0d5748c44ca3",
+      "result_id": "2a3a3a6b-7341-4307-9916-01c91655c017"
+    },
+    {
+      "claim_id": "d53775f0-b406-4149-bafa-b028144d4ca9",
+      "result_id": "2a3a3a6b-7341-4307-9916-01c91655c017"
+    },
+    {
+      "claim_id": "2026c031-f35f-4b7f-a316-42b39dd6f250",
+      "result_id": "2a3a3a6b-7341-4307-9916-01c91655c017"
+    },
+    {
+      "claim_id": "bee57d7d-ba52-44d1-acb9-8620e82a3c98",
+      "result_id": "2a3a3a6b-7341-4307-9916-01c91655c017"
+    },
+    {
+      "claim_id": "13681a4d-6135-42dc-8e36-754989b9453f",
+      "result_id": "2a3a3a6b-7341-4307-9916-01c91655c017"
+    },
+    {
+      "claim_id": "92be85cd-51f2-4574-be12-d90ede385902",
+      "result_id": "2a3a3a6b-7341-4307-9916-01c91655c017"
+    },
+    {
+      "claim_id": "203fcf82-3abe-4744-a020-91c35f970133",
+      "result_id": "92d42677-32de-43f1-9f8f-c295b92813f0"
+    },
+    {
+      "claim_id": "ee711494-d25f-4869-9020-4424c0c49835",
+      "result_id": "92d42677-32de-43f1-9f8f-c295b92813f0"
+    },
+    {
+      "claim_id": "a4bc14bc-f9a9-48ef-b433-0e4adb52a7f5",
+      "result_id": "bce63226-7269-428c-beb3-05c73aa5cbc7"
+    },
+    {
+      "claim_id": "bdd9a548-ff63-4460-8b8f-7648b8eb3c6c",
+      "result_id": "bce63226-7269-428c-beb3-05c73aa5cbc7"
+    },
+    {
+      "claim_id": "b943f467-b83d-49c3-8230-2931e85aa6bd",
+      "result_id": "30e2b2a8-6810-404d-9e93-74863611759c"
+    },
+    {
+      "claim_id": "3ed920e8-4f56-46f1-b5cb-2296d3e51f0d",
+      "result_id": "30e2b2a8-6810-404d-9e93-74863611759c"
+    },
+    {
+      "claim_id": "174357e9-793f-4371-8964-bed82de1ecf6",
+      "result_id": "30e2b2a8-6810-404d-9e93-74863611759c"
+    },
+    {
+      "claim_id": "aec986c8-2c8e-42aa-96c4-a9a36544eea0",
+      "result_id": "30e2b2a8-6810-404d-9e93-74863611759c"
+    },
+    {
+      "claim_id": "a1dd3de5-5f92-49ad-9937-fff103ebb445",
+      "result_id": "30e2b2a8-6810-404d-9e93-74863611759c"
+    },
+    {
+      "claim_id": "a965db4e-2f18-47b4-ba0b-5d779e652449",
+      "result_id": "30e2b2a8-6810-404d-9e93-74863611759c"
+    },
+    {
+      "claim_id": "3d33f0df-2d4d-4708-82d0-26fc19f09a58",
+      "result_id": "30e2b2a8-6810-404d-9e93-74863611759c"
+    },
+    {
+      "claim_id": "b22dfce5-398e-4b84-89dc-4dffab89da9e",
+      "result_id": "0f98b142-9392-4848-8300-649fceaf3ad1"
+    },
+    {
+      "claim_id": "115fbe09-a566-4cd9-94da-3a02428e622f",
+      "result_id": "0f98b142-9392-4848-8300-649fceaf3ad1"
+    },
+    {
+      "claim_id": "4a4207f6-67c2-4c52-bbd3-0fe6a244fae1",
+      "result_id": "0f98b142-9392-4848-8300-649fceaf3ad1"
+    },
+    {
+      "claim_id": "58e33220-bf6f-4302-8ffe-6de1119e272d",
+      "result_id": "0f98b142-9392-4848-8300-649fceaf3ad1"
+    },
+    {
+      "claim_id": "74a05ce7-a6f4-4ace-bb23-e5d835a52635",
+      "result_id": "0f98b142-9392-4848-8300-649fceaf3ad1"
+    },
+    {
+      "claim_id": "9ddbfc89-767d-4f43-8b1c-ca55fa8329b5",
+      "result_id": "0f98b142-9392-4848-8300-649fceaf3ad1"
+    },
+    {
+      "claim_id": "fc6e2729-d2b4-4d33-8c1d-762f3b23c78a",
+      "result_id": "a2ad283e-4368-4805-ba23-97f39ed03163"
+    },
+    {
+      "claim_id": "2c63282e-1b50-4182-ad99-d60432cb3542",
+      "result_id": "a2ad283e-4368-4805-ba23-97f39ed03163"
+    },
+    {
+      "claim_id": "1e2d9e24-2cd2-4574-b925-ccc07e48532b",
+      "result_id": "a2ad283e-4368-4805-ba23-97f39ed03163"
+    },
+    {
+      "claim_id": "74d7ed98-805b-4d8e-bcdd-c8c9044cd93a",
+      "result_id": "a2ad283e-4368-4805-ba23-97f39ed03163"
+    },
+    {
+      "claim_id": "a2d4c473-7cc4-45a4-931f-fed09c061e0e",
+      "result_id": "a2ad283e-4368-4805-ba23-97f39ed03163"
+    },
+    {
+      "claim_id": "888aaa09-3a33-4af1-af7f-1c6d67ad77fb",
+      "result_id": "a2ad283e-4368-4805-ba23-97f39ed03163"
+    },
+    {
+      "claim_id": "e7237734-c963-42e1-a6ab-09304f89ef39",
+      "result_id": "a2ad283e-4368-4805-ba23-97f39ed03163"
+    },
+    {
+      "claim_id": "180326e0-cc41-42a3-9227-9eee80351540",
+      "result_id": "a2ad283e-4368-4805-ba23-97f39ed03163"
+    },
+    {
+      "claim_id": "9f232e81-7ef4-429a-b4e3-c9cbeb94cbb9",
+      "result_id": "a2ad283e-4368-4805-ba23-97f39ed03163"
+    },
+    {
+      "claim_id": "53f13a20-c27b-49b9-b879-b774445d49bb",
+      "result_id": "a2ad283e-4368-4805-ba23-97f39ed03163"
+    },
+    {
+      "claim_id": "d2b8ffc2-bf39-4004-918d-cd72c6ba9cf5",
+      "result_id": "a2ad283e-4368-4805-ba23-97f39ed03163"
+    },
+    {
+      "claim_id": "56d3d13e-a976-4bc4-b20f-28c2efec5df1",
+      "result_id": "a2ad283e-4368-4805-ba23-97f39ed03163"
+    },
+    {
+      "claim_id": "e6ecbf3d-8af2-49af-8c31-11c73959f99e",
+      "result_id": "a2ad283e-4368-4805-ba23-97f39ed03163"
+    },
+    {
+      "claim_id": "fa6ebd82-3dc2-45d9-9696-a4b563755b73",
+      "result_id": "a2ad283e-4368-4805-ba23-97f39ed03163"
+    },
+    {
+      "claim_id": "6872fcb3-b76f-44a4-bebe-50848c25e590",
+      "result_id": "a2ad283e-4368-4805-ba23-97f39ed03163"
+    },
+    {
+      "claim_id": "2c8e63fd-0dab-4add-8035-51a7c8857319",
+      "result_id": "a2ad283e-4368-4805-ba23-97f39ed03163"
+    },
+    {
+      "claim_id": "f8a2745a-19e8-4a47-b2cb-e5d081ba647c",
+      "result_id": "f51dee99-4821-47fe-ac77-25bc950a6df1"
+    },
+    {
+      "claim_id": "2a368fa8-6038-43f8-8e8a-c6c9f1b74009",
+      "result_id": "f51dee99-4821-47fe-ac77-25bc950a6df1"
+    },
+    {
+      "claim_id": "add13918-2dd2-4995-ac16-a3e1009fc70c",
+      "result_id": "f51dee99-4821-47fe-ac77-25bc950a6df1"
+    },
+    {
+      "claim_id": "f537792e-45b5-451d-b90e-77b476ecd59a",
+      "result_id": "f51dee99-4821-47fe-ac77-25bc950a6df1"
+    },
+    {
+      "claim_id": "e2661ff9-c0f4-4a5c-b7b6-8e6ca5df6a17",
+      "result_id": "f51dee99-4821-47fe-ac77-25bc950a6df1"
+    },
+    {
+      "claim_id": "3695911b-a712-479a-8c57-bee8ae1217fc",
+      "result_id": "f51dee99-4821-47fe-ac77-25bc950a6df1"
+    },
+    {
+      "claim_id": "ab64538a-eaa5-43d7-bf5a-3354e059c8f3",
+      "result_id": "f51dee99-4821-47fe-ac77-25bc950a6df1"
+    },
+    {
+      "claim_id": "1f0b1f3d-a990-4d01-8d1a-ae30ebe5810a",
+      "result_id": "f51dee99-4821-47fe-ac77-25bc950a6df1"
+    },
+    {
+      "claim_id": "df13f216-dba6-4b8b-991e-e0aa3d1b0891",
+      "result_id": "11a406f1-b890-4ec0-bd09-a0b2583d74d5"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C17",
+      "C18"
+    ],
+    "result": "SRBF1 is identified as the conserved Y box-binding protein 1 (Ybx1), which specifically binds to the dorsal localization element (DLE) in the sqt 3'UTR. The SRBF1 binding site overlaps with sequences required for dorsal localization of sqt RNA, and Ybx1 binds sqt RNA both in vitro and in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14, C17-C18 provide converging evidence from multiple experimental approaches (gel-shift assays, mass spectrometry, RNA-IP) that SRBF1 is Ybx1 and that it specifically binds the sqt DLE. The molecular weight, binding specificity, and in vivo interactions are all demonstrated with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Domain mapping reveals that the nucleic acid binding domain (ssDBD, CSD, RNP1,2) and dimerization domain (DD) are required for Ybx1 binding to sqt1, while the C-terminus is dispensable. Point mutations F54A and V83F abolish sqt1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are supported by systematic domain deletion and point mutation analyses shown in Figures 2G-H. The experiments include appropriate controls (western blots showing protein expression) and identify specific residues critical for RNA binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Two ybx1 mutant alleles (ybx1sa42 with V83F mutation and ybx1sg8 with C-terminal truncation) are characterized. Maternal ybx1 mutants show temperature-sensitive phenotypes with gastrulation failure and embryonic lethality at 23\u00b0C, demonstrating that maternal Ybx1 is required for embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 describe well-characterized mutant alleles with clear molecular lesions. The temperature-sensitive phenotype of ybx1sa42 is particularly valuable for conditional analysis. Phenotypic observations are detailed and consistent across multiple experiments, though sample sizes are not always explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C38"
+    ],
+    "result": "Maternal, but not zygotic, expression of Ybx1 is essential for gastrulation and normal development, as demonstrated by rescue experiments with transgenic lines expressing Ybx1-2a-GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C38 are supported by rescue experiments using two independent transgenic lines (Figure 3E-F). The distinction between maternal and paternal transgene rescue is clear and demonstrates the critical timing of Ybx1 function. Sample sizes are provided (n=345 for PTg, n>200 for each MTg line).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Maternal Ybx1 function is required for sqt RNA localization. In Mybx1 mutants at 23\u00b0C, sqt RNA localization is disrupted, forming aggregates in the yolk that fail to localize to future dorsal cells. Other maternal RNAs (vasa, eomesa, snail1a, cyclin B1, wnt8a, grip2) localize normally, indicating specificity for sqt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 are supported by in situ hybridization data (Figure 4A and supplements) showing specific disruption of sqt localization while other maternal RNAs are unaffected. The temperature-sensitive nature of the phenotype and rescue by maternal transgene expression strengthen the conclusion. The specificity controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Regulated processing of sqt pre-mRNA requires maternal Ybx1 function. In Mybx1 mutants, sqt RNA shows precocious polyadenylation (detected at 1-cell instead of 16-cell stage) and accelerated splicing of introns 1 and 2, while total sqt RNA levels are only marginally reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by Q-RT-PCR and RT-PCR data (Figure 4B-C). The precocious polyadenylation and accelerated splicing are clearly demonstrated. However, the claim about wild-type sqt RNA being non-polyadenylated until 16-cell stage (C47) relies on a citation and appears to contradict an earlier report, which is acknowledged but not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Maternal Ybx1 is required to repress Sqt translation in early embryos. Sqt-GFP protein is detected prematurely at the 16-cell stage in Mybx1 mutants (versus blastula stage in controls) and at elevated levels, while translation of control proteins (GFP, Wnt8a-GFP) is unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by western blot data (Figure 5A-B and supplements) showing premature and elevated Sqt-GFP expression in mutants with appropriate controls. The specificity is demonstrated by normal expression of control proteins. Quantification is provided with error bars from three experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Ybx1 interacts with eIF4E but not eIF4G, and sqt RNA is detected in complexes with Ybx1, eIF4G, and eIF4E. Control RNAs (gapdh, wnt8a) are found with eIF4G and eIF4E but not with Ybx1, indicating selective binding of Ybx1 to sqt RNA and the translation initiation machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by co-immunoprecipitation and RNA-IP experiments (Figure 5C-D). The selective interactions are demonstrated with appropriate controls. However, the western blot for eIF4G shows some spillover in the IgG lane (acknowledged in supplement), which slightly weakens the negative control but doesn't invalidate the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Nodal signaling is precociously activated at cleavage stages in Mybx1 mutant embryos. Phosphorylated Smad2 is detected at the 64-cell stage in mutants versus late blastula/early gastrula in controls, with elevated levels throughout early development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by western blot data showing phospho-Smad2 expression (Figure 6A-B). Quantification shows premature and elevated Nodal signaling. The timing is consistent with premature Sqt translation observed in C51-C52.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Expression of Nodal target genes (sqt, gsc, ntl, bon) and YSL genes (mxtx2) is elevated in Mybx1 mutants, with expanded YSL expression domains. Wnt and FGF signaling targets are not significantly affected, indicating pathway specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by Q-RT-PCR and in situ hybridization data (Figure 6C-D). The selective elevation of Nodal targets with normal Wnt/FGF targets demonstrates pathway specificity. Error bars are provided for Q-RT-PCR data. The expanded spatial domains are clearly shown in in situ images.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The extra-embryonic yolk syncytial layer (YSL) forms precociously and is expanded in Mybx1 mutants. Marginal cells lose membranes, syncytial nuclei accumulate over the yolk, and ~50% of mutants have >13 YSL nuclei versus few or none in controls, leading to gastrulation failure and lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by microscopy, immunofluorescence (E-cadherin), and quantification of YSL nuclei (Figure 6E-F). The phenotype is well-documented with clear images and quantification. The causal link to gastrulation failure (C74) is inferred from correlation but is reasonable given the severity of the defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Nodal diffusion from the yolk is sufficient for YSL expansion. Implantation of Nodal-coated beads in the yolk induces increased YSL nuclei in 75% of wild-type embryos (n=32) but not in MZoep mutants (n=13) that cannot respond to Nodal signals, demonstrating direct induction by excess Nodal signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are supported by bead implantation experiments (Figure 7). The use of MZoep mutants as a negative control is excellent and demonstrates that the effect requires Nodal signaling. Sample sizes are provided. This experiment directly tests whether Nodal from the yolk can induce the YSL phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The YSL defects and gastrulation failure in Mybx1 mutants are due to excessive Nodal signaling, not cytokinesis defects. Injection of lefty1 RNA (Nodal inhibitor) suppresses the expanded YSL phenotype, restores the blastoderm-YSL margin, and rescues gastrulation in >50% of mutants, with ~80% of those completing gastrulation and surviving to prim5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by rescue experiments with lefty1 RNA injection (Figure 8A-B). The rescue is substantial and demonstrates that blocking Nodal signaling is sufficient to prevent the phenotypes. Controls with lacZ RNA are included. Error bars and sample sizes are provided. This is a critical experiment distinguishing Nodal signaling effects from potential cytokinesis defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The Mybx1 mutant phenotypes are a direct consequence of precocious and deregulated maternal Sqt/Nodal signaling. Embryos from ybx1sa42/sa42;sqtcz35/+ crosses (which have reduced or no Sqt) undergo gastrulation at 23\u00b0C unlike Mybx1 single mutants, and show phenotypes typical of reduced Nodal activity without YSL expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by genetic analysis of compound mutants (Figure 8C-D and supplement). The genetic interaction between ybx1 and sqt mutations demonstrates that the phenotypes are specifically due to deregulated Sqt/Nodal signaling. The range of Nodal-related phenotypes observed (Figure 8 supplement 1) is consistent with varying levels of Nodal activity. Sample sizes are provided (N>120 fish screened).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "This study provides the first direct evidence of translational control of Nodal signaling by maternal Ybx1, which is essential for embryonic development. The temperature-sensitive ybx1 allele allows conditional disruption showing that Nodal signaling is the only pathway affected at early stages, and Ybx1 regulates Nodal signaling via effects on sqt RNA localization, processing, and translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 are summary statements supported by the collective evidence from all experiments. The claim of 'first direct evidence' (C92) is reasonable given the comprehensive demonstration of translational control. The pathway specificity (C95) is well-supported by the observation that Wnt and FGF targets are unaffected. These are appropriate concluding statements synthesizing the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Ybx1 binding to the sqt 3'UTR and eIF4E likely prevents eIF4G-eIF4E complex formation, leading to translational repression of sqt RNA. In Mybx1 mutants lacking Ybx1 function, Sqt translation occurs precociously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 propose a mechanistic model based on the co-IP data (C56-C60) and premature translation in mutants (C51-C55). The model is reasonable and consistent with known mechanisms of translational control (e.g., Maskin-CPEB-eIF4E in Xenopus, cited in Discussion). However, the mechanism is inferred rather than directly demonstrated - the authors appropriately use 'likely' to indicate this is a proposed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The Nodal target lefty2 is not detected in Mybx1 mutant embryos despite elevated Nodal signaling, suggesting lefty2 expression requires factors or inputs missing in Mybx1. The lack of Lefty2 feedback inhibition together with elevated Sqt/Nodal levels likely exacerbates deregulated Nodal signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C102 identify an unexpected observation (no lefty2 expression despite high Nodal signaling) but the explanation is speculative. The Q-RT-PCR and in situ data (Figure 6C-D) support the observation, but the reasons for lack of lefty2 expression are not investigated. The proposed exacerbation of Nodal signaling (C102) is logical but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Mybx1;Zsqt compound mutant embryos are similar to cyc;sqt double mutants, suggesting maternal Ybx1 may have additional functions in regulation of Nodal signaling beyond sqt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C104 are speculative suggestions based on phenotypic similarity to cyc;sqt mutants. The observation is noted but not extensively characterized. The claim of 'additional functions' (C104) is appropriately presented as speculative ('may have') but lacks supporting evidence beyond the phenotypic comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Wnt signaling targets are not induced in Mybx1 mutants where wnt8a RNA and Wnt8a-GFP protein are normal but sqt RNA is mis-localized, indicating that the response to maternal Wnt signals requires dorsal localization of maternal sqt RNA. This supports previous findings on the role of localized sqt RNA in Wnt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are supported by the data showing normal wnt8a localization and Wnt8a-GFP expression but no Wnt target induction when sqt is mis-localized. Claims C107-C108 cite previous work by the authors (Lim et al., 2012) that provides additional support. The connection between sqt RNA localization and Wnt signaling response is well-established by the combined current and previous data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The sqt DLE encompasses both localization and translational control elements. Human NODAL 3'UTR can localize in zebrafish, suggesting the mammalian NODAL 3'UTR may also harbor a translational control module, though Nodal RNA is not localized in early mouse embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C109 (human NODAL 3'UTR localizes in zebrafish) is supported by citation to previous work. Claim C110 (no localization in mouse) is supported by citation and unpublished observations. Claims C111-C112 are speculative inferences about conservation of the translational control mechanism. The speculation is reasonable but not directly tested in mammals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Maternal sqt/nodal must be translationally repressed, and deregulated maternal Nodal signaling is catastrophic. Translational control represents a new paradigm in regulation of the Nodal signaling pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are summary statements supported by the demonstration that loss of Ybx1-mediated translational repression leads to premature Nodal signaling and embryonic lethality. The claim of a 'new paradigm' (C114) is justified as this is the first demonstration of translational control as a major regulatory mechanism for Nodal signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Human NODAL and ALK7 receptors are expressed in ovary and placenta, and elevated NODAL is associated with pre-eclamptic placentas, suggesting precise regulation of maternal Nodal signaling is likely important for human placentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C116 are supported by citation to published work (Nadeem et al., 2011). Claim C117 is a speculative inference about the importance for human placentation. While the speculation is reasonable given the expression patterns and disease association, it is not directly tested and is appropriately presented as 'likely to be important.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "The finding that Nodal signaling is maternally regulated by translational repression could allow modulation of embryonic stem cells (ESC) and induced pluripotent stem cells (iPSC) by this new mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C121 is a speculative suggestion about potential applications to stem cell biology. While Nodal signaling is important for stem cell pluripotency (C119, supported by general knowledge), the specific application of translational control mechanisms to ESC/iPSC is not tested and remains hypothetical. This is appropriately presented as a possibility ('could allow') rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

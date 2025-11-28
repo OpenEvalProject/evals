@@ -1,0 +1,401 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "M. pharaonis workers exhibit age-based division of labor with a clear transition from nursing (average age 6.94 days) to foraging (average age 13.04 days), with the transition occurring between 9-12 days of age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide converging behavioral evidence with statistical support (p < 0.01) showing age-dependent changes in worker location and behavior. The quantitative age measurements and distribution data (75% of nursing <10 days, 75% foraging >10 days) strongly support the existence and timing of this behavioral transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The study generated a M. pharaonis genome assembly of 284 Mb with N50 of 19.0 kb, showing 92% completeness by CEGMA analysis, and identified 22,385 transcribed loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 report standard genome assembly metrics with appropriate quality assessment. The CEGMA completeness of 92% indicates good assembly quality, and the transcriptome assembly provides a reasonable basis for subsequent gene expression analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Differential gene expression analysis identified 1,217 forager-upregulated and 1,247 nurse-upregulated transcripts, with expression patterns mirroring the behavioral transition around day 10, and K-nearest neighbor classification clearly separating workers into nurse (<12 days) and forager (\u226512 days) classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 present consistent transcriptomic evidence that aligns with the behavioral observations. The supervised learning approach (KNN) provides independent validation that gene expression profiles can predict behavioral state based on age, supporting a discrete transcriptomic transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Forager-upregulated genes show higher proportions of identified orthologs in both fire ant (0.54) and honey bee (0.50) compared to nurse-upregulated (0.43 and 0.38) and non-differentially expressed genes (0.43 and 0.38), with forager genes having more orthologs in both species (0.43 vs 0.32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 report statistically significant differences (p < 0.05, chi-square test) in ortholog identification rates across gene categories. However, the authors acknowledge using different BLAST thresholds for fire ant vs honey bee, which limits direct comparability between the two species' results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "While genes upregulated in S. invicta nurses and foragers were significantly more likely to have M. pharaonis orthologs upregulated in the same contexts (p = 0.0022 and p = 0.040), the actual overlap was low (3.8% for nurses, 3.2% for foragers), and genome-wide expression correlation was weak (r = 0.14, explaining 2% variance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 present a nuanced picture with statistical significance but low effect sizes. The significant p-values indicate non-random overlap, but the low percentages and weak correlation suggest limited conservation. The authors appropriately acknowledge methodological differences between studies that may affect comparability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Previously identified honey bee nurse- and forager-upregulated genes showed no significant enrichment for M. pharaonis orthologs expressed in the same contexts (p = 0.98 and p = 0.99).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 report non-significant results that are consistent with prior comparisons between S. invicta and A. mellifera. The lack of conservation between honey bee and pharaoh ant is expected given greater phylogenetic distance (~170 Mya) and independent origins of eusociality, though methodological differences (brain vs whole body) also limit comparability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Gene ontology analysis revealed that nurse-upregulated genes were strongly enriched for metabolism-related terms (nearly 50 terms with p < 10\u207b\u2075), while forager-upregulated genes showed weaker enrichment for signal transduction and gland morphogenesis, and underrepresentation of metabolic processes and chromatin modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 report GO enrichment results with appropriate statistical thresholds. The strong metabolic signal for nurse genes and more diffuse signal for forager genes are consistent with the authors' interpretation of distinct functional profiles, though the biological significance of underrepresented terms requires careful interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "WGCNA identified 14 co-expression modules (83-4,218 genes), with modules 1 and 14 strongly correlated with worker age in opposite directions (r = -0.95, p = 0.0038 and r = 0.91, p = 0.023), and most module eigengenes switching signs between 9-12 days corresponding to the behavioral transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 present WGCNA results with strong correlations and appropriate FDR-adjusted p-values. The temporal switching of module eigengenes aligns well with the observed behavioral transition, providing network-level support for transcriptional reprogramming during the nurse-to-forager transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C86",
+      "C87"
+    ],
+    "result": "Forager-upregulated genes were concentrated in few modules (only 2 with >100 genes, majority in module 14), while nurse-upregulated genes were more widely distributed across 5 modules with >100 genes each, with module 1 containing the most nurse genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 and C86-C87 describe the distribution of differentially expressed genes across modules, revealing distinct organizational patterns. The concentration of forager genes in module 14 versus dispersal of nurse genes across multiple modules suggests different regulatory architectures, though the biological interpretation requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Module 5 containing 116 nurse-upregulated genes was enriched for female gonad development terms, despite M. pharaonis workers being completely sterile and lacking ovaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 report an unexpected GO enrichment result. While the enrichment analysis is valid, the biological interpretation is uncertain. This could reflect co-option of reproductive pathways for nursing functions, annotation artifacts, or genuine expression of gonad-related genes in a non-reproductive context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C88",
+      "C89"
+    ],
+    "result": "The proportion of module genes with identified S. invicta orthologs ranged from 0.28 to 0.53, indicating that modules vary in their composition of conserved versus taxonomically restricted genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C88-C89 report variation in ortholog identification across modules. The range of proportions supports the inference that modules differ in evolutionary conservation, though this interpretation assumes ortholog identification accurately reflects conservation rather than technical factors like sequence divergence or annotation quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Forager-upregulated genes were much more connected than nurse or non-differentially expressed genes, while nurse-upregulated genes were less connected than non-differentially expressed genes (Kruskal-Wallis, p < 0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 report statistically significant differences in network connectivity across gene categories. The authors appropriately note that WGCNA provides better estimates for highly abundant and variable genes, which could introduce bias, but the pattern is clear and consistent with their main conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Nurse-upregulated genes evolve more rapidly (higher dN/dS) than non-differentially expressed genes (Kruskal-Wallis, p < 0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 reports a statistically significant but small difference in evolutionary rate. The authors appropriately characterize this as a 'small but significant difference,' and the result is based on pairwise dN/dS calculations using PAML, a standard approach for estimating evolutionary rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "Nurse and forager genes were more highly expressed than non-differentially expressed genes (Kruskal-Wallis, p < 0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C40 reports a significant difference but the authors explicitly acknowledge this comparison is 'likely biased because differential expression is more easily detected in highly expressed genes.' This detection bias is a fundamental limitation of RNA-seq that undermines the interpretation of this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Network connectivity and expression level are negatively associated with evolutionary rate (r = -0.15 and r = -0.12, both p < 2\u00d710\u207b\u00b9\u2076), connectivity and expression are positively correlated (r = 0.30, p < 2\u00d710\u207b\u00b9\u2076), and in a full model, expression and connectivity had the largest effects on evolutionary rate (z = -7.42, p = 1.29\u00d710\u207b\u00b9\u00b3 and z = -3.69, p = 0.00023).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 report genome-wide patterns consistent with established principles in molecular evolution. The correlations are highly significant with large sample sizes, and the multivariate model appropriately accounts for multiple factors. These results provide the baseline against which behavioral gene categories are compared.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Genes with fire ant or honey bee orthologs had greater connectivity and expression, with connectivity having the strongest effect on ortholog presence (t = 24.5 and t = 32.2, both p < 10\u207b\u00b9\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 report strong statistical effects from GLM analysis with quasibinomial residuals. The finding that connectivity is the strongest predictor of ortholog identification is consistent with the hypothesis that highly connected genes are more conserved, though technical factors in ortholog detection could also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Nurse-upregulated genes had fewer orthologs than expected given their connectivity (t = -3.17, p = 0.0015 for S. invicta; t = -2.76, p = 0.0057 for A. mellifera), and forager-upregulated genes had fewer orthologs than expected given their expression (t = -2.33, p = 0.02 for S. invicta; t = -2.58, p = 0.0098 for A. mellifera).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 report significant interaction effects from GLM models, indicating that the relationship between connectivity/expression and ortholog presence differs by gene category. These are 'much smaller' effects than the main effects but are statistically significant and biologically interpretable as deviations from genome-wide patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C78"
+    ],
+    "result": "The genetic architecture of M. pharaonis age-based division of labor includes both highly connected and conserved components (forager-upregulated genes) as well as loosely connected and evolutionarily labile components (nurse-upregulated genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 and C78 synthesize the major findings into a coherent conclusion. This interpretation is well-supported by the convergent evidence from connectivity analyses (C37-C38), evolutionary rate analyses (C39), and ortholog identification patterns (C13-C17, C48-C51), representing the central contribution of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Nurse-upregulated genes are more rapidly evolving and less conserved among social insect lineages relative to forager-upregulated genes, suggesting that nurse traits have been a major focus of evolutionary innovation between social insect lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 combine empirical findings (C39, C13-C16) with evolutionary interpretation. The data support the first part (nurse genes are more rapidly evolving and less conserved), and the inference about evolutionary innovation is reasonable, though alternative explanations (e.g., relaxed constraint) are also discussed by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Social evolution does not just have simple genome-wide effects but instead shapes complex social traits while acting within systems-level constraints imposed by regulatory architecture, with genes influencing key social traits being conditionally expressed and peripherally located in regulatory networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 present a conceptual synthesis integrating the study's findings with broader evolutionary theory. The evidence for distinct patterns in nurse vs forager genes (C37-C39, C68-C69) supports the argument against simple genome-wide effects, though the claim about peripheral network location is more inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors propose that foraging mechanisms may be conserved and simple while nursing involves more diverse processes, and that the more complex genetic architecture of nursing may have facilitated evolutionary change, with obligate sterility potentially releasing workers from developmental constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C85 are explicitly speculative ('may be,' 'perhaps,' 'if so, we predict'), representing hypotheses to explain the observed patterns rather than tested conclusions. While these are reasonable interpretations, they require additional data and experiments to evaluate, making them uncertain rather than supported or unsupported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Pharaoh ant and fire ant diverged approximately 50 million years ago, while honey bees and ants diverged approximately 170 million years ago and represent independent origins of eusociality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 cite established phylogenetic estimates from the literature (Ward et al., 2014; Ronquist et al., 2012). These are appropriately used to contextualize the comparative analyses and interpret the degree of expected conservation between species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The manuscript reviews two competing hypotheses (genetic toolkit and novel social genes) and established principles about gene connectivity, expression, and evolutionary rate from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 accurately summarize prior work and theoretical frameworks from cited literature. These provide essential context for interpreting the study's findings and represent accurate characterizations of the existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Age polyethism involves progression from nursing to foraging and is expected to be shaped by kin selection; its molecular basis has been well-studied only in honey bees; M. pharaonis workers live 9-10 weeks and show weak nestmate recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 provide background information from cited literature about age polyethism, kin selection theory, and M. pharaonis biology. These are accurate characterizations that establish the rationale and context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Both conserved and novel genes likely play roles in trait evolution; worker traits in obligately sterile workers are shaped by kin selection, which is weaker than direct selection; and most studies find worker-biased genes evolve more rapidly than queen-biased genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 synthesize theoretical expectations and prior empirical findings from the literature. These provide the conceptual framework for interpreting the study's results on evolutionary rates and gene conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Traits associated with social signal production are expected to be peripherally located in regulatory networks and evolutionarily labile, with novel genes likely added peripherally during evolution of social novelty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C77 present expectations and predictions based on cited literature about secreted proteins, but these are not directly tested in this study. The inference about peripheral network location for social signal genes is reasonable but speculative without direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study used two replicate colonies with age-marked workers, daily behavioral observations for one month, RNA-seq from 24 libraries (7 age groups + 5 behavioral groups \u00d7 2 replicates), genome sequencing from a haploid male, and standard bioinformatic methods for ortholog identification and evolutionary rate calculation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C102 describe the experimental design and methods. The approach is generally sound with appropriate replication, though some limitations are noted (e.g., potential for missing late-life transitions, detection bias for highly expressed genes). The methods are standard and adequately described.",
+    "result_type": "MINOR"
+  }
+]

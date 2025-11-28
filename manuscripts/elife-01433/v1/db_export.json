@@ -1,0 +1,1754 @@
+{
+  "submission": {
+    "id": "422b9244-566a-430f-a9c5-6b6ed1d723c9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:32:40.493017Z",
+    "updated_at": "2025-11-28T20:32:40.493017Z"
+  },
+  "content": [
+    {
+      "id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "submission_id": "422b9244-566a-430f-a9c5-6b6ed1d723c9",
+      "content_type": "manuscript",
+      "content_text": "# Symmetry breaking in reconstituted actin cortices\n\n## Authors\n\n- Enas Abu Shah<sup>1</sup>\n- Kinneret Keren<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Physics Technion\u2013Israel Institute of Technology Haifa Israel\n2. The Russell Berrie Nanotechnology Institute Technion\u2013Israel Institute of Technology Haifa Israel\n3. Network Biology Research Laboratories Technion\u2013Israel Institute of Technology Haifa Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe actin cortex plays a pivotal role in cell division, in generating and maintaining cell polarity and in motility. In all these contexts, the cortical network has to break symmetry to generate polar cytoskeletal dynamics. Despite extensive research, the mechanisms responsible for regulating cortical dynamics in vivo and inducing symmetry breaking are still unclear. Here we introduce a reconstituted system that self-organizes into dynamic actin cortices at the inner interface of water-in-oil emulsions. This artificial system undergoes spontaneous symmetry breaking, driven by myosin-induced cortical actin flows, which appears remarkably similar to the initial polarization of the embryo in many species. Our in vitro model system recapitulates the rich dynamics of actin cortices in vivo, revealing the basic biophysical and biochemical requirements for cortex formation and symmetry breaking. Moreover, this synthetic system paves the way for further exploration of artificial cells towards the realization of minimal model systems that can move and divide.\n\n## Introduction\n\nThe actin cytoskeleton plays a central role in many cellular processes including polarization, cell shape determination, intracellular transport, cell division and movement (Pollard and Cooper, 2009). The structure and function of the cytoskeleton arise from the self-organized dynamics of numerous molecular building blocks. This self-organization spans several orders of magnitude in space and time and involves a complex interplay between biochemical and biophysical processes; A myriad of proteins interact with the actin cytoskeleton and influence its behavior, in a manner that is dependent on the global mechanical properties of the network but at the same time determines it (Lecuit and Lenne, 2007; Pollard and Cooper, 2009; Mullins and Hansen, 2013). Despite the significant progress in uncovering the molecular details underlying cytoskeletal dynamics, the principles governing large-scale coordination and polarization of the cytoskeleton are still not well-understood.\n\nThe realization of biomimetic systems that reconstitute cellular processes in vitro, detached from the complexity of the cell, is a powerful approach for dissecting complex cellular phenomena. In particular, in vitro experiments have significantly advanced our understanding of the molecular requirements and the biophysical principles underlying actin-based motility and cytoskeletal organization in bulk (Welch et al., 1998; Cameron et al., 1999; Loisel et al., 1999; Gardel et al., 2004; Van Der Gucht et al., 2005; Bendix et al., 2008; Field et al., 2011; Kohler et al., 2012), and more recently in cell-sized compartments (Pontani et al., 2009; Stachowiak et al., 2009; Pinot et al., 2012; Sanchez et al., 2012; Carvalho, 2013b). However, we are still far from understanding the complexity of cytoskeletal dynamics in vivo, and recapitulating even basic cellular phenomena such as polarization, division and directed movement in synthetic systems remains an outstanding challenge.\n\nThe actin cytoskeleton undergoes continuous turnover and remodeling which are essential for its ability to perform its cellular tasks (Pollard and Cooper, 2009). In particular, the thin cortical actin shell underneath the cell membrane undergoes continuous assembly and disassembly processes, catalyzed by nucleation-promoting factors localized at the membrane and disassembly factors (Fritzsche et al., 2013). Among the nucleation-promoting factors, Arp2/3 which nucleates branched networks localizes to cortical actin networks (Machesky et al., 1994) and is essential for cortex formation (Bovellan, 2012). Formins, which nucleate linear filaments, were also found to localize to cortical actin networks, yet their role is still not entirely clear (Bovellan, 2012; Fritzsche et al., 2013). A host of actin binding proteins, including myosin motors, tethering proteins and various crosslinkers, further contribute to the spatio-temporal organization of actin cortices in cells (Munro et al., 2004). This dynamic remodeling is responsible for the global rearrangements of the actin cortex which are essential for its function during polarization and movement (Salbreux et al., 2012).\n\nPolarization in cells typically occurs in response to internal or external cues. Yet, the onset of polarity often reflects an inherent instability mechanism which can lead to symmetry breaking in the absence of any directional cues (Van Oudenaarden and Theriot, 1999; Verkhovsky et al., 1999; Wedlich-Soldner et al., 2003; Boukellal et al., 2004; Van Der Gucht et al., 2005; Carvalho et al., 2013a, 2013b). While biochemical signaling pathways appear to be important for transducing directional cues, the instability, at least in some cases, can be primarily mechanical (Mullins, 2010; Van Der Gucht and Sykes, 2009). For example, reconstitution of actin-based motility of bacterial pathogens such as Listeria monocytogenes revealed that directional movement can arise from spontaneous symmetry breaking within the actin network which ruptures and forms a polar comet-tail (Cameron et al., 1999; Van Oudenaarden and Theriot, 1999; Boukellal et al., 2004; Van Der Gucht et al., 2005). In the cell cortex, the uniform actin shell can break symmetry to form a polar network which is essential for generating and maintaining cell polarity (Munro et al., 2004; Cowan and Hyman, 2007; Munro and Bowerman, 2009; Goehring et al., 2011; Salbreux et al., 2012) and inducing directional cell movement (Hawkins et al., 2011; Poincloux et al., 2011). Despite their importance, the factors controlling symmetry breaking in the cell cortex remain poorly understood. An attractive hypothesis is that the instability leading to cortical symmetry breaking is also mechanical as in the case of comet tail motility (Van Oudenaarden and Theriot, 1999; Van Der Gucht et al., 2005; Dayel et al., 2009), yet the mechanisms involved appear different. Comet tail formation is a myosin\u2013independent process driven by actin polymerization (Loisel et al., 1999), whereas cortical symmetry breaking appears to rely on myosin as the main force generating element; myosin contraction which generates cortical actin flows has been shown to be essential for inducing polarization and defining the anterior\u2013posterior axis during the early stages of embryogenesis in Caenorhabditis elegans and in other species (Munro et al., 2004; Mullins, 2010; Munro and Bowerman, 2009; Mayer et al., 2010).\n\nReconstitution of actomyosin networks is a valuable tool for dissecting the mechanisms underlying cortical symmetry breaking. Recent in vitro experiments revealed that small changes in the relative amounts of myosin and crosslinkers, or in their activity, can lead to a sharp transition in the overall contractile behavior of reconstituted actin networks (Bendix et al., 2008; Kohler et al., 2012). However, to emulate cortical dynamics it is essential to incorporate actin turnover dynamics, couple the actin network to a soft interface (Murrell and Gardel, 2012), and reproduce a cell-like geometry (Pontani et al., 2009; Pinot et al., 2012; Carvalho et al., 2013b). Recent reports (Carvalho et al., 2013a, 2013b) suggest that myosin is responsible for building tension in actin networks tethered to soft interfaces, and can induce cortical rupture and generate asymmetry. Here we report the realization of artificial actin cortices that exhibit spontaneous symmetry breaking and display cell-like behavior. This novel synthetic system provides a basis for studying cortical actin dynamics and polarization in a simplified environment detached from the complexity of the living cell. Moreover, it presents an interesting example of a self-organized, far-from-equilibrium, active system that utilizes chemical energy to polarize and generate directional forces.\n\n## Results\n\n### Reconstitution of artificial actin cortices in cell-like compartments\n\nThe formation of artificial actin cortices was induced by localizing the ActA protein from the pathogenic bacteria L. monocytogenes to the inner interface of water-in-oil emulsions (Figure 1). ActA is a nucleation-promoting factor, known for its role in activating the Arp2/3 complex and inducing nucleation of branched actin networks (Welch et al., 1998). Such branched actin networks are found in the cortices of many cell types (Machesky et al., 1994; Medalia et al., 2002; Bovellan, 2012; Fritzsche et al., 2013). A soluble ActA construct was purified from L. monocytogenes and conjugated to a fluorescent hydrophobic linker made with Bodipy-FL, to generate an amphiphilic complex (\u2018Materials and methods\u2019). This amphiphilic ActA complex was mixed with diluted Xenopus laevis egg cytoplasmic extract supplemented with labeled actin, and encapsulated within droplets surrounded by mineral oil (\u2018Materials and methods\u2019). The amphiphilic ActA spontaneously localized to the water\u2013oil interface following droplet formation. Upon localization, ActA induced the assembly of a cortical actin network at the inner surface of the aqueous droplets (Figure 1A,D). Cortex assembly initiated in patches scattered throughout the interface, consistent with the autocatalytic nature of Arp2/3 mediated actin filament nucleation (Mullins and Hansen, 2013; Figure 1F). The system reached a steady state after \u223c10 min, with the formation of thin (\u223c1.5 \u00b5m; Figure 1\u2014figure supplement 1), homogenous actin cortices. The assembled cortices are dynamic, as illustrated by the rapid cortical recovery following photobleaching (Figure 1E, Figure 1\u2014figure supplement 2; Video 1). Thus, the cortical steady state reflects a balance between actin assembly and disassembly at the interface, as in cells (Fritzsche et al., 2013). Control experiments with soluble ActA, or in the absence of ActA, resulted in an essentially uniform actin distribution throughout the emulsion droplets, with no apparent cortical localization (Figure 1B,C), indicating that cortex formation depends on the localization of a nucleation-promoting factor at the interface.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01433/elife-01433-fig1-v1.jpg)\n\n**Figure 1.:** (A) Spinning disk confocal images of bodipy-conjugated ActA (left) and rhodamine-labeled actin (right) in a water-in-oil emulsion. The bodipy-conjugated ActA localizes to the water\u2013oil interface, and induces the formation of an actin cortex there. The actin signal reflects the distribution of actin monomers and filaments. (B) Images of AlexaFluor488-conjugated ActA (left panel) and rhodamine-labeled actin (right) in a water-in-oil emulsion. The hydrophilic ActA and the actin remain dispersed throughout the emulsion. (C) Image of rhodamine-labeled actin in a water-in-oil emulsion in the absence of ActA. The actin is distributed within the emulsion. (D) Schematic illustration of the actin cortex formed at the inner interface of a water-in-oil emulsion. A bright-field image (top left) and a scheme (top right) of an actin cortex at the inner interface of an aqueous droplet surrounded by oil. The zoomed scheme (bottom) illustrates the localization of the amphiphilic bodipy-conjugated ActA to the water\u2013oil interface, which leads to local activation of Arp2/3 and nucleation of a cortical actin network. (E) Scanning confocal images showing cortical recovery in a photobleaching experiment (Video 1). The time after photobleaching is indicated. (F) Spinning disk confocal images from a time-lapse video showing the formation of a homogenous actin cortex. The time after droplet formation is indicated. Scale bars: 10 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01433/elife-01433-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The fluorescence intensity cross-sections of rhodamine-labeled actin (top) and bodipy-conjugated ActA (bottom) extracted from spinning disk confocal images (inset) are plotted as a function of distance from the emulsion boundaries. Data for individual emulsions incubated at 30\u00b0C (grey lines) is shown together with the population average (thick lines). The cross-section intensity for each emulsion was normalized to the mean intensity along the emulsion boundary (Figure 2A,B; bottom). The actin signal reflects the distribution of actin monomers and filaments. A homogeneous cortical actin shell with a thickness of \u223c1.5 \u00b5m is apparent.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01433/elife-01433-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** FRAP experiments were performed on reconstituted cortices at 30\u00b0C using a scanning confocal microscope (\u2018Materials and methods\u2019). A region of the cortex at the bottom of an emulsion was bleached and its recovery was followed over time. Analysis of the recovery following photobleaching was done using the ZEN software by fitting to a single exponent, and using an unbleached region of the cortex as a reference. Left: histograms of the half time for recovery are shown. The average half time at 30\u00b0C was \u03c4\u00bd = 81 \u00b1 18 s (mean \u00b1 STD; N = 18). Right: graphs showing the normalized intensity as a function of time following photobleaching. The mean normalized intensity (mean \u00b1 STD) averaged over different emulsions at 30\u00b0C is shown. The solid line depicts a fit to a single exponent. The cortices typically exhibited only partial recovery after bleaching, usually returning to \u223c50% of their initial intensity. This partial recovery appeared to be a result of photodamage during the bleaching step.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01433/elife-01433-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Spinning disk confocal images of actin cortices prepared with different types of labeled actin, as indicated. Similar behavior was observed in all cases. Scale bars: 10 \u00b5m.\n\n![Video 1.](https://cdn.elifesciences.org/articles/01433/elife-01433-media1.mov.jpg)\n\n**Video 1.:** This video shows scanning confocal images (at a single z-plane) of rhodamine-labeled actin within a water-in-oil emulsion incubated at 30\u00b0C. A small region of the cortex was photobleached using a high intensity laser pulse. The video follows the dynamics of cortex recovery over several minutes. The lower panel depicts the whole droplet. The field of view is 132 \u00b5m wide. The upper panel shows a zoomed area in the proximity of the bleached region. The time relative to the bleaching event is indicated.\n\n### Temperature dependent symmetry breaking in reconstituted actin cortices\n\nOur reconstituted actin cortices can exhibit spontaneous symmetry breaking (Figure 2). The actin network assembled within emulsion droplets incubated at 20\u00b0C broke symmetry and formed polar actin caps (Figure 2A), in contrast to the homogenous spherical cortices formed at higher temperature (30\u00b0C; Figure 2B). We followed the dynamics of actin cap formation as a function of time (Figure 2C,D; Video 2). Initially, actin assembly appeared nearly uniform throughout the interface, but within minutes we observed the onset of a directional actin network flow along the interface. The cap formation process developed over \u223c10\u201320 min, with cortical flows initiating at \u223c1\u20134 \u00b5m/min (Figure 2E), and slowing down over time, as the cap contracted (Figure 2D). The local turnover due to actin assembly and disassembly continued throughout the cap formation process, as illustrated by photobleaching experiments in which a cortical region within the asymmetric actin cap was bleached (Video 3). Cortical recovery in the cap was observed within minutes (Figure 2\u2014figure supplement 2), similar to the recovery seen in photobleaching experiments of homogenous cortices (Figure 1\u2014figure supplement 2). Despite this rapid turnover at the molecular level, the position of the actin caps remained stable over much longer time scales, typically exhibiting persistent polarization for hours (Figure 2\u2014figure supplement 3). Notably, the magnitude of the cortical actin flows and the characteristic length and time scales for polarization observed in our artificial cortices are similar to those seen in developing embryos (Munro et al., 2004; Cowan and Hyman, 2007; Munro and Bowerman, 2009; Mayer et al., 2010).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01433/elife-01433-fig2-v1.jpg)\n\n**Figure 2.:** (A and B) Spinning disk confocal images of bodipy-conjugated ActA (top left) and rhodamine-labeled actin (top right) in water-in-oil emulsions incubated at 20\u00b0C (A) or at 30\u00b0C (B). A polar actin cortex with a single cap is observed at 20\u00b0C, in contrast to the uniform spherical cortex observed at 30\u00b0C. The fluorescence intensity profiles as a function of the angle along the contour are shown for different water-in-oil emulsions at 20\u00b0C (A; bottom panels) or at 30\u00b0C (B). Data for individual emulsions normalized to the mean intensity in each contour (grey lines) is shown together with the population average (thick line). The actin distributions (bottom right) are peaked at the center of the cap for all the emulsions at 20\u00b0C, in contrast to the uniform distributions at 30\u00b0C. The ActA distributions (bottom left) are essentially flat at both temperatures. The residual ActA observed outside the polar caps at 30\u00b0C suggests that ActA is in excess in our system (Figure 2\u2014figure supplement 5). (C) Spinning disk confocal images from a time-lapse video (Video 2) showing the development of a polar actin cap in an emulsion incubated at 20\u00b0C. The time after droplet formation is indicated. Cortex assembly starts uniformly along the interface, and becomes polar within minutes. (D) A kymograph of the video in (C), showing the fluorescence intensity along the contour of the emulsion (vertical axis) as a function of time (horizontal axis). The cortical actin flow which slows down as the cap contracts is evident in the kymograph. (E) A histogram of the initial cortical flow speeds measured for a population (N = 32) of emulsions followed by time-lapse microscopy during the symmetry breaking process as in (C). Inset- a schematic illustration of the cortical actin flow during the symmetry breaking process. (F) Bulk assay for actin network contractility. The relative width of the actin containing strip in comparison to the width of the incubation chamber after 30 min is plotted as a function of temperature. At temperatures <25\u00b0C the network contracts into a thin strip (left inset), while at higher temperatures (>25\u00b0C) no bulk contractility is observed (right inset). (G) Samples were incubated for 30 min at 30\u00b0C to generate homogenous cortices, and then moved to 20\u00b0C. Cortex polarity developed over time, with symmetry breaking often initiating in more than one position (Figure 2\u2014figure supplement 4A). The relative proportion of symmetric (dark) and polar cortices (light) with one (bare) or multiple (stripes) actin caps, at different time windows following the temperature shift are shown, in comparison to control samples incubated at 30\u00b0C or at 20\u00b0C.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01433/elife-01433-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The fluorescence intensity cross-sections of rhodamine-labeled actin (top) and bodipy-conjugated ActA (bottom) extracted from spinning disk confocal images (inset) are plotted as a function of distance from the emulsion boundaries. Data for individual emulsions incubated at 20\u00b0C (grey lines) is shown together with the population average (thick lines). The cross-section intensity for each emulsion was normalized to the mean intensity along the emulsion boundary. The cortical actin distribution is peaked on one side at 20\u00b0C, in contrast to the homogenous cortices formed at 30\u00b0C.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01433/elife-01433-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** FRAP experiments were performed on reconstituted cortices at 20\u00b0C using a scanning confocal microscope (\u2018Materials and methods\u2019). A region of the cortex at the bottom of an emulsion was bleached and its recovery was followed over time. Analysis of the recovery following photobleaching was done using the ZEN software by fitting to a single exponent, and using an unbleached region of the cortex as a reference. Left: histograms of the half time for recovery are shown for emulsions. The average half time at 20\u00b0C was \u03c4\u00bd = 73 \u00b1 24 s (mean \u00b1 STD; N = 9). The average half times at 30\u00b0C and at 20\u00b0C were not significantly different (p>0.1). Right: graphs showing the normalized intensity as a function of time following photobleaching. The mean normalized intensity (mean \u00b1 STD) averaged over different emulsions at 20\u00b0C is shown. The solid line depicts a fit to a single exponent.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01433/elife-01433-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Spinning disk confocal images from a time lapse video following the dynamics of cap evolution over 2 hr. Once a stable cap is formed, its position remains relatively stable over time. (B) A histogram of the net cap rotation speed measured for a population (N = 30) of emulsions followed by time-lapse microscopy after the symmetry breaking process. The cap position was determined along the perimeter as the center of mass of the intensity distribution along the boundary.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/01433/elife-01433-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Samples were incubated for 30 min at 30\u00b0C to generate homogenous cortices, and then moved to 20\u00b0C. (A) Spinning disk confocal images of the actin distribution in representative emulsions at different time points following the temperature shift. (B and C) The actin (B) and ActA (C) density profiles within different time windows following the shift in temperature are shown as a function of the angle along the contour. The time window after the temperature shift for each graph is indicated. Data for individual emulsions normalized to the mean intensity in each contour (grey lines) is shown together with the population average within the time window (thick lines). Cortex polarity develops over time, with symmetry breaking often initiating in more than one position (e.g., image at 22\u2032). Both the ActA and the actin distributions become polar, with the actin distribution exhibiting a more pronounced peak.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/01433/elife-01433-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Artificial actin cortices were prepared with different ActA concentrations which were higher (3 \u00b5M) or lower (0.5 \u00b5M) than the typical ActA concentration used (1.5 \u00b5M). (A and B) Bar plots showing the average fluorescence (\u00b1SEM) intensity of bodipy-conjugated ActA (A) and rhodamine-labeled actin (B) in artificial cortices prepared at different ActA concentrations and incubated at 20\u00b0C or 30\u00b0C as indicated. The fluorescence intensity along the interface was extracted from spinning disk confocal images, and the mean cortex intensity was averaged over a population of emulsions for each condition. The intensity values were normalized to the average intensity with 1.5 \u00b5M ActA at 30\u00b0C. The ActA density at the interface was higher at 20\u00b0C and increased with the bulk concentration of ActA. The cortical actin density was also higher at 20\u00b0C, but was nearly independent of the ActA concentration. (C) Bar plot showing the relative proportion of symmetric (dark) and polar cortices (light) with one (bare) or multiple (stripes) actin caps for samples of emulsions made with different amounts of ActA and incubated at 20\u00b0C or 30\u00b0C. The proportion of symmetric and polar cortices does not depend on the ActA concentration within the range of concentrations examined.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/01433/elife-01433-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Scanning confocal images showing the ActA distribution in an emulsion incubated at 20\u00b0C. A small patch of the ActA at the interface was photobleached and the recovery of the fluorescence signal was followed over time. The ActA appeared to recover homogenously within the bleached region. The time from the bleaching event is indicated. Scale bar: 10 \u00b5m.\n\n![Video 2.](https://cdn.elifesciences.org/articles/01433/elife-01433-media2.mov.jpg)\n\n**Video 2.:** This video shows spinning disc confocal images (at a single z-plane) of rhodamine-labeled actin within a water-in-oil emulsion incubated at 20\u00b0C. The actin signal reflects the distribution of actin monomers and filaments. The actin cortex initiates in patches throughout the droplet\u2019s interface. Cortical actin flows appear at the interface within minutes, leading to the formation of a polar actin cap. The field of view is 55 \u00b5m wide, and the time from droplet formation is indicated.\n\n![Video 3.](https://cdn.elifesciences.org/articles/01433/elife-01433-media3.mov.jpg)\n\n**Video 3.:** This video shows scanning confocal images (at a single z-plane) of rhodamine-labeled actin within a water-in-oil emulsion incubated at 20\u00b0C. A small region at the tip of the actin cap was photobleached using a high intensity laser pulse. The video follows the dynamics of cortex recovery over several minutes. The lower panel depicts the whole droplet. The field of view is 132 \u00b5m wide. The upper panel shows a zoomed area in the proximity of the bleached region. The time relative to the bleaching event is indicated.\n\nTo examine whether the temperature dependent contractile behavior we observe in the emulsions is related to the confined geometry as suggested in Pinot et al. (2012), or reflects changes in bulk contractility (Bendix et al., 2008; Kohler et al., 2012), we designed a bulk assay to assess the behavior of our system. We introduced the same actin machinery into chambers (\u223c100 \u00b5m \u00d7 100 \u00b5m \u00d7 5 mm), replacing the amphiphilic ActA with fixed L. monocytogenes which express ActA on their surface (\u2018Materials and methods\u2019). At high temperatures, the fixed bacteria remained distributed throughout the sample, exhibiting comet tail motility, and no overall contraction was observed (Figure 2F, right). At lower temperatures, we observed rapid contraction of the entire sample, which concentrated actin filaments in the extract and bacterial comet tails into a narrow strip of actin gel (Figure 2F, left). The transition between non-contractile and contractile behavior occurred abruptly at \u223c25\u00b0C.\n\nWe found that temperature controls the onset of symmetry breaking in our reconstituted actin cortices (Figure 2A,B). To investigate whether a temperature shift could lead to symmetry breaking in pre-assembled actin cortices, we first incubated emulsions for 30 min at 30\u00b0C to prepare homogenous cortices, and then shifted the temperature to 20\u00b0C. Cortical polarity developed as a function of time following the temperature shift (Figure 2G, Figure 2\u2014figure supplement 4). Initially, the actin network density along the droplet interface was uniform. Within minutes, the homogenous cortical network began to rupture, often in more than one place (Figure 2\u2014figure supplement 4A; 22\u2032), leading to the formation of gaps in the actin cortex. After \u223c30 min, a polar distribution of actin was observed in all emulsions, characterized in most cases by a single polar cap, similar to the distributions measured in emulsions prepared at 20\u00b0C (Figure 2G). At longer times, we often observed accumulation of actin in the interior of the droplet (near the cap) driven by the actin flows initiated at the interface (Figure 2\u2014figure supplement 4A; 75\u2032). The cortical flows also generated a bias in the distribution of the nucleation-promoting factor ActA towards the cap (Figure 2\u2014figure supplement 4C). Similar recruitment of nucleation-promoting factors by polymerizing actin networks was previously observed in comet tail motility on soft interfaces (Boukellal et al., 2004).\n\nWe further characterized the temperature\u2013dependent behavior of the artificial actin cortices as a function of ActA concentration (Figure 2\u2014figure supplement 5). As expected, the ActA density at the water\u2013oil interface increased as a function of the initial bulk ActA concentration used (Figure 2\u2014figure supplement 5A). The ActA densities at the interface were also higher at 20\u00b0C, which can be understood from simple thermodynamic considerations; the dynamic localization of ActA at the interface (Figure 2\u2014figure supplement 6) depends on the interplay between enthalpy and entropy which favors localization at lower temperatures. However, within the range of ActA concentrations examined, the intensity of the actin cortices and their symmetry breaking properties were essentially unaffected by the ActA concentration (Figure 2\u2014figure supplement 5B,C), suggesting that ActA is in excess. These results suggest that the temperature-dependent symmetry breaking observed reflects the changing properties of the cortical actin networks, rather than differences in ActA localization. The intensity of the actin cortices was found to be higher at lower temperatures, most likely due to the temperature-induced changes in the balance between actin assembly and disassembly dynamics in our system, also exemplified by the increased lengths of actin comet tails at 20\u00b0C compared to 30\u00b0C in the same motility mix (data not shown).\n\n### Cortical symmetry breaking is myosin-dependent and requires sufficient network connectivity\n\nOur reconstituted system allowed us to investigate the biochemical requirements for symmetry breaking in the artificial cortices (Figure 3). Myosin motors are involved in contractile behavior and symmetry breaking in the cortex of cells (Munro et al., 2004; Cowan and Hyman, 2007; Munro and Bowerman, 2009; Van Der Gucht and Sykes, 2009). To examine the role of myosin in our reconstituted system, we depleted myosin II from the Xenopus egg extracts by immunodepletion (Bendix et al., 2008) (\u2018Materials and methods\u2019). Emulsions made from myosin-depleted extracts did not exhibit cortical actin flows and maintained a symmetric actin shell when incubated at 20\u00b0C (Figure 3A,C), in contrast to the behavior observed at the same temperature in the presence of myosin. Symmetry breaking was not affected in control experiments with mock immunodepletion (Figure 3B). To further establish the essential role of myosin in the symmetry breaking process, we added different amounts of purified myosin to myosin\u2013depleted extracts and showed that the symmetry breaking is restored (Figure 3B,C). The cap morphology was dependent on the amount of added myosin; as the concentration of myosin increased, we observed more cortices with multiple caps, rather than a single cap (Figure 3C). Moreover, at even higher myosin concentrations (0.66 \u00b5M) most of the cortices appear fractured in many places with multiple small interconnected cortical patches which exhibited jittery motion. The decrease in the typical size of cortical patches with increasing amounts of myosin is probably due to the decrease in the contractile unit size as a function of myosin concentration (Thoresen et al., 2013). Overall our results suggest that the symmetry breaking observed in our artificial cortices is driven by the same myosin-induced mechanism found in cells (Munro et al., 2004; Mayer et al., 2010).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01433/elife-01433-fig3-v1.jpg)\n\n**Figure 3.:** (A) Spinning disk confocal images of actin cortices in water-in-oil emulsions made with myosin\u2013depleted (upper panel) or mock-depleted (lower panel) extracts and incubated at 20\u00b0C. Myosin depletion eliminates symmetry breaking, whereas a mock depletion does not. (B) Spinning disk confocal images of actin cortices made with myosin-depleted extracts supplemented with different amounts of purified myosin. At intermediate myosin concentrations (0.24 \u00b5M; left images) the actin cortices typically have one or few actin caps. At higher myosin concentrations (0.66 \u00b5M; right image) the actin cortices appear fractured with many discrete puncta along the interface. (C) Bar plot showing the relative proportion of symmetric (dark), polar cortices (light) with one (bare) or multiple (stripes) actin caps, or fractured cortices (dense stripes). Data is shown for a control sample of emulsions at 20\u00b0C, in comparison to samples prepared at the same temperature with myosin-depleted, mock-depleted extracts or myosin-depleted extracts supplemented with different amounts of purified myosin. (D) Spinning disk confocal images of actin cortices formed with extracts supplemented with different amounts of \u03b1-actinin or filamin crosslinkers and incubated at 30\u00b0C. (E) Bar plot showing the relative proportion of symmetric and polar cortices (as in (C)) for samples of emulsions made with different amounts of crosslinkers (2\u20138 \u00b5M \u03b1-actinin; 4 \u00b5M filamin) relative to a control sample at 30\u00b0C. The addition of crosslinkers induces symmetry breaking at 30\u00b0C. Note the large fractions of emulsions at higher \u03b1-actinin concentrations that exhibit multiple actin caps. Scale bars: 10 \u00b5m.\n\nThe contractile behavior of actin networks is also dependent on the degree of crosslinking within the network; Sufficient network connectivity is required to enable myosin motors to generate forces rather than merely induce sliding of filaments, whereas excessive crosslinking stiffens the network and prevents contraction (Bendix et al., 2008; Kohler et al., 2012). We used two different kinds of actin crosslinkers which are known to localize to cortical actin networks in vivo (Charras et al., 2006), \u03b1-actinin which preferentially generates anti-parallel actin bundles and filamin which is a more flexible crosslinker that can bind to disordered actin networks. We showed that symmetry breaking can be induced at 30\u00b0C by adding crosslinkers (Figure 3D,E). Increasing \u03b1-actinin concentration led to the formation of polar cortices in a concentration dependent manner. At low concentrations (<4 \u00b5M) the cortices remained largely symmetric, at intermediate concentrations (4\u20136 \u00b5M) we mostly observed the formation of a single actin cap, while at higher concentrations (8 \u00b5M) we often observed multiple actin domains. Addition of filamin (4 \u00b5M) also led to the formation of a polar actin cap. Despite the different properties of these crosslinkers, they were both successful at inducing symmetry breaking, highlighting the importance of the overall connectivity of the network rather than the detailed characteristics of individual crosslinkers.\n\n### Cell-like phenomena in the artificial cortices\n\nInterestingly, our artificial actin cortices exhibit additional cell-like behaviors (Figure 4). The cortex, which is under contractile stress, could spontaneously detach from the interface locally (Figure 4A; Video 4), as observed in vivo during cellular blebbing (Charras et al., 2006). Detachment of the cortex did not lead to outward bulging of the interface due to the high surface tension of the water\u2013oil interface in our system (\u223c700 pN/\u00b5m, \u2018Materials and methods\u2019). As in cells (Charras et al., 2006), the actin cortex healed over time and a new cortex assembled at the interface within minutes. In addition, the asymmetric actin cortices generated polar forces which could induce reorganization in the interior of the droplet and global deformation of the droplet\u2019s shape (Figure 4B,C; Video 4). Such deformations were observed in \u223c10% of the emulsions, and their incidence increased after longer incubation times compared to the initial polarization event. Similar reorganization and changes in global morphology have been observed in cells and embryos (Lecuit and Lenne, 2007; Munro and Bowerman, 2009). The shape deformation of the droplet can be used to measure the forces generated by the cortical actin network (Boukellal et al., 2004; Figure 4C). The high curvature at the tip of the actin cap indicates that the cytoskeleton exerts a net protrusive force there, which we estimate to be \u223c20 pN/\u00b5m2 (Figure 4C). Away from the tip, on the sides of the actin cap, the local curvature is lower implying that the cytoskeleton is exerting pulling forces on the interface. These pulling forces are likely responsible for the accumulation of actin and ActA near the cap (Figure 4B, Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01433/elife-01433-fig4-v1.jpg)\n\n**Figure 4.:** (A) Scanning confocal images from a time-lapse video (Video 4) showing local detachment of an actin cortex from the interface followed by regrowth of a new cortex within minutes. The time after droplet formation is indicated. Images of the bodipy-conjugated ActA (green) and rhodamine-labeled actin (magenta) are depicted, together with an overlay of the detachment region (top). (B) Spinning disk confocal images of two representative water-in-oil emulsions incubated at 20\u00b0C, exhibiting polar actin cortices and deformed morphology. Images of the bodipy-conjugated ActA (green), rhodamine-labeled actin (magenta) and their overlay are shown. The asymmetric actin cortices generate polar forces which induce deformation of the droplets. Note the formation of a cytoplasmic concentration of actin and ActA near the deformed cap. The ActA distribution is polar in the example shown on the right, where the overall amount of ActA appears lower (Figure 4\u2014figure supplement 1). (C) A schematic illustration of a deformed droplet and the forces at its interface. The cytoskeletal forces F and the pressure difference \u0394P at the interface are balanced by the Laplace pressure which is proportional to the surface tension \u03c3 and the local mean curvature \u03ba, so that $F+\u0394P=2\\sigma\u03ba$. The pressure difference can be estimated from the curvature outside the cap and the known surface tension, since the cytoskeletal forces are assumed to be zero outside the cap. The protrusive force within the cap was estimated from the difference in the local curvatures in the cap region and outside the cap: $F=2\\sigma\u03ba_{cap}\u2212\u0394P=2\\sigma(\u03ba_{cap}\u2212\u03ba_{no\u2009cap})$. Scale bars: 10 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01433/elife-01433-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The fluorescence intensity of rhodamine-labeled actin (top) and bodipy-conjugated ActA (bottom) extracted from spinning disk confocal images of the deformed emulsion shown in Figure 4B (insets) are depicted. The intensity across the droplet (left) is plotted together with the profiles along the boundary (right). The actin distribution is strongly peaked along the boundary in the cap region (top right). The ActA is also distributed asymmetrically along the boundary, yet exhibits a less pronounced peak at the cap (bottom right). Both the actin and ActA show extensive cytoplasmic localization near the cap in deformed emulsions (left).\n\n![Video 4.](https://cdn.elifesciences.org/articles/01433/elife-01433-media4.mov.jpg)\n\n**Video 4.:** This video shows scanning confocal images (at a single z-plane) of bodipy-conjugated ActA (left), rhodamine-labeled actin (center) and an overlay (right), within a large water-in-oil emulsion incubated at 20\u00b0C. The contractile forces within the cortex led to detachment of the cortex from the interface. The cortex recovered within minutes by regrowth of a new cortex at the interface. The polar forces generated by the cortex also led to shape deformation which developed over time. The field of view is 109 \u00b5m wide, and the time from droplet formation is indicated.\n\n## Discussion\n\nIn this work we present a novel reconstituted system that self-organizes into dynamic actin cortices which exhibit spontaneous symmetry breaking in the absence of any directional cue. Our system integrates actin assembly at the interface, actin turnover, myosin motor activity and crosslinkers within a confined geometry, and displays interesting cell-like behavior. The water-in-oil emulsions provide an easy and reproducible approach to generate cell-like compartments (Tawfik and Griffiths, 1998; Pinot et al., 2012; Good et al., 2013; Hazel et al., 2013). Giant vesicles (GUVs) have also been used as compartments for reconstituting cellular phenomena (Noireaux and Libchaber, 2004; Pontani et al., 2009; Carvalho et al., 2013b). Both approaches have their advantages and limitations; encapsulation in GUVs is more challenging and the GUVs limited stability in cell extracts can be problematic, while the use of oil-based emulsions limits the applicability of various cell permeable biochemical drugs (e.g., blebbistatin) which tend to be hydrophobic and segregate into the oil phase. In addition, the actin machinery within emulsions appears more sensitive to phototoxicity effects, probably due to elevated oxygen levels within the emulsions compared to bulk. Despite these limitations, our system offers new possibilities for studying cytoskeletal dynamics; we are able to vary the identity and concentrations of actin nucleators, myosin motors and crosslinkers within a controlled environment, and follow their dynamics over time. Using this novel reconstituted system we show that the assembly of dynamic actin cortices requires localization of nucleation factors at the interface, and identify the conditions for cortical symmetry breaking. Specifically, we show that symmetry breaking requires myosin motors and sufficient network connectivity, but does not depend upon pre-patterned localization of actin nucleators, the involvement of microtubules (Munro et al., 2004), or any local changes in the properties of the interface.\n\nThe dynamics of the artificial cortices are temperature\u2013dependent; a shift by a few degrees leads to a large qualitative change in the behavior of the system, going from homogenous cortices at high temperature to asymmetric actin caps at low temperature (Figure 2). Obviously, temperature is a convenient control parameter. Experimentally, this allowed us to show that cortical polarization can be induced at high temperature by adding crosslinkers and prevented at low temperature by depleting myosin (Figure 3), implying that symmetry breaking in the artificial cortices is driven by contraction of the cortical actomyosin network. This contractile behavior observed at low temperatures is consistent with previous experiments in cell extracts which were all done at temperatures below 20\u00b0C (Bendix et al., 2008; Field et al., 2011; Pinot et al., 2012). At 30\u00b0C the cortical network appears weakly crosslinked, and hence unable to transmit the contractile stresses generated by myosin motor activity. Visualization of the ultrastructure of the actin networks could provide additional insight into the mechanism of symmetry breaking. However, analysis of actin structures by electron microscopy within cell-like compartments is technically challenging due to difficulties in fixation and sample preparation. We hypothesize that the transition to contractile behavior at lower temperature is primarily due to an increase in the intrinsic crosslinking activity in the system. This increase could emerge from longer dwell times of individual myosin motor heads at low temperature, which would turn the multi-motor myosin filaments into more effective crosslinkers. Alternatively, decreasing temperature could increase the affinity of endogenous actin crosslinkers. Our observations are analogous to recent results, which revealed a sharp transition in the contractile behavior of active actin networks as a function of pH (Kohler et al., 2012). Overall these findings indicate that actin cortices are close to an instability threshold; small changes in the composition of the system, or in the activity of its components, can lead to dramatic changes in the global characteristics of the system. We believe that this reflects a general organizational principle in cellular systems, whereby cells are often posed near an instability threshold to enable rapid responses to changing conditions.\n\nAs individual modules within the cells are being unveiled at the molecular level, understanding their integration at the whole-cell level is becoming a central challenge in cell biology. Reconstituting different functional modules together in a meaningful way can be invaluable in that respect, but such reconstitutions have proven to be challenging experimentally. Here we report the successful integration of different cytoskeletal modules into a single reconstituted system which recapitulates several cellular phenomena including cortical symmetry breaking (Figures 2 and 3), polar force generation, and blebbing (Figure 4). Our reconstituted system provides novel insights into the complex behavior of the actin cortex in living cells, presenting new opportunities for investigating cortical dynamics, both experimentally and theoretically (Joanny et al., 2013). More generally, our system opens the way for future exploration of cytoskeletal dynamics within cell-like compartments, and the integration of additional modules, such as protein expression systems (Noireaux and Libchaber, 2004) and cell cycle (Good et al., 2013; Hazel et al., 2013), towards the realization of artificial cells that can move and divide. Advances in this direction will promote our understanding of basic cellular functions, as well as present ample opportunities for future application in therapeutics and bioengineering.\n\n## Materials and methods\n\n### Proteins and reagents\n\nActin was purified from chicken skeletal muscle and labeled in filamentous form on either amines or cysteine 374 with tetramethylrhodamine iodoacetamide (#T6006; Molecular Probes, Grand Island, NY), Tetramethylrhodamine Succinimidyl Ester (#T6105) or AleaFluor647 Succinimidyl Ester (#A20006) at a ratio of 1:10 using standard protocols. The behavior of the actin cortices was similar with the different types of labeled actin used (Figure 1\u2014figure supplement 3). The purified actin was stored in G-buffer (10 mM Tris\u2013HCl pH 8.6, 0.1 mM DTT, 0.2 mM ATP, 0.1 mM CaCl2) on ice for up to 3 weeks, since the assembly of the cortices was sensitive to the quality of the actin.\n\nChicken skeletal myosin was purified according to standard protocols and stored lyophilized in high salt buffer (500 mM KCl, 50 mM Hepes pH 7.5, 5% sucrose). Before use, dead myosin heads were removed by spinning the myosin hexamers in the presence of 1 mM ATP and preformed actin filaments, as described in Thoresen et al. (2011) but without adding phalloidin.\n\nActA-His-Cys was purified from strain DP-L4363 of L. monocytogenes (a gift from Julie Theriot, Stanford University) expressing a truncated actA gene encoding amino acids 1\u2013613 with a COOH-terminal six-histidine tag replacing the transmembrane domain and containing an additional cysteine amino acid (Welch et al., 1998). ActA was conjugated through a heterobifunctional linker LC-SMCC (#22362; Thermo Scientific/Pierce, Rockford, IL), to poly-D-lysine (#P0296; Sigma\u2013Aldrich, St. Louis, MO) labeled with \u223c6\u20138 molecules of Bodipy FL-X-SE (#D6102; Molecular Probes) per peptide. The poly-D-lysine was first incubated with the linker and Bodipy at room temperature for 1 hr. The reaction was quenched with 1M Tris pH 7.5. Reduced ActA-His-Cys was added to the mixture and incubated for 2 hr at room temperature. The unbound reagents were removed by dialysis against XB buffer (100 mM KCl, 0.1 mM CaCl2, 2 mM MgCl2, 5 mM EGTA, 10 mM K-HEPES pH 7.7).\n\n\u03b1-actinin was purchased from Cytoskeleton Inc. (Denver, CO), and reconstituted to final concentration of 40 \u00b5M with water. Filamin was purchased from Prospec (East Brunswick, NJ), dialyzed against Hepes pH 7.5 and reconstituted to final concentration of 20 \u00b5M in XB buffer with 50 mM Hepes.\n\n### Cytoplasmic extracts preparation and manipulation\n\nConcentrated M-phase extracts were prepared from freshly laid Xenopus laevis eggs as previously described (Cameron et al., 1999). Immunodepletion of myosin II was performed as in Bendix et al. (2008) with minor modifications. In brief, anti-myosin antibody raised against a C-terminal peptide of Xenopus myosin II-A heavy chain (a gift from Aaron Straight, Stanford University) or random rabbit IgG (#011-00-003; Jackson Laboratories, Bar Harbor, ME) were covalently bound to protein-A Dynabeads (#100-02; Dynal Biotech, Grand Island, NY) and resuspended in XB. The extract was incubated with the conjugated Dynabeads for two sequential depletion rounds of 10 min each at RT, and used immediately.\n\n### Emulsion preparation\n\nA motility mix was prepared by mixing the following: crude extract (4 \u00b5l), XB containing 30 mM MgCl2 (4 \u00b5l), 0.13\u20130.2 mM tetramethylrhodamine labeled actin in G-buffer (1 \u00b5l), 20 \u00d7 ATP regenerating mix (150 mM creatine phosphate, 20 mM ATP, 20 mM MgCl2 and 20 mM EGTA) and 30 \u00b5M bodipy-conjugated ActA (0.5 \u00b5l each). We estimate the total actin concentration in the motility mix to be \u223c25 \u00b5M. Emulsions were made by adding 1% (vol/vol) motility mix to mineral oil (Sigma) containing 4% Cetyl PEG/PPG-10/1 Dimethiocone (Abil EM90; Evnok Industries, Essen, Germany) and stirring for 2 min at room temperature. The oil and surfactant mixture was degassed under vacuum overnight prior to use to reduce phototoxicity. Samples were made in chambers assembled from a glass slide and a coverslip which was passivated with trichloromethyl silane (Sigma), and sealed with vaseline:lanolin:paraffin (at 1:1:1). Samples were either imaged immediately (for time-lapse videos) or incubated for 30 min at the indicated temperature and then imaged for population analysis. The surface tension between the aqueous and the oil phase was measured using the pendant-drop assay. An extract containing droplet was injected into an oil cuvette, and the droplet was imaged from the side to determine its shape. The surface tension was determined by analyzing the shape of the droplet using standard procedures.\n\n### Microscopy and analysis\n\nEmulsions were imaged on a 3I spinning disk confocal microscope running Slidebook software, or a laser scanning confocal microscope (Zeiss LSM 700) running ZEN 2009 software, using a 63 \u00d7 oil objective (NA = 1.4). Images were acquired using 488 nm and 561 nm laser illumination and appropriate emission filters in a temperature controlled incubator. Images on the spinning disk confocal were collected with an EM-CCD (QuantEM; Photometrics, Tucson, AZ). Images of emulsions were typically taken at a single plane at \u223c1/3 of the emulsion height, since imaging at the mid-plane or higher suffered from optical artifacts due to the differences in the indices of refraction between the water and oil phase. Bright field images were taken at the mid-plane. Quantitative image analysis was done using the Celltool package developed by Zach Pincus (Pincus and Theriot, 2007) and custom code written in Matlab. Analysis was done on emulsions with a diameter of 30\u201380 \u00b5m. Actin contractility in bulk was imaged using either a 20 \u00d7 air objective (NA = 0.6) or a 40 \u00d7 oil objective (NA = 1.3).\n\nFRAP experiments were done on a laser scanning confocal microscope (Zeiss LSM 700) using a 10 mW 555 nm laser. Bleaching was done on a \u223c1.5 \u00d7 1.5 \u00b5m region of a cortex either at the bottom of an emulsion or at its side. FRAP analysis was done using the ZEN software by fitting the recovery to a single exponent. An unbleached cortical region was used as a reference region in the analysis.\n",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "cff4b349-9d7b-49b2-8064-f63ffdee644b",
+      "submission_id": "422b9244-566a-430f-a9c5-6b6ed1d723c9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mohan Balasubramanian, University of Warwick , Singapore\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01433.021](https://doi.org/10.7554/eLife.01433.021)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for choosing to send your work entitled \u201cSymmetry breaking in reconstituted actin cortices\u201d for consideration at eLife. Your full submission has been evaluated by a Senior editor and 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the decision was reached after discussions between the reviewers. We regret to inform you that your work will not be considered further for publication.\n\nThe specific comments/concerns of the 3 expert referees are enclosed. As you will see, all three of them believe the system you have established is very interesting and can be a powerful tool with which to study symmetry breaking. However, they all concur that there are significant technical concerns and the work is not advanced enough to provide a mechanism for symmetry breaking with sufficient depth for publication at this stage in eLife.\n\nReviewer 1:\n\nThe manuscript by Shah and Keren addresses the important topic of symmetry breaking, a key to wide range of biological processes. They establish a water-in-oil emulsion made with a fluorescent version of the Listeria ActA, Xenopus egg extract and fluorescent actin and first show that actin polymerization and an actin cortex develops around at the periphery of the interface between the oil-aqueous media. Interestingly, they find that at lower temperatures (approx. 20\u00b0C) the actin network breaks symmetry and generates a cap, which does not happen at higher temperatures. Incubation with myosin II antibodies blocks symmetry breaking and crosslinking is required. Although the establishment of this new reconstituted cortex is interesting and the result with myosin II potentially the novel finding the work is not developed enough to warrant publication in eLife. In particular, several conclusions are made too loosely. Also, while the water-in-oil approach is new, it does not go well over and above the system characterized by Theriot and van Oudenaarden groups on symmetry breaking in ActA-coated beads as far as an in vitro non-cell system is concerned.\n\nSome examples of issues with the work:\n\n1) It will be nice to have a proper characterization of what else is in the reconstituted actin cortex at 20\u00b0C and 30\u00b0C. Such an analysis will provide an explanation for why addition of crosslinkers promotes symmetry breaking at higher temperatures. I am not sure how technically feasible this would be to preserve these structures for further manipulation. But such information is essential before strong conclusions, as in the manuscript, can be made.\n\n2) Likewise, it will be important to know if the actin cytoskeleton is composed of branched actin or actin cables. I recognize Arp2/3 generates branched actin, but through cofilin function they can be modified into linear cables. Is there a way to process the artificial cortices for EM to get at this question?\n\n3) If these are indeed branched actin, some discussion is required on the mechanism of myosin II based symmetry breaking of branched actin networks.\n\n4) The myosin II immunodepletion experiment is also cursory. No western blots are shown to know how much of myosin II is depleted. Also, it is possible that other factors in the myosin II immune complex may be responsible for the effect. Perhaps a simple experiment with blebbistatin can help. I am not sure if blebbistatin works on Xenopus myosin II. If not, they can first supplement the extract with human myosin II (after depletion of Xenopus myosin II) followed by blebbistatin addition. Such an experiment of humanized-Xenopus extract can answer all concerns mentioned in this point.\n\nReviewer 2:\n\nThis manuscript by Shah and Keren presents a new in vitro reconstituted system to study the actomyosin cortex. In this work, the authors demonstrate that the presence of Xenopus cytoplasmic extract and the actin promoting factor ActA from Listeria in water-in-oil droplets lead to the assembly of an artificial, dynamic actin cortex. Importantly, these artificial cortices undergo spontaneous symmetry breaking, which shows that this reconstituted system could be used to further study and understand the mechanisms underlying symmetry breaking. This paper is generally well structured and well written and provides a nice account of this potentially very useful minimal system for studying the actomyosin cortex.\n\nThe investigators provide some limited insight into the symmetry breaking mechanism, with data suggesting that myosin-II and actin crosslinking are important for this process. However, this report serves mainly to describe the novel and interesting reconstituted system.\n\nMajor points:\n\n1) A key conclusion of the paper is that myosin contractility can drive symmetry breaking in an actin cortex reconstituted in a droplet. This is a very interesting finding. However, the conclusion relies on a single experiment: the immunodepletion of myosin II-A heavy chain in the extracts. It is unclear how much myosin is really depleted using this method, other myosins are likely to be present in the extract, and there is no experimental evidence that myosin really localizes to the cortex in this system. To truly conclude on the importance of contractility, it seems essential to use some alternative method to test the functional importance of myosin activity. Is it possible to use drugs (such as blebbistatin) in this system? Alternatively, could the localization and dynamics of myosin be imaged during symmetry breaking?\n\n2) The authors allude several times to a dynamic cortex, stating that actin polymerization and depolymerization are important for symmetry breaking. However, this is not investigated directly. FRAP experiments to quantitatively measure actin dynamics would help to better describe the behavior of this system and to support the authors' conclusions on the importance of actin dynamics.\n\n3) It is puzzling that droplet deformation is observed in only 10% of the polarized droplets. The authors speculate that this might be due to the relatively high tension of the droplet interface, which they estimate at 700 pN/\u03bcm. Could they give details on how this tension was measured? This tension is indeed rather high, but not that much higher than tension measured by the same group in migrating keratocytes (Lieber et al. 2013). Was any deformation observed in the droplets at higher temperature, where polarization was induced by addition of crosslinkers? One would expect that interfacial tension would be lower at a higher temperature.\n\nReviewer 3:\n\nIn this manuscript the authors demonstrate symmetry breaking and polarization in a reconstituted actin cortex. They establish a system where actin polymerization and cortex formation is induced by recruitment of an amphiphilic nucleator (ActA) to the interface of a water-in-oil emulsion \u2013 with the water phase represented by M-phase extracts from Xenopus eggs. Interestingly, they then observe spontaneous symmetry breaking and formation of a polar actin cap when emulsions were incubated a lower temperature (20 instead of 30\u00b0C). By depletion and addition of proteins to the egg extracts the authors demonstrate that myosin and the right amount of actin crosslinkers are required for cortex polarization.\n\nThe introduced biomimetic system using water-in-oil emulsions is very elegant and promising. Cortex formation and symmetry breaking appear to be remarkably similar to previously shown behaviors in cells or whole embryos. The experiments in this study also nicely show the advantages and tools available in the established system.\n\nMy main issue with this manuscript is that it does not go any further than the demonstration of an interesting technique. No conceptual or biological advances are presented and it is also not clear to me from the Discussion what the authors hope to achieve with their system in the future (except create artificial cells, which is very long term goal). Therefore, despite the very well written text and the elegance of the new system, I am not convinced that this manuscript has the required scope for eLife.\n\nSpecific comments:\n\n1) The involvement of myosin and crosslinkers follows concepts that are becoming increasingly established (see for example also \u201cCrosslinking proteins modulate the self-organization of driven systems\u201d, 2013, Schaller, et al. Soft Matter or \u201cMechanical properties of reconstituted actin networks at an oil-water interface determined by microrheology\u201d, 2012 Ershov et al. Soft Matter).\n\n2) Water-oil emulsions have been previously used as biomimetic system for the study of cell-cell adhesion (Biomimetic emulsions reveal the effect of mechanical forces on cell-cell adhesion, 2012, Pontani et al. PNAS). This study should be cited as precedent for the technique and could be included in the Discussion regarding potential extension for artificial cells.\n\n3) The system should allow comparably simple analysis of cap formation. The authors should therefore provide more information about the exact time course of cortex polarization: parameters include persistence of clusters, rate of movement (not only the initial flow speeds). In particular show formation of initial clusters with better temporal resolution.\n\n4) Use FRAP to characterize lateral mobility and turnover of the cortex (actin and ActA).\n\n5) Labeling and movies of myosin would provide a much better understanding of the observed behaviors\n\n6) In Video 2 it appears like cytosolic patches are moving in coordination with the cortical cap. It is possible that the actin network also extends into the extract and actually represents a 3D meshwork. This would be closer to the previous studies on simple reconstituted actin networks. Can EM images be obtained from fixed slices to test this?\n\n7) What is the nature of internal actin/ActA structures in deformed drops? Does actin cover small lipid droplets? Can a lipid dye be used as counter stain?\n\n8) Easy additional control experiments would be inhibition of Myosin by blebbistatin (to show that myosin activity is needed) and depletion of specific crosslinkers from extracts. Why was only one concentration used for filamin? Show dose-response curves to better compare (maybe crosslinkers are not all equal). Can the published effect of pH on cortex organization (Bausch lab) be reproduced in the new system?\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nYou will be happy to see that the referees have indeed reviewed not only your rebuttal letter, but also the entire manuscript, and are now positive about the manuscript and have made further suggestions. The two major questions revolve around quantification of the FRAP experiments and some rewriting to explore potential uses and limitations of the system you have developed.\n\nThe relevant points of the reviewers are enclosed verbatim for your consideration:\n\nReviewer 1:\n\nIn this revised version of their manuscript the authors have addressed most of my previous concerns. In particular the add-back of myosin and the FRAP analysis provide important support for their conclusions. However, my main concern about a lack of conceptual advance in this study was not addressed by the authors at all \u2013 neither by experiments nor in writing \u2013 and therefore still remains valid.\n\nAlso, they argue that a better quantification and resolution of the cap formation process (which was my main suggestion to possibly achieve a conceptual understanding of the symmetry breaking process) is hindered by phototoxicity. This then seems to be a significant limitation of the new system.\n\nIn summary, I would in principle support publication provided that the authors include a paragraph in their Discussion that clearly states limitations of the system (difficult fixation, phototoxicity, problems with lipophilic drugs). In addition, possible approaches to gain new fundamental insights into the symmetry breaking mechanism using the emulsion system should be identified and discussed.\n\nReviewer 2:\n\nThe authors did a good job at addressing the reviewers' comments and the paper now presents a thorough description of this very interesting experimental system. In particular, the myosin addition experiment indeed demonstrates that myosin drives symmetry breaking in this system. Are the patches formed upon addition of large amounts of myosin (Figure 3B, right panel) dynamic, like in the C. elegans cortex, or static?\n\nI have some concerns about the photobleaching experiments, which are important for the message of the paper: in the absence of quantification, it is unclear how representative they are. Some quantification (e.g., average recovery time) and an example of recovery curve for the cap and the uniform cortex, should be provided.\n\nAlso, did photobleaching never induce symmetry breaking? Photobleaching of actin networks in vitro has been reported previously to induce symmetry breaking (possibly by photo-induced network disruption, e.g., van der Gucht et al. 2006).\n",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4a92fa6b-8405-4865-9cbf-39abd6f4491e",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C1",
+      "claim": "The actin cortex plays a pivotal role in cell division, in generating and maintaining cell polarity and in motility.",
+      "claim_type": "EXPLICIT",
+      "source": "The actin cortex plays a pivotal role in cell division, in generating and maintaining cell polarity and in motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the role of the actin cortex in cellular processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "192224fd-a6ae-4733-b169-60e8ba5fac18",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C2",
+      "claim": "The mechanisms responsible for regulating cortical dynamics in vivo and inducing symmetry breaking are still unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite extensive research, the mechanisms responsible for regulating cortical dynamics in vivo and inducing symmetry breaking are still unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement acknowledges a gap in current scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "1954dd3d-6ba2-4b84-80ae-c9a0cc9f4d65",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C3",
+      "claim": "A reconstituted system can self-organize into dynamic actin cortices at the inner interface of water-in-oil emulsions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we introduce a reconstituted system that self-organizes into dynamic actin cortices at the inner interface of water-in-oil emulsions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "da425a43-dede-45cc-99d1-a89408f10da8",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C4",
+      "claim": "The artificial system undergoes spontaneous symmetry breaking, driven by myosin-induced cortical actin flows.",
+      "claim_type": "EXPLICIT",
+      "source": "This artificial system undergoes spontaneous symmetry breaking, driven by myosin-induced cortical actin flows, which appears remarkably similar to the initial polarization of the embryo in many species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data showing myosin-dependent symmetry breaking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "7135237c-e7ce-40ad-8912-764ad29b99de",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C5",
+      "claim": "The symmetry breaking in the artificial system appears remarkably similar to the initial polarization of the embryo in many species.",
+      "claim_type": "EXPLICIT",
+      "source": "This artificial system undergoes spontaneous symmetry breaking, driven by myosin-induced cortical actin flows, which appears remarkably similar to the initial polarization of the embryo in many species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative observation based on the authors' interpretation of their data in relation to known biological phenomena.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "92283ea0-ac71-445c-8b47-6deb536b92af",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C6",
+      "claim": "The actin cytoskeleton plays a central role in many cellular processes including polarization, cell shape determination, intracellular transport, cell division and movement.",
+      "claim_type": "EXPLICIT",
+      "source": "The actin cytoskeleton plays a central role in many cellular processes including polarization, cell shape determination, intracellular transport, cell division and movement (Pollard and Cooper, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "f1441b60-787b-4468-8ab1-1610f640cb9a",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C7",
+      "claim": "The structure and function of the cytoskeleton arise from the self-organized dynamics of numerous molecular building blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure and function of the cytoskeleton arise from the self-organized dynamics of numerous molecular building blocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific understanding about cytoskeletal organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "ee1fd75d-7fcc-4694-ad1c-54b1b31111ca",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C8",
+      "claim": "Arp2/3 nucleates branched networks and localizes to cortical actin networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the nucleation-promoting factors, Arp2/3 which nucleates branched networks localizes to cortical actin networks (Machesky et al., 1994) and is essential for cortex formation (Bovellan, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "635f2b41-88e6-48d9-8d76-0df66c39934f",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C9",
+      "claim": "Arp2/3 is essential for cortex formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the nucleation-promoting factors, Arp2/3 which nucleates branched networks localizes to cortical actin networks (Machesky et al., 1994) and is essential for cortex formation (Bovellan, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "82246961-596b-4288-9630-02b94efee27d",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C10",
+      "claim": "Amphiphilic ActA spontaneously localized to the water-oil interface following droplet formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The amphiphilic ActA spontaneously localized to the water\u2013oil interface following droplet formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation reported in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "39deaeb7-b262-44a2-b2f0-db83c6adc2cd",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C11",
+      "claim": "ActA induced the assembly of a cortical actin network at the inner surface of the aqueous droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon localization, ActA induced the assembly of a cortical actin network at the inner surface of the aqueous droplets (Figure 1A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation supported by microscopy images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "f5a20067-98d8-42be-bbab-6270e4946acb",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C12",
+      "claim": "Cortex assembly initiated in patches scattered throughout the interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortex assembly initiated in patches scattered throughout the interface, consistent with the autocatalytic nature of Arp2/3 mediated actin filament nucleation (Mullins and Hansen, 2013; Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation supported by microscopy images and consistent with known mechanisms.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "f3d9d992-b6ac-4d98-b733-ad5ed48b695f",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C13",
+      "claim": "The system reached a steady state after approximately 10 minutes, with the formation of thin (approximately 1.5 \u00b5m) homogenous actin cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "The system reached a steady state after \u223c10 min, with the formation of thin (\u223c1.5 \u00b5m; Figure 1\u2014figure supplement 1), homogenous actin cortices.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative experimental observation supported by microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "928eac38-e52b-458a-acf1-30690629d563",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C14",
+      "claim": "The assembled cortices are dynamic, as illustrated by rapid cortical recovery following photobleaching.",
+      "claim_type": "EXPLICIT",
+      "source": "The assembled cortices are dynamic, as illustrated by the rapid cortical recovery following photobleaching (Figure 1E, Figure 1\u2014figure supplement 2; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation supported by FRAP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "9f2a831b-2e29-4fe1-9ad3-67d81be392f3",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C15",
+      "claim": "The cortical steady state reflects a balance between actin assembly and disassembly at the interface, as in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the cortical steady state reflects a balance between actin assembly and disassembly at the interface, as in cells (Fritzsche et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data, supported by comparison to cellular behavior cited in the literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "c341f2c3-c414-4f5c-b1a4-f0c55a142238",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C16",
+      "claim": "Control experiments with soluble ActA, or in the absence of ActA, resulted in an essentially uniform actin distribution throughout the emulsion droplets, with no apparent cortical localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments with soluble ActA, or in the absence of ActA, resulted in an essentially uniform actin distribution throughout the emulsion droplets, with no apparent cortical localization (Figure 1B,C), indicating that cortex formation depends on the localization of a nucleation-promoting factor at the interface.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from control experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "d8e3da61-0ebe-4d8e-a0ae-b9d7c0972c3d",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C17",
+      "claim": "Cortex formation depends on the localization of a nucleation-promoting factor at the interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments with soluble ActA, or in the absence of ActA, resulted in an essentially uniform actin distribution throughout the emulsion droplets, with no apparent cortical localization (Figure 1B,C), indicating that cortex formation depends on the localization of a nucleation-promoting factor at the interface.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the control experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "1e6184ec-11b5-48d7-9dbb-6bbff3d7c705",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C18",
+      "claim": "The actin network assembled within emulsion droplets incubated at 20\u00b0C broke symmetry and formed polar actin caps.",
+      "claim_type": "EXPLICIT",
+      "source": "The actin network assembled within emulsion droplets incubated at 20\u00b0C broke symmetry and formed polar actin caps (Figure 2A), in contrast to the homogenous spherical cortices formed at higher temperature (30\u00b0C; Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental observation showing temperature-dependent behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "398e48eb-3cfe-4a02-bf45-97a51373ef12",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C19",
+      "claim": "Homogenous spherical cortices formed at 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The actin network assembled within emulsion droplets incubated at 20\u00b0C broke symmetry and formed polar actin caps (Figure 2A), in contrast to the homogenous spherical cortices formed at higher temperature (30\u00b0C; Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation showing temperature-dependent behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "836c30e5-1df9-474f-ad5f-2dfb578ec2a1",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C20",
+      "claim": "The cap formation process developed over approximately 10-20 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "The cap formation process developed over \u223c10\u201320 min, with cortical flows initiating at \u223c1\u20134 \u00b5m/min (Figure 2E), and slowing down over time, as the cap contracted (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative experimental observation from time-lapse microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "e7924840-5cfa-4972-8ee1-60c76f05296c",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C21",
+      "claim": "Cortical flows initiated at approximately 1-4 \u00b5m/min.",
+      "claim_type": "EXPLICIT",
+      "source": "The cap formation process developed over \u223c10\u201320 min, with cortical flows initiating at \u223c1\u20134 \u00b5m/min (Figure 2E), and slowing down over time, as the cap contracted (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "014b9458-58ca-48da-b25f-fbf86fad3202",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C22",
+      "claim": "The position of the actin caps remained stable over much longer time scales, typically exhibiting persistent polarization for hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this rapid turnover at the molecular level, the position of the actin caps remained stable over much longer time scales, typically exhibiting persistent polarization for hours (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from long-term time-lapse microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "1155aa32-0e70-4a2c-b621-db604acd2a2c",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C23",
+      "claim": "The magnitude of the cortical actin flows and the characteristic length and time scales for polarization observed in the artificial cortices are similar to those seen in developing embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the magnitude of the cortical actin flows and the characteristic length and time scales for polarization observed in our artificial cortices are similar to those seen in developing embryos (Munro et al., 2004; Cowan and Hyman, 2007; Munro and Bowerman, 2009; Mayer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement supported by citations to literature on embryonic development.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "44af2aed-b75c-418a-8e7c-60795b73c6ac",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C24",
+      "claim": "At high temperatures, the fixed bacteria remained distributed throughout the sample, exhibiting comet tail motility, and no overall contraction was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "At high temperatures, the fixed bacteria remained distributed throughout the sample, exhibiting comet tail motility, and no overall contraction was observed (Figure 2F, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from the bulk contractility assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "f10a7cf0-b17f-4bf4-811c-641f0823de58",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C25",
+      "claim": "At lower temperatures, rapid contraction of the entire sample was observed, which concentrated actin filaments in the extract and bacterial comet tails into a narrow strip of actin gel.",
+      "claim_type": "EXPLICIT",
+      "source": "At lower temperatures, we observed rapid contraction of the entire sample, which concentrated actin filaments in the extract and bacterial comet tails into a narrow strip of actin gel (Figure 2F, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from the bulk contractility assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "ca4e0537-5c92-4ace-bd02-a5551ec8268b",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C26",
+      "claim": "The transition between non-contractile and contractile behavior occurred abruptly at approximately 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition between non-contractile and contractile behavior occurred abruptly at \u223c25\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the bulk contractility assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "29cab00f-055f-424c-b71b-b2d77ece102e",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C27",
+      "claim": "Cortical polarity developed as a function of time following the temperature shift from 30\u00b0C to 20\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical polarity developed as a function of time following the temperature shift (Figure 2G, Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from temperature shift experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "55ce1f00-2439-486f-a02d-5ffc6cfd7fd4",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C28",
+      "claim": "Within minutes after temperature shift, the homogenous cortical network began to rupture, often in more than one place.",
+      "claim_type": "EXPLICIT",
+      "source": "Within minutes, the homogenous cortical network began to rupture, often in more than one place (Figure 2\u2014figure supplement 4A; 22\u2032), leading to the formation of gaps in the actin cortex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from time-lapse microscopy following temperature shift.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "32f4f8f3-63a5-4e3e-9ff4-dac922965bda",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C29",
+      "claim": "After approximately 30 minutes following temperature shift, a polar distribution of actin was observed in all emulsions.",
+      "claim_type": "EXPLICIT",
+      "source": "After \u223c30 min, a polar distribution of actin was observed in all emulsions, characterized in most cases by a single polar cap, similar to the distributions measured in emulsions prepared at 20\u00b0C (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative experimental observation from temperature shift experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "1d70f603-b38a-41ea-b08e-3f806b3dad8a",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C30",
+      "claim": "The ActA density at the water-oil interface increased as a function of the initial bulk ActA concentration used.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the ActA density at the water\u2013oil interface increased as a function of the initial bulk ActA concentration used (Figure 2\u2014figure supplement 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from varying ActA concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "2227edcb-d761-47f7-97e0-99bc70bf94ac",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C31",
+      "claim": "The ActA densities at the interface were higher at 20\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The ActA densities at the interface were also higher at 20\u00b0C, which can be understood from simple thermodynamic considerations; the dynamic localization of ActA at the interface (Figure 2\u2014figure supplement 6) depends on the interplay between enthalpy and entropy which favors localization at lower temperatures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation explained by thermodynamic principles.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "bc6e964c-c8a5-4b89-9766-9058cf44f1d3",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C32",
+      "claim": "Within the range of ActA concentrations examined, the intensity of the actin cortices and their symmetry breaking properties were essentially unaffected by the ActA concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, within the range of ActA concentrations examined, the intensity of the actin cortices and their symmetry breaking properties were essentially unaffected by the ActA concentration (Figure 2\u2014figure supplement 5B,C), suggesting that ActA is in excess.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from varying ActA concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "f8c3804d-9501-4ca2-8fbb-b40e075d5ba9",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C33",
+      "claim": "ActA is in excess in the system.",
+      "claim_type": "EXPLICIT",
+      "source": "However, within the range of ActA concentrations examined, the intensity of the actin cortices and their symmetry breaking properties were essentially unaffected by the ActA concentration (Figure 2\u2014figure supplement 5B,C), suggesting that ActA is in excess.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion inferred from the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "4a25c9af-7a31-4e2d-87fe-29702ae5f37b",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C34",
+      "claim": "The temperature-dependent symmetry breaking observed reflects the changing properties of the cortical actin networks, rather than differences in ActA localization.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the temperature-dependent symmetry breaking observed reflects the changing properties of the cortical actin networks, rather than differences in ActA localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the ActA concentration experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "88f7daa3-cac2-4ebe-ba24-04223c34a23d",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C35",
+      "claim": "Emulsions made from myosin-depleted extracts did not exhibit cortical actin flows and maintained a symmetric actin shell when incubated at 20\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Emulsions made from myosin-depleted extracts did not exhibit cortical actin flows and maintained a symmetric actin shell when incubated at 20\u00b0C (Figure 3A,C), in contrast to the behavior observed at the same temperature in the presence of myosin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from myosin depletion experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "4e9fd6b9-20e7-426c-8783-928a9b4aa207",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C36",
+      "claim": "Symmetry breaking was not affected in control experiments with mock immunodepletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Symmetry breaking was not affected in control experiments with mock immunodepletion (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from control experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "a12d866e-06df-49df-b8de-461b8466343c",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C37",
+      "claim": "Adding purified myosin to myosin-depleted extracts restored symmetry breaking.",
+      "claim_type": "EXPLICIT",
+      "source": "To further establish the essential role of myosin in the symmetry breaking process, we added different amounts of purified myosin to myosin\u2013depleted extracts and showed that the symmetry breaking is restored (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from myosin add-back experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "f7368777-2ea6-4131-b984-78da0bfb1bbf",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C38",
+      "claim": "The cap morphology was dependent on the amount of added myosin.",
+      "claim_type": "EXPLICIT",
+      "source": "The cap morphology was dependent on the amount of added myosin; as the concentration of myosin increased, we observed more cortices with multiple caps, rather than a single cap (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from varying myosin concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "b82f0ecd-42b8-4293-99d8-c6f0ed99b904",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C39",
+      "claim": "At higher myosin concentrations (0.66 \u00b5M) most of the cortices appear fractured in many places with multiple small interconnected cortical patches which exhibited jittery motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, at even higher myosin concentrations (0.66 \u00b5M) most of the cortices appear fractured in many places with multiple small interconnected cortical patches which exhibited jittery motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from high myosin concentration experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "8ebd0c8f-084e-4827-81c9-f08a4caec023",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C40",
+      "claim": "The decrease in the typical size of cortical patches with increasing amounts of myosin is probably due to the decrease in the contractile unit size as a function of myosin concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in the typical size of cortical patches with increasing amounts of myosin is probably due to the decrease in the contractile unit size as a function of myosin concentration (Thoresen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "cbc99c56-eaf8-44c2-b0e3-d5f4c706cbd7",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C41",
+      "claim": "The symmetry breaking observed in the artificial cortices is driven by the same myosin-induced mechanism found in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall our results suggest that the symmetry breaking observed in our artificial cortices is driven by the same myosin-induced mechanism found in cells (Munro et al., 2004; Mayer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the myosin experiments, supported by citations to cellular studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "aec97828-8b61-4db0-8d66-e472d276a6e2",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C42",
+      "claim": "Symmetry breaking can be induced at 30\u00b0C by adding crosslinkers.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that symmetry breaking can be induced at 30\u00b0C by adding crosslinkers (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from crosslinker addition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "a1953380-1634-4467-93eb-ba03171ccf22",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C43",
+      "claim": "Increasing \u03b1-actinin concentration led to the formation of polar cortices in a concentration dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing \u03b1-actinin concentration led to the formation of polar cortices in a concentration dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from varying \u03b1-actinin concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "5bb966ec-5975-486f-8d7a-87a702c65a96",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C44",
+      "claim": "At low \u03b1-actinin concentrations (<4 \u00b5M) the cortices remained largely symmetric.",
+      "claim_type": "EXPLICIT",
+      "source": "At low concentrations (<4 \u00b5M) the cortices remained largely symmetric, at intermediate concentrations (4\u20136 \u00b5M) we mostly observed the formation of a single actin cap, while at higher concentrations (8 \u00b5M) we often observed multiple actin domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative experimental observation from varying \u03b1-actinin concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "a415a325-5d03-418f-9da0-d8f051065ac7",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C45",
+      "claim": "At intermediate \u03b1-actinin concentrations (4-6 \u00b5M) mostly the formation of a single actin cap was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "At low concentrations (<4 \u00b5M) the cortices remained largely symmetric, at intermediate concentrations (4\u20136 \u00b5M) we mostly observed the formation of a single actin cap, while at higher concentrations (8 \u00b5M) we often observed multiple actin domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative experimental observation from varying \u03b1-actinin concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "ed5e5881-10b0-4bca-91ed-226176d47ba9",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C46",
+      "claim": "At higher \u03b1-actinin concentrations (8 \u00b5M) multiple actin domains were often observed.",
+      "claim_type": "EXPLICIT",
+      "source": "At low concentrations (<4 \u00b5M) the cortices remained largely symmetric, at intermediate concentrations (4\u20136 \u00b5M) we mostly observed the formation of a single actin cap, while at higher concentrations (8 \u00b5M) we often observed multiple actin domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative experimental observation from varying \u03b1-actinin concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "2de9a817-e9e5-4aad-908a-3ccd27f4afcc",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C47",
+      "claim": "Addition of filamin (4 \u00b5M) led to the formation of a polar actin cap.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of filamin (4 \u00b5M) also led to the formation of a polar actin cap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from filamin addition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "61536bf4-f46a-4769-a48e-b13b52eb3336",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C48",
+      "claim": "Both \u03b1-actinin and filamin were successful at inducing symmetry breaking, highlighting the importance of the overall connectivity of the network rather than the detailed characteristics of individual crosslinkers.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the different properties of these crosslinkers, they were both successful at inducing symmetry breaking, highlighting the importance of the overall connectivity of the network rather than the detailed characteristics of individual crosslinkers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the crosslinker experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "0c981bff-a57c-43af-8c48-95051265f260",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C49",
+      "claim": "The cortex, which is under contractile stress, could spontaneously detach from the interface locally.",
+      "claim_type": "EXPLICIT",
+      "source": "The cortex, which is under contractile stress, could spontaneously detach from the interface locally (Figure 4A; Video 4), as observed in vivo during cellular blebbing (Charras et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation showing cell-like behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "7300b9e4-3510-4016-9cad-1789979fdd28",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C50",
+      "claim": "Detachment of the cortex did not lead to outward bulging of the interface due to the high surface tension of the water-oil interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Detachment of the cortex did not lead to outward bulging of the interface due to the high surface tension of the water\u2013oil interface in our system (\u223c700 pN/\u00b5m, 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation explained by the measured surface tension.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "5d926d6a-a958-44f9-a784-87a01c1df5a8",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C51",
+      "claim": "The actin cortex healed over time and a new cortex assembled at the interface within minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "As in cells (Charras et al., 2006), the actin cortex healed over time and a new cortex assembled at the interface within minutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation showing recovery after detachment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "9cf235b5-c0d3-4ed3-a670-6aa72ce791be",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C52",
+      "claim": "The asymmetric actin cortices generated polar forces which could induce reorganization in the interior of the droplet and global deformation of the droplet's shape.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the asymmetric actin cortices generated polar forces which could induce reorganization in the interior of the droplet and global deformation of the droplet's shape (Figure 4B,C; Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation showing force generation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "aa46772b-d37e-493b-962d-07c4b4cb2eff",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C53",
+      "claim": "Shape deformations were observed in approximately 10% of the emulsions.",
+      "claim_type": "EXPLICIT",
+      "source": "Such deformations were observed in \u223c10% of the emulsions, and their incidence increased after longer incubation times compared to the initial polarization event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "7760b382-ec60-4b12-8031-f4a41ca12fc3",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C54",
+      "claim": "The cytoskeleton exerts a net protrusive force of approximately 20 pN/\u00b5m\u00b2 at the tip of the actin cap.",
+      "claim_type": "EXPLICIT",
+      "source": "The high curvature at the tip of the actin cap indicates that the cytoskeleton exerts a net protrusive force there, which we estimate to be \u223c20 pN/\u00b5m2 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative estimate based on curvature measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "3838db8f-f3e0-4aca-915f-3735c8b8d6cd",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C55",
+      "claim": "Away from the tip, on the sides of the actin cap, the local curvature is lower implying that the cytoskeleton is exerting pulling forces on the interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Away from the tip, on the sides of the actin cap, the local curvature is lower implying that the cytoskeleton is exerting pulling forces on the interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on curvature measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "2564cffe-0ed8-4440-8557-184d11e0b527",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C56",
+      "claim": "The pulling forces are likely responsible for the accumulation of actin and ActA near the cap.",
+      "claim_type": "EXPLICIT",
+      "source": "These pulling forces are likely responsible for the accumulation of actin and ActA near the cap (Figure 4B, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on the observed accumulation and force measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "7963d4f6-40da-410a-95c8-07021847625c",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C57",
+      "claim": "The average half time for cortical recovery at 30\u00b0C was 81 \u00b1 18 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "The average half time at 30\u00b0C was \u03c4\u00bd = 81 \u00b1 18 s (mean \u00b1 STD; N = 18).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from FRAP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "21c759cd-f214-45d9-b745-b69a5e31878a",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C58",
+      "claim": "The average half time for cortical recovery at 20\u00b0C was 73 \u00b1 24 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "The average half time at 20\u00b0C was \u03c4\u00bd = 73 \u00b1 24 s (mean \u00b1 STD; N = 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from FRAP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "824bc038-3c52-4f38-9fe7-6f01747dc221",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C59",
+      "claim": "The average half times at 30\u00b0C and at 20\u00b0C were not significantly different.",
+      "claim_type": "EXPLICIT",
+      "source": "The average half times at 30\u00b0C and at 20\u00b0C were not significantly different (p>0.1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison of FRAP data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "7faedaf1-7ff4-47e6-9123-12d7cd47d571",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C60",
+      "claim": "The cortices typically exhibited only partial recovery after bleaching, usually returning to approximately 50% of their initial intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "The cortices typically exhibited only partial recovery after bleaching, usually returning to \u223c50% of their initial intensity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from FRAP experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "9afbe34c-632d-4b25-b20f-d367c61910cf",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C61",
+      "claim": "The partial recovery appeared to be a result of photodamage during the bleaching step.",
+      "claim_type": "EXPLICIT",
+      "source": "This partial recovery appeared to be a result of photodamage during the bleaching step.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the FRAP results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "86341ee8-151c-498a-8f8b-66605271a550",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C62",
+      "claim": "The surface tension of the water-oil interface is approximately 700 pN/\u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Detachment of the cortex did not lead to outward bulging of the interface due to the high surface tension of the water\u2013oil interface in our system (\u223c700 pN/\u00b5m, 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured value from pendant-drop assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "17b7420f-b82a-4b9d-ad00-6e72e41951d6",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C63",
+      "claim": "The transition to contractile behavior at lower temperature is primarily due to an increase in the intrinsic crosslinking activity in the system.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the transition to contractile behavior at lower temperature is primarily due to an increase in the intrinsic crosslinking activity in the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors to explain their observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "dff330d3-5a67-4eae-8300-e50af2d43750",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C64",
+      "claim": "The increase in crosslinking could emerge from longer dwell times of individual myosin motor heads at low temperature, which would turn the multi-motor myosin filaments into more effective crosslinkers.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase could emerge from longer dwell times of individual myosin motor heads at low temperature, which would turn the multi-motor myosin filaments into more effective crosslinkers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism proposed to explain the temperature-dependent behavior.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "fd032b14-516b-437e-bf47-039399c62f22",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C65",
+      "claim": "Decreasing temperature could increase the affinity of endogenous actin crosslinkers.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, decreasing temperature could increase the affinity of endogenous actin crosslinkers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative speculative mechanism proposed to explain the temperature-dependent behavior.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "417125ee-8309-4dee-9a3a-f3fc066f3124",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C66",
+      "claim": "Actin cortices are close to an instability threshold; small changes in the composition of the system, or in the activity of its components, can lead to dramatic changes in the global characteristics of the system.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall these findings indicate that actin cortices are close to an instability threshold; small changes in the composition of the system, or in the activity of its components, can lead to dramatic changes in the global characteristics of the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "a143fb4e-36fe-4ca1-aadc-ba408e32f1a4",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C67",
+      "claim": "Cells are often posed near an instability threshold to enable rapid responses to changing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that this reflects a general organizational principle in cellular systems, whereby cells are often posed near an instability threshold to enable rapid responses to changing conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation about cellular organization principles.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "3269f508-81ea-416e-9886-8cf0d8217357",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C68",
+      "claim": "The reconstituted system provides novel insights into the complex behavior of the actin cortex in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our reconstituted system provides novel insights into the complex behavior of the actin cortex in living cells, presenting new opportunities for investigating cortical dynamics, both experimentally and theoretically (Joanny et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the significance of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "3c38e73b-275b-4858-aa59-e03fca7e9708",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C69",
+      "claim": "The assembly of dynamic actin cortices requires localization of nucleation factors at the interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this novel reconstituted system we show that the assembly of dynamic actin cortices requires localization of nucleation factors at the interface, and identify the conditions for cortical symmetry breaking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the control experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "76a051f0-957d-4950-89a1-d5987ccdd4cd",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C70",
+      "claim": "Symmetry breaking requires myosin motors and sufficient network connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we show that symmetry breaking requires myosin motors and sufficient network connectivity, but does not depend upon pre-patterned localization of actin nucleators, the involvement of microtubules (Munro et al., 2004), or any local changes in the properties of the interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the myosin depletion and crosslinker experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "261dff2a-85c0-4723-83c4-959046ec673f",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C71",
+      "claim": "Symmetry breaking does not depend upon pre-patterned localization of actin nucleators.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we show that symmetry breaking requires myosin motors and sufficient network connectivity, but does not depend upon pre-patterned localization of actin nucleators, the involvement of microtubules (Munro et al., 2004), or any local changes in the properties of the interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations showing uniform ActA distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "b3f831d6-54b7-439e-b841-9990be7c8632",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C72",
+      "claim": "Symmetry breaking does not depend on the involvement of microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we show that symmetry breaking requires myosin motors and sufficient network connectivity, but does not depend upon pre-patterned localization of actin nucleators, the involvement of microtubules (Munro et al., 2004), or any local changes in the properties of the interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental system which lacks microtubules.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "70ba4b3b-8138-4980-b487-e69d270d6aeb",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C73",
+      "claim": "Symmetry breaking does not depend on any local changes in the properties of the interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we show that symmetry breaking requires myosin motors and sufficient network connectivity, but does not depend upon pre-patterned localization of actin nucleators, the involvement of microtubules (Munro et al., 2004), or any local changes in the properties of the interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental system with a uniform interface.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "b1b8446a-904a-448a-afd9-b2fd16e0b43e",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C74",
+      "claim": "At 30\u00b0C the cortical network appears weakly crosslinked, and hence unable to transmit the contractile stresses generated by myosin motor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "At 30\u00b0C the cortical network appears weakly crosslinked, and hence unable to transmit the contractile stresses generated by myosin motor activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental observations at different temperatures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "15475854-ffd1-464f-90b8-73688f2ae025",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C75",
+      "claim": "Myosin motors are involved in contractile behavior and symmetry breaking in the cortex of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Myosin motors are involved in contractile behavior and symmetry breaking in the cortex of cells (Munro et al., 2004; Cowan and Hyman, 2007; Munro and Bowerman, 2009; Van Der Gucht and Sykes, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "1d21341f-26c6-4ebe-be34-60f4af647eb9",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C76",
+      "claim": "Formins nucleate linear filaments and were found to localize to cortical actin networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Formins, which nucleate linear filaments, were also found to localize to cortical actin networks, yet their role is still not entirely clear (Bovellan, 2012; Fritzsche et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "a6d3404d-8440-4535-a489-4a8296ba216d",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C77",
+      "claim": "The role of formins in cortical actin networks is still not entirely clear.",
+      "claim_type": "EXPLICIT",
+      "source": "Formins, which nucleate linear filaments, were also found to localize to cortical actin networks, yet their role is still not entirely clear (Bovellan, 2012; Fritzsche et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement acknowledges uncertainty in current understanding, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "14b7c330-5b79-4d44-b629-79bdad8f5895",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C78",
+      "claim": "Myosin contraction which generates cortical actin flows has been shown to be essential for inducing polarization and defining the anterior-posterior axis during the early stages of embryogenesis in Caenorhabditis elegans and in other species.",
+      "claim_type": "EXPLICIT",
+      "source": "Comet tail formation is a myosin\u2013independent process driven by actin polymerization (Loisel et al., 1999), whereas cortical symmetry breaking appears to rely on myosin as the main force generating element; myosin contraction which generates cortical actin flows has been shown to be essential for inducing polarization and defining the anterior\u2013posterior axis during the early stages of embryogenesis in Caenorhabditis elegans and in other species (Munro et al., 2004; Mullins, 2010; Munro and Bowerman, 2009; Mayer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "053cc9aa-87cf-4ef2-8346-a1bff0f5fb03",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C79",
+      "claim": "Comet tail formation is a myosin-independent process driven by actin polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Comet tail formation is a myosin\u2013independent process driven by actin polymerization (Loisel et al., 1999), whereas cortical symmetry breaking appears to rely on myosin as the main force generating element",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "cbc6edc3-2608-4bee-b1b7-268c1c6dc12c",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C80",
+      "claim": "Cortical symmetry breaking appears to rely on myosin as the main force generating element.",
+      "claim_type": "EXPLICIT",
+      "source": "Comet tail formation is a myosin\u2013independent process driven by actin polymerization (Loisel et al., 1999), whereas cortical symmetry breaking appears to rely on myosin as the main force generating element",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of current understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "8f8b331c-fa1b-4bfa-aa7e-13fe842db63b",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C81",
+      "claim": "Small changes in the relative amounts of myosin and crosslinkers, or in their activity, can lead to a sharp transition in the overall contractile behavior of reconstituted actin networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent in vitro experiments revealed that small changes in the relative amounts of myosin and crosslinkers, or in their activity, can lead to a sharp transition in the overall contractile behavior of reconstituted actin networks (Bendix et al., 2008; Kohler et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "2e1a4172-4231-42b4-a1e4-131aa19a9502",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C82",
+      "claim": "To emulate cortical dynamics it is essential to incorporate actin turnover dynamics, couple the actin network to a soft interface, and reproduce a cell-like geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to emulate cortical dynamics it is essential to incorporate actin turnover dynamics, couple the actin network to a soft interface (Murrell and Gardel, 2012), and reproduce a cell-like geometry (Pontani et al., 2009; Pinot et al., 2012; Carvalho et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "553cdb07-14b0-4684-a372-ece7c1bcf1fb",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C83",
+      "claim": "Myosin is responsible for building tension in actin networks tethered to soft interfaces, and can induce cortical rupture and generate asymmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent reports (Carvalho et al., 2013a, 2013b) suggest that myosin is responsible for building tension in actin networks tethered to soft interfaces, and can induce cortical rupture and generate asymmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to recent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "b8a10e12-4e5b-4d14-8b41-a821974ddd57",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C84",
+      "claim": "\u03b1-actinin preferentially generates anti-parallel actin bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "We used two different kinds of actin crosslinkers which are known to localize to cortical actin networks in vivo (Charras et al., 2006), \u03b1-actinin which preferentially generates anti-parallel actin bundles and filamin which is a more flexible crosslinker that can bind to disordered actin networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of known protein properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "316fe69f-838a-4025-85bf-73dab1295d62",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C85",
+      "claim": "Filamin is a more flexible crosslinker that can bind to disordered actin networks.",
+      "claim_type": "EXPLICIT",
+      "source": "We used two different kinds of actin crosslinkers which are known to localize to cortical actin networks in vivo (Charras et al., 2006), \u03b1-actinin which preferentially generates anti-parallel actin bundles and filamin which is a more flexible crosslinker that can bind to disordered actin networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of known protein properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "46f6177d-255e-4031-9c7b-b4329ed7166d",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C86",
+      "claim": "\u03b1-actinin and filamin are known to localize to cortical actin networks in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We used two different kinds of actin crosslinkers which are known to localize to cortical actin networks in vivo (Charras et al., 2006), \u03b1-actinin which preferentially generates anti-parallel actin bundles and filamin which is a more flexible crosslinker that can bind to disordered actin networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "4e66fcc9-0e04-4178-a692-5accc187284e",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C87",
+      "claim": "Similar behavior was observed with different types of labeled actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar behavior was observed in all cases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from testing different actin labels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "2334c9d5-bba6-4652-be4a-c8d71082ac09",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "claim_id": "C88",
+      "claim": "The total actin concentration in the motility mix is estimated to be approximately 25 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate the total actin concentration in the motility mix to be \u223c25 \u00b5M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate based on the preparation protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "18c68a9f-7034-4e85-9446-fb8e302eee59",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully reconstituted dynamic actin cortices at the water-oil interface of emulsions by localizing amphiphilic ActA, which induced Arp2/3-mediated assembly of cortical actin networks. The cortices reached steady state after ~10 minutes with ~1.5 \u03bcm thickness, exhibited dynamic turnover as shown by FRAP experiments, and required localization of nucleation-promoting factors at the interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C10-C17, and C69 collectively demonstrate successful cortex reconstitution with appropriate controls (C16-C17). The experimental observations are supported by microscopy data (Figures 1A-F), quantitative measurements of cortex thickness and recovery kinetics (C13-C14, Figure 1\u2014figure supplement 1-2), and proper negative controls showing no cortex formation without ActA localization. The conclusion that nucleation factor localization is required is well-supported by the control experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "26761750-e3ea-4960-b370-4dadc9468c47",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The reconstituted actin cortices exhibit temperature-dependent symmetry breaking: at 20\u00b0C, cortices form polar actin caps with cortical flows of 1-4 \u03bcm/min developing over 10-20 minutes, while at 30\u00b0C they remain homogeneous and spherical. This temperature-dependent behavior correlates with bulk contractility assays showing an abrupt transition at ~25\u00b0C, and symmetry breaking can be induced in pre-formed cortices by temperature shift from 30\u00b0C to 20\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C29 provide comprehensive evidence for temperature-dependent symmetry breaking through direct microscopy observations (Figure 2A-E), quantitative measurements of flow speeds and timescales (C20-C21), bulk contractility assays (C24-C26), and temperature shift experiments (C27-C29). The observations are reproducible across populations and the timescales/flow speeds are comparable to those in developing embryos (C23). The bulk assay provides independent validation that the temperature effect reflects changes in network contractility rather than confinement artifacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "8545c78f-a1f1-4516-847a-9824b2b16256",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The temperature-dependent symmetry breaking reflects changes in cortical actin network properties rather than ActA localization. While ActA density at the interface increases with bulk concentration and is higher at 20\u00b0C, the symmetry breaking properties are essentially independent of ActA concentration within the tested range, suggesting ActA is in excess.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 are supported by systematic variation of ActA concentration (Figure 2\u2014figure supplement 5). The observation that ActA density increases with concentration and temperature (C30-C31) but symmetry breaking is unaffected (C32) logically supports the conclusion that ActA is in excess (C33) and that temperature effects are due to network properties rather than ActA localization (C34). The experimental design appropriately tests this hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "95340a6d-691b-4168-9cbb-cb9366aaffa1",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Symmetry breaking in the artificial cortices is myosin-dependent. Myosin depletion eliminates symmetry breaking at 20\u00b0C while mock depletion has no effect, and adding back purified myosin restores symmetry breaking in a concentration-dependent manner. The cap morphology depends on myosin concentration, with higher concentrations producing multiple caps or fractured cortices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C41 and C70 provide strong evidence for myosin-dependence through depletion (C35), appropriate controls (C36), rescue experiments (C37), and dose-response relationships (C38-C39). The experimental design includes proper negative controls (mock depletion) and positive controls (add-back), and the observations are supported by microscopy data (Figure 3A-C). The conclusion that myosin is essential for symmetry breaking (C41, C70) is well-justified by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "d584b7b2-8b2d-43a1-a891-478e502e1a5d",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Symmetry breaking requires sufficient network connectivity and can be induced at 30\u00b0C by adding crosslinkers (\u03b1-actinin or filamin). The effect is concentration-dependent for \u03b1-actinin: low concentrations (<4 \u03bcM) maintain symmetry, intermediate concentrations (4-6 \u03bcM) produce single caps, and high concentrations (8 \u03bcM) produce multiple domains. Both crosslinker types successfully induce symmetry breaking, highlighting the importance of overall network connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C48 and C70 demonstrate that network connectivity is necessary for symmetry breaking through systematic addition of crosslinkers at different concentrations (Figure 3D-E). The dose-response relationship for \u03b1-actinin (C43-C46) and the similar effect with filamin (C47) support the conclusion that overall connectivity matters more than specific crosslinker properties (C48). This complements the myosin experiments to establish both requirements for symmetry breaking (C70).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "6827ea7c-bb09-4d59-9030-80864c0fcd1e",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The artificial cortices exhibit cell-like blebbing behavior: cortices under contractile stress can spontaneously detach from the interface locally without causing outward bulging due to high surface tension (~700 pN/\u03bcm), and subsequently heal with reassembly of new cortex within minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 describe blebbing-like behavior supported by time-lapse microscopy (Figure 4A, Video 4) and surface tension measurements (C50, C62). The observation of cortex detachment, lack of bulging, and subsequent healing parallels cellular blebbing. The explanation for lack of bulging is quantitatively supported by measured surface tension values. This represents a cell-like emergent property of the reconstituted system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "e8b419cd-cc58-4d3b-a371-968b23fbecf5",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Asymmetric actin cortices generate polar forces that can induce droplet shape deformation and interior reorganization. The cytoskeleton exerts an estimated protrusive force of ~20 pN/\u03bcm\u00b2 at the cap tip based on curvature measurements, while pulling forces on the cap sides likely drive accumulation of actin and ActA near the cap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 describe force generation supported by microscopy observations of shape deformation (Figure 4B-C) and quantitative force estimates from curvature analysis (C54). The frequency of deformation (~10%, C53) is appropriately reported. The force estimate (C54) is based on Laplace pressure calculations from measured curvature and surface tension, which is a standard approach. The inference about pulling forces and accumulation (C55-C56) is reasonable based on the observed distributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "ab25d52c-49ff-495b-8a20-a091d9fb8395",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "FRAP experiments show that cortical recovery half-times are similar at 20\u00b0C (73 \u00b1 24 s) and 30\u00b0C (81 \u00b1 18 s) with no significant difference (p>0.1). Cortices typically exhibit partial recovery to ~50% of initial intensity, likely due to photodamage during bleaching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 report quantitative FRAP measurements with appropriate statistics (mean \u00b1 STD, sample sizes, p-value) from Figure 1\u2014figure supplement 2. The statistical comparison (C59) appropriately uses p>0.1 to indicate no significant difference. The observation of partial recovery (C60) and its interpretation as photodamage (C61) are reasonable, though the photodamage interpretation is speculative. The FRAP data support the claim of dynamic cortices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "031eadf3-660a-4e27-a3a1-fcf8455594de",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The artificial system undergoes spontaneous symmetry breaking driven by myosin-induced cortical flows, similar to embryonic polarization, and does not require pre-patterned nucleator localization, microtubules, or local interface changes. The magnitude of cortical flows and characteristic length/time scales are similar to those in developing embryos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C23, C41, and C71-C73 synthesize the major findings about symmetry breaking mechanisms. The myosin-dependence is well-established (C4, C41), the comparison to embryos is supported by citations and quantitative similarity (C5, C23), and the exclusions (C71-C73) are justified by the experimental design (uniform ActA distribution, absence of microtubules in the system, uniform interface). These claims represent the main conclusions of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "12e3ab47-b87a-450d-b2a1-7f1d3fb75a1f",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors hypothesize that temperature-dependent contractility arises from increased crosslinking activity at lower temperatures, potentially through longer myosin dwell times or increased affinity of endogenous crosslinkers. They propose that actin cortices exist near an instability threshold where small changes can cause dramatic behavioral shifts, which may reflect a general cellular organizational principle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C65 are explicitly speculative hypotheses (\"We hypothesize,\" \"could emerge,\" \"Alternatively\") proposed to explain the temperature dependence but not directly tested. Claim C74 is an interpretation rather than direct observation. Claims C66-C67 extrapolate from the observations to propose general principles. While these hypotheses are reasonable given the data, they remain speculative without direct experimental validation of the proposed mechanisms. The authors appropriately present these as hypotheses rather than established facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "699904f1-631f-4c61-a7ba-fe420056aeff",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The surface tension of the water-oil interface is approximately 700 pN/\u03bcm as measured by pendant-drop assay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 reports a measured physical parameter using a standard method (pendant-drop assay) described in Materials and methods. This measurement is used to explain why cortex detachment doesn't cause bulging (C50) and to calculate forces from curvature (C54). The value is reasonable for a water-oil interface with surfactant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "6c1affac-2351-4243-aabc-c20360a5a19c",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The reconstituted system provides novel insights into actin cortex behavior in living cells and presents opportunities for investigating cortical dynamics experimentally and theoretically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is a summary statement about the significance of the work. Given the successful reconstitution of cortices with cell-like properties (symmetry breaking, blebbing, force generation) and the ability to manipulate components systematically, this claim is justified. The system does provide a simplified platform for studying cortical dynamics as demonstrated by the experiments in the paper.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "8c2b16c6-5ee1-494c-a6cf-915e13421019",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about actin cortex function, cytoskeletal organization, roles of Arp2/3 and formins, myosin involvement in cellular symmetry breaking, and prior in vitro reconstitution work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C6-C9, C75-C86 are background knowledge statements supported by appropriate citations to established literature. These provide context for the current work and accurately represent the state of the field. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    },
+    {
+      "id": "5e966702-d951-4490-b51b-2de8a53679dd",
+      "content_id": "26c2206d-2019-41a6-bc80-5e37d7e6952a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The cortex behavior was similar with different types of labeled actin (rhodamine on cysteines or amines, AlexaFluor647), and the total actin concentration in the motility mix is estimated to be ~25 \u03bcM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 is supported by Figure 1\u2014figure supplement 3 showing similar cortex formation with different labels, which is an important control for potential labeling artifacts. Claim C88 provides a concentration estimate based on the preparation protocol, which is useful for interpreting results though it is an estimate rather than a direct measurement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:40.493017Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1954dd3d-6ba2-4b84-80ae-c9a0cc9f4d65",
+      "result_id": "18c68a9f-7034-4e85-9446-fb8e302eee59"
+    },
+    {
+      "claim_id": "82246961-596b-4288-9630-02b94efee27d",
+      "result_id": "18c68a9f-7034-4e85-9446-fb8e302eee59"
+    },
+    {
+      "claim_id": "39deaeb7-b262-44a2-b2f0-db83c6adc2cd",
+      "result_id": "18c68a9f-7034-4e85-9446-fb8e302eee59"
+    },
+    {
+      "claim_id": "f5a20067-98d8-42be-bbab-6270e4946acb",
+      "result_id": "18c68a9f-7034-4e85-9446-fb8e302eee59"
+    },
+    {
+      "claim_id": "f3d9d992-b6ac-4d98-b733-ad5ed48b695f",
+      "result_id": "18c68a9f-7034-4e85-9446-fb8e302eee59"
+    },
+    {
+      "claim_id": "928eac38-e52b-458a-acf1-30690629d563",
+      "result_id": "18c68a9f-7034-4e85-9446-fb8e302eee59"
+    },
+    {
+      "claim_id": "9f2a831b-2e29-4fe1-9ad3-67d81be392f3",
+      "result_id": "18c68a9f-7034-4e85-9446-fb8e302eee59"
+    },
+    {
+      "claim_id": "c341f2c3-c414-4f5c-b1a4-f0c55a142238",
+      "result_id": "18c68a9f-7034-4e85-9446-fb8e302eee59"
+    },
+    {
+      "claim_id": "d8e3da61-0ebe-4d8e-a0ae-b9d7c0972c3d",
+      "result_id": "18c68a9f-7034-4e85-9446-fb8e302eee59"
+    },
+    {
+      "claim_id": "3c38e73b-275b-4858-aa59-e03fca7e9708",
+      "result_id": "18c68a9f-7034-4e85-9446-fb8e302eee59"
+    },
+    {
+      "claim_id": "1e6184ec-11b5-48d7-9dbb-6bbff3d7c705",
+      "result_id": "26761750-e3ea-4960-b370-4dadc9468c47"
+    },
+    {
+      "claim_id": "398e48eb-3cfe-4a02-bf45-97a51373ef12",
+      "result_id": "26761750-e3ea-4960-b370-4dadc9468c47"
+    },
+    {
+      "claim_id": "836c30e5-1df9-474f-ad5f-2dfb578ec2a1",
+      "result_id": "26761750-e3ea-4960-b370-4dadc9468c47"
+    },
+    {
+      "claim_id": "e7924840-5cfa-4972-8ee1-60c76f05296c",
+      "result_id": "26761750-e3ea-4960-b370-4dadc9468c47"
+    },
+    {
+      "claim_id": "014b9458-58ca-48da-b25f-fbf86fad3202",
+      "result_id": "26761750-e3ea-4960-b370-4dadc9468c47"
+    },
+    {
+      "claim_id": "1155aa32-0e70-4a2c-b621-db604acd2a2c",
+      "result_id": "26761750-e3ea-4960-b370-4dadc9468c47"
+    },
+    {
+      "claim_id": "44af2aed-b75c-418a-8e7c-60795b73c6ac",
+      "result_id": "26761750-e3ea-4960-b370-4dadc9468c47"
+    },
+    {
+      "claim_id": "f10a7cf0-b17f-4bf4-811c-641f0823de58",
+      "result_id": "26761750-e3ea-4960-b370-4dadc9468c47"
+    },
+    {
+      "claim_id": "ca4e0537-5c92-4ace-bd02-a5551ec8268b",
+      "result_id": "26761750-e3ea-4960-b370-4dadc9468c47"
+    },
+    {
+      "claim_id": "29cab00f-055f-424c-b71b-b2d77ece102e",
+      "result_id": "26761750-e3ea-4960-b370-4dadc9468c47"
+    },
+    {
+      "claim_id": "55ce1f00-2439-486f-a02d-5ffc6cfd7fd4",
+      "result_id": "26761750-e3ea-4960-b370-4dadc9468c47"
+    },
+    {
+      "claim_id": "32f4f8f3-63a5-4e3e-9ff4-dac922965bda",
+      "result_id": "26761750-e3ea-4960-b370-4dadc9468c47"
+    },
+    {
+      "claim_id": "1d70f603-b38a-41ea-b08e-3f806b3dad8a",
+      "result_id": "8545c78f-a1f1-4516-847a-9824b2b16256"
+    },
+    {
+      "claim_id": "2227edcb-d761-47f7-97e0-99bc70bf94ac",
+      "result_id": "8545c78f-a1f1-4516-847a-9824b2b16256"
+    },
+    {
+      "claim_id": "bc6e964c-c8a5-4b89-9766-9058cf44f1d3",
+      "result_id": "8545c78f-a1f1-4516-847a-9824b2b16256"
+    },
+    {
+      "claim_id": "f8c3804d-9501-4ca2-8fbb-b40e075d5ba9",
+      "result_id": "8545c78f-a1f1-4516-847a-9824b2b16256"
+    },
+    {
+      "claim_id": "4a25c9af-7a31-4e2d-87fe-29702ae5f37b",
+      "result_id": "8545c78f-a1f1-4516-847a-9824b2b16256"
+    },
+    {
+      "claim_id": "88f7daa3-cac2-4ebe-ba24-04223c34a23d",
+      "result_id": "95340a6d-691b-4168-9cbb-cb9366aaffa1"
+    },
+    {
+      "claim_id": "4e9fd6b9-20e7-426c-8783-928a9b4aa207",
+      "result_id": "95340a6d-691b-4168-9cbb-cb9366aaffa1"
+    },
+    {
+      "claim_id": "a12d866e-06df-49df-b8de-461b8466343c",
+      "result_id": "95340a6d-691b-4168-9cbb-cb9366aaffa1"
+    },
+    {
+      "claim_id": "f7368777-2ea6-4131-b984-78da0bfb1bbf",
+      "result_id": "95340a6d-691b-4168-9cbb-cb9366aaffa1"
+    },
+    {
+      "claim_id": "b82f0ecd-42b8-4293-99d8-c6f0ed99b904",
+      "result_id": "95340a6d-691b-4168-9cbb-cb9366aaffa1"
+    },
+    {
+      "claim_id": "8ebd0c8f-084e-4827-81c9-f08a4caec023",
+      "result_id": "95340a6d-691b-4168-9cbb-cb9366aaffa1"
+    },
+    {
+      "claim_id": "cbc99c56-eaf8-44c2-b0e3-d5f4c706cbd7",
+      "result_id": "95340a6d-691b-4168-9cbb-cb9366aaffa1"
+    },
+    {
+      "claim_id": "76a051f0-957d-4950-89a1-d5987ccdd4cd",
+      "result_id": "95340a6d-691b-4168-9cbb-cb9366aaffa1"
+    },
+    {
+      "claim_id": "aec97828-8b61-4db0-8d66-e472d276a6e2",
+      "result_id": "d584b7b2-8b2d-43a1-a891-478e502e1a5d"
+    },
+    {
+      "claim_id": "a1953380-1634-4467-93eb-ba03171ccf22",
+      "result_id": "d584b7b2-8b2d-43a1-a891-478e502e1a5d"
+    },
+    {
+      "claim_id": "5bb966ec-5975-486f-8d7a-87a702c65a96",
+      "result_id": "d584b7b2-8b2d-43a1-a891-478e502e1a5d"
+    },
+    {
+      "claim_id": "a415a325-5d03-418f-9da0-d8f051065ac7",
+      "result_id": "d584b7b2-8b2d-43a1-a891-478e502e1a5d"
+    },
+    {
+      "claim_id": "ed5e5881-10b0-4bca-91ed-226176d47ba9",
+      "result_id": "d584b7b2-8b2d-43a1-a891-478e502e1a5d"
+    },
+    {
+      "claim_id": "2de9a817-e9e5-4aad-908a-3ccd27f4afcc",
+      "result_id": "d584b7b2-8b2d-43a1-a891-478e502e1a5d"
+    },
+    {
+      "claim_id": "61536bf4-f46a-4769-a48e-b13b52eb3336",
+      "result_id": "d584b7b2-8b2d-43a1-a891-478e502e1a5d"
+    },
+    {
+      "claim_id": "76a051f0-957d-4950-89a1-d5987ccdd4cd",
+      "result_id": "d584b7b2-8b2d-43a1-a891-478e502e1a5d"
+    },
+    {
+      "claim_id": "0c981bff-a57c-43af-8c48-95051265f260",
+      "result_id": "6827ea7c-bb09-4d59-9030-80864c0fcd1e"
+    },
+    {
+      "claim_id": "7300b9e4-3510-4016-9cad-1789979fdd28",
+      "result_id": "6827ea7c-bb09-4d59-9030-80864c0fcd1e"
+    },
+    {
+      "claim_id": "5d926d6a-a958-44f9-a784-87a01c1df5a8",
+      "result_id": "6827ea7c-bb09-4d59-9030-80864c0fcd1e"
+    },
+    {
+      "claim_id": "9cf235b5-c0d3-4ed3-a670-6aa72ce791be",
+      "result_id": "e8b419cd-cc58-4d3b-a371-968b23fbecf5"
+    },
+    {
+      "claim_id": "aa46772b-d37e-493b-962d-07c4b4cb2eff",
+      "result_id": "e8b419cd-cc58-4d3b-a371-968b23fbecf5"
+    },
+    {
+      "claim_id": "7760b382-ec60-4b12-8031-f4a41ca12fc3",
+      "result_id": "e8b419cd-cc58-4d3b-a371-968b23fbecf5"
+    },
+    {
+      "claim_id": "3838db8f-f3e0-4aca-915f-3735c8b8d6cd",
+      "result_id": "e8b419cd-cc58-4d3b-a371-968b23fbecf5"
+    },
+    {
+      "claim_id": "2564cffe-0ed8-4440-8557-184d11e0b527",
+      "result_id": "e8b419cd-cc58-4d3b-a371-968b23fbecf5"
+    },
+    {
+      "claim_id": "7963d4f6-40da-410a-95c8-07021847625c",
+      "result_id": "ab25d52c-49ff-495b-8a20-a091d9fb8395"
+    },
+    {
+      "claim_id": "21c759cd-f214-45d9-b745-b69a5e31878a",
+      "result_id": "ab25d52c-49ff-495b-8a20-a091d9fb8395"
+    },
+    {
+      "claim_id": "824bc038-3c52-4f38-9fe7-6f01747dc221",
+      "result_id": "ab25d52c-49ff-495b-8a20-a091d9fb8395"
+    },
+    {
+      "claim_id": "7faedaf1-7ff4-47e6-9123-12d7cd47d571",
+      "result_id": "ab25d52c-49ff-495b-8a20-a091d9fb8395"
+    },
+    {
+      "claim_id": "9afbe34c-632d-4b25-b20f-d367c61910cf",
+      "result_id": "ab25d52c-49ff-495b-8a20-a091d9fb8395"
+    },
+    {
+      "claim_id": "da425a43-dede-45cc-99d1-a89408f10da8",
+      "result_id": "031eadf3-660a-4e27-a3a1-fcf8455594de"
+    },
+    {
+      "claim_id": "7135237c-e7ce-40ad-8912-764ad29b99de",
+      "result_id": "031eadf3-660a-4e27-a3a1-fcf8455594de"
+    },
+    {
+      "claim_id": "1155aa32-0e70-4a2c-b621-db604acd2a2c",
+      "result_id": "031eadf3-660a-4e27-a3a1-fcf8455594de"
+    },
+    {
+      "claim_id": "cbc99c56-eaf8-44c2-b0e3-d5f4c706cbd7",
+      "result_id": "031eadf3-660a-4e27-a3a1-fcf8455594de"
+    },
+    {
+      "claim_id": "261dff2a-85c0-4723-83c4-959046ec673f",
+      "result_id": "031eadf3-660a-4e27-a3a1-fcf8455594de"
+    },
+    {
+      "claim_id": "b3f831d6-54b7-439e-b841-9990be7c8632",
+      "result_id": "031eadf3-660a-4e27-a3a1-fcf8455594de"
+    },
+    {
+      "claim_id": "70ba4b3b-8138-4980-b487-e69d270d6aeb",
+      "result_id": "031eadf3-660a-4e27-a3a1-fcf8455594de"
+    },
+    {
+      "claim_id": "17b7420f-b82a-4b9d-ad00-6e72e41951d6",
+      "result_id": "12e3ab47-b87a-450d-b2a1-7f1d3fb75a1f"
+    },
+    {
+      "claim_id": "dff330d3-5a67-4eae-8300-e50af2d43750",
+      "result_id": "12e3ab47-b87a-450d-b2a1-7f1d3fb75a1f"
+    },
+    {
+      "claim_id": "fd032b14-516b-437e-bf47-039399c62f22",
+      "result_id": "12e3ab47-b87a-450d-b2a1-7f1d3fb75a1f"
+    },
+    {
+      "claim_id": "417125ee-8309-4dee-9a3a-f3fc066f3124",
+      "result_id": "12e3ab47-b87a-450d-b2a1-7f1d3fb75a1f"
+    },
+    {
+      "claim_id": "a143fb4e-36fe-4ca1-aadc-ba408e32f1a4",
+      "result_id": "12e3ab47-b87a-450d-b2a1-7f1d3fb75a1f"
+    },
+    {
+      "claim_id": "b1b8446a-904a-448a-afd9-b2fd16e0b43e",
+      "result_id": "12e3ab47-b87a-450d-b2a1-7f1d3fb75a1f"
+    },
+    {
+      "claim_id": "86341ee8-151c-498a-8f8b-66605271a550",
+      "result_id": "699904f1-631f-4c61-a7ba-fe420056aeff"
+    },
+    {
+      "claim_id": "3269f508-81ea-416e-9886-8cf0d8217357",
+      "result_id": "6c1affac-2351-4243-aabc-c20360a5a19c"
+    },
+    {
+      "claim_id": "4a92fa6b-8405-4865-9cbf-39abd6f4491e",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "192224fd-a6ae-4733-b169-60e8ba5fac18",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "92283ea0-ac71-445c-8b47-6deb536b92af",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "f1441b60-787b-4468-8ab1-1610f640cb9a",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "ee1fd75d-7fcc-4694-ad1c-54b1b31111ca",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "635f2b41-88e6-48d9-8d76-0df66c39934f",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "15475854-ffd1-464f-90b8-73688f2ae025",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "1d21341f-26c6-4ebe-be34-60f4af647eb9",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "a6d3404d-8440-4535-a489-4a8296ba216d",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "14b7c330-5b79-4d44-b629-79bdad8f5895",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "053cc9aa-87cf-4ef2-8346-a1bff0f5fb03",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "cbc6edc3-2608-4bee-b1b7-268c1c6dc12c",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "8f8b331c-fa1b-4bfa-aa7e-13fe842db63b",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "2e1a4172-4231-42b4-a1e4-131aa19a9502",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "553cdb07-14b0-4684-a372-ece7c1bcf1fb",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "b8a10e12-4e5b-4d14-8b41-a821974ddd57",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "316fe69f-838a-4025-85bf-73dab1295d62",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "46f6177d-255e-4031-9c7b-b4329ed7166d",
+      "result_id": "8c2b16c6-5ee1-494c-a6cf-915e13421019"
+    },
+    {
+      "claim_id": "4e66fcc9-0e04-4178-a692-5accc187284e",
+      "result_id": "5e966702-d951-4490-b51b-2de8a53679dd"
+    },
+    {
+      "claim_id": "2334c9d5-bba6-4652-be4a-c8d71082ac09",
+      "result_id": "5e966702-d951-4490-b51b-2de8a53679dd"
+    }
+  ],
+  "comparisons": []
+}

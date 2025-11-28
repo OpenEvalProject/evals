@@ -1,0 +1,1742 @@
+{
+  "submission": {
+    "id": "4a49df71-a103-4ec0-bd2c-ed6720bca606",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:30:11.787257Z",
+    "updated_at": "2025-11-28T22:30:11.787257Z"
+  },
+  "content": [
+    {
+      "id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "submission_id": "4a49df71-a103-4ec0-bd2c-ed6720bca606",
+      "content_type": "manuscript",
+      "content_text": "# Viral-inducible Argonaute18 confers broad-spectrum virus resistance in rice by sequestering a host microRNA\n\n## Authors\n\n- Jianguo Wu<sup>1</sup>\n- Zhirui Yang<sup>1</sup>\n- Yu Wang<sup>1</sup>\n- Lijia Zheng<sup>1</sup>\n- Ruiqiang Ye<sup>3</sup>\n- Yinghua Ji<sup>4</sup>\n- Shanshan Zhao<sup>1</sup>\n- Shaoyi Ji<sup>1</sup>\n- Ruofei Liu<sup>1</sup>\n- Le Xu<sup>3</sup>\n- Hong Zheng<sup>1</sup>\n- Yijun Zhou<sup>4</sup>\n- Xin Zhang<sup>5</sup>\n- Xiaofeng Cao<sup>6</sup>\n- Lianhui Xie<sup>2</sup>\n- Zujian Wu<sup>2</sup> \u2020\n- Yijun Qi<sup>3</sup> \u2020\n- Yi Li<sup>1</sup> \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Protein and Plant Gene Research, College of Life Sciences Peking University Beijing China\n2. Fujian Province Key Laboratory of Plant Virology, Institute of Plant Virology Fujian Agriculture and Forestry University Fuzhou China\n3. Center for Plant Biology, Tsinghua-Peking Center for Life Sciences, College of Life Sciences Tsinghua University Beijing China\n4. Institute of Plant Protection Jiangsu Academy of Agricultural Sciences Nanjing China\n5. Institute of Crop Science Chinese Academy of Agricultural Sciences Beijing China\n6. State Key Laboratory of Plant Genomics and National Center for Plant Gene Research Institute of Genetics and Developmental Biology Beijing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nViral pathogens are a major threat to rice production worldwide. Although RNA interference (RNAi) is known to mediate antiviral immunity in plant and animal models, the mechanism of antiviral RNAi in rice and other economically important crops is poorly understood. Here, we report that rice resistance to evolutionarily diverse viruses requires Argonaute18 (AGO18). Genetic studies reveal that the antiviral function of AGO18 depends on its activity to sequester microRNA168 (miR168) to alleviate repression of rice AGO1 essential for antiviral RNAi. Expression of miR168-resistant AGO1a in ago18 background rescues or increases rice antiviral activity. Notably, stable transgenic expression of AGO18 confers broad-spectrum virus resistance in rice. Our findings uncover a novel cooperative antiviral activity of two distinct AGO proteins and suggest a new strategy for the control of viral diseases in rice.\n\n## Introduction\n\nSmall RNAs including small interfering RNAs (siRNAs) and microRNAs (miRNAs) are important regulators of gene expression via RNA interference (RNAi) pathways in many organisms (Baulcombe, 2004; Wang et al., 2011; Hauptmann and Meister, 2013; Meister, 2013). The RNAi machinery contains many proteins involved in the biogenesis and function of specific types of small RNAs (Chen, 2009; Wang et al., 2011; Hauptmann and Meister, 2013; Meister, 2013). Among these are two categories that act as the core of the RNA silencing machinery: DICER (DICER-LIKE or DCL in plants) and ARGONAUTE (AGO). DICER and DCL proteins mainly function to process double-stranded or folded stem-loop precursor RNAs into small RNA duplexes. AGO proteins incorporate one strand of an siRNA duplex to form an effector complex called RNA-induced silencing complex (RISC) to regulate the stability/translatability of target RNAs or to mediate methylation of target DNA sequences (Baulcombe, 2004; Wang et al., 2011; Meister, 2013; Pfaff et al., 2013; Li et al., 2013a; Rogers and Chen, 2013).\n\nIn plants, the RNAi machinery has undergone extensive amplification and functional specialization during evolution. For instance, the model plant Arabidopsis thaliana encodes four DCLs that function indistinct and yet overlapping RNAi pathways to control diverse biological processes ranging from development, response to abiotic stresses, to defense against pathogens (Deleris et al., 2006; Chapman and Carrington, 2007; Garcia-Ruiz et al., 2010; Vazquez et al., 2010). Arabidopsis encodes 10 AGOs whose functions are not all understood. Well-studied AGOs include AGO1 that mediates mRNA cleavage is critical for development, AGO4 that directs DNA methylation, and AGO2 that functions in DNA double strand break repair (Baumberger and Baulcombe, 2005; Mallory and Vaucheret, 2010; Ye et al., 2012; Wei et al., 2012). AGO1 is particularly notable in that its homeostasis is controlled at the transcriptional, post-transcriptional, and post-translational levels. At the post-transcriptional level, the AGO1 mRNA is a target of miR168. Therefore, miR168-guided cleavage of AGO1 mRNA by AGO1 protein exerts auto-regulation. Moreover, AGO1 is co-expressed with miR168 and AGO1 protein can stabilize miR168 post-transcriptionally (Vaucheret et al., 2006; Vaucheret, 2008; Mallory and Vaucheret, 2010). At the post-translational level, the accumulation of AGO1 can be reduced by F-box proteins in a proteasome-independent manner through the autophagy pathway (Derrien et al., 2012; Rogers and Chen, 2013). The auto-regulation of AGO1 indicates that its level within a cell can be dynamic and this dynamics may significantly impact the biological activities of a plant.\n\nRNA-mediated immunity against viruses operates in plants, fungi, invertebrates, and mammals to specifically destroy viral RNAs through the cellular RNA silencing machinery (Li et al., 2013b; Maillard et al., 2013). In plants, it is well known that AGO1 is a major effector of antiviral RNAi; AGO1 associates with virus-derived siRNAs (vsiRNAs) and mediates the degradation of viral RNAs. Furthermore, AGO2 and AGO7 are induced during viral infection, and both proteins can bind viral siRNAs. The antiviral function of AGO2 and AGO7 requires their slicing activity (Qu et al., 2008; Wang et al., 2011). AGO2 is repressed by AGO1-associated miR403, and AGO1 and AGO2 appear to exert antiviral functions in a non-redundant and cooperative manner. Specifically, AGO1 functions in the first layer of antiviral RNAi; when AGO1's antiviral function is inhibited, a second layer is activated involving AGO2 (Harvey et al., 2011; Jaubert et al., 2011; Scholthof et al., 2011; Wang et al., 2011; Carbonell et al., 2012; Xia et al., 2014). AGO2 also recruits miR393* to regulate plant immunity against bacterial infection (Zhang et al., 2011). As a counter-defense strategy, some plant viruses have evolved silencing suppressors to target AGO1 (Burgy\u00e1n and Havelda, 2011). Moreover, infection of many viruses can elevate the miR168 level to down-regulate AGO1, thereby nullifying this layer of host defense (V\u00e1rallyay et al., 2010). Thus, regulation of AGO1 by both host and viral factors plays a critical role in determining host responses to viral infection. Whether a host has positive regulators to check the viral counter-defense activities is not understood. How different AGOs have evolved to regulate plant responses to pathogen infection also remains an outstanding question (Ding and Voinnet, 2007; Ding, 2010; Garcia-Ruiz et al., 2010).\n\nRice (Oryza sativa) is one of the most important food crops as well as an experimental model plant for monocotyledonous plants (monocots). However, rice production and consequently food sustainability is under the constant threat of emerging and reemerging viral diseases. Rice viral pathogens are genetically diverse and many highly pathogenic viruses such as Rice stripe Tenuivirus (RSV, with a genome comprising 4 negative-stranded RNAs) and Rice dwarf Phytoreovirus (RDV, with a genome comprising 12 double-stranded RNAs) are transmitted persistently and solely by arthropod vectors (Hibino, 1996; Ren et al., 2010; Du et al., 2011). Because of the global circulation of these vectors and lack of virus resistance germplasms, the incidence and severity of rice viral diseases in many rice-growing regions are unpredictable. Infection by multiple viruses is also a common and severe challenge for other important crops. Therefore, developing new and effective strategies to control infection by multiple viruses for a crop, especially the prevalent food crops in the monocot group such as rice, maize, and wheat that have traditionally been under-investigated, is of paramount importance for human food sustainability. Successful development of such strategies requires a knowledge base of the mechanisms of viral infection and host defense responses.\n\nThe rice genome encodes five DCLs and 19 AGOs. How different AGOs regulate antiviral RNAi in rice is not known. In this study, we report a critical role of RNAi in antiviral defense in rice under natural infection conditions, when the plants were inoculated, as in the field, by viruliferous insect vectors brown planthopper (Laodelphax striatellus) and leafhopper (Nephotettix cincticeps) that transmit RSV and RDV, respectively. Intriguingly, we found that AGO18, a member of a new AGO clade that is conserved in monocots, is specifically induced by the infection of two taxonomically different viruses and is required for the antiviral function of AGO1. Loss-of-function ago18 mutation abolishes, whereas over-expression of AGO18 increases, the AGO1 antiviral activity. We further demonstrated that AGO18 competes with AGO1 for binding miR168, resulting in elevated levels of AGO1 in the infected plants to enable antiviral defense. Expression of an miR168-resistant AGO1a variant in the ago18 background rescues or increases rice antiviral activity. The antiviral function of AGO18 requires its small RNA-binding, not slicing activity. Our findings reveal a novel mechanism AGO1 homeostasis regulation by AGO18 for antiviral defense and have significant implications in understanding the evolutionary amplification of RNA silencing mechanisms and in developing novel antiviral strategies.\n\n## Results\n\n### A role for AGO1 in rice antiviral immunity under natural infection conditions\n\nOur understanding of RNAi as an antiviral defense mechanism in plants mainly comes from viral infection systems involving model plants Arabidopsis and Nicotiana benthamiana by mechanical inoculation with virions or in vitro viral RNA transcripts or by agro-infiltration with viral cDNAs. To investigate the importance of RNAi in antiviral immunity in economically important crops under natural infection conditions, we used the rice-RSV patho-system in which rice is infected by RSV through the transmission of insect vector brown planthopper.\n\nGiven the established role of AGO1 in antiviral defense in Arabidopsis, we tested whether AGO1 functions similarly in rice by inoculating an ago1 RNAi line (Wu et al., 2009) by viruliferous brown planthopper carrying RSV to recapitulate the natural infection conditions. As shown in Figure 1A, the ago1 RNAi line, in which the expression of AGO1s is diminished (Figure 1\u2014figure supplement 1A), was much more susceptible to RSV infection and showed more severe symptoms. Northern blots showed a remarkable increase in the accumulation of RSV genomic RNAs in the ago1 RNAi line (Figure 1B). Since AGO1a and 1b are expressed at much higher levels than AGO1c and 1d in both mock-inoculated and RSV-infected rice plants (Figure 1\u2014figure supplement 1B,C) (Kapoor et al., 2008), we presumed that AGO1a and 1b are more important for antiviral defense. Therefore, AGO1a and 1b were characterized further in subsequent studies. We immunoprecipitated AGO1a and 1b complexes from RSV-infected or mock-treated rice plants using specific antibodies. Northern blot analyses showed that RSV vsiRNAs were readily detected in the AGO1a and AGO1b complexes (Figure 1C), suggesting that AGO1 is an effector of vsiRNA. Taking together, these data indicate a role for AGO1s in antiviral immunity under natural infection conditions in rice.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05733/elife-05733-fig1-v2.jpg)\n\n**Figure 1.:** (A) Symptoms of WT and ago1 RNAi rice plants infected with RSV, pictures were taken at 6 weeks post-inoculation. Scale bars, 15 cm. (B) Detection of RSV genomic RNA segments in WT and ago1 RNAi rice plants by Northern blot. The blots were hybridized with radiolabeled riboprobes specific for each RNA segment. rRNAs were stained with ethidium bromide and served as loading controls. The RNA signals were quantified and normalized to rRNAs, and the relative values were calculated by comparison with those in RSV-infected WT (arbitrarily set to 1.0). (C) Detection of vsiRNAs associated with AGO1a and AGO1b immunoprecipitates. The silver-stained gel shows that comparable amounts of AGO1 complexes were used for RNA preparation. The asterisks indicate the positions of AGO proteins. The position of a RNA size marker, electrophoresed in parallel, is shown to the right of the blots. U6 was also probed and served as a loading control.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05733/elife-05733-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Detection of AGO1a, AGO1b, AGO1c, and AGO1d in WT and the ago1 RNAi line by semi-quantitative RT-PCR. Actin was detected and used as a control. (B) Expression profiles of rice AGO1a, 1b, 1c, and 1d in vegetative tissues (young leaf, mature leaf, and root), shoot apical meristem (SAM), panicle at six different developmental stages (P1\u2013P6), and seeds at five different developmental stages of seed development (S1\u2013S5) examined by microarray analysis. (C) Detection of AGO1a, AGO1b, AGO1c, and AGO1d in mock- or RSV-inoculated rice plants by qRT-PCR. The expression levels were normalized using the signal from OsEF-1a. The average (\u00b1 standard deviation) values from three biological repeats of qRT-PCR are shown.\n\n### AGO18 is specifically induced by viral infection and required for antiviral immunity\n\nWe have previously shown that rice AGO1 as well as AGO18, a member of a new AGO clade that is conserved in monocots (Figure 2\u2014figure supplement 1), is highly induced by viral infection (Du et al., 2011). Consistent with mRNA expression patterns, AGO18 protein was hardly detectable in mock-inoculated rice plants but accumulated to a high level in RSV-infected plants (Figure 2A). To further test whether RSV infection induces the transcription activity of AGO18 promoter, we generated transgenic rice plants that express \u03b2-glucuronidase (GUS) under the control of AGO18 promoter. RSV infection led to high levels of GUS expression in such plants as compared to the background levels in mock-inoculated plants (Figure 2B,C). These data demonstrate that RSV infection, but not insect vector feeding, induced AGO18 expression at the transcriptional level.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05733/elife-05733-fig2-v2.jpg)\n\n**Figure 2.:** (A) Detection of AGO18 in mock- or RSV-inoculated rice plants by Western blot. Tubulin was probed and served as a loading control. (B) Representative GUS staining images of mock- or RSV-inoculated AGO18p:GUS transgenic plants. Scale bars, 5 mm. (C) qRT-PCR analysis of the transcript level of GUS in the indicated plants. The average (\u00b1 standard deviation) values from three biological repeats of qRT-PCR are shown. (D) Symptoms of wild-type (WT) and ago18 rice plants infected with RSV, pictures were taken at 6 weeks post-inoculation. Scale bars, 15 cm. (E) Detection of RSV genomic RNA segments in WT and ago18 rice plants by Northern blot. The blots were hybridized with radiolabeled riboprobes specific for each RNA segment. rRNAs were stained with ethidium bromide and served as loading controls. The RNA signals were quantified and normalized to rRNAs, and the relative values were calculated by comparison with those in RSV-infected WT (arbitrarily set to 1.0). (F) Detection of RSV CP in the RSV-infected WT and ago18 by qRT-PCR. The expression levels were normalized using the signal from OsEF-1a. The average (\u00b1 standard deviation) values from three biological repeats of qRT-PCR are shown. (G) Symptoms of RSV-infected WT (Non-transgenic), ago18 and transgenic lines overexpressing AGO18, pictures were taken at 6 weeks post-inoculation. Scale bars, 15 cm (upper panel) and 5 cm (lower panel). (H) Detection of AGO18 in mock- or RSV-inoculated plants as indicated. Tubulin was probed and served as a loading control. (I) Detection of RSV genomic RNA segments in the indicated plants by Northern blot. The blots were hybridized with radiolabeled riboprobes specific for each RNA segment. rRNAs were stained with ethidium bromide and served as loading controls. The RNA signals were quantified and normalized to rRNAs, and the relative values were calculated by comparison with those in RSV-infected WT (Non-transgenic) (arbitrarily set to 1.0). (J) Detection of RSV CP in the indicated RSV-infected plants by qRT-PCR. The expression levels were normalized using the signal from OsEF-1a. The average (\u00b1 standard deviation) values from three biological repeats of qRT-PCR are shown.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05733/elife-05733-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Unrooted, neighbor-joining tree was constructed by alignments of AGO protein sequences from the indicated plants.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05733/elife-05733-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Detection of CP, P2, pC4, P4, and AGO18 in transgenic rice lines that overexpress RSV CP, P2, pC4, and P4 by Western blot analysis. Tubulin was also detected and served as a loading control.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05733/elife-05733-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) A diagram showing the site of Tos17 insertion in AGO18 locus in the ago18 mutant. (B) Upper two panels: Genotyping of the ago18 mutant by PCR. LP: left primer; RP: right primer; LB: left T-DNA (Tos17) border primer. Lower two panels: RT-PCR analysis of AGO18 expression in wild-type (WT) and ago18 plants. Actin was detected and served as a control.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/05733/elife-05733-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) qRT-PCR analysis of AGO1 and AGO18 expression levels in mock- or RDV-inoculated WT and ago18 plants. The expression levels were normalized using the signal from OsEF-1a. The average (\u00b1 standard deviation) values from three biological repeats of qRT-PCR are shown. (B) Detection of AGO1a, AGO1b, and AGO18 proteins in mock- or RDV-inoculated WT and ago18 plants. Tubulin was detected and served as a loading control. (C) Symptoms of RDV-infected WT (Non-trangenic), ago18 and transgenic lines overexpressing AGO18, pictures were taken at 6 weeks post-inoculation. Scale bars, 15 cm (upper panel) and 5 cm (lower panel). (D) Detection of AGO18 in mock- or RDV-inoculated plants as indicated. Tubulin was probed and served as a loading control. (E) Detection of RDV genomic RNA segments in the indicated plants by Northern blot. The blots were hybridized with radiolabeled riboprobes specific for each RNA segment. rRNAs were stained with ethidium bromide and served as loading controls. The RNA signals were quantified and normalized to rRNAs, and the relative values were calculated by comparison with those in RSV-infected WT (arbitrarily set to 1.0).\n\nTo investigate how RSV infection triggers the expression of AGO18, we examined the possibility that viral proteins produced during infection induce AGO18 expression. To do this, we generated transgenic rice plants that over-express Myc-tagged RSV P2, CP, pC4, and P4 proteins (Xiong et al., 2008), respectively (Figure 2\u2014figure supplement 2). We found that AGO18 was induced only in the transgenic lines that over-expressed CP, but not in those that over-expressed three other viral proteins (Figure 2\u2014figure supplement 2). This suggests that RSV CP is an effector to induce AGO18 expression during viral infection.\n\nThe induction of AGO18 expression by RSV infection prompted us to investigate its function in antiviral defense. We obtained a Tos17 retrotransposon insertional mutant ago18 (NF6013) (Figure 2\u2014figure supplement 3A) from the Tos17 database and isolated homozygous plants (Figure 2\u2014figure supplement 3B). The ago18 mutant did not exhibit notable phenotypic differences from the WT plants in growth and development but were much more sensitive to RSV infection than the WT plants (Figure 2D). Viral replication and infection rates also increased in ago18 mutant plants (Figure 2E,F, and Supplementary file 1A). These results suggest that AGO18 may be dispensable for normal growth and development of rice, but is required for defense against RSV infection. Importantly, AGO1 is present in the ago18 mutants. Therefore, these data indicate that the antiviral function of AGO1 depends on the presence of AGO18. We further over-expressed AGO18 under the control of the ACTIN promoter in the WT rice background. The antiviral activity of AGO18 in the three independent transgenic lines was directly correlated with the expression levels of AGO18 (Figure 2G\u2013J).\n\nAGO18 was not only induced by and functioned against RSV, but also was induced by and functioned against RDV, a double-stranded RNA Phytoreovirus (Figure 2\u2014figure supplement 4). This indicates that AGO18 is effective in positively regulating defense against a broad spectrum of viruses with diverse genome structures.\n\n### AGO18 unlikely functions as an effector of vsiRNAs\n\nGiven that AGO1 is present in the ago18 mutant and AGO18 is present in ago1 RNAi plant and that both ago18 mutant and ago1 RNAi rice plants were very susceptible to viral infection, AGO1 and AGO18 evidently depend on each other for their antiviral activities. A key question is how this mutual dependence operates.\n\nTo investigate how AGO18 acts in antiviral defense, we first tested whether this protein may function as an effector of vsiRNAs, like AGO1. We immunoprecipitated AGO18 complexes from RSV-infected WT rice plants using AGO18 antibodies (Figure 3A). Northern blots using RSV RNA2 probes showed much weaker signals for vsiRNAs in AGO18 (Figure 3A), compared to those in AGO1a and AGO1b (Figure 1C). We further profiled small RNAs in AGO18 complexes prepared from RSV-infected plants using deep sequencing. For comparison, small RNAs in total extracts, AGO1a, and AGO1b complexes were also profiled in parallel. We found that vsiRNAs accounted for about 4.48% of the total small RNAs in RSV-infected plants and 17.37%\u20139.77% of those in the AGO1a and AGO1b complexes (Figure 3B and Supplementary file 1B), indicating that vsiRNAs are highly enriched in the AGO1 complexes. In contrast, vsiRNAs accounted for only about 2.52% of the AGO18-bound small RNAs (Figure 3B and Supplementary file 1B). These data suggest that AGO18 is not a major effector of vsiRNAs. Together with the finding that AGO18 is required for the antiviral activity of AGO1 (see above), this observation suggests that AGO18 very likely uses a different strategy to regulate antiviral defense response in rice.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05733/elife-05733-fig3-v2.jpg)\n\n**Figure 3.:** (A) Detection of vsiRNAs in total extracts (Input) or AGO18 immunoprecipitates prepared from mock- or RSV-inoculated plants by Northern blot. The silver-stained gel shows the quality of purified AGO18 complexes. The asterisk indicates the position of AGO18. The position of an RNA size marker is shown on the right of the blot. U6 is probed and served as a loading control. (B) Percentage of deep sequencing reads matching vsiRNAs in total reads obtained from total extracts, AGO1a, AGO1b, and AGO18-associated small RNAs. Samples for deep sequencing were prepared from RSV-infected rice plants.\n\n### AGO18 competes with AGO1 for miR168 to up-regulate AGO1 upon viral infection\n\nRSV infection increases the accumulation of miR168 as well as AGO18 (Du et al., 2011) (Figure 2A\u2013C and Figure 4A), suggesting that the increased miR168 is not efficiently loaded into AGO1 and hence not effective in targeting AGO1. Intriguingly, from the small RNA deep sequencing analyses, we found that AGO18 recruited a large amount of miR168 in RSV-infected rice plants compared with AGO1a or AGO1b (Figure 4A and Supplementary file 1C). Given that miR168 plays a critical role in AGO1 homeostasis in plants (Mallory and Vaucheret, 2010) and that the antiviral function of AGO1 requires the presence of AGO18, our observations suggest that AGO18 up-regulates AGO1 by competitively binding miR168 to enable antiviral defense.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05733/elife-05733-fig4-v2.jpg)\n\n**Figure 4.:** (A) Percentage of deep sequencing reads matching the indicated miRNAs in total reads obtained from total extracts, AGO1a, AGO1b, and AGO18-associated small RNAs. Samples for deep sequencing were prepared from mock- or RSV-inoculated rice plants. (B) Detection of the indicated miRNAs in total extract (Input), AGO1a, AGO1b, and AGO18 complexes by Northern blot. The blots were stripped and reprobed for multiple times. The silver-stained gel shows that comparable amounts of different AGO complexes were used for RNA preparation. The asterisks indicate the positions of AGO proteins. The positions of RNA size markers are shown on the right of the blots. The RNA signals were quantified, and the relative values were calculated by comparison with those in total extracts or AGO1a complex prepared from mock-inoculated WT (arbitrarily set to 1.0). (C) Northern blot analysis showing miR168 from AGO1a, AGO1b, and AGO18 complexes in RSV-infected WT and ago18 plants (upper panel). Western blot gel shows that comparable amounts of different AGO complexes were used for RNA preparation (lower panel). (D) qRT-PCR analysis of the levels of AGO1a, AGO1b, and AGO18 in WT rice and ago18 mutants with or without RSV infection. The expression levels were normalized using the signal from OsEF-1a. The average (\u00b1 standard deviation) values from three biological repeats of qRT-PCR are shown. (E) Western blot showing AGO1a, AGO1b, and AGO18 protein levels in WT and ago18 with or without RSV infection. Tubulin was probed and served as a loading control. (F) qRT-PCR analysis of the levels of AGO1a, AGO1b, AGO2, and AGO18 in the indicated plants. The expression levels were normalized using the signal from OsEF-1a. The average (\u00b1 standard deviation) values from three biological repeats of qRT-PCR are shown.\n\nImmunoprecipitation (IP)-northern blot analyses further confirmed that RSV infection of WT rice plants increased the association of miR168 with AGO18 but decreased its association with AGO1a and 1b, whereas several control miRNAs (including miR166 and miR156) showed no obvious changes (Figure 4B). Consistent with these results, in RSV-infected ago18 mutants, where AGO18 is absent, more miR168 was now loaded into AGO1a and 1b (Figure 4C), which was correlated with the reduced expression of AGO1 at mRNA (Figure 4D) and protein (Figure 4E) levels. Also in the AGO18OE#1 transgenic rice line, in which AGO18 was overexpressed, AGO1a and 1b both increased at the mRNA level (Figure 4F), likely as a result of more miR168 being loaded into AGO18. Consistent with our previous finding (Du et al., 2011), AGO2 was induced by RSV infection in wild-type rice plants (Figure 4F). Intriguingly, knockout or overexpression of AGO18 did not have an obvious effect on such induction, indicating that the induction of AGO2 by RSV infection is independent of AGO18 (Figure 4F). Thus, AGO18 specifically up-regulates AGO1 in antiviral defense.\n\nTo directly test whether AGO18 could indeed compete with AGO1 for binding miR168, we transiently expressed a miR168 precursor together with Flag-AGO1a or Flag-AGO1b in the presence or absence of Myc-AGO18 in N. benthamiana leaves. MiR444 was used as a control, because it is a species-specific miRNA in monocots that can be loaded by AGO1 (Wu et al., 2009), but not by AGO18 (Supplementary file 1C). Results from IP-northern experiments showed that when AGO18 was co-expressed with AGO1a or AGO1b, there was a nearly five fold reduction in miR168 loading into AGO1a and AGO1b and concurrent increase in loading into AGO18 (Figure 5). The control miR444 was specifically loaded into AGO1a and 1b and co-expression of AGO18 did not decrease its loading into AGO1a and 1b (Figure 5). These data demonstrate that AGO18 can effectively compete with AGO1 for binding miR168.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05733/elife-05733-fig5-v2.jpg)\n\n**Figure 5.:** Specific AGO18\u2013miR168 interaction was confirmed by in vitro assays in N. benthamiana. Constructs with the indicated combinations were introduced into N. benthamiana leaves for transient expression by agro-infiltration. Northern blots were conducted with total RNA (Input) and small RNAs recovered from immunoprecipitated AGO complexes (IP). Western blot analyses were done with the crude extract and aliquots of the IP products using anti-Flag or anti-Myc antibodies. The positions of RNA size markers are shown on the left of the blots. U6 was probed and served as a loading control.\n\n### Small RNA-binding but not slicing activity of AGO18 is required for its antiviral function\n\nThe above results show that AGO18 is unlikely an effector of vsiRNAs but has the novel activity of competing with AGO1 for binding miR168. To further test this, we analyzed the functions of AGO18 domains in antiviral defense. AGO family proteins contain four characteristic domains: an N-terminal domain and conserved PAZ, MID, and PIWI domains (Tolia and Joshua-Tor, 2007; Vaucheret, 2008). The PAZ domain binds to the 3\u2032 end of small RNAs (Ma et al., 2004), whereas the MID domain recognizes the 5\u2032 end (Kidner and Martienssen, 2005; Mi et al., 2008; Montgomery et al., 2008; Frank et al., 2010). The PIWI domain adopts an RNaseH-like structure and exhibits endonuclease (slicing) activity when an Asp-Asp-His (DDH) catalytic triad is present (Song et al., 2004; Rivas et al., 2005).\n\nOur analysis indicates that AGO18 also contains all of the four AGO signature domains and the DDH catalytic triad (Figure 6A). We investigated whether the small RNA binding and slicing activities of AGO18 are required for its role in antiviral defense by transgenic complementation experiments. We generated two AGO18 mutants, AGO18Y537A/F538A (YF/AA) and AGO18D833A (D833A). YF/AA contains alanine substitutions at two conserved residues (Y537F538) that are known to be required for small RNA binding (Ma et al., 2004; Guang et al., 2008; Ye et al., 2012), whereas D833A contains an alanine substitution at the DDH catalytic triad (Song et al., 2004; Rivas et al., 2005; Wee et al., 2012). We transgenically expressed WT AGO18, YF/AA, and D833A mutants under the control of the native AGO18 promoter in the ago18 mutant background. We then inoculated these plants with RSV by insect vector transmission. Western blots confirmed the expression of WT and mutant AGO18 in the infected transgenic plants (Figure 6B). Based on the disease symptoms (Figure 6C) and accumulation of viral genomic RNAs (Figure 6D), both WT AGO18 and D833A could mostly complement the ago18 mutant for resistance to RSV infection, whereas the YF/AA mutant could not. These results suggest that AGO18 exerts its antiviral function mainly through small RNA binding, rather than slicing. We also measured the expression levels of AGO1 in these transgenic lines that were infected by RSV. We found that AGO1 expression was elevated by viral infection in the transgenic plants that express WT AGO18 or D833A mutant but not in those that express YF/AA (Figure 6E), further suggesting that the small RNA binding but not slicing activity of AGO18 is required for its role in up-regulating AGO1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/05733/elife-05733-fig6-v2.jpg)\n\n**Figure 6.:** (A) Domain structure of AGO18 protein. AGO18 consists of a variable N-terminal domain and conserved C-terminal PAZ, MID, and PIWI domains. The residues Y537 and F538 required for small RNA binding, and D833, D906, and H1045 required for slicing are indicated. (B) Detection of AGO18 protein in mock- or RSV-inoculated WT (Non-trangenic) plants as well as ago18 mutants complemented with AGO18 and its derivatives by Western blot. Tubulin was probed and served as a loading control. (C) Symptoms of mock- or RSV-inoculated WT (Non-trangenic) plants as well as ago18 mutants complemented with AGO18 or its derivatives, pictures were taken at 6 weeks post-inoculation. Scale bars, 15 cm (upper panel) and 5 cm (lower panel). (D) Detection of RSV genomic RNA segments in mock- or RSV-inoculated WT (Non-trangenic) plants as well as ago18 mutants complemented with AGO18 or its derivatives by Northern blot. The blots were hybridized with radiolabeled riboprobes specific for each RNA segment. rRNAs were stained with ethidium bromide and served as loading controls. The RNA signals were quantified and normalized to rRNAs, and the relative values were calculated by comparison with those in RSV-infected WT (arbitrarily set to 1.0). (E) qRT-PCR analysis of the levels of AGO1a, AGO1b, and AGO18 in RSV-infected WT plants as well as ago18 mutants complemented with AGO18 or its derivatives. The expression levels were normalized using the signal from OsEF-1a. The average (\u00b1 standard deviation) values from three biological repeats of qRT-PCR are shown.\n\n### Expression of miR168-resistant AGO1a rescues the deficiency of ago18 for viral resistance\n\nThe above studies demonstrated that AGO18 regulates AGO1 homeostasis by sequestering miR168 during viral infection. To further test this, we generated transgenic rice plants expressing wild type (AGO1a lines) and miR168-resistant AGO1a (AGO1a-Res lines) in the ago18 background, under the control of the native AGO1a promoter (Figure 7A). The steady-state AGO1a/AGO1a-Res mRNA levels of both AGO1a and AGO1a-Res transgenes accumulated to higher levels relative to the AGO1a levels in wild-type (WT) non-transgenic and ago18 plants (Figure 7B). It is noteworthy that AGO1a mRNA level was reduced by RSV infection in the AGO1a transgenic line, whereas AGO1a-Res transgenic lines had no significant reduction in AGO1a-Res mRNA levels upon RSV infection (Figure 7B), indicating that AGO1a is subject to regulation by miR168/AGO18. Although the transcript levels of the miR168-resistant transgene AGO1a markedly increased, none of these lines showed notable phenotypic differences from WT or ago18 plants in growth and development. These transgenic lines, however, were much more resistant to RSV infection than ago18 and AGO1a plants (Figure 7B,C). Viral replication significantly decreased in the AGO1a-Res plants (Figure 7D). Thus, AGO1 over-expression could rescue the deficiency of ago18 for viral resistance. These data provided further compelling evidence that AGO18 functions through sequestering miR168 to up-regulate AGO1 against virus infections.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/05733/elife-05733-fig7-v2.jpg)\n\n**Figure 7.:** (A) Schematic drawing of AGO1a featuring the target site of miR168. In AGO1a that is resistant to miR168 cleavage (AGO1a-Res), seven synonymous nucleotide substitutions were introduced into the miR168 target site. The resistance of AGO1a-Res to miR168-directed cleavage was examined by in vitro cleavage assay using purified AGO1a complex. Positions of the cleavage products are indicated by arrows. (B) qRT-PCR analysis of AGO1a and AGO1b expression levels in mock (\u2212) or RSV-inoculated (+) WT, ago18, and transgenic plants expressing AGO1a or AGO1a-Res in the ago18 mutant background. The expression levels were normalized using the signal from OsEF-1a. The average (\u00b1 standard deviation) values from three biological repeats of qRT-PCR are shown. (C) Symptoms of mock- or RSV-inoculated WT (Non-trangenic), ago18, and transgenic plants expressing AGO1a or AGO1a-Res in the ago18 mutant background. Scale bars, 15 cm. (D) Detection of RSV genomic RNA segments in the indicated plants by Northern blot. The blots were hybridized with radiolabeled riboprobes specific for each RNA segment. rRNAs were stained with ethidium bromide and served as loading controls. The RNA signals were quantified and normalized to rRNAs, and the relative values were calculated by comparison with those in RSV-infected WT (Non-trangenic) (arbitrarily set to 1.0).\n\nBased on the above results, we conclude that AGO18 regulates AGO1 homeostasis by specifically loading miR168 during viral infection. Sequestering of miR168 by AGO18 leads to increased accumulation of AGO1 to embark on an effective antiviral defense response.\n\n## Discussion\n\nAGO proteins are at the heart of RNAi machinery. Building upon the conserved core components of the RNA silencing machinery such as DCLs and AGOs, plants have evolved extensive variants of these components, especially AGOs. This evolutionary amplification of the machinery components implies amplification/diversification in regulatory mechanisms/functions. While the roles of some AGOs in specific functions of RNA silencing in gene regulation and innate immunity have been well studied, the roles of most AGOs remain unknown or poorly understood. Besides AGO1, only the slicing function of AGO2 appears to be also important for antiviral defense in Arabidopsis (Harvey et al., 2011; Jaubert et al., 2011; Scholthof et al., 2011; Wang et al., 2011; Carbonell et al., 2012; Xia et al., 2014). Current studies on the roles of several Arabidopsis AGOs in antiviral defense are dictated by the target RNA-slicing paradigm.\n\nIn the arms race between host defense and viral counter-defense, plant viruses have evolved various strategies, including encoding suppressors of RNA silencing, to interfere with different steps of the host RNA silencing defense pathways (Ding and Voinnet, 2007; Ding, 2010). In Arabidopsis and N. benthamiana, infection by many viruses leads to increased levels of AGO1 mRNA readying the plants to combat viruses, but the viruses also simultaneously increase the expression levels of miR168 to down-regulate AGO1 to defeat host defense (V\u00e1rallyay et al., 2010). RSV infection of rice also leads to an increase in miR168 (Figure 4A,B) (Du et al., 2011). Thus, elevated miR168 expression appears to be a broad mechanism of viral counter-defense.\n\nIn this study, we discovered a novel mechanism of positive regulation of AGO1 activity by AGO18 in antiviral RNAi. We showed that AGO18 does not have antiviral function by itself, but its presence is required for the antiviral function of AGO1. AGO18 accomplishes this not via its slicing function but through its competition with AGO1 for binding miR168. This binding inhibits miR168-mediated auto-regulation of AGO1, thereby boosting the accumulation levels of AGO1 to enable antiviral function. Thus, AGO18 has evolved as a novel and dedicated positive regulator of the plant surveillance/defense system. Our findings suggest that AGO18-bound miR168 is not competent in cleaving AGO1 mRNA in RSV-infected rice plants, albeit AGO18 contains conserved DDH motif for slicing activity. Several possible mechanisms can be considered. First, the catalytic activity of AGO18 may not be as potent as that of AGO1 due to some sequence/structure differences between these two AGOs. Second, the slicing activity of AGO18 may be repressed by a yet-to-be-identified protein that specifically interacts with AGO18. Third, the cellular compartmentation of AGO18/miR168 complex may be distinct from that of AGO1/miR168 and prevent its access to AGO1 mRNA. Finally, AGO18 binding of miR168 may subsequently induce the degradation of miR168. It will be highly interesting to test these possibilities in future studies.\n\nThere were previous examples of competitive binding of other miRNAs between other AGOs and AGO1 in Arabidopsis. miR168 can be incorporated into AGO10 to decrease the translation efficiency of AGO1 mRNA in Arabidopsis (Mallory et al., 2009). The Arabidopsis miR166/165 are significantly enriched in AGO10-bound miRNAs, preventing them from being loaded into AGO1 to fulfill their normal roles in development (Zhu et al., 2011; Ji et al., 2011; Manavella et al., 2011). MiR390 is associated with AGO7 to mediated trans-acting siRNA biogenesis (Montgomery et al., 2008), through cooperative activity of AGO1. In addition, miR408 associates with both AGO1 and AGO2 redundantly to regulate Plantacyanin mRNA levels (Maunoury and Vaucheret, 2011). This competition, however, does not affect AGO1 homeostasis. In contrast to these negative regulations of AGO1, binding of miR168 by AGO18 in infected rice plants boosts AGO1 accumulation. Thus, among mechanisms of AGO-regulation of AGO1 homeostasis or activity, the up-regulation of AGO1 via AGO18 binding of miR168 represents a novel type of mechanism. Whether other AGOs function similarly in Arabidopsis, rice, and other plants to up-regulate AGO1 or another AGO to impact developmental processes or defense responses is an outstanding question to be addressed in future studies. It is also noteworthy that, in addition to miR168, several miRNAs including miR528, miR159a, and miR159b were also recruited by AGO18 in RSV-infected rice plants (Supplementary file 1C). Thus, for AGO18, we cannot rule out the possibility that AGO18 plays regulatory roles in other capacities or has its own independent biological functions.\n\nIt is important to emphasize that most plant viruses are transmitted to plants by insect vectors under natural infection conditions in the field, and yet the vast majority of studies so far on the mechanisms of RNA silencing-mediated antiviral responses employed infection methods such as mechanical inoculation with in vitro viral RNA transcripts or virions and infiltration with agrobacteria carrying engineered viral DNAs. These studies often used viral delivery methods with much higher levels of inoculum than natural field conditions. How some of such manipulations would alter host responses remains an outstanding question. Here, we used insect vectors that carry the natural forms of viruses to inoculate plants, best reflecting what happens under field infection conditions with regard to the behavior of viruses and host responses. This is not only important to dissect the natural infection and defense mechanisms, but also important for developing effective technologies to combat viral infection under natural infection conditions. Recent studies indicated that natural infection in early stage of virus infection may trigger different host-defense reaction (Garcia et al., 2014).\n\nAGO18 is of special interest because it has evolved as a conserved clade in monocots that encompass many important crop plants for foods and biofuels. Whether it plays a similar role in antiviral defense in other monocots warrants further investigations. From a broader perspective, we expect that further studies on the extensive RNA silencing machinery components evolved in crop plants may lead to new discoveries about their functions in shaping plant diversity with regard to phenotypes and innate immunity mechanisms. Finally, sequestering miR168 by AGO18 to regulate AGO1 homeostasis represents an evolutionary novelty. It raises the question of whether small RNA competition-based regulations between other types of proteins have also evolved to regulate different biological processes in plants and other organisms. This mechanism functions against infection by two evolutionarily distinct viruses, and likely has broader significance in resistance against more viruses in a wide range of monocots. We propose that engineering rice and other cereals to over-express AGO18 may provide a new strategy for the control of diverse viral pathogens.\n\n## Materials and methods\n\n### Plant growth and virus inoculation\n\nPlant growth and virus inoculation were essentially carried out as described (Du et al., 2011). Briefly, rice (O. sativa spp. japonica) seedlings were grown in a greenhouse at 28\u201330\u00b0C and 60 \u00b1 5% relative humidity under natural sunlight for 4 weeks. The viruliferous (RSV and RDV-carrying) insects of L. striatellus and N. cincticeps, as well as virus-free L. striatellus and N. cincticeps (mock) were used for inoculation. After feeding 3 days, the insects were removed, and the rice seedlings were returned to the greenhouse to grow under the greenhouse conditions above. 3 weeks post-inoculation when the newly developed leaves started to exhibit viral symptoms, the whole seedlings were harvested. For each sample, at least 15\u201320 rice seedlings were pooled for RNA extraction.\n\n### Non-preference test\n\nNon-preference tests were performed for all rice seedlings of the different genetic backgrounds with the two viral transmission insect vectors brown planthopper (L. striatellus) and leafhopper (N. cincticeps). Details of the procedures were described previously (Hiroshi et al., 1994).\n\n### Histochemical GUS staining\n\nPlants were infiltrated with 50 mM sodium phosphate (pH 7.0), 10 mM EDTA, and 0.5 mg/ml X-gluc (Apollo Scientific, UK), followed by incubation at 37\u00b0C in the dark overnight and then destained in 70% ethanol before photographing.\n\n### Generation of antibodies against rice AGOs\n\nSynthetic peptides AGO1aN (KKKTEPRNAGEC), AGO1bN (KKRTGSGSTGEC), and AGO18N (YHGDGERGYGRC) were used to raise rabbit polyclonal antibodies against AGO1a, AGO1b, and AGO18, respectively, essentially as described (Wu et al., 2009; Mi et al., 2008). The antisera were affinity purified and used for immunoprecipitation (IP) (1:50 dilution).\n\n### Constructs and transgenic lines\n\nGateway system (Invitrogen, Carlsbad, CA) was used to make binary constructs. Several destination vectors were created for transient expression in N. benthamiana and stable rice transformation. The binary gateway vector pMDC32 (Karimi et al., 2007) was modified to obtain rice AGO18 promoter (p32:pAGO18) or AGO1a promoter (p32:pAGO1a). Most cDNA and miRNA genes were cloned into pENTR/D vectors and pENTR/D-Flag-AGO18D833A, YF/AA and AGO1a:miR168 Res clones were prepared by using the QuikChange site-directed mutagenesis kit (Stratagene, La Jolla, CA). All these clones were confirmed by sequencing and transferred to the appropriate destination vectors by recombination using the Gateway LR Clonase II Enzyme mix (Invitrogen). pCam2300:Actin1::OCS and pCam2300:35S::OCS vectors (Wu et al., 2009) were used to generate pCam2300:Actin1::Flag-AGO18, pCam2300:35S::Myc-AGO18, Flag-AGO1a, Flag-AGO1b, miR168a, and miR444b, respectively. All PCR primers are listed in Supplementary file 1D.\n\n### Transient expression in the N. benthamiana\n\nAssays of transient expression in leaves of N. benthamiana were performed as described (Voinnet et al., 2003). A detailed protocol is available upon request.\n\n### Western blotting\n\nProtein samples were boiled with same volume of 2\u00d7 protein loading buffer at 95\u00b0C for 5 min and separated by SDS-PAGE gel. Proteins were then transferred to PVDF membranes and detected with antibodies against AGO18, AGO1a, AGO1b, MYC (11667203001, Roche, Switzerland), FLAG (F1804, Sigma\u2013Aldrich, St. Louis, MO), and tubulin (T5168, Sigma\u2013Aldrich).\n\n### Purification of rice AGO-containing complexes and associated small RNAs\n\nRice AGO-containing complexes were immunopurified from RSV-inoculated rice plants as previously described (Qi et al., 2005; Wu et al., 2010). The quality of purification was examined by SDS-PAGE followed by silver staining or IP-western blotting, and the bands of expected sizes were confirmed as AGO proteins by mass spectrometry. RNAs were isolated from total cell extracts and from the purified AGO complexes by Trizol reagent (Invitrogen), resolved on a 15% denaturing PAGE gel, and visualized by SYBR-gold (Invitrogen) staining. Gel slices within the range of 18\u201328 nucleotides were excised, and the RNAs were eluted and purified for cloning.\n\n### Small RNA cloning and sequencing\n\nSmall RNA cloning for Illumina sequencing was carried out essentially as described previously (Mi et al., 2008; Wu et al., 2010). A detailed protocol is available upon request.\n\n### Small RNA Northern blotting\n\nNorthern blot analysis with total sRNAs or from purified AGO complexes was performed as described before (Qi et al., 2005). 32P-end labeled oligonucleotide probes complementary to sRNAs were used for Northern blots. The sequences of the probes are listed in Supplementary file 1D.\n\n### Quantitative RT-PCR analysis\n\nTotal RNAs were extracted from rice plants with Trizol (Invitrogen). After removal of contaminating DNAs by digestion with RNase-free DNaseI (Promega, Madison, Wisconsin, USA), the RNAs were reverse transcribed by SuperScript III Reverse Transcriptase (Invitrogen) using oligo (dT). The cDNAs were then used as templates for quantitative PCR and RT-PCR. Quantitative PCR was performed using SYBR Green Real-time PCR Master Mix (Toyobo, Osaka, Japan). The rice OsEF-1a gene was detected in parallel and used as the internal control. All the other primers used are listed in Supplementary file 1D.\n\n### Bioinformatics analysis of small RNA data sets\n\nThe adaptor sequences in Illumina 1G sequencing reads were removed by using \u2018vectorstrip\u2019 in the EMBOSS package. The sRNA reads with length of 19\u201327 nt were mapped to the rice nuclear, chloroplastic, and mitochondrial genomes (http://rice.plantbiology.msu.edu/, version 6.0). The sRNAs with perfect genomic matches were used for further analysis. Rice miRNA annotations were from miRBase (http://microrna.sanger.ac.uk/sequences, Release14) and our previous publication (Wu et al., 2009; Du et al., 2011). Statistical analysis of the sRNA data sets was done by using in-house-developed Perl scripts (Supplementary file 2).\n\n### miRNA cleavage assay\n\nmiRNA cleavage activity assay was performed essentially as described (Qi et al., 2005; Qi and Mi, 2010), using immunopurified rice AGO1a complex and in vitro-transcribed AGO1a or AGO1a-Res transcripts.\n\n### Accession numbers\n\nSmall RNA data sets generated in this study are deposited in the NCBI sequence read archive (SRA) (http://www.ncbi.nlm.nih.gov/sra) under accession number PRJNA273330.\n",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "270ac793-d1f7-4750-bc73-1b740bbc7fcc",
+      "submission_id": "4a49df71-a103-4ec0-bd2c-ed6720bca606",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Baulcombe, University of Cambridge , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05733.017](https://doi.org/10.7554/eLife.05733.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for further consideration. The first decision letter after peer review is shown below.]\n\nThank you for choosing to send your work entitled \u201cAntiviral RNAi requires a novel cooperative activity of two distinct Argonaute proteins\u201d for consideration at eLife. Your full submission has been evaluated by Detlef Weigel (Senior editor) and three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the decision was reached after discussions between the reviewers. We regret to inform you that your work will not be considered further for publication.\n\nAll three reviewers have major but non-overlapping concerns about the manuscript. The major reservations are that:\n\n1) The concept described overlaps with the previously described AGO1-AGO10 competition;\n\n2) The study is incomplete. Some obvious experiments have not been done include (but are not restricted to) the use of miR168 resistant AGO1 mRNA and analysis of AGO2;\n\n3) The fact that all RNAi lines (DCL1, DCL2, DCL3a, DCL3b, DCL4, AGO1) have the same phenotype, raising the possibility that there is interference of transgene RNAi and antiviral RNAi.\n\nReviewer #1:\n\nThe paper confirms that RNA silencing mediates defense against RSV and RDV delivered by insect vectors. Figure 1 confirms that several DCL proteins and AGO1 are required as in the canonical RNA silencing pathway. Figure 2 data implicates a monocot conserved AGO18 in this antiviral silencing. The AGO18 promoter is induced in infected plants and the mutants are hypersusceptible to virus infection. Conversely the overexpressing plants are less susceptible to infection than the control. However the AGO18 does not bind viral siRNA as effectively as AGO1 and a simple role of this unusual AGO in straightforward RNA silencing is ruled out. The AGO18 bound RNAs are instead enriched for miR168 relative to AGO1. The role of miR168 is to silence the mRNA for AGO1 and so the data are consistent with a model in which AGO18 is a negative regulator of a negative regulator of AGO1. Data to support this model are from: Competition experiments showing that overexpression of AGO18 competed with AGO1 for binding of overexpressed miR168 but not miR443 and from the findings that a mutant AGO18 with defective miRNA binding was not able to complement the mutant phenotype but the protein with inactivating mutations in the nuclease active site did.\n\nOverall these are nicely executed experiments although I would say that the obvious and most direct test of the hypothesis with a miR168 resistant AGO1 message is conspicuously absent. The data also do not test the prediction that AGO18 induction in virus-infected plants would mediate overexpression of AGO1 and that the timing of the effect would precede the maximal rate of virus accumulation. The finding that the plant AGO-mediated antiviral silencing can be enhanced in virus-infected plants is not new and the decoy AGO mechanism is also not novel although it was described previously in a different context. Taking the sum of these considerations my view is that the paper in its present form is more suited to a specialist journal.\n\nThere are several interesting features in this paper that could be followed up to make a new paper that might be more appropriate to eLife. It would be interesting to know for example about the features of AGO18 that differentiate it from other AGO clades and to know more about the regulation of AGO18 in virus-infected plants. Specific questions would concern the role of insect vectors in the activation of this gene and the possibility (implied by Figure 2) that there is a systemic signal associated with its induction. We know about signals induced in disease resistant plants but this would be a signal in susceptible plants. Is it an RNA or perhaps it is a JA response induced by the insect vectors of the virus?\n\nReviewer #2:\n\nIn this manuscript, Wu et al, show that AGO18, a monocot-specific member of the ARGONAUTE family, is induced during virus infection and preferentially binds to miR168, a miRNA that normally down-regulates AGO1, which has antiviral RNAi activity. Thus, AGO18 induction titrates miR168, leading to up-regulation of AGO1 and increased resistance to viruses. The data are convincing and support the authors' conclusions.\n\nHowever, the authors totally ignore the contribution of AGO2, both in the bibliographic introduction and in the development of their story. Indeed, at least five papers have shown that, in addition to AGO1, AGO2 contributes to antiviral RNAi activity (Harvey et al, 2011; Wang et al, 2011; Scholthof et al, 2011; Jaubert et al, 2011; Carbonell et al, 2012). None of these papers is referenced in the Introduction and only a brief sentence in the Discussion says that, in addition to AGO1, AGO2 also has catalytic activity against viral RNA, but there is no reference cited. The absence of investigation on AGO2 in this paper is a big concern, considering that the authors have previously shown that AGO2 is induced during virus infection, and actually more induced than AGO1 (Du et al, 2011). Could AGO18 induction also lead to AGO2 up-regulation, and by which mechanism? This question needs to be addressed.\n\nIn addition, the results obtained with the dcl RNAi lines are puzzling and actually raise a number of concerns regarding the RNAi strategy. Indeed, RNAi against either DCL1, DCL2, DCL3a, DCL3b or DCL4 increases infection rates. How is this possible, given the different role of each DCL? Isn't it that the production of very large amounts of dsRNA during RNAi somehow titrates the DCL(s) required for antiviral activity? If so, the results obtained during AGO1 RNAi are also questionable.\n\nReviewer #3:\n\nSmall RNAs (sRNAs) including miRNAs and siRNAs are a group of non-coding RNAs that regulate expression of complementary target genes. sRNAs are loaded into AGO-centered RNA inducing silencing complexes (RISCs) and guide AGO to cleave their targets. It is well-known that plants, and possibly other organisms as well, utilize RNAi system to defense themselves from virus propagation. On the other hand, viruses encode viral suppressors to block different steps of posttranscriptional gene silencing pathway (i.e. destabilizing and inhibiting AGO proteins) to counter defense the host responses. It has been also shown that some viruses evolve a mechanism that induces expression of endogenous miR168 that happens to target AGO1 effector itself, leading to suppression of RNAi so that viruses can survive.\n\nIn this paper, Wu and collaborators studied siRNA responses of plants to the RSV infection, the authors took advantage of the RSV/RDV\u2013Oryza sativa patho-systems. These RNA viruses infect rice by a planthopper vector and establish infection by overcoming the AGO1-mediated antiviral siRNA response in the plant. Nonetheless, the sRNA machinery is highly diversified in rice, encoding 5 DCL and 18 AGO proteins, most of which have still unknown functions. Importantly, the authors opted to use the natural insect vector of the viruses in the inoculation of the plants to mimic the natural infection conditions and be able to discern important effectors in the sRNA mediated antiviral defense. They found that one AGO protein, AGO18, is specifically upregulated by virus infection and also essential for antiviral immunity. They then tried to explore the mechanism underlying AGO18 function. They found that AGO18 bound less viral-derived siRNAs compared to canonical AGO1, leading to their proposal that AGO18 is unlikely an effector protein for viruses. Because they previously published a paper that the viral infection elevate the expression of both miR168 and AGO18, they hypothesized there might be come connection between the two events. They performed a deep-seq and found that AGO18 bound a large amount of miR168 (but not the largest group), and therefore proposed a model and evidence that Ago18 maintains AGO1 level by sequestering miR168 as an antiviral strategy.\n\nOverall, the manuscript is interesting and presented lots of nice data, most of which are likely solid. It will advance the field, especially, understanding of the arms race between hosts and pathogens. This manuscript is amazingly an extension of a previous story that AGO10 specifically sequesters miR165/166 to antagonize the silencing activity of AGO1 (Zhu, et al., 2011. Cell). However, there are some issues in the manuscript, some of them might be serious if not solved.\n\n1) The authors should integrate their work in the literature context. Starting from the Introduction of well-studied AGO functions, the authors selectively emphasized their own work and ignored other elegant work (i.e. AGO7-miR390; Montgomery, et al.; 2008). Another example is that the mechanism presented here is essentially the same as the AGO10-AGO1 story (Zhu, et al., 2011). The only difference is AGO18-AGO1 for miR168 (which happens to feedback regulate AGO1). The way the authors wrote the manuscript suggests that their discovery is completely novel, if one does not go deep through the Discussion part.\n\n2) The manuscript missed one piece of important information: could sequestering of miR168 under AGO18 promoter through miRNA sponge or target mimicry rescue ago18 responses to viral infection?\n\n3) In Figure 2H it is apparent an increase in AGO18 levels upon RSV infection, especially in line #5. This is unexpected given that the gene is under a constitutive promoter. Is it possible that the virus infection affects the protein stability? It is known that AGO proteins are unstable in the apo form (this is without sRNA bound), could it be possible that virus miR168 induction regulates AGO18 stability? The authors could address this issue by checking transcript and protein levels of AGO18 in OE lines before and after virus infection. Is the concurrent increase of AGO18 and miR168 upon viral infection synergetic effect?\n\n4) In the Supplementary File 1C, the highest accumulation of miRNA in AGO18 complexes is of miR528, which is more than 9-fold higher than in AGO1b or \u223c3-fold AGO1a under virus infection. Given that miR528 is an important metabolic regulator during embryo development in rice, it seems very interesting to discuss its possible relationship to virus defense and whether AGO18 acts also as a decoy and not a silencing effector with this miRNA.\n\n5) In the Discussion part, the authors attempted to differentiate this finding from the AGO10-AGO1 weakens, instead of strengthening, their discussion, for having evidence of this phenomenon used not only for development but as an adaptive mechanism for viral defense in a distant organism as rice, makes it ubiquitous and conserved.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cViral-Inducible Argonaute18 Confers Broad-Spectrum Virus Resistance in Rice by Sequestering A Host MicroRNA\u201d for further consideration at eLife. Your revised article has been favorably evaluated by Detlef Weigel (Senior editor) and three reviewers, one of whom, David Baulcombe, is a member of the Board of Reviewing Editors. The manuscript has been improved but there are some remaining minor issues that need to be addressed before final acceptance, as outlined below:\n\n1) We strongly recommended removal of the dcl mutant analysis as the interpretation is not conclusive and the data are not required for the interpretation of the AGO18 analysis.\n\n2) We recommend a brief discussion of the follow points:\n\na) What is the proposed fate of the AGO18 bound miR168?\n\nb) What is the sensing mechanism of viral RNA that triggers AGO18 expression?\n",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6191f647-b623-455f-84dc-0f1a1c7de57a",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C1",
+      "claim": "Rice resistance to evolutionarily diverse viruses requires Argonaute18 (AGO18).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that rice resistance to evolutionarily diverse viruses requires Argonaute18 (AGO18).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genetic studies showing ago18 mutants are more susceptible to viral infection (Figure 2D-F) and AGO18 overexpression increases resistance (Figure 2G-J).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "22df092d-b293-4d92-95ce-0ae26e8583a9",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C2",
+      "claim": "The antiviral function of AGO18 depends on its activity to sequester microRNA168 (miR168) to alleviate repression of rice AGO1.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic studies reveal that the antiviral function of AGO18 depends on its activity to sequester microRNA168 (miR168) to alleviate repression of rice AGO1 essential for antiviral RNAi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing AGO18 binds miR168 (Figure 4A-B), AGO1 levels decrease in ago18 mutants (Figure 4D-E), and competition experiments (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "1c049d57-d707-44c4-8d69-19b14c496b01",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C3",
+      "claim": "Expression of miR168-resistant AGO1a in ago18 background rescues or increases rice antiviral activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of miR168-resistant AGO1a in ago18 background rescues or increases rice antiviral activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing AGO1a-Res transgenic lines in ago18 background are more resistant to RSV infection (Figure 7B-D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "cffeeed9-75fc-4938-b391-30b572660580",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C4",
+      "claim": "Stable transgenic expression of AGO18 confers broad-spectrum virus resistance in rice.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, stable transgenic expression of AGO18 confers broad-spectrum virus resistance in rice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing AGO18 overexpression increases resistance to both RSV (Figure 2G-J) and RDV (Figure 2\u2014figure supplement 4C-E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "7341b0e6-ee20-4431-b799-d189a4123c39",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C5",
+      "claim": "AGO1 is a major effector of antiviral RNAi in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants, it is well known that AGO1 is a major effector of antiviral RNAi; AGO1 associates with virus-derived siRNAs (vsiRNAs) and mediates the degradation of viral RNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established scientific knowledge and citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "f722a06d-6764-494d-ba28-7f643d41cd91",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C6",
+      "claim": "The ago1 RNAi line was much more susceptible to RSV infection and showed more severe symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1A, the ago1 RNAi line, in which the expression of AGO1s is diminished (Figure 1\u2014figure supplement 1A), was much more susceptible to RSV infection and showed more severe symptoms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by visual symptoms in Figure 1A and Northern blot data showing increased viral RNA accumulation in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "ac900fee-018b-49ef-a319-40c4d430e339",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C7",
+      "claim": "RSV vsiRNAs were readily detected in the AGO1a and AGO1b complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Northern blot analyses showed that RSV vsiRNAs were readily detected in the AGO1a and AGO1b complexes (Figure 1C), suggesting that AGO1 is an effector of vsiRNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Northern blot data in Figure 1C showing vsiRNAs in AGO1a and AGO1b immunoprecipitates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "91037464-e4d8-4195-a44b-f9fab23f5ae8",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C8",
+      "claim": "AGO1 is an effector of vsiRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Northern blot analyses showed that RSV vsiRNAs were readily detected in the AGO1a and AGO1b complexes (Figure 1C), suggesting that AGO1 is an effector of vsiRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that vsiRNAs associate with AGO1a and AGO1b complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "b2365df5-94f1-4374-9877-11ccecb55650",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C9",
+      "claim": "AGO1s have a role in antiviral immunity under natural infection conditions in rice.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking together, these data indicate a role for AGO1s in antiviral immunity under natural infection conditions in rice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from ago1 RNAi lines showing increased susceptibility and vsiRNA association with AGO1 complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "c8efa804-562b-4c97-bd67-ed6b8edee742",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C10",
+      "claim": "AGO18 is a member of a new AGO clade that is conserved in monocots.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that rice AGO1 as well as AGO18, a member of a new AGO clade that is conserved in monocots (Figure 2\u2014figure supplement 1), is highly induced by viral infection (Du et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogenetic tree in Figure 2\u2014figure supplement 1 and citation to Du et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "77b3f083-a787-4bbb-85d6-b77f54a61fb7",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C11",
+      "claim": "AGO18 is highly induced by viral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that rice AGO1 as well as AGO18, a member of a new AGO clade that is conserved in monocots (Figure 2\u2014figure supplement 1), is highly induced by viral infection (Du et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Du et al., 2011 and confirmed by Western blot data in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "5c2f1d38-ebee-4623-804c-d9102f6b5cde",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C12",
+      "claim": "AGO18 protein was hardly detectable in mock-inoculated rice plants but accumulated to a high level in RSV-infected plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with mRNA expression patterns, AGO18 protein was hardly detectable in mock-inoculated rice plants but accumulated to a high level in RSV-infected plants (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 2A showing AGO18 protein levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "d1fb056c-564e-4914-bec0-3d9f364ac093",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C13",
+      "claim": "RSV infection led to high levels of GUS expression in AGO18p:GUS transgenic plants as compared to the background levels in mock-inoculated plants.",
+      "claim_type": "EXPLICIT",
+      "source": "RSV infection led to high levels of GUS expression in such plants as compared to the background levels in mock-inoculated plants (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GUS staining images in Figure 2B and qRT-PCR data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "b7ac3e52-c249-499b-beea-dba1f1230b85",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C14",
+      "claim": "RSV infection, but not insect vector feeding, induced AGO18 expression at the transcriptional level.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that RSV infection, but not insect vector feeding, induced AGO18 expression at the transcriptional level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from GUS reporter data showing induction only in RSV-infected plants, not in mock-inoculated plants exposed to virus-free insects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "010c2df3-b9c8-4e64-9b95-4cd33711473b",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C15",
+      "claim": "The ago18 mutant did not exhibit notable phenotypic differences from the WT plants in growth and development.",
+      "claim_type": "EXPLICIT",
+      "source": "The ago18 mutant did not exhibit notable phenotypic differences from the WT plants in growth and development but were much more sensitive to RSV infection than the WT plants (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by observational data comparing ago18 mutant and WT plants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "30c64d97-eb7d-4351-97ee-32a87cb0b9ac",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C16",
+      "claim": "ago18 mutants were much more sensitive to RSV infection than the WT plants.",
+      "claim_type": "EXPLICIT",
+      "source": "The ago18 mutant did not exhibit notable phenotypic differences from the WT plants in growth and development but were much more sensitive to RSV infection than the WT plants (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by symptom data in Figure 2D and viral RNA accumulation data in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "ec736049-c54e-4e88-ad4a-acd1625e422f",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C17",
+      "claim": "Viral replication and infection rates increased in ago18 mutant plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral replication and infection rates also increased in ago18 mutant plants (Figure 2E,F, and Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Northern blot data in Figure 2E, qRT-PCR data in Figure 2F, and infection rate data in Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "bb8d31af-9cbc-4a98-9303-34f14a5e8067",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C18",
+      "claim": "AGO18 may be dispensable for normal growth and development of rice, but is required for defense against RSV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that AGO18 may be dispensable for normal growth and development of rice, but is required for defense against RSV infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that ago18 mutants show normal growth but increased viral susceptibility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "be3dd8d1-8eda-46b9-b9eb-6636769f8c96",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C19",
+      "claim": "AGO1 is present in the ago18 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, AGO1 is present in the ago18 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Western blot data showing AGO1 protein in ago18 mutants (Figure 4E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "82082e51-2f07-46a9-9bab-ed1638c58bab",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C20",
+      "claim": "The antiviral function of AGO1 depends on the presence of AGO18.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these data indicate that the antiviral function of AGO1 depends on the presence of AGO18.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that ago18 mutants are susceptible to viral infection despite having AGO1 present.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "3b124aae-d2fc-4c5f-a679-a5ae84cdaaa0",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C21",
+      "claim": "The antiviral activity of AGO18 in the three independent transgenic lines was directly correlated with the expression levels of AGO18.",
+      "claim_type": "EXPLICIT",
+      "source": "The antiviral activity of AGO18 in the three independent transgenic lines was directly correlated with the expression levels of AGO18 (Figure 2G\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 2G-J showing correlation between AGO18 expression levels and viral resistance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "0ac4c5da-7e0d-40bf-9164-c4716ac7f8e6",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C22",
+      "claim": "AGO18 was not only induced by and functioned against RSV, but also was induced by and functioned against RDV, a double-stranded RNA Phytoreovirus.",
+      "claim_type": "EXPLICIT",
+      "source": "AGO18 was not only induced by and functioned against RSV, but also was induced by and functioned against RDV, a double-stranded RNA Phytoreovirus (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 2\u2014figure supplement 4 showing AGO18 induction and function against RDV.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "e54a4667-0c34-4166-8431-17ddc75bdfb9",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C23",
+      "claim": "AGO18 is effective in positively regulating defense against a broad spectrum of viruses with diverse genome structures.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that AGO18 is effective in positively regulating defense against a broad spectrum of viruses with diverse genome structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that AGO18 functions against both RSV (negative-stranded RNA) and RDV (double-stranded RNA).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "00a7cc64-697c-4b74-ad91-704b0752dfec",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C24",
+      "claim": "AGO1 and AGO18 evidently depend on each other for their antiviral activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that AGO1 is present in the ago18 mutant and AGO18 is present in ago1 RNAi plant and that both ago18 mutant and ago1 RNAi rice plants were very susceptible to viral infection, AGO1 and AGO18 evidently depend on each other for their antiviral activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from genetic data showing both ago1 and ago18 mutants are susceptible to viral infection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "79393664-a0c7-427c-b15d-79baba4e1233",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C25",
+      "claim": "Northern blots using RSV RNA2 probes showed much weaker signals for vsiRNAs in AGO18 compared to those in AGO1a and AGO1b.",
+      "claim_type": "EXPLICIT",
+      "source": "Northern blots using RSV RNA2 probes showed much weaker signals for vsiRNAs in AGO18 (Figure 3A), compared to those in AGO1a and AGO1b (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Northern blot data in Figure 3A and Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "227aaa65-6824-4f6d-bbff-5158fa569964",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C26",
+      "claim": "vsiRNAs accounted for about 4.48% of the total small RNAs in RSV-infected plants and 17.37%\u20139.77% of those in the AGO1a and AGO1b complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that vsiRNAs accounted for about 4.48% of the total small RNAs in RSV-infected plants and 17.37%\u20139.77% of those in the AGO1a and AGO1b complexes (Figure 3B and Supplementary file 1B), indicating that vsiRNAs are highly enriched in the AGO1 complexes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by deep sequencing data presented in Figure 3B and Supplementary file 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "536cc956-e5ce-4443-affa-520dff596bb3",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C27",
+      "claim": "vsiRNAs are highly enriched in the AGO1 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that vsiRNAs accounted for about 4.48% of the total small RNAs in RSV-infected plants and 17.37%\u20139.77% of those in the AGO1a and AGO1b complexes (Figure 3B and Supplementary file 1B), indicating that vsiRNAs are highly enriched in the AGO1 complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the comparison of vsiRNA percentages in total extracts versus AGO1 complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "4c2be483-af5c-4da4-b8e8-bd11ed6a3323",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C28",
+      "claim": "vsiRNAs accounted for only about 2.52% of the AGO18-bound small RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, vsiRNAs accounted for only about 2.52% of the AGO18-bound small RNAs (Figure 3B and Supplementary file 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by deep sequencing data presented in Figure 3B and Supplementary file 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "6fafc8c9-5989-4c9e-b030-be8f44f0c757",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C29",
+      "claim": "AGO18 is not a major effector of vsiRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that AGO18 is not a major effector of vsiRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the low percentage of vsiRNAs in AGO18 complexes compared to AGO1 complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "7a29bb0e-04b5-49ef-bc80-6b9075b231d5",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C30",
+      "claim": "AGO18 very likely uses a different strategy to regulate antiviral defense response in rice.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the finding that AGO18 is required for the antiviral activity of AGO1 (see above), this observation suggests that AGO18 very likely uses a different strategy to regulate antiviral defense response in rice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that AGO18 does not bind vsiRNAs efficiently but is still required for antiviral defense.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "5ac3653e-7fc3-4482-bf96-12cb98c01a71",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C31",
+      "claim": "RSV infection increases the accumulation of miR168 as well as AGO18.",
+      "claim_type": "EXPLICIT",
+      "source": "RSV infection increases the accumulation of miR168 as well as AGO18 (Du et al., 2011) (Figure 2A\u2013C and Figure 4A), suggesting that the increased miR168 is not efficiently loaded into AGO1 and hence not effective in targeting AGO1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Du et al., 2011 and data in Figure 2A-C and Figure 4A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "aed1baa7-fa7c-40f0-ba34-a6a71d236ab2",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C32",
+      "claim": "The increased miR168 is not efficiently loaded into AGO1 and hence not effective in targeting AGO1.",
+      "claim_type": "EXPLICIT",
+      "source": "RSV infection increases the accumulation of miR168 as well as AGO18 (Du et al., 2011) (Figure 2A\u2013C and Figure 4A), suggesting that the increased miR168 is not efficiently loaded into AGO1 and hence not effective in targeting AGO1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that AGO1 levels increase despite increased miR168 levels during RSV infection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "6999a5f9-4c6e-4552-b2bb-5337c2ecd18a",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C33",
+      "claim": "AGO18 recruited a large amount of miR168 in RSV-infected rice plants compared with AGO1a or AGO1b.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, from the small RNA deep sequencing analyses, we found that AGO18 recruited a large amount of miR168 in RSV-infected rice plants compared with AGO1a or AGO1b (Figure 4A and Supplementary file 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by deep sequencing data in Figure 4A and Supplementary file 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "f2f36f8e-9e3b-4670-8aef-8b0c3ececdfd",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C34",
+      "claim": "miR168 plays a critical role in AGO1 homeostasis in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that miR168 plays a critical role in AGO1 homeostasis in plants (Mallory and Vaucheret, 2010) and that the antiviral function of AGO1 requires the presence of AGO18, our observations suggest that AGO18 up-regulates AGO1 by competitively binding miR168 to enable antiviral defense.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mallory and Vaucheret, 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "d1439af7-aa4b-4884-bcda-d332549cfe0d",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C35",
+      "claim": "AGO18 up-regulates AGO1 by competitively binding miR168 to enable antiviral defense.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that miR168 plays a critical role in AGO1 homeostasis in plants (Mallory and Vaucheret, 2010) and that the antiviral function of AGO1 requires the presence of AGO18, our observations suggest that AGO18 up-regulates AGO1 by competitively binding miR168 to enable antiviral defense.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that AGO18 binds miR168 and AGO1 levels are reduced in ago18 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "1a1731d0-30c0-4b27-830b-acd676657a71",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C36",
+      "claim": "RSV infection of WT rice plants increased the association of miR168 with AGO18 but decreased its association with AGO1a and 1b.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoprecipitation (IP)-northern blot analyses further confirmed that RSV infection of WT rice plants increased the association of miR168 with AGO18 but decreased its association with AGO1a and 1b, whereas several control miRNAs (including miR166 and miR156) showed no obvious changes (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IP-Northern blot data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "87a3358e-c58e-44e2-917c-11873b416f10",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C37",
+      "claim": "Several control miRNAs (including miR166 and miR156) showed no obvious changes in association with AGO proteins upon RSV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoprecipitation (IP)-northern blot analyses further confirmed that RSV infection of WT rice plants increased the association of miR168 with AGO18 but decreased its association with AGO1a and 1b, whereas several control miRNAs (including miR166 and miR156) showed no obvious changes (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IP-Northern blot data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "3668a763-db85-40e6-9429-0c9d520cf992",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C38",
+      "claim": "In RSV-infected ago18 mutants, where AGO18 is absent, more miR168 was loaded into AGO1a and 1b.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these results, in RSV-infected ago18 mutants, where AGO18 is absent, more miR168 was now loaded into AGO1a and 1b (Figure 4C), which was correlated with the reduced expression of AGO1 at mRNA (Figure 4D) and protein (Figure 4E) levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IP-Northern blot data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "8a9f6dbd-3cdd-4fc0-ba8f-196b6fb259ab",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C39",
+      "claim": "Increased miR168 loading into AGO1a and 1b in ago18 mutants was correlated with the reduced expression of AGO1 at mRNA and protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these results, in RSV-infected ago18 mutants, where AGO18 is absent, more miR168 was now loaded into AGO1a and 1b (Figure 4C), which was correlated with the reduced expression of AGO1 at mRNA (Figure 4D) and protein (Figure 4E) levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data in Figure 4D and Western blot data in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "b04ea30d-9e37-4c72-9eeb-2480cffbd610",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C40",
+      "claim": "In the AGO18OE#1 transgenic rice line, in which AGO18 was overexpressed, AGO1a and 1b both increased at the mRNA level.",
+      "claim_type": "EXPLICIT",
+      "source": "Also in the AGO18OE#1 transgenic rice line, in which AGO18 was overexpressed, AGO1a and 1b both increased at the mRNA level (Figure 4F), likely as a result of more miR168 being loaded into AGO18.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "54d89c9c-9419-422f-aada-facba2b47bab",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C41",
+      "claim": "The increase in AGO1a and 1b mRNA levels in AGO18 overexpression lines is likely as a result of more miR168 being loaded into AGO18.",
+      "claim_type": "EXPLICIT",
+      "source": "Also in the AGO18OE#1 transgenic rice line, in which AGO18 was overexpressed, AGO1a and 1b both increased at the mRNA level (Figure 4F), likely as a result of more miR168 being loaded into AGO18.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that AGO18 overexpression leads to increased AGO1 levels, consistent with the sequestration model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "7e234bf7-fca3-4cdf-8c1e-220d66e08ffd",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C42",
+      "claim": "AGO2 was induced by RSV infection in wild-type rice plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous finding (Du et al., 2011), AGO2 was induced by RSV infection in wild-type rice plants (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Du et al., 2011 and qRT-PCR data in Figure 4F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "4c13d1a5-28e9-491a-83f7-60bd796d47d7",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C43",
+      "claim": "Knockout or overexpression of AGO18 did not have an obvious effect on AGO2 induction by RSV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, knockout or overexpression of AGO18 did not have an obvious effect on such induction, indicating that the induction of AGO2 by RSV infection is independent of AGO18 (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data in Figure 4F showing similar AGO2 induction in WT and AGO18 mutant/overexpression lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "35078c2a-93bd-47c4-a016-e808f086a800",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C44",
+      "claim": "The induction of AGO2 by RSV infection is independent of AGO18.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, knockout or overexpression of AGO18 did not have an obvious effect on such induction, indicating that the induction of AGO2 by RSV infection is independent of AGO18 (Figure 4F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that AGO2 induction occurs regardless of AGO18 status.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "e599a1eb-465e-4dbc-aed5-6deb29b1a8d4",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C45",
+      "claim": "AGO18 specifically up-regulates AGO1 in antiviral defense.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, AGO18 specifically up-regulates AGO1 in antiviral defense.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that AGO18 affects AGO1 but not AGO2 levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "8c9847b6-3de5-44ef-8952-020436d2537b",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C46",
+      "claim": "When AGO18 was co-expressed with AGO1a or AGO1b, there was a nearly five fold reduction in miR168 loading into AGO1a and AGO1b and concurrent increase in loading into AGO18.",
+      "claim_type": "EXPLICIT",
+      "source": "Results from IP-northern experiments showed that when AGO18 was co-expressed with AGO1a or AGO1b, there was a nearly five fold reduction in miR168 loading into AGO1a and AGO1b and concurrent increase in loading into AGO18 (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IP-Northern blot data in Figure 5 from transient expression experiments in N. benthamiana.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "3d524907-80ef-4334-a6f7-c24269974fc8",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C47",
+      "claim": "The control miR444 was specifically loaded into AGO1a and 1b and co-expression of AGO18 did not decrease its loading into AGO1a and 1b.",
+      "claim_type": "EXPLICIT",
+      "source": "The control miR444 was specifically loaded into AGO1a and 1b and co-expression of AGO18 did not decrease its loading into AGO1a and 1b (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IP-Northern blot data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "b6956a67-b9d0-49b8-ad71-87edcfa0d6f8",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C48",
+      "claim": "AGO18 can effectively compete with AGO1 for binding miR168.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that AGO18 can effectively compete with AGO1 for binding miR168.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transient expression experiments showing reduced miR168 in AGO1 when AGO18 is co-expressed (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "c6d162c2-2938-48c5-89c8-4155433f3652",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C49",
+      "claim": "AGO18 contains all of the four AGO signature domains and the DDH catalytic triad.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis indicates that AGO18 also contains all of the four AGO signature domains and the DDH catalytic triad (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by domain structure analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "2ad1aca1-ae88-47dd-98aa-5ded5ad88666",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C50",
+      "claim": "Both WT AGO18 and D833A could mostly complement the ago18 mutant for resistance to RSV infection, whereas the YF/AA mutant could not.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the disease symptoms (Figure 6C) and accumulation of viral genomic RNAs (Figure 6D), both WT AGO18 and D833A could mostly complement the ago18 mutant for resistance to RSV infection, whereas the YF/AA mutant could not.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by symptom data in Figure 6C and Northern blot data in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "35a1693e-43fb-4c39-8f67-a26fa783d3c6",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C51",
+      "claim": "AGO18 exerts its antiviral function mainly through small RNA binding, rather than slicing.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that AGO18 exerts its antiviral function mainly through small RNA binding, rather than slicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that the slicing-deficient D833A mutant can complement ago18, but the binding-deficient YF/AA mutant cannot.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "3f7aa2c4-02d3-4400-be62-8579cb666360",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C52",
+      "claim": "AGO1 expression was elevated by viral infection in the transgenic plants that express WT AGO18 or D833A mutant but not in those that express YF/AA.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that AGO1 expression was elevated by viral infection in the transgenic plants that express WT AGO18 or D833A mutant but not in those that express YF/AA (Figure 6E), further suggesting that the small RNA binding but not slicing activity of AGO18 is required for its role in up-regulating AGO1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "4621f5d9-c059-494c-a7cd-64077c9b791a",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C53",
+      "claim": "The small RNA binding but not slicing activity of AGO18 is required for its role in up-regulating AGO1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that AGO1 expression was elevated by viral infection in the transgenic plants that express WT AGO18 or D833A mutant but not in those that express YF/AA (Figure 6E), further suggesting that the small RNA binding but not slicing activity of AGO18 is required for its role in up-regulating AGO1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that binding-competent but slicing-deficient AGO18 can still upregulate AGO1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "95723052-0ff7-4281-891c-88d3054388b1",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C54",
+      "claim": "The steady-state AGO1a/AGO1a-Res mRNA levels of both AGO1a and AGO1a-Res transgenes accumulated to higher levels relative to the AGO1a levels in wild-type (WT) non-transgenic and ago18 plants.",
+      "claim_type": "EXPLICIT",
+      "source": "The steady-state AGO1a/AGO1a-Res mRNA levels of both AGO1a and AGO1a-Res transgenes accumulated to higher levels relative to the AGO1a levels in wild-type (WT) non-transgenic and ago18 plants (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "e0db3d8f-4a69-4e4a-a13d-23e27e087ecd",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C55",
+      "claim": "AGO1a mRNA level was reduced by RSV infection in the AGO1a transgenic line, whereas AGO1a-Res transgenic lines had no significant reduction in AGO1a-Res mRNA levels upon RSV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that AGO1a mRNA level was reduced by RSV infection in the AGO1a transgenic line, whereas AGO1a-Res transgenic lines had no significant reduction in AGO1a-Res mRNA levels upon RSV infection (Figure 7B), indicating that AGO1a is subject to regulation by miR168/AGO18.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "8b2164e9-c602-4a2e-9c2a-cddaedbf38ee",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C56",
+      "claim": "AGO1a is subject to regulation by miR168/AGO18.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that AGO1a mRNA level was reduced by RSV infection in the AGO1a transgenic line, whereas AGO1a-Res transgenic lines had no significant reduction in AGO1a-Res mRNA levels upon RSV infection (Figure 7B), indicating that AGO1a is subject to regulation by miR168/AGO18.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential response of AGO1a and AGO1a-Res to RSV infection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "ebf465fe-232b-4694-80d3-4a5091182606",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C57",
+      "claim": "None of the AGO1a-Res transgenic lines showed notable phenotypic differences from WT or ago18 plants in growth and development.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the transcript levels of the miR168-resistant transgene AGO1a markedly increased, none of these lines showed notable phenotypic differences from WT or ago18 plants in growth and development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by observational data from transgenic plant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "f2fddd2d-1548-4ca7-98ad-2656aa2fdd81",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C58",
+      "claim": "AGO1a-Res transgenic lines were much more resistant to RSV infection than ago18 and AGO1a plants.",
+      "claim_type": "EXPLICIT",
+      "source": "These transgenic lines, however, were much more resistant to RSV infection than ago18 and AGO1a plants (Figure 7B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by symptom data in Figure 7C and qRT-PCR data in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "9e66e00c-c71b-45b2-86cc-41d826517a06",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C59",
+      "claim": "Viral replication significantly decreased in the AGO1a-Res plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral replication significantly decreased in the AGO1a-Res plants (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Northern blot data in Figure 7D showing reduced viral RNA accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "9c93db24-dbe7-4838-9118-8748b29e5b68",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C60",
+      "claim": "AGO1 over-expression could rescue the deficiency of ago18 for viral resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, AGO1 over-expression could rescue the deficiency of ago18 for viral resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that AGO1a-Res expression in ago18 background restores viral resistance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "508960e1-dd57-4dcd-a3ae-76341c544e26",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C61",
+      "claim": "AGO18 functions through sequestering miR168 to up-regulate AGO1 against virus infections.",
+      "claim_type": "EXPLICIT",
+      "source": "These data provided further compelling evidence that AGO18 functions through sequestering miR168 to up-regulate AGO1 against virus infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the rescue of ago18 susceptibility by miR168-resistant AGO1a expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "31a109ca-2b0c-4b03-bd71-acb1b7d713dd",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C62",
+      "claim": "AGO18 regulates AGO1 homeostasis by specifically loading miR168 during viral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the above results, we conclude that AGO18 regulates AGO1 homeostasis by specifically loading miR168 during viral infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple lines of evidence including IP-Northern blots, deep sequencing, and complementation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "74235716-52ec-47a7-9044-6c128ca1868b",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C63",
+      "claim": "Sequestering of miR168 by AGO18 leads to increased accumulation of AGO1 to embark on an effective antiviral defense response.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequestering of miR168 by AGO18 leads to increased accumulation of AGO1 to embark on an effective antiviral defense response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing AGO1 levels increase when AGO18 sequesters miR168, and this correlates with increased viral resistance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "176e767f-0f01-4c1c-bedf-5abd148ed738",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C64",
+      "claim": "RSV CP is an effector to induce AGO18 expression during viral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that AGO18 was induced only in the transgenic lines that over-expressed CP, but not in those that over-expressed three other viral proteins (Figure 2\u2014figure supplement 2). This suggests that RSV CP is an effector to induce AGO18 expression during viral infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 2\u2014figure supplement 2 showing AGO18 induction only in CP-overexpressing lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "e56dcebf-d783-498e-b3e2-73b4eab4ad42",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C65",
+      "claim": "AGO1a and 1b are expressed at much higher levels than AGO1c and 1d in both mock-inoculated and RSV-infected rice plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Since AGO1a and 1b are expressed at much higher levels than AGO1c and 1d in both mock-inoculated and RSV-infected rice plants (Figure 1\u2014figure supplement 1B,C) (Kapoor et al., 2008), we presumed that AGO1a and 1b are more important for antiviral defense.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microarray data in Figure 1\u2014figure supplement 1B, qRT-PCR data in Figure 1\u2014figure supplement 1C, and citation to Kapoor et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "156313a6-b16f-47ed-b7b8-e66f506a3243",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C66",
+      "claim": "AGO1a and 1b are more important for antiviral defense than AGO1c and 1d.",
+      "claim_type": "EXPLICIT",
+      "source": "Since AGO1a and 1b are expressed at much higher levels than AGO1c and 1d in both mock-inoculated and RSV-infected rice plants (Figure 1\u2014figure supplement 1B,C) (Kapoor et al., 2008), we presumed that AGO1a and 1b are more important for antiviral defense.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the higher expression levels of AGO1a and 1b compared to AGO1c and 1d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "5d2910d0-7c1c-4d7e-b58a-3c9040539bee",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C67",
+      "claim": "The rice genome encodes five DCLs and 19 AGOs.",
+      "claim_type": "EXPLICIT",
+      "source": "The rice genome encodes five DCLs and 19 AGOs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of rice genome annotation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "f9e47b5a-6854-46a3-8d6e-2d78593de7de",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C68",
+      "claim": "Infection of many viruses can elevate the miR168 level to down-regulate AGO1, thereby nullifying this layer of host defense.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, infection of many viruses can elevate the miR168 level to down-regulate AGO1, thereby nullifying this layer of host defense (V\u00e1rallyay et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to V\u00e1rallyay et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "6f07bbc7-c573-48c6-963a-69d28e1a1587",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C69",
+      "claim": "Some plant viruses have evolved silencing suppressors to target AGO1.",
+      "claim_type": "EXPLICIT",
+      "source": "As a counter-defense strategy, some plant viruses have evolved silencing suppressors to target AGO1 (Burgy\u00e1n and Havelda, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Burgy\u00e1n and Havelda, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "d0224897-cb32-41a2-8b2f-52fe9ca1b7a7",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C70",
+      "claim": "AGO1 and AGO2 appear to exert antiviral functions in a non-redundant and cooperative manner.",
+      "claim_type": "EXPLICIT",
+      "source": "AGO2 is repressed by AGO1-associated miR403, and AGO1 and AGO2 appear to exert antiviral functions in a non-redundant and cooperative manner. Specifically, AGO1 functions in the first layer of antiviral RNAi; when AGO1's antiviral function is inhibited, a second layer is activated involving AGO2 (Harvey et al., 2011; Jaubert et al., 2011; Scholthof et al., 2011; Wang et al., 2011; Carbonell et al., 2012; Xia et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to Harvey et al., 2011; Jaubert et al., 2011; Scholthof et al., 2011; Wang et al., 2011; Carbonell et al., 2012; Xia et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "00712df3-33f0-40fd-a19d-3abd04afa315",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C71",
+      "claim": "AGO1 functions in the first layer of antiviral RNAi; when AGO1's antiviral function is inhibited, a second layer is activated involving AGO2.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, AGO1 functions in the first layer of antiviral RNAi; when AGO1's antiviral function is inhibited, a second layer is activated involving AGO2 (Harvey et al., 2011; Jaubert et al., 2011; Scholthof et al., 2011; Wang et al., 2011; Carbonell et al., 2012; Xia et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to Harvey et al., 2011; Jaubert et al., 2011; Scholthof et al., 2011; Wang et al., 2011; Carbonell et al., 2012; Xia et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "21ad3cb3-9bb2-499a-8e2b-9109eabd87c5",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C72",
+      "claim": "The model plant Arabidopsis thaliana encodes four DCLs that function in distinct and yet overlapping RNAi pathways to control diverse biological processes ranging from development, response to abiotic stresses, to defense against pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the model plant Arabidopsis thaliana encodes four DCLs that function indistinct and yet overlapping RNAi pathways to control diverse biological processes ranging from development, response to abiotic stresses, to defense against pathogens (Deleris et al., 2006; Chapman and Carrington, 2007; Garcia-Ruiz et al., 2010; Vazquez et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Deleris et al., 2006; Chapman and Carrington, 2007; Garcia-Ruiz et al., 2010; Vazquez et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "ad230f37-5649-40ae-bb59-58d505e29e41",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C73",
+      "claim": "Arabidopsis encodes 10 AGOs whose functions are not all understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Arabidopsis encodes 10 AGOs whose functions are not all understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of Arabidopsis genome.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "cf106254-be69-42e3-8c91-fe1fda0cc2dd",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C74",
+      "claim": "AGO1 mediates mRNA cleavage and is critical for development.",
+      "claim_type": "EXPLICIT",
+      "source": "Well-studied AGOs include AGO1 that mediates mRNA cleavage is critical for development, AGO4 that directs DNA methylation, and AGO2 that functions in DNA double strand break repair (Baumberger and Baulcombe, 2005; Mallory and Vaucheret, 2010; Ye et al., 2012; Wei et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Baumberger and Baulcombe, 2005; Mallory and Vaucheret, 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "a24b6b25-6ad7-4737-8cf2-abdf3efd5566",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C75",
+      "claim": "AGO4 directs DNA methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Well-studied AGOs include AGO1 that mediates mRNA cleavage is critical for development, AGO4 that directs DNA methylation, and AGO2 that functions in DNA double strand break repair (Baumberger and Baulcombe, 2005; Mallory and Vaucheret, 2010; Ye et al., 2012; Wei et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ye et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "d04c8311-2944-4b7d-9b5a-d095040709e8",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C76",
+      "claim": "AGO2 functions in DNA double strand break repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Well-studied AGOs include AGO1 that mediates mRNA cleavage is critical for development, AGO4 that directs DNA methylation, and AGO2 that functions in DNA double strand break repair (Baumberger and Baulcombe, 2005; Mallory and Vaucheret, 2010; Ye et al., 2012; Wei et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wei et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "0be81a84-355c-42ed-ae7e-5ee78e4541ba",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C77",
+      "claim": "The AGO1 mRNA is a target of miR168.",
+      "claim_type": "EXPLICIT",
+      "source": "At the post-transcriptional level, the AGO1 mRNA is a target of miR168.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of AGO1 regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "66eb417b-4b6b-40ca-bda7-7182722d26e6",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C78",
+      "claim": "miR168-guided cleavage of AGO1 mRNA by AGO1 protein exerts auto-regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, miR168-guided cleavage of AGO1 mRNA by AGO1 protein exerts auto-regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of AGO1 auto-regulation mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "fb272dbd-1190-4341-afd9-74dfdf08081a",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C79",
+      "claim": "AGO1 is co-expressed with miR168 and AGO1 protein can stabilize miR168 post-transcriptionally.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, AGO1 is co-expressed with miR168 and AGO1 protein can stabilize miR168 post-transcriptionally (Vaucheret et al., 2006; Vaucheret, 2008; Mallory and Vaucheret, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vaucheret et al., 2006; Vaucheret, 2008; Mallory and Vaucheret, 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "b8f7d5c7-401d-4966-9365-91aa4ee4d273",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C80",
+      "claim": "The accumulation of AGO1 can be reduced by F-box proteins in a proteasome-independent manner through the autophagy pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "At the post-translational level, the accumulation of AGO1 can be reduced by F-box proteins in a proteasome-independent manner through the autophagy pathway (Derrien et al., 2012; Rogers and Chen, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Derrien et al., 2012; Rogers and Chen, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "044dd18d-0754-4471-8e5a-9a91b8d793f3",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C81",
+      "claim": "RNA-mediated immunity against viruses operates in plants, fungi, invertebrates, and mammals to specifically destroy viral RNAs through the cellular RNA silencing machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-mediated immunity against viruses operates in plants, fungi, invertebrates, and mammals to specifically destroy viral RNAs through the cellular RNA silencing machinery (Li et al., 2013b; Maillard et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Li et al., 2013b; Maillard et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "0a1952c1-55cb-4f24-99be-ee417fe54246",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C82",
+      "claim": "Rice viral pathogens are genetically diverse and many highly pathogenic viruses such as Rice stripe Tenuivirus (RSV, with a genome comprising 4 negative-stranded RNAs) and Rice dwarf Phytoreovirus (RDV, with a genome comprising 12 double-stranded RNAs) are transmitted persistently and solely by arthropod vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Rice viral pathogens are genetically diverse and many highly pathogenic viruses such as Rice stripe Tenuivirus (RSV, with a genome comprising 4 negative-stranded RNAs) and Rice dwarf Phytoreovirus (RDV, with a genome comprising 12 double-stranded RNAs) are transmitted persistently and solely by arthropod vectors (Hibino, 1996; Ren et al., 2010; Du et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hibino, 1996; Ren et al., 2010; Du et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "92d512c9-98c6-4d3f-9843-9412d52c4a5c",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C83",
+      "claim": "Engineering rice and other cereals to over-express AGO18 may provide a new strategy for the control of diverse viral pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that engineering rice and other cereals to over-express AGO18 may provide a new strategy for the control of diverse viral pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the experimental findings showing AGO18 overexpression confers broad-spectrum virus resistance.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "57134b76-1df2-40ae-8933-fd2915ec3289",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C84",
+      "claim": "The up-regulation of AGO1 via AGO18 binding of miR168 represents a novel type of mechanism among mechanisms of AGO-regulation of AGO1 homeostasis or activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, among mechanisms of AGO-regulation of AGO1 homeostasis or activity, the up-regulation of AGO1 via AGO18 binding of miR168 represents a novel type of mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison with previously known mechanisms of AGO regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "fdb88e54-5b9e-4886-bf5d-db9774ba76b2",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C85",
+      "claim": "In addition to miR168, several miRNAs including miR528, miR159a, and miR159b were also recruited by AGO18 in RSV-infected rice plants.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also noteworthy that, in addition to miR168, several miRNAs including miR528, miR159a, and miR159b were also recruited by AGO18 in RSV-infected rice plants (Supplementary file 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by deep sequencing data in Supplementary file 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "d28b098b-1efc-4749-859c-353687526acd",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C86",
+      "claim": "AGO18 may play regulatory roles in other capacities or have its own independent biological functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, for AGO18, we cannot rule out the possibility that AGO18 plays regulatory roles in other capacities or has its own independent biological functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation that AGO18 binds multiple miRNAs beyond miR168.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "fb8236f0-619c-4811-821d-7b43917365a1",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C87",
+      "claim": "Sequestering miR168 by AGO18 to regulate AGO1 homeostasis represents an evolutionary novelty.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, sequestering miR168 by AGO18 to regulate AGO1 homeostasis represents an evolutionary novelty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings in the context of evolutionary biology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "31ce83e1-018a-40e1-8cb3-5e7b9aa4d337",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "claim_id": "C88",
+      "claim": "This mechanism functions against infection by two evolutionarily distinct viruses, and likely has broader significance in resistance against more viruses in a wide range of monocots.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism functions against infection by two evolutionarily distinct viruses, and likely has broader significance in resistance against more viruses in a wide range of monocots.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data showing function against RSV and RDV, with speculation about broader applicability.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8ffa94a7-4153-454c-ab42-9e22a0489397",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "AGO1 is a major effector of antiviral RNAi in rice under natural infection conditions. The ago1 RNAi line showed increased susceptibility to RSV infection with more severe symptoms and higher viral RNA accumulation. RSV vsiRNAs were detected in AGO1a and AGO1b complexes, indicating AGO1 functions as an effector of vsiRNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 collectively demonstrate AGO1's antiviral role in rice. The genetic evidence from ago1 RNAi lines (C6), biochemical evidence of vsiRNA association with AGO1 complexes (C7), and the inference that AGO1 is a vsiRNA effector (C8) provide converging support. The use of natural infection conditions via insect vectors strengthens the ecological relevance of these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "4d4bde30-f1a7-41ee-bac8-807881be921b",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "AGO18, a member of a monocot-specific AGO clade, is highly induced by viral infection at the transcriptional level. AGO18 protein accumulates to high levels in RSV-infected plants but is barely detectable in mock-inoculated plants. RSV coat protein (CP) is the viral effector that induces AGO18 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C14 and C64 are well-supported by multiple lines of evidence including Western blots (C12), GUS reporter assays (C13), phylogenetic analysis (C10), and viral protein overexpression experiments (C64). The data consistently show virus-specific induction of AGO18 at both mRNA and protein levels, with CP identified as the inducing factor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "770e99a6-6722-48e0-b13f-7c624a508b39",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AGO18 is required for rice resistance to viral infection. The ago18 mutant shows normal growth and development but is much more sensitive to RSV infection with increased viral replication and infection rates. Despite AGO1 being present in ago18 mutants, the antiviral function of AGO1 depends on the presence of AGO18.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C15-C20 are strongly supported by genetic evidence from ago18 mutants showing increased viral susceptibility (C16-C17) while maintaining normal development (C15). The critical observation that AGO1 is present but non-functional in ago18 mutants (C19-C20) establishes the epistatic relationship between these proteins and supports the main claim C1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "209f9d6f-900a-4a02-958c-e9acf0d4dd86",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Stable transgenic expression of AGO18 confers broad-spectrum virus resistance in rice. AGO18 overexpression increases resistance to both RSV and RDV in a dose-dependent manner, indicating effectiveness against viruses with diverse genome structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C21-C23 are supported by data from multiple independent transgenic lines showing correlation between AGO18 expression levels and viral resistance (C21), and function against both RSV and RDV (C22). The demonstration of activity against two evolutionarily distinct viruses with different genome types supports the broad-spectrum claim, though testing against additional viruses would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "f6125271-13e1-47d2-9eae-445f421b274c",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "AGO18 is not a major effector of vsiRNAs but uses a different strategy for antiviral defense. While vsiRNAs are highly enriched in AGO1 complexes (17.37-9.77%), they account for only 2.52% of AGO18-bound small RNAs. Despite this, AGO1 and AGO18 depend on each other for antiviral activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C30 are well-supported by deep sequencing data (C26, C28) and Northern blot analyses (C25) showing differential vsiRNA enrichment between AGO1 and AGO18. The inference that AGO18 uses a different strategy (C30) is logical given the low vsiRNA binding but requirement for antiviral function. The mutual dependence claim (C24) is supported by genetic evidence from both ago1 and ago18 mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "4a2cc854-6515-4c88-8bc6-b19e246abe1f",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "AGO18 up-regulates AGO1 by competitively binding miR168 to alleviate AGO1 repression. RSV infection increases both miR168 and AGO18 levels, but AGO18 recruits more miR168 than AGO1 does. In ago18 mutants, more miR168 loads into AGO1, correlating with reduced AGO1 expression at mRNA and protein levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C31-C39 are strongly supported by multiple complementary approaches: deep sequencing showing preferential miR168 binding to AGO18 (C33), IP-Northern blots confirming differential miR168 association (C36, C38), and qRT-PCR/Western blots showing AGO1 level changes in ago18 mutants (C39). The mechanistic model of competitive binding is well-supported by the data, though direct demonstration of competition would strengthen the claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "044bedd0-2dbf-4add-b0d6-250a0bc439a9",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "AGO18 specifically up-regulates AGO1 but not AGO2 in antiviral defense. In AGO18 overexpression lines, AGO1a and AGO1b mRNA levels increase, likely due to more miR168 being sequestered by AGO18. AGO2 induction by RSV infection is independent of AGO18 status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 are supported by qRT-PCR data showing increased AGO1 levels in AGO18 overexpression lines (C40) and unchanged AGO2 induction regardless of AGO18 status (C43). This specificity strengthens the mechanistic model and demonstrates that AGO18's regulatory function is targeted to AGO1 rather than being a general effect on all AGOs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "8f0d3b73-217b-4873-b7f8-8180066a2705",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "AGO18 can effectively compete with AGO1 for binding miR168. In transient expression experiments, co-expression of AGO18 with AGO1a or AGO1b resulted in a nearly five-fold reduction in miR168 loading into AGO1 with concurrent increase in AGO18. The control miR444 showed no such competition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 are strongly supported by IP-Northern blot data from transient expression experiments in N. benthamiana (C46). The specificity of the competition is demonstrated by the control miRNA (C47), which shows no redistribution. This direct experimental test of the competition model provides compelling evidence for the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "17763a71-e59d-4f71-a756-66d626432008",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "AGO18 exerts its antiviral function through small RNA binding rather than slicing activity. AGO18 contains all four AGO signature domains and the DDH catalytic triad. Complementation experiments show that both wild-type AGO18 and the slicing-deficient D833A mutant rescue ago18 susceptibility, while the binding-deficient YF/AA mutant does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 are well-supported by domain analysis (C49) and functional complementation experiments (C50). The differential complementation by D833A (slicing-deficient) versus YF/AA (binding-deficient) mutants provides strong evidence that binding, not slicing, is the critical activity. The correlation with AGO1 upregulation (C52) further supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "3f9477ae-847a-437f-a63f-513fa8e0e472",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Expression of miR168-resistant AGO1a in the ago18 background rescues or increases rice antiviral activity. AGO1a-Res transgenic lines show higher AGO1 mRNA levels that are not reduced by RSV infection, unlike wild-type AGO1a. These lines are more resistant to RSV infection with significantly decreased viral replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C54-C61 provide compelling genetic evidence for the miR168-AGO18-AGO1 regulatory axis. The key observation that miR168-resistant AGO1a rescues ago18 susceptibility (C58-C59) while maintaining normal development (C57) strongly supports the proposed mechanism. The differential response of AGO1a versus AGO1a-Res to viral infection (C55) further validates the regulatory model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "d77b94a7-f9b9-4e55-b7a3-80eb880f55a0",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "AGO18 regulates AGO1 homeostasis by specifically loading miR168 during viral infection, leading to increased AGO1 accumulation and effective antiviral defense response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 represent the synthesis of multiple experimental results including IP-Northern blots, deep sequencing, complementation experiments, and rescue experiments with miR168-resistant AGO1a. The convergence of evidence from genetic, biochemical, and molecular approaches strongly supports this mechanistic conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "38780227-993d-4ccf-bbe2-59451f39642e",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "AGO1a and AGO1b are expressed at much higher levels than AGO1c and AGO1d in rice plants and are presumed to be more important for antiviral defense.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 are supported by microarray and qRT-PCR data showing differential expression levels. However, the inference that higher expression correlates with greater importance (C66) is reasonable but not directly tested. Functional studies of AGO1c and AGO1d would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "9f26651b-a484-4aa0-817e-38354970948f",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background information on RNAi machinery, AGO proteins, and their roles in plant biology and antiviral defense, including established knowledge about Arabidopsis and rice genomes, AGO1 regulation, and viral counter-defense strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C82 represent established knowledge from the literature, supported by appropriate citations. These claims provide necessary context for the study but do not constitute novel findings. The citations appear appropriate and the general knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    },
+    {
+      "id": "f5beb86c-8dfb-4156-83d6-bd0316009f25",
+      "content_id": "f672d736-b8a1-42ae-bfba-d7f0a8f8435d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The AGO18-miR168-AGO1 regulatory mechanism represents a novel evolutionary innovation with potential broader significance. AGO18 may have additional regulatory roles beyond miR168 sequestration, and engineering crops to overexpress AGO18 may provide a new strategy for viral disease control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C88 represent interpretations, speculations, and proposals for future work rather than directly tested hypotheses. While C84 (novelty of mechanism) is reasonably supported by comparison with known mechanisms, C83 (engineering strategy) and C88 (broader significance) are proposals requiring additional validation. C85 (binding of other miRNAs) is observational but C86 (other functions) is speculative. These claims extend beyond the data presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:30:11.787257Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7341b0e6-ee20-4431-b799-d189a4123c39",
+      "result_id": "8ffa94a7-4153-454c-ab42-9e22a0489397"
+    },
+    {
+      "claim_id": "f722a06d-6764-494d-ba28-7f643d41cd91",
+      "result_id": "8ffa94a7-4153-454c-ab42-9e22a0489397"
+    },
+    {
+      "claim_id": "ac900fee-018b-49ef-a319-40c4d430e339",
+      "result_id": "8ffa94a7-4153-454c-ab42-9e22a0489397"
+    },
+    {
+      "claim_id": "91037464-e4d8-4195-a44b-f9fab23f5ae8",
+      "result_id": "8ffa94a7-4153-454c-ab42-9e22a0489397"
+    },
+    {
+      "claim_id": "b2365df5-94f1-4374-9877-11ccecb55650",
+      "result_id": "8ffa94a7-4153-454c-ab42-9e22a0489397"
+    },
+    {
+      "claim_id": "c8efa804-562b-4c97-bd67-ed6b8edee742",
+      "result_id": "4d4bde30-f1a7-41ee-bac8-807881be921b"
+    },
+    {
+      "claim_id": "77b3f083-a787-4bbb-85d6-b77f54a61fb7",
+      "result_id": "4d4bde30-f1a7-41ee-bac8-807881be921b"
+    },
+    {
+      "claim_id": "5c2f1d38-ebee-4623-804c-d9102f6b5cde",
+      "result_id": "4d4bde30-f1a7-41ee-bac8-807881be921b"
+    },
+    {
+      "claim_id": "d1fb056c-564e-4914-bec0-3d9f364ac093",
+      "result_id": "4d4bde30-f1a7-41ee-bac8-807881be921b"
+    },
+    {
+      "claim_id": "b7ac3e52-c249-499b-beea-dba1f1230b85",
+      "result_id": "4d4bde30-f1a7-41ee-bac8-807881be921b"
+    },
+    {
+      "claim_id": "176e767f-0f01-4c1c-bedf-5abd148ed738",
+      "result_id": "4d4bde30-f1a7-41ee-bac8-807881be921b"
+    },
+    {
+      "claim_id": "6191f647-b623-455f-84dc-0f1a1c7de57a",
+      "result_id": "770e99a6-6722-48e0-b13f-7c624a508b39"
+    },
+    {
+      "claim_id": "010c2df3-b9c8-4e64-9b95-4cd33711473b",
+      "result_id": "770e99a6-6722-48e0-b13f-7c624a508b39"
+    },
+    {
+      "claim_id": "30c64d97-eb7d-4351-97ee-32a87cb0b9ac",
+      "result_id": "770e99a6-6722-48e0-b13f-7c624a508b39"
+    },
+    {
+      "claim_id": "ec736049-c54e-4e88-ad4a-acd1625e422f",
+      "result_id": "770e99a6-6722-48e0-b13f-7c624a508b39"
+    },
+    {
+      "claim_id": "bb8d31af-9cbc-4a98-9303-34f14a5e8067",
+      "result_id": "770e99a6-6722-48e0-b13f-7c624a508b39"
+    },
+    {
+      "claim_id": "be3dd8d1-8eda-46b9-b9eb-6636769f8c96",
+      "result_id": "770e99a6-6722-48e0-b13f-7c624a508b39"
+    },
+    {
+      "claim_id": "82082e51-2f07-46a9-9bab-ed1638c58bab",
+      "result_id": "770e99a6-6722-48e0-b13f-7c624a508b39"
+    },
+    {
+      "claim_id": "cffeeed9-75fc-4938-b391-30b572660580",
+      "result_id": "209f9d6f-900a-4a02-958c-e9acf0d4dd86"
+    },
+    {
+      "claim_id": "3b124aae-d2fc-4c5f-a679-a5ae84cdaaa0",
+      "result_id": "209f9d6f-900a-4a02-958c-e9acf0d4dd86"
+    },
+    {
+      "claim_id": "0ac4c5da-7e0d-40bf-9164-c4716ac7f8e6",
+      "result_id": "209f9d6f-900a-4a02-958c-e9acf0d4dd86"
+    },
+    {
+      "claim_id": "e54a4667-0c34-4166-8431-17ddc75bdfb9",
+      "result_id": "209f9d6f-900a-4a02-958c-e9acf0d4dd86"
+    },
+    {
+      "claim_id": "00a7cc64-697c-4b74-ad91-704b0752dfec",
+      "result_id": "f6125271-13e1-47d2-9eae-445f421b274c"
+    },
+    {
+      "claim_id": "79393664-a0c7-427c-b15d-79baba4e1233",
+      "result_id": "f6125271-13e1-47d2-9eae-445f421b274c"
+    },
+    {
+      "claim_id": "227aaa65-6824-4f6d-bbff-5158fa569964",
+      "result_id": "f6125271-13e1-47d2-9eae-445f421b274c"
+    },
+    {
+      "claim_id": "536cc956-e5ce-4443-affa-520dff596bb3",
+      "result_id": "f6125271-13e1-47d2-9eae-445f421b274c"
+    },
+    {
+      "claim_id": "4c2be483-af5c-4da4-b8e8-bd11ed6a3323",
+      "result_id": "f6125271-13e1-47d2-9eae-445f421b274c"
+    },
+    {
+      "claim_id": "6fafc8c9-5989-4c9e-b030-be8f44f0c757",
+      "result_id": "f6125271-13e1-47d2-9eae-445f421b274c"
+    },
+    {
+      "claim_id": "7a29bb0e-04b5-49ef-bc80-6b9075b231d5",
+      "result_id": "f6125271-13e1-47d2-9eae-445f421b274c"
+    },
+    {
+      "claim_id": "22df092d-b293-4d92-95ce-0ae26e8583a9",
+      "result_id": "4a2cc854-6515-4c88-8bc6-b19e246abe1f"
+    },
+    {
+      "claim_id": "5ac3653e-7fc3-4482-bf96-12cb98c01a71",
+      "result_id": "4a2cc854-6515-4c88-8bc6-b19e246abe1f"
+    },
+    {
+      "claim_id": "aed1baa7-fa7c-40f0-ba34-a6a71d236ab2",
+      "result_id": "4a2cc854-6515-4c88-8bc6-b19e246abe1f"
+    },
+    {
+      "claim_id": "6999a5f9-4c6e-4552-b2bb-5337c2ecd18a",
+      "result_id": "4a2cc854-6515-4c88-8bc6-b19e246abe1f"
+    },
+    {
+      "claim_id": "f2f36f8e-9e3b-4670-8aef-8b0c3ececdfd",
+      "result_id": "4a2cc854-6515-4c88-8bc6-b19e246abe1f"
+    },
+    {
+      "claim_id": "d1439af7-aa4b-4884-bcda-d332549cfe0d",
+      "result_id": "4a2cc854-6515-4c88-8bc6-b19e246abe1f"
+    },
+    {
+      "claim_id": "1a1731d0-30c0-4b27-830b-acd676657a71",
+      "result_id": "4a2cc854-6515-4c88-8bc6-b19e246abe1f"
+    },
+    {
+      "claim_id": "87a3358e-c58e-44e2-917c-11873b416f10",
+      "result_id": "4a2cc854-6515-4c88-8bc6-b19e246abe1f"
+    },
+    {
+      "claim_id": "3668a763-db85-40e6-9429-0c9d520cf992",
+      "result_id": "4a2cc854-6515-4c88-8bc6-b19e246abe1f"
+    },
+    {
+      "claim_id": "8a9f6dbd-3cdd-4fc0-ba8f-196b6fb259ab",
+      "result_id": "4a2cc854-6515-4c88-8bc6-b19e246abe1f"
+    },
+    {
+      "claim_id": "b04ea30d-9e37-4c72-9eeb-2480cffbd610",
+      "result_id": "044bedd0-2dbf-4add-b0d6-250a0bc439a9"
+    },
+    {
+      "claim_id": "54d89c9c-9419-422f-aada-facba2b47bab",
+      "result_id": "044bedd0-2dbf-4add-b0d6-250a0bc439a9"
+    },
+    {
+      "claim_id": "7e234bf7-fca3-4cdf-8c1e-220d66e08ffd",
+      "result_id": "044bedd0-2dbf-4add-b0d6-250a0bc439a9"
+    },
+    {
+      "claim_id": "4c13d1a5-28e9-491a-83f7-60bd796d47d7",
+      "result_id": "044bedd0-2dbf-4add-b0d6-250a0bc439a9"
+    },
+    {
+      "claim_id": "35078c2a-93bd-47c4-a016-e808f086a800",
+      "result_id": "044bedd0-2dbf-4add-b0d6-250a0bc439a9"
+    },
+    {
+      "claim_id": "e599a1eb-465e-4dbc-aed5-6deb29b1a8d4",
+      "result_id": "044bedd0-2dbf-4add-b0d6-250a0bc439a9"
+    },
+    {
+      "claim_id": "8c9847b6-3de5-44ef-8952-020436d2537b",
+      "result_id": "8f0d3b73-217b-4873-b7f8-8180066a2705"
+    },
+    {
+      "claim_id": "3d524907-80ef-4334-a6f7-c24269974fc8",
+      "result_id": "8f0d3b73-217b-4873-b7f8-8180066a2705"
+    },
+    {
+      "claim_id": "b6956a67-b9d0-49b8-ad71-87edcfa0d6f8",
+      "result_id": "8f0d3b73-217b-4873-b7f8-8180066a2705"
+    },
+    {
+      "claim_id": "c6d162c2-2938-48c5-89c8-4155433f3652",
+      "result_id": "17763a71-e59d-4f71-a756-66d626432008"
+    },
+    {
+      "claim_id": "2ad1aca1-ae88-47dd-98aa-5ded5ad88666",
+      "result_id": "17763a71-e59d-4f71-a756-66d626432008"
+    },
+    {
+      "claim_id": "35a1693e-43fb-4c39-8f67-a26fa783d3c6",
+      "result_id": "17763a71-e59d-4f71-a756-66d626432008"
+    },
+    {
+      "claim_id": "3f7aa2c4-02d3-4400-be62-8579cb666360",
+      "result_id": "17763a71-e59d-4f71-a756-66d626432008"
+    },
+    {
+      "claim_id": "4621f5d9-c059-494c-a7cd-64077c9b791a",
+      "result_id": "17763a71-e59d-4f71-a756-66d626432008"
+    },
+    {
+      "claim_id": "1c049d57-d707-44c4-8d69-19b14c496b01",
+      "result_id": "3f9477ae-847a-437f-a63f-513fa8e0e472"
+    },
+    {
+      "claim_id": "95723052-0ff7-4281-891c-88d3054388b1",
+      "result_id": "3f9477ae-847a-437f-a63f-513fa8e0e472"
+    },
+    {
+      "claim_id": "e0db3d8f-4a69-4e4a-a13d-23e27e087ecd",
+      "result_id": "3f9477ae-847a-437f-a63f-513fa8e0e472"
+    },
+    {
+      "claim_id": "8b2164e9-c602-4a2e-9c2a-cddaedbf38ee",
+      "result_id": "3f9477ae-847a-437f-a63f-513fa8e0e472"
+    },
+    {
+      "claim_id": "ebf465fe-232b-4694-80d3-4a5091182606",
+      "result_id": "3f9477ae-847a-437f-a63f-513fa8e0e472"
+    },
+    {
+      "claim_id": "f2fddd2d-1548-4ca7-98ad-2656aa2fdd81",
+      "result_id": "3f9477ae-847a-437f-a63f-513fa8e0e472"
+    },
+    {
+      "claim_id": "9e66e00c-c71b-45b2-86cc-41d826517a06",
+      "result_id": "3f9477ae-847a-437f-a63f-513fa8e0e472"
+    },
+    {
+      "claim_id": "9c93db24-dbe7-4838-9118-8748b29e5b68",
+      "result_id": "3f9477ae-847a-437f-a63f-513fa8e0e472"
+    },
+    {
+      "claim_id": "508960e1-dd57-4dcd-a3ae-76341c544e26",
+      "result_id": "3f9477ae-847a-437f-a63f-513fa8e0e472"
+    },
+    {
+      "claim_id": "31a109ca-2b0c-4b03-bd71-acb1b7d713dd",
+      "result_id": "d77b94a7-f9b9-4e55-b7a3-80eb880f55a0"
+    },
+    {
+      "claim_id": "74235716-52ec-47a7-9044-6c128ca1868b",
+      "result_id": "d77b94a7-f9b9-4e55-b7a3-80eb880f55a0"
+    },
+    {
+      "claim_id": "e56dcebf-d783-498e-b3e2-73b4eab4ad42",
+      "result_id": "38780227-993d-4ccf-bbe2-59451f39642e"
+    },
+    {
+      "claim_id": "156313a6-b16f-47ed-b7b8-e66f506a3243",
+      "result_id": "38780227-993d-4ccf-bbe2-59451f39642e"
+    },
+    {
+      "claim_id": "5d2910d0-7c1c-4d7e-b58a-3c9040539bee",
+      "result_id": "9f26651b-a484-4aa0-817e-38354970948f"
+    },
+    {
+      "claim_id": "f9e47b5a-6854-46a3-8d6e-2d78593de7de",
+      "result_id": "9f26651b-a484-4aa0-817e-38354970948f"
+    },
+    {
+      "claim_id": "6f07bbc7-c573-48c6-963a-69d28e1a1587",
+      "result_id": "9f26651b-a484-4aa0-817e-38354970948f"
+    },
+    {
+      "claim_id": "d0224897-cb32-41a2-8b2f-52fe9ca1b7a7",
+      "result_id": "9f26651b-a484-4aa0-817e-38354970948f"
+    },
+    {
+      "claim_id": "00712df3-33f0-40fd-a19d-3abd04afa315",
+      "result_id": "9f26651b-a484-4aa0-817e-38354970948f"
+    },
+    {
+      "claim_id": "21ad3cb3-9bb2-499a-8e2b-9109eabd87c5",
+      "result_id": "9f26651b-a484-4aa0-817e-38354970948f"
+    },
+    {
+      "claim_id": "ad230f37-5649-40ae-bb59-58d505e29e41",
+      "result_id": "9f26651b-a484-4aa0-817e-38354970948f"
+    },
+    {
+      "claim_id": "cf106254-be69-42e3-8c91-fe1fda0cc2dd",
+      "result_id": "9f26651b-a484-4aa0-817e-38354970948f"
+    },
+    {
+      "claim_id": "a24b6b25-6ad7-4737-8cf2-abdf3efd5566",
+      "result_id": "9f26651b-a484-4aa0-817e-38354970948f"
+    },
+    {
+      "claim_id": "d04c8311-2944-4b7d-9b5a-d095040709e8",
+      "result_id": "9f26651b-a484-4aa0-817e-38354970948f"
+    },
+    {
+      "claim_id": "0be81a84-355c-42ed-ae7e-5ee78e4541ba",
+      "result_id": "9f26651b-a484-4aa0-817e-38354970948f"
+    },
+    {
+      "claim_id": "66eb417b-4b6b-40ca-bda7-7182722d26e6",
+      "result_id": "9f26651b-a484-4aa0-817e-38354970948f"
+    },
+    {
+      "claim_id": "fb272dbd-1190-4341-afd9-74dfdf08081a",
+      "result_id": "9f26651b-a484-4aa0-817e-38354970948f"
+    },
+    {
+      "claim_id": "b8f7d5c7-401d-4966-9365-91aa4ee4d273",
+      "result_id": "9f26651b-a484-4aa0-817e-38354970948f"
+    },
+    {
+      "claim_id": "044dd18d-0754-4471-8e5a-9a91b8d793f3",
+      "result_id": "9f26651b-a484-4aa0-817e-38354970948f"
+    },
+    {
+      "claim_id": "0a1952c1-55cb-4f24-99be-ee417fe54246",
+      "result_id": "9f26651b-a484-4aa0-817e-38354970948f"
+    },
+    {
+      "claim_id": "92d512c9-98c6-4d3f-9843-9412d52c4a5c",
+      "result_id": "f5beb86c-8dfb-4156-83d6-bd0316009f25"
+    },
+    {
+      "claim_id": "57134b76-1df2-40ae-8933-fd2915ec3289",
+      "result_id": "f5beb86c-8dfb-4156-83d6-bd0316009f25"
+    },
+    {
+      "claim_id": "fdb88e54-5b9e-4886-bf5d-db9774ba76b2",
+      "result_id": "f5beb86c-8dfb-4156-83d6-bd0316009f25"
+    },
+    {
+      "claim_id": "d28b098b-1efc-4749-859c-353687526acd",
+      "result_id": "f5beb86c-8dfb-4156-83d6-bd0316009f25"
+    },
+    {
+      "claim_id": "fb8236f0-619c-4811-821d-7b43917365a1",
+      "result_id": "f5beb86c-8dfb-4156-83d6-bd0316009f25"
+    },
+    {
+      "claim_id": "31ce83e1-018a-40e1-8cb3-5e7b9aa4d337",
+      "result_id": "f5beb86c-8dfb-4156-83d6-bd0316009f25"
+    }
+  ],
+  "comparisons": []
+}

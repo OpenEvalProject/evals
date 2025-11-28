@@ -1,0 +1,1869 @@
+{
+  "submission": {
+    "id": "588f3430-190f-4cf3-b4cf-db2b831b6f93",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:07:13.215718Z",
+    "updated_at": "2025-11-28T22:07:13.215718Z"
+  },
+  "content": [
+    {
+      "id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "submission_id": "588f3430-190f-4cf3-b4cf-db2b831b6f93",
+      "content_type": "manuscript",
+      "content_text": "# Spatial cue reliability drives frequency tuning in the barn Owl's midbrain\n\n## Authors\n\n- Fanny Cazettes<sup>1</sup> \u2020\n- Brian J Fischer<sup>2</sup>\n- Jose L Pena<sup>1</sup>\n\n### Affiliations\n\n1. Department of Neuroscience Albert Einstein College of Medicine New York United States\n2. Department of Mathematics Seattle University Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe robust representation of the environment from unreliable sensory cues is vital for the efficient function of the brain. However, how the neural processing captures the most reliable cues is unknown. The interaural time difference (ITD) is the primary cue to localize sound in horizontal space. ITD is encoded in the firing rate of neurons that detect interaural phase difference (IPD). Due to the filtering effect of the head, IPD for a given location varies depending on the environmental context. We found that, in barn owls, at each location there is a frequency range where the head filtering yields the most reliable IPDs across contexts. Remarkably, the frequency tuning of space-specific neurons in the owl's midbrain varies with their preferred sound location, matching the range that carries the most reliable IPD. Thus, frequency tuning in the owl's space-specific neurons reflects a higher-order feature of the code that captures cue reliability.\n\n## Introduction\n\nPerception relies on sensory cues that are used by the brain to infer properties of the environment. For example, the ability to see the world in three dimensions depends on cues that signal depth (Howard, 2012). Similarly, sound localization, relies on auditory spatial cues including phase differences of sounds between the ears (Moiseff and Konishi, 1983; Grothe et al., 2010). Variability of sensory cues is intrinsic to the physics of stimuli and sensory organs. For instance, light and sound waves are reflected and absorbed differently by various media depending on wavelength and location (Carlile, 1996). Multiple light and sound sources can also physically interfere with each other. In the auditory system, contexts such as whether the environment is reverberant, quiet or noisy can influence spatial cues greatly. The presence of concurrent sounds can shift auditory cues used for localizing a target sound (Keller and Takahashi, 2005). This shift makes cues differ from what would be measured if the sound was emitted in a quiet environment. To be considered reliable, cues associated with a given location must be similar across different contexts. Unreliable cues, on the other hand, vary across contexts.\n\nThe brain must take into account the reliability of sensory cues in order to make perception robust to natural variations. A possible strategy to overcome these variations is to integrate sensory cues with reference to their variability. Indeed, when cues provide ambiguous or conflicting information, those cues that vary less are weighted more heavily in perceptual judgments (Ernst and Banks, 2002; Jacobs, 2002; Alais and Burr, 2004).\n\nHumans and other animals use the interaural time difference (ITD) for sound localization (Grothe et al., 2010). ITD is the difference in the arrival time of a sound at the ears. ITD results from unequal distances of a sound source to the two ears when the source is to the left or to the right of the listener. In barn owls, ITD is the main cue for localizing in the horizontal space (Moiseff and Konishi, 1983; Moiseff, 1989). ITD is initially detected by brainstem neurons tuned to narrow frequency bands in both mammals and birds (Carr and Konishi, 1990; Schnupp and Carr, 2009; Figure 1A). These neurons compare the timing of inputs from the left and right sides of the brain (Carr and Konishi, 1990). Due to the periodicity of sound signals when narrow frequency channels are considered, the shift in time between the left and right ears for each frequency component is more precisely expressed in terms of phase, referred to as the interaural phase difference (IPD). The spectrum of IPDs across frequency serves as a set of cues used for sound localization.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04854/elife-04854-fig1-v2.jpg)\n\n**Figure 1.:** (A) Tuning to interaural time difference (ITD) emerges from the convergence of inputs selective for the same ITD but different frequencies (F1\u2013F3) (Takahashi and Konishi, 1986; Mazer, 1998; Pena and Konishi, 2000; best ITD indicated by the dashed line). While ITD-selective neurons respond to a broad range of frequencies (here the black bold curve represents the neuron's combined response for frequencies F1, F2 and F3), their inputs are narrowly tuned to frequency (each input only responding to F1, F2 or F3). Because the inputs are narrowly tuned to frequency, the responses at each input vary with the phase difference between the left and right ears (IPD) of their preferred frequency, as shown by the sinusoidal curves. (B) A sound emitted by a single source (B, left) in front of the owl is filtered by the head and decomposed in narrow frequency channels by the cochlea. The localization cue corresponds to an IPD in each frequency channel (F1\u2013F3). In a different context (B, right), the target frontal sound (yellow) is emitted concurrently with another sound source from a different location (blue). The blue source interferes with the yellow target and shifts the resultant IPDs in each frequency channel (shown in green). Black dotted lines indicate IPD responses for the target frontal source alone, for comparison. While IPD shifts greatly for some frequencies (F1 and F3), in others (F2) IPD is more robust to the presence of another source. Thus in this example, F2 carries the most reliable IPD cue. To provide a clearer visualization that IPD is encoded at different frequencies, F1\u2013F3 inputs remain plotted as a function of ITD in (B).\n\nPrevious studies of sound localization suggest that the emergence of space-specific neurons in the midbrain is due to a wide convergence of frequency channels (Brainard et al., 1992, Mazer, 1998, Saberi et al., 1998; Figure 1A). These studies focused on how the brain infers sound location from IPD without taking into account that IPD at a given sound location may vary between contexts in a frequency-dependent manner. In fact, a direct consequence of the filtering effect of the head is that the IPD induced by different acoustic objects varies in each frequency channel depending on context (Blauert, 1997; Keller and Takahashi, 2005). For example, the phase of a target sound can be shifted by the presence of a concurrent sound and the amount of phase shift is frequency dependent (Keller and Takahashi, 2005; Figure 1B). Thus, for a given location of a sound source, the IPD cue may vary in a frequency-dependent manner in the presence of another sound. In other words, IPD may not be equally reliable as a sound localization cue at every frequency band. Whether the neural code for sound localization captures the reliability of auditory cues across contexts is unknown.\n\nA common strategy for dealing with the natural variation of sensory cues is to weight cues in proportion to their reliability (Ernst and Banks, 2002; Jacobs, 2002; Alais and Burr, 2004; Fetsch et al., 2012). For sound localization based on IPD, this would mean that those frequencies that elicit more reliable IPD (i.e., where the variability of IPD is small) at a given location across different contexts should be favored in the process of estimating this particular location. We will refer to this mechanism as weighting by reliability. To test whether weighting by reliability occurs in sound localization, one can examine populations of neurons that integrate localization cues. A neural representation of auditory space emerges in the barn owl's external nucleus of the inferior colliculus (ICx). Thus, the barn owl's ICx provides an opportunity to test whether weighting by reliability is used to map sound location from variable cues.\n\nIn the present study, we demonstrate that frequency tuning of ICx neurons changes with their preferred ITD. This coding captures the variability of IPD across frequency channels in a manner consistent with weighting neural responses by cue reliability.\n\n## Results\n\n### Tuning to ITD and frequency\n\nTo test whether weighting by reliability occurs in the owl's sound localization pathway, we first mapped the spatial and frequency tunings of the entire ICx. 177 single units obtained from 138 recording sites in the ICx of two adult barn owls were included in this analysis. Single unit recordings were validated by spike sorting software (Quiroga et al., 2004) in 99 of the 138 recordings sites, whereas in 39 recording sites spike sorting separated two different units. Therefore, while the majority of recordings consisted of single units, some of them yielded two units. ITD and frequency tuning were measured for each neuron. We estimated best ITD from the peak of the rate-ITD tuning curve (Figure 2A, top row) and the best frequency (BF) from the center of the rate-frequency tuning curve (Figure 2A, bottom row). The neurons' best ITD is correlated with the preferred azimuth in the map of auditory space of the owl's ICx (Moiseff and Konishi, 1983). To achieve a representative assessment of the neural population, we recorded responses of ICx neurons with best ITDs spread over the entire map. Best ITD varied from 0 to 249 \u00b5s and BF varied from 920 Hz to 6168 Hz. To the best of our knowledge, neurons tuned to such large ITDs or low BFs have not been reported in the owl's ICx (Perez and Pena, 2006; Wagner et al., 2007; Vonderschen and Wagner, 2009). As shown in Figure 2, best ITD was tightly correlated with BF (r2 = 0.75, p < 0.001). Neurons preferring small ITDs were tuned to higher frequencies and, conversely, those preferring large ITDs were tuned to lower frequencies. The strong correlation between best ITD and BF was not affected whether the analysis was performed using recording sites with a single unit (n = 99, r2 = 0.71, p < 0.001), pooled recordings of single and multi-units (n = 138, r2 = 0.72, p < 0.001) or all sorted single units (n = 177, r2 = 0.75, p < 0.001). All further analyses were thus performed on sorted single-unit data.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04854/elife-04854-fig2-v2.jpg)\n\n**Figure 2.:** (A; top) ITD tuning measured with broadband noise of three example neurons tuned to 0 \u00b5s (blue), 100 \u00b5s (red) and 200 \u00b5s (yellow). (A; bottom) The frequency tuning, measured with tones at the best ITD shows that best frequencies (BF) decrease as best ITD increases for each neuron (BFs of the shown examples are 6 kHz (blue), 4 kHz (red) and 2 kHz (yellow)). (B) BF decreases with best ITD across the sample of ICx neurons. Linear regression is indicated by a solid line.\n\n### IPD reliability\n\nTo investigate IPD reliability, we examined the statistics of the auditory input for the owl. Specifically, we considered how IPD varies when concurrent sources are present. The presence of concurrent sounds is likely a primary source of variability of IPD in the owl's natural environment because sounds made by prey are often faint (Konishi, 1973) and concurrent sounds from different locations can dramatically shift the measured IPD (Keller and Takahashi, 2005).\n\nIn the owl, and other species, sounds are modified in a location-dependent manner by facial structures. In barn owls, which lack a pinna, the facial ruff and ear canal act as filters (Keller et al., 1998; von Campenhausen and Wagner, 2006) embodied in the head-related transfer functions (HRTFs; Keller et al., 1998). These filters change both the phase and the magnitude of each frequency component of the sound in a location-dependent manner. When sounds are coming from multiple sources, the sound waves from each source will add in the ears and alter binaural cues. As described in Keller and Takahashi (2005), the binaural cues resulting from the mixture of multiple sound sources are dictated by the relative intensity of each source within each frequency band. If two sources emitting sounds at the same intensity differ in the IPD within a frequency band, the resultant IPD is the average of the IPDs from the individual sources. When a target source carries more power in a particular frequency band, the resulting IPD will shift closer to this source. If the power of the second source is larger at a given frequency band, the IPD at this band is drawn away from the target source. Figure 3A shows an example of the relative variation in IPD around the mean IPD caused by the presence of concurrent sources. In this example the IPDs generated by one source located at 5\u00b0 of azimuth and 0\u00b0 of elevation (black dots) is contrasted with IPDs obtained when a second source, also at 0\u00b0 elevation, is added at azimuths ranging between \u221290 and 90\u00b0 (grey dots). For this azimuthal location, IPD variability induced by a second source is greatest between 3 and 4 kHz.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04854/elife-04854-fig3-v2.jpg)\n\n**Figure 3.:** (A) Example IPD variation around the mean (normalized to zero for clarity) as a function of frequency when a sound is presented near the front (black dots) and when a second sound source is added from various locations between \u221290 and 90\u00b0 (gray dots). Note the larger scatter of gray dots in the lower frequencies (B) IPD standard deviation over concurrent sound sources across frequency at the location of the target sound. The dotted lines show the location of the target sound in (A). In (A) and (B) units are percent of cycle. (C) IPD reliability across location and frequency, normalized by the maximum at each location. (D) Standard deviation of the IPD reliability across HRTFs from 10 different owls. Note that the same colors map the values 0 (least reliable IPD) to 1 (most reliable IPD) in C and 0\u20130.25 in D.\n\nWe measured IPD variability induced by the presence of concurrent sound sources using the HRTFs of 10 owls. We computed IPD variability on a frequency-by-frequency basis as the standard deviation of IPD (expressed in percent of cycle) over different locations of the second source (within \u00b190deg). The presence of a concurrent sound had a powerful effect on IPD, accounting for variations of up to 30% of a cycle. The IPD variability was highest for locations in the periphery, especially at high frequencies (Figure 3B). The presence of two sources also increased IPD variability at low frequencies for target locations near the center (Figure 3A,B).\n\nThis pattern of IPD variability with concurrent sounds can be explained by the direction and frequency dependence of the intensity gain of the HRTFs. The intensity gain is largest for azimuths near the front and decreases significantly for eccentric locations (Keller et al., 1998). Therefore, the IPD of a target source placed near the center will not be shifted greatly when a second source is placed at eccentric directions. Conversely, the IPD of a target source in the periphery will be shifted significantly when a second source is placed at a central location with high intensity gain. The difference in gain between frontal and peripheral locations is highest at high frequencies. Therefore, the largest variability was observed for high frequencies in the periphery.\n\nWe then took the inverse of the IPD variance as a measure of the reliability of IPD (Figure 3C). We assumed that an ICx neuron with a given preferred location will weight the inputs from different frequencies according to their relative reliability at that location. We therefore normalized the reliability within each location. We found that IPD reliability depends on the filtering of sounds by the head in a systematic manner across frequency and locations. Overall, IPD reliability was greater at high frequencies for locations in the front and at lower frequencies for locations in the periphery (Figure 3C). The overall pattern of IPD reliability was consistent across HRTFs from 10 different owls as illustrated by the small variance across animals (Figure 3D). If the frequency tuning of ICx neurons were driven by cue reliability, then we would expect a strong relationship between frequency tuning and IPD reliability.\n\n### Testing the weighting by reliability hypothesis\n\nThe dependence of BF on ITD tuning (Figure 2) was predicted by the IPD reliability. Across neurons, their BF and the frequency at which IPD reliability was maximal at their preferred location were highly correlated (r2 = 0.81, p < 0.001). Additionally, we compared the lower- and upper- edges of the neurons' frequency tuning curves with the range of frequency that carried the most reliable IPD (see \u2018Materials and methods\u2019). The upper- and lower-frequency edges of the frequency tuning curves followed the upper (r2 = 0.72, p < 0.001) and lower edges (r2 = 0.52, p < 0.001) of the range of most reliable IPD (Figure 4A). Thus, the measured frequency tuning fell within the boundaries predicted by the IPD reliability. Since the match between frequency tuning curves and IPD reliability was assessed for each location, the normalization of the IPD reliability had no effect on these calculations.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04854/elife-04854-fig4-v2.jpg)\n\n**Figure 4.:** (A) Upper (white circles) and lower (black circles) edges of frequency tuning of ICx neurons superimposed on the plot of IPD-reliability. (B) Upper and lower boundaries of frequency tuning superimposed on the average gain normalized at each location (from 0 to 1). (C) The correlation coefficients between frequency tuning curves and frequency tuning predicted by the IPD-reliability (gray) are higher than the correlation coefficients between frequency tuning curves and gain alone (black). (D) Upper and lower edges of frequency tuning superimposed on the average gain normalized successively at each frequency and at each location (from 0 to 1). (E) The correlation coefficients between frequency tuning curves and frequency tuning predicted by the IPD-reliability (gray) are higher than the correlation coefficients between frequency tuning curves and the normalized gain (black).\n\nTo verify that additional sound sources did not change the pattern of IPD variability, we computed the IPD reliability with three concurrent sounds. The measured BF and the center frequency at which IPD reliability from three concurrent sounds was maximal were also highly correlated (r2 = 0.77, p < 0.001).\n\nICx neurons are highly sensitive to interaural correlation, defined as the cross-correlation of the signals at the two ears (Albeck and Konishi, 1995). The addition of a concurrent source may decrease the interaural correlation at the preferred location of ICx neurons. Thus, in addition to the shift in IPD, the presence of concurrent sounds could modulate the firing rate of ICx neurons by changing interaural correlation. To test whether the IPD reliability is consistent with the pattern of interaural correlation induced by concurrent sounds, we examined the mean interaural correlation at the ITD of the target source within each frequency channel while concurrent sounds from other locations were presented. We found that the pattern of interaural correlation as a function of frequency and location was very similar to the IPD reliability (r2 = 0.81, p < 0.001). Like IPD reliability, the mean interaural correlation was greater at high frequencies for locations in the front and at lower frequencies for locations in the periphery. The measured BF and the center frequency at which the mean interaural correlation was maximal were also highly correlated (r2 = 0.88, p < 0.001). This shows that weighting frequencies by their reliability maintains frequencies with high input coherence to ICx neurons at each location.\n\n### Testing alternative hypotheses for the correlation between BF and best ITD\n\nThe change in sound-level due to filtering by the head, referred to as gain, is also frequency- and location-dependent (Keller et al., 1998; Figure 4B) and could drive frequency tuning. To investigate whether reliability of IPD or simply sound level was more important in driving the tuning of ICx neurons, we asked whether frequency tuning was better predicted by IPD reliability (Figure 4A) or by the gain (Figure 4B). Gain and IPD reliability patterns displayed similarities, as expected from the fundamental relationship between the interaction of concurrent sound sources and their gain (Keller and Takahashi, 2005); IPD at locations with lower gain is more susceptible to variation in the presence of other sounds than is IPD at locations with higher gain. Additionally, correlation between IPD reliability and gain may also arise from common causes of variation such as acoustic reflections at the facial ruff (von Campenhausen and Wagner, 2006). However, the frequency tuning of neurons did not match the gain pattern as well as it matched the IPD reliability as a function of frequency at the best ITD (Figure 4A,B). We computed the correlation coefficients between the frequency tuning curves and both the IPD reliability and gain as a function of frequency at the best ITD of each neuron. Out of 177 neurons, the frequency tuning curves of 145 neurons (82%) were significantly correlated with IPD reliability as a function of frequency at the best ITD (Figure 4C, gray histogram) whereas only 85 neurons (48%) had their frequency tuning curves significantly correlated with the gain as a function of frequency at the best ITD (Figure 4C, black histogram). Further, the correlation between frequency tuning curves and IPD reliability yielded higher correlation coefficients than between frequency tuning and gain (p < 0.001, Wilcoxon rank-sum test).\n\nIt has also been shown that the relative gain of different frequency bands can be a cue for sound localization (Butler, 1987; Butler and Musicant, 1993). A critical feature of the owl's facial ruff is its ability to increase the intensity of the sound of high over low frequencies in the frontal space (Keller et al., 1998). At low frequencies, the owl's facial ruff has a relatively small location-dependent effect on sound level (Hausmann et al., 2010). Thus, the relative gain of high and low frequencies at different locations could provide a cue for stimulus location. To test whether the relative gain of each frequency could predict the ITD tuning, we normalized the gain across locations for each frequency separately before normalizing the gain across frequency for each location (Figure 4D). Once again, the results for the gain did not correlate with the experimental frequency tuning as well as the IPD reliability did (Figure 4D,E, p < 0.001 Wilcoxon rank-sum test). Only 44 neurons (25%) were significantly correlated with the normalized gain (Figure 4E, black histogram). Thus IPD reliability yielded a better prediction of the frequency tuning than did the gain.\n\nTo test whether changes in neural responses when concurrent sounds are present were consistent with predictions made from the HRTFs, we examined spatial tuning in neurons of the core of the central nucleus of the inferior colliculus (ICCc). ICCc is located earlier in the pathway leading to ICx and contains ITD-sensitive neurons that are narrowly tuned to frequency (Wagner et al., 2002). While ITD tuning varies with frequency in ICx, such dependence is not observed in ICCc (Wagner et al., 2002, 2007). Thus, recording in ICCc allowed us to assess sensory-input variability before frequency convergence occurs. Because the predictions due to reliability or to gain differed most between high and low frequencies in frontal locations (Figure 4A,B,D), we explored this range in ICCc using concurrent sounds. We measured the spatial tuning of ICCc cells using single sources and while another sound was presented from different locations covering the frontal hemisphere on the horizontal plane (Figure 5A, see \u2018Materials and methods\u2019). To quantify the effect of concurrent sounds in altering the spatial tuning of ICCc cells, we cross-correlated the spatial tuning curves obtained with single sources with those measured with concurrent sounds (Figure 5B). We found that the spatial tuning of ICCc cells tuned to the front (preferred location between 5 and 20\u00b0) was more affected by the presence of another sound, that is, more variable, at lower than at higher frequencies (Figure 5A,B, r2 = 0.6, p < 0.001). Experiments were performed in a high quality anechoic chamber (see \u2018Materials and methods\u2019), thus we consider it unlikely that the variability in spatial tuning of low frequency ICCc neurons is due to room reflections. Therefore the data from ICCc neurons confirm our prediction that the variability induced by the HRTFs is carried over the sound localization pathway.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04854/elife-04854-fig5-v2.jpg)\n\n**Figure 5.:** (A) The colored curves show the normalized spatial tuning of two example ICCc neurons whose best frequencies are 1 kHz (blue) and 4 kHz (yellow). The spatial tuning was measured by varying the location of single sound sources using an array of speakers. The gray curves show the normalized spatial tuning of the same neurons measured with an additional concurrent sound at another location (nine different locations of concurrent sounds were tested in total). Examples of the spatial tuning measured in the presence of a concurrent sound source at 10\u00b0, 50\u00b0 and 90\u00b0 are displayed. The tuning of the low frequency neuron (top row) is more affected by concurrent sounds than the tuning of the higher frequency neuron (bottom row). (B) For each neuron, we correlated the curves measured with single sound sources with the curves measured with concurrent sound sources. The mean correlation coefficients between spatial tuning curves using a single sound and the tuning curves using concurrent sounds increases with best frequency. The linear regression is indicated by a solid line. The similarity between the curves in different contexts increases with best frequency. (C) Box-plot showing median (blue line) and quartiles of the Fano factor distribution. The Fano factors spread around 1, indicating trial-to-trial variability similar to a Poisson response.\n\nIt has been proposed that the interaural canal connecting the middle ear cavities in birds could affect ITD at low frequencies (Calford and Piddington, 1988). Because HRTFs are measured using microphones positioned at the ear canal, they are blind to the effect of the interaural canal. The largest ITD predicted by the HRTFs at low frequencies was similar to the largest best ITD we recorded in ICx. Therefore it does not appear that the interaural canal has an important effect increasing the magnitude of ITD. However, if the interaural canal increased the gain of low frequencies dramatically in the frontal space, it could change the variability induced by concurrent sound sources. Yet, our results in ICCc are consistent with predictions made from the HRTFs without the need to invoke an effect of the interaural canal.\n\nThere are a number of possible sources of neural noise that may contribute to the frequency dependence of IPD variability. While neural noise would not affect our measurements of BF or best ITD, which rely on tuning functions using mean firing rate, frequency-dependent neural noise during development could influence the learned connectivity in the auditory system that establishes the correlation between BF and best ITD. To assess the frequency dependence of neural noise we computed the Fano factors, a measure of trial-to-trial response variability, for ITD tuning curves obtained with tonal stimulation. We measured ITD tuning curves using tones from 1 to 7 kHz in 70 ICx cells (total of 342 curves). If neural noise were correlated with frequency, Fano factors should vary with stimulus frequency. We found that the Fano factors spread around 1 (Figure 5C, median = 1.06) and were negligibly correlated with the stimulus frequency (r2 = 0.1, p = 0.03). We also assessed whether neural noise is frequency-dependent when examined at different locations. We split the neurons into 4 groups according to their best ITDs (0\u201350 \u00b5s; 50\u2013100 \u00b5s; 100\u2013150 \u00b5s; larger than 150 \u00b5s). For each group we averaged the Fano factors of the different neurons across the same stimulating frequency. We found no relationship between the Fano factor and frequency as a function of best ITD in the first 3 groups (Group1: r2 =\u22120.08, p = 0.68; Group2: r2 = 0.007, p = 0.92; Group3: r2 = 0.1, p = 0.62). For best ITDs larger than 150 \u00b5s, the Fano factor decreased as frequency increased (r2 =\u22120.7, p < 0.001). However, if neural noise drove the low-pass frequency tuning at eccentric locations, the opposite relationship would be expected (higher frequencies noisier than lower frequencies). Thus, frequency-dependent trial-to-trial variability in neural responses cannot explain the correlation between best ITD and frequency tuning.\n\nPhase locking often weakens at higher frequencies, thus potentially increasing IPD variability at these frequencies (Koppl, 1997b). To test this, we examined whether the strength of IPD tuning varied with the stimulation frequency using a synchronization coefficient (Goldberg and Brown, 1969; Kuwada et al., 1987). In the same dataset used to assess the Fano factor (n = 342), ITD curves were folded into IPD curves (see \u2018Materials and methods\u2019). The response at each IPD was treated as a vector with direction given by the IPD and length given by the mean firing rate at that IPD. The synchronization coefficient was the amplitude of the mean IPD vector divided by the sum of the mean firing rates for the entire period. Coefficients decreased minimally with frequency (r2 = 0.14, p < 0.001) below 7 kHz. In sum, we found no evidence consistent with neural noise explaining the frequency-dependent ITD tuning. Thus, context dependence of the auditory cues resulting from the filtering properties of the HRTFs appeared to be the main source of location-dependent variability and the primary mechanism to adjust tonotopy along with spatial tuning.\n\n## Discussion\n\nIn the present study we linked reliability of sensory cues with tuning properties of auditory neurons. Sounds at a given position do not yield identical localization cues over different contexts. However, for each location, there is a frequency range within which the localization cue IPD is most reliable. We showed that ICx neurons limit their frequency tuning to this range (Figure 6). Thus, the frequency tuning in the space-specific neurons of ICx is not simply due to tonotopy inherited from upstream neurons, but rather reflects a higher-order aspect of the neural code that may contribute to a more robust representation of sound location. Our study provides a case for how stimulus statistics can be captured by the neural processing.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04854/elife-04854-fig6-v2.jpg)\n\n**Figure 6.:** Neurons receive inputs where different frequencies (F1\u2013F6) are weighted by the IPD variance. For neurons tuned to frontal space (left), a larger weight is assigned to high frequencies where IPD is less variable, while neurons tuned to more peripheral space (middle and right) receive stronger input at lower frequencies. The effect of the head on IPD variability is indicated by the color (green is less variable) and superimposed sine waves (superimposed sinusoids shifted in phase indicate more variability).\n\nConsistent with a trend reported in the optic tectum (Knudsen, 1984), we showed that the distribution of preferred frequency varies systematically with preferred ITD in ICx. This means that at each frequency, preferred ITDs are limited to a narrow part of the natural range. This is in stark contrast to the broad distribution of best ITDs across frequency reported in the upstream nucleus ICCc (Wagner et al., 2002, 2007). Evidence for best ITDs covering the natural range in nucleus laminaris (NL) comes from studies of neurophonic potentials (Sullivan and Konishi, 1986) and axonal delays of input fibers to NL (Carr and Konishi, 1990). However, recent studies show that the methodology relying on the neurophonic to estimate the best ITDs of actual neurons, as opposed to the compound field potential from input fibers, may lead to spurious conclusions (Mc Laughlin et al., 2010; Kuokkanen et al., 2013). This suggests that the range of best ITDs at each frequency in NL deserves further investigation.\n\nSelectivity for reliable localization cues could develop by Hebbian mechanisms favoring the least variable inputs. Indeed, the tuning of ICx cells adjusted to modifications of sound localization cues in juvenile and adult owls that had their facial ruff removed (Knudsen et al., 1994). Frequency-specific plasticity was also observed in owls raised with an acoustic filtering device that altered ITD in a frequency-dependent manner (Gold and Knudsen, 2000). When the device shifted the ITD by more than 50 \u00b5s, the ITD tuning of neurons also shifted by more than 50 \u00b5s compared to control owls. These studies indicate that ITD and frequency tunings can be adjusted by experience.\n\nFrequency-dependent ITD tuning has been demonstrated in several other species and different brain regions, including the inferior colliculus of the guinea pig (McAlpine et al., 2001) and cat (Hancock and Delgutte, 2004; Joris et al., 2006), the medial superior olive of the gerbil (Brand et al., 2002; Day and Semple, 2011), and the lateral lemniscus of the chinchilla (Bremen and Joris, 2013). Thus, frequency-dependent ITD tuning is observed not only in cases where best ITDs fall largely out of the physiological range, such as in small rodents (McAlpine et al., 2001; Brand et al., 2002), but also in maps of auditory space where neurons are tuned to physiological ITDs, such as in the owl (Wagner et al., 2007). The correlation between ITD and frequency tuning thus represents a general organizational principle across species and coding schemes (Schnupp and Carr, 2009) for sound localization.\n\nIt has been proposed that owls and small mammals use different strategies to encode IPDs based on head size and the frequency range over which ITD can be encoded (Harper and McAlpine, 2004). The model of Harper and McAlpine (Harper and McAlpine, 2004) proposes that the optimal distribution of preferred IPDs at each frequency will maximize the information that the population provides about IPD. In this framework, the optimal distribution of preferred IPDs at each frequency depends on the statistical distribution of IPD from the environment. This theory predicts that preferred IPDs should cover the natural range of IPD at each frequency that is relevant for sound localization in the owl. Harper and McAlpine took into account the statistics of the human acoustic cue to predict the optimal relationship between best IPD and frequency in humans. However, their predictions about the optimal neural code in the owl used a distribution of IPD that depends only on head size, and not on the IPD distribution occurring in natural environments. While this optimal coding model suggests that the distribution of IPD in natural environments may be an important factor influencing the neural code for sound localization, the model only addresses the representation of IPD at each frequency, and does not address how sound localization cues should be integrated over frequency to produce spatially selective auditory neurons. Here, we show that in the owl, spatial dependence of frequency tuning can be explained by a code that captures the range of frequency that carries the most reliable IPD. This study sheds light on an outstanding question in sound localization: Do neurons match the pattern of IPD across frequency experienced by each species? Our results suggest that neurons are tuned to the frequency range within which IPD varies least for each location over different environmental conditions. Thus, rather than neurons matching the IPD spectrum over the audible frequency range (Brainard et al., 1992; Goodman et al., 2013), they exclude ranges where the cue is most unreliable.\n\nIt has been suggested that the owl's brain represents the probability distribution of features in natural scenes (Fischer and Pena, 2011). Consistent with this idea is that the oblique effect in humans can be explained by a neural representation of the visual scene where vertical and horizontal orientations are more likely (Girshick et al., 2011). Our study further strengthens the idea that the brain represents the likelihood of natural features by showing that it synthesizes an internal model of stimulus reliability.\n\n## Materials and methods\n\n### Electrophysiology\n\nThe surgeries were performed as described previously (Wang et al., 2012). Briefly, two female adult barn owls were anesthetized with IM injections of ketamine hydrochloride (20 mg/kg; Ketaset) and xylazine (4 mg/kg; Anased). It has been shown that the responses of midbrain neurons are remarkably stable under ketamine anesthesia (Ter-Mikaelian et al., 2007; Schumacher et al., 2011). These procedures complied with National Institutes of Health and the Albert Einstein College of Medicine's Institute of Animal Studies guidelines. Responses were recorded with 1 M\u03a9 tungsten electrodes (A\u2013M Systems, Sequim, WA). Tucker Davis Technologies System 3 (Alachua, FL) and Matlab software were used to record neural data. ICx and ICCc neurons were identified by well-established physiological criteria based on their tuning to ITD, interaural level difference (ILD) and frequency, which permit unequivocal identification of recording sites (Singheiser et al., 2012).\n\n### Sound stimulation\n\nAll experiments were performed inside a double-walled sound-attenuating chamber (Industrial Acoustics 120a, Bronx, NY) lined with echo-absorbing acoustical foam (Sonex 4\u2033 wedge, Minneapolis, MN). These are rated to absorb sounds with highest efficiency down to below 1 kHz. Auditory stimuli delivered through calibrated earphones, consisting of a speaker (Knowles model 1914, Itasca, IL) and a microphone (Knowles model EK-23024) housed in a cylindrical metal earpiece and inserted in the owl's ear canal, consisted of 100 ms signals with a 5 ms rise-fall time at 10\u201320 dB above threshold. ITD tuning was initially estimated with broadband noise (0.5\u201310 kHz). ITD varied between \u00b1300 \u03bcs in 30 \u00b5s steps over five trials. Frequency tuning was estimated with tones at the best ITD ranging between 600 Hz to 9000 kHz in 200 Hz steps, repeated over 15 to 20 trials. ITD tuning within the main peak of the rate-ITD curve was recorded at a finer resolution (10 \u00b5s steps; 20 repetitions) at the best ILD. The best ILD was determined as the ILD at the peak of the rate-ILD curve. ITD tuning to tonal stimulation was also measured. The range of ITD and sampling steps was adjusted by the stimulus frequency such that roughly three periods of the stimulating frequency were tested and 21 or more different ITDs were sampled. Each trial was repeated 20 times. Stimuli within all tested ranges were randomized during data collection.\n\nTo measure the effect of concurrent sounds on the spatial tuning of neurons in ICCc we used an array of 21 calibrated speakers placed inside a sound-attenuating chamber (Wang et al., 2012). The speaker array covered a range of \u00b1100\u00b0 in azimuth with an angular separation between speakers of 10\u00b0. To measure the spatial tuning with concurrent sound sources, we simultaneously played a broadband noise (0.5\u201310 kHz) at a given location while randomly activating other speakers of the array with another broadband noise (within \u00b1 90\u00b0 from the preferred location in 20\u00b0 steps). Dichotic and free-field recordings were performed in the same animals without disrupting the facial ruff.\n\n### Data analysis\n\nRecordings were performed at 138 ICx sites. Wave_clus was used for spike sorting (Quiroga et al., 2004). Briefly, spikes were detected using a voltage threshold set at five times the estimated standard deviation of the signal. To avoid double detection, spikes were separated by at least 1 ms. Neurons were considered isolated based on the presence of a refractory period of more than 1 ms in the inter-spike interval histogram and the similarity of spike shape. A complementary quality metric was the non-overlap of wavelet coefficients. Additionally, the results of the sorting algorithm were visually inspected to confirm the quality of the sorting. Consistent with previous reports (Winkowski and Knudsen, 2006), no significant differences were found between the results of sorted and non-sorted traces as neighboring ICx neurons have very similar tunings.\n\nFor each stimulus parameter, a rate curve was computed by averaging the firing rate across stimulus repetitions and subtracting the spontaneous rate. The best ITD was the ITD corresponding to the center of the main peak in the tuning curve. ITD tuning curves in ICx typically have a main peak and several smaller side peaks. We identified the main peak in the ITD tuning curve, then measured the ITD range where the firing rate was at least half the difference between the minimum and the maximum response. The best ITD was the center of this range of ITDs. We used the absolute value of the best ITD to combine data from contra- and ipsi-lateral sides as a function of the eccentricity of the receptive field.\n\nFor assessment of frequency tuning, the response area was defined as the frequency range that elicited more than 50% of the maximum response. The lower and upper edges of the frequency tuning curve were respectively the lowest and the highest frequencies of this range. Frequency tuning curves in ICx are broad and often lack an unequivocal peak. We thus defined the BF as the frequency at the center between the lower and upper edges. We also calculated the BF with a threshold at 30% and 75% of the maximum response or as the center of mass of the frequency tuning curve. No significant differences were found compared to the BF estimated with a threshold at 50% of the maximum response.\n\nThe gain (in dB SPL) was computed as the average of the left and right monaural gains. The monaural gains at each frequency represented the relative attenuation of the sound level by the HRTFs at each ear.\n\nTo compare the lower- and upper- edges of the frequency tunings with IPD reliability and gain, we computed the lower- and upper edges of the IPD reliability and gain. The lower- and upper- edges of the IPD reliability and gain were the lowest and the highest frequencies of the range that elicited more than 50% of the maximum IPD reliability and gain, respectively.\n\nTo quantify the neural variability across frequency, we calculated the Fano factors across trials in ITD curves with tonal stimulation. The Fano factor of an ITD curve is the ratio of the variance to the mean of the spike count.\n\nWe measured the strength of IPD tuning using circular statistics (Goldberg and Brown, 1969). The range of ITD used for this analysis was adjusted by the stimulus frequency, such that the number of data points relative to the period of the stimulus frequency was constant. We converted ITD to IPD by folding ITD curves from tonal stimulation into a single period of the stimulating frequency. IPD curves were fitted by a Gaussian function to achieve a uniform sampling of IPD over one period (Perez and Pena, 2006). The average response at each IPD was treated as a vector and the goodness of IPD tuning was estimated by a synchronization coefficient (Goldberg and Brown, 1969; Kuwada et al., 1987). The synchronization coefficient varies from 0 to 1, indicating no selectivity to IPD or perfect phase synchrony, respectively.\n\nWe reported the p-value and r\u00b2 of the linear regression for estimating the relationships between variables. Pearson correlation coefficients were used to compare the smoothed frequency tuning curves with the estimated frequency from the IPD reliability and gain. The Pearson correlation coefficients of the spatial tuning curves obtained with single sources and those measured with concurrent sounds were averaged to quantify the overall effect of concurrent sounds in altering the spatial tuning of ICCc cells.\n\n### Estimation of IPD variability\n\nThe HRTFs of ten barn owls were provided by Dr Keller (Keller et al., 1998). The gain of the loudspeaker used by Keller et al., 1998 decreased sharply below about 2 kHz. In the present study, the HRTFs were reprocessed by Dr Keller, equalizing the gain of the loudspeaker down to 1 kHz. As in the original paper, in order to remove the effects of the loudspeaker, an inverse filter for the loudspeaker was constructed and convolved with the head-related impulse responses. The new inverse filter, now optimized to include frequencies down to 1 kHz, removes most of the effects of the loudspeaker. To align HRTFs across owls, IPD variability was computed at an elevation centered between the acoustic axes of left and right ear-canals (the locations of maximum intensity gain of the HRTFs for left and right ears). This accounts for slight differences in head placement of each owl that might lead to differences in the definition of zero elevation across owls. We calculated the left and right acoustic axes by taking the median gain across the different frequencies and determined the center of gravity of the top 90% elevations.\n\nTo compute IPD variability for concurrent sound sources, broadband noise signals with flat spectra between 0.5 and 9 kHz and equal gain were each convolved with head-related impulse-responses at the appropriate source location. The outputs were passed through a gammatone filter-bank with center frequencies ranging from 1 kHz to 8 kHz in 0.2 kHz steps. The time constants of the filters were specific to the owl and estimated from Koppl (1997a) to model cochlear filters, as described in Fischer et al. (2009). Because variability was estimated within narrow frequency bands, we used IPD, rather than ITD, by converting time into phase. The IPD in narrow frequency channels was calculated as the phase delay with the highest value of the cross-correlation between the left and right outputs of the gammatone filter. For each target location, we obtained 37 estimates of IPD, each with a second source located at one of the locations covering the frontal hemisphere (between \u221290 and 90\u00b0 in steps of 5\u00b0 at elevation zero). The circular standard deviation of IPD over locations of the second sound source was used as the estimate of IPD variability at each location.\n\nTo test whether reliability weighting allows ICx neurons to integrate coherent inputs in each frequency channel, we compared the average interaural correlation across locations of concurrent sounds with the IPD reliability. Concurrent broadband noise signals with flat spectra between 0.5 and 9 kHz and equal gain were convolved with head-related impulse-responses at the appropriate source locations. The outputs were passed through a gammatone filter-bank with center frequencies ranging from 1 kHz to 8 kHz in 0.2 kHz steps as described above. The cross-correlation was computed within each frequency channel. For a single sound source the interaural correlation was close to 1 and decreased when a concurrent sound was added. The interaural correlations with concurrent sounds were averaged across different locations of concurrent sounds.\n",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "f3bf4b04-fb4a-42a5-808e-82f49d43bedc",
+      "submission_id": "588f3430-190f-4cf3-b4cf-db2b831b6f93",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04854.009](https://doi.org/10.7554/eLife.04854.009)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cCue reliability drives frequency-dependent spatial tuning in the owl's midbrain\u201d for consideration at eLife. Your article has been favorably evaluated by Eve Marder (Senior editor) and 3 reviewers, one of whom, Ronald L Calabrese, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe authors present very thorough physiological and acoustical analyses of the spatial and frequency tuning of neurons in nucleus ICx of the Barn Owl. Interaural time difference (ITD) is the primary cue to localize sound in horizontal space in these birds. ITD is encoded in the firing rate of neurons that detect interaural phase difference (IPD) in nucleus ICx. In these birds IPD is influenced by the filtering properties of the facial mask so that IPD is most reliable for a particular frequency band at a particular location. They show that frequency tuning is such that IPD is most reliable at each preferred location (IPD). These findings have very important implications for how sensory circuits are constructed to capture stimulus reliability. This paper should provoke wide interest among the readers of eLife.\n\nWhile the reviewers all agree on the interest and importance of the work, there are three concerns that must be addressed in revision. These revisions should not require new experiments but will require changes to the analysis and presentation.\n\n1) Single-unit and multi-unit data should not be combined together. The main experimental finding is that best frequency (BF) varies systematically with best ITD. Determining BF and best ITD from multi-units is extremely problematical because it is not guaranteed that the underlying neurons all have the same tuning. Any correlation between BF and best ITD needs to be assessed with single unit data. Multiunit data should be removed from the data set, or at the very least analyzed and reported separately in text and figures.\n\n2) It is confusing why, in the context of concurrent sounds, the authors choose to focus their cue reliability analysis on peak IPD and not interaural correlation. First off, it is not clear how they compute IPD. Authors state \u201cthe IPD of the gammatone filter outputs...\u201d Normally one would cross-correlate the left and right filter outputs, then define the IPD as the phase delay with the highest correlation value (i.e., peak IPD). I assume that is how the authors compute it. But it is already known that this peak IPD will be midway between sources, as they cited from the Keller & Takahashi paper. The firing rates of ICx neurons aren't sensitive to the location of the peak IPD, they're sensitive to the interaural correlation at the best ITD (Albeck & Konishi 1995). The addition of a concurrent source will decrease the interaural correlation, which is the value that is actually modulating the neural response. Interaural correlation at a specified IPD can be interpreted as IPD reliability; single sources will yield interaural correlation values near 1, while those for concurrent sources will be lower. It seems that analyzing IPD reliability as correlation is more directly relatable to the firing of ICx neurons. The problem with only looking at IPD peaks is that they could have little spread, which in this paper's analysis would suggest good IPD reliability, but yet have quite low correlation values, so actually not reliable cues.\n\n3) The paper suffers from the current presentation. Although the authors attempt to present their results clearly, it was necessary to re-read sections and go back-and-forth several times to understand the set-up and the arguments. The overall flow and organization of both the text and the figures can be significantly improved. We strongly suggest that the authors revamp their manuscript by expanding the introduction, lay out the problem much more clearly in the introduction, clearly define and explain all the terms used, lay out more clearly the logic of their arguments, expand the figure legends, and re-organize figure panels. If done, the paper will be more widely accessible, and a broader audience, more than just researchers who work in auditory coding, will be able to appreciate these very interesting results.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for sending your work entitled \u201cSpatial cue reliability drives frequency tuning in the Barn Owl's midbrain\u201d for consideration at eLife. Your article has been favorably evaluated by Eve Marder (Senior editor), Ronald L Calabrese (Reviewing editor), and 2 reviewers.\n\nThe manuscript has now been revised according to reviewer comments and the presentation is much improved and the analysis more convincing. There are still some substantive concerns that necessitate further revision but will not require re-review beyond the BRE.\n\n1) The authors state that they revised the results to only contain single-unit data. They now state that data is included from 177 ICx neurons (presumably single-unit), whereas in their original manuscript there were only 138 neurons (presumably multi- and single-unit). How did their N increase if multiunits were weeded out?\n\n2) The authors misunderstood the new analysis regarding interaural correlation suggested in the last review. We were simply suggesting that they try defining IPD reliability as the average interaural correlation across contexts (evaluated from the cross-correlation function at the IPD of the target source), instead of the inverse of the variance of peak IPD across contexts. You could then compare frequency tuning to a heat map of this interaural correlation-based IPD reliability, similar to the other cases in Figure 4. We don't believe their new interaural correlation analysis is useful. You take interaural correlation functions from each frequency channel, normalize them, average them across channels (weighted or unweighted), then define the peak of this average function as the interaural correlation. The averaging of correlation functions is questionable, and defining interaural correlation as the peak of this function instead of the value at the IPD of the target source seems incorrect.\n\nWe believe that inclusion of a correct analysis of interaural correlation would give a better mechanistic understanding of why frequency tuning matches IPD reliability because the firing rates of ICc neurons are directly modulated by interaural correlation (shifts in peak IPD indirectly modulate firing rate via a shift in interaural correlation). We do not wish to delay the publication of this paper unnecessarily so we offer two options for revision. First option: Since the results with peak IPD are strong on their own, you could simply delete the newly-added section on interaural correlation in the Results and Methods and eliminate the two sentences in the Discussion pertaining to it. Second option: Perform the analysis detailed above and include that analysis in the paper to make even a strong case in support of your hypothesis.\n",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a19aa86d-5c55-41f3-b774-f0ef258797cc",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C1",
+      "claim": "The interaural time difference (ITD) is the primary cue to localize sound in horizontal space.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaural time difference (ITD) is the primary cue to localize sound in horizontal space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific experimental data from this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "a7af5003-a7a1-4a22-8091-29dd9756e461",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C2",
+      "claim": "ITD is encoded in the firing rate of neurons that detect interaural phase difference (IPD).",
+      "claim_type": "EXPLICIT",
+      "source": "ITD is encoded in the firing rate of neurons that detect interaural phase difference (IPD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "2ef0a01a-0be7-42d1-a60f-26eeea1e7801",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C3",
+      "claim": "Due to the filtering effect of the head, IPD for a given location varies depending on the environmental context.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the filtering effect of the head, IPD for a given location varies depending on the environmental context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known principle about acoustic filtering.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "fabbb33e-a4e9-4b76-bce9-7fc39fea4ac7",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C4",
+      "claim": "In barn owls, at each location there is a frequency range where the head filtering yields the most reliable IPDs across contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, in barn owls, at each location there is a frequency range where the head filtering yields the most reliable IPDs across contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on analysis of HRTFs and IPD variability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "4f3c6db0-2e4d-40cc-b1fe-3d0b9d7adbcd",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C5",
+      "claim": "The frequency tuning of space-specific neurons in the owl's midbrain varies with their preferred sound location.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the frequency tuning of space-specific neurons in the owl's midbrain varies with their preferred sound location, matching the range that carries the most reliable IPD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding based on electrophysiological recordings from ICx neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "637428ef-f363-4cdc-9b3b-a917633ca55f",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C6",
+      "claim": "The frequency tuning of space-specific neurons matches the range that carries the most reliable IPD.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the frequency tuning of space-specific neurons in the owl's midbrain varies with their preferred sound location, matching the range that carries the most reliable IPD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding based on correlation between measured frequency tuning and calculated IPD reliability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "41740505-31ea-4404-b270-8a06ff4a6d47",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C7",
+      "claim": "Frequency tuning in the owl's space-specific neurons reflects a higher-order feature of the code that captures cue reliability.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, frequency tuning in the owl's space-specific neurons reflects a higher-order feature of the code that captures cue reliability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive conclusion drawn from the correlation between frequency tuning and IPD reliability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "dd47c4ba-b386-4ea1-9961-1261876cdb12",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C8",
+      "claim": "Variability of sensory cues is intrinsic to the physics of stimuli and sensory organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Variability of sensory cues is intrinsic to the physics of stimuli and sensory organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge about sensory systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "c6b14ebe-6846-4856-9d34-befa017c78eb",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C9",
+      "claim": "Light and sound waves are reflected and absorbed differently by various media depending on wavelength and location.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, light and sound waves are reflected and absorbed differently by various media depending on wavelength and location (Carlile, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Carlile, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "074ead52-b47c-4453-aaca-ba64db5b47c8",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C11",
+      "claim": "When cues provide ambiguous or conflicting information, those cues that vary less are weighted more heavily in perceptual judgments.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when cues provide ambiguous or conflicting information, those cues that vary less are weighted more heavily in perceptual judgments (Ernst and Banks, 2002; Jacobs, 2002; Alais and Burr, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ernst and Banks, 2002; Jacobs, 2002; Alais and Burr, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "1c03189b-8d43-474b-9e8c-ea024d1d80aa",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C12",
+      "claim": "Humans and other animals use the interaural time difference (ITD) for sound localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans and other animals use the interaural time difference (ITD) for sound localization (Grothe et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Grothe et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "48dc4265-b650-4e79-9c3d-1722ca86d375",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C13",
+      "claim": "ITD is the difference in the arrival time of a sound at the ears.",
+      "claim_type": "EXPLICIT",
+      "source": "ITD is the difference in the arrival time of a sound at the ears.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of ITD based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "a12f9790-9148-4d37-9065-bb72113859af",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C14",
+      "claim": "In barn owls, ITD is the main cue for localizing in the horizontal space.",
+      "claim_type": "EXPLICIT",
+      "source": "In barn owls, ITD is the main cue for localizing in the horizontal space (Moiseff and Konishi, 1983; Moiseff, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Moiseff and Konishi, 1983; Moiseff, 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "06436461-2f26-42eb-84b8-220da5da21d5",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C15",
+      "claim": "ITD is initially detected by brainstem neurons tuned to narrow frequency bands in both mammals and birds.",
+      "claim_type": "EXPLICIT",
+      "source": "ITD is initially detected by brainstem neurons tuned to narrow frequency bands in both mammals and birds (Carr and Konishi, 1990; Schnupp and Carr, 2009; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Carr and Konishi, 1990; Schnupp and Carr, 2009, and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "b5d09474-dc65-4983-b1bd-8039461bc886",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C16",
+      "claim": "ITD-detecting neurons compare the timing of inputs from the left and right sides of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons compare the timing of inputs from the left and right sides of the brain (Carr and Konishi, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Carr and Konishi, 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "60aae36f-7868-4302-b5e5-3ce45ff8f2fb",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C17",
+      "claim": "The emergence of space-specific neurons in the midbrain is due to a wide convergence of frequency channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies of sound localization suggest that the emergence of space-specific neurons in the midbrain is due to a wide convergence of frequency channels (Brainard et al., 1992, Mazer, 1998, Saberi et al., 1998; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Brainard et al., 1992, Mazer, 1998, Saberi et al., 1998, and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "017f744f-21d1-4015-b83a-32b76b434a8f",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C18",
+      "claim": "A direct consequence of the filtering effect of the head is that the IPD induced by different acoustic objects varies in each frequency channel depending on context.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, a direct consequence of the filtering effect of the head is that the IPD induced by different acoustic objects varies in each frequency channel depending on context (Blauert, 1997; Keller and Takahashi, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Blauert, 1997; Keller and Takahashi, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "d4ae5a57-33d1-4585-908c-fcf83db5ba34",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C19",
+      "claim": "The phase of a target sound can be shifted by the presence of a concurrent sound and the amount of phase shift is frequency dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the phase of a target sound can be shifted by the presence of a concurrent sound and the amount of phase shift is frequency dependent (Keller and Takahashi, 2005; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to Keller and Takahashi, 2005, and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "64cef87f-72d9-49d8-966a-220febbdc6d7",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C20",
+      "claim": "A neural representation of auditory space emerges in the barn owl's external nucleus of the inferior colliculus (ICx).",
+      "claim_type": "EXPLICIT",
+      "source": "A neural representation of auditory space emerges in the barn owl's external nucleus of the inferior colliculus (ICx).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the barn owl auditory system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "ba0652f5-55a1-419d-8b9a-89c6cacbc99f",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C21",
+      "claim": "177 single units obtained from 138 recording sites in the ICx of two adult barn owls were included in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "177 single units obtained from 138 recording sites in the ICx of two adult barn owls were included in this analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "248a7065-c27b-4a8b-9c3d-4e90c62cdeb7",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C22",
+      "claim": "Single unit recordings were validated by spike sorting software in 99 of the 138 recordings sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Single unit recordings were validated by spike sorting software (Quiroga et al., 2004) in 99 of the 138 recordings sites, whereas in 39 recording sites spike sorting separated two different units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology and results of spike sorting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "ed46f422-5b79-4c40-a056-afb537760e8d",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C23",
+      "claim": "Best ITD varied from 0 to 249 \u00b5s across the recorded neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Best ITD varied from 0 to 249 \u00b5s and BF varied from 920 Hz to 6168 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the range of best ITDs measured in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "a5fc73e3-cdf0-425f-99d4-f14b28e1ec3b",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C24",
+      "claim": "Best frequency (BF) varied from 920 Hz to 6168 Hz across the recorded neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Best ITD varied from 0 to 249 \u00b5s and BF varied from 920 Hz to 6168 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the range of best frequencies measured in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "28c7f4cd-7910-4914-945a-1073997efe64",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C25",
+      "claim": "Best ITD was tightly correlated with BF (r2 = 0.75, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2, best ITD was tightly correlated with BF (r2 = 0.75, p < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding based on statistical analysis of the recorded data, shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "cdb792d3-b0c6-4d96-88f3-7c966aab198c",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C26",
+      "claim": "Neurons preferring small ITDs were tuned to higher frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons preferring small ITDs were tuned to higher frequencies and, conversely, those preferring large ITDs were tuned to lower frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the relationship observed in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "ed76a0cb-be11-40ca-ad5c-36df69d08758",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C27",
+      "claim": "Neurons preferring large ITDs were tuned to lower frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons preferring small ITDs were tuned to higher frequencies and, conversely, those preferring large ITDs were tuned to lower frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the relationship observed in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "a21dd4ac-850d-452b-83e4-04d21bcf395b",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C28",
+      "claim": "The presence of concurrent sounds is likely a primary source of variability of IPD in the owl's natural environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of concurrent sounds is likely a primary source of variability of IPD in the owl's natural environment because sounds made by prey are often faint (Konishi, 1973) and concurrent sounds from different locations can dramatically shift the measured IPD (Keller and Takahashi, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to Konishi, 1973 and Keller and Takahashi, 2005.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "03334d8d-904f-424a-9b4e-a8998e1e796d",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C29",
+      "claim": "Sounds made by prey are often faint.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of concurrent sounds is likely a primary source of variability of IPD in the owl's natural environment because sounds made by prey are often faint (Konishi, 1973) and concurrent sounds from different locations can dramatically shift the measured IPD (Keller and Takahashi, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Konishi, 1973.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "47922f57-f659-4832-9067-4be04378fc25",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C30",
+      "claim": "In barn owls, the facial ruff and ear canal act as filters.",
+      "claim_type": "EXPLICIT",
+      "source": "In barn owls, which lack a pinna, the facial ruff and ear canal act as filters (Keller et al., 1998; von Campenhausen and Wagner, 2006) embodied in the head-related transfer functions (HRTFs; Keller et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Keller et al., 1998; von Campenhausen and Wagner, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "1ec4d969-329b-4d7a-98a0-950e0a01b1de",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C31",
+      "claim": "Barn owls lack a pinna.",
+      "claim_type": "EXPLICIT",
+      "source": "In barn owls, which lack a pinna, the facial ruff and ear canal act as filters (Keller et al., 1998; von Campenhausen and Wagner, 2006) embodied in the head-related transfer functions (HRTFs; Keller et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known anatomical fact about barn owls.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "eeac2524-dcd9-4804-a39c-d57ba9a75bef",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C32",
+      "claim": "The binaural cues resulting from the mixture of multiple sound sources are dictated by the relative intensity of each source within each frequency band.",
+      "claim_type": "EXPLICIT",
+      "source": "As described in Keller and Takahashi (2005), the binaural cues resulting from the mixture of multiple sound sources are dictated by the relative intensity of each source within each frequency band.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Keller and Takahashi, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "32261793-40f4-43c2-9843-12da9a4756a1",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C33",
+      "claim": "If two sources emitting sounds at the same intensity differ in the IPD within a frequency band, the resultant IPD is the average of the IPDs from the individual sources.",
+      "claim_type": "EXPLICIT",
+      "source": "If two sources emitting sounds at the same intensity differ in the IPD within a frequency band, the resultant IPD is the average of the IPDs from the individual sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a principle of acoustic interference.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "4fd58240-0dc7-48e0-bd4e-c3fffaab5c68",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C34",
+      "claim": "The presence of a concurrent sound had a powerful effect on IPD, accounting for variations of up to 30% of a cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of a concurrent sound had a powerful effect on IPD, accounting for variations of up to 30% of a cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of IPD variability using HRTFs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "0595ee2b-eb3d-4b89-a564-09b428c0dd50",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C35",
+      "claim": "IPD variability was highest for locations in the periphery, especially at high frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "The IPD variability was highest for locations in the periphery, especially at high frequencies (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "d77cd2e8-b026-44fb-bbce-a1a9a49fb0b9",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C36",
+      "claim": "The presence of two sources increased IPD variability at low frequencies for target locations near the center.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of two sources also increased IPD variability at low frequencies for target locations near the center (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "007c6013-83b7-44a2-b1f1-e79ed005a623",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C37",
+      "claim": "The intensity gain is largest for azimuths near the front and decreases significantly for eccentric locations.",
+      "claim_type": "EXPLICIT",
+      "source": "The intensity gain is largest for azimuths near the front and decreases significantly for eccentric locations (Keller et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Keller et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "91c4c102-3edc-4816-80c7-3406811b28eb",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C38",
+      "claim": "IPD reliability was greater at high frequencies for locations in the front and at lower frequencies for locations in the periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that IPD reliability depends on the filtering of sounds by the head in a systematic manner across frequency and locations. Overall, IPD reliability was greater at high frequencies for locations in the front and at lower frequencies for locations in the periphery (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding based on analysis of IPD reliability, shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "b855325c-1384-4f2d-82a6-7ac7d4ae8bdf",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C39",
+      "claim": "The overall pattern of IPD reliability was consistent across HRTFs from 10 different owls.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall pattern of IPD reliability was consistent across HRTFs from 10 different owls as illustrated by the small variance across animals (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of HRTFs from 10 owls, shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "60d2dc58-a8d8-48e9-a225-4e8527c4ac95",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C40",
+      "claim": "Across neurons, their BF and the frequency at which IPD reliability was maximal at their preferred location were highly correlated (r2 = 0.81, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Across neurons, their BF and the frequency at which IPD reliability was maximal at their preferred location were highly correlated (r2 = 0.81, p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding based on statistical analysis comparing neural data with IPD reliability calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "169b0333-9f1d-4693-bd58-d005179192e0",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C41",
+      "claim": "The upper- and lower-frequency edges of the frequency tuning curves followed the upper (r2 = 0.72, p < 0.001) and lower edges (r2 = 0.52, p < 0.001) of the range of most reliable IPD.",
+      "claim_type": "EXPLICIT",
+      "source": "The upper- and lower-frequency edges of the frequency tuning curves followed the upper (r2 = 0.72, p < 0.001) and lower edges (r2 = 0.52, p < 0.001) of the range of most reliable IPD (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding based on statistical analysis, shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "1f206888-5a01-483c-90ec-5744429ad4ff",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C42",
+      "claim": "The measured BF and the center frequency at which IPD reliability from three concurrent sounds was maximal were highly correlated (r2 = 0.77, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The measured BF and the center frequency at which IPD reliability from three concurrent sounds was maximal were also highly correlated (r2 = 0.77, p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on additional analysis with three concurrent sounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "9e456774-14e4-4032-9381-c258b498b298",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C43",
+      "claim": "ICx neurons are highly sensitive to interaural correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "ICx neurons are highly sensitive to interaural correlation, defined as the cross-correlation of the signals at the two ears (Albeck and Konishi, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Albeck and Konishi, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "5c74ebe6-cbc8-47c6-a7ea-f957d25dfd5b",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C44",
+      "claim": "The pattern of interaural correlation as a function of frequency and location was very similar to the IPD reliability (r2 = 0.81, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the pattern of interaural correlation as a function of frequency and location was very similar to the IPD reliability (r2 = 0.81, p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis comparing interaural correlation with IPD reliability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "d5a87358-b928-4038-a862-3708f599c971",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C45",
+      "claim": "The mean interaural correlation was greater at high frequencies for locations in the front and at lower frequencies for locations in the periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "Like IPD reliability, the mean interaural correlation was greater at high frequencies for locations in the front and at lower frequencies for locations in the periphery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of interaural correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "bee65e99-cdd5-4895-b461-95de4868dad7",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C46",
+      "claim": "The measured BF and the center frequency at which the mean interaural correlation was maximal were highly correlated (r2 = 0.88, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The measured BF and the center frequency at which the mean interaural correlation was maximal were also highly correlated (r2 = 0.88, p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of the relationship between BF and interaural correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "f7f2a599-414a-4a65-8683-c0ce89328b50",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C47",
+      "claim": "Weighting frequencies by their reliability maintains frequencies with high input coherence to ICx neurons at each location.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that weighting frequencies by their reliability maintains frequencies with high input coherence to ICx neurons at each location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the correlation between IPD reliability and interaural correlation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "9baca2cd-0781-4df1-b7eb-a4a8df77402d",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C48",
+      "claim": "Out of 177 neurons, the frequency tuning curves of 145 neurons (82%) were significantly correlated with IPD reliability as a function of frequency at the best ITD.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 177 neurons, the frequency tuning curves of 145 neurons (82%) were significantly correlated with IPD reliability as a function of frequency at the best ITD (Figure 4C, gray histogram) whereas only 85 neurons (48%) had their frequency tuning curves significantly correlated with the gain as a function of frequency at the best ITD (Figure 4C, black histogram).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis comparing frequency tuning with IPD reliability and gain, shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "e70fc894-ca8f-4b3c-8eba-9d6ac88ca6e6",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C49",
+      "claim": "Only 85 neurons (48%) had their frequency tuning curves significantly correlated with the gain as a function of frequency at the best ITD.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 177 neurons, the frequency tuning curves of 145 neurons (82%) were significantly correlated with IPD reliability as a function of frequency at the best ITD (Figure 4C, gray histogram) whereas only 85 neurons (48%) had their frequency tuning curves significantly correlated with the gain as a function of frequency at the best ITD (Figure 4C, black histogram).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis comparing frequency tuning with gain, shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "29cf3804-a031-48c7-9b65-ba028ed7c129",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C50",
+      "claim": "The correlation between frequency tuning curves and IPD reliability yielded higher correlation coefficients than between frequency tuning and gain (p < 0.001, Wilcoxon rank-sum test).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the correlation between frequency tuning curves and IPD reliability yielded higher correlation coefficients than between frequency tuning and gain (p < 0.001, Wilcoxon rank-sum test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical comparison of correlation coefficients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "dc6fa73d-4137-43d5-8ace-4c30f0699fd7",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C51",
+      "claim": "The relative gain of different frequency bands can be a cue for sound localization.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been shown that the relative gain of different frequency bands can be a cue for sound localization (Butler, 1987; Butler and Musicant, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Butler, 1987; Butler and Musicant, 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "61aed279-b543-4e12-8be2-f0454e806f7d",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C52",
+      "claim": "The owl's facial ruff increases the intensity of the sound of high over low frequencies in the frontal space.",
+      "claim_type": "EXPLICIT",
+      "source": "A critical feature of the owl's facial ruff is its ability to increase the intensity of the sound of high over low frequencies in the frontal space (Keller et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Keller et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "99120dec-f680-48be-86c6-4623156642f9",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C53",
+      "claim": "At low frequencies, the owl's facial ruff has a relatively small location-dependent effect on sound level.",
+      "claim_type": "EXPLICIT",
+      "source": "At low frequencies, the owl's facial ruff has a relatively small location-dependent effect on sound level (Hausmann et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hausmann et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "61ec91f9-c817-4b00-8b98-a908eae3a712",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C54",
+      "claim": "Only 44 neurons (25%) were significantly correlated with the normalized gain.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 44 neurons (25%) were significantly correlated with the normalized gain (Figure 4E, black histogram).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "5b541a33-60d9-49c8-8a65-309030542db7",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C55",
+      "claim": "IPD reliability yielded a better prediction of the frequency tuning than did the gain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus IPD reliability yielded a better prediction of the frequency tuning than did the gain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on comparison of correlation coefficients.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "30ed0427-7c0e-4bd1-ae79-160e3355ad6f",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C56",
+      "claim": "ICCc is located earlier in the pathway leading to ICx and contains ITD-sensitive neurons that are narrowly tuned to frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "ICCc is located earlier in the pathway leading to ICx and contains ITD-sensitive neurons that are narrowly tuned to frequency (Wagner et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wagner et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "3d0afcd9-2542-426c-87b9-c30be1ad4c64",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C57",
+      "claim": "ITD tuning varies with frequency in ICx.",
+      "claim_type": "EXPLICIT",
+      "source": "While ITD tuning varies with frequency in ICx, such dependence is not observed in ICCc (Wagner et al., 2002, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wagner et al., 2002, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "9ff6469c-df3b-4229-8e28-ef7b64fc56fa",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C58",
+      "claim": "ITD tuning does not vary with frequency in ICCc.",
+      "claim_type": "EXPLICIT",
+      "source": "While ITD tuning varies with frequency in ICx, such dependence is not observed in ICCc (Wagner et al., 2002, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wagner et al., 2002, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "8b9761dc-b8b8-4e66-9612-807320984c02",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C59",
+      "claim": "The spatial tuning of ICCc cells tuned to the front was more affected by the presence of another sound at lower than at higher frequencies (r2 = 0.6, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the spatial tuning of ICCc cells tuned to the front (preferred location between 5 and 20\u00b0) was more affected by the presence of another sound, that is, more variable, at lower than at higher frequencies (Figure 5A,B, r2 = 0.6, p < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental measurements in ICCc, shown in Figures 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "ece85819-9ac9-474b-ac76-350bb8a6f84f",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C60",
+      "claim": "The data from ICCc neurons confirm the prediction that the variability induced by the HRTFs is carried over the sound localization pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore the data from ICCc neurons confirm our prediction that the variability induced by the HRTFs is carried over the sound localization pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the ICCc experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "c553f38b-b62e-4b07-ade0-60da85ce193e",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C61",
+      "claim": "The Fano factors spread around 1 (median = 1.06) and were negligibly correlated with the stimulus frequency (r2 = 0.1, p = 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the Fano factors spread around 1 (Figure 5C, median = 1.06) and were negligibly correlated with the stimulus frequency (r2 = 0.1, p = 0.03).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of trial-to-trial variability shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "d33783b5-df2c-466b-a893-52d289fe12c1",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C62",
+      "claim": "For best ITDs larger than 150 \u00b5s, the Fano factor decreased as frequency increased (r2 =\u22120.7, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "For best ITDs larger than 150 \u00b5s, the Fano factor decreased as frequency increased (r2 =\u22120.7, p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of Fano factors as a function of frequency for neurons with large best ITDs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "e80c4ce8-1946-4ed7-9082-9720a4d30674",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C63",
+      "claim": "Frequency-dependent trial-to-trial variability in neural responses cannot explain the correlation between best ITD and frequency tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, frequency-dependent trial-to-trial variability in neural responses cannot explain the correlation between best ITD and frequency tuning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the Fano factor analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "f42a88ff-d7c9-455f-839b-4fde9ca84da1",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C64",
+      "claim": "Synchronization coefficients decreased minimally with frequency (r2 = 0.14, p < 0.001) below 7 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "Coefficients decreased minimally with frequency (r2 = 0.14, p < 0.001) below 7 kHz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of IPD tuning strength using synchronization coefficients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "0a1e8368-5ee4-4f26-af99-11bdfd9aa872",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C65",
+      "claim": "Context dependence of the auditory cues resulting from the filtering properties of the HRTFs appeared to be the main source of location-dependent variability.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, we found no evidence consistent with neural noise explaining the frequency-dependent ITD tuning. Thus, context dependence of the auditory cues resulting from the filtering properties of the HRTFs appeared to be the main source of location-dependent variability and the primary mechanism to adjust tonotopy along with spatial tuning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on ruling out neural noise as an explanation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "55c2d9b3-5661-4898-9d8a-b02594180a0c",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C66",
+      "claim": "ICx neurons limit their frequency tuning to the range where IPD is most reliable.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that ICx neurons limit their frequency tuning to this range (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary conclusion of the study, illustrated in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "08a1033b-b991-4458-be80-74b4909e53b1",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C67",
+      "claim": "The frequency tuning in the space-specific neurons of ICx is not simply due to tonotopy inherited from upstream neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the frequency tuning in the space-specific neurons of ICx is not simply due to tonotopy inherited from upstream neurons, but rather reflects a higher-order aspect of the neural code that may contribute to a more robust representation of sound location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive conclusion based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "1b10d5c9-66d6-464c-adcc-3a9103210c67",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C68",
+      "claim": "The distribution of preferred frequency varies systematically with preferred ITD in ICx.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a trend reported in the optic tectum (Knudsen, 1984), we showed that the distribution of preferred frequency varies systematically with preferred ITD in ICx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding of the study, consistent with a previous report cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "f53da654-e4de-4253-9425-5c04e4896bdc",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C69",
+      "claim": "At each frequency, preferred ITDs are limited to a narrow part of the natural range.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that at each frequency, preferred ITDs are limited to a narrow part of the natural range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the systematic variation of frequency with ITD.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "e033a46d-ab2f-47d3-b560-36924b256ee6",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C70",
+      "claim": "A broad distribution of best ITDs across frequency is reported in the upstream nucleus ICCc.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in stark contrast to the broad distribution of best ITDs across frequency reported in the upstream nucleus ICCc (Wagner et al., 2002, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wagner et al., 2002, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "af19255e-7e4b-4576-b5f0-bdb2367b9fc8",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C71",
+      "claim": "The tuning of ICx cells adjusted to modifications of sound localization cues in juvenile and adult owls that had their facial ruff removed.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the tuning of ICx cells adjusted to modifications of sound localization cues in juvenile and adult owls that had their facial ruff removed (Knudsen et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Knudsen et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "42a5a6fa-ce55-4b21-931a-02f81bae01a7",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C72",
+      "claim": "Frequency-specific plasticity was observed in owls raised with an acoustic filtering device that altered ITD in a frequency-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Frequency-specific plasticity was also observed in owls raised with an acoustic filtering device that altered ITD in a frequency-dependent manner (Gold and Knudsen, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gold and Knudsen, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "f94c977f-3875-4d07-ae7f-460b1a83335a",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C73",
+      "claim": "When the device shifted the ITD by more than 50 \u00b5s, the ITD tuning of neurons also shifted by more than 50 \u00b5s compared to control owls.",
+      "claim_type": "EXPLICIT",
+      "source": "When the device shifted the ITD by more than 50 \u00b5s, the ITD tuning of neurons also shifted by more than 50 \u00b5s compared to control owls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes results from Gold and Knudsen, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "e53034b8-9803-48b7-bd6b-57e593894bab",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C74",
+      "claim": "ITD and frequency tunings can be adjusted by experience.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies indicate that ITD and frequency tunings can be adjusted by experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the plasticity studies cited.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "f0b2a84a-ec36-4ea9-9b5f-ece9a1dbda31",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C75",
+      "claim": "Frequency-dependent ITD tuning has been demonstrated in several other species and different brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Frequency-dependent ITD tuning has been demonstrated in several other species and different brain regions, including the inferior colliculus of the guinea pig (McAlpine et al., 2001) and cat (Hancock and Delgutte, 2004; Joris et al., 2006), the medial superior olive of the gerbil (Brand et al., 2002; Day and Semple, 2011), and the lateral lemniscus of the chinchilla (Bremen and Joris, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies in other species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "0c0a4fd4-af2f-41c1-8e19-3b30cba1c25b",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C76",
+      "claim": "Frequency-dependent ITD tuning is observed not only in cases where best ITDs fall largely out of the physiological range, but also in maps of auditory space where neurons are tuned to physiological ITDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, frequency-dependent ITD tuning is observed not only in cases where best ITDs fall largely out of the physiological range, such as in small rodents (McAlpine et al., 2001; Brand et al., 2002), but also in maps of auditory space where neurons are tuned to physiological ITDs, such as in the owl (Wagner et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies in rodents and owls.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "8128151b-b7a5-4dec-b4e0-0e1125da83d3",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C77",
+      "claim": "The correlation between ITD and frequency tuning represents a general organizational principle across species and coding schemes for sound localization.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between ITD and frequency tuning thus represents a general organizational principle across species and coding schemes (Schnupp and Carr, 2009) for sound localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive conclusion supported by a citation to Schnupp and Carr, 2009.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "7b184bd2-400c-4693-ad72-8534759bb721",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C78",
+      "claim": "Owls and small mammals use different strategies to encode IPDs based on head size and the frequency range over which ITD can be encoded.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that owls and small mammals use different strategies to encode IPDs based on head size and the frequency range over which ITD can be encoded (Harper and McAlpine, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Harper and McAlpine, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "43161573-ce89-48a5-9a12-c1f9e47eae59",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C79",
+      "claim": "The optimal distribution of preferred IPDs at each frequency will maximize the information that the population provides about IPD.",
+      "claim_type": "EXPLICIT",
+      "source": "The model of Harper and McAlpine (Harper and McAlpine, 2004) proposes that the optimal distribution of preferred IPDs at each frequency will maximize the information that the population provides about IPD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a theoretical model from Harper and McAlpine, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "1676844c-e68a-444d-9e37-0bec693a73b0",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C80",
+      "claim": "In the owl, spatial dependence of frequency tuning can be explained by a code that captures the range of frequency that carries the most reliable IPD.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that in the owl, spatial dependence of frequency tuning can be explained by a code that captures the range of frequency that carries the most reliable IPD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "345acd9e-f736-4fb4-a24b-cf52fbfacb13",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C81",
+      "claim": "Neurons are tuned to the frequency range within which IPD varies least for each location over different environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that neurons are tuned to the frequency range within which IPD varies least for each location over different environmental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "78417311-27bc-4445-a9e1-49737d284ae6",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C82",
+      "claim": "Rather than neurons matching the IPD spectrum over the audible frequency range, they exclude ranges where the cue is most unreliable.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, rather than neurons matching the IPD spectrum over the audible frequency range (Brainard et al., 1992; Goodman et al., 2013), they exclude ranges where the cue is most unreliable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive conclusion contrasting with previous models, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "df093aac-eea1-441d-9e4d-613e0d157792",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C83",
+      "claim": "The owl's brain represents the probability distribution of features in natural scenes.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that the owl's brain represents the probability distribution of features in natural scenes (Fischer and Pena, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Fischer and Pena, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "33f99767-4630-472f-a04d-ab2cbc5c3aa8",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C84",
+      "claim": "The oblique effect in humans can be explained by a neural representation of the visual scene where vertical and horizontal orientations are more likely.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea is that the oblique effect in humans can be explained by a neural representation of the visual scene where vertical and horizontal orientations are more likely (Girshick et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Girshick et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "bcc49df5-be98-4629-8a2b-e4bdcd31e7e4",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C85",
+      "claim": "The brain synthesizes an internal model of stimulus reliability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study further strengthens the idea that the brain represents the likelihood of natural features by showing that it synthesizes an internal model of stimulus reliability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broad interpretive conclusion based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "ebf5557b-3f71-44b9-a3ee-17224d5d06da",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C86",
+      "claim": "The responses of midbrain neurons are remarkably stable under ketamine anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that the responses of midbrain neurons are remarkably stable under ketamine anesthesia (Ter-Mikaelian et al., 2007; Schumacher et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ter-Mikaelian et al., 2007; Schumacher et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "119ef3da-8258-4499-b9ab-f56c4d978458",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C87",
+      "claim": "ICx and ICCc neurons were identified by well-established physiological criteria based on their tuning to ITD, interaural level difference (ILD) and frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "ICx and ICCc neurons were identified by well-established physiological criteria based on their tuning to ITD, interaural level difference (ILD) and frequency, which permit unequivocal identification of recording sites (Singheiser et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology, supported by a citation to Singheiser et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "7b056362-232f-4a34-87af-a3f1afb7fe19",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C88",
+      "claim": "The largest ITD predicted by the HRTFs at low frequencies was similar to the largest best ITD recorded in ICx.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest ITD predicted by the HRTFs at low frequencies was similar to the largest best ITD we recorded in ICx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of HRTF predictions with recorded data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "34e0188f-fffa-4b9c-94cc-51a98829de25",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C89",
+      "claim": "It does not appear that the interaural canal has an important effect increasing the magnitude of ITD.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore it does not appear that the interaural canal has an important effect increasing the magnitude of ITD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similarity between HRTF predictions and recorded ITDs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "98a030b6-052a-4370-adcb-af6b90d500ab",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "claim_id": "C90",
+      "claim": "The results in ICCc are consistent with predictions made from the HRTFs without the need to invoke an effect of the interaural canal.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, our results in ICCc are consistent with predictions made from the HRTFs without the need to invoke an effect of the interaural canal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the ICCc experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fd4013a9-07bc-4e0c-8920-bec059c43359",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Best ITD and best frequency (BF) are tightly correlated in ICx neurons (r\u00b2 = 0.75, p < 0.001), with neurons preferring small ITDs tuned to higher frequencies and neurons preferring large ITDs tuned to lower frequencies. The dataset included 177 single units from 138 recording sites in two barn owls, with best ITD ranging from 0 to 249 \u00b5s and BF ranging from 920 Hz to 6168 Hz.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 provide converging evidence for a systematic relationship between ITD and frequency tuning. The statistical correlation is strong (r\u00b2 = 0.75, p < 0.001) and the dataset is adequately described with appropriate sample size (n=177 neurons from 2 owls). The relationship is visualized in Figure 2 and the correlation holds across different analysis approaches (single units, multi-units, pooled data).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "9e75f028-62aa-4100-8ee5-54e353e29be9",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "IPD variability induced by concurrent sound sources is frequency- and location-dependent, with variations up to 30% of a cycle. IPD reliability is greater at high frequencies for frontal locations and at lower frequencies for peripheral locations. This pattern is consistent across HRTFs from 10 different owls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 describe a systematic pattern of IPD variability based on HRTF analysis from 10 owls. The findings are supported by computational analysis shown in Figures 3A-D, with small variance across animals (Figure 3D) indicating robustness. The physical explanation based on head filtering and intensity gain is mechanistically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "4514a51d-df2e-4bd9-bf66-aa9bff00d078",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Neural frequency tuning matches IPD reliability predictions: BF correlates with the frequency of maximal IPD reliability at preferred locations (r\u00b2 = 0.81, p < 0.001), and the edges of frequency tuning curves follow the boundaries of most reliable IPD (upper edge r\u00b2 = 0.72, lower edge r\u00b2 = 0.52, both p < 0.001). This relationship holds with two or three concurrent sounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 provide the key evidence linking neural tuning to IPD reliability. The correlations are strong and statistically significant, with consistent results across different numbers of concurrent sounds. Figure 4A visualizes the match between neural tuning boundaries and IPD reliability ranges. The normalization approach is appropriate for within-location comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "60fa2958-85d4-4bcd-b564-28712c2e704d",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "IPD reliability better predicts frequency tuning than acoustic gain: 82% of neurons (145/177) showed significant correlation between frequency tuning and IPD reliability, compared to only 48% (85/177) for gain. The correlation coefficients were significantly higher for IPD reliability than gain (p < 0.001, Wilcoxon rank-sum test).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 and C55 provide a critical comparison ruling out gain as the primary driver of frequency tuning. The statistical test is appropriate (Wilcoxon rank-sum for comparing correlation coefficients), sample size is adequate (n=177), and the difference is substantial (82% vs 48%) and highly significant. Figure 4C shows the distributions clearly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "faeb1814-4c5e-4409-a18d-37308215988d",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Interaural correlation patterns closely match IPD reliability (r\u00b2 = 0.81, p < 0.001), with higher correlation at high frequencies for frontal locations and at lower frequencies for peripheral locations. BF correlates with the frequency of maximal interaural correlation (r\u00b2 = 0.88, p < 0.001), suggesting that weighting by reliability maintains high input coherence to ICx neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 provide converging evidence that IPD reliability corresponds to interaural correlation, a known sensitivity of ICx neurons (C43). The correlations are very strong (r\u00b2 = 0.81 and 0.88) and the mechanistic link to neural coherence sensitivity is well-established. This strengthens the reliability weighting hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "e503666c-32fc-467f-b101-b32a228672e7",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In ICCc neurons (upstream of ICx), spatial tuning is more affected by concurrent sounds at lower frequencies than higher frequencies for frontally-tuned cells (r\u00b2 = 0.6, p < 0.001), confirming that HRTF-induced variability is carried through the sound localization pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 provide experimental validation in ICCc that the predicted variability from HRTFs manifests in neural responses. The correlation is moderate but significant (r\u00b2 = 0.6, p < 0.001), and the experiment was conducted in an anechoic chamber to control for reflections. This validates the computational predictions with empirical neural data. Figures 5A-B illustrate the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "3fa59742-46f5-4d14-b66d-5aa172bd7cce",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Neural noise does not explain frequency-dependent ITD tuning: Fano factors spread around 1 (median = 1.06) with negligible correlation to stimulus frequency (r\u00b2 = 0.1, p = 0.03), and synchronization coefficients decreased minimally with frequency (r\u00b2 = 0.14, p < 0.001) below 7 kHz. Context-dependent auditory cues from HRTFs appear to be the main source of location-dependent variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 systematically rule out neural noise as an alternative explanation. The Fano factor analysis (n=342 curves from 70 cells) shows Poisson-like variability without frequency dependence, and synchronization coefficients show minimal frequency dependence. The one exception (C62, large ITDs) shows the opposite pattern from what would be needed to explain the results. This strengthens the HRTF-based explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "c01aa2b4-15f0-46e5-921f-417a6f2ccb08",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Only 25% of neurons (44/177) showed significant correlation with normalized gain (gain normalized across locations for each frequency, then across frequencies for each location).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 tests an alternative hypothesis that relative gain across frequencies could drive tuning. The low percentage (25%) compared to IPD reliability (82%, C48) provides additional evidence against gain-based explanations. The normalization approach is appropriate for testing relative gain as a cue. Figure 4E shows the distribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "3d8a065b-5595-4478-ab92-cd93a05da502",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ICx neurons limit their frequency tuning to the range where IPD is most reliable, reflecting a higher-order neural code rather than simply inherited tonotopy. Neurons are tuned to frequency ranges where IPD varies least across contexts, excluding ranges where the cue is most unreliable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 and C80-C82 represent the main interpretive conclusions of the study. These are well-supported by the convergent evidence from claims about the correlation between neural tuning and IPD reliability (C40-C42), the superiority of IPD reliability over gain (C48-C50), and the validation in ICCc (C59-C60). Figure 6 illustrates the proposed mechanism. The conclusion is logically derived from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "ce791580-c08d-47d3-b0fc-9b44ff60f66d",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The distribution of preferred frequency varies systematically with preferred ITD in ICx, meaning that at each frequency, preferred ITDs are limited to a narrow part of the natural range. This contrasts with the broad distribution of best ITDs across frequencies in the upstream nucleus ICCc.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 describe the organizational principle and contrast it with upstream processing. C68 is supported by the data (C25-C27) and consistent with prior work (Knudsen, 1984). C69 is a logical inference from C68. C70 is supported by citations to Wagner et al., 2002, 2007. The contrast between ICx and ICCc is important for understanding where the reliability-based selection occurs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "a8339510-9c44-4a19-aa80-9c53a64c03f0",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ICx tuning can be adjusted by experience: neurons adjusted to facial ruff removal in juvenile and adult owls, and frequency-specific plasticity occurred in owls raised with acoustic filtering devices that altered ITD in a frequency-dependent manner (shifts >50 \u00b5s in device matched by >50 \u00b5s shifts in neural tuning).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 cite prior work (Knudsen et al., 1994; Gold and Knudsen, 2000) demonstrating plasticity of ITD and frequency tuning. These claims appropriately reference prior literature to support the possibility that reliability-based tuning could develop through experience-dependent mechanisms. The citations appear accurate based on the descriptions provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "a6e4f517-7760-4710-b518-b3aa4b0c2356",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Frequency-dependent ITD tuning is observed across multiple species (guinea pig, cat, gerbil, chinchilla, owl) and brain regions, representing a general organizational principle for sound localization coding schemes across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 place the findings in broader context with appropriate citations to comparative studies. The claim that this represents a general principle (C77) is supported by the breadth of species and brain regions cited. The citations appear appropriate and the generalization is reasonable given the evidence presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "d3119249-ba65-4ca1-88e5-b21d12e19176",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The largest ITD predicted by HRTFs at low frequencies was similar to the largest best ITD recorded in ICx, and ICCc results are consistent with HRTF predictions, suggesting the interaural canal does not have an important effect on increasing ITD magnitude or altering variability from concurrent sounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 address a potential confound (interaural canal effects in birds). The comparison between HRTF predictions and recorded ITDs (C88) and the consistency of ICCc results with HRTF predictions (C90) provide reasonable evidence that the interaural canal is not a major factor. However, this is based on indirect evidence (similarity and consistency) rather than direct measurement of interaural canal effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "77439e95-3571-4960-8763-af82d2728741",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The dataset consisted of 177 single units from 138 recording sites in ICx of two adult barn owls, with single unit recordings validated by spike sorting software in 99 sites, and two units separated in 39 sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 describe the dataset composition and validation methods. The use of spike sorting software (Quiroga et al., 2004) is appropriate, and the authors transparently report both single-unit and multi-unit recordings. The sample size is adequate for the statistical analyses performed, and the authors verified that results were consistent across different analysis approaches (single units, multi-units, pooled).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "5e249162-8a69-45eb-9095-88bccd15eeb9",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background on sound localization: ITD is the primary cue for horizontal sound localization, encoded by neurons detecting IPD. ITD varies with context due to head filtering. In barn owls, ITD is the main horizontal localization cue, initially detected by frequency-tuned brainstem neurons, with spatial representation emerging in ICx.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C12-C16, and C20 provide established background knowledge about sound localization, appropriately cited to prior literature (Grothe et al., 2010; Moiseff and Konishi, 1983; Carr and Konishi, 1990; etc.). These are standard facts in the field and provide necessary context for the study. The claims are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "f3902724-2e2a-48f4-a1db-b1e55e6b8423",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "General principles of sensory cue reliability: Variability is intrinsic to sensory cues due to physics of stimuli and sensory organs. When cues are ambiguous or conflicting, less variable cues are weighted more heavily in perceptual judgments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 and C11 establish general principles about sensory cue reliability with appropriate citations (Carlile, 1996; Ernst and Banks, 2002; Jacobs, 2002; Alais and Burr, 2004). These provide the theoretical framework for the reliability weighting hypothesis. The citations are appropriate and the principles are well-established in sensory neuroscience.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "e1d0317d-e836-405a-9a0e-3bf911880353",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on head filtering and concurrent sounds: Space-specific neurons emerge from frequency channel convergence. Head filtering causes context-dependent IPD variation, with concurrent sounds shifting IPD in a frequency-dependent manner. In barn owls, the facial ruff and ear canal act as filters (HRTFs), and concurrent sounds are a primary source of IPD variability in natural environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19, C28-C33, and C37 provide background on head filtering, HRTFs, and concurrent sound effects, with appropriate citations (Brainard et al., 1992; Keller and Takahashi, 2005; Keller et al., 1998; etc.). These establish the rationale for examining IPD reliability across contexts. The physics of sound source mixing (C32-C33) is correctly described. C28 is a reasonable inference supported by cited evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "2119bbfd-9b02-4436-9c46-b9b498541aa6",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background on gain as a localization cue: Relative gain of frequency bands can be a localization cue. The owl's facial ruff increases high-frequency intensity in frontal space but has relatively small location-dependent effects at low frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 provide background on gain as an alternative explanation, with appropriate citations (Butler, 1987; Butler and Musicant, 1993; Keller et al., 1998; Hausmann et al., 2010). This establishes the rationale for testing gain as an alternative to IPD reliability. The citations appear accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "6f0f3abc-9fad-45fe-92ee-af6ddd0a67d3",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background on ICCc: ICCc is upstream of ICx and contains frequency-tuned ITD-sensitive neurons. ITD tuning varies with frequency in ICx but not in ICCc.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 provide background on ICCc with appropriate citations (Wagner et al., 2002, 2007). This establishes the rationale for testing predictions in ICCc and explains why ICCc is an appropriate site to examine variability before frequency convergence. The contrast between ICx and ICCc is important for the study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "04bc9066-2c9e-4e0a-a5dd-e73ed8f3f17c",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "ICx neurons are highly sensitive to interaural correlation, defined as the cross-correlation of signals at the two ears.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 cites prior work (Albeck and Konishi, 1995) establishing that ICx neurons are sensitive to interaural correlation. This provides the rationale for examining whether IPD reliability corresponds to interaural correlation patterns (C44-C47). The citation is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "b7c9b677-beeb-4e8c-b08a-2aea5a3acc9b",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Background on theoretical models: It has been proposed that owls and small mammals use different IPD encoding strategies based on head size and frequency range. The Harper and McAlpine model proposes that optimal IPD distribution at each frequency maximizes population information about IPD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 describe prior theoretical work (Harper and McAlpine, 2004) that provides an alternative framework for understanding frequency-dependent ITD tuning. The description of the model appears accurate and provides important context for interpreting the current findings. The authors appropriately distinguish their reliability-based explanation from this information-theoretic model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "2a74e069-c251-4cd1-b83e-c28c670665b0",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Broader interpretation: The brain represents probability distributions of natural features and synthesizes internal models of stimulus reliability, as suggested by prior work on the oblique effect in vision and the current findings on auditory cue reliability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C85 place the findings in a broader theoretical context about neural representations of natural statistics. C83 and C84 cite prior work appropriately (Fischer and Pena, 2011; Girshick et al., 2011). However, C85 is a very broad claim that extends beyond what the current data directly demonstrate. While the findings are consistent with this interpretation, the claim that the brain 'synthesizes an internal model of stimulus reliability' is a strong theoretical statement that would require additional evidence to fully support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    },
+    {
+      "id": "e30a4d6a-ecca-442b-a28d-17965b0de040",
+      "content_id": "329f1d59-de0e-4a9a-95ee-0f0acf849788",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Methodological validation: Midbrain neuron responses are stable under ketamine anesthesia, and ICx/ICCc neurons were identified by well-established physiological criteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 provide methodological justification with appropriate citations (Ter-Mikaelian et al., 2007; Schumacher et al., 2011; Singheiser et al., 2012). These address potential concerns about anesthesia effects and recording site identification. The citations are appropriate and the methods are standard for the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:07:13.215718Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ed46f422-5b79-4c40-a056-afb537760e8d",
+      "result_id": "fd4013a9-07bc-4e0c-8920-bec059c43359"
+    },
+    {
+      "claim_id": "a5fc73e3-cdf0-425f-99d4-f14b28e1ec3b",
+      "result_id": "fd4013a9-07bc-4e0c-8920-bec059c43359"
+    },
+    {
+      "claim_id": "28c7f4cd-7910-4914-945a-1073997efe64",
+      "result_id": "fd4013a9-07bc-4e0c-8920-bec059c43359"
+    },
+    {
+      "claim_id": "cdb792d3-b0c6-4d96-88f3-7c966aab198c",
+      "result_id": "fd4013a9-07bc-4e0c-8920-bec059c43359"
+    },
+    {
+      "claim_id": "ed76a0cb-be11-40ca-ad5c-36df69d08758",
+      "result_id": "fd4013a9-07bc-4e0c-8920-bec059c43359"
+    },
+    {
+      "claim_id": "4fd58240-0dc7-48e0-bd4e-c3fffaab5c68",
+      "result_id": "9e75f028-62aa-4100-8ee5-54e353e29be9"
+    },
+    {
+      "claim_id": "0595ee2b-eb3d-4b89-a564-09b428c0dd50",
+      "result_id": "9e75f028-62aa-4100-8ee5-54e353e29be9"
+    },
+    {
+      "claim_id": "d77cd2e8-b026-44fb-bbce-a1a9a49fb0b9",
+      "result_id": "9e75f028-62aa-4100-8ee5-54e353e29be9"
+    },
+    {
+      "claim_id": "91c4c102-3edc-4816-80c7-3406811b28eb",
+      "result_id": "9e75f028-62aa-4100-8ee5-54e353e29be9"
+    },
+    {
+      "claim_id": "b855325c-1384-4f2d-82a6-7ac7d4ae8bdf",
+      "result_id": "9e75f028-62aa-4100-8ee5-54e353e29be9"
+    },
+    {
+      "claim_id": "60d2dc58-a8d8-48e9-a225-4e8527c4ac95",
+      "result_id": "4514a51d-df2e-4bd9-bf66-aa9bff00d078"
+    },
+    {
+      "claim_id": "169b0333-9f1d-4693-bd58-d005179192e0",
+      "result_id": "4514a51d-df2e-4bd9-bf66-aa9bff00d078"
+    },
+    {
+      "claim_id": "1f206888-5a01-483c-90ec-5744429ad4ff",
+      "result_id": "4514a51d-df2e-4bd9-bf66-aa9bff00d078"
+    },
+    {
+      "claim_id": "9baca2cd-0781-4df1-b7eb-a4a8df77402d",
+      "result_id": "60fa2958-85d4-4bcd-b564-28712c2e704d"
+    },
+    {
+      "claim_id": "e70fc894-ca8f-4b3c-8eba-9d6ac88ca6e6",
+      "result_id": "60fa2958-85d4-4bcd-b564-28712c2e704d"
+    },
+    {
+      "claim_id": "29cf3804-a031-48c7-9b65-ba028ed7c129",
+      "result_id": "60fa2958-85d4-4bcd-b564-28712c2e704d"
+    },
+    {
+      "claim_id": "5b541a33-60d9-49c8-8a65-309030542db7",
+      "result_id": "60fa2958-85d4-4bcd-b564-28712c2e704d"
+    },
+    {
+      "claim_id": "5c74ebe6-cbc8-47c6-a7ea-f957d25dfd5b",
+      "result_id": "faeb1814-4c5e-4409-a18d-37308215988d"
+    },
+    {
+      "claim_id": "d5a87358-b928-4038-a862-3708f599c971",
+      "result_id": "faeb1814-4c5e-4409-a18d-37308215988d"
+    },
+    {
+      "claim_id": "bee65e99-cdd5-4895-b461-95de4868dad7",
+      "result_id": "faeb1814-4c5e-4409-a18d-37308215988d"
+    },
+    {
+      "claim_id": "f7f2a599-414a-4a65-8683-c0ce89328b50",
+      "result_id": "faeb1814-4c5e-4409-a18d-37308215988d"
+    },
+    {
+      "claim_id": "8b9761dc-b8b8-4e66-9612-807320984c02",
+      "result_id": "e503666c-32fc-467f-b101-b32a228672e7"
+    },
+    {
+      "claim_id": "ece85819-9ac9-474b-ac76-350bb8a6f84f",
+      "result_id": "e503666c-32fc-467f-b101-b32a228672e7"
+    },
+    {
+      "claim_id": "c553f38b-b62e-4b07-ade0-60da85ce193e",
+      "result_id": "3fa59742-46f5-4d14-b66d-5aa172bd7cce"
+    },
+    {
+      "claim_id": "d33783b5-df2c-466b-a893-52d289fe12c1",
+      "result_id": "3fa59742-46f5-4d14-b66d-5aa172bd7cce"
+    },
+    {
+      "claim_id": "e80c4ce8-1946-4ed7-9082-9720a4d30674",
+      "result_id": "3fa59742-46f5-4d14-b66d-5aa172bd7cce"
+    },
+    {
+      "claim_id": "f42a88ff-d7c9-455f-839b-4fde9ca84da1",
+      "result_id": "3fa59742-46f5-4d14-b66d-5aa172bd7cce"
+    },
+    {
+      "claim_id": "0a1e8368-5ee4-4f26-af99-11bdfd9aa872",
+      "result_id": "3fa59742-46f5-4d14-b66d-5aa172bd7cce"
+    },
+    {
+      "claim_id": "61ec91f9-c817-4b00-8b98-a908eae3a712",
+      "result_id": "c01aa2b4-15f0-46e5-921f-417a6f2ccb08"
+    },
+    {
+      "claim_id": "55c2d9b3-5661-4898-9d8a-b02594180a0c",
+      "result_id": "3d8a065b-5595-4478-ab92-cd93a05da502"
+    },
+    {
+      "claim_id": "08a1033b-b991-4458-be80-74b4909e53b1",
+      "result_id": "3d8a065b-5595-4478-ab92-cd93a05da502"
+    },
+    {
+      "claim_id": "1676844c-e68a-444d-9e37-0bec693a73b0",
+      "result_id": "3d8a065b-5595-4478-ab92-cd93a05da502"
+    },
+    {
+      "claim_id": "345acd9e-f736-4fb4-a24b-cf52fbfacb13",
+      "result_id": "3d8a065b-5595-4478-ab92-cd93a05da502"
+    },
+    {
+      "claim_id": "78417311-27bc-4445-a9e1-49737d284ae6",
+      "result_id": "3d8a065b-5595-4478-ab92-cd93a05da502"
+    },
+    {
+      "claim_id": "1b10d5c9-66d6-464c-adcc-3a9103210c67",
+      "result_id": "ce791580-c08d-47d3-b0fc-9b44ff60f66d"
+    },
+    {
+      "claim_id": "f53da654-e4de-4253-9425-5c04e4896bdc",
+      "result_id": "ce791580-c08d-47d3-b0fc-9b44ff60f66d"
+    },
+    {
+      "claim_id": "e033a46d-ab2f-47d3-b560-36924b256ee6",
+      "result_id": "ce791580-c08d-47d3-b0fc-9b44ff60f66d"
+    },
+    {
+      "claim_id": "af19255e-7e4b-4576-b5f0-bdb2367b9fc8",
+      "result_id": "a8339510-9c44-4a19-aa80-9c53a64c03f0"
+    },
+    {
+      "claim_id": "42a5a6fa-ce55-4b21-931a-02f81bae01a7",
+      "result_id": "a8339510-9c44-4a19-aa80-9c53a64c03f0"
+    },
+    {
+      "claim_id": "f94c977f-3875-4d07-ae7f-460b1a83335a",
+      "result_id": "a8339510-9c44-4a19-aa80-9c53a64c03f0"
+    },
+    {
+      "claim_id": "e53034b8-9803-48b7-bd6b-57e593894bab",
+      "result_id": "a8339510-9c44-4a19-aa80-9c53a64c03f0"
+    },
+    {
+      "claim_id": "f0b2a84a-ec36-4ea9-9b5f-ece9a1dbda31",
+      "result_id": "a6e4f517-7760-4710-b518-b3aa4b0c2356"
+    },
+    {
+      "claim_id": "0c0a4fd4-af2f-41c1-8e19-3b30cba1c25b",
+      "result_id": "a6e4f517-7760-4710-b518-b3aa4b0c2356"
+    },
+    {
+      "claim_id": "8128151b-b7a5-4dec-b4e0-0e1125da83d3",
+      "result_id": "a6e4f517-7760-4710-b518-b3aa4b0c2356"
+    },
+    {
+      "claim_id": "7b056362-232f-4a34-87af-a3f1afb7fe19",
+      "result_id": "d3119249-ba65-4ca1-88e5-b21d12e19176"
+    },
+    {
+      "claim_id": "34e0188f-fffa-4b9c-94cc-51a98829de25",
+      "result_id": "d3119249-ba65-4ca1-88e5-b21d12e19176"
+    },
+    {
+      "claim_id": "98a030b6-052a-4370-adcb-af6b90d500ab",
+      "result_id": "d3119249-ba65-4ca1-88e5-b21d12e19176"
+    },
+    {
+      "claim_id": "ba0652f5-55a1-419d-8b9a-89c6cacbc99f",
+      "result_id": "77439e95-3571-4960-8763-af82d2728741"
+    },
+    {
+      "claim_id": "248a7065-c27b-4a8b-9c3d-4e90c62cdeb7",
+      "result_id": "77439e95-3571-4960-8763-af82d2728741"
+    },
+    {
+      "claim_id": "a19aa86d-5c55-41f3-b774-f0ef258797cc",
+      "result_id": "5e249162-8a69-45eb-9095-88bccd15eeb9"
+    },
+    {
+      "claim_id": "a7af5003-a7a1-4a22-8091-29dd9756e461",
+      "result_id": "5e249162-8a69-45eb-9095-88bccd15eeb9"
+    },
+    {
+      "claim_id": "2ef0a01a-0be7-42d1-a60f-26eeea1e7801",
+      "result_id": "5e249162-8a69-45eb-9095-88bccd15eeb9"
+    },
+    {
+      "claim_id": "1c03189b-8d43-474b-9e8c-ea024d1d80aa",
+      "result_id": "5e249162-8a69-45eb-9095-88bccd15eeb9"
+    },
+    {
+      "claim_id": "48dc4265-b650-4e79-9c3d-1722ca86d375",
+      "result_id": "5e249162-8a69-45eb-9095-88bccd15eeb9"
+    },
+    {
+      "claim_id": "a12f9790-9148-4d37-9065-bb72113859af",
+      "result_id": "5e249162-8a69-45eb-9095-88bccd15eeb9"
+    },
+    {
+      "claim_id": "06436461-2f26-42eb-84b8-220da5da21d5",
+      "result_id": "5e249162-8a69-45eb-9095-88bccd15eeb9"
+    },
+    {
+      "claim_id": "b5d09474-dc65-4983-b1bd-8039461bc886",
+      "result_id": "5e249162-8a69-45eb-9095-88bccd15eeb9"
+    },
+    {
+      "claim_id": "64cef87f-72d9-49d8-966a-220febbdc6d7",
+      "result_id": "5e249162-8a69-45eb-9095-88bccd15eeb9"
+    },
+    {
+      "claim_id": "dd47c4ba-b386-4ea1-9961-1261876cdb12",
+      "result_id": "f3902724-2e2a-48f4-a1db-b1e55e6b8423"
+    },
+    {
+      "claim_id": "c6b14ebe-6846-4856-9d34-befa017c78eb",
+      "result_id": "f3902724-2e2a-48f4-a1db-b1e55e6b8423"
+    },
+    {
+      "claim_id": "074ead52-b47c-4453-aaca-ba64db5b47c8",
+      "result_id": "f3902724-2e2a-48f4-a1db-b1e55e6b8423"
+    },
+    {
+      "claim_id": "60aae36f-7868-4302-b5e5-3ce45ff8f2fb",
+      "result_id": "e1d0317d-e836-405a-9a0e-3bf911880353"
+    },
+    {
+      "claim_id": "017f744f-21d1-4015-b83a-32b76b434a8f",
+      "result_id": "e1d0317d-e836-405a-9a0e-3bf911880353"
+    },
+    {
+      "claim_id": "d4ae5a57-33d1-4585-908c-fcf83db5ba34",
+      "result_id": "e1d0317d-e836-405a-9a0e-3bf911880353"
+    },
+    {
+      "claim_id": "a21dd4ac-850d-452b-83e4-04d21bcf395b",
+      "result_id": "e1d0317d-e836-405a-9a0e-3bf911880353"
+    },
+    {
+      "claim_id": "03334d8d-904f-424a-9b4e-a8998e1e796d",
+      "result_id": "e1d0317d-e836-405a-9a0e-3bf911880353"
+    },
+    {
+      "claim_id": "47922f57-f659-4832-9067-4be04378fc25",
+      "result_id": "e1d0317d-e836-405a-9a0e-3bf911880353"
+    },
+    {
+      "claim_id": "1ec4d969-329b-4d7a-98a0-950e0a01b1de",
+      "result_id": "e1d0317d-e836-405a-9a0e-3bf911880353"
+    },
+    {
+      "claim_id": "eeac2524-dcd9-4804-a39c-d57ba9a75bef",
+      "result_id": "e1d0317d-e836-405a-9a0e-3bf911880353"
+    },
+    {
+      "claim_id": "32261793-40f4-43c2-9843-12da9a4756a1",
+      "result_id": "e1d0317d-e836-405a-9a0e-3bf911880353"
+    },
+    {
+      "claim_id": "007c6013-83b7-44a2-b1f1-e79ed005a623",
+      "result_id": "e1d0317d-e836-405a-9a0e-3bf911880353"
+    },
+    {
+      "claim_id": "dc6fa73d-4137-43d5-8ace-4c30f0699fd7",
+      "result_id": "2119bbfd-9b02-4436-9c46-b9b498541aa6"
+    },
+    {
+      "claim_id": "61aed279-b543-4e12-8be2-f0454e806f7d",
+      "result_id": "2119bbfd-9b02-4436-9c46-b9b498541aa6"
+    },
+    {
+      "claim_id": "99120dec-f680-48be-86c6-4623156642f9",
+      "result_id": "2119bbfd-9b02-4436-9c46-b9b498541aa6"
+    },
+    {
+      "claim_id": "30ed0427-7c0e-4bd1-ae79-160e3355ad6f",
+      "result_id": "6f0f3abc-9fad-45fe-92ee-af6ddd0a67d3"
+    },
+    {
+      "claim_id": "3d0afcd9-2542-426c-87b9-c30be1ad4c64",
+      "result_id": "6f0f3abc-9fad-45fe-92ee-af6ddd0a67d3"
+    },
+    {
+      "claim_id": "9ff6469c-df3b-4229-8e28-ef7b64fc56fa",
+      "result_id": "6f0f3abc-9fad-45fe-92ee-af6ddd0a67d3"
+    },
+    {
+      "claim_id": "9e456774-14e4-4032-9381-c258b498b298",
+      "result_id": "04bc9066-2c9e-4e0a-a5dd-e73ed8f3f17c"
+    },
+    {
+      "claim_id": "7b184bd2-400c-4693-ad72-8534759bb721",
+      "result_id": "b7c9b677-beeb-4e8c-b08a-2aea5a3acc9b"
+    },
+    {
+      "claim_id": "43161573-ce89-48a5-9a12-c1f9e47eae59",
+      "result_id": "b7c9b677-beeb-4e8c-b08a-2aea5a3acc9b"
+    },
+    {
+      "claim_id": "df093aac-eea1-441d-9e4d-613e0d157792",
+      "result_id": "2a74e069-c251-4cd1-b83e-c28c670665b0"
+    },
+    {
+      "claim_id": "33f99767-4630-472f-a04d-ab2cbc5c3aa8",
+      "result_id": "2a74e069-c251-4cd1-b83e-c28c670665b0"
+    },
+    {
+      "claim_id": "bcc49df5-be98-4629-8a2b-e4bdcd31e7e4",
+      "result_id": "2a74e069-c251-4cd1-b83e-c28c670665b0"
+    },
+    {
+      "claim_id": "ebf5557b-3f71-44b9-a3ee-17224d5d06da",
+      "result_id": "e30a4d6a-ecca-442b-a28d-17965b0de040"
+    },
+    {
+      "claim_id": "119ef3da-8258-4499-b9ab-f56c4d978458",
+      "result_id": "e30a4d6a-ecca-442b-a28d-17965b0de040"
+    }
+  ],
+  "comparisons": []
+}

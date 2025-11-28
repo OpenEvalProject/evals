@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "FKRP, FKTN, TMEM5, and B4GAT1 are Golgi-localized enzymes that function downstream of POMK and upstream of LARGE in the O-mannosyl post-phosphorylation modification pathway of \u03b1-DG. These enzymes are essential for synthesizing a linker structure connecting the phosphorylated Core M3 platform to the terminal laminin-binding glycan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C23-C29 provide converging evidence from multiple experimental approaches: immunofluorescence co-localization with Golgi marker (C4, C25), phosphorylation assays showing activity in POMK-deficient but not other deficient cells (C23-C24), and LARGE overexpression studies demonstrating these enzymes act prior to LARGE (C27-C28). The data consistently support the proposed pathway position and function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "LARGE initiates synthesis of the laminin-binding heteropolymer by first transferring xylose, followed by glucuronic acid, using a \u03b2-linked GlcA residue as the acceptor sugar. This was demonstrated through radioactive labeling experiments and \u03b2-glucuronidase treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are well-supported by radioactive labeling data (Figure 2B) showing differential incorporation of [14C] UDP-Xyl vs UDP-GlcA, and \u03b2-glucuronidase treatment experiments (Figure 2C) demonstrating the requirement for \u03b2-linked GlcA. The sequential sugar transfer and acceptor specificity are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Xylose residues are required on \u03b1-DG for functional glycosylation by LARGE, while sialic acid, galactose, and fucose are not required. This was demonstrated using sugar nucleotide-deficient CHO cell lines, particularly the UDP-Xyl-deficient pgsI-208 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by systematic testing of DGFc340 from various Lec CHO cell lines (Figure 2D). The critical finding that pgsI-208 (UDP-Xyl-deficient) DGFc340 cannot be modified by LARGE even with exogenous UDP-Xyl and UDP-GlcA provides strong evidence for the requirement of pre-existing xylose residues on \u03b1-DG.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C75",
+      "C79"
+    ],
+    "result": "B4GAT1 functions as a xylose \u03b21,4-glucuronyltransferase with high specificity for \u03b2-linked xylose acceptors, manganese dependence, and pH optimum near 7.0. This activity was characterized through HPLC-based enzyme assays and NMR structural analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C39-C46, C75, C79 are strongly supported by multiple lines of evidence: sequence homology to LARGE GlcA-T domain (C39), HPLC detection of product only with UDP-GlcA donor (C40), >10-fold preference for \u03b2-linked Xyl (C41), biochemical characterization (C43-C44), and NMR confirmation of \u03b21,4 linkage (C45). The comprehensive characterization supports the assigned enzymatic function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C48",
+      "C74",
+      "C76"
+    ],
+    "result": "The GlcA-\u03b21,4-Xyl disaccharide synthesized by B4GAT1 serves as an acceptor primer that LARGE elongates with repeating [-3-Xyl-\u03b11,3-GlcA-\u03b21-] units to form the ligand-binding heteropolysaccharide. NMR analysis confirmed the tetrasaccharide structure GlcA-\u03b21,3-Xyl-\u03b11,3-GlcA-\u03b21,4-Xyl-\u03b2-MU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C47-C48, C74, C76 are supported by NMR structural analysis (Figure 7) demonstrating the complete tetrasaccharide structure synthesized sequentially by B4GAT1 and LARGE. The HMBC and ROESY data clearly establish the glycosidic linkages and anomeric configurations. LARGE's ability to use both \u03b21,3 and \u03b21,4-linked GlcA acceptors with similar efficiency (C47) and preference for disaccharide over monosaccharide (C48) further support the priming mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "B4gat1-deficient MEFs show strongly reduced but detectable \u03b1-DG functional glycosylation and laminin binding. Ectopic B4GAT1 expression rescues the defect, while LARGE overexpression alone produces minimal hyperglycosylation, confirming B4GAT1 acts prior to LARGE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 are supported by complementation studies (Figure 4A) showing differential responses to B4GAT1 and LARGE overexpression in control, Largemyd, and B4gat1-deficient MEFs. The pattern of rescue and hyperglycosylation clearly establishes the epistatic relationship, with B4GAT1 functioning upstream of LARGE in the pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Endogenous B4GAT1 and LARGE enzymatic activities are independent, with B4gat1-deficient cells showing <3% residual B4GAT1 activity but normal LARGE activity, and vice versa for Largemyd cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by HPLC-based enzyme activity assays (Figure 4B-C) demonstrating that mutations in one enzyme do not affect the activity of the other. This independence is consistent with their sequential but non-regulatory relationship in the pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Three disease-associated B4GAT1 mutations (Mut1: N390D, Mut2: D227N/D229N, Mut3: M155T) all show <5% residual activity and cannot rescue \u03b1-DG glycosylation defects. Mut2 and Mut3 are mislocalized to the ER, while Mut1 retains Golgi localization, indicating the mutations directly impair catalytic function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 are supported by comprehensive characterization including expression analysis (C61), localization studies (C62-C64), enzyme activity assays (C65), and complementation tests (C66). The finding that even the properly localized Mut1 lacks activity (C67) demonstrates direct catalytic impairment. The DXD motif mutation (Mut2) further supports the glycosyltransferase function (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "\u03b2-linked xylose is the endogenous acceptor for B4GAT1 on \u03b1-DG, as demonstrated by radioactive labeling showing only B4gat1-deficient DGFc340 incorporates [14C] GlcA, and \u03b2-xylosidase treatment strongly reduces acceptor activity. This implies an unidentified xylosyltransferase acts upstream of B4GAT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by radioactive labeling experiments (Figure 6A) and \u03b2-xylosidase treatment (Figure 6B). While the evidence is indirect (acknowledged by authors), the combination of B4GAT1's specificity for \u03b2-Xyl acceptors (from C41) and the \u03b2-xylosidase sensitivity provides strong support for \u03b2-xylose as the endogenous acceptor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C67",
+      "C86",
+      "C87"
+    ],
+    "result": "Mutations in B4GAT1 disrupt dystroglycan function and cause Walker-Warburg Syndrome (WWS), the most severe form of congenital muscular dystrophy with brain and eye malformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C67, C86-C87 are supported by the functional characterization of disease mutations (Figure 5) showing loss of enzyme activity and inability to rescue glycosylation defects, combined with citations to patient studies (Buysse et al., 2013; Shaheen et al., 2013). The mechanistic link between B4GAT1 dysfunction and disease is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "B4gat1-null mutations in mice cause early embryonic lethality at ~E9.5, similar to other dystroglycanopathy genes (Dag1, Pomt1, Fukutin), due to defects in Reichert's membrane. However, a hypomorphic p.M155T mutation allows survival of some compound heterozygous mice with CMD phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 are supported by citations to Wright et al., 2012 and other mouse studies. The comparison to other dystroglycanopathy genes (C89-C91) establishes the essential role of \u03b1-DG glycosylation in early development, while the viable hypomorphic model (C92-C93) provides a tool for studying the pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "B4gat1-deficient MEFs (B4gat1LacZ/M155T) are hypomorphic with <3% residual B4GAT1 activity, sufficient to produce low amounts of functional \u03b1-DG capable of laminin binding. This residual activity explains the difference between the lethal null phenotype and milder hypomorphic phenotype in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by enzyme activity assays (Figure 4B) and immunoblotting/laminin overlay (Figure 4A). The correlation between residual enzyme activity and phenotypic severity (C96) is a reasonable inference supported by the data and citation to Wright et al., 2012.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "B4GAT1 was previously described as \u03b21,3-N-acetylglucosaminyltransferase (B3GNT1) involved in i antigen synthesis, but the authors' data reveal \u03b21,4-glucuronyltransferase activity instead. No N-acetylglucosaminyltransferase activity could be validated with the proposed acceptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are supported by citations to Sasaki et al., 1997 for the original characterization (C77-C78), the authors' comprehensive enzymatic and structural data demonstrating \u03b21,4-glucuronyltransferase activity (C79), and negative results with the proposed GlcNAc-T substrate (C80, Figure 3\u2014figure supplement 4). This represents a significant correction of the enzyme's function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The assembly mechanism of the LARGE glycan shows striking similarities to proteoglycan synthesis: both involve repeating disaccharides synthesized by dual glycosyltransferases, initiated by a disaccharide primer that is part of a larger linker anchoring the polysaccharide to protein. Only EXT1 and EXT2 were previously known to have \u03b21,4-glucuronyltransferase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are supported by citations to established knowledge about EXT1/EXT2 and proteoglycan synthesis (Lidholt and Lindahl, 1992; Esko et al., 2009; Inamori et al., 2012). The comparison is well-founded based on the structural and mechanistic similarities demonstrated in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "\u03b1-DG glycosylation is highly tissue-specific and developmentally regulated. LARGE and B4GAT1 are broadly expressed at the RNA level but show strikingly different patterns in heart (high LARGE, low B4GAT1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by citation to Barresi and Campbell, 2006 for tissue specificity (C97) and qPCR data (Figure 8\u2014figure supplement 1) showing expression patterns (C98-C99). However, the functional significance of the differential heart expression remains unclear as acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Proper \u03b1-DG glycosylation plays a critical role in tumor suppression. LARGE expression is repressed in epithelium-derived cancer cells, and B4GAT1 expression is absent in malignant PC3-L prostate cancer cells, with loss correlating with increased malignancy and tumor progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 are supported by citations to de Bernabe et al., 2009, Liou et al., 2010, Goddeeris et al., 2013, and Bao et al., 2009. The correlation between loss of glycosylation machinery and cancer progression is well-documented in the cited literature, though the mechanistic details are not explored in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Previous hypotheses suggested B4GAT1 might be part of enzyme complexes or regulate LARGE activity. However, the current study's data showing independent enzymatic activities of B4GAT1 and LARGE in deficient cells suggests they function independently in a sequential pathway rather than through regulatory interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are supported by the enzyme activity data (Figure 4B/C) showing that mutations in one enzyme do not affect the other's activity. This refutes the previous regulatory hypothesis (C105-C106, cited to Bao et al., 2009) in favor of a sequential, non-regulatory model (C107).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Dystroglycan is a basement membrane receptor requiring proper \u03b1-DG glycosylation for ligand binding and function. Defects cause neuromuscular diseases collectively termed dystroglycanopathies, with over 17 genes involved. \u03b1-DG also serves as a receptor for pathogenic arenaviruses including Lassa virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C16 represent established background knowledge supported by multiple citations throughout the manuscript (Barresi and Campbell, 2006; Kanagawa et al., 2004; Hara et al., 2011; Cao et al., 1998; Mercuri and Muntoni, 2012; Bonnemann et al., 2014). This provides the scientific context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Previous work established that POMGNT2, B3GALNT2, and POMK synthesize the phosphorylated Core M3 trisaccharide (GalNAc-\u03b23-GlcNAc-\u03b24-Man-\u03b1 Ser/Thr) in the ER, which serves as a platform for further modification. LARGE synthesizes repeating [-3-Xyl-\u03b11,3-GlcA-\u03b21-] units, forming a terminal heteropolymer whose length correlates with ligand-binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 are supported by citations to the authors' previous work (Yoshida-Moriguchi et al., 2013) and other studies (Inamori et al., 2012; Goddeeris et al., 2013). These claims establish the known components of the pathway that the current study builds upon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The LARGE glycan disaccharide Xyl-\u03b11,3-GlcA-MU is a very weak acceptor for B4GAT1 GlcA-transfer, suggesting B4GAT1 overexpression does not interfere with LARGE-mediated synthesis of the laminin-binding glycan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by the acceptor specificity data (Figure 3C) showing B4GAT1's strong preference for \u03b2-linked Xyl over the \u03b1-linked Xyl in the LARGE glycan repeat. This specificity ensures pathway fidelity and prevents futile cycles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The DXD motif is thought to be involved in binding carbohydrate sugar-nucleoside diphosphates in manganese-dependent glycosyltransferases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by citation to Wiggins and Munro, 1998. This established biochemical principle explains why the Mut2 DXD motif mutation abolishes B4GAT1 activity (C65, C68).",
+    "result_type": "MINOR"
+  }
+]

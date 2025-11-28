@@ -1,0 +1,1997 @@
+{
+  "submission": {
+    "id": "fc217d49-0f56-4f91-92dd-dc2b34319a06",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:32:33.580170Z",
+    "updated_at": "2025-11-28T20:32:33.580170Z"
+  },
+  "content": [
+    {
+      "id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "submission_id": "fc217d49-0f56-4f91-92dd-dc2b34319a06",
+      "content_type": "manuscript",
+      "content_text": "# Age- and diet-associated metabolome remodeling characterizes the aging process driven by damage accumulation\n\n## Authors\n\n- Andrei S Avanesov<sup>1</sup>\n- Siming Ma<sup>1</sup>\n- Kerry A Pierce<sup>2</sup>\n- Sun Hee Yim<sup>1</sup>\n- Byung Cheon Lee<sup>1</sup>\n- Clary B Clish<sup>2</sup>\n- Vadim N Gladyshev<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Division of Genetics, Department of Medicine Brigham and Women's Hospital, Harvard Medical School Boston United States\n2. Broad Institute Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAging is thought to be associated with increased molecular damage, but representative markers vary across conditions and organisms, making it difficult to assess properties of cumulative damage throughout lifespan. We used nontargeted metabolite profiling to follow age-associated trajectories of >15,000 metabolites in Drosophila subjected to control and lifespan-extending diets. We find that aging is associated with increased metabolite diversity and low-abundance molecules, suggesting they include cumulative damage. Remarkably, the number of detected compounds leveled-off in late-life, and this pattern associated with survivorship. Fourteen percent of metabolites showed age-associated changes, which decelerated in late-life and long-lived flies. In contrast, known metabolites changed in abundance similarly to nontargeted metabolites and transcripts, but did not increase in diversity. Targeted profiling also revealed slower metabolism and accumulation of lifespan-limiting molecules. Thus, aging is characterized by gradual metabolome remodeling, and condition- and advanced age-associated deceleration of this remodeling is linked to mortality and molecular damage.\n\n## Introduction\n\nThe gradual and irreversible decline in cellular homeostasis that accompanies aging can be delayed by using several methods. For example, lifespan of various model organisms can be extended genetically via perturbation of nutrient sensing, pharmacologically by rapamycin treatment, or nutritionally by dietary restriction (Bishop and Guarente, 2007; Fontana et al., 2010). Up-regulation of stress response and repair pathways, often linked to conditions of mild stress or hormesis (Rattan, 2010), may also promote longevity. On the other hand, the specific molecular processes that accompany the delay in the aging process are not well understood.\n\nIt is often discussed that aging involves damage accumulation, therein an increase in DNA mutations, errors in protein synthesis, unwanted posttranslational modifications, metabolite by-products and many other damage forms contribute to the aging process (Rattan, 2008). The source of damage is frequently linked to metabolic activities, such as those that produce reactive oxygen species and increase oxidative modifications (Kirkwood and Austad, 2000). Damage may also be driven by global metabolic infidelity and engage nearly all biological processes involving synthesis and breakdown of cellular components (Kirkwood and Austad, 2000; Gladyshev, 2013). The exact mechanisms responsible for tolerance against molecular damage are not fully understood, but studies identified robust transcriptional remodeling that accompanies the aging process (Lee et al., 1999; Zou et al., 2000; Pletcher et al., 2002; McCarroll et al., 2004; de Magalhaes et al., 2009; Somel et al., 2010). How such responses are linked to cumulative damage is not known, since gene expression changes may not reflect immediate biological activities and metabolic fluxes. Another complication in such analyses is that individual damage types (e.g., mutations, lipofuscin accumulation, oxidative modifications) vary across conditions and among species (Rattan, 2008; Edman et al., 2009; de Magalhaes, 2012; Jonker et al., 2013). The patterns of damage accumulation are also incompletely defined since many of the previous studies did not analyze samples representing very old ages (Andziak et al., 2006; Edman et al., 2009; Jonker et al., 2013). Yet, insights into the properties of cumulative damage are required for comprehensive assessment of the activity-driven damage models of aging. Addressing these critical questions requires examination of damage composition and heterogeneity and the mortality-associated trends in the accumulation of numerous damage forms under both control and lifespan extending conditions. Aside from damage forms, it is unclear how cellular components generally change as a function of age, whether their patterns mimic the transcriptional responses and whether possible changes in their levels can have causal roles in the aging process.\n\nMetabolite profiling is an emerging method that aims to characterize a large number of small molecules in biological systems and identify proximal markers of biological activity (Kristal and Shurubor, 2005; Patti et al., 2012; Kotze et al., 2013). Recently, metabolite profiling was used to explore metabolic signatures of aging in young vs old mice (Houtkooper et al., 2011; Tomas-Loba et al., 2013) using a set of markers, thereby confirming that aging is associated with alterations in nutrient sensing, lipid and amino acid metabolism, and redox homeostasis. Another strength of metabolite profiling lies in nontargeted profiling, which enables analysis of thousands of small molecules, albeit of unknown chemical properties. Nontargeted profiling may also be used to characterize patterns of molecular damage by following changes in metabolite diversity. For example, damaged molecular species are expected to exhibit age-associated mass shifts, which may be represented by an increase in metabolite diversity, potentially offering a larger repertoire of damage forms than analyzed previously. By following global changes in metabolome remodeling in response to aging and lifespan-extending interventions, the nontargeted profiling may also lead to the identification of small molecule regulators of the aging process.\n\nHere, we utilized nontargeted, liquid chromatography mass spectrometry (LC-MS)-based metabolite profiling to explore age-associated patterns in metabolite diversity and biological activity in Drosophila males maintained on diets that support different lifespan. We discover that metabolite diversity shows a robust age-associated increase. In contrast, known metabolites as well as many metabolites that are detected at all ages show bi-directional trends during aging: they fall predominantly into increasing and decreasing age-associated clusters. Interestingly, older cohorts feature deceleration in both the rise in metabolite diversity and overall cellular activity. Together, these data suggest that changes reflecting biological activity are linked to the display of metabolome diversity, which is reflected in the appearance of new small molecule species. We followed metabolites implicated in certain forms of damage and found their levels to be higher in long-living flies. These data further implicate a heterogeneous nature of damage whose effect on survivorship is condition dependent. Overall, these metabolite analyses provide critical insights into the activity-driven nature of the aging process.\n\n## Results\n\n### Age-related changes in metabolome diversity follow the lifespan curve\n\nWe maintained fruit flies (males) throughout their lifespan on two dietary regimens: standard sugar and yeast diet and fully defined diet (Mair et al., 2005; Lee and Micchelli, 2013). The defined diet, which was prepared from chemical components and mimicked dietary restriction conditions (Bass et al., 2007), led to lifespan extension (Figure 1A), similar to the well-characterized effect of dietary restriction (Mair et al., 2005). Our design and choice for sampling age groups were also similar to the previous studies, which analyzed gene expression during Drosophila aging (Zou et al., 2000; Pletcher et al., 2002), except that we increased the number of samples at the end of the lifespan curve, including very old flies, which allowed us to better examine changes associated with advanced age.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02077/elife-02077-fig1-v1.jpg)\n\n**Figure 1.:** (A) The number of detected nontargeted metabolites rises and then levels off as a function of cohort's age. Age-dependent changes in the number of detected metabolites (red curve) and intensity of total signal (blue curve) for nontargeted (two left panels) and targeted (two right panels) metabolites for standard (two upper panels) and defined (two lower panels) diets are shown. The lines were drawn using cubic polynomial fit function. Triangles mark data for the separately collected replicates for each age group. Significance for age-associated pattern in metabolite diversity was established using repeated measures ANOVA and was significant for nontargeted metabolites (p<6 \u00d7 10\u22126) but not significant for targeted metabolites (p>0.2). The corresponding lifespan curves are shown in black in each panel, and the curves in grey (for the other diet) are shown for convenient comparison of survivorship on the two diets. Mean lifespan of flies on standard and defined diets was 50.8 and 64.4 days, respectively (log-rank test [p<0.001]). (B) Metabolites which registered at zero in at least one sample (21 total samples [three associated replicates for each of the 7 age groups]) were isolated from the dataset and, for visualization purposes, non-detected signals (ones registering at 0) were changed to 1 \u00d7 10\u22125 and Log10 transformed with the remaining signals. Accordingly, points of non-detection in black along with the color gradient of the mass-spectrometry peak intensities for detected signals are provided on two age-supervised hierarchically clustered heatmap images. For comparison purposes, only metabolites overlapping in both dietary regimens were used. Side bracket exemplifies rises in age-associated metabolites. Side bars highlight metabolites from the lipid fraction (yellow). Other metabolites are shown in black in this bar. (C) Histograms show overlaps in the distribution of signal intensities for all nontargeted metabolites vs targeted metabolites used to construct heat map images in B.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02077/elife-02077-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** For metabolite diversity, each triangle represents a sample at a given age, wherein a total of three replicates were used per age group. Circles correspond to the number of dead flies at each respective age. The lines were drawn using cubic polynomial fit function.\n\nOur metabolite profiling platform detected >15,000 unique analytes (nontargeted, non-redundant, de-isotoped LC-MS peaks), whose relative abundance was followed as a function of age. We found that the number of detected metabolites was lowest in the young flies in each dietary group and increased as a function of age (repeated measures ANOVA, p<6 \u00d7 10\u22126 for each diet). On the other hand, the overall signal (the sum of signals for all molecular species detected) slightly decreased throughout lifespan (Figure 1A). As metabolites were extracted from the same number of flies at each time point, the decrease in total signal may represent lower biomass in older flies, whereas the number of detected metabolites indicated increased metabolite diversity during the aging process. This pattern was observed in each replicate sample and in each diet.\n\nInterestingly, the rise in the number of detected metabolites was steady during adulthood, yet leveled off (and even slightly decreased) at the most advanced ages (Figure 1A). This transition in the metabolite diversity corresponded to the late-life transition in the lifespan curves and mortality (Figure 1\u2014figure supplement 1), suggesting relationship between metabolite diversity and the aging process. In contrast, analysis of metabolite diversity using a panel of 205 known metabolites did not show significant age-associated trends (Figure 1A). Furthermore, the distribution of signal intensities between targeted metabolites and metabolites, which show diversity fluctuations throughout lifespan were different by few orders of magnitude (Figure 1B,C), suggesting that the latter generally corresponded to molecules of low abundance and were not due to errors of detection. Also, changes in metabolite diversity could not be attributable to the presence of yeast-derived metabolites in our diet, since the chemically defined diet contained no cellular products. Lastly, the observed changes in metabolite diversity could be explained by the presence of outliving cohorts in samples near the end of the lifespan curve, as previously proposed for mortality rates (Curtsinger et al., 1992). These data suggest a fair degree of synchronization between damage accumulation, expressed by the pattern of metabolite diversity, and the mortality pattern, including their changes in late life.\n\n### Metabolome remodeling defines progression of aging\n\nAmong the signals consistently detected in all aging samples (those showing no difference in diversity), there may be metabolites that are passengers or drivers of the aging process, similar to the genes with age-associated differential expression (Lee et al., 1999; de Magalhaes et al., 2009; Houtkooper et al., 2011; Plank et al., 2012; Tomas-Loba et al., 2013). Using repeated measures ANOVA and stringent statistical cut-off that estimated <0.2% of false positives (\u2018Materials and methods\u2019), we identified 2234 and 2216 metabolites (\u223c14% of all detected metabolites) that qualified as age-associated in the standard and defined diets, respectively. This revealed widespread and dynamic metabolome reorganization throughout lifespan. Of the detected age-associated features, 1,066 were common to both dietary regimens (Figure 2A). These molecules exhibited very similar trajectories of change between the two diets (median Pearson correlation coefficient = 0.76), in contrast to the lack of such correlation when using all metabolite pairs between the diets (permutation test p<0.001) (Figure 2B). To further characterize these age-related metabolites, we performed two types of scaling: between-group (a metabolite was scaled across both dietary conditions) and within-group (a metabolite was scaled within each dietary condition). Principal component analysis (PCA) of the between-group scaled values segregated samples first by diet and then by age (Figure 2C), suggesting that the magnitudes of these metabolites were affected by dietary conditions. On the other hand, PCA of the within-group scaled data revealed an age-dependent, but diet-independent segregation, with the replicate samples of both diets grouping closely together (Figure 2D). Thus, these metabolites indeed followed very similar trajectories with age, after normalization of differences in their intensity levels. Furthermore, most age-related changes in metabolite intensity (levels hereafter for simplicity) within individual diets did not exceed 4\u20138-fold across lifespan (Figure 3A,B), which was consistent with the differences in gene expression between Drosophila subjected to dietary restriction or stress (Zou et al., 2000; Pletcher et al., 2002; Girardot et al., 2004; Landis et al., 2012). These data show that diet- and age-influenced changes in metabolome remodeling throughout lifespan closely recapitulated transcriptional changes and progression of aging.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02077/elife-02077-fig2-v1.jpg)\n\n**Figure 2.:** (A) Venn diagram of age-related features for two dietary regiments. The diagram shows that a large fraction of detected age-related features overlap between the two diets (\u2018overlapping metabolites\u2019). (B) Kernel Density Plot showing the distribution of Pearson correlation coefficients of the overlapping metabolites between the two diets (color). The coefficients for the total metabolites (gray) are shown for comparison. (C and D) Clustering of the overlapping metabolites by Principal Component Analysis. Squares and triangles denote standard and defined diets, respectively. Each plot includes three replicates per age. (C) Plot with scaling expression values across diets. In this plot, individuals are separated according to their ages and diets. (D) PCA plot with diet-specific scaling separates individuals according to their ages only.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02077/elife-02077-fig3-v1.jpg)\n\n**Figure 3.:** (A and B) Fold-change differences within standard (A) and defined (B) diets were calculated by comparing changes in intensity from the ratio of maximum to minimum lifespan-associated values. (C) Inter-dietary differences are shown in two heatmap panels after their separation into twofold thresholds, which also show metabolite remodeling during aging. Heatmaps were generated as follows. Replicate values were averaged and then scaled within individual and also across the diets. The resulting matrix was then subjected to age-guided complete hierarchical clustering using hclust algorithm in R where ages were assigned to columns and individual metabolites were assigned to rows. The resulting image allows convenient visualization of clusters containing metabolites with common trajectories (left side), which may also show inter-dietary differences in levels (right side). Side bars were added to highlight metabolites derived from the lipid fraction and also trajectories bearing strong correlation to lifespan curves (Pearson coefficient |r| >0.75, color coded for each diet). Age-related trajectories were derived from trimming the distance matrix into 12 k-means clusters using rect.hclust function in R. Plots in each box represent averages of the scaled values of contributing metabolites whose number is listed in at the top of each graph.\n\n### Distinct and common age-related metabolite patterns characterize short- and long-lived flies\n\nWe explored the relationship between changes in age-related metabolites and longevity. We carried out k-mean clustering to group metabolites with similar trajectories, separately for those with below twofold and above twofold inter-dietary changes (Figure 3C), which showed that the diet-influenced changes were relatively underrepresented. Specifically, among the 1,542 age-related metabolites common to both diets, 76% showed less than twofold changes between the two diets (Figure 4A), indicating that the influence of diet was noticeable, but mostly small in magnitude. These age-related changes may be linked to longevity as there was high prevalence of strong correlations (both positive and negative) between individual metabolite levels across lifespan and lifespan curves (Figure 4B). While only a small fraction of metabolites showed more than twofold changes between the diets, they typically exhibited strong correlation with lifespan, suggesting they might represent mechanisms through which dietary modification (e.g., dietary restriction) affected longevity. Next, to visualize the changes in metabolite levels during aging, we performed hierarchical clustering on both within-group and between-group scaled data for all signals commonly changing with age in both diets (Figure 4C). Interestingly, a very large fraction of metabolites that decreased with age was derived from the lipid fraction, and this observation applied to both diets (Figure 4C). Lipid profiles also declined with age in other animals (Houtkooper et al., 2011; Lapierre et al., 2011; Singh and Cuervo, 2012), suggesting that our analysis captures a general scheme of age-related changes in lipid metabolism. Among decreases, metabolites in clusters 6 and 8 declined more rapidly beginning in early, very young samples, suggesting that these signals had an earlier role, for example, during development and morphogenesis. In fact, age-related transcripts with the roles in morphogenesis experienced similar trends (Clusters 6, 7, Figure 5A,B). Although most of the decreases in clusters 6 and 8 were significant, they were not strongly different between the diets. This may reinforce the idea of the developmental role for these lipid profiles as flies were reared on the standard medium until day 3 post eclosion, before the transfer to dietary restricted media. In contrast, most polar metabolites increased with age and their rates of change between the diets were more dynamic (Figure 5C). In summary, the majority of age-related trajectories were very similar in both diets: they showed strong correlations to lifespan curves and were largely continuous as they followed trajectories observed in younger samples, while very few showed mid-life reversals (clusters 10\u201312) (Figure 4D). Some of the variations in metabolite magnitude between the diets, on the other hand, may be responsible for the observed lifespan differences.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02077/elife-02077-fig4-v1.jpg)\n\n**Figure 4.:** (A) Fold-change differences between common age-related metabolites from two dietary conditions (inter-dietary differences). Fold change was calculated using averages of individual metabolite levels across each lifespan. (B) Distribution of Pearson coefficients. The Kernel-Density function in R was used to plot the distribution of all Pearson coefficients representing correlations between each of the age-related metabolites and lifespan curves for standard (green) and defined (purple) diets. Signals were split into groups that showed inter-dietary differences of under (solid lines) or above (dashed lines) twofold-change. (C) Signals were clustered using methods described in Figure 3C legend. Side bars were added to highlight positions of the metabolites bearing statistically significant inter-dietary differences (Student t test, p<0.05), metabolites meeting above twofold inter-dietary change, metabolites from the lipid fraction, and metabolites bearing strong correlation to lifespan (Pearson coefficient |r| >0.75, color coded for each diet). (D) Age-related trajectories were derived from the hierarchical tree as described in Figure 3C legend.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02077/elife-02077-fig5-v1.jpg)\n\n**Figure 5.:** One way repeated measures ANOVA was used to identify transcripts with age-related changes at p<0.0013. A total of 1171 features showed significance in both diets. (A) Normalization and clustering were performed according to the procedures described for Figure 3C legend. Each box represents individual clusters trimmed from hierarchically clustered tree using hclust algorithm in R. The number of genes contributing to each cluster is provided in the bottom left corner. (B) ClusterProfiler (Yu et al., 2012) package in R (Yu et al., 2012) was used to test for enrichment for Biological Process ontology in Clusters 1\u201312 in (A). Clusters 3, 10, and 12 did not enrich and therefore are not present. (C) Comparison of diet-dependent and diet-independent frequencies in gene and metabolite expression data. Frequencies of diet-dependent to diet-independent changes in gene expression and metabolites were obtained from signals provided by clusters 112 in panel A and Figure 4D, respectively. Differences that were continuous across lifespan were categorized as progressive, and those that were not as intermittent. (D) Average trajectories of upregulated (solid lines) and downregulated (dashed lines) signals in gene (top panel) and metabolite (bottom panel) expression datasets. For gene expression, the upregulated trajectories are averages of all signals from Clusters 1\u20135 shown in panel A, while all downregulated signals were derived from Clusters 6\u20138. Similarly, the global increases and decreases in metabolite levels were generated by averaging signals in Clusters 2\u20134 and Clusters 5\u20138, respectively, from Figure 4D. Plots show normalized trajectories' values, which were obtained using quadratic polynomial fit through sample replicates. Points indicate sampled ages.\n\n### Similar changes in age-related metabolite and transcript profiles between short- and long-lived flies\n\nIf the observed global changes in metabolite levels are biologically relevant, we should expect to see similar patterns in gene expression across lifespan. For this, we analyzed a gene expression data set that sampled mated female flies raised similarly to our two dietary regimens (Pletcher et al., 2002). By applying similar statistical methods as those used for identifying the age-associated metabolites, we identified 1172 age-associated genes (ca. 8% of total) common to both diets (repeated measures ANOVA, p<0.0013). Clustering analysis revealed that about 70% of age-related genes also featured gradual transitions throughout lifespan, both increasing (clusters 2 through 5) and decreasing (clusters 6 through 8) with age (Figure 5A). We used Gene ontology (GO) (Ashburner et al., 2000) to test for enrichment of biological processes within each cluster and found that longevity in dietary restricted (DR) flies was associated with reduced metabolism (cluster 2), increased transport (cluster 11) and altered response to pathogens, albeit early in life (cluster 4) (Figure 5B). Similarly to previous studies in mammals and other species, genes with increased levels in cluster 1 were enriched for stress response genes, whose expression rose at slower rate in DR flies, suggesting that improved homeostasis in these individuals may reduce the need for certain stress protection (Lee et al., 1999; de Magalhaes et al., 2009; Plank et al., 2012). Another interesting observation was that all clusters, except for clusters 4 and 5, were enriched for non-overlapping GO terms, suggesting that the age-related changes in distinct biological processes proceeded synchronously. We suggest that this should also apply to nontargeted metabolites.\n\nTo compare metabolite and gene expression data further, we examined the frequency of diet-dependent vs diet-independent changes (e.g., trajectories that trended at different rates, levels and directions between the diets) (Figure 5C). First, for transcript changes, there were two types of diet-dependent effects: progressive, which differed at all age points (clusters 1\u20133, 8, 10 and 11) and intermittent which differed at some, but not all age points (clusters 6, 9 and 12). The diet-independent effects, however, predominated (68%) and fell into clusters 4, 5 and 7. Strikingly, we observed similar frequencies for age-related metabolites whereby clusters 2, 3, 6 and 10 can be categorized as diet-independent making up to 62% of total age-related signals common to both diets. The remaining fraction represented both progressive (clusters 4, 5, 7, 8, and 11) and intermittent (clusters 1, 9 and 12) effects. The diet-dependent differences in metabolite levels were more obvious after the clusters were separated into groups with below and above twofold inter-dietary difference (Figure 3C). The observed gradual, dynamic metabolome remodeling throughout lifespan, including both increases and decreases in metabolite signals, implied a role of predetermined, programmatic (but not necessarily programmed), genetically-defined aging (Pletcher et al., 2002; Somel et al., 2010; de Magalhaes, 2012). Importantly, similarities between their trajectories indicate that age-related metabolites effectively recapitulate gradual and continuous aging transitions. We propose that the vast majority of age-related metabolite trajectories are directly related to aging and may contribute to its manifestation and/or delay.\n\n### Coordinated delays in transcriptome and metabolome remodeling in long-lived flies and in late life\n\nWe further examined coordination in transcriptome and metabolome remodeling by examining transcript and metabolite signals that changed in both dietary groups. Interestingly, these age-related changes (both increases and decreases common to both diets) in either gene expression or metabolite levels were delayed in long-living flies (Figure 5D). Moreover, metabolome remodeling represented by these signals was decelerated with age within each dietary group (i.e., the signals initially showed robust changes, but then almost leveled off). Together with the analyses that revealed the diet-associated changes in the metabolome composition, these findings suggested that a change in lifespan involves both a delay in age-related metabolome and gene expression remodeling and a change in the set of expressed metabolites and genes at any point throughout lifespan. These data also resemble the metabolite diversity pattern (Figure 1A) and suggest a close relationship between activity-dependent damage accumulation and aging.\n\n### Lifespan extension is associated with decreased metabolism and tolerance to damage\n\nBehavioral or genetic alterations of nutrient sensing pathways and metabolism lead to lifespan extension in diverse phyla (Lin et al., 2002; Pletcher et al., 2002; McElwee et al., 2007; Panowski et al., 2007), suggesting that metabolite profiling could capture metabolic alterations between aging control and long-lived flies. We addressed this by examining several metabolic pathways by screening for age-associated profiles among 205 annotated metabolites, which we recalled from nontargeted spectral features and confirmed using authentic in-house standards. Among these, 81 metabolites displayed age-associated trends under both dietary regimens (repeated one-way ANOVA, p<0.05) and were associated with biosynthesis of amino acids, lipids, energy homeostasis, and damage production (Figure 6). As a whole, the clustering analysis by means of inter-dietary comparison of these age-associated molecules showed no prevalence for metabolite downregulation in flies from the dietary restricted regimen: there was nearly an equal frequency of diet-dependent to diet-independent effects (Figure 7A,B). Examination of the molecules within individual clusters (as they share similar age-related trajectories) led to several important observations. First, we find that, as in the case of nontargeted metabolite profiles, decreases of targeted signals were predominantly associated with lipids (cluster 1, Figure 7A,B). Eighty percent of metabolites in this cluster were triglycerides (TAGs) and diacylglycerols (DAGs), all of which normally rise highly during larval growth but decline thereafter (Carvalho et al., 2012). The high developmental expression of these lipid species may explain their rapid drop during adulthood in our data, well before the first major change in survivorship curves. Such patterns are also present within decreasing clusters of nontargeted metabolites that contain a large number of metabolites from the lipid fraction (clusters 6, 8, Figure 4D). Also, the age-associated tendencies between our standard and DR-like regimens suggest increased synthesis (or reduced utilization) of lipids in long-living flies and agree with higher lipid stores and starvation resistance of DR flies in previous studies (Burger et al., 2007; Katewa et al., 2012). In contrast, we observed a progressive age-associated increase in the cholesteryl esters in our long-living flies compared to controls (cluster 11). While accumulation of this lipid class has been inferred to negatively affect mammalian fitness (Lawton et al., 2008), it may extend Drosophila lifespan via increased pathogen protection (Caragata et al., 2013). Second, consistent with the effects of dietary restriction, we find that downregulated metabolites in long-lived flies (clusters 5\u20138, n = 39) were associated with insulin signaling, energy homeostasis, and amino acid metabolism (Figure 7C). Third, a striking observation was the elevation of methionine sulfoxide, which represents damage (Orentreich et al., 1993; Ruan et al., 2002; Koc et al., 2004), and taurine, a product of cysteine degradation and a component of bile acids (Massie et al., 1989; Brosnan and Brosnan, 2006), in long-lived but not in control flies (cluster 9, Figure 7D). The levels of these molecules started to decline at the point corresponding to high mortality in both groups (at 40 and 50 days, respectively), which may be due to the low levels of these metabolites in cohorts surviving to old age (Curtsinger et al., 1992). Tryptophan is also a lifespan limiting amino acid (De Marte and Enesco, 1986) and a member of that cluster showing a similar pattern. Such bell-shaped lifespan-associated curves are not surprising as degradation of tryptophan and rise of the downstream metabolite kynurenine (also lifespan limiting metabolite [Oxenkrug et al., 2011] expressed higher on the defined diet) were reported in older individuals (Moroni et al., 1988; Frick et al., 2004). In sum, the higher levels of methionine sulfoxide, tryptophan, and kynurenine in our long-living flies are consistent with the notion that lifespan extension by dietary restricted regimen may increase damage tolerance. We suggest that long-living species may also feature higher levels of lifespan-limiting molecules and that metabolome remodeling upon dietary interventions activates compensatory mechanisms. Whether this is broadly applicable to a variety of lifespan-extending conditions and to long-lived species is a possibility worth exploring.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02077/elife-02077-fig6-v1.jpg)\n\n**Figure 6.:** (A) Overview of molecules significantly associated with aging according to biological processes in both diets (repeated measures ANOVA, p<0.05). (B) Venn diagram showing the number of significantly changing metabolites with relation to the number of metabolites uniquely significant to standard (solid) or defined (dashed) diets.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/02077/elife-02077-fig7-v1.jpg)\n\n**Figure 7.:** Annotated (targeted) metabolites were derived from raw nontargeted data and represent only signals of established chemical identities. (A and B) Patterns of targeted metabolites. Clustering and graphing were done identically to the procedures described for Figure 3C legends. Side bars highlight lipid species and cluster boundaries that correspond to consequently arranged plots in (B). (C) Metabolite set enrichment analysis was performed by MetaboAnalyst 2.0 (Xia and Wishart, 2011). The panel overviews low expressing signals in long-living flies (Clusters 5\u20138). (D) Metabolites representing known damage and lifespan limiting factors overlayed with lifespan curves for standard (solid) and defined (dotted) diets. Taurine and kynurenine showed statistically significant inter-dietary changes across lifespan. Methionine sulfoxide differed significantly between 10 and 25 day groups (Student t test p<0.50). Tryptophan showed no significant inter-dietary differences at 60\u201363 days. Circles correspond to sampled age groups, whereby z-scored expression values are generated from averages of randomly measured replicates representing separately sampled cohorts in standard (green) or defined (purple) diets.\n\n## Discussion\n\nAging was suggested to result from accumulation of molecular damage that leads to age-associated decrease in organism's fitness (Orgel, 1963; Kirkwood and Austad, 2000). Yet, individual damage forms, for example, damage caused by reactive oxygen species, proved to be both condition- and species-specific, challenging the relevance of damage accumulation to aging (Blagosklonny, 2008). However, aging may be associated with cumulative damage, whereby mild effects of the myriad damage forms may exhibit additive effects on organism's fitness. In this case, increased mortality may be associated with inevitable accumulation of heterogeneous damage forms, which are also condition dependent. For example, in interventions that extend lifespan (e.g., dietary restriction) reduction of some damage forms may be compensated by accumulation of other forms of damage. In addition to the role of damage, the contribution of changes in the levels of purposely used metabolites remains unclear. An age-related remodeling has been described for transcriptome, epigenome, and proteome, but how these changes relate to each other and what the role of metabolome remodeling is in the progression of aging is not well understood.\n\nOur report offers insights into the nature of aging through a comprehensive assessment of changes in a large number of endogenous small molecules throughout Drosophila lifespan. Our initial observations showed that global metabolite profiling effectively recapitulated distinct stages of the aging process and revealed metabolites that strongly correlate with organismal survivorship. Specifically, analysis of nontargeted features showed a robust increase in the number of detected molecules as a function of age, followed by cessation of the increase in late life. This pattern corresponded to the transitions in the lifespan curves and was also in concert with the observed decelerated metabolome remodeling in late life, altogether supporting the idea that aging subsides at advanced ages. On the other hand, the increase in the number of detected metabolites clearly differed from general age-associated changes, and its commonalities in the two dietary conditions exclude the role of exogenous compounds. The extended metabolome composition may include by-products that affect viability and damage forms that reach and pass the detection thresholds during organism's aging (Phoenix and de Grey, 2007), but they likely represent only the tip of the iceberg of cumulative damage. Further advances in instrumentation and sensitivity of metabolite profiling should expose additional metabolites that characterize cumulative damage.\n\nWe further followed age-related trajectories of 1066 individual metabolites common to short- and long-living flies and found that the trajectories of most metabolites correlated between the two dietary groups, yet varied in magnitude from initial to final concentration changes, suggesting that differences in accumulation of individual metabolites, in addition to the overall pattern, were responsible for lifespan differences. A substantial fraction of these signals showed biologically-relevant differences during aging and correlated with survivorship of flies. Metabolite trajectories were gradual and continuous starting from early adulthood, with very few signals showing mid-life reversals. These results are generally consistent with the observations from the studies on transcript and protein profiles across diverse aging populations (Zou et al., 2000; Pletcher et al., 2002; Somel et al., 2010). Indeed, our analysis of age-associated gene expression involving both control and dietary restricted long-lived individuals indicates that metabolites and transcripts exhibit nearly identical frequencies of diet-dependent to diet-independent effects. Thus, metabolites, similarly to genes, may exhibit diverse lifespan-regulatory roles. Similarly to targeted metabolite profiling in mammals (Tomas-Loba et al., 2013), the gradual transitions in thousands of nontargeted metabolites may be used to derive a signature that predicts survivorship across variable lifespans. Consistent with this idea, we observed a delay in the age-associated changes in transcripts and metabolites in the case of longer-lived flies. Thus, a change in lifespan (here, in response to a dietary regimen, but this should also apply to longevity-related genetic manipulations and evolutionary processes that affect species lifespan) involves both a change in the expressed transcripts and metabolites at any time throughout lifespan and a delay in age-related changes for those transcripts and metabolites that commonly change with age in both conditions (or genotypes).\n\nA significant overlap between metabolites that show age-associated changes between the diets can also identify the biological, rather than the chronological, aging component. Together with the component that reflects diet-specific patterns of metabolite change, it should help define the aging process in model systems and beyond. For instance, comparison of inter-dietary age-associated trajectories using known metabolites reveals that a fraction of downregulated signals were associated with slower metabolism in long-living flies. However, we also found that the molecular species with higher levels in long-living flies represented damage forms. While the inter-dietary differences for such increases were below twofold and varied in significance across age, the data nonetheless implies that lifespan extension may be associated with damage tolerance via compensatory mechanisms. In fact, long-living flies, when compared to control, featured a large set of nontargeted metabolites that increase at higher levels. How many of these metabolites represent damage will need to be determined through structural elucidation of nontargeted signals.\n\nOverall, from the current study the aging process emerges as a gradual, dynamic metabolome remodeling that involves changes in the levels (both increases and decreases) in numerous cellular metabolites, delays in these changes in late life and under conditions that lead to longer lifespan, and accumulation of damage, whose condition-dependent cumulative effects may impact survivorship.\n\n## Materials and methods\n\n### Drosophila lifespan extension and sampling\n\nProgenies used in aging assays and metabolite profiling experiments were prepared by mating wild-type animals of Canton-S background, which were backcrossed for seven generations. Aging progeny was grown on rich media (flystocks.bio.indiana.edu) at regular density. Newly eclosing F1 adult males were collected for 3 days, mixed and distributed within vials containing respective food for sampling at predetermined ages. The recipes for preparation of the defined diet have been described (Troen et al., 2007). Between 30 and 50 flies were sampled at each age, rapidly frozen in liquid nitrogen and stored at \u221280\u00b0C. Once all samples were collected they were immediately processed for LC-MS profiling.\n\n### Metabolite profiling\n\nThree LC-MS methods were used to measure polar metabolites and lipids in whole fly homogenates. Conditions for the analysis were set using a panel of routinely analyzed 293 standards. Polar and lipid-associated species were extracted from 7 and 2 flies, respectively, in three separate replicates which were ran in randomized order. All data were acquired using an LC-MS system comprised of a Nexera X2 U-HPLC (Shimadzu, Marlborough, MA) and a Q Exactive hybrid quadrupole orbitrap mass spectrometer (Thermo Fisher Scientific; Waltham, MA). Hydrophilic interaction liquid chromatography (HILIC) analyses of water soluble metabolites in the positive ionization mode were carried out by extracting 10 \u00b5l homogenate using 90 \u00b5l of 74.9:24.9:0.2 vol/vol/vol acetonitrile/methanol/formic acid containing stable isotope-labeled internal standards (valine-d8, Isotec; and phenylalanine-d8, Cambridge Isotope Laboratories; Andover, MA). The samples were centrifuged (10 min, 9000\u00d7g, 4\u00b0C) and the supernatants were injected directly onto a 150 \u00d7 2 mm Atlantis HILIC column (Waters; Milford, MA). The column was eluted isocratically at a flow rate of 250 \u00b5l/min with 5% mobile phase A (10 mM ammonium formate and 0.1% formic acid in water) for 1 min followed by a linear gradient to 40% mobile phase B (acetonitrile with 0.1% formic acid) over 10 min. The electrospray ionization voltage was 3.5 kV and data were acquired using full scan analysis over m/z 70\u2013800 at 70,000 resolution and a 3 Hz data acquisition rate. Negative ion mode analyses of polar metabolites were achieved using a HILIC method under basic conditions. Briefly, 30 \u00b5l homogenate was extracted using 120 \u00b5l of 80% methanol containing inosine-15N4, thymine-d4, and glycocholate-d4 internal standards (Cambridge Isotope Laboratories; Andover, MA). The samples were centrifuged (10 min, 9000\u00d7g, 4\u00b0C) and the supernatants were injected directly onto a 150 \u00d7 2.0 mm Luna NH2 column (Phenomenex; Torrance, CA) that was eluted at a flow rate of 400 \u00b5l/min with initial conditions of 10% mobile phase A (20 mM ammonium acetate and 20 mM ammonium hydroxide in water) and 90% mobile phase B (10 mM ammonium hydroxide in 75:25 vol/vol acetonitrile/methanol) followed by a 10 min linear gradient to 100% mobile phase A. MS full scan data were acquired over m/z 70\u2013800. The ionization source voltage is \u22123.0 kV and the source temperature is 325\u00b0C. Lipids were extracted from 10 \u00b5l of homogenate using 190 \u00b5l of isopropanol containing 1-dodecanoyl-2-tridecanoyl-sn-glycero-3-phosphocholine (Avanti Polar Lipids; Alabaster, AL). After centrifugation, supernatants were injected directly onto a 150 \u00d7 3.0 mm Prosphere HP C4 column (Grace, Columbia, MD). The column was eluted isocratically with 80% mobile phase A (95:5:0.1 vol/vol/vol 10 mM ammonium acetate/methanol/acetic acid) for 2 min followed by a linear gradient to 80% mobile-phase B (99.9:0.1 vol/vol methanol/acetic acid) over 1 min, a linear gradient to 100% mobile phase B over 12 min, then 10 min at 100% mobile-phase B. Full scan MS analyses (m/z 400\u20131000) were carried out in the positive ion mode using full scan analysis at 70,000 resolution and 3 Hz data acquisition rate. All raw data were processed using Progenesis CoMet software (version 2.0, NonLinear Dynamics) for feature alignment, signal detection, and signal integration. Signal peak areas were converted into numerical intensity values and normalized to internal standards added to each sample and to total signal at each time point. The raw peak intensity values are provided as Supplementary dataset (Avanesov et al., 2014).\n\n### Statistical analysis\n\nAge-associated signals were identified using repeated measures ANOVA, and significance was established at p<0.0014 (<0.2% of false positives) and False discovery rate (FDR) of 0.029. To calculate FDR, we first established relationships between error rate and its corresponding p value (Storey and Tibshirani, 2003) and used an adjusted p value at the interface that marked transition between linear and exponential rise in error rate. Then, FDR was calculated using compute.FDR function in R brainwaver package with the significance thresholds established above. Data analysis was also carried on in the R environment; information on packages used in this study can be found within respective figure legends. Metabolite enrichment analysis was performed in MetaboAnalyst 2.0 (Xia and Wishart, 2011). For gene expression analysis, we used a dataset that was normalized using RMA package of Bioconductor in R and kindly provided by Dr Scott Pletcher (Pletcher et al., 2002). Age-associated gene expression signatures were identified identically to the metabolites above and corrected for multiple testing (p<0.0013, FDR = 0.025) using aforementioned computations and significance threshold selections.\n",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "3e55446b-4385-41f2-b5b1-2df6a86f042e",
+      "submission_id": "fc217d49-0f56-4f91-92dd-dc2b34319a06",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Philipp Khaitovich, Partner Institute for Computational Biology , China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02077.011](https://doi.org/10.7554/eLife.02077.011)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cAge- and diet-associated metabolome remodeling characterizes the aging process driven by damage accumulation\u201d for consideration at eLife. Your article has been evaluated by a Senior editor, a Reviewing editor, and 2 reviewers.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nOne of the major concerns voiced by both reviewers and shared by the editor is that this work is strongly interpreted by the authors to support the aging hypothesis recently formulated by the senior author of the manuscript. While such a trend is understandable, it is not obvious that the presented data cannot be explained by other aging hypotheses. Furthermore, authors would be advised to try to provide more evidence that metabolome changes and survival changes are really as well correlated as claimed. For instance, to provide additional support for the aging hypothesis promoted by the authors, one may need to show that differences in survival curves between dietary controlled animals and common animals can be linked with differences in the shapes of metabolite repertoire curves. It is not clear however, whether data provided by the authors could unambiguously support such a claim. Thus, in the absence of additional evidence, a much more balanced data interpretation considering other aging hypotheses would be advised.\n\nOther issues to address:\n\nReviewer 1:\n\nIn this work, the authors performed metabolic profiling in aging flies and also in context of caloric restriction. To my knowledge, this is the first metabolic profiling of aging in flies, and one of the first in context of aging, and therefore will be of interest to researchers in the field. The work is largely sound, though some aspects, including the methodology, require further clarification, and at times the authors' interpretations of the results and how it fits our current knowledge of aging were unclear to me, as detailed below.\n\nOne concern I have is that there are aspects of the methods that I think require further clarification. One aspect that wasn't clear to me is whether the authors used females and males? Figure 1 only refers to males but if the authors only used males then they should explicitly mention this in the manuscript. Also, the authors write that: \u201cAs metabolites were extracted from the same number of flies at each time point, the decreased total signal may represent lower biomass in older flies\u201d; but then shouldn't the results be normalized by biomass or by the total signal? I'm not an expert in metabolic profiling, and thus could be mistaken, but this seems reasonable to me. Also, the authors write: \u201cUsing repeated measures ANOVA and stringent statistical cut-off that estimated <0.2% of false positives (Materials and Methods)\u201d; but I couldn't find where this is described in the Methods. A reference is made to an FDR of 0.029 which \u223c3%. It also wasn't clear to me how FDR was estimated and significance established.\n\nI think the authors can do a better job of placing their findings in context of current knowledge. There are several statements, in particular in the Introduction, that are not supported by a suitable reference. For example, the authors mention how \u201cit is also known that lifespan can actually be increased under mild stress\u201d, which is called hormesis by various authors with important contributions in this context (e.g., Rattan). Also: \u201cit is not known whether cumulative damage increases linearly or exponentially throughout lifespan\u201d; yet various authors have quantified different types of damage (DNA mutations in aging tissues in mice by Vijg and co-workers, more recent quantifications of DNA mutations in human samples with NGS, etc).\n\nI thought some statements and conclusions by the authors were unclear and/or not entirely supported by the data. For example: \u201cThis finding suggested that the observed metabolite pattern characterized cumulative damage.\u201d But have the authors considered that many changes with age are adaptive responses trying to fend off aging, as suggested by gene expression studies (e.g., see de Magalhaes et al. Bioinformatics 25:875-881)? I may be missing something but the interpretation of the results in context of cumulative damage wasn't clear to me. In the Discussion the authors write: \u201cAging was suggested to result from accumulation of molecular damage...\u201d and a few sentences later: \u201cAlternatively, aging may be due to cumulative damage\u201d; why should this be an alternative? \u201cAccumulation of molecular damage\u201d and \u201ccumulative damage\u201d mean the same to me.\n\nAlso: \u201cThus, the observed gradual, dynamic metabolome remodeling throughout lifespan, including both increases and decreases in metabolite signals, implied a role of predetermined, genetically-defined aging.\u201d It wasn't clear to me why this should be the case. Besides, even assuming this is the case, such genetic regulatory basis in aging has been shown by other studies, which should be mentioned (for a recent review see de Magalhaes, FASEB Journal 26:4821-4826; also Somel 2010 which is cited later in the manuscript but should also be mentioned in this context).\n\n\u201cThese metabolite analyses provide critical insights into the nature of the aging process.\u201d While this type of work is novel, I think this is an overstatement. Many of the results obtained by the authors are in line with overall patterns and signatures of aging and CR, for example at the level of lipid metabolism and stress response genes (e.g., Plank et al. Molecular BioSystems 8:1339-1349). The authors should either be more clear about the insights from by their results or tone down their interpretation.\n\nI would also suggest that the authors check the overlap between their gene expression results and the GenDR database of CR-related genes since these are genes demonstrated directly to affect CR-mediated longevity and may allow the authors to identify candidate regulators of CR longevity effects: http://genomics.senescence.info/diet/\n\nLastly, the authors write: \u201conly a small fraction of metabolites showed more than 2-fold changes between the two diets\u201d; are these given in the supplementary material? In fact, is the full data available as supplementary material or in a suitable repository?\n\nOverall, this is an original and interesting work, though some aspects of the manuscript may be improved and clarified. It is possible that some of my comments reflect misunderstandings of mine. If so then I would suggest that the author uses my misunderstandings as an indication that such points might be made clearer in the manuscript.\n\nIt my usual policy to reveal my identity to the authors: Joao Pedro de Magalhaes.\n\nReviewer 2:\n\nAvanesov et al describe a metabolome analysis of fruit fly aging, using both a standard and lifespan extending restricted diet. They find that 15% of metabolites levels change during aging; that the timing and speed of metabolite level changes during aging largely parallels those of mRNA, and is slower under lifespan extending dietary conditions; that the number of detected metabolites increases with age; that metabolites in the lipid fraction decrease with age and that this decrease is unrelated to diet effect/longevity. Also, interestingly, the rate of metabolome changes is decelerated during aging, though such deceleration is not observed in gene expression (although the latter data is from another experiment). The authors further find higher levels of potentially damage-representing metabolites in long-lived DR flies, than standard diet fed flies, which they suggest could be explained by extra stress resistance of DR flies.\n\nMajor points:\n\nThe data and the methods appear sound. My main objection is regarding how some results were interpreted. For me, the claims that metabolome changes are directly linked to mortality, and that metabolome changes reflect cumulative damage, are both overinterpretations. Specifically:\n\n1) \u201cThis transition in the metabolome diversity corresponded to the late-life transition in the survival curves, linking metabolome diversity with the aging process. Thus, while damage accumulation is continuous throughout adulthood, it decelerates at advanced stages of life.\u201d\n\nFor me, this does not link \u201cmetabolome diversity with the aging process\u201d, but only suggests a link. Second, how is it concluded that metabolome diversity reflects damage accumulation? This should be better explained, or the claim softened.\n\n2) \u201cThe observed changes in the metabolome uncovered a link between the aging process and metabolite diversity. They also suggested that many metabolites reaching detection in the course of aging may represent low levels of by-products or other damage forms.\u201d\n\nAgain, based on what?\n\n3) \u201cThe observed pattern provided additional insights into damage accumulation. For example, the number of newly detected species did not rise exponentially or linearly during aging, instead reflecting deceleration of aging in late life.\u201d\n\nAgain, this only assuming that the change in metabolite number reflects damage accumulation.\n\n4) \u201cThis data is also congruent with the damage pattern (Figure 1B,C) and confirms the links between activity-dependent damage accumulation and aging.\u201d\n\n5) \u201cThis pattern matched transitions in the mortality curves (...)\u201d.\n\nIn order to claim this, the authors should first clearly define \u201ctransitions in the mortality curves\u201d; i.e., the ages when transitions happen. They could then show that points when metabolite number changes or metabolite intensity level changes decelerate or accelerated correspond to these mortality transitions.\n\nIn summary, the general claim here is that because the change in metabolite number is correlated with mortality, the former should reflect molecular damage. This involves a lot of assumptions (which are not openly stated) and can only be a suggestion, not an observation.\n\nSecond, I am not sure if the mortality curves indeed are correlated with the change in detected metabolite number. In Figure 1B-C, the increase in metabolite diversity appears before mortality increases, it slows down when mortality increases. So I am not sure whether it could be concluded that deceleration in metabolite diversity refletcs \u201cdeceleration of aging in late life\u201d.\n\nPerhaps the authors have data to support these claims, but then these should be more clearly explained.\n",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "02fba7ea-aa44-4544-8ccd-8fab50a672e6",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C1",
+      "claim": "The defined diet led to lifespan extension in Drosophila males.",
+      "claim_type": "EXPLICIT",
+      "source": "The defined diet, which was prepared from chemical components and mimicked dietary restriction conditions (Bass et al., 2007), led to lifespan extension (Figure 1A), similar to the well-characterized effect of dietary restriction (Mair et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1A showing lifespan curves, citations to previous work on dietary restriction effects, and experimental data from the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "cf77aeba-6c3f-440a-a288-ac8f34c0d270",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C2",
+      "claim": "Mean lifespan of flies on standard diet was 50.8 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean lifespan of flies on standard and defined diets was 50.8 and 64.4 days, respectively (log-rank test [p<0.001]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly supported by experimental measurements reported in the text with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "3fd36dbe-e881-4bb9-be51-5f7c8c22b162",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C3",
+      "claim": "Mean lifespan of flies on defined diet was 64.4 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean lifespan of flies on standard and defined diets was 50.8 and 64.4 days, respectively (log-rank test [p<0.001]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly supported by experimental measurements reported in the text with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "addfc494-fdd1-4d0b-adee-8482319665c4",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C4",
+      "claim": "The number of detected nontargeted metabolites increases with age in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the number of detected metabolites was lowest in the young flies in each dietary group and increased as a function of age (repeated measures ANOVA, p<6 \u00d7 10\u22126 for each diet).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis (repeated measures ANOVA) of experimental data across age groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "f4f5e7ee-7975-4b55-bfa6-b6eb66588500",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C5",
+      "claim": "The overall metabolite signal slightly decreased throughout lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the overall signal (the sum of signals for all molecular species detected) slightly decreased throughout lifespan (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1A and described in the text.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "44322ff7-9e29-4e0d-8660-5b9a0a2fb73a",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C6",
+      "claim": "The rise in the number of detected metabolites leveled off at the most advanced ages.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the rise in the number of detected metabolites was steady during adulthood, yet leveled off (and even slightly decreased) at the most advanced ages (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data visualization in Figure 1A and textual description of the pattern.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "a93c6be4-a6c9-4f01-8480-764098e194c5",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C7",
+      "claim": "The transition in metabolite diversity corresponded to the late-life transition in the lifespan curves and mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "This transition in the metabolite diversity corresponded to the late-life transition in the lifespan curves and mortality (Figure 1\u2014figure supplement 1), suggesting relationship between metabolite diversity and the aging process.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of metabolite diversity patterns with mortality data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "c6ca5aa7-3078-4c38-bcb9-27b74fdf9eca",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C8",
+      "claim": "Analysis of metabolite diversity using a panel of 205 known metabolites did not show significant age-associated trends.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, analysis of metabolite diversity using a panel of 205 known metabolites did not show significant age-associated trends (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by targeted metabolite profiling data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "2836bd03-12d1-453c-a753-7e7f21c8645a",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C9",
+      "claim": "The distribution of signal intensities between targeted metabolites and metabolites showing diversity fluctuations differed by few orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the distribution of signal intensities between targeted metabolites and metabolites, which show diversity fluctuations throughout lifespan were different by few orders of magnitude (Figure 1B,C), suggesting that the latter generally corresponded to molecules of low abundance and were not due to errors of detection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of signal intensity distributions shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "7e3c2aa5-77b1-4f29-840d-762bb6d9e8aa",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C10",
+      "claim": "Metabolites showing diversity fluctuations generally corresponded to molecules of low abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the distribution of signal intensities between targeted metabolites and metabolites, which show diversity fluctuations throughout lifespan were different by few orders of magnitude (Figure 1B,C), suggesting that the latter generally corresponded to molecules of low abundance and were not due to errors of detection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the difference in signal intensity distributions shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "664874bb-2439-483a-ab46-c520c101d665",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C11",
+      "claim": "Changes in metabolite diversity could not be attributable to the presence of yeast-derived metabolites in the diet.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, changes in metabolite diversity could not be attributable to the presence of yeast-derived metabolites in our diet, since the chemically defined diet contained no cellular products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental design using a chemically defined diet without cellular products.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "c7a129ec-6438-490c-abb7-825a6a3b3892",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C12",
+      "claim": "The metabolite profiling platform detected >15,000 unique analytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our metabolite profiling platform detected >15,000 unique analytes (nontargeted, non-redundant, de-isotoped LC-MS peaks), whose relative abundance was followed as a function of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated based on the LC-MS profiling methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "8c1fbbe8-bdba-4c79-939f-6de2fe7ffd0e",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C13",
+      "claim": "2234 metabolites were identified as age-associated in the standard diet.",
+      "claim_type": "EXPLICIT",
+      "source": "Using repeated measures ANOVA and stringent statistical cut-off that estimated <0.2% of false positives ('Materials and methods'), we identified 2234 and 2216 metabolites (\u223c14% of all detected metabolites) that qualified as age-associated in the standard and defined diets, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis (repeated measures ANOVA) of the metabolite profiling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "dd7070a2-cf26-407e-b432-f16eb78c487c",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C14",
+      "claim": "2216 metabolites were identified as age-associated in the defined diet.",
+      "claim_type": "EXPLICIT",
+      "source": "Using repeated measures ANOVA and stringent statistical cut-off that estimated <0.2% of false positives ('Materials and methods'), we identified 2234 and 2216 metabolites (\u223c14% of all detected metabolites) that qualified as age-associated in the standard and defined diets, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis (repeated measures ANOVA) of the metabolite profiling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "38438761-d669-4dad-b927-3574ecf41a09",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C15",
+      "claim": "Approximately 14% of all detected metabolites qualified as age-associated.",
+      "claim_type": "EXPLICIT",
+      "source": "Using repeated measures ANOVA and stringent statistical cut-off that estimated <0.2% of false positives ('Materials and methods'), we identified 2234 and 2216 metabolites (\u223c14% of all detected metabolites) that qualified as age-associated in the standard and defined diets, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated based on statistical analysis of the metabolite data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "43c64fb9-d9fd-4523-8a92-9c82182792c1",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C16",
+      "claim": "1,066 age-associated metabolites were common to both dietary regimens.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the detected age-associated features, 1,066 were common to both dietary regimens (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Venn diagram analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "eb1d6aed-3096-4c89-9ed6-93f4efa49ae3",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C17",
+      "claim": "Common age-associated metabolites exhibited very similar trajectories of change between the two diets with median Pearson correlation coefficient of 0.76.",
+      "claim_type": "EXPLICIT",
+      "source": "These molecules exhibited very similar trajectories of change between the two diets (median Pearson correlation coefficient = 0.76), in contrast to the lack of such correlation when using all metabolite pairs between the diets (permutation test p<0.001) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical correlation analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "82d0bc07-8879-4b66-9c53-fef8a410fa6b",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C18",
+      "claim": "PCA of between-group scaled values segregated samples first by diet and then by age.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis (PCA) of the between-group scaled values segregated samples first by diet and then by age (Figure 2C), suggesting that the magnitudes of these metabolites were affected by dietary conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PCA analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "b5aef792-1007-4b2a-8ccf-85e567851c54",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C19",
+      "claim": "PCA of within-group scaled data revealed an age-dependent, but diet-independent segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, PCA of the within-group scaled data revealed an age-dependent, but diet-independent segregation, with the replicate samples of both diets grouping closely together (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PCA analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "aca3287c-ee42-4cfa-989c-ef638247ea61",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C20",
+      "claim": "Most age-related changes in metabolite levels within individual diets did not exceed 4\u20138-fold across lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, most age-related changes in metabolite intensity (levels hereafter for simplicity) within individual diets did not exceed 4\u20138-fold across lifespan (Figure 3A,B), which was consistent with the differences in gene expression between Drosophila subjected to dietary restriction or stress (Zou et al., 2000; Pletcher et al., 2002; Girardot et al., 2004; Landis et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fold-change analysis shown in Figure 3A,B and comparison with previous gene expression studies.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "8e252223-65f2-4671-82dc-a8ff6c6b8d1a",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C21",
+      "claim": "76% of age-related metabolites common to both diets showed less than twofold changes between the two diets.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, among the 1,542 age-related metabolites common to both diets, 76% showed less than twofold changes between the two diets (Figure 4A), indicating that the influence of diet was noticeable, but mostly small in magnitude.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by inter-dietary fold-change analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "3c0a0a24-c836-4f4c-ad15-c855dbabe31d",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C22",
+      "claim": "There was high prevalence of strong correlations (both positive and negative) between individual metabolite levels across lifespan and lifespan curves.",
+      "claim_type": "EXPLICIT",
+      "source": "These age-related changes may be linked to longevity as there was high prevalence of strong correlations (both positive and negative) between individual metabolite levels across lifespan and lifespan curves (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "0046ecaf-57db-4231-9e02-b92bf2928952",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C23",
+      "claim": "A very large fraction of metabolites that decreased with age was derived from the lipid fraction in both diets.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a very large fraction of metabolites that decreased with age was derived from the lipid fraction, and this observation applied to both diets (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by hierarchical clustering analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "e3cdb685-3ae6-416b-9ce1-b93fb5fd0c32",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C24",
+      "claim": "Lipid profiles declined with age in other animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipid profiles also declined with age in other animals (Houtkooper et al., 2011; Lapierre et al., 2011; Singh and Cuervo, 2012), suggesting that our analysis captures a general scheme of age-related changes in lipid metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies in other animal models.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "e4df4135-bbba-40d7-8038-021e519f8b15",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C25",
+      "claim": "Most polar metabolites increased with age and their rates of change between the diets were more dynamic.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, most polar metabolites increased with age and their rates of change between the diets were more dynamic (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "27d291a8-f048-4bf0-9f3a-02870d80189b",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C26",
+      "claim": "1172 age-associated genes (ca. 8% of total) were common to both diets in the gene expression analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "By applying similar statistical methods as those used for identifying the age-associated metabolites, we identified 1172 age-associated genes (ca. 8% of total) common to both diets (repeated measures ANOVA, p<0.0013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "4d50e45c-52f1-4677-9bb4-cc329f4809c8",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C27",
+      "claim": "About 70% of age-related genes featured gradual transitions throughout lifespan, both increasing and decreasing with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustering analysis revealed that about 70% of age-related genes also featured gradual transitions throughout lifespan, both increasing (clusters 2 through 5) and decreasing (clusters 6 through 8) with age (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by clustering analysis of gene expression data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "453966df-f416-4d45-bad5-c9a279fabd88",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C28",
+      "claim": "Longevity in dietary restricted flies was associated with reduced metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "We used Gene ontology (GO) (Ashburner et al., 2000) to test for enrichment of biological processes within each cluster and found that longevity in dietary restricted (DR) flies was associated with reduced metabolism (cluster 2), increased transport (cluster 11) and altered response to pathogens, albeit early in life (cluster 4) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Gene Ontology enrichment analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "f0f66b6a-d22c-45e4-899d-6439450dcd62",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C29",
+      "claim": "Longevity in dietary restricted flies was associated with increased transport.",
+      "claim_type": "EXPLICIT",
+      "source": "We used Gene ontology (GO) (Ashburner et al., 2000) to test for enrichment of biological processes within each cluster and found that longevity in dietary restricted (DR) flies was associated with reduced metabolism (cluster 2), increased transport (cluster 11) and altered response to pathogens, albeit early in life (cluster 4) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Gene Ontology enrichment analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "c07bb037-46f8-4ad6-bf88-416343c81e15",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C30",
+      "claim": "Longevity in dietary restricted flies was associated with altered response to pathogens early in life.",
+      "claim_type": "EXPLICIT",
+      "source": "We used Gene ontology (GO) (Ashburner et al., 2000) to test for enrichment of biological processes within each cluster and found that longevity in dietary restricted (DR) flies was associated with reduced metabolism (cluster 2), increased transport (cluster 11) and altered response to pathogens, albeit early in life (cluster 4) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Gene Ontology enrichment analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "c5c9bec6-91bc-4afd-8a18-3528f735a8bf",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C31",
+      "claim": "Genes with increased levels in cluster 1 were enriched for stress response genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to previous studies in mammals and other species, genes with increased levels in cluster 1 were enriched for stress response genes, whose expression rose at slower rate in DR flies, suggesting that improved homeostasis in these individuals may reduce the need for certain stress protection (Lee et al., 1999; de Magalhaes et al., 2009; Plank et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Gene Ontology enrichment analysis and comparison with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "d154f109-8d69-4be4-b404-a600b2632c53",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C32",
+      "claim": "Stress response gene expression rose at slower rate in DR flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to previous studies in mammals and other species, genes with increased levels in cluster 1 were enriched for stress response genes, whose expression rose at slower rate in DR flies, suggesting that improved homeostasis in these individuals may reduce the need for certain stress protection (Lee et al., 1999; de Magalhaes et al., 2009; Plank et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of gene expression trajectories and comparison with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "23f1b87f-24a2-459a-aac1-ec4da8073444",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C33",
+      "claim": "Diet-independent effects predominated in transcript changes, making up 68% of age-related genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The diet-independent effects, however, predominated (68%) and fell into clusters 4, 5 and 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by clustering analysis of gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "ca05e6ce-467f-4923-b6b5-be10c28b8005",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C34",
+      "claim": "Diet-independent metabolite changes made up 62% of total age-related signals common to both diets.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we observed similar frequencies for age-related metabolites whereby clusters 2, 3, 6 and 10 can be categorized as diet-independent making up to 62% of total age-related signals common to both diets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by clustering analysis of metabolite data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "90ae878b-c64b-4101-b318-9bd5e1b6ca9b",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C35",
+      "claim": "Age-related changes in either gene expression or metabolite levels were delayed in long-living flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these age-related changes (both increases and decreases common to both diets) in either gene expression or metabolite levels were delayed in long-living flies (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by trajectory analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "38789a8a-634a-4936-b85a-cc5b971c8112",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C36",
+      "claim": "Metabolome remodeling was decelerated with age within each dietary group.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, metabolome remodeling represented by these signals was decelerated with age within each dietary group (i.e., the signals initially showed robust changes, but then almost leveled off).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of metabolite trajectory patterns across age.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "2ed610a5-4d27-4716-b0c1-ce14174c8c89",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C37",
+      "claim": "81 metabolites displayed age-associated trends under both dietary regimens among 205 annotated metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, 81 metabolites displayed age-associated trends under both dietary regimens (repeated one-way ANOVA, p<0.05) and were associated with biosynthesis of amino acids, lipids, energy homeostasis, and damage production (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of targeted metabolite profiling data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "d6c594c3-1179-46d5-801f-a23fa95201be",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C38",
+      "claim": "Eighty percent of metabolites in cluster 1 were triglycerides (TAGs) and diacylglycerols (DAGs).",
+      "claim_type": "EXPLICIT",
+      "source": "Eighty percent of metabolites in this cluster were triglycerides (TAGs) and diacylglycerols (DAGs), all of which normally rise highly during larval growth but decline thereafter (Carvalho et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by metabolite identification and comparison with previous developmental studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "5bab9d3d-6900-491b-8e30-0a78982d699b",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C39",
+      "claim": "TAGs and DAGs normally rise highly during larval growth but decline thereafter.",
+      "claim_type": "EXPLICIT",
+      "source": "Eighty percent of metabolites in this cluster were triglycerides (TAGs) and diacylglycerols (DAGs), all of which normally rise highly during larval growth but decline thereafter (Carvalho et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous developmental studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "45598d28-fc67-460d-b24b-508e32d3d33c",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C40",
+      "claim": "Age-associated tendencies suggest increased synthesis (or reduced utilization) of lipids in long-living flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the age-associated tendencies between our standard and DR-like regimens suggest increased synthesis (or reduced utilization) of lipids in long-living flies and agree with higher lipid stores and starvation resistance of DR flies in previous studies (Burger et al., 2007; Katewa et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from metabolite trajectory analysis and supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "c0d93844-1360-4436-ba26-2f0fc5364fa7",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C41",
+      "claim": "A progressive age-associated increase in cholesteryl esters was observed in long-living flies compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observed a progressive age-associated increase in the cholesteryl esters in our long-living flies compared to controls (cluster 11).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by metabolite profiling data showing cluster 11 patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "f7271cf0-16a4-4485-a792-dd30ba0fd0ef",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C42",
+      "claim": "Accumulation of cholesteryl esters may extend Drosophila lifespan via increased pathogen protection.",
+      "claim_type": "EXPLICIT",
+      "source": "While accumulation of this lipid class has been inferred to negatively affect mammalian fitness (Lawton et al., 2008), it may extend Drosophila lifespan via increased pathogen protection (Caragata et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies on cholesteryl esters in different organisms.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "d9c2d5e4-d6a2-4c21-840e-19e4da1393bd",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C43",
+      "claim": "Downregulated metabolites in long-lived flies (clusters 5\u20138, n = 39) were associated with insulin signaling, energy homeostasis, and amino acid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, consistent with the effects of dietary restriction, we find that downregulated metabolites in long-lived flies (clusters 5\u20138, n = 39) were associated with insulin signaling, energy homeostasis, and amino acid metabolism (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by metabolite set enrichment analysis shown in Figure 7C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "c62b9c39-a2d7-4ec2-b158-63ab2b3efaed",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C44",
+      "claim": "Methionine sulfoxide was elevated in long-lived but not in control flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, a striking observation was the elevation of methionine sulfoxide, which represents damage (Orentreich et al., 1993; Ruan et al., 2002; Koc et al., 2004), and taurine, a product of cysteine degradation and a component of bile acids (Massie et al., 1989; Brosnan and Brosnan, 2006), in long-lived but not in control flies (cluster 9, Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by targeted metabolite profiling data shown in Figure 7D and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "1833ef86-9597-4fe2-be5a-eda47d69d119",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C45",
+      "claim": "Taurine was elevated in long-lived but not in control flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, a striking observation was the elevation of methionine sulfoxide, which represents damage (Orentreich et al., 1993; Ruan et al., 2002; Koc et al., 2004), and taurine, a product of cysteine degradation and a component of bile acids (Massie et al., 1989; Brosnan and Brosnan, 2006), in long-lived but not in control flies (cluster 9, Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by targeted metabolite profiling data shown in Figure 7D and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "0510fec9-f83c-438c-a7cb-eb7425a8208a",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C46",
+      "claim": "Methionine sulfoxide represents damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, a striking observation was the elevation of methionine sulfoxide, which represents damage (Orentreich et al., 1993; Ruan et al., 2002; Koc et al., 2004), and taurine, a product of cysteine degradation and a component of bile acids (Massie et al., 1989; Brosnan and Brosnan, 2006), in long-lived but not in control flies (cluster 9, Figure 7D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies on methionine sulfoxide.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "01746656-f0d8-46e2-943a-bcc8effb861f",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C47",
+      "claim": "Taurine is a product of cysteine degradation and a component of bile acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, a striking observation was the elevation of methionine sulfoxide, which represents damage (Orentreich et al., 1993; Ruan et al., 2002; Koc et al., 2004), and taurine, a product of cysteine degradation and a component of bile acids (Massie et al., 1989; Brosnan and Brosnan, 2006), in long-lived but not in control flies (cluster 9, Figure 7D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies on taurine biochemistry.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "417ed8a8-4220-4a80-a34d-dd1e42596d88",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C48",
+      "claim": "The levels of methionine sulfoxide and taurine started to decline at the point corresponding to high mortality in both groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The levels of these molecules started to decline at the point corresponding to high mortality in both groups (at 40 and 50 days, respectively), which may be due to the low levels of these metabolites in cohorts surviving to old age (Curtsinger et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by metabolite trajectory data and citation to previous work on late-life mortality patterns.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "c9eb0e60-a286-4763-be7c-de350fee0ebc",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C49",
+      "claim": "Tryptophan is a lifespan limiting amino acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Tryptophan is also a lifespan limiting amino acid (De Marte and Enesco, 1986) and a member of that cluster showing a similar pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous study on tryptophan and lifespan.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "12d039f0-61f6-483e-b975-0f2d82f03100",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C50",
+      "claim": "Degradation of tryptophan and rise of the downstream metabolite kynurenine were reported in older individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Such bell-shaped lifespan-associated curves are not surprising as degradation of tryptophan and rise of the downstream metabolite kynurenine (also lifespan limiting metabolite [Oxenkrug et al., 2011] expressed higher on the defined diet) were reported in older individuals (Moroni et al., 1988; Frick et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies on tryptophan metabolism in aging.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "6b422477-d172-4c6c-b95d-7db55f01c7aa",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C51",
+      "claim": "Kynurenine is a lifespan limiting metabolite.",
+      "claim_type": "EXPLICIT",
+      "source": "Such bell-shaped lifespan-associated curves are not surprising as degradation of tryptophan and rise of the downstream metabolite kynurenine (also lifespan limiting metabolite [Oxenkrug et al., 2011] expressed higher on the defined diet) were reported in older individuals (Moroni et al., 1988; Frick et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous study on kynurenine and lifespan.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "de72e5d3-5c50-411c-bf9f-4d9162a029e1",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C52",
+      "claim": "The higher levels of methionine sulfoxide, tryptophan, and kynurenine in long-living flies are consistent with the notion that lifespan extension by dietary restricted regimen may increase damage tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, the higher levels of methionine sulfoxide, tryptophan, and kynurenine in our long-living flies are consistent with the notion that lifespan extension by dietary restricted regimen may increase damage tolerance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the metabolite profiling data and represents an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "c9414e41-2c03-490a-9ca9-e972a988e06b",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C53",
+      "claim": "Aging is thought to be associated with increased molecular damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Aging is thought to be associated with increased molecular damage, but representative markers vary across conditions and organisms, making it difficult to assess properties of cumulative damage throughout lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents established scientific consensus on aging theories.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "96994aa9-5350-4b9a-8692-dea1ff135959",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C54",
+      "claim": "Representative markers of molecular damage vary across conditions and organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Aging is thought to be associated with increased molecular damage, but representative markers vary across conditions and organisms, making it difficult to assess properties of cumulative damage throughout lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents established knowledge about variability in damage markers.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "d4412761-0622-4a21-af4f-3a9fc11236e0",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C55",
+      "claim": "Lifespan of various model organisms can be extended genetically via perturbation of nutrient sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, lifespan of various model organisms can be extended genetically via perturbation of nutrient sensing, pharmacologically by rapamycin treatment, or nutritionally by dietary restriction (Bishop and Guarente, 2007; Fontana et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies on lifespan extension methods.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "590c4b7d-136a-4fe0-a073-06ae85e96297",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C56",
+      "claim": "Lifespan of various model organisms can be extended pharmacologically by rapamycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, lifespan of various model organisms can be extended genetically via perturbation of nutrient sensing, pharmacologically by rapamycin treatment, or nutritionally by dietary restriction (Bishop and Guarente, 2007; Fontana et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies on lifespan extension methods.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "09e356f0-7265-41c4-81d2-98e1e9f16e2c",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C57",
+      "claim": "Lifespan of various model organisms can be extended nutritionally by dietary restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, lifespan of various model organisms can be extended genetically via perturbation of nutrient sensing, pharmacologically by rapamycin treatment, or nutritionally by dietary restriction (Bishop and Guarente, 2007; Fontana et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies on lifespan extension methods.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "6258927a-c7fa-4b19-8338-068fb8cf0e1f",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C58",
+      "claim": "Up-regulation of stress response and repair pathways may promote longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "Up-regulation of stress response and repair pathways, often linked to conditions of mild stress or hormesis (Rattan, 2010), may also promote longevity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work on hormesis and longevity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "7d466669-8d09-4479-b5e2-e6b14749a6ae",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C59",
+      "claim": "Aging involves damage accumulation including DNA mutations, errors in protein synthesis, unwanted posttranslational modifications, and metabolite by-products.",
+      "claim_type": "EXPLICIT",
+      "source": "It is often discussed that aging involves damage accumulation, therein an increase in DNA mutations, errors in protein synthesis, unwanted posttranslational modifications, metabolite by-products and many other damage forms contribute to the aging process (Rattan, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work on damage accumulation theories of aging.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "9c59a292-df80-4351-93f4-4125e41ee701",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C60",
+      "claim": "The source of damage is frequently linked to metabolic activities, such as those that produce reactive oxygen species.",
+      "claim_type": "EXPLICIT",
+      "source": "The source of damage is frequently linked to metabolic activities, such as those that produce reactive oxygen species and increase oxidative modifications (Kirkwood and Austad, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work on metabolic sources of damage.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "6981ad90-26a4-4e56-ad66-7198f68588cd",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C61",
+      "claim": "Studies identified robust transcriptional remodeling that accompanies the aging process.",
+      "claim_type": "EXPLICIT",
+      "source": "The exact mechanisms responsible for tolerance against molecular damage are not fully understood, but studies identified robust transcriptional remodeling that accompanies the aging process (Lee et al., 1999; Zou et al., 2000; Pletcher et al., 2002; McCarroll et al., 2004; de Magalhaes et al., 2009; Somel et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous transcriptome studies on aging.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "7c121dd2-bd54-4961-a964-338e236416fb",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C62",
+      "claim": "Individual damage types vary across conditions and among species.",
+      "claim_type": "EXPLICIT",
+      "source": "Another complication in such analyses is that individual damage types (e.g., mutations, lipofuscin accumulation, oxidative modifications) vary across conditions and among species (Rattan, 2008; Edman et al., 2009; de Magalhaes, 2012; Jonker et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies on damage variability.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "1fc0cb89-5d60-4723-99e6-6385152b811b",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C63",
+      "claim": "Metabolite profiling was used to explore metabolic signatures of aging in young vs old mice using a set of markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, metabolite profiling was used to explore metabolic signatures of aging in young vs old mice (Houtkooper et al., 2011; Tomas-Loba et al., 2013) using a set of markers, thereby confirming that aging is associated with alterations in nutrient sensing, lipid and amino acid metabolism, and redox homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous metabolomics studies in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "4f773f45-dfba-4b25-a8da-8afbc52fde1b",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C64",
+      "claim": "Aging is associated with alterations in nutrient sensing, lipid and amino acid metabolism, and redox homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, metabolite profiling was used to explore metabolic signatures of aging in young vs old mice (Houtkooper et al., 2011; Tomas-Loba et al., 2013) using a set of markers, thereby confirming that aging is associated with alterations in nutrient sensing, lipid and amino acid metabolism, and redox homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous metabolomics studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "49525cee-34d0-4fe5-8ec2-7a37c11116ba",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C65",
+      "claim": "Damaged molecular species are expected to exhibit age-associated mass shifts.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, damaged molecular species are expected to exhibit age-associated mass shifts, which may be represented by an increase in metabolite diversity, potentially offering a larger repertoire of damage forms than analyzed previously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents a logical inference about how damage would manifest in mass spectrometry data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "5b266030-1226-496b-8fcc-4b2ad5b235ef",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C66",
+      "claim": "Aging is characterized by gradual metabolome remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, aging is characterized by gradual metabolome remodeling, and condition- and advanced age-associated deceleration of this remodeling is linked to mortality and molecular damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents a major conclusion from the study based on the metabolite profiling data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "0b384f33-81de-438f-843c-4939f2880172",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C67",
+      "claim": "Condition- and advanced age-associated deceleration of metabolome remodeling is linked to mortality and molecular damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, aging is characterized by gradual metabolome remodeling, and condition- and advanced age-associated deceleration of this remodeling is linked to mortality and molecular damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents a major conclusion from the study based on the metabolite profiling data and mortality patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "aabded4e-bcc4-42bc-b3a0-a8eb6e3c7bfa",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C68",
+      "claim": "Aging is associated with increased metabolite diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that aging is associated with increased metabolite diversity and low-abundance molecules, suggesting they include cumulative damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly supported by the nontargeted metabolite profiling data showing increasing numbers of detected metabolites with age.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "73369604-8751-4d59-a96e-956833234a81",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C69",
+      "claim": "Low-abundance molecules that increase with age include cumulative damage.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that aging is associated with increased metabolite diversity and low-abundance molecules, suggesting they include cumulative damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the pattern of low-abundance metabolite accumulation with age.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "ea56f70f-473d-48fd-a18d-a069fb1aaa74",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C70",
+      "claim": "The number of detected compounds leveled-off in late-life.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the number of detected compounds leveled-off in late-life, and this pattern associated with survivorship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly supported by the metabolite diversity data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "9e3e3035-ec11-41d8-ad0d-f00c62d9f96f",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C71",
+      "claim": "The leveling-off of detected compounds in late-life associated with survivorship.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the number of detected compounds leveled-off in late-life, and this pattern associated with survivorship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of metabolite diversity patterns with lifespan curves.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "5d8c43d1-0cf9-44db-98fa-c22be6b093b8",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C72",
+      "claim": "Fourteen percent of metabolites showed age-associated changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourteen percent of metabolites showed age-associated changes, which decelerated in late-life and long-lived flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly supported by statistical analysis of the metabolite profiling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "7800f3e7-0d65-4447-a069-ed548e059b10",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C73",
+      "claim": "Age-associated metabolite changes decelerated in late-life and long-lived flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourteen percent of metabolites showed age-associated changes, which decelerated in late-life and long-lived flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by trajectory analysis of age-associated metabolites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "91496178-d8f1-4225-8f5e-c1a19fd05d3c",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C74",
+      "claim": "Known metabolites changed in abundance similarly to nontargeted metabolites and transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, known metabolites changed in abundance similarly to nontargeted metabolites and transcripts, but did not increase in diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of targeted and nontargeted metabolite profiling data with transcriptome data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "37c6d300-fd78-407a-bbc5-ee8371324d7e",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C75",
+      "claim": "Known metabolites did not increase in diversity with age.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, known metabolites changed in abundance similarly to nontargeted metabolites and transcripts, but did not increase in diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly supported by the targeted metabolite profiling data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "f5e32e4f-61e1-47ce-bdac-f428b83e1836",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C76",
+      "claim": "Targeted profiling revealed slower metabolism in long-lived flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted profiling also revealed slower metabolism and accumulation of lifespan-limiting molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by targeted metabolite profiling data and metabolite set enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "a28cad1c-c812-4973-8906-c63fea8f6beb",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C77",
+      "claim": "Targeted profiling revealed accumulation of lifespan-limiting molecules in long-lived flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted profiling also revealed slower metabolism and accumulation of lifespan-limiting molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by targeted metabolite profiling data showing elevated levels of methionine sulfoxide, tryptophan, and kynurenine.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "b633363e-916e-4d42-9df7-9dacbe77afb6",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C78",
+      "claim": "Long-living species may feature higher levels of lifespan-limiting molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that long-living species may also feature higher levels of lifespan-limiting molecules and that metabolome remodeling upon dietary interventions activates compensatory mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative extrapolation from the findings in Drosophila to other species.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "0193b3ea-62ed-4e6e-a647-351e982649a3",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C79",
+      "claim": "Metabolome remodeling upon dietary interventions activates compensatory mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that long-living species may also feature higher levels of lifespan-limiting molecules and that metabolome remodeling upon dietary interventions activates compensatory mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation of elevated damage markers in long-lived flies.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "7cd6f8d6-fd78-4918-b9de-68d88798248a",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C80",
+      "claim": "A change in lifespan involves both a delay in age-related metabolome and gene expression remodeling and a change in the set of expressed metabolites and genes at any point throughout lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the analyses that revealed the diet-associated changes in the metabolome composition, these findings suggested that a change in lifespan involves both a delay in age-related metabolome and gene expression remodeling and a change in the set of expressed metabolites and genes at any point throughout lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from comparison of metabolite and gene expression trajectories between control and long-lived flies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "68e84155-4e00-4fad-9fb8-9e26d13cd244",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C81",
+      "claim": "Lifespan extension by dietary restricted regimen may increase damage tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, the higher levels of methionine sulfoxide, tryptophan, and kynurenine in our long-living flies are consistent with the notion that lifespan extension by dietary restricted regimen may increase damage tolerance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation of elevated damage markers in long-lived flies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "1674a50a-0e76-4ade-957c-d92ec60eb13d",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C82",
+      "claim": "Aging may be associated with cumulative damage, whereby mild effects of myriad damage forms may exhibit additive effects on organism's fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "However, aging may be associated with cumulative damage, whereby mild effects of the myriad damage forms may exhibit additive effects on organism's fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents a theoretical framework for understanding aging and damage accumulation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "a893250b-7fbc-40b5-817a-deed4bdadb0c",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C83",
+      "claim": "In interventions that extend lifespan, reduction of some damage forms may be compensated by accumulation of other forms of damage.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in interventions that extend lifespan (e.g., dietary restriction) reduction of some damage forms may be compensated by accumulation of other forms of damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation of elevated damage markers in long-lived flies despite lifespan extension.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "20d34d42-cdf2-4fc6-989d-a8915661e130",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C84",
+      "claim": "The extended metabolome composition may include by-products that affect viability and damage forms that reach detection thresholds during organism's aging.",
+      "claim_type": "EXPLICIT",
+      "source": "The extended metabolome composition may include by-products that affect viability and damage forms that reach and pass the detection thresholds during organism's aging (Phoenix and de Grey, 2007), but they likely represent only the tip of the iceberg of cumulative damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the pattern of increasing metabolite diversity with age and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "dbcdbe62-50cb-4f40-be7a-18a221655aa3",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C85",
+      "claim": "Detected damage forms likely represent only the tip of the iceberg of cumulative damage.",
+      "claim_type": "EXPLICIT",
+      "source": "The extended metabolome composition may include by-products that affect viability and damage forms that reach and pass the detection thresholds during organism's aging (Phoenix and de Grey, 2007), but they likely represent only the tip of the iceberg of cumulative damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative interpretation about the limitations of detection methods.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "2767c5f8-f90e-46c1-b5ff-d1844a8c2bb7",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C86",
+      "claim": "Differences in accumulation of individual metabolites were responsible for lifespan differences between dietary groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We further followed age-related trajectories of 1066 individual metabolites common to short- and long-living flies and found that the trajectories of most metabolites correlated between the two dietary groups, yet varied in magnitude from initial to final concentration changes, suggesting that differences in accumulation of individual metabolites, in addition to the overall pattern, were responsible for lifespan differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from comparison of metabolite trajectories between dietary groups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "39f88142-deef-410e-a6db-ede46d2c758a",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C87",
+      "claim": "Metabolites may exhibit diverse lifespan-regulatory roles similarly to genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, metabolites, similarly to genes, may exhibit diverse lifespan-regulatory roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the similarity in patterns between metabolite and gene expression changes with age.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "4327e3fc-4560-4380-97df-133a6222ed56",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C88",
+      "claim": "Gradual transitions in thousands of nontargeted metabolites may be used to derive a signature that predicts survivorship across variable lifespans.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to targeted metabolite profiling in mammals (Tomas-Loba et al., 2013), the gradual transitions in thousands of nontargeted metabolites may be used to derive a signature that predicts survivorship across variable lifespans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative proposal based on the observed correlations between metabolite patterns and survivorship, supported by citation to similar work in mammals.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "3b9f73ce-e00a-4468-a341-cea0fc1a1491",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C89",
+      "claim": "A significant overlap between metabolites that show age-associated changes between the diets can identify the biological, rather than the chronological, aging component.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant overlap between metabolites that show age-associated changes between the diets can also identify the biological, rather than the chronological, aging component.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the analysis of common age-associated metabolites between dietary groups.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "ed0a0aa0-6c48-4da7-9f9c-ed763aa2510c",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C90",
+      "claim": "The aging process emerges as a gradual, dynamic metabolome remodeling that involves changes in the levels of numerous cellular metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, from the current study the aging process emerges as a gradual, dynamic metabolome remodeling that involves changes in the levels (both increases and decreases) in numerous cellular metabolites, delays in these changes in late life and under conditions that lead to longer lifespan, and accumulation of damage, whose condition-dependent cumulative effects may impact survivorship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents a major conclusion synthesizing multiple findings from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "452652b5-dc98-44b6-a383-5b3f74b03b54",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C91",
+      "claim": "The aging process involves delays in metabolome changes in late life and under conditions that lead to longer lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, from the current study the aging process emerges as a gradual, dynamic metabolome remodeling that involves changes in the levels (both increases and decreases) in numerous cellular metabolites, delays in these changes in late life and under conditions that lead to longer lifespan, and accumulation of damage, whose condition-dependent cumulative effects may impact survivorship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents a major conclusion based on trajectory analysis of metabolites in control and long-lived flies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "8892defa-6f14-49c4-81ad-04377dd48d7c",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C92",
+      "claim": "The aging process involves accumulation of damage, whose condition-dependent cumulative effects may impact survivorship.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, from the current study the aging process emerges as a gradual, dynamic metabolome remodeling that involves changes in the levels (both increases and decreases) in numerous cellular metabolites, delays in these changes in late life and under conditions that lead to longer lifespan, and accumulation of damage, whose condition-dependent cumulative effects may impact survivorship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents a major conclusion based on the observation of increasing metabolite diversity and elevated damage markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "76c0e084-f786-4175-983b-00c6ef6237eb",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C93",
+      "claim": "Progenies used in aging assays were prepared by mating wild-type animals of Canton-S background, which were backcrossed for seven generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Progenies used in aging assays and metabolite profiling experiments were prepared by mating wild-type animals of Canton-S background, which were backcrossed for seven generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "93067439-fa1d-48f7-bd4d-b81b32108641",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C94",
+      "claim": "Between 30 and 50 flies were sampled at each age.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 30 and 50 flies were sampled at each age, rapidly frozen in liquid nitrogen and stored at \u221280\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "dc57a255-de49-4146-85e9-d136d658579c",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C95",
+      "claim": "Three LC-MS methods were used to measure polar metabolites and lipids in whole fly homogenates.",
+      "claim_type": "EXPLICIT",
+      "source": "Three LC-MS methods were used to measure polar metabolites and lipids in whole fly homogenates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the analytical methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "000f1e03-7995-402c-892e-6f1c2695c2c5",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C96",
+      "claim": "Age-associated signals were identified using repeated measures ANOVA with significance established at p<0.0014.",
+      "claim_type": "EXPLICIT",
+      "source": "Age-associated signals were identified using repeated measures ANOVA, and significance was established at p<0.0014 (<0.2% of false positives) and False discovery rate (FDR) of 0.029.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "50a37f9a-d171-4aea-acee-9c9692e21acc",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "claim_id": "C97",
+      "claim": "The false discovery rate for age-associated metabolite identification was 0.029.",
+      "claim_type": "EXPLICIT",
+      "source": "Age-associated signals were identified using repeated measures ANOVA, and significance was established at p<0.0014 (<0.2% of false positives) and False discovery rate (FDR) of 0.029.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical methods and results used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f1a52e2d-2614-478e-b15c-6fb890fd7514",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A chemically defined diet mimicking dietary restriction conditions extended mean lifespan in Drosophila males from 50.8 days (standard diet) to 64.4 days (defined diet), a statistically significant increase (p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 provide converging evidence for lifespan extension: the defined diet led to extension (C1), with specific quantitative measurements for both standard (C2) and defined (C3) diets showing ~27% increase. The log-rank test p-value <0.001 demonstrates statistical significance, and Figure 1A provides visual confirmation of the lifespan curves.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "ee55b5ea-2721-421a-a5ce-65c262260c4a",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Nontargeted metabolite diversity increased with age in Drosophila, with the number of detected metabolites rising steadily during adulthood but leveling off at advanced ages. This pattern corresponded to late-life transitions in lifespan curves and mortality, suggesting that low-abundance molecules accumulating with age represent cumulative damage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 and C68-C71 collectively demonstrate age-associated increases in metabolite diversity with statistical support (repeated measures ANOVA, p<6\u00d710\u207b\u2076). The leveling-off pattern at advanced ages (C6, C70) correlates with mortality transitions (C7, C71), supported by Figure 1A and Figure 1\u2014figure supplement 1. The inference that low-abundance molecules represent damage (C69) is reasonable given signal intensity distributions (C9-C10) and the chemically defined diet control (C11).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "5d25135e-a8e7-4f61-a8a5-c40ab9eb8ed7",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Targeted profiling of 205 known metabolites did not show significant age-associated trends in diversity, contrasting with the nontargeted metabolite diversity increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C75 are directly supported by Figure 1A showing no significant diversity changes for targeted metabolites (p>0.2 based on methods), in clear contrast to nontargeted metabolites. This distinction is important for understanding that diversity increases reflect novel/damaged species rather than changes in known metabolite abundance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "4021bffb-9df6-4ce0-8698-c136f9b3d408",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Approximately 14% of all detected metabolites (~2,200 metabolites per diet) showed age-associated changes, with 1,066 metabolites common to both dietary regimens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 and C72 are supported by rigorous statistical analysis (repeated measures ANOVA with stringent cutoff p<0.0014, FDR=0.029). The identification of age-associated metabolites is well-documented with specific numbers for each diet and overlap between diets shown in Figure 2A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "bf877257-77f7-40f5-901f-f52bb5f0136b",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Age-associated metabolites common to both diets exhibited highly similar trajectories (median Pearson r=0.76) with age-dependent but diet-independent patterns when normalized within groups, though absolute magnitudes were affected by diet. Most changes did not exceed 4-8-fold across lifespan.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 are supported by multiple complementary analyses: correlation analysis (C17, Figure 2B), PCA showing diet vs. age segregation patterns (C18-C19, Figures 2C-D), and fold-change analysis (C20, Figures 3A-B). The permutation test (p<0.001) validates the significance of trajectory similarities. The consistency with previous gene expression studies strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "ec334707-06f3-4f5b-9499-a5b010e89328",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Among age-related metabolites common to both diets, 76% showed less than twofold inter-dietary differences, yet individual metabolite levels showed strong correlations with lifespan curves, suggesting that differences in metabolite accumulation patterns contribute to lifespan differences between dietary groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 and C86 are supported by fold-change analysis (Figure 4A) and correlation analysis (Figure 4B). The high prevalence of strong correlations with lifespan curves provides evidence linking metabolite changes to longevity, though the causal relationship remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "a500e5dc-2154-4366-abd3-95c82803940a",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A large fraction of metabolites that decreased with age were lipids, particularly triglycerides (TAGs) and diacylglycerols (DAGs) comprising 80% of one cluster. Age-associated patterns suggest increased lipid synthesis or reduced utilization in long-lived flies, consistent with higher lipid stores in dietary restriction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C38-C40 are supported by hierarchical clustering (Figure 4C) and metabolite identification. The observation is strengthened by citations to previous studies showing similar lipid declines in other animals (C24, Houtkooper et al., 2011; Lapierre et al., 2011) and agreement with known DR phenotypes (Burger et al., 2007; Katewa et al., 2012). The developmental context for TAGs/DAGs (C39) provides biological plausibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "04027f31-ae23-4f15-8de7-1efb67b9acc8",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Polar metabolites predominantly increased with age and showed more dynamic rates of change between diets compared to lipid metabolites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 is supported by Figure 5C showing distinct patterns for polar vs. lipid metabolites. This complements the lipid decrease findings and demonstrates metabolite class-specific aging patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "088f6ac8-d995-47ff-9476-ab06eab71b0a",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Gene expression analysis identified 1,172 age-associated genes (8% of total) common to both diets, with ~70% showing gradual transitions. Longevity in dietary restricted flies was associated with reduced metabolism, increased transport, altered pathogen response, and slower stress response gene expression increases. Diet-independent effects predominated (68% of genes, 62% of metabolites).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C34 are supported by parallel statistical analysis of gene expression data (repeated measures ANOVA, p<0.0013) and Gene Ontology enrichment analysis (Figure 5B). The similarity in frequencies of diet-dependent vs. diet-independent effects between transcripts and metabolites (C33-C34) strengthens the biological interpretation. However, the gene expression data is from a different study (Pletcher et al., 2002) using female flies, which introduces potential confounding factors not fully addressed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "1951180a-930f-4a27-a02b-84b52d88bf3d",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Age-related changes in both gene expression and metabolite levels were delayed in long-lived flies and decelerated with age within each dietary group, suggesting that lifespan changes involve both temporal delays in molecular remodeling and alterations in the expressed molecular repertoire.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36, C73, C80, and C91 are supported by trajectory analysis shown in Figure 5D. The deceleration pattern is consistent across both metabolites and transcripts, providing convergent evidence. However, the mechanistic interpretation (C80) is inferential and would benefit from additional experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "6c699b0a-038c-4b37-a7f1-4dc5ce455f9d",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Among 205 annotated metabolites, 81 showed age-associated trends in both diets. Downregulated metabolites in long-lived flies (clusters 5-8, n=39) were associated with insulin signaling, energy homeostasis, and amino acid metabolism, revealing slower metabolism in dietary restricted flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C43, and C76 are supported by targeted metabolite profiling with statistical validation (repeated one-way ANOVA, p<0.05) and metabolite set enrichment analysis (Figure 7C). The association with known DR-related pathways (insulin signaling, metabolism) provides biological plausibility. However, the p-value threshold (p<0.05) is less stringent than for nontargeted analysis, potentially increasing false positives.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "9f34933a-e5ee-4912-b352-3bfae5009343",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cholesteryl esters showed progressive age-associated increases in long-lived flies compared to controls, which may extend Drosophila lifespan via increased pathogen protection, contrasting with negative effects in mammals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C41 is supported by metabolite profiling data (cluster 11), but C42 is highly speculative. The proposed mechanism (pathogen protection) is based on a single citation (Caragata et al., 2013) without direct experimental validation in this study. The species-specific difference (beneficial in Drosophila vs. harmful in mammals) requires more evidence to establish causality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "a3e4ebac-4e54-438a-80b2-ba7706d84ae6",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Long-lived flies showed elevated levels of damage markers (methionine sulfoxide) and lifespan-limiting molecules (taurine, tryptophan, kynurenine) compared to controls, with levels declining at points corresponding to high mortality. This pattern suggests that lifespan extension by dietary restriction may increase damage tolerance rather than preventing damage accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C52, C77, and C81 are supported by targeted metabolite profiling (Figure 7D) and citations establishing the damage/lifespan-limiting nature of these molecules. The bell-shaped curves and late-life declines (C48) are consistent with mortality patterns. However, the interpretation of increased damage tolerance (C52, C81) is inferential and represents a hypothesis rather than a directly demonstrated mechanism. The statistical significance varies: methionine sulfoxide showed significant differences only between specific age groups (p<0.50), while tryptophan showed no significant inter-dietary differences at 60-63 days.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "ea12ab46-49c9-4fb4-84ed-cbb0d5949769",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Aging is characterized by gradual metabolome remodeling involving bidirectional changes in numerous metabolites, with deceleration of remodeling in late life and under lifespan-extending conditions. This deceleration is linked to mortality and molecular damage accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 and C90-C92 represent the major conclusions synthesizing multiple findings. They are supported by the comprehensive metabolite profiling data showing diversity increases, trajectory patterns, and correlations with mortality. However, the causal link between deceleration and mortality (C67, C92) remains correlative rather than experimentally demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "8d9fc3bc-0411-4148-bfb0-4784ca514e71",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors propose that long-living species may feature higher levels of lifespan-limiting molecules, that metabolome remodeling activates compensatory mechanisms, and that metabolite signatures could predict survivorship across variable lifespans. They suggest that lifespan extension may involve compensatory accumulation of some damage forms while reducing others.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C79, C83, C88-C89 are largely speculative extrapolations from the Drosophila findings. While the observations in this study (elevated damage markers in long-lived flies) provide a basis for these hypotheses, they lack direct experimental validation. The proposal for predictive signatures (C88) is supported by analogy to mammalian studies but not tested here. These represent interesting hypotheses for future work rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "48b1d427-1007-4d6c-9caa-e72f364f1da4",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors propose a theoretical framework where aging involves cumulative damage from myriad forms with additive effects on fitness, and that detected metabolites represent only a fraction of total cumulative damage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82, C84-C85 represent theoretical interpretations and speculation about the nature of aging and damage. While the metabolite diversity data provide some support for heterogeneous damage accumulation, the additive effects model (C82) and the 'tip of the iceberg' assertion (C85) are not directly tested. These are reasonable interpretations but remain speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "4a690fba-011a-4a37-8575-558c0cd65172",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Metabolites may exhibit diverse lifespan-regulatory roles similarly to genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 is supported by the parallel patterns observed between metabolite and gene expression changes, including similar frequencies of diet-dependent/independent effects and trajectory patterns. However, this remains an inference from correlation rather than direct demonstration of regulatory roles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "e36649f2-625b-48c3-999b-9fdf01738cd8",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The metabolite profiling platform detected >15,000 unique nontargeted analytes using three LC-MS methods on samples of 30-50 flies per age group. Age-associated signals were identified using repeated measures ANOVA with stringent statistical cutoffs (p<0.0014, FDR=0.029).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C93-C97 describe the experimental and analytical methods. These are well-documented in the Materials and Methods section with appropriate detail. The statistical approach is rigorous with appropriate multiple testing correction. Sample sizes (30-50 flies) appear adequate for metabolomics, though biological replicate numbers (n=3) are modest.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "8f02c9b6-70a8-4c22-b5f7-8d0a0f2eff88",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Metabolites showing diversity fluctuations had signal intensities differing by orders of magnitude from targeted metabolites, corresponded to low-abundance molecules, and were not due to detection errors or yeast-derived dietary components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 address potential technical artifacts. The signal intensity distributions (Figure 1B-C) support that diversity-changing metabolites are low-abundance but real signals. The chemically defined diet control (C11) rules out dietary contamination. However, the inference that these are 'not due to errors of detection' (C10) could be strengthened with additional validation such as technical replicates or orthogonal detection methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "0c0e8466-03a5-4282-943c-d089b6d98387",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background claims establishing that aging is associated with molecular damage, that damage markers vary across conditions/organisms, that lifespan can be extended through multiple interventions, and that metabolite profiling has been used to study aging in other systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C65 represent background knowledge and literature context, all supported by appropriate citations. These establish the rationale for the study but are not novel findings. Claim C65 (damaged species expected to show mass shifts) is a reasonable hypothesis that motivates the nontargeted approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    },
+    {
+      "id": "d1fbe138-67fb-4d57-85a2-ed2f74a8c9e9",
+      "content_id": "a59eb806-cb6f-4385-be8e-6a1fcbe949d1",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Known metabolites changed in abundance similarly to nontargeted metabolites and transcripts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 is supported by comparison of targeted and nontargeted metabolite data with transcriptome data, showing similar bidirectional patterns and trajectory characteristics. This validates that targeted metabolites capture abundance changes even though they don't show diversity increases.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:32:33.580170Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "02fba7ea-aa44-4544-8ccd-8fab50a672e6",
+      "result_id": "f1a52e2d-2614-478e-b15c-6fb890fd7514"
+    },
+    {
+      "claim_id": "cf77aeba-6c3f-440a-a288-ac8f34c0d270",
+      "result_id": "f1a52e2d-2614-478e-b15c-6fb890fd7514"
+    },
+    {
+      "claim_id": "3fd36dbe-e881-4bb9-be51-5f7c8c22b162",
+      "result_id": "f1a52e2d-2614-478e-b15c-6fb890fd7514"
+    },
+    {
+      "claim_id": "addfc494-fdd1-4d0b-adee-8482319665c4",
+      "result_id": "ee55b5ea-2721-421a-a5ce-65c262260c4a"
+    },
+    {
+      "claim_id": "f4f5e7ee-7975-4b55-bfa6-b6eb66588500",
+      "result_id": "ee55b5ea-2721-421a-a5ce-65c262260c4a"
+    },
+    {
+      "claim_id": "44322ff7-9e29-4e0d-8660-5b9a0a2fb73a",
+      "result_id": "ee55b5ea-2721-421a-a5ce-65c262260c4a"
+    },
+    {
+      "claim_id": "a93c6be4-a6c9-4f01-8480-764098e194c5",
+      "result_id": "ee55b5ea-2721-421a-a5ce-65c262260c4a"
+    },
+    {
+      "claim_id": "aabded4e-bcc4-42bc-b3a0-a8eb6e3c7bfa",
+      "result_id": "ee55b5ea-2721-421a-a5ce-65c262260c4a"
+    },
+    {
+      "claim_id": "73369604-8751-4d59-a96e-956833234a81",
+      "result_id": "ee55b5ea-2721-421a-a5ce-65c262260c4a"
+    },
+    {
+      "claim_id": "ea56f70f-473d-48fd-a18d-a069fb1aaa74",
+      "result_id": "ee55b5ea-2721-421a-a5ce-65c262260c4a"
+    },
+    {
+      "claim_id": "9e3e3035-ec11-41d8-ad0d-f00c62d9f96f",
+      "result_id": "ee55b5ea-2721-421a-a5ce-65c262260c4a"
+    },
+    {
+      "claim_id": "c6ca5aa7-3078-4c38-bcb9-27b74fdf9eca",
+      "result_id": "5d25135e-a8e7-4f61-a8a5-c40ab9eb8ed7"
+    },
+    {
+      "claim_id": "37c6d300-fd78-407a-bbc5-ee8371324d7e",
+      "result_id": "5d25135e-a8e7-4f61-a8a5-c40ab9eb8ed7"
+    },
+    {
+      "claim_id": "8c1fbbe8-bdba-4c79-939f-6de2fe7ffd0e",
+      "result_id": "4021bffb-9df6-4ce0-8698-c136f9b3d408"
+    },
+    {
+      "claim_id": "dd7070a2-cf26-407e-b432-f16eb78c487c",
+      "result_id": "4021bffb-9df6-4ce0-8698-c136f9b3d408"
+    },
+    {
+      "claim_id": "38438761-d669-4dad-b927-3574ecf41a09",
+      "result_id": "4021bffb-9df6-4ce0-8698-c136f9b3d408"
+    },
+    {
+      "claim_id": "43c64fb9-d9fd-4523-8a92-9c82182792c1",
+      "result_id": "4021bffb-9df6-4ce0-8698-c136f9b3d408"
+    },
+    {
+      "claim_id": "5d8c43d1-0cf9-44db-98fa-c22be6b093b8",
+      "result_id": "4021bffb-9df6-4ce0-8698-c136f9b3d408"
+    },
+    {
+      "claim_id": "eb1d6aed-3096-4c89-9ed6-93f4efa49ae3",
+      "result_id": "bf877257-77f7-40f5-901f-f52bb5f0136b"
+    },
+    {
+      "claim_id": "82d0bc07-8879-4b66-9c53-fef8a410fa6b",
+      "result_id": "bf877257-77f7-40f5-901f-f52bb5f0136b"
+    },
+    {
+      "claim_id": "b5aef792-1007-4b2a-8ccf-85e567851c54",
+      "result_id": "bf877257-77f7-40f5-901f-f52bb5f0136b"
+    },
+    {
+      "claim_id": "aca3287c-ee42-4cfa-989c-ef638247ea61",
+      "result_id": "bf877257-77f7-40f5-901f-f52bb5f0136b"
+    },
+    {
+      "claim_id": "8e252223-65f2-4671-82dc-a8ff6c6b8d1a",
+      "result_id": "ec334707-06f3-4f5b-9499-a5b010e89328"
+    },
+    {
+      "claim_id": "3c0a0a24-c836-4f4c-ad15-c855dbabe31d",
+      "result_id": "ec334707-06f3-4f5b-9499-a5b010e89328"
+    },
+    {
+      "claim_id": "2767c5f8-f90e-46c1-b5ff-d1844a8c2bb7",
+      "result_id": "ec334707-06f3-4f5b-9499-a5b010e89328"
+    },
+    {
+      "claim_id": "0046ecaf-57db-4231-9e02-b92bf2928952",
+      "result_id": "a500e5dc-2154-4366-abd3-95c82803940a"
+    },
+    {
+      "claim_id": "e3cdb685-3ae6-416b-9ce1-b93fb5fd0c32",
+      "result_id": "a500e5dc-2154-4366-abd3-95c82803940a"
+    },
+    {
+      "claim_id": "d6c594c3-1179-46d5-801f-a23fa95201be",
+      "result_id": "a500e5dc-2154-4366-abd3-95c82803940a"
+    },
+    {
+      "claim_id": "5bab9d3d-6900-491b-8e30-0a78982d699b",
+      "result_id": "a500e5dc-2154-4366-abd3-95c82803940a"
+    },
+    {
+      "claim_id": "45598d28-fc67-460d-b24b-508e32d3d33c",
+      "result_id": "a500e5dc-2154-4366-abd3-95c82803940a"
+    },
+    {
+      "claim_id": "e4df4135-bbba-40d7-8038-021e519f8b15",
+      "result_id": "04027f31-ae23-4f15-8de7-1efb67b9acc8"
+    },
+    {
+      "claim_id": "27d291a8-f048-4bf0-9f3a-02870d80189b",
+      "result_id": "088f6ac8-d995-47ff-9476-ab06eab71b0a"
+    },
+    {
+      "claim_id": "4d50e45c-52f1-4677-9bb4-cc329f4809c8",
+      "result_id": "088f6ac8-d995-47ff-9476-ab06eab71b0a"
+    },
+    {
+      "claim_id": "453966df-f416-4d45-bad5-c9a279fabd88",
+      "result_id": "088f6ac8-d995-47ff-9476-ab06eab71b0a"
+    },
+    {
+      "claim_id": "f0f66b6a-d22c-45e4-899d-6439450dcd62",
+      "result_id": "088f6ac8-d995-47ff-9476-ab06eab71b0a"
+    },
+    {
+      "claim_id": "c07bb037-46f8-4ad6-bf88-416343c81e15",
+      "result_id": "088f6ac8-d995-47ff-9476-ab06eab71b0a"
+    },
+    {
+      "claim_id": "c5c9bec6-91bc-4afd-8a18-3528f735a8bf",
+      "result_id": "088f6ac8-d995-47ff-9476-ab06eab71b0a"
+    },
+    {
+      "claim_id": "d154f109-8d69-4be4-b404-a600b2632c53",
+      "result_id": "088f6ac8-d995-47ff-9476-ab06eab71b0a"
+    },
+    {
+      "claim_id": "23f1b87f-24a2-459a-aac1-ec4da8073444",
+      "result_id": "088f6ac8-d995-47ff-9476-ab06eab71b0a"
+    },
+    {
+      "claim_id": "ca05e6ce-467f-4923-b6b5-be10c28b8005",
+      "result_id": "088f6ac8-d995-47ff-9476-ab06eab71b0a"
+    },
+    {
+      "claim_id": "90ae878b-c64b-4101-b318-9bd5e1b6ca9b",
+      "result_id": "1951180a-930f-4a27-a02b-84b52d88bf3d"
+    },
+    {
+      "claim_id": "38789a8a-634a-4936-b85a-cc5b971c8112",
+      "result_id": "1951180a-930f-4a27-a02b-84b52d88bf3d"
+    },
+    {
+      "claim_id": "7800f3e7-0d65-4447-a069-ed548e059b10",
+      "result_id": "1951180a-930f-4a27-a02b-84b52d88bf3d"
+    },
+    {
+      "claim_id": "7cd6f8d6-fd78-4918-b9de-68d88798248a",
+      "result_id": "1951180a-930f-4a27-a02b-84b52d88bf3d"
+    },
+    {
+      "claim_id": "452652b5-dc98-44b6-a383-5b3f74b03b54",
+      "result_id": "1951180a-930f-4a27-a02b-84b52d88bf3d"
+    },
+    {
+      "claim_id": "2ed610a5-4d27-4716-b0c1-ce14174c8c89",
+      "result_id": "6c699b0a-038c-4b37-a7f1-4dc5ce455f9d"
+    },
+    {
+      "claim_id": "d9c2d5e4-d6a2-4c21-840e-19e4da1393bd",
+      "result_id": "6c699b0a-038c-4b37-a7f1-4dc5ce455f9d"
+    },
+    {
+      "claim_id": "f5e32e4f-61e1-47ce-bdac-f428b83e1836",
+      "result_id": "6c699b0a-038c-4b37-a7f1-4dc5ce455f9d"
+    },
+    {
+      "claim_id": "c0d93844-1360-4436-ba26-2f0fc5364fa7",
+      "result_id": "9f34933a-e5ee-4912-b352-3bfae5009343"
+    },
+    {
+      "claim_id": "f7271cf0-16a4-4485-a792-dd30ba0fd0ef",
+      "result_id": "9f34933a-e5ee-4912-b352-3bfae5009343"
+    },
+    {
+      "claim_id": "c62b9c39-a2d7-4ec2-b158-63ab2b3efaed",
+      "result_id": "a3e4ebac-4e54-438a-80b2-ba7706d84ae6"
+    },
+    {
+      "claim_id": "1833ef86-9597-4fe2-be5a-eda47d69d119",
+      "result_id": "a3e4ebac-4e54-438a-80b2-ba7706d84ae6"
+    },
+    {
+      "claim_id": "0510fec9-f83c-438c-a7cb-eb7425a8208a",
+      "result_id": "a3e4ebac-4e54-438a-80b2-ba7706d84ae6"
+    },
+    {
+      "claim_id": "01746656-f0d8-46e2-943a-bcc8effb861f",
+      "result_id": "a3e4ebac-4e54-438a-80b2-ba7706d84ae6"
+    },
+    {
+      "claim_id": "417ed8a8-4220-4a80-a34d-dd1e42596d88",
+      "result_id": "a3e4ebac-4e54-438a-80b2-ba7706d84ae6"
+    },
+    {
+      "claim_id": "c9eb0e60-a286-4763-be7c-de350fee0ebc",
+      "result_id": "a3e4ebac-4e54-438a-80b2-ba7706d84ae6"
+    },
+    {
+      "claim_id": "12d039f0-61f6-483e-b975-0f2d82f03100",
+      "result_id": "a3e4ebac-4e54-438a-80b2-ba7706d84ae6"
+    },
+    {
+      "claim_id": "6b422477-d172-4c6c-b95d-7db55f01c7aa",
+      "result_id": "a3e4ebac-4e54-438a-80b2-ba7706d84ae6"
+    },
+    {
+      "claim_id": "de72e5d3-5c50-411c-bf9f-4d9162a029e1",
+      "result_id": "a3e4ebac-4e54-438a-80b2-ba7706d84ae6"
+    },
+    {
+      "claim_id": "a28cad1c-c812-4973-8906-c63fea8f6beb",
+      "result_id": "a3e4ebac-4e54-438a-80b2-ba7706d84ae6"
+    },
+    {
+      "claim_id": "68e84155-4e00-4fad-9fb8-9e26d13cd244",
+      "result_id": "a3e4ebac-4e54-438a-80b2-ba7706d84ae6"
+    },
+    {
+      "claim_id": "5b266030-1226-496b-8fcc-4b2ad5b235ef",
+      "result_id": "ea12ab46-49c9-4fb4-84ed-cbb0d5949769"
+    },
+    {
+      "claim_id": "0b384f33-81de-438f-843c-4939f2880172",
+      "result_id": "ea12ab46-49c9-4fb4-84ed-cbb0d5949769"
+    },
+    {
+      "claim_id": "ed0a0aa0-6c48-4da7-9f9c-ed763aa2510c",
+      "result_id": "ea12ab46-49c9-4fb4-84ed-cbb0d5949769"
+    },
+    {
+      "claim_id": "452652b5-dc98-44b6-a383-5b3f74b03b54",
+      "result_id": "ea12ab46-49c9-4fb4-84ed-cbb0d5949769"
+    },
+    {
+      "claim_id": "8892defa-6f14-49c4-81ad-04377dd48d7c",
+      "result_id": "ea12ab46-49c9-4fb4-84ed-cbb0d5949769"
+    },
+    {
+      "claim_id": "b633363e-916e-4d42-9df7-9dacbe77afb6",
+      "result_id": "8d9fc3bc-0411-4148-bfb0-4784ca514e71"
+    },
+    {
+      "claim_id": "0193b3ea-62ed-4e6e-a647-351e982649a3",
+      "result_id": "8d9fc3bc-0411-4148-bfb0-4784ca514e71"
+    },
+    {
+      "claim_id": "a893250b-7fbc-40b5-817a-deed4bdadb0c",
+      "result_id": "8d9fc3bc-0411-4148-bfb0-4784ca514e71"
+    },
+    {
+      "claim_id": "4327e3fc-4560-4380-97df-133a6222ed56",
+      "result_id": "8d9fc3bc-0411-4148-bfb0-4784ca514e71"
+    },
+    {
+      "claim_id": "3b9f73ce-e00a-4468-a341-cea0fc1a1491",
+      "result_id": "8d9fc3bc-0411-4148-bfb0-4784ca514e71"
+    },
+    {
+      "claim_id": "1674a50a-0e76-4ade-957c-d92ec60eb13d",
+      "result_id": "48b1d427-1007-4d6c-9caa-e72f364f1da4"
+    },
+    {
+      "claim_id": "20d34d42-cdf2-4fc6-989d-a8915661e130",
+      "result_id": "48b1d427-1007-4d6c-9caa-e72f364f1da4"
+    },
+    {
+      "claim_id": "dbcdbe62-50cb-4f40-be7a-18a221655aa3",
+      "result_id": "48b1d427-1007-4d6c-9caa-e72f364f1da4"
+    },
+    {
+      "claim_id": "39f88142-deef-410e-a6db-ede46d2c758a",
+      "result_id": "4a690fba-011a-4a37-8575-558c0cd65172"
+    },
+    {
+      "claim_id": "c7a129ec-6438-490c-abb7-825a6a3b3892",
+      "result_id": "e36649f2-625b-48c3-999b-9fdf01738cd8"
+    },
+    {
+      "claim_id": "76c0e084-f786-4175-983b-00c6ef6237eb",
+      "result_id": "e36649f2-625b-48c3-999b-9fdf01738cd8"
+    },
+    {
+      "claim_id": "93067439-fa1d-48f7-bd4d-b81b32108641",
+      "result_id": "e36649f2-625b-48c3-999b-9fdf01738cd8"
+    },
+    {
+      "claim_id": "dc57a255-de49-4146-85e9-d136d658579c",
+      "result_id": "e36649f2-625b-48c3-999b-9fdf01738cd8"
+    },
+    {
+      "claim_id": "000f1e03-7995-402c-892e-6f1c2695c2c5",
+      "result_id": "e36649f2-625b-48c3-999b-9fdf01738cd8"
+    },
+    {
+      "claim_id": "50a37f9a-d171-4aea-acee-9c9692e21acc",
+      "result_id": "e36649f2-625b-48c3-999b-9fdf01738cd8"
+    },
+    {
+      "claim_id": "2836bd03-12d1-453c-a753-7e7f21c8645a",
+      "result_id": "8f02c9b6-70a8-4c22-b5f7-8d0a0f2eff88"
+    },
+    {
+      "claim_id": "7e3c2aa5-77b1-4f29-840d-762bb6d9e8aa",
+      "result_id": "8f02c9b6-70a8-4c22-b5f7-8d0a0f2eff88"
+    },
+    {
+      "claim_id": "664874bb-2439-483a-ab46-c520c101d665",
+      "result_id": "8f02c9b6-70a8-4c22-b5f7-8d0a0f2eff88"
+    },
+    {
+      "claim_id": "c9414e41-2c03-490a-9ca9-e972a988e06b",
+      "result_id": "0c0e8466-03a5-4282-943c-d089b6d98387"
+    },
+    {
+      "claim_id": "96994aa9-5350-4b9a-8692-dea1ff135959",
+      "result_id": "0c0e8466-03a5-4282-943c-d089b6d98387"
+    },
+    {
+      "claim_id": "d4412761-0622-4a21-af4f-3a9fc11236e0",
+      "result_id": "0c0e8466-03a5-4282-943c-d089b6d98387"
+    },
+    {
+      "claim_id": "590c4b7d-136a-4fe0-a073-06ae85e96297",
+      "result_id": "0c0e8466-03a5-4282-943c-d089b6d98387"
+    },
+    {
+      "claim_id": "09e356f0-7265-41c4-81d2-98e1e9f16e2c",
+      "result_id": "0c0e8466-03a5-4282-943c-d089b6d98387"
+    },
+    {
+      "claim_id": "6258927a-c7fa-4b19-8338-068fb8cf0e1f",
+      "result_id": "0c0e8466-03a5-4282-943c-d089b6d98387"
+    },
+    {
+      "claim_id": "7d466669-8d09-4479-b5e2-e6b14749a6ae",
+      "result_id": "0c0e8466-03a5-4282-943c-d089b6d98387"
+    },
+    {
+      "claim_id": "9c59a292-df80-4351-93f4-4125e41ee701",
+      "result_id": "0c0e8466-03a5-4282-943c-d089b6d98387"
+    },
+    {
+      "claim_id": "6981ad90-26a4-4e56-ad66-7198f68588cd",
+      "result_id": "0c0e8466-03a5-4282-943c-d089b6d98387"
+    },
+    {
+      "claim_id": "7c121dd2-bd54-4961-a964-338e236416fb",
+      "result_id": "0c0e8466-03a5-4282-943c-d089b6d98387"
+    },
+    {
+      "claim_id": "1fc0cb89-5d60-4723-99e6-6385152b811b",
+      "result_id": "0c0e8466-03a5-4282-943c-d089b6d98387"
+    },
+    {
+      "claim_id": "4f773f45-dfba-4b25-a8da-8afbc52fde1b",
+      "result_id": "0c0e8466-03a5-4282-943c-d089b6d98387"
+    },
+    {
+      "claim_id": "49525cee-34d0-4fe5-8ec2-7a37c11116ba",
+      "result_id": "0c0e8466-03a5-4282-943c-d089b6d98387"
+    },
+    {
+      "claim_id": "91496178-d8f1-4225-8f5e-c1a19fd05d3c",
+      "result_id": "d1fbe138-67fb-4d57-85a2-ed2f74a8c9e9"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,793 @@
+{
+  "submission": {
+    "id": "af3417ad-d257-424c-b8cf-efbbcdd6cf29",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:20:41.887060Z",
+    "updated_at": "2025-11-28T21:20:41.887060Z"
+  },
+  "content": [
+    {
+      "id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "submission_id": "af3417ad-d257-424c-b8cf-efbbcdd6cf29",
+      "content_type": "manuscript",
+      "content_text": "# Epidemiological dynamics of Ebola outbreaks\n\n## Authors\n\n- Thomas House<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Warwick Mathematics Institute University of Warwick Coventry United Kingdom\n2. Warwick Infectious Disease Epidemiology Research Centre University of Warwick Coventry United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nEbola is a deadly virus that causes frequent disease outbreaks in the human population. In this study, we analyse its rate of new introductions, case fatality ratio, and potential to spread from person to person. The analysis is performed for all completed outbreaks and for a scenario where these are augmented by a more severe outbreak of several thousand cases. The results show a fast rate of new outbreaks, a high case fatality ratio, and an effective reproductive ratio of just less than 1.\n\n## Introduction\n\nEbola virus disease is an often fatal disease of humans that is not vaccine-preventable and has no specific treatment. A total of 25 outbreaks, believed to have arisen due to zoonotic transmission from wild mammals, have occurred since the first observed cases in humans in 1976 (World Health Organisation, 2014a). The current epidemic is the largest to date (World Health Organisation, 2014b). This gives particular urgency to quantitative estimation of epidemiological quantities relevant to Ebola, such as case fatality ratio, timing of new outbreaks, and the strength of human-to-human transmission.\n\nThe most important epidemiological quantity to estimate for an infectious disease is typically the basic reproductive ratio, $R_{0}$, defined as the expected number of secondary cases produced per primary case early in the epidemic (Diekmann et al., 1990). When $R_{0}$ is greater than 1, the expectation is that a new epidemic will eventually infect a significant percentage of the population if it is not stopped by interventions or chance extinction; conversely, when $R_{0}$ is less than 1, chance events may lead to a large number of cases, but these are always expected to be much less numerous than the total population size.\n\nPrevious attempts to estimate $R_{0}$ for Ebola have found values between 1.34 and 3.65 by fitting compartmental epidemic models to the incidence over time of the large outbreaks in the Democratic Republic of Congo in 1995 and Uganda in 2000 (Chowell et al., 2004; Ferrari et al., 2005; Legrand et al., 2007), with similar results obtained for the ongoing outbreak (Althaus, 2014). This leads to the question of why all completed outbreaks numbered at most several hundreds, with the typical answer being that the medical and social response to an outbreak reduces transmission, leading to an effective reproductive ratio $R_{t}<R_{0}$ (Chowell et al., 2004; Legrand et al., 2007), although it is also important to note that heterogeneity in transmission can lead to extremely high probabilities of an outbreak becoming extinct even if $R_{t}$ is slightly greater than 1 (Lloyd-Smith et al., 2005).\n\n## Results\n\nFigure 1 shows the results of fitting to times between outbreaks, with Figure 1A showing the empirical distribution of times between outbreaks together with the fitted model distribution that has mean 1.49[1.02,2.24] years between outbreaks and Figure 1C showing the posterior for the rate parameter. Figure 1 also shows the results of fitting CFR to number of deaths and final size, with Figure 1B showing empirical CFRs for different outbreaks together with the fitted model distribution. Other plots in Figure 1D,E show the posteriors for the beta distribution parameters.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03908/elife-03908-fig1-v2.jpg)\n\n**Figure 1.:** A shows empirical data and 95% CI (black lines) together with fitted distribution and 95% CI (red lines) for rate of new outbreaks. B shows empirical data and 95% CI (black lines) together with fitted distribution and 95% CI (red lines) for case fatality ratio. C shows the posterior density for rate of new outbreaks \u03bb, while D and E show the posterior density for the beta distribution parameters \u03b1 and \u03b2, respectively.\n\nFigure 2 shows the results of fitting to completed outbreaks, with Figure 2A,B giving the fitted distribution against data, Figure 2C showing the posterior for the reproductive ratio, which is estimated to be Rt=0.88[0.64,0.96]. Figure 2D shows the posterior for the geometric parameter, which is estimated to be p=0.089[0.029,0.19].\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03908/elife-03908-fig2-v2.jpg)\n\n**Figure 2.:** (A and B) Model (solid red line) and 95% CI (dash-dot red line) vs data (black circles) and 95% CI (solid black lines) for different axis scales. (C) Posterior for values of the reproductive ratio $R_{t}$. (D) Posterior for the geometric parameter p.\n\nWhile the model is designed not to depend explicitly on the temporal dynamics of Ebola virus disease, Figure 3A shows a set of 24 outbreaks simulated from a continuous-time Markov chain with the same probability distribution for final size as the estimated model. These show behaviour that is typical of near-critical branching processes, which often becoming extinct early but also often grows to significant size before extinction. Figure 3B plots the likelihood surface for these simulated data showing parameter identifiability.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03908/elife-03908-fig3-v2.jpg)\n\n**Figure 3.:** (A) Real-time model simulations, with change in colour denoting a new outbreak. (B) Likelihood contours (black lines and values multiplied by an unimportant constant) together with parameters used to simulate (red cross), showing that the parameters are identifiable from such data.\n\nFigure 4 shows the results of fitting to completed outbreak final sizes augmented by an outbreak of uncertain size in the range 1000\u20135000. In this study, Figure 4A gives the fitted distribution against data, and Figure 4B shows the posterior for the probability of the additional outbreak, which is estimated to be 0.023[0.0015,0.088]. Figure 4C shows the posterior for the reproductive ratio, which is estimated to be Rt=0.94[0.87,0.99], and Figure 4D shows the posterior for the geometric parameter, which is estimated to be p=0.11[0.054,0.21].\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03908/elife-03908-fig4-v2.jpg)\n\n**Figure 4.:** (A) Model (solid red line) and 95% CI (dash-dot red line) vs data (black circles) and 95% CI (solid black lines). (B) Posterior for the probability of the large uncertain outbreak. (C) Posterior for values of the reproductive ratio $R_{t}$. (D) Posterior for the geometric parameter p.\n\n## Discussion\n\nThe results obtained point to the following conclusions about Ebola transmission dynamics. (i) The rate of new epidemics and CFR are both high, but with significant variability from outbreak to outbreak. (ii) The effective reproductive ratio $R_{t}$ for person-to-person transmission is just below 1. (iii) There is extremely large variability in the final size of outbreaks.\n\nIt is also important to consider the sensitivity of these conclusions. A larger final size for the current outbreak (but still significantly less than the population size of a country) as suggested by the analysis above will tend to lead to a narrower posterior about a value of $R_{t}$ closer to 1; this can be understood from general properties of branching processes (Athreya and Ney, 1992). Such a finely tuned constant value of $R_{t}$ would, however, become increasingly difficult to interpret as a fundamental property of the outbreak and a modelling approach in which $R_{t}$ was allowed to vary in time\u2014along with the public health and behavioural responses\u2014would be preferred.\n\nAlso, it is possible that a number of small outbreaks were not recorded by the WHO. This could be addressed through incorporation of additional variability into the model through introduction of explicit overdispersal parameters as in the study by Lloyd-Smith et al. (Lloyd-Smith et al., 2005) and Blumberg and Lloyd-Smith (Blumberg and Lloyd-Smith, 2013), although for the data currently available there was no strong evidence for overdispersal beyond that implied by the geometric distributions.\n\nAll of these conclusions suggest no reason for complacency and give support to appeals for greater resources to respond to the ongoing epidemic (M\u00e9decins Sans Fronti\u00e8res, 2014).\n\n## Materials and methods\n\n### Description\n\nIn this study, a different approach is taken based on using the time between outbreaks, number of deaths, and final number of cases, for all 24 completed Ebola outbreaks reported by the World Health Organisation (World Health Organisation, 2014a). Full mathematical details of the approach are given below.\n\nFirst, we model the start of new outbreaks as a \u2018memoryless\u2019 Poisson process with a rate \u03bb. Secondly, we assume that each new outbreak has a case fatality ratio (CFR\u2014the probability that a case will die) picked from a beta distribution. Thirdly, the final size model involves two components: (i) a geometrically distributed number of cases, A, which includes cases arising from animal-to-human and pre-control transmission; (ii) a branching process model of human-to-human transmission (Athreya and Ney, 1992; Ball and Donnelly, 1995), whose offspring distribution has mean $R_{t}$, generating Z cases. The final size is then $K=A+Z|A$. This quantity should be interpreted as arising from a combination of $R_{t}$, $R_{0}$, and timing of interventions.\n\nBayesian MCMC with uninformative priors was used to fit all models (Gilks et al., 1995). Since doubts have been raised in the literature about the use of final size data for emerging diseases (Drake, 2005), a simulation study was also performed to test identifiability, although a recent study by Blumberg and Lloyd-Smith (Blumberg and Lloyd-Smith, 2013) of joint identifiability of two parameters in a related model is also highly relevant in this context.\n\nFinally, the final size data were augmented by an outbreak of unknown size in the range 1000\u20135000 (with mathematical details given by Equation. (5), below) and the model was refitted. Due to the significant uncertainty in the severity of the current outbreak, this is not intended to be a real-time analysis, but rather to show how the modelling approach responds to such a scenario in general.\n\n### Technical details\n\n#### Transmission model\n\nEach outbreak has an initial number of cases A and a secondary number of cases Z. The total outbreak size is $K=A+Z|A$. We model the number of initial cases as a shifted geometric distribution,\n\n$$\nPr[A=a|p]=(1\u2212p)^{a\u22121}p.\n$$\n\nWe then model the number of secondary cases as the total progeny of a Galton\u2013Watson branching process with A initial individuals and offspring distribution given by a geometrically distributed random variable \u03be with mean $R_{t}\u2255(1\u2212q)/q$. We adapt the results from Ball and Donnelly (Ball and Donnelly, 1995) to our model, giving\n\n$$\nPr[Z=z|A=a,q]=\\frac{a}{a+z}(2z+a\u22121z)q^{z+a}(1\u2212q)^{z}\n$$\n\nThis gives a formula for the total size of the outbreak of\n\n$$\nPr[K=k|p,q]=\\suma=1kPr[A=a|p]Pr[Z=(k\u2212a)|A=a,q].\n$$\n\nIf the data D consists of a set of $k_{i}$ (which is the size of outbreak i, with N the total number of outbreaks) then the likelihood function for the transmission model is\n\n$$\nL(D|p,q)=\\prodiPr[K=k_{i}|p,q].\n$$\n\nWhen the data $D\u2032$ consists of the set of $k_{i}$ augmented by an outbreak of size between $\u03ba_{1}$ and $\u03ba_{2}$, we use likelihood function\n\n$$\nL(D\u2032|p,q)=L(D|p,q)\\sumk=\u03ba_{1}\u03ba_{2}\u2009Pr[K=k|p,q].\n$$\n\n### New outbreak model\n\nWe model the start of new outbreaks in the human population as a Poisson process of rate \u03bb. If the time period over which N outbreaks is observed is T years, then the likelihood is\n\n$$\nL(D|\\lambda)=\\frac{(\\lambdaT)^{N}e^{\u2212\\lambdaT}}{N!}.\n$$\n\nWe estimate $\\lambda=0.67[0.45,0.98]$, with posterior distribution given in Figure 1C. The probability density function for t being the next outbreak time is\n\n$$\nf(t)=\\lambdae^{\u2212\\lambdat},\n$$\n\nwhich is shown in Figure 1A.\n\n### Case fatality model\n\nWe let $C_{i}$ be a random variable for the probability of fatality for a given case in outbreak i. We assume a parametric model in which this is drawn from a beta distribution, meaning that the probability density function is\n\n$$\nBeta(c|\\alpha,\\beta)=\\frac{c^{\\alpha\u22121}(1\u2212c)^{\\beta\u22121}}{B(\\alpha,\\beta)},\u2003B(\\alpha,\\beta):=\\int_{0}^{1}x^{\\alpha\u22121}(1\u2212x)^{\\beta\u22121}dx.\n$$\n\nThen if $d_{i}\\leqk_{i}$ is the number of fatalities in outbreak i, treating each fatality as independent, conditioned on infection, gives\n\n$$\nPr[d_{i}|k_{i},\\alpha,\\beta]=(k_{i}d_{i})\\frac{B(\\alpha+d_{i},\\beta+k_{i}\u2212d_{i})}{B(\\alpha,\\beta)}.\n$$\n\nThen the likelihood is\n\n$$\nL(D|\\alpha,\\beta)=\\prodiPr[d_{i}|k_{i},\\alpha,\\beta].\n$$\n\nWe estimate $\\alpha=6.1[2.8,11]$ and $\\beta=3.1[1.5,5.9]$, with posterior distributions given in Figure 1D,E.\n\n### Statistical methodology\n\nThe MCMC methodology used was Random-walk Metropolis\u2013Hastings with thinning to produce $10^{3}$ uncorrelated samples, with each posterior ultimately derived from one long chain. The parameter spaces involved are low-dimensional enough that large-scale sweeps can be performed to check for multimodality, which was not observed, and convergence of the chains was observed to be fast and independent of initial conditions.\n\nFor the simulation study, the real-time incidence curves are produced by modelling the geometric distributions as arising from Poissonian transmission with exponentially distributed rates. The times between new introductions are not explicitly modelled or shown.\n\n### Code\n\nMATLAB code to reproduce the analysis of this paper is available at: https://github.com/thomasallanhouse/elife-ebola-code.\n",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "7de05091-0d1f-402b-a75d-33f47d361189",
+      "submission_id": "af3417ad-d257-424c-b8cf-efbbcdd6cf29",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Prabhat Jha, University of Toronto , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03908.007](https://doi.org/10.7554/eLife.03908.007)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for choosing to send your work entitled \u201cEpidemiological Dynamics of Ebola Outbreaks\u201d for consideration at eLife. Your full submission has been evaluated by Prabhat Jha (Senior editor), a Reviewing editor, and 3 peer reviewers, and the decision was reached after discussions between the reviewers. We regret to inform you that your work will not be considered further for publication in its current form.\n\nHowever, given the importance of scientific debate on Ebola transmission, we would review (quickly) a substantially revised version of this paper. To consider this, we would need to be assured that you have addressed each of the substantive points below. Please also comment if you can on the specific role of any putative therapies (such as monoclonal antibodies) in affecting the R0 estimation.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Prabhat Jha, Matt Ferrari, and Sake de Vlas.\n\nReviewer 1:\n\n1) In general I found this to be a sound and reasonable analysis. I find that the author's assertion that R0>1 is a sufficient condition for a global pandemic to be overstated, however, and I would strongly recommend tempering the language. There are a great many conditions that contribute to the likelihood of a pandemic, and the epidemic potential, as encapsulated in R0 is only one of these a necessary condition, but hardly sufficient.\n\nGiven that the author is motivating this manuscript with the current Ebola outbreak, it would be quite interesting to comment on how likely the current outbreak (i.e. an outbreak equal to or greater than the current outbreak) would be under the author's fitted model.\n\nReviewer 2:\n\nIt is an interesting idea trying to capture the epidemiological characteristics of all observed Ebola outbreaks in just 4 parameters: p, R0 (or a function of q), \u03b1, and \u03b2. However, in my view the approach is far too simplistic. In particular, the assumption that R0 (or q) has the same value everywhere and at every time is of course incorrect. This makes the suggestion of a \u201cglobal pandemic\u201d inappropriate in the first place; the conditions that have favoured spread of Ebola in tropical Africa will never apply to most other continents.\n\nAnother problem is that the same R0 is assumed to apply throughout an outbreak. This is why the estimated posterior values of R0 are <1, for the simple reason that all observed epidemics have ended. Usually, outbreak situations are characterized by an initial value of R0 > 1 (or sometimes slightly <1), followed by a decrease through interventions, behaviour change, lack of sufficient susceptible individuals, or a combination. R0 then becomes Rt. Ebola is a terrible disease and during outbreaks people are known to change their behaviour, e.g. by avoiding contact with suspected cases. Also, isolation of patients is a very effective means of control, dramatically reducing the risk of further spread as the outbreak progresses.\n\nThus, these analyses need to be made more sophisticated by including heterogeneity in values of R0, between outbreaks and especially within outbreaks. Within outbreaks the value of Rt (which has value R0 at time 0) should be allowed to change (i.e. decrease), which could perhaps be done by including a time series component in the MCMC approach.\n\nFurthermore, the author assumes the data to be perfect. However, is this true? There may have been several unnoticed outbreaks of a single to a few cases that never ended up in the WHO data base. How would this change the findings? There should be more discussion and (sensitivity) analyses about this issue.\n\nGive the current topicality it would also be interesting to relate the ongoing very large outbreak (about 700 fatalities) to the presented analyses. Can such a large outbreak still be explained by this simple approach?\n\nReviewer 3:\n\nUsing the estimate, he concludes R0 for Ebola is less than one. I must admit, it is a simple and elegant paper, and on the face of it, it seems like a very good idea.\n\nMy chief critique is that the author has not cited and seems to be unaware of an 8-year old critique of the methodology by Drake:\n\n(2006) The Difficulties of Predicting the Outbreak Sizes of Epidemics. PLOS Med 3(1): e23. doi:10.1371/journal.pmed.0030023\n\nIn sum, Drake concludes that in the event of a delayed onset intervention, that the final size of an epidemic could be anything. The final size is thus a poor metric for R0 estimation.\n\nTo be suitable for publication, the article would have to address the issues raised by Drake. In some sense the article would have to make the case that the model being used was appropriate to the task. The model is very simple, but Drake's point is that the final size is highly sensitive to departures from that model, and many of the modifying assumptions would likely be highly appropriate for Ebola. If a new model were adopted, the reanalysis would be extensive.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cEpidemiological Dynamics of Ebola Outbreaks\u201d for further consideration at eLife. Your revised article has been favorably evaluated by Prabhat Jha (Senior editor) and four reviewers. We would like to reach a final decision on this, however, and given the important public scrutiny to Ebola virus, we invite you to pay specific attention to the following in another revision of this work:\n\n1) Provide a clearer explanation of Rt and the extent to which it fits the observed ongoing spread of Ebola (including the value of being less than <1). Several reviewers have raised specific queries on the estimation, to which we would like you to respond, specifically to those of Sake de Vlas. For example, please explain:\n\n(a) If Ro >1, but then control is implemented and makes Re < 1, then the final size of the epidemic depends on when the control was implemented. Conversely, the final size distribution reflects Ro, Re, and timing, not just Ro. This must be discussed as a caveat to the use of final size to estimate Ro.\n\n(b) The fixed value of Rt is rather unlikely. Still, with Rt slightly < 1, (sometimes large) outbreaks could occur, followed by 'natural' extinction. It remains an interesting theoretical exercise to demonstrate that this simplistic assumption fits to the Ebola data, including the current multi-country epidemic. Please ensure that you highlight this limitation properly in the discussion.\n\n2) Please review each of the reviewer comments (below) and reply to me.\n\nThe next stage will involve a rapid review by the editor \u2013 Prabhat Jha \u2013 to see if the major concerns have been addressed, and if so, the paper will be accepted as submitted. If it is not, we will have to send this out for additional review. Thus, please do these replies carefully and make changes to the manuscript that you see fairly addressing these concerns.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nReviewer 1:\n\nThe author has addressed many of the concerns from the earlier reviews and I appreciate the attempts to a) temper the language, and b) include some analysis in light of the current outbreak.\n\nI still think that the author has not described the latter analysis very well. The main text states that the data were \u201caugmented\u201d, though there is no real detail about what this is meant to mean (either in the main text or the appendix). I can imagine what was likely done, but the reader should have to imagine what methods were used. I would strongly suggest that the author clarify this methodology and provide some real interpretation of the output. At present, Figure 5 is presented without any real synthesis. The added paragraph in the results simply restates the figure legend without presenting any real interpretation or speculation on how to interpret these results in light of the current outbreak. I'm not suggesting that the author overreach here, but this analysis would permit some kind of statement like \u201cif the current outbreak were to exceed ##, then there would be strong evidence of a shift in dynamics from that which resulted in the prior pattern of outbreaks.\u201d\n\nReviewer 2: Sake de Vlas\n\nFirst of all, I would like to re-emphasize that the model used for final size of Ebola outbreaks is too simplistic, or too 'general' in the author's words. Outbreaks are normally characterized by an initial value of Rt = R0 (usually >1), which reduces to a lower value (usually <1) during the epidemic, as a consequence of interventions or behaviour change of the population.\n\nThere is no reason to believe that this would be different for Ebola. On the contrary, Ebola is known to steadily spread (unnoticed) for some time, but after detection outbreaks are rapidly contained by stringent control through isolation of patients, often heroically organized by MSF. The current multi-country outbreak is characterized by a lack of trust by the affected populations, so that control cannot be organized well and transmission continues. A proper model, certainly a practical one to be used for making predictions of future course and the possible impact of interventions, should take into account such mechanisms.\n\nHaving said that, I still consider it an interesting mathematical thought experiment to study to which extent previous outbreaks (and the current one) might be explained by assuming a simple constant value of Rt. That this would result in a value of Rt slightly less than 1 is not a surprise at all, since this is the only way that outbreaks can both occur and eventually die out naturally. I remain a bit disappointed that the author did not manage to include a simple process of (e.g. logistic) decline in Rt during an epidemic, but hopefully this will be the subject of a follow-up study.\n\nI am happy with the much improved Introduction and Discussion. The description of the Bayesian approach is adequate as well. Figure 5 is a useful addition, even though it expresses that the current massive outbreak is perceived by the model as just a rare random event. Crudely, with the estimated average 1.5 years between outbreaks and a 0.023 chance of a big one, such an outbreak is expected to occur once every 1.5/0.023 = 65 years. Would that be realistic?\n\nAll in all, I recommend acceptance of the study. Remaining comments:\n\n1) The technical annex still mentions R0, whereas Rt would be expected.\n\n2) Figure 4A, giving an illustration of the timing of epidemics, requires some more explanation. It seems that somewhere a generation time has been assumed, since otherwise the timing of successive new cases within outbreaks cannot be related to the timing of new outbreaks.\n\n3) Perhaps the author can calculate the occurrence of large-size outbreaks more precisely, using the detailed results of the Bayesian analyses.\n\nReviewer 3:\n\nThe response to my comment \u2013 the one dealing with the critique of methods from Drake et al. \u2013 was inadequate. In fact, I can't tell whether the author had read the whole article.\n\nDrake's point about variability in the final size of an epidemic is a serious challenge to the validity of this work. Such critiques must be dealt with in substantive ways, and not by putting a band-aid on the analysis.\n\nDrake's most critical point, illustrated in Figure 4, was about delayed onset of interventions. This is the most serious challenge to interpreting the analysis of final size as an estimate of R0. In fact, it seems Ebola fits this quite well, in that interventions are applied unevenly throughout the course of an epidemic, once detected, the epidemics are generally nipped in the bud and they die out. What seems much more likely to me is that R0 is higher than one before control measures are implemented, and less than one after that. In such situations, the final size of an epidemic has much more to do with the timing of the onset of interventions.\n\nThis is the point that House has not dealt with at all, as far as I can tell, and it is a serious challenge to the validity of his estimate.\n\nReviewer 4: Simon Hay\n\nI think Thomas House has done a comprehensive job at responding to the reviewers concerns. The article is extremely brief, as per the format, but written clearly.\n\n1) Critical arguments are around whether the concerns raised by reviewer 2 and those of Drake (2006) raised by reviewer 3, will need to be evaluated by the relevant individuals and I will be very interested in their responses.\n\n2) Apologies if I have missed them, but there is no plot of the epidemics by size and time: that is the core dataset. This would be useful to show the reader and I imagine with a little imagination one could show all the baseline data being used. The data/code etc should also be made available on Dryad or the like.\n\n3) When plotted elsewhere I note that there is a distinct change in the frequency of the epidemics pre and post 2000, with the frequency much greater in the last 15 years. Does this non-stationary pattern (hesitate to use the word trend) in outbreaks effect the analyses.\n\n4) I think the impact statement should be refined. Ebola is clearly transmissible enough to cause a major epidemic \u2013 we are in the midst of one. I don't think this is exactly this is what you mean to say. Is it something more along the lines of \u201cDespite the Rt of Ebola being less than 1, it can lead to the generation of a range of outbreak sizes consistent with the scale of the ongoing epidemic\u201d? Regardless it needs clarifying.\n",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ad6d51b1-97dc-44d9-9332-e2decba05c19",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C1",
+      "claim": "Ebola is a deadly virus that causes frequent disease outbreaks in the human population.",
+      "claim_type": "EXPLICIT",
+      "source": "Ebola is a deadly virus that causes frequent disease outbreaks in the human population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that is supported by the subsequent analysis of outbreak rates and case fatality ratios presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "97a3cdd0-7e6d-4c42-b22d-3a27f19354be",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C2",
+      "claim": "The effective reproductive ratio of Ebola is just less than 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show a fast rate of new outbreaks, a high case fatality ratio, and an effective reproductive ratio of just less than 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by the statistical analysis presented in Figures 2 and 4, showing Rt estimates of 0.88[0.64,0.96] and 0.94[0.87,0.99].",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "ad53bfcf-b04a-441a-a0f7-b9b596948930",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C3",
+      "claim": "Ebola virus disease is an often fatal disease of humans that is not vaccine-preventable and has no specific treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Ebola virus disease is an often fatal disease of humans that is not vaccine-preventable and has no specific treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws on established medical knowledge about Ebola as of the time of writing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "4be26c4b-4751-4086-9f9d-90e2da31fddc",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C4",
+      "claim": "A total of 25 outbreaks of Ebola have occurred since the first observed cases in humans in 1976.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 25 outbreaks, believed to have arisen due to zoonotic transmission from wild mammals, have occurred since the first observed cases in humans in 1976 (World Health Organisation, 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to WHO data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "f36453e5-a983-43f5-870d-a711bb7d6064",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C5",
+      "claim": "Ebola outbreaks are believed to have arisen due to zoonotic transmission from wild mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 25 outbreaks, believed to have arisen due to zoonotic transmission from wild mammals, have occurred since the first observed cases in humans in 1976 (World Health Organisation, 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to WHO data and represents the scientific understanding of Ebola transmission origins.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "69407128-01bd-4182-af5f-78452d189048",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C6",
+      "claim": "The current epidemic is the largest Ebola outbreak to date.",
+      "claim_type": "EXPLICIT",
+      "source": "The current epidemic is the largest to date (World Health Organisation, 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to WHO data from 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "f0646d9f-ecce-4eac-b495-c3715f877a09",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C11",
+      "claim": "Similar R\u2080 estimates to those from 1995 and 2000 outbreaks were obtained for the ongoing outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "with similar results obtained for the ongoing outbreak (Althaus, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a 2014 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "1d2ce13f-b52a-4ea9-97b3-40af8281ac3f",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C14",
+      "claim": "The mean time between Ebola outbreaks is 1.49[1.02,2.24] years.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1A showing the empirical distribution of times between outbreaks together with the fitted model distribution that has mean 1.49[1.02,2.24] years between outbreaks",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the statistical analysis of outbreak timing data shown in Figure 1A and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "350c8a1f-5ef5-46f6-9219-b2b7dcb5ae99",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C15",
+      "claim": "The effective reproductive ratio Rt for completed outbreaks is estimated to be 0.88[0.64,0.96].",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2C showing the posterior for the reproductive ratio, which is estimated to be Rt=0.88[0.64,0.96].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the Bayesian statistical analysis of completed outbreak data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "0127bc61-47ea-4f9e-a50d-c71167db8e00",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C16",
+      "claim": "The geometric parameter p for completed outbreaks is estimated to be 0.089[0.029,0.19].",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2D shows the posterior for the geometric parameter, which is estimated to be p=0.089[0.029,0.19].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the Bayesian statistical analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "2533c43a-7f8f-4076-b7c2-c47b53dbc060",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C17",
+      "claim": "Ebola outbreaks show behaviour that is typical of near-critical branching processes, which often become extinct early but also often grow to significant size before extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3A shows a set of 24 outbreaks simulated from a continuous-time Markov chain with the same probability distribution for final size as the estimated model. These show behaviour that is typical of near-critical branching processes, which often becoming extinct early but also often grows to significant size before extinction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3A and represents an inference about the nature of Ebola outbreak dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "eed45cc3-3b17-4cb1-8d61-4cf4331f8976",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C18",
+      "claim": "The parameters of the Ebola transmission model are identifiable from outbreak final size data.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3B plots the likelihood surface for these simulated data showing parameter identifiability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the likelihood contour analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "b4000a4f-2c5a-4c8a-94f4-671f4f325f94",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C19",
+      "claim": "When completed outbreak data are augmented by an outbreak of size 1000-5000, the probability of such an additional outbreak is estimated to be 0.023[0.0015,0.088].",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4B shows the posterior for the probability of the additional outbreak, which is estimated to be 0.023[0.0015,0.088].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the Bayesian statistical analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "47aec3c9-9bab-42e0-ac9a-d1f1776f16ec",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C20",
+      "claim": "When completed outbreak data are augmented by an outbreak of size 1000-5000, the effective reproductive ratio Rt is estimated to be 0.94[0.87,0.99].",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4C shows the posterior for the reproductive ratio, which is estimated to be Rt=0.94[0.87,0.99]",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the Bayesian statistical analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "57cdb551-c1bb-4dbf-8825-de05af4105ea",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C21",
+      "claim": "When completed outbreak data are augmented by an outbreak of size 1000-5000, the geometric parameter p is estimated to be 0.11[0.054,0.21].",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4D shows the posterior for the geometric parameter, which is estimated to be p=0.11[0.054,0.21].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by the Bayesian statistical analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "a4ac14cb-d2bb-447d-8a8d-42a12e64075a",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C22",
+      "claim": "The rate of new Ebola epidemics is high.",
+      "claim_type": "EXPLICIT",
+      "source": "The results obtained point to the following conclusions about Ebola transmission dynamics. (i) The rate of new epidemics and CFR are both high, but with significant variability from outbreak to outbreak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is supported by the analysis showing mean time between outbreaks of 1.49 years.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "c9825af5-3433-44ee-ab89-cbd3962e3740",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C23",
+      "claim": "The case fatality ratio (CFR) of Ebola is high.",
+      "claim_type": "EXPLICIT",
+      "source": "The results obtained point to the following conclusions about Ebola transmission dynamics. (i) The rate of new epidemics and CFR are both high, but with significant variability from outbreak to outbreak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is supported by the CFR analysis shown in Figure 1B with beta distribution parameters \u03b1=6.1[2.8,11] and \u03b2=3.1[1.5,5.9].",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "4aae90da-42a7-47c9-a224-d34d6fd834c5",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C24",
+      "claim": "There is significant variability in Ebola case fatality ratio from outbreak to outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "The results obtained point to the following conclusions about Ebola transmission dynamics. (i) The rate of new epidemics and CFR are both high, but with significant variability from outbreak to outbreak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is supported by the beta distribution fit to CFR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "81ea5f1a-e965-490e-acf3-95e6f3c44fdd",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C29",
+      "claim": "It is possible that a number of small Ebola outbreaks were not recorded by the WHO.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, it is possible that a number of small outbreaks were not recorded by the WHO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential data limitations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "0bea8ed6-6a00-4975-b98f-de10a8b5ed55",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C30",
+      "claim": "Unrecorded small outbreaks could be addressed through incorporation of additional variability into the model through introduction of explicit overdispersal parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be addressed through incorporation of additional variability into the model through introduction of explicit overdispersal parameters as in the study by Lloyd-Smith et al. (Lloyd-Smith et al., 2005) and Blumberg and Lloyd-Smith (Blumberg and Lloyd-Smith, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous methodological studies and represents a suggestion for future work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "4484351a-6a3f-472e-a67f-19efc52c6596",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C31",
+      "claim": "For the data currently available there was no strong evidence for overdispersal beyond that implied by the geometric distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "although for the data currently available there was no strong evidence for overdispersal beyond that implied by the geometric distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the analysis performed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "6158fcff-0098-4dae-b2d1-a0d9ea869aaa",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C32",
+      "claim": "The results give support to appeals for greater resources to respond to the ongoing epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these conclusions suggest no reason for complacency and give support to appeals for greater resources to respond to the ongoing epidemic (M\u00e9decins Sans Fronti\u00e8res, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the results with citation to an appeal for resources.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "e95fe8b1-2004-4171-836a-1cebe91c1135",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C33",
+      "claim": "The analysis is based on time between outbreaks, number of deaths, and final number of cases for all 24 completed Ebola outbreaks reported by the WHO.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, a different approach is taken based on using the time between outbreaks, number of deaths, and final number of cases, for all 24 completed Ebola outbreaks reported by the World Health Organisation (World Health Organisation, 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data sources used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "7967707b-1edc-4746-93e8-26eff6dbad99",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C34",
+      "claim": "The start of new Ebola outbreaks is modeled as a memoryless Poisson process with a rate \u03bb.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we model the start of new outbreaks as a 'memoryless' Poisson process with a rate \u03bb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "6d5a7763-fa9c-4662-94f2-c08aca2a8b50",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C35",
+      "claim": "Each new Ebola outbreak has a case fatality ratio picked from a beta distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, we assume that each new outbreak has a case fatality ratio (CFR\u2014the probability that a case will die) picked from a beta distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "8a2956fb-9110-4c04-b546-6f9ea367e6ec",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C39",
+      "claim": "Bayesian MCMC with uninformative priors was used to fit all models.",
+      "claim_type": "EXPLICIT",
+      "source": "Bayesian MCMC with uninformative priors was used to fit all models (Gilks et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methodology with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "94121297-057a-4779-b8e7-dbaa235d02b4",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C40",
+      "claim": "Doubts have been raised in the literature about the use of final size data for emerging diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Since doubts have been raised in the literature about the use of final size data for emerging diseases (Drake, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "0a6116a6-9501-4f60-8268-fdc2867e4a95",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C41",
+      "claim": "A simulation study was performed to test identifiability of parameters from final size data.",
+      "claim_type": "EXPLICIT",
+      "source": "a simulation study was also performed to test identifiability, although a recent study by Blumberg and Lloyd-Smith (Blumberg and Lloyd-Smith, 2013) of joint identifiability of two parameters in a related model is also highly relevant in this context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological component of the study with citation to related work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "ba3397fc-1880-4462-8d1a-af7a70c826bc",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C46",
+      "claim": "Multimodality was not observed in the parameter spaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The parameter spaces involved are low-dimensional enough that large-scale sweeps can be performed to check for multimodality, which was not observed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "67fa73f3-8e66-44ae-956b-04e8b120ecfc",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C47",
+      "claim": "Convergence of the MCMC chains was observed to be fast and independent of initial conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "and convergence of the chains was observed to be fast and independent of initial conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "1de614ee-529c-4a59-ab17-90011ecf849e",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C48",
+      "claim": "The real-time incidence curves in the simulation study are produced by modelling the geometric distributions as arising from Poissonian transmission with exponentially distributed rates.",
+      "claim_type": "EXPLICIT",
+      "source": "For the simulation study, the real-time incidence curves are produced by modelling the geometric distributions as arising from Poissonian transmission with exponentially distributed rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "e745b0f3-d76f-4ffe-91c4-1c20ebef92e9",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C49",
+      "claim": "MATLAB code to reproduce the analysis is available at https://github.com/thomasallanhouse/elife-ebola-code.",
+      "claim_type": "EXPLICIT",
+      "source": "MATLAB code to reproduce the analysis of this paper is available at: https://github.com/thomasallanhouse/elife-ebola-code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data/code availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "1c9bfbfb-b697-4f2a-a9eb-156f84b2a745",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "claim_id": "C52",
+      "claim": "The start of new outbreaks in the human population is modeled as a Poisson process of rate \u03bb.",
+      "claim_type": "EXPLICIT",
+      "source": "We model the start of new outbreaks in the human population as a Poisson process of rate \u03bb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical model specification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c7ba1942-ccae-4796-887a-d9b12304a091",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The rate of new Ebola outbreaks is high, with a mean time between outbreaks of 1.49[1.02,2.24] years. This is modeled as a memoryless Poisson process with rate \u03bb=0.67[0.45,0.98].",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C22, C34, and C52 collectively establish the outbreak rate through Poisson modeling of WHO data. The statistical analysis in Figure 1A and 1C provides direct empirical support with appropriate confidence intervals. The modeling approach is mathematically sound and the data source (WHO) is authoritative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "00ed0390-c200-4b07-9f0e-bedc70cd310f",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The case fatality ratio (CFR) of Ebola is high with significant variability between outbreaks, modeled as a beta distribution with parameters \u03b1=6.1[2.8,11] and \u03b2=3.1[1.5,5.9].",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C24, and C35 are supported by the beta distribution fit to empirical CFR data shown in Figure 1B, D, and E. The beta distribution is an appropriate choice for modeling proportions, and the wide credible intervals on the parameters appropriately capture the stated variability between outbreaks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "c54b0fd5-7081-45cf-bc5c-1b9e8cb02385",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "For completed outbreaks, the effective reproductive ratio Rt is estimated to be 0.88[0.64,0.96] (just below 1), with geometric parameter p=0.089[0.029,0.19].",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C15, and C16 are directly supported by Bayesian MCMC analysis of final outbreak sizes shown in Figure 2C and 2D. The model fit to data (Figure 2A, 2B) appears reasonable, and the conclusion that Rt is just below 1 is consistent with the posterior distribution. However, the interpretation of Rt as a fundamental property requires caution given potential time-varying interventions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "b6598620-bf8a-4c46-8965-afd08551d71f",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "When augmenting completed outbreak data with a hypothetical outbreak of size 1000-5000, the effective reproductive ratio increases to Rt=0.94[0.87,0.99], geometric parameter p=0.11[0.054,0.21], and the probability of such a large outbreak is estimated at 0.023[0.0015,0.088].",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C20, and C21 are supported by the augmented analysis shown in Figure 4. The methodology appropriately uses Equation 5 to incorporate the uncertain large outbreak. The shift in Rt closer to 1 is consistent with branching process theory. However, the wide credible interval on the probability (0.0015 to 0.088) indicates substantial uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "b2249571-7a62-4582-88df-ca51a067b345",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ebola outbreaks exhibit near-critical branching process behavior with early extinction or significant growth before extinction. Model parameters are identifiable from final size data, as demonstrated through simulation studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C18, C41, and C48 are supported by the simulation study shown in Figure 3. Figure 3A demonstrates the characteristic bimodal behavior of near-critical processes, and Figure 3B shows clear parameter identifiability through likelihood contours. This addresses concerns raised in the literature (C40) about using final size data for emerging diseases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "c16bb6b4-546f-4aaa-9cbf-584a41383d66",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The analysis uses WHO data on 24 completed Ebola outbreaks since 1976, which arose from zoonotic transmission. The 2014 outbreak was the largest to date.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C6, and C33 are supported by citations to WHO data sources. These provide the empirical foundation for the analysis. The claims about zoonotic origin represent established scientific understanding at the time of writing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "2e4a9db5-f665-449a-9438-4589ed75f5aa",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Bayesian MCMC with uninformative priors was used for model fitting, with fast convergence independent of initial conditions and no multimodality observed in parameter spaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C46, and C47 describe the computational methodology. The use of uninformative priors is appropriate for this exploratory analysis. The statements about convergence and lack of multimodality are supported by the low-dimensional parameter spaces allowing comprehensive sweeps. However, specific convergence diagnostics (e.g., Gelman-Rubin statistics) are not reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "f82dfee5-5a67-4227-b88e-cbed54ca807f",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Small unreported outbreaks may exist but there is no strong evidence for overdispersal beyond that implied by geometric distributions in the current data. Future work could incorporate explicit overdispersal parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C29 is speculative about data completeness, C30 suggests future methodological improvements, and C31 states no evidence for additional overdispersal was found. However, the manuscript does not present formal model comparison tests (e.g., likelihood ratio tests, AIC/BIC) to support the claim that overdispersal parameters are unnecessary, making this conclusion uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "9f9114d3-24a4-41bc-84d8-4e04d86029bb",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The results support appeals for greater resources to respond to the ongoing epidemic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is a policy inference drawn from the scientific findings. Given the high outbreak rate, high CFR, and Rt near 1 (which could exceed 1 under certain conditions), this conclusion logically follows from the results, though it represents an interpretation rather than a direct scientific finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "91a689a8-4beb-4d72-afe8-217948604e0e",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Ebola is a deadly, often fatal disease with no vaccine or specific treatment that causes frequent outbreaks in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C3 represent general knowledge statements about Ebola that were accurate at the time of writing (2014). These are supported by the subsequent quantitative analysis in the manuscript and established medical literature. Note: vaccines have since been developed, making C3 outdated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "05b1cb2a-d12c-4c79-87f9-c3adbaa278e9",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Similar R\u2080 estimates to those from 1995 and 2000 outbreaks were obtained for the ongoing 2014 outbreak by other researchers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C11 is supported by citation to Althaus (2014). This contextualizes the current work within the broader literature on Ebola transmission dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "bf902b50-8eab-4194-aae4-d500ebe0d644",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Doubts have been raised in the literature about using final size data for emerging diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 is supported by citation to Drake (2005) and motivates the identifiability analysis performed in this study. This represents appropriate acknowledgment of methodological concerns in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    },
+    {
+      "id": "b9f90ee5-72b0-4553-bd1b-c7ab9399394d",
+      "content_id": "e544bf3d-02b1-4ae1-84fa-ae1936069c33",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MATLAB code to reproduce the analysis is publicly available on GitHub.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 provides a specific URL for code availability, supporting reproducibility. This is a methodological strength, though the current accessibility of the repository cannot be verified from the manuscript alone.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:20:41.887060Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1d2ce13f-b52a-4ea9-97b3-40af8281ac3f",
+      "result_id": "c7ba1942-ccae-4796-887a-d9b12304a091"
+    },
+    {
+      "claim_id": "a4ac14cb-d2bb-447d-8a8d-42a12e64075a",
+      "result_id": "c7ba1942-ccae-4796-887a-d9b12304a091"
+    },
+    {
+      "claim_id": "7967707b-1edc-4746-93e8-26eff6dbad99",
+      "result_id": "c7ba1942-ccae-4796-887a-d9b12304a091"
+    },
+    {
+      "claim_id": "1c9bfbfb-b697-4f2a-a9eb-156f84b2a745",
+      "result_id": "c7ba1942-ccae-4796-887a-d9b12304a091"
+    },
+    {
+      "claim_id": "c9825af5-3433-44ee-ab89-cbd3962e3740",
+      "result_id": "00ed0390-c200-4b07-9f0e-bedc70cd310f"
+    },
+    {
+      "claim_id": "4aae90da-42a7-47c9-a224-d34d6fd834c5",
+      "result_id": "00ed0390-c200-4b07-9f0e-bedc70cd310f"
+    },
+    {
+      "claim_id": "6d5a7763-fa9c-4662-94f2-c08aca2a8b50",
+      "result_id": "00ed0390-c200-4b07-9f0e-bedc70cd310f"
+    },
+    {
+      "claim_id": "97a3cdd0-7e6d-4c42-b22d-3a27f19354be",
+      "result_id": "c54b0fd5-7081-45cf-bc5c-1b9e8cb02385"
+    },
+    {
+      "claim_id": "350c8a1f-5ef5-46f6-9219-b2b7dcb5ae99",
+      "result_id": "c54b0fd5-7081-45cf-bc5c-1b9e8cb02385"
+    },
+    {
+      "claim_id": "0127bc61-47ea-4f9e-a50d-c71167db8e00",
+      "result_id": "c54b0fd5-7081-45cf-bc5c-1b9e8cb02385"
+    },
+    {
+      "claim_id": "47aec3c9-9bab-42e0-ac9a-d1f1776f16ec",
+      "result_id": "b6598620-bf8a-4c46-8965-afd08551d71f"
+    },
+    {
+      "claim_id": "57cdb551-c1bb-4dbf-8825-de05af4105ea",
+      "result_id": "b6598620-bf8a-4c46-8965-afd08551d71f"
+    },
+    {
+      "claim_id": "b4000a4f-2c5a-4c8a-94f4-671f4f325f94",
+      "result_id": "b6598620-bf8a-4c46-8965-afd08551d71f"
+    },
+    {
+      "claim_id": "2533c43a-7f8f-4076-b7c2-c47b53dbc060",
+      "result_id": "b2249571-7a62-4582-88df-ca51a067b345"
+    },
+    {
+      "claim_id": "eed45cc3-3b17-4cb1-8d61-4cf4331f8976",
+      "result_id": "b2249571-7a62-4582-88df-ca51a067b345"
+    },
+    {
+      "claim_id": "0a6116a6-9501-4f60-8268-fdc2867e4a95",
+      "result_id": "b2249571-7a62-4582-88df-ca51a067b345"
+    },
+    {
+      "claim_id": "1de614ee-529c-4a59-ab17-90011ecf849e",
+      "result_id": "b2249571-7a62-4582-88df-ca51a067b345"
+    },
+    {
+      "claim_id": "e95fe8b1-2004-4171-836a-1cebe91c1135",
+      "result_id": "c16bb6b4-546f-4aaa-9cbf-584a41383d66"
+    },
+    {
+      "claim_id": "4be26c4b-4751-4086-9f9d-90e2da31fddc",
+      "result_id": "c16bb6b4-546f-4aaa-9cbf-584a41383d66"
+    },
+    {
+      "claim_id": "f36453e5-a983-43f5-870d-a711bb7d6064",
+      "result_id": "c16bb6b4-546f-4aaa-9cbf-584a41383d66"
+    },
+    {
+      "claim_id": "69407128-01bd-4182-af5f-78452d189048",
+      "result_id": "c16bb6b4-546f-4aaa-9cbf-584a41383d66"
+    },
+    {
+      "claim_id": "8a2956fb-9110-4c04-b546-6f9ea367e6ec",
+      "result_id": "2e4a9db5-f665-449a-9438-4589ed75f5aa"
+    },
+    {
+      "claim_id": "ba3397fc-1880-4462-8d1a-af7a70c826bc",
+      "result_id": "2e4a9db5-f665-449a-9438-4589ed75f5aa"
+    },
+    {
+      "claim_id": "67fa73f3-8e66-44ae-956b-04e8b120ecfc",
+      "result_id": "2e4a9db5-f665-449a-9438-4589ed75f5aa"
+    },
+    {
+      "claim_id": "81ea5f1a-e965-490e-acf3-95e6f3c44fdd",
+      "result_id": "f82dfee5-5a67-4227-b88e-cbed54ca807f"
+    },
+    {
+      "claim_id": "0bea8ed6-6a00-4975-b98f-de10a8b5ed55",
+      "result_id": "f82dfee5-5a67-4227-b88e-cbed54ca807f"
+    },
+    {
+      "claim_id": "4484351a-6a3f-472e-a67f-19efc52c6596",
+      "result_id": "f82dfee5-5a67-4227-b88e-cbed54ca807f"
+    },
+    {
+      "claim_id": "6158fcff-0098-4dae-b2d1-a0d9ea869aaa",
+      "result_id": "9f9114d3-24a4-41bc-84d8-4e04d86029bb"
+    },
+    {
+      "claim_id": "ad6d51b1-97dc-44d9-9332-e2decba05c19",
+      "result_id": "91a689a8-4beb-4d72-afe8-217948604e0e"
+    },
+    {
+      "claim_id": "ad53bfcf-b04a-441a-a0f7-b9b596948930",
+      "result_id": "91a689a8-4beb-4d72-afe8-217948604e0e"
+    },
+    {
+      "claim_id": "f0646d9f-ecce-4eac-b495-c3715f877a09",
+      "result_id": "05b1cb2a-d12c-4c79-87f9-c3adbaa278e9"
+    },
+    {
+      "claim_id": "94121297-057a-4779-b8e7-dbaa235d02b4",
+      "result_id": "bf902b50-8eab-4194-aae4-d500ebe0d644"
+    },
+    {
+      "claim_id": "e745b0f3-d76f-4ffe-91c4-1c20ebef92e9",
+      "result_id": "b9f90ee5-72b0-4553-bd1b-c7ab9399394d"
+    }
+  ],
+  "comparisons": []
+}

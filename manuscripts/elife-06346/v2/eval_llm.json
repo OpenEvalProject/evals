@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "ChR2 expression in serotonergic neurons was highly specific (2.3% false positives) and efficient (80.9% of 5-HT-positive cells expressed ChR2-EYFP), as demonstrated by immunohistochemical cell counting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C6 provide direct quantitative evidence from immunohistochemistry showing both specificity and efficiency of viral expression. The sample sizes (260 ChR2-EYFP-positive cells and 314 5-HT-positive cells) are adequate for these measurements, and the results support the validity of the optogenetic identification approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "29 neurons were identified as serotonergic based on optogenetic tagging: all showed fast light-evoked spikes and followed high-frequency stimulation, consistent with direct ChR2 activation rather than synaptic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 describe the optogenetic identification criteria and results. The clustering approach (C7), fast spike latencies (C8), and high-frequency following (C9) provide converging evidence for direct ChR2 expression in recorded neurons. The methods are appropriate for distinguishing direct from indirect activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "All 29 identified serotonergic neurons showed significant task-related modulations in firing rate across different task epochs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is supported by ANOVA analysis (p < 0.01 for all neurons) comparing firing rates across baseline, CS, delay, and US periods. The statistical approach is appropriate, though the claim would be strengthened by reporting effect sizes and correcting for multiple comparisons across neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C51",
+      "C52"
+    ],
+    "result": "A substantial fraction (41%, 12/29) of serotonergic neurons showed tonic firing rate differences between reward and punishment blocks that built up slowly within blocks and did not depend on inter-trial interval duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 provide statistical evidence (Wilcoxon tests, p < 0.05) for block-dependent tonic firing in 12/29 neurons, with bidirectional effects. Claims C51-C52 characterize the temporal dynamics. The statistical tests are appropriate, and the temporal analysis (C51) and ITI control (C52) strengthen the interpretation that this reflects state value rather than trial-specific factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C57"
+    ],
+    "result": "Dopaminergic neurons did not show tonic firing rate changes across reward versus punishment blocks, contrasting with serotonergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C57 report that none of 28 VTA neurons (15 identified, 13 putative dopaminergic) showed significant pre-trial firing rate differences between blocks (p > 0.5). This provides an important control comparison, though the sample size for identified dopaminergic neurons is smaller than for serotonergic neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Most serotonergic neurons (28/29) showed phasic responses to punishments, with 22 excited and 6 inhibited, and responses were transient (mean duration 315 \u00b1 140 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 provide statistical evidence (Wilcoxon tests, p < 0.05) for punishment responses in 28/29 neurons with quantified response durations. The high proportion of responsive neurons and bidirectional effects are well-documented. However, the nature of the air puff response (aversiveness vs. sensory salience) remains ambiguous as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "About half of serotonergic neurons (15/29) were phasically excited by reward-predicting cues with brief responses (mean 235 \u00b1 194 ms), and for 9/15 neurons, reward-CS responses exceeded punishment-CS responses. Serotonergic neurons showed faster CS responses than dopaminergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 document reward-CS responses with appropriate statistics (Wilcoxon tests, p < 0.05). The comparison to dopaminergic neurons (C25) provides important context. The response durations and proportions are clearly quantified, though the functional significance of the faster serotonergic response timing requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "A subset of serotonergic neurons (11/29) showed weak but significant excitation to unexpected rewards, with larger responses to unexpected versus expected rewards, contrasting with the strong phasic responses of dopaminergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 document unexpected reward responses with statistical support. The comparison to dopaminergic neurons provides important context. However, the weak magnitude and slow dynamics of serotonergic responses suggest these neurons may not be primary reward prediction error signals, unlike dopaminergic neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C58"
+    ],
+    "result": "Serotonergic neurons multiplex signals on different timescales: tonic pre-trial firing differences (reward vs. punishment blocks) positively correlated with phasic CS response differences (r = 0.85, p < 0.001), but not with punishment responses, while reward-CS and punishment responses were positively correlated (r = 0.60, p < 0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 provide correlation analyses with strong statistical support. The strong correlation between tonic and phasic reward signals (C28) demonstrates multiplexing within individual neurons. The lack of correlation with punishment responses (C29) and positive correlation between reward-CS and punishment responses (C30) reveal complex encoding patterns. Statistical tests are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "For serotonergic neurons with block-dependent firing, neutral block firing rates fell between reward and punishment rates for 7/8 neurons, indicating value coding rather than salience coding (15/16 neurons were not salience-coding).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 test the value vs. salience hypothesis using neutral trials. The statistical analysis (Tukey's HSD, p > 0.05) appropriately tests whether neutral responses fall between reward and punishment. The conclusion that 15/16 neurons are not salience-coding is well-supported, though the sample size is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C59"
+    ],
+    "result": "Serotonergic neuron firing rates varied monotonically with reward magnitude (13/13 neurons showed strictly increasing or decreasing responses across three reward sizes), supporting value coding across different reward magnitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C59 demonstrate graded value coding using three reward sizes. The monotonic relationship in all 13 tested neurons strongly supports value coding. Statistical tests (Tukey's HSD) are appropriate. This experiment addresses the sensory modality confound present in water vs. air puff comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C59"
+    ],
+    "result": "Serotonergic neurons showed tonic firing differences between water and quinine punishment blocks (8/21 neurons), demonstrating value coding across different punishment types of the same sensory modality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C59 address whether value coding extends to punishments of the same sensory modality as rewards. The water vs. quinine comparison controls for sensory modality differences. However, the proportion of responsive neurons (8/21, 38%) is similar to the water vs. air puff comparison, and the authors note weaker responses to quinine, possibly due to different temporal dynamics or magnitude.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C60"
+    ],
+    "result": "Serotonergic neuron CS responses were monotonic functions of value for all 23 tested neurons, with population-level firing rates ordered as reward > neutral > punishment (all comparisons p < 0.05), indicating value coding rather than salience coding within trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 demonstrate value coding during CS presentation using appropriate statistical tests (paired t-tests). The monotonic relationship in all 23 neurons and ordered population responses strongly support value coding. This complements the block-level value coding results and addresses the within-trial timescale.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Among unidentified dorsal raphe neurons, 29/120 showed block-dependent tonic firing and 92/120 showed task-related responses, but serotonergic neurons showed more phasic (transient) responses than unidentified neurons (Fisher's exact test, p < 0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 characterize unidentified neurons and compare them to serotonergic neurons. The statistical tests are appropriate. The finding that serotonergic responses are more phasic (C43) suggests functional differences, though the unidentified population likely contains both serotonergic (false negatives) and non-serotonergic neurons, complicating interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Serotonergic neurons had significantly longer spike durations than unidentified neurons (p < 0.05) but showed substantial overlap in distributions and could not be reliably classified using spike waveform features (duration, firing rate, ISI coefficient of variation) with clustering algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 demonstrate that traditional electrophysiological criteria are insufficient for identifying serotonergic neurons. Statistical tests show significant but overlapping distributions (C44), and clustering algorithms failed to classify neurons (C47). This validates the optogenetic identification approach and challenges prior studies using waveform-based identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Mice learned the task contingencies, as evidenced by differential licking during reward versus neutral/punishment trials (p < 0.001), attention to block structure (differential licking during block-transition tones, p < 0.01), and preference for water without air puff in choice tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 establish that mice learned the task and that air puffs are aversive. Statistical tests are appropriate (ANOVA, t-tests, Wilcoxon tests). The behavioral controls are essential for interpreting neural responses, though more detailed analysis of learning dynamics and individual differences would strengthen the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "Over half of serotonergic neurons (16/29) showed gradually decreasing firing rates over the course of experimental sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 documents within-session firing rate decreases in 16/29 neurons. While statistically supported (referenced in Figure 3\u2014figure supplement 3), this could reflect habituation, satiety, fatigue, or other factors. The functional significance and relationship to value coding remain unclear and warrant further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Serotonergic neurons signal reward and punishment information on multiple timescales: tonic firing modulation over minutes during reward vs. punishment blocks, phasic excitation by punishments, and phasic excitation by reward-predicting cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 summarize the three main findings of the study. These summary claims are well-supported by the detailed results in claims C11-C40. The integration of tonic and phasic signals on different timescales represents a major conceptual advance, though the mechanisms and functional consequences require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Background claims about the serotonergic system: the dorsal raphe contains the majority of forebrain-projecting serotonergic neurons (~9000 in mice), projects widely to the forebrain, and contains diverse neuron types (about two-thirds serotonergic).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide background context supported by appropriate citations to prior literature. These are well-established facts in the field and provide necessary context for the study, though they are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The study recorded 149 dorsal raphe neurons (50 identified as serotonergic across 9 mice) and 28 VTA neurons (15 identified as dopaminergic across 4 mice), with all neurons meeting quality criteria (L-ratio < 0.05, SNR > 5 dB).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 describe the dataset composition and quality criteria. The sample sizes are adequate for the main conclusions, particularly for serotonergic neurons (50 identified across 9 mice). Quality criteria are appropriate. The smaller dopaminergic sample (15 identified) is sufficient for the comparison analyses performed.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,433 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The manuscript establishes the biological context of eIF2\u03b1 phosphorylation and dephosphorylation in the integrated stress response (ISR). eIF2\u03b1 phosphorylation by four kinases (PERK, HRI, PKR, GCN2) inhibits eIF2B, attenuating most mRNA translation while increasing translation of specific mRNAs, thereby activating the ISR. Dephosphorylation requires PP1 and regulatory subunits PPP1R15A (stress-inducible) or PPP1R15B (constitutive). Genetic evidence shows that both PPP1R15 isoforms are essential for cell survival, and this lethality can be rescued by the eIF2\u03b1 S51A mutation, demonstrating the narrow substrate specificity of PPP1R15 in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish well-documented background knowledge about the ISR pathway, supported by multiple citations to established literature (C11-C30). The genetic rescue experiment (C28-C30) provides strong evidence for PPP1R15 substrate specificity in vivo. This foundational context is essential for interpreting the novel findings presented later in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The conserved functional core of PPP1R15 is confined to ~70 C-terminal residues that are conserved across phyla and encoded by a separate exon. This region contains an RVxF motif important for PP1 binding and is the only region predicted to be ordered. C-terminal fragments limited to this conserved region (PPP1R15A 539-614 and PPP1R15B 631-700) are sufficient for ISR attenuation in cells, demonstrating that this minimal functional core conveys the information necessary for eIF2\u03b1P dephosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are directly supported by sequence alignments (Figure 1A,B), disorder prediction analysis (Figure 1\u2014figure supplement 2), and functional cell-based assays (Figure 1C). The convergence of bioinformatic analysis and functional validation provides strong evidence that the ~70 residue C-terminal region is both necessary and sufficient for PPP1R15 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Binary complexes of PPP1R15 and PP1 were successfully reconstituted from bacterial expression. The C-terminal functional core of PPP1R15 was fused to GST and co-expressed with untagged PP1. After purification and tag cleavage, the proteins co-eluted as a dimer (1:1 stoichiometry) by size exclusion chromatography. Both PPP1R15A and PPP1R15B formed stable complexes with PP1, but only PPP1R15B-PP1\u03b3 complexes yielded diffraction-quality crystals. Crystal structures were solved for three PPP1R15B constructs (631-660, 631-669, 631-684) in complex with PP1\u03b3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biochemical reconstitution is well-documented with size exclusion chromatography data (Figure 2A) and crystallographic statistics (Table 1). The successful structure determination of three different constructs provides robust structural information, though the authors note that full-length functional core complexes were relatively insoluble (C52), foreshadowing the need for additional factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The crystal structure of the PPP1R15B-PP1\u03b3 binary complex reveals that PPP1R15B (residues K639-W662) follows a trajectory along PP1\u03b3 similar to other regulatory subunits (spinophilin, PNUTS). The RVxF motif engages the PP1 backside, Y650 and I652 occupy positions similar to the \u03c6\u03c6 motif binding site, and R658 forms a salt bridge with PP1\u03b3 D71 in the 'Arg site'. Interactions are confined to residues conserved in all PP1 isoforms, explaining the lack of isoform preference. Residues C-terminal to W662 are disordered in the binary complex, suggesting they engage components missing from the binary complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural claims are directly supported by high-resolution crystal structures (1.55-1.85 \u00c5, Table 1) and electron density maps (Figure 2B-D). The structural comparisons with spinophilin and PNUTS are well-documented (C56-C60). The disorder of C-terminal residues (C63-C64) is a key observation that motivates the search for additional factors and is consistent with the low resolution of this region in the electron density.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Metal ion occupancy in the PP1\u03b3 active site varies among crystal forms. The 631-669 construct shows two metal ions (M1 and M2), while the 631-660 and 631-684 constructs show only the M2 metal ion. This suggests the M1 site is more labile than M2, providing different snapshots of metal ion occupancy. The binary complex has ~2800 \u00c5\u00b2 of buried surface area, consistent with high affinity binding between PPP1R15 and PP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The metal ion observations are documented in Figure 2\u2014figure supplement 1 and are consistent with previous PP1 structures showing variable M1 occupancy. The buried surface area calculation (C73) is a standard structural metric that supports the biochemical observation of tight complex formation. These are well-supported structural details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Surprisingly, PPP1R15-PP1 binary complexes reconstituted in vitro lack substrate selectivity. The binary complex dephosphorylates the non-specific substrate GSTP more rapidly than the specific substrate eIF2\u03b1P across multiple enzyme and substrate concentrations. At enzyme-limited concentrations (6.5-25 nM), GSTP (1.7 \u00b5M) was dephosphorylated faster than eIF2\u03b1P (2.8 \u00b5M). At substrate-limited concentrations (0.5-3 \u00b5M), GSTP was dephosphorylated threefold faster than eIF2\u03b1P. This lack of selectivity was observed for both PPP1R15A and PPP1R15B complexes and was strictly dependent on both subunits being present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a major unexpected finding supported by extensive kinetic data (Figure 3B-E, Figure 3\u2014figure supplements 1-2). The experiments are well-controlled with multiple substrate and enzyme concentrations, and the kinetics follow first-order behavior. The observation that the 'specific' phosphatase shows no selectivity in vitro is surprising and well-documented, motivating the search for missing factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Substrate selectivity of PPP1R15-PP1 binary complexes is restored by crude cell lysate. Mouse pancreas lysate selectively increased eIF2\u03b1P-directed phosphatase activity without affecting GSTP dephosphorylation. The stimulatory activity of lysate was reversed by cytochalasin D (which disrupts G-actin interactions) and antagonized by jasplakinolide (which promotes actin polymerization), suggesting that G-actin is the missing ingredient that endows the complex with substrate specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lysate complementation experiments (Figure 4A-C) provide strong biochemical evidence that a cellular factor is required for substrate specificity. The pharmacological experiments with cytochalasin D and jasplakinolide provide compelling evidence implicating actin, as these drugs have well-characterized effects on actin dynamics. This result bridges the gap between the non-selective binary complex and the selective cellular enzyme.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C92"
+    ],
+    "result": "Purified G-actin joins PPP1R15-PP1 to form a ternary complex that selectively dephosphorylates eIF2\u03b1P. Addition of latrunculin B-blocked G-actin selectively stimulated eIF2\u03b1P dephosphorylation by 13.7-fold (95% CI: 11.3-16.9) but had no positive effect on GSTP dephosphorylation. At physiologically relevant substrate concentrations (0.5-4 \u00b5M), G-actin accelerated eIF2\u03b1P dephosphorylation 16.5-fold (95% CI: 21.2-13.2). In the absence of actin, PPP1R15B failed to accelerate eIF2\u03b1P dephosphorylation over apo-PP1. The dephosphorylation proceeded as a first-order process obeying Michaelis-Menten kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central finding of the manuscript, supported by extensive kinetic data (Figure 4D-E, Figure 4\u2014figure supplement 1). The use of purified G-actin definitively identifies it as the missing factor. The quantification of cellular eIF2\u03b1 concentration (Figure 4\u2014figure supplement 2) allows physiologically relevant interpretation. The 16.5-fold stimulation with tight confidence intervals demonstrates robust substrate selectivity conferred by G-actin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The estimated concentration of eIF2\u03b1 in the cytosol of HEK 293T cells is 1.13 \u00b1 0.15 \u00b5M, determined by quantitative immunoblotting. This estimate agrees well with yeast data (0.95 \u00b5M calculated from Sui2p abundance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantification is based on calibrated immunoblotting (Figure 4\u2014figure supplement 2A,B) with appropriate controls and replicates. The agreement with yeast data provides independent validation. This measurement is important for establishing the physiological relevance of the substrate concentrations used in kinetic experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "G-actin inhibits dephosphorylation of non-specific substrates by the PPP1R15B-PP1 binary complex. Actin inhibited phosphorylase A dephosphorylation 3.1-fold (95% CI: 6.8-1.4) but had less effect on the unstructured substrate GSTP. This modest inhibitory effect is consistent with the shallow composite surface formed by the ternary complex, which would have limited negative impact on substrate accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inhibitory effect on phosphorylase A is documented in Figure 4E and Figure 4\u2014figure supplement 3. The differential effect on structured vs. unstructured substrates (C94) supports the interpretation that the ternary complex creates a substrate-binding platform. The modest magnitude of inhibition is consistent with the structural model and demonstrates that G-actin provides specificity through both positive (eIF2\u03b1P stimulation) and negative (phosphorylase A inhibition) effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "G-actin stimulates both PPP1R15A and PPP1R15B-containing binary complexes with similar potency. The EC50 for G-actin activation is <100 nM for both isoforms. Bovine serum albumin had no stimulatory effect, demonstrating specificity. Cytochalasin D and jasplakinolide reversed the stimulation by purified G-actin, confirming that the effect requires G-actin in its native conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dose-response curves (Figure 5A) demonstrate similar G-actin sensitivity for both PPP1R15 isoforms. The BSA control (Figure 5\u2014figure supplement 1) rules out non-specific protein effects. The pharmacological reversibility (Figure 5B,C) confirms that the stimulation requires G-actin's native structure and is consistent with the lysate experiments. The low EC50 (<100 nM) is physiologically relevant given cellular G-actin concentrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Mutagenesis of conserved residues in PPP1R15 that contact PP1 in the binary complex structure markedly impairs actin-mediated activation. Mutations R658A (PPP1R15B) or R571A (PPP1R15A) in the arginine pocket, and mutations W662A, F672A, and I676A (and their PPP1R15A counterparts) all showed attenuated response to G-actin in vitro. The severe R571A and W575A mutations also impaired ISR reversal in vivo, while weaker mutations (F585A, I589A) retained wildtype function in cells. These results indicate that actin's ability to confer substrate specificity depends on structural features of the ternary complex, not merely on anchoring PP1 to PPP1R15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutagenesis data (Figure 6, Figure 6\u2014figure supplement 1) provide strong structure-function validation. The normalization for baseline activity (ensuring comparable PP1 binding) is appropriate. The correlation between in vitro actin responsiveness and in vivo ISR function strengthens the conclusions. The interpretation that structural features beyond simple anchoring are important (C104) is well-supported by the data and consistent with prevailing models of PP1 holophosphatase specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "G-actin readily joins GST-PPP1R15-PP1 binary complexes to form stable ternary complexes with 1:1:1 stoichiometry. After GST cleavage, the ternary complex elutes at a position predicted for a trimer by size exclusion chromatography. In the ternary complex structure, PP1 and actin form an elongated flat object, with the C-terminal structured portion of PPP1R15B facing actin lobe IV, suggesting that the disordered C-terminal region (beyond W662) bridges the gap between actin and PP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biochemical assembly of the ternary complex is documented by size exclusion chromatography (Figure 7A, Figure 7\u2014figure supplement 1) showing 1:1:1 stoichiometry. The low-resolution crystal structure (7.9 \u00c5, Table 1) provides the overall architecture. While the resolution is insufficient to trace PPP1R15B beyond W662 (acknowledged in C110), the positioning of the structured portion facing actin lobe IV (C108) supports the model that the disordered region interacts with actin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C137"
+    ],
+    "result": "In the ternary complex structure, actin contributes to a platform encompassing the PP1 active site. The most significant difference density feature is observed in the cleft between actin domains I and III (the barbed end), suggesting PPP1R15B extends to engage this site. The C-terminal-most residues (F696-Q700 in PPP1R15B, W609-R613 in PPP1R15A) can be modeled as an amphipathic helix similar to other G-actin barbed end-binding proteins. Deletion of these five C-terminal residues abrogates actin-mediated acceleration of eIF2\u03b1P dephosphorylation in vitro. The active site is positioned at the bottom of a shallow platform constituted by actin and PP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural interpretation is supported by the 7.9 \u00c5 ternary complex structure (Figure 7B,C) and difference density maps. The amphipathic helix model (Figure 7C,D) is based on comparison with known G-actin binding proteins and is consistent with the difference density. The deletion experiment (Figure 7E,F) provides strong functional validation that these C-terminal residues are essential for actin-mediated activation. The platform model (C137) integrates the structural and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Actin lobe II faces away from PP1 in the ternary complex, and its D-loop is predicted to be free to engage other ligands. DNase I, which binds actin's D-loop with high affinity, readily joins the ternary complex to form a quaternary complex. DNase I binds to the backside of the ternary complex and does not disrupt access to the PP1 active site. A quaternary complex of PPP1R15A-PP1\u03b3-Actin-DNaseI retained its ability to dephosphorylate eIF2\u03b1P.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DNase I experiments (Figure 7\u2014figure supplement 2) provide elegant validation of the ternary complex structure. The ability to form a quaternary complex and retain activity demonstrates that the D-loop is accessible and that DNase I binding does not interfere with catalysis. This supports the structural model and shows that the actin in the complex retains its native fold.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Computational docking using HADDOCK reveals that the platform formed between actin lobe IV and the catalytic face of PP1 can accommodate the N-terminal lobe of eIF2\u03b1 with phospho-S51 positioned near the active site metal ions. The docking model predicts specific polar contacts: eIF2\u03b1 K66 and K86 with PP1 D220, eIF2\u03b1 E92 with PP1 K211, and hydrogen bonding between eIF2\u03b1 R74 and D83 with actin D222 and N225.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational docking (Figure 8A) provides a plausible model for substrate engagement that is consistent with the ternary complex structure. While computational docking has inherent uncertainties, the predicted contacts are testable by mutagenesis. The model is reasonable given the constraints of positioning phospho-S51 near the active site while maintaining the overall architecture observed in the crystal structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C123",
+      "C124",
+      "C138"
+    ],
+    "result": "Mutagenesis of predicted substrate-contacting residues enfeebles dephosphorylation, supporting the docking model. The eIF2\u03b1 R66E;K86E double mutant was compromised ~2-fold as a substrate of the binary complex but >10-fold as a substrate of the ternary complex. The R74E mutation, affecting a predicted contact to G-actin, was selectively compromised in its ability to serve as a substrate of the ternary complex. These mutations enfeeble dephosphorylation by the specific ternary complex more than by the binary complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The substrate mutagenesis experiments (Figure 8B, Figure 8\u2014figure supplement 2) provide strong validation of the docking model. The differential effects on binary vs. ternary complex activity (C123, C124) are particularly compelling, as they demonstrate that the predicted contacts are specifically important for the actin-dependent mechanism. The specificity factor calculation normalizes for baseline effects and shows that R74E specifically affects ternary complex function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C125",
+      "C126",
+      "C139"
+    ],
+    "result": "Reciprocal mutagenesis of PP1 supports the importance of substrate contacts. The PP1\u03b3 D220K mutation has no measurable effect on dephosphorylation of the non-specific substrate GSTP but reproducibly weakens dephosphorylation of eIF2\u03b1P. Together, these observations support a model whereby the composite surface of actin and PP1, held together by PPP1R15, cooperatively engages its substrate to provide specificity through enhanced affinity of binding (avidity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PP1 mutagenesis (Figure 8C,D) provides reciprocal validation of the predicted eIF2\u03b1-PP1 contacts. The selective effect on eIF2\u03b1P vs. GSTP (C125-C126) demonstrates substrate specificity. The avidity model (C10, C139) is well-supported by the combined structural, computational, and mutagenesis data. This model explains how multiple weak interactions on the composite surface provide specificity through cooperative binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The study establishes that G-actin provides the necessary substrate specificity to the PPP1R15-PP1 complex for eIF2\u03b1P dephosphorylation, which is the non-redundant essential function of the PPP1R15 family. This critical role is consistent with G-actin's emergence as a conserved binding partner of PPP1R15 across phyla and with evidence that manipulations diminishing free G-actin promote higher levels of phosphorylated eIF2\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central conclusion of the manuscript, integrating the biochemical, structural, and functional data. The genetic evidence for PPP1R15's essential function (C127) is established from prior work. The demonstration that G-actin provides specificity (C128) is the major novel finding, supported by extensive data. The consistency with evolutionary conservation and cellular studies (C129-C130, citing Chambers et al., 2015) strengthens the biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The functional core of PPP1R15 is natively unstructured and attains structure by wrapping around PP1. Binary complexes containing the entire functional core require actin for stability and solubility. Mutagenesis and deletion studies suggest the C-terminal portion plays an important role in actin-mediated substrate-specific dephosphorylation. Deletion of the predicted amphipathic helical region impairs activation by actin in vitro and destabilizes actin association in vivo. Together, the data suggest two complementary roles for actin: stabilizing the PPP1R15-PP1 complex and endowing it with substrate specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dual role model (C136) is well-supported by the combined biochemical (C132), mutagenesis (C133), and deletion (C134-C135) data. The observation that full-length functional core complexes require actin for solubility (C132) is an important biochemical finding that complements the functional data. The integration of in vitro and in vivo data (citing Chambers et al., 2015) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Bacterially-expressed PP1 has more promiscuous phosphatase activity than enzyme purified from natural sources, suggesting the extent to which G-actin biases against dephosphorylation of other substrates may be underestimated. Given that free PP1 in cells is believed to be low, the dramatic increase in PPP1R15A levels in stressed cells may have consequences for both enhanced eIF2\u03b1P dephosphorylation and diminished dephosphorylation of other substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative interpretations (C143, C145) about potential broader implications. While the observation about bacterially-expressed PP1 is supported by citations (C143), the functional consequences in cells (C145) are speculative and would require additional experiments to test. The speculation is reasonable but not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The EC50 of G-actin for activation is <100 nM for both PPP1R15 isoforms. Under most circumstances G-actin may not be limiting to holophosphatase formation. However, given the abundance of cellular G-actin-binding proteins that compete for the barbed end, in some circumstances G-actin availability may be limiting to holophosphatase formation and actin dynamics may be coupled to eIF2\u03b1P dephosphorylation. A precedent exists in the regulation of serum response factor (SRF) by G-actin availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EC50 measurement (C146) is well-documented in Figure 5A. The speculation about G-actin limitation (C147, C149) is reasonable given the low EC50 and the known abundance of competing G-actin binding proteins. The SRF precedent (C148) provides support for the biological plausibility of G-actin-mediated regulation. However, whether G-actin is actually limiting in cells under physiological conditions remains to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The eIF2\u03b1 phosphorylation-dependent ISR strongly affects memory formation, and actin dynamics are important in synaptogenesis. The authors speculate that localized changes in G-actin levels may modulate levels of phosphorylated eIF2 and protein synthesis through localized changes in holophosphatase activity in the dynamic synapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The background claims about ISR in memory and actin in synaptogenesis (C150-C151) are supported by citations. However, the speculation about localized regulation in synapses (C152) is not tested in this study. While this is an interesting hypothesis that connects the findings to neurobiology, it remains speculative and would require additional experiments in neuronal systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The ISR plays an important role in ER protein folding homeostasis, where PERK-mediated eIF2\u03b1 phosphorylation limits protein influx. The capacity to reverse this by dephosphorylation is essential for cell survival. Under severe stress, PPP1R15A induction overshoots, such that genetic or pharmacological attenuation is protective. The authors propose that small molecules engaging the composite actin-PP1 surface might serve as specific inhibitors of eIF2\u03b1P dephosphorylation without affecting other PP1 holophosphatases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The background on ISR in ER stress (C153-C154) and the essential nature of dephosphorylation (C155) are well-established and supported by citations. The observation about PPP1R15A overshooting under severe stress (C156) is supported by multiple citations. The therapeutic proposal (C157) is speculative but reasonable given the structural findings showing a unique composite surface. However, developing such inhibitors would require extensive additional work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Viruses have co-opted PPP1R15, presumably to neutralize the effects of host PKR, and conservation amongst viral proteins is confined to the same 70 residue stretch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conservation in viral proteins (C36) is documented in the sequence alignments (Figure 1B). The presumed function to neutralize PKR (C35) is supported by citations (He et al., 1996, 1997) but is stated as presumptive. This is a reasonable interpretation of the evolutionary data but the specific mechanism would require additional validation.",
+    "result_type": "MINOR"
+  }
+]

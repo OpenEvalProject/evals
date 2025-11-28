@@ -1,0 +1,1524 @@
+{
+  "submission": {
+    "id": "512eb7e7-344a-4f88-ba11-6927070e9642",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:44:21.702680Z",
+    "updated_at": "2025-11-28T19:44:21.702680Z"
+  },
+  "content": [
+    {
+      "id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "submission_id": "512eb7e7-344a-4f88-ba11-6927070e9642",
+      "content_type": "manuscript",
+      "content_text": "# Nanoscale protein architecture of the kidney glomerular basement membrane\n\n## Authors\n\n- Hani Suleiman<sup>1</sup>\n- Lei Zhang<sup>1</sup>\n- Robyn Roth<sup>2</sup>\n- John E Heuser<sup>2</sup>\n- Jeffrey H Miner<sup>2</sup> \u2020\n- Andrey S Shaw<sup>1</sup> \u2020\n- Adish Dani<sup>1</sup>\n\n### Affiliations\n\n1. Department of Pathology and Immunology Washington University School of Medicine St. Louis United States\n2. Department of Cell Biology and Physiology Washington University School of Medicine St. Louis United States\n3. Renal Division, Department of Medicine Washington University School of Medicine St. Louis United States\n4. Howard Hughes Medical Institute, Washington University School of Medicine St. Louis United States\n5. Hope Center for Neurological Disorders Washington University School of Medicine St. Louis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn multicellular organisms, proteins of the extracellular matrix (ECM) play structural and functional roles in essentially all organs, so understanding ECM protein organization in health and disease remains an important goal. Here, we used sub-diffraction resolution stochastic optical reconstruction microscopy (STORM) to resolve the in situ molecular organization of proteins within the kidney glomerular basement membrane (GBM), an essential mediator of glomerular ultrafiltration. Using multichannel STORM and STORM-electron microscopy correlation, we constructed a molecular reference frame that revealed a laminar organization of ECM proteins within the GBM. Separate analyses of domains near the N- and C-termini of agrin, laminin, and collagen IV in mouse and human GBM revealed a highly oriented macromolecular organization. Our analysis also revealed disruptions in this GBM architecture in a mouse model of Alport syndrome. These results provide the first nanoscopic glimpse into the organization of a complex ECM.\n\n## Introduction\n\nKidney glomeruli are specialized capillary tufts responsible for filtration. They contain the glomerular filtration barrier (GFB), an intricate structure that constitutes the permselective barrier between the bloodstream and the urine. The GFB is organized into three major layers: (1) endothelial cells with fenestrations that line the glomerular capillaries; (2) unique epithelial cells called podocytes that extend many \u2018foot\u2019 processes that interdigitate with those of adjacent podocytes and are linked to each other via a specialized cell/cell junction called the slit diaphragm; and (3) the glomerular basement membrane (GBM), which is composed of extracellular matrix (ECM) proteins secreted by the endothelial cells and podocytes that flank it (Miner, 2011). The GFB\u2019s major physiological role is to allow the unimpeded passage of water and small solutes (including metabolic waste products) from the bloodstream into the urinary space, while restricting the passage of plasma proteins such as albumin and immunoglobulins. Although the exact mechanism whereby the GFB functions in this manner is the subject of much controversy, it is clear that injuries or genetic defects in any one of the three layers can cause GFB malfunction that results in increased levels of protein in the urine, a hallmark of diverse kidney diseases. In this study we focus on the ultrastructure and molecular organization of the GBM and its connections to podocytes and endothelial cells.\n\nThe GBM contains specific isoforms of laminin (laminin \u03b15\u03b22\u03b31, or LM-521), type IV collagen (primarily the collagen \u03b13\u03b14\u03b15(IV) network), heparan sulfate proteoglycan (HSPG) (primarily agrin), and nidogen (Miner, 2012). Laminin and type IV collagen self-polymerize into networks that are connected to each other and/or to cell surface receptors by HSPGs and nidogen; in addition, some receptors can bind directly to laminin or type IV collagen (Yurchenco et al., 2004). A great number of biochemical studies of ECM proteins have revealed the molecular basis for their self-assembly and interactions with each other and with cellular receptors (reviewed in Yurchenco, 2011), and detailed structures are available for specific domains of several ECM proteins (Khoshnoodi et al., 2006; Carafoli et al., 2012). However, a systematic analysis of the actual spatial arrangement of ECM components within basement membranes, with respect to each other and to their receptors, has not yet been performed in vivo.\n\nStudying the molecular architecture of ECM protein arrangement poses particular challenges in the context of the GBM. First, the GFB with the GBM cannot yet be reconstituted in vitro. Second, the \u223c200-nm thickness of a typical mouse GBM is close to the diffraction limited resolution of conventional light microscopy, thus preventing its use to analyze GBM ultrastructural and macromolecular organization. Transmission electron microscopy (EM) studies show electron dense and translucent layers (lamina densa and lamina lucida), but it is unclear whether these reflect an organization of proteins in the GBM (Chan et al., 1993). The ability to decipher ECM protein organization thus will require methods with nanometer resolution and high efficiency molecular labeling.\n\nRecently, the invention of \u2018super-resolution\u2019 light microscopic approaches have broken the diffraction limit of light microscopy, combining a nanoscopic image resolution with several advantages of fluorescence microscopy, such as high efficiency and multi-color labeling (reviewed in Huang et al., 2009; Ji et al., 2008; Hell, 2009). In particular, single molecule localization-based imaging methods such as (fluorescence) photoactivable localization microscopy ((F)PALM) and stochastic optical reconstruction microscopy (STORM) (Betzig et al., 2006; Hess et al., 2006; Rust et al., 2006) achieve a molecular scale resolution that can bridge our understanding of supramolecular complexes from the molecular/biochemical to the cellular scales. The strength of various sub-diffraction microscopy methods to dissect the nanoscale architecture of multi-protein complexes has been exemplified recently in the case of neuronal synapses (Dani et al., 2010), adhesion complexes (Kanchanawong et al., 2010), centrosomes (Lau et al., 2012; Lawo et al., 2012; Mennella et al., 2012) and the nuclear pore complex (Szymborska et al., 2013).\n\nGiven the importance of ECM proteins in tissue morphogenesis and in diverse human diseases (Miner and Yurchenco, 2004), in this study we investigated the ECM protein organization within the GBM. Using a panel of antibodies, we performed 3D, multichannel STORM in kidney sections and determined the positions of well-defined protein epitopes with nanometer precision. Our data reveal that the GBM is composed of two layers of laminin and agrin molecules, with their N terminal domains oriented towards the center of the GBM. Using transgenic mice expressing a human laminin chain we observed a striking difference in laminin dynamics within the GBM. Results from our imaging approach provide an in situ model of GBM supramolecular organization and align remarkably well with biochemical interactions gleaned from in vitro studies. Finally, we observed distinct distributions of collagen IV molecules and their disruption in a mouse model of Alport syndrome, a hereditary disease of the GBM caused by collagen IV mutations.\n\n## Results\n\n### Imaging the glomerular filtration barrier ultrastructure with STORM and STORM/deep-etch electron microscopy correlation\n\nTo reveal supramolecular organization within the GBM, we performed STORM on glomeruli in kidney sections using antibodies conjugated to Alexa 647, a bright fluorescent photoswitchable dye (Bates et al., 2007; Dani et al., 2010). The dense protein network within the GBM results in a higher fluorescence background and significant light scattering. This poses a major hurdle in obtaining high resolution STORM data from kidney sections. We therefore optimized the fixation and tissue sectioning methods extensively. These preliminary studies established that a modification of the Tokuyasu method of cryo-embedding and cryosectioning at 200 nanometers (nm) thickness was optimal (Tokuyasu, 1973).\n\nWe began with studies of agrin, a \u223c200 kDa protein that is the major HSPG component of the GBM (Groffen et al., 1998). Agrin\u2019s N-terminus (agrinN) binds to laminin via the laminin \u03b31 chain\u2019s coiled-coil domain (Kammerer et al., 1999), whereas agrin\u2019s C-terminus (agrinC) binds to integrins and dystroglycan (Singhal and Martin, 2011), receptors present on both podocytes and endothelial cells. To investigate agrin\u2019s organization in the GBM, we first labeled kidney sections with an antibody to agrinC. In contrast to conventional immunofluorescence images of agrin, STORM resolved two distinct layers of agrinC within the GBM (Figure 1A,B). To quantitatively document agrinC\u2019s distribution, we digitally selected multiple regions across glomeruli. AgrinC localizations in each region were fitted with a double Gaussian distribution, and the mid-position between the peaks was identified from each image and used as a reference to align subsequent regions. The cumulative localizations obtained from 80 regions are displayed as a histogram (Figure 1C). The gap between agrinC layers, measured as the peak-to-peak distance, showed a mean of 137.9 nm \u00b1 1.9 nm standard error of mean (SEM) for the 80 regions; the distance was 132.7 nm (\u00b10.9 nm) across more than 600 GBM regions (Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01149/elife-01149-fig1-v1.jpg)\n\n**Figure 1.:** Conventional fluorescence (A) and STORM (B) images of a kidney glomerular capillary loop labeled with an antibody to agrin. (C) Projection histogram of agrin STORM localizations accumulated from 80 different capillary regions. (D) AgrinC peak-to-peak distance measured across 604 regions in this study. (E and F) 2-color STORM and quantification of agrinC and podocaylxin labeling along a capillary region. (G) Platinum deep etch replica prepared from the section shown in (E) and imaged by EM. (H) Overlay of the STORM and EM images shows ultrastructural features such as podocyte foot processes (fp), endothelial cells (en) and the GBM. Podocalyxin labeling is seen along the foot process periphery and agrin localization within the GBM. Figure 1\u2014figure supplement 1 shows a wide field podocalyxin-agrin STORM image overlayed with its EM correlation and Figure 1\u2014figure supplement 2 shows a schematic overview of the STORM\u2013EM correlation procedure. (I and J) Immuno-gold labeling and platinum replica EM from a kidney section confirm podocalyxin localization to the fp and en sides (I) and agrinC localization in two layers in the GBM (J). Figure 1\u2014figure supplement 3 shows a STORM image and histogram of two separate antibodies labeling the C-terminus end of agrin.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01149/elife-01149-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Wide-field STORM image of a kidney section labeled with podocalyxin and agrinC, overlaid with a platinum deep etch replica EM image obtained from the same section. Podocyte cell bodies and capillary loops are marked and the blue boxed region is zoomed in Figure 1E\u2013H. Yellow boxes are examples of capillary loop regions used to quantify localizations.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01149/elife-01149-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Schematic of the STORM\u2013EM correlation procedure consisting of the following steps: (1) glass coverslip is coated with carbon and glow discharged, (2) Tokuyasu cryo-sections are collected on the carbon coated coverslip surface, (3) immunolabeled sections are inverted onto a glass slide containing STORM imaging buffer and coverslip edges sealed with nail polish. After STORM image acquisition on an inverted microscope (4), nail polish and coverslips are removed, fixed with 2% glutaraldehyde (5). (6) Coverslips are quick frozen and coated with platinum/carbon followed by dissolving the glass and tissue underneath the carbon. (7) Carbon films with platinum replicas are imaged by EM after transferring to a grid. (8) STORM and EM images are superimposed.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01149/elife-01149-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** STORM image and projection histogram of two separate antibodies labeling the C-terminus end of agrin. Scale bar: 200 nm.\n\nWe next imaged the relationship between the GBM and the flanking podocytes and endothelial cells by double labeling with antibodies to agrinC and to the sialoprotein podocalyxin, which is expressed on the surfaces of both endothelial cells and podocytes (Kerjaschki et al., 1984). Dual channel STORM imaging showed that the two layers of agrinC were indeed localized between two layers of podocalyxin (Figure 1E,F and Figure 1\u2014figure supplement 1). To further correlate the STORM molecular localizations, we developed a hybrid STORM-electron microscopy (EM) approach (see schematic in Figure 1\u2014figure supplement 2). After performing STORM, tissue sections attached to the cover glass were subjected to quick-freezing followed by platinum deep-etching (Heuser, 1981). The tissue and cover glass underlying the platinum replicas were dissolved, and the replicas were transferred to a grid for examination by EM (Figure 1G). Superimposition of the podocalyxin-agrinC STORM image with deep-etch EM confirmed that podocalyxin labeled endothelial cells as well as podocytes, while agrin was localized to the GBM (Figure 1H). The STORM\u2013EM correlation also confirmed that ultrastructural features of the GFB such as podocyte foot processes and the GBM were well-preserved.\n\nLastly, we confirmed these results using immunogold labeling and electron microscopy (EM). Kidney Tokuyasu sections labeled with anti-podocalyxin and anti-agrinC were initially detected using gold-conjugated secondary antibodies followed by deep-etch EM. Similar to its STORM localizations, anti-podocalyxin labeled both podocyte foot process and endothelial membranes (Figure 1I), but initial attempts to detect agrinC resulted in very sparse labeling. We postulated that the gold-labeled secondary antibody might not efficiently penetrate the GBM. To circumvent this problem, we used a third antibody (goat anti-rabbit) to bridge the primary antibody (rabbit anti-agrinC) and the gold-conjugated antibody (anti-goat). Images generated using this method confirmed the two agrin layers in the GBM (Figure 1J). These data validate the STORM localizations obtained on kidney sections and also confirm the challenges associated with achieving high efficiency immunogold labeling on a highly cross-linked structure such as the GBM.\n\n### Positioning molecules within the GBM\n\nHaving established methods for tissue preparation, STORM imaging, and EM correlation, we decided to analyze the molecular organization of the GBM by comparing the positions of various ECM components to each other. Taking advantage of the robust and bimodal distribution of agrinC, we used a localization scheme in which the center position between the two agrinC layers was set as the origin, and the position of a second protein, imaged along with agrinC by 2-color STORM, was plotted on a reference frame that was marked by the agrinC positions at \u221268.9 and +68.9 \u00b1 0.9 nm towards the endothelial and podocyte sides, respectively. By iterating this procedure across multiple regions and glomeruli, we could determine the position of various protein epitopes across the GBM with a high degree of precision. The various ECM proteins and their epitopes mapped in this study are illustrated in Figure 2\u2014figure supplement 1.\n\n#### Agrin\n\nWe tested the validity and the sensitivity of our approach by using two additional antibodies against agrin. First, we found that the localization and distribution of two different antibodies to agrinC were nearly identical (Figure 1\u2014figure supplement 3). In contrast, co-labeling with antibodies to agrinN and agrinC showed that agrinN was present in two layers that were shifted slightly internally to the two agrinC layers, with center positions at \u221257.5 \u00b1 2.8 nm and 50.2 \u00b1 3.28 nm (Figure 2A). This suggests that agrin is oriented either perpendicular or oblique to the plane of the GBM with the C-terminus nearest the adjacent cells, and the N-terminus, which binds the coiled-coil domain of laminin \u03b31, closer to the center of the GBM. The orientation and mapping of agrinC and agrinN to different locations within the GBM is consistent with the distinct molecular interactions of the two agrin domains as well as the \u223c95 nm extended conformation of agrin visualized by EM (Denzer et al., 1998).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01149/elife-01149-fig2-v1.jpg)\n\n**Figure 2.:** Two channel STORM of agrinC along with antibodies to agrinN (A), the integrin \u03b21 extracellular domain (B), laminin \u03b22-LF domain (C) and laminin \u03b15-LEb/L4b domain (D). Sections from transgenic mice expressing hLaminin \u03b15 either from podocytes (E), or from endothelial cells (F) were labeled using an antibody against the human laminin \u03b15-LG domain along with agrinC. Representative STORM images are displayed along with projection histograms of STORM localizations quantified across several regions. Figure 2\u2014figure supplement 1 illustrates domains of ECM molecules mapped in this study and Figure 2\u2014figure supplement 2 is a STORM image and histogram of laminin \u03b22-LF along with integrin \u03b21. Scale bar: 200 nm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01149/elife-01149-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Illustration of ECM molecule epitopes mapped by antibodies used in this study. Glycosaminoglycan (GAG) chains attached to agrin are shown. The asterisk indicates the approximate binding site for the agrin N-terminal domain (NtA) on laminin \u03b31.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01149/elife-01149-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** STORM image and projection histogram of laminin \u03b22 along with integrin \u03b21 antibody. Scale bar: 200 nm.\n\n#### Integrin \u03b21\n\nWe next investigated the position of integrin \u03b21, the major integrin \u03b2 subunit expressed by both podocytes and endothelial cells (Kreidberg and Symons, 2000). Integrin \u03b21 interacts with agrinC (Martin and Sanes, 1997) (and with laminin; see below). Using an antibody that recognizes an extracellular epitope (Bazzoni et al., 1995), we observed two layers of integrin \u03b21 that showed considerable overlap with agrinC (Figure 2B). The center positions of each integrin layer were calculated at -79.6 \u00b1 3.3 nm towards the endothelial side and 77.1 \u00b1 3.4 nm towards the podocyte side. The histograms as well as the center positions of integrin \u03b21 indicate a distribution that closely overlaps with agrinC, with a slight outward shift towards the cell membranes.\n\n#### Laminin-521\n\nLM-521 is a cross-shaped heterotrimer that polymerizes in the ECM via interactions among the N-terminal (LN) domains of the \u03b15, \u03b22, and \u03b31 chains found at the ends of the short arms (McKee et al., 2007). LM-521 binds to cell surface receptors, such as integrin \u03b13\u03b21, via the laminin globular (LG) domain of the \u03b15 chain (Ido et al., 2004) (Figure 2\u2014figure supplement 1). To localize and orient LM-521 in the GBM, we first used an antibody that recognizes the LF domain of laminin \u03b22 (LM\u03b22-LF), which is near the center of the laminin heterotrimer. Co-labeling with anti-agrinC showed that LM\u03b22-LF localized between the agrinC layers at \u22123.2 \u00b1 2.5 nm (Figure 2C). Co-labeling with anti-integrin \u03b21 gave a LM\u03b22-LF position that was identical to that determined from the anti-agrinC co-labeling experiment (Figure 2\u2014figure supplement 2) demonstrating the precision of the methodology. Next, we labeled the short arm of laminin \u03b15 using an antibody raised against the LEb/L4b domain tandem (LM\u03b15-LEb/L4b), also near the center of the heterotrimer. Similar to LM\u03b22-LF, the position of LM\u03b15-LEb/L4b also mapped in the middle of the GBM, at \u22121.8 \u00b1 3.6 nm (Figure 2D).\n\nThe span between the N- and C-termini of laminin \u03b15 forms the long \u2018vertical\u2019 axis of the LM-521 cruciform trimer. Based on data from electron micrographs and crystal structures of various laminin domains, this axis is estimated to be 130 to 150 nm, while the horizontal axis, composed of the \u03b22 and \u03b31 short arms, spans 70 to 80 nm (Beck et al., 1990; Yurchenco and Cheng, 1993; Sasaki et al., 2004). Our findings that the short arm epitopes from laminin \u03b15 and \u03b22 were located in the middle of the GBM prompted us to investigate the position of the C-terminal LG domain, which binds cell surface receptors such as integrins, dystroglycan, and the Lutheran cell adhesion molecule (Miner, 2005). Because we did not possess an antibody to the mouse LG domain, we made use of transgenic mice with doxycycline-inducible expression of human laminin \u03b15, which assembles with mouse laminin \u03b22 and \u03b31 to generate a functional chimeric human/mouse LM-521 trimer (Goldberg et al., 2010).\n\nTransgenic mice in which human laminin \u03b15 was expressed either from podocytes or from endothelial cells were analyzed. As endogenous laminin \u03b15 has been shown to be synthesized by both cell types (St John and Abrahamson, 2001), this is a physiologically relevant approach. An antibody to the C-terminal LG domain of human laminin \u03b15 (Engvall et al., 1986; Tiger et al., 1997) labeled the aspect of the GBM nearest the cell from which laminin \u03b15 was secreted (Figure 2E,F). The positions of the LM\u03b15-LG domain were calculated at 88.3 \u00b1 3.07 nm towards the podocyte side and \u221284.7 \u00b1 6.7 nm towards the endothelial side. Together with the data for LM\u03b15-LEb/L4b (Figure 2D), this shows that LM-521 trimers are oriented with their C-terminal LG domains near the outer aspects of the GBM and their N-terminal domains towards the center of the GBM. The most straightforward interpretation is that the GBM\u2019s laminin component is divided into two networks, one produced by podocytes and the other by endothelial cells. The single band seen with the N-terminal antibody in the center of the GBM occurred because the two networks either overlap or are so close to each other that they are indistinguishable by STORM. In the vast majority of glomeruli, we observed that neither podocyte- nor endothelium-derived LM-521 crossed/flipped over, demonstrating that there is limited mobility of laminin trimers across the thickness of the GBM. A similar conclusion was also reported for the endogenous laminin trimer using a different method (Abrahamson et al., 2007).\n\n#### Collagen IV\n\nCollagen IV chains contain a long collagenous domain composed of interrupted Gly-X-Y amino acid triplet repeats situated between non-collagenous N-terminal (7S) and C-terminal (NC1) domains (Hudson et al., 2003). These chains assemble intracellularly into \u223c400 nm long triple helical heterotrimers (also known as protomers) that are secreted into the ECM, where they polymerize via hexameric NC1 and dodecameric 7S interactions to form a chicken wire-like network one to several chains thick (Khoshnoodi et al., 2008). The main collagen IV network of the adult GBM consists of collagen \u03b13\u03b14\u03b15(IV) protomers, which are secreted solely by podocytes (Abrahamson et al., 2009). The details regarding how collagen IV protomers align in the healthy GBM are unexplored.\n\nWe used two antibodies to collagen \u03b13\u03b14\u03b15(IV), one against the assembled hexameric C-terminal NC1 domains (Heidet et al., 2003) and a second against an epitope close to the N-terminus (\u2018peri-N\u2019) of the collagen \u03b15(IV) chain (Kagawa et al., 1997). STORM localization of these two disparate epitopes in comparison to agrinC showed that both collagen IV epitopes were broadly distributed within the GBM, with positions concentrated close to the center of the GBM, at 12.5 \u00b1 7.2 nm for NC1 and 11.92 \u00b1 3.4 nm for the peri-N epitope (Figure 3A,B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01149/elife-01149-fig3-v1.jpg)\n\n**Figure 3.:** STORM localization of collagen \u03b13\u03b14\u03b15 (IV)-NC1 (A) and collagen \u03b13\u03b14\u03b15 (IV)-periN (B) domains along with agrinC show the position of the collagen \u03b13\u03b14\u03b15 (IV) network towards the center of the GBM. In contrast, collagen \u03b11\u03b11\u03b12 (IV) labeling (C) is restricted to the endothelial side of the GBM. (D) Nidogen localizes in the center of the GBM. Scale bar: 200 nm.\n\nIn developing glomeruli, collagen \u03b11\u03b11\u03b12(IV) is the major collagen IV isoform. In the mature GBM, \u03b11\u03b11\u03b12(IV) is down regulated and mostly replaced by \u03b13\u03b14\u03b15(IV) (Miner and Sanes, 1994). However, since \u03b11\u03b11\u03b12(IV) persists at a low level in the adult GBM and is prominent in most other endothelial BMs, we were interested to localize it in relationship to \u03b13\u03b14\u03b15(IV). Collagen \u03b11\u03b11\u03b12(IV) localized close to the endothelial side of the GBM with a center position at \u221259.5 \u00b1 5.2 nm (Figure 3C), consistent with its known synthesis by endothelial cells (Heidet et al., 2000). Importantly, collagen \u03b11\u03b11\u03b12(IV) and \u03b13\u03b14\u03b15(IV) showed distinct distributions within the GBM.\n\n#### Nidogen\n\nIn all basement membranes, the collagen IV network is thought to be cross-linked to the laminin network by nidogen, a 150 kDa dumbbell-shaped glycoprotein that binds to the LEb domain of laminin \u03b31 and to the collagenous domain of collagen \u03b11\u03b11\u03b12(IV) (Aumailley et al., 1989). This view of nidogen as a cross-linker, however, has recently been challenged (Behrens et al., 2012). Staining with anti-nidogen localized it to the center of the GBM, with a position of \u22120.22 \u00b1 3.9 nm, close to both collagen \u03b13\u03b14\u03b15(IV) and LM-521 epitopes (Figure 3D). While this is consistent with its role as a potential cross-linker, the lack of molecular details about the interactions between nidogen and collagen \u03b13\u03b14\u03b15(IV) and a lack of information of the exact nidogen epitope studied limit any further interpretation. The positions of various mouse ECM protein epitopes are represented graphically in Figure 4.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01149/elife-01149-fig4-v1.jpg)\n\n**Figure 4.:** A map of axial positions of various GBM protein domains obtained from STORM imaging in this study. For each protein, the colored dot specifies the mean axial position; the two vertical lines represent the standard error of the mean, and the half-length of the horizontal bar denotes the standard deviation.\n\n### The organization of the human GBM\n\nThe human GBM seems to be composed of components that are orthologous to those in mouse, but it is at least two times thicker than the mouse GBM. We therefore attempted to map ECM protein epitopes within the human GBM to better understand its architecture and compare with the mouse GBM. We first labeled the integrin \u03b21 ectodomain along with agrinC and observed that, similar to mouse GBM, both protein epitopes localized along the endothelial and podocyte surfaces of the human GBM (Figure 5A,B). It is notable that significantly more agrinC was detected at the podocyte vs the endothelial aspect (Figure 5B); this could be due to either epitope masking or differences in expression. The peak-to-peak distance of integrin \u03b21 was measured to be 428 \u00b1 14.4 nm, consistent with the known thickness of the human GBM. Given these data, and since two separate anti-integrin \u03b21 antibodies showed similar distributions (Figure 5\u2014figure supplement 1), we selected integrin \u03b21 as a reference and mapped laminin and collagen IV epitopes. We observed that the anti-LM\u03b15-LG epitope labeled two layers close to the endothelial and podocyte sides of the GBM in a location near the integrin \u03b21 epitope (Figure 5C). However, unlike the mouse, where LM\u03b15-LG was restricted to the two sides of the GBM, in human we also observed LM\u03b15-LG towards the central aspect of the GBM. STORM\u2013EM correlation confirmed that the human GBM was intact and the GBM central LM\u03b15-LG localizations could not arise due a poorly preserved GBM or sectioning artifact (Figure 5\u2014figure supplement 2). Given the inability of cell surface receptors to interact with LM\u03b15-LG domains in these internal sites, it is not clear how internal LM-521 molecules would be organized. We speculate that LN domain interactions with the subepithelial and subendothelial LM-521 networks could be involved.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01149/elife-01149-fig5-v1.jpg)\n\n**Figure 5.:** (A) Single channel STORM of integrin \u03b21-labeled human GBM sections. Figure 5\u2014figure supplement 1 shows two channel STORM using two different integrin \u03b21 antibodies. Human kidney sections were labeled with antibodies to integrin \u03b21 ectodomain and: agrinC (B), laminin \u03b15 (LG) (C), collagen \u03b11\u03b11\u03b12 (IV) (D), collagen \u03b13\u03b14\u03b15 (IV)-NC1 (E) and collagen \u03b13\u03b14\u03b15 (IV)-periN (F). Figure 5\u2014figure supplement 2 shows anti-laminin \u03b15-LG labeling of the human GBM and a replica EM image of the same section. Figure 5\u2014figure supplement 3 shows anti-collagen \u03b11\u03b11\u03b12(IV) and collagen \u03b13\u03b14\u03b15 (IV)-NC1 labeling of a human GBM region. Scale bar: 200 nm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01149/elife-01149-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Double channel STORM using two different integrin \u03b21 antibodies to label human GBM sections (MAB13: blue, TS2/16: red). The projection histogram reveals a peak-to-peak distance of \u223c400 nm. Scale bar: 200 nm.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01149/elife-01149-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A and B) STORM image of laminin \u03b15-LG labeling of the human GBM and a replica EM image of the same section. Scale bar: 200 nm.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01149/elife-01149-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Collagen \u03b11\u03b11\u03b12(IV) and collagen \u03b13\u03b14\u03b15 (IV)-NC1 labeling of a human GBM region. Since agrin or integrin were not used for orientation, the localizations from the region depicted in the image were quantified. Scale bar: 200 nm.\n\nWe next imaged collagen \u03b13\u03b14\u03b15(IV) NC1 and peri-N epitopes along with integrin \u03b21 in the human GBM (Figure 5E,F). Both collagen \u03b13\u03b14\u03b15(IV) epitopes were localized at the center of the GBM, with a clear separation from integrin \u03b21. Staining for collagen \u03b11\u03b11\u03b12(IV) using an antibody to the N-terminal part of the collagenous domain (Foellmer et al., 1983) showed that it was localized to the endothelial side of the GBM (Figure 5D), consistent with previous results using conventional immunofluorescence microscopy (Butkowski et al., 1989). Further, co-labeling for \u03b13\u03b14\u03b15(IV)-NC1 and \u03b11\u03b11\u03b12(IV) epitopes showed that the two collagen networks had distinct adjacent distributions (Figure 5\u2014figure supplement 3), with the \u03b11\u03b11\u03b12(IV) network occupying the space between the central \u03b13\u03b14\u03b15(IV) layer and the endothelial surface of the GBM. These data indicate that the increased thickness of the human GBM can be attributed to an expanded collagen \u03b13\u03b14\u03b15(IV) network that is significantly wider than that in the mouse GBM together with an additional layer of LM-521.\n\n### Distribution of GBM components in a mouse model of Alport syndrome\n\nThe distinct distributions of the components of the GBM prompted us to assess whether the organization of the GBM is disrupted in a specific disorder of the basement membrane. We therefore analyzed a mouse model of autosomal recessive Alport syndrome that lacks the collagen \u03b13\u03b14\u03b15(IV) network due to a Col4a3 null mutation (Miner and Sanes, 1996). In both humans and mice, the lack of this network results in a compensatory increase in the expression of collagen \u03b11\u03b11\u03b12(IV), which is normally found at low levels in adult GBM (Kashtan and Kim, 1992; Miner and Sanes, 1996). Despite this compensation, the GBM becomes segmentally split and thickened, and this is associated with hematuria, proteinuria, and progressive renal failure (Hudson et al., 2003). To investigate the architecture of the GBM in this disease model, we examined the organization of agrinC and collagen \u03b11\u03b11\u03b12(IV). In contrast to the wild-type GBM, the Alport GBM showed segments of capillary loops where the two layered organization of agrinC was disrupted, while in some segments it was intact (Figure 6A,B). The localization of collagen \u03b11\u03b11\u03b12(IV) was also altered, with its distribution spread across the width of the GBM and no longer restricted to the endothelial side. This altered collagen \u03b11\u03b11\u03b12(IV) distribution was evident even in capillary loop segments that showed a relatively preserved agrinC organization (Figure 6C,D). Thus, we conclude that an intact collagen \u03b13\u03b14\u03b15(IV) network helps to maintain agrin and collagen \u03b11\u03b11\u03b12(IV) organization in the healthy GBM.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01149/elife-01149-fig6-v1.jpg)\n\n**Figure 6.:** (A and B) STORM and EM images of a capillary loop from a collagen \u03b13(IV) knockout (KO) mouse kidney labeled with agrinC shows a thin GBM with 2-layered agrin (single arrow) as well as a breakdown of the 2-layered agrin labeling pattern (double arrow) and a thick irregular GBM stretch showing disorganized, diffuse agrinC labeling (arrowheads). (C and D) Images and quantification of capillary loops selected from collagen \u03b13(IV) KO and heterozygous (HET) kidney that show two layers of agrinC. Despite the intact agrin layers, collagen \u03b11\u03b11\u03b12(IV) shows an atypical distribution spread across the GBM in the KO vs a single peak in the HET littermate control.\n\n## Discussion\n\nDetermining the structure, molecular interactions and spatial organization of ECM proteins are important steps towards understanding their roles in tissue function, morphogenesis and disease. Our study describes a novel super resolution fluorescence microscopy approach to reconstruct the molecular architecture of ECM proteins within the GBM. We developed a method to achieve systematic nanoscale molecule mapping in dense tissue sections using STORM and ultrastructural imaging on the same samples using EM. The robust and relatively rapid throughput of this methodology allowed us to reconstruct the molecular architecture of the mouse as well as human GBMs.\n\n### Nanoscopic imaging in tissues\n\nLight microscopic imaging shows the components of the GBM as diffusely distributed, suggesting either an amorphous structure or an organization below the resolution of conventional light microscopy. While transmission EM imaging of the glomerulus with OsO4 demonstrates an electron dense layer in the GBM, the significance of this finding has been unclear. Immunogold-EM has been deployed to study ECM protein organization (Miosge et al., 1999), but constraints of sample preparation, antibody accessibility, and quantitation prevent its extensive application. In our study, we performed STORM as well as EM and immunogold-EM using the same tissue and antibody labeling procedures. This allowed us to validate data using both methods and also illustrated the challenges associated with immunogold EM.\n\nSuper resolution fluorescence microscopic methods have now been widely used to resolve subcellular structures in cultured cells, but the use of these methods to analyze tissue has been challenging. Single molecule probe based methods (F)PALM and STORM were originally developed using photoswitchable fluorescent proteins (Betzig et al., 2006; Hess et al., 2006) or photoswitching properties of fluorescent dyes (Rust et al., 2006). Exogenous expression of multiple photoswitchable fusion proteins and their functional validation is not yet feasible for studying multi-protein complexes in mammalian tissues. Using a number of well characterized antibodies provides a practical alternative for tissue imaging. Thus, we focused on using photoswitchable dye-conjugated antibody labeling for our experiments. Fluorescence imaging of tissue also presents special challenges, mainly regarding the methods of fixation, labeling, sectioning and the method of electron microscopic correlation. Sub-diffraction microscopy methods typically map the positions of labeled proteins; however, putting these in the context of membranes and other ultrastructures requires EM. Recently, a few studies have described super-resolution imaging of photoswitchable fusion proteins expressed in cultured cells and in C. elegans, followed by plastic embedding and EM correlation (Betzig et al., 2006; Watanabe et al., 2011; Kopek et al., 2012). Conventional fluorescence microscopy of resin embedded tissue sections labeled with antibodies has also been described (Micheva and Smith, 2007). Here, we tested a variety of fixation methods, sectioning thicknesses and electron microscopic approaches. Our best results were obtained when we collected 200-nm thickness Tokuyasu cryosections directly onto a coverglass. Since the Tokuyasu method was originally developed for the preparation of tissue for EM imaging, we were able to use freeze etch EM after STORM, to produce correlated images. We believe that the method described here is a breakthrough as it should be useful for the imaging of a wide variety of other tissues.\n\n### Molecular architecture of the GBM\n\nThe results from our study demonstrated that the ECM within the GBM, far from being amorphous, is a highly structured and laminated amalgam of interacting protein networks (Figure 4). We showed that agrin and laminin-521 each form two layers within the mouse GBM. In each layer, both proteins were oriented with their C-terminal LG domains close to the adjacent cell membranes, whereas the more N-terminal laminin short arm epitopes and the agrin N-terminus were localized towards the interior of the GBM. Cell culture and biochemical data support these observations: the LG domains of laminin \u03b15 and agrin are known to interact with cell surface receptors (Martin and Sanes, 1997; Yurchenco et al., 2004; Kikkawa et al., 2007), and the agrin N-terminal domain interacts with laminin \u03b31 near the center of the coiled-coil domain (Kammerer et al., 1999). But the \u223c140 nm vertical axis of laminin must be reconciled with our definitive demonstration in mouse that there are two separate networks that meet in the middle of the GBM; the \u223c200 nm wide mouse GBM cannot contain two fully extended laminin trimers, which would approach a 300 nm span. Models predicting either a bent laminin conformation (Yurchenco et al., 2004) or an extended laminin situated at an oblique angle relative to the adjacent cells would be consistent with our data.\n\nOne of our most important and unexpected findings was the mapping of the collagen \u03b13\u03b14\u03b15(IV) N- and C-terminal domains to near the center of the GBM, a position that in human GBM is too distant from the positions of the integrin \u03b21 extracellular domain (extending from both podocytes and endothelial cells) for a meaningful ligand\u2013receptor interaction. In contrast, both agrinC and LM\u03b15LG localized near integrin \u03b21, implicating them as the likely biologically relevant ligands. At the endothelial aspect of the GBM, collagen \u03b11\u03b11\u03b12(IV) was near enough to the cell to be capable of binding integrin \u03b21. In our Alport syndrome mouse model, which lacks the collagen \u03b13\u03b14\u03b15(IV) network, collagen \u03b11\u03b11\u03b12(IV) was found at increased levels throughout the width of the GBM. One implication of this is that podocytes should be exposed to unfamiliar collagen IV ligands, which might then lead to podocyte injury and the glomerulosclerosis that is observed in the disease.\n\nThe GBM\u2019s collagen \u03b13\u03b14\u03b15(IV) is secreted solely by podocytes (Abrahamson et al., 2009), and our results show that it eventually becomes concentrated near the center of the GBM, away from the podocytes. The secreted collagen \u03b13\u03b14\u03b15(IV) protomers are thus likely able to permeate through the LM-521 and agrin networks adjacent to the podocyte, against the flow of filtrate, to reach the center of the GBM. Given the greater thickness of the human vs the mouse GBM, this process should either be faster or persist for a longer period in human glomeruli. In contrast, the collagen \u03b11\u03b11\u03b12(IV) protomers made by endothelial cells form a network closely juxtaposed to the endothelium. These different collagen IV protomer behaviors may be fundamental to establishing and maintaining the GBM and could be related to its splitting and thickening in the setting of Alport syndrome.\n\n## Materials and methods\n\n### Tissue handling and genetically altered mice\n\nKidneys were isolated from mice after transcardial perfusion with phosphate buffered saline (PBS) containing 4% (wt/vol) Paraformaldeyde (PFA; EM Sciences, Hatfield, PA). After dissection, kidneys were cut into smaller pieces and fixed overnight with 4% PFA, followed by washing off excess PFA with PBS. Kidney pieces were immersed overnight at 4\u00b0C in a cryoprotectant solution of 2.3 M sucrose + 10% polyvinylpyrrolidone (PVP) in 0.1 M PIPES (pH = 7.2). Cryoprotected tissues were mounted on a metal sectioning pin and frozen by immersion in liquid nitrogen.\n\nAll transgenic and knockout mice used have been previously described. These included tetO7-regulated human Laminin \u03b15 cDNA (Goldberg et al., 2010), Nphs2-rtTA (Shigehara et al., 2003), Tie2-Cre (Koni et al., 2001), Rosa26-LoxP-neo-LoxP-rtTA (Belteki et al., 2005), and Col4a3 null (Miner and Sanes, 1996) mice. Induction of human laminin \u03b15 expression was achieved by feeding pregnant females doxycycline chow (0.15%) beginning when pregnancy was apparent and continuing after birth and after weaning.\n\nDe-identified human kidney samples from individuals with no known history of kidney disease were obtained through the Washington University George O\u2019Brien Center for Kidney Disease Research. Samples were fixed overnight in 4% paraformaldehyde and cryoprotected as described above.\n\n### Sectioning and immunohistochemistry\n\nTo capture tissue sections, acid cleaned and air-dried No. 1.0 coverglass were carbon coated for 1 min at a pressure of 2 \u00d7 10\u22126 mbar. Carbon coated coverglass were glow discharged at 2 \u00d7 10\u22122 mbar immediately before collecting tissue sections. Frozen tissues were sectioned at \u223c200-nm thickness on a Leica EM-FC6 ultracryomicrotome equipped with a diamond knife and sections were collected on the carbon coated coverslips. Sections were re-fixed for 20 min at room temperature (RT) with 4% PFA, followed by three washes in PBS and excess PFA was quenched using 50 mM glycine in PBS. Sections were further processed for immunolabeling in the following manner: (1) blocked overnight at 4\u00b0C using 2% bovine serum albumin (BSA) in PBS, (2) primary antibodies diluted in 2% BSA-PBS were applied overnight at 4\u00b0C followed by 3 \u00d7 20 min PBS washes at RT, (3) secondary antibodies diluted 3% BSA-PBS were applied at RT for 2\u20133 hr followed by PBS washes. (4) Immunolabeled sections were post-fixed using 3% PFA+ 0.05% Glutaraldehyde (EM Sciences) in PBS, washed in PBS in used for STORM.\n\n### Antibodies\n\nThe primary antibodies used in this study and their approximate concentrations/dilutions used are shown in Supplementary file 1. Secondary antibodies for STORM were purchased from Jackson Immunoresearch and were custom conjugated to Alexa647 reporter dye and either Alexa405, Cy2 or Cy3 activator dyes as described before (Bates et al., 2007).\n\n### STORM microscope setup and image acquisition\n\nSTORM setup and image acquisition scheme were similar to that described before (Dani et al., 2010), with the following modifications. Briefly, the STORM rig was constructed around a Nikon Eclipse TiE inverted microscope fitted with the Nikon perfect focus system for focus stabilization, a motorized stage (Marzhauser) and a 100X 1.4NA objective (Olympus UPLSAPO). Illumination lasers, 642 nm (Vortran), 561 nm, 488 nm (Coherent, Sapphire) and 405 nm (Coherent, Cube) were shuttered using an acousto-optical tunable filter (AOTF, Crystal technologies). Laser beams were combined, expanded, collimated and focused at the back focal plane of the 100X objective. Total internal reflection fluorescence (TIRF) illumination was achieved with an objective type TIRF geometry using a custom-built translation stage.\n\nSections immunolabeled on carbon coverglass were inverted onto a slide containing a drop of imaging buffer containing mercaptoethylamine along with an oxygen scavenger system, and coverglass edges were sealed with nail polish. In all experiments described here, we performed single reporter (Alexa647)-multiple activator STORM as described before (Bates et al., 2007; Dani et al., 2010). Alexa647 images (\u223c10,000 images per channel) acquired by the same objective were separated using a quad band dichroic ZT405/488/561/640rpc and filtered using ET705/72m emission filter (Chroma). Images were captured on an EM-CCD camera (iXon+ DU897, Andor) and analyzed using custom software. Image stacks were fitted with an elliptical Gaussian function to determine the centroid positions of fluorescent pixel intensity peaks. These positions termed \u2018STORM localizations\u2019 were rendered as STORM images or analyzed further quantitatively.\n\n### Quantification of STORM localizations and molecule positions\n\nTo quantify STORM localizations and to estimate molecule positions with high precision, multiple GBM regions, each as a \u223c800 nm wide window, were selected towards the most peripheral aspect of circular capillary loops, to avoid the mesangial regions where the mesangial matrix meets the GBM. Selected regions were rotated to uniformly orient the podocyte and endothelial sides. STORM localizations from agrinC and a co-labeled molecule, were projected onto the perpendicular axis for each region and fitted with Gaussian functions to identify the centroid positions of the STORM localizations. The midpoint between the two agrinC centroid positions was set as zero and the position of the second molecule of interest was identified by the distance of its centroid position with respect to the zero. This procedure was iterated over multiple regions to estimate the mean position, standard error of the mean and standard deviation for each molecule. To view the quantitative profile of STORM localizations, a histogram was generated from each region by projecting localization points onto a line perpendicular to the long axis of the capillary loop. Each histogram was shifted to align them by their zero position and an accumulated histogram from several regions was constructed by adding up all localizations. The number of regions used to generate the histograms, the mean position of each molecule, standard error of the mean and standard deviation are reported as Figure 4\u2014source data 1 and Figure 5\u2014source data 1. All quantifications were performed using custom scripts in Matlab and the data were plotted in Origin software.\n\n### Quick-freeze, deep-etch electron microscopy and STORM-EM correlation\n\nQuick-freeze deep-etch EM was performed according to published protocol, with minor modifications (Heuser, 1980). After STORM, nail polish from the coverglass was carefully removed by immersing in PBS, and the tissue sections were fixed in 2% glutaraldehyde in100 mM NaCl, 30 mM HEPES and 2 mM CaCl, pH 7.2 (NaHCaCl) at room temperature. 3 \u00d7 3 mm areas of the coverglass containing STORM imaged sections were cut, rinsed in dH2O and frozen by abrupt application of the sample against a liquid helium cooled copper block with a Cryopress freezing machine. Frozen samples were transferred to a liquid nitrogen cooled Balzers 400 vacuum evaporator, etched for 20 min at \u221280\u00b0C and rotary replicated with \u223c 2 nm platinum deposited from a 20\u00b0 angle above the horizontal, followed by an immediate \u223c10 nm stabilization film of pure carbon deposited from an 85\u00b0 angle. Replicas were floated onto a dish of concentrated hydrofluoric acid and transferred through several rinses of dH20 with a loopful of Photo-flo, picked up on Luxel grids (Luxel, Friday Harbor, WA), and photographed on a JEOL 1400 microscope with attached AMT digital camera. The glomeruli imaged by EM were matched with the corresponding STORM images, and the two images were superimposed using Adobe Photoshop. The STORM\u2013EM correlation procedure is illustrated in Figure 1\u2014figure supplement 2.\n\nImmunogold labeling was done on cryosections collected on a 3 \u00d7 3 mm coverglass followed by detection with 12 nm colloidal gold affinity purified secondary antibodies (Jackson Immuno Research) diluted 1: 15 in PBS/2% BSA over 2 hr at RT, rinsed with three 10 min washes of PBS, followed by fixation in 2% glutaraldehyde in NaHCaCl. Prior to freezing, coverglass was rinsed in dH20, frozen and platinum replicas made as described above.\n",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "da84f64d-9fbe-4cc4-b073-e6b320dca5b1",
+      "submission_id": "512eb7e7-344a-4f88-ba11-6927070e9642",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Helen McNeill, The Samuel Lunenfeld Research Institute , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01149.020](https://doi.org/10.7554/eLife.01149.020)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cNanoscale Protein Architecture of the Kidney Glomerular Basement Membrane\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers. The Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis manuscript provides novel insights into the organization of ECM in kidney glomerular basement membrane using correlative EM/super-resolution imaging. Using probes targeting different proteins (and in some cases different domains of the same protein) the authors investigate their relative distributions and show that the ECM in these cells is much more organized than generally believed. Overall this is a very well executed study with data of very high quality. In particular, it represents one of the few sub-diffraction imaging papers published to date, which utilized robust morphometric measurements. It is of interest to scientists involved in high resolution imaging, investigating the basement membrane, and nephrologists. However there are some issues that should be addressed before publication.\n\n1) Explain more clearly why 3D-SIM and/or STED are not be suitable for imaging 200 nm sections. The authors should also consider validating some of their key results using another imaging method, like 3D-SIM and STED (and GFP fusion proteins) as it is likely to generate similar data.\n\n2) Clarify the geometry of analysis in the text. While considerable detail is given in the Methods, the reader needs to understand the geometry of analysis as they read the results. Statements such as \u2018selected multiple regions across glomeruli\u2019 are uninformative and the definition of \u2018localizations\u2019 is lacking.\n\nThe reader should be informed of:\n\nA) How different regions were chosen (that include both capillary and podocyte epithelia in approximate cross section).\n\nB) The exact geometry of analysis (were lines joining the capillary-to-capsule lumina and perpendicular to the epithelia analysed?).\n\nC) The definition of a localization (as plotted in the histograms). How did the authors cope with the large agglomerations of stain as shown in Figure 1B (and most others as well)?\n\n3) Explain how the threshold level was set for the histogram tally of localizations relative to that used for the figures.\n\n4) A very nice aspect of this study is the use of Tokuyasu protocol for tissue labeling. However, it would be nice to confirm some of the results using different fixation methods, as the measurements obtained are unlikely to be absolute (they are, however, excellent in terms of relative spatial positioning). Therefore, we would encourage the authors to validate some of their measurements using different fixation methods, and in live cells if at all possible.\n\n5) In the Introduction, the authors describe the glomerular filtration barrier without reference to the podocyte slit diaphragm. As a number of kidney diseases result from the failure of this structure, the slit diaphragm should be included.\n\n6) The assertion in the Introduction that there is little data regarding how ECM components in the basement membrane bind receptors in vivo disregards a raft of literature. We are sure that this was not the authors\u2019 intention but more careful wording would be wise here.\n\n7) Explain why the localization counts are so much higher for periN than NC1.\n\n8) In the interpretation of the data on Laminin in mouse, the authors claim to show that \u2018GBM's laminin component is divided into two networks, one produced by podocytes and the other by endothelial cells\u2019. However their labelling of endogenous Laminin indicates just one central Laminin-rich region and their claim for two networks depends on data derived from the ectopic expression of human Laminin \u03b15 from both endothelial cells and podocytes. This interpretation needs to be refined.\n\n9) The distribution of AgrinC and integrin \u03b21 are described as being \u2018localized along the endothelial and podocyte surfaces of the human GBM\u2019. The most striking result in Figure 5B, but not mentioned by the authors, is that AgrinC is much richer on the podocyte face and almost absent from the capillary side. This discrepancy between the results presented and the text needs to be addressed.\n",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "00bb7a9e-4f07-4c20-a358-f03e79e2a44c",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C1",
+      "claim": "STORM resolved two distinct layers of agrinC within the GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to conventional immunofluorescence images of agrin, STORM resolved two distinct layers of agrinC within the GBM (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by STORM imaging data shown in Figure 1A,B demonstrating two distinct layers of agrinC",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "60f523d0-a7f9-4ada-a39f-bae63effb814",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C2",
+      "claim": "The gap between agrinC layers showed a mean peak-to-peak distance of 137.9 nm \u00b1 1.9 nm SEM for 80 regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The gap between agrinC layers, measured as the peak-to-peak distance, showed a mean of 137.9 nm \u00b1 1.9 nm standard error of mean (SEM) for the 80 regions; the distance was 132.7 nm (\u00b10.9 nm) across more than 600 GBM regions (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurements from 80 regions analyzed by STORM",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "0546ee83-571e-46c0-9a6f-7cbb8fb582a7",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C3",
+      "claim": "The distance between agrinC layers was 132.7 nm (\u00b10.9 nm) across more than 600 GBM regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The gap between agrinC layers, measured as the peak-to-peak distance, showed a mean of 137.9 nm \u00b1 1.9 nm standard error of mean (SEM) for the 80 regions; the distance was 132.7 nm (\u00b10.9 nm) across more than 600 GBM regions (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurements from more than 600 GBM regions analyzed by STORM",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "03b1a093-a2c1-453d-9570-c138f362dcb1",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C4",
+      "claim": "The two layers of agrinC were localized between two layers of podocalyxin.",
+      "claim_type": "EXPLICIT",
+      "source": "Dual channel STORM imaging showed that the two layers of agrinC were indeed localized between two layers of podocalyxin (Figure 1E,F and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Dual channel STORM imaging data showing spatial relationship between agrinC and podocalyxin",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "38fab038-fc4c-4eae-b7a7-ce5ea62fdbb9",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C5",
+      "claim": "Podocalyxin labeled endothelial cells as well as podocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Superimposition of the podocalyxin-agrinC STORM image with deep-etch EM confirmed that podocalyxin labeled endothelial cells as well as podocytes, while agrin was localized to the GBM (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "STORM-EM correlation showing podocalyxin localization to both cell types",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "097c902a-9212-4fd1-aeb4-d9a9aa2b83ec",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C6",
+      "claim": "Agrin was localized to the GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "Superimposition of the podocalyxin-agrinC STORM image with deep-etch EM confirmed that podocalyxin labeled endothelial cells as well as podocytes, while agrin was localized to the GBM (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "STORM-EM correlation confirming agrin localization",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "c94d35f0-f17a-4e13-be84-a3f881598065",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C7",
+      "claim": "AgrinN was present in two layers that were shifted slightly internally to the two agrinC layers, with center positions at \u221257.5 \u00b1 2.8 nm and 50.2 \u00b1 3.28 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, co-labeling with antibodies to agrinN and agrinC showed that agrinN was present in two layers that were shifted slightly internally to the two agrinC layers, with center positions at \u221257.5 \u00b1 2.8 nm and 50.2 \u00b1 3.28 nm (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative STORM data from co-labeling experiments measuring positions of agrinN relative to agrinC",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "d3bcf87c-684c-4509-9e2f-44ff9f2076e0",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C8",
+      "claim": "Agrin is oriented either perpendicular or oblique to the plane of the GBM with the C-terminus nearest the adjacent cells, and the N-terminus closer to the center of the GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that agrin is oriented either perpendicular or oblique to the plane of the GBM with the C-terminus nearest the adjacent cells, and the N-terminus, which binds the coiled-coil domain of laminin \u03b31, closer to the center of the GBM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the differential positioning of agrinN and agrinC measured by STORM",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "708d9b82-59a2-4246-9f46-5bf62aa6ab9c",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C9",
+      "claim": "The agrin N-terminus binds the coiled-coil domain of laminin \u03b31.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that agrin is oriented either perpendicular or oblique to the plane of the GBM with the C-terminus nearest the adjacent cells, and the N-terminus, which binds the coiled-coil domain of laminin \u03b31, closer to the center of the GBM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Referenced from established biochemical knowledge about agrin-laminin interactions",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "f8a638b6-6af8-4d10-9645-df5fb7e1627f",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C10",
+      "claim": "The orientation and mapping of agrinC and agrinN to different locations within the GBM is consistent with the distinct molecular interactions of the two agrin domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The orientation and mapping of agrinC and agrinN to different locations within the GBM is consistent with the distinct molecular interactions of the two agrin domains as well as the \u223c95 nm extended conformation of agrin visualized by EM (Denzer et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of STORM data with known biochemical interactions and EM structural data from literature",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "36190cad-e77d-4f8e-8001-9800fbb06021",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C11",
+      "claim": "Agrin has a \u223c95 nm extended conformation as visualized by EM.",
+      "claim_type": "EXPLICIT",
+      "source": "The orientation and mapping of agrinC and agrinN to different locations within the GBM is consistent with the distinct molecular interactions of the two agrin domains as well as the \u223c95 nm extended conformation of agrin visualized by EM (Denzer et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous EM study by Denzer et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "78f9008b-85d2-46c1-9fde-573938c1e9b8",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C12",
+      "claim": "Integrin \u03b21 showed two layers with center positions at -79.6 \u00b1 3.3 nm towards the endothelial side and 77.1 \u00b1 3.4 nm towards the podocyte side.",
+      "claim_type": "EXPLICIT",
+      "source": "The center positions of each integrin layer were calculated at -79.6 \u00b1 3.3 nm towards the endothelial side and 77.1 \u00b1 3.4 nm towards the podocyte side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative STORM measurements of integrin \u03b21 positions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "ab91c2c0-2f37-42c3-aae7-75ecde939a8c",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C13",
+      "claim": "Integrin \u03b21 distribution closely overlaps with agrinC, with a slight outward shift towards the cell membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "The histograms as well as the center positions of integrin \u03b21 indicate a distribution that closely overlaps with agrinC, with a slight outward shift towards the cell membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of STORM localization histograms and center positions for integrin \u03b21 and agrinC",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "a018f3b8-6cfa-4a3c-8d36-c58da7b1790e",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C14",
+      "claim": "LM\u03b22-LF localized between the agrinC layers at \u22123.2 \u00b1 2.5 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-labeling with anti-agrinC showed that LM\u03b22-LF localized between the agrinC layers at \u22123.2 \u00b1 2.5 nm (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative STORM measurements from co-labeling experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "83fbef2f-6f61-4063-96e6-21c4f6793eeb",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C15",
+      "claim": "The position of LM\u03b15-LEb/L4b mapped in the middle of the GBM, at \u22121.8 \u00b1 3.6 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to LM\u03b22-LF, the position of LM\u03b15-LEb/L4b also mapped in the middle of the GBM, at \u22121.8 \u00b1 3.6 nm (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative STORM measurements of LM\u03b15-LEb/L4b position",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "73b4a092-acde-40d2-b214-56e24adfa9ab",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C16",
+      "claim": "The span between the N- and C-termini of laminin \u03b15 forms the long 'vertical' axis of the LM-521 cruciform trimer and is estimated to be 130 to 150 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The span between the N- and C-termini of laminin \u03b15 forms the long 'vertical' axis of the LM-521 cruciform trimer. Based on data from electron micrographs and crystal structures of various laminin domains, this axis is estimated to be 130 to 150 nm, while the horizontal axis, composed of the \u03b22 and \u03b31 short arms, spans 70 to 80 nm (Beck et al., 1990; Yurchenco and Cheng, 1993; Sasaki et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous structural studies using EM and crystallography",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "4382cf6a-c1c5-464d-a755-603ec93653de",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C17",
+      "claim": "The horizontal axis of LM-521, composed of the \u03b22 and \u03b31 short arms, spans 70 to 80 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The span between the N- and C-termini of laminin \u03b15 forms the long 'vertical' axis of the LM-521 cruciform trimer. Based on data from electron micrographs and crystal structures of various laminin domains, this axis is estimated to be 130 to 150 nm, while the horizontal axis, composed of the \u03b22 and \u03b31 short arms, spans 70 to 80 nm (Beck et al., 1990; Yurchenco and Cheng, 1993; Sasaki et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous structural studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "7d0fe9d8-1b6d-4465-8e7f-90b4ed2848ea",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C18",
+      "claim": "The positions of the LM\u03b15-LG domain were calculated at 88.3 \u00b1 3.07 nm towards the podocyte side and \u221284.7 \u00b1 6.7 nm towards the endothelial side.",
+      "claim_type": "EXPLICIT",
+      "source": "The positions of the LM\u03b15-LG domain were calculated at 88.3 \u00b1 3.07 nm towards the podocyte side and \u221284.7 \u00b1 6.7 nm towards the endothelial side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative STORM measurements from transgenic mice expressing human laminin \u03b15",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "8dfbf3d6-b4b6-4af1-a5ab-34b68aabcff9",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C19",
+      "claim": "LM-521 trimers are oriented with their C-terminal LG domains near the outer aspects of the GBM and their N-terminal domains towards the center of the GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the data for LM\u03b15-LEb/L4b (Figure 2D), this shows that LM-521 trimers are oriented with their C-terminal LG domains near the outer aspects of the GBM and their N-terminal domains towards the center of the GBM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from combined STORM measurements of multiple laminin domains",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "d3907188-9ccd-4866-a23a-47a6fdab733c",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C20",
+      "claim": "The GBM's laminin component is divided into two networks, one produced by podocytes and the other by endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The most straightforward interpretation is that the GBM's laminin component is divided into two networks, one produced by podocytes and the other by endothelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from STORM data showing cell-specific laminin localization in transgenic mice",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "94b84298-d99d-4b57-b364-1d13d56746f7",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C21",
+      "claim": "The two laminin networks either overlap or are so close to each other that they are indistinguishable by STORM.",
+      "claim_type": "EXPLICIT",
+      "source": "The single band seen with the N-terminal antibody in the center of the GBM occurred because the two networks either overlap or are so close to each other that they are indistinguishable by STORM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from STORM imaging showing single band for N-terminal laminin despite two separate networks",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "9696a969-fb36-4757-8e76-de802f88814f",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C22",
+      "claim": "There is limited mobility of laminin trimers across the thickness of the GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "In the vast majority of glomeruli, we observed that neither podocyte- nor endothelium-derived LM-521 crossed/flipped over, demonstrating that there is limited mobility of laminin trimers across the thickness of the GBM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from STORM imaging of cell-specific laminin expression in transgenic mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "b1df5963-13a5-4a83-a34c-6bed500cbed7",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C23",
+      "claim": "A similar conclusion about limited laminin mobility was reported for the endogenous laminin trimer using a different method.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar conclusion was also reported for the endogenous laminin trimer using a different method (Abrahamson et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous study by Abrahamson et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "a1debe4f-b8c8-4b87-a449-eb1c7d59b492",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C24",
+      "claim": "Collagen IV chains contain a long collagenous domain composed of interrupted Gly-X-Y amino acid triplet repeats situated between non-collagenous N-terminal (7S) and C-terminal (NC1) domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Collagen IV chains contain a long collagenous domain composed of interrupted Gly-X-Y amino acid triplet repeats situated between non-collagenous N-terminal (7S) and C-terminal (NC1) domains (Hudson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established knowledge about collagen IV structure",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "cb032993-ebeb-4652-969a-700d4914e3d5",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C25",
+      "claim": "Collagen IV chains assemble intracellularly into \u223c400 nm long triple helical heterotrimers that are secreted into the ECM.",
+      "claim_type": "EXPLICIT",
+      "source": "These chains assemble intracellularly into \u223c400 nm long triple helical heterotrimers (also known as protomers) that are secreted into the ECM, where they polymerize via hexameric NC1 and dodecameric 7S interactions to form a chicken wire-like network one to several chains thick (Khoshnoodi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established knowledge about collagen IV assembly",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "f9dfd325-9033-4672-ba79-2b95bedced2a",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C26",
+      "claim": "Collagen IV protomers polymerize via hexameric NC1 and dodecameric 7S interactions to form a chicken wire-like network.",
+      "claim_type": "EXPLICIT",
+      "source": "These chains assemble intracellularly into \u223c400 nm long triple helical heterotrimers (also known as protomers) that are secreted into the ECM, where they polymerize via hexameric NC1 and dodecameric 7S interactions to form a chicken wire-like network one to several chains thick (Khoshnoodi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established knowledge about collagen IV polymerization",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "bf6c7783-c638-4e0e-825d-7ba01a73a858",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C27",
+      "claim": "The main collagen IV network of the adult GBM consists of collagen \u03b13\u03b14\u03b15(IV) protomers, which are secreted solely by podocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The main collagen IV network of the adult GBM consists of collagen \u03b13\u03b14\u03b15(IV) protomers, which are secreted solely by podocytes (Abrahamson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous study on collagen IV expression",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "3a09575c-ce54-40fb-a09c-da56082b07e7",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C28",
+      "claim": "Both collagen \u03b13\u03b14\u03b15(IV) NC1 and peri-N epitopes were broadly distributed within the GBM, with positions concentrated close to the center at 12.5 \u00b1 7.2 nm for NC1 and 11.92 \u00b1 3.4 nm for the peri-N epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "STORM localization of these two disparate epitopes in comparison to agrinC showed that both collagen IV epitopes were broadly distributed within the GBM, with positions concentrated close to the center of the GBM, at 12.5 \u00b1 7.2 nm for NC1 and 11.92 \u00b1 3.4 nm for the peri-N epitope (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative STORM measurements of collagen IV epitope positions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "0f8196e8-2a7a-4a97-9723-c88431eba132",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C29",
+      "claim": "Collagen \u03b11\u03b11\u03b12(IV) is the major collagen IV isoform in developing glomeruli.",
+      "claim_type": "EXPLICIT",
+      "source": "In developing glomeruli, collagen \u03b11\u03b11\u03b12(IV) is the major collagen IV isoform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge of glomerular development",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "5cd5de28-a29e-4098-951f-b84ea6445206",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C30",
+      "claim": "In the mature GBM, collagen \u03b11\u03b11\u03b12(IV) is down regulated and mostly replaced by \u03b13\u03b14\u03b15(IV).",
+      "claim_type": "EXPLICIT",
+      "source": "In the mature GBM, \u03b11\u03b11\u03b12(IV) is down regulated and mostly replaced by \u03b13\u03b14\u03b15(IV) (Miner and Sanes, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous study on collagen IV isoform expression during development",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "8e406571-439c-4fb4-b64a-f1c66d817fb6",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C31",
+      "claim": "Collagen \u03b11\u03b11\u03b12(IV) persists at a low level in the adult GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since \u03b11\u03b11\u03b12(IV) persists at a low level in the adult GBM and is prominent in most other endothelial BMs, we were interested to localize it in relationship to \u03b13\u03b14\u03b15(IV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about collagen IV expression",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "c6722291-bad8-4060-a93c-8a9e07d74cc5",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C32",
+      "claim": "Collagen \u03b11\u03b11\u03b12(IV) localized close to the endothelial side of the GBM with a center position at \u221259.5 \u00b1 5.2 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Collagen \u03b11\u03b11\u03b12(IV) localized close to the endothelial side of the GBM with a center position at \u221259.5 \u00b1 5.2 nm (Figure 3C), consistent with its known synthesis by endothelial cells (Heidet et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative STORM measurements of collagen \u03b11\u03b11\u03b12(IV) position",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "8017d36c-fc13-4d70-b67e-bfc936249f1b",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C33",
+      "claim": "Collagen \u03b11\u03b11\u03b12(IV) is synthesized by endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Collagen \u03b11\u03b11\u03b12(IV) localized close to the endothelial side of the GBM with a center position at \u221259.5 \u00b1 5.2 nm (Figure 3C), consistent with its known synthesis by endothelial cells (Heidet et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous study on collagen IV synthesis",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "9d9c6fc1-07a3-457b-ba7f-f9b0cd60d0ba",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C34",
+      "claim": "Collagen \u03b11\u03b11\u03b12(IV) and \u03b13\u03b14\u03b15(IV) showed distinct distributions within the GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, collagen \u03b11\u03b11\u03b12(IV) and \u03b13\u03b14\u03b15(IV) showed distinct distributions within the GBM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of STORM localization data for the two collagen IV isoforms",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "602854ba-13e3-4e1e-ae6e-1213d7b666a5",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C35",
+      "claim": "Nidogen is a 150 kDa dumbbell-shaped glycoprotein that binds to the LEb domain of laminin \u03b31 and to the collagenous domain of collagen \u03b11\u03b11\u03b12(IV).",
+      "claim_type": "EXPLICIT",
+      "source": "In all basement membranes, the collagen IV network is thought to be cross-linked to the laminin network by nidogen, a 150 kDa dumbbell-shaped glycoprotein that binds to the LEb domain of laminin \u03b31 and to the collagenous domain of collagen \u03b11\u03b11\u03b12(IV) (Aumailley et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established knowledge about nidogen structure and interactions",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "3bff287e-36c9-4c50-897f-55c5b74c483f",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C36",
+      "claim": "Nidogen localized to the center of the GBM, with a position of \u22120.22 \u00b1 3.9 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Staining with anti-nidogen localized it to the center of the GBM, with a position of \u22120.22 \u00b1 3.9 nm, close to both collagen \u03b13\u03b14\u03b15(IV) and LM-521 epitopes (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative STORM measurements of nidogen position",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "cb1d8577-f050-4ba4-a0ef-efac589b72e0",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C37",
+      "claim": "The human GBM is at least two times thicker than the mouse GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "The human GBM seems to be composed of components that are orthologous to those in mouse, but it is at least two times thicker than the mouse GBM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on known anatomical differences between human and mouse GBM",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "5f1a9bb7-a54e-4053-93ae-7f704d5cdd09",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C38",
+      "claim": "The peak-to-peak distance of integrin \u03b21 in human GBM was measured to be 428 \u00b1 14.4 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak-to-peak distance of integrin \u03b21 was measured to be 428 \u00b1 14.4 nm, consistent with the known thickness of the human GBM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative STORM measurements from human kidney sections",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "c92026ac-aa18-439e-acad-020120d7d067",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C39",
+      "claim": "In human GBM, the anti-LM\u03b15-LG epitope labeled two layers close to the endothelial and podocyte sides in a location near the integrin \u03b21 epitope.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the anti-LM\u03b15-LG epitope labeled two layers close to the endothelial and podocyte sides of the GBM in a location near the integrin \u03b21 epitope (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "STORM imaging data from human kidney sections",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "efb644ad-39fb-4549-b421-905621a7d4be",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C40",
+      "claim": "In human GBM, LM\u03b15-LG was also observed towards the central aspect of the GBM, unlike in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike the mouse, where LM\u03b15-LG was restricted to the two sides of the GBM, in human we also observed LM\u03b15-LG towards the central aspect of the GBM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of STORM data between human and mouse GBM",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "4df0501f-48bc-4233-bd43-8bd8642df1b4",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C41",
+      "claim": "Both collagen \u03b13\u03b14\u03b15(IV) NC1 and peri-N epitopes were localized at the center of the human GBM, with a clear separation from integrin \u03b21.",
+      "claim_type": "EXPLICIT",
+      "source": "Both collagen \u03b13\u03b14\u03b15(IV) epitopes were localized at the center of the GBM, with a clear separation from integrin \u03b21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "STORM imaging data from human kidney sections",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "1d6cce60-6d21-49e1-b534-9bba4f31b971",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C42",
+      "claim": "Collagen \u03b11\u03b11\u03b12(IV) was localized to the endothelial side of the human GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "Staining for collagen \u03b11\u03b11\u03b12(IV) using an antibody to the N-terminal part of the collagenous domain (Foellmer et al., 1983) showed that it was localized to the endothelial side of the GBM (Figure 5D), consistent with previous results using conventional immunofluorescence microscopy (Butkowski et al., 1989).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "STORM imaging data from human kidney sections, consistent with previous immunofluorescence studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "cc33175b-3da2-41f1-be7a-60beddbcaaeb",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C43",
+      "claim": "In human GBM, the \u03b11\u03b11\u03b12(IV) network occupies the space between the central \u03b13\u03b14\u03b15(IV) layer and the endothelial surface of the GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, co-labeling for \u03b13\u03b14\u03b15(IV)-NC1 and \u03b11\u03b11\u03b12(IV) epitopes showed that the two collagen networks had distinct adjacent distributions (Figure 5\u2014figure supplement 3), with the \u03b11\u03b11\u03b12(IV) network occupying the space between the central \u03b13\u03b14\u03b15(IV) layer and the endothelial surface of the GBM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "STORM co-labeling data from human kidney sections",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "ad75c758-c4f1-4fde-8dd2-b7ee0e56f45a",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C44",
+      "claim": "The increased thickness of the human GBM can be attributed to an expanded collagen \u03b13\u03b14\u03b15(IV) network that is significantly wider than that in the mouse GBM together with an additional layer of LM-521.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the increased thickness of the human GBM can be attributed to an expanded collagen \u03b13\u03b14\u03b15(IV) network that is significantly wider than that in the mouse GBM together with an additional layer of LM-521.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparative STORM data between human and mouse GBM",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "90036716-7fb0-4fce-9f30-1c1e1afc25d7",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C45",
+      "claim": "The lack of collagen \u03b13\u03b14\u03b15(IV) network in Col4a3 null mice results in a compensatory increase in the expression of collagen \u03b11\u03b11\u03b12(IV).",
+      "claim_type": "EXPLICIT",
+      "source": "In both humans and mice, the lack of this network results in a compensatory increase in the expression of collagen \u03b11\u03b11\u03b12(IV), which is normally found at low levels in adult GBM (Kashtan and Kim, 1992; Miner and Sanes, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous studies on Alport syndrome mouse models",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "f7466ac5-d058-458f-a7d8-7eedd2932d1e",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C46",
+      "claim": "In Alport syndrome, the GBM becomes segmentally split and thickened, associated with hematuria, proteinuria, and progressive renal failure.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this compensation, the GBM becomes segmentally split and thickened, and this is associated with hematuria, proteinuria, and progressive renal failure (Hudson et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established knowledge about Alport syndrome pathology",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "a07e4d4d-007c-465e-afb1-1e15ed575034",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C47",
+      "claim": "In the Alport GBM, the two layered organization of agrinC was disrupted in some segments while intact in others.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the wild-type GBM, the Alport GBM showed segments of capillary loops where the two layered organization of agrinC was disrupted, while in some segments it was intact (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "STORM imaging data from Col4a3 knockout mouse kidney sections",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "96a62417-95c9-46ef-85e1-e30d167cce7c",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C48",
+      "claim": "In the Alport GBM, collagen \u03b11\u03b11\u03b12(IV) distribution was spread across the width of the GBM and no longer restricted to the endothelial side.",
+      "claim_type": "EXPLICIT",
+      "source": "The localization of collagen \u03b11\u03b11\u03b12(IV) was also altered, with its distribution spread across the width of the GBM and no longer restricted to the endothelial side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "STORM imaging data from Col4a3 knockout mouse kidney sections",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "c1e8cdb0-0bd7-4420-bfa0-f7c3b256e342",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C49",
+      "claim": "Altered collagen \u03b11\u03b11\u03b12(IV) distribution was evident even in capillary loop segments that showed a relatively preserved agrinC organization.",
+      "claim_type": "EXPLICIT",
+      "source": "This altered collagen \u03b11\u03b11\u03b12(IV) distribution was evident even in capillary loop segments that showed a relatively preserved agrinC organization (Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "STORM imaging data from Col4a3 knockout mouse kidney sections",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "bb8e718f-c1ca-4976-9821-07655a28ab6b",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C50",
+      "claim": "An intact collagen \u03b13\u03b14\u03b15(IV) network helps to maintain agrin and collagen \u03b11\u03b11\u03b12(IV) organization in the healthy GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that an intact collagen \u03b13\u03b14\u03b15(IV) network helps to maintain agrin and collagen \u03b11\u03b11\u03b12(IV) organization in the healthy GBM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparison of STORM data between wild-type and Col4a3 knockout mice",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "9132738f-cb3a-4d18-9f07-bb15e938b1c6",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C51",
+      "claim": "The GBM is composed of extracellular matrix (ECM) proteins secreted by the endothelial cells and podocytes that flank it.",
+      "claim_type": "EXPLICIT",
+      "source": "the glomerular basement membrane (GBM), which is composed of extracellular matrix (ECM) proteins secreted by the endothelial cells and podocytes that flank it (Miner, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established knowledge about GBM composition",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "ba60c1a8-d9c5-4067-a1f4-a71fc17f4e2d",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C52",
+      "claim": "The GBM contains specific isoforms of laminin (laminin \u03b15\u03b22\u03b31, or LM-521), type IV collagen (primarily the collagen \u03b13\u03b14\u03b15(IV) network), heparan sulfate proteoglycan (primarily agrin), and nidogen.",
+      "claim_type": "EXPLICIT",
+      "source": "The GBM contains specific isoforms of laminin (laminin \u03b15\u03b22\u03b31, or LM-521), type IV collagen (primarily the collagen \u03b13\u03b14\u03b15(IV) network), heparan sulfate proteoglycan (HSPG) (primarily agrin), and nidogen (Miner, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established knowledge about GBM composition",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "7657f1b0-9e82-4f48-a0f9-fe703ec496fa",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C53",
+      "claim": "Laminin and type IV collagen self-polymerize into networks that are connected to each other and/or to cell surface receptors by HSPGs and nidogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Laminin and type IV collagen self-polymerize into networks that are connected to each other and/or to cell surface receptors by HSPGs and nidogen; in addition, some receptors can bind directly to laminin or type IV collagen (Yurchenco et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established knowledge about ECM protein interactions",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "771e65e5-c5d1-4492-ae50-8456daff0e57",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C54",
+      "claim": "Some receptors can bind directly to laminin or type IV collagen.",
+      "claim_type": "EXPLICIT",
+      "source": "Laminin and type IV collagen self-polymerize into networks that are connected to each other and/or to cell surface receptors by HSPGs and nidogen; in addition, some receptors can bind directly to laminin or type IV collagen (Yurchenco et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established knowledge about ECM-receptor interactions",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "c7fb5459-5e51-40e9-9dcb-1e3008ed3a5b",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C55",
+      "claim": "The \u223c200-nm thickness of a typical mouse GBM is close to the diffraction limited resolution of conventional light microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the \u223c200-nm thickness of a typical mouse GBM is close to the diffraction limited resolution of conventional light microscopy, thus preventing its use to analyze GBM ultrastructural and macromolecular organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on known dimensions of mouse GBM and optical resolution limits",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "39841896-70cf-4c52-a412-da456923b419",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C56",
+      "claim": "Agrin is a \u223c200 kDa protein that is the major HSPG component of the GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "We began with studies of agrin, a \u223c200 kDa protein that is the major HSPG component of the GBM (Groffen et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established knowledge about agrin",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "c39de3ae-c906-4f58-bfba-40f0f39525fb",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C57",
+      "claim": "Agrin's N-terminus binds to laminin via the laminin \u03b31 chain's coiled-coil domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Agrin's N-terminus (agrinN) binds to laminin via the laminin \u03b31 chain's coiled-coil domain (Kammerer et al., 1999), whereas agrin's C-terminus (agrinC) binds to integrins and dystroglycan (Singhal and Martin, 2011), receptors present on both podocytes and endothelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established knowledge about agrin-laminin interactions",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "0b1705af-bb8c-441f-90f3-a71b5f4c9788",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C58",
+      "claim": "Agrin's C-terminus binds to integrins and dystroglycan, receptors present on both podocytes and endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Agrin's N-terminus (agrinN) binds to laminin via the laminin \u03b31 chain's coiled-coil domain (Kammerer et al., 1999), whereas agrin's C-terminus (agrinC) binds to integrins and dystroglycan (Singhal and Martin, 2011), receptors present on both podocytes and endothelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established knowledge about agrin-receptor interactions",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "e42ea883-af9b-439f-9e75-c14493456c05",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C59",
+      "claim": "Integrin \u03b21 is the major integrin \u03b2 subunit expressed by both podocytes and endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We next investigated the position of integrin \u03b21, the major integrin \u03b2 subunit expressed by both podocytes and endothelial cells (Kreidberg and Symons, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established knowledge about integrin expression",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "845c89d4-6805-404a-88b0-ce4867710c85",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C60",
+      "claim": "Integrin \u03b21 interacts with agrinC.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrin \u03b21 interacts with agrinC (Martin and Sanes, 1997) (and with laminin; see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established knowledge about integrin-agrin interactions",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "2dcbe45a-2036-40ea-991d-f6826fc470ed",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C61",
+      "claim": "LM-521 is a cross-shaped heterotrimer that polymerizes in the ECM via interactions among the N-terminal (LN) domains of the \u03b15, \u03b22, and \u03b31 chains found at the ends of the short arms.",
+      "claim_type": "EXPLICIT",
+      "source": "LM-521 is a cross-shaped heterotrimer that polymerizes in the ECM via interactions among the N-terminal (LN) domains of the \u03b15, \u03b22, and \u03b31 chains found at the ends of the short arms (McKee et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established knowledge about laminin structure and polymerization",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "cfb820bd-99bc-4acb-b380-b8112542164a",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C62",
+      "claim": "LM-521 binds to cell surface receptors, such as integrin \u03b13\u03b21, via the laminin globular (LG) domain of the \u03b15 chain.",
+      "claim_type": "EXPLICIT",
+      "source": "LM-521 binds to cell surface receptors, such as integrin \u03b13\u03b21, via the laminin globular (LG) domain of the \u03b15 chain (Ido et al., 2004) (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established knowledge about laminin-integrin interactions",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "41ba3d02-52e5-43b1-9ed8-a0969ad53b04",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C63",
+      "claim": "Endogenous laminin \u03b15 has been shown to be synthesized by both podocytes and endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As endogenous laminin \u03b15 has been shown to be synthesized by both cell types (St John and Abrahamson, 2001), this is a physiologically relevant approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous study on laminin \u03b15 expression",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "d23415f9-6d8b-4439-a090-ff5b63e1c03f",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C64",
+      "claim": "The ECM within the GBM is a highly structured and laminated amalgam of interacting protein networks.",
+      "claim_type": "EXPLICIT",
+      "source": "The results from our study demonstrated that the ECM within the GBM, far from being amorphous, is a highly structured and laminated amalgam of interacting protein networks (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary inference from all STORM data presented in the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "83d50a86-1bca-421f-bba9-6534b5f7b6ac",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C65",
+      "claim": "The collagen \u03b13\u03b14\u03b15(IV) N- and C-terminal domains map to near the center of the GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "One of our most important and unexpected findings was the mapping of the collagen \u03b13\u03b14\u03b15(IV) N- and C-terminal domains to near the center of the GBM, a position that in human GBM is too distant from the positions of the integrin \u03b21 extracellular domain (extending from both podocytes and endothelial cells) for a meaningful ligand\u2013receptor interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "STORM data showing collagen IV positions relative to integrin \u03b21",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "70d503e4-e776-4a3d-a381-8c864061b4e9",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C66",
+      "claim": "In human GBM, collagen \u03b13\u03b14\u03b15(IV) is too distant from integrin \u03b21 for a meaningful ligand-receptor interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "One of our most important and unexpected findings was the mapping of the collagen \u03b13\u03b14\u03b15(IV) N- and C-terminal domains to near the center of the GBM, a position that in human GBM is too distant from the positions of the integrin \u03b21 extracellular domain (extending from both podocytes and endothelial cells) for a meaningful ligand\u2013receptor interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from STORM measurements of spatial separation between collagen IV and integrin \u03b21",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "1e2ae258-05c7-4617-aacc-73b909c0bc15",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C67",
+      "claim": "Both agrinC and LM\u03b15LG are the likely biologically relevant ligands for integrin \u03b21 in the GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both agrinC and LM\u03b15LG localized near integrin \u03b21, implicating them as the likely biologically relevant ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from STORM data showing spatial proximity of agrinC and LM\u03b15LG to integrin \u03b21",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "9d261d0f-2486-4f9b-95f1-c38442b7b607",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C68",
+      "claim": "At the endothelial aspect of the GBM, collagen \u03b11\u03b11\u03b12(IV) was near enough to the cell to be capable of binding integrin \u03b21.",
+      "claim_type": "EXPLICIT",
+      "source": "At the endothelial aspect of the GBM, collagen \u03b11\u03b11\u03b12(IV) was near enough to the cell to be capable of binding integrin \u03b21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from STORM measurements showing proximity of collagen \u03b11\u03b11\u03b12(IV) to integrin \u03b21 at endothelial side",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "5482172b-6800-4fcf-8ae6-b6536d5fd252",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C69",
+      "claim": "In Alport syndrome mouse model, podocytes are exposed to unfamiliar collagen IV ligands due to increased collagen \u03b11\u03b11\u03b12(IV) throughout the GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "In our Alport syndrome mouse model, which lacks the collagen \u03b13\u03b14\u03b15(IV) network, collagen \u03b11\u03b11\u03b12(IV) was found at increased levels throughout the width of the GBM. One implication of this is that podocytes should be exposed to unfamiliar collagen IV ligands, which might then lead to podocyte injury and the glomerulosclerosis that is observed in the disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on STORM data from Alport mouse model",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "aba94270-9c9c-4ff0-9a2c-ac52fd75c02b",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C70",
+      "claim": "Exposure to unfamiliar collagen IV ligands might lead to podocyte injury and glomerulosclerosis in Alport syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "In our Alport syndrome mouse model, which lacks the collagen \u03b13\u03b14\u03b15(IV) network, collagen \u03b11\u03b11\u03b12(IV) was found at increased levels throughout the width of the GBM. One implication of this is that podocytes should be exposed to unfamiliar collagen IV ligands, which might then lead to podocyte injury and the glomerulosclerosis that is observed in the disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about disease mechanism based on STORM findings",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "15dc1ad9-4c3f-4b22-9efb-86f745e400da",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C71",
+      "claim": "Secreted collagen \u03b13\u03b14\u03b15(IV) protomers are able to permeate through the LM-521 and agrin networks adjacent to the podocyte to reach the center of the GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "The GBM's collagen \u03b13\u03b14\u03b15(IV) is secreted solely by podocytes (Abrahamson et al., 2009), and our results show that it eventually becomes concentrated near the center of the GBM, away from the podocytes. The secreted collagen \u03b13\u03b14\u03b15(IV) protomers are thus likely able to permeate through the LM-521 and agrin networks adjacent to the podocyte, against the flow of filtrate, to reach the center of the GBM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from STORM data showing collagen IV position relative to its site of synthesis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "9a7e27d5-2314-417d-a491-c617f1cbb089",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C72",
+      "claim": "In human glomeruli, the process of collagen \u03b13\u03b14\u03b15(IV) reaching the GBM center should either be faster or persist for a longer period compared to mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the greater thickness of the human vs the mouse GBM, this process should either be faster or persist for a longer period in human glomeruli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on comparison of human and mouse GBM thickness",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "08455d05-58f7-4755-8637-15b86dfb971e",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C73",
+      "claim": "The collagen \u03b11\u03b11\u03b12(IV) protomers made by endothelial cells form a network closely juxtaposed to the endothelium.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the collagen \u03b11\u03b11\u03b12(IV) protomers made by endothelial cells form a network closely juxtaposed to the endothelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from STORM data showing collagen \u03b11\u03b11\u03b12(IV) position near endothelial side",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "856f7dde-9429-4c8b-93f1-4a52f948352e",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C74",
+      "claim": "Different collagen IV protomer behaviors may be fundamental to establishing and maintaining the GBM and could be related to its splitting and thickening in Alport syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "These different collagen IV protomer behaviors may be fundamental to establishing and maintaining the GBM and could be related to its splitting and thickening in the setting of Alport syndrome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about GBM maintenance and disease mechanisms based on STORM findings",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "2dce5ee1-8e37-4b6a-a5a8-a5c31bf7b55c",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C75",
+      "claim": "A modification of the Tokuyasu method of cryo-embedding and cryosectioning at 200 nanometers thickness was optimal for STORM imaging of kidney sections.",
+      "claim_type": "EXPLICIT",
+      "source": "These preliminary studies established that a modification of the Tokuyasu method of cryo-embedding and cryosectioning at 200 nanometers (nm) thickness was optimal (Tokuyasu, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Empirical optimization of tissue preparation methods for STORM",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "dfc47de1-c087-4d5b-add6-54c0344355ca",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "claim_id": "C76",
+      "claim": "Podocalyxin is expressed on the surfaces of both endothelial cells and podocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We next imaged the relationship between the GBM and the flanking podocytes and endothelial cells by double labeling with antibodies to agrinC and to the sialoprotein podocalyxin, which is expressed on the surfaces of both endothelial cells and podocytes (Kerjaschki et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established knowledge about podocalyxin expression",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8f3e9c14-50d0-4663-a4dc-ab45205438e1",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "STORM imaging resolved two distinct layers of agrinC within the mouse GBM, with a mean peak-to-peak distance of 132.7-137.9 nm. These agrinC layers were localized between two layers of podocalyxin (marking endothelial cells and podocytes), with agrin confirmed to be within the GBM by STORM-EM correlation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 provide converging evidence from STORM imaging (C1-C3), dual-channel STORM (C4), and STORM-EM correlation (C5-C6). The quantitative measurements are consistent across 80 and 600+ regions, and the spatial relationships are validated by multiple imaging modalities including immunogold-EM.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "06fa8294-447d-4e0a-a836-d441e562f283",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "AgrinN was positioned internally to agrinC layers (at -57.5 and 50.2 nm), indicating that agrin molecules are oriented perpendicular or oblique to the GBM plane with C-termini near cells and N-termini toward the GBM center. This orientation is consistent with known biochemical interactions and the ~95 nm extended conformation of agrin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 provide strong support through quantitative STORM measurements (C7), logical inference from spatial data (C8), and consistency with established biochemical knowledge (C9-C11). The orientation model is well-supported by both the current data and prior structural studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "192e1cb3-30b2-4d6e-97a6-f5a258cad4dc",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Integrin \u03b21 showed two layers at -79.6 and 77.1 nm, closely overlapping with agrinC but with a slight outward shift toward cell membranes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 are supported by quantitative STORM measurements and histogram comparisons. The spatial relationship between integrin \u03b21 and agrinC is consistent with known receptor-ligand interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "6da957fd-1d7e-4f37-98bf-1f515144b687",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Laminin-521 (LM-521) is organized in two networks within the GBM, one from podocytes and one from endothelial cells, with C-terminal LG domains near the outer aspects (\u00b184-88 nm) and N-terminal domains toward the center (-1.8 to -3.2 nm). The two networks overlap or are very close at the center, and laminin trimers show limited mobility across the GBM thickness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C23 provide comprehensive evidence from STORM measurements of multiple laminin domains (C14-C15, C18), transgenic mouse experiments (C18-C22), and consistency with prior structural data (C16-C17, C23). The model of two separate but overlapping networks is well-supported by cell-specific expression data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "2ea3c6a8-5ba1-4289-afb5-f9d9751e75fa",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Collagen \u03b13\u03b14\u03b15(IV) NC1 and peri-N epitopes were broadly distributed but concentrated near the GBM center (11.92-12.5 nm). This collagen IV network is secreted solely by podocytes and forms the main network in adult GBM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 are supported by STORM measurements (C28) and established knowledge about collagen IV structure and expression (C24-C27). The central localization is unexpected but well-documented by the imaging data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "645b4303-f762-46b6-beb2-82c3241f8861",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Collagen \u03b11\u03b11\u03b12(IV) localized to the endothelial side of the GBM at -59.5 nm, showing a distinct distribution from collagen \u03b13\u03b14\u03b15(IV). This isoform persists at low levels in adult GBM and is synthesized by endothelial cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 are supported by STORM measurements (C32) and established knowledge about collagen IV isoform expression (C29-C31, C33). The distinct spatial distributions of the two collagen IV isoforms are clearly demonstrated (C34).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "bdd49c99-e81a-4ff1-a366-4dc2c3ccbfb1",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Nidogen localized to the center of the GBM at -0.22 nm, close to both collagen \u03b13\u03b14\u03b15(IV) and LM-521 epitopes, consistent with its proposed role as a cross-linker.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by STORM measurements (C36) and established knowledge about nidogen structure and function (C35). The central localization is consistent with a cross-linking role, though the authors appropriately note limitations in interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "c3e9b989-c7e2-4f38-a706-9b2f6d960755",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The human GBM is at least twice as thick as mouse GBM (428 nm integrin \u03b21 peak-to-peak distance). The increased thickness is attributed to an expanded collagen \u03b13\u03b14\u03b15(IV) network and an additional central layer of LM-521. Collagen \u03b11\u03b11\u03b12(IV) occupies the space between the central \u03b13\u03b14\u03b15(IV) layer and the endothelial surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C44 are supported by STORM measurements from human kidney sections (C38-C43) and comparative analysis with mouse data (C44). The structural differences between human and mouse GBM are well-documented, though the additional central LM-521 layer in human GBM requires further mechanistic explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "00a10a87-103f-42b3-aa05-bcd7a2ae5f4a",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In the Alport syndrome mouse model (Col4a3 null), the two-layered agrinC organization was disrupted in some GBM segments, and collagen \u03b11\u03b11\u03b12(IV) distribution spread across the GBM width rather than being restricted to the endothelial side. An intact collagen \u03b13\u03b14\u03b15(IV) network is necessary to maintain agrin and collagen \u03b11\u03b11\u03b12(IV) organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 are supported by STORM imaging from knockout mice (C47-C49), established knowledge about Alport syndrome (C45-C46), and logical inference from comparative data (C50). The disruption of GBM architecture in the disease model is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "795f0507-a55d-469e-b557-78186caa2e42",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The GBM has a highly structured, laminated organization. Collagen \u03b13\u03b14\u03b15(IV) maps to the GBM center, too distant from integrin \u03b21 for direct interaction in human GBM. AgrinC and LM\u03b15LG are the likely biologically relevant ligands for integrin \u03b21, while collagen \u03b11\u03b11\u03b12(IV) at the endothelial side can bind integrin \u03b21.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 represent key interpretations supported by the comprehensive STORM data. The spatial relationships are well-documented, and the inferences about ligand-receptor interactions are logical based on measured distances. This challenges previous assumptions about collagen IV-integrin interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "11ea1113-45a9-4588-a535-a111db9bed2b",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In Alport syndrome, podocytes are exposed to unfamiliar collagen \u03b11\u03b11\u03b12(IV) ligands, which might lead to podocyte injury and glomerulosclerosis. Collagen \u03b13\u03b14\u03b15(IV) protomers can permeate through LM-521 and agrin networks to reach the GBM center, while collagen \u03b11\u03b11\u03b12(IV) forms a network near the endothelium. These different behaviors may be fundamental to GBM maintenance and related to disease pathology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C74 are largely speculative interpretations (C69-C70, C72, C74) based on the STORM data. While the spatial observations are supported (C71, C73), the mechanistic links to disease pathology and the dynamics of collagen IV movement require experimental validation beyond the current imaging data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "581471eb-41af-46e6-9e9e-e1649b031de9",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A modified Tokuyasu method with 200 nm cryosections was optimal for STORM imaging of kidney sections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is supported by empirical optimization described in the methods. This represents an important methodological advance for tissue STORM imaging.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    },
+    {
+      "id": "1c3ecd31-b90b-47d1-a997-e38a1266b193",
+      "content_id": "7a624442-eda3-42e0-98bb-47e6ab5aca31",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background knowledge claims about GBM composition, ECM protein structures, molecular interactions, and cell-specific expression patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C63 and C76 represent established knowledge from the literature, appropriately cited. These provide the necessary context for interpreting the STORM data but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:44:21.702680Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "00bb7a9e-4f07-4c20-a358-f03e79e2a44c",
+      "result_id": "8f3e9c14-50d0-4663-a4dc-ab45205438e1"
+    },
+    {
+      "claim_id": "60f523d0-a7f9-4ada-a39f-bae63effb814",
+      "result_id": "8f3e9c14-50d0-4663-a4dc-ab45205438e1"
+    },
+    {
+      "claim_id": "0546ee83-571e-46c0-9a6f-7cbb8fb582a7",
+      "result_id": "8f3e9c14-50d0-4663-a4dc-ab45205438e1"
+    },
+    {
+      "claim_id": "03b1a093-a2c1-453d-9570-c138f362dcb1",
+      "result_id": "8f3e9c14-50d0-4663-a4dc-ab45205438e1"
+    },
+    {
+      "claim_id": "38fab038-fc4c-4eae-b7a7-ce5ea62fdbb9",
+      "result_id": "8f3e9c14-50d0-4663-a4dc-ab45205438e1"
+    },
+    {
+      "claim_id": "097c902a-9212-4fd1-aeb4-d9a9aa2b83ec",
+      "result_id": "8f3e9c14-50d0-4663-a4dc-ab45205438e1"
+    },
+    {
+      "claim_id": "c94d35f0-f17a-4e13-be84-a3f881598065",
+      "result_id": "06fa8294-447d-4e0a-a836-d441e562f283"
+    },
+    {
+      "claim_id": "d3bcf87c-684c-4509-9e2f-44ff9f2076e0",
+      "result_id": "06fa8294-447d-4e0a-a836-d441e562f283"
+    },
+    {
+      "claim_id": "708d9b82-59a2-4246-9f46-5bf62aa6ab9c",
+      "result_id": "06fa8294-447d-4e0a-a836-d441e562f283"
+    },
+    {
+      "claim_id": "f8a638b6-6af8-4d10-9645-df5fb7e1627f",
+      "result_id": "06fa8294-447d-4e0a-a836-d441e562f283"
+    },
+    {
+      "claim_id": "36190cad-e77d-4f8e-8001-9800fbb06021",
+      "result_id": "06fa8294-447d-4e0a-a836-d441e562f283"
+    },
+    {
+      "claim_id": "78f9008b-85d2-46c1-9fde-573938c1e9b8",
+      "result_id": "192e1cb3-30b2-4d6e-97a6-f5a258cad4dc"
+    },
+    {
+      "claim_id": "ab91c2c0-2f37-42c3-aae7-75ecde939a8c",
+      "result_id": "192e1cb3-30b2-4d6e-97a6-f5a258cad4dc"
+    },
+    {
+      "claim_id": "a018f3b8-6cfa-4a3c-8d36-c58da7b1790e",
+      "result_id": "6da957fd-1d7e-4f37-98bf-1f515144b687"
+    },
+    {
+      "claim_id": "83fbef2f-6f61-4063-96e6-21c4f6793eeb",
+      "result_id": "6da957fd-1d7e-4f37-98bf-1f515144b687"
+    },
+    {
+      "claim_id": "73b4a092-acde-40d2-b214-56e24adfa9ab",
+      "result_id": "6da957fd-1d7e-4f37-98bf-1f515144b687"
+    },
+    {
+      "claim_id": "4382cf6a-c1c5-464d-a755-603ec93653de",
+      "result_id": "6da957fd-1d7e-4f37-98bf-1f515144b687"
+    },
+    {
+      "claim_id": "7d0fe9d8-1b6d-4465-8e7f-90b4ed2848ea",
+      "result_id": "6da957fd-1d7e-4f37-98bf-1f515144b687"
+    },
+    {
+      "claim_id": "8dfbf3d6-b4b6-4af1-a5ab-34b68aabcff9",
+      "result_id": "6da957fd-1d7e-4f37-98bf-1f515144b687"
+    },
+    {
+      "claim_id": "d3907188-9ccd-4866-a23a-47a6fdab733c",
+      "result_id": "6da957fd-1d7e-4f37-98bf-1f515144b687"
+    },
+    {
+      "claim_id": "94b84298-d99d-4b57-b364-1d13d56746f7",
+      "result_id": "6da957fd-1d7e-4f37-98bf-1f515144b687"
+    },
+    {
+      "claim_id": "9696a969-fb36-4757-8e76-de802f88814f",
+      "result_id": "6da957fd-1d7e-4f37-98bf-1f515144b687"
+    },
+    {
+      "claim_id": "b1df5963-13a5-4a83-a34c-6bed500cbed7",
+      "result_id": "6da957fd-1d7e-4f37-98bf-1f515144b687"
+    },
+    {
+      "claim_id": "a1debe4f-b8c8-4b87-a449-eb1c7d59b492",
+      "result_id": "2ea3c6a8-5ba1-4289-afb5-f9d9751e75fa"
+    },
+    {
+      "claim_id": "cb032993-ebeb-4652-969a-700d4914e3d5",
+      "result_id": "2ea3c6a8-5ba1-4289-afb5-f9d9751e75fa"
+    },
+    {
+      "claim_id": "f9dfd325-9033-4672-ba79-2b95bedced2a",
+      "result_id": "2ea3c6a8-5ba1-4289-afb5-f9d9751e75fa"
+    },
+    {
+      "claim_id": "bf6c7783-c638-4e0e-825d-7ba01a73a858",
+      "result_id": "2ea3c6a8-5ba1-4289-afb5-f9d9751e75fa"
+    },
+    {
+      "claim_id": "3a09575c-ce54-40fb-a09c-da56082b07e7",
+      "result_id": "2ea3c6a8-5ba1-4289-afb5-f9d9751e75fa"
+    },
+    {
+      "claim_id": "0f8196e8-2a7a-4a97-9723-c88431eba132",
+      "result_id": "645b4303-f762-46b6-beb2-82c3241f8861"
+    },
+    {
+      "claim_id": "5cd5de28-a29e-4098-951f-b84ea6445206",
+      "result_id": "645b4303-f762-46b6-beb2-82c3241f8861"
+    },
+    {
+      "claim_id": "8e406571-439c-4fb4-b64a-f1c66d817fb6",
+      "result_id": "645b4303-f762-46b6-beb2-82c3241f8861"
+    },
+    {
+      "claim_id": "c6722291-bad8-4060-a93c-8a9e07d74cc5",
+      "result_id": "645b4303-f762-46b6-beb2-82c3241f8861"
+    },
+    {
+      "claim_id": "8017d36c-fc13-4d70-b67e-bfc936249f1b",
+      "result_id": "645b4303-f762-46b6-beb2-82c3241f8861"
+    },
+    {
+      "claim_id": "9d9c6fc1-07a3-457b-ba7f-f9b0cd60d0ba",
+      "result_id": "645b4303-f762-46b6-beb2-82c3241f8861"
+    },
+    {
+      "claim_id": "602854ba-13e3-4e1e-ae6e-1213d7b666a5",
+      "result_id": "bdd49c99-e81a-4ff1-a366-4dc2c3ccbfb1"
+    },
+    {
+      "claim_id": "3bff287e-36c9-4c50-897f-55c5b74c483f",
+      "result_id": "bdd49c99-e81a-4ff1-a366-4dc2c3ccbfb1"
+    },
+    {
+      "claim_id": "cb1d8577-f050-4ba4-a0ef-efac589b72e0",
+      "result_id": "c3e9b989-c7e2-4f38-a706-9b2f6d960755"
+    },
+    {
+      "claim_id": "5f1a9bb7-a54e-4053-93ae-7f704d5cdd09",
+      "result_id": "c3e9b989-c7e2-4f38-a706-9b2f6d960755"
+    },
+    {
+      "claim_id": "c92026ac-aa18-439e-acad-020120d7d067",
+      "result_id": "c3e9b989-c7e2-4f38-a706-9b2f6d960755"
+    },
+    {
+      "claim_id": "efb644ad-39fb-4549-b421-905621a7d4be",
+      "result_id": "c3e9b989-c7e2-4f38-a706-9b2f6d960755"
+    },
+    {
+      "claim_id": "4df0501f-48bc-4233-bd43-8bd8642df1b4",
+      "result_id": "c3e9b989-c7e2-4f38-a706-9b2f6d960755"
+    },
+    {
+      "claim_id": "1d6cce60-6d21-49e1-b534-9bba4f31b971",
+      "result_id": "c3e9b989-c7e2-4f38-a706-9b2f6d960755"
+    },
+    {
+      "claim_id": "cc33175b-3da2-41f1-be7a-60beddbcaaeb",
+      "result_id": "c3e9b989-c7e2-4f38-a706-9b2f6d960755"
+    },
+    {
+      "claim_id": "ad75c758-c4f1-4fde-8dd2-b7ee0e56f45a",
+      "result_id": "c3e9b989-c7e2-4f38-a706-9b2f6d960755"
+    },
+    {
+      "claim_id": "90036716-7fb0-4fce-9f30-1c1e1afc25d7",
+      "result_id": "00a10a87-103f-42b3-aa05-bcd7a2ae5f4a"
+    },
+    {
+      "claim_id": "f7466ac5-d058-458f-a7d8-7eedd2932d1e",
+      "result_id": "00a10a87-103f-42b3-aa05-bcd7a2ae5f4a"
+    },
+    {
+      "claim_id": "a07e4d4d-007c-465e-afb1-1e15ed575034",
+      "result_id": "00a10a87-103f-42b3-aa05-bcd7a2ae5f4a"
+    },
+    {
+      "claim_id": "96a62417-95c9-46ef-85e1-e30d167cce7c",
+      "result_id": "00a10a87-103f-42b3-aa05-bcd7a2ae5f4a"
+    },
+    {
+      "claim_id": "c1e8cdb0-0bd7-4420-bfa0-f7c3b256e342",
+      "result_id": "00a10a87-103f-42b3-aa05-bcd7a2ae5f4a"
+    },
+    {
+      "claim_id": "bb8e718f-c1ca-4976-9821-07655a28ab6b",
+      "result_id": "00a10a87-103f-42b3-aa05-bcd7a2ae5f4a"
+    },
+    {
+      "claim_id": "d23415f9-6d8b-4439-a090-ff5b63e1c03f",
+      "result_id": "795f0507-a55d-469e-b557-78186caa2e42"
+    },
+    {
+      "claim_id": "83d50a86-1bca-421f-bba9-6534b5f7b6ac",
+      "result_id": "795f0507-a55d-469e-b557-78186caa2e42"
+    },
+    {
+      "claim_id": "70d503e4-e776-4a3d-a381-8c864061b4e9",
+      "result_id": "795f0507-a55d-469e-b557-78186caa2e42"
+    },
+    {
+      "claim_id": "1e2ae258-05c7-4617-aacc-73b909c0bc15",
+      "result_id": "795f0507-a55d-469e-b557-78186caa2e42"
+    },
+    {
+      "claim_id": "9d261d0f-2486-4f9b-95f1-c38442b7b607",
+      "result_id": "795f0507-a55d-469e-b557-78186caa2e42"
+    },
+    {
+      "claim_id": "5482172b-6800-4fcf-8ae6-b6536d5fd252",
+      "result_id": "11ea1113-45a9-4588-a535-a111db9bed2b"
+    },
+    {
+      "claim_id": "aba94270-9c9c-4ff0-9a2c-ac52fd75c02b",
+      "result_id": "11ea1113-45a9-4588-a535-a111db9bed2b"
+    },
+    {
+      "claim_id": "15dc1ad9-4c3f-4b22-9efb-86f745e400da",
+      "result_id": "11ea1113-45a9-4588-a535-a111db9bed2b"
+    },
+    {
+      "claim_id": "9a7e27d5-2314-417d-a491-c617f1cbb089",
+      "result_id": "11ea1113-45a9-4588-a535-a111db9bed2b"
+    },
+    {
+      "claim_id": "08455d05-58f7-4755-8637-15b86dfb971e",
+      "result_id": "11ea1113-45a9-4588-a535-a111db9bed2b"
+    },
+    {
+      "claim_id": "856f7dde-9429-4c8b-93f1-4a52f948352e",
+      "result_id": "11ea1113-45a9-4588-a535-a111db9bed2b"
+    },
+    {
+      "claim_id": "2dce5ee1-8e37-4b6a-a5a8-a5c31bf7b55c",
+      "result_id": "581471eb-41af-46e6-9e9e-e1649b031de9"
+    },
+    {
+      "claim_id": "9132738f-cb3a-4d18-9f07-bb15e938b1c6",
+      "result_id": "1c3ecd31-b90b-47d1-a997-e38a1266b193"
+    },
+    {
+      "claim_id": "ba60c1a8-d9c5-4067-a1f4-a71fc17f4e2d",
+      "result_id": "1c3ecd31-b90b-47d1-a997-e38a1266b193"
+    },
+    {
+      "claim_id": "7657f1b0-9e82-4f48-a0f9-fe703ec496fa",
+      "result_id": "1c3ecd31-b90b-47d1-a997-e38a1266b193"
+    },
+    {
+      "claim_id": "771e65e5-c5d1-4492-ae50-8456daff0e57",
+      "result_id": "1c3ecd31-b90b-47d1-a997-e38a1266b193"
+    },
+    {
+      "claim_id": "c7fb5459-5e51-40e9-9dcb-1e3008ed3a5b",
+      "result_id": "1c3ecd31-b90b-47d1-a997-e38a1266b193"
+    },
+    {
+      "claim_id": "39841896-70cf-4c52-a412-da456923b419",
+      "result_id": "1c3ecd31-b90b-47d1-a997-e38a1266b193"
+    },
+    {
+      "claim_id": "c39de3ae-c906-4f58-bfba-40f0f39525fb",
+      "result_id": "1c3ecd31-b90b-47d1-a997-e38a1266b193"
+    },
+    {
+      "claim_id": "0b1705af-bb8c-441f-90f3-a71b5f4c9788",
+      "result_id": "1c3ecd31-b90b-47d1-a997-e38a1266b193"
+    },
+    {
+      "claim_id": "e42ea883-af9b-439f-9e75-c14493456c05",
+      "result_id": "1c3ecd31-b90b-47d1-a997-e38a1266b193"
+    },
+    {
+      "claim_id": "845c89d4-6805-404a-88b0-ce4867710c85",
+      "result_id": "1c3ecd31-b90b-47d1-a997-e38a1266b193"
+    },
+    {
+      "claim_id": "2dcbe45a-2036-40ea-991d-f6826fc470ed",
+      "result_id": "1c3ecd31-b90b-47d1-a997-e38a1266b193"
+    },
+    {
+      "claim_id": "cfb820bd-99bc-4acb-b380-b8112542164a",
+      "result_id": "1c3ecd31-b90b-47d1-a997-e38a1266b193"
+    },
+    {
+      "claim_id": "41ba3d02-52e5-43b1-9ed8-a0969ad53b04",
+      "result_id": "1c3ecd31-b90b-47d1-a997-e38a1266b193"
+    },
+    {
+      "claim_id": "dfc47de1-c087-4d5b-add6-54c0344355ca",
+      "result_id": "1c3ecd31-b90b-47d1-a997-e38a1266b193"
+    }
+  ],
+  "comparisons": []
+}

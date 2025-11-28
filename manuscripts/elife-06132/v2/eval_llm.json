@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "SOX2 is specifically and transiently induced following erlotinib treatment in EGFR-mutant lung cancer cells. Microarray analysis identified SOX2 among 35 genes with >4-fold expression change (C15). SOX2 induction was observed in three EGFR-mutant cell lines (HCC827, PC9, H3255) at physiologically relevant erlotinib concentrations (0.1 \u00b5M) but not with chemotherapy (C16, C17), and not in other oncogene-driven cancer models (C18). The induction was specific to EGFR inhibition, confirmed by siRNA knockdown (C21) and actinomycin D experiments (C22), peaked at 24 hours, and returned to baseline despite continued treatment (C23, C24).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by multiple complementary experimental approaches including microarray, qPCR, immunoblot, and immunofluorescence data across multiple cell lines and conditions. The specificity is demonstrated through negative controls (chemotherapy, other oncogene-driven models) and mechanistic validation (siRNA, actinomycin D). The transient nature is clearly documented with time-course experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "SOX2 induction following erlotinib treatment is heterogeneous (~20% of cells expressing high levels) and stochastic rather than heritable. SOX2-expressing cells have very low proliferative index (0.15% Ki67+/SOX2+ vs 6.4% Ki67+/SOX2- following erlotinib, p<0.0001) (C32), do not correlate with stem cell markers (C31), and the heterogeneity is not enriched by repeated treatment (C33) or eliminated by single-cell cloning (C35), supporting a stochastic model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stochastic nature of SOX2 induction is well-supported by multiple lines of evidence: lack of correlation with stem cell markers, failure to enrich SOX2+ cells with repeated treatment, and regeneration of heterogeneity from single-cell clones. The low proliferative index is quantitatively demonstrated with statistical significance. The dose-response experiments (C30) provide additional support for the specificity of the response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "SOX2 is induced in vivo in EGFR-mutant xenografts following erlotinib treatment. In PC9 xenografts, SOX2+ nuclei increased from 0.2 to 7.4 per field (p<0.0001) after a single erlotinib dose (C36). Similar induction was observed in HCC827 xenografts (C37).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo validation is well-supported by quantitative immunohistochemistry data from multiple xenograft models with strong statistical significance. This extends the in vitro findings to a physiologically relevant setting that mimics clinical treatment responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "SOX2 induction in patient-derived EGFR-mutant cells requires effective EGFR inhibition. In T790M-resistant patient-derived cells, erlotinib failed to induce SOX2 (C38), but the T790M-selective inhibitor WZ4002 demonstrated both EGFR inhibition and SOX2 induction (C39).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The patient-derived cell data strongly support the specificity of SOX2 induction to effective EGFR inhibition. The differential response to erlotinib vs WZ4002 in T790M-mutant cells provides compelling evidence that SOX2 induction is mechanistically linked to EGFR pathway suppression rather than off-target drug effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "SOX2 modulates erlotinib-induced apoptosis and contributes to drug resistance. Ectopic SOX2 expression decreased erlotinib-mediated apoptosis (decreased PARP/caspase-3 cleavage) without altering EGFR signaling (C40, C41). Conversely, SOX2 knockdown increased erlotinib-induced apoptosis (C42, C43) and decreased emergence of resistant colonies (C45), without consistently affecting EGFR signaling (C44).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bidirectional experiments (gain-of-function and loss-of-function) with rescue experiments (C43) provide strong evidence for SOX2's role in modulating apoptosis. The lack of effect on EGFR signaling (C41, C44) indicates SOX2 acts downstream or in parallel to EGFR. The long-term resistance data (C45) extends the acute apoptosis findings to clinically relevant outcomes, though the mechanism linking transient SOX2 to stable resistance requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C7"
+    ],
+    "result": "SOX2 directly represses pro-apoptotic BH3-only genes BIM and BMF. Three of 14 BH3-domain proteins (BIM, BMF, HRK) showed reduced erlotinib-induced expression with ectopic SOX2 (C46). ChIP-seq identified SOX2 binding peaks within ~2kb of BIM and BMF transcriptional start sites (C47), with enhanced binding upon erlotinib treatment (C48). Knockdown of BIM or BMF decreased erlotinib-induced apoptosis, with additive effects when combined (C49).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanism is well-supported by multiple complementary approaches: expression analysis identifying candidate targets, ChIP-seq demonstrating direct binding, ChIP-qPCR showing treatment-dependent binding enhancement, and functional validation through knockdown experiments. The additive effect of combined BIM/BMF knockdown (C49) supports their independent contributions to apoptosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C63"
+    ],
+    "result": "FOXO6 specifically mediates erlotinib-induced SOX2 expression. Bioinformatic analysis identified enriched FOXO binding motifs in erlotinib-induced genes (C50). All FOXO family members were expressed and induced by erlotinib (1.6-4.4-fold) (C51), but only FOXO6 knockdown dramatically reduced SOX2 induction (C52, C53), without consistently affecting other EGFR signaling components (C54). This specificity occurred despite all four FOXO isoforms being expressed, induced, and phosphorylated (C63).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of FOXO6 as the specific regulator is well-supported by systematic knockdown experiments testing all FOXO family members individually and in combination, with multiple independent siRNAs validating the FOXO6-specific effect. The bioinformatic prediction (C50) and biochemical validation (C51) provide mechanistic context. However, the molecular basis for FOXO6 specificity despite similar expression and regulation of other FOXO isoforms remains unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "FOXO6 expression is heterogeneous and partially colocalizes with SOX2 in both untreated and erlotinib-treated cells (C55). FOXO6 differs from other FOXO proteins in being constitutively nuclear-localized even when inactive (C56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The colocalization data (C55) are supported by immunofluorescence imaging. The nuclear localization property of FOXO6 (C56) is established knowledge from prior literature and provides a plausible explanation for its specific role, though the correlation between FOXO6 and SOX2 heterogeneity could be more rigorously quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "High baseline SOX2 expression contributes to erlotinib resistance in HCC2935 cells. This EGFR-mutant cell line with unexplained erlotinib resistance (C57) expresses SOX2 in 90% of cells at baseline (vs 3% in HCC827 and <1% in PC9) (C58). SOX2 knockdown dramatically increased erlotinib sensitivity (IC50 from 0.8 \u00b5M to 0.1 \u00b5M), with increased BIM levels and PARP/caspase-3 cleavage (C59, C60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HCC2935 model provides compelling evidence that constitutive SOX2 expression can mediate intrinsic erlotinib resistance. The dramatic shift in IC50 with SOX2 knockdown and the mechanistic consistency with BIM regulation strengthen the conclusion. However, this is a single cell line example, and the generalizability to clinical resistance mechanisms requires validation in additional models or patient samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "FOXO6 activation involves both AKT-dependent and independent pathways, and other SOX2 regulatory pathways have modest effects. PI3K inhibitors alone are insufficient for SOX2 induction (C64). Other pathways implicated in SOX2 regulation (FGF10, WNT/beta-catenin, TTF1) had relatively modest effects compared to FOXO6 (C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data support FOXO6 as the dominant pathway for erlotinib-induced SOX2 expression in this context. The PI3K inhibitor experiments (C64) indicate complexity beyond simple AKT regulation. The comparison with other pathways (C65) strengthens the conclusion about FOXO6 dominance, though the experimental details of these pathway manipulations are limited in the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C75"
+    ],
+    "result": "The authors favor a stochastic model for SOX2 heterogeneity based on lack of stem cell marker correlation, failure to enrich SOX2+ cells with repeated treatment, and regeneration of heterogeneity from single-cell clones (C73). Despite heterogeneous and transient expression, SOX2 contributes to emergence of stable acquired resistance, as demonstrated by decreased resistant colony formation with SOX2 knockdown (C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stochastic model is well-supported by the experimental evidence cited (from C31, C33, C35). The connection to stable resistance (C75) is supported by the colony formation data, though the mechanism by which transient, stochastic SOX2 expression leads to stable resistance remains incompletely explained and represents an important area for future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background on EGFR-mutant lung cancer treatment and resistance mechanisms. Erlotinib treatment results in dramatic regression followed by invariable resistance (C1). Known resistance mechanisms include T790M gatekeeper mutation (C8), MET amplification or downstream kinase activation (C9), and phenotypic conversions including EMT and histological transformation (C10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established clinical observations supported by extensive prior literature. The claims accurately represent the current understanding of EGFR inhibitor resistance mechanisms and provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Prior work has proposed that transient drug-tolerant states may precede heritable resistance (C11). In PC9 cells, ~0.3% of cells survive EGFR inhibition as drug-tolerant persisters expressing CD133 and KDM5A (C12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent prior work from the literature and provide important context for interpreting the SOX2 findings. The distinction between drug-tolerant persisters and SOX2+ cells is addressed in later claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "SOX2+ cells differ from previously described drug-tolerant persisters (DTPs). DTPs emerge at higher drug concentrations, constitute a lower percentage of cells, and express CD133/KDM5A (C76, C77), which SOX2+ cells do not. DTPs occur across multiple cancer types and treatments, while SOX2 induction is specific to EGFR inhibition in EGFR-addicted cells (C78). The authors propose SOX2 induction as an early response that may enhance survival and facilitate progression to DTPs and stable resistance (C79).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The distinctions from DTPs are well-documented (C76-C78), but the proposed hierarchical relationship (C79) is speculative. While the data show SOX2 contributes to survival and resistance, the mechanistic connection between transient SOX2 expression and stable resistance mechanisms remains unclear. The model is plausible but requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on SOX2 function and cancer biology. SOX2 is a master transcriptional regulator involved in stem cell maintenance and iPS generation (C25), required for upper aerodigestive tract development (C26), amplified in esophageal and squamous lung cancers (C27), but not previously implicated in lung adenocarcinomas including EGFR-mutant cases (C28).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge about SOX2 and provide appropriate context for the novelty of the findings in EGFR-mutant lung adenocarcinoma.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Background on FOXO protein function. FOXO1 is highly expressed in ES cells and implicated in pluripotency through SOX2 activation (C61). All FOXO proteins bind similar DNA sequences with isoform-specific activity conferred by cellular and promoter context (C62).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge from prior literature and provide context for understanding FOXO6's role in SOX2 regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Background on BMF function and SOX2 binding to apoptotic genes. BMF binds a subset of BCL-2 family members (BCL-2, BCL-xL, BCL-w) (C66). SOX2 binding to BIM/BMF is consistent with reprogramming factors binding anti-apoptotic gene promoters during iPS generation (C67).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge and provide mechanistic context for the SOX2-BIM/BMF regulatory relationship observed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Comparison with SOX2 regulation in wild-type EGFR cancers. In wild-type EGFR lung cancers, EGFR activation upregulates SOX2, decreasing apoptosis through BCL2L1, a phenomenon absent in EGFR-mutant cancers (C68). A similar pathway was reported in prostate cancer with wild-type EGFR (C69). The authors propose the EGFR-FOXO6-SOX2-BIM/BMF pathway is specific to mutant EGFR-dependent cells (C70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with prior literature is accurate and highlights an important distinction between wild-type and mutant EGFR contexts. The proposed specificity (C70) is supported by the experimental data showing SOX2 induction only in EGFR-mutant cells treated with effective EGFR inhibitors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "Background on feedback mechanisms in targeted therapy. RAF/MEK inhibitors in BRAF-mutant melanoma relieve ERK-dependent inhibition of RAS/CRAF, potentially causing paradoxical proliferation (C13). In BRAF-mutant colorectal cancer, feedback activation of EGFR signaling attenuates BRAF inhibition effects (C14).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge about feedback mechanisms in targeted therapy and provide important context for understanding the SOX2-mediated feedback loop as part of a broader pattern in oncogene-targeted therapies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "Alternative models for cellular heterogeneity. Heterogeneous responses could reflect intrinsic subpopulations with heritable traits (C71) or stochastic variation in signaling pathways (C72). A stochastic model for TRAIL-induced apoptosis has been described where cell-to-cell variation in signaling proteins leads to differential apoptosis (C74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent alternative hypotheses and prior work on stochastic cell fate decisions, providing appropriate context for interpreting the SOX2 heterogeneity data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "High basal SOX2 may blunt initial response to EGFR inhibitors in some cases, as suggested by HCC2935 cell data (C80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This interpretation is supported by the HCC2935 data (C57-C60) showing high baseline SOX2 and resistance that is reversed by SOX2 knockdown. However, this is based on a single cell line and the generalizability requires validation.",
+    "result_type": "MINOR"
+  }
+]

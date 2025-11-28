@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "A large fraction of lncRNAs (28.6-81.9% depending on species) associate with ribosomes, with ribosome density significantly higher than expected by spurious binding. Over 90% of coding transcripts showed ribosome association across all species studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22-C23, C26, C28-C32 provide converging evidence from ribosome profiling data across six species (Table 2, Figures 2-3). The statistical comparison to 3'UTR null model (C29-C32) demonstrates that ribosome association is significantly above background, with 90.12% of lncRNAs rejecting the null hypothesis at p<0.05.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C71",
+      "C72",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The patterns of ribosome protection in lncRNAs are consistent with translation of short peptides, showing high ribosome density in primary ORFs and 5'UTRs but minimal density in 3'UTRs and interORF regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C54, C71-C72, C94-C97 are supported by detailed analysis of ribosome profiling patterns across transcript regions (Figure 5). The data show translation-like signatures with strong ribosome protection in ORFs and 5'UTRs but not 3'UTRs, consistent across multiple species with appropriate statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C73",
+      "C79",
+      "C80"
+    ],
+    "result": "lncRNAs show similar coding potential to evolutionarily young protein-coding genes, with coding scores significantly higher than random ORFs. About 35-40% of human and mouse lncRNA primary ORFs displayed coding scores significantly above non-coding expectations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C40-C44, C73, C79-C80 are supported by hexamer-based coding score analysis (Figure 6) comparing lncRNAs to intronic sequences and age-stratified coding genes. Statistical tests show lncRNA coding scores are significantly higher than intronic ORFs (p<10^-16 in most species) and indistinguishable from young coding genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C79",
+      "C90",
+      "C91"
+    ],
+    "result": "lncRNAs show similar sequence constraints (PN/PS ratios) to young protein-coding genes and may play an important role in de novo protein evolution, potentially representing intermediate states in the evolution of new proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C49-C53, C79 are supported by polymorphism analysis (Figure 7) showing lncRNAs have PN/PS ratios similar to young coding genes. However, claims C90-C91 about lncRNAs being intermediate states in de novo gene evolution are speculative inferences not directly tested. The evolutionary role requires additional evidence beyond sequence similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C36",
+      "C37",
+      "C38",
+      "C76"
+    ],
+    "result": "lncRNAs show remarkably low cross-species conservation (0-15.6% with homologues except zebrafish at 49.4%), in contrast to coding RNAs (>95% for vertebrates). Even after removing conserved lncRNAs, ribosome association remains prevalent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17, C36-C38, C76 are supported by BLASTP sequence similarity searches and prior citations. The low conservation is consistent across species and contrasts sharply with coding sequences. The persistence of ribosome association after filtering conserved lncRNAs (C38) strengthens the conclusion that lineage-specific lncRNAs associate with ribosomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Translational efficiency (TE) comparisons between lncRNAs and codRNAs showed species-specific patterns: TE was higher in codRNAs than lncRNAs in human, fruit fly, and yeast, but the opposite in mouse and zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by statistical analysis of TE values (Figure 4, Wilcoxon tests p<0.005 and p<0.05). The authors acknowledge technical differences between species may contribute to variation. Despite inconsistencies across species, the data clearly show lncRNAs can achieve TE values comparable to or exceeding codRNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "lncRNAs are shorter than codRNAs, expressed at lower levels, and contain short ORFs (average 43-68 amino acids). Primary ORFs in lncRNAs occupy a smaller fraction of transcripts than in codRNAs, with most corresponding to proteins <100 amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 are supported by transcript characterization data (Figure 1, Figure 5A, Supplementary files). Statistical tests confirm significant differences in length and expression (Wilcoxon test p<10^-5). The characterization is consistent with prior literature and provides essential context for interpreting ribosome profiling results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C57"
+    ],
+    "result": "Short proteins (24-80 amino acids) are more difficult to detect in proteomics databases than longer proteins, with only 42.6-46.6% detected in human and mouse compared to >75% for longer proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C57 are supported by proteomics database analysis (Table 3) comparing detection rates across protein size ranges. This provides important context for why lncRNA-encoded peptides may be underrepresented in databases, though it does not directly demonstrate that lncRNAs produce functional proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C84"
+    ],
+    "result": "Pseudogenes showed extensive association with ribosomes, with the majority of pseudogenes in human, mouse, and Arabidopsis showing ribosome association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C84 are supported by ribosome profiling data (Supplementary file 1A). The authors note this is surprising and suggest either the translation machinery is not selective or some pseudogenes produce functional proteins. This finding raises questions about translation specificity but is adequately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Many novel, non-annotated lncRNAs were discovered through de novo transcript assembly, especially in zebrafish, mouse, and fruit fly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is supported by transcript assembly results (Table 2) showing 2488 novel lncRNAs across species. This methodological contribution expands the lncRNA catalog, particularly for species with incomplete annotations, and strengthens the generalizability of findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The percentage of lncRNAs that may undergo nonsense-mediated decay (NMD) is estimated at 4.47-14.11% depending on species, comparable to protein-coding transcripts (0.34-13.33%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by analysis of NMD candidate transcripts based on stop codon position relative to splice junctions. The low percentages suggest most ribosome-associated lncRNAs are not subject to NMD, though this analysis is limited to one surveillance mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "In general, lncRNAs are not truncated duplicated copies (pseudogenes), based on low homology to annotated proteins in the same species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by BLASTP searches showing very low homology (0-12.4% except zebrafish at 47.5%) between lncRNA ORFs and annotated proteins within species. The zebrafish exception is attributed to incomplete protein-coding annotations. This inference is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Five human lncRNAs associated with ribosomes that exhibited high coding scores were re-annotated as protein-coding transcripts in a subsequent Ensembl release (version 75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by comparison with later Ensembl annotations (Supplementary file 2C). This provides independent validation that some lncRNAs identified by the authors' methods are indeed coding, though the small number limits generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15",
+      "C83",
+      "C103"
+    ],
+    "result": "lncRNAs are expressed at significantly lower levels than codRNAs across all species studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C83, C103 are supported by expression analysis (Figure 1B) with statistical testing (Wilcoxon test p<10^-5). This is consistent with prior literature (citations provided) and has implications for the amount of translated peptide expected from lncRNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Young protein-coding genes (primate-specific transcripts) encode proteins averaging 148 amino acids with 47% transcript coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by analysis of experimentally validated young proteins. These characteristics are similar to lncRNAs, supporting the comparison between lncRNAs and young coding genes. The data provide important context for interpreting coding potential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "A fraction of lncRNAs have not acquired the capacity to be translated, as evidenced by lack of ribosome association and lower coding scores in lncRNA_noribo compared to lncRNA_ribo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by comparison of lncRNAs with and without ribosome association (Figure 6\u2014figure supplement 1). The inference that some lncRNAs lack translation capacity is reasonable, though alternative explanations (e.g., low expression, technical limitations) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C27",
+      "C47",
+      "C55",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C82",
+      "C85",
+      "C88",
+      "C89",
+      "C92",
+      "C93"
+    ],
+    "result": "Background and literature context on lncRNAs, ribosome profiling, short proteins, and de novo gene evolution from prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3, C8-C21, C27, C47, C55, C58-C69, C74-C75, C77-C78, C82, C85, C88-C89, C92-C93 represent established knowledge or prior findings supported by appropriate citations. These provide essential context but are not novel findings of this study. The citations appear appropriate and accurately represent prior work.",
+    "result_type": "MINOR"
+  }
+]

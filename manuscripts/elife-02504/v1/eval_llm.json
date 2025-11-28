@@ -1,0 +1,385 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "House mice represent a valuable model system for studying speciation, with three subspecies (M. m. musculus, M. m. domesticus, and M. m. castaneus) that diverged ~500,000 years ago and form a hybrid zone in central Europe where male hybrids show reduced fertility. Previous studies have identified sterility loci including Prdm9, and sterility alleles are polymorphic within subspecies with variable severity in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C15 establish the biological context through citations to published literature. The characterization of the house mouse system, divergence times, hybrid zone geography, and previous genetic findings are well-supported by multiple citations to peer-reviewed studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The mapping population consists of 185 first-generation lab-bred male offspring from wild-caught hybrid mice. Testis expression PC1 (explaining 14.6% variance) is significantly correlated with relative testis weight (r=0.67, p=2\u00d710\u207b\u00b9\u2076), while PC2 (8.1% variance) correlates with hybrid index (r=0.75, p=2\u00d710\u207b\u00b9\u2076). Approximately 10-12% of individuals show phenotypes below the pure subspecies range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 describe the study design and phenotypic characterization with specific statistical values. The correlations are highly significant and the sample sizes are clearly stated. The phenotypic data provide a foundation for subsequent mapping analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "GWAS identified 4 SNPs in 3 X-chromosomal regions significantly associated with relative testis weight using stringent permutation thresholds, with 51 additional SNPs significant at FDR<0.1, clustering in 12 genomic regions across the X and 9 autosomes. For expression PC1, 104 SNPs on the X and chromosome 1 were significant by permutation, with 349 additional SNPs at FDR<0.1, clustering in 50 regions across 18 autosomes and the X.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 present the primary GWAS results with specific numbers of significant SNPs and genomic regions. The use of both stringent permutation-based thresholds and FDR thresholds is appropriate. Results are supported by data in Tables 1-2 and Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "There is substantial and statistically significant overlap between testis weight and expression PC1 mapping results (48/55 SNPs, 9 regions), with permutation testing confirming non-random overlap (p<0.0001). Most significant SNPs for both phenotypes show enrichment for trans-eQTL associations (RTW: 49/55 SNPs, 8/12 regions; PC1: 440/453 SNPs, 50/50 regions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 demonstrate convergent evidence from multiple phenotypes. The permutation test (C30) provides strong statistical support for non-random overlap. The trans-eQTL enrichment (C31) adds biological plausibility to the identified loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Epistasis analysis identified 142 significant pairwise interactions for relative testis weight (22 region pairs, representing minimum 13 autosomal-autosomal and 5 X-autosomal interactions) and 44,145 significant interactions for expression PC1 (913 region pairs, representing minimum 144 autosomal-autosomal and 18 X-autosomal interactions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 present the epistasis results with specific numbers. The interaction analysis used appropriate mixed models to account for relatedness. The large number of interactions for PC1 compared to testis weight is consistent with the greater number of significant loci identified for PC1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Interactions had greater phenotypic effects than single loci (RTW: single locus mean=-1.81 mg/g, interaction mean=-4.07 mg/g; PC1: single locus mean=-81.51, interaction mean=-130.77). Most interactions (86.3% for RTW, 96% for PC1) produced phenotypes below the pure subspecies range, consistent with Dobzhansky-Muller incompatibilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 quantify effect sizes and demonstrate that interactions produce more severe phenotypes than single loci. The observation that most interactions fall below pure subspecies ranges (C37) provides strong evidence for hybrid incompatibilities, though the authors appropriately note these are rough estimates not accounting for family structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Simulations (90,000 total) assessed mapping performance across 9 genetic architectures. Power to detect causative loci depended on chromosomal location, dominance, and allele frequency. The majority of significant SNPs (62.7%) were within 10 Mb of causal SNPs, with 83.4% of loci detected at 1-10 Mb also having significant SNPs within 1 Mb. Using permutation thresholds, median false positive rate was 0.014, while FDR<0.1 threshold yielded 0.280.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40, C77-C81 describe comprehensive simulation analyses validating the mapping approach. The simulations appropriately used empirical genotype data and phenotype distributions. The finding that FDR<0.1 is more permissive than expected (C81) is important for interpreting results and is honestly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Most sterility loci interact with more than one partner locus, with all loci except one showing evidence for interaction with at least one partner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 summarize the network structure of incompatibilities. This is supported by the interaction analysis results (C32-C35) showing extensive epistasis. The finding of multiple interaction partners per locus is a key biological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C95",
+      "C96"
+    ],
+    "result": "The hybrid zone mapping achieved high resolution, with median region size of 2.1 Mb (much smaller than F2 QTL at 35.1 Mb). A majority of GWAS regions contain 10 or fewer protein-coding genes (8/12 testis-weight regions, 28/50 expression PC1 regions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C95-C96 demonstrate the advantage of hybrid zone mapping for fine-mapping. The comparison to F2 studies (C44) is supported by citation. The gene counts are based on genome annotation and provide practical value for future studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Several loci identified in natural hybrids are novel, while a majority are concordant with previously identified sterility QTL. However, genome-wide patterns of overlap with previous studies were not statistically significant (p>0.05, 10,000 permutations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 compare results to previous studies. The lack of genome-wide statistical significance (C47) is honestly reported despite qualitative concordance (C46). This suggests both shared and population-specific sterility loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "None of the GWAS regions overlap Prdm9 (chromosome 17, 15.7 Mb), though one expression PC1 region (PC42) is ~4 Mb proximal to Prdm9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 report the relationship to the only known mammalian hybrid incompatibility gene. The lack of direct overlap is clearly stated, with the nearest region identified. This is important for understanding which incompatibilities are detected in the hybrid zone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Three testis weight regions and five expression PC1 regions map to the X chromosome, all surpassing stringent permutation-based significance thresholds. Domesticus alleles were associated with the sterile pattern for most X-linked loci in hybrid zone mice, contrasting with F1 studies where musculus X is typically implicated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 identify X-linked contributions with strong statistical support (C52). The finding that domesticus alleles are sterile (C53) contrasts with F1 studies and is supported by data in Tables 1-2. This suggests recessive autosomal interactions are important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C108"
+    ],
+    "result": "F1 hybrids are essentially absent in nature because the hybrid zone is \u226530 km wide. Recessive autosomal loci acting in F2 and advanced generation hybrids contribute to reproductive isolation maintenance. The identification of domesticus-sterile X alleles only beyond F1 suggests interactions with recessive autosomal partners are essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C108 provide evolutionary interpretation of the genetic architecture. The inference about F1 rarity (C54) is supported by citations. The conclusion about recessive autosomal loci (C55, C108) logically follows from the contrast between F1 and hybrid zone results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Combined mapping results provide multiple lines of evidence for all 50 PC1 regions and 9/12 testis weight regions. Three testis-weight regions (RTW04, RTW05, RTW08) lacking expression associations are weaker candidates and more likely spurious.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 integrate evidence across phenotypes. The logic that spurious associations are unlikely to be shared (C94) supports confidence in regions with multiple lines of evidence. The honest assessment of weaker candidates (C88) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Candidate genes with known reproductive roles were identified in 4 testis-weight regions and 17 expression PC1 regions. However, for the majority of regions (8/12 RTW, 33/50 PC1), no genes previously linked to fertility were found.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 summarize gene annotation results from Tables 1-2. The finding that most regions lack known fertility genes (C99) highlights the potential for discovering novel reproductive genes and the limitations of current knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Some genetic interactions identified in hybrid zone mice are concordant with F2 mapping studies. An interaction between chromosome 12 and central X (RTW11, PC49) overlaps an F2 testis expression interaction. The 4.3 Mb overlap region on chromosome 12 contains 12 genes including Arl4a (knockout shows low testis weight/sperm count).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 identify specific concordant interactions supported by Figure 2-supplement 1 and citations. The identification of Arl4a (C102) as a candidate is supported by knockout phenotype data, providing a strong lead for future studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Five testis-weight regions and 18 expression PC1 regions overlap candidate regions from hybrid zone genomic clines analysis, but patterns of overlap were not statistically significant (p>0.05, 10,000 permutations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 compare GWAS results to genomic cline analysis. The lack of statistical significance (C105) is honestly reported. This suggests that not all sterility loci show strong signatures of reduced introgression, possibly due to polymorphism or weak selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C109"
+    ],
+    "result": "The musculus X has been repeatedly implicated in F1 and F2 sterility studies. An F2 testis expression-QTL study showed domesticus ancestry in the central/distal X associated with sterile expression. The importance of recessive sterility alleles was demonstrated by discovery of multiple novel recessive loci in F2 mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107, C109 summarize prior work through citations to review articles and specific studies. These provide context for interpreting the current results, particularly the contrast between F1 and advanced generation findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "This is the first GWAS for a reproductive barrier trait and provides the first genome-scale description of a hybrid incompatibility network in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 assert the novelty of the study. These claims are reasonable given the literature review and the comprehensive nature of the interaction analysis. The combination of GWAS in natural hybrids with extensive epistasis testing is indeed novel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Studies in Drosophila show sterility loci with multiple interaction partners (D. pseudoobscura: 7 loci interact; D. koepferae-D. buzzatii: many small-effect loci). These suggest biological pathways/networks are affected by multiple Dobzhansky-Muller interactions with synergistic effects. Variation in effect sizes might reflect variation in network involvement and gene centrality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 cite comparative studies in Drosophila to contextualize findings. C113 is appropriately speculative about mechanisms. The comparative framework strengthens interpretation of the mouse results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The Dobzhansky-Muller model predicts a 'snowball effect' of faster-than-linear incompatibility accumulation, with empirical support in Drosophila and Solanum. However, the results showing most loci have many interaction partners are not consistent with the snowball model's assumption of independent incompatibilities, suggesting network models may be more accurate for house mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 establish theoretical context through citations. C116-C117 present an important inference that the data are inconsistent with independent incompatibilities. This is logically supported by the extensive epistasis (C41-C42) and appropriately cites alternative network models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "Because deleterious effects of a sterility allele are not dependent on a single partner allele, the marginal effect of each locus and visibility to selection are less sensitive to allele frequencies at any single partner locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 presents a logical inference about evolutionary dynamics given multiple interaction partners per locus. This follows from the network structure (C41-C42) and has implications for understanding hybrid zone maintenance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C4",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Many generations of admixture enable high-resolution mapping. Incompatibility alleles are not subject to negative selection within species and may be at high frequency, so prevalence of affected individuals in hybrid zones may be much higher than for deleterious traits in pure populations. Combining multiple sterility-related phenotypes substantially improved power, as spurious associations are unlikely to be shared across phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C91-C94 explain the rationale and advantages of the hybrid zone mapping approach. The logic is sound: incompatibility alleles can be common within species (C91), leading to higher prevalence in hybrids (C92), and multi-phenotype mapping reduces false positives (C93-C94).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The study used 185 mice from 63 mating pairs (37 females, 35 males), housed individually after weaning. Phenotyping measured testis and body weight at 9-12 weeks (correlation=0.29, p=4.9\u00d710\u207b\u2075). Expression was measured in 179 males using 43,379-probe microarrays, with 36,323 probes retained after filtering. Genotyping used Mouse Diversity Arrays (584,729 SNPs), with 156,204 SNPs retained after quality control. Association mapping used GEMMA with kinship correction. Permutation-based significance thresholds and FDR<0.1 were applied. Interaction testing examined 692 RTW and 82,428 PC1 SNP pairs using mixed models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C76 comprehensively describe methods. Sample sizes, protocols, quality control steps, and statistical approaches are clearly specified. The methods are appropriate for the study design and enable reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "General features of genetic architecture (number of incompatibilities, number and effect size of interacting loci) are arguably more likely to be shared among organisms than specific hybrid sterility genes. Comparison of these features among taxa may reveal commonalities of the speciation process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C120 are speculative about comparative patterns in speciation. While this is a reasonable hypothesis, it remains to be tested with data from additional taxa. The claims are appropriately presented as speculation about future research directions.",
+    "result_type": "MINOR"
+  }
+]

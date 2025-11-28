@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C70"
+    ],
+    "result": "The study successfully models eve stripe 2 across the entire fly embryo at cellular resolution using logistic regression with known regulators (Hb, Bcd, Gt, Kr). The linear model correctly classifies 86% of nuclei within stripe 2, while the quadratic model achieves 93% accuracy. The models define eve expression around the entire circumference of the embryo, following the dorsal-ventral curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C18-C21, and C70 collectively demonstrate successful modeling of eve stripe 2 at cellular resolution. The quantitative accuracy metrics (86% and 93% for linear and quadratic models respectively, C19-C20), visual predictions matching experimental patterns (C18, C21), and the ability to capture 3D spatial patterns (C21) provide strong converging evidence. The models are trained on a well-characterized dataset with 6078 nuclei and validated against known biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C42",
+      "C43",
+      "C44",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The study successfully models eve stripes 3 and 7 across the entire embryo using two alternative approaches: a linear model with four regulators (Hb, kni, Gt, tll) and a quadratic model with three regulators (Hb, kni, tll) treating Hb as a dual regulator. The quadratic model is simpler, has more clearly defined borders, is more robust to training data choices, and performs better when all 38 candidate regulators are included.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C42-C51 demonstrate successful modeling of eve stripes 3+7. Both models produce good predictions (C47), but the quadratic model shows superior properties: simplicity (C48), sharper borders (C49), robustness to training data (C50), and resistance to overfitting (C51). The evidence includes visual predictions, quantitative metrics in Table 2, and systematic comparisons across different training conditions shown in supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C101"
+    ],
+    "result": "The regulator discovery approach successfully recovers known regulators for eve stripe 2 by training all possible linear models using four out of 38 regulators (73,815 models total). The best-scoring model comprises the known regulators Hb, Bcd, Gt, and Kr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, and C101 demonstrate that the computational regulator discovery method successfully identifies known regulators. The exhaustive search of 73,815 models (C101) and recovery of the four known regulators (C24) provides strong validation of the approach. This serves as an important positive control showing the method can identify correct regulators from a large candidate pool.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C46"
+    ],
+    "result": "The study identifies tailless (tll) as a new candidate regulator for eve stripes 3 and 7, specifically for repressing expression posterior to stripe 7. This regulator was identified through systematic regulator discovery and included in both the linear and quadratic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C42, and C46 support the identification of tll as a new candidate regulator. The regulator discovery process identified tll (C42), and while prior work had proposed tll with conflicting roles (C46), the current models consistently identify it as a repressor. However, the claim is somewhat weakened by the lack of direct experimental validation of tll's role, relying instead on computational prediction and consistency with prior inconclusive studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C102",
+      "C103"
+    ],
+    "result": "The models accurately predict the effects of TF perturbations for eve stripe 2, including mutations of Bcd, Hb, Gt, and Kr. The quadratic model correctly predicts the Bcd null mutant pattern, while both models correctly predict the effects of Gt and Kr mutations. Perturbations were simulated by setting regulator concentrations to zero without retraining the models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32-C35, C102-C103 demonstrate accurate prediction of perturbation effects. The quadratic model correctly predicts the Bcd mutant (C32), which the linear model fails to do (C33), and both models correctly predict Gt and Kr mutant effects (C35). The methodology is clearly described (C102-C103), and predictions are validated against published experimental results shown in Figure 3. This provides strong independent validation of the models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C55",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The models show mixed success in predicting perturbation effects for eve stripes 3+7. For kni mutants, the linear model correctly predicts full extension between stripes while the quadratic model does not without adjustments. For hb mutants, the linear model predicts both stripes well, while the quadratic model predicts stripe 3 accurately (including anterior shift) but fails to predict stripe 7 expression without adjustments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C55 and C59-C61 show that neither model perfectly predicts all perturbation effects without modifications. The linear model performs better for kni mutants (C54) while the quadratic performs better for some aspects of hb mutants (C60). The authors propose several biologically plausible adjustments to reconcile the quadratic model with experimental data, but these post-hoc modifications reduce confidence in the model's predictive power. The need for adjustments suggests incomplete understanding of the regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The quadratic models for eve 2 and eve 3+7 predict the fine-scale effects of misexpression experiments with remarkable accuracy, including stripe bending and bulging under hb misexpression and repression under kni misexpression. The linear models fail to predict these fine-scale effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 demonstrate that quadratic models successfully predict complex spatial effects of misexpression experiments. The ability to predict stripe bending and bulging (C63) represents a stringent test of model accuracy, as these are subtle spatial effects not used in training. The comparison with linear models (C65) and validation against published experimental results (Figure 7) provide strong support. This represents a particularly impressive validation of the quadratic model's predictive power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The linear model identifies Bcd as a repressor of eve stripe 2, contradicting most existing literature that defines Bcd as an activator. However, this apparent paradox is explained by observations that the eve 2 enhancer is inactive in the anteriormost region despite high Bcd concentrations and low repressor concentrations, suggesting Bcd provides positional information as both a repressor and activator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 identify an important discrepancy between the linear model and prior literature, but provide a mechanistic explanation. The observation that the enhancer is inactive in the anterior despite favorable conditions (C28) supports the dual role hypothesis (C29). The quadratic model reconciles these observations by allowing Bcd to act as a repressor at high concentrations and activator at lower concentrations (C30-C31). This is supported by the model's superior performance in predicting Bcd mutant effects (C32).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C6",
+      "C7",
+      "C73",
+      "C74",
+      "C75",
+      "C77",
+      "C78"
+    ],
+    "result": "The models demonstrate that a straightforward statistical relationship without pairwise TF interactions or TF-specific thresholds can explain eve's complex spatial expression. The combined action of multiple morphogens with a threshold applied to the overall balance of activators and repressors (rather than to each factor individually) is sufficient to read positional information from measured gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C6-C7, C73-C75, C77-C78 collectively support a key mechanistic insight: complex spatial patterns can emerge from simple linear combinations of TF concentrations without requiring pairwise interactions. The success of linear and quadratic models (which lack explicit pairwise interaction terms) in predicting stripe patterns, perturbation effects, and misexpression experiments provides strong evidence. This challenges previous assumptions about the necessity of complex combinatorial interactions and suggests a simpler underlying logic for transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C80",
+      "C84",
+      "C85"
+    ],
+    "result": "The study concludes that quadratic models incorporating concentration-dependent dual regulation are most likely for both eve 2 and eve 3+7, and hypothesizes this is due to concentration-dependent differences in protein-protein interactions, possibly mediated by the arrangement of TF binding sites in enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66, C80, C84-C85 represent the authors' preferred interpretation, but the evidence is mixed. While the quadratic models show advantages in some tests (misexpression predictions, Bcd mutant predictions), they require post-hoc adjustments to explain other perturbations (kni and hb mutants for eve 3+7). The mechanistic hypothesis about protein-protein interactions (C85) is speculative and lacks direct experimental support. The conclusion that quadratic models are 'most likely' (C66) is reasonable given the totality of evidence, but alternative explanations cannot be ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C82",
+      "C83"
+    ],
+    "result": "The study demonstrates that simple functional forms relating TF concentrations to eve expression are highly predictive of wild-type and mutant patterns, proving that precise positional information is available in the early embryo. The models can predict which TFs are relevant for each enhancer and whether they act as activators or repressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68, C82-C83 summarize the overall success of the modeling approach. The high accuracy of predictions for wild-type expression (86-93% for stripe 2, good predictions for stripes 3+7), successful prediction of multiple perturbation experiments, and recovery of known regulators provide strong evidence. The demonstration that measured TF concentrations contain sufficient information to specify precise spatial patterns (C68) is a significant finding that addresses fundamental questions about positional information in development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C71",
+      "C72",
+      "C86"
+    ],
+    "result": "The study provides a general and quantitative method for elucidating regulation in diverse biological systems. The modeling framework is quick to apply, assigns regulatory roles in a context-specific manner, and is especially useful for misexpression studies and studying poorly characterized enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C71-C72, C86 describe the broader applicability and advantages of the approach. The ability to fit 73,815 models (C72), assign context-specific roles (C71), and make accurate predictions for misexpression experiments (C86) support these claims. However, the generalizability to other systems (C9) is somewhat speculative, as the method has only been demonstrated for eve enhancers in Drosophila. The approach requires high-quality cellular-resolution data, which may limit applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The study provides background on eve expression pattern, enhancer organization, and the Virtual Embryo dataset. Eve is expressed in seven stripes, each a few nuclei wide, controlled by specific enhancers. The Virtual Embryo provides cellular resolution data for 6078 nuclei with expression measurements of 95 genes at six time points. Modeling pair-rule expression accurately across the whole embryo has been a significant challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 provide essential background information that is well-established in the literature (with appropriate citations) and accurately describes the dataset used. These claims establish the context and motivation for the study, including the challenge of modeling pair-rule genes (C14) and the quality of available data (C15-C17). This background is necessary for understanding the significance of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The study describes the methodological approach: models were trained on the third time point (~30 min before gastrulation) when stripe borders are sharpening. Nuclei were categorized as ON or OFF using a threshold of 0.2. The dataset included mRNA measurements for 34 genes and protein measurements for 4 genes. Logistic regression was selected to link continuous TF concentrations to binary eve expression states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C100 describe the methodological choices, which are clearly documented and justified. The choice of time point (C89-C90), threshold (C91-C92), regulators (C93-C95), and statistical method (C96-C97) are all reasonable and well-explained. The training procedure (C98-C100) is clearly described. These methodological details are essential for reproducibility and interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C45",
+      "C46"
+    ],
+    "result": "The study provides background on eve stripes 3 and 7 regulation. These stripes are regulated together by a single enhancer, with Hb and Kni as known regulators. Kni represses between stripes while Hb represses in anterior and posterior regions. However, measured concentrations of Hb and kni alone are insufficient for accurate modeling. Concentration-dependent regulation by Hb has been suggested by previous work, and tll has been proposed as a regulator of stripe 7 with conflicting roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41, C45-C46 provide background on eve 3+7 regulation based on prior literature (with appropriate citations). The observation that Hb and kni alone are insufficient (C40-C41) motivates the regulator discovery approach. The references to prior work on concentration-dependent regulation (C45) and tll (C46) provide context for the modeling choices. This background is accurate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The study describes prior experimental results on kni and hb perturbations. In kni mutants, eve 3+7 reporter expression extends fully between stripes before partially retreating. Removing Kni-binding sites produces similar effects. kni is a repressor of hb. In hb zygotic mutants, stripe 3 moves anteriorly and expands while stripe 7 shows limited widening. Mutating Hb-binding sites produces similar effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53, C56-C58 accurately describe prior experimental results from the literature (with appropriate citations). These experimental observations provide the basis for validating model predictions. The descriptions are accurate and provide important context for interpreting the model predictions in Claims C54-C61.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C79",
+      "C81",
+      "C87",
+      "C88"
+    ],
+    "result": "The study discusses the relationship to prior work and data requirements. Previous models focused on cis-regulatory sequences, while this approach focuses on TF concentrations. Hb has a dual role as repressor in some enhancers and activator in others. Concentration-dependent regulatory activities have been observed in other systems. The model depends on the quality of the Virtual Embryo data, and quantitative measurements at cellular resolution are important for predicting spatiotemporal patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C79, C81, C87-C88 provide context by comparing to prior work and discussing data requirements. The comparison to prior models (C69) is accurate and highlights the novelty of the approach. The references to dual regulation in other contexts (C79, C81) support the plausibility of the proposed mechanisms. The discussion of data requirements (C87-C88) is important for understanding limitations and future applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "The study infers that dorsoventral factors are not required to provide positional information directly to eve 2, based on the model's ability to predict dorsoventral curvature of the stripe using only anteroposterior regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 represents a mechanistic inference from the modeling results. The observation that the model captures dorsoventral curvature using only Hb, Bcd, Gt, and Kr (C21) supports this inference. However, this does not rule out indirect effects of dorsoventral factors through regulation of the anteroposterior factors. The inference is reasonable but represents an interpretation rather than a direct experimental test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "The model predicts a small amount of expression near stripe 7, which is sometimes observed in transgenic reporters driven by eve 2 enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 describes a prediction that matches some experimental observations. This represents a successful prediction of a subtle feature not explicitly trained for. However, the ectopic stripe 7 expression is only 'sometimes observed' in reporters, suggesting it may be context-dependent or an artifact. This is a minor validation of the model's ability to capture subtle features of the regulatory logic.",
+    "result_type": "MINOR"
+  }
+]

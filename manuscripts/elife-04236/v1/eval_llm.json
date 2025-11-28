@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Sox2 enhancers form distinct 3D clusters in ES cell nuclei. Using lattice light-sheet microscopy with residence time filtering (>3s), the authors mapped stable Sox2 binding sites and observed locally enriched higher density clusters rather than uniform distribution. Only ~11.6% of Sox2 molecules had residence times >3s, with an average of ~6.92s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 provide converging evidence from single-molecule imaging showing Sox2 enhancers cluster in 3D. The residence time measurements (C16), density maps (C17), and quantification of binding populations (C18-C19) are internally consistent and supported by appropriate imaging controls (H2B comparison).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Sox2 enhancers show significantly higher clustering than chromatin (H2B). Pair correlation function analysis revealed Sox2 stable binding sites exhibit highly clustered behavior while H2B shows more random/uniform distribution, with 14-fold higher fluctuation amplitude for Sox2-enhancers compared to H2B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 demonstrate appropriate use of H2B as a chromatin control. The pair correlation function analysis (C21) and fluctuation model fitting (C22) provide quantitative support for differential clustering. The control is well-designed to distinguish enhancer-specific clustering from general chromatin organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Sox2 enhancer clusters are spatially segregated from heterochromatin regions. Two-color imaging showed weak correlation (Rho=0.11\u00b10.028) between EnCs and HCs, with pair cross-correlation showing no spatial correlation except weak exclusion at <600nm. Sox2 levels in HCs were significantly lower than surrounding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 provide multiple lines of evidence for spatial segregation using appropriate correlation analyses. The Pearson correlation (C28), pair cross-correlation (C29), and fluorescence intensity measurements (C31) converge on the same conclusion. The statistical approach is sound with n=8 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C64"
+    ],
+    "result": "Sox2 enhancer clusters overlap with a subset of Pol II enriched regions. Pearson correlation showed Rho=0.44\u00b10.046 between EnCs and Pol II (p<4.36E-45). Most Sox2 EnCs contained Pol II, but only a subset of Pol II regions overlapped with Sox2 EnCs, consistent with Sox2 targeting specific genes for ES cell identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C64 demonstrate partial overlap between Sox2 EnCs and Pol II using appropriate two-color imaging and correlation analysis. The asymmetric relationship (most EnCs have Pol II, but not vice versa) is well-documented and consistent with prior genomic studies (C34). Statistical significance is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C40"
+    ],
+    "result": "Sox2 exhibits distinct binding dynamics in enhancer clusters versus whole nuclei. Inside EnCs, 64\u00b17.8% of Sox2 molecules are bound (vs 38\u00b14.3% in whole nuclei), suggesting shorter 3D diffusion times in clusters. Overall, 62\u00b14.3% of Sox2 molecules are in diffusing mode, consistent with 3D diffusion-dominant search.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C40 provide quantitative measurements of Sox2 binding states in different nuclear compartments using dual-labeling SMT. The increased bound fraction in EnCs (C35) versus whole nuclei (C40) is internally consistent and supports the inference of shortened diffusion times (C36). Sample size (n=6-12 cells) is adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Sox2 molecules in heterochromatin show slower diffusion rates. A significant population (26\u00b18.4%) of Sox2 in HCs diffuses at 0.61\u00b10.13 \u03bcm\u00b2s\u207b\u00b9, much slower than the average rate of ~2.7\u00b10.63 \u03bcm\u00b2s\u207b\u00b9 in whole nuclei, consistent with molecular crowding effects reported for GFP in heterochromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 demonstrate slower Sox2 diffusion in HCs with appropriate citation to prior FCS studies showing similar crowding effects. The measurements are quantitative with error estimates and the comparison to prior work (C39) strengthens the interpretation. The finding is consistent with the spatial segregation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Sox2 target search involves two distinct modes: 3D diffusion-dominant for long-range travel between clusters and chromatin-bound dominant within clusters. Simulations suggest enhancer clustering itself is sufficient to generate these two modes, with dramatically shortened 3D diffusion times inside EnCs due to high target site concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C67-C69 integrate experimental SMT data with Monte Carlo simulations to support a two-mode search model. The experimental evidence (C4, C69) and simulation results (C68) converge on the same conclusion. The model is well-supported by both approaches, though the simulation makes simplifying assumptions about binding probability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Enhancer clustering reduces global search efficiency but enables rapid local fine-tuning. Monte Carlo simulations showed increasing \u03c43D (first passage time) as enhancer sites became more densely packed, but \u03c43D decreased with more clusters or when injection sites approached cluster centers. The relationship follows Smoluchowski equations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41-C42, C45-C47 present simulation results showing the dual effects of clustering on search dynamics. The simulations are well-designed with appropriate controls (uniform distribution, varying cluster numbers). The mathematical support via Smoluchowski equations (C47) strengthens the conclusions. However, C5 includes speculative elements about 'fine-tuning' that go beyond the simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Enhancer clustering bifurcates the target search process into two components. Single-component models failed to fit \u03c43D histograms when enhancer sites became densely clustered, while two-component models fit well across all cluster densities, suggesting local and long-range search modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 provide model-fitting evidence that clustering creates distinct search modes. The comparison of single vs two-component models is appropriate, and the failure of single-component fits at high clustering provides strong support. This complements the experimental SMT data showing different behaviors in EnCs vs whole nuclei.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C63"
+    ],
+    "result": "Epigenetic perturbation by TSA treatment disrupts Sox2 enhancer clustering and alters genome-wide binding profiles. TSA-treated cells showed decreased clustering (similar to H2B), with more random distribution of Sox2 ChIP-exo peaks across chromosomes and relative to transcription start sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26, C63 demonstrate that TSA treatment affects both 3D clustering (C25) and linear genomic distribution (C26) of Sox2 binding sites. The combination of live-cell imaging and ChIP-exo provides complementary evidence. However, the mechanism remains unclear\u2014whether TSA redistributes existing sites or creates new random binding. The inference about 'finely balanced epigenetic regulation' (C63) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C57",
+      "C58",
+      "C62"
+    ],
+    "result": "Linear genomic clustering of Sox2 binding sites contributes to 3D enhancer cluster formation. ChIP-exo analysis showed many Sox2 sites form clustered arrays along chromosomes. Sox2 enhancer density fluctuations are smaller in size but larger in amplitude than chromatin (H2B) densities, suggesting linearly arrayed sites contribute substantially to 3D clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C57-C58, C62 integrate ChIP-exo genomic data with 3D imaging to link linear and spatial organization. The comparison with prior ChIP-seq and Hi-C studies (C57) provides context. However, C62 appropriately notes that TF-directed looping cannot be excluded, indicating the authors recognize limitations in distinguishing mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C55",
+      "C66",
+      "C72"
+    ],
+    "result": "Speculative model: Enhancer clustering may promote formation of Sox2 low-complexity (LC) transactivation domain polymers that serve as multivalent platforms for co-factor recruitment. Physical proximity rather than direct stable interactions between enhancers and promoters may be sufficient for transcription activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53, C55, C66, C72 are explicitly speculative (C53: 'we speculate', C55: 'intriguing feature', C66: 'seems likely', C72: 'could serve'). While the speculation is informed by prior literature on LC domains and the observed clustering, no direct experimental evidence is provided for polymer formation or the proposed mechanism. These are reasonable hypotheses for future work but remain unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background context: Cis-regulatory networks are foundational for gene expression, but 3D spatial organization of cis-elements and their influence on TF activity remain poorly understood. Classical studies and 3C-based methods have limitations in capturing 3D spatial information and dynamics, while recent advances in super-resolution microscopy enable visualization of individual TFs in live cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C10 provide appropriate background context with citations to relevant literature. These claims establish the knowledge gap and methodological advances that motivate the study. The characterization of prior work limitations (C7-C9) is fair and well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior work context: Previous studies by the authors showed Sox2 and Oct4 search via trial-and-error with two binding populations (non-specific ~0.7s, specific ~12s residence times). Sox2 can slide on naked DNA in vitro. The majority (>74%) of Sox2 molecules are diffusing, with only ~3% bound to specific sites at any time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 accurately cite and summarize the authors' prior work (Chen et al., 2014b) and related studies. These provide essential context for the current study's focus on spatial organization. The quantitative values are consistent with the current measurements (e.g., C16 residence time ~6.92s is between the non-specific and specific values from C14).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C54"
+    ],
+    "result": "Sox2 activation domains contain low-complexity sequences. The C-terminal Sox2 AD has five degenerate (G/S/D/H)Y(G/S/D/H) repeats that form fibrous polymers in vitro at high concentrations (0.7-2 mM), ~1000\u00d7 higher than typical in vivo TF concentrations. LC domain interactions have been implicated in DNA looping and transcription activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C54 provide relevant background on Sox2 LC domains with appropriate citations. The sequence prediction (C50) and prior in vitro polymer formation data (C51-C52) are accurately cited. The comparison to Sp1-Sp1/TAF4 interactions (C54) provides relevant context for the speculation in C53 and C72.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Supporting literature: Other groups observed similar effects of receptor clustering on ligand binding, where apparent macroscopic association rates decrease with increased receptor densities within clusters while microscopic rates remain constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 appropriately cite prior work on receptor clustering effects to support the simulation results showing decreased global search efficiency with clustering (C41-C42). The analogy is relevant and strengthens the interpretation of the simulation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C56",
+      "C70",
+      "C71"
+    ],
+    "result": "Model inference: Gene and promoter positioning relative to EnC and HC territories is critical for transcriptional fine-tuning. Enhancer clustering modulates TF search parameters and enables spatially controlled gene regulation by creating local enhancer concentration variations. Genes at cluster centers would be regulated differently than peripheral genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C70-C71 present reasonable inferences from the observed spatial organization and search dynamics. The model is supported by the simulation results (C46-C47) showing position-dependent search times. However, C71 is somewhat speculative as no direct experimental evidence is provided for differential regulation of center vs peripheral genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Temporal stability of enhancer clusters: Prior FRAP studies showed chromatin structures are stable with half-life >2-4 hr, much longer than the imaging duration (~20 min). HP1 is enriched in peri-centromeric and peripheral heterochromatin forming non-diffraction limited structures. The observed clustering likely reflects average 3D genome organization within short temporal scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 appropriately cite prior work on chromatin stability and HP1 localization to support the interpretation that the observed clusters represent relatively stable structures during the imaging period. The inference about temporal scales (C60) is reasonable given the FRAP data, though direct measurements of cluster dynamics were not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Observation of 'dark' nuclear spaces: Extensive residual spaces were observed that are not significantly occupied by either heterochromatin or Sox2 binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 reports a straightforward observation from the imaging data (Figure 3B, Video 9). This is a descriptive finding that is well-supported by the visual evidence provided.",
+    "result_type": "MINOR"
+  }
+]

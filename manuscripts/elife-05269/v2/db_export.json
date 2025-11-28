@@ -1,0 +1,1894 @@
+{
+  "submission": {
+    "id": "d739333c-9bf7-4798-8e6d-a2c40405def1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:21:37.856979Z",
+    "updated_at": "2025-11-28T22:21:37.856979Z"
+  },
+  "content": [
+    {
+      "id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "submission_id": "d739333c-9bf7-4798-8e6d-a2c40405def1",
+      "content_type": "manuscript",
+      "content_text": "# A molecular basis for the differential roles of Bub1 and BubR1 in the spindle assembly checkpoint\n\n## Authors\n\n- Katharina Overlack<sup>1</sup>\n- Ivana Primorac<sup>1</sup>\n- Mathijs Vleugel<sup>2</sup>\n- Veronica Krenn<sup>1</sup>\n- Stefano Maffini<sup>1</sup>\n- Ingrid Hoffmann<sup>1</sup>\n- Geert J P L Kops<sup>3</sup>\n- Andrea Musacchio<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Mechanistic Cell Biology Max Planck Institute of Molecular Physiology Dortmund Germany\n2. Molecular Cancer Research University Medical Center Utrecht Utrecht Netherlands\n3. Department of Molecular Cancer Research University Medical Center Utrecht Utrecht Netherlands\n4. Department of Medical Oncology University Medical Center Utrecht Utrecht Netherlands\n5. Centre for Medical Biotechnology University Duisburg-Essen Essen Germany\n6. Cancer Genomics Netherlands University Medical Center Utrecht Netherlands\n7. Department of Biology Utrecht University Utrecht Netherlands\n8. Netherlands Proteomics Center Utrecht Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe spindle assembly checkpoint (SAC) monitors and promotes kinetochore\u2013microtubule attachment during mitosis. Bub1 and BubR1, SAC components, originated from duplication of an ancestor gene. Subsequent sub-functionalization established subordination: Bub1, recruited first to kinetochores, promotes successive BubR1 recruitment. Because both Bub1 and BubR1 hetero-dimerize with Bub3, a targeting adaptor for phosphorylated kinetochores, the molecular basis for such sub-functionalization is unclear. We demonstrate that Bub1, but not BubR1, enhances binding of Bub3 to phosphorylated kinetochores. Grafting a short motif of Bub1 onto BubR1 promotes Bub1-independent kinetochore recruitment of BubR1. This gain-of-function BubR1 mutant cannot sustain a functional checkpoint. We demonstrate that kinetochore localization of BubR1 relies on direct hetero-dimerization with Bub1 at a pseudo-symmetric interface. This pseudo-symmetric interaction underpins a template\u2013copy relationship crucial for kinetochore\u2013microtubule attachment and SAC signaling. Our results illustrate how gene duplication and sub-functionalization shape the workings of an essential molecular network.\n\n## Introduction\n\nBub1 and BubR1 are paralogous proteins involved in the spindle assembly checkpoint (SAC), a safety device that monitors the attachment of kinetochores to spindle microtubules and halts mitotic progression until completion of chromosome bi-orientation on the mitotic spindle (Lara-Gonzalez et al., 2012; Foley and Kapoor, 2013). Bub1 and BubR1 originated from a gene that was already present in the hypothetical last eukaryotic common ancestor (LECA) (Suijkerbuijk et al., 2012a). After speciation, up to nine distinct duplication events might have occurred, which invariably led to sub-functionalization of the resulting gene products (Suijkerbuijk et al., 2012a).\n\nHuman Bub1 and BubR1 are strongly conserved at the sequence and domain level (Figure 1A) but play complementary roles in the SAC. Bub1 becomes recruited to kinetochores in prometaphase to provide a platform for additional SAC proteins, including Mad1, Mad2, the BubR1/Bub3 complex, and Cdc20. Bub1 promotes the assembly of a subset of these proteins, Mad2, BubR1/Bub3, and Cdc20, into the SAC effector, the mitotic checkpoint complex (MCC), which targets the anaphase promoting complex/cyclosome (APC/C) to inhibit its ability to promote mitotic exit (Lara-Gonzalez et al., 2012; Foley and Kapoor, 2013). Bub1, not in itself a MCC subunit, likely catalyzes MCC assembly by aligning MCC subunits for a profitable interaction (discussed in Overlack et al., 2014). Bub1 kinase activity is not required for the SAC (Sharp-Baker and Chen, 2001; Fernius and Hardwick, 2007; Perera et al., 2007; Klebig et al., 2009) but contributes to stable kinetochore\u2013microtubule attachments through phosphorylation of histone H2A on Thr120 and subsequent localization of Sgo1 to centromeres and kinetochores (Kawashima et al., 2010; Wang et al., 2011; Caldas et al., 2013). BubR1, on the other hand, evolved into an inactive pseudo-kinase (Suijkerbuijk et al., 2012a) and is a crucial subunit of the MCC (Hardwick et al., 2000; Fraschini et al., 2001; Sudakin et al., 2001). BubR1 contributes to the formation of stable kinetochore\u2013microtubule attachments and checkpoint silencing through kinetochore co-recruitment of protein phosphatase 2A (PP2A) (Suijkerbuijk et al., 2012b; Kruse et al., 2013; Xu et al., 2013; Espert et al., 2014; Nijenhuis et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05269/elife-05269-fig1-v2.jpg)\n\n**Figure 1.:** (A) Similar domain organization of the homologous proteins Bub1 and BubR1. TPR\u2014tetratrico peptide repeat, B3BD\u2014Bub3 binding domain, B1\u2014Bub1, BR1\u2014BubR1. (B) Schematic depiction of the outer KT (KMN network). MELT repeats of Knl1 are phosphorylated by the checkpoint kinase Mps1 and recruit Bub1/Bub3 to KTs. It is not clear how BubR1 is recruited to KTs. (C\u2013D) Quantitative IP-mass spectrometry analyses showing that the interaction of Bub1, BubR1, and Bub3 with KTs is significantly reduced upon inhibition of Mps1 with Reversine. Green- and red-labeled hits indicate respectively proteins whose levels were not strongly affected or were strongly affected in the presence of Reversine. (E and G) Representative images of Flp-In T-REx cell lines in BubR1 (E) and Bub1 (G) RNAi, respectively, after treatment with nocodazole, showing that Bub1 is required for BubR1 KT localization. Scale bar: 10 \u00b5m. (F and H) Quantification of Bub1 and BubR1 KT levels, respectively, in cells treated as in panel E and G. The graph shows mean intensity, error bars indicate SD. The mean value for non-depleted cells is set to 1. (I\u2013J) Representative images of stable Flp-In T-REx cell lines expressing the indicated GFP-Bub1 constructs (panel I) or HeLa cells transfected with the indicated GFP-BubR1 constructs (panel J) after treatment with nocodazole. The same images are also shown in Figure 4A and Figure 5C, and quantified in Figures 4B and 5B. Scale bar: 10 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05269/elife-05269-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013B) Quantification of RNAi-based depletion of Bub1 and BubR1. Shown are mean and standard deviation from two independent experiments. (C\u2013D) Schematic depiction of the main Bub1 and BubR1 deletion constructs used in this study. TPR, tetratrico peptide repeats; B3BD, Bub3 binding domain; BR1, BubR1; FL, full-length; N, N-terminus.\n\nBub1 and BubR1 have different kinetochore dynamics, likely reflecting their distinct functions in the SAC. Bub1 interacts stably with unattached kinetochores, in agreement with its function as a SAC recruitment platform, while BubR1 turns over rapidly (t1/2 = 3\u201320 s), likely reflecting its cycle of incorporation into MCC and its release into the cytosol as a soluble APC/C inhibitor (Howell et al., 2004; Shah et al., 2004). Besides different dynamics, another important difference is that kinetochore recruitment of Bub1 is independent of BubR1, while recruitment of BubR1 is strictly subordinate to Bub1 (Millband and Hardwick, 2002; Gillett et al., 2004; Johnson et al., 2004; Perera et al., 2007; Logarinho et al., 2008; Klebig et al., 2009). The molecular basis for these differences is unclear, because both Bub1 and BubR1 bind a kinetochore-targeting adaptor named Bub3. Bub3 is a 7-WD40 \u03b2-propeller that targets kinetochores by binding to phosphorylated Met-Glu-Leu-ThrP (MELTP, where TP indicates phosphothreonine) repeats of the outer kinetochore subunit Knl1 (a.k.a. Casc5, Spc105, Spc7, AF15q14, and Blinkin) (Kiyomitsu et al., 2007; Krenn et al., 2012, 2014; London et al., 2012; Shepperd et al., 2012; Yamagishi et al., 2012; Primorac et al., 2013) (Figure 1B). Bub3 binds tightly to Bub1 and BubR1 via conserved segments known as Bub3-binding domain (B3BD) or GLEBS (Taylor et al., 1998; Larsen et al., 2007). By recognizing MELTP, Bub3 co-recruits Bub1 to kinetochores in Saccharomyces cerevisiae (Primorac et al., 2013). In human cells, Bub3 is required for kinetochore recruitment of Bub1 and BubR1, and consistently the B3BDs of Bub1 and BubR1 are necessary, and in the case of Bub1 also sufficient, for kinetochore targeting of Bub1 and BubR1 (Taylor et al., 1998; Logarinho et al., 2008; Malureanu et al., 2009; Elowe et al., 2010; Lara-Gonzalez et al., 2011; Krenn et al., 2012). The subordination of BubR1 kinetochore recruitment to the presence of Bub1 suggests that Bub3 may operate differently when bound to Bub1 or BubR1. In this study, we set out to investigate the molecular basis of this phenomenon and its implications for spindle checkpoint signaling and kinetochore\u2013microtubule attachment.\n\n## Results\n\n### Mps1 and Bub1 are required for kinetochore localization of BubR1\n\nThe SAC kinase Mps1 has been shown to phosphorylate MELT repeats of Knl1 to promote kinetochore recruitment of Bub1 and BubR1 (Heinrich et al., 2012; London et al., 2012; Shepperd et al., 2012; Yamagishi et al., 2012; Primorac et al., 2013; Vleugel et al., 2013; Krenn et al., 2014). We precipitated Bub1 or Knl1 (Vleugel et al., 2013) from mitotic lysates of HeLa cells treated with or without the Mps1 inhibitor Reversine (Santaguida et al., 2010). Quantitative mass spectrometry (see \u2018Materials and methods\u2019) of proteins associated with Bub1 or Knl1 confirmed the crucial role of Mps1, as we observed a strong suppression of the interaction of Bub1, BubR1, and Bub3 with kinetochores in the presence of Reversine (Figure 1C\u2013D. Large deviations from a value of 1 for the Reversine/DMSO ratio indicate suppression of binding).\n\nIn HeLa cells treated with nocodazole, which depolymerizes microtubules and activates the SAC, Bub1 decorated kinetochores at essentially normal levels after the depletion of BubR1 (Figure 1E, quantified in Figure 1F. Quantifications of RNAi-based depletions are shown in Figure 1\u2014figure supplement 1A\u2013B). Conversely, BubR1 did not decorate kinetochores after Bub1 depletion (Figure 1G\u2013H). These results confirm that BubR1 requires Bub1 for kinetochore recruitment, in line with previous studies (Millband and Hardwick, 2002; Gillett et al., 2004; Johnson et al., 2004; Perera et al., 2007; Logarinho et al., 2008; Klebig et al., 2009).\n\nBy monitoring the localization of a GFP-Bub1 reporter construct, we had previously demonstrated that Bub1209-270, encompassing the B3BD, is the minimal Bub1 localization domain (Taylor et al., 1998; Krenn et al., 2012). Bub1209\u2013270 targeted kinetochores very efficiently even after the depletion of endogenous Bub1 (Figure 1I). We asked if an equivalent GFP reporter construct encompassing the B3BD of BubR1, BubR1362\u2013431, was also recruited to kinetochores. BubR1362\u2013431 was not recruited to kinetochores even in the presence of Bub1 (Figure 1J. Diagrams of Bub1 and BubR1 deletions used in this study are in Figure 1\u2014figure supplement 1C\u2013D). Thus, even if Bub1 and BubR1 share a related B3BD to interact with the same kinetochore-targeting subunit (Bub3) and interact in a phosphorylation-dependent manner with Knl1, the mechanisms of their kinetochore recruitment are different. This raises two crucial questions: (1) why is the B3BD region of Bub1 sufficient for kinetochore recruitment, while the equivalent region of BubR1 is not? And (2) if binding to Bub3 is not sufficient for robust kinetochore recruitment of BubR1, how is BubR1 recruited to kinetochores? We will focus sequentially on these questions.\n\n### The loop regions of Bub1 and BubR1 modulate the interaction of Bub3 with phosphorylated MELT motifs\n\nTo investigate if and how Bub1209\u2013270 and BubR1362\u2013431 modulate the binding affinity of Bub3 for the MELTP repeats of Knl1, we immobilized on amylose beads a fusion of maltose-binding protein (MBP) with residues 138\u2013168 of Knl1, a region containing a single and functional MELT repeat (the most N-terminal, and therefore called MELT1; Krenn et al., 2014). We treated MBP-Knl1MELT1 with or without Mps1 kinase. Next, we incubated MBP-Knl1MELT1 with Bub3, Bub1209\u2013270/Bub3, or BubR1362-\u2013431/Bub3 and visualized bound proteins by Western blotting. Bub3 in isolation did not bind MBP-Knl1MELT1, in agreement with our previous data (Krenn et al., 2014). The B3BD of Bub1 strongly enhanced binding of Bub3 to phosphorylated MBP-Knl1MELT1 but not to unphosphorylated MBP-Knl1MELT1, while the B3BD of BubR1 had a negligible effect (Figure 2A). These results in vitro correlate with the ability of the equivalent B3BD to support (or not) kinetochore recruitment in cells (Figure 1I\u2013J).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05269/elife-05269-fig2-v2.jpg)\n\n**Figure 2.:** (A) Recombinant Bub3, Bub1209\u2013270/Bub3 and BubR1362\u2013431/Bub3 were incubated with immobilized MBP-Knl1MELT1 (residues 138\u2013168 of human Knl1) prephosphorylated with Mps1 (+) or unphosphorylated (\u2212). Empty lanes (\u2212) demonstrate lack of background binding to empty beads. wt, wild type; B3, Bub3; B1, Bub1; BR1, BubR1. (B) Multiple sequence alignments of the Bub3 binding domains (B3BD) of human (Homo sapiens, Hs), chicken (Gallus gallus, gg), frog (Xenopus laevis, Xl), and budding yeast (Saccharomyces cerevisiae, Sc) Bub1 and BubR1s. Mad3 is the budding yeast BubR1 homolog. ScBub1R314 (red asterisk) directly contributes to the interaction with the MELTP peptide. The different Bub1 and BubR1 sequences were aligned manually on the basis of the crystal structures of the B3BDs of Mad3 and Bub1 in complex with Bub3 (Larsen et al., 2007; Primorac et al., 2013). (C) Crystal structure of the ScBub1289\u2013359-Bub3-MELTP ternary complex (Primorac et al., 2013). N and C indicate the N- and C-terminus, respectively. (D) Close-up of the MELTP binding site indicating the role of ScBub1R314 in MELTP binding. (E) Schematic depiction of short Bub1 and BubR1 \u2018loop swap\u2019 constructs, containing the loop (different shades of red) followed by the Bub3-binding domain (different shades of yellow). (F) Recombinant BubR1362\u2013431/Bub3 with its own loop (wt) or with the Bub1 loop (B1) and recombinant Bub1209\u2013270/Bub3 with its own loop (wt) or with the BubR1 loop (BR1) were incubated with immobilized MBP-Knl1MELT1 prephosphorylated with Mps1 (+) or unphosphorylated (\u2212) as in panel A. Empty lanes (\u2212) demonstrate lack of background binding to empty beads. (G) Western Blot of immunoprecipitates (IP) from mitotic Flp-In T-REx cell lines expressing the indicated GFP-Bub1 and GFP-BubR1 constructs showing the influence of the loop on the ability to pull down the KT-components Knl1 and Mis12. Tubulin was used as loading control. (H) Quantification of the Western blot in (G). In the upper graph, the amounts of co-precipitating BubR1, Bub3, Knl1, and Mis12 were normalized to the amount of GFP-Bub1 bait present in the IP. In the lower graph, the amounts of co-precipitating Bub1, Bub3, Knl1, and Mis12 were normalized to the amount of GFP-BubR1 bait. Values for GFP-Bub1 wt and GFP-BubR1 wt, respectively are set to 1. The graphs show mean intensity of two independent experiments (for Mis12 only one). Error bars represent SD.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05269/elife-05269-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The indicated constructs were purified and separated by SDS-PAGE after purification. Both wild-type and chimeric constructs interact normally and with similar affinity with Bub3.\n\nOur previous structural and biochemical characterization of the Bub1B3BD /Bub3/MELTP ternary complex of S. cerevisiae demonstrated that while Bub3 carries most of the crucial (and evolutionarily conserved) residues involved in high-affinity binding to MELTP, a short segment of Bub1, the \u2018loop\u2019, contributes to the binding affinity (Primorac et al., 2013). The \u2018loop\u2019 region of Bub1 or BubR1 is between strands \u03b21 and \u03b22 (Figure 2B\u2013D) and precedes the highly conserved core of the B3BD. The loop abuts the binding site for the MELTP peptide and is therefore ideally positioned to modulate the binding affinity of Bub3 for MELTP (Figure 2C\u2013D).\n\nBecause the loops of Bub1 and BubR1 have quite divergent sequences (Figure 2B), we tested their role in modulating the binding affinity of Bub1209\u2013270/Bub3 or BubR1362\u2013431/Bub3 for immobilized MBP-Knl1MELT1 (see Figure 2A). We swapped the loop regions of Bub1 and BubR1 as schematized in Figure 2E. Recombinant versions of the chimeric mutants Bub1209\u2013270/BR1-loop and BubR1362\u2013431/B1\u2013loop were co-expressed with Bub3. Both the wild-type and chimeric constructs interacted with apparently similar affinity with Bub3, excluding gross structural perturbations (Figure 2\u2014figure supplement 1). We then tested the ability of the recombinant constructs to interact with immobilized MBP-Knl1MELT1. Bub1209\u2013270 bound tightly and in an Mps1-phosphorylation-dependent manner to MBP-Knl1MELT1 (Figure 2F), while Bub1209\u2013270/BR1\u2013loop bound weakly. Conversely, BubR1362\u2013431/B1\u2013loop bound more strongly to phosphorylated MBP-Knl1MELT1 than did BubR1362\u2013431 (Figure 2F). These results demonstrate a crucial role of the loop region of Bub1 in the recognition of a phosphorylated MELT repeat.\n\nIP experiments from stable cell lines expressing GFP fusions of the wild-type or loop-swap mutants in the context of full-length Bub1 or BubR1 recapitulated the results in vitro (Figure 2G\u2013H). Loop swap mutants interacted with Bub3 as efficiently as wild-type counterparts, but the interactions that Bub3 mediates, most notably those with the Knl1 receptor and its associated partner Mis12, were strongly enhanced when the Bub1 loop region was grafted onto BubR1.\n\n### Behavior of the \u2018loop swap\u2019 mutants in HeLa cells\n\nWe then tested the localization behavior of these mutants. Kinetochore localization of GFP-Bub1BR1\u2013loop was weaker than that of wild-type Bub1 (Figure 3A\u2013B), whereas kinetochore localization of GFP-BubR1B1\u2013loop was stronger than that of unmodified BubR1 (Figure 3C\u2013D). Indeed, GFP-BubR1B1\u2013loop decorated kinetochores even after the depletion of Bub1. Thus, when grafted onto BubR1, the Bub1 loop region is sufficient to confer upon BubR1 the ability to target kinetochores in a Bub1-independent fashion (Figure 3E\u2013F). Although the experiments in vitro were carried out with a single MELT repeat, MELT1, they are likely to reflect the binding behavior of Bub1 and BubR1 to endogenous Knl1, which may contain up to 19 MELT repeats. Kinetochore localization of GFP-BubR1B1\u2013loop in cells depleted of Bub1 was inhibited by addition of Reversine, indicating a dependence on Mps1 and MELTP sequences (Figure 3G\u2013H and Figure 3\u2014figure supplement 1, panel A). Expression of BubR1B1\u2013loop did not overtly affect the kinetochore levels of endogenous Bub1 (Figure 3\u2014figure supplement 1, panel B), suggesting that the multiple MELTP sequences of Knl1 are not saturated with endogenous Bub1 even in the strong checkpoint-activating conditions of our assay.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05269/elife-05269-fig3-v2.jpg)\n\n**Figure 3.:** (A) Representative images of stable Flp-In T-REx cells expressing either GFP-Bub1 wild type (wt) or the loop mutant showing that the BR1-loop impairs KT localization. Scale bar: 10 \u00b5m. (B) Quantification of Bub1 KT levels in cells treated as in panel A. The graph shows mean intensity from three independent experiments. Error bar represents SEM. Values for Bub1 wt are set to 1. (C) Representative images of stable Flp-In T-REx cells expressing either GFP-BubR1 wt or the loop mutant showing that the B1-loop enhances KT localization. Scale bar: 10 \u00b5m. (D) Quantification of BubR1 KT levels in cells treated as in panel C. The graph shows mean intensity from three independent experiments. Error bar represents SEM. Values for BubR1 wt are set to 1. (E) Representative images of HeLa cells transfected with the indicated GFP-BubR1 constructs, showing that BubR1 B1-loop is independent of Bub1 for its KT localization. In brief, after transfection, cells were depleted of endogenous Bub1 by RNAi, synchronized with a double thymidine block and arrested in mitosis with nocodazole. Scale bar: 10 \u00b5m. (F) Quantification of BubR1 KT levels in cells treated as in panel E. The graph shows mean intensity from three independent experiments. Error bars represent SEM. Values for BubR1wt in non-depleted cells are set to 1. (G) Representative images of HeLa cells transfected with GFP-BubR1 B1-loop treated as in panel E in the presence (+) or absence (\u2212) of the Mps1 inhibitor Reversine, showing that BubR1 B1-loop KT localization is dependent on Mps1. Scale bar: 10 \u00b5m. (H) Quantification of BubR1 KT levels in cells treated as in panel G. The graph shows mean intensity from two independent experiments. Error bars represent SEM. Values for BubR1wt in non-depleted cells without Reversine (images are shown in Figure 3\u2014figure supplement 1, panel A) are set to 1. (I) Mean duration of mitosis of Flp-In T-REx stable cell lines expressing GFP-BubR1 wt or the loop mutant in the absence of endogenous BubR1 and in the presence of 50 nM nocodazole. Cell morphology was used to measure entry into and exit from mitosis by time-lapse-microscopy (n > 58 per cell line) from three independent experiments. Error bars depict SEM. (J) Western Blot of immunoprecipitates (IP) from mitotic Flp-In T-REx cell lines expressing the indicated GFP-BubR1 constructs showing the influence of the loop on the ability to pull down MCC and APC/C components. Tubulin was used as loading control. (K) Western Blot of immunoprecipitates (IP) of the APC/C subunit Cdc27 from mitotic Flp-In T-REx cell lines expressing the indicated GFP-BubR1 constructs showing the influence of the loop on the incorporation into APC/C-bound MCC. Tubulin was used as loading control.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05269/elife-05269-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative images of HeLa cells transfected with GFP-BubR1wt treated as in Figure 3E in the presence (+) or absence (\u2212) of the Mps1 inhibitor Reversine as control for the experiment shown in Figure 3G. The corresponding quantification is shown in Figure 3H. Scale bar: 10 \u00b5m. (B) Quantification of Bub1 kinetochore levels in cells treated as in Figure 3E. The graph shows mean intensity from three independent experiments. Error bars represent SEM. Values for Bub1 in BubR1wt expressing cells are set to 1. (C) Quantification of the Western Blot in Figure 3J. The amounts of co-precipitating MCC and APC/C components were normalized to the amount of GFP-BubR1 bait present in the IP. Values for GFP-BubR1 wt are set to 1. The graphs show mean intensity of two independent experiments. Error bars represent SEM. (D) Quantification of the Western Blot in Figure 3K. The amounts of co-precipitating proteins were normalized to the amounts present in GFP-BubR1 wt expressing cells. The graphs show mean intensity of two independent experiments. Error bars represent SEM.\n\nNext, we asked if GFP-BubR1B1\u2013loop was able to replace the SAC function of BubR1. In cells depleted of endogenous BubR1, wild-type BubR1 restored SAC function to a high degree but GFP-BubR1B1\u2013loop failed to do so (Figure 3I). Comparison of immune-precipitates of GFP-BubR1 and GFP-BubR1B1\u2013loop from nocodazole-treated mitotic cells showed much less of the latter associated with MCC and APC/C subunits (Figure 3J, quantified in Figure 3\u2014figure supplement 1, panel C). Similarly, immune-precipitation (IP) of the APC/C demonstrated association of GFP-BubR1, but not GFP-BubR1B1\u2013loop, with the APC/C (Figure 3K, quantified in Figure 3\u2014figure supplement 1, panel D). These results demonstrate that sequence divergence in the short loop region of Bub1 and BubR1 has strong functional consequences. In Bub1, the loop enhances the ability of Bub3 to recognize MELTP sequences of Knl1. In BubR1, the precise role of the loop is unknown, but the results in Figure 3 suggest to us a specific role in MCC assembly or in the interaction with the APC/C, as discussed more thoroughly below.\n\n### A minimal BubR1-binding region of Bub1\n\nThe second question, how BubR1 is recruited to kinetochores, has three distinct facets. First, the segment of Bub1 required for kinetochore recruitment of BubR1 should be identified. Second, the segment of BubR1 required for its own kinetochore recruitment should be identified. Third, it should be established if Bub1 and BubR1 interact directly and if kinetochore proteins other than Bub1 play additional roles in BubR1 recruitment.\n\nTo investigate the role of Bub1 in BubR1 recruitment, we created GFP fusions of several deletion mutants of Bub1 (Figure 1\u2014figure supplement 1C\u2013D) and tested concomitantly their kinetochore localization and BubR1 recruitment (Figure 4A). Bub1209\u2013270, encompassing the B3BD and localizing robustly to kinetochores, did not recruit BubR1 in cells depleted of endogenous Bub1 (Figure 4A\u2013B). A construct containing the tetratrico peptide repeats (TPRs) and the B3BD of Bub1, Bub11\u2013284, also targeted kinetochores but did not recruit BubR1 (Figure 4A\u2013B). On the contrary, a segment (Bub1209\u2013409) consisting of the B3BD and a \u223c140-residue C-terminal extension (CTE), targeted kinetochores and promoted robust kinetochore localization of BubR1 (Figure 4A\u2013B). Thus, Bub1 does not require the CTE (residues 271\u2013409) for its own kinetochore recruitment (the B3BD, residues 209\u2013270, is sufficient) but requires it to recruit BubR1. A deletion mutant lacking the CTE (Bub1\u0394271\u2013409) targeted kinetochores efficiently but failed to recruit BubR1 (Figure 4C\u2013D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05269/elife-05269-fig4-v2.jpg)\n\n**Figure 4.:** (A and C) Representative images of stable Flp-In T-REx cell lines expressing the indicated GFP-Bub1 constructs after treatment with nocodazole, showing that Bub1209\u2013409 is sufficient to recruit BubR1 (panel A) and that residues 271\u2013409 are essential for this function (panel C). Scale bar: 10 \u00b5m. (B and D) Quantification of BubR1 KT levels in cells treated as in panels B and D, respectively. The graphs show mean intensity of two independent experiments, the error bars indicate SEM. The mean value for non-depleted cells expressing GFP (panel B) or GFP-Bub1209\u2013409 (panel D) is set to 1. (E) Western blot of immunoprecipitates (IP) from mitotic Flp-In T-REx cell lysates expressing the indicated GFP-Bub1 constructs in the presence or absence of endogenous Bub1, showing that Bub1209\u2013409 is sufficient to pull down BubR1. Tubulin was used as loading control. (F) Quantification of the Western blot in panel E. The amounts of co-precipitating BubR1, Bub3, and Knl1 were normalized to the amount of GFP-Bub1 bait present in the IP. Values for GFP-Bub1 FL in non-depleted cells are set to 1. The graph shows mean intensity of two independent experiments. Error bars represent SD. (G) BubR11\u2013571/Bub3 and Bub11\u2013409/Bub3 interact in size exclusion chromatography, which separates proteins based on size and shape. H6 and TRX are tags used for protein purification and expression. (H) BubR11\u2013571 and Bub11\u2013409/Bub3 interact in size exclusion chromatography. (I) BubR11\u2013571/Bub3 and Bub1209\u2013409/Bub3 interact in size exclusion chromatography. (J) BubR11\u2013571/Bub3 and Bub1271\u2013409 do not interact in size exclusion chromatography. MBP\u2014maltose binding protein, mAu\u2014milliabsorbance unit.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05269/elife-05269-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) BubR11\u2013571 and Bub1209\u2013409/Bub3 interact in size exclusion chromatography. (B) BubR11\u2013571/Bub3 and Bub1209\u2013270/Bub3 do not interact in size exclusion chromatography. The control run of Bub1209\u2013270/Bub3 is missing due to limiting amounts of the protein. (C) BubR1222\u2013571/Bub3 and Bub11\u2013280/Bub3 do not interact in size exclusion chromatography. (D) BubR1222\u2013571/Bub3 and Bub11\u2013409/Bub3 interact in size exclusion chromatography. mAU\u2014milliabsorbance unit.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05269/elife-05269-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Representative images of HeLa cells transfected with the indicated GFP-Bub1FL constructs, showing that the BR1-loop impairs KT localization. However in the absence of endogenous Bub1 considerable binding affinity is regained. Cells were treated as described in Figure 3E. Scale bar: 10 \u00b5m. (B) Representative images of HeLa cells transfected with the indicated GFP-Bub1209\u2013409 constructs, showing that this construct, which lacks the N-terminal TPR domain, does not regain considerable binding affinity in the absence of Bub1. Cells were treated as described in Figure 3E. Scale bar: 10 \u00b5m. (C) Representative images of HeLa cells transfected with the indicated GFP-Bub11\u2013409 constructs, showing that the TPR domain is contributing to regaining KT binding affinity in the absence of endogenous Bub1. Cells were treated as described in Figure 3E. Scale bar: 10 \u00b5m. (D) Quantification of Bub1 KT levels in cells treated as in panels A\u2013C. The graph shows mean intensity from two independent experiments. Error bars represent SEM. Values for Bub1FL in non-depleted cells were set to 1.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05269/elife-05269-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Representative images of HeLa cells transfected with the indicated GFP-BubR1362\u2013571 constructs, showing that the B1-loop enhances kinetochore localization. However in the absence of endogenous Bub1 the short loop mutant, which lacks the N-terminal TPR domain, is less efficient than the full-length BubR1 in its localization to kinetochores (Figure 3E). Cells were treated as described in Figure 3E. Scale bar: 10 \u00b5m. (B) Representative images of HeLa cells transfected with the indicated GFP-BubR11\u2013571 constructs, showing that the TPR domain is contributing together with the loop region to the ability to stay at KTs in the absence of endogenous Bub1. Cells were treated as described in Figure 3E. Scale bar: 10 \u00b5m. (C) Quantification of BubR1 KT levels in cells treated as in (A\u2013B). The graph shows mean intensity from at least two independent experiments. Error bars represent SEM. Values for BubR1FL in non-depleted cells are set to 1.\n\nIn IP experiments both in the presence and absence of endogenous Bub1, GFP-Bub1209\u2013409 interacted with BubR1 at levels that were only modestly lower than those of full-length GFP-Bub1 (Figure 4E\u2013F). Conversely, GFP-Bub1209\u2013270 did not interact with BubR1, in agreement with the inability of this construct to promote BubR1 localization. In this context, it should be noted that the tetratrico peptide repeats (TPRs) near the N-terminus of Bub1 and BubR1 (Figure 1A) had been initially identified as primary determinants of kinetochore recruitment (Kiyomitsu et al., 2007; Bolanos-Garcia et al., 2011), but later shown to be dispensable (Krenn et al., 2012, 2014), a result confirmed here. In our IP experiments, however, we observe that Bub1 interacts with the outer kinetochore more strongly when the TPRs are present, in agreement with our previous studies (Krenn et al., 2012, 2014). The Bub1 TPR region interacts with a short sequence motif of Knl1 named KI1 motif (Kiyomitsu et al., 2007; Krenn et al., 2012, 2014). This interaction, whose precise significance is unclear, enhances the SAC response (Krenn et al., 2014). Additional evidence of a modest additional role of the TPR in the interaction of Bub1 and BubR1 with kinetochores is presented in Figure 4\u2014figure supplement 2 and Figure 4\u2014figure supplement 3.\n\nNext, we asked if Bub1 binds directly to BubR1. Bub11\u2013409 and BubR11\u2013571, both of which target kinetochores (Taylor et al., 1998; Vanoosthuyse et al., 2004; Klebig et al., 2009; Malureanu et al., 2009; Elowe et al., 2010) were individually co-expressed with Bub3 in insect cells and purified to homogeneity. In size-exclusion chromatography (SEC) experiments, in which the elution volume reflects macromolecular mass and shape, BubR11\u2013571/Bub3 bound stoichiometrically to Bub11\u2013409/Bub3 (Figure 4G), thus demonstrating a direct interaction in the absence of other proteins. In these experiments in vitro, BubR11\u2013571 did not require Bub3 to bind Bub11\u2013409/Bub3 (Figure 4H), and therefore in the following SEC experiments, we used BubR1 and BubR1/Bub3 interchangeably (whereas Bub1 was poorly expressed and largely insoluble in insect cells without Bub3). Although this result may suggest that Bub3 is not required for the interaction of BubR1 with Bub1/Bub3, we show and discuss in the context of Figure 6 that a functional B3BD is required for the interaction of BubR1 with Bub1 in living cells.\n\nIn agreement with the ability of Bub1209\u2013409 to recruit BubR1 to kinetochores, Bub1209\u2013409/Bub3 formed a stoichiometric complex with BubR11\u2013571/Bub3 (Figure 4I) or BubR11\u2013571 (Figure 4\u2014figure supplement 1, panel A), further showing that the Bub1 TPR region is dispensable. Neither the isolated B3BD of Bub1 (Bub1209\u2013270/Bub3, Figure 4\u2014figure supplement 1B) nor the isolated CTE (Bub1271\u2013409, Figure 4J) bound BubR11\u2013571/Bub3, indicating that both regions contribute to BubR1 binding in vitro. Additional SEC experiments supporting this conclusion are shown in Figure 4\u2014figure supplement 1, panels C\u2013D.\n\n### A minimal Bub1-binding region of BubR1\n\nTo identify a minimal kinetochore-targeting region of BubR1, we created GFP fusions of several deletion mutants of BubR1 (Figure 1\u2014figure supplement 1C\u2013D) and tested their localization to kinetochores. BubR1362\u2013571, which contains the B3BD and a \u223c140-residue CTE, localized to kinetochores in a Bub1-dependent manner (Figure 5A\u2013B). Shorter fragments of BubR1, including the isolated B3BD (BubR1362\u2013431, see also Figure 1J) and the isolated CTE (BubR1432\u2013571), did not localize to kinetochores (Figure 5B\u2013C). In agreement with the kinetochore recruitment assay, SEC experiments showed binding of BubR1362\u2013571 but not of the isolated B3BD (BubR1362\u2013431/Bub3) or the isolated CTE (BubR1432\u2013571) to Bub11\u2013409/Bub3 (Figure 5D\u2013F).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05269/elife-05269-fig5-v2.jpg)\n\n**Figure 5.:** (A and C) Representative images of HeLa cells transfected with the indicated GFP-BubR1 constructs. Cells were treated as described in Figure 3E. BubR1362\u2013571 is the minimal construct that is able to localize to KTs in the presence of Bub1. Scale bar: 10 \u00b5m. (B) Quantification of BubR1 KT levels in cells treated as in panels A and C. The graph shows mean intensity of at least two independent experiments, error bars depict SEM. Values for GFP-BubR1 FL in non-depleted cells are set to 1. (D) BubR1362\u2013571 and Bub11\u2013409/Bub3 interact in size exclusion chromatography. (E) BubR1362\u2013431/Bub3 and Bub11\u2013409/Bub3 do not interact in size exclusion chromatography. (F) BubR1432\u2013571 and Bub11\u2013409/Bub3 do not interact in size exclusion chromatography. mAU\u2014milliabsorbance unit.\n\n### A pseudo-symmetric Bub1\u2013BubR1 interaction\n\nOur results predict that BubR1362\u2013571 and Bub1209\u2013409 ought to be sufficient for the Bub1/BubR1 interaction in vitro. Indeed, BubR1362\u2013571 and Bub1209\u2013409/Bub3 interacted stoichiometrically in SEC runs (Figure 6A). A summary of the properties of the crucial Bub1 and BubR1 segments discussed in the last two sections is presented in Figure 6B. An alignment of the interacting domains of Bub1 and BubR1 (residues 209\u2013409 and 362\u2013571, respectively; the alignment was obtained with programs Muscle [Edgar, 2004] and JPRED [Cole et al., 2008]) shows that their sequences are structurally equivalent (Figure 6\u2014figure supplement 1A). Both start with the B3BD, continue with a segment predicted to adopt a helical conformation and end with a region predicted to lack defined secondary structure. We surmise that the ability of modern-day Bub1 and BubR1 to form heterodimers using these structurally equivalent (\u2018pseudo-symmetric\u2019) segments may reflect the ability of their ancestor to form homodimers, similarly to what is observed in cohesins.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/05269/elife-05269-fig6-v2.jpg)\n\n**Figure 6.:** (A) The identified minimal constructs BubR1362\u2013571 and Bub1209\u2013409/Bub3 interact in size exclusion chromatography. (B) Summary of the behavior of the indicated Bub1 and BubR1 constructs. (C and E) Representative images of HeLa cells transfected with the indicated GFP-BubR1 constructs showing that neither BubR1\u0394432\u2013484 (panel C), which lacks the predicted helical segment of the C-terminal extension, nor BubR1E409K+E413K (panel E), which is not able to bind Bub3, are able to localize to KTs. Cells were treated as in Figure 3E. For BubR1\u0394432\u2013484 two different expression levels are depicted in the non-depleted condition. Scale bar: 10 \u00b5m. (D and F) Quantification of BubR1 KT levels in cells treated as in panels C and E, respectively. The graph shows mean intensity from at least two independent experiments. Error bars represent SEM. Values for BubR1FL in non-depleted cells are set to 1. (G) Domain organization of LacI-GFP-Bub1 constructs. (H) LacI-Bub1wt recruits BubR1 to the Lac-Operator, whereas Bub1E252K, which cannot bind Bub3, does not.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05269/elife-05269-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Multiple sequence alignments of the interacting domains of Bub1 and BubR1 from four different species (Homo sapiens, Hs), chicken (Gallus gallus, Gg), frog (Xenopus laevis, Xl), and budding yeast (Saccharomyces cerevisiae, Sc). Mad3 is the budding yeast BubR1 homolog. (B) Representative images of HeLa cells transfected with the indicated GFP-BubR1 constructs, showing that also the short Bub3 binding domain mutant is not able to localize to KTs. Cells were treated as described in Figure 3E. Scale bar: 10 \u00b5m. (C) Quantification of BubR1 KT levels in cells treated as in panel B. The graph shows mean intensity from two independent experiments. Error bars represent SEM. Values for BubR1362\u2013571 in non-depleted cells are set to 1. (D) Quantification of co-localization. Data represent normalized mean intensities and standard deviations from 12 cells. BubR1 was identified at the ectopic locus on 12/12 cells for the wild type and on 0/12 cells for the E252K mutant.\n\n### Functional dissection of kinetochore recruitment of BubR1\n\nDeletion of residues 432\u2013484 of BubR1 (GFP-BubR1\u0394432\u2013484) in the predicted helical region impaired kinetochore localization of BubR1 (Figure 6C\u2013D). Additionally, mutations in the B3BD of BubR1 (E409K + E413K) known to impair Bub3 binding (Taylor et al., 1998; Larsen et al., 2007) prevented kinetochore localization of full-length BubR1 (Figure 6E\u2013F) and of BubR1362\u2013571 (Figure 6\u2014figure supplement 1, panels B\u2013C). Thus, Bub3 binding is necessary for efficient kinetochore localization of BubR1 even if it may appear to be dispensable for the interaction in vitro (Figure 4H). We note that in those SEC binding experiments in vitro in which we used isolated BubR1 rather than BubR1/Bub3, Bub3 might have exchanged from the Bub1/Bub3 complex to reconstitute BubR1/Bub3. Alternatively, the relatively high protein concentrations in the SEC experiments (5\u201315 \u00b5M) may effectively compensate for reduced binding affinity when BubR1 is devoid of Bub3.\n\nRegardless of the precise explanation, BubR1 clearly requires Bub3 for efficient kinetochore localization. This requirement may reflect a direct contribution to the interaction with Bub1 or alternatively a residual ability of BubR1/Bub3 to bind phosphorylated motifs on Knl1 or other kinetochore proteins. To try distinguishing between these possibilities, we targeted a Lac repressor (LacI) fusion of Bub1 to an ectopic Lac operator (LacO) site on the chromosome distinct from centromeres. LacI-Bub1 recruited BubR1 to the ectopic site (Figure 6G\u2013H, quantified in Figure 6\u2014figure supplement 1D), thus suggesting that kinetochores are not required for the Bub1/BubR1 interaction, in agreement with a previous study in Schizosaccharomyces pombe (Rischitor et al., 2006). This result suggests that Bub1/Bub3 is sufficient for recruitment of BubR1/Bub3, and that the role of Bub3 in recruitment of BubR1 might be direct and not through Knl1. Mutation of the Bub3-binding site of the LacI-Bub1 fusion (Bub1E252K) prevented BubR1 recruitment, suggesting that Bub3 is required for a robust interaction between Bub1 and BubR1 on both sides of the complex (Figure 6G\u2013H).\n\nBubR1 is important for the SAC and for establishing bi-orientation. We therefore asked if perturbing its kinetochore localization impaired these processes. HeLa cells depleted of endogenous BubR1 failed to arrest in mitosis in the presence of nocodazole (Figure 7A). SAC proficiency was re-established upon expression of GFP-BubR1 but not GFP-BubR1E409K+E413K. GFP-BubR1\u0394432\u2013484, on the other hand, restored a robust SAC response. IP experiments indicated that both GFP-BubR1E409K+E413K and GFP-BubR1\u0394432\u2013484 were unable to interact with Bub1 or Knl1, as expected based on their localization behavior. However, GFP-BubR1E409K+E413K was also significantly impaired in its ability to interact with two additional MCC subunits (Mad2 and Cdc20) and was even more dramatically impaired in its ability to interact with the APC/C. Conversely, GFP-BubR1\u0394432\u2013484 interacted with the MCC subunits (including Bub3, as expected) and with the APC/C at levels that were comparable to those of the wild-type GFP-BubR1 control (Figure 7B). Thus, two distinct mutants of BubR1 both impaired in kinetochore localization have uncorrelated behaviors with regard to SAC proficiency. On the other hand, because GFP-BubR1E409K+E413K does not bind Bub3, while GFP-BubR1\u0394432\u2013484 does (Figure 7B, quantified in Figure 7C), it appears that at least in human cells BubR1 needs to bind Bub3 to become incorporated into the MCC.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/05269/elife-05269-fig7-v2.jpg)\n\n**Figure 7.:** (A) Mean duration of mitosis of Flp-In T-REx stable cell lines expressing GFP-BubR1 wt or the indicated mutants in the absence of endogenous BubR1 and in the presence of 50 nM nocodazole. Cell morphology was used to measure entry into and exit from mitosis by time-lapse-microscopy (n > 44 per cell line per experiment) from at least three independent experiments. Error bars depict SEM. (B) Western blot of immunoprecipitates (IP) from mitotic Flp-In T-REx cell lines expressing the indicated GFP-BubR1 constructs. Tubulin was used as loading control. (C) Quantification of the Western Blot in Figure 7B. The amounts of co-precipitating proteins were normalized to the amount of GFP-BubR1 bait present in the IP. Values for GFP-BubR1 wt are set to 1. The graphs show mean intensity of two independent experiments. Error bars represent SEM. (D) Analysis of cold-stable microtubules in cells expressing the indicated GFP-BubR1 constructs. (E) Western Blot of immunoprecipitates (IP) from mitotic Flp-In T-REx cell lines expressing the indicated GFP-BubR1 constructs. The asterisk represents an unspecific band recognized by the PP2A antibody.\n\nIn addition to playing a role in the SAC, BubR1 is important for establishing bi-orientation in HeLa cells, and this role requires its kinetochore recruitment (Johnson et al., 2004; Lampson and Kapoor, 2005; Meraldi and Sorger, 2005; Suijkerbuijk et al., 2012b; Kruse et al., 2013; Xu et al., 2013). Both GFP-BubR1E409K+E413K and GFP-BubR1\u0394432\u2013484, neither of which localizes to kinetochores, failed to complement the deficits in promoting the formation of stable kinetochore\u2013microtubule attachments observed in cells depleted of endogenous BubR1 (Figure 7D). The role of BubR1 in kinetochore\u2013microtubule attachment has been attributed to its interaction with the B56 regulatory subunit of a complex of protein phosphatase 2A (PP2AB56) (Suijkerbuijk et al., 2012b; Kruse et al., 2013; Xu et al., 2013; Espert et al., 2014; Nijenhuis et al., 2014). Recently, this function of BubR1 has been further implicated in SAC silencing (Espert et al., 2014; Nijenhuis, et al., 2014). We asked if the defect of the BubR1\u0394432\u2013484 mutant in supporting kinetochore\u2013microtubule attachment correlated with a defective interaction with PP2AB56. Indeed, the levels of the B56 regulatory subunit in IPs of the GFP-BubR1\u0394432\u2013484 mutant were much lower than those of the wild-type protein (Figure 7E).\n\n## Discussion\n\nNew genes are frequently created by duplication (Conant and Wolfe, 2008). After duplication, the paralogs (i.e., the genes generated by the duplication event) may diverge and sub-functionalize, thus allowing specialization in a subset of the functions originally provided by the singleton (the single ancestor gene before duplication) (Conant and Wolfe, 2008). The resolution of adaptive conflicts between different functions of the singleton has been identified as a beneficial consequence of gene duplication (Hittinger and Carroll, 2007). Detailed molecular illustrations of this process, however, are rare.\n\nOur analysis of the mechanism of recruitment of Bub1 and BubR1 illustrates how the duplication of an ancestor gene and subsequent divergence was exploited during evolution to create two gene products with highly diversified and efficient functions, including monitoring checkpoint status through stable recruitment to unattached kinetochores (Bub1), effecting APC/C inhibition through incorporation into the MCC (BubR1), stabilization of microtubule attachment (Bub1 and BubR1, possibly through different mechanisms), and SAC silencing (BubR1). The occurrence of nine distinct duplications of the Bub1 and BubR1 ancestor (Suijkerbuijk et al., 2012a) likely reflects an extreme evolutionary pressure to separate functions that were originally condensed in a single gene. Investigating to what extent sub-functionalization after each of the nine distinct duplication events of the Bub1 and BubR1 ancestor followed similar or divergent paths will be an interesting direction for future studies.\n\nPreviously, the loss of kinase activity specifically in BubR1 but not Bub1 was identified as a manifestation of the divergence of these proteins (Vleugel et al., 2012; Suijkerbuijk et al., 2012b). Here, we have considerably extended our understanding of this divergence by showing that the loop motifs in the B3BDs of Bub1 and BubR1 modulate the interaction of Bub3 with MELTP. A suboptimal loop region for MELTP binding in BubR1 makes it depend on an alternative mechanism for kinetochore localization. This alternative is the direct interaction with Bub1, extensively characterized in Figures 4\u20136. By swapping loop motifs, we created a gain-of-function mutant of BubR1 that can bind kinetochores in the absence of Bub1, and a loss-of-function mutant of Bub1 severely impaired in autonomous kinetochore binding. The failure of the BubR1 gain-of-function mutant to complement the depletion of wild-type BubR1 strongly suggests that the evolutionary divergence of Bub1 and BubR1, with its specific effects on kinetochore recruitment, is functionally relevant.\n\nThe mechanism of BubR1 localization depends on a direct, pseudo-symmetric hetero-dimerization interaction with Bub1 (Figure 8A). It involves equivalent segments of Bub1 and BubR1 comprising their B3BD/GLEBS motif and a CTE whose first part is predicted to be helical. The interaction of Bub1 and BubR1 requires that each has a bound Bub3. Thus, Bub3 has at least three distinct functions: (1) it recruits Bub1 to MELTP motifs of Knl1; (2) it contributes to the dimerization of Bub1 with BubR1 required for kinetochore recruitment of the latter; and (3) in complex with BubR1, it has an additional hitherto unknown function in the SAC. This function was exposed by the behavior of the BubR1E409K+E413K mutant. The SAC defect observed with this mutant is unlikely to be a consequence of impaired kinetochore localization, because another kinetochore-localization impaired mutant, BubR1\u0394432\u2013484, was checkpoint proficient. We surmise that BubR1-bound Bub3 is involved in an unknown aspect of the SAC mechanism downstream of kinetochores, possibly having to do with MCC formation or APC/C binding, as recently proposed (Han et al., 2014). In analogy with the role of the Bub1 loop motif in modulating the function of Bub3 as a MELTP receptor, we speculate that the BubR1 loop motif influences the specificity of BubR1-bound Bub3 for additional SAC-relevant targets. The fact that the \u2018loop swap\u2019 BubR1 mutant is unable to sustain the SAC provides evidence for this hypothesis. The properties of the loop region in the recently discovered protein BuGZ, which contains a B3BD/GLEBS motif that interacts with Bub3, are also of interest (Jiang et al., 2014; Toledo et al., 2014).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/05269/elife-05269-fig8-v2.jpg)\n\n**Figure 8.:** (A) Model of the Bub1\u2013BubR1 interaction. The upper part shows the described KT recruitment mechanism of BubR1/Bub3, which in turn recruits the phosphatase PP2A, to a Bub1/Bub3 complex on Knl1. The lower part depicts a close-up of the identified pseudo-symmetric Bub1\u2013BubR1 interaction, which involves equivalent segments of Bub1 and BubR1 comprising the Bub3 binding domain and a C-terminal extension whose first part is predicted to have a helical fold in both proteins. The presence of Bub3 on both proteins seems to be essential for this interaction, although due to different reasons (for more explanations see text). The TPR regions of human Bub1 and BubR1 bind to non-conserved short motifs of Knl1 named KI1 and KI2, respectively (Kiyomitsu et al., 2007; Krenn et al., 2012, 2014). (B) Extension of the template model. Mad1/C-Mad2 at KTs is known to act as a template for the establishment of the Cdc20/C\u2013Mad2 interaction. This seems similar to the BubR1 recruitment mechanism, wherein Bub1/Bub3 recruits BubR1/Bub3 through a pseudo-symmetric interaction. Ultimately, the entire MCC (BubR1/Bub3 and Cdc20/C-Mad2) may represent the copy of a KT template consisting of Bub1/Bub3 and Mad1/C-Mad2.\n\nRecruitment of PP2AB56 by BubR1 has been recently implicated in SAC silencing through a mechanism ultimately impinging on dephosphorylation of the MELTP motifs (Espert et al., 2014; Nijenhuis et al., 2014). The apparent checkpoint proficiency of BubR1\u0394432\u2013484 may indicate that BubR1 localization to kinetochores is not essential for checkpoint function, as it implies that substantial amounts of MCC can be generated even when BubR1/Bub3 cannot be recruited to kinetochores. However, we note that this mutant interacts only weakly with PP2AB56 and might therefore carry an additional checkpoint-silencing defect obscuring an underlying SAC defect. Furthermore, we cannot exclude that residues in the deleted segments (432\u2013484) of BubR1 are normally involved in an intra-molecular control mechanism that couples the activation of wild-type BubR1 to kinetochore recruitment.\n\nWhether or not BubR1 kinetochore recruitment is important for SAC function, it is clearly essential for kinetochore\u2013microtubule attachment and bi-orientation. Previously, it has been shown that BubR1 promotes bi-orientation through recruitment of PP2AB56 (Suijkerbuijk et al., 2012b; Kruse et al., 2013; Xu et al., 2013), which counteracts Aurora B activity and thus stabilizes kinetochore\u2013microtubule attachments (Lampson and Kapoor, 2005; Foley et al., 2011). Our results demonstrate that BubR1\u0394432\u2013484, which cannot interact with Bub1 and localize to kinetochores, has a strong defect in kinetochore\u2013microtubule attachment that correlates with a defective interaction with PP2AB56.\n\nDissecting the requirement for kinetochore recruitment of the SAC subunits is instrumental for distinguishing their roles in the SAC from their roles in chromosome bi-orientation (Brady and Hardwick, 2000; De Antoni et al., 2005; London et al., 2012; Shepperd et al., 2012; Yamagishi et al., 2012; Nijenhuis et al., 2013; London and Biggins, 2014; Moyle et al., 2014). By describing the mechanism of BubR1 recruitment and the role of the loop motif of Bub1 and BubR1 in modulating the affinity for kinetochores, this study fills an important gap. We and others have previously shown that two conformers of Mad2, O-Mad2 and C-Mad2, form an asymmetric conformational dimer (Luo et al., 2004; De Antoni et al., 2005). In this reaction, Mad1 acts as a stable placeholder for C-Mad2 (De Antoni et al., 2005). Once at kinetochores, the Mad1/C-Mad2 complex recruits a high-turnover cytosolic form of O-Mad2 and converts it into the active C-Mad2 form, which targets Cdc20, thus overcoming a rate-limiting step towards the formation of MCC (De Antoni et al., 2005; Mapelli et al., 2007; Simonetta et al., 2009). This scheme, summarized in Figure 8B, identifies Mad1/Mad2 as a \u2018template\u2019 for the establishment of the Cdc20/C-Mad2 complex, a structural \u2018copy\u2019 of the Mad1/Mad2 complex (De Antoni et al., 2005; Musacchio and Salmon, 2007).\n\nEven if directed primarily towards a different function (SAC signaling rather than chromosome bi-orientation), we note that this pattern is remarkably similar to that emerging from the mechanism of BubR1 recruitment by Bub1, in which a stable Bub1/Bub3 complex at kinetochores recruits a rapidly cycling BubR1/Bub3 complex. The MCC, made of Cdc20/C-Mad2 and BubR1/Bub3, can be interpreted as a \u2018copy\u2019 of kinetochore-bound \u2018templates\u2019 made of Mad1/C-Mad2 and Bub1/Bub3 complexes. Whether such templates engage in a complex at kinetochores is unclear but plausible. Even if we did not identify Mad1 in our mass spectrometry analysis of Bub1, we recently identified both Mad1 and Bub1 in precipitates of the N-terminal segment of Knl1 (Krenn et al., 2014). Furthermore, Mad1 and Bub1 have been shown to interact directly in S. cerevisiae and Caenorhabditis elegans (Brady and Hardwick, 2000; London et al., 2012; Moyle et al., 2014). Our future studies will aim to investigate the significance of the copy\u2013template molecular relationship for SAC signaling and chromosome bi-orientation.\n\n## Materials and methods\n\n### Mammalian plasmids\n\nPlasmids were derived from the pCDNA5/FRT/TO-EGFP-IRES, a previously modified version (Krenn et al., 2012) of the pCDNA5/FRT/TO vector (Invitrogen, Carlsbad, CA). To create N-terminally-tagged EGFP Bub1 and BubR1 truncation constructs, Bub1 and BubR1 sequences were obtained by PCR amplification from the previously generated pCDNA5/FRT/TO-EGFP-Bub1-IRES and pCDNA5/FRT/TO-EGFP-BubR1-IRES vector, respectively (Krenn et al., 2012) and subcloned in frame with the GFP-tag. Mutations and deletions within the Bub1 and BubR1 constructs were generated by standard site-directed mutagenesis or by a mutagenesis protocol (Liu and Naismith, 2008). All Bub1 constructs were RNAi resistant (Kiyomitsu et al., 2007). BubR1-expressing constructs were made siRNA-resistant by changing the sequence targeted by the RNAi oligos to \u2018AACGTGCCTTCGAGTACGAGA\u2019. pCDNA5/FRT/TO-based plasmids were used for generation of stable cell lines, as well as for transient transfection. All plasmids were verified by sequencing.\n\n### Cell culture and transfection\n\nHeLa cells were grown in DMEM (PAN Biotech, Aidenbach, Germany) supplemented with 10% FBS (Clontech, part of Takara Bio group, Shiga, Japan), penicillin and streptomycin (GIBCO, Carlsbad, CA), and 2 mM L-glutamine (PAN Biotech). For all plasmid transfections of HeLa cells, X-tremeGENE transfection reagent (Roche, Basel, Switzerland) was used at a 3:1 ratio with plasmid DNA. Flp-In T-REx HeLa cells used to generate stable doxycycline-inducible cell lines were a gift from SS Taylor (University of Manchester, Manchester, England, UK). Flp-In T-REx host cell lines were maintained in DMEM with 10% tetracycline-free FBS (Clontech) supplemented with 50 \u03bcg/ml Zeocin (Invitrogen). Flp-In T-REx HeLa expression cell lines were generated as previously described (Krenn et al., 2012). Gene expression was induced by addition of 0.2\u20130.5 \u00b5g/ml doxycycline (Sigma, St. Louis, MO) for 24 hr siBUB1 (Dharmacon, part of GE Healthcare, Piscataway, NJ; 5\u2032-GGUUGCCAACACAAGUUCU-3\u2032) or siBUBR1 (Dharmacon; 5\u2032-CGGGCAUUUGAAUAUGAAA-3\u2032) duplexes were transfected with Lipofectamine 2000 (Invitrogen) at 50 nM for 24 hr.\n\nFor experiments in HeLa cells, cells were synchronized with a double thymidine arrest 5 hr after transfection with siRNA duplexes. In brief, after washing the cells with PBS they were treated with thymidine for 16 hr and then released into fresh medium. 3 hr after the release, 50 nM siRNA duplexes were transfected again. 5 hr after transfection, cells were treated with thymidine for 16 hr and afterwards released in fresh medium. Unless differently specified, nocodazole (Sigma\u2013Aldrich) was used at 3.3 \u00b5M. MG132 (used at 5\u201310 \u00b5M) was obtained from Calbiochem, thymidine (2 mM) was purchased from Sigma\u2013Aldrich. Reversine (Calbiochem, part of EMD Biosciences, Darmstadt, Germany) was used at 0.5 \u00b5M.\n\n### Immunoprecipitation and immunoblotting\n\nTo generate mitotic populations for immunoprecipitation experiments, cells were treated with 330 nM nocodazole for 16 hr. Mitotic cells were then harvested by shake off and lysed in lysis buffer (150 mM KCl, 75 mM Hepes, pH 7.5, 1.5 mM EGTA, 1.5 mM MgCl2, 10% glycerol, and 0.075% NP-40 supplemented with protease inhibitor cocktail [Serva, Heidelberg, Germany] and PhosSTOP phosphatase inhibitors [Roche]). Extracts were precleared using a mixture of protein A\u2013Sepharose (CL-4B; GE Healthcare) and protein G-Sepharose (rec-Protein G-Sepharose 4B; Invitrogen) for 1 hr at 4\u00b0C. Subsequently, extracts were incubated with GFP-Traps (ChromoTek, Martinsried, Germany; 3 \u00b5l/mg of extract) for 3 hr at 4\u00b0C. Immunoprecipitates were washed with lysis buffer and resuspended in sample buffer, boiled and analyzed by SDS-PAGE and Western blotting using 4\u201312% gradient gels (NuPAGE Bis-Tris Gels, Life technologies, Carlsbad, CA). For Cdc27 IPs cells were synchronized by addition of the CDK1-inhibitor RO3306 (Calbiochem) for 15 hr and subsequently released into 330 nM nocodazole for 2\u20133 hr before harvesting by shake off. Cells were lysed in lysis buffer (described above), and extracts were precleared with protein G-Sepharose for 1 hr at 4\u00b0C. Afterwards, extracts were incubated with 1.5 \u03bcg/mg of the Cdc27 primary antibody (mouse monoclonal, BD) for 2 hr at 4\u00b0C. Subsequently, protein G-Sepharose was added for 4 hr at 4\u00b0C. Immunoprecipitates were washed and analyzed as described above. The following antibodies were used: anti-GFP (in house made rabbit polyclonal antibody; 1:1000\u20133000), anti-Mis12 (in house made mouse monoclonal antibody; clone QA21-74-4-3; 1:1000), anti-Knl1-N (in house made rabbit polyclonal SI0787 antibody; 1:1000), anti-Bub1 (rabbit polyclonal; Abcam, Cambridge, UK; 1:5000), anti-BubR1 (mouse monoclonal; BD; 1:1000), anti-Bub3 (mouse monoclonal; BD; 1:1000), anti-Tubulin (mouse monoclonal; Sigma; 1:8000), anti-Apc7 (in house made rabbit polyclonal antibody SI0651, 1:500), anti-Cdc20 (mouse monoclonal, Santa Cruz, Dallas, TX, 1:500), anti-Mad2 (in house made mouse monoclonal antibody, clone AS55-A12, 1:500), anti-Cdc27 (mouse monoclonal, BD; 1:1000-3000), anti-PP2AB56\u03b1 (rabbit polyclonal; Bethyl, Montgomery, TX; 1:1000). Secondary antibodies were anti-mouse (Amersham, part of GE Healthcare) and anti-rabbit (Amersham) affinity purified with horseradish peroxidase conjugate (working dilution 1:10000) or Protein G with horseradish peroxidase conjugate (Life technologies) (working dilution 1:6000). After incubation with ECL Western blotting system (GE Healthcare), images were acquired with ChemiBIS 3.2 (DNR Bio-Imaging Systems, Jerusalem, Israel) in 16-bit TIFF format. Levels of images were adjusted using ImageJ software and then cropped and converted to 8-bit. Unmodified 16-bit TIFF images were used for quantification with ImageJ software. Measurements were graphed with Excel (Microsoft, Seattle, WA) and GraphPad Prism version 6.0 for Mac OS X (GraphPad Software, San Diego California USA).\n\n### Live cell imaging\n\nCells were plated on a 24-well \u00b5-Plate (Ibidi, Martinsried, Germany). Drugs were diluted in CO2 Independent Medium (Gibco) and added to the cells 1 hr before filming. Cells were imaged every 20 to 30 min in a heated chamber (37\u00b0C) on a 3i Marianas system (Intelligent Imaging Innovations Inc., G\u00f6ttingen, Germany) equipped with Axio Observer Z1 microscope (Zeiss), Plan-Apochromat 40\u00d7/1.4NA oil objective, M27 with DIC III Prism (Zeiss, Oberkochen, Germany), Orca Flash 4.0 sCMOS Camera (Hamamatsu, Hamamatsu City, Japan) and controlled by Slidebook Software 5.5 (Intelligent Imaging Innovations Inc). For cells expressing the GFP-BubR1 proteins, only cells in which kinetochores were visible were considered for the analysis.\n\n### Immunofluorescence\n\nHeLa and Flp-In T-REx HeLa cells were grown on coverslips precoated with poly-D-Lysine (Millipore, 15 \u00b5g/ml) and poly-L-Lysine (Sigma), respectively. For the experiments with HeLa cells, cells were synchronized with a double thymidine block and after release from that arrested in prometaphase by the addition of 330 nM nocodazole for 3 hr. For all other experiments, asynchronously growing cells were arrested in prometaphase by the addition of nocodazole for 3\u20134 hr and fixed using 4% paraformaldehyde. Cells were stained for Bub1 (mouse, ab54893, 1:400), BubR1 (rabbit, Bethyl A300-386A, 1:1000), CREST/anti-centromere antibodies (Antibodies, Inc., Davis, CA, 1:100), diluted in 2% BSA-PBS for 1.5 hr. Goat anti-human and chicken anti-rabbit Alexa Fluor 647 (Invitrogen), goat anti-rabbit and anti-mouse RRX, and donkey anti-human Alexa Fluor 405 (Jackson ImmunoResearch Laboratories, Inc., West Grove, PA) were used as secondary antibodies. DNA was stained with 0.5 \u00b5g/ml DAPI (Serva), and coverslips were mounted with Mowiol mounting media (Calbiochem). Cells were imaged at room temperature using a spinning disk confocal device on the 3i Marianas system equipped with an Axio Observer Z1 microscope (Zeiss), a CSU-X1 confocal scanner unit (Yokogawa Electric Corporation, Tokyo, Japan), Plan-Apochromat 63\u00d7 or 100\u00d7/1.4NA Oil Objectives (Zeiss), and Orca Flash 4.0 sCMOS Camera (Hamamatsu). Images were acquired as z-sections at 0.27 \u00b5m. Images were converted into maximal intensity projections, exported, and converted into 8-bit. Quantification of kinetochore signals was performed on unmodified 16-bit z-series images using Imaris 7.3.4 32-bit software (Bitplane, Zurich, Switzerland). After background subtraction, all signals were normalized to CREST. At least 138 kinetochores were analyzed per condition. Measurements were exported in Excel (Microsoft) and graphed with GraphPad Prism 6.0 (GraphPad Software, San Diego California USA).\n\nFor analysis of cold-stable microtubules, cells that were synchronized with a single Thymidine arrest, released for 6.5 hr and kept for 4 hr in 5 \u00b5M MG132, were incubated for 5 min on ice in medium with 10 mM HEPES pH 7.5 and then directly fixed in 4% PFA. Cells were stained for Tubulin (mouse, Sigma T9026, 1:5000) and CREST. DNA was labeled with DAPI. CREST staining was used to identify kinetochores in image z-stacks to count kinetochores attached to cold-stable microtubules. Each kinetochore was classified as \u2018attached\u2019 or \u2018not attached\u2019 depending on whether a microtubule fiber ended at the kinetochore. An average of 120 kinetochores was counted per cell, and seven cells were analyzed for each condition.\n\n### Expression and purification of MBP-Knl1138\u2013168-H6\n\nMBP-Knl1138\u2013168-H6 and MBP-Knl1138\u2013168-H6 constructs (MELT1) were obtained by sub-cloning into a pGEX vector backbone in which the coding sequence for GST was replaced with that for MBP. Expression was carried out in BL21 RIL strain at 25\u00b0C and by using 1 mM IPTG for 2.5 hr to induce expression. Cell pellets were re-suspended in three pellet volumes of 50 mM HEPES-NaOH pH 7.5, 250 mM KCl, 2 mM DTE, 10% glycerol, protease inhibitor mix (Serva). Cells were lysed by sonication, and the lysates were centrifuged at 100000\u00d7g for 1 hr at 4\u00b0C. Recombinant products were isolated from the lysate by using the HisTrap (GE Healthcare) column, followed by buffer exchange using a desalting column (GE Healthcare). Purified proteins were concentrated to about 3 mg/ml and frozen in liquid nitrogen.\n\n### Expression and purification of H6-BubR1362\u2013431/Bub3 and H6-Bub1209\u2013270/Bub3 constructs\n\nGST-BubR1362\u2013431/Bub3 and GST-Bub1209\u2013270/Bub3 constructs were obtained by sub-cloning the coding sequences for Bub3 and for the indicated segments of Bub1 into pFLMultiBac vector (Trowitzsch et al., 2010). Expression was carried out by infection of Tna38 insect cells (Hashimoto et al., 2012) for 72 hr at 27\u00b0C. Viruses of the constructs were generated as described (Trowitzsch et al., 2010). Insect cells were harvested by centrifugation at 1500 rpm for 30 min in a Sorvall RC 3BP+ (Thermo Scientific, Carlsbad, CA) centrifuge with Rotor H6000A, and the pellets were frozen in liquid nitrogen and stored at \u221280\u00b0C. 1 g of cell pellet was re-suspended in 10 ml lysis buffer (50 mM Tris\u2013HCl pH 8.0 or 8.5, 150 mM KCl, 2 mM DTE, DNAse, PMSF, protease inhibitors [Serva]). Cells were lysed by sonication and the lysate centrifuged at 100000\u00d7g for 1 hr at 4\u00b0C. The supernatant was filtered through Nalgene bottle-top filter. 1.5 ml of GSH bead slurry (GE Healthcare) was added to 50 ml of cleared lysate. After 1 hr at 4\u00b0C on a rotating wheel, the beads were recovered by centrifugation and washed with lysis buffer. Bead-bound complexes in 50 ml of lysis buffer were retrieved from the GSH beads by addition of GSH-Prescission protease (produced in house) for 14 hr at 4\u00b0C. Eluates were concentrated using Amicon concentrators (3 kDa cutoff), diluted with 20 mM Tris\u2013HCl, 2 mM DTE to a final KCl concentration of 50 mM, and further purified using 1 ml HiTrap QFF column (GE Healthcare). Peak fractions were collected and concentrated down to a volume of 2 ml and further purified by size exclusion chromatography using the S75 16/60 column (GE Healthcare). Peak fractions were collected, concentrated to about 3 mg/ml, frozen in small aliquots in liquid nitrogen, and stored at \u221280\u00b0C. Sequences of loop swap constructs were as follows:Bub1209\u2013270RRVITISKSEYSVHSSLASKVDVEQVVMYCKEKLIRGESEFSFEELRAQKYNQRRKHEQWVNBub1209\u2013270-BubR1 loopRRVITTRKPGKEEGDPLSKVDVEQVVMYCKEKLIRGESEFSFEELRAQKYNQRRKHEQWVNBubR1362\u2013431INHILSTRKPGKEEGDPLQRVQSHQQASEEKKEKMMYCKEKIYAGVGEFSFEEIRAEVFRKKLKEQREAEBubR1362\u2013431-Bub1 loopINHILSISKSEYSVHSSLAQRVQSHQQASEEKKEKMMYCKEKIYAGVGEFSFEEIRAEVFRKKLKEQREAE\n\n### Expression and purification of H6-BubR11\u2013571, H6-BubR11\u2013571/Bub3, H6-BubR1222\u2013571/Bub3, H6-Bub11\u2013409/Bub3, H6-Bub11\u2013409/Bub3-TRX and H6-Bub11\u2013280/Bub3\n\nSequences coding for H6-BubR1, H6-Bub1, and untagged Bub3 constructs were sub-cloned into pFLMultiBac vectors and baculoviruses were generated. Baculovirus expressing Bub3-TRX was generated by the Dortmund Protein Facility (DPF) using the pOPIN vector system {Berrow:2007cy}. Bub1/Bub3 and BubR1/Bub3 complexes were generated by co-infection and co-expression at 27\u00b0C for 72 hr. Insect cells were harvested by centrifugation at 1500 rpm for 30 min in a Sorvall RC 3BP+ (Thermo Scientific) centrifuge with Rotor H6000A, the pellets were frozen in liquid nitrogen and stored at \u221280\u00b0C. 1 g of cell pellet was re-suspended in 10 ml Lysis buffer (50 mM HEPES-KOH pH 7.5, 150 mM KCl, 15 mM imidazole, 2 mM DTE, 0.05% Tween20, PMSF, protease inhibitors [Serva]). Cells were lysed by sonication and centrifuged at 100000\u00d7g for 1 hr at 4\u00b0C. The supernatant was filtered through Nalgene bottle-top filter. The complexes were isolated from the cleared lysate on a 5-ml HisTrap (GE Healthcare) column. Peak fractions were pooled concentrated using Amicon concentrators and further purified in GF buffer (50 mM Hepes-KOH pH 7.5, 150 mM KCl, 2 mM DTE, 0.05% Tween20) by size exclusion chromatography using S200 16/60 column (GE Healthcare). Peak fractions were pooled, concentrated to typically 3 to 5 mg/ml, and frozen in liquid nitrogen.\n\n### Expression and purification of H6-Bub1271\u2013409-MBP, H6-Bub1209\u2013409-MBP/Bub3, H6-TRX-BubR1362\u2013571, H6-TRX-BubR1432\u2013571\n\nSequences encoding H6-TRX-BubR1, H6-Bub1-MBP, and untagged Bub3 constructs were sub-cloned into pFLMultiBac vectors and baculoviruses were generated. All constructs, apart from H6-Bub1209\u2013409-MBP, which was co-expressed with untagged Bub3, were expressed individually in insect cells at 27\u00b0C for 72 hr. Insect cells were harvested by centrifugation at 1500 rpm for 30 min in a Sorvall RC 3BP+ (Thermo Scientific) centrifuge with Rotor H6000A, the pellets were frozen in liquid nitrogen and stored at \u221280\u00b0C. 1 g of cell pellets were re-suspended in 10 ml Lysis buffer (50 mM Tris\u2013HCl pH 7.5, 150 mM KCl, 0.5 mM \u03b2-mercaptoethanol, 0.05% NP40, PMSF, protease inhibitors [Serva]). Cells were lysed by sonication and centrifuged at 100000\u00d7g for 1 hr at 4\u00b0C.The supernatant was filtered through Nalgene bottle-top filter. The complexes were isolated from the cleared lysate on a 5-ml TALON column (Clontech). Peak fractions were pooled, concentrated, and further purified in GF buffer (50 mM Tris\u2013HCl pH 8.0, 150 mM KCl, 2 mM TCEP) by size exclusion chromatography on a S75 16/60 or S200 16/60 column. Peak fractions were pooled, concentrated to typically 3 to 5 mg/ml, frozen in small aliquots in liquid nitrogen, and stored at \u221280\u00b0C.\n\n### Size exclusion chromatography mobility shift assay\n\nProteins tested for interactions were diluted to 15 \u00b5M in 150 \u00b5l reactions in GF buffer (50 mM Tris\u2013HCl pH 8, 150 mM KCl, 1.5 mM TCEP, 0.05% Tween20) and incubated at 20\u201322\u00b0C for 1 hr on a rotating wheel. 100 \u00b5l of the resulting incubation was analyzed by size exclusion chromatography on a Superose6 10/300 column at a flow rate of 0.4 ml/min and collected in 300 \u00b5l fractions. Eluates were analyzed by SDS PAGE and Coomassie staining.\n\n### In vitro binding assays\n\n5 \u00b5g of MBP-Knl1MELT1-H6 protein was phosphorylated with Mps1 kinase (TTK, Life technologies) in a 35 \u00b5l reaction in 12.5 mM Tris\u2013HCl pH 7.5, 35 mM KCl, 10 mM MgCl2, 0.5 mM EGTA, 0.005% Triton X-100, 2 mM TCEP, 0.5 \u00b5M Okadaic acid, at 30\u00b0C for 1 hr, 1200 rpm. BSA was added to a final concentration of 2 mg/ml, and the reaction was incubated with 20 \u00b5l Amilose resin (New England Biolabs, Ipswich, MA) for 1 hr at room temperature. The beads were washed with 50 mM HEPES-NaOH pH 7.5, 150 mM KCl, 0.05% Tween-20, 2 mM DTE. 20 \u00b5l Knl1-bound resin was then incubated in 50 \u00b5l of a 400 nM solution of prey proteins (e.g., H6-BubR1362\u2013431/Bub3 or H6-Bub1209\u2013270/Bub3 or loop swap constructs) in 50 mM HEPES-NaOH pH 7.5, 50 mM KCl, 0.05% Tween-20, 2 mM DTE, 10% glycerol, 4 mg/ml BSA, for 1 hr at room temperature. Unbound proteins were removed with 50 mM HEPES-NaOH pH 7.5, 150 mM KCl, 0.05% Tween-20, 2 mM DTE. 20 \u00b5l of the resin was boiled in 70 \u00b5l of sample buffer, separated on 10% gel, and blotted with anti-Bub3 (mouse monoclonal, BD, 1:1000) or anti-MBP (mouse monoclonal, New England Biolabs, 1:10000) antibodies.\n\n### Mass spectrometry\n\nCells were adapted to Lys-0/Arg-0 (Light) medium or Lys-8/Arg-10 (Heavy) medium for 2 weeks. Cells were synchronized in mitosis by a 24-hr thymidine block, followed by a 14-hr treatment with nocodazole. After harvesting the mitotic population, cells were split in the presence of either 500 nM Reversine for 30 min or with DMSO as a control. LAP-BUB1 or LAP-KNL1 expression was induced for 24 hr using doxycycline and cells were harvested and mixed, followed by immunoprecipitation and mass spectrometry. Cells were lysed at 4\u00b0C in hypertonic lysis buffer (500 mM NaCl, 50 mM Tris\u2013HCl [pH 7.6], 0.1% sodium deoxycholate, 1 mM DTT) including phosphatase inhibitors (1 mM sodium orthovanadate, 5 mM sodium fluoride, 1 mM \u03b2-glycerophosphate), sonicated, and LAP-tagged proteins were coupled to GFP-trap (ChromoTek) for 1 hr at 4\u00b0C. Purifications were washed three times with high-salt (2 M NaCl, 50 mM Tris\u2013HCl (pH 7.6), 0.1% sodium deoxycholate, 1 mM DTT) and low-salt wash buffers (50 mM NaCl, 50 mM Tris\u2013HCl (pH 7.6), 1 mM DTT) and subsequently eluted in 2 M Urea, 50 mM Tris-HCL (pH 7.6), 5 mM IAA. Samples were loaded on a C18 reverse phase column and ran on a nano-LC system coupled to a mass spectrometer (LTQ-Orbitrap Velos; Thermo Fisher Scientific) via a nanoscale LC interface (Proxeon Biosystems, now Thermo Fisher Scientific), as described in Suijkerbuijk et al. (2012b).\n\n### LacO experiments\n\nU2OS LacO cells (a gift from S Janicki) were grown in DMEM supplemented with 8% FBS (Clontech), hygromycin (200 \u00b5g/ml), pen/strep (50 \u00b5g/ml), and L-glutamine (2 mM). Cells were transfected with the indicated constructs for 48 hr using Fugene HD according to the manufacturer's protocol. Asynchronously growing cells were arrested in prometaphase by the addition of nocodazole (830 nM) for 2\u20133 hr. Cells plated on 12-mm coverslips were fixed (with 3.7% paraformaldehyde, 0.1% Triton X-100, 100 mM Pipes, pH 6.8, 1 mM MgCl2, and 5 mM EGTA) for 5\u201310 min. Coverslips were washed with PBS and blocked with 3% BSA in PBS for 1 hr, incubated with primary antibodies (GFP-booster [Chromotek], rabbit-anti-BUBR1 [Bethyl] and CREST/anti-centromere antibodies [Cortex Biochem, Inc.]) for 16 hr at 4\u00b0C, washed with PBS containing 0.1% Triton X-100, and incubated with secondary antibodies (goat-anti-rabbit Alexa Fluor 568 and goat anti-human Alexa Fluor 647) for an additional hour at room temperature. Coverslips were then washed, incubated with DAPI for 2 min, and mounted using antifade (ProLong; Molecular Probes, Eugene, OR). All images were acquired on a deconvolution system (DeltaVision RT; Applied Precision, part of GE Healthcare) with a 100\u00d7/1.40 NA U Plan S Apochromat objective (Olympus, Shinjuku, Tokyo, Japan) using softWoRx software (Applied Precision).\n",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "dc89d00a-9d71-4c03-ac0b-b8f223857611",
+      "submission_id": "d739333c-9bf7-4798-8e6d-a2c40405def1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen C Harrison, Howard Hughes Medical Institute, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05269.018](https://doi.org/10.7554/eLife.05269.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cSub-functionalization of Bub1 and BubR1 paralogs from subtle sequence changes at two hetero-dimerization interfaces\u201d for consideration at eLife. Your article has been favorably evaluated by Randy Schekman (Senior editor) and 3 reviewers, one of whom, Stephen Harrison, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nOverlack and co-workers report a detailed and systematic analysis of how Bub1 and BubR1 localize to kinetochores and how these proteins regulate cell division and cell cycle progression in human cells. Previous efforts to distinguish the functions of Bub1 and BubR1, two closely related proteins, have yielded confusing results. Overlack and co-workers have carried out a series of well-designed experiments that lead to a plausible model for the function of these proteins in dividing cells. In this model, Bub1 binds Bub3 to form a complex that recruits the BubR1/Bub3 complex. By examining dissecting kinetochore recruitment of BubR1, the authors propose that its kinetochore recruitment may not be critical for its checkpoint function but rather for establishing proper chromosome-microtubule attachments.\n\nAll three reviewers are positive and support publication. One made the following detailed comments and requests, enumerated by figure.\n\nFigure 1: How good is the Bub1 (and BubR1) RNAi in these studies? Some quantitation should be shown.\n\nC/D: Was there any sign of Mad1 in the mass-spec? This is relevant to the model in Figure 8.\n\nFigure 2: There is an important point here: are all MELT repeats created equal? Presumably not, or the array of repeats on KNL1 would not be so complicated in so many organisms. The issue here is that these KNL1 pull downs are only done with one of the MELT motifs (KNL1 138-168). How representative is this one? Can BubR1-Bub3 bind much more tightly to other MELT repeats or when multiple repeats are present?\n\nThere are many options possible here; the authors should at least address this point. How far can their findings in Figure 2 be generalized to other MELT motifs on KNL1?\n\nFigure 4: The expression levels for all the different GFP-Bub1 fusions should be demonstrated by anti-GFP western. For example the 1-284 fragment gives very bright GFP-Bub1 staining at kinetochores. Is that due to expression levels, or because the TPR region significantly enhances kinetochore binding? This distinction is important, as the manuscript (e.g. in the Results section) is rather dismissive about the role of the Bub1-TPR in kinetochore targeting. It does seem clear that the TPRs have little role in the Bub1-BubR1 interaction.\n\nFigure 6: The tethering experiments are not very convincing as presented and should be improved. The merged images in panel H both look rather green on the reviewer's screen/paper. The co-localisation should be quantitated somehow. Does a mutation/deletion in the Bub1 271-409 region abolish BubR1 recruitment? Can tethered BubR1 recruit Bub1 in a Bub3 dependent fashion?\n\nFigure 7: The observation that BubR1-D432-484 can bind APC/C and provide SAC delay yet fails to target to kinetochores is quite striking. It also fails to bind PP2A, so an additional effect on SAC silencing makes the delay harder to interpret. The authors should state more clearly that MCC-APC/C is being generated efficiently, independently of the kinetochore targeting of BubR1. This interpretation is relevant for the model in Figure 8.\n\nFigure 8: This is a KNL1 based model, which is fine for wild-type cells (but see below). The representation of KNL1 is unclear: what do the purple oval and black lines represent? Is it drawn C-N here? The TPR interactions also need explaining in the model: what are they binding to on KNL1?\n\nFinally, although the kinetochore template can generate an MCC copy, Figure 7 shows that robust MCC-APC/C complex can be formed by BubR1-D432-484 which the authors have shown does not bind Bub1 nor go to kinetochores. How is that MCC generated?\n\nThe Reviewing editor found the text very rough going. Apparently it is fine for experts (the other two reviewers had less trouble), but even a semi-expert got badly lost. The main problem is unnecessarily turgid and overwrought prose. Keep in mind the following outline: 1) The goal is to understand the differential roles of paralogs Bub1 and BubR1. (Therefore eliminate the first paragraph, or at least move it to the Discussion. This is a nice paper about Bub1 and BubR1, not a disquisition on strategies of evolution.)\n\n2) Ectopically expressed Bub3 binding segment (also known as GLEBS) of BubR1 does not associate with kinetochores, even though the paralogous segment of Bub1 does. (Is this result completely new, or are there published experiments that come to the same conclusion?)\n\n3) \u201cLoop swap\u201d experiments show that the loop between \u03b21 and \u03b22 of the Bub3 binding segment accounts for at least some of the differential properties of the two paralogs. The Bub1 loop promotes interaction of Bub1:Bub3 with a phosphorylated MELT-repeat segment from Knl1 (in vitro); the BubR1 loop does not. (These are \u201cpull-down\u201d experiments, which tend to have an exaggeratedly all-or-none character, but the results seem OK to the unpracticed eye. But see the comment on Figure 2, above. Interaction properties of multiple repeats are not the sum of their individual properties, as Rosen and others have emphasized.)\n\n4) Kinetochore localization experiments in HeLa cells give results consistent with the conclusion in #3.\n\n5) BubR1 with a Bub1 loop does not associate with MCC or APC. These are IP experiments and seem OK.\n\n6) Bub1 and BubR1 interact with each other. The \u201cpseudo-symmetric\u201d (paralogous pairing need not be pseudo-symmetric\u2014is there evidence for a genuinely pseudo-symmetric contact?) interaction requires the Bub3-binding motif and a putatively helical bit C-terminal to it. The experiments that establish this point are described with such an elaborate layering of deletions that the Reviewing editor found the logic very hard to follow. Please try to condense the text from the subsection \u201cA minimal BubR1-binding region of Bub1\u201d until \u201cFunctional relevance to kinetochore recruitment of BubR1\u201d in the Results section, perhaps to half the current length. Would it help to make Figure 6D both more prominent and more elegant?\n\n7) The two expert reviewers believe that the section on functional relevance is important, but it reads to the less expert reader a bit like a set of flailing attempts, no one of which established an unambiguous conclusion. Again, try to condense and get to the point.\n\nIn summary, the reviewers will welcome a revised version that responds to each of the seven points above and ideally one that is a bit less florid and therefore more readable. The one experimental request concerns Figure 6 (see above). The other points are either clarifications or requests for explicit mention of data the authors are likely already to have (e.g., information on the extent of knockdown in the experiments in Figure 1).\n",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9a2045b7-126a-43e1-8142-0f066e30c0f8",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C1",
+      "claim": "Bub1 and BubR1 are SAC components that originated from duplication of an ancestor gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Bub1 and BubR1, SAC components, originated from duplication of an ancestor gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and supported by citation to previous work (Suijkerbuijk et al., 2012a) in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "c1962042-5f80-4174-9c26-f34e8d2e1c17",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C2",
+      "claim": "Subsequent sub-functionalization established subordination where Bub1, recruited first to kinetochores, promotes successive BubR1 recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent sub-functionalization established subordination: Bub1, recruited first to kinetochores, promotes successive BubR1 recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is a central finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "bbfaf694-2c12-421f-bc79-5f32834e793b",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C3",
+      "claim": "Both Bub1 and BubR1 hetero-dimerize with Bub3, a targeting adaptor for phosphorylated kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "Because both Bub1 and BubR1 hetero-dimerize with Bub3, a targeting adaptor for phosphorylated kinetochores, the molecular basis for such sub-functionalization is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data and citations throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "525243a7-d2da-4abd-9c28-4bf7c980ef68",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C4",
+      "claim": "Bub1, but not BubR1, enhances binding of Bub3 to phosphorylated kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that Bub1, but not BubR1, enhances binding of Bub3 to phosphorylated kinetochores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding stated in the abstract and demonstrated experimentally in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "74ab909c-4dc7-410f-955b-8b58fbf0bfed",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C5",
+      "claim": "Grafting a short motif of Bub1 onto BubR1 promotes Bub1-independent kinetochore recruitment of BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Grafting a short motif of Bub1 onto BubR1 promotes Bub1-independent kinetochore recruitment of BubR1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 3E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "bb63178f-f315-44dd-ba5b-61d45732d927",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C6",
+      "claim": "The gain-of-function BubR1 mutant (with Bub1 loop) cannot sustain a functional checkpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "This gain-of-function BubR1 mutant cannot sustain a functional checkpoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "0faca76f-eae8-4dad-a7da-0d16de95a2ea",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C7",
+      "claim": "Kinetochore localization of BubR1 relies on direct hetero-dimerization with Bub1 at a pseudo-symmetric interface.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that kinetochore localization of BubR1 relies on direct hetero-dimerization with Bub1 at a pseudo-symmetric interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated through size exclusion chromatography experiments in Figures 4-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "f1ffe57b-f3ff-41d9-90ce-36d483ee7d27",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C8",
+      "claim": "The pseudo-symmetric interaction underpins a template\u2013copy relationship crucial for kinetochore\u2013microtubule attachment and SAC signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "This pseudo-symmetric interaction underpins a template\u2013copy relationship crucial for kinetochore\u2013microtubule attachment and SAC signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and discussed extensively in the Discussion section with reference to the Mad1/Mad2 template-copy mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "1748b757-551f-4b76-84ea-3b1c696e7c1b",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C9",
+      "claim": "Bub1 and BubR1 originated from a gene that was already present in the hypothetical last eukaryotic common ancestor (LECA).",
+      "claim_type": "EXPLICIT",
+      "source": "Bub1 and BubR1 originated from a gene that was already present in the hypothetical last eukaryotic common ancestor (LECA) (Suijkerbuijk et al., 2012a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Suijkerbuijk et al., 2012a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "ad81b360-33d1-4204-b8e1-5608989c19d9",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C10",
+      "claim": "Up to nine distinct duplication events of the Bub1/BubR1 ancestor gene might have occurred after speciation.",
+      "claim_type": "EXPLICIT",
+      "source": "After speciation, up to nine distinct duplication events might have occurred, which invariably led to sub-functionalization of the resulting gene products (Suijkerbuijk et al., 2012a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Suijkerbuijk et al., 2012a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "3f15f0e9-a2a2-480b-8cde-bb41c8e98c71",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C11",
+      "claim": "Human Bub1 and BubR1 are strongly conserved at the sequence and domain level.",
+      "claim_type": "EXPLICIT",
+      "source": "Human Bub1 and BubR1 are strongly conserved at the sequence and domain level (Figure 1A) but play complementary roles in the SAC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and illustrated in Figure 1A showing similar domain organization.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "81efb947-fb73-42b2-9cfb-312aa0c7c315",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C12",
+      "claim": "Bub1 becomes recruited to kinetochores in prometaphase to provide a platform for additional SAC proteins, including Mad1, Mad2, the BubR1/Bub3 complex, and Cdc20.",
+      "claim_type": "EXPLICIT",
+      "source": "Bub1 becomes recruited to kinetochores in prometaphase to provide a platform for additional SAC proteins, including Mad1, Mad2, the BubR1/Bub3 complex, and Cdc20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations (Lara-Gonzalez et al., 2012; Foley and Kapoor, 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "c8f72fec-a150-4d48-b60f-afb072a50d5a",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C13",
+      "claim": "Bub1 promotes the assembly of Mad2, BubR1/Bub3, and Cdc20 into the mitotic checkpoint complex (MCC).",
+      "claim_type": "EXPLICIT",
+      "source": "Bub1 promotes the assembly of a subset of these proteins, Mad2, BubR1/Bub3, and Cdc20, into the SAC effector, the mitotic checkpoint complex (MCC), which targets the anaphase promoting complex/cyclosome (APC/C) to inhibit its ability to promote mitotic exit (Lara-Gonzalez et al., 2012; Foley and Kapoor, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "b306f5ec-cf3a-4ddb-bb74-d9a29b9f4121",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C14",
+      "claim": "Bub1 kinase activity is not required for the SAC.",
+      "claim_type": "EXPLICIT",
+      "source": "Bub1 kinase activity is not required for the SAC (Sharp-Baker and Chen, 2001; Fernius and Hardwick, 2007; Perera et al., 2007; Klebig et al., 2009) but contributes to stable kinetochore\u2013microtubule attachments through phosphorylation of histone H2A on Thr120 and subsequent localization of Sgo1 to centromeres and kinetochores (Kawashima et al., 2010; Wang et al., 2011; Caldas et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "caf1db0c-592e-46e4-a0ca-de1430a491e3",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C15",
+      "claim": "BubR1 evolved into an inactive pseudo-kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "BubR1, on the other hand, evolved into an inactive pseudo-kinase (Suijkerbuijk et al., 2012a) and is a crucial subunit of the MCC (Hardwick et al., 2000; Fraschini et al., 2001; Sudakin et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Suijkerbuijk et al., 2012a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "23b3978c-47ed-443a-bb0a-641aaf2f95b1",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C16",
+      "claim": "BubR1 is a crucial subunit of the MCC.",
+      "claim_type": "EXPLICIT",
+      "source": "BubR1, on the other hand, evolved into an inactive pseudo-kinase (Suijkerbuijk et al., 2012a) and is a crucial subunit of the MCC (Hardwick et al., 2000; Fraschini et al., 2001; Sudakin et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "fa877a31-2fa7-4545-9799-bed239f40ef6",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C17",
+      "claim": "BubR1 contributes to the formation of stable kinetochore\u2013microtubule attachments and checkpoint silencing through kinetochore co-recruitment of protein phosphatase 2A (PP2A).",
+      "claim_type": "EXPLICIT",
+      "source": "BubR1 contributes to the formation of stable kinetochore\u2013microtubule attachments and checkpoint silencing through kinetochore co-recruitment of protein phosphatase 2A (PP2A) (Suijkerbuijk et al., 2012b; Kruse et al., 2013; Xu et al., 2013; Espert et al., 2014; Nijenhuis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "3640ceb9-4154-4d8e-b39e-991368c8827a",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C18",
+      "claim": "Bub1 interacts stably with unattached kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "Bub1 interacts stably with unattached kinetochores, in agreement with its function as a SAC recruitment platform, while BubR1 turns over rapidly (t1/2 = 3\u201320 s), likely reflecting its cycle of incorporation into MCC and its release into the cytosol as a soluble APC/C inhibitor (Howell et al., 2004; Shah et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "1c66f5bc-9df9-494b-b80f-f3add69b1310",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C19",
+      "claim": "BubR1 turns over rapidly at kinetochores (t1/2 = 3\u201320 s).",
+      "claim_type": "EXPLICIT",
+      "source": "Bub1 interacts stably with unattached kinetochores, in agreement with its function as a SAC recruitment platform, while BubR1 turns over rapidly (t1/2 = 3\u201320 s), likely reflecting its cycle of incorporation into MCC and its release into the cytosol as a soluble APC/C inhibitor (Howell et al., 2004; Shah et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "a326586a-65b5-4d1a-9f8b-dfb8ed7a41c2",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C20",
+      "claim": "Kinetochore recruitment of Bub1 is independent of BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides different dynamics, another important difference is that kinetochore recruitment of Bub1 is independent of BubR1, while recruitment of BubR1 is strictly subordinate to Bub1 (Millband and Hardwick, 2002; Gillett et al., 2004; Johnson et al., 2004; Perera et al., 2007; Logarinho et al., 2008; Klebig et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple citations and confirmed experimentally in Figure 1E-F.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "1b85abd4-91ea-4ee6-9aeb-7d3f6c8d7b0d",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C21",
+      "claim": "Recruitment of BubR1 is strictly subordinate to Bub1.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides different dynamics, another important difference is that kinetochore recruitment of Bub1 is independent of BubR1, while recruitment of BubR1 is strictly subordinate to Bub1 (Millband and Hardwick, 2002; Gillett et al., 2004; Johnson et al., 2004; Perera et al., 2007; Logarinho et al., 2008; Klebig et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple citations and confirmed experimentally in Figure 1G-H.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "927b00ef-b17e-4ed1-906f-969dad71c1c8",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C22",
+      "claim": "Bub3 targets kinetochores by binding to phosphorylated Met-Glu-Leu-ThrP (MELTP) repeats of the outer kinetochore subunit Knl1.",
+      "claim_type": "EXPLICIT",
+      "source": "Bub3 is a 7-WD40 \u03b2-propeller that targets kinetochores by binding to phosphorylated Met-Glu-Leu-ThrP (MELTP, where TP indicates phosphothreonine) repeats of the outer kinetochore subunit Knl1 (a.k.a. Casc5, Spc105, Spc7, AF15q14, and Blinkin) (Kiyomitsu et al., 2007; Krenn et al., 2012, 2014; London et al., 2012; Shepperd et al., 2012; Yamagishi et al., 2012; Primorac et al., 2013) (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "973a9a24-d7f9-497d-886c-4b6418f0c897",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C23",
+      "claim": "Bub3 binds tightly to Bub1 and BubR1 via conserved segments known as Bub3-binding domain (B3BD) or GLEBS.",
+      "claim_type": "EXPLICIT",
+      "source": "Bub3 binds tightly to Bub1 and BubR1 via conserved segments known as Bub3-binding domain (B3BD) or GLEBS (Taylor et al., 1998; Larsen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "9476d4cd-d498-4697-ba58-c42dd601081b",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C24",
+      "claim": "Bub3 co-recruits Bub1 to kinetochores in Saccharomyces cerevisiae by recognizing MELTP.",
+      "claim_type": "EXPLICIT",
+      "source": "By recognizing MELTP, Bub3 co-recruits Bub1 to kinetochores in Saccharomyces cerevisiae (Primorac et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to Primorac et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "df3e1647-c748-4e2b-bbf3-d4c50aef5a10",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C25",
+      "claim": "In human cells, Bub3 is required for kinetochore recruitment of Bub1 and BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "In human cells, Bub3 is required for kinetochore recruitment of Bub1 and BubR1, and consistently the B3BDs of Bub1 and BubR1 are necessary, and in the case of Bub1 also sufficient, for kinetochore targeting of Bub1 and BubR1 (Taylor et al., 1998; Logarinho et al., 2008; Malureanu et al., 2009; Elowe et al., 2010; Lara-Gonzalez et al., 2011; Krenn et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "fee3e4a4-12d3-473b-8c36-5663a4a69da9",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C26",
+      "claim": "The B3BD of Bub1 is sufficient for kinetochore targeting of Bub1.",
+      "claim_type": "EXPLICIT",
+      "source": "In human cells, Bub3 is required for kinetochore recruitment of Bub1 and BubR1, and consistently the B3BDs of Bub1 and BubR1 are necessary, and in the case of Bub1 also sufficient, for kinetochore targeting of Bub1 and BubR1 (Taylor et al., 1998; Logarinho et al., 2008; Malureanu et al., 2009; Elowe et al., 2010; Lara-Gonzalez et al., 2011; Krenn et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations and confirmed experimentally in Figure 1I.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "545ec155-476b-46cc-b546-1a211e132569",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C27",
+      "claim": "Mps1 phosphorylates MELT repeats of Knl1 to promote kinetochore recruitment of Bub1 and BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "The SAC kinase Mps1 has been shown to phosphorylate MELT repeats of Knl1 to promote kinetochore recruitment of Bub1 and BubR1 (Heinrich et al., 2012; London et al., 2012; Shepperd et al., 2012; Yamagishi et al., 2012; Primorac et al., 2013; Vleugel et al., 2013; Krenn et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with multiple citations and confirmed by mass spectrometry in Figure 1C-D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "7451c54c-6be0-4d9f-b50b-be10c90d5f8f",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C28",
+      "claim": "Inhibition of Mps1 with Reversine strongly suppresses the interaction of Bub1, BubR1, and Bub3 with kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative mass spectrometry (see 'Materials and methods') of proteins associated with Bub1 or Knl1 confirmed the crucial role of Mps1, as we observed a strong suppression of the interaction of Bub1, BubR1, and Bub3 with kinetochores in the presence of Reversine (Figure 1C\u2013D. Large deviations from a value of 1 for the Reversine/DMSO ratio indicate suppression of binding).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and demonstrated in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "200a7d66-3e6c-4fd6-a9cc-02c0fc2eef79",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C29",
+      "claim": "Bub1 decorated kinetochores at essentially normal levels after the depletion of BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "In HeLa cells treated with nocodazole, which depolymerizes microtubules and activates the SAC, Bub1 decorated kinetochores at essentially normal levels after the depletion of BubR1 (Figure 1E, quantified in Figure 1F. Quantifications of RNAi-based depletions are shown in Figure 1\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "c4bc6c45-6511-442e-a2dd-588efdcb77db",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C30",
+      "claim": "BubR1 did not decorate kinetochores after Bub1 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, BubR1 did not decorate kinetochores after Bub1 depletion (Figure 1G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "10ce7df4-1108-405e-b859-cc147b07fc7a",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C31",
+      "claim": "Bub1209-270, encompassing the B3BD, is the minimal Bub1 localization domain.",
+      "claim_type": "EXPLICIT",
+      "source": "By monitoring the localization of a GFP-Bub1 reporter construct, we had previously demonstrated that Bub1209-270, encompassing the B3BD, is the minimal Bub1 localization domain (Taylor et al., 1998; Krenn et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "8220b8ed-6037-40c1-9dfa-c8844b61cc28",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C32",
+      "claim": "Bub1209\u2013270 targeted kinetochores very efficiently even after the depletion of endogenous Bub1.",
+      "claim_type": "EXPLICIT",
+      "source": "Bub1209\u2013270 targeted kinetochores very efficiently even after the depletion of endogenous Bub1 (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "8cf7632a-f299-450d-be3d-0dc585a265a5",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C33",
+      "claim": "BubR1362\u2013431 was not recruited to kinetochores even in the presence of Bub1.",
+      "claim_type": "EXPLICIT",
+      "source": "BubR1362\u2013431 was not recruited to kinetochores even in the presence of Bub1 (Figure 1J. Diagrams of Bub1 and BubR1 deletions used in this study are in Figure 1\u2014figure supplement 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "a22a7f6f-0d7e-4047-8913-04c125c10a46",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C34",
+      "claim": "The B3BD of Bub1 strongly enhanced binding of Bub3 to phosphorylated MBP-Knl1MELT1 but not to unphosphorylated MBP-Knl1MELT1.",
+      "claim_type": "EXPLICIT",
+      "source": "The B3BD of Bub1 strongly enhanced binding of Bub3 to phosphorylated MBP-Knl1MELT1 but not to unphosphorylated MBP-Knl1MELT1, while the B3BD of BubR1 had a negligible effect (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "56eff657-821b-4291-8f10-7c16cccd7ebf",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C35",
+      "claim": "The B3BD of BubR1 had a negligible effect on binding of Bub3 to phosphorylated MBP-Knl1MELT1.",
+      "claim_type": "EXPLICIT",
+      "source": "The B3BD of Bub1 strongly enhanced binding of Bub3 to phosphorylated MBP-Knl1MELT1 but not to unphosphorylated MBP-Knl1MELT1, while the B3BD of BubR1 had a negligible effect (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "bbf50d1e-078d-4d0f-9c08-e1d294e3e301",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C36",
+      "claim": "Bub3 in isolation did not bind MBP-Knl1MELT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Bub3 in isolation did not bind MBP-Knl1MELT1, in agreement with our previous data (Krenn et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "bb001961-92bb-4d7f-a4f4-f5ce42acb386",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C37",
+      "claim": "The 'loop' region of Bub1 or BubR1 is between strands \u03b21 and \u03b22 and precedes the highly conserved core of the B3BD.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'loop' region of Bub1 or BubR1 is between strands \u03b21 and \u03b22 (Figure 2B\u2013D) and precedes the highly conserved core of the B3BD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and illustrated in Figure 2B-D.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "ae17e2b4-9a71-47b9-82c2-2bcc5647538c",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C38",
+      "claim": "The loop abuts the binding site for the MELTP peptide and is ideally positioned to modulate the binding affinity of Bub3 for MELTP.",
+      "claim_type": "EXPLICIT",
+      "source": "The loop abuts the binding site for the MELTP peptide and is therefore ideally positioned to modulate the binding affinity of Bub3 for MELTP (Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and illustrated in Figure 2C-D.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "6b769bd1-5d08-48f5-a35b-69abd4c329ae",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C39",
+      "claim": "Bub1209\u2013270/BR1-loop bound weakly to phosphorylated MBP-Knl1MELT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Bub1209\u2013270 bound tightly and in an Mps1-phosphorylation-dependent manner to MBP-Knl1MELT1 (Figure 2F), while Bub1209\u2013270/BR1\u2013loop bound weakly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "627798cf-96cf-41af-b8e0-cac2d767cc5f",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C40",
+      "claim": "BubR1362\u2013431/B1\u2013loop bound more strongly to phosphorylated MBP-Knl1MELT1 than did BubR1362\u2013431.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, BubR1362\u2013431/B1\u2013loop bound more strongly to phosphorylated MBP-Knl1MELT1 than did BubR1362\u2013431 (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "c1db5307-0ea6-4dc0-af3c-f52e26ec4145",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C41",
+      "claim": "Loop swap mutants interacted with Bub3 as efficiently as wild-type counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Loop swap mutants interacted with Bub3 as efficiently as wild-type counterparts, but the interactions that Bub3 mediates, most notably those with the Knl1 receptor and its associated partner Mis12, were strongly enhanced when the Bub1 loop region was grafted onto BubR1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "308a2b61-56eb-4304-9353-0b86ec0d4d6e",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C42",
+      "claim": "The interactions that Bub3 mediates with the Knl1 receptor and Mis12 were strongly enhanced when the Bub1 loop region was grafted onto BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Loop swap mutants interacted with Bub3 as efficiently as wild-type counterparts, but the interactions that Bub3 mediates, most notably those with the Knl1 receptor and its associated partner Mis12, were strongly enhanced when the Bub1 loop region was grafted onto BubR1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "4fffe819-835e-4830-abc4-84b1485a8719",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C43",
+      "claim": "Kinetochore localization of GFP-Bub1BR1\u2013loop was weaker than that of wild-type Bub1.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetochore localization of GFP-Bub1BR1\u2013loop was weaker than that of wild-type Bub1 (Figure 3A\u2013B), whereas kinetochore localization of GFP-BubR1B1\u2013loop was stronger than that of unmodified BubR1 (Figure 3C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "fd1f0512-c187-4190-93d9-201cb023a208",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C44",
+      "claim": "Kinetochore localization of GFP-BubR1B1\u2013loop was stronger than that of unmodified BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetochore localization of GFP-Bub1BR1\u2013loop was weaker than that of wild-type Bub1 (Figure 3A\u2013B), whereas kinetochore localization of GFP-BubR1B1\u2013loop was stronger than that of unmodified BubR1 (Figure 3C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "e8d8022e-2925-431d-84f3-cbea21ebabeb",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C45",
+      "claim": "GFP-BubR1B1\u2013loop decorated kinetochores even after the depletion of Bub1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, GFP-BubR1B1\u2013loop decorated kinetochores even after the depletion of Bub1. Thus, when grafted onto BubR1, the Bub1 loop region is sufficient to confer upon BubR1 the ability to target kinetochores in a Bub1-independent fashion (Figure 3E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "1f35bd49-f309-43c3-8620-bac9c8a1756b",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C46",
+      "claim": "Kinetochore localization of GFP-BubR1B1\u2013loop in cells depleted of Bub1 was inhibited by addition of Reversine.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetochore localization of GFP-BubR1B1\u2013loop in cells depleted of Bub1 was inhibited by addition of Reversine, indicating a dependence on Mps1 and MELTP sequences (Figure 3G\u2013H and Figure 3\u2014figure supplement 1, panel A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "2064fb24-6ef1-4f08-8507-1da9cf76ebc7",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C47",
+      "claim": "Expression of BubR1B1\u2013loop did not overtly affect the kinetochore levels of endogenous Bub1.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of BubR1B1\u2013loop did not overtly affect the kinetochore levels of endogenous Bub1 (Figure 3\u2014figure supplement 1, panel B), suggesting that the multiple MELTP sequences of Knl1 are not saturated with endogenous Bub1 even in the strong checkpoint-activating conditions of our assay.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3\u2014figure supplement 1, panel B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "7ed9224e-6a98-4903-bc72-21bbc748e65c",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C48",
+      "claim": "In cells depleted of endogenous BubR1, wild-type BubR1 restored SAC function to a high degree but GFP-BubR1B1\u2013loop failed to do so.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells depleted of endogenous BubR1, wild-type BubR1 restored SAC function to a high degree but GFP-BubR1B1\u2013loop failed to do so (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "30d78d30-f07a-4fd8-849c-68ec5b7ccf3b",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C49",
+      "claim": "GFP-BubR1B1\u2013loop showed much less association with MCC and APC/C subunits compared to GFP-BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of immune-precipitates of GFP-BubR1 and GFP-BubR1B1\u2013loop from nocodazole-treated mitotic cells showed much less of the latter associated with MCC and APC/C subunits (Figure 3J, quantified in Figure 3\u2014figure supplement 1, panel C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "bd6216b6-3410-42fb-be30-8d73ae88240e",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C50",
+      "claim": "Immune-precipitation of the APC/C demonstrated association of GFP-BubR1, but not GFP-BubR1B1\u2013loop, with the APC/C.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, immune-precipitation (IP) of the APC/C demonstrated association of GFP-BubR1, but not GFP-BubR1B1\u2013loop, with the APC/C (Figure 3K, quantified in Figure 3\u2014figure supplement 1, panel D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 3K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "702e782d-0500-4ce8-bb05-f2952371037d",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C51",
+      "claim": "Bub1209\u2013270, encompassing the B3BD and localizing robustly to kinetochores, did not recruit BubR1 in cells depleted of endogenous Bub1.",
+      "claim_type": "EXPLICIT",
+      "source": "Bub1209\u2013270, encompassing the B3BD and localizing robustly to kinetochores, did not recruit BubR1 in cells depleted of endogenous Bub1 (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "2d2ce179-7b34-4dac-af0a-73144c134e3b",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C52",
+      "claim": "Bub11\u2013284, containing the tetratrico peptide repeats (TPRs) and the B3BD of Bub1, targeted kinetochores but did not recruit BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "A construct containing the tetratrico peptide repeats (TPRs) and the B3BD of Bub1, Bub11\u2013284, also targeted kinetochores but did not recruit BubR1 (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "4e045c82-3d9d-4da3-b031-941ca7b9cc55",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C53",
+      "claim": "Bub1209\u2013409, consisting of the B3BD and a \u223c140-residue C-terminal extension (CTE), targeted kinetochores and promoted robust kinetochore localization of BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, a segment (Bub1209\u2013409) consisting of the B3BD and a \u223c140-residue C-terminal extension (CTE), targeted kinetochores and promoted robust kinetochore localization of BubR1 (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "b96f6f93-44c2-4a3b-952c-d1b3100b609f",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C54",
+      "claim": "Bub1 does not require the CTE (residues 271\u2013409) for its own kinetochore recruitment but requires it to recruit BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Bub1 does not require the CTE (residues 271\u2013409) for its own kinetochore recruitment (the B3BD, residues 209\u2013270, is sufficient) but requires it to recruit BubR1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 4A-D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "45e0b5e1-3943-4ea6-be93-a9514f5d2840",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C55",
+      "claim": "Bub1\u0394271\u2013409 targeted kinetochores efficiently but failed to recruit BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "A deletion mutant lacking the CTE (Bub1\u0394271\u2013409) targeted kinetochores efficiently but failed to recruit BubR1 (Figure 4C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "b528c105-d446-456b-a021-200512966247",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C56",
+      "claim": "GFP-Bub1209\u2013409 interacted with BubR1 at levels that were only modestly lower than those of full-length GFP-Bub1.",
+      "claim_type": "EXPLICIT",
+      "source": "In IP experiments both in the presence and absence of endogenous Bub1, GFP-Bub1209\u2013409 interacted with BubR1 at levels that were only modestly lower than those of full-length GFP-Bub1 (Figure 4E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "9f0a0c4f-2271-456e-8e43-cc17076dab32",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C57",
+      "claim": "GFP-Bub1209\u2013270 did not interact with BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, GFP-Bub1209\u2013270 did not interact with BubR1, in agreement with the inability of this construct to promote BubR1 localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "0ba07853-555b-4540-ad45-8445fb197ac5",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C58",
+      "claim": "Bub11\u2013409 and BubR11\u2013571 bind directly in size-exclusion chromatography experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In size-exclusion chromatography (SEC) experiments, in which the elution volume reflects macromolecular mass and shape, BubR11\u2013571/Bub3 bound stoichiometrically to Bub11\u2013409/Bub3 (Figure 4G), thus demonstrating a direct interaction in the absence of other proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "58ff5e4a-18e9-4f1d-a99e-f3f341e54be6",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C59",
+      "claim": "BubR11\u2013571 did not require Bub3 to bind Bub11\u2013409/Bub3 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments in vitro, BubR11\u2013571 did not require Bub3 to bind Bub11\u2013409/Bub3 (Figure 4H), and therefore in the following SEC experiments, we used BubR1 and BubR1/Bub3 interchangeably (whereas Bub1 was poorly expressed and largely insoluble in insect cells without Bub3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "5b172454-eefb-4060-97bc-2176987d0ee6",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C60",
+      "claim": "Bub1209\u2013409/Bub3 formed a stoichiometric complex with BubR11\u2013571/Bub3.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the ability of Bub1209\u2013409 to recruit BubR1 to kinetochores, Bub1209\u2013409/Bub3 formed a stoichiometric complex with BubR11\u2013571/Bub3 (Figure 4I) or BubR11\u2013571 (Figure 4\u2014figure supplement 1, panel A), further showing that the Bub1 TPR region is dispensable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "5d78fefb-046c-41d2-ac63-2f08c13dac49",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C61",
+      "claim": "Neither the isolated B3BD of Bub1 (Bub1209\u2013270/Bub3) nor the isolated CTE (Bub1271\u2013409) bound BubR11\u2013571/Bub3.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither the isolated B3BD of Bub1 (Bub1209\u2013270/Bub3, Figure 4\u2014figure supplement 1B) nor the isolated CTE (Bub1271\u2013409, Figure 4J) bound BubR11\u2013571/Bub3, indicating that both regions contribute to BubR1 binding in vitro.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 4J and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "135bc586-6657-48cf-84cb-b40c285db426",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C62",
+      "claim": "BubR1362\u2013571, which contains the B3BD and a \u223c140-residue CTE, localized to kinetochores in a Bub1-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "BubR1362\u2013571, which contains the B3BD and a \u223c140-residue CTE, localized to kinetochores in a Bub1-dependent manner (Figure 5A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "956a4fda-7a88-470b-b22e-05ba09354054",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C63",
+      "claim": "Shorter fragments of BubR1, including the isolated B3BD (BubR1362\u2013431) and the isolated CTE (BubR1432\u2013571), did not localize to kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "Shorter fragments of BubR1, including the isolated B3BD (BubR1362\u2013431, see also Figure 1J) and the isolated CTE (BubR1432\u2013571), did not localize to kinetochores (Figure 5B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "1c16e152-d848-449e-b8fd-3413779ba05e",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C64",
+      "claim": "BubR1362\u2013571 bound to Bub11\u2013409/Bub3 in SEC experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the kinetochore recruitment assay, SEC experiments showed binding of BubR1362\u2013571 but not of the isolated B3BD (BubR1362\u2013431/Bub3) or the isolated CTE (BubR1432\u2013571) to Bub11\u2013409/Bub3 (Figure 5D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "baa29d1a-a03f-4bf8-8732-15c6cd65dc95",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C65",
+      "claim": "The isolated B3BD (BubR1362\u2013431/Bub3) did not bind to Bub11\u2013409/Bub3 in SEC experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the kinetochore recruitment assay, SEC experiments showed binding of BubR1362\u2013571 but not of the isolated B3BD (BubR1362\u2013431/Bub3) or the isolated CTE (BubR1432\u2013571) to Bub11\u2013409/Bub3 (Figure 5D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "565f9660-c095-4ae3-a06a-d651ff6b1718",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C66",
+      "claim": "The isolated CTE (BubR1432\u2013571) did not bind to Bub11\u2013409/Bub3 in SEC experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the kinetochore recruitment assay, SEC experiments showed binding of BubR1362\u2013571 but not of the isolated B3BD (BubR1362\u2013431/Bub3) or the isolated CTE (BubR1432\u2013571) to Bub11\u2013409/Bub3 (Figure 5D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "cf63627d-e758-48c1-a2c5-d58582bdebdc",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C68",
+      "claim": "The sequences of Bub1209\u2013409 and BubR1362\u2013571 are structurally equivalent.",
+      "claim_type": "EXPLICIT",
+      "source": "An alignment of the interacting domains of Bub1 and BubR1 (residues 209\u2013409 and 362\u2013571, respectively; the alignment was obtained with programs Muscle [Edgar, 2004] and JPRED [Cole et al., 2008]) shows that their sequences are structurally equivalent (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "45631ce4-0e2f-4f55-8417-e47efa097b90",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C69",
+      "claim": "The ability of modern-day Bub1 and BubR1 to form heterodimers using structurally equivalent segments may reflect the ability of their ancestor to form homodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "We surmise that the ability of modern-day Bub1 and BubR1 to form heterodimers using these structurally equivalent ('pseudo-symmetric') segments may reflect the ability of their ancestor to form homodimers, similarly to what is observed in cohesins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a speculation based on the structural equivalence.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "bb1875c7-96cf-423e-ab38-703958724871",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C70",
+      "claim": "Deletion of residues 432\u2013484 of BubR1 (GFP-BubR1\u0394432\u2013484) in the predicted helical region impaired kinetochore localization of BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of residues 432\u2013484 of BubR1 (GFP-BubR1\u0394432\u2013484) in the predicted helical region impaired kinetochore localization of BubR1 (Figure 6C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "f32dc8d4-c634-4227-9896-eb2aff78c973",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C71",
+      "claim": "Mutations in the B3BD of BubR1 (E409K + E413K) known to impair Bub3 binding prevented kinetochore localization of full-length BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, mutations in the B3BD of BubR1 (E409K + E413K) known to impair Bub3 binding (Taylor et al., 1998; Larsen et al., 2007) prevented kinetochore localization of full-length BubR1 (Figure 6E\u2013F) and of BubR1362\u2013571 (Figure 6\u2014figure supplement 1, panels B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6E-F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "72b8ebd1-b3ec-4154-b671-0c16d2555c25",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C72",
+      "claim": "Bub3 binding is necessary for efficient kinetochore localization of BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Bub3 binding is necessary for efficient kinetochore localization of BubR1 even if it may appear to be dispensable for the interaction in vitro (Figure 4H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on the E409K+E413K mutant data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "d690b229-9e1d-4095-889a-4a4e81d9d089",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C73",
+      "claim": "LacI-Bub1 recruited BubR1 to an ectopic LacO site distinct from centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "To try distinguishing between these possibilities, we targeted a Lac repressor (LacI) fusion of Bub1 to an ectopic Lac operator (LacO) site on the chromosome distinct from centromeres. LacI-Bub1 recruited BubR1 to the ectopic site (Figure 6G\u2013H, quantified in Figure 6\u2014figure supplement 1D), thus suggesting that kinetochores are not required for the Bub1/BubR1 interaction, in agreement with a previous study in Schizosaccharomyces pombe (Rischitor et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6G-H.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "71cb0f1e-5761-42f6-99eb-1ecee5cf7f65",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C74",
+      "claim": "Mutation of the Bub3-binding site of the LacI-Bub1 fusion (Bub1E252K) prevented BubR1 recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of the Bub3-binding site of the LacI-Bub1 fusion (Bub1E252K) prevented BubR1 recruitment, suggesting that Bub3 is required for a robust interaction between Bub1 and BubR1 on both sides of the complex (Figure 6G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "240f457e-27c3-4c69-9240-9725cc3e01fe",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C75",
+      "claim": "HeLa cells depleted of endogenous BubR1 failed to arrest in mitosis in the presence of nocodazole.",
+      "claim_type": "EXPLICIT",
+      "source": "HeLa cells depleted of endogenous BubR1 failed to arrest in mitosis in the presence of nocodazole (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "ed7ca539-5e22-4e40-a58c-318843a18641",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C76",
+      "claim": "SAC proficiency was re-established upon expression of GFP-BubR1 but not GFP-BubR1E409K+E413K.",
+      "claim_type": "EXPLICIT",
+      "source": "SAC proficiency was re-established upon expression of GFP-BubR1 but not GFP-BubR1E409K+E413K.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "7cc1d505-466b-4168-805f-b751f034f4f0",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C77",
+      "claim": "GFP-BubR1\u0394432\u2013484 restored a robust SAC response.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP-BubR1\u0394432\u2013484, on the other hand, restored a robust SAC response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "cd5da712-515a-4c86-a452-bcaead6f4638",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C78",
+      "claim": "GFP-BubR1E409K+E413K was unable to interact with Bub1 or Knl1.",
+      "claim_type": "EXPLICIT",
+      "source": "IP experiments indicated that both GFP-BubR1E409K+E413K and GFP-BubR1\u0394432\u2013484 were unable to interact with Bub1 or Knl1, as expected based on their localization behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "9de913b8-dd5d-4c30-b2d3-7820afb5852a",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C79",
+      "claim": "GFP-BubR1\u0394432\u2013484 was unable to interact with Bub1 or Knl1.",
+      "claim_type": "EXPLICIT",
+      "source": "IP experiments indicated that both GFP-BubR1E409K+E413K and GFP-BubR1\u0394432\u2013484 were unable to interact with Bub1 or Knl1, as expected based on their localization behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "bd274a51-527b-434b-a322-8480be9ca0c9",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C80",
+      "claim": "GFP-BubR1E409K+E413K was significantly impaired in its ability to interact with Mad2 and Cdc20.",
+      "claim_type": "EXPLICIT",
+      "source": "However, GFP-BubR1E409K+E413K was also significantly impaired in its ability to interact with two additional MCC subunits (Mad2 and Cdc20) and was even more dramatically impaired in its ability to interact with the APC/C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "00b0457c-a68b-4d2c-967b-b77b90e7edf1",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C81",
+      "claim": "GFP-BubR1E409K+E413K was dramatically impaired in its ability to interact with the APC/C.",
+      "claim_type": "EXPLICIT",
+      "source": "However, GFP-BubR1E409K+E413K was also significantly impaired in its ability to interact with two additional MCC subunits (Mad2 and Cdc20) and was even more dramatically impaired in its ability to interact with the APC/C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "b216a3a2-31e8-4a03-9922-3557163e6d6b",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C82",
+      "claim": "GFP-BubR1\u0394432\u2013484 interacted with the MCC subunits and with the APC/C at levels that were comparable to those of the wild-type GFP-BubR1 control.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, GFP-BubR1\u0394432\u2013484 interacted with the MCC subunits (including Bub3, as expected) and with the APC/C at levels that were comparable to those of the wild-type GFP-BubR1 control (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "36fa357f-93d5-4fa2-a5a7-559b1c6b3fcf",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C83",
+      "claim": "BubR1 needs to bind Bub3 to become incorporated into the MCC in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, because GFP-BubR1E409K+E413K does not bind Bub3, while GFP-BubR1\u0394432\u2013484 does (Figure 7B, quantified in Figure 7C), it appears that at least in human cells BubR1 needs to bind Bub3 to become incorporated into the MCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on comparison of the two mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "c34ba904-352c-48aa-a397-36ed5082068b",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C84",
+      "claim": "Both GFP-BubR1E409K+E413K and GFP-BubR1\u0394432\u2013484 failed to complement the deficits in promoting the formation of stable kinetochore\u2013microtubule attachments observed in cells depleted of endogenous BubR1.",
+      "claim_type": "EXPLICIT",
+      "source": "Both GFP-BubR1E409K+E413K and GFP-BubR1\u0394432\u2013484, neither of which localizes to kinetochores, failed to complement the deficits in promoting the formation of stable kinetochore\u2013microtubule attachments observed in cells depleted of endogenous BubR1 (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "4ee0edd6-8885-4b54-a72c-3d97790e6d99",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C85",
+      "claim": "The role of BubR1 in kinetochore\u2013microtubule attachment has been attributed to its interaction with the B56 regulatory subunit of PP2AB56.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of BubR1 in kinetochore\u2013microtubule attachment has been attributed to its interaction with the B56 regulatory subunit of a complex of protein phosphatase 2A (PP2AB56) (Suijkerbuijk et al., 2012b; Kruse et al., 2013; Xu et al., 2013; Espert et al., 2014; Nijenhuis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "21d0fd01-6fab-445f-a9c5-b8ab11ec99e9",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C86",
+      "claim": "The levels of the B56 regulatory subunit in IPs of the GFP-BubR1\u0394432\u2013484 mutant were much lower than those of the wild-type protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We asked if the defect of the BubR1\u0394432\u2013484 mutant in supporting kinetochore\u2013microtubule attachment correlated with a defective interaction with PP2AB56. Indeed, the levels of the B56 regulatory subunit in IPs of the GFP-BubR1\u0394432\u2013484 mutant were much lower than those of the wild-type protein (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "e0c69f76-8482-48c9-bd48-56d9b3928cfe",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C87",
+      "claim": "The duplication of an ancestor gene and subsequent divergence was exploited during evolution to create Bub1 and BubR1 with highly diversified and efficient functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of the mechanism of recruitment of Bub1 and BubR1 illustrates how the duplication of an ancestor gene and subsequent divergence was exploited during evolution to create two gene products with highly diversified and efficient functions, including monitoring checkpoint status through stable recruitment to unattached kinetochores (Bub1), effecting APC/C inhibition through incorporation into the MCC (BubR1), stabilization of microtubule attachment (Bub1 and BubR1, possibly through different mechanisms), and SAC silencing (BubR1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "080bc5c6-3fa7-4c72-b270-41ed13528923",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C88",
+      "claim": "The occurrence of nine distinct duplications of the Bub1 and BubR1 ancestor likely reflects an extreme evolutionary pressure to separate functions that were originally condensed in a single gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The occurrence of nine distinct duplications of the Bub1 and BubR1 ancestor (Suijkerbuijk et al., 2012a) likely reflects an extreme evolutionary pressure to separate functions that were originally condensed in a single gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an interpretation of the evolutionary data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "27a81be0-0c9d-4a25-9f05-c0c8fbeb58c7",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C89",
+      "claim": "The loss of kinase activity specifically in BubR1 but not Bub1 was identified as a manifestation of the divergence of these proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, the loss of kinase activity specifically in BubR1 but not Bub1 was identified as a manifestation of the divergence of these proteins (Vleugel et al., 2012; Suijkerbuijk et al., 2012b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "4f98c84f-4462-4288-aa72-01e8598a4c7c",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C90",
+      "claim": "A suboptimal loop region for MELTP binding in BubR1 makes it depend on an alternative mechanism for kinetochore localization, which is the direct interaction with Bub1.",
+      "claim_type": "EXPLICIT",
+      "source": "A suboptimal loop region for MELTP binding in BubR1 makes it depend on an alternative mechanism for kinetochore localization. This alternative is the direct interaction with Bub1, extensively characterized in Figures 4\u20136.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "fa9a1005-eefb-48a2-b453-5e24f091c424",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C91",
+      "claim": "The failure of the BubR1 gain-of-function mutant to complement the depletion of wild-type BubR1 strongly suggests that the evolutionary divergence of Bub1 and BubR1 is functionally relevant.",
+      "claim_type": "EXPLICIT",
+      "source": "The failure of the BubR1 gain-of-function mutant to complement the depletion of wild-type BubR1 strongly suggests that the evolutionary divergence of Bub1 and BubR1, with its specific effects on kinetochore recruitment, is functionally relevant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section based on the data in Figure 3I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "99edafab-4a22-4216-87bf-9e1fa6397b0d",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C92",
+      "claim": "Bub3 has at least three distinct functions: (1) it recruits Bub1 to MELTP motifs of Knl1; (2) it contributes to the dimerization of Bub1 with BubR1 required for kinetochore recruitment of the latter; and (3) in complex with BubR1, it has an additional hitherto unknown function in the SAC.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Bub3 has at least three distinct functions: (1) it recruits Bub1 to MELTP motifs of Knl1; (2) it contributes to the dimerization of Bub1 with BubR1 required for kinetochore recruitment of the latter; and (3) in complex with BubR1, it has an additional hitherto unknown function in the SAC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of Bub3 functions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "7718944f-da46-4fc6-a452-dc93ec168645",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C93",
+      "claim": "The SAC defect observed with the BubR1E409K+E413K mutant is unlikely to be a consequence of impaired kinetochore localization.",
+      "claim_type": "EXPLICIT",
+      "source": "The SAC defect observed with this mutant is unlikely to be a consequence of impaired kinetochore localization, because another kinetochore-localization impaired mutant, BubR1\u0394432\u2013484, was checkpoint proficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section based on comparison of the two mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "60bf289c-6dc4-4a1c-af8e-fcb69ee83511",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C94",
+      "claim": "BubR1-bound Bub3 is involved in an unknown aspect of the SAC mechanism downstream of kinetochores, possibly having to do with MCC formation or APC/C binding.",
+      "claim_type": "EXPLICIT",
+      "source": "We surmise that BubR1-bound Bub3 is involved in an unknown aspect of the SAC mechanism downstream of kinetochores, possibly having to do with MCC formation or APC/C binding, as recently proposed (Han et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as speculation based on the data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "d03d83e0-89cd-4d8b-b208-f6455daefa46",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C95",
+      "claim": "The BubR1 loop motif influences the specificity of BubR1-bound Bub3 for additional SAC-relevant targets.",
+      "claim_type": "EXPLICIT",
+      "source": "In analogy with the role of the Bub1 loop motif in modulating the function of Bub3 as a MELTP receptor, we speculate that the BubR1 loop motif influences the specificity of BubR1-bound Bub3 for additional SAC-relevant targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as speculation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "26aa85d4-a6fc-4f00-b076-23f84331b2c4",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C96",
+      "claim": "The fact that the 'loop swap' BubR1 mutant is unable to sustain the SAC provides evidence for the hypothesis that the BubR1 loop motif influences Bub3 specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the 'loop swap' BubR1 mutant is unable to sustain the SAC provides evidence for this hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section based on the data in Figure 3I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "0b9951ae-f6d3-4472-b853-0f196bab2501",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C97",
+      "claim": "Recruitment of PP2AB56 by BubR1 has been recently implicated in SAC silencing through a mechanism ultimately impinging on dephosphorylation of the MELTP motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Recruitment of PP2AB56 by BubR1 has been recently implicated in SAC silencing through a mechanism ultimately impinging on dephosphorylation of the MELTP motifs (Espert et al., 2014; Nijenhuis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "21767cc1-f5d4-432f-892e-7c5ed387e70a",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C98",
+      "claim": "BubR1 promotes bi-orientation through recruitment of PP2AB56, which counteracts Aurora B activity and thus stabilizes kinetochore\u2013microtubule attachments.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, it has been shown that BubR1 promotes bi-orientation through recruitment of PP2AB56 (Suijkerbuijk et al., 2012b; Kruse et al., 2013; Xu et al., 2013), which counteracts Aurora B activity and thus stabilizes kinetochore\u2013microtubule attachments (Lampson and Kapoor, 2005; Foley et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "a8d79fd9-62d7-4e3d-81f5-ea6f26b61f26",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C99",
+      "claim": "BubR1\u0394432\u2013484, which cannot interact with Bub1 and localize to kinetochores, has a strong defect in kinetochore\u2013microtubule attachment that correlates with a defective interaction with PP2AB56.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that BubR1\u0394432\u2013484, which cannot interact with Bub1 and localize to kinetochores, has a strong defect in kinetochore\u2013microtubule attachment that correlates with a defective interaction with PP2AB56.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section based on the data in Figure 7D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "83fb4246-b581-4c38-a363-225e36c009f3",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C100",
+      "claim": "Mad1/C-Mad2 at kinetochores acts as a template for the establishment of the Cdc20/C\u2013Mad2 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have previously shown that two conformers of Mad2, O-Mad2 and C-Mad2, form an asymmetric conformational dimer (Luo et al., 2004; De Antoni et al., 2005). In this reaction, Mad1 acts as a stable placeholder for C-Mad2 (De Antoni et al., 2005). Once at kinetochores, the Mad1/C-Mad2 complex recruits a high-turnover cytosolic form of O-Mad2 and converts it into the active C-Mad2 form, which targets Cdc20, thus overcoming a rate-limiting step towards the formation of MCC (De Antoni et al., 2005; Mapelli et al., 2007; Simonetta et al., 2009). This scheme, summarized in Figure 8B, identifies Mad1/Mad2 as a 'template' for the establishment of the Cdc20/C-Mad2 complex, a structural 'copy' of the Mad1/Mad2 complex (De Antoni et al., 2005; Musacchio and Salmon, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section with citations and illustrated in Figure 8B.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "3090a42d-ba14-4837-97ce-bc18a143b1be",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "claim_id": "C101",
+      "claim": "The MCC, made of Cdc20/C-Mad2 and BubR1/Bub3, can be interpreted as a 'copy' of kinetochore-bound 'templates' made of Mad1/C-Mad2 and Bub1/Bub3 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The MCC, made of Cdc20/C-Mad2 and BubR1/Bub3, can be interpreted as a 'copy' of kinetochore-bound 'templates' made of Mad1/C-Mad2 and Bub1/Bub3 complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6627e38d-f381-4f6b-976f-10682ff587e4",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Bub1 and BubR1 originated from duplication of an ancestor gene present in the last eukaryotic common ancestor (LECA), with up to nine distinct duplication events leading to sub-functionalization. This evolutionary divergence created proteins with complementary roles in the SAC, including loss of kinase activity in BubR1 and establishment of hierarchical kinetochore recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9, C10 are well-supported by citations to prior work (Suijkerbuijk et al., 2012a). Claims C11, C87-C89 provide appropriate context and interpretation consistent with established evolutionary biology principles. The evolutionary framework is appropriately cited and provides necessary background for understanding the functional divergence demonstrated experimentally in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "fbe47a37-6f33-41eb-aeaa-29928ec625fb",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Bub1 kinetochore recruitment is independent of BubR1, while BubR1 recruitment is strictly subordinate to Bub1. Both proteins require Mps1-mediated phosphorylation of Knl1 MELT repeats for kinetochore localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 are supported by both prior literature (multiple citations) and new experimental data (Figures 1E-H). Claims C27-C30 are supported by quantitative mass spectrometry (Figures 1C-D) and immunofluorescence microscopy with appropriate controls (depletion experiments, Mps1 inhibition). The hierarchical relationship is clearly demonstrated with proper quantification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "f687317f-86b2-41f4-b0ed-1898d29eb186",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The B3BD of Bub1 (residues 209-270) is sufficient for kinetochore targeting, while the equivalent B3BD of BubR1 (residues 362-431) is not sufficient for kinetochore recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C31-C33 are supported by localization experiments using GFP-tagged constructs (Figures 1I-J). The experiments include appropriate controls (endogenous protein depletion) and demonstrate a clear functional difference between the B3BDs of Bub1 and BubR1. This sets up the key question addressed by subsequent experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "244070ea-9cc0-4464-9ec1-be5b19275def",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The loop region between \u03b21 and \u03b22 strands in the B3BD differentially modulates Bub3 binding to phosphorylated MELTP motifs. The Bub1 loop strongly enhances Bub3-MELTP binding, while the BubR1 loop has negligible effect. Loop-swap experiments demonstrate that this short motif is sufficient to transfer enhanced MELTP-binding activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C42 are supported by in vitro binding assays (Figure 2A, F), immunoprecipitation experiments (Figure 2G-H), and structural analysis (Figure 2B-D). The loop-swap experiments provide strong evidence for the functional importance of this region. Controls include unphosphorylated substrate and isolated Bub3. The structural positioning of the loop adjacent to the MELTP binding site (C37-C38) provides mechanistic rationale. However, the structural analysis relies on homology modeling rather than direct structure determination of human proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "39cab42d-4edc-4b80-8273-f48a6068e54f",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Grafting the Bub1 loop onto BubR1 creates a gain-of-function mutant (BubR1-B1-loop) that can localize to kinetochores independently of Bub1, in an Mps1-dependent manner. This localization does not saturate available MELTP binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 are supported by immunofluorescence microscopy with appropriate quantification (Figures 3A-H). The key experiment showing Bub1-independent localization of BubR1-B1-loop (C45) includes proper controls (Bub1 depletion, Reversine treatment). Claim C47 is supported by showing that endogenous Bub1 levels are not affected by BubR1-B1-loop expression, though this is an indirect measure of MELTP saturation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "9612912e-88a8-4792-8bf8-f04bfda83a69",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The BubR1-B1-loop gain-of-function mutant cannot sustain a functional SAC despite achieving Bub1-independent kinetochore localization. This mutant shows reduced association with MCC and APC/C components, demonstrating that the evolutionary divergence of loop sequences is functionally important.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 are supported by live-cell imaging showing mitotic duration (Figure 3I) and immunoprecipitation experiments (Figures 3J-K). The failure of the gain-of-function mutant to rescue SAC function (C48) is a critical finding that demonstrates functional importance of the loop divergence. However, the mechanistic explanation for why the loop-swap impairs MCC/APC/C interaction remains speculative (discussed in C94-C96). The conclusion that evolutionary divergence is functionally relevant (C91, C96) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "3bffc112-4256-4b77-b417-8f553bf8cdc1",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Bub1 requires a C-terminal extension (CTE, residues 271-409) in addition to the B3BD to recruit BubR1 to kinetochores. The minimal BubR1-recruiting region of Bub1 is residues 209-409, which interacts with BubR1 in immunoprecipitation experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 are supported by systematic deletion analysis using immunofluorescence (Figures 4A-D) and immunoprecipitation (Figures 4E-F). The experiments clearly define the minimal regions required for BubR1 recruitment. Multiple constructs were tested with appropriate controls (endogenous Bub1 depletion). The conclusion that both B3BD and CTE are required is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "1441026d-219b-4f27-9d4b-0389df9ed490",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Bub1 and BubR1 interact directly in vitro, as demonstrated by size-exclusion chromatography. The interaction requires both the B3BD and CTE regions of each protein. In vitro, BubR1 does not require Bub3 to bind Bub1/Bub3, though this may not reflect the in vivo requirement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 are supported by size-exclusion chromatography experiments (Figures 4G-J). The direct interaction is clearly demonstrated by co-elution of purified proteins. The systematic deletion analysis (C61) supports the requirement for both B3BD and CTE. However, the observation that BubR1 does not require Bub3 in vitro (C59) contrasts with cellular requirements shown later, and the authors appropriately note this discrepancy and suggest possible explanations (high protein concentration, Bub3 exchange).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "51d95d20-0976-45aa-8e30-039ba669210d",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The minimal Bub1-binding region of BubR1 is residues 362-571, containing both the B3BD and a ~140-residue CTE. Neither the isolated B3BD nor the isolated CTE is sufficient for Bub1 binding in vitro or kinetochore localization in cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66 are supported by parallel experiments using BubR1 deletion constructs in cells (Figures 5A-C) and in vitro (Figures 5D-F). The systematic approach mirrors the Bub1 analysis and demonstrates pseudo-symmetry in the interaction requirements. The correlation between in vitro binding and cellular localization strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "9adc89d0-7d1b-402c-ab50-aff16a2c69b1",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The interacting domains of Bub1 (209-409) and BubR1 (362-571) are structurally equivalent, suggesting that the ability of modern Bub1 and BubR1 to form heterodimers may reflect ancestral homodimerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C68 is supported by sequence alignment and secondary structure prediction (Figure 6\u2014supplement 1A). However, claim C69 is explicitly speculative ('we surmise') and lacks direct experimental evidence. While the pseudo-symmetry is consistent with an ancestral homodimer hypothesis, this remains an inference based on sequence analysis rather than demonstrated experimentally. The speculation is reasonable but should not be considered a supported conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "526e57de-62ae-459f-9519-dc371c5faf43",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Deletion of the predicted helical region (residues 432-484) or mutation of the Bub3-binding site (E409K+E413K) in BubR1 impairs kinetochore localization, demonstrating that both the CTE helical region and Bub3 binding are necessary for efficient BubR1 recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 are supported by immunofluorescence experiments (Figures 6C-F). The E409K+E413K mutations are based on prior structural studies showing these residues are important for Bub3 binding. The conclusion that Bub3 binding is necessary in cells (C72) is well-supported, and the authors appropriately discuss the apparent discrepancy with in vitro results where BubR1 without Bub3 can bind Bub1/Bub3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "72a953fc-58b2-42b5-9309-61252ebe603c",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "LacI-Bub1 fusion protein recruits BubR1 to an ectopic chromosomal site distinct from kinetochores, and this recruitment requires the Bub3-binding site of Bub1. This demonstrates that kinetochores are not required for Bub1-BubR1 interaction and that Bub3 is required on both sides of the complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 are supported by the LacO/LacI tethering experiment (Figures 6G-H). This elegant experiment demonstrates that the Bub1-BubR1 interaction can occur independently of kinetochore context. The requirement for Bub3 binding on the Bub1 side (E252K mutation) supports the model that Bub3 plays a direct role in the Bub1-BubR1 interaction beyond just MELTP binding. The experiment is well-controlled and addresses an important mechanistic question.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "7d53ba1b-8cda-47ec-8a00-c7208f73d5b4",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "BubR1 requires Bub3 binding for SAC function and MCC incorporation. The E409K+E413K mutant that cannot bind Bub3 fails to restore SAC function and shows impaired interaction with MCC and APC/C components. In contrast, the \u0394432-484 mutant that retains Bub3 binding but cannot localize to kinetochores maintains SAC proficiency and MCC incorporation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C83, C93 are supported by live-cell imaging (Figure 7A) and immunoprecipitation experiments (Figure 7B-C). The comparison between two kinetochore-localization-deficient mutants with different SAC phenotypes is a key experiment that dissects the role of Bub3 binding from kinetochore localization. The conclusion that Bub3 binding is required for MCC incorporation (C83) is well-supported. However, the authors appropriately note uncertainty about whether the \u0394432-484 mutant has additional defects that might obscure an underlying SAC defect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "528d437a-840a-415a-8dd6-16d5132ca9b6",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Both E409K+E413K and \u0394432-484 BubR1 mutants fail to support stable kinetochore-microtubule attachments. The \u0394432-484 mutant shows reduced interaction with PP2A-B56, correlating with its defect in promoting stable attachments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86, C99 are supported by cold-stable microtubule assays (Figure 7D) and immunoprecipitation (Figure 7E). The correlation between PP2A-B56 binding and the attachment defect is consistent with prior literature (C85, C98). The experiments demonstrate that kinetochore localization of BubR1 is required for its role in chromosome bi-orientation, separable from its SAC function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "41ec3bf8-6041-42c7-9f56-596739baef75",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Bub3 has at least three distinct functions: recruiting Bub1 to MELTP motifs, contributing to Bub1-BubR1 dimerization, and an unknown function in the SAC downstream of kinetochores. The BubR1 loop motif may influence the specificity of BubR1-bound Bub3 for SAC-relevant targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C92 summarizes multiple findings and is well-supported for functions 1 and 2. However, function 3 (C94) is speculative, based on the E409K+E413K mutant phenotype but lacking direct mechanistic evidence. Claims C95-C96 regarding the BubR1 loop influencing Bub3 specificity are explicitly speculative and based on analogy with the Bub1 loop function. While the speculation is reasonable and supported by the loop-swap SAC defect, it remains a hypothesis requiring further testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    },
+    {
+      "id": "0e274b2e-9ff8-4291-9dc5-27c0283e3f83",
+      "content_id": "e8c83f4b-9a79-4b2e-a852-d8ac5bb28bc4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The MCC (Cdc20/C-Mad2 and BubR1/Bub3) can be interpreted as a 'copy' of kinetochore-bound 'templates' (Mad1/C-Mad2 and Bub1/Bub3), extending the template-copy model previously established for Mad1/Mad2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C100 is well-supported by prior literature and appropriately cited. Claim C101 is an interpretive model that extends the template-copy concept to the Bub1-BubR1 system. While the parallel is intellectually appealing and consistent with the data showing hierarchical recruitment and pseudo-symmetric interaction, this remains a conceptual framework rather than a directly tested hypothesis. The authors appropriately present this as an interpretation and note that whether Bub1/Bub3 and Mad1/Mad2 form a complex at kinetochores is unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:37.856979Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9a2045b7-126a-43e1-8142-0f066e30c0f8",
+      "result_id": "6627e38d-f381-4f6b-976f-10682ff587e4"
+    },
+    {
+      "claim_id": "c1962042-5f80-4174-9c26-f34e8d2e1c17",
+      "result_id": "6627e38d-f381-4f6b-976f-10682ff587e4"
+    },
+    {
+      "claim_id": "1748b757-551f-4b76-84ea-3b1c696e7c1b",
+      "result_id": "6627e38d-f381-4f6b-976f-10682ff587e4"
+    },
+    {
+      "claim_id": "ad81b360-33d1-4204-b8e1-5608989c19d9",
+      "result_id": "6627e38d-f381-4f6b-976f-10682ff587e4"
+    },
+    {
+      "claim_id": "3f15f0e9-a2a2-480b-8cde-bb41c8e98c71",
+      "result_id": "6627e38d-f381-4f6b-976f-10682ff587e4"
+    },
+    {
+      "claim_id": "e0c69f76-8482-48c9-bd48-56d9b3928cfe",
+      "result_id": "6627e38d-f381-4f6b-976f-10682ff587e4"
+    },
+    {
+      "claim_id": "080bc5c6-3fa7-4c72-b270-41ed13528923",
+      "result_id": "6627e38d-f381-4f6b-976f-10682ff587e4"
+    },
+    {
+      "claim_id": "27a81be0-0c9d-4a25-9f05-c0c8fbeb58c7",
+      "result_id": "6627e38d-f381-4f6b-976f-10682ff587e4"
+    },
+    {
+      "claim_id": "a326586a-65b5-4d1a-9f8b-dfb8ed7a41c2",
+      "result_id": "fbe47a37-6f33-41eb-aeaa-29928ec625fb"
+    },
+    {
+      "claim_id": "1b85abd4-91ea-4ee6-9aeb-7d3f6c8d7b0d",
+      "result_id": "fbe47a37-6f33-41eb-aeaa-29928ec625fb"
+    },
+    {
+      "claim_id": "545ec155-476b-46cc-b546-1a211e132569",
+      "result_id": "fbe47a37-6f33-41eb-aeaa-29928ec625fb"
+    },
+    {
+      "claim_id": "7451c54c-6be0-4d9f-b50b-be10c90d5f8f",
+      "result_id": "fbe47a37-6f33-41eb-aeaa-29928ec625fb"
+    },
+    {
+      "claim_id": "200a7d66-3e6c-4fd6-a9cc-02c0fc2eef79",
+      "result_id": "fbe47a37-6f33-41eb-aeaa-29928ec625fb"
+    },
+    {
+      "claim_id": "c4bc6c45-6511-442e-a2dd-588efdcb77db",
+      "result_id": "fbe47a37-6f33-41eb-aeaa-29928ec625fb"
+    },
+    {
+      "claim_id": "fee3e4a4-12d3-473b-8c36-5663a4a69da9",
+      "result_id": "f687317f-86b2-41f4-b0ed-1898d29eb186"
+    },
+    {
+      "claim_id": "10ce7df4-1108-405e-b859-cc147b07fc7a",
+      "result_id": "f687317f-86b2-41f4-b0ed-1898d29eb186"
+    },
+    {
+      "claim_id": "8220b8ed-6037-40c1-9dfa-c8844b61cc28",
+      "result_id": "f687317f-86b2-41f4-b0ed-1898d29eb186"
+    },
+    {
+      "claim_id": "8cf7632a-f299-450d-be3d-0dc585a265a5",
+      "result_id": "f687317f-86b2-41f4-b0ed-1898d29eb186"
+    },
+    {
+      "claim_id": "a22a7f6f-0d7e-4047-8913-04c125c10a46",
+      "result_id": "244070ea-9cc0-4464-9ec1-be5b19275def"
+    },
+    {
+      "claim_id": "56eff657-821b-4291-8f10-7c16cccd7ebf",
+      "result_id": "244070ea-9cc0-4464-9ec1-be5b19275def"
+    },
+    {
+      "claim_id": "bbf50d1e-078d-4d0f-9c08-e1d294e3e301",
+      "result_id": "244070ea-9cc0-4464-9ec1-be5b19275def"
+    },
+    {
+      "claim_id": "bb001961-92bb-4d7f-a4f4-f5ce42acb386",
+      "result_id": "244070ea-9cc0-4464-9ec1-be5b19275def"
+    },
+    {
+      "claim_id": "ae17e2b4-9a71-47b9-82c2-2bcc5647538c",
+      "result_id": "244070ea-9cc0-4464-9ec1-be5b19275def"
+    },
+    {
+      "claim_id": "6b769bd1-5d08-48f5-a35b-69abd4c329ae",
+      "result_id": "244070ea-9cc0-4464-9ec1-be5b19275def"
+    },
+    {
+      "claim_id": "627798cf-96cf-41af-b8e0-cac2d767cc5f",
+      "result_id": "244070ea-9cc0-4464-9ec1-be5b19275def"
+    },
+    {
+      "claim_id": "c1db5307-0ea6-4dc0-af3c-f52e26ec4145",
+      "result_id": "244070ea-9cc0-4464-9ec1-be5b19275def"
+    },
+    {
+      "claim_id": "308a2b61-56eb-4304-9353-0b86ec0d4d6e",
+      "result_id": "244070ea-9cc0-4464-9ec1-be5b19275def"
+    },
+    {
+      "claim_id": "4fffe819-835e-4830-abc4-84b1485a8719",
+      "result_id": "39cab42d-4edc-4b80-8273-f48a6068e54f"
+    },
+    {
+      "claim_id": "fd1f0512-c187-4190-93d9-201cb023a208",
+      "result_id": "39cab42d-4edc-4b80-8273-f48a6068e54f"
+    },
+    {
+      "claim_id": "e8d8022e-2925-431d-84f3-cbea21ebabeb",
+      "result_id": "39cab42d-4edc-4b80-8273-f48a6068e54f"
+    },
+    {
+      "claim_id": "1f35bd49-f309-43c3-8620-bac9c8a1756b",
+      "result_id": "39cab42d-4edc-4b80-8273-f48a6068e54f"
+    },
+    {
+      "claim_id": "2064fb24-6ef1-4f08-8507-1da9cf76ebc7",
+      "result_id": "39cab42d-4edc-4b80-8273-f48a6068e54f"
+    },
+    {
+      "claim_id": "7ed9224e-6a98-4903-bc72-21bbc748e65c",
+      "result_id": "9612912e-88a8-4792-8bf8-f04bfda83a69"
+    },
+    {
+      "claim_id": "30d78d30-f07a-4fd8-849c-68ec5b7ccf3b",
+      "result_id": "9612912e-88a8-4792-8bf8-f04bfda83a69"
+    },
+    {
+      "claim_id": "bd6216b6-3410-42fb-be30-8d73ae88240e",
+      "result_id": "9612912e-88a8-4792-8bf8-f04bfda83a69"
+    },
+    {
+      "claim_id": "fa9a1005-eefb-48a2-b453-5e24f091c424",
+      "result_id": "9612912e-88a8-4792-8bf8-f04bfda83a69"
+    },
+    {
+      "claim_id": "26aa85d4-a6fc-4f00-b076-23f84331b2c4",
+      "result_id": "9612912e-88a8-4792-8bf8-f04bfda83a69"
+    },
+    {
+      "claim_id": "702e782d-0500-4ce8-bb05-f2952371037d",
+      "result_id": "3bffc112-4256-4b77-b417-8f553bf8cdc1"
+    },
+    {
+      "claim_id": "2d2ce179-7b34-4dac-af0a-73144c134e3b",
+      "result_id": "3bffc112-4256-4b77-b417-8f553bf8cdc1"
+    },
+    {
+      "claim_id": "4e045c82-3d9d-4da3-b031-941ca7b9cc55",
+      "result_id": "3bffc112-4256-4b77-b417-8f553bf8cdc1"
+    },
+    {
+      "claim_id": "b96f6f93-44c2-4a3b-952c-d1b3100b609f",
+      "result_id": "3bffc112-4256-4b77-b417-8f553bf8cdc1"
+    },
+    {
+      "claim_id": "45e0b5e1-3943-4ea6-be93-a9514f5d2840",
+      "result_id": "3bffc112-4256-4b77-b417-8f553bf8cdc1"
+    },
+    {
+      "claim_id": "b528c105-d446-456b-a021-200512966247",
+      "result_id": "3bffc112-4256-4b77-b417-8f553bf8cdc1"
+    },
+    {
+      "claim_id": "9f0a0c4f-2271-456e-8e43-cc17076dab32",
+      "result_id": "3bffc112-4256-4b77-b417-8f553bf8cdc1"
+    },
+    {
+      "claim_id": "0ba07853-555b-4540-ad45-8445fb197ac5",
+      "result_id": "1441026d-219b-4f27-9d4b-0389df9ed490"
+    },
+    {
+      "claim_id": "58ff5e4a-18e9-4f1d-a99e-f3f341e54be6",
+      "result_id": "1441026d-219b-4f27-9d4b-0389df9ed490"
+    },
+    {
+      "claim_id": "5b172454-eefb-4060-97bc-2176987d0ee6",
+      "result_id": "1441026d-219b-4f27-9d4b-0389df9ed490"
+    },
+    {
+      "claim_id": "5d78fefb-046c-41d2-ac63-2f08c13dac49",
+      "result_id": "1441026d-219b-4f27-9d4b-0389df9ed490"
+    },
+    {
+      "claim_id": "135bc586-6657-48cf-84cb-b40c285db426",
+      "result_id": "51d95d20-0976-45aa-8e30-039ba669210d"
+    },
+    {
+      "claim_id": "956a4fda-7a88-470b-b22e-05ba09354054",
+      "result_id": "51d95d20-0976-45aa-8e30-039ba669210d"
+    },
+    {
+      "claim_id": "1c16e152-d848-449e-b8fd-3413779ba05e",
+      "result_id": "51d95d20-0976-45aa-8e30-039ba669210d"
+    },
+    {
+      "claim_id": "baa29d1a-a03f-4bf8-8732-15c6cd65dc95",
+      "result_id": "51d95d20-0976-45aa-8e30-039ba669210d"
+    },
+    {
+      "claim_id": "565f9660-c095-4ae3-a06a-d651ff6b1718",
+      "result_id": "51d95d20-0976-45aa-8e30-039ba669210d"
+    },
+    {
+      "claim_id": "cf63627d-e758-48c1-a2c5-d58582bdebdc",
+      "result_id": "9adc89d0-7d1b-402c-ab50-aff16a2c69b1"
+    },
+    {
+      "claim_id": "45631ce4-0e2f-4f55-8417-e47efa097b90",
+      "result_id": "9adc89d0-7d1b-402c-ab50-aff16a2c69b1"
+    },
+    {
+      "claim_id": "bb1875c7-96cf-423e-ab38-703958724871",
+      "result_id": "526e57de-62ae-459f-9519-dc371c5faf43"
+    },
+    {
+      "claim_id": "f32dc8d4-c634-4227-9896-eb2aff78c973",
+      "result_id": "526e57de-62ae-459f-9519-dc371c5faf43"
+    },
+    {
+      "claim_id": "72b8ebd1-b3ec-4154-b671-0c16d2555c25",
+      "result_id": "526e57de-62ae-459f-9519-dc371c5faf43"
+    },
+    {
+      "claim_id": "d690b229-9e1d-4095-889a-4a4e81d9d089",
+      "result_id": "72a953fc-58b2-42b5-9309-61252ebe603c"
+    },
+    {
+      "claim_id": "71cb0f1e-5761-42f6-99eb-1ecee5cf7f65",
+      "result_id": "72a953fc-58b2-42b5-9309-61252ebe603c"
+    },
+    {
+      "claim_id": "240f457e-27c3-4c69-9240-9725cc3e01fe",
+      "result_id": "7d53ba1b-8cda-47ec-8a00-c7208f73d5b4"
+    },
+    {
+      "claim_id": "ed7ca539-5e22-4e40-a58c-318843a18641",
+      "result_id": "7d53ba1b-8cda-47ec-8a00-c7208f73d5b4"
+    },
+    {
+      "claim_id": "7cc1d505-466b-4168-805f-b751f034f4f0",
+      "result_id": "7d53ba1b-8cda-47ec-8a00-c7208f73d5b4"
+    },
+    {
+      "claim_id": "cd5da712-515a-4c86-a452-bcaead6f4638",
+      "result_id": "7d53ba1b-8cda-47ec-8a00-c7208f73d5b4"
+    },
+    {
+      "claim_id": "9de913b8-dd5d-4c30-b2d3-7820afb5852a",
+      "result_id": "7d53ba1b-8cda-47ec-8a00-c7208f73d5b4"
+    },
+    {
+      "claim_id": "bd274a51-527b-434b-a322-8480be9ca0c9",
+      "result_id": "7d53ba1b-8cda-47ec-8a00-c7208f73d5b4"
+    },
+    {
+      "claim_id": "00b0457c-a68b-4d2c-967b-b77b90e7edf1",
+      "result_id": "7d53ba1b-8cda-47ec-8a00-c7208f73d5b4"
+    },
+    {
+      "claim_id": "b216a3a2-31e8-4a03-9922-3557163e6d6b",
+      "result_id": "7d53ba1b-8cda-47ec-8a00-c7208f73d5b4"
+    },
+    {
+      "claim_id": "36fa357f-93d5-4fa2-a5a7-559b1c6b3fcf",
+      "result_id": "7d53ba1b-8cda-47ec-8a00-c7208f73d5b4"
+    },
+    {
+      "claim_id": "7718944f-da46-4fc6-a452-dc93ec168645",
+      "result_id": "7d53ba1b-8cda-47ec-8a00-c7208f73d5b4"
+    },
+    {
+      "claim_id": "c34ba904-352c-48aa-a397-36ed5082068b",
+      "result_id": "528d437a-840a-415a-8dd6-16d5132ca9b6"
+    },
+    {
+      "claim_id": "4ee0edd6-8885-4b54-a72c-3d97790e6d99",
+      "result_id": "528d437a-840a-415a-8dd6-16d5132ca9b6"
+    },
+    {
+      "claim_id": "21d0fd01-6fab-445f-a9c5-b8ab11ec99e9",
+      "result_id": "528d437a-840a-415a-8dd6-16d5132ca9b6"
+    },
+    {
+      "claim_id": "a8d79fd9-62d7-4e3d-81f5-ea6f26b61f26",
+      "result_id": "528d437a-840a-415a-8dd6-16d5132ca9b6"
+    },
+    {
+      "claim_id": "99edafab-4a22-4216-87bf-9e1fa6397b0d",
+      "result_id": "41ec3bf8-6041-42c7-9f56-596739baef75"
+    },
+    {
+      "claim_id": "60bf289c-6dc4-4a1c-af8e-fcb69ee83511",
+      "result_id": "41ec3bf8-6041-42c7-9f56-596739baef75"
+    },
+    {
+      "claim_id": "d03d83e0-89cd-4d8b-b208-f6455daefa46",
+      "result_id": "41ec3bf8-6041-42c7-9f56-596739baef75"
+    },
+    {
+      "claim_id": "26aa85d4-a6fc-4f00-b076-23f84331b2c4",
+      "result_id": "41ec3bf8-6041-42c7-9f56-596739baef75"
+    },
+    {
+      "claim_id": "83fb4246-b581-4c38-a363-225e36c009f3",
+      "result_id": "0e274b2e-9ff8-4291-9dc5-27c0283e3f83"
+    },
+    {
+      "claim_id": "3090a42d-ba14-4837-97ce-bc18a143b1be",
+      "result_id": "0e274b2e-9ff8-4291-9dc5-27c0283e3f83"
+    }
+  ],
+  "comparisons": []
+}

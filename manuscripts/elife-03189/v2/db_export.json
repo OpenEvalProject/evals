@@ -1,0 +1,2167 @@
+{
+  "submission": {
+    "id": "75bc5c84-5f5a-42a2-a7dc-a8ff0bed6ebc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:36:25.372218Z",
+    "updated_at": "2025-11-28T22:36:25.372218Z"
+  },
+  "content": [
+    {
+      "id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "submission_id": "75bc5c84-5f5a-42a2-a7dc-a8ff0bed6ebc",
+      "content_type": "manuscript",
+      "content_text": "# The transcriptional response to tumorigenic polarity loss in Drosophila\n\n## Authors\n\n- Brandon D Bunker<sup>1</sup>\n- Tittu T Nellimoottil<sup>2</sup>\n- Ryan M Boileau<sup>1</sup>\n- Anne K Classen<sup>1</sup>\n- David Bilder<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n2. University of Southern California Department of Biological Sciences Los Angeles United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLoss of polarity correlates with progression of epithelial cancers, but how plasma membrane misorganization drives oncogenic transcriptional events remains unclear. The polarity regulators of the Drosophila Scribble (Scrib) module are potent tumor suppressors and provide a model for mechanistic investigation. RNA profiling of Scrib mutant tumors reveals multiple signatures of neoplasia, including altered metabolism and dedifferentiation. Prominent among these is upregulation of cytokine-like Unpaired (Upd) ligands, which drive tumor overgrowth. We identified a polarity-responsive enhancer in upd3, which is activated in a coincident manner by both JNK-dependent Fos and aPKC-mediated Yki transcription. This enhancer, and Scrib mutant overgrowth in general, are also sensitive to activity of the Polycomb Group (PcG), suggesting that PcG attenuation upon polarity loss potentiates select targets for activation by JNK and Yki. Our results link epithelial organization to signaling and epigenetic regulators that control tissue repair programs, and provide insight into why epithelial polarity is tumor-suppressive.\n\n## Introduction\n\nThe diagnosis of carcinomas\u2013malignant tumors of epithelial origin\u2014has long involved evaluating tissue architecture. Pronounced disorganization of biopsied epithelia is well-established to correlate with tumor malignancy and lethality. However, whether there exists a causative relationship between epithelial organization and tumor progression, as well as what the underlying mechanism might be, has been mysterious. Recent years have shed important light on the former question, identifying contexts where altered activity of proteins that regulate epithelial cell polarity can promote oncogenic phenotypes. For instance, the apical determinant atypical protein kinase C (aPKC) is amplified and over-expressed in multiple cancers (Huang and Muthuswamy, 2010; Parker et al., 2014), while basolateral regulators are altered in several tumor types and degraded by viral oncoproteins (Huang and Muthuswamy, 2010; Elsum et al., 2012); cancer stem cell activity may also be promoted by transition from an epithelial state (Martin-Belmonte and Perez-Moreno, 2011; Scheel and Weinberg, 2012). Mouse models continue to support key roles for polarity regulators in cancer progression (Pearson et al., 2011; Muthuswamy and Xue, 2012; Elsum et al., 2014; Feigin et al., 2014), but the mechanisms linking epithelial organization to tissue homeostasis, as well as the cellular targets that promote oncogenic growth upon polarity loss, remain unclear.\n\nEarly evidence for causative links emerged from Drosophila, where mutations in single polarity-regulating genes can induce dramatic tumorous growths. These polarity regulators\u2013scribble (scrib), discs-large (dlg), and lethal giant larvae (lgl)- cooperatively distinguish the basolateral domain from the apical by antagonizing aPKC activity (St Johnston and Ahringer, 2010; Tepass, 2012). This conserved \u2018Scrib module\u2019 functions in both vertebrates and invertebrates, not only in epithelia but also other polarized cell types. Conservation of these and other core polarity regulators allows Drosophila to be used as a model to study the coupling between epithelial architecture and growth control.\n\nWhen Scrib module function is lost from fly epithelia, mutant cells round up and become multilayered. In the imaginal discs, epithelial organs which normally have a precise intrinsic size-control mechanism, mutant tissue continuously proliferates to more than five times the WT cell number before it kills the animal. Small portions of the tumorous mass, when transplanted into adults, continue to grow uncontrollably and kill the host; such allografts can be repeated indefinitely. This disorganized, lethal and transplantable growth has been termed \u2018neoplastic\u2019, and includes several additional features (Gateff and Schneiderman, 1969; Bilder, 2004). Neoplastic fly tissue is prone to dissemination and degrades basement membrane; in cooperation with oncogenic Ras it can migrate away from its primary site and invade other organs (Pagliarini and Xu, 2003). It is compromised in its differentiation potential, and cannot form adult structures (Gateff and Schneiderman, 1969). It can be recognized by the host innate immune system, whose cellular activities impede its growth (Pastor-Pareja et al., 2008; Cordero et al., 2010). Finally, it produces long-range signals that induce detrimental responses in fly hosts, including cachexia-like tissue wasting (Figueroa-Clarevega and Bilder, 2015). This suite of phenotypes, which echo those found in mammalian malignancies, suggest that elucidating mechanisms linking epithelial organization to tumor suppression in flies may provide novel insight into human cancer as well.\n\nWhat are the genes that induce the multiple aspects of the neoplastic phenotype, and how does loss of a single polarity regulator at the plasma membrane lead to their nuclear misregulation? Here we define the global transcriptional changes associated with tumorigenic epithelial disorganization. By focusing on a single polarity-regulated enhancer of a gene involved in overgrowth, we then untangle signaling, transcription factor, and epigenetic activities that mediate activation upon polarity loss. Our results suggest that epithelia monitor their integrity via a coincidence detection mechanism, and respond to its loss by activating a damage-responsive gene expression program that cannot be turned off in mispolarized tumors.\n\n## Results\n\n### Polarity disruption drives oncogenic transcriptional changes\n\nThe many malignant-like phenotypes observed upon loss of a single polarity regulator must be driven by altered gene expression. To identify such genes, we carried out RNA-Seq analysis of WT and mutant wing imaginal discs. We focused on changes common to neoplasm by sequencing cDNA libraries generated from both scrib and dlg tumors, which phenocopy each other (Figure 1A\u2013C) (Bilder et al., 2000). Analysis revealed 574 genes misregulated at least twofold in both mutant tissues (FDR <5%), with 311 and 263 up- and downregulated respectively (Figure 1D and Suplementary files 1\u20132). Differentially expressed genes include several previously identified neoplastic effectors, such as the pro-invasion factors Matrix metalloprotease 1 (Mmp1) and cheerio (cher) as well as the pupation regulator insulin-like peptide 8 (Ilp8) (Uhlirova and Bohmann, 2006; Colombani et al., 2012; Garelli et al., 2012; K\u00fclshammer and Uhlirova, 2013) (Figure 1E). qRT-PCR analysis of these and other genes shows close agreement with RNA-Seq data (R2 = 0.8844). The transcriptome dataset therefore accurately captures the expression profile of neoplastic tissues, and contains genes that promote tumorigenesis upon polarity loss.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig1-v2.jpg)\n\n**Figure 1.:** (A\u2013C) F-actin staining reveals dramatic overgrowth and architecture defects of neoplastic dlg and scrib wing discs relative to WT. (D) Overlap of genes upregulated (left) or downregulated (right) in scrib and dlg tissues. (E) Genes previously implicated in neoplastic characteristics are differentially expressed. (F and G) Functional categories enriched in the upregulated and downregulated genes include markers of stress response and JAK/STAT pathway activation, and de-differentiation respectively. Selected overexpressed (H) and underexpressed (I) genes are shown. (J\u2013M) Overexpression of Vg suppresses dlgRNAi-driven overgrowth and architecture defects. Dlg staining (green) demonstrates survival of Dlg-depleted wing cells. Scale bars: 100 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) 19 genes activated in response to oxidative stress are significantly upregulated upon polarity loss. (B\u2013C) Loss of dlg leads to higher superoxide levels, as evidenced by increased DHE staining, relative to WT. (D\u2013F) Expression of the anti-oxidant enzymes Cat or Sod2 has no effect on dlgRNAi-mediated overgrowth. (G\u2013I) Ectopic expression of eyeless (eye), a master regulator of eye differentiation, induces photoreceptor formation in a small portion of wild-type and dlgRNAi(84)-expressing discs (arrows), and is unable to block overgrowth upon polarity disruption. Scale bars: 100 \u03bcm.\n\nAmongst upregulated genes, Gene Ontology (GO) highlights factors involved in Response to Stimulus (Figure 1F,H). Several in this category are immune-related factors, and may be due to the recruitment of hemocytes to neoplastic tumors (Lebestky et al., 2000; Pastor-Pareja et al., 2008; Cordero et al., 2010). Others, including Glutathione S transferase E1 (GstE1) and the chaperone CG7130, are regulated by oxidative stress, and overall 19 polarity-sensitive targets are also elevated in hyperoxic conditions (Figure 1\u2014figure supplement 1A) (Landis et al., 2004). Dihydroethidium (DHE), a fluorescent probe for superoxide anions, readily demonstrated elevation upon depletion of dlg (Figure 1\u2014figure supplement 1B\u2013C). Co-overexpression of Catalase, Superoxide dismutase 2, or rat Glutathione Peroxidase 1, which suppress other Drosophila ROS dependent phenotypes (Owusu-Ansah and Banerjee, 2009; Ohsawa et al., 2012; Lim et al., 2014) failed to alter the neoplastic phenotype induced by dlg knockdown (Figure 1\u2014figure supplement 1D\u2013F), although we were unable to detect a consistent reduction of DHE in these contexts. Several metabolic regulators are also misexpressed in polarity-deficient tissues, including Drosophila Lactate Dehydrogenase (ImpL3), which contributes to a Warburg-like metabolic shift in human tumors (Cairns et al., 2011); however, ImpL3 knockdown also did not obviously alter neoplastic growth (data not shown).\n\nPrimary GO categories among downregulated genes likely reflect the failure of neoplastic tumors to differentiate (Figure 1E,G,I). We investigated the functional role by ectopically expressing fate-specifying transcription factors in dlg-depleted tissue. Strikingly, co-expression of vestigial (vg), a distal wing pouch selector that is downregulated in mutant discs, suppressed overgrowth and architecture defects (Figure 1J\u2013M). Though vg overexpression eliminates polarity-deficient clones through apoptosis (Khan et al., 2013), we recovered an intact wing pouch consisting of dlgRNAi/vg co-expressing cells (Figure 1M). We also tested ectopic expression of an eye-specifying transcription factor in wing and eye tissue. eyeless was incapable of suppressing dlg knockdown in either context, but was also incapable of inducing broad photoreceptor differentiation in WT or dlg-depleted tissue (Figure 1\u2014figure supplement 1G\u2013I, data not shown). Together, these data suggest that restoring expression of differentiation-promoting transcription factors can, in some contexts, block neoplastic transformation.\n\n### JAK-STAT ligand transcription promotes neoplastic overgrowth\n\nThe only cell signaling pathway among the top GO categories is the JAK/STAT cascade. Upregulated genes include STAT targets such as chinmo and Socs36E, and a JAK/STAT activity reporter is strongly expressed in dlg and scrib discs (Figure 2A\u2013B) (Wu et al., 2010). Remarkably, each of the three unpaired (upd) genes, which encode the ligands for the JAK/STAT pathway, were transcriptionally elevated between \u223c3- and \u223c50-fold, while genes encoding other signal transduction components were unaltered (Figure 2C). To assess a functional role, we used engrailed-GAL4 to express Socs36E, a negative regulator of JAK/STAT intracellular signaling (Callus and Mathey-Prevot, 2002), in the posterior compartment of wing discs carrying a hypomorphic allele of dlg, and then counted cell numbers on a cell sorter. Strikingly, Socs36E decreased proliferation of dlghypo cells by 40%, while having no significant effect on growth or viability of WT discs (Figure 2D\u2013H). Expression of Socs36E or a dominant-negative form of the JAK-STAT receptor Domeless (DomeDN) also suppressed the growth of scrib-depleted discs (Figure 4\u2014figure supplement 3A\u2013C). We therefore conclude that in imaginal discs, as in RasV12-expressing clones (Wu et al., 2010), the Scrib module regulates JAK-STAT ligand expression to suppress tissue overgrowth.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig2-v2.jpg)\n\n**Figure 2.:** (A and B) A JAK/STAT pathway reporter (green) is highly elevated throughout dlg as compared to WT discs, indicating strong pathway activation. (C) The ligand-encoding upd genes, but not other JAK/STAT pathway components, are transcriptionally upregulated in neoplastic tissues. (D\u2013G) Reduction of JAK/STAT pathway activity via SOCS36E overexpression has no significant effect on WT growth, but suppresses overgrowth of dlghypo tissue. Actin (red) highlights cell outlines, while GFP (green) marks the engrailed-expressing domain. FACS-based quantification is shown in H (**p < 0.001). Scale bars: 100 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Eye imaginal discs expressing upd3 RNAi alone (A), dlg RNAi alone (B), and dlg RNAi + upd3 RNAi (C). Scale bar: 50 \u03bcm.\n\n### Isolation of a polarity-responsive enhancer in upd3\n\nTo elucidate links between polarity and transcriptional control of growth, we focused on a single mitogenic gene: upd3. We cloned 3 kilobases (kb) of genomic DNA surrounding the upd3 ATG into a lacZ reporter (\u2018upd3lacZ\u2019) and found that this reporter was not expressed in WT discs. However, like the overlapping upd3 > GFP reporter, it was distinctly upregulated in neoplastic discs (Figure 3A\u2013C) (Pastor-Pareja et al., 2008). We then identified a minimal polarity-responsive region within this enhancer, using fragments previously analyzed in the adult gut (Jiang et al., 2011). Although reporters including upd3.1LacZ, which is activated by perturbations in the gut epithelium, remain silent, a 1-kb element within the first intron (upd3.3LacZ) was expressed in a patchy manner throughout dlg discs (Figure 3D\u2013I). Expression of upd3.3lacZ, like that of upd3lacZ, was in cells of the disc proper, not in the peripodium or hemocytes (Figure 3\u2014figure supplement 1A\u2013B); this patchy expression resembled that seen with several other upregulated neoplastic effectors, (Figure 4B\u2032, Figure 3\u2014figure supplement 1C\u2013H). Upd3.3LacZ was similarly activated in scrib discs, demonstrating that this enhancer is generally responsive to disruption of epithelial polarity (Figure 4\u2014figure supplement 3E) and identifying a polarity-sensitive cis-regulatory region.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of upd3 reporter constructs in relation to the corresponding genomic region. (B and C) 3 kb upd3LacZ is not expressed in WT, but is upregulated in dlg discs. (D and E) upd3.3LacZ sub-fragment is also silent in WT, but is upregulated in dlg like upd3LacZ. (F\u2013I) Other sub-fragments are not significantly expressed in either WT or dlg. Scale bar: 100 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013B) The upd3LacZ and upd3.3LacZ reporters are expressed primarily in the disc proper, and not the hemocytes or the peripodial membrane. (C\u2013H) The JNK pathway reporter AP-1-GFP, and transcriptional reporters for the polarity-sensitive targets ImpL2 and dilp8 are relatively silent in WT tissue, but active in a patchy pattern in dlg discs. Scale bars: A\u2013B: 10 \u03bcm, C\u2013H: 100 \u03bcm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) The upd3.3 enhancer contains two evolutionarily conserved (between D. melanogaster, D. yakuba and D. erecta) AP-1 binding sites (green boxes), and one semi-conserved Sd binding site (red box). Conserved AP-1 and Sd binding sites are also evident in several neoplasia-induced genes that are also upregulated during wounding, including Ets21C (B), Pvf1 (C), ImpL2 (D), ple (E), and Ilp8 (F). Exons are denoted in orange and green arrows in Ets21C and Ilp8 mark the transcription start site. (G and H) The conservation of the AP-1 and Sd binding sites in upd3.3 is shown.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig4-v2.jpg)\n\n**Figure 4.:** WT wing discs (A) do not express either the JNK target Mmp1 or upd3.3LacZ (A\u2032). Expression of dlgRNAi promotes overgrowth and disorganization (B), as well as Mmp1 and upd3.3LacZ upregulation (B\u2032). Inhibiting AP-1 transcription with either JNKDN or FosDN restores normal disc size and architecture (C and D), and abrogates Mmp1 and upd3.3LacZ expression (C\u2032 and D\u2032). WT discs segregate apical aPKC and basolateral Scrib (E). dlgRNAi expression leads to apical domain expansion and co-localization of aPKC and Scrib (F, arrowheads). Co-expressing JNKDN and dlgRNAi restores the separation of aPKC and Scrib (G). Activation of JNK is sufficient, when apoptosis is blocked with miRGH, to drive upd3.3LacZ, Mmp1 and overgrowth but not to alter polarity (H and I). Scale bars: A\u2013D, H: 100 \u03bcm, E\u2013G, I: 10 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013B) Blocking JNK activity with JNKDN or FosDN (C) has no effect on normal growth or tissue architecture, relative to wild-type. Expression of miRGH does not affect normal tissue architecture or growth (D). Knockdown of Yki promotes mild architecture defects (E), while BrmDN expression has no phenotype (F). For all panels, transgenes were expressed in the dorsal wing pouch with the ms1096-GAL4 driver. Scale bar: 100 \u03bcm.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Expression of dlgRNAi increases upd3.3LacZ fluorescence, which is suppressed by blocking JNK or Trx activity. (B) Expression of aPKCact stimulates upd3.3LacZ in a JNK-independent, but Yki-dependent manner. (C). Hyperactivation of Yki or JNK activity upregulates upd3.3LacZ expression. (D) Alone, expression of aPKCmild, ph-pRNAi, or JNKKWT does not activate upd3.3LacZ; however, co-expression of aPKCmild with ph-pRNAi or JNKKWT drives upd3.3LacZ. (**p < 0.001; n.s. = not significant).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A\u2013C) Reducing JAK-STAT activity with DomeDN or Socs36E attenuates scribIR-mediated overgrowth. (D\u2013H) Blocking JNK pathway activation by depletion of the JNK kinase hep or overexpression of JNKDN suppresses the overproliferation, architecture defects and upd3.3LacZ activation induced by scrib loss. (I and J) Yki is necessary for neoplastic overgrowth of scrib tissue. Scale bar: 100 \u03bcm.\n\n### JNK-mediated transcription drives upd3.3 expression upon polarity loss\n\nWe next sought to identify molecular pathways linking epithelial polarity to upd3 expression. Motif scanning of the upd3.3 enhancer detected two evolutionarily-conserved binding sites for AP-1, the Jun kinase (JNK) pathway transcription factor (Figure 3\u2014figure supplement 2A,G). We tested whether JNK signaling is required for upd3.3LacZ activation. Expression of a dominant-negative form of Drosophila JNK (Flybase: Basket), (JNKDN) has been shown to block neoplastic overgrowth, as well as polarity and architecture defects (Figure 4A\u2013C,E\u2013G; Figure 4\u2014figure supplement 1A\u2013B) (Robinson and Moberg, 2011; Sun and Irvine, 2011). Notably, JNKDN also completely abrogated dlgRNAi-induced upd3.3LacZ expression (Figure 4B\u2032,C\u2032; Figure 4\u2014figure supplement 2A), as well as that induced by scribRNAi (Figure 4\u2014figure supplement 3G\u2013H). Mutation of the JNK kinase, hemipterous (hep) also prevented upd3.3LacZ levels in scrib tissue (Figure 4\u2014figure supplement 3D\u2013F), confirming that canonical JNK signaling acts downstream of polarity disruption to regulate upd3.\n\nThe mechanism by which JNK promotes neoplasia is unclear. Phosphorylation of Ajuba LIM protein (Jub) has been proposed to be key (Sun and Irvine, 2013); however, the presence of AP-1 binding sites within upd3.3 suggests a direct transcription-mediated mechanism. To test the latter mechanism, we assayed discs co-expressing dlgRNAi and fosDN, which prevents activity of the AP-1 transcription factor (Ciapponi et al., 2001). Strikingly, fosDN fully phenocopied the effects of JNKDN: it prevented both upd3.3LacZ expression and dlgRNAi-mediated neoplasia (Figure 4D; Figure 4\u2014figure supplement 1C; Figure 4\u2014figure supplement 2A). Taken together, these experiments demonstrate that maintenance of epithelial polarity prevents transcription of oncogenic JNK-dependent target genes.\n\nGiven that elevated JNK signaling is necessary for upd3.3LacZ expression and neoplastic overgrowth, is it sufficient? Ectopic JNK activity in WT tissue leads to apoptosis (Igaki et al., 2002), so we co-expressed the JNK-activating ligand Eiger with a microRNA targeting the pro-apoptotic genes reaper, grim, and head involution defective (miRGH) to block both cell death and caspase activation (Siegrist et al., 2010). In this context, JNK activation alone induced upd3.3LacZ (Figure 4H; Figure 4\u2014figure supplement 1D; Figure 4\u2014figure supplement 2C) and increased tissue size (P\u00e9rez-Garijo et al., 2009). However, upd3.3LacZ induction was low compared to the canonical JNK target Mmp1, while dlg knockdown activated both comparably (Figure 4B\u2032,H). Further, apical and basolateral proteins remained properly localized, indicating that JNK activation alone does not disrupt polarity (Figure 4I) (Sun and Irvine, 2011). Therefore, JNK signaling is sufficient for partial upd3.3 activation and overgrowth, but it is unable to induce full neoplasia.\n\n### aPKC can regulate polarity-responsive transcription, independently of JNK\n\nThe inability of JNK activation to fully recapitulate dlg loss suggests that polarity regulators modulate additional factors to prevent upd3.3 transcription and neoplasm. One candidate is aPKC, which is strongly mislocalized upon loss of Scrib module function but not JNK activation (Figure 4F,I) (Bilder and Perrimon, 2000). We expressed a constitutively active form (aPKCact) that can drive neoplasia and found that it was sufficient to potently trigger upd3.3LacZ transcription (Figure 5A; Figure 4\u2014figure supplement 2B). aPKCact can also activate JNK targets (Figure 5A\u2032), raising the possibility that aPKC regulates upd3 through JNK. However, inhibiting JNK did not prevent aPKCact-mediated upd3.3LacZ activation or overgrowth, while it was effective at preventing expression of Mmp1 (Figure 5B; Figure 4\u2014figure supplement 2B). Similar results were seen when membrane-bound WT aPKC (aPKCmild) was co-expressed with its partner Par-6, demonstrating that the results are not transgene-specific (Figure 5\u2014figure supplement 1) and thus showing that aPKC is capable of stimulating tumorigenic transcription independently of JNK.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig5-v2.jpg)\n\n**Figure 5.:** (A) Expression of constitutively active aPKC (aPKCact) induces upd3.3LacZ and Mmp1 upregulation and neoplasia. (B) Expressing JNKDN suppresses Mmp1, but does not prevent aPKCact-mediated upd3.3LacZ activation or overgrowth. (C) Knockdown of yki blocks upd3.3LacZ and overgrowth upon ectopic aPKC activity, while constitutively active Yki drives upd3.3LacZ expression and tissue overgrowth relative to WT (D and E). Expression of a mildly-active form of aPKC (F) or JNK (G) alone cannot activate upd3.3, but together are sufficient for expression (H). Scale bars: 100 \u03bcm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Expression of aPKCmild and its partner Par6 drives upd3.3LacZ as well as strong overgrowth and Mmp1 expression in the wing pouch. (B) Co-expression of JNKDN does not suppress upd3.3LacZ activation or overgrowth though Mmp1 upregulation is abrogated. Scale bar: 100 \u03bcm.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Comparison of the Scrib module and wts mutant transcriptomes (see \u2018Materials and methods\u2019) reveals a limited degree of overlap. (B) Most canonical Yki growth targets are not upregulated in neoplastic tissues. (C\u2013F) upd3.3LacZ and STAT signaling are not upregulated in wts discs. The transgenic Hpo pathway reporters Diap1-GFP3.5 (G\u2013H) and HREX-GFP (I\u2013J) are strongly upregulated in neoplastic tissue relative to WT; however, Diap1-LacZ (K\u2013L), which is inserted into the endogenous locus, is only slightly increased. Scale bar: 100 \u03bcm.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A\u2013B) Ectopic expression of wild-type JNKK causes only slight morphological defects and upregulates Mmp1, but cannot activate upd3.3LacZ. (C) Co-expression of JNKK and Ykiact activates both upd3.3LacZ and Mmp1, but does not recapitulate polarity defects or neoplastic-like overgrowth. Scale bar: 100 \u03bcm.\n\n### aPKC activates polarity-responsive enhancers via Yki\n\nTo determine how aPKC activity at the cell cortex regulates transcriptional targets, we returned to our analysis of upd3.3 sequences. The enhancer contains a partially evolutionarily conserved binding site for Scalloped (Sd), a DNA-binding protein that recruits activated Yorkie (Yki) to target genes (Figure 3\u2014figure supplement 2A,H) (Wu et al., 2008). Intriguingly, conserved Sd and AP-1 binding sites are also found together in \u223c1 kb regulatory regions of other upregulated genes (Figure 3\u2014figure supplement 2B\u2013F). To determine if Yki acts downstream of aPKC, we assessed discs co-expressing aPKCact and a moderate strength RNAi against yki (ykiRNAi). While yki knockdown under these conditions had a minimal effect on WT growth, it completely abrogated ectopic aPKC-driven upd3.3LacZ upregulation (Figure 5C; Figure 4\u2014figure supplement 1E; Figure 4\u2014figure supplement 2B). Similarly, depletion of yki suppressed the overgrowth of scrib tissue (Figure 4\u2014figure supplement 3I\u2013J). We then analyzed discs overexpressing constitutively active Yki (Ykiact), which display massive overgrowth without affecting epithelial polarity (Dong et al., 2007; Oh and Irvine, 2008). Upd3.3LacZ expression was highly elevated in Ykiact-expressing tissues (Figure 5D\u2013E; Figure 4\u2014figure supplement 2C), indicating that Yki can also be sufficient to activate the polarity-responsive enhancer.\n\n### Coincident activation of upd3.3 by aPKC and JNK\n\nThough hyperactivation of either JNK or Yki through overexpression of activated proteins can drive upd3.3 transcription, we found that only the highest levels of signaling could do so. For instance, neither upd3.3lacZ nor JAK/STAT signaling was active in hyperproliferating hippo (hpo) pathway mutant tumors (Figure 5\u2014figure supplement 2C\u2013F). Moreover, overexpression of either WT JNK kinase, or a membrane-targeted form of WT aPKC (aPKCmild), activated Mmp1 but does not cause substantial overgrowth; neither activates upd3.3lacZ (Figures 5F\u2013G, 7J, Figure 5\u2014figure supplement 3B). Since loss of polarity activates aPKC and JNK signaling in parallel, we tested whether the two pathways converge upon the enhancer. Strikingly, coexpression of JNK kinase and aPKCmild induced upd3.3lacZ upregulation (Figure 5H; Figure 4\u2014figure supplement 2D), along with moderate overgrowth and polarity defects. These data support a model in which upd3.3 works as a \u2018coincidence detector\u2019, responding to simultaneous aPKC-mediated Yki activation and JNK-dependent Fos activation upon polarity loss.\n\n### Epigenetic regulation of polarity-responsive targets\n\nThe above results suggest that transcription from enhancers like upd3.3 is kept in check when either JNK or Yki are activated at physiological rather than manipulated experimental levels. We therefore investigated additional regulators of upd transcription. Our previous work identified the upd genes as targets of direct repression by the Polycomb Group (PcG), and showed that mutations in PcG can result in tumorous growth (Classen et al., 2009). These data suggest the hypothesis that epithelial polarity also acts through PcG to influence mitogenic gene expression. To test this hypothesis, we first asked whether PcG regulates the polarity-responsive enhancer. Imaginal discs mutant for the paralogous PcGs Psc and Su(z)2 show dramatic overgrowth, in which apicobasal polarity is often intact (Classen et al., 2009). Strikingly, they also upregulated upd3.3LacZ, but not other upd3LacZ subfragments (Figure 6B and data not shown). This response is identical to that observed in polarity-deficient tissues.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig6-v2.jpg)\n\n**Figure 6.:** (A and B) Loss of the paralogous PcGs Psc and Su(z)2 leads to activation of upd3.3lacZ, along with dramatic overgrowth and architecture defects. Activation is observed in areas of epithelial (arrows) and disrupted (arrowheads) organization. Comparison of all genes (C) and direct PcG targets (D) upregulated in Psc/Su(z)2 and Scrib module mutant tissues reveals statistically significant overlaps. Scale bar: 100 \u03bcm.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Depletion of the paralogous PcGs ph-p and ph-d leads to overgrowth and upd3.3LacZ activation, including in areas with mild architecture defects. Arrows show areas of upd3.3LacZ expression in areas with epithelial organization; arrowheads indicate reporter activation in regions with disrupted architecture. (B) Regions of Psc/Su(Z)2 mutant discs have normal polarity. (C and D) Most apical and basolateral regulatory genes are minimally changed in Psc/Su(Z)2 tissue. Scale bars: A: 100 \u03bcm, B: 10 \u03bcm.\n\nThe common response of upd3 to polarity regulators and PcG could be a unique case, or alternatively could reflect a larger role for PcG in polarity-sensitive growth control. To determine if the Scrib module and PcGs co-regulate additional loci, we carried out a global transcriptional analysis of PcG mutant wing disc tumors (Supplementary file 3). Comparison of Scrib module and PcG mutant RNA-Seq datasets revealed that nearly half of the genes upregulated upon polarity loss are also upregulated in PcG mutant tissues, a highly significant enrichment (p < 6.98e-121, Figure 6C). This degree of similarity does not reflect a general overgrowth signature, as comparison with the transcriptome of warts tumors (Oh et al., 2013) gives a much less substantial overlap (Figure 5\u2014figure supplement 2A). Further analysis of Scrib module transcriptomes revealed that nearly 25% of direct Pc-bound targets (Kwong et al., 2008) that are upregulated upon PcG loss are also upregulated in polarity-deficient tissues (Figure 6D). This strong enrichment supports a model whereby the Scrib module and PcG act in concert at certain common downstream genes.\n\n### Polarity regulates PcG component transcription to modulate mitogenic gene expression\n\nThe above data are consistent with a scenario whereby polarity loss weakens PcG-mediated repression of select targets that promote tumorigenesis. An alternate possibility is that PcG mutant tissue itself is polarity-defective; however, it often maintains polarized organization including areas that upregulate upd3.3lacZ, it does not show transcriptional changes of polarity regulators, and unlike neoplastic tissue it is not suppressed by aPKC inhibition ([Classen et al., 2009], Figure 6\u2014figure supplement 1, data not shown). To assess the functional significance of PcG in neoplastic tissues, we used the genetic interaction assay of Figure 2. Knockdown of the PcG gene polyhomeotic-proximal (ph-p) alone has no effect on growth of WT discs, due to the presence of its paralog polyhomeotic-distal (ph-d). However, when ph-p is knocked down in hypomorphic dlg discs, it significantly increased growth and cell proliferation (Figure 7A\u2013E). Similar results were observed upon knockdown of a second PcG component, Su(Z)2 (data not shown). If reduced PcG function contributes to overgrowth upon polarity loss, then preventing target derepression should suppress neoplastic growth. We inhibited Brahma (Brm), which suppresses PcG-mediated homeotic transformation and often opposes PcG activity at target genes (Tamkun et al., 1992). Expression of dominant-negative Brm reduced both the growth of dlgRNAi-expressing tissue and upd3.3LacZ expression (Figure 7F\u2013G, Figure 4\u2014figure supplement 2A). An analogous experiment with scrib RNAi could not be performed due to synthetic lethality with the Brm-DN transgene. These data support a role for epithelial polarity in promoting PcG-mediated repression of mitogenic target genes to suppress tumorigenesis.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/03189/elife-03189-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013D) Knockdown of ph-p has little effect on WT growth but increases the growth of dlghypo tissue. Quantification is in E (***p < 0.0001). (F\u2013G) BrmDN expression in dlgRNAi tissue decreases both upd3.3LacZ activation and overgrowth. (H) PcG components ph-p and Psc are downregulated in scrib and dlg mutant tissue (average in green), similar to levels observed upon JNK activation (blue). (**p < 0.005 \u271dFDR < 0.05 in one genotype; \u271d\u271dFDR < 0.05 in both genotypes) (I\u2013K) Knockdown of ph-p or expression of a moderately active form of aPKC (aPKCmild) does not induce upd3.3LacZ, and aPKCmild induces only slight overgrowth. However, co-expression of these transgenes leads to strong overgrowth and upd3.3LacZ expression. Scale bar: 100 \u03bcm.\n\nThe above analyses suggest diminished PcG activity in Scrib module mutant tissues, but do not point to a molecular mechanism. Intriguingly, using a wounding paradigm, Lee et al. found that JNK signaling can partially downregulate PcG expression, facilitating dedifferentiation and regeneration (Lee et al., 2005). Because JNK is activated upon polarity loss, we evaluated PcG transcript levels in Scrib module mutant tissues. Expression of the core PcG components ph-p and Psc is reduced in neoplastic tumors to an extent similar to that seen upon strong JNK activation (Figure 7H), suggesting that JNK signaling upon polarity loss compromises PcG function.\n\nFinally, we tested whether compromised PcG function would promote polarity-responsive enhancer activation under moderate signaling conditions. Mild activation of aPKC drove polarity alterations and a limited degree of neoplasia, along with mild JNK signaling that can activate Mmp1; at these levels, both kinases together were incapable of activating upd3.3 (Figure 7J). However, upon knockdown of ph-p, which does not activate JNK, mild aPKC signaling not only drove robust overgrowth but also upd3.3LacZ upregulation (Figure 7I\u2013K, Figure 4\u2014figure supplement 2D). From these data, we conclude that epithelial polarity normally suppresses neoplasia through PcG in cooperation with JNK and aPKC/Yki pathways.\n\n## Discussion\n\nStudies in vertebrate and invertebrate tissues have revealed intimate links between epithelial organization and the control of tumorous characteristics such as cell proliferation, differentiation, and motility. Here, we analyze both global RNA expression and a single polarity-responsive enhancer to delineate the signaling, transcriptional and epigenetic pathways linking epithelial organization to these diverse phenotypes. In polarity-deficient tissues, the simultaneous initiation of Fos-dependent transcription, aPKC-mediated Yki activation, and loss of PcG target repression leads to induction of a broad group of oncogenic factors, including the mitogenic JAK/STAT ligands. Our work provides insight into the logic, as well as the molecular mechanisms, by which polarity maintenance acts as a tumor-suppressive feature.\n\n### Linking polarity to growth control\n\nOur data build on those of others showing that JNK, aPKC and Yki are key players in fly neoplasia (Leong et al., 2009; Grzeschik et al., 2010; Robinson et al., 2010; Zhu et al., 2010; Doggett et al., 2011; Sun and Irvine, 2011; Verghese et al., 2012). By focusing on a single enhancer element of a gene involved in tumorous growth, we clarify the role of implicated regulating kinases and define how proliferation can be triggered by each pathway. Inhibition of Fos can suppress upd3 upregulation and neoplasia, indicating that this transcription factor itself is the major target of JNK in this context. Yet a polarity-sensitive enhancer is not fully activated by JNK alone, even when apoptosis is blocked. aPKC is an additional regulator of this enhancer, and as previously suggested (Doggett et al., 2011), can activate Yki independent of, rather than through, JNK. Inhibiting either the JNK or Hpo pathways, including depletion of the downstream transcription factors, prevents expression of the polarity-sensitive enhancer; our analysis predicts that mutating transcription factor binding sites would give the same effect. Knockdown of upd3 alone in neoplastic tumors does not prevent overgrowth (Figure 2\u2014figure supplement 1); upd1 and upd2 are also regulated by JNK, Yki, and PcG (Pastor-Pareja et al., 2008; Classen et al., 2009; Jiang et al., 2009; Staley and Irvine, 2010; Wu et al., 2010) and may act through analogous enhancers to cooperatively drive tumor formation.\n\nLoss of polarity thus induces two separate signaling pathways. An unknown mechanism triggers JNK to induce Fos-dependent transcription, while at the same time mispolarization of aPKC drives Yki-dependent transcription. Under mild signaling conditions, both pathways are required simultaneously to trigger enhancer expression or overgrowth, while inhibition of either is sufficient to suppress neoplasia. We suggest that polarity-responsive enhancers like upd3.3 work as \u2018coincidence detectors\u2019 that during normal physiology require inputs from both JNK/Fos and aPKC/Yki. In this way, neither stress nor developmental growth signals alone run the risk of triggering malignant transformation. However, upon severe tissue damage that disrupts the epithelium, both stress and polarity signals are initiated to effect repair pathways (see below).\n\nOur results also emphasize the unexpectedly central role of transcription in mediating cell polarity loss. Inhibition of Fos can revert not only growth defects but also polarity defects of neoplastic tumors. This surprising result suggests that polarity regulation by the Scribble module involves not only antagonistic interactions with the Par module at the cell cortex, but also an important transcriptional component that may be regulated similarly to the mitogenic upd3 enhancer studied here. Nevertheless, activation of JNK, Yki, or both together is insufficient to elicit polarity defects (Figure 5\u2014figure supplement 3), while aPKC activation alone is. Thus, aPKC must have additional effectors through which it regulates transformation; further analysis of the neoplastic transcriptome will shed light on this.\n\n### Yki in neoplastic and hyperplastic growth\n\nYki is clearly a major regulator of neoplastic transformation, providing a link between the primary Drosophila TSG pathways (Grzeschik et al., 2010; Robinson et al., 2010; Chen et al., 2012; Verghese et al., 2012). However, our transcriptional data highlight a major puzzle. Many Hpo pathway targets, including direct growth regulators such as cycE, diap1, and Myc, are expressed at near-normal levels in Scrib module mutants, and comparison of Scrib module and Hpo mutant transcriptomes reveals limited overlap (Figure 5\u2014figure supplement 2A\u2013B). If Yki is activated in both types of tumorous tissue, why do they behave so differently? Our data help to rule out several models for altered Yki target selection. It is unlikely to be driven by simultaneous activation of JNK upon polarity loss, since co-activation of Yki and JNK does not recapitulate neoplastic growth phenotypes (Figure 5\u2014figure supplement 3). It is also unlikely to be explained by a model in which Yki activation through aPKC differs from Yki activation through canonical Hpo pathway regulators, since a transgenic 3.5 kb diap1 fragment is strongly upregulated in neoplastic tissue, paralleling upregulation of a minimal Yki-responsive element (Figure 5\u2014figure supplement 2G\u2013J). Interestingly, an enhancer trap inserted at the same 3.5 kb sequence in the endogenous diap1 locus (Zhang et al., 2008) is only slightly upregulated by comparison (Figure 5\u2014figure supplement 2K\u2013L), hinting that the native chromatin environment at certain Yki targets might influence target response.\n\n### Polarity and epigenetic regulation\n\nOur data point to PcG as a new player in the transcriptional response to polarity loss. Three pieces of evidence support a close relationship between the Scrib module and PcGs: (1) their related mutant phenotypes, (2) the extensive and highly significant overlap of their mutant gene expression profiles, and (3) the sensitivity of Scrib module mutant overgrowth to changes in PcG activity. However, since canonical PcG targets including Hox genes are not upregulated in neoplastic tissues (Supplementary files 1\u20132), and overall Histone H3K27me3 levels are not altered (data not shown), the data rule out a global inactivation of PcG. Instead, they suggest that decreased PcG-mediated repression \u2018primes\u2019 select targets for activation by polarity-responsive effector pathways. Mild activation of either JNK or aPKC alone is insufficient to stimulate enhancers such as upd3.3. However, at these targets, reduced PcG activity upon Scrib module loss synergizes with JNK and aPKC signaling, perhaps by providing a permissive chromatin environment for Fos- and Yki-stimulated transcription. More generally, the link to epigenetic regulators that control many targets provides a mechanism by which loss of a single polarity regulator can induce the widespread transcriptional changes that drive the multifaceted neoplastic phenotype.\n\n### Tumor characteristics revealed by the neoplastic transcriptome\n\nOur primary analysis focuses on overgrowth, but the transcriptome identifies further features of human cancer found in neoplastic Drosophila cells. In addition to oxidative stress, fly homologs of metabolic genes that fuel human cancer growth are elevated, including fatty acid synthase (FASN) which facilitates de novo lipogenesis, and LDH which promotes aerobic glycolysis in the Warburg effect (Cairns et al., 2011; Baenke et al., 2013; Gorrini et al., 2013). However, glycolytic enzyme transcription in fly neoplastic tumors remains relatively unchanged, suggesting that metabolic changes may be more complex. Dedifferentiation is considered another key feature of human tumor malignancy (Friedmann-Morvinski and Verma, 2014), and the major signature evident from genes downregulated in neoplastic tissues reflects a failure to differentiate. Khan et al. recently reported that forcing differentiation can cause elimination of neoplastic clones (Khan et al., 2013); by contrast, our experiments show that restoring expression of the wing-fate regulator Vg suppresses tumorous overgrowth without inducing cell death. Thus, promoting tissue differentiation may be a tumor suppressive function of epithelial organization.\n\nWhy might loss of polarity drive this particular constellation of events that result in tumorous overgrowth? Our global analysis reveals that apicobasal polarity disruption elicits responses with striking parallels to those seen in epithelial wounds in both Drosophila and humans (Sch\u00e4fer and Werner, 2008; Lee and Miura, 2014). These parallels, which are both thematic and extend to regulation of specific genes, include activation of stress signaling, reactive oxygen species production, upregulation of matrix remodeling enzymes, de-differentiation, recruitment of immune cells, and transcription of growth-promoting cytokines that stimulate cell proliferation. Intriguingly, several upregulated neoplastic effectors that contain conserved AP-1 and Sd binding sites are also upregulated during wound-healing (Pastor-Pareja et al., 2008; Wu et al., 2009; Garelli et al., 2012; Patterson et al., 2013) (Figure 3\u2014figure supplement 2). An attractive model is that linking transcriptional control of such targets to polarity regulators, via polarity-regulated aPKC, cell architecture-regulated Yki and stress-regulated JNK activity on both downstream transcription factors and PcG epigenetic regulators, allows the tissue to connect disturbances in its integrity to the activation of broad gene expression programs that promote repair. Following tissue damage, restoration of tissue architecture and integrity would abrogate wound-response signals. In contrast, in polarity-deficient tissues, architecture can never be restored, and these pro-growth, de-differentiation cues remain active, leading to the formation of malignant tumors that kill the organism. Our data linking apicobasal polarity to neoplastic gene expression thus suggest an evolutionarily ancient genesis for cancers as \u2018wounds that never heal\u2019 (Dvorak, 1986).\n\n## Materials and methods\n\n### Drosophila genetics\n\nThe following alleles were used in this study: white [1118] (WT), dlg [40-2], dlg [hf321] (dlghypo) scrib [1], hep [r75] (JNKK), Psc/Su(Z)2 [XL26] (Li et al., 2010), ykiB5. The following additional strains were used: engrailed GAL4, UAS-GFP, ms1096 GAL4, eyFLP; act>>GAL4, UAS-GFP, 10XStat92E-GFP, upd3.1LacZ, upd3.2LacZ, and upd3.3LacZ (Jiang et al., 2011), thj5c8 (Ryoo et al., 2002), diap1-GFP3.5 (Zhang et al., 2008), HREX-GFP (Wu et al., 2008), UAS-Socs36E, UAS-Dome\u2206cyt (UAS-DomeDN), UAS-BskK53R (UAS-JNKDN), UAS-fospanAla (UAS-FosDN), UAS-miRNAreapergrimhid (UAS-miRGH) (Siegrist et al., 2010), UAS-GFP, UAS-hippo, UAS-eiger, UAS-aPKC\u0394N (UAS-aPKCact), UAS-ykiS168A (UAS-ykiact), UAS-BrmK804R (UAS-brmDN), UAS-aPKCCAAX (UAS-aPKCmild), UAS-Sod2, UAS-Catalase, UAS-Ey, UAS-vg, and UAS-hepWT (UAS-JNKKWT), AP-1-GFP, ImpL2-GFP, dilp8-GFP, EcadRNAi. UAS-aPKCCAAX UAS-Par6 was a kind gift from T Harris. UAS-dlgRNAi (39035), UAS-dlgRNAi (34854) were obtained from the Bloomington Stock Center; UAS-yki RNAi (104523), UAS-ph-p RNAi (10679), UAS-ph RNAi (50028), and UAS-Su(Z)2 RNAi (100096) were obtained from the Vienna Drosophila RNAi Center. Unless otherwise noted, all transgenes were driven in the wing pouch by ms1096-GAL4. WT controls were outcrosses to w. Crosses were reared at 25\u00b0C, except for the crosses to assess upd3.3LacZ expression in scribIR and scribIR;BskDN tissue, which were raised at 29\u00b0C.\n\n### Immunofluorescence and microscopy\n\nImaginal discs were fixed and stained (Bilder et al., 2000) with TRITC-phalloidin (Sigma-Adrich, St. Louis, MO) and primary antibodies against the following antigens: \u03b2-gal (Abcam, San Francisco, CA), Mmp1, Dlg, Scrib (all from Developmental Studies Hybridoma Bank, Iowa City, IA) and aPKC (Santa Cruz Biotechnology, Santa Cruz, CA). DAPI (Molecular Probes, Eugene, OR) was used to visualize nuclei. Secondary antibodies were from Invitrogen (Carlsbad, CA). DHE staining was performed on live tissue as previously described (Owusu-Ansah et al., 2008). Mutant and WT discs were stained in the same tube and imaged under identical confocal settings. Images are single cross-sections obtained on either a Leica TCS or a Zeiss LSM 700 and processed with Adobe Photoshop CS2 12.0.1. Bgal staining was quantified as the percentage of pixels above background and normalized to WT levels.\n\n### mRNA purification, sequencing, and data analysis\n\nAt least 50 wing imaginal discs were dissected from white1118, scrib1, and dlg40-2/Y larvae for each biological replicate, and at least two biological replicates were sequenced per genotype. Psc/Su(Z)2 [XL26] FRT42 and control isogenized FRT42 wing discs were generated using UbxFLP; cell-lethal as described (Newsome et al., 2000). Control tissue was isolated 5\u20136 days after egg lay (AEL), while tumorous discs was isolated 7\u20138 days AEL to account for the developmental delay of tumor-bearing larvae. Poly-A transcripts were purified via two rounds of extraction using the MicroPolyAPurist kit (Ambion, Austin, TX). mRNA was subsequently prepared for sequencing (Dalton et al., 2013).\n\nLibraries were sequenced by 50-bp single-end reads on either the GAIIX Genome Analyzer or HighSeq2000 platform (Illumina, San Diego, CA). Reads were aligned to the Drosophila melanogaster reference genome (version 5.43) using TopHat run under default parameters (Langmead et al., 2009). The number of reads from each replicate falling on each exon was counted using HTSeq (Anders et al., 2015) in the UNION mode, and the differential expression levels across all of samples were calculated using DESeq (Anders and Huber, 2010). Normalized value for gene expression is reported in a single \u2018reads per kilobase gene length per million total reads\u2019 (RPKM) value for each gene. Supplementary file 4 contains the sequencing and mapping statistics for each replicate, and Supplementary file 5 contains the number of differentially expressed genes for each genotype.\n\nFor binding profile comparison, genes associated with Pc binding (peak_hit, peak_near, gray_hit, gray_near) in thoracic imaginal discs (Kwong et al., 2008) were defined as PcG targets. Genes upregulated at least twofold and having an RPKM value of at least 10.0 in wts mutant tissue were used to assess the overlap of the Scrib module and Hippo pathway mutant transcriptome profiles (Oh et al., 2013). p-values for significance of overlap of transcriptome profiles was found using hypergeometric probability. Gene Ontology analysis was performed using GoStat (Beissbarth and Speed, 2004).\n\n### qRT-PCR\n\nTotal RNA was isolated from at least 20 wing discs co-expressing eiger and miRGH with ms1096 GAL4, along with outcrossed controls, using the RNeasy Mini Kit (Qiagen, Valencia, CA), and cDNA was generated from 500 \u03bcg of RNA using Superscript II Reverse Transcriptase (Life Technologies, Carlsbad, CA). Quantitative real-time PCR was performed using SYBR GreenER qPCR SuperMix (Invitrogen, Carlsbad, CA) on a StepOnePlus ABI Machine (Applied Biosystems, Foster City, CA). Relative gene expression levels were quantified using the \u0394\u0394CT method, after normalization to three endogenous control genes (GAPDH, CG12703, Cp1). Average fold expression of at least four biological replicates is shown. Primer sequences are listed in Supplementary file 6.\n\n### Cloning upd3LacZ\n\nGenomic DNA was isolated from adult flies using standard procedures. The upd3 fragment was amplified using Phusion High Fidelity Polymerase (NEB) and the following primers: 5\u2032-GGTGGTACCTCGTACAATGGTTTAAAAATAGCTCGGCCAA-3\u2032 and 5\u2032-GGAAGGCCTCTCCTACACATCGAGCAGCATGGTCAACGAA-3\u2032. The 3-kb fragment was ligated into a pH-Pelican-attB vector and sequence was confirmed. Transformation into the attP2 landing site was performed by BestGene, Inc (Chino Hills, CA).\n\n### Fluorescence activated cell Sorting analysis\n\nAt least 10 wing discs were dissected and disassociated as described (de la Cruz and Edgar, 2008). Cells were counted using an EPICS XL flow cytometer (Beckman\u2013Coulter, Brea, CA). GFP+ and GFP\u2212 gates were generated based on a white1118 negative control sample. To calculate Relative Posterior Compartment Size, the number of GFP+ cells was divided by the total number of live cells and normalized to control discs. A two-tailed Student's t-test was used to calculate the p-values based on at least three biological replicates for each genotype.\n",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "298c111b-669b-4e60-8416-9cb567c87269",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C1",
+      "claim": "Loss of polarity correlates with progression of epithelial cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of polarity correlates with progression of epithelial cancers, but how plasma membrane misorganization drives oncogenic transcriptional events remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that reflects established scientific understanding about cancer progression.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "17b607c4-4449-4fe7-bb65-e922f8fe2d5e",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C2",
+      "claim": "The polarity regulators of the Drosophila Scribble (Scrib) module are potent tumor suppressors.",
+      "claim_type": "EXPLICIT",
+      "source": "The polarity regulators of the Drosophila Scribble (Scrib) module are potent tumor suppressors and provide a model for mechanistic investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the experimental work described in the manuscript and references to prior research.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "e2012bd4-4a5d-4cce-b997-ea8898a2606b",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C3",
+      "claim": "RNA profiling of Scrib mutant tumors reveals multiple signatures of neoplasia, including altered metabolism and dedifferentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA profiling of Scrib mutant tumors reveals multiple signatures of neoplasia, including altered metabolism and dedifferentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the RNA-Seq data presented in the manuscript, including Figure 1 and associated supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "3ebb5bc7-3800-4c1c-bddf-132c59560ad6",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C4",
+      "claim": "Upregulation of cytokine-like Unpaired (Upd) ligands drives tumor overgrowth in Scrib mutant tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Prominent among these is upregulation of cytokine-like Unpaired (Upd) ligands, which drive tumor overgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the RNA-Seq data showing upd gene upregulation and functional experiments showing that JAK/STAT pathway inhibition suppresses overgrowth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "b371d801-d0b7-4725-836f-ee349b4560e4",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C5",
+      "claim": "A polarity-responsive enhancer in upd3 is activated in a coincident manner by both JNK-dependent Fos and aPKC-mediated Yki transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a polarity-responsive enhancer in upd3, which is activated in a coincident manner by both JNK-dependent Fos and aPKC-mediated Yki transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments showing that both JNK/Fos and aPKC/Yki pathways are required for full enhancer activation, as shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "85b4d70f-fcc6-4ee2-9f0f-89593cbf8b55",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C6",
+      "claim": "The upd3 enhancer and Scrib mutant overgrowth are sensitive to activity of the Polycomb Group (PcG).",
+      "claim_type": "EXPLICIT",
+      "source": "This enhancer, and Scrib mutant overgrowth in general, are also sensitive to activity of the Polycomb Group (PcG), suggesting that PcG attenuation upon polarity loss potentiates select targets for activation by JNK and Yki.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experiments showing that PcG knockdown enhances neoplastic growth and that PcG mutants activate the upd3.3 enhancer, as shown in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "7cc74fd2-0d90-48bb-aa28-6dd7c6d611e4",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C7",
+      "claim": "PcG attenuation upon polarity loss potentiates select targets for activation by JNK and Yki.",
+      "claim_type": "EXPLICIT",
+      "source": "This enhancer, and Scrib mutant overgrowth in general, are also sensitive to activity of the Polycomb Group (PcG), suggesting that PcG attenuation upon polarity loss potentiates select targets for activation by JNK and Yki.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the genetic interaction experiments and transcriptome comparisons.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "711704f6-5d1b-4566-b769-66d7c9c6a5dd",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C8",
+      "claim": "Pronounced disorganization of biopsied epithelia is well-established to correlate with tumor malignancy and lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Pronounced disorganization of biopsied epithelia is well-established to correlate with tumor malignancy and lethality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established clinical and pathological knowledge about cancer diagnosis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "f019ed90-706b-46d9-af2f-ae5bb2e3749e",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C9",
+      "claim": "The apical determinant atypical protein kinase C (aPKC) is amplified and over-expressed in multiple cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the apical determinant atypical protein kinase C (aPKC) is amplified and over-expressed in multiple cancers (Huang and Muthuswamy, 2010; Parker et al., 2014), while basolateral regulators are altered in several tumor types and degraded by viral oncoproteins (Huang and Muthuswamy, 2010; Elsum et al., 2012); cancer stem cell activity may also be promoted by transition from an epithelial state (Martin-Belmonte and Perez-Moreno, 2011; Scheel and Weinberg, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "6ad5bce6-c82d-40a3-b594-55997c7120bc",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C10",
+      "claim": "Basolateral regulators are altered in several tumor types and degraded by viral oncoproteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the apical determinant atypical protein kinase C (aPKC) is amplified and over-expressed in multiple cancers (Huang and Muthuswamy, 2010; Parker et al., 2014), while basolateral regulators are altered in several tumor types and degraded by viral oncoproteins (Huang and Muthuswamy, 2010; Elsum et al., 2012); cancer stem cell activity may also be promoted by transition from an epithelial state (Martin-Belmonte and Perez-Moreno, 2011; Scheel and Weinberg, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "4236a7ed-a12e-4a49-bad9-d3a4c36a4550",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C11",
+      "claim": "Cancer stem cell activity may be promoted by transition from an epithelial state.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the apical determinant atypical protein kinase C (aPKC) is amplified and over-expressed in multiple cancers (Huang and Muthuswamy, 2010; Parker et al., 2014), while basolateral regulators are altered in several tumor types and degraded by viral oncoproteins (Huang and Muthuswamy, 2010; Elsum et al., 2012); cancer stem cell activity may also be promoted by transition from an epithelial state (Martin-Belmonte and Perez-Moreno, 2011; Scheel and Weinberg, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "215393bb-e168-4315-a47a-dbef7d1f15c1",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C12",
+      "claim": "Scribble (scrib), discs-large (dlg), and lethal giant larvae (lgl) cooperatively distinguish the basolateral domain from the apical by antagonizing aPKC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These polarity regulators\u2013scribble (scrib), discs-large (dlg), and lethal giant larvae (lgl)- cooperatively distinguish the basolateral domain from the apical by antagonizing aPKC activity (St Johnston and Ahringer, 2010; Tepass, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research on polarity regulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "0fed9d77-f00f-405f-8b7b-ec192b1640ee",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C13",
+      "claim": "The conserved 'Scrib module' functions in both vertebrates and invertebrates, not only in epithelia but also other polarized cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "This conserved 'Scrib module' functions in both vertebrates and invertebrates, not only in epithelia but also other polarized cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established knowledge about the conservation and function of the Scrib module.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "73ef6882-852b-44ab-aa56-a6363739f968",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C14",
+      "claim": "When Scrib module function is lost from fly epithelia, mutant cells round up and become multilayered.",
+      "claim_type": "EXPLICIT",
+      "source": "When Scrib module function is lost from fly epithelia, mutant cells round up and become multilayered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established phenotype of Scrib module mutants, supported by the images in Figure 1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "0ebc54b9-8e75-48d4-9eeb-b3b00a160d6b",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C15",
+      "claim": "In imaginal discs, Scrib module mutant tissue continuously proliferates to more than five times the WT cell number before it kills the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "In the imaginal discs, epithelial organs which normally have a precise intrinsic size-control mechanism, mutant tissue continuously proliferates to more than five times the WT cell number before it kills the animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation about the overgrowth phenotype of Scrib module mutants.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "53dfc60f-e702-432f-acaf-4fe706f5a3bf",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C16",
+      "claim": "Small portions of neoplastic tumorous mass, when transplanted into adults, continue to grow uncontrollably and kill the host.",
+      "claim_type": "EXPLICIT",
+      "source": "Small portions of the tumorous mass, when transplanted into adults, continue to grow uncontrollably and kill the host; such allografts can be repeated indefinitely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the transplantability phenotype of neoplastic tissue, a classic characteristic.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "ab82fd59-b1b0-455d-9a7b-b40f386fb9f4",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C17",
+      "claim": "Neoplastic fly tissue is prone to dissemination and degrades basement membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Neoplastic fly tissue is prone to dissemination and degrades basement membrane; in cooperation with oncogenic Ras it can migrate away from its primary site and invade other organs (Pagliarini and Xu, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "ba1f930e-6f58-4069-a8ff-6d4e8445363b",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C18",
+      "claim": "In cooperation with oncogenic Ras, neoplastic tissue can migrate away from its primary site and invade other organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Neoplastic fly tissue is prone to dissemination and degrades basement membrane; in cooperation with oncogenic Ras it can migrate away from its primary site and invade other organs (Pagliarini and Xu, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "3a6fe971-77b3-4376-a148-b99c3ce7ac2e",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C19",
+      "claim": "Neoplastic tissue is compromised in its differentiation potential, and cannot form adult structures.",
+      "claim_type": "EXPLICIT",
+      "source": "It is compromised in its differentiation potential, and cannot form adult structures (Gateff and Schneiderman, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "8a1ee8a7-f211-4cd5-8be0-a7342c30b345",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C20",
+      "claim": "Neoplastic tissue can be recognized by the host innate immune system, whose cellular activities impede its growth.",
+      "claim_type": "EXPLICIT",
+      "source": "It can be recognized by the host innate immune system, whose cellular activities impede its growth (Pastor-Pareja et al., 2008; Cordero et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "50b5323b-4354-412f-83f1-f5805b68a34a",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C21",
+      "claim": "Neoplastic tissue produces long-range signals that induce detrimental responses in fly hosts, including cachexia-like tissue wasting.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it produces long-range signals that induce detrimental responses in fly hosts, including cachexia-like tissue wasting (Figueroa-Clarevega and Bilder, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "f46bb2ce-0a05-4729-9711-be066a1e1a7a",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C22",
+      "claim": "RNA-Seq analysis identified 574 genes misregulated at least twofold in both scrib and dlg tumors (FDR <5%), with 311 upregulated and 263 downregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis revealed 574 genes misregulated at least twofold in both mutant tissues (FDR <5%), with 311 and 263 up- and downregulated respectively (Figure 1D and Suplementary files 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the RNA-Seq analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "09d9a845-d743-4588-b9a8-60a15c1734a2",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C23",
+      "claim": "Differentially expressed genes in neoplastic tumors include Matrix metalloprotease 1 (Mmp1), cheerio (cher), and insulin-like peptide 8 (Ilp8).",
+      "claim_type": "EXPLICIT",
+      "source": "Differentially expressed genes include several previously identified neoplastic effectors, such as the pro-invasion factors Matrix metalloprotease 1 (Mmp1) and cheerio (cher) as well as the pupation regulator insulin-like peptide 8 (Ilp8) (Uhlirova and Bohmann, 2006; Colombani et al., 2012; Garelli et al., 2012; K\u00fclshammer and Uhlirova, 2013) (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the RNA-Seq data and citations to prior research identifying these genes as neoplastic effectors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "31697a72-aebd-4428-aba2-c58465a3d4cc",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C24",
+      "claim": "qRT-PCR analysis of differentially expressed genes shows close agreement with RNA-Seq data (R2 = 0.8844).",
+      "claim_type": "EXPLICIT",
+      "source": "qRT-PCR analysis of these and other genes shows close agreement with RNA-Seq data (R2 = 0.8844).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation of the RNA-Seq data using an independent method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "4db3977c-4afd-458a-9f05-b3a2e30f4063",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C25",
+      "claim": "Upregulated genes in neoplastic tumors are enriched for factors involved in Response to Stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst upregulated genes, Gene Ontology (GO) highlights factors involved in Response to Stimulus (Figure 1F,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Gene Ontology analysis of the RNA-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "b395cd88-88b3-49c3-aa88-f3cd0b199e5f",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C26",
+      "claim": "Several upregulated genes in neoplastic tumors are immune-related factors, which may be due to the recruitment of hemocytes to neoplastic tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Several in this category are immune-related factors, and may be due to the recruitment of hemocytes to neoplastic tumors (Lebestky et al., 2000; Pastor-Pareja et al., 2008; Cordero et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the RNA-Seq data supported by citations to prior research on immune cell recruitment.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "92ed85dd-96a9-4c9b-9217-26464fc273e8",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C27",
+      "claim": "19 polarity-sensitive targets are also elevated in hyperoxic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Others, including Glutathione S transferase E1 (GstE1) and the chaperone CG7130, are regulated by oxidative stress, and overall 19 polarity-sensitive targets are also elevated in hyperoxic conditions (Figure 1\u2014figure supplement 1A) (Landis et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of the neoplastic transcriptome with published data on oxidative stress responses.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "46be5598-4601-4ef6-b9ad-6454d2d7c2c9",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C28",
+      "claim": "Loss of dlg leads to higher superoxide levels, as evidenced by increased DHE staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Dihydroethidium (DHE), a fluorescent probe for superoxide anions, readily demonstrated elevation upon depletion of dlg (Figure 1\u2014figure supplement 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on DHE staining experiments shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "491d10f7-4a3a-40bd-a941-990c6b6b0284",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C29",
+      "claim": "Co-overexpression of Catalase, Superoxide dismutase 2, or rat Glutathione Peroxidase 1 failed to alter the neoplastic phenotype induced by dlg knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-overexpression of Catalase, Superoxide dismutase 2, or rat Glutathione Peroxidase 1, which suppress other Drosophila ROS dependent phenotypes (Owusu-Ansah and Banerjee, 2009; Ohsawa et al., 2012; Lim et al., 2014) failed to alter the neoplastic phenotype induced by dlg knockdown (Figure 1\u2014figure supplement 1D\u2013F), although we were unable to detect a consistent reduction of DHE in these contexts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic experiments testing the role of ROS in neoplastic growth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "51676906-d021-40cd-870e-78d55dd09e36",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C30",
+      "claim": "Primary GO categories among downregulated genes likely reflect the failure of neoplastic tumors to differentiate.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary GO categories among downregulated genes likely reflect the failure of neoplastic tumors to differentiate (Figure 1E,G,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the Gene Ontology analysis of downregulated genes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "f5cac1bc-2cec-49d5-8589-a37dc152dfaa",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C31",
+      "claim": "Co-expression of vestigial (vg) suppressed dlgRNAi-induced overgrowth and architecture defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, co-expression of vestigial (vg), a distal wing pouch selector that is downregulated in mutant discs, suppressed overgrowth and architecture defects (Figure 1J\u2013M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic rescue experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "714299ac-1f3a-424f-bc6a-83e6cf2294f9",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C32",
+      "claim": "Vg overexpression eliminates polarity-deficient clones through apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Though vg overexpression eliminates polarity-deficient clones through apoptosis (Khan et al., 2013), we recovered an intact wing pouch consisting of dlgRNAi/vg co-expressing cells (Figure 1M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to prior research and contrasted with the current findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "fe68e039-ab26-4959-8102-09f8ec8e369a",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C33",
+      "claim": "Eyeless was incapable of suppressing dlg knockdown in wing or eye tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "eyeless was incapable of suppressing dlg knockdown in either context, but was also incapable of inducing broad photoreceptor differentiation in WT or dlg-depleted tissue (Figure 1\u2014figure supplement 1G\u2013I, data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic experiments testing the effect of ectopic eyeless expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "9180c820-c1c5-4715-915c-63e9162d7afa",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C34",
+      "claim": "The JAK/STAT pathway is the only cell signaling pathway among the top GO categories in upregulated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The only cell signaling pathway among the top GO categories is the JAK/STAT cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Gene Ontology analysis of the RNA-Seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "789d96dc-34b8-4e24-b983-363c5ce425e2",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C35",
+      "claim": "Upregulated genes in neoplastic tumors include STAT targets such as chinmo and Socs36E.",
+      "claim_type": "EXPLICIT",
+      "source": "Upregulated genes include STAT targets such as chinmo and Socs36E, and a JAK/STAT activity reporter is strongly expressed in dlg and scrib discs (Figure 2A\u2013B) (Wu et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the RNA-Seq data and reporter expression shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "4f711bb5-30b0-4c89-9019-fd80c79b1f47",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C36",
+      "claim": "A JAK/STAT activity reporter is strongly expressed in dlg and scrib discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Upregulated genes include STAT targets such as chinmo and Socs36E, and a JAK/STAT activity reporter is strongly expressed in dlg and scrib discs (Figure 2A\u2013B) (Wu et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter expression shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "660b90b5-6060-4b07-b172-4b04375135db",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C37",
+      "claim": "Each of the three unpaired (upd) genes were transcriptionally elevated between \u223c3- and \u223c50-fold in neoplastic tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, each of the three unpaired (upd) genes, which encode the ligands for the JAK/STAT pathway, were transcriptionally elevated between \u223c3- and \u223c50-fold, while genes encoding other signal transduction components were unaltered (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the RNA-Seq data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "cbd11d13-e9ce-4f32-afba-084b3c8beeee",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C38",
+      "claim": "Genes encoding other JAK/STAT signal transduction components were unaltered in neoplastic tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, each of the three unpaired (upd) genes, which encode the ligands for the JAK/STAT pathway, were transcriptionally elevated between \u223c3- and \u223c50-fold, while genes encoding other signal transduction components were unaltered (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the RNA-Seq data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "9b8c536c-9021-48a1-a94e-af631ae60e14",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C39",
+      "claim": "Socs36E decreased proliferation of dlghypo cells by 40%.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, Socs36E decreased proliferation of dlghypo cells by 40%, while having no significant effect on growth or viability of WT discs (Figure 2D\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on FACS-based quantification of cell numbers shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "199e2f16-fe81-4725-98fd-bd6e15c679cf",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C40",
+      "claim": "Socs36E had no significant effect on growth or viability of WT discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, Socs36E decreased proliferation of dlghypo cells by 40%, while having no significant effect on growth or viability of WT discs (Figure 2D\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on FACS-based quantification of cell numbers shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "426aa0cf-9f91-4361-878f-3fb75713bba7",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C41",
+      "claim": "Expression of Socs36E or a dominant-negative form of Domeless (DomeDN) suppressed the growth of scrib-depleted discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of Socs36E or a dominant-negative form of the JAK-STAT receptor Domeless (DomeDN) also suppressed the growth of scrib-depleted discs (Figure 4\u2014figure supplement 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic experiments shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "dfef98a2-a861-4a12-8b6d-b51f3f869eac",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C42",
+      "claim": "The Scrib module regulates JAK-STAT ligand expression to suppress tissue overgrowth in imaginal discs.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that in imaginal discs, as in RasV12-expressing clones (Wu et al., 2010), the Scrib module regulates JAK-STAT ligand expression to suppress tissue overgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the functional experiments and supported by citation to prior research.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "23a88661-6273-4e9a-ae52-971311aeed54",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C43",
+      "claim": "A 3 kb genomic DNA region surrounding the upd3 ATG was not expressed in WT discs but was distinctly upregulated in neoplastic discs.",
+      "claim_type": "EXPLICIT",
+      "source": "We cloned 3 kilobases (kb) of genomic DNA surrounding the upd3 ATG into a lacZ reporter ('upd3lacZ') and found that this reporter was not expressed in WT discs. However, like the overlapping upd3 > GFP reporter, it was distinctly upregulated in neoplastic discs (Figure 3A\u2013C) (Pastor-Pareja et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter expression experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "d86afc54-d463-4547-bc58-8aea354b62bf",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C44",
+      "claim": "A 1-kb element within the first intron of upd3 (upd3.3LacZ) was expressed in a patchy manner throughout dlg discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although reporters including upd3.1LacZ, which is activated by perturbations in the gut epithelium, remain silent, a 1-kb element within the first intron (upd3.3LacZ) was expressed in a patchy manner throughout dlg discs (Figure 3D\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter expression experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "b67a6710-6ab7-42f6-a5d8-cd34fc27fd5a",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C45",
+      "claim": "Expression of upd3.3lacZ was in cells of the disc proper, not in the peripodium or hemocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of upd3.3lacZ, like that of upd3lacZ, was in cells of the disc proper, not in the peripodium or hemocytes (Figure 3\u2014figure supplement 1A\u2013B); this patchy expression resembled that seen with several other upregulated neoplastic effectors, (Figure 4B\u2032, Figure 3\u2014figure supplement 1C\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on microscopy analysis shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "ce212eda-f801-4f44-b088-78f1757f6904",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C46",
+      "claim": "Upd3.3LacZ was similarly activated in scrib discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Upd3.3LacZ was similarly activated in scrib discs, demonstrating that this enhancer is generally responsive to disruption of epithelial polarity (Figure 4\u2014figure supplement 3E) and identifying a polarity-sensitive cis-regulatory region.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter expression experiments in scrib mutant discs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "b327ced1-fe16-4f8c-a34c-068464e8cef4",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C47",
+      "claim": "The upd3.3 enhancer contains two evolutionarily-conserved binding sites for AP-1, the Jun kinase (JNK) pathway transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Motif scanning of the upd3.3 enhancer detected two evolutionarily-conserved binding sites for AP-1, the Jun kinase (JNK) pathway transcription factor (Figure 3\u2014figure supplement 2A,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational motif scanning and evolutionary conservation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "decc44a3-6475-497d-8643-ffd3467bad42",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C48",
+      "claim": "Expression of a dominant-negative form of Drosophila JNK (JNKDN) blocks neoplastic overgrowth, as well as polarity and architecture defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of a dominant-negative form of Drosophila JNK (Flybase: Basket), (JNKDN) has been shown to block neoplastic overgrowth, as well as polarity and architecture defects (Figure 4A\u2013C,E\u2013G; Figure 4\u2014figure supplement 1A\u2013B) (Robinson and Moberg, 2011; Sun and Irvine, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic experiments shown in Figure 4 and supported by citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "5529fcbd-bc37-41d5-bf35-b1baa7adbbec",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C49",
+      "claim": "JNKDN completely abrogated dlgRNAi-induced upd3.3LacZ expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, JNKDN also completely abrogated dlgRNAi-induced upd3.3LacZ expression (Figure 4B\u2032,C\u2032; Figure 4\u2014figure supplement 2A), as well as that induced by scribRNAi (Figure 4\u2014figure supplement 3G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter expression experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "d0182f4a-b046-4b47-8904-4907c7213aaf",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C50",
+      "claim": "Mutation of the JNK kinase, hemipterous (hep) prevented upd3.3LacZ levels in scrib tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of the JNK kinase, hemipterous (hep) also prevented upd3.3LacZ levels in scrib tissue (Figure 4\u2014figure supplement 3D\u2013F), confirming that canonical JNK signaling acts downstream of polarity disruption to regulate upd3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic experiments shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "52f7c5ca-c2fe-4fad-89a7-ab690e427de2",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C51",
+      "claim": "fosDN fully phenocopied the effects of JNKDN: it prevented both upd3.3LacZ expression and dlgRNAi-mediated neoplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, fosDN fully phenocopied the effects of JNKDN: it prevented both upd3.3LacZ expression and dlgRNAi-mediated neoplasia (Figure 4D; Figure 4\u2014figure supplement 1C; Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "63bd0a63-0de3-4897-8094-af91b182f625",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C52",
+      "claim": "Ectopic JNK activity in WT tissue leads to apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic JNK activity in WT tissue leads to apoptosis (Igaki et al., 2002), so we co-expressed the JNK-activating ligand Eiger with a microRNA targeting the pro-apoptotic genes reaper, grim, and head involution defective (miRGH) to block both cell death and caspase activation (Siegrist et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "846daa74-c451-4ee0-829d-1f8841197c1d",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C53",
+      "claim": "JNK activation alone induced upd3.3LacZ and increased tissue size.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, JNK activation alone induced upd3.3LacZ (Figure 4H; Figure 4\u2014figure supplement 1D; Figure 4\u2014figure supplement 2C) and increased tissue size (P\u00e9rez-Garijo et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "33c9ea11-64b3-4e4f-881c-f0ac09eae8ed",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C54",
+      "claim": "upd3.3LacZ induction by JNK activation alone was low compared to the canonical JNK target Mmp1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, upd3.3LacZ induction was low compared to the canonical JNK target Mmp1, while dlg knockdown activated both comparably (Figure 4B\u2032,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of reporter expression levels shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "7bc946c8-3169-4462-98ca-92c6a07a21fa",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C55",
+      "claim": "JNK activation alone does not disrupt polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, apical and basolateral proteins remained properly localized, indicating that JNK activation alone does not disrupt polarity (Figure 4I) (Sun and Irvine, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunofluorescence analysis shown in Figure 4 and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "6ff9bbb3-086f-4775-af27-3de244ef03c6",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C56",
+      "claim": "JNK signaling is sufficient for partial upd3.3 activation and overgrowth, but unable to induce full neoplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, JNK signaling is sufficient for partial upd3.3 activation and overgrowth, but it is unable to induce full neoplasia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experiments showing that JNK activation alone is insufficient to fully recapitulate the neoplastic phenotype.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "aa92e2c3-ea7a-490b-9a77-d82a96532066",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C57",
+      "claim": "aPKC is strongly mislocalized upon loss of Scrib module function but not JNK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "One candidate is aPKC, which is strongly mislocalized upon loss of Scrib module function but not JNK activation (Figure 4F,I) (Bilder and Perrimon, 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunofluorescence analysis shown in Figure 4 and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "0e09f44b-5a30-48e7-b789-6b498b578036",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C58",
+      "claim": "Constitutively active aPKC (aPKCact) was sufficient to potently trigger upd3.3LacZ transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed a constitutively active form (aPKCact) that can drive neoplasia and found that it was sufficient to potently trigger upd3.3LacZ transcription (Figure 5A; Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter expression experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "a3c4e3cf-42c4-4d86-a2ed-333d25c607e3",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C59",
+      "claim": "aPKCact can activate JNK targets.",
+      "claim_type": "EXPLICIT",
+      "source": "aPKCact can also activate JNK targets (Figure 5A\u2032), raising the possibility that aPKC regulates upd3 through JNK.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Mmp1 expression shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "ab75142c-7774-4d08-b8ae-be8680f7acd1",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C60",
+      "claim": "Inhibiting JNK did not prevent aPKCact-mediated upd3.3LacZ activation or overgrowth, while it was effective at preventing expression of Mmp1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, inhibiting JNK did not prevent aPKCact-mediated upd3.3LacZ activation or overgrowth, while it was effective at preventing expression of Mmp1 (Figure 5B; Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "51fb50ed-adf2-4b40-b565-358e47fe02b8",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C61",
+      "claim": "aPKC is capable of stimulating tumorigenic transcription independently of JNK.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were seen when membrane-bound WT aPKC (aPKCmild) was co-expressed with its partner Par-6, demonstrating that the results are not transgene-specific (Figure 5\u2014figure supplement 1) and thus showing that aPKC is capable of stimulating tumorigenic transcription independently of JNK.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on genetic experiments shown in the supplementary figure.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "8a10db80-f1e0-4b02-bc3e-9b2fdb6470bb",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C62",
+      "claim": "The upd3.3 enhancer contains a partially evolutionarily conserved binding site for Scalloped (Sd).",
+      "claim_type": "EXPLICIT",
+      "source": "The enhancer contains a partially evolutionarily conserved binding site for Scalloped (Sd), a DNA-binding protein that recruits activated Yorkie (Yki) to target genes (Figure 3\u2014figure supplement 2A,H) (Wu et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational motif scanning and evolutionary conservation analysis, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "89c4ef1e-c645-4fa2-b74b-7fcc9ef54a74",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C63",
+      "claim": "Conserved Sd and AP-1 binding sites are found together in \u223c1 kb regulatory regions of other upregulated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, conserved Sd and AP-1 binding sites are also found together in \u223c1 kb regulatory regions of other upregulated genes (Figure 3\u2014figure supplement 2B\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational analysis of regulatory regions shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "1ce40e09-2b17-403b-b746-b01c0ea85809",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C64",
+      "claim": "Yki knockdown completely abrogated ectopic aPKC-driven upd3.3LacZ upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "While yki knockdown under these conditions had a minimal effect on WT growth, it completely abrogated ectopic aPKC-driven upd3.3LacZ upregulation (Figure 5C; Figure 4\u2014figure supplement 1E; Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "8381aaec-e063-4d6b-9d3b-5e9e05cbb201",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C65",
+      "claim": "Depletion of yki suppressed the overgrowth of scrib tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, depletion of yki suppressed the overgrowth of scrib tissue (Figure 4\u2014figure supplement 3I\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic experiments shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "020c3962-f378-4413-a171-9363c2b03c23",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C66",
+      "claim": "Constitutively active Yki (Ykiact) displays massive overgrowth without affecting epithelial polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "We then analyzed discs overexpressing constitutively active Yki (Ykiact), which display massive overgrowth without affecting epithelial polarity (Dong et al., 2007; Oh and Irvine, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "5f5b8618-b716-43ea-9128-90477d2e5d28",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C67",
+      "claim": "Upd3.3LacZ expression was highly elevated in Ykiact-expressing tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Upd3.3LacZ expression was highly elevated in Ykiact-expressing tissues (Figure 5D\u2013E; Figure 4\u2014figure supplement 2C), indicating that Yki can also be sufficient to activate the polarity-responsive enhancer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter expression experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "ce8efbc0-2d41-4bb6-8157-d7c748ae0625",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C68",
+      "claim": "Neither upd3.3lacZ nor JAK/STAT signaling was active in hyperproliferating hippo (hpo) pathway mutant tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, neither upd3.3lacZ nor JAK/STAT signaling was active in hyperproliferating hippo (hpo) pathway mutant tumors (Figure 5\u2014figure supplement 2C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter expression experiments shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "d675b220-eb3d-4509-adc7-f2360c54240c",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C69",
+      "claim": "Overexpression of either WT JNK kinase, or a membrane-targeted form of WT aPKC (aPKCmild), activated Mmp1 but does not cause substantial overgrowth and neither activates upd3.3lacZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, overexpression of either WT JNK kinase, or a membrane-targeted form of WT aPKC (aPKCmild), activated Mmp1 but does not cause substantial overgrowth; neither activates upd3.3lacZ (Figures 5F\u2013G, 7J, Figure 5\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic experiments shown in Figures 5 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "4471e685-8157-43e7-aff3-ab2dc3c24687",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C70",
+      "claim": "Coexpression of JNK kinase and aPKCmild induced upd3.3lacZ upregulation, along with moderate overgrowth and polarity defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, coexpression of JNK kinase and aPKCmild induced upd3.3lacZ upregulation (Figure 5H; Figure 4\u2014figure supplement 2D), along with moderate overgrowth and polarity defects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "a98dab1e-1751-4c94-8577-6c2424b3a2d3",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C71",
+      "claim": "upd3.3 works as a 'coincidence detector', responding to simultaneous aPKC-mediated Yki activation and JNK-dependent Fos activation upon polarity loss.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support a model in which upd3.3 works as a 'coincidence detector', responding to simultaneous aPKC-mediated Yki activation and JNK-dependent Fos activation upon polarity loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic model based on the genetic experiments showing that both pathways are required for full enhancer activation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "f3d57b8e-53fd-45e2-9e29-4623ae30ec15",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C72",
+      "claim": "Mutations in PcG can result in tumorous growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work identified the upd genes as targets of direct repression by the Polycomb Group (PcG), and showed that mutations in PcG can result in tumorous growth (Classen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "614e1ce4-db4b-482c-9aba-65c18d8bf20c",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C73",
+      "claim": "Imaginal discs mutant for the paralogous PcGs Psc and Su(z)2 show dramatic overgrowth, in which apicobasal polarity is often intact.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaginal discs mutant for the paralogous PcGs Psc and Su(z)2 show dramatic overgrowth, in which apicobasal polarity is often intact (Classen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "9127b9c4-3074-4960-9953-461020c62a78",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C74",
+      "claim": "Psc/Su(z)2 mutant discs upregulated upd3.3LacZ, but not other upd3LacZ subfragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, they also upregulated upd3.3LacZ, but not other upd3LacZ subfragments (Figure 6B and data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter expression experiments shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "0cd36d7c-48f8-42ea-b19b-ee5d3083e9b3",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C75",
+      "claim": "Nearly half of the genes upregulated upon polarity loss are also upregulated in PcG mutant tissues, a highly significant enrichment (p < 6.98e-121).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of Scrib module and PcG mutant RNA-Seq datasets revealed that nearly half of the genes upregulated upon polarity loss are also upregulated in PcG mutant tissues, a highly significant enrichment (p < 6.98e-121, Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of RNA-Seq datasets shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "a5f1f664-760e-449f-a68a-ee009ee4fe31",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C76",
+      "claim": "Nearly 25% of direct Pc-bound targets that are upregulated upon PcG loss are also upregulated in polarity-deficient tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis of Scrib module transcriptomes revealed that nearly 25% of direct Pc-bound targets (Kwong et al., 2008) that are upregulated upon PcG loss are also upregulated in polarity-deficient tissues (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of RNA-Seq datasets with published ChIP data, shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "3197c148-768e-4b0f-84d9-c88ad6f3cfef",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C77",
+      "claim": "PcG mutant tissue often maintains polarized organization including areas that upregulate upd3.3lacZ.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternate possibility is that PcG mutant tissue itself is polarity-defective; however, it often maintains polarized organization including areas that upregulate upd3.3lacZ, it does not show transcriptional changes of polarity regulators, and unlike neoplastic tissue it is not suppressed by aPKC inhibition ([Classen et al., 2009], Figure 6\u2014figure supplement 1, data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on microscopy analysis and transcriptome data shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "86191ad9-796b-4ef6-8ab5-422eb5f57fb7",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C78",
+      "claim": "Knockdown of ph-p alone has no effect on growth of WT discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of the PcG gene polyhomeotic-proximal (ph-p) alone has no effect on growth of WT discs, due to the presence of its paralog polyhomeotic-distal (ph-d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genetic experiments and knowledge of genetic redundancy.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "dfd94ccd-4109-41de-8409-a601865bffc3",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C79",
+      "claim": "Knockdown of ph-p in hypomorphic dlg discs significantly increased growth and cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when ph-p is knocked down in hypomorphic dlg discs, it significantly increased growth and cell proliferation (Figure 7A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic interaction experiments shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "8df857ca-c233-4b86-9cf3-ed5f6019714c",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C80",
+      "claim": "Expression of dominant-negative Brm reduced both the growth of dlgRNAi-expressing tissue and upd3.3LacZ expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We inhibited Brahma (Brm), which suppresses PcG-mediated homeotic transformation and often opposes PcG activity at target genes (Tamkun et al., 1992). Expression of dominant-negative Brm reduced both the growth of dlgRNAi-expressing tissue and upd3.3LacZ expression (Figure 7F\u2013G, Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic experiments shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "3d8d1fe6-a99d-46fc-804e-ff71a84d7306",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C81",
+      "claim": "Expression of the core PcG components ph-p and Psc is reduced in neoplastic tumors to an extent similar to that seen upon strong JNK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the core PcG components ph-p and Psc is reduced in neoplastic tumors to an extent similar to that seen upon strong JNK activation (Figure 7H), suggesting that JNK signaling upon polarity loss compromises PcG function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-Seq data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "1169517d-52ee-445b-bfa5-39a66b39dc60",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C82",
+      "claim": "Upon knockdown of ph-p, mild aPKC signaling drove robust overgrowth and upd3.3LacZ upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, upon knockdown of ph-p, which does not activate JNK, mild aPKC signaling not only drove robust overgrowth but also upd3.3LacZ upregulation (Figure 7I\u2013K, Figure 4\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic interaction experiments shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "e44a0ab4-8547-4086-becc-299d768c0ec9",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C83",
+      "claim": "Epithelial polarity normally suppresses neoplasia through PcG in cooperation with JNK and aPKC/Yki pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "From these data, we conclude that epithelial polarity normally suppresses neoplasia through PcG in cooperation with JNK and aPKC/Yki pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the genetic interaction experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "5c200cd7-eee1-453d-b658-dbb971734946",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C84",
+      "claim": "In polarity-deficient tissues, the simultaneous initiation of Fos-dependent transcription, aPKC-mediated Yki activation, and loss of PcG target repression leads to induction of a broad group of oncogenic factors, including the mitogenic JAK/STAT ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "In polarity-deficient tissues, the simultaneous initiation of Fos-dependent transcription, aPKC-mediated Yki activation, and loss of PcG target repression leads to induction of a broad group of oncogenic factors, including the mitogenic JAK/STAT ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings of the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "23d6b352-e27b-497f-85fb-f32bab82b1da",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C85",
+      "claim": "Inhibition of Fos can suppress upd3 upregulation and neoplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of Fos can suppress upd3 upregulation and neoplasia, indicating that this transcription factor itself is the major target of JNK in this context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the genetic experiments showing that FosDN suppresses neoplasia.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "66a22bbc-5007-43b1-aca2-50fff9d6aa97",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C86",
+      "claim": "A polarity-sensitive enhancer is not fully activated by JNK alone, even when apoptosis is blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet a polarity-sensitive enhancer is not fully activated by JNK alone, even when apoptosis is blocked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experiments showing that JNK activation with apoptosis blocked only partially activates upd3.3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "ca03041e-8877-45ef-a4df-3e94215165aa",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C87",
+      "claim": "aPKC can activate Yki independent of, rather than through, JNK.",
+      "claim_type": "EXPLICIT",
+      "source": "aPKC is an additional regulator of this enhancer, and as previously suggested (Doggett et al., 2011), can activate Yki independent of, rather than through, JNK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the genetic experiments and supported by citation to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "26ee94a7-ac7b-4c4c-9129-0e1a61cde240",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C88",
+      "claim": "Inhibiting either the JNK or Hpo pathways, including depletion of the downstream transcription factors, prevents expression of the polarity-sensitive enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting either the JNK or Hpo pathways, including depletion of the downstream transcription factors, prevents expression of the polarity-sensitive enhancer; our analysis predicts that mutating transcription factor binding sites would give the same effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the genetic experiments showing that both pathways are required.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "b5b46fcf-c88c-4ae2-8187-90e607d13a64",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C89",
+      "claim": "Knockdown of upd3 alone in neoplastic tumors does not prevent overgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of upd3 alone in neoplastic tumors does not prevent overgrowth (Figure 2\u2014figure supplement 1); upd1 and upd2 are also regulated by JNK, Yki, and PcG (Pastor-Pareja et al., 2008; Classen et al., 2009; Jiang et al., 2009; Staley and Irvine, 2010; Wu et al., 2010) and may act through analogous enhancers to cooperatively drive tumor formation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic experiments and supported by citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "7c17213d-4ba2-4df0-be45-ddbd46fb9eaa",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C90",
+      "claim": "Loss of polarity induces two separate signaling pathways: JNK to induce Fos-dependent transcription, and mispolarization of aPKC drives Yki-dependent transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of polarity thus induces two separate signaling pathways. An unknown mechanism triggers JNK to induce Fos-dependent transcription, while at the same time mispolarization of aPKC drives Yki-dependent transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the mechanistic findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "63c1e398-6ef7-4506-baf0-397214050d7d",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C91",
+      "claim": "Under mild signaling conditions, both JNK/Fos and aPKC/Yki pathways are required simultaneously to trigger enhancer expression or overgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Under mild signaling conditions, both pathways are required simultaneously to trigger enhancer expression or overgrowth, while inhibition of either is sufficient to suppress neoplasia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the genetic experiments showing coincidence detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "380395b1-92e0-43c3-b223-adac2177e17f",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C92",
+      "claim": "Polarity-responsive enhancers like upd3.3 work as 'coincidence detectors' that during normal physiology require inputs from both JNK/Fos and aPKC/Yki.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that polarity-responsive enhancers like upd3.3 work as 'coincidence detectors' that during normal physiology require inputs from both JNK/Fos and aPKC/Yki.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic model based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "91da6e84-0feb-4403-8c00-de9105ed7c12",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C93",
+      "claim": "Inhibition of Fos can revert not only growth defects but also polarity defects of neoplastic tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also emphasize the unexpectedly central role of transcription in mediating cell polarity loss. Inhibition of Fos can revert not only growth defects but also polarity defects of neoplastic tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the genetic experiments showing that FosDN restores polarity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "b29f0477-f48a-4484-871f-faeda6a68f7b",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C94",
+      "claim": "Activation of JNK, Yki, or both together is insufficient to elicit polarity defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, activation of JNK, Yki, or both together is insufficient to elicit polarity defects (Figure 5\u2014figure supplement 3), while aPKC activation alone is.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic experiments shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "5be7bf4c-e814-4bef-8abf-63b1fe935242",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C95",
+      "claim": "Many Hpo pathway targets, including direct growth regulators such as cycE, diap1, and Myc, are expressed at near-normal levels in Scrib module mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Many Hpo pathway targets, including direct growth regulators such as cycE, diap1, and Myc, are expressed at near-normal levels in Scrib module mutants, and comparison of Scrib module and Hpo mutant transcriptomes reveals limited overlap (Figure 5\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the RNA-Seq data and transcriptome comparisons shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "958271be-0c70-4418-8453-644fe5d8f5ee",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C96",
+      "claim": "A transgenic 3.5 kb diap1 fragment is strongly upregulated in neoplastic tissue, paralleling upregulation of a minimal Yki-responsive element.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also unlikely to be explained by a model in which Yki activation through aPKC differs from Yki activation through canonical Hpo pathway regulators, since a transgenic 3.5 kb diap1 fragment is strongly upregulated in neoplastic tissue, paralleling upregulation of a minimal Yki-responsive element (Figure 5\u2014figure supplement 2G\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter expression experiments shown in the supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "e6c807ac-f007-4c72-a396-a154bb195a23",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C97",
+      "claim": "An enhancer trap inserted at the same 3.5 kb sequence in the endogenous diap1 locus is only slightly upregulated in neoplastic tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, an enhancer trap inserted at the same 3.5 kb sequence in the endogenous diap1 locus (Zhang et al., 2008) is only slightly upregulated by comparison (Figure 5\u2014figure supplement 2K\u2013L), hinting that the native chromatin environment at certain Yki targets might influence target response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on reporter expression experiments shown in the supplementary figure and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "c70b49e9-c2f6-4bd0-8433-cc4d2b314e7c",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C98",
+      "claim": "Canonical PcG targets including Hox genes are not upregulated in neoplastic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since canonical PcG targets including Hox genes are not upregulated in neoplastic tissues (Supplementary files 1\u20132), and overall Histone H3K27me3 levels are not altered (data not shown), the data rule out a global inactivation of PcG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the RNA-Seq data and histone modification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "938622ef-99dd-473f-be03-0e6de8875454",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C99",
+      "claim": "Overall Histone H3K27me3 levels are not altered in neoplastic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since canonical PcG targets including Hox genes are not upregulated in neoplastic tissues (Supplementary files 1\u20132), and overall Histone H3K27me3 levels are not altered (data not shown), the data rule out a global inactivation of PcG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on histone modification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "2778d1f6-3e1d-46d6-909b-daab1d1f99bb",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C100",
+      "claim": "Decreased PcG-mediated repression 'primes' select targets for activation by polarity-responsive effector pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, they suggest that decreased PcG-mediated repression 'primes' select targets for activation by polarity-responsive effector pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the genetic interaction data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "86c52217-3a61-4b08-ab8f-d8a94b45a7fb",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C101",
+      "claim": "Reduced PcG activity upon Scrib module loss synergizes with JNK and aPKC signaling, perhaps by providing a permissive chromatin environment for Fos- and Yki-stimulated transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Mild activation of either JNK or aPKC alone is insufficient to stimulate enhancers such as upd3.3. However, at these targets, reduced PcG activity upon Scrib module loss synergizes with JNK and aPKC signaling, perhaps by providing a permissive chromatin environment for Fos- and Yki-stimulated transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the genetic interaction data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "d0491379-2a12-48a8-b25d-7e4bdb12d69d",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C102",
+      "claim": "Fly homologs of metabolic genes that fuel human cancer growth are elevated in neoplastic tumors, including fatty acid synthase (FASN) and LDH.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to oxidative stress, fly homologs of metabolic genes that fuel human cancer growth are elevated, including fatty acid synthase (FASN) which facilitates de novo lipogenesis, and LDH which promotes aerobic glycolysis in the Warburg effect (Cairns et al., 2011; Baenke et al., 2013; Gorrini et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the RNA-Seq data and supported by citations to research on cancer metabolism.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "963f37a0-0a06-4c4d-a939-24e504f5e8b8",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C103",
+      "claim": "Glycolytic enzyme transcription in fly neoplastic tumors remains relatively unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "However, glycolytic enzyme transcription in fly neoplastic tumors remains relatively unchanged, suggesting that metabolic changes may be more complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the RNA-Seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "fc2dd41a-6871-425c-82be-4ad9d5b6276f",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C104",
+      "claim": "Restoring expression of the wing-fate regulator Vg suppresses tumorous overgrowth without inducing cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Khan et al. recently reported that forcing differentiation can cause elimination of neoplastic clones (Khan et al., 2013); by contrast, our experiments show that restoring expression of the wing-fate regulator Vg suppresses tumorous overgrowth without inducing cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the genetic experiments with vg overexpression and contrasted with prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "c1b53c24-be79-42aa-b37e-12e103ecb8a0",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C105",
+      "claim": "Apicobasal polarity disruption elicits responses with striking parallels to those seen in epithelial wounds in both Drosophila and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Why might loss of polarity drive this particular constellation of events that result in tumorous overgrowth? Our global analysis reveals that apicobasal polarity disruption elicits responses with striking parallels to those seen in epithelial wounds in both Drosophila and humans (Sch\u00e4fer and Werner, 2008; Lee and Miura, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the transcriptome data supported by citations to wound healing research.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "818838a4-2f78-469a-a3d4-42fc8fbf2243",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C106",
+      "claim": "Several upregulated neoplastic effectors that contain conserved AP-1 and Sd binding sites are also upregulated during wound-healing.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, several upregulated neoplastic effectors that contain conserved AP-1 and Sd binding sites are also upregulated during wound-healing (Pastor-Pareja et al., 2008; Wu et al., 2009; Garelli et al., 2012; Patterson et al., 2013) (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of the neoplastic transcriptome with published wound healing data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "a1ce4663-60f6-43ca-853c-60989e3663ab",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C107",
+      "claim": "Linking transcriptional control of wound-response targets to polarity regulators allows the tissue to connect disturbances in its integrity to the activation of broad gene expression programs that promote repair.",
+      "claim_type": "EXPLICIT",
+      "source": "An attractive model is that linking transcriptional control of such targets to polarity regulators, via polarity-regulated aPKC, cell architecture-regulated Yki and stress-regulated JNK activity on both downstream transcription factors and PcG epigenetic regulators, allows the tissue to connect disturbances in its integrity to the activation of broad gene expression programs that promote repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic model based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "5d42c317-3264-4b7f-ba7b-46fd2823d950",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C108",
+      "claim": "Following tissue damage, restoration of tissue architecture and integrity would abrogate wound-response signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Following tissue damage, restoration of tissue architecture and integrity would abrogate wound-response signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about normal wound healing.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "a440eac5-5bc4-4907-835e-b38ed3f43e52",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C109",
+      "claim": "In polarity-deficient tissues, architecture can never be restored, and pro-growth, de-differentiation cues remain active, leading to the formation of malignant tumors that kill the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in polarity-deficient tissues, architecture can never be restored, and these pro-growth, de-differentiation cues remain active, leading to the formation of malignant tumors that kill the organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of why polarity loss leads to neoplasia.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "bbe2abb0-40e6-4654-a7d9-18bcae9c0054",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "claim_id": "C110",
+      "claim": "The data provide insight into why epithelial polarity is tumor-suppressive by linking it to cancers as 'wounds that never heal'.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data linking apicobasal polarity to neoplastic gene expression thus suggest an evolutionarily ancient genesis for cancers as 'wounds that never heal' (Dvorak, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual interpretation of the findings supported by citation to the 'wounds that never heal' concept.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "444811b4-7e71-4bdc-b9bc-180b3ac9b82c",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RNA-Seq profiling of scrib and dlg mutant tumors reveals multiple signatures of neoplasia including altered metabolism, oxidative stress response, and dedifferentiation. 574 genes were misregulated at least twofold in both mutant tissues (FDR <5%), with upregulated genes enriched for stress response factors and downregulated genes reflecting failure to differentiate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C22-C30 are well-supported by RNA-Seq data with appropriate statistical thresholds (FDR <5%), validation by qRT-PCR (R2=0.8844), and Gene Ontology analysis. The transcriptome analysis is technically sound with biological replicates and appropriate controls. Claims C102-C103 regarding metabolic changes are supported by the data but appropriately note complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "01d200ee-12c8-41e2-8342-60f99c82ee83",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Upregulation of JAK/STAT pathway ligands (upd genes) drives neoplastic overgrowth. The three upd genes were transcriptionally elevated 3-50 fold, and inhibition of JAK/STAT signaling via Socs36E or DomeDN suppressed overgrowth of polarity-deficient tissue by 40% without affecting wild-type growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C34-C42 are strongly supported by RNA-Seq data showing specific upregulation of upd ligands, reporter assays demonstrating pathway activation, and functional genetic experiments with appropriate controls and quantification (FACS-based cell counting). The specificity of the effect (no impact on WT) strengthens the conclusion. Claim C89 appropriately notes that upd3 alone is insufficient, suggesting redundancy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "b2d11a36-fc98-4722-a9fe-199c6e27ebba",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A 1-kb polarity-responsive enhancer element (upd3.3) within the first intron of upd3 is activated in neoplastic discs and contains evolutionarily conserved AP-1 binding sites. This enhancer is expressed in a patchy manner in dlg and scrib mutant discs but not in wild-type tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 are supported by systematic reporter analysis of genomic fragments, microscopy showing tissue-specific expression, and computational motif analysis with evolutionary conservation. The identification of a minimal responsive element through deletion analysis is methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "d2130d6f-3f69-41d4-9948-f9bd63196c0b",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "JNK-dependent Fos transcription is necessary but not sufficient for full activation of the upd3.3 enhancer and neoplastic transformation. Inhibition of JNK or Fos completely blocks enhancer activation and neoplasia, but JNK activation alone (with apoptosis blocked) only partially activates the enhancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51, C85-C86 are well-supported by genetic epistasis experiments using dominant-negative constructs and mutants, with appropriate controls. The necessity is demonstrated by loss-of-function (JNKDN, fosDN, hep mutant) and sufficiency tested by gain-of-function (Eiger + miRGH). The partial activation by JNK alone is a key observation supporting the coincidence detection model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "8e3402c5-e924-482a-b2fc-fd611223ede1",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "aPKC activates the upd3.3 enhancer through Yki-dependent transcription, independently of JNK signaling. Constitutively active aPKC is sufficient to trigger enhancer expression, and this activation is not prevented by JNK inhibition despite aPKC's ability to activate JNK targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61, C87 are supported by genetic experiments showing aPKC mislocalization in polarity mutants, gain-of-function experiments with aPKCact, and epistasis experiments demonstrating JNK-independence. The use of multiple aPKC constructs (aPKCact and aPKCmild) strengthens the conclusion that results are not transgene-specific.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "5f04ba14-4cc4-4bd4-91cc-78c354423462",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "aPKC activates the upd3.3 enhancer via Yorkie (Yki), the Hippo pathway transcriptional coactivator. The enhancer contains a conserved Scalloped binding site, yki knockdown blocks aPKC-driven enhancer activation, and constitutively active Yki is sufficient to activate the enhancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 are supported by computational identification of Sd binding sites, genetic epistasis experiments showing Yki requirement, and gain-of-function experiments with Ykiact. The combination of motif analysis, loss-of-function, and gain-of-function experiments provides strong mechanistic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "e41eebe8-5fed-4278-a080-2c14d3fdb602",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The upd3.3 enhancer functions as a 'coincidence detector' requiring simultaneous input from both JNK/Fos and aPKC/Yki pathways. Mild activation of either pathway alone is insufficient, but co-expression of wild-type JNK kinase and aPKCmild together induces enhancer activation and moderate overgrowth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71, C91-C92 are strongly supported by systematic genetic experiments testing individual and combined pathway activation. The coincidence detection model is well-supported by the observation that physiological levels of either pathway alone are insufficient, but together are sufficient for activation. This is a key mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "b95d0ed9-fd63-4cb4-a754-743312b783d6",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Polycomb Group (PcG) genes regulate the upd3.3 enhancer and show extensive transcriptional overlap with Scrib module mutants. Nearly half of genes upregulated upon polarity loss are also upregulated in PcG mutants (p<6.98e-121), and 25% of direct PcG targets upregulated in PcG mutants are also upregulated in polarity-deficient tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C77 are supported by reporter expression in PcG mutants, RNA-Seq comparison with highly significant statistical enrichment, and integration with published ChIP data. The transcriptome overlap is substantial and statistically robust. Claim C77 appropriately notes that PcG mutants can maintain polarity, ruling out indirect effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "9d8bb1d9-354b-46aa-9e0b-3a2da0b1789f",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Epithelial polarity suppresses neoplasia through PcG in cooperation with JNK and aPKC/Yki pathways. PcG knockdown enhances neoplastic growth in dlg hypomorphs, Brm inhibition suppresses dlg-induced growth, and PcG component expression is reduced in neoplastic tumors. Reduced PcG activity synergizes with mild aPKC or JNK signaling to activate the enhancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C83, C100-C101 are supported by genetic interaction experiments showing synthetic enhancement and suppression, RNA-Seq data showing PcG downregulation, and epistasis experiments demonstrating synergy. The model that PcG attenuation 'primes' targets for activation is well-supported by the genetic data, though the chromatin mechanism remains speculative (appropriately noted in C101).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "e2c80290-42db-44fc-852a-b80927c60dc5",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Restoring expression of the differentiation factor vestigial (vg) suppresses neoplastic overgrowth and architecture defects without inducing cell death, while eyeless cannot suppress dlg knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33, C104 are supported by genetic rescue experiments with appropriate imaging and controls. The observation that vg suppresses without cell death contrasts with prior work (appropriately cited), suggesting context-dependent mechanisms. The negative result with eyeless serves as a control showing specificity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "490a793a-a254-4228-b3c9-9253d46658bc",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "JNK activation alone (with apoptosis blocked) induces upd3.3LacZ and tissue overgrowth but does not disrupt polarity or fully recapitulate neoplasia. The enhancer induction is low compared to canonical JNK targets like Mmp1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 are supported by experiments using Eiger + miRGH to activate JNK while blocking apoptosis, with quantitative comparison of reporter levels and polarity marker localization. This demonstrates sufficiency for partial activation but not full neoplasia, supporting the coincidence detection model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "832ec117-08a6-4792-ab0c-832c34bb1943",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Yki activation in neoplastic tissue differs from Hippo pathway mutants in target gene selection. Canonical Yki growth targets (cycE, diap1, Myc) are expressed at near-normal levels in Scrib mutants, and upd3.3lacZ is not active in hippo mutant tumors, despite both contexts having active Yki.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68, C95-C97 are supported by transcriptome comparisons and reporter assays in different genetic backgrounds. The observation that chromatin context may influence Yki target response (C97) is appropriately presented as speculative. This highlights an important puzzle about context-dependent Yki activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "568cfcd3-a1ad-4309-b542-7ad39683a2b7",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Loss of polarity induces two parallel signaling pathways (JNK\u2192Fos and aPKC\u2192Yki) that converge on transcriptional targets. Inhibition of Fos can revert both growth and polarity defects, but activation of JNK, Yki, or both together is insufficient to elicit polarity defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88, C90, C93-C94 are supported by the genetic epistasis experiments throughout the manuscript. The observation that Fos inhibition restores polarity (C93) is particularly striking and well-documented. The asymmetry between necessity and sufficiency for polarity disruption is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "0700fcdd-bfe8-4348-b427-3aa0907391fd",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Canonical PcG targets including Hox genes are not upregulated in neoplastic tissues, and overall H3K27me3 levels are not altered, ruling out global PcG inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C99 are supported by RNA-Seq data and histone modification analysis. This is important negative data that constrains the model, showing that PcG effects are target-specific rather than global.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "d1eb5b17-f28e-452e-a03b-1f47be739524",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Polarity disruption elicits transcriptional responses paralleling epithelial wound healing in flies and humans. Several upregulated neoplastic effectors with conserved AP-1 and Sd sites are also wound-healing genes. The model proposes that polarity loss creates a 'wound that never heals' because architecture cannot be restored.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C110 are supported by transcriptome comparisons with published wound healing data and motif analysis. The 'wounds that never heal' model (C110) is appropriately presented as an interpretation linking the data to a conceptual framework. Claims C107-C109 contain speculative elements but are clearly presented as a model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "30f9c41a-4e4b-4d46-8968-15f3755d840b",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Loss of epithelial polarity correlates with progression of epithelial cancers and tumor malignancy in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C8 represent established clinical and pathological knowledge about cancer diagnosis and are appropriately cited as background. These are well-accepted facts in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "a3a048b5-65db-4dd1-b0b4-09f020f2ea9f",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The Scrib module polarity regulators are conserved tumor suppressors, and polarity regulators including aPKC are altered in multiple human cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C9-C13 are supported by citations to published research and represent established knowledge about polarity regulator conservation and cancer relevance. These provide appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "6222d784-d750-4ed9-b4c0-17f7990e7708",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Scrib module mutants in Drosophila display multiple neoplastic characteristics including overgrowth, transplantability, basement membrane degradation, invasion with oncogenic Ras, differentiation defects, immune recognition, and cachexia-inducing signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C21 are supported by citations to published research and represent established phenotypes of Scrib module mutants. These provide important background establishing the neoplastic nature of the model system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    },
+    {
+      "id": "b492fd48-670a-4c02-a0e5-5afab1f6c310",
+      "content_id": "210bf6c5-aa51-40cb-988f-b549431d4e50",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "In polarity-deficient tissues, simultaneous initiation of Fos-dependent transcription, aPKC-mediated Yki activation, and loss of PcG target repression leads to induction of oncogenic factors including JAK/STAT ligands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 is a summary statement integrating the major findings of the manuscript. It is well-supported by the collective evidence from the genetic, transcriptomic, and molecular analyses presented throughout the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:36:25.372218Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e2012bd4-4a5d-4cce-b997-ea8898a2606b",
+      "result_id": "444811b4-7e71-4bdc-b9bc-180b3ac9b82c"
+    },
+    {
+      "claim_id": "f46bb2ce-0a05-4729-9711-be066a1e1a7a",
+      "result_id": "444811b4-7e71-4bdc-b9bc-180b3ac9b82c"
+    },
+    {
+      "claim_id": "09d9a845-d743-4588-b9a8-60a15c1734a2",
+      "result_id": "444811b4-7e71-4bdc-b9bc-180b3ac9b82c"
+    },
+    {
+      "claim_id": "31697a72-aebd-4428-aba2-c58465a3d4cc",
+      "result_id": "444811b4-7e71-4bdc-b9bc-180b3ac9b82c"
+    },
+    {
+      "claim_id": "4db3977c-4afd-458a-9f05-b3a2e30f4063",
+      "result_id": "444811b4-7e71-4bdc-b9bc-180b3ac9b82c"
+    },
+    {
+      "claim_id": "b395cd88-88b3-49c3-aa88-f3cd0b199e5f",
+      "result_id": "444811b4-7e71-4bdc-b9bc-180b3ac9b82c"
+    },
+    {
+      "claim_id": "92ed85dd-96a9-4c9b-9217-26464fc273e8",
+      "result_id": "444811b4-7e71-4bdc-b9bc-180b3ac9b82c"
+    },
+    {
+      "claim_id": "46be5598-4601-4ef6-b9ad-6454d2d7c2c9",
+      "result_id": "444811b4-7e71-4bdc-b9bc-180b3ac9b82c"
+    },
+    {
+      "claim_id": "491d10f7-4a3a-40bd-a941-990c6b6b0284",
+      "result_id": "444811b4-7e71-4bdc-b9bc-180b3ac9b82c"
+    },
+    {
+      "claim_id": "51676906-d021-40cd-870e-78d55dd09e36",
+      "result_id": "444811b4-7e71-4bdc-b9bc-180b3ac9b82c"
+    },
+    {
+      "claim_id": "d0491379-2a12-48a8-b25d-7e4bdb12d69d",
+      "result_id": "444811b4-7e71-4bdc-b9bc-180b3ac9b82c"
+    },
+    {
+      "claim_id": "963f37a0-0a06-4c4d-a939-24e504f5e8b8",
+      "result_id": "444811b4-7e71-4bdc-b9bc-180b3ac9b82c"
+    },
+    {
+      "claim_id": "3ebb5bc7-3800-4c1c-bddf-132c59560ad6",
+      "result_id": "01d200ee-12c8-41e2-8342-60f99c82ee83"
+    },
+    {
+      "claim_id": "9180c820-c1c5-4715-915c-63e9162d7afa",
+      "result_id": "01d200ee-12c8-41e2-8342-60f99c82ee83"
+    },
+    {
+      "claim_id": "789d96dc-34b8-4e24-b983-363c5ce425e2",
+      "result_id": "01d200ee-12c8-41e2-8342-60f99c82ee83"
+    },
+    {
+      "claim_id": "4f711bb5-30b0-4c89-9019-fd80c79b1f47",
+      "result_id": "01d200ee-12c8-41e2-8342-60f99c82ee83"
+    },
+    {
+      "claim_id": "660b90b5-6060-4b07-b172-4b04375135db",
+      "result_id": "01d200ee-12c8-41e2-8342-60f99c82ee83"
+    },
+    {
+      "claim_id": "cbd11d13-e9ce-4f32-afba-084b3c8beeee",
+      "result_id": "01d200ee-12c8-41e2-8342-60f99c82ee83"
+    },
+    {
+      "claim_id": "9b8c536c-9021-48a1-a94e-af631ae60e14",
+      "result_id": "01d200ee-12c8-41e2-8342-60f99c82ee83"
+    },
+    {
+      "claim_id": "199e2f16-fe81-4725-98fd-bd6e15c679cf",
+      "result_id": "01d200ee-12c8-41e2-8342-60f99c82ee83"
+    },
+    {
+      "claim_id": "426aa0cf-9f91-4361-878f-3fb75713bba7",
+      "result_id": "01d200ee-12c8-41e2-8342-60f99c82ee83"
+    },
+    {
+      "claim_id": "dfef98a2-a861-4a12-8b6d-b51f3f869eac",
+      "result_id": "01d200ee-12c8-41e2-8342-60f99c82ee83"
+    },
+    {
+      "claim_id": "b5b46fcf-c88c-4ae2-8187-90e607d13a64",
+      "result_id": "01d200ee-12c8-41e2-8342-60f99c82ee83"
+    },
+    {
+      "claim_id": "23a88661-6273-4e9a-ae52-971311aeed54",
+      "result_id": "b2d11a36-fc98-4722-a9fe-199c6e27ebba"
+    },
+    {
+      "claim_id": "d86afc54-d463-4547-bc58-8aea354b62bf",
+      "result_id": "b2d11a36-fc98-4722-a9fe-199c6e27ebba"
+    },
+    {
+      "claim_id": "b67a6710-6ab7-42f6-a5d8-cd34fc27fd5a",
+      "result_id": "b2d11a36-fc98-4722-a9fe-199c6e27ebba"
+    },
+    {
+      "claim_id": "ce212eda-f801-4f44-b088-78f1757f6904",
+      "result_id": "b2d11a36-fc98-4722-a9fe-199c6e27ebba"
+    },
+    {
+      "claim_id": "b327ced1-fe16-4f8c-a34c-068464e8cef4",
+      "result_id": "b2d11a36-fc98-4722-a9fe-199c6e27ebba"
+    },
+    {
+      "claim_id": "decc44a3-6475-497d-8643-ffd3467bad42",
+      "result_id": "d2130d6f-3f69-41d4-9948-f9bd63196c0b"
+    },
+    {
+      "claim_id": "5529fcbd-bc37-41d5-bf35-b1baa7adbbec",
+      "result_id": "d2130d6f-3f69-41d4-9948-f9bd63196c0b"
+    },
+    {
+      "claim_id": "d0182f4a-b046-4b47-8904-4907c7213aaf",
+      "result_id": "d2130d6f-3f69-41d4-9948-f9bd63196c0b"
+    },
+    {
+      "claim_id": "52f7c5ca-c2fe-4fad-89a7-ab690e427de2",
+      "result_id": "d2130d6f-3f69-41d4-9948-f9bd63196c0b"
+    },
+    {
+      "claim_id": "23d6b352-e27b-497f-85fb-f32bab82b1da",
+      "result_id": "d2130d6f-3f69-41d4-9948-f9bd63196c0b"
+    },
+    {
+      "claim_id": "66a22bbc-5007-43b1-aca2-50fff9d6aa97",
+      "result_id": "d2130d6f-3f69-41d4-9948-f9bd63196c0b"
+    },
+    {
+      "claim_id": "aa92e2c3-ea7a-490b-9a77-d82a96532066",
+      "result_id": "8e3402c5-e924-482a-b2fc-fd611223ede1"
+    },
+    {
+      "claim_id": "0e09f44b-5a30-48e7-b789-6b498b578036",
+      "result_id": "8e3402c5-e924-482a-b2fc-fd611223ede1"
+    },
+    {
+      "claim_id": "a3c4e3cf-42c4-4d86-a2ed-333d25c607e3",
+      "result_id": "8e3402c5-e924-482a-b2fc-fd611223ede1"
+    },
+    {
+      "claim_id": "ab75142c-7774-4d08-b8ae-be8680f7acd1",
+      "result_id": "8e3402c5-e924-482a-b2fc-fd611223ede1"
+    },
+    {
+      "claim_id": "51fb50ed-adf2-4b40-b565-358e47fe02b8",
+      "result_id": "8e3402c5-e924-482a-b2fc-fd611223ede1"
+    },
+    {
+      "claim_id": "ca03041e-8877-45ef-a4df-3e94215165aa",
+      "result_id": "8e3402c5-e924-482a-b2fc-fd611223ede1"
+    },
+    {
+      "claim_id": "8a10db80-f1e0-4b02-bc3e-9b2fdb6470bb",
+      "result_id": "5f04ba14-4cc4-4bd4-91cc-78c354423462"
+    },
+    {
+      "claim_id": "89c4ef1e-c645-4fa2-b74b-7fcc9ef54a74",
+      "result_id": "5f04ba14-4cc4-4bd4-91cc-78c354423462"
+    },
+    {
+      "claim_id": "1ce40e09-2b17-403b-b746-b01c0ea85809",
+      "result_id": "5f04ba14-4cc4-4bd4-91cc-78c354423462"
+    },
+    {
+      "claim_id": "8381aaec-e063-4d6b-9d3b-5e9e05cbb201",
+      "result_id": "5f04ba14-4cc4-4bd4-91cc-78c354423462"
+    },
+    {
+      "claim_id": "020c3962-f378-4413-a171-9363c2b03c23",
+      "result_id": "5f04ba14-4cc4-4bd4-91cc-78c354423462"
+    },
+    {
+      "claim_id": "5f5b8618-b716-43ea-9128-90477d2e5d28",
+      "result_id": "5f04ba14-4cc4-4bd4-91cc-78c354423462"
+    },
+    {
+      "claim_id": "d675b220-eb3d-4509-adc7-f2360c54240c",
+      "result_id": "e41eebe8-5fed-4278-a080-2c14d3fdb602"
+    },
+    {
+      "claim_id": "4471e685-8157-43e7-aff3-ab2dc3c24687",
+      "result_id": "e41eebe8-5fed-4278-a080-2c14d3fdb602"
+    },
+    {
+      "claim_id": "a98dab1e-1751-4c94-8577-6c2424b3a2d3",
+      "result_id": "e41eebe8-5fed-4278-a080-2c14d3fdb602"
+    },
+    {
+      "claim_id": "63c1e398-6ef7-4506-baf0-397214050d7d",
+      "result_id": "e41eebe8-5fed-4278-a080-2c14d3fdb602"
+    },
+    {
+      "claim_id": "380395b1-92e0-43c3-b223-adac2177e17f",
+      "result_id": "e41eebe8-5fed-4278-a080-2c14d3fdb602"
+    },
+    {
+      "claim_id": "f3d57b8e-53fd-45e2-9e29-4623ae30ec15",
+      "result_id": "b95d0ed9-fd63-4cb4-a754-743312b783d6"
+    },
+    {
+      "claim_id": "614e1ce4-db4b-482c-9aba-65c18d8bf20c",
+      "result_id": "b95d0ed9-fd63-4cb4-a754-743312b783d6"
+    },
+    {
+      "claim_id": "9127b9c4-3074-4960-9953-461020c62a78",
+      "result_id": "b95d0ed9-fd63-4cb4-a754-743312b783d6"
+    },
+    {
+      "claim_id": "0cd36d7c-48f8-42ea-b19b-ee5d3083e9b3",
+      "result_id": "b95d0ed9-fd63-4cb4-a754-743312b783d6"
+    },
+    {
+      "claim_id": "a5f1f664-760e-449f-a68a-ee009ee4fe31",
+      "result_id": "b95d0ed9-fd63-4cb4-a754-743312b783d6"
+    },
+    {
+      "claim_id": "3197c148-768e-4b0f-84d9-c88ad6f3cfef",
+      "result_id": "b95d0ed9-fd63-4cb4-a754-743312b783d6"
+    },
+    {
+      "claim_id": "86191ad9-796b-4ef6-8ab5-422eb5f57fb7",
+      "result_id": "9d8bb1d9-354b-46aa-9e0b-3a2da0b1789f"
+    },
+    {
+      "claim_id": "dfd94ccd-4109-41de-8409-a601865bffc3",
+      "result_id": "9d8bb1d9-354b-46aa-9e0b-3a2da0b1789f"
+    },
+    {
+      "claim_id": "8df857ca-c233-4b86-9cf3-ed5f6019714c",
+      "result_id": "9d8bb1d9-354b-46aa-9e0b-3a2da0b1789f"
+    },
+    {
+      "claim_id": "3d8d1fe6-a99d-46fc-804e-ff71a84d7306",
+      "result_id": "9d8bb1d9-354b-46aa-9e0b-3a2da0b1789f"
+    },
+    {
+      "claim_id": "1169517d-52ee-445b-bfa5-39a66b39dc60",
+      "result_id": "9d8bb1d9-354b-46aa-9e0b-3a2da0b1789f"
+    },
+    {
+      "claim_id": "e44a0ab4-8547-4086-becc-299d768c0ec9",
+      "result_id": "9d8bb1d9-354b-46aa-9e0b-3a2da0b1789f"
+    },
+    {
+      "claim_id": "2778d1f6-3e1d-46d6-909b-daab1d1f99bb",
+      "result_id": "9d8bb1d9-354b-46aa-9e0b-3a2da0b1789f"
+    },
+    {
+      "claim_id": "86c52217-3a61-4b08-ab8f-d8a94b45a7fb",
+      "result_id": "9d8bb1d9-354b-46aa-9e0b-3a2da0b1789f"
+    },
+    {
+      "claim_id": "f5cac1bc-2cec-49d5-8589-a37dc152dfaa",
+      "result_id": "e2c80290-42db-44fc-852a-b80927c60dc5"
+    },
+    {
+      "claim_id": "714299ac-1f3a-424f-bc6a-83e6cf2294f9",
+      "result_id": "e2c80290-42db-44fc-852a-b80927c60dc5"
+    },
+    {
+      "claim_id": "fe68e039-ab26-4959-8102-09f8ec8e369a",
+      "result_id": "e2c80290-42db-44fc-852a-b80927c60dc5"
+    },
+    {
+      "claim_id": "fc2dd41a-6871-425c-82be-4ad9d5b6276f",
+      "result_id": "e2c80290-42db-44fc-852a-b80927c60dc5"
+    },
+    {
+      "claim_id": "63bd0a63-0de3-4897-8094-af91b182f625",
+      "result_id": "490a793a-a254-4228-b3c9-9253d46658bc"
+    },
+    {
+      "claim_id": "846daa74-c451-4ee0-829d-1f8841197c1d",
+      "result_id": "490a793a-a254-4228-b3c9-9253d46658bc"
+    },
+    {
+      "claim_id": "33c9ea11-64b3-4e4f-881c-f0ac09eae8ed",
+      "result_id": "490a793a-a254-4228-b3c9-9253d46658bc"
+    },
+    {
+      "claim_id": "7bc946c8-3169-4462-98ca-92c6a07a21fa",
+      "result_id": "490a793a-a254-4228-b3c9-9253d46658bc"
+    },
+    {
+      "claim_id": "6ff9bbb3-086f-4775-af27-3de244ef03c6",
+      "result_id": "490a793a-a254-4228-b3c9-9253d46658bc"
+    },
+    {
+      "claim_id": "ce8efbc0-2d41-4bb6-8157-d7c748ae0625",
+      "result_id": "832ec117-08a6-4792-ab0c-832c34bb1943"
+    },
+    {
+      "claim_id": "5be7bf4c-e814-4bef-8abf-63b1fe935242",
+      "result_id": "832ec117-08a6-4792-ab0c-832c34bb1943"
+    },
+    {
+      "claim_id": "958271be-0c70-4418-8453-644fe5d8f5ee",
+      "result_id": "832ec117-08a6-4792-ab0c-832c34bb1943"
+    },
+    {
+      "claim_id": "e6c807ac-f007-4c72-a396-a154bb195a23",
+      "result_id": "832ec117-08a6-4792-ab0c-832c34bb1943"
+    },
+    {
+      "claim_id": "26ee94a7-ac7b-4c4c-9129-0e1a61cde240",
+      "result_id": "568cfcd3-a1ad-4309-b542-7ad39683a2b7"
+    },
+    {
+      "claim_id": "7c17213d-4ba2-4df0-be45-ddbd46fb9eaa",
+      "result_id": "568cfcd3-a1ad-4309-b542-7ad39683a2b7"
+    },
+    {
+      "claim_id": "91da6e84-0feb-4403-8c00-de9105ed7c12",
+      "result_id": "568cfcd3-a1ad-4309-b542-7ad39683a2b7"
+    },
+    {
+      "claim_id": "b29f0477-f48a-4484-871f-faeda6a68f7b",
+      "result_id": "568cfcd3-a1ad-4309-b542-7ad39683a2b7"
+    },
+    {
+      "claim_id": "c70b49e9-c2f6-4bd0-8433-cc4d2b314e7c",
+      "result_id": "0700fcdd-bfe8-4348-b427-3aa0907391fd"
+    },
+    {
+      "claim_id": "938622ef-99dd-473f-be03-0e6de8875454",
+      "result_id": "0700fcdd-bfe8-4348-b427-3aa0907391fd"
+    },
+    {
+      "claim_id": "c1b53c24-be79-42aa-b37e-12e103ecb8a0",
+      "result_id": "d1eb5b17-f28e-452e-a03b-1f47be739524"
+    },
+    {
+      "claim_id": "818838a4-2f78-469a-a3d4-42fc8fbf2243",
+      "result_id": "d1eb5b17-f28e-452e-a03b-1f47be739524"
+    },
+    {
+      "claim_id": "a1ce4663-60f6-43ca-853c-60989e3663ab",
+      "result_id": "d1eb5b17-f28e-452e-a03b-1f47be739524"
+    },
+    {
+      "claim_id": "5d42c317-3264-4b7f-ba7b-46fd2823d950",
+      "result_id": "d1eb5b17-f28e-452e-a03b-1f47be739524"
+    },
+    {
+      "claim_id": "a440eac5-5bc4-4907-835e-b38ed3f43e52",
+      "result_id": "d1eb5b17-f28e-452e-a03b-1f47be739524"
+    },
+    {
+      "claim_id": "bbe2abb0-40e6-4654-a7d9-18bcae9c0054",
+      "result_id": "d1eb5b17-f28e-452e-a03b-1f47be739524"
+    },
+    {
+      "claim_id": "298c111b-669b-4e60-8416-9cb567c87269",
+      "result_id": "30f9c41a-4e4b-4d46-8968-15f3755d840b"
+    },
+    {
+      "claim_id": "711704f6-5d1b-4566-b769-66d7c9c6a5dd",
+      "result_id": "30f9c41a-4e4b-4d46-8968-15f3755d840b"
+    },
+    {
+      "claim_id": "17b607c4-4449-4fe7-bb65-e922f8fe2d5e",
+      "result_id": "a3a048b5-65db-4dd1-b0b4-09f020f2ea9f"
+    },
+    {
+      "claim_id": "f019ed90-706b-46d9-af2f-ae5bb2e3749e",
+      "result_id": "a3a048b5-65db-4dd1-b0b4-09f020f2ea9f"
+    },
+    {
+      "claim_id": "6ad5bce6-c82d-40a3-b594-55997c7120bc",
+      "result_id": "a3a048b5-65db-4dd1-b0b4-09f020f2ea9f"
+    },
+    {
+      "claim_id": "4236a7ed-a12e-4a49-bad9-d3a4c36a4550",
+      "result_id": "a3a048b5-65db-4dd1-b0b4-09f020f2ea9f"
+    },
+    {
+      "claim_id": "215393bb-e168-4315-a47a-dbef7d1f15c1",
+      "result_id": "a3a048b5-65db-4dd1-b0b4-09f020f2ea9f"
+    },
+    {
+      "claim_id": "0fed9d77-f00f-405f-8b7b-ec192b1640ee",
+      "result_id": "a3a048b5-65db-4dd1-b0b4-09f020f2ea9f"
+    },
+    {
+      "claim_id": "73ef6882-852b-44ab-aa56-a6363739f968",
+      "result_id": "6222d784-d750-4ed9-b4c0-17f7990e7708"
+    },
+    {
+      "claim_id": "0ebc54b9-8e75-48d4-9eeb-b3b00a160d6b",
+      "result_id": "6222d784-d750-4ed9-b4c0-17f7990e7708"
+    },
+    {
+      "claim_id": "53dfc60f-e702-432f-acaf-4fe706f5a3bf",
+      "result_id": "6222d784-d750-4ed9-b4c0-17f7990e7708"
+    },
+    {
+      "claim_id": "ab82fd59-b1b0-455d-9a7b-b40f386fb9f4",
+      "result_id": "6222d784-d750-4ed9-b4c0-17f7990e7708"
+    },
+    {
+      "claim_id": "ba1f930e-6f58-4069-a8ff-6d4e8445363b",
+      "result_id": "6222d784-d750-4ed9-b4c0-17f7990e7708"
+    },
+    {
+      "claim_id": "3a6fe971-77b3-4376-a148-b99c3ce7ac2e",
+      "result_id": "6222d784-d750-4ed9-b4c0-17f7990e7708"
+    },
+    {
+      "claim_id": "8a1ee8a7-f211-4cd5-8be0-a7342c30b345",
+      "result_id": "6222d784-d750-4ed9-b4c0-17f7990e7708"
+    },
+    {
+      "claim_id": "50b5323b-4354-412f-83f1-f5805b68a34a",
+      "result_id": "6222d784-d750-4ed9-b4c0-17f7990e7708"
+    },
+    {
+      "claim_id": "5c200cd7-eee1-453d-b658-dbb971734946",
+      "result_id": "b492fd48-670a-4c02-a0e5-5afab1f6c310"
+    }
+  ],
+  "comparisons": []
+}

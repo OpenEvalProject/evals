@@ -1,0 +1,412 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C4"
+    ],
+    "result": "An RNAi screen targeting 948 signaling genes identified 12 validated negative regulators of O-glycosylation, with ERK8 showing the strongest effect (4-25-fold increase in Tn levels depending on experimental conditions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen design is clearly described (C38), with appropriate filtering criteria (C47), validation using individual siRNAs (C53, C54), and reproducibility across replicates (C50, C51). The identification of 12 regulators (C4, C54) and ERK8 as a particularly strong hit (C52) is well-documented with quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "GalNAc-T1 and -T2 are the predominant isoforms in HeLa cells and are required for the Tn increase observed upon ERK8 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by established knowledge (C56) and experimental data showing that co-depletion of GalNAc-T1 and -T2 nearly eliminates Tn levels (C57) and significantly reduces the Tn increase from ERK8 knockdown (C58), with maintained ERK8 knockdown efficiency (C59).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The 12 Tn-regulating genes do not regulate Tn levels by inhibiting O-GalNAc extension, as evidenced by maintained or increased PNA staining (which detects Core 1 structures) upon their depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanism is distinguished using PNA staining as a readout for Core 1 formation. COSMC knockout serves as an appropriate positive control (C63), and the data show that the regulators do not reduce PNA staining (C64, C65), leading to the valid conclusion that they do not inhibit elongation (C66, C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "All 12 Tn-regulating genes control GalNAc-T subcellular localization, causing redistribution from the Golgi to the ER, with most (except PI4KA) affecting GalNAc-T trafficking specifically without broadly disrupting Golgi organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The localization data are quantified using Pearson correlation coefficients (C75) and show consistent ER redistribution for all 12 genes (C75, C76). The specificity is demonstrated by differential effects on GalNAc-T versus MannII-GFP distribution (C79, C81), with PI4KA being the exception causing broader Golgi disruption (C73, C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The 12 Tn-regulating genes form a potential regulatory network at the Golgi level, with several proteins having known Golgi localization or interactions with Golgi-associated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the protein interaction analysis (C82-C101) provides suggestive evidence for a regulatory network, much of this is based on literature mining and speculation (C95, C100, C101). The actual functional connections and network architecture require experimental validation beyond the localization and interaction data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "ERK8 kinase activity is required for negative regulation of O-glycosylation, as demonstrated by rescue experiments showing that wild-type but not kinase-dead ERK8 can reverse the Tn increase in ERK8-depleted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue experiment is well-designed with appropriate controls (C104, C105). The kinase-dead mutant (T175A-Y177F) fails to rescue the phenotype (C105), providing strong evidence that kinase activity is essential (C106). The mutations target the known autophosphorylation sites (C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Pharmacological inhibition of ERK8 with Ro-31-8220 rapidly increases Tn levels (detectable within 1 hour, peaking at ~8-fold by 3.5 hours) without requiring transcription or changes in glycosylation enzyme expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetics are well-documented (C108, C109), and the rapid effect (C110, C111) is supported by experiments showing no requirement for transcription (C113) and no changes in enzyme levels (C114). This provides strong evidence for a direct effect on trafficking (C115).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "ERK8 inhibition leads to increased O-glycosylation in the ER, as demonstrated by increased glycosylation of an ER-specific reporter and metabolic labeling showing hyperglycosylation of multiple proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ER localization of glycosylation is demonstrated using an ER-specific reporter (C116), an ER-localized inhibitor (C117), and metabolic labeling (C118). These complementary approaches provide strong evidence that ERK8 controls ER O-glycosylation (C119).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "GalNAc-T relocalization is rapidly reversible, with Tn levels decreasing with a ~2.5-hour half-life after ERK8 inhibitor washout, suggesting ERK8 provides a continual brake on GalNAc-T retrograde trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The washout experiment is well-executed with clear kinetics (C120, C121). The reversibility (C123) and the interpretation that ERK8 provides a continual brake (C124) are reasonable conclusions from the data, though the mechanism of the brake remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "ERK8 is partially localized at the Golgi and is displaced upon growth factor (PDGF) stimulation or SRC activation, suggesting dynamic regulation of its Golgi localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Golgi localization is demonstrated by immunofluorescence with prolonged permeabilization (C126, C127). The displacement by PDGF (C128-C131) and active SRC (C133-C135) is quantified using correlation coefficients. The conclusion about dynamic localization (C136) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "GalNAc-T relocalization in ERK8-depleted cells requires the COPI trafficking machinery, including GBF1 and Arf proteins (Arf1, -3, -4, -5 but not Arf6), with Arf1-GTP loading activated within 15 minutes of ERK8 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The COPI dependence is demonstrated through multiple approaches: dominant-negative Arf1 (C137), GBF1 inhibitor (C138), co-knockdown experiments (C139, C141), and Arf1-GTP loading assays (C145). The specificity is shown by the lack of effect with Arf6 (C143). The evidence is comprehensive and convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "ERK8 inhibition leads to increased COPI vesicle formation and redistribution, with GalNAc-T1 co-localizing with COPI on vesicular and tubular structures emanating from the Golgi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The COPI redistribution is quantified (C146, C147) and occurs rapidly (C148). The co-localization of GalNAc-T1 with COPI on vesicles and tubules (C149, C150) provides direct visual evidence for GalNAc-T packaging into COPI carriers. The data strongly support the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C7",
+      "C8"
+    ],
+    "result": "ERK8 specifically inhibits GalNAc-T trafficking without affecting KDEL-R trafficking, revealing two separate COPI-dependent retrograde pathways, while SRC activation affects both pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential regulation is demonstrated by multiple lines of evidence: ERK8 depletion affects GalNAc-T but not KDEL-R (C151, C154), while SRC activation affects both (C152, C153). The VSVG experiment provides an additional control (C156). The quantification (C153, C154) and the conclusion about separate pathways (C155, C8) are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C166",
+      "C167",
+      "C169",
+      "C9"
+    ],
+    "result": "ERK8 depletion increases cell migration (~2-fold) in a manner dependent on ER O-glycosylation, as demonstrated by rescue experiments with GalNAc-T co-depletion or ER-localized GalNAc-T inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The migration phenotype is well-documented (C161, C162) with appropriate controls showing the effect is due to migration rather than wound response (C163). The dependence on ER O-glycosylation is convincingly demonstrated by rescue with GalNAc-T co-depletion (C166) and ER-localized inhibitor (C167). The conclusion (C169) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C10"
+    ],
+    "result": "In human breast carcinomas, ERK8 expression is reduced in more than half of tumor cores (18/34 showing \u226550% reduction), while Tn levels are significantly elevated in the majority of samples, with opposing trends suggesting ERK8 loss may partially drive high Tn expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the tissue array data show reduced ERK8 (C174) and elevated Tn (C175) in breast tumors, the lack of direct correlation (C178) weakens the causal link. The suggestion that ERK8 loss drives Tn expression (C177) is speculative and not definitively proven by the correlative data alone. Additional mechanistic validation in tumor samples would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C44"
+    ],
+    "result": "In lung carcinomas, ERK8 expression is markedly reduced (average 80% loss) in all tumor samples, while Tn levels are significantly elevated (>4-fold average) in 86% of samples, with Tn co-localizing with ER markers in tumors but showing Golgi-like localization in normal tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lung tumor data are more consistent than breast, showing clear ERK8 reduction (C179, C180) and Tn elevation (C181, C182) in the majority of samples. The ER localization of Tn in tumors (C183) versus Golgi localization in normal tissue (C184) provides mechanistic insight. However, the lack of sample-to-sample correlation (C187, C188) indicates ERK8 is not the sole determinant of Tn levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C189",
+      "C217",
+      "C218",
+      "C221"
+    ],
+    "result": "ERK8 is frequently downregulated in lung and breast carcinomas, which likely facilitates GalNAc-T relocation to the ER when combined with other perturbations such as SRC activation, though ERK8 levels alone do not strictly control Tn levels due to the complexity of regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C189, C217) appropriately acknowledges the complexity of Tn regulation (C218, C221) and the likely multifactorial nature of GalNAc-T relocalization in cancer. The conclusion is consistent with both the mechanistic studies and the tissue array data showing lack of strict correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C192",
+      "C195",
+      "C197",
+      "C198",
+      "C200",
+      "C226"
+    ],
+    "result": "O-glycosylation initiation is under elaborate regulatory control, with the subcellular localization of GalNAc-Ts serving as a nodal point of control in a complex signaling network involving at least 12 negative regulators and likely additional positive regulators including SRC family kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary conclusion (C226) is well-supported by the screen results (C192, C198), the demonstration that regulators affect localization rather than elongation (C195), and the evidence for network complexity (C197, C200). The conclusion appropriately integrates the major findings of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C201",
+      "C202",
+      "C203",
+      "C42"
+    ],
+    "result": "ERK8 acts at the Golgi level by inhibiting the formation of GalNAc-T-containing COPI vesicles, with other negative regulators likely acting at the same level, making the incorporation of GalNAc-Ts into COPI vesicles the key regulatory point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion (C201, C203) is supported by multiple lines of evidence: Golgi localization (C42), COPI dependence, co-localization of GalNAc-T with COPI vesicles, and the genetic interaction profile of other regulators (C202). The mechanistic model is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C204",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "There exist at least two different types of COPI-dependent Golgi-to-ER retrograde traffic carriers: one for GalNAc-Ts (activated by growth factors/cancer, repressed by ERK8) and one for KDEL-R (activated by cargo traffic, independent of ERK8), with both under SRC control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a major conceptual advance (C204) supported by the differential regulation data (C205, C206) and the SRC experiments (C207). The evidence for pathway separation is strong, though the molecular basis for the specificity remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C209",
+      "C211",
+      "C212",
+      "C227"
+    ],
+    "result": "ER O-glycosylation resulting from GalNAc-T trafficking significantly stimulates cell migration, with this regulation setting the motility potential of cells and being frequently perturbed in breast and lung cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional consequence of ER O-glycosylation on cell migration is well-demonstrated (C211, C212), and the perturbation in cancer is documented (C227). The conclusion integrates the mechanistic and clinical observations effectively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C124"
+    ],
+    "result": "ERK8 functions as a constitutive brake on GalNAc-T relocalization, and loss of ERK8 expression could drive cancer aggressivity through increased cell motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While ERK8 clearly functions as a brake on GalNAc-T relocalization (C11, C124) based on the mechanistic studies, the causal link to cancer aggressivity (C12) is speculative. The correlation with tumor ERK8 loss and the cell migration data are suggestive but do not definitively prove that ERK8 loss drives cancer aggressivity in vivo. In vivo metastasis studies would be needed to support this claim.",
+    "result_type": "MAJOR"
+  }
+]

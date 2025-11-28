@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C107"
+    ],
+    "result": "The majority of imprinted genes show consistent parental bias across all three Arabidopsis strains (Col, Ler, and Cvi). Between 122-145 MEGs and 43-52 PEGs were identified per reciprocal cross, with 28 MEGs and 6 PEGs common to all three crosses. Most genes identified in only one cross lacked sufficient data in other crosses rather than showing true strain-specific imprinting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C30, C34-C38, and C107 collectively demonstrate that most imprinted genes are conserved across strains. The mRNA-seq data from three sets of reciprocal crosses (C28-C30) shows consistent identification of imprinted genes, with the intersection analysis (C34-C35) revealing substantial overlap. The explanation for non-overlapping genes (C36-C38) is data-driven and logical, showing that lack of SNPs or low coverage, rather than true biological differences, explains most discrepancies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C49",
+      "C50",
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C108"
+    ],
+    "result": "Twelve allele-specific imprinted genes were identified (9 PEGs and 3 MEGs), representing approximately 6% of all imprinted genes. Ten of these were associated with coincident embryo-endosperm and strain DMRs, with six occurring at TEs. For HDG3 and AT3G14205, allele-specific imprinting correlates with differential methylation at 5' TEs, where hypomethylated alleles lose imprinting when transmitted through the male parent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C49-C50, C83-C95, and C108 provide strong evidence for allele-specific imprinting. The identification is supported by mRNA-seq data (C49), validated by independent methods (C50), and mechanistically linked to TE methylation differences (C83-C84). The detailed analysis of HDG3 (C86-C91) and AT3G14205 (C92) demonstrates that differential methylation at TEs is required for imprinting, with both methylation and expression data supporting the conclusions. The percentage calculation (C108) is straightforward from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Imprinting status was successfully predicted in additional strains based on methylation variability. HDG3 was not imprinted when hypomethylated strains (Kz_9, Seattle_0) were male parents but remained imprinted with methylated strains (An_1). AT3G14205 showed similar behavior with Seattle_0. This suggests 11% of imprinted genes have potential for variable imprinting based on strain-specific methylation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C101-C106 demonstrate successful prediction and validation of allele-specific imprinting. The experimental validation in additional strains (C101-C102, C104) confirms predictions based on methylation patterns (C103), providing strong evidence for the causal relationship between TE methylation and imprinting. The 11% estimate (C106) is derived from the DMR variability analysis and represents a reasonable extrapolation, though it is acknowledged as a maximum estimate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C133",
+      "C134"
+    ],
+    "result": "There is standing variation in imprinting among recently diverged Arabidopsis genotypes due to intraspecific epiallelic variation. Epiallelic variation and genomic imprinting intersect to produce novel gene expression patterns in seeds, with the phenotypic impact likely most pronounced in the endosperm where DNA methylation changes are programmed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C133-C134 represent the main conclusions of the study, synthesizing evidence from imprinting patterns, DNA methylation, and small RNA data across multiple strains. The conclusion that epiallelic variation creates standing variation in imprinting (C5) is well-supported by the identification of allele-specific imprinted genes and their validation in additional strains. The proposal that phenotypic impacts are most pronounced in endosperm (C133) is a reasonable inference given the programmed demethylation in this tissue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C119"
+    ],
+    "result": "The Cvi strain exhibits global CG hypomethylation, particularly in gene bodies where methylation is 50% lower than Col or Ler. This hypomethylation is not specific to reproductive tissues but is a general property of the strain. CHG and CHH methylation contexts are largely unaffected, suggesting that maintenance methylation is compromised while non-CG methylation pathways operate normally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 and C119 describe a major unexpected finding from the BS-seq data. The global CG hypomethylation in Cvi (C55-C56) is well-documented with quantitative data, confirmed in multiple tissues (C58), and most pronounced in gene bodies (C59). The inference that maintenance methylation is compromised (C63) is logical given that CG methylation is reduced while CHG/CHH are normal (C57). The argument against technical artifacts (C61) is reasonable given the mapping considerations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C82",
+      "C135",
+      "C136"
+    ],
+    "result": "Embryo-endosperm DMRs and strain DMRs were identified genome-wide. Endosperm DNA was consistently less methylated than embryo DNA in all contexts. Strain DMRs were predominantly in genes (12,000-14,000 CG DMRs), while embryo-endosperm DMRs were enriched in TEs and intergenic regions. Overlap between strain and embryo-endosperm DMRs ranged from 12-31%, and there was substantial overlap with previous studies (40-61%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C64-C68, C82, C135-C136 describe the DMR identification and characterization. The global hypomethylation of endosperm (C51) is consistent with previous studies. The DMR numbers and distributions (C64-C67) are derived from systematic analysis with appropriate statistical thresholds. Independent validation (C68) confirms the genome-wide findings. The overlap with previous studies (C135-C136) provides external validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81"
+    ],
+    "result": "PEGs are significantly enriched for CG DMRs (64/103; p=0.0174) and associated TEs (22/29 common PEGs have proximal TEs). MEGs show weaker correlation with DMRs (121/285, not significant) but are enriched for small RNAs. Embryo-endosperm CG DMRs are enriched for small RNAs compared to strain DMRs. MEGs are enriched for paternally-derived small RNAs, suggesting cis-acting silencing of paternal alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C78, C80-C81 describe the relationship between imprinted genes, DMRs, TEs, and small RNAs. The enrichment of PEGs for DMRs (C74) is statistically significant, while the lack of enrichment for MEGs (C73) is appropriately noted. The TE association data (C75-C76) is quantitative and clear. The small RNA enrichment patterns (C70-C72, C77-C78) are supported by the data, though the inference about cis-acting silencing (C81) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C106"
+    ],
+    "result": "Analysis of methylation variability across 140 strains revealed that 69% of embryo-endosperm DMRs are consistently methylated, while 16% are strongly bimodal. Approximately 11% of imprinted genes (27 MEGs and 17 PEGs) are associated with strongly bimodal DMRs, suggesting potential for variable imprinting across the species. Genes like FWA with consistently high methylation are expected to be consistently imprinted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 and C106 describe the population-level methylation variability analysis. The classification of DMRs into categories (C96-C97) is based on systematic analysis of published data from 140 strains. The association of imprinted genes with different DMR classes (C98, C100) is quantitative. The 11% estimate (C106) represents a maximum potential for variable imprinting, which is appropriately qualified. The FWA example (C99) provides a clear contrast case.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "PEGs are enriched for genes encoding SRA-YDG domain proteins (65.6-fold; p=3.3E-6), RNA metabolic process regulators (4.1-fold; p=4.7E-4), transcription regulators (4.1-fold; p=8.5E-4), and DNA binding proteins (2.6-fold; p=2.5E-4). MEGs show only slight enrichment for transcription factors (2.1-fold; p=0.035), particularly MYB and homeodomain types. This pattern is consistent with maize PEGs being enriched for chromatin modifiers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 describe the functional enrichment of imprinted genes. The GO analysis results for PEGs (C42-C45) are statistically significant with appropriate p-values. The summary interpretation (C46) is reasonable. The comparison to maize (C47) provides cross-species validation. The weaker enrichment for MEGs (C48) is appropriately noted and contrasts with the stronger patterns in PEGs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Very few imprinted genes were detected in embryos, consistent with previous studies. Many identified imprinted genes were previously reported. Validation by RT-PCR and CAPs digestion of 29 genes was mostly consistent with mRNA-seq data. Most imprinted genes are expressed at other developmental stages, with highest expression in chalazal endosperm within seeds and some showing high expression in mature pollen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C39-C41 describe validation and expression patterns of imprinted genes. The lack of embryo imprinting (C31) is consistent with prior work. The validation experiments (C33) provide independent confirmation of the mRNA-seq results. The expression analysis (C39-C40) uses published microarray data appropriately. The pollen expression observation (C41) includes appropriate speculation about the vegetative nucleus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Paternal small RNAs were readily detected in seed tissue from all crosses (6-24% of classified reads), contrasting with a previous study. This fraction was comparable to paternal mRNA reads in whole seeds (15-20%), suggesting small RNAs reflect the maternal:paternal genome ratio in each tissue. Reanalysis of published data confirmed the presence of paternal small RNAs, and the current data suggest Arabidopsis and rice are likely similar in parental small RNA composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C124-C128 describe small RNA findings that differ from previous reports. The detection of paternal small RNAs (C79, C124) is data-driven and confirmed by reanalysis of published data (C126). The comparison to mRNA ratios (C125) is speculative but reasonable. The reconciliation with rice data (C127-C128) is appropriate, though the authors acknowledge that endosperm-specific profiles are needed for conclusive evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The largest subunit of Pol IV (NRPD1a) was paternally biased in all crosses at 6 DAP and has a 5' embryo-endosperm DMR associated with small RNAs. Other genes promoting DNA methylation (VIM family) were also primarily paternally expressed. This suggests complex interplay between active DNA demethylation and the small RNA production pathway, with possible changes to maternal chromatin structure affecting RNA-directed DNA methylation efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C132 describe interesting observations about methylation machinery genes. The paternal bias of NRPD1a and VIM genes (C129, C131) is supported by the mRNA-seq data. However, the mechanistic interpretations (C130, C132) are largely speculative. While the observations are intriguing, the claims about 'complex interplay' and chromatin structure effects lack direct experimental support and represent hypotheses rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Cvi produces larger seeds than Col or Ler due to increased and prolonged endosperm and integument growth, with the effect more pronounced when Cvi is pollinated by Col or Ler.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 describe seed size phenotypes. The larger seed size of Cvi (C26) is supported by visual evidence in Figure 1-figure supplement 1 and citation to previous work. The enhanced effect in reciprocal crosses (C27) is also shown in the figure. These observations provide important biological context for the imprinting studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "CHH methylation was not substantially reduced in Cvi x Col endosperm compared to embryo, unlike the typical pattern. Cytologically, Cvi has reduced heterochromatin and dispersed rDNA repeats. Decondensed chromatin might facilitate increased small RNA production, and maternal small RNAs represented a greater fraction when Cvi was the female parent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C121-C123 describe unusual features of Cvi. The CHH methylation observation (C54) is data-driven and represents a deviation from expected patterns. The cytological features (C121) are supported by citations. The connection to small RNA production (C122-C123) is somewhat speculative but supported by the observation of increased maternal small RNA fraction (C123). These findings are interesting but secondary to the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C120"
+    ],
+    "result": "The predictive power for allele-specific imprinting is greater for PEGs than MEGs. For PEGs, the mechanism involves expression of the methylated paternal allele while the hypomethylated maternal allele is silenced by PRC2. MEGs are more diverse and harder to predict. RC/Helitrons are prevalent among DMRs and variably methylated, suggesting imprinting could be highly dynamic at the population scale. Cvi could serve as a model for studying gene body methylation function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118, C120 represent interpretations and implications of the findings. The differential predictability of PEGs vs MEGs (C113, C115) is well-supported by the data. The mechanistic model for PEGs (C114) is supported by the current data and extensive prior work. The observations about Helitrons (C116-C117) are data-driven, though the inference about population-level dynamics (C118) is speculative. The suggestion about Cvi as a model (C120) is reasonable but represents future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The extent of allele-specific imprinting in Arabidopsis (approximately 6%) is consistent with maize (around 12%). Allele-specific imprinting could represent genes recently under TE control or genes imprinted specifically in one strain due to differences in endosperm growth control. Under conflict theory, seed size differences could reflect different optima for imprinting. Allele-specific imprinted genes encode diverse proteins including transcription factors, heat shock proteins, phosphatases, and chromatin proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 provide context and interpretation of the allele-specific imprinting findings. The comparison to maize (C109) is appropriate and shows consistency across species. The speculation about biological significance (C110-C111) is clearly presented as hypothetical. The description of encoded proteins (C112) is factual and provides functional context. These claims appropriately frame the findings but are secondary to the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background claims establishing the biological context of imprinting in plants and animals, including the role of DNA methylation, DME-dependent demethylation, TE variation, RdDM, and parental conflict theory. These claims provide the scientific foundation for the study but do not represent new findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C25 represent established knowledge from the literature, appropriately cited throughout. These claims provide essential background for understanding the study's significance and approach. They are well-supported by citations to prior work and represent accurate summaries of the field. However, they do not constitute new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "Technical details about the scope and quality of the sequencing data: imprinting could be evaluated for 16,646 loci in at least one cross and 8,088 in all three crosses; BS-seq libraries had high conversion rates (\u226599.70%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 describe technical aspects of the data quality and scope. These are straightforward metrics that define the scale of the analysis (C137) and confirm the quality of the bisulfite sequencing (C138). While important for evaluating the reliability of the results, these are methodological details rather than scientific findings.",
+    "result_type": "MINOR"
+  }
+]

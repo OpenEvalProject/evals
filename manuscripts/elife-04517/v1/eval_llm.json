@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "EDGE-tag sequencing and analysis identified 14,798 tags representing 8,089 unique genes, with Random Forests clustering revealing three main groups ('spring', 'winter warm', 'winter cold') and differential expression analysis detecting 2,159 significantly changed tags (14.6%) representing 1,638 unique genes. The separation of warm and cold body temperature samples indicates the BAT transcriptome is dynamic across a torpor bout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 provide comprehensive technical details of the sequencing pipeline, data processing, clustering analysis, and differential expression results. The methods are clearly described with appropriate statistical thresholds (q < 0.05), validation against prior work (91% concordance with Hampton et al. 2013), and multiple complementary analyses (Random Forests, DIANA clustering). The data quality metrics and reproducibility are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Winter-increased transcripts (Clusters 3-6) were enriched for BAT activation functions including lipid metabolism, mitochondria, and TCA cycle. Paradoxically, these transcripts reached highest abundance during torpor (early, late torpor, and/or early arousal) despite near cessation of transcription at low body temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 establish the key paradoxical observation that drives the study. The functional enrichment analysis (C29) is supported by DAVID analysis with appropriate statistical thresholds (enrichment score >1.3). The paradox (C30) is well-established by comparing the observed increases with cited prior knowledge about transcriptional cessation during torpor. This represents a major biological puzzle that the rest of the study addresses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "RPPH1, a Pol III-transcribed RNA that is not typically polyadenylated, showed several 100-fold increase in relative abundance by early arousal (q < 10^-14) and acquired a long poly(A) tail at low body temperature, explaining its presence in the poly(A)-selected sequencing libraries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 provide a critical clue to the mechanism. The statistical significance is extremely strong (q < 10^-14), and the experimental validation by RT-PCR and sequencing (Figure 3B,C) directly demonstrates polyadenylation. The logic is sound: RPPH1 should not be in poly(A)-selected libraries unless it acquired a poly(A) tail, which was experimentally confirmed. This observation motivates the subsequent mechanistic investigations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Class I transcripts (5 validated by RT-qPCR) decreased during torpor with poly(A) and total RNA mirroring EDGE-tag abundance. These transcripts bore long poly(A) tails that shortened during torpor, and most BAT transcripts slowly degrade over two weeks in torpor without replenishment until body temperature recovers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 establish the baseline behavior of most transcripts during torpor. The RT-qPCR validation (C34) provides orthogonal confirmation of the sequencing data with strong correlations (\u03c1 values reported). The poly(A) tail dynamics (C36) are supported by ePAT analysis. The inference about bulk transcript degradation (C37) is reasonable given the data, though it remains an inference. The n=3 biological replicates are adequate for these measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Nine Class II transcripts were stabilized during torpor through two mechanisms: Class IIA (5 transcripts) maintained stable total RNA while increasing polyadenylated fractions with concurrent poly(A) tail lengthening; Class IIB (4 transcripts) showed decreased total RNA but stable polyadenylated fractions. This enhanced stability relative to bulk transcripts leads to their relative increases at low body temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 establish the core mechanistic finding through detailed RT-qPCR validation across multiple RNA fractions (total, short poly(A), long poly(A)). The distinction between Class IIA and IIB is well-supported by the data showing different patterns of total vs. polyadenylated RNA. The correlation analyses with EDGE-tags (Spearman's \u03c1 values with significance levels) validate the sequencing observations. The poly(A) tail length measurements (Figure 4\u2014figure supplement 2C,D) provide direct evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Three PNPLA2 protein isoforms were detected by Western blot with sizes consistent with mouse UniProt predictions. All three appeared to cycle, but only the 48-kD band changed significantly, following the dynamics of the transcript with long poly(A) tail despite no change in overall transcript abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 provide protein-level validation that polyadenylation dynamics affect translation. The Western blot data (Figure 4D-F) shows the 48-kD isoform cycles in parallel with long poly(A) RNA but not total RNA, supporting the functional significance of polyadenylation. However, the sample size (n=3) is modest, and only one protein was examined. The correlation between poly(A) tail length and protein abundance is suggestive but not definitively causal without additional experiments (e.g., blocking polyadenylation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Mathematical modeling demonstrated that a temperature-dependent protective mechanism (degradation set to 3% at body temperature <10\u00b0C) best explains the observed twofold increases in protected transcript abundance. This mechanism was dose-dependent, relatively insensitive to thresholds above 10\u00b0C, and superior to alternative models involving temperature-independent degradation changes or increased transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 provide strong computational support for the proposed mechanism. The mathematical model (detailed in Supplementary file 2) systematically tests alternative hypotheses and shows that only temperature-dependent protection produces results consistent with experimental observations. The model parameters (10\u00b0C threshold, 3% degradation rate) are biologically plausible given Q10 effects. The rejection of alternative mechanisms (C52-C53) strengthens the conclusion. However, the model makes simplifying assumptions about transcript populations and degradation kinetics that may not fully capture biological complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "EXTREME motif discovery identified two significantly enriched C-rich motifs in torpor-increased transcripts. DIANA Cluster 5 (transcripts most clearly increasing during torpor) showed the highest enrichment (59.1% and 66.7% for Motifs 1 and 2), while Cluster 6 (stable elevated transcripts) showed 50.8% enrichment for Motif 2, significantly higher than other clusters and controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 establish sequence-level evidence for a regulatory mechanism. The motif discovery approach is appropriate (EXTREME with E-values <1), and the enrichment patterns correlate well with transcript behavior (highest in Cluster 5, which shows clearest torpor increases). The comparison to control non-significant transcripts (21.1%) provides important context. However, the 3' UTR definition (500 nt downstream of stop codon) is somewhat arbitrary given incomplete genome annotation, which may affect motif discovery sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The enriched C-rich motifs significantly matched poly(C) binding protein motifs reported by Ji et al. (2013). PCBP3 expression increased significantly in winter groups (q = 0.0067) while PCBP4 did not vary, suggesting PCBP3 protects BAT transcripts via binding to 3' UTR C-rich motifs during torpor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 provide a plausible molecular mechanism linking motif enrichment to transcript protection. The TOMTOM motif comparison (C59) establishes similarity to known PCBP binding sites with appropriate statistical significance. The differential expression of PCBP3 (C62, q = 0.0067) correlates with the proposed protective function. However, the mechanistic link (C63) remains inferential\u2014no direct binding assays or functional validation (e.g., PCBP3 knockdown) are provided. The absence of PCBP1/2 detection is noted but not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study proposes a model where key BAT RNAs are selectively stabilized during torpor via a temperature-dependent protective mechanism (e.g., PCBP3 binding) active below 5\u00b0C, while bulk transcripts degrade. At arousal onset, stabilized mRNAs with longest poly(A) tails are translated immediately, followed by further polyadenylation and translation as temperature rises, with transcription resuming and replenishing degraded transcripts during interbout arousal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 synthesize the study's findings into a coherent model (Figure 7). The model is well-supported by the combined evidence from sequencing, RT-qPCR validation, mathematical modeling, and motif analysis. Each component has experimental support, though some aspects remain inferential (e.g., the precise timing and temperature thresholds, the direct role of PCBP3). The model is biologically plausible and consistent with known mechanisms of post-transcriptional regulation, though it requires future validation through functional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The proposed mechanism provides three functional advantages: (1) directing energy-intensive translation to BAT activation proteins during early arousal, (2) avoiding dependence on slow de novo transcription that could delay thermogenesis, and (3) conserving energy through translational silencing via poly(A) shortening rather than complete mRNA degradation and re-synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C101 present functional interpretations of the observed mechanisms. While these interpretations are logical and biologically plausible, they remain speculative without direct experimental evidence. No energy measurements, thermogenesis timing experiments, or comparative analyses with alternative regulatory strategies are provided. The claims represent reasonable hypotheses about adaptive significance but go beyond what the data directly demonstrate. These would require additional experiments (e.g., measuring ATP costs, thermogenesis kinetics, or fitness consequences) to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Dynamic polyadenylation controls translation in many systems, with elongation causing activation and shortening causing silencing/degradation. For PNPLA2 (which catalyzes triacylglycerol hydrolysis), increased translation via poly(A) lengthening in early arousal would ensure immediate free fatty acid generation for thermogenesis, while shortening during interbout arousal would silence translation as metabolic activity declines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 connect the study's findings to established biological principles and provide a specific functional example. The general principles (C64-C65) are well-established with appropriate citations. The PNPLA2 example (C66-C68) is supported by the Western blot data showing the 48-kD isoform cycling with poly(A) dynamics. However, the functional interpretations (C67-C68) about ensuring immediate fatty acid generation and energy conservation remain inferential\u2014no direct measurements of fatty acid levels, thermogenesis rates, or energy expenditure are provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The findings are consistent with prior observations of post-transcriptional regulation in hibernation, mRNA degradation during torpor, global poly(A) tail maintenance/lengthening, and RNP granule formation in BAT nucleoli. The Class II ncRNAs identified are located in nucleoli, suggesting sequestration into RNP granules protects transcripts from bulk degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 appropriately contextualize the findings within prior literature. The consistency with previous observations (C70-C72) is well-documented with citations. The connection to RNP granules (C72-C74) provides a plausible cellular mechanism for transcript protection, though the localization claim (C73) is stated as fact without direct experimental evidence in this study. The inference about RNP granule protection (C74) is reasonable given the prior histological observations but remains somewhat speculative without direct demonstration in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "PCBPs are involved in multiple aspects of post-transcriptional control including mRNA stability, 3' end-processing, polyadenylation, and translational regulation. PCBP3's increased expression during winter heterothermy and contrasting pattern to most other RNA binding proteins (which decreased) is consistent with a role in enhanced mRNA stabilization and polyadenylation during torpor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 establish the biological plausibility of PCBP3 as the protective factor. The known functions of PCBPs (C75-C78) are well-documented with appropriate citations, though these are primarily for PCBP1/2 rather than PCBP3. The PCBP3 expression pattern (C79-C80) is supported by the data (q = 0.0067, Figure 6F) and the contrast with other RBPs strengthens the case. However, the functional assignment to PCBP3 remains inferential without direct binding or functional validation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "PABP1 and TIA-1/R localize to sub-nuclear foci during torpor in ground squirrel liver. PABP1 binds poly(A) tails and influences their length, translation, and stability. PCBPs 1 and 2 interact with PABP1 to prevent deadenylation and maintain mRNA stability. The current findings suggest a mechanistic link to PABP1 observations in other organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 connect the study's findings to complementary observations in other tissues. The prior observations (C81-C83) are appropriately cited. The proposed mechanistic link (C84) is reasonable given the known PCBP-PABP1 interactions, though it remains speculative without direct evidence of such interactions in BAT during torpor. The authors appropriately acknowledge that further research is needed to determine if the protection extends to other tissues and to examine PCBP3's role directly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Despite reports of elevated RBM3 (a cold-induced RNA binding protein) in hibernating organs including BAT, no enrichment of RBM3 recognition motifs was found in the subset of stabilized transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 appropriately address an alternative hypothesis. The prior observations of RBM3 elevation (C85) are properly cited. The negative result (C86) from motif enrichment analysis is clearly stated and helps narrow the mechanistic possibilities. However, the absence of motif enrichment does not definitively exclude RBM3 involvement, as it could act through mechanisms not dependent on sequence motifs or through motifs not captured by the databases used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Varying degradation rates changes steady-state mRNA levels, as observed in fish cold acclimation and cultured mammalian cells. Mathematical modeling demonstrates that transcript-specific degradation variability can cause relative abundance increases. Many smaller fold changes in hibernator datasets likely reflect intrinsic mRNA stability differences rather than specific regulatory mechanisms, but changes >2-fold in ~3.5% of transcripts require specific regulation. Large fold changes (e.g., RPPH1) likely reflect poly(A) tail addition/lengthening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 provide important context for interpreting transcriptome data in hibernation. The general principles (C87-C88) are well-established with citations. The modeling results (C89) support the interpretation. The inferences about fold change thresholds (C90-C92) are reasonable based on the modeling, though the specific cutoffs (~2-fold, ~3.5% of transcripts) are somewhat arbitrary. This analysis provides valuable guidance for interpreting hibernation transcriptome studies but would benefit from more systematic validation across multiple datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Hibernation involves cycles between torpor (1-3 weeks at 2-5% basal metabolic rates, body temperature near ambient) and arousal (rapid rewarming to 37\u00b0C, 12-24 hr duration) over 5-8 months. BAT drives periodic arousal by generating essential heat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C14 establish the biological context for the study. These are well-established facts about hibernation physiology, appropriately cited where needed. The claims accurately describe the torpor-arousal cycle and BAT's role in thermogenesis. This background information is essential for understanding the study's significance but represents established knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "A cohort of transcripts increased during torpor despite transcriptional cessation at low temperatures. This increase occurs through enhanced stabilization with maintenance/extension of long poly(A) tails rather than elevated transcription. Mathematical modeling supports a temperature-sensitive protective mechanism. The stabilized subset was enriched in C-rich motifs and genes required for BAT activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 summarize the study's main findings as stated in the abstract. These claims are well-supported by the detailed results presented in the manuscript, including sequencing data (C3), RT-qPCR validation (C5), mathematical modeling (C6), and motif analysis (C7-C8). The abstract accurately represents the study's conclusions, which are substantiated by the experimental evidence and analyses described in the results section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Transcription and translation effectively cease at low body temperature during hibernation, yet organs maintain integrity and can be quickly reactivated after 2 weeks of torpor. Early rewarming depends exclusively on BAT non-shivering thermogenesis. Low body temperature slows RNA degradation via Q10 effects, but the convergence of reduced transcription and degradation after two weeks to determine steady-state RNA abundance is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 establish the biological puzzle that motivates the study. These claims are supported by appropriate citations to prior work. The statement about transcription/translation cessation (C15) and BAT's role (C17) are well-established. The uncertainty about RNA dynamics (C18) appropriately frames the research question. These claims effectively set up the study's rationale by identifying a gap in understanding.",
+    "result_type": "MINOR"
+  }
+]

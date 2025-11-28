@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "DUX4 expression causes global NMD inhibition, resulting in widespread accumulation of predicted NMD substrates including alternatively spliced isoforms, mis-spliced transcripts, and retained introns. Approximately 13% of predicted NMD substrates increased following DUX4 expression in both immortalized (54-1) and primary (MB135) myoblasts, with more extreme effects in 54-1 cells due to higher DUX4 expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C30 provide converging evidence from multiple experimental approaches (RNA-seq analysis, \u03b2-globin reporter assays) demonstrating profound NMD inhibition. The quantitative data showing ~13% of NMD substrates increased versus ~1.6% decreased (C22-C23) provides strong statistical support. The consistency across multiple cell types (54-1 and MB135) and multiple classes of NMD substrates strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "NMD inhibition by DUX4 is independent of DUX4-induced apoptosis. TP53 knockdown prevented apoptosis but did not prevent DUX4-induced NMD inhibition, demonstrating that the two processes are mechanistically separable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 provide clear experimental evidence using TP53 knockdown as a control to separate apoptosis from NMD inhibition. The data showing that preventing apoptosis does not rescue NMD function (C34) directly addresses a potential confounding variable and strengthens the specificity of the NMD inhibition phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C52",
+      "C74"
+    ],
+    "result": "DUX4 expression causes rapid proteolytic degradation of UPF1 protein via the proteasome, with temporal kinetics closely matching the onset of NMD inhibition. UPF1 protein levels decrease markedly beginning 12-14 hours post-infection, coincident with DUX4 protein detection and increased NMD substrate accumulation, while UPF1 mRNA levels are actually upregulated 2-4 fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C47, C52, and C74 provide strong temporal and mechanistic evidence linking UPF1 degradation to NMD inhibition. The time-course experiments (C41-C46) demonstrate tight temporal coupling between DUX4 expression, UPF1 protein decrease, and NMD substrate accumulation. The mRNA/protein decoupling (C35-C36, C38) and proteasome inhibitor rescue (C50-C51) provide mechanistic support. However, the authors acknowledge they cannot definitively prove causality without directly linking UPF1 degradation to NMD inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "DUX4 triggers proteasome-dependent degradation of UPF1. Treatment with the proteasome inhibitor MG132 restored normal UPF1 levels in DUX4-expressing myoblasts while not affecting UPF1 levels in control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 provide direct experimental evidence using proteasome inhibition. The selective rescue of UPF1 levels in DUX4-expressing cells (C50) versus no effect in control cells (C51) demonstrates specificity. However, the authors note they could not test whether UPF1 restoration rescues NMD function due to proteasome inhibition also blocking translation and NMD (C90-C91), which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C92",
+      "C93"
+    ],
+    "result": "DUX4 mRNA is a substrate for NMD due to a constitutively spliced intron in its 3' UTR located >50 nt downstream of the termination codon. UPF1 knockdown in FSHD myotubes increased DUX4 mRNA levels approximately 4-fold, and chimeric reporter constructs demonstrate that the second intron of the DUX4 3' UTR is important for NMD-mediated degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 and C92-C93 provide multiple lines of evidence: structural analysis showing the NMD-inducing feature (C53, C92-C93), functional validation via UPF1 knockdown in FSHD cells (C55-C58), and mechanistic dissection using chimeric constructs (C60-C62). The differential response of constructs with versus without the second intron (C60-C61) provides strong evidence for the specific role of this element. The authors acknowledge the chimeric constructs show smaller effects than endogenous DUX4, which is appropriately noted as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "NMD is an endogenous suppressor of DUX4 expression that contributes to the characteristic low and variegated expression pattern in FSHD muscle cells. UPF1 knockdown increased the fraction of DUX4+ nuclei from 0.3% to 2.1%, representing an order-of-magnitude increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 connect the molecular mechanism to the disease phenotype. The immunofluorescence data (C64) provides direct evidence that NMD suppression increases not just DUX4 mRNA levels but also the number of DUX4-expressing nuclei. This addresses the biological relevance of the NMD-DUX4 interaction in the disease context. The quantification is clear and the effect size is substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "DUX4 and NMD form a double-negative feedback loop in which DUX4 protein inhibits NMD, thereby stabilizing DUX4 mRNA and enabling positive autoregulation. Ectopic DUX4 expression in FSHD myotubes increased endogenous DUX4 mRNA levels approximately 5-fold, and this effect was partially dependent on the NMD-inducing intron in the DUX4 3' UTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C66-C70 demonstrate the feedback loop through complementary experiments: UPF1 knockdown increases DUX4 (forward direction) and ectopic DUX4 increases endogenous DUX4 (feedback direction). The chimeric construct experiments (C67-C68) provide mechanistic support showing the effect is partially dependent on the NMD-inducing element. The ~5-fold increase in endogenous DUX4 (C66) is substantial and biologically significant. The authors appropriately note that chimeric constructs show more modest effects than endogenous transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C16",
+      "C17"
+    ],
+    "result": "The DUX4-NMD feedback loop provides a mechanistic explanation for the characteristic 'bursts' of DUX4 expression observed in FSHD muscle, where DUX4 is expressed in only a small fraction of nuclei in a variegated pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C16-C17 connect the molecular feedback mechanism to the known expression pattern in FSHD. While C17 is labeled as inference and C8 as inference, the feedback loop mechanism provides a plausible molecular explanation for the burst phenomenon. The variegated expression pattern (C16) is established by citation, and the feedback loop data (previous result) provides mechanistic support for how bursts could be sustained and amplified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The NMD-mediated autoregulation mechanism might contribute to spreading of DUX4 expression between adjacent nuclei in muscle fibers, where DUX4 protein from one nucleus could create a region of NMD inhibition in surrounding nuclei within the syncytial muscle fiber structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C73 are explicitly labeled as speculation (C71, C73) with C72 being established knowledge about muscle fiber structure. While the hypothesis is logical given the syncytial nature of muscle fibers and the demonstrated feedback mechanism, no experimental evidence is provided to test whether DUX4 expression actually spreads between nuclei or whether the proposed mechanism operates in this context. This remains an untested hypothesis requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "UPF1 proteolysis may represent a novel regulatory mechanism for cellular NMD efficiency, potentially mediated by DUX4-induced dysregulation of the ubiquitin-proteasome system including upregulation of E3 ubiquitin ligases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48 and C75-C77 are explicitly labeled as speculation. While C76 provides supporting data about upregulation of ubiquitin-proteasome genes, the mechanistic link between these changes and UPF1 degradation is not established. The authors appropriately note this as speculation and acknowledge that the precise mechanism remains to be elucidated. SMG7 degradation (C48) is observed but its contribution to NMD inhibition is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "DUX4-mediated NMD inhibition may contribute to FSHD pathophysiology through multiple mechanisms including RNA toxicity, production of abnormal proteins, and generation of antigenic peptides that could trigger immune responses. The magnitude of NMD inhibition (~13% of substrates increased) is comparable to genetic ablation of NMD components and may cause profoundly abnormal RNA metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C82 and C87 are explicitly labeled as speculation about disease mechanisms without experimental validation. While C83-C85 provide comparative context showing the magnitude of NMD inhibition is substantial, the actual contribution to disease pathology is not tested. C80 establishes T-cell infiltration in FSHD by citation, but C81-C82 about antigenic peptides are speculative. The comparison to myotonic dystrophy (C86-C87) is analogical reasoning rather than direct evidence. These represent plausible hypotheses requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background information establishing that FSHD is caused by decreased epigenetic repression of the D4Z4 array leading to DUX4 misexpression, and that DUX4 is a transcription factor that activates germline genes and causes apoptosis when misexpressed in skeletal muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C9-C15 represent established background knowledge supported by citations to prior literature. These claims provide necessary context for the study but do not represent novel findings from this work. They are appropriately cited and accurately represent the current understanding of FSHD pathogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Technical and methodological details including characterization of the SRSF3 NMD-inducing cassette exon, UPF1's role in NMD, effects of proteasome inhibition on translation and NMD, NMD recognition rules, cell line characteristics, and protein half-lives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95 represent established knowledge, technical details, and methodological information supported by appropriate citations. These provide necessary context and validation for the experimental approaches but do not constitute novel findings. The information is accurately presented and properly attributed.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C34",
+      "C35"
+    ],
+    "result": "Gene copy number is a key factor controlling RNAi for transcripts from endogenous loci. Transcripts from multi-copy loci form dsRNA more efficiently than transcripts from equivalently expressed single-copy loci, making selectivity towards high-copy DNA an emergent property of a minimal RNAi system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C34-C35 are strongly supported by multiple lines of experimental evidence including genome-wide analysis (C20-C22, Figure 4), direct experimental comparison of multi-copy vs single-copy systems (C24-C25, Figure 5D showing increased RNase-resistant dsRNA), and demonstration that RNAi provides a mechanism to differentiate high- and low-copy regions. The convergence of computational and experimental data provides robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C33"
+    ],
+    "result": "Low-level genome-wide pervasive transcription is sufficient to instigate RNAi. Pervasive transcription of a high-copy locus can mediate effective RNAi responses including trans degradation of target mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31, C33 are supported by the GAL cluster experiments (Figure 8) showing that the RBS\u0394 mutant with minimal pervasive transcription produces siRNAs when amplified to high copy and causes >50% knockdown of GAL10 mRNA expressed from a separate single-copy locus (C32). The experimental design appropriately controls for transcription levels and demonstrates trans-acting RNAi.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C37",
+      "C39"
+    ],
+    "result": "Pervasive transcription is proposed as part of a defense mechanism capable of directing a sequence-independent RNAi response against transposable elements amplifying within the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C36-C37, C39 represent a hypothesis based on the experimental findings but lack direct experimental validation. While the authors demonstrate that pervasive transcription can trigger RNAi at high-copy loci (C4, C31), the specific proposal that this functions as a transposon defense mechanism is speculative (C5 evidence_type includes SPECULATION). Testing this would require demonstrating RNAi-mediated suppression of actively amplifying transposons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "15-30% of yeast ORFs have annotated antisense ncRNAs. These ORFs produce more siRNA in RNAi+ cells but do not show reduced mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are supported by analysis of published datasets (Figure 1B-D, Table 1). The observation that ORFs with antisense ncRNAs produce more siRNA (C7) but lack detectable mRNA knockdown (C8) is consistent across the data and with published literature. This establishes the baseline observation that motivated the subsequent mechanistic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Y' element and rDNA intergenic spacer ncRNAs are efficiently degraded by RNAi, with full-length ncRNAs replaced by degradation products and detectable siRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are directly supported by northern blot data (Figure 2B-F) showing loss of full-length ncRNAs and appearance of degradation products and siRNAs in RNAi+ strains. These high-copy loci serve as positive controls demonstrating that endo-siRNA pairs can form RNAi substrates in this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C18"
+    ],
+    "result": "Endogenous MAL32 mRNA is not down-regulated in RNAi+ cells, but becomes significantly down-regulated (~75%) when expressed from a high-copy plasmid. This represents a genuine RNAi response requiring both Dicer and Argonaute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14, C18 are supported by northern blot analysis (Figure 3B-D), reconstitution experiments (Figure 3\u2014supplement 3), and dsRNA immunoprecipitation with qRT-PCR (Figure 3\u2014supplement 6). The requirement for both Dicer and Argonaute (C14) rules out indirect effects. The convergence of multiple experimental approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C19"
+    ],
+    "result": "GAL4 mRNA is not significantly decreased at the endogenous locus in RNAi+ xrn1\u0394 cells, but amplification on a high-copy plasmid leads to significant degradation (~80% knockdown) by RNAi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16, C19 are supported by northern blot analysis (Figure 3F-H) and dsRNA immunoprecipitation with qRT-PCR (Figure 3\u2014supplement 6). The pattern mirrors MAL32 results, strengthening the general conclusion about copy number dependence. The 80% knockdown measurement is consistent across methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Multi-copy loci produce more siRNA than single-copy loci with equivalent RNA abundance. The 1% of genome with highest siRNA:total RNA ratio is enriched for multi-copy loci, and this ratio correlates with copy number across chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by genome-wide computational analysis (Figure 4B-D) that is robust to different normalization schemes (Figure 4\u2014supplements 2-3) and different copy number thresholds. The siRNA:total RNA ratio analysis (C21-C22) is particularly strong as it requires no copy number normalization, avoiding potential systematic biases. Statistical significance is demonstrated throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "The clustered TRP1 system produced fourfold more siRNA than the dispersed system despite similar RNA levels, demonstrating that close nuclear juxtaposition of transcriptional loci enhances dsRNA formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by northern blot analysis (Figure 6B-C) comparing clustered vs dispersed TRP1 systems. While the experiment is complicated by read-through transcripts (acknowledged in C24), the quantification accounts for this and the fourfold difference in siRNA production with similar RNA levels provides direct evidence for the spatial clustering effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Low abundance sense-antisense ncRNA pairs (SUT176, SUT430) that are barely detectable and not targeted by RNAi at single-copy become highly susceptible to RNAi and produce copious siRNAs when amplified to high copy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by northern blot analysis (Figure 7B-D) showing the dramatic difference between single-copy and high-copy expression. This extends the copy number dependence principle to very low abundance transcripts, strengthening the generality of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C32"
+    ],
+    "result": "The GAL10 locus produces antisense ncRNAs at extremely low levels (one molecule per 14 cells). The RBS\u0394 mutant produces only very low level heterogeneous transcripts, modeling pervasive transcription. High-copy GAL cluster plasmids cause >50% knockdown of GAL10 mRNA from a single-copy locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C32 are supported by northern blot analysis (Figure 8B, 8D) with appropriate controls. The quantification of antisense abundance (C29) is based on published literature. The >50% knockdown (C32) is statistically significant (p<0.01) and demonstrates trans-acting RNAi from pervasive transcription levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "RNAi+ cells contained approximately twofold more high-copy plasmid than controls, which would decrease rather than increase the apparent effect of RNAi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by Southern blot analysis (Figure 3\u2014supplement 5A,B). This control is important as it rules out the trivial explanation that plasmid copy number drops in RNAi+ cells. The observation that copy number actually increases strengthens the conclusions about RNAi-mediated knockdown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The rate of dsRNA formation is proportional to RNA concentration and inversely proportional to the square of reaction volume. Single-copy loci cannot simultaneously transcribe sense and antisense RNA, while multi-copy loci can produce high local concentrations enabling efficient duplex formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 present a mechanistic model based on hybridization kinetics. C40 is supported by basic chemical principles (KNOWLEDGE). C41 is supported by citation (Hobson et al., 2012). C42 is a logical inference from C40-C41. While the model is theoretical, it is consistent with all experimental observations including the clustering effect (C24-C25) and provides a parsimonious explanation for copy number dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Approximately 90% of yeast antisense RNAs are highly unstable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by data in Table 1 showing that 89-92% of antisense ncRNAs overlapping ORFs are unstable (XUTs or CUTs) across different overlap size thresholds. This is consistent with published literature (citations provided).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Dicer is largely cytoplasmic in higher eukaryotes but small quantities of nuclear Dicer have been detected. All systems in this paper that undergo efficient RNAi are clustered (rDNA, telomeres, 2\u00b5 plasmids).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by citations to published literature. C44 additionally draws on data presented in the paper. These observations support the spatial clustering model but are primarily descriptive rather than experimental findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Tf2 retrotransposons in S. pombe and gypsy retrotransposons in Drosophila are clustered. siRNAs in mammalian sperm and oocytes show a pronounced bias towards high-copy sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by citations to published literature. These observations from other organisms are consistent with the authors' model but represent prior work rather than findings from this study. They provide important context for the broader significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Transgenic mice expressing hairpin dsRNA produce minimal siRNAs with no cell death phenotype. However, siRNAs from LINE-1 retrotransposons and high-copy transfected plasmids have been detected in mammalian cells, indicating a basic siRNA response with bias towards high-copy sequences is functional in mammalian somatic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by citations to published literature (Nejepinska et al., 2012a,b; Yang and Kazazian, 2006). These observations suggest the copy number-dependent RNAi mechanism may be conserved in mammals, though this represents interpretation of prior work rather than new experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "S. cerevisiae lacks an endogenous RNAi system, allowing maintenance of Killer virus. The reconstituted RNAi system efficiently degrades exogenous hairpin RNAs and Ty retrotransposon transcripts, but no clear mRNA expression changes are detectable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by citations to published literature (Drinnenberg et al., 2009, 2011). These establish the rationale for using S. cerevisiae as a model system and provide important context, but represent prior work rather than findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Background information on ncRNAs, RNAi evolution and function, and observations about endo-siRNAs in various organisms from published literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C64 represent background information and literature review supported by multiple citations. These establish context and motivation for the study but are not findings from this work. All are appropriately cited to published sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "The ENCODE project found that almost all the human genome is transcribed at some point, but the products are vanishingly rare.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by citations to ENCODE publications. This observation about pervasive transcription in humans provides important context for the authors' hypothesis about the function of pervasive transcription, but represents prior work.",
+    "result_type": "MINOR"
+  }
+]

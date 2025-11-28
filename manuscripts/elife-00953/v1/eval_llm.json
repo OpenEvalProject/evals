@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C31"
+    ],
+    "result": "Erg1 is a substrate of the Doa10 ERAD complex in yeast. Erg1 has a half-life of <120 minutes in wild-type cells, and its degradation is strongly impaired by deletion of Doa10 or any component of the Doa10 complex (Ubc6, Ubc7, Cdc48, Npl4), but not by deletion of Hrd1 complex components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C27-C33 provide converging evidence from SILAC proteomics (steady-state levels), cycloheximide shut-off experiments (degradation kinetics), and genetic specificity (Doa10 vs. Hrd1 branches) that Erg1 is specifically degraded by the Doa10 ERAD pathway. The data are internally consistent and use appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41"
+    ],
+    "result": "Lysine 311 of Erg1 is essential for Doa10-dependent degradation. Mutation of K311 to arginine strongly stabilizes Erg1, while mutations at other lysines (K278, K284, K360) do not affect degradation. The K311R mutant is only slightly further stabilized by doa10\u0394 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 demonstrate through systematic mutagenesis and cycloheximide shut-off experiments that K311 is the critical ubiquitination site for Erg1 degradation. The epistasis analysis (minimal additional stabilization in doa10\u0394 background) confirms K311 acts in the Doa10 pathway. Growth assays show the mutations don't affect Erg1 enzymatic function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Doa10-dependent degradation of Erg1 is regulated by sterol levels, specifically lanosterol. Inhibition of sterol synthesis upstream of lanosterol (zaragozic acid, Ro48-807) stabilizes Erg1, while inhibition downstream causing lanosterol accumulation (fluconazole, erg11 mutation) accelerates Erg1 degradation. This regulation is specific to Erg1 and does not affect other Doa10 substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C60 provide comprehensive pharmacological and genetic evidence that lanosterol levels regulate Erg1 degradation. The use of multiple pathway inhibitors at different steps, combined with appropriate controls (other Doa10 substrates, Doa10 dependence), demonstrates specificity. The logic is internally consistent with the pathway biochemistry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C72"
+    ],
+    "result": "Loss of Doa10 causes accumulation of sterol intermediates (5-fold increase in lanosterol, appearance of ergostadienol) with modest reduction in ergosterol (13%), and increased sterol esters (40%). These changes affect membrane properties, causing mild cold-sensitive growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69, C72 are supported by shotgun lipidomics data showing specific changes in sterol composition in doa10\u0394 cells. The phenotypic consequences (cold sensitivity) are consistent with altered membrane properties. The data establish physiological relevance of Doa10-mediated Erg1 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Sterol esterification (Are1/Are2) and Doa10-dependent Erg1 degradation are parallel, redundant mechanisms preventing toxic sterol intermediate accumulation. The are1\u0394 are2\u0394 doa10\u0394 triple mutant shows dramatic sterol intermediate accumulation (>50% drop in ergosterol) and severe growth defects under membrane stress, which can be phenocopied by expressing non-degradable Erg1(K311R).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C87 demonstrate genetic redundancy through synthetic phenotype analysis. The lipidomics data show additive/synergistic effects on sterol composition, and the phenocopy experiment with K311R confirms Erg1 is the key Doa10 substrate. The specificity is shown by lack of phenotype with hrd1\u0394. This establishes the physiological importance of the pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Erg1 degradation is accelerated in are1\u0394 are2\u0394 cells, likely due to elevated lanosterol levels in this mutant. This accelerated degradation requires K311 and is Doa10-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 show that the two parallel pathways (esterification and degradation) are coordinately regulated by lanosterol levels. The genetic and biochemical data are consistent with the model that lanosterol is the regulatory signal. This demonstrates integration of the two homeostatic mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "In mammalian cells, the Doa10 homologue Teb4 promotes cholesterol-dependent degradation of squalene monooxygenase (SM). Teb4 depletion by siRNA increases SM steady-state levels and impairs cholesterol-stimulated SM degradation. Expression of catalytically inactive Teb4(C9A) also inhibits SM degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C107 demonstrate conservation of the regulatory mechanism in mammals using siRNA knockdown, dominant-negative approaches, and cycloheximide shut-off experiments. The data show Teb4 is required for cholesterol-dependent SM degradation. However, the siRNA knockdown is incomplete (57% reduction), which may explain the partial phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C8",
+      "C9",
+      "C108",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C128",
+      "C129",
+      "C146"
+    ],
+    "result": "A novel, evolutionarily conserved feedback system operates at the sterol-specific step of the mevalonate pathway through Doa10/Teb4-mediated degradation of squalene monooxygenase. This system, together with Hrd1/Gp78-mediated HMGR degradation, allows independent regulation of different mevalonate pathway products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9, C108, C120-C123, C128-C129, C146 synthesize the major findings showing conservation between yeast and mammals. The data demonstrate that two ERAD branches regulate different pathway steps (HMGR vs. squalene monooxygenase), enabling independent control of sterol vs. non-sterol isoprenoid synthesis. This is a major conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The novel feedback system allows independent regulation of different mevalonate pathway products because HMGR acts early (affecting all products) while squalene monooxygenase is sterol-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 correctly describe the pathway logic based on established biochemistry. This explains the functional significance of having two regulatory points. The inference is sound given the pathway structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "High Erg1 levels in doa10\u0394 cells lead to lanosterol accumulation, which is particularly dramatic in are1\u0394 are2\u0394 doa10\u0394 cells despite intact Erg11 (lanosterol demethylase). This suggests Erg11 activity is rate-limiting or regulated, possibly by heme availability or unknown regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C141 present an observation (lanosterol accumulation despite intact Erg11) and propose speculative mechanisms. While the observation is supported by lipidomics data, the mechanistic explanations are explicitly speculative. The citation to Veen et al. 2003 (C141) provides some support but doesn't definitively establish the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Despite mechanistic differences (lanosterol vs. cholesterol regulation, different ubiquitination sites with limited conservation), Doa10/Teb4-mediated degradation of squalene monooxygenase represents a conserved regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C145 acknowledge differences in molecular details while arguing for functional conservation. The data support both the differences (experimental evidence for different sterol signals, sequence analysis for ubiquitination sites) and the conservation (both systems use Doa10/Teb4). This is a balanced interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C147"
+    ],
+    "result": "The regulatory system may operate in plants, as mutations in Arabidopsis Doa10 homologue suppress a hypomorphic squalene monooxygenase allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C147 is explicitly speculative and relies on a single citation to plant work. While suggestive, this is insufficient evidence to conclude the mechanism operates in plants. The genetic suppression could have alternative explanations. This would require direct experimental validation in plants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Lanosterol levels may serve as a unifying regulatory signal for sterol biosynthesis across species, regulating both HMGR (in mammals) and squalene monooxygenase (in yeast). Lanosterol's properties (first sterol, poor esterification substrate) make it suitable for sensing flux into the sterol branch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148-C154 propose an attractive unifying model, but this is partially speculative. While C148-C151 describe established facts and new findings, C152 and C154 are explicitly speculative. The model is plausible and supported by the data presented, but requires additional validation. The claim about lanosterol as a flux sensor is logical but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "Regulated degradation of folded, active proteins might be a more prominent feature of ERAD than previously recognized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C130 is explicitly speculative, extrapolating from the findings about HMGR and squalene monooxygenase to suggest a broader role for ERAD. While the examples support the possibility, this is insufficient to conclude it's a general feature. This is appropriate speculation for a Discussion section but not a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Insigs are not required for degradation of squalene monooxygenase in either yeast or mammals, unlike their role in HMGR degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 are supported by unpublished data (yeast) and citation to Gill et al. 2011 (mammals). While the yeast data are unpublished, the mammalian data are peer-reviewed. This establishes a mechanistic difference between HMGR and squalene monooxygenase regulation, though the unpublished yeast data limit full evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C127",
+      "C131",
+      "C132"
+    ],
+    "result": "Background on sterol homeostasis and ERAD: Sterols are essential membrane components whose levels are regulated by multiple mechanisms. HMGR, a rate-limiting enzyme in the mevalonate pathway, is degraded by the Hrd1/Gp78 ERAD branch in a sterol-dependent manner. Other ERAD branches have not previously been implicated in sterol homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C19, C109-C119, C127, C131-C132 present established background knowledge supported by appropriate citations. These claims accurately represent prior work and set up the novelty of the current findings. This is standard background material.",
+    "result_type": "MINOR"
+  }
+]

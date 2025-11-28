@@ -1,0 +1,1722 @@
+{
+  "submission": {
+    "id": "9e09883a-9deb-437c-9a03-935b3f23cfbc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:42:06.141549Z",
+    "updated_at": "2025-11-28T22:42:06.141549Z"
+  },
+  "content": [
+    {
+      "id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "submission_id": "9e09883a-9deb-437c-9a03-935b3f23cfbc",
+      "content_type": "manuscript",
+      "content_text": "# The Ret receptor regulates sensory neuron dendrite growth and integrin mediated adhesion\n\n## Authors\n\n- Peter Soba<sup>1</sup> \u2020\n- Chun Han<sup>2</sup>\n- Yi Zheng<sup>2</sup>\n- Daniel Perea<sup>5</sup>\n- Irene Miguel-Aliaga<sup>5</sup>\n- Lily Yeh Jan<sup>2</sup>\n- Yuh Nung Jan<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Center for Molecular Neurobiology University Medical Center Hamburg-Eppendorf (UKE) University of Hamburg Hamburg Germany\n2. Department of Physiology Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States\n3. Weill Institute for Cell and Molecular Biology Cornell University Ithaca United States\n4. Department of Biochemistry and Biophysics University of California, San Francisco San Francisco United States\n5. Gut Signalling and Metabolism Group, MRC Clinical Sciences Centre Imperial College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeurons develop highly stereotyped receptive fields by coordinated growth of their dendrites. Although cell surface cues play a major role in this process, few dendrite specific signals have been identified to date. We conducted an in vivo RNAi screen in Drosophila class IV dendritic arborization (C4da) neurons and identified the conserved Ret receptor, known to play a role in axon guidance, as an important regulator of dendrite development. The loss of Ret results in severe dendrite defects due to loss of extracellular matrix adhesion, thus impairing growth within a 2D plane. We provide evidence that Ret interacts with integrins to regulate dendrite adhesion via rac1. In addition, Ret is required for dendrite stability and normal F-actin distribution suggesting it has an essential role in dendrite maintenance. We propose novel functions for Ret as a regulator in dendrite patterning and adhesion distinct from its role in axon guidance.\n\n## Introduction\n\nAccurate functional connectivity and sensory perception require proper development of the neuronal dendritic field, which ultimately determines the (sensory) input a specific neuron can receive and detect. Thus, coordinated dendrite growth and patterning is important for establishing the often complex, but highly stereotyped organization of receptive fields. Two of the organizing principles in dendrite development are self-avoidance and tiling (Grueber and Sagasti, 2010; Jan and Jan, 2010; Zipursky and Sanes, 2010). While self-avoidance describes the phenomenon of recognition and repulsion of isoneuronal dendritic branches, tiling refers to the complete yet non-redundant coverage of a receptive field by neighboring neurons of the same type. Both phenomena have been described in different systems across species including the mouse, zebrafish, medicinal leech, Caenorhabditis elegans, and Drosophila melanogaster.\n\nDendritic patterning by self-avoidance, tiling, and other mechanisms is thought to be mediated by cell surface receptors and cell adhesion molecules (CAMs), which play a pivotal role in integrating environmental and cellular cues into appropriate growth and adhesion responses. Many such receptors, prominently Robo (Spitzweck et al., 2010) and Ephrin receptors (Egea and Klein, 2007), have well understood roles in axon guidance. Although some of these axonal cues including Robo/Slit play a role in dendrite development as well (Dimitrova et al., 2008; Gibson et al., 2014), dendritic surface receptors and their functions are not fully characterized to date. Recent efforts have yielded some progress in this area. Down's syndrome cell adhesion molecule (Dscam) has been shown to regulate dendrite self-avoidance in Drosophila (Hughes et al., 2007; Matthews et al., 2007; Soba et al., 2007) and mouse (Fuerst et al., 2008, 2009). More recently, studies on protocadherins have revealed that they play an important role in dendrite self-avoidance in mammals (Lefebvre et al., 2012). In C. elegans, sax-7/L1-CAM and menorin (mnr-1) form a defined pattern in the surrounding hypodermal tissue to guide PVD sensory neuron dendrite growth via the neuronal receptor dma-1 (Dong et al., 2013; Salzberg et al., 2013). However, given the complexity and stereotypy of dendritic arbors within individual neuronal subtypes, it is important to search for additional signals for directing dendrite growth.\n\nThe Drosophila peripheral nervous system (PNS) has served as an excellent model which has helped to elucidate several molecular mechanisms regulating dendrite development (Grueber and Sagasti, 2010). The larval PNS contains segmentally repeated dendritic arborization (da) neurons which have been classified as class I\u2013IV according to their increasing dendritic complexity (Grueber et al., 2002). All da neuron classes feature highly stereotyped sensory dendrite projections. Moreover, all da neurons exhibit self-avoidance behavior allowing them to develop their individual receptive fields without overlap. It has been demonstrated that all da neuron classes require Dscam for dendrite self-avoidance (Hughes et al., 2007; Matthews et al., 2007; Soba et al., 2007). In addition, the atypical cadherin flamingo (Matsubara et al., 2011) and immunoglobulin super family (IgSF) member turtle (Long et al., 2009) might play a more restricted role in C4da neuron self-avoidance. Netrin and its receptor frazzled have also been shown to act in parallel to Dscam in class III da neurons ensuring their proper dendritic field size and location by providing an attractive growth cue which is counterbalanced by self-avoidance (Matthews and Grueber, 2011). For tiling, no surface receptor has been identified to date. However, the conserved hippo and tricornered kinases, and more recently the torc2 complex, have been implicated in C4da neuron tiling, as the loss of function of these genes results in iso- and heteroneuronal crossing of dendrites (Emoto et al., 2004, 2006; Koike-Kumagai et al., 2009).\n\nRecent work has further shown that dendrite substrate adhesion plays an essential role in patterning. Da neuron dendrites are normally confined to a 2D space through interaction with the epithelial cell layer and the extracellular matrix (ECM) on the basal side of the epidermis (Yamamoto et al., 2006; Han et al., 2012; Kim et al., 2012). 2D growth of da neuron dendrites requires integrins, as loss of the \u03b1-integrin mew (multiple edomatous wing) or \u00df-integrin mys (myospheroid) results in dendrites being freed from the 2D confinement due to detachment from the ECM. Thus, they can avoid dendrites by growing into the epidermis leading to 3D crossing of iso- and hetero-neuronal branches (Han et al., 2012; Kim et al., 2012). Integrins are therefore essential to ensure repulsion-mediated self-avoidance and tiling mechanisms, which restrict growth of dendrites competing for the same territory (Han et al., 2012; Kim et al., 2012). How integrins are recruited to dendrite adhesion sites and whether they cooperate with other cell surface receptors is unknown.\n\nTo identify novel receptors required for generating complex, stereotypical dendritic fields, we performed an in vivo RNAi screen for cell surface molecules in C4da neurons. We identified the Drosophila homolog of Ret (rearranged during transfection) as a patterning receptor of C4da dendrites. Loss of Ret function in C4da neurons severely affects dendrite coverage, dynamics, growth, and adhesion. In particular, dendrite stability and 2D growth are impaired resulting in reduced dendritic field coverage and abnormal 3D dendrite crossing, respectively. These defects can be completely rescued by Ret expression in C4da neurons. We further show that Ret interaction with integrins is needed to mediate C4da dendrite-ECM adhesion, but not dendrite growth. Our data suggest that Ret together with integrins acts through the small GTPase rac1, which is required for dendrite adhesion and 2D growth of C4da neuron dendrites as well. We thus describe a novel role for the Ret receptor in dendrite development and adhesion by direct receptor crosstalk with integrins and its downstream signals.\n\n## Results\n\n### Expression analysis and RNAi-mediated knockdown of Ret reveal its role in C4da neuron dendrite development\n\nTo identify cell surface receptors mediating dendrite development of C4da neurons we used an in vivo RNAi screening approach. We focused on functionally defined classes of proteins containing conserved extracellular domains, including IgSFs and receptor tyrosine kinases (RTKs). To this end we expressed available RNAi transgenes specifically in the embryonic/larval PNS (21-7-Gal4) together with a C4da neuron specific reporter line (ppk-CD4-tdTomato, Han et al., 2012). We also utilized a UAS-Dcr2 transgene to enhance RNAi efficiency (Dietzl et al., 2007). Using this approach, we screened approximately 400 RNAi lines targeting IgSFs and RTKs and found that knockdown of Ret with two independent lines led to strong dendrite defects in C4da neurons (Figure 1A). Knockdown of Ret resulted in abnormal C4da dendrite patterning with crossing of dendritic branches and incomplete coverage of their receptive field. We did not observe defects in other classes of da neurons (Figure 1\u2014figure supplement 1 and data not shown) suggesting that Ret plays a specific role in C4da neuron dendrite morphogenesis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/05491/elife-05491-fig1-v2.jpg)\n\n**Figure 1.:** (A) RetRNAi transgenes together with Dcr2 were driven by Gal421\u20137 and C4da neuron morphology was visualized with a specific fluorescent reporter (ppk-CD4-tdTomato). Confocal live images of control animals (ctl) show wildtype dendrite morphology, while expression of either of two independent Ret-RNAi transgenes led to severely disorganized dendrites with incomplete receptive field coverage. (B) A Gal4 insertion in the Ret genomic locus drives CD8-GFP expression in C4da neurons indicating the presence of Ret. Scale bar 50 \u03bcm. (C\u2013E) Immunohistochemical analysis of Ret expression in third instar larvae of wildtype (C and D) and Ret deficient animals (E). Overlays with GFP expressing C4da neurons (ppk-Gal4 > CD4-tdGFP) show that specific anti-Ret signal could be detected throughout the C4da dendritic arbor (C). Resliced portions (in Z direction) of primary (C\u2032) and terminal (C\u2032\u2032) C4da dendrites show that Ret strongly labels the basal side of dendrites facing the ECM as shown in the schematic drawing. (D) Ret was also present in distal terminal dendrites of the dorsal field of C4da neurons (D\u2032 and D\u2032\u2032, scale bar 20 \u03bcm, 10 \u03bcm for insets). Residual Ret signal was detected in the C4da neuron soma in Ret mutant animals but not in dendrites (E inset). Arrows indicate non-specific antibody signal present in wildtype and Ret mutant samples. Scale bar 20 \u03bcm. (F) Quantitative analysis of Ret immunoreactivity in C4da somata of wildtype and Ret mutant samples showing the signal over background (\u0394F/F, mean \u00b1 SD, n = 5, p < 0.001, Student's two-tailed t-test).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05491/elife-05491-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** RetC168 homozygous third instar larvae display no obvious phenotype in class I da neuron morphology visualized by 2-21-Gal4 > CD8-GFP. Scale bar 50 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05491/elife-05491-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A and B) Immunohistochemical analysis of phospho-Ret in third instar larvae of wildtype (A) and Ret mutant animals (B). Specific anti-phospho-Ret signal could be detected in C4da neuron somata of control but not Ret mutant animals (A and B inset). Arrows indicate non-specific antibody signal at epithelial junctions. Scale bar 25 \u03bcm. (B) Quantitative analysis of phospho-Ret immunoreactivity in C4da somata of wildtype and Ret mutant samples showing signal over background (\u0394F/F, mean \u00b1 SD, n = 3, p < 0.05, Student's two-tailed t-test).\n\nDrosophila Ret encodes a highly conserved receptor tyrosine kinase (RTK) with neuronal expression (Sugaya et al., 1994; Hahn and Bishop, 2001; Kallij\u00e4rvi et al., 2012). In order to validate our RNAi results, we tested the expression of Ret in C4da neurons. A Gal4 enhancer trap line inserted within the 5\u2032-region of the Ret gene showed C4da neuron expression when driving a GFP reporter (UAS-CD8-GFP, Figure 1B). We next performed immunohistochemical analysis of larval filet preparations using Ret specific antibodies. We first used a commercial phospho-Ret antibody which showed a mostly somatic granular signal only in C4da neurons (Figure 1\u2014figure supplement 2A). We tested its specificity with a mutant allele containing a P-element insertion within the 3\u2032UTR region of the Ret gene (RetC168), which in combination with a deficiency covering the Ret locus (Df(Bsc312)) led to a strong reduction of the Ret immunoreactivity in C4da neurons (Figure 1\u2014figure supplement 2A\u2013C). To validate and analyze Ret expression in C4da neurons in more detail, we raised a Ret specific antibody against its intracellular domain (see \u2018Materials and methods\u2019). Interestingly, Ret was detected throughout the dendritic arbor showing almost continuous staining along major dendrites (Figure 1C,C\u2032) and a more granular pattern in terminal dendrites (Figure 1C,C\u2032\u2032). We detected granular Ret signal even in distal terminal dendrites suggesting that is localizing throughout the C4da dendritic arbor (Figure 1D). In addition, the strongest Ret puncta consistently localized to the basal side of dendrites facing the ECM (Figure 1C\u2032,C\u2032\u2032). In Ret mutant animals, only residual immunoreactivity could be detected in C4da neuron somata but not in dendrites (Figure 1E,E\u2032,F) suggesting that the allelic combination used is hypomorphic. Together, these results reveal expression and subtype specific functions of Ret in C4da neurons.\n\n### Loss of Ret function results in dendrite patterning and 3D crossing defects\n\nWe next wanted to corroborate the Ret-RNAi induced dendrite phenotype of C4da neurons using the RetC168 allele. Compared to our RNAi results, we found very similar dendrite defects of C4da neurons in RetC168 mutant animals (Figure 2A,B). These defects were strongly enhanced when we combined RetC168 with a chromosomal deficiency line (Df(2L)Bsc312, Figure 2C), indicating that RetC168 is indeed a hypomorphic allele. Strikingly, Ret mutant C4da neurons displayed incomplete coverage of the receptive field, with dendritic terminals exhibiting patchy distribution, reflecting abnormalities in both shape and growth directionality. In addition, we observed severe isoneuronal dendrite crossing, resulting in extensive overlap of dendritic branches not normally observed in controls (Figure 2B,C, arrows). This phenotype is reminiscent of self-avoidance defects described for Dscam (Matthews et al., 2007; Soba et al., 2007; Hattori et al., 2009) or tiling mutants like trc, hpo, and fry (Emoto et al., 2004, 2006). To understand the nature of the dendritic crossing phenotype in Ret mutant larvae, we performed high resolution confocal live imaging of C4da neurons in vivo. Detailed 3D analysis of dendrite crossing points revealed that virtually all overlapping dendrites were not within the same focal plane, but grew in different planes without directly contacting one another (Figure 2D,D\u2032,D\u2032\u2032). Despite the severe patterning and field coverage defects, Ret mutant C4da neurons did not show a significant reduction in total dendrite length (Figure 2E). They did however display excessive crossings of isoneuronal dendrites outside their normal 2D growth plane (Figure 2F) and significantly reduced dendritic field coverage (see Figure 5B,F). Taken together, our results show that Ret is required for C4da neuron dendrite patterning and field coverage, and Ret loss of function causes out of plane dendritic crossing due to abnormal 3D expansion of dendrites.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/05491/elife-05491-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Confocal live images of C4da neurons in (A) wildtype, (B) RetC168 homozygous, and (C) RetC168/Df(Bsc312) third instar larvae. Loss of Ret function causes abnormal dendrite patterning featuring reduced receptive field coverage and overlapping dendrites (indicated by arrows). Note that the phenotype is more severe in RetC168/Df(Bsc312) than in RetC168 mutant C4da neurons. Scale bar: 50 \u03bcm. (D) 3D reconstruction of a Ret deficient C4da neuron with magnified 3D views of regions with dendrites crossing in different growth planes (D\u2032 and D\u2032\u2032). Scale bar: 25 \u03bcm. (E) Total dendrite length of Ret mutant C4da neurons was not significantly changed compared to wildtype. (F) Out of plane crossing of C4da neuron dendrites in Ret mutants was however highly elevated (mean \u00b1 SD, n = 8; p < 0.001, Student's two-tailed t-test).\n\n### Ret loss of function results in ECM detachment and epithelial enclosure of C4da dendrites\n\nDue to the out of plane crossing observed in Ret mutant C4da neurons, we suspected that dendrites were partially detached from the ECM and embedded within the epithelial cell layer. A similar phenotype has recently been described for the integrins mew and mys, which are required for dendrite-ECM adhesion in da neurons (Han et al., 2012; Kim et al., 2012). In order to visualize C4da neuron dendrites and the ECM, we took advantage of GFP protein traps for the ECM components viking (vkg-GFP) and trol (trol-GFP) (Han et al., 2012). We performed two-color high resolution confocal imaging of C4da neuron dendrites together with the GFP-labeled ECM in vivo. In wildtype, the majority of dendrites were tightly interacting with the ECM as previously reported (Figure 3A, and Han et al., 2012). In Ret mutant neurons however, large stretches of dendrites, in particular terminal arbors, were detached from the ECM and enclosed by the epidermis (Figure 3B). While occasional detachment and out of plane crossing of dendrites could be observed in controls (Figure 3A\u2032), the majority of branches were in tight proximity to the ECM (Figure 3A\u2032\u2032). Ret mutant C4da neurons however displayed frequent detachment and out of plane crossing of dendrites (Figure 3B\u2032,B\u2032\u2032) resulting in approx. 11% ECM-detached dendrites within the dorsal field (Figure 3C). Our results show that Ret is required for robust dendrite-ECM interaction in C4da neurons.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/05491/elife-05491-fig3-v2.jpg)\n\n**Figure 3.:** C4da neuron dendrites along the dorsal midline (ppk-CD4-tdTomato) and the extracellular matrix (trol-GFP or vkg-GFP) were co-visualized in third instar larvae. High resolution two-color confocal z-stacks were analyzed for dendrite-ECM interaction and detached dendrite segments are indicated in magenta as indicated schematically. (A) In wildtype animals, very few dendrite segments were not in contact with the ECM. Magnified regions of (A) and cross-sections illustrate dendrite-ECM proximity with few dendrite segments not contacting the ECM (A\u2032, A\u2032\u2032, ECM in green, dendrites in magenta, see schematic for color code). (B) A strong increase of detached dendrites could be observed in Ret mutant animals, highlighted in the magnified sections displaying severe displacement of dendrites from the ECM (B\u2032 and B\u2032\u2032). Scale bar: 25 \u03bcm. (C) Quantitative analysis of dendrite-ECM interaction in wildtype and Ret mutant C4da neurons revealed a strong increase in dendrite detachment in Ret deficient animals (mean \u00b1 SD, n = 5, p < 0.001, Student's two-tailed t-test). (D\u2013E) Genetic interaction analysis of dendrite-ECM adhesion in (D) RetC168, (E) mewM6, (F) mys1 heterozygous and (G) mewM6/RetC168 (H) mys1/Ret C168 trans-heterozygous third instar larvae. The combination of either integrin mutant with the RetC168 allele showed highly increased loss of dendrite-ECM interaction (G and H) compared to wildtype or the heterozygous alleles alone. Scale bar: 25 \u03bcm. (I) Quantitative analysis of dendrite detachment for the individual genotypes as indicated. mewM6/RetC168 and mys1/RetC168 trans-heterozygotes showed significantly impaired dendrite-ECM adhesion (mean \u00b1 SD, p < 0.05, n = 4, Mann\u2013Whitney U-test).\n\nTo investigate a possible mechanistic link between dendrite-ECM adhesion defects in Ret and integrin mutant C4da neurons, we next conducted genetic interaction experiments. While animals heterozygous for Ret or integrin mutations showed no significant dendrite detachment compared to wildtype, trans-heterozygous combinations of Ret and mys or mew integrin alleles resulted in a significant increase in dendrite crossing defects (not shown) and a substantial loss of dendrite-ECM interaction (Figure 3D\u2013H). Similarly to Ret mutant C4da neurons, about 10% of dendrites were detached from the ECM in RetC168/mewM6 and Ret C168/mys1 trans-heterozygous animals (Figure 3I). These results suggest that Ret and integrins act in the same genetic pathway to promote dendrite\u2013matrix interactions.\n\n### Ret is a cell surface protein and interacts with integrins in dendrites\n\nTo further assess the link between Ret and integrins, we examined the cellular localization and interaction of Ret with Mys and Mew. We first performed immunohistochemical analysis of larval filet preparations co-expressing Ret together with Mys and Mew in C4da neurons, as integrins endogenous to C4da neurons are difficult to detect due to strong expression in the surrounding epithelial cells (Han et al., 2012). To this end, we used a mCherry-tagged Ret transgene which showed a distribution in dendrites similar to endogenous Ret and did not cause obvious phenotypes (Figure 4\u2014figure supplement 1A). We found partial colocalization of Ret and Mew or Mys in punctate structures in C4da neuron dendrites (Figure 4\u2014figure supplements 2, 3). Colocalized punctae of Ret and integrins could readily be detected in both primary and high order dendritic branches of C4da neurons (Figure 4\u2014figure supplements 2A\u2032,A\u2032\u2032, 3A\u2032,A\u2032\u2032). Consistently, transfected S2 cells also displayed colocalization of Ret and Mys, particularly in filopodia-like structures close to the cell surface (Figure 4\u2014figure supplement 1B) suggesting that Ret and integrins may form a molecular complex. We therefore performed co-immunoprecipitation experiments of Ret and Mys/Mew in S2 cells. Indeed, Ret showed strong and specific interaction with Mys, and additional co-expression of Mew robustly increased the Ret-integrin interaction indicating that Ret preferentially interacts with the mature integrin complex (Figure 4\u2014figure supplement 1C).\n\nTo investigate if Ret can also localize to the surface of C4da dendrites and possibly interact with adhesion mediating integrin complexes, we used a tagged Ret transgene carrying an N-terminal pHluorin in addition to the C-terminal mCherry-tag. We performed cell surface immunostainings of Ret using an anti-GFP antibody recognizing the pHluorin-tag together with Mew immunostaining to assess its localization and co-distribution. Ret itself displayed pronounced surface labeling along the entire dendritic tree, strongly indicating that Ret is present at the cell surface of C4da neurons (Figure 4A,B). Overall, the pHluorin signal showed surface Ret labeling throughout the dendritic arbor, while the intracellular mCherry-tag revealed additional punctate structures likely reflecting intracellular vesicles (Figure 4A). Strikingly, Ret showed significant colocalization with Mew in dendrites (Figure 4B). Intensity plots of Ret and Mew signals display a high degree of co-distribution in low and high order dendrites (Figure 4B\u2032,B\u2032\u2032). In particular, many of the high intensity peaks of Mew showed concomitant Ret signal peaks with both tags indicating that Mew and Ret can be indeed colocalized in dendrites and at the surface of C4da neurons. Quantitative colocalization analysis of Ret and integrin signals in C4da neuron somata and dendrites revealed a strong positive correlation based on Pearson coefficient analysis for overexpressed Ret/Mew and Ret/Mys (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/05491/elife-05491-fig4-v2.jpg)\n\n**Figure 4.:** (A) Cell surface immunostaining of pHluorin-Ret-mCherry expressed in C4da neurons using ppk-Gal4. Surface exposed Ret labeled by pHluorin (surface-stained with anti-GFP antibody) showed even labeling of the entire dendritic tree, while the mCherry signal displayed a more granular distribution of cellular Ret. Scale bar: 30 \u03bcm. (B) Cell surface immunostaining of pHluorin-Ret-mCherry co-expressing mys and mew in C4da neurons using ppk-Gal4. Cell surface and cellular Ret were partially co-distributed with Mew in dendrites, as evident from fluorescence intensity plots along (B\u2032) low order and (B\u2032\u2032) terminal dendrites. Scale bar 20 \u03bcm. (C) Quantitative colocalization analysis of Ret and integrins coexpressed in C4da neurons (ppk-Gal4,CD8-GFP > Ret-mCherry,mys,mew). Pearson coefficients were calculated for C4da neuron soma and dendrite regions showing a positive correlation of Ret and integrin signals (see \u2018Materials and methods\u2019 for details, mean \u00b1 SD, n = 5 per genotype). (D and E) Colocalization analysis of endogenous Ret and integrins overexpressed in C4da neurons (ppk-Gal4,CD4-tdGFP > mys,mew). Endogenous Ret signal was colocalized with (D) anti-mys or (E) anti-mew immunoreactivity in C4da neurons and colocalized pixels visualized in false color representations (coloc). (D\u2032 and E\u2032) Stretches of terminal dendrites resliced in Z direction showing partial colocalization of (D\u2032) Ret and mys or (E\u2032) Ret and mew along the basal dendrite facing the ECM as indicated by arrows (see schematic drawing). Line intensity plots of the same dendrite portion show signal distribution of endogenous Ret and integrins together with the colocalized signals (coloc) and the CD4-tdGFP membrane marker. (D\u2032\u2032 and E\u2032\u2032) Line intensity plots for a primary dendrite portion (indicated in D and E). (F) Quantitative colocalization analysis of endogenous Ret and integrins expressed in C4da neurons (ppk-Gal4,CD4-tdGFP > mys,mew). Pearson coefficients calculated for C4da neuron soma and dendrites showing a positive correlation of endogenous Ret and integrin signals (see \u2018Materials and methods\u2019 for details, mean \u00b1 SD, n = 5 per genotype).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05491/elife-05491-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Analysis in third instar larval fillet preparations expressing Ret-mCherry (anti-DsRed immunostaining) in class IV da neurons with ppk-Gal4 > CD8-GFP (anti-GFP). Ret was fairly evenly distributed in low and high order dendrites and the axon (yellow arrow). Scale bar 25 \u03bcm. (B) S2 cells were co-transfected with mys and Ret and imunostained with specific anti-mys (green) and anti-Ret antibodies (magenta). Mys and Ret colocalization in S2 cells is particularly strong in filopodial tips (arrows). Scale bar 1 \u03bcm. (C) S2 cells were transfected with V5-tagged Ret and flag-tagged mys with or without mew co-transfection. Mys-flag was immunoprecipitated and Ret interaction was probed by Western blotting with an anti-V5 antibody. The asterisks indicate secondary antibody cross-reactivity with the IP antibody.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/05491/elife-05491-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Immunohistochemical analysis of C4da neurons co-expressing Ret-mCherry with Mys/Mew using ppk-Gal4 > CD8-GFP. Ret-mCherry signal was colocalized with anti-Mys immunoreactivity in C4da neurons and colocalized pixels visualized in false color representations (coloc). Ret and Mys showed colocalized punctae in dendritic arbors (indicated by arrows). Scale bar 20 \u03bcm. (A\u2032) High magnification view and cross-sections (indicated by yellow rectangle, Z cutting plane indicated by dashed lines) shows 3D colocalization of Ret and Mys in dendrites. (A\u2032\u2032) Line intensity plot along a dendrite portion (indicated by dashed yellow line in A\u2032) shows the signal covariance of Ret and Mys.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/05491/elife-05491-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Immunohistochemical analysis of C4da neurons co-expressing Ret-mCherry with integrins Mys/Mew using ppk-Gal4 > CD8-GFP. Ret and Mew colocalized pixels were visualized in false color representations (coloc) and colocalized punctae are present in dendritic arbors (indicated by arrows). Scale bar 20 \u03bcm. (A\u2032) High magnification view and cross-sections (indicated by yellow rectangle, Z cutting plane indicated by dashed lines) shows 3D colocalization of Ret and Mew in dendrites. (A\u2032\u2032) Line plots of signal intensities along a dendrite portion (indicated by dashed yellow line in A\u2032) show covariance of Ret and Mew localization.\n\nFinally, we assessed colocalization of endogenous Ret with overexpressed integrins. As for Ret overexpression, endogenous Ret displayed a significant degree of co-distribution with Mys and Mew in C4da neurons (Figure 4D,E). Besides pronounced colocalization in the C4da soma, patches of Ret/Mys and Ret/Mew punctae were detected throughout the dendritic arbor in high (Figure 4D\u2032,E\u2032) and low order branches (Figure 4D\u2032\u2032,E\u2032\u2032). Interestingly, the majority of colocalized signals were found facing the basal dendritic surface which contacts the ECM (Figure 4D\u2032,E\u2032, arrows and Video 1) suggesting that Ret and integrins are potentially interacting at adhesion sites. Overall, quantitative colocalization analysis of endogenous Ret and integrins showed positively correlated Pearson coefficients (Figure 4F) suggesting that a subset of Ret and integrins is associated in C4da neurons.\n\n![Video 1.](https://cdn.elifesciences.org/articles/05491/elife-05491-media1.avi.jpg)\n\n**Video 1.:** The video shows a 3-dimensional flight view of Ret-Mew colocalization along the C4da dendritic arbor. Shown are CD4-tdGFP labeling the C4da neuron (green), anti-Ret (magenta), and anti-Mew (cyan) together with the colocalized signal (grayscale) between Ret and Mew.\n\nOur genetic and immunohistochemical data therefore support the molecular interaction between Ret and integrins in C4da dendrites. These findings further suggest that Ret and integrins are forming a common pathway required for normal dendrite growth and ECM adhesion.\n\n### Ret or integrin overexpression in C4da neurons rescues Ret mutant dendrite adhesion defects\n\nAlthough the Ret-RNAi results and its expression pattern (see Figure 1) indicated a cell-autonomous function of Ret, we wanted to test its sufficiency for supporting normal C4da neuron dendrite morphology. Due to the close proximity of the Ret gene to the chromosomal centromere it was not possible to conduct MARCM analysis (mosaic analysis with a repressible cellular marker [Lee and Luo, 1999]). Instead, we performed a rescue experiment by specifically expressing a mCherry-tagged Ret transgene in C4da neurons in the Ret mutant background. Indeed, driving expression of Ret in C4da neurons was sufficient to completely rescue the dendrite growth and crossing phenotype (Figure 5B,B\u2032 and Figure 5C,C\u2032) demonstrating that Ret is cell-autonomously required for C4da dendrite patterning.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/05491/elife-05491-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013D) Maximum projections of C4da neurons visualized with ppk-Gal4 > CD4-tdGFP are shown for (A) wildtype and (B\u2013D) Ret mutant animals. C4da neuron specific expression of (C) UAS-Ret-mCherry or (D) UAS-mys/UAS-mew in Ret mutant larvae rescues dendrite crossing defects. However, only re-expression of Ret fully restores dendritic field coverage to wildtype levels. Scale bar 100 \u03bcm. (A\u2032\u2013D\u2032) Magnified view of the indicated dendrite area for the different genotypes. Dendrite crossing points are indicated by arrowheads. Note that Ret-mCherry or integrin expression in Ret mutant C4da neurons strongly reduced dendrite crossing events. Scale bar 30 \u03bcm. (E) Quantitative analysis of out of plane dendrite crossing for the indicated genotypes. Overexpression of Ret or integrins specifically in C4da neurons of Ret mutant animals fully rescues dendrite crossing defects (p < 0.001, n = 5) (F) Dendrite coverage index (ratio of dendrite field area and segment area (Parrish et al., 2009)) is shown for the indicated genotypes. Defects in receptive field coverage of Ret mutant C4da neurons are rescued by C4da specific expression of the Ret-mCherry transgene, but not integrin overexpression (mean \u00b1 SD, p < 0.001, n = 5, Mann\u2013Whitney U-test).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/05491/elife-05491-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Integrin co-expression suppresses Ret induced photoreceptor degeneration. Overexpression of Ret with GMR-Gal4 caused a rough eye phenotype and pigmentation defects, which can be fully rescued by co-expression of integrins. Co-expression of Ret-mCherry and Mys-GFP could be readily detected by their fluorescent tag confirming the presence of both proteins in the rescued eye. Note that although Ret dependent photoreceptor phenotype was rescued, pigmentation defects observed upon Ret overexpression were not.\n\nWe also asked if overexpression of the \u03b1/\u03b2-integrin complex is able to rescue dendrite-ECM interactions in Ret mutant animals. To this end, we overexpressed Mys and Mew in Ret mutant C4da neurons and assessed dendritic crossing and field coverage. Although the overexpression of integrins did not rescue all aspects of the Ret dendritic growth phenotype (Figure 5D,D\u2032), it completely prevented dendritic out of plane crossing indicating restored interaction with the ECM (Figure 5E). However, unlike Ret itself, integrin overexpression in C4da neurons did not rescue coverage defects of the dendritic field in Ret mutant animals (Figure 5F). Co-overexpression of Mys and Mew alone did not cause dendrite abnormalities (data not shown and Han et al., 2012) indicating that Ret dependent growth involves both integrin dependent and integrin independent pathways. Interestingly, Ret overexpression in the compound eye has been reported to cause photoreceptor degeneration (Read et al., 2005). We thus tested if co-expression of integrins could modulate Ret neurotoxicity in photoreceptor neurons (Figure 5\u2014figure supplement 1). Integrin overexpression itself did not cause any eye phenotype, but was able to completely suppress Ret dependent photoreceptor degeneration. These findings show that, similarly to their interactions in C4da neurons, Ret and integrins genetically and functionally interact in the eye.\n\nOur data provide evidence that Ret and the integrins mys and mew likely operate together in a common pathway to regulate dendrite adhesion to the ECM.\n\n### Rac1 loss of function causes loss of dendrite-ECM adhesion and rac1 genetically interacts with Ret and integrins\n\nIn order to gain insight into the underlying intracellular signals we investigated candidate pathways common to RTK and integrin signaling. Rho family GTPases, particularly rac1, have been implicated in actin dynamics and dendrite morphogenesis of sensory neurons (Lee et al., 2003) and are a common target of both RTK and integrin signaling in many systems (reviewed in Ivaska and Heino, 2011). Using loss of function analysis, we tested whether rac1 is involved in dendrite-ECM adhesion of C4da neurons. Loss of rac1 function led to strong dendrite-ECM detachment and epithelial enclosure of dendrites highly similar to Ret and integrin mutant phenotypes (Figure 6A\u2013C). Overall, in rac1 mutant C4da neurons, 15% of dendrites in the field were detached from the ECM, an effect that was even more pronounced when the gene dosage of the other two rac-like GTPases, rac2, and mtl was also reduced (Figure 6C,D). In both cases, loss of rac1 function also led to many non-contacting crossing defects of dendritic branches (Figure 6B,C arrows, and Figure 6E) indicating that self-avoidance is impaired due to 3D growth of dendrites lacking rac1 function.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/05491/elife-05491-fig6-v2.jpg)\n\n**Figure 6.:** The dorsal field of C4da neurons (ppk-CD4-Tom) and the extracellular matrix (vkg-GFP) were co-visualized in third instar larvae. High resolution two-color confocal z-stacks were analyzed for dendrite-ECM interaction and enclosed dendrite segments are indicated in magenta. Images of (A) Wildtype, (B) rac1J11 homozygous, and (C) rac1J11/rac1J10,rac2\u0394,mtl\u0394 larvae are shown displaying a strong increase of detached dendrites in the rac1 mutant animals. Scale bar 30 \u03bcm. (D and E) Quantitative analysis of dendrite-ECM interaction and dendrite crossing in wildtype and rac1 mutants shows a significant increase in dendrite detachment (C) and Z crossing points (D) in rac1 deficient C4da neurons. (F\u2013L) Genetic interaction analysis of dendrite-ECM adhesion in (F) Ret, (G) mew, (H) mys, (I) rac1 heterozygous and (J) rac1/Ret (K) mew/rac1 (L) mys/rac1 trans-heterozygous third instar larvae. The combination of rac1 mutants with either Ret or integrins showed increased loss of dendrite-ECM interaction illustrated by detached portions of the dendritic tree (in magenta). Scale bar 30 \u03bcm. (M) Quantitative analysis of dendrite detachment from the ECM for the individual genotypes as indicated (mean \u00b1 SD, p < 0.05, n = 4 per genotype, Mann\u2013Whitney U-test).\n\nWe next tested whether Ret and integrins are in the same genetic pathway as rac1 by analyzing heterozygous allelic combinations. Animals heterozygous for Ret, integrins, or rac1 did not show significant changes in C4da neuron dendrite-ECM adhesion compared to wildtype (Figure 6F\u2013I). When combining rac1 alleles with Ret or integrin mutant alleles however, we observed strong enhancement of dendritic loss of ECM adhesion (Figure 6J\u2013L). For both Ret/rac1 and integrin/rac1 heteroallelic combinations, 15\u201320% percent of dendrites lost contact with the ECM indicating strong crosstalk and regulation of Ret and integrins via rac1. These findings strongly suggest that rac1 functions in the same pathway as Ret and integrins in regulating the attachment of dendrites to the ECM.\n\n### Ret mutant C4da neurons display increased dendrite turnover and abnormal F-actin localization\n\nUnlike Ret, neither integrin nor rac1 loss of function resulted in major defects in dendrite growth and coverage of C4da neurons. In addition, integrin overexpression was not able to rescue Ret dependent dendrite coverage defects (see Figure 5). We reasoned that Ret likely exerts additional functions independent of integrins/rac1. We thus investigated the specific effects of Ret on dendrite growth and turnover. To this end, we performed time lapse analysis during late larval development at 72 hr and 96 hr after egg laying (AEL). This allowed us to monitor dendrite dynamics within a 24 hr period. In wildtype C4da neurons, significant turnover of terminal dendrites could be observed (Figure 7A), as reported previously (Parrish et al., 2007). Overall, we detected dendrite growth and terminal dynamics required to maintain overall field coverage and tiling during larval growth. In Ret mutant animals however, C4da neuron dendrites already showed defects at 48 hr AEL (not shown) and 72 hr AEL, as evident from incomplete coverage and abnormal dendrite patterning at that stage (Figure 7B). Increased dendrite crossing was also already apparent. Remarkably, analysis of dendrite turnover between 72 and 96 hr AEL revealed highly increased dynamics of dendritic growth and retraction, with major remodeling of the terminal dendrite arbors. Both growth and retraction of dendrite terminals in Ret mutant C4da neurons were increased two to threefold compared to wildtype (Figure 7C). Overall, the growth/retraction ratio of dendrites was significantly reduced in Ret mutant C4da neurons due to a disproportional increase in retraction compared to growth (Figure 7D). Our findings therefore suggest that Ret function is important for stabilizing growing dendrites.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/05491/elife-05491-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013B) The dorsal dendrite field of the same C4da neurons expressing CD4-tdGFP was imaged at 72 hr and 96 hr AEL in (A) wildtype and (B) Ret mutant animals. Growth and retraction events of dendritic branches were traced and are highlighted in green (growing dendrite) and magenta (retracting dendrite). Scale bar 25 \u03bcm. (C) Quantitative analysis of dendrite growth and retraction events in wildtype and Ret mutant C4da neurons showing the relative change in dendrite length normalized by the total dendrite length of the dorsal field. Note that growth and retraction of dendrites in Ret mutant neurons is strongly increased (mean \u00b1 SD, p < 0.01 for growth, p < 0.05 for retraction, n = 4). (D) Dendrite growth/retraction ratios of Ret deficient C4da neurons show a significant decrease compared to wildtype (mean \u00b1 SD, p < 0.05, n = 4, Student's t-test). (E) F-actin levels in primary branches of Ret mutant C4da neurons are elevated in proximal regions compared to wildtype. Normalized LifeAct-mCherry signal along primary dendrites was plotted against increasing soma distance showing significantly different intensity profiles (shaded area \u00b1 SD, p < 0.05, n = 5). (F\u2013G) Dorsal fields of ddaC neurons expressing CD4-tdGFP and LifeAct-mCherry were imaged at 96\u2013100 hr AEL in (F) wildtype and (G) Ret mutant animals. LifeAct levels normalized to GFP are shown as color coded arbitrary intensities. Ret mutant C4da neuron dendrites display increased proximal, but reduced distal F-actin levels. Abnormal accumulation of F-actin in aberrant, crossing dendrites was frequently seen in Ret mutant but not wildtype neurons (indicated by arrows). Additionally, many terminal branches of Ret loss of function neurons have lower levels (below threshold) of F-actin than wildtype. Scale bar 30 \u03bcm.\n\nWe suspected that the observed increase of dendrite dynamics in Ret mutant C4da neurons was linked to the actin cytoskeleton, as integrins, Rac1 as well as Ret are able to directly or indirectly regulate actin (Fukuda et al., 2002). To investigate this possibility, we used LifeAct imaging (Riedl et al., 2008) to analyze F-actin distribution in dendrites in vivo. Wildtype C4da neurons displayed fairly even distribution of F-actin along major dendrites, while terminal branches typically featured hotspots of increased F-actin levels (Figure 7E,F). In contrast, F-actin levels were significantly increased and unevenly distributed in proximal regions of primary dendrites of Ret mutant neurons (Figure 7E,G). The increase in proximal F-actin leveled out at more distal parts of the primary branches, where it reached similar levels in both genotypes (Figure 7E). The overall F-actin distribution in major branches of Ret mutant C4da neurons was significantly different from wildtype (p < 0.05, n = 5). Strikingly, aberrantly crossing terminal branches had increased levels of F-actin, while other terminals displayed either normal or very low F-actin levels compared to wildtype (Figure 7G, arrows). This was also reflected in the centralization and overall uneven distribution of F-actin along dendritic arbors due to the lack of Ret function (Figure 7E). These data clearly show that Ret is required for the appropriate localization of F-actin in dendrites, which likely contributes to the destabilization of growing branches.\n\nTaken together, our findings show that loss of Ret function impairs dendrite stability and increases dynamic growth and retraction of dendritic branches resulting in the failure of complete receptive field coverage. This is likely linked to the observed abnormal distribution of F-actin in the absence of Ret, which indicates a lack of appropriate growth signals and abnormal activity of the underlying signaling machinery coordinating actin dynamics.\n\n## Discussion\n\nIn this study, we provide evidence that Ret is a regulator of dendrite growth and patterning of C4da neurons. Ret is a conserved receptor tyrosine kinase (RTK) expressed in the nervous system of vertebrates (Pachnis et al., 1993; Schuchardt et al., 1994) and D. melanogaster (Sugaya et al., 1994; Hahn and Bishop, 2001), and has been shown to have a number of important functions in nervous system development and maintenance: it regulates motor neuron axon guidance (Kramer et al., 2006), dopaminergic neuron maintenance and regeneration (Kowsky et al., 2007; Kramer et al., 2007), and mechanoreceptor differentiation and projection to the spinal cord and medulla (Bourane et al., 2009; Luo et al., 2009). Ret signaling is activated by binding to glial cell line derived neurotrophic factor (GDNF) family ligands and their high affinity co-receptors, the GDNF family receptors (GFR\u03b1) (reviewed in Runeberg-Roos and Saarma, 2007). Ret also plays an important role in human development and disease as loss of function mutations of Ret lead to Hirschprung's disease displaying colonic aganglionosis due to defective enteric nervous system development (Amiel et al., 2008). Conversely, Ret gain of function mutations are causal for autosomal dominant MEN2 (multiple endocrine neoplasia type 2) type medullary thyroid carcinoma (Lairmore et al., 1993; Almeida and Hoff, 2012).\n\nPrior to this study, Ret has not been implicated in dendrite development. Here, we show that Ret is required specifically for 2D growth of C4da neurons by regulating integrin dependent dendrite-ECM adhesion. Normally, C4da neuron dendrites are virtually always in contact with the ECM and the basal surface of the epithelium lining the larval cuticle, and thus tightly sandwiched between the two compartments (Yamamoto et al., 2006; Han et al., 2012; Kim et al., 2012). In both integrin and Ret mutants, dendrite-ECM adhesion is impaired. Ret and integrins can co-localize in dendrites and thus likely form a functional complex that could induce and maintain adhesion of dendrites to the ECM. Since Ret loss of function primarily leads to detached terminal dendrite branches, it is tempting to speculate that Ret might be required to recruit integrins to sites of growing dendrites to promote ECM interaction. This is supported by the colocalization of Ret and integrins on the dendrite surface. Their cooperative interaction could thus ensure proper adhesion of growing branches and, conversely, the fidelity of self-avoidance and tiling.\n\nOur results also highlight the importance of integrating different guidance and adhesion cues to achieve precise neuronal patterning. This has so far only been studied in axon guidance in vivo (Dudanova and Klein, 2013). Interestingly, vertebrate Ret has been shown to cooperate with Ephrins to ensure high fidelity axon guidance in motor neurons by mediating attractive EphrinA reverse signaling (Kramer et al., 2006; Bonanomi et al., 2012). Similar mechanisms may conceivably be employed for growing dendrites, which also encounter a multitude of attractive, repulsive, and adhesive cues that have to be properly integrated. Besides pathways acting independently or in a parallel fashion, an emerging view is that receptors exhibit direct crosstalk to integrate incoming signals. So far, only parallel receptor pathways like Dscam and Netrin-Frazzled signaling in class III da neurons (Matthews and Grueber, 2011) or Dscam/integrins (Han et al., 2011; Kim et al., 2012) have been identified co-regulating dendrite morphogenesis. Our data from this study show that the Ret receptor and integrins integrate dendrite adhesion and growth by collaborative interaction of the two cell surface receptors. The molecular and genetic link between Ret and integrins suggests that in this case direct receptor crosstalk plays a major role in their function. How exactly these cell surface receptors cooperate and interact remains to be elucidated. Integrins have been shown to display extensive crosstalk with other signaling receptors, including RTKs (Ivaska and Heino, 2011). Although integrins are involved in adhesion of virtually all cell types, the underlying signaling and recruitment of integrins to sites of adhesion in vivo is complex and not completely understood. It has been suggested that integrin and growth factor receptor crosstalk can occur by concomitant signaling, collaborative activation, or direct activation of associated signaling pathways (Ivaska and Heino, 2011). For example, matrix-bound VEGF can induce complex formation between VEGFR2 and \u03b21-integrin with concomitant targeting of \u03b21-integrin to focal adhesions in endothelial cells (Chen et al., 2010). Our findings of biochemical interaction and colocalization of Ret with the \u03b1/\u03b2-integrins mys and mew in C4da neuron dendrites argue in favor of direct receptor interaction and subsequent activation of a common signaling pathway.\n\nIntegrins and RTKs like Ret do share some of the same intracellular signaling components. These comprise, among others, the MAPK (mitogen-activated protein kinase) pathway, Pi3-Kinase (Pi3K), and Rho family GTPases including Rac1 (Ivaska and Heino, 2011). Previous studies provide evidence for Ret-integrin-Rac1 interplay in vitro showing that Ret can enhance integrin mediated adhesion (Cockburn et al., 2010) and induce Rac1 dependent lamellipodia formation (Fukuda et al., 2002) in cell culture models. In primary chick motor neurons, Rac1 is involved in neurite outgrowth on the integrin substrates laminin and fibronectin (Kuhn et al., 1998). Interestingly, Rac1 has previously been shown to regulate dendrite branching in C4da neurons (Lee et al., 2003; Emoto et al., 2004), however a role in dendrite adhesion in vivo has not been described before. In our study, we show that Rac1 is required for dendrite-ECM adhesion similarly to what has been described for integrins and we genetically link Ret and integrin dependent adhesion with Rac1 function. In Drosophila, MAPK, Src and PI3K can be activated by constitutively active Ret overexpression in the compound eye (Read et al., 2005; Dar et al., 2012). Moreover, novel inhibitors of Ret signaling targeting Raf, Src, and S6-Kinase (S6K) prevent lethality induced by Ret over-activation in a Drosophila multiple endocrine neoplasia (MEN2) model (Dar et al., 2012). Interestingly, S6K has been shown to be involved in dendrite growth but not tiling in C4da neurons (Koike-Kumagai et al., 2009). It remains to be shown if these pathways play a direct role in Ret function in dendrite adhesion and growth.\n\nNotwithstanding important commonalities, Ret function in C4da neurons cannot be fully explained by crosstalk with integrins and rac1. Reduced dendritic field coverage, likely due to the observed increase in dendrite turnover, is only evident in Ret but not in integrin or rac1 mutant C4da neurons. Moreover, increasing integrin expression in a Ret mutant background did not rescue dendrite coverage defects, albeit it prevented dendrite crossing. These findings indicate that Ret has additional functions in dendritic branch growth and stability that require as yet unknown extracellular and intracellular mediators. This is also supported by the aberrant F-actin localization in neurons lacking Ret. Here, Ret dependent intracellular effectors are likely important for F-actin assembly to support directed dendrite growth and stabilization, and their localization and activity might be deregulated in the absence of Ret.\n\nDrosophila Ret is a highly conserved molecule, its cognate vertebrate ligand GDNF, however is not (Airaksinen et al., 2006). In addition, Drosophila Ret can neither bind GDNF nor transduce GDNF signaling, although it has been shown to contain a functional tyrosine kinase domain (Abrescia et al., 2005). In mammals, the GFR\u03b1 co-receptors are essential components of GDNF/Ret signaling (Runeberg-Roos and Saarma, 2007). A Drosophila GFR-like homolog (dGFRL) has recently been characterized and was found to function and interact with the NCAM homolog FasII (Kallij\u00e4rvi et al., 2012). Therefore, it appears that Ret's functional interaction partners in dendrite development differ significantly from the previously described co-factors in other systems. It is interesting to speculate that a yet undiscovered Ret ligand is involved in Ret mediated dendrite growth and branch stabilization, which might have implications for mammalian Ret function as well: due to its role in the maintenance of dopaminergic neurons and motor axon growth in mouse (Kramer et al., 2006, 2007), adhesion related signaling via integrins could well be important during these processes. Moreover, the formation of a dorsal root ganglia derived mechanosensory neurons and their afferent and efferent fiber growth and innervation depends on Ret expression (Bourane et al., 2009; Luo et al., 2009). It will be interesting to investigate the functional interplay of Ret and integrins in central and peripheral target innervation and neurite maintenance in these systems, given the interdependent function of Ret and integrins in sensory dendrite growth as shown in our study.\n\nIn summary, we describe a novel role for the Ret receptor in dendrite branch growth and stability in Drosophila C4da neurons. This role involves cell-autonomous effects of Ret on ECM adhesion, and F-actin localization in these neurons. Moreover, we have linked dendritic adhesion defects attributable to Ret to integrin and rac1 function featuring a novel and possibly conserved mode of action for Ret in dendrite development.\n\n## Materials and methods\n\n### Fly stocks and transgenic constructs\n\nAll fly stocks were maintained at 25\u00b0C and 70% rel. humidity on standard cornmeal/molasses food. The following fly stocks were used: RetC168, RetNP7645, mys1, mewM6, rac1J11, rac1J10rac2\u0394mtl\u0394 (Hakeda-Suzuki et al., 2002; Ng et al., 2002), ppk-CD4-tdTomato, ppk-Gal4, UAS-CD4-tdGFP (Han et al., 2012), trol-GFP, vkg-GFP, UAS-LifeAct-mCherry (kindly provided by J Wildonger).\n\nRetC168 is a Piggyback transposon insertion in the 3\u2032UTR of Ret and likely a hypomorphic allele leading to reduced Ret protein expression. Df(2L)Bsc312 is a deficiency covering the genomic Ret locus.\n\nRet cDNA was amplified from pGMR-Ret (kind gift from Ross Cagan) and cloned into pUAST-attB (Groth et al., 2004). In addition, we generated Ret constructs carrying a C-terminal mCherry-tag or an additional pHluorin-tag inserted downstream of the 5\u2032 signal peptide sequence.\n\nUAS-LifeAct-mCherry, UAS-Ret and UAS-Ret-mCherry, UAS-pHluorin-Ret-mCherry transgenes were generated by embryo injection into vasa-\u03a6C31;attP2 carrying flies according to standard procedures (Groth et al., 2004). The \u03a6C31-integrase was outcrossed and transgenes were combined with the appropriate alleles and markers.\n\n### Anti-Ret antibody generation\n\nAn antibody against the Ret receptor was generated in guinea pigs by co-injecting the synthetic peptides ETKEVSPGWQAEDAV (peptide 1, corresponding to amino acids 1221\u20131235 of the intracellular C terminus) and DIHDQATSYDQSEEEM (peptide 2, corresponding to amino acids 1095\u20131110 of the intracellular C terminus). The resulting antiserum was affinity purified against peptide 1 and used at a 1:1000 dilution. Peptide synthesis, antibody generation, and affinity purification were outsourced to Eurogentec.\n\n### Immunohistochemistry and antibodies\n\nLarval filet preparation and staining was essentially performed as described (Han et al., 2012). The following antibodies were used: rabbit anti-phospho-Ret (1:50, Cell Signaling Technology, Danvers, MA), mouse anti-GFP (1:100, Roche Diagnostics, Mannheim, Germany), mouse anti-mys (1:200, Developmental Studies Hybridoma Bank, (DSHB), Iowa City, IO), mouse anti-mew (1:50, DSHB). Secondary DyLight or Alexa conjugated donkey antibodies were from Jackson ImmunoResearch (Westgrove, PA) and were used at 1:400\u20131:1000.\n\n### Quantitative immunohistochemistry of Ret\n\nLarval filets of wildtype or Ret mutant animals carrying a C4da neuron specific marker (ppk-Gal4 > CD4-tdGFP) were prepared and immunostained as described above with rabbit anti-phospho-Ret (1:50, Cell Signaling Technology) or guinea pig anti-Ret (1:1000) antibodies. We quantified the Ret antibody signal of C4da neuron somata in confocal image stacks and calculated signal over background ratios (\u0394F/F) by subtracting averaged background signal flanking the C4da soma region (F). Statistical significance for the two genotypes was calculated using a two-tailed t-test.\n\n### Cell surface immunostaining of pHluorin-tagged Ret\n\nFor cell surface staining of pHluorin-Ret-mCherry, larval filets were prepared in Ringer solution and incubated with a rabbit anti-GFP antibody (1:50 in Ringer solution, Life Technologies, Carlsbad, CA) for 1 hr on ice. Filets were washed with Ringer solution (3 \u00d7 10 min at 4\u00b0C) and then fixed with 4% Formaldehyde/PBS for 15 min on ice. Subsequent steps including anti-mew and secondary antibody incubation were carried out in the presence of 0.3% Triton X-100 as above.\n\n### Quantitative Ret and integrin colocalization analysis\n\nThird instar larval filet preparations immunostained for Ret and integrins were analyzed by confocal microscopy with high resolution using a high NA oil objective (Zeiss LSM700, 40\u00d7/NA1.3, z step size: 300 nm). Confocal stacks covering the soma and part of the dorsal field of ddaC neurons (xy dimension: 160 \u00d7 160 \u03bcm) were obtained and deconvoluted using a blind deconvolution algorithm with an adaptive PSF (AutoQuant, BitPlane AG, Z\u00fcrich, Switzerland). Colocalization analysis was then performed on the deconvolved confocal stacks in 3D using the Imaris Coloc module (BitPlane AG). The GFP reporter signal (ppk-Gal4 > UAS-CD8-GFP or UAS-CD4-tdGFP) was used to create a mask for the C4da neuron soma and dendrite signal to specifically analyze neuronal integrin and Ret signals. Ret and integrin signals were then automatically thresholded and colocalization was calculated (Pearson coefficients, n = 5 per genotype). Costes randomization was performed for all samples to ensure that the calculated colocalization coefficients between Ret and integrins are non-random (n = 100 iterations, p = 1 for all samples).\n\n### Cell culture, immunocytochemistry and biochemistry\n\nS2 cells were grown at 25\u00b0C in Schneider's Drosophila medium (Life Technologies) with 10%FBS and Glutamine/Pen/Strep. For experiments, cells were seeded in 6 well plates and transfected at 50% density in an adherent state using Transfectene (Qiagen, Venlo, Netherlands). For S2 cell expression, UAS constructs were co-transfected with pActin-Gal4. The following constructs were used: pUAST-Ret-mCherry, pUAST-mys-3xflag-His, pUAST-mew.\n\nFor co-immunoprecipitation experiments, cells were harvested 48 hr after transfection and lysed in 500 \u00b5l lysis buffer (50 mM Tris pH7.4, 150 mM NaCl, 1% Triton X-100) for 20 min on ice. After 10 min/4\u00b0C/10.000\u00d7g centrifugation, supernatants were pre-incubated with mouse IgG Agarose (Sigma\u2013Aldrich, St. Louis, MO) for 30 min at 4\u00b0C, and then incubated with anti-flag M2 agarose beads (Sigma\u2013Aldrich) for 4 hr at 4\u00b0C. After extensive washing with lysis buffer, the samples were denatured and analyzed on Tris-Acetate gels (Life Technologies) and Western blotting against Ret-mCherry (anti-DsRed, 1:1000, BD Clontech, Mountain Viev, CA) and mys (anti-flag M2, 1:10.000, Sigma).\n\nFor immunostaining, S2 cells were allowed to adhere to Concavalin A (Sigma\u2013Aldrich) coated cover slips for 1 hr and subsequently fixed in 4% Paraformaldehyde/PBS solution for 10 min. After washing with PBS, cells were permeabilized with 0.1% Triton X-100 for 10 min and blocked with 5% donkey serum/PBS. Primary antibodies used were: rabbit anti-DsRed (1:500, BD Clontech), mouse anti-mew (1:100, DSHB), mouse anti-mys (1:100, DSHB). Primary antibodies were applied over night at 4\u00b0C in 5% donkey serum/PBS, while secondary donkey antibodies with conjugated DyLight fluorophores (Jackson ImmunoResearch) were subsequently incubated for 1 hr at room temperature. Cells were mounted and imaged by confocal microscopy (Leica SP5 and Olympus FV1000).\n\n### In vivo confocal microscopy and time lapse imaging\n\nC4da neurons of third instar Drosophila larvae (72\u2013100 hr AEL) were imaged alive by confocal microscopy (Leica SP5 or Olympus FV1000), using ppk-CD4-tdTomato or ppk-Gal4, UAS-CD4-tdGFP transgenes (Han et al., 2011). Vkg-GFP or trol-GFP trap lines labeling endogenous vkg or troll proteins with GFP were used to visualize the extracellular matrix. Confocal stacks were taken to image ddaC C4da neuron dendrite fields either with 20\u00d7 (full ddaC field) or 40\u00d7 oil objectives (dorsal ddaC field). For imaging dendrite-ECM interaction, two-color high resolution confocal stacks using a high NA oil objective (Leica or Olympus, 40\u00d7, NA 1.3) were taken with a step size of 300 nm.\n\nFor time lapse imaging of C4da neurons in wildtype and Ret mutant animals, ppk-Gal4, UAS-CD4-tdGFP embryos were collected on grape agar plates for 2 hr and allowed to develop at 25\u00b0C. Two C4da neurons per animal (abdominal segments a3 and a4) were imaged at 72 hr AEL, and the same neurons were imaged again 24 hr later (96 hr AEL). The imaged larvae were allowed to develop to adulthood to ensure that handling and imaging did not interfere with normal development.\n\n### Analysis of dendrite length, crossing, field coverage, and ECM interaction\n\nDendrites of C4da neurons were traced with the Imaris Filament Tracer module (BitPlane AG) using deconvoluted confocal stacks. Total dendritic length was calculated from the traces and Z-crossing points were counted and manually confirmed as non-contacting by visual inspection of the z-stack. The high resolution 3D reconstruction was done in Imaris. Dendritic field coverage was calculated essentially as described (Parrish et al., 2009) by measuring the area covered by dendrites (polygon formed by connecting all dendritic terminals of the field) divided by the total segment area using Fiji/ImageJ (NIH, Bethesda, MD). Statistical significance was calculated by comparison of all genotypes using a Mann\u2013Whitney test (Origin Pro, Origin Lab, Northhampton, MA).\n\nTo quantify net dendrite growth/retraction, confocal Z-projections of the same neuron at 72 and 96 hr AEL were overlayed and adjusted for position and interstitial growth with bUnwarpJ (Fiji, ImageJ). Landmarks marking all major branch points were used to get accurate overlay images. Growing (branch is shorter at 72 hr than 96 hr AEL) and retracting (branch is longer at 72 hr than 96 hr AEL) portions of dendrites were traced and growth/retraction values were normalized to the total length of the unchanged portion of the dendritic tree at 96 hr AEL. Statistical significance was calculated using a Student's two-tailed t-test.\n\nAnalysis of dendrite-ECM interaction was essentially performed as described (Han et al., 2012). Briefly, high resolution confocal stacks were deconvoluted using a blind deconvolution algorithm with an adaptive PSF (AutoQuant, BitPlane AG). Dendrites were traced semi-automatically using the Imaris Filament Tracer module (Bitplane) and thresholded colocalization of the ECM and dendrite signals was performed. Non-contacting and contacting portions of the dendritic tree were traced and verified manually. Percentages of detached dendrites were calculated by the ratios of detached vs total dendrite length. Statistical significance was calculated by comparison of all genotypes using a Mann\u2013Whitney test (Origin Pro).\n\n### Analysis of LifeAct expression and distribution\n\nThe dorsal field of C4da ddaC neurons expressing LifeAct-mCherry with ppk-Gal4 > CD4-tdGFP was imaged with confocal microscopy at the third instar larval stage (96\u2013100 hr AEL). Acquired stacks were then processed with Fiji/ImageJ (NIH) to normalize the LifeAct signal to GFP expression using a previously described procedure with minor adaptations (Kardash et al., 2011). Briefly, we used maximum projections of 2-color stacks and aligned the GFP and LifeAct channels using the TurboReg plugin (ImageJ). The LifeAct signal was thresholded automatically (ImageJ) and normalized to GFP levels using the RatioPlus plugin (ImageJ). For LifeAct quantification along major dendritic arbors, normalized intensity values were obtained by ROI tracing of 2 major branches per sample using the PlotProfile function (ImageJ, n = 5 per genotype). Statistical significance was then calculated by using an Allometric fitting function (y = a \u00d7 xb, Origin Pro) for the intensity profiles of wildtype (average R2 = 0.74) and Ret mutant (average R2 = 0.79) samples and fit comparison of the two datasets (p < 0.05, n = 5 per genotype, Origin Pro).\n",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "b93c3af1-27b6-4ff3-80d4-cf84691ee1bf",
+      "submission_id": "9e09883a-9deb-437c-9a03-935b3f23cfbc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christine E Holt, University of Cambridge , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.05491.017](https://doi.org/10.7554/eLife.05491.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cThe Ret receptor regulates sensory neuron dendrite growth and integrin mediated adhesion\u201d for consideration at eLife. Your article has been favorably evaluated by K VijayRaghavan (Senior editor) and two reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewer discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe manuscript provides evidence that the Ret receptor is involved in controlling three aspects of dendrite growth: self-avoidance, ECM adhesion and field coverage. Ret is identified from an RNAi screen designed to search for receptors that regulate dendrite morphogenesis in cIVda neurons in Drosophila. Ret mutants exhibit increased dendritic crossovers, detachment from the ECM and reduced field coverage. Ret mutants also show increased growth dynamics and F-actin in dendrites. Evidence is presented to show that Ret associates with integrin and that rac1 mediates downstream signalling. Integrin expression rescues the ECM detachment and the self-avoidance phenotypes but not the dendritic field coverage phenotype. The authors conclude that Ret is a novel receptor in the control of dendrite morphogenesis via integrin-dependent and -independent functions.\n\nThe reviewers found the finding that Ret is involved in multiple aspects of dendrite growth interesting and novel. The genetic evidence implicating Ret is very compelling, as is the genetic evidence linking Ret with integrin and rac1 signaling. Some of the expression and colocalization data are less convincing (see specific comments below) and the reviewers called for some further quantitative analysis.\n\nSpecific comments: 1) In Figure 1D, the Ret mutant image appears to show positive granular labeling yet the text states that the Ret immunostaining is lost in the mutant. Although the signal appears to be in smaller granules than the WT, it is not entirely convincing that there is a significant difference between Figure 1C and D. It would be valuable to include a quantitative analysis of the signal in the WT and mutant.\n\n2) In the subsection headed \u201cRet is a cell surface protein and interacts with integrins in dendrites\u201d, the authors state that \u201cwe could not detect endogenous Ret in higher order dendrites due to limited antibody sensitivity and/or Ret expression levels\u201d, so expression of a transgene, mCherry-Ret, was used to examine the cellular localization of Ret in dendrites and its colocalization with integrin. This is the weakest part of the manuscript. First, in Figure 4, the Ret-mCherry signal is abundant all along the entire dendrite and, therefore, it is bound to show some degree of 'colocalization' with any other molecule that is expressed in the dendrite at the level of resolution and analysis used. Second, the colocalization intensity plots appear to show only one small selected section of a single dendrite. This type of analysis is not very meaningful as it presents n=1 for each condition, is prone to bias (how was each particular section chosen?) and does not provide statistical data over many randomly chosen areas. A more rigorous level of quantitation that provides unbiased analysis over multiple sections of dendrites, giving the Pearson's coefficient values would strengthen the data.\n\n3) The endogenous Ret staining seems fairly robust for the soma and proximal dendrite (Figure 1C). The authors could at least confirm Ret-integrin colocalization in the proximal dendrite/soma.\n\n4) Related to the failure to detect endogenous Ret signal in higher order dendrites, can the authors exclude the possibility that Ret is not present here and that the dendritic phenotypes in the Ret mutant arise from loss of Ret function in the soma, rather than in the dendrites?\n\n5) How do the authors explain the phenotype? It appears that only late developing, higher order branches are affected by mutations in Ret and its interactions with integrin subunits. Is there a temporal window of action that limits defects to these, or are there other aspects that need investigating?\n",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "37236988-25c0-439b-bf62-d1756de388f3",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C1",
+      "claim": "An in vivo RNAi screen in Drosophila class IV dendritic arborization (C4da) neurons identified the conserved Ret receptor as an important regulator of dendrite development.",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted an in vivo RNAi screen in Drosophila class IV dendritic arborization (C4da) neurons and identified the conserved Ret receptor, known to play a role in axon guidance, as an important regulator of dendrite development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental approach described in the abstract and detailed in the results section showing RNAi screening methodology and identification of Ret.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "987d453b-345a-4ea4-9446-aac11e90e30d",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C2",
+      "claim": "Loss of Ret results in severe dendrite defects due to loss of extracellular matrix adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of Ret results in severe dendrite defects due to loss of extracellular matrix adhesion, thus impairing growth within a 2D plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing dendrite-ECM detachment in Ret mutants as described in the results and shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "37da9828-f546-4435-ace6-1d9dac36ba60",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C3",
+      "claim": "Ret interacts with integrins to regulate dendrite adhesion via rac1.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide evidence that Ret interacts with integrins to regulate dendrite adhesion via rac1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation experiments, genetic interaction studies, and colocalization data presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "89f30a59-b02c-4292-a429-ba49fec03a72",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C4",
+      "claim": "Ret is required for dendrite stability and normal F-actin distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Ret is required for dendrite stability and normal F-actin distribution suggesting it has an essential role in dendrite maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by time-lapse imaging data showing increased dendrite turnover and LifeAct imaging showing abnormal F-actin distribution in Ret mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "995532d4-091b-4faf-ab3b-3adf8d1b1e1f",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C5",
+      "claim": "Knockdown of Ret with two independent RNAi lines led to strong dendrite defects in C4da neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we screened approximately 400 RNAi lines targeting IgSFs and RTKs and found that knockdown of Ret with two independent lines led to strong dendrite defects in C4da neurons (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from RNAi screening and visual evidence in Figure 1A showing dendrite morphology defects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "bcaf3de5-0f18-4fd4-8dd7-f4fbfbf243e0",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C6",
+      "claim": "Ret knockdown resulted in abnormal C4da dendrite patterning with crossing of dendritic branches and incomplete coverage of their receptive field.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Ret resulted in abnormal C4da dendrite patterning with crossing of dendritic branches and incomplete coverage of their receptive field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by confocal imaging data and quantitative analysis of dendrite morphology in Ret RNAi animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "f28d37bd-a318-4152-a848-b911a5969dc9",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C7",
+      "claim": "Ret does not cause defects in other classes of da neurons besides C4da neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe defects in other classes of da neurons (Figure 1\u2014figure supplement 1 and data not shown) suggesting that Ret plays a specific role in C4da neuron dendrite morphogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observation of class I da neurons in Ret mutants showing no obvious phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "0e9f1ea6-adc4-454e-95de-fee862684c04",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C8",
+      "claim": "Drosophila Ret encodes a highly conserved receptor tyrosine kinase (RTK) with neuronal expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila Ret encodes a highly conserved receptor tyrosine kinase (RTK) with neuronal expression (Sugaya et al., 1994; Hahn and Bishop, 2001; Kallij\u00e4rvi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature characterizing Drosophila Ret.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "ccb45814-e30a-4f3a-8c3c-ca4bac5cc47e",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C9",
+      "claim": "A Gal4 enhancer trap line inserted within the 5\u2032-region of the Ret gene showed C4da neuron expression.",
+      "claim_type": "EXPLICIT",
+      "source": "A Gal4 enhancer trap line inserted within the 5\u2032-region of the Ret gene showed C4da neuron expression when driving a GFP reporter (UAS-CD8-GFP, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by expression analysis using a Gal4 enhancer trap line and visualization with GFP reporter as shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "48187846-6bae-4725-ba21-41109eaa9aa7",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C10",
+      "claim": "Ret was detected throughout the dendritic arbor showing almost continuous staining along major dendrites and a more granular pattern in terminal dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Ret was detected throughout the dendritic arbor showing almost continuous staining along major dendrites (Figure 1C,C\u2032) and a more granular pattern in terminal dendrites (Figure 1C,C\u2032\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemical analysis using Ret-specific antibodies as shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "54cf5954-0cde-4002-82dd-a7eec54be58d",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C11",
+      "claim": "The strongest Ret puncta consistently localized to the basal side of dendrites facing the ECM.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the strongest Ret puncta consistently localized to the basal side of dendrites facing the ECM (Figure 1C\u2032,C\u2032\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemical analysis with Z-plane reslicing showing Ret localization as shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "9007a647-3469-446f-baa6-dbf5047b84da",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C12",
+      "claim": "In Ret mutant animals, only residual immunoreactivity could be detected in C4da neuron somata but not in dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "In Ret mutant animals, only residual immunoreactivity could be detected in C4da neuron somata but not in dendrites (Figure 1E,E\u2032,F) suggesting that the allelic combination used is hypomorphic.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemical analysis and quantification of Ret signal in mutant animals as shown in Figure 1E and 1F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "a99dd26b-9524-4d2e-b50f-280b7553fa3d",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C13",
+      "claim": "RetC168 mutant animals showed very similar dendrite defects of C4da neurons compared to RNAi results.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to our RNAi results, we found very similar dendrite defects of C4da neurons in RetC168 mutant animals (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal imaging comparing RNAi and genetic mutant phenotypes as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "662c8801-a7aa-4f87-91b7-7724c2a609f9",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C14",
+      "claim": "Dendrite defects in RetC168 mutants were strongly enhanced when combined with a chromosomal deficiency line.",
+      "claim_type": "EXPLICIT",
+      "source": "These defects were strongly enhanced when we combined RetC168 with a chromosomal deficiency line (Df(2L)Bsc312, Figure 2C), indicating that RetC168 is indeed a hypomorphic allele.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by genetic analysis comparing RetC168 homozygotes with RetC168/Df trans-heterozygotes as shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "098bf0e3-6aa6-40e0-8af1-7a3db5d946ae",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C15",
+      "claim": "Ret mutant C4da neurons displayed incomplete coverage of the receptive field, with dendritic terminals exhibiting patchy distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, Ret mutant C4da neurons displayed incomplete coverage of the receptive field, with dendritic terminals exhibiting patchy distribution, reflecting abnormalities in both shape and growth directionality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by confocal imaging and quantitative analysis of dendritic field coverage in Ret mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "d0ec85f4-18ff-4bab-973e-67c4c014e8f5",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C16",
+      "claim": "Ret mutant C4da neurons displayed severe isoneuronal dendrite crossing, resulting in extensive overlap of dendritic branches.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observed severe isoneuronal dendrite crossing, resulting in extensive overlap of dendritic branches not normally observed in controls (Figure 2B,C, arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal imaging showing dendrite crossing in Ret mutants as indicated in Figure 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "dfecd5e6-0ac3-4b52-80a6-2711c91f6229",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C17",
+      "claim": "Virtually all overlapping dendrites in Ret mutant larvae were not within the same focal plane, but grew in different planes without directly contacting one another.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed 3D analysis of dendrite crossing points revealed that virtually all overlapping dendrites were not within the same focal plane, but grew in different planes without directly contacting one another (Figure 2D,D\u2032,D\u2032\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by high resolution 3D confocal imaging analysis as shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "8e5f04ee-c99b-4bdf-8c46-47cfa289f367",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C18",
+      "claim": "Ret mutant C4da neurons did not show a significant reduction in total dendrite length.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the severe patterning and field coverage defects, Ret mutant C4da neurons did not show a significant reduction in total dendrite length (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of total dendrite length as shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "1ea9b195-a51d-4312-9c03-53df2d326ab2",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C19",
+      "claim": "Ret mutant C4da neurons displayed excessive crossings of isoneuronal dendrites outside their normal 2D growth plane.",
+      "claim_type": "EXPLICIT",
+      "source": "They did however display excessive crossings of isoneuronal dendrites outside their normal 2D growth plane (Figure 2F) and significantly reduced dendritic field coverage (see Figure 5B,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of out-of-plane crossing events as shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "3d10be36-6fda-4b8e-94b1-c247c3aba85a",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C20",
+      "claim": "In Ret mutant neurons, large stretches of dendrites, in particular terminal arbors, were detached from the ECM and enclosed by the epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "In Ret mutant neurons however, large stretches of dendrites, in particular terminal arbors, were detached from the ECM and enclosed by the epidermis (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by high resolution confocal imaging of dendrites and ECM markers as shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "058ad299-d1f7-4686-a6a7-87ea730845f8",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C21",
+      "claim": "Approximately 11% of dendrites were detached from the ECM in Ret mutant C4da neurons within the dorsal field.",
+      "claim_type": "EXPLICIT",
+      "source": "Ret mutant C4da neurons however displayed frequent detachment and out of plane crossing of dendrites (Figure 3B\u2032,B\u2032\u2032) resulting in approx. 11% ECM-detached dendrites within the dorsal field (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of dendrite-ECM interaction as shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "eed16ab5-d42b-494f-8e09-9b1cf27ee5bd",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C22",
+      "claim": "Trans-heterozygous combinations of Ret and mys or mew integrin alleles resulted in a significant increase in dendrite crossing defects and substantial loss of dendrite-ECM interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "While animals heterozygous for Ret or integrin mutations showed no significant dendrite detachment compared to wildtype, trans-heterozygous combinations of Ret and mys or mew integrin alleles resulted in a significant increase in dendrite crossing defects (not shown) and a substantial loss of dendrite-ECM interaction (Figure 3D\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by genetic interaction experiments and quantitative analysis as shown in Figure 3D-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "27e82c05-fa5b-416d-a805-968dfba21938",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C23",
+      "claim": "About 10% of dendrites were detached from the ECM in RetC168/mewM6 and Ret C168/mys1 trans-heterozygous animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to Ret mutant C4da neurons, about 10% of dendrites were detached from the ECM in RetC168/mewM6 and Ret C168/mys1 trans-heterozygous animals (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of dendrite-ECM interaction in trans-heterozygous animals as shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "11e77a75-8051-45fe-bf7a-2cd8761af36e",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C24",
+      "claim": "Ret and integrins act in the same genetic pathway to promote dendrite\u2013matrix interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Ret and integrins act in the same genetic pathway to promote dendrite\u2013matrix interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from genetic interaction experiments showing enhancement of dendrite-ECM detachment phenotypes in trans-heterozygous combinations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "70da9b02-0b6f-4944-a3b3-7bf70a1fc43b",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C25",
+      "claim": "Ret showed partial colocalization with Mew or Mys in punctate structures in C4da neuron dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "We found partial colocalization of Ret and Mew or Mys in punctate structures in C4da neuron dendrites (Figure 4\u2014figure supplements 2, 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemical analysis of co-expressed Ret and integrins as shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "696db987-6313-43a1-9c19-b94f7610694e",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C26",
+      "claim": "Transfected S2 cells displayed colocalization of Ret and Mys, particularly in filopodia-like structures close to the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, transfected S2 cells also displayed colocalization of Ret and Mys, particularly in filopodia-like structures close to the cell surface (Figure 4\u2014figure supplement 1B) suggesting that Ret and integrins may form a molecular complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunocytochemistry in S2 cells as shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "588d4a06-3bd7-43ee-a7c4-d818e5cfe661",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C27",
+      "claim": "Ret showed strong and specific interaction with Mys in co-immunoprecipitation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Ret showed strong and specific interaction with Mys, and additional co-expression of Mew robustly increased the Ret-integrin interaction indicating that Ret preferentially interacts with the mature integrin complex (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-immunoprecipitation experiments in S2 cells as shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "8241e0f3-7456-4d02-ad0f-c11a9edb7f43",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C28",
+      "claim": "Ret displayed pronounced surface labeling along the entire dendritic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Ret itself displayed pronounced surface labeling along the entire dendritic tree, strongly indicating that Ret is present at the cell surface of C4da neurons (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell surface immunostaining of pHluorin-tagged Ret as shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "6e1b930c-abb2-4efa-83ae-7f81a72f420c",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C29",
+      "claim": "Ret showed significant colocalization with Mew in dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, Ret showed significant colocalization with Mew in dendrites (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell surface immunostaining and colocalization analysis as shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "a6698e2a-56e7-49d1-8e9b-8381e929b815",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C30",
+      "claim": "Many of the high intensity peaks of Mew showed concomitant Ret signal peaks indicating that Mew and Ret can be colocalized in dendrites and at the surface of C4da neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, many of the high intensity peaks of Mew showed concomitant Ret signal peaks with both tags indicating that Mew and Ret can be indeed colocalized in dendrites and at the surface of C4da neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by intensity plot analysis of Ret and Mew signals along dendrites as shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "06250de1-66e4-4783-bbed-238c936dde0a",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C31",
+      "claim": "Quantitative colocalization analysis of Ret and integrin signals in C4da neuron somata and dendrites revealed a strong positive correlation based on Pearson coefficient analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative colocalization analysis of Ret and integrin signals in C4da neuron somata and dendrites revealed a strong positive correlation based on Pearson coefficient analysis for overexpressed Ret/Mew and Ret/Mys (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative colocalization analysis as shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "9a900ee1-fe65-49ac-b33e-e85283d5ce33",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C32",
+      "claim": "Endogenous Ret displayed a significant degree of co-distribution with Mys and Mew in C4da neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we assessed colocalization of endogenous Ret with overexpressed integrins. As for Ret overexpression, endogenous Ret displayed a significant degree of co-distribution with Mys and Mew in C4da neurons (Figure 4D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemical analysis of endogenous Ret with overexpressed integrins as shown in Figure 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "3b0d8b61-c8a7-4710-85cf-9536089945af",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C33",
+      "claim": "The majority of colocalized Ret and integrin signals were found facing the basal dendritic surface which contacts the ECM.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the majority of colocalized signals were found facing the basal dendritic surface which contacts the ECM (Figure 4D\u2032,E\u2032, arrows and Video 1) suggesting that Ret and integrins are potentially interacting at adhesion sites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Z-plane analysis of colocalization showing basal localization as shown in Figure 4D' and 4E'.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "cec46e39-96eb-474f-9c43-cdaba3d3116c",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C34",
+      "claim": "Driving expression of Ret in C4da neurons was sufficient to completely rescue the dendrite growth and crossing phenotype in Ret mutant background.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, driving expression of Ret in C4da neurons was sufficient to completely rescue the dendrite growth and crossing phenotype (Figure 5B,B\u2032 and Figure 5C,C\u2032) demonstrating that Ret is cell-autonomously required for C4da dendrite patterning.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rescue experiments expressing Ret-mCherry in C4da neurons as shown in Figure 5B and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "f41d119f-3e3f-48a2-8496-2f4b61d4b1d5",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C35",
+      "claim": "Overexpression of Mys and Mew in Ret mutant C4da neurons completely prevented dendritic out of plane crossing indicating restored interaction with the ECM.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the overexpression of integrins did not rescue all aspects of the Ret dendritic growth phenotype (Figure 5D,D\u2032), it completely prevented dendritic out of plane crossing indicating restored interaction with the ECM (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rescue experiments overexpressing integrins in Ret mutant C4da neurons as shown in Figure 5D and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "aa5e24ca-98a7-4a3f-a508-6fc22cfc6d2a",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C36",
+      "claim": "Integrin overexpression in C4da neurons did not rescue coverage defects of the dendritic field in Ret mutant animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike Ret itself, integrin overexpression in C4da neurons did not rescue coverage defects of the dendritic field in Ret mutant animals (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of dendritic field coverage in rescue experiments as shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "988041e2-0cd1-4229-b266-0d6b1b697ca6",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C37",
+      "claim": "Integrin overexpression was able to completely suppress Ret dependent photoreceptor degeneration in the compound eye.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrin overexpression itself did not cause any eye phenotype, but was able to completely suppress Ret dependent photoreceptor degeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of eye phenotypes in flies overexpressing Ret with or without integrins as shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "095997e6-f49e-4198-ace2-b60991f14ef3",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C38",
+      "claim": "Loss of rac1 function led to strong dendrite-ECM detachment and epithelial enclosure of dendrites highly similar to Ret and integrin mutant phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using loss of function analysis, we tested whether rac1 is involved in dendrite-ECM adhesion of C4da neurons. Loss of rac1 function led to strong dendrite-ECM detachment and epithelial enclosure of dendrites highly similar to Ret and integrin mutant phenotypes (Figure 6A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of dendrite-ECM interaction in rac1 mutants as shown in Figure 6A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "d672981d-6630-41a7-b87b-2d64e943c2ba",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C39",
+      "claim": "In rac1 mutant C4da neurons, 15% of dendrites in the field were detached from the ECM.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, in rac1 mutant C4da neurons, 15% of dendrites in the field were detached from the ECM, an effect that was even more pronounced when the gene dosage of the other two rac-like GTPases, rac2, and mtl was also reduced (Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of dendrite-ECM detachment in rac1 mutants as shown in Figure 6C and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "7c811486-3d9e-4755-8c84-51dc08f33446",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C40",
+      "claim": "Loss of rac1 function led to many non-contacting crossing defects of dendritic branches indicating that self-avoidance is impaired due to 3D growth of dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, loss of rac1 function also led to many non-contacting crossing defects of dendritic branches (Figure 6B,C arrows, and Figure 6E) indicating that self-avoidance is impaired due to 3D growth of dendrites lacking rac1 function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of dendrite crossing in rac1 mutants as shown in Figure 6B, 6C, and 6E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "f4a07357-e9ea-4695-82ff-93ad9a9f1aea",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C41",
+      "claim": "When combining rac1 alleles with Ret or integrin mutant alleles, strong enhancement of dendritic loss of ECM adhesion was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "When combining rac1 alleles with Ret or integrin mutant alleles however, we observed strong enhancement of dendritic loss of ECM adhesion (Figure 6J\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by genetic interaction experiments as shown in Figure 6J-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "9b8e8d10-3595-4ab1-8c34-f8df01a0abad",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C42",
+      "claim": "For both Ret/rac1 and integrin/rac1 heteroallelic combinations, 15\u201320% percent of dendrites lost contact with the ECM.",
+      "claim_type": "EXPLICIT",
+      "source": "For both Ret/rac1 and integrin/rac1 heteroallelic combinations, 15\u201320% percent of dendrites lost contact with the ECM indicating strong crosstalk and regulation of Ret and integrins via rac1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative analysis of dendrite-ECM detachment in trans-heterozygous combinations as shown in Figure 6M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "ea2b1793-fc0b-454a-a948-afb9a8650db9",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C43",
+      "claim": "rac1 functions in the same pathway as Ret and integrins in regulating the attachment of dendrites to the ECM.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings strongly suggest that rac1 functions in the same pathway as Ret and integrins in regulating the attachment of dendrites to the ECM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from genetic interaction experiments showing enhancement of dendrite-ECM detachment phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "2ece3bf2-6d03-45fe-b135-36d04c0f6703",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C44",
+      "claim": "Neither integrin nor rac1 loss of function resulted in major defects in dendrite growth and coverage of C4da neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike Ret, neither integrin nor rac1 loss of function resulted in major defects in dendrite growth and coverage of C4da neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of phenotypes across different mutants showing that coverage defects are specific to Ret.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "9fe28864-642b-4520-838e-ae69f850e3be",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C45",
+      "claim": "In wildtype C4da neurons, significant turnover of terminal dendrites could be observed during late larval development.",
+      "claim_type": "EXPLICIT",
+      "source": "In wildtype C4da neurons, significant turnover of terminal dendrites could be observed (Figure 7A), as reported previously (Parrish et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse imaging data as shown in Figure 7A and cited previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "f719464e-7bfa-4893-8298-c672c001726a",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C46",
+      "claim": "Analysis of dendrite turnover between 72 and 96 hr AEL revealed highly increased dynamics of dendritic growth and retraction in Ret mutant C4da neurons, with major remodeling of the terminal dendrite arbors.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, analysis of dendrite turnover between 72 and 96 hr AEL revealed highly increased dynamics of dendritic growth and retraction, with major remodeling of the terminal dendrite arbors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by time-lapse imaging and quantitative analysis of dendrite dynamics in Ret mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "60857918-8077-4b39-84b0-75bb098b6a0e",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C47",
+      "claim": "Both growth and retraction of dendrite terminals in Ret mutant C4da neurons were increased two to threefold compared to wildtype.",
+      "claim_type": "EXPLICIT",
+      "source": "Both growth and retraction of dendrite terminals in Ret mutant C4da neurons were increased two to threefold compared to wildtype (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of dendrite growth and retraction as shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "981ecce6-b3e9-4ca7-a716-87d4de64fbf9",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C48",
+      "claim": "The growth/retraction ratio of dendrites was significantly reduced in Ret mutant C4da neurons due to a disproportional increase in retraction compared to growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the growth/retraction ratio of dendrites was significantly reduced in Ret mutant C4da neurons due to a disproportional increase in retraction compared to growth (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of growth/retraction ratios as shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "5ec73cb2-d56b-4b90-bfb5-d46b747d9e3a",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C49",
+      "claim": "Wildtype C4da neurons displayed fairly even distribution of F-actin along major dendrites, while terminal branches typically featured hotspots of increased F-actin levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Wildtype C4da neurons displayed fairly even distribution of F-actin along major dendrites, while terminal branches typically featured hotspots of increased F-actin levels (Figure 7E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by LifeAct imaging in wildtype C4da neurons as shown in Figure 7E and 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "1df155dc-d2c1-4bdd-a769-fe66745d590a",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C50",
+      "claim": "F-actin levels were significantly increased and unevenly distributed in proximal regions of primary dendrites of Ret mutant neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, F-actin levels were significantly increased and unevenly distributed in proximal regions of primary dendrites of Ret mutant neurons (Figure 7E,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by LifeAct imaging and quantitative analysis in Ret mutant C4da neurons as shown in Figure 7E and 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "48648d0f-10e7-4ff4-be0e-c88bb71fd208",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C51",
+      "claim": "Aberrantly crossing terminal branches in Ret mutants had increased levels of F-actin, while other terminals displayed either normal or very low F-actin levels compared to wildtype.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, aberrantly crossing terminal branches had increased levels of F-actin, while other terminals displayed either normal or very low F-actin levels compared to wildtype (Figure 7G, arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by LifeAct imaging showing differential F-actin distribution in Ret mutant dendrites as shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "ca709117-76c0-4e57-a6f7-a91b405b7f88",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C52",
+      "claim": "Ret is required for the appropriate localization of F-actin in dendrites, which likely contributes to the destabilization of growing branches.",
+      "claim_type": "EXPLICIT",
+      "source": "These data clearly show that Ret is required for the appropriate localization of F-actin in dendrites, which likely contributes to the destabilization of growing branches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from LifeAct imaging data showing abnormal F-actin distribution in Ret mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "50564424-6d73-41a0-9d1e-eec3f791399a",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C53",
+      "claim": "Loss of Ret function impairs dendrite stability and increases dynamic growth and retraction of dendritic branches resulting in the failure of complete receptive field coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our findings show that loss of Ret function impairs dendrite stability and increases dynamic growth and retraction of dendritic branches resulting in the failure of complete receptive field coverage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a synthesis of multiple experimental observations including time-lapse imaging and field coverage analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "f2cb122b-32c2-4d8f-9699-d03eb3f75237",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C54",
+      "claim": "Ret is a conserved receptor tyrosine kinase (RTK) expressed in the nervous system of vertebrates and D. melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "Ret is a conserved receptor tyrosine kinase (RTK) expressed in the nervous system of vertebrates (Pachnis et al., 1993; Schuchardt et al., 1994) and D. melanogaster (Sugaya et al., 1994; Hahn and Bishop, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature characterizing Ret expression.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "a6409c2d-c8a3-4897-bbbb-e99ea3096a3c",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C55",
+      "claim": "Ret regulates motor neuron axon guidance.",
+      "claim_type": "EXPLICIT",
+      "source": "it regulates motor neuron axon guidance (Kramer et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "85c06275-0519-4054-99e6-e6aa60fe8a22",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C56",
+      "claim": "Ret regulates dopaminergic neuron maintenance and regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "dopaminergic neuron maintenance and regeneration (Kowsky et al., 2007; Kramer et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "89c1def2-a227-4c9d-ac8f-c1d7e902d1e9",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C57",
+      "claim": "Ret regulates mechanoreceptor differentiation and projection to the spinal cord and medulla.",
+      "claim_type": "EXPLICIT",
+      "source": "and mechanoreceptor differentiation and projection to the spinal cord and medulla (Bourane et al., 2009; Luo et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "d894cea5-195d-494c-a2f5-c5fcd2fc9efa",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C58",
+      "claim": "Ret signaling is activated by binding to glial cell line derived neurotrophic factor (GDNF) family ligands and their high affinity co-receptors, the GDNF family receptors (GFR\u03b1).",
+      "claim_type": "EXPLICIT",
+      "source": "Ret signaling is activated by binding to glial cell line derived neurotrophic factor (GDNF) family ligands and their high affinity co-receptors, the GDNF family receptors (GFR\u03b1) (reviewed in Runeberg-Roos and Saarma, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "c724c7a0-fcc1-4f29-84d4-96b725d5a103",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C59",
+      "claim": "Loss of function mutations of Ret lead to Hirschprung's disease displaying colonic aganglionosis due to defective enteric nervous system development.",
+      "claim_type": "EXPLICIT",
+      "source": "Ret also plays an important role in human development and disease as loss of function mutations of Ret lead to Hirschprung's disease displaying colonic aganglionosis due to defective enteric nervous system development (Amiel et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature on human disease.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "f8daa171-1ab9-452d-b75d-93734081e1b7",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C60",
+      "claim": "Ret gain of function mutations are causal for autosomal dominant MEN2 (multiple endocrine neoplasia type 2) type medullary thyroid carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Ret gain of function mutations are causal for autosomal dominant MEN2 (multiple endocrine neoplasia type 2) type medullary thyroid carcinoma (Lairmore et al., 1993; Almeida and Hoff, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature on human disease.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "3179cbc2-f115-4444-8eff-4a419afa424f",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C61",
+      "claim": "Prior to this study, Ret has not been implicated in dendrite development.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to this study, Ret has not been implicated in dendrite development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about the novelty of the findings based on literature review.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "1b38c1fb-b3cd-4d0a-aee1-61865841dbb7",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C62",
+      "claim": "Ret is required specifically for 2D growth of C4da neurons by regulating integrin dependent dendrite-ECM adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Ret is required specifically for 2D growth of C4da neurons by regulating integrin dependent dendrite-ECM adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary of the main findings supported by multiple experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "dcc6de0f-b1df-4f0e-977e-1e51145aaeae",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C63",
+      "claim": "C4da neuron dendrites are normally virtually always in contact with the ECM and the basal surface of the epithelium lining the larval cuticle, and thus tightly sandwiched between the two compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Normally, C4da neuron dendrites are virtually always in contact with the ECM and the basal surface of the epithelium lining the larval cuticle, and thus tightly sandwiched between the two compartments (Yamamoto et al., 2006; Han et al., 2012; Kim et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature describing C4da neuron dendrite positioning.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "4d8efd88-f58b-44f9-bbeb-601c319af5cf",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C64",
+      "claim": "In both integrin and Ret mutants, dendrite-ECM adhesion is impaired.",
+      "claim_type": "EXPLICIT",
+      "source": "In both integrin and Ret mutants, dendrite-ECM adhesion is impaired.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing dendrite-ECM detachment in both mutant types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "2f30f021-1daa-4fb5-a953-ee7d7d5c4a3c",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C65",
+      "claim": "Ret and integrins can co-localize in dendrites and thus likely form a functional complex that could induce and maintain adhesion of dendrites to the ECM.",
+      "claim_type": "EXPLICIT",
+      "source": "Ret and integrins can co-localize in dendrites and thus likely form a functional complex that could induce and maintain adhesion of dendrites to the ECM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from colocalization and co-immunoprecipitation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "a99cafd6-fa4f-4186-a8d4-8d01448858ea",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C66",
+      "claim": "Ret loss of function primarily leads to detached terminal dendrite branches.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Ret loss of function primarily leads to detached terminal dendrite branches, it is tempting to speculate that Ret might be required to recruit integrins to sites of growing dendrites to promote ECM interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by imaging data showing preferential detachment of terminal branches in Ret mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "0550ab7c-2750-414e-b6c0-999565b28b67",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C67",
+      "claim": "Vertebrate Ret has been shown to cooperate with Ephrins to ensure high fidelity axon guidance in motor neurons by mediating attractive EphrinA reverse signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, vertebrate Ret has been shown to cooperate with Ephrins to ensure high fidelity axon guidance in motor neurons by mediating attractive EphrinA reverse signaling (Kramer et al., 2006; Bonanomi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature on Ret function in axon guidance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "72e697c0-f5b2-4df7-b388-78cfe05fc13c",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C68",
+      "claim": "Dscam and Netrin-Frazzled signaling act in parallel in class III da neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, only parallel receptor pathways like Dscam and Netrin-Frazzled signaling in class III da neurons (Matthews and Grueber, 2011) or Dscam/integrins (Han et al., 2011; Kim et al., 2012) have been identified co-regulating dendrite morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "662bf62f-4ae9-4e3e-b486-5623b8e6f100",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C69",
+      "claim": "Integrins have been shown to display extensive crosstalk with other signaling receptors, including RTKs.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrins have been shown to display extensive crosstalk with other signaling receptors, including RTKs (Ivaska and Heino, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "3d6f89b3-996f-4755-a0c7-d7bca4916681",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C70",
+      "claim": "Matrix-bound VEGF can induce complex formation between VEGFR2 and \u03b21-integrin with concomitant targeting of \u03b21-integrin to focal adhesions in endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, matrix-bound VEGF can induce complex formation between VEGFR2 and \u03b21-integrin with concomitant targeting of \u03b21-integrin to focal adhesions in endothelial cells (Chen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature providing an example of RTK-integrin crosstalk.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "34dca9cf-c11a-4b9f-980e-5fdc01cd15fe",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C71",
+      "claim": "Ret can enhance integrin mediated adhesion in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies provide evidence for Ret-integrin-Rac1 interplay in vitro showing that Ret can enhance integrin mediated adhesion (Cockburn et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature on Ret function in cell culture.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "7a102ed1-1fb4-49f9-b6a9-c6e491fc2bb3",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C72",
+      "claim": "Ret can induce Rac1 dependent lamellipodia formation in cell culture models.",
+      "claim_type": "EXPLICIT",
+      "source": "and induce Rac1 dependent lamellipodia formation (Fukuda et al., 2002) in cell culture models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature on Ret function in cell culture.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "be339068-e99c-4875-a330-520e47caee5e",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C73",
+      "claim": "Rac1 is involved in neurite outgrowth on the integrin substrates laminin and fibronectin in primary chick motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In primary chick motor neurons, Rac1 is involved in neurite outgrowth on the integrin substrates laminin and fibronectin (Kuhn et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "51e1b1e5-34f8-4a73-9fa3-c4f766161d6d",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C74",
+      "claim": "Rac1 has previously been shown to regulate dendrite branching in C4da neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Rac1 has previously been shown to regulate dendrite branching in C4da neurons (Lee et al., 2003; Emoto et al., 2004), however a role in dendrite adhesion in vivo has not been described before.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature on Rac1 function in C4da neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "c08d2ead-7fe3-4f68-8c06-d92ca7664917",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C75",
+      "claim": "MAPK, Src and PI3K can be activated by constitutively active Ret overexpression in the Drosophila compound eye.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, MAPK, Src and PI3K can be activated by constitutively active Ret overexpression in the compound eye (Read et al., 2005; Dar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature on Ret signaling in Drosophila.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "f728af9b-903a-4360-a8d9-1876a66b10ca",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C76",
+      "claim": "Novel inhibitors of Ret signaling targeting Raf, Src, and S6-Kinase (S6K) prevent lethality induced by Ret over-activation in a Drosophila multiple endocrine neoplasia (MEN2) model.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, novel inhibitors of Ret signaling targeting Raf, Src, and S6-Kinase (S6K) prevent lethality induced by Ret over-activation in a Drosophila multiple endocrine neoplasia (MEN2) model (Dar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature on Ret signaling in Drosophila disease models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "220e2c8d-f8b9-4a46-892e-dcae05be4a68",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C77",
+      "claim": "S6K has been shown to be involved in dendrite growth but not tiling in C4da neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, S6K has been shown to be involved in dendrite growth but not tiling in C4da neurons (Koike-Kumagai et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature on S6K function in C4da neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "e7f65c87-91e3-4332-b3b6-ea53faf70f0c",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C78",
+      "claim": "Drosophila Ret is a highly conserved molecule, but its cognate vertebrate ligand GDNF is not.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila Ret is a highly conserved molecule, its cognate vertebrate ligand GDNF, however is not (Airaksinen et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature on Ret ligand conservation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "02c718a1-9ccd-462d-8f52-c7be579db5ff",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C79",
+      "claim": "Drosophila Ret can neither bind GDNF nor transduce GDNF signaling, although it has been shown to contain a functional tyrosine kinase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Drosophila Ret can neither bind GDNF nor transduce GDNF signaling, although it has been shown to contain a functional tyrosine kinase domain (Abrescia et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature on Drosophila Ret biochemistry.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "4844f936-afec-49c4-8497-3d65a5bc1740",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C80",
+      "claim": "A Drosophila GFR-like homolog (dGFRL) has recently been characterized and was found to function and interact with the NCAM homolog FasII.",
+      "claim_type": "EXPLICIT",
+      "source": "A Drosophila GFR-like homolog (dGFRL) has recently been characterized and was found to function and interact with the NCAM homolog FasII (Kallij\u00e4rvi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous literature on Drosophila GFR homolog.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "bb9098b6-f4cb-4b2f-936a-319f57e945cc",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C81",
+      "claim": "Ret's functional interaction partners in dendrite development differ significantly from the previously described co-factors in other systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it appears that Ret's functional interaction partners in dendrite development differ significantly from the previously described co-factors in other systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the discussion of Ret ligands and co-receptors in Drosophila versus vertebrates.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "4c5c51df-728b-4b47-b106-c3861b47653b",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C82",
+      "claim": "Ret plays a role in the maintenance of dopaminergic neurons and motor axon growth in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "due to its role in the maintenance of dopaminergic neurons and motor axon growth in mouse (Kramer et al., 2006, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature on mammalian Ret function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "765ae499-1d41-4792-b214-7561ed40cc55",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C83",
+      "claim": "The formation of dorsal root ganglia derived mechanosensory neurons and their afferent and efferent fiber growth and innervation depends on Ret expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the formation of a dorsal root ganglia derived mechanosensory neurons and their afferent and efferent fiber growth and innervation depends on Ret expression (Bourane et al., 2009; Luo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous literature on Ret function in sensory neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "16ed2a5d-ab53-447d-b688-9dfe66d261db",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C84",
+      "claim": "Ret has a novel role in dendrite branch growth and stability in Drosophila C4da neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we describe a novel role for the Ret receptor in dendrite branch growth and stability in Drosophila C4da neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary statement of the main findings supported by multiple experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "1b18c03c-9882-4725-adeb-d27a008d2a0f",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C85",
+      "claim": "Ret has cell-autonomous effects on ECM adhesion and F-actin localization in C4da neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This role involves cell-autonomous effects of Ret on ECM adhesion, and F-actin localization in these neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by rescue experiments and imaging data showing cell-autonomous function.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "b2ea6c09-d1f5-49bc-a210-413e3a26e16d",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "claim_id": "C86",
+      "claim": "Dendritic adhesion defects attributable to Ret are linked to integrin and rac1 function featuring a novel and possibly conserved mode of action for Ret in dendrite development.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we have linked dendritic adhesion defects attributable to Ret to integrin and rac1 function featuring a novel and possibly conserved mode of action for Ret in dendrite development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary statement supported by genetic and biochemical interaction data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ff1f420d-ae2c-4d82-ba54-8e5ccbd85d95",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "An in vivo RNAi screen in Drosophila C4da neurons identified Ret, a conserved receptor tyrosine kinase, as a regulator of dendrite development. Knockdown of Ret with two independent RNAi lines resulted in abnormal dendrite patterning with crossing of dendritic branches and incomplete receptive field coverage, specifically in C4da neurons but not other da neuron classes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C9 provide converging evidence from RNAi screening (C5), phenotypic characterization (C6), cell-type specificity analysis (C7), and expression validation (C8-C9). The use of two independent RNAi lines strengthens the conclusion that the phenotype is specific to Ret knockdown. Expression data from enhancer trap lines confirms Ret is present in C4da neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "e6f36866-60fb-478c-b4e9-032f01e6aeda",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ret protein localizes throughout the C4da dendritic arbor with strongest puncta at the basal side facing the ECM. Genetic mutant analysis using RetC168 allele and deficiency combinations confirmed RNAi results and established that RetC168 is a hypomorphic allele with reduced Ret protein in dendrites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C14 provide immunohistochemical evidence for Ret localization (C10-C11), validation of the mutant allele (C12), and genetic confirmation of RNAi phenotypes (C13-C14). The convergence of RNAi and genetic mutant phenotypes, combined with protein localization data showing basal enrichment, provides strong support for Ret's role in dendrite-ECM interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "e4af844a-190f-438c-8dc7-beba5cdb6e5d",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ret mutant C4da neurons display incomplete receptive field coverage, severe isoneuronal dendrite crossing in 3D space without direct contact, and excessive out-of-plane crossing, but maintain normal total dendrite length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 provide detailed morphological characterization using confocal imaging and quantitative analysis. The 3D analysis (C17) is particularly important as it demonstrates that crossing dendrites grow in different planes rather than contacting each other, distinguishing this from classical self-avoidance defects. The preservation of total dendrite length (C18) while field coverage is reduced indicates a specific patterning rather than growth defect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "86f8c1fd-b921-4d81-9012-ae10de79ea21",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Loss of Ret results in dendrite-ECM detachment with approximately 11% of dendrites detached from the ECM and enclosed by epidermis, particularly affecting terminal dendrite branches. This impairs 2D growth and is the primary cause of dendrite defects in Ret mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C20-C21, C62, C64, C66 provide quantitative evidence for dendrite-ECM detachment using high-resolution imaging with ECM markers. The specific quantification of ~11% detachment (C21) and preferential effect on terminal branches (C66) are well-documented. However, the causal claim that ECM detachment is the primary cause of all dendrite defects may be overstated given that integrin rescue does not fully restore field coverage (C36).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "fb87c169-04c0-4775-9e94-301ad0c672bc",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ret and integrins (mys and mew) act in the same genetic pathway to promote dendrite-matrix interactions, as demonstrated by trans-heterozygous genetic interactions showing ~10% dendrite detachment in RetC168/integrin combinations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 provide genetic interaction evidence showing that single heterozygotes have no phenotype while trans-heterozygotes show significant dendrite-ECM detachment. This is a classic genetic test for pathway relationships. The quantitative similarity between Ret mutants (~11%, C21) and trans-heterozygotes (~10%, C23) supports the interpretation that they function in the same pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "885865f6-4d2e-400a-b51f-dded890e9356",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ret physically interacts with integrins (Mys and Mew) as demonstrated by colocalization in dendrites, co-immunoprecipitation in S2 cells, and cell surface localization studies. The majority of colocalized signals face the basal dendritic surface contacting the ECM, suggesting interaction at adhesion sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C25-C33, C65 provide multiple lines of evidence: biochemical interaction (C27), colocalization in vivo (C25, C29-C33) and in cell culture (C26), cell surface localization (C28), and quantitative colocalization analysis (C31-C32). The convergence of biochemical, cell biological, and localization data strongly supports physical interaction. The basal localization (C33) is particularly important for linking to ECM adhesion function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "f05fb402-358a-498a-9164-34ed90d011c6",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ret functions cell-autonomously in C4da neurons, as C4da-specific expression of Ret completely rescues dendrite growth and crossing phenotypes. Integrin overexpression rescues dendrite crossing but not field coverage defects, indicating Ret has both integrin-dependent and integrin-independent functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37, C85 provide rescue experiments demonstrating cell-autonomous function (C34) and partial rescue by integrins (C35-C36). The differential rescue\u2014integrins restore ECM adhesion/crossing but not coverage\u2014is critical evidence that Ret has additional functions beyond integrin regulation. The eye rescue experiment (C37) provides independent validation of Ret-integrin functional interaction in a different tissue.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "9c0adc37-340b-428c-8283-839c61e8f518",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Rac1 functions in the same pathway as Ret and integrins to regulate dendrite-ECM adhesion. Loss of rac1 causes ~15% dendrite detachment and 3D crossing defects, and trans-heterozygous combinations of rac1 with Ret or integrins show enhanced detachment (15-20%), indicating genetic interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 provide parallel analysis for rac1 as was done for integrins: loss-of-function phenotype (C38-C40), quantification (C39, C42), and genetic interactions (C41-C43). The similar phenotypes and genetic enhancement in trans-heterozygotes support the conclusion that rac1 acts in the same pathway. This is consistent with known roles of rac1 downstream of both RTKs and integrins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "a073ec4b-905e-44ce-bfa2-c619a1e4a4f1",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Unlike Ret, neither integrin nor rac1 loss of function results in major defects in dendrite growth and coverage of C4da neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is supported by comparative phenotypic analysis across mutants. This is an important observation that distinguishes Ret's functions from its downstream effectors and supports the conclusion that Ret has integrin-independent roles in dendrite development. However, the claim would be strengthened by quantitative data comparing field coverage across all three mutant types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "fa11b4d3-75c5-4770-b47b-7f385a716459",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Ret is required for dendrite stability, as Ret mutant C4da neurons show 2-3 fold increased dendrite growth and retraction dynamics compared to wildtype, with a significantly reduced growth/retraction ratio. This increased turnover impairs complete receptive field coverage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C45-C48, C53 provide time-lapse imaging data quantifying dendrite dynamics. The 2-3 fold increase in both growth and retraction (C47) with disproportionate retraction (C48) is well-quantified. This links the stability defect to the coverage phenotype (C53). The use of wildtype baseline data (C45) and proper normalization strengthens the analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "7e842a4e-4765-4b8b-90f7-66dd17694655",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Ret is required for appropriate F-actin localization in dendrites. Ret mutant neurons show significantly increased and unevenly distributed F-actin in proximal dendrites, with aberrantly crossing terminals having increased F-actin while other terminals show reduced levels, likely contributing to dendrite destabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 provide LifeAct imaging data showing abnormal F-actin distribution in Ret mutants. The quantitative analysis of F-actin distribution along dendrites (C50) and the observation of differential F-actin in crossing vs non-crossing terminals (C51) are well-documented. The inference that this contributes to destabilization (C52) is reasonable given the known role of F-actin in dendrite stability, though direct causation is not established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "5f9d6414-c637-42b8-ab50-78b939c62f8d",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Ret is a conserved RTK with established roles in vertebrate and Drosophila nervous system development including axon guidance, dopaminergic neuron maintenance, and mechanoreceptor development, and is implicated in human diseases. Prior to this study, Ret had not been implicated in dendrite development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C61 provide literature context establishing Ret's known functions and the novelty of the dendrite development findings. These are well-supported by appropriate citations (C54-C60). The novelty claim (C61) is reasonable based on literature review, though comprehensive proof of novelty is inherently difficult.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "a52616a0-434f-46f2-83a5-78ca2f0753b4",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript provides context for understanding Ret-integrin interactions by reviewing: (1) normal C4da dendrite positioning between ECM and epidermis, (2) precedents for receptor cooperation in axon guidance and dendrite development, (3) known RTK-integrin crosstalk mechanisms, and (4) previous evidence for Ret-integrin-Rac1 interactions in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C67-C74 provide appropriate literature context supported by citations. These establish the biological context (C63), precedents for receptor cooperation (C67-C68), and mechanistic framework (C69-C74) for interpreting the current findings. This is standard background material appropriately supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "98170fd8-caa1-4d67-80e3-cff9cade8da1",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Discussion of potential Ret signaling mechanisms in Drosophila, noting that while MAPK, Src, PI3K, and S6K can be activated by Ret in Drosophila, the cognate vertebrate ligand GDNF is not conserved and Drosophila Ret cannot bind GDNF. Ret's functional interaction partners in dendrite development likely differ from other systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C81 provide discussion of potential signaling mechanisms and ligands, appropriately supported by citations. The observation that Drosophila Ret lacks GDNF binding (C79) while maintaining kinase activity is important context. The inference that interaction partners differ (C81) is reasonable speculation based on the ligand differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    },
+    {
+      "id": "1c3a6f11-e850-47e3-87ef-5252a1ddc1cb",
+      "content_id": "1a43a25b-f9ac-411e-82ba-32e5fab35787",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study describes a novel role for Ret in dendrite branch growth and stability involving cell-autonomous effects on ECM adhesion and F-actin localization, with dendritic adhesion defects linked to integrin and rac1 function, representing a potentially conserved mode of action for Ret in dendrite development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84, C86 provide summary statements of the main findings and their potential conservation. These are well-supported by the experimental data presented throughout the manuscript. The speculation about conservation (C86) is appropriately qualified as 'possibly conserved' and is reasonable given Ret's conservation and known roles in mammalian neurons (C82-C83).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:42:06.141549Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "37236988-25c0-439b-bf62-d1756de388f3",
+      "result_id": "ff1f420d-ae2c-4d82-ba54-8e5ccbd85d95"
+    },
+    {
+      "claim_id": "995532d4-091b-4faf-ab3b-3adf8d1b1e1f",
+      "result_id": "ff1f420d-ae2c-4d82-ba54-8e5ccbd85d95"
+    },
+    {
+      "claim_id": "bcaf3de5-0f18-4fd4-8dd7-f4fbfbf243e0",
+      "result_id": "ff1f420d-ae2c-4d82-ba54-8e5ccbd85d95"
+    },
+    {
+      "claim_id": "f28d37bd-a318-4152-a848-b911a5969dc9",
+      "result_id": "ff1f420d-ae2c-4d82-ba54-8e5ccbd85d95"
+    },
+    {
+      "claim_id": "0e9f1ea6-adc4-454e-95de-fee862684c04",
+      "result_id": "ff1f420d-ae2c-4d82-ba54-8e5ccbd85d95"
+    },
+    {
+      "claim_id": "ccb45814-e30a-4f3a-8c3c-ca4bac5cc47e",
+      "result_id": "ff1f420d-ae2c-4d82-ba54-8e5ccbd85d95"
+    },
+    {
+      "claim_id": "48187846-6bae-4725-ba21-41109eaa9aa7",
+      "result_id": "e6f36866-60fb-478c-b4e9-032f01e6aeda"
+    },
+    {
+      "claim_id": "54cf5954-0cde-4002-82dd-a7eec54be58d",
+      "result_id": "e6f36866-60fb-478c-b4e9-032f01e6aeda"
+    },
+    {
+      "claim_id": "9007a647-3469-446f-baa6-dbf5047b84da",
+      "result_id": "e6f36866-60fb-478c-b4e9-032f01e6aeda"
+    },
+    {
+      "claim_id": "a99dd26b-9524-4d2e-b50f-280b7553fa3d",
+      "result_id": "e6f36866-60fb-478c-b4e9-032f01e6aeda"
+    },
+    {
+      "claim_id": "662c8801-a7aa-4f87-91b7-7724c2a609f9",
+      "result_id": "e6f36866-60fb-478c-b4e9-032f01e6aeda"
+    },
+    {
+      "claim_id": "098bf0e3-6aa6-40e0-8af1-7a3db5d946ae",
+      "result_id": "e4af844a-190f-438c-8dc7-beba5cdb6e5d"
+    },
+    {
+      "claim_id": "d0ec85f4-18ff-4bab-973e-67c4c014e8f5",
+      "result_id": "e4af844a-190f-438c-8dc7-beba5cdb6e5d"
+    },
+    {
+      "claim_id": "dfecd5e6-0ac3-4b52-80a6-2711c91f6229",
+      "result_id": "e4af844a-190f-438c-8dc7-beba5cdb6e5d"
+    },
+    {
+      "claim_id": "8e5f04ee-c99b-4bdf-8c46-47cfa289f367",
+      "result_id": "e4af844a-190f-438c-8dc7-beba5cdb6e5d"
+    },
+    {
+      "claim_id": "1ea9b195-a51d-4312-9c03-53df2d326ab2",
+      "result_id": "e4af844a-190f-438c-8dc7-beba5cdb6e5d"
+    },
+    {
+      "claim_id": "987d453b-345a-4ea4-9446-aac11e90e30d",
+      "result_id": "86f8c1fd-b921-4d81-9012-ae10de79ea21"
+    },
+    {
+      "claim_id": "3d10be36-6fda-4b8e-94b1-c247c3aba85a",
+      "result_id": "86f8c1fd-b921-4d81-9012-ae10de79ea21"
+    },
+    {
+      "claim_id": "058ad299-d1f7-4686-a6a7-87ea730845f8",
+      "result_id": "86f8c1fd-b921-4d81-9012-ae10de79ea21"
+    },
+    {
+      "claim_id": "1b38c1fb-b3cd-4d0a-aee1-61865841dbb7",
+      "result_id": "86f8c1fd-b921-4d81-9012-ae10de79ea21"
+    },
+    {
+      "claim_id": "4d8efd88-f58b-44f9-bbeb-601c319af5cf",
+      "result_id": "86f8c1fd-b921-4d81-9012-ae10de79ea21"
+    },
+    {
+      "claim_id": "a99cafd6-fa4f-4186-a8d4-8d01448858ea",
+      "result_id": "86f8c1fd-b921-4d81-9012-ae10de79ea21"
+    },
+    {
+      "claim_id": "eed16ab5-d42b-494f-8e09-9b1cf27ee5bd",
+      "result_id": "fb87c169-04c0-4775-9e94-301ad0c672bc"
+    },
+    {
+      "claim_id": "27e82c05-fa5b-416d-a805-968dfba21938",
+      "result_id": "fb87c169-04c0-4775-9e94-301ad0c672bc"
+    },
+    {
+      "claim_id": "11e77a75-8051-45fe-bf7a-2cd8761af36e",
+      "result_id": "fb87c169-04c0-4775-9e94-301ad0c672bc"
+    },
+    {
+      "claim_id": "37da9828-f546-4435-ace6-1d9dac36ba60",
+      "result_id": "885865f6-4d2e-400a-b51f-dded890e9356"
+    },
+    {
+      "claim_id": "70da9b02-0b6f-4944-a3b3-7bf70a1fc43b",
+      "result_id": "885865f6-4d2e-400a-b51f-dded890e9356"
+    },
+    {
+      "claim_id": "696db987-6313-43a1-9c19-b94f7610694e",
+      "result_id": "885865f6-4d2e-400a-b51f-dded890e9356"
+    },
+    {
+      "claim_id": "588d4a06-3bd7-43ee-a7c4-d818e5cfe661",
+      "result_id": "885865f6-4d2e-400a-b51f-dded890e9356"
+    },
+    {
+      "claim_id": "8241e0f3-7456-4d02-ad0f-c11a9edb7f43",
+      "result_id": "885865f6-4d2e-400a-b51f-dded890e9356"
+    },
+    {
+      "claim_id": "6e1b930c-abb2-4efa-83ae-7f81a72f420c",
+      "result_id": "885865f6-4d2e-400a-b51f-dded890e9356"
+    },
+    {
+      "claim_id": "a6698e2a-56e7-49d1-8e9b-8381e929b815",
+      "result_id": "885865f6-4d2e-400a-b51f-dded890e9356"
+    },
+    {
+      "claim_id": "06250de1-66e4-4783-bbed-238c936dde0a",
+      "result_id": "885865f6-4d2e-400a-b51f-dded890e9356"
+    },
+    {
+      "claim_id": "9a900ee1-fe65-49ac-b33e-e85283d5ce33",
+      "result_id": "885865f6-4d2e-400a-b51f-dded890e9356"
+    },
+    {
+      "claim_id": "3b0d8b61-c8a7-4710-85cf-9536089945af",
+      "result_id": "885865f6-4d2e-400a-b51f-dded890e9356"
+    },
+    {
+      "claim_id": "2f30f021-1daa-4fb5-a953-ee7d7d5c4a3c",
+      "result_id": "885865f6-4d2e-400a-b51f-dded890e9356"
+    },
+    {
+      "claim_id": "cec46e39-96eb-474f-9c43-cdaba3d3116c",
+      "result_id": "f05fb402-358a-498a-9164-34ed90d011c6"
+    },
+    {
+      "claim_id": "f41d119f-3e3f-48a2-8496-2f4b61d4b1d5",
+      "result_id": "f05fb402-358a-498a-9164-34ed90d011c6"
+    },
+    {
+      "claim_id": "aa5e24ca-98a7-4a3f-a508-6fc22cfc6d2a",
+      "result_id": "f05fb402-358a-498a-9164-34ed90d011c6"
+    },
+    {
+      "claim_id": "988041e2-0cd1-4229-b266-0d6b1b697ca6",
+      "result_id": "f05fb402-358a-498a-9164-34ed90d011c6"
+    },
+    {
+      "claim_id": "1b18c03c-9882-4725-adeb-d27a008d2a0f",
+      "result_id": "f05fb402-358a-498a-9164-34ed90d011c6"
+    },
+    {
+      "claim_id": "095997e6-f49e-4198-ace2-b60991f14ef3",
+      "result_id": "9c0adc37-340b-428c-8283-839c61e8f518"
+    },
+    {
+      "claim_id": "d672981d-6630-41a7-b87b-2d64e943c2ba",
+      "result_id": "9c0adc37-340b-428c-8283-839c61e8f518"
+    },
+    {
+      "claim_id": "7c811486-3d9e-4755-8c84-51dc08f33446",
+      "result_id": "9c0adc37-340b-428c-8283-839c61e8f518"
+    },
+    {
+      "claim_id": "f4a07357-e9ea-4695-82ff-93ad9a9f1aea",
+      "result_id": "9c0adc37-340b-428c-8283-839c61e8f518"
+    },
+    {
+      "claim_id": "9b8e8d10-3595-4ab1-8c34-f8df01a0abad",
+      "result_id": "9c0adc37-340b-428c-8283-839c61e8f518"
+    },
+    {
+      "claim_id": "ea2b1793-fc0b-454a-a948-afb9a8650db9",
+      "result_id": "9c0adc37-340b-428c-8283-839c61e8f518"
+    },
+    {
+      "claim_id": "2ece3bf2-6d03-45fe-b135-36d04c0f6703",
+      "result_id": "a073ec4b-905e-44ce-bfa2-c619a1e4a4f1"
+    },
+    {
+      "claim_id": "89f30a59-b02c-4292-a429-ba49fec03a72",
+      "result_id": "fa11b4d3-75c5-4770-b47b-7f385a716459"
+    },
+    {
+      "claim_id": "9fe28864-642b-4520-838e-ae69f850e3be",
+      "result_id": "fa11b4d3-75c5-4770-b47b-7f385a716459"
+    },
+    {
+      "claim_id": "f719464e-7bfa-4893-8298-c672c001726a",
+      "result_id": "fa11b4d3-75c5-4770-b47b-7f385a716459"
+    },
+    {
+      "claim_id": "60857918-8077-4b39-84b0-75bb098b6a0e",
+      "result_id": "fa11b4d3-75c5-4770-b47b-7f385a716459"
+    },
+    {
+      "claim_id": "981ecce6-b3e9-4ca7-a716-87d4de64fbf9",
+      "result_id": "fa11b4d3-75c5-4770-b47b-7f385a716459"
+    },
+    {
+      "claim_id": "50564424-6d73-41a0-9d1e-eec3f791399a",
+      "result_id": "fa11b4d3-75c5-4770-b47b-7f385a716459"
+    },
+    {
+      "claim_id": "5ec73cb2-d56b-4b90-bfb5-d46b747d9e3a",
+      "result_id": "7e842a4e-4765-4b8b-90f7-66dd17694655"
+    },
+    {
+      "claim_id": "1df155dc-d2c1-4bdd-a769-fe66745d590a",
+      "result_id": "7e842a4e-4765-4b8b-90f7-66dd17694655"
+    },
+    {
+      "claim_id": "48648d0f-10e7-4ff4-be0e-c88bb71fd208",
+      "result_id": "7e842a4e-4765-4b8b-90f7-66dd17694655"
+    },
+    {
+      "claim_id": "ca709117-76c0-4e57-a6f7-a91b405b7f88",
+      "result_id": "7e842a4e-4765-4b8b-90f7-66dd17694655"
+    },
+    {
+      "claim_id": "f2cb122b-32c2-4d8f-9699-d03eb3f75237",
+      "result_id": "5f9d6414-c637-42b8-ab50-78b939c62f8d"
+    },
+    {
+      "claim_id": "a6409c2d-c8a3-4897-bbbb-e99ea3096a3c",
+      "result_id": "5f9d6414-c637-42b8-ab50-78b939c62f8d"
+    },
+    {
+      "claim_id": "85c06275-0519-4054-99e6-e6aa60fe8a22",
+      "result_id": "5f9d6414-c637-42b8-ab50-78b939c62f8d"
+    },
+    {
+      "claim_id": "89c1def2-a227-4c9d-ac8f-c1d7e902d1e9",
+      "result_id": "5f9d6414-c637-42b8-ab50-78b939c62f8d"
+    },
+    {
+      "claim_id": "d894cea5-195d-494c-a2f5-c5fcd2fc9efa",
+      "result_id": "5f9d6414-c637-42b8-ab50-78b939c62f8d"
+    },
+    {
+      "claim_id": "c724c7a0-fcc1-4f29-84d4-96b725d5a103",
+      "result_id": "5f9d6414-c637-42b8-ab50-78b939c62f8d"
+    },
+    {
+      "claim_id": "f8daa171-1ab9-452d-b75d-93734081e1b7",
+      "result_id": "5f9d6414-c637-42b8-ab50-78b939c62f8d"
+    },
+    {
+      "claim_id": "3179cbc2-f115-4444-8eff-4a419afa424f",
+      "result_id": "5f9d6414-c637-42b8-ab50-78b939c62f8d"
+    },
+    {
+      "claim_id": "dcc6de0f-b1df-4f0e-977e-1e51145aaeae",
+      "result_id": "a52616a0-434f-46f2-83a5-78ca2f0753b4"
+    },
+    {
+      "claim_id": "0550ab7c-2750-414e-b6c0-999565b28b67",
+      "result_id": "a52616a0-434f-46f2-83a5-78ca2f0753b4"
+    },
+    {
+      "claim_id": "72e697c0-f5b2-4df7-b388-78cfe05fc13c",
+      "result_id": "a52616a0-434f-46f2-83a5-78ca2f0753b4"
+    },
+    {
+      "claim_id": "662bf62f-4ae9-4e3e-b486-5623b8e6f100",
+      "result_id": "a52616a0-434f-46f2-83a5-78ca2f0753b4"
+    },
+    {
+      "claim_id": "3d6f89b3-996f-4755-a0c7-d7bca4916681",
+      "result_id": "a52616a0-434f-46f2-83a5-78ca2f0753b4"
+    },
+    {
+      "claim_id": "34dca9cf-c11a-4b9f-980e-5fdc01cd15fe",
+      "result_id": "a52616a0-434f-46f2-83a5-78ca2f0753b4"
+    },
+    {
+      "claim_id": "7a102ed1-1fb4-49f9-b6a9-c6e491fc2bb3",
+      "result_id": "a52616a0-434f-46f2-83a5-78ca2f0753b4"
+    },
+    {
+      "claim_id": "be339068-e99c-4875-a330-520e47caee5e",
+      "result_id": "a52616a0-434f-46f2-83a5-78ca2f0753b4"
+    },
+    {
+      "claim_id": "51e1b1e5-34f8-4a73-9fa3-c4f766161d6d",
+      "result_id": "a52616a0-434f-46f2-83a5-78ca2f0753b4"
+    },
+    {
+      "claim_id": "c08d2ead-7fe3-4f68-8c06-d92ca7664917",
+      "result_id": "98170fd8-caa1-4d67-80e3-cff9cade8da1"
+    },
+    {
+      "claim_id": "f728af9b-903a-4360-a8d9-1876a66b10ca",
+      "result_id": "98170fd8-caa1-4d67-80e3-cff9cade8da1"
+    },
+    {
+      "claim_id": "220e2c8d-f8b9-4a46-892e-dcae05be4a68",
+      "result_id": "98170fd8-caa1-4d67-80e3-cff9cade8da1"
+    },
+    {
+      "claim_id": "e7f65c87-91e3-4332-b3b6-ea53faf70f0c",
+      "result_id": "98170fd8-caa1-4d67-80e3-cff9cade8da1"
+    },
+    {
+      "claim_id": "02c718a1-9ccd-462d-8f52-c7be579db5ff",
+      "result_id": "98170fd8-caa1-4d67-80e3-cff9cade8da1"
+    },
+    {
+      "claim_id": "4844f936-afec-49c4-8497-3d65a5bc1740",
+      "result_id": "98170fd8-caa1-4d67-80e3-cff9cade8da1"
+    },
+    {
+      "claim_id": "bb9098b6-f4cb-4b2f-936a-319f57e945cc",
+      "result_id": "98170fd8-caa1-4d67-80e3-cff9cade8da1"
+    },
+    {
+      "claim_id": "4c5c51df-728b-4b47-b106-c3861b47653b",
+      "result_id": "1c3a6f11-e850-47e3-87ef-5252a1ddc1cb"
+    },
+    {
+      "claim_id": "765ae499-1d41-4792-b214-7561ed40cc55",
+      "result_id": "1c3a6f11-e850-47e3-87ef-5252a1ddc1cb"
+    },
+    {
+      "claim_id": "16ed2a5d-ab53-447d-b688-9dfe66d261db",
+      "result_id": "1c3a6f11-e850-47e3-87ef-5252a1ddc1cb"
+    },
+    {
+      "claim_id": "b2ea6c09-d1f5-49bc-a210-413e3a26e16d",
+      "result_id": "1c3a6f11-e850-47e3-87ef-5252a1ddc1cb"
+    }
+  ],
+  "comparisons": []
+}

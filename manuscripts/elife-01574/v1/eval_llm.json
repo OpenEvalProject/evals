@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C57",
+      "C58",
+      "C59",
+      "C94",
+      "C101",
+      "C102"
+    ],
+    "result": "A single complex-spike (CS) response causes short-term, CS-linked plasticity in Purkinje cell simple-spike firing, manifested as trial-over-trial depression. This depression is expressed selectively around the time of the instruction and accounts for approximately half of the observed trial-over-trial depression, with the other half attributed to same-trial facilitation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20, C46-C52, C57-C59 provide converging evidence from multiple analytical approaches (pair analysis, trio analysis, on-direction vs off-direction instructions) demonstrating CS-linked plasticity. The quantitative measurements (~5 spikes/s depression), statistical significance (p=0.002, n=90), and control for confounds (same-trial facilitation) strongly support this result. The finding builds on prior work (C21-C22, C94) with a larger dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C17",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C95",
+      "C107"
+    ],
+    "result": "Simple-spike firing rate at the time of an instruction modulates the probability of a complex-spike response, with each spike/s of simple-spike firing associated with a 0.005 increase in CS probability. This correlation (r=0.33, p<<0.001) is temporally restricted to the instruction period and is weak but statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C36-C42 provide quantitative evidence with appropriate statistical testing (correlation analysis, n=90 cells) and controls for potential confounds (C37-C38). The temporal specificity (C37) and control conditions showing no correlation (C43-C44) strengthen the finding. However, the authors appropriately characterize the modulation as weak (C42), and the mechanism remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C62",
+      "C63",
+      "C64",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C114"
+    ],
+    "result": "The disynaptic inhibitory pathway from Purkinje cells through the deep cerebellar nucleus to the inferior olive may allow Purkinje cells to modulate their own climbing-fiber inputs. Evidence includes: (1) correlation between simple-spike firing and CS probability; (2) learned decreases in simple-spike firing associated with reduced CS probability; (3) anatomical documentation of the required pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While claims C18, C79, C103-C106, C110 provide anatomical support and C80-C83, C108-C109 show correlational evidence consistent with the hypothesis, the authors themselves acknowledge this conclusion is not obligated by the data (C114). Alternative explanations exist (C100), and the causal direction remains unproven. The effect sizes are small (0.01 difference in probabilities, C82) though statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C75",
+      "C96",
+      "C97"
+    ],
+    "result": "Trial-over-trial learning in eye velocity is closely aligned with trial-over-trial changes in simple-spike firing rate, implying that CS responses are highly correlated across the Purkinje cell population. This correlation is necessary for the population-level behavioral output to track neural changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 demonstrate statistical alignment between neural and behavioral changes (p<0.05 for eye velocity, p<0.01 for simple-spike firing, n=90 neurons). The inference about population correlation (C54) is logically sound and supported by prior work (C96-C97). Modeling results (C75) confirm the necessity of neuron-neuron correlations for reproducing behavioral effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A computational model incorporating CS-linked plasticity, same-trial facilitation, neuron-neuron correlations in simple-spike firing, and synchronized CS responses successfully reproduces most experimental observations. Sensitivity analysis shows that almost all model features are necessary to capture the data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C76 describe a model with parameters grounded in experimental data and anatomical knowledge. The model successfully reproduces key experimental findings (C71-C72), and sensitivity analysis (C73-C75) demonstrates necessity of included features. However, the authors appropriately note limitations (C77-C78) and acknowledge that alternative models might also fit the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C109"
+    ],
+    "result": "Past behavioral learning inhibits future learning. When instruction-test intervals are switched from long (6s) to short (2.5s) after initial learning, the magnitude of learning never catches up to that obtained with consistently short intervals. This effect is instantiated within 10 trials and supports the hypothesis that learned depression of Purkinje cell responses inhibits instructive climbing-fiber inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 provide clear behavioral evidence with appropriate controls (comparing different instruction-test intervals). The effect is statistically significant (p<0.01, C90 figure reference) and consistent across two monkeys. The interpretation linking this to neural mechanisms (C91, C109) is reasonable given the other findings, though the causal chain remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Analysis of trial trios with controlled CS response histories reveals that same-trial facilitation of simple-spike firing rate is related to spontaneous fluctuations in simple-spike firing rate rather than being a direct consequence of the CS response itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 use a clever experimental design (trio analysis) to control for history effects. The observation that firing rates are identical across trials in 0-0-0 trios (C60) validates the approach, while the pattern in 0-0-1 trios (C61) supports the interpretation about spontaneous fluctuations (C62). The logic is sound and the controls are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The random-order learning paradigm, in which targets move downward at 20 deg/s and then undergo instructive direction changes (\u00b130 deg/s for 400 ms) at 250 ms, produces trial-over-trial learning while preventing long-term learning. This allows isolation of short-term learning mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 clearly describe the experimental paradigm with specific parameters. The rationale for the design (C29) is sound, and the behavioral outcome (C30) is demonstrated in the data. This is a methodological result that enables the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Floccular Purkinje cells show direction-tuned simple-spike firing during pursuit, with CS responses tuned to the opposite direction. Off-direction instructions evoke high-probability CS responses, while on-direction instructions inhibit the already-low spontaneous CS rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 describe well-established response properties of floccular Purkinje cells, illustrated in Figure 2. These are observational findings that characterize the neural population under study and provide context for the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The cellular mechanism underlying CS-linked plasticity is expected to involve CS-driven depression of parallel fiber to Purkinje cell synapses, potentially through cannabinoid-dependent synaptic depression, though other forms of plasticity may contribute at multiple sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C119 are explicitly speculative (evidence_type includes SPECULATION). While C116 cites supporting literature for cannabinoid-dependent depression, the authors acknowledge these are expectations rather than demonstrated mechanisms. This represents reasonable speculation grounded in the literature but lacks direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C92",
+      "C93",
+      "C98"
+    ],
+    "result": "The study creates a quantitative description of how CS-linked plasticity interacts with cerebellar circuit organization during behavioral learning, addressing a gap in prior research that had not monitored plasticity during actual learning behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93, C98 accurately characterize the contribution of this work relative to prior research (C8-C11). The study successfully bridges in vitro plasticity findings with in vivo behavioral learning, providing quantitative measurements during actual learning trials. This represents a genuine advance in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Experiments were conducted on four rhesus monkeys (two for neural recordings, two for behavior only) with appropriate ethical approvals. Analysis focused on 90 of 108 recorded Purkinje cells that showed robust CS responses (>3\u00d7 spontaneous rate).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C127 provide clear methodological details about subjects, procedures, and data selection criteria. The exclusion criteria (C127) are reasonable and transparent. Sample sizes are adequate for the statistical analyses performed.",
+    "result_type": "MINOR"
+  }
+]

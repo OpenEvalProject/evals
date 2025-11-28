@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C37",
+      "C38",
+      "C39",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C57",
+      "C78",
+      "C79"
+    ],
+    "result": "The Bam complex (BamABCDE) and SurA are both necessary and sufficient to promote the complete assembly of EspP in vitro. BamABCDE stimulated assembly of EspP derivatives with passenger domains ranging from 46 to 734 residues, resulting in proteolytic processing, \u03b2 domain folding and membrane insertion, and passenger domain translocation into proteoliposomes. No assembly occurred when either SurA or BamABCDE was omitted, or when BamAB or BamCDE subcomplexes were used instead of the holocomplex. BamABCDE expressed as a single complex was more active than Bam(AB)(CDE) reconstituted from subcomplexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C37-C39, C43-C46, C57, C78-C79 collectively demonstrate that BamABCDE and SurA are necessary and sufficient for EspP assembly through multiple lines of evidence: proteolytic processing (C38), requirement for both components (C39), assembly of various passenger domain sizes (C43), membrane insertion (C44-C45), translocation (C46), and superior activity of co-expressed BamABCDE (C78-C79). The data from Figures 3-5 and 8 provide strong converging support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "\u03b2 domain assembly is the rate-limiting step in autotransporter biogenesis. Kinetic analysis showed that EspP(46+\u03b2) and EspP(HA-251+\u03b2) were processed at nearly identical rates despite the 5-fold difference in passenger domain size. Even EspP(HA-714+\u03b2) with a much larger passenger domain was processed only slightly more slowly. A G1066A mutation that impairs \u03b2 domain folding caused similar delays in assembly of both small and large EspP derivatives, confirming that \u03b2 domain folding defects affect subsequent assembly steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C48-C54 provide strong kinetic evidence that \u03b2 domain assembly is rate-limiting. The similar assembly rates for derivatives with vastly different passenger domain sizes (C48-C49, C53), parallel accumulation of cleaved products (C50), and consistent effects of \u03b2 domain mutations across derivatives (C51-C52) all support this conclusion. The kinetic data in Figures 6-7 and Supplementary file 1 provide quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C55",
+      "C56",
+      "C59"
+    ],
+    "result": "Passenger domain translocation does not require external energy input. Assembly was successfully reconstituted using only purified BamABCDE, SurA, and proteoliposomes without ATP or membrane potential. ATP (0.1 mM) actually blocked assembly. A folding-deficient mutant and an intrinsically disordered passenger domain chimera both assembled in vitro, suggesting translocation is not driven exclusively by protein folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C42, C55-C56, C59 demonstrate that external energy is not required for translocation. The successful reconstitution with purified components alone (C59), inhibition by ATP (C42), and assembly of folding-deficient/disordered constructs (C55-C56) provide strong evidence. However, the mechanism by which translocation occurs without energy input remains unclear, and alternative energy sources (electrostatic interactions, low-energy pathways) are speculated but not proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C57",
+      "C58",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Autotransporter assembly is catalyzed by a single copy of the Bam complex. EspP derivatives were assembled into nanodiscs as efficiently as into proteoliposomes. Nanodiscs are stabilized by two copies of scaffold protein and produced a single band on Blue Native PAGE migrating slightly slower than a BamABCDE monomer, consistent with containing a single Bam complex. The passenger domain accumulated in parallel with the cleaved \u03b2 domain in nanodiscs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C57-C58, C85-C88 provide evidence that a Bam complex monomer is sufficient. The efficient assembly in nanodiscs (C57), which are designed to contain single membrane protein complexes (C85), combined with Blue Native PAGE analysis (C86) and parallel accumulation of products (C87), support this conclusion. However, the evidence is indirect\u2014the authors acknowledge they cannot definitively prove single-copy stoichiometry, only that it is consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C79"
+    ],
+    "result": "BamABCDE co-expressed from a single plasmid is more active than Bam(AB)(CDE) reconstituted from subcomplexes. OmpT folded much more efficiently with BamABCDE than Bam(AB)(CDE). This suggests the structure of the Bam complex assembled in vivo may differ from that reconstituted in vitro, and preliminary evidence indicates the complex remains intact in vivo without dynamic subcomplex dissociation/reassociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69, C79 are supported by the OmpT folding data in Figure 2E showing superior activity of BamABCDE. However, claims C70-C71 about structural differences and complex stability are speculative interpretations based on unpublished preliminary data. The authors acknowledge technical issues may explain the activity difference. The mechanistic basis for the activity difference requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C68"
+    ],
+    "result": "BamABDE and BamACDE partial complexes promoted EspP assembly less effectively than BamABCDE. Addition of Skp inhibited assembly in vitro, despite the \u03b2 domain clearly interacting with Skp in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C68 are supported by data in Figure 3\u2014figure supplements 2-3. The reduced activity of partial complexes (C40) and inhibition by Skp (C41) are clearly demonstrated. The authors appropriately note the paradox that Skp inhibits in vitro but interacts productively in vivo (C68), suggesting the in vitro system does not fully recapitulate productive Skp interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Assembly efficiency was ~10-20% under standard conditions and was limited by substrate stability rather than Bam complex or SurA concentration. Efficiency increased moderately when BamABCDE concentration was raised from 0.05 to 0.2 \u03bcM but not at higher concentrations. Adding fresh substrate after 5 minutes increased total yield proportionally, confirming the Bam complex can catalyze multiple rounds of assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by quantitative Western blot analysis and concentration-dependence experiments in Figure 3\u2014figure supplement 4. The conclusion that substrate stability limits efficiency (C84) is a reasonable inference from the concentration data. The multiple turnover capability (C82-C83) is clearly demonstrated and consistent with prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Background knowledge and prior work on autotransporter structure, assembly pathway, and translocation mechanism. This includes the domain organization of autotransporters, the role of the Bam complex and chaperones, structural features of \u03b2 domains and passenger domains, the vectorial folding model, and previous in vitro reconstitution studies with other \u03b2 barrel proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C6-C34, C72-C77) represent established knowledge and prior work that is appropriately cited. They provide essential context for interpreting the current results. The claims are well-supported by the cited literature and are not contested in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Expected outcomes for EspP(46+\u03b2) assembly based on prior work: proteolytic release of the 46-residue passenger domain and accumulation of a folded ~30 kD \u03b2 domain resistant to SDS denaturation unless heated. OmpT was expected to fold into an enzymatically active, SDS-resistant structure in the presence of proteoliposomes and SurA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 describe expected outcomes based on prior work (Skillman et al., 2005 and Hagan et al., 2010). These expectations were confirmed by the experimental results shown in Figures 2-3, validating the assay system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "The HA epitope tag is the last segment of the protein to traverse the membrane, confirming translocation went to completion when the tag is protected from protease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is a logical inference based on the known C-to-N directionality of translocation and the N-terminal position of the HA tag. The protease protection data in Figure 5C confirms this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Discussion of translocation energetics and mechanisms. ATP hydrolysis is required for Sec-mediated translocation. Passenger domain folding may contribute to driving translocation. Alternative mechanisms include electrostatic interactions, low-energy pathways guided by the Bam complex, or concerted translocation/\u03b2 domain assembly. Stalled translocation can be restarted in vivo, suggesting energy can be harnessed after \u03b2 domain insertion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C67 mix established facts (C60, C66 with citations), reasonable speculation based on the current data (C61, C67), and hypothetical mechanisms (C62-C64). Claim C65 cites unpublished results. While these discussions are appropriate for contextualizing the findings, the proposed mechanisms remain speculative and require experimental validation.",
+    "result_type": "MINOR"
+  }
+]

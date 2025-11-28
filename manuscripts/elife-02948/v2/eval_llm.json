@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors generated a mosaic Yap overexpression mouse model (YapKI) where a constitutively active Yap1S112A-IRES-GFP construct is expressed bimodally from the Rosa26 locus, creating GFPhigh (Yaphigh) and GFPlow populations. Yap is overexpressed and transcriptionally active specifically in GFPhigh hepatocytes, as demonstrated by CTGF upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model is well-validated through multiple complementary approaches: immunofluorescence showing Yap/GFP colocalization (C70), flow cytometry demonstrating >90% recombination efficiency (C29), qPCR showing exogenous Yap expression only in GFPhigh cells (C30), and CTGF upregulation as a functional readout of Yap activity (C31). The bimodal expression pattern is documented and stable over time (C26, C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C72"
+    ],
+    "result": "At steady state, mosaic Yap overexpression does not lead to clonal expansion of Yaphigh hepatocytes despite increased proliferation, because proliferation is counterbalanced by increased apoptosis. The liver/body weight ratio is only slightly elevated, hepatocyte numbers remain normal, and the proportion of Yaphigh cells remains stable over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a key finding supported by multiple lines of evidence: stable GFPhigh cell proportions over time (C34), increased BrdU incorporation in Yaphigh cells (C35), increased TUNEL-positive cells (C36), and normal hepatocyte numbers (C33). The data convincingly demonstrate that Yap activation alone is insufficient for net growth advantage at homeostasis. Statistical significance is shown for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "RNA-sequencing analysis reveals that Yap overexpression induces 821 genes in Yaphigh hepatocytes at steady state, with enrichment in cell adhesion, ECM, and cell-cell junction functional categories. Over 25% of Yap-activated genes contain TEAD binding sites, and 37% overlap with genes from a previous Yap transgenic model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The transcriptional analysis is rigorous with appropriate statistical thresholds (p\u22640.005, fold change \u22652), biological replicates, and validation against published data (C39). The TEAD binding site enrichment analysis using ENCODE ChIP-seq data provides mechanistic support (C41, C42). The functional enrichment analysis using DAVID is appropriate and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C74",
+      "C79"
+    ],
+    "result": "Yap requires a second signal from tissue damage to drive clonal expansion. After CCl4-induced liver injury, Yaphigh cells expand dramatically in the pericentral damage zone (>80% of hepatocytes by day 4), with significantly increased proliferation compared to Yaplow cells. This expansion is localized to injury sites and does not override normal liver size control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The injury response is well-characterized with appropriate controls showing comparable damage in WT and YapKI mice (C44). The spatial restriction of Yaphigh cell expansion to pericentral zones (C45, C47) and the maintenance of normal total hepatocyte numbers (C49) provide strong evidence for context-dependent Yap function. Statistical significance is demonstrated for proliferation differences (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C73"
+    ],
+    "result": "Yap function is required for hepatocyte proliferation during tissue repair but not for homeostatic proliferation. YapCKO hepatocytes show significantly reduced proliferation after CCl4 treatment and abnormal collagen deposition, while steady-state liver/body mass ratio and BrdU incorporation are actually higher in YapCKO mice than WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The loss-of-function experiments complement the gain-of-function studies effectively. The defective proliferation in YapCKO mice after injury (C50) with statistical significance, combined with the paradoxical increase in homeostatic proliferation (C52), strongly supports the context-dependent function of Yap. The collagen deposition phenotype (C51) provides additional evidence of impaired repair.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C80",
+      "C81"
+    ],
+    "result": "Chronic LPS treatment induces massive expansion of Yaphigh hepatocytes with significant hyperplasia, demonstrating that inflammatory signals can cooperate with Yap to promote proliferation. Preliminary data implicate IL-6 as one such cooperating signal, and many proliferation genes contain both TEAD and NF-\u03baB binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the LPS experiments show clear Yaphigh cell expansion (C54, C55) and hyperplasia (C56), the IL-6 data are explicitly described as preliminary (C80). The LLC-IL-6 experiment shows correlation but not causation, and the mechanistic link through transcription factor binding sites (C81) is speculative. Additional experiments with IL-6 blockade or direct IL-6 administration would be needed to definitively establish IL-6 as a cooperating signal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C75",
+      "C92",
+      "C93"
+    ],
+    "result": "Yap cooperates with injury signals to suppress hepatocyte differentiation and promote a progenitor phenotype. After CCl4 treatment, Yaphigh hepatocytes show morphological changes associated with dedifferentiation, strong repression of liver-specific genes, upregulation of embryonic and progenitor markers, and expansion of EpCam+ hepatic progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dedifferentiation phenotype is supported by multiple complementary approaches: morphological analysis (C58), comprehensive RNA-seq showing repression of liver-specific genes (C59, C93) and induction of progenitor markers (C61, C62), protein-level validation of glutamine synthase downregulation (C60), and flow cytometry demonstrating EpCam+ progenitor expansion (C63). The data are internally consistent and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C76",
+      "C83",
+      "C84"
+    ],
+    "result": "The expanded Yaphigh cell population contracts to baseline by day 14 after injury through apoptosis. TUNEL staining shows elevated cell death around central veins on day 4, pro-apoptotic genes including Dr5 are upregulated in Yaphigh cells, and Yaphigh cells from CCl4-treated livers show increased sensitivity to TRAIL-induced killing in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The contraction phase is well-documented with flow cytometry showing return to baseline proportions (C64), elevated TUNEL staining specifically in pericentral Yaphigh cells (C65), RNA-seq and qPCR validation of Dr5 upregulation (C66, C67), and functional validation through TRAIL sensitivity assays (C68). This provides the first in vivo evidence of Yap promoting apoptosis (C84), which is a significant finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C86",
+      "C87"
+    ],
+    "result": "Mosaic deletion of Mst2 in Mst1\u2212/\u2212 background does not lead to clonal expansion or liver size increase, suggesting that Yap activation in mature hepatocytes requires a second signal for proliferation, whereas activation in progenitor cells may be sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The Mst1/2 experiment (C43, C86) provides supporting evidence for the two-signal model, but the data are limited. The comparison with the Yimlamai et al. study (C87) is inferential and based on differences between models rather than direct experimental evidence. The low dose of adenovirus and the semi-quantitative PCR approach limit the strength of this conclusion. More rigorous quantification and longer time points would strengthen this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C85",
+      "C97"
+    ],
+    "result": "The mosaic model reveals that Yaphigh hepatocytes experience differential selective pressures depending on tissue context: no growth advantage at steady state, positive selection during early injury response, and negative selection during resolution. During homeostasis, growth-promoting function of Yap requires an additional signal provided by inflammation or injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C82, C97) is well-supported by the collective experimental evidence from steady-state, injury, and resolution phases. The context-dependent modulation of Yap function (C85) is demonstrated through multiple experimental paradigms (CCl4, LPS, YapCKO). This represents the main conceptual advance of the paper and is solidly grounded in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The introduction establishes the known functions of Yap as a transcriptional coactivator that promotes proliferation and inhibits apoptosis, its regulation by the Hippo pathway and cell contacts, and its context-dependent roles in different tissues and disease states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature, appropriately cited throughout. The authors accurately summarize prior work on Yap function (C1, C10), Hippo pathway regulation (C8, C9), tissue-specific roles (C11, C12, C13, C14), and tumor suppressor mechanisms (C17, C18, C19). The statement about lack of in vivo evidence for Yap-induced apoptosis (C21) appropriately sets up one of the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The discussion contextualizes the findings within physiological scenarios of liver growth, proposes inflammation as a key cooperating signal, and suggests that Yap coordinates tissue remodeling, cell cycle progression, and repression of tissue-specific functions during repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion appropriately distinguishes between physiological contexts where organ-wide Yap activation occurs (C77) versus localized injury responses (C78). The speculation about inflammation and microbiome contributions (C88, C89) is reasonable given the data, though not definitively proven. The synthesis about Yap coordinating multiple repair processes (C96) is well-supported by the experimental findings. The general principle about proliferation and differentiation incompatibility (C95) is appropriately cited.",
+    "result_type": "MINOR"
+  }
+]

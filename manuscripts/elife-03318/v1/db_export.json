@@ -1,0 +1,1317 @@
+{
+  "submission": {
+    "id": "16f9047f-3601-4f12-9002-dfbcbbda5763",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:06:30.930174Z",
+    "updated_at": "2025-11-28T22:06:30.930174Z"
+  },
+  "content": [
+    {
+      "id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "submission_id": "16f9047f-3601-4f12-9002-dfbcbbda5763",
+      "content_type": "manuscript",
+      "content_text": "# Metagenomic chromosome conformation capture (meta3C) unveils the diversity of chromosome organization in microorganisms\n\n## Authors\n\n- Martial Marbouty<sup>1</sup>\n- Axel Cournac<sup>1</sup>\n- Jean-Fran\u00e7ois Flot<sup>3</sup>\n- Herv\u00e9 Marie-Nelly<sup>1</sup>\n- Julien Mozziconacci<sup>4</sup>\n- Romain Koszul<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Groupe R\u00e9gulation Spatiale des G\u00e9nomes, D\u00e9partement G\u00e9nomes et G\u00e9n\u00e9tique Institut Pasteur Paris France\n2. Centre national de la recherche scientifique, UMR 3525 Paris France\n3. Biological Physics and Evolutionary Dynamics Group Max Planck Institute for Dynamics and Self-Organization G\u00f6ttingen Germany\n4. Department of Physics Laboratoire de physique th\u00e9orique de la mati\u00e8re condens\u00e9e, Universit\u00e9 Pierre et Marie Curie Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nGenomic analyses of microbial populations in their natural environment remain limited by the difficulty to assemble full genomes of individual species. Consequently, the chromosome organization of microorganisms has been investigated in a few model species, but the extent to which the features described can be generalized to other taxa remains unknown. Using controlled mixes of bacterial and yeast species, we developed meta3C, a metagenomic chromosome conformation capture approach that allows characterizing individual genomes and their average organization within a mix of organisms. Not only can meta3C be applied to species already sequenced, but a single meta3C library can be used for assembling, scaffolding and characterizing the tridimensional organization of unknown genomes. By applying meta3C to a semi-complex environmental sample, we confirmed its promising potential. Overall, this first meta3C study highlights the remarkable diversity of microorganisms chromosome organization, while providing an elegant and integrated approach to metagenomic analysis.\n\n## Introduction\n\nMicrobial species have for a long time been studied individually, leading to the development of applications in fields as diverse as agronomy, environment, or medicine. Sequencing and analyzing the genetic material of microbial communities directly collected from various natural environments such as skin, gut, soil, and water have dramatically improved our knowledge and understanding of their diversity and interrelations (Handelsman et al., 1998; Guermazi et al., 2008; The Human Microbiome Jumpstart Reference Strains Consortium, 2010; Mackelprang et al., 2011; Lundberg et al., 2012; Le Chatelier et al., 2013). A number of techniques have been developed to improve the resolution and accuracy of individual genome assembly in mixed populations, for instance by separating the species prior to sequencing (Fitzsimons et al., 2013) or by refining the clustering and scaffolding procedures used to process sequence data (Albertsen et al., 2013). However, these approaches remain generally limited by the use of complex technologies and/or by the need to construct multiple libraries. In parallel, an interesting development in the field of genome assembly has recently arisen from the realization that the physical properties of chromosomes contain information regarding their linear structure. The frequency with which two chromosomal segments come in contact, as measured in genome-wide chromosome conformation capture (3C) experiments (Dekker et al., 2002; Lieberman-Aiden et al., 2009), obeys to some extent the laws of polymer physics (Rippe, 2001; Wong et al., 2012). Contact frequencies can be used to identify synteny between DNA segments up to a few 100s kilobases (kb) apart, and two studies recently applied this concept to refining the human genome sequence (Burton et al., 2013; Kaplan and Dekker, 2013). Such approach therefore shows great promise as a general method for improving genome assemblies. Using chromosomal contacts data in order to generate the precise scaffold of a given genome is however a difficult task: hence, we developed GRAAL, a robust and explicit statistical method to tackle this issue at the highest resolution possible (Marie-Nelly et al., 2014a; Figure 1A). Since this approach enables the identification of individual chromosomes within the same nuclei, we hypothesized that tridimensional (3D) organization holds enough specific information to distinguish as well DNA segments of chromosomes present within different organisms (Figure 1A). In other words, if the interactions between chromosomes contained within a human or a fungal nucleus can be resolved, then it may be possible to resolve the chromosomes of various species mixed together. In the present work, we show that this is indeed the case: a single meta3C experiment, performed on a mix of species, allows the de novo assembly and scaffolding of the various genomes present in the mixture without prior knowledge of their genome sequences. We also show that the method allows deciphering the average 3D organization of these genomes in space, unveiling a remarkable diversity of chromosome organization in microorganisms. Therefore, meta3C paves the way to the integrated characterization and analysis of metagenomes in complex populations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03318/elife-03318-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic representation of the principle of a meta3C experiment. For a single species, one can (i) generate a genome-wide contact map but also (ii) use the genomic contact data to reorder the contact matrix of a poorly assembled genome (top) in order to scaffold its contigs into a more likely structure (bottom left). For a mixture of species, one can similarly generate a contact map directly from the mix (iii) and then use it to characterize the genomes of the species contained in the mixture (iv). (B) Chromosomal contact map of a mixture of three bacteria. The darker the shade in the matrix, the higher the contact frequency (color scale in log). Blue and green arrowheads: origins of replication of the chromosomes. Red and orange arrowheads: termination of replication. Each chromosome arm is represented with a color code. The percentages of interactions that occurred between different species are indicated within the matrix. We detected frequent interactions between a F plasmid sequence (black arrowhead) and a large duplicated region of the E. coli chromosome (dotted line). (C) 3D reconstruction of the entire contact matrix. Each replichore of the four chromosomes is represented with a different color, with the colored arrowheads indicating Ori positions. Black arrowhead: F\u2019 plasmid and E. coli chromosome when contacts with the duplication are taken into account; see Figure 1\u2014figure supplement 2 for more details. (D) Two different views of the 3D reconstruction of each of the three bacteria taken individually. Ter and Ori are indicated with colored arrowheads (see above). E. coli and B. subtilis domains are also shown. The F\u2019 plasmid is positioned according to its 3D contacts with the E. coli genome, without taking into account the duplication (dotted line within the E. coli genome). (E) Networks of interactions between the different contigs for the mix of three bacteria represented with a force-directed graph-drawing algorithm. Each node represents a contig from the de novo assembly. Each link in gray represents at least one 3C contact. Each color corresponds to one community detected by the Louvain algorithm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03318/elife-03318-fig1-figsupp1-v1.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03318/elife-03318-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Frequencies of interaction between the F\u2019 plasmid and the three bacterial genomes. (B) Contact frequencies between the F\u2019 plasmid and the E. coli genome, normalized by the read coverage to take into account the replication. The dotted region encompassing a duplication with frequent contacts with the F\u2019 plasmid corresponds to the region of interest analyzed in C. (C) Correlation analysis of the contact frequency between the F\u2019 plasmid (in pink) and the duplicated region (in blue) along the E. coli genome (in green). A strong shift in the correlation score occurred for a region indicated with the red dotted lines, indicating that the plasmid F\u2019 is in frequent contact with this region but not beyond it (and therefore must be carrying one copy of the duplicated region). This analysis allowed to position duplication breakpoints at coordinates \u223c240,000:380,000 along the chromosome. (D) PFGE analysis of the E. coli genome and corresponding Southern blots hybridized with probes from the genome (duplicated and non-duplicated region) and from the F\u2019 plasmid (see Table 2 for the coordinates of the probe). Orange triangle: migration front of the degraded DNAs of both E. coli genome and plasmid. (E) 3D reconstruction of genome-wide contact maps of the E. coli genome when (i) the duplicated region is considered as a single copy region of E. coli genome, (ii) the duplicated region is removed from the analysis, but not the plasmid F\u2019, and (iii) a region of a size similar to the duplicated region is removed from the analysis and replaced with a small DNA segment of the same size as the F\u2019 plasmid. (F) Schematic representation of the contacts between the F plasmid sequence (pink segment) and duplicated segments (blue) of the E. coli genome (green) that accounts for all the observations in panels A\u2013E.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03318/elife-03318-fig1-figsupp3-v1.jpg)\n\n## Results\n\n### Meta3C unveils the diversity of chromosome organization of a mix of three bacterial species\n\nWe first processed a controlled mix of three bacterial species\u2014Escherichia coli (Gram\u2212), Vibrio cholerae (Gram\u2212), and Bacillus subtilis (Gram+)\u2014into a metagenomic 3C (meta3C) library and sequenced it on an Illumina platform (Hiseq2000 \u2212 Paired End \u2212 2 \u00d7 104 bp). The reads were aligned on the three reference genome sequences to generate a chromosome contact map of the whole population (Figure 1B). To construct this map, each genome was divided into bins of 30 kb, and the contact frequencies were normalized so that their sum equaled one for each bin (see \u2018Materials and methods\u2019; Cournac et al., 2012). As in a typical 3C experiment squares appeared on the diagonal of the matrix, revealing individual chromosomes: the circular chromosomes of both E. coli and B. subtilis were recovered as separate entities, whereas the two chromosomes of V. cholerae yielded two squares exhibiting higher contact frequencies with each other than with the chromosomes of the other species\u2014as expected since these chromosomes share the same cellular compartment (Figure 1B). The background generated by cross-species interactions was low (0.37% of the total interactions), indicating that few chimeric pairs of reads (in which one read came from the genome of one species and the other read from the genome of another species) had been generated during the construction of the library (Figure 1\u2014figure supplement 1). The meta3C contact matrix was subsequently converted into a 3D structure (\u2018Materials and methods\u2019, Figure 1C, Animation 1). In this representation, bins are shown as beads and the distance between each pair of beads is optimized in proportion to the inverse of their measured contact frequency (Lesne et al., 2014). Using this approach, we recovered three populations of bins that corresponded to the three bacterial genomes, with the two chromosomes of V. cholerae being visualized in close vicinity to each other. The continuity and circularity of each genome was clearly apparent in the reconstructed structures.\n\n![Animation 1.](https://cdn.elifesciences.org/articles/03318/elife-03318-media1.gif.jpg)\n\nA sequence corresponding to a F plasmid (the fertility factor of E. coli) was characterized in the reads and appeared to interact with the genome of the E. coli HB101 strain used in the analysis (Figure 1B, black arrow). The 3D data provided us with the opportunity to carefully investigate the structure and spatial positioning of this plasmid with respect to the E. coli chromosome. We first noticed that a large (\u223c140 kb) region of the E. coli genome exhibited a two fold increase of the read coverage, indicating a segmental duplication. This region was also enriched in contacts with the F plasmid sequence (Figure 1\u2014figure supplement 2A,B), prompting us to hypothesize that one of the two copy was actually carried by a F\u2019 plasmid (i.e., a F plasmid carrying bacterial sequences). A correlation analysis of the contacts between these two regions of interest (a chromosome region encompassing the duplication and the plasmid) revealed clearly that, on the one hand, a copy of the duplication is in close contact with the plasmid (with an IS2 at one the boundaries [coord. 390,063] and an IS3 within), and that on the other hand the plasmid contacts with the E. coli genome drop sharply past the duplication boundaries, in agreement with an integration of one copy of the duplication within a F\u2019 plasmid (Figure 1\u2014figure supplement 2C). This hypothesis was confirmed experimentally by a Southern blot of a pulsed-field gel (Figure 1\u2014figure supplement 2D). Having deciphered the linear structure of the F\u2019 plasmid within this strain, we investigated its 3D organization with respect to the E. coli genome (Figure 1\u2014figure supplement 2E). The frequent contacts each copy of the duplication makes with both the chromosome and the F\u2019 plasmid resulted in an artifactual co-localization of the plasmid with the chromosome, since the contacts within each of the copies cannot be discriminated and are all positioned along the genome (see Figure 1\u2014figure supplement 2E, i and Animation 2). To alleviate this artifact, we generated a contact map were all the contacts involving the duplicated region were removed (Figure 1\u2014figure supplement 2E, ii and Animation 3). In the corresponding 3D structure, the bin representing the plasmid appeared now well isolated from the chromosome (Figure 1D). As a supplementary control, we verified that removing from the genome a region of a size similar to the duplication did not impair the 3D positioning of a DNA segment of a size similar to the F\u2019 plasmid, positioned within this deleted region (blue dot; Figure 1\u2014figure supplement 2E, iii). Interestingly, besides this duplication, two regions along the E. coli chromosome appeared enriched in contacts with the F\u2019 plasmid: the replication origin (Ori) and, to a lower extent, the termination (Ter) regions (Figure 1\u2014figure supplement 2B). This indicates that the F\u2019 plasmid is positioned preferentially in the vicinity of these regions in fast growing cells, as expected given the preferred location of the F plasmid in mid, 1/4, and 3/4 positions in the cell, which are also preferred positions for Ori/Ter regions during the cell cycle (Gordon et al., 1997; Niki and Hiraga, 1997). These results illustrate the high specificity of the meta3C approach, which allows the identification of genomic regions belonging to each species, and the power of using DNA physical contacts to decipher complex structures in individual genomes.\n\n![Animation 2.](https://cdn.elifesciences.org/articles/03318/elife-03318-media2.gif.jpg)\n\n**Animation 2.:** The contacts made by the duplicated region are taken into account. Because of the frequent contacts of one copy of this region with the chromosome and the other copy with the plasmid and of the impossibility to distinguish those two copies, the plasmid is now artificially dragged into the vicinity of the E. coli chromosome.\n\n![Animation 3.](https://cdn.elifesciences.org/articles/03318/elife-03318-media3.gif.jpg)\n\n**Animation 3.:** The contacts made by the 140 kb duplication are not taken into account, so the position of the plasmid depends only on its contacts with the rest of the genome.\n\nThe remaining two genomes were also considered individually and their average 3D reconstructions generated, unveiling a remarkable diversity of global chromosomal organization in these three bacterial species during exponential growth (Figure 1D, Animation 4, and Animation 5). Interestingly, this diversity appeared rooted in shared principles. One structural feature shared by these bacterial genomes was the global symmetry of the replichores, that is, the two chromosomal arms between the Ori and Ter. In B. subtilis and V. cholerae this symmetry was made clearly visible, in the growth conditions used in this experiment, by the presence of a counter-diagonal in the map (running opposite to the continuous and strong signal that accounts for the contact between adjacent DNA segments; see also the correlation version of the contact map on Figure 1\u2014figure supplement 3). This global symmetry as well as this second opposite diagonal, reflecting a longitudinal organization of the two replichores extending along parallel axes within the cell, were also reported for Caulobacter crescentus (Umbarger et al., 2011; Le et al., 2013). The two chromosomes of V. cholera were found in two different conformations, with chromosome 1 exhibiting a more \u2018open\u2019 configuration and the replichores of chromosome 2 appearing paired (Figure 1D). The two arms of the E. coli chromosome exhibited an open 3D structure, with no visible diagonal in the matrix.\n\n![Animation 4.](https://cdn.elifesciences.org/articles/03318/elife-03318-media4.gif.jpg)\n\n![Animation 5.](https://cdn.elifesciences.org/articles/03318/elife-03318-media5.gif.jpg)\n\nAnother 3D feature shared by these bacteria consisted in the presence of at least one well-defined domain centered either on the Ori or Ter region. The 3D reconstruction of the B. subtilis genome revealed a relatively compact domain at the Ori region that overlapped with the region of the genome containing the centromere-like parS sites, in agreement with the structural role described for the ParS/Spo0J/Smc complex in the literature (Gruber and Errington, 2009; Sullivan et al., 2009). By contrast, the E. coli chromosome presented a strong Ter domain that was clearly identifiable in the contact map and exhibited fewer contacts with the rest of the genome, reflecting most likely the structuring role of the MatP/matS system (Mercier et al., 2008). For V. cholerae, the Ter regions of chromosomes 1 and 2 were in closer proximity than the two Ori regions, reflecting the controlled segregation mechanisms of these two unequal-sized chromosomes (Val et al., 2008). Interchromosomal contacts did not span the entire length of chromosome 1 but started between the Ori macrodomain of chromosome 2 and positions located at about one-third of chromosome 1 arms (black dotted squares, Figure 1D). In order to visualize the interplay between replication and genomic organization, we applied a color code to represent the read coverage of the genome (reflecting the average progression of the replication fork and thus the relative timing of replication) atop the genome structure of V. cholerae (Animation 6). Whereas the two Ter regions appeared of the same color, consistent with the fact that both chromosomes I and II achieve replication synchronously (Rasmussen et al., 2007), the Ori regions presented, as expected, different coverages: chromosome I initiates replication first whereas chromosome II starts only to replicate later. This analysis provides a glimpse on the spatial and temporal articulation of the replication program of V. cholerae, which would be an interesting example of organization-dependent function. Overall, the chromosome organizations of the three bacteria analyzed (under the exponential, rich-medium growth conditions used in the experiment) appeared remarkably different but shared similar principles, such as the presence of well-defined domains. In order to see if those shared features are conserved across bacteria species, it will be interesting to use a similar high-resolution 3C approach to investigate the organization of bacterial linear chromosomes.\n\n![Animation 6.](https://cdn.elifesciences.org/articles/03318/elife-03318-media6.gif.jpg)\n\n**Animation 6.:** The color scale now represents the read coverage along the genome, hence displaying the differential replication timing of the two chromosomes, from early (over-covered) replicated regions (in blue) to terminal regions (in red).\n\nThe low amount of \u2018background interaction\u2019, that is, chimeric religation events between restriction fragments belonging to different species, in the experiment incited us to test whether the genomes of these three bacterial species could be directly assembled de novo from the meta3C data by taking advantage of the presence of \u223c80% \u2018regular\u2019 paired-end reads in the library. This relatively high percentage results from the fact that, unlike the Hi-C protocol (Lieberman-Aiden et al., 2009), meta3C does not involve an enrichment step for religated fragments (\u2018Materials and methods\u2019). Using the assembly program IDBA-UD (Peng et al., 2012), a set of 2,436 contigs was generated from the 3C read pairs (N50 = 55 kb, total length 12.5 Mb). The quality of these contigs was assessed by comparing them with published reference genomes, which showed that the assembled contigs covered respectively 96%, 98%, and 93% of the V. cholerae, E. coli, and B. subtilis reference genomes and that only 0.7% of the contigs (52,373 bp total) were chimeric. The meta3C reads were then realigned on the de novo contigs and the contact information was used to pool the contigs into communities sharing similar contact behavior (hence likely belonging to the same genome) using the Louvain algorithm (Blondel et al., 2008). Three communities of contigs were generated, each corresponding to a different species and covering respectively 96, 98, and 92% of the genomes of V. cholerae, E. coli, and B. subtilis, respectively (Figure 1E). This shows that meta3C does not only allow convenient high-throughput analysis of the 3D organization of a mix of bacterial species but also provides an efficient way to assemble de novo the genomes of these species.\n\n### Meta3C unveils the conservation of chromosome organization in a mix of 11 yeast species\n\nTo see if this approach could be applied to a more complex mix of eukaryotic species, we pooled 11 yeast species and performed a meta3C experiment directly on this mixture (Figure 2A). The meta3C contact matrix of the 11 reference genomes put side by side presented discrete squares on the diagonal, each corresponding to a species from the mix (Figure 2A; see also Figure 2\u2014figure supplement 2). The 3D representation of this contact map revealed, again, a very low level of background interactions in the experiment (Figure 2B, Animation 7; see also Figure 2\u2014figure supplement 1). In each of the squares, the co-localization of centromeres resulting from the Rabl configuration was clearly visible (Figure 2C, blue arrowheads; see also Figure 2\u2014figure supplement 4; Duan et al., 2010; Marie-Nelly et al., 2014b). In contrast to the diversity of structures observed for the bacterial species analyzed above, the Rabl configuration appeared as the primary driver of yeast genome organization, as illustrated by the individual 3D structures of the genomes of Yarrowia lipolytica and Naumovozyma castellii (Figure 2C, Animation 8,9). To test the potential of using meta3C reads for assembling de novo such a complex mix of yeast genomes, we assembled them using IDBA-UD (N50 = 6,914 bp, total length 138 Mb). The breadth of coverage of the 11 genomes by the resulting contigs ranged from 89.8% (Candida albicans) to 98.3% (N. castellii), with chimeric contigs (misassemblies) representing \u223c20% of the total (37 Mb). This high percentage of chimera contrasted with the very low level of misassemblies observed previously for the mix of three bacterial genomes. To monitor the influence of chimeric pairs of reads (originating from intergenomic 3D contacts) on the generation of chimeric contigs, we performed an assembly on the same library using the Velvet software that considers all reads as independents (i.e., without pairing them; Zerbino and Birney, 2008). This assembly exhibited a dramatic increase (73%, 69 Mb) in chimeric contigs, demonstrating that these misassemblies were not caused by intergenomic 3C paired-end reads but rather by the frequent occurrence of identical or near-identical genome regions (such as transposable elements) in those eukaryotic genomes. The presence of chimeric contigs in the IDBA_UD assembly did not impede the clustering of the most contigs based on their contact frequencies as determined using the Louvain algorithm. The clustering procedure resulted in 13 sub-groups: one for each of the 11 yeast species, one corresponding to an E. coli contaminant, and one comprising various misassembled fragments of mitochondrial genomes. In total, only 1% of the assembly (2% of the contigs) could not be attributed to a given species (Figure 2D). A de novo assembly followed by scaffolding using our dedicated program GRAAL (Marie-Nelly et al., 2014a) was then applied to the pool of contigs identified as belonging to the genome of N. castellii, for which a high-quality reference sequence was available (Figure 2E; Gordon et al., 2011). Since this algorithm involves a splitting procedure of the contigs into restriction fragments, chimeric contigs were broken into non-chimeric parts thereby correcting the assembly errors mentioned above. After processing, 11 superscaffolds were recovered, with the reordered contact map presenting the typical co-localized centromeres regions expected from the Rabl configuration (Figure 2E; Animation 10). Overall these 11 scaffolds covered 94.5% of the reference sequence of the 10 chromosomes (chromosome 3 was split into two scaffolds because of the presence of the large, unassembled rDNA array on this chromosome), illustrating the ability of this de novo analysis to correctly assemble and scaffold unknown genomes (see Figure 2\u2014figure supplement 3). The same approach was applied to other species in the mixture, such as Saccharomyces bayanus (Cliften et al., 2003; Scannell et al., 2011; Figure 2\u2014figure supplement 4). Our de novo assembly of the genome of S. bayanus was more fragmented than the one of N. castellii, probably as a result of the lower sequencing depth for this species in the mixture (Figure 2\u2014figure supplement 4C; Animation 11). Interestingly, not only did de novo assembly and scaffolding from meta3C reads allow genome assembly from a mixed population, but the 3D organization of the assembled genomes was also apparent in the resulting contact maps. For instance, interchromosomal signals corresponding to centromere clustering were clearly visible in the matrix, emphasizing that 3D signals could also be used to annotate the centromeres of unknown species isolated from meta3C data (Figure 2F; Figure 2\u2014figure supplement 4B; Marie-Nelly et al., 2014b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03318/elife-03318-fig2-v1.jpg)\n\n**Figure 2.:** (A) meta3C contact map of the mix of eleven species. (B) 2D projection of the 3D reconstruction of the entire meta3C contact matrix. Each genome occupies an isolated position in space (the 2D projection induces a visual overlap for some species). The color code is the same as for the schematic yeasts on the left panel in (A). (C) Close-up on the contact maps of three species, with the 3D representation of the matrix in vis-\u00e0-vis. (D) Quantification of the assembly performed using meta3C reads. The first number indicates the amount of total DNA in the community. The two numbers that follow indicates the proportion of the contigs of each community in regards to the total assembly (% of total kb, % of total number of contigs). (E) Top: contact map of the contigs present within the community containing mostly sequences from N. castellii. The bottom contact map corresponds to the maps recovered following the GRAAL scaffolding. 11 large scaffolds were retrieved, in near-perfect agreement with the known number of chromosomes of this species. Blue triangles: inter-scaffold signal corresponding most likely to the 10 centromeric interactions (Marie-Nelly et al., 2014b). (F) Corresponding 3D structure of the N. castellii de novo meta3C assembly combined with GRAAL processing. The collinearity between two of the resulting superscaffolds and their corresponding reference chromosome sequences is represented in the right panels.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03318/elife-03318-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Mitochondrial genomes behaved as separate entities.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03318/elife-03318-fig2-figsupp2-v1.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03318/elife-03318-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Comparison between the scaffolds generated by GRAAL and the reference sequences of the N. castellii chromosomes: y-axis: coordinates along the new scaffolds. x-axis: coordinates along the reference chromosome. The position of the rDNA cluster is indicated. (B) The eleven largest scaffolds are aligned against the concatenated reference genome, covering 94.5% of the total sequence.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/03318/elife-03318-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Contact map obtained from a draft genome assembly of S. bayanus. (B) Contact map and corresponding 3D structure of the S. bayanus de novo meta3C assembly combined with GRAAL processing. Blue triangles: inter-scaffold signal corresponding most likely to the 10 centromeric interactions. (C) Comparison between the scaffolds generated by GRAAL and the reference sequences of S. bayanus chromosomes. The main scaffold is indicated in bold, whereas the other ones correspond to other scaffolds and are shown here for information only.\n\n![Animation 7.](https://cdn.elifesciences.org/articles/03318/elife-03318-media7.gif.jpg)\n\n![Animation 8.](https://cdn.elifesciences.org/articles/03318/elife-03318-media8.gif.jpg)\n\n![Animation 9.](https://cdn.elifesciences.org/articles/03318/elife-03318-media9.gif.jpg)\n\n![Animation 10.](https://cdn.elifesciences.org/articles/03318/elife-03318-media10.gif.jpg)\n\n![Animation 11.](https://cdn.elifesciences.org/articles/03318/elife-03318-media11.gif.jpg)\n\n### Meta3C allows exploring the genomes of unknown species in a complex environmental sample\n\nAs an even more challenging test of the meta3C approach, we confronted it with an environmental sample of unknown and presumably complex composition. For this purpose, sediments were collected from an affluent of the Seine river near Paris. Because environmental genomes usually contain a tremendous diversity of species, including many eukaryotes of large genome sizes, we decided to enrich our sample for prokaryotic organisms by cultivating it for 14 hr in Luria broth and filtrating it prior to meta3C library construction and sequencing. As an internal control of the assembly process, reads from a V. cholerae 3C library were added to the meta3C sequences before running IDBA-UD (N50 = 1.2 kb). Contigs generated from the meta3C sediment library were clustered using the Louvain algorithm, yielding 184 significant communities (total size 111 Mb, median size 300 kb, with 19 communities containing more than 1 Mb). The largest 11 ones were included in a contact matrix, revealing again squares along the diagonal (Figure 3A). Each community was analyzed using MG-RAST (Glass et al., 2010), showing relatively homogeneous taxonomic compositions in most communities (Figure 3\u2014figure supplement 1). For each community, more than 80% of the genes identified by MG-RAST within the contigs were attributed to the same taxonomic class. Going down to family level, 8 out of the 11 largest communities were >80% homogeneous, with the remaining three presenting more complex patterns that will require further investigation and development. One community was composed of contigs covering 95% of the V. cholerae genome control (for a total amount of 3.9 Mb congruent with the expected size of the genome; Figure 3B, i), confirming the ability of this approach to pool DNA regions according to their genome of origin. Other communities contained contigs belonging to other discrete species, related for instance to the ubiquitous bacteria Aeromonas veronii or Exiguobacterium sp. (for total amounts of 4 Mb and 3.1 Mb, aligning to 72% and 36% of the reference genomes of 4.5 Mb and 3 Mb total sizes, respectively; Figure 3B, i). Several species belonging to the classes Bacilli and Enterobacteria were also present in the mix (probably favored by the LB enrichment step). In some instances, weak interactions between communities from these clades suggested that a genome had been split into more than one community or that two communities contained mixtures of closely related species (see dotted square on Figure 3A). In spite of this problem the approach seemed to perform relatively well, as reflected by the analysis of the contacts with plasmids. Whether integrated in a genome or under circular forms (see Figure 1B), plasmids are expected to present mostly contacts with their host genome since they share the same cellular compartment (see also the contacts of plasmid F with the E. coli genome in Figure 1\u2014figure supplement 1A). In this study, plasmids annotated as belonging to Bacillus megaterium were retrieved almost entirely within a single Bacilli community (Figure 3B, ii), suggesting that this community presented indeed a relatively homogeneous content and therefore validating our approach. Although the limited sequencing depth of our experiment restrained our ability to scaffold optimally the contigs of the communities using GRAAL, mapping the reads present in the community related to A. veronii against the reference genome of this species revealed a 3D structure reminiscent of those of B. subtilis and C. crescentus (Figure 3C; Animation 12). Hence, the 3D information contained within the chromosome of this species was efficiently captured during the meta3C experiment, suggesting that increasing the sequencing depth of a meta3C library will likely make it possible to generate de novo scaffolds and 3D clusters for genomes entirely unknown or underrepresented, shedding light at the same time onto their overall organization.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03318/elife-03318-fig3-v1.jpg)\n\n**Figure 3.:** (A) meta3C contact map of the largest 11 communities of contigs in the matrix before (bottom left) and after (upper right) clustering. Each square corresponds to a community grouping contigs that exhibit significantly more contact with each other than with other communities. For each community, an index, the sum of the sequences, and candidate classes are indicated on the right side of the matrix. Dotted square underlines inter-community contact enrichments. C6868*: V. cholerae. (B) Illustration of the interactions between the 11 largest communities of contigs using a force-directed graph drawing algorithm Force Atlas 2 (Jacomy et al., 2014). Each node corresponds to a contig (or a chunk of a contig) and each link represents at least one meta3C interaction. The colors correspond to the communities identified by the Louvain algorithm and described in A. (C) i: For three communities, the contigs were mapped against the closest reference genomes identified (Exiguobacterium sp. AT1b, A. veronii B565, V. cholerae N16961, plasmids pBM700 and pBM200). To illustrate the specificity of the approach, each community was mapped against each of those genomes (the color code is the same as in A and the order from the outer circle to the inner circle is indicated in the middle). ii: Similarly, the three Bacilli communities highlighted in color were mapped against two plasmid sequences. (D) Genomic contact map of an unknown species (most likely A. veronii or a close relative) generated by mapping the reads present in the community 478 against the genome of A. veronii (bin size = 10 kb). The corresponding 3D structure is indicated next to the contact map.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03318/elife-03318-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The similarity between the sequences present in these communities and those of known species was to annotate them. (A) Homogeneity regarding class-level annotations; (B) homogeneity regarding family-level taxonomy.\n\n![Animation 12.](https://cdn.elifesciences.org/articles/03318/elife-03318-media12.gif.jpg)\n\n**Animation 12.:** Blue and black beads: Ter and Ori regions, according to the reference genome of A. veronii.\n\n## Discussion\n\nOur application of meta3C to controlled mixes of bacteria and eukaryotes revealed new 3D genome organizations for four bacterial and several yeast species and showed that this approach can also be used to generate de novo communities of contigs corresponding to individual species in complex metagenomic mixtures (a flowchart of this approach is presented in Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03318/elife-03318-fig4-v1.jpg)\n\n**Figure 4.:** First, the reads from the sequenced meta3C library are assembled into contigs. The meta3C contact information between the contigs is then used to generate a network of the contacts of all contigs against each other. This contact network is searched for so-called \u2018communities\u2019 (by analogy with social network analysis) using the Louvain algorithm. The significant communities can be annotated by NCBI and correspond principally to sequences from individual species. Ultimately, the contact information can be used to reorder the DNA segments within each community and thus generate the 3D contact map of the corresponding species. In this process contigs can be reassembled by software such as GRAAL, thereby decreasing the percentage of chimeric fragments in the assembly and improving its continuity. DNA segments originating from other species are put aside automatically during this process given their lack of 3C contacts with the rest of the genome under reassembly.\n\nThe average organization of yeast genomes was found to differ radically from those of bacterial nucleoids, most likely because of contrasted replication and division processes and timings. Most of the organization in Saccharomycetes appears driven by the clustering of the centromeres at the spindle pole body; this clustering remains the prominent structural feature throughout most of the cell cycle (i.e., G1 + S phase + G2) during exponential growth, with mitosis representing only a fraction of the cycle. In bacteria, in contrary, the strong overall organizational features are the activation of a unique replication origin per chromosome, the ability to initiate multiple replication forks, and the fast division cycle. In addition, important topological constraints are exerted on bacterial circular chromosomes around the Ter regions, and our observation of significant contacts at these positions was probably linked to these phenomena. More imaging and 3C-like analyses will be required to understand the precise choreography of chromosome segregation in these different microorganisms.\n\nTaking advantage of chromatin conformation capture data to address genomic questions is a dynamic field: while this paper was under review, two studies were released that also aimed at exploiting the physical contacts between DNA molecules to deconvolve genomes from controlled mixes of microorganisms (Beitel et al., 2014; Burton et al., 2014). Although these analyses open interesting perspectives, the meta3C approach presented in this work differs in several aspects. First, both studies used HiC to scafold genomes from contigs obtained either from simulated assemblies (Beitel et al., 2014) or from independent experiments (Burton et al., 2014). Our approach conveniently uses a single meta3C library and a blind analysis for generating contigs, binning them, scaffolding them, and revealing the 3D structure of the corresponding species. Such approach based on a single experiment may require more sequencing depth than an approach combining multiple libraries (HiC + shotgun + mate pair, for instance), but the exact trade-off remains to be determined and depends on the specifics of the experiment, the sequencing technology, and on the amount of starting material available.\n\nBesides, our blind analysis allowed us to delineate communities without prior knowledge of the number of species present in the mix; this contrasts with the approach of Burton et al. (2014), which apparently requires such prior knowledge. Similarly, we generate de novo chromosome scaffolds without any assumptions regarding the number of chromosomes present in the mixture, a realistic approach when it comes to exploring environmental samples or complete the assembly of complex genomes.\n\nFurthermore, our experience with the analysis of chromosome organization in both bacteria and yeast species emphasized the importance of the initial steps for the success of such experiment. The adequacy between the cross-linking step, which depends on the incubation time and the concentration of the fixating agent, and the restriction step and choice of the restriction enzyme, is essential for the recovery of long-distance cis contacts that improve de novo genome scaffolding and, importantly, reveal the 3D structure. Optimizing the cross-linking conditions allows new insights into the diversity of 3D chromosome organization of several species.\n\nLast but not least, the meta3C approach remains to be applied on a truly natural (not enriched) sample, such as a gut or wine microbiome. Based on our experience, we envision that, this experiment should include several (two at least) enzymes recognizing sites with various GC percentages, in order for both GC-rich and GC-poor genomes to be appropriately represented in the meta3C library. Doing the experiment with multiple enzymes would also allow taking into account GC content (in addition to average coverage) to improve the binning of contigs into communities. Identifying contigs presenting largely divergent characteristics compared to their neighbors and redistributing them to their most likely communities would also lead to improved assemblies for each species (see for instance Albertsen et al., 2013). Overall, quantifying physical contacts between chromosomes provides an objective and convenient principle to segregate the genomes of sympatric species and, from there, to explore the biological diversity of complex ecosystems.\n\n## Materials and methods\n\n### Construction of a bacteria meta3C library\n\nMeta3C protocols were adapted from 3C protocols (notably, Dekker et al., 2002; Oza et al., 2009). The strains used for the meta3C bacterial library were B. subtilis BS168 (Burkholder and Giles, 1947), E. coli HB101 (Boyer and Roulland-Dussoix, 1969), and V. cholerae MV127 (Val et al., 2012). For each strain, 100 ml of LB were inoculated with 106 cells/ml and incubated at 37\u00b0C until a final concentration of about 2 \u00d7 107 cells/ml. Cells from the different species were then mixed and cross-linked with fresh formaldehyde for 30 min (3% final concentration; Sigma Aldrich, Saint Louis, Missouri) at room temperature (RT) followed by 30 min at 4\u00b0C. Formaldehyde was quenched with a final concentration of 0.25 M glycine for 5 min at RT followed by 15 min at 4\u00b0C. Fixed cells were collected by centrifugation, frozen on dry ice, and stored at \u221280\u00b0C until use. Frozen pellets of 3 \u00d7 109 cells were thawed on ice and resuspended in a final volume of 650 \u00b5l 1\u00d7 TE pH 8 before adding 4 \u00b5l of Ready-Lyse lysozyme (35 U/\u00b5l; Tebu Bio, France), followed by incubation at RT for 20 min. SDS was added to a final concentration of 0.5% followed by 10 min RT incubation. 50 \u00b5l of lysed cells were put in eight tubes containing 450 \u00b5l of digestion mix (1\u00d7 NEBuffer 1 [New England Biolabs, Ipswich, Massachusetts], 1% Triton X-100, and 100U HpaII enzyme [NEB; C^CGG]). The chromatin was then digested for 3 hr at 37\u00b0C, split into four aliquots, and diluted with 8 ml ligation buffer (1\u00d7 ligation buffer NEB without ATP, 1 mM ATP, 0.1 mg/ml BSA, 125 units of T4 DNA ligase [5 U/\u00b5l \u2212 Weiss Units \u2212 Thermo Fisher Scientific, Waltham, Massachusetts]). Ligation was performed at 16\u00b0C for 4 hr followed by a de-cross-linking step consisting of an overnight (ON) incubation at 65\u00b0C in the presence of 250 \u00b5g/ml proteinase K in 6.2 mM EDTA. DNA was then precipitated with 800 \u00b5l of 3 M sodium-acetate (pH 5.2) and 8 ml iso-propanol. After 1 hr at \u221280\u00b0C, DNA was pelleted by centrifugation. Pellets were suspended in 500 \u00b5l 1\u00d7 TE buffer and the RNA degraded with a final concentration of 0.03 mg/ml RNAse for 1 hr at 37\u00b0C. DNA was transferred into 2 ml centrifuge tubes, extracted twice with 500 \u00b5l phenol\u2013chloroform pH 8.0, precipitated, washed with 1 ml cold ethanol (70%), and diluted in 30 \u00b5l 1\u00d7 TE buffer. All tubes were pooled and the resulting 3C library was quantified on gel using the program QuantityOne (Bio-Rad, Richmond, California).\n\n### Construction of a yeast meta3C library\n\nThe strains used for the meta3C yeast library were Y. lipolytica CLIB122, L. kluyveri CBS3082, Candida lusitaniae ATCC42720, C. albicans SC5T314, Kluyveromyces lactis CLIB210, S. bayanus 623-6C, Kluyveromyces thermotolerans CBS6340, Saccharomyces cerevisiae BY4741, N. castellii CBS 4309, Candida glabrata CBS138, and Debaryomyces hansenii CBS767. All strains were grown at 30\u00b0C in 50 ml BMW medium until reaching 1 \u00d7 107 cells/ml (Thompson et al., 2013). The cultures were then mixed and cross-linked for 30 min with fresh formaldehyde (3%). The formaldehyde was quenched with a final concentration of 0.25 M glycine for 5 min at RT followed by 15 min at 4\u00b0C. Fixed cells were pooled as aliquots of 3 \u00d7 109 cells, collected by centrifugation, frozen on dry ice, and stored at \u221280\u00b0C.\n\nAliquots were thawed on ice and resuspended in 6 ml of 1\u00d7 DpnII buffer (NEB). The cells were then split into four tubes and lysed using a Precellys grinder (3 cycles: 6700 rpm \u2212 3 \u00d7 20 s ON/60 s OFF; Bertin Technologies, France) and VK05 beads. Lysed cells were pooled and their volume was adjusted to 6 ml with 1\u00d7 DpnII buffer. SDS was added to a final concentration of 0.3% and the solution was split into twelve 2 ml tubes (Eppendorf\u2013DNA LoBind, Eppendorf, Germany) and incubated for 20 min at 65\u00b0C followed by 30 min at 37\u00b0C under agitation. As a next step, 6 \u00b5L of 10\u00d7 restriction enzyme buffer and 50 \u00b5L of Triton X-100 20% were added to each tube, mixed carefully, and incubated at 37\u00b0C for another 30 min under agitation. The chromatin was digested for 3 hr with 50 units of restriction enzyme under agitation (DpnII: G^ATC, NEB). Following incubation, 100 units of restriction enzyme were added and the incubation was extended overnight. The digested chromatin was pooled into four equal reactions and the samples were then processed as described above.\n\n### Construction of an environmental meta3C library\n\nThe river sediments (300 g) were incubated for one night in 500 ml of LB at 30\u00b0C. The next morning, the culture was filtrated on Whatman paper (with a size cut-off of 15 \u00b5m) and 20 mg of wet material were resuspended in 100 ml of fresh LB, then treated with fresh formaldehyde (5% final concentration) for 30 min at RT followed by 30 min at 4\u00b0C. The formaldehyde was quenched with glycine (0.4 M final) for 5 min at RT followed by 15 min at 4\u00b0C. Fixed cells were collected by centrifugation, frozen on dry ice, and conserved at \u221280\u00b0C until use. Frozen pellets were slowly thawed on ice and resuspended in 800 \u00b5l of TE 1\u00d7. Cells were then lysed using a Precellys grinder (3 cycles: 6700 rpm \u2212 3 \u00d7 20 s ON/60 s OFF) and VK05 beads. About 600 \u00b5l of lysed cells were recovered, to which SDS was added at a 0.5% final concentration before incubation at RT for 10 min. 50 \u00b5l of lysed cells were put in eight tubes containing 450 \u00b5l of digestion mix (50 \u00b5l tampon NEB 2 10\u00d7, 50 \u00b5l Triton X-100 10%, 10 \u00b5l of HaeIII enzyme [GG^CC] \u2212 10 U/\u00b5l NEB, 340 \u00b5l H2O). Chromatin was then digested during 3 hr at 37\u00b0C under agitation. The digested chromatin was pooled into four equal reactions and the samples were processed as described above.\n\n### Illumina sequencing\n\nAliquots of 5 \u00b5g of each 3C library were dissolved in water (final volume 130 \u00b5l) and sheared using a Covaris S220 instrument (duty cycle 5, intensity 5, 200 cycles per burst, 4 cycles of 60 s each; Covaris Ltd., Woburn, Massachusetts). The sheared DNA was purified on QIAquick columns and processed using a commercial kit (Paired-End DNA sample Prep Kit\u2014Illumina\u2014PE-930-1001; Illumina, San Diego, California). The DNA was ligated to custom-made versions of the Illumina PE adapters (see Table 1) for 3 hr at room temperature in a final volume of 30 \u00b5l (20 \u00b5l of DNA [around 8 \u00b5g], 3 \u00b5l of ligation buffer 10\u00d7 [NEB], 3 \u00b5l of T4 DNA ligase [400 U/\u00b5l from NEB], and 4 \u00b5l of 10 \u00b5M adapter solutions). Tubes were then incubated at 65\u00b0C for 20 min.\n\n**Table 1.**\n List of the custom-made Illumina adapters used in this study\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Oligos</th>\n      <th>Sequence</th>\n      <th>Library</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>MM70</td>\n      <td>GTANNNNNNAGATCGGAAGAGCGGTTCAGCAGGAATGCCGAG</td>\n      <td>Mix of 11 yeasts</td>\n    </tr>\n    <tr>\n      <td>MM71</td>\n      <td>ACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNNNTACT</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MM76</td>\n      <td>CAGNNNNNNAGATCGGAAGAGCGGTTCAGCAGGAATGCCGAG</td>\n      <td>Mix of 3 bacteria</td>\n    </tr>\n    <tr>\n      <td>MM77</td>\n      <td>ACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNNNCTGT</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MM70</td>\n      <td>GTANNNNNNAGATCGGAAGAGCGGTTCAGCAGGAATGCCGAG</td>\n      <td>River sediment</td>\n    </tr>\n    <tr>\n      <td>MM71</td>\n      <td>ACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNNNTACT</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nDNA fragments ranging in size from 400\u2013800 pb were purified using a PippinPrep apparatus (SAGE Science, Beverly, Massachusetts). For each library, test PCR reactions were performed to determine the optimal number of PCR cycles and a large-scale PCR (eight reactions) was then set-up with the number of PCR cycles determined previously. The PCR products were finally purified using Qiagen MinElute columns (Qiagen, Netherlands) and paired-end (PE) sequenced on an Illumina platform (HiSeq2000; PE 2 \u00d7 100).\n\n### Processing of PE reads\n\nThe raw data from each 3C experiment were processed as follow: first, reads were demultiplexed using the small tag present at the beginning of each sequence (contained in the custom-made adapters). Then, PCR duplicates were collapsed using the six Ns present on each adapter (Table 1). Reads from the raw data used in the present study were aligned using Bowtie 2 in its most sensitive mode (Langmead and Salzberg, 2012). We used an iterative alignment procedure similar to Imakaev et al. (2012), that is, only the first 20 base pairs of the read were initially mapped then the length of the read was progressively increased until the mapping became unambiguous (with a mapping quality superior to 40). Paired reads were aligned independently. Indexes were built in one step and included the genome sequences of all the different organisms.\n\n### Generation of contact maps\n\nEach mapped read was assigned to a restriction fragment. The matrices were then binned into units of 10 or 200 fragments, resulting in 4292 \u00d7 4292 or 2229 \u00d7 2229 matrices for the mixtures of three bacteria and 11 yeasts, respectively. Matrices were normalized using the sequential component normalization procedure (SCN) described in Cournac et al. (2012), similar to the iterative normalization procedure described in Imakaev et al. (2012). The SCN procedure ensures that the sum over the column and lines of the matrix equals 1, which reduces the biases inherent to the protocol. Full resolution contact maps are available for bacteria, yeasts, and the environmental sample on the Dryad Digital Repository: http://dx.doi.org/10.5061/dryad.gv595 (Marbouty et al., 2014).\n\n### 3D reconstruction of the contact maps\n\nIn order to build the 3D structures of the different genomes from the chromosomal contact maps we used the algorithm described in Lesne et al. (2014). Briefly, we first converted the normalized contact matrix into an adjacency graph in which each node represented a genomic region and each link had a weight corresponding to the inverse of the number of contacts detected between the two corresponding nodes in the meta3C experiment. We then converted this graph into a distance matrix using the Floyd\u2013Warshall algorithm. This algorithm computes the distance between each pair of genomic regions by determining the shortest distance on the graph between the two corresponding nodes. We finally converted this distance matrix into a 3D structure using distance geometry theorems as described for molecular structures in Havel et al. (1983). All this procedure was implemented in Matlab.\n\n### Genome assembly\n\nReads containing undetermined bases were removed before the assembly step to retain only good-quality reads. De novo assemblies were then performed using the program IDBA-UB (Peng et al., 2012) with the pre-correction option and default parameters.\n\n### Quantitative analysis of the meta3C library assemblies\n\n#### Bacterial meta3C assembly\n\n4,040,422 reads were used for assembling the mixture of three bacterial genomes, yielding 2,436 contigs (303 > 5 kb, N50 = 55 kb, total length 12.5 Mb). More than 95% (\u223c3,880,000) of the initial reads mapped on the contigs. These contigs were mapped against the reference genomes of the different bacteria using BLAT (Kent, 2002). Analyzing the output revealed that 30 and 14 of these contigs covered 96.0% (2,957,563 bp) and 96.1% (1,071,728 bp) of chromosomes 1 and 2 of V. cholerae, respectively. Another group of 55 contigs covered 98.4% (4,630,934 bp) of the genome of E. coli, whereas a group of 1441 contigs covered 92.5% (3,957,375 bp) of the genome of B. subtilis (a higher fragmentation reflecting the lower representation of this bacterium in the mix). We also quantified the amount of chimeric contigs in the assembly using BEDtools (Quinlan and Hall, 2010). Such chimeric contigs may occur because of the presence of repeated conserved sequences between bacteria, such as transposons, or because of the background interactions introduced by chimeric religation between restriction fragments belonging to different species. Only 17 out of the 2436 contigs were chimeric (0.7%), accounting for 52,373 bp in total (0.4% of the total size of the assembly). This relatively low number probably results from the limited number of species contained in the mix and their low repeat content. It also shows that chimeric religation during the experiment introduces little background interactions in the assembly process.\n\n#### Yeast meta3C assembly\n\n47,614 contigs were generated by assembling the \u223c60 M yeast reads (7,212 > 5 kb, N50 = 6.9 kb, total length 138.7 Mb). When mapped against the newly generated contigs, 47 M reads (\u223c78%) did align. These contigs were then compared with the reference genomes of the different yeasts using BLAT and the analysis of the output was performed as above. Genome breadths of coverage ranged from 89% (Y. lipolytica) to 98% (N. castellii). In contrast to the previous results on the bacterial meta3C assembly, there were 9,599 chimeric contigs in the yeast case, representing 27.1% of the total number of contigs. This shows that chimeric contigs arise when dealing with mixtures of repeat-rich genomes, likely because near-identical repeats (such as transposable elements) are found in different genomes in the mixture. Such assembly mistakes will be probably avoided if using longer reads (since repeats longer than the read length pose problem during assembly) or, alternatively, can be resolved a posteriori using GRAAL. Despite the high percentage of chimeric contigs, we were able to assemble \u223c95% of the N. castellii genome from the meta3C reads.\n\n#### River sediment meta3C assembly\n\n67,920,671 pairs of reads (91 bp useful) were used to assemble the raw culture from the river sediment. As a positive assembly control, 500,000 reads from a 3C library of V. cholerae were added into this pool of sequences. The assembly generated 130,713 contigs (2,250 > 5 kb, N50 = 1,274 kb, total length = 111 Mb). After realignment of the initial reads along the generated contig, 42,705,64 PE reads could be mapped against the assembled contigs (\u223c62%).\n\n### Pulsed-field gel electrophoresis (PFGE)\n\nChromosome plugs were prepared as described previously (Koszul et al., 2004), using lysozyme instead of zymolyase (1% agarose gels, 0.25\u00d7 TBE buffer at pH8.3). PFGE was performed in a Rotaphor R23 tank (Biometra, Germany) using the following program: 12\u00b0C, 5 V/cm for 65 hr, angle 110\u00b0, pulse ramps 200 to 80 V. Southern blot hybridization was performed using probes derived from PCR products obtained with the primers listed in Table 2.\n\n**Table 2.**\n List of the oligonucleotides used to PCR amplify probes for the Southern blot of the PFGE (Figure 1\u2014figure supplement 2)\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Oligos</th>\n      <th>Sequence</th>\n      <th>Coordinates</th>\n      <th>Probe</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Meta1</td>\n      <td>CATCCCGTGAGAAATAATGGTCG</td>\n      <td>2,256,273 (MG1655)</td>\n      <td>Genomic probe</td>\n    </tr>\n    <tr>\n      <td>Meta2</td>\n      <td>TGTGCATCCCGTCACAAATTC</td>\n      <td>2,257,545 (MG1655)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Meta3</td>\n      <td>TTGAGCTTATCAAAGTCGTCGGAG</td>\n      <td>323,607 (MG1655)</td>\n      <td>Duplication probe</td>\n    </tr>\n    <tr>\n      <td>Meta4</td>\n      <td>TGATGTGAACTAACGCAGGAAC</td>\n      <td>324,796 (MG1655)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Meta5</td>\n      <td>TTTACCTCTGATACTGGCTCTGG</td>\n      <td>79,024 (plasmid F)</td>\n      <td>Plasmid F probe</td>\n    </tr>\n    <tr>\n      <td>Meta6</td>\n      <td>ACGTGGCATATTCATGCAGAC</td>\n      <td>80,159 (plasmid F)</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Binning of contigs using 3C contact data\n\nTo group the different contigs into communities reflecting the different genomes present in the sequenced mixtures, we adopted an approach based on graph theory. Among several community-detection algorithms, we found that the Louvain method (Blondel et al., 2008) generated the best reconstructions of the controlled mixes of bacteria and yeast species. Before applying the algorithm, contigs longer than 2.5 kb were divided into equal-sized chunks corresponding to several nodes in the graph (since large contigs exhibit more contact than smaller ones, they are more prone to clustering when running the Louvain algorithm). We used the Louvain method with default parameters, except for the mix of three bacteria (r=10 for three communities). For bacterial mix, 10% of the contigs of the smallest size were not attributed to a community with these parameters (representing \u223c15% of the total reads). For yeast, few contigs were left aside, representing in total \u223c2% of the number of reads. For the river sediment experiment, \u223c15% of the contigs were left aside at the binning step. The contigs in each bin resulting from the 3D binning were characterized using BLAST to determine the dominant species.\n\n### GRAAL scaffolding of the N. castellii and S. bayanus genomes\n\nThe program GRAAL (for Genome (Re)-Assembly Assessing Likelihood from 3D) aims at improving incomplete genome assemblies through the probabilistic exploitation of the physical contacts endured by chromosomes within a cellular compartment (Marie-Nelly et al., 2014a). The program only needs two datasets for initialization: a set of contigs and a 3C/HiC dataset. Upon initialization and depending on the depth of the HiC dataset, the software splits the contigs into smaller pieces/bins encompassing at least 2 restriction fragments. It then iteratively (over 1000s of steps) searches through a broad range of structures generated from reordering these small bins for genome structures more likely to be true given the 3D data. Importantly, at each step, a bin is tested for a variety of \u2018structural variations\u2019 with respect to its most likely neighbors, including duplications, deletions, fusions, inversion, etc. The likelihood of each of these new genome structures is then computed in light of the contact data, and one of those structures is sampled for the next iteration (during which the position of a new bin is tested). Each bin is tested several times throughout the entire process, and step by step the genome structure originally made of thousands of small independent bins converges towards a structure reflecting the best solution given the 3D contact data.\n\nThe entire program and full source code are freely available online here: https://github.com/koszullab/GRAAL as well as on the website of RK laboratory. The description of the program and its application are presented in Marie-Nelly et al. (2014a).\n\nWe used GRAAL to reassemble the 2,060 contigs (N50 = 16,764 bp) contained in the S. bayanus community identified by the Louvain algorithm. The resulting scaffolding showed a large improvement for all assembly parameters. The N50 length now reached 190,514 bp, and 77% of the total length of the assembly was assembled into regions larger than 50 kb (as compared to 3% before running the software). The result was even more spectacular for N. castellii (probably due to its higher coverage in the meta3C library): after running GRAAL on the 999 contigs (N50 = 27,452 bp) in the community delineated by the Louvain algorithm, N50 length reached 792,652 bp, and 96% of the assembled data was in scaffolds larger than 50 kb (with 11 scaffolds covering 95% of the 10 chromosomes).\n\n### Data visualization\n\nFor general visualization of the meta3C assembly data we used force-directed graph-drawing algorithms. This class of algorithms positions the nodes of a graph by assigning forces among the set of edges according to weighted interactions between the nodes. In our case, the 3C contacts dictated the strength of interactions between nodes. These layouts allowed us to visualize conveniently large clusters of nodes that were subsequently confirmed by the use of the Louvain algorithm. All graphs were visualized using the network software Gephi (Bastian et al., 2009; Martin et al., 2011). Contigs longer than 2.5 kbp were divided into equal-sized chunks corresponding to several nodes in the graph (to \u2018normalize\u2019 the appearance of the clusters, since otherwise every contig, whatever its size, would be represented by a single point). For visualizing the meta3C bacterial assembly we used the Force Atlas 2 algorithm (Jacomy et al., 2014). This algorithm assigns spring-like attractive forces and repulsive forces (like those between electrically charged particles) to the set of edges and the set of nodes: in the equilibrium state, discrete clusters are obtained. The entire set of bins was then color-labeled, with each color corresponding to a community detected by the Louvain algorithm (revealing a strong correlation with the clusters obtained using the visualization approach).\n\nFor the circular representation and comparison of the sequences present in the communities against known bacterial genomes, we used the CGView server (Grant and Stothard, 2008).\n",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "9ca7f2cb-5745-4bd7-82af-d156eedac39d",
+      "submission_id": "16f9047f-3601-4f12-9002-dfbcbbda5763",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gil McVean, Oxford University , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03318.029](https://doi.org/10.7554/eLife.03318.029)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cmeta3C unveils the diversity of chromosome organization in microorganisms\u201d for consideration at eLife. Your article has been favorably evaluated by Detlef Weigel (Senior editor) and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis paper presents the innovative idea of using Hi-C technology to aid the deconvolution of metagenomic samples. Through a series of experimental manipulations the authors investigate the potential of the method for mixtures of bacterial and yeast species. An application to a cultured environmental sample shows that the method can recover structure within real samples. As indicated by the title, the authors also use the results to characterise diversity in certain aspects of chromosome organisation among microbes.\n\nThis work goes beyond previous work (Burton et al. G3, Beitel et al PeerJ) on the use of Hi-C in metagenomics, adding a wider series of trial experiments and application to an (albeit cultured) environmental sample. All reviewers feel that the work shows promise, but the reality of using the technique on true environmental samples is still some way off. Nevertheless, this is a valuable addition to this new field and will be of wide interest.\n\nIn revising the manuscript, there are a few key areas to address:\n\n1) The hypothesis of integration of the plasmid into the E. coli genome needs to be validated using an independent experiment. This is a potentially important demonstration of the technique's ability to identify structure and needs to be validated.\n\n2) We would like to see a deeper and more quantitative evaluation of the similarities/differences between the method presented here and the Beitel/Burton methods.\n\n3) We strongly encourage the authors to either evaluate a truly environmental sample without culturing, or discuss the steps needed to get to this position. This is a major limitation of the method as it stands.\n\nFurther detail is provided below:\n\nReviewer #1:\n\n1) I think the hypothesis of F plasmid integration within the E. coli genome should be validated experimentally.\n\n2) I would like to see some discussion of whether temporal structuring arising from replication could lead to the contacts observed. Specifically, I wondered whether this might explain the X pattern seen between V. cholera chromosomes I and II in Figure 1B.\n\n3) It is not clear what is meant by longitudinal organisation.\n\n4) Reference should be to Figure 1E, not D.\n\n5) Figure 2F \u2013 it's not clear what is meant by invisible reads.\n\n6) I feel that the analysis of the S. banyans assembly is rather superficial as there is no truth data to compare it to. I would like to see side by side an analysis of how well the approach can identify and assemble de novo the genome of a species where the genome is known well. This seems to me to be the right test for the method.\n\n7) What is meant by background interactions between communities?\n\n8) The A. veronii analysis (rather like most of Figure 1) relies very heavily on mapping back to a reference genome. I feel this is a rather weak ending to the paper; you really want to be able to show that the metaC approach doesn't rely on existing external knowledge to this degree.\n\n9) It's not clear to me why contigs > 2.5kb have to be broken up? This seems bizarre.\n\nReviewer #2:\n\n1) How was taxonomy assigned in the test environmental metagenomic communities? Did all contigs end up being of the same consensus taxonomy? What proportion shared a consensus taxonomy?\n\n2) What fraction of reads go to unmapped/unresolved/not used in the assembly?\n\n3) In albeit simple communities; this method seems to require super deep sequencing to get both HiC reads and enough reads for normal assembly.\n\n4) Are there unique challenges or advantages to performing HiC on enucleated cells?\n\n5) For Figure 1, I would suggest a standardization of colors. 2C, 2D uses blue for Bacillus subtilis but 2E uses green for B. subtilis. For 2B should consider which bacteria are rods versus spherical and use appropriately.\n\nReviewer #3:\n\n1) Can the authors discuss why they think Figure 2 is so different from Figure 1? Is it because the genomes of yeast are bigger? Because more species are included? Because yeast genomes are more complex?\n\n2) Figure 3C showing that authors can capture the chromosome conformation in a natural environment would be better served as one of those \u201cspace-filling dot plots\u201d used in Figure 1 of the chromosome conformations of the three organisms.\n",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c778e152-7116-45c4-ba40-8c1d99646412",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C1",
+      "claim": "Meta3C allows characterizing individual genomes and their average organization within a mix of organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Using controlled mixes of bacterial and yeast species, we developed meta3C, a metagenomic chromosome conformation capture approach that allows characterizing individual genomes and their average organization within a mix of organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental results presented throughout the manuscript, including contact maps and 3D reconstructions of multiple species from mixed populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "a8bdfb9e-f48d-495f-a274-f2df73975a9f",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C2",
+      "claim": "A single meta3C library can be used for assembling, scaffolding and characterizing the tridimensional organization of unknown genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only can meta3C be applied to species already sequenced, but a single meta3C library can be used for assembling, scaffolding and characterizing the tridimensional organization of unknown genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the de novo assembly and scaffolding experiments on bacterial and yeast mixtures described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "7fb41041-af5f-4f23-9ecf-7908f551bf1a",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C4",
+      "claim": "The E. coli HB101 strain used in the analysis contains a F' plasmid carrying a ~140 kb duplicated region of the E. coli chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "We first noticed that a large (\u223c140 kb) region of the E. coli genome exhibited a two fold increase of the read coverage, indicating a segmental duplication. This region was also enriched in contacts with the F plasmid sequence (Figure 1\u2014figure supplement 2A,B), prompting us to hypothesize that one of the two copy was actually carried by a F' plasmid (i.e., a F plasmid carrying bacterial sequences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This hypothesis is supported by read coverage data, contact frequency analysis, and confirmed by Southern blot experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "c2791017-8419-4e73-aab0-3df9afb05deb",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C5",
+      "claim": "The F' plasmid is positioned preferentially in the vicinity of the replication origin (Ori) and termination (Ter) regions in fast growing E. coli cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, besides this duplication, two regions along the E. coli chromosome appeared enriched in contacts with the F' plasmid: the replication origin (Ori) and, to a lower extent, the termination (Ter) regions (Figure 1\u2014figure supplement 2B). This indicates that the F' plasmid is positioned preferentially in the vicinity of these regions in fast growing cells, as expected given the preferred location of the F plasmid in mid, 1/4, and 3/4 positions in the cell, which are also preferred positions for Ori/Ter regions during the cell cycle (Gordon et al., 1997; Niki and Hiraga, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on contact frequency data and supported by literature citations about F plasmid positioning.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "96cc30a7-6c80-4976-96a1-aa639b6df115",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C6",
+      "claim": "The replichores of B. subtilis and V. cholerae exhibit global symmetry visible as a counter-diagonal in the contact map.",
+      "claim_type": "EXPLICIT",
+      "source": "In B. subtilis and V. cholerae this symmetry was made clearly visible, in the growth conditions used in this experiment, by the presence of a counter-diagonal in the map (running opposite to the continuous and strong signal that accounts for the contact between adjacent DNA segments; see also the correlation version of the contact map on Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the contact maps shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "d7db5759-34cf-44fb-b257-e360d8f62cfc",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C7",
+      "claim": "The global symmetry and counter-diagonal pattern in bacterial chromosomes reflects a longitudinal organization of the two replichores extending along parallel axes within the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "This global symmetry as well as this second opposite diagonal, reflecting a longitudinal organization of the two replichores extending along parallel axes within the cell, were also reported for Caulobacter crescentus (Umbarger et al., 2011; Le et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by comparison with published studies on C. crescentus.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "92bc847d-4e49-4c0b-a5d8-4e8be54036a5",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C8",
+      "claim": "The E. coli chromosome exhibits an open 3D structure with no visible diagonal in the contact matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "The two arms of the E. coli chromosome exhibited an open 3D structure, with no visible diagonal in the matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the contact map and 3D reconstruction shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "c7f2a886-ce7b-4275-95ab-10dd9b185464",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C9",
+      "claim": "B. subtilis has a relatively compact domain at the Ori region that overlaps with the region containing centromere-like parS sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3D reconstruction of the B. subtilis genome revealed a relatively compact domain at the Ori region that overlapped with the region of the genome containing the centromere-like parS sites, in agreement with the structural role described for the ParS/Spo0J/Smc complex in the literature (Gruber and Errington, 2009; Sullivan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the 3D reconstruction and supported by literature on the ParS/Spo0J/Smc complex.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "b774e5e0-a015-418e-a62b-e1d638992262",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C10",
+      "claim": "The E. coli chromosome presents a strong Ter domain that exhibits fewer contacts with the rest of the genome, reflecting the structuring role of the MatP/matS system.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the E. coli chromosome presented a strong Ter domain that was clearly identifiable in the contact map and exhibited fewer contacts with the rest of the genome, reflecting most likely the structuring role of the MatP/matS system (Mercier et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the contact map and interpreted based on literature about the MatP/matS system.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "c998f1ce-5a28-4cdb-9064-a2a9b1d380ec",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C11",
+      "claim": "In V. cholerae, the Ter regions of chromosomes 1 and 2 are in closer proximity than the two Ori regions.",
+      "claim_type": "EXPLICIT",
+      "source": "For V. cholerae, the Ter regions of chromosomes 1 and 2 were in closer proximity than the two Ori regions, reflecting the controlled segregation mechanisms of these two unequal-sized chromosomes (Val et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the 3D reconstruction and contact map, and interpreted based on literature about V. cholerae chromosome segregation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "25b43299-244f-42d2-b9fe-d2f89e757381",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C12",
+      "claim": "V. cholerae chromosomes I and II achieve replication synchronously at their termination regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the two Ter regions appeared of the same color, consistent with the fact that both chromosomes I and II achieve replication synchronously (Rasmussen et al., 2007), the Ori regions presented, as expected, different coverages: chromosome I initiates replication first whereas chromosome II starts only to replicate later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from read coverage data and supported by a citation about V. cholerae replication timing.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "155ff723-f426-4c4d-860e-5ba03eab5d03",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C13",
+      "claim": "The meta3C library of three bacteria contains approximately 80% regular paired-end reads.",
+      "claim_type": "EXPLICIT",
+      "source": "This relatively high percentage results from the fact that, unlike the Hi-C protocol (Lieberman-Aiden et al., 2009), meta3C does not involve an enrichment step for religated fragments ('Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the meta3C protocol compared to Hi-C.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "bcdeba61-8fbf-4627-aafb-066e59f01d7c",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C14",
+      "claim": "De novo assembly of the three bacterial meta3C library generated 2,436 contigs with N50 = 55 kb and total length 12.5 Mb.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the assembly program IDBA-UD (Peng et al., 2012), a set of 2,436 contigs was generated from the 3C read pairs (N50 = 55 kb, total length 12.5 Mb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the assembly analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "08427b54-cd38-4d91-bf6e-446718bdb098",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C15",
+      "claim": "The assembled contigs from the bacterial meta3C library covered 96%, 98%, and 93% of the V. cholerae, E. coli, and B. subtilis reference genomes, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The quality of these contigs was assessed by comparing them with published reference genomes, which showed that the assembled contigs covered respectively 96%, 98%, and 93% of the V. cholerae, E. coli, and B. subtilis reference genomes and that only 0.7% of the contigs (52,373 bp total) were chimeric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative assessment of assembly quality by comparison to reference genomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "8e6760ec-b732-4b0c-9127-197b3be376c8",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C16",
+      "claim": "Only 0.7% of the contigs from the bacterial meta3C assembly were chimeric.",
+      "claim_type": "EXPLICIT",
+      "source": "The quality of these contigs was assessed by comparing them with published reference genomes, which showed that the assembled contigs covered respectively 96%, 98%, and 93% of the V. cholerae, E. coli, and B. subtilis reference genomes and that only 0.7% of the contigs (52,373 bp total) were chimeric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative assessment of assembly quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "a4123e56-5bd7-4e46-bcf0-1bd8ac210f82",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C17",
+      "claim": "The Louvain algorithm successfully clustered contigs from the bacterial meta3C assembly into three communities, each corresponding to a different species.",
+      "claim_type": "EXPLICIT",
+      "source": "The meta3C reads were then realigned on the de novo contigs and the contact information was used to pool the contigs into communities sharing similar contact behavior (hence likely belonging to the same genome) using the Louvain algorithm (Blondel et al., 2008). Three communities of contigs were generated, each corresponding to a different species and covering respectively 96, 98, and 92% of the genomes of V. cholerae, E. coli, and B. subtilis, respectively (Figure 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This demonstrates the effectiveness of using contact information for binning contigs by species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "ef5500aa-0b88-4b6a-9a11-f52c883e66a5",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C18",
+      "claim": "The Rabl configuration with co-localized centromeres is the primary driver of yeast genome organization.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the diversity of structures observed for the bacterial species analyzed above, the Rabl configuration appeared as the primary driver of yeast genome organization, as illustrated by the individual 3D structures of the genomes of Yarrowia lipolytica and Naumovozyma castellii (Figure 2C, Animation 8,9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the contact maps and 3D reconstructions of multiple yeast species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "5064ae0e-fb99-425b-9452-6fc9838285d5",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C19",
+      "claim": "De novo assembly of the 11 yeast species mixture generated contigs with N50 = 6,914 bp and total length 138 Mb.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the potential of using meta3C reads for assembling de novo such a complex mix of yeast genomes, we assembled them using IDBA-UD (N50 = 6,914 bp, total length 138 Mb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the assembly analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "7b54b0e3-338f-4952-a824-ff591623fb9f",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C20",
+      "claim": "The breadth of coverage of the 11 yeast genomes by assembled contigs ranged from 89.8% (Candida albicans) to 98.3% (N. castellii).",
+      "claim_type": "EXPLICIT",
+      "source": "The breadth of coverage of the 11 genomes by the resulting contigs ranged from 89.8% (Candida albicans) to 98.3% (N. castellii), with chimeric contigs (misassemblies) representing \u223c20% of the total (37 Mb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative assessment of assembly quality for the yeast mixture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "2578ba97-d628-4315-8059-f690c1288c7b",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C21",
+      "claim": "Chimeric contigs in the yeast assembly represented approximately 20% of the total (37 Mb).",
+      "claim_type": "EXPLICIT",
+      "source": "The breadth of coverage of the 11 genomes by the resulting contigs ranged from 89.8% (Candida albicans) to 98.3% (N. castellii), with chimeric contigs (misassemblies) representing \u223c20% of the total (37 Mb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative assessment of assembly quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "edfd6c81-ca19-4af2-af91-fe5d7bc0c125",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C22",
+      "claim": "The high percentage of chimeric contigs in the yeast assembly is caused by frequent occurrence of identical or near-identical genome regions such as transposable elements, not by intergenomic 3C paired-end reads.",
+      "claim_type": "EXPLICIT",
+      "source": "To monitor the influence of chimeric pairs of reads (originating from intergenomic 3D contacts) on the generation of chimeric contigs, we performed an assembly on the same library using the Velvet software that considers all reads as independents (i.e., without pairing them; Zerbino and Birney, 2008). This assembly exhibited a dramatic increase (73%, 69 Mb) in chimeric contigs, demonstrating that these misassemblies were not caused by intergenomic 3C paired-end reads but rather by the frequent occurrence of identical or near-identical genome regions (such as transposable elements) in those eukaryotic genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on a comparative assembly experiment using Velvet.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "44dd0ba1-febf-486e-b109-c01c3a47a429",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C23",
+      "claim": "The Louvain algorithm clustered the yeast contigs into 13 sub-groups: one for each of the 11 yeast species, one for an E. coli contaminant, and one for mitochondrial genome fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "The clustering procedure resulted in 13 sub-groups: one for each of the 11 yeast species, one corresponding to an E. coli contaminant, and one comprising various misassembled fragments of mitochondrial genomes. In total, only 1% of the assembly (2% of the contigs) could not be attributed to a given species (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This demonstrates the effectiveness of the clustering approach for the yeast mixture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "27a3a0b3-1e15-4847-a517-499f0fc33251",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C24",
+      "claim": "Only 1% of the yeast assembly (2% of the contigs) could not be attributed to a given species.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, only 1% of the assembly (2% of the contigs) could not be attributed to a given species (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measure of the clustering success.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "36eb8768-35fb-453d-81c8-f28ca4ada1c8",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C25",
+      "claim": "GRAAL scaffolding of N. castellii contigs from the yeast mixture resulted in 11 superscaffolds covering 94.5% of the reference sequence of the 10 chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall these 11 scaffolds covered 94.5% of the reference sequence of the 10 chromosomes (chromosome 3 was split into two scaffolds because of the presence of the large, unassembled rDNA array on this chromosome), illustrating the ability of this de novo analysis to correctly assemble and scaffold unknown genomes (see Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This demonstrates the effectiveness of GRAAL for scaffolding from meta3C data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "4d81795f-3002-4c34-9273-a8627dda5839",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C26",
+      "claim": "GRAAL processing breaks chimeric contigs into non-chimeric parts, thereby correcting assembly errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Since this algorithm involves a splitting procedure of the contigs into restriction fragments, chimeric contigs were broken into non-chimeric parts thereby correcting the assembly errors mentioned above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the GRAAL algorithm.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "87c9380e-f173-4db1-a02e-9c71afe7c43f",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C27",
+      "claim": "3D signals from meta3C data can be used to annotate centromeres of unknown species.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, interchromosomal signals corresponding to centromere clustering were clearly visible in the matrix, emphasizing that 3D signals could also be used to annotate the centromeres of unknown species isolated from meta3C data (Figure 2F; Figure 2\u2014figure supplement 4B; Marie-Nelly et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the visible centromere clustering signals in the contact maps.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "3b0d1d5c-afe9-460d-9286-1ea71fe7c4e5",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C28",
+      "claim": "The environmental sediment sample was enriched for prokaryotic organisms by cultivating for 14 hr in Luria broth and filtrating prior to meta3C library construction.",
+      "claim_type": "EXPLICIT",
+      "source": "Because environmental genomes usually contain a tremendous diversity of species, including many eukaryotes of large genome sizes, we decided to enrich our sample for prokaryotic organisms by cultivating it for 14 hr in Luria broth and filtrating it prior to meta3C library construction and sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure for the environmental sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "98d13ef6-1b9c-4154-98d0-953e7da8aadc",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C29",
+      "claim": "The Louvain algorithm identified 184 significant communities from the environmental sediment meta3C assembly, with a total size of 111 Mb and median size of 300 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "Contigs generated from the meta3C sediment library were clustered using the Louvain algorithm, yielding 184 significant communities (total size 111 Mb, median size 300 kb, with 19 communities containing more than 1 Mb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "3e4f6f3e-975e-4d79-af47-5f44eaa5f605",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C30",
+      "claim": "For each community in the environmental sample, more than 80% of the genes identified by MG-RAST were attributed to the same taxonomic class.",
+      "claim_type": "EXPLICIT",
+      "source": "Each community was analyzed using MG-RAST (Glass et al., 2010), showing relatively homogeneous taxonomic compositions in most communities (Figure 3\u2014figure supplement 1). For each community, more than 80% of the genes identified by MG-RAST within the contigs were attributed to the same taxonomic class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This demonstrates the taxonomic homogeneity of the identified communities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "afb2ab4d-9559-418c-a0f7-a0af29a74d51",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C31",
+      "claim": "At the family level, 8 out of the 11 largest communities from the environmental sample were >80% homogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "Going down to family level, 8 out of the 11 largest communities were >80% homogeneous, with the remaining three presenting more complex patterns that will require further investigation and development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative assessment of taxonomic homogeneity at the family level.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "f02707f3-3f16-431d-b5f9-e003aa9e34fd",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C32",
+      "claim": "One community from the environmental sample contained contigs covering 95% of the V. cholerae genome control.",
+      "claim_type": "EXPLICIT",
+      "source": "One community was composed of contigs covering 95% of the V. cholerae genome control (for a total amount of 3.9 Mb congruent with the expected size of the genome; Figure 3B, i), confirming the ability of this approach to pool DNA regions according to their genome of origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This validates the approach using the V. cholerae control added to the environmental sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "9aab2ed0-3d63-4561-a3d4-353f603f5b86",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C33",
+      "claim": "Communities from the environmental sample contained contigs belonging to Aeromonas veronii (4 Mb, 72% of reference) and Exiguobacterium sp. (3.1 Mb, 36% of reference).",
+      "claim_type": "EXPLICIT",
+      "source": "Other communities contained contigs belonging to other discrete species, related for instance to the ubiquitous bacteria Aeromonas veronii or Exiguobacterium sp. (for total amounts of 4 Mb and 3.1 Mb, aligning to 72% and 36% of the reference genomes of 4.5 Mb and 3 Mb total sizes, respectively; Figure 3B, i).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This demonstrates the identification of specific bacterial species from the environmental sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "84a4e493-35bd-4229-bb15-300a646404e0",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C34",
+      "claim": "Plasmids annotated as belonging to Bacillus megaterium were retrieved almost entirely within a single Bacilli community in the environmental sample.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, plasmids annotated as belonging to Bacillus megaterium were retrieved almost entirely within a single Bacilli community (Figure 3B, ii), suggesting that this community presented indeed a relatively homogeneous content and therefore validating our approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This validates the approach by showing that plasmids cluster with their expected host genome.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "71544c21-dc82-430c-ae71-295a11609154",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C35",
+      "claim": "The 3D structure of the A. veronii-related community from the environmental sample is reminiscent of those of B. subtilis and C. crescentus.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the limited sequencing depth of our experiment restrained our ability to scaffold optimally the contigs of the communities using GRAAL, mapping the reads present in the community related to A. veronii against the reference genome of this species revealed a 3D structure reminiscent of those of B. subtilis and C. crescentus (Figure 3C; Animation 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing the 3D structure to those of other bacteria.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "d815f2dc-914f-45b9-a185-56226397637e",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C36",
+      "claim": "The average organization of yeast genomes differs radically from those of bacterial nucleoids because of contrasted replication and division processes and timings.",
+      "claim_type": "EXPLICIT",
+      "source": "The average organization of yeast genomes was found to differ radically from those of bacterial nucleoids, most likely because of contrasted replication and division processes and timings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the observed differences in chromosome organization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "b2503aad-dd0b-4ee1-b529-37b37af3ac6a",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C37",
+      "claim": "In Saccharomycetes, most of the chromosome organization is driven by the clustering of centromeres at the spindle pole body, which remains prominent throughout most of the cell cycle during exponential growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the organization in Saccharomycetes appears driven by the clustering of the centromeres at the spindle pole body; this clustering remains the prominent structural feature throughout most of the cell cycle (i.e., G1 + S phase + G2) during exponential growth, with mitosis representing only a fraction of the cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed Rabl configuration in yeast genomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "fdfca4ad-baf6-4ecb-aae7-bd4d8bac2ede",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C38",
+      "claim": "Meta3C differs from previous approaches by using a single library for generating contigs, binning them, scaffolding them, and revealing the 3D structure of corresponding species through blind analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach conveniently uses a single meta3C library and a blind analysis for generating contigs, binning them, scaffolding them, and revealing the 3D structure of the corresponding species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key distinguishing feature of the meta3C approach compared to other methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "a6ed7235-7d4d-4e81-986a-0fb3dfc30a15",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C39",
+      "claim": "The meta3C blind analysis allows delineating communities without prior knowledge of the number of species present in the mix.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, our blind analysis allowed us to delineate communities without prior knowledge of the number of species present in the mix; this contrasts with the approach of Burton et al. (2014), which apparently requires such prior knowledge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an advantage of the meta3C approach over other methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "1bbd1fb2-acf2-4582-aefd-d5b0f75d4a70",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C40",
+      "claim": "Meta3C generates de novo chromosome scaffolds without assumptions regarding the number of chromosomes present in the mixture.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we generate de novo chromosome scaffolds without any assumptions regarding the number of chromosomes present in the mixture, a realistic approach when it comes to exploring environmental samples or complete the assembly of complex genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes another advantage of the meta3C approach.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "e3d76e16-f9e4-4afe-a980-86094606c4d3",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C41",
+      "claim": "The adequacy between the cross-linking step and the restriction step is essential for the recovery of long-distance cis contacts that improve de novo genome scaffolding and reveal 3D structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our experience with the analysis of chromosome organization in both bacteria and yeast species emphasized the importance of the initial steps for the success of such experiment. The adequacy between the cross-linking step, which depends on the incubation time and the concentration of the fixating agent, and the restriction step and choice of the restriction enzyme, is essential for the recovery of long-distance cis contacts that improve de novo genome scaffolding and, importantly, reveal the 3D structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental experience described in the study.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "45852976-730e-45fa-a30e-6615f209aef4",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C42",
+      "claim": "Meta3C protocol does not involve an enrichment step for religated fragments, unlike the Hi-C protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "This relatively high percentage results from the fact that, unlike the Hi-C protocol (Lieberman-Aiden et al., 2009), meta3C does not involve an enrichment step for religated fragments ('Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological difference between meta3C and Hi-C.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "c7963602-11fc-4051-910f-0c7e862325a9",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C43",
+      "claim": "The contact frequency between two chromosomal segments obeys to some extent the laws of polymer physics.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency with which two chromosomal segments come in contact, as measured in genome-wide chromosome conformation capture (3C) experiments (Dekker et al., 2002; Lieberman-Aiden et al., 2009), obeys to some extent the laws of polymer physics (Rippe, 2001; Wong et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature on polymer physics and 3C experiments.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "57bd4b97-6657-4b5d-8fc6-7a1a158ab1b6",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C44",
+      "claim": "Contact frequencies can be used to identify synteny between DNA segments up to a few 100s kilobases apart.",
+      "claim_type": "EXPLICIT",
+      "source": "Contact frequencies can be used to identify synteny between DNA segments up to a few 100s kilobases (kb) apart, and two studies recently applied this concept to refining the human genome sequence (Burton et al., 2013; Kaplan and Dekker, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies that applied this concept to the human genome.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "85568b0e-ba6b-454d-852e-0ef4f0f367ce",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C45",
+      "claim": "GRAAL is a robust and explicit statistical method for using chromosomal contact data to generate precise scaffolds of genomes at the highest resolution possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Using chromosomal contacts data in order to generate the precise scaffold of a given genome is however a difficult task: hence, we developed GRAAL, a robust and explicit statistical method to tackle this issue at the highest resolution possible (Marie-Nelly et al., 2014a; Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the GRAAL method developed by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "9e9f931c-a9a0-4316-82cc-49c7d2e4c08c",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C46",
+      "claim": "If interactions between chromosomes within a nucleus can be resolved, then it is possible to resolve chromosomes of various species mixed together.",
+      "claim_type": "EXPLICIT",
+      "source": "Since this approach enables the identification of individual chromosomes within the same nuclei, we hypothesized that tridimensional (3D) organization holds enough specific information to distinguish as well DNA segments of chromosomes present within different organisms (Figure 1A). In other words, if the interactions between chromosomes contained within a human or a fungal nucleus can be resolved, then it may be possible to resolve the chromosomes of various species mixed together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the central hypothesis of the meta3C approach, which is then validated experimentally.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "4764ba2b-07e6-4d20-be0a-2dc4e1daaf84",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C47",
+      "claim": "The two chromosomes of V. cholerae exhibit higher contact frequencies with each other than with chromosomes of other species.",
+      "claim_type": "EXPLICIT",
+      "source": "As in a typical 3C experiment squares appeared on the diagonal of the matrix, revealing individual chromosomes: the circular chromosomes of both E. coli and B. subtilis were recovered as separate entities, whereas the two chromosomes of V. cholerae yielded two squares exhibiting higher contact frequencies with each other than with the chromosomes of the other species\u2014as expected since these chromosomes share the same cellular compartment (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the contact map and expected based on the fact that both chromosomes are in the same cell.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "3c83f4d6-c858-445a-be58-7ee3ea6031f4",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C48",
+      "claim": "The duplication in the E. coli genome has an IS2 element at one boundary (coord. 390,063) and an IS3 element within it.",
+      "claim_type": "EXPLICIT",
+      "source": "A correlation analysis of the contacts between these two regions of interest (a chromosome region encompassing the duplication and the plasmid) revealed clearly that, on the one hand, a copy of the duplication is in close contact with the plasmid (with an IS2 at one the boundaries [coord. 390,063] and an IS3 within), and that on the other hand the plasmid contacts with the E. coli genome drop sharply past the duplication boundaries, in agreement with an integration of one copy of the duplication within a F' plasmid (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined through correlation analysis of contact frequencies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "bb835f28-f1b3-4241-8f4f-c5d83b45b93d",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C49",
+      "claim": "The duplication breakpoints in the E. coli genome are at coordinates ~240,000:380,000 along the chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis allowed to position duplication breakpoints at coordinates \u223c240,000:380,000 along the chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined through correlation analysis shown in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "b50d9a9d-0920-49e3-99e9-9cdda586f30f",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C50",
+      "claim": "Chromosome 1 of V. cholerae exhibits a more 'open' configuration while chromosome 2 has paired replichores.",
+      "claim_type": "EXPLICIT",
+      "source": "The two chromosomes of V. cholera were found in two different conformations, with chromosome 1 exhibiting a more 'open' configuration and the replichores of chromosome 2 appearing paired (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the 3D reconstruction shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "b5349ddb-fdc7-4711-b2e9-bf59ae912746",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C51",
+      "claim": "Interchromosomal contacts in V. cholerae do not span the entire length of chromosome 1 but start between the Ori macrodomain of chromosome 2 and positions at about one-third of chromosome 1 arms.",
+      "claim_type": "EXPLICIT",
+      "source": "Interchromosomal contacts did not span the entire length of chromosome 1 but started between the Ori macrodomain of chromosome 2 and positions located at about one-third of chromosome 1 arms (black dotted squares, Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the contact map shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "fc340710-8348-480c-98a7-e5af45d3c767",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C52",
+      "claim": "V. cholerae chromosome I initiates replication first whereas chromosome II starts to replicate later.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the two Ter regions appeared of the same color, consistent with the fact that both chromosomes I and II achieve replication synchronously (Rasmussen et al., 2007), the Ori regions presented, as expected, different coverages: chromosome I initiates replication first whereas chromosome II starts only to replicate later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from read coverage data representing replication timing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "e45fd1bc-e46d-425a-b607-dcf03e6117f9",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C53",
+      "claim": "The de novo assembly of the three bacterial genomes from meta3C data had only 0.7% chimeric contigs (17 out of 2436 contigs, 52,373 bp total).",
+      "claim_type": "EXPLICIT",
+      "source": "Only 17 out of the 2436 contigs were chimeric (0.7%), accounting for 52,373 bp in total (0.4% of the total size of the assembly).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative assessment of assembly quality from the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "86c27109-1b43-43ac-b1ab-73263de37c38",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C54",
+      "claim": "The low number of chimeric contigs in the bacterial assembly results from the limited number of species in the mix and their low repeat content.",
+      "claim_type": "EXPLICIT",
+      "source": "This relatively low number probably results from the limited number of species contained in the mix and their low repeat content. It also shows that chimeric religation during the experiment introduces little background interactions in the assembly process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the low chimeric contig rate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "0591e51d-5c02-40fd-92ac-3ea327a1c4e3",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C55",
+      "claim": "Chimeric religation during the meta3C experiment introduces little background interactions in the assembly process.",
+      "claim_type": "EXPLICIT",
+      "source": "This relatively low number probably results from the limited number of species contained in the mix and their low repeat content. It also shows that chimeric religation during the experiment introduces little background interactions in the assembly process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the low rate of chimeric contigs in the bacterial assembly.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "a5f667d1-7529-4487-8519-4c3101432a2f",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C56",
+      "claim": "The yeast meta3C assembly had 9,599 chimeric contigs representing 27.1% of the total number of contigs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the previous results on the bacterial meta3C assembly, there were 9,599 chimeric contigs in the yeast case, representing 27.1% of the total number of contigs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative assessment from the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "fc3c3d58-27c9-40d0-b092-1347d1107ad7",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C57",
+      "claim": "Chimeric contigs arise when dealing with mixtures of repeat-rich genomes because near-identical repeats are found in different genomes in the mixture.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that chimeric contigs arise when dealing with mixtures of repeat-rich genomes, likely because near-identical repeats (such as transposable elements) are found in different genomes in the mixture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the high chimeric contig rate in the yeast assembly.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "3adc8669-1c50-4a4d-a93f-cf7c6c4eed40",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C58",
+      "claim": "Assembly mistakes from near-identical repeats can be avoided by using longer reads or resolved a posteriori using GRAAL.",
+      "claim_type": "EXPLICIT",
+      "source": "Such assembly mistakes will be probably avoided if using longer reads (since repeats longer than the read length pose problem during assembly) or, alternatively, can be resolved a posteriori using GRAAL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for improving assembly quality based on understanding of the problem.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "be2c36d0-0daf-4ca1-9a0c-e88833de0128",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C59",
+      "claim": "After GRAAL processing of S. bayanus contigs, the N50 length reached 190,514 bp and 77% of the total length was assembled into regions larger than 50 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "We used GRAAL to reassemble the 2,060 contigs (N50 = 16,764 bp) contained in the S. bayanus community identified by the Louvain algorithm. The resulting scaffolding showed a large improvement for all assembly parameters. The N50 length now reached 190,514 bp, and 77% of the total length of the assembly was assembled into regions larger than 50 kb (as compared to 3% before running the software).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This demonstrates the improvement achieved by GRAAL scaffolding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "30b20903-4029-4427-85bc-011d9308a799",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C60",
+      "claim": "After GRAAL processing of N. castellii contigs, the N50 length reached 792,652 bp and 96% of the assembled data was in scaffolds larger than 50 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "The result was even more spectacular for N. castellii (probably due to its higher coverage in the meta3C library): after running GRAAL on the 999 contigs (N50 = 27,452 bp) in the community delineated by the Louvain algorithm, N50 length reached 792,652 bp, and 96% of the assembled data was in scaffolds larger than 50 kb (with 11 scaffolds covering 95% of the 10 chromosomes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This demonstrates the dramatic improvement achieved by GRAAL scaffolding for N. castellii.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "63bc32e3-5508-4255-ad30-196ea7d32670",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C61",
+      "claim": "The environmental sediment meta3C assembly generated 130,713 contigs with N50 = 1,274 kb and total length = 111 Mb.",
+      "claim_type": "EXPLICIT",
+      "source": "67,920,671 pairs of reads (91 bp useful) were used to assemble the raw culture from the river sediment. As a positive assembly control, 500,000 reads from a 3C library of V. cholerae were added into this pool of sequences. The assembly generated 130,713 contigs (2,250 > 5 kb, N50 = 1,274 kb, total length = 111 Mb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the environmental sample assembly.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "c0272e9e-279f-44c8-9f53-b46f5a1e3bc3",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C62",
+      "claim": "After realignment of reads to the environmental sediment contigs, approximately 62% of reads could be mapped.",
+      "claim_type": "EXPLICIT",
+      "source": "After realignment of the initial reads along the generated contig, 42,705,64 PE reads could be mapped against the assembled contigs (\u223c62%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measure of assembly quality for the environmental sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "b7147f3d-4a02-407d-88e8-9f8182a3407d",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C63",
+      "claim": "Mitochondrial genomes behave as separate entities in meta3C experiments.",
+      "claim_type": "IMPLICIT",
+      "source": "Figure 2\u2014figure supplement 1.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1 which demonstrates mitochondrial genomes as separate entities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "2e48ba23-289c-4a49-bcae-e17a98a05ea9",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "claim_id": "C65",
+      "claim": "Chromosome 3 of N. castellii was split into two scaffolds because of the presence of the large, unassembled rDNA array on this chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall these 11 scaffolds covered 94.5% of the reference sequence of the 10 chromosomes (chromosome 3 was split into two scaffolds because of the presence of the large, unassembled rDNA array on this chromosome), illustrating the ability of this de novo analysis to correctly assemble and scaffold unknown genomes (see Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains why 11 scaffolds were obtained for 10 chromosomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "efb25248-689e-4386-bd1a-3f19642d1f90",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Meta3C is a novel metagenomic approach that uses a single library to characterize individual genomes and their 3D organization within mixed populations. The method differs from previous approaches by using chromosome conformation capture data for de novo assembly, binning, scaffolding, and 3D structure determination without prior knowledge of species composition or chromosome number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C38-C40, C42, and C46 collectively establish meta3C as a comprehensive method validated through controlled experiments on bacterial and yeast mixtures. The experimental data (contact maps, 3D reconstructions, assembly metrics) demonstrate that the approach successfully achieves its stated goals. The methodological distinctions from Hi-C (C42) and the central hypothesis (C46) are well-supported by the presented results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "c6198b2b-28b8-4490-9243-fab7872eb853",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The E. coli HB101 strain contains an F' plasmid carrying a ~140 kb duplicated chromosomal region with specific insertion sequence elements (IS2 and IS3). The F' plasmid preferentially localizes near the replication origin and termination regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C48, and C49 are supported by multiple lines of evidence including read coverage analysis, contact frequency data, correlation analysis, and Southern blot validation. The duplication boundaries and IS element positions are precisely mapped, and the plasmid positioning is consistent with known F plasmid behavior cited from literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "0199d2de-f115-4ae5-ac20-8ccfa8e2e36a",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The three bacterial species exhibit diverse 3D chromosome organizations with shared structural principles. B. subtilis and V. cholerae show replichore symmetry with counter-diagonals in contact maps, while E. coli displays an open structure. Each species has distinct domain organization at Ori and/or Ter regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C11, C50-C51 are supported by contact maps and 3D reconstructions shown in Figure 1. The structural features are directly observable in the data and interpretations are supported by literature citations about known chromosome organization systems (ParS/Spo0J/Smc, MatP/matS). The diversity and shared principles are clearly demonstrated across the three species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "a9bee5da-0d5d-4b3b-8c84-5f2317e54a93",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "V. cholerae chromosomes I and II achieve synchronous replication at their termination regions, but chromosome I initiates replication before chromosome II.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12 and C52 are supported by read coverage data representing replication timing and are consistent with cited literature (Rasmussen et al., 2007) on V. cholerae replication. The differential timing at Ori regions and synchronous termination are clearly demonstrated in the coverage analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "4b044bc0-1463-4a8c-88df-1f3e068f48e7",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "De novo assembly of the three-bacterial meta3C library achieved high-quality results with 96-98% genome coverage, only 0.7% chimeric contigs, and successful clustering into three species-specific communities using the Louvain algorithm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 and C53-C55 provide quantitative assembly metrics that demonstrate the effectiveness of meta3C for de novo assembly and binning. The low chimeric rate (0.7%) and high coverage (93-98%) validate the approach. The interpretation that chimeric religation introduces minimal background (C55) is supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "5d0f8801-7693-4522-9c25-1ac2e75feac1",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Yeast genomes exhibit a conserved Rabl configuration driven by centromere clustering at the spindle pole body, which differs radically from bacterial chromosome organization due to contrasting replication and cell cycle dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C36, and C37 are supported by contact maps and 3D reconstructions of 11 yeast species showing consistent Rabl configuration. The interpretation regarding cell cycle dynamics (C37) is reasonable given the observed structural features and known biology of yeast, though it remains somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "7faaf7b0-cf01-47cf-bed6-d38d61acdb83",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "De novo assembly of 11 yeast species yielded 89.8-98.3% genome coverage but with ~20% chimeric contigs. The high chimeric rate is caused by near-identical repeats across species, not by intergenomic 3C contacts, as demonstrated by comparative assembly with Velvet.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 and C56-C58 are well-supported by assembly metrics and the Velvet control experiment. The dramatic increase in chimeric contigs (73%) when reads are treated independently (C22) provides strong evidence that the chimeric contigs result from sequence similarity rather than experimental artifacts. The suggestion for improvement (C58) is reasonable but speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "44af2389-0a0a-4382-bb49-7e83acd94bdb",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Louvain algorithm successfully clustered yeast contigs into 13 communities corresponding to 11 yeast species, one E. coli contaminant, and mitochondrial fragments, with only 1% of assembly unattributed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C24, and C63 demonstrate effective binning despite the complex mixture and high chimeric rate. The quantitative metrics (only 1% unattributed) and identification of expected components (mitochondria, contaminant) validate the clustering approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "d9e1ff4e-03e8-4c77-bfd2-2fc299deeee3",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "GRAAL scaffolding dramatically improved assembly quality for yeast genomes, achieving N50 of 792,652 bp for N. castellii with 11 scaffolds covering 94.5% of 10 chromosomes. The algorithm corrects chimeric contigs and enables centromere annotation from 3D signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27, C59-C60, and C65 demonstrate GRAAL's effectiveness with quantitative improvements in assembly metrics. The explanation for 11 scaffolds from 10 chromosomes (C65) is reasonable given the rDNA array. The ability to annotate centromeres (C27) is supported by visible clustering signals in contact maps.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "49b2d9a8-4e4c-4045-9539-051aec8f218c",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Meta3C analysis of an enriched environmental sediment sample identified 184 communities with taxonomically homogeneous composition (>80% at class level, 8/11 at family level), successfully recovering the V. cholerae control and identifying specific bacterial species including A. veronii and Exiguobacterium sp.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34 and C61-C62 demonstrate meta3C's applicability to environmental samples. The taxonomic homogeneity metrics (C30-C31), recovery of the V. cholerae control (C32), and plasmid-host clustering (C34) validate the approach. However, the authors acknowledge that 3 of 11 communities show complex patterns requiring further investigation, indicating some limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "b08c32ee-0618-462e-ab5d-2a866ab3b936",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The 3D structure of the A. veronii-related community from the environmental sample resembles those of B. subtilis and C. crescentus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C35 is based on visual comparison of 3D structures, but the authors acknowledge that limited sequencing depth restricted optimal scaffolding. While the structural similarity is suggested, the quality of the reconstruction and the basis for comparison are not rigorously quantified, making this conclusion tentative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "349255d2-86fa-48ef-a1ac-08f196b1969a",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The adequacy between cross-linking and restriction steps is essential for recovering long-distance cis contacts that improve scaffolding and reveal 3D structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 represents a methodological conclusion drawn from the authors' experimental experience across bacterial and yeast species. While not directly tested through systematic variation of these parameters, the successful recovery of 3D structures and scaffolding across diverse organisms supports this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "4c1928e3-1cd3-45ed-9518-3781e91e84b2",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Contact frequencies between chromosomal segments follow polymer physics principles and can identify synteny up to hundreds of kilobases. GRAAL is a robust statistical method for generating genome scaffolds from contact data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 are supported by extensive literature citations and the successful application of GRAAL throughout this study. These represent established principles (C43-C44) and a validated method (C45) rather than novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    },
+    {
+      "id": "92797c6e-e579-459b-89f7-d73be68ffb62",
+      "content_id": "3dd27020-8824-42c2-b18a-8e8648bbe24e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The two chromosomes of V. cholerae exhibit higher contact frequencies with each other than with chromosomes of other species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is directly observable in the contact map (Figure 1B) and is expected given that both chromosomes share the same cellular compartment. This validates the specificity of the meta3C approach for distinguishing intra- versus inter-species contacts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:30.930174Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c778e152-7116-45c4-ba40-8c1d99646412",
+      "result_id": "efb25248-689e-4386-bd1a-3f19642d1f90"
+    },
+    {
+      "claim_id": "a8bdfb9e-f48d-495f-a274-f2df73975a9f",
+      "result_id": "efb25248-689e-4386-bd1a-3f19642d1f90"
+    },
+    {
+      "claim_id": "fdfca4ad-baf6-4ecb-aae7-bd4d8bac2ede",
+      "result_id": "efb25248-689e-4386-bd1a-3f19642d1f90"
+    },
+    {
+      "claim_id": "a6ed7235-7d4d-4e81-986a-0fb3dfc30a15",
+      "result_id": "efb25248-689e-4386-bd1a-3f19642d1f90"
+    },
+    {
+      "claim_id": "1bbd1fb2-acf2-4582-aefd-d5b0f75d4a70",
+      "result_id": "efb25248-689e-4386-bd1a-3f19642d1f90"
+    },
+    {
+      "claim_id": "45852976-730e-45fa-a30e-6615f209aef4",
+      "result_id": "efb25248-689e-4386-bd1a-3f19642d1f90"
+    },
+    {
+      "claim_id": "9e9f931c-a9a0-4316-82cc-49c7d2e4c08c",
+      "result_id": "efb25248-689e-4386-bd1a-3f19642d1f90"
+    },
+    {
+      "claim_id": "7fb41041-af5f-4f23-9ecf-7908f551bf1a",
+      "result_id": "c6198b2b-28b8-4490-9243-fab7872eb853"
+    },
+    {
+      "claim_id": "c2791017-8419-4e73-aab0-3df9afb05deb",
+      "result_id": "c6198b2b-28b8-4490-9243-fab7872eb853"
+    },
+    {
+      "claim_id": "3c83f4d6-c858-445a-be58-7ee3ea6031f4",
+      "result_id": "c6198b2b-28b8-4490-9243-fab7872eb853"
+    },
+    {
+      "claim_id": "bb835f28-f1b3-4241-8f4f-c5d83b45b93d",
+      "result_id": "c6198b2b-28b8-4490-9243-fab7872eb853"
+    },
+    {
+      "claim_id": "96cc30a7-6c80-4976-96a1-aa639b6df115",
+      "result_id": "0199d2de-f115-4ae5-ac20-8ccfa8e2e36a"
+    },
+    {
+      "claim_id": "d7db5759-34cf-44fb-b257-e360d8f62cfc",
+      "result_id": "0199d2de-f115-4ae5-ac20-8ccfa8e2e36a"
+    },
+    {
+      "claim_id": "92bc847d-4e49-4c0b-a5d8-4e8be54036a5",
+      "result_id": "0199d2de-f115-4ae5-ac20-8ccfa8e2e36a"
+    },
+    {
+      "claim_id": "c7f2a886-ce7b-4275-95ab-10dd9b185464",
+      "result_id": "0199d2de-f115-4ae5-ac20-8ccfa8e2e36a"
+    },
+    {
+      "claim_id": "b774e5e0-a015-418e-a62b-e1d638992262",
+      "result_id": "0199d2de-f115-4ae5-ac20-8ccfa8e2e36a"
+    },
+    {
+      "claim_id": "c998f1ce-5a28-4cdb-9064-a2a9b1d380ec",
+      "result_id": "0199d2de-f115-4ae5-ac20-8ccfa8e2e36a"
+    },
+    {
+      "claim_id": "b50d9a9d-0920-49e3-99e9-9cdda586f30f",
+      "result_id": "0199d2de-f115-4ae5-ac20-8ccfa8e2e36a"
+    },
+    {
+      "claim_id": "b5349ddb-fdc7-4711-b2e9-bf59ae912746",
+      "result_id": "0199d2de-f115-4ae5-ac20-8ccfa8e2e36a"
+    },
+    {
+      "claim_id": "25b43299-244f-42d2-b9fe-d2f89e757381",
+      "result_id": "a9bee5da-0d5d-4b3b-8c84-5f2317e54a93"
+    },
+    {
+      "claim_id": "fc340710-8348-480c-98a7-e5af45d3c767",
+      "result_id": "a9bee5da-0d5d-4b3b-8c84-5f2317e54a93"
+    },
+    {
+      "claim_id": "155ff723-f426-4c4d-860e-5ba03eab5d03",
+      "result_id": "4b044bc0-1463-4a8c-88df-1f3e068f48e7"
+    },
+    {
+      "claim_id": "bcdeba61-8fbf-4627-aafb-066e59f01d7c",
+      "result_id": "4b044bc0-1463-4a8c-88df-1f3e068f48e7"
+    },
+    {
+      "claim_id": "08427b54-cd38-4d91-bf6e-446718bdb098",
+      "result_id": "4b044bc0-1463-4a8c-88df-1f3e068f48e7"
+    },
+    {
+      "claim_id": "8e6760ec-b732-4b0c-9127-197b3be376c8",
+      "result_id": "4b044bc0-1463-4a8c-88df-1f3e068f48e7"
+    },
+    {
+      "claim_id": "a4123e56-5bd7-4e46-bcf0-1bd8ac210f82",
+      "result_id": "4b044bc0-1463-4a8c-88df-1f3e068f48e7"
+    },
+    {
+      "claim_id": "e45fd1bc-e46d-425a-b607-dcf03e6117f9",
+      "result_id": "4b044bc0-1463-4a8c-88df-1f3e068f48e7"
+    },
+    {
+      "claim_id": "86c27109-1b43-43ac-b1ab-73263de37c38",
+      "result_id": "4b044bc0-1463-4a8c-88df-1f3e068f48e7"
+    },
+    {
+      "claim_id": "0591e51d-5c02-40fd-92ac-3ea327a1c4e3",
+      "result_id": "4b044bc0-1463-4a8c-88df-1f3e068f48e7"
+    },
+    {
+      "claim_id": "ef5500aa-0b88-4b6a-9a11-f52c883e66a5",
+      "result_id": "5d0f8801-7693-4522-9c25-1ac2e75feac1"
+    },
+    {
+      "claim_id": "d815f2dc-914f-45b9-a185-56226397637e",
+      "result_id": "5d0f8801-7693-4522-9c25-1ac2e75feac1"
+    },
+    {
+      "claim_id": "b2503aad-dd0b-4ee1-b529-37b37af3ac6a",
+      "result_id": "5d0f8801-7693-4522-9c25-1ac2e75feac1"
+    },
+    {
+      "claim_id": "5064ae0e-fb99-425b-9452-6fc9838285d5",
+      "result_id": "7faaf7b0-cf01-47cf-bed6-d38d61acdb83"
+    },
+    {
+      "claim_id": "7b54b0e3-338f-4952-a824-ff591623fb9f",
+      "result_id": "7faaf7b0-cf01-47cf-bed6-d38d61acdb83"
+    },
+    {
+      "claim_id": "2578ba97-d628-4315-8059-f690c1288c7b",
+      "result_id": "7faaf7b0-cf01-47cf-bed6-d38d61acdb83"
+    },
+    {
+      "claim_id": "edfd6c81-ca19-4af2-af91-fe5d7bc0c125",
+      "result_id": "7faaf7b0-cf01-47cf-bed6-d38d61acdb83"
+    },
+    {
+      "claim_id": "a5f667d1-7529-4487-8519-4c3101432a2f",
+      "result_id": "7faaf7b0-cf01-47cf-bed6-d38d61acdb83"
+    },
+    {
+      "claim_id": "fc3c3d58-27c9-40d0-b092-1347d1107ad7",
+      "result_id": "7faaf7b0-cf01-47cf-bed6-d38d61acdb83"
+    },
+    {
+      "claim_id": "3adc8669-1c50-4a4d-a93f-cf7c6c4eed40",
+      "result_id": "7faaf7b0-cf01-47cf-bed6-d38d61acdb83"
+    },
+    {
+      "claim_id": "44dd0ba1-febf-486e-b109-c01c3a47a429",
+      "result_id": "44af2389-0a0a-4382-bb49-7e83acd94bdb"
+    },
+    {
+      "claim_id": "27a3a0b3-1e15-4847-a517-499f0fc33251",
+      "result_id": "44af2389-0a0a-4382-bb49-7e83acd94bdb"
+    },
+    {
+      "claim_id": "b7147f3d-4a02-407d-88e8-9f8182a3407d",
+      "result_id": "44af2389-0a0a-4382-bb49-7e83acd94bdb"
+    },
+    {
+      "claim_id": "36eb8768-35fb-453d-81c8-f28ca4ada1c8",
+      "result_id": "d9e1ff4e-03e8-4c77-bfd2-2fc299deeee3"
+    },
+    {
+      "claim_id": "4d81795f-3002-4c34-9273-a8627dda5839",
+      "result_id": "d9e1ff4e-03e8-4c77-bfd2-2fc299deeee3"
+    },
+    {
+      "claim_id": "87c9380e-f173-4db1-a02e-9c71afe7c43f",
+      "result_id": "d9e1ff4e-03e8-4c77-bfd2-2fc299deeee3"
+    },
+    {
+      "claim_id": "be2c36d0-0daf-4ca1-9a0c-e88833de0128",
+      "result_id": "d9e1ff4e-03e8-4c77-bfd2-2fc299deeee3"
+    },
+    {
+      "claim_id": "30b20903-4029-4427-85bc-011d9308a799",
+      "result_id": "d9e1ff4e-03e8-4c77-bfd2-2fc299deeee3"
+    },
+    {
+      "claim_id": "2e48ba23-289c-4a49-bcae-e17a98a05ea9",
+      "result_id": "d9e1ff4e-03e8-4c77-bfd2-2fc299deeee3"
+    },
+    {
+      "claim_id": "3b0d1d5c-afe9-460d-9286-1ea71fe7c4e5",
+      "result_id": "49b2d9a8-4e4c-4045-9539-051aec8f218c"
+    },
+    {
+      "claim_id": "98d13ef6-1b9c-4154-98d0-953e7da8aadc",
+      "result_id": "49b2d9a8-4e4c-4045-9539-051aec8f218c"
+    },
+    {
+      "claim_id": "3e4f6f3e-975e-4d79-af47-5f44eaa5f605",
+      "result_id": "49b2d9a8-4e4c-4045-9539-051aec8f218c"
+    },
+    {
+      "claim_id": "afb2ab4d-9559-418c-a0f7-a0af29a74d51",
+      "result_id": "49b2d9a8-4e4c-4045-9539-051aec8f218c"
+    },
+    {
+      "claim_id": "f02707f3-3f16-431d-b5f9-e003aa9e34fd",
+      "result_id": "49b2d9a8-4e4c-4045-9539-051aec8f218c"
+    },
+    {
+      "claim_id": "9aab2ed0-3d63-4561-a3d4-353f603f5b86",
+      "result_id": "49b2d9a8-4e4c-4045-9539-051aec8f218c"
+    },
+    {
+      "claim_id": "84a4e493-35bd-4229-bb15-300a646404e0",
+      "result_id": "49b2d9a8-4e4c-4045-9539-051aec8f218c"
+    },
+    {
+      "claim_id": "63bc32e3-5508-4255-ad30-196ea7d32670",
+      "result_id": "49b2d9a8-4e4c-4045-9539-051aec8f218c"
+    },
+    {
+      "claim_id": "c0272e9e-279f-44c8-9f53-b46f5a1e3bc3",
+      "result_id": "49b2d9a8-4e4c-4045-9539-051aec8f218c"
+    },
+    {
+      "claim_id": "71544c21-dc82-430c-ae71-295a11609154",
+      "result_id": "b08c32ee-0618-462e-ab5d-2a866ab3b936"
+    },
+    {
+      "claim_id": "e3d76e16-f9e4-4afe-a980-86094606c4d3",
+      "result_id": "349255d2-86fa-48ef-a1ac-08f196b1969a"
+    },
+    {
+      "claim_id": "c7963602-11fc-4051-910f-0c7e862325a9",
+      "result_id": "4c1928e3-1cd3-45ed-9518-3781e91e84b2"
+    },
+    {
+      "claim_id": "57bd4b97-6657-4b5d-8fc6-7a1a158ab1b6",
+      "result_id": "4c1928e3-1cd3-45ed-9518-3781e91e84b2"
+    },
+    {
+      "claim_id": "85568b0e-ba6b-454d-852e-0ef4f0f367ce",
+      "result_id": "4c1928e3-1cd3-45ed-9518-3781e91e84b2"
+    },
+    {
+      "claim_id": "4764ba2b-07e6-4d20-be0a-2dc4e1daaf84",
+      "result_id": "92797c6e-e579-459b-89f7-d73be68ffb62"
+    }
+  ],
+  "comparisons": []
+}

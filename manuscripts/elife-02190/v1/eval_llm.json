@@ -1,0 +1,202 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C32",
+      "C72"
+    ],
+    "result": "A Pif1 monomer preferentially anchors to 3\u2032-ss-dsDNA junctions and exhibits periodic DNA patrolling by reeling in the 3\u2032 tail with a 1-nucleotide step size. The patrolling period is ATP-dependent (KM = 110 \u00b1 17 \u03bcM), with translocation speeds of 13 \u00b1 2 nt/s at 20 \u03bcM ATP and 85 \u00b1 13 nt/s at saturated ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C19-C26, C32, and C72 collectively demonstrate the periodic patrolling mechanism through multiple complementary approaches: FRET-based binding assays (C19-C21), kinetic measurements across varying ATP concentrations and DNA lengths (C22-C25), \u0393-distribution fitting for step size determination (C26), and differential labeling schemes showing preferential 3\u2032 junction binding (C32). The data are internally consistent and supported by appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C65"
+    ],
+    "result": "A Pif1 monomer can efficiently unwind 31-bp RNA-DNA hybrids through periodic patrolling (~200 cycles on average) but cannot efficiently unwind DNA-DNA duplexes, which requires multiple Pif1 molecules. The unwinding time for RNA-DNA hybrids is 6.3 \u00b1 0.9 min at 20 \u03bcM ATP and 1.6 \u00b1 0.2 min at 1 mM ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C27-C31, and C65 are well-supported by unwinding curves (Figure 3A), single-molecule FRET traces showing periodic patrolling on both substrates (C72), and quantitative measurements of unwinding times under different conditions. The differential activity between RNA-DNA and DNA-DNA substrates is clearly demonstrated, with appropriate controls at different protein concentrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C33",
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C67",
+      "C73",
+      "C78",
+      "C79"
+    ],
+    "result": "Pif1's periodic patrolling activity unwinds intramolecular G4 structures with near unity yield on every encounter and keeps them unfolded through repetitive unwinding cycles. The G4 unwinding activity is ATP-dependent (KM = 118 \u00b1 7 \u03bcM), requires an adjacent ssDNA region for loading in K+ solution, and does not proceed beyond G4 to unwind dsDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C6, C33, C37-C39, C42-C43, C67, C73, C78-C79 are supported by periodic unwinding patterns in single-molecule FRET traces, Michaelis-Menten analysis of ATP dependence, experiments with and without ssDNA loading regions, and constructs with dsDNA flanking the G4. The near-unity unwinding yield is inferred from the periodic patterns, and the repetitive nature prevents G4 refolding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C48",
+      "C49",
+      "C60",
+      "C61"
+    ],
+    "result": "G4 unwinding by Pif1 occurs in three discrete steps corresponding to sequential unraveling of individual G4 strands (G-quadruplex \u2192 G-triplex \u2192 G-hairpin \u2192 unfolded), with rapid G4 refolding occurring in approximately 0.2 s. The stepwise unwinding is tightly coupled to Pif1's translocation activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C47-C49, C60-C61 are supported by step-finding analysis revealing four distinct FRET states (Figure 7), dwell time histograms showing \u0393-distributions for each step, and rapid single-exponential refolding kinetics. The interpretation of intermediates as G-triplex and G-hairpin is consistent with cited literature and the observed FRET values, though direct structural confirmation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C50",
+      "C51",
+      "C62"
+    ],
+    "result": "Pif1's periodic patrolling activity is powerful enough to unwind G4 structures stabilized by the G4-stabilizing drug BRACO19, with a patrolling period of approximately 4.7 s in the presence of 1 \u03bcM BRACO19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C50-C51, C62 are supported by periodic unwinding patterns observed in the presence of BRACO19 (Figure 7F, Figure 5\u2014figure supplement 2C), with quantitative measurements of the patrolling period. The fluorescence quenching by BRACO19 binding to G4 provides additional confirmation of drug binding during unwinding cycles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "PcrA helicase, which exhibits periodic patrolling activity with reverse directionality, does not efficiently unwind G4 structures even at concentrations sufficient for dsDNA unwinding. This demonstrates that periodic patrolling activity alone is not sufficient for G4 unwinding, and robust G4 unwinding is a specific property of Pif1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by comparative experiments showing PcrA's periodic patrolling on (dT)40-5\u2032 but lack of G4 unwinding on TEL-5\u2032 at both monomer (1 nM) and higher (100 nM) concentrations (Figure 6). The control showing efficient dsDNA unwinding by PcrA at 100 nM confirms the protein is active, strengthening the conclusion about G4 unwinding specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background knowledge about helicases and Pif1: Pif1 family helicases are conserved from bacteria to humans and belong to the SF1B family with 5\u2032\u21923\u2032 directionality. S. cerevisiae Pif1 plays multiple roles in telomerase inhibition, Okazaki fragment processing, break-induced replication, mitochondrial DNA maintenance, and preventing replication pausing at G4 motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C18 represent cited background knowledge from the literature and are appropriately referenced. These establish the context for the current work but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C41",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C63",
+      "C64",
+      "C74",
+      "C80"
+    ],
+    "result": "Additional background knowledge: G4 structures form in vivo and are stabilized by K+>Na+>Li+; R-loops are frequent during replication/transcription and cause genome instability; Pif1 displays the highest G4 unwinding specificity among >20 helicases tested; many SF1/SF2 helicases show limited monomeric activity enhanced by oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36, C41, C52-C59, C63-C64, C74, C80 represent cited background knowledge appropriately referenced from the literature. These provide context but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C73"
+    ],
+    "result": "Pif1 binding alone may unfold TP G4 in Na+ solution, and Mg2+ may further stabilize G4 structures in K+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C73 are supported by FRET histogram data showing G4 unwinding in Na+ without ATP (Figure 5\u2014figure supplement 3A) and shifts in K+ concentration required for G4 formation with/without Mg2+ (Figure 5\u2014figure supplement 1). These observations are consistent with known cation effects on G4 stability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C71"
+    ],
+    "result": "DNA binding-induced oligomerization and/or interactions with accessory proteins might regulate Pif1's translocation versus helicase activity. The inability of monomeric Pif1 to unwind dsDNA might prevent unwanted dsDNA unwinding after the monomer has completed its specific tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66 and C71 are speculative interpretations of the functional significance of the observed selectivity. While the differential activities are well-documented, the proposed regulatory mechanisms and functional advantages are inferred rather than directly tested. These represent reasonable hypotheses for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Methodological details: Pif1 and PcrA were purified using previously reported protocols, and all smFRET experiments were performed at 22 \u00b1 1\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are straightforward methodological statements with appropriate citations for protein purification protocols and clear specification of experimental temperature. These are adequately documented for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

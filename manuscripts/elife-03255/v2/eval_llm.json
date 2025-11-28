@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C128",
+      "C129"
+    ],
+    "result": "TRPV1 exhibits high temperature sensitivity (Q10 > 20) across a broad voltage range (>200 mV), with minimal voltage dependence (gating charge ~0.76 e0, V1/2 = 114.9 mV). This allows TRPV1-expressing neurons to detect heat in both resting and excited states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C128-C129 provide converging experimental evidence (Figure 1A,C) and logical inference establishing TRPV1's role as a temperature sensor. The Q10 measurements, voltage-dependence characterization, and physiological interpretation are internally consistent and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C130",
+      "C131"
+    ],
+    "result": "Shaker channels exhibit low temperature sensitivity (Q10 < 4) due to obligatory coupling between voltage-sensor movement (~13 e0 gating charges) and pore opening. The channel activates at ~-60 mV with steep voltage dependence (gating charge 5.1 e0, V1/2 = -54.2 mV), ensuring reliable electrical signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13, C130-C131 establish the baseline low temperature sensitivity of Shaker through experimental data (Figure 1B,C) and mechanistic reasoning based on established channel biophysics. The obligatory coupling mechanism is well-supported by citations and consistent with known Kv channel function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Shaker Q10 modestly increases to ~10 at -80 to -60 mV, coinciding with the voltage range where the voltage-sensor begins moving (C\u2192C' transition).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 identify a transient Q10 increase in Shaker at specific voltages, supported by experimental data (Figure 1B,C). This observation sets up the subsequent investigation into the source of temperature sensitivity in Kv channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "BK channel experiments demonstrate that the transient Q10 increase tracks with the G-V curve rather than the Q-V curve. Removing Ca2+ shifts the Q10 peak to +100 mV and dramatically enhances its magnitude, suggesting the Q10 increase associates with activation gate opening (C'\u2192O) rather than voltage-sensor movement (C\u2192C').",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 use BK channels as a critical experimental system to dissect voltage-sensor movement from gate opening. The Ca2+-dependent manipulation (Figure 2) provides strong evidence that temperature sensitivity originates from the C'\u2192O transition, not voltage-sensor movement. The logic is sound and experimentally well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Kv2.1 and Kv4.3 exhibit surprisingly high Q10 values (20-30 range) comparable to TRPV1, despite having similar voltage dependence to Shaker and BK. The high Q10 cannot originate from voltage-sensor movement, as TRPV1 has minimal voltage sensitivity (<1 e0). Heat affects voltage-dependent activation similarly across TRPV1 and Kv channels, with no correlation between peak Q10 and temperature-induced V1/2 shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 present the key discovery that some Kv channels can exhibit TRPV1-like temperature sensitivity. The experimental data (Figures 3, 4) are compelling, and the comparative analysis across multiple channels strengthens the conclusion that voltage-sensor movement is not the source of high temperature sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Kv2.1 and Kv4.3 undergo closed-state inactivation (CSI) that decouples the voltage-sensor from the activation gate, making them more TRPV1-like. The Q10 increase peaks at -70 to -50 mV where CSI probability is high, enabling strong heat activation. In contrast, Shaker lacks CSI, maintaining obligatory voltage-sensor coupling that prevents heat activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 provide a mechanistic explanation for why Kv2.1/Kv4.3 show high temperature sensitivity while Shaker does not. The CSI mechanism is well-documented in the literature and the correlation between CSI probability and Q10 peak (Figure 5) is convincing. The contrast with Shaker strengthens the argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The Shaker ILT mutant, which separates Q-V and G-V curves, exhibits a large Q10 transient (>20) starting at -20 mV where the voltage-sensor is mostly elevated. This demonstrates that releasing voltage-sensor control through mutations reveals an intrinsically temperature-sensitive C'\u2192O transition in Kv channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 use the ILT mutant as a critical test of the hypothesis that decoupling voltage-sensor from gate reveals intrinsic temperature sensitivity. The experimental data (Figure 6A-E) strongly support this conclusion, and the voltage range of Q10 increase aligns with the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The Shaker V2 mutant exhibits heat-induced deactivation (Q10 < 1) rather than activation, despite also having separated Q-V and G-V curves. V2 and ILT differ by only a few amino acids that alter gating kinetics without changing the fundamental voltage-dependent mechanism, suggesting V2 is also intrinsically heat-sensitive but with opposite polarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 present the intriguing finding that mutations can tune the direction of temperature sensitivity. The experimental data (Figure 6F-J) are clear, though the mechanistic explanation remains speculative (acknowledged in C52). The observation strengthens the overall conclusion about intrinsic temperature sensitivity in Kv channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Kv channel gating can be highly temperature-sensitive, with potential functional consequences for neuronal excitability and coding. While temperature-dependent changes in Kv activity affect physiology, how dynamic temperature sensitivity impacts function remains poorly understood, partly due to most studies being conducted at room temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 summarize the findings and discuss physiological implications. The experimental support for C53 is strong (Figure 7), while C54 is appropriately speculative. C55-C56 accurately assess the current state of knowledge based on cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The study reveals a transient increase in temperature sensitivity when voltage-sensor is partially decoupled from activation gate, exposing an intrinsically heat-sensitive gating process. This agrees with prior work identifying a late, temperature-sensitive transition in Shaker and suggests no specialized 'heat sensor' is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 synthesize the main findings in the Discussion. The conclusions are well-supported by the experimental data presented throughout the Results section. The agreement with Rodriguez et al. (1998) and Clapham and Miller (2011) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "High temperature sensitivity requires large enthalpic changes, which have been observed in TRP channels and likely reflect substantial conformational rearrangements. In Kv channels, this conformational rearrangement is not the voltage-sensor movement but the process following it (C'\u2192O transition).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 provide thermodynamic framework for understanding temperature sensitivity. The reasoning is sound, based on established principles (C61) and well-cited observations in TRP channels (C62-C63). The application to Kv channels (C65) is supported by the experimental data from the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "An allosteric gating model (Scheme I) explains the observations: in Shaker, strong voltage-sensor coupling enforces C\u2192C'\u2192O' gating, preventing heat-driven C'\u2192O' transitions at hyperpolarized voltages. CSI in Kv2.1/Kv4.3 and mutations in ILT/V2 weaken this coupling, allowing the temperature-sensitive horizontal transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 present a unifying mechanistic model that explains all the experimental observations. The allosteric framework is well-established for both Kv and TRP channels, and the model logically accounts for the differences in temperature sensitivity across channel types and conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Recognizing intrinsic temperature sensitivity in Kv channels has implications for understanding TRP channel heat sensing. TRP channel temperature sensitivity originates from large \u0394H and \u0394S changes, generally assumed to reflect conformational rearrangements detected by fluorescence in TRPV1 and CLC channels. However, the structural basis remains unknown and the mechanism controversial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 discuss implications for TRP channel mechanisms. The thermodynamic basis (C72-C73) and evidence for conformational changes (C75) are well-cited. The acknowledgment of remaining unknowns (C76-C77) is appropriate and accurate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "In Kv channels, voltage-sensor movement (C\u2192C') is not specially temperature-sensitive; instead, the C'\u2192O' transition yields high Q10. TRP channels also behave allosterically, and their high temperature sensitivity may originate from the C'\u2192O' transition. TRPV1 is heat-sensitive across broad voltages because the C\u2192C' transition is weakly voltage-dependent and non-obligatory, though the origin of voltage sensitivity in TRP channels remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 extend the findings to TRP channels. The experimental support for Kv channels (C78-C79) is strong. The extension to TRP channels (C80-C86) is logical and appropriately speculative, acknowledging uncertainties (C83-C84) while drawing reasonable inferences from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Cryo-EM structures show TRPV1's S1-S4 domains remain stationary while pore domains undergo substantial rearrangements during activation. Nearly all TRPV1 agonists interact with the pore domain, and agonist-induced activation alters pore conformation without changing S1-S4 domains. This supports the possibility that pore conformational rearrangement produces the large \u0394H and \u0394S required for high temperature sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 integrate structural and functional data from the literature to support the pore-centric model of temperature sensing. The cryo-EM evidence (C87, C90-C91) and agonist interaction data (C89) are well-cited. The conclusion (C93) is appropriately stated as supported possibility rather than proven fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "TRP channels fulfill two requirements for heat sensing: (1) high temperature sensitivity from large \u0394H/\u0394S due to conformational rearrangements, and (2) heat-induced activity independent of other stimuli because conformational rearrangements are not controlled by voltage-dependent transitions. Non-obligatory allosteric coupling allows TRP channels to function as polymodal sensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 synthesize the study's implications for TRP channel function. The two requirements (C94) are logically sound, and the explanations (C95-C96) are well-supported by the experimental findings and thermodynamic reasoning. The polymodal sensor conclusion (C97) follows logically from the allosteric model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study challenges the assumption that TRP channels' unique heat sensitivity requires a specialized temperature-sensing domain. Kv channels exhibit comparable temperature sensitivity when voltage-sensor is decoupled from activation gate through intrinsic mechanisms or mutations. Mutations can tune Shaker to be heat-activated or heat-deactivated. High temperature sensitivity is intrinsic to both TRP and Kv channels, suggesting TRP channels lack specialized heat sensors; instead, non-obligatory allosteric gating permits intrinsic heat sensitivity to drive activation, enabling polymodal nociception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C108 present the study's central thesis and main conclusions. The experimental evidence throughout the manuscript strongly supports these claims. The challenge to the specialized heat sensor hypothesis (C100, C106) is well-justified by the data showing intrinsic temperature sensitivity in Kv channels (C101-C104). The mechanistic model (C107-C108) provides a parsimonious explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Temperature profoundly influences membrane excitability, but the mechanisms remain poorly understood. Ion channel activation involves conformational changes controlled by stimuli, with heat contributing activation energy. Most channels show 2-5 fold rate changes per 10\u00b0C, insufficient to initiate activation. Temperature-sensitive TRP channels (TRPV1-4, TRPM8, TRPM3-5, TRPC5, TRPA1) are exceptions, serving as cellular temperature sensors, though their heat-sensing mechanism remains mysterious.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C118 provide essential background context. The historical perspective (C109), current knowledge gaps (C110), and basic principles (C111-C115) are well-established and appropriately cited. The identification of temperature-sensitive TRP channels (C116-C117) and acknowledgment of mechanistic uncertainty (C118) accurately frame the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "TRP and Kv channels are structurally similar members of the tetrameric cation channel superfamily with six transmembrane segments (S1-S4 peripheral domain, S5-S6 pore). Crystal and cryo-EM structures show detailed similarity. However, they are functionally distinct: Kv channels have steep voltage-dependent activation, while TRP channels are weakly voltage-activated and cannot be directly activated by temperature. This led to the assumption that TRP channels acquired specialized 'heat sensor' structures through evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C127 establish the comparative framework motivating the study. The structural similarities (C119-C121) and functional differences (C122-C126) are well-documented in cited literature. The prevailing assumption about specialized heat sensors (C127) accurately represents the field's view that the study challenges.",
+    "result_type": "MINOR"
+  }
+]

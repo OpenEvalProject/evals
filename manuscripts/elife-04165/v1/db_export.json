@@ -1,0 +1,1449 @@
+{
+  "submission": {
+    "id": "f7495c5d-94e8-4391-9d0f-f188e6434ffc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:04:45.019827Z",
+    "updated_at": "2025-11-28T22:04:45.019827Z"
+  },
+  "content": [
+    {
+      "id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "submission_id": "f7495c5d-94e8-4391-9d0f-f188e6434ffc",
+      "content_type": "manuscript",
+      "content_text": "# Active torque generation by the actomyosin cell cortex drives left\u2013right symmetry breaking\n\n## Authors\n\n- Sundar Ram Naganathan<sup>1</sup>\n- Sebastian F\u00fcrthauer<sup>2</sup>\n- Masatoshi Nishikawa<sup>1</sup>\n- Frank J\u00fclicher<sup>2</sup>\n- Stephan W Grill<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Biotechnology Center Technical University Dresden Dresden Germany\n2. Max Planck Institute for the Physics of Complex Systems Dresden Germany\n3. Max Planck Institute of Molecular Cell Biology and Genetics Dresden Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany developmental processes break left\u2013right (LR) symmetry with a consistent handedness. LR asymmetry emerges early in development, and in many species the primary determinant of this asymmetry has been linked to the cytoskeleton. However, the nature of the underlying chirally asymmetric cytoskeletal processes has remained elusive. In this study, we combine thin-film active chiral fluid theory with experimental analysis of the C. elegans embryo to show that the actomyosin cortex generates active chiral torques to facilitate chiral symmetry breaking. Active torques drive chiral counter-rotating cortical flow in the zygote, depend on myosin activity, and can be altered through mild changes in Rho signaling. Notably, they also execute the chiral skew event at the 4-cell stage to establish the C. elegans LR body axis. Taken together, our results uncover a novel, large-scale physical activity of the actomyosin cytoskeleton that provides a fundamental mechanism for chiral morphogenesis in development.\n\n## Introduction\n\nMost organisms are bilaterally asymmetric with morphologically distinct left and right hand sides. Bilateral asymmetry of organisms, organs, and tissues emerges early in development and is dependent on chiral symmetry breaking of cells and subcellular structures (Hayashi and Murakami, 2001; Shibazaki et al., 2004; Danilchik et al., 2006; Xu et al., 2007; Hejnol, 2010; Tamada et al., 2010; Vandenberg and Levin, 2010; Savin et al., 2011; Taniguchi et al., 2011; Wan et al., 2011; Huang et al., 2012). In many species the primary determinant of chirality has been linked to the cytoskeleton with both the microtubule (Nonaka et al., 1998; Ishida et al., 2007) and the actomyosin cytoskeleton (Danilchik et al., 2006; Hozumi et al., 2006; Sp\u00e9der et al., 2006) (AD Bershadsky, personal communication, November 2013) playing prominent roles. Generally, how chiral molecules and chiral molecular interactions generate chiral morphologies on larger scales remains to be a fundamental problem (Turing, 1952; Brown and Wolpert, 1990; Henley, 2012). For example, it has been observed that myosin motors can rotate actin filaments in motility assays (Sase et al., 1997; Beausang et al., 2008). Yet, it remains unknown which types of large-scale mechanical activities arise from such types of chiral molecular interactions. In this study, we describe that the actomyosin cytoskeleton can generate active torques at cellular scales, and that the cell uses active torques to break chiral symmetry.\n\n## Results and discussion\n\nWe investigated chiral behaviours of the actomyosin cell cortex in the context of polarizing cortical flow in the 1-cell Caenorhabditis elegans embryo (Munro et al., 2004; Mayer et al., 2010). The cell cortex, sandwiched between the membrane and cytoplasm, is a thin actin gel containing myosin motors and actin binding proteins (Pollard and Cooper, 1986; Clark et al., 2013). Given the chirality of cortical constituents, we first asked if cortical flow breaks chiral symmetry. We quantified the cortical flow velocity field v using particle image velocimetry in C. elegans zygotes containing GFP-tagged non-muscle myosin II (NMY-2) (Mayer et al., 2010). Flow proceeds primarily along the anteroposterior (AP) axis (x-direction), however, we also observed flow vectors to have a small component in the direction orthogonal to the AP axis (y-direction). Notably, the posterior and anterior halves of the cortex counter-rotate relative to each other (Figure 1A,B, Figure 1\u2014figure supplement 1, Video 1), with y-velocities of \u223c\u20132.5 \u03bcm/min and \u223c1 \u03bcm/min respectively (Figure 1D). We define the chiral counter-rotation velocity vc as the difference between spatially averaged y-velocities in the posterior and the anterior region (Figure 1B) and measured vc at 858 time points during flow in 25 embryos. We find that the distribution of vc is shifted towards negative values, with a mean of \u22122.9 \u00b1 0.3 \u03bcm/min (mean \u00b1 error of mean at 99% confidence unless stated otherwise, Figure 1C). Thus, counter-rotating cortical flow breaks chiral symmetry at the 1-cell stage, with the posterior half undergoing a counterclockwise rotation when viewed from the posterior pole (Figure 1A). Notably, chiral counter-rotating flow precedes the previously reported chiral whole-cell rotation of the zygote during cell division (Schonegg et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04165/elife-04165-fig1-v1.jpg)\n\n**Figure 1.:** (A) Sketch of a C. elegans embryo. Curved arrows illustrate chiral counter-rotating flow in the anterior (A, red) and posterior (P, green) half of the embryo, respectively. (B) Time-averaged cortical flow field (arrows) at the bottom surface of a representative C. elegans embryo viewed from the outside of the embryo in this and all other images. Arrow colors indicate y-velocity. Scale bar, 5 \u03bcm. Velocity scale arrow, 20 \u03bcm/min. (C) Histogram of instantaneous chiral counter-rotation velocity $v_{c}=\u2329v_{y}\u232a_{P}\u2212\u2329v_{y}\u232a_{A}$, where $\u2329v_{y}\u232a_{A}$ $(\u2329v_{y}\u232a_{P})$ is the average of the y-component of the velocity v over the left (right) shaded area in (B), for non-RNAi (858 frames from 25 embryos; gray) and mlc-4 (RNAi) (8 hrs; 223 frames from 7 embryos; beige). Dashed vertical lines indicate mean vc. (D) y-velocity vy along the AP axis averaged over 18 vertical stripes as indicated, for non-RNAi (black, averaged over 25 embryos) and mlc-4 (RNAi) (beige, averaged over 7 embryos). Error bars, SEM.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04165/elife-04165-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Quantification of chiral flow for myosin and actin using a dual-colored transgenic line (SWG003). (A) Histogram of instantaneous chiral counter-rotation velocity $v_{c}=\u2329v_{y}\u232a_{P}\u2212\u2329v_{y}\u232a_{A}$, where $\u2329v_{y}\u232a_{A}$$(\u2329v_{y}\u232a_{P})$is the average of the y-component of the velocity v over the left (right) shaded area in Figure 1B, for NMY-2::GFP (245 frames from 6 embryos; gray) and Lifeact::tagRFP-T (245 frames from 6 embryos; beige). Dashed vertical lines indicate mean vc. (B) y-velocity vy along the AP axis averaged over 18 vertical stripes, as indicated in Figure 1B, for NMY-2::GFP (black, averaged over 6 embryos) and Lifeact::tagRFP-T (beige, averaged over 6 embryos). Error bars, SEM.\n\n![Video 1.](https://cdn.elifesciences.org/articles/04165/elife-04165-media1.mov.jpg)\n\n**Video 1.:** Cortical flow during AP polarization of the C. elegans zygote exhibits chiral behaviors with the posterior and the anterior halves of the cortex counter-rotating relative to each other.\n\nSince AP flow depends on myosin activity (Mayer et al., 2010), we asked if chiral flow does so as well. We tested if reducing myosin activity through RNAi of the myosin regulatory light-chain mlc-4 reduces the chiral counter-rotation velocity vc. We found that 8 hrs of mlc-4 (RNAi) not only reduces the AP flow velocity (Munro et al., 2004) but also significantly reduces vc (Wilcoxon rank sum test at 99% confidence; mean: \u22121.1 \u00b1 0.4 \u03bcm/min, Figure 1C, Video 2) when compared to non-RNAi embryos. We conclude that chiral flow depends on myosin activity.\n\n![Video 2.](https://cdn.elifesciences.org/articles/04165/elife-04165-media2.mov.jpg)\n\n**Video 2.:** 8 hrs of mlc-4 (RNAi) leads to a substantial reduction of both AP and chiral flow.\n\nWe next sought to understand how myosin activity can drive both AP and chiral flow. We pursue the idea that molecular-scale torque generation (Sase et al., 1997; Beausang et al., 2008) leads to the emergence of active torques on larger scales and make use of a physical description of the cell cortex as a thin film of an active chiral fluid (F\u00fcrthauer et al., 2012, 2013). In our description, force and torque generation at the molecular scale give rise to both an active contractile tension T and an active torque density \u03c4 (Figure 2A) to drive cortical flow. Under conditions of azimuthal symmetry (Figure 2\u2014figure supplement 1, appendix), the AP flow velocity (vx) and the y-velocity (vy) obey the equations of motion,\u2202xT=\u03b7\u2202x2vx\u2212\u03b3vx(1)\u2202x\u03c4=12\u03b7\u2202x2vy\u2212\u03b3vy\u2009,where \u03b7 is the 2D viscosity of the cortical layer and \u03b3 quantifies friction with membrane and cytoplasm (Mayer et al., 2010). From the structure of Equation 1, we see that gradients in active tension T along the AP axis drive AP flow, while gradients in active torque density \u03c4 along the AP axis drive chiral flow orthogonal to the AP axis (Figure 2B, bottom sketch). We introduce the chirality index c = \u03c4/T, which quantifies their relative magnitude. We assume that both active tension T and active torque density \u03c4 are proportional to the local myosin concentration, leading to a single value of the chirality index c that is constant over the embryo. This remains a useful approximation even for cases where T and \u03c4 exhibit more complex dependencies on myosin concentration or where they are independently regulated (see below). In such cases the single value of c we determine corresponds to an average, capturing the overall chirality index of the embryo (see appendix). Accordingly, we calculated the theoretical AP and chiral flow profiles from the experimentally determined myosin distribution and found a best match with the experimental profiles for a hydrodynamic length of \u2113=\u03b7/\u03b3=16\u00b10.6 \u03bcm (Mayer et al., 2010) and an overall chirality index of c = 0.58 \u00b1 0.09 (Figure 2B; see appendix). We conclude that a significant part of myosin activity is utilized for generating active torques. The handedness of active torques is clockwise when viewed from the outside of the embryo as indicated by the positive sign of the chirality index c. When considering the observed AP myosin gradients, active torques of this handedness give rise to counterclockwise flow in the posterior domain when viewed from the posterior tip, see Figure 2B for an illustration.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04165/elife-04165-fig2-v1.jpg)\n\n**Figure 2.:** (A) Left, myosin heads consume ATP to pull (Kron and Spudich, 1986) and twist (Sase et al., 1997; Beausang et al., 2008) actin filaments, leading to the generation of a force dipole (top, magenta) and a torque dipole (bottom, beige). Right, these can generate an active tension and an active torque density at larger scales, causing an isolated piece of cortex to contract (top) and rotate (bottom). Gray surface, membrane; cube with wire frames, non-contracted (non-rotated) piece of cortex; magenta (beige) cubes, contracted (rotated) piece of cortex. The gray arrow points from the outside to the inside of the cell and the rotation is clockwise when viewed from the outside. (B) Top, myosin intensity (blue markers) and velocity profiles (magenta markers, AP flow velocity vx; beige markers, y-velocity vy) along the AP axis (Figure 1B,D) for the non-RNAi condition (averaged over 25 embryos). Error bars, SEM. Magenta and beige curves, respective theoretical velocity profiles (c = 0.58 \u00b1 0.09). Bottom, sketch of a C. elegans embryo with clockwise active torques in beige (as viewed from the outside of the embryo). A gradient in myosin concentration along the AP axis (see plot above) leads to a gradient in active torques (shown here with varying sizes of the clockwise torques), resulting in a chiral flow (red and green arrows) orthogonal to the gradient.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04165/elife-04165-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Left, representative image of the actomyosin cortex labeled with GFP-tagged NMY-2 (gray, myosin) at 30% cortical retraction. Scale bar, 5 \u03bcm. Right, histogram of the difference in spatially averaged myosin fluorescence intensity between the posterior and anterior halves of the embryo, quantified from the respective shaded regions for non-RNAi embryos (N = 250 frames from 25 embryos; gray). Dashed line, mean of the difference in myosin intensity. Only the last 50 s of cortical flow was utilized from each video for generating this histogram. (B) Left, representative image of the actomyosin cortex labeled with GFP-tagged NMY-2 (gray, myosin). Right, histogram of the difference in spatially averaged myosin fluorescence intensity between the top and bottom halves of the embryo in the posterior from the respective shaded regions for non-RNAi embryos (N = 858 frames from 25 embryos; gray). Dashed line, mean of the difference in myosin intensity. The entire cortical flow period was utilized from each video for generating this histogram.\n\nWe next sought to investigate if changing myosin activity affects the overall chirality index. To this end, we performed a series of mild-to-stronger (Baggs et al., 2009) mlc-4 (RNAi) experiments with feeding times of 4, 6, and 8 hrs, respectively, and determined c for each condition. We refer to this as weak perturbation RNAi experiments as we aim to identify principle phenotypical alterations upon a mild deviation from non-RNAi conditions, similar to determining the linear response to a small perturbation. While AP flow velocity vx and the chiral flow velocity vc were generally reduced at 4 and 6 hrs of mlc-4 (RNAi) (Figure 3A, Figure 3\u2014figure supplement 1\u20133, Video 3), c remained unchanged from non-RNAi conditions (c, 0.61 \u00b1 0.07 at 4 hrs and 0.52 \u00b1 0.06 at 6 hrs of RNAi, compared to 0.58 \u00b1 0.09 for non-RNAi; Figure 3A, Figure 3\u2014figure supplement 3). However, 8 hrs of mlc-4 (RNAi) not only resulted in a large reduction of both AP and chiral flow velocities but also led to a significant reduction of c (0.14 \u00b1 0.04, Figure 3A, Figure 3\u2014figure supplement 3). This indicates that the overall ratio of active torque density to active tension is not changed by weak reduction of mlc-4 activity but is altered at stronger RNAi conditions when cortical structure is affected (Figure 3\u2014figure supplement 4A and Video 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04165/elife-04165-fig3-v1.jpg)\n\n**Figure 3.:** (A) Chiral counter-rotation velocity vc (top), AP velocity vx (middle), and chirality index c (bottom) for non-RNAi (gray), mlc-4 (4, 6, 8 hrs RNAi), ect-2 (4, 6, 8 hrs RNAi), and rga-3 (3, 5, 40 hrs RNAi). Error bars, error of the mean with 99% confidence. Yellow bars, significant difference to non-RNAi condition; brown bars, no significant difference. (B) Histogram of instantaneous chiral counter-rotation velocity vc for mlc-4 (left; 6 hrs; 235 frames from 7 embryos), ect-2 (middle; 6 hrs; 338 frames from 9 embryos), and rga-3 (right; 5 hrs; 402 frames from 10 embryos) RNAi. Gray histograms, non-RNAi condition. Dashed lines, mean vc. (C) Respective time-averaged cortical flow field (arrows) of representative embryos (gray, myosin). Arrow colors indicate y-velocity vy. Scale bar, 5 \u03bcm. Velocity scale arrow, 20 \u03bcm/min. (D) Respective average myosin intensity (blue markers) and velocity profiles (magenta markers, AP flow velocity vx; beige markers, y-velocity vy) along the AP axis for each RNAi condition. Error bars, SEM. Magenta and beige curves, respective theoretical velocity profiles. Dashed lines, non-RNAi theoretical velocity profiles.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04165/elife-04165-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Each graph presents the instantaneous chiral counter-rotation velocity vc histogram for the RNAi condition specified (beige). The histogram from the non-RNAi condition is shown in gray. Downward arrows indicate a significant decrease and upward arrows indicate a significant increase in vc compared to the non-RNAi condition (Wilcoxon rank sum test with 99% confidence). The number of hours of RNAi is as indicated.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04165/elife-04165-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Each graph presents the instantaneous AP velocity vx histogram for the RNAi condition specified (magenta). The histogram from the non-RNAi condition is shown in gray. Downward arrows indicate a significant decrease and upward arrows indicate a significant increase in vx compared to the non-RNAi condition (Wilcoxon rank sum test with 99% confidence). The number of hours of RNAi is as indicated.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04165/elife-04165-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Each graph presents the respective average myosin intensity (blue markers) and velocity profiles (magenta markers, AP flow velocity vx; beige markers, y-velocity vy) along the AP axis for each RNAi condition specified. Error bars, SEM. Magenta and beige curves, respective theoretical velocity profiles. Dashed lines, non-RNAi theoretical velocity profiles. The number of hours of RNAi is as indicated. See respective Videos 2\u20135.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/04165/elife-04165-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Representative images for non-RNAi, 4, 6, 8, and 11 hrs of mlc-4 (RNAi) are shown. Cortical structure is disrupted by 8 hrs of mlc-4 (RNAi) (magnified view with characteristic foci size obtained from spatial myosin fluorescence intensity\u2013intensity correlation, compare to non-RNAi). (B) Representative images for non-RNAi, 4, 6, 8, and 11 hrs of ect-2 (RNAi). Cortical structure is disrupted by 8 hrs of ect-2 (RNAi) (magnified view with characteristic foci size, compare to non-RNAi). (C) Representative images for non-RNAi, 3, 5, and 40 hrs of rga-3 (RNAi). Cortical structure is disrupted by 5 hrs of rga-3 (RNAi) (magnified view with characteristic foci size, compare to non-RNAi). Scale bars, 10 \u03bcm. Error bars, error of the mean with 99% confidence.\n\n![Video 3.](https://cdn.elifesciences.org/articles/04165/elife-04165-media3.mov.jpg)\n\n**Video 3.:** 4 and 6 hrs of mlc-4 (RNAi) leads to a proportional change of AP and chiral flow, with the chirality index remaining unchanged under these conditions.\n\nWe next asked whether there are conditions that modify active torque generation without affecting active tension. To this end, we tested if small changes in Rho signaling, which regulates myosin activity as well as actin dynamics (Maekawa et al., 1999), have a different impact on AP and chiral flow and thus change c. We performed a series of mild-to-stronger RNAi of the Rho GEF ect-2 and the Rho GAP rga-3. We found that weak perturbation RNAi of ect-2 led to a substantial decrease in chiral but not AP flow and thus a decrease in the overall chirality index c when compared to non-RNAi conditions (Figure 3A,D; see also Figure 3\u2014figure supplement 4B, Video 4). Conversely, weak perturbation RNAi of rga-3 led to a substantial increase in chiral but not AP flow and thus an increase in the overall chirality index c (Figure 3A,D; see also Figure 3\u2014figure supplement 4C, Video 5). Thus, a weak perturbation of ect-2 and rga-3 affects chiral but not AP flow, unlike a weak perturbation of mlc-4 which affects both. We conclude that a principle phenotypical alteration upon mild modifications of Rho pathway activity is a change of the chirality index, or, in other words, mild modifications of Rho pathway activity change active torque generation without affecting active tension.\n\n![Video 4.](https://cdn.elifesciences.org/articles/04165/elife-04165-media4.mov.jpg)\n\n**Video 4.:** ect-2 (RNAi) leads to a substantial reduction in chiral flow with a minimal change in AP flow.\n\n![Video 5.](https://cdn.elifesciences.org/articles/04165/elife-04165-media5.mov.jpg)\n\n**Video 5.:** rga-3 (RNAi) leads to a substantial increase in chiral flow with a minimal change in AP flow.\n\nWe next asked whether actomyosin active torques participate in bilateral symmetry breaking, since this requires a chiral process. In C. elegans, embryonic handedness is determined at the 4-cell stage when the ABa and ABp cells skew clockwise by \u223c20\u00b0 (as viewed dorsally in the AP\u2013LR plane, Figure 4A) (Wood, 1991; Bergmann et al., 2003). We first tested if the clockwise skew in ABa is accompanied by chiral cortical flow. Strikingly, we observed chiral cortical flow in ABa, with the cortex in both future daughter cells counter-rotating (vc = \u22125.2 \u00b1 1.1 \u03bcm/min, mean \u00b1 error of mean at 95% confidence, Video 6). The handedness of chiral flow is identical to that at the 1-cell stage, indicative of a presence of active torques with the same sign of c. If these chiral counter-rotating flows participate in the clockwise skew of both daughter cells, we would expect that changing active torque generation should affect the chiral skew at the 4-cell stage. To this end, we performed weak perturbation RNAi of the Rho pathway members, ect-2 and rga-3, to specifically modify active torques. We first tested whether chiral flows are affected at the 4-cell stage under these conditions. We found that 4.5 hrs of ect-2 (RNAi) led to a significant decrease in chiral flow velocity, vc (\u22123.4 \u00b1 1.4 \u03bcm/min), while 4.5 hrs of rga-3 (RNAi) led to a significant increase in vc in the ABa cell (\u22126.7 \u00b1 0.7 \u03bcm/min, Figure 4B, Video 6), similar to our observations at the 1-cell stage. We next tested whether changing chiral flow velocity at the 4-cell stage is concomitant with a change in the degree of clockwise skew. Indeed, we found that 4.5 hrs of ect-2 (RNAi) led to a significant decrease in skew (15.8\u00b0 \u00b1 4.9\u00b0) in the ABa cell measured in the AP\u2013LR plane, while 4.5 hrs of rga-3 (RNAi) led to a significant increase in skew (37.8\u00b0 \u00b1 6.1\u00b0) when compared to non-RNAi conditions (23.6\u00b0 \u00b1 3.7\u00b0; Figure 4A and Figure 4\u2014figure supplement 1). Similar results were obtained in ABp (Figure 4\u2014figure supplement 1). Thus, changing counter-rotating chiral flow velocity in these cells by weak perturbation of the Rho pathway leads to a change in the degree of skew. This suggests that active torque generation and chiral counter-rotating flow participate in the execution of the LR symmetry breaking chiral skew event at the 4-cell stage.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04165/elife-04165-fig4-v1.jpg)\n\n**Figure 4.:** (A) A schematic of the skew angle measurement in the AP\u2013LR plane. Gray dashed line, initial nuclei position; black dashed line, skewed nuclei position; beige arrows, direction of cortical flow on the dorsal surface (Video 6). To the right are the chiral skew angles of ABa for non-RNAi (gray), ect-2 (RNAi) (4.5 hrs) and rga-3 (RNAi) (4.5 hrs) in the AP\u2013LR plane. Gray circles, skew angle in individual videos; shaded areas, SEM; green horizontal lines, mean skew angle; red horizontal lines, median skew angle; yellow shaded areas, knockdown conditions with a significant difference (95% confidence with the Wilcoxon rank sum test) from the non-RNAi condition. (B) Chiral counter-rotation velocity vc for non-RNAi (gray), ect-2 (RNAi) (4.5 hrs) and rga-3 (RNAi) (4.5 hrs) quantified at the 4-cell stage during ABa cytokinesis. Note that one outlier was removed for computing mean vc for rga-3 (RNAi). The expected flow profiles from our theoretical description, given a stripe of high myosin activity (corresponding to the cleavage plane), is shown in Figure 4\u2014figure supplement 5. (C) Overall chirality index c, for non-RNAi (gray) and for Wnt signaling genes (40 hrs RNAi) that impact the establishment of the L/R body axis. Interestingly, gsk-3 not only results in a reduced chiral counter-rotation velocity but also in an increased AP velocity (Figure 4\u2014figure supplements 2\u20134). Error bars, error of the mean with 99% confidence. Yellow bars, significant difference to non-RNAi condition; brown bars, no significant difference.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04165/elife-04165-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) A schematic of the skew angle measurement in the AP\u2013LR plane. Gray dashed line, initial nuclei position; black dashed line, skewed nuclei position; beige arrows, direction of cortical flow on the dorsal surface (ABa counter-rotating flow shown in Video 6). Below, skew angles of ABa and ABp for non-RNAi (gray), ect-2 (RNAi) (4.5 hrs) and rga-3 (RNAi) (4.5 hrs) in the AP\u2013LR plane. Gray circles, skew angle in individual videos; shaded areas, SEM; green horizontal lines, mean skew angle; red horizontal lines, median skew angle; yellow shaded areas, knockdown conditions with a significant difference (95% confidence with the Wilcoxon rank sum test) from the non-RNAi condition. (B) Same as (A) with the skew determined in the DV\u2013LR plane. (C) Skew calculated without projections on to a particular plane.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04165/elife-04165-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Each graph presents the instantaneous chiral counter-rotation velocity vc histogram for the RNAi condition specified (beige). The histogram from the non-RNAi condition is shown in gray. Downward arrows indicate a significant decrease and upward arrows indicate a significant increase in vc compared to the non-RNAi condition (Wilcoxon rank sum test with 99% confidence). The number of hours of RNAi is as indicated.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04165/elife-04165-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Each graph presents the instantaneous AP velocity vx histogram for the RNAi condition specified (magenta). The histogram from the non-RNAi condition is shown in gray. Downward arrows indicate a significant decrease and upward arrows indicate a significant increase in vx compared to the non-RNAi condition (Wilcoxon rank sum test with 99% confidence). The number of hours of RNAi is as indicated.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/04165/elife-04165-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Each graph presents the respective average myosin intensity (blue markers) and velocity profiles (magenta markers, AP flow velocity vx; beige markers, y-velocity vy) along the AP axis for each RNAi condition specified. Error bars, SEM. Magenta and beige curves, respective theoretical velocity profiles. Dashed lines, non-RNAi theoretical velocity profiles. The number of hours of RNAi is as indicated. See Video 7.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/04165/elife-04165-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** The graph presents theoretical axial velocity vx (magenta) and chiral velocity vy (beige) profiles given a stripe of high myosin activity (blue). The gradient in myosin activity will then lead to axial flows along the gradient and directed towards the stripe as well as chiral flows orthogonal to the gradient leading to counter-rotations.\n\n![Video 6.](https://cdn.elifesciences.org/articles/04165/elife-04165-media6.mov.jpg)\n\n**Video 6.:** Dorsal view of a representative 4-cell stage embryo, with ABa and ABp cells exhibiting counter-rotating cortical flow during cytokinesis, for 4.5 hrs of ect-2 (RNAi), non-RNAi and 4.5 hrs of rga-3 (RNAi). Anterior view of these Videos is shown at the bottom for visualizing counter-rotation in ABa cell. Flashing cyan arrows indicate the direction of counter-rotating cortical flow. Note that counter-rotation of AB cells is significantly reduced in ect-2 (RNAi) and significantly increased in rga-3 (RNAi) compared to the non-RNAi condition. Quantification of chiral flow velocities (Figure 4B) was performed in the ABa cell (marked in red).\n\nFinally, we tested whether genes that affect establishment of the L/R body axis impacts chiral flow. To investigate this, we quantified chiral flow velocities and the overall chirality index c at the 1-cell stage under conditions of RNAi of the Wnt signaling genes dsh-2, gsk-3, mig-5, mom-2, and mom-5, which are known to regulate aspects of bilateral symmetry breaking (Walston et al., 2004; Pohl and Bao, 2010). Strikingly, we found that all these conditions (except mom-5) led to reduced chiral flow and a significant reduction of the overall chirality index c at the 1-cell stage (Figure 4C, Figure 4\u2014figure supplement 2\u20134, Video 7). These results are indicative of a fundamental link between genes that affect LR symmetry breaking and chiral counter-rotating flow. Since Wnt-induced signals in many systems propagate through Rho GTPases to promote morphological changes (Schlessinger et al., 2009), we speculate that these effects are propagated through Rho signaling (Figure 3). Taken together, our results indicate that active torque generation and chiral counter-rotating flows participate in the establishment of the L/R body axis of C. elegans.\n\n![Video 7.](https://cdn.elifesciences.org/articles/04165/elife-04165-media7.mov.jpg)\n\n**Video 7.:** RNAi of Wnt signaling genes leads to a substantial reduction in chiral flow.\n\n![Video 8.](https://cdn.elifesciences.org/articles/04165/elife-04165-media8.mov.jpg)\n\n**Video 8.:** Cortical flow visualized through Lifeact::tagRFP-T exhibits similar chiral behaviors.\n\nTo conclude, the actomyosin cytoskeleton in C. elegans generates active chiral torques with clockwise handedness when viewed from the outside of the cell. They drive a specific pattern of chiral flows which can be understood quantitatively based on the physics of active gels with chiral asymmetries (Kruse et al., 2005; F\u00fcrthauer et al., 2012, 2013). Furthermore, our weak perturbation RNAi experiments indicate that Rho activity affects cortical chirality in a way that does not depend on its role in activating myosin. On the one hand, this raises an interesting question whether active chiral torques arise directly from chiral interactions between actin and myosin (Figure 2A) or whether they rather emerge through myosin molecular force generation and non-trivial tension\u2013torque coupling (Gore et al., 2006; De La Cruz et al., 2010) in the actomyosin network. On the other hand, through these weak perturbation RNAi experiments we have identified specific conditions under which cortical chirality and active torques can be selectively modified. Bilateral symmetry breaking requires a chiral process, and we used these specific conditions to demonstrate that in C. elegans, this chiral process could be provided by active chiral torque generation of the actomyosin cortical layer for driving the spindle skew at the 4-cell stage. We note that a plausible scenario for driving spindle skew by counter-rotating flows is similar to the rotation that a crawler excavator or a digger can execute on the spot. This is done by such a machine rotating its two chains in opposite directions. In our context, the chain rotations correspond to the counter-rotating flows and the rotation of the machine corresponds to the spindle rotation giving rise to the skew.\n\nOur results imply that active torques are generated at multiple stages during development, in the zygote during polarity establishment, without immediate consequences with respect to LR symmetry breaking, and again at the 4-cell stage, but here as an instructional and mechanistic event that helps to break left/right symmetry. Chiral morphogenetic rearrangements have been observed at other stages in C. elegans development (Pohl and Bao, 2010) and during the first cleavage (Schonegg et al., 2014; Singh and Pohl, 2014), as well as in other systems (Shibazaki et al., 2004; Danilchik et al., 2006; G\u00e9minard et al., 2014). It is interesting to speculate that all these events might be driven by active torque generation in the actomyosin layer. As such, our work paves the way for a mechanistic understanding of chiral morphogenesis of cells, tissues, and organisms.\n\n## Materials and methods\n\n### C. elegans strains\n\nThe following transgenic lines were used in this study: TH455 (unc-119(ed3) III; zuIs45[nmy-2::NMY-2::GFP + unc-119(+)] V; ddIs249[TH0566(pie1::Lifeact::mCherry:pie1)]) for imaging cortical flow, LP133 (nmy-2(cp8[NMY-2::GFP + unc-119(+)]) I; unc-119(ed3) III) (Dickinson et al., 2013) for imaging counter-rotation of AB cells, and SWG003 (nmy-2(cp8[NMY-2::GFP + unc-119(+)]) I; unc-119(ed3) III; gesIs002[unc-119(ed3) III; (pie-1::Lifeact::tagRFP-T::pie-1 + unc-119(+))]) for quantifying chiral flow fields with an actin probe. For imaging the chiral skew event at the 4-cell stage, a mCherry::Histone; mCherry::PH-PLC1\u03b41 transgenic line was generated by crossing OD70 (Kachur et al., 2008) to a line expressing Moesin::GFP and mCherry::Histone obtained from the Piano lab (New York University, New York, USA). C. elegans worms were cultured on OP50-seeeded NGM agar plates as described (Brenner, 1974).\n\n### RNA interference\n\nRNAi experiments were performed by feeding (Timmons et al., 2001). Worms were placed on feeding plates (NGM agar containing 1 mM isopropyl-\u03b2-D-thiogalactoside and 50 \u03bcg ml\u22121 ampicillin) and incubated for the specified number of hours at 25\u00b0C. We defined feeding time (number of hours of RNAi) as the time between transfer of worms to the feeding plate and putative fertilization of the egg. Worms were dissected in M9 buffer and the embryos were mounted on 2% agarose pads for image acquisition. rga-3 feeding clone was obtained from Ahringer lab (Gurdon institute, Cambridge, United Kingdom), ect-2 and mlc-4 from Hyman lab (MPI-CBG, Dresden, Germany). Feeding clones dsh-2, gsk-3, mig-5, mom-2, and mom-5 were obtained from Source Bioscience (Nottingham, United Kingdom).\n\nFor performing weak perturbation RNAi experiments (from 3\u201312 hrs of RNAi), L4 staged worms were first incubated overnight on OP50 plates at 25\u00b0C. Young adults were then transferred to respective RNAi feeding plates. For performing 40 hr RNAi experiments, early L4 staged worms were directly transferred to respective RNAi feeding plates and incubated at 25\u00b0C.\n\n### Image acquisition\n\nAll videos were acquired at 23\u201324\u00b0C, with a spinning disc confocal microscope using a Zeiss C-Apochromat 63X/1.2 NA objective lens and a Yokogawa CSU-X1 scan head. The following emission filter was used for all acquisitions unless specifically stated: 525/50 nm bandpass filter from Semrock (Rochester, New York). Micromanager software (Vale lab, UCSF) was used to acquire videos using the Hamamatsu ORCA-flash camera.\n\nConfocal videos of cortical NMY-2::GFP for non-RNAi, mlc-4, ect-2, and rga-3 (RNAi) were acquired using an Andor iXon EMCCD camera (512 by 512 pixels). A stack consisting of three z-planes (0.5 \u03bcm apart) with a 488 nm laser and an exposure of 150 ms was acquired at an interval of 5 s from the onset of cortical flow until the first cell division. The maximum intensity projection of the stack at each time point was then subjected for further analysis.\n\nConfocal videos of cortical NMY-2::GFP for dsh-2, gsk-3, mig-5, mom-2, and mom-5 (RNAi) were acquired using an Andor Neo sCMOS camera (2560 by 2160 pixels). A stack consisting of two z-planes (0.5 \u03bcm apart) with a 488 nm laser and an exposure of 150 ms was acquired at an interval of 5 s from the onset of cortical flow until the first cell division. The maximum intensity projection of the stack at each time point was then subjected for further analysis.\n\nChiral skew at the 4-cell stage was imaged by using mCherry::Histone; mCherry::PH-PLC1\u03b41 dual transgenic line. Confocal videos were acquired using a Hamamatsu ORCA-flash 4.0 camera (2048 by 2048 pixels). A stack consisting of 25\u201330 z-planes (1 \u03bcm apart) with a 561 nm laser and an exposure of 300 ms (emission filter \u2013 641/75 nm bandpass filter from Semrock) was acquired at an interval of 30 s from metaphase of the AB lineage at the 4-cell stage until telophase of the AB lineage at the 8-cell stage.\n\nCounter-rotation of the AB cells was imaged using the LP133 strain. Embryos at the 4-cell stage were first identified and an eye-lash tool was then used to rotate the embryo to obtain a dorsal view. Confocal videos from the dorsal side of the embryo were then acquired using a Hamamatsu ORCA-flash 4.0 camera (2048 by 2048 pixels). A stack consisting of 25 z-planes (0.5 \u03bcm apart) with a 488 nm laser and an exposure of 100 ms was acquired at an interval of 5 s from the start of telophase of the AB lineage at the 4-cell stage until cytokinesis.\n\n### Flow velocity analysis\n\n2D cortical flow velocity fields were obtained by performing Particle Image Velocimetry (PIV) (Raffel et al., 2007) using the freely available PIVlab MATLAB algorithm (pivlab.blogspot.de). PIVlab was employed by performing a 3-step multi pass (with linear window deformation), where the final interrogation area was 16 pixels with a step of 8 pixels.\n\nTo obtain the flow profiles, 2D velocity fields were projected to the AP axis by dividing the embryo into 18 bins along the AP axis (Figure 1B), and by spatially averaging the x-component or the y-component of velocity along each bin in a single frame. The average velocity in each bin was then averaged over time across the entire flow period (from start of the flow till pseudocleavage). These time-averaged flow profiles were then averaged across all embryos for one experimental condition. Bin extent in the y direction was restricted to a stripe of about 13 \u03bcm (Figure 1B). An accurate quantification of chiral flow fields is only possible when the flow axis is approximately aligned with the long axis of the embryo, and we removed from our analysis a small number of embryos (3/28 embryos for the non-RNAi condition) which in the bottom plane analysis appeared to clearly polarize from the side.\n\nChiral counter-rotation velocity vc was quantified in each frame by subtracting the y-component of velocity in the anterior (spatially averaged across bins 3 to 6, Figure 1B) from the y-component of velocity in the posterior (spatially averaged across bins 13 to 16, Figure 1B). vc from each frame was computed across the entire flow period from all embryos of one experimental condition and a histogram was plotted.\n\nFor quantification of chiral counter-rotation velocity vc in the ABa cell, the cleavage plane as viewed from the dorsal side of the embryo was first manually identified using FIJI. PIV was then performed and the component of velocity vectors parallel to the cleavage plane was calculated. vc was then computed by subtracting velocity components in the right daughter cell (spatially averaged across a box of width 5 \u03bcm close to the cleavage plane) from the velocity components in the left daughter cell (spatially averaged across a box of size 5 \u03bcm close to the cleavage plane). vc from each frame was computed across the counter-rotation flow period and a time-averaged vc was reported. We removed from our analysis one video each from non-RNAi and ect-2 (RNAi) conditions and 2 videos from rga-3 (RNAi) condition that resulted in a marked whole body rotation along the DV-LR plane.\n\n### Chiral skew analysis\n\nChiral skew analysis was performed by analyzing the multi-stack videos using Imaris v7.6.5 and v7.7 software (Bitplane, Zurich, Switzerland). The anterior and posterior pole positions were first manually identified and used to define the AP-vector. The DV-vector was then obtained utilizing the nuclear position of EMS and the AP-vector. The initial and skewed nuclei vectors of ABa and ABp cells at the beginning and end of telophase, respectively, were determined by identifying the corresponding nuclei positions. We used MATLAB to determine the angle between the initial and skewed nuclei vectors of ABa and ABp. We first determined the skew angle by projecting all vectors on to the AP\u2013LR plane (dorsal view, Figure 4\u2014figure supplement 1A). This is the plane in which the skew has been reported previously (Wood, 1991; Bergmann et al., 2003). Next, we determined the skew angle in the DV\u2013LR plane (anterior view, Figure 4\u2014figure supplement 1B) by projecting all vectors on to the DV\u2013LR plane. Finally, we also determined the full (3D) angle between the respective initial and skewed vectors.\n\n### Additional information on the chiral skew event at the 4-cell stage\n\nAs described in the main text (Figure 4A), in the ABa cell, ect-2 (RNAi) (4.5 hrs) led to a significantly reduced skew in the AP\u2013LR plane, whereas rga-3 (RNAi) (4.5 hrs) led to a significantly increased skew. Similar to the ABa cell, the ABp skew was also significantly reduced under ect-2 (RNAi) condition (Figure 4\u2014figure supplement 1A). However, the skew was unchanged in the ABp cell for rga-3 (RNAi). We next determined the unprojected full (3D) skew angle for each condition (Figure 4\u2014figure supplement 1C). Intriguingly, we observed that the unprojected full ABp cell skew was marginally increased under rga-3 (RNAi) condition (Figure 4\u2014figure supplement 1C) even though the projected AP\u2013LR plane skew remained unchanged (Figure 4\u2014figure supplement 1A). Similarly, we observed that the unprojected full ABa cell skew was not significantly different for ect-2 (RNAi) compared to the non-RNAi condition (Figure 4\u2014figure supplement 1C). This difference in skew between the AP\u2013LR projected and the unprojected angles for the same conditions indicated that there could be an additional skew in a different plane. To this end, we determined the skew in the DV\u2013LR plane. Interestingly, we detected an \u223c20\u00b0 skew in this plane even for the non-RNAi condition (Figure 4\u2014figure supplement 1B). Generally, the difference between the full (3D) skew angles and the AP\u2013LR projected angles is due to this additional skew in the DV\u2013LR plane. This illustrates that the chiral skew at the 4-cell stage is more complex than previously reported, with a chiral rotation in the DV\u2013LR plane in addition to the AP\u2013LR plane.\n\n### Foci size analysis\n\nA characteristic myosin foci size was determined by performing spatial myosin fluorescence intensity autocorrelation in MATLAB. The autocorrelation was performed in a stripe of about 27 \u03bcm wide and 13 \u03bcm high in the anterior of the embryo and the analysis was carried out in each frame during the first 75 s of cortical flow. The spatial autocorrelation decay determined in each analysis frame was then fitted with a single exponential function and we define the decay length of this fit as the characteristic foci size. The foci size thus determined in each frame was then averaged over all analysis frames for a single embryo and an ensemble average was reported.\n\n### Appendix\n\n#### Cortical distribution of myosin is azimuthally symmetric\n\nThrough laser ablation experiments, we have shown that cortical flow is driven by gradients in active tension along the AP axis. We consider that active tension is proportional to myosin fluorescence intensity (Mayer et al., 2010). Accordingly, we observed that a histogram (Figure 2\u2014figure supplement 1A) of the difference in spatially averaged myosin fluorescence intensities between the posterior and anterior halves of the embryo (see shaded areas in Figure 2\u2014figure supplement 1A) is shifted towards negative values, indicating an asymmetric myosin distribution along the AP axis. Similarly, it is plausible that chiral flows could originate from a gradient in myosin fluorescence intensity (i.e., myosin activity) along the azimuthal direction. To test for such a gradient, we analyzed the difference in spatially averaged myosin fluorescence intensities between the top and bottom halves of the embryo in the posterior (see shaded areas in Figure 2\u2014figure supplement 1B). This analysis was performed in each frame and compiled across the entire flow period from all embryos of the non-RNAi condition. The resulting histogram (Figure 2\u2014figure supplement 1B) shows that there is no detectable gradient in myosin fluorescence intensity along the azimuthal direction. Thus, we conclude that the embryo does not appear to break azimuthal symmetry with respect to myosin distribution and that chiral flow does not originate from myosin activity gradients along the azimuthal direction.\n\n#### Cortical equation of motion\n\nWe derive equations of motion for the cell cortex, describing it as a thin film of active chiral fluid (F\u00fcrthauer et al., 2012, 2013). We start by stating the conservation of momentum and angular momentum. Momentum conservation in the absence of external forces is expressed by,\n\n$$\n\\partial_{t}(\u03c1v_{\\alpha})=\\partial_{\\beta}\\sigma_{\\alpha\\beta}^{tot}\u2009,\n$$\n\nwhere \u03c1v is the momentum density, with the mass density \u03c1 and the center of mass velocity v, and $\\sigma_{\\alpha\\beta}^{tot}$ is the stress tensor. A summation convention over repeated indices is implied. In general, the stress tensor $\\sigma_{\\alpha\\beta}^{tot}=\\sigma_{\\alpha\\beta}+\\sigma_{\\alpha\\beta}^{a}\u2212P\\delta_{\\alpha\\beta}/3$ can be decomposed into a symmetric traceless part, an antisymmetric part, and a trace part corresponding to the hydrostatic pressure, which we denote as \u03c3\u03b1\u03b2, $\\sigma_{\\alpha\\beta}^{a}$, and P, respectively.\n\nConservation of angular momentum in the absence of external torques reads,\n\n$$\n\\partial_{t}(I\u03a9_{\\alpha\\beta})=\\partial_{\\gamma}M_{\\alpha\\beta\\gamma}\u22122\\sigma_{\\alpha\\beta}^{a}\u2009.\n$$\n\nIn this study, we introduced the intrinsic or \u2018spin\u2019 angular momentum density I\u03a9\u03b1\u03b2, with \u03a9\u03b1\u03b2 and I being the spin rotation rate and the moment of inertia density, respectively. Moreover, we introduced the spin angular momentum flux tensor M\u03b1\u03b2\u03b3. Note that in general the moment of inertia tensor I is a symmetric fourth rank tensor (Stark and Lubensky, 2005; F\u00fcrthauer et al., 2012). Here, we choose it to be diagonal for simplicity.\n\nWe describe the cell cortex as an active chiral fluid with the constitutive equations,\n\n$$\n\\sigma_{\\alpha\\beta}=\u03b7u_{\\alpha\\beta}+\u03b6(p_{\\alpha}p_{\\beta}\u2212\\delta_{\\alpha\\beta}/3)\u2009,\n$$\n\n\n\n$$\n\\sigma_{\\alpha\\beta}^{a}=\u03b7\u2032(\u03a9_{\\alpha\\beta}\u2212\\omega_{\\alpha\\beta})\u2009,\n$$\n\n\n\n$$\n\\frac{1}{2}M_{\\alpha\\beta\\gamma}=\u03ba\\partial_{\\gamma}\u03a9_{\\alpha\\beta}+\u03b6_{1}\u03f5_{\\alpha\\beta\u03bd}p_{\u03bd}p_{\\gamma}\u2009,\n$$\n\nwhere we introduced the strain rate u\u03b1\u03b2 = (\u2202\u03b1v\u03b2 + \u2202\u03b2v\u03b1)/2 and the vorticity \u03c9\u03b1\u03b2 = (\u2202\u03b1v\u03b2 \u2212 \u2202\u03b2v\u03b1)/2. The phenomenological coefficients \u03b7, \u03b7\u2032, and \u03ba describe the passive response of the material. The coefficients \u03b6 and \u03b61 quantify active processes. Notably, \u03b6 quantifies the tendency of molecular motors to generate active shear in the material, whereas \u03b61 quantifies their tendency to produce active angular momentum fluxes. In general, additional couplings to the constitutive equations (Equations 4\u20136) exist, see (F\u00fcrthauer et al., 2012). In this study, we constrain ourselves to the simplest set of equations which reproduces the phenomenology observed in the C. elegans cell cortex. The vector p denotes the broken symmetry of the cortical material in the thin direction and reflects that inhomogeneous protein distributions lead to different boundary conditions with the cytosol and the cell membrane (F\u00fcrthauer et al., 2013). Thus in the following we consider px = py = 0 and pz = 1, thus p2 = 1.\n\nTo obtain equations of motion for the cortical material, we use the constitutive Equations 4\u20136 together with the force balance Equation 2 and the torque balance Equation 3 at low Reynolds number. The 3D torque and force balances for the cortical material read,\n\n$$\n\\frac{1}{2}(\u03b7+\u03b7\u2032)\\partial_{\\gamma}^{2}v_{\\alpha}+\u03b7\u2032\\partial_{\\beta}\u03a9_{\\alpha\\beta}\u2212\\partial_{\\alpha}(\u03b6\u2212P)/3+\\partial_{\\beta}\u03b6p_{\\alpha}p_{\\beta}=0\u2009,\n$$\n\n\n\n$$\n\u03ba\\partial_{\\gamma}^{2}\u03a9_{\\alpha\\beta}+\\partial_{\\gamma}\u03b6_{1}\u03f5_{\\alpha\\beta\u03bd}p_{\u03bd}p_{\\gamma}=\u03b7\u2032(\u03a9_{\\alpha\\beta}\u2212\\omega_{\\alpha\\beta})\u2009,\n$$\n\nwhere we used the incompressibility condition \u2202\u03b3v\u03b3 = 0. After some algebra we obtain a fourth order differential equation for the velocity field,\n\n$$\n0=\\frac{1}{2}\u03b7\\partial_{\\gamma}^{2}v_{\\alpha}+\\partial_{\\alpha}(\u03b6\u2212P)/3+\\partial_{\\beta}[\u03b6p_{\\alpha}p_{\\beta}+\\partial_{\\gamma}(\u03b6_{1}\u03f5_{\\alpha\\beta\u03bd}p_{\u03bd}p_{\\gamma})]\u2003\u2009\u2009\u2009\u2212\\frac{\u03ba}{2\u03b7\u2032}\\partial_{\u03bd}^{2}[(\u03b7+\u03b7\u2032)\\partial_{\\gamma}^{2}v_{\\alpha}\u2212\\partial_{\\alpha}(\u03b6\u2212P)/3+\\partial_{\\beta}(\u03b6p_{\\alpha}p_{\\beta})]\u2009.\n$$\n\nThe length scale $\\sqrt{\u03ba/\u03b7\u2032}$ is the length on which the intrinsic rotation rate \u03a9\u03b1\u03b2 decays to the vorticity \u03c9\u03b1\u03b2 and is set by some molecular lengths in the system (Stark and Lubensky, 2005; F\u00fcrthauer et al., 2012, 2013). An upper bound for $\\sqrt{\u03ba/\u03b7\u2032}$ is the thickness d of the cell cortex, which is smaller than 1 \u03bcm (Clark et al., 2013). Thus to describe long ranged flows in the cell cortex, we can consider the limit of $\\sqrt{\u03ba/\u03b7\u2032}\u21920$ and obtain,\n\n$$\n0=\\frac{1}{2}\u03b7\\partial_{\\gamma}^{2}v_{\\alpha}\u2212\\partial_{\\alpha}(\u03b6\u2212P)/3+\\partial_{\\beta}[\u03b6p_{\\alpha}p_{\\beta}+\\partial_{\\gamma}(\u03b6_{1}\u03f5_{\\alpha\\beta\u03bd}p_{\u03bd}p_{\\gamma})]\u2009.\n$$\n\nUsing the approximation $\\sigma_{zz}^{tot}\u2248P^{ext}/3$, valid in thin films where Pext is the constant external pressure, as well as the incompressibility condition \u2202\u03b3v\u03b3 = 0, we can rewrite this expression as,\n\n$$\n0=\\frac{1}{2}\u03b7\\partial_{\\gamma}^{2}v_{i}+\\frac{1}{2}\u03b7\\partial_{i}\\partial_{j}v_{j}+\\partial_{i}p_{z}^{2}\u03b6+\\partial_{j}\\partial_{z}\u03b6_{1}\u03f5_{ijz}\u2009.\n$$\n\nHere, the roman indices i and j denote the in film directions x and y. Finally, we integrate Equation 11 over the film thickness d and obtain.\n\n$$\n\\frac{1}{2}\u03b7\\partial_{j}^{2}v\u00af_{i}+\\frac{1}{2}\u03b7\\partial_{i}\\partial_{j}v\u00af_{j}\u2212\\gammav\u00af_{i}=\\partial_{i}T+\u03f5_{ij}\\partial_{j}\\tau\u2009,\n$$\n\nwhere we introduced the averaged velocity\n\n$$\nv\u00af_{i}=\\frac{1}{d}\\int0ddzv_{i}\u2009,\n$$\n\nthe active cortical tension\n\n$$\nT=\\frac{1}{d}\\int0ddz\u03b6\u2009,\n$$\n\nthe active cortical torque density\n\n$$\n\\tau=\\frac{1}{d}\\int0ddz\\partial_{z}\u03b6_{1}\u2009,\n$$\n\nand the friction coefficient \u03b3\n\n$$\n\\gammav\u00af_{i}\u2243\\frac{1}{d}\u03b7\\partial_{z}v_{i}|_{0}^{d}=\\frac{1}{d}\\int0ddz\u03b7\\partial_{z}^{2}v_{i}\u2009.\n$$\n\nSince the cell is azimuthally symmetric, the x and y components of the Equation 12 decouple such that,\n\n$$\n\u2113\\partial_{x}^{2}v\u00af_{x}\u2212\\frac{1}{\u2113}v\u00af_{x}=\\partial_{x}T\u2003and\u2003\n$$\n\n\n\n$$\n\\frac{1}{2}\u2113\\partial_{x}^{2}v\u00af_{y}\u2212\\frac{1}{\u2113}v\u00af_{y}=\\partial_{x}\\tau\u2009.\n$$\n\nHere, we have introduced the hydrodynamic length $\u2113=\\sqrt{\u03b7/\\gamma}$.\n\nIn summary, molecular force generation by actin and myosin is represented by active force and torque dipoles. These give rise to an active tension and an active torque density in the material and can generate flows. Spatial gradients in active tension are generated by a spatially inhomogeneous distribution of myosin motors. These give rise to a flow along the gradient of myosin density (Mayer et al., 2010), see Equation 17. Spatial gradients in active torque density on the other hand give rise to a flow orthogonal to the gradient of myosin density (F\u00fcrthauer et al., 2013) (see Equation 18) in a direction that is set by the chirality of the torque dipoles in the cell cortex. The ratio of active torque densities to active tension thus generated is quantified by the chirality index,\n\n$$\nc=\\int0ddz\\partial_{z}\u03b6_{1}/\\int0ddz\u03b6\u2003.\n$$\n\nA sketch of this mechanism is provided in Figure 2B, bottom sketch.\n\n#### Non-linear dependency on myosin levels\n\nIn general, the active torque density \u03c4 and the active tension T are functions of the myosin density, which in turn is proportional to NMY-2::GFP fluorescence intensity I(x). In the absence of myosin, T and \u03c4 vanish. For increasing I, we express active tension and active torque density in a Taylor expansion,\n\n$$\nT=\\alpha_{0}I+\\alpha_{1}I^{2}+O(I^{3})\u2009,\n$$\n\n\n\n$$\n\\tau=\\beta_{0}I+\\beta_{1}I^{2}+O(I^{3})\u2009,\n$$\n\nwith coefficients \u03b10, \u03b11, \u03b20, and \u03b21. The chirality index c = \u03c4/T then shows a myosin dependence of the form,\n\n$$\n\\tau/T\u2243\\frac{\\beta_{0}+\\beta_{1}I}{\\alpha_{0}+\\alpha_{1}I}\u2243\\frac{\\beta_{0}}{\\alpha_{0}}(1+(\\frac{\\beta_{1}}{\\beta_{0}}\u2212\\frac{\\alpha_{1}}{\\alpha_{0}})I)\u2009,\n$$\n\nwhere we have neglected higher order terms. Rho signalling may directly influence the levels of myosin and thereby I. Also, Rho signaling affects the structure of the actin cytoskeleton (Figure 3\u2014figure supplement 4), and could alter the fraction of active myosin, possibly even in a position-dependent manner. Rho exhibits a spatial profile similar to that of NMY-2 (Motegi and Sugimoto, 2006), which is captured by the function I(x). The non-linearities induced by Rho can thus be accounted for by non-linearities in I(x). We can therefore approximate such additional effects of Rho signaling by modifications of the position-independent parameters \u03b10, \u03b11, \u03b20, and \u03b21.\n\nHowever, our experimental data do not allow us to faithfully estimate the values of \u03b11 and \u03b21. Thus, we consider only linear dependences in our fitting procedure using T = \u03b1I and \u03c4 = \u03b2I. The values for \u03b1 and \u03b2 and thus the chirality index c = \u03b1/\u03b2 that our fitting routine determines correspond to averages of \u03b10 + \u03b11I and \u03b20 + \u03b21I along the embryo.\n\n#### Fitting phenomenological coefficients\n\nTo compare our theory to experiment, we numerically solve Equations 17 and 18 using a finite difference scheme, using the two extreme points of the measured velocity profile as boundary conditions. Equations 17 and 18 depend on three free parameters, the hydrodynamic length \u2113, and the constants \u03b1 and \u03b2 which relate the measured fluorescence intensity I to the active tension and the active torque density such that T = \u03b1I and \u03c4 = \u03b2I, respectively. We adjust these parameters by performing a least squares fit of the solutions to Equations 17 and 18 to the measured velocity profile. In this way we obtain values for the hydrodynamic length \u2113 and the chirality index c = \u03c4/T numerically. We obtain error estimates for \u2113, \u03b1, and \u03b2 from the Hessian of the residual of the least square fit with respect to the parameters.\n",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "1442e0ed-3326-416f-b593-932ea9402659",
+      "submission_id": "f7495c5d-94e8-4391-9d0f-f188e6434ffc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- James Ferrell, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04165.026](https://doi.org/10.7554/eLife.04165.026)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cActive torque generation by the actomyosin cell cortex drives chiral symmetry breaking\u201d for consideration at eLife. Your article has been favorably evaluated by Janet Rossant (Senior editor), a Reviewing editor, and 2 reviewers.\n\nThese results are interesting and timely as they provide strong experimental and theoretical support to a role of the actin cytoskeleton in breaking L/R symmetry in early stage embryos. Although this idea has been supported by some data on a few model organisms (including a recent paper by Schonegg et al., Genesis 2014 describing the chiral flow at the 1-cell stage and showing its dependence on nmy-2 activity) and has been discussed in recent reviews, the findings and concepts reported here provide strong advances to the field with a focus on the quantitative characterization of the chiral flows. The results point towards a significant connection between actomyosin-based chiral flows and LR symmetry breaking at embryo/tissue scales, with implications for LR symmetry-breaking and chiral morphogenesis in many other contexts.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission. We have one major point and a number of minor points for you to consider when revising your manuscript.\n\nMajor point:\n\n1) The authors are inferring a connection between chiral flows in the zygote, those that occur at the 4-cell stage in ABa and ABp, and the skew of ABa and ABp that represents the first observable manifestation of embryonic handedness. But the links between observations made in the zygote and those at the 4-cell stage, remain tenuous. What would greatly strengthen this connection in my opinion would be to document a correlation between effects on chiral flow and skew - both measured at the 4-cell stage, for a few key perturbations (e.g. weak ect-2(RNAi), weak rga-3./4(RNAi, gsk-3(RNA) and possibly one of (dsh-2, mig-5, mom-2). My sense is that this could be done with relatively little additional effort.\n\nMinor points:\n\n2) The quantitative analysis of chiral flow and its interpretation in terms of a physical model for active chiral fluids is nicely done, but we think the authors need to tone down the claim that they have \u201cdiscovered that the actomyosin cytoskeleton generates active torques...\u201d What they have in fact shown is that a physical model assuming active torques can reproduce the observed kinematics.\n\n3) It would be nice if the authors could comment on two related points:\n\n(a) In the physical theory, counter-rotating flow depends on a gradient of active torque density. In the zygote this gradient is presumed to arise from a gradient of Myosin II activity, accounting for the simultaneous existence of AP and counterrotating flow. What about at the 4-cell stage? Are there axial flows (and possibly gradients of Myosin density) that coincide with the reported counter-rotation? Is the overall pattern of chiral + axial flow consistent with the physical theory?\n\n(b) A basic assumption of the physical model is that actomyosin interactions have an intrinsic handedness that determines the handedness of the active local torque, which in turn determines the handedness of counter-rotating flow. But what happens when LR asymmetry is reversed as in cold-treated embryos or certain mutants? Is there a change in the handedness of the flow? Or (a more likely scenario) does this imply that there are other processes that can completely override any contribution of chiral flow to dictate handedness. We are not asking that the authors resolve this issue experimentally, but it would be nice if they could discuss briefly the implications.\n\n4) When referring to Drosophila work, the authors should cite the 2 original Nature papers characterizing the myosinID gene: Hozumi et al. 2006 and Speder et al. 2006. In their reference list, the journal for Hozumi et al. is not spelled out correctly (should be Nature instead of Nat Cell Biol).\n\n5) The chiral flows are intracellular by nature suggesting a cell autonomous effect. However the text is confusing at it is stated that the origin of the skew comes from 1-cell stage while concluding that it originates from chiral torque during 4-cell stage. The specific contribution of each flow (1-cell vs 4-cell) on the establishment and/or maintenance of handedness is thus unclear. Uncoupling the contribution of each flow would clarify the model and more clearly address the origin and duration of the effect of the flow on later events. Of note, results from Schonegg et al. suggest an independent origin of embryo rotation and handedness (see Table 2 in Schonegg et al.).\n\n6) The authors mention that they could not find any defect in early embryos upon perturbing the flow at the 1-cell stage. We presume they have looked at embryo cortex rotation (and spindle asymmetry) and if so, their findings seem to contradict results from Schonegg et al. showing that defective acto-myosin network blocks early rotation of the 1-cell zygote (see Table 1 in Schonegg et al.). Comments?\n\n7) Although they raise the question, the authors do not discuss what may control flow directionality, which is key to understanding symmetry breaking? Could it be asymmetry of the actin network, intrinsic molecular chirality of myosin and actin, etc? I think that expanding the discussion on this point would help clarify and complement the model.\n\n8) Could the authors explain what in their view could be the basis of the independence of contractile tension (along A/P axis) and torque density (along L/R axis)?\n\n9) Could the authors be more clear on how could a directional flow at the cortex induce asymmetry, for example of the spindle?\n",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3bcb1d86-9600-4dd0-b560-033db7310b59",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C1",
+      "claim": "Many developmental processes break left\u2013right (LR) symmetry with a consistent handedness.",
+      "claim_type": "EXPLICIT",
+      "source": "Many developmental processes break left\u2013right (LR) symmetry with a consistent handedness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about developmental biology supported by the citations that follow in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "3f906029-2d77-4382-a957-3d4ccefb6688",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C2",
+      "claim": "LR asymmetry emerges early in development.",
+      "claim_type": "EXPLICIT",
+      "source": "LR asymmetry emerges early in development, and in many species the primary determinant of this asymmetry has been linked to the cytoskeleton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations in the manuscript to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "4ab0f306-9eea-44f3-b33e-79e725b42398",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C3",
+      "claim": "In many species the primary determinant of LR asymmetry has been linked to the cytoskeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "LR asymmetry emerges early in development, and in many species the primary determinant of this asymmetry has been linked to the cytoskeleton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations in the manuscript to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "c76920ee-8d86-4057-b97c-fe1a3bb1c211",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C4",
+      "claim": "The actomyosin cortex generates active chiral torques to facilitate chiral symmetry breaking.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we combine thin-film active chiral fluid theory with experimental analysis of the C. elegans embryo to show that the actomyosin cortex generates active chiral torques to facilitate chiral symmetry breaking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data and theoretical modeling presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "64a3d7a0-89ca-405e-a6b8-90c13ad92a85",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C5",
+      "claim": "Active torques drive chiral counter-rotating cortical flow in the zygote.",
+      "claim_type": "EXPLICIT",
+      "source": "Active torques drive chiral counter-rotating cortical flow in the zygote, depend on myosin activity, and can be altered through mild changes in Rho signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations and measurements presented in Figures 1-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "826e6a66-d14b-482c-9448-fb868da5be28",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C6",
+      "claim": "Active torques depend on myosin activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Active torques drive chiral counter-rotating cortical flow in the zygote, depend on myosin activity, and can be altered through mild changes in Rho signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through mlc-4 RNAi experiments showing reduction in chiral flow with reduced myosin activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "086f6b12-6d28-4493-8900-07841b77cab1",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C7",
+      "claim": "Active torques can be altered through mild changes in Rho signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Active torques drive chiral counter-rotating cortical flow in the zygote, depend on myosin activity, and can be altered through mild changes in Rho signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through ect-2 and rga-3 RNAi experiments showing changes in chirality index.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "82b256cc-7cb8-405d-9cc8-3a4bbb40f277",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C8",
+      "claim": "Active torques execute the chiral skew event at the 4-cell stage to establish the C. elegans LR body axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, they also execute the chiral skew event at the 4-cell stage to establish the C. elegans LR body axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing correlation between chiral flow and skew angle at the 4-cell stage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "ea2882ad-be06-4b6c-9e09-eac246403ba7",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C9",
+      "claim": "Most organisms are bilaterally asymmetric with morphologically distinct left and right hand sides.",
+      "claim_type": "EXPLICIT",
+      "source": "Most organisms are bilaterally asymmetric with morphologically distinct left and right hand sides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "fbc91402-e8d6-4136-8d6e-90c30190ad7a",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C10",
+      "claim": "Bilateral asymmetry of organisms, organs, and tissues emerges early in development and is dependent on chiral symmetry breaking of cells and subcellular structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Bilateral asymmetry of organisms, organs, and tissues emerges early in development and is dependent on chiral symmetry breaking of cells and subcellular structures (Hayashi and Murakami, 2001; Shibazaki et al., 2004; Danilchik et al., 2006; Xu et al., 2007; Hejnol, 2010; Tamada et al., 2010; Vandenberg and Levin, 2010; Savin et al., 2011; Taniguchi et al., 2011; Wan et al., 2011; Huang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "5119536f-945d-474a-b757-bac0c9e02fc8",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C11",
+      "claim": "The microtubule cytoskeleton plays a prominent role in determining chirality in many species.",
+      "claim_type": "EXPLICIT",
+      "source": "In many species the primary determinant of chirality has been linked to the cytoskeleton with both the microtubule (Nonaka et al., 1998; Ishida et al., 2007) and the actomyosin cytoskeleton (Danilchik et al., 2006; Hozumi et al., 2006; Sp\u00e9der et al., 2006) (AD Bershadsky, personal communication, November 2013) playing prominent roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "a06cd8e1-0988-4bcf-a98b-d2ef71376a7d",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C12",
+      "claim": "The actomyosin cytoskeleton plays a prominent role in determining chirality in many species.",
+      "claim_type": "EXPLICIT",
+      "source": "In many species the primary determinant of chirality has been linked to the cytoskeleton with both the microtubule (Nonaka et al., 1998; Ishida et al., 2007) and the actomyosin cytoskeleton (Danilchik et al., 2006; Hozumi et al., 2006; Sp\u00e9der et al., 2006) (AD Bershadsky, personal communication, November 2013) playing prominent roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies and personal communication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "481a39fe-d02f-45dc-a6b0-270d3234fe25",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C13",
+      "claim": "Myosin motors can rotate actin filaments in motility assays.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it has been observed that myosin motors can rotate actin filaments in motility assays (Sase et al., 1997; Beausang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "edc7e68d-f460-4f69-bcee-11dec8a3a2b9",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C14",
+      "claim": "The posterior and anterior halves of the cortex counter-rotate relative to each other during cortical flow in C. elegans zygotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the posterior and anterior halves of the cortex counter-rotate relative to each other (Figure 1A,B, Figure 1\u2014figure supplement 1, Video 1), with y-velocities of \u223c\u20132.5 \u03bcm/min and \u223c1 \u03bcm/min respectively (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly observed and measured in experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "e300518b-df1b-45ca-ad06-3d88f3f714ec",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C15",
+      "claim": "The mean chiral counter-rotation velocity in non-RNAi embryos is \u22122.9 \u00b1 0.3 \u03bcm/min.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the distribution of vc is shifted towards negative values, with a mean of \u22122.9 \u00b1 0.3 \u03bcm/min (mean \u00b1 error of mean at 99% confidence unless stated otherwise, Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantified from experimental measurements shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "4c1c4954-4d4d-494f-ac34-ee679a90751e",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C16",
+      "claim": "Counter-rotating cortical flow breaks chiral symmetry at the 1-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, counter-rotating cortical flow breaks chiral symmetry at the 1-cell stage, with the posterior half undergoing a counterclockwise rotation when viewed from the posterior pole (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the measured non-zero mean chiral counter-rotation velocity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "03878508-6f4e-4e38-8461-8c12eac2f90b",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C17",
+      "claim": "The posterior half undergoes a counterclockwise rotation when viewed from the posterior pole.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, counter-rotating cortical flow breaks chiral symmetry at the 1-cell stage, with the posterior half undergoing a counterclockwise rotation when viewed from the posterior pole (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Determined from the sign of the measured y-velocities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "a093c04a-35c2-4aa1-8bb7-f0f0f0bc026c",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C18",
+      "claim": "Chiral counter-rotating flow precedes the previously reported chiral whole-cell rotation of the zygote during cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, chiral counter-rotating flow precedes the previously reported chiral whole-cell rotation of the zygote during cell division (Schonegg et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Temporal relationship inferred from observations and comparison to cited work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "958faf30-26ed-46a6-a3c3-b2fdcbc461be",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C19",
+      "claim": "8 hours of mlc-4 (RNAi) significantly reduces the chiral counter-rotation velocity compared to non-RNAi embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 8 hrs of mlc-4 (RNAi) not only reduces the AP flow velocity (Munro et al., 2004) but also significantly reduces vc (Wilcoxon rank sum test at 99% confidence; mean: \u22121.1 \u00b1 0.4 \u03bcm/min, Figure 1C, Video 2) when compared to non-RNAi embryos.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally and tested for statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "bbbc7755-3873-4cb7-b6b5-26ea2c04aac5",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C20",
+      "claim": "Chiral flow depends on myosin activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that chiral flow depends on myosin activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the reduction in chiral flow upon mlc-4 RNAi.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "2936915d-9ca3-4bfe-9fc7-da13fd5f65a9",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C21",
+      "claim": "Gradients in active tension T along the AP axis drive AP flow.",
+      "claim_type": "EXPLICIT",
+      "source": "From the structure of Equation 1, we see that gradients in active tension T along the AP axis drive AP flow, while gradients in active torque density \u03c4 along the AP axis drive chiral flow orthogonal to the AP axis (Figure 2B, bottom sketch).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Derived from the theoretical equations of motion for the cortex.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "70b0ab1b-98b6-447a-abf5-122f840280fa",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C22",
+      "claim": "Gradients in active torque density \u03c4 along the AP axis drive chiral flow orthogonal to the AP axis.",
+      "claim_type": "EXPLICIT",
+      "source": "From the structure of Equation 1, we see that gradients in active tension T along the AP axis drive AP flow, while gradients in active torque density \u03c4 along the AP axis drive chiral flow orthogonal to the AP axis (Figure 2B, bottom sketch).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Derived from the theoretical equations of motion for the cortex.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "53cf12f9-4c0f-4e54-ae43-89172718eb9f",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C23",
+      "claim": "The hydrodynamic length is \u2113=16\u00b10.6 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we calculated the theoretical AP and chiral flow profiles from the experimentally determined myosin distribution and found a best match with the experimental profiles for a hydrodynamic length of \u2113=\u03b7/\u03b3=16\u00b10.6 \u03bcm (Mayer et al., 2010) and an overall chirality index of c = 0.58 \u00b1 0.09 (Figure 2B; see appendix).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Determined by fitting theoretical model to experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "c15e1bcc-6264-4850-927c-a66a1f0c03c2",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C24",
+      "claim": "The overall chirality index is c = 0.58 \u00b1 0.09 for non-RNAi embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we calculated the theoretical AP and chiral flow profiles from the experimentally determined myosin distribution and found a best match with the experimental profiles for a hydrodynamic length of \u2113=\u03b7/\u03b3=16\u00b10.6 \u03bcm (Mayer et al., 2010) and an overall chirality index of c = 0.58 \u00b1 0.09 (Figure 2B; see appendix).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Determined by fitting theoretical model to experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "53d7ddf6-128a-4d9f-9525-81efd6ded363",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C25",
+      "claim": "A significant part of myosin activity is utilized for generating active torques.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that a significant part of myosin activity is utilized for generating active torques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the non-zero chirality index c = 0.58.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "796b0434-f6c6-48c8-8095-615170080b6f",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C26",
+      "claim": "The handedness of active torques is clockwise when viewed from the outside of the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "The handedness of active torques is clockwise when viewed from the outside of the embryo as indicated by the positive sign of the chirality index c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the positive sign of the chirality index.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "660ce8b1-bf3a-4810-a173-724b6db5d28a",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C27",
+      "claim": "The chirality index c remains unchanged at 4 and 6 hours of mlc-4 (RNAi) compared to non-RNAi conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "While AP flow velocity vx and the chiral flow velocity vc were generally reduced at 4 and 6 hrs of mlc-4 (RNAi) (Figure 3A, Figure 3\u2014figure supplement 1\u20133, Video 3), c remained unchanged from non-RNAi conditions (c, 0.61 \u00b1 0.07 at 4 hrs and 0.52 \u00b1 0.06 at 6 hrs of RNAi, compared to 0.58 \u00b1 0.09 for non-RNAi; Figure 3A, Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally and compared statistically.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "c5bf026d-7e20-46d2-a1d3-8b65b476b3b1",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C28",
+      "claim": "8 hours of mlc-4 (RNAi) leads to a significant reduction of the chirality index c.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 8 hrs of mlc-4 (RNAi) not only resulted in a large reduction of both AP and chiral flow velocities but also led to a significant reduction of c (0.14 \u00b1 0.04, Figure 3A, Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally and compared statistically.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "50db1325-1644-4c1d-af34-7431c997225c",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C29",
+      "claim": "The overall ratio of active torque density to active tension is not changed by weak reduction of mlc-4 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the overall ratio of active torque density to active tension is not changed by weak reduction of mlc-4 activity but is altered at stronger RNAi conditions when cortical structure is affected (Figure 3\u2014figure supplement 4A and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the unchanged chirality index at 4 and 6 hours of mlc-4 RNAi.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "0e373952-5d13-4cf8-b371-f71c247a4b97",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C30",
+      "claim": "Weak perturbation RNAi of ect-2 leads to a substantial decrease in chiral but not AP flow.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that weak perturbation RNAi of ect-2 led to a substantial decrease in chiral but not AP flow and thus a decrease in the overall chirality index c when compared to non-RNAi conditions (Figure 3A,D; see also Figure 3\u2014figure supplement 4B, Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally and shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "894686b6-b521-4ce2-87bd-3725283bff28",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C31",
+      "claim": "Weak perturbation RNAi of rga-3 leads to a substantial increase in chiral but not AP flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, weak perturbation RNAi of rga-3 led to a substantial increase in chiral but not AP flow and thus an increase in the overall chirality index c (Figure 3A,D; see also Figure 3\u2014figure supplement 4C, Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally and shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "55234eaa-7b2b-4637-b7a3-f936bb76e110",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C32",
+      "claim": "Mild modifications of Rho pathway activity change active torque generation without affecting active tension.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that a principle phenotypical alteration upon mild modifications of Rho pathway activity is a change of the chirality index, or, in other words, mild modifications of Rho pathway activity change active torque generation without affecting active tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential effects of ect-2 and rga-3 RNAi on chiral vs AP flow.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "cd24b4c9-f734-40be-98bd-a5efae9d22d0",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C33",
+      "claim": "In C. elegans, embryonic handedness is determined at the 4-cell stage when the ABa and ABp cells skew clockwise by \u223c20\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, embryonic handedness is determined at the 4-cell stage when the ABa and ABp cells skew clockwise by \u223c20\u00b0 (as viewed dorsally in the AP\u2013LR plane, Figure 4A) (Wood, 1991; Bergmann et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Established fact from cited literature and confirmed in this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "67c537ea-2143-41a5-ac8e-0f2b9a561aaf",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C34",
+      "claim": "Chiral cortical flow occurs in ABa at the 4-cell stage with counter-rotation velocity vc = \u22125.2 \u00b1 1.1 \u03bcm/min.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we observed chiral cortical flow in ABa, with the cortex in both future daughter cells counter-rotating (vc = \u22125.2 \u00b1 1.1 \u03bcm/min, mean \u00b1 error of mean at 95% confidence, Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally from video microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "1bc66a44-bd83-440c-86ad-f7af285f6b50",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C35",
+      "claim": "The handedness of chiral flow at the 4-cell stage is identical to that at the 1-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The handedness of chiral flow is identical to that at the 1-cell stage, indicative of a presence of active torques with the same sign of c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of flow directions at different stages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "58b0a564-82c8-4125-8a26-33ec2af5807b",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C36",
+      "claim": "4.5 hours of ect-2 (RNAi) leads to a significant decrease in chiral flow velocity at the 4-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 4.5 hrs of ect-2 (RNAi) led to a significant decrease in chiral flow velocity, vc (\u22123.4 \u00b1 1.4 \u03bcm/min), while 4.5 hrs of rga-3 (RNAi) led to a significant increase in vc in the ABa cell (\u22126.7 \u00b1 0.7 \u03bcm/min, Figure 4B, Video 6), similar to our observations at the 1-cell stage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally at the 4-cell stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "f5c1f628-4ed4-48b5-b9a1-44062dfb4a35",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C37",
+      "claim": "4.5 hours of rga-3 (RNAi) leads to a significant increase in chiral flow velocity at the 4-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 4.5 hrs of ect-2 (RNAi) led to a significant decrease in chiral flow velocity, vc (\u22123.4 \u00b1 1.4 \u03bcm/min), while 4.5 hrs of rga-3 (RNAi) led to a significant increase in vc in the ABa cell (\u22126.7 \u00b1 0.7 \u03bcm/min, Figure 4B, Video 6), similar to our observations at the 1-cell stage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally at the 4-cell stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "de24ea54-b28c-4520-bb66-1e8654155bca",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C38",
+      "claim": "4.5 hours of ect-2 (RNAi) leads to a significant decrease in skew angle in the ABa cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that 4.5 hrs of ect-2 (RNAi) led to a significant decrease in skew (15.8\u00b0 \u00b1 4.9\u00b0) in the ABa cell measured in the AP\u2013LR plane, while 4.5 hrs of rga-3 (RNAi) led to a significant increase in skew (37.8\u00b0 \u00b1 6.1\u00b0) when compared to non-RNAi conditions (23.6\u00b0 \u00b1 3.7\u00b0; Figure 4A and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally and tested for statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "31fac8a8-4637-44b9-89fd-dbaf6c737bd1",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C39",
+      "claim": "4.5 hours of rga-3 (RNAi) leads to a significant increase in skew angle in the ABa cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that 4.5 hrs of ect-2 (RNAi) led to a significant decrease in skew (15.8\u00b0 \u00b1 4.9\u00b0) in the ABa cell measured in the AP\u2013LR plane, while 4.5 hrs of rga-3 (RNAi) led to a significant increase in skew (37.8\u00b0 \u00b1 6.1\u00b0) when compared to non-RNAi conditions (23.6\u00b0 \u00b1 3.7\u00b0; Figure 4A and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally and tested for statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "52d71efc-d9d4-4db1-ac79-e175a48ceae9",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C40",
+      "claim": "Changing counter-rotating chiral flow velocity leads to a change in the degree of skew at the 4-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, changing counter-rotating chiral flow velocity in these cells by weak perturbation of the Rho pathway leads to a change in the degree of skew.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the correlation between chiral flow changes and skew angle changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "d9cb114a-9469-4518-8131-8b78aa0255e7",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C41",
+      "claim": "Active torque generation and chiral counter-rotating flow participate in the execution of the LR symmetry breaking chiral skew event at the 4-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that active torque generation and chiral counter-rotating flow participate in the execution of the LR symmetry breaking chiral skew event at the 4-cell stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the correlation between chiral flow and skew angle.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "76dd5415-f731-46f3-8cff-e2235f1ad091",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C42",
+      "claim": "RNAi of Wnt signaling genes dsh-2, gsk-3, mig-5, and mom-2 leads to reduced chiral flow and a significant reduction of the overall chirality index c at the 1-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we found that all these conditions (except mom-5) led to reduced chiral flow and a significant reduction of the overall chirality index c at the 1-cell stage (Figure 4C, Figure 4\u2014figure supplement 2\u20134, Video 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally for multiple Wnt pathway genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "13cc654f-e5e0-478e-b22b-25dabb517692",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C43",
+      "claim": "There is a fundamental link between genes that affect LR symmetry breaking and chiral counter-rotating flow.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are indicative of a fundamental link between genes that affect LR symmetry breaking and chiral counter-rotating flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the effects of Wnt signaling gene knockdowns on chiral flow.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "5bd35524-feb0-456c-98ca-951dc7d83f66",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C44",
+      "claim": "Active torque generation and chiral counter-rotating flows participate in the establishment of the L/R body axis of C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results indicate that active torque generation and chiral counter-rotating flows participate in the establishment of the L/R body axis of C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined results of experiments at 1-cell and 4-cell stages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "776e4f53-4532-4351-a68e-5c8a22e8729c",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C45",
+      "claim": "The actomyosin cytoskeleton in C. elegans generates active chiral torques with clockwise handedness when viewed from the outside of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, the actomyosin cytoskeleton in C. elegans generates active chiral torques with clockwise handedness when viewed from the outside of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from the positive chirality index and flow patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "4c62b5bc-1aaa-4119-a9d9-de0dfc5052b5",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C46",
+      "claim": "Active chiral torques drive a specific pattern of chiral flows which can be understood quantitatively based on the physics of active gels with chiral asymmetries.",
+      "claim_type": "EXPLICIT",
+      "source": "They drive a specific pattern of chiral flows which can be understood quantitatively based on the physics of active gels with chiral asymmetries (Kruse et al., 2005; F\u00fcrthauer et al., 2012, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by the agreement between theoretical model and experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "18e01703-d7a7-4c71-82bd-3835a87ca9bf",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C47",
+      "claim": "Weak perturbation RNAi experiments indicate that Rho activity affects cortical chirality in a way that does not depend on its role in activating myosin.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our weak perturbation RNAi experiments indicate that Rho activity affects cortical chirality in a way that does not depend on its role in activating myosin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential effects on chiral vs AP flow in Rho pathway perturbations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "813a26bf-d2ed-4e9f-b11e-cb960c6cb763",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C48",
+      "claim": "Active torques are generated at multiple stages during development, in the zygote during polarity establishment and at the 4-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results imply that active torques are generated at multiple stages during development, in the zygote during polarity establishment, without immediate consequences with respect to LR symmetry breaking, and again at the 4-cell stage, but here as an instructional and mechanistic event that helps to break left/right symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observations at both 1-cell and 4-cell stages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "9e185b44-1143-4652-bc53-119bf3b0c5a9",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C49",
+      "claim": "The cell cortex is a thin actin gel containing myosin motors and actin binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell cortex, sandwiched between the membrane and cytoplasm, is a thin actin gel containing myosin motors and actin binding proteins (Pollard and Cooper, 1986; Clark et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge from cited literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "a7ee3990-92d3-4e8f-8c2b-2b519b6e2d24",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C50",
+      "claim": "The embryo does not appear to break azimuthal symmetry with respect to myosin distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that the embryo does not appear to break azimuthal symmetry with respect to myosin distribution and that chiral flow does not originate from myosin activity gradients along the azimuthal direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by analysis of myosin intensity differences between top and bottom halves of the embryo.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "e32f6a10-77f1-46f2-963a-22e1b6bacad9",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C51",
+      "claim": "Chiral flow does not originate from myosin activity gradients along the azimuthal direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that the embryo does not appear to break azimuthal symmetry with respect to myosin distribution and that chiral flow does not originate from myosin activity gradients along the azimuthal direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by analysis showing no detectable gradient in myosin fluorescence intensity along the azimuthal direction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "603abb16-6a33-4b1a-8812-791fad05e758",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C52",
+      "claim": "The chiral skew at the 4-cell stage involves rotation in both the AP\u2013LR plane and the DV\u2013LR plane.",
+      "claim_type": "EXPLICIT",
+      "source": "This illustrates that the chiral skew at the 4-cell stage is more complex than previously reported, with a chiral rotation in the DV\u2013LR plane in addition to the AP\u2013LR plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by measuring skew angles in different planes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "ec735a01-e90b-4381-a5ea-a8f27cca095b",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C53",
+      "claim": "There is an \u223c20\u00b0 skew in the DV\u2013LR plane even for the non-RNAi condition at the 4-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we detected an \u223c20\u00b0 skew in this plane even for the non-RNAi condition (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally in the DV-LR plane.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "9be1fa5a-3486-4715-888c-ffec658a0ce6",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C54",
+      "claim": "Cortical flow proceeds primarily along the anteroposterior (AP) axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow proceeds primarily along the anteroposterior (AP) axis (x-direction), however, we also observed flow vectors to have a small component in the direction orthogonal to the AP axis (y-direction).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from particle image velocimetry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "80cf1318-dafa-41c4-a02b-4b3f5437e4e3",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C55",
+      "claim": "Flow vectors have a small component in the direction orthogonal to the AP axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow proceeds primarily along the anteroposterior (AP) axis (x-direction), however, we also observed flow vectors to have a small component in the direction orthogonal to the AP axis (y-direction).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from particle image velocimetry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "55f36dd4-5b86-487d-a901-2f193859eb41",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C56",
+      "claim": "The y-velocities in the posterior and anterior halves are \u223c\u20132.5 \u03bcm/min and \u223c1 \u03bcm/min respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the posterior and anterior halves of the cortex counter-rotate relative to each other (Figure 1A,B, Figure 1\u2014figure supplement 1, Video 1), with y-velocities of \u223c\u20132.5 \u03bcm/min and \u223c1 \u03bcm/min respectively (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "8cc594d7-8687-4b6f-abe9-970f37b1c403",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C57",
+      "claim": "8 hours of mlc-4 (RNAi) reduces the AP flow velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 8 hrs of mlc-4 (RNAi) not only reduces the AP flow velocity (Munro et al., 2004) but also significantly reduces vc (Wilcoxon rank sum test at 99% confidence; mean: \u22121.1 \u00b1 0.4 \u03bcm/min, Figure 1C, Video 2) when compared to non-RNAi embryos.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally and consistent with cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "1c940e50-0bb8-452b-ad7c-236309a2a62d",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C58",
+      "claim": "Both active tension T and active torque density \u03c4 are proportional to the local myosin concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that both active tension T and active torque density \u03c4 are proportional to the local myosin concentration, leading to a single value of the chirality index c that is constant over the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption made for the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "830d15b5-5e9b-4084-8553-b6d165c3ffe1",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C59",
+      "claim": "Weak perturbation of mlc-4 affects both chiral and AP flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a weak perturbation of ect-2 and rga-3 affects chiral but not AP flow, unlike a weak perturbation of mlc-4 which affects both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from experimental comparisons of different RNAi conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "31625ea2-099e-46d8-b7ae-b043d20771a7",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C60",
+      "claim": "Weak perturbation of ect-2 and rga-3 affects chiral but not AP flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a weak perturbation of ect-2 and rga-3 affects chiral but not AP flow, unlike a weak perturbation of mlc-4 which affects both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from experimental comparisons of different RNAi conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "0485f29a-a34a-4e8b-83ea-a3c4f577baa8",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C61",
+      "claim": "Similar results for skew angle changes were obtained in ABp as in ABa.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained in ABp (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured experimentally in both cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "47683528-5cea-49a6-9a3f-0bd07026065c",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C62",
+      "claim": "Wnt-induced signals in many systems propagate through Rho GTPases to promote morphological changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Wnt-induced signals in many systems propagate through Rho GTPases to promote morphological changes (Schlessinger et al., 2009), we speculate that these effects are propagated through Rho signaling (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on cited literature and speculation about mechanism.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "8cab7fac-f54e-4357-90dd-99da680310a7",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C63",
+      "claim": "The effects of Wnt signaling genes on chiral flow are propagated through Rho signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Wnt-induced signals in many systems propagate through Rho GTPases to promote morphological changes (Schlessinger et al., 2009), we speculate that these effects are propagated through Rho signaling (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation based on known Wnt-Rho connections and the observed effects.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "959cb85c-eccf-47e1-96b0-364efdf734f9",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C64",
+      "claim": "Chiral morphogenetic rearrangements have been observed at other stages in C. elegans development.",
+      "claim_type": "EXPLICIT",
+      "source": "Chiral morphogenetic rearrangements have been observed at other stages in C. elegans development (Pohl and Bao, 2010) and during the first cleavage (Schonegg et al., 2014; Singh and Pohl, 2014), as well as in other systems (Shibazaki et al., 2004; Danilchik et al., 2006; G\u00e9minard et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "4b687523-0aed-41c5-91a5-51cfc8c6edd4",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C65",
+      "claim": "All chiral morphogenetic events might be driven by active torque generation in the actomyosin layer.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to speculate that all these events might be driven by active torque generation in the actomyosin layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings of this study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "8de67f76-e7ea-4a96-9f95-d46b22674a96",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C66",
+      "claim": "Cortical structure is disrupted by 8 hours of mlc-4 (RNAi).",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the overall ratio of active torque density to active tension is not changed by weak reduction of mlc-4 activity but is altered at stronger RNAi conditions when cortical structure is affected (Figure 3\u2014figure supplement 4A and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3\u2014figure supplement 4A with foci size analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "8ecef368-9a75-4667-b581-b981d088801b",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C69",
+      "claim": "The cell cortex can be described as a thin film of an active chiral fluid.",
+      "claim_type": "EXPLICIT",
+      "source": "We derive equations of motion for the cell cortex, describing it as a thin film of active chiral fluid (F\u00fcrthauer et al., 2012, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the theoretical framework used in the study, based on cited work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "30af000b-ff5e-4bc3-8342-5bace51377f0",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C70",
+      "claim": "Molecular force generation by actin and myosin is represented by active force and torque dipoles.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, molecular force generation by actin and myosin is represented by active force and torque dipoles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the theoretical framework developed in the appendix.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "0e151651-d469-44e1-bfd9-e804cbc3c7a2",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C71",
+      "claim": "Active force and torque dipoles give rise to an active tension and an active torque density in the material and can generate flows.",
+      "claim_type": "EXPLICIT",
+      "source": "These give rise to an active tension and an active torque density in the material and can generate flows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the theoretical framework developed in the appendix.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "8d0a497c-f8ca-414f-b242-5231ccfbd3fb",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C72",
+      "claim": "Spatial gradients in active tension are generated by a spatially inhomogeneous distribution of myosin motors.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial gradients in active tension are generated by a spatially inhomogeneous distribution of myosin motors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the theoretical framework and consistent with previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "acdecdfb-f033-43cb-83e9-83aa85a05971",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "claim_id": "C73",
+      "claim": "Spatial gradients in active torque density give rise to a flow orthogonal to the gradient of myosin density.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial gradients in active torque density on the other hand give rise to a flow orthogonal to the gradient of myosin density (F\u00fcrthauer et al., 2013) (see Equation 18) in a direction that is set by the chirality of the torque dipoles in the cell cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the theoretical equations of motion.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "24ceee18-6d8e-4692-a182-5b58a5772a74",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate that cortical flow in C. elegans zygotes exhibits chiral counter-rotation, with the posterior and anterior halves of the cortex rotating in opposite directions. The mean chiral counter-rotation velocity is \u22122.9 \u00b1 0.3 \u03bcm/min, with the posterior half undergoing counterclockwise rotation when viewed from the posterior pole.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 and C54-C56 provide direct experimental measurements from particle image velocimetry showing counter-rotating flow with specific velocities. The data is quantified with appropriate statistics (mean \u00b1 error at 99% confidence) and visualized in Figure 1, providing strong support for this novel observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "e6551d5d-6c7d-4207-8ebf-34ad58750ca3",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors show that chiral counter-rotating flow depends on myosin activity. RNAi knockdown of mlc-4 (myosin regulatory light chain) for 8 hours significantly reduces chiral counter-rotation velocity from \u22122.9 \u00b1 0.3 \u03bcm/min to \u22121.1 \u00b1 0.4 \u03bcm/min.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C20, C6, and C57 demonstrate myosin-dependence through mlc-4 RNAi experiments with statistical testing (Wilcoxon rank sum test at 99% confidence). The reduction in both AP and chiral flow upon myosin knockdown provides clear evidence for myosin's role in generating chiral flow.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "4bb25f13-0b34-40f7-960b-a6a6f43c6364",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors develop a theoretical model describing the cortex as a thin film of active chiral fluid, showing that gradients in active tension drive AP flow while gradients in active torque density drive chiral flow. Fitting this model to experimental data yields a hydrodynamic length of 16 \u00b1 0.6 \u03bcm and a chirality index c = 0.58 \u00b1 0.09, indicating that a significant portion of myosin activity generates active torques with clockwise handedness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26 and C58, C69-C73 present a coherent theoretical framework based on active gel physics. The model successfully fits experimental flow profiles (Figure 2B) and provides quantitative parameters. The positive chirality index indicates clockwise torques, consistent with observed counterclockwise posterior flow. The theoretical derivation appears sound and the fit quality supports the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "369dd897-5b30-44f2-b7a8-70639f6071d7",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors demonstrate that weak mlc-4 RNAi (4-6 hours) reduces both AP and chiral flow proportionally while maintaining constant chirality index c, but stronger RNAi (8 hours) significantly reduces c from 0.58 \u00b1 0.09 to 0.14 \u00b1 0.04 when cortical structure is disrupted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29, C59, and C66 show dose-dependent effects of mlc-4 knockdown with appropriate statistical comparisons. The unchanged c at 4-6 hours versus reduced c at 8 hours, correlated with cortical structure disruption (Figure 3\u2014figure supplement 4A), supports the interpretation that the torque/tension ratio is maintained until structural integrity is compromised.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "b6cd411a-8c56-48e9-af6f-59e0e1ccec7b",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors show that mild perturbations of Rho signaling through ect-2 or rga-3 RNAi selectively alter chiral flow without affecting AP flow, changing the chirality index c. ect-2 RNAi decreases c while rga-3 RNAi increases c, indicating that Rho pathway activity modulates active torque generation independently of its role in activating myosin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32, C7, C47, and C60 demonstrate differential effects on chiral versus AP flow through weak perturbation RNAi experiments. The selective modulation of chirality index without proportional changes in AP flow (Figure 3A,D) provides strong evidence for independent regulation of torque generation. This is a key mechanistic insight distinguishing torque from tension generation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "3fc03595-11de-4ddb-9d3c-1b3d0f1d0bfe",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors demonstrate that chiral counter-rotating cortical flow occurs at the 4-cell stage in ABa cells (vc = \u22125.2 \u00b1 1.1 \u03bcm/min) with the same handedness as the 1-cell stage. Modulating this flow through ect-2 or rga-3 RNAi correspondingly changes the degree of cell skew, suggesting that active torques execute the chiral skew event that establishes the C. elegans left-right body axis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C41, C8, and C61 link chiral flow at the 4-cell stage to the known LR symmetry-breaking skew event. The correlation between altered chiral flow velocities and altered skew angles under Rho pathway perturbations (Figure 4A,B) provides strong evidence for a causal relationship. Statistical significance is demonstrated for both flow and skew changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "e3779a74-c39b-4101-9c00-75c8a2d89b74",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors show that RNAi of Wnt signaling genes (dsh-2, gsk-3, mig-5, mom-2) known to affect LR symmetry breaking leads to reduced chiral flow and decreased chirality index c at the 1-cell stage, suggesting a fundamental link between Wnt signaling, chiral flow, and LR axis establishment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C44 demonstrate correlation between Wnt pathway genes and chiral flow (Figure 4C), but claims C62-C63 are explicitly speculative about the mechanism linking Wnt to Rho signaling. While the correlation is well-documented, the mechanistic connection remains unproven. The result establishes an important link but requires further validation of the proposed pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "227abfd4-66a3-4584-b6bb-8fd383a7a3c0",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors demonstrate that the embryo maintains azimuthal symmetry with respect to myosin distribution, showing no detectable gradient in myosin fluorescence intensity between top and bottom halves of the embryo. This indicates that chiral flow does not originate from myosin activity gradients along the azimuthal direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 are supported by quantitative analysis of myosin intensity distributions (Figure 2\u2014figure supplement 1B). The histogram centered near zero difference confirms lack of azimuthal asymmetry. This is an important control demonstrating that chiral flow arises from intrinsic torque generation rather than asymmetric myosin distribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "9fb1c9a7-a20a-4f01-a9ca-3756dc8ff834",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors report that the chiral skew at the 4-cell stage is more complex than previously described, involving rotation in both the AP-LR plane and the DV-LR plane, with approximately 20\u00b0 skew detected in the DV-LR plane even under non-RNAi conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 present new observations about the 3D nature of the skew event through measurements in multiple planes (Figure 4\u2014figure supplement 1). The detection of DV-LR plane skew adds complexity to the understanding of this developmental event. The measurements appear sound and extend previous 2D characterizations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "74a573f2-3525-409f-8ba1-36e77c82ad62",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors report that chiral counter-rotating flow precedes the previously reported chiral whole-cell rotation of the zygote during cell division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 establishes temporal ordering relative to prior work (Schonegg et al., 2014). The observation is supported by the timing of flow measurements during the cortical flow period before division. This temporal relationship is important for understanding the sequence of chiral events.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "74b01765-f8fd-4d76-8e89-193cdf8693e7",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors conclude that the actomyosin cytoskeleton in C. elegans generates active chiral torques with clockwise handedness that drive specific patterns of chiral flows, which can be understood quantitatively based on active gel physics with chiral asymmetries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C46, C4, and C5 represent the main conclusions synthesizing experimental observations and theoretical modeling. The agreement between theory and experiment (Figure 2B), combined with perturbation experiments, strongly supports these conclusions. This represents the central finding of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "4e738853-a60c-43d9-a0a4-aed624158d8b",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose that active torques are generated at multiple developmental stages: in the zygote during polarity establishment without immediate LR consequences, and at the 4-cell stage as an instructional event for LR symmetry breaking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 synthesizes observations from both 1-cell and 4-cell stages. The presence of chiral flow at both stages with differential functional consequences is well-documented in the data. This temporal analysis provides insight into how the same mechanism is deployed at different developmental stages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "03a2864f-df9d-43ce-be4a-123f42de1c75",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors provide background context that LR asymmetry emerges early in development across species and is linked to cytoskeletal components including both microtubules and actomyosin, with molecular-scale observations of myosin rotating actin filaments in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C9-C13, C49, and C64 establish the scientific context through citations to established literature. These background claims are appropriately supported by references and represent accepted knowledge in the field. They provide necessary context for the novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    },
+    {
+      "id": "b2979559-fe95-4c6e-ae3a-efd71cb44b17",
+      "content_id": "d6569238-e2fc-4c5b-9099-54057e2ea180",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that all chiral morphogenetic events observed in C. elegans and other systems might be driven by active torque generation in the actomyosin layer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C65 is explicitly speculative, extending the findings to other chiral morphogenetic events without direct experimental evidence. While the speculation is reasonable given the results, it remains untested and would require additional experiments across different developmental contexts and organisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:04:45.019827Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "edc7e68d-f460-4f69-bcee-11dec8a3a2b9",
+      "result_id": "24ceee18-6d8e-4692-a182-5b58a5772a74"
+    },
+    {
+      "claim_id": "e300518b-df1b-45ca-ad06-3d88f3f714ec",
+      "result_id": "24ceee18-6d8e-4692-a182-5b58a5772a74"
+    },
+    {
+      "claim_id": "4c1c4954-4d4d-494f-ac34-ee679a90751e",
+      "result_id": "24ceee18-6d8e-4692-a182-5b58a5772a74"
+    },
+    {
+      "claim_id": "03878508-6f4e-4e38-8461-8c12eac2f90b",
+      "result_id": "24ceee18-6d8e-4692-a182-5b58a5772a74"
+    },
+    {
+      "claim_id": "9be1fa5a-3486-4715-888c-ffec658a0ce6",
+      "result_id": "24ceee18-6d8e-4692-a182-5b58a5772a74"
+    },
+    {
+      "claim_id": "80cf1318-dafa-41c4-a02b-4b3f5437e4e3",
+      "result_id": "24ceee18-6d8e-4692-a182-5b58a5772a74"
+    },
+    {
+      "claim_id": "55f36dd4-5b86-487d-a901-2f193859eb41",
+      "result_id": "24ceee18-6d8e-4692-a182-5b58a5772a74"
+    },
+    {
+      "claim_id": "958faf30-26ed-46a6-a3c3-b2fdcbc461be",
+      "result_id": "e6551d5d-6c7d-4207-8ebf-34ad58750ca3"
+    },
+    {
+      "claim_id": "bbbc7755-3873-4cb7-b6b5-26ea2c04aac5",
+      "result_id": "e6551d5d-6c7d-4207-8ebf-34ad58750ca3"
+    },
+    {
+      "claim_id": "826e6a66-d14b-482c-9448-fb868da5be28",
+      "result_id": "e6551d5d-6c7d-4207-8ebf-34ad58750ca3"
+    },
+    {
+      "claim_id": "8cc594d7-8687-4b6f-abe9-970f37b1c403",
+      "result_id": "e6551d5d-6c7d-4207-8ebf-34ad58750ca3"
+    },
+    {
+      "claim_id": "2936915d-9ca3-4bfe-9fc7-da13fd5f65a9",
+      "result_id": "4bb25f13-0b34-40f7-960b-a6a6f43c6364"
+    },
+    {
+      "claim_id": "70b0ab1b-98b6-447a-abf5-122f840280fa",
+      "result_id": "4bb25f13-0b34-40f7-960b-a6a6f43c6364"
+    },
+    {
+      "claim_id": "53cf12f9-4c0f-4e54-ae43-89172718eb9f",
+      "result_id": "4bb25f13-0b34-40f7-960b-a6a6f43c6364"
+    },
+    {
+      "claim_id": "c15e1bcc-6264-4850-927c-a66a1f0c03c2",
+      "result_id": "4bb25f13-0b34-40f7-960b-a6a6f43c6364"
+    },
+    {
+      "claim_id": "53d7ddf6-128a-4d9f-9525-81efd6ded363",
+      "result_id": "4bb25f13-0b34-40f7-960b-a6a6f43c6364"
+    },
+    {
+      "claim_id": "796b0434-f6c6-48c8-8095-615170080b6f",
+      "result_id": "4bb25f13-0b34-40f7-960b-a6a6f43c6364"
+    },
+    {
+      "claim_id": "1c940e50-0bb8-452b-ad7c-236309a2a62d",
+      "result_id": "4bb25f13-0b34-40f7-960b-a6a6f43c6364"
+    },
+    {
+      "claim_id": "8ecef368-9a75-4667-b581-b981d088801b",
+      "result_id": "4bb25f13-0b34-40f7-960b-a6a6f43c6364"
+    },
+    {
+      "claim_id": "30af000b-ff5e-4bc3-8342-5bace51377f0",
+      "result_id": "4bb25f13-0b34-40f7-960b-a6a6f43c6364"
+    },
+    {
+      "claim_id": "0e151651-d469-44e1-bfd9-e804cbc3c7a2",
+      "result_id": "4bb25f13-0b34-40f7-960b-a6a6f43c6364"
+    },
+    {
+      "claim_id": "8d0a497c-f8ca-414f-b242-5231ccfbd3fb",
+      "result_id": "4bb25f13-0b34-40f7-960b-a6a6f43c6364"
+    },
+    {
+      "claim_id": "acdecdfb-f033-43cb-83e9-83aa85a05971",
+      "result_id": "4bb25f13-0b34-40f7-960b-a6a6f43c6364"
+    },
+    {
+      "claim_id": "660ce8b1-bf3a-4810-a173-724b6db5d28a",
+      "result_id": "369dd897-5b30-44f2-b7a8-70639f6071d7"
+    },
+    {
+      "claim_id": "c5bf026d-7e20-46d2-a1d3-8b65b476b3b1",
+      "result_id": "369dd897-5b30-44f2-b7a8-70639f6071d7"
+    },
+    {
+      "claim_id": "50db1325-1644-4c1d-af34-7431c997225c",
+      "result_id": "369dd897-5b30-44f2-b7a8-70639f6071d7"
+    },
+    {
+      "claim_id": "830d15b5-5e9b-4084-8553-b6d165c3ffe1",
+      "result_id": "369dd897-5b30-44f2-b7a8-70639f6071d7"
+    },
+    {
+      "claim_id": "8de67f76-e7ea-4a96-9f95-d46b22674a96",
+      "result_id": "369dd897-5b30-44f2-b7a8-70639f6071d7"
+    },
+    {
+      "claim_id": "0e373952-5d13-4cf8-b371-f71c247a4b97",
+      "result_id": "b6cd411a-8c56-48e9-af6f-59e0e1ccec7b"
+    },
+    {
+      "claim_id": "894686b6-b521-4ce2-87bd-3725283bff28",
+      "result_id": "b6cd411a-8c56-48e9-af6f-59e0e1ccec7b"
+    },
+    {
+      "claim_id": "55234eaa-7b2b-4637-b7a3-f936bb76e110",
+      "result_id": "b6cd411a-8c56-48e9-af6f-59e0e1ccec7b"
+    },
+    {
+      "claim_id": "086f6b12-6d28-4493-8900-07841b77cab1",
+      "result_id": "b6cd411a-8c56-48e9-af6f-59e0e1ccec7b"
+    },
+    {
+      "claim_id": "18e01703-d7a7-4c71-82bd-3835a87ca9bf",
+      "result_id": "b6cd411a-8c56-48e9-af6f-59e0e1ccec7b"
+    },
+    {
+      "claim_id": "31625ea2-099e-46d8-b7ae-b043d20771a7",
+      "result_id": "b6cd411a-8c56-48e9-af6f-59e0e1ccec7b"
+    },
+    {
+      "claim_id": "67c537ea-2143-41a5-ac8e-0f2b9a561aaf",
+      "result_id": "3fc03595-11de-4ddb-9d3c-1b3d0f1d0bfe"
+    },
+    {
+      "claim_id": "1bc66a44-bd83-440c-86ad-f7af285f6b50",
+      "result_id": "3fc03595-11de-4ddb-9d3c-1b3d0f1d0bfe"
+    },
+    {
+      "claim_id": "58b0a564-82c8-4125-8a26-33ec2af5807b",
+      "result_id": "3fc03595-11de-4ddb-9d3c-1b3d0f1d0bfe"
+    },
+    {
+      "claim_id": "f5c1f628-4ed4-48b5-b9a1-44062dfb4a35",
+      "result_id": "3fc03595-11de-4ddb-9d3c-1b3d0f1d0bfe"
+    },
+    {
+      "claim_id": "de24ea54-b28c-4520-bb66-1e8654155bca",
+      "result_id": "3fc03595-11de-4ddb-9d3c-1b3d0f1d0bfe"
+    },
+    {
+      "claim_id": "31fac8a8-4637-44b9-89fd-dbaf6c737bd1",
+      "result_id": "3fc03595-11de-4ddb-9d3c-1b3d0f1d0bfe"
+    },
+    {
+      "claim_id": "52d71efc-d9d4-4db1-ac79-e175a48ceae9",
+      "result_id": "3fc03595-11de-4ddb-9d3c-1b3d0f1d0bfe"
+    },
+    {
+      "claim_id": "d9cb114a-9469-4518-8131-8b78aa0255e7",
+      "result_id": "3fc03595-11de-4ddb-9d3c-1b3d0f1d0bfe"
+    },
+    {
+      "claim_id": "82b256cc-7cb8-405d-9cc8-3a4bbb40f277",
+      "result_id": "3fc03595-11de-4ddb-9d3c-1b3d0f1d0bfe"
+    },
+    {
+      "claim_id": "0485f29a-a34a-4e8b-83ea-a3c4f577baa8",
+      "result_id": "3fc03595-11de-4ddb-9d3c-1b3d0f1d0bfe"
+    },
+    {
+      "claim_id": "76dd5415-f731-46f3-8cff-e2235f1ad091",
+      "result_id": "e3779a74-c39b-4101-9c00-75c8a2d89b74"
+    },
+    {
+      "claim_id": "13cc654f-e5e0-478e-b22b-25dabb517692",
+      "result_id": "e3779a74-c39b-4101-9c00-75c8a2d89b74"
+    },
+    {
+      "claim_id": "5bd35524-feb0-456c-98ca-951dc7d83f66",
+      "result_id": "e3779a74-c39b-4101-9c00-75c8a2d89b74"
+    },
+    {
+      "claim_id": "47683528-5cea-49a6-9a3f-0bd07026065c",
+      "result_id": "e3779a74-c39b-4101-9c00-75c8a2d89b74"
+    },
+    {
+      "claim_id": "8cab7fac-f54e-4357-90dd-99da680310a7",
+      "result_id": "e3779a74-c39b-4101-9c00-75c8a2d89b74"
+    },
+    {
+      "claim_id": "a7ee3990-92d3-4e8f-8c2b-2b519b6e2d24",
+      "result_id": "227abfd4-66a3-4584-b6bb-8fd383a7a3c0"
+    },
+    {
+      "claim_id": "e32f6a10-77f1-46f2-963a-22e1b6bacad9",
+      "result_id": "227abfd4-66a3-4584-b6bb-8fd383a7a3c0"
+    },
+    {
+      "claim_id": "603abb16-6a33-4b1a-8812-791fad05e758",
+      "result_id": "9fb1c9a7-a20a-4f01-a9ca-3756dc8ff834"
+    },
+    {
+      "claim_id": "ec735a01-e90b-4381-a5ea-a8f27cca095b",
+      "result_id": "9fb1c9a7-a20a-4f01-a9ca-3756dc8ff834"
+    },
+    {
+      "claim_id": "a093c04a-35c2-4aa1-8bb7-f0f0f0bc026c",
+      "result_id": "74a573f2-3525-409f-8ba1-36e77c82ad62"
+    },
+    {
+      "claim_id": "776e4f53-4532-4351-a68e-5c8a22e8729c",
+      "result_id": "74b01765-f8fd-4d76-8e89-193cdf8693e7"
+    },
+    {
+      "claim_id": "4c62b5bc-1aaa-4119-a9d9-de0dfc5052b5",
+      "result_id": "74b01765-f8fd-4d76-8e89-193cdf8693e7"
+    },
+    {
+      "claim_id": "c76920ee-8d86-4057-b97c-fe1a3bb1c211",
+      "result_id": "74b01765-f8fd-4d76-8e89-193cdf8693e7"
+    },
+    {
+      "claim_id": "64a3d7a0-89ca-405e-a6b8-90c13ad92a85",
+      "result_id": "74b01765-f8fd-4d76-8e89-193cdf8693e7"
+    },
+    {
+      "claim_id": "813a26bf-d2ed-4e9f-b11e-cb960c6cb763",
+      "result_id": "4e738853-a60c-43d9-a0a4-aed624158d8b"
+    },
+    {
+      "claim_id": "3bcb1d86-9600-4dd0-b560-033db7310b59",
+      "result_id": "03a2864f-df9d-43ce-be4a-123f42de1c75"
+    },
+    {
+      "claim_id": "3f906029-2d77-4382-a957-3d4ccefb6688",
+      "result_id": "03a2864f-df9d-43ce-be4a-123f42de1c75"
+    },
+    {
+      "claim_id": "4ab0f306-9eea-44f3-b33e-79e725b42398",
+      "result_id": "03a2864f-df9d-43ce-be4a-123f42de1c75"
+    },
+    {
+      "claim_id": "ea2882ad-be06-4b6c-9e09-eac246403ba7",
+      "result_id": "03a2864f-df9d-43ce-be4a-123f42de1c75"
+    },
+    {
+      "claim_id": "fbc91402-e8d6-4136-8d6e-90c30190ad7a",
+      "result_id": "03a2864f-df9d-43ce-be4a-123f42de1c75"
+    },
+    {
+      "claim_id": "5119536f-945d-474a-b757-bac0c9e02fc8",
+      "result_id": "03a2864f-df9d-43ce-be4a-123f42de1c75"
+    },
+    {
+      "claim_id": "a06cd8e1-0988-4bcf-a98b-d2ef71376a7d",
+      "result_id": "03a2864f-df9d-43ce-be4a-123f42de1c75"
+    },
+    {
+      "claim_id": "481a39fe-d02f-45dc-a6b0-270d3234fe25",
+      "result_id": "03a2864f-df9d-43ce-be4a-123f42de1c75"
+    },
+    {
+      "claim_id": "9e185b44-1143-4652-bc53-119bf3b0c5a9",
+      "result_id": "03a2864f-df9d-43ce-be4a-123f42de1c75"
+    },
+    {
+      "claim_id": "959cb85c-eccf-47e1-96b0-364efdf734f9",
+      "result_id": "03a2864f-df9d-43ce-be4a-123f42de1c75"
+    },
+    {
+      "claim_id": "4b687523-0aed-41c5-91a5-51cfc8c6edd4",
+      "result_id": "b2979559-fe95-4c6e-ae3a-efd71cb44b17"
+    }
+  ],
+  "comparisons": []
+}

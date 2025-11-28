@@ -1,0 +1,2030 @@
+{
+  "submission": {
+    "id": "9b6fa171-58d5-4f6c-8aa2-b68c50f6f02e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:24:10.782320Z",
+    "updated_at": "2025-11-28T22:24:10.782320Z"
+  },
+  "content": [
+    {
+      "id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "submission_id": "9b6fa171-58d5-4f6c-8aa2-b68c50f6f02e",
+      "content_type": "manuscript",
+      "content_text": "# Enhanced stability and polyadenylation of select mRNAs support rapid thermogenesis in the brown fat of a hibernator\n\n## Authors\n\n- Katharine R Grabek<sup>1</sup>\n- Cecilia Diniz Behn<sup>3</sup>\n- Gregory S Barsh<sup>4</sup>\n- Jay R Hesselberth<sup>1</sup>\n- Sandra L Martin<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Cell and Developmental Biology University of Colorado School of Medicine Aurora United States\n2. Human Medical Genetics and Genomics Program University of Colorado School of Medicine Aurora United States\n3. Department of Applied Math and Statistics Colorado School of Mines Golden United States\n4. Department of Research HudsonAlpha Institute for Biotechnology Huntsville United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring hibernation, animals cycle between torpor and arousal. These cycles involve dramatic but poorly understood mechanisms of dynamic physiological regulation at the level of gene expression. Each cycle, Brown Adipose Tissue (BAT) drives periodic arousal from torpor by generating essential heat. We applied digital transcriptome analysis to precisely timed samples to identify molecular pathways that underlie the intense activity cycles of hibernator BAT. A cohort of transcripts increased during torpor, paradoxical because transcription effectively ceases at these low temperatures. We show that this increase occurs not by elevated transcription but rather by enhanced stabilization associated with maintenance and/or extension of long poly(A) tails. Mathematical modeling further supports a temperature-sensitive mechanism to protect a subset of transcripts from ongoing bulk degradation instead of increased transcription. This subset was enriched in a C-rich motif and genes required for BAT activation, suggesting a model and mechanism to prioritize translation of key proteins for thermogenesis.\n\n## Introduction\n\nMany mammals hibernate to conserve energy during extended periods of limited resource availability and harsh environmental conditions. As winter approaches in temperate climates, hibernators enter into a state of torpor. Torpor in ground squirrels involves active suppression of physiological processes to 2\u20135% of basal rates, which allows body temperature to lower to just above ambient, even as ambient temperatures fall to near freezing. This depressed state is not continuous throughout winter, however, instead it lasts for 1\u20133 weeks until it is punctuated by a spontaneous, rapid re-warming to 37\u00b0C; physiological rates during re-warming match or even exceed basal rates. The interbout arousal period is then sustained for 12\u201324 hr before torpor resumes. Cycles between torpor and arousal result in winter heterothermy or hibernation (Figure 1). Hibernation persists for 5\u20138 months before emergence in spring and maintenance of more typical mammalian homeostatic physiology throughout the summer period of growth and reproduction (Figure 1, see Carey et al., 2003; for review). Although of broad medical interest for their ability to tolerate these extraordinary physiological extremes (Carey et al., 2003; Andrews, 2007; Carey et al., 2012; Dave et al., 2012), many aspects of the hibernation phenotype remain poorly understood. Some of hibernation's most defining mysteries are the mechanisms that underlie the highly dynamic oscillations of the torpor\u2013arousal cycle.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04517/elife-04517-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic depicting the metabolic suppression and activation cycle of BAT during the highly recruited, winter hibernation phase (blue shading) of the annual cycle. Cartoon squirrels represent general phenotypic changes among annual and torpor\u2013arousal cycles (Hindle and Martin, 2014). (B) Relationship of sample groups to body temperature over time. Blue highlighting on months indicates hibernation.\n\nTranscription and translation effectively cease at low body temperature during hibernation (van Breukelen and Martin, 2001; van Breukelen and Martin, 2002), yet organs maintain integrity and in some cases are quickly reactivated after 2 weeks of near inactivity in torpor. The need for immediate intense metabolic activation at low temperature is most pronounced in brown adipose tissue (BAT); early re-warming depends exclusively on non-shivering thermogenesis in this organ (Cannon and Nedergaard, 2004). Because of the constraints on gene expression during torpor, the rapid burst of metabolic activity that characterizes early re-warming may be particularly challenging for BAT.\n\nTo balance the decreased transcription, mRNA degradation during torpor also must be reduced to maintain cellular integrity and permit function in early arousal. Just as with transcription, low body temperature (i.e., Q10 effects) will slow rates of RNA degradation (Burka, 1969; Bremer and Moyes, 2014), but it is unclear how these two opposing activities will converge after two weeks to determine the steady-state abundance of specific RNAs at the end of a torpor bout. While the general consensus is that the transcriptome is largely stable during torpor (reviewed by Tessier and Storey (2014)), this view is based upon results (Frerichs et al., 1998; O'Hara et al., 1999; Knight et al., 2000; Williams et al., 2005) where ongoing degradation is not readily distinguishable from a stable transcriptome because of the sampling and normalization strategies employed. There are few clear examples of transcripts that diminish across a torpor bout (Epperson and Martin, 2002) and others that appear to increase (O'Hara et al., 1999), largely because few studies provide the necessary temporal resolution to quantify changes across a torpor bout.\n\nIn this study, we interrogate BAT mRNA dynamics in 13-lined ground squirrels across the torpor\u2013arousal cycle and the circannual rhythm of hibernation (Figure 1B). We chose BAT because of its unique requirement to function quickly and maximally in the earliest moments of arousal, after spending two weeks at the transcriptionally prohibitive body temperatures of torpor. We used a transcriptional profiling approach developed for non-model organisms, EDGE (Hong et al., 2011), on five precisely timed sample groups to capture multiple phases of the torpor\u2013arousal cycle (Figure 1B) and, for comparison, three groups from the non-hibernating, homeothermic portion of the year (Figure 1B).\n\n## Results\n\nA total of 38 EDGE-tag libraries, representing 8 distinct sampling groups (Figure 1B), were sequenced, processed (Figure 2\u2014figure supplement 1), and analyzed for changes associated with hibernation physiology. For each of the libraries, 90.1 \u00b1 2.6% of the sequence reads aligned to ground squirrel genomic (Supplementary file 3A in Grabek et al., 2014) or mitochondrial DNA (Figure 2A). After normalization, filtering, and annotation (Figure 2B, Figure 2\u2014figure supplement 1), 14,798 EDGE-tags representing 8,089 unique genes remained (Supplementary file 3B in Grabek et al., 2014). We first clustered the individual sample libraries by tag abundance using Random Forests (Breiman, 2001). Three main groups were evident (Figure 2C): (1)\u2018spring\u2019, independent of ambient temperature, spring cold (SpC), and spring warm (SpW); (2) \u2018winter warm\u2019: interbout aroused (IBA), entrance (Ent), and summer active (SA); (3) \u2018winter cold\u2019: early torpor (ET), late torpor (LT), and early arousal (EAr). Notably, BAT samples harvested from winter animals at warm body temperature clustered separately from those at low body temperature. This separation indicates the transcriptome is dynamic across a torpor bout.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04517/elife-04517-fig2-v1.jpg)\n\n**Figure 2.:** Pie charts of EDGE tags mapped: (A) uniquely to 13-lined ground squirrel nuclear (Genome Unique) or mitochondrial (Mito. Unique) DNA; multiple locations (Genome or Mito. Multiple); or unmapped (Unaligned); or (B) the indicated distances from the nearest annotated Ensembl feature (either overlapping or 3\u2032 to the feature in kilobases). (C) Two-dimensional scaling plot showing Random Forests (RF) clustering of individual samples labeled by group symbol: spring warm (SpW), spring cold (SpC), summer active (SA), interbout aroused (IBA), entrance (Ent), early torpor (ET), late torpor (LT), and early arousal (EAr), as depicted in Figure 1. (D) Line plots of EDGE-tag expression patterns for all 2,159 significant differentially expressed tags; mean scaled counts, solid line, \u00b1SEM, dotted line. Total tags in each cluster are indicated.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04517/elife-04517-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Sequential actions are listed in each box, while the number of resulting reads/EDGE-tags are labeled between boxes. tpm = \u2018Tags per million\u2019.\n\nThe 14,798 tags were next tested for significant differential expression among the three main groups; changes were detected in 2,159 tags (14.6%; q < 0.05) representing 1,638 unique genes (Supplementary file 3C in Grabek et al., 2014). These correlated well with quantitative changes in the BAT transcriptome of this species reported previously (Hampton et al., 2013); 91% of overlapping differentially expressed transcripts exhibited changes in the same direction among comparable states (see \u2018Materials and methods\u2019). DIANA hierarchical clustering identified six expression patterns among the differentially expressed tags (Figure 2D and Supplementary file 3C in Grabek et al., 2014); those in Clusters 1 and 2 were generally increased in spring compared to winter, while those in Clusters 3\u20136 were increased in winter, particularly in late torpor and early arousal. Distinct from the spring-enriched tags, those increased in winter were overwhelmingly enriched (Huang da et al., 2009) for functions related to BAT activation, such as lipid metabolism, lipid droplet formation, lipid transport, mitochondria and the TCA cycle (Table 1 and Supplementary file 3D in Grabek et al., 2014).\n\n**Table 1.**\n DAVID functional annotations for each DIANA cluster\n\n\n<table>\n  <thead>\n    <tr>\n      <th>DIANA cluster</th>\n      <th>Functional annotation cluster</th>\n      <th>Enrichment score</th>\n      <th>Annotations, n</th>\n      <th>Genes, n</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"5\">1</td>\n      <td>Cytosolic ribosome</td>\n      <td>4.09</td>\n      <td>11</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>Zinc finger, C2H2-type</td>\n      <td>2.19</td>\n      <td>8</td>\n      <td>30</td>\n    </tr>\n    <tr>\n      <td>Heme</td>\n      <td>1.8</td>\n      <td>3</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>Ribosome biogenesis</td>\n      <td>1.68</td>\n      <td>4</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td>Transcription</td>\n      <td>1.67</td>\n      <td>4</td>\n      <td>57</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">2</td>\n      <td>Transcription</td>\n      <td>6.03</td>\n      <td>4</td>\n      <td>80</td>\n    </tr>\n    <tr>\n      <td>Nuclear lumen</td>\n      <td>5.91</td>\n      <td>4</td>\n      <td>57</td>\n    </tr>\n    <tr>\n      <td>RNA recognition motif, RNP-1</td>\n      <td>5.18</td>\n      <td>3</td>\n      <td>18</td>\n    </tr>\n    <tr>\n      <td>mRNA processing</td>\n      <td>3.39</td>\n      <td>4</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td>Transcription from RNA polymerase II promoter</td>\n      <td>3.21</td>\n      <td>3</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">3</td>\n      <td>Mitochondrion outer membrane</td>\n      <td>3.07</td>\n      <td>4</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>Triglyceride biosynthetic process</td>\n      <td>1.78</td>\n      <td>12</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Glutathione S-transferase, C-terminal-like</td>\n      <td>1.41</td>\n      <td>4</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Long-chain fatty acid transport</td>\n      <td>1.37</td>\n      <td>5</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">4</td>\n      <td>Mitochondrial membrane</td>\n      <td>5.84</td>\n      <td>30</td>\n      <td>30</td>\n    </tr>\n    <tr>\n      <td>Endoplasmic reticulum membrane</td>\n      <td>3.94</td>\n      <td>20</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>Lipid particle</td>\n      <td>2.73</td>\n      <td>5</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Glucose metabolic process</td>\n      <td>2.16</td>\n      <td>11</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>Peroxisome</td>\n      <td>2.15</td>\n      <td>9</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">5</td>\n      <td>Mitochondrion</td>\n      <td>5.61</td>\n      <td>24</td>\n      <td>24</td>\n    </tr>\n    <tr>\n      <td>Generation of precursor metabolites and energy</td>\n      <td>2.66</td>\n      <td>14</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td>Lipid droplet</td>\n      <td>2.38</td>\n      <td>3</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Lipid metabolism</td>\n      <td>2.31</td>\n      <td>7</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>Oxidative phosphorylation</td>\n      <td>2.25</td>\n      <td>4</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">6</td>\n      <td>Mitochondrion</td>\n      <td>4.04</td>\n      <td>17</td>\n      <td>27</td>\n    </tr>\n    <tr>\n      <td>Neutral lipid biosynthetic process</td>\n      <td>2.74</td>\n      <td>14</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Glucose metabolic process</td>\n      <td>2.54</td>\n      <td>3</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Lipid catabolic process</td>\n      <td>2.33</td>\n      <td>13</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>Adipocytokine signaling pathway</td>\n      <td>2.17</td>\n      <td>11</td>\n      <td>9</td>\n    </tr>\n  </tbody>\n</table>\n\n_The top five Functional Annotation Clusters, ordered by enrichment score (>1.3), are listed for each DIANA cluster. See Figure 2D for DIANA clusters and Supplementary file 3D in Grabek et al., 2014 for all Functional Annotation Clusters._\n\nSurprisingly, a preponderance of winter-increased tags (i.e., transcripts) reached their highest relative abundance during early torpor, late torpor, and/or early arousal (Figure 2D, Clusters 4\u20136) despite near cessation of transcription in hibernators at low body temperature (van Breukelen and Martin, 2002). One clue to resolve this apparent paradox was provided by RPPH1, the RNA subunit of RNaseP, whose relative abundance increased several 100-fold by early arousal (q < 10^\u221214, Figure 3A). Because RPPH1 is transcribed by Pol III, it is not typically polyadenylated (Baer et al., 1990) and should not have been recovered in these sequencing libraries. Nevertheless, RPPH1 acquired a long poly(A) tail at low body temperature (Figure 3B,C), explaining its presence in the libraries and increase in the cold.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04517/elife-04517-fig3-v1.jpg)\n\n**Figure 3.:** (A) Box plot of normalized tag counts for RPPH1 by state, triangle marks the mean. (B) Gel showing RPPH1 RT-PCR products from 3\u2032 RACE (3\u2032 R, lanes 1 and 3) and random hexamer (RH, lanes 2 and 4) primed cDNA from early arousal (EAr; lanes 1\u20132) and spring warm (SpW; lanes 3\u20134) total RNA. Marker sizes are indicated on the left (50-bp ladder, lane M). (C) Multiple alignment of the RPPH1 genomic DNA and four 3\u2032 end cDNA sequences from cloned 3\u2032 RACE (EAr) products in B: uppercase, annotated RPPH1 RNA; lowercase, genomic DNA; underline, non-templated nucleotides.\n\nWe considered three potential mechanisms that might explain increased transcript abundance at low body temperature: (1) elevated transcription; (2) relative stabilization; and (3) acquisition of a poly(A) tail. To probe these mechanisms, we quantified abundance and the effect of poly(A) tail length on the dynamics of RPPH1 and thirteen other transcripts, including three additional ncRNAs and ten mRNAs (Supplementary file 1A; note that there are two isoforms of LIPE), during the torpor\u2013arousal cycle. The absolute abundance of these transcripts was measured by RT-qPCR in total RNA, and short and long poly(A) RNA fractions (Figure 4\u2014figure supplement 1; Supplementary file 1A) from interbout aroused, late torpor, early arousal, and spring warm animals (n = 3). Two classes of RNA dynamics were apparent; transcripts were either decreased (labeled as Class I) or stabilized (labeled as Class II) during torpor but not newly transcribed.\n\nFive Class I transcripts decreased during torpor, with poly(A) and total RNA mirroring the abundance of their EDGE tags (compare IBA to LT in Figure 4A; see also Figure 4\u2014figure supplement 2A and Supplementary file 1B). Interestingly, during early arousal, when core body temperature was still low, some of these transcripts increased, likely because heat generated early in the arousal process has returned BAT to a temperature permissive for transcription (Osborne and Hashimoto, 2003). These transcripts were largely bearing long poly(A) tails, which also appeared to shorten during torpor (Figure 4\u2014figure supplement 2B). Class I dynamics explain the DIANA Clusters 1\u20133, where RNA decreased during torpor but then increased at the elevated body temperature of interbout arousal (compare IBA to LT in Figure 2D), and likely the even larger collection of transcripts that were not differentially expressed (e.g., GAPDH, Figure 4\u2014figure supplement 2A). Thus, it appears that most BAT transcripts slowly degrade over two weeks in torpor and are not replenished until body temperature recovers during the short euthermic period.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04517/elife-04517-fig4-v1.jpg)\n\n**Figure 4.:** (A) Class I, represented by RET proto-oncogene. Relative expression levels (solid line; \u00b1SEM, dotted line; y-axis) of EDGE-tag counts (far left), total RNA (middle-left), poly(A) RNA (green = long poly(A) RNA; orange = short poly(A) RNA; middle-right), and percent recovery (y-axis) of poly(A) RNA relative to total RNA (far right) among physiological states: interbout aroused (IBA), late torpor (LT), early arousal (EAr), and spring warm (SpW). Spearman correlations (\u03c1) to EDGE-tag expression labeled in three right boxes; *p \u2264 0.05, **p \u2264 0.01, ***p \u2264 0.005. (B\u2013C) Labeling is as in panel A. (B) Class IIA, represented by RPPH1. (C) Class IIB, represented by STAP2. (D) Western blot reveals three isoforms of the PNPLA2 protein (left arrows) among indicated (top) sample states; marker sizes are denoted on right, \u03b2-tubulin, below, served as a loading control. (E) Relative abundance (solid lines; \u00b1SEM, bars) of the 55 and 47 kD PNPLA2 proteins among samples states. (F) Relative abundance pattern of the PNPLA2 48 kD protein, PNPLA2 long poly(A) and total RNA; hibernation states are double-plotted to reveal cyclical pattern of torpor and arousal.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04517/elife-04517-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) A gel showing RT-PCR amplified CKB from TVN (lane 2) and ePAT primed cDNA of one IBA, LT, SpW, and EAr short and long poly(A) RNA samples (lanes 4\u201311; labeled along the top). A 50-bp ladder is shown in lanes 1 and 3 (with M marked on top and several sizes denoted to the left of lane 1). The TVN band marks the first 12 adenosines of the poly(A) tail, while all other bands from ePAT cDNA represent the total length of the poly(A) tail. (B) The mean (+SEM) short and long poly(A) tail lengths calculated from the ePAT(-TVN) band sizes of the samples within each RNA fraction. The short poly(A) tail is approximately 26 bp, while the long poly(A) tail is approximately 48 bp. *p < 0.05 by two-tailed Student's t-test.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04517/elife-04517-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Class I RNA dynamics. In addition to RET (Figure 4A), the measurements for the other transcripts (labeled on left x-axis) that belong to Class I are shown along horizontal panels. Relative expression levels (n = 3; solid line; \u00b1SEM, dotted line; y-axis) of EDGE-tag counts (far left), total RNA (middle-left), poly(A) RNA (green = long poly(A) RNA; orange = short poly(A) RNA; middle-right), and percent recovery (y-axis) of poly(A) RNA relative to total RNA (far right) among physiological states. See Supplementary file 1B,C for additional details of transcript classification and specific measurements. (B) The mean long:short poly(A) RNA ratios (mean-scaled, solid line; \u00b1SEM, dotted line; y-axis) for all transcripts in Class I among the four sample states. Increased long:short poly(A) RNA ratio = lengthened poly(A) tail, while decreased ratio = shortened poly(A) tail. (C and D) Same as in B, except plots show mean poly(A) tail length changes for transcripts in Class IIA (C) and Class IIB (D). All classes exhibited significant poly(A) tail length changes among sample states (One-Way ANOVA; p = 0.003 for Class I; p < 10\u20139 for Class IIA; p = 0.006 for Class IIB).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04517/elife-04517-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** In addition to RPPH1 (Figure 4B), the measurements for the other transcripts (labeled on left x-axis) that belong to Class IIA are shown along the horizontal panels. Labeling is the same as in Figure 4\u2014figure supplement 2A. See Supplementary file 1B,C for additional details of transcript classification and specific measurements.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/04517/elife-04517-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** In addition to STAP2 (Figure 4C), the measurements for the other transcripts (labeled on left x-axis) that belong to Class IIB are shown along the horizontal panels. Labeling is the same as in Figure 4\u2014figure supplement 2A. See Supplementary file 1B,C for additional details of transcript classification and specific measurements.\n\nNine Class II transcripts were stabilized during torpor. While their EDGE-tags appeared to increase during torpor (Figure 4B,C, left), this increase was not mirrored in total RNA (Figure 4B,C, middle-left). We further sub-divided this class by differences in polyadenylation. Total RNA for five Class IIA transcripts remained stable among states (Figure 4B, middle-left; Figure 4\u2014figure supplement 3). However, these transcripts increased in the short and long poly(A) fractions during late torpor and particularly early arousal (Figure 4B, right; Figure 4\u2014figure supplement 3, Supplementary file 1C) with concurrent poly(A) tail lengthening (Figure 4\u2014figure supplement 2C), correlating with their EDGE-tags (Figure 4B, left; Figure 4\u2014figure supplement 3; Supplementary file 1B). Total RNA decreased in torpor and early arousal for four transcripts in Class IIB (Figure 4C, Figure 4\u2014figure supplement 4), whereas their polyadenylated fraction remained stable (Figure 4C, middle-right; Figure 4\u2014figure supplement 4), resulting in an apparent increase (Figure 4C, right; Figure 4\u2014figure supplement 2D and 4; Supplementary file 1C) and consistent with the EDGE-tag pattern (Figure 4C, left; Figure 4\u2014figure supplement 4; Supplementary file 1B). Thus, in contrast to Class I, Class II transcripts are stabilized throughout torpor with maintenance or acquisition of a poly(A) tail. The enhanced stability of this subset relative to all other transcripts apparently leads to their relative increases at low body temperature (Figure 2D, DIANA Clusters 4\u20136).\n\nWe next tested whether the observed transcript dynamics in torpor\u2013arousal cycles could impact the corresponding protein by measuring PNPLA2. Three PNPLA2 protein isoforms, whose sizes were consistent with those predicted for mouse in UniProt (UniProt Consortium, 2014), were detected by Western blot (Figure 4D). All appeared to cycle, but only the 48-kD band changed significantly (Figure 4E,F), following the dynamics of the transcript with the long poly(A) tail despite no change in overall transcript abundance (Figure 4F). Hence, the dynamics of this PNPLA2 protein isoform appears to be explained by polyadenylation changes in its transcript.\n\nTo investigate how changes in rates of transcription and degradation could affect differential gene expression in torpor, we developed a mathematical model of transcript dynamics across the torpor\u2013arousal cycle. We simulated a population of 50 \u2018protected\u2019 transcripts and a bulk population of 1,400 transcripts; these numbers are proportional to the 531 tags that were either increased or stabilized across a bout of torpor (DIANA Clusters 5 and 6, Figure 2D) compared to the 14,267 tags in the full dataset. For this simulated population, the abundance of each RNA transcript was governed by a differential equation describing temperature-dependent rates of RNA synthesis and degradation (Schwanhausser et al., 2011). To model RNA transcript dynamics across the torpor\u2013arousal cycle (Figure 5\u2014figure supplement 1), we introduced a representative 12-day body temperature profile, incorporating temperature-dependence into the rates of RNA synthesis and degradation based on Q10 effects (Burka, 1969; van Breukelen and Martin, 2002), as described in detail in Supplementary file 2.\n\nIn the 50-transcript subset, we implemented either fixed or temperature-dependent alterations to degradation and synthesis rates to determine the resulting protective effects on normalized transcript abundance following 10 days of torpor. We found that a temperature-dependent mechanism that protected a subset of transcripts relative to bulk RNA degradation (Figure 5A,B) was most consistent with the increased abundances observed experimentally. For a body temperature threshold of 10\u00b0C and degradation set to 3% of its rate in the warm animal, the relative abundance of the protected transcripts increased over twofold (Figure 5C,D), best reflecting the experimental data. This effect was dose-dependent with the level of protection and was relatively insensitive to thresholds above 10\u00b0C (Figure 5E). Although temperature-independent decreases in degradation rates also led to increases in the relative abundance of protected transcripts, this mechanism required implausible compensatory changes to either steady state RNA abundance or transcription rates in the warm animal (Figure 5\u2014figure supplement 2). Due to the differential Q10 effects on transcription and degradation, increasing transcription rate did not produce relative abundance increases (Figure 5\u2014figure supplement 3). Thus, in agreement with RT-qPCR data, mathematical modeling supports enhanced stabilization of a subset of transcripts via a temperature-dependent protective mechanism; this, rather than increased transcription, leads to the observed increase in their relative abundances at the low body temperature of torpor.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04517/elife-04517-fig5-v1.jpg)\n\n**Figure 5.:** A temperature-dependent protective mechanism against degradation is implemented for protected transcripts: for body temperature below 10\u00b0C, degradation is set to 3% of its rate in the warm animal. Transcription rates for both population and degradation rates for bulk transcripts are adjusted for Q10 effects. Low body temperature during torpor causes the raw abundance of both (A) protected and (B) bulk transcripts to decrease. When abundances are normalized across the population, (C) protected transcripts appear to increase approximately twofold while the majority of (D) bulk transcripts still appear to degrade. (E) Systematically varying the temperature threshold and the percentage of the warm degradation rate associated with the protective mechanism reveals a dose-dependent relationship in which higher temperature thresholds and lower percentages are associated with larger fold increases over baseline in the protected subset.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04517/elife-04517-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Body temperature (Tb) over a 12 day torpor\u2013arousal cycle drives transcript dynamics for 1,400 simulated transcripts. (B) The distributions of transcription and degradation rates result in an overall degradation of transcript abundance in all transcripts. (C) When transcript abundance is normalized, differences in rates cause some transcripts to appear to increase under baseline conditions. (D) Representative transcription and degradation rates are adjusted for Q10 effects as Tb varies. (E) Differential Q10 effects cause the ratio of transcription rate (vsr) to degradation rate (kdr) to vary with Tb and favor degradation at low Tb. This ratio specifies the temperature-dependent steady state abundance for each transcript.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04517/elife-04517-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** When lower rates of degradation were implemented for the subset of protected transcripts, the relative abundances of this subset were increased over the torpor\u2013arousal cycle compared to baseline levels. This increase is illustrated by representative transcript time traces for raw and normalized abundance of 50 protected transcripts (A, B; G, H) and 1,400 bulk transcripts (D, E; J, K) where log mean mu for the distribution of half-lives is 5.5 for the protected transcripts compared to 2.5 for the bulk transcripts. This increase was more pronounced when the lower degradation rate was compensated by a lower transcription rate (A\u2013F) compared to compensations in steady state abundance (G\u2013L). To quantify the dependence on degradation rate, we varied the log mean mu for the distribution of half-lives from 3.5 hr to 7.5 hr (baseline mu value for bulk population was 2.5 hr). This corresponded to a change in average degradation rate from 3.63e-04 mRNAs/min to 6.69e-06 mRNAs/min. For lower degradation rates compensated by lower transcription rates, fold increase over baseline for protected transcripts showed a saturating dose dependent relationship with mu (C). This mechanism had a minimal effect on bulk transcripts (F). For lower degradation rates compensated by high steady state, fold increase over baseline for protected transcripts showed an inverted U-dependence on mu (I): although this mechanism could produce large increases in the subset of protected transcripts, this effect was attenuated as small degradation rates caused large steady state abundances since degradation, but not transcription, is proportional to steady state values. The fold change in bulk transcripts decreased dose-dependently for this mechanism (L). For mechanism 2, the differential Q10 effect enhanced the effect of the decreased degradation rate at low body temperature.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04517/elife-04517-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** When higher rates of transcription were implemented for the subset of protected transcripts, the relative abundances of this subset were decreased over the torpor\u2013arousal cycle compared to baseline levels. This decrease is illustrated by representative transcript time traces for raw and normalized abundance of 50 protected transcripts (A, B; G, H) and 1,400 bulk transcripts (D, E; J, K) where log mean mu for the distribution of transcription rates is 1.33 for the protected transcripts compared to 0.033 for the bulk transcripts. The decrease in relative abundance was more pronounced when the increased transcription rate was compensated by an increased degradation rate (A\u2013F) compared to compensations in steady state abundance (G\u2013L). To quantify the dependence on transcription rate, we varied the log mean mu for the distribution of transcription rates from 0.33 mRNAs/min to 3.33 mRNAs/min (baseline mu value for bulk population was 0.033 mRNAs/min). This corresponded to a change in average transcription rate from 1.3967 mRNAs/min to 27.93 mRNAs/min. For increased transcription rates compensated by increased degradation rates, fold change over baseline for protected transcripts showed a saturating dose dependent relationship with mu (C). Increased transcription rates compensated by steady state had a minimal effect on relative abundance of protected transcripts across mu values (I). For both compensation mechanisms, increased transcription rates had a minimal effect on the abundance of bulk transcripts (F and L). For Mechanism 1, the differential Q10 effect prevented temperature-independent increases in transcription rates from increasing the relative abundance of protected transcripts.\n\nFinally, to address the possible mechanism underlying protection of selected transcripts from degradation, we examined transcript 3\u2032 untranslated region (UTR) sequences for shared motifs (Figure 6A); because ground squirrel 3\u2032 UTRs are largely unannotated, we defined 3\u2032 UTRs as the 500 nt region immediately downstream of the stop codon. This choice was validated by taking a random sampling of 3\u2032 UTR sequences in all clusters, which returned enrichment for a motif resembling the polyadenylation signal (Colgan and Manley, 1997) when compared to a scrambled background set (Figure 6B; [Bailey et al., 2009]). To identify motifs unique to the protected RNA subset, the significantly changed transcripts were divided into two groups for comparison (Figure 6A): (1) the positive set of transcripts that appeared to be stabilized (e.g., Figure 2D, DIANA Cluster 6) or increased in torpor (e.g., Figure 2D, DIANA Clusters 4\u20135); and (2) the negative set of transcripts that appeared to decrease in torpor (e.g., Figure 2D, DIANA Clusters 1\u20133). When the positive set was compared to the negative set, EXTREME (Quang and Xie, 2014) identified two significantly enriched C-rich motifs (Motif 1 and 2, Figure 6C,D). Significantly, DIANA Cluster 5, comprised of the transcripts that most clearly increased in relative abundance from early to late in torpor, contained the greatest percentage of mRNAs with the two motifs (Motif 1: 59.1%; Motif 2: 66.7% of transcripts, Figure 6C,D). DIANA Cluster 6, comprised of transcripts that remained elevated and stable across a torpor bout, contained a higher proportion of transcripts with Motif 2 (50.8%, Figure 6D) relative to the other DIANA clusters (8.5\u201339.8%, Figure 6D) and the control, non-significant transcripts (21.1%, NS in Figure 6D). Additionally, the other winter-increased DIANA Clusters, 3 and 4, were relatively enriched for these motifs as compared to the spring-increased DIANA Clusters 1 and 2 (38.4\u201343% vs 8.5\u201323.3%, Figure 6C,D), suggesting that these motifs play a broader role in enhanced transcript stability and/or translation during winter heterothermy. Although the transcripts in DIANA Cluster 4 appeared elevated in early torpor (Figure 2D), their motif enrichment was similar to that of Cluster 3. In contrast to those in Clusters 5 and 6, these transcripts also appeared to largely degrade by late torpor (compare ET to LT, Figure 2D); hence their reduced motif enrichment is consistent with reduced transcript stability across a bout of torpor.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04517/elife-04517-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic shows methodology for identifying motifs enriched in the 3\u2032 UTR regions (500-nt) of transcripts increased or stabilized in torpor (positive set; transcripts in DIANA Clusters 4\u20136) compared to transcripts decreased in torpor (negative set; transcripts in DIANA Clusters 1\u20133). The table below lists the number of unique transcripts within each DIANA Cluster used in the analysis, the sum of those in the negative or positive set and the number of non-significantly changed transcripts (NS) used in later comparisons. (B) The motif closely resembling the AAUAAA polyadenylation signal (Colgan and Manley, 1997) identified by a random sampling of 3\u2032 UTR sequences in all clusters compared to a scrambled background set. (C) Motif 1: the most significant motif identified in the positive set of transcripts when compared to the negative set. Bar plot below shows the percentage of transcripts in each DIANA Cluster or in the non-significant group (NS) that contains Motif 1. Actual numbers of transcripts containing Motif 1 are labeled above bars (see table in A for comparison). (D) Motif 2: the second and the only other significant motif identified in the positive set of transcripts when compared to the negative set. Labeling is the same as in C. (E) The top RNA-binding protein motif matches for Motif 1 and 2 using TOMTOM (Gupta et al., 2007). These correspond to the poly(C) binding protein motifs reported by Ji et al. (2013). (F) Box plot of normalized tag counts for PCBP3 by state, triangle marks the mean.\n\nTo identify putative binding protein(s) for these enriched sequence motifs, we used TOMTOM (Gupta et al., 2007), searching against a database of RNA binding motifs (Ray et al., 2013; Ji et al., 2013). Our motifs significantly matched those reported by Ji et al. (2013) (Figure 6E), implying binding by a poly(C) binding protein. We detected expression of two poly(C) binding protein paralogs in our dataset: PCBP3 and PCBP4. While PCBP4 did not vary with hibernation physiology, PCBP3 expression increased significantly in the winter groups (q = 0.0067, Figure 6F). The enrichment of PCBP binding motifs in the subset of transcripts that increased at low body temperature, together with the increased PCBP3 abundance in winter, suggest a role for PCBP3 in protecting a subset of BAT transcripts via its binding to the 3\u2032 UTR C-rich motifs during torpor.\n\n## Discussion\n\nOur results show that enhanced stabilization and polyadenylation of a crucial group of transcripts, with evidence of ongoing bulk RNA degradation, occur during torpor and are likely tied to rapid activation of BAT. Dynamic polyadenylation has been demonstrated to control temporal and spatial regulation of translation in many systems (Wu et al., 1998; Kojima et al., 2012), including maternal Xenopus oocyte maturation (reviewed in Vasudevan et al. [2006]). Generally, poly(A) tail elongation causes translational activation, whereas shortening leads to silencing and/or RNA degradation (Weill et al., 2012). Similar to oocyte maturation, in hibernation, the transcriptional machinery is silenced during the two week period of torpor; therefore, post-transcriptional mechanisms affecting mRNA stability and translation serve in the rapid switch between a hypo- and hyper-metabolic state in BAT. For instance, PNPLA2 catalyzes the first committed step in triacylglycerol hydrolysis, resulting in diacylglycerol and free fatty acid (Zimmermann et al., 2004). Its increased translation via poly(A) tail lengthening in early arousal would ensure immediate generation of free fatty acids for thermogenesis, while poly(A) shortening during interbout arousal offers a parsimonious means to silence protein translation and lower free fatty acids as metabolic activity declines. Additionally, dynamic polyadenylation likely controls translation of the other Class IIA transcripts. Although there is currently no evidence for this type of mechanism operating in human BAT, our results suggest a potential therapeutic strategy by which translation of key proteins can be prioritized for recovery from metabolic repression, and more specifically, for rapid activation of thermogenesis in BAT.\n\nA role for post-transcriptional regulation in hibernation was posited previously, based on poor correlations between mRNA and protein levels (Shao et al., 2010). In this study, we provide evidence for stabilization of a specific, functionally relevant subset of mRNAs during torpor. Moreover, our findings are consistent with reports of mRNA degradation during torpor (Epperson and Martin, 2002) and with global maintenance of poly(A) tails and their increased length (Knight et al., 2000). These results also provide further explanation to histological observations, as RNP granules containing both ncRNAs and mRNAs are formed during torpor in BAT nucleoli (Malatesta et al., 2008; Malatesta et al., 2011). The Class II ncRNAs identified in our study are located in nucleoli, suggesting that sequestration into these RNP granules protects a subset of transcripts from the degradation affecting bulk BAT RNA, which is also consistent with the results of our mathematical modeling.\n\nOur results propose that a mechanism underlying enhanced stabilization of a subset of RNAs involves their binding by one of the poly(C) binding proteins (PCBPs), as we detected their corresponding C-rich motifs in the 3\u2032 regions of the torpor-stabilized mRNAs. Intriguingly, PCBPs are involved in many aspects of post-transcriptional control that are consistent with our observations, including enhanced stability of long-lived mRNAs (Makeyev and Liebhaber, 2002). Further roles include 3\u2032 end-processing and alternative polyadenylation (Ji et al., 2011; Ji et al., 2013), and the addition, maintenance (Wang et al., 1999), and elongation of poly(A) tails (Vishnu et al., 2011). Finally, these proteins are involved in both translational silencing and enhancement (Makeyev and Liebhaber, 2002). Although these roles are established for the predominantly studied PCBP1 and PCBP2, these paralogs were not detected in our dataset. Rather, we detected increased expression of PCBP3 during winter heterothermy, a pattern that would be expected for a role involving enhanced mRNA stabilization and polyadenylation during torpor. Furthermore, PCBP3's pattern runs in contrast to most of the other RNA binding proteins detected in this dataset, which, if changed, were largely decreased during winter heterothermy (see Table 1, functional annotations for DIANA Clusters 1 and 2).\n\nIn addition to a PCBP, other 3\u2032 UTR binding proteins may be involved in enhancing mRNA stability during torpor. The poly(A) binding protein PABP1 and the TIA-1/R RNA binding proteins were recently shown to localize to discrete sub-nuclear foci during torpor in the livers of 13-lined ground squirrels (Tessier et al., 2014). PABP1 specifically binds to the poly(A) tails of transcripts, influencing their length as well as overall transcript translation and stability (Burgess and Gray, 2010). Significantly, the PCBPs 1 and 2 functionally interact with PABP1 in order to prevent deadenylation and to maintain mRNA stability (Wang et al., 1999). While further research is needed to determine whether the protection identified here extends to other tissues during torpor and to thoroughly examine the role of PCBP3 or its homologs in this protection, our results of enhanced stabilization and polyadenylation for a subset of crucial transcripts suggest a mechanistic link to PABP1 observations in other organs (Knight et al., 2000; Tessier et al., 2014). Although there are reports of elevated RBM3, a cold-induced RNA binding protein, in several organs including BAT from ground squirrels and bears during hibernation (Williams et al., 2005; Yan et al., 2008; Fedorov et al., 2011), we found no evidence for enrichment of RBM3 recognition motifs (Liu et al., 2013; Ray et al., 2013) in our subset of stabilized transcripts.\n\nMore broadly, our study highlights the importance of how transcriptome data is interpreted. While it is generally assumed that changes in steady-state mRNA levels stem from changes in the rate of transcription, varying the rate of degradation also changes steady-state levels; this phenomenon has been observed at both mRNA and protein levels in the cold acclimation of fish (Sidell, 1977; Bremer and Moyes, 2014). Recently, the balance between mRNA synthesis and degradation rates was examined on a global scale in cultured mammalian cells, demonstrating complex gene-specific effects of transcription, processing, decay, and translation (Rabani et al., 2011; Schwanhausser et al., 2011). In our study, the modeling results shown in Figure 5 demonstrate that transcript-specific variability in the rate of degradation may cause a subset of transcripts to increase in relative abundance. These transcripts are degrading, but more slowly than most of the bulk transcripts and therefore exhibit a small increase in relative abundance across the torpor bout. Thus, many of the smaller fold changes observed in gene expression datasets from hibernators (Williams et al., 2005; Yan et al., 2008; Hampton et al., 2013; Schwartz et al., 2013) likely reflect intrinsic differences in the stability of specific mRNAs rather than specific mechanisms to regulate their transcription or decay. However, for changes greater than approximately twofold in a substantial number of transcripts, here \u223c3.5% of the total, a specific regulatory mechanism appears to be required. Furthermore, particularly large fold changes, as observed here with RPPH1, likely reflect the addition or lengthening of poly(A) tails.\n\nOur data suggest a model (Figure 7) of RNA dynamics in hibernator BAT wherein key RNAs for BAT function are selectively stabilized during torpor while bulk transcripts decline through degradation in the absence of new transcription. Stabilization likely occurs by a temperature-dependent protective mechanism that is in place before body temperature reaches 5\u00b0C, such as PCPB3 binding to the 3\u2032 UTRs of protected transcripts, which then leads to their relative increase as torpor progresses. At the end of torpor and onset of arousal, the stabilized mRNA subset with the longest poly(A) tails is translated immediately as BAT temperature becomes permissive. As BAT temperature rises, further polyadenylation of the remaining stabilized RNAs facilitates their translation, transcription resumes (Osborne et al., 2004), and, during interbout arousal, transcripts that were previously degraded during torpor are replenished to their baseline levels. This dynamic cycle of transcription, degradation, stabilization, and polyadenylation in BAT leads to translation of the correct transcripts at the correct time with minimal energy expenditure. Specifically: (1) energy intensive translation during early arousal is directed to proteins needed for BAT activation; (2) the cell is not dependent on de novo transcription at the onset of the short bursts of metabolic activity, which could delay thermogenesis and induce stress; (3) inhibition of translation via shortening of poly(A) tails while body temperature is high or begins to decline conserves energy compared to mRNA degradation and subsequent re-synthesis. Thus, given a general suppression of transcription by low body temperature during two-week torpor periods, stabilization and dynamic polyadenylation provide an alternative mechanism to prioritize transcripts for immediate translation when BAT metabolic activity rapidly resumes.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04517/elife-04517-fig7-v1.jpg)\n\n**Figure 7.:** Physiological stages of the torpor\u2013arousal cycle are listed inside of the arrows and underneath representative animals. Key RNA changes are noted. See text for detailed explanation.\n\n## Materials and methods\n\n### Animal and tissue collection\n\n13-lined ground squirrels were procured and housed as described previously (Hindle and Martin, 2014). All animals except those in the summer active group (SA; n = 5; Figure 1B) were surgically implanted in late August or early September with both an intra-peritoneal datalogger (iButton, Embedded Data Systems) and a radiotelemeter (VM-FH disks, Mini Mitter, Sunriver, OR) for remote body temperature monitoring until tissue collection. All animal protocols were approved by the University of Colorado Institutional Animal Care and Use Committee.\n\nBAT samples were collected from the axillary pads in animals representing eight different seasonal and physiological groups. All groups with their approximate body temperature and time of year are depicted in Figure 1B. Five groups represent animals in the winter hibernating portion of the year, including: early torpor (ET; Tb = 4\u00b0C for 5\u201310% of previous torpor bout; n = 4) and late torpor (LT; Tb = 4\u00b0C for 80\u201395% of prior torpor bout, n = 4), early arousal (EAr; Tb = 5\u201312\u00b0C, n = 5), interbout-arousal (IBA; Tb = 37\u00b0C for 2\u20133 hr after Tb stabilization, n = 4), and entrance into torpor (Ent; Tb = 23\u201327\u00b0C, n = 5). Three groups consisted of animals in the non-hibernating portion of the year: summer active (SA; n = 5), collected in late July or early August, and two spring groups: (1) spring cold (SpC; n = 5) animals had spontaneously aroused from hibernation terminally, exhibiting no torpor for 10\u201320 days despite remaining in constant darkness at 4\u00b0C; and (2) a spring warm group (SpW; n = 6), at least 7 days after ambient temperature was raised first to 9\u00b0C for 5 days and then to 14\u00b0C. Animals were euthanized by exsanguination under isoflurane anesthesia, perfused with ice cold isotonic saline, and decapitated before dissection. Upon collection, BAT tissue was immediately snap-frozen in liquid nitrogen and then stored at \u221280\u00b0C.\n\n### EDGE-tags\n\nTotal RNA was extracted from each BAT sample using the RNeasy Lipid Mini extraction kit (Qiagen, Venlo, the Netherlands) and assessed for quantity via NanoDrop and quality via the Bioanalyzer (RIN \u2265 8; Agilent Technologies, Santa Clara, CA). EDGE-tag libraries were created according to the protocol described by Hong et al. (2011) and submitted for massively parallel high-throughput sequencing at the genomic services lab at the HudsonAlpha Institute of Biotechnology, Huntsville, AL. The EDGE-tag libraries for all groups except ET and SA were sequenced on individual lanes of an Illumina GAIIx (Illumina, San Diego, CA). The ET and SA sample libraries were prepared subsequently; these were barcoded and all 10 samples sequenced on a single lane of an Illumina HiSeq, with two technical replicates added from the first round of sequencing.\n\n#### EDGE-tag read processing and annotation\n\nThe resulting reads were filtered for the presence of the NlaIII \u201dCATG\u201d site, trimmed of adapter sequences, and first aligned to the ground squirrel mitochondrial genome (Hampton et al., 2011) using Bowtie, allowing for two mismatches. Remaining unaligned reads were next aligned to the ground squirrel nuclear genome (Ensembl fasta v.71) using Bowtie with the same parameters. Resulting uniquely aligned nuclear reads were combined into read counts by tag position in the genome (requiring a minimum of 1 bp overlap). Poorly expressed tags were removed by converting the read counts into tags per million (TPM) counts for each library and requiring that at each tag position there will be a minimum of two TPM in n-1 samples in at least one sample group. The tags were annotated to their nearest known gene using the Ensembl annotations (.gtf, v. 71) or by homology to eutherian mammals in Ensembl; we required tags to be overlapping or within 3-kb downstream of the gene annotation to be considered annotated. Because we suspected that multiple, unannotated transcript isoforms of the same gene likely exist, tags that mapped to different positions within the same gene were not combined.\n\n#### Data analysis\n\nTags were normalized among all libraries using the full quantile method from the EDAseq (Risso et al., 2011) package in Bioconductor. There was a noticeable bias between the libraries sequenced on the GAIIx and the libraries later sequenced on the HiSeq; several steps were taken to remove tags that did not normalize well and contributed to this bias: (1) tags that differed by means of threefold between the technical replicates were removed; (2) remaining tags were then normalized by the full quantile method and tested for significant changes between sequencing platforms using the negative binomial GLM test in DESeq (Anders and Huber, 2010). Those with significant differences after a Benjamini\u2013Hochberg false discovery rate correction (q < 0.05) were removed from the dataset. Finally, the remaining tags were again normalized using the full quantile method. The technical replicates were removed from all downstream analyses.\n\n#### Random Forests\n\nThe Random Forests using Variable Selection package (Diaz-Uriarte, 2007) first defined the subset of tags that produced the least amount of out-of-bag error in sample clustering. Here, 120,000 trees were created in the initial forest, 10,000 trees created in the remaining iterations, and 20% of the variables dropped at each iteration. The selected tags then classified individual samples into groups using RF supervised clustering with 60,000 trees in R (Svetnik et al., 2003).\n\n#### Differential expression\n\nSignificant changes in tag expression among groups were detected by the negative binomial GLM test in DESeq. Both the test and null model included sequencing platform to discount changes introduced by library construction. The resulting p-values were adjusted for multiple testing with a Benjamini\u2013Hochberg false discovery rate correction. Tags with a q-value of <0.05 were considered significant for differential expression among groups.\n\n#### Comparison with a previous BAT transcriptome dataset\n\nA Pearson's correlation test was used to compare our mean tag expression values to the recent RNA-seq data of Hampton et al. (2013), who identified 2,083/14,573 distinct transcripts differentially expressed among October, torpid, interbout-aroused and April 13-lined ground squirrels. Our late torpor, interbout-aroused and spring warm groups are roughly comparable to the last three of these, and 523 unique transcripts were identified as significant for differential expression in both datasets; these were tested for positive correlation (r \u2265 0.3). Additionally, 1,466/2,083 significant transcripts detected by Hampton et al. (2013) were represented by tags in our study, of which 80% (1,170 transcripts) showed changes in the same direction (for at least one tag mapping to the same transcript; r \u2265 0.3).\n\n#### DIANA clustering of tag expression patterns\n\nThe mean abundance value for each physiological group was first calculated for every significant differentially-expressed tag; these values were then mean-scaled. Pearson's correlation coefficients were calculated between every tag pair and were used to build a DIANA tree. The resulting tree was examined and cut at a height with the longest branches to produce individual DIANA clusters.\n\n#### Biological functional annotation\n\nWe assigned biological function to the tags within each DIANA cluster using the DAVID functional annotation clustering algorithm (Huang da et al., 2009). The functional annotation clusters were set at a medium or high stringency depending on which yielded the most biologically informative results. For each annotation cluster, the term with the most informative biological meaning was used. We also set the cut-off enrichment score of 1.3 for the term to be considered significantly enriched.\n\n### RT-PCR\n\n#### cDNA synthesis\n\nWe first treated total BAT RNA from n = 3 samples in the IBA, LT, EAr, and SpW groups with DNase I (Invitrogen, Carlsbad, CA). A portion of this RNA was saved for direct conversion into cDNA while the rest was fractionated based on poly(A) tail length into short (\u224825 nt) and long (>25 nt) poly(A) tail fractions using the PolyATtract mRNA Isolation System IV (Promega, Fitchburg, WI) as described (Meijer et al., 2007). The resulting RNA fractions were concentrated using the RNA Clean and Concentration Kit (Zymo Research, Irvine, CA). Random hexamer primed cDNA was synthesized using SuperScript III (Invitrogen). 3\u2032 RACE cDNA was synthesized (Peddigari et al., 2013) with the reverse primer 5\u2032-GCGAGCACAGAATTAATACGACTCACTATAGGTTTTTTTTTTTTVN-3\u2032. ePAT and TVN-PAT (TVN) cDNA (Janicke et al., 2012) from one poly(A) short and one poly(A) long RNA sample in each group was synthesized using the ePAT primer 5\u2032-GCGAGCTCCGCGGCCGCGTTTTTTTTTTTT-3\u2032; the TVN-PAT primer was the same, except that it had a (VN) added to the 3\u2032 end.\n\n#### PCR\n\nGene-specific primers were designed and purchased using the ground squirrel transcript sequences in Ensembl and the PrimerQuest design tool (IDT, Coralville, IA; www.idtdna.com). Where possible, the primer pairs encompassed an EDGE-tag of interest (Supplementary file 1A); these were chosen using several criteria, including fold change, q-value significance, correlation with RPPH1's expression pattern, and biological relevance to BAT function. Random hexamer and 3\u2032 RACE primed cDNA were amplified using FastStart Taq (Roche, Basel, Switzerland) with either the specific primer set or the 3\u2032 RACE universal reverse primer (3\u2032 RACE cDNA; 5\u2032-GCGAGCACAGAATTAATACGACT-3\u2032). The resulting amplicons were separated in 2% agarose 1\u00d7 TAE gels and visualized with Sybr-safe DNA gel stain (Invitrogen); the gel bands were imaged with a Typhoon scanner (GE Healthcare, Pittsburg, PA) and analyzed using ImageQuant TL software (GE Healthcare).\n\nIn order to confirm fractionation of RNA based upon poly(A) tail length, one TVN and all ePAT cDNA samples were amplified with the creatine kinase brain (CKB) forward primer (Supplementary file 1A) and the ePAT universal reverse primer 5\u2032-AGCTCCGCGGCCGCG-3\u2032; the resulting amplicons were visualized and analyzed as described above. The ePAT band sizes were subtracted from the TVN band size to estimate the poly(A) tail length of each sample (Figure 4\u2014figure supplement 1).\n\n#### PCR amplicon cloning and sequencing\n\nThe PCR amplified bands were cut from gels and DNA purified using a mini-elute gel extraction kit (Qiagen). Between 1\u20134 \u03bcl of eluted PCR product were inserted into pCR4-TOPO-TA or pCR2.1-TOPO-TA (Invitrogen) and transformed into TOP10 Chemically Competent Escherichia coli cells (Invitrogen). Plasmids containing an insert of the correct size were sequenced using M13 forward or reverse primers. Sequences were aligned to the Ictidomys tridecemlineatus genome using BLASTN or BLAT in Ensembl.\n\n#### Quantitative PCR\n\nRT-qPCR was performed using a StepOnePlus instrument (Applied Biosystems, Foster City, CA) with FastStart Universal SYBR Green Master (ROX; Roche). All biological samples were measured in triplicate using a standard curve specific for each transcript/primer set. Outlier measurements were removed and transcript abundance values were calculated for all biological samples using the mean of the technical replicates for each sample. To correct for sample loading inaccuracies using a method independent of normalization to a housekeeping gene (which assumes constant expression of that gene), we instead created a custom normalization factor for each biological sample based upon the sample's overall tendency to be higher or lower for transcript expression within its own respective sample group (e.g., within EAr or within LT). We first calculated each transcript's fold change for a given sample relative to the median transcript abundance measurement within its respective sample group. We then created a normalization factor for each biological sample by calculating the mean of that sample's within-group transcript fold change across all transcripts. Each of the individual transcript abundance measurements were next divided by their respective sample's normalization factor. After normalization, transcripts were tested for significant expression changes among sample groups via one-way ANOVA (\u03b1 = 0.05) and for correlation with their corresponding EDGE-tag using a Spearman's rank correlation test.\n\n#### Western blot\n\nProtein homogenates were prepared from BAT axillary tissue as described (Hindle and Martin, 2014) from n = 3 samples for each IBA, LT, EAr, and SpW groups. Western blots were used to measure PNPLA2 (1:1000, rabbit pAb #2138, Cell Signaling Technology, Danvers, MA) and \u03b2-tubulin (1:1000, goat pAb #ab21-57, Abcam, Cambridge, MA), both detected using IRdye-conjugated secondary antibodies (1:20,000 IRDye 800CW anti-rabbit and 1:10,000 IRDye 680LT anti-goat; Li-Cor, Lincoln, NE). Proteins were imaged (Odyssey near-infrared imaging system, Li-Cor) and analyzed with ImageQuant TL software (GE Healthcare). To correct for inconsistencies in protein loading, each PNPLA2 band was normalized to the \u03b2-tubulin band within the same lane. Changes in PNPLA2 abundance among the sample groups were assessed by a one-way ANOVA (\u03b1 = 0.05).\n\n#### Mathematical modeling of transcript dynamics\n\nTo investigate RNA transcript dynamics across a torpor\u2013arousal cycle, we developed a differential equations-based mathematical model simulating the abundance of 1,400 bulk and 50 protected transcripts. This ratio of bulk Class I transcripts to protected Class II transcripts reflects the ratio observed in the data (14,267 bulk; 531 protected in DIANA Clusters 5 and 6, Figure 2D). All modeling and model analysis were performed in MATLAB (MathWorks, Natick, MA). The mathematical model is described in detail in Supplementary file 2.\n\n### Motif discovery and enrichment\n\nWe examined the transcripts that appeared to increase in torpor for shared motif enrichment in their 3\u2032 UTRs. Due to uncertainty in 3\u2032 UTR structure and length, we included only transcripts that contained significantly differentially expressed (D.E.) tags <1 kb 3\u2032 to their nearest protein coding feature. First, the transcripts were divided by whether they fell into the \u2018torpor-increased\u2019 DIANA clusters 4\u20136 or \u2018torpor-decreased\u2019 DIANA clusters 1\u20133. Each transcript was counted only once; in cases where multiple tags mapped to the same transcript, the most 3\u2032 D.E. tag was used for assignment of the transcript to a particular cluster. Annotation of the 3\u2032 UTRs in the ground-squirrel genome is currently sparse and likely imprecise; thus, for each gene, we conservatively defined the \u20183\u2032 UTR\u2019 to be the 500-nt region immediately 3\u2032 to the stop codon. To identify enriched motifs, we used the motif discovery algorithm EXTREME (Quang and Xie, 2014) with the default settings, except allowing 0 gaps, and with the 500-nt \u20183\u2032 UTR\u2019 sequences from \u2018torpor-increased\u2019 transcripts input as the positive set and the 500-nt \u20183\u2032 UTR\u2019 sequences from the \u2018torpor-decreased\u2019 transcripts input as the negative set. We considered resulting motifs with E values <1 as significantly enriched in the positive set. The enriched motifs were used as input in the MAST tool (Bailey and Gribskov, 1998) of MEME Suite (Bailey et al., 2009), which counted the number of transcripts containing the motif (E-value <10) within each DIANA cluster. As a control, we also counted the number of motif occurrences in the 500-nt \u20183\u2032UTRs\u2019 of 484 non-significant D.E. transcripts (q > 0.97; 500 transcripts were originally chosen but 16 lacked 3\u2032 sequence data, hence 484 transcripts). Finally, to detect motifs enriched in all clusters, 3\u2032 UTR sequences from 20 randomly chosen transcripts in each cluster (120 total) were compared against a scrambled background set in MEME (Bailey and Elkan, 1994), with the settings set at a maximum width of 8-nt and a search of the given strand only.\n\nTo identify the putative RNA binding proteins that might recognize these motifs, the significantly enriched motifs were uploaded into the TOMTOM motif comparison tool (Gupta et al., 2007) of the MEME Suite. The database against which these motifs were first searched consisted of the RNA binding protein motifs described by Ray et al. (2013); however, no significant matches were found. We next added the nine C-rich motifs reported and provided by Ji et al. (2013) to the RNA binding protein motif database and repeated the search for significantly enriched motifs. The significance values for motif matches were calculated via Pearson correlation coefficient in TOMTOM. All motif logos were generated in TOMTOM.\n",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "e0a09fe5-285e-45ee-947f-9103c91d0619",
+      "submission_id": "9b6fa171-58d5-4f6c-8aa2-b68c50f6f02e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Benjamin J Blencowe, University of Toronto , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04517.021](https://doi.org/10.7554/eLife.04517.021)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cEnhanced stability and polyadenylation of select mRNAs support rapid thermogenesis in the brown fat of a hibernator\u201d for consideration at eLife. Your article has been evaluated by Randy Schekman (Senior editor) and, a Reviewing editor, and 2 reviewers.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis manuscript investigates the transcriptome dynamics of hibernating ground squirrels. The authors performed RNA-Seq profiling of brown adipose tissue (BAT) in ground squirrels across different periods of the torpor-arousal cycle. Three major observations were made: (1) unsupervised clustering of the samples revealed three main groups\u2014spring, winter warm, and winter cold. Between these three groups, 1638 genes with significant differential steady-state transcript levels were detected. Gene ontology analysis identified processes associated with BAT function in the winter groups; (2) a subset of transcripts in the winter groups reached their highest abundance during early torpor, late torpor, and early arousal despite suppressed transcription rates at low body temperatures. RT-PCR analysis revealed two classes of transcripts during torpor: transcripts were either degraded and not replenished, or they were stabilized by the maintenance or acquisition of a long poly(A) tail; (3) the authors propose a mathematical model to describe the changes in transcription rates and degradation could affect differential gene expression in torpor. A temperature-dependent mechanism was identified that protected a subset of transcripts relative to bulk RNA degradation.\n\nThis study provides novel insight into the transcriptional dynamics of hibernating animals. In particular, how certain transcripts are activated/maintained despite suppressed transcription during low body temperatures is poorly understood. The findings in this study would appeal to those interested in hibernation dynamics, as well as those who study post-transcriptional regulation. While it is known that polyadenylation is important for mRNA stability, localization, and translation, the authors present evidence for the first time that this mechanism is implicated in the torpor-arousal cycle.\n\nOverall, the manuscript reads very well written with clearly reported observations and results. A significant limitation of the manuscript, as was discussed by the three reviewers, is the lack of experimental data addressing the molecular mechanisms underlying the authors' observations.\n\nMain comments:\n\n1) The authors' manuscript would be significantly strengthened if they could provide mechanistic insight into the temperature-dependence of poly(A) tail length. For example, the reviewers wonder whether BAT samples from torpor-arousal cycling animals could be used to assess differential cross-linking/binding of PABP1 and/or RBM3 to transcripts that display polyA length changes, to test the authors' proposal (based on previous observations they have cited) that these factors may be associated with differential transcript stability dynamics. This experiment could potentially be performed using CLIP-Seq, or CLIP-qRT-PCR on selected transcripts, by employing commercial antibodies that bind to conserved epitopes on these proteins (which overall are highly conserved). Related to this, have the authors examined the levels of transcripts from genes that encode factors involved in the control of polyA tail length (i.e. deadenylation or polyadenylation factors) across their RNA-Seq datasets? Such information may lead to mechanistic insight as well.\n\n2) The authors are requested to provide basic information on polyA site usage in the different samples. How many sites were detected and how does the rate of detection of polyA site usage relate to the steady-state expression of the corresponding transcripts?\n\n3) The authors should provide a more basic description (i.e. for the general reader) of how the mathematical model they developed was conceived and how well it reliably models the experimental data. In this regard, it is also not clear in the main text or Methods how levels of bulk and protected transcripts were determined.\n",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fa613dd9-78c9-4fba-a859-b574d277ad3f",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C1",
+      "claim": "During hibernation, animals cycle between torpor and arousal.",
+      "claim_type": "EXPLICIT",
+      "source": "During hibernation, animals cycle between torpor and arousal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the abstract describing the hibernation phenotype.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "5f18c57f-9975-4b1d-ba4c-92b4eb01b50f",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C2",
+      "claim": "Brown Adipose Tissue (BAT) drives periodic arousal from torpor by generating essential heat.",
+      "claim_type": "EXPLICIT",
+      "source": "Each cycle, Brown Adipose Tissue (BAT) drives periodic arousal from torpor by generating essential heat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established knowledge about BAT function during hibernation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "5fc1f025-e9ff-4797-a2cb-722ee24a7050",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C3",
+      "claim": "A cohort of transcripts increased during torpor.",
+      "claim_type": "EXPLICIT",
+      "source": "A cohort of transcripts increased during torpor, paradoxical because transcription effectively ceases at these low temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's transcriptome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "fd6de424-db52-4ac4-82c1-bc1a2374d51d",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C4",
+      "claim": "Transcription effectively ceases at low temperatures during torpor.",
+      "claim_type": "EXPLICIT",
+      "source": "A cohort of transcripts increased during torpor, paradoxical because transcription effectively ceases at these low temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about transcription during torpor.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "4ed10fa5-dac7-40a0-8793-e8e2de524498",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C5",
+      "claim": "The increase in transcript abundance during torpor occurs by enhanced stabilization associated with maintenance and/or extension of long poly(A) tails rather than by elevated transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this increase occurs not by elevated transcription but rather by enhanced stabilization associated with maintenance and/or extension of long poly(A) tails.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's experimental data and analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "0d6d8f00-b352-4316-b449-3a04baff578c",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C6",
+      "claim": "Mathematical modeling supports a temperature-sensitive mechanism to protect a subset of transcripts from ongoing bulk degradation instead of increased transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Mathematical modeling further supports a temperature-sensitive mechanism to protect a subset of transcripts from ongoing bulk degradation instead of increased transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the mathematical modeling component of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "64fad92e-ae51-43fb-8b0a-0ffb136f9038",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C7",
+      "claim": "The subset of stabilized transcripts was enriched in a C-rich motif.",
+      "claim_type": "EXPLICIT",
+      "source": "This subset was enriched in a C-rich motif and genes required for BAT activation, suggesting a model and mechanism to prioritize translation of key proteins for thermogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the motif discovery analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "21622163-bc1b-468a-8dd6-5156dcb7a150",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C8",
+      "claim": "The subset of stabilized transcripts was enriched in genes required for BAT activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This subset was enriched in a C-rich motif and genes required for BAT activation, suggesting a model and mechanism to prioritize translation of key proteins for thermogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the functional annotation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "fa732783-aeb4-446c-8108-85c1b9864cdb",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C9",
+      "claim": "Torpor in ground squirrels involves active suppression of physiological processes to 2\u20135% of basal rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Torpor in ground squirrels involves active suppression of physiological processes to 2\u20135% of basal rates, which allows body temperature to lower to just above ambient, even as ambient temperatures fall to near freezing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about torpor physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "adefc56b-0fa4-421d-bf50-24dc0f770977",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C10",
+      "claim": "During torpor, body temperature lowers to just above ambient temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Torpor in ground squirrels involves active suppression of physiological processes to 2\u20135% of basal rates, which allows body temperature to lower to just above ambient, even as ambient temperatures fall to near freezing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about torpor physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "cccb9c1f-6a69-416f-ba3b-cbf7bea59911",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C11",
+      "claim": "Torpor lasts for 1\u20133 weeks until it is punctuated by a spontaneous, rapid re-warming to 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "This depressed state is not continuous throughout winter, however, instead it lasts for 1\u20133 weeks until it is punctuated by a spontaneous, rapid re-warming to 37\u00b0C; physiological rates during re-warming match or even exceed basal rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the torpor-arousal cycle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "8fc18736-cea8-4fee-b50f-a70a0822801e",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C12",
+      "claim": "Physiological rates during re-warming match or even exceed basal rates.",
+      "claim_type": "EXPLICIT",
+      "source": "This depressed state is not continuous throughout winter, however, instead it lasts for 1\u20133 weeks until it is punctuated by a spontaneous, rapid re-warming to 37\u00b0C; physiological rates during re-warming match or even exceed basal rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about arousal physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "c24e0529-6a63-4bff-969b-12e6f521598e",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C13",
+      "claim": "The interbout arousal period is sustained for 12\u201324 hr before torpor resumes.",
+      "claim_type": "EXPLICIT",
+      "source": "The interbout arousal period is then sustained for 12\u201324 hr before torpor resumes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the torpor-arousal cycle.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "6ad052a6-40ab-456e-b687-52adaf6fa3f8",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C14",
+      "claim": "Hibernation persists for 5\u20138 months before emergence in spring.",
+      "claim_type": "EXPLICIT",
+      "source": "Hibernation persists for 5\u20138 months before emergence in spring and maintenance of more typical mammalian homeostatic physiology throughout the summer period of growth and reproduction (Figure 1, see Carey et al., 2003; for review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "c50eeeee-d469-4dd6-9431-b6d64c1f1f26",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C15",
+      "claim": "Transcription and translation effectively cease at low body temperature during hibernation.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription and translation effectively cease at low body temperature during hibernation (van Breukelen and Martin, 2001; van Breukelen and Martin, 2002), yet organs maintain integrity and in some cases are quickly reactivated after 2 weeks of near inactivity in torpor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "5bd46b5a-a4ea-49ca-840d-70b18fb29089",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C16",
+      "claim": "Organs maintain integrity and in some cases are quickly reactivated after 2 weeks of near inactivity in torpor.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription and translation effectively cease at low body temperature during hibernation (van Breukelen and Martin, 2001; van Breukelen and Martin, 2002), yet organs maintain integrity and in some cases are quickly reactivated after 2 weeks of near inactivity in torpor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about organ function during hibernation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "5998d0d6-1caf-461d-960d-b7d422947b17",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C17",
+      "claim": "Early re-warming depends exclusively on non-shivering thermogenesis in BAT.",
+      "claim_type": "EXPLICIT",
+      "source": "The need for immediate intense metabolic activation at low temperature is most pronounced in brown adipose tissue (BAT); early re-warming depends exclusively on non-shivering thermogenesis in this organ (Cannon and Nedergaard, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "ebf2a890-6c1b-4f08-83e7-a2245627e6a1",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C18",
+      "claim": "Low body temperature (Q10 effects) will slow rates of RNA degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Just as with transcription, low body temperature (i.e., Q10 effects) will slow rates of RNA degradation (Burka, 1969; Bremer and Moyes, 2014), but it is unclear how these two opposing activities will converge after two weeks to determine the steady-state abundance of specific RNAs at the end of a torpor bout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "c2cad63c-423d-4581-bd0d-f0b907e3e5a1",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C19",
+      "claim": "90.1 \u00b1 2.6% of the sequence reads aligned to ground squirrel genomic or mitochondrial DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "For each of the libraries, 90.1 \u00b1 2.6% of the sequence reads aligned to ground squirrel genomic (Supplementary file 3A in Grabek et al., 2014) or mitochondrial DNA (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from the sequencing data analysis, with reference to Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "630c2a34-aed7-42e5-9d8e-b290e050343b",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C20",
+      "claim": "After normalization, filtering, and annotation, 14,798 EDGE-tags representing 8,089 unique genes remained.",
+      "claim_type": "EXPLICIT",
+      "source": "After normalization, filtering, and annotation (Figure 2B, Figure 2\u2014figure supplement 1), 14,798 EDGE-tags representing 8,089 unique genes remained (Supplementary file 3B in Grabek et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the data processing pipeline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "4ab047b1-5a48-4815-96de-11add26e9ce8",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C21",
+      "claim": "Random Forests clustering identified three main groups: 'spring', 'winter warm', and 'winter cold'.",
+      "claim_type": "EXPLICIT",
+      "source": "We first clustered the individual sample libraries by tag abundance using Random Forests (Breiman, 2001). Three main groups were evident (Figure 2C): (1)'spring', independent of ambient temperature, spring cold (SpC), and spring warm (SpW); (2) 'winter warm': interbout aroused (IBA), entrance (Ent), and summer active (SA); (3) 'winter cold': early torpor (ET), late torpor (LT), and early arousal (EAr).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the Random Forests clustering analysis, with reference to Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "e6033a41-7390-4017-ba42-6a7f133ab6ac",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C22",
+      "claim": "BAT samples harvested from winter animals at warm body temperature clustered separately from those at low body temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, BAT samples harvested from winter animals at warm body temperature clustered separately from those at low body temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "8e69209f-5090-4b9f-8d27-36c3b7721e21",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C23",
+      "claim": "The separation of warm and cold body temperature samples indicates the transcriptome is dynamic across a torpor bout.",
+      "claim_type": "EXPLICIT",
+      "source": "This separation indicates the transcriptome is dynamic across a torpor bout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the clustering results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "5ad2028b-0d45-4c0a-a6bc-a147731fd3b6",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C24",
+      "claim": "2,159 tags (14.6%) representing 1,638 unique genes showed significant differential expression among the three main groups (q < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "The 14,798 tags were next tested for significant differential expression among the three main groups; changes were detected in 2,159 tags (14.6%; q < 0.05) representing 1,638 unique genes (Supplementary file 3C in Grabek et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "40bf2008-afc7-4f17-8857-5c9f9539a40d",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C25",
+      "claim": "The differentially expressed transcripts correlated well with quantitative changes in the BAT transcriptome reported by Hampton et al. (2013), with 91% of overlapping transcripts exhibiting changes in the same direction.",
+      "claim_type": "EXPLICIT",
+      "source": "These correlated well with quantitative changes in the BAT transcriptome of this species reported previously (Hampton et al., 2013); 91% of overlapping differentially expressed transcripts exhibited changes in the same direction among comparable states (see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previously published data showing consistency.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "f84efd33-0cb7-457a-992e-ce085e8ff156",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C26",
+      "claim": "DIANA hierarchical clustering identified six expression patterns among the differentially expressed tags.",
+      "claim_type": "EXPLICIT",
+      "source": "DIANA hierarchical clustering identified six expression patterns among the differentially expressed tags (Figure 2D and Supplementary file 3C in Grabek et al., 2014)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the DIANA clustering analysis, with reference to Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "c39b0339-3ade-4e9b-83b6-2847480e25b9",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C27",
+      "claim": "Tags in Clusters 1 and 2 were generally increased in spring compared to winter.",
+      "claim_type": "EXPLICIT",
+      "source": "those in Clusters 1 and 2 were generally increased in spring compared to winter, while those in Clusters 3\u20136 were increased in winter, particularly in late torpor and early arousal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the clustering analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "dd68f64b-9dba-4d9d-ad02-7474637dc1c4",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C28",
+      "claim": "Tags in Clusters 3\u20136 were increased in winter, particularly in late torpor and early arousal.",
+      "claim_type": "EXPLICIT",
+      "source": "those in Clusters 1 and 2 were generally increased in spring compared to winter, while those in Clusters 3\u20136 were increased in winter, particularly in late torpor and early arousal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the clustering analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "d6a89334-6b97-450d-8177-c6d1c8711cec",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C29",
+      "claim": "Winter-increased tags were overwhelmingly enriched for functions related to BAT activation, such as lipid metabolism, lipid droplet formation, lipid transport, mitochondria and the TCA cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct from the spring-enriched tags, those increased in winter were overwhelmingly enriched (Huang da et al., 2009) for functions related to BAT activation, such as lipid metabolism, lipid droplet formation, lipid transport, mitochondria and the TCA cycle (Table 1 and Supplementary file 3D in Grabek et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the functional annotation analysis, with reference to Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "6dd94a24-6f5c-4caa-8795-7e087286c803",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C30",
+      "claim": "A preponderance of winter-increased tags reached their highest relative abundance during early torpor, late torpor, and/or early arousal despite near cessation of transcription at low body temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, a preponderance of winter-increased tags (i.e., transcripts) reached their highest relative abundance during early torpor, late torpor, and/or early arousal (Figure 2D, Clusters 4\u20136) despite near cessation of transcription in hibernators at low body temperature (van Breukelen and Martin, 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key observation from the data that appears paradoxical given known biology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "8c64541f-95f1-4b2b-92b0-d254285aac95",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C31",
+      "claim": "RPPH1 relative abundance increased several 100-fold by early arousal (q < 10^\u221214).",
+      "claim_type": "EXPLICIT",
+      "source": "One clue to resolve this apparent paradox was provided by RPPH1, the RNA subunit of RNaseP, whose relative abundance increased several 100-fold by early arousal (q < 10^\u221214, Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct measurement from the data analysis, with reference to Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "d0807971-768d-4d3f-a284-07bc5364b7ee",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C32",
+      "claim": "RPPH1 is transcribed by Pol III and is not typically polyadenylated.",
+      "claim_type": "EXPLICIT",
+      "source": "Because RPPH1 is transcribed by Pol III, it is not typically polyadenylated (Baer et al., 1990) and should not have been recovered in these sequencing libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "e9be6fa9-76e6-4c32-9e71-af9a80c44559",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C33",
+      "claim": "RPPH1 acquired a long poly(A) tail at low body temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, RPPH1 acquired a long poly(A) tail at low body temperature (Figure 3B,C), explaining its presence in the libraries and increase in the cold.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the RT-PCR and sequencing analysis, with reference to Figures 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "723dfbaa-334c-46cd-9941-58135e221c3d",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C34",
+      "claim": "Five Class I transcripts decreased during torpor, with poly(A) and total RNA mirroring the abundance of their EDGE tags.",
+      "claim_type": "EXPLICIT",
+      "source": "Five Class I transcripts decreased during torpor, with poly(A) and total RNA mirroring the abundance of their EDGE tags (compare IBA to LT in Figure 4A; see also Figure 4\u2014figure supplement 2A and Supplementary file 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the RT-qPCR validation experiments, with reference to Figure 4A and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "e0c901f3-63a4-4339-a2a5-82e8451788aa",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C35",
+      "claim": "Some Class I transcripts increased during early arousal when core body temperature was still low, likely because heat generated early in the arousal process has returned BAT to a temperature permissive for transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, during early arousal, when core body temperature was still low, some of these transcripts increased, likely because heat generated early in the arousal process has returned BAT to a temperature permissive for transcription (Osborne and Hashimoto, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data with an inference about the mechanism, supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "ae419b2b-8bb6-412f-82e8-2bc866613030",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C36",
+      "claim": "Class I transcripts were largely bearing long poly(A) tails, which also appeared to shorten during torpor.",
+      "claim_type": "EXPLICIT",
+      "source": "These transcripts were largely bearing long poly(A) tails, which also appeared to shorten during torpor (Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the poly(A) tail length analysis, with reference to Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "b913d5ec-3beb-4d5e-bc18-e4eeb4304d32",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C37",
+      "claim": "Most BAT transcripts slowly degrade over two weeks in torpor and are not replenished until body temperature recovers during the short euthermic period.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it appears that most BAT transcripts slowly degrade over two weeks in torpor and are not replenished until body temperature recovers during the short euthermic period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the Class I transcript dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "05fe8dfd-4e8b-4c7c-8be2-64ae3b238326",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C38",
+      "claim": "Nine Class II transcripts were stabilized during torpor.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine Class II transcripts were stabilized during torpor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the RT-qPCR validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "283bcd84-bde2-4314-87c4-38a04ec927de",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C39",
+      "claim": "For Class II transcripts, EDGE-tags appeared to increase during torpor, but this increase was not mirrored in total RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "While their EDGE-tags appeared to increase during torpor (Figure 4B,C, left), this increase was not mirrored in total RNA (Figure 4B,C, middle-left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing EDGE-tag and RT-qPCR data, with reference to Figures 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "797537ad-a1f7-4a08-bb9f-74f7a800d35a",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C40",
+      "claim": "Total RNA for five Class IIA transcripts remained stable among states.",
+      "claim_type": "EXPLICIT",
+      "source": "Total RNA for five Class IIA transcripts remained stable among states (Figure 4B, middle-left; Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the RT-qPCR analysis, with reference to Figure 4B and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "805e7be0-0058-418c-8b4d-5c5039a7edd8",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C41",
+      "claim": "Class IIA transcripts increased in the short and long poly(A) fractions during late torpor and particularly early arousal with concurrent poly(A) tail lengthening.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these transcripts increased in the short and long poly(A) fractions during late torpor and particularly early arousal (Figure 4B, right; Figure 4\u2014figure supplement 3, Supplementary file 1C) with concurrent poly(A) tail lengthening (Figure 4\u2014figure supplement 2C), correlating with their EDGE-tags (Figure 4B, left; Figure 4\u2014figure supplement 3; Supplementary file 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the poly(A) fractionation and tail length analysis, with reference to multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "429f8d07-7302-469e-b829-0b4c53995f75",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C42",
+      "claim": "Total RNA decreased in torpor and early arousal for four transcripts in Class IIB.",
+      "claim_type": "EXPLICIT",
+      "source": "Total RNA decreased in torpor and early arousal for four transcripts in Class IIB (Figure 4C, Figure 4\u2014figure supplement 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the RT-qPCR analysis, with reference to Figure 4C and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "a4900f3e-1778-430a-bb42-89de33e09c10",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C43",
+      "claim": "For Class IIB transcripts, the polyadenylated fraction remained stable while total RNA decreased, resulting in an apparent increase.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas their polyadenylated fraction remained stable (Figure 4C, middle-right; Figure 4\u2014figure supplement 4), resulting in an apparent increase (Figure 4C, right; Figure 4\u2014figure supplement 2D and 4; Supplementary file 1C) and consistent with the EDGE-tag pattern (Figure 4C, left; Figure 4\u2014figure supplement 4; Supplementary file 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing total RNA and poly(A) fractionation data, with reference to multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "d0a588c1-51c7-4988-bc5d-08a6030b4a20",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C44",
+      "claim": "Class II transcripts are stabilized throughout torpor with maintenance or acquisition of a poly(A) tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in contrast to Class I, Class II transcripts are stabilized throughout torpor with maintenance or acquisition of a poly(A) tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Class II transcript dynamics data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "c2b5c2e3-389a-4c65-99b8-2bdda06c2218",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C45",
+      "claim": "The enhanced stability of Class II transcripts relative to all other transcripts apparently leads to their relative increases at low body temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhanced stability of this subset relative to all other transcripts apparently leads to their relative increases at low body temperature (Figure 2D, DIANA Clusters 4\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the transcript dynamics data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "bcf42fe0-9b4d-4a74-80b1-8890a5a7f375",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C46",
+      "claim": "Three PNPLA2 protein isoforms were detected by Western blot, whose sizes were consistent with those predicted for mouse in UniProt.",
+      "claim_type": "EXPLICIT",
+      "source": "Three PNPLA2 protein isoforms, whose sizes were consistent with those predicted for mouse in UniProt (UniProt Consortium, 2014), were detected by Western blot (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the Western blot analysis, with reference to Figure 4D and UniProt database.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "9c4e14a4-9247-4e7d-aae3-eb7f510f39f3",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C47",
+      "claim": "All three PNPLA2 isoforms appeared to cycle, but only the 48-kD band changed significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "All appeared to cycle, but only the 48-kD band changed significantly (Figure 4E,F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the Western blot quantification, with reference to Figures 4E and 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "0af4b681-b5fe-460d-9b36-9186926acaa3",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C49",
+      "claim": "A temperature-dependent mechanism that protected a subset of transcripts relative to bulk RNA degradation was most consistent with the increased abundances observed experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a temperature-dependent mechanism that protected a subset of transcripts relative to bulk RNA degradation (Figure 5A,B) was most consistent with the increased abundances observed experimentally.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the mathematical modeling analysis, with reference to Figures 5A and 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "74692716-c322-4fc1-bbeb-0ae509c88698",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C50",
+      "claim": "For a body temperature threshold of 10\u00b0C and degradation set to 3% of its rate in the warm animal, the relative abundance of the protected transcripts increased over twofold.",
+      "claim_type": "EXPLICIT",
+      "source": "For a body temperature threshold of 10\u00b0C and degradation set to 3% of its rate in the warm animal, the relative abundance of the protected transcripts increased over twofold (Figure 5C,D), best reflecting the experimental data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the mathematical modeling analysis, with reference to Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "a17a41df-411e-41f2-b5ab-26bcc478135c",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C51",
+      "claim": "The protective effect was dose-dependent with the level of protection and was relatively insensitive to thresholds above 10\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was dose-dependent with the level of protection and was relatively insensitive to thresholds above 10\u00b0C (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the mathematical modeling analysis, with reference to Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "ae603cff-4099-417e-8ef1-c2b8b019ac78",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C52",
+      "claim": "Temperature-independent decreases in degradation rates led to increases in the relative abundance of protected transcripts, but this mechanism required implausible compensatory changes to either steady state RNA abundance or transcription rates in the warm animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Although temperature-independent decreases in degradation rates also led to increases in the relative abundance of protected transcripts, this mechanism required implausible compensatory changes to either steady state RNA abundance or transcription rates in the warm animal (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the mathematical modeling analysis, with reference to Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "2cfdf3d2-cba5-436e-875d-7b89e7951f03",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C53",
+      "claim": "Due to the differential Q10 effects on transcription and degradation, increasing transcription rate did not produce relative abundance increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the differential Q10 effects on transcription and degradation, increasing transcription rate did not produce relative abundance increases (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the mathematical modeling analysis, with reference to Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "85098996-58f6-4ff5-9f32-e7a2724e3429",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C54",
+      "claim": "Mathematical modeling supports enhanced stabilization of a subset of transcripts via a temperature-dependent protective mechanism rather than increased transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in agreement with RT-qPCR data, mathematical modeling supports enhanced stabilization of a subset of transcripts via a temperature-dependent protective mechanism; this, rather than increased transcription, leads to the observed increase in their relative abundances at the low body temperature of torpor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mathematical modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "e4d6427d-a4e5-4cca-808b-c3dd756f10f2",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C55",
+      "claim": "EXTREME identified two significantly enriched C-rich motifs (Motif 1 and 2) when the positive set was compared to the negative set.",
+      "claim_type": "EXPLICIT",
+      "source": "When the positive set was compared to the negative set, EXTREME (Quang and Xie, 2014) identified two significantly enriched C-rich motifs (Motif 1 and 2, Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the motif discovery analysis, with reference to Figures 6C and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "df0a04ba-f9dc-4d80-baa0-b87d8fabe214",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C56",
+      "claim": "DIANA Cluster 5 contained the greatest percentage of mRNAs with the two motifs (Motif 1: 59.1%; Motif 2: 66.7% of transcripts).",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, DIANA Cluster 5, comprised of the transcripts that most clearly increased in relative abundance from early to late in torpor, contained the greatest percentage of mRNAs with the two motifs (Motif 1: 59.1%; Motif 2: 66.7% of transcripts, Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the motif enrichment analysis, with reference to Figures 6C and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "85141e19-6928-4495-95ce-b9f4bd3a1982",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C57",
+      "claim": "DIANA Cluster 6 contained a higher proportion of transcripts with Motif 2 (50.8%) relative to the other DIANA clusters (8.5\u201339.8%) and the control, non-significant transcripts (21.1%).",
+      "claim_type": "EXPLICIT",
+      "source": "DIANA Cluster 6, comprised of transcripts that remained elevated and stable across a torpor bout, contained a higher proportion of transcripts with Motif 2 (50.8%, Figure 6D) relative to the other DIANA clusters (8.5\u201339.8%, Figure 6D) and the control, non-significant transcripts (21.1%, NS in Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the motif enrichment analysis, with reference to Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "5a4e9ff8-9a42-4f7a-9e36-0ff1f09861fb",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C58",
+      "claim": "The winter-increased DIANA Clusters 3 and 4 were relatively enriched for these motifs as compared to the spring-increased DIANA Clusters 1 and 2 (38.4\u201343% vs 8.5\u201323.3%).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the other winter-increased DIANA Clusters, 3 and 4, were relatively enriched for these motifs as compared to the spring-increased DIANA Clusters 1 and 2 (38.4\u201343% vs 8.5\u201323.3%, Figure 6C,D), suggesting that these motifs play a broader role in enhanced transcript stability and/or translation during winter heterothermy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the motif enrichment analysis, with reference to Figures 6C and 6D, and an inference about their role.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "55c99289-523f-44c7-b560-a04fde109cdf",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C59",
+      "claim": "The enriched motifs significantly matched those reported by Ji et al. (2013), implying binding by a poly(C) binding protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Our motifs significantly matched those reported by Ji et al. (2013) (Figure 6E), implying binding by a poly(C) binding protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the TOMTOM motif comparison analysis, with reference to Figure 6E and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "eff2c337-29ac-412e-9ddf-e26a1b2cdf2c",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C60",
+      "claim": "Two poly(C) binding protein paralogs were detected in the dataset: PCBP3 and PCBP4.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected expression of two poly(C) binding protein paralogs in our dataset: PCBP3 and PCBP4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the transcriptome data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "9c01904a-adf9-456d-a8a5-00166e5f6ab4",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C61",
+      "claim": "PCBP4 did not vary with hibernation physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "While PCBP4 did not vary with hibernation physiology, PCBP3 expression increased significantly in the winter groups (q = 0.0067, Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the differential expression analysis, with reference to Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "2d238a88-8e5a-457d-8828-7f68b49b2b86",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C62",
+      "claim": "PCBP3 expression increased significantly in the winter groups (q = 0.0067).",
+      "claim_type": "EXPLICIT",
+      "source": "While PCBP4 did not vary with hibernation physiology, PCBP3 expression increased significantly in the winter groups (q = 0.0067, Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the differential expression analysis, with reference to Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "8f8c5724-20fa-4d0f-a0a3-8cba6efaec10",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C63",
+      "claim": "The enrichment of PCBP binding motifs in the subset of transcripts that increased at low body temperature, together with the increased PCBP3 abundance in winter, suggest a role for PCBP3 in protecting a subset of BAT transcripts via its binding to the 3\u2032 UTR C-rich motifs during torpor.",
+      "claim_type": "EXPLICIT",
+      "source": "The enrichment of PCBP binding motifs in the subset of transcripts that increased at low body temperature, together with the increased PCBP3 abundance in winter, suggest a role for PCBP3 in protecting a subset of BAT transcripts via its binding to the 3\u2032 UTR C-rich motifs during torpor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the combined motif enrichment and PCBP3 expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "7973dcfe-048c-4aad-b5e7-12c8dc51b0e3",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C64",
+      "claim": "Dynamic polyadenylation has been demonstrated to control temporal and spatial regulation of translation in many systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Dynamic polyadenylation has been demonstrated to control temporal and spatial regulation of translation in many systems (Wu et al., 1998; Kojima et al., 2012), including maternal Xenopus oocyte maturation (reviewed in Vasudevan et al. [2006]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "2e57acd4-b5be-4fa1-8841-da3bf681bdcc",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C65",
+      "claim": "Generally, poly(A) tail elongation causes translational activation, whereas shortening leads to silencing and/or RNA degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, poly(A) tail elongation causes translational activation, whereas shortening leads to silencing and/or RNA degradation (Weill et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "accac4a1-39a6-43d6-9bec-10f18298dbbd",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C66",
+      "claim": "PNPLA2 catalyzes the first committed step in triacylglycerol hydrolysis, resulting in diacylglycerol and free fatty acid.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, PNPLA2 catalyzes the first committed step in triacylglycerol hydrolysis, resulting in diacylglycerol and free fatty acid (Zimmermann et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "90394519-f362-4efa-8aeb-e7c1dd4c5a79",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C67",
+      "claim": "Increased translation of PNPLA2 via poly(A) tail lengthening in early arousal would ensure immediate generation of free fatty acids for thermogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Its increased translation via poly(A) tail lengthening in early arousal would ensure immediate generation of free fatty acids for thermogenesis, while poly(A) shortening during interbout arousal offers a parsimonious means to silence protein translation and lower free fatty acids as metabolic activity declines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional significance of the observed polyadenylation dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "6ddaf7b1-e7b0-4e5f-8a29-ba3ecaa3875c",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C68",
+      "claim": "Poly(A) shortening during interbout arousal offers a parsimonious means to silence protein translation and lower free fatty acids as metabolic activity declines.",
+      "claim_type": "EXPLICIT",
+      "source": "Its increased translation via poly(A) tail lengthening in early arousal would ensure immediate generation of free fatty acids for thermogenesis, while poly(A) shortening during interbout arousal offers a parsimonious means to silence protein translation and lower free fatty acids as metabolic activity declines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional significance of the observed polyadenylation dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "c59b8a05-9718-4b5f-9346-dec913e9540f",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C69",
+      "claim": "A role for post-transcriptional regulation in hibernation was posited previously, based on poor correlations between mRNA and protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "A role for post-transcriptional regulation in hibernation was posited previously, based on poor correlations between mRNA and protein levels (Shao et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior knowledge with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "6d4128c3-ca36-4309-8f9e-734b73e612a2",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C70",
+      "claim": "The findings are consistent with reports of mRNA degradation during torpor.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our findings are consistent with reports of mRNA degradation during torpor (Epperson and Martin, 2002) and with global maintenance of poly(A) tails and their increased length (Knight et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previously published findings, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "52e0638b-078e-4e7e-a711-914eda0ee564",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C71",
+      "claim": "The findings are consistent with global maintenance of poly(A) tails and their increased length.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our findings are consistent with reports of mRNA degradation during torpor (Epperson and Martin, 2002) and with global maintenance of poly(A) tails and their increased length (Knight et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previously published findings, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "e5975d14-dad0-408b-8678-5328d912709f",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C72",
+      "claim": "RNP granules containing both ncRNAs and mRNAs are formed during torpor in BAT nucleoli.",
+      "claim_type": "EXPLICIT",
+      "source": "These results also provide further explanation to histological observations, as RNP granules containing both ncRNAs and mRNAs are formed during torpor in BAT nucleoli (Malatesta et al., 2008; Malatesta et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior knowledge with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "f43eeb0e-6085-4b6c-90d2-da0ac3ebdf38",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C73",
+      "claim": "The Class II ncRNAs identified in this study are located in nucleoli.",
+      "claim_type": "EXPLICIT",
+      "source": "The Class II ncRNAs identified in our study are located in nucleoli, suggesting that sequestration into these RNP granules protects a subset of transcripts from the degradation affecting bulk BAT RNA, which is also consistent with the results of our mathematical modeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the ncRNAs identified in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "63d1a164-b86b-4d21-9b60-bad3dcbf37dd",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C74",
+      "claim": "Sequestration into RNP granules protects a subset of transcripts from the degradation affecting bulk BAT RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The Class II ncRNAs identified in our study are located in nucleoli, suggesting that sequestration into these RNP granules protects a subset of transcripts from the degradation affecting bulk BAT RNA, which is also consistent with the results of our mathematical modeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the ncRNA localization and prior observations about RNP granules.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "9714929c-4b98-408d-8bba-ecff2609e994",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C75",
+      "claim": "PCBPs are involved in many aspects of post-transcriptional control including enhanced stability of long-lived mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, PCBPs are involved in many aspects of post-transcriptional control that are consistent with our observations, including enhanced stability of long-lived mRNAs (Makeyev and Liebhaber, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "614bde9a-924c-4818-b245-f7f4503e4718",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C76",
+      "claim": "PCBPs are involved in 3\u2032 end-processing and alternative polyadenylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Further roles include 3\u2032 end-processing and alternative polyadenylation (Ji et al., 2011; Ji et al., 2013), and the addition, maintenance (Wang et al., 1999), and elongation of poly(A) tails (Vishnu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "a43281a4-0a38-4a3d-bfd7-c26c70757c2f",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C77",
+      "claim": "PCBPs are involved in the addition, maintenance, and elongation of poly(A) tails.",
+      "claim_type": "EXPLICIT",
+      "source": "Further roles include 3\u2032 end-processing and alternative polyadenylation (Ji et al., 2011; Ji et al., 2013), and the addition, maintenance (Wang et al., 1999), and elongation of poly(A) tails (Vishnu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "01551392-5c53-4d14-a652-33df8c58f961",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C78",
+      "claim": "PCBPs are involved in both translational silencing and enhancement.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, these proteins are involved in both translational silencing and enhancement (Makeyev and Liebhaber, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "75b1fc4e-7f94-43aa-9439-580c9ebbaa2b",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C79",
+      "claim": "The increased expression of PCBP3 during winter heterothermy would be expected for a role involving enhanced mRNA stabilization and polyadenylation during torpor.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these roles are established for the predominantly studied PCBP1 and PCBP2, these paralogs were not detected in our dataset. Rather, we detected increased expression of PCBP3 during winter heterothermy, a pattern that would be expected for a role involving enhanced mRNA stabilization and polyadenylation during torpor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the PCBP3 expression pattern and known PCBP functions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "ddfcca34-6aed-485e-86a8-13daf5b6f662",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C80",
+      "claim": "PCBP3's pattern runs in contrast to most of the other RNA binding proteins detected in this dataset, which, if changed, were largely decreased during winter heterothermy.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, PCBP3's pattern runs in contrast to most of the other RNA binding proteins detected in this dataset, which, if changed, were largely decreased during winter heterothermy (see Table 1, functional annotations for DIANA Clusters 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the differential expression analysis, with reference to Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "0bb6939c-bce6-4c3a-83a9-de83721b9a51",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C81",
+      "claim": "The poly(A) binding protein PABP1 and the TIA-1/R RNA binding proteins were recently shown to localize to discrete sub-nuclear foci during torpor in the livers of 13-lined ground squirrels.",
+      "claim_type": "EXPLICIT",
+      "source": "The poly(A) binding protein PABP1 and the TIA-1/R RNA binding proteins were recently shown to localize to discrete sub-nuclear foci during torpor in the livers of 13-lined ground squirrels (Tessier et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior knowledge with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "6080ee86-dcd6-405a-a7e4-546155e6fc14",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C82",
+      "claim": "PABP1 specifically binds to the poly(A) tails of transcripts, influencing their length as well as overall transcript translation and stability.",
+      "claim_type": "EXPLICIT",
+      "source": "PABP1 specifically binds to the poly(A) tails of transcripts, influencing their length as well as overall transcript translation and stability (Burgess and Gray, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "7de7a183-b57f-445f-bfd2-0aaae380783b",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C83",
+      "claim": "The PCBPs 1 and 2 functionally interact with PABP1 in order to prevent deadenylation and to maintain mRNA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, the PCBPs 1 and 2 functionally interact with PABP1 in order to prevent deadenylation and to maintain mRNA stability (Wang et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "9521a64f-788d-4a20-81d7-f5d88b74a130",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C84",
+      "claim": "The results of enhanced stabilization and polyadenylation for a subset of crucial transcripts suggest a mechanistic link to PABP1 observations in other organs.",
+      "claim_type": "EXPLICIT",
+      "source": "While further research is needed to determine whether the protection identified here extends to other tissues during torpor and to thoroughly examine the role of PCBP3 or its homologs in this protection, our results of enhanced stabilization and polyadenylation for a subset of crucial transcripts suggest a mechanistic link to PABP1 observations in other organs (Knight et al., 2000; Tessier et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the current findings and prior observations, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "8fe14590-c15c-48ac-81e3-ae863fc9f367",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C85",
+      "claim": "There are reports of elevated RBM3, a cold-induced RNA binding protein, in several organs including BAT from ground squirrels and bears during hibernation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are reports of elevated RBM3, a cold-induced RNA binding protein, in several organs including BAT from ground squirrels and bears during hibernation (Williams et al., 2005; Yan et al., 2008; Fedorov et al., 2011), we found no evidence for enrichment of RBM3 recognition motifs (Liu et al., 2013; Ray et al., 2013) in our subset of stabilized transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior knowledge with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "679760a0-9496-44ab-8fd0-2f3f0edbad68",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C86",
+      "claim": "No evidence was found for enrichment of RBM3 recognition motifs in the subset of stabilized transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are reports of elevated RBM3, a cold-induced RNA binding protein, in several organs including BAT from ground squirrels and bears during hibernation (Williams et al., 2005; Yan et al., 2008; Fedorov et al., 2011), we found no evidence for enrichment of RBM3 recognition motifs (Liu et al., 2013; Ray et al., 2013) in our subset of stabilized transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the motif enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "cdb27c28-47a3-4990-a6ec-06671ac80b6f",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C87",
+      "claim": "Varying the rate of degradation changes steady-state mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is generally assumed that changes in steady-state mRNA levels stem from changes in the rate of transcription, varying the rate of degradation also changes steady-state levels; this phenomenon has been observed at both mRNA and protein levels in the cold acclimation of fish (Sidell, 1977; Bremer and Moyes, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "241cefe7-8a50-424c-8139-20dbc4515c58",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C88",
+      "claim": "The balance between mRNA synthesis and degradation rates was examined on a global scale in cultured mammalian cells, demonstrating complex gene-specific effects of transcription, processing, decay, and translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the balance between mRNA synthesis and degradation rates was examined on a global scale in cultured mammalian cells, demonstrating complex gene-specific effects of transcription, processing, decay, and translation (Rabani et al., 2011; Schwanhausser et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior knowledge with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "3661a9e2-69f8-4228-908e-40f73ee25543",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C89",
+      "claim": "Transcript-specific variability in the rate of degradation may cause a subset of transcripts to increase in relative abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, the modeling results shown in Figure 5 demonstrate that transcript-specific variability in the rate of degradation may cause a subset of transcripts to increase in relative abundance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the mathematical modeling analysis, with reference to Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "20ab3c0a-32e9-4d24-9a8b-78f21a8508e8",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C90",
+      "claim": "Many of the smaller fold changes observed in gene expression datasets from hibernators likely reflect intrinsic differences in the stability of specific mRNAs rather than specific mechanisms to regulate their transcription or decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, many of the smaller fold changes observed in gene expression datasets from hibernators (Williams et al., 2005; Yan et al., 2008; Hampton et al., 2013; Schwartz et al., 2013) likely reflect intrinsic differences in the stability of specific mRNAs rather than specific mechanisms to regulate their transcription or decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the modeling results and applied to prior studies, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "63e5f94f-6fea-451a-a8a3-76ebcd7dfb14",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C91",
+      "claim": "For changes greater than approximately twofold in a substantial number of transcripts (\u223c3.5% of the total), a specific regulatory mechanism appears to be required.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for changes greater than approximately twofold in a substantial number of transcripts, here \u223c3.5% of the total, a specific regulatory mechanism appears to be required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the modeling results and data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "91ba0086-8982-4c1e-9668-ef846bf67868",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C92",
+      "claim": "Particularly large fold changes, as observed with RPPH1, likely reflect the addition or lengthening of poly(A) tails.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, particularly large fold changes, as observed here with RPPH1, likely reflect the addition or lengthening of poly(A) tails.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the RPPH1 data and polyadenylation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "12c7d3d4-cb3a-494e-8e02-e20b7d9f7740",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C93",
+      "claim": "Key RNAs for BAT function are selectively stabilized during torpor while bulk transcripts decline through degradation in the absence of new transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest a model (Figure 7) of RNA dynamics in hibernator BAT wherein key RNAs for BAT function are selectively stabilized during torpor while bulk transcripts decline through degradation in the absence of new transcription.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the study's findings, with reference to Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "417ad1a9-facd-4522-a7d1-43979d5a0a9b",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C94",
+      "claim": "Stabilization likely occurs by a temperature-dependent protective mechanism that is in place before body temperature reaches 5\u00b0C, such as PCPB3 binding to the 3\u2032 UTRs of protected transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Stabilization likely occurs by a temperature-dependent protective mechanism that is in place before body temperature reaches 5\u00b0C, such as PCPB3 binding to the 3\u2032 UTRs of protected transcripts, which then leads to their relative increase as torpor progresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "bb883e63-577a-4c42-8eb0-92177a46d28e",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C95",
+      "claim": "At the end of torpor and onset of arousal, the stabilized mRNA subset with the longest poly(A) tails is translated immediately as BAT temperature becomes permissive.",
+      "claim_type": "EXPLICIT",
+      "source": "At the end of torpor and onset of arousal, the stabilized mRNA subset with the longest poly(A) tails is translated immediately as BAT temperature becomes permissive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "bbe6e7ea-73d7-4e25-8c6f-9facb83444f1",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C96",
+      "claim": "As BAT temperature rises, further polyadenylation of the remaining stabilized RNAs facilitates their translation.",
+      "claim_type": "EXPLICIT",
+      "source": "As BAT temperature rises, further polyadenylation of the remaining stabilized RNAs facilitates their translation, transcription resumes (Osborne et al., 2004), and, during interbout arousal, transcripts that were previously degraded during torpor are replenished to their baseline levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the study's findings, with citation support for transcription resumption.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "68888eec-768a-4d54-849e-4153b42396a1",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C97",
+      "claim": "During interbout arousal, transcripts that were previously degraded during torpor are replenished to their baseline levels.",
+      "claim_type": "EXPLICIT",
+      "source": "As BAT temperature rises, further polyadenylation of the remaining stabilized RNAs facilitates their translation, transcription resumes (Osborne et al., 2004), and, during interbout arousal, transcripts that were previously degraded during torpor are replenished to their baseline levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "e37cbd12-cbe1-407d-8cc2-71fa6e090f23",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C98",
+      "claim": "Energy intensive translation during early arousal is directed to proteins needed for BAT activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically: (1) energy intensive translation during early arousal is directed to proteins needed for BAT activation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional significance of the observed RNA dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "a289a5e9-1b03-42a9-80a0-578bec42e50e",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C99",
+      "claim": "The cell is not dependent on de novo transcription at the onset of the short bursts of metabolic activity, which could delay thermogenesis and induce stress.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) the cell is not dependent on de novo transcription at the onset of the short bursts of metabolic activity, which could delay thermogenesis and induce stress",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional significance of the observed RNA dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "9aae6687-3f81-45f5-845c-6cf1e6102b69",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C100",
+      "claim": "Inhibition of translation via shortening of poly(A) tails while body temperature is high or begins to decline conserves energy compared to mRNA degradation and subsequent re-synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) inhibition of translation via shortening of poly(A) tails while body temperature is high or begins to decline conserves energy compared to mRNA degradation and subsequent re-synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional significance of the observed RNA dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "13d8dc95-4c1a-494c-8cf3-87f7ebc2b653",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "claim_id": "C101",
+      "claim": "Given a general suppression of transcription by low body temperature during two-week torpor periods, stabilization and dynamic polyadenylation provide an alternative mechanism to prioritize transcripts for immediate translation when BAT metabolic activity rapidly resumes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, given a general suppression of transcription by low body temperature during two-week torpor periods, stabilization and dynamic polyadenylation provide an alternative mechanism to prioritize transcripts for immediate translation when BAT metabolic activity rapidly resumes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings about the functional significance of the observed mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a827ec93-d34b-47e4-971a-ea5c89773cb3",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "EDGE-tag sequencing and analysis identified 14,798 tags representing 8,089 unique genes, with Random Forests clustering revealing three main groups ('spring', 'winter warm', 'winter cold') and differential expression analysis detecting 2,159 significantly changed tags (14.6%) representing 1,638 unique genes. The separation of warm and cold body temperature samples indicates the BAT transcriptome is dynamic across a torpor bout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C26 provide comprehensive technical details of the sequencing pipeline, data processing, clustering analysis, and differential expression results. The methods are clearly described with appropriate statistical thresholds (q < 0.05), validation against prior work (91% concordance with Hampton et al. 2013), and multiple complementary analyses (Random Forests, DIANA clustering). The data quality metrics and reproducibility are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "3ca4cbc2-8dde-40ec-b6ab-aef72c895997",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Winter-increased transcripts (Clusters 3-6) were enriched for BAT activation functions including lipid metabolism, mitochondria, and TCA cycle. Paradoxically, these transcripts reached highest abundance during torpor (early, late torpor, and/or early arousal) despite near cessation of transcription at low body temperature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 establish the key paradoxical observation that drives the study. The functional enrichment analysis (C29) is supported by DAVID analysis with appropriate statistical thresholds (enrichment score >1.3). The paradox (C30) is well-established by comparing the observed increases with cited prior knowledge about transcriptional cessation during torpor. This represents a major biological puzzle that the rest of the study addresses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "65237062-386e-499e-a0b5-6f8f67ae1d23",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RPPH1, a Pol III-transcribed RNA that is not typically polyadenylated, showed several 100-fold increase in relative abundance by early arousal (q < 10^-14) and acquired a long poly(A) tail at low body temperature, explaining its presence in the poly(A)-selected sequencing libraries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 provide a critical clue to the mechanism. The statistical significance is extremely strong (q < 10^-14), and the experimental validation by RT-PCR and sequencing (Figure 3B,C) directly demonstrates polyadenylation. The logic is sound: RPPH1 should not be in poly(A)-selected libraries unless it acquired a poly(A) tail, which was experimentally confirmed. This observation motivates the subsequent mechanistic investigations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "0923072c-e263-47f5-aee4-ec2efced2cff",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Class I transcripts (5 validated by RT-qPCR) decreased during torpor with poly(A) and total RNA mirroring EDGE-tag abundance. These transcripts bore long poly(A) tails that shortened during torpor, and most BAT transcripts slowly degrade over two weeks in torpor without replenishment until body temperature recovers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 establish the baseline behavior of most transcripts during torpor. The RT-qPCR validation (C34) provides orthogonal confirmation of the sequencing data with strong correlations (\u03c1 values reported). The poly(A) tail dynamics (C36) are supported by ePAT analysis. The inference about bulk transcript degradation (C37) is reasonable given the data, though it remains an inference. The n=3 biological replicates are adequate for these measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "ea1d7d72-67b9-4ccd-a5f1-f08c54da183a",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Nine Class II transcripts were stabilized during torpor through two mechanisms: Class IIA (5 transcripts) maintained stable total RNA while increasing polyadenylated fractions with concurrent poly(A) tail lengthening; Class IIB (4 transcripts) showed decreased total RNA but stable polyadenylated fractions. This enhanced stability relative to bulk transcripts leads to their relative increases at low body temperature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C45 establish the core mechanistic finding through detailed RT-qPCR validation across multiple RNA fractions (total, short poly(A), long poly(A)). The distinction between Class IIA and IIB is well-supported by the data showing different patterns of total vs. polyadenylated RNA. The correlation analyses with EDGE-tags (Spearman's \u03c1 values with significance levels) validate the sequencing observations. The poly(A) tail length measurements (Figure 4\u2014figure supplement 2C,D) provide direct evidence for the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "8647f63d-0cfd-4928-8de4-bba032f3ebc0",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Three PNPLA2 protein isoforms were detected by Western blot with sizes consistent with mouse UniProt predictions. All three appeared to cycle, but only the 48-kD band changed significantly, following the dynamics of the transcript with long poly(A) tail despite no change in overall transcript abundance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 provide protein-level validation that polyadenylation dynamics affect translation. The Western blot data (Figure 4D-F) shows the 48-kD isoform cycles in parallel with long poly(A) RNA but not total RNA, supporting the functional significance of polyadenylation. However, the sample size (n=3) is modest, and only one protein was examined. The correlation between poly(A) tail length and protein abundance is suggestive but not definitively causal without additional experiments (e.g., blocking polyadenylation).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "8aa176c3-008b-43fd-875b-1c1b4a1ea43f",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mathematical modeling demonstrated that a temperature-dependent protective mechanism (degradation set to 3% at body temperature <10\u00b0C) best explains the observed twofold increases in protected transcript abundance. This mechanism was dose-dependent, relatively insensitive to thresholds above 10\u00b0C, and superior to alternative models involving temperature-independent degradation changes or increased transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54 provide strong computational support for the proposed mechanism. The mathematical model (detailed in Supplementary file 2) systematically tests alternative hypotheses and shows that only temperature-dependent protection produces results consistent with experimental observations. The model parameters (10\u00b0C threshold, 3% degradation rate) are biologically plausible given Q10 effects. The rejection of alternative mechanisms (C52-C53) strengthens the conclusion. However, the model makes simplifying assumptions about transcript populations and degradation kinetics that may not fully capture biological complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "79227db9-61aa-4ffe-b3cc-47f2bd905647",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "EXTREME motif discovery identified two significantly enriched C-rich motifs in torpor-increased transcripts. DIANA Cluster 5 (transcripts most clearly increasing during torpor) showed the highest enrichment (59.1% and 66.7% for Motifs 1 and 2), while Cluster 6 (stable elevated transcripts) showed 50.8% enrichment for Motif 2, significantly higher than other clusters and controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 establish sequence-level evidence for a regulatory mechanism. The motif discovery approach is appropriate (EXTREME with E-values <1), and the enrichment patterns correlate well with transcript behavior (highest in Cluster 5, which shows clearest torpor increases). The comparison to control non-significant transcripts (21.1%) provides important context. However, the 3' UTR definition (500 nt downstream of stop codon) is somewhat arbitrary given incomplete genome annotation, which may affect motif discovery sensitivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "0aa9fd52-70b6-4742-8194-445842c62ecc",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The enriched C-rich motifs significantly matched poly(C) binding protein motifs reported by Ji et al. (2013). PCBP3 expression increased significantly in winter groups (q = 0.0067) while PCBP4 did not vary, suggesting PCBP3 protects BAT transcripts via binding to 3' UTR C-rich motifs during torpor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 provide a plausible molecular mechanism linking motif enrichment to transcript protection. The TOMTOM motif comparison (C59) establishes similarity to known PCBP binding sites with appropriate statistical significance. The differential expression of PCBP3 (C62, q = 0.0067) correlates with the proposed protective function. However, the mechanistic link (C63) remains inferential\u2014no direct binding assays or functional validation (e.g., PCBP3 knockdown) are provided. The absence of PCBP1/2 detection is noted but not explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "b26ccbdc-e7d0-4a22-9bd7-62b69349d869",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study proposes a model where key BAT RNAs are selectively stabilized during torpor via a temperature-dependent protective mechanism (e.g., PCBP3 binding) active below 5\u00b0C, while bulk transcripts degrade. At arousal onset, stabilized mRNAs with longest poly(A) tails are translated immediately, followed by further polyadenylation and translation as temperature rises, with transcription resuming and replenishing degraded transcripts during interbout arousal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C97 synthesize the study's findings into a coherent model (Figure 7). The model is well-supported by the combined evidence from sequencing, RT-qPCR validation, mathematical modeling, and motif analysis. Each component has experimental support, though some aspects remain inferential (e.g., the precise timing and temperature thresholds, the direct role of PCBP3). The model is biologically plausible and consistent with known mechanisms of post-transcriptional regulation, though it requires future validation through functional experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "77d9b570-07c8-406d-b219-dfcb48f4aac8",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The proposed mechanism provides three functional advantages: (1) directing energy-intensive translation to BAT activation proteins during early arousal, (2) avoiding dependence on slow de novo transcription that could delay thermogenesis, and (3) conserving energy through translational silencing via poly(A) shortening rather than complete mRNA degradation and re-synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C98-C101 present functional interpretations of the observed mechanisms. While these interpretations are logical and biologically plausible, they remain speculative without direct experimental evidence. No energy measurements, thermogenesis timing experiments, or comparative analyses with alternative regulatory strategies are provided. The claims represent reasonable hypotheses about adaptive significance but go beyond what the data directly demonstrate. These would require additional experiments (e.g., measuring ATP costs, thermogenesis kinetics, or fitness consequences) to be fully supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "e62d5456-a8a5-4ae3-81b0-143876734d09",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Dynamic polyadenylation controls translation in many systems, with elongation causing activation and shortening causing silencing/degradation. For PNPLA2 (which catalyzes triacylglycerol hydrolysis), increased translation via poly(A) lengthening in early arousal would ensure immediate free fatty acid generation for thermogenesis, while shortening during interbout arousal would silence translation as metabolic activity declines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 connect the study's findings to established biological principles and provide a specific functional example. The general principles (C64-C65) are well-established with appropriate citations. The PNPLA2 example (C66-C68) is supported by the Western blot data showing the 48-kD isoform cycling with poly(A) dynamics. However, the functional interpretations (C67-C68) about ensuring immediate fatty acid generation and energy conservation remain inferential\u2014no direct measurements of fatty acid levels, thermogenesis rates, or energy expenditure are provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "2ea34210-1066-4fed-bc4f-50743dc5ae77",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The findings are consistent with prior observations of post-transcriptional regulation in hibernation, mRNA degradation during torpor, global poly(A) tail maintenance/lengthening, and RNP granule formation in BAT nucleoli. The Class II ncRNAs identified are located in nucleoli, suggesting sequestration into RNP granules protects transcripts from bulk degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C74 appropriately contextualize the findings within prior literature. The consistency with previous observations (C70-C72) is well-documented with citations. The connection to RNP granules (C72-C74) provides a plausible cellular mechanism for transcript protection, though the localization claim (C73) is stated as fact without direct experimental evidence in this study. The inference about RNP granule protection (C74) is reasonable given the prior histological observations but remains somewhat speculative without direct demonstration in this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "65aaf67e-f9da-4ffb-8343-13f7a3f15a5c",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "PCBPs are involved in multiple aspects of post-transcriptional control including mRNA stability, 3' end-processing, polyadenylation, and translational regulation. PCBP3's increased expression during winter heterothermy and contrasting pattern to most other RNA binding proteins (which decreased) is consistent with a role in enhanced mRNA stabilization and polyadenylation during torpor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C80 establish the biological plausibility of PCBP3 as the protective factor. The known functions of PCBPs (C75-C78) are well-documented with appropriate citations, though these are primarily for PCBP1/2 rather than PCBP3. The PCBP3 expression pattern (C79-C80) is supported by the data (q = 0.0067, Figure 6F) and the contrast with other RBPs strengthens the case. However, the functional assignment to PCBP3 remains inferential without direct binding or functional validation experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "7bb9d847-ea94-415b-b391-51c5b152384a",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "PABP1 and TIA-1/R localize to sub-nuclear foci during torpor in ground squirrel liver. PABP1 binds poly(A) tails and influences their length, translation, and stability. PCBPs 1 and 2 interact with PABP1 to prevent deadenylation and maintain mRNA stability. The current findings suggest a mechanistic link to PABP1 observations in other organs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C84 connect the study's findings to complementary observations in other tissues. The prior observations (C81-C83) are appropriately cited. The proposed mechanistic link (C84) is reasonable given the known PCBP-PABP1 interactions, though it remains speculative without direct evidence of such interactions in BAT during torpor. The authors appropriately acknowledge that further research is needed to determine if the protection extends to other tissues and to examine PCBP3's role directly.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "38c39197-0e07-456d-81c6-9954ff3e79a7",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Despite reports of elevated RBM3 (a cold-induced RNA binding protein) in hibernating organs including BAT, no enrichment of RBM3 recognition motifs was found in the subset of stabilized transcripts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 appropriately address an alternative hypothesis. The prior observations of RBM3 elevation (C85) are properly cited. The negative result (C86) from motif enrichment analysis is clearly stated and helps narrow the mechanistic possibilities. However, the absence of motif enrichment does not definitively exclude RBM3 involvement, as it could act through mechanisms not dependent on sequence motifs or through motifs not captured by the databases used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "255382a4-7d9f-4eb9-accb-03b58880f3d9",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Varying degradation rates changes steady-state mRNA levels, as observed in fish cold acclimation and cultured mammalian cells. Mathematical modeling demonstrates that transcript-specific degradation variability can cause relative abundance increases. Many smaller fold changes in hibernator datasets likely reflect intrinsic mRNA stability differences rather than specific regulatory mechanisms, but changes >2-fold in ~3.5% of transcripts require specific regulation. Large fold changes (e.g., RPPH1) likely reflect poly(A) tail addition/lengthening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C92 provide important context for interpreting transcriptome data in hibernation. The general principles (C87-C88) are well-established with citations. The modeling results (C89) support the interpretation. The inferences about fold change thresholds (C90-C92) are reasonable based on the modeling, though the specific cutoffs (~2-fold, ~3.5% of transcripts) are somewhat arbitrary. This analysis provides valuable guidance for interpreting hibernation transcriptome studies but would benefit from more systematic validation across multiple datasets.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "c6c8d85e-6d52-4359-9a1c-cc404c217948",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Hibernation involves cycles between torpor (1-3 weeks at 2-5% basal metabolic rates, body temperature near ambient) and arousal (rapid rewarming to 37\u00b0C, 12-24 hr duration) over 5-8 months. BAT drives periodic arousal by generating essential heat.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C9-C14 establish the biological context for the study. These are well-established facts about hibernation physiology, appropriately cited where needed. The claims accurately describe the torpor-arousal cycle and BAT's role in thermogenesis. This background information is essential for understanding the study's significance but represents established knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "f5e58b29-5cdc-410e-9742-b6bb5063b3cd",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "A cohort of transcripts increased during torpor despite transcriptional cessation at low temperatures. This increase occurs through enhanced stabilization with maintenance/extension of long poly(A) tails rather than elevated transcription. Mathematical modeling supports a temperature-sensitive protective mechanism. The stabilized subset was enriched in C-rich motifs and genes required for BAT activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C8 summarize the study's main findings as stated in the abstract. These claims are well-supported by the detailed results presented in the manuscript, including sequencing data (C3), RT-qPCR validation (C5), mathematical modeling (C6), and motif analysis (C7-C8). The abstract accurately represents the study's conclusions, which are substantiated by the experimental evidence and analyses described in the results section.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    },
+    {
+      "id": "c2dd2784-7252-4674-8a36-5e9501fadeb3",
+      "content_id": "6669d03d-8b80-4a68-8813-2664a8238e45",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Transcription and translation effectively cease at low body temperature during hibernation, yet organs maintain integrity and can be quickly reactivated after 2 weeks of torpor. Early rewarming depends exclusively on BAT non-shivering thermogenesis. Low body temperature slows RNA degradation via Q10 effects, but the convergence of reduced transcription and degradation after two weeks to determine steady-state RNA abundance is unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 establish the biological puzzle that motivates the study. These claims are supported by appropriate citations to prior work. The statement about transcription/translation cessation (C15) and BAT's role (C17) are well-established. The uncertainty about RNA dynamics (C18) appropriately frames the research question. These claims effectively set up the study's rationale by identifying a gap in understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:24:10.782320Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c2cad63c-423d-4581-bd0d-f0b907e3e5a1",
+      "result_id": "a827ec93-d34b-47e4-971a-ea5c89773cb3"
+    },
+    {
+      "claim_id": "630c2a34-aed7-42e5-9d8e-b290e050343b",
+      "result_id": "a827ec93-d34b-47e4-971a-ea5c89773cb3"
+    },
+    {
+      "claim_id": "4ab047b1-5a48-4815-96de-11add26e9ce8",
+      "result_id": "a827ec93-d34b-47e4-971a-ea5c89773cb3"
+    },
+    {
+      "claim_id": "e6033a41-7390-4017-ba42-6a7f133ab6ac",
+      "result_id": "a827ec93-d34b-47e4-971a-ea5c89773cb3"
+    },
+    {
+      "claim_id": "8e69209f-5090-4b9f-8d27-36c3b7721e21",
+      "result_id": "a827ec93-d34b-47e4-971a-ea5c89773cb3"
+    },
+    {
+      "claim_id": "5ad2028b-0d45-4c0a-a6bc-a147731fd3b6",
+      "result_id": "a827ec93-d34b-47e4-971a-ea5c89773cb3"
+    },
+    {
+      "claim_id": "40bf2008-afc7-4f17-8857-5c9f9539a40d",
+      "result_id": "a827ec93-d34b-47e4-971a-ea5c89773cb3"
+    },
+    {
+      "claim_id": "f84efd33-0cb7-457a-992e-ce085e8ff156",
+      "result_id": "a827ec93-d34b-47e4-971a-ea5c89773cb3"
+    },
+    {
+      "claim_id": "c39b0339-3ade-4e9b-83b6-2847480e25b9",
+      "result_id": "3ca4cbc2-8dde-40ec-b6ab-aef72c895997"
+    },
+    {
+      "claim_id": "dd68f64b-9dba-4d9d-ad02-7474637dc1c4",
+      "result_id": "3ca4cbc2-8dde-40ec-b6ab-aef72c895997"
+    },
+    {
+      "claim_id": "d6a89334-6b97-450d-8177-c6d1c8711cec",
+      "result_id": "3ca4cbc2-8dde-40ec-b6ab-aef72c895997"
+    },
+    {
+      "claim_id": "6dd94a24-6f5c-4caa-8795-7e087286c803",
+      "result_id": "3ca4cbc2-8dde-40ec-b6ab-aef72c895997"
+    },
+    {
+      "claim_id": "8c64541f-95f1-4b2b-92b0-d254285aac95",
+      "result_id": "65237062-386e-499e-a0b5-6f8f67ae1d23"
+    },
+    {
+      "claim_id": "d0807971-768d-4d3f-a284-07bc5364b7ee",
+      "result_id": "65237062-386e-499e-a0b5-6f8f67ae1d23"
+    },
+    {
+      "claim_id": "e9be6fa9-76e6-4c32-9e71-af9a80c44559",
+      "result_id": "65237062-386e-499e-a0b5-6f8f67ae1d23"
+    },
+    {
+      "claim_id": "723dfbaa-334c-46cd-9941-58135e221c3d",
+      "result_id": "0923072c-e263-47f5-aee4-ec2efced2cff"
+    },
+    {
+      "claim_id": "e0c901f3-63a4-4339-a2a5-82e8451788aa",
+      "result_id": "0923072c-e263-47f5-aee4-ec2efced2cff"
+    },
+    {
+      "claim_id": "ae419b2b-8bb6-412f-82e8-2bc866613030",
+      "result_id": "0923072c-e263-47f5-aee4-ec2efced2cff"
+    },
+    {
+      "claim_id": "b913d5ec-3beb-4d5e-bc18-e4eeb4304d32",
+      "result_id": "0923072c-e263-47f5-aee4-ec2efced2cff"
+    },
+    {
+      "claim_id": "05fe8dfd-4e8b-4c7c-8be2-64ae3b238326",
+      "result_id": "ea1d7d72-67b9-4ccd-a5f1-f08c54da183a"
+    },
+    {
+      "claim_id": "283bcd84-bde2-4314-87c4-38a04ec927de",
+      "result_id": "ea1d7d72-67b9-4ccd-a5f1-f08c54da183a"
+    },
+    {
+      "claim_id": "797537ad-a1f7-4a08-bb9f-74f7a800d35a",
+      "result_id": "ea1d7d72-67b9-4ccd-a5f1-f08c54da183a"
+    },
+    {
+      "claim_id": "805e7be0-0058-418c-8b4d-5c5039a7edd8",
+      "result_id": "ea1d7d72-67b9-4ccd-a5f1-f08c54da183a"
+    },
+    {
+      "claim_id": "429f8d07-7302-469e-b829-0b4c53995f75",
+      "result_id": "ea1d7d72-67b9-4ccd-a5f1-f08c54da183a"
+    },
+    {
+      "claim_id": "a4900f3e-1778-430a-bb42-89de33e09c10",
+      "result_id": "ea1d7d72-67b9-4ccd-a5f1-f08c54da183a"
+    },
+    {
+      "claim_id": "d0a588c1-51c7-4988-bc5d-08a6030b4a20",
+      "result_id": "ea1d7d72-67b9-4ccd-a5f1-f08c54da183a"
+    },
+    {
+      "claim_id": "c2b5c2e3-389a-4c65-99b8-2bdda06c2218",
+      "result_id": "ea1d7d72-67b9-4ccd-a5f1-f08c54da183a"
+    },
+    {
+      "claim_id": "bcf42fe0-9b4d-4a74-80b1-8890a5a7f375",
+      "result_id": "8647f63d-0cfd-4928-8de4-bba032f3ebc0"
+    },
+    {
+      "claim_id": "9c4e14a4-9247-4e7d-aae3-eb7f510f39f3",
+      "result_id": "8647f63d-0cfd-4928-8de4-bba032f3ebc0"
+    },
+    {
+      "claim_id": "0af4b681-b5fe-460d-9b36-9186926acaa3",
+      "result_id": "8aa176c3-008b-43fd-875b-1c1b4a1ea43f"
+    },
+    {
+      "claim_id": "74692716-c322-4fc1-bbeb-0ae509c88698",
+      "result_id": "8aa176c3-008b-43fd-875b-1c1b4a1ea43f"
+    },
+    {
+      "claim_id": "a17a41df-411e-41f2-b5ab-26bcc478135c",
+      "result_id": "8aa176c3-008b-43fd-875b-1c1b4a1ea43f"
+    },
+    {
+      "claim_id": "ae603cff-4099-417e-8ef1-c2b8b019ac78",
+      "result_id": "8aa176c3-008b-43fd-875b-1c1b4a1ea43f"
+    },
+    {
+      "claim_id": "2cfdf3d2-cba5-436e-875d-7b89e7951f03",
+      "result_id": "8aa176c3-008b-43fd-875b-1c1b4a1ea43f"
+    },
+    {
+      "claim_id": "85098996-58f6-4ff5-9f32-e7a2724e3429",
+      "result_id": "8aa176c3-008b-43fd-875b-1c1b4a1ea43f"
+    },
+    {
+      "claim_id": "e4d6427d-a4e5-4cca-808b-c3dd756f10f2",
+      "result_id": "79227db9-61aa-4ffe-b3cc-47f2bd905647"
+    },
+    {
+      "claim_id": "df0a04ba-f9dc-4d80-baa0-b87d8fabe214",
+      "result_id": "79227db9-61aa-4ffe-b3cc-47f2bd905647"
+    },
+    {
+      "claim_id": "85141e19-6928-4495-95ce-b9f4bd3a1982",
+      "result_id": "79227db9-61aa-4ffe-b3cc-47f2bd905647"
+    },
+    {
+      "claim_id": "5a4e9ff8-9a42-4f7a-9e36-0ff1f09861fb",
+      "result_id": "79227db9-61aa-4ffe-b3cc-47f2bd905647"
+    },
+    {
+      "claim_id": "55c99289-523f-44c7-b560-a04fde109cdf",
+      "result_id": "0aa9fd52-70b6-4742-8194-445842c62ecc"
+    },
+    {
+      "claim_id": "eff2c337-29ac-412e-9ddf-e26a1b2cdf2c",
+      "result_id": "0aa9fd52-70b6-4742-8194-445842c62ecc"
+    },
+    {
+      "claim_id": "9c01904a-adf9-456d-a8a5-00166e5f6ab4",
+      "result_id": "0aa9fd52-70b6-4742-8194-445842c62ecc"
+    },
+    {
+      "claim_id": "2d238a88-8e5a-457d-8828-7f68b49b2b86",
+      "result_id": "0aa9fd52-70b6-4742-8194-445842c62ecc"
+    },
+    {
+      "claim_id": "8f8c5724-20fa-4d0f-a0a3-8cba6efaec10",
+      "result_id": "0aa9fd52-70b6-4742-8194-445842c62ecc"
+    },
+    {
+      "claim_id": "12c7d3d4-cb3a-494e-8e02-e20b7d9f7740",
+      "result_id": "b26ccbdc-e7d0-4a22-9bd7-62b69349d869"
+    },
+    {
+      "claim_id": "417ad1a9-facd-4522-a7d1-43979d5a0a9b",
+      "result_id": "b26ccbdc-e7d0-4a22-9bd7-62b69349d869"
+    },
+    {
+      "claim_id": "bb883e63-577a-4c42-8eb0-92177a46d28e",
+      "result_id": "b26ccbdc-e7d0-4a22-9bd7-62b69349d869"
+    },
+    {
+      "claim_id": "bbe6e7ea-73d7-4e25-8c6f-9facb83444f1",
+      "result_id": "b26ccbdc-e7d0-4a22-9bd7-62b69349d869"
+    },
+    {
+      "claim_id": "68888eec-768a-4d54-849e-4153b42396a1",
+      "result_id": "b26ccbdc-e7d0-4a22-9bd7-62b69349d869"
+    },
+    {
+      "claim_id": "e37cbd12-cbe1-407d-8cc2-71fa6e090f23",
+      "result_id": "77d9b570-07c8-406d-b219-dfcb48f4aac8"
+    },
+    {
+      "claim_id": "a289a5e9-1b03-42a9-80a0-578bec42e50e",
+      "result_id": "77d9b570-07c8-406d-b219-dfcb48f4aac8"
+    },
+    {
+      "claim_id": "9aae6687-3f81-45f5-845c-6cf1e6102b69",
+      "result_id": "77d9b570-07c8-406d-b219-dfcb48f4aac8"
+    },
+    {
+      "claim_id": "13d8dc95-4c1a-494c-8cf3-87f7ebc2b653",
+      "result_id": "77d9b570-07c8-406d-b219-dfcb48f4aac8"
+    },
+    {
+      "claim_id": "7973dcfe-048c-4aad-b5e7-12c8dc51b0e3",
+      "result_id": "e62d5456-a8a5-4ae3-81b0-143876734d09"
+    },
+    {
+      "claim_id": "2e57acd4-b5be-4fa1-8841-da3bf681bdcc",
+      "result_id": "e62d5456-a8a5-4ae3-81b0-143876734d09"
+    },
+    {
+      "claim_id": "accac4a1-39a6-43d6-9bec-10f18298dbbd",
+      "result_id": "e62d5456-a8a5-4ae3-81b0-143876734d09"
+    },
+    {
+      "claim_id": "90394519-f362-4efa-8aeb-e7c1dd4c5a79",
+      "result_id": "e62d5456-a8a5-4ae3-81b0-143876734d09"
+    },
+    {
+      "claim_id": "6ddaf7b1-e7b0-4e5f-8a29-ba3ecaa3875c",
+      "result_id": "e62d5456-a8a5-4ae3-81b0-143876734d09"
+    },
+    {
+      "claim_id": "c59b8a05-9718-4b5f-9346-dec913e9540f",
+      "result_id": "2ea34210-1066-4fed-bc4f-50743dc5ae77"
+    },
+    {
+      "claim_id": "6d4128c3-ca36-4309-8f9e-734b73e612a2",
+      "result_id": "2ea34210-1066-4fed-bc4f-50743dc5ae77"
+    },
+    {
+      "claim_id": "52e0638b-078e-4e7e-a711-914eda0ee564",
+      "result_id": "2ea34210-1066-4fed-bc4f-50743dc5ae77"
+    },
+    {
+      "claim_id": "e5975d14-dad0-408b-8678-5328d912709f",
+      "result_id": "2ea34210-1066-4fed-bc4f-50743dc5ae77"
+    },
+    {
+      "claim_id": "f43eeb0e-6085-4b6c-90d2-da0ac3ebdf38",
+      "result_id": "2ea34210-1066-4fed-bc4f-50743dc5ae77"
+    },
+    {
+      "claim_id": "63d1a164-b86b-4d21-9b60-bad3dcbf37dd",
+      "result_id": "2ea34210-1066-4fed-bc4f-50743dc5ae77"
+    },
+    {
+      "claim_id": "9714929c-4b98-408d-8bba-ecff2609e994",
+      "result_id": "65aaf67e-f9da-4ffb-8343-13f7a3f15a5c"
+    },
+    {
+      "claim_id": "614bde9a-924c-4818-b245-f7f4503e4718",
+      "result_id": "65aaf67e-f9da-4ffb-8343-13f7a3f15a5c"
+    },
+    {
+      "claim_id": "a43281a4-0a38-4a3d-bfd7-c26c70757c2f",
+      "result_id": "65aaf67e-f9da-4ffb-8343-13f7a3f15a5c"
+    },
+    {
+      "claim_id": "01551392-5c53-4d14-a652-33df8c58f961",
+      "result_id": "65aaf67e-f9da-4ffb-8343-13f7a3f15a5c"
+    },
+    {
+      "claim_id": "75b1fc4e-7f94-43aa-9439-580c9ebbaa2b",
+      "result_id": "65aaf67e-f9da-4ffb-8343-13f7a3f15a5c"
+    },
+    {
+      "claim_id": "ddfcca34-6aed-485e-86a8-13daf5b6f662",
+      "result_id": "65aaf67e-f9da-4ffb-8343-13f7a3f15a5c"
+    },
+    {
+      "claim_id": "0bb6939c-bce6-4c3a-83a9-de83721b9a51",
+      "result_id": "7bb9d847-ea94-415b-b391-51c5b152384a"
+    },
+    {
+      "claim_id": "6080ee86-dcd6-405a-a7e4-546155e6fc14",
+      "result_id": "7bb9d847-ea94-415b-b391-51c5b152384a"
+    },
+    {
+      "claim_id": "7de7a183-b57f-445f-bfd2-0aaae380783b",
+      "result_id": "7bb9d847-ea94-415b-b391-51c5b152384a"
+    },
+    {
+      "claim_id": "9521a64f-788d-4a20-81d7-f5d88b74a130",
+      "result_id": "7bb9d847-ea94-415b-b391-51c5b152384a"
+    },
+    {
+      "claim_id": "8fe14590-c15c-48ac-81e3-ae863fc9f367",
+      "result_id": "38c39197-0e07-456d-81c6-9954ff3e79a7"
+    },
+    {
+      "claim_id": "679760a0-9496-44ab-8fd0-2f3f0edbad68",
+      "result_id": "38c39197-0e07-456d-81c6-9954ff3e79a7"
+    },
+    {
+      "claim_id": "cdb27c28-47a3-4990-a6ec-06671ac80b6f",
+      "result_id": "255382a4-7d9f-4eb9-accb-03b58880f3d9"
+    },
+    {
+      "claim_id": "241cefe7-8a50-424c-8139-20dbc4515c58",
+      "result_id": "255382a4-7d9f-4eb9-accb-03b58880f3d9"
+    },
+    {
+      "claim_id": "3661a9e2-69f8-4228-908e-40f73ee25543",
+      "result_id": "255382a4-7d9f-4eb9-accb-03b58880f3d9"
+    },
+    {
+      "claim_id": "20ab3c0a-32e9-4d24-9a8b-78f21a8508e8",
+      "result_id": "255382a4-7d9f-4eb9-accb-03b58880f3d9"
+    },
+    {
+      "claim_id": "63e5f94f-6fea-451a-a8a3-76ebcd7dfb14",
+      "result_id": "255382a4-7d9f-4eb9-accb-03b58880f3d9"
+    },
+    {
+      "claim_id": "91ba0086-8982-4c1e-9668-ef846bf67868",
+      "result_id": "255382a4-7d9f-4eb9-accb-03b58880f3d9"
+    },
+    {
+      "claim_id": "fa613dd9-78c9-4fba-a859-b574d277ad3f",
+      "result_id": "c6c8d85e-6d52-4359-9a1c-cc404c217948"
+    },
+    {
+      "claim_id": "5f18c57f-9975-4b1d-ba4c-92b4eb01b50f",
+      "result_id": "c6c8d85e-6d52-4359-9a1c-cc404c217948"
+    },
+    {
+      "claim_id": "fa732783-aeb4-446c-8108-85c1b9864cdb",
+      "result_id": "c6c8d85e-6d52-4359-9a1c-cc404c217948"
+    },
+    {
+      "claim_id": "adefc56b-0fa4-421d-bf50-24dc0f770977",
+      "result_id": "c6c8d85e-6d52-4359-9a1c-cc404c217948"
+    },
+    {
+      "claim_id": "cccb9c1f-6a69-416f-ba3b-cbf7bea59911",
+      "result_id": "c6c8d85e-6d52-4359-9a1c-cc404c217948"
+    },
+    {
+      "claim_id": "8fc18736-cea8-4fee-b50f-a70a0822801e",
+      "result_id": "c6c8d85e-6d52-4359-9a1c-cc404c217948"
+    },
+    {
+      "claim_id": "c24e0529-6a63-4bff-969b-12e6f521598e",
+      "result_id": "c6c8d85e-6d52-4359-9a1c-cc404c217948"
+    },
+    {
+      "claim_id": "6ad052a6-40ab-456e-b687-52adaf6fa3f8",
+      "result_id": "c6c8d85e-6d52-4359-9a1c-cc404c217948"
+    },
+    {
+      "claim_id": "5fc1f025-e9ff-4797-a2cb-722ee24a7050",
+      "result_id": "f5e58b29-5cdc-410e-9742-b6bb5063b3cd"
+    },
+    {
+      "claim_id": "fd6de424-db52-4ac4-82c1-bc1a2374d51d",
+      "result_id": "f5e58b29-5cdc-410e-9742-b6bb5063b3cd"
+    },
+    {
+      "claim_id": "4ed10fa5-dac7-40a0-8793-e8e2de524498",
+      "result_id": "f5e58b29-5cdc-410e-9742-b6bb5063b3cd"
+    },
+    {
+      "claim_id": "0d6d8f00-b352-4316-b449-3a04baff578c",
+      "result_id": "f5e58b29-5cdc-410e-9742-b6bb5063b3cd"
+    },
+    {
+      "claim_id": "64fad92e-ae51-43fb-8b0a-0ffb136f9038",
+      "result_id": "f5e58b29-5cdc-410e-9742-b6bb5063b3cd"
+    },
+    {
+      "claim_id": "21622163-bc1b-468a-8dd6-5156dcb7a150",
+      "result_id": "f5e58b29-5cdc-410e-9742-b6bb5063b3cd"
+    },
+    {
+      "claim_id": "c50eeeee-d469-4dd6-9431-b6d64c1f1f26",
+      "result_id": "c2dd2784-7252-4674-8a36-5e9501fadeb3"
+    },
+    {
+      "claim_id": "5bd46b5a-a4ea-49ca-840d-70b18fb29089",
+      "result_id": "c2dd2784-7252-4674-8a36-5e9501fadeb3"
+    },
+    {
+      "claim_id": "5998d0d6-1caf-461d-960d-b7d422947b17",
+      "result_id": "c2dd2784-7252-4674-8a36-5e9501fadeb3"
+    },
+    {
+      "claim_id": "ebf2a890-6c1b-4f08-83e7-a2245627e6a1",
+      "result_id": "c2dd2784-7252-4674-8a36-5e9501fadeb3"
+    }
+  ],
+  "comparisons": []
+}

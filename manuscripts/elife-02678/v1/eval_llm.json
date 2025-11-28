@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors develop an analytical framework based on the fluctuation-dissipation theorem to calculate the Fano factor (variance/mean) for organelle abundance distributions. The analytical expression accurately predicts how fission increases and fusion decreases the Fano factor relative to de novo synthesis, and this approximation is validated against stochastic simulations for mean organelle abundances >1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 establish the theoretical foundation using established statistical theory (Paulsson 2005) and validate it computationally. The analytical predictions match simulations (C28, Figure 1I) and the dependencies on fission/fusion rates are consistent with theory (C26-C27, Figure 1H). This provides a sound mathematical basis for subsequent experimental predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "For the Golgi apparatus, which undergoes only de novo synthesis and decay, the model predicts a Poisson distribution with Fano factor = 1. Experimental measurements of Golgi (Anp1-mRFP) and late Golgi (Sec7-GFP) abundance distributions in haploid yeast cells closely match Poisson distributions with measured Fano factors of 1.0 \u00b1 0.1, confirming the theoretical prediction. Cell cycle synchronization does not affect these results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C38 present a clear prediction from theory (Fano factor = 1 for Poisson process) and strong experimental validation. The measured distributions closely match predicted Poisson distributions (C34, C36, Figures 2C, 2\u2014figure supplement 1A) and measured Fano factors (C35, C37) agree quantitatively with predictions. The robustness to cell cycle synchronization (C38) strengthens the conclusion. Sample sizes (N=141-163 cells) appear adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C53"
+    ],
+    "result": "For vacuoles, which undergo fission and fusion but not de novo synthesis, the model predicts a shifted Poisson distribution with Fano factor = 1 - 1/<n> = 0.5 (given mean <n> = 2.1). Experimental measurements of vacuole (Vph1-GFP) abundance distributions match the predicted shifted Poisson distribution with measured Fano factor of 0.5 \u00b1 0.1. This close agreement suggests de novo vacuole biogenesis does not significantly contribute to vacuole copy number in wild-type yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C49, C53 present a non-trivial theoretical prediction (sub-Poissonian Fano factor due to low copy number) with strong experimental validation. The measured distribution matches the shifted Poisson prediction (C47, Figure 2G) and the Fano factor agrees quantitatively (C48, Figure 2H). The inference about minimal de novo biogenesis (C49, C53) is logically sound given the model assumes no de novo synthesis yet matches data precisely. Sample size (N=95 cells) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "For peroxisomes in glucose medium, the model predicts that if de novo synthesis dominates over fission, the Fano factor should be close to 1 and the distribution should be Poisson. The measured peroxisome (YFP-PTS1) abundance distribution in glucose yields a Fano factor of 1.1 \u00b1 0.1, indicating de novo synthesis is the primary biogenesis mechanism. The simplified one-step de novo synthesis model is statistically equivalent to a more detailed vesicle fusion model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62 establish clear theoretical predictions linking Fano factor to biogenesis mechanism and validate them experimentally. The measured Fano factor of 1.1 \u00b1 0.1 (C61, Figures 3C-D) is close to the Poisson prediction, supporting de novo synthesis dominance (C62). The equivalence of simplified and detailed models (C60, Figure 3\u2014figure supplement 1) justifies the theoretical approach. Sample sizes (N=129-447 cells) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C81",
+      "C93"
+    ],
+    "result": "When cells are transferred from glucose to oleic acid medium, peroxisome abundance fluctuations increase dramatically, with the Fano factor rising from 1.1 \u00b1 0.1 to 2.4 \u00b1 0.2. This large increase (Fano factor >> 1) indicates a switch from de novo synthesis-dominated to fission-dominated peroxisome biogenesis. Increased pre-peroxisomal vesicle production cannot explain this rise in Fano factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C63-C66, C81, C93 present a major mechanistic inference supported by quantitative data. The measured Fano factor increase (C64, Figures 3C-D) is substantial and statistically significant. The theoretical framework (C54-C58) clearly predicts that Fano factor >> 1 indicates fission dominance. Simulations rule out alternative explanations involving vesicle production (C65, Figure 3\u2014figure supplement 4). The inference is logically sound and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Deletion of peroxisome fission factors (vps1\u0394, dnm1\u0394, fis1\u0394) in cells cultured in oleic acid medium reduces both mean peroxisome abundance and Fano factors. The vps1\u0394 mutant shows the strongest effect, with a 4-fold decrease in mean abundance and 3-fold decrease in Fano factor to 1.0, exactly matching the prediction for de novo synthesis-dominated biogenesis. These genetic perturbations strongly support the conclusion that fission dominates peroxisome proliferation in oleic acid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C82-C90 provide critical genetic validation of the mechanistic model. The dose-dependent effects across different fission mutants (C83-C88, Figure 5) are consistent with known protein functions (C82). The vps1\u0394 Fano factor of 1.0 (C89) precisely matches the de novo synthesis prediction, providing strong evidence for the model. The logic connecting genetic perturbation to mechanism is sound and well-supported by data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C50",
+      "C91",
+      "C94"
+    ],
+    "result": "The close quantitative match between theoretical predictions and experimental measurements for Golgi and vacuole abundance fluctuations, achieved without invoking feedback control mechanisms, suggests that budding yeast cells tolerate the maximum level of variability generated by their organelle biogenesis pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C50, C91, C94 present a significant conceptual conclusion about cellular regulation. The inference is logically sound: if a model without feedback control accurately predicts fluctuations, then feedback is either absent or no more precise than the unregulated system. The quantitative agreement for both Golgi (Fano factor = 1.0 \u00b1 0.1) and vacuoles (Fano factor = 0.5 \u00b1 0.1) supports this interpretation. However, the authors appropriately note (C94) that this doesn't explicitly rule out feedback.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In diploid cells, vacuole mean abundance increases to 3.6 (71% increase from haploid), and the distribution remains well-described by a shifted Poisson. The measured Fano factor increases to 0.7 \u00b1 0.1, matching the theoretical prediction of 0.7 for the higher mean, validating the model's prediction that Fano factor increases with mean for fission-fusion systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C73-C76 test a specific model prediction about how Fano factor scales with mean abundance. The measured increase in both mean (C73, Figure 4B) and Fano factor (C76, Figure 4C) quantitatively matches predictions (C75). The distribution shape remains shifted Poisson (C74, Figure 4A). This provides additional validation of the theoretical framework. Sample size (N=127 cells) is adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "In diploid cells cultured in glucose, peroxisome mean abundance approximately doubles to 6.8, the distribution remains Poisson, and the Fano factor remains 1.0 \u00b1 0.1. Despite similar mean abundances, diploid cells in glucose have much lower Fano factors than haploid cells in oleic acid, providing additional evidence for different biogenesis mechanisms in the two conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 provide additional evidence for mechanism-dependent fluctuations. The maintained Fano factor of 1.0 despite increased mean (C79, Figure 4F) is consistent with Poisson statistics and de novo synthesis dominance. The comparison to oleic acid conditions (C80-C81) strengthens the mechanistic interpretation. The data support the conclusions, though this is confirmatory rather than novel. Sample sizes (N=123-154 cells) are adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "In oleic acid medium, Golgi Fano factor remains unchanged at 1.0 \u00b1 0.2, while vacuole Fano factor increases to 0.8 \u00b1 0.1, consistent with the increase in mean vacuole abundance from 2.1 to 4.0 and the theoretical prediction for fission-fusion systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 demonstrate that the observed changes in peroxisome fluctuations are organelle-specific rather than a general effect of oleic acid medium. The Golgi remains Poisson (C67) while the vacuole Fano factor increase (C68) is explained by increased mean abundance (C69), consistent with theory. This controls for medium-specific artifacts. Data shown in Figure 3\u2014figure supplement 5 support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Golgi apparatus and late Golgi did not show statistically significant increases in mean abundance in diploid versus haploid cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 reports a negative result that contrasts with vacuoles and peroxisomes. This is supported by data in Figure 4\u2014figure supplements 1-2. While unexpected given that organelle sizes scale with ploidy (C70), this observation is clearly stated and data-supported. The lack of increase may reflect biological differences in Golgi regulation or could warrant further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C22"
+    ],
+    "result": "The manuscript establishes the biological context and knowledge gaps: fluctuations in organelle abundance can limit cellular processes, stochasticity is intrinsic to biological systems, but organelle-level fluctuations have not been systematically characterized. Prior work suggested cells might tightly control organelle numbers, but quantitative comparisons of theory to experiment were lacking, particularly for peroxisome biogenesis mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C11, C22 establish the motivation and context for the study. These are primarily literature-based statements about the state of the field. While C1 is somewhat speculative about the impact of fluctuations (no direct evidence provided), the other claims accurately represent knowledge gaps. These contextual claims appropriately frame the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript reviews established knowledge about organelle biogenesis mechanisms: four basic processes (de novo synthesis, fission, fusion, decay) govern organelle abundance; Golgi biogenesis involves de novo synthesis and maturation-based decay; vacuoles are primarily governed by fission-fusion balance with de novo synthesis in mutants; peroxisomes can be generated by both de novo synthesis and fission pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C21 summarize prior knowledge about organelle biogenesis, all supported by appropriate citations. These establish the biological basis for the modeling assumptions. The claims accurately represent the cited literature and provide necessary background for interpreting the model predictions and experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Different biogenesis mechanisms generate differing levels of abundance fluctuations. At low mean organelle copy numbers, organelles governed by fission-fusion (vacuoles) inherently exhibit smaller fluctuations (Fano factor = 0.5) than organelles governed by de novo synthesis and decay (Golgi, Fano factor = 1.0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 present a general principle emerging from the theoretical and experimental results. This is well-supported by the quantitative comparison of Golgi (C35, Fano factor = 1.0) and vacuole (C48, Fano factor = 0.5) data shown in Figures 2D and 2H. The mechanism-dependence of fluctuations is a key insight of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The manuscript notes that some subcellular structures (nucleus, centrioles) are under strong feedback control that suppresses fluctuations, and that peroxisome decay via autophagy depends on functional fission pathways, acknowledging complexities not fully captured by the simple model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 acknowledge limitations and complexities. Both are supported by appropriate citations (Marshall 2007; Mao et al. 2014). These claims appropriately contextualize the findings and acknowledge that the simple model may not capture all biological complexity, which is scientifically appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C92"
+    ],
+    "result": "The results resolve a long-standing debate about peroxisome biogenesis: peroxisomes are created primarily by de novo synthesis in glucose-rich conditions but switch to fission-based proliferation in fatty acid-rich environments that demand peroxisomal function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C97-C98 present the main mechanistic conclusion about peroxisome biogenesis. This is well-supported by the Fano factor measurements in glucose (1.1 \u00b1 0.1) versus oleic acid (2.4 \u00b1 0.2) and the genetic validation with fission mutants. The conclusion appropriately resolves prior debate (citing Hoepfner et al. 2005; Motley and Hettema 2007; Mast et al. 2010; van der Zand et al. 2012) by showing both mechanisms operate under different conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The experimental methods used established yeast strains with fluorescently tagged organelle markers (Anp1-mRFP for Golgi, Vph1-GFP for vacuoles, YFP-PTS1 and Pex3-mRFP for peroxisomes) that form discrete, countable structures visible by confocal microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 describe the experimental approach. The use of the Huh et al. (2003) collection is appropriate and well-established. The microscopy images (Figures 2B, 2F, 3B) clearly show discrete, countable organelles. The methods are standard and appropriate for the measurements performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Prior work has shown that organelle sizes scale with cellular volume and ploidy, motivating the hypothesis that diploid cells may have higher mean numbers of organelles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 cites prior work (Weiss et al. 1975; Chan and Marshall 2010; Uchida et al. 2011) to motivate examining diploid cells. This is appropriately used to justify the experimental design for testing model predictions at different mean abundances. The citation-based claim is accurate.",
+    "result_type": "MINOR"
+  }
+]

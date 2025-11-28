@@ -1,0 +1,1402 @@
+{
+  "submission": {
+    "id": "9cb7e27c-6072-4830-94a0-b415e430623f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:02:18.377460Z",
+    "updated_at": "2025-11-28T22:02:18.377460Z"
+  },
+  "content": [
+    {
+      "id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "submission_id": "9cb7e27c-6072-4830-94a0-b415e430623f",
+      "content_type": "manuscript",
+      "content_text": "# Tumor evolutionary directed graphs and the history of chronic lymphocytic leukemia\n\n## Authors\n\n- Jiguang Wang<sup>1</sup> \u2020\n- Hossein Khiabanian<sup>1</sup>\n- Davide Rossi<sup>4</sup>\n- Giulia Fabbri<sup>5</sup>\n- Valter Gattei<sup>7</sup>\n- Francesco Forconi<sup>8</sup>\n- Luca Laurenti<sup>10</sup>\n- Roberto Marasca<sup>11</sup>\n- Giovanni Del Poeta<sup>12</sup>\n- Robin Fo\u00e0<sup>13</sup>\n- Laura Pasqualucci<sup>5</sup>\n- Gianluca Gaidano<sup>4</sup>\n- Raul Rabadan<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biomedical Informatics Columbia University New York United States\n2. Department of Systems Biology Columbia University New York United States\n3. Center for Computational Biology and Bioinformatics Columbia University New York United States\n4. Division of Hematology, Department of Translational Medicine Amedeo Avogadro University of Eastern Piedmont Novara Italy\n5. Institute for Cancer Genetics Columbia University New York United States\n6. Department of Pathology and Cell Biology Columbia University New York United States\n7. Clinical and Experimental Onco-Hematology Unit Centro di Riferimento Oncologico Aviano Italy\n8. Cancer Sciences Unit, Cancer Research UK Centre University of Southampton Southampton United Kingdom\n9. Haematology Department Southampton University Hospital Trust Southampton United Kingdom\n10. Institute of Hematology Catholic University of the Sacred Heart Rome Italy\n11. Division of Hematology, Department of Oncology and Hematology University of Modena and Reggio Emilia Modena Italy\n12. Department of Hematology Tor Vergata University Rome Italy\n13. Department of Cellular Biotechnologies and Hematology Sapienza University Rome Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nCancer is a clonal evolutionary process, caused by successive accumulation of genetic alterations providing milestones of tumor initiation, progression, dissemination, and/or resistance to certain therapeutic regimes. To unravel these milestones we propose a framework, tumor evolutionary directed graphs (TEDG), which is able to characterize the history of genetic alterations by integrating longitudinal and cross-sectional genomic data. We applied TEDG to a chronic lymphocytic leukemia (CLL) cohort of 70 patients spanning 12 years and show that: (a) the evolution of CLL follows a time-ordered process represented as a global flow in TEDG that proceeds from initiating events to late events; (b) there are two distinct and mutually exclusive evolutionary paths of CLL evolution; (c) higher fitness clones are present in later stages of the disease, indicating a progressive clonal replacement with more aggressive clones. Our results suggest that TEDG may constitute an effective framework to recapitulate the evolutionary history of tumors.\n\n## Introduction\n\nCancer is a complex, Darwinian, adaptive clonal evolutionary process, driven by the accumulation of genetic alterations that confer high proliferative and survival advantage (Merlo et al., 2006; Greaves and Maley, 2012). Recent advances in sequencing technologies have allowed uncovering the most common genetic alterations of many tumors, but the temporal order of most of these alterations is still unknown (Futreal et al., 2004; Greenman et al., 2007; Santarius et al., 2010; Lawrence et al., 2014). Temporal patterns of genetic alterations may indicate the fate of tumor progression, allowing early diagnosis of tumor subtypes and improving the choice of therapeutic strategies.\n\nTo understand the evolutionary history of tumors, several experimental and computational strategies have been used. Longitudinal strategies require samples at multiple time points spanning the clonal tumor evolution process (Fearon and Vogelstein, 1990; Campbell et al., 2010; Ding et al., 2010; Notta et al., 2011; Gerlinger et al., 2012; Turajlic et al., 2012; Landau et al., 2013). Landau et al. sampled leukemia cells from 18 CLL patients at two time points, revealing that SF3B1 and TP53 mutations are late events in subclonal tumor cells (Landau et al., 2013). The study of different stages of colorectal carcinogenesis showed the sequence of genetic events to be APC, KRAS, and then TP53 (Fearon and Vogelstein, 1990). Another alternative approach is a cross-sectional strategy, which makes use of a large cohort of patients to computationally predict the preferred orders. RESIC is a stochastic process model to identify the order of mutations (Attolini et al., 2010), which successfully confirmed the results in colorectal cancer, suggesting that cross-sectional data is informative for the prediction of mutation order. However, RESIC does not consider a critical aspect of carcinogenesis that most tumors are heterogeneous (Parsons, 2011).\n\nFollowing the assumption that different tumors proceed through related temporally ordered alterations, we propose to summarize tumor histories using a newly developed analytical approach that integrates the genomic information from different longitudinally characterized patients. Our method, termed tumor evolutionary directed graphs (TEDG), proceeds in two steps to ensemble in a simplified way cancer clonal evolutionary histories of large number of patients: first, by merging the evolutionary history of each patient, and second, by removing indirect relationships using spectral techniques for network deconvolution (Feizi et al., 2013). The resulting TEDG is a directed graph with nodes representing driver genes and arrows representing temporal order of gene lesions. A non-randomly distributed TEDG shows that cancer proceeds in an orchestrated fashion and indicates the main paths and the alternative routes of cancer evolution.\n\nIn this study, we have applied TEDG to study the dynamics of the acquisition of alterations in chronic lymphocytic leukemia (CLL), which represents the most common adult leukemia in Western countries (Hallek et al., 2008; M\u00fcller-Hermelink et al., 2008). CLL is an ideal model for studying clonal dynamics because it is possible to collect highly purified sequential samples over time, and its clinical course is well characterized by serial cycles of response, remissions, and relapse ending in some instances with the development of lethal complications such as chemoresistant progression or transformation into an aggressive lymphoma (Richter syndrome) (Pasqualucci et al., 2011; Zenz et al., 2012; Fabbri et al., 2013). No systematic approach has been followed to disentangle and characterize the ensemble of evolutionary histories of this disease. For this purpose, we envision a dual cross-sectional and longitudinal strategy by collecting genomic information from the most common alterations in a cohort of 70 CLL patients spanning over a period of 12 years (2001\u20132012).\n\n## Results\n\n### Tumor Evolutionary Directed Graphs\n\nTo recapitulate and compare the history of genetic alterations in many patients, we propose a framework to infer TEDG by integrating longitudinal and cross-sectional genomic data of cancer patients. First, we reconstruct the sequential network of genetic alterations in each patient by analyzing genomic data from different time points. Specifically, the techniques of high-depth next generation sequencing (NGS) and fluorescence in situ hybridization (FISH) are separately carried out to assess the mutation allele frequency (MAF) and copy number abnormalities (CNA) of selected driver genes. To unify both types of data, and to adjust the MAF of mutations in genes with CNA, we introduce mutation cell frequency (MCF, defined as the fraction of tumor cells with a particular alteration) for quantification of genetic lesions (\u2018Materials and methods\u2019, Figure 1\u2014figure supplement 1). Based on MCF, we investigate alterations represented in at least 5% of leukemic cells (see examples of CLL patients in Figure 1\u2014figure supplement 2). First, if a given genetic lesion is observed to be temporally earlier than another lesion, we connect them with a directed edge to represent their sequential order of development (Figure 1A). Second, we pool many sequential networks from different patients to construct an Integrated Sequential Network (ISN). Third, we infer TEDG from ISN by removing indirect associations with spectral techniques and minimal spanning tree algorithm. TEDG is the backbone of ISN, representing an optimal explanation of the mutation order across many patients (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02869/elife-02869-fig1-v2.jpg)\n\n**Figure 1.:** (A) A toy example of clonal evolution of one patient. The evolutionary history of four alterations A, B, C, and D is shown in the left panel. We then sample different time points and analyze genomic data. Specifically, for each patient, tagged-amplicon library next generation sequencing (NGS) and fluorescence in situ hybridization (FISH) analyses are carried out at different time points to evaluate the presence and quantify the clonal abundance of possible driver genetic lesions. Then we use mutation cell frequency (MCF) to adjust and unify the data (middle panel). Based on this longitudinal data, we build sequential network of one patient (right panel). CNA: copy number abnormalities. (B) Sequential networks derived from different patients (left panel) are further pooled to generate Integrated Sequential Network (ISN), which is a cross-sectional integration of longitudinal data (middle panel). We then infer TEDG by removing the indirect interactions with network deconvolution and simplification algorithms (\u2018Materials and methods\u2019). To construct TEDG, we calculate a minimal spanning tree-based on the deconvolution scores (right panel).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02869/elife-02869-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Definition of mutation cell frequency. The black lines within the circles represent DNA copies, and the crosses represent point mutations. The contingent table shows the difference between MAF and MCF. MAF: mutation allele frequency; MCF: mutation cell frequency; NAN: not available. (B) Optimization of Hill function by grid-search method. z-axis indicates the objective function F, x-axis and y-axis are parameters of the Hill function. (C) The optimal Hill function and the simple piecewise function. (D) MAF and MCF of the cancer two-hit model. (E) Justification of MCF. x-axis indicates the fraction of CD19+CD5+ cells assessed by FACS analysis, and y-axis indicates the maximal mutation fraction of all targeted driver genes of each sample calculated by different methods. One blue dot represents one sample, and contours indicate the density of dots. A suitable calculation of maximal driver mutation fraction will approximate but not exceed the fraction of cancer nuclei. The upper red line indicates CD19+CD5+ cell fraction, and the lower red line indicates a 20% lower interval of it. Apparently, tumor purities of 55 samples are properly assessed by the Hill function MCF, which is better than both MAF without adjustment (10 samples) and simple piecewise MCF (27 samples).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02869/elife-02869-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Each column represents one patient with at least two time points. Magenta (MCF > 5%, present) and blue (absent) mutations are ordered by time information, indicating the status of the corresponding alterations. For one patient, if the presence of alteration A is earlier than alteration B, we assert that A predates B.\n\nTo test TEDG method and also to show how many patients are required to approximate the ground truth, we employ artificial examples by both simulating linear evolution and branching evolution of cancer, where the longitudinal data are generated by one-step Markov process and Nordling's multi-mutation model (Nordling, 1953) (Figure 2A,B, \u2018Materials and methods\u2019). For example, in a cohort of 15 patients with linear evolution, we start the Markov process of each case from no mutations at time zero. Mutation status at three time points 10, 20, and 30 are then successively updated based on the Markov chain transition probability described in \u2018Materials and methods\u2019. We finally pool all temporal information of those 15 patients to generate ISN (left panel of Figure 2D). The TEDG is further deduced by deconvoluting ISN. Suppose Gdir is the adjacent matrix of all direct interactions/orders, the observed ISN should be a summary of direct and indirect orders. The deconvolution is formulated by Gdir = Gobs(I + \u03b2Gobs)\u22121, where, Gobs is the observed weighted adjacent matrix, I is the identify matrix, and \u03b2 is the scaling factor between zero and one, indicating the degree of deconvolution. To evaluate TEDG, we define the accuracy by how frequently its results match the input model. To calculate the accuracy, we generate 10 simulated datasets of N patients (with three sequential samples per patient). In each simulation, we apply the TEDG analysis to reconstruct the sequential order and compare the result with the input model. We then apply the concept of accuracy to find a reasonable \u03b2 for our simulation, by calculating the accuracy of TEDG with different \u03b2 \u2208 (0, 1) when N \u2208 {1, 2, \u2026, 100}. Figure 2C indicates that the optimal value of \u03b2 is related to the number of samples, but the wide range of high accuracy region suggests that the TEDG results are robust to the parameter selection. With 30 patients, TEDG's accuracy for a linear model is 80%, and for a branching model, it reaches 90% (Figure 2E\u2013G, \u2018Materials and methods\u2019).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02869/elife-02869-fig2-v2.jpg)\n\n**Figure 2.:** (A) The representation of linear model and branching model showing the sequential orders of four alterations. (B) The probability of observing different mutation profiles by Nordling's multi-mutation model. Specifically, if patient i harbored k0 mutations at time point t1, the probability to observe k more mutations at time point t2 is $(1\u2212e^{\u2212f\u00b7(t_{2}\u2212t_{1})})^{k}$, where f represents the fitness of the new mutation. (C) The selection of parameter \u03b2. The color of heat map represents the accuracy of TEDG analysis, which is defined by the probability of TEDG reconstructing the input model. (D) An example showing the deconvolution algorithm on linear model. (F) An example showing the deconvolution algorithm on branching model. The left panel represents the ISNs of simulations of 15 patients. The weight of the edges represents the number of patients supporting the corresponding edges. The figures in the middle show the results of network deconvolution, where the numbers on the edge indicate deconvoluted weights. (E and G) The accuracy of TEDG framework on linear model and branching model at \u03b2 = 0.2.\n\n### Tumor Evolutionary Directed Graph of CLL\n\nIn order to investigate the evolutionary history of CLL, we apply the TEDG framework to the driver genetic lesions of this leukemia. We study the most common alterations of 164 temporally sequential samples from 70 patients by high-depth next generation sequencing (NGS) and fluorescence in situ hybridization (FISH) analysis (\u2018Materials and methods\u2019). Half (35 out of 70) of the patients have at least one subclonal genetic lesion with mutation frequency less than 20% at diagnosis (Figure 3\u2014figure supplement 1). We firstly build sequential networks for each patient based on this longitudinal genetic data. Then, we pool all sequential networks to construct the ISN of CLL. We ask whether the genetic lesions in CLL are temporally ordered or randomly accumulated and reason that if the genetic alterations driving CLL progression follow a preferential order, there exists a well ordered directed flow in ISN. Figure 3A represents a hierarchical layout of ISN, which depicts an ordered structure of lesions in genes represented by sources (nodes with more outgoing arrows) and sinks (nodes with more incoming arrows) (p-value < 0.0001, chi square distribution).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02869/elife-02869-fig3-v2.jpg)\n\n**Figure 3.:** (A) Network representing the sequential order of genomic alterations in CLL. The nodes in the network represent genetic alterations and the oriented edges (arrows) represent sequential events in different patients where alterations in one gene predate alterations in other genes. The size of the nodes represents the recurrence of alterations in our cohort. The thickness and the color codes of the edges represent the number of patients showing a specific connection between nodes. (B) TEDG of CLL, which is the deconvolution of ISN by removing indirect interactions, representing the optimal tree to explain observed orders in CLL patients. (C) The order of CLL alterations. We calculate both the sequential in-degree (number of arrows to a node) and out-degree (number of arrows from the node) of each genetic lesion in ISN and use the binomial test to assess the significance by assuming that the number of in-degree and out-degree is randomly distributed. Our null assumption is that if there is no preferential time ordering, there should be the same number of alterations in gene A occurring before alterations in gene B and vice versa, up to statistical fluctuations. Deviations from the null assumption indicate a preferential order in the development of the alterations. All events are sorted by fold change between out-degree and in-degree and all significant early or late events are labeled by *(p-value < 0.05) or **(p-value < 0.01).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02869/elife-02869-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The 70 patients are selected from a large cohort of 1403 CLL patients with no-bias screening. (B) The 70 patients are ranked according to their minimal cell frequency of all available genetic lesions at diagnosis. Patients with minimal cell frequency less than 20 are in red, the others are in green.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02869/elife-02869-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** All events are sorted by fold change between in-degree and out-degree, and all significant early or late events are labeled by *(p-value < 0.05) or **(p-value < 0.01). The upper panel represents the results of patients with only watch and wait, while the lower panel represents the results of patients with treatment.\n\nTo understand the evolutionary pattern of genetic alterations in CLL, we infer TEDG by removing indirect orders in ISN. The TEDG of CLL (Figure 3B) shows a clear pattern of the flow of alterations, revealing that genetic alterations of CLL are sequentially ordered in a branching mode. To statistically assess the temporal pattern of the genetic lesions, we use the binomial test to assess significance by assuming that the number of in-degree and out-degree of each alteration are randomly distributed. Consistent with TEDG, this analysis suggests the following temporal order of the lesion: mutations of MYD88, deletion 13q14, +12, mutations of NOTCH1, RB1 deletion, 17p13 deletion, mutations of SF3B1, 11q22-q23 deletion, BIRC3 deletion, mutations of TP53, and mutations of BIRC3 (Figure 3C). Deletion of 13q14, +12 and mutations of NOTCH1 are significant early events in CLL development, while mutations of TP53 and BIRC3 are significant late events. Though the sample size prevents statistical considerations, MYD88 mutations might occur even before 13q14 deletion (one of six patients), indicating that activation of the Toll-like receptor pathway could be important in the initiation of a fraction of CLL tumors (Arvaniti et al., 2011). The sequential order of the genetic lesions remains consistent (Pearson's correlation = 0.9, p-value < 1e-3) when evolutionary networks are constructed with patients who received chemotherapy (Figure 3\u2014figure supplement 2), suggesting that the order of development of the genetic lesions may be affected by therapy (the Pearson's correlation of the order in patients without chemotherapy is 0.4 with p-value > 0.1).\n\nBy considering each single type of mutation affecting the same gene as a distinct and independent node, we construct the comprehensive ISN of CLL mutations (Figure 4A). It is very difficult to capture useful information directly from ISN, while TEDG simplified the topology by capturing the backbone of tumor evolution (Figure 4B). We observe that the monoallelic 13q14 deletion, RB1 deletion, and +12 are significant early events (p-value < 0.01), while the BIRC3 E537fs and the TP53 R248Q are significant late lesions (p-value < 0.05) (Figure 4\u2014figure supplement 1). Also, the analysis of ISN and TEDG shows that different lesions affecting the same gene may occur in distinct branches and stages. For example, mutations K700E and K666E of SF3B1 are late events in cases harboring 13q14 deletion, while mutations R273C of TP53 are late events in cases with +12. Though the sample size prevents statistical considerations, TEDG reveals the H179R and Y234C missense substitutions in TP53 may be early events, while the R248Q, R273C, P152fs, and N239T substitutions are late events.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02869/elife-02869-fig4-v2.jpg)\n\n**Figure 4.:** (A) Network representing the sequential order of specific genomic alterations. Two alterations are connected by a directed edge if they are observed to successively appear in at least one patient. The patient ID labels the corresponding edges, which are further colored by the number of patients. Nodes are colored by the fold change between out-degree and in-degree, indicating temporal order of corresponding alterations. The size of the nodes represents the recurrence of the alteration. (B) Tumor Evolutionary Directed Graph of 32 specific mutations. Some nodes and arrows in this figure are manually merged or adjusted for the purpose of illustration.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02869/elife-02869-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** All alterations are ranked by fold change between in-degree and out-degree.\n\nBased on pivotal NGS studies, two different evolutionary models have been proposed in CLL, namely gradual linear and branching evolution (Knight et al., 2012; Schuh et al., 2012). The analysis of our cohort (excluding patients with Richter's transformation, refer to \u2018Materials and methods\u2019 for details) shows that a minority of patients (n = 3/60, 5%; FDR = 0.1) are characterized by a significantly decreased or undetectable representation of the founding clone, coupled with a significant increase of a second subclone that represented a small subpopulation at an earlier time point, consistent with a branching evolution model (highlighted by yellow circle in Figure 5A\u2013B, and Table 1). Interestingly, in all three cases clonal replacement events involve SF3B1 mutations and occur after treatment (Figure 5C), suggesting that the branching evolution model is closely connected to the combination of treatments and the emergence of SF3B1 mutations (p-value = 0.0016 by Fisher's exact test). This observation implies that, at the time of treatment requirement, limiting the knowledge of disease genetics to the dominant clone will likely be uninformative for accurate therapeutic decisions. Of particular interest in this scenario is the development of therapeutic strategies to prevent the branching evolution of the tumor, with the goal of eradicating dominant as well as minor clones (Anderson et al., 2011; Notta et al., 2011; Ding et al., 2012; Egan et al., 2012; Keats et al., 2012; Walker et al., 2012; Rossi et al., 2014).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02869/elife-02869-fig5-v2.jpg)\n\n**Figure 5.:** (A) Distribution of the clonal evolution pattern in the 60 non-Richter cases. Three of the 60 cases show replacement during tumor progression. (B) Scatter plot showing p-values of observing increased and decreased subclones in the 80 samples of the 60 multi-time point patients. Samples with evidence of clonal replacement are located in the right-up corner (highlighted by yellow circle). (C) Number of patients following linear vs branched evolution pattern according to SF3B1 mutational emergence and previous treatment (p-value 0.0016 by Fisher's exact test).\n\n**Table 1.**\n Patients with branching evolution*\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Patient ID</th>\n      <th>Sampling time</th>\n      <th>Treatment</th>\n      <th>Increased alterations</th>\n      <th>Decreased alterations</th>\n      <th>Detectable alterations</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"4\">#1</td>\n      <td>2001</td>\n      <td>None</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>SF3B1 (K666E), SF3B1 (K700E), del13q</td>\n    </tr>\n    <tr>\n      <td>2005</td>\n      <td>FC</td>\n      <td>SF3B1 (K666E)</td>\n      <td>None</td>\n      <td>SF3B1 (K666E), SF3B1 (K700E), del13q</td>\n    </tr>\n    <tr>\n      <td>2008</td>\n      <td>FCR/CAM/RBEN</td>\n      <td>SF3B1 (K700E), del11q</td>\n      <td>None</td>\n      <td>SF3B1 (K666E), SF3B1 (K700E), del13q, del11q</td>\n    </tr>\n    <tr>\n      <td>2011</td>\n      <td>BENCAM</td>\n      <td>SF3B1 (K700E), del11q, del13q, delBIRC3</td>\n      <td>SF3B1 (K666E)</td>\n      <td>SF3B1 (K700E), del13q, del11q, delBIRC3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">#14</td>\n      <td>2004</td>\n      <td>RF</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>+12, del13q</td>\n    </tr>\n    <tr>\n      <td>2007</td>\n      <td>FC/CAM</td>\n      <td>None</td>\n      <td>None</td>\n      <td>+12, del13q</td>\n    </tr>\n    <tr>\n      <td>2010</td>\n      <td>BENCAM</td>\n      <td>TP53 (R248Q), del17p, SF3B1 (K666E)</td>\n      <td>None</td>\n      <td>+12, del13q, TP53 (R248Q), del17p, SF3B1 (K666E)</td>\n    </tr>\n    <tr>\n      <td>2012</td>\n      <td>BENDOFA</td>\n      <td>TP53 (R248Q), del17p, SF3B1 (K666E), T12</td>\n      <td>del13q</td>\n      <td>+12, del13q, TP53 (R248Q), del17p, SF3B1 (K666E)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">#33</td>\n      <td>2002</td>\n      <td>None</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>NOTCH1 (P2514-)</td>\n    </tr>\n    <tr>\n      <td>2004</td>\n      <td>FCR</td>\n      <td>SF3B1 (K700E)</td>\n      <td>None</td>\n      <td>NOTCH1 (P2514-), SF3B1 (K700E)</td>\n    </tr>\n    <tr>\n      <td>2009</td>\n      <td>FCR</td>\n      <td>SF3B1 (K700E)</td>\n      <td>NOTCH1 (P2514-)</td>\n      <td>SF3B1 (K700E)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*FC, fludarabine, cyclophosphamide; FCR, fludarabine, cyclophosphamide, rituximab; CAM, Campath; RBEN, rituximab, bendamustine; BENCAM, bendamustine, Campath; RF, rituximab, fludarabine; BENDOFA, bendamustine, ofatumumab._\n\n### Statistical association analysis of TEDG\n\nTo further investigate the relationship between driver genetic lesions in TEDG, we assess their associations and anti-associations in a cross-sectional cohort of 1403 CLL patients, of which 1054 cases are informative in at least one lesion (Figure 6A, Table 2). Most of the co-mutations (connected in red in Figure 6B) are experimentally confirmed by previous studies, including: co-occurrence of 17p13 deletion and TP53 mutations, reflecting a typical two-hit model for tumor suppressor genes; co-occurrence of BIRC3 deletion, 11q22-q23 deletion, and BIRC3 mutations; and the relationship between NOTCH1 mutations and +12 (Balatti et al., 2012; Del Giudice et al., 2012). In addition to previously reported associated lesions, this large cohort of patients allows the statistical power to reveal other significant and previously unreported co-occurrence interactions, including the co-occurrence of BIRC3 abnormalities with +12 and NOTCH1 mutations and the co-occurrence of 13q14 deletion and BIRC3 deletion. This large cohort also reveals mutually exclusive relationships between +12 and 13q14 deletion and between NOTCH1 mutations and 13q14 deletion (connected in blue in Figure 6B). The statistical association analysis is consistent with the prediction of TEDG and indirectly validates the ability of TEDG in successfully capturing the major information in tumor evolution.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02869/elife-02869-fig6-v2.jpg)\n\n**Figure 6.:** (A) The mutation status of 1054 CLL patients, which is informative in 11 most common genetic lesions in this leukemia. (B) The association analysis of CLL genetic lesions in TEDG. Lesion pairs are connected if they are significantly co-mutated (red) or mutually exclusive (blue). (C) Box plot of growth rate of all genetic lesions.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02869/elife-02869-fig6-figsupp1-v2.jpg)\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02869/elife-02869-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Kaplan\u2013Meier curve showing the cumulative probability of overall survival (OS) for patients with high and low MMFS (maximal mutation frequency slope). (B) Kaplan\u2013Meier curve showing the cumulative probability of Richter syndrome (RS) transformation for patients with high and low MMFS. p-values are based on log-rank test. CI (confidential interval) is estimated by the Greenwood method.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/02869/elife-02869-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** p-value is calculated by Wilcoxon Rank-Sum Test. Growth rate indicates the change of mutation frequency per year.\n\n**Table 2.**\n Clinical features at presentation of the CLL cohorts*\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th colspan=\"3\">TEDG analysis</th>\n      <th colspan=\"3\">SA analysis</th>\n    </tr>\n    <tr>\n      <th>N</th>\n      <th>Total</th>\n      <th>%</th>\n      <th>N</th>\n      <th>Total</th>\n      <th>%</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>IGHV homology &gt;98%</td>\n      <td>37</td>\n      <td>69</td>\n      <td>53.6</td>\n      <td>532</td>\n      <td>1380</td>\n      <td>38.6</td>\n    </tr>\n    <tr>\n      <td>del13q14</td>\n      <td>35</td>\n      <td>70</td>\n      <td>50.0</td>\n      <td>682</td>\n      <td>1403</td>\n      <td>48.6</td>\n    </tr>\n    <tr>\n      <td>+12</td>\n      <td>19</td>\n      <td>70</td>\n      <td>27.1</td>\n      <td>205</td>\n      <td>1403</td>\n      <td>14.6</td>\n    </tr>\n    <tr>\n      <td>del11q22-q23</td>\n      <td>8</td>\n      <td>70</td>\n      <td>11.4</td>\n      <td>136</td>\n      <td>1403</td>\n      <td>9.7</td>\n    </tr>\n    <tr>\n      <td>del17p13</td>\n      <td>20</td>\n      <td>70</td>\n      <td>28.6</td>\n      <td>114</td>\n      <td>1403</td>\n      <td>8.1</td>\n    </tr>\n    <tr>\n      <td>TP53 mutation</td>\n      <td>22</td>\n      <td>70</td>\n      <td>31.4</td>\n      <td>114</td>\n      <td>1401</td>\n      <td>8.1</td>\n    </tr>\n    <tr>\n      <td>NOTCH1 mutation</td>\n      <td>22</td>\n      <td>70</td>\n      <td>31.4</td>\n      <td>150</td>\n      <td>1403</td>\n      <td>10.7</td>\n    </tr>\n    <tr>\n      <td>SF3B1 mutation</td>\n      <td>17</td>\n      <td>70</td>\n      <td>24.3</td>\n      <td>100</td>\n      <td>1403</td>\n      <td>7.1</td>\n    </tr>\n    <tr>\n      <td>MYD88 mutation</td>\n      <td>6</td>\n      <td>70</td>\n      <td>8.6</td>\n      <td>52</td>\n      <td>1403</td>\n      <td>3.7</td>\n    </tr>\n    <tr>\n      <td>BIRC3 mutation</td>\n      <td>10</td>\n      <td>70</td>\n      <td>14.3</td>\n      <td>41</td>\n      <td>1403</td>\n      <td>2.9</td>\n    </tr>\n    <tr>\n      <td>BIRC3 deletion</td>\n      <td>6</td>\n      <td>70</td>\n      <td>8.6</td>\n      <td>79</td>\n      <td>1403</td>\n      <td>5.6</td>\n    </tr>\n  </tbody>\n</table>\n\n_*TEDG analysis, Tumor Evolutionary Directed Graphs analysis; SA analysis, Statistical Association analysis; IGHV, immunoglobulin heavy variable gene; FISH, fluorescence in situ hybridization._\n\nBy integrating the topology of TEDG to the association analysis, two distinct and mutually exclusive evolutionary paths of CLL evolution are disclosed. The first evolutionary path involves CLL harboring +12 and NOTCH1 mutations as early driver events. In this path, clonal evolution proceeds toward the development of TP53 and BIRC3 abnormalities. The second evolutionary path involves 13q14 deletion as early driver lesion and proceeds toward the development of SF3B1 mutations and BIRC3 abnormalities. Overall, our results are consistent with the different clinico-biological phenotype of +12 CLL and 13q14 deleted CLL and further support the hypothesis that at least two distinct genetic subtypes of CLL exist.\n\n### Rate of allele frequency change\n\nWe reason that if a subclone replaces the major clone during tumor evolution, it is because of its higher fitness. Although fitness of a clone is not directly measurable, the growth rate of mutation frequency of drivers in this clone can serve as an indicator. Given this, mutations related to high fitness clones can be identified by extracting the alterations that rapidly change their allele/cell frequency within the tumor. We define the growth rate of each genetic lesion as the average increasing speed of mutation cell frequency per year (\u2018Materials and methods\u2019). Interestingly, the growth rates of late events (17p13 deletion, mutations of SF3B1, 11q22-q23 deletion, BIRC3 deletion, mutations of TP53, and mutations of BIRC3) are found higher than those of early events (mutations of MYD88, 13q14 deletion, +12, mutations of NOTCH1, and RB1 deletion) with p-value = 0.005 by Wilcoxon Rank-Sum Test (Figure 6C), revealing that late events may drive higher fitness or more aggressive clones. Note that the initiating lesions are usually clonal, presenting in most of the tumor cells, and therefore do not increase in frequency at the same magnitude as subclonal mutations. However, after eliminating clonal genetic lesions with MCF > 20% in the above analysis, we still find the growth rates of late and early events to be significantly different with p-value = 0.0114 by Wilcoxon Rank-Sum Test (Figure 6\u2014figure supplement 3).\n\nWe define maximal mutation frequency slope (MMFS) as the rate of allele frequency change of the fastest-growing clone in a patient (Table 3, \u2018Materials and methods\u2019). MMFS is a function that aims at characterizing the relative fitness of a particular clone carrying a particular mutation. In our cohort, only genetic lesions affecting the TP53 gene show a statistically significant association with MMFS (p-value = 0.0164, by Wilcoxon Rank-Sum Test). Clinically, the fastest-growing clones are strongly correlated with poor survival and Richter syndrome transformation, consistent with the fact that CLL transformed to Richter syndrome presents significantly higher MMFS values (p-value = 0.002, by Wilcoxon Rank-Sum Test) (Figure 6\u2014figure supplement 1). Indeed, by survival analysis, having a clone with high MMFS associates with an approximately threefold significant increase in the hazard of death (HR: 3.17; 95% CI: 1.38\u20137.40; p-value = 0.005) and a significant shortening of overall survival (47% at 5 years) (Figure 6\u2014figure supplement 2). Most deaths (77%) in patients carrying a clone with high MMFS are due to Richter syndrome transformation. Consistently, patients having a clone with high MMFS show an approximately fourfold increased risk of Richter syndrome development (HR: 4.61; 95% CI: 1.54\u201313.80; p-value = 0.003) and an \u223c50% of them are projected to develop Richter syndrome at 5 years (Figure 6\u2014figure supplement 2).\n\n**Table 3.**\n Patients showing high maximal mutation frequency slope (MMFS)\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Patient</th>\n      <th>MMFS*</th>\n      <th>Fast growing mutations</th>\n      <th>MCF1 (%)</th>\n      <th>MCF2 (%)</th>\n      <th>dT (moths)</th>\n      <th>Treatment</th>\n      <th>Richter syndrome transformation</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>#52</td>\n      <td>117.7</td>\n      <td>TP53 (P152+)</td>\n      <td>2.1</td>\n      <td>11.4</td>\n      <td>&lt;1</td>\n      <td>None</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>#68</td>\n      <td>9.1</td>\n      <td>TP53 (R273C)</td>\n      <td>0.0</td>\n      <td>100.0</td>\n      <td>11</td>\n      <td>None</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>#51</td>\n      <td>6.7</td>\n      <td>SF3B1 (I704F)</td>\n      <td>12.2</td>\n      <td>68.9</td>\n      <td>5</td>\n      <td>RCVP</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>#37</td>\n      <td>6.4</td>\n      <td>TP53 (R248Q)</td>\n      <td>3.8</td>\n      <td>90.0</td>\n      <td>10</td>\n      <td>RDHAOX</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>#57</td>\n      <td>5.9</td>\n      <td>NOTCH1 (P2514-)</td>\n      <td>0.8</td>\n      <td>94.2</td>\n      <td>12</td>\n      <td>None</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>#47</td>\n      <td>4.6</td>\n      <td>del13q</td>\n      <td>37.6</td>\n      <td>100.0</td>\n      <td>13</td>\n      <td>None</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>#14</td>\n      <td>3.9</td>\n      <td>del17p</td>\n      <td>18.9</td>\n      <td>90.0</td>\n      <td>16</td>\n      <td>A</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>#42</td>\n      <td>3.4</td>\n      <td>TP53 (N239T)</td>\n      <td>0.0</td>\n      <td>100.0</td>\n      <td>16</td>\n      <td>RDHAOX</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>#4</td>\n      <td>3.3</td>\n      <td>del17p</td>\n      <td>53.6</td>\n      <td>100.0</td>\n      <td>15</td>\n      <td>CLB-O</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>#54</td>\n      <td>3.0</td>\n      <td>NOTCH1 (P2415-)</td>\n      <td>100.0\u2020</td>\n      <td>100.0</td>\n      <td>22</td>\n      <td>FCO</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>#22</td>\n      <td>2.9</td>\n      <td>BIRC3 deletion</td>\n      <td>0.0</td>\n      <td>93.9</td>\n      <td>29</td>\n      <td>FCR</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>#20</td>\n      <td>2.8</td>\n      <td>del13q</td>\n      <td>0.0</td>\n      <td>100.0</td>\n      <td>36</td>\n      <td>CLB</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>#63</td>\n      <td>2.5</td>\n      <td>BIRC3 (M388V)</td>\n      <td>0.0</td>\n      <td>86.0</td>\n      <td>24</td>\n      <td>FCR</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>#6</td>\n      <td>2.3</td>\n      <td>del17p</td>\n      <td>0.0</td>\n      <td>92.1</td>\n      <td>34</td>\n      <td>CLB</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>#38</td>\n      <td>2.3</td>\n      <td>NOTCH1 (P2514-)</td>\n      <td>41.7</td>\n      <td>42.9</td>\n      <td>4</td>\n      <td>CVP</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>#13</td>\n      <td>2.2</td>\n      <td>TP53 (G136H)</td>\n      <td>0.0</td>\n      <td>100.0</td>\n      <td>45</td>\n      <td>RDHAOX</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>#1</td>\n      <td>2.1</td>\n      <td>del11q</td>\n      <td>11.8</td>\n      <td>100.0</td>\n      <td>41</td>\n      <td>FCR/A/BR</td>\n      <td>No</td>\n    </tr>\n  </tbody>\n</table>\n\n_*MMFS, maximal mutation frequency slope (in standard deviation per year); MCF1, mutation cell frequency of selected mutation at the first time point; MCF2, mutation cell frequency at the second time point; dT, the elapsed time between two samples; RCVP, rituximab, cyclophosphamide, vincristine, prednisone; RDHAOX, rituximab, dexamethasone, high dose cytarabine, oxaliplatin; A, alemtuzumab; CLB-O, chlorambucil, ofatumumab; FCO, fludarabine, cyclophosphamide, ofatumumab; FCR, fludarabine, cyclophosphamide, rituximab; CLB, chlorambucil; CVP, rituximab, cyclophosphamide, vincristine, prednisone; BR, bendamustine, rituximab.\u2020Total number of the cancer cells with NOTCH1 alteration does not change, but the allele frequency of the mutation increases because of the deletion of the wild-type allele._\n\n## Discussion\n\nIt is not known whether there is a preferred order of mutations in the development of cancer and how the order of mutations may impact clinical outcomes. We propose a TEDG framework, which is able to integrate longitudinal and cross-sectional genomic data into a directed graph of tumor evolution. The flow in this graph reveals underlying paths of tumor progression. Starting from time-series genomic data in one patient, a sequential network is reconstructed to capture the possible historical events of the evolution in the particular tumor. Integrating sequential data from many patients, we collect the ensemble of tumor histories by ISN, which presents a comprehensive topology of evolutionary landscape. A recent technology of network deconvolution is able to distinguish direct and indirect interactions using spectral methods, which reduce the weights of indirect connections and remove low weighted edges by selecting appropriate cut-offs (Feizi et al., 2013). To adapt this method to our particular problem depending on the number of samples, we introduce a degree parameter, \u03b2. To gain insights of the selection of beta, we propose a strategy to simulate tumor evolution by a one-step Markov process, with transition probability derived from Nordling's multi-mutation model. A linear and a branching evolution model are separately simulated in a study of four alterations. The proof-of-concept simulation shows that the TEDG strategy can obtain excellent performance in capturing the evolutionary history when the number of cases is beyond 30.\n\nWe apply TEDG to CLL and: (i) reconstruct an evolutionary network representing the sequential order of genetic lesions occurring during the course of this disease; (ii) investigate statistical associations and competitiveness of driver genetic lesions to uncover evolutionary paths; and (iii) correlate the order of alterations with the kinetics of changes in their allelic abundance, to identify the molecular alterations associated with the fastest growth of a subclone and their clinical impact on outcome.\n\nPhylogenetic trees are often employed to infer temporal order of gene mutations by assuming that common ancestors are early events, but phylogenetic methods usually require higher number of alterations than the ones available in our cohort. Standard statistical techniques to assess the significance of different branches rely on bootstrapping segregating sites, and the statistical power of these techniques using longitudinal data from cancer patients in few selected driver genes is extremely limited. None of the standard phylogenetic methods such as distance matrix methods, Bayesian phylogenetic methods, or parsimony methods can produce branches with enough bootstrap support (>80%). On the other hand, TEDG works with aggregate data from several patients allowing statistical power for robust estimates.\n\nAccording to TEDG analysis, the molecular lesions of CLL are temporally ordered in a specific fashion rather than being randomly accumulated. Among recurrent lesions, 13q14 deletion and +12 are initiating events, while mutations of TP53 and BIRC3 are late. This observation is consistent with the notion that del13q and +12 occur at a similar prevalence in all CLL phases, including monoclonal B-cell lymphocytosis, a condition that often anticipates overt CLL, thus suggesting that they are early events (Rawstron et al., 2008; Nieto et al., 2009; Rossi et al., 2009b; Fazi et al., 2011; Pasqualucci et al., 2011; Kern et al., 2012). Also, 13q14 deletion has been directly implicated in CLL initiation (Klein et al., 2010). On the other hand, late-onset abnormalities are known to accumulate in more advanced phases of the disease, thus suggesting that they are second-hit lesions (Zenz et al., 2009; Rossi et al., 2012). In our model, mutations of SF3B1 and 11q22-q23 deletions appear to be acquired at an intermediate time point. This observation is consistent with the clinical observation that mutations of SF3B1 and 11q22-q23 deletion co-segregate with an intermediate prognostic group of CLL (D\u00f6hner et al., 2000; Oscier et al., 2013; Rossi et al., 2014).\n\nBy integrating the cross-sectional data of association and anti-association between genetic lesions at CLL diagnosis with longitudinal data of clonal evolution from TEDG, two distinct and mutually exclusive evolutionary paths of evolution emerge. The first evolutionary path involves CLL initially harboring +12 and NOTCH1 mutations. In this path, clonal evolution proceeds toward the development of TP53 and BIRC3 abnormalities. The second evolutionary path involves CLL initially harboring 13q14 deletion and proceeds toward the development of SF3B1 mutations and BIRC3 abnormalities. Our data, as well as previous analyses (Rossi et al., 2013), show that deletion of 13q14 and +12 are mutually exclusive in CLL. From a clinical standpoint, +12 CLL is known to stand out of typical 13q14 deleted CLL because of their atypical cytomorphology and phenotype, the more intense expression of CD20, the preferential nodal presentation and the higher risk of transformation to Richter syndrome. These notions along with our novel observation that +12 and 13q14 deleted CLL proceed through distinct paths of clonal evolutions further support the hypothesis that at least two distinct genetic subtypes of CLL exist.\n\nThe presence at diagnosis of fully clonal genetic lesions that are considered late genetic events in CLL evolution, such as TP53 abnormalities, is already known to have an adverse impact on disease outcome (Zenz et al., 2008, 2010; Dicker et al., 2009; Malcikova et al., 2009; Rossi et al., 2009a; Gonzalez et al., 2011). We observe that a fraction of TP53 abnormalities, though subclonal at presentation, lead to expansion of fitter subclones that progressively predominate with time in the tumor architecture. The clinical impact of this observation is supported by the evidence that harboring higher fitness alterations correlates with poor survival and increased risk of CLL transformation into an aggressive lymphoma, an often-lethal complication known as Richter syndrome.\n\nIn this study, we have considered some of the most important and clinically relevant drivers of CLL (Rossi et al., 2013). The ATM mutations are also commonly found in CLL; however, the ATM gene is large and highly polymorphic without well-known hotspots. Therefore, the distinction of its driver mutations from constitutional variants is challenging. Also, from a clinical standpoint, the prognostic relevance of ATM mutations in CLL is still controversial, so we have excluded this gene from the current study (Lozanski et al., 2012; Ouillette et al., 2012; Skowronska et al., 2012).\n\nIn conclusion, the application of TEDG to CLL provides the proof-of-principle that this method is able to: (i) improve cancer classification and dissection into genetic subgroups following different paths of clonal evolution; and (ii) anticipate the genetic composition of the progressive/relapsed disease according to the genetic composition of the tumor clone at the time of diagnosis, including the development of genetic lesions associated with chemorefractoriness. TEDG provides a general framework that could be used to study and compare the evolutionary histories of other tumors.\n\n## Materials and methods\n\n### Samples\n\nWe collected 202 CLL patients provided with at least 2 sequential samples and followed for at least 2 years after presentation (median interval between baseline and last sequential sample: 62.8 months, range 24\u2013150 months). 70 out of the 202 patients were informative for TP53, NOTCH1, SF3B1, MYD88, or BIRC3 mutations (which are the most common mutations in this leukemia), overall accounting for 164 paired sequential samples collected at diagnosis, progression, and last follow-up. To analyze the dynamics of those mutations, we carried out high-depth next generation sequencing (NGS) to quantify the mutation allele frequencies at each time point of the disease course and to establish their modifications during leukemia progression. Additionally, copy number abnormalities at 13q14, chromosome 12, 11q22-q23, 17p13, as well as at the RB1, and BIRC3 loci were investigated by FISH. Inclusion criteria for the longitudinal analysis of clonal evolution were: (i) having at least two years of follow-up after diagnosis; and (ii) availability of >2 sequential samples collected at: (a) diagnosis; (b) each progression requiring treatment; (c) last follow-up. CLL diagnosis was according to 2008 IWCLL-NCI criteria and confirmed by a flow cytometry score >3 in all cases. Monoclonal B-cell lymphocytosis (MBL) was excluded. The study was approved by the institutional ethical committee of the Azienda Ospedaliero-Universitaria Maggiore della Carit\u00e0 di Novara affiliated with the Amedeo Avogadro University of Eastern Piedmont, Novara, Italy (Protocol Code 59/CE; Study Number CE 8/11). Patients provided informed consent in accordance with local IRB requirements and Declaration of Helsinki.\n\nCLL samples were extracted from fresh or frozen peripheral blood mononuclear cells (PBMC) isolated by Ficoll-Paque gradient centrifugation. In all cases, the fraction of tumor cells corresponded to 70\u201398% as assessed by flow cytometry. Matched normal DNA from the same patient was obtained from saliva or from purified granulocytes and confirmed to be tumor-free by PCR of tumor-specific IGHV-D-J rearrangements. High-molecular-weight (HMW) genomic DNA was extracted from tumor and normal samples according to standard procedures. DNA was quantified by the NanoDrop 2000C spectrophotometer (Thermo Scientific, Wilmington, DE). To validate TEDG, 1403 newly diagnosed and previously untreated CLL were enrolled in the study, of whom 931 (66%) were provided with clinical data and regular follow-up (Table 2). The frequency of alterations was higher in TEDG analysis group, because only informative patients with known mutated driver genes were included. Cross-sectional investigation of the associations and anti-associations between the most recurrent genetic lesions at diagnosis was based on the entire CLL cohort of 1403 patients. Survival analysis was based on CLL cases provided with clinical data (n = 931). Mutation screening of the IGHV, TP53, NOTCH1, SF3B1, MYD88, and BIRC3 genes were performed by Sanger sequencing.\n\n### Estimation of the variant allele frequency\n\nAmong cases that were informative for TP53, NOTCH1, SF3B1, MYD88, or BIRC3 mutations at any time point in the disease course, we carried out high-depth NGS to quantify the variant allele frequencies at each stage of their disease. Positions known to harbor TP53, NOTCH1, SF3B1, MYD88, or BIRC3 mutations by Sanger sequencing were amplified from genomic DNA by oligonucleotides containing the gene-specific sequences, along with 10-bp MID tag for multiplexing and amplicon library A and B sequencing adapters. The obtained amplicon library was subjected to deep sequencing on the Genome Sequencer Junior instrument (454 Life Sciences). In order to obtain at least 700-fold coverage per amplicon, no more than 100 amplicons/run were analyzed. The obtained sequencing reads were mapped to reference sequences and analyzed by the Amplicon Variant Analyzer software (Roche) to establish the mutant allele frequency. The sequencing depth in this study is on average 1200\u00d7, which is sufficient for a highly sensitive detection of mutations with allele frequency >1% out of the background error noise (Rossi et al., 2014).\n\n### Fluorescence in situ hybridization (FISH)\n\nProbes used for FISH analysis were: (i) LSID13S319 (13q14 deletion), CEP12 (trisomy 12), LSIp53 (17p13/TP53 deletion), and LSIATM (11q2-q23/ATM deletion) (Abbott, Rome, Italy); and (ii) the RP11-177O8 (BIRC3) BAC clone. The labeled BIRC3 BAC probe was tested against normal control metaphases to verify the specificity of the hybridization. For each probe, at least 400 interphase cells with well-delineated fluorescent spots were examined. Nuclei were counterstained with 4\u2032,6\u2032-diamidino-2-phenylindole (DAPI) and antifade reagent, and signals were visualized using an Olympus BX51 microscope (Olympus Italia, Milan, Italy).\n\n### Fluorescence-activated cell sorting (FACS) analysis\n\nThe count of CD19+CD5+ cells is a standard assay to define the representation of CLL cells in a diagnostic or research sample as measured by Fluorescence-activated cell sorting (FACS) analysis. A FACSCalibur flow cytometer (Becton\u2013Dickinson) was utilized for the analysis. Expression of CD5 and CD19 was analyzed by combining Peridinin-Chlorophyll-Protein\u2013Cyanine-5.5 (PerCP\u2013Cy5.5)-conjugated anti-CD19 mAbs and fluorescein isothiocyanate-conjugated anti-CD5 mAbs. In order to estimate the proportion of cells co-expressing CD19 and CD5, for each sample events were acquired by gating on low forward and side scatter (FSC/SSC) CD19+ cells, which were further divided into CD5\u2212 and CD5+ subsets. Irrelevant isotype-matched antibodies (Becton\u2013Dickinson) were used to determine background fluorescence. FACS data of all samples are listed in Supplementary file 2.\n\n### Adjustment of mutation frequency\n\nTo consider tumor content, we performed CD19/CD5 FACS analysis to quantify the fraction of tumor cells. To unify FISH and NGS data, and also to adjust MAF of mutations in genes with copy number abnormalities, we introduced mutation cell frequency (MCF). As shown in Figure 1\u2014figure supplement 1A, MCF represents the fraction of cancer cells containing particular alterations. Unlike MAF, copy numbers or tumor content do not affect MCF of a point mutation. For instance, if tumor purity is 70% and MAF of a heterogeneous variance in a diploid region is 0.2, then MCF is approximated by 0.2 \u00d7 2/0.7 \u2248 0.57. To infer MCF of different types of lesions, we applied the following strategy:i. MCF of a copy number abnormality (i.e., T12, del11q, del13q_x1, del13q_x2, del17p, delBIRC3, delRB1_x1, delRB1_x2) was calculated by FISH analysis divided by the fraction of CD19/CD5 cells based on FACS, correcting for the tumor purity.ii. Genes whose copy numbers were not frequently changed, such as MYD88 and SF3B1, were considered as diploid. So the MCF should be close to twofolds of MAF. However, MAF of some mutations might exceed 0.5, because of the random noise introduced in PCR. Here, MCF could be simply defined as a Piecewise function:\n\n$$\nMCF={2\\timesMAF,MAF<0.51,MAF\\geq0.5.\n$$\n\nBut this function was not smooth and it was not able to distinguish MAF = 0.5 and MAF = 0.9. To smooth this function, a Hill function was introduced, assuming\n\n$$\nMCF=\\frac{K(MAF)^{n}}{[1+K(MAF)^{n}]},\n$$\n\nwhere K and n are parameters. To find optimal parameters, such that MCF \u2248 2 \u00d7 MAF, we optimize the following objective function:\n\n$$\nmin_{K,n}F(K,n)=[\\int00.5(\\frac{K(MAF)^{n}}{[1+K(MAF)^{n}]^{\u22122\\timesMAF}})^{2}dMAF].\n$$\n\nA grid-search method was applied to exhaust potential values of K and n. Particularly, for K \u2208 {20,\u22ef, 29} and n \u2208 {1,\u22ef, 10}, F was calculated by the numerical integration of the above equation. Figure 1\u2014figure supplement 1B shows that the optimal solution is $K^=16$ and $n^=2$. So for mutations of MYD88 and SF3B1,\n\n$$\nMCF=\\frac{16(MAF)^{2}}{[1+16(MAF)^{2}]}.\n$$\n\nThis Hill function, which was used to smooth the piecewise function, showed a more smooth correlation between MAF and MCF (Figure 1\u2014figure supplement 1C). Additionally, by comparing FACS measurement of tumor purity, this Hill function form of MCF is more robust than either MAF without adjustment or simplistic piecewise function in assessing the fraction of cancer nuclei (Figure 1\u2014figure supplement 1E).iii. Genes that are frequently deleted in CLL, such as TP53 and BIRC3, were analyzed in the model without considering copy-neutral LOH or homozygous deletions (Figure 1\u2014figure supplement 1D). We assume four different cell types: wild type (upper left), heterozygous deletion (upper right), mutation (lower left), and both mutation and deletion (lower right). The cell fractions were represented by xi(i = 1,\u22ef, 4), respectively. So\n\n$$\nMAF_{mut}=\\frac{x_{3}+x_{4}}{2x_{1}+x_{2}+2x_{3}+x_{4}}=\\frac{x_{3}+x_{4}}{2\u2212(x_{2}+x_{4})}=\\frac{MCF_{mut}}{2\u2212MCF_{del}}\n$$\n\nand then MCF of mutation depends on MAF of mutation, as well as MCF of the deletion:\n\n$$\nMCF_{mut}=MAF_{mut}(2\u2212MCF_{del}).\n$$\n\nTo smooth it, we optimized\n\n$$\nmin_{K,n}F(K,n;MCF_{del})=[\\int00.5(\\frac{K(MAF)^{n}}{[1+K(MAF)^{n}]^{\u22122\\timesMAF+MAF\\timesMCF_{del}}})^{2}dMAF].\n$$\n\nHere if we use $K^$ and $n^$ to represent the optimal solution given MCFdel, for mutations of TP53 and BIRC3,\n\n$$\nMCF=\\frac{K^(MAF)^{n^}}{[1+K^(MAF)^{n^}]}.\n$$\n\nThe MCF values were then divided by the fraction of CD19+CD5+ cells based on FACS.\n\n### Simulation of linear and branching cancer models\n\nTo generate the artificial data for TEDG, we simulate cancer clonal evolution as a one-step Markov process, that is, the transition probability of mutation profile $P(\u03c8_{t_{k}}|\u03c8_{t_{k\u22121}},\u22ef,\u03c8_{t_{1}})=P(\u03c8_{t_{k}}|\u03c8_{t_{k\u22121}})$, where \u03c8tk is the observed mutation profile at time tk, which depended on the mutation profile at time tk\u22121. To define the transition probability, we focused on two simple models of four mutations x1,x2,x3,x4.\n\nIn the linear evolution model, we assumed that all mutations were mutated in a linear order shown in the left panel of Figure 2A. All possibilities of mutation status are\n\n$$\n{\\pi_{0}=\u03d5,\u2009\\pi_{1}=(x_{1}),\u2009\\pi_{2}=(x_{1},x_{2}),\u2009\\pi_{3}=(x_{1},x_{2},x_{3}),\\pi_{4}=(x_{1},x_{2},x_{3},x_{4})\u2009}.\n$$\n\nAccording to Nordling's multi-mutation model (Nordling, 1953), the transition probability was defined as\n\n$$\nP(\u03c8_{t_{k}}=\\pi_{j}|\u03c8_{t_{k\u22121}}=\\pi_{i})={[1\u2212e^{\u2212f\u00b7(t_{k}\u2212t_{k\u22121})}]^{j\u2212i}\u2212[1\u2212e^{\u2212f\u00b7(t_{k}\u2212t_{k\u22121})}]^{j\u2212i+1},j>i;e^{\u2212f\u00b7(t_{k}\u2212t_{k\u22121})},j=i;0,j<i.,\n$$\n\nwhere f represents fitness of the new mutation. The transition probability is shown in Figure 2B. The longitudinal data were then generated for each patient following the above model. To simplify the model, we fixed the number of time points (three) and the length of interval between time points (ten). We asked whether or not TEDG framework can reconstruct the order of mutations and how many patients are required. To answer this question, we applied a grid-search strategy to optimize parameter \u03b2 and number of patients. Specifically, all possible combinations of parameter \u03b2 from 0 to 1 (step by 0.1) and patient number from 1 to 100 (step by 1) are exhausted. For each combination, we randomly simulated the cancer patients and applied TEDG framework to reconstruct the order for 10 times. The frequency of reconstructing the exact order was defined as the accuracy of TEDG. Figure 2D shows an example with \u03b2 equals 0.2 and the number of patients equals 15. Edge weights of ISN present the number of simulated patients with one mutation happening before another. The techniques of deconvolution and minimal spanning tree reconstruct the real structure by removing indirect interactions. Figure 2E summarizes the correlation between number of patients and optimal accuracy of TEDG.\n\nDifferent from linear model, the branching model assumes that x3 and x4 are independently following the mutation of x2. All possibilities of mutation status are\n\n$$\n{\\pi_{0}=\u03d5,\u2009\\pi_{1}=(x_{1}),\u2009\\pi_{2}=(x_{1},x_{2}),\u2009\\pi_{3}=(x_{1},x_{2},x_{3}),\\pi_{4}=(x_{1},x_{2},x_{4})\u2009}.\n$$\n\nAccording to Nordling's multi-mutation model (Nordling, 1953), when j \u2264 2, the transition probability is the same as linear model:\n\n$$\nP(\u03c8_{t_{k}}=\\pi_{j}|\u03c8_{t_{k\u22121}}=\\pi_{i})={[1\u2212e^{\u2212f\u00b7(t_{k}\u2212t_{k\u22121})}]^{j\u2212i}\u2212[1\u2212e^{\u2212f\u00b7(t_{k}\u2212t_{k\u22121})}]^{j\u2212i+1},j>i;e^{\u2212f\u00b7(t_{k}\u2212t_{k\u22121})},j=i;0,j<i.\n$$\n\nWhen j > 2, the transition probability is\n\n$$\nP(\u03c8_{t_{k}}=\\pi_{j}|\u03c8_{t_{k\u22121}}=\\pi_{i})={[1\u2212e^{\u2212f\u00b7(t_{k}\u2212t_{k\u22121})}]^{3\u2212i},i<3;1,i=j;0,otherwise.\n$$\n\nFigure 2F shows an example of branching model with \u03b2 equals 0.2 and number of patient equals 15. Figure 2G summarized the correlation between number of patients and optimal accuracy of TEDG in branching model.\n\n### Network construction and analysis\n\nTo construct the sequential network of alterations for each tumor, we monitored the presence or absence of each genetic lesion in each sample. By collecting the clonal representation of each lesion from NGS and FISH analysis, we defined the status of each lesion with a cut-off of 5%. If the frequency of a genetic lesion is larger than 5%, we will name it as present; otherwise absent. If event A predates event B, we added a directed link between A and B. The ISN was constructed by pooling all sequential networks from different patients. To simplify ISN, we removed self-loops by subtracting the weight of weaker direction. To hierarchically layout the simplified ISN, we use yFiles Hierarchical Layout algorithm in Cytoscape 2.8.2, which well represents main direction or \u2018flow\u2019 in a directed network. With this method, nodes were placed in hierarchically arranged layers and the nodes within each layer are ordered in such a way that minimizes the number of edge crossings (Smoot et al., 2011). To statistically test whether the alterations are temporally ordered or randomly accumulated, we assume that in-degree (the number of incoming arrows) $d_{in}^{i}$ is equal to out-degree (the number of outgoing arrows) $d_{out}^{i}$ for each node i, and then $\\sumi\\frac{(d_{in}^{i}\u2212d_{out}^{i})^{2}}{d_{out}^{i}}$ follows a chi square distribution with degree of freedom n \u2212 1, where n is the number nodes in the network. To test the statistical association of lesions in TEDG, we counted the number of samples carrying each pair of lesions and then calculated the p-value based on hypergeometric distribution to test whether the two genetic lesions are independent or not. To consider the effect of multi-hypothesizes, we corrected p-values with Bonferroni method and made a cut-off of 0.05. If two lesions were significantly co-mutated, a red link was added, while if they were significantly mutually exclusive, a blue edge was added.\n\nSuppose Gdir is the adjacent matrix of all direct interactions/orders, the simplified ISN should be a summary of direct and indirect orders in the deconvolution formula Gdir = Gobs(I + \u03b2Gobs)\u22121, where, Gobs is the observed weighted adjacent matrix, I is the identify matrix, and \u03b2 is a scaling factor between zero and one indicating the degree of deconvolution. The resulting matrix of deconvolution formula indicates the score of an edge to be a direct interaction (edge weights in the middle panel of Figure 2D,F). We then introduced a minimal spanning tree-based method to determine the final TEDG, in which we transformed the deconvoluted weights with a negative exponential function, and then calculated the minimal spanning tree with Prim's algorithm.\n\n### Fitting the evolutionary models\n\nWe developed Fit the Evolutionary Model (FEM) to properly fit the evolutionary model by systematically identifying clonal replacement in all sample pairs. FEM defines Z-scores for variant allele frequency by NGS and percentage of nuclei harboring abnormalities by FISH to represent normalized changes of the frequency of the lesions. For ith mutation in jth patient at the kth time point tk\n\n$$\nZ_{i}^{j}(t_{k})=\\frac{f_{i}^{j}(t_{k})\u2212f_{i}^{j}(t_{k\u22121})}{\\sigma_{seq}\\sqrt{\\frac{f_{i}^{j}(t_{k})+f_{i}^{j}(t_{k\u22121})}{2}(1\u2212\\frac{f_{i}^{j}(t_{k})+f_{i}^{j}(t_{k\u22121})}{2})}},\n$$\n\nwhere f is the mutation frequency of some particular gene mutation and \u03c3seq is its standard variation. Similarly, for the ith copy number change in the jth patient at the kth time point tk\n\n$$\nZ_{i}^{j}(t_{k})=\\frac{f_{i}^{j}(t_{k})\u2212f_{i}^{j}(t_{k\u22121})}{\\sigma_{FISH}\\sqrt{\\frac{f_{i}^{j}(t_{k})+f_{i}^{j}(t_{k\u22121})}{2}(1\u2212\\frac{f_{i}^{j}(t_{k})+f_{i}^{j}(t_{k\u22121})}{2})}},\n$$\n\nwhere f is the frequency nuclei harboring the abnormality of some particular gene mutation and \u03c3FISH is its standard variation.\n\nThe change of genetic lesion frequency is a synergic effect of treatment, tumor progression, and experimental noises, such as sequencing error or change of tumor purity. To obtain the variance caused by background noises, FEM robustly fit \u03c3seq and \u03c3FISH by eliminating data obviously affected by treatments or tumor progression. Based on this, we could calculate p-values of each genetic lesion in all sample pairs. To assess whether there was a significantly increased (or decreased) subclone in a given sample pair, we use Fisher's combinational test to combine p-values of all increased (or decreased) genetic lesions. The resulting p-values were separately defined as P_increase and P_decrease. Sample pairs that were significant in both P_increase and P_decrease were defined as sample pairs containing replacement events, which were further fit to the branching evolution model. All the others were compatible with the gradual linear model.\n\n### Growth rate and maximal mutation frequency slope (MMFS)\n\nTo investigate the fitness of genetic lesions, we defined growth rate and the maximal mutation frequency slope (MMFS). For the ith mutation in the jth patient at the kth time point tk, mutation frequency slope is defined as $s_{i}^{j}(t_{k})=\\frac{z_{i}^{j}(t_{k})}{t_{k}\u2212t_{k\u22121}}$, where z is the Z-scores defined above. The growth rate of ith mutation in the jth patient at the kth time point tk is defined as $g_{i}^{j}(t_{k})=max{s_{i}^{j}(t_{k}),0}$. Furthermore, for the jth patient, MMFS is defined as $s^{j}=max_{i}{max_{k}[s_{i}^{j}(t_{k})]}$.\n\n### Survival analysis\n\nOverall survival (OS) was measured from date of initial presentation to date of death from any cause (event) or last follow-up (censoring). The cumulative probability of Richter syndrome transformation was measured from date of initial presentation to date of the biopsy documenting Richter syndrome transformation (event), death or last follow-up (censoring). Survival analysis was performed by the Kaplan\u2013Meier method. The crude association between time-fixed exposure variables at diagnosis and survival was estimated by Cox proportional hazard regression. The analysis was performed with the Statistical Package for the Social Sciences (SPSS) software v.20.0 (Chicago, IL).\n\n### Candidate gene mutation screening\n\nThe mutation hotspots of TP53 (exons 4\u20139, including splicing sites; RefSeq NM_000546.5), NOTCH1 (exon 34, including splicing sites; RefSeq NM_017617.2), SF3B1 (exons 14, 15, 16, 18, including splice sites; RefSeq NM_012433.2), MYD88 (exons 3, 5, including splicing sites; RefSeq NM_002468.4), and BIRC3 (exons 6\u20139, including splicing sites; RefSeq NM_001165.4) genes were analyzed by PCR amplification and DNA direct sequencing of high-molecular weight genomic DNA. Sequences for all annotated exons and flanking splice sites were retrieved from the UCSC Human Genome database using the corresponding mRNA accession number as a reference. PCR primers, located \u223c50 bp upstream or downstream to target exon boundaries, were either derived from previously published studies or designed in the Primer 3 program (http://frodo.wi.mit.edu/primer3/) and filtered using UCSC in silico PCR to exclude pairs yielding more than a single product. All PCR primers and conditions are listed in Supplementary file 1. Purified amplicons were subjected to conventional DNA Sanger sequencing using the ABI PRISM 3100 Genetic Analyzer (Applied Biosystems) and compared to the corresponding germline sequences using the Mutation Surveyor Version 4.0.5 software package (SoftGenetics) after automated and/or manual curation. Of the evaluated sequences, 99% had a Phred score of 20 or more and 97% had a score of 30 or more. Candidate variants were confirmed from both strands on independent PCR products. The following databases were used to exclude known germline variants: Human dbSNP Database at NCBI (Build 136) (http://www.ncbi.nlm.nih.gov/snp); Ensembl Database (http://www.ensembl.org/index.html); The 1000 Genomes Project (http://www.1000genomes.org/); five single-genome projects available at the UCSC Genome Bioinformatics resource (http://genome.ucsc.edu/). Synonymous variants, previously reported germline polymorphisms and changes present in the matched normal DNA were removed from the analysis.\n\n### IGHV-IGHD-IGHJ rearrangement analysis\n\nPCR amplification of IGHV-IGHD-IGHJ rearrangements was performed on high molecular weight genomic DNA using IGHV leader primers or consensus primers for the IGHV FR1 along with appropriate IGHJ genes, as previously described. PCR products were directly sequenced with the ABI PRISM BigDye Terminator v1.1 Ready Reaction Cycle Sequencing kit (Applied Biosystems) using the ABI PRISM 3100 Genetic Analyzer (Applied Biosystems). Sequences were analyzed using the IMGT databases and the IMGT/V-QUEST tool (version 3.2.17, Universit\u00e9 Montpellier 2, CNRS, LIGM, Montpellier, France).\n",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "8c7746ee-4b70-4342-a4f9-789662513884",
+      "submission_id": "9cb7e27c-6072-4830-94a0-b415e430623f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Emmanouil T Dermitzakis, University of Geneva Medical School , Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02869.022](https://doi.org/10.7554/eLife.02869.022)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cTumor Evolutionary Directed Graphs and the History of Chronic Lymphocytic Leukemia\u201d for consideration at eLife. Your article has been favorably evaluated by Chris Ponting (Senior editor), a Reviewing editor, and 2 reviewers. The Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nOverall, the reviewers found the work interesting but raised a number of concerns that need to be addressed regarding the analysis of the data as well as clarifications on the design and presentation of the work.\n\nMajor comments:\n\n1) Relative timing of mutations: It is not entirely clear in the Materials and methods or main text exactly how the temporal order of mutations is inferred. At one point, mutations are described as 'present' or 'absent' on the basis of allele fraction >5% and compared across time points. Really, the only true method for inferring temporal ordering is through reconstruction of phylogenetic trees; this can be difficult from bulk sequencing data, but there are methods emerging to do this.\n\n2) Copy-number adjusted allele fractions: On a similar note, it is not clear that the fraction of cells carrying a point mutation has been adjusted for the copy number at that locus. This is especially important for the TP53 point mutations when the other allele has undergone LOH. Also, how are double hits in a given gene dealt with in the graph method?\n\n3) Rate of increase: The argument that later mutations show more rapid increase than earlier mutations is difficult to sustain on the basis of these data. The initiating lesion, by definition, will be present in all the tumor cells, and therefore cannot increase at the same magnitude as later mutations. Given that it is a prerequisite for entry into the study that the patient be diagnosed with CLL, one would imagine that, at that diagnostic time point, all the earliest mutations might already be clonal, and therefore will not change over time.\n\n4) A question for another type of inference approach is: How do we know ground truth? The only way to know is if there were a set of samples from which there was frequent sampling, and if there were within clinical defined groups. Robustness of the network is dependent on how good the data is going in. While they do mention that they selected 70 samples for TEDG for which there were at least two sequential samples, in all likelihood, 2 samples are inadequate for defining the hierarchical relationships. There needs to be some table that provides information on the distribution of sequential samples per patient, and what types of time intervals between sequential samples. While a figure about the samples is provided as Figure 3\u2013figure supplement 1, this is very hard to digest. This is a very very heterogeneous dataset, with 10 of 70 proceeding to Richters, more than half with treatment. A question is whether or not there are enough samples, by the time that one breaks down the patients into discrete clinical groups, to understand the hierarchical relationships.\n\nRelated to this, the numbers of samples are very confusing. This is what the reviewer understood: it seems that they start out with 202 patients, but only 70 had known highly recurrent drivers. 10 of the 70 had Richters Transformation, and how many have been excluded? By the time we get to Figure 4, there are 32 samples, but there is no discussion how this number came about. In general, in what percentage of sample was a polyclonal tumor population or a subclonal driver identified at the time of diagnosis?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cTumor Evolutionary Directed Graphs and the History of Chronic Lymphocytic Leukemia\u201d for further consideration at eLife. Your revised article has been favorably evaluated by Chris Ponting (Senior editor), a member of the Board of Reviewing Editors, and the original two reviewers. The manuscript has been improved but there are two remaining major issues that will need to be addressed before acceptance, as outlined below. We have copied the exact wording of the reviewer to facilitate the response.\n\nMajor issues:\n\n1) A major revision has been the addition of the concept of MCF. This was done to address the concern of adjusting for local copy number changes that could affect estimation of the clone size with a gene alteration. Unfortunately, the approach taken by the authors to calculate MCF seems not well defined. This reviewer is concerned that sampling error in VAF values might fluctuate above or below 0.5 in ways that have a large influence on the inferred MCF. No convincing data is presented by the authors to justify their novel and elaborate seeming approach. Several approaches for correcting mutation VAF values for tumor purity and somatic copy number changes have been described (e.g. Carter et al., 2012, Nat Biotech; Landau et al., 2013, Cell; Fischer et al., 2014, Cell Reports). Notably, these methods rely on analysis of germline heterozygous SNPs at the mutant locus to infer CN-LOH, which is a much more robust approach. Could the authors simply use one of these established (and principled) approaches? This would leverage their exome data more fully.\n\n2) They rely on FISH analysis for estimations of trisomy 12 and deletions of various chromosomal regions. This is not accurate, as it is not possible to correct for purity when using FISH data. In addition, copy neutral LOH cannot be inferred from FISH.\n",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f86a146b-2bd2-4eac-b0d2-1c990ed58ba3",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C1",
+      "claim": "Cancer is a clonal evolutionary process, caused by successive accumulation of genetic alterations providing milestones of tumor initiation, progression, dissemination, and/or resistance to certain therapeutic regimes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer is a clonal evolutionary process, caused by successive accumulation of genetic alterations providing milestones of tumor initiation, progression, dissemination, and/or resistance to certain therapeutic regimes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cancer biology that draws from established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "3911a0a4-f58d-4177-b821-119d7b5b900a",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C2",
+      "claim": "The evolution of CLL follows a time-ordered process represented as a global flow in TEDG that proceeds from initiating events to late events.",
+      "claim_type": "EXPLICIT",
+      "source": "(a) the evolution of CLL follows a time-ordered process represented as a global flow in TEDG that proceeds from initiating events to late events",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the TEDG analysis performed on the CLL cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "44f9a65c-9b05-4dd8-828f-9d3e95521cd3",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C3",
+      "claim": "There are two distinct and mutually exclusive evolutionary paths of CLL evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "(b) there are two distinct and mutually exclusive evolutionary paths of CLL evolution",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the TEDG analysis and statistical association analysis of the CLL cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "fea5f1a2-f84b-40e8-9ada-a9f604672939",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C4",
+      "claim": "Higher fitness clones are present in later stages of the disease, indicating a progressive clonal replacement with more aggressive clones.",
+      "claim_type": "EXPLICIT",
+      "source": "(c) higher fitness clones are present in later stages of the disease, indicating a progressive clonal replacement with more aggressive clones",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the growth rate analysis of genetic lesions in the CLL cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "8c784d1b-d8d4-4300-b966-733d1e42a2bb",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C5",
+      "claim": "Cancer is a complex, Darwinian, adaptive clonal evolutionary process, driven by the accumulation of genetic alterations that confer high proliferative and survival advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer is a complex, Darwinian, adaptive clonal evolutionary process, driven by the accumulation of genetic alterations that confer high proliferative and survival advantage (Merlo et al., 2006; Greaves and Maley, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "7815152d-8c1f-498a-874a-4cc6b4bad435",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C6",
+      "claim": "Recent advances in sequencing technologies have allowed uncovering the most common genetic alterations of many tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent advances in sequencing technologies have allowed uncovering the most common genetic alterations of many tumors, but the temporal order of most of these alterations is still unknown (Futreal et al., 2004; Greenman et al., 2007; Santarius et al., 2010; Lawrence et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "ed47f927-17c0-4109-b5d8-f6acaff9cfd8",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C7",
+      "claim": "The temporal order of most genetic alterations in tumors is still unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent advances in sequencing technologies have allowed uncovering the most common genetic alterations of many tumors, but the temporal order of most of these alterations is still unknown (Futreal et al., 2004; Greenman et al., 2007; Santarius et al., 2010; Lawrence et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "8aed38b4-2a4d-478e-9d76-bcb893907507",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C8",
+      "claim": "Landau et al. sampled leukemia cells from 18 CLL patients at two time points, revealing that SF3B1 and TP53 mutations are late events in subclonal tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Landau et al. sampled leukemia cells from 18 CLL patients at two time points, revealing that SF3B1 and TP53 mutations are late events in subclonal tumor cells (Landau et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "1cf33188-758b-414f-b951-c3761043cc45",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C9",
+      "claim": "The study of different stages of colorectal carcinogenesis showed the sequence of genetic events to be APC, KRAS, and then TP53.",
+      "claim_type": "EXPLICIT",
+      "source": "The study of different stages of colorectal carcinogenesis showed the sequence of genetic events to be APC, KRAS, and then TP53 (Fearon and Vogelstein, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "37f160a3-c406-4fc4-a153-f89a05ad0ed2",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C10",
+      "claim": "RESIC is a stochastic process model to identify the order of mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "RESIC is a stochastic process model to identify the order of mutations (Attolini et al., 2010), which successfully confirmed the results in colorectal cancer, suggesting that cross-sectional data is informative for the prediction of mutation order.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "0cef4513-0c9f-4245-9f88-05ccd2e89879",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C11",
+      "claim": "RESIC successfully confirmed the results in colorectal cancer, suggesting that cross-sectional data is informative for the prediction of mutation order.",
+      "claim_type": "EXPLICIT",
+      "source": "RESIC is a stochastic process model to identify the order of mutations (Attolini et al., 2010), which successfully confirmed the results in colorectal cancer, suggesting that cross-sectional data is informative for the prediction of mutation order.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "87fdb945-3db9-4667-9861-c9e1a8594ab4",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C12",
+      "claim": "RESIC does not consider a critical aspect of carcinogenesis that most tumors are heterogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "However, RESIC does not consider a critical aspect of carcinogenesis that most tumors are heterogeneous (Parsons, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "7d11f656-f34e-4c56-9af2-64f1e5cbbd4a",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C13",
+      "claim": "CLL represents the most common adult leukemia in Western countries.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we have applied TEDG to study the dynamics of the acquisition of alterations in chronic lymphocytic leukemia (CLL), which represents the most common adult leukemia in Western countries (Hallek et al., 2008; M\u00fcller-Hermelink et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "ec6d252b-ea25-4d4f-b82b-f0e748445aa6",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C14",
+      "claim": "CLL is an ideal model for studying clonal dynamics because it is possible to collect highly purified sequential samples over time.",
+      "claim_type": "EXPLICIT",
+      "source": "CLL is an ideal model for studying clonal dynamics because it is possible to collect highly purified sequential samples over time, and its clinical course is well characterized by serial cycles of response, remissions, and relapse ending in some instances with the development of lethal complications such as chemoresistant progression or transformation into an aggressive lymphoma (Richter syndrome) (Pasqualucci et al., 2011; Zenz et al., 2012; Fabbri et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "6be2f03a-ae0a-44a2-9917-914b0d4bd075",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C15",
+      "claim": "The clinical course of CLL is well characterized by serial cycles of response, remissions, and relapse ending in some instances with the development of lethal complications such as chemoresistant progression or transformation into an aggressive lymphoma (Richter syndrome).",
+      "claim_type": "EXPLICIT",
+      "source": "CLL is an ideal model for studying clonal dynamics because it is possible to collect highly purified sequential samples over time, and its clinical course is well characterized by serial cycles of response, remissions, and relapse ending in some instances with the development of lethal complications such as chemoresistant progression or transformation into an aggressive lymphoma (Richter syndrome) (Pasqualucci et al., 2011; Zenz et al., 2012; Fabbri et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "2dc1c26e-b90d-49c8-aec6-749771959f03",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C16",
+      "claim": "The study collected genomic information from the most common alterations in a cohort of 70 CLL patients spanning over a period of 12 years (2001\u20132012).",
+      "claim_type": "EXPLICIT",
+      "source": "For this purpose, we envision a dual cross-sectional and longitudinal strategy by collecting genomic information from the most common alterations in a cohort of 70 CLL patients spanning over a period of 12 years (2001\u20132012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the data collection for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "6c499892-27bd-4c57-b78b-eaa6c2f1fefc",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C17",
+      "claim": "Half (35 out of 70) of the patients have at least one subclonal genetic lesion with mutation frequency less than 20% at diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Half (35 out of 70) of the patients have at least one subclonal genetic lesion with mutation frequency less than 20% at diagnosis (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "f6441cc7-753f-499d-82bb-540bd25c1c6b",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C18",
+      "claim": "If the genetic alterations driving CLL progression follow a preferential order, there exists a well ordered directed flow in ISN.",
+      "claim_type": "EXPLICIT",
+      "source": "We ask whether the genetic lesions in CLL are temporally ordered or randomly accumulated and reason that if the genetic alterations driving CLL progression follow a preferential order, there exists a well ordered directed flow in ISN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the TEDG framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "1763930c-82a1-47c6-a4cf-7b2c0a0123aa",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C19",
+      "claim": "Figure 3A represents a hierarchical layout of ISN, which depicts an ordered structure of lesions in genes represented by sources (nodes with more outgoing arrows) and sinks (nodes with more incoming arrows) (p-value < 0.0001, chi square distribution).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3A represents a hierarchical layout of ISN, which depicts an ordered structure of lesions in genes represented by sources (nodes with more outgoing arrows) and sinks (nodes with more incoming arrows) (p-value < 0.0001, chi square distribution).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the statistical analysis of the ISN shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "3f3cd7e4-1739-4832-b9e1-600f661fb981",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C20",
+      "claim": "Deletion of 13q14, +12 and mutations of NOTCH1 are significant early events in CLL development.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of 13q14, +12 and mutations of NOTCH1 are significant early events in CLL development, while mutations of TP53 and BIRC3 are significant late events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the temporal order analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "ab48d40b-04cb-42b5-be59-bfc98d67f35d",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C21",
+      "claim": "Mutations of TP53 and BIRC3 are significant late events in CLL development.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of 13q14, +12 and mutations of NOTCH1 are significant early events in CLL development, while mutations of TP53 and BIRC3 are significant late events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the temporal order analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "b75e14f7-8c83-4f04-b94c-e92bd358476a",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C22",
+      "claim": "MYD88 mutations might occur even before 13q14 deletion (one of six patients), indicating that activation of the Toll-like receptor pathway could be important in the initiation of a fraction of CLL tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Though the sample size prevents statistical considerations, MYD88 mutations might occur even before 13q14 deletion (one of six patients), indicating that activation of the Toll-like receptor pathway could be important in the initiation of a fraction of CLL tumors (Arvaniti et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on data from the study and supported by a citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "6ec827d6-1a66-4ae0-bd8b-54b8d38f2fa8",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C23",
+      "claim": "The sequential order of the genetic lesions remains consistent (Pearson's correlation = 0.9, p-value < 1e-3) when evolutionary networks are constructed with patients who received chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequential order of the genetic lesions remains consistent (Pearson's correlation = 0.9, p-value < 1e-3) when evolutionary networks are constructed with patients who received chemotherapy (Figure 3\u2014figure supplement 2), suggesting that the order of development of the genetic lesions may be affected by therapy (the Pearson's correlation of the order in patients without chemotherapy is 0.4 with p-value > 0.1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of the data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "15fc6d5e-12a3-4936-9556-1de93942d112",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C24",
+      "claim": "The order of development of the genetic lesions may be affected by therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequential order of the genetic lesions remains consistent (Pearson's correlation = 0.9, p-value < 1e-3) when evolutionary networks are constructed with patients who received chemotherapy (Figure 3\u2014figure supplement 2), suggesting that the order of development of the genetic lesions may be affected by therapy (the Pearson's correlation of the order in patients without chemotherapy is 0.4 with p-value > 0.1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the statistical analysis of the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "3afd0320-2b3d-41ce-9ad8-788ad4d5a3be",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C25",
+      "claim": "The monoallelic 13q14 deletion, RB1 deletion, and +12 are significant early events (p-value < 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that the monoallelic 13q14 deletion, RB1 deletion, and +12 are significant early events (p-value < 0.01), while the BIRC3 E537fs and the TP53 R248Q are significant late lesions (p-value < 0.05) (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "9b1c7a84-339c-43ef-a060-7808602023c1",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C26",
+      "claim": "The BIRC3 E537fs and the TP53 R248Q are significant late lesions (p-value < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that the monoallelic 13q14 deletion, RB1 deletion, and +12 are significant early events (p-value < 0.01), while the BIRC3 E537fs and the TP53 R248Q are significant late lesions (p-value < 0.05) (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "08045880-b858-4129-9d67-abc2cbc55437",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C27",
+      "claim": "Different lesions affecting the same gene may occur in distinct branches and stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the analysis of ISN and TEDG shows that different lesions affecting the same gene may occur in distinct branches and stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the analysis of ISN and TEDG.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "71dbd80d-a31f-4956-82bd-90a13cd433a5",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C28",
+      "claim": "Mutations K700E and K666E of SF3B1 are late events in cases harboring 13q14 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mutations K700E and K666E of SF3B1 are late events in cases harboring 13q14 deletion, while mutations R273C of TP53 are late events in cases with +12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the analysis of ISN and TEDG.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "c51ecd42-7b11-45f9-87b3-ba893c318ea1",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C29",
+      "claim": "Mutations R273C of TP53 are late events in cases with +12.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mutations K700E and K666E of SF3B1 are late events in cases harboring 13q14 deletion, while mutations R273C of TP53 are late events in cases with +12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the analysis of ISN and TEDG.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "344337e4-1f92-494b-89ba-e91136a0caf8",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C30",
+      "claim": "TEDG reveals the H179R and Y234C missense substitutions in TP53 may be early events, while the R248Q, R273C, P152fs, and N239T substitutions are late events.",
+      "claim_type": "EXPLICIT",
+      "source": "Though the sample size prevents statistical considerations, TEDG reveals the H179R and Y234C missense substitutions in TP53 may be early events, while the R248Q, R273C, P152fs, and N239T substitutions are late events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the TEDG analysis, but the sample size limits statistical power.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "0fbcb323-52dd-4e61-acd7-8381650b41ad",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C31",
+      "claim": "A minority of patients (n = 3/60, 5%; FDR = 0.1) are characterized by a significantly decreased or undetectable representation of the founding clone, coupled with a significant increase of a second subclone that represented a small subpopulation at an earlier time point, consistent with a branching evolution model.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of our cohort (excluding patients with Richter's transformation, refer to 'Materials and methods' for details) shows that a minority of patients (n = 3/60, 5%; FDR = 0.1) are characterized by a significantly decreased or undetectable representation of the founding clone, coupled with a significant increase of a second subclone that represented a small subpopulation at an earlier time point, consistent with a branching evolution model (highlighted by yellow circle in Figure 5A\u2013B, and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis shown in Figure 5A-B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "456d5bdb-ce96-43cf-bec2-2f56ea44a6b0",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C32",
+      "claim": "In all three cases clonal replacement events involve SF3B1 mutations and occur after treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in all three cases clonal replacement events involve SF3B1 mutations and occur after treatment (Figure 5C), suggesting that the branching evolution model is closely connected to the combination of treatments and the emergence of SF3B1 mutations (p-value = 0.0016 by Fisher's exact test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5C and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "7de74cf5-3fa0-4d7b-aa8f-b64fba04122d",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C33",
+      "claim": "The branching evolution model is closely connected to the combination of treatments and the emergence of SF3B1 mutations (p-value = 0.0016 by Fisher's exact test).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in all three cases clonal replacement events involve SF3B1 mutations and occur after treatment (Figure 5C), suggesting that the branching evolution model is closely connected to the combination of treatments and the emergence of SF3B1 mutations (p-value = 0.0016 by Fisher's exact test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "333d941f-0fec-4316-bebb-7b789f1e6cb9",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C34",
+      "claim": "At the time of treatment requirement, limiting the knowledge of disease genetics to the dominant clone will likely be uninformative for accurate therapeutic decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation implies that, at the time of treatment requirement, limiting the knowledge of disease genetics to the dominant clone will likely be uninformative for accurate therapeutic decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of clonal replacement events.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "aba46e94-dc29-4f96-9b17-4bb86fbe975e",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C35",
+      "claim": "Most of the co-mutations are experimentally confirmed by previous studies, including: co-occurrence of 17p13 deletion and TP53 mutations, reflecting a typical two-hit model for tumor suppressor genes; co-occurrence of BIRC3 deletion, 11q22-q23 deletion, and BIRC3 mutations; and the relationship between NOTCH1 mutations and +12.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the co-mutations (connected in red in Figure 6B) are experimentally confirmed by previous studies, including: co-occurrence of 17p13 deletion and TP53 mutations, reflecting a typical two-hit model for tumor suppressor genes; co-occurrence of BIRC3 deletion, 11q22-q23 deletion, and BIRC3 mutations; and the relationship between NOTCH1 mutations and +12 (Balatti et al., 2012; Del Giudice et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to previous research and data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "8346a049-e82a-4e22-9742-2709b022e6a3",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C36",
+      "claim": "This large cohort of patients allows the statistical power to reveal other significant and previously unreported co-occurrence interactions, including the co-occurrence of BIRC3 abnormalities with +12 and NOTCH1 mutations and the co-occurrence of 13q14 deletion and BIRC3 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to previously reported associated lesions, this large cohort of patients allows the statistical power to reveal other significant and previously unreported co-occurrence interactions, including the co-occurrence of BIRC3 abnormalities with +12 and NOTCH1 mutations and the co-occurrence of 13q14 deletion and BIRC3 deletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the large cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "003368dd-df9a-4de0-8937-220f595e66ff",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C37",
+      "claim": "This large cohort also reveals mutually exclusive relationships between +12 and 13q14 deletion and between NOTCH1 mutations and 13q14 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "This large cohort also reveals mutually exclusive relationships between +12 and 13q14 deletion and between NOTCH1 mutations and 13q14 deletion (connected in blue in Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "bbe20209-8b36-40b7-837c-8d289d3747df",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C38",
+      "claim": "The statistical association analysis is consistent with the prediction of TEDG and indirectly validates the ability of TEDG in successfully capturing the major information in tumor evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The statistical association analysis is consistent with the prediction of TEDG and indirectly validates the ability of TEDG in successfully capturing the major information in tumor evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the consistency between TEDG predictions and statistical association analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "d3aca8be-9ada-45b3-9e1a-d0d503bc351d",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C39",
+      "claim": "The growth rates of late events (17p13 deletion, mutations of SF3B1, 11q22-q23 deletion, BIRC3 deletion, mutations of TP53, and mutations of BIRC3) are found higher than those of early events (mutations of MYD88, 13q14 deletion, +12, mutations of NOTCH1, and RB1 deletion) with p-value = 0.005 by Wilcoxon Rank-Sum Test.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the growth rates of late events (17p13 deletion, mutations of SF3B1, 11q22-q23 deletion, BIRC3 deletion, mutations of TP53, and mutations of BIRC3) are found higher than those of early events (mutations of MYD88, 13q14 deletion, +12, mutations of NOTCH1, and RB1 deletion) with p-value = 0.005 by Wilcoxon Rank-Sum Test (Figure 6C), revealing that late events may drive higher fitness or more aggressive clones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "c0e77184-8277-4791-8834-822b352638f0",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C40",
+      "claim": "Late events may drive higher fitness or more aggressive clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the growth rates of late events (17p13 deletion, mutations of SF3B1, 11q22-q23 deletion, BIRC3 deletion, mutations of TP53, and mutations of BIRC3) are found higher than those of early events (mutations of MYD88, 13q14 deletion, +12, mutations of NOTCH1, and RB1 deletion) with p-value = 0.005 by Wilcoxon Rank-Sum Test (Figure 6C), revealing that late events may drive higher fitness or more aggressive clones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the growth rate analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "79afa671-e02a-4b98-b7a5-9d77f31f69db",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C41",
+      "claim": "After eliminating clonal genetic lesions with MCF > 20% in the above analysis, the growth rates of late and early events are still significantly different with p-value = 0.0114 by Wilcoxon Rank-Sum Test.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after eliminating clonal genetic lesions with MCF > 20% in the above analysis, we still find the growth rates of late and early events to be significantly different with p-value = 0.0114 by Wilcoxon Rank-Sum Test (Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis shown in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "deb03b54-0bbb-4191-b77a-5250e4cafa98",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C42",
+      "claim": "Only genetic lesions affecting the TP53 gene show a statistically significant association with MMFS (p-value = 0.0164, by Wilcoxon Rank-Sum Test).",
+      "claim_type": "EXPLICIT",
+      "source": "In our cohort, only genetic lesions affecting the TP53 gene show a statistically significant association with MMFS (p-value = 0.0164, by Wilcoxon Rank-Sum Test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the cohort data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "6d0d784c-ab5a-41a3-a134-9b1c800a328b",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C43",
+      "claim": "The fastest-growing clones are strongly correlated with poor survival and Richter syndrome transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Clinically, the fastest-growing clones are strongly correlated with poor survival and Richter syndrome transformation, consistent with the fact that CLL transformed to Richter syndrome presents significantly higher MMFS values (p-value = 0.002, by Wilcoxon Rank-Sum Test) (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "ce7f87f3-9502-4e97-aace-8933a138b8dd",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C44",
+      "claim": "CLL transformed to Richter syndrome presents significantly higher MMFS values (p-value = 0.002, by Wilcoxon Rank-Sum Test).",
+      "claim_type": "EXPLICIT",
+      "source": "Clinically, the fastest-growing clones are strongly correlated with poor survival and Richter syndrome transformation, consistent with the fact that CLL transformed to Richter syndrome presents significantly higher MMFS values (p-value = 0.002, by Wilcoxon Rank-Sum Test) (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "b2790b30-b5fe-4377-96d8-506c4d5491f5",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C45",
+      "claim": "Having a clone with high MMFS associates with an approximately threefold significant increase in the hazard of death (HR: 3.17; 95% CI: 1.38\u20137.40; p-value = 0.005) and a significant shortening of overall survival (47% at 5 years).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, by survival analysis, having a clone with high MMFS associates with an approximately threefold significant increase in the hazard of death (HR: 3.17; 95% CI: 1.38\u20137.40; p-value = 0.005) and a significant shortening of overall survival (47% at 5 years) (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by survival analysis shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "35e6f272-da9c-4b09-95ac-f113720fe8f9",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C46",
+      "claim": "Most deaths (77%) in patients carrying a clone with high MMFS are due to Richter syndrome transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Most deaths (77%) in patients carrying a clone with high MMFS are due to Richter syndrome transformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis of the cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "301ebac6-58b3-4dc4-806d-f67f7744dd93",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C47",
+      "claim": "Patients having a clone with high MMFS show an approximately fourfold increased risk of Richter syndrome development (HR: 4.61; 95% CI: 1.54\u201313.80; p-value = 0.003) and an \u223c50% of them are projected to develop Richter syndrome at 5 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, patients having a clone with high MMFS show an approximately fourfold increased risk of Richter syndrome development (HR: 4.61; 95% CI: 1.54\u201313.80; p-value = 0.003) and an \u223c50% of them are projected to develop Richter syndrome at 5 years (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by survival analysis shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "19217a21-18cf-48ed-a1d6-6cfbe02db968",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C48",
+      "claim": "The first evolutionary path involves CLL harboring +12 and NOTCH1 mutations as early driver events.",
+      "claim_type": "EXPLICIT",
+      "source": "The first evolutionary path involves CLL harboring +12 and NOTCH1 mutations as early driver events. In this path, clonal evolution proceeds toward the development of TP53 and BIRC3 abnormalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the integration of TEDG topology and association analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "484a449d-c872-4b65-9d16-b85109b4a8c2",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C49",
+      "claim": "In the first evolutionary path, clonal evolution proceeds toward the development of TP53 and BIRC3 abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "The first evolutionary path involves CLL harboring +12 and NOTCH1 mutations as early driver events. In this path, clonal evolution proceeds toward the development of TP53 and BIRC3 abnormalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the integration of TEDG topology and association analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "da7ff3a4-eb00-4905-8b34-2b7b895e0b91",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C50",
+      "claim": "The second evolutionary path involves 13q14 deletion as early driver lesion and proceeds toward the development of SF3B1 mutations and BIRC3 abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "The second evolutionary path involves 13q14 deletion as early driver lesion and proceeds toward the development of SF3B1 mutations and BIRC3 abnormalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the integration of TEDG topology and association analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "090b0452-5ab8-4130-a607-89e528b3d22d",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C51",
+      "claim": "The results are consistent with the different clinico-biological phenotype of +12 CLL and 13q14 deleted CLL and further support the hypothesis that at least two distinct genetic subtypes of CLL exist.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results are consistent with the different clinico-biological phenotype of +12 CLL and 13q14 deleted CLL and further support the hypothesis that at least two distinct genetic subtypes of CLL exist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the TEDG analysis and association analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "2ec86f1e-ebbc-4f53-bc55-428d681dede5",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C52",
+      "claim": "Deletion of 13q14 and +12 occur at a similar prevalence in all CLL phases, including monoclonal B-cell lymphocytosis, a condition that often anticipates overt CLL, thus suggesting that they are early events.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with the notion that del13q and +12 occur at a similar prevalence in all CLL phases, including monoclonal B-cell lymphocytosis, a condition that often anticipates overt CLL, thus suggesting that they are early events (Rawstron et al., 2008; Nieto et al., 2009; Rossi et al., 2009b; Fazi et al., 2011; Pasqualucci et al., 2011; Kern et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "56e9a6a2-b424-46eb-ab4d-daa904db4791",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C53",
+      "claim": "13q14 deletion has been directly implicated in CLL initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, 13q14 deletion has been directly implicated in CLL initiation (Klein et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "2505febc-62d7-4018-97c8-07e9bd6b9455",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C54",
+      "claim": "Late-onset abnormalities are known to accumulate in more advanced phases of the disease, thus suggesting that they are second-hit lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, late-onset abnormalities are known to accumulate in more advanced phases of the disease, thus suggesting that they are second-hit lesions (Zenz et al., 2009; Rossi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "4208e155-14e3-4bb4-84dc-18d7ec575278",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C55",
+      "claim": "Mutations of SF3B1 and 11q22-q23 deletions appear to be acquired at an intermediate time point.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, mutations of SF3B1 and 11q22-q23 deletions appear to be acquired at an intermediate time point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the TEDG analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "b68010ce-f459-45de-a96a-f54f6f41153f",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C56",
+      "claim": "This observation is consistent with the clinical observation that mutations of SF3B1 and 11q22-q23 deletion co-segregate with an intermediate prognostic group of CLL.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with the clinical observation that mutations of SF3B1 and 11q22-q23 deletion co-segregate with an intermediate prognostic group of CLL (D\u00f6hner et al., 2000; Oscier et al., 2013; Rossi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "4e17fa1c-6799-43a8-8dc5-764147004390",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C57",
+      "claim": "Deletion of 13q14 and +12 are mutually exclusive in CLL.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data, as well as previous analyses (Rossi et al., 2013), show that deletion of 13q14 and +12 are mutually exclusive in CLL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from the study and citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "a6ffd44b-e481-47c0-91f9-ccbecc1441a4",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C58",
+      "claim": "+12 CLL is known to stand out of typical 13q14 deleted CLL because of their atypical cytomorphology and phenotype, the more intense expression of CD20, the preferential nodal presentation and the higher risk of transformation to Richter syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "From a clinical standpoint, +12 CLL is known to stand out of typical 13q14 deleted CLL because of their atypical cytomorphology and phenotype, the more intense expression of CD20, the preferential nodal presentation and the higher risk of transformation to Richter syndrome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established clinical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "f12b41a4-f4bd-42ef-870c-3bd123de5c44",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C59",
+      "claim": "The presence at diagnosis of fully clonal genetic lesions that are considered late genetic events in CLL evolution, such as TP53 abnormalities, is already known to have an adverse impact on disease outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence at diagnosis of fully clonal genetic lesions that are considered late genetic events in CLL evolution, such as TP53 abnormalities, is already known to have an adverse impact on disease outcome (Zenz et al., 2008, 2010; Dicker et al., 2009; Malcikova et al., 2009; Rossi et al., 2009a; Gonzalez et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "f90e1169-7474-4c31-a07d-3c2f909e446f",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C60",
+      "claim": "A fraction of TP53 abnormalities, though subclonal at presentation, lead to expansion of fitter subclones that progressively predominate with time in the tumor architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that a fraction of TP53 abnormalities, though subclonal at presentation, lead to expansion of fitter subclones that progressively predominate with time in the tumor architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on data analysis from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "e642655d-0420-463e-8d38-a4b3dec7caae",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C61",
+      "claim": "Harboring higher fitness alterations correlates with poor survival and increased risk of CLL transformation into an aggressive lymphoma.",
+      "claim_type": "EXPLICIT",
+      "source": "The clinical impact of this observation is supported by the evidence that harboring higher fitness alterations correlates with poor survival and increased risk of CLL transformation into an aggressive lymphoma, an often-lethal complication known as Richter syndrome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "b75bc7be-d6f6-4546-9163-4fd2d32a2449",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C62",
+      "claim": "The ATM gene is large and highly polymorphic without well-known hotspots.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATM mutations are also commonly found in CLL; however, the ATM gene is large and highly polymorphic without well-known hotspots.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established knowledge about the ATM gene.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "378342e7-83f7-424a-81ec-19d64cb0d188",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C63",
+      "claim": "The distinction of ATM driver mutations from constitutional variants is challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATM mutations are also commonly found in CLL; however, the ATM gene is large and highly polymorphic without well-known hotspots. Therefore, the distinction of its driver mutations from constitutional variants is challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the characteristics of the ATM gene.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "49f51e3d-dd57-4cc3-8cf2-5612d7b728da",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C64",
+      "claim": "The prognostic relevance of ATM mutations in CLL is still controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, from a clinical standpoint, the prognostic relevance of ATM mutations in CLL is still controversial, so we have excluded this gene from the current study (Lozanski et al., 2012; Ouillette et al., 2012; Skowronska et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "64281813-1240-49a7-83e6-692f9b08dc02",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C65",
+      "claim": "TEDG is able to improve cancer classification and dissection into genetic subgroups following different paths of clonal evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the application of TEDG to CLL provides the proof-of-principle that this method is able to: (i) improve cancer classification and dissection into genetic subgroups following different paths of clonal evolution",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the results of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "edc5de22-bbd3-4702-9c0e-a6d8f169b5bf",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C66",
+      "claim": "TEDG is able to anticipate the genetic composition of the progressive/relapsed disease according to the genetic composition of the tumor clone at the time of diagnosis, including the development of genetic lesions associated with chemorefractoriness.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) anticipate the genetic composition of the progressive/relapsed disease according to the genetic composition of the tumor clone at the time of diagnosis, including the development of genetic lesions associated with chemorefractoriness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the results of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "4f077fbd-e23b-4cdb-a917-299287918969",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C67",
+      "claim": "TEDG provides a general framework that could be used to study and compare the evolutionary histories of other tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "TEDG provides a general framework that could be used to study and compare the evolutionary histories of other tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the potential applicability of TEDG.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "40a8df47-4224-4748-86a4-79cadd4fd93f",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C68",
+      "claim": "70 out of the 202 patients were informative for TP53, NOTCH1, SF3B1, MYD88, or BIRC3 mutations (which are the most common mutations in this leukemia), overall accounting for 164 paired sequential samples collected at diagnosis, progression, and last follow-up.",
+      "claim_type": "EXPLICIT",
+      "source": "70 out of the 202 patients were informative for TP53, NOTCH1, SF3B1, MYD88, or BIRC3 mutations (which are the most common mutations in this leukemia), overall accounting for 164 paired sequential samples collected at diagnosis, progression, and last follow-up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the patient cohort used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "b5fded62-24a3-4a74-9c1e-46628823532d",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C69",
+      "claim": "The study was approved by the institutional ethical committee of the Azienda Ospedaliero-Universitaria Maggiore della Carit\u00e0 di Novara affiliated with the Amedeo Avogadro University of Eastern Piedmont, Novara, Italy (Protocol Code 59/CE; Study Number CE 8/11).",
+      "claim_type": "EXPLICIT",
+      "source": "The study was approved by the institutional ethical committee of the Azienda Ospedaliero-Universitaria Maggiore della Carit\u00e0 di Novara affiliated with the Amedeo Avogadro University of Eastern Piedmont, Novara, Italy (Protocol Code 59/CE; Study Number CE 8/11).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "b279a823-5fff-43b2-96b7-fccfa0496823",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C70",
+      "claim": "Patients provided informed consent in accordance with local IRB requirements and Declaration of Helsinki.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients provided informed consent in accordance with local IRB requirements and Declaration of Helsinki.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the informed consent process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "81b43e6c-3b05-4db8-b0c2-9ee66b3f9e43",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C71",
+      "claim": "In all cases, the fraction of tumor cells corresponded to 70\u201398% as assessed by flow cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, the fraction of tumor cells corresponded to 70\u201398% as assessed by flow cytometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the tumor purity of the samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "2ab42439-dc26-4575-bc4d-f4a069471f56",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C72",
+      "claim": "The sequencing depth in this study is on average 1200\u00d7, which is sufficient for a highly sensitive detection of mutations with allele frequency >1% out of the background error noise.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequencing depth in this study is on average 1200\u00d7, which is sufficient for a highly sensitive detection of mutations with allele frequency >1% out of the background error noise (Rossi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the sequencing depth and is supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "ce6905b1-b6b0-44fc-aab6-f82f269c4edb",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C73",
+      "claim": "With 30 patients, TEDG's accuracy for a linear model is 80%, and for a branching model, it reaches 90%.",
+      "claim_type": "EXPLICIT",
+      "source": "With 30 patients, TEDG's accuracy for a linear model is 80%, and for a branching model, it reaches 90% (Figure 2E\u2013G, 'Materials and methods').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 2E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "f736721d-e2cb-44b8-92af-40e67b2965a9",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C74",
+      "claim": "The optimal value of \u03b2 is related to the number of samples, but the wide range of high accuracy region suggests that the TEDG results are robust to the parameter selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2C indicates that the optimal value of \u03b2 is related to the number of samples, but the wide range of high accuracy region suggests that the TEDG results are robust to the parameter selection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "18df3123-918d-4805-8cdb-c3b6d33d098b",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C75",
+      "claim": "TEDG proceeds in two steps to ensemble in a simplified way cancer clonal evolutionary histories of large number of patients: first, by merging the evolutionary history of each patient, and second, by removing indirect relationships using spectral techniques for network deconvolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method, termed tumor evolutionary directed graphs (TEDG), proceeds in two steps to ensemble in a simplified way cancer clonal evolutionary histories of large number of patients: first, by merging the evolutionary history of each patient, and second, by removing indirect relationships using spectral techniques for network deconvolution (Feizi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the TEDG method and cites the network deconvolution technique.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "65272682-27ac-4e24-b2f6-20f10fb6ee1b",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "claim_id": "C76",
+      "claim": "A non-randomly distributed TEDG shows that cancer proceeds in an orchestrated fashion and indicates the main paths and the alternative routes of cancer evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "A non-randomly distributed TEDG shows that cancer proceeds in an orchestrated fashion and indicates the main paths and the alternative routes of cancer evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about what a non-random TEDG indicates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1fb3d517-b71d-4692-a41a-116637054d57",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TEDG method validation using simulated data shows that with 30 patients, the method achieves 80% accuracy for linear models and 90% for branching models, and the results are robust to parameter selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73 and C74 are supported by simulation data shown in Figure 2. The accuracy metrics are clearly stated with specific values, and the robustness analysis demonstrates that TEDG performs well across a range of parameter values, providing confidence in the method's reliability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "b620276b-067a-44d9-b073-78ddfa7e5f1a",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CLL evolution follows a temporally ordered process with 13q14 deletion, +12, and NOTCH1 mutations as significant early events, while TP53 and BIRC3 mutations are significant late events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C19, C20, and C21 are well-supported by the TEDG analysis and statistical testing (p-value < 0.0001 for ordered structure, specific p-values for early/late events). The hierarchical layout of ISN and binomial testing provide robust statistical evidence for the temporal ordering of genetic lesions in CLL.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "3411d9d2-3499-40e9-accd-1a8a628d2e6a",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Two distinct and mutually exclusive evolutionary paths exist in CLL: one involving +12 and NOTCH1 mutations leading to TP53/BIRC3 abnormalities, and another involving 13q14 deletion leading to SF3B1/BIRC3 abnormalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C48-C51, C37, and C57 are supported by both TEDG topology analysis and statistical association testing showing mutual exclusivity between +12 and 13q14 deletion. The integration of temporal ordering data with co-occurrence/mutual exclusivity patterns provides converging evidence for two distinct evolutionary paths.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "dfd10628-cd57-47cc-a24a-31ee0e5042be",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Late genetic events in CLL have significantly higher growth rates than early events (p=0.005), indicating that late events drive higher fitness or more aggressive clones, supporting progressive clonal replacement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 and C4 are supported by statistical analysis using Wilcoxon Rank-Sum Test with significant p-values (0.005 and 0.0114). The result remains significant even after controlling for clonal lesions (MCF > 20%), strengthening the conclusion that late events are associated with higher fitness clones.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "29f8f7eb-9aca-434c-a126-40c7de158ea1",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "High maximal mutation frequency slope (MMFS) is associated with TP53 mutations and correlates with poor survival (HR: 3.17, p=0.005), increased Richter syndrome transformation risk (HR: 4.61, p=0.003), with 77% of deaths due to transformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 are well-supported by survival analysis with appropriate statistical methods (Cox proportional hazards, Wilcoxon Rank-Sum Test) and significant p-values. The hazard ratios with 95% confidence intervals and Kaplan-Meier curves (Figure 6\u2014figure supplement 2) provide robust evidence for the clinical impact of MMFS.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "8c1dc996-7644-425b-b1d9-ef6d744dd5a7",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A minority of CLL patients (5%, n=3/60) show branching evolution with clonal replacement, all involving SF3B1 mutations occurring after treatment (p=0.0016), suggesting that dominant clone genetics alone may be insufficient for therapeutic decisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 are supported by data analysis with appropriate statistical testing (Fisher's exact test, p=0.0016, FDR=0.1). However, the small sample size (n=3) limits generalizability. The association between SF3B1 mutations, treatment, and branching evolution is statistically significant but would benefit from validation in larger cohorts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "21bdadc3-70ae-45de-b105-46d8159b21ff",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Analysis at the individual mutation level reveals that monoallelic 13q14 deletion, RB1 deletion, and +12 are early events (p<0.01), while BIRC3 E537fs and TP53 R248Q are late lesions (p<0.05), with different mutations in the same gene occurring at distinct evolutionary stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 are supported by statistical analysis shown in Figure 4\u2014figure supplement 1. However, C30 explicitly acknowledges that sample size prevents statistical considerations for some TP53 mutations, making those specific mutation timing claims speculative. The general finding that different mutations in the same gene can occur at different stages is supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "ab4c9d3e-b433-464f-815d-2a2df8061ad6",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Statistical association analysis of 1,403 CLL patients confirms known co-mutations and reveals novel associations (BIRC3 with +12/NOTCH1, 13q14 deletion with BIRC3 deletion), validating TEDG's ability to capture tumor evolution information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C36, and C38 are supported by statistical analysis of a large cohort (n=1,403) with appropriate multiple testing corrections. The consistency between TEDG predictions and association analysis provides indirect validation, though C38's claim of validation is somewhat circular since both analyses use related data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "0b55ed58-4eca-412c-831d-6a07f081ce35",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The sequential order of genetic lesions remains consistent in patients receiving chemotherapy (Pearson's r=0.9, p<1e-3), suggesting therapy may affect the order of genetic lesion development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C23 is supported by statistical analysis, but C24's inference that therapy affects mutation order is problematic. The comparison shows high correlation (0.9) in treated patients but low correlation (0.4, p>0.1) in untreated patients. However, the low correlation in untreated patients may reflect insufficient statistical power rather than true disorder. The causal claim about therapy affecting order requires more rigorous analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "9c2f7dd0-969d-43b4-b718-580f2a54ac77",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MYD88 mutations might occur before 13q14 deletion in some cases (1 of 6 patients), suggesting Toll-like receptor pathway activation could be important in CLL initiation for a subset of tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C22 is explicitly acknowledged to lack statistical power (sample size prevents statistical considerations). The observation is based on only 1 of 6 patients, making it highly speculative. While the biological hypothesis about Toll-like receptor pathway is plausible and supported by citation, the data presented is insufficient to support this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "4b633ca7-03b7-47d6-a265-3bea7864ac6c",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TEDG can improve cancer classification into genetic subgroups, anticipate genetic composition of progressive/relapsed disease, and provides a general framework applicable to other tumor types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C67 are conclusions drawn from the CLL analysis. While C65 is supported by the identification of two evolutionary paths, C66's claim about anticipating disease progression is only partially demonstrated (limited to the 3 branching cases). C67's claim about general applicability is entirely speculative as TEDG has only been tested on CLL. These require validation in additional datasets and tumor types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    },
+    {
+      "id": "334a7823-a57b-4dc2-b040-ed25d10f650f",
+      "content_id": "58bb08c0-42d5-476e-a157-e8f48e5ed0cd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study analyzed 70 CLL patients with 164 sequential samples over 12 years, with appropriate ethical approval, high tumor purity (70-98%), and sequencing depth (1200\u00d7) sufficient to detect mutations >1% frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 and C68-C72 describe the study design and methodology. These are well-documented with specific numbers and appropriate quality control measures. The sequencing depth claim (C72) is supported by citation. The cohort characteristics are clearly presented in supplementary figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:18.377460Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ce6905b1-b6b0-44fc-aab6-f82f269c4edb",
+      "result_id": "1fb3d517-b71d-4692-a41a-116637054d57"
+    },
+    {
+      "claim_id": "f736721d-e2cb-44b8-92af-40e67b2965a9",
+      "result_id": "1fb3d517-b71d-4692-a41a-116637054d57"
+    },
+    {
+      "claim_id": "3911a0a4-f58d-4177-b821-119d7b5b900a",
+      "result_id": "b620276b-067a-44d9-b073-78ddfa7e5f1a"
+    },
+    {
+      "claim_id": "1763930c-82a1-47c6-a4cf-7b2c0a0123aa",
+      "result_id": "b620276b-067a-44d9-b073-78ddfa7e5f1a"
+    },
+    {
+      "claim_id": "3f3cd7e4-1739-4832-b9e1-600f661fb981",
+      "result_id": "b620276b-067a-44d9-b073-78ddfa7e5f1a"
+    },
+    {
+      "claim_id": "ab48d40b-04cb-42b5-be59-bfc98d67f35d",
+      "result_id": "b620276b-067a-44d9-b073-78ddfa7e5f1a"
+    },
+    {
+      "claim_id": "44f9a65c-9b05-4dd8-828f-9d3e95521cd3",
+      "result_id": "3411d9d2-3499-40e9-accd-1a8a628d2e6a"
+    },
+    {
+      "claim_id": "19217a21-18cf-48ed-a1d6-6cfbe02db968",
+      "result_id": "3411d9d2-3499-40e9-accd-1a8a628d2e6a"
+    },
+    {
+      "claim_id": "484a449d-c872-4b65-9d16-b85109b4a8c2",
+      "result_id": "3411d9d2-3499-40e9-accd-1a8a628d2e6a"
+    },
+    {
+      "claim_id": "da7ff3a4-eb00-4905-8b34-2b7b895e0b91",
+      "result_id": "3411d9d2-3499-40e9-accd-1a8a628d2e6a"
+    },
+    {
+      "claim_id": "090b0452-5ab8-4130-a607-89e528b3d22d",
+      "result_id": "3411d9d2-3499-40e9-accd-1a8a628d2e6a"
+    },
+    {
+      "claim_id": "003368dd-df9a-4de0-8937-220f595e66ff",
+      "result_id": "3411d9d2-3499-40e9-accd-1a8a628d2e6a"
+    },
+    {
+      "claim_id": "4e17fa1c-6799-43a8-8dc5-764147004390",
+      "result_id": "3411d9d2-3499-40e9-accd-1a8a628d2e6a"
+    },
+    {
+      "claim_id": "d3aca8be-9ada-45b3-9e1a-d0d503bc351d",
+      "result_id": "dfd10628-cd57-47cc-a24a-31ee0e5042be"
+    },
+    {
+      "claim_id": "c0e77184-8277-4791-8834-822b352638f0",
+      "result_id": "dfd10628-cd57-47cc-a24a-31ee0e5042be"
+    },
+    {
+      "claim_id": "79afa671-e02a-4b98-b7a5-9d77f31f69db",
+      "result_id": "dfd10628-cd57-47cc-a24a-31ee0e5042be"
+    },
+    {
+      "claim_id": "fea5f1a2-f84b-40e8-9ada-a9f604672939",
+      "result_id": "dfd10628-cd57-47cc-a24a-31ee0e5042be"
+    },
+    {
+      "claim_id": "deb03b54-0bbb-4191-b77a-5250e4cafa98",
+      "result_id": "29f8f7eb-9aca-434c-a126-40c7de158ea1"
+    },
+    {
+      "claim_id": "6d0d784c-ab5a-41a3-a134-9b1c800a328b",
+      "result_id": "29f8f7eb-9aca-434c-a126-40c7de158ea1"
+    },
+    {
+      "claim_id": "ce7f87f3-9502-4e97-aace-8933a138b8dd",
+      "result_id": "29f8f7eb-9aca-434c-a126-40c7de158ea1"
+    },
+    {
+      "claim_id": "b2790b30-b5fe-4377-96d8-506c4d5491f5",
+      "result_id": "29f8f7eb-9aca-434c-a126-40c7de158ea1"
+    },
+    {
+      "claim_id": "35e6f272-da9c-4b09-95ac-f113720fe8f9",
+      "result_id": "29f8f7eb-9aca-434c-a126-40c7de158ea1"
+    },
+    {
+      "claim_id": "301ebac6-58b3-4dc4-806d-f67f7744dd93",
+      "result_id": "29f8f7eb-9aca-434c-a126-40c7de158ea1"
+    },
+    {
+      "claim_id": "0fbcb323-52dd-4e61-acd7-8381650b41ad",
+      "result_id": "8c1dc996-7644-425b-b1d9-ef6d744dd5a7"
+    },
+    {
+      "claim_id": "456d5bdb-ce96-43cf-bec2-2f56ea44a6b0",
+      "result_id": "8c1dc996-7644-425b-b1d9-ef6d744dd5a7"
+    },
+    {
+      "claim_id": "7de74cf5-3fa0-4d7b-aa8f-b64fba04122d",
+      "result_id": "8c1dc996-7644-425b-b1d9-ef6d744dd5a7"
+    },
+    {
+      "claim_id": "333d941f-0fec-4316-bebb-7b789f1e6cb9",
+      "result_id": "8c1dc996-7644-425b-b1d9-ef6d744dd5a7"
+    },
+    {
+      "claim_id": "3afd0320-2b3d-41ce-9ad8-788ad4d5a3be",
+      "result_id": "21bdadc3-70ae-45de-b105-46d8159b21ff"
+    },
+    {
+      "claim_id": "9b1c7a84-339c-43ef-a060-7808602023c1",
+      "result_id": "21bdadc3-70ae-45de-b105-46d8159b21ff"
+    },
+    {
+      "claim_id": "08045880-b858-4129-9d67-abc2cbc55437",
+      "result_id": "21bdadc3-70ae-45de-b105-46d8159b21ff"
+    },
+    {
+      "claim_id": "71dbd80d-a31f-4956-82bd-90a13cd433a5",
+      "result_id": "21bdadc3-70ae-45de-b105-46d8159b21ff"
+    },
+    {
+      "claim_id": "c51ecd42-7b11-45f9-87b3-ba893c318ea1",
+      "result_id": "21bdadc3-70ae-45de-b105-46d8159b21ff"
+    },
+    {
+      "claim_id": "344337e4-1f92-494b-89ba-e91136a0caf8",
+      "result_id": "21bdadc3-70ae-45de-b105-46d8159b21ff"
+    },
+    {
+      "claim_id": "aba46e94-dc29-4f96-9b17-4bb86fbe975e",
+      "result_id": "ab4c9d3e-b433-464f-815d-2a2df8061ad6"
+    },
+    {
+      "claim_id": "8346a049-e82a-4e22-9742-2709b022e6a3",
+      "result_id": "ab4c9d3e-b433-464f-815d-2a2df8061ad6"
+    },
+    {
+      "claim_id": "bbe20209-8b36-40b7-837c-8d289d3747df",
+      "result_id": "ab4c9d3e-b433-464f-815d-2a2df8061ad6"
+    },
+    {
+      "claim_id": "6ec827d6-1a66-4ae0-bd8b-54b8d38f2fa8",
+      "result_id": "0b55ed58-4eca-412c-831d-6a07f081ce35"
+    },
+    {
+      "claim_id": "15fc6d5e-12a3-4936-9556-1de93942d112",
+      "result_id": "0b55ed58-4eca-412c-831d-6a07f081ce35"
+    },
+    {
+      "claim_id": "b75e14f7-8c83-4f04-b94c-e92bd358476a",
+      "result_id": "9c2f7dd0-969d-43b4-b718-580f2a54ac77"
+    },
+    {
+      "claim_id": "64281813-1240-49a7-83e6-692f9b08dc02",
+      "result_id": "4b633ca7-03b7-47d6-a265-3bea7864ac6c"
+    },
+    {
+      "claim_id": "edc5de22-bbd3-4702-9c0e-a6d8f169b5bf",
+      "result_id": "4b633ca7-03b7-47d6-a265-3bea7864ac6c"
+    },
+    {
+      "claim_id": "4f077fbd-e23b-4cdb-a917-299287918969",
+      "result_id": "4b633ca7-03b7-47d6-a265-3bea7864ac6c"
+    },
+    {
+      "claim_id": "2dc1c26e-b90d-49c8-aec6-749771959f03",
+      "result_id": "334a7823-a57b-4dc2-b040-ed25d10f650f"
+    },
+    {
+      "claim_id": "6c499892-27bd-4c57-b78b-eaa6c2f1fefc",
+      "result_id": "334a7823-a57b-4dc2-b040-ed25d10f650f"
+    },
+    {
+      "claim_id": "40a8df47-4224-4748-86a4-79cadd4fd93f",
+      "result_id": "334a7823-a57b-4dc2-b040-ed25d10f650f"
+    },
+    {
+      "claim_id": "b5fded62-24a3-4a74-9c1e-46628823532d",
+      "result_id": "334a7823-a57b-4dc2-b040-ed25d10f650f"
+    },
+    {
+      "claim_id": "b279a823-5fff-43b2-96b7-fccfa0496823",
+      "result_id": "334a7823-a57b-4dc2-b040-ed25d10f650f"
+    },
+    {
+      "claim_id": "81b43e6c-3b05-4db8-b0c2-9ee66b3f9e43",
+      "result_id": "334a7823-a57b-4dc2-b040-ed25d10f650f"
+    },
+    {
+      "claim_id": "2ab42439-dc26-4575-bc4d-f4a069471f56",
+      "result_id": "334a7823-a57b-4dc2-b040-ed25d10f650f"
+    }
+  ],
+  "comparisons": []
+}

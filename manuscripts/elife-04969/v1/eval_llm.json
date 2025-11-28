@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Helical polymers are ubiquitous in biology across all domains of life (viruses, bacteria, eukaryotes, archaea) and their inherent symmetry makes them attractive for 3D reconstruction from electron micrographs. The first EM 3D reconstruction exploited this helical symmetry property.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C6-C11 establish well-documented background knowledge about helical polymers in biology and their structural properties. These claims are supported by appropriate citations to established literature and represent fundamental principles in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Recent advances in computational approaches and cryo-imaging with direct electron detectors have made near-atomic resolution determination of helical polymer structures increasingly common.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are well-supported by citations to recent methodological advances and high-resolution structures, representing established progress in the field of cryo-EM.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Ambiguities exist in defining helical symmetry at limited resolution, and incorrect symmetries can be mistakenly imposed, leading to stable but incorrect solutions that cannot be distinguished from correct ones until near-atomic resolution is achieved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C14-C17 describe a well-recognized problem in helical reconstruction, supported by multiple citations to published examples of incorrect symmetry assignments. The author's expertise and prior publications provide additional support for these methodological challenges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Two groups (Wu et al. and Xu et al.) published different reconstructions of MAVS filaments with different symmetries and resolutions. Wu et al. achieved 3.6 \u00c5 resolution with clearly resolved \u03b1-helices and side chains fitting a crystal structure, while Xu et al. reported 9.6 \u00c5 resolution with C3 symmetry. Xu et al. argue their filaments represent a more native conformation while Wu et al.'s are artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C28 accurately describe the published results from both groups and the controversy between them. These are factual statements about prior work supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The power spectrum of an image is the central section of the 3D power spectrum, and is sensitive to out-of-plane tilt. Untilted filaments show separated peaks while tilted filaments show merged peaks on the meridian. Out-of-plane tilt is negligible for negatively stained samples but significant in cryo-EM, especially at higher resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 describe fundamental principles of Fourier analysis and projection imaging that are well-established in structural biology. Figure 1 provides clear illustration of these principles. The distinction between negative stain and cryo-EM is based on established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Reanalysis of Xu et al. data reveals substantial out-of-plane tilt (peaks at \u00b120\u00b0). When only untilted segments are analyzed, the power spectrum shows an n = \u22121 layer line with no meridional intensity, matching Wu et al.'s power spectrum. The calculated tilt needed to merge peaks (~9\u00b0) is consistent with the observed tilt distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 present the author's reanalysis of deposited data with quantitative results shown in Figure 2. The analysis methodology is sound and the results directly address Xu et al.'s first argument. The calculation of required tilt angle provides internal consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "While stable IHRSR solutions are necessary but not sufficient for correctness, the symmetry from Wu et al. can be stably applied to Xu et al. filaments when accounting for out-of-plane tilt, contradicting Xu et al.'s claim of different symmetries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by the author's prior publications on IHRSR methodology and demonstrated by Figure 3 showing stable convergence. The analysis appropriately accounts for out-of-plane tilt and directly tests Xu et al.'s second argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Both reconstructions show a central hole when cylindrically averaged. The Wu et al. reconstruction filtered to 12 \u00c5 shows a hole consistent with the helical arrangement of subunits that do not pack to form a solid core, refuting Xu et al.'s third argument for different symmetries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by analysis of deposited data shown in Figure 4. The explanation for the hole based on helical packing geometry is logically sound and demonstrates that this feature does not distinguish between the two proposed symmetries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The actual resolution achievable from Xu et al. images is only 12 \u00c5 due to thick ice, noisy background, and carbon film. Given 2.3 \u00c5/px sampling, the theoretical best resolution would be ~7 \u00c5 (2/3 Nyquist), but image quality problems prevent achieving even this.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are based on the author's reanalysis and examination of deposited images. The resolution estimate is shown in Figure 4, and the assessment of image quality issues is based on direct observation. The Nyquist calculation is mathematically correct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The three arguments by Xu et al. for different filament symmetries are refuted by reanalysis of their deposited data. However, definitively establishing that the filaments are identical would require high-resolution reconstruction from Xu et al. data, which appears impossible given image quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is a well-supported conclusion based on the analyses presented in claims C37-C49. Claim C56 appropriately acknowledges the limitation that the analyses do not prove the filaments are identical, only that the arguments for them being different are invalid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "At lower EM resolutions, reality-checks from known stereochemistry are absent, requiring validation methods like tilt-pair validation. At near-atomic resolution, recognizable secondary structure provides necessary and sufficient validation, as in Wu et al. where right-handed \u03b1-helices confirmed both symmetry and handedness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 describe established principles for validation in structural biology. The comparison between crystallography and EM is well-founded, and the citations to validation methods are appropriate. The assessment of Wu et al.'s validation is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "There is minimal agreement between Xu et al.'s deposited map and model. FSC analysis shows actual resolution of ~22 \u00c5 between map and model, suggesting only agreement for compact 'blobs' related by imposed symmetry. This poor agreement should have raised questions about the correctness of the imposed helical symmetry and the meaning of the FSC resolution estimate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 present quantitative analysis shown in Figure 5 comparing Xu et al.'s map and model. The FSC calculation is appropriate and the ~22 \u00c5 resolution estimate is clearly shown. Comparisons with published examples (C65-C66) provide context. The inference that poor map-model agreement indicates problems with the symmetry is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "The arguments of Xu et al. for different symmetry in their filaments compared to Wu et al. collapse completely when examining the publicly deposited data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is the main conclusion, well-supported by the comprehensive reanalysis presented in the manuscript addressing all three arguments from Xu et al. The analyses of out-of-plane tilt, IHRSR stability, central hole, and map-model agreement collectively support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Reanalysis methodology: 160 of 581 images from EMPIAR-10014 were used, with defocus ranging 1.7-5.4 \u03bc (mean 3.2 \u03bc). IHRSR with 64,980 overlapping boxes converged to \u2212101.2\u00b0 rotation and 5.3 \u00c5 rise. After excluding highly tilted segments and using only 58 images with defocus <3.0 \u03bc, final reconstruction from 8,600 segments achieved 12 \u00c5 resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 provide detailed methodology for the reanalysis. The approach is technically sound, using standard tools (CTFFIND3, EMAN2, SPIDER, IHRSR) and appropriate data selection criteria. The convergence to symmetry parameters matching Wu et al. (C77) is a key result supporting the main conclusions.",
+    "result_type": "MINOR"
+  }
+]

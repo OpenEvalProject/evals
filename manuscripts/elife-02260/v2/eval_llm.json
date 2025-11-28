@@ -1,0 +1,170 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C27"
+    ],
+    "result": "Monkeys successfully implemented speed-accuracy tradeoff behaviorally, with longer reaction times and improved accuracy in the high accuracy regime. Bounded accumulation modeling showed this was achieved by changing the decision variable excursion (reduced 43\u00b12% in speed regime), not by changes in non-decision time or drift rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 provide converging behavioral evidence with quantitative model fits. The observation that accuracy improved with longer RTs (C19-C20) rules out simple motor delay, and model comparisons (C22-C23) identify excursion changes as the primary mechanism. Statistical support is provided throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C59"
+    ],
+    "result": "The neural threshold (terminating firing rate level) in LIP remained constant across speed-accuracy regimes. Pre-saccadic firing rates showed no significant differences between regimes (p>0.5 for each monkey), contradicting the hypothesis that SAT is implemented by changing the decision bound height.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C41 provide direct statistical evidence (p>0.3 and p>0.5) that firing rates at decision commitment were similar across regimes. This is the key negative result that motivates the alternative mechanism. The statistical tests are appropriate and the conclusion (C3, C40, C59) follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C17",
+      "C32",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C60",
+      "C61"
+    ],
+    "result": "LIP neurons exhibited significantly elevated evidence-independent (urgency) signals in the high speed regime compared to the accuracy regime. This signal was present from motion onset (or 100ms after) and persisted throughout evidence accumulation (p<0.001), effectively reducing the neural excursion needed to reach the fixed threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 provide strong statistical evidence (p<0.01 to p<0.001) for regime differences in evidence-independent signals, with consistent findings across both monkeys. Claims C45-C46 provide the mechanistic interpretation. The 15\u00b11% difference in early firing rates (C32) further supports this. The evidence converges on a coherent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C53",
+      "C67"
+    ],
+    "result": "Evidence-independent neural signals quantitatively explained behavioral changes between regimes. Across neurons, urgency signals negatively correlated with reaction times (r=-0.57, p<0.01), and neurally-constrained models using only measured urgency signals accounted for behavioral differences with high fidelity (R\u00b2=0.99 and 0.97 for the two monkeys).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 provide statistical evidence for neural-behavioral correlations. Claims C51, C53, C67 show that neurally-constrained models with no free parameters for regime differences successfully predict behavior. This is strong evidence that the measured neural signals are sufficient to explain the behavioral changes, though causality cannot be definitively established from correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The relationship between motion strength and neural buildup rate (evidence processing) was preserved across speed-accuracy regimes. While buildup rates were offset higher in the speed regime (p<0.05), the slope relating motion coherence to buildup rate did not differ significantly between regimes (p>0.1), indicating consistent evidence encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 provide statistical evidence with appropriate tests. The finding that slopes are similar (C36, p>0.1) while intercepts differ (C35, p<0.05) supports the interpretation (C37, C65-C66) that evidence processing is consistent but offset by urgency signals. This rules out alternative explanations involving changes in sensory processing or attention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C88",
+      "C89"
+    ],
+    "result": "LIP neurons exhibited canonical signatures of evidence accumulation in both regimes, including initial target-related activity, transient suppression at motion onset, and subsequent ramping activity dependent on motion strength and direction, consistent with previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 describe well-established LIP response patterns, with C30 providing statistical support (p>0.1 for early period). Claim C88 explicitly connects findings to prior work. These are confirmatory observations that validate the experimental approach and neuron selection, though not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C52",
+      "C62",
+      "C63"
+    ],
+    "result": "The evidence-independent signal increased over time in both regimes, consistent with previously reported urgency signals. Model comparisons suggested the time-dependent component was more important than the baseline component for explaining behavioral changes, though both contributed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 provides the observation with citation support. Claim C52 reports model comparison results (BIC values in Table 1) showing time-dependent components fit better. Claims C62-C63 provide theoretical context. The evidence supports the characterization of the signal as urgency, though the relative importance of components shows some monkey-specific variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors propose that adding urgency signals to accumulated evidence (rather than adjusting thresholds) may simplify downstream decision termination computations by maintaining consistent signal fidelity and avoiding the need to compensate for firing rate-dependent noise. The origin of urgency signals remains unknown but may relate to other LIP signals representing value, probability, or time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C71 are explicitly speculative explanations for why the brain might use this architecture, supported by general principles (C69) and citations (C68, C70) but not directly tested. Claim C72 provides some support from neuroimaging studies. Claim C73 acknowledges the unknown origin. These are reasonable hypotheses but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C95",
+      "C96"
+    ],
+    "result": "The study employed appropriate methods including training two monkeys on a motion discrimination task with reward-timing manipulations to induce speed-accuracy regimes, recording from 70 LIP neurons (35 per regime) selected based on standard criteria, and using established normalization and analysis procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims (C78-C96) describe standard, well-established procedures. The experimental design is sound, with appropriate controls and neuron selection criteria. Sample sizes (70 neurons total) are reasonable for this type of study. Methods are clearly described and follow established practices in the field.",
+    "result_type": "MINOR"
+  }
+]

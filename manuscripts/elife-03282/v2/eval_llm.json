@@ -1,0 +1,156 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors developed a method combining high-resolution traction force microscopy with finite element modeling to quantify cell-cell forces in dynamic epithelial clusters with sub-cellular resolution. The method extends previous force-balancing approaches to larger clusters and validates the thin-plate FEM model, achieving ~14% median error in force calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C24 collectively demonstrate method development and validation. The force-balancing principle (C17-C20) is well-established physics. Validation comparing FEM to force-balancing in tree-like topologies (C21-C24) shows comparable 14% error, indicating the method works. The approach is logically sound and experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Basal force fluctuations at cell-cell junctions correlate positively with E-cadherin-GFP localization at the junction level. This correlation is statistically significant, persists across different substrate stiffnesses (8 kPa and 35 kPa), and is validated by perturbation experiments using E-cadherin blocking antibodies and alpha-catenin knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 provide strong converging evidence: positive correlation (C32), robustness across substrates (C33-C34), and functional validation via perturbations (C35-C36). Statistical significance is stated and perturbation experiments provide causal support. The result is well-supported by multiple independent lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C77"
+    ],
+    "result": "Local mechanical stresses correlate with E-cadherin localization at sub-junctional resolution (~10 \u03bcm length scale). This coupling length scale matches the spatial organization of E-cadherin along junctions (13 \u03bcm autocorrelation), and the correlation strength increases with junction length, consistent with junction maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 demonstrate sub-cellular resolution through multiple analyses: local correlation (C38), randomization analysis defining coupling length scale (C39-C40), consistency with E-cadherin autocorrelation (C41-C42), and junction length dependence (C43). The convergence of independent measurements (coupling scale ~10 \u03bcm, autocorrelation ~13 \u03bcm) validates the resolution claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C76"
+    ],
+    "result": "During mitosis, dividing cells show decreased strain energy and reduced cell-cell forces at their junctions, while total cluster cell-cell forces remain constant. This suggests dynamic force compensation at other junctions maintains mechanical homeostasis during major morphological changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 provide consistent evidence: decreased strain energy (C25-C26), reduced forces at dividing cell junctions (C27-C28), constant total cluster forces (C29), and compensatory increases at other junctions (C30). The homeostasis interpretation (C31, C76) is a reasonable inference from the force balance data, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Cell-cell force patterns depend on cell position within clusters (connectivity k) and substrate stiffness. On soft substrates (8 kPa), forces transmit through cluster centers with increasing stress at higher k. On stiff substrates (35 kPa), forces transmit peripherally with decreasing force/stress at higher k. Cell-cell forces can be decoupled from traction forces in larger clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C57 demonstrate position-dependent forces with clear substrate-dependent patterns. The decoupling of cell-cell from traction forces (C48-C49) is supported by data showing cell-cell forces increase with k while traction forces don't. The opposite trends on different stiffnesses (C52-C53 vs C55) are well-documented. Statistical significance is indicated by non-overlapping notches in box plots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C15",
+      "C16",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Force transmission through cells requires coordinated modulation of cell-matrix adhesion and actomyosin contractility. Two mechanisms attenuate force propagation: (1) force anchoring via cell-matrix adhesions (validated by paxillin/talin-1 knockdown increasing cross-junction force correlation), and (2) force scrambling via basal actomyosin contractility (validated by myosin-IIA knockdown increasing passive force transduction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C75 provide strong mechanistic evidence through perturbation experiments. Control cells show weak force transmission (C58-C59). Paxillin/talin-1 knockdown reduces traction forces (C64) and increases cross-junction correlation (C69-C71), supporting force anchoring. Myosin-IIA knockdown reduces contractility (C72) but cells still transmit forces in clusters (C73-C75), supporting force scrambling. The two-mechanism model is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The importance of mechanical coupling between cells in various biological processes including development, wound healing, barrier function, and cancer is established in prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 are well-supported by appropriate citations to established literature. C1 is a general statement consistent with the cited work. These provide appropriate context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1918 @@
+{
+  "submission": {
+    "id": "27f9794c-0244-4b59-a961-b18ba6a484bb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:53:09.149142Z",
+    "updated_at": "2025-11-28T20:53:09.149142Z"
+  },
+  "content": [
+    {
+      "id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "submission_id": "27f9794c-0244-4b59-a961-b18ba6a484bb",
+      "content_type": "manuscript",
+      "content_text": "# The role of photorespiration during the evolution of C4 photosynthesis in the genus Flaveria\n\n## Authors\n\n- Julia Mallmann<sup>1</sup>\n- David Heckmann<sup>2</sup>\n- Andrea Br\u00e4utigam<sup>3</sup>\n- Martin J Lercher<sup>2</sup>\n- Andreas PM Weber<sup>3</sup>\n- Peter Westhoff<sup>1</sup>\n- Udo Gowik<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Institute for Plant Molecular and Developmental Biology Heinrich-Heine-Universit\u00e4t D\u00fcsseldorf Germany\n2. Institute for Computer Science Heinrich-Heine-Universit\u00e4t D\u00fcsseldorf Germany\n3. Institute of Plant Biochemistry Heinrich-Heine-Universit\u00e4t D\u00fcsseldorf Germany\n4. Cluster of Excellence on Plant Sciences (CEPLAS) Heinrich-Heine-Universit\u00e4t D\u00fcsseldorf Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nC4 photosynthesis represents a most remarkable case of convergent evolution of a complex trait, which includes the reprogramming of the expression patterns of thousands of genes. Anatomical, physiological, and phylogenetic and analyses as well as computational modeling indicate that the establishment of a photorespiratory carbon pump (termed C2 photosynthesis) is a prerequisite for the evolution of C4. However, a mechanistic model explaining the tight connection between the evolution of C4 and C2 photosynthesis is currently lacking. Here we address this question through comparative transcriptomic and biochemical analyses of closely related C3, C3\u2013C4, and C4 species, combined with Flux Balance Analysis constrained through a mechanistic model of carbon fixation. We show that C2 photosynthesis creates a misbalance in nitrogen metabolism between bundle sheath and mesophyll cells. Rebalancing nitrogen metabolism requires anaplerotic reactions that resemble at least parts of a basic C4 cycle. Our findings thus show how C2 photosynthesis represents a pre-adaptation for the C4 system, where the evolution of the C2 system establishes important C4 components as a side effect.\n\n## Introduction\n\nThe dual-specific enzyme ribulose 1,5-bisphosphate carboxylase/oxygenase (Rubisco) catalyzes two opposing reactions\u2014the carboxylation and the oxygenation of ribulose 1,5-bisphosphate. The former reaction yields 3-phosphoglycerate (3-PGA), whereas the latter produces 2-phosphoglycolate (2-PG). 3-PGA is reduced to carbohydrates in the Calvin\u2013Benson cycle and incorporated into biomass. However, 2-PG is toxic, which requires its removal by a metabolic repair pathway called photorespiration (Anderson, 1971; Bowes et al., 1971; Ogren, 1984; Leegood et al., 1995). In the photorespiratory cycle, 2-PG is regenerated to 3-PGA, but it involves the release of formerly assimilated CO2 and NH3, entails energy costs for the plants and reduces the efficiency of photosynthesis by up to 30% (Ehleringer et al., 1991; Bauwe et al., 2010; Raines, 2011; Fernie et al., 2013). Eight core enzymes are required for photorespiration, which in higher plants are located in the chloroplast, the peroxisome, and the mitochondrion (Bauwe et al., 2010; Figure 1A). The pathway rescues \u00be of the carbon, which would otherwise be lost through the oxygenase activity of Rubisco (Peterhansel et al., 2010; Fernie et al., 2013). Ammonia refixation in the chloroplast by the combined activities of glutamine synthase (GS) and glutamine oxoglutarate aminotransferase (GOGAT) is an integral part of photorespiration.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02478/elife-02478-fig1-v2.jpg)\n\n**Figure 1.:** Schematic view of the photorespiratory pathway (A), the NADP-ME type C4 pathway as it can be found in C4 Flaveria species (B) and the C2 photosynthesis pathway (C). (D) Phylogeny and physiological properties of selected Flaveria species. The phylogeny was redrawn according to McKown et al. (2005), CO2 compensation points are taken from Ku et al. (1991), incorporation of 14CO2 is from Moore et al. (1987) and the ratios of GLDP B (expressed in all chlorenchyma cells) and GLDP A (expressed in bundle sheath cells only) are from Schulze et al. (2013). (Abbreviations: AGT: serine glyoxylate aminotransferase; AlaAT: alanine aminotransferase; AspAT: aspartate aminotransferase; GDC: glycine decarboxylase complex; GGT: glutamate, glyoxylate-aminotransferase; GLYK: D-glycerate 3-kinase; GOX: glycolate oxidase; HPR: hydroxypyruvate reductase; MDH: malate dehydrogenase; NADP-ME: NADP dependent malic enzyme; PEPC: phosphoenolpyruvate carboxylase; PGLP: 2-phosphoglycerate phosphatase; PPDK pyruvate, phosphate-dikinase; RUBISCO: Ribulose-1,5-bisphosphat-carboxylase/-oxygenase; SHM: serine hydroxymethyltransferase; 2-OG: oxoglutarate; 2-PG 2-phosphoglycolate; 3-PGA: 3-phosphoglycerate; Gln: glutamine; Glu: glutamate; OAA: oxaloacetate; PEP: phosphoenolpyruvate; TP: triosephosphate).\n\nIn hot and dry environments and under low atmospheric CO2 conditions, when the oxygenation activity of Rubisco is increased, the high rate of photorespiration becomes unfavorable for the plants (Sage, 2001, 2013). C4 plants possess a mechanism that minimizes the oxygenase function of Rubisco and thereby reduces photorespiration and decreases the loss of carbon. C4 photosynthesis is based on a division of labor between two different cell types, mesophyll and bundle sheath cells, which are organized in a wreath-like structure called \u2018Kranz Anatomy\u2019 (Haberlandt, 1904; Dengler and Nelson, 1999). Atmospheric CO2 is initially fixed in the mesophyll by phosphoenolpyruvate carboxylase (PEPC), and the resulting four-carbon compound is transported to the bundle sheath cells and decarboxylated by NADP/NAD malic enzyme or phosphoenolpyruvate carboxykinase (Hatch et al., 1975). Thereby CO2 is concentrated at the site of the Rubisco in the bundle sheath cells (Hatch, 1987), outcompeting the molecular oxygen. As a consequence, photorespiration is drastically reduced as compared to C3 plants, and C4 plants are characterized by a high photosynthetic efficiency (Figure 1B).\n\nC4 plants have evolved multiple times independently from C3 ancestors. The evolution of C4 photosynthesis occurred at least 62 times in 19 different families of the angiosperms (Sage et al., 2011), implying a low evolutionary barrier towards expression of this trait. The analysis of recent intermediate species (Bauwe and Kolukisaoglu, 2003; Sage, 2004; Bauwe, 2011; Sage et al., 2012, 2013; Schulze et al., 2013) indicates that establishing a photorespiratory CO2 pump was an early and important step in the evolution towards C4 photosynthesis (Figure 1C). Since the two-carbon compound glycine serves as a transport metabolite, this photorespiratory CO2 concentrating mechanism is also termed C2 photosynthesis. Computational modeling of the evolutionary trajectory from C3 to C4 photosynthesis indicated C2 photosynthesis represented an evolutionary intermediate state (Heckmann et al., 2013; Williams et al., 2013) as well suggesting that C2 photosynthesis is a prerequisite for the evolution of C4. However, it remained unclear if the evolution of C2 photosynthesis fosters the evolution of C4 photosynthesis beyond providing a selection pressure to reallocate Rubisco to the bundle sheath.\n\nIn the present study, we have used the genus Flaveria as a model system for investigating the transition from C2 to C4 photosynthesis. To this end, we study a phylogenetic framework consisting of C3, C3\u2013C4 intermediate, and C4 species (Powell, 1978; Edwards and Ku, 1987; Ku et al., 1991) of this genus which rather recently evolved C4 (Christin et al., 2011), focusing on genes encoding photorespiratory enzymes and other components of C2 photosynthesis. The genus Flaveria contains three main phylogenetic groups, of which the first diverging group includes all C3 Flaveria. Clade B contains seven C3\u2013C4 intermediate species and the C4-like species F. brownii. All C4 Flaveria species belong to clade A, which also contains several C4-like species and the C3\u2013C4 intermediate F. ramosissima (McKown et al., 2005; Figure 1D). We hypothesized that the analysis of species in the genus Flaveria combined with in silico modeling elucidates the evolutionary changes accompanying and following the establishment of the C2 pathway. To this end we simulated the metabolism of C2 plants by coupling a mechanistic model of C3\u2013C4 intermediate photosynthesis (von Caemmerer, 2000; Heckmann et al., 2013) with a detailed modified stoichiometric model of C4 photosynthesis (Dal'Molin et al., 2010), and investigated the evolution of C4 photosynthesis and photorespiration by following the changes in mRNA and protein abundance along the evolutionary path.\n\nRNA and protein amounts of the majority of the photorespiratory enzymes were reduced in C4 as compared to C3 species. In contrast, photorespiratory mRNA and protein amounts did not decrease in the C3\u2013C4 intermediate species but were mostly equal or even higher than in the C3 species, demonstrating that the establishment of the photorespiratory CO2 pump in the genus Flaveria relies on coordinated changes in the expression of all core photorespiratory enzymes. Metabolic modeling in combination with comparisons of transcript abundances in the different Flaveria species strongly indicates that introduction of C2 photosynthesis has a direct impact on the nitrogen metabolism of the leaf. Its implementation necessitates the parallel establishment of components of the C4 cycle to cope with these changes in refixation of photorespiratory nitrogen. Based on these results, we predict a mechanistic interaction between C4 and C2 photosynthesis.\n\n## Results\n\n### Selection of Flaveria species, cultivation of plant material and experimental design\n\nTo study the evolution of the expression of photorespiratory and C4 cycle genes during the transition from C3 to C4 photosynthesis in the genus Flaveria, nine species reflecting the evolutionary trajectory taken were selected, including two C3 (F. robusta and F. pringlei), two C4 (F. bidentis and F. trinervia), and five C3\u2013C4 intermediate species (Figure 1D). According to their CO2 compensation points and the percentage of carbon initially fixed into malate and aspartate, F. chloraefolia and F. pubescens were earlier classified as type I C3\u2013C4 intermediates. F. anomala and F. ramosissima belong to the type II C3\u2013C4 intermediates and F. brownii is classified as a C4-like species (Edwards and Ku, 1987; Moore et al., 1987; Cheng et al., 1988; Ku et al., 1991). Type I C3\u2013C4 intermediates are defined as solely relying on the photorespiratory CO2 concentration cycle whereas a basal C4 cycle activity is present in type II C3\u2013C4 intermediates species. C4-like species exhibit much higher C4 cycle activities but lack complete bundle sheath compartmentation of Rubisco activity (Edwards and Ku, 1987).\n\nFour independent experiments with plants grown during different seasons were performed to identify differences between the species that are dependent on their different modes of photosynthesis and independent of environmental influences. For each experiment the plants were seeded concurrently and grown side-by-side under greenhouse conditions. The second and fourth visible leaves from the top of all nine species were harvested at noon on the same day for transcript and protein analysis. Plants for experiment one were harvested in September 2009, for experiment two in June 2010, for experiment three in October 2010 and for experiment four in April 2011. The amounts of the core photorespiratory and C4 enzymes were assessed by immunoblotting using specific antibodies raised against synthetic peptides or recombinant proteins. The abundances of the corresponding RNAs as well of C4 cycle associated transcripts were quantified by total transcriptome sequencing.\n\n### The transcript profiles of the individual Flaveria species were comparable throughout all four experiments\n\nThe transcriptomes of the different Flaveria species were sequenced by Illumina technology following standard procedures. In total, close to 200 Gb of raw sequence data were produced. After filtering of low quality reads 30 to 58 million reads per species and experiment were quantified (Figure 2\u2014source data 1). In a cross species approach, we mapped the sequences onto the minimal set of Arabidopsis thaliana coding sequences using the BLAST-like alignment tool BLAT (Kent, 2002) as described previously (Gowik et al., 2011) (Figure 2\u2014source data 2, data available from the Dryad Digital Repository: http://dx.doi.org/10.5061/dryad.q827h). We were able to align approx. 50% of our reads to the Arabidopsis transcripts. This is lower as compared to a similar approach using 454 sequencing (Gowik et al., 2011) and likely due to the shorter read length of the Illumina compared to the 454 reads. To overcome the low mapping efficiency, the leaf transcriptomes of Flaveria species were assembled de novo based on 454 (Gowik et al., 2011) and Illumina reads (this study). Among the contigs from F. robusta, we identified full-length transcripts for all photorespiratory and C4 genes in the focus of the present study and used these for further read mapping and detailed analysis.\n\nTo evaluate the variation between the four independent experiments, we performed hierarchical sample clustering and a principal component analysis of the transcript profiles derived from read mapping on the minimal set of Arabidopsis coding sequences. Hierarchical sample clustering using Pearson correlation and average linkage clustering shows that the transcript profiles of all Flaveria species were quite similar in all four experiments since the samples cluster strictly species-wise (Figure 2A). The transcriptome patterns are influenced by the photosynthesis type and the phylogenetic relationships of the different species. The two C4 species, both belonging to clade A, cluster together as do the two C3 species that belong to the basal Flaveria species. Within the C3\u2013C4 intermediates the two more advanced intermediates F. ramosissima and F. anomala cluster together, the only pattern which contradicts phylogenetic proximity since F. ramosissima belongs to clade A and F. anomala belongs to clade B. The last cluster consists out of the C3\u2013C4 intermediates F. chloraefolia and F. pubescens, and the C4-like species F. brownii.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02478/elife-02478-fig2-v2.jpg)\n\n**Figure 2.:** (A) Hierarchical sample clustering of all expressed transcripts. The tree was calculated with the MEV program using the HCL module with Pearson correlation and the average linkage method. (B) Principal component analysis of transcript levels. The first three components explain 27% of the total variance.\n\nPrinciple component analysis supports the results of the hierarchical clustering. The samples are mainly separated by photosynthesis type and phylogenetic relationships with the two intermediate species from different phylogenetic trajectories again forming a tight cluster (Figure 2B). The first three components, shown in Figure 2B, explain only 27% of the total variance. This is in good accordance with earlier results where it was shown that about 16% of all analyzed genes showed photosynthesis type related expression changes when the transcriptomes of the C4 species F. trinervia and F. bidentis, the C3 species F. robusta and F. pringlei and the C3\u2013C4 intermediate species F. ramosissima were compared (Gowik et al., 2011).\n\n### Amounts of photorespiratory transcripts and proteins indicate that the C2 pathway was established early during C4 evolution in Flaveria and is present also in the C4-like species F. brownii\n\nPhotorespiratory genes are expressed in all species and photorespiratory proteins are detected in all species. To visualize the differences in transcript and protein abundance heat maps were plotted (Figure 3). The transcription of all photorespiratory genes except the transport proteins DIT1 and DIT2 and one isoform of GLDH was downregulated in the C4 species F. bidentis and F. trinervia compared to the C3 species F. pringlei und F. robusta (Figure 3A, Figure 3\u2014source data 1). Both dicarboxylate transporters play an important role in generating the transfer acids in the C4 pathway of NADP-ME plants such as F. trinervia and F. bidentis (Renne et al., 2003; Gowik et al., 2011; Kinoshita et al., 2011). This may explain why their expression pattern is more similar to the C4 genes than to the other photorespiratory genes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02478/elife-02478-fig3-v2.jpg)\n\n**Figure 3.:** Normalized transcript (A) and protein (B) amounts are plotted as heat maps. Transcript amounts were determined by Illumina sequencing of the leaf transcriptomes and read mapping on selected F. robusta full length transcript sequences. Protein amounts were determined by protein gel blots. See Figure 3\u2014source data 1 for absolute transcript levels, Figure 3\u2014source data 2 for protein quantification and Figure 3\u2014figure supplements 1 and 2 for immunoblots. Fp: F. pringlei (C3); Fro: F. robusta (C3); Fc: F. chloraefolia (C3\u2013C4); Fpu: F. pubescens (C3\u2013C4); Fa: F. anomala (C3\u2013C4); Fra: F. ramosissima (C3\u2013C4); Fbr: F. brownii (C4-like); Fb: F. bidentis (C4); Ft: F. trinervia (C4).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02478/elife-02478-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** 30 \u00b5g of total protein was electrophoresed on a polyacrylamide-SDS gel and stained with coomassie blue as control of total protein concentrations. Fp: F. pringlei (C3); Fro: F. robusta (C3); Fc: F. chloraefolia (C3\u2013C4); Fpu: F. pubescens (C3\u2013C4); Fa: F. anomala (C3\u2013C4); Fra: F. ramosissima (C3\u2013C4); Fbr: F. brownii (C4-like); Fb: F. bidentis (C4); Ft: F. trinervia (C4).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02478/elife-02478-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Immunoblot results with antibodies against photorespiratory proteins (C) Immunoblot results with antibodies against C4 proteins. Fp: F. pringlei (C3); Fro: F. robusta (C3); Fc: F. chloraefolia (C3\u2013C4); Fpu: F. pubescens (C3\u2013C4); Fa: F. anomala (C3\u2013C4); Fra: F. ramosissima (C3\u2013C4); Fbr: F. brownii (C4-like); Fb: F. bidentis (C4); Ft: F. trinervia (C4).\n\nThe amounts of photorespiratory transcripts did not decrease gradually from C3 to C4 but the expression levels in the C3\u2013C4 intermediate species F. chloraefolia, F. pubescens, F. anomala and F. ramosissima were mostly equal or higher than in the C3 species. An exception are the transcripts of one GLDP, one GLDH and one SHM isoform which are drastically down-regulated also in the C3\u2013C4 intermediate species. It was shown earlier that the down-regulation of this GLDP isoform is tightly associated with the establishment of the C2 pathway in Flaveria (Schulze et al., 2013). The down-regulation of the GLDH and SHM isogenes might have similar reasons since both enzymes are also involved in glycine decarboxylation. Only the C4-like species F. brownii is intermediate with respect to photorespiratory transcripts. 19 of 27 transcripts are reduced compared to the C3\u2013C4 intermediate and C3 species but have higher levels than the true C4 species F. bidentis and F. trinervia. Exceptions are the components of the glycine decarboxylase complex as the respective transcripts levels are equal to these in the C3 and C3\u2013C4 intermediate species (Figure 3A).\n\nThe expression patterns described above were not only found for the genes encoding the core enzymes of photorespiration but also for the genes responsible for recycling of ammonia set free during photorespiration, GS/GOGAT. Also the genes of recently discovered transporters associated with photorespiration, PLGG1 and BOU (Eisenhut et al., 2013; Pick et al., 2013), behave accordingly.\n\nTo test whether transcript abundance reflects protein abundance, amounts of core photorespiratory proteins in the leaves of all nine species were quantified by protein gel blots. To this end we generated antibodies against conserved peptides from Flaveria GLDP, GLDT, GLDL, SHM, HPR, PGLP and GLYK proteins. Total leaf proteins were extracted from plant material harvested together with the material used for RNA isolation and equal amounts of protein were separated via SDS gel-electrophoresis prior to blotting (Figure 3\u2014figure supplement 1). The changes of protein amounts essentially reflected the changes of the amounts of the corresponding transcripts (Figure 3B, Figure 3\u2014figure supplement 2, Figure 3\u2014source data 2). The amounts of core photorespiratory proteins in the C3\u2013C4 intermediates were equal to the amounts in the C3 species. A clear reduction of these proteins can be observed only for the true C4 species and the C4\u2013like species. F. brownii exhibits intermediate amounts of most photorespiratory proteins. This indicates that the regulation of photorespiratory genes mainly occurs on the transcriptional level and that our approach to analyze the photorespiratory activity by comparative transcriptomics is reasonable.\n\nWhile the overall patterns remain similar between all independent experiments, individual proteins and transcripts vary between the four experiments. This likely reflects adjustments of photorespiratory gene expression to the different light and temperature conditions in our green house in the different seasons of the year.\n\nWe conclude that the four experiments support the establishment of a photorespiratory C2 cycle early during C4 evolution in Flaveria and that this C2 cycle was maintained until Rubisco activity was constricted to the bundle sheath cells in the true C4 Flaveria species.\n\n### An integrated model of C2 photosynthesis\n\nWhile the principal physiological differences between C3 and C4 leaves are widely understood, knowledge about the metabolic reconfiguration required to implement a functional C2 pathway into a C3 leaf is incomplete. In particular, moving glycine from mesophyll to bundle sheath cells (Hylton et al., 1988; Morgan et al., 1993) does not only translocate carbon, it also transports one nitrogen atom per two carbon atoms. Evidently, implementing the C2 carbon pump requires balancing of metabolic routes to maintain homeostasis of both carbon and nitrogen metabolism (Monson and Rawsthorne, 2000). How this can be achieved is non-intuitive and it thus requires a systematic analysis by metabolic modeling. To this end, we simulated the leaf metabolism of a C2 plant using an integrated model. We coupled a mechanistic model of C3\u2013C4 intermediate photosynthesis (von Caemmerer, 2000; Heckmann et al., 2013) with a modified genome-scale stoichiometric model of C4 photosynthesis that was designed to describe the entire metabolic interactions of mesophyll and bundle sheath cells in C4 leaves (Dal'Molin et al., 2010).\n\nWe used the mechanistic model to predict constraints for the stoichiometric model. It provided values for net CO2 uptake, Rubisco carboxylation as well as oxygenation in mesophyll and bundle sheath, CO2 leakage from the bundle sheath, PEPC activity in the mesophyll, activity of NADP-ME in the bundle sheath, plasmodesmatal flux of glycine and serine, and decarboxylation by the GDC. Given specific activities of the C2 and C4 cycles in the mechanistic model, we used flux balance analysis (FBA) to predict detailed flux distributions that follow biologically realistic optimality criteria (Varma and Palsson, 1994). We employed a maximization of leaf biomass production, followed by a minimization of the sum of absolute fluxes including transport processes. In the minimization of total flux, we allocated higher weights to plasmodesmatal fluxes in order to account for the trade-off between CO2 leakage and diffusion of metabolites between the cells. This framework allows us to investigate the most parsimonious implementation of C2 and C4 cycles, given a hypothesis about which metabolites are suitable for plasmodesmatal transport.\n\nThe first outcome of simulating the photorespiratory CO2 pump was that the establishment of the C2 pathway has indeed a direct impact on the nitrogen metabolism of the leaf. It transports two molecules of glycine from the mesophyll to the bundle sheath, where one molecule each of serine, CO2, and ammonium are produced. CO2 is fixed by bundle sheath Rubisco and serine is transferred back to the mesophyll, where it is used for the regeneration of phosphoglycerate and photorespiratory glycine. This results in a net transport of CO2 but also ammonia from the mesophyll to the bundle sheath. To create a noticeable CO2 enrichment in the bundle sheath, the C2 cycle must run with an appreciable capacity; indeed, the mechanistic model of C3\u2013C4 intermediate photosynthesis predicted an oxygenation rate of Rubisco of about one third of its carboxylation rate. Running at such rates, the C2 cycle will create a massive nitrogen imbalance between mesophyll and bundle sheath cells, as was also predicted earlier by Monson and Rawsthorne (2000). Within the stoichiometric model, the free diffusion of ammonia between the two cell types was not allowed, since ammonia is toxic and known to effectively uncouple electrochemical gradients (Krogmann et al., 1959). Thus, ammonia must be refixed in the bundle sheath cells and transferred back to the mesophyll in the form of amino acids. According to the intergrated model, ammonia is fixed by glutamine synthetase and glutamine oxoglutarate aminotransferase (GS/GOGAT) in the bundle sheath cells (Figure 4). Consistent with this prediction, we found that GS/GOGAT transcripts were upregulated in the C3\u2013C4 intermediate species (Figure 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02478/elife-02478-fig4-v2.jpg)\n\n**Figure 4.:** Predicted fluxes if (A) major amino acids and the corresponding oxoacids and dicarbonic acids are allowed to freely diffuse between cells, (B) the \u03b1-ketoglutarate and glutamate transfer between mesophyll and bundle sheath was constrained (C) additionally the transfer of alanine and pyruvate between mesophyll and bundle sheath was constrained (D) transfer of all nitrogen containing compounds except for glycine and serine, which are used by the C2 cycle were constrained. Fluxes are given in \u00b5mol s\u22121 m\u22122. Values in brackets show minimum and maximum of flux resulting from flux variability analysis. Flux of dissolved gasses, sucrose, inorganic compounds and processes that carry flux below 1 \u00b5mol s\u22121 m\u22122 are not shown. The sums of absolute fluxes over the plasmodesmata for the different variants were (A): 17.8 \u00b5mol s\u22121 m\u22122; (B): 18.4 \u00b5mol s\u22121 m\u22122; (C): 19.0 \u00b5mol s\u22121 m\u22122; (D): 22.1 \u00b5mol s\u22121 m\u22122. See Figure 4\u2014source data 1 for plasmodesmatal fluxes.\n\nEstimating whether a certain metabolite is suitable for maintaining a diffusional gradient between mesophyll and bundle sheath is an unsolved problem. The impact on regulatory mechanisms and homeostasis of the C3 leaf may render some metabolites unsuitable to serve as transport metabolites. We address this problem by modeling multiple scenarios that assume different transport metabolites.\n\nIf major amino acids and the corresponding oxoacids and dicarbonic acids are allowed to freely diffuse between cells in an integrated model representing a C2 cycle, glutamate is predicted to be transferred to the mesophyll, where it is deaminated by GGT, regenerating the photorespiratory glycine. The resulting 2-oxoglutarate is transferred back to the bundle sheath cells (Figure 4A). The model preference for glutamate/2-oxoglutarate reflects the minimization of total flux in the FBA model, as this effectively minimizes the number of active enzymatic reactions and holds the plasmodesmatal flux for ammonia balance at one acceptor and one transport metabolite.\n\nTo elucidate if alternative solutions exist that contain more steps but retain the same biomass output, the 2-oxoglutarate transfer between mesophyll and bundle sheath was constrained to prevent the glutamate/2-oxoglutarate exchange. The integrated model then predicts an alanine/pyruvate shuttle (Figure 4B). The glutamate produced by GS/GOGAT activity in the bundle sheath cells is used by alanine aminotransferase (Ala-AT) to aminate pyruvate. The resulting alanine is transferred to the mesophyll and trans-aminated by Ala-AT resulting in pyruvate and glutamate. The glutamate is used to regenerate photorespiratory glycine and pyruvate is transferred back to the bundle sheath.\n\nIf alanine and pyruvate transfer are also constrained, the model predicts an aspartate/malate shuttle (Figure 4C). This includes the oxidation of malate in the bundle sheath. The resulting oxaloacetate (OAA) is aminated by aspartate aminotransferase (Asp-AT) and aspartate moves to the mesophyll. Here aspartate is trans-aminated by Asp-AT and malate is regenerated by reduction of the resulting OAA and transferred to the bundle sheath.\n\nIn all these scenarios, further increasing the weights on plasmodesmatal flux leads to transporter metabolites with increased N carrying capacity such as asparagine (Figure 4\u2014source data 1).\n\nIn a restrictive scenario, all nitrogen containing compounds were excluded from plasmodesmatal transport, except for glycine and serine, which are used by the C2 cycle itself. In this case, the model predicts that bundle sheath derived ammonia is transferred from glutamate to phosphohydroxy-pyruvate by phosphoserine aminotransferase to yield phosphoserine; phosphoserine is then converted to serine by phosphoserine phosphatase. Finally, the serine moves to the mesophyll. This variant includes the transfer of 3-phosphoglycerate from the mesophyll to the bundle sheath, where it is converted to phosphohydroxy pyruvate by 3-phosphoglycerate dehydrogenase (Figure 4D).\n\n### The model predicts a mechanistic interaction between C2 and C4 cycle\n\nIn C3 plants, basal activities of the typical C4 cycle enzymes are present (Aubry et al., 2011). When our integrated model is parameterized to include an active C4 cycle, it predicts that a contingent of the bundle sheath ammonia will be transferred to the mesophyll cells by the C4 cycle as a biomass neutral alternative to the 2-OG/Glu shuttle or as the unique solution when additional weight on plasmodesmatal fluxes is applied (Figure 5\u2014source data 1). In this solution malate is decarboxylated in the bundle sheath cells. CO2 is refixed by Rubisco, and the resulting pyruvate is aminated by Ala-AT. Alanine moves to the mesophyll cells, where ammonia is fed into the photorespiratory cycle by Ala-AT and GGT. The resulting pyruvate is converted back to malate by PPDK, PEPC, and NADPH-dependent MDH (Figure 5A). Flux variability analysis shows that only marginal variability in the fluxes of the shuttle is possible (Figure 5\u2014source data 1). According to our model predictions, the cycle is active even at low PEPC activities, such as those measured in C3 Flaveria species (Gowik et al., 2011; Heckmann et al., 2013). When the C4 cycle runs with low capacity, according the model, the surplus of bundle sheath ammonia is transferred back to the mesophyll by the glutamate/2-oxoglutarate shuttle. Once the capacity of the C4 cycle gradually increases, the recirculation of nitrogen is shifted from the glutamate/2-oxoglutarate shuttle towards the C4 cycle (Figure 5B). The predicted biomass production increases linearly with C4 cycle activity (Figure 5C). Thus, our model predicts a strong interaction between C2 and C4 photosynthesis.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02478/elife-02478-fig5-v2.jpg)\n\n**Figure 5.:** (A) Predicted fluxes when the model is parameterized to include activity of the C4 cycle enzymes. Fluxes are given in \u00b5mol s\u22121 m\u22122. Values in brackets show minimum and maximum of flux resulting from flux variability analysis. The sum of absolute flux over plasmodesmata was 21.9 \u00b5mol s\u22121 m\u22122. Flux of dissolved gasses, sucrose, inorganic compounds and processes that carry flux below 1 \u00b5mol s\u22121 m\u22122 are not shown. See Figure 5\u2014source data 1 for plasmodesmatal fluxes. (B) Predicted activities of Ala-AT in mesophyll (black line) and bundle sheath (gray line) cells and predicted transfer of \u03b1-ketoglutarate from mesophyll to bundle sheath cells (black dashed line) and glutamate from bundle sheath to mesophyll cells (gray dashed line) at low C4 cycle activities. (C) Changes in biomass production with varying (low) activity of the C4 cycle in a C2 plant.\n\n### Analysis of C4 cycle gene expression in C3\u2013C4 intermediate Flaveria species\n\nWhen the C2 cycle is running with high capacity, our integrated modeling approach predicts the necessity of auxiliary metabolite fluxes between mesophyll and bundle sheath cells to prevent a massive nitrogen imbalance. Among those auxiliary fluxes were the pyruvate/alanine and the malate/aspartate exchanges. The metabolites used in these shuttles also serve as transport metabolites in C4 photosynthesis. Furthermore, the model highlights the possibility that a low capacity C4 cycle balances part of the C2 cycle ammonia production. Therefore we analyzed in detail the expression of C4 cycle related genes in our dataset. True C4 Flaverias, such as F. bidentis or F. trinervia, are believed to use a NADP-ME type C4 cycle (Moore et al., 1984; Ku et al., 1991; Meister et al., 1996; Gowik et al., 2011). All genes associated with this type of C4 photosynthesis are gradually upregulated in the analyzed C3\u2013C4 intermediate species in line with their degree of \u2018C4-ness\u2019. This is true for the typical C4 enzymes like PEPC, PPDK, MDH, NADP-ME, Ala-AT and a plastidic aspartate aminotransferase (Asp-AT), as well as for several C4 associated transporters, such as the pyruvate transporter BASS2, the H+/Na+ exchanger NHD, the PEP translocator CUE1 and the putative malate and aspartate transporters DIT1 and DIT2 (Weber and von Caemmerer, 2010; Brautigam et al., 2011; Furumoto et al., 2011; Gowik et al., 2011). The regulators of the C4 enzymes (like PEPC kinase or the PPDK regulatory protein) and enzymes with auxiliary functions of C4 enzymes (like pyrophosphatases or adenosinmonophosphatases) show a similar pattern (Figure 6, Figure 6\u2014source data 1). To corroborate the results of the transcript abundance measurements, selected C4 cycle enzymes (PEPC, PPDK, and NADP-ME) were measured by immunoblotting. The protein abundance correlates well with the transcript abundance (Figure 6, Figure 6\u2014source data 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02478/elife-02478-fig6-v2.jpg)\n\n**Figure 6.:** Normalized transcript (A) and protein (B) levels are plotted as heat maps. Transcript amounts were determined by Illumina sequencing of the leaf transcriptomes and read mapping on selected F. robusta full length transcript sequences. Protein amounts were determined by protein gel blots. See Figure 6\u2014source data 2 for absolute transcript level, Figure 6\u2014source data 2 for protein quantification and Figure 3\u2014figure supplement 1 for immunoblots. (C) Mean values of transcript levels from all four experiments were clustered by hierarchical using the HCL module of MEV program with Pearson correlation and the average linkage method. The relative transcript abundance for PEPC, PPDK, NADP-ME and Ala-AT (mean values from all four experiments) are plotted for all nine species. Fp: F. pringlei (C3); Fro: F. robusta (C3); Fc: F. chloraefolia (C3\u2013C4); Fpu: F. pubescens (C3\u2013C4); Fa: F. anomala (C3\u2013C4); Fra: F. ramosissima (C3\u2013C4); Fbr: F. brownii (C4\u2013like); Fb: F. bidentis (C4); Ft: F. trinervia (C4).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02478/elife-02478-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Immunoblot results with antibodies against C4 proteins. Fp: F. pringlei (C3); Fro: F. robusta (C3); Fc: F. chloraefolia (C3\u2013C4); Fpu: F. pubescens (C3\u2013C4); Fa: F. anomala (C3\u2013C4); Fra: F. ramosissima (C3\u2013C4); Fbr: F. brownii (C4-like); Fb: F. bidentis (C4); Ft: F. trinervia (C4).\n\nThe expression changes of C4 cycle genes do not all follow the same quantitative pattern (Figure 6C). Although all of these genes gradually increase in expression when plants gain C4 properties, as judged, for example, by the percentage of 14CO2 directly fixed into C4 acids (Vogan and Sage, 2011), the quantitative changes in gene expression are quite different. PEPC and PPDK transcript amounts increase slowly in the C3\u2013C4 intermediates F. chloraefolia, F. pubescens, and F. anomala, more steeply in the advanced C3\u2013C4 intermediate F. ramosissima and the C4-like species F. brownii before reaching the highest transcript abundances in the true C4 species (Figure 6C). In contrast, NADP-ME and Ala-AT gene expression already increase in expression in the more C3-like intermediate species. Their expression rises more linearly in the further advanced intermediates and plateaus in the C4-like and C4 species. If one uses the different Flaveria species as evolutionary proxies as suggested by the results of Heckmann et al. (2013), these results suggest that NADP-ME and Ala-AT are strongly upregulated earlier in evolution than other C4 core enzymes like PEPC or PPDK.\n\nF. chloraefolia is classified as a type I C3\u2013C4 intermediate species, and no enhanced C4 cycle activity should be present in this species based on the classification. We detected upregulation of all NADP-ME type associated C4 genes, with some of the genes showing comparable small increases in expression (Figure 6). This is in line with the results of 14CO2 uptake studies that indicate about 14% of CO2 is directly incorporated into C4 acids in F. chloraefolia, whereas only 6% goes into C4 acids directly in the C3 species F. pringlei (Moore et al., 1987). We think therefore that a basal C4 cycle activity is present in F. chloraefolia and its classification as type I C3\u2013C4 intermediate is questionable.\n\nA gene encoding a mitochondrial NAD dependent malate dehydrogenase as well as several cytosolic and especially one mitochondrial Asp-AT were upregulated exclusively in the C3\u2013C4 intermediate species and the C4-like F. brownii (Figure 6). Often, high activities of these genes are associated with the NAD-ME or PEP-CK type of C4 photosynthesis. NAD dependent malic enzyme and PEP carboxykinase genes were only very lowly expressed in all analyzed Flaverias, and no obvious differences between the C3\u2013C4 intermediates and the other species could be found (Figure 2\u2014source data 2, data available from the Dryad Digital Repository: http://dx.doi.org/10.5061/dryad.q827h).\n\nWe found no transcriptomic evidence that ammonia is recirculated by the phosphoserine pathway predicted by the model that restricts the free diffusion of all amino acids except serine and glycine. The amounts of transcripts for all three enzymes of this pathway, i.e., phosphoserine aminotransferase, phosphoserine phosphatase, and 3-phosphoglycerate dehydrogenase, were found to be very low in all analyzed Flaveria species (Figure 2\u2014source data 2, data available from the Dryad Digital Repository: http://dx.doi.org/10.5061/dryad.q827h) (Mallmann et al., 2014).\n\nTaken together, these data imply that the anaplerotic ammonia shuttle, required to maintain the nitrogen homeostasis in mesophyll and bundles sheath cells of plants performing C2 photosynthesis, is active in all analyzed C3\u2013C4 Flaveria species, as predicted by the computer simulations. Furthermore, it appears that even the most C3-like C3\u2013C4 intermediate species analyzed within the present study, F. chloraefolia, exhibits low level C4 cycle activity. This activity is again in accordance with the in silico model, which predicts the C4 cycle to be a highly efficient ammonia recirculation pathway.\n\n## Discussion\n\nPhotorespiration is mainly seen as a wasteful process, which arises from a malfunction of Rubisco and reduces photosynthetic efficiency (Ogren, 1984). In a high CO2 atmosphere, Rubisco can operate efficiently. But the current atmospheric CO2 concentration, combined with heat and drought, leads to an enhanced oxygenase activity and thereby the photosynthetic efficiency decreases (Raines, 2011). Up to 30% of the initially fixed CO2 may be lost by photorespiration (Bauwe et al., 2010). C4 plants avoid this problem by enriching CO2 at the site of Rubisco. CO2 is prefixed in the mesophyll and released in the bundle sheath cells, where Rubisco is operating (Hatch, 1987). The establishment of the photorespiratory CO2 pump, which relocates the release of photorespiratory CO2 to the bundle sheath cells, appears to be an important intermediate step towards the C4 cycle and our detailed study of Flaveria intermediate species suggests that genes associated with C4 photosynthesis also played a role in the C2 cycle.\n\n### Implementation of the C2 pathway leads to high expression of photorespiratory genes in C3-C4 intermediate Flaveria species\n\nThe expression of photorespiratory genes, including all genes encoding the core enzymes of the pathway, most of the transporters, and the enzymes involved in ammonia refixation, is not downregulated in the analyzed intermediate species; the transcript and protein amounts remain constant or in some cases are even higher compared to C3 species. A significant drop in photorespiratory gene expression is only observed in the C4-like species F. brownii and is decreased further in the C4 species. Together with earlier results (Schulze et al., 2013), this indicates that indeed a C2 photosynthetic cycle is active in all these C3-C4 intermediate Flaveria species and that a reduction in photorespiratory transcripts and proteins only occurs once the amounts of Rubisco have been reduced in the mesophyll as was described for the C4-like species F. brownii (Bauwe, 1984; Holaday et al., 1988). Rubisco reduction in the mesophyll is thus a late step of C4 evolution, which in the Flaveria series appears to not occur gradually but rather abruptly towards the end of the evolutionary trajectory. It is followed by a strong increase of C4 cycle activity, as can be deduced from the upregulation of PEPC and PPDK genes in the real C4 species (Figure 6C), when the primary CO2 fixation is completely taken over by PEPC. In the intermediate species C2 and C4 cycles operate in parallel leading to similar or higher photorespiratory gene expression compared with the C3 species.\n\n### Analysis of C4 cycle gene expression supports the predictions of the C2 model for C3\u2013C4 intermediate Flaveria species and implies the early establishment of a complete C4 pathway\n\nThe model of the C2 cycle and the underlying metabolism proposes GS/GOGAT, Ala-AT, and Asp-AT to be involved in balancing the amino groups during C2 cycle operation (Figure 4). The transcriptome data from the C3-C4 intermediate Flaveria species largely support the results of our integrated model for the C2 pathway (Figure 6). In these species we found an upregulation of genes involved in the three most likely mechanisms for the recovery of ammonia predicted by the model. GS/GOGAT, which catalyzes the primary refixation of ammonia in the bundle sheath cells, is important for all three versions of ammonia shuttles (Figure 4) and is upregulated in the intermediate species. Transcripts for the glutamate/2-oxoglutarate shuttle, the alanine/pyruvate shuttle, and the aspartate/malate shuttle are enriched in all C3\u2013C4 intermediates compared to the C3 and C4 Flaverias. For the alanine/pyruvate shuttle, Ala-AT is needed in the bundle sheath and the mesophyll cells. Ala-AT is upregulated already in the least advanced C3\u2013C4 intermediates F. chloraefolia and F. pubescens, but also in all the other C3\u2013C4 intermediates. Ala-AT transcripts are also highly abundant in the true C4 Flaverias since Ala-AT is directly involved in the C4 cycle when alanine is used as transport metabolite.\n\nWe found several Asp-AT and two MDH genes upregulated in the C3\u2013C4 intermediate species (Figure 6). The chloroplast-located MDH and Asp-AT genes are involved in the C4 cycle of C4 Flaverias, in which malate and aspartate are used concurrently as C4 transport metabolites (Meister et al., 1996). Two further Asp-AT genes and another MDH gene were found to be upregulated exclusively in the C3\u2013C4 intermediates, including the C4-like species F. brownii. The most likely reason for upregulation of these genes is their involvement in the recirculation of photorespiratory ammonia by a malate/aspartate shuttle.\n\nThe pathways of ammonia recirculation between mesophyll and bundle sheath foreshadow the establishment of a true C4 cycle (Figure 4). All variants described above need the establishment of inter- and intra-cellular transport capacities for amino acids and small organic acids, which are also needed for a functional C4 cycle (Weber and von Caemmerer, 2010). The existence of an aspartate/malate and an alanine/pyruvate shuttle anticipates important components of a functional C4 pathway. Our transcript data imply that both of these shuttles are active in C3\u2013C4 intermediate Flaverias. Only a few additions would be required to convert these pathways of ammonia recirculation into a C4-like CO2 concentration mechanism, that is, malate would have to be decarboxylated in the bundle sheath cells and pyruvate would have to be converted to malate in the mesophyll. Our transcript data implies that this conversion of the photorespiratory ammonia recirculation pathway into a C4-like CO2 concentrating pump must have been an early event in C4 evolution of Flaveria since already in the least advanced intermediates such as F. chloraefolia and F. pubescens, NADP-ME transcripts are elevated and their amounts increase in parallel with Ala-AT and Asp-AT transcript levels.\n\nTo extend the pathways of ammonia recirculation into a rudimentary C4 cycle, a capacity to regenerate malate from pyruvate in the mesophyll is required. As deduced from the transcriptome data, the enzymatic functions required are also already enhanced in the least advanced C3\u2013C4 intermediates, since we observe a low but consistent upregulation of PEPC and PPDK genes in these species compared to the C3 Flaverias. Measurements of radiolabeled CO2 incorporation support the view that a rudimentary C4 cycle is already operating in intermediate Flaveria species (Rumpho et al., 1984; Monson et al., 1986; Moore et al., 1987; Chastain and Chollet, 1989). F. chloraefolia as well as F. pubescens incorporate a higher percentage of 14CO2 into the C4 compounds malate and aspartate (11.3% and 24.9%) than the C3 species F. pringlei and F. cronquistii (4.1% and 7.7%) (Vogan and Sage, 2011). Thus even the least advanced intermediates analyzed in this study run already a low-level C4 cycle, which assists in recycling the ammonia liberated by GDC in the bundle sheath cells.\n\nThe question arises whether amino group transfer initially exclusively happened via amino acid/oxoacid pairs or whether the enzymatic content of C3 plants immediately supported a shuttle that also involved decarboxylation and carboxylation reactions. C3 plants have considerable capacity for the decarboxylation of four-carbon organic acids in their bundle sheath cell (Hibberd and Quick, 2002; Brown et al., 2010) and measurements of total leaf NAD-ME and NADP-ME activity in C3 plants repeatedly demonstrated basal activities for various C3 species (Wheeler et al., 2005; Aubry et al., 2011; Maier et al., 2011). C3 plants also accumulate high amounts of organic C4 acids like malate or fumarate during the day (Zell et al., 2010), which are produced by PEPC, the only enzyme capable of producing C4 acids de novo. It is tempting to hypothesize that plants use a malate/alanine shuttle to recycle parts of the ammonia liberated by glycine decarboxylation from the very beginning of the C2 cycle.\n\n### Elevating the C4 cycle activity in a C2 plant enhances the CO2 fixation capacity\n\nIf the C4 cycle is superimposed onto a C2 cycle operating in a C3\u2013C4 intermediate plant, the C2 photosynthesis model predicts a mechanistic interaction between the C2 and C4 cycles (Figure 5). When the C4 cycle is running, the photorespiratory ammonia is recirculated from the bundle sheath to the mesophyll cells by moving malate from the mesophyll to the bundle sheath and transferring alanine back to the mesophyll. This malate/alanine cycling leads to a net transport of ammonia from the bundle sheath into the mesophyll cells. In contrast to the other mechanisms of ammonia recirculation described above, the C4 cycle does not only lead to a net transport of ammonia from the bundle sheath to the mesophyll but additionally also to a net transport of CO2 in the opposite direction. Thus CO2 is transferred from the mesophyll to the bundle sheath without increasing the number of transport processes between the cells. By elevating the CO2 concentration in the bundle sheath cells the C4 cycle acts cooperatively with the C2 cycle. The bundle sheath Rubisco would work under a more elevated CO2 concentration and thus operate more effectively compared to a pure C2 plant, leading to an increased biomass production. The C4 cycle thus has a dual beneficial effect: an efficient nitrogen shuttle is combined with a CO2 concentrating pump.\n\nTo investigate the possible interaction with regard to biomass, a C4 cycle at the enzyme capacities of C3 plants was allowed and tested for biomass changes (Figure 5 C). When the C4 cycle is running with PEPC activities comparable to those found in C3 Flaveria species, the model already predicts a gain in biomass production compared to the C2 cycle on its own. Under these conditions, the bulk of photorespiratory ammonia is recycled through a rudimentary C4 cycle limited by the C4 cycle flux capacity. The model predicts that biomass production will be further enhanced with higher activity of the C4 cycle. Consequently, there is permanent positive selection on enhancing the activity of the currently rate limiting enzyme once a C4 cycle is running.\n\nThe evolutionary scenario described above is in good agreement with the Flaveria transcriptome data. We observe gradual increases in the amounts of C4 transcript with increasing \u2018C4-ness\u2019 of the C3\u2013C4 intermediates until the most advanced species F. brownii. The abundance of NADP-ME and Ala-AT transcripts increases faster than the transcript abundance of the other core C4 genes like PEPC, PPDK, MDH or Asp-AT. This implies that these evolutionary changes were driven by selection on high bundle sheath decarboxylation capacity, consistent with the idea that the C4 cycle began as an auxiliary pathway to the C2 cycle to recirculate photorespiratory ammonia. Hence, in this early phase, the main purpose of the C4 cycle was to provide the ammonia acceptor pyruvate. The C2 model and its evolutionary implications are consistent with the properties of the C3\u2013C4 intermediate Flaveria species including F. brownii, which possess mesophyll Rubisco activity and consequently the C2 photosynthetic pathway. The next iteration during C4 evolution in Flaveria must have been the restriction of Rubisco activity to the bundle sheath, making the C2 cycle obsolete, as observed for the true C4 Flaveria species.\n\n### A scenario for C4 evolution in the genus Flaveria\u2014a general blueprint for the evolution of C4 photosynthesis?\n\nThe establishment of a photorespiratory CO2 pump, termed C2 photosynthesis, is thought to be an important step in C4 evolution. Recent work has shown how C3 Flaverias were preconditioned for the evolution of the C2 pathway and how the C2 cycle was implemented on the molecular level (Sage et al., 2013; Schulze et al., 2013). Together with the present work, this gives us a detailed picture of what happened in the early and intermediate stages during C4 evolution in Flaveria.\n\nWe have argued that the establishment of the C2 cycle requires the implementation of at least components of the C4 pathway, if not the whole pathway. This fact might be a partial explanation for the polyphyletic evolution of C4 photosynthesis. Only the C2 cycle has to evolve to set a system on a slippery slope towards C4 photosynthesis. Nature seems to confirm this idea. So far, 66 independent origins of C4 photosynthesis could be identified. In contrast, there are only seven known groups with independent origins of C2 plants and no direct ancestry to C4 species (Sage et al., 2012). If one assumes that all recent C4 lineages evolved via C2 intermediates, which appears likely (Sage et al., 2012; Heckmann et al., 2013; Williams et al., 2013), this would mean that the C2 pathway evolved 73 times independently and that over 90% of these C2 plant containing lineages proceeded to C4 photosynthesis. This indicates that the C2 photosynthetic pathway must indeed be a strong enabler of C4 photosynthesis. It will be highly enlightening to analyze these C2 groups without ancestry to C4 species, like Moricandia, Steinchisma or Mollugo, to find out in how far they differ from groups that evolved the C4 pathway and why C4 evolution may have been hampered in these groups.\n\nThe close evolutionary interconnection of the C2 and the C4 pathway could be seen as an example of metabolic exaptation (Barve and Wagner, 2013). Exaptation or pre-adaptation was defined as an adaptation involving the co-option of traits that originally evolved for a different purpose (Gould and Vrba, 1982). While both C2 and C4 act as carbon shuttles to the bundle sheath cells, the two systems achieve this goal through different biochemical processes. In particular, the amino acid shuttle in the C2 system evolved to transport nitrogen, and its later use in C4 photosynthesis to shuttle carbon thus represents a molecular exaptation. Our findings therefore corroborate the general idea that the evolution of complex traits may be accelerated through exaptations (Darwin, 1872; Gould and Vrba, 1982; Barve and Wagner, 2013).\n\nWe do not know if the scenario on the early and intermediate stages of evolution described above is limited to the genus Flaveria or if it is valid for C4 evolution in general. Our prediction of the C2 pathway being a strong facilitator of C4 evolution should apply to all C4 origins, as the integrated model is not specific to Flaveria.\n\n## Materials and methods\n\n### Plant material\n\nF. pringlei, F. robusta, F. chloraefolia, F. pubescens, F. anomala, F. ramosissima, F. brownii, F. bidentis and F. trinervia plants were grown in the green house at University of Duesseldorf side-by-side and harvested at four different points of time over the year. The plants were grown in 17-cm pots on soil (C-400 with Cocopor [Stender Erden, Schermbeck Germany] fertilized with 3 g/l Osmocote exact standard 3 to 4 M [Marysville, USA]) with additional light for 16 hr per day until 50 to 60 cm height and before the onset of flowering.\n\nPlants for experiment one were harvested in September, for experiment two in June, for experiment three in October and for experiment four in April. The plant material was immediately frozen in liquid nitrogen, stored at \u221280\u00b0C and used for the following analyses.\n\n### RNA isolation, transcriptome sequencing and analysis\n\nTotal RNA was isolated from the second and fourth leaves according to (Westhoff et al., 1991) followed by a DNAse treatment. After phenol/chloroform extraction and precipitation with NaAc and isopropyl alcohol the RNA was dissolved in H2O. The RNA quality was tested with the Agilent 2100 bioanalyzer. 1 \u00b5g of total RNA was used for cDNA library generation, which was accomplished with the TruSeq RNA Sample Preparation Kit (Illumina Inc., San Diego, USA) via the Low-Throughput Protocol (TruSeq RNA Sample Preparation Guide, Illumina Proprietary Catalog # RS-930-2001, Part # 15008136 Rev. A, November 2010). Clusters were generated with the TruSeq SR Cluster Kit v2 according to the Reagent Preparation Guide with the Illumina cBot device. The single read sequencing was performed with the Illumina HiSeq2000.\n\nSequences of transcripts from genes involved in photorespiraton, C4 photosynthesis and refixation and recirculation of photorespiratory ammonia were identified among de novo assembled transcripts of F. robusta. De novo assembly was performed with either CLC Genomics Workbench (CLC-Bio, Aaarhus, Denmark) or the Velvet/Oases software package (Schulz et al., 2012) using F. robusta 454 (Gowik et al., 2011) and Illumina reads (this study).\n\nAfter quality control and processing, Illumina reads were aligned to the F. robusta transcript sequences with the CLC Genomics Workbench using standard parameters. Read mapping against a minimal set of coding sequences (Brautigam et al., 2011) of the TAIR 9 release of the Arabidopsis thaliana genome (http://www.Arabidopsis.org/) was performed using BLAT (Kent, 2002) as described in (Gowik et al., 2011).\n\nThe MEV software package (http://www.tm4.org/mev.html) was used for plotting heat maps, hierarchical clustering and principal component analysis.\n\n### Protein isolation and quantification\n\nTotal proteins were isolated from plant material harvested together with the material for RNA isolation according to Shen et al. (2007) and quantified using the RC-DC protocol (Bio-Rad Laboratories, Hercules, USA). 30 \u00b5g of total protein was electrophoresed on polyacrylamide-SDS gels (Sch\u00e4gger and von Jagow, 1987) and electrophoretically transferred to nitrocellulose membranes (Protran BA85, 0.45 \u03bcm; Schleicher & Schuell, Dassel, Germany) for 1 hr with 0.8 mA per cm2. Specific primary antibodies were raised against conserved Flaveria peptides (Agrisera V\u00e4nn\u00e4s, Sweden). For the detection of specific proteins the nitrocellulose membranes were incubated with the primary antibodies and a Horseradish peroxidase-conjugated secondary antibody (Sigma-Aldrich, St. Louis, USA). An enhanced chemiluminescent Horseradish peroxide substrate was added and signals were recorded using a Fuji LAS-4000 mini CCD camera system. The signals were quantified with the Multi Gage analysis software (Fujifilm, Tokyo, Japan). As loading control a gel was stained for 45 min with 0.25% Coomassie blue, 50% methanol, 7% acetic acid, and destained in 50% methanol, 7% acetic acid.\n\n### Coupling a mechanistic model with a genome-scale metabolic reconstruction\n\nIn order to model the metabolic integration of C2 and C4 cycle in the context of leaf metabolism, we conducted Flux Balance Analysis (FBA) based on a genome-scale metabolic reconstruction of C4 metabolism, C4GEM (Dal'Molin et al., 2010). This reconstruction contains a complex biomass reaction including carbohydrates, cell wall components, amino acids and nucleotides (Dal'Molin et al., 2010).\n\nFBA is a powerful tool to understand the adaptation of metabolism on a genomic scale. Since metabolite concentrations are not modeled explicitly, fluxes related to carbon concentration mechanisms (CCMs) cannot be captured by this constraint-based approach alone. To account for this issue, we coupled the FBA model with a mechanistic model of C3\u2013C4 photosynthesis (von Caemmerer, 2000; Heckmann et al., 2013).\n\nC4GEM representing NADP-ME types was provided by the authors and FBA was conducted using this model:\n\n$$\nMaximize\u2009c^{T}v\n$$\n\nsubject to $Sv=0$.\n\n$$\nv_{min,i}\\leqv_{i}\\leqv_{max,i}\n$$\n\nwhere c is the vector of coefficients in the objective function, here the leaf biomass production. v is the vector of fluxes through the network reactions, S is the stoichiometric matrix of the metabolic network, and vmin and vmax represent constraints on the respective fluxes.\n\nIn order to test hypotheses concerning nitrogen metabolism in C3\u2013C4 intermediate plants, S had to be modified. The plasmosdesmatal transport reactions in the original C4GEM model include malate, pyruvate, 3-phosphoglycerate, trioses, phosphates, sucrose, aspartate, alanine, phosphoenolpyruvate, CO2, and O2. Reactions were added to S in order to include transport of serine, glycine, glutamate, glutamine, asparagine, threonine, 2-oxoglutarate and water over the mesophyll/bundle sheath interface. Furthermore, the lack of photosystem II in the bundle sheath of certain C4 plants does not hold in our scenario (Nakamura et al., 2013) and we added a reaction for linear electron transport to the bundle sheath. C4GEM does not contain a reaction for a plastidal NADP-dependent malate dehydrogenase in the bundle sheath; we added this reaction to S.\n\nIn addition to the stoichiometric matrix S, the constraints used in C4GEM were modified:\n\nThe original constraint on leaf sucrose production was changed to result in an output ratio of sucrose to amino acids of about 5 (Riens et al., 1991). Fixed constraints on production of starch and fatty acids are not appropriate in the coupled framework. Since we are not aware of data that explains how these fluxes scale with net CO2 assimilation rate, the constraints were removed from the model. Reactions belonging to the GS/GOGAT system were assumed to be irreversible. Nitrogen is available in the form of nitrate as opposed to NH3 in the original model. Since there is no evidence suggesting mesophyll specificity of PEPC in intermediate Flaveria species, we unconstrained PEPC flux in the bundle sheath.\n\nTo couple the genome-scale FBA model with the mechanistic model of carbon fixation, the following reactions were constrained using the values predicted by the mechanistic model: net CO2 uptake, Rubisco carboxylation and oxygenation in mesophyll and bundle sheath, CO2 leakage from the bundle sheath, PEPC activity in the mesophyll, activity of NADP-ME in the bundle sheath, plasmodesmatal flux of glycine and serine and decarboxylation by the GDC complex. The lower bound on glycine diffusion (Vmin,Gly), serine diffusion (Vmin,Ser), and GDC reaction (Vmin,GDC) can be obtained from the rate of Rubisco oxygenation in the mesophyll (Vom) and the fraction of photorespiratory CO2 in the bundle sheath derived from mesophyll oxygenations (\u03be):\n\n$$\nv_{min,Gly}=\u03beV_{om},v_{min,Ser}=0.5\u03beV_{om},v_{min,GDC}=0.5\u03beV_{om}\n$$\n\nThe mechanistic model was parameterized to the C3 state as given in Heckmann et al. (2013), with the exception of the parameter \u03be, which was set to a value of 0.98 (i.e., the majority of GDC activity was restricted to the bundle sheath. Derivation from transcriptome data is given in Heckmann et al. (2013)). These constraints on the reactions of the photorespiratory pump are necessary to adequately predict C2 photosynthesis because of the inability of FBA alone to model CCMs (see discussion above).\n\nIn the FBA part of the model, a minimization of total flux (MTF) analysis was conducted in order to narrow down the space of optimal solutions:\n\n$$\nMinimize \\sumi=1nw_{i}|v_{i}|\n$$\n\nsubject to: $Sv=0$.\n\n$$\nv_{min,i}\\leqv_{i}\\leqv_{max,i}\n$$\n\n\n\n$$\nc^{T}v=c^{T}v_{FBA}\n$$\n\nwhere vFBA is the flux distribution of the FBA optimization described above. w denotes a vector of weights, where plasmodesmatal flux received a higher weighting factor (1.1 for plasmodesmatal exchange, 1 for the remaining reactions). This method implements a simple minimization of protein costs for a given optimal biomass production. The higher weights on plasmodesmatal fluxes account for the trade-off between CO2 containment in the bundle sheath and metabolite diffusion between the cells. Since this trade-off is difficult to quantify, we conducted a sensitivity analysis by varying the weight on plasmodesmatal transport reactions.\n\nIn order to investigate the possible range that fluxes can take while yielding an optimal solution, flux variability analysis was conducted:\n\nFor each vi:\n\nMaximize or Minimize$v_{i}$.\n\nSubject to: $Sv=0$.\n\n$$\nv_{min,i}\\leqv_{i}\\leqv_{max,i}\n$$\n\n\n\n$$\nc^{T}v=c^{T}v_{FBA}\n$$\n\n\n\n$$\n\\sumi=1nw_{i}|v_{i}|=s_{opt}\n$$\n\nWhere sopt is the minimum for the weighted sum of absolute flux found in the MTF optimization.\n\nAll simulations were conducted in the R environment for statistical computing (R Core Team, 2013) using the sybil library (Gelius-Dietrich et al., 2013).\n\n### Accession numbers\n\nThe read data have been submitted to the National Center for Biotechnology Information Short Read Archive under accession numbers SRP036880 (F. bidentis), SRP036881 (F. anomala), SRP036883 (F. brownii), SRP036884 (F. chloraefolia), SRP036885 (F. pringlei), SRP037526 (F. pubescens), SRP037527 (F. ramosissima), SRP037528 (F. robusta) and SRP037529 (F. trinervia).\n",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "56880ca9-fd6e-4215-afc7-633e0300a1a2",
+      "submission_id": "27f9794c-0244-4b59-a961-b18ba6a484bb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Detlef Weigel, Max Planck Institute for Developmental Biology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02478.020](https://doi.org/10.7554/eLife.02478.020)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cThe role of photorespiration during the evolution of C4photosynthesis in the genus Flaveria\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor (Detlef Weigel) and 3 reviewers, one of whom, Chris Pires, has agreed to reveal his identity.\n\nThe Senior editor and the reviewers discussed their comments before we reached this decision, and the Senior editor has assembled the following comments to help you prepare a revised submission.\n\nThis is a genuinely exciting and provocative study; if the results hold up, they are extremely important for the field, and represent a major advance in our understanding of C4 evolution.\n\nThe hypothesis tested is that the C2 photosynthesis pump is an evolutionary precursor in the shift from C3 to C4 photosynthesis (which has happened multiple times). Across nine Flaveria species that includes C3, C4 and intermediate species taxa with intermediate C3 and C4 photosynthesis, transcriptome and protein data were collected and analyzed in a phylogenetic context. A global genome-wide metabolic model and flux balance analysis (FBA) was used to integrate models with transcript abundance. The coordinated changes in expression of all main photorespiratory enzymes strongly suggest an evolutionary scenario for the origin of C4 photosynthesis. Very little attention has been paid in the past to nitrogen effects of C2, yet the problem is obvious, and if the C4 cycle is the most direct way to rebalance N within the leaf tissue, then this route provides an immediate solution to a very important and poorly understood transition in the trajectory. It implies that C2 crosses a new threshold of C4 accessibility, and that C4 is all but an inevitable outcome. This also can partially explain the relative rarity of known C2 phenotypes \u2013 this may be a part of phenotypic space with a low 'persistence time' \u2013 an area that lineages rarely evolve into and very quickly evolve out of.\n\nKey to your argument is whether or not the 're-tooling' of the C4GEM model to accommodate a C2 system was done properly. I'd suggest getting an additional reviewer with expertise in metabolic modeling for that. The analysis done is fairly standard, but relies on several assumptions and choices that do not seem to be justified in the present version of the manuscript. In addition, robustness checks, particularly with respect to the uniqueness of the solutions, need to be obtained, analyzed, and subsequently interpreted.\n\nDetails:\n\n1) How could the selected 11 fluxes be fixed from the mechanistic model? The cited mechanistic models (von Caemmerer, 2000; Heckmann et al., 2013) aim at predicting CO2 assimilation rate given a set of parameter values (e.g., Michaelis-Menten constants) as well as input values for partial pressure of CO2 and O2. The cited mechanistic model does not include the plasmodesmatal flux of glycine and serine or the decarboxylation of the GDC. Moreover, the CO2 uptake rate is assumed (not predicted by the model). These points need to be further elaborated on.\n\n2) You state that you maximized biomass production rate. However, you do not comment on why fixed constraints on production of starch and fatty acids were removed; this should be supported by literature or clear reasons should be provided. The remaining model modifications seem plausible.\n\n3) The second objective applied is the minimization of the sum of absolute fluxes including transport processes (at fixed optimal biomass production rate). In doing so, higher weight was assigned to plasmodesmatal fluxes (expecting that they receive lower flux). However, as shown in the Methods section, the weight for the plasmodesmatal fluxes is seemingly arbitrarily chosen to be 1.1. What effect would the increase of this value to, say, 2 or 5 have on the drawn conclusions from this study? Either clear reasoning for selection of the value 1.1 should be provided (the mentioned trade-off does justify the selection of the value) or additional tests should be carried out to explore the consequences of other (biologically reasonable) weights for these reactions.\n\n4) You state that this framework allows the prediction of detailed flux distributions that are biologically realistic. In the Methods section, you also indicate that the combination of several objectives was used to reduce the size of the space of optimal solutions. However, you do not provide a statement on whether or not the resulting distributions are indeed unique (e.g., the one provided in Figure 4A). If the distribution for a fixed biomass production and a fixed sum of absolute flux values is not unique, the provided findings and interpretation are just one of many available alternatives! This point should be carefully examined (e.g., by Flux variability analysis); this analysis must be coupled with the issues raised in point 3, above.\n\n5) The alternative solutions with a larger number of reactions are presented without providing how much they differ in terms of the total absolute values of flux from that of the preferred glutamate/2-oxoglutarate solution. The increase in the total absolute plasmodesmatal flux, evident in Figure 4 A\u2013D, should be discussed with respect to biological implications.\n\n6) The statement \u201cIn terms of biomass production rate, this shuttle represents another alternative optimal solution\u201d in the Results section, is confusing and may be misleading. Is this an alternative solution for the same total absolute values of flux as the glutamate/2-oxoglutarate solution? If not, this sentence can be dropped since it was already indicated that alternatives were selected to \u201cretain the same biomass output\u201d.\n\n7) In the Results section, what do you mean by \u201cIn a restrictive scenario, all nitrogen containing compounds were excluded, except for glycine and serene\u201d? What does that do to the reactions that use these metabolites? Are they also removed?\n\n8) The prediction of the model discussed in the Results section should be investigated with respect to the issues raised in points 3 \u2013 5, above.\n\n[Editors' note: further clarifications were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cThe role of photorespiration during the evolution of C4 photosynthesis in the genus Flaveria\u201d for further consideration at eLife. Your revised article has been favorably evaluated by Detlef Weigel (Senior editor) and a member of the Board of Reviewing Editors. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe authors have carefully considered the suggestions provided about the earlier version of the manuscript and have: (1) offered detailed explanations of how the results of the mechanistic model were used to constrain the larger stoichiometric model as well as (2) conducted flux variability analysis for the different alternative scenarios to support the robustness of the predictions.\n\nThe only remaining concern deals with the details on lower/upper boundary selection for the diffusion fluxes and their effects on the predictions. Additional clarifications (and/or analyses) may further strengthen the predictions: The lower bounds on the diffusion of gylcine, serine, and NADPME reaction are fixed based on oxygenation rate and the fraction of photorespiratory CO2 in the bundle sheath derived from mesophyll oxygenations.\n\n1) Please, indicate the value for the latter parameter (i.e., the fraction of photorespiratory CO2 in the bundle sheath derived from mesophyll oxygenations).\n\n2) To thoroughly examine the viability of the modeling strategy, it is also necessary to determine the variability of model predictions without specifying tight lower (and upper) boundaries (as several fluxes are specified together with two optimization criteria), which may a priori fix the solution. What is the variability of the solutions with default lower/upper boundaries (say, of 0/1000 (irreversible case)) for the diffusion fluxes?\n\nThis additional analysis can be readily conducted and included in the manuscript.\n",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6e32f8bb-c621-4543-b3ef-f21ca50d87e1",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C1",
+      "claim": "C4 photosynthesis has evolved at least 62 times independently in 19 different families of angiosperms.",
+      "claim_type": "EXPLICIT",
+      "source": "C4 plants have evolved multiple times independently from C3 ancestors. The evolution of C4 photosynthesis occurred at least 62 times in 19 different families of the angiosperms (Sage et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sage et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "e9a33abb-7b7b-4c46-84d1-8242250a41f6",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C2",
+      "claim": "Establishing a photorespiratory carbon pump (C2 photosynthesis) is a prerequisite for the evolution of C4 photosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomical, physiological, and phylogenetic and analyses as well as computational modeling indicate that the establishment of a photorespiratory carbon pump (termed C2 photosynthesis) is a prerequisite for the evolution of C4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple lines of evidence including anatomical, physiological, phylogenetic analyses and computational modeling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "bc4bf0e7-d014-490d-ab90-e5c4a685e6fd",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C3",
+      "claim": "C2 photosynthesis creates a misbalance in nitrogen metabolism between bundle sheath and mesophyll cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that C2 photosynthesis creates a misbalance in nitrogen metabolism between bundle sheath and mesophyll cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through comparative transcriptomic and biochemical analyses combined with Flux Balance Analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "0e4c3d59-9439-4742-a0e4-da232b46a68e",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C4",
+      "claim": "Rebalancing nitrogen metabolism in C2 plants requires anaplerotic reactions that resemble at least parts of a basic C4 cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Rebalancing nitrogen metabolism requires anaplerotic reactions that resemble at least parts of a basic C4 cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by mechanistic model and supported by transcriptomic data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "fdbb9d0e-fb39-4a0b-89aa-ae46ff5ab577",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C5",
+      "claim": "Photorespiration can reduce the efficiency of photosynthesis by up to 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "In the photorespiratory cycle, 2-PG is regenerated to 3-PGA, but it involves the release of formerly assimilated CO2 and NH3, entails energy costs for the plants and reduces the efficiency of photosynthesis by up to 30% (Ehleringer et al., 1991; Bauwe et al., 2010; Raines, 2011; Fernie et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "62e9e341-768f-45ef-a45c-38aead6f0083",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C6",
+      "claim": "Eight core enzymes are required for photorespiration in higher plants, located in the chloroplast, peroxisome, and mitochondrion.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight core enzymes are required for photorespiration, which in higher plants are located in the chloroplast, the peroxisome, and the mitochondrion (Bauwe et al., 2010; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation and illustrated in Figure 1A",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "5ec30b55-8b1c-4fe1-9514-e220e45c4ed0",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C7",
+      "claim": "The photorespiratory pathway rescues \u00be of the carbon that would otherwise be lost through the oxygenase activity of Rubisco.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathway rescues \u00be of the carbon, which would otherwise be lost through the oxygenase activity of Rubisco (Peterhansel et al., 2010; Fernie et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "2c4ee2af-42de-429f-8e64-9ed973b8a6d5",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C8",
+      "claim": "2-phosphoglycolate (2-PG) is toxic and requires removal by photorespiration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 2-PG is toxic, which requires its removal by a metabolic repair pathway called photorespiration (Anderson, 1971; Bowes et al., 1971; Ogren, 1984; Leegood et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "5eeacfb7-e913-488b-bd28-8d758409f24a",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C9",
+      "claim": "C4 photosynthesis is based on a division of labor between mesophyll and bundle sheath cells organized in a 'Kranz Anatomy'.",
+      "claim_type": "EXPLICIT",
+      "source": "C4 photosynthesis is based on a division of labor between two different cell types, mesophyll and bundle sheath cells, which are organized in a wreath-like structure called 'Kranz Anatomy' (Haberlandt, 1904; Dengler and Nelson, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "0959bccd-927a-4489-a417-f6ec1a7579d9",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C10",
+      "claim": "In C4 plants, atmospheric CO2 is initially fixed in the mesophyll by phosphoenolpyruvate carboxylase (PEPC).",
+      "claim_type": "EXPLICIT",
+      "source": "Atmospheric CO2 is initially fixed in the mesophyll by phosphoenolpyruvate carboxylase (PEPC), and the resulting four-carbon compound is transported to the bundle sheath cells and decarboxylated by NADP/NAD malic enzyme or phosphoenolpyruvate carboxykinase (Hatch et al., 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "5cfe032c-af1c-4413-b360-5bf5acff0b9f",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C11",
+      "claim": "The genus Flaveria contains three main phylogenetic groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The genus Flaveria contains three main phylogenetic groups, of which the first diverging group includes all C3 Flaveria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on phylogenetic analysis",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "daaa39f6-789d-4f85-a273-1dc95e51524f",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C12",
+      "claim": "All C4 Flaveria species belong to clade A.",
+      "claim_type": "EXPLICIT",
+      "source": "All C4 Flaveria species belong to clade A, which also contains several C4-like species and the C3\u2013C4 intermediate F. ramosissima (McKown et al., 2005; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation and shown in Figure 1D",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "5c54767c-7765-4fe2-97bb-7925fa1dfe84",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C13",
+      "claim": "RNA and protein amounts of the majority of photorespiratory enzymes were reduced in C4 compared to C3 Flaveria species.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA and protein amounts of the majority of the photorespiratory enzymes were reduced in C4 as compared to C3 species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through transcriptomic and protein analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "1e75e34c-2393-4979-a356-a16086d54f9b",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C14",
+      "claim": "Photorespiratory mRNA and protein amounts did not decrease in C3\u2013C4 intermediate Flaveria species but were mostly equal or higher than in C3 species.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, photorespiratory mRNA and protein amounts did not decrease in the C3\u2013C4 intermediate species but were mostly equal or even higher than in the C3 species",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through transcriptomic and protein analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "9e331dc8-9407-42fa-b60d-e5ca3f93f638",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C15",
+      "claim": "The establishment of the photorespiratory CO2 pump in Flaveria relies on coordinated changes in the expression of all core photorespiratory enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "demonstrating that the establishment of the photorespiratory CO2 pump in the genus Flaveria relies on coordinated changes in the expression of all core photorespiratory enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from transcriptomic and protein data showing coordinated expression patterns",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "aedc2570-1efc-467d-b838-b8ccabe92781",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C16",
+      "claim": "Nine Flaveria species were selected for the study, including two C3, two C4, and five C3\u2013C4 intermediate species.",
+      "claim_type": "EXPLICIT",
+      "source": "To study the evolution of the expression of photorespiratory and C4 cycle genes during the transition from C3 to C4 photosynthesis in the genus Flaveria, nine species reflecting the evolutionary trajectory taken were selected, including two C3 (F. robusta and F. pringlei), two C4 (F. bidentis and F. trinervia), and five C3\u2013C4 intermediate species (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described in methods and shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "8b94059b-9954-4912-b696-6d843db9846e",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C17",
+      "claim": "F. chloraefolia and F. pubescens were classified as type I C3\u2013C4 intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "According to their CO2 compensation points and the percentage of carbon initially fixed into malate and aspartate, F. chloraefolia and F. pubescens were earlier classified as type I C3\u2013C4 intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on physiological measurements cited from literature",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "758f3674-d90a-46d3-ac59-eab2987e6873",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C18",
+      "claim": "F. anomala and F. ramosissima belong to type II C3\u2013C4 intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "F. anomala and F. ramosissima belong to the type II C3\u2013C4 intermediates and F. brownii is classified as a C4-like species (Edwards and Ku, 1987; Moore et al., 1987; Cheng et al., 1988; Ku et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on physiological measurements cited from literature",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "19bd0209-89ac-4786-ae3d-2576667630c9",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C19",
+      "claim": "Type I C3\u2013C4 intermediates rely solely on the photorespiratory CO2 concentration cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Type I C3\u2013C4 intermediates are defined as solely relying on the photorespiratory CO2 concentration cycle whereas a basal C4 cycle activity is present in type II C3\u2013C4 intermediates species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition based on established classification system",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "c09a7ec4-bacb-4a21-bb3e-9112d3f6df5d",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C20",
+      "claim": "Type II C3\u2013C4 intermediate species have basal C4 cycle activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Type I C3\u2013C4 intermediates are defined as solely relying on the photorespiratory CO2 concentration cycle whereas a basal C4 cycle activity is present in type II C3\u2013C4 intermediates species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition based on established classification system",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "7c202392-575b-462c-b8e4-139100d1af09",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C21",
+      "claim": "C4-like species exhibit much higher C4 cycle activities but lack complete bundle sheath compartmentation of Rubisco activity.",
+      "claim_type": "EXPLICIT",
+      "source": "C4-like species exhibit much higher C4 cycle activities but lack complete bundle sheath compartmentation of Rubisco activity (Edwards and Ku, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition based on citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "cbcb008e-673b-49e8-8645-0739f9f87946",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C22",
+      "claim": "Four independent experiments with plants grown during different seasons were performed.",
+      "claim_type": "EXPLICIT",
+      "source": "Four independent experiments with plants grown during different seasons were performed to identify differences between the species that are dependent on their different modes of photosynthesis and independent of environmental influences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "a361f5af-408e-4506-9299-9f017c3080d5",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C23",
+      "claim": "The transcript profiles of all Flaveria species were quite similar in all four experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Hierarchical sample clustering using Pearson correlation and average linkage clustering shows that the transcript profiles of all Flaveria species were quite similar in all four experiments since the samples cluster strictly species-wise (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by hierarchical clustering analysis shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "3faf3290-6fd1-4e1f-8d46-679a65baea13",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C24",
+      "claim": "The transcriptome patterns are influenced by the photosynthesis type and the phylogenetic relationships of the different species.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptome patterns are influenced by the photosynthesis type and the phylogenetic relationships of the different species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from clustering patterns in the data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "de8bf60a-b395-4b67-8843-44425c06a13e",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C25",
+      "claim": "The two C4 species cluster together in hierarchical clustering analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The two C4 species, both belonging to clade A, cluster together as do the two C3 species that belong to the basal Flaveria species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in hierarchical clustering analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "90fd4fa8-5659-4498-b298-881273156c2a",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C26",
+      "claim": "The first three principal components explain 27% of the total variance in transcript levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The first three components, shown in Figure 2B, explain only 27% of the total variance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from principal component analysis shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "60da8c96-9a2e-4581-af2b-793ad25a4e6b",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C27",
+      "claim": "About 16% of all analyzed genes showed photosynthesis type related expression changes in a previous study.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in good accordance with earlier results where it was shown that about 16% of all analyzed genes showed photosynthesis type related expression changes when the transcriptomes of the C4 species F. trinervia and F. bidentis, the C3 species F. robusta and F. pringlei and the C3\u2013C4 intermediate species F. ramosissima were compared (Gowik et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "404ff1d1-ee68-4aa2-b953-57e72b7650c3",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C28",
+      "claim": "All photorespiratory genes except DIT1, DIT2, and one isoform of GLDH were downregulated in C4 species compared to C3 species.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription of all photorespiratory genes except the transport proteins DIT1 and DIT2 and one isoform of GLDH was downregulated in the C4 species F. bidentis and F. trinervia compared to the C3 species F. pringlei und F. robusta (Figure 3A, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by transcriptome sequencing data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "cfa93144-e0d5-46b8-89d3-b9b53222ba04",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C29",
+      "claim": "DIT1 and DIT2 dicarboxylate transporters play an important role in generating transfer acids in the C4 pathway of NADP-ME plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Both dicarboxylate transporters play an important role in generating the transfer acids in the C4 pathway of NADP-ME plants such as F. trinervia and F. bidentis (Renne et al., 2003; Gowik et al., 2011; Kinoshita et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "144f1600-03f5-447b-b545-d2493f11e0e8",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C30",
+      "claim": "The amounts of photorespiratory transcripts in C3\u2013C4 intermediate species were mostly equal or higher than in C3 species.",
+      "claim_type": "EXPLICIT",
+      "source": "The amounts of photorespiratory transcripts did not decrease gradually from C3 to C4 but the expression levels in the C3\u2013C4 intermediate species F. chloraefolia, F. pubescens, F. anomala and F. ramosissima were mostly equal or higher than in the C3 species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by transcriptome data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "d32f3eb7-447a-40db-8808-91be0d62e6b6",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C31",
+      "claim": "One GLDP, one GLDH, and one SHM isoform are drastically down-regulated in C3\u2013C4 intermediate species.",
+      "claim_type": "EXPLICIT",
+      "source": "An exception are the transcripts of one GLDP, one GLDH and one SHM isoform which are drastically down-regulated also in the C3\u2013C4 intermediate species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by transcriptome data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "a3da14b7-130c-42b7-8c20-f2832f76ab3b",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C32",
+      "claim": "The down-regulation of a specific GLDP isoform is tightly associated with the establishment of the C2 pathway in Flaveria.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown earlier that the down-regulation of this GLDP isoform is tightly associated with the establishment of the C2 pathway in Flaveria (Schulze et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "b0532045-1030-44f8-be4a-c8c8aa3a830e",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C33",
+      "claim": "F. brownii is intermediate with respect to photorespiratory transcripts, with 19 of 27 transcripts reduced compared to C3\u2013C4 intermediate and C3 species.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the C4-like species F. brownii is intermediate with respect to photorespiratory transcripts. 19 of 27 transcripts are reduced compared to the C3\u2013C4 intermediate and C3 species but have higher levels than the true C4 species F. bidentis and F. trinervia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by transcriptome data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "459aad71-48f7-4d2d-aba7-26a7f155e9aa",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C34",
+      "claim": "The components of the glycine decarboxylase complex in F. brownii have transcript levels equal to those in C3 and C3\u2013C4 intermediate species.",
+      "claim_type": "EXPLICIT",
+      "source": "Exceptions are the components of the glycine decarboxylase complex as the respective transcripts levels are equal to these in the C3 and C3\u2013C4 intermediate species (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by transcriptome data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "634ae452-308b-455a-bed3-5f6210f57d48",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C35",
+      "claim": "The changes of protein amounts essentially reflected the changes of the amounts of the corresponding transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "The changes of protein amounts essentially reflected the changes of the amounts of the corresponding transcripts (Figure 3B, Figure 3\u2014figure supplement 2, Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparing transcript and protein quantification data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "1869aefd-a0c7-4564-a938-e5387e56af92",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C36",
+      "claim": "The amounts of core photorespiratory proteins in C3\u2013C4 intermediates were equal to the amounts in C3 species.",
+      "claim_type": "EXPLICIT",
+      "source": "The amounts of core photorespiratory proteins in the C3\u2013C4 intermediates were equal to the amounts in the C3 species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by protein quantification",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "50024f85-6a1e-4863-84ef-3bcd53c6b7b2",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C37",
+      "claim": "A clear reduction of photorespiratory proteins can be observed only for the true C4 species and the C4-like species.",
+      "claim_type": "EXPLICIT",
+      "source": "A clear reduction of these proteins can be observed only for the true C4 species and the C4\u2013like species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by protein quantification",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "0efaf308-3cc0-426a-ac08-47f17fdb4033",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C38",
+      "claim": "The regulation of photorespiratory genes mainly occurs on the transcriptional level.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the regulation of photorespiratory genes mainly occurs on the transcriptional level and that our approach to analyze the photorespiratory activity by comparative transcriptomics is reasonable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from correlation between transcript and protein levels",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "9e1ca61e-0b28-4fe0-98be-9bc97cd63207",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C39",
+      "claim": "The four experiments support the establishment of a photorespiratory C2 cycle early during C4 evolution in Flaveria.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the four experiments support the establishment of a photorespiratory C2 cycle early during C4 evolution in Flaveria and that this C2 cycle was maintained until Rubisco activity was constricted to the bundle sheath cells in the true C4 Flaveria species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data across four independent experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "b93e3655-3ff9-409e-8baf-fee5a57e44b8",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C40",
+      "claim": "The C2 cycle was maintained until Rubisco activity was constricted to the bundle sheath cells in true C4 Flaveria species.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the four experiments support the establishment of a photorespiratory C2 cycle early during C4 evolution in Flaveria and that this C2 cycle was maintained until Rubisco activity was constricted to the bundle sheath cells in the true C4 Flaveria species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "763a2047-b4af-497e-9af8-d2ddc5b1bba4",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C41",
+      "claim": "Moving glycine from mesophyll to bundle sheath cells transports one nitrogen atom per two carbon atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, moving glycine from mesophyll to bundle sheath cells (Hylton et al., 1988; Morgan et al., 1993) does not only translocate carbon, it also transports one nitrogen atom per two carbon atoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on stoichiometry and cited references",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "36ba86cb-fe52-4bac-8182-89cf4a1bd5e6",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C42",
+      "claim": "The mechanistic model predicted an oxygenation rate of Rubisco of about one third of its carboxylation rate in C3\u2013C4 intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "To create a noticeable CO2 enrichment in the bundle sheath, the C2 cycle must run with an appreciable capacity; indeed, the mechanistic model of C3\u2013C4 intermediate photosynthesis predicted an oxygenation rate of Rubisco of about one third of its carboxylation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from mechanistic modeling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "47e76ce0-3c6f-4f58-8d31-1023d9f62132",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C43",
+      "claim": "Ammonia is toxic and known to effectively uncouple electrochemical gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the stoichiometric model, the free diffusion of ammonia between the two cell types was not allowed, since ammonia is toxic and known to effectively uncouple electrochemical gradients (Krogmann et al., 1959).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "005df4a8-96ac-4681-9a1c-5c22078f755f",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C44",
+      "claim": "According to the integrated model, ammonia is fixed by glutamine synthetase and glutamine oxoglutarate aminotransferase (GS/GOGAT) in the bundle sheath cells.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the intergrated model, ammonia is fixed by glutamine synthetase and glutamine oxoglutarate aminotransferase (GS/GOGAT) in the bundle sheath cells (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Predicted by integrated model and shown in Figure 4",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "7ecf57b2-32b1-4235-a6fd-fac2bf73565e",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C45",
+      "claim": "GS/GOGAT transcripts were upregulated in the C3\u2013C4 intermediate species.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this prediction, we found that GS/GOGAT transcripts were upregulated in the C3\u2013C4 intermediate species (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by transcriptome data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "5542fd32-57c5-4a2b-8724-974b44cb8ae0",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C46",
+      "claim": "When major amino acids and corresponding oxoacids are allowed to freely diffuse, glutamate is predicted to be transferred to the mesophyll where it is deaminated by GGT.",
+      "claim_type": "EXPLICIT",
+      "source": "If major amino acids and the corresponding oxoacids and dicarbonic acids are allowed to freely diffuse between cells in an integrated model representing a C2 cycle, glutamate is predicted to be transferred to the mesophyll, where it is deaminated by GGT, regenerating the photorespiratory glycine. The resulting 2-oxoglutarate is transferred back to the bundle sheath cells (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Predicted by integrated model shown in Figure 4A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "1d0db560-b53c-4d7a-ba04-bc9f1ebf7df6",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C47",
+      "claim": "When 2-oxoglutarate transfer is constrained, the integrated model predicts an alanine/pyruvate shuttle.",
+      "claim_type": "EXPLICIT",
+      "source": "To elucidate if alternative solutions exist that contain more steps but retain the same biomass output, the 2-oxoglutarate transfer between mesophyll and bundle sheath was constrained to prevent the glutamate/2-oxoglutarate exchange. The integrated model then predicts an alanine/pyruvate shuttle (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Predicted by integrated model shown in Figure 4B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "bf95d81f-6b1d-4f5a-a4cc-b320c32eadfe",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C48",
+      "claim": "When alanine and pyruvate transfer are constrained, the model predicts an aspartate/malate shuttle.",
+      "claim_type": "EXPLICIT",
+      "source": "If alanine and pyruvate transfer are also constrained, the model predicts an aspartate/malate shuttle (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Predicted by integrated model shown in Figure 4C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "eefa17d7-6d56-4423-8054-26cc12eab43f",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C49",
+      "claim": "When the model is parameterized to include an active C4 cycle, it predicts that bundle sheath ammonia will be transferred to the mesophyll cells by the C4 cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In C3 plants, basal activities of the typical C4 cycle enzymes are present (Aubry et al., 2011). When our integrated model is parameterized to include an active C4 cycle, it predicts that a contingent of the bundle sheath ammonia will be transferred to the mesophyll cells by the C4 cycle as a biomass neutral alternative to the 2-OG/Glu shuttle or as the unique solution when additional weight on plasmodesmatal fluxes is applied (Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Predicted by integrated model",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "ade3258a-c832-41b7-b024-4f93e455a6d6",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C50",
+      "claim": "According to model predictions, the C4 cycle is active even at low PEPC activities such as those measured in C3 Flaveria species.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our model predictions, the cycle is active even at low PEPC activities, such as those measured in C3 Flaveria species (Gowik et al., 2011; Heckmann et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by model and supported by citations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "83d5fd85-59ed-42bd-bd3b-9ca032635027",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C51",
+      "claim": "When the C4 cycle runs with low capacity, the surplus of bundle sheath ammonia is transferred back to the mesophyll by the glutamate/2-oxoglutarate shuttle.",
+      "claim_type": "EXPLICIT",
+      "source": "When the C4 cycle runs with low capacity, according the model, the surplus of bundle sheath ammonia is transferred back to the mesophyll by the glutamate/2-oxoglutarate shuttle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by model",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "44ec5739-9e17-44a7-9148-bc5cd36d95c4",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C52",
+      "claim": "As C4 cycle capacity increases, the recirculation of nitrogen is shifted from the glutamate/2-oxoglutarate shuttle towards the C4 cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the capacity of the C4 cycle gradually increases, the recirculation of nitrogen is shifted from the glutamate/2-oxoglutarate shuttle towards the C4 cycle (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Predicted by model and shown in Figure 5B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "a7c53824-0211-4447-9184-d59139561c18",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C53",
+      "claim": "The predicted biomass production increases linearly with C4 cycle activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted biomass production increases linearly with C4 cycle activity (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Predicted by model and shown in Figure 5C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "b67c9db1-f65b-4391-95dc-a45ba2976f04",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C54",
+      "claim": "The model predicts a strong interaction between C2 and C4 photosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our model predicts a strong interaction between C2 and C4 photosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from modeling results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "aaebcf06-2701-44cf-bcdb-d1d4d723bc76",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C55",
+      "claim": "All genes associated with NADP-ME type C4 photosynthesis are gradually upregulated in the analyzed C3\u2013C4 intermediate species in line with their degree of 'C4-ness'.",
+      "claim_type": "EXPLICIT",
+      "source": "All genes associated with this type of C4 photosynthesis are gradually upregulated in the analyzed C3\u2013C4 intermediate species in line with their degree of 'C4-ness'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by transcriptome data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "5b92a89c-62f9-43fc-9283-75ca04f797ee",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C56",
+      "claim": "PEPC and PPDK transcript amounts increase slowly in F. chloraefolia, F. pubescens, and F. anomala, more steeply in F. ramosissima and F. brownii before reaching highest levels in true C4 species.",
+      "claim_type": "EXPLICIT",
+      "source": "PEPC and PPDK transcript amounts increase slowly in the C3\u2013C4 intermediates F. chloraefolia, F. pubescens, and F. anomala, more steeply in the advanced C3\u2013C4 intermediate F. ramosissima and the C4-like species F. brownii before reaching the highest transcript abundances in the true C4 species (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by transcriptome data shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "c591f328-f4c0-4314-b03b-412010a5905e",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C57",
+      "claim": "NADP-ME and Ala-AT gene expression increases early in more C3-like intermediate species and rises more linearly in further advanced intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, NADP-ME and Ala-AT gene expression already increase in expression in the more C3-like intermediate species. Their expression rises more linearly in the further advanced intermediates and plateaus in the C4-like and C4 species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by transcriptome data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "826c664d-8854-44d0-a355-4a5a9ef40fa8",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C58",
+      "claim": "NADP-ME and Ala-AT are strongly upregulated earlier in evolution than other C4 core enzymes like PEPC or PPDK.",
+      "claim_type": "EXPLICIT",
+      "source": "If one uses the different Flaveria species as evolutionary proxies as suggested by the results of Heckmann et al. (2013), these results suggest that NADP-ME and Ala-AT are strongly upregulated earlier in evolution than other C4 core enzymes like PEPC or PPDK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from transcriptome data patterns and supported by citation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "01e186de-571e-457d-8e68-3c8c3c6c5083",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C59",
+      "claim": "About 14% of CO2 is directly incorporated into C4 acids in F. chloraefolia, whereas only 6% goes into C4 acids directly in F. pringlei.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with the results of 14CO2 uptake studies that indicate about 14% of CO2 is directly incorporated into C4 acids in F. chloraefolia, whereas only 6% goes into C4 acids directly in the C3 species F. pringlei (Moore et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to experimental data",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "d01048b0-8c50-4a2b-83de-420b7c94f679",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C60",
+      "claim": "A basal C4 cycle activity is present in F. chloraefolia.",
+      "claim_type": "EXPLICIT",
+      "source": "We think therefore that a basal C4 cycle activity is present in F. chloraefolia and its classification as type I C3\u2013C4 intermediate is questionable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from transcriptome data and 14CO2 uptake studies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "46219770-4f58-420c-a8d5-e30227be7e94",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C61",
+      "claim": "A mitochondrial NAD dependent malate dehydrogenase and several Asp-AT genes were upregulated exclusively in C3\u2013C4 intermediate species and F. brownii.",
+      "claim_type": "EXPLICIT",
+      "source": "A gene encoding a mitochondrial NAD dependent malate dehydrogenase as well as several cytosolic and especially one mitochondrial Asp-AT were upregulated exclusively in the C3\u2013C4 intermediate species and the C4-like F. brownii (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by transcriptome data shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "3ee0bec5-aa6d-4529-b0ef-66437fb8aab0",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C62",
+      "claim": "NAD dependent malic enzyme and PEP carboxykinase genes were only very lowly expressed in all analyzed Flaverias.",
+      "claim_type": "EXPLICIT",
+      "source": "NAD dependent malic enzyme and PEP carboxykinase genes were only very lowly expressed in all analyzed Flaverias, and no obvious differences between the C3\u2013C4 intermediates and the other species could be found (Figure 2\u2014source data 2, data available from the Dryad Digital Repository: http://dx.doi.org/10.5061/dryad.q827h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by transcriptome data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "f957dd02-1e5b-4de0-8ae6-7b49648ba130",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C63",
+      "claim": "There is no transcriptomic evidence that ammonia is recirculated by the phosphoserine pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no transcriptomic evidence that ammonia is recirculated by the phosphoserine pathway predicted by the model that restricts the free diffusion of all amino acids except serine and glycine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on transcriptome data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "74d41719-d7a0-42f8-a247-1c267e76c40b",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C64",
+      "claim": "The amounts of transcripts for all three enzymes of the phosphoserine pathway were found to be very low in all analyzed Flaveria species.",
+      "claim_type": "EXPLICIT",
+      "source": "The amounts of transcripts for all three enzymes of this pathway, i.e., phosphoserine aminotransferase, phosphoserine phosphatase, and 3-phosphoglycerate dehydrogenase, were found to be very low in all analyzed Flaveria species (Figure 2\u2014source data 2, data available from the Dryad Digital Repository: http://dx.doi.org/10.5061/dryad.q827h) (Mallmann et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by transcriptome data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "3ee7c1ab-7ba6-402a-b50f-73ff30c60f6b",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C65",
+      "claim": "The anaplerotic ammonia shuttle required to maintain nitrogen homeostasis in C2 photosynthesis is active in all analyzed C3\u2013C4 Flaveria species.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data imply that the anaplerotic ammonia shuttle, required to maintain the nitrogen homeostasis in mesophyll and bundles sheath cells of plants performing C2 photosynthesis, is active in all analyzed C3\u2013C4 Flaveria species, as predicted by the computer simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from transcriptome data and model predictions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "c9dd44ae-f506-4c94-baa2-64f38845707e",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C66",
+      "claim": "Even F. chloraefolia, the most C3-like C3\u2013C4 intermediate species analyzed, exhibits low level C4 cycle activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it appears that even the most C3-like C3\u2013C4 intermediate species analyzed within the present study, F. chloraefolia, exhibits low level C4 cycle activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from transcriptome data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "2c77ae69-e5ea-40e3-8381-e62a0f95099c",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C67",
+      "claim": "The C4 cycle is a highly efficient ammonia recirculation pathway according to the in silico model.",
+      "claim_type": "EXPLICIT",
+      "source": "This activity is again in accordance with the in silico model, which predicts the C4 cycle to be a highly efficient ammonia recirculation pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted by computational model",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "0ea62e42-0c6b-4718-8893-35f655b08733",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C68",
+      "claim": "The establishment of the photorespiratory CO2 pump appears to be an important intermediate step towards the C4 cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The establishment of the photorespiratory CO2 pump, which relocates the release of photorespiratory CO2 to the bundle sheath cells, appears to be an important intermediate step towards the C4 cycle and our detailed study of Flaveria intermediate species suggests that genes associated with C4 photosynthesis also played a role in the C2 cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from study results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "43b54812-ca3b-4048-bdfd-6836425403c9",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C69",
+      "claim": "Genes associated with C4 photosynthesis played a role in the C2 cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The establishment of the photorespiratory CO2 pump, which relocates the release of photorespiratory CO2 to the bundle sheath cells, appears to be an important intermediate step towards the C4 cycle and our detailed study of Flaveria intermediate species suggests that genes associated with C4 photosynthesis also played a role in the C2 cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from transcriptome data showing upregulation of C4 genes in C2 species",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "c11100dd-9909-404e-9071-1580972ce40c",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C70",
+      "claim": "A reduction in photorespiratory transcripts and proteins only occurs once the amounts of Rubisco have been reduced in the mesophyll.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with earlier results (Schulze et al., 2013), this indicates that indeed a C2 photosynthetic cycle is active in all these C3-C4 intermediate Flaveria species and that a reduction in photorespiratory transcripts and proteins only occurs once the amounts of Rubisco have been reduced in the mesophyll as was described for the C4-like species F. brownii (Bauwe, 1984; Holaday et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data and supported by citations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "15ec050d-d393-4214-8550-6bf802b606c1",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C71",
+      "claim": "Rubisco reduction in the mesophyll is a late step of C4 evolution in Flaveria.",
+      "claim_type": "EXPLICIT",
+      "source": "Rubisco reduction in the mesophyll is thus a late step of C4 evolution, which in the Flaveria series appears to not occur gradually but rather abruptly towards the end of the evolutionary trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from expression patterns across species",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "47ada8b4-345b-4d93-9814-861e5cde2031",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C72",
+      "claim": "Rubisco reduction in the mesophyll appears to occur abruptly rather than gradually in Flaveria.",
+      "claim_type": "EXPLICIT",
+      "source": "Rubisco reduction in the mesophyll is thus a late step of C4 evolution, which in the Flaveria series appears to not occur gradually but rather abruptly towards the end of the evolutionary trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from expression patterns across species",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "f4b46354-b12b-42bc-8810-1b05e55645c0",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C73",
+      "claim": "Rubisco reduction in the mesophyll is followed by a strong increase of C4 cycle activity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is followed by a strong increase of C4 cycle activity, as can be deduced from the upregulation of PEPC and PPDK genes in the real C4 species (Figure 6C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from transcriptome data shown in Figure 6C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "a563b03e-6d95-4d07-857f-fcf3c1f0c06b",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C74",
+      "claim": "In intermediate species, C2 and C4 cycles operate in parallel leading to similar or higher photorespiratory gene expression compared with C3 species.",
+      "claim_type": "EXPLICIT",
+      "source": "In the intermediate species C2 and C4 cycles operate in parallel leading to similar or higher photorespiratory gene expression compared with the C3 species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from transcriptome and protein data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "6c3f2e7d-8219-4fa2-8d97-e1d19f532c53",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C75",
+      "claim": "The pathways of ammonia recirculation between mesophyll and bundle sheath foreshadow the establishment of a true C4 cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathways of ammonia recirculation between mesophyll and bundle sheath foreshadow the establishment of a true C4 cycle (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from model predictions and transcriptome data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "a06c3fd0-e328-43b1-8cfa-dad505b2492a",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C76",
+      "claim": "The existence of an aspartate/malate and an alanine/pyruvate shuttle anticipates important components of a functional C4 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of an aspartate/malate and an alanine/pyruvate shuttle anticipates important components of a functional C4 pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from model predictions and transcriptome data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "2cf14fbd-c294-4875-88ac-6ec6278bc076",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C77",
+      "claim": "Only a few additions would be required to convert the ammonia recirculation pathways into a C4-like CO2 concentration mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a few additions would be required to convert these pathways of ammonia recirculation into a C4-like CO2 concentration mechanism, that is, malate would have to be decarboxylated in the bundle sheath cells and pyruvate would have to be converted to malate in the mesophyll.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from metabolic pathway analysis",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "d809447a-d9d8-4181-b626-31512ab45a32",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C78",
+      "claim": "The conversion of the photorespiratory ammonia recirculation pathway into a C4-like CO2 concentrating pump was an early event in C4 evolution of Flaveria.",
+      "claim_type": "EXPLICIT",
+      "source": "Our transcript data implies that this conversion of the photorespiratory ammonia recirculation pathway into a C4-like CO2 concentrating pump must have been an early event in C4 evolution of Flaveria since already in the least advanced intermediates such as F. chloraefolia and F. pubescens, NADP-ME transcripts are elevated and their amounts increase in parallel with Ala-AT and Asp-AT transcript levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from transcriptome data showing early upregulation of key genes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "cac9154b-033d-47ec-b891-5ccb03f36b36",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C79",
+      "claim": "C3 plants have considerable capacity for the decarboxylation of four-carbon organic acids in their bundle sheath cells.",
+      "claim_type": "EXPLICIT",
+      "source": "C3 plants have considerable capacity for the decarboxylation of four-carbon organic acids in their bundle sheath cell (Hibberd and Quick, 2002; Brown et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "11f3546e-76e3-467f-982c-7879de79dae9",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C80",
+      "claim": "Measurements of total leaf NAD-ME and NADP-ME activity in C3 plants repeatedly demonstrated basal activities for various C3 species.",
+      "claim_type": "EXPLICIT",
+      "source": "measurements of total leaf NAD-ME and NADP-ME activity in C3 plants repeatedly demonstrated basal activities for various C3 species (Wheeler et al., 2005; Aubry et al., 2011; Maier et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "fed41b06-5c74-4b27-8794-03d7a62fd76a",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C81",
+      "claim": "C3 plants accumulate high amounts of organic C4 acids like malate or fumarate during the day.",
+      "claim_type": "EXPLICIT",
+      "source": "C3 plants also accumulate high amounts of organic C4 acids like malate or fumarate during the day (Zell et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "069218da-64b3-43ec-bb9d-74db9b0ea65b",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C82",
+      "claim": "PEPC is the only enzyme capable of producing C4 acids de novo.",
+      "claim_type": "EXPLICIT",
+      "source": "which are produced by PEPC, the only enzyme capable of producing C4 acids de novo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established biochemical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "7d2a781f-3bfe-4410-9be4-aa2e7a2e4532",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C83",
+      "claim": "Plants may use a malate/alanine shuttle to recycle parts of the ammonia liberated by glycine decarboxylation from the very beginning of the C2 cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "It is tempting to hypothesize that plants use a malate/alanine shuttle to recycle parts of the ammonia liberated by glycine decarboxylation from the very beginning of the C2 cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative hypothesis based on model predictions and available enzyme activities",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "64571893-2652-4bec-8164-e74888904c32",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C84",
+      "claim": "The C4 cycle has a dual beneficial effect: an efficient nitrogen shuttle is combined with a CO2 concentrating pump.",
+      "claim_type": "EXPLICIT",
+      "source": "The C4 cycle thus has a dual beneficial effect: an efficient nitrogen shuttle is combined with a CO2 concentrating pump.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from model predictions",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "ff8cb93d-03dd-4821-a08c-9ea13cc88ab8",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C85",
+      "claim": "There is permanent positive selection on enhancing the activity of the currently rate limiting enzyme once a C4 cycle is running.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, there is permanent positive selection on enhancing the activity of the currently rate limiting enzyme once a C4 cycle is running.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from model showing biomass increases with C4 cycle activity",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "5b6571be-864d-4d69-b475-bced7549d99b",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C86",
+      "claim": "So far, 66 independent origins of C4 photosynthesis could be identified.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, 66 independent origins of C4 photosynthesis could be identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge from literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "59981c06-e5bd-4b97-9925-a74837176b88",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C87",
+      "claim": "There are only seven known groups with independent origins of C2 plants and no direct ancestry to C4 species.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there are only seven known groups with independent origins of C2 plants and no direct ancestry to C4 species (Sage et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "94e97b3b-5e75-46c0-9d21-32678c49cee1",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C88",
+      "claim": "Over 90% of C2 plant containing lineages proceeded to C4 photosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "If one assumes that all recent C4 lineages evolved via C2 intermediates, which appears likely (Sage et al., 2012; Heckmann et al., 2013; Williams et al., 2013), this would mean that the C2 pathway evolved 73 times independently and that over 90% of these C2 plant containing lineages proceeded to C4 photosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from known C4 and C2 origins, supported by citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "0ece9bfb-1219-40c0-b2d1-ac42b1b92f55",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C89",
+      "claim": "The C2 photosynthetic pathway is a strong enabler of C4 photosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the C2 photosynthetic pathway must indeed be a strong enabler of C4 photosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the high proportion of C2 lineages that evolved C4",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "daba649a-a8cc-4c9f-80d4-59c888c580fa",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C90",
+      "claim": "The close evolutionary interconnection of the C2 and C4 pathway is an example of metabolic exaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "The close evolutionary interconnection of the C2 and the C4 pathway could be seen as an example of metabolic exaptation (Barve and Wagner, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of results in context of evolutionary theory, supported by citation",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "5b219619-5d25-41c2-8bc3-0b318b1d35e8",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C91",
+      "claim": "The amino acid shuttle in the C2 system evolved to transport nitrogen, and its later use in C4 photosynthesis to shuttle carbon represents a molecular exaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "While both C2 and C4 act as carbon shuttles to the bundle sheath cells, the two systems achieve this goal through different biochemical processes. In particular, the amino acid shuttle in the C2 system evolved to transport nitrogen, and its later use in C4 photosynthesis to shuttle carbon thus represents a molecular exaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from functional analysis of C2 and C4 pathways",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "a30561b8-7da7-4093-8b1f-50d8bca670b3",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C92",
+      "claim": "The evolution of complex traits may be accelerated through exaptations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings therefore corroborate the general idea that the evolution of complex traits may be accelerated through exaptations (Darwin, 1872; Gould and Vrba, 1982; Barve and Wagner, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation supported by citations to evolutionary theory",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "7e3e7785-02b6-4fc6-b58c-47ce5d326695",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C93",
+      "claim": "The prediction of the C2 pathway being a strong facilitator of C4 evolution should apply to all C4 origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our prediction of the C2 pathway being a strong facilitator of C4 evolution should apply to all C4 origins, as the integrated model is not specific to Flaveria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the generality of the model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "cee759e5-8014-4c5d-b13e-c5cbe2ff8ef2",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C94",
+      "claim": "Approximately 50% of Illumina reads were aligned to Arabidopsis transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to align approx. 50% of our reads to the Arabidopsis transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from bioinformatic analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "4112a250-ff07-41ac-a475-331d71f26168",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C95",
+      "claim": "The mapping efficiency was lower compared to a similar approach using 454 sequencing, likely due to shorter read length of Illumina reads.",
+      "claim_type": "EXPLICIT",
+      "source": "This is lower as compared to a similar approach using 454 sequencing (Gowik et al., 2011) and likely due to the shorter read length of the Illumina compared to the 454 reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with previous study and inference about technical limitation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "9f939611-3ead-49c5-b191-9db15c87f1b2",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C96",
+      "claim": "Full-length transcripts for all photorespiratory and C4 genes were identified among contigs from F. robusta.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the contigs from F. robusta, we identified full-length transcripts for all photorespiratory and C4 genes in the focus of the present study and used these for further read mapping and detailed analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from de novo assembly and annotation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "942b4ff5-621a-45ba-b201-ddd2a22ec643",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C97",
+      "claim": "30 to 58 million reads per species and experiment were quantified after filtering of low quality reads.",
+      "claim_type": "EXPLICIT",
+      "source": "After filtering of low quality reads 30 to 58 million reads per species and experiment were quantified (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from sequencing and quality control",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "6a27b56f-66e1-4f79-aced-38874c88d861",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "claim_id": "C98",
+      "claim": "Close to 200 Gb of raw sequence data were produced in total.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, close to 200 Gb of raw sequence data were produced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from sequencing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5a6b4062-f414-4cbb-8932-7cbcc98bb448",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Four independent experiments with plants grown during different seasons showed consistent transcript profiles across all Flaveria species. Hierarchical clustering and principal component analysis demonstrated that transcriptome patterns cluster by species and are influenced by photosynthesis type and phylogenetic relationships, with only 27% of variance explained by the first three principal components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 collectively demonstrate experimental reproducibility and appropriate statistical analysis. The hierarchical clustering (C23) and PCA (C26) provide complementary validation of the transcriptome patterns. The low variance explained (27%) is consistent with previous findings (C27), supporting the interpretation that photosynthesis-related changes affect a minority of genes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "8a0f8233-a7a5-472a-8a70-f2973285bb76",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Photorespiratory gene expression in C3-C4 intermediate Flaveria species was maintained at levels equal to or higher than C3 species, with most photorespiratory transcripts not decreasing until the C4-like species F. brownii. Only specific isoforms (GLDP, GLDH, SHM) showed early downregulation associated with C2 pathway establishment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 and C28-C34 are well-supported by transcriptome data shown in Figure 3A. The pattern of maintained or elevated photorespiratory gene expression in intermediates, with reduction only in C4-like and C4 species, is consistently demonstrated. The exception of specific isoforms (C31-C32) is supported by prior work (Schulze et al., 2013).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "05a45f97-bb55-485b-b083-29b68f74ebc7",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Protein abundance of photorespiratory enzymes reflected transcript abundance patterns, with C3-C4 intermediates showing protein levels equal to C3 species and reduction only occurring in C4-like and C4 species. This indicates regulation occurs primarily at the transcriptional level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by protein quantification data (Figure 3B, Figure 3\u2014figure supplement 2). The correlation between transcript and protein levels validates the transcriptomic approach and supports the conclusion about transcriptional regulation (C38). However, the manuscript does not provide quantitative correlation statistics between mRNA and protein levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "dbf865dc-af8a-4e76-a6da-b73f3428ccba",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The C2 photorespiratory cycle was established early during C4 evolution in Flaveria and maintained until Rubisco was restricted to bundle sheath cells. Rubisco reduction in mesophyll appears to occur abruptly as a late evolutionary step, followed by strong increases in C4 cycle activity. In intermediate species, C2 and C4 cycles operate in parallel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 and C70-C74 are well-supported by the combined transcriptomic and protein data across all experiments. The inference about timing and abruptness of Rubisco reduction (C71-C72) is reasonable based on the expression patterns, though direct Rubisco measurements would strengthen this conclusion. The parallel operation of C2 and C4 cycles (C74) is supported by the maintained photorespiratory gene expression alongside increasing C4 gene expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "8f914f3a-ca1c-4d38-b816-153260d84a76",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "C2 photosynthesis creates a nitrogen imbalance between bundle sheath and mesophyll cells by transporting one nitrogen atom per two carbon atoms via glycine. The mechanistic model predicted Rubisco oxygenation at about one-third of carboxylation rate, and ammonia is fixed by GS/GOGAT in bundle sheath cells, which was confirmed by upregulated GS/GOGAT transcripts in C3-C4 intermediates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C41-C45 are supported by the integrated mechanistic and stoichiometric modeling combined with transcriptome validation. The stoichiometric relationship (C41) is biochemically sound. The model prediction of oxygenation rate (C42) and ammonia fixation pathway (C44) are validated by the observed upregulation of GS/GOGAT (C45, Figure 3). The integration of modeling and experimental data provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "6d491b5b-39e1-4adc-aea6-3482a9a1351a",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Rebalancing nitrogen metabolism in C2 plants requires anaplerotic reactions resembling parts of a C4 cycle. The integrated model predicts multiple alternative ammonia shuttles (glutamate/2-oxoglutarate, alanine/pyruvate, aspartate/malate) and shows that when C4 cycle activity is included, it serves as an efficient ammonia recirculation pathway with biomass production increasing linearly with C4 cycle activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C46-C54 are supported by the integrated FBA modeling constrained by mechanistic model predictions. The model systematically explores alternative solutions under different transport constraints (C46-C48) and demonstrates the interaction between C2 and C4 cycles (C49-C54). However, the model relies on assumptions about metabolite transport and optimization criteria that may not fully capture biological reality. Flux variability analysis provides some validation of solution robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "5430f383-7499-42de-999b-090ba38791ba",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "C4 cycle genes are gradually upregulated in C3-C4 intermediate species, but with different temporal patterns. NADP-ME and Ala-AT show early upregulation in more C3-like intermediates, while PEPC and PPDK increase more steeply in advanced intermediates. Even F. chloraefolia, classified as type I C3-C4 intermediate, shows evidence of basal C4 cycle activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C61 are well-supported by transcriptome data (Figure 6). The differential expression patterns of C4 genes (C56-C58) are clearly demonstrated. The reclassification of F. chloraefolia (C60) is supported by both transcriptome data and cited 14CO2 uptake studies (C59). The upregulation of mitochondrial NAD-MDH and Asp-AT specifically in intermediates (C61) is an interesting observation supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "79fe86cb-9e1a-4e9f-8b83-9bb115c3a46a",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "NAD-ME and PEP-CK genes showed very low expression in all Flaveria species with no differences between intermediates and other species. There is no transcriptomic evidence for ammonia recirculation via the phosphoserine pathway, with all three pathway enzymes showing very low transcript levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 are supported by transcriptome data. These negative results are important for ruling out alternative pathways and support the model predictions about which ammonia shuttles are actually used. The low expression of phosphoserine pathway enzymes (C63-C64) argues against one of the model's predicted solutions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "a63f5288-f593-4357-99fd-71cb22dd4bc5",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The anaplerotic ammonia shuttle required for C2 photosynthesis is active in all analyzed C3-C4 Flaveria species, including F. chloraefolia. The pathways of ammonia recirculation (aspartate/malate and alanine/pyruvate shuttles) foreshadow establishment of the C4 cycle, with conversion to a C4-like CO2 concentrating pump occurring early in Flaveria evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67, C69, C75-C76, and C78 integrate model predictions with transcriptome data to support the main hypothesis. The upregulation of genes for ammonia shuttles that resemble C4 pathway components (C75-C76) is well-documented. The inference about early conversion to C4-like function (C78) is supported by the early upregulation of NADP-ME in F. chloraefolia and F. pubescens. This represents a key mechanistic insight linking C2 and C4 evolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "c55e94b0-a4fe-4332-a410-31706e1ba609",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "C2 photosynthesis is a prerequisite for C4 evolution and acts as a strong enabler. The C4 cycle has a dual beneficial effect, combining an efficient nitrogen shuttle with a CO2 concentrating pump. This represents an example of metabolic exaptation, where the amino acid shuttle evolved to transport nitrogen in C2 was later co-opted to shuttle carbon in C4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C68, C84, C89-C91 represent the main conceptual conclusions of the study. These are well-supported by the integration of modeling predictions, transcriptome data, and phylogenetic analysis. The exaptation interpretation (C90-C91) is a reasonable evolutionary framework supported by the data, though it remains somewhat speculative. The claim that C2 is a prerequisite (C2) is supported by multiple lines of evidence but relies partly on inference from the Flaveria system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "49a1af97-bb15-4700-b0e8-fde64468325f",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "There are 66 independent origins of C4 photosynthesis but only seven known groups with independent C2 origins lacking C4 ancestry. Assuming all C4 lineages evolved via C2 intermediates, over 90% of C2 lineages proceeded to C4 photosynthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 are supported by citations to the literature (C86-C87) and reasonable calculation (C88). However, C88 relies on the assumption that all C4 lineages evolved via C2 intermediates, which while likely, is not definitively proven. The calculation itself is straightforward (73 C2 origins, 66 proceeded to C4 = 90%), but the underlying assumption introduces some uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "533894e5-eb13-45ad-8206-0984f982c2da",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Only a few enzymatic additions would be required to convert ammonia recirculation pathways into a C4-like CO2 concentration mechanism. It is hypothesized that plants may use a malate/alanine shuttle to recycle photorespiratory ammonia from the beginning of the C2 cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C77 is a reasonable inference from metabolic pathway analysis but lacks direct experimental validation. Claim C83 is explicitly stated as a hypothesis ('tempting to hypothesize') and is speculative, based on the presence of basal enzyme activities in C3 plants. While plausible, these claims require additional experimental evidence for full support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "6aba1fa4-1dba-4969-a1e6-3516c78ae8e9",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The findings corroborate the general idea that evolution of complex traits may be accelerated through exaptations. The prediction that C2 is a strong facilitator of C4 evolution should apply to all C4 origins since the integrated model is not specific to Flaveria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C92 is a broad evolutionary interpretation supported by the specific findings but extends beyond the data. Claim C93 assumes the model's generality, but the model was parameterized specifically for Flaveria and NADP-ME type C4 photosynthesis. While the underlying principles may be general, validation in other C4 lineages (NAD-ME, PEP-CK types) would be needed to fully support this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "fb515dd8-1951-447d-944f-ed28f9e53be1",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Approximately 50% of Illumina reads aligned to Arabidopsis transcripts, lower than 454 sequencing likely due to shorter read length. Full-length transcripts for all photorespiratory and C4 genes were identified from F. robusta de novo assembly. Close to 200 Gb of sequence data were produced, with 30-58 million reads per species per experiment after quality filtering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C98 describe technical aspects of the sequencing and bioinformatics pipeline. These are straightforward methodological results supported by the data. The comparison with 454 sequencing (C95) provides context for the mapping efficiency. These technical details support the validity of the downstream analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    },
+    {
+      "id": "17494373-5699-45a8-93f1-934c4949af66",
+      "content_id": "0bb792a0-f157-42c3-b2b4-74c33c8c1085",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background information on C4 and C2 photosynthesis, photorespiration, and the Flaveria genus is provided, including the independent evolution of C4 photosynthesis at least 62 times, the organization of C4 plants with Kranz anatomy, the phylogenetic structure of Flaveria, and the classification of intermediate species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C12, C16-C21, C29, C79-C82 provide established background knowledge supported by appropriate citations. These claims set the context for the study and are well-documented in the literature. The species selection and classification (C16-C21) are appropriate for addressing the research questions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:53:09.149142Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cbcb008e-673b-49e8-8645-0739f9f87946",
+      "result_id": "5a6b4062-f414-4cbb-8932-7cbcc98bb448"
+    },
+    {
+      "claim_id": "a361f5af-408e-4506-9299-9f017c3080d5",
+      "result_id": "5a6b4062-f414-4cbb-8932-7cbcc98bb448"
+    },
+    {
+      "claim_id": "3faf3290-6fd1-4e1f-8d46-679a65baea13",
+      "result_id": "5a6b4062-f414-4cbb-8932-7cbcc98bb448"
+    },
+    {
+      "claim_id": "de8bf60a-b395-4b67-8843-44425c06a13e",
+      "result_id": "5a6b4062-f414-4cbb-8932-7cbcc98bb448"
+    },
+    {
+      "claim_id": "90fd4fa8-5659-4498-b298-881273156c2a",
+      "result_id": "5a6b4062-f414-4cbb-8932-7cbcc98bb448"
+    },
+    {
+      "claim_id": "60da8c96-9a2e-4581-af2b-793ad25a4e6b",
+      "result_id": "5a6b4062-f414-4cbb-8932-7cbcc98bb448"
+    },
+    {
+      "claim_id": "5c54767c-7765-4fe2-97bb-7925fa1dfe84",
+      "result_id": "8a0f8233-a7a5-472a-8a70-f2973285bb76"
+    },
+    {
+      "claim_id": "1e75e34c-2393-4979-a356-a16086d54f9b",
+      "result_id": "8a0f8233-a7a5-472a-8a70-f2973285bb76"
+    },
+    {
+      "claim_id": "404ff1d1-ee68-4aa2-b953-57e72b7650c3",
+      "result_id": "8a0f8233-a7a5-472a-8a70-f2973285bb76"
+    },
+    {
+      "claim_id": "144f1600-03f5-447b-b545-d2493f11e0e8",
+      "result_id": "8a0f8233-a7a5-472a-8a70-f2973285bb76"
+    },
+    {
+      "claim_id": "d32f3eb7-447a-40db-8808-91be0d62e6b6",
+      "result_id": "8a0f8233-a7a5-472a-8a70-f2973285bb76"
+    },
+    {
+      "claim_id": "a3da14b7-130c-42b7-8c20-f2832f76ab3b",
+      "result_id": "8a0f8233-a7a5-472a-8a70-f2973285bb76"
+    },
+    {
+      "claim_id": "b0532045-1030-44f8-be4a-c8c8aa3a830e",
+      "result_id": "8a0f8233-a7a5-472a-8a70-f2973285bb76"
+    },
+    {
+      "claim_id": "459aad71-48f7-4d2d-aba7-26a7f155e9aa",
+      "result_id": "8a0f8233-a7a5-472a-8a70-f2973285bb76"
+    },
+    {
+      "claim_id": "634ae452-308b-455a-bed3-5f6210f57d48",
+      "result_id": "05a45f97-bb55-485b-b083-29b68f74ebc7"
+    },
+    {
+      "claim_id": "1869aefd-a0c7-4564-a938-e5387e56af92",
+      "result_id": "05a45f97-bb55-485b-b083-29b68f74ebc7"
+    },
+    {
+      "claim_id": "50024f85-6a1e-4863-84ef-3bcd53c6b7b2",
+      "result_id": "05a45f97-bb55-485b-b083-29b68f74ebc7"
+    },
+    {
+      "claim_id": "0efaf308-3cc0-426a-ac08-47f17fdb4033",
+      "result_id": "05a45f97-bb55-485b-b083-29b68f74ebc7"
+    },
+    {
+      "claim_id": "9e1ca61e-0b28-4fe0-98be-9bc97cd63207",
+      "result_id": "dbf865dc-af8a-4e76-a6da-b73f3428ccba"
+    },
+    {
+      "claim_id": "b93e3655-3ff9-409e-8baf-fee5a57e44b8",
+      "result_id": "dbf865dc-af8a-4e76-a6da-b73f3428ccba"
+    },
+    {
+      "claim_id": "c11100dd-9909-404e-9071-1580972ce40c",
+      "result_id": "dbf865dc-af8a-4e76-a6da-b73f3428ccba"
+    },
+    {
+      "claim_id": "15ec050d-d393-4214-8550-6bf802b606c1",
+      "result_id": "dbf865dc-af8a-4e76-a6da-b73f3428ccba"
+    },
+    {
+      "claim_id": "47ada8b4-345b-4d93-9814-861e5cde2031",
+      "result_id": "dbf865dc-af8a-4e76-a6da-b73f3428ccba"
+    },
+    {
+      "claim_id": "f4b46354-b12b-42bc-8810-1b05e55645c0",
+      "result_id": "dbf865dc-af8a-4e76-a6da-b73f3428ccba"
+    },
+    {
+      "claim_id": "a563b03e-6d95-4d07-857f-fcf3c1f0c06b",
+      "result_id": "dbf865dc-af8a-4e76-a6da-b73f3428ccba"
+    },
+    {
+      "claim_id": "bc4bf0e7-d014-490d-ab90-e5c4a685e6fd",
+      "result_id": "8f914f3a-ca1c-4d38-b816-153260d84a76"
+    },
+    {
+      "claim_id": "763a2047-b4af-497e-9af8-d2ddc5b1bba4",
+      "result_id": "8f914f3a-ca1c-4d38-b816-153260d84a76"
+    },
+    {
+      "claim_id": "36ba86cb-fe52-4bac-8182-89cf4a1bd5e6",
+      "result_id": "8f914f3a-ca1c-4d38-b816-153260d84a76"
+    },
+    {
+      "claim_id": "47e76ce0-3c6f-4f58-8d31-1023d9f62132",
+      "result_id": "8f914f3a-ca1c-4d38-b816-153260d84a76"
+    },
+    {
+      "claim_id": "005df4a8-96ac-4681-9a1c-5c22078f755f",
+      "result_id": "8f914f3a-ca1c-4d38-b816-153260d84a76"
+    },
+    {
+      "claim_id": "7ecf57b2-32b1-4235-a6fd-fac2bf73565e",
+      "result_id": "8f914f3a-ca1c-4d38-b816-153260d84a76"
+    },
+    {
+      "claim_id": "0e4c3d59-9439-4742-a0e4-da232b46a68e",
+      "result_id": "6d491b5b-39e1-4adc-aea6-3482a9a1351a"
+    },
+    {
+      "claim_id": "5542fd32-57c5-4a2b-8724-974b44cb8ae0",
+      "result_id": "6d491b5b-39e1-4adc-aea6-3482a9a1351a"
+    },
+    {
+      "claim_id": "1d0db560-b53c-4d7a-ba04-bc9f1ebf7df6",
+      "result_id": "6d491b5b-39e1-4adc-aea6-3482a9a1351a"
+    },
+    {
+      "claim_id": "bf95d81f-6b1d-4f5a-a4cc-b320c32eadfe",
+      "result_id": "6d491b5b-39e1-4adc-aea6-3482a9a1351a"
+    },
+    {
+      "claim_id": "eefa17d7-6d56-4423-8054-26cc12eab43f",
+      "result_id": "6d491b5b-39e1-4adc-aea6-3482a9a1351a"
+    },
+    {
+      "claim_id": "ade3258a-c832-41b7-b024-4f93e455a6d6",
+      "result_id": "6d491b5b-39e1-4adc-aea6-3482a9a1351a"
+    },
+    {
+      "claim_id": "83d5fd85-59ed-42bd-bd3b-9ca032635027",
+      "result_id": "6d491b5b-39e1-4adc-aea6-3482a9a1351a"
+    },
+    {
+      "claim_id": "44ec5739-9e17-44a7-9148-bc5cd36d95c4",
+      "result_id": "6d491b5b-39e1-4adc-aea6-3482a9a1351a"
+    },
+    {
+      "claim_id": "a7c53824-0211-4447-9184-d59139561c18",
+      "result_id": "6d491b5b-39e1-4adc-aea6-3482a9a1351a"
+    },
+    {
+      "claim_id": "b67c9db1-f65b-4391-95dc-a45ba2976f04",
+      "result_id": "6d491b5b-39e1-4adc-aea6-3482a9a1351a"
+    },
+    {
+      "claim_id": "aaebcf06-2701-44cf-bcdb-d1d4d723bc76",
+      "result_id": "5430f383-7499-42de-999b-090ba38791ba"
+    },
+    {
+      "claim_id": "5b92a89c-62f9-43fc-9283-75ca04f797ee",
+      "result_id": "5430f383-7499-42de-999b-090ba38791ba"
+    },
+    {
+      "claim_id": "c591f328-f4c0-4314-b03b-412010a5905e",
+      "result_id": "5430f383-7499-42de-999b-090ba38791ba"
+    },
+    {
+      "claim_id": "826c664d-8854-44d0-a355-4a5a9ef40fa8",
+      "result_id": "5430f383-7499-42de-999b-090ba38791ba"
+    },
+    {
+      "claim_id": "01e186de-571e-457d-8e68-3c8c3c6c5083",
+      "result_id": "5430f383-7499-42de-999b-090ba38791ba"
+    },
+    {
+      "claim_id": "d01048b0-8c50-4a2b-83de-420b7c94f679",
+      "result_id": "5430f383-7499-42de-999b-090ba38791ba"
+    },
+    {
+      "claim_id": "46219770-4f58-420c-a8d5-e30227be7e94",
+      "result_id": "5430f383-7499-42de-999b-090ba38791ba"
+    },
+    {
+      "claim_id": "3ee0bec5-aa6d-4529-b0ef-66437fb8aab0",
+      "result_id": "79fe86cb-9e1a-4e9f-8b83-9bb115c3a46a"
+    },
+    {
+      "claim_id": "f957dd02-1e5b-4de0-8ae6-7b49648ba130",
+      "result_id": "79fe86cb-9e1a-4e9f-8b83-9bb115c3a46a"
+    },
+    {
+      "claim_id": "74d41719-d7a0-42f8-a247-1c267e76c40b",
+      "result_id": "79fe86cb-9e1a-4e9f-8b83-9bb115c3a46a"
+    },
+    {
+      "claim_id": "3ee7c1ab-7ba6-402a-b50f-73ff30c60f6b",
+      "result_id": "a63f5288-f593-4357-99fd-71cb22dd4bc5"
+    },
+    {
+      "claim_id": "c9dd44ae-f506-4c94-baa2-64f38845707e",
+      "result_id": "a63f5288-f593-4357-99fd-71cb22dd4bc5"
+    },
+    {
+      "claim_id": "2c77ae69-e5ea-40e3-8381-e62a0f95099c",
+      "result_id": "a63f5288-f593-4357-99fd-71cb22dd4bc5"
+    },
+    {
+      "claim_id": "43b54812-ca3b-4048-bdfd-6836425403c9",
+      "result_id": "a63f5288-f593-4357-99fd-71cb22dd4bc5"
+    },
+    {
+      "claim_id": "6c3f2e7d-8219-4fa2-8d97-e1d19f532c53",
+      "result_id": "a63f5288-f593-4357-99fd-71cb22dd4bc5"
+    },
+    {
+      "claim_id": "a06c3fd0-e328-43b1-8cfa-dad505b2492a",
+      "result_id": "a63f5288-f593-4357-99fd-71cb22dd4bc5"
+    },
+    {
+      "claim_id": "d809447a-d9d8-4181-b626-31512ab45a32",
+      "result_id": "a63f5288-f593-4357-99fd-71cb22dd4bc5"
+    },
+    {
+      "claim_id": "e9a33abb-7b7b-4c46-84d1-8242250a41f6",
+      "result_id": "c55e94b0-a4fe-4332-a410-31706e1ba609"
+    },
+    {
+      "claim_id": "0ea62e42-0c6b-4718-8893-35f655b08733",
+      "result_id": "c55e94b0-a4fe-4332-a410-31706e1ba609"
+    },
+    {
+      "claim_id": "64571893-2652-4bec-8164-e74888904c32",
+      "result_id": "c55e94b0-a4fe-4332-a410-31706e1ba609"
+    },
+    {
+      "claim_id": "0ece9bfb-1219-40c0-b2d1-ac42b1b92f55",
+      "result_id": "c55e94b0-a4fe-4332-a410-31706e1ba609"
+    },
+    {
+      "claim_id": "daba649a-a8cc-4c9f-80d4-59c888c580fa",
+      "result_id": "c55e94b0-a4fe-4332-a410-31706e1ba609"
+    },
+    {
+      "claim_id": "5b219619-5d25-41c2-8bc3-0b318b1d35e8",
+      "result_id": "c55e94b0-a4fe-4332-a410-31706e1ba609"
+    },
+    {
+      "claim_id": "5b6571be-864d-4d69-b475-bced7549d99b",
+      "result_id": "49a1af97-bb15-4700-b0e8-fde64468325f"
+    },
+    {
+      "claim_id": "59981c06-e5bd-4b97-9925-a74837176b88",
+      "result_id": "49a1af97-bb15-4700-b0e8-fde64468325f"
+    },
+    {
+      "claim_id": "94e97b3b-5e75-46c0-9d21-32678c49cee1",
+      "result_id": "49a1af97-bb15-4700-b0e8-fde64468325f"
+    },
+    {
+      "claim_id": "2cf14fbd-c294-4875-88ac-6ec6278bc076",
+      "result_id": "533894e5-eb13-45ad-8206-0984f982c2da"
+    },
+    {
+      "claim_id": "7d2a781f-3bfe-4410-9be4-aa2e7a2e4532",
+      "result_id": "533894e5-eb13-45ad-8206-0984f982c2da"
+    },
+    {
+      "claim_id": "a30561b8-7da7-4093-8b1f-50d8bca670b3",
+      "result_id": "6aba1fa4-1dba-4969-a1e6-3516c78ae8e9"
+    },
+    {
+      "claim_id": "7e3e7785-02b6-4fc6-b58c-47ce5d326695",
+      "result_id": "6aba1fa4-1dba-4969-a1e6-3516c78ae8e9"
+    },
+    {
+      "claim_id": "cee759e5-8014-4c5d-b13e-c5cbe2ff8ef2",
+      "result_id": "fb515dd8-1951-447d-944f-ed28f9e53be1"
+    },
+    {
+      "claim_id": "4112a250-ff07-41ac-a475-331d71f26168",
+      "result_id": "fb515dd8-1951-447d-944f-ed28f9e53be1"
+    },
+    {
+      "claim_id": "9f939611-3ead-49c5-b191-9db15c87f1b2",
+      "result_id": "fb515dd8-1951-447d-944f-ed28f9e53be1"
+    },
+    {
+      "claim_id": "942b4ff5-621a-45ba-b201-ddd2a22ec643",
+      "result_id": "fb515dd8-1951-447d-944f-ed28f9e53be1"
+    },
+    {
+      "claim_id": "6a27b56f-66e1-4f79-aced-38874c88d861",
+      "result_id": "fb515dd8-1951-447d-944f-ed28f9e53be1"
+    },
+    {
+      "claim_id": "6e32f8bb-c621-4543-b3ef-f21ca50d87e1",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "fdbb9d0e-fb39-4a0b-89aa-ae46ff5ab577",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "62e9e341-768f-45ef-a45c-38aead6f0083",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "5ec30b55-8b1c-4fe1-9514-e220e45c4ed0",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "2c4ee2af-42de-429f-8e64-9ed973b8a6d5",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "5eeacfb7-e913-488b-bd28-8d758409f24a",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "0959bccd-927a-4489-a417-f6ec1a7579d9",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "5cfe032c-af1c-4413-b360-5bf5acff0b9f",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "daaa39f6-789d-4f85-a273-1dc95e51524f",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "aedc2570-1efc-467d-b838-b8ccabe92781",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "8b94059b-9954-4912-b696-6d843db9846e",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "758f3674-d90a-46d3-ac59-eab2987e6873",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "19bd0209-89ac-4786-ae3d-2576667630c9",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "c09a7ec4-bacb-4a21-bb3e-9112d3f6df5d",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "7c202392-575b-462c-b8e4-139100d1af09",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "cfa93144-e0d5-46b8-89d3-b9b53222ba04",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "cac9154b-033d-47ec-b891-5ccb03f36b36",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "11f3546e-76e3-467f-982c-7879de79dae9",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "fed41b06-5c74-4b27-8794-03d7a62fd76a",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    },
+    {
+      "claim_id": "069218da-64b3-43ec-bb9d-74db9b0ea65b",
+      "result_id": "17494373-5699-45a8-93f1-934c4949af66"
+    }
+  ],
+  "comparisons": []
+}

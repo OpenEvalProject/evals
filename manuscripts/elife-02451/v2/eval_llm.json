@@ -1,0 +1,384 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Salinamides A and B are bicyclic depsipeptide antibiotics produced by Streptomyces species that exhibit selective antibacterial and RNAP-inhibitory activity against bacterial but not mammalian targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are all supported by citations to prior published work (Trischman et al., 1994; Moore et al., 1999; Miao et al., 1997; Tan and Ma, 2008) and experimental data shown in Figures 1B and 1C. These claims establish the background knowledge about salinamides from the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Sal inhibits RNA synthesis in bacterial cells in culture at the first time point following addition, with a pattern matching the RNAP inhibitor rifampin, establishing that RNAP is inhibited in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 are supported by macromolecular synthesis assay data shown in Figure 2A, demonstrating immediate inhibition of RNA synthesis, delayed inhibition of protein synthesis, and no effect on DNA synthesis. The pattern matches rifampin, a known RNAP inhibitor, supporting the inference that Sal inhibits RNAP in cells (C14).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Spontaneous and induced Sal-resistant mutants contain single substitutions in RNAP subunit genes (rpoC or rpoB), with 100% of analyzed mutants (47/47) containing mutations in RNAP genes, establishing RNAP as the functional cellular target of Sal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C27 are supported by extensive genetic data shown in Figures 2B-C and Supplementary file 1, including isolation frequency (~1\u00d710\u207b\u2079), sequencing of 47 independent mutants showing 100% contain RNAP mutations, identification of 21 different substitutions at 14 sites, and plasmid transfer experiments confirming sufficiency. This provides strong genetic evidence that RNAP is the functional target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Sal-resistant substitutions cluster in a ~35\u00c5 \u00d7 18\u00c5 \u00d7 12\u00c5 region ('Sal target') adjacent to the RNAP active center, defining the Sal binding site and suggesting inhibition of active-center function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are supported by structural mapping shown in Figure 3A. The tight clustering of resistance mutations, size compatibility with Sal dimensions, and location adjacent to the active center provide strong evidence for the Sal binding site. The inference that this is the binding site (C31) and that Sal inhibits active-center function (C33) are reasonable based on the genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The Sal target does not overlap the catalytic Mg\u00b2\u207a or residues interacting with DNA, RNA, or NTP substrate, indicating Sal inhibits RNAP allosterically through conformational effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by structural mapping onto the transcription elongation complex structure (Vassylyev et al., 2007b). The absence of overlap with catalytic residues supports the inference of allosteric inhibition (C36), though this remains an inference until confirmed by the crystal structure data presented later.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The Sal target overlaps the RNAP bridge-helix cap (BH-HN, F-loop, link region), with 18/21 substitutions mapping to these regions, suggesting Sal inhibits the proposed BH-HN conformational cycle essential for nucleotide addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are supported by sequence alignment and structural data in Figure 3B, showing strong correspondence between Sal-resistant mutations and the bridge-helix cap regions. Claims C40-C42 about BH-HN function are supported by citations to prior work. The suggestion that Sal inhibits BH-HN dynamics (C43) is a reasonable inference based on the genetic mapping, though it requires biochemical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The Sal target does not overlap targets of other RNAP inhibitors (Rif, Stl, CBR703, Myx, Lpm), with no cross-resistance observed and significant hyper-susceptibility to Stl and CBR703 in some Sal-resistant mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 are supported by structural mapping (Figure 4A) and extensive cross-resistance testing (Figures 4B-C). The absence of cross-resistance is well-documented. The hyper-susceptibility observation (C49) and inferences about different mechanisms (C50-C51) are supported by the data, though the mechanistic interpretation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Co-administration of Sal with Rif or Myx suppresses emergence of resistance to below detection limits (<2\u00d710\u207b\u00b9\u00b2 per generation), compared to individual resistance rates of ~10\u207b\u2079 to 10\u207b\u00b9\u2070.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by fluctuation assay data shown in Figure 4D. The suppression of resistance emergence is well-documented and has important practical implications for potential therapeutic applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Sal does not inhibit formation of the RNAP-promoter open complex, distinguishing its mechanism from Myx and Lpm which inhibit this step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by experimental data in Figure 5A showing no effect on heparin-resistant open complex formation. The comparison to Myx and Lpm is supported by citations to prior work showing those inhibitors do block this step.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Sal inhibits nucleotide addition in both primer-dependent and de novo transcription initiation, including the first nucleotide-addition step, distinguishing it from Rif which does not inhibit the first step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by experimental data in Figure 5B and Figure 5\u2014figure supplement 1, showing inhibition of all nucleotide-addition steps including the first step. The comparison to Rif is supported by both current data and citation to prior work (McClure and Cech, 1978).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Sal inhibits nucleotide addition in transcription elongation at both pause and non-pause sites, and inhibits both forward (nucleotide addition) and reverse (pyrophosphorolysis) reactions, distinguishing it from Rif, Myx, and Lpm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by experimental data in Figure 5C and supplementary figures showing inhibition of elongation, pausing, and pyrophosphorolysis. The mechanistic distinction from other inhibitors is well-supported by both current data and citations to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Sal inhibits nucleotide addition noncompetitively with respect to NTP substrate (Ki = 0.2 \u00b5M), indicating it does not inhibit NTP binding but rather bond formation, pyrophosphate release, or translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by kinetic data in Figure 5D showing noncompetitive inhibition with Ki = 0.2 \u00b5M. The inference about which sub-reactions are inhibited (C67-C68) is reasonable based on the noncompetitive kinetics, though direct demonstration would require additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Transcription inhibition by Sal does not require the RNAP trigger loop, as Sal inhibits wild-type and trigger-loop deletion RNAP equally, distinguishing it from Stl which absolutely requires the trigger loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by experimental data in Figure 5E showing equivalent inhibition of wild-type and \u0394TL RNAP. The comparison to Stl is supported by citation to prior work (Temiakov et al., 2005). This is an important mechanistic distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Sal inhibits RNAP through a novel binding site (bridge-helix cap) and mechanism, allosterically interfering with BH-HN conformational dynamics required for nucleotide addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 represent integrative conclusions from the biochemical and genetic data (Figures 2-5). The conclusion that Sal has a novel mechanism (C72-C73) is well-supported by the cumulative evidence. The proposed mechanism (C74) is a reasonable inference based on the genetic mapping and biochemical data, though full validation requires the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Crystal structures of E. coli RNAP holoenzyme (3.9 \u00c5) and RNAP-Sal complex (3.9 \u00c5) were determined, with unambiguous electron density for Sal in the genetically-defined target, confirming the binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by crystallographic data shown in Figures 6A-C and Supplementary file 2. The structures provide direct visualization of Sal binding and confirm the genetic predictions. The resolution (3.9 \u00c5) is adequate for identifying the binding site and overall interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Sal-Br, a bromine-containing derivative prepared by semi-synthesis from SalA, retains full RNAP-inhibitory and antibacterial activity, with Br anomalous density confirming the binding position and orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by chemical synthesis data (Figure 7A), activity assays (Figure 7B), and crystallographic data showing Br anomalous density (Figure 7C). This provides independent confirmation of the Sal binding mode and demonstrates the feasibility of semi-synthetic modifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Sal binds within the bridge-helix cap making direct interactions with all five residues conferring high-level resistance (\u03b2\u2032 Arg738, Ala779, Gly782; \u03b2 Asp675, Asn677), with substitutions expected to disrupt H-bonds or cause steric clashes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are supported by structural data in Figures 6C, 7C, and 8. The direct interactions with high-level resistance residues provide strong validation of the genetic predictions. The inferences about H-bonds and steric effects (C83-C85) are reasonable based on the structure, though the 3.9 \u00c5 resolution limits precision of H-bond assignments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Six Sal-contacting RNAP residues are conserved across bacterial and human RNAPs, while nine are conserved only in bacterial RNAPs, explaining selective inhibition of bacterial but not human RNAP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by sequence alignment data (Figure 3B) and structural data (Figure 8B-C). The pattern of conservation provides a clear structural explanation for the observed selectivity (Figure 1C), representing an important validation of the structural model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Sal binds in a pre-existing ~2000 \u00c5\u00b3 pocket formed by the BH-HN, fork loop, and link region, with the pocket opening onto the secondary channel and i+1 nucleotide binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 are supported by structural analysis shown in Figure 8B-C. The observation that backbone conformations are superimposable with and without Sal (C90) supports the inference that the pocket pre-exists (C91). The inference about entry pathway (C93) is reasonable based on the pocket opening location.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Within the binding pocket, Sal residues 4,5,7,8 interact with BH-HN, residues 1-3,6-7 with fork loop, and residues 8,9 with link region, with residue 9 extending into the pocket opening making limited RNAP contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 are supported by detailed structural analysis shown in Figure 8B-C. The pattern of interactions explains the structure-activity relationships and provides a basis for rational design of analogs. The observation that residue 9 makes limited contacts (C98) is important for the semi-synthesis strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Sal interacts with the BH-HN in an open (unbent) state matching prior crystal structures but different from the closed (bent) state observed in MD simulations, suggesting Sal stabilizes the open state and prevents conformational dynamics required for nucleotide addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 are supported by structural analysis (Figure 9A-B) and comparison with prior structures and MD simulations. The conclusion that Sal interacts with the open state (C103) is well-supported. The proposal that Sal stabilizes this state and prevents dynamics (C104) is a reasonable inference based on the structure and biochemical data, though direct demonstration of conformational trapping would require additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The RNAP-Sal structure is compatible with open but not closed trigger-loop conformations, suggesting Sal may prevent trigger-loop folding, though the trigger loop is not essential for inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 are supported by structural analysis and molecular modeling (Figure 9C) combined with experimental data showing trigger loop is not essential (Figure 5E, C111). The inference that Sal interacts with open trigger-loop state (C108) and may prevent folding (C109) is reasonable, but the experimental data (C111) correctly indicates this cannot be essential for inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Sal is the first RNAP inhibitor proposed to function through effects on BH-HN conformational dynamics and will be useful as a research tool for studying this mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is supported by comparison with known RNAP inhibitors and their mechanisms. Claim C113 is a reasonable speculation about future applications based on the novel mechanism. These represent appropriate concluding statements about the significance of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The SalA epoxide moiety can be exploited for semi-synthesis of novel analogs, with modifications tolerated without loss of potency, and introduction of sidechains expected to enable additional favorable interactions with the secondary channel or i+1 site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by the Sal-Br synthesis and activity data (Figure 7). Claims C116-C118 are reasonable speculations about future analog design based on the structural data showing the epoxide extends toward the secondary channel and i+1 site. These represent appropriate forward-looking statements for drug development, though they require experimental validation.",
+    "result_type": "MINOR"
+  }
+]

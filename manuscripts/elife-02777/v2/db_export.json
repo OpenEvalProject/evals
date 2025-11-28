@@ -1,0 +1,1996 @@
+{
+  "submission": {
+    "id": "5fc7f9b6-c08d-4d4d-9ca6-9d67d4d4f133",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:16:27.809838Z",
+    "updated_at": "2025-11-28T22:16:27.809838Z"
+  },
+  "content": [
+    {
+      "id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "submission_id": "5fc7f9b6-c08d-4d4d-9ca6-9d67d4d4f133",
+      "content_type": "manuscript",
+      "content_text": "# Structure of a low-population intermediate state in the release of an enzyme product\n\n## Authors\n\n- Alfonso De Simone<sup>1</sup>\n- Francesco A Aprile<sup>2</sup>\n- Anne Dhulesia<sup>2</sup>\n- Christopher M Dobson<sup>2</sup>\n- Michele Vendruscolo<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Department of Life Sciences Imperial College London London United Kingdom\n2. Department of Chemistry University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nEnzymes can increase the rate of biomolecular reactions by several orders of magnitude. Although the steps of substrate capture and product release are essential in the enzymatic process, complete atomic-level descriptions of these steps are difficult to obtain because of the transient nature of the intermediate conformations, which makes them largely inaccessible to standard structure determination methods. We describe here the determination of the structure of a low-population intermediate in the product release process by human lysozyme through a combination of NMR spectroscopy and molecular dynamics simulations. We validate this structure by rationally designing two mutations, the first engineered to destabilise the intermediate and the second to stabilise it, thus slowing down or speeding up, respectively, product release. These results illustrate how product release by an enzyme can be facilitated by the presence of a metastable intermediate with transient weak interactions between the enzyme and product.\n\n## Introduction\n\nAs it is becoming increasingly clear that proteins populate a variety of \u2018intermediate\u2019 states during their function (Dobson, 2003; Sekhar and Kay, 2013), it is essential to determine the structures of such states in addition to defining the native conformations. Protein intermediates are involved in folding, misfolding, and aggregation processes, as well as in events associated with molecular recognition, catalysis, and allostery (Dobson, 2003; Sekhar and Kay, 2013; Tzeng and Kalodimos, 2013). These species are transient in nature and as such they have been difficult to characterise. Nuclear magnetic resonance (NMR) spectroscopy has emerged in this context as a powerful technique to define such states as exemplified by the characterisation of the structures of species involved in folding (Korzhnev et al., 2010), molecular recognition (Tang et al., 2006), and aggregation (Neudecker et al., 2012).\n\nIn the present paper, we describe a study of the mechanism involved in the process by which an enzyme releases its products. This is one of the three major steps in an enzymatic catalysis process (Fersht, 1999). In the first step, the enzyme forms a complex with the substrate. In the second step, the transition state of the reaction is reached within the favourable environment provided by the catalytic site enabling the conversion of the substrate into product. In the third step, which is often rate-limiting, the product is released and the enzyme returns to its original state. Each of these steps is usually rather complex and involves reaction intermediates, which are transient in nature and difficult to characterise.\n\nIn order to investigate the third step, we have studied here lysozyme, the first enzyme to be crystallised (Blake et al., 1965), and whose structural properties have been characterised in great detail (Blake et al., 1965; Phillips, 1967; Artymiuk and Blake, 1981; Radford et al., 1992). The native structure of this enzyme is divided into a \u03b1 domain (residues 1 to 38, and 86 to 130) and \u03b2 domain (residues 39 to 85), containing primarily \u03b1-helical and \u03b2-sheet secondary structures, respectively (Blake et al., 1965; Phillips, 1967; Artymiuk and Blake, 1981; Radford et al., 1992). This enzyme degrades bacterial cell walls by catalysing the hydrolysis of the 1,4-\u03b2-linkages of the cell wall peptidoglycans, with a reaction that has been the object of intense scrutiny (Chipman and Sharon, 1969; Warshel and Levitt, 1976; Post et al., 1986; Vocadlo et al., 2001). According to the mechanism originally proposed by Phillips on the basis of his structure (Phillips, 1967), lysozyme binds to a peptidoglycan molecule in the binding site within the cleft between its two domains thus causing the substrate to adopt a strained conformation similar to that of the transition state of the hydrolysis. Here, we study the product release process. To this end, we used a well-characterised oligosaccharide product having an inhibitory effect on the enzyme, N,N',N\u201c-triacetylchitotriose (triNAG) (Turner and Howell, 1995), which has been frequently used for studying lysozyme\u2013product interactions (Post et al., 1986).\n\n## Results and discussion\n\nIn order to define the structural populations of human lysozyme in the presence and in the absence of an inhibitor, we measured 15N-1H residual dipolar couplings (RDCs) (Tjandra and Bax, 1997; Tolman et al., 1997) in the ligand-free and ligand-bound states (see \u2018Materials and methods\u2019) and used them as structural restraints in molecular dynamics simulations (De Simone et al., 2011; Montalvao et al., 2011). In this way, we determined two ensembles of structures of the enzyme representing, respectively, the ligand-free and the ligand-bound states of this protein. Our results indicate that large-scale concerted motions between the \u03b1 and \u03b2 domains of the enzyme generate an intermediate state involved in the release of the product.\n\nThe use of RDCs as structural restraints assists the conformational sampling in molecular dynamics simulations in order to estimate the free-energy landscape of a protein, as recently shown with hen lysozyme for which a large body of experimental data were used for validation purposes (De Simone et al., 2013b). This approach enables the translation of the experimental measurements into structures according to the principle of maximum entropy (Pitera and Chodera, 2012; Cavalli et al., 2013; Roux and Weare, 2013). A number of methods to employ NMR measurements of RDCs for the characterisation of the structure and dynamics of proteins have been proposed (Clore and Schwieters, 2004b; Bouvignies et al., 2006; Lange et al., 2008). Since these approaches have generally been used to assess dynamic events of relatively small amplitude, it was necessary to derive a means of extending these methods to enable the description of the large conformational interconversions associated with the function of many protein molecules.\n\nThe strategy that we have used for this purpose relies on the ability to extract from time and spatially averaged data the contributions to the experimental observables that come from the low-population states present as a result of conformational fluctuations. Intermediate states determined in this way have been already described using paramagnetic resonance enhancement (PRE) (Tang et al., 2006) and RDC (De Simone et al., 2013a; De Simone et al., 2013b) measurements, complementing approaches in which NMR parameters specific for these states are obtained directly, in particular by relaxation\u2013dispersion methods (Korzhnev et al., 2004, 2010; Bouvignies et al., 2011; Neudecker et al., 2012). By applying this approach using RDCs to human lysozyme, we generated a structural ensemble representing the free state of this enzyme that reveals large breathing motions between the \u03b1 and \u03b2 domains (Figure 1A and Figure 1\u2014figure supplements 1,2). This motion, which influences the mutual orientation of the two domains thereby altering the structure of the catalytic pocket at their interface, can be accounted for by defining a \u2018breathing\u2019 angle \u03b8 between the \u03b1-domain, the hinge region and the \u03b2-domain (De Simone et al., 2013b) (Figure 1\u2014figure supplement 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02777/elife-02777-fig1-v2.jpg)\n\n**Figure 1.:** The bound state exhibits a ground state (the \u2018locked state\u2019) and an additional local minimum with about 13% population (the \u2018unlocked state\u2019), which represents an intermediate in the release of the product of the enzymatic reaction. Free-energy landscapes are shown as function of the \u2018breathing\u2019 angle \u03b8 and of the RMSD from the X-ray structure, which was calculated on the C\u03b1 atoms by including secondary structure regions only, of a human lysozyme variant in complex with triNAG (PDB code 1BB5); free-energy landscapes were obtained as \u2212kBTlnH(\u03b8, RMSD), where H(\u03b8, RMSD) is the number of times conformations with specific \u03b8 and RMSD values was sampled during the simulations (De Simone et al., 2013b).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02777/elife-02777-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The x-axis represents the 1H (in ppm) dimension and the y-axis represents the 15N (in ppm) dimension.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02777/elife-02777-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Depending on the individual residues, the time scale of exchange is fast or intermediate. Blue: free state (f); yellow: 0.5 equivalents of sugar; red: 1.1 equivalents; green: 2.4 equivalents; blue: 10 equivalents, corresponding to the bound state (b). The x-axis represents the 1H (in ppm) dimension and the y-axis represents the 15N dimension (in ppm).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/02777/elife-02777-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Region 1 (in the \u03b1-domain) spans residues 28\u201331 and 111\u2013114 (in red), region 2 (in the hinge region) spans residues 90\u201393 (in yellow), and region 3 (in the \u03b2-domain) spans residues 44, 45, 51, and 52 (in green).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/02777/elife-02777-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (C, D) Representation of the regions that are mostly affected by triNAG binding in the steric (C) and electrostatic (D) RDC measurements (red indicates small changes and blue indicates large changes).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/02777/elife-02777-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Comparison between calculated and experimental RDCs (black circles for the steric medium and red circles for the electrostatic medium); the Q factors at 0.10 in both cases. (B) Comparison between experimental (black) and calculated (red) 3J HN-H\u03b1 scalar couplings; the RMSD value is 0.49 Hz. (C-G) Comparison between experimental and calculated chemical shifts, which we obtained by using the Sparta + method (Shen and Bax, 2010): C\u03b1 (C), C\u03b2 (D), N (E), H\u03b1 (F), and HN (G); the RMSD values (in ppm) are 0.90, 0.82, 1.90, 0.16, and 0.24 for C\u03b1, C\u03b2, N, H\u03b1, and HN, respectively. (H) Distributions of the satisfied (about 93%, in green) and violated (about 7%, in orange) NOEs in the individual structures of the ensemble.\n\nIn order to compare the free and bound states of the enzyme, we measured the RDCs also in the bound state (Figure 1A, Figure 1\u2014figures supplements 1 and 2). While in the free state the free-energy landscape is characterised by a single basin (Figure 1A), in the bound state a second local minimum appears (Figure 1B). This change, which reflects the differences in the RDC data of the free and bound states, corresponds to a wider distribution of values of the \u03b8 angle in the bound state compared with the free state (Figure 1 and Figure 1\u2014figure supplement 4). The bound state ensemble was validated using NOEs, J-couplings, chemical shifts and RDCs (Figure 1\u2014figure supplement 5). The relative populations of the ground and excited states are comparable to those that we have studied previously using the method adopted here (De Simone et al., 2009; De Simone et al., 2011; De Simone et al., 2013a; De Simone et al., 2013b).\n\nHaving in mind the release of the product, we designate the global free energy minimum observed in this study as the \u2018locked state\u2019 (i.e., release incompetent), which is centred at \u03b8 values of about 58\u00b0 and C\u03b1-RMSD values of about 0.9 \u00c5 from the X-ray structure of the complex (calculated by considering secondary structure elements only), and the other free energy minimum, which has about a 13% population under the conditions of our experiments, defined as the \u2018unlocked state\u2019 (i.e., release competent, Figure 1B). The unlocked state is a compact conformation that differs from the locked state by a global motion in which the \u03b1 and \u03b2 subunits become closer, with a \u03b8 value of about 49\u00b0 in the centre of the basin. This motion generates particularly distorted structures with global RMSD values of about 1.5 \u00c5 from the X-ray structure. The angle \u03b8 provides a simple and effective reaction coordinate to describe the effect of triNAG binding on the energy landscape of human lysozyme (Figure 2A), which clearly illustrates how the protein is able to explore closed conformations (i.e., \u03b8 < 50\u00b0) upon ligand binding.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02777/elife-02777-fig2-v2.jpg)\n\n**Figure 2.:** (A) Free-energy landscape as a function of the angle \u03b8. (B) Potential energy landscape, Epot, of lysozyme in the free state; Epot represents the contribution of the force field used in the simulations, that is, the total force field without the RDC restraint term (see \u2018Materials and methods\u2019). (C) Potential energy landscape, Epot, of the lysozyme-triNAG bound state. (D) Structure of the \u2018locked state\u2019. (E) Structure of the \u2018unlocked state\u2019.\n\nIn the structural ensemble representing the complex between human lysozyme and triNAG, unlocked conformations are characterised by less favourable intermolecular Coulomb and van der Waals interactions than those found in the locked state (Figure 2B\u2013E). A comparison between the locked and unlocked conformations indicates that this difference corresponds to specific interactions between the substrate and the binding pocket (Figure 2D), which include hydrophobic interactions between a methyl group of triNAG and the side-chain of W109, as well as hydrogen bonds between the ligand and the main chain amide group of N60 and the side chains of W64 and Q104. These interactions are present in essentially all the structures in the ensemble representing the locked state, while they are absent in the structures in the ensemble of the unlocked state. Indeed, because of a partial displacement of the ligand from the binding pocket, the unlocked conformations lose the tight interactions that are stabilised in the locked state and gain new interactions on the external surface of the protein. These interactions, which mainly involve hydrogen bonds between donor and acceptor groups from the ligand and the protein surface, are highly variable and heterogeneous in the unlocked conformations.\n\nOverall, this analysis of the structural ensembles of human lysozyme suggests that, as a consequence of a concerted conformational transition, the enzyme explores conformations in which the specific and tight intermolecular interactions with the substrate in its locked state are largely lost in favour of the formation of weak and non-specific interactions in its unlocked state. This transition is favoured by large-scale conformational motions in which the \u03b1 and \u03b2 domains become closer, thus suggesting that these motions are employed by the enzyme to modulate the affinity with the ligand. The unlocked state therefore represents an intermediate state for product release. In this view (Figure 3), the enzyme product complex (EP) populates transiently an intermediate state (EP*) that favours the release of the product (E + P). Thus, the analysis of the structural ensembles that we have determined provides evidence that large-scale conformational transitions are employed by enzymes along their catalytic cycles including key events in the product release step, which often represents the rate-limiting step that governs the turnover of the enzyme. The difficulty for enzymes to release the products can arise from the fact that typically the latter have similar physico-chemical characteristics to the substrates and therefore maintain a significant affinity for the enzyme.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02777/elife-02777-fig3-v2.jpg)\n\n**Figure 3.:** The product (P) is released by the enzyme (E) in a process that begins in the ground (or \u2018locked\u2019) state of the complex (EP), visits a metastable (or \u2018unlocked\u2019) intermediate state (EP*) and reaches the unbound state (E + P). The interactions in the \u2018locked state\u2019 (EP) and in the \u2018unlocked state\u2019 (EP*) are shown in light blue.\n\nTo test the possibility that the structure that we have determined of the unlocked state represents an intermediate state in the release of the product, we compared in detail the energetic contributions that stabilise the locked and unlocked states and identified a stabilising hydrogen bond that can be formed only in the unlocked state (Figure 4A), which involves side-chain atoms of residue N44 in the \u03b2-domain and residue E35 in the \u03b1-domain. These two residues are too far away from each other in the locked state to form a hydrogen bond (Figure 4B), and therefore this interaction is characteristic only of the unlocked conformation. This finding suggests that this hydrogen bond provides a specific interaction by which one could selectively target the stability of the EP* intermediate. To this end, we rationally designed the N44A single-amino acid mutation to verify if the ability of the enzyme to release the products is indeed altered by preventing the formation of the hydrogen bond that stabilises the unlocked state.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02777/elife-02777-fig4-v2.jpg)\n\n**Figure 4.:** (A) Structure of the unlocked state illustrating the hydrogen bond between side chains of N44 and E35 that stabilises this intermediate species. (B) The hydrogen bond is not formed in the locked state because N44 and E35 are too far apart. (C) The N44A variant, which lacks the hydrogen bond donor, is unable to form this hydrogen bond, thus destabilising the intermediate state and inhibiting the release of the product. The decrease of the ability of the N44A mutant to release triNAG has been assessed by surface plasmon resonance (SPR) experiments. (D) Cellular assay of lysozyme activity. The N44A variant has an intermediate activity between wild type and the control E35D variant.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02777/elife-02777-fig4-figsupp1-v2.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02777/elife-02777-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** In the N44A mutant, the unlocked state (see also Figure 1) is absent. Free-energy landscapes were obtained as described in Figure 1.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/02777/elife-02777-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Illustration of the engineered N46Q/V110Q glutamine\u2013glutamine interactions. (B) The 1H-15N-HSQC spectrum of the N46Q/V110Q mutant shows that the mutation does not affect the structural properties of the mutant (see also Figure 4\u2014figure supplement 1). (C) The increase in the ability of the N46Q/V110Q mutant to release triNAG has been assessed by surface plasmon resonance (SPR) experiments.\n\nComparison of the 1H-15N-HSQC spectra of the wild-type and the N44A variant of human lysozyme shows that the mutation does not affect the structural properties of the mutant in the native state (Figure 4\u2014figure supplement 1). This result was expected as the mutation does not modify interactions present in the native state but was designed explicitly to perturb a hydrogen bond in the intermediate state. The ability of the N44A variant to release triNAG from its bound state was assessed by surface plasmon resonance (SPR) experiments (Figure 4C). By using a double-referenced single chain model (see \u2018Materials and methods\u2019), we estimated that the destabilisation of the intermediate in the N44A mutant reduces the koff by a factor 3, while changing the Kd by a factor 1/3. The variation of a factor 2 of the kon suggests that the pathways of capture and release are not completely distinct and thus perturbing the pathway for release affects in part also that of capture. These results are consistent with our prediction that the N44A mutation affects the stability of the EP* intermediate, that is, of the unlocked state. Finally, we tested the catalytic efficiency of the wild-type and N44A mutant by using a cellular assay (see \u2018Materials and methods\u2019), and compared these results with those obtained for an inactive mutational variant lacking the catalytic residue (E35D). The results (Figure 4D) show that the N44A variant has an intermediate activity between wild type and the totally inactive control E35D variant, which is again consistent with the prediction that the mutation of asparagine to alanine of residue 44 would reduce the efficiency of the product release in such a way to affect the catalytic activity of the enzyme. Finally, to verify that the N44A modified the free-energy landscape of lysozyme by reducing the population of the unlocked state, we performed 15N-1H RDC measurements on the N44A mutant and carried out restrained molecular dynamics simulations to determine its free-energy landscape. The results (see Figure 4\u2014figure supplement 2A) demonstrate that the unlocked state is not appreciably populated in the N44A mutant.\n\nTo further validate the conclusion that the structure that we have determined of the unlocked state represents a release intermediate, we designed a second mutational variant to stabilise the unlocked state, rather than destabilising it as the N44A mutation. In the new mutant, N46Q/V110Q, a strong glutamine\u2013glutamine interaction is inserted with the purpose to stabilise the \u2018unlocked\u2019 state in its conformation (Figure 4\u2014figure supplement 3A). We have verified the folding of the mutant by NMR (Figure 4\u2014figure supplement 3B) and measured the binding constants of the ligand for the unlocked state by SPR to show that it corresponds to a weaker binding affinity (Figure 4\u2014figure supplement 3C). While the Kd of the wild type is about 9 \u03bcM, the Kd of the N46Q/V110Q mutant is high almost beyond detection, indicating that the mutant essentially does not bind the substrate. These experimentally measured binding constants are consistent with the observation that, considering that the free energy of the free state is the same, the binding free energy of the locked state is larger than that of the unlocked state because the free energy of the former is lower than that of the latter (Figure 1).\n\n### Conclusions\n\nWe have presented the atomic resolution structure of an intermediate associated with the product release in an enzymatic reaction. We have validated this structure by identifying a distinctive structural characteristic of this state, a transient hydrogen bond between the side-chains of residues N44 and E35. As this interaction stabilises the intermediate state but not the ground state, we introduced a mutational variant (N44A) that, by removing specifically the hydrogen bond, reduces the stability of the intermediate state but not that of the ground state and thus inhibits the release process. Our results provide an illustration of the manner in which conformational fluctuations can play a central role in enzymatic reactions by creating low-population intermediate states that facilitate the challenging step of release of the products of the catalytic reaction.\n\n## Materials and methods\n\n### Sample preparation\n\nHuman lysozyme was expressed in Pichia pastoris and purified on an ion exchange column, as previously described (Johnson and et al., 2005). 15N ammonium sulfate and 13C methanol were used to 15N and 13C label the protein, respectively. NMR experiments were carried out using a 700 MHz spectrometer at 37\u00b0C in a buffer at pH 5.0 containing 20 mM potassium phosphate and 10% D2O; the pH was re-adjusted after the addition of the protein. Protein concentrations were in the range of 200\u2013350 \u03bcM. For the measurements of the bound state, N,N\u2032,N\u201d-triacetylchitotriose (triNAG) sugar was purchased from Sigma and dissolved in water to constitute a concentrated stock solution.\n\n### Assignment of NMR spectra\n\nFor the assignment of the free state at pH 5.0 and 37\u00b0C, we used a previously published assignment (Ohkubo et al., 1991; Hagan and et al., 2010), which was confirmed using HNCA measurements, which was run with a spectral width of 1561 Hz and 68 points in the 15N dimension, and a spectral width of 5456 Hz and 64 points in the 13C dimension (Grzesiek and Bax, 1992). In total, 126 backbone amides were assigned in the 1H-15N spectrum.\n\nFor the full assignment of human lysozyme bound to triNAG, we performed titrations of 1H-15N HSQC spectra of a 200 \u03bcM sample of 15N human lysozyme, which were recorded using progressive concentration of the ligand (0, 0.3, 0.5, 0.8, 1.1, 1.6, 2.4, 3.1, 5.2, and 10 equivalents), allowing us to sample different points along the binding curve. HSQC spectra were recorded with a spectral width of 1621 Hz and 128 points in the 15N dimension (Figure 1\u2014figure supplement 2). Additional information was obtained using HNCA and HNCACB experiments of a triNAG-saturated human lysozyme sample (Grzesiek and Bax, 1992; Muhandiram and Kay, 1994). The HNCA experiment was carried out with the same settings as for the free state (see above). The HNCACB experiment was carried out with a spectral width of 1561 Hz and 68 points in the 15N dimension and with a spectral width of 13,210 Hz and 72 points in the 13C dimension. These complementary data allowed us to obtain the full assignment of the 1H-15N spectra (Figure 1\u2014figure supplement 1).\n\n### Residual dipolar coupling measurements\n\nResidual dipolar couplings (RDCs) were measured by orienting the free and triNAG-bound states in two different bicelle solutions, neutral and charged (Ottiger and Bax, 1998; Schwalbe and et al., 2001). The neutral bicelle solution contained 5% wt/vol of a mixture of DMPC and DHPC (q = 2.9), whereas CTAB was used to create a positively charged solution of 10% wt/vol of the (DMPC:DHPC:CTAB) = (2.9:1:0.2) composition. Splitting of the 2H signal was recorded before and after the IPAP experiments, to ensure that alignment had remained constant during the course of the NMR experiment. IPAP experiments were recorded on the isotropic sample as well as on the two anisotropic samples (neutral and charged) (Ottiger et al., 1998). These experiments were performed using a spectral width of 2447 Hz with 320 points in the indirect 15N dimension for the in-phase (IP) or anti-phase (AP) spectra. J-couplings were extracted in each medium and RDCs were derived, discarding overlapping and poorly defined peaks. For the free state, we extracted 109 RDCs in the steric medium and 110 in the charged medium; 109 RDCs were extracted for the bound state, both for steric and charged media.\n\n### 3J scalar coupling measurements\n\n3J HNH\u03b1 couplings were obtained using HNHA experiments (Vuister and Bax, 1993), which were performed on the free and bound states using a 700 MHz spectrometer and a spectral width of 1454 Hz with 68 points in 15N and 9800 Hz with 72\u201380 points in the indirect 1H dimension. The 3J HNH\u03b1 couplings were extracted using the ratio of intensities of cross- (IX) and diagonal (ID) peaks (Kuboniwa et al., 1994)\n\n$$\nI_{X}/I_{D}=\u2212tan^{2}(2\u03a0\u03be^{3}J)\n$$\n\nwith \u03be = 13.05 ms.\n\nErrors in the 3J HNH\u03b1 coupling values were based either on a 5% uncertainty or on the noise level for cross-peaks with intensities below the RMS noise of the HNHA spectrum, estimated using Sparky (Goddard, T. D., and D. G. Kneller. SPARKY 3. University of California, San Francisco, 2004). Errors on intensities were propagated according to Equation (1) to yield the error on 3J HNH\u03b1 couplings. Residues with overlapping diagonal peaks were discarded, as well as glycine residues.\n\n### Molecular dynamics simulations\n\nAs a starting structure for the ligand-free state, we used the crystal structure of human lysozyme at 1.9 \u00c5 resolution (PDB code 2ZIJ). For the bound state, we used the crystal structure of the human lysozyme A96L variant bound to triNAG at 1.8 \u00c5 resolution (PDB code 1BB5). This structure was modelled by mutating back residue 96 from L to A, as in the wild-type sequence. Molecular dynamics simulations were performed by using AMBER99SB with corrections on backbone (Best and Hummer, 2009) and side chains (Lindorff-Larsen et al., 2010) dihedral angles as the force field (EFF) for the protein. triNAG was modelled using the GLYCAM06 force field (Kirschner et al., 2008). The protein and protein/triNAG systems were solvated using the TIP3P water model (Jorgensen et al., 1983). A time step of 2 fs was used together with LINCS constraints (Hess, 2008). Systems were energy minimised and equilibrated with positional restrained simulations of 20 ns, in which the heavy atoms of the protein and triNAG molecules were restrained to their Cartesian coordinates. For the free state, the resulting system box after equilibration was 5.55 \u00d7 6.16 \u00d7 5.56 nm3, with 5698 water molecules for a total of 19,123 atoms. For the bound state, the resulting system box after equilibration was 6.15 \u00d7 5.62 \u00d7 5.99 nm3, with 6131 water molecules for a total of 20,509 atoms.\n\nThe simulations were performed in the NPT ensemble by weak coupling the pressure and temperature with external baths. Temperature coupling was performed with the v-rescale method (Bussi et al., 2007) with a coupling constant of 0.1 ps. The pressure was kept constant using the Berendsen method (Berendsen et al., 1984), with a coupling constant of 1.0 ps and at a reference pressure of 1 bar. The isotropic compressibility value was set to 4.5 \u00d7 10\u22125 bar\u22121. Electrostatic interactions were treated by using the particle mesh Ewald method (Essmann and et al., 1995).\n\n### Molecular dynamics simulations with RDC restraints\n\nWe used replica-averaged RDC restraints in molecular dynamics simulations (De Simone et al., 2011; Montalvao et al., 2011; De Simone et al., 2013a; De Simone et al., 2013b). This method has been tested for its ability to sample interdomain motions in proteins (De Simone et al., 2011; De Simone et al., 2013b), as well as in multiple conformational states in fast exchange in the NMR measurements (De Simone et al., 2013a). A recent study was carried to generate accurate ensembles of hen egg white lysozyme using RDC measured under the same conditions of the present work (De Simone et al., 2013b). This investigation has defined the sampling method that we have used here to characterise the conformational properties of lysozyme using RDC restraints. The accuracy of the resulting ensemble was benchmarked using a large variety of NMR observables, including eight sets of RDCs. Briefly, in this approach (De Simone et al., 2011; De Simone et al., 2013b), the structural information provided by RDC measurements is imposed to restrain the molecular dynamics simulations by adding a term, ERDC, to a standard molecular mechanics force field, EPot:\n\n$$\nE^{Tot}=E^{Pot}+E^{RDC}.\n$$\n\nThe resulting force field, ETot, is employed in the integration of the equations of motion. In this work, the restraint term, ERDC, is given by (De Simone et al., 2011; De Simone et al., 2013b):\n\n$$\nE^{RDC}=\\alpha\\sum_{i}(D^{exp}\u2212D^{calc})^{2},\n$$\n\nwhere \u03b1 is the weight of the restraint term, and Dexp and Dcalc are the experimental and calculated RDCs, respectively. The RDC of a given bond vector is calculated as (De Simone et al., 2011; De Simone et al., 2013b):\n\n$$\nD^{calc}=\\frac{1}{M}\\sum_{m}D_{m},\n$$\n\nwhere m runs over the M replicas and Dm is the RDC of replica m, which is given by:\n\n$$\nD=D_{max}\\sumij\u2329A_{ij}\u232acos\\phi_{i}cos\\phi_{j},\n$$\n\nwhere $\\phi_{i}$ and $\\phi_{j}$ are the angles between the internuclear vector and the molecular reference frame, the indices i and j run over the three Cartesian coordinates, x, y, and z, and $\u2329A_{ij}\u232a$ is the (i,j) component of the alignment tensor.\n\nThe use of replica-averaged molecular dynamics simulations enables one to generate an ensemble of conformations compatible with the experimental data according to the maximum entropy principle (Pitera and Chodera, 2012; Cavalli et al., 2013; Roux and Weare, 2013), at least in the limit of large M and \u03b1. We have previously shown (Cavalli et al., 2013), however, that it is possible to effectively achieve this limit even if the values of M and \u03b1 remain relatively small and thus obtain conformational ensembles that provide a good agreement between experimental and calculated observables. Following these procedures, we used here M = 16 and for the weight, \u03b1, we first carried out an initial equilibration simulation at 310 K, during which the agreement between the calculated and experimental data was allowed to converge by gradually raising \u03b1 to the largest possible value that did not generate numerical instabilities. Subsequently, we performed a series of 50 cycles of simulated annealing between 310 and 500 K to sample the conformational space. Each cycle was carried out for a total of 250 ps (125,000 molecular dynamics steps). For each cycle, we collected 24,000 structures (1 per ps in the final 50 ps of the final 30 cycles of each of the 16 replicas). These structures were employed for the analyses reported in this study.\n\nThe alignment tensor is calculated from the shape and charge of the protein molecule using a procedure recently described (Montalvao et al., 2011). We adopted such an approach here rather than the more commonly used singular value decomposition (SVD) method (Clore and Schwieters, 2004b; Clore and Schwieters, 2004a) because in the presence of conformational fluctuations of relatively large amplitude, such as those exhibited by hen lysozyme, the SVD method, when used in combination with the replica-averaging procedure of Equations 2\u20135, is less effective in capturing the motions of a protein (De Simone et al., 2013b). The reason is that the SVD method does not necessarily provide the actual alignment tensor of a given structure but rather the alignment tensor that generates the RDC values in the closest agreement with the experimental ones and hence is less well suited in describing the specific differences between the structures considered in the averaging procedure in Equation (3) (Montalvao et al., 2011; De Simone et al., 2013b).\n\nThis structure-based method was used here to calculate the orientations of lysozyme in two alignment media, one steric (DMPC/DHPC) and one electrostatic (DMPC/DHPC/CTAB). The Q factors for the refined ensembles of the free and bound states of human lysozyme were 0.10 in both cases.\n\nIn addition to the previous extensive benchmarks performed on the structural ensembles of the hen egg white lysozyme (De Simone et al., 2013a), which were obtained using the same protocol employed in this work, we performed here a set of additional validations based on NMR measurements not used as restraints in the simulations and by comparing the resulting experimental values with those back-calculated from our ensemble of human lysozyme (Figure 1\u2014figure supplement 5).\n\n### Mutagenesis\n\nN44A mutation and E35D or D53N (control mutations) were introduced into the pPIC9/HuLys wt by using QuikChange XL II mutagenesis kit (Qiagen, Venlo, The Netherlands). The pPIC9 plasmid containing the point mutations of HuLys cDNA was linearised by digestion with StuI. Transformation into Pichia pastoris GS115 was performed by using Pichia EasyComp Transformation Kit (Life Technologies), according to manufacturer's instructions. Cell colonies were screened for lysozyme expression level by quantifying by NuPAGE analysis the amount of lysozyme produced in 10-ml mini-cultures. Protein expression and purification were performed as previously reported (Johnson and et al., 2005). Protein purity exceeded 95% as estimated by NuPAGE analysis. Protein concentrations were determined by absorbance measurements at 280 nm using theoretical extinction coefficients calculated with Expasy ProtParam.\n\n### Surface plasmon resonance\n\nSurface plasmon resonance (SPR) experiments were performed using a Biacore 3000 system (GE Healthcare). CM5 sensor chip surfaces were activated by using an amine coupling kit (GE Healthcare). WT and N44A lysozyme variants were immobilised to the activated surfaces by amine coupling at a density of 2500\u20133000 resonance units (RU). Single chain kinetic experiments were performed at 25\u00b0C using a flow rate of 20 \u00b5l/min in 50 mM phosphate pH 6.2, 100 mM NaCl. Serial dilutions (200 \u00b5M, 100 \u00b5M, 50 \u00b5M, 25 \u00b5M, and 12.5 \u00b5M) of N,N\u2032,N\u2032\u2032-Triacetylchitotriose (Tri-NAG, Sigma Aldrich) were sequentially injected every 700 s using a contact time of 250 s for each injection. Data fitting was performed with the single chain kinetic module provided with the Biaevaluation software (Biacore GE lifesciences).\n\n### Cellular assay of lysozyme activity\n\nHydrolase activity assay was performed using Micrococcus lysodeikticus cells (Sigma Aldrich) as the substrate. Cells of Micrococcus were suspended at 0.3 mg/ml in 100 mM potassium phosphate, pH 6.2, shortly before the assay. The decrease of Absorbance at 450 nm was monitored at 25\u2070C in the presence of 20 nM lysozyme variants.\n",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "5f40984b-a3fa-4fe3-bc6a-d41b47aefef3",
+      "submission_id": "5fc7f9b6-c08d-4d4d-9ca6-9d67d4d4f133",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- John Kuriyan, Howard Hughes Medical Institute, University of California, Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02777.015](https://doi.org/10.7554/eLife.02777.015)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cStructure of a low-population intermediate state in the release of an enzyme product\u201d for consideration at eLife. Your article has been handled by John Kuriyan (Senior editor and Reviewing editor) and three additional reviewers.\n\nThe reviewers agree that this is a fine piece of work that is overall very well performed and the conclusions logically drawn. The results further highlight the importance of characterizing lowly populated conformational states. Nevertheless, the reviewers are also in agreement that some additional data would be needed to make the conclusions more compelling. We ask that you respond by email to the points raised below, paying particular attention to the major points. Your response should tell us how you could address these issues in a realistic timeframe. A final decision on your paper will be made after the reviewers have considered your response.\n\nEnsembles of structures of the enzyme lysozyme were determined by combining NMR-detected RDCs and MD simulations to structurally characterize an intermediate species along the enzymatic pathway. In particular, the paper analyzes NMR data using a method called ensemble-average molecular dynamics simulations. The analysis was carried out on the ligand-free and the ligand-bound states of the enzyme. The data show that the ground state (\u223c87%) exists in the locked state (the one wherein the product is still bound to the enzyme) and in equilibrium with an energetically excited state (populated \u223c13% of the time), which allows product release (termed the unlocked state). The two states are related by an opening/closure of the ligand-binding cleft by \u223c10 degrees.\n\nThe unlocked state with the bound ligand is a compact conformation that differs from the locked state by a global motion, with global RMSD values of about 1.5 \u00c5 relative to the X-ray structure. The unlocked conformations lose the tight interactions that are stabilized in the locked state and gain new interactions on the external surface of the protein. These interactions, which mainly involve hydrogen bonds between donors and acceptors groups from the ligand and the protein surface, are highly variable and heterogeneous in the unlocked conformations. It is hypothesized that the unlocked state represents an intermediate state that is critical for fast product release. The authors then identified a stabilizing hydrogen bond that can be formed only in the unlocked state (Figure 4A), which involves side-chain atoms of residue N44 E35. The ability of the N44A variant to release triNAG from its bound state was assessed by SPR. The dissociation constants of the wild-type and the N44A variant to be, respectively, 4.19 sec-1 and 1.31 sec-1. This provides a degree of cross-validation that this state is in fact important for release.\n\nMajor points:\n\n1) One weakness identified by the reviewers is that it is only a speculation that the ligand is more loosely bound in the \u201cunlocked\u201d state. The authors provide no firm basis for this assertion. The paper provides only one mutant to test the key concept that there is an unlocked state. Based on the available information, it seems that one should be able to design a mutant that stabilizes the unlocked state. If so, then one could: (1) confirm the existence of the state directly by NMR, (2) measure the binding constants (kinetics and equilibrium) of the ligand for the unlocked state by SPR to show that it is indeed faster and with a weaker binding affinity. From a computational point of view, it should be possible to calculate the binding free energy of the ligand for the locked and unlocked state, and show that the affinity is reduced in the latter. Doing this additional work is substantial, but it would really demonstrate that the conclusions are correct.\n\n2) It might be thought that the RDC approach for detecting rare states would be inferior to other approaches, like relaxation dispersion or PREs. In the case of relaxation dispersion one relies on the fact that the minor state is only transiently formed so that its effective linewidth is very large. Thus, the exchange process gives rise to a net increased linewidth in the ground state that can be detected. In a similar manner, as long as the excited state brings the NMR probes close to the spin label, a PRE effect is observed in the ground state. By contrast, however, RDCs contain information about each state and it is unlikely that the rare state has RDCs that are so different relative to the ground state, making this approach potentially less sensitive. Can the authors comment on the sensitivity of their method in general to studies of rare conformations? How much lower than 15% can one go and how robust are the states that are determined?\n\n3) In this regard, the authors do address the robustness with their N44A mutant and this is an important control. It would be very interesting to record RDC on this mutant (free form) and show that the same profile as in Figure 1A is observed. Second, it would then be of great interest to add the product to the N44A mutant, measure RDC and repeat the calculations. One would predict that the rare conformer would become less populated, less than 15%, and that would provide further important proof of the methodology that jives with the functional (release) studies that they perform. These controls are not particularly onerous but they would be very convincing. At issue here to some extent is the reliability of RDCs for dynamics, and there has been much debate in the literature about this (especially when one considers the fact that methods for estimating RDCs from structure are only approximate, especially for electrostatic alignment, or methods for dealing with the effects of averaging between multi-states again can be complex). This work opens up an approach for looking at rare states, and further evidence of utility is important.\n\n4) Although not necessary, have the authors considered experiments to show that the initial binding step of substrate is unaffected by the N44A mutation, as would be predicted since the ground state is unaffected?\n",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "97b6deb1-eef6-4cb4-ace5-cf80e0b38fe4",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C1",
+      "claim": "Enzymes can increase the rate of biomolecular reactions by several orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzymes can increase the rate of biomolecular reactions by several orders of magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about enzyme function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "a4ca40ac-f288-4dbd-9ee7-4cfbb3936f66",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C2",
+      "claim": "The steps of substrate capture and product release are essential in the enzymatic process.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the steps of substrate capture and product release are essential in the enzymatic process, complete atomic-level descriptions of these steps are difficult to obtain because of the transient nature of the intermediate conformations, which makes them largely inaccessible to standard structure determination methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of enzymatic mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "c3e28589-85eb-4a41-9d7d-1edfae9deabd",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C3",
+      "claim": "Complete atomic-level descriptions of substrate capture and product release steps are difficult to obtain because of the transient nature of the intermediate conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the steps of substrate capture and product release are essential in the enzymatic process, complete atomic-level descriptions of these steps are difficult to obtain because of the transient nature of the intermediate conformations, which makes them largely inaccessible to standard structure determination methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the challenges in studying transient intermediates.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "4701d3a3-73e1-4a72-8f89-96a2c4d2e7ec",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C4",
+      "claim": "The transient nature of intermediate conformations makes them largely inaccessible to standard structure determination methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the steps of substrate capture and product release are essential in the enzymatic process, complete atomic-level descriptions of these steps are difficult to obtain because of the transient nature of the intermediate conformations, which makes them largely inaccessible to standard structure determination methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about limitations of structure determination methods for transient species.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "665f4137-adcf-41a7-84ed-a3f753d73477",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C5",
+      "claim": "The structure of a low-population intermediate in the product release process by human lysozyme was determined through a combination of NMR spectroscopy and molecular dynamics simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe here the determination of the structure of a low-population intermediate in the product release process by human lysozyme through a combination of NMR spectroscopy and molecular dynamics simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study, supported by the experimental and computational methods described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "3286109a-0906-4329-a225-c7f32244881f",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C6",
+      "claim": "A mutation was engineered to destabilise the intermediate, thus slowing down product release.",
+      "claim_type": "EXPLICIT",
+      "source": "We validate this structure by rationally designing two mutations, the first engineered to destabilise the intermediate and the second to stabilise it, thus slowing down or speeding up, respectively, product release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data on the N44A mutant presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "a73f7343-d351-45f4-a496-1b21a9a3d6c7",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C7",
+      "claim": "A mutation was engineered to stabilise the intermediate, thus speeding up product release.",
+      "claim_type": "EXPLICIT",
+      "source": "We validate this structure by rationally designing two mutations, the first engineered to destabilise the intermediate and the second to stabilise it, thus slowing down or speeding up, respectively, product release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data on the N46Q/V110Q mutant presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "590df568-884d-4089-ba49-8a3a311f56b5",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C8",
+      "claim": "Product release by an enzyme can be facilitated by the presence of a metastable intermediate with transient weak interactions between the enzyme and product.",
+      "claim_type": "EXPLICIT",
+      "source": "These results illustrate how product release by an enzyme can be facilitated by the presence of a metastable intermediate with transient weak interactions between the enzyme and product.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental and computational data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "d6e527dd-e00f-47dc-89a7-b3bfa221f12f",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C9",
+      "claim": "Proteins populate a variety of 'intermediate' states during their function.",
+      "claim_type": "EXPLICIT",
+      "source": "As it is becoming increasingly clear that proteins populate a variety of 'intermediate' states during their function (Dobson, 2003; Sekhar and Kay, 2013), it is essential to determine the structures of such states in addition to defining the native conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "35797685-706d-430a-9134-b066034a767a",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C10",
+      "claim": "Protein intermediates are involved in folding, misfolding, and aggregation processes, as well as in events associated with molecular recognition, catalysis, and allostery.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein intermediates are involved in folding, misfolding, and aggregation processes, as well as in events associated with molecular recognition, catalysis, and allostery (Dobson, 2003; Sekhar and Kay, 2013; Tzeng and Kalodimos, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "e8f5206e-52d5-4958-b27e-bce714e1a812",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C11",
+      "claim": "Protein intermediate species are transient in nature and have been difficult to characterise.",
+      "claim_type": "EXPLICIT",
+      "source": "These species are transient in nature and as such they have been difficult to characterise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the challenges in studying transient intermediates.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "b3cf52b6-f997-45d0-91ba-bebd993ca9e4",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C12",
+      "claim": "Nuclear magnetic resonance (NMR) spectroscopy has emerged as a powerful technique to define transient protein states.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear magnetic resonance (NMR) spectroscopy has emerged in this context as a powerful technique to define such states as exemplified by the characterisation of the structures of species involved in folding (Korzhnev et al., 2010), molecular recognition (Tang et al., 2006), and aggregation (Neudecker et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work demonstrating the use of NMR for characterizing transient states.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "c39971cb-b81c-4cf9-9636-e7c3a6a13efc",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C13",
+      "claim": "Enzymatic catalysis involves three major steps: enzyme-substrate complex formation, transition state formation and substrate-to-product conversion, and product release.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first step, the enzyme forms a complex with the substrate. In the second step, the transition state of the reaction is reached within the favourable environment provided by the catalytic site enabling the conversion of the substrate into product. In the third step, which is often rate-limiting, the product is released and the enzyme returns to its original state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of enzymatic mechanisms, with a citation to Fersht, 1999.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "aa48aa7b-51c0-4499-b2cf-5bac753f3f97",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C14",
+      "claim": "The product release step in enzymatic catalysis is often rate-limiting.",
+      "claim_type": "EXPLICIT",
+      "source": "In the third step, which is often rate-limiting, the product is released and the enzyme returns to its original state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of enzymatic mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "54dffc76-e6b8-469d-966c-c8b5005336fa",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C15",
+      "claim": "Each step in enzymatic catalysis is usually rather complex and involves reaction intermediates, which are transient in nature and difficult to characterise.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these steps is usually rather complex and involves reaction intermediates, which are transient in nature and difficult to characterise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about enzymatic mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "edcb0f7c-3e2a-4f6b-9fcf-f7d115d29e4d",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C16",
+      "claim": "Lysozyme was the first enzyme to be crystallised.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to investigate the third step, we have studied here lysozyme, the first enzyme to be crystallised (Blake et al., 1965), and whose structural properties have been characterised in great detail (Blake et al., 1965; Phillips, 1967; Artymiuk and Blake, 1981; Radford et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Blake et al., 1965.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "63eadc16-5e98-4d93-8734-09621dbaa2a5",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C17",
+      "claim": "The structural properties of lysozyme have been characterised in great detail.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to investigate the third step, we have studied here lysozyme, the first enzyme to be crystallised (Blake et al., 1965), and whose structural properties have been characterised in great detail (Blake et al., 1965; Phillips, 1967; Artymiuk and Blake, 1981; Radford et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "7e521549-059b-42bc-a51b-65d25668ba4b",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C18",
+      "claim": "The native structure of lysozyme is divided into an \u03b1 domain (residues 1 to 38, and 86 to 130) and \u03b2 domain (residues 39 to 85).",
+      "claim_type": "EXPLICIT",
+      "source": "The native structure of this enzyme is divided into a \u03b1 domain (residues 1 to 38, and 86 to 130) and \u03b2 domain (residues 39 to 85), containing primarily \u03b1-helical and \u03b2-sheet secondary structures, respectively (Blake et al., 1965; Phillips, 1967; Artymiuk and Blake, 1981; Radford et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "c4934188-f6ad-41fd-a082-9474e3e3c35d",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C19",
+      "claim": "The \u03b1 domain of lysozyme contains primarily \u03b1-helical secondary structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The native structure of this enzyme is divided into a \u03b1 domain (residues 1 to 38, and 86 to 130) and \u03b2 domain (residues 39 to 85), containing primarily \u03b1-helical and \u03b2-sheet secondary structures, respectively (Blake et al., 1965; Phillips, 1967; Artymiuk and Blake, 1981; Radford et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "c59f457c-7220-4ca1-b789-f95b382fc426",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C20",
+      "claim": "The \u03b2 domain of lysozyme contains primarily \u03b2-sheet secondary structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The native structure of this enzyme is divided into a \u03b1 domain (residues 1 to 38, and 86 to 130) and \u03b2 domain (residues 39 to 85), containing primarily \u03b1-helical and \u03b2-sheet secondary structures, respectively (Blake et al., 1965; Phillips, 1967; Artymiuk and Blake, 1981; Radford et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "6bad4652-385b-45a2-a6a2-7a5ee90e9f3d",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C21",
+      "claim": "Lysozyme degrades bacterial cell walls by catalysing the hydrolysis of the 1,4-\u03b2-linkages of the cell wall peptidoglycans.",
+      "claim_type": "EXPLICIT",
+      "source": "This enzyme degrades bacterial cell walls by catalysing the hydrolysis of the 1,4-\u03b2-linkages of the cell wall peptidoglycans, with a reaction that has been the object of intense scrutiny (Chipman and Sharon, 1969; Warshel and Levitt, 1976; Post et al., 1986; Vocadlo et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work on lysozyme mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "1757bb7d-44ea-4ebc-bd54-401c893e37b5",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C22",
+      "claim": "According to the mechanism originally proposed by Phillips, lysozyme binds to a peptidoglycan molecule in the binding site within the cleft between its two domains thus causing the substrate to adopt a strained conformation similar to that of the transition state of the hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the mechanism originally proposed by Phillips on the basis of his structure (Phillips, 1967), lysozyme binds to a peptidoglycan molecule in the binding site within the cleft between its two domains thus causing the substrate to adopt a strained conformation similar to that of the transition state of the hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Phillips, 1967.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "e862cc99-6919-4256-9cda-ec384ac73255",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C23",
+      "claim": "N,N',N\"-triacetylchitotriose (triNAG) is a well-characterised oligosaccharide product having an inhibitory effect on lysozyme.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we used a well-characterised oligosaccharide product having an inhibitory effect on the enzyme, N,N',N\"-triacetylchitotriose (triNAG) (Turner and Howell, 1995), which has been frequently used for studying lysozyme\u2013product interactions (Post et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "61efac4c-d6d9-42c8-be35-e377196b3dcd",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C24",
+      "claim": "triNAG has been frequently used for studying lysozyme\u2013product interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we used a well-characterised oligosaccharide product having an inhibitory effect on the enzyme, N,N',N\"-triacetylchitotriose (triNAG) (Turner and Howell, 1995), which has been frequently used for studying lysozyme\u2013product interactions (Post et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Post et al., 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "f8212bcf-acd4-40f8-a781-9d041770831f",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C25",
+      "claim": "15N-1H residual dipolar couplings (RDCs) were measured in the ligand-free and ligand-bound states of human lysozyme.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to define the structural populations of human lysozyme in the presence and in the absence of an inhibitor, we measured 15N-1H residual dipolar couplings (RDCs) (Tjandra and Bax, 1997; Tolman et al., 1997) in the ligand-free and ligand-bound states (see 'Materials and methods') and used them as structural restraints in molecular dynamics simulations (De Simone et al., 2011; Montalvao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "8deaf896-2fa7-4a86-bbc7-ea4d3a308f9b",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C26",
+      "claim": "RDCs were used as structural restraints in molecular dynamics simulations to determine ensembles of structures representing the ligand-free and ligand-bound states of human lysozyme.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to define the structural populations of human lysozyme in the presence and in the absence of an inhibitor, we measured 15N-1H residual dipolar couplings (RDCs) (Tjandra and Bax, 1997; Tolman et al., 1997) in the ligand-free and ligand-bound states (see 'Materials and methods') and used them as structural restraints in molecular dynamics simulations (De Simone et al., 2011; Montalvao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "f8f3524d-858a-4d33-9c5e-5db21f8a0787",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C27",
+      "claim": "Large-scale concerted motions between the \u03b1 and \u03b2 domains of lysozyme generate an intermediate state involved in the release of the product.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that large-scale concerted motions between the \u03b1 and \u03b2 domains of the enzyme generate an intermediate state involved in the release of the product.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental and computational data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "fcf42640-9c19-4f90-a8c1-3693c6d7b4b3",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C28",
+      "claim": "The use of RDCs as structural restraints assists the conformational sampling in molecular dynamics simulations in order to estimate the free-energy landscape of a protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of RDCs as structural restraints assists the conformational sampling in molecular dynamics simulations in order to estimate the free-energy landscape of a protein, as recently shown with hen lysozyme for which a large body of experimental data were used for validation purposes (De Simone et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "4ebf7847-0a95-4573-a9a9-db39664a4e0a",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C29",
+      "claim": "The RDC-restrained molecular dynamics approach enables the translation of the experimental measurements into structures according to the principle of maximum entropy.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach enables the translation of the experimental measurements into structures according to the principle of maximum entropy (Pitera and Chodera, 2012; Cavalli et al., 2013; Roux and Weare, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work on maximum entropy principles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "1059d39b-b2a9-47f5-9bfc-e0b336880767",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C30",
+      "claim": "A number of methods to employ NMR measurements of RDCs for the characterisation of the structure and dynamics of proteins have been proposed.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of methods to employ NMR measurements of RDCs for the characterisation of the structure and dynamics of proteins have been proposed (Clore and Schwieters, 2004b; Bouvignies et al., 2006; Lange et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous methodological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "34241301-903a-44c3-9666-39a42b9f5d29",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C31",
+      "claim": "Previous RDC-based approaches have generally been used to assess dynamic events of relatively small amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Since these approaches have generally been used to assess dynamic events of relatively small amplitude, it was necessary to derive a means of extending these methods to enable the description of the large conformational interconversions associated with the function of many protein molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of previous applications of RDC methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "f56a4083-c5b6-4e27-af41-c6ea6bd23904",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C32",
+      "claim": "The strategy used in this study relies on the ability to extract from time and spatially averaged data the contributions to the experimental observables that come from the low-population states present as a result of conformational fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "The strategy that we have used for this purpose relies on the ability to extract from time and spatially averaged data the contributions to the experimental observables that come from the low-population states present as a result of conformational fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach used in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "87398aee-be4c-48d4-877a-ad6709053b06",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C33",
+      "claim": "Intermediate states have been described using paramagnetic resonance enhancement (PRE) and RDC measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Intermediate states determined in this way have been already described using paramagnetic resonance enhancement (PRE) (Tang et al., 2006) and RDC (De Simone et al., 2013a; De Simone et al., 2013b) measurements, complementing approaches in which NMR parameters specific for these states are obtained directly, in particular by relaxation\u2013dispersion methods (Korzhnev et al., 2004, 2010; Bouvignies et al., 2011; Neudecker et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "281c56b8-306c-44a9-9951-5d37d9b86f19",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C34",
+      "claim": "The structural ensemble representing the free state of human lysozyme reveals large breathing motions between the \u03b1 and \u03b2 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "By applying this approach using RDCs to human lysozyme, we generated a structural ensemble representing the free state of this enzyme that reveals large breathing motions between the \u03b1 and \u03b2 domains (Figure 1A and Figure 1\u2014figure supplements 1,2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the computational analysis and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "f22dcbdd-d340-4969-a6a2-9f3c4623c731",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C35",
+      "claim": "The breathing motion between the \u03b1 and \u03b2 domains influences the mutual orientation of the two domains thereby altering the structure of the catalytic pocket at their interface.",
+      "claim_type": "EXPLICIT",
+      "source": "This motion, which influences the mutual orientation of the two domains thereby altering the structure of the catalytic pocket at their interface, can be accounted for by defining a 'breathing' angle \u03b8 between the \u03b1-domain, the hinge region and the \u03b2-domain (De Simone et al., 2013b) (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the structural analysis, with reference to a figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "8728407e-5539-44c4-b2a0-10173fd4acfc",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C36",
+      "claim": "A 'breathing' angle \u03b8 can be defined between the \u03b1-domain, the hinge region and the \u03b2-domain to describe the interdomain motion.",
+      "claim_type": "EXPLICIT",
+      "source": "This motion, which influences the mutual orientation of the two domains thereby altering the structure of the catalytic pocket at their interface, can be accounted for by defining a 'breathing' angle \u03b8 between the \u03b1-domain, the hinge region and the \u03b2-domain (De Simone et al., 2013b) (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a methodological approach, with citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "7fb4ed7d-5996-48ec-92ae-420ee16f9824",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C37",
+      "claim": "In the free state, the free-energy landscape of human lysozyme is characterised by a single basin.",
+      "claim_type": "EXPLICIT",
+      "source": "While in the free state the free-energy landscape is characterised by a single basin (Figure 1A), in the bound state a second local minimum appears (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A based on the computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "e74aab4c-3bd8-408e-8a39-586197dbc772",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C38",
+      "claim": "In the bound state, a second local minimum appears in the free-energy landscape of human lysozyme.",
+      "claim_type": "EXPLICIT",
+      "source": "While in the free state the free-energy landscape is characterised by a single basin (Figure 1A), in the bound state a second local minimum appears (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B based on the computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "a6393acd-0af5-4642-ab78-f697a4866c25",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C39",
+      "claim": "The change in the free-energy landscape between free and bound states reflects the differences in the RDC data of the free and bound states.",
+      "claim_type": "EXPLICIT",
+      "source": "This change, which reflects the differences in the RDC data of the free and bound states, corresponds to a wider distribution of values of the \u03b8 angle in the bound state compared with the free state (Figure 1 and Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data and computational analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "8cfc6bd9-a0bc-4f45-b342-1d78261e8fcd",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C40",
+      "claim": "The bound state has a wider distribution of values of the \u03b8 angle compared with the free state.",
+      "claim_type": "EXPLICIT",
+      "source": "This change, which reflects the differences in the RDC data of the free and bound states, corresponds to a wider distribution of values of the \u03b8 angle in the bound state compared with the free state (Figure 1 and Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1 and Figure 1\u2014figure supplement 4 based on the computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "5d321dc4-61f3-43a6-b970-226d4dae8f06",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C41",
+      "claim": "The bound state ensemble was validated using NOEs, J-couplings, chemical shifts and RDCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The bound state ensemble was validated using NOEs, J-couplings, chemical shifts and RDCs (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the validation of the computational ensemble using experimental data, shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "f615dd66-93bd-4442-b6f8-b407eb880a80",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C42",
+      "claim": "The global free energy minimum in the bound state is designated as the 'locked state' (i.e., release incompetent).",
+      "claim_type": "EXPLICIT",
+      "source": "Having in mind the release of the product, we designate the global free energy minimum observed in this study as the 'locked state' (i.e., release incompetent), which is centred at \u03b8 values of about 58\u00b0 and C\u03b1-RMSD values of about 0.9 \u00c5 from the X-ray structure of the complex (calculated by considering secondary structure elements only), and the other free energy minimum, which has about a 13% population under the conditions of our experiments, defined as the 'unlocked state' (i.e., release competent, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a definition based on the computational analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "3df2e35d-c76c-410d-9527-9f1e50e25cf4",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C43",
+      "claim": "The locked state is centred at \u03b8 values of about 58\u00b0 and C\u03b1-RMSD values of about 0.9 \u00c5 from the X-ray structure of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Having in mind the release of the product, we designate the global free energy minimum observed in this study as the 'locked state' (i.e., release incompetent), which is centred at \u03b8 values of about 58\u00b0 and C\u03b1-RMSD values of about 0.9 \u00c5 from the X-ray structure of the complex (calculated by considering secondary structure elements only), and the other free energy minimum, which has about a 13% population under the conditions of our experiments, defined as the 'unlocked state' (i.e., release competent, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the computational analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "7edcf439-e59c-40b3-984f-e0f00534f78e",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C44",
+      "claim": "The unlocked state has about a 13% population under the conditions of the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Having in mind the release of the product, we designate the global free energy minimum observed in this study as the 'locked state' (i.e., release incompetent), which is centred at \u03b8 values of about 58\u00b0 and C\u03b1-RMSD values of about 0.9 \u00c5 from the X-ray structure of the complex (calculated by considering secondary structure elements only), and the other free energy minimum, which has about a 13% population under the conditions of our experiments, defined as the 'unlocked state' (i.e., release competent, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the computational analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "c676f54e-02d3-433c-b74f-7b03250c9f79",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C45",
+      "claim": "The unlocked state is designated as release competent.",
+      "claim_type": "EXPLICIT",
+      "source": "Having in mind the release of the product, we designate the global free energy minimum observed in this study as the 'locked state' (i.e., release incompetent), which is centred at \u03b8 values of about 58\u00b0 and C\u03b1-RMSD values of about 0.9 \u00c5 from the X-ray structure of the complex (calculated by considering secondary structure elements only), and the other free energy minimum, which has about a 13% population under the conditions of our experiments, defined as the 'unlocked state' (i.e., release competent, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a definition based on the computational analysis and functional interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "5034a7ff-b2cd-4643-8255-afb7ed347aea",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C46",
+      "claim": "The unlocked state is a compact conformation that differs from the locked state by a global motion in which the \u03b1 and \u03b2 subunits become closer.",
+      "claim_type": "EXPLICIT",
+      "source": "The unlocked state is a compact conformation that differs from the locked state by a global motion in which the \u03b1 and \u03b2 subunits become closer, with a \u03b8 value of about 49\u00b0 in the centre of the basin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the computational analysis of the structural ensemble.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "7e0726ac-439e-44a4-ace6-91c47521974f",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C47",
+      "claim": "The unlocked state has a \u03b8 value of about 49\u00b0 in the centre of the basin.",
+      "claim_type": "EXPLICIT",
+      "source": "The unlocked state is a compact conformation that differs from the locked state by a global motion in which the \u03b1 and \u03b2 subunits become closer, with a \u03b8 value of about 49\u00b0 in the centre of the basin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the computational analysis of the structural ensemble.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "c2849281-0fa5-4968-945c-872a5ef96b96",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C48",
+      "claim": "The unlocked state generates particularly distorted structures with global RMSD values of about 1.5 \u00c5 from the X-ray structure.",
+      "claim_type": "EXPLICIT",
+      "source": "This motion generates particularly distorted structures with global RMSD values of about 1.5 \u00c5 from the X-ray structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the computational analysis of the structural ensemble.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "12a05c4e-4b73-445e-ab43-21634515c56f",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C49",
+      "claim": "The angle \u03b8 provides a simple and effective reaction coordinate to describe the effect of triNAG binding on the energy landscape of human lysozyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The angle \u03b8 provides a simple and effective reaction coordinate to describe the effect of triNAG binding on the energy landscape of human lysozyme (Figure 2A), which clearly illustrates how the protein is able to explore closed conformations (i.e., \u03b8 < 50\u00b0) upon ligand binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the computational analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "e5f4069e-5a8d-4c88-b567-a6a4b4e15ff4",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C50",
+      "claim": "Upon ligand binding, human lysozyme is able to explore closed conformations (i.e., \u03b8 < 50\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "The angle \u03b8 provides a simple and effective reaction coordinate to describe the effect of triNAG binding on the energy landscape of human lysozyme (Figure 2A), which clearly illustrates how the protein is able to explore closed conformations (i.e., \u03b8 < 50\u00b0) upon ligand binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A based on the computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "823b2915-dd23-458f-9609-8c060bd8a4cc",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C51",
+      "claim": "Unlocked conformations are characterised by less favourable intermolecular Coulomb and van der Waals interactions than those found in the locked state.",
+      "claim_type": "EXPLICIT",
+      "source": "In the structural ensemble representing the complex between human lysozyme and triNAG, unlocked conformations are characterised by less favourable intermolecular Coulomb and van der Waals interactions than those found in the locked state (Figure 2B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the computational analysis shown in Figure 2B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "53d6fb66-40eb-4708-877c-7e61408f6a42",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C52",
+      "claim": "Specific interactions between triNAG and the binding pocket in the locked state include hydrophobic interactions between a methyl group of triNAG and the side-chain of W109.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison between the locked and unlocked conformations indicates that this difference corresponds to specific interactions between the substrate and the binding pocket (Figure 2D), which include hydrophobic interactions between a methyl group of triNAG and the side-chain of W109, as well as hydrogen bonds between the ligand and the main chain amide group of N60 and the side chains of W64 and Q104.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the computational analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "224adf19-0688-439b-8489-a48da63f482c",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C53",
+      "claim": "Specific interactions between triNAG and the binding pocket in the locked state include hydrogen bonds between the ligand and the main chain amide group of N60 and the side chains of W64 and Q104.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison between the locked and unlocked conformations indicates that this difference corresponds to specific interactions between the substrate and the binding pocket (Figure 2D), which include hydrophobic interactions between a methyl group of triNAG and the side-chain of W109, as well as hydrogen bonds between the ligand and the main chain amide group of N60 and the side chains of W64 and Q104.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the computational analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "ba93f526-5a91-4993-a434-6771931924de",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C54",
+      "claim": "The specific interactions between triNAG and the binding pocket are present in essentially all the structures in the ensemble representing the locked state.",
+      "claim_type": "EXPLICIT",
+      "source": "These interactions are present in essentially all the structures in the ensemble representing the locked state, while they are absent in the structures in the ensemble of the unlocked state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the computational analysis of the structural ensemble.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "31b7ea8e-156d-4485-ae64-760e594db4cd",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C55",
+      "claim": "The specific interactions between triNAG and the binding pocket are absent in the structures in the ensemble of the unlocked state.",
+      "claim_type": "EXPLICIT",
+      "source": "These interactions are present in essentially all the structures in the ensemble representing the locked state, while they are absent in the structures in the ensemble of the unlocked state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the computational analysis of the structural ensemble.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "7cae7b08-3932-459e-8010-6a3d77a7ec7f",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C56",
+      "claim": "Because of a partial displacement of the ligand from the binding pocket, the unlocked conformations lose the tight interactions that are stabilised in the locked state and gain new interactions on the external surface of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, because of a partial displacement of the ligand from the binding pocket, the unlocked conformations lose the tight interactions that are stabilised in the locked state and gain new interactions on the external surface of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the computational analysis of the structural ensemble.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "6246ebe5-2cb1-4676-be84-5c2a98fa11c7",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C57",
+      "claim": "The new interactions on the external surface of the protein in the unlocked conformations mainly involve hydrogen bonds between donor and acceptor groups from the ligand and the protein surface.",
+      "claim_type": "EXPLICIT",
+      "source": "These interactions, which mainly involve hydrogen bonds between donor and acceptor groups from the ligand and the protein surface, are highly variable and heterogeneous in the unlocked conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the computational analysis of the structural ensemble.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "8e7fb653-bb80-4bbd-a77e-ade8296e9d19",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C58",
+      "claim": "The interactions on the external surface of the protein in the unlocked conformations are highly variable and heterogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "These interactions, which mainly involve hydrogen bonds between donor and acceptor groups from the ligand and the protein surface, are highly variable and heterogeneous in the unlocked conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the computational analysis of the structural ensemble.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "a34cc402-b272-4902-9ff7-ad87d5ccf7a3",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C59",
+      "claim": "As a consequence of a concerted conformational transition, lysozyme explores conformations in which the specific and tight intermolecular interactions with the substrate in its locked state are largely lost in favour of the formation of weak and non-specific interactions in its unlocked state.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this analysis of the structural ensembles of human lysozyme suggests that, as a consequence of a concerted conformational transition, the enzyme explores conformations in which the specific and tight intermolecular interactions with the substrate in its locked state are largely lost in favour of the formation of weak and non-specific interactions in its unlocked state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the computational analysis of the structural ensemble.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "aaa03fc3-db38-4e69-a506-9a7851c8f349",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C60",
+      "claim": "The conformational transition to the unlocked state is favoured by large-scale conformational motions in which the \u03b1 and \u03b2 domains become closer.",
+      "claim_type": "EXPLICIT",
+      "source": "This transition is favoured by large-scale conformational motions in which the \u03b1 and \u03b2 domains become closer, thus suggesting that these motions are employed by the enzyme to modulate the affinity with the ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the computational analysis of the structural ensemble.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "4b8e1383-95a4-46eb-9047-437905639a6d",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C61",
+      "claim": "Large-scale conformational motions between the \u03b1 and \u03b2 domains are employed by the enzyme to modulate the affinity with the ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "This transition is favoured by large-scale conformational motions in which the \u03b1 and \u03b2 domains become closer, thus suggesting that these motions are employed by the enzyme to modulate the affinity with the ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the computational analysis of the structural ensemble.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "d5d212f2-4446-4b9f-a02a-6c449b25ea9d",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C62",
+      "claim": "The unlocked state represents an intermediate state for product release.",
+      "claim_type": "EXPLICIT",
+      "source": "The unlocked state therefore represents an intermediate state for product release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the computational analysis and functional interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "36153e69-3dc0-42f0-b986-6edbefb97966",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C63",
+      "claim": "The enzyme product complex (EP) populates transiently an intermediate state (EP*) that favours the release of the product (E + P).",
+      "claim_type": "EXPLICIT",
+      "source": "In this view (Figure 3), the enzyme product complex (EP) populates transiently an intermediate state (EP*) that favours the release of the product (E + P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the computational analysis, illustrated in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "9cc257b3-890c-45f6-922a-b3ee09a11e61",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C64",
+      "claim": "Large-scale conformational transitions are employed by enzymes along their catalytic cycles including key events in the product release step.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the analysis of the structural ensembles that we have determined provides evidence that large-scale conformational transitions are employed by enzymes along their catalytic cycles including key events in the product release step, which often represents the rate-limiting step that governs the turnover of the enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the computational analysis and functional interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "b3c29197-9db0-4e97-9422-5e745e50cd00",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C65",
+      "claim": "The product release step often represents the rate-limiting step that governs the turnover of the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the analysis of the structural ensembles that we have determined provides evidence that large-scale conformational transitions are employed by enzymes along their catalytic cycles including key events in the product release step, which often represents the rate-limiting step that governs the turnover of the enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of enzymatic mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "855649be-ab8b-47c7-a4d9-53d15662fe53",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C66",
+      "claim": "The difficulty for enzymes to release the products can arise from the fact that typically the latter have similar physico-chemical characteristics to the substrates and therefore maintain a significant affinity for the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The difficulty for enzymes to release the products can arise from the fact that typically the latter have similar physico-chemical characteristics to the substrates and therefore maintain a significant affinity for the enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of enzymatic mechanisms and chemical principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "a948e0e9-af36-4cdf-bba4-9d00df93f32f",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C67",
+      "claim": "A stabilising hydrogen bond can be formed only in the unlocked state, which involves side-chain atoms of residue N44 in the \u03b2-domain and residue E35 in the \u03b1-domain.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the possibility that the structure that we have determined of the unlocked state represents an intermediate state in the release of the product, we compared in detail the energetic contributions that stabilise the locked and unlocked states and identified a stabilising hydrogen bond that can be formed only in the unlocked state (Figure 4A), which involves side-chain atoms of residue N44 in the \u03b2-domain and residue E35 in the \u03b1-domain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the computational analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "fc8b35fc-7174-4d4f-8949-483ae4fda3e5",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C68",
+      "claim": "Residues N44 and E35 are too far away from each other in the locked state to form a hydrogen bond.",
+      "claim_type": "EXPLICIT",
+      "source": "These two residues are too far away from each other in the locked state to form a hydrogen bond (Figure 4B), and therefore this interaction is characteristic only of the unlocked conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the computational analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "1eae1ca2-403b-4524-b1ea-a179ca0a9b81",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C69",
+      "claim": "The hydrogen bond between N44 and E35 is characteristic only of the unlocked conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "These two residues are too far away from each other in the locked state to form a hydrogen bond (Figure 4B), and therefore this interaction is characteristic only of the unlocked conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the computational analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "050a0a67-053c-433b-b570-b9872bf288bc",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C70",
+      "claim": "The hydrogen bond between N44 and E35 provides a specific interaction by which one could selectively target the stability of the EP* intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that this hydrogen bond provides a specific interaction by which one could selectively target the stability of the EP* intermediate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the computational analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "6fef6dd4-073f-492e-b2c2-0ffe016c33d2",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C71",
+      "claim": "The N44A single-amino acid mutation was rationally designed to verify if the ability of the enzyme to release the products is altered by preventing the formation of the hydrogen bond that stabilises the unlocked state.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we rationally designed the N44A single-amino acid mutation to verify if the ability of the enzyme to release the products is indeed altered by preventing the formation of the hydrogen bond that stabilises the unlocked state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design based on the computational predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "c94cdeae-f9d3-4a50-b5a8-e46df423e43e",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C72",
+      "claim": "The N44A mutation does not affect the structural properties of the mutant in the native state.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the 1H-15N-HSQC spectra of the wild-type and the N44A variant of human lysozyme shows that the mutation does not affect the structural properties of the mutant in the native state (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NMR spectroscopy data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "fa4b70a2-8014-4ef2-bfc4-f1998aadf586",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C73",
+      "claim": "The N44A mutation was expected not to modify interactions present in the native state but was designed explicitly to perturb a hydrogen bond in the intermediate state.",
+      "claim_type": "EXPLICIT",
+      "source": "This result was expected as the mutation does not modify interactions present in the native state but was designed explicitly to perturb a hydrogen bond in the intermediate state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the rational design of the mutation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "c8adc878-e13e-4ff4-ad9d-c1f79aa9edd6",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C74",
+      "claim": "The destabilisation of the intermediate in the N44A mutant reduces the koff by a factor 3.",
+      "claim_type": "EXPLICIT",
+      "source": "By using a double-referenced single chain model (see 'Materials and methods'), we estimated that the destabilisation of the intermediate in the N44A mutant reduces the koff by a factor 3, while changing the Kd by a factor 1/3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on surface plasmon resonance (SPR) experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "44a6cc5d-51ac-46ae-b171-ad917a020334",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C75",
+      "claim": "The destabilisation of the intermediate in the N44A mutant changes the Kd by a factor 1/3.",
+      "claim_type": "EXPLICIT",
+      "source": "By using a double-referenced single chain model (see 'Materials and methods'), we estimated that the destabilisation of the intermediate in the N44A mutant reduces the koff by a factor 3, while changing the Kd by a factor 1/3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on surface plasmon resonance (SPR) experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "555fcb47-3ab8-4664-974b-bc43cbc1f6bc",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C76",
+      "claim": "The variation of a factor 2 of the kon in the N44A mutant suggests that the pathways of capture and release are not completely distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "The variation of a factor 2 of the kon suggests that the pathways of capture and release are not completely distinct and thus perturbing the pathway for release affects in part also that of capture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the SPR experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "89f6efd7-d872-433b-9af8-0f8cbe5a4ab7",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C77",
+      "claim": "Perturbing the pathway for release affects in part also that of capture.",
+      "claim_type": "EXPLICIT",
+      "source": "The variation of a factor 2 of the kon suggests that the pathways of capture and release are not completely distinct and thus perturbing the pathway for release affects in part also that of capture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the SPR experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "9795262c-f822-48a9-9832-18df14c2cea5",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C78",
+      "claim": "The SPR results are consistent with the prediction that the N44A mutation affects the stability of the EP* intermediate, that is, of the unlocked state.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with our prediction that the N44A mutation affects the stability of the EP* intermediate, that is, of the unlocked state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the SPR experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "b0f9fc4c-611d-4e49-9de4-fb93ed29c6fd",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C79",
+      "claim": "The N44A variant has an intermediate activity between wild type and the totally inactive control E35D variant.",
+      "claim_type": "EXPLICIT",
+      "source": "The results (Figure 4D) show that the N44A variant has an intermediate activity between wild type and the totally inactive control E35D variant, which is again consistent with the prediction that the mutation of asparagine to alanine of residue 44 would reduce the efficiency of the product release in such a way to affect the catalytic activity of the enzyme.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on cellular assay data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "c834ec12-0948-48aa-a172-d8f7d632e970",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C80",
+      "claim": "The cellular assay results are consistent with the prediction that the mutation of asparagine to alanine of residue 44 would reduce the efficiency of the product release in such a way to affect the catalytic activity of the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The results (Figure 4D) show that the N44A variant has an intermediate activity between wild type and the totally inactive control E35D variant, which is again consistent with the prediction that the mutation of asparagine to alanine of residue 44 would reduce the efficiency of the product release in such a way to affect the catalytic activity of the enzyme.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the cellular assay data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "d5b2bbea-ca50-4cd6-8c2d-18e36d94e830",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C81",
+      "claim": "15N-1H RDC measurements on the N44A mutant and restrained molecular dynamics simulations demonstrate that the unlocked state is not appreciably populated in the N44A mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, to verify that the N44A modified the free-energy landscape of lysozyme by reducing the population of the unlocked state, we performed 15N-1H RDC measurements on the N44A mutant and carried out restrained molecular dynamics simulations to determine its free-energy landscape. The results (see Figure 4\u2014figure supplement 2A) demonstrate that the unlocked state is not appreciably populated in the N44A mutant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NMR and computational data shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "39b09808-a4bd-4ad4-bcf6-d8e1f7a31bbc",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C82",
+      "claim": "A second mutational variant (N46Q/V110Q) was designed to stabilise the unlocked state.",
+      "claim_type": "EXPLICIT",
+      "source": "To further validate the conclusion that the structure that we have determined of the unlocked state represents a release intermediate, we designed a second mutational variant to stabilise the unlocked state, rather than destabilising it as the N44A mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "0ad62b75-d9b9-43b7-a694-219a59d814d7",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C83",
+      "claim": "In the N46Q/V110Q mutant, a strong glutamine\u2013glutamine interaction is inserted with the purpose to stabilise the 'unlocked' state in its conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the new mutant, N46Q/V110Q, a strong glutamine\u2013glutamine interaction is inserted with the purpose to stabilise the 'unlocked' state in its conformation (Figure 4\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design, illustrated in Figure 4\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "bfa87813-68f0-44a2-9f6f-37ac53a97dd9",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C84",
+      "claim": "The N46Q/V110Q mutant corresponds to a weaker binding affinity for the ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "We have verified the folding of the mutant by NMR (Figure 4\u2014figure supplement 3B) and measured the binding constants of the ligand for the unlocked state by SPR to show that it corresponds to a weaker binding affinity (Figure 4\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on SPR data shown in Figure 4\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "897a6235-b65b-4f4e-a110-0a35a0a88f74",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C85",
+      "claim": "The Kd of the wild type is about 9 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Kd of the wild type is about 9 \u03bcM, the Kd of the N46Q/V110Q mutant is high almost beyond detection, indicating that the mutant essentially does not bind the substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on SPR experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "156bf5b2-6daa-47f3-afb1-153f94444c7f",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C86",
+      "claim": "The Kd of the N46Q/V110Q mutant is high almost beyond detection, indicating that the mutant essentially does not bind the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Kd of the wild type is about 9 \u03bcM, the Kd of the N46Q/V110Q mutant is high almost beyond detection, indicating that the mutant essentially does not bind the substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on SPR experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "34cd578c-f208-4302-b732-5597856c251d",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C87",
+      "claim": "The experimentally measured binding constants are consistent with the observation that the binding free energy of the locked state is larger than that of the unlocked state because the free energy of the former is lower than that of the latter.",
+      "claim_type": "EXPLICIT",
+      "source": "These experimentally measured binding constants are consistent with the observation that, considering that the free energy of the free state is the same, the binding free energy of the locked state is larger than that of the unlocked state because the free energy of the former is lower than that of the latter (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data and the free energy landscape shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "c6f2938c-a0f2-470b-8dc9-ae312c54cfba",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C88",
+      "claim": "The atomic resolution structure of an intermediate associated with the product release in an enzymatic reaction has been presented.",
+      "claim_type": "EXPLICIT",
+      "source": "We have presented the atomic resolution structure of an intermediate associated with the product release in an enzymatic reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "e4dae581-60f6-4c28-b485-6002381a65ff",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C89",
+      "claim": "The structure of the unlocked state was validated by identifying a distinctive structural characteristic of this state, a transient hydrogen bond between the side-chains of residues N44 and E35.",
+      "claim_type": "EXPLICIT",
+      "source": "We have validated this structure by identifying a distinctive structural characteristic of this state, a transient hydrogen bond between the side-chains of residues N44 and E35.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the validation approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "3fde5f1c-47f1-42c6-991f-b6ebac55ce8a",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C90",
+      "claim": "The N44A mutational variant, by removing specifically the hydrogen bond, reduces the stability of the intermediate state but not that of the ground state and thus inhibits the release process.",
+      "claim_type": "EXPLICIT",
+      "source": "As this interaction stabilises the intermediate state but not the ground state, we introduced a mutational variant (N44A) that, by removing specifically the hydrogen bond, reduces the stability of the intermediate state but not that of the ground state and thus inhibits the release process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental validation of the computational predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "d1cae9ab-646b-402a-b4c3-c7395f52a6a9",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C91",
+      "claim": "Conformational fluctuations can play a central role in enzymatic reactions by creating low-population intermediate states that facilitate the challenging step of release of the products of the catalytic reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide an illustration of the manner in which conformational fluctuations can play a central role in enzymatic reactions by creating low-population intermediate states that facilitate the challenging step of release of the products of the catalytic reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental and computational data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "c50d1d97-1c2d-47ef-aba9-490411236e65",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C92",
+      "claim": "Human lysozyme was expressed in Pichia pastoris and purified on an ion exchange column.",
+      "claim_type": "EXPLICIT",
+      "source": "Human lysozyme was expressed in Pichia pastoris and purified on an ion exchange column, as previously described (Johnson and et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "06e2e029-3770-4797-9b0d-a3636cfef619",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C93",
+      "claim": "15N ammonium sulfate and 13C methanol were used to 15N and 13C label the protein, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "15N ammonium sulfate and 13C methanol were used to 15N and 13C label the protein, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "0a794bdb-8b0d-434c-b847-992e8d914707",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C94",
+      "claim": "NMR experiments were carried out using a 700 MHz spectrometer at 37\u00b0C in a buffer at pH 5.0 containing 20 mM potassium phosphate and 10% D2O.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR experiments were carried out using a 700 MHz spectrometer at 37\u00b0C in a buffer at pH 5.0 containing 20 mM potassium phosphate and 10% D2O; the pH was re-adjusted after the addition of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "9dfd069e-ff6c-434e-8339-c9a8f00478f0",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C95",
+      "claim": "Protein concentrations were in the range of 200\u2013350 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein concentrations were in the range of 200\u2013350 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "b3d68e14-55d0-46dd-9901-cfb297d38d59",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C96",
+      "claim": "126 backbone amides were assigned in the 1H-15N spectrum of the free state.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 126 backbone amides were assigned in the 1H-15N spectrum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "db96f448-c68e-455a-ac16-1c5cb6ba703a",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C97",
+      "claim": "109 RDCs were extracted in the steric medium for the free state.",
+      "claim_type": "EXPLICIT",
+      "source": "For the free state, we extracted 109 RDCs in the steric medium and 110 in the charged medium; 109 RDCs were extracted for the bound state, both for steric and charged media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "8eee7379-4e1e-402a-9a2f-08198e67bd07",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C98",
+      "claim": "110 RDCs were extracted in the charged medium for the free state.",
+      "claim_type": "EXPLICIT",
+      "source": "For the free state, we extracted 109 RDCs in the steric medium and 110 in the charged medium; 109 RDCs were extracted for the bound state, both for steric and charged media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "bd506f1f-fbb5-49d6-84cd-2d9a6e9f44b8",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C99",
+      "claim": "109 RDCs were extracted for the bound state, both for steric and charged media.",
+      "claim_type": "EXPLICIT",
+      "source": "For the free state, we extracted 109 RDCs in the steric medium and 110 in the charged medium; 109 RDCs were extracted for the bound state, both for steric and charged media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "45d44f28-b7c2-4048-857f-0824dbdde323",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C100",
+      "claim": "The crystal structure of human lysozyme at 1.9 \u00c5 resolution (PDB code 2ZIJ) was used as a starting structure for the ligand-free state.",
+      "claim_type": "EXPLICIT",
+      "source": "As a starting structure for the ligand-free state, we used the crystal structure of human lysozyme at 1.9 \u00c5 resolution (PDB code 2ZIJ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "6e94d409-32b9-4133-8fd4-bbaf2473d139",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C101",
+      "claim": "The crystal structure of the human lysozyme A96L variant bound to triNAG at 1.8 \u00c5 resolution (PDB code 1BB5) was used as a starting structure for the bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "For the bound state, we used the crystal structure of the human lysozyme A96L variant bound to triNAG at 1.8 \u00c5 resolution (PDB code 1BB5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "097213e7-7b20-477c-b561-935fa3a510c5",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C102",
+      "claim": "Molecular dynamics simulations were performed by using AMBER99SB with corrections on backbone and side chains dihedral angles as the force field for the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular dynamics simulations were performed by using AMBER99SB with corrections on backbone (Best and Hummer, 2009) and side chains (Lindorff-Larsen et al., 2010) dihedral angles as the force field (EFF) for the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "8e483b4e-c669-44c6-8471-db4c06f354d7",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C103",
+      "claim": "triNAG was modelled using the GLYCAM06 force field.",
+      "claim_type": "EXPLICIT",
+      "source": "triNAG was modelled using the GLYCAM06 force field (Kirschner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "3b38d023-e154-440b-9948-045cca291b70",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C104",
+      "claim": "The protein and protein/triNAG systems were solvated using the TIP3P water model.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein and protein/triNAG systems were solvated using the TIP3P water model (Jorgensen et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "14909fbe-7ce8-4680-9ddc-9aa744fda14b",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C105",
+      "claim": "The Q factors for the refined ensembles of the free and bound states of human lysozyme were 0.10 in both cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The Q factors for the refined ensembles of the free and bound states of human lysozyme were 0.10 in both cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality of the computational ensembles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "bf9c47c2-7e2c-4145-89f2-0eb0fe9f32c4",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C106",
+      "claim": "N44A mutation and E35D or D53N (control mutations) were introduced into the pPIC9/HuLys wt by using QuikChange XL II mutagenesis kit.",
+      "claim_type": "EXPLICIT",
+      "source": "N44A mutation and E35D or D53N (control mutations) were introduced into the pPIC9/HuLys wt by using QuikChange XL II mutagenesis kit (Qiagen, Venlo, The Netherlands).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "1d5bc23f-1c5c-424a-ae00-4d31b35f9a76",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C107",
+      "claim": "Surface plasmon resonance (SPR) experiments were performed using a Biacore 3000 system.",
+      "claim_type": "EXPLICIT",
+      "source": "Surface plasmon resonance (SPR) experiments were performed using a Biacore 3000 system (GE Healthcare).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "8ecf454d-c3de-4374-a279-cb4cb327846e",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "claim_id": "C108",
+      "claim": "Hydrolase activity assay was performed using Micrococcus lysodeikticus cells as the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydrolase activity assay was performed using Micrococcus lysodeikticus cells (Sigma Aldrich) as the substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "11e318dc-1dc3-462d-937e-d062d3c36804",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Using NMR-derived RDCs as restraints in molecular dynamics simulations, the authors determined structural ensembles of human lysozyme in free and triNAG-bound states. The free state exhibits a single free-energy basin with breathing motions between \u03b1 and \u03b2 domains, while the bound state reveals two minima: a 'locked' state (87% population, \u03b8\u224858\u00b0) and an 'unlocked' state (13% population, \u03b8\u224849\u00b0, RMSD\u22481.5\u00c5 from crystal structure).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C25-C26, C34, C37-C48 collectively describe the computational determination of structural ensembles using RDC-restrained MD simulations. The bound state ensemble was validated with multiple NMR observables (C41), and the identification of two distinct states with specific structural characteristics is supported by the computational analysis shown in Figures 1-2. The Q-factor of 0.10 (C105) indicates good agreement with experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "f5481fad-7c7f-43d6-bcf8-493905d061c4",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors propose that large-scale interdomain motions generate an intermediate 'unlocked' state that facilitates product release. In this state, the \u03b1 and \u03b2 domains move closer (\u03b8<50\u00b0), causing partial ligand displacement from the binding pocket. Specific tight interactions (with W109, N60, W64, Q104) present in the locked state are lost and replaced by weak, heterogeneous surface interactions in the unlocked state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C35-C36, C49-C63 describe the structural and energetic basis for the proposed product release mechanism. The computational analysis of intermolecular interactions (C51-C58, Figure 2B-E) supports the transition from tight to weak binding. The breathing angle \u03b8 provides a clear reaction coordinate (C49), and the model of EP\u2192EP*\u2192E+P (C63, Figure 3) is a reasonable interpretation of the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "661cc1e1-2dff-43c8-87b9-fe2c53dbe56f",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The N44A mutation was rationally designed to destabilize the unlocked state by preventing formation of a hydrogen bond between N44 and E35 that is unique to this state. SPR experiments show N44A reduces koff by 3-fold and changes Kd by 1/3, cellular assays show intermediate activity between wild-type and inactive E35D control, and RDC/MD analysis confirms the unlocked state is not appreciably populated in N44A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C81 describe a rational mutagenesis experiment that validates the computational model. The hydrogen bond is identified computationally (C67-C69, Figure 4A-B), the mutation design is logical (C71, C73), and three independent experimental approaches (NMR C72, SPR C74-C78, cellular assay C79-C80, RDC/MD C81) consistently support the prediction that destabilizing the unlocked state impairs product release.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "08c160ea-7041-469d-b8fa-051d311cd73f",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A second mutation (N46Q/V110Q) was designed to stabilize the unlocked state through engineered glutamine-glutamine interactions. SPR measurements show this mutant has dramatically weakened binding (Kd nearly undetectable vs. 9 \u03bcM for wild-type), consistent with stabilizing a state with lower binding affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C82-C87 describe a complementary validation experiment. The mutation design is rational (C83, Figure 4\u2014figure supplement 3A), the mutant is properly folded by NMR (Figure 4\u2014figure supplement 3B), and the SPR data (C84-C86) showing dramatically reduced binding is consistent with the prediction that stabilizing the unlocked state (which has weaker interactions) would reduce overall binding affinity (C87).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "83981aa8-0970-4d17-9a74-08e32ae0d43a",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors conclude that product release is facilitated by a metastable intermediate with transient weak enzyme-product interactions, and that conformational fluctuations creating low-population intermediates play a central role in enzymatic catalysis, particularly in the rate-limiting product release step.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C64, C91 represent the main conclusions of the study. These are well-supported by the structural characterization of the unlocked state (Result 1), the mechanistic model (Result 2), and the experimental validation through rational mutagenesis (Results 3-4). The conclusions appropriately synthesize the computational and experimental findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "250f2393-e82e-4025-b34e-778b04ba2f95",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors describe their methodological approach: using RDC-restrained MD simulations to extract low-population state information from ensemble-averaged NMR data, based on maximum entropy principles. This extends previous RDC methods that typically assessed small-amplitude dynamics to enable characterization of large conformational changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 describe the methodological framework with appropriate citations to prior work. The approach is validated by previous studies (C28, C33) and the theoretical basis is sound (C29). The extension to large-amplitude motions (C31-C32) is justified by the need to study functional conformational changes in enzymes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "f73449e3-37b4-4e4c-b761-a2791c611acd",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about enzymes, protein intermediates, and enzymatic catalysis mechanisms, including that product release is often rate-limiting and that transient intermediates are difficult to characterize structurally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C9-C15, C65-C66 present established knowledge about enzyme function and protein dynamics, appropriately supported by citations. These provide necessary context for the study but represent prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "18628d83-e64d-4797-8483-3ab177ef407a",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors selected human lysozyme as their model system, describing its well-characterized structure (\u03b1 and \u03b2 domains), catalytic mechanism (hydrolysis of peptidoglycan 1,4-\u03b2-linkages), and the use of triNAG as a product analog for studying enzyme-product interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C24 describe the choice and properties of the experimental system, all supported by appropriate citations to prior structural and mechanistic studies of lysozyme. This represents standard background information justifying the model system selection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    },
+    {
+      "id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1",
+      "content_id": "bda642d1-388a-48d8-8e97-e6663d917ffe",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Materials and Methods section describes protein expression in Pichia pastoris, isotopic labeling, NMR experimental conditions (700 MHz, 37\u00b0C, pH 5.0), RDC measurements (109-110 RDCs in two alignment media), MD simulation parameters (AMBER99SB force field, TIP3P water, starting from crystal structures 2ZIJ and 1BB5), mutagenesis procedures, SPR experiments, and enzymatic activity assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C108 provide detailed methodological information. The experimental procedures are clearly described with appropriate technical details, citations to established methods, and quality metrics (Q-factor 0.10, C105). These are standard methods appropriately applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:16:27.809838Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "665f4137-adcf-41a7-84ed-a3f753d73477",
+      "result_id": "11e318dc-1dc3-462d-937e-d062d3c36804"
+    },
+    {
+      "claim_id": "f8212bcf-acd4-40f8-a781-9d041770831f",
+      "result_id": "11e318dc-1dc3-462d-937e-d062d3c36804"
+    },
+    {
+      "claim_id": "8deaf896-2fa7-4a86-bbc7-ea4d3a308f9b",
+      "result_id": "11e318dc-1dc3-462d-937e-d062d3c36804"
+    },
+    {
+      "claim_id": "281c56b8-306c-44a9-9951-5d37d9b86f19",
+      "result_id": "11e318dc-1dc3-462d-937e-d062d3c36804"
+    },
+    {
+      "claim_id": "7fb4ed7d-5996-48ec-92ae-420ee16f9824",
+      "result_id": "11e318dc-1dc3-462d-937e-d062d3c36804"
+    },
+    {
+      "claim_id": "e74aab4c-3bd8-408e-8a39-586197dbc772",
+      "result_id": "11e318dc-1dc3-462d-937e-d062d3c36804"
+    },
+    {
+      "claim_id": "a6393acd-0af5-4642-ab78-f697a4866c25",
+      "result_id": "11e318dc-1dc3-462d-937e-d062d3c36804"
+    },
+    {
+      "claim_id": "8cfc6bd9-a0bc-4f45-b342-1d78261e8fcd",
+      "result_id": "11e318dc-1dc3-462d-937e-d062d3c36804"
+    },
+    {
+      "claim_id": "5d321dc4-61f3-43a6-b970-226d4dae8f06",
+      "result_id": "11e318dc-1dc3-462d-937e-d062d3c36804"
+    },
+    {
+      "claim_id": "f615dd66-93bd-4442-b6f8-b407eb880a80",
+      "result_id": "11e318dc-1dc3-462d-937e-d062d3c36804"
+    },
+    {
+      "claim_id": "3df2e35d-c76c-410d-9527-9f1e50e25cf4",
+      "result_id": "11e318dc-1dc3-462d-937e-d062d3c36804"
+    },
+    {
+      "claim_id": "7edcf439-e59c-40b3-984f-e0f00534f78e",
+      "result_id": "11e318dc-1dc3-462d-937e-d062d3c36804"
+    },
+    {
+      "claim_id": "c676f54e-02d3-433c-b74f-7b03250c9f79",
+      "result_id": "11e318dc-1dc3-462d-937e-d062d3c36804"
+    },
+    {
+      "claim_id": "5034a7ff-b2cd-4643-8255-afb7ed347aea",
+      "result_id": "11e318dc-1dc3-462d-937e-d062d3c36804"
+    },
+    {
+      "claim_id": "7e0726ac-439e-44a4-ace6-91c47521974f",
+      "result_id": "11e318dc-1dc3-462d-937e-d062d3c36804"
+    },
+    {
+      "claim_id": "c2849281-0fa5-4968-945c-872a5ef96b96",
+      "result_id": "11e318dc-1dc3-462d-937e-d062d3c36804"
+    },
+    {
+      "claim_id": "f8f3524d-858a-4d33-9c5e-5db21f8a0787",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "f22dcbdd-d340-4969-a6a2-9f3c4623c731",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "8728407e-5539-44c4-b2a0-10173fd4acfc",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "12a05c4e-4b73-445e-ab43-21634515c56f",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "e5f4069e-5a8d-4c88-b567-a6a4b4e15ff4",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "823b2915-dd23-458f-9609-8c060bd8a4cc",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "53d6fb66-40eb-4708-877c-7e61408f6a42",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "224adf19-0688-439b-8489-a48da63f482c",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "ba93f526-5a91-4993-a434-6771931924de",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "31b7ea8e-156d-4485-ae64-760e594db4cd",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "7cae7b08-3932-459e-8010-6a3d77a7ec7f",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "6246ebe5-2cb1-4676-be84-5c2a98fa11c7",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "8e7fb653-bb80-4bbd-a77e-ade8296e9d19",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "a34cc402-b272-4902-9ff7-ad87d5ccf7a3",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "aaa03fc3-db38-4e69-a506-9a7851c8f349",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "4b8e1383-95a4-46eb-9047-437905639a6d",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "d5d212f2-4446-4b9f-a02a-6c449b25ea9d",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "36153e69-3dc0-42f0-b986-6edbefb97966",
+      "result_id": "f5481fad-7c7f-43d6-bcf8-493905d061c4"
+    },
+    {
+      "claim_id": "a948e0e9-af36-4cdf-bba4-9d00df93f32f",
+      "result_id": "661cc1e1-2dff-43c8-87b9-fe2c53dbe56f"
+    },
+    {
+      "claim_id": "fc8b35fc-7174-4d4f-8949-483ae4fda3e5",
+      "result_id": "661cc1e1-2dff-43c8-87b9-fe2c53dbe56f"
+    },
+    {
+      "claim_id": "1eae1ca2-403b-4524-b1ea-a179ca0a9b81",
+      "result_id": "661cc1e1-2dff-43c8-87b9-fe2c53dbe56f"
+    },
+    {
+      "claim_id": "050a0a67-053c-433b-b570-b9872bf288bc",
+      "result_id": "661cc1e1-2dff-43c8-87b9-fe2c53dbe56f"
+    },
+    {
+      "claim_id": "6fef6dd4-073f-492e-b2c2-0ffe016c33d2",
+      "result_id": "661cc1e1-2dff-43c8-87b9-fe2c53dbe56f"
+    },
+    {
+      "claim_id": "c94cdeae-f9d3-4a50-b5a8-e46df423e43e",
+      "result_id": "661cc1e1-2dff-43c8-87b9-fe2c53dbe56f"
+    },
+    {
+      "claim_id": "fa4b70a2-8014-4ef2-bfc4-f1998aadf586",
+      "result_id": "661cc1e1-2dff-43c8-87b9-fe2c53dbe56f"
+    },
+    {
+      "claim_id": "c8adc878-e13e-4ff4-ad9d-c1f79aa9edd6",
+      "result_id": "661cc1e1-2dff-43c8-87b9-fe2c53dbe56f"
+    },
+    {
+      "claim_id": "44a6cc5d-51ac-46ae-b171-ad917a020334",
+      "result_id": "661cc1e1-2dff-43c8-87b9-fe2c53dbe56f"
+    },
+    {
+      "claim_id": "555fcb47-3ab8-4664-974b-bc43cbc1f6bc",
+      "result_id": "661cc1e1-2dff-43c8-87b9-fe2c53dbe56f"
+    },
+    {
+      "claim_id": "89f6efd7-d872-433b-9af8-0f8cbe5a4ab7",
+      "result_id": "661cc1e1-2dff-43c8-87b9-fe2c53dbe56f"
+    },
+    {
+      "claim_id": "9795262c-f822-48a9-9832-18df14c2cea5",
+      "result_id": "661cc1e1-2dff-43c8-87b9-fe2c53dbe56f"
+    },
+    {
+      "claim_id": "b0f9fc4c-611d-4e49-9de4-fb93ed29c6fd",
+      "result_id": "661cc1e1-2dff-43c8-87b9-fe2c53dbe56f"
+    },
+    {
+      "claim_id": "c834ec12-0948-48aa-a172-d8f7d632e970",
+      "result_id": "661cc1e1-2dff-43c8-87b9-fe2c53dbe56f"
+    },
+    {
+      "claim_id": "d5b2bbea-ca50-4cd6-8c2d-18e36d94e830",
+      "result_id": "661cc1e1-2dff-43c8-87b9-fe2c53dbe56f"
+    },
+    {
+      "claim_id": "3286109a-0906-4329-a225-c7f32244881f",
+      "result_id": "08c160ea-7041-469d-b8fa-051d311cd73f"
+    },
+    {
+      "claim_id": "39b09808-a4bd-4ad4-bcf6-d8e1f7a31bbc",
+      "result_id": "08c160ea-7041-469d-b8fa-051d311cd73f"
+    },
+    {
+      "claim_id": "0ad62b75-d9b9-43b7-a694-219a59d814d7",
+      "result_id": "08c160ea-7041-469d-b8fa-051d311cd73f"
+    },
+    {
+      "claim_id": "bfa87813-68f0-44a2-9f6f-37ac53a97dd9",
+      "result_id": "08c160ea-7041-469d-b8fa-051d311cd73f"
+    },
+    {
+      "claim_id": "897a6235-b65b-4f4e-a110-0a35a0a88f74",
+      "result_id": "08c160ea-7041-469d-b8fa-051d311cd73f"
+    },
+    {
+      "claim_id": "156bf5b2-6daa-47f3-afb1-153f94444c7f",
+      "result_id": "08c160ea-7041-469d-b8fa-051d311cd73f"
+    },
+    {
+      "claim_id": "34cd578c-f208-4302-b732-5597856c251d",
+      "result_id": "08c160ea-7041-469d-b8fa-051d311cd73f"
+    },
+    {
+      "claim_id": "590df568-884d-4089-ba49-8a3a311f56b5",
+      "result_id": "83981aa8-0970-4d17-9a74-08e32ae0d43a"
+    },
+    {
+      "claim_id": "9cc257b3-890c-45f6-922a-b3ee09a11e61",
+      "result_id": "83981aa8-0970-4d17-9a74-08e32ae0d43a"
+    },
+    {
+      "claim_id": "d1cae9ab-646b-402a-b4c3-c7395f52a6a9",
+      "result_id": "83981aa8-0970-4d17-9a74-08e32ae0d43a"
+    },
+    {
+      "claim_id": "fcf42640-9c19-4f90-a8c1-3693c6d7b4b3",
+      "result_id": "250f2393-e82e-4025-b34e-778b04ba2f95"
+    },
+    {
+      "claim_id": "4ebf7847-0a95-4573-a9a9-db39664a4e0a",
+      "result_id": "250f2393-e82e-4025-b34e-778b04ba2f95"
+    },
+    {
+      "claim_id": "1059d39b-b2a9-47f5-9bfc-e0b336880767",
+      "result_id": "250f2393-e82e-4025-b34e-778b04ba2f95"
+    },
+    {
+      "claim_id": "34241301-903a-44c3-9666-39a42b9f5d29",
+      "result_id": "250f2393-e82e-4025-b34e-778b04ba2f95"
+    },
+    {
+      "claim_id": "f56a4083-c5b6-4e27-af41-c6ea6bd23904",
+      "result_id": "250f2393-e82e-4025-b34e-778b04ba2f95"
+    },
+    {
+      "claim_id": "87398aee-be4c-48d4-877a-ad6709053b06",
+      "result_id": "250f2393-e82e-4025-b34e-778b04ba2f95"
+    },
+    {
+      "claim_id": "97b6deb1-eef6-4cb4-ace5-cf80e0b38fe4",
+      "result_id": "f73449e3-37b4-4e4c-b761-a2791c611acd"
+    },
+    {
+      "claim_id": "a4ca40ac-f288-4dbd-9ee7-4cfbb3936f66",
+      "result_id": "f73449e3-37b4-4e4c-b761-a2791c611acd"
+    },
+    {
+      "claim_id": "c3e28589-85eb-4a41-9d7d-1edfae9deabd",
+      "result_id": "f73449e3-37b4-4e4c-b761-a2791c611acd"
+    },
+    {
+      "claim_id": "4701d3a3-73e1-4a72-8f89-96a2c4d2e7ec",
+      "result_id": "f73449e3-37b4-4e4c-b761-a2791c611acd"
+    },
+    {
+      "claim_id": "d6e527dd-e00f-47dc-89a7-b3bfa221f12f",
+      "result_id": "f73449e3-37b4-4e4c-b761-a2791c611acd"
+    },
+    {
+      "claim_id": "35797685-706d-430a-9134-b066034a767a",
+      "result_id": "f73449e3-37b4-4e4c-b761-a2791c611acd"
+    },
+    {
+      "claim_id": "e8f5206e-52d5-4958-b27e-bce714e1a812",
+      "result_id": "f73449e3-37b4-4e4c-b761-a2791c611acd"
+    },
+    {
+      "claim_id": "b3cf52b6-f997-45d0-91ba-bebd993ca9e4",
+      "result_id": "f73449e3-37b4-4e4c-b761-a2791c611acd"
+    },
+    {
+      "claim_id": "c39971cb-b81c-4cf9-9636-e7c3a6a13efc",
+      "result_id": "f73449e3-37b4-4e4c-b761-a2791c611acd"
+    },
+    {
+      "claim_id": "aa48aa7b-51c0-4499-b2cf-5bac753f3f97",
+      "result_id": "f73449e3-37b4-4e4c-b761-a2791c611acd"
+    },
+    {
+      "claim_id": "54dffc76-e6b8-469d-966c-c8b5005336fa",
+      "result_id": "f73449e3-37b4-4e4c-b761-a2791c611acd"
+    },
+    {
+      "claim_id": "b3c29197-9db0-4e97-9422-5e745e50cd00",
+      "result_id": "f73449e3-37b4-4e4c-b761-a2791c611acd"
+    },
+    {
+      "claim_id": "855649be-ab8b-47c7-a4d9-53d15662fe53",
+      "result_id": "f73449e3-37b4-4e4c-b761-a2791c611acd"
+    },
+    {
+      "claim_id": "edcb0f7c-3e2a-4f6b-9fcf-f7d115d29e4d",
+      "result_id": "18628d83-e64d-4797-8483-3ab177ef407a"
+    },
+    {
+      "claim_id": "63eadc16-5e98-4d93-8734-09621dbaa2a5",
+      "result_id": "18628d83-e64d-4797-8483-3ab177ef407a"
+    },
+    {
+      "claim_id": "7e521549-059b-42bc-a51b-65d25668ba4b",
+      "result_id": "18628d83-e64d-4797-8483-3ab177ef407a"
+    },
+    {
+      "claim_id": "c4934188-f6ad-41fd-a082-9474e3e3c35d",
+      "result_id": "18628d83-e64d-4797-8483-3ab177ef407a"
+    },
+    {
+      "claim_id": "c59f457c-7220-4ca1-b789-f95b382fc426",
+      "result_id": "18628d83-e64d-4797-8483-3ab177ef407a"
+    },
+    {
+      "claim_id": "6bad4652-385b-45a2-a6a2-7a5ee90e9f3d",
+      "result_id": "18628d83-e64d-4797-8483-3ab177ef407a"
+    },
+    {
+      "claim_id": "1757bb7d-44ea-4ebc-bd54-401c893e37b5",
+      "result_id": "18628d83-e64d-4797-8483-3ab177ef407a"
+    },
+    {
+      "claim_id": "e862cc99-6919-4256-9cda-ec384ac73255",
+      "result_id": "18628d83-e64d-4797-8483-3ab177ef407a"
+    },
+    {
+      "claim_id": "61efac4c-d6d9-42c8-be35-e377196b3dcd",
+      "result_id": "18628d83-e64d-4797-8483-3ab177ef407a"
+    },
+    {
+      "claim_id": "c50d1d97-1c2d-47ef-aba9-490411236e65",
+      "result_id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1"
+    },
+    {
+      "claim_id": "06e2e029-3770-4797-9b0d-a3636cfef619",
+      "result_id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1"
+    },
+    {
+      "claim_id": "0a794bdb-8b0d-434c-b847-992e8d914707",
+      "result_id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1"
+    },
+    {
+      "claim_id": "9dfd069e-ff6c-434e-8339-c9a8f00478f0",
+      "result_id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1"
+    },
+    {
+      "claim_id": "b3d68e14-55d0-46dd-9901-cfb297d38d59",
+      "result_id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1"
+    },
+    {
+      "claim_id": "db96f448-c68e-455a-ac16-1c5cb6ba703a",
+      "result_id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1"
+    },
+    {
+      "claim_id": "8eee7379-4e1e-402a-9a2f-08198e67bd07",
+      "result_id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1"
+    },
+    {
+      "claim_id": "bd506f1f-fbb5-49d6-84cd-2d9a6e9f44b8",
+      "result_id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1"
+    },
+    {
+      "claim_id": "45d44f28-b7c2-4048-857f-0824dbdde323",
+      "result_id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1"
+    },
+    {
+      "claim_id": "6e94d409-32b9-4133-8fd4-bbaf2473d139",
+      "result_id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1"
+    },
+    {
+      "claim_id": "097213e7-7b20-477c-b561-935fa3a510c5",
+      "result_id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1"
+    },
+    {
+      "claim_id": "8e483b4e-c669-44c6-8471-db4c06f354d7",
+      "result_id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1"
+    },
+    {
+      "claim_id": "3b38d023-e154-440b-9948-045cca291b70",
+      "result_id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1"
+    },
+    {
+      "claim_id": "14909fbe-7ce8-4680-9ddc-9aa744fda14b",
+      "result_id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1"
+    },
+    {
+      "claim_id": "bf9c47c2-7e2c-4145-89f2-0eb0fe9f32c4",
+      "result_id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1"
+    },
+    {
+      "claim_id": "1d5bc23f-1c5c-424a-ae00-4d31b35f9a76",
+      "result_id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1"
+    },
+    {
+      "claim_id": "8ecf454d-c3de-4374-a279-cb4cb327846e",
+      "result_id": "cd7fd201-e1ae-4852-b70b-c29172aa76a1"
+    }
+  ],
+  "comparisons": []
+}

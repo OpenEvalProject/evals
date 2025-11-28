@@ -1,0 +1,2222 @@
+{
+  "submission": {
+    "id": "0905194d-4185-4e90-b8fa-b3eac2413b07",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:21:00.833348Z",
+    "updated_at": "2025-11-28T22:21:00.833348Z"
+  },
+  "content": [
+    {
+      "id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "submission_id": "0905194d-4185-4e90-b8fa-b3eac2413b07",
+      "content_type": "manuscript",
+      "content_text": "# Temporal structure in associative retrieval\n\n## Authors\n\n- Zeb Kurth-Nelson<sup>1</sup> \u2020\n- Gareth Barnes<sup>1</sup>\n- Dino Sejdinovic<sup>3</sup>\n- Ray Dolan<sup>1</sup>\n- Peter Dayan<sup>3</sup>\n\n### Affiliations\n\n1. Wellcome Trust Centre for Neuroimaging University College London London United Kingdom\n2. Max Planck UCL Centre for Computational Psychiatry and Ageing Research University College London London United Kingdom\n3. Gatsby Computational Neuroscience Unit University College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nElectrophysiological data disclose rich dynamics in patterns of neural activity evoked by sensory objects. Retrieving objects from memory reinstates components of this activity. In humans, the temporal structure of this retrieved activity remains largely unexplored, and here we address this gap using the spatiotemporal precision of magnetoencephalography (MEG). In a sensory preconditioning paradigm, 'indirect' objects were paired with 'direct' objects to form associative links, and the latter were then paired with rewards. Using multivariate analysis methods we examined the short-time evolution of neural representations of indirect objects retrieved during reward-learning about direct objects. We found two components of the evoked representation of the indirect stimulus, 200 ms apart. The strength of retrieval of one, but not the other, representational component correlated with generalization of reward learning from direct to indirect stimuli. We suggest the temporal structure within retrieved neural representations may be key to their function.\n\n## Introduction\n\nAssociative memory in animals and humans provides a model of the environment. Retrieval of such memories, driven by cues or occurring autonomously, is suggested as central to a wide variety of processes and functions, including online and offline planning and model-learning (Sutton, 1991; Moore and Atkeson, 1993; Foster and Wilson, 2006; Johnson and Redish, 2007; Hasselmo, 2008; Lisman and Redish, 2009; Gupta et al., 2010; van der Meer et al., 2010; Jadhav et al., 2012; Wimmer and Shohamy, 2012; Pfeiffer and Foster, 2013; Singer et al., 2013), cognitive search (Kurth-Nelson et al., 2012; Todd et al., 2012; Morton et al., 2013), mental time travel (Hopfield, 2010; Schacter et al., 2012), memory maintenance and consolidation (Marr, 1971; N\u00e1dasdy et al., 1999; K\u00e1li and Dayan, 2004; Kuhl et al., 2012; Deuker et al., 2013) as well as temporal expectation (Sakai and Miyashita, 1991; Rainer et al., 1999).\n\nRetrieval is classically linked to reinstantiation of a particular distributed spatial pattern of neural activity mirroring that evoked by the original experience of the object or context being retrieved (Tulving and Thomson, 1973; Nyberg et al., 2000; Hoffman and McNaughton, 2002; Polyn et al., 2005; Johnson and Rugg, 2007; Gelbard-Sagiv et al., 2008; Danker and Anderson, 2010; Rissman and Wagner, 2012; Miller et al., 2013; Kuhl and Chun, 2014). However, electrophysiology experiments robustly demonstrate that when an object is directly experienced, the evoked pattern of neural activity evolves rapidly over tens to hundreds of milliseconds (Makeig et al., 1997; Schmolesky et al., 1998, 1998; N\u00e4\u00e4t\u00e4nen and Winkler, 1999; VanRullen and Thorpe, 2001; Rossion and Jacques, 2008; Schneider et al., 2008; Cichy et al., 2014). This implies that direct experience of an object evokes multiple distinct spatial patterns of neural activity in sequence. However, these distinct spatial patterns have never been identified independently at retrieval.\n\nAt retrieval, recent studies have explored the fast evolution of neural representation. EEG studies provide evidence that some information is retrieved as early as 300 ms following a cue (e.g., Johnson et al., 2008; Yick and Wilding, 2008; Wimber et al., 2012). Manning et al. (2011), (2012), using electrocorticography, and Jafarpour et al. (2014), using MEG, showed that oscillatory patterns are also reinstated during retrieval; in two of these studies the predominance of low oscillatory frequencies in reinstatement suggests a potential spectral signature.\n\nHowever, the dynamics of representation during direct experience of an object have never been tied to the dynamics of retrieval. It is not known which of the patterns evoked in sequence by direct experience are reinstantiated during retrieval, what the temporal relationship is in their retrieval, or what functional significance this has.\n\nRecent advances in multivariate methods for MEG have greatly improved our ability to discern fast-changing distributed representations in humans (Carlson et al., 2013; Cichy et al., 2014; Jafarpour et al., 2013, 2014; van de Nieuwenhuijzen et al., 2013; Sandberg et al., 2013). Here, we apply these methods to a simple sensory preconditioning task adapted from Wimmer and Shohamy (2012). Sensory preconditioning is a well-established paradigm in which subjects first form an association between two stimuli (\u2018direct\u2019 or Sd and \u2018indirect\u2019 or Si) and then form an association between the direct stimulus and a reward (Brogden, 1939). Generalization of value to the indirect stimulus is evidence of retrieving the learned association (Gewirtz and Davis, 2000). Using fMRI, Wimmer and Shohamy (2012) showed that neural representations of the associated indirect stimulus are reinstated when direct stimuli are presented during the Reward-learning phase, and this retrieval is linked to the generalization of value from direct to indirect stimuli. This suggests that reinstatement through the learned associative link may be part of the mechanism for value updating. Our aim here is to explore the temporal structure of this reinstatement, which may help to shed light on the mechanisms of value updating as well as providing general insight into the dynamics of representations during retrieval.\n\nWe therefore examined retrieval in the same paradigm, using MEG to gain temporal precision. We show that the neural representation of the indirect stimulus can be decomposed into at least two temporal components with distinct properties, and these are retrieved at different times during the Reward-learning phase. The retrieval of only one of these components is correlated with a behavioral measure of the generalization of value across the learned associations.\n\n## Results\n\n### Behavior\n\nWe used a slightly modified version of the behavioral task employed by Wimmer and Shohamy (2012). This involved three phases (Figure 1A). In the Association phase, subjects watched visual stimuli appearing sequentially at the center of the screen. The stimuli alternated between photographs (\u2018Si\u2019) and circular fractals (\u2018Sd\u2019), with a short blank fixation interval between each stimulus. Each Si came from one of three categories (face/body/scene), and each unique Si was deterministically followed by a unique Sd, thus establishing a pairing between Si and Sd images. As in Wimmer and Shohamy (2012), debriefing revealed that subjects were not aware of the Si\u2013Sd pairings. There were two unique Si in each category; making for a total of six unique Si and six unique Sd stimuli used for later phases (along with six additional unique Si and six additional unique Sd that functioned as dummies for the Association phase cover task and were included in the imaging analysis).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04919/elife-04919-fig1-v1.jpg)\n\n**Figure 1.:** Subjects participated in a sensory preconditioning task comprising three phases: Association, Reward and Decision. (A) In the Association phase, subjects were exposed to pairs of stimuli (presented sequentially). One member (called Si) of each pair was taken from one of three classes (faces, bodies, and scenes); the other member (Sd) was a fractal. In the Reward phase, some of the fractals (labelled Sd+) were paired with reward; the others (labelled Sd\u2212) were not. Through the pairing, this implicitly established a separation between Si+ and Si\u2212. In the Decision phase, subjects chose between Si+ and Si\u2212 within the same category, or between Sd+ and Sd\u2212. All photos shown are from pixabay.com and are in the public domain. (B) In the Decision phase, subjects displayed a strong preference for Sd+ over Sd\u2212 (p = 6.9 \u00d7 10\u22124, one-sample t-test). There was no preference at the group level for Si+ over Si\u2212, but we exploited the variability between subjects for value-related analyses. The change in relative liking from before to after the experiment was more positive for Sd+ than Sd\u2212 (p = 0.04, one-sample t-test); but there was no significant difference between the changes for Si+ and Si\u2212. Bar heights show group means and dots show individual subjects. Error bars show standard error of the mean.\n\nIn the Reward phase, of the two Sd images associated with a category of Si images, one, which we therefore call Sd+ was followed by a reward on 14 out of 18 presentations (and otherwise by a neutral outcome, a blue square); the other, which we call Sd- was always followed by a neutral outcome. By virtue of the prior pairing, this established an Si+ and Si\u2212 for each category.\n\nIn the Decision phase, subjects were faced with pairwise choices between an Si+ and an Si\u2212, or an Sd+ and an Sd\u2212. The two items always had the same category (face/body/scene) for Si, or associated category for Sd. Subjects exhibited a strong preference for Sd+ over Sd\u2212 (p = 6.9 \u00d7 10\u22124), but as a group showed no evidence of preferring Si+ over Si\u2212 (p = 0.9) (Figure 1B).\n\n### Distinct temporal components of neural object representation\n\nNeural activity was recorded by magnetoencephalography (MEG) during all three phases. We first explored where in space and time the MEG signal carried information about the Si stimuli being presented in the Association phase. Using one-way ANOVA, we found that the raw amplitude, in single time bins, of the event-related field (ERF) at many individual sensors was significantly related to the Si category (Figure 2). (The significance threshold was set to 95% of peak-level over space and time from 100 random category label shuffles, to correct conservatively for multiple comparisons.)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04919/elife-04919-fig2-v1.jpg)\n\n**Figure 2.:** Sensors became category-discriminative in two waves. (A) The first time, relative to stimulus onset, when the relationship between ERF amplitude and category membership became significant by ANOVA (significance threshold set at 95% of peak-level (across all sensors and all time) log10(p) of 100 shuffles) at each of 275 sensors. Many occipital and temporal sensors first became predictive of Si category between 90 and 230 ms post stimulus onset, followed by some parietal and frontal sensors ranging from 330\u2013550 ms post stimulus onset. Open circles indicate the sensors that never reached 95% peak-level. (B) Histogram of how many sensors first became significantly discriminative at each time following stimulus presentation.\n\nNext, we built a multivariate linear SVM classifier, which combined the reports of multiple sensors (Figure 3A). As in many previous studies (cf. Norman et al., 2006; Cichy et al., 2014), the extra sensitivity achieved by combining multiple features supported the use of multivariate analysis to track neural representations (Figure 3\u2014figure supplement 1). We constructed null distributions at each time bin by repeating this procedure 100 times with randomly shuffled category labels. At 200 ms post-stimulus, the 95th percentile of the null distribution was 35.0% accuracy, and the median was 33.7% (deviating from 1/3rd only due to the finite number of shuffles).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04919/elife-04919-fig3-v1.jpg)\n\n**Figure 3.:** (A) Multivariate decoding performed well to predict the category of photograph (Si) in the Association phase. Cross-validated linear SVM prediction accuracy using all 275 sensors at each time bin is shown. A pattern of two distinct peaks in classifier accuracy around 200 ms and 400 ms after Si onset is evident. (B) At 200 ms after Si onset, there was no difference in representational similarity between same-category and different-category Si objects (left panel, p = 0.2 by t-test between subjects). At 400 ms, representational similarity was higher for same-category than different-category objects (right panel, p = 5 \u00d7 10\u22127). F1\u2013F4, B1\u2013B4 and S1\u2013S4 refer to the unique faces, bodies and scenes presented during the Association phase. (C) When discriminating fractal identity (i.e., a 6-way classification problem of stimuli with no natural categories), performance was sharply peaked before 200 ms after fractal onset. Shaded area shows standard error of the mean.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04919/elife-04919-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** We tested the capacity of the most discriminative single sensor (selected separately for each subject) to predict the Si category, using linear support vector machines (SVM) with a single feature. The accuracy of this univariate classifier peaked at 47.4 \u00b1 1.3% in cross-validation (red trace). (When using a nearest-mean univariate classifier rather than a univariate SVM, accuracy peaked at 45.6 \u00b1 1.9%.) We constructed independent null distributions at each time bin by repeating this procedure 100 times with randomly shuffled category labels. At 200 ms post-stimulus, the median of the null distribution was 37.0% accuracy (greater than 1/3rd due to allowing the best sensor for each subject), while the 95th percentile of the null distribution was 38.6%. Blue line shown is multivariate SVM performance, from Figure 3A, for comparison.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04919/elife-04919-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Classification accuracy in predicting Si category in Association phase for individual subjects. (B) We fit regression models to each subject's accuracy curve (between 200 ms and 400 ms), with constant, linear, and quadratic terms. This histogram shows the estimated betas on the quadratic term. Positive beta indicates positive curvature of the accuracy curve between 200 ms and 400 ms. No individual subject reached Bonferroni-corrected significant betas on the quadratic term of the regression.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04919/elife-04919-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Compare to SVM applied to the same classification problem in Figure 3B, blue trace.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/04919/elife-04919-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** At the time of outcome, there was a strong neural representation of the identity of the outcome itself (the coin or blue square). Together with Figure 3D, this suggests that the neural signal at time of Sd and outcome strongly encoded a representation of the on-screen stimulus.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/04919/elife-04919-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Here we trained classifiers on every time bin relative to the onset of Si in the Association phase, and tested at every time bin relative to the same onsets. For this figure we binned the data into 8 ms bins rather than the 20 ms bins used in the rest of the paper. Each cell of this grid shows cross-validated prediction accuracy, so the diagonal is equivalent to Figure 3B, blue trace (except that this figure has finer temporal binning). Later classifiers generalized better over time than earlier classifiers. We note the possibility that the 200 ms peak of classification might be decomposed into further sub-peaks (white and black arrows); however, we were unable to statistically separate these sub-peaks, due to variability between subjects. The peak at 400 ms is evident (blue arrow). Absolute classification accuracy is lower than with more coarsely binned data, likely due to a poorer signal to noise ratio.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/04919/elife-04919-fig3-figsupp6-v1.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Image types varied in low-level visual properties as well as shape. The methods we used are agnostic as to the kinds of features that drove the neural representation of category.\n\nWe observed two distinct peaks in multivariate classification performance, one centered approximately around 200 ms and the other around 400 ms post-stimulus onset. Although these peaks had measurable width, for simplicity, we will henceforth refer to them as \u2018200 ms\u2019 and \u2018400 ms\u2019. To test more formally for two distinct peaks in classification, we asked whether there was significant concavity in the evolving classification accuracy in the interval from 200 to 400 ms, by regressing the classification accuracy against linear and quadratic functions of time. At the group level, the quadratic term was significantly different from zero (p = 0.02). We also performed this regression on the accuracy curves from individual subjects; many subjects trended toward a positive quadratic term, but none reached significance at a Bonferroni-corrected threshold (Figure 3\u2014figure supplement 2). Finally, to rule out any peculiarities in the SVM algorithm being responsible for two distinct peaks in classification accuracy, we also repeated the same analysis at the group level with a variety of nearest-mean classifiers and found the same pattern (Figure 3\u2014figure supplement 3).\n\nGiven past observations and ideas about separate post-stimulus phases encoding qualitatively different kinds of stimulus information (Schmolesky et al., 1998; Lamme and Roelfsema, 2000; Riesenhuber and Poggio, 2000; Engel et al., 2001; Bar, 2003; Cichy et al., 2014), we asked if these two peaks had different representational similarity structure. We calculated representation similarity matrices (Kriegeskorte et al., 2008), which reflect the similarity in activation patterns between each pair of unique stimuli. We found that at 200 ms, the activity patterns evoked by stimuli within a category were no more similar than those evoked by stimuli in different categories (Figure 3B, left panel; p = 0.2, paired t-test between subjects); whereas at 400 ms, patterns within a category were substantially more similar than between categories (Figure 3B, right panel; p = 5 \u00d7 10\u22127). This is consistent with the idea that the dominant coding of stimulus information changes between 200 and 400 ms.\n\nFurther supporting the idea that the later component of the ERF had a relatively more dominant coding of categorical information, we found that the cross-validated performance of a linear SVM in a 6-way discrimination of fractal identity was sharply peaked at 160 ms post-stimulus onset, and lacked a substantial second peak (Figure 3C). We note that a shift in the timing of the early peak from \u223c200 ms to \u223c160 ms could be consistent with previous observations (Bobak et al., 1987; Cichy et al., 2014) that the precise timing of each wave of representation is sensitive to the particular stimuli concerned.\n\n### Sd elicits retrieval of associated Si representation\n\nDuring the Reward phase, Sd (fractals) and outcomes (coin/blue square) were presented. We confirmed it was possible to predict the identity of fractals (cf. Figure 3C) and outcomes (Figure 3\u2014figure supplement 4) reliably based on the MEG signal. However, the main intention of our study was to examine whether the activity evoked by these stimuli contained information about the Si stimulus with which the Sd had been associated. To this end, we trained classifiers on neural responses to Si in the Association phase (exactly as above, but using all trials because cross-validation was not necessary), and tested these classifiers on neural responses elicited in the Reward phase when Sd was presented. The classifier was considered to be correct if it reported the category label of the Si that had previously been paired with this Sd. We performed this train-on-Si, test-on-Sd procedure for every pair of times relative to the onsets of Si (in the Association phase) and Sd (in the Reward phase), leading to a 2-D grid of classification accuracies (Figure 4A). These 2-D grids were then smoothed with a 2-D Gaussian kernel (\u03c3 = 30 ms).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04919/elife-04919-fig4-v1.jpg)\n\n**Figure 4.:** During the Reward phase, the 200 ms component of the Si representation was retrieved for an extended period from shortly after Sd was presented, while the 400 ms component of Si representation was retrieved around the time the outcome was presented. (A) Classifiers trained around 200 ms after Si presentation in Association phase and tested around 400 ms after Sd presentation in Reward phase decode the object category previously associated with the Sd. Photo is from pixabay.com and is in the public domain. (B) Classifiers trained around 400 ms after Si presentation and tested 70 ms after outcome presentation decode the object category previously associated with the Sd. In A and B, black outlines show p = 0.05 peak-level significance thresholds (empirical null distribution generated by 1000 random permutations of training category labels, see Methods for more details). (C) Peak classification accuracy in the 200 ms and 400 ms rows of A and B. By 2-way ANOVA, there was no main effect of 200 ms vs 400 ms or of Sd vs outcome, but there was a significant interaction (p = 0.04). Error bars show standard error of the mean.\n\nWe observed that the classifiers trained around 200 ms post-Si presentation achieved above-chance accuracy in predicting which Si category had previously been associated with the presented Sd (the 95th percentile of the peak-level achieved in 200 random shuffle tests is shown as a solid black line in each panel). This effect was above chance from 270\u2013530 ms following presentation of Sd. In other words, the spatial pattern of brain activity present 200 ms after presentation of Si in the Association phase was partially reinstantiated 270\u2013530 ms after presentation of Sd in the Reward phase. Note that the randomization of Si\u2013Sd pairings across subjects makes exceedingly unlikely the possibility that some visual features of Si happen to be shared with the associated Sd and might therefore carry a shared neural signature.\n\nWe also applied the same set of classifiers to the activity evoked by presentation of outcome (coin or neutral blue square) that followed each Sd in the Reward phase. The classifiers trained around 400 ms after Si achieved above-chance accuracy in predicting the Si category previously associated with the Sd presented on this trial (Figure 4B). This effect was strongest at 70 ms following presentation of the outcome, meaning that the spatial pattern of activity present 400 ms after presentation of Si in the Association phase was at least partially reinstantiated 70 ms after presentation of the outcome in the Reward phase. Since the outcome always appeared 3500 ms after Sd in each trial, 70 ms after presentation of outcome was equivalently 3570 ms after presentation of Sd. Since all the information necessary to retrieve Si was carried by Sd, some of the retrieval process might occur before onset of the outcome.\n\nTwo-way ANOVA revealed no significant main effects of 200 ms vs 400 ms or Sd vs outcome but a significant interaction (p = 0.04; Figure 4C). That is, the peak accuracy following Sd was higher for the 200 ms than the 400 ms classifier, while the peak accuracy following outcome was higher for the 400 ms than the 200 ms classifier, implying a double dissociation in the component that was more strongly retrieved at Sd vs outcome. Both forms of cross-classification were very much less accurate than (linear) classification of the identity of the Sd (fractals) or outcome (coin/blue square) from the activity directly evoked by these stimuli (cf. Figure 3C and Figure 3\u2014figure supplement 4).\n\nTo investigate which MEG sensors carried retrieved information, we again trained classifiers on Si-evoked data and tested on Sd\u2013 or outcome-evoked data (i.e., cross-classification). However, rather than using all 275 sensors, we repeated the procedure for 2000 iterations using a different random subset of 50 sensors each time. To investigate the retrieval identified in Figure 4A,B, we restricted analysis to 60 \u00d7 60 ms temporal ROIs centered on the peaks of cross-classification in Figure 4A,B, and averaged over these temporal ROIs. For each sensor, each iteration of this procedure thus yielded a single classification accuracy. We could then calculate how accurate the cross-classification was on average when a given sensor participated in classification. The average of these data across subjects are shown in Figure 5, separately for Sd- and outcome-evoked data. To test whether these spatial patterns were significantly different, we again used a linear SVM with cross-validation to predict whether each pattern originated from Sd\u2013or outcome-evoked data. Each pattern was mean-subtracted to avoid any trivial classification based on overall higher cross-classification performance for Sd- than outcome-evoked data. Prediction accuracy reached 71.2%, which was greater than chance by one-tailed binomial test (p = 0.002).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04919/elife-04919-fig5-v1.jpg)\n\n**Figure 5.:** To explore which brain areas carried the information about Si that was retrieved at the time of Sd and outcome, we copied the procedure of training linear category classifiers on presentation of Si, and predicting the category at the time of Sd or outcome\u2014but instead of using all 275 sensors, we repeated the analysis 2000 times using subsets of 50 sensors randomly selected on each iteration. The contribution of sensor s was taken to be the mean of all prediction accuracies (within 60 \u00d7 60 ms temporal ROIs containing the peak time bins) achieved using an ensemble of 50 sensors that included s. Intriguingly, the information about the category of Si retrieved at the time Sd was presented emerged primarily from occipital sensors (A), while the information about the category of Si retrieved at the time the outcome was shown appeared more strongly in parietal and temporal sensors (B). In the difference between the two conditions, no individual sensor survived correction for multiple comparisons. However, a linear SVM was reliably able to classify whether a spatial pattern belonged to Sd or outcome (71.2% accuracy, p = 0.002 by one-sided binomial test against chance classification).\n\n### Preference for Si+ is correlated with retrieval of stimulus-specific representation at outcome time\n\nFinally, we were intrigued by the apparent retrieval of only the late (400 ms) and not the early (200 ms) component of the Si representation during outcome presentation. The representational similarity analysis in Figure 3B suggested that this 400 ms component might preferentially encode stimulus category. Thus, we speculated the value of the associated Si category, rather than the value of a particular Si stimulus, might be updated when the outcome appears. This could provide a potential explanation for the lack of group-level behavioral preference for Si+ over Si\u2212 during the subsequent Decision phase, since each Si category contained both an Si+ and an Si\u2212, with equal presentations. This hypothesis predicts that, although at the group level there might be no significant retrieval of the 200 ms component of Si representation during outcome presentation, the subjects who did retrieve the 200 ms component of Si might have a positive preference for Si+ over Si\u2212. (Meanwhile, a preference for Si\u2212 over Si+ should be unrelated to retrieval.) We therefore plotted the correlation between behavioral preference and accuracy of Si-trained classifier in predicting the associated category of the Sd stimulus presented on this trial. This analysis was split according to whether subjects preferred Si\u2212 over Si+ (Figure 6A) or Si+ over Si\u2212 (Figure 6B). Remarkably, in subjects preferring Si+ over Si\u2212, reinstatement of the 200 ms component of Si was strongly correlated with behavioral preference. Shuffling subject identities yielded a null distribution of peak log10 p-values for the correlation of classifier accuracy with behavioral preference. The 400 ms classifier showed no substantial positive correlation with behavioral preference (Figure 6C), while the 200 ms classifier showed a corrected-significant peak in correlation strength \u223c400 ms after the onset of the outcome (Figure 6D). The raw data driving these correlations are also shown in Figure 6E,F.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04919/elife-04919-fig6-v1.jpg)\n\n**Figure 6.:** At the group level, only the 400 ms component was significantly retrieved at the time of outcome (cf. Figure 4B). However, at the single-subject level, the degree of retrieval of the 200 ms component correlated with value updating. As in Figure 4B, the accuracy of classifiers trained at each time bin around Si (in the Association phase) was tested at each time bin around the time of outcome (in the Reward phase) to predict the category of the Si associated with the Sd preceding the outcome. In each time*time bin, this accuracy was regressed, across subjects, against the behavioral preference for Si+ over Si\u2212 from the Decision phase (i.e., P(Si+)). As we only explored positive correlations, one-tailed log10 p-values of the regression are reported. (A) In subjects who preferred Si\u2212 over Si+, there were no correlations between the degree of preference and the degree of reinstatement of Si at outcome. (B) In subjects who preferred Si+ over Si\u2212, there was a strong correlation between the degree of preference and the degree of reinstatement. This correlation peaked at around 400 ms after outcome onset. (C, D) Red and blue traces show single rows of panels A and B at 200 and 400 ms. Significance was tested by randomly shuffling subject identities to obtain a null distribution of peak-level log10 p-values. Thresholds are shown at 95% of the null distribution of the peak-level of 200 and 400 ms rows, and at 95% of the null distribution of peak-level of all rows. (E, F) Raw classification accuracies underlying the correlations in A\u2013D, when training at 200 ms after Si onset and testing at 400 ms after outcome onset. Each point is a subject.\n\n## Discussion\n\nWe used a sensory preconditioning paradigm to explore the temporal structure of the retrieval of representations through associative links. We found that presenting photographs (Si, in three categories) elicited an evolving representation with two temporally distinct components: one around 200 ms and the other around 400 ms after stimulus onset. The earlier component was reinstated when a fractal (Sd) previously paired with the Si was presented. The later component was reinstated when a rewarding or neutral outcome was presented following Sd. Although at the group level there was no significant reinstatement of the earlier component at the time of outcome, between subjects the degree of reinstatement of this earlier component correlated with the degree of subsequent value generalization.\n\nOur results fit comfortably with the large body of literature showing that retrieval (which is notably unconscious here and in Wimmer and Shohamy, 2012, as contrasted with conscious retrieval that is more commonly studied) induces reinstantiation of at least some aspects of the pattern of neural activity evoked by the original presentation. For instance, in the fMRI study whose design we copied (Wimmer and Shohamy, 2012), univariate methods were used to show the equivalent of Si category retrieval during the Reward phase. Equally, ERP studies have found neural signals as early as 300 ms following a retrieval cue that are different depending on which information is retrieved or whether the information is retrieved (Johnson et al., 2008; Yick and Wilding, 2008). Further, using MEG, Jafarpour et al. (2014) identified reinstatement of a pattern of oscillatory activity appearing approximately 180 ms following presentation of the retrieved item. This pattern was reinstated approximately 500 ms following the retrieval cue, slightly later than the 400 ms we observed.\n\nMultivariate pattern analysis provides a much more powerful microscope than traditional univariate analysis for detecting distributed patterns encoding neural representations (Norman et al., 2006). Combining MVPA with MEG enables tracking the fast time-evolution of these representations (Schmolesky et al., 1998; Jafarpour et al., 2013; Cichy et al., 2014). Using these methods we have extended previous findings on retrieval to now establish a mapping between the dynamics of object representation and the dynamics of retrieval in this behavioral paradigm.\n\nWe identified two temporal components of object representation that were retrieved at different times. The earlier component of Si representation, which appeared roughly 200 ms following Si presentation, was first detectable 270 ms following presentation of Sd. This is consistent with past ERP studies showing similar timing, which have been taken as suggesting that reactivation is mediated by hippocampus (Bosch et al., 2014). The prolongation of this representation from 270\u2013530 ms may represent averaging (over trials or subjects) of temporally abrupt retrievals, or a sustained information retrieval.\n\nBy contrast, the late component of Si representation re-appeared 70 ms following outcome presentation. The outcome did not provide any additional information about Si category, so the representation of Si must have been sustained in some form through the (fixed) delay between Sd and outcome. This raises questions such as where the information about Si was held during the delay, and what are the implications of this timing. For the former, we were only able to detect a representation of Si when it took the form of a spatial pattern of activity mirroring the pattern at presentation of Si. Thus information might have been online in the activity of, for instance, prefrontal neurons (Fuster, 2001; Wang et al., 2006), but in a different form from that inspired by Si itself (Sakai and Miyashita, 1991; Rainer et al., 1999). Alternatively, it might have been stored in short-term synaptic weight changes (Hempel et al., 2000; Seung, 2003; Florian, 2007; Mongillo et al., 2008).\n\nSupporting the idea of these \u223c200 ms and \u223c400 ms components as distinct representational periods, we note the following. First, there was a decrease in classification accuracy between these periods. Second, classifiers trained on one epoch had low accuracy in the other epoch (Figure 3\u2014figure supplement 5), suggesting information about the stimuli was coded differently between epochs. Third, the epochs had different similarity structure with respect to the stimulus categories (Figure 3B). Fourth, the patterns from the two epochs were doubly dissociated in terms of their retrieval at Sd vs outcome (Figure 4), while the time period between the two peaks (i.e., around 300 ms post-stimulus) was not strongly retrieved either at Sd or outcome (Figure 4).\n\nIn terms of timing, the relatively precise epoch of retrieval of Si following the presentation of the outcome may reflect the point of strongest overlap between a variety of timings in individual subjects. Alternatively, it may be that a representation that is latent became detectable as soon as more power arose in the visual-evoked ERF due to onset of the outcome. Yet another possibility is expectations of the next stimulus partly drive representations in the first 10 s of milliseconds after a visual onset, before the present stimulus is processed.\n\nThe low accuracy in classifying retrieved representations (\u223c35%) compared to evoked responses (\u223c60%) might imply that retrieved representations (perhaps especially those that subjects are not consciously aware of) were weak compared to evoked representations. It is also possible that Si representations were only retrieved on a subset of trials, weakening the average signal. Finally, it is possible that retrieved representations had a distributed spatial pattern that was only partly overlapping with the evoked representation, making it more difficult to detect with pattern classifiers trained on evoked activity.\n\nWe exploited the distinct temporal components of retrieval to help elucidate the neural underpinnings of value generalization through associations. In both our study and in the similar design of Wimmer and Shohamy (2012), behavioral evidence of sensory preconditioning rests wholly on stimulus-specific retrieval (since the rewards associated with each category are balanced). If the 400 ms component of Si representation preferentially encodes information about category rather than specific stimuli, as suggested by our representational similarity analysis, retrieval of solely this component at outcome time might cause value learning to be assigned to categories rather than individual stimuli. This hypothesis would explain our finding that the subjects who retrieve the 200 ms component at outcome show behavioral evidence of sensory preconditioning. Under this interpretation, the correlation that Wimmer and Shohamy found in BOLD between retrieved stimulus representations and behavior between subjects may also have been driven by the 200 ms component of the stimulus representation; these temporally precise signals could not be distinguished using fMRI. Although the particular representations online at the time of reward were probably driven by quirks of this task design (since other sensory preconditioning experiments have found robust group-level preference for Si paired with rewarded Sd (e.g., Seidel, 1959)), the finding is of general importance because it suggests that the exact timing of reward relative to fast-evolving neural representational structures is crucial to value updating and credit assignment.\n\nLike Wimmer and Shohamy (2012), we have compared a behavioral value generalization measure against the output of a neural classifier trained on the category of Si, rather than the identity of an individual Si. The latter would give a more direct test of the idea that subjects who retrieve a representation of the specific Si paired with the particular Sd viewed on this trial drive larger value updates. Although it is in principle possible to train a classifier to distinguish between individual exemplars of an Si category, this did not reach a sufficiently high level of performance in our hands, perhaps limited by the relatively small number of training samples per unique stimulus. Future experiments could also employ Si+ and Si\u2212 stimuli that are more neurally distinguishable.\n\nWe noted in the \u2018Introduction\u2019 a large number of proposals for the use of associative information both at the time of decision (online) or when a decision is not imminent (offline). Offline and online processes may share similar mechanisms (Doll et al., 2014), and in some cases the division between offline and online mechanisms is blurred. For example, retrieving elements of past experiences may serve as part of the process of planning in advance for the next time related situations are encountered (Dragoi and Tonegawa, 2011, 2013), similar to the psychological notion of implementation intentions (Gollwitzer, 1999).\n\nSome theoretical methods (e.g., the successor representation (Dayan, 1993) and beta-models [Sutton, 1995]) shift a portion of the burden of online calculations using offline updates to carefully structured representations. In sensory preconditioning, it is an open question whether generalized values are updated offline (either during the Reward phase or in between the Reward and Decision phases), retrieved through associative links at the time of decision, or a mix of both. In animals the vulnerability of sensory preconditioning to extinction (Gewirtz and Davis, 2000) hints at an online mechanism, but it is equally possible that extinction drives offline value updates through the same generalization mechanism as acquisition. Indeed, although our description of the reinstatement of Si suggests that it arises through a distinct process of retrieval, we cannot distinguish this from the subtly different possibility hinted by these ideas that the representation of Sd changed through the associative learning so that it more closely resembles that of Si.\n\nIn animals, the temporal structure of retrieval appears to subserve complex memory (Sirota et al., 2003; Schwindel and McNaughton, 2011), learning and decision-making processes, especially in hippocampus and hippocampal\u2013cortical interactions. Rodents retrieve representations of past and future locations, actions, and rewards (Johnson and Redish, 2007; van der Meer et al., 2010; Steiner and Redish, 2014); the timing of this retrieval is tightly structured and likely encodes critical information in the decision-making computation. In humans, frontal theta power (Hsieh et al., 2011) and patterns of activity in hippocampus (Ezzyat and Davachi, 2014; Hsieh et al., 2014) are implicated in coding temporal order within sequences of stimuli. Applying methods from the present work could be useful to establish a finer grained map of the representations used in complex memory and decision processes.\n\nImportant to understanding the retrieval dynamics in this behavioral paradigm is the shift we observed in the dominant coding of information in evoked responses from 200 ms to 400 ms post-stimulus. Information in the visual system up to 200 ms post-stimulus may hew closely to the form of the stimulus that was presented (Tanaka and Curran, 2001; VanRullen and Thorpe, 2001; Liu et al., 2002; Schiff et al., 2006; Rossion and Jacques, 2008). This is consistent with our finding that spatial patterns of activity evoked by different exemplars within a category were relatively distinct and that individual fractals were better classified at this time bin. Conversely, brain activity later than 200 ms post-stimulus is often found to include contextual and other sources of information (Kok, 2001; Tsivilis et al., 2001; Schiff et al., 2006; Garrido et al., 2007; Sanguinetti et al., 2014). In particular, the N400 component of the event-related potential (ERP) in EEG extends from roughly 250\u2013500 ms post-stimulus and appears to be driven at least partly by the medial temporal lobe, which is functionally coupled to sensory cortices (Bar, 2004). The N2pc component of the ERP, which occurs earlier from roughly 200\u2013300 ms post-stimulus, has also been tied to contextually-sensitive processing (Conci et al., 2006; Schiff et al., 2006), and originates from lateral temporal and parietal sources (Hopf et al., 2000; Oostenveld et al., 2001). Although information about the category of our stimuli is directly available in their visual form, one interpretation of our observation of more consistent category information at 400 ms is that this reflects such contextually-sensitive processing happening based on lateral and top-down functional connections (MacKay and Bowman, 1969; Rao and Ballard, 1999; Ullman, 2000; Engel et al., 2001; Bledowski et al., 2006; Garrido et al., 2007; Friston and Kiebel, 2009; Kourtzi and Connor, 2011).\n\nFinally, we note that timing of event-related signals depends strongly on stimulus properties (e.g., Bobak et al., 1987). Multivariate classification also yields different timings in the peaks of classification depending on the specific kinds of categories evaluated (Cichy et al., 2014). Thus the particular temporal structure of evoked responses is most likely specific to the stimuli used. Mapping this structure for a given task and stimuli can be leveraged to probe the dynamics of retrieval.\n\nIn summary, neural retrieval of representations through associative links is central for memory and decision-making. Here we provide evidence that the dynamical structure within retrieval is functionally relevant for value-guided decision making. Analyzing the fine temporal structure of representations also increases the potential for studying temporally rich retrieval processes such as replay and planning in humans, which were previously confined to animal recordings.\n\n## Materials and methods\n\n### Subjects\n\nTwenty-nine adults participated in the experiment, recruited from the UCL Institute of Cognitive Neuroscience subject pool. Three were excluded before the start of analysis for large movement or myographic artifacts. Of the 26 remaining, age quartiles were 18.7, 19.5, 21.3, 26.7, 41.4 years; 14 were female, and 1 was left-handed. All participants had normal or corrected-to-normal vision and had no history of psychiatric or neurological disorders. All participants provided written informed consent and consent to publish prior to start of the experiment, which was approved by the Research Ethics Committee at University College London (UK), under ethics number 1825/005.\n\n### Task\n\nParticipants performed three phases of a simple behavioral task (copied almost exactly from Wimmer and Shohamy, 2012; but with timings set to be faster for MEG) designed to induce and measure sensory preconditioning. The task was coded in Cogent (Wellcome Trust Centre for Neuroimaging, United Kingdom), running in MATLAB 7.14 (Mathworks, Natick, Massachusetts).\n\nBefore the experiment, participants rated 78 images, one at a time, using a visual analog scale to indicate how much they subjectively liked each image, ranging from \u2018Strongly Dislike\u2019 to \u2018Strongly Like\u2019. These images consisted of 60 photos (20 faces, 20 body parts, 20 scenes), and 18 fractals. Luminance and contrast varied between images (Figure 3\u2014figure supplement 6). Four of each photo category and 12 fractals were then selected to be used in the experiment. For each subject we chose the stimuli whose liking ratings were closest to neutral; different subjects therefore saw different images in the experiment.\n\nIn the first (\u2018Association\u2019) phase of the experiment, each of the 12 selected photos (\u2018Si\u2019, indirect stimuli) were deterministically paired with a different fractal pattern (\u2018Sd\u2019, direct stimuli). Two of each Si category were \u2018dummies\u2019 for the cover task, and two were \u2018real\u2019 stimuli. Subjects viewed Si and Sd images sequentially while performing a cover task of pressing one button in response to rightside-up images and a different button for upside-down images, with the button response mapping randomized across subjects. Dummies had a 50% chance of being upside-down, and real stimuli were never upside-down. Dummies were not presented in subsequent phases. In each trial, subjects saw an Si for 1750 ms, followed by an interstimulus-interval (ISI) of 1000 ms, followed by the paired Sd for 1750 ms, followed by an intertrial-interval (ITI) of 2500 ms. Every nine trials, each of the six real Si stimuli was presented once, and one of each of the dummy Si stimuli in each category was presented once (both reals and dummies were always followed by the paired Sd). The order was randomly permuted over every 9 trials, and this was repeated 12 times, for a total of 108 trials. In debriefing at the end of the experiment, no subject reported being aware of any pairing between Si and Sd indicating the effectiveness of the cover task; the Si\u2013Sd association was implicit. No subject reported being aware that the dummies did not appear in later phases.\n\nIn the second (\u2018Reward\u2019) phase, subjects were taught that some of the fractals (Sd+) were worth money, while others (Sd\u2212) were not. In each conditioning trial, subjects saw an Sd for 2000 ms, followed by an ISI of 1500 ms, and then either a reward (image of a one pound sterling coin) or no-reward (blue square) for 2000 ms, followed by an ITI of 3000 ms. Each Sd appeared 18 times, for a total of 108 trials. Sd\u2212 were never rewarded, while Sd+ were rewarded 14 out of 18 times that they appeared. The cover task was to press one button for any Sd or for no-reward, and a different button for reward (meaning that in an unrewarded trial, the same button was to be pressed twice; while in a rewarded trial two different buttons should be pressed). Pressing the correct button to \u2018pick up\u2019 the coin led to actually receiving this money at the end of the experiment (divided by a constant factor of ten); subjects were informed of this. Through the unique pairing between Si and Sd, conditioning implicitly established Si+ (previously paired with Sd+) and Si\u2212 (previously paired with Sd\u2212). The pairing was such that each Si category contained one Si+ and one Si\u2212.\n\nIn the third (\u2018Decision\u2019) phase, in each trial subjects made a pairwise choice between either two Sd images or two Si images. The two Si images were always of the same category (face/body/scene): one Si+ and one Si\u2212; likewise, the two Sd images, an Sd+ and an Sd\u2212, had always been previously paired with the same Si category. Subjects were instructed that they would receive monetary reward for choosing the correct stimulus, but, as in Wimmer and Shohamy (2012), were given no instructions about how to identify the correct stimulus (except to choose the one they thought was more lucky). They actually received these rewards at the end of the experiment, again divided by ten. In addition to the money earned within the task, subjects received a flat compensation of \u00a310. Each pairwise choice was repeated 4 times for a total of 24 trials. Any preference for Si+ over Si\u2212 would provide evidence of sensory preconditioning.\n\nAfter the experiment, subjects again provided subjective liking ratings on a visual analog scale, this time for each Si and Sd actually used in the experiment (excluding dummies).\n\n### Behavioral analysis\n\nDecision-phase preferences for Sd+, Sd\u2212, Si+, and Si\u2212 were measured by averaging the four binary responses for each pair, and performing a one-sample t-test between subjects on the mean response against 50%. Similar results could be obtained by treating the first choice of each subject for each pair as an independent draw from a Bernoulli distribution and comparing the results to p = 0.5. Changes in subjective liking ratings from Pre-Liking to Post-Liking phases were differences on an arbitrary scale (pixels in the visual analog scale) and were linearly de-trended as subjects showed a robust tendency to increase all ratings at the end of the experiment compared to the beginning (many subjects reported in debriefing that they liked most of the stimuli more because they were more familiar at the end of the experiment).\n\n### MEG acquisition\n\nMEG was recorded continuously at 600 samples/second using a whole-head 275-channel axial gradiometer system (CTF Omega, VSM MedTech, Canada), while participants sat upright inside the scanner. Continuous head localization was recorded with three fiducial coils at the nasion, left pre-auricular, and right pre-auricular points. The task script sent synchronizing triggers (outportb in Cogent) which were written to the MEG data file. A projector displayed the task on a screen \u223c80 cm in front of the participant. Participants made responses on a button box using either thumbs or index fingers as they found most comfortable.\n\n### MEG analysis\n\nAll analysis was performed in MATLAB. Some analyses used SPM12b (Wellcome Trust Centre for Neuroimaging, United Kingdom). Data were first converted to SPM12 format using spm_eeg_convert. Each event was then epoched, using spm_eeg_epochs, to 1000 ms segments from \u2212400 ms to +600 ms relative to the event, based on the triggers recorded from the task script. All timings were corrected for one frame (1/60 s) of lag between triggers and refreshing of the projected image, measured using a photodiode outside the task. The 600 samples in each epoch were then reduced to 50 time bins by averaging together each consecutive 12 samples. Thus, the time bins were spaced every 20 ms and represented the average raw signal of the 12 samples within that 20 ms. Pre-stimulus bins were treated as baseline.\n\nWe built three-way classifiers for the category of the Si stimuli. Classifiers were trained based on the activity evoked by the presentation of the Si stimuli in the Association phase, and used to classify the activity associated with the presentation of the Sd and outcome stimuli in the Reward phase. Classifiers were built for each time bin following Si presentation, and tested on each time bin following Sd and outcome presentation during the Reward phase, giving rise to (Association) time*(Reward) time maps of classification performance.\n\nSupport vector machine (SVM) classification analyses were performed with the svmtrain/svmpredict routines from libsvm (National Taiwan University, Taiwan; http://www.csie.ntu.edu.tw/\u223ccjlin/libsvm). Each feature used for classification (i.e., a sensor at a time bin) was independently z-transformed before classification. Results are reported with linear kernels. The regularization parameter C was tuned to optimize cross-validation performance in cross-validation of Association-phase data (C = 105) but was then fixed for all further analyses. Cross-validation was tested using leave-one-out, k-fold (5, 10, or 20), or repeated random subsampling (50 or 100 independent subsamples with 10% of samples left-out), without any difference in results between methods.\n\nIn Figure 4, we show 2-dimensional maps where the dimensions are times relative to two different events. To generate statistical significance thresholds for these maps, we recalculated these maps many times with independently shuffled category labels for the stimuli. Each shuffle yielded a map that contained no true information about the stimuli, but preserved overall smoothness and other statistical properties. The peak levels of each of these maps were extracted, and the distribution of these peak levels formed a nonparametric empirical null distribution. The 95th percentile of this distribution is reported as the significance threshold.\n\nRepresentational similarity between two different trials was measured by correlation between the patterns of activation over sensors, at the same time bin relative to stimulus onset.\n\nClassifiers trained on Association-phase data were used directly to predict Reward-phase data without any tuning to optimize cross-classification performance. All (Association) time*(Reward) time maps of classification performance were smoothed by a 2-D Gaussian kernel (\u03c3 = 30 ms) for display and for calculating peak-level shuffling statistics.\n\n### Analyses that didn't work\n\nIn the interest of reporting our work as completely as possible, we discuss a set of analyses that were based on relevant hypotheses, but did not lead to significant results.\n\n1) An important issue in the analysis of retrieved representations is to make sure that what are apparently retrieved representations are not in fact coincidences in the representation of the retrieved object and the retrieval cue. In the analyses in the main paper, this is controlled by randomizing Si\u2013Sd pairings between subjects. We attempted another way of controlling for this, by training a classifier on all subjects' (except one) Sd-evoked data (using the category labels of the associated Sis), and testing on the left-out subject. If this procedure, repeated across left-out subjects, would produce an above-chance prediction of the Si category associated with the displayed Sd, this would imply that the Sd-evoked data contain a real representation of Si. Unfortunately when we attempted this, the group-level prediction of Si category did not reach significance. We speculate this is because the category representation differs substantially between subjects (supported by Sandberg et al. (2013)); an issue that the analysis in the main paper is immune to because classifiers are trained separately for each subject.\n\n2) Wimmer and Shohamy (2012) regressed their neural signal against within-category differences in behavioral preference. For example, if one subject in the Decision phase preferred the face paired with the rewarded fractal, but did not prefer the scene paired with the rewarded fractal, then he or she was more likely to have a large fusiform face area activation during presentation of the face-paired fractal in the Reward phase than to have a large parahippocampal place area activation during presentation of the scene-paired fractal. We attempted the same analysis but no correlation with neural decoding reached significance. In our hands collapsing within categories to look at between-subject variance in total value updating appeared more statistically powerful. Along similar lines, we also trained classifiers to distinguish individual stimuli in the Association phase (e.g., a particular face, rather than the category of faces\u2014so the classifier learned about 12 distinct categories), and applied these classifiers to activity at the time of outcome in the Reward phase. The classifier was treated as \u2018correct\u2019 if it predicted the identity of the photograph that had been previously associated with the fractal presented on this trial of the Reward phase. We then correlated the resulting correctness ratings against the behavioral preference for Si+ over Si\u2212 in the Decision phase (just as in Figure 6 of the main paper, but classifying individual stimuli rather than categories). However, these correlations did not reach shuffle-corrected significance. This may be a result of the difficulty of classifying many individual stimuli with relatively few trials.\n\n3) We wondered if, when photos (Si) were presented during the Decision phase, it would be possible to identify neural signals containing information about the paired fractal (Sd). It is possible that this could represent an online retrieval of value information about Sd to guide the choice about Si. However, we could not detect above-chance classification of either associated Sd when pairs of Si were presented during the Decision phase. We suspect the patterns of representation may be more difficult to disentangle when two stimuli are shown on-screen at the same time.\n",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "c8a62b68-4228-409f-937b-b2c4eb630a09",
+      "submission_id": "0905194d-4185-4e90-b8fa-b3eac2413b07",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Howard Eichenbaum, Boston University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04919.015](https://doi.org/10.7554/eLife.04919.015)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cTemporal structure in the retrieval of associations\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, a Reviewing editor, and 3 reviewers.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Howard Eichenbaum (Reviewing editor), Nikolaus Kriegeskorte (peer reviewer), and Kenneth Norman (peer reviewer). A further reviewer remains anonymous.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe reviewers were consensual in their enthusiasm for the question under study and for the sophisticated design and analyses, for the novel findings on temporal dynamics of memory reactivation, and the inclusion of negative findings. There were, however, major concerns about the strength of some of the findings, and there were other specific concerns by individual reviewers about some of the statistical tests, the exposition, and the interpretation of specific findings. These concerns are provided below.\n\nReviewer 1:\n\nReinstatement is only significant at the level of category-average representations, not individual exemplars of each face, body, and scene. This is a pity because each category was equally often associated with positive and neutral reward. This makes it difficult to assess whether the specific reward-predictive stimuli were reinstated at the point of reward and whether the strength of such reinstatement predicted the propagation of value updates. The authors speculate that category-level reinstatement might explain the absence of significant value updating suggested by their behavioural post-test. They do show that stronger reinstatement of the early component of the category representation just before reward onset predicts subjects' value-based choices in the behavioural post-test. However, although reasonably corrected for multiple testing across latencies, this effect is barely significant and is one of several analyses attempting to establish a relationship between reinstatement of reward-predictive stimuli and value updating. [Reviewing editor: This comment clarifies the reviewers' concern about this issue, but it may not be possible to improve on the comments provided by the authors in the discussion of their findings.]\n\nReviewer 2:\n\n1) The Introduction does a nice job of identifying a gap in the literature, though I believe it overstates this gap in some ways. I would suggest additional discussion of the findings of Manning et al. (2011; 2013, Journal of Neuroscience), which identify the spatial and spectral signatures of reinstatement. Perhaps the authors could emphasize the temporal aspects of associative retrieval more thoroughly in this section.\n\n2) The authors should more clearly identify the cognitive constructs they are assessing. Throughout the manuscript, the authors seem to alternate between focusing on a paradigm designed for associative retrieval, sensory preconditioning, and value updating. Given that the task design allows for investigating each of these, the authors should state this upfront and additionally discuss the prior literature linking these constructs in the Introduction.\n\n3) The rationale for using univariate vs. multivariate feature sets should be stated earlier in the text. Is the rationale only to verify that more information is captured using multivariate techniques compared to univariate techniques? If so, I think simply citing the prior literature demonstrating this should be sufficient and it is unnecessary and a bit tangential to focus on this point as a primary finding. As the text stands now, it takes a while to get to the point of the primary research findings.\n\n4) Pattern classification performance was calculated within subject and then averaged across subjects, revealing peaks around 200ms and 400ms. To what extent are these peaks evident in individual subjects? The authors partially raise this issue themselves in the Discussion section, but may wish to provide quantitative results regarding this issue.\n\n5) Although the data generally supports the claim that they are primarily measuring \u201cevoked\u201d activity, the authors should be cautious to not imply that it is only evoked activity.\n\n6) In the Discussion section: Several EEG and fMRI studies of temporal order memory (some using an RSA approach) are excluded but should be cited and/or discussed (Hsieh, 2011, Journal of Neuroscience; Hsieh et al., 2014, Neuron; Ezzyat and Davachi, 2014, Neuron).\n\n7) Overall, the data support the claim of two temporally distinct representational periods. However, such an interpretation is complicated by a highly significant (double the chance rate) classification performance during the two windows. The authors should discuss this more thoroughly. Additional analyses described above may also clarify this interpretational discrepancy.\n\nReviewer 3:\n\n1) What kinds of multiple comparisons corrections are the authors using for the analyses shown in Figure 4A and 4B? Elsewhere in the paper, the investigators appear to be using an approach of controlling for familywise error at p < .05, but it is not clear what is going on here (the paper only says p = 0.05 \u201cpeak-level significance thresholds\u201d). Whatever correction the authors use will need to correct for the use of classifiers trained on different time points and also their exploration of multiple time points during the reward learning phase. For what it's worth, I thought that the approach taken in Figure 6 (controlling for all time points, but only two classifiers: the 200ms-trained classifier and the 400ms-trained classifier) was acceptable; a similar approach could be applied here, if it isn't being used already.\n\n2) For the RSA analysis, it was not clear if the authors obtained a meaningful measure of \u201cself-similarity\u201d values (i.e., how similar is the pattern for a particular item to the pattern evoked by other instances of that same item). If they did not measure this, it would be useful to re-do the analysis in a way that obtains self-similarity measurements. Having this information would allow the authors to get separate readouts of item-specific information (e.g., by contrasting the diagonal cells to the off-diagonal cells from the same category) and category information. In particular, it would be useful to get these measures (along with some statistical assessment of their reliability, e.g., through bootstrapping) for both the 200ms and 400ms time points. While it is clear that category structure is not strongly represented at the 200ms time point, the RSA analysis in its current form does not speak to how strongly item-specific information is represented at the two time points (the text, as it is currently written, seems to be implying that there is less information about individual items at 400ms than 200ms, but we don't know that).\n\n3) As shown in Figure 1, about half of the participants showed P(Si+) that was below .5, and some of these participants showed P(Si+) values that were well below .5. While I can understand how variance in the level of reactivation (during the reward learning phase) could lead to variance in participants' preference, ranging from no preference to strong preference in favor of the associated item, but it is not clear how variance in reactivation could lead to the opposite preference. The only other interpretation of the below-chance performance is that it is noise, but in that case, how can it be explained using classifier evidence? It would be useful if the authors commented on this.\n\n4) A suggestion: to the extent that classification performance is suffering due to a lack of training data, we have sometimes found in my lab that we can improve classification by using a \u201cleave one subject out\u201d approach (i.e., train on all but one subject, test on the left-out subject). This approach assumes that brain patterns are relatively consistent across participants. If that assumption is generally true, then the 25-fold increase in the number of training patterns can improve classification accuracy by a substantial margin (conversely: if there is extensive between-subject variability in the patterns, then moving to a leave-one-subject out approach can hurt classification accuracy). Anything that improves classification accuracy has the potential to greatly boost the interpretability of these results.\n",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2f081aa6-aaf6-4c70-820c-88dab38eb456",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C1",
+      "claim": "Twenty-nine adults participated in the experiment, recruited from the UCL Institute of Cognitive Neuroscience subject pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-nine adults participated in the experiment, recruited from the UCL Institute of Cognitive Neuroscience subject pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the Materials and methods section describing participant recruitment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "d7b4cc3e-ee66-435d-9fe2-21cf9b023407",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C2",
+      "claim": "Three participants were excluded before the start of analysis for large movement or myographic artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Three were excluded before the start of analysis for large movement or myographic artifacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the Materials and methods section describing exclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "ec700ac3-e319-466e-98ad-a46e8aff88d8",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C3",
+      "claim": "Of the 26 remaining participants, age quartiles were 18.7, 19.5, 21.3, 26.7, 41.4 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 26 remaining, age quartiles were 18.7, 19.5, 21.3, 26.7, 41.4 years",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement providing demographic data of the final participant sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "63e9d9d4-a0da-4e8b-8ad8-b0ee453c4f24",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C4",
+      "claim": "14 of the 26 participants were female.",
+      "claim_type": "EXPLICIT",
+      "source": "14 were female",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement providing demographic data of the final participant sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "0123da41-cb62-499f-a59d-a3675c7b6dad",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C5",
+      "claim": "1 of the 26 participants was left-handed.",
+      "claim_type": "EXPLICIT",
+      "source": "1 was left-handed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement providing demographic data of the final participant sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "d5ee819c-f496-4f83-ab9e-a256011c87f4",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C6",
+      "claim": "Subjects were not aware of the Si\u2013Sd pairings in the Association phase.",
+      "claim_type": "EXPLICIT",
+      "source": "As in Wimmer and Shohamy (2012), debriefing revealed that subjects were not aware of the Si\u2013Sd pairings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement based on debriefing data, with citation to similar finding in prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "2d23870d-132c-4dbf-b0fd-4e0386346b86",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C7",
+      "claim": "Subjects exhibited a strong preference for Sd+ over Sd\u2212 (p = 6.9 \u00d7 10\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects exhibited a strong preference for Sd+ over Sd\u2212 (p = 6.9 \u00d7 10\u22124)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with statistical test result, supported by Figure 1B showing behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "27785d8f-d112-4e32-bf8f-c9d4634fcb8c",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C8",
+      "claim": "As a group, subjects showed no evidence of preferring Si+ over Si\u2212 (p = 0.9).",
+      "claim_type": "EXPLICIT",
+      "source": "as a group showed no evidence of preferring Si+ over Si\u2212 (p = 0.9)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with statistical test result, supported by Figure 1B showing behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "977f09f0-47e0-45bc-a019-85e9f5a6a5f7",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C9",
+      "claim": "The change in relative liking from before to after the experiment was more positive for Sd+ than Sd\u2212 (p = 0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "The change in relative liking from before to after the experiment was more positive for Sd+ than Sd\u2212 (p = 0.04, one-sample t-test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with statistical test result, supported by Figure 1B showing liking rating changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "1970c494-8ab7-468a-af90-28ba2e813fd5",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C10",
+      "claim": "There was no significant difference between the changes in liking for Si+ and Si\u2212.",
+      "claim_type": "EXPLICIT",
+      "source": "but there was no significant difference between the changes for Si+ and Si\u2212",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement about statistical comparison, supported by Figure 1B showing liking rating changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "b51c02f1-70e3-4f93-8054-88b89bd28b17",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C11",
+      "claim": "Many occipital and temporal sensors first became predictive of Si category between 90 and 230 ms post stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Many occipital and temporal sensors first became predictive of Si category between 90 and 230 ms post stimulus onset",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 2A showing sensor-level timing of category discrimination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "6bb368db-d34a-44a4-9a87-7aa03e2bc502",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C12",
+      "claim": "Some parietal and frontal sensors became predictive of Si category ranging from 330\u2013550 ms post stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "followed by some parietal and frontal sensors ranging from 330\u2013550 ms post stimulus onset",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 2A showing sensor-level timing of category discrimination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "ead8a4e0-ae5c-4a0c-90b3-7c14a0644d83",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C13",
+      "claim": "At 200 ms post-stimulus, the 95th percentile of the null distribution was 35.0% accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "At 200 ms post-stimulus, the 95th percentile of the null distribution was 35.0% accuracy",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement providing statistical threshold from permutation testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "b05e2a21-a4c3-41d3-aada-9e9d7280f135",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C14",
+      "claim": "At 200 ms post-stimulus, the median of the null distribution was 33.7% accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "the median was 33.7%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement providing statistical threshold from permutation testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "ad62f18c-a812-4719-956e-8e5a50b41dbb",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C15",
+      "claim": "Two distinct peaks in multivariate classification performance were observed, one centered approximately around 200 ms and the other around 400 ms post-stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed two distinct peaks in multivariate classification performance, one centered approximately around 200 ms and the other around 400 ms post-stimulus onset.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 3A showing classification accuracy over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "afa8978f-7ad5-43b0-8365-d3d06a2206e1",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C16",
+      "claim": "At the group level, the quadratic term in the regression of classification accuracy against time was significantly different from zero (p = 0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "At the group level, the quadratic term was significantly different from zero (p = 0.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement with statistical test result testing for concavity in classification accuracy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "a58016ab-6d6d-406e-888d-1bfa0dc15c74",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C17",
+      "claim": "No individual subject reached Bonferroni-corrected significant betas on the quadratic term of the regression.",
+      "claim_type": "EXPLICIT",
+      "source": "many subjects trended toward a positive quadratic term, but none reached significance at a Bonferroni-corrected threshold",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 3\u2014figure supplement 2 showing individual subject regression results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "c2115eaa-1014-4051-84cf-f86aae4daa02",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C18",
+      "claim": "At 200 ms after Si onset, there was no difference in representational similarity between same-category and different-category Si objects (p = 0.2).",
+      "claim_type": "EXPLICIT",
+      "source": "At 200 ms, the activity patterns evoked by stimuli within a category were no more similar than those evoked by stimuli in different categories (Figure 3B, left panel; p = 0.2, paired t-test between subjects)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with statistical test result, supported by Figure 3B left panel showing representational similarity matrix.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "a99059d9-5e55-44d6-83f6-7d1e6821a8d0",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C19",
+      "claim": "At 400 ms after Si onset, representational similarity was higher for same-category than different-category objects (p = 5 \u00d7 10\u22127).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas at 400 ms, patterns within a category were substantially more similar than between categories (Figure 3B, right panel; p = 5 \u00d7 10\u22127)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with statistical test result, supported by Figure 3B right panel showing representational similarity matrix.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "e9d0fd11-cda5-4ad9-81f2-8c2213555ef8",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C20",
+      "claim": "Cross-validated performance of a linear SVM in 6-way discrimination of fractal identity was sharply peaked at 160 ms post-stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that the cross-validated performance of a linear SVM in a 6-way discrimination of fractal identity was sharply peaked at 160 ms post-stimulus onset",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 3C showing classification accuracy for fractal identity over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "610e7b15-4da2-4569-a751-0c5b72fce471",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C21",
+      "claim": "Fractal identity discrimination lacked a substantial second peak.",
+      "claim_type": "EXPLICIT",
+      "source": "and lacked a substantial second peak",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 3C showing classification accuracy for fractal identity over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "e3db711d-88a9-43b3-afd8-af3f0b6cf834",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C22",
+      "claim": "Classifiers trained around 200 ms post-Si presentation achieved above-chance accuracy in predicting which Si category had previously been associated with the presented Sd from 270\u2013530 ms following presentation of Sd.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the classifiers trained around 200 ms post-Si presentation achieved above-chance accuracy in predicting which Si category had previously been associated with the presented Sd (the 95th percentile of the peak-level achieved in 200 random shuffle tests is shown as a solid black line in each panel). This effect was above chance from 270\u2013530 ms following presentation of Sd.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 4A showing cross-classification results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "69159abf-1665-4fe9-a2d3-0aedf7adc0dd",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C23",
+      "claim": "The spatial pattern of brain activity present 200 ms after presentation of Si in the Association phase was partially reinstantiated 270\u2013530 ms after presentation of Sd in the Reward phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the spatial pattern of brain activity present 200 ms after presentation of Si in the Association phase was partially reinstantiated 270\u2013530 ms after presentation of Sd in the Reward phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct interpretation of cross-classification results shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "5e8c6676-9444-4e0f-9fbe-8c717e8e0ed2",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C24",
+      "claim": "Classifiers trained around 400 ms after Si achieved above-chance accuracy in predicting the Si category previously associated with the Sd presented on trials at 70 ms following presentation of the outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "The classifiers trained around 400 ms after Si achieved above-chance accuracy in predicting the Si category previously associated with the Sd presented on this trial (Figure 4B). This effect was strongest at 70 ms following presentation of the outcome",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 4B showing cross-classification results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "5b99fd58-8d72-456d-8292-04dc5769cc3f",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C25",
+      "claim": "The spatial pattern of activity present 400 ms after presentation of Si in the Association phase was at least partially reinstantiated 70 ms after presentation of the outcome in the Reward phase.",
+      "claim_type": "EXPLICIT",
+      "source": "meaning that the spatial pattern of activity present 400 ms after presentation of Si in the Association phase was at least partially reinstantiated 70 ms after presentation of the outcome in the Reward phase",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct interpretation of cross-classification results shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "bc323dee-53cd-4fad-878f-4ed5ba140495",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C26",
+      "claim": "Two-way ANOVA revealed no significant main effects of 200 ms vs 400 ms or Sd vs outcome but a significant interaction (p = 0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "Two-way ANOVA revealed no significant main effects of 200 ms vs 400 ms or Sd vs outcome but a significant interaction (p = 0.04; Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with statistical test result, supported by Figure 4C showing peak classification accuracies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "9470e3dc-d618-409b-aeeb-1fdc90bfaceb",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C27",
+      "claim": "The peak accuracy following Sd was higher for the 200 ms than the 400 ms classifier.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, the peak accuracy following Sd was higher for the 200 ms than the 400 ms classifier",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement interpreting the interaction effect, supported by Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "688b0956-6707-47c9-a8b5-869d437b5da5",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C28",
+      "claim": "The peak accuracy following outcome was higher for the 400 ms than the 200 ms classifier.",
+      "claim_type": "EXPLICIT",
+      "source": "while the peak accuracy following outcome was higher for the 400 ms than the 200 ms classifier",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement interpreting the interaction effect, supported by Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "bc4aa423-8daa-4d9b-8be9-13dc01002db0",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C29",
+      "claim": "There is a double dissociation in the component that was more strongly retrieved at Sd vs outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "implying a double dissociation in the component that was more strongly retrieved at Sd vs outcome",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct interpretation of the interaction effect shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "7e1296cc-6acd-42e6-8d2a-405c2c432da3",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C30",
+      "claim": "A linear SVM was reliably able to classify whether a spatial pattern of sensor contributions belonged to Sd or outcome (71.2% accuracy, p = 0.002 by one-sided binomial test).",
+      "claim_type": "EXPLICIT",
+      "source": "Prediction accuracy reached 71.2%, which was greater than chance by one-tailed binomial test (p = 0.002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with statistical test result, supported by Figure 5 showing spatial patterns of sensor contributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "793e89a3-d783-45c3-928d-a104e8979639",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C31",
+      "claim": "The information about the category of Si retrieved at the time Sd was presented emerged primarily from occipital sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the information about the category of Si retrieved at the time Sd was presented emerged primarily from occipital sensors (A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 5A showing sensor contribution patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "32578fd6-23b1-4884-8da0-bc1f1ecc2cd5",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C32",
+      "claim": "The information about the category of Si retrieved at the time the outcome was shown appeared more strongly in parietal and temporal sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "while the information about the category of Si retrieved at the time the outcome was shown appeared more strongly in parietal and temporal sensors (B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 5B showing sensor contribution patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "b1231a03-f53f-4fcd-8238-22939fddc775",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C33",
+      "claim": "In the difference between Sd and outcome sensor patterns, no individual sensor survived correction for multiple comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the difference between the two conditions, no individual sensor survived correction for multiple comparisons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about statistical testing of spatial patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "4b7b2343-00e4-41d5-a2ca-c76074c82cab",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C34",
+      "claim": "In subjects preferring Si+ over Si\u2212, reinstatement of the 200 ms component of Si was strongly correlated with behavioral preference.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in subjects preferring Si+ over Si\u2212, reinstatement of the 200 ms component of Si was strongly correlated with behavioral preference.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 6B,D,F showing correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "f79f8656-adb0-4a92-96d0-5ebbe44ddf67",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C35",
+      "claim": "The 200 ms classifier showed a corrected-significant peak in correlation strength \u223c400 ms after the onset of the outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "while the 200 ms classifier showed a corrected-significant peak in correlation strength \u223c400 ms after the onset of the outcome (Figure 6D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 6D showing correlation time course.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "fd65c562-648d-44f6-865e-67d67691d73b",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C36",
+      "claim": "The 400 ms classifier showed no substantial positive correlation with behavioral preference.",
+      "claim_type": "EXPLICIT",
+      "source": "The 400 ms classifier showed no substantial positive correlation with behavioral preference (Figure 6C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 6C showing correlation time course.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "73ffcf77-304e-48a8-8499-83a7be99e900",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C38",
+      "claim": "Retrieval of representations through associative links induces reinstantiation of at least some aspects of the pattern of neural activity evoked by the original presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Retrieval is classically linked to reinstantiation of a particular distributed spatial pattern of neural activity mirroring that evoked by the original experience of the object or context being retrieved (Tulving and Thomson, 1973; Nyberg et al., 2000; Hoffman and McNaughton, 2002; Polyn et al., 2005; Johnson and Rugg, 2007; Gelbard-Sagiv et al., 2008; Danker and Anderson, 2010; Rissman and Wagner, 2012; Miller et al., 2013; Kuhl and Chun, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by multiple citations to prior literature establishing this principle.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "5fbe28f3-ed3b-40e6-8b3e-7a0bcc195b9e",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C39",
+      "claim": "When an object is directly experienced, the evoked pattern of neural activity evolves rapidly over tens to hundreds of milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "However, electrophysiology experiments robustly demonstrate that when an object is directly experienced, the evoked pattern of neural activity evolves rapidly over tens to hundreds of milliseconds (Makeig et al., 1997; Schmolesky et al., 1998, 1998; N\u00e4\u00e4t\u00e4nen and Winkler, 1999; VanRullen and Thorpe, 2001; Rossion and Jacques, 2008; Schneider et al., 2008; Cichy et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by multiple citations to prior electrophysiology literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "48869657-7fce-4ff7-8f3a-a2cc3539edd4",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C40",
+      "claim": "Direct experience of an object evokes multiple distinct spatial patterns of neural activity in sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that direct experience of an object evokes multiple distinct spatial patterns of neural activity in sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the observation that neural activity evolves rapidly over time.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "51dc88a9-2cd8-4961-8df2-9e80648647eb",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C41",
+      "claim": "These distinct spatial patterns have never been identified independently at retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these distinct spatial patterns have never been identified independently at retrieval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the novelty of the current work relative to prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "b0d7fb97-fa8b-4ec8-9bf6-9a50749473f8",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C42",
+      "claim": "EEG studies provide evidence that some information is retrieved as early as 300 ms following a cue.",
+      "claim_type": "EXPLICIT",
+      "source": "EEG studies provide evidence that some information is retrieved as early as 300 ms following a cue (e.g., Johnson et al., 2008; Yick and Wilding, 2008; Wimber et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to prior EEG literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "a20e6c79-2297-468c-903f-07132cd951a3",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C43",
+      "claim": "Manning et al. (2011), (2012), using electrocorticography, and Jafarpour et al. (2014), using MEG, showed that oscillatory patterns are also reinstated during retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "Manning et al. (2011), (2012), using electrocorticography, and Jafarpour et al. (2014), using MEG, showed that oscillatory patterns are also reinstated during retrieval",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to prior electrocorticography and MEG literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "c4a02a9b-0a23-4c90-8188-39ce1a8c2e96",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C44",
+      "claim": "In two studies, the predominance of low oscillatory frequencies in reinstatement suggests a potential spectral signature.",
+      "claim_type": "EXPLICIT",
+      "source": "in two of these studies the predominance of low oscillatory frequencies in reinstatement suggests a potential spectral signature",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about findings from cited studies, with inference about spectral signature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "c073214a-5bf1-4595-8600-230567d201b0",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C45",
+      "claim": "The dynamics of representation during direct experience of an object have never been tied to the dynamics of retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the dynamics of representation during direct experience of an object have never been tied to the dynamics of retrieval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the novelty of the current work relative to prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "ae9d0ac0-74b6-4f49-9fc1-6e731748d335",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C46",
+      "claim": "It is not known which of the patterns evoked in sequence by direct experience are reinstantiated during retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "It is not known which of the patterns evoked in sequence by direct experience are reinstantiated during retrieval",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about gaps in current knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "425eb436-69fb-42f6-b5f1-67cb42aa5fdc",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C47",
+      "claim": "It is not known what the temporal relationship is in retrieval of patterns evoked by direct experience.",
+      "claim_type": "EXPLICIT",
+      "source": "what the temporal relationship is in their retrieval",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about gaps in current knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "0989bd1f-8b4b-40f7-98d6-a8e05b7e7cd8",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C48",
+      "claim": "It is not known what functional significance the temporal structure of retrieval has.",
+      "claim_type": "EXPLICIT",
+      "source": "or what functional significance this has",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about gaps in current knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "f9a5dea4-2671-4cb7-b7d6-5a11d01ac14d",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C49",
+      "claim": "Recent advances in multivariate methods for MEG have greatly improved our ability to discern fast-changing distributed representations in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent advances in multivariate methods for MEG have greatly improved our ability to discern fast-changing distributed representations in humans (Carlson et al., 2013; Cichy et al., 2014; Jafarpour et al., 2013, 2014; van de Nieuwenhuijzen et al., 2013; Sandberg et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to recent methodological literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "0ffeb00a-8774-4a73-a454-5cccf1f3c3d0",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C50",
+      "claim": "Sensory preconditioning is a well-established paradigm in which subjects first form an association between two stimuli and then form an association between the direct stimulus and a reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensory preconditioning is a well-established paradigm in which subjects first form an association between two stimuli ('direct' or Sd and 'indirect' or Si) and then form an association between the direct stimulus and a reward (Brogden, 1939).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement defining the paradigm with citation to foundational work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "923464f0-868d-40b0-a6a4-adbda12c9da9",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C51",
+      "claim": "Generalization of value to the indirect stimulus is evidence of retrieving the learned association.",
+      "claim_type": "EXPLICIT",
+      "source": "Generalization of value to the indirect stimulus is evidence of retrieving the learned association (Gewirtz and Davis, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about interpretation of behavioral results with citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "911555ab-79b4-4fdb-a1db-44573b061466",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C52",
+      "claim": "Using fMRI, Wimmer and Shohamy (2012) showed that neural representations of the associated indirect stimulus are reinstated when direct stimuli are presented during the Reward-learning phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Using fMRI, Wimmer and Shohamy (2012) showed that neural representations of the associated indirect stimulus are reinstated when direct stimuli are presented during the Reward-learning phase",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about findings from cited fMRI study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "d69bfb3f-bf04-45a1-ac13-118b79559593",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C53",
+      "claim": "Retrieval of the indirect stimulus through the learned associative link is linked to the generalization of value from direct to indirect stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "and this retrieval is linked to the generalization of value from direct to indirect stimuli",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about findings from Wimmer and Shohamy (2012) study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "4ee65c94-dd74-4a4c-9e54-69d311a825b2",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C54",
+      "claim": "Reinstatement through the learned associative link may be part of the mechanism for value updating.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that reinstatement through the learned associative link may be part of the mechanism for value updating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of findings from Wimmer and Shohamy (2012).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "5adcf2ba-271f-441d-aa0b-0cc7205562fc",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C55",
+      "claim": "The neural representation of the indirect stimulus can be decomposed into at least two temporal components with distinct properties.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the neural representation of the indirect stimulus can be decomposed into at least two temporal components with distinct properties",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of main finding from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "5484a34a-6f3c-446d-bee2-878d1cedd262",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C56",
+      "claim": "The two temporal components of the indirect stimulus representation are retrieved at different times during the Reward-learning phase.",
+      "claim_type": "EXPLICIT",
+      "source": "and these are retrieved at different times during the Reward-learning phase",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of main finding from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "09fcac0e-ebca-487e-a249-e4eda88cc27e",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C57",
+      "claim": "The retrieval of only one of the temporal components is correlated with a behavioral measure of the generalization of value across the learned associations.",
+      "claim_type": "EXPLICIT",
+      "source": "The retrieval of only one of these components is correlated with a behavioral measure of the generalization of value across the learned associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of main finding from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "69e24ca0-14b5-4a0e-a180-a84ab9e7d8fa",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C58",
+      "claim": "The temporal structure within retrieved neural representations may be key to their function.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest the temporal structure within retrieved neural representations may be key to their function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the study's findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "874f0a50-46e0-482a-8a9f-5859eb178b6e",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C59",
+      "claim": "MEG was recorded continuously at 600 samples/second using a whole-head 275-channel axial gradiometer system.",
+      "claim_type": "EXPLICIT",
+      "source": "MEG was recorded continuously at 600 samples/second using a whole-head 275-channel axial gradiometer system (CTF Omega, VSM MedTech, Canada)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about MEG acquisition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "fbe1871e-073f-4225-876c-4c7c5886d1bb",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C60",
+      "claim": "The 600 samples in each epoch were reduced to 50 time bins by averaging together each consecutive 12 samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The 600 samples in each epoch were then reduced to 50 time bins by averaging together each consecutive 12 samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about data preprocessing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "dd8c95a7-39cd-4b76-856a-5939fbeb605e",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C61",
+      "claim": "The time bins were spaced every 20 ms and represented the average raw signal of the 12 samples within that 20 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the time bins were spaced every 20 ms and represented the average raw signal of the 12 samples within that 20 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about data preprocessing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "b943e42d-19b1-4e83-a292-4172fa9fb305",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C62",
+      "claim": "The regularization parameter C was tuned to optimize cross-validation performance in cross-validation of Association-phase data (C = 105).",
+      "claim_type": "EXPLICIT",
+      "source": "The regularization parameter C was tuned to optimize cross-validation performance in cross-validation of Association-phase data (C = 105)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about SVM parameter selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "5d394827-50e7-4c89-a03e-3a03c2ff4713",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C63",
+      "claim": "All (Association) time*(Reward) time maps of classification performance were smoothed by a 2-D Gaussian kernel (\u03c3 = 30 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "All (Association) time*(Reward) time maps of classification performance were smoothed by a 2-D Gaussian kernel (\u03c3 = 30 ms) for display and for calculating peak-level shuffling statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about data analysis procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "33846285-c407-44ee-b124-3ed16b65f146",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C64",
+      "claim": "The randomization of Si\u2013Sd pairings across subjects makes exceedingly unlikely the possibility that some visual features of Si happen to be shared with the associated Sd.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the randomization of Si\u2013Sd pairings across subjects makes exceedingly unlikely the possibility that some visual features of Si happen to be shared with the associated Sd and might therefore carry a shared neural signature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about experimental design controlling for confounds.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "6a75f762-3629-4838-b4de-ff7a4b3e0e53",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C65",
+      "claim": "The outcome always appeared 3500 ms after Sd in each trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the outcome always appeared 3500 ms after Sd in each trial",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about task timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "a72754b3-e9c1-47dd-8825-d4505b6641b3",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C66",
+      "claim": "70 ms after presentation of outcome was equivalently 3570 ms after presentation of Sd.",
+      "claim_type": "EXPLICIT",
+      "source": "70 ms after presentation of outcome was equivalently 3570 ms after presentation of Sd",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculation based on task timing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "5d53e7f7-25e4-4d38-903f-c139ce3f59b8",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C67",
+      "claim": "All the information necessary to retrieve Si was carried by Sd.",
+      "claim_type": "EXPLICIT",
+      "source": "Since all the information necessary to retrieve Si was carried by Sd",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about task structure and information content.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "7b1eec5d-edf6-45d9-a280-07eddb0b3baa",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C68",
+      "claim": "Some of the retrieval process might occur before onset of the outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "some of the retrieval process might occur before onset of the outcome",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about timing of retrieval processes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "2a9a6190-4e10-4634-b525-310387a45964",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C69",
+      "claim": "Both forms of cross-classification were very much less accurate than classification of the identity of the Sd or outcome from the activity directly evoked by these stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Both forms of cross-classification were very much less accurate than (linear) classification of the identity of the Sd (fractals) or outcome (coin/blue square) from the activity directly evoked by these stimuli (cf. Figure 3C and Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparative statement about classification accuracies across different analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "c59f44c8-15fb-406d-b2bf-18d65c47ee57",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C70",
+      "claim": "The relatively precise epoch of retrieval of Si following the presentation of the outcome may reflect the point of strongest overlap between a variety of timings in individual subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively precise epoch of retrieval of Si following the presentation of the outcome may reflect the point of strongest overlap between a variety of timings in individual subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of timing results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "6237988e-66e3-4e22-8f43-fd1059da1265",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C71",
+      "claim": "A representation that is latent may have become detectable as soon as more power arose in the visual-evoked ERF due to onset of the outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, it may be that a representation that is latent became detectable as soon as more power arose in the visual-evoked ERF due to onset of the outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative alternative interpretation of timing results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "cb34767e-e0fb-4ee4-a70e-70125fcb6252",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C72",
+      "claim": "Expectations of the next stimulus may partly drive representations in the first 10s of milliseconds after a visual onset, before the present stimulus is processed.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet another possibility is expectations of the next stimulus partly drive representations in the first 10 s of milliseconds after a visual onset, before the present stimulus is processed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative alternative interpretation of timing results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "88927d5a-e2af-4e5d-8ea8-c13f6a7b634c",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C73",
+      "claim": "Retrieved representations (perhaps especially those that subjects are not consciously aware of) may be weak compared to evoked representations.",
+      "claim_type": "EXPLICIT",
+      "source": "The low accuracy in classifying retrieved representations (\u223c35%) compared to evoked responses (\u223c60%) might imply that retrieved representations (perhaps especially those that subjects are not consciously aware of) were weak compared to evoked representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of classification accuracy differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "45bf377c-d88c-459a-8c02-f670e34fac53",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C74",
+      "claim": "Si representations may have been only retrieved on a subset of trials, weakening the average signal.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that Si representations were only retrieved on a subset of trials, weakening the average signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative alternative interpretation of classification accuracy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "ebf6926e-70ef-4fb0-8d00-833c05ca0f8e",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C75",
+      "claim": "Retrieved representations may have had a distributed spatial pattern that was only partly overlapping with the evoked representation, making it more difficult to detect with pattern classifiers trained on evoked activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is possible that retrieved representations had a distributed spatial pattern that was only partly overlapping with the evoked representation, making it more difficult to detect with pattern classifiers trained on evoked activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative alternative interpretation of classification accuracy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "caacb765-e976-47f2-a8a1-078f60e9d8d4",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C76",
+      "claim": "If the 400 ms component of Si representation preferentially encodes information about category rather than specific stimuli, retrieval of solely this component at outcome time might cause value learning to be assigned to categories rather than individual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "If the 400 ms component of Si representation preferentially encodes information about category rather than specific stimuli, as suggested by our representational similarity analysis, retrieval of solely this component at outcome time might cause value learning to be assigned to categories rather than individual stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative hypothesis about mechanism of value learning based on representational structure.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "b47a31bf-26c4-48ac-8094-5048850bb3c0",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C77",
+      "claim": "This hypothesis would explain the finding that subjects who retrieve the 200 ms component at outcome show behavioral evidence of sensory preconditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis would explain our finding that the subjects who retrieve the 200 ms component at outcome show behavioral evidence of sensory preconditioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation connecting hypothesis to behavioral results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "a82c002e-6c55-447d-adad-7ea24bcb1f52",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C78",
+      "claim": "The correlation that Wimmer and Shohamy found in BOLD between retrieved stimulus representations and behavior between subjects may have been driven by the 200 ms component of the stimulus representation.",
+      "claim_type": "EXPLICIT",
+      "source": "Under this interpretation, the correlation that Wimmer and Shohamy found in BOLD between retrieved stimulus representations and behavior between subjects may also have been driven by the 200 ms component of the stimulus representation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reinterpretation of prior fMRI findings in light of current results.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "b4ebefcb-7ae3-4e4f-b89f-13abbfd64908",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C79",
+      "claim": "Temporally precise signals could not be distinguished using fMRI.",
+      "claim_type": "EXPLICIT",
+      "source": "these temporally precise signals could not be distinguished using fMRI",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about methodological limitations of fMRI relative to MEG.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "835e2fc3-b3cf-47db-8dd0-2c83e719f4b7",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C80",
+      "claim": "The finding that exact timing of reward relative to fast-evolving neural representational structures is crucial to value updating and credit assignment is of general importance.",
+      "claim_type": "EXPLICIT",
+      "source": "the finding is of general importance because it suggests that the exact timing of reward relative to fast-evolving neural representational structures is crucial to value updating and credit assignment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the broader significance of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "cb762cee-1518-4896-952b-31267e2006cd",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C81",
+      "claim": "Training a classifier to distinguish between individual exemplars of an Si category did not reach a sufficiently high level of performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is in principle possible to train a classifier to distinguish between individual exemplars of an Si category, this did not reach a sufficiently high level of performance in our hands",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about attempted but unsuccessful analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "d124c56a-0493-4836-965a-6158a9f9c855",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C82",
+      "claim": "The inability to classify individual exemplars may be limited by the relatively small number of training samples per unique stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "perhaps limited by the relatively small number of training samples per unique stimulus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for unsuccessful analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "5a5a2ee0-9b68-49e2-978b-77e6b7c32f5c",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C83",
+      "claim": "Offline and online processes may share similar mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Offline and online processes may share similar mechanisms (Doll et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement with citation to prior work on offline/online processing.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "1d0d9a36-c464-4857-b6f8-6308ff144844",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C84",
+      "claim": "In some cases the division between offline and online mechanisms is blurred.",
+      "claim_type": "EXPLICIT",
+      "source": "and in some cases the division between offline and online mechanisms is blurred",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about conceptual issues in distinguishing processing types.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "f35a866e-5f20-49bf-93a0-00f08c5cdd49",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C85",
+      "claim": "Retrieving elements of past experiences may serve as part of the process of planning in advance for the next time related situations are encountered.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, retrieving elements of past experiences may serve as part of the process of planning in advance for the next time related situations are encountered (Dragoi and Tonegawa, 2011, 2013), similar to the psychological notion of implementation intentions (Gollwitzer, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement with citations to prior work on planning and implementation intentions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "8ce774a3-72b4-4dce-b7be-e17151f36820",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C86",
+      "claim": "In sensory preconditioning, it is an open question whether generalized values are updated offline, retrieved through associative links at the time of decision, or a mix of both.",
+      "claim_type": "EXPLICIT",
+      "source": "In sensory preconditioning, it is an open question whether generalized values are updated offline (either during the Reward phase or in between the Reward and Decision phases), retrieved through associative links at the time of decision, or a mix of both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about unresolved questions in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "d2354389-fb20-42b8-8510-7cc89512bd6f",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C87",
+      "claim": "In animals the vulnerability of sensory preconditioning to extinction hints at an online mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "In animals the vulnerability of sensory preconditioning to extinction (Gewirtz and Davis, 2000) hints at an online mechanism",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement with citation to animal literature, making inference about mechanism.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "0bd7353a-1a3b-4722-9651-332de57a96f9",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C88",
+      "claim": "It is equally possible that extinction drives offline value updates through the same generalization mechanism as acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "but it is equally possible that extinction drives offline value updates through the same generalization mechanism as acquisition",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative alternative interpretation of extinction effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "a16806b9-430e-4ce5-bae5-abe6e0e0d6f4",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C89",
+      "claim": "The representation of Sd may have changed through the associative learning so that it more closely resembles that of Si.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, although our description of the reinstatement of Si suggests that it arises through a distinct process of retrieval, we cannot distinguish this from the subtly different possibility hinted by these ideas that the representation of Sd changed through the associative learning so that it more closely resembles that of Si.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative alternative interpretation of the cross-classification results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "90aa32bf-8bb3-47be-a694-fcceddbf5190",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C90",
+      "claim": "In animals, the temporal structure of retrieval appears to subserve complex memory, learning and decision-making processes, especially in hippocampus and hippocampal\u2013cortical interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In animals, the temporal structure of retrieval appears to subserve complex memory (Sirota et al., 2003; Schwindel and McNaughton, 2011), learning and decision-making processes, especially in hippocampus and hippocampal\u2013cortical interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement with citations to animal literature on temporal structure of retrieval.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "6ca4b35a-38c7-445c-855b-3194e167f5bb",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C91",
+      "claim": "Rodents retrieve representations of past and future locations, actions, and rewards.",
+      "claim_type": "EXPLICIT",
+      "source": "Rodents retrieve representations of past and future locations, actions, and rewards (Johnson and Redish, 2007; van der Meer et al., 2010; Steiner and Redish, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement with citations to rodent literature on retrieval.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "509bfb26-6844-45ae-b813-65b2601e2778",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C92",
+      "claim": "The timing of retrieval in rodents is tightly structured and likely encodes critical information in the decision-making computation.",
+      "claim_type": "EXPLICIT",
+      "source": "the timing of this retrieval is tightly structured and likely encodes critical information in the decision-making computation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about rodent literature with inference about functional significance.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "b57c797e-a244-4866-9764-9a10766dea18",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C93",
+      "claim": "In humans, frontal theta power is implicated in coding temporal order within sequences of stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, frontal theta power (Hsieh et al., 2011) and patterns of activity in hippocampus (Ezzyat and Davachi, 2014; Hsieh et al., 2014) are implicated in coding temporal order within sequences of stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement with citations to human literature on temporal order coding.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "03353ef5-5cb2-4c42-a427-9bd1bc4949e0",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C94",
+      "claim": "In humans, patterns of activity in hippocampus are implicated in coding temporal order within sequences of stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, frontal theta power (Hsieh et al., 2011) and patterns of activity in hippocampus (Ezzyat and Davachi, 2014; Hsieh et al., 2014) are implicated in coding temporal order within sequences of stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement with citations to human literature on temporal order coding.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "8d5c0235-f5a7-443a-b4c4-81411ab7c61b",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C95",
+      "claim": "Information in the visual system up to 200 ms post-stimulus may hew closely to the form of the stimulus that was presented.",
+      "claim_type": "EXPLICIT",
+      "source": "Information in the visual system up to 200 ms post-stimulus may hew closely to the form of the stimulus that was presented (Tanaka and Curran, 2001; VanRullen and Thorpe, 2001; Liu et al., 2002; Schiff et al., 2006; Rossion and Jacques, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement with citations to visual neuroscience literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "aaa308a9-a7b9-4182-b2c0-38ae0ab70794",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C96",
+      "claim": "Brain activity later than 200 ms post-stimulus is often found to include contextual and other sources of information.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, brain activity later than 200 ms post-stimulus is often found to include contextual and other sources of information (Kok, 2001; Tsivilis et al., 2001; Schiff et al., 2006; Garrido et al., 2007; Sanguinetti et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement with citations to literature on later visual processing.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "b1fbc006-bb59-483b-8e5d-18a650fce14c",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C97",
+      "claim": "The N400 component of the ERP extends from roughly 250\u2013500 ms post-stimulus and appears to be driven at least partly by the medial temporal lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the N400 component of the event-related potential (ERP) in EEG extends from roughly 250\u2013500 ms post-stimulus and appears to be driven at least partly by the medial temporal lobe, which is functionally coupled to sensory cortices (Bar, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement with citation about N400 component characteristics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "73bc133c-fc10-4855-aa80-108bba339d3f",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C98",
+      "claim": "The medial temporal lobe is functionally coupled to sensory cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "which is functionally coupled to sensory cortices (Bar, 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement with citation about functional connectivity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "96765993-e92f-40d5-9736-c47910b8b44e",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C99",
+      "claim": "The N2pc component of the ERP occurs from roughly 200\u2013300 ms post-stimulus and has been tied to contextually-sensitive processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The N2pc component of the ERP, which occurs earlier from roughly 200\u2013300 ms post-stimulus, has also been tied to contextually-sensitive processing (Conci et al., 2006; Schiff et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement with citations about N2pc component characteristics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "442f5feb-1d6b-4c83-a2c3-ad929f2793ff",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C100",
+      "claim": "The N2pc component originates from lateral temporal and parietal sources.",
+      "claim_type": "EXPLICIT",
+      "source": "and originates from lateral temporal and parietal sources (Hopf et al., 2000; Oostenveld et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement with citations about N2pc source localization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "9e055297-5466-4e27-8fac-87ca14c3fb14",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C101",
+      "claim": "The observation of more consistent category information at 400 ms may reflect contextually-sensitive processing based on lateral and top-down functional connections.",
+      "claim_type": "EXPLICIT",
+      "source": "Although information about the category of our stimuli is directly available in their visual form, one interpretation of our observation of more consistent category information at 400 ms is that this reflects such contextually-sensitive processing happening based on lateral and top-down functional connections (MacKay and Bowman, 1969; Rao and Ballard, 1999; Ullman, 2000; Engel et al., 2001; Bledowski et al., 2006; Garrido et al., 2007; Friston and Kiebel, 2009; Kourtzi and Connor, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation with extensive citations to literature on contextual processing.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "888ce8b9-4120-49d7-9714-ae67d47d247b",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C102",
+      "claim": "Timing of event-related signals depends strongly on stimulus properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we note that timing of event-related signals depends strongly on stimulus properties (e.g., Bobak et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement with citation about stimulus-dependence of timing.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "c3cfc553-a811-4d2a-bbc5-feaf6ad961b2",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C103",
+      "claim": "Multivariate classification yields different timings in the peaks of classification depending on the specific kinds of categories evaluated.",
+      "claim_type": "EXPLICIT",
+      "source": "Multivariate classification also yields different timings in the peaks of classification depending on the specific kinds of categories evaluated (Cichy et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement with citation about category-dependence of classification timing.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "e8939fea-019a-4135-9b9c-f31250cb622b",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C104",
+      "claim": "The particular temporal structure of evoked responses is most likely specific to the stimuli used.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the particular temporal structure of evoked responses is most likely specific to the stimuli used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from cited literature about stimulus-specificity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "9b296f25-cb72-4d89-894c-5fda3df949cd",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C105",
+      "claim": "Mapping the temporal structure of representations for a given task and stimuli can be leveraged to probe the dynamics of retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping this structure for a given task and stimuli can be leveraged to probe the dynamics of retrieval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about methodological implications of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "4abda2c7-da9a-4807-a588-0f9a64edcd4f",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C106",
+      "claim": "Neural retrieval of representations through associative links is central for memory and decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, neural retrieval of representations through associative links is central for memory and decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement about the importance of the phenomenon studied.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "5023aae8-7c4d-4043-a163-c67854c82c58",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C107",
+      "claim": "The dynamical structure within retrieval is functionally relevant for value-guided decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we provide evidence that the dynamical structure within retrieval is functionally relevant for value-guided decision making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of main conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "f7367cef-64c3-4d25-9e4b-b78d9a7fc1e1",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C108",
+      "claim": "Analyzing the fine temporal structure of representations increases the potential for studying temporally rich retrieval processes such as replay and planning in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing the fine temporal structure of representations also increases the potential for studying temporally rich retrieval processes such as replay and planning in humans, which were previously confined to animal recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about broader methodological implications of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "88b3bebc-4c21-4431-b0bd-1d3a2aba2e5c",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "claim_id": "C109",
+      "claim": "Temporally rich retrieval processes such as replay and planning were previously confined to animal recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "which were previously confined to animal recordings",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about prior limitations in studying these processes in humans.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "de56a898-aa35-41e9-bf6c-be40b9e5c652",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study included 26 participants (after exclusion of 3) with specified demographic characteristics: age quartiles 18.7-41.4 years, 14 female, 1 left-handed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 provide complete demographic information about the participant sample. The exclusion criteria and final sample characteristics are clearly stated with specific numbers that can be verified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "f0b763c0-f3c1-41f2-9e61-1d719ae6f30f",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Subjects showed strong preference for directly rewarded stimuli (Sd+) but no group-level preference for indirectly associated stimuli (Si+), though subjects were unaware of Si-Sd pairings. Liking ratings increased for Sd+ but not differentially for Si+ vs Si-.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 establish the key behavioral findings with statistical support (p-values provided). The lack of awareness (C6) is important for establishing implicit learning, and the dissociation between Sd and Si preferences is well-documented with appropriate statistics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "3843f327-32a2-4c9f-ac1f-597f037e9185",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MEG sensors showed two temporal waves of category discrimination: occipital/temporal sensors at 90-230 ms and parietal/frontal sensors at 330-550 ms post-stimulus, with permutation-based statistical thresholds established.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 describe sensor-level analysis with appropriate statistical thresholding. The temporal and spatial progression is clearly documented with permutation testing providing rigorous significance thresholds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "ddd8ab34-e1aa-4098-aaa3-17c8bffe44f7",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Multivariate classification revealed two distinct peaks in accuracy at ~200 ms and ~400 ms post-stimulus, with significant concavity at the group level (p=0.02) but not at individual subject level after correction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 establish the core temporal structure finding. The group-level statistical significance (C16) is appropriate, and the honest reporting of lack of individual-level significance (C17) strengthens credibility. The two-peak structure is central to the paper's main claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "7cc960e4-a11d-4c9e-8e5b-c38d561935fb",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Representational similarity analysis showed no within-category clustering at 200 ms (p=0.2) but significant within-category similarity at 400 ms (p=5\u00d710\u207b\u2077), suggesting different representational content at these timepoints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 provide strong statistical evidence for qualitatively different representations at the two temporal components. The highly significant p-value for C19 and non-significant result for C18 create a clear dissociation supporting distinct representational phases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "060f2a7c-b145-4301-ad69-7bc151f22601",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Classification of individual fractal identity peaked sharply at 160 ms without a substantial second peak, contrasting with the two-peak pattern for category classification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 provide important control analysis showing that the two-peak structure is specific to category-level information. This dissociation strengthens the interpretation that different types of information are encoded at different times.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "c3791345-e5af-406d-93d9-4d241a81e21d",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cross-classification analysis showed that the 200 ms component of Si representation was reinstated 270-530 ms after Sd presentation, with experimental design controlling for visual feature confounds through randomization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 establish retrieval of the early component with appropriate cross-classification methodology. C64 addresses a critical confound. The extended time window (270-530 ms) is well-documented with permutation testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "032fd4f3-3873-4394-85e7-044e75650221",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The 400 ms component of Si representation was reinstated 70 ms after outcome presentation (3570 ms after Sd), demonstrating temporally specific retrieval of the late representational component.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 establish retrieval of the late component with precise timing. C65-C66 provide necessary temporal calculations. The specificity of the 70 ms timing is notable and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "dd8c72d7-016c-4d34-b41a-637f4bda2e24",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Two-way ANOVA revealed a significant interaction (p=0.04) showing double dissociation: 200 ms classifier performed better at Sd presentation while 400 ms classifier performed better at outcome presentation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 establish the key double dissociation with appropriate statistical testing. The interaction effect (C26) is the critical statistical result, with C27-C29 providing interpretation. This is central to the paper's main conclusion about differential retrieval timing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "86a973b4-ca5d-4406-9ec8-72e4074ad26a",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Spatial analysis showed distinct sensor patterns for retrieval at Sd (occipital) vs outcome (parietal/temporal), with 71.2% classification accuracy (p=0.002) but no individual sensors surviving multiple comparison correction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 establish spatial dissociation with appropriate statistical testing. C33 honestly reports the limitation of individual sensor analysis. The multivariate approach (C30) is more powerful and appropriately applied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "6e283066-57c5-42a4-ae4b-3b02a7d53fa6",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In subjects preferring Si+ over Si-, reinstatement of the 200 ms component at outcome correlated with behavioral preference (peak ~400 ms post-outcome), while the 400 ms component showed no such correlation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 establish the critical link between neural reinstatement and behavior. The selective correlation with the 200 ms component (C34-C35) but not 400 ms component (C36) supports the functional interpretation. Statistical significance is established with appropriate correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "5a016de0-24f3-46a3-900a-cf209d1fc391",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "MEG data were acquired at 600 Hz, downsampled to 20 ms bins, analyzed with linear SVM (C=10\u2075), and smoothed with 2-D Gaussian kernel (\u03c3=30 ms) for visualization and statistics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 provide complete methodological details for data acquisition and preprocessing. The parameters are clearly specified and appropriate for the analyses performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "2a559131-8f50-484d-9be5-28da82e4e281",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The main finding is that neural representation of indirect stimuli decomposes into two temporal components retrieved at different times, with only one component correlating with value generalization, suggesting temporal structure is key to retrieval function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 summarize the main empirical findings which are well-supported by the grouped results above. C58 is appropriately speculative about broader implications. These summary claims accurately reflect the supported findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "f1e553fc-e64a-49dc-8d3f-36c042a099c6",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors discuss alternative interpretations of retrieval timing, including that information was carried by Sd, retrieval might occur before outcome onset, and the precise timing might reflect averaging across subjects or detection thresholds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 provide thoughtful discussion of alternative interpretations and limitations. C67 is a logical inference, while C68-C72 are appropriately speculative alternatives. This demonstrates appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "ad067f22-0571-4ce5-94f1-2de87812b183",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors propose three possible explanations for lower cross-classification accuracy (~35%) compared to direct classification (~60%): weak retrieved representations, trial-by-trial variability in retrieval, or partial spatial overlap between evoked and retrieved patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 provide reasonable speculative explanations for an important observation. These are appropriately presented as possibilities rather than conclusions, and all are plausible given the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "d33f3561-3811-4e77-b40e-520de9bec6f8",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors propose that retrieval of the 200 ms (stimulus-specific) vs 400 ms (category-level) component at outcome determines whether value updates are stimulus-specific or category-level, potentially explaining prior fMRI findings and highlighting the importance of reward timing relative to representational dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C78 present an interesting mechanistic hypothesis linking representational content to value updating specificity, but this remains speculative without direct experimental test. C79 correctly notes fMRI limitations. C80 makes a strong claim about general importance that extends beyond the direct evidence. The hypothesis is plausible but requires further testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "94cf9a54-0768-4668-9d44-0c481ee96974",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors establish the context that while retrieval involves pattern reinstatement and neural activity evolves rapidly during perception, the specific temporal components reinstated during retrieval and their functional significance were previously unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C48 accurately summarize prior literature and identify the knowledge gap. The citations are appropriate and the characterization of what was and wasn't known is accurate, establishing the novelty of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "a201a267-23e4-471d-bcfa-f16e7bc7606c",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors describe recent MEG advances enabling study of fast-changing representations and the sensory preconditioning paradigm where value generalizes through associative links, potentially via neural reinstatement as shown by Wimmer & Shohamy (2012).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54 accurately describe methodological advances and the behavioral paradigm. The citations are appropriate and C54's speculation about mechanism is appropriately tentative while citing relevant prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "b6af025f-c201-4b6c-a72f-afb70351caa2",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The authors report that classification of individual exemplars (rather than categories) did not reach sufficient performance, possibly due to limited training samples per stimulus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 honestly report a negative result with plausible explanation. This transparency about methodological limitations is appropriate and helps interpret the scope of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "f2a769e3-fb84-4535-803a-e4dc00b05de6",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The authors discuss the relationship between online and offline processing, noting that the distinction is sometimes blurred and that it remains unclear whether value generalization in sensory preconditioning occurs online, offline, or through representational change in Sd.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C89 provide thoughtful discussion of conceptual issues with appropriate citations. C87-C89 present alternative interpretations appropriately. This demonstrates engagement with broader theoretical questions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "047aaa50-45da-4666-97cf-630ad2b107ef",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The authors review animal and human literature showing that temporal structure of retrieval subserves complex memory and decision-making, with rodents showing structured retrieval of locations/actions/rewards and humans showing theta power and hippocampal patterns coding temporal order.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C94 accurately summarize relevant comparative literature with appropriate citations. This contextualizes the current findings within broader neuroscience of temporal structure in memory.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "ba45321d-0963-4d9c-b58c-9797d934c645",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The authors interpret their findings in the context of visual processing literature, suggesting that early (~200 ms) activity reflects stimulus form while later (~400 ms) activity incorporates contextual information, possibly via medial temporal lobe and lateral connections, consistent with N400 and N2pc ERP components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C101 provide extensive literature context with appropriate citations. C101 is appropriately speculative in interpretation. The connection to established ERP components strengthens the interpretation of the temporal dynamics observed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "d011fa09-18ef-4247-9f8d-c5cfe08e2f8d",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The authors note that timing of event-related signals depends on stimulus properties, so the specific temporal structure observed is likely stimulus-specific, but mapping this structure enables probing retrieval dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C105 appropriately qualify the generalizability of specific timings while highlighting the methodological contribution. This demonstrates appropriate scientific caution about overgeneralization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    },
+    {
+      "id": "d6ef5186-5f35-4f38-920a-67c4921044a3",
+      "content_id": "8749d9dd-8c5b-44de-9f7a-67ceba2e0368",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The authors conclude that neural retrieval through associative links is central to memory and decision-making, that dynamical structure within retrieval is functionally relevant for value-guided decisions, and that analyzing fine temporal structure enables studying replay and planning processes in humans previously limited to animal recordings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C107 appropriately summarize the main conclusions supported by the data. C108-C109 highlight broader methodological implications. These conclusions are well-supported by the empirical findings and appropriately qualified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:21:00.833348Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2f081aa6-aaf6-4c70-820c-88dab38eb456",
+      "result_id": "de56a898-aa35-41e9-bf6c-be40b9e5c652"
+    },
+    {
+      "claim_id": "d7b4cc3e-ee66-435d-9fe2-21cf9b023407",
+      "result_id": "de56a898-aa35-41e9-bf6c-be40b9e5c652"
+    },
+    {
+      "claim_id": "ec700ac3-e319-466e-98ad-a46e8aff88d8",
+      "result_id": "de56a898-aa35-41e9-bf6c-be40b9e5c652"
+    },
+    {
+      "claim_id": "63e9d9d4-a0da-4e8b-8ad8-b0ee453c4f24",
+      "result_id": "de56a898-aa35-41e9-bf6c-be40b9e5c652"
+    },
+    {
+      "claim_id": "0123da41-cb62-499f-a59d-a3675c7b6dad",
+      "result_id": "de56a898-aa35-41e9-bf6c-be40b9e5c652"
+    },
+    {
+      "claim_id": "d5ee819c-f496-4f83-ab9e-a256011c87f4",
+      "result_id": "f0b763c0-f3c1-41f2-9e61-1d719ae6f30f"
+    },
+    {
+      "claim_id": "2d23870d-132c-4dbf-b0fd-4e0386346b86",
+      "result_id": "f0b763c0-f3c1-41f2-9e61-1d719ae6f30f"
+    },
+    {
+      "claim_id": "27785d8f-d112-4e32-bf8f-c9d4634fcb8c",
+      "result_id": "f0b763c0-f3c1-41f2-9e61-1d719ae6f30f"
+    },
+    {
+      "claim_id": "977f09f0-47e0-45bc-a019-85e9f5a6a5f7",
+      "result_id": "f0b763c0-f3c1-41f2-9e61-1d719ae6f30f"
+    },
+    {
+      "claim_id": "1970c494-8ab7-468a-af90-28ba2e813fd5",
+      "result_id": "f0b763c0-f3c1-41f2-9e61-1d719ae6f30f"
+    },
+    {
+      "claim_id": "b51c02f1-70e3-4f93-8054-88b89bd28b17",
+      "result_id": "3843f327-32a2-4c9f-ac1f-597f037e9185"
+    },
+    {
+      "claim_id": "6bb368db-d34a-44a4-9a87-7aa03e2bc502",
+      "result_id": "3843f327-32a2-4c9f-ac1f-597f037e9185"
+    },
+    {
+      "claim_id": "ead8a4e0-ae5c-4a0c-90b3-7c14a0644d83",
+      "result_id": "3843f327-32a2-4c9f-ac1f-597f037e9185"
+    },
+    {
+      "claim_id": "b05e2a21-a4c3-41d3-aada-9e9d7280f135",
+      "result_id": "3843f327-32a2-4c9f-ac1f-597f037e9185"
+    },
+    {
+      "claim_id": "ad62f18c-a812-4719-956e-8e5a50b41dbb",
+      "result_id": "ddd8ab34-e1aa-4098-aaa3-17c8bffe44f7"
+    },
+    {
+      "claim_id": "afa8978f-7ad5-43b0-8365-d3d06a2206e1",
+      "result_id": "ddd8ab34-e1aa-4098-aaa3-17c8bffe44f7"
+    },
+    {
+      "claim_id": "a58016ab-6d6d-406e-888d-1bfa0dc15c74",
+      "result_id": "ddd8ab34-e1aa-4098-aaa3-17c8bffe44f7"
+    },
+    {
+      "claim_id": "c2115eaa-1014-4051-84cf-f86aae4daa02",
+      "result_id": "7cc960e4-a11d-4c9e-8e5b-c38d561935fb"
+    },
+    {
+      "claim_id": "a99059d9-5e55-44d6-83f6-7d1e6821a8d0",
+      "result_id": "7cc960e4-a11d-4c9e-8e5b-c38d561935fb"
+    },
+    {
+      "claim_id": "e9d0fd11-cda5-4ad9-81f2-8c2213555ef8",
+      "result_id": "060f2a7c-b145-4301-ad69-7bc151f22601"
+    },
+    {
+      "claim_id": "610e7b15-4da2-4569-a751-0c5b72fce471",
+      "result_id": "060f2a7c-b145-4301-ad69-7bc151f22601"
+    },
+    {
+      "claim_id": "e3db711d-88a9-43b3-afd8-af3f0b6cf834",
+      "result_id": "c3791345-e5af-406d-93d9-4d241a81e21d"
+    },
+    {
+      "claim_id": "69159abf-1665-4fe9-a2d3-0aedf7adc0dd",
+      "result_id": "c3791345-e5af-406d-93d9-4d241a81e21d"
+    },
+    {
+      "claim_id": "33846285-c407-44ee-b124-3ed16b65f146",
+      "result_id": "c3791345-e5af-406d-93d9-4d241a81e21d"
+    },
+    {
+      "claim_id": "5e8c6676-9444-4e0f-9fbe-8c717e8e0ed2",
+      "result_id": "032fd4f3-3873-4394-85e7-044e75650221"
+    },
+    {
+      "claim_id": "5b99fd58-8d72-456d-8292-04dc5769cc3f",
+      "result_id": "032fd4f3-3873-4394-85e7-044e75650221"
+    },
+    {
+      "claim_id": "6a75f762-3629-4838-b4de-ff7a4b3e0e53",
+      "result_id": "032fd4f3-3873-4394-85e7-044e75650221"
+    },
+    {
+      "claim_id": "a72754b3-e9c1-47dd-8825-d4505b6641b3",
+      "result_id": "032fd4f3-3873-4394-85e7-044e75650221"
+    },
+    {
+      "claim_id": "bc323dee-53cd-4fad-878f-4ed5ba140495",
+      "result_id": "dd8c72d7-016c-4d34-b41a-637f4bda2e24"
+    },
+    {
+      "claim_id": "9470e3dc-d618-409b-aeeb-1fdc90bfaceb",
+      "result_id": "dd8c72d7-016c-4d34-b41a-637f4bda2e24"
+    },
+    {
+      "claim_id": "688b0956-6707-47c9-a8b5-869d437b5da5",
+      "result_id": "dd8c72d7-016c-4d34-b41a-637f4bda2e24"
+    },
+    {
+      "claim_id": "bc4aa423-8daa-4d9b-8be9-13dc01002db0",
+      "result_id": "dd8c72d7-016c-4d34-b41a-637f4bda2e24"
+    },
+    {
+      "claim_id": "7e1296cc-6acd-42e6-8d2a-405c2c432da3",
+      "result_id": "86a973b4-ca5d-4406-9ec8-72e4074ad26a"
+    },
+    {
+      "claim_id": "793e89a3-d783-45c3-928d-a104e8979639",
+      "result_id": "86a973b4-ca5d-4406-9ec8-72e4074ad26a"
+    },
+    {
+      "claim_id": "32578fd6-23b1-4884-8da0-bc1f1ecc2cd5",
+      "result_id": "86a973b4-ca5d-4406-9ec8-72e4074ad26a"
+    },
+    {
+      "claim_id": "b1231a03-f53f-4fcd-8238-22939fddc775",
+      "result_id": "86a973b4-ca5d-4406-9ec8-72e4074ad26a"
+    },
+    {
+      "claim_id": "4b7b2343-00e4-41d5-a2ca-c76074c82cab",
+      "result_id": "6e283066-57c5-42a4-ae4b-3b02a7d53fa6"
+    },
+    {
+      "claim_id": "f79f8656-adb0-4a92-96d0-5ebbe44ddf67",
+      "result_id": "6e283066-57c5-42a4-ae4b-3b02a7d53fa6"
+    },
+    {
+      "claim_id": "fd65c562-648d-44f6-865e-67d67691d73b",
+      "result_id": "6e283066-57c5-42a4-ae4b-3b02a7d53fa6"
+    },
+    {
+      "claim_id": "874f0a50-46e0-482a-8a9f-5859eb178b6e",
+      "result_id": "5a016de0-24f3-46a3-900a-cf209d1fc391"
+    },
+    {
+      "claim_id": "fbe1871e-073f-4225-876c-4c7c5886d1bb",
+      "result_id": "5a016de0-24f3-46a3-900a-cf209d1fc391"
+    },
+    {
+      "claim_id": "dd8c95a7-39cd-4b76-856a-5939fbeb605e",
+      "result_id": "5a016de0-24f3-46a3-900a-cf209d1fc391"
+    },
+    {
+      "claim_id": "b943e42d-19b1-4e83-a292-4172fa9fb305",
+      "result_id": "5a016de0-24f3-46a3-900a-cf209d1fc391"
+    },
+    {
+      "claim_id": "5d394827-50e7-4c89-a03e-3a03c2ff4713",
+      "result_id": "5a016de0-24f3-46a3-900a-cf209d1fc391"
+    },
+    {
+      "claim_id": "5adcf2ba-271f-441d-aa0b-0cc7205562fc",
+      "result_id": "2a559131-8f50-484d-9be5-28da82e4e281"
+    },
+    {
+      "claim_id": "5484a34a-6f3c-446d-bee2-878d1cedd262",
+      "result_id": "2a559131-8f50-484d-9be5-28da82e4e281"
+    },
+    {
+      "claim_id": "09fcac0e-ebca-487e-a249-e4eda88cc27e",
+      "result_id": "2a559131-8f50-484d-9be5-28da82e4e281"
+    },
+    {
+      "claim_id": "69e24ca0-14b5-4a0e-a180-a84ab9e7d8fa",
+      "result_id": "2a559131-8f50-484d-9be5-28da82e4e281"
+    },
+    {
+      "claim_id": "5d53e7f7-25e4-4d38-903f-c139ce3f59b8",
+      "result_id": "f1e553fc-e64a-49dc-8d3f-36c042a099c6"
+    },
+    {
+      "claim_id": "7b1eec5d-edf6-45d9-a280-07eddb0b3baa",
+      "result_id": "f1e553fc-e64a-49dc-8d3f-36c042a099c6"
+    },
+    {
+      "claim_id": "2a9a6190-4e10-4634-b525-310387a45964",
+      "result_id": "f1e553fc-e64a-49dc-8d3f-36c042a099c6"
+    },
+    {
+      "claim_id": "c59f44c8-15fb-406d-b2bf-18d65c47ee57",
+      "result_id": "f1e553fc-e64a-49dc-8d3f-36c042a099c6"
+    },
+    {
+      "claim_id": "6237988e-66e3-4e22-8f43-fd1059da1265",
+      "result_id": "f1e553fc-e64a-49dc-8d3f-36c042a099c6"
+    },
+    {
+      "claim_id": "cb34767e-e0fb-4ee4-a70e-70125fcb6252",
+      "result_id": "f1e553fc-e64a-49dc-8d3f-36c042a099c6"
+    },
+    {
+      "claim_id": "88927d5a-e2af-4e5d-8ea8-c13f6a7b634c",
+      "result_id": "ad067f22-0571-4ce5-94f1-2de87812b183"
+    },
+    {
+      "claim_id": "45bf377c-d88c-459a-8c02-f670e34fac53",
+      "result_id": "ad067f22-0571-4ce5-94f1-2de87812b183"
+    },
+    {
+      "claim_id": "ebf6926e-70ef-4fb0-8d00-833c05ca0f8e",
+      "result_id": "ad067f22-0571-4ce5-94f1-2de87812b183"
+    },
+    {
+      "claim_id": "caacb765-e976-47f2-a8a1-078f60e9d8d4",
+      "result_id": "d33f3561-3811-4e77-b40e-520de9bec6f8"
+    },
+    {
+      "claim_id": "b47a31bf-26c4-48ac-8094-5048850bb3c0",
+      "result_id": "d33f3561-3811-4e77-b40e-520de9bec6f8"
+    },
+    {
+      "claim_id": "a82c002e-6c55-447d-adad-7ea24bcb1f52",
+      "result_id": "d33f3561-3811-4e77-b40e-520de9bec6f8"
+    },
+    {
+      "claim_id": "b4ebefcb-7ae3-4e4f-b89f-13abbfd64908",
+      "result_id": "d33f3561-3811-4e77-b40e-520de9bec6f8"
+    },
+    {
+      "claim_id": "835e2fc3-b3cf-47db-8dd0-2c83e719f4b7",
+      "result_id": "d33f3561-3811-4e77-b40e-520de9bec6f8"
+    },
+    {
+      "claim_id": "73ffcf77-304e-48a8-8499-83a7be99e900",
+      "result_id": "94cf9a54-0768-4668-9d44-0c481ee96974"
+    },
+    {
+      "claim_id": "5fbe28f3-ed3b-40e6-8b3e-7a0bcc195b9e",
+      "result_id": "94cf9a54-0768-4668-9d44-0c481ee96974"
+    },
+    {
+      "claim_id": "48869657-7fce-4ff7-8f3a-a2cc3539edd4",
+      "result_id": "94cf9a54-0768-4668-9d44-0c481ee96974"
+    },
+    {
+      "claim_id": "51dc88a9-2cd8-4961-8df2-9e80648647eb",
+      "result_id": "94cf9a54-0768-4668-9d44-0c481ee96974"
+    },
+    {
+      "claim_id": "b0d7fb97-fa8b-4ec8-9bf6-9a50749473f8",
+      "result_id": "94cf9a54-0768-4668-9d44-0c481ee96974"
+    },
+    {
+      "claim_id": "a20e6c79-2297-468c-903f-07132cd951a3",
+      "result_id": "94cf9a54-0768-4668-9d44-0c481ee96974"
+    },
+    {
+      "claim_id": "c4a02a9b-0a23-4c90-8188-39ce1a8c2e96",
+      "result_id": "94cf9a54-0768-4668-9d44-0c481ee96974"
+    },
+    {
+      "claim_id": "c073214a-5bf1-4595-8600-230567d201b0",
+      "result_id": "94cf9a54-0768-4668-9d44-0c481ee96974"
+    },
+    {
+      "claim_id": "ae9d0ac0-74b6-4f49-9fc1-6e731748d335",
+      "result_id": "94cf9a54-0768-4668-9d44-0c481ee96974"
+    },
+    {
+      "claim_id": "425eb436-69fb-42f6-b5f1-67cb42aa5fdc",
+      "result_id": "94cf9a54-0768-4668-9d44-0c481ee96974"
+    },
+    {
+      "claim_id": "0989bd1f-8b4b-40f7-98d6-a8e05b7e7cd8",
+      "result_id": "94cf9a54-0768-4668-9d44-0c481ee96974"
+    },
+    {
+      "claim_id": "f9a5dea4-2671-4cb7-b7d6-5a11d01ac14d",
+      "result_id": "a201a267-23e4-471d-bcfa-f16e7bc7606c"
+    },
+    {
+      "claim_id": "0ffeb00a-8774-4a73-a454-5cccf1f3c3d0",
+      "result_id": "a201a267-23e4-471d-bcfa-f16e7bc7606c"
+    },
+    {
+      "claim_id": "923464f0-868d-40b0-a6a4-adbda12c9da9",
+      "result_id": "a201a267-23e4-471d-bcfa-f16e7bc7606c"
+    },
+    {
+      "claim_id": "911555ab-79b4-4fdb-a1db-44573b061466",
+      "result_id": "a201a267-23e4-471d-bcfa-f16e7bc7606c"
+    },
+    {
+      "claim_id": "d69bfb3f-bf04-45a1-ac13-118b79559593",
+      "result_id": "a201a267-23e4-471d-bcfa-f16e7bc7606c"
+    },
+    {
+      "claim_id": "4ee65c94-dd74-4a4c-9e54-69d311a825b2",
+      "result_id": "a201a267-23e4-471d-bcfa-f16e7bc7606c"
+    },
+    {
+      "claim_id": "cb762cee-1518-4896-952b-31267e2006cd",
+      "result_id": "b6af025f-c201-4b6c-a72f-afb70351caa2"
+    },
+    {
+      "claim_id": "d124c56a-0493-4836-965a-6158a9f9c855",
+      "result_id": "b6af025f-c201-4b6c-a72f-afb70351caa2"
+    },
+    {
+      "claim_id": "5a5a2ee0-9b68-49e2-978b-77e6b7c32f5c",
+      "result_id": "f2a769e3-fb84-4535-803a-e4dc00b05de6"
+    },
+    {
+      "claim_id": "1d0d9a36-c464-4857-b6f8-6308ff144844",
+      "result_id": "f2a769e3-fb84-4535-803a-e4dc00b05de6"
+    },
+    {
+      "claim_id": "f35a866e-5f20-49bf-93a0-00f08c5cdd49",
+      "result_id": "f2a769e3-fb84-4535-803a-e4dc00b05de6"
+    },
+    {
+      "claim_id": "8ce774a3-72b4-4dce-b7be-e17151f36820",
+      "result_id": "f2a769e3-fb84-4535-803a-e4dc00b05de6"
+    },
+    {
+      "claim_id": "d2354389-fb20-42b8-8510-7cc89512bd6f",
+      "result_id": "f2a769e3-fb84-4535-803a-e4dc00b05de6"
+    },
+    {
+      "claim_id": "0bd7353a-1a3b-4722-9651-332de57a96f9",
+      "result_id": "f2a769e3-fb84-4535-803a-e4dc00b05de6"
+    },
+    {
+      "claim_id": "a16806b9-430e-4ce5-bae5-abe6e0e0d6f4",
+      "result_id": "f2a769e3-fb84-4535-803a-e4dc00b05de6"
+    },
+    {
+      "claim_id": "90aa32bf-8bb3-47be-a694-fcceddbf5190",
+      "result_id": "047aaa50-45da-4666-97cf-630ad2b107ef"
+    },
+    {
+      "claim_id": "6ca4b35a-38c7-445c-855b-3194e167f5bb",
+      "result_id": "047aaa50-45da-4666-97cf-630ad2b107ef"
+    },
+    {
+      "claim_id": "509bfb26-6844-45ae-b813-65b2601e2778",
+      "result_id": "047aaa50-45da-4666-97cf-630ad2b107ef"
+    },
+    {
+      "claim_id": "b57c797e-a244-4866-9764-9a10766dea18",
+      "result_id": "047aaa50-45da-4666-97cf-630ad2b107ef"
+    },
+    {
+      "claim_id": "03353ef5-5cb2-4c42-a427-9bd1bc4949e0",
+      "result_id": "047aaa50-45da-4666-97cf-630ad2b107ef"
+    },
+    {
+      "claim_id": "8d5c0235-f5a7-443a-b4c4-81411ab7c61b",
+      "result_id": "ba45321d-0963-4d9c-b58c-9797d934c645"
+    },
+    {
+      "claim_id": "aaa308a9-a7b9-4182-b2c0-38ae0ab70794",
+      "result_id": "ba45321d-0963-4d9c-b58c-9797d934c645"
+    },
+    {
+      "claim_id": "b1fbc006-bb59-483b-8e5d-18a650fce14c",
+      "result_id": "ba45321d-0963-4d9c-b58c-9797d934c645"
+    },
+    {
+      "claim_id": "73bc133c-fc10-4855-aa80-108bba339d3f",
+      "result_id": "ba45321d-0963-4d9c-b58c-9797d934c645"
+    },
+    {
+      "claim_id": "96765993-e92f-40d5-9736-c47910b8b44e",
+      "result_id": "ba45321d-0963-4d9c-b58c-9797d934c645"
+    },
+    {
+      "claim_id": "442f5feb-1d6b-4c83-a2c3-ad929f2793ff",
+      "result_id": "ba45321d-0963-4d9c-b58c-9797d934c645"
+    },
+    {
+      "claim_id": "9e055297-5466-4e27-8fac-87ca14c3fb14",
+      "result_id": "ba45321d-0963-4d9c-b58c-9797d934c645"
+    },
+    {
+      "claim_id": "888ce8b9-4120-49d7-9714-ae67d47d247b",
+      "result_id": "d011fa09-18ef-4247-9f8d-c5cfe08e2f8d"
+    },
+    {
+      "claim_id": "c3cfc553-a811-4d2a-bbc5-feaf6ad961b2",
+      "result_id": "d011fa09-18ef-4247-9f8d-c5cfe08e2f8d"
+    },
+    {
+      "claim_id": "e8939fea-019a-4135-9b9c-f31250cb622b",
+      "result_id": "d011fa09-18ef-4247-9f8d-c5cfe08e2f8d"
+    },
+    {
+      "claim_id": "9b296f25-cb72-4d89-894c-5fda3df949cd",
+      "result_id": "d011fa09-18ef-4247-9f8d-c5cfe08e2f8d"
+    },
+    {
+      "claim_id": "4abda2c7-da9a-4807-a588-0f9a64edcd4f",
+      "result_id": "d6ef5186-5f35-4f38-920a-67c4921044a3"
+    },
+    {
+      "claim_id": "5023aae8-7c4d-4043-a163-c67854c82c58",
+      "result_id": "d6ef5186-5f35-4f38-920a-67c4921044a3"
+    },
+    {
+      "claim_id": "f7367cef-64c3-4d25-9e4b-b78d9a7fc1e1",
+      "result_id": "d6ef5186-5f35-4f38-920a-67c4921044a3"
+    },
+    {
+      "claim_id": "88b3bebc-4c21-4431-b0bd-1d3a2aba2e5c",
+      "result_id": "d6ef5186-5f35-4f38-920a-67c4921044a3"
+    }
+  ],
+  "comparisons": []
+}

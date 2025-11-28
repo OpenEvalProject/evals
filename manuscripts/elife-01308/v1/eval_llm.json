@@ -1,0 +1,485 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C38"
+    ],
+    "result": "Proteomic analysis reveals that primary tumors of differing metastatic potential (MDA-MB-231 vs LM2) differ in ECM composition. The matrisome of MDA-MB-231 tumors comprises 144 proteins while LM2 tumors comprise 161 proteins, with 118 proteins common to both, 26 specific to poorly metastatic tumors, and 43 specific to highly metastatic tumors. The differentially expressed proteins belong mostly to ECM glycoproteins and ECM regulators categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29-C33, and C38 are well-supported by the proteomic data presented in Figures 1B and 2. The mass spectrometry analysis with appropriate biological replicates and peptide detection thresholds provides robust evidence for differential ECM composition between tumor types. The categorization of proteins is based on established matrisome definitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C44",
+      "C119",
+      "C120",
+      "C122"
+    ],
+    "result": "Both tumor cells and stromal cells contribute to the tumor ECM, and tumors of differing metastatic potential differ in both tumor- and stroma-derived ECM components. Species-specific peptide analysis distinguishes human (tumor) from mouse (stroma) contributions, revealing that tumor cells of different metastatic potential can instruct stromal cells to express different ECM protein sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C44, C119, C120, and C122 are supported by the species-specific peptide analysis shown in Figure 3. The xenograft model allows clear distinction between human tumor-derived and mouse stroma-derived proteins through mass spectrometry. The observation that stroma-derived proteins differ between tumor types provides evidence for tumor-stroma crosstalk, though the mechanistic basis remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C46",
+      "C47",
+      "C49"
+    ],
+    "result": "ECM signatures of highly metastatic tumors reveal up-regulation of TGF\u03b2 and HIF1\u03b1/VEGF signaling pathways. Pathway analysis shows that 17 of 43 (40%) ECM proteins up-regulated in LM2 tumors are downstream of TGF\u03b2 signaling, and 10 are influenced by HIF1\u03b1/VEGF pathway, with substantial overlap between these pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C43, C46, C47, and C49 are supported by Ingenuity Pathway Analysis results shown in Figure 4. The pathway analysis appropriately identifies upstream regulators of the differentially expressed ECM proteins. However, the analysis is computational/inferential rather than experimentally validated, and the claim that one can identify signaling pathways by interrogating ECM (C49) is a reasonable but not definitively proven conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C50",
+      "C60",
+      "C67",
+      "C70",
+      "C72",
+      "C78",
+      "C79",
+      "C84",
+      "C96"
+    ],
+    "result": "LTBP3, detected only in highly metastatic tumors, plays a causal role in metastasis by promoting primary tumor invasion. Knockdown of LTBP3 significantly decreased metastatic burden without affecting primary tumor growth, and resulted in encapsulated, non-invasive tumors with collagen deposition at the periphery. LTBP3 likely acts early in the metastatic cascade by promoting tumor invasiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims regarding LTBP3 (C6, C50, C60, C67, C70, C72, C78, C79, C84, C96) are well-supported by functional knockdown experiments shown in Figures 5-7. The experiments include appropriate controls (sh-Cont., two independent hairpins), verification of knockdown persistence in vivo, and multiple complementary assays (metastasis counting, histology, Alu PCR). The orthotopic and tail vein injection experiments together support the conclusion that LTBP3 affects invasion at the primary site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C51",
+      "C60",
+      "C67",
+      "C68",
+      "C69",
+      "C72",
+      "C78",
+      "C82",
+      "C84",
+      "C102"
+    ],
+    "result": "SNED1, detected only in highly metastatic tumors, plays a causal role in metastasis by promoting primary tumor invasion. This study reports for the first time a functional role for SNED1 in tumor progression. Knockdown of SNED1 dramatically decreased metastatic burden, resulted in encapsulated non-invasive tumors, but did not affect lung colonization in tail vein injection experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims regarding SNED1 (C7, C51, C60, C67-C69, C72, C78, C82, C84, C102) are well-supported by functional experiments in Figures 5-7. The combination of orthotopic and tail vein injection experiments provides strong evidence that SNED1 acts at the invasion stage rather than later metastatic steps. The novelty claim (C102) is supported by the lack of prior functional studies on SNED1 in metastasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C52",
+      "C60",
+      "C67",
+      "C68",
+      "C69",
+      "C72",
+      "C81",
+      "C86"
+    ],
+    "result": "EGLN1, detected only in highly metastatic tumors, plays a causal role in metastasis by acting at later stages of the metastatic cascade. Knockdown of EGLN1 dramatically decreased lung metastases in both orthotopic and tail vein injection experiments, suggesting it is important for extravasation, seeding, survival, and/or growth in secondary sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims regarding EGLN1 (C8, C52, C60, C67-C69, C72, C81, C86) are supported by functional experiments in Figures 5 and 7. The observation that EGLN1 knockdown affects metastasis in both orthotopic and tail vein models, while not affecting primary tumor invasion (Figure 6), supports the conclusion that it acts at later metastatic stages. However, the specific step(s) affected remain inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C53",
+      "C60",
+      "C67",
+      "C70",
+      "C71",
+      "C72",
+      "C81",
+      "C86",
+      "C109"
+    ],
+    "result": "S100A2, detected only in highly metastatic tumors, plays a causal role in metastasis by acting at later stages of the metastatic cascade. Knockdown of S100A2 led to significant inhibition of metastatic dissemination in both orthotopic and tail vein injection experiments, suggesting it is important for the growth of tumor cells in distant organs, particularly the lungs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims regarding S100A2 (C9, C53, C60, C67, C70-C72, C81, C86, C109) are supported by functional experiments in Figures 5-7. The pattern of effects (reduced metastasis in both orthotopic and tail vein models without affecting primary tumor invasion) supports the conclusion that S100A2 acts at later metastatic stages. The inference about growth in distant organs (C109) is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C66",
+      "C93"
+    ],
+    "result": "CYR61, a tumor-derived ECM protein detected in both tumor types but with greater abundance in LM2 tumors, is not necessary to promote metastatic dissemination. Despite being up-regulated in more aggressive tumors in previous studies, knocking down CYR61 did not affect metastasis formation in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C66, and C93 are supported by the proteomic data (Figures 2-3) and functional knockdown experiments (Figure 5). The negative result for CYR61 serves as an important control, demonstrating that not all proteins up-regulated in metastatic tumors are functionally required for metastasis. The experiments were conducted with the same rigor as for the other proteins tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C87",
+      "C88"
+    ],
+    "result": "High expression of LTBP3 and SNED1 correlates with poor outcome for ER\u2212/PR\u2212 breast cancer patients. Using Kaplan-Meier Plotter analysis, SNED1 and LTBP3 expression inversely correlated with survival of ER\u2212/PR\u2212 patients (p=0.0079 and p=0.034 respectively), but not for all breast cancer patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C87, and C88 are supported by the Kaplan-Meier analysis shown in Figure 8. The statistical significance is appropriate (p<0.05) and the specificity to ER\u2212/PR\u2212 patients is consistent with the triple-negative origin of the MDA-MB-231 cell line. However, this is mRNA expression data from public databases, not protein-level measurements, and the authors appropriately note the loose correlation between mRNA and protein levels (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "mRNA levels and steady-state protein levels do not correlate well. RT-qPCR analysis showed that mRNA changes for CYR61, EGLN1, and LTBP3 do not correspond with marked differences in protein levels detected, although S100A2 and SNED1 show corresponding mRNA changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C56, and C57 are supported by the RT-qPCR data in Figure 2\u2014figure supplement 1C and the citation to Gygi et al., 1999. This is an important caveat for interpreting the clinical correlation data (C10-C11) which relies on mRNA expression. The observation strengthens the rationale for proteomic rather than transcriptomic approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Ltbp3 and Sned1 mRNAs are up-regulated during malignant progression in the autochthonous MMTV-PyMT murine mammary tumor model, providing additional validation in a different tumor model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C59 are supported by RT-qPCR data shown in Figure 2\u2014figure supplement 1D. This provides independent validation in an autochthonous mouse model, strengthening the relevance of the findings beyond the xenograft system. However, sample sizes and statistical analysis details are not fully described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C73"
+    ],
+    "result": "Knockdown of the five ECM genes (CYR61, LTBP3, SNED1, EGLN1, S100A2) did not significantly affect primary tumor growth, proliferation, apoptosis, or vascularization. The knockdowns persisted in vivo without compensatory up-regulation by the stroma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 and C73 are supported by data in Figures 5A, 5C, 5\u2014figure supplements 2-3, and 6\u2014figure supplement 1. These controls are essential for interpreting the metastasis results, demonstrating that the effects are specific to metastatic dissemination rather than general effects on tumor growth. However, C64 states 'data not shown' which is a weakness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Control LM2 tumors are highly invasive and fibrotic, invading skin and surrounding muscles. CYR61, EGLN1, and S100A2 knockdown did not influence tumor invasion or fibrosis, while LTBP3 and SNED1 knockdown tumors showed collagen deposition at the periphery forming a capsule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by Masson's Trichrome staining shown in Figure 6. The histological analysis provides clear visual evidence for differential effects on tumor architecture and invasiveness. The encapsulation phenotype for LTBP3 and SNED1 knockdown is striking and consistent with their proposed role in promoting invasion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C82",
+      "C83",
+      "C85"
+    ],
+    "result": "In tail vein injection experiments, control LM2 cells efficiently colonized lungs. Knockdown of LTBP3 or SNED1 did not affect lung colonization, though LTBP3 knockdown produced smaller metastases. This suggests LTBP3 affects metastasis growth while SNED1 does not act at later metastatic stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C82, C83, and C85 are supported by data in Figure 7. The tail vein injection experiments are critical for distinguishing early (invasion) from late (colonization/growth) metastatic functions. The observation that LTBP3 affects metastasis size but not number is interesting, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "LM2 cells metastasize to lungs, liver, and spleen from the primary site when injected orthotopically into the mammary fat pad.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by data in Figure 5B showing metastases in multiple organs. This establishes the metastatic tropism of the LM2 cells in this experimental system, which differs somewhat from the original lung-specific selection (C28), possibly due to differences in injection conditions (no Matrigel, different mouse strain).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C110"
+    ],
+    "result": "A proteomics-based discovery approach can define ECM signatures of tumors of differing metastatic potential with high yield. A high proportion of proteins detected as up-regulated in highly metastatic tumors contribute to metastatic dissemination (4 out of 5 tested proteins, plus previously reported proteins).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C90, and C110 represent the main conclusions of the study. The 80% success rate (4/5 proteins tested showed functional roles) is impressive and supports the utility of the proteomic approach. When combined with previously validated proteins (ANGPTL4, CTSB, IGFBP4, LOXL2) and clinical correlations, approximately 12 of 43 proteins show evidence of functional involvement in metastasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Four out of five ECM or ECM-associated proteins not previously clearly implicated in metastasis (LTBP3, SNED1, EGLN1, S100A2, but not CYR61) play roles at different steps of the metastatic cascade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 accurately summarizes the functional validation results. The statement is well-supported by the comprehensive experimental data in Figures 5-7. The inclusion of the negative result (CYR61) strengthens the conclusion by demonstrating selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Several proteins identified in the study have been previously implicated in breast cancer metastasis or show clinical correlations. From the 43 ECM proteins expressed only in metastatic LM2 cells, 12 show suggestive evidence of functional involvement in breast cancer metastasis based on this study, prior literature, or clinical correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42, C111-C113 are supported by appropriate literature citations and Kaplan-Meier analysis. This contextualizes the findings within existing knowledge and strengthens the relevance of the proteomic signature. The 12/43 (28%) rate of proteins with evidence for metastatic involvement is substantial and validates the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C45",
+      "C48"
+    ],
+    "result": "The LM2 cell line and its metastatic potential have previously been shown to be dependent on TGF\u03b2. The convergence of TGF\u03b2 and HIF1\u03b1 signaling pathways is a key contributor to tumor-stroma crosstalk in breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C48 are supported by appropriate citations (Minn et al., 2007; Curran and Keely, 2013). These provide important context for interpreting the pathway analysis results and connect the ECM findings to known signaling mechanisms in breast cancer metastasis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "LTBP3 is a protein that regulates TGF\u03b2 secretion and bioavailability and contributes to fibrillar ECM network formation. LTBP3 is a member of a protein family; LTBP1, LTBP2, and LTBP4 were all detected in both tumor types, with LTBP1 and LTBP4 expressed by tumor cells and LTBP2 by both tumor and stromal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C97-C100 are supported by appropriate citations and proteomic data in Figures 2-3. This provides important molecular context for understanding LTBP3 function. The observation that other LTBP family members are present in both tumor types while only LTBP3 is specific to metastatic tumors is interesting and suggests specific rather than redundant functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C101",
+      "C103"
+    ],
+    "result": "SNED1 is a large ECM glycoprotein first identified as a potential basement membrane component. SNED1 displays two potential integrin-binding sites: an RGD motif upstream of the amino-terminal NIDO domain and an LDV motif upstream of the first EGF domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101 and C103 are supported by citation to Leimeister et al., 2004 and sequence analysis. The identification of integrin-binding motifs provides a plausible mechanism for SNED1's role in promoting invasion, though experimental validation of these interactions is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "EGLN1 (PHD2) is a prolyl-hydroxylase that catalyzes hydroxylation of HIF1\u03b1 proline residues in normoxic conditions, rendering it susceptible to proteasomal degradation. Inhibiting EGLN1 had an anti-tumor effect in murine osteosarcoma, but the extracellular role remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by appropriate citations (Berra et al., 2003; Klotzsche-von Ameln et al., 2011). This provides molecular context for EGLN1, though the apparent contradiction between its known intracellular function and detection in ECM fractions is not fully resolved. The authors acknowledge the extracellular role remains unknown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "S100A2 is a calcium-binding protein of the S100 family that has been shown to promote lung metastasis when overexpressed in non-small-cell lung carcinoma cells in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107 and C108 are supported by citation to Bulk et al., 2009. This provides precedent for S100A2's role in metastasis in a different cancer type, supporting the relevance of the findings in breast cancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The proteins identified are relevant to breast cancer metastasis beyond the specific cell lines used. However, there is an apparent contradiction with the Korpal et al. study: proteins (AGRN, LTBP3, EFEMP2, IGFBP4, SERPINE2, SNED1, TINAGL1) postulated to be anti-metastatic in that study are pro-metastatic in this study, suggesting tumor-specific or context-dependent mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C118 highlight an important discrepancy between studies. While the concordance with other literature (C113) supports relevance, the contradiction with Korpal et al. (2011) is concerning. The authors suggest context-dependent mechanisms but do not resolve the discrepancy. This could reflect differences in experimental systems, cell lines, or the complexity of ECM protein functions. Further work is needed to reconcile these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "LM2 tumors are more vascularized than MDA-MB-231 tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C121 states 'data not shown,' which is a significant weakness. While this observation would be consistent with the more aggressive phenotype of LM2 tumors and could explain some of the stromal differences, it cannot be evaluated without the supporting data. This should have been included as supplementary data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background claims establishing the importance of ECM in cancer, the tumor microenvironment, and breast cancer epidemiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C24 provide background context supported by appropriate citations and established knowledge. These are standard introductory statements that frame the study's rationale and are not primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Methodological background: the matrisome is defined as the ensemble of ECM and ECM-associated proteins. The authors previously characterized normal murine tissue ECMs. The MDA-MB-231 and LM2 cell lines have established origins and metastatic properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 describe established methods and cell line characteristics supported by appropriate citations (Naba et al., 2012; Cailleau et al., 1978; Minn et al., 2005). These provide essential methodological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The most abundant ECM proteins (fibronectin, fibrinogen, laminins, HSPG2, collagens I-VI, TGM2) were detected in both tumor types and have been previously reported in normal tissues, suggesting they are widely expressed. Matrisome-associated components were detected at lower abundance than structural core ECM proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by the proteomic data in Figure 2 and citation to prior work (Naba et al., 2012). These observations are expected based on ECM biology and provide validation that the proteomic approach is detecting the expected major ECM components.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "TGF\u03b2 plays a role in cancer progression (background knowledge).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is well-established background knowledge supported by appropriate citations (Padua and Massagu\u00e9, 2009; Massague, 2012). This provides context for the LTBP3 findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C114",
+      "C123"
+    ],
+    "result": "Background on other proteins and cancer-associated fibroblasts: CTGF, TIMP1, and S100A10 have been implicated in other cancer types. Cancer-associated fibroblasts from different mammary tumor subtypes differ in expression profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114 and C123 are supported by appropriate citations. These provide additional context for interpreting the findings and support the concept of tumor-stroma heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Translational potential: ECM proteins are favorable biomarker candidates due to their abundance, characteristic patterns, and accessibility. They could serve as anchors for imaging probes or therapeutic delivery, and as therapeutic targets themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C126 are speculative about future applications. While C124 is a reasonable statement about ECM protein properties, C125 and C126 are explicitly speculative (supported by citations to other work but not demonstrated in this study). These represent potential future directions rather than established results.",
+    "result_type": "MINOR"
+  }
+]

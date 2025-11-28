@@ -1,0 +1,2366 @@
+{
+  "submission": {
+    "id": "1fb9f8fc-50ca-4288-8e98-4bd12fed6160",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:58:06.748762Z",
+    "updated_at": "2025-11-28T21:58:06.748762Z"
+  },
+  "content": [
+    {
+      "id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "submission_id": "1fb9f8fc-50ca-4288-8e98-4bd12fed6160",
+      "content_type": "manuscript",
+      "content_text": "# Thermodynamic evidence for a dual transport mechanism in a POT peptide transporter\n\n## Authors\n\n- Joanne L Parker<sup>1</sup>\n- Joseph A Mindell<sup>2</sup>\n- Simon Newstead<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biochemistry University of Oxford Oxford United Kingdom\n2. Membrane Transport Biophysics Unit, National Institute of Neurological Disorders and Stroke National Institutes of Health Bethesda United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPeptide transport plays an important role in cellular homeostasis as a key route for nitrogen acquisition in mammalian cells. PepT1 and PepT2, the mammalian proton coupled peptide transporters (POTs), function to assimilate and retain diet-derived peptides and play important roles in drug pharmacokinetics. A key characteristic of the POT family is the mechanism of peptide selectivity, with members able to recognise and transport >8000 different peptides. In this study, we present thermodynamic evidence that in the bacterial POT family transporter PepTSt, from Streptococcus thermophilus, at least two alternative transport mechanisms operate to move peptides into the cell. Whilst tri-peptides are transported with a proton:peptide stoichiometry of 3:1, di-peptides are co-transported with either 4 or 5 protons. This is the first thermodynamic study of proton:peptide stoichiometry in the POT family and reveals that secondary active transporters can evolve different coupling mechanisms to accommodate and transport chemically and physically diverse ligands across the membrane.\n\n## Introduction\n\nSecondary active transporters are integral membrane proteins that couple the energy stored in an ion gradient to drive the uptake of a solute against its concentration gradient (Nicholls and Ferguson, 2013). This can be accomplished through either a symport mechanism, with the solute being moved in the direction of the driving ion, or antiport, where the solute movement is counter to that of the driving ion (Shi, 2013). The ion gradients utilised by secondary active transporters include proton (\u0394\u03bcH+), sodium (\u0394\u03bcNa+), or chloride (\u0394\u03bcCl\u2212) gradients, which are in turn established through the action of the primary ATP driven P-, F-, V-, and A-type ion pumps (Voet and Voet, 2011). A fundamental characteristic of these systems is that, in general, transport is strictly coupled; the movement of solutes and ions is obligatory and one cannot be transported without the other. If these systems were to operate in a decoupled manner, they would act as leaks and dissipate the ion gradients across the membrane, quickly leading to cell death. Given the strict requirement for coupling solute binding and transport to ion movement, the stoichiometry of these mechanisms is normally a fixed ratio. Examples include the Escherichia coli lactose transporter, LacY, which transports lactose in a symport mechanism with one proton (Kaback et al., 2011) and EmrE, the small multidrug extrusion transporter, which moves both monovalent and divalent substrates in a 1:2 drug:proton stoichiometry (Rotem and Schuldiner, 2004).\n\nA number of membrane proteins have been identified that recognise multiple structurally and chemically diverse solutes (Koepsell, 2013; Pelis and Wright, 2014). Prominent among these are the proton coupled oligopeptide transporters or POTs (Hillgren et al., 2013; Smith et al., 2013). POT family transporters are widely distributed within bacterial, fungal, and plant genomes where they are responsible for the uptake of di- and tri-peptides from the external environment (Daniel et al., 2006). Mammals contain four POT family transporters, PepT1 (SLC15A1), PepT2 (SLC15A2), PHT1 (SLC15A4), and PHT2 (SLC15A3). PepT1 and PepT2 are expressed at the plasma membrane, whereas PHT1 and PHT2 are found in lysosomal membranes (Daniel and Kottra, 2004). Throughout the POT family the transport mechanism and peptide binding site are highly conserved, with bacterial counterparts sharing \u223c80% identity to human PepT1 and PepT2 within their peptide binding sites (Terada and Inui, 2012; Newstead, 2014). All POT family members studied to date transport their substrates into the cell in a coupled symport mechanism, driven by the proton electrochemical gradient. While a number of mutational studies on the mammalian PepT1 and PepT2 transporters address peptide recognition (Terada et al., 1996; Fei et al., 1997, 1998; Yeung et al., 1998; Uchiyama et al., 2003; Luckner and Brandsch, 2005; Kulkarni et al., 2007; Pieri et al., 2009), the question of how many protons are coupled to peptide transport remains unresolved; early studies using Caco-2 cell lines derives a ratio of greater than two protons per peptide (Thwaites et al., 1993). However due to experimental design, narrowing this figure to a more precise stoichiometry was not possible (Kottra et al., 2002). Electrophysiological studies using two electrode voltage clamping (TEVC) in Xenopus oocytes in tandem with radio ligand transport assays on non hydrolysable peptide (D-Phe-L-Gln/Glu/Lys or Gly-Sar) have reported stoichiometry ratios of 1:1 and 2:1 proton:peptide for neutral/basic and acidic di-peptides respectively for PepT1 (Fei et al., 1994; Steel et al., 1997; Chen et al., 1999). Similar experiments on PepT2 have given different ratios either D-Phe-L-ala of 2:1 and for D-Phe-L-Glu 3:1 (Chen JBC 1999) or 1:1 for D-Phe-L-Gln/Glu or Lys (Fei et al., 1999).\n\nRecently, we reported two crystal structures of a bacterial POT family transporter, PepTSt, from Streptoccocus thermophilus, which revealed di- and tri-peptides interacting differently within the binding site (Lyons et al., 2014). Whereas the di-peptide L-Ala-L-Phe binds in a horizontal position with respect to the plane of the membrane, whilst the tri-peptide L-Ala-L-Ala-L-Ala resides in a vertical orientation and makes subtly different interactions within the binding site. This raised the interesting and to our knowledge unique proposition, that two different transport mechanisms may have evolved within the same binding site as a way to accommodate a diverse library of peptide ligands, >8000 (Ito et al., 2013). To address whether PepTSt could indeed operate using distinct mechanisms to drive di- and tri-peptides, we explored the coupling mechanism between protons and peptide in a reconstituted system, determining the coupling stoichiometries of protons and peptides. We show that whilst tri-peptide import is coupled to three protons, the mechanism for di-peptide import requires at least four and possibly five protons. These results provide further biochemical evidence that POT family transporters do operate via multiple mechanisms for coupling peptide transport to the proton gradient. The ability to couple different numbers of protons to structurally and chemically diverse ligands may explain how the POT family is able to accommodate and transport such a large library of di- and tri-peptides.\n\n## Results\n\nTo address the question of stoichiometry, we developed a sensitive and robust assay to follow the proton movement during the transport cycle. Previously published peptide transport assays tend to follow peptide uptake using a radiolabeled peptide substrate. To instead follow proton movement, we monitored the internal pH with the ratiometric pH sensitive fluorophore, pyranine (Figure 1A and Figure 1\u2014figure supplement 1). We first performed a number of control experiments to see whether our system could indeed follow proton coupled peptide transport into a liposome. Acidification of the lumen was only observed in the presence of peptide and a large hyperpolarized (negative inside) membrane potential imposed by adding the potassium ionophore valinomycin in the presence of a K+ gradient (Figure 1B,C and Figure 1\u2014figure supplement 2). We did not see such acidification either in the absence of valinomycin or in the presence of amino acid (alanine) or tetra peptide (Ala-Ala-Ala-Ala), confirming that this transporter is indeed specific for di- and tri-peptide substrates (Figure 1C). PepTSt has been shown previously to transport Ala\u2013Ala with a 10-fold higher activity than Ala-Ala-Ala as judged by IC50 values using tritiated Ala\u2013Ala as a reporter (Solcan et al., 2012). We confirmed this 10-fold difference in uptake by using our proton-based assay, which can now report the direct uptake of any transported substrate rather than inferring substrate specificity through inhibition of Ala\u2013Ala (Figure 1\u2014figure supplement 3). This assay is also useful to study poor competitors of di-alanine for example, di-lysine where no competition could be observed previously (Solcan et al., 2012). Using this assay, we can now observe uptake of this substrate indirectly by monitoring the coupled proton movement (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04273/elife-04273-fig1-v2.jpg)\n\n**Figure 1.:** (A) Experimental setup to monitor proton flux. PepTSt is reconstituted into liposomes loaded with pyranine and a high concentration of potassium ions (120 mM), the external solution contains peptide and a low potassium concentration (1.2 mM). On addition of valinomycin, the membrane becomes highly potassium permeable, generating a hyperpolarised membrane potential (negative inside) this drives the uptake of peptide with protons, protonating the pyranine dye and altering its fluorescent properties. (B) Representative pyranine fluorescence traces produced from the set up described in (A) indicating that acidification of the liposomal lumen only occurs in the presence of a valinomycin (black arrow)-induced membrane potential with peptide. The Y axis indicates the fluorescence ratio as stated in the methods. (C) PepTSt can only transport di- and tri-peptides. To initiate transport, valinomycin was added to all experiments at the time indicated by the black arrow and the external substrate concentration was 0.2 mM. Data were normalised to the first time point for ease of comparison.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04273/elife-04273-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Raw data produced from the set up described in (Figure 1A) indicating that acidification of the liposomal lumen only occurs in the presence of a valinomycin (black arrow)-induced membrane potential with peptide, this data were used to make Figure 1B. (B) Shows the data from (A) but shown as a ratio of the spectra obtained at 460/415.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04273/elife-04273-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Potential proton leakage was monitored using pyranine in a system with internal pH at 6.8 and external pH at 5.8. The proton gradient was collapsed by the addition of CCCP. (B) as (A) but internal pH was 7.5 and external pH was 6.5.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04273/elife-04273-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Increasing concentrations of peptide both Ala-Ala-Ala (Left) and Ala-Ala (right) lead to an increase in the fluorescence change until a maximum level is reached. The mid point of the fluorescence change between maximum decrease and that with no peptide for Ala-Ala-Ala is \u223c125 \u00b5M and 10 \u00b5M for Ala\u2013Ala, an approximate 10-fold difference. (Concentrations used for tri-ala were 0, 0.1, 1, 5, 10, 25, 50, 125, 250, 500, 1000, 2000 \u00b5M and di-ala 0, 0.01, 0.1, 1, 5, 10, 25, 50, 100, 250, 1000, 2000 \u00b5M).\n\nSince PepTSt is an electrogenic transporter, we predict that imposition of a membrane potential in the presence of a pH gradient should drive uphill substrate transport. By loading the liposomes with high concentration of peptide and imposing a large hyperpolarising membrane potential (negative inside), we observe acidification of the lumen, indicating that the voltage can drive PepTSt-mediated transport against a 100-fold peptide gradient (Figure 2A). Importantly, we can also manipulate this system to see protons leaving the liposomal lumen as would be expected under an oppositely orientated membrane potential (positive inside). With an assay system set up where we could drive transport in predicted directions, we were now in a position to assess proton:peptide stoichiometry by measuring the equilibrium potential for proton flux using pyranine at a series of membrane voltages, set at the start of the assay with the appropriate potassium ion concentration gradient and the addition of valinomycin. This type of assay was used previously to address the stoichiometry of a lysosomal Cl\u2212/H+ antiporter, CLC-7 (Graves et al., 2008).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04273/elife-04273-fig2-v2.jpg)\n\n**Figure 2.:** Proteoliposomes in the presence of a 100-fold peptide gradient (0.1 mM outside and 10 mM inside) and no pH gradient (pH 6.8 both inside and outside). No proton flux occurs until the transmembrane potential is shunted by addition of valinomycin (green trace, val added at black arrow). PepTSt can drive transport of peptides (and protons) against this gradient into the interior of the liposome using the proton electrochemical gradient when a negative voltage is imposed by valinomycin addition. (negative inside\u2014yellow line). Further addition of peptide (0.5 mM) results in additional uptake (grey arrow). When a large (inside) positive voltage is applied (same peptide and pH gradients), peptides (and protons) exit the liposome (pink line).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04273/elife-04273-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** We assume that transport occurs with a fixed stoichiometry as reflected in (A). Pep indicates the neutral peptide and the subscripts, \u2018out\u2019 and \u2018in\u2019 refer to peptide or protons outside or inside the liposome membrane, \u2018n\u2019 is the number of protons transported per cycle and \u2018m\u2019 is the number of peptides. We seek to determine n/m the stoichiometric ratio of protons:peptide. For the reaction shown in (B), \u03bc is the chemical potential of the species, R is the universal gas constant, T is the temperature in (K), F is the Faraday constant, ZH is the proton charge, \u0394\u03a8 is the voltage difference across the membrane, where \u0394\u03a8 = \u03a8in \u2212 \u03a8out. This is equivalent to the sign convention that the outside of the liposome is defined as ground (\u03a8out = 0). At equilibrium (C), the equation can be rearranged (D) to yield the equilibrium potential, \u0394\u03a8, in terms of the values of pH and [peptide] and the stoichiometric ratio.\n\nWe assume that PepTSt operates via the coupled mechanism, nHout + mPepout \u21d4nHin + mPepin, where the relative stoichiometry of protons:peptide is n/m. For this coupled system, the equilibrium potential is defined as the voltage at which there is no net substrate flux. This voltage, also known as the reversal potential (\u0394\u03a8), is independent of the reaction mechanism. Rather, it depends only on the concentrations of protons and substrate and on the coupling stoichiometry with the form: \u0394\u03a8 = 60{[pHin \u2212 pHout] \u2212 m/n log ([Pep]in/[Pep]out)}, where m and n are the stoichiometric coefficients in the chemical reaction above and \u0394\u03a8 is in mV (see derivation in Figure 2\u2014figure supplement 1). For a given combination of pH and peptide gradients this equation predicts a voltage at which no net pH change will occur; voltages above and below that value should produce inward or outward proton flux, depending on the voltage. Conversely, if at a series of voltages (set using K+/valinomycin), we observe acidification/no flux/alkalinzation, we can derive the relative stoichiometry of PepTSt for protons and peptide. We performed such experiments for the neutral peptide, Ala-Ala-Ala with no net pH difference between the inside and outside of the liposome and a 100-fold peptide gradient (higher concentration inside) and observed an absence of proton flux at a membrane potential of\u221240 mV (inside negative) which corresponds to a 3:1 proton:peptide stoichiometry (Figure 3A and Figure 3\u2014source data 1). In contrast, voltages corresponding to reversal potentials for stoichiometries of 2:1 and 4:1 produced clearly distinguishable inward and outward fluxes respectively, strongly pointing to a 3:1 stoichiometry for the transporter. A very different combination of proton and peptide gradients, where we now included a proton gradient, also (pH more acidic outside) gave the same stoichiometry of 3:1 for the same tri-alanine peptide (Figure 3B). We also obtained this three proton:peptide stoichiometry for a different tri-peptide substrate, Ala-Leu-Ala (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04273/elife-04273-fig3-v2.jpg)\n\n**Figure 3.:** The potassium gradient across the liposomes was varied in order to set the desired voltages (on valinomycin addition, black arrow) to achieve no net proton movement (indicated by the black line at FR of 1.0). The number next to the voltages are the proton:peptide stoichiometry that would reverse at that voltage. The internal peptide concentration (10 mM) (Tri-ala for A and B, and Ala-Leu-Ala for C) was 100-fold above that of the external concentration and the pH was inside 6.8, outside 6.8 (for A and C) and 6.0 (for B). Representative traces are shown for each experiment, which were repeated at least three independent times. The line graph for each experiment represents the mean change in fluorescence at time point 60 s and S.E.M. is indicated. Grey arrows indicate the addition of more peptide, to show that the system can be further manipulated.\n\nWe went on to determine the proton:peptide stoichiometry of PepTSt when transporting di-peptide substrates. However, when we performed experiments with the same gradients as our initial tri-peptide measurements only now with the neutral peptide Ala\u2013Ala, we still observed transport at a voltage of \u221240 mV, where before we saw no net proton flux for tri-alanine. Transport is still also occurring at \u221230 mV which under these conditions would correspond to a proton:peptide stoichiometry of 4:1 and where we saw proton influx for tri-alanine (Figure 4A). Therefore, surprisingly, the stoichiometry of protons to peptides in PepTSt appears to be different for tri-Ala as compared with di-Ala. Further experiments to try to pin down the number of protons being co-transported with di-alanine lead to slightly ambiguous results, as increasing proton:peptide stoichiometries predict decreasing increments in reversal potential. These are, in turn, harder to generate reproducibly with our valinomycin/K+ system. We performed experiments with voltages set at reversal potentials predicted for symport ratios of 5 and 6 protons:peptide and proton flux was minimal at \u221220 mV (6 protons) but it is hard to be able to fully distinguish. Importantly, the system can still be driven in the opposite direction with higher voltages (0 mV, Figure 4B). Regardless of whether the actual stoichiometry is 5 or 6 protons:peptide, these experiments strongly suggest that the stoichiometry is higher for di-peptides than for tri-peptides. We confirmed this higher ratio for di-peptide transport using the substrate Ala\u2013Phe (Figure 4C). Again transport is clearly observed at a membrane potential at \u221230 mV, so the stoichiometry for di-peptide transport by PepTSt is greater than four protons, clearly different from that of tri-peptides.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04273/elife-04273-fig4-v2.jpg)\n\n**Figure 4.:** The potassium gradient across the liposomes was varied in order to set the desired voltages (on addition of valinomycin, black arrow) to achieve no net proton movement (indicated by the black line at FR of 1.0). Only voltages that indicate a stoichiometry of proton:peptide of greater than 5:1 showed either no net movement of protons or reversal for both Ala\u2013Ala (A, B) and Ala\u2013Phe (C) di-peptides. Representative traces are shown for each experiment, which was repeated at least three independent times. The line graph for each experiment represents the mean change in fluorescence at time point 60 s and S.E.M. is indicated. Grey arrows indicate the addition of more peptide, to show that the system can be further manipulated.\n\nThe reversal potential equation above predicts that if \u0394\u03a8 = 0, then [Pepin]/[Pepout] = ([H+out]/[H+in])n, where n is the number of protons transported per peptide. Therefore, if our results are truly indicative of higher coupling ratios for di-peptides than for tri-peptides, the same proton electrochemical gradient should accumulate di-peptides to a higher steady-state concentration than tri-peptides. We tested this prediction by measuring the uptake of radiolabeled di- and tri-peptides in the presence of a fixed, 1-unit pH gradient (acid outside). As shown in Figure 5, we find dramatically higher uptake of the di-peptide in this gradient, conclusively supporting the idea that different length peptides couple to the proton gradient with differing stoichiometries.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04273/elife-04273-fig5-v2.jpg)\n\n**Figure 5.:** Peptide transport was driven by an inwardly directed proton gradient in saturating amounts of peptide. Uptake was measured via scintillation counting using radiolabeled peptides (3H for di-alanine and 14C for tri-alanine) and converted to pmols peptide transported per unit time.\n\nA different coupling stoichiometry for di- vs tri-peptides raises an interesting question of whether different amino-acid side chains within the transporter are required for di-peptide vs tri-peptide transport. PepTSt contains six-protonatable side chains within its binding site (Glu 22, 25, 299, 300, 400, and K126, Figure 6A). All of these with the exception of Glu299 are conserved across the PTR family from bacteria through to mammalian PepT1 and PepT2. Previous biochemical studies have shown that in PepTSt this non-conserved residue is likely to be involved in structural and/or stability features specific to this protein as mutation of this residue results in no expression of the protein. Glu400 and Lys126 are likely to form a salt bridge that stabilises the outward open confirmation of the transporter, a feature that would be conserved regardless of the substrate. Glu300 has been shown to interact with both a di-peptide and a tri-peptide substrate and therefore likely to be involved in the transport mechanism for both di- and tri-peptides and has been shown to be important for di-alanine transport previously (Solcan et al., 2012; Doki et al., 2013). This leaves Glu22 and Glu25 as candidates for differential effects on di- and tri-peptide transport. Previously these residues have been shown to be important for proton coupling for di-alanine, however, here we also found that mutating either of these residues to alanine yielded proteins unable to catalyse proton coupled tri-alanine transport (Figure 6B). Therefore, despite different proton:peptide stoichiometries are apparently required for di- and tri-alanine transport, all five protonatable side chains within the binding site of PepTSt are likely to be important for the transport mechanism.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04273/elife-04273-fig6-v2.jpg)\n\n**Figure 6.:** (A) Crystal structure of PepTSt with bound Ala\u2013Phe peptide (orange) (PBD 4D2C) showing the protonatable side chains within the binding site (green). Helices TM5 and TM8 have been removed for clarity. (B) E22A and E25A variants of PepTSt are unable to couple proton movement to the transport either di-alanine or tri-alanine. (C) Ala\u2013Phe and Ala-Ala-Ala adopt different orientations within the binding site of PepTSt. Two views of PepTSt shown in the plane of the membrane and rotated 90\u00b0, with Ala-Ala-Ala (blue) and Ala\u2013Phe (magenta) shown as sticks. Helices TM5 and TM8 have been removed for clarity. (D) Model for proton:peptide symport in PepTSt. Di-peptides transport requires at least four protons, whereas tri-peptides require only three, suggesting this is the lowest number of protons required to drive the conformational changes required for alternating access transport. Essential residues are indicated; residues involved in the potential stabilising salt bridges are labelled in blue and red, whereas protonatable side chains are labelled in purple.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04273/elife-04273-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The position of the tri-alanine peptide (mesh) would obstruct the formation of the predicted salt bridge between residue Lys126 and Glu400.\n\n## Discussion\n\n### A dual transport model for proton coupled peptide symport in the POT family\n\nA fundamental aspect of any transport mechanism is its coupling stoichiometry, how many ions are moved for each molecule of solute, as this information is necessary to generate reasonable mechanistic models for the transporter under study. Previous electrophysiological recordings on PepT1 and PepT2 have focused their attention on di-peptide substrates and suggest a 1:1 proton:peptide stoichiometry in PepT1 for neutral peptides and either 1:1 or > in PepT2 (Smith et al., 2013). Recent crystal structures and functional data on a bacterial POT family transporter, PepTSt, a homologue of PepT1 and PepT2, revealed that peptides could adopt different orientations within the binding site (Figure 6C). Whereas tri-alanine was observed adopting a vertical position and coordinated by 4 hydrogen bonds, the di-peptide L-Ala-L-Phe was held in a more horizontal position and coordinated through a more extensive network of interactions involving electrostatic interactions with conserved side chains from the N- and C-terminal bundles (Lyons et al., 2014). This raised the possibility that PepTSt could transport peptides using two different mechanisms operating within the same binding site and has important implications for understanding proton coupled transport more generally within the POT family.\n\nHere, we used a reconstituted proteoliposome system to accurately measure reversal potentials for peptide-coupled proton fluxes and found that di- and tri-peptides are transported using different proton stoichiometries. Assuming that our measurements on two sets of distinct di- and tri-peptides reflect the stoichiometries in general, our new data add to our previous multiple binding mode model by showing that tri-peptides are transported using three protons, whereas di-peptides are transported using four or possibly even five protons per cycle. It is important at this stage to highlight that our experiments cannot discriminate between protons that come through the transporter and those that may come through bound to the peptide. However, even if some protons are being moved on the peptide as opposed to being required to rearrange interaction networks during transport, our results still demonstrate that different numbers of protons are moved during the coupled transport of neutral di- vs tri-peptides, which we ascertain establishes a fundamental difference in the way this protein handles these two ligands.\n\nInterestingly, all five of the protonatable residues within the binding site are required for transport as none could be mutated and still allow for the transport of either peptide. This could be due to movement of the three protons within the binding site to different side chains, perhaps to help re-orientate the tri-peptide as the transporter transitions through its conformational cycle. Indeed if you overlay the crystal structure of the tri-alanine structure with a model of the outward open structure (Figure 6\u2014figure supplement 1), tri-alanine in this position would obstruct the closing of the intracellular gate through disruption of the intracellular stabilising salt bridge (formed between Lys126 (TM4) and Glu400 (TM10)). Therefore, we suggest that for tri-alanine to be transported across the membrane, it is likely to undergo a change in its vertical binding position, to allow for closure of the transporter.\n\nThe question then arises as to the functional role of the protons in the transporter. We have previously identified six-protonatable side chains present in the binding site of PepTSt (Figure 6A), with all but Glu299 being conserved across the POT family (Solcan et al., 2012). It would be tempting therefore, on the basis of simplicity, to predict that our data suggest only three side chains are protonated during tri-peptide transport, and four/five in di-peptide transport. However, we do not believe this to be the case. Our attempts to systematically remove the protonable side chains Glu22 and Glu25 on TM1, which form part of the conserved ExxERF motif but do not interact with either of the di-peptide or tri-peptide in the crystal structures (Lyons et al., 2014), resulted in inactive transporters (Figure 6B). Previous studies have shown that mutating any of the remaining side chains; Lys126, Glu300, and Glu400 also result in inactive proton coupled transport (Solcan et al., 2012). We conclude from these results that all of the protonatable side chains are required for transport regardless of substrate. However, the observation that tri-peptides can be moved using only three protons delineates the minimal number of de-protonation events that are required to drive the conformational changes that re-orientate the binding site. In this model, the remaining protonatable groups remain proton-bound throughout the transport cycle when tri-peptides are transported. On the basis of the new data presented here, we can add further mechanistic insight into our earlier model for peptide transport that we have summarised in Figure 6D. Alternating access within the POT family is physiologically driven by the proton electrochemical gradient, with defined conformational states stabilised through conserved pairs of salt bridges that act to coordinate the opening and closing of the intracellular and extracellular gates (Newstead, 2014). Starting from the outward open conformation the binding site is accessible to the extracellular side of the membrane, and the intracellular gate is closed and stabilised by a possible salt bridge between Lys126 (TM4) and Glu400 (TM10). Functional studies have revealed that in another bacterial POT family transporter, from Geobacillus kaustophilus, GkPOT, that the equivalent glutamate to Glu300 is protonated and may be required to allow the binding of peptide (Doki et al., 2013). Considering the minimal three-proton model for tri-peptide transport we propose, it seems reasonable to suggest that proton transfer from Glu300 to Glu400 during transport may occur to couple closing of the extracellular gate with opening of the intracellular one. This would account for one proton. The other two we suggest may come from Lys126 and either of Glu22 or Glu25. Our evidence is that in previous functional studies we showed that either of these side chains could be mutated to alanine with only a slight reduction in counterflow transport but complete loss of proton coupled peptide uptake (Solcan et al., 2012), behaviour classically used to identify side chains required for proton coupled uptake. In the case of di-peptides, additional deprotonation is clearly required. We conjecture that this is the result of the tighter coordination observed in the di-peptide complex structure compared to that for the tri-peptide (Figure 6C) and maybe one reason why this binding site is so sensitive to mutation in our assays.\n\nAn adaptable coupling mechanism, such as we propose, might have been an important component that enabled the POT family to adapt its binding site to accommodate structurally and chemically diverse molecules for nutritional assimilation. Whilst in bacterial, fungi, and mammals POT family homologues are responsible for peptide uptake, in plants this family has evolved to recognise widely diverse molecules, including nitrate, glucosinylates, hormones, and peptides (L\u00e9ran et al., 2014; Sun et al., 2014; Parker and Newstead, 2014). This may explain why mammals use the POT family homologues PepT1 and PepT2, as coupling peptide transport to the proton gradient appears to facilitate a promiscuous binding site that can adapt to chemically diverse side chain groups more easily than sodium coupled transporters, which require well-defined binding sites for the cation.\n\n## Materials and methods\n\n### Reconstitution of PepTSt\n\nFor reconstitution, PepTSt purified in the detergent DM (Solcan et al., 2012) was mixed in a 60:1 ratio (lipid:protein) with lipid vesicles composed of a mixture of POPE and POPG (in a 3:1 ratio). These lipids were chosen as they had been previously reported to form proton tight liposomes (Tsai and Miller, 2013). We confirmed this in our liposomes (Figure 1\u2014figure supplement 1). The protein:lipid mix was diluted into a large volume of reconstitution buffer (50 mM potassium phosphate 6.8), and proteoliposomes were harvested by ultracentrifugation (>200,000\u00d7g) for 3 hr. Pelleted liposomes were resuspended at 0.5 \u00b5g/\u00b5l (protein) and dialysed extensively against reconstitution buffer (24 hr with two changes of buffer). Proteoliposomes were recovered and subjected to three rounds of freeze thawing before storage at \u221280\u00b0C.\n\n### Transport assays\n\nProteoliposomes were harvested and resuspended in inside transport buffer (5 mM Hepes pH 6.8, 2 mM MgSO4, 1 mM Pyranine (trisodium 8-hydroxypyrene-1,3,6-trisulfonate) also containing the desired potassium concentration (KCl) and peptide concentration) and subjected to three rounds of freeze thaw in liquid nitrogen and then extruded through a 0.4-\u00b5m membrane. Pyranine is a fluorescent pH indicator dye which is water soluble and can be trapped within liposomes. Acidification of the lumen of the liposome is indicated by a decrease in the ratio of fluorescence measured at 510 when excited at either 460 or 415. After extrusion the liposomes were harvested and excess pyranine removed through gel filtration using a superdex-25 column pre-equilibrated in inside transport buffer without pyranine. For the assays the liposomes were diluted into external transport buffer in a 0.85-ml micro cuvette with a small magnetic flea (5 mM HEPES pH 6.8 or 5 mM MES pH 6.0, 2 mM MgSO4 and the desired amount of KCl to obtain the desired potassium gradient, ionic strength was kept equal across the liposome using NaCl). Transport was initiated using 1 \u00b5M valinomycin, and fluorescence was read at excitation 460 and 415 emission 510 in a Cary eclipse fluorimeter with continual stirring. To examine the data, the data were exported into Graphpad and the fluorescence was measured at 510 excitation 460 divided by that measured at 415 excitation, indicated at FR in the results. To compare multiple conditions, the data were normalised to 1 (from the first reading) for each experiment. Representative raw data are shown in Figure 1\u2014figure supplement 2. For each individual experiment, the mean value was calculated from 55 to 65 s and this was repeated for each replicate (minimum of three) to generate an overall mean and S.E.M, which is plotted as a line graph on each figure.\n\n### Transport assays using radiolabelled peptide\n\nProteoliposomes were harvested and resuspended in inside buffer (5 mM HEPES pH 7.5, 2 mM MgSO4, 75 mM KCl) and subjected to three rounds of freeze thaw in liquid nitrogen and then extruded through a 0.4-\u00b5m membrane. For the assays, the liposomes were diluted into external transport buffer (5 mM MES pH 6.5, 2 mM MgSO4 75 mM KCl). Peptide, to a final concentration of 0.5 mM containing a tracer amount of either 3H-di-alanine (specific activity 30 Ci/mmol) or 14C-tri-alanine (specific activity 55 mCi/mmol), was added with 1 \u00b5M valinomycin and time points taken. The assays were performed at 22\u00b0C. Time points were taken and stopped by addition into 2 ml 0.1 M LiCl and filtering immediately through a 0.4-\u00b5m membrane in a vacuum manifold. The filters were washed twice with 2 ml of LiCl prior to scintillation counting in Ultima Gold (Perkin elmer). The amount of peptide transported into the liposomes was calculated based on specific activity for each peptide as detailed by the manufacturer and counting efficiency for the radioisotope in Ultima Gold counted in a Wallac scintillation counter (3H 45% counting efficiency, 14C 98%). Experiments were performed four times to generate an overall mean and S.E.M.\n",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "47a0d41a-38cd-4470-b1a2-6dec0b153d0d",
+      "submission_id": "1fb9f8fc-50ca-4288-8e98-4bd12fed6160",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- John Kuriyan, Howard Hughes Medical Institute, University of California, Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04273.015](https://doi.org/10.7554/eLife.04273.015)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cOne transporter, two mechanisms: Thermodynamic evidence for a dual transport mechanism in a POT peptide transporter\u201d for consideration at eLife. Your article has been evaluated by John Kuriyan (Senior editor) and 2 reviewers. The editor and the reviewers find that the paper is of interest, and that it may be suitable for publication in eLife. They do, however, have some concerns about whether the principal conclusion, that the transport of dipeptides and tripeptides is coupled to different stoichiometries of protons, is based on a completely reliable interpretation of the data. Please consider the point referred to in the review below as major concern No. 1, and respond to us by email to the eLife editorial office telling us how you might deal with this particular issue. The editor and the reviewers will consider your response before reaching a decision on the paper.\n\nReview:\n\nThe aim of the study presented by Newstead and colleagues is to determine the stoichiometry of a bacterial peptide/H+ symporter. The authors used a ratiometric fluorescence dye to record pH changes in liposomes. They demonstrated that the transporter transports protons when there is a voltage difference across the membrane, mediated by K+ and valinomycin. They also found that proton transport depends on the presence of peptides (Figure 1). The stoichiometry between peptides and protons was determined by finding the voltage at which H+ flux is zero (defined as the reversal potential) at known peptide and proton gradients. By relating the chemical potential difference of the peptide inside and out to the electrochemical driving force of the protons (which will depend on the number of protons per peptide), the stoichiometry (m/n) can be determined from the equation described.\n\nThis manuscript adds mechanistic novelty to Newstead's recent structures of proton-coupled peptide transporter family (POT) proteins by establishing an intriguing oddity concerning the transport mechanism of the two types of peptide substrates handled by PepT-type transporters. The previous crystal structures of the S. thermophilus PepT had shown that two classes of substrates, neutral di-peptides and tri-peptides, bind in different ways to the transport region. This raised questions about how the transporter, which handles a huge diversity of di- and tripeptides, manage this feat of nonspecificity within and specificity among substrate classes. Now, using an elegant assay in a reconstituted liposome-flux system, the authors show an important difference in H+-peptide stoichiometry between dipeptides (i.e., Ala-Ala) and tripeptides (Ala-Ala-Ala or Ala-Leu-Ala). This implies, under the assumption of strict H+ coupling for both substrate types that substantially separate transport mechanisms have evolved within the same protein. Given that assumption, that is a novel insight.\n\nThe authors also present experiments to identify specific residues that may be involved in handling the \u201cextra\u201d protons for the dipeptides. They mutate various protonatable residues that are seen to be close in the structures to the dipeptides, in hopes of finding mutants that abolish H+ coupling for the dipeptides, while preserving it for the tripeptides. Although no such specific residues emerged from these mutants, the effort and its \u201cnegative result\u201d is nevertheless worthwhile to report.\n\nMajor concerns:\n\n1) As written, there remains a major logical soft-spot in the central conclusion. The manuscript is properly explicit in stating the basic assumption underlying the stoichiometry measurement: that the transporter is fully, obligatorily coupled for both substrates. It is this assumption that leads to the equation on p 5 for the reversal potential, the zero-flux condition at thermodynamic equilibrium. If this assumption is valid, then all the conclusions offered here follow as the night the day. But what if it isn't? An alternative possibility is that the \u201cless active\u201d dipeptide substrate might show a higher H+/peptide stoichiometry because it is imperfectly coupled, and that 2 protons \u201cslip through\u201d on average for every transport cycle in which 3 protons are actually mechanistically coupled. This would create a nonequilibrium situation in which the coupled protons and the leak protons have different reversal potentials, and the observed zero-flux voltage lies between the two. In such a case of partial slippage; a situation known to exist, for example, in mutants of CLC transporters, the actual mechanism of transport would be identical for both di- and tripeptides, and so it would be invalid to tout this as an example of \u201cone transporter, two mechanisms.\u201d\n\nA fairly simple and quick experiment could plug this logical hole (if the result comes out in the hoped-for way). If dipeptide transport is truly coupled to more protons than tripeptide transport (5 vs 3, say), then radiolabeled dipeptide should be accumulated to far higher steady levels than tripeptide for the same proton electrochemical gradient. If, on the other hand, leak protons are wasted while the mechanism's coupling is the same for both substrates, then di and tri-peptides should be similarly accumulated in a basic concentrative uptake assay. Even a qualitative result that could settle the issue.\n\n2) This assay seems to work fine for two neutral tri-peptides, A-A-A and A-L-A. But the results are puzzlingly ambiguous for di-peptides that are known to be better substrates than tri-peptides. It seems that the di-peptides have a different stoichiometry than that of the tri-peptides; however, the authors could not determine the exact reversal potential for the di-peptides.\n",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7f4a53a7-6563-44b0-8455-9214ae239669",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C1",
+      "claim": "Peptide transport plays an important role in cellular homeostasis as a key route for nitrogen acquisition in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptide transport plays an important role in cellular homeostasis as a key route for nitrogen acquisition in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the biological role of peptide transport, drawing from established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "de0dbef0-1512-41bc-b815-68011c8e0dd6",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C2",
+      "claim": "PepT1 and PepT2 are the mammalian proton coupled peptide transporters (POTs).",
+      "claim_type": "EXPLICIT",
+      "source": "PepT1 and PepT2, the mammalian proton coupled peptide transporters (POTs), function to assimilate and retain diet-derived peptides and play important roles in drug pharmacokinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the identity and classification of mammalian POT transporters.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "4205a02f-cb7e-471d-aa03-3c923bf8bdc8",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C3",
+      "claim": "PepT1 and PepT2 function to assimilate and retain diet-derived peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "PepT1 and PepT2, the mammalian proton coupled peptide transporters (POTs), function to assimilate and retain diet-derived peptides and play important roles in drug pharmacokinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the function of PepT1 and PepT2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "4e1e747a-bf5e-489f-b583-c6792de5a7f2",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C4",
+      "claim": "PepT1 and PepT2 play important roles in drug pharmacokinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "PepT1 and PepT2, the mammalian proton coupled peptide transporters (POTs), function to assimilate and retain diet-derived peptides and play important roles in drug pharmacokinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the role of PepT1 and PepT2 in drug transport.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "51e31ca3-fa5f-4b44-a795-645016dd72a1",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C5",
+      "claim": "POT family members are able to recognise and transport >8000 different peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "A key characteristic of the POT family is the mechanism of peptide selectivity, with members able to recognise and transport >8000 different peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ito et al., 2013 in the Introduction section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "ac00fa88-67f7-4326-bb9d-6594e7132a33",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C6",
+      "claim": "In PepTSt, tri-peptides are transported with a proton:peptide stoichiometry of 3:1.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst tri-peptides are transported with a proton:peptide stoichiometry of 3:1, di-peptides are co-transported with either 4 or 5 protons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from reversal potential measurements shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "921831be-cd96-4f9d-8dd7-a92f33ca5e99",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C7",
+      "claim": "In PepTSt, di-peptides are co-transported with either 4 or 5 protons.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst tri-peptides are transported with a proton:peptide stoichiometry of 3:1, di-peptides are co-transported with either 4 or 5 protons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from reversal potential measurements shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "d722f0f1-22bd-4d10-b5bd-eb55c3d235cb",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C8",
+      "claim": "This is the first thermodynamic study of proton:peptide stoichiometry in the POT family.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the first thermodynamic study of proton:peptide stoichiometry in the POT family and reveals that secondary active transporters can evolve different coupling mechanisms to accommodate and transport chemically and physically diverse ligands across the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study, based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "043285ad-213f-4fbd-9d10-422413c8b048",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C9",
+      "claim": "Secondary active transporters can evolve different coupling mechanisms to accommodate and transport chemically and physically diverse ligands across the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the first thermodynamic study of proton:peptide stoichiometry in the POT family and reveals that secondary active transporters can evolve different coupling mechanisms to accommodate and transport chemically and physically diverse ligands across the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data showing different stoichiometries for di- and tri-peptides.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "a457ec5c-b636-41fd-95b8-730c146200e2",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C10",
+      "claim": "Secondary active transporters couple the energy stored in an ion gradient to drive the uptake of a solute against its concentration gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondary active transporters are integral membrane proteins that couple the energy stored in an ion gradient to drive the uptake of a solute against its concentration gradient (Nicholls and Ferguson, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about secondary active transporters, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "582d178d-0048-4a00-8032-3535f4cc101a",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C11",
+      "claim": "Transport can be accomplished through a symport mechanism, with the solute being moved in the direction of the driving ion.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be accomplished through either a symport mechanism, with the solute being moved in the direction of the driving ion, or antiport, where the solute movement is counter to that of the driving ion (Shi, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about transport mechanisms, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "feccf2ad-44dc-4a90-b355-790c8b2909b1",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C12",
+      "claim": "Transport can be accomplished through antiport, where the solute movement is counter to that of the driving ion.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be accomplished through either a symport mechanism, with the solute being moved in the direction of the driving ion, or antiport, where the solute movement is counter to that of the driving ion (Shi, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about transport mechanisms, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "a562b54c-8f45-4f66-bce0-415fcac8f7ef",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C13",
+      "claim": "The ion gradients utilised by secondary active transporters include proton (\u0394\u03bcH+), sodium (\u0394\u03bcNa+), or chloride (\u0394\u03bcCl\u2212) gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "The ion gradients utilised by secondary active transporters include proton (\u0394\u03bcH+), sodium (\u0394\u03bcNa+), or chloride (\u0394\u03bcCl\u2212) gradients, which are in turn established through the action of the primary ATP driven P-, F-, V-, and A-type ion pumps (Voet and Voet, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ion gradients, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "4eebacf9-cd9a-4bc2-ad83-3f0b00a6fb18",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C14",
+      "claim": "Ion gradients are established through the action of the primary ATP driven P-, F-, V-, and A-type ion pumps.",
+      "claim_type": "EXPLICIT",
+      "source": "The ion gradients utilised by secondary active transporters include proton (\u0394\u03bcH+), sodium (\u0394\u03bcNa+), or chloride (\u0394\u03bcCl\u2212) gradients, which are in turn established through the action of the primary ATP driven P-, F-, V-, and A-type ion pumps (Voet and Voet, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ion pumps, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "826abf46-ab2a-4547-b816-bc085744c04d",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C15",
+      "claim": "In general, transport is strictly coupled; the movement of solutes and ions is obligatory and one cannot be transported without the other.",
+      "claim_type": "EXPLICIT",
+      "source": "A fundamental characteristic of these systems is that, in general, transport is strictly coupled; the movement of solutes and ions is obligatory and one cannot be transported without the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the coupling of transport.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "9751e79c-1c3b-4bdb-b82d-898598e0532b",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C16",
+      "claim": "If transport systems were to operate in a decoupled manner, they would act as leaks and dissipate the ion gradients across the membrane, quickly leading to cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "If these systems were to operate in a decoupled manner, they would act as leaks and dissipate the ion gradients across the membrane, quickly leading to cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established knowledge about the importance of ion gradients for cell viability.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "217924f0-a2f2-4895-8d49-3138e009229d",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C17",
+      "claim": "The stoichiometry of transport mechanisms is normally a fixed ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the strict requirement for coupling solute binding and transport to ion movement, the stoichiometry of these mechanisms is normally a fixed ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about transport stoichiometry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "29529600-af1d-4d55-82fa-ada3677a6b21",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C18",
+      "claim": "The Escherichia coli lactose transporter, LacY, transports lactose in a symport mechanism with one proton.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples include the Escherichia coli lactose transporter, LacY, which transports lactose in a symport mechanism with one proton (Kaback et al., 2011) and EmrE, the small multidrug extrusion transporter, which moves both monovalent and divalent substrates in a 1:2 drug:proton stoichiometry (Rotem and Schuldiner, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about LacY, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "ccacc26a-f4f5-4f85-941e-bfb19913c116",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C19",
+      "claim": "EmrE, the small multidrug extrusion transporter, moves both monovalent and divalent substrates in a 1:2 drug:proton stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples include the Escherichia coli lactose transporter, LacY, which transports lactose in a symport mechanism with one proton (Kaback et al., 2011) and EmrE, the small multidrug extrusion transporter, which moves both monovalent and divalent substrates in a 1:2 drug:proton stoichiometry (Rotem and Schuldiner, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about EmrE, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "4395e9b7-8c2b-497f-ac0c-4413c13f3139",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C20",
+      "claim": "A number of membrane proteins have been identified that recognise multiple structurally and chemically diverse solutes.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of membrane proteins have been identified that recognise multiple structurally and chemically diverse solutes (Koepsell, 2013; Pelis and Wright, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "fea1f29c-bc19-4406-a499-0d9676fc4748",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C21",
+      "claim": "POT family transporters are widely distributed within bacterial, fungal, and plant genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "POT family transporters are widely distributed within bacterial, fungal, and plant genomes where they are responsible for the uptake of di- and tri-peptides from the external environment (Daniel et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "07185a29-3223-4a07-a6bf-69ec31e65ef9",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C22",
+      "claim": "POT family transporters are responsible for the uptake of di- and tri-peptides from the external environment.",
+      "claim_type": "EXPLICIT",
+      "source": "POT family transporters are widely distributed within bacterial, fungal, and plant genomes where they are responsible for the uptake of di- and tri-peptides from the external environment (Daniel et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "ad6dfb4c-8a96-4f39-965b-40d9a708d17e",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C23",
+      "claim": "Mammals contain four POT family transporters: PepT1 (SLC15A1), PepT2 (SLC15A2), PHT1 (SLC15A4), and PHT2 (SLC15A3).",
+      "claim_type": "EXPLICIT",
+      "source": "Mammals contain four POT family transporters, PepT1 (SLC15A1), PepT2 (SLC15A2), PHT1 (SLC15A4), and PHT2 (SLC15A3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mammalian POT transporters.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "43f56570-9505-47f9-867c-ae74b68f40ea",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C24",
+      "claim": "PepT1 and PepT2 are expressed at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "PepT1 and PepT2 are expressed at the plasma membrane, whereas PHT1 and PHT2 are found in lysosomal membranes (Daniel and Kottra, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "02f356ed-eb6a-4301-8c42-d74050c94cd1",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C25",
+      "claim": "PHT1 and PHT2 are found in lysosomal membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "PepT1 and PepT2 are expressed at the plasma membrane, whereas PHT1 and PHT2 are found in lysosomal membranes (Daniel and Kottra, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "192a713a-bd28-47ff-a290-297d998315cf",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C26",
+      "claim": "Throughout the POT family the transport mechanism and peptide binding site are highly conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout the POT family the transport mechanism and peptide binding site are highly conserved, with bacterial counterparts sharing \u223c80% identity to human PepT1 and PepT2 within their peptide binding sites (Terada and Inui, 2012; Newstead, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "1832097b-2890-468c-bfca-6f164c4e3fae",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C27",
+      "claim": "Bacterial counterparts share \u223c80% identity to human PepT1 and PepT2 within their peptide binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout the POT family the transport mechanism and peptide binding site are highly conserved, with bacterial counterparts sharing \u223c80% identity to human PepT1 and PepT2 within their peptide binding sites (Terada and Inui, 2012; Newstead, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "870d5405-6e11-450b-8831-a2eb7203d3b9",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C28",
+      "claim": "All POT family members studied to date transport their substrates into the cell in a coupled symport mechanism, driven by the proton electrochemical gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "All POT family members studied to date transport their substrates into the cell in a coupled symport mechanism, driven by the proton electrochemical gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about POT family transport mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "ea6a78d8-2ab2-4b03-a3f9-413ca86b01fd",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C29",
+      "claim": "The question of how many protons are coupled to peptide transport in mammalian PepT1 and PepT2 remains unresolved.",
+      "claim_type": "EXPLICIT",
+      "source": "While a number of mutational studies on the mammalian PepT1 and PepT2 transporters address peptide recognition (Terada et al., 1996; Fei et al., 1997, 1998; Yeung et al., 1998; Uchiyama et al., 2003; Luckner and Brandsch, 2005; Kulkarni et al., 2007; Pieri et al., 2009), the question of how many protons are coupled to peptide transport remains unresolved",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field, supported by citations to previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "a81e1def-7697-4aeb-afe5-ea26ddc62436",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C30",
+      "claim": "Early studies using Caco-2 cell lines derive a ratio of greater than two protons per peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "early studies using Caco-2 cell lines derives a ratio of greater than two protons per peptide (Thwaites et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "fe6c6a23-25c9-4d23-8459-1688611470b2",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C31",
+      "claim": "Due to experimental design, narrowing the proton:peptide ratio to a more precise stoichiometry was not possible in early Caco-2 cell line studies.",
+      "claim_type": "EXPLICIT",
+      "source": "However due to experimental design, narrowing this figure to a more precise stoichiometry was not possible (Kottra et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of previous studies, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "172c80eb-7449-41f0-a007-1a5975cab201",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C32",
+      "claim": "Electrophysiological studies using two electrode voltage clamping (TEVC) in Xenopus oocytes in tandem with radio ligand transport assays have reported stoichiometry ratios of 1:1 and 2:1 proton:peptide for neutral/basic and acidic di-peptides respectively for PepT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological studies using two electrode voltage clamping (TEVC) in Xenopus oocytes in tandem with radio ligand transport assays on non hydrolysable peptide (D-Phe-L-Gln/Glu/Lys or Gly-Sar) have reported stoichiometry ratios of 1:1 and 2:1 proton:peptide for neutral/basic and acidic di-peptides respectively for PepT1 (Fei et al., 1994; Steel et al., 1997; Chen et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "384565eb-3255-445a-a1c3-26aaa7eb23aa",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C33",
+      "claim": "Similar experiments on PepT2 have given different ratios either D-Phe-L-ala of 2:1 and for D-Phe-L-Glu 3:1 or 1:1 for D-Phe-L-Gln/Glu or Lys.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar experiments on PepT2 have given different ratios either D-Phe-L-ala of 2:1 and for D-Phe-L-Glu 3:1 (Chen JBC 1999) or 1:1 for D-Phe-L-Gln/Glu or Lys (Fei et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "39366d0f-1e70-4505-967e-763f17721827",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C34",
+      "claim": "Two crystal structures of PepTSt from Streptoccocus thermophilus revealed di- and tri-peptides interacting differently within the binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we reported two crystal structures of a bacterial POT family transporter, PepTSt, from Streptoccocus thermophilus, which revealed di- and tri-peptides interacting differently within the binding site (Lyons et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "12ec4983-e473-4c5f-9d88-a644a1290b70",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C35",
+      "claim": "The di-peptide L-Ala-L-Phe binds in a horizontal position with respect to the plane of the membrane in PepTSt.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the di-peptide L-Ala-L-Phe binds in a horizontal position with respect to the plane of the membrane, whilst the tri-peptide L-Ala-L-Ala-L-Ala resides in a vertical orientation and makes subtly different interactions within the binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "fc00f7d1-c63a-4efa-919e-1ce336c3dc57",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C36",
+      "claim": "The tri-peptide L-Ala-L-Ala-L-Ala resides in a vertical orientation in PepTSt.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the di-peptide L-Ala-L-Phe binds in a horizontal position with respect to the plane of the membrane, whilst the tri-peptide L-Ala-L-Ala-L-Ala resides in a vertical orientation and makes subtly different interactions within the binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "799a9210-90ea-46c0-97cc-b35cd005bf05",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C37",
+      "claim": "The tri-peptide L-Ala-L-Ala-L-Ala makes subtly different interactions within the binding site compared to the di-peptide L-Ala-L-Phe in PepTSt.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the di-peptide L-Ala-L-Phe binds in a horizontal position with respect to the plane of the membrane, whilst the tri-peptide L-Ala-L-Ala-L-Ala resides in a vertical orientation and makes subtly different interactions within the binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "30e825f8-49c5-4019-8441-78fc1cd8d089",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C38",
+      "claim": "Acidification of the lumen was only observed in the presence of peptide and a large hyperpolarized (negative inside) membrane potential imposed by adding the potassium ionophore valinomycin in the presence of a K+ gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Acidification of the lumen was only observed in the presence of peptide and a large hyperpolarized (negative inside) membrane potential imposed by adding the potassium ionophore valinomycin in the presence of a K+ gradient (Figure 1B,C and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "4a04ddee-797b-4e2a-9d0f-013d6c9ea993",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C39",
+      "claim": "No acidification was observed in the absence of valinomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not see such acidification either in the absence of valinomycin or in the presence of amino acid (alanine) or tetra peptide (Ala-Ala-Ala-Ala), confirming that this transporter is indeed specific for di- and tri-peptide substrates (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "306e76df-bd41-417f-bdf5-498e4fc8c976",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C40",
+      "claim": "No acidification was observed in the presence of amino acid (alanine).",
+      "claim_type": "EXPLICIT",
+      "source": "We did not see such acidification either in the absence of valinomycin or in the presence of amino acid (alanine) or tetra peptide (Ala-Ala-Ala-Ala), confirming that this transporter is indeed specific for di- and tri-peptide substrates (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "022ef3aa-0bc8-43e7-b00c-19ca4782b4fb",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C41",
+      "claim": "No acidification was observed in the presence of tetra peptide (Ala-Ala-Ala-Ala).",
+      "claim_type": "EXPLICIT",
+      "source": "We did not see such acidification either in the absence of valinomycin or in the presence of amino acid (alanine) or tetra peptide (Ala-Ala-Ala-Ala), confirming that this transporter is indeed specific for di- and tri-peptide substrates (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "f0b06e02-58a9-43b5-8537-ea52b5868e10",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C42",
+      "claim": "PepTSt is specific for di- and tri-peptide substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not see such acidification either in the absence of valinomycin or in the presence of amino acid (alanine) or tetra peptide (Ala-Ala-Ala-Ala), confirming that this transporter is indeed specific for di- and tri-peptide substrates (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data showing no transport of amino acids or tetra-peptides.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "a5e48bbb-3bd1-4c2e-adce-820e73009831",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C43",
+      "claim": "PepTSt has been shown previously to transport Ala\u2013Ala with a 10-fold higher activity than Ala-Ala-Ala as judged by IC50 values using tritiated Ala\u2013Ala as a reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "PepTSt has been shown previously to transport Ala\u2013Ala with a 10-fold higher activity than Ala-Ala-Ala as judged by IC50 values using tritiated Ala\u2013Ala as a reporter (Solcan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "b9663893-789b-4e29-8feb-03ee9d07c4f7",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C44",
+      "claim": "The proton-based assay confirmed a 10-fold difference in uptake between Ala-Ala and Ala-Ala-Ala.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed this 10-fold difference in uptake by using our proton-based assay, which can now report the direct uptake of any transported substrate rather than inferring substrate specificity through inhibition of Ala\u2013Ala (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "8deff832-72a3-47a5-b8f2-537a2ca64821",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C45",
+      "claim": "The proton-based assay can report the direct uptake of any transported substrate rather than inferring substrate specificity through inhibition of Ala\u2013Ala.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed this 10-fold difference in uptake by using our proton-based assay, which can now report the direct uptake of any transported substrate rather than inferring substrate specificity through inhibition of Ala\u2013Ala (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the capabilities of the assay, supported by the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "9952ca14-86f5-4718-a2a1-33c93698e432",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C46",
+      "claim": "No competition could be observed for di-lysine in previous studies using Ala-Ala as a reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "This assay is also useful to study poor competitors of di-alanine for example, di-lysine where no competition could be observed previously (Solcan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "6df68c12-23fb-4a17-9750-6a8458b63f3c",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C47",
+      "claim": "Uptake of di-lysine can be observed indirectly by monitoring the coupled proton movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this assay, we can now observe uptake of this substrate indirectly by monitoring the coupled proton movement (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "9c0fc4ce-2cd3-4eff-8f05-bca0ebdfdff4",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C48",
+      "claim": "PepTSt is an electrogenic transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Since PepTSt is an electrogenic transporter, we predict that imposition of a membrane potential in the presence of a pH gradient should drive uphill substrate transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PepTSt.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "7f1860b1-a943-4ca7-a308-755f5bde1509",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C49",
+      "claim": "Imposition of a membrane potential in the presence of a pH gradient should drive uphill substrate transport in PepTSt.",
+      "claim_type": "EXPLICIT",
+      "source": "Since PepTSt is an electrogenic transporter, we predict that imposition of a membrane potential in the presence of a pH gradient should drive uphill substrate transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the electrogenic nature of the transporter.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "c3a7d269-2f1a-438e-96bf-091785b6e774",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C50",
+      "claim": "By loading the liposomes with high concentration of peptide and imposing a large hyperpolarising membrane potential (negative inside), acidification of the lumen is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "By loading the liposomes with high concentration of peptide and imposing a large hyperpolarising membrane potential (negative inside), we observe acidification of the lumen, indicating that the voltage can drive PepTSt-mediated transport against a 100-fold peptide gradient (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "b1794d22-68c2-4a14-8ca6-27485ab2c5c6",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C51",
+      "claim": "The voltage can drive PepTSt-mediated transport against a 100-fold peptide gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "By loading the liposomes with high concentration of peptide and imposing a large hyperpolarising membrane potential (negative inside), we observe acidification of the lumen, indicating that the voltage can drive PepTSt-mediated transport against a 100-fold peptide gradient (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data showing acidification under these conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "304f8c9c-b49b-42c6-8038-762b5bcc6f43",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C52",
+      "claim": "Protons can be observed leaving the liposomal lumen under an oppositely orientated membrane potential (positive inside).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we can also manipulate this system to see protons leaving the liposomal lumen as would be expected under an oppositely orientated membrane potential (positive inside).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "225e4daa-291e-4a81-b42a-ca75adbb5a5d",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C53",
+      "claim": "The equilibrium potential for proton flux was measured using pyranine at a series of membrane voltages, set at the start of the assay with the appropriate potassium ion concentration gradient and the addition of valinomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "With an assay system set up where we could drive transport in predicted directions, we were now in a position to assess proton:peptide stoichiometry by measuring the equilibrium potential for proton flux using pyranine at a series of membrane voltages, set at the start of the assay with the appropriate potassium ion concentration gradient and the addition of valinomycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "e45d5065-d6c7-491b-966f-772ea6285321",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C54",
+      "claim": "This type of assay was used previously to address the stoichiometry of a lysosomal Cl\u2212/H+ antiporter, CLC-7.",
+      "claim_type": "EXPLICIT",
+      "source": "This type of assay was used previously to address the stoichiometry of a lysosomal Cl\u2212/H+ antiporter, CLC-7 (Graves et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "7e910a26-2325-4a39-bdc7-2731fa2c1b3a",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C55",
+      "claim": "An absence of proton flux was observed at a membrane potential of \u221240 mV (inside negative) for Ala-Ala-Ala with no net pH difference and a 100-fold peptide gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed such experiments for the neutral peptide, Ala-Ala-Ala with no net pH difference between the inside and outside of the liposome and a 100-fold peptide gradient (higher concentration inside) and observed an absence of proton flux at a membrane potential of\u221240 mV (inside negative) which corresponds to a 3:1 proton:peptide stoichiometry (Figure 3A and Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "efd4368d-fa9c-4182-b64c-77c6cca8d985",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C56",
+      "claim": "An absence of proton flux at \u221240 mV corresponds to a 3:1 proton:peptide stoichiometry for Ala-Ala-Ala.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed such experiments for the neutral peptide, Ala-Ala-Ala with no net pH difference between the inside and outside of the liposome and a 100-fold peptide gradient (higher concentration inside) and observed an absence of proton flux at a membrane potential of\u221240 mV (inside negative) which corresponds to a 3:1 proton:peptide stoichiometry (Figure 3A and Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data and the thermodynamic equation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "51a76b54-cfac-4892-ba4c-ef1fe53c2836",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C57",
+      "claim": "Voltages corresponding to reversal potentials for stoichiometries of 2:1 and 4:1 produced clearly distinguishable inward and outward fluxes respectively for Ala-Ala-Ala.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, voltages corresponding to reversal potentials for stoichiometries of 2:1 and 4:1 produced clearly distinguishable inward and outward fluxes respectively, strongly pointing to a 3:1 stoichiometry for the transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "ee5243cd-8556-4f7d-acdd-b6d74cf1b7ed",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C58",
+      "claim": "A very different combination of proton and peptide gradients (pH more acidic outside) gave the same stoichiometry of 3:1 for tri-alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "A very different combination of proton and peptide gradients, where we now included a proton gradient, also (pH more acidic outside) gave the same stoichiometry of 3:1 for the same tri-alanine peptide (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "5c65902b-e7e7-4412-9b6e-81fdf57b1793",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C59",
+      "claim": "A three proton:peptide stoichiometry was obtained for the tri-peptide substrate Ala-Leu-Ala.",
+      "claim_type": "EXPLICIT",
+      "source": "We also obtained this three proton:peptide stoichiometry for a different tri-peptide substrate, Ala-Leu-Ala (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "60649a53-cc4d-45a9-88f2-00ea1ed22e78",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C60",
+      "claim": "Transport of Ala-Ala was still observed at a voltage of \u221240 mV, where no net proton flux was seen for tri-alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we performed experiments with the same gradients as our initial tri-peptide measurements only now with the neutral peptide Ala\u2013Ala, we still observed transport at a voltage of \u221240 mV, where before we saw no net proton flux for tri-alanine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "0073cce9-0352-4153-98df-e49cab839220",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C61",
+      "claim": "Transport of Ala-Ala is still occurring at \u221230 mV which under these conditions would correspond to a proton:peptide stoichiometry of 4:1.",
+      "claim_type": "EXPLICIT",
+      "source": "Transport is still also occurring at \u221230 mV which under these conditions would correspond to a proton:peptide stoichiometry of 4:1 and where we saw proton influx for tri-alanine (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A and inference from the thermodynamic equation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "c0422417-c527-4160-a576-7ae324048946",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C62",
+      "claim": "The stoichiometry of protons to peptides in PepTSt appears to be different for tri-Ala as compared with di-Ala.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, surprisingly, the stoichiometry of protons to peptides in PepTSt appears to be different for tri-Ala as compared with di-Ala.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data showing different reversal potentials for di- and tri-peptides.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "045343d0-73d0-4590-bcb3-123b20205cbf",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C63",
+      "claim": "Proton flux was minimal at \u221220 mV (corresponding to 6 protons:peptide) for di-alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed experiments with voltages set at reversal potentials predicted for symport ratios of 5 and 6 protons:peptide and proton flux was minimal at \u221220 mV (6 protons) but it is hard to be able to fully distinguish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "4a7ff54e-c610-47bd-9348-cf7af14bd8f0",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C64",
+      "claim": "The system can be driven in the opposite direction with higher voltages (0 mV) for di-alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the system can still be driven in the opposite direction with higher voltages (0 mV, Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "9e66fe4c-6915-4dfc-926d-880710a5abe5",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C65",
+      "claim": "The stoichiometry for di-peptide transport by PepTSt is higher than four protons.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of whether the actual stoichiometry is 5 or 6 protons:peptide, these experiments strongly suggest that the stoichiometry is higher for di-peptides than for tri-peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data showing transport at voltages where tri-peptides show no flux.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "3a7ebdac-385f-45cf-8311-ea7f3549f169",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C66",
+      "claim": "The stoichiometry for di-peptide transport is clearly different from that of tri-peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Again transport is clearly observed at a membrane potential at \u221230 mV, so the stoichiometry for di-peptide transport by PepTSt is greater than four protons, clearly different from that of tri-peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data comparing di- and tri-peptide transport.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "f111dc55-7404-4b5d-ac04-99722931d164",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C67",
+      "claim": "The higher ratio for di-peptide transport was confirmed using the substrate Ala\u2013Phe.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed this higher ratio for di-peptide transport using the substrate Ala\u2013Phe (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "6bc9864e-b597-4b60-9546-000089e245a2",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C68",
+      "claim": "If the results are truly indicative of higher coupling ratios for di-peptides than for tri-peptides, the same proton electrochemical gradient should accumulate di-peptides to a higher steady-state concentration than tri-peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "The reversal potential equation above predicts that if \u0394\u03a8 = 0, then [Pepin]/[Pepout] = ([H+out]/[H+in])n, where n is the number of protons transported per peptide. Therefore, if our results are truly indicative of higher coupling ratios for di-peptides than for tri-peptides, the same proton electrochemical gradient should accumulate di-peptides to a higher steady-state concentration than tri-peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the thermodynamic equation and the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "9a3a8053-4be8-45de-ae57-1134b88d0fd2",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C69",
+      "claim": "Dramatically higher uptake of the di-peptide was found in the presence of a fixed, 1-unit pH gradient (acid outside).",
+      "claim_type": "EXPLICIT",
+      "source": "We tested this prediction by measuring the uptake of radiolabeled di- and tri-peptides in the presence of a fixed, 1-unit pH gradient (acid outside). As shown in Figure 5, we find dramatically higher uptake of the di-peptide in this gradient, conclusively supporting the idea that different length peptides couple to the proton gradient with differing stoichiometries.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "d5f48eff-21aa-4772-9e05-aac8d42e4756",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C70",
+      "claim": "The dramatically higher uptake of di-peptide conclusively supports the idea that different length peptides couple to the proton gradient with differing stoichiometries.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested this prediction by measuring the uptake of radiolabeled di- and tri-peptides in the presence of a fixed, 1-unit pH gradient (acid outside). As shown in Figure 5, we find dramatically higher uptake of the di-peptide in this gradient, conclusively supporting the idea that different length peptides couple to the proton gradient with differing stoichiometries.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data showing differential uptake.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "dc873f66-ef5f-43bc-bf91-fcd58ed137a0",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C71",
+      "claim": "PepTSt contains six-protonatable side chains within its binding site (Glu 22, 25, 299, 300, 400, and K126).",
+      "claim_type": "EXPLICIT",
+      "source": "PepTSt contains six-protonatable side chains within its binding site (Glu 22, 25, 299, 300, 400, and K126, Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "6f0b63aa-6fc7-41ce-b8dd-99e9cea53d77",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C72",
+      "claim": "All of the protonatable side chains in PepTSt with the exception of Glu299 are conserved across the PTR family from bacteria through to mammalian PepT1 and PepT2.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these with the exception of Glu299 are conserved across the PTR family from bacteria through to mammalian PepT1 and PepT2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about sequence conservation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "cf25c6e2-1415-4c89-bf7b-918397b96bdc",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C73",
+      "claim": "Glu299 is likely to be involved in structural and/or stability features specific to PepTSt as mutation of this residue results in no expression of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous biochemical studies have shown that in PepTSt this non-conserved residue is likely to be involved in structural and/or stability features specific to this protein as mutation of this residue results in no expression of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from previous biochemical studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "f99a369f-dee9-4cb3-adef-de8bac2c3fb0",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C74",
+      "claim": "Glu400 and Lys126 are likely to form a salt bridge that stabilises the outward open confirmation of the transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Glu400 and Lys126 are likely to form a salt bridge that stabilises the outward open confirmation of the transporter, a feature that would be conserved regardless of the substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "105717bd-8795-4c2e-96e5-df6143190329",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C75",
+      "claim": "The salt bridge between Glu400 and Lys126 is a feature that would be conserved regardless of the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Glu400 and Lys126 are likely to form a salt bridge that stabilises the outward open confirmation of the transporter, a feature that would be conserved regardless of the substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "145ea700-7242-44a5-acd8-c2b10349d69f",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C76",
+      "claim": "Glu300 has been shown to interact with both a di-peptide and a tri-peptide substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Glu300 has been shown to interact with both a di-peptide and a tri-peptide substrate and therefore likely to be involved in the transport mechanism for both di- and tri-peptides and has been shown to be important for di-alanine transport previously (Solcan et al., 2012; Doki et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "266d28d0-95b1-49c4-88ef-765395fea364",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C77",
+      "claim": "Glu300 is likely to be involved in the transport mechanism for both di- and tri-peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Glu300 has been shown to interact with both a di-peptide and a tri-peptide substrate and therefore likely to be involved in the transport mechanism for both di- and tri-peptides and has been shown to be important for di-alanine transport previously (Solcan et al., 2012; Doki et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from previous studies showing interactions with both peptide types.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "c94ec39e-f195-4fe0-ad6e-95b8d41606b3",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C78",
+      "claim": "Glu300 has been shown to be important for di-alanine transport previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Glu300 has been shown to interact with both a di-peptide and a tri-peptide substrate and therefore likely to be involved in the transport mechanism for both di- and tri-peptides and has been shown to be important for di-alanine transport previously (Solcan et al., 2012; Doki et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "e624f441-745b-4461-8f10-9eb1c1aa4434",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C79",
+      "claim": "Mutating either Glu22 or Glu25 to alanine yielded proteins unable to catalyse proton coupled tri-alanine transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously these residues have been shown to be important for proton coupling for di-alanine, however, here we also found that mutating either of these residues to alanine yielded proteins unable to catalyse proton coupled tri-alanine transport (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "a8d43ba7-3492-4b76-9561-b637f20800be",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C80",
+      "claim": "Glu22 and Glu25 have been shown to be important for proton coupling for di-alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously these residues have been shown to be important for proton coupling for di-alanine, however, here we also found that mutating either of these residues to alanine yielded proteins unable to catalyse proton coupled tri-alanine transport (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "c953d293-0770-41af-bd96-6fe7d8e26bbb",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C81",
+      "claim": "All five protonatable side chains within the binding site of PepTSt are likely to be important for the transport mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, despite different proton:peptide stoichiometries are apparently required for di- and tri-alanine transport, all five protonatable side chains within the binding site of PepTSt are likely to be important for the transport mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the mutagenesis data showing that all tested residues are required for transport.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "cc29f233-2c5a-4030-aaea-a1657856e620",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C82",
+      "claim": "Previous electrophysiological recordings on PepT1 and PepT2 have focused their attention on di-peptide substrates and suggest a 1:1 proton:peptide stoichiometry in PepT1 for neutral peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous electrophysiological recordings on PepT1 and PepT2 have focused their attention on di-peptide substrates and suggest a 1:1 proton:peptide stoichiometry in PepT1 for neutral peptides and either 1:1 or > in PepT2 (Smith et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "8a425344-b5a5-4f08-85f3-5d4f5633d789",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C83",
+      "claim": "Previous electrophysiological recordings suggest either 1:1 or greater than 1:1 proton:peptide stoichiometry in PepT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous electrophysiological recordings on PepT1 and PepT2 have focused their attention on di-peptide substrates and suggest a 1:1 proton:peptide stoichiometry in PepT1 for neutral peptides and either 1:1 or > in PepT2 (Smith et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "5eeb2ceb-f7cd-4181-af33-094860aa47e9",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C84",
+      "claim": "PepTSt is a homologue of PepT1 and PepT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent crystal structures and functional data on a bacterial POT family transporter, PepTSt, a homologue of PepT1 and PepT2, revealed that peptides could adopt different orientations within the binding site (Figure 6C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the relationship between PepTSt and mammalian transporters.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "6da368bb-bb86-4555-8916-46cfb6f64e3f",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C85",
+      "claim": "Tri-alanine was observed adopting a vertical position and coordinated by 4 hydrogen bonds in PepTSt.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas tri-alanine was observed adopting a vertical position and coordinated by 4 hydrogen bonds, the di-peptide L-Ala-L-Phe was held in a more horizontal position and coordinated through a more extensive network of interactions involving electrostatic interactions with conserved side chains from the N- and C-terminal bundles (Lyons et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous structural studies, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "3d4a82ef-4adb-4d47-a3cd-7d26de443b89",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C86",
+      "claim": "The di-peptide L-Ala-L-Phe was held in a more horizontal position in PepTSt.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas tri-alanine was observed adopting a vertical position and coordinated by 4 hydrogen bonds, the di-peptide L-Ala-L-Phe was held in a more horizontal position and coordinated through a more extensive network of interactions involving electrostatic interactions with conserved side chains from the N- and C-terminal bundles (Lyons et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous structural studies, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "7f6166e5-d2df-42ac-83ae-0cfeb4444039",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C87",
+      "claim": "The di-peptide L-Ala-L-Phe was coordinated through a more extensive network of interactions involving electrostatic interactions with conserved side chains from the N- and C-terminal bundles in PepTSt.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas tri-alanine was observed adopting a vertical position and coordinated by 4 hydrogen bonds, the di-peptide L-Ala-L-Phe was held in a more horizontal position and coordinated through a more extensive network of interactions involving electrostatic interactions with conserved side chains from the N- and C-terminal bundles (Lyons et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous structural studies, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "3dab92cd-1c08-465f-ba22-6e103699410d",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C88",
+      "claim": "The experiments cannot discriminate between protons that come through the transporter and those that may come through bound to the peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important at this stage to highlight that our experiments cannot discriminate between protons that come through the transporter and those that may come through bound to the peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the experimental approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "31502cb7-e613-4de7-a029-112ec7811e41",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C89",
+      "claim": "The results demonstrate that different numbers of protons are moved during the coupled transport of neutral di- vs tri-peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even if some protons are being moved on the peptide as opposed to being required to rearrange interaction networks during transport, our results still demonstrate that different numbers of protons are moved during the coupled transport of neutral di- vs tri-peptides, which we ascertain establishes a fundamental difference in the way this protein handles these two ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data showing different stoichiometries.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "dcf486b8-4046-4588-bf6e-3e0ba9636513",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C90",
+      "claim": "The different numbers of protons moved establishes a fundamental difference in the way PepTSt handles di- vs tri-peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even if some protons are being moved on the peptide as opposed to being required to rearrange interaction networks during transport, our results still demonstrate that different numbers of protons are moved during the coupled transport of neutral di- vs tri-peptides, which we ascertain establishes a fundamental difference in the way this protein handles these two ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "a7cabb0f-63b5-48c8-8b51-b04d9aba0191",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C91",
+      "claim": "None of the five protonatable residues could be mutated and still allow for the transport of either di- or tri-peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, all five of the protonatable residues within the binding site are required for transport as none could be mutated and still allow for the transport of either peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from mutagenesis studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "61ab92ee-c4b3-49f8-980d-aebbce067ea7",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C92",
+      "claim": "Movement of the three protons within the binding site to different side chains may help re-orientate the tri-peptide as the transporter transitions through its conformational cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be due to movement of the three protons within the binding site to different side chains, perhaps to help re-orientate the tri-peptide as the transporter transitions through its conformational cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism based on the experimental data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "1e0ce2ab-6d17-4a1d-85c5-63a60252569e",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C93",
+      "claim": "Tri-alanine in its observed binding position would obstruct the closing of the intracellular gate through disruption of the intracellular stabilising salt bridge.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed if you overlay the crystal structure of the tri-alanine structure with a model of the outward open structure (Figure 6\u2014figure supplement 1), tri-alanine in this position would obstruct the closing of the intracellular gate through disruption of the intracellular stabilising salt bridge (formed between Lys126 (TM4) and Glu400 (TM10)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from structural modeling shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "fb3a0bec-5bfa-4a05-9916-8f9448c990c7",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C94",
+      "claim": "For tri-alanine to be transported across the membrane, it is likely to undergo a change in its vertical binding position, to allow for closure of the transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we suggest that for tri-alanine to be transported across the membrane, it is likely to undergo a change in its vertical binding position, to allow for closure of the transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on structural inference.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "978bba9c-0523-4567-a00d-d073925b1fca",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C95",
+      "claim": "The data suggest only three side chains are protonated during tri-peptide transport, and four/five in di-peptide transport.",
+      "claim_type": "EXPLICIT",
+      "source": "It would be tempting therefore, on the basis of simplicity, to predict that our data suggest only three side chains are protonated during tri-peptide transport, and four/five in di-peptide transport. However, we do not believe this to be the case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation that the authors explicitly reject.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "78327ca2-4be5-49ab-be31-b297afa0e3c1",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C96",
+      "claim": "Mutating Glu22 and Glu25 on TM1 resulted in inactive transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Our attempts to systematically remove the protonable side chains Glu22 and Glu25 on TM1, which form part of the conserved ExxERF motif but do not interact with either of the di-peptide or tri-peptide in the crystal structures (Lyons et al., 2014), resulted in inactive transporters (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "2968ae09-07f9-49d5-a1e6-90d5f5759c34",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C97",
+      "claim": "Glu22 and Glu25 form part of the conserved ExxERF motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Our attempts to systematically remove the protonable side chains Glu22 and Glu25 on TM1, which form part of the conserved ExxERF motif but do not interact with either of the di-peptide or tri-peptide in the crystal structures (Lyons et al., 2014), resulted in inactive transporters (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from structural studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "d010d1fc-e288-4363-be34-7ae8f3a6d3f3",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C98",
+      "claim": "Glu22 and Glu25 do not interact with either of the di-peptide or tri-peptide in the crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Our attempts to systematically remove the protonable side chains Glu22 and Glu25 on TM1, which form part of the conserved ExxERF motif but do not interact with either of the di-peptide or tri-peptide in the crystal structures (Lyons et al., 2014), resulted in inactive transporters (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from structural studies, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "19ed63fa-cb90-45ff-bda6-75da2302b93e",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C99",
+      "claim": "Mutating Lys126, Glu300, and Glu400 results in inactive proton coupled transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that mutating any of the remaining side chains; Lys126, Glu300, and Glu400 also result in inactive proton coupled transport (Solcan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "91605bb0-5557-4b5d-a45c-454d38e4ea10",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C100",
+      "claim": "All of the protonatable side chains are required for transport regardless of substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude from these results that all of the protonatable side chains are required for transport regardless of substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "d5e304c8-f45d-48e5-a853-4abfea473072",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C101",
+      "claim": "The observation that tri-peptides can be moved using only three protons delineates the minimal number of de-protonation events that are required to drive the conformational changes that re-orientate the binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the observation that tri-peptides can be moved using only three protons delineates the minimal number of de-protonation events that are required to drive the conformational changes that re-orientate the binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data on tri-peptide stoichiometry.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "1b1c8cb7-db80-4b68-87b6-0c30b10713c8",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C102",
+      "claim": "The remaining protonatable groups remain proton-bound throughout the transport cycle when tri-peptides are transported.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, the remaining protonatable groups remain proton-bound throughout the transport cycle when tri-peptides are transported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "ff9cf2b7-2ed7-436c-9bae-efee361924ab",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C103",
+      "claim": "Alternating access within the POT family is physiologically driven by the proton electrochemical gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternating access within the POT family is physiologically driven by the proton electrochemical gradient, with defined conformational states stabilised through conserved pairs of salt bridges that act to coordinate the opening and closing of the intracellular and extracellular gates (Newstead, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "e18595d3-4912-4f75-9938-8a4030f3721e",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C104",
+      "claim": "Defined conformational states are stabilised through conserved pairs of salt bridges that act to coordinate the opening and closing of the intracellular and extracellular gates.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternating access within the POT family is physiologically driven by the proton electrochemical gradient, with defined conformational states stabilised through conserved pairs of salt bridges that act to coordinate the opening and closing of the intracellular and extracellular gates (Newstead, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "155caa76-6379-4eb1-9118-023f00b9f3bd",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C105",
+      "claim": "In the outward open conformation the binding site is accessible to the extracellular side of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting from the outward open conformation the binding site is accessible to the extracellular side of the membrane, and the intracellular gate is closed and stabilised by a possible salt bridge between Lys126 (TM4) and Glu400 (TM10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the outward open conformation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "04cf4d28-61ef-4bd8-bbfc-3267b45ca570",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C106",
+      "claim": "In the outward open conformation the intracellular gate is closed and stabilised by a possible salt bridge between Lys126 (TM4) and Glu400 (TM10).",
+      "claim_type": "EXPLICIT",
+      "source": "Starting from the outward open conformation the binding site is accessible to the extracellular side of the membrane, and the intracellular gate is closed and stabilised by a possible salt bridge between Lys126 (TM4) and Glu400 (TM10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on structural data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "59062c33-9889-46f3-817c-ee4bae2d0bed",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C107",
+      "claim": "In GkPOT, the equivalent glutamate to Glu300 is protonated and may be required to allow the binding of peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional studies have revealed that in another bacterial POT family transporter, from Geobacillus kaustophilus, GkPOT, that the equivalent glutamate to Glu300 is protonated and may be required to allow the binding of peptide (Doki et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "3afff18b-9d0c-49db-aff5-68d8247ae791",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C108",
+      "claim": "Proton transfer from Glu300 to Glu400 during transport may occur to couple closing of the extracellular gate with opening of the intracellular one.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the minimal three-proton model for tri-peptide transport we propose, it seems reasonable to suggest that proton transfer from Glu300 to Glu400 during transport may occur to couple closing of the extracellular gate with opening of the intracellular one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "35ab7f27-4ad1-4fa8-a194-63a551c2118d",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C109",
+      "claim": "The other two protons may come from Lys126 and either of Glu22 or Glu25.",
+      "claim_type": "EXPLICIT",
+      "source": "The other two we suggest may come from Lys126 and either of Glu22 or Glu25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "0b2fb35f-4d0b-4507-840a-c40a811dd3f4",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C110",
+      "claim": "Either Glu22 or Glu25 could be mutated to alanine with only a slight reduction in counterflow transport but complete loss of proton coupled peptide uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Our evidence is that in previous functional studies we showed that either of these side chains could be mutated to alanine with only a slight reduction in counterflow transport but complete loss of proton coupled peptide uptake (Solcan et al., 2012), behaviour classically used to identify side chains required for proton coupled uptake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "6146225c-3b59-405c-aa1d-d7230f080137",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C111",
+      "claim": "In the case of di-peptides, additional deprotonation is clearly required.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of di-peptides, additional deprotonation is clearly required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data showing higher stoichiometry for di-peptides.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "69c09a40-5f60-4c9d-8632-1d603d3658d2",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C112",
+      "claim": "The additional deprotonation for di-peptides is the result of the tighter coordination observed in the di-peptide complex structure compared to that for the tri-peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "We conjecture that this is the result of the tighter coordination observed in the di-peptide complex structure compared to that for the tri-peptide (Figure 6C) and maybe one reason why this binding site is so sensitive to mutation in our assays.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation based on structural data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "ca0cffb1-7512-48b0-9dc1-097f9129a797",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C113",
+      "claim": "An adaptable coupling mechanism might have been an important component that enabled the POT family to adapt its binding site to accommodate structurally and chemically diverse molecules for nutritional assimilation.",
+      "claim_type": "EXPLICIT",
+      "source": "An adaptable coupling mechanism, such as we propose, might have been an important component that enabled the POT family to adapt its binding site to accommodate structurally and chemically diverse molecules for nutritional assimilation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the evolutionary significance of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "e7eeac3f-ae4d-4522-a1ff-3d9293d1d08e",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C114",
+      "claim": "In bacterial, fungi, and mammals POT family homologues are responsible for peptide uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst in bacterial, fungi, and mammals POT family homologues are responsible for peptide uptake, in plants this family has evolved to recognise widely diverse molecules, including nitrate, glucosinylates, hormones, and peptides (L\u00e9ran et al., 2014; Sun et al., 2014; Parker and Newstead, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "4b6b7028-7776-42bb-9a16-6f90ca1fc4e8",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C115",
+      "claim": "In plants the POT family has evolved to recognise widely diverse molecules, including nitrate, glucosinylates, hormones, and peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst in bacterial, fungi, and mammals POT family homologues are responsible for peptide uptake, in plants this family has evolved to recognise widely diverse molecules, including nitrate, glucosinylates, hormones, and peptides (L\u00e9ran et al., 2014; Sun et al., 2014; Parker and Newstead, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "60a15943-b53d-4233-b06b-a564e13d0c3c",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C116",
+      "claim": "Coupling peptide transport to the proton gradient appears to facilitate a promiscuous binding site that can adapt to chemically diverse side chain groups more easily than sodium coupled transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "This may explain why mammals use the POT family homologues PepT1 and PepT2, as coupling peptide transport to the proton gradient appears to facilitate a promiscuous binding site that can adapt to chemically diverse side chain groups more easily than sodium coupled transporters, which require well-defined binding sites for the cation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the functional significance of proton coupling.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "3a690e3a-7e4a-42df-992f-7a4c89dbc80b",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C117",
+      "claim": "Sodium coupled transporters require well-defined binding sites for the cation.",
+      "claim_type": "EXPLICIT",
+      "source": "This may explain why mammals use the POT family homologues PepT1 and PepT2, as coupling peptide transport to the proton gradient appears to facilitate a promiscuous binding site that can adapt to chemically diverse side chain groups more easily than sodium coupled transporters, which require well-defined binding sites for the cation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about sodium coupled transporters.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "682026bd-397e-4df3-9734-b30b4b25e5de",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C118",
+      "claim": "PepTSt purified in the detergent DM was mixed in a 60:1 ratio (lipid:protein) with lipid vesicles composed of a mixture of POPE and POPG (in a 3:1 ratio) for reconstitution.",
+      "claim_type": "EXPLICIT",
+      "source": "For reconstitution, PepTSt purified in the detergent DM (Solcan et al., 2012) was mixed in a 60:1 ratio (lipid:protein) with lipid vesicles composed of a mixture of POPE and POPG (in a 3:1 ratio).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "ec6ced95-d2b2-4fa7-ba47-73985a10ce29",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C119",
+      "claim": "POPE and POPG lipids were chosen as they had been previously reported to form proton tight liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These lipids were chosen as they had been previously reported to form proton tight liposomes (Tsai and Miller, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "a1220d42-8ad8-4581-8325-65534663b54c",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C120",
+      "claim": "The authors confirmed that POPE and POPG form proton tight liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed this in our liposomes (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "f769d6f9-5cd1-4a3a-b6da-f16638ba7040",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C121",
+      "claim": "Pyranine is a fluorescent pH indicator dye which is water soluble and can be trapped within liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyranine is a fluorescent pH indicator dye which is water soluble and can be trapped within liposomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the properties of pyranine.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "a7312294-ab96-4d7e-a0c5-b64beccbade9",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "claim_id": "C122",
+      "claim": "Acidification of the lumen of the liposome is indicated by a decrease in the ratio of fluorescence measured at 510 when excited at either 460 or 415.",
+      "claim_type": "EXPLICIT",
+      "source": "Acidification of the lumen of the liposome is indicated by a decrease in the ratio of fluorescence measured at 510 when excited at either 460 or 415.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how the assay works.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7aa7a4d1-31e9-4682-9f77-2de277f7bb88",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A pyranine-based fluorescence assay was developed and validated to monitor proton-coupled peptide transport in reconstituted PepTSt proteoliposomes. The assay demonstrated that acidification occurs only in the presence of peptide, valinomycin-imposed membrane potential, and di- or tri-peptide substrates (not amino acids or tetra-peptides), confirming substrate specificity and the ability to drive transport in both directions depending on the electrochemical gradient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42, C44, C47, C50-C52, and C120 collectively establish a functional assay system with appropriate controls. The experimental data in Figures 1 and 2 demonstrate substrate specificity, voltage-dependence, and bidirectional transport capability. The use of proton-tight liposomes (C120) and multiple negative controls (amino acids, tetra-peptides, absence of valinomycin) strengthen the validity of the assay.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "eb1aad60-328e-4b35-b2fa-66fa73fc1a08",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Tri-peptides (Ala-Ala-Ala and Ala-Leu-Ala) are transported by PepTSt with a 3:1 proton:peptide stoichiometry, as determined by reversal potential measurements showing no net proton flux at -40 mV under defined peptide and pH gradients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 are supported by systematic reversal potential measurements shown in Figure 3. The experiments tested multiple voltages corresponding to different stoichiometries (2:1, 3:1, 4:1) and demonstrated that only -40 mV (corresponding to 3:1) showed no net flux. The finding was replicated with two different tri-peptides and under different gradient conditions, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "c647e010-5417-417e-8390-f828ef98c992",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Di-peptides (Ala-Ala and Ala-Phe) are transported by PepTSt with a higher proton:peptide stoichiometry than tri-peptides, likely 4:1 or 5:1 (possibly 6:1), as evidenced by continued transport at voltages where tri-peptide transport showed no flux.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C67 demonstrate that di-peptides require more protons than tri-peptides based on reversal potential experiments in Figure 4. While the exact stoichiometry between 4:1, 5:1, or 6:1 cannot be definitively determined due to technical limitations (C63), the data clearly show transport at -40 mV and -30 mV where tri-peptides showed no flux, establishing that di-peptides require >3 protons. The finding was confirmed with two different di-peptides.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "4284b40c-cd20-4925-865b-4b3c06ab68b1",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Radiolabeled peptide uptake experiments confirmed that di-peptides accumulate to dramatically higher steady-state concentrations than tri-peptides under the same pH gradient, validating the differential stoichiometry prediction from thermodynamic principles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 provide independent validation of the stoichiometry findings using a different experimental approach. The thermodynamic prediction (C68) based on the reversal potential equation was tested and confirmed by direct uptake measurements (C69, Figure 5). This orthogonal validation strengthens confidence in the differential stoichiometry conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "5abc3a73-0a40-4034-8699-fef88a6a3eb0",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "All five conserved protonatable residues (Glu22, Glu25, Lys126, Glu300, Glu400) in the PepTSt binding site are required for both di- and tri-peptide transport, as demonstrated by mutagenesis studies showing that alanine substitution of any residue abolishes proton-coupled transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72, C79-C81, C91, C96, C99-C100 are supported by mutagenesis data in Figure 6B and citations to previous work. The finding that all five residues are essential for both di- and tri-peptide transport (despite different stoichiometries) is experimentally demonstrated and provides important mechanistic constraints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "4641666a-d423-4f9c-b49b-c7a71f2f6131",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "This study provides the first thermodynamic determination of proton:peptide stoichiometry in the POT family, revealing that PepTSt uses different coupling mechanisms for di-peptides (4-5 protons) versus tri-peptides (3 protons), demonstrating that secondary active transporters can evolve variable coupling mechanisms to accommodate diverse ligands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9, C89-C90 represent the main conclusions of the study. The novelty claim (C8) appears reasonable given the literature review (C29-C33). The differential stoichiometry is well-supported by multiple experimental approaches (reversal potentials, radiolabeled uptake). The broader conclusion about transporter evolution (C9, C90) is a reasonable inference from the data, though somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "ea9376a1-1bcf-40c2-af4d-c46efbe65c63",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Previous structural studies revealed that di- and tri-peptides adopt different orientations in the PepTSt binding site, with di-peptides binding horizontally and tri-peptides vertically, making different interactions within the binding pocket.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37, C85-C87 cite previous structural work (Lyons et al., 2014) that provides the structural context for the current functional study. These are established findings from prior work that motivate the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "8a13344c-4181-4e21-988f-2df27f84492d",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The experimental approach cannot distinguish between protons transported through the transporter versus those bound to the peptide, but regardless, different numbers of protons are moved during di- versus tri-peptide transport, establishing a fundamental mechanistic difference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 acknowledge an important limitation of the methodology while arguing that the main conclusion remains valid. This is a reasonable interpretation - the thermodynamic measurements detect total proton movement regardless of mechanism, and the differential stoichiometry is the key finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "59376af8-857b-410c-8611-4be4f391eb47",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose a mechanistic model where tri-peptide transport requires a minimum of three deprotonation events to drive conformational changes, with remaining protonatable groups staying protonated throughout the cycle, while di-peptides require additional deprotonation due to tighter coordination in the binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C101-C102, C108-C109, C111-C112 present a mechanistic model that is largely speculative (C108, C109, C112 are explicitly marked as speculation). While the model is consistent with the data, it goes beyond what is directly demonstrated. The proposal about which specific residues contribute protons (C108-C110) is particularly speculative and would require additional experiments to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "4a33f6af-1bf0-40c6-8aaa-bf1a25e5e29e",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Structural modeling suggests that tri-alanine in its observed vertical binding position would obstruct closure of the intracellular gate, implying the peptide must reorient during the transport cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C94 are based on structural modeling shown in Figure 6\u2014figure supplement 1. The inference that the peptide would obstruct gate closure (C93) is supported by the structural overlay, though the conclusion that reorientation must occur (C94) is somewhat speculative. This is a reasonable structural interpretation that supports the mechanistic model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "fe416c22-81dc-4924-8be0-557bec3d9b28",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors speculate that an adaptable coupling mechanism may have enabled the POT family to evolve substrate promiscuity, explaining why mammals use proton-coupled rather than sodium-coupled transporters for peptide uptake, and why plant POT homologs recognize diverse molecules beyond peptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C113-C116 present evolutionary and functional speculation based on the findings. While C114-C115 cite established knowledge about POT family diversity, the proposed explanations (C113, C116) are speculative and not directly tested. These represent interesting hypotheses but lack experimental support in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "379601b2-6f50-4486-9d53-9d80ea0fd00f",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The experimental system used PepTSt reconstituted into POPE/POPG liposomes at 60:1 lipid:protein ratio, with pyranine as a ratiometric pH-sensitive fluorophore to monitor luminal acidification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C118-C122 describe the methodological approach. The choice of lipids (C119) is justified by citation, and proton-tightness was confirmed experimentally (C120). The description of pyranine properties and readout (C121-C122) is standard methodology. These are well-supported methodological details.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "b6e79f0c-c360-4338-95bc-d54c43b10802",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Previous studies on mammalian PepT1 and PepT2 reported conflicting proton:peptide stoichiometries ranging from 1:1 to 3:1 depending on the transporter, peptide substrate, and experimental approach, with the question remaining unresolved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33, C82-C83 accurately summarize the state of prior knowledge based on cited literature. This establishes the context and motivation for the current study. The characterization of the field as having unresolved questions about stoichiometry appears accurate based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "793a872a-39b7-406a-aa08-2ed471382e5c",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background information establishing that peptide transport is important for cellular homeostasis, that POT family transporters are proton-coupled symporters widely distributed across organisms, that they transport di- and tri-peptides with high substrate promiscuity (>8000 peptides), and that transport stoichiometry is typically fixed in secondary active transporters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C28 present established background knowledge supported by appropriate citations. These provide context for the study but do not represent new findings. The information appears accurate based on the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "ee90a369-942a-4e18-8c96-80ff5815f1a8",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The pyranine-based assay confirmed previous findings that PepTSt transports Ala-Ala with 10-fold higher activity than Ala-Ala-Ala, and enabled detection of di-lysine transport that could not be observed with previous competition assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 demonstrate that the new assay validates previous findings (C43-C44) and extends capabilities to detect substrates not observable with previous methods (C46-C47). This is supported by data in Figure 1\u2014figure supplement 3 and Figure 1C. These are useful validation and methodological advances.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "90175787-273e-4e3e-b771-c8177c254b90",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The reversal potential approach used to determine stoichiometry was based on established thermodynamic principles and had been previously applied to study the CLC-7 Cl\u2212/H+ antiporter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49, C53-C54 describe the methodological approach and its precedent. The electrogenic nature of PepTSt (C48) is established knowledge, and the reversal potential method (C54) is appropriately cited. This establishes the validity of the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    },
+    {
+      "id": "129f140c-26c3-4168-b51d-d94f8d1462e4",
+      "content_id": "35bdc27c-297c-4caa-9501-e5fef153d26b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Structural and functional context from previous studies indicates that Glu299 is involved in protein stability, Glu400/Lys126 likely form a stabilizing salt bridge, Glu300 interacts with both peptide types, Glu22/Glu25 are part of the conserved ExxERF motif, and alternating access is driven by the proton gradient with conformational states stabilized by salt bridges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C78, C97-C98, C103-C107 cite previous structural and functional studies to provide mechanistic context. Most are appropriately cited, though some involve speculation (C74, C106). These provide useful background for interpreting the current findings but represent prior knowledge rather than new results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:58:06.748762Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "30e825f8-49c5-4019-8441-78fc1cd8d089",
+      "result_id": "7aa7a4d1-31e9-4682-9f77-2de277f7bb88"
+    },
+    {
+      "claim_id": "4a04ddee-797b-4e2a-9d0f-013d6c9ea993",
+      "result_id": "7aa7a4d1-31e9-4682-9f77-2de277f7bb88"
+    },
+    {
+      "claim_id": "306e76df-bd41-417f-bdf5-498e4fc8c976",
+      "result_id": "7aa7a4d1-31e9-4682-9f77-2de277f7bb88"
+    },
+    {
+      "claim_id": "022ef3aa-0bc8-43e7-b00c-19ca4782b4fb",
+      "result_id": "7aa7a4d1-31e9-4682-9f77-2de277f7bb88"
+    },
+    {
+      "claim_id": "f0b06e02-58a9-43b5-8537-ea52b5868e10",
+      "result_id": "7aa7a4d1-31e9-4682-9f77-2de277f7bb88"
+    },
+    {
+      "claim_id": "b9663893-789b-4e29-8feb-03ee9d07c4f7",
+      "result_id": "7aa7a4d1-31e9-4682-9f77-2de277f7bb88"
+    },
+    {
+      "claim_id": "6df68c12-23fb-4a17-9750-6a8458b63f3c",
+      "result_id": "7aa7a4d1-31e9-4682-9f77-2de277f7bb88"
+    },
+    {
+      "claim_id": "c3a7d269-2f1a-438e-96bf-091785b6e774",
+      "result_id": "7aa7a4d1-31e9-4682-9f77-2de277f7bb88"
+    },
+    {
+      "claim_id": "b1794d22-68c2-4a14-8ca6-27485ab2c5c6",
+      "result_id": "7aa7a4d1-31e9-4682-9f77-2de277f7bb88"
+    },
+    {
+      "claim_id": "304f8c9c-b49b-42c6-8038-762b5bcc6f43",
+      "result_id": "7aa7a4d1-31e9-4682-9f77-2de277f7bb88"
+    },
+    {
+      "claim_id": "a1220d42-8ad8-4581-8325-65534663b54c",
+      "result_id": "7aa7a4d1-31e9-4682-9f77-2de277f7bb88"
+    },
+    {
+      "claim_id": "7e910a26-2325-4a39-bdc7-2731fa2c1b3a",
+      "result_id": "eb1aad60-328e-4b35-b2fa-66fa73fc1a08"
+    },
+    {
+      "claim_id": "efd4368d-fa9c-4182-b64c-77c6cca8d985",
+      "result_id": "eb1aad60-328e-4b35-b2fa-66fa73fc1a08"
+    },
+    {
+      "claim_id": "51a76b54-cfac-4892-ba4c-ef1fe53c2836",
+      "result_id": "eb1aad60-328e-4b35-b2fa-66fa73fc1a08"
+    },
+    {
+      "claim_id": "ee5243cd-8556-4f7d-acdd-b6d74cf1b7ed",
+      "result_id": "eb1aad60-328e-4b35-b2fa-66fa73fc1a08"
+    },
+    {
+      "claim_id": "5c65902b-e7e7-4412-9b6e-81fdf57b1793",
+      "result_id": "eb1aad60-328e-4b35-b2fa-66fa73fc1a08"
+    },
+    {
+      "claim_id": "60649a53-cc4d-45a9-88f2-00ea1ed22e78",
+      "result_id": "c647e010-5417-417e-8390-f828ef98c992"
+    },
+    {
+      "claim_id": "0073cce9-0352-4153-98df-e49cab839220",
+      "result_id": "c647e010-5417-417e-8390-f828ef98c992"
+    },
+    {
+      "claim_id": "c0422417-c527-4160-a576-7ae324048946",
+      "result_id": "c647e010-5417-417e-8390-f828ef98c992"
+    },
+    {
+      "claim_id": "045343d0-73d0-4590-bcb3-123b20205cbf",
+      "result_id": "c647e010-5417-417e-8390-f828ef98c992"
+    },
+    {
+      "claim_id": "4a7ff54e-c610-47bd-9348-cf7af14bd8f0",
+      "result_id": "c647e010-5417-417e-8390-f828ef98c992"
+    },
+    {
+      "claim_id": "9e66fe4c-6915-4dfc-926d-880710a5abe5",
+      "result_id": "c647e010-5417-417e-8390-f828ef98c992"
+    },
+    {
+      "claim_id": "3a7ebdac-385f-45cf-8311-ea7f3549f169",
+      "result_id": "c647e010-5417-417e-8390-f828ef98c992"
+    },
+    {
+      "claim_id": "f111dc55-7404-4b5d-ac04-99722931d164",
+      "result_id": "c647e010-5417-417e-8390-f828ef98c992"
+    },
+    {
+      "claim_id": "6bc9864e-b597-4b60-9546-000089e245a2",
+      "result_id": "4284b40c-cd20-4925-865b-4b3c06ab68b1"
+    },
+    {
+      "claim_id": "9a3a8053-4be8-45de-ae57-1134b88d0fd2",
+      "result_id": "4284b40c-cd20-4925-865b-4b3c06ab68b1"
+    },
+    {
+      "claim_id": "d5f48eff-21aa-4772-9e05-aac8d42e4756",
+      "result_id": "4284b40c-cd20-4925-865b-4b3c06ab68b1"
+    },
+    {
+      "claim_id": "dc873f66-ef5f-43bc-bf91-fcd58ed137a0",
+      "result_id": "5abc3a73-0a40-4034-8699-fef88a6a3eb0"
+    },
+    {
+      "claim_id": "6f0b63aa-6fc7-41ce-b8dd-99e9cea53d77",
+      "result_id": "5abc3a73-0a40-4034-8699-fef88a6a3eb0"
+    },
+    {
+      "claim_id": "e624f441-745b-4461-8f10-9eb1c1aa4434",
+      "result_id": "5abc3a73-0a40-4034-8699-fef88a6a3eb0"
+    },
+    {
+      "claim_id": "a8d43ba7-3492-4b76-9561-b637f20800be",
+      "result_id": "5abc3a73-0a40-4034-8699-fef88a6a3eb0"
+    },
+    {
+      "claim_id": "c953d293-0770-41af-bd96-6fe7d8e26bbb",
+      "result_id": "5abc3a73-0a40-4034-8699-fef88a6a3eb0"
+    },
+    {
+      "claim_id": "a7cabb0f-63b5-48c8-8b51-b04d9aba0191",
+      "result_id": "5abc3a73-0a40-4034-8699-fef88a6a3eb0"
+    },
+    {
+      "claim_id": "78327ca2-4be5-49ab-be31-b297afa0e3c1",
+      "result_id": "5abc3a73-0a40-4034-8699-fef88a6a3eb0"
+    },
+    {
+      "claim_id": "19ed63fa-cb90-45ff-bda6-75da2302b93e",
+      "result_id": "5abc3a73-0a40-4034-8699-fef88a6a3eb0"
+    },
+    {
+      "claim_id": "91605bb0-5557-4b5d-a45c-454d38e4ea10",
+      "result_id": "5abc3a73-0a40-4034-8699-fef88a6a3eb0"
+    },
+    {
+      "claim_id": "ac00fa88-67f7-4326-bb9d-6594e7132a33",
+      "result_id": "4641666a-d423-4f9c-b49b-c7a71f2f6131"
+    },
+    {
+      "claim_id": "921831be-cd96-4f9d-8dd7-a92f33ca5e99",
+      "result_id": "4641666a-d423-4f9c-b49b-c7a71f2f6131"
+    },
+    {
+      "claim_id": "d722f0f1-22bd-4d10-b5bd-eb55c3d235cb",
+      "result_id": "4641666a-d423-4f9c-b49b-c7a71f2f6131"
+    },
+    {
+      "claim_id": "043285ad-213f-4fbd-9d10-422413c8b048",
+      "result_id": "4641666a-d423-4f9c-b49b-c7a71f2f6131"
+    },
+    {
+      "claim_id": "31502cb7-e613-4de7-a029-112ec7811e41",
+      "result_id": "4641666a-d423-4f9c-b49b-c7a71f2f6131"
+    },
+    {
+      "claim_id": "dcf486b8-4046-4588-bf6e-3e0ba9636513",
+      "result_id": "4641666a-d423-4f9c-b49b-c7a71f2f6131"
+    },
+    {
+      "claim_id": "39366d0f-1e70-4505-967e-763f17721827",
+      "result_id": "ea9376a1-1bcf-40c2-af4d-c46efbe65c63"
+    },
+    {
+      "claim_id": "12ec4983-e473-4c5f-9d88-a644a1290b70",
+      "result_id": "ea9376a1-1bcf-40c2-af4d-c46efbe65c63"
+    },
+    {
+      "claim_id": "fc00f7d1-c63a-4efa-919e-1ce336c3dc57",
+      "result_id": "ea9376a1-1bcf-40c2-af4d-c46efbe65c63"
+    },
+    {
+      "claim_id": "799a9210-90ea-46c0-97cc-b35cd005bf05",
+      "result_id": "ea9376a1-1bcf-40c2-af4d-c46efbe65c63"
+    },
+    {
+      "claim_id": "6da368bb-bb86-4555-8916-46cfb6f64e3f",
+      "result_id": "ea9376a1-1bcf-40c2-af4d-c46efbe65c63"
+    },
+    {
+      "claim_id": "3d4a82ef-4adb-4d47-a3cd-7d26de443b89",
+      "result_id": "ea9376a1-1bcf-40c2-af4d-c46efbe65c63"
+    },
+    {
+      "claim_id": "7f6166e5-d2df-42ac-83ae-0cfeb4444039",
+      "result_id": "ea9376a1-1bcf-40c2-af4d-c46efbe65c63"
+    },
+    {
+      "claim_id": "3dab92cd-1c08-465f-ba22-6e103699410d",
+      "result_id": "8a13344c-4181-4e21-988f-2df27f84492d"
+    },
+    {
+      "claim_id": "31502cb7-e613-4de7-a029-112ec7811e41",
+      "result_id": "8a13344c-4181-4e21-988f-2df27f84492d"
+    },
+    {
+      "claim_id": "dcf486b8-4046-4588-bf6e-3e0ba9636513",
+      "result_id": "8a13344c-4181-4e21-988f-2df27f84492d"
+    },
+    {
+      "claim_id": "d5e304c8-f45d-48e5-a853-4abfea473072",
+      "result_id": "59376af8-857b-410c-8611-4be4f391eb47"
+    },
+    {
+      "claim_id": "1b1c8cb7-db80-4b68-87b6-0c30b10713c8",
+      "result_id": "59376af8-857b-410c-8611-4be4f391eb47"
+    },
+    {
+      "claim_id": "3afff18b-9d0c-49db-aff5-68d8247ae791",
+      "result_id": "59376af8-857b-410c-8611-4be4f391eb47"
+    },
+    {
+      "claim_id": "35ab7f27-4ad1-4fa8-a194-63a551c2118d",
+      "result_id": "59376af8-857b-410c-8611-4be4f391eb47"
+    },
+    {
+      "claim_id": "0b2fb35f-4d0b-4507-840a-c40a811dd3f4",
+      "result_id": "59376af8-857b-410c-8611-4be4f391eb47"
+    },
+    {
+      "claim_id": "6146225c-3b59-405c-aa1d-d7230f080137",
+      "result_id": "59376af8-857b-410c-8611-4be4f391eb47"
+    },
+    {
+      "claim_id": "69c09a40-5f60-4c9d-8632-1d603d3658d2",
+      "result_id": "59376af8-857b-410c-8611-4be4f391eb47"
+    },
+    {
+      "claim_id": "1e0ce2ab-6d17-4a1d-85c5-63a60252569e",
+      "result_id": "4a33f6af-1bf0-40c6-8aaa-bf1a25e5e29e"
+    },
+    {
+      "claim_id": "fb3a0bec-5bfa-4a05-9916-8f9448c990c7",
+      "result_id": "4a33f6af-1bf0-40c6-8aaa-bf1a25e5e29e"
+    },
+    {
+      "claim_id": "ca0cffb1-7512-48b0-9dc1-097f9129a797",
+      "result_id": "fe416c22-81dc-4924-8be0-557bec3d9b28"
+    },
+    {
+      "claim_id": "e7eeac3f-ae4d-4522-a1ff-3d9293d1d08e",
+      "result_id": "fe416c22-81dc-4924-8be0-557bec3d9b28"
+    },
+    {
+      "claim_id": "4b6b7028-7776-42bb-9a16-6f90ca1fc4e8",
+      "result_id": "fe416c22-81dc-4924-8be0-557bec3d9b28"
+    },
+    {
+      "claim_id": "60a15943-b53d-4233-b06b-a564e13d0c3c",
+      "result_id": "fe416c22-81dc-4924-8be0-557bec3d9b28"
+    },
+    {
+      "claim_id": "682026bd-397e-4df3-9734-b30b4b25e5de",
+      "result_id": "379601b2-6f50-4486-9d53-9d80ea0fd00f"
+    },
+    {
+      "claim_id": "ec6ced95-d2b2-4fa7-ba47-73985a10ce29",
+      "result_id": "379601b2-6f50-4486-9d53-9d80ea0fd00f"
+    },
+    {
+      "claim_id": "a1220d42-8ad8-4581-8325-65534663b54c",
+      "result_id": "379601b2-6f50-4486-9d53-9d80ea0fd00f"
+    },
+    {
+      "claim_id": "f769d6f9-5cd1-4a3a-b6da-f16638ba7040",
+      "result_id": "379601b2-6f50-4486-9d53-9d80ea0fd00f"
+    },
+    {
+      "claim_id": "a7312294-ab96-4d7e-a0c5-b64beccbade9",
+      "result_id": "379601b2-6f50-4486-9d53-9d80ea0fd00f"
+    },
+    {
+      "claim_id": "ea6a78d8-2ab2-4b03-a3f9-413ca86b01fd",
+      "result_id": "b6e79f0c-c360-4338-95bc-d54c43b10802"
+    },
+    {
+      "claim_id": "a81e1def-7697-4aeb-afe5-ea26ddc62436",
+      "result_id": "b6e79f0c-c360-4338-95bc-d54c43b10802"
+    },
+    {
+      "claim_id": "fe6c6a23-25c9-4d23-8459-1688611470b2",
+      "result_id": "b6e79f0c-c360-4338-95bc-d54c43b10802"
+    },
+    {
+      "claim_id": "172c80eb-7449-41f0-a007-1a5975cab201",
+      "result_id": "b6e79f0c-c360-4338-95bc-d54c43b10802"
+    },
+    {
+      "claim_id": "384565eb-3255-445a-a1c3-26aaa7eb23aa",
+      "result_id": "b6e79f0c-c360-4338-95bc-d54c43b10802"
+    },
+    {
+      "claim_id": "cc29f233-2c5a-4030-aaea-a1657856e620",
+      "result_id": "b6e79f0c-c360-4338-95bc-d54c43b10802"
+    },
+    {
+      "claim_id": "8a425344-b5a5-4f08-85f3-5d4f5633d789",
+      "result_id": "b6e79f0c-c360-4338-95bc-d54c43b10802"
+    },
+    {
+      "claim_id": "7f4a53a7-6563-44b0-8455-9214ae239669",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "de0dbef0-1512-41bc-b815-68011c8e0dd6",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "4205a02f-cb7e-471d-aa03-3c923bf8bdc8",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "4e1e747a-bf5e-489f-b583-c6792de5a7f2",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "51e31ca3-fa5f-4b44-a795-645016dd72a1",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "a457ec5c-b636-41fd-95b8-730c146200e2",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "582d178d-0048-4a00-8032-3535f4cc101a",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "feccf2ad-44dc-4a90-b355-790c8b2909b1",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "a562b54c-8f45-4f66-bce0-415fcac8f7ef",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "4eebacf9-cd9a-4bc2-ad83-3f0b00a6fb18",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "826abf46-ab2a-4547-b816-bc085744c04d",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "9751e79c-1c3b-4bdb-b82d-898598e0532b",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "217924f0-a2f2-4895-8d49-3138e009229d",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "29529600-af1d-4d55-82fa-ada3677a6b21",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "ccacc26a-f4f5-4f85-941e-bfb19913c116",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "4395e9b7-8c2b-497f-ac0c-4413c13f3139",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "fea1f29c-bc19-4406-a499-0d9676fc4748",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "07185a29-3223-4a07-a6bf-69ec31e65ef9",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "ad6dfb4c-8a96-4f39-965b-40d9a708d17e",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "43f56570-9505-47f9-867c-ae74b68f40ea",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "02f356ed-eb6a-4301-8c42-d74050c94cd1",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "192a713a-bd28-47ff-a290-297d998315cf",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "1832097b-2890-468c-bfca-6f164c4e3fae",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "870d5405-6e11-450b-8831-a2eb7203d3b9",
+      "result_id": "793a872a-39b7-406a-aa08-2ed471382e5c"
+    },
+    {
+      "claim_id": "a5e48bbb-3bd1-4c2e-adce-820e73009831",
+      "result_id": "ee90a369-942a-4e18-8c96-80ff5815f1a8"
+    },
+    {
+      "claim_id": "b9663893-789b-4e29-8feb-03ee9d07c4f7",
+      "result_id": "ee90a369-942a-4e18-8c96-80ff5815f1a8"
+    },
+    {
+      "claim_id": "8deff832-72a3-47a5-b8f2-537a2ca64821",
+      "result_id": "ee90a369-942a-4e18-8c96-80ff5815f1a8"
+    },
+    {
+      "claim_id": "9952ca14-86f5-4718-a2a1-33c93698e432",
+      "result_id": "ee90a369-942a-4e18-8c96-80ff5815f1a8"
+    },
+    {
+      "claim_id": "6df68c12-23fb-4a17-9750-6a8458b63f3c",
+      "result_id": "ee90a369-942a-4e18-8c96-80ff5815f1a8"
+    },
+    {
+      "claim_id": "9c0fc4ce-2cd3-4eff-8f05-bca0ebdfdff4",
+      "result_id": "90175787-273e-4e3e-b771-c8177c254b90"
+    },
+    {
+      "claim_id": "7f1860b1-a943-4ca7-a308-755f5bde1509",
+      "result_id": "90175787-273e-4e3e-b771-c8177c254b90"
+    },
+    {
+      "claim_id": "225e4daa-291e-4a81-b42a-ca75adbb5a5d",
+      "result_id": "90175787-273e-4e3e-b771-c8177c254b90"
+    },
+    {
+      "claim_id": "e45d5065-d6c7-491b-966f-772ea6285321",
+      "result_id": "90175787-273e-4e3e-b771-c8177c254b90"
+    },
+    {
+      "claim_id": "cf25c6e2-1415-4c89-bf7b-918397b96bdc",
+      "result_id": "129f140c-26c3-4168-b51d-d94f8d1462e4"
+    },
+    {
+      "claim_id": "f99a369f-dee9-4cb3-adef-de8bac2c3fb0",
+      "result_id": "129f140c-26c3-4168-b51d-d94f8d1462e4"
+    },
+    {
+      "claim_id": "105717bd-8795-4c2e-96e5-df6143190329",
+      "result_id": "129f140c-26c3-4168-b51d-d94f8d1462e4"
+    },
+    {
+      "claim_id": "145ea700-7242-44a5-acd8-c2b10349d69f",
+      "result_id": "129f140c-26c3-4168-b51d-d94f8d1462e4"
+    },
+    {
+      "claim_id": "266d28d0-95b1-49c4-88ef-765395fea364",
+      "result_id": "129f140c-26c3-4168-b51d-d94f8d1462e4"
+    },
+    {
+      "claim_id": "c94ec39e-f195-4fe0-ad6e-95b8d41606b3",
+      "result_id": "129f140c-26c3-4168-b51d-d94f8d1462e4"
+    },
+    {
+      "claim_id": "2968ae09-07f9-49d5-a1e6-90d5f5759c34",
+      "result_id": "129f140c-26c3-4168-b51d-d94f8d1462e4"
+    },
+    {
+      "claim_id": "d010d1fc-e288-4363-be34-7ae8f3a6d3f3",
+      "result_id": "129f140c-26c3-4168-b51d-d94f8d1462e4"
+    },
+    {
+      "claim_id": "ff9cf2b7-2ed7-436c-9bae-efee361924ab",
+      "result_id": "129f140c-26c3-4168-b51d-d94f8d1462e4"
+    },
+    {
+      "claim_id": "e18595d3-4912-4f75-9938-8a4030f3721e",
+      "result_id": "129f140c-26c3-4168-b51d-d94f8d1462e4"
+    },
+    {
+      "claim_id": "155caa76-6379-4eb1-9118-023f00b9f3bd",
+      "result_id": "129f140c-26c3-4168-b51d-d94f8d1462e4"
+    },
+    {
+      "claim_id": "04cf4d28-61ef-4bd8-bbfc-3267b45ca570",
+      "result_id": "129f140c-26c3-4168-b51d-d94f8d1462e4"
+    },
+    {
+      "claim_id": "59062c33-9889-46f3-817c-ee4bae2d0bed",
+      "result_id": "129f140c-26c3-4168-b51d-d94f8d1462e4"
+    }
+  ],
+  "comparisons": []
+}

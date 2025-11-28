@@ -1,0 +1,1430 @@
+{
+  "submission": {
+    "id": "33bc724d-ae10-404f-8a92-1b5adfc2965d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:58:21.134219Z",
+    "updated_at": "2025-11-28T19:58:21.134219Z"
+  },
+  "content": [
+    {
+      "id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "submission_id": "33bc724d-ae10-404f-8a92-1b5adfc2965d",
+      "content_type": "manuscript",
+      "content_text": "# tRNA genes rapidly change in evolution to meet novel translational demands\n\n## Authors\n\n- Avihu H Yona<sup>1</sup>\n- Zohar Bloom-Ackermann<sup>1</sup>\n- Idan Frumkin<sup>1</sup>\n- Victor Hanson-Smith<sup>2</sup>\n- Yoav Charpak-Amikam<sup>1</sup>\n- Qinghua Feng<sup>4</sup>\n- Jef D Boeke<sup>5</sup>\n- Orna Dahan<sup>1</sup>\n- Yitzhak Pilpel<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular Genetics Weizmann Institute of Science Rehovot Israel\n2. Department of Microbiology University of California, San Francisco San Francisco United States\n3. Department of Immunology University of California, San Francisco San Francisco United States\n4. Department of Pathology University of Washington Seattle United States\n5. Department of Molecular Biology and Genetics The Johns Hopkins University School of Medicine Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nChanges in expression patterns may occur when organisms are presented with new environmental challenges, for example following migration or genetic changes. To elucidate the mechanisms by which the translational machinery adapts to such changes, we perturbed the tRNA pool of Saccharomyces cerevisiae by tRNA gene deletion. We then evolved the deletion strain and observed that the genetic adaptation was recurrently based on a strategic mutation that changed the anticodon of other tRNA genes to match that of the deleted one. Strikingly, a systematic search in hundreds of genomes revealed that anticodon mutations occur throughout the tree of life. We further show that the evolution of the tRNA pool also depends on the need to properly couple translation to protein folding. Together, our observations shed light on the evolution of the tRNA pool, demonstrating that mutation in the anticodons of tRNA genes is a common adaptive mechanism when meeting new translational demands.\n\n## Introduction\n\nThe process of gene translation is fundamental to the function of living cells, and as such its apparatus is highly conserved across the tree of life (M\u00fcller and Wittmann-Liebold, 1997; Itoh et al., 1999; Wolf et al., 2001). Yet, the capacity of the translation machinery to adaptively evolve is crucial in order to support life in changing environments. Therefore, a key open question is to identify the mechanisms by which the translation machinery adapts to changing conditions.\n\nA thoroughly studied aspect of translation that demonstrates its adaptation capacities is the different proportions by which synonymous codons are used, a phenomenon known as \u2018codon usage bias\u2019. Although differential use of codons can be the result of neutral processes such as mutational biases and the genomic GC content (Urrutia and Hurst, 2001; Rao et al., 2011), natural selection also influences codon usage bias. Indeed, it has been demonstrated that codon choice affects expression level, protein folding, translational accuracy, and other translational features (Akashi, 1994; Parmley and Hurst, 2007; Zhou et al., 2009; Hudson et al., 2011). Since both neutral and selective processes govern codon usage bias, the balance between selection, mutational bias and drift is crucial in shaping the codon usage of each species (Bulmer, 1991). Importantly, although the selective advantage offered by alternative synonymous codons is considered to be moderate, it was recently demonstrated that selection can still shape codon usage patterns in vertebrates even with their small effective population sizes (Doherty and McInerney, 2013).\n\nNotably, the differential usage of codons represents the evolution of the \u2018demand\u2019 aspect of translation, namely the codon usage of all expressed genes. Yet, the adaptation mechanisms of the \u2018supply\u2019, namely the expression level of each tRNA type that is loaded with an amino acid, are not fully understood. While ribosomal genes do not exhibit appreciable changes in response to environmental alterations (M\u00fcller and Wittmann-Liebold, 1997; Itoh et al., 1999; Wolf et al., 2001), tRNA genes may provide an important source of evolutionary plasticity for fine tuning translation.\n\ntRNAs constitute a fundamental component in the process of translation, linking codons to their corresponding amino acids (Widmann et al., 2010). tRNA genes are classified into gene families according to their anticodon, with each gene family containing between one and several copies scattered throughout the genome. Importantly, it has been experimentally observed for Saccharomyces cerevisiae (Tuller et al., 2010) and Escherichia coli (Dong et al., 1996) that the cellular concentrations of each tRNA family in the cell (i.e., the tRNA pool) correlate with its genomic tRNA copy number (Percudani et al., 1997; Kanaya et al., 1999). Notably, the rate-limiting step of polypeptide elongation is the recruitment of a tRNA that matches the translated codon (Varenne et al., 1984). Thus, the translation efficiency is defined as the extent to which the tRNA pool can accommodate the transcriptome (Sharp and Li, 1987; Dos Reis et al., 2004; Stoletzki and Eyre-Walker, 2007), thereby affecting protein production and accuracy.\n\nIn general, highly expressed genes exhibit a marked codon usage bias toward \u2018optimal\u2019 codons, whose corresponding tRNA gene copy number is high (Sharp and Li, 1986a, 1986b). The evolutionary force that acts to maintain optimal translation efficiency of such genes was coined \u2018translational selection\u2019 (Dos Reis et al., 2004). It was previously suggested that translational selection acts to maintain a balance between codon usage and tRNA availability. On the one hand, there is a selective pressure to increase the frequency of preferred codons in highly expressed genes. On the other hand, changes in the tRNA pool may also occur, for example duplication of tRNA genes for which high codon demand exists. Thus, codon frequencies and tRNA copy numbers coevolve toward a supply versus demand balance that facilitates optimal protein production (Higgs and Ran, 2008; Gingold et al., 2012).\n\nThe fitness effects of an unmet translational demand and its potential role in shaping the tRNA pool are not fully characterized. Evolutionary changes to the tRNA pool were appreciated mainly via bioinformatics studies (Rawlings et al., 2003; Withers et al., 2006; Higgs and Ran, 2008; Bermudez-Santana et al., 2010; Rogers et al., 2010) and only a handful of experimental findings have been reported, which rely on genetic manipulations (Bystr\u00f6m and Fink, 1989; Von Pawel-Rammingen et al., 1992; Astr\u00f6m et al., 1993) or direct mutagenesis (Saks et al., 1998). Sequence analyses of divergent genomes have demonstrated that both the sequence and copy number of tRNA genes may change among various species or strains. However, it is unclear whether the observed variations in the tRNA pool are a consequence of an adaptive process due to unbalanced translational demand or the result of random genomic processes, as tRNA genes are a known source of genomic instability (McFarlane and Whitehall, 2009).\n\nFurther, the forces that direct and maintain low copy tRNA families remain unclear. Specifically, it is not clear whether translational selection acts only to favor optimal codons or also acts in particular cases to keep other codons deliberately as \u2018non-optimal\u2019 by maintaining their tRNA supply at low level. Encoding genes with optimal codons might not always lead to higher protein expression levels (Kudla et al., 2009). Similarly, the use of \u2018slow codons\u2019 may not always result in lower levels of protein expression as they could have functional roles in improving expression, for example when enriched at the beginning of a transcript in order to reduce the energy of the RNA structure (Goodman et al., 2013) or to efficiently allocate ribosomes along the mRNA (Tuller et al., 2010). Additionally, it has been proposed that non-optimal codons may play a role in governing the process of cotranslational folding by slowing down translation, which supports proper folding between domain boundaries (Thanaraj, 1996; Kramer et al., 2009; Cabrita et al., 2010; Wilke and Drummond, 2010; Pechmann and Frydman, 2012). Yet, the contribution of non-optimal codons to proper protein folding was observed only for specific genes (Crombie et al., 1992; Komar et al., 1999; Cortazzo et al., 2002; Tsai et al., 2008; Zhang et al., 2009; Zhou et al., 2013). Thus, the extent and relevance of this phenomenon to the global folding state of the proteome needs to be substantiated.\n\nTo elucidate the importance of restoring translational equilibrium, we used an experimental evolution approach. To this end, we genetically perturbed the tRNA pool of the budding yeast S. cerevisiae. In this yeast, the genetic code is decoded by 42 different tRNA families that make up a total of 274 tRNA genes (Chan and Lowe, 2009). Each tRNA gene family ranges from 1\u201316 copies, with 6 tRNA families consisting of only a single copy. In a recent study (Bloom-Ackermann et al., In press), we have systematically manipulated the tRNA pool in S. cerevisiae by individually deleting most tRNA genes from its genome. Here, we focus on one particular deletion strain that showed the most extreme fitness reduction among the viable deletion mutants in this tRNA deletion library. This tRNA exists in only one copy in the genome, thus after its deletion the cell is left without a tRNA with the corresponding anticodon. Lab-evolution experiments performed on this strain demonstrated that the translational balance was rapidly restored by mutations in other tRNA genes that compensated for the tRNA deletion. An extensive bioinformatic analysis revealed that a similar evolutionary trend is widespread in nature too, suggesting that the anticodon mutations we observed in the lab recapitulate an existing mechanism that shapes the tRNA pool. To shed light on the constraints that shape the size of tRNA gene families, we artificially overexpressed singleton tRNAs, rather than deleting them. We found that when low copy tRNAs were overexpressed, the protein quality control machinery was challenged due to increased proteotoxic stress. This observation suggests that low tRNA availability for particular codon can serve an essential means to ensure proper cotranslation folding of proteins.\n\n## Results\n\n### Deletion of singleton tRNA gene breaks the translational balance\n\nTo demonstrate the importance of the balance between codon usage and the cellular tRNA pool we created a yeast strain in which the single copy of the arginine tRNA gene, tR(CCU)J, was deleted (designated \u0394tRNAArgCCU). Consequently, in this deletion strain, the arginine codon AGG cannot be translated with its fully matched tRNA and it is presumably translated by another arginine tRNA, tRNAArgUCU, owing to a wobble interaction (Begley et al., 2007). This shortage in tRNA supply is particularly evident given the demand: AGG is the second most highly used codon for arginine in the yeast genome (Supplementary file 1A). Indeed, the \u0394tRNAArgCCU strain showed a severe growth defect compared to the wild-type strain (Figure 1A, blue and green curves, respectively). This growth difference demonstrates the effect of translational imbalance on cellular growth. Although the deletion mutant of this single copy tRNA is viable (Clare et al., 1988; Kawakami et al., 1993), its severe growth defect also reveals the inability of the wobble interactions to fully compensate for the tRNA gene deletion.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01339/elife-01339-fig1-v1.jpg)\n\n**Figure 1.:** (A) Growth curve measurements of wild-type (WT) (green), \u0394tRNAArgCCU (blue) and the evolved deletion (red) are shown in optical density (OD) values over time during continuous growth on rich medium at 30\u00b0C. (B) The mutation that was found to recover the deletion phenotype in the evolved strains is shown on the secondary structure of tRNAArgUCU. The UCU anticodon nucleotides are marked with black circles, and the red circle indicates the mutation that occurred in the anticodon, that is T\u2192C transition. (C) Mut\u0394tRNAArgCCU in which the same mutation that was found in the evolved strain was deliberately engineered, exhibits similar growth as the WT. Growth curve measurements of WT (green) and of Mut\u0394tRNAArgCCU (magenta) are shown in OD600 values over time during continuous growth on rich medium at 30\u00b0C.\n\n### The tRNA pool can rapidly evolve to meet translational demands\n\nTo learn how genomes adapt to translational imbalances, we performed lab-evolution experiments on the \u0394tRNAArgCCU strain, employing the procedure of daily growth and dilution to a fresh medium (Lenski et al., 1991). The deletion strain was grown under optimal laboratory conditions (rich medium at 30\u00b0C) and was diluted daily into a fresh medium by a factor of 120, corresponding to approximately 7 generations per cycle. Every 50 generations, the growth of the evolving population was compared to both the wild-type and the ancestor \u0394tRNAArgCCU strains. Strikingly, after 200 generations we observed a full recovery of the growth defect of the ancestor strain \u0394tRNAArgCCU, as the growth curve of the evolved population was indistinguishable from that of the wild-type strain (Figure 1A, red curve). Similar dynamics were observed in all four independent evolutionary lines.\n\nIn search of the potential genetic adaptations underlying this rapid recovery, we first looked for genetic alterations in other arginine tRNA genes. We found a single point mutation in another arginine tRNA gene that codes for tRNAArgUCU. This mutation changed the anticodon triplet of tRNAArgUCU from UCU to CCU (i.e., T\u2192C transition). Consequently, the evolved tRNAArgUCU perfectly matched the AGG codon (Figure 1B). Unlike the singleton tRNAArgCCU, there are 11 copies of tRNAArgUCU in the yeast genome. Although each of the 4 independent lab-evolution experiments showed the exact same solution (that is, a mutation in the anticodon of a tRNAArgUCU gene), 3 different copies of this gene were changed among the 4 lines (i.e., 1 of the 11 copies of tRNAArgUCU was mutated in 2 repetitions; see \u2018Materials and methods\u2019). To confirm that a single point mutation in the anticodon of tRNAArgUCU is sufficient to fully compensate for the growth defect of \u0394tRNAArgCCU, we artificially inserted the same T\u2192C mutation into the deletion \u0394tRNAArgCCU mutant. We inserted the mutation into 1 of the 11 copies of the tRNAArgUCU genes, a copy that resides on chromosome XI, and thus spontaneously mutated in 1 of the evolution lines. Indeed, the artificially mutated strain, termed as Mut\u0394tRNAArgCCU, showed a full recovery of the deletion adverse phenotype (Figure 1C). This indicates that the T\u2192C mutation in the anticodon is sufficient for the full recovery of the tRNAArgCCU deletion phenotype.\n\n### Mutated tRNAArgUCU is functional despite sequence dissimilarities with respect to the deleted tRNAArgCCU\n\nIn general, all copies of each tRNA gene family tend to be highly similar in sequence in S. cerevisiae (Chan and Lowe, 2009). In particular, the sequences of the 11 copies of tRNAArgUCU are 100% identical to each other. Yet, the 2 arginine tRNA, tRNAArgUCU, and tRNAArgCCU, differ in 21 of their 72 nucleotides (including the third anticodon position, Figure 2A). Thus, the evolutionary solution that occurred in our experiments created a \u2018chimeric\u2019 tRNA with a CCU anticodon, whereas the rest of the tRNA sequence (termed as the \u2018tRNA scaffold\u2019) remained as tRNAArgUCU. The sequence identity among all members of the tRNAArgUCU family suggests a functional role for the tRNA scaffold in addition to that of the anticodon (Schultz and Yarus, 1994; Konevega et al., 2004; Cochella and Green, 2005; Olejniczak et al., 2005; Saks and Conery, 2007; Schmeing et al., 2011). Therefore, it is surprising that the chimeric tRNA performed just as well as the deleted tRNAArgCCU in terms of cell growth, despite the major sequence differences between the two tRNA scaffolds. Thus, we raised the hypothesis that more challenging growth conditions may expose possible inadequacies in the chimeric tRNA. To test this notion, we compared the rescued strain, Mut\u0394tRNAArgCCU, which carries the chimeric tRNA, to the wild-type strain under an array of challenging conditions. Surprisingly, under all the examined conditions, we observed no significant growth difference between the two strains (Figure 2B). Hence, the chimeric tRNA provides a direct in vivo indication that the scaffolds of tRNAs, which encode for the same amino acid, may be interchangeable in terms of their effect on cellular growth under the conditions we tested.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01339/elife-01339-fig2-v1.jpg)\n\n**Figure 2.:** (A) The sequence of the chimeric tRNA is drawn showing the scaffold of tRNAArgUCU with the mutated CCU anticodon. The anticodon triplet is marked with black circles. The evolved mutation is marked with a red circle. All 20 nucleotide differences between tRNAArgUCU and tRNAArgCCU are marked with blue background, next to which, in green letters, the original nucleotide of tRNAArgCCU are written. (B) Growth curve measurements of WT (green) and of Mut\u0394tRNAArgCCU (magenta) are shown in OD600 values over time during continuous growth.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01339/elife-01339-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** We perturbed the tRNA pool in a wild-type strain by deletion of an entire serine tRNA family. Here, the supply of tRNASerGCU was eliminated by deletion of all four identical gene copies of this family located on chromosomes IV, VI, XII and X. A complete deletion of this gene family is lethal, indicating that the tRNASerGCU is essential in Saccharomyces cerevisiae. To validate that the lethality is indeed due to the deletion of the tRNASerGCU genes and not due to an unintentional perturbation of other putative genetic features in the vicinity of the deleted tRNASerGCU copies, we introduced a plasmid with the tRNASerGCU gene. As expected, the quadruple deletion strain was viable when supplemented with a plasmid carrying the tRNASerGCU gene. (A and C) BY384 and tRNASerGCU quadruple deletion strains, respectively, with a plasmid harboring a tRNASerGCU gene grown on yeast extract/peptone/dextrose (YPD) plates. (B and D) BY384 and tRNASerGCU quadruple deletion strains, respectively, grown on liquid medium that contains uracil (YPD) to allow the growth of cells that lost the plasmid and then plated on 5-fluoro-orotic acid (5-FOA) plates (see \u2018Materials and methods\u2019). As expected, normal size colonies were only observed in A, B and C. This means that the quadruple deletion strain with the plasmid could not lose the tRNA gene because of its essentiality.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01339/elife-01339-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Here, rather than inserting a plasmid with the original tRNASerGCU gene, we complemented the tRNASerGCU family deletion strain with a plasmid containing a chimeric serine tRNA with a GCU anticodon. The chimeric tRNA has an alternative scaffold derived from a different serine tRNA, tRNASerCGA, that differs in 22 positions from the deleted serine tRNA family. This strain formed normal size colonies on a yeast extract/peptone/dextrose (YPD) plate.\n\nTo examine the generality of our observation, we once again perturbed the tRNA pool in a wild-type (WT) strain by deletion of an entire serine tRNA family, tRNASerGCU that has four copies in the genome. A complete deletion of this gene family is lethal, indicating that the tRNASerGCU is essential in S. cerevisiae. Although we could not evolve that strain, we did find that this quadruple deletion strain was viable when supplemented with a centromeric plasmid carrying the tRNASerGCU gene. Thus, the lethality is conferred directly from the tRNA loss and is not due to other indirect effects (Figure 2\u2014figure supplement 1). We hypothesized that, as with tRNAArgCCU, other chimeric serine tRNAs that carry a GCU anticodon, yet with the scaffold of another tRNA for serine, would also prevent the observed lethality. Indeed, a strain carrying a chimeric tRNA with a scaffold of tRNASerCGA and the GCU anticodon is viable on the background of the tRNASerGCU-family deletion (Figure 2\u2014figure supplement 2). Therefore, we concluded that the identity of the anticodon is essential for the function of the tRNASerGCU gene family. Thus, it appears that for the examined tRNAs the anticodon is a dominant feature in terms of cellular fitness, overshadowing other sequence elements.\n\n### Anticodon switching is a widespread phenomenon in nature\n\nAlthough the anticodon of a tRNA gene was rapidly mutated under our laboratory conditions, thus regaining proper translational equilibrium, it is unclear to what extent this mechanism naturally occurs in species across the tree of life. To address this question, we performed a systematic bioinformatics screen for tRNA switching events in nature. We defined an anticodon-switching event as a case of a tRNA whose nucleotide sequence is closer to a tRNA gene with a different anticodon than to a tRNA gene with the same anticodon. To this end, we downloaded all the known tRNA sequences from the Genomic tRNA Database (Chan and Lowe, 2009), a collection that stores the tRNA pools of 524 species. We masked the anticodon triplet as \u2018NNN\u2019 in all tRNA genes, aligned all tRNA sequences from each species individually and inferred a maximum likelihood phylogenetic tree for each alignment. For each tRNA sequence, we calculated the shortest phylogenetic distance to another tRNA with the same anticodon (designated dsame) and the shortest distance to another tRNA with a different anticodon (designated ddiff). For each species, we defined its set of tRNA switching events as those in which ddiff<dsame (see \u2018Materials and methods\u2019, Figure 3\u2014source data 1).\n\nOur analysis included 416 eubacterial, 68 eukaryotic, and 40 archaeal species. We found that tRNA switching events are present in all domains of life, as we detected at least 1 tRNA switching event per species in 8 bacteria, 58 eukarya, and 1 archaeal species (Figure 3A). A retrospective counting revealed that most switching events occurred due to a mutation in the first position in the anticodon triplet that corresponds to the third codon position (see details in \u2018Materials and methods\u2019). For comparison, we masked as \u2018NNN\u2019 additional triplets of nucleotides within the tRNA molecule, and found a higher percentage of discrepancies compared to the anticodon triplet (Figure 3\u2014figure supplement 1; Supplementary file 1B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01339/elife-01339-fig3-v1.jpg)\n\n**Figure 3.:** (A) Number of species with at least one tRNA switching event in each domain of life. (B) The anticodon UUC convergently evolved in Mus musculus. A maximum likelihood phylogeny of tRNA sequences in M. musculus that decode glutamic acid (Glu) codons. Branch lengths express average nucleotide substitutions per site. Decimals on internal branches express branch support. (C) A comparison of nucleotide sequences for glutamic acid tRNA genes in M. musculus with anticodon UUC (top, tRNA1547 and tRNA359), \u2018switched\u2019 UUC tRNAs (middle, tRNA286 and tRNA754), and CUC tRNAs (bottom, tRNA1002, tRNA745, tRNA303, tRNA999, tRNA996 tRNA709, tRNA1001, tRNA1912 and tRNA81). The anticodon triplet is boxed in gray. Red vertical bars indicate differences between sequences. (D) The anticodon UAC convergently evolved in Homo sapiens. A maximum likelihood phylogeny of tRNA sequences in H. sapiens encoding for valine (Val) is shown. (E) A comparison of nucleotide sequences for H. sapiens tRNAs with anticodons UAC (top, tRNA6), a \u2018switched\u2019 UAC tRNA (middle, tRNA40), and an AAC tRNA (bottom, tRNA136). The number of genes is according to the tRNA database.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01339/elife-01339-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Six control triplets were chosen; their locations are marked on a tRNA structure. (A\u2013F) A comparison of the proportion of switched tRNAs for each species when the anticodon was masked versus the proportion of alternative discrepancies when the control triplet was masked. Each point corresponds to one species. A tRNA was identified as \u2018switched\u2019 if its nucleotide sequence phylogenetically clustered with other tRNAs with dissimilar mask triplets (see \u2018Materials and methods\u2019).\n\nFigure 3 demonstrates two examples of tRNA switching events, the first in Mus musculus and the second in Homo sapiens. In the first example, the phylogeny of tRNA sequences with glutamic acid anticodons is presented (Figure 3B). Notably, six out of the eight tRNAs with a UUC anticodon in M. musculus were clustered together in our analysis, while two other copies of the same anticodon identity were clustered closer to tRNA genes with a CUC anticodon (Figure 3C). The second example demonstrates a switching event for tRNA genes encoding for valine anticodons. In this study, a tRNA with a UAC anticodon was clustered with CAC and AAC tRNA genes and not with the other four UAC tRNAs (Figure 3D,E). Interestingly, the CAC and AAC tRNA genes are intermixed in the tree, suggesting that anticodon switching was prevalent in the evolution of CAC and AAC tRNA genes in H. sapiens (Figure 3D,E). Also of interest, the switching events shown in mouse were not found in human and vice versa. Thus, in each of these two mammals the switching examples shown here probably occurred after they split from their common ancestor. In general, inspecting the relationship across species between the size of the tRNA pool and the number of detected switching events revealed a modest correlation, and in particular species with same size of tRNA repertoire manifested tRNA switching to different extents (not shown). This analysis suggests that future examination of the tRNA switching phenomenon in individual species could be of interest.\n\n### Multiple copies of rare tRNAs are deleterious to the cell\n\nAfter demonstrating the prevalence of anticodon switching, we refocused on our lab-evolution results. The switching events that we observed (from tRNAArgUCU to tRNAArgCCU) suggest that the effective gene copy number of each tRNA anticodon set can change during evolution, presumably due to demand-to-supply changes. Given that a single point mutation can functionally convert one tRNA into another, an interesting question emerges: why does the genome maintain a single copy of tRNAArgCCU? T to C mutations must have occurred in evolution but they appear to have been selected against so as to preserve only a single copy of the CCU anticodon tRNA. Consistent with this hypothesis is the observation that other yeast species maintain tRNAArgCCU at a single copy (Supplementary file 1C). We thus reasoned that an artificial increase in the copy number of a rare tRNA, but not of an abundant one, might result in a deleterious effect on the cells.\n\nIndeed, transformation of a multi-copy plasmid containing a tRNAArgCCU gene to a wild-type strain (termed as WTmultiCCU) resulted in a substantial growth reduction when compared to wild-type cells carrying an empty multi-copy plasmid (termed WTmultiControl). In contrast, when we created a strain with a similar multi-copy plasmid that contains the abundant tRNAArgUCU gene, designated as WTmultiUCU, a growth profile much closer to that of WTmultiControl was observed (Figure 4A). These findings are consistent with the evolutionary tendency for yeast to keep a low copy number of tRNAArgCCU and suggest that a high copy number of such rare tRNAs is deleterious to cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01339/elife-01339-fig4-v1.jpg)\n\n**Figure 4.:** (A) Growth curve measurements of WTmultiControl (blue), WTmultiUCU (brown) and WTmultiCCU (khaki) are shown in optical density (OD) values over time during continuous growth. The WTmultiCCU strain carrying a high copy number plasmid harboring tRNAArgCCU demonstrates slower growth compared to cells with an empty plasmid or with a tRNAArgUCU plasmid that is mainly characterized by a longer growth delay (lag phase). (B) A demonstration of a WTmultiCCU cell in which the mCherry-Von Hippel\u2013Lindau (VHL) proteins appear with a punctum phenotype when the protein quality control machinery is saturated with misfolded proteins. (C) A demonstration WTmultiUCU cell in which the quality control machinery is not occupied with other proteins; mCherry-VHL is localized to the cytosol. (D) WTmultiCCU, WTmultiUCU and WTmultiControl were transformed with a VHL-mCherry containing plasmid and visualized under the microscope; 1000 cells per strain were counted for either cytosolic or punctum localization of the VHL protein. The fold change in the number of cells containing puncta was then deduced by normalization to the WTmultiControl population. The 95% confidence interval is indicated. (E) The mRNA fold change of six representative heat-shock genes measured by real-time quantitative PCR (RT-qPCR). Presented values are the mean of two biological repetitions \u00b1 SEM. The significance of the fold change differences was examined using a t test, with *p<0.001 or **p<0.0001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01339/elife-01339-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Growth curve measurements of WTmultiControl (blue), WTmultiAGA (brown) and WTmultiCGA (khaki) are shown in optical density (OD) values over time during continuous growth on rich medium at 30\u00b0C. The WTmultiCGA strain carrying a high copy number plasmid harboring tRNASerCGA demonstrates slower growth compared to cells with an empty plasmid or with a tRNASerAGA plasmid.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01339/elife-01339-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Growth curve measurements of WTmultiControl (blue), WTmultiUUG (brown) and WTmultiCUG (khaki) are shown in optical density (OD) values over time during continuous growth on rich medium at 30\u00b0C. The WTmultiCUG strain carrying a high copy number plasmid harboring tRNAGlnCUG demonstrates slower growth compared to cells with an empty plasmid or with a tRNAGlnUUG plasmid.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01339/elife-01339-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** We created two strains harboring low copy number (CEN) plasmids carrying either tRNAArgUCU or tRNAArgCCU in addition to the endogenous copy. We termed these strains WTextraUCU and WTextraCCU, respectively. Growth curve measurements of WTextraUCU (green) and WTextraCCU (red) are shown in optical density (OD) values over time during continuous growth on rich medium at 39\u00b0C. Cells with the centromeric tRNAArgCCU plasmid showed a modest growth defect compared to cells with the centromeric tRNAArgUCU plasmid.\n\nTo demonstrate the generality of our findings, we employed the same assays in two additional cases. First, we examined 2 serine tRNAs, the singleton tRNASerCGA and tRNASerAGA that is found in the genome in 11 copies. In the second case, we focused on two glutamine tRNAs, the singleton tRNAGlnCUG and tRNAGlnUUG that is found in the genome in nine copies. In both the cases, we observed that the wild-type strain supplemented with multiple copies of a singleton tRNA exhibit impaired growth compared to the same strain supplemented with the abundant tRNA for the same amino acid (Figure 4\u2014figure supplements 1 and 2). Since the changes in tRNA family sizes during evolution likely occur gradually, perhaps one copy at a time, we also examined the effect of adding low copy number plasmids carrying either tRNAArgUCU or tRNAArgCCU. The cells with the tRNAArgCCU plasmid showed a modest growth defect compared to the cells with tRNAArgUCU plasmid, yet only when grown at 39\u00b0C (Figure 4\u2014figure supplement 3).\n\n### Multiple copies of the rare tRNAArgCCU induce proteotoxic stress\n\nWhy is it essential to keep certain tRNAs at a low level? One interesting possibility is that rare tRNAs are essential for the process of cotranslation folding, presumably because low abundance tRNAs provide a pause in translation that might be needed for proper folding (Thanaraj, 1996; Drummond and Wilke, 2008; Cabrita et al., 2010; Pechmann and Frydman, 2012). Other deleterious effects that may stem from a high copy number of tRNAArgCCU could be misincorporation of arginine into non-arginine codons, or the misloading of arginine tRNA molecules with other amino acids. These potential sources of errors are not mutually exclusive and can each contribute to the observed growth defect by exerting a protein folding stress.\n\nTo examine the possibility that the growth defect associated with multiple copies of tRNAArgCCU is indeed associated with such a proteotoxic stress, we used an established method that examines the load on the protein quality control machinery of the cell (see \u2018Materials and methods\u2019) (Kaganovich et al., 2008). In this assay, we transformed cells with a plasmid harboring the human gene, von Hippel\u2013Lindau (VHL), fused to a fluorescent tag (mCherry). Fluorescently tagged VHL that is present as aggregated puncta (Figure 4B), and not as a disperse cytosolic localization (Figure 4C), indicates that the protein quality control machinery is saturated due to high levels of misfolding in the cell\u2019s endogenous proteins. We transformed the VHL-mCherry plasmid to each of the multi-copy tRNA strains, WTmultiCCU, WTmultiUCU and WTmultiControl, and monitored the level of proteotoxic stress by quantifying the number of cells with puncta phenotype in each population. The fold change in those cells was then deduced by normalization to the WTmultiControl population. We found that while WTmultiUCU exhibited similar amount of cells with puncta as the WTmultiControl, the WTmultiCCU exhibited a threefold increase (Figure 4D).\n\nThe proteotoxic stress experienced by the two strains overexpressing tRNAs was further assessed by measuring the induction level of an array of heat-shock proteins (HSPs) using real-time quantitative PCR (RT-qPCR). Since the HSPs have been shown to undergo induction under proteotoxic stress, they are an excellent indicator for this stress (McClellan et al., 2005; Kaganovich et al., 2008). Indeed, we found a significant upregulation in mRNA levels for all the examined HSP genes in the WTmultiCCU strain, but not in the WTmultiUCU strain (Figure 4E). These findings further demonstrate that increasing the copy number of a rare tRNA gene, but not of an already abundant one, results in proteotoxic stress in the cell.\n\n## Discussion\n\nGenomic duplications, deletions, and anticodon mutations shape tRNA gene families, yet the evolutionary scenarios that trigger changes in the tRNA pool have not been thoroughly explored. In our evolution experiments, a translational imbalance was imposed by a tRNA gene deletion that compromised growth and drove the tRNA pool to adapt to a novel translational demand. Importantly, organisms may experience equivalent imbalances when their gene expression changes due to altered environmental conditions or upon migrating to a new ecological niche (Gingold et al., 2012). This scenario is particularly feasible given that the genes needed in various environments do show differences in codon usage, for example respiration as opposed to fermentation in yeast (Man and Pilpel, 2007).\n\nIndeed, when faced with different environmental challenges, transcriptional changes affect the codon usage of the transcriptome (Gingold et al., 2012), and hence the demand for the various tRNAs, and may thus cause translational imbalances. To maintain optimal protein production, the tRNA pool is under pressure to restore the translational balance by accommodating the new translational demands. On a short timescale, the tRNA pool might respond non-genetically by changing expression profiles of the tRNAs (Tuller et al., 2010; Saikia et al., 2012; Pavon-Eternod et al., 2013a, 2013b). Yet, if changes in demand-to-supply persist, a genetic change in the tRNA pool might become beneficial evolutionarily. In this work, we demonstrate how anticodon mutations provide a rapid mechanism to alter the tRNA pool. We propose that during evolution, novel translational requirements can be addressed by anticodon shifting of tRNA copies more readily than by duplications and deletions of tRNA genes. The tRNA pool can evolve to meet new translation demands by adjusting the ratios of tRNA families that code for the same amino acid. Within a single mutational event, anticodon switching holds the potential to rapidly change the ratios of tRNAs within the pool, by increasing the copy number of one tRNA family at the expense of a counterpart. A similar solution could be obtained by a sequence of genomic duplications and deletions of tRNA genes. These alternatives are likely to fixate less frequently than anticodon switching, as they may carry negative effects due to duplications or deletions of adjacent unrelated genetic features. Furthermore, our systematic search for tRNA switching events throughout the tree of life revealed the prevalence of tRNA anticodon mutations in nature. This observation is consistent with the results of our lab-evolution experiment and may be the evolutionary outcome to novel translational demands in the wild.\n\nStudies on methionine tRNAs have previously shown that the scaffold sequences determine their function as either initiator or elongator Met tRNA (Von Pawel-Rammingen et al., 1992; Astr\u00f6m et al., 1993; Kolitz and Lorsch, 2010). Yet, the initiator and the elongator represent extreme cases of tRNAs that are used at different stages in translation. The present chimeric tRNAs that emerged in our lab-evolution experiments successfully replaced the deleted tRNA, despite differences in 20 nucleotide positions between the 2 tRNA scaffolds. If tRNA scaffolds are interchangeable in terms of the effect of their function on the fitness, what can explain the high sequence similarity observed among tRNA gene copies of the same family in yeast? It is possible that the sequence of the tRNA scaffold is indeed important under specific conditions that were not examined in this work, or that our measurements were not sensitive enough to detect small selective disadvantages that can act against chimeric tRNAs in nature. Under these scenarios, the high sequence similarity can be explained by purifying selection that maintains sequence identity within tRNA families. Yet, there is also a possibility that the sequence similarity is not due to purifying selection but the result of \u2018concerted evolution\u2019, an evolutionary process that maintains sequence identity by frequent recombination events among copies of the same gene family (Munz et al., 1982; Amstutz et al., 1985; Teshima and Innan, 2004). This possibility implies that the high conservation observed within tRNA gene families is not due to functionality, but is rather the result of neutral evolution. At present, it is not possible to determine which of the two possibilities explains best the observed sequence identity.\n\nIf a single point mutation in one of the tRNAArgUCU copies enables it to function like a tRNA from a different family, what were the evolutionary constraints that have left some families with more members while others with fewer? Is purifying selection acting to deliberately maintain low levels of certain tRNAs? Such selection would render their corresponding codons \u2018non-optimal\u2019. To examine potential adaptive functions of tRNA family sizes, we tested the consequences of increasing the sizes of several tRNA families. We found that keeping low copy tRNA families is adaptive, as increasing their copy number can result in a proteotoxic stress due to problems in protein folding.\n\nMost of the published work on the functionality of codons that correspond to rare tRNAs have so far tested how modified codon usage of specific proteins influences their proper folding (Crombie et al., 1992; Komar et al., 1999; Cortazzo et al., 2002; Tsai et al., 2008; Zhang et al., 2009; Zhou et al., 2013). In contrast, we took a different approach, in which no protein coding gene sequence is modified, but rather the tRNA supply is manipulated. Thus, the effect we generated could be exerted on all genes, and we could indeed detect it as a global proteotoxic stress in the cell. Our observations are consistent with the theory that programmed pauses in the translation process could promote proper folding during translation (Thanaraj, 1996; Kramer et al., 2009; Cabrita et al., 2010; Wilke and Drummond, 2010). The overexpression of the rare tRNA could have thus impaired with cotranslation folding. Yet, there could be additional reasons for the observed proteotoxic stress, which are not necessarily mutually exclusive. First, overexpression of tRNAArgCCU may result in misincorporation of arginine into non-arginine codons. Second, other aminoacyl tRNA synthetases may aminoacylate an incorrect amino acid to the highly expressed tRNA. Misloading will result in the incorporation of a different amino acid instead of arginine. A potential part of the observed proteotoxic stress due to misincorporation still remains to be studied. Yet, such an effect should be relevant not only for the overexpression of the rare tRNAArgCCU but also for the overexpression of the abundant tRNAArgUCU. Our results show a sever proteotoxic stress only upon expression of the rare tRNA, thus landing more support to the intriguing hypothesis, that the proteotoxic phenotypes observed are due to converting a slow translating codon, scattered in many genes in the genome, into a fast one. This notion is consistent with and complementary to the picture that emerges from single gene-based analyses.\n\nWhen facing the need to adapt, the tRNA pool (that is the supply) provides evolutionary plasticity to the translation machinery. The ability of the tRNA pool to change rapidly can be mainly attributed to its unique architecture in the form of multimember gene families. Only on a much longer evolutionary timescale, will the genome-wide codon usage of genes change so as to further fine tune the translational balance. Notably, the plasticity of the tRNA genes is constrained by the need to maintain proper protein folding (Drummond and Wilke, 2008). Thus, the need to accommodate changes in codon usage demands acts together with protein folding constrains to shape the tRNA pool in the living cells.\n\n## Materials and methods\n\n### Yeast strains and plasmids\n\nThe following S. cerevisiae strains were used in this study: \u0394tRNAArgCCU (based on Y5565, genetic background: \u0394tR(CCU)J::Hyg, MAT\u03b1, can1\u0394::MFA1pr-HIS3 mf\u03b11\u0394::MF\u03b11pr-LEU2 lyp1\u0394 ura3\u03940 leu2\u03940) (Bloom-Ackermann et al., In press) was used for lab-evolution experiments. Mut\u0394tRNAArgCCU is based on \u0394tRNAArgCCU and carries a mutation (T\u2192C transition) in tR(UCU)K gene plus a URA3 selection marker. BY384 (MATa leu2\u03941 lys2\u0394202 trp1\u039463 ura3-52 his3\u0394200) was used to generate a complete deletion of the tRNASerGCU gene family. BY4741 (MATa his3\u03941 leu2\u03940 met15\u03940 ura3\u03940) and BY4742 (MAT\u03b1 his3\u03941 leu2\u03940 lys2\u03940 ura3\u03940) were used for examining the effect of increasing tRNA gene copy number.\n\nPlasmids used in this study to express tRNA genes were pRS316 (CEN, URA3), pRS425 (2\u00b5, LEU2), and pRS426 (2\u00b5, URA3). For the rescue assays of the quadruple serine deletion, the pQF50 (2\u00b5, URA3) and pQF150 (2\u00b5, LEU2) were used. For the protein quality control assays the pGAL-VHL-mCherry (2\u00b5, LEU2) plasmid was used (Kaganovich et al., 2008). For additional information on plasmids and primers see Supplementary file 2.\n\n### Media\n\nCultures were grown at 30\u00b0C in either rich medium (1% bacto-yeast extract, 2% bacto-peptone and 2% dextrose [YPD]) or synthetic medium (0.67% yeast nitrogen base with ammonium sulfate and without amino acids and 2% dextrose, containing the appropriate supplements for plasmid selection). Protein quality control assays were performed on synthetic medium supplemented with 2% galactose as a carbon source. All chemicals used to create the media were manufactured by BD. All sugars, nucleic acids and amino acids were manufactured by Sigma-Aldrich.\n\n### Evolution experiments\n\nLab-evolution experiments were carried out by serial dilution. Cells were grown on 1.2 ml of YPD at 30\u00b0C until reaching stationary phase and then diluted by a factor of 1:120 into fresh media (6.9 generations per dilution). This procedure was repeated daily until population growth under the applied condition matched the wild type. In all measurements of evolved populations, we used a population sample and not selected clones.\n\n### Liquid growth measurements\n\nThe cultures were grown at the relevant condition, and optical density (OD)600 measurements were taken during the growth at 30\u201345 min intervals until reaching early stationary phase. Qualitative growth comparisons were performed using 96-well plates (Thermo Scientific) in which 2 strains were divided on the plate in a checkerboard manner on the plate to cancel out positional geographical effects. For each strain, a growth curve was obtained by averaging over 48 wells.\n\n### Growth on 5-fluoro-orotic acid (5-FOA) plates\n\nStrains were grown for 2 days in a non-selective liquid medium, which contains uracil (YPD), to allow growth of cells that lost the plasmid containing the URA3 counterselectable marker (Boeke et al., 1984). Then, 100 \u00b5l were plated on a YPD plate and replicated on the following day on either YPD or standard 5-fluoro-orotic acid (5-FOA) (US Biological) plates to identify potential colonies that lost the plasmid. Following 2 days of incubation at 30\u00b0C, growth of the colonies was scored.\n\n### Measurements for saturation of the protein quality control machinery\n\nWe used a previously published method that allows examination of the protein quality control of the cell (Kaganovich et al., 2008). This assay provides an indication for the protein unfolding stress in cells by assessing the load on the protein quality control machinery. In this assay, the cells were introduced with a high copy number plasmid that contains the human gene VHL fused to a fluorescent tag (mCherry). VHL is a naturally unstructured protein and is dependent on two additional proteins (Elongin B and C) for proper folding in human cells. Expressing VHL in yeast cells, which lack VHL\u2019s complex partners, leads to misfolding of the translated proteins. Under normal conditions, the misfolded VHL proteins are handled by the cell\u2019s quality control machinery. When the quality control machinery is not saturated, the fluorescently tagged VHL appears in the cytosol. However, under stress, in which the quality control machinery is fully occupied, misfolded proteins in the cytosol are processed into dedicated inclusions (JUNQ and IPOD) and form punctum structures. Hence, a punctum phenotype of the VHL-mCherry construct is an indication for cells that experience proteotoxic stress and saturation of the protein quality control machinery.\n\nWild-type yeast cells harboring the pGAL-VHL-mCherry (CHFP) fusion plasmid (Kaganovich et al., 2008) and either an additional empty plasmid or the tRNA overexpression plasmid, were grown overnight on SC+2% raffinose, diluted into SC+2% galactose and grown at 30\u00b0C for 6 hr. The cells were visualized using an Olympus IX71 microscope (Olympus) controlled by Delta Vision SoftWoRx 3.5.1 software, with X60 oil lens. Images were captured by a Photometrics Coolsnap HQ camera with excitation at 555/28 nm and emission at 617/73 nm (mCherry). The images were scored using ImageJ image processing and analysis software. The percentage of cells harboring VHL-CHFP foci (Puncta) in the overexpression strains were normalized to the level in a control strain carrying an empty plasmid.\n\n### Computational identification of anticodon switching events\n\nTo characterize the extent of anticodon switching across the tree of life, we first downloaded all tRNA sequences from the Genomic tRNA Database (Chan and Lowe, 2009). The sequences in this database were discovered with the tRNAscan algorithm (Lowe and Eddy, 1997), which finds tRNA sequences by scanning genomic DNA. We removed psuedogene tRNAs, which are defined as those tRNAs with a COVE score less than 40.0 (Lowe and Eddy, 1997) . For each remaining tRNA sequence, we masked its anticodon triplet as \u2018NNN\u2019. We next grouped all tRNA sequences by their species, and then aligned the sequences for each species using Muscle with default settings (Edgar, 2004). For each species, we inferred a maximum likelihood phylogeny of its tRNA sequences using RAxML with the GTRCAT model (Stamatakis, 2006). We calculated statistical support for tree branches using SH-like approximate likelihood ratio test (Anisimova and Gascuel, 2006). We next interrogated each species\u2019 tRNA phylogeny using DendroPy (Sukumaran and Holder, 2010). Specifically, we identified those tRNA sequences harboring an anticodon that appears in the genome more than once; for each of these tRNA sequences, we found the shortest distance to another tRNA with the same anticodon (dsame) and the shortest distance to another tRNA with a different anticodon (ddiff). We labeled tRNAs as putatively \u2018switched\u2019 if ddiff<dsame.\n\n### RT-qPCR measurements of HSP genes in strains overexpressing tRNAs\n\nCultures were grown in rich medium at 30\u00b0C to a cell concentration of 1 \u00d7 107 cells/ml. Then, RNA was extracted using MasterPure kit (Epicentre-illumina) (EPICENTER Biotechnologies), and used as a template for quantitative RT-PCR using light cycler 480 SYBR I master kit (Roche Applied Science) and the LightCycler 480 system (Roche Applied Science), according to the manufacturer\u2019s instructions.\n\n### Genomic copies of tRNAArgUCU mutated during lab-evolution experiments\n\nIn all, 4 independent lab-evolution experiments that started with \u0394tRNAArgCCU as the ancestral strain showed full recovery of the deletion phenotype after 200 generations. In each of the evolved populations a mutation in one of the copies of tRNAArgUCU was found to change the anticodon from UCU to CCU. The genomic copies of tRNAArgUCU that were found to carry the mutation were: tR(UCU)K, tR(UCU)G1 and tR(UCU)D that was changed in two of the independent cultures.\n\n### The contribution of different anticodon positions to tRNA switching events\n\nOut of 4245 anticodon switching events that we detected, the first position in the anticodon was changed in 2540 cases while the second and third were only involved in 1448 and 1330 cases, respectively.\n",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "b0965570-19e4-466a-822c-0d0d0c81eb7f",
+      "submission_id": "33bc724d-ae10-404f-8a92-1b5adfc2965d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Laub, Massachusetts Institute of Technology , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01339.016](https://doi.org/10.7554/eLife.01339.016)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201ctRNA genes rapidly change in evolution to meet novel translational demands\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Michael Laub (Reviewing editor) and Chris Marx (peer reviewer).\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nOverall, this paper was favorably received by all three reviewers. The general consensus was that the results provide important new insights into the evolution of tRNAs and represents a nice example of the power of experimental evolution to provide novel biological insights. There are, however, several concerns about the writing and interpretation of a few things that we felt warranted revision. More generally, there was a concern that the paper felt like a loose collection of vignettes and better writing to integrate them would serve the reader well. Each of these concerns about the writing must be dealt with through changes in the text. There is also one experiment that is straightforward that would be necessary to bolster one of the primary claims made in the text (item #1 below) and one experiment (item #6 below) that a reviewer suggests (it's not essential, but could really enhance the paper). All of the major issues to address, collated from the three independent reviewers, are listed below:\n\n1) The authors argue that overproducing low-copy tRNAs causes proteotoxic stress. This conclusion rests primarily on a single assay involving the expression of an mCherry-tagged human protein. I think it's important to assess this by at least one other means; for example, testing whether various HSPs are induced (either individual HSPs or, preferably, a genome-wide transcriptional analysis by arrays or RNA-Seq).\n\n(As a side note: it was not clear whether the potential proteotoxic stress observed resulted from misincorporation of amino acids per se or defects in co-translational folding that result from changes in translation speed/efficiency without misincorporation. The reviewers did not think experiments to address this were necessary for a revised manuscript, but we felt future experiments ought to try and distinguish between these models. For instance, one could measure rates of misincorporation. Or, if the defect is in cotranslational folding, one could imagine taking a protein in which a \u201cslow\u201d and a \u201cfast\u201d codon are near each other: it should be true (if cotranslational folding is the culprit) that making both codons \u201cfast\u201d is detrimental, but that swapping them (and retaining one slow, one fast) is tolerated. The misincorporation model would, by contrast, predict that the exact position of the \u201cslow\u201d codon matters.)\n\n2) The authors often refer to \u201ctranslation efficiency\u201d in the text, but does this mean translation speed, accuracy, or some combination thereof? Can you be more explicit about the intended meaning?\n\n3) The data are clear and compelling that \u201cchimeric\u201d tRNAs harboring the backbone of one tRNA and the anticodon of another can compete with wild-type under a range of conditions. But this begs the question of why duplicated tRNAs in yeast retain nearly 100% sequence identity - one would expect, given the data presented here, to see much more sequence diversity. Can this be commented on?\n\n4) The first paragraph introduces codon bias, then states that the existence of codon usage implies that translation has undergone adaptation. This is not the case, because mutational biases are known to cause codon usage bias. The manuscript states that adaptation is \u201cpresumably\u201d to fine-tune codon usage to gene expression. One need not presume, as the subject has been studied for decades. The authors should expand this section to give a more accurate picture of the question at hand. Plotkin & Kudla (Nat Rev Genet 2011) provide a solid review.\n\n5) It has not been established that any tRNA scaffold with an anticodon change suffices to restore function and fitness, only isoaccepting scaffolds.\n\nOne would not expect the scaffold to be entirely interchangeable. Some aa-tRNA synthetases do not bind the anticodon (Leu, Ala and Ser-accepting aaRS), and the anticodon of the corresponding tRNAs can be changed without affecting charging (see Beuning and Musier-Forsyth, Biopolymers 1999). For these species, the scaffold is decisive for proper charging.\n\nThus, the claim that the tRNA scaffold does not confer tRNA functionality is incorrect. It also does not follow that the anticodon is the dominant feature. It may be the dominant feature so long as the tRNA scaffold is from a synonymous family.\n\n6) Not reporting results after starving the cells for arginine seems a missed opportunity.\n\n7) The levels of tRNAs achieved after multicopy plasmid expression remain unclear. At present, we do not know whether the fold-change in tRNA for each tRNA variant is equivalent, or whether the absolute change is equivalent. We also have no guidance as to which one matters. It would seem that if achieving an increase of x molecules of tRNA means a 10% increase in the abundant tRNA and a 10-fold increase in the rare tRNA, then the results obtained may not be surprising. Please address why adding a putatively constant amount of additional tRNA is the correct experiment.\n\n8) The paper jumps to assuming codon usage bias emerges from selection before providing evidence that it isn't just random drift. Particularly for a broad audience like eLife, I think it is critical to distinguish that the existence of a bias is not enough to claim selection. It is the ways in which there are bias (such as between genes and within them, not just between organisms) that make it clear adaptation plays a role. This idea shows up at the end of the paragraph beginning \u201cThe fitness effects of an unmet translational demand\u2026\u201d, but by then adaptation has long since been assumed.\n\n9) Related to the above point, the paragraph beginning \u201cFurthermore, the forces that direct and maintain low copy tRNA families remain unclear\u2026\u201d is confusing as currently written. I think the point trying to be made is that, although on average selection favors a particular set of codons that are generally labeled as optimal, might there be an adaptive reason for low frequency/sub-optimal codons that \u2013 in certain circumstances \u2013 are actually selectively advantageous. Please try to clarify this point, as it is so central to the paper. Along these lines, the argument could be strengthened by citing one or more of the available papers that a gene encoded with 100% \u2018optimal\u2019 codons can actually be poorly expressed or cause decreased fitness.\n\n10) An interesting point was made that detectable anticodon switching events occurred in genomes with a greater than average number of tRNA. Might there be ascertainment bias here? If such switches are easiest to detect for clades with many sequenced members, and these are generally fast pathogens with many tRNA (and rRNA copies, etc), then this may make at least some of this signal a simple consequence of where it was easiest to identify the events.\n\n11) In their Discussion, they say, \u201cour\u2026search\u2026revealed the prevalence of this adaptation mechanism in nature,\u201d where I think they can at best say \u201cIt is not established that natural anticodon changes are adaptive, nor that, if they are adaptive, that they are a response to novel translational demands. Our search revealed the prevalence of tRNA anticodon mutations in nature, consistent with a response to novel translational demands as in our experimental evolution results\u201d, or something of the sort.\n",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ea7045d5-1e0e-45a7-b1dc-9f5a5a934ac4",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C1",
+      "claim": "The translation apparatus is highly conserved across the tree of life.",
+      "claim_type": "EXPLICIT",
+      "source": "The process of gene translation is fundamental to the function of living cells, and as such its apparatus is highly conserved across the tree of life (M\u00fcller and Wittmann-Liebold, 1997; Itoh et al., 1999; Wolf et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to three published studies (M\u00fcller and Wittmann-Liebold, 1997; Itoh et al., 1999; Wolf et al., 2001).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "e5c6280a-808f-4569-a67b-0df28f68ff59",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C2",
+      "claim": "Differential use of codons can result from neutral processes such as mutational biases and genomic GC content.",
+      "claim_type": "EXPLICIT",
+      "source": "Although differential use of codons can be the result of neutral processes such as mutational biases and the genomic GC content (Urrutia and Hurst, 2001; Rao et al., 2011), natural selection also influences codon usage bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to two published studies (Urrutia and Hurst, 2001; Rao et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "d4afc090-9470-4ad9-9714-52b657dd7afa",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C3",
+      "claim": "Natural selection influences codon usage bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Although differential use of codons can be the result of neutral processes such as mutational biases and the genomic GC content (Urrutia and Hurst, 2001; Rao et al., 2011), natural selection also influences codon usage bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the context of codon usage evolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "3b243241-dafb-4f99-be75-c662acbaa35c",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C4",
+      "claim": "Codon choice affects expression level, protein folding, translational accuracy, and other translational features.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it has been demonstrated that codon choice affects expression level, protein folding, translational accuracy, and other translational features (Akashi, 1994; Parmley and Hurst, 2007; Zhou et al., 2009; Hudson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to four published studies (Akashi, 1994; Parmley and Hurst, 2007; Zhou et al., 2009; Hudson et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "97318472-e988-466c-9c4c-cd1e983df4af",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C5",
+      "claim": "Selection can shape codon usage patterns in vertebrates even with their small effective population sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, although the selective advantage offered by alternative synonymous codons is considered to be moderate, it was recently demonstrated that selection can still shape codon usage patterns in vertebrates even with their small effective population sizes (Doherty and McInerney, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a published study (Doherty and McInerney, 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "9db28db2-693e-4063-93e1-4bec8ea36887",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C6",
+      "claim": "Ribosomal genes do not exhibit appreciable changes in response to environmental alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "While ribosomal genes do not exhibit appreciable changes in response to environmental alterations (M\u00fcller and Wittmann-Liebold, 1997; Itoh et al., 1999; Wolf et al., 2001), tRNA genes may provide an important source of evolutionary plasticity for fine tuning translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to three published studies (M\u00fcller and Wittmann-Liebold, 1997; Itoh et al., 1999; Wolf et al., 2001).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "95bdf84d-aa5a-411b-a286-849da9867351",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C7",
+      "claim": "tRNA genes may provide an important source of evolutionary plasticity for fine tuning translation.",
+      "claim_type": "EXPLICIT",
+      "source": "While ribosomal genes do not exhibit appreciable changes in response to environmental alterations (M\u00fcller and Wittmann-Liebold, 1997; Itoh et al., 1999; Wolf et al., 2001), tRNA genes may provide an important source of evolutionary plasticity for fine tuning translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential role of tRNA genes in evolutionary adaptation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "05af6c90-d0ba-43b8-9c0e-a0b3b3cebfc8",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C8",
+      "claim": "The cellular concentrations of each tRNA family in Saccharomyces cerevisiae correlate with its genomic tRNA copy number.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it has been experimentally observed for Saccharomyces cerevisiae (Tuller et al., 2010) and Escherichia coli (Dong et al., 1996) that the cellular concentrations of each tRNA family in the cell (i.e., the tRNA pool) correlate with its genomic tRNA copy number (Percudani et al., 1997; Kanaya et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies (Tuller et al., 2010; Percudani et al., 1997; Kanaya et al., 1999).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "afcb4516-4ddf-4ba7-89ad-8e44532f1934",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C9",
+      "claim": "The cellular concentrations of each tRNA family in Escherichia coli correlate with its genomic tRNA copy number.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it has been experimentally observed for Saccharomyces cerevisiae (Tuller et al., 2010) and Escherichia coli (Dong et al., 1996) that the cellular concentrations of each tRNA family in the cell (i.e., the tRNA pool) correlate with its genomic tRNA copy number (Percudani et al., 1997; Kanaya et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies (Dong et al., 1996; Percudani et al., 1997; Kanaya et al., 1999).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "7daf8474-9ed2-4021-951f-f8dea7f18451",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C10",
+      "claim": "The rate-limiting step of polypeptide elongation is the recruitment of a tRNA that matches the translated codon.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the rate-limiting step of polypeptide elongation is the recruitment of a tRNA that matches the translated codon (Varenne et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a published study (Varenne et al., 1984).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "f2b176cb-8b71-433e-8cff-517fc3331c1a",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C11",
+      "claim": "Translation efficiency is defined as the extent to which the tRNA pool can accommodate the transcriptome.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the translation efficiency is defined as the extent to which the tRNA pool can accommodate the transcriptome (Sharp and Li, 1987; Dos Reis et al., 2004; Stoletzki and Eyre-Walker, 2007), thereby affecting protein production and accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to three published studies (Sharp and Li, 1987; Dos Reis et al., 2004; Stoletzki and Eyre-Walker, 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "78b59fd6-628b-4ef3-98c1-472b1d2aa974",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C12",
+      "claim": "Highly expressed genes exhibit a marked codon usage bias toward 'optimal' codons, whose corresponding tRNA gene copy number is high.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, highly expressed genes exhibit a marked codon usage bias toward 'optimal' codons, whose corresponding tRNA gene copy number is high (Sharp and Li, 1986a, 1986b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to two published studies (Sharp and Li, 1986a, 1986b).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "d4ee850e-1dfd-458b-b8b1-cb1d93936f14",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C13",
+      "claim": "The \u0394tRNAArgCCU strain showed a severe growth defect compared to the wild-type strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the \u0394tRNAArgCCU strain showed a severe growth defect compared to the wild-type strain (Figure 1A, blue and green curves, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A comparing growth curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "feb70ef5-e8bb-46b1-92ef-ce3cb96afa30",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C14",
+      "claim": "After 200 generations, the evolved \u0394tRNAArgCCU population showed full recovery of the growth defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, after 200 generations we observed a full recovery of the growth defect of the ancestor strain \u0394tRNAArgCCU, as the growth curve of the evolved population was indistinguishable from that of the wild-type strain (Figure 1A, red curve).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A comparing growth curves after evolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "039e9ac5-132a-4f9f-91ad-247283b2883f",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C15",
+      "claim": "Similar dynamics of growth recovery were observed in all four independent evolutionary lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar dynamics were observed in all four independent evolutionary lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from four independent evolution experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "58df90fa-0fdd-42d3-8655-ddd9104872c2",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C16",
+      "claim": "A single point mutation in tRNAArgUCU changed the anticodon triplet from UCU to CCU.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a single point mutation in another arginine tRNA gene that codes for tRNAArgUCU. This mutation changed the anticodon triplet of tRNAArgUCU from UCU to CCU (i.e., T\u2192C transition).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from sequencing the evolved strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "605cc7b8-af29-435a-ad8c-480f826b0a43",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C17",
+      "claim": "The evolved tRNAArgUCU perfectly matched the AGG codon after the mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the evolved tRNAArgUCU perfectly matched the AGG codon (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the anticodon mutation changing UCU to CCU, which would pair with AGG.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "bebf630c-ebeb-492e-9ad1-e83ca4e20c1e",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C18",
+      "claim": "There are 11 copies of tRNAArgUCU in the yeast genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the singleton tRNAArgCCU, there are 11 copies of tRNAArgUCU in the yeast genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the yeast genome structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "07c99c88-2f8d-4fda-8392-969695973ddf",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C19",
+      "claim": "All 4 independent lab-evolution experiments showed the exact same solution of a mutation in the anticodon of a tRNAArgUCU gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Although each of the 4 independent lab-evolution experiments showed the exact same solution (that is, a mutation in the anticodon of a tRNAArgUCU gene), 3 different copies of this gene were changed among the 4 lines (i.e., 1 of the 11 copies of tRNAArgUCU was mutated in 2 repetitions; see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from four independent evolution experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "02ebb45a-7447-4b1b-bef2-75b7f9752b11",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C20",
+      "claim": "The artificially mutated strain Mut\u0394tRNAArgCCU showed a full recovery of the deletion adverse phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the artificially mutated strain, termed as Mut\u0394tRNAArgCCU, showed a full recovery of the deletion adverse phenotype (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C comparing growth curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "baf3a777-017a-47ad-994d-dcd5dfe37b24",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C21",
+      "claim": "The T\u2192C mutation in the anticodon is sufficient for the full recovery of the tRNAArgCCU deletion phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the T\u2192C mutation in the anticodon is sufficient for the full recovery of the tRNAArgCCU deletion phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing that the artificially introduced mutation fully rescues the phenotype.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "07113b61-e2ec-4d89-ad29-dae2bfb6e17f",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C22",
+      "claim": "The two arginine tRNAs, tRNAArgUCU and tRNAArgCCU, differ in 21 of their 72 nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the 2 arginine tRNA, tRNAArgUCU, and tRNAArgCCU, differ in 21 of their 72 nucleotides (including the third anticodon position, Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence comparison data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "3c01b000-11a5-47dc-90d1-8bd6677b3dd9",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C23",
+      "claim": "All copies of the tRNAArgUCU family are 100% identical to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the sequences of the 11 copies of tRNAArgUCU are 100% identical to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the yeast genome structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "dcb01950-2e18-4ef5-b590-1f146f19700b",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C24",
+      "claim": "Under all examined challenging conditions, no significant growth difference was observed between the rescued strain Mut\u0394tRNAArgCCU and the wild-type strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, under all the examined conditions, we observed no significant growth difference between the two strains (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B comparing growth under various conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "5554cc6b-9b0d-474f-8eb4-91612e55d8ae",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C25",
+      "claim": "The scaffolds of tRNAs which encode for the same amino acid may be interchangeable in terms of their effect on cellular growth under the tested conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the chimeric tRNA provides a direct in vivo indication that the scaffolds of tRNAs, which encode for the same amino acid, may be interchangeable in terms of their effect on cellular growth under the conditions we tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observation that the chimeric tRNA functions as well as the original.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "5efc990f-74d2-4015-8212-a9d060f92593",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C26",
+      "claim": "A complete deletion of the tRNASerGCU gene family is lethal in Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "A complete deletion of this gene family is lethal, indicating that the tRNASerGCU is essential in Saccharomyces cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing that the quadruple deletion strain is not viable without complementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "7dffaa48-ef6a-494c-b1fb-102940ec0610",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C27",
+      "claim": "The quadruple deletion strain of tRNASerGCU was viable when supplemented with a centromeric plasmid carrying the tRNASerGCU gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we could not evolve that strain, we did find that this quadruple deletion strain was viable when supplemented with a centromeric plasmid carrying the tRNASerGCU gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "64166dcf-bf9d-4c2e-b68a-9f8a5dacf439",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C28",
+      "claim": "A strain carrying a chimeric tRNA with a scaffold of tRNASerCGA and the GCU anticodon is viable on the background of the tRNASerGCU-family deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a strain carrying a chimeric tRNA with a scaffold of tRNASerCGA and the GCU anticodon is viable on the background of the tRNASerGCU-family deletion (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "1c7f7bac-2242-4db9-b89b-ba33152852bb",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C29",
+      "claim": "For the examined tRNAs, the anticodon is a dominant feature in terms of cellular fitness, overshadowing other sequence elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it appears that for the examined tRNAs the anticodon is a dominant feature in terms of cellular fitness, overshadowing other sequence elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observations that chimeric tRNAs with different scaffolds but correct anticodons can rescue deletion phenotypes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "aafde620-de6b-493b-817a-f51a2227e24a",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C30",
+      "claim": "tRNA switching events are present in all domains of life.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that tRNA switching events are present in all domains of life, as we detected at least 1 tRNA switching event per species in 8 bacteria, 58 eukarya, and 1 archaeal species (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bioinformatics analysis of 524 species shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "b4ef07dc-20c0-472f-bd51-fc23a4d54aaa",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C31",
+      "claim": "Most switching events occurred due to a mutation in the first position in the anticodon triplet that corresponds to the third codon position.",
+      "claim_type": "EXPLICIT",
+      "source": "A retrospective counting revealed that most switching events occurred due to a mutation in the first position in the anticodon triplet that corresponds to the third codon position (see details in 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by bioinformatics analysis of tRNA switching events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "2a59b213-78f0-47d7-b8a4-a5b78af79db0",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C32",
+      "claim": "Transformation of a multi-copy plasmid containing a tRNAArgCCU gene to a wild-type strain resulted in a substantial growth reduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, transformation of a multi-copy plasmid containing a tRNAArgCCU gene to a wild-type strain (termed as WTmultiCCU) resulted in a substantial growth reduction when compared to wild-type cells carrying an empty multi-copy plasmid (termed WTmultiControl).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A comparing growth curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "17ae2acc-e26a-4e29-ab99-8debe0dd7b31",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C33",
+      "claim": "A strain with a multi-copy plasmid containing the abundant tRNAArgUCU gene showed a growth profile much closer to that of the control strain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when we created a strain with a similar multi-copy plasmid that contains the abundant tRNAArgUCU gene, designated as WTmultiUCU, a growth profile much closer to that of WTmultiControl was observed (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A comparing growth curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "124db3b1-bb77-4465-aa5b-87fe4a43e650",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C34",
+      "claim": "A high copy number of rare tRNAs is deleterious to cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with the evolutionary tendency for yeast to keep a low copy number of tRNAArgCCU and suggest that a high copy number of such rare tRNAs is deleterious to cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observation that overexpression of rare tRNAs causes growth defects.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "19718199-922a-47bc-8c8a-a99bf99eba49",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C35",
+      "claim": "WTmultiCCU exhibited a threefold increase in cells with puncta phenotype compared to WTmultiControl.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that while WTmultiUCU exhibited similar amount of cells with puncta as the WTmultiControl, the WTmultiCCU exhibited a threefold increase (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4D quantifying cells with puncta.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "0be5455c-dde1-488d-81bd-d8d08f2a89d7",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C36",
+      "claim": "There was significant upregulation in mRNA levels for all examined HSP genes in the WTmultiCCU strain, but not in the WTmultiUCU strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found a significant upregulation in mRNA levels for all the examined HSP genes in the WTmultiCCU strain, but not in the WTmultiUCU strain (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data shown in Figure 4E measuring HSP gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "a328c938-5929-47ed-8866-0b6eeb0c52e8",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C37",
+      "claim": "Increasing the copy number of a rare tRNA gene, but not of an already abundant one, results in proteotoxic stress in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings further demonstrate that increasing the copy number of a rare tRNA gene, but not of an already abundant one, results in proteotoxic stress in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the VHL-mCherry puncta assay and HSP gene expression data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "1a047b38-9962-41de-b68a-c95ace0ed11d",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C38",
+      "claim": "Organisms may experience translational imbalances when their gene expression changes due to altered environmental conditions or upon migrating to a new ecological niche.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, organisms may experience equivalent imbalances when their gene expression changes due to altered environmental conditions or upon migrating to a new ecological niche (Gingold et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a published study (Gingold et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "5b7df0fa-5f0f-477c-9a37-0adcb568813a",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C39",
+      "claim": "Genes needed in various environments show differences in codon usage.",
+      "claim_type": "EXPLICIT",
+      "source": "This scenario is particularly feasible given that the genes needed in various environments do show differences in codon usage, for example respiration as opposed to fermentation in yeast (Man and Pilpel, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a published study (Man and Pilpel, 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "82a511c0-73df-4e5e-a862-b49b3b229d6d",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C40",
+      "claim": "Transcriptional changes affect the codon usage of the transcriptome when faced with different environmental challenges.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when faced with different environmental challenges, transcriptional changes affect the codon usage of the transcriptome (Gingold et al., 2012), and hence the demand for the various tRNAs, and may thus cause translational imbalances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a published study (Gingold et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "f073cf10-7d4d-4131-97a3-bd45d9d3a811",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C41",
+      "claim": "On a short timescale, the tRNA pool might respond non-genetically by changing expression profiles of the tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "On a short timescale, the tRNA pool might respond non-genetically by changing expression profiles of the tRNAs (Tuller et al., 2010; Saikia et al., 2012; Pavon-Eternod et al., 2013a, 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies (Tuller et al., 2010; Saikia et al., 2012; Pavon-Eternod et al., 2013a, 2013b).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "b7fc5d68-b06a-4231-be0a-83974787416c",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C42",
+      "claim": "Anticodon mutations provide a rapid mechanism to alter the tRNA pool.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we demonstrate how anticodon mutations provide a rapid mechanism to alter the tRNA pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental evolution data showing rapid adaptation via anticodon mutations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "38080e2f-91f9-4011-b22d-21ed7f90c657",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C43",
+      "claim": "During evolution, novel translational requirements can be addressed by anticodon shifting of tRNA copies more readily than by duplications and deletions of tRNA genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that during evolution, novel translational requirements can be addressed by anticodon shifting of tRNA copies more readily than by duplications and deletions of tRNA genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the experimental and bioinformatics findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "0a89e7cb-49d0-4be8-83b0-dc1528a75f54",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C44",
+      "claim": "Within a single mutational event, anticodon switching holds the potential to rapidly change the ratios of tRNAs within the pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Within a single mutational event, anticodon switching holds the potential to rapidly change the ratios of tRNAs within the pool, by increasing the copy number of one tRNA family at the expense of a counterpart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mechanism of anticodon switching observed in the experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "c14bef26-68f7-474f-b3d5-e95870fcb381",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C45",
+      "claim": "The systematic search for tRNA switching events throughout the tree of life revealed the prevalence of tRNA anticodon mutations in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our systematic search for tRNA switching events throughout the tree of life revealed the prevalence of tRNA anticodon mutations in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by bioinformatics analysis of 524 species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "da2730f4-b920-4ed7-8c9f-6df2df03a439",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C46",
+      "claim": "Studies on methionine tRNAs have shown that the scaffold sequences determine their function as either initiator or elongator Met tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies on methionine tRNAs have previously shown that the scaffold sequences determine their function as either initiator or elongator Met tRNA (Von Pawel-Rammingen et al., 1992; Astr\u00f6m et al., 1993; Kolitz and Lorsch, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies (Von Pawel-Rammingen et al., 1992; Astr\u00f6m et al., 1993; Kolitz and Lorsch, 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "7c31f270-198c-4ee9-aa92-99874c19a85c",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C47",
+      "claim": "The chimeric tRNAs that emerged in the lab-evolution experiments successfully replaced the deleted tRNA, despite differences in 20 nucleotide positions between the 2 tRNA scaffolds.",
+      "claim_type": "EXPLICIT",
+      "source": "The present chimeric tRNAs that emerged in our lab-evolution experiments successfully replaced the deleted tRNA, despite differences in 20 nucleotide positions between the 2 tRNA scaffolds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing functional rescue by chimeric tRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "4ded630a-1a45-4b3a-bf13-1889e88181f1",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C48",
+      "claim": "Keeping low copy tRNA families is adaptive, as increasing their copy number can result in a proteotoxic stress due to problems in protein folding.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that keeping low copy tRNA families is adaptive, as increasing their copy number can result in a proteotoxic stress due to problems in protein folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing proteotoxic stress upon overexpression of rare tRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "9537571a-cc1e-432b-9ab4-5fb001d02bd1",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C49",
+      "claim": "The overexpression of the rare tRNA could have impaired cotranslation folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations are consistent with the theory that programmed pauses in the translation process could promote proper folding during translation (Thanaraj, 1996; Kramer et al., 2009; Cabrita et al., 2010; Wilke and Drummond, 2010). The overexpression of the rare tRNA could have thus impaired with cotranslation folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental observations and cited theories.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "b49cfb31-4cef-4cd0-a59d-c6d666032ba3",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C50",
+      "claim": "The ability of the tRNA pool to change rapidly can be mainly attributed to its unique architecture in the form of multimember gene families.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of the tRNA pool to change rapidly can be mainly attributed to its unique architecture in the form of multimember gene families.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observations of rapid adaptation through anticodon mutations in multi-copy gene families.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "b74cc736-3fc3-4b82-8420-08317aef1571",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C51",
+      "claim": "The need to accommodate changes in codon usage demands acts together with protein folding constraints to shape the tRNA pool in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the need to accommodate changes in codon usage demands acts together with protein folding constrains to shape the tRNA pool in the living cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the combined experimental findings about translational balance and protein folding stress.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "76480414-93c7-478a-8bf6-1a0d6055a039",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C52",
+      "claim": "In Saccharomyces cerevisiae, the genetic code is decoded by 42 different tRNA families that make up a total of 274 tRNA genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this yeast, the genetic code is decoded by 42 different tRNA families that make up a total of 274 tRNA genes (Chan and Lowe, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a published database (Chan and Lowe, 2009).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "493c9da7-f751-48d3-87d3-102dcedad886",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C53",
+      "claim": "Each tRNA gene family in S. cerevisiae ranges from 1\u201316 copies, with 6 tRNA families consisting of only a single copy.",
+      "claim_type": "EXPLICIT",
+      "source": "Each tRNA gene family ranges from 1\u201316 copies, with 6 tRNA families consisting of only a single copy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the yeast genome structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "a25e63e2-d9f6-4778-92a0-5b2d057fdb99",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C54",
+      "claim": "AGG is the second most highly used codon for arginine in the yeast genome.",
+      "claim_type": "EXPLICIT",
+      "source": "This shortage in tRNA supply is particularly evident given the demand: AGG is the second most highly used codon for arginine in the yeast genome (Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data provided in Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "2fb9bfa8-8c54-4302-bd32-947f954ffed2",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C55",
+      "claim": "In the \u0394tRNAArgCCU strain, the arginine codon AGG is presumably translated by another arginine tRNA, tRNAArgUCU, owing to a wobble interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, in this deletion strain, the arginine codon AGG cannot be translated with its fully matched tRNA and it is presumably translated by another arginine tRNA, tRNAArgUCU, owing to a wobble interaction (Begley et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known wobble pairing rules, supported by citation (Begley et al., 2007).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "7c7cd9eb-5e02-48b4-a1d7-287df52695ed",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C56",
+      "claim": "The deletion mutant of the single copy tRNAArgCCU is viable.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the deletion mutant of this single copy tRNA is viable (Clare et al., 1988; Kawakami et al., 1993), its severe growth defect also reveals the inability of the wobble interactions to fully compensate for the tRNA gene deletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies (Clare et al., 1988; Kawakami et al., 1993).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "53b62e98-7c46-4894-9469-8174ac3cd072",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C57",
+      "claim": "The severe growth defect of the \u0394tRNAArgCCU deletion mutant reveals the inability of wobble interactions to fully compensate for the tRNA gene deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the deletion mutant of this single copy tRNA is viable (Clare et al., 1988; Kawakami et al., 1993), its severe growth defect also reveals the inability of the wobble interactions to fully compensate for the tRNA gene deletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observation of severe growth defect despite viability.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "68d7ff22-0963-41e4-b3da-39d628d8df80",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C58",
+      "claim": "The deletion strain was diluted daily into fresh medium by a factor of 120, corresponding to approximately 7 generations per cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion strain was grown under optimal laboratory conditions (rich medium at 30\u00b0C) and was diluted daily into a fresh medium by a factor of 120, corresponding to approximately 7 generations per cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "05d3e4ca-09a4-48be-ab59-1c272a403ead",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C59",
+      "claim": "Other yeast species maintain tRNAArgCCU at a single copy.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis is the observation that other yeast species maintain tRNAArgCCU at a single copy (Supplementary file 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data provided in Supplementary file 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "22dbbfb4-fe6a-4996-a21f-72abd34b209f",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C64",
+      "claim": "Out of 4245 anticodon switching events detected, the first position in the anticodon was changed in 2540 cases while the second and third were only involved in 1448 and 1330 cases, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 4245 anticodon switching events that we detected, the first position in the anticodon was changed in 2540 cases while the second and third were only involved in 1448 and 1330 cases, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by bioinformatics analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "b5c4eb85-a46c-45f9-8a94-af4a59daf4b0",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C65",
+      "claim": "The bioinformatics analysis included 416 eubacterial, 68 eukaryotic, and 40 archaeal species.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis included 416 eubacterial, 68 eukaryotic, and 40 archaeal species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the bioinformatics analysis performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "ca8af667-cf89-4ffe-9ef9-4bb5e19736c5",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C66",
+      "claim": "At least 1 tRNA switching event per species was detected in 8 bacteria, 58 eukarya, and 1 archaeal species.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that tRNA switching events are present in all domains of life, as we detected at least 1 tRNA switching event per species in 8 bacteria, 58 eukarya, and 1 archaeal species (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bioinformatics analysis data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "61e82864-36a2-4c76-bb49-0d3a49d80a9a",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C67",
+      "claim": "In Mus musculus, six out of the eight tRNAs with a UUC anticodon were clustered together, while two other copies were clustered closer to tRNA genes with a CUC anticodon.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, six out of the eight tRNAs with a UUC anticodon in M. musculus were clustered together in our analysis, while two other copies of the same anticodon identity were clustered closer to tRNA genes with a CUC anticodon (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogenetic analysis data shown in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "4308063e-6e27-4304-97a8-e79e73d8da5a",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C68",
+      "claim": "In Homo sapiens, a tRNA with a UAC anticodon was clustered with CAC and AAC tRNA genes and not with the other four UAC tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, a tRNA with a UAC anticodon was clustered with CAC and AAC tRNA genes and not with the other four UAC tRNAs (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogenetic analysis data shown in Figure 3D and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "c38347ef-9439-466a-9f54-c17d5b96e5cc",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C69",
+      "claim": "The CAC and AAC tRNA genes are intermixed in the phylogenetic tree, suggesting that anticodon switching was prevalent in the evolution of CAC and AAC tRNA genes in H. sapiens.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the CAC and AAC tRNA genes are intermixed in the tree, suggesting that anticodon switching was prevalent in the evolution of CAC and AAC tRNA genes in H. sapiens (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the phylogenetic tree structure shown in Figure 3D.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "60a88814-426e-430c-88c9-8b0eb2da459c",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C70",
+      "claim": "The switching events shown in mouse were not found in human and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "Also of interest, the switching events shown in mouse were not found in human and vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from comparing the bioinformatics analysis results between the two species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "f1a22ae5-bc01-4452-9f83-1092f402ebdb",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C71",
+      "claim": "In each of mouse and human, the switching examples shown probably occurred after they split from their common ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in each of these two mammals the switching examples shown here probably occurred after they split from their common ancestor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that the switching events are not shared between the two species.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "5c0ffed6-fed9-4c2b-a17b-019288cf4957",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "claim_id": "C72",
+      "claim": "A higher percentage of discrepancies was found when additional triplets of nucleotides within the tRNA molecule were masked compared to the anticodon triplet.",
+      "claim_type": "EXPLICIT",
+      "source": "For comparison, we masked as 'NNN' additional triplets of nucleotides within the tRNA molecule, and found a higher percentage of discrepancies compared to the anticodon triplet (Figure 3\u2014figure supplement 1; Supplementary file 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bioinformatics analysis data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9edd13e8-e3b9-4651-a601-987fed0e3166",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Deletion of the singleton tRNAArgCCU gene causes severe growth defects in S. cerevisiae. The \u0394tRNAArgCCU strain exhibits substantially reduced growth compared to wild-type, despite being viable, demonstrating that wobble pairing by tRNAArgUCU cannot fully compensate for the loss of the cognate tRNA for the AGG codon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C54-C57 collectively establish that deletion of tRNAArgCCU creates a translational imbalance with measurable fitness consequences. The experimental growth data (C13), codon usage information (C54), and prior viability studies (C56) converge to support this result. The inference about wobble compensation (C55, C57) is reasonable given the established wobble pairing rules.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "9ac20fae-8708-4d03-90f4-cf32d27cce28",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Experimental evolution of the \u0394tRNAArgCCU strain rapidly restores fitness through anticodon switching. After 200 generations, all four independent evolutionary lines converged on the same solution: a T\u2192C mutation in one of the 11 copies of tRNAArgUCU that changes its anticodon from UCU to CCU, enabling it to decode the AGG codon. This single mutation is sufficient for complete phenotypic rescue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C21 provide strong convergent evidence for anticodon switching as an adaptive mechanism. The reproducibility across four independent lines (C15, C19), sequencing data identifying the specific mutation (C16), and validation through engineered strains (C20, C21) collectively demonstrate that this is a robust evolutionary solution. The experimental design and controls are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "9e1aee1c-f753-4358-977e-2597ee504ba8",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Chimeric tRNAs with different scaffolds but correct anticodons are functionally equivalent to native tRNAs. Despite 21 nucleotide differences between tRNAArgUCU and tRNAArgCCU scaffolds, the chimeric tRNA (tRNAArgUCU scaffold with CCU anticodon) performs identically to wild-type under diverse growth conditions, suggesting that tRNA scaffolds encoding the same amino acid are interchangeable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 and C47 demonstrate functional equivalence through growth assays under multiple conditions (C24). However, the conclusion about complete interchangeability (C25) may be overstated, as the authors acknowledge that subtle fitness differences might exist under untested conditions or that measurements may lack sensitivity. The result is supported for the conditions tested but requires qualification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "650e09da-91e6-429d-823e-15fcacb000fb",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The anticodon dominance principle extends to other tRNA families. Deletion of the essential tRNASerGCU family is lethal, but viability is restored by either the native tRNA or a chimeric tRNA with a tRNASerCGA scaffold and GCU anticodon, further supporting that anticodon identity is the critical determinant of tRNA function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 provide independent validation of the anticodon dominance principle in a different tRNA family. The experimental design with plasmid complementation (C27) and chimeric rescue (C28) is appropriate. This generalization strengthens the main finding, though testing in only two tRNA families limits the scope of the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "1296dcc6-2705-4b5f-a982-7010369424db",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Anticodon switching is a widespread evolutionary mechanism across the tree of life. Bioinformatic analysis of 524 species identified tRNA switching events in all three domains of life (8 bacteria, 58 eukarya, 1 archaea), with most switches occurring at the first anticodon position. Phylogenetic analyses in mouse and human reveal multiple independent switching events that occurred after their divergence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 and C45 establish the prevalence of switching, while C64-C72 provide methodological details and specific examples. The phylogenetic approach is sound, and the control analysis (C72) showing higher discrepancies for non-anticodon triplets validates the specificity of the finding. However, the relatively low detection rate (especially in bacteria and archaea) and potential biases in the computational method warrant caution in interpreting the full extent of this phenomenon.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "a18a8ad6-ac3a-4fd4-abf3-e152dd091911",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Overexpression of rare tRNAs is deleterious to cellular fitness. Wild-type cells carrying multi-copy plasmids with the rare tRNAArgCCU exhibit substantial growth defects compared to cells with abundant tRNAArgUCU or empty plasmids. This finding is consistent with evolutionary conservation of low copy numbers for tRNAArgCCU across yeast species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 demonstrate the deleterious effect through growth curve comparisons, with appropriate controls. The observation is consistent with evolutionary patterns (C59). However, the use of multi-copy plasmids may create artificially high expression levels that don't reflect gradual evolutionary changes. The modest effect with low-copy plasmids (mentioned in methods but not in main claims) suggests dose-dependency that could be better characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "51ba5133-1db8-43ea-8cdf-6a0f9da9c5d0",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Overexpression of rare tRNAs causes proteotoxic stress. Cells overexpressing tRNAArgCCU show a threefold increase in protein quality control machinery saturation (VHL-mCherry puncta) and significant upregulation of heat shock protein genes, while overexpression of abundant tRNAArgUCU does not. This demonstrates that maintaining low copy numbers of certain tRNAs is adaptive for proper protein folding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 and C48 provide convergent evidence from two independent assays (VHL puncta and HSP expression) that specifically link rare tRNA overexpression to proteotoxic stress. The differential effect between rare and abundant tRNAs strengthens the conclusion. However, the mechanism remains partially unclear\u2014whether due to impaired cotranslational folding, misincorporation, or misloading\u2014limiting the mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "70011410-8be3-4578-9fe3-e78d887b4593",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Anticodon mutations provide a rapid evolutionary mechanism for adapting the tRNA pool to changing translational demands. The multi-copy architecture of tRNA gene families enables single-point mutations to quickly alter tRNA ratios, potentially faster than through gene duplications and deletions. This mechanism acts in concert with protein folding constraints to shape the tRNA pool.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 and C50-C51 synthesize the experimental and bioinformatic findings into a coherent evolutionary model. The proposal that anticodon switching is faster than duplication/deletion (C43) is logical but somewhat speculative, as the relative rates are not directly measured. The integration of translational demand and folding constraints (C51) is well-supported by the combined experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "01d448ae-2f23-43f7-8882-4c0955f48e11",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The translation apparatus is highly conserved, but tRNA genes provide evolutionary plasticity. While ribosomal genes show little environmental responsiveness, tRNA genes may serve as an important source of evolutionary adaptation for fine-tuning translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C6 are well-supported by multiple citations to prior work. Claim C7 is speculative but serves as a reasonable hypothesis that motivates the study. This represents established background knowledge rather than a novel finding of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "89d9130e-44a6-4eec-b1cb-02af499b8e80",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Codon usage bias is influenced by both neutral processes and natural selection. Codon choice affects multiple aspects of translation including expression level, protein folding, and accuracy, with selection capable of shaping codon usage even in organisms with small effective population sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5 summarize well-established prior knowledge supported by appropriate citations. These claims provide important context for understanding the significance of tRNA pool evolution but do not represent novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "0e97b19f-8e3a-41c3-9d61-25268f249fce",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "tRNA gene copy number correlates with cellular tRNA abundance and influences translation efficiency. The rate-limiting step of elongation is tRNA recruitment, and highly expressed genes are biased toward codons with high tRNA gene copy numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 present established principles of translation biology supported by appropriate citations. These provide essential background for interpreting the experimental results but are not novel contributions of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "8e5e9bc2-2aa0-42b5-a321-d97c9df09c17",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Environmental changes can create translational imbalances that drive tRNA pool evolution. Transcriptional responses to environmental challenges alter transcriptome codon usage, potentially creating mismatches with the tRNA pool that can be addressed through both short-term expression changes and long-term genetic adaptations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 synthesize prior work (supported by citations) to establish the biological context for why tRNA pool adaptation would be advantageous. This represents a well-supported framework based on existing literature rather than novel experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "2f80b154-f32a-44f7-9dcc-f4d572cd61dd",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior studies on methionine tRNAs demonstrated that scaffold sequences determine initiator versus elongator function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 accurately cites prior work on methionine tRNAs. This provides important context for discussing the novelty of the current findings regarding scaffold interchangeability in other tRNA families.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "b90dabec-9589-4c6d-8286-fff4755075c9",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Overexpression of rare tRNAs may impair cotranslational folding by disrupting programmed translational pauses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C49 is explicitly speculative and presents one possible mechanism for the observed proteotoxic stress. While consistent with cited theories about cotranslational folding, the authors acknowledge that alternative mechanisms (misincorporation, misloading) could also contribute. The claim appropriately identifies this as speculation requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "a0265e91-b0c3-4a4a-b6ca-f6393791bfe2",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "S. cerevisiae has 42 tRNA families comprising 274 tRNA genes, with family sizes ranging from 1-16 copies and 6 singleton families.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 present established genomic information about yeast tRNA genes, supported by citation to the tRNA database. This provides essential background information for the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    },
+    {
+      "id": "3aeb3b39-f12b-4455-b122-1466ec8eb125",
+      "content_id": "cd0e77da-7080-45fa-a57a-d4b125d91332",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The experimental evolution protocol involved daily dilution by a factor of 120, corresponding to approximately 7 generations per cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 describes a methodological detail of the evolution experiments. This is straightforward experimental design information necessary for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:58:21.134219Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d4ee850e-1dfd-458b-b8b1-cb1d93936f14",
+      "result_id": "9edd13e8-e3b9-4651-a601-987fed0e3166"
+    },
+    {
+      "claim_id": "a25e63e2-d9f6-4778-92a0-5b2d057fdb99",
+      "result_id": "9edd13e8-e3b9-4651-a601-987fed0e3166"
+    },
+    {
+      "claim_id": "2fb9bfa8-8c54-4302-bd32-947f954ffed2",
+      "result_id": "9edd13e8-e3b9-4651-a601-987fed0e3166"
+    },
+    {
+      "claim_id": "7c7cd9eb-5e02-48b4-a1d7-287df52695ed",
+      "result_id": "9edd13e8-e3b9-4651-a601-987fed0e3166"
+    },
+    {
+      "claim_id": "53b62e98-7c46-4894-9469-8174ac3cd072",
+      "result_id": "9edd13e8-e3b9-4651-a601-987fed0e3166"
+    },
+    {
+      "claim_id": "feb70ef5-e8bb-46b1-92ef-ce3cb96afa30",
+      "result_id": "9ac20fae-8708-4d03-90f4-cf32d27cce28"
+    },
+    {
+      "claim_id": "039e9ac5-132a-4f9f-91ad-247283b2883f",
+      "result_id": "9ac20fae-8708-4d03-90f4-cf32d27cce28"
+    },
+    {
+      "claim_id": "58df90fa-0fdd-42d3-8655-ddd9104872c2",
+      "result_id": "9ac20fae-8708-4d03-90f4-cf32d27cce28"
+    },
+    {
+      "claim_id": "605cc7b8-af29-435a-ad8c-480f826b0a43",
+      "result_id": "9ac20fae-8708-4d03-90f4-cf32d27cce28"
+    },
+    {
+      "claim_id": "bebf630c-ebeb-492e-9ad1-e83ca4e20c1e",
+      "result_id": "9ac20fae-8708-4d03-90f4-cf32d27cce28"
+    },
+    {
+      "claim_id": "07c99c88-2f8d-4fda-8392-969695973ddf",
+      "result_id": "9ac20fae-8708-4d03-90f4-cf32d27cce28"
+    },
+    {
+      "claim_id": "02ebb45a-7447-4b1b-bef2-75b7f9752b11",
+      "result_id": "9ac20fae-8708-4d03-90f4-cf32d27cce28"
+    },
+    {
+      "claim_id": "baf3a777-017a-47ad-994d-dcd5dfe37b24",
+      "result_id": "9ac20fae-8708-4d03-90f4-cf32d27cce28"
+    },
+    {
+      "claim_id": "07113b61-e2ec-4d89-ad29-dae2bfb6e17f",
+      "result_id": "9e1aee1c-f753-4358-977e-2597ee504ba8"
+    },
+    {
+      "claim_id": "3c01b000-11a5-47dc-90d1-8bd6677b3dd9",
+      "result_id": "9e1aee1c-f753-4358-977e-2597ee504ba8"
+    },
+    {
+      "claim_id": "dcb01950-2e18-4ef5-b590-1f146f19700b",
+      "result_id": "9e1aee1c-f753-4358-977e-2597ee504ba8"
+    },
+    {
+      "claim_id": "5554cc6b-9b0d-474f-8eb4-91612e55d8ae",
+      "result_id": "9e1aee1c-f753-4358-977e-2597ee504ba8"
+    },
+    {
+      "claim_id": "7c31f270-198c-4ee9-aa92-99874c19a85c",
+      "result_id": "9e1aee1c-f753-4358-977e-2597ee504ba8"
+    },
+    {
+      "claim_id": "5efc990f-74d2-4015-8212-a9d060f92593",
+      "result_id": "650e09da-91e6-429d-823e-15fcacb000fb"
+    },
+    {
+      "claim_id": "7dffaa48-ef6a-494c-b1fb-102940ec0610",
+      "result_id": "650e09da-91e6-429d-823e-15fcacb000fb"
+    },
+    {
+      "claim_id": "64166dcf-bf9d-4c2e-b68a-9f8a5dacf439",
+      "result_id": "650e09da-91e6-429d-823e-15fcacb000fb"
+    },
+    {
+      "claim_id": "1c7f7bac-2242-4db9-b89b-ba33152852bb",
+      "result_id": "650e09da-91e6-429d-823e-15fcacb000fb"
+    },
+    {
+      "claim_id": "aafde620-de6b-493b-817a-f51a2227e24a",
+      "result_id": "1296dcc6-2705-4b5f-a982-7010369424db"
+    },
+    {
+      "claim_id": "b4ef07dc-20c0-472f-bd51-fc23a4d54aaa",
+      "result_id": "1296dcc6-2705-4b5f-a982-7010369424db"
+    },
+    {
+      "claim_id": "c14bef26-68f7-474f-b3d5-e95870fcb381",
+      "result_id": "1296dcc6-2705-4b5f-a982-7010369424db"
+    },
+    {
+      "claim_id": "22dbbfb4-fe6a-4996-a21f-72abd34b209f",
+      "result_id": "1296dcc6-2705-4b5f-a982-7010369424db"
+    },
+    {
+      "claim_id": "b5c4eb85-a46c-45f9-8a94-af4a59daf4b0",
+      "result_id": "1296dcc6-2705-4b5f-a982-7010369424db"
+    },
+    {
+      "claim_id": "ca8af667-cf89-4ffe-9ef9-4bb5e19736c5",
+      "result_id": "1296dcc6-2705-4b5f-a982-7010369424db"
+    },
+    {
+      "claim_id": "61e82864-36a2-4c76-bb49-0d3a49d80a9a",
+      "result_id": "1296dcc6-2705-4b5f-a982-7010369424db"
+    },
+    {
+      "claim_id": "4308063e-6e27-4304-97a8-e79e73d8da5a",
+      "result_id": "1296dcc6-2705-4b5f-a982-7010369424db"
+    },
+    {
+      "claim_id": "c38347ef-9439-466a-9f54-c17d5b96e5cc",
+      "result_id": "1296dcc6-2705-4b5f-a982-7010369424db"
+    },
+    {
+      "claim_id": "60a88814-426e-430c-88c9-8b0eb2da459c",
+      "result_id": "1296dcc6-2705-4b5f-a982-7010369424db"
+    },
+    {
+      "claim_id": "f1a22ae5-bc01-4452-9f83-1092f402ebdb",
+      "result_id": "1296dcc6-2705-4b5f-a982-7010369424db"
+    },
+    {
+      "claim_id": "5c0ffed6-fed9-4c2b-a17b-019288cf4957",
+      "result_id": "1296dcc6-2705-4b5f-a982-7010369424db"
+    },
+    {
+      "claim_id": "2a59b213-78f0-47d7-b8a4-a5b78af79db0",
+      "result_id": "a18a8ad6-ac3a-4fd4-abf3-e152dd091911"
+    },
+    {
+      "claim_id": "17ae2acc-e26a-4e29-ab99-8debe0dd7b31",
+      "result_id": "a18a8ad6-ac3a-4fd4-abf3-e152dd091911"
+    },
+    {
+      "claim_id": "124db3b1-bb77-4465-aa5b-87fe4a43e650",
+      "result_id": "a18a8ad6-ac3a-4fd4-abf3-e152dd091911"
+    },
+    {
+      "claim_id": "05d3e4ca-09a4-48be-ab59-1c272a403ead",
+      "result_id": "a18a8ad6-ac3a-4fd4-abf3-e152dd091911"
+    },
+    {
+      "claim_id": "19718199-922a-47bc-8c8a-a99bf99eba49",
+      "result_id": "51ba5133-1db8-43ea-8cdf-6a0f9da9c5d0"
+    },
+    {
+      "claim_id": "0be5455c-dde1-488d-81bd-d8d08f2a89d7",
+      "result_id": "51ba5133-1db8-43ea-8cdf-6a0f9da9c5d0"
+    },
+    {
+      "claim_id": "a328c938-5929-47ed-8866-0b6eeb0c52e8",
+      "result_id": "51ba5133-1db8-43ea-8cdf-6a0f9da9c5d0"
+    },
+    {
+      "claim_id": "4ded630a-1a45-4b3a-bf13-1889e88181f1",
+      "result_id": "51ba5133-1db8-43ea-8cdf-6a0f9da9c5d0"
+    },
+    {
+      "claim_id": "b7fc5d68-b06a-4231-be0a-83974787416c",
+      "result_id": "70011410-8be3-4578-9fe3-e78d887b4593"
+    },
+    {
+      "claim_id": "38080e2f-91f9-4011-b22d-21ed7f90c657",
+      "result_id": "70011410-8be3-4578-9fe3-e78d887b4593"
+    },
+    {
+      "claim_id": "0a89e7cb-49d0-4be8-83b0-dc1528a75f54",
+      "result_id": "70011410-8be3-4578-9fe3-e78d887b4593"
+    },
+    {
+      "claim_id": "b49cfb31-4cef-4cd0-a59d-c6d666032ba3",
+      "result_id": "70011410-8be3-4578-9fe3-e78d887b4593"
+    },
+    {
+      "claim_id": "b74cc736-3fc3-4b82-8420-08317aef1571",
+      "result_id": "70011410-8be3-4578-9fe3-e78d887b4593"
+    },
+    {
+      "claim_id": "ea7045d5-1e0e-45a7-b1dc-9f5a5a934ac4",
+      "result_id": "01d448ae-2f23-43f7-8882-4c0955f48e11"
+    },
+    {
+      "claim_id": "9db28db2-693e-4063-93e1-4bec8ea36887",
+      "result_id": "01d448ae-2f23-43f7-8882-4c0955f48e11"
+    },
+    {
+      "claim_id": "95bdf84d-aa5a-411b-a286-849da9867351",
+      "result_id": "01d448ae-2f23-43f7-8882-4c0955f48e11"
+    },
+    {
+      "claim_id": "e5c6280a-808f-4569-a67b-0df28f68ff59",
+      "result_id": "89d9130e-44a6-4eec-b1cb-02af499b8e80"
+    },
+    {
+      "claim_id": "d4afc090-9470-4ad9-9714-52b657dd7afa",
+      "result_id": "89d9130e-44a6-4eec-b1cb-02af499b8e80"
+    },
+    {
+      "claim_id": "3b243241-dafb-4f99-be75-c662acbaa35c",
+      "result_id": "89d9130e-44a6-4eec-b1cb-02af499b8e80"
+    },
+    {
+      "claim_id": "97318472-e988-466c-9c4c-cd1e983df4af",
+      "result_id": "89d9130e-44a6-4eec-b1cb-02af499b8e80"
+    },
+    {
+      "claim_id": "05af6c90-d0ba-43b8-9c0e-a0b3b3cebfc8",
+      "result_id": "0e97b19f-8e3a-41c3-9d61-25268f249fce"
+    },
+    {
+      "claim_id": "afcb4516-4ddf-4ba7-89ad-8e44532f1934",
+      "result_id": "0e97b19f-8e3a-41c3-9d61-25268f249fce"
+    },
+    {
+      "claim_id": "7daf8474-9ed2-4021-951f-f8dea7f18451",
+      "result_id": "0e97b19f-8e3a-41c3-9d61-25268f249fce"
+    },
+    {
+      "claim_id": "f2b176cb-8b71-433e-8cff-517fc3331c1a",
+      "result_id": "0e97b19f-8e3a-41c3-9d61-25268f249fce"
+    },
+    {
+      "claim_id": "78b59fd6-628b-4ef3-98c1-472b1d2aa974",
+      "result_id": "0e97b19f-8e3a-41c3-9d61-25268f249fce"
+    },
+    {
+      "claim_id": "1a047b38-9962-41de-b68a-c95ace0ed11d",
+      "result_id": "8e5e9bc2-2aa0-42b5-a321-d97c9df09c17"
+    },
+    {
+      "claim_id": "5b7df0fa-5f0f-477c-9a37-0adcb568813a",
+      "result_id": "8e5e9bc2-2aa0-42b5-a321-d97c9df09c17"
+    },
+    {
+      "claim_id": "82a511c0-73df-4e5e-a862-b49b3b229d6d",
+      "result_id": "8e5e9bc2-2aa0-42b5-a321-d97c9df09c17"
+    },
+    {
+      "claim_id": "f073cf10-7d4d-4131-97a3-bd45d9d3a811",
+      "result_id": "8e5e9bc2-2aa0-42b5-a321-d97c9df09c17"
+    },
+    {
+      "claim_id": "da2730f4-b920-4ed7-8c9f-6df2df03a439",
+      "result_id": "2f80b154-f32a-44f7-9dcc-f4d572cd61dd"
+    },
+    {
+      "claim_id": "9537571a-cc1e-432b-9ab4-5fb001d02bd1",
+      "result_id": "b90dabec-9589-4c6d-8286-fff4755075c9"
+    },
+    {
+      "claim_id": "76480414-93c7-478a-8bf6-1a0d6055a039",
+      "result_id": "a0265e91-b0c3-4a4a-b6ca-f6393791bfe2"
+    },
+    {
+      "claim_id": "493c9da7-f751-48d3-87d3-102dcedad886",
+      "result_id": "a0265e91-b0c3-4a4a-b6ca-f6393791bfe2"
+    },
+    {
+      "claim_id": "68d7ff22-0963-41e4-b3da-39d628d8df80",
+      "result_id": "3aeb3b39-f12b-4455-b122-1466ec8eb125"
+    }
+  ],
+  "comparisons": []
+}

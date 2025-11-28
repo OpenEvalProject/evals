@@ -1,0 +1,1876 @@
+{
+  "submission": {
+    "id": "9f89a7ac-831e-48e3-8a1d-8d834e8069b0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:14:36.549247Z",
+    "updated_at": "2025-11-28T22:14:36.549247Z"
+  },
+  "content": [
+    {
+      "id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "submission_id": "9f89a7ac-831e-48e3-8a1d-8d834e8069b0",
+      "content_type": "manuscript",
+      "content_text": "# Interplay between population firing stability and single neuron dynamics in hippocampal networks\n\n## Authors\n\n- Edden Slomowitz<sup>1</sup> ([ORCID: 0000-0003-0549-6538](https://orcid.org/0000-0003-0549-6538))\n- Boaz Styr<sup>1</sup>\n- Irena Vertkin<sup>1</sup>\n- Hila Milshtein-Parush<sup>1</sup>\n- Israel Nelken<sup>3</sup>\n- Michael Slutsky<sup>5</sup>\n- Inna Slutsky<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Physiology and Pharmacology, Sackler Faculty of Medicine Tel Aviv University Tel Aviv Israel\n2. Sagol School of Neuroscience Tel Aviv University Tel Aviv Israel\n3. Department of Neurobiology, Alexander Silberman Institute of Life Sciences Hebrew University Jerusalem Israel\n4. Edmond and Lily Safra Center for Brain Sciences Hebrew University Jerusalem Israel\n5. Mantis Vision Kiryat Arie Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeuronal circuits' ability to maintain the delicate balance between stability and flexibility in changing environments is critical for normal neuronal functioning. However, to what extent individual neurons and neuronal populations maintain internal firing properties remains largely unknown. In this study, we show that distributions of spontaneous population firing rates and synchrony are subject to accurate homeostatic control following increase of synaptic inhibition in cultured hippocampal networks. Reduction in firing rate triggered synaptic and intrinsic adaptive responses operating as global homeostatic mechanisms to maintain firing macro-stability, without achieving local homeostasis at the single-neuron level. Adaptive mechanisms, while stabilizing population firing properties, reduced short-term facilitation essential for synaptic discrimination of input patterns. Thus, invariant ongoing population dynamics emerge from intrinsically unstable activity patterns of individual neurons and synapses. The observed differences in the precision of homeostatic control at different spatial scales challenge cell-autonomous theory of network homeostasis and suggest the existence of network-wide regulation rules.\n\n## Introduction\n\nNeural circuits achieve an ongoing balance between flexibility and stability to enable plastic adaptations to environmental changes, while maintaining neuronal activity in a stable regime over extended timescales. The balance between stability and plasticity has rarely been addressed in the past due to the technical challenge of monitoring the activity of the same neurons over extended timescales (L\u00fctcke et al., 2013). Recently, great efforts have been made to establish a system for the monitoring of neuronal activity at long timescales in the hippocampus of freely moving mice (Ziv et al., 2013). That study, performed by monitoring Ca2+ dynamics in thousands of CA1 cells over weeks through a miniature head-mounted microscope, revealed a remarkable degree of instability in the coding of space: only 25% of cells with place fields at one recording session exhibited the same properties 5 days later. Importantly, the diverse activity patterns at the single-neuron level gave rise to largely invariant spatial representations at the population level. Such results raise the question of whether inter-neuronal dynamics of spiking patterns stems from intrinsic variability of the hippocampal network and its constituent neurons, or whether they reflect extrinsic changes in hippocampal modulation by higher-order brain structures, adaptations to environmental changes, or subtle changes in animal behavior states.\n\nDiverse homeostatic negative feedback systems operate to stabilize ongoing spiking properties in neuronal populations around a predefined \u2018set point\u2019 in face of constant environmental changes (Turrigiano and Nelson, 2004; Davis, 2006; Marder and Goaillard, 2006). Extensive research lead to compelling evidence on a wide repertoire of possible homeostatic mechanisms, including adaptations of synaptic strength, changes in excitation\u2013inhibition balance, and modulation of intrinsic excitability (Turrigiano, 2011). Despite progress in understanding the homeostatic mechanisms that underlie the stability of network firing properties, several key questions remain open. First, what are the basic properties of neural networks that are subjected to homeostatic control? Second, are homeostatic control systems equally precise at the level of individual neurons and neuronal populations? Third, what is the trigger of synaptic homeostatic mechanisms? And finally, how do compensatory changes in synaptic strength affect the network's functions?\n\nTo address these questions, long-term measurements of spiking activity over several days from the exact same neuron or population of neurons are required. While long-term monitoring of spiking activity cannot be reliably performed from the same neurons in vivo due to technical limitations, greater stability can be achieved in vitro. Therefore, we combined long-term extracellular spike recordings at the population and single-neuron levels using micro-electrode arrays (MEAs) and calcium imaging, together with intracellular patch-clamp measurements of synaptic responses and imaging of synaptic activity. We utilized cultured neuronal networks that represent an excellent experimental tool to study internal variability vs stability in a highly controlled environment. Here, we describe the basic relationships between ongoing spiking properties of individual neurons, population dynamics, and neuronal adaptive mechanisms.\n\n## Results\n\n### Quantifying GABABR-mediated inhibition at synaptic, single neuron, and network levels\n\nWhile the majority of homeostatic mechanisms have been studied following complete pharmacological blockade of spikes or AMPAR-mediated excitatory postsynaptic currents (EPSCs), we decided to examine long-term effects of neuromodulation on firing properties of the network. Specifically, we examined how use-dependent synaptic inhibition via G-protein-coupled receptors, a widespread mechanism of neuromodulation in the central nervous system (CNS), affects firing properties of the network over long timescales. As a perturbation, we chose a suppression of synaptic activity via widely expressed GABAB receptors (GABABRs) using a selective GABABR agonist, baclofen. GABABRs mediate presynaptic inhibition via inhibition of presynaptic calcium transients (Wu and Saggau, 1995; Laviv et al., 2010). Therefore, we first conducted experiments to determine the dose\u2013response of baclofen at the level of presynaptic terminals utilizing FM1-43 dye in primary hippocampal cultures (Abramov et al., 2009). As GABABR-mediated inhibition is frequency-dependent (Varela et al., 1997; Kreitzer and Regehr, 2000; Ohliger-Frerking et al., 2003), we quantified the effects of baclofen for two types of input: low-frequency single spikes (30 stimuli at 1 Hz) and high-frequency spike bursts (30 stimuli delivered as 6 bursts; each burst contains 5 stimuli at 100 Hz), while maintaining the mean spiking rate constant at 1 Hz (Figure 1A). As expected, baclofen inhibits synaptic vesicle release, displaying preferential effects during low-frequency stimulation (Figure 1A). Quantitatively, IC50 for single spikes was \u223c23-fold lower than for bursts (0.33 and 7.6 \u03bcM, respectively, Figure 1B). As a result, short-term facilitation was enhanced in a wide range of baclofen concentrations (0.01\u201310 \u03bcM, Figure 1C), indicating a conversion of synapses to a high-pass filter mode. Similar results were obtained using voltage-clamp experiments in acute hippocampal slices (Figure 1\u2014figure supplement 1A,B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig1-v2.jpg)\n\n**Figure 1.:** (A) Representative \u0394F images obtained by single (30 APs@0.2 Hz) and burst (30 APs@6 bursts, each burst contained 5 APs; inter-spike-interval, 10 ms; inter-burst-interval, 5 s) stimulations before and 10 min after 10 \u00b5M baclofen application. Scale bar: 5 \u03bcm. (B) Dose\u2013response curve for the inhibitory presynaptic effect of baclofen during single vs burst stimulation patterns. Note, shift in the apparent IC50 from 0.33 \u00b5M in single stimulation (n = 7\u201312) to 7.6 \u00b5M for burst stimulation type (n = 8\u201310). (C) Short-term plasticity detected by FM method (calculated as Sburst/Ssingle) was in the range of 2.0 \u00b1 0.01 to 2.3 \u00b1 0.01 for baclofen concentrations in the range of 0.1\u201310 \u00b5M (n = 10\u201314) comparing to plasticity of control (1.4 \u00b1 0.07, n = 13). (D) Top: image of dissociated hippocampal culture plated on MEA. Black circles at the end of the black lines are the recording electrodes. Scale bar: 200 \u00b5m. Bottom: representative trace of recording from one MEA channel. Spikes are detected based on a set threshold (blue dashed line). Inset is a zoom to one detected spike. Scale bars: 8 \u00b5V, 35 ms (6 ms for insert). (E) Example of spike sorting for one channel. Bottom: each waveform is represented in principal component space forming three distinct clusters. Top: mean waveforms for each cluster. Scale bar: 10 \u00b5V, 1 ms. (F) Representative raster plots of MEA recording before and immediately after application of 10 \u00b5M baclofen (***p < 0.0001, unpaired, two-tailed Student's t-test). (G) Acute effect of baclofen on firing rate at the single-unit level. Left: 1 \u00b5M baclofen (n = 5, 260 units). Right: 10 \u00b5M baclofen (n = 5, 314 units). (H) Acute effect of baclofen on the mean firing rate of the population (the same data as in G). Error bars represent SEM.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) EPSC (\u221260 mV holding potential) traces evoked by low-frequency stimulation and by high-frequency spike bursts under control and 10 min after 10 \u00b5M baclofen application in acute hippocampal slices. Scale bars: Top: 20 pA, 20 ms; Bottom: 50 pA, 50 ms. (B) Baclofen increases short-term synaptic facilitation calculated based on EPSC measurements (1 \u00b5M\u2014n = 5, p < 0.001; 10 \u00b5M\u2014n = 4, p < 0.001) in acute hippocampal slices. (C) Distribution of per unit firing rate during 1 hr of control MEA recording (490 units). Firing rates are heavily skewed towards low frequencies. (D) Representative raster plots of MEA recording before and immediately after application of 1 \u00b5M baclofen. (E) Per unit correlation between baseline firing rates and the percent change in firing rates after 2 days of control recording showing significant negative correlation (Spearman r = \u22120.29, p < 0.001, 467 units). (F) Per unit correlation between baseline firing rates and the percent change in firing rates after 2 days in the presence of baclofen showing significant negative correlation (Spearman r = \u22120.47, p < 0.001, 311 units).\n\nNext, we examined how use-dependent blockade of synaptic transmission affects firing properties of hippocampal neurons and networks. For this purpose, we grew high-density hippocampal cultures on MEAs for \u223c3 weeks. Each MEA contains 59 recording electrodes with each electrode capable of recording the activity of several adjacent neurons (Figure 1D). Spikes were detected and analyzed using principal component analysis to obtain well-separated single units (Figure 1E). Unit firing rates were highly heterogeneous and skewed towards low frequencies (Figure 1\u2014figure supplement 1C) as has been previously reported in vivo (Mizuseki et al., 2012). As expected, baclofen caused a fast and robust drop in single-unit firing rates (Figure 1F,G), leading to a reduction of the population mean firing rate to 25 \u00b1 4% (1 \u00b5M baclofen, see raster plots in Figure 1\u2014figure supplement 1D) and to 1.2 \u00b1 0.4% (10 \u00b5M baclofen) of baseline values (Figure 1H). Thus, we can use this system to study how chronic changes in the GABABR-mediated neuromodulation impact properties of individual synapses, single neurons, and neural networks.\n\n### Stability of firing rates at the population level\n\nTo assess how GABABR activation affects firing properties of the population at long timescales, we measured spiking activity during a baseline recording period and for 2 days following the application of 10 \u03bcM baclofen. As expected, baclofen caused a fast and pronounced drop in firing rates to 1.2 \u00b1 0.4% of baseline values (Figure 2A,C,D). We hypothesized that if the network has an intrinsically regulated firing rate \u2018set point\u2019, as suggested by theories of homeostatic plasticity, we would see an increase in firing rates back to baseline values after administration of baclofen. Indeed, firing rates gradually returned to baseline values, reaching 57 \u00b1 8% and 103 \u00b1 14% of baseline after 1 and 2 days, respectively (Figure 2C,D). Notably, the average firing rates of networks under control conditions showed changes of similar magnitude during two recording days (without baclofen application, 113 \u00b1 9% of baseline after 2 days; Figure 2B\u2013D). Moreover, the characteristic log-normal distributions of single-unit firing patterns were essentially identical before and 2 days after baclofen application (Figure 2E, p = 0.66; Kolmogorov\u2013Smirnov test). Importantly, baclofen remains potent after over 2 days of exposure to recording conditions (Figure 2\u2014figure supplement 1A). Additionally, washout of baclofen following 2 days caused a significant increase in firing rate, indicating sustained activity of both baclofen and the GABABR-induced G-protein-mediated signaling (Figure 2\u2014figure supplement 1B\u2013D). Moreover, the magnitude of the GABABR-mediated presynaptic inhibition, as measured by FM dyes, was not reduced following washout (Figure 2\u2014figure supplement 1E,F), indicating that GABABRs did not undergo desensitization under our experimental conditions. Taken together, these results demonstrate a robust and precise compensatory response at the level of population averages, confirming the idea that neuronal networks grown in vitro (Turrigiano et al., 1998), similar to the circuits in vivo (Hengen et al., 2013; Keck et al., 2013), have the ability to homeostatically regulate their mean firing rate.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig2-v2.jpg)\n\n**Figure 2.:** (A) Analysis of the firing rate of each unit in a representative MEA experiment over the course of 2 days of recording in the presence of 10 \u00b5M baclofen. Representative units that precisely returned (green), increased (red), and decreased (blue) relative to baseline are highlighted. (B) Analysis of the firing rate of each unit in a representative MEA experiment over the course of 2 days of recording under control conditions. Representative units that didn't change (green), increased (red), and decreased (blue) relative to baseline are highlighted. (C) Mean firing rate of 48 hr control (grey, n = 7) and baclofen (blue, n = 5) MEA recordings. 3 hr of baseline rate are shown for baclofen experiments. (For clarity, only every other hour is shown.) Error bars represent SEM. (D) Statistical comparison of the representative time points (the same data as in C). Error bars represent SEM. (***p < 0.0001, baclofen compared to baseline; all control hours were not significantly changed; repeated-measures ANOVA with Bonferroni's multiple comparison test.) (E) Distribution of unit firing rates (log scale) during baseline and after 2 days in the presence of baclofen. (F) Per unit correlation between baseline firing rates and firing rates after 2 days: Left: control (n = 7; 490 units); Right: in the presence of baclofen (n = 5; 314 units). Colors represent units that significantly increased (red), decreased (blue), or remained stable (green) as determined by bootstrapping (see \u2018Materials and methods\u2019 for details). Note log scale of both axes. (G) Summary of data in F (*p < 0.05; unpaired, two-tailed Student's t-test). Error bars represent SEM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Baclofen (10 \u00b5M) was added to a culture dish for 2 days. The medium from this dish was applied to a new MEA. The reduction of firing rate by pre-incubated baclofen was 4 \u00b1 1% (n = 50, p < 0.0001), similar to the one observed by fresh baclofen (Figure 1G). (B) Washout of baclofen causes an increase in mean firing rate relative to both baseline and after 2 days baclofen incubation (relative to baseline: 306% \u00b1 67, relative to 2 days baclofen: 296% \u00b1 38; n = 77 units). (C) Per unit correlation between firing rates before and after washout of baclofen. Colors represent units that significantly increased (red), decreased (blue), or remained stable (green) as determined by bootstrapping. Note log scale of both axes. Same units as in (B). (D) Summary of data in (C). (E) Experimental protocol used for determining acute effect of baclofen after 2 days incubation with 10 \u00b5M baclofen and subsequent washout. (F) Baclofen (1 \u00b5M) decreased FM staining to 52 \u00b1 5% (n = 18) and 49 \u00b1 8% (n = 8) relative to control with and without 2 days incubation with baclofen, respectively (p = 0.89).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Per unit correlation between baseline firing rates and firing rates after 2 days: Left: control (n = 7; 192 multi-units); Right: in the presence of baclofen (n = 5; 133 multi-units). Colors represent units that significantly increased (red), decreased (blue), or remained stable (green) as determined by bootstrapping (see \u2018Materials and methods\u2019 for details). Note log scale of both axes. (B) Summary of data in (A) (unpaired, two-tailed Student's t-test). Error bars represent SEM.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Mean firing rate is decreased by 10 \u03bcM SKF89976A, a selective GAT-1 blocker, and fully recovers after 2 days (n = 46 units).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Histogram detailing the relationship between the mean firing rate of 20 min time segments and the mean firing rate of the full hour they represent. No representative time segment is more than 20% different than the full hour and 90% are within 10% (n = 792 segments). (B) CV was calculated over 8 hr using time segments between 10 s and 1 hr. There was no significant difference when time segments greater than 10 min were used. (C, D, E) Per unit MFR during baseline and after 2 days of baclofen incubation were compared using bootstrapping statistics. No differences were observed when using different durations of time segments (C, p > 0.3), different bin sizes (D, p > 0.9), or different numbers of iterations (E, p > 0.9).\n\n### Single units are not stable\n\nAfter establishing that mean firing rates of hippocampal networks are precisely restored even after a pronounced, ongoing perturbation, we asked whether this stability is maintained at the level of the individual neurons that comprise the network. First, we analyzed firing rates of individual units during 2 days of recording under control condition. While a high correlation was observed between firing rates at the baseline and after 2 days (Spearman r = 0.8, p < 0.0001, n = 490), a large fraction of units did not return to their baseline values (Figure 2F, left). Only 23 \u00b1 3% of units remained significantly unchanged during 2 days of control recordings, while 77 \u00b1 3% changed their firing rates significantly (Figure 2G). This phenomenon became even more pronounced after the application of baclofen, with only 11 \u00b1 2% of units returning to the baseline, while 89 \u00b1 2% were significantly changed (Figure 2F right and 2G). The change in firing rate after 2 days of recordings was negatively correlated with the initial firing rate of the same unit under both control (Figure 1\u2014figure supplement 1E; Spearman r = \u22120.29, p < 0.0001, n = 490) and baclofen (Figure 1\u2014figure supplement 1F; Spearman r = \u22120.47, p < 0.0001, n = 305) conditions, due to a larger relative variability of low firing units. Notably, when analyzing multiunit recordings per electrode, firing rates after 2 days of recording displayed statistically significant change from the baseline in \u223c80% of the cases (Figure 2\u2014figure supplement 2A,B). To ensure that per unit variability is not due to a possible movement of neurons in and out from recording electrodes, we measured the movement of individual neurons over the course of 2 days and found that the mean movement of neurons (1.6 \u00b1 0.1 \u03bcM) was negligible in comparison to the size of the electrode (30 \u00b5M) and neuron's cell body (11.4 \u00b1 0.3 \u00b5M). These results confirm that the observed variability at the level of single units does not result from imperfect spike sorting or neuronal mobility.\n\nTaken together, these data indicate the existence of significant dynamics at the level of the individual hippocampal neurons in mature hippocampal cultures, operating under the constraint that the overall firing rates do not change. The observed instability of firing rates at the individual neuron level becomes even more pronounced following the perturbation. Thus, the same mean firing rate of the population arises from variable firing rates of individual neurons.\n\n### Calcium imaging confirms the variability of individual firing rates\n\nAs fluorescent calcium sensors are widely used to image neural activity, we performed somatic calcium imaging in visually identified individual neurons to verify whether the stabilization of population mean firing rates emerges from variable firing rates of single neurons following chronic perturbation. We utilized the genetically encoded Ca2+ indicator GCaMP6f that displays single-action-potential sensitivity and broad dynamic range (Chen et al., 2013). An AAV-based gene delivery system under the synapsin promoter was used to express GCaMP6f in hippocampal neurons. GCaMP6f-expressing neurons displayed spontaneous Ca2+ dynamics typically consisting of transients of varying amplitudes corresponding to single spikes and spike bursts (Figure 3A). We first established the relationship between the calcium transients and spiking activity. Single spikes induced robust calcium transients (24.6 \u00b1 1.4% \u0394F/F; Figure 3\u2014figure supplement 1A). Although the exact number of spikes could not be accurately predicted from the size of the calcium transients, high-frequency bursts consisting of 2\u201310 spikes at 100 Hz induced significantly higher \u0394F/F peak amplitudes as compared with single spikes and the average \u0394F/F linearly correlated with the number of spikes (Figure 3\u2014figure supplement 1B,C). Thus, the \u0394F/F peak amplitude of calcium transients is approximately proportional to the number of spikes that triggered it.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig3-v2.jpg)\n\n**Figure 3.:** (A) Representative traces (\u0394F/F) showing the same 16 neurons before, 10 min after 10 \u00b5M baclofen application, and after 2 days in the presence of baclofen. Bar scales: 50% \u0394F/F, 5 s. (B) Pseudo-color coded image showing cultured neurons expressing GCaMP6f. Scale bar: 50 \u00b5m. (C) Summary of the mean rate (averaged peak amplitude per min) before (green), after 10 min (black) and following 2 days (purple) of baclofen application. Population mean rates were restored after 2 days (n = 4, 192 neurons). (D) Distribution of neuron \u0394F/F rates (log scale) during baseline and after 2 days in the presence of baclofen. (E) Per neuron correlation between baseline firing rates and firing rates after 2 days in the presence of baclofen (n = 4; 192 neurons). Colors represent neurons that significantly increased (red), decreased (blue), or remained stable (green) as determined by bootstrapping. Note log scale of both axes. (F) Summary of data in E (54.3% \u00b1 6 cells were significantly changed). Error bars represent SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Fluorescence change in response to one action potential (AP). Single sweeps (grey) and averages of 10 sweeps (blue) are overlaid. Scale bars: 10% \u0394F/F, 500 ms. (B) Fluorescence change (average of 10 sweeps) in response to 1\u201410 APs (3 trials). Scale bars: 200% \u0394F/F, 2 s. (C) Peak fluorescence change as a function of number of APs (normalized to the peak fluorescence changed induced by 1 AP). A linear relationship between \u0394F/F and number of APs (slope of linear fit is 1.928 \u00b1 0.078, r2 = 0.99, n = 5). Recurrent activity was suppressed with 20 \u00b5M DNQX and 50 \u00b5M AP5 in (A\u2013B). (D) Example of cultured neurons before and 2 days following baclofen incubation show no notable change in cell appearance. Scale bar: 50 \u00b5m. (E) Baseline firing rates 1 hr and after 2 days of control recording show stability with no evidence of phototoxicity (62 neurons). (F) Per unit correlation between baseline \u0394F/F mean rates and the percent change in \u0394F/F rates after 2 days in the presence of baclofen showing significant negative correlation (Spearman r = \u22120.33, p < 0.0001, 192 neurons).\n\nTo examine the stability of single neurons and neuronal populations at extended timescales, we performed time-lapse imaging of somatic Ca2+ dynamics during a baseline recording period, after acute baclofen application and for 2 days following baclofen application. Each imaging session had a duration of 20 min, fairly representing firing stability of several hours (Figure 2\u2014figure supplement 4). Analysis of Ca2+ dynamics in 192 neurons shows that 10 \u03bcM baclofen blocked Ca2+ transients acutely, while 48 hr after baclofen incubation the mean Ca2+-transient amplitude returned to the baseline level (Figure 3A,C). Notably, the distributions of single-neuron Ca2+-transient sizes were skewed towards low-activity levels (Figure 3D) as seen for electrophysiological measurements of spiking activity, indicating that the population of visually selected neurons does not represent a frequency-dependent bias. In addition, the distributions were indistinguishable before and 2 days after baclofen application (Figure 3D). Despite stability of Ca2+ dynamics at the population level, 54 \u00b1 6% of neurons did not return to their baseline values 2 days after baclofen application (Figure 3E,F). The change in Ca2+-transient amplitudes after 2 days of baclofen incubation was negatively correlated with the initial amplitudes at the same neuron (Figure 3\u2014figure supplement 1F). Thus, calcium imaging in identified neurons confirms the electrophysiological data, strengthening our conclusion regarding the stabilization of population dynamics despite imprecise homeostatic compensations at the level of single neurons.\n\n### Population firing synchrony is stable despite variability of single-unit patterns\n\nWe next investigated the persistence of temporal firing patterns in hippocampal networks. We utilized electrophysiological recordings by MEAs that enable superior temporal resolution compared to calcium imaging. Figure 4A presents raster plots during periods of baseline, 4 hr and 2 days following baclofen application in a single experiment. We first ensured that there was no significant change in firing synchrony, as estimated by the fraction of spikes participating in network-bursts and burst duration (Figure 4B, see \u2018Materials and methods\u2019 for burst detection), under control conditions. Baclofen transiently increased population firing synchrony by increasing the fraction of spikes participating in bursts, burst duration (Figure 4B,C), and number of spikes per network burst (Figure 4\u2014figure supplement 1A). The observed GABABR-mediated increase in firing synchrony returned to baseline values after 14 hr (Figure 4B,C). These results indicate that the population-burst pattern, similar to the population firing rate, undergoes a precise homeostatic compensation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative raster plot of MEA recording before, 4 hr and 2 days after application of baclofen. (B) Baclofen causes a transient increase in fraction of spikes participating in network bursts (hours 2\u20134, p < 0.01; hours 4\u201310, p < 0.001; hour 12, p < 0.01; hour 14, p < 0.05; repeated-measures ANOVA with Bonferroni's multiple comparison test, compared to baseline values). The number of spikes that are part of network bursts was divided by the total number of spikes. (C) Baclofen causes a transient, short-lived, increase in duration of network bursts (hours 2\u20134, p < 0.001; hour 6, p < 0.05; repeated-measures ANOVA with Bonferroni's multiple comparison test, compared to baseline values). (D) Baclofen causes a transient increase in fraction of spikes participating in single-unit bursts (hours 2\u20134, p < 0.01; hours 4\u201312, p < 0.001; hour 14, p < 0.01; repeated-measures ANOVA with Bonferroni's multiple comparison test, compared to baseline values). The number of spikes that are part of single-unit bursts was divided by the total number of spikes of that unit. (E) Baclofen causes a transient, short-lived, increase in duration of single-unit bursts (hours 2, p < 0.001; repeated-measures ANOVA with Bonferroni's multiple comparison test, compared to baseline values). (F) Per unit correlation of fraction of spikes in single-unit bursts between baseline and 2 days after baclofen application: Top: control (n = 7; 279 units); Bottom: in the presence of baclofen (n = 5; 234 units). Colors represent units that significantly increased (red), decreased (blue), or remained stable (green) as determined by bootstrapping (see \u2018Materials and methods\u2019 for details). Note log scale of both axes. (G) Summary of data in (D) (*p < 0.05, unpaired, two-tailed Student's t-test). Error bars represent SEM.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Baclofen causes a transient increase in the number of spikes per network burst (hours 2\u20134, p < 0.001; repeated-measures ANOVA with Bonferroni's multiple comparison test, compared to baseline values). (B) Baclofen causes a transient increase in the number of spikes per unit burst (hour 2, p < 0.001; repeated-measures ANOVA with Bonferroni's multiple comparison test, compared to baseline values).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Single-unit burst data for experiments from Figure 4D\u2013G after using a burst threshold of 100 Hz, minimum three spikes per burst. (B) Single-unit burst data for experiments from Figure 4D\u2013G after using a burst threshold of 20 Hz, minimum three spikes per burst.\n\nWe then asked whether the observed stability of population firing synchrony results from stability of spike patterns at the single-unit level. Here too, we ensured that there was no change in single-unit bursts under control conditions (Figure 4D,E and Figure 4\u2014figure supplement 1B). Interestingly, following baclofen application, the average fraction of spikes participating in single-unit bursts returned to baseline levels with dynamics very similar to those of network bursts (Figure 4D). However, single-unit burst analysis per individual unit shows a high degree of variability. Under control conditions, 42 \u00b1 2% of units significantly changed the fraction of spikes in bursts, while 56 \u00b1 2% remained unchanged. 2 days after baclofen application, 63 \u00b1 8% were significantly changed, while only 37 \u00b1 8% of units remained unchanged (Figure 4F,G). Notably, bursts characteristics were not significantly changed, outside of the first 2 hr following baclofen application (Figure 4E and Figure 4\u2014figure supplement 1B). These data indicate that firing synchrony of spontaneous activity is maintained at the network level, despite large changes in burst patterns at the single-unit level.\n\n### Changes in the inhibition\u2013excitation ratio occur in parallel to firing rate fluctuations\n\nThe inhibition\u2013excitation (I/E) ratio constitutes an important factor in firing rate homeostasis (Liu, 2004; Maffei et al., 2004; Maffei and Turrigiano, 2008). To assess the effect of chronic increase in the GABABR activity on the I/E ratio, we isolated the spontaneous excitatory and inhibitory currents (sEPSCs, sIPSCs, respectively) at the same cell based on the reversal potentials of AMPAR-mediated excitatory and GABAAR-mediated inhibitory currents (Figure 5A,B). We then calculated the integrated excitatory and inhibitory conductances (GE, GI, respectively; see \u2018Materials and methods\u2019).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig5-v2.jpg)\n\n**Figure 5.:** (A) Image of patched neuron. Alexa-fluor 488 (10 \u00b5M) was added to the patch pipette for imaging. Scale bar: 20 \u00b5m. (B) Representative traces of sEPSCs (\u221265 mV holding potential, bottom) and sIPSCs (+10 mV holding potential, top) for control, 4 hr and 2 days preincubation with baclofen. Measurements of sEPSCs following baclofen pre-incubation were done in the presence of baclofen. (C) Mean integrated excitatory conductance (GE) in control (n = 32), following acute (n = 10), 4 hr (n = 11) and 2 days (n = 16) baclofen application. Excitatory conductance is completely restored following 2 days of exposure to baclofen. Error bars represent SEM. (*p < 0.05, ***p < 0.0001; Kruskal\u2013Wallis test with Dunn's multiple comparison test). (D) Mean integrated inhibitory conductance (GI, same cells as B). Inhibitory conductance is completely restored as well following 2 days of exposure to baclofen. Error bars represent SEM. (***p < 0.001; Kruskal\u2013Wallis test with Dunn's multiple comparison test). (E) Mean I/E ratio per neuron (same cells as in C, D). The I/E ratio of each cell was calculated and the resulting ratios were averaged. *p < 0.05, **p < 0.01, ***p < 0.001; one-way ANOVA with Dunnett's multiple comparison test. Error bars represent SEM.\n\nAs expected, acute application of baclofen almost completely blocked both sEPSCs and sIPSCs, from 0.40 \u00b1 0.07 and 0.87 \u00b1 0.1 nS to 0.02 \u00b1 0.006 and 0.06 \u00b1 0.02 nS for GE and GI, respectively (Figure 5C,D). After 4 hr of incubation with baclofen, GE and GI partially recovered to 0.16 \u00b1 0.07 nS and 0.61 \u00b1 0.2 nS, respectively (Figure 5C,D), suggesting a faster rate of GI homeostatic regulation. Finally, after 2 days in the presence of baclofen, the network showed full recovery with GE reaching 0.44 \u00b1 0.1 nS and GI reaching 1.02 \u00b1 0.2 nS (p > 0.8, Figure 5C,D). As a result, I/E ratio was transiently increased from 3.1 \u00b1 0.4 to 9.9 \u00b1 2.8 following 4 hr baclofen incubation (p < 0.001), returning to the baseline levels following 2 days of baclofen (3.04 \u00b1 0.5, p > 0.5; Figure 5E). These data show that I/E balance of the network is tightly regulated, supporting homeostatic restoration of spontaneous spiking activity of the network even under a constant increase in the GABABR activity.\n\n### Synaptic homeostatic mechanisms: increase in mEPSC frequency and amplitude\n\nHaving observed a recovery of the firing properties at the population level, we next investigated which homeostatic mechanisms were underlying these changes. To accomplish this, we recorded mEPSCs from hippocampal neurons under control conditions and at different time points following baclofen application (Figure 6A). While acute baclofen application did not have a significant effect on mEPSCs (Figure 6\u2014figure supplement 1) as has been reported previously (Lei and McBain, 2003), chronic baclofen incubation triggered gradual changes in mEPSC frequency and amplitude. We did not observe a significant increase in mEPSC amplitude 4 hr after baclofen application (24.7 \u00b1 1.3 and 27.7 \u00b1 3.3 pA in control and 4 hr after baclofen, respectively, p = 0.46). However, a 1.25-fold increase to 30.8 \u00b1 2.2 pA (p < 0.05) was detected 2 days following baclofen application (Figure 6B,C). This was coupled with twofold increase in the frequency of mEPSCs from 2.1 \u00b1 0.7 to 4.3 \u00b1 1.5 Hz (p < 0.05) following 4 hr baclofen application and a large 4.8-fold increase to 10 \u00b1 3.2 Hz (p < 0.01) following 2 days (Figure 6D,E). These data indicate that both pre- and postsynaptic modifications of quantal excitatory synaptic transmission occur following chronic, use-dependent inhibition of the evoked synaptic activity.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig6-v2.jpg)\n\n**Figure 6.:** (A) Representative traces of mEPSCs for control, 4 hr and 2 day incubations in baclofen. Scale bar: 40 pA, 200 ms. Measurements of mEPSCs were done in the presence of baclofen. (B) Cumulative histograms of mEPSC amplitudes in control (n = 30) and following 4 hr (n = 11) and 2 days (n = 15) of incubation with baclofen. The mean of mEPSC amplitude increased from 25.4 pA in control to 27.7 and 30.8 pA following 4 hr and 2 days of baclofen application, respectively. (C) Summary of data in B. Mean mEPSC amplitude is significantly elevated 1.25-fold (p < 0.05) only after 2 days in baclofen. Error bars represent SEM. *p < 0.05; one-way ANOVA with Dunnett's multiple comparison test. (D) Cumulative histogram of mEPSC inter-event intervals showing a gradual shift to smaller values from control through 4 hr baclofen to 2 days baclofen incubation (the same experiments as in C). (E) Summary of data in D. mEPSC frequency is increased twofold after 4 hr (p < 0.05) and 4.6-fold after 2 days (p < 0.01) incubation in baclofen. *p < 0.05, **p < 0.01; one-way ANOVA with Dunnett's multiple comparison test. Error bars represent SEM.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) mEPSC amplitude is not effected by acute application of baclofen (Cnt: 25.4 \u00b1 1.5 pA, n = 31; acute Bac: 24.4 \u00b1 2.9, n = 14, p = 0.72, unpaired, two-tailed Student's t-test). (B) mEPSC frequency is slightly, but not significantly, lowered by acute application of baclofen (Cnt: 2.1 \u00b1 0.7 Hz, n = 31; acute Bac: 1.7 \u00b1 0.6 Hz, n = 14, p = 0.7, unpaired, two-tailed Student's t-test).\n\n### Increase in intrinsic excitability in response to chronic activity suppression\n\nIn addition to synaptic homeostatic mechanisms, modulation of intrinsic excitability is an important facet of neuronal adaptation (Desai et al., 1999; Kim and Tsien, 2008; Maffei and Turrigiano, 2008). To examine the effect of chronic GABABR activation on intrinsic electrophysiological properties of hippocampal neurons, we incubated cultures with 10 \u00b5M baclofen for 4 hr and 2 days. We then elicited action potentials (APs) in response to increasing somatic current injections ranging from \u221240 to +180 pA (F\u2013I curves) in the presence of postsynaptic receptor blockers. While there was no difference in F\u2013I curves between control and 4 hr baclofen incubation, 2 days of baclofen incubation caused a significant leftward shift of the curve (Figure 7A,B). Additionally, resting membrane potential (RMP, Figure 7C) was \u221264.8 \u00b1 1.7 mV in untreated neurons, became more depolarized already after 4 hr (\u221258.2 \u00b1 2.2, p < 0.05) and further depolarized after 2 days (\u221255.4 \u00b1 1.5 mV, p < 0.001). Finally, input resistance (Rin), determined by the voltage response to increasing somatic current injections ranging from \u221280 to \u221220 pA, showed a tendency towards larger values after 4 hr and was significantly increased following 2 days baclofen incubation (from 233 \u00b1 14 to 373 \u00b1 59 M\u2126, p < 0.01; Figure 7D,E). These data show that, in addition to synaptic modifications, increased intrinsic excitability contributes to the homeostatic restoration of network firing properties following chronic GABABR-mediated inhibition.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig7-v2.jpg)\n\n**Figure 7.:** (A) Representative traces of voltage responses evoked by 20 pA step of current injections after control, 4 hr and 2 days baclofen incubation, elicited from RMP (scale bars: 40 mV, 100 ms). (B) F\u2013I relationship after control, 4 hr and 2 days baclofen incubation. After 2 days incubation there is a significant leftward shift of the curve showing greater excitability (control, n = 18; 4 hr, n = 18; 2 days, n = 16; *p < 0.05) following long-term GABABR activation. (C) RMP is depolarized after short baclofen incubation (control, n = 19; 4 hr, n = 21; 2 days, n = 14). (D) I\u2013V curve (same cells as C). (E) Rin is significantly increased following 2 day baclofen incubation (same cells as C).\n\n### Short-term synaptic plasticity is not homeostatically restored\n\nTo assess whether the increase in mEPSC frequency is paralleled by modifications in the evoked synapse release probability, we quantified basal synaptic vesicle release at different time points following baclofen application utilizing FM1-43 dye (Abramov et al., 2009). To this end, we quantified the total amount of releasable fluorescence at each bouton (\u0394F) and the density of FM-positive puncta per image (D) following stimulation (30 stimuli at 1 Hz) in the presence of 10 \u03bcM FM1-43. Our results demonstrate a 1.5- and 1.8-fold increase in \u0394F across synaptic populations following 4 hr and 2 days, respectively (p < 0.001, Figure 8A,B). To confirm that prolonged incubation with baclofen increases synaptic vesicle exocytosis, the total pool of recycling vesicles was stained by maximal stimulation (600 stimuli at 10 Hz) and subsequently destained by 1 Hz stimulation. The destaining rate constant (measured as 1/\u03c4decay, where \u03c4decay is an exponential time course) increased by \u223c36% following 2 days of baclofen incubation (p < 0.01; Figure 8\u2014figure supplement 1). Thus, an increase in the release probability of hippocampal boutons constitutes an adaptive mechanism stabilizing firing properties of hippocampal network.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig8-v2.jpg)\n\n**Figure 8.:** (A) Cumulative histogram of fluorescence intensity of FM stained puncta following 30 stimuli given at 1 Hz. (\u0394Fsingle control, n = 15; 6099 puncta; 4 hr, n = 15, 6269 puncta; 2 days, n = 13; 5551 puncta.) (B) Summary of mean \u0394Fsingle from (A). Mean \u0394Fsingle is increased already after 4 hr of incubation with baclofen and remains high after 2 days of baclofen incubation. ***p < 0.001; one-way ANOVA with Tukey's multiple comparison test. (C) Experimental protocol used for STP experiments. (D) Representative images of FM1-43 staining from STP experiments. Note the increase in fluorescence intensity after 1 Hz stimulation following baclofen incubation. Scale bar: 5 \u00b5m. (E) The mean burst-to-single ratio of S is significantly decreased following baclofen incubation (control, n = 15; 4 hr, n = 15; 2 days, n = 13; p < 0.0001). ***p < 0.001; one-way ANOVA with Tukey's multiple comparison test. Error bars represent SEM.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) FM1-43 destaining rate curves of 50 synapses under control and 2 days after 10 \u03bcM baclofen application. (B) Averaged destaining rate constants in control (n = 5) and in cultures pretreated for 2 days with baclofen (n = 6).\n\nGiven an inverse correlation between release probability and short-term synaptic facilitation (Debanne et al., 1996; Dobrunz and Stevens, 1997), homeostasis of mean firing rate is expected to be paralleled by concurrent changes in short-term synaptic plasticity. The total presynaptic strength within a given region of the hippocampal network (S) can be estimated as the product of \u0394F and D (S = \u0394F \u00d7 D). The magnitude and the sign of short-term presynaptic plasticity (Sburst/Ssingle) were calculated by dividing the total number of vesicles recycled due to bursts by the number of vesicles recycled by a similar number of single spikes in the same population of synapses (Figure 8C). Indeed, short-term synaptic facilitation was decreased from 1.9- to 1.2-fold after 4 hr (p < 0.001, Figure 8D,E) and was completely abolished following 2 days (p < 0.001, Figure 8D,E) of incubation with baclofen. These results demonstrate that short-term synaptic plasticity is not preserved under homeostasis of population firing properties.\n\n### Uncompensated reduction in firing rate and synchrony by AMPAR blockade\n\nHaving established a relationship between the use-dependent blockade of synaptic transmission via GABABRs and spontaneous firing properties, we asked whether use-independent blockade of synaptic transmission triggers similar effects. For this purpose, we blocked fast excitatory synaptic transmission by using the AMPA receptor (AMPAR) blocker CNQX. While previous studies demonstrated that chronic AMPAR blockade increases both the frequency and the amplitude of mEPSCs (Thiagarajan et al., 2002) already 4 hr after application of the antagonist (Jakawich et al., 2010), its effect on firing properties of the network has not been explored yet.\n\nCNQX (10 \u00b5M) caused a reduction in the population mean firing rate to 52 \u00b1 12% of baseline values immediately after application (p < 0.01; Figure 9B). Application of NMDAR and AMPAR blockers together resulted in \u223c80% of firing rate inhibition (Figure 9\u2014figure supplement 1), indicating that NMDARs contribute \u223c30% to spontaneous spiking activity. The residual \u223c20% may arise from electrical coupling via gap junctions (Hormuzdi et al., 2001), intrinsically bursting neurons (Yue and Yaari, 2004), ephaptic effects, and/or rebound spiking following inhibition. While CNQX triggered a compensatory increase in synapse release probability already 4 hr after its application (Figure 9F,G and (Jakawich et al., 2010)), the population mean firing rate remained largely uncompensated, staying at 40 \u00b1 5% of baseline 2 days following the perturbation (Figure 9A,B). Likewise, there was a significant shift in the single-unit firing rates towards lower frequencies after 2 days (p < 0.001, Kolmogorov\u2013Smirnov test; Figure 9C). When examining changes at the individual unit level, we found that only 16 \u00b1 8% of units remained significantly unchanged during 2 days of the perturbation, while 71 \u00b1 8% decreased their firing rates (p < 0.001, Figure 9D,E). It is noteworthy that CNQX and AMPAR-mediated signaling remain active even after 2 days incubation as evidenced by the increase in network and single unit firing rate following washout (Figure 9\u2014figure supplement 2).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig9-v2.jpg)\n\n**Figure 9.:** (A) Representative raster plot of MEA recording before and 2 days after application of CNQX. (B) Changes in mean firing rate following 10 \u00b5M CNQX application utilizing MEA recordings (n = 4). 3 hr of baseline rates are shown. There is an immediate and prolonged reduction of firing rate (p < 0.001 for all hours compared to baseline; one-way ANOVA with Bonferroni's multiple comparison test). For clarity, only every other hour is shown. Error bars represent SEM. (C) Distribution of unit firing rates (log scale) during baseline and after 2 days in the presence of CNQX. (D) Per unit correlation between baseline firing rates and firing rates after 2 days in the presence of CNQX (n = 4, 128 units). Colors represent units that significantly increased (red), decreased (blue), or remained stable (green) as determined by bootstrapping (see \u2018Materials and methods\u2019 for details). Note log scale of both axes. (E) Summary of data in (D). ***p < 0.001; one-way ANOVA with Tukey's multiple comparison test. (F) Cumulative histogram of fluorescence intensity of FM1-43 stained puncta following 30 stimuli given at 1 Hz (\u0394Fsingle control, n = 9, 3631 puncta; 2 days CNQX, n = 9, 5251 puncta). (G) Summary of mean \u0394Fsingle from (F). Mean \u0394Fsingle is increased already after 4 hr of incubation with baclofen and remains high after 2 days of baclofen incubation. ***p < 0.001; one-way ANOVA with Tukey's multiple comparison test. (H) Normalized fraction of spikes in network bursts (the same experiments as in B). There was a significant reduction from the fourth hour onward (p < 0.001; repeated-measures ANOVA with Bonferroni's multiple comparison test). (I) Normalized fraction of spikes in single-unit bursts (the same experiments as in B). There was a significant reduction from the sixth hour onward (hours 6\u201310, p < 0.05; hours 12\u201336, p < 0.01; hours 36\u201348, p < 0.001; repeated-measures ANOVA with Bonferroni's multiple comparison test). Error bars represent SEM.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** Addition of 10 \u00b5M CNQX together with 50 \u00b5M AP5 reduced mean firing rate by 80%.\n\n![Figure 9\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig9-figsupp2-v2.jpg)\n\n**Figure 9\u2014figure supplement 2.:** (A) Washout of CNQX causes an increase in MFR relative to both baseline and after 2 days CNQX incubation (relative to baseline: 212% \u00b1 28, relative to 2 days CNQX: 442% \u00b1 67; n = 51 units). (B) Per unit correlation between firing rates before and after washout of CNQX. Colors represent units that significantly increased (red), decreased (blue), or remained stable (green) as determined by bootstrapping. Note log scale of both axes. Same units as in (A). (C) Summary of data in (C).\n\n![Figure 9\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04378/elife-04378-fig9-figsupp3-v2.jpg)\n\n**Figure 9\u2014figure supplement 3.:** (A) The mean number of spikes in each network burst is reduced by CNQX with no return to baseline (hour 6, p < 0.05; hour 8, p < 0.01; hours 10\u201348, p < 0.001; repeated-measures ANOVA with Bonferroni's multiple comparison test, compared to baseline values). (B) CNQX causes an acute increase in duration of network bursts (p < 0.001; repeated-measures ANOVA with Bonferroni's multiple comparison test, compared to baseline values) followed by a slow, non-significant reduction in duration. (C) The mean number of spikes in single-unit bursts was not changed by CNQX (p > 0.05, repeated-measures ANOVA with Bonferroni's multiple comparison test, compared to baseline values). (D) CNQX causes a small non-significant increase in duration of single-unit bursts (repeated-measures ANOVA with Bonferroni's multiple comparison test, compared to baseline values).\n\nAnalysis of firing pattern shows that CNQX caused a permanent reduction in the fraction of spikes participating in population bursts (Figure 9A,H), as well as in the number of spikes comprising population bursts (Figure 9\u2014figure supplement 3A), reflecting a reduction in firing synchrony. Population-burst duration, however, showed a brief increase followed by a gradual, non-significant, decrease (Figure 9\u2014figure supplement 3B). A similar effect was observed at the single-unit level regarding the fraction of spikes participating in single-unit bursts, while burst properties were not significantly affected (Figure 9I and Figure 9\u2014figure supplement 3C,D). Taken together, these results suggest that use-independent postsynaptic blockade of excitatory synaptic transmission induces firing rate reduction with concomitant desynchronization of population firing. Although blockade of AMPAR-mediated excitatory synaptic transmission had a lower impact on firing rates than frequency-dependent synaptic inhibition via GABABRs (Figure 2E), this effect cannot be efficiently compensated in the network.\n\n## Discussion\n\nHow neural circuits maintain the balance between stability and plasticity is one of the most intriguing questions in neuroscience. Taking into account the highly dynamic and heterogeneous nature of individual synapses, ion channels, transmitters, and their receptors, understanding how individual neurons and neuronal populations maintain stable activity over long timescales or adjust their properties to changes in their external environment is an important and difficult challenge.\n\n### Homeostatic control of single neurons and network functions\n\nTo relate the network's behavior to properties of its single components, we integrated, in this study, recordings with extracellular MEA, the intracellular patch-clamp recordings and high-resolution functional imaging at the single-synapse level. In particular, this system enables us to examine whether homeostatic mechanisms operating at a cell-autonomous level are sufficient to confer population firing stability (Burrone et al., 2002; Goold and Nicoll, 2010; Turrigiano, 2012) or whether homeostasis operates at the level of network-average properties.\n\nOur results show that population spiking rates and patterns are intrinsically stable not only under basal conditions but also following profound activity perturbations. Despite a transient GABABR-mediated blockade of population firing rate with a simultaneous increase in firing synchrony, population activity was precisely restored to a \u2018set point\u2019 level after a period of 2 days. Interestingly, restoration of firing synchrony displays a faster kinetics than rebound of mean rates. In contrast to the observed firing macro-stability, single-unit behavior appears to be extremely dynamic. Only 23% of units displayed stable firing rates without perturbation, and this fraction was reduced to 11% following the perturbation. A complementary method, based on long-term recordings of somatic Ca2+ dynamics, reflecting firing rates, in identified neurons showed that 46% of neurons returned to their baseline firing rates (Figure 3). Thus, two independent methodologies suggest that the majority of neurons display unstable firing rates even at extended timescales, confirming scale-invariant rate dynamics observed in a previous study (Gal et al., 2010). Thus, stability, as well as the compensatory feedback response, is greater at the population compared to the single-unit level. Moreover, quantal excitatory synaptic strength and intrinsic excitability were significantly affected by the perturbation and, thus, differ between the baseline and rebound periods. These results highlight the idea that similar network properties may arise from multiple configurations of individual components (Prinz et al., 2004; Marder and Goaillard, 2006). Most importantly, the observed differences in the precision of homeostatic regulation at different spatial scales suggest that population firing homeostasis is more than a sum of single-neuron adaptive responses, implying the existence of network-wide regulation rules (Maffei and Fontanini, 2009).\n\n### The trigger of synaptic homeostatic responses\n\nWhat is the trigger of compensatory synaptic responses? A variety of synaptic compensation mechanisms have been found following pharmacological or genetic perturbations in hippocampal and cortical neuronal cultures (Turrigiano et al., 1998; Burrone et al., 2002; Thiagarajan et al., 2002, 2005; Branco et al., 2008; Jakawich et al., 2010), following sensory deprivation (Maffei et al., 2004; Hengen et al., 2013; Keck et al., 2013) or in a more physiological context of sleep (Vyazovskiy et al., 2008; Lant\u00e9 et al., 2011). Interestingly, synaptic homeostasis hypothesis proposed by Tononi and colleagues (Tononi and Cirelli, 2003, 2014) states that population firing synchrony, a hallmark of slow-wave sleep, contributes directly to homeostatic synaptic scaling. To examine if changes in population synchrony per se can trigger adaptive responses, we compared two perturbations producing similar (inhibitory) effects on the mean firing rate, while differentially affecting firing synchrony. For this purpose, we used baclofen that increases firing synchrony (Figure 4) and CNQX that induces firing desynchronization (Figure 9H,I). Both perturbations trigger the same types of synaptic adaptation at a comparable timescale: increase in the amplitude and the frequency of mEPSCs and in release probability (Figures 6 and 9F,G and (Thiagarajan et al., 2002; Jakawich et al., 2010)). Based on these results, we may conclude that (1) firing rates and patterns are independently regulated; (2) homeostatic systems generally sense a drop in spiking rates to induce an adaptive increase in excitatory synaptic transmission. Thus, our results in cultured neural networks don't support a causal relationship between firing synchrony and homeostatic synaptic response, suggesting that other factors, occurring during slow-wave sleep, may play a role in down-scaling of synapses in behaving animals.\n\nWhy network firing rates and patterns were not compensated following the AMPAR blockade requires future investigation. On the one hand, complete silencing of excitatory drive might exceed the capacity of the homeostatic system to compensate. On the other hand, the drop in the firing rate following baclofen application was even more pronounced; nevertheless, firing rate homeostasis was achieved. Similarly, blockade of GABA uptake via GAT-1 transporter resulted in a transient blockade of firing rates that were precisely compensated 2 days following the perturbation (Figure 2\u2014figure supplement 3). We can exclude the necessity of population bursts for induction of a proper profile of adaptive response since other treatments, such as ACh exposure, induce a reduction in synchrony that can be successfully compensated (Kaufman et al., 2012). Thus, our results indicate that adaptations at the level of intrinsic neuronal excitability and inhibitory drive are not sufficient to compensate the blockade of AMPAR-mediated excitatory drive. It is conceivable that AMPAR blockade might perturb the relationship between the firing rate and the intracellular Ca2+ concentration, causing a failure in the regulatory system (O'Leary et al., 2014).\n\n### Changes in neuronal properties do not always impact network performance\n\nIt is generally assumed that experience-dependent modifications of synaptic strength or intrinsic excitability are associated with functional changes in the network performance. Nevertheless, under some circumstances, synaptic and intrinsic modifications may have little effect on network functional properties (Prinz et al., 2004; Thirumalai et al., 2006). For example, networks utilizing uniform and multiplicative forms of postsynaptic scaling as a main compensatory response to the perturbation may preserve learning rules and information content transferred between neurons (Turrigiano et al., 1998; Turrigiano and Nelson, 2004).\n\nWhile changes in neuromodulation via GABABRs caused a profound increase in synapse release probability, intrinsic excitability, mEPSC frequency and amplitude, spontaneous spiking activity of the network returned to the baseline level during 2 days in the constant presence of the perturbation. However, the sensitivity of synaptic population to bursts was profoundly modified: while acute GABABR activation by baclofen shifts synapses towards high-pass filters (Figure 1A\u2013C), chronic baclofen application results in complete abolishment of short-term synaptic plasticity (Figure 8D,E), potentially reducing discrimination of input patterns by synaptic mechanisms. The reduction in the selectivity of synapses to afferent input may represent a trade-off between population firing stability and synaptic metaplasticity (Abraham and Bear, 1996; Thiagarajan et al., 2007). Thus, robust homeostatic control of ongoing population dynamics may coexist with unstable short-term synaptic plasticity.\n\nIn summary, our results suggest that invariant population mean rate and temporospatial coherence of spontaneous spiking can emerge from highly diverse combinations of synaptic strength and intrinsic neuronal properties. The observed micro-instability of individual neurons was truly intrinsic, taking place in a highly-controlled environment, irrespective of changes in experience, behavioral states, and interactions with higher-order supervising circuits. While firing macro-stability is robustly and accurately maintained by homeostatic control systems in the face of perturbations and uncertainties, the ability of synapses to discriminate input patterns was sacrificed. Thus, impairments of short-term synaptic plasticity and working memory functions, characterizing initial phases of numerous brain disorders, may be the tradeoff resulting from the system's efforts to maintain phenotypic stability of spontaneous population firing patterns. It remains to be seen whether hippocampal short-term synaptic plasticity can be maintained without sacrificing critical parameters of population dynamics.\n\n## Materials and methods\n\n### MEA preparation and recordings\n\nPrimary cultures of CA3\u2013CA1 hippocampal neurons were prepared from newborn BALB/c mice on postnatal days 0\u20132, as described (Slutsky et al., 2004). The experiments were performed in 15\u201322 DIV cultures. All animal experiments were approved by the Tel Aviv University Committee on Animal Care. Cultures were plated on MEA plates containing 59 TiN recording and one internal reference electrodes (Multi Channel Systems [MCS], Germany). Electrodes are 30 \u00b5m in diameter and spaced 500 \u00b5m apart. Data were acquired using a MEA1060-Inv-BC-Standard amplifier (MCS) with frequency limits of 5000 Hz and a sampling rate of 10 kHz per electrode mounted on an Olympus IX71 inverted microscope. Recordings were carried out under constant 37\u00b0C and 5% CO2 conditions, identical to incubator conditions.\n\n### Spike sorting\n\nRaw data were filtered, offline, at 200 Hz using a Butterworth high-pass filter. Spikes cutouts were then detected, offline, using MC Rack software (MCS) based on a fixed threshold set to between 4\u20135 standard deviations from noise levels. In order to ensure the veracity of the detected spikes, TTX was added at the end of some experiments, resulting in an immediate loss of all spiking activity. Only the first 20 min of each hour were used for all analyses in order to reduce computation time. We showed that 20 min can reliably represent the MFR of a full-hour by comparing the MFR of 792 20 min segments to the MFR of the full hours represented by those segments. We found that only 9.6% of segments were more than 10% different from their full hour and none were more than 20% different (Figure 2\u2014figure supplement 4A). Furthermore, we calculated the coefficient of variation (CV) for 104 units over the course of 8 consecutive hr using different bin sizes. The CV represents the variability of MFRs within each unit over a given time-frame. We found that small bin sizes resulted in significantly higher CVs compared to 1 hr bins while bins larger than 10 min were not significantly different from bins of a full hour (CV = 121.3% \u00b1 8.4, 53.4% \u00b1 4.1, 25.1% \u00b1 2, 19.2% \u00b1 1.4, 14.8% \u00b1 1.1, 13.5% \u00b1 1, 11.60% \u00b1 0.8, for bins of 10 s, 1, 5, 10, 20, 30, and 60 min, respectively; Figure 2\u2014figure supplement 4B). This is an indication that, while there is always some intrinsic variability in per unit MFR, 20 min is an accurate representation of a full hour.\n\nSpike cutouts were then transferred to Offline Sorter (Plexon Inc., Dallas, Texas, USA) for spike sorting. Spikes were plotted in 2-D or 3-D principal component (PC) space and unit clusters were semi-automatically detected using K-means clustering algorithm followed by template sorting. Clusters were then manually inspected to insure stability throughout experiment. Only clusters that fulfilled the following requirements were considered units and used for analysis: (1) there was no spiking during the absolute refractory period. (2) The clusters were well defined relative to other clusters from the same electrode throughout the entire experiment. (3) There were no sudden jumps in cluster location on PC axes. (4) The cluster is not centered around the origin of the PC axes. (5) Auto-correlation histograms showed a distinct peak at t \u2260 0. A cluster was classified as \u2018multiunit\u2019 if the autocorrelogram lacked a clear refractory period.\n\n### MEA data analysis\n\nAll analysis was performed using custom-written scripts in MATLAB (Mathworks, Natick, Massachusetts, USA). Network mean firing rates were calculated by averaging the mean firing rates of all units for a given time-point. For comparison of single unit parameters, we checked whether the difference in values between two time-points for a given unit significantly deviated from a null (zero centered) distribution using a bootstrapping method (see \u2018bootstrap.m\u2019 in Source code 1). The two time segments to be compared were divided into 1 min bins which were then randomly shuffled 10,000 times into two groups. The differences between the means of the two randomly shuffled groups produced a null-distribution. The real difference was significant if it fell outside of the 95% confidence interval of the null-distribution. The length of time segments, size of bins, and number of iterations had no effect on bootstrapping results (Figure 2\u2014figure supplement 4C\u2013E).\n\n### Burst detection\n\nFor population-burst detection and analysis, we used the following algorithm (see \u2018network_burst_analysis.m\u2019 in Source code 1). We start with a set of spike time sequences acquired from a group of single units. The sequences are then projected onto a single timeline to produce an ordered time sequence.\n\n$$\n\u0398=\u222a\\alpha,i{t_{i}^{\\alpha}}\n$$\n\nHere, $t_{i}^{\\alpha}$ is the ith spike inside the \u03b1th unit sequence.\n\nNext, we estimate the local spike density $f^(t)$. To reduce binning issues, we use Parzen kernel density estimation (KDE) approach (Parzen, 1962):\n\n$$\nf^(t)=\u2009\\sum_{i}\u03c1_{\\sigma}(t\u2212t_{i}),\n$$\n\nwhere we choose a Gaussian kernel.\n\n$$\n\u03c1_{\\sigma}(t)=(2\\pi\\sigma^{2})^{\u22121/2}exp(\u2212t^{2}/2\\sigma^{2}).\n$$\n\nThe timeline is discretized with sampling intervals of 50 ms; for the kernel, we set $\\sigma^{2}=0.5$.\n\nThe resulting spike density function peaks strongly around potential burst locations, where the spike density is especially high. We use this fact as a cue to detect network bursts\u2014every peak higher than a certain threshold is considered a candidate burst. Spike density threshold is estimated as the 95% percentile for a random Poisson process producing the same quantity of spikes. The timelines for each unit and thus for the entire network are divided into hourly intervals; we assume that throughout each interval the physiological state of the network and thus the spike statistics do not change. Thus, a different threshold is calculated for each hourly interval. Since we are looking for collective behavior modes, as a concluding filtering stage, we eliminate candidates generated by a small number of units. A unit is considered active if during the candidate burst it contributed at least a predefined number of spikes (usually 2\u20133). Then, for each hourly interval, a histogram of number of active units in a burst is calculated. The threshold for candidate burst elimination is set at the predefined percentile. In practice, choosing any value between 20\u201330% produces very similar results.\n\nFor detection of bursts at the single-unit level, bursts were defined as 3 or more spikes at a minimum of 50 Hz (see \u2018single_unit_bursts.m\u2019 in Source code 1). We analyzed data for all the combinations of parameters ranging from a minimum of 2, 3, and 4 spikes at frequencies of \u226520, 50, and 100 Hz and found no difference in the qualitative results showing that this analysis is robust over a wide range of definitions (Figure 4\u2014figure supplement 2).\n\n### Calcium imaging\n\nHippocampal cultures were infected by AAV2/1-Syn-GCaMP6f at 5\u20138 day in vitro. The experiments were performed 8\u201312 days post-infection when expression reached stable levels. Time-lapse images were acquired at 37\u00b0C and CO2 controlled environment, using Nikon Eclipse Ti microscope with air 20\u00d7 objective lens (NA = 0.45), controlled via iQ software (Andor, UK). Time-lapse images were collected at 20 Hz (1920 \u00d7 1080 pixels; 624 \u00d7 351 \u03bcm) using Neo sCMOS camera (Andor) and binned 4 \u00d7 4 pixels. The light source was AMH-2000 metal-halide lamp. The excitation wavelength was 485/20 nm, the emission band-pass filter was 525/50 nm. Imaging parameters were optimized to minimize photobleaching and phototoxicity, while preserving sufficient signal-to-noise ratio and temporal resolution. Light intensity was kept constant in all measurements during the 2 days of the experiment. Images were taken each for 2 min with 5 min intervals for 10 cycles, thus sampling 20 min of activity over a 65 min period. We saw no discernible changes in neurons' morphologies or in mean Ca2+-transient amplitudes within or across sessions under our imaging conditions (Figure 3\u2014figure supplement 1D,E). For AP-evoked signals (Figure 3\u2014figure supplement 1A,B), synaptic blockers (50 \u03bcM AP5 and 20 \u03bcM CNQX) were used to block recurrent activity.\n\nSignal intensity was measured using imageJ software by selecting ROIs over the soma of neurons expressing GCaMP6f while avoiding the nucleus. The fluorescence time course of each cell was measured by averaging all pixels within the ROI. Only cells that were in the same estimated focal plane and visually separated from neighboring cells and surrounding neuropil were used. For long-term GCaMP6f imaging, baseline fluorescence images of multiple sessions were inspected manually, and only the cells that could be clearly identified in all imaged sessions in the focal plane were included in the analysis. \u0394F/F was quantified for each cell as change in fluorescence divided by baseline fluorescence measured 1 s before the spontaneous signal or stimulation. The sum of amplitudes of all the events was divided by the recording time to estimate the rate of Ca2+ transients.\n\n### Whole-cell recordings in hippocampal culture\n\nExperiments were performed at room temperature in a recording chamber on the stage of FV300 inverted confocal microscope (Olympus, Japan). Extracellular Tyrode solution contained (in mM): NaCl, 145; KCl, 3; glucose, 15; HEPES, 10; MgCl2, 1.2; CaCl2, 1.2; pH adjusted to 7.4 with NaOH. Whole-cell patches were recorded using the following intracellular solution (in mM): Cs-MeSO3, 120; HEPES, 10; NaCl, 10; CaCl2, 0.5; Mg2+\u2013ATP, 2; Na3GTP, 0.3; EGTA, 10 for mEPSC and E/I experiments; pH adjusted to 7.25 with NaOH. Serial resistance was not compensated. For mEPSCs recordings, Tetrodotoxin (TTX; 1 \u03bcM), amino-phosphonopentanoate (AP-5; 50 \u03bcM), and gabazine (30 \u03bcM) were added to the Tyrode solution. For measurement of excitation/inhibition (E/I) balance, sEPSCs and sIPSCs were isolated in the same cell based on reversal potentials of GABAAR-mediated and AMPAR-mediated currents, respectively. When corrected for the liquid junction potential, the reversal potential for E (VE) was close to 10 mV and VI was close to \u221265 mV, close to the predicted value for the intracellular and extracellular solutions used in the present study. For intrinsic excitability measurements, the following intracellular solution was used (in mM): K-gluconate 120; KCl 10; HEPESs 10; Na-phosphocreatine 10; ATP-Na2 4; GTP-Na 0.3; MgCl2 0.5. Recordings were done in the presence of synaptic blockers (in \u00b5M: 25 DNQX, 50 APV, and 10 bicuculline). Frequency vs current intensity curves were plotted by measuring the average rate of action potentials in current-clamp during 500-ms long depolarizing steps of increasing intensity; a small DC current was injected to maintain membrane potential at \u221265 mV in between depolarizations. Input resistance (Rin) was measured by calculating the slope of the voltage change in response to increasing current injections from \u221280 pA to \u221220 pA in 20 pA increments. Access resistance was between 5\u201315 M\u03a9. Neurons were excluded from the analysis if RMP was >\u221255 mV, serial resistance was >15 M\u03a9, and Rin was <80 M\u03a9 or if any of these parameters changed by >20% during the recording. Signals were recorded using a MultiClamp 700B amplifier, digitized by DigiData1440A (Molecular Devices, Sunnyvale, California, USA) at 10 kHz, and filtered at 2 kHz. Electrophysiological data were analyzed using MiniAnalysis (Synaptosoft, Decatur, Georgia, USA) for mEPSCs and in pClamp10 (Molecular Devices) for sEPSCs and sIPSCs. The integrated conductances GE and GI were calculated according to the following equations $\u2009G_{E}=\\int0t\\frac{sEPSC}{t(V_{M}\u2212V_{Erev})}$ and $G_{I}=\\int0t\\frac{sIPSC}{t(V_{M}\u2212V_{Irev})}$.\n\n### FM dye imaging and analysis\n\nActivity-dependent FM1-43 styryl dye was used to estimate basal synaptic vesicle recycling and exocytosis. Action potentials were elicited by passing 50 mA constant current for 1 ms (\u223c50% above the threshold for eliciting action potential) through two platinum wires, separated by \u223c7 mm, and close to the surface of the coverslip. The extracellular Tyrode solution contained non-selective antagonist of ionotropic glutamate receptors (kynurenic acid, 0.5 mM) to block recurrent neuronal activity. Synaptic vesicles were loaded with 10 \u03bcM FM1-43. FM loading and unloading were done using protocols described previously (Abramov et al., 2009). The fluorescence of individual synapses was determined from the difference between images obtained after staining and after destaining (\u0394F). To estimate vesicle recycling/release during low frequency stimulation, we quantified: (i) \u0394F signal for staining by 30 action potentials at a rate of 1 Hz stimulation; (ii) FM destaining rate during 1 Hz stimulation following staining of boutons by maximal stimulation. For FM-(+) puncta detection, \u0394F images have been analyzed (only the puncta exhibiting \u226590% destaining were subjected to analysis). Detection of signals has been done as described (Abramov et al., 2009).\n\n### Chemical reagents\n\nFM1-43 and Advasep-7 were purchased from Biotium (Hayward, California, USA), TTX from Alamone Labs (Israel), baclofen, CNQX, and AP-5 from Tocris (UK).\n\n### Statistical analysis\n\nError bars shown in the figures represent standard error of the mean (SEM). The number of experiments is defined by n. Student's paired t-tests were used in all the experiments where the effect of baclofen was tested in the same cell/synapse (*p < 0.05; **p < 0.01; ***p < 0.001), unless otherwise noted. Unpaired t-tests were used to compare different populations of synapses. One-way ANOVA Kruskal\u2013Wallis non-parametric test was used to compare several populations of synapses. Nonparametric Spearman's test has been used for correlation analysis. For comparison of mEPSC amplitude or frequency under different conditions, 200 mEPSCs were randomly selected for each cell and pooled for each condition. A Kolmogorov\u2013Smirnov (K\u2013S) test was used to compute differences in distributions across the pooled datasets.\n",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "0ddab26e-86f7-4ef4-9e05-cadecaa4657f",
+      "submission_id": "9f89a7ac-831e-48e3-8a1d-8d834e8069b0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sacha B Nelson, Brandeis University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04378.026](https://doi.org/10.7554/eLife.04378.026)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cInterplay between population firing stability and single neuron dynamics in hippocampal networks\u201d for consideration at eLife. Your article has been favorably evaluated by Eve Marder (Senior editor) and 3 reviewers, one of whom, Sacha Nelson, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe reviewers agreed that the issue of whether or not firing rate homeostasis occurs primarily in individual neurons or at the network level is highly important and that the findings in your study may force revision of the dominant view that homeostasis is primarily cell autonomous. They also agreed that the data are of high quality. However several points need clarifying or shoring up.\n\nThe major concerns are primarily technical:\n\n1) Some of the reviewers were concerned about how exactly firing rate variability was quantified and what it reflects. The text states that \u201ctime-points to be compared were divided into one minute bins\u201d, but does not make clear the intervals used: was it an hour divided into minutes or some other interval? The key question is whether individual neurons are tending to different rates over long time scales (the implied interpretation) or are moving randomly up and down over shorter time scales (could even be hours) such that repeated sampling finds them in different states.\n\n2) There is also a technical concern over the stability of the recordings. It is known that neurons in culture can move, thus potentially changing the set of cells sampled at each electrode. More should be done to convince the reader that sufficient stability has been achieved to rule out the possibility that variability reflects variability of the neurons recorded. The finding that multi-units also show variability is not a sufficient control for this.\n\n3) The authors demonstrate that baclofen is still effective after two days but have they ruled out the possibility that the relevant G-protein signaling is highly desensitized? One way to address this is to monitor activity during the washout period. The prediction is that activity should rebound. This would then offer the opportunity to observe bi-directional changes in activity of single neurons to further demonstrate the concordance, or lack thereof, of single neuron and network activity. It would also be useful to do this for the CNQX experiment.\n\nIn addition, the reviewers felt that the Introduction and Discussion could be shortened and some hyperbole reduced. For example, appeals to more \u201cphysiological\u201d manipulations may not be warranted, since it is not clear that massive GABA-B inhibition is physiological. It is also not correct that prior vertebrate in vitro studies have not looked at network activity, while it is certainly true that these studies did not monitor activity of individual neurons over time.\n",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "93c5d6cc-5a5c-4bd9-a2fd-34d45a652e63",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C1",
+      "claim": "Distributions of spontaneous population firing rates are subject to accurate homeostatic control following increase of synaptic inhibition in cultured hippocampal networks.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we show that distributions of spontaneous population firing rates and synchrony are subject to accurate homeostatic control following increase of synaptic inhibition in cultured hippocampal networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract, supported by experimental data presented throughout the manuscript including MEA recordings and calcium imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "a6bedee8-6952-4d7d-83ab-097d5da1437a",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C2",
+      "claim": "Distributions of spontaneous population synchrony are subject to accurate homeostatic control following increase of synaptic inhibition in cultured hippocampal networks.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we show that distributions of spontaneous population firing rates and synchrony are subject to accurate homeostatic control following increase of synaptic inhibition in cultured hippocampal networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract, supported by experimental data on burst patterns and synchrony measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "9d9c8862-fb57-41cc-b891-9dea8e09daae",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C3",
+      "claim": "Reduction in firing rate triggered synaptic adaptive responses operating as global homeostatic mechanisms to maintain firing macro-stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduction in firing rate triggered synaptic and intrinsic adaptive responses operating as global homeostatic mechanisms to maintain firing macro-stability, without achieving local homeostasis at the single-neuron level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing changes in mEPSC frequency and amplitude, and release probability following baclofen application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "50ec1194-33b1-45ab-b490-0b2cd01e878b",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C4",
+      "claim": "Reduction in firing rate triggered intrinsic adaptive responses operating as global homeostatic mechanisms to maintain firing macro-stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduction in firing rate triggered synaptic and intrinsic adaptive responses operating as global homeostatic mechanisms to maintain firing macro-stability, without achieving local homeostasis at the single-neuron level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing changes in resting membrane potential, input resistance, and F-I curves following baclofen application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "5c69bea2-d507-4f9f-945f-7e31d4a280ef",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C5",
+      "claim": "Homeostatic mechanisms do not achieve local homeostasis at the single-neuron level.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduction in firing rate triggered synaptic and intrinsic adaptive responses operating as global homeostatic mechanisms to maintain firing macro-stability, without achieving local homeostasis at the single-neuron level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that only 11% of units returned to baseline firing rates after baclofen application, while 89% changed significantly.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "a1e6d996-f6ac-4f39-b368-2041b615f921",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C6",
+      "claim": "Adaptive mechanisms reduced short-term facilitation essential for synaptic discrimination of input patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Adaptive mechanisms, while stabilizing population firing properties, reduced short-term facilitation essential for synaptic discrimination of input patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by FM dye imaging data showing that short-term synaptic facilitation was decreased from 1.9- to 1.2-fold after 4 hr and was completely abolished following 2 days of baclofen incubation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "99534cb4-d297-4b47-9a32-a06742022e3a",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C7",
+      "claim": "Invariant ongoing population dynamics emerge from intrinsically unstable activity patterns of individual neurons and synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, invariant ongoing population dynamics emerge from intrinsically unstable activity patterns of individual neurons and synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing stable population firing rates despite variable single-unit firing rates, and changes in synaptic properties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "db77acf7-e3c6-4bcd-9d73-4e26b8b09be8",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C8",
+      "claim": "Only 25% of CA1 cells with place fields at one recording session exhibited the same properties 5 days later in freely moving mice.",
+      "claim_type": "EXPLICIT",
+      "source": "That study, performed by monitoring Ca2+ dynamics in thousands of CA1 cells over weeks through a miniature head-mounted microscope, revealed a remarkable degree of instability in the coding of space: only 25% of cells with place fields at one recording session exhibited the same properties 5 days later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is attributed to a previous study (Ziv et al., 2013) and is cited as background information.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "585d3bff-b144-4863-b4f3-d4a9cde802ba",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C9",
+      "claim": "Diverse activity patterns at the single-neuron level gave rise to largely invariant spatial representations at the population level in CA1 hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the diverse activity patterns at the single-neuron level gave rise to largely invariant spatial representations at the population level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim refers to findings from a previous study (Ziv et al., 2013) and is cited as background information.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "92f4423b-ea9e-4b05-afc8-01c52926497f",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C10",
+      "claim": "GABABRs mediate presynaptic inhibition via inhibition of presynaptic calcium transients.",
+      "claim_type": "EXPLICIT",
+      "source": "GABABRs mediate presynaptic inhibition via inhibition of presynaptic calcium transients (Wu and Saggau, 1995; Laviv et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "fa0eb5b1-ba46-42ad-acd1-ebc0a9314c33",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C11",
+      "claim": "GABABR-mediated inhibition is frequency-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "As GABABR-mediated inhibition is frequency-dependent (Varela et al., 1997; Kreitzer and Regehr, 2000; Ohliger-Frerking et al., 2003), we quantified the effects of baclofen for two types of input: low-frequency single spikes (30 stimuli at 1 Hz) and high-frequency spike bursts (30 stimuli delivered as 6 bursts; each burst contains 5 stimuli at 100 Hz), while maintaining the mean spiking rate constant at 1 Hz (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies and is confirmed by experimental data in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "cda270c7-3e25-45d4-ac86-4b4ee2762f8d",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C12",
+      "claim": "Baclofen inhibits synaptic vesicle release, displaying preferential effects during low-frequency stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, baclofen inhibits synaptic vesicle release, displaying preferential effects during low-frequency stimulation (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FM1-43 dye imaging data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "490ff477-0201-4133-ae4a-d97ade730e30",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C13",
+      "claim": "IC50 for single spikes was approximately 23-fold lower than for bursts (0.33 and 7.6 \u03bcM, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitatively, IC50 for single spikes was \u223c23-fold lower than for bursts (0.33 and 7.6 \u03bcM, respectively, Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by dose-response curve data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "83ec15ce-ed58-4023-b4c3-762921978079",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C14",
+      "claim": "Short-term facilitation was enhanced in a wide range of baclofen concentrations (0.01\u201310 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, short-term facilitation was enhanced in a wide range of baclofen concentrations (0.01\u201310 \u03bcM, Figure 1C), indicating a conversion of synapses to a high-pass filter mode.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FM method data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "65924b9b-089d-4a5f-aee7-7b9104e43bc8",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C15",
+      "claim": "Acute baclofen application converts synapses to a high-pass filter mode.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, short-term facilitation was enhanced in a wide range of baclofen concentrations (0.01\u201310 \u03bcM, Figure 1C), indicating a conversion of synapses to a high-pass filter mode.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the data showing enhanced short-term facilitation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "6bebe7a3-65b7-4ee8-ad4f-cdea09ed014e",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C16",
+      "claim": "Baclofen caused a fast and robust drop in single-unit firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, baclofen caused a fast and robust drop in single-unit firing rates (Figure 1F,G), leading to a reduction of the population mean firing rate to 25 \u00b1 4% (1 \u00b5M baclofen, see raster plots in Figure 1\u2014figure supplement 1D) and to 1.2 \u00b1 0.4% (10 \u00b5M baclofen) of baseline values (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MEA recording data shown in Figures 1F, 1G, and 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "d7b43e4f-3b0b-4c24-ae50-706b2bf03df1",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C17",
+      "claim": "1 \u00b5M baclofen reduced population mean firing rate to 25 \u00b1 4% of baseline values.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, baclofen caused a fast and robust drop in single-unit firing rates (Figure 1F,G), leading to a reduction of the population mean firing rate to 25 \u00b1 4% (1 \u00b5M baclofen, see raster plots in Figure 1\u2014figure supplement 1D) and to 1.2 \u00b1 0.4% (10 \u00b5M baclofen) of baseline values (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MEA recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "d5de4f44-1803-40b7-af18-88028813c16e",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C18",
+      "claim": "10 \u00b5M baclofen reduced population mean firing rate to 1.2 \u00b1 0.4% of baseline values.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, baclofen caused a fast and robust drop in single-unit firing rates (Figure 1F,G), leading to a reduction of the population mean firing rate to 25 \u00b1 4% (1 \u00b5M baclofen, see raster plots in Figure 1\u2014figure supplement 1D) and to 1.2 \u00b1 0.4% (10 \u00b5M baclofen) of baseline values (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MEA recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "148465d7-6739-4f12-85c7-61f67082d0d4",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C19",
+      "claim": "Unit firing rates were highly heterogeneous and skewed towards low frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Unit firing rates were highly heterogeneous and skewed towards low frequencies (Figure 1\u2014figure supplement 1C) as has been previously reported in vivo (Mizuseki et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by distribution data shown in Figure 1\u2014figure supplement 1C and is consistent with previous in vivo studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "f39cc14c-3fd6-4944-8fc8-e228ab71e297",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C20",
+      "claim": "Baclofen caused a fast and pronounced drop in firing rates to 1.2 \u00b1 0.4% of baseline values.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, baclofen caused a fast and pronounced drop in firing rates to 1.2 \u00b1 0.4% of baseline values (Figure 2A,C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MEA recording data shown in Figures 2A, 2C, and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "5f827a0b-b6e8-4e4f-9b21-bd6c759b5a66",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C21",
+      "claim": "Firing rates gradually returned to baseline values, reaching 57 \u00b1 8% and 103 \u00b1 14% of baseline after 1 and 2 days, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, firing rates gradually returned to baseline values, reaching 57 \u00b1 8% and 103 \u00b1 14% of baseline after 1 and 2 days, respectively (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by long-term MEA recording data shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "3bc9fce4-edb9-4692-8d81-392601a16e8e",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C22",
+      "claim": "The average firing rates of networks under control conditions showed changes of similar magnitude during two recording days (113 \u00b1 9% of baseline after 2 days).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the average firing rates of networks under control conditions showed changes of similar magnitude during two recording days (without baclofen application, 113 \u00b1 9% of baseline after 2 days; Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by control MEA recording data shown in Figures 2B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "138ddc05-7093-4f47-a49e-dffc23afbd8a",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C23",
+      "claim": "The characteristic log-normal distributions of single-unit firing patterns were essentially identical before and 2 days after baclofen application.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the characteristic log-normal distributions of single-unit firing patterns were essentially identical before and 2 days after baclofen application (Figure 2E, p = 0.66; Kolmogorov\u2013Smirnov test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by distribution analysis shown in Figure 2E with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "f4300e61-1c6a-4370-a720-a995e381bc63",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C24",
+      "claim": "Baclofen remains potent after over 2 days of exposure to recording conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, baclofen remains potent after over 2 days of exposure to recording conditions (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data showing that pre-incubated baclofen retains its activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "285aca21-f1d1-4474-acfc-8420e3177df9",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C25",
+      "claim": "Washout of baclofen following 2 days caused a significant increase in firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, washout of baclofen following 2 days caused a significant increase in firing rate, indicating sustained activity of both baclofen and the GABABR-induced G-protein-mediated signaling (Figure 2\u2014figure supplement 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by washout experiment data shown in Figure 2\u2014figure supplement 1B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "bce3ab72-e401-4bea-921c-9da70aba775a",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C26",
+      "claim": "GABABRs did not undergo desensitization under experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the magnitude of the GABABR-mediated presynaptic inhibition, as measured by FM dyes, was not reduced following washout (Figure 2\u2014figure supplement 1E,F), indicating that GABABRs did not undergo desensitization under our experimental conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FM dye imaging data shown in Figure 2\u2014figure supplement 1E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "7bb89bf4-66fc-426f-9164-737a88ed9e14",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C27",
+      "claim": "Only 23 \u00b1 3% of units remained significantly unchanged during 2 days of control recordings, while 77 \u00b1 3% changed their firing rates significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 23 \u00b1 3% of units remained significantly unchanged during 2 days of control recordings, while 77 \u00b1 3% changed their firing rates significantly (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-unit analysis data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "376ca2cf-53b8-44a2-b039-ad334f321d95",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C29",
+      "claim": "The change in firing rate after 2 days of recordings was negatively correlated with the initial firing rate of the same unit under both control and baclofen conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The change in firing rate after 2 days of recordings was negatively correlated with the initial firing rate of the same unit under both control (Figure 1\u2014figure supplement 1E; Spearman r = \u22120.29, p < 0.0001, n = 490) and baclofen (Figure 1\u2014figure supplement 1F; Spearman r = \u22120.47, p < 0.0001, n = 305) conditions, due to a larger relative variability of low firing units.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 1\u2014figure supplement 1E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "81d997e7-8144-4174-a2d7-487419bb3ac7",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C30",
+      "claim": "The mean movement of neurons (1.6 \u00b1 0.1 \u03bcM) was negligible in comparison to the size of the electrode (30 \u00b5M) and neuron's cell body (11.4 \u00b1 0.3 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that per unit variability is not due to a possible movement of neurons in and out from recording electrodes, we measured the movement of individual neurons over the course of 2 days and found that the mean movement of neurons (1.6 \u00b1 0.1 \u03bcM) was negligible in comparison to the size of the electrode (30 \u00b5M) and neuron's cell body (11.4 \u00b1 0.3 \u00b5M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by measurements of neuronal movement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "fb45716b-34f8-4a24-9ec4-55cdd73f4e4a",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C31",
+      "claim": "Single spikes induced robust calcium transients (24.6 \u00b1 1.4% \u0394F/F).",
+      "claim_type": "EXPLICIT",
+      "source": "Single spikes induced robust calcium transients (24.6 \u00b1 1.4% \u0394F/F; Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "8a927734-36a6-4b91-a085-5e8f6b6fe5c2",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C32",
+      "claim": "High-frequency bursts consisting of 2\u201310 spikes at 100 Hz induced significantly higher \u0394F/F peak amplitudes as compared with single spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the exact number of spikes could not be accurately predicted from the size of the calcium transients, high-frequency bursts consisting of 2\u201310 spikes at 100 Hz induced significantly higher \u0394F/F peak amplitudes as compared with single spikes and the average \u0394F/F linearly correlated with the number of spikes (Figure 3\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 3\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "2dab7e04-2add-4adc-ab2c-d142056f3957",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C33",
+      "claim": "The average \u0394F/F linearly correlated with the number of spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the exact number of spikes could not be accurately predicted from the size of the calcium transients, high-frequency bursts consisting of 2\u201310 spikes at 100 Hz induced significantly higher \u0394F/F peak amplitudes as compared with single spikes and the average \u0394F/F linearly correlated with the number of spikes (Figure 3\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "57891ef2-8edf-4aaf-b0d9-6a0507114805",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C34",
+      "claim": "10 \u03bcM baclofen blocked Ca2+ transients acutely.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of Ca2+ dynamics in 192 neurons shows that 10 \u03bcM baclofen blocked Ca2+ transients acutely, while 48 hr after baclofen incubation the mean Ca2+-transient amplitude returned to the baseline level (Figure 3A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figures 3A and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "6e167dd9-8cd5-44de-976c-e3d67fb37661",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C35",
+      "claim": "48 hr after baclofen incubation the mean Ca2+-transient amplitude returned to the baseline level.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of Ca2+ dynamics in 192 neurons shows that 10 \u03bcM baclofen blocked Ca2+ transients acutely, while 48 hr after baclofen incubation the mean Ca2+-transient amplitude returned to the baseline level (Figure 3A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calcium imaging data shown in Figures 3A and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "a2fbbcb5-b987-4dcc-a415-17b2ba1f8c2a",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C36",
+      "claim": "54 \u00b1 6% of neurons did not return to their baseline values 2 days after baclofen application.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite stability of Ca2+ dynamics at the population level, 54 \u00b1 6% of neurons did not return to their baseline values 2 days after baclofen application (Figure 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-neuron calcium imaging analysis shown in Figures 3E and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "b91341a1-f703-4c8e-9788-ac43970b6133",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C37",
+      "claim": "Baclofen transiently increased population firing synchrony by increasing the fraction of spikes participating in bursts.",
+      "claim_type": "EXPLICIT",
+      "source": "Baclofen transiently increased population firing synchrony by increasing the fraction of spikes participating in bursts, burst duration (Figure 4B,C), and number of spikes per network burst (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by burst analysis data shown in Figures 4B, 4C, and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "9bd98a9a-c920-4407-8e11-5924a351be18",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C38",
+      "claim": "The observed GABABR-mediated increase in firing synchrony returned to baseline values after 14 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed GABABR-mediated increase in firing synchrony returned to baseline values after 14 hr (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by time-course data shown in Figures 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "ac2925bb-6fbf-43f1-bfa7-a44dd1d36708",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C39",
+      "claim": "Under control conditions, 42 \u00b1 2% of units significantly changed the fraction of spikes in bursts, while 56 \u00b1 2% remained unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "Under control conditions, 42 \u00b1 2% of units significantly changed the fraction of spikes in bursts, while 56 \u00b1 2% remained unchanged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by single-unit burst analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "5e13c418-a99a-401a-83ea-e315c8ddceec",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C40",
+      "claim": "2 days after baclofen application, 63 \u00b1 8% of units were significantly changed in burst patterns, while only 37 \u00b1 8% of units remained unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "2 days after baclofen application, 63 \u00b1 8% were significantly changed, while only 37 \u00b1 8% of units remained unchanged (Figure 4F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-unit burst analysis shown in Figures 4F and 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "e91b3e0f-8e8f-4c3e-ba2d-7e13f912397b",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C41",
+      "claim": "Acute application of baclofen almost completely blocked both sEPSCs and sIPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, acute application of baclofen almost completely blocked both sEPSCs and sIPSCs, from 0.40 \u00b1 0.07 and 0.87 \u00b1 0.1 nS to 0.02 \u00b1 0.006 and 0.06 \u00b1 0.02 nS for GE and GI, respectively (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by whole-cell recording data shown in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "80aa185b-1f77-45c3-93d0-1daaa4cb85cf",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C42",
+      "claim": "After 4 hr of incubation with baclofen, GE and GI partially recovered to 0.16 \u00b1 0.07 nS and 0.61 \u00b1 0.2 nS, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "After 4 hr of incubation with baclofen, GE and GI partially recovered to 0.16 \u00b1 0.07 nS and 0.61 \u00b1 0.2 nS, respectively (Figure 5C,D), suggesting a faster rate of GI homeostatic regulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by whole-cell recording data shown in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "91e2f2f7-8733-48c7-903c-d090db0b3994",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C43",
+      "claim": "After 2 days in the presence of baclofen, GE reached 0.44 \u00b1 0.1 nS and GI reached 1.02 \u00b1 0.2 nS.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, after 2 days in the presence of baclofen, the network showed full recovery with GE reaching 0.44 \u00b1 0.1 nS and GI reaching 1.02 \u00b1 0.2 nS (p > 0.8, Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by whole-cell recording data shown in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "85c83910-322e-4652-ad27-b568ec543cb0",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C44",
+      "claim": "I/E ratio was transiently increased from 3.1 \u00b1 0.4 to 9.9 \u00b1 2.8 following 4 hr baclofen incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, I/E ratio was transiently increased from 3.1 \u00b1 0.4 to 9.9 \u00b1 2.8 following 4 hr baclofen incubation (p < 0.001), returning to the baseline levels following 2 days of baclofen (3.04 \u00b1 0.5, p > 0.5; Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by I/E ratio analysis shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "3863c5c2-475e-4ca1-a12f-63912fd3c1aa",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C45",
+      "claim": "I/E ratio returned to the baseline levels following 2 days of baclofen (3.04 \u00b1 0.5).",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, I/E ratio was transiently increased from 3.1 \u00b1 0.4 to 9.9 \u00b1 2.8 following 4 hr baclofen incubation (p < 0.001), returning to the baseline levels following 2 days of baclofen (3.04 \u00b1 0.5, p > 0.5; Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by I/E ratio analysis shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "c5867bd4-070a-400e-bf28-27a0cc51e042",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C46",
+      "claim": "Acute baclofen application did not have a significant effect on mEPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "While acute baclofen application did not have a significant effect on mEPSCs (Figure 6\u2014figure supplement 1) as has been reported previously (Lei and McBain, 2003), chronic baclofen incubation triggered gradual changes in mEPSC frequency and amplitude.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mEPSC recording data shown in Figure 6\u2014figure supplement 1 and is consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "4d0cecbd-c3cf-4d58-ae48-82aec2ea0cb4",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C47",
+      "claim": "A 1.25-fold increase in mEPSC amplitude to 30.8 \u00b1 2.2 pA was detected 2 days following baclofen application.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a 1.25-fold increase to 30.8 \u00b1 2.2 pA (p < 0.05) was detected 2 days following baclofen application (Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mEPSC amplitude analysis shown in Figures 6B and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "212e958d-54d2-4028-bd75-07fe97edec85",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C48",
+      "claim": "mEPSC frequency increased twofold from 2.1 \u00b1 0.7 to 4.3 \u00b1 1.5 Hz following 4 hr baclofen application.",
+      "claim_type": "EXPLICIT",
+      "source": "This was coupled with twofold increase in the frequency of mEPSCs from 2.1 \u00b1 0.7 to 4.3 \u00b1 1.5 Hz (p < 0.05) following 4 hr baclofen application and a large 4.8-fold increase to 10 \u00b1 3.2 Hz (p < 0.01) following 2 days (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mEPSC frequency analysis shown in Figures 6D and 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "d62f5260-c79c-4d83-b65f-d610374b6e06",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C49",
+      "claim": "mEPSC frequency increased 4.8-fold to 10 \u00b1 3.2 Hz following 2 days baclofen application.",
+      "claim_type": "EXPLICIT",
+      "source": "This was coupled with twofold increase in the frequency of mEPSCs from 2.1 \u00b1 0.7 to 4.3 \u00b1 1.5 Hz (p < 0.05) following 4 hr baclofen application and a large 4.8-fold increase to 10 \u00b1 3.2 Hz (p < 0.01) following 2 days (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mEPSC frequency analysis shown in Figures 6D and 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "12436810-3d4a-4249-acb9-eeba25e25432",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C50",
+      "claim": "Resting membrane potential was \u221264.8 \u00b1 1.7 mV in untreated neurons, became more depolarized after 4 hr (\u221258.2 \u00b1 2.2 mV), and further depolarized after 2 days (\u221255.4 \u00b1 1.5 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, resting membrane potential (RMP, Figure 7C) was \u221264.8 \u00b1 1.7 mV in untreated neurons, became more depolarized already after 4 hr (\u221258.2 \u00b1 2.2, p < 0.05) and further depolarized after 2 days (\u221255.4 \u00b1 1.5 mV, p < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by current-clamp recording data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "83ee6317-4cea-43fc-822b-8c79c0293b2b",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C51",
+      "claim": "Input resistance was significantly increased following 2 days baclofen incubation (from 233 \u00b1 14 to 373 \u00b1 59 M\u03a9).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, input resistance (Rin), determined by the voltage response to increasing somatic current injections ranging from \u221280 to \u221220 pA, showed a tendency towards larger values after 4 hr and was significantly increased following 2 days baclofen incubation (from 233 \u00b1 14 to 373 \u00b1 59 M\u03a9, p < 0.01; Figure 7D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by input resistance measurements shown in Figures 7D and 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "dd7540b2-76b9-4d2c-9342-8c01c9b41134",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C52",
+      "claim": "There was a 1.5- and 1.8-fold increase in \u0394F across synaptic populations following 4 hr and 2 days of baclofen incubation, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate a 1.5- and 1.8-fold increase in \u0394F across synaptic populations following 4 hr and 2 days, respectively (p < 0.001, Figure 8A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FM1-43 dye imaging data shown in Figures 8A and 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "036b298e-0cf3-4c0a-ad8f-9c424b1caa52",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C53",
+      "claim": "The destaining rate constant increased by approximately 36% following 2 days of baclofen incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "The destaining rate constant (measured as 1/\u03c4decay, where \u03c4decay is an exponential time course) increased by \u223c36% following 2 days of baclofen incubation (p < 0.01; Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FM destaining rate analysis shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "00b269da-86d9-4d50-8353-7310ded51c5c",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C54",
+      "claim": "Short-term synaptic facilitation was decreased from 1.9- to 1.2-fold after 4 hr of baclofen incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, short-term synaptic facilitation was decreased from 1.9- to 1.2-fold after 4 hr (p < 0.001, Figure 8D,E) and was completely abolished following 2 days (p < 0.001, Figure 8D,E) of incubation with baclofen.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by short-term plasticity analysis shown in Figures 8D and 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "68c95393-b27e-451c-91a0-4b0050e7cf52",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C55",
+      "claim": "Short-term synaptic facilitation was completely abolished following 2 days of incubation with baclofen.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, short-term synaptic facilitation was decreased from 1.9- to 1.2-fold after 4 hr (p < 0.001, Figure 8D,E) and was completely abolished following 2 days (p < 0.001, Figure 8D,E) of incubation with baclofen.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by short-term plasticity analysis shown in Figures 8D and 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "d50d2d06-776f-45b7-931f-511a0ecf050f",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C56",
+      "claim": "CNQX (10 \u00b5M) caused a reduction in the population mean firing rate to 52 \u00b1 12% of baseline values immediately after application.",
+      "claim_type": "EXPLICIT",
+      "source": "CNQX (10 \u00b5M) caused a reduction in the population mean firing rate to 52 \u00b1 12% of baseline values immediately after application (p < 0.01; Figure 9B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MEA recording data shown in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "b0170cbf-5043-4533-b6da-dfa34d52aa3f",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C57",
+      "claim": "Application of NMDAR and AMPAR blockers together resulted in approximately 80% of firing rate inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of NMDAR and AMPAR blockers together resulted in \u223c80% of firing rate inhibition (Figure 9\u2014figure supplement 1), indicating that NMDARs contribute \u223c30% to spontaneous spiking activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pharmacological blockade data shown in Figure 9\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "88b39358-df99-4ba6-be96-870df083353d",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C58",
+      "claim": "NMDARs contribute approximately 30% to spontaneous spiking activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of NMDAR and AMPAR blockers together resulted in \u223c80% of firing rate inhibition (Figure 9\u2014figure supplement 1), indicating that NMDARs contribute \u223c30% to spontaneous spiking activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the difference between CNQX alone (52% reduction) and CNQX+AP5 together (80% reduction).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "13fb0b01-8e9d-406e-a809-e266acb1a9bf",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C59",
+      "claim": "The population mean firing rate remained largely uncompensated after CNQX application, staying at 40 \u00b1 5% of baseline 2 days following the perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "While CNQX triggered a compensatory increase in synapse release probability already 4 hr after its application (Figure 9F,G and (Jakawich et al., 2010)), the population mean firing rate remained largely uncompensated, staying at 40 \u00b1 5% of baseline 2 days following the perturbation (Figure 9A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by long-term MEA recording data shown in Figures 9A and 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "18de75f0-587b-4599-8c0b-f2302caf1ee3",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C60",
+      "claim": "Only 16 \u00b1 8% of units remained significantly unchanged during 2 days of CNQX perturbation, while 71 \u00b1 8% decreased their firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "When examining changes at the individual unit level, we found that only 16 \u00b1 8% of units remained significantly unchanged during 2 days of the perturbation, while 71 \u00b1 8% decreased their firing rates (p < 0.001, Figure 9D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-unit analysis shown in Figures 9D and 9E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "431bdcdf-e52b-4272-83db-7faf7bee0294",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C61",
+      "claim": "CNQX caused a permanent reduction in the fraction of spikes participating in population bursts.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of firing pattern shows that CNQX caused a permanent reduction in the fraction of spikes participating in population bursts (Figure 9A,H), as well as in the number of spikes comprising population bursts (Figure 9\u2014figure supplement 3A), reflecting a reduction in firing synchrony.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by burst analysis data shown in Figures 9A, 9H, and Figure 9\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "20c3707d-39ae-4a2e-8d7c-f6e0db485d5e",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C62",
+      "claim": "Homeostatic control systems are equally precise at the level of individual neurons and neuronal populations.",
+      "claim_type": "IMPLICIT",
+      "source": "Second, are homeostatic control systems equally precise at the level of individual neurons and neuronal populations?",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a research question posed in the introduction, and the manuscript data shows that homeostatic control is NOT equally precise at different levels, with population-level control being more precise than single-neuron level.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "8ede5919-f0f8-4a52-95e5-40f40e1d3623",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C63",
+      "claim": "The observed differences in the precision of homeostatic control at different spatial scales challenge cell-autonomous theory of network homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed differences in the precision of homeostatic control at different spatial scales challenge cell-autonomous theory of network homeostasis and suggest the existence of network-wide regulation rules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings showing greater stability at population level compared to single-neuron level.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "c54a00e9-439d-414b-b8a4-6a35e9a349ca",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C64",
+      "claim": "The observed differences in the precision of homeostatic control at different spatial scales suggest the existence of network-wide regulation rules.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed differences in the precision of homeostatic control at different spatial scales challenge cell-autonomous theory of network homeostasis and suggest the existence of network-wide regulation rules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings showing greater stability at population level compared to single-neuron level.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "1f3da9ee-0343-41c5-bab9-18420336d481",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C65",
+      "claim": "Neuronal circuits achieve an ongoing balance between flexibility and stability to enable plastic adaptations to environmental changes, while maintaining neuronal activity in a stable regime over extended timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural circuits achieve an ongoing balance between flexibility and stability to enable plastic adaptations to environmental changes, while maintaining neuronal activity in a stable regime over extended timescales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about neural circuit function supported by the literature and the experimental findings in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "34d3875e-8a36-49ae-8ad9-caeab40f644e",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C66",
+      "claim": "Diverse homeostatic negative feedback systems operate to stabilize ongoing spiking properties in neuronal populations around a predefined 'set point' in face of constant environmental changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Diverse homeostatic negative feedback systems operate to stabilize ongoing spiking properties in neuronal populations around a predefined 'set point' in face of constant environmental changes (Turrigiano and Nelson, 2004; Davis, 2006; Marder and Goaillard, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about homeostatic mechanisms supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "821a9a59-f76d-45f4-8838-693523a3d414",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C67",
+      "claim": "Chronic AMPAR blockade increases both the frequency and the amplitude of mEPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous studies demonstrated that chronic AMPAR blockade increases both the frequency and the amplitude of mEPSCs (Thiagarajan et al., 2002) already 4 hr after application of the antagonist (Jakawich et al., 2010), its effect on firing properties of the network has not been explored yet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "e4fd057f-9bf5-4b13-89eb-0ff75436e732",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C68",
+      "claim": "Both pre- and postsynaptic modifications of quantal excitatory synaptic transmission occur following chronic, use-dependent inhibition of the evoked synaptic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that both pre- and postsynaptic modifications of quantal excitatory synaptic transmission occur following chronic, use-dependent inhibition of the evoked synaptic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mEPSC data showing increases in both amplitude (postsynaptic) and frequency (presynaptic).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "60589dbb-bfde-4c96-8b27-3b102985d543",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C69",
+      "claim": "Increased intrinsic excitability contributes to the homeostatic restoration of network firing properties following chronic GABABR-mediated inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that, in addition to synaptic modifications, increased intrinsic excitability contributes to the homeostatic restoration of network firing properties following chronic GABABR-mediated inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the F-I curve, RMP, and input resistance data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "1d441a56-d68a-433a-adde-115831e375b0",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C70",
+      "claim": "An increase in the release probability of hippocampal boutons constitutes an adaptive mechanism stabilizing firing properties of hippocampal network.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, an increase in the release probability of hippocampal boutons constitutes an adaptive mechanism stabilizing firing properties of hippocampal network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the FM dye imaging data showing increased \u0394F and destaining rate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "fe9a1255-a44d-49a0-8e9e-e15ae7a5bdd0",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C71",
+      "claim": "Homeostasis of mean firing rate is expected to be paralleled by concurrent changes in short-term synaptic plasticity given an inverse correlation between release probability and short-term synaptic facilitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Given an inverse correlation between release probability and short-term synaptic facilitation (Debanne et al., 1996; Dobrunz and Stevens, 1997), homeostasis of mean firing rate is expected to be paralleled by concurrent changes in short-term synaptic plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on established knowledge about the relationship between release probability and short-term plasticity, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "26295629-caec-4a97-b469-3b634a3f7a6d",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C72",
+      "claim": "Short-term synaptic plasticity is not preserved under homeostasis of population firing properties.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that short-term synaptic plasticity is not preserved under homeostasis of population firing properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data showing abolishment of short-term facilitation after 2 days of baclofen incubation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "37616170-1575-4617-8241-60fbb997faa3",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C73",
+      "claim": "Firing rates and patterns are independently regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, we may conclude that (1) firing rates and patterns are independently regulated; (2) homeostatic systems generally sense a drop in spiking rates to induce an adaptive increase in excitatory synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the effects of baclofen and CNQX, which both reduce firing rates but have opposite effects on synchrony.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "9f21edcd-57ad-49a6-9107-968a1043f08a",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C74",
+      "claim": "Homeostatic systems generally sense a drop in spiking rates to induce an adaptive increase in excitatory synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, we may conclude that (1) firing rates and patterns are independently regulated; (2) homeostatic systems generally sense a drop in spiking rates to induce an adaptive increase in excitatory synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that both baclofen and CNQX trigger similar synaptic adaptations despite different effects on synchrony.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "f609a514-a2d0-4f10-9bfc-7898cbfc5a79",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C75",
+      "claim": "Adaptations at the level of intrinsic neuronal excitability and inhibitory drive are not sufficient to compensate the blockade of AMPAR-mediated excitatory drive.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results indicate that adaptations at the level of intrinsic neuronal excitability and inhibitory drive are not sufficient to compensate the blockade of AMPAR-mediated excitatory drive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that firing rates did not recover after CNQX application despite synaptic adaptations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "02e0e60a-71b1-4115-8b8f-93d95b2eea1e",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C76",
+      "claim": "Similar network properties may arise from multiple configurations of individual components.",
+      "claim_type": "EXPLICIT",
+      "source": "These results highlight the idea that similar network properties may arise from multiple configurations of individual components (Prinz et al., 2004; Marder and Goaillard, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle supported by citations and confirmed by the experimental findings showing variable single-unit properties giving rise to stable population properties.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "dada851a-a2dc-4e3f-bd45-cb26df91a602",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C77",
+      "claim": "Population firing homeostasis is more than a sum of single-neuron adaptive responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, the observed differences in the precision of homeostatic regulation at different spatial scales suggest that population firing homeostasis is more than a sum of single-neuron adaptive responses, implying the existence of network-wide regulation rules (Maffei and Fontanini, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that population-level homeostasis is more precise than single-neuron level homeostasis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "9979f7b1-31ee-4503-8c4c-89112bd4908f",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C78",
+      "claim": "Robust homeostatic control of ongoing population dynamics may coexist with unstable short-term synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, robust homeostatic control of ongoing population dynamics may coexist with unstable short-term synaptic plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that population firing rates are restored while short-term facilitation is abolished.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "e3983995-ca24-4716-9740-bb515be7ac25",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C79",
+      "claim": "Impairments of short-term synaptic plasticity and working memory functions, characterizing initial phases of numerous brain disorders, may be the tradeoff resulting from the system's efforts to maintain phenotypic stability of spontaneous population firing patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, impairments of short-term synaptic plasticity and working memory functions, characterizing initial phases of numerous brain disorders, may be the tradeoff resulting from the system's efforts to maintain phenotypic stability of spontaneous population firing patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion drawn from the experimental findings about the tradeoff between population stability and short-term plasticity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "76254b04-b4e7-4a21-9e23-fe3385274c15",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C80",
+      "claim": "Primary cultures of CA3\u2013CA1 hippocampal neurons were prepared from newborn BALB/c mice on postnatal days 0\u20132.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary cultures of CA3\u2013CA1 hippocampal neurons were prepared from newborn BALB/c mice on postnatal days 0\u20132, as described (Slutsky et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the experimental preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "09450547-bc00-4514-9081-765e1b2e371f",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C81",
+      "claim": "The experiments were performed in 15\u201322 DIV cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiments were performed in 15\u201322 DIV cultures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the timing of experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "3b51ebb8-e401-453f-a0a4-4960e3a3c87f",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C82",
+      "claim": "Cultures were plated on MEA plates containing 59 TiN recording and one internal reference electrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cultures were plated on MEA plates containing 59 TiN recording and one internal reference electrodes (Multi Channel Systems [MCS], Germany).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the recording setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "9f0888d1-2c6b-4339-bc99-3ab09feb0674",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C83",
+      "claim": "Electrodes are 30 \u00b5m in diameter and spaced 500 \u00b5m apart.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrodes are 30 \u00b5m in diameter and spaced 500 \u00b5m apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the electrode specifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "2323e474-aa9c-444c-aba1-291204622884",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C84",
+      "claim": "GCaMP6f displays single-action-potential sensitivity and broad dynamic range.",
+      "claim_type": "EXPLICIT",
+      "source": "We utilized the genetically encoded Ca2+ indicator GCaMP6f that displays single-action-potential sensitivity and broad dynamic range (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of GCaMP6f supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "3b44895e-0672-411a-bc09-6b56d6a46cc3",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C85",
+      "claim": "An AAV-based gene delivery system under the synapsin promoter was used to express GCaMP6f in hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "An AAV-based gene delivery system under the synapsin promoter was used to express GCaMP6f in hippocampal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the expression system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "663d2f9d-3c35-4ce6-a171-343a756500a9",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C86",
+      "claim": "Hippocampal cultures were infected by AAV2/1-Syn-GCaMP6f at 5\u20138 day in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal cultures were infected by AAV2/1-Syn-GCaMP6f at 5\u20138 day in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the timing of infection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "10a1e9d9-768e-47ed-86a7-a4c83061dd50",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "claim_id": "C87",
+      "claim": "The experiments were performed 8\u201312 days post-infection when expression reached stable levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiments were performed 8\u201312 days post-infection when expression reached stable levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail describing the timing of experiments relative to infection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "398196c8-2807-47c7-8925-0c78ce84db67",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Acute baclofen application preferentially inhibits synaptic vesicle release during low-frequency stimulation compared to high-frequency bursts, with IC50 values differing by ~23-fold (0.33 \u03bcM vs 7.6 \u03bcM), resulting in enhanced short-term facilitation and conversion of synapses to a high-pass filter mode across a wide concentration range (0.01-10 \u03bcM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 are well-supported by FM1-43 dye imaging data (Figure 1A-C) and voltage-clamp experiments in acute slices (Figure 1\u2014figure supplement 1A,B). The frequency-dependent inhibition, quantitative IC50 measurements, and enhanced short-term facilitation are directly demonstrated with appropriate experimental controls and statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "e2acd4e6-634b-4777-a0b9-2b061975b8fa",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Acute baclofen application causes a rapid, dose-dependent reduction in single-unit and population firing rates, with 1 \u03bcM baclofen reducing population mean firing rate to 25\u00b14% and 10 \u03bcM baclofen to 1.2\u00b10.4% of baseline values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 and C20 are strongly supported by MEA recording data (Figures 1F-H, 2A,C,D). The dose-response relationship is clearly demonstrated with appropriate sample sizes and statistical analysis. The acute effects are consistent across multiple measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "9f464f53-169a-4fee-a1b1-19e961344457",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Population mean firing rates undergo precise homeostatic restoration following chronic baclofen application, returning to baseline levels (103\u00b114% of baseline) after 2 days, with log-normal distributions of firing rates remaining essentially identical (p=0.66, K-S test). Control networks show similar variability (113\u00b19% after 2 days).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C21-C23 are well-supported by long-term MEA recordings (Figure 2C-E) with appropriate controls. The homeostatic recovery is demonstrated with statistical rigor, and the preservation of firing rate distributions is confirmed by K-S test. Control experiments validate that observed changes are within normal network variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "3fca7c5a-7efb-4730-88da-67b3008f9c0b",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Individual neurons display significant instability in firing rates despite population-level stability, with only 23\u00b13% of units remaining unchanged under control conditions and 11\u00b12% after baclofen application. Changes in firing rate are negatively correlated with baseline firing rate (Spearman r=-0.29 control, r=-0.47 baclofen), and neuronal movement (1.6\u00b10.1 \u03bcm) is negligible relative to electrode size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C27, C29-C30 are supported by single-unit analysis (Figure 2F-G, Figure 1\u2014figure supplement 1E-F) with appropriate statistical methods (bootstrapping). The negative correlation with baseline firing rate is properly quantified, and control experiments rule out technical artifacts from neuronal movement. This demonstrates genuine biological variability at the single-neuron level.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "6412d034-74ff-4d24-8f61-84a8dbf4b22f",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Calcium imaging confirms population-level homeostatic recovery with mean Ca2+-transient amplitude returning to baseline after 48 hours of baclofen incubation, while 54\u00b16% of individual neurons fail to return to baseline values, corroborating electrophysiological findings of single-neuron instability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by GCaMP6f calcium imaging data (Figure 3A,C,E-F). The complementary methodology validates MEA findings and strengthens conclusions about differential stability at population vs. single-neuron levels. Sample size (192 neurons) is adequate, and analysis methods are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "d9408cb1-6fce-43a5-8fce-dc639b7fe1b3",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Population firing synchrony undergoes homeostatic regulation following baclofen application, with transient increases in burst participation, duration, and spikes per burst returning to baseline after 14 hours. However, 63\u00b18% of individual units show significant changes in burst patterns after 2 days (vs. 42\u00b12% in controls), demonstrating single-unit instability despite population stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C37-C40 are well-supported by burst analysis data (Figure 4B-G). The temporal dynamics of synchrony recovery are clearly demonstrated, and single-unit variability is properly quantified using bootstrapping statistics. The result is robust across different burst detection parameters (Figure 4\u2014figure supplement 2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "2fc85023-6dce-4655-9d68-75d4fd17bf24",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Chronic baclofen incubation triggers homeostatic restoration of excitatory and inhibitory conductances, with GE recovering from 0.02\u00b10.006 nS (acute) to 0.44\u00b10.1 nS (2 days) and GI from 0.06\u00b10.02 nS to 1.02\u00b10.2 nS. The I/E ratio shows transient increase to 9.9\u00b12.8 at 4 hours before returning to baseline (3.04\u00b10.5) after 2 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 are supported by whole-cell voltage-clamp recordings (Figure 5C-E) with appropriate sample sizes and statistical analysis. The differential recovery kinetics of GI vs. GE are clearly demonstrated, and the restoration of I/E balance provides mechanistic insight into population firing rate homeostasis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "0bf79587-4ff5-4aeb-a08d-8828bb7fcf70",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Chronic baclofen incubation induces both presynaptic (4.8-fold increase in mEPSC frequency to 10\u00b13.2 Hz) and postsynaptic (1.25-fold increase in amplitude to 30.8\u00b12.2 pA) modifications of excitatory synaptic transmission after 2 days, while acute baclofen has no significant effect on mEPSCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C46-C49, C68 are well-supported by mEPSC recordings (Figure 6, Figure 6\u2014figure supplement 1) with appropriate controls and statistical analysis. The temporal progression (no change at 4h, significant changes at 2d) is clearly demonstrated. The conclusion about both pre- and postsynaptic modifications is justified by the distinct changes in frequency and amplitude.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "5372a97d-23ce-498f-bcc9-eb02ecb7ab9a",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Chronic baclofen incubation increases intrinsic neuronal excitability, with progressive depolarization of resting membrane potential (from -64.8\u00b11.7 mV to -55.4\u00b11.5 mV after 2 days), increased input resistance (233\u00b114 to 373\u00b159 M\u03a9), and leftward shift of F-I curves, contributing to homeostatic restoration of network firing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C50-C51, C69 are supported by current-clamp recordings (Figure 7A-E) with adequate sample sizes and appropriate statistical tests. The progressive changes in RMP and the delayed increase in Rin are clearly demonstrated. The conclusion that intrinsic excitability contributes to homeostatic restoration is justified by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "385c24ca-60fc-438c-8e34-62e68dd4325d",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Chronic baclofen incubation increases synaptic vesicle release probability, with 1.5- and 1.8-fold increases in \u0394F after 4 hours and 2 days respectively, and ~36% increase in destaining rate constant, constituting an adaptive mechanism for stabilizing network firing properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53, C70 are supported by FM1-43 dye imaging data (Figure 8A-B, Figure 8\u2014figure supplement 1). The increases in both total releasable fluorescence and destaining rate provide converging evidence for increased release probability. The conclusion about adaptive mechanisms is justified by the temporal correlation with firing rate recovery.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "9aa653cc-6255-4fc0-93a8-f5ea2a80c825",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Homeostatic restoration of population firing rates is accompanied by progressive reduction and eventual abolishment of short-term synaptic facilitation (from 1.9-fold to 1.2-fold at 4h and complete loss at 2 days), demonstrating that short-term plasticity is not preserved during homeostatic compensation and may represent a tradeoff for population stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C54-C55, C72, C78 are well-supported by FM dye imaging of short-term plasticity (Figure 8D-E). The inverse relationship between release probability and short-term facilitation is consistent with established principles (C71). The conclusion about tradeoffs between population stability and synaptic discrimination is appropriately cautious and supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "41979ef2-2bae-432e-97f4-0b6538e0cfae",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CNQX (10 \u03bcM) causes incomplete homeostatic compensation, with population firing rate remaining at 40\u00b15% of baseline after 2 days despite compensatory increases in release probability. CNQX reduces firing to 52\u00b112% of baseline, with NMDARs contributing ~30% to spontaneous activity (inferred from 80% inhibition with CNQX+AP5). Only 16\u00b18% of units remain unchanged, with 71\u00b18% showing decreased firing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 are supported by MEA recordings and FM imaging (Figure 9A-G). The incomplete compensation contrasts with baclofen results and is well-documented. However, the inference about NMDAR contribution (C58) relies on subtraction of two measurements and could be affected by non-additive effects. The conclusion is reasonable but involves some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "0e882ad5-6141-40a1-8bce-a26277176a57",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CNQX causes permanent reduction in firing synchrony (fraction of spikes in bursts and spikes per burst), contrasting with baclofen's transient increase. Both perturbations trigger similar synaptic adaptations despite opposite effects on synchrony, indicating that firing rates and patterns are independently regulated and that homeostatic systems sense firing rate reduction to induce adaptive increases in excitatory transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61, C73-C74 are supported by comparing baclofen and CNQX effects (Figures 4, 9H-I, Figure 9\u2014figure supplement 3). The contrasting effects on synchrony with similar synaptic adaptations provide strong evidence for independent regulation. The conclusion about firing rate as the sensed variable is logical but represents an inference that could benefit from additional mechanistic experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "8a60f54e-f717-4c5d-a721-ed7f8457db71",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Invariant population dynamics emerge from intrinsically unstable activity patterns of individual neurons and synapses. The greater precision of homeostatic control at population vs. single-neuron level challenges cell-autonomous theory and suggests network-wide regulation rules, with similar network properties arising from multiple configurations of individual components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C63-C64, C76-C77 represent the major conceptual conclusions of the study, supported by the collective evidence showing population stability despite single-unit variability. The challenge to cell-autonomous theory is justified by the data, though the specific nature of network-wide regulation rules remains to be determined. The conclusions are appropriately framed as suggestions rather than definitive proof.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "3789b604-158b-4ce3-8eff-b817dac3346c",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Adaptations in intrinsic excitability and inhibitory drive are insufficient to compensate for AMPAR blockade, as evidenced by incomplete recovery of firing rates after CNQX application despite synaptic homeostatic responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is supported by the CNQX experiments (Figure 9) showing incomplete compensation. However, the manuscript does not directly measure intrinsic excitability changes after CNQX, so this conclusion is inferred from the lack of recovery rather than directly demonstrated. The claim is reasonable but involves some inferential steps.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "5a240022-2ee6-475d-93d2-a2de62851709",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Impairments of short-term synaptic plasticity and working memory functions in brain disorders may represent a tradeoff from the system's efforts to maintain phenotypic stability of spontaneous population firing patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C79 is explicitly speculative and extends beyond the experimental data. While the loss of short-term facilitation during homeostatic compensation is demonstrated (C54-C55), the connection to brain disorders and working memory is not tested in this study. This represents a hypothesis for future work rather than a supported conclusion from the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "f64a12fb-dab0-4af6-9fa1-0a48e13011e2",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Baclofen remains pharmacologically active after 2+ days of exposure to recording conditions, as demonstrated by retained inhibitory potency of pre-incubated baclofen, increased firing after washout, and unchanged magnitude of GABABR-mediated presynaptic inhibition, ruling out drug degradation or receptor desensitization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 are supported by control experiments (Figure 2\u2014figure supplement 1A-F) that rule out technical artifacts. These controls are essential for interpreting the homeostatic recovery as genuine biological adaptation rather than loss of drug activity. The experiments are well-designed and appropriately executed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "8a861445-494a-4bdb-bfc1-18931a74f5b8",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Single action potentials induce robust calcium transients (24.6\u00b11.4% \u0394F/F) in GCaMP6f-expressing neurons, with high-frequency bursts (2-10 spikes at 100 Hz) producing significantly higher amplitudes that correlate linearly with spike number, validating calcium imaging as a proxy for firing rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 are supported by calibration experiments (Figure 3\u2014figure supplement 1A-C) performed in the presence of synaptic blockers to isolate single-cell responses. The linear relationship between spike number and \u0394F/F (r\u00b2=0.99) validates the use of calcium imaging for population-level analysis, though the authors appropriately note that exact spike counts cannot be reliably determined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "77fc577d-f8c0-4a0c-a03c-06596360efb9",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Unit firing rates in cultured hippocampal networks are highly heterogeneous and skewed towards low frequencies, similar to distributions observed in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C19 is supported by firing rate distribution data (Figure 1\u2014figure supplement 1C) and citation to in vivo studies (Mizuseki et al., 2012). This validates the cultured network model as physiologically relevant and establishes baseline characteristics important for interpreting homeostatic responses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "e72746b8-66d8-4d08-ad8b-f1f9d3266d23",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Previous in vivo studies in CA1 hippocampus showed that only 25% of place cells maintained properties over 5 days, yet diverse single-neuron activity patterns gave rise to invariant population-level spatial representations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 accurately cite findings from Ziv et al., 2013 and provide important context for the current study. The citation appears accurate and relevant to motivating the research questions about stability at different spatial scales.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "079c478f-5971-4384-ab10-3e551b5e0e4b",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "GABABRs mediate frequency-dependent presynaptic inhibition via inhibition of presynaptic calcium transients, with stronger effects during low-frequency stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 are supported by citations to previous work and confirmed by experimental data in the manuscript (Figure 1A-C). This establishes the mechanistic basis for using baclofen as a tool to study homeostatic plasticity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "3f93b63a-af07-452d-9caf-5115063bd9ae",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Neural circuits achieve balance between flexibility and stability through diverse homeostatic negative feedback systems that stabilize spiking properties around a set point despite environmental changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 represent general principles supported by extensive literature (cited appropriately) and provide conceptual framework for the study. These are well-established concepts in the field rather than novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "b908e37a-0932-4d0a-84d6-a325ea6fb46d",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Previous studies demonstrated that chronic AMPAR blockade increases both frequency and amplitude of mEPSCs within 4 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 accurately cites previous work (Thiagarajan et al., 2002; Jakawich et al., 2010) and provides context for the CNQX experiments. The citation appears accurate and relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "5ea634d8-732e-4a22-8d05-65c2d3aefd9a",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "An inverse correlation exists between release probability and short-term synaptic facilitation, predicting that homeostasis of mean firing rate should be accompanied by changes in short-term plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 is supported by citations to established work (Debanne et al., 1996; Dobrunz and Stevens, 1997) and represents a well-accepted principle in synaptic physiology. This prediction is then tested and confirmed in the manuscript (C54-C55).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "4f26be28-c984-4b6d-aa79-1413c2a52505",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Methodological details: Primary hippocampal cultures from P0-2 BALB/c mice were used at 15-22 DIV, plated on MEAs with 59 recording electrodes (30 \u03bcm diameter, 500 \u03bcm spacing). GCaMP6f was expressed via AAV2/1-Syn vector, with experiments performed 8-12 days post-infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C87 describe standard methodological details that are adequately documented. The methods are appropriate for the research questions and follow established protocols. Sample ages and culture conditions are clearly specified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    },
+    {
+      "id": "105a48a3-2c96-4d83-bfb0-f7563d7cf73e",
+      "content_id": "6c0abf19-235d-44f0-8003-62a1b8904c83",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Research question: Are homeostatic control systems equally precise at the level of individual neurons and neuronal populations?",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 represents a research question posed in the introduction. The manuscript data clearly demonstrates that homeostatic control is NOT equally precise at different levels (population > single-neuron), directly addressing this question. This is properly framed as a question to be investigated rather than a claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:14:36.549247Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cda270c7-3e25-45d4-ac86-4b4ee2762f8d",
+      "result_id": "398196c8-2807-47c7-8925-0c78ce84db67"
+    },
+    {
+      "claim_id": "490ff477-0201-4133-ae4a-d97ade730e30",
+      "result_id": "398196c8-2807-47c7-8925-0c78ce84db67"
+    },
+    {
+      "claim_id": "83ec15ce-ed58-4023-b4c3-762921978079",
+      "result_id": "398196c8-2807-47c7-8925-0c78ce84db67"
+    },
+    {
+      "claim_id": "65924b9b-089d-4a5f-aee7-7b9104e43bc8",
+      "result_id": "398196c8-2807-47c7-8925-0c78ce84db67"
+    },
+    {
+      "claim_id": "6bebe7a3-65b7-4ee8-ad4f-cdea09ed014e",
+      "result_id": "e2acd4e6-634b-4777-a0b9-2b061975b8fa"
+    },
+    {
+      "claim_id": "d7b43e4f-3b0b-4c24-ae50-706b2bf03df1",
+      "result_id": "e2acd4e6-634b-4777-a0b9-2b061975b8fa"
+    },
+    {
+      "claim_id": "d5de4f44-1803-40b7-af18-88028813c16e",
+      "result_id": "e2acd4e6-634b-4777-a0b9-2b061975b8fa"
+    },
+    {
+      "claim_id": "f39cc14c-3fd6-4944-8fc8-e228ab71e297",
+      "result_id": "e2acd4e6-634b-4777-a0b9-2b061975b8fa"
+    },
+    {
+      "claim_id": "93c5d6cc-5a5c-4bd9-a2fd-34d45a652e63",
+      "result_id": "9f464f53-169a-4fee-a1b1-19e961344457"
+    },
+    {
+      "claim_id": "5f827a0b-b6e8-4e4f-9b21-bd6c759b5a66",
+      "result_id": "9f464f53-169a-4fee-a1b1-19e961344457"
+    },
+    {
+      "claim_id": "3bc9fce4-edb9-4692-8d81-392601a16e8e",
+      "result_id": "9f464f53-169a-4fee-a1b1-19e961344457"
+    },
+    {
+      "claim_id": "138ddc05-7093-4f47-a49e-dffc23afbd8a",
+      "result_id": "9f464f53-169a-4fee-a1b1-19e961344457"
+    },
+    {
+      "claim_id": "5c69bea2-d507-4f9f-945f-7e31d4a280ef",
+      "result_id": "3fca7c5a-7efb-4730-88da-67b3008f9c0b"
+    },
+    {
+      "claim_id": "7bb89bf4-66fc-426f-9164-737a88ed9e14",
+      "result_id": "3fca7c5a-7efb-4730-88da-67b3008f9c0b"
+    },
+    {
+      "claim_id": "376ca2cf-53b8-44a2-b039-ad334f321d95",
+      "result_id": "3fca7c5a-7efb-4730-88da-67b3008f9c0b"
+    },
+    {
+      "claim_id": "81d997e7-8144-4174-a2d7-487419bb3ac7",
+      "result_id": "3fca7c5a-7efb-4730-88da-67b3008f9c0b"
+    },
+    {
+      "claim_id": "57891ef2-8edf-4aaf-b0d9-6a0507114805",
+      "result_id": "6412d034-74ff-4d24-8f61-84a8dbf4b22f"
+    },
+    {
+      "claim_id": "6e167dd9-8cd5-44de-976c-e3d67fb37661",
+      "result_id": "6412d034-74ff-4d24-8f61-84a8dbf4b22f"
+    },
+    {
+      "claim_id": "a2fbbcb5-b987-4dcc-a415-17b2ba1f8c2a",
+      "result_id": "6412d034-74ff-4d24-8f61-84a8dbf4b22f"
+    },
+    {
+      "claim_id": "a6bedee8-6952-4d7d-83ab-097d5da1437a",
+      "result_id": "d9408cb1-6fce-43a5-8fce-dc639b7fe1b3"
+    },
+    {
+      "claim_id": "b91341a1-f703-4c8e-9788-ac43970b6133",
+      "result_id": "d9408cb1-6fce-43a5-8fce-dc639b7fe1b3"
+    },
+    {
+      "claim_id": "9bd98a9a-c920-4407-8e11-5924a351be18",
+      "result_id": "d9408cb1-6fce-43a5-8fce-dc639b7fe1b3"
+    },
+    {
+      "claim_id": "ac2925bb-6fbf-43f1-bfa7-a44dd1d36708",
+      "result_id": "d9408cb1-6fce-43a5-8fce-dc639b7fe1b3"
+    },
+    {
+      "claim_id": "5e13c418-a99a-401a-83ea-e315c8ddceec",
+      "result_id": "d9408cb1-6fce-43a5-8fce-dc639b7fe1b3"
+    },
+    {
+      "claim_id": "e91b3e0f-8e8f-4c3e-ba2d-7e13f912397b",
+      "result_id": "2fc85023-6dce-4655-9d68-75d4fd17bf24"
+    },
+    {
+      "claim_id": "80aa185b-1f77-45c3-93d0-1daaa4cb85cf",
+      "result_id": "2fc85023-6dce-4655-9d68-75d4fd17bf24"
+    },
+    {
+      "claim_id": "91e2f2f7-8733-48c7-903c-d090db0b3994",
+      "result_id": "2fc85023-6dce-4655-9d68-75d4fd17bf24"
+    },
+    {
+      "claim_id": "85c83910-322e-4652-ad27-b568ec543cb0",
+      "result_id": "2fc85023-6dce-4655-9d68-75d4fd17bf24"
+    },
+    {
+      "claim_id": "3863c5c2-475e-4ca1-a12f-63912fd3c1aa",
+      "result_id": "2fc85023-6dce-4655-9d68-75d4fd17bf24"
+    },
+    {
+      "claim_id": "9d9c8862-fb57-41cc-b891-9dea8e09daae",
+      "result_id": "0bf79587-4ff5-4aeb-a08d-8828bb7fcf70"
+    },
+    {
+      "claim_id": "c5867bd4-070a-400e-bf28-27a0cc51e042",
+      "result_id": "0bf79587-4ff5-4aeb-a08d-8828bb7fcf70"
+    },
+    {
+      "claim_id": "4d0cecbd-c3cf-4d58-ae48-82aec2ea0cb4",
+      "result_id": "0bf79587-4ff5-4aeb-a08d-8828bb7fcf70"
+    },
+    {
+      "claim_id": "212e958d-54d2-4028-bd75-07fe97edec85",
+      "result_id": "0bf79587-4ff5-4aeb-a08d-8828bb7fcf70"
+    },
+    {
+      "claim_id": "d62f5260-c79c-4d83-b65f-d610374b6e06",
+      "result_id": "0bf79587-4ff5-4aeb-a08d-8828bb7fcf70"
+    },
+    {
+      "claim_id": "e4fd057f-9bf5-4b13-89eb-0ff75436e732",
+      "result_id": "0bf79587-4ff5-4aeb-a08d-8828bb7fcf70"
+    },
+    {
+      "claim_id": "50ec1194-33b1-45ab-b490-0b2cd01e878b",
+      "result_id": "5372a97d-23ce-498f-bcc9-eb02ecb7ab9a"
+    },
+    {
+      "claim_id": "12436810-3d4a-4249-acb9-eeba25e25432",
+      "result_id": "5372a97d-23ce-498f-bcc9-eb02ecb7ab9a"
+    },
+    {
+      "claim_id": "83ee6317-4cea-43fc-822b-8c79c0293b2b",
+      "result_id": "5372a97d-23ce-498f-bcc9-eb02ecb7ab9a"
+    },
+    {
+      "claim_id": "60589dbb-bfde-4c96-8b27-3b102985d543",
+      "result_id": "5372a97d-23ce-498f-bcc9-eb02ecb7ab9a"
+    },
+    {
+      "claim_id": "dd7540b2-76b9-4d2c-9342-8c01c9b41134",
+      "result_id": "385c24ca-60fc-438c-8e34-62e68dd4325d"
+    },
+    {
+      "claim_id": "036b298e-0cf3-4c0a-ad8f-9c424b1caa52",
+      "result_id": "385c24ca-60fc-438c-8e34-62e68dd4325d"
+    },
+    {
+      "claim_id": "1d441a56-d68a-433a-adde-115831e375b0",
+      "result_id": "385c24ca-60fc-438c-8e34-62e68dd4325d"
+    },
+    {
+      "claim_id": "a1e6d996-f6ac-4f39-b368-2041b615f921",
+      "result_id": "9aa653cc-6255-4fc0-93a8-f5ea2a80c825"
+    },
+    {
+      "claim_id": "00b269da-86d9-4d50-8353-7310ded51c5c",
+      "result_id": "9aa653cc-6255-4fc0-93a8-f5ea2a80c825"
+    },
+    {
+      "claim_id": "68c95393-b27e-451c-91a0-4b0050e7cf52",
+      "result_id": "9aa653cc-6255-4fc0-93a8-f5ea2a80c825"
+    },
+    {
+      "claim_id": "26295629-caec-4a97-b469-3b634a3f7a6d",
+      "result_id": "9aa653cc-6255-4fc0-93a8-f5ea2a80c825"
+    },
+    {
+      "claim_id": "9979f7b1-31ee-4503-8c4c-89112bd4908f",
+      "result_id": "9aa653cc-6255-4fc0-93a8-f5ea2a80c825"
+    },
+    {
+      "claim_id": "d50d2d06-776f-45b7-931f-511a0ecf050f",
+      "result_id": "41979ef2-2bae-432e-97f4-0b6538e0cfae"
+    },
+    {
+      "claim_id": "b0170cbf-5043-4533-b6da-dfa34d52aa3f",
+      "result_id": "41979ef2-2bae-432e-97f4-0b6538e0cfae"
+    },
+    {
+      "claim_id": "88b39358-df99-4ba6-be96-870df083353d",
+      "result_id": "41979ef2-2bae-432e-97f4-0b6538e0cfae"
+    },
+    {
+      "claim_id": "13fb0b01-8e9d-406e-a809-e266acb1a9bf",
+      "result_id": "41979ef2-2bae-432e-97f4-0b6538e0cfae"
+    },
+    {
+      "claim_id": "18de75f0-587b-4599-8c0b-f2302caf1ee3",
+      "result_id": "41979ef2-2bae-432e-97f4-0b6538e0cfae"
+    },
+    {
+      "claim_id": "431bdcdf-e52b-4272-83db-7faf7bee0294",
+      "result_id": "0e882ad5-6141-40a1-8bce-a26277176a57"
+    },
+    {
+      "claim_id": "37616170-1575-4617-8241-60fbb997faa3",
+      "result_id": "0e882ad5-6141-40a1-8bce-a26277176a57"
+    },
+    {
+      "claim_id": "9f21edcd-57ad-49a6-9107-968a1043f08a",
+      "result_id": "0e882ad5-6141-40a1-8bce-a26277176a57"
+    },
+    {
+      "claim_id": "99534cb4-d297-4b47-9a32-a06742022e3a",
+      "result_id": "8a60f54e-f717-4c5d-a721-ed7f8457db71"
+    },
+    {
+      "claim_id": "8ede5919-f0f8-4a52-95e5-40f40e1d3623",
+      "result_id": "8a60f54e-f717-4c5d-a721-ed7f8457db71"
+    },
+    {
+      "claim_id": "c54a00e9-439d-414b-b8a4-6a35e9a349ca",
+      "result_id": "8a60f54e-f717-4c5d-a721-ed7f8457db71"
+    },
+    {
+      "claim_id": "02e0e60a-71b1-4115-8b8f-93d95b2eea1e",
+      "result_id": "8a60f54e-f717-4c5d-a721-ed7f8457db71"
+    },
+    {
+      "claim_id": "dada851a-a2dc-4e3f-bd45-cb26df91a602",
+      "result_id": "8a60f54e-f717-4c5d-a721-ed7f8457db71"
+    },
+    {
+      "claim_id": "f609a514-a2d0-4f10-9bfc-7898cbfc5a79",
+      "result_id": "3789b604-158b-4ce3-8eff-b817dac3346c"
+    },
+    {
+      "claim_id": "e3983995-ca24-4716-9740-bb515be7ac25",
+      "result_id": "5a240022-2ee6-475d-93d2-a2de62851709"
+    },
+    {
+      "claim_id": "f4300e61-1c6a-4370-a720-a995e381bc63",
+      "result_id": "f64a12fb-dab0-4af6-9fa1-0a48e13011e2"
+    },
+    {
+      "claim_id": "285aca21-f1d1-4474-acfc-8420e3177df9",
+      "result_id": "f64a12fb-dab0-4af6-9fa1-0a48e13011e2"
+    },
+    {
+      "claim_id": "bce3ab72-e401-4bea-921c-9da70aba775a",
+      "result_id": "f64a12fb-dab0-4af6-9fa1-0a48e13011e2"
+    },
+    {
+      "claim_id": "fb45716b-34f8-4a24-9ec4-55cdd73f4e4a",
+      "result_id": "8a861445-494a-4bdb-bfc1-18931a74f5b8"
+    },
+    {
+      "claim_id": "8a927734-36a6-4b91-a085-5e8f6b6fe5c2",
+      "result_id": "8a861445-494a-4bdb-bfc1-18931a74f5b8"
+    },
+    {
+      "claim_id": "2dab7e04-2add-4adc-ab2c-d142056f3957",
+      "result_id": "8a861445-494a-4bdb-bfc1-18931a74f5b8"
+    },
+    {
+      "claim_id": "148465d7-6739-4f12-85c7-61f67082d0d4",
+      "result_id": "77fc577d-f8c0-4a0c-a03c-06596360efb9"
+    },
+    {
+      "claim_id": "db77acf7-e3c6-4bcd-9d73-4e26b8b09be8",
+      "result_id": "e72746b8-66d8-4d08-ad8b-f1f9d3266d23"
+    },
+    {
+      "claim_id": "585d3bff-b144-4863-b4f3-d4a9cde802ba",
+      "result_id": "e72746b8-66d8-4d08-ad8b-f1f9d3266d23"
+    },
+    {
+      "claim_id": "92f4423b-ea9e-4b05-afc8-01c52926497f",
+      "result_id": "079c478f-5971-4384-ab10-3e551b5e0e4b"
+    },
+    {
+      "claim_id": "fa0eb5b1-ba46-42ad-acd1-ebc0a9314c33",
+      "result_id": "079c478f-5971-4384-ab10-3e551b5e0e4b"
+    },
+    {
+      "claim_id": "1f3da9ee-0343-41c5-bab9-18420336d481",
+      "result_id": "3f93b63a-af07-452d-9caf-5115063bd9ae"
+    },
+    {
+      "claim_id": "34d3875e-8a36-49ae-8ad9-caeab40f644e",
+      "result_id": "3f93b63a-af07-452d-9caf-5115063bd9ae"
+    },
+    {
+      "claim_id": "821a9a59-f76d-45f4-8838-693523a3d414",
+      "result_id": "b908e37a-0932-4d0a-84d6-a325ea6fb46d"
+    },
+    {
+      "claim_id": "fe9a1255-a44d-49a0-8e9e-e15ae7a5bdd0",
+      "result_id": "5ea634d8-732e-4a22-8d05-65c2d3aefd9a"
+    },
+    {
+      "claim_id": "76254b04-b4e7-4a21-9e23-fe3385274c15",
+      "result_id": "4f26be28-c984-4b6d-aa79-1413c2a52505"
+    },
+    {
+      "claim_id": "09450547-bc00-4514-9081-765e1b2e371f",
+      "result_id": "4f26be28-c984-4b6d-aa79-1413c2a52505"
+    },
+    {
+      "claim_id": "3b51ebb8-e401-453f-a0a4-4960e3a3c87f",
+      "result_id": "4f26be28-c984-4b6d-aa79-1413c2a52505"
+    },
+    {
+      "claim_id": "9f0888d1-2c6b-4339-bc99-3ab09feb0674",
+      "result_id": "4f26be28-c984-4b6d-aa79-1413c2a52505"
+    },
+    {
+      "claim_id": "2323e474-aa9c-444c-aba1-291204622884",
+      "result_id": "4f26be28-c984-4b6d-aa79-1413c2a52505"
+    },
+    {
+      "claim_id": "3b44895e-0672-411a-bc09-6b56d6a46cc3",
+      "result_id": "4f26be28-c984-4b6d-aa79-1413c2a52505"
+    },
+    {
+      "claim_id": "663d2f9d-3c35-4ce6-a171-343a756500a9",
+      "result_id": "4f26be28-c984-4b6d-aa79-1413c2a52505"
+    },
+    {
+      "claim_id": "10a1e9d9-768e-47ed-86a7-a4c83061dd50",
+      "result_id": "4f26be28-c984-4b6d-aa79-1413c2a52505"
+    },
+    {
+      "claim_id": "20c3707d-39ae-4a2e-8d7c-f6e0db485d5e",
+      "result_id": "105a48a3-2c96-4d83-bfb0-f7563d7cf73e"
+    }
+  ],
+  "comparisons": []
+}

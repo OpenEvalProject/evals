@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C115"
+    ],
+    "result": "The authors developed Fab-PLA, a modified proximity ligation assay with a detection range of 10-20 nm, which is more sensitive than 1-PLA (10-40 nm) and 2-PLA (10-80 nm) for detecting BCR conformational changes. Only Fab-PLA showed statistically significant differences in IgM:IgM proximity between resting and activated B cells, while 1-PLA and 2-PLA did not. The method was validated using pentameric and monomeric IgM on beads, where Fab-PLA specifically detected pentameric but not monomeric IgM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32, C75-C82, and C115 collectively establish the development and validation of Fab-PLA. The detection ranges are clearly defined, the method is validated with appropriate controls (beads with monomeric vs pentameric IgM), and statistical significance is demonstrated. The control experiments showing unchanged H:L chain proximity and consistent Fab binding upon activation strengthen the conclusion that Fab-PLA specifically detects BCR oligomer opening.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C83",
+      "C84"
+    ],
+    "result": "B cell activation is accompanied by the opening of tightly packed BCR oligomers. The IgM:IgM and IgD:IgD Fab-PLA signals are consistently lost upon B cell activation by antigen, pervanadate, or Latrunculin A in multiple cell types (TKO-MD, B1-8, human B cells). A mutant IgD-BCR defective in oligomer formation shows minimal Fab-PLA signal, providing direct evidence that Fab-PLA detects oligomeric BCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 and C83-C84 provide converging evidence for BCR oligomer opening upon activation. The use of multiple stimuli, multiple cell types (cell lines and primary cells from mouse and human), and the critical mutant control (C34) all support the conclusion. The consistency across different experimental conditions and the direct genetic evidence from the oligomerization-defective mutant provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C90",
+      "C91"
+    ],
+    "result": "Syk is necessary for BCR oligomer opening through an inside-out signaling mechanism. The Syk inhibitor R406 prevents BCR opening, while the Src-family kinase inhibitor PP2 only delays it. BCR/Syk interaction is induced within 1 minute of Lat-A treatment, and this interaction is blocked by R406 but only delayed by PP2. Genetic experiments with Lyn- and Syk-deficient B cells confirm these findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 and C90-C91 provide strong evidence through both pharmacological inhibition and genetic knockout approaches. The temporal dynamics are well-characterized, and the differential effects of PP2 vs R406 are consistent across IgM:IgM and Ig\u03b1:Syk PLA experiments. The genetic validation eliminates concerns about off-target effects of inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The Syk/BCR inside-out signaling process increases B cell sensitivity to low doses of antigen. Syk-sufficient cells require 10 ng/ml antigen to lose the IgM:IgM Fab-PLA signal, while Syk-inhibited cells require 10-50 times higher antigen doses (250-500 ng/ml).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 demonstrate a functional consequence of Syk-mediated BCR opening through a dose-response experiment. The 10-50 fold difference in antigen sensitivity is substantial and clearly supports the amplification model. However, the experiment appears to be performed only once (Figure 5G shows representative data), which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C58",
+      "C96"
+    ],
+    "result": "Syk is necessary and sufficient for BCR oligomer opening, and it is the binding of Syk to the receptor, not ITAM phosphorylation, that causes opening. S2 cells co-expressing IgM-BCR with GFP-Syk show reduced IgM:IgM Fab-PLA signal. Expression of the kinase domain alone (nLyn-Syk-KD) causes ITAM phosphorylation but not BCR opening, while co-expression with the tandem SH2 domains restores opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49, C58, and C96 provide elegant gain-of-function experiments that dissect the mechanism. The separation of kinase activity from SH2 domain binding clearly demonstrates that binding, not phosphorylation, drives BCR opening. The S2 cell system is appropriate for this analysis as it allows controlled expression of BCR components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The CD19:BCR interaction is Ig class-specific and remodeled upon B cell activation. CD19 is found in close proximity to activated IgM-BCR but not resting IgM-BCR, while the opposite pattern is observed for IgD-BCR. CD20 displays the same class-specific BCR interaction as CD19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 demonstrate a novel finding about differential co-receptor organization. The data are shown for multiple cell types (TKO-MD, human B cells, B1-8 B cells) and are consistent across CD19 and CD20. The opposite patterns for IgM vs IgD are striking and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C63",
+      "C64",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "IgM-BCR and IgD-BCR are localized in different membrane areas that are reorganized upon activation. On resting B cells, GM1 gangliosides (lipid raft markers) are in close proximity to IgD-BCR, while IgM-BCR gains access to these lipids only upon activation. The GPI-linked protein CD52 shows similar distribution. The CD19/CD20 module resides in a membrane compartment targeted by IgD-BCR on resting cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C63-C64, and C101-C104 provide evidence for differential membrane localization of IgM and IgD BCRs. The use of lipid raft markers (GM1, CD52) and co-receptors (CD19, CD20) provides converging evidence. The data are consistent across multiple markers and support the model of distinct membrane microdomains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C59",
+      "C60",
+      "C94",
+      "C95"
+    ],
+    "result": "B cell activation involves a two-phase process: an outside-in signal where limited antigen opens a few BCR dimers to form BCR/Syk seed complexes, followed by inside-out signaling where these complexes phosphorylate neighboring BCR oligomers, leading to more Syk recruitment and signal amplification. Receptor dissociation at the nanoscale and aggregation into microclusters occur at different size levels and time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C59-C60, and C94-C95 present an integrated model based on the experimental findings. While some aspects are speculative (C60, C94, C95 include speculation/inference), the model is well-supported by the data showing BCR opening, Syk recruitment, and the amplification effect. The model reconciles nanoscale dissociation with previously observed microcluster formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "BCR opening and co-receptor reorganization do not require co-expression of IgM and IgD on the cell surface. TKO-M and TKO-D cells expressing only one BCR class behave similarly to TKO-MD cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 address whether the observed phenomena require both BCR classes. The data from single-class expressing cells (Figure 7\u2014figure supplement 1) support that each BCR class can undergo the described changes independently.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Fab-PLA is a robust technique that allows studying nanoscale organization of unchanged proteins on primary cells without requiring overexpression. The method detects the same BCR alterations across B cell lines and normal B cells of mouse or human origin, using different stimulation protocols and Fab fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 describe the technical advantages and robustness of Fab-PLA. The consistency across multiple cell types, species, and stimulation conditions (shown in Figure 4) supports these claims about the method's robustness and broad applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background claims about BCR structure, signaling, and existing models of B cell activation. These include the composition of the BCR, ITAM phosphorylation by Lyn and Syk, the role of the cytoskeleton, the existence of IgM and IgD BCRs on mature B cells, and previous models (CLM, CIOM, DAM) of BCR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 are background information supported by citations to previous work. These establish the context for the current study and are appropriately referenced. They are not new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33",
+      "C61",
+      "C62",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C92",
+      "C93",
+      "C97",
+      "C98",
+      "C102",
+      "C103",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Additional background claims and methodological details from prior work, including structural information about pentameric IgM, CD19 function, inside-out signaling in other receptors, cell line descriptions, drug mechanisms, Syk structure, and previous imaging studies of BCR organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C61-C62, C66-C68, C70, C72-C74, C85-C87, C89, C92-C93, C97-C98, C102-C103, and C107-C114 provide additional context and are supported by appropriate citations. These are not new findings but establish the scientific foundation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C69",
+      "C116",
+      "C117"
+    ],
+    "result": "Speculative claims about potential mechanisms and future directions, including that IgD-BCR protein islands likely contain inhibitory factors, that Syk binding may distort Ig\u03b1/Ig\u03b2 tails to destabilize BCR oligomers (by analogy to integrins), and that BCR Fab arm extension may explain why only Fab-PLA detects conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65, C69, C116, and C117 are explicitly speculative (marked as SPECULATION in evidence_type). While these are reasonable hypotheses based on the data and analogies to other systems, they are not directly tested in this manuscript and represent future directions rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Only a few antigen/BCR/Syk complexes can activate all antigen receptors on the B cell surface through inside-out Syk/BCR signaling, leading to signal amplification and full B cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is a conclusion inferred from the data showing Syk-mediated amplification and increased antigen sensitivity. While not directly demonstrated (e.g., by counting the number of initial BCR/Syk complexes required), it is a reasonable inference from the dose-response experiments and the demonstrated amplification mechanism.",
+    "result_type": "MAJOR"
+  }
+]

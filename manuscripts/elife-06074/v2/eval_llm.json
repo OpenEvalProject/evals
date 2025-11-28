@@ -1,0 +1,373 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C31",
+      "C32",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C153"
+    ],
+    "result": "The Src-like module of Btk adopts a compact, autoinhibited conformation resembling inactive c-Src and c-Abl, with the SH3 domain binding the SH2-kinase linker and stabilizing an inactive kinase conformation through conserved structural features and an electrostatic switch mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystal structure of the Btk Src-like module (C24, C31, C32, C39, C40, C41) demonstrates the assembled inactive conformation with detailed structural comparisons to c-Src and c-Abl. The structural features including the SH3/linker interaction, activation loop conformation, and electrostatic network are well-documented (C32, C39, C41, C42, C43, C44). This is a core structural finding supported by crystallographic data and comparative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C154"
+    ],
+    "result": "The PH-TH module stabilizes the inactive conformation of Btk by interacting with the kinase N lobe through a distinct interface that differs from Akt1, with Tyr 134 packing into a groove between Trp 395 and helix \u03b1C to hinder kinase activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystal structure of the PH-TH-kinase construct (C45, C48, C49) clearly demonstrates the interface between the PH-TH module and kinase N lobe. The structural comparison to Akt1 (C46, C47) and the specific molecular interactions (C49, C50) are well-documented. Mutagenesis studies (C62) further validate the functional importance of this interface. This is a major finding supported by both structural and biochemical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Molecular dynamics simulations of Btk constructs show that the SH3 and kinase domains remain relatively stable while the SH2 domain shifts closer to the C lobe, and the PH-TH module wobbles about an anchor point at helix \u03b12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MD simulation data (C51, C52, C53, C54) provides quantitative measurements of domain movements and stability. The simulations are appropriately described with RMSD values and rotation angles. However, the limitations of MD timescales are acknowledged by the authors, and the results are used qualitatively to support the structural model rather than as definitive proof of dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The Btk kinase domain has low intrinsic activity, but inclusion of the SH2 domain increases autophosphorylation substantially, while the complete Src-like module shows lower activity due to autoinhibition. Mutations disrupting the SH3/linker or PH-TH/kinase interfaces increase autoactivation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biochemical assays (C55-C63) systematically demonstrate the regulatory roles of different domains through construct comparisons and mutagenesis. The data are internally consistent and supported by quantitative measurements. The comparison to c-Abl and c-Src provides appropriate context. The mutagenesis results validate the structural inferences about autoinhibitory interfaces.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C23"
+    ],
+    "result": "PIP3-containing membrane vesicles rapidly activate Btk through membrane recruitment, with activation depending on PIP3 concentration and resulting in local Btk concentrations in the millimolar range on vesicle surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biochemical activation assays with lipid vesicles (C64, C65, C66) demonstrate PIP3-dependent activation with appropriate controls. The calculation of local concentration (C67) is based on reasonable assumptions detailed in methods. The finding that IP4 alone has no effect (C68) supports the membrane recruitment model (C23). This validates the established activation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C27"
+    ],
+    "result": "IP6, a soluble signaling molecule, strongly activates Btk at physiologically relevant concentrations (EC50 ~20 \u03bcM), promoting rapid autophosphorylation within 5 minutes without directly affecting the catalytic machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biochemical activation assays (C69, C70, C71, C72) demonstrate robust IP6-dependent activation with dose-response data. The EC50 value is consistent with physiological IP6 concentrations (C71). The observation that fully activated Btk has the same catalytic rate with or without IP6 (C73) supports the conclusion that IP6 affects autophosphorylation rate rather than catalytic activity. This is a major unexpected finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "IP6 activation of Btk requires only the PH-TH module and a minimal 13-residue linker to the kinase domain, with no requirement for SH3 or SH2 domains, and IP6 does not directly activate the isolated kinase domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic domain deletion analysis (C74, C75, C76) clearly identifies the minimal requirements for IP6 activation. The observation that IP6 does not activate the isolated kinase domain (C78) rules out direct allosteric activation. The lower activity of the PH-TH-kinase construct is appropriately explained by the absence of the SH2 domain (C77). This domain mapping is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "IP6 binds to a peripheral site on the PH-TH module distinct from the canonical PIP3/IP4 binding site, with the peripheral site being critical for Btk activation as demonstrated by ITC and mutagenesis studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ITC data (C83, C84, C86, C87) quantitatively demonstrate IP6 binding to the PH-TH module with appropriate controls. The mutagenesis of the canonical site (C85, C86, C90) shows that IP4 binding is abolished while IP6 activation is retained, supporting the existence of a distinct binding site. The correlation between residual IP6 binding affinity and the EC50 for activation (C88, C89) is internally consistent. This is a key finding supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The crystal structure of IP6-bound PH-TH module reveals six IP6 molecules: four at canonical sites and two at a novel peripheral site formed by the \u03b23-\u03b24 hairpin, with IP6 at the peripheral site interacting primarily through phosphates at positions 1, 2, 3, and 4 of the myo-inositol ring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystal structure (C92-C107, C110, C111) provides detailed molecular information about IP6 binding sites with clearly resolved electron density (C94, C110). The structural description of both canonical and peripheral sites is comprehensive (C95-C105). The comparison to other PH domains (C100) establishes the novelty of the peripheral site. The structural basis for IP6 specificity (C111, C112) is well-reasoned. This is a major structural discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Mutations at the peripheral IP6 binding site (R49S/K52S) abolish IP6-mediated activation, and the phosphate at position 2 of the inositol ring is critical for activation, suggesting IP6 and inositol pyrophosphates may be the only cellular effectors for this site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutagenesis of the peripheral site (C108) demonstrates its functional importance. The ITC data with double mutants (C109) confirms that both binding sites are accounted for. The structure-activity relationship with IP5 isomers (C113, C114) supports the importance of the 2-phosphate. The inference about cellular specificity (C115, C116) is reasonable given the known enzymology of inositol phosphate metabolism, though it remains speculative about IP7/IP8.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "IP6 activates Btk by promoting transient dimerization through the Saraste dimer interface, as demonstrated by the conservation of this interface across PH-TH crystal structures and mutagenesis showing that disruption of the interface abolishes IP6 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural observation of the Saraste dimer in multiple crystal structures (C119, C120, C121, C122) establishes its consistency. The mutagenesis of the dimer interface (C123, C124, C125) provides strong functional evidence that this interface is required for IP6 activation. The failure to detect stable dimers in solution (C118) is acknowledged and addressed through the transient dimerization model. This is a major mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Fusion of the Btk PH-TH module to the c-Abl kinase domain confers IP6-dependent activation, and this activation is abolished by mutations in the Saraste dimer interface, demonstrating that IP6 promotes transphosphorylation through PH-TH dimerization independent of the specific kinase domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PH-TH-Abl fusion experiment (C132, C133) is a clever test of the dimerization hypothesis. The rapid activation of the fusion protein by IP6 and the loss of activation with dimer interface mutations (C133) strongly support the proposed mechanism. The sequence comparison (C134) and inference about kinase domain properties (C135) appropriately support the conclusion that dimerization is the key mechanism (C136). This is strong evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The IP6-induced PH-TH dimerization is very weak (Kd > 100 \u03bcM), but can still drive activation through an autocatalytic mechanism. Molecular dynamics simulations suggest the monomeric PH-TH module adopts a closed conformation with the \u03b23-\u03b24 hairpin folding inward to bury the dimer interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biophysical characterization (C137, C139, C140) acknowledges the weak dimerization. The kinetic modeling (C138) provides a reasonable explanation for how weak dimerization can drive activation. The MD simulations (C141-C145) support the hypothesis that the dimer interface is closed in the monomer, though MD limitations are acknowledged. The mutant simulations (C145) provide additional support. This mechanistic model is well-supported though some aspects remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Two barriers impede PH-TH dimerization: the closed dimer interface in the monomer and electrostatic repulsion between positively charged PH domains. IP6 binding may stabilize the open form and alleviate electrostatic repulsion, as supported by increased activation of charge-reversal mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The electrostatic analysis (C148, C149) and the charge-reversal mutagenesis (C150) provide support for electrostatic repulsion as a barrier. However, the proposed mechanism by which IP6 stabilizes the open form (C147, C152) is largely speculative. The increased activity of the K49E/R52E mutant (C150) could have alternative explanations. While the overall model is reasonable, the specific molecular mechanism remains uncertain and requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Sequence comparisons suggest IP6 activation is unique to Btk among Tec kinases, as residues critical for the peripheral IP6 binding site, PH-TH/kinase interface, and Saraste dimer interface are not conserved in Itk, though Itk likely adopts a similar autoinhibited Src-like conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence alignment (C161, C164, C165) clearly shows conservation of the Src-like autoinhibitory elements but not the IP6-related features. The inference about Itk adopting a similar autoinhibited conformation (C162) is reasonable based on sequence conservation. The comparison to IP4 regulation of Itk (C166) provides context. The conclusion about IP6 specificity for Btk (C6, C167) is well-supported by the sequence analysis, though functional testing in Itk would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C30",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "IP6-triggered PH-TH dimerization may provide a membrane-independent activation mechanism or feedback stimulation of membrane-bound Btk, potentially creating a positive feedback loop since IP6 synthesis requires IP3 produced by Btk activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C30, C156, C157, C158, C159, C160) are largely speculative about the physiological role of IP6 activation. While the biochemical mechanism is well-established, the cellular context and functional significance remain uncertain. The positive feedback hypothesis (C156) is reasonable but unproven. The compatibility of the Saraste dimer with membrane binding (C157) is structural speculation. These ideas require cellular validation and are appropriately presented as possibilities rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C168",
+      "C169"
+    ],
+    "result": "Background information on Btk function, domain architecture, regulation by tyrosine phosphorylation, and the broader context of Tec kinase regulation establishes the foundation for the study and highlights the importance of investigating soluble second messenger regulation of tyrosine kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C7-C22, C168, C169) provide established background knowledge supported by appropriate citations. They accurately describe the known biology of Btk and Tec kinases. The conclusion about the importance of studying soluble effectors (C169) is a reasonable inference from the findings. This background material is well-supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The SH2 domain of Btk forms a domain-swapped dimer in crystals at the same location as seen in Grb2, suggesting marginal stability, though there is no evidence this represents a functional state of intact Btk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystallographic observation of domain swapping (C34, C35, C36, C37) is clearly documented and compared to Grb2. The inference about marginal stability (C34) is reasonable. The conclusion that this is not a functional state (C38) is appropriately cautious given the lack of supporting evidence. This is an interesting structural observation but likely a crystallographic artifact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C126",
+      "C127"
+    ],
+    "result": "The mechanism of IP6 activation of Btk differs fundamentally from IP6 activation of CK2 and IP4 activation of HDACs, where inositol phosphates serve as intermolecular glue, whereas in Btk, IP6 binds outside the dimer interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to CK2 (C79) and HDACs (C126) provides appropriate context from the literature. The distinction in mechanism (C127) is clearly supported by the structural data showing IP6 binding outside the Saraste dimer interface. This comparison helps clarify the unique mechanism of IP6 action in Btk.",
+    "result_type": "MINOR"
+  }
+]

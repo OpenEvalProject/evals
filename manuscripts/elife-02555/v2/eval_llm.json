@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C54",
+      "C55"
+    ],
+    "result": "Ptch1 contains two PPXY motifs that direct it to Caveolin-1 positive lipid rafts for endocytic entry. ShhN treatment increases colocalization of Ptch1-GFP with Cav-1 from 0.37\u00b10.04 to 0.68\u00b10.04, while PPXY deletion mutants accumulate in lipid rafts even without ShhN. Ptch1 does not preferentially use clathrin-coated pits for endocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C40-C48, C54-C55 provide converging evidence from confocal imaging (Figure 1A,B), sucrose gradient sedimentation (Figure 1E), and pharmacological inhibition showing that Ptch1 enters the endocytic pathway via Cav-1 positive lipid rafts rather than clathrin-coated pits. The quantitative colocalization data and mutant phenotypes strongly support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Ptch1 is an unstable protein that turns over via both proteasomes (predominantly) and lysosomes (partially). PPXY motif deletion stabilizes Ptch1, with mutants showing resistance to lysosomal but not proteasomal inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by Western blot data in Figure 1F showing differential accumulation of wildtype vs PPXY mutant Ptch1 with MG132 (proteasome inhibitor) and Chlq (lysosomal inhibitor). The data clearly demonstrate that PPXY motifs regulate lysosomal turnover of Ptch1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Ptch1 colocalizes with late endosome marker Rab7 but not early endosome marker Rab5, and reaches lysosomes (Lamp1-positive compartments) only when lysosomal proteolysis is blocked. ShhN treatment increases Ptch1-Rab7 colocalization from 0.29\u00b10.03 to 0.51\u00b10.02. The PPXY deletion mutant fails to enter late endosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64 are supported by confocal imaging data in Figures 2A-C and supplements showing Ptch1 trafficking through late endosomes (Rab7+) to lysosomes (Lamp1+), bypassing early endosomes (Rab5-). The \u03942PY mutant's inability to colocalize with these markers confirms PPXY motifs are required for progression beyond lipid rafts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Ptch1 endocytosis occurs normally in Kif3a\u2212/\u2212 MEFs that lack primary cilia, indicating that Ptch1 endocytosis is independent of or downstream from ciliary trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by data in Figure 2D,E showing that Ptch1-GFP proceeds to late endosomes/lysosomes in response to ShhN even in cells lacking cilia. This demonstrates that ciliary export is not a prerequisite for Ptch1 endocytosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "PPXY motif mutants accumulate in primary cilia and are resistant to ShhN-induced ciliary export. This accumulation is a consequence of impaired endocytosis rather than a specific ciliary export defect, as blocking endocytosis with leupeptin produces similar effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by confocal imaging data in Figure 3A,B and Figure 3\u2014figure supplement 1 showing ciliary accumulation of PPXY mutants and reduced ShhN-induced export. The inference that this reflects endocytic defects rather than ciliary export defects is supported by the leupeptin control experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Re-introducing wildtype Ptch1-GFP into Ptch1\u2212/\u2212 MEFs clears constitutive Smo from cilia, and ShhN treatment allows Smo to return within 4 hours at a rate comparable to Ptch1 export. The \u03942PY mutant allows substantially less Smo import and is itself resistant to ShhN-induced export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by immunofluorescence data in Figure 3C-E showing reciprocal trafficking of Ptch1 and Smo in primary cilia. The temporal measurements demonstrate coordinated Ptch1 exit and Smo entry, while the \u03942PY mutant phenotype confirms the importance of PPXY-mediated endocytosis for this process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The \u03942PY mutant fails to confer ShhN inducibility to the 8xGliBS-luc reporter in Ptch1\u2212/\u2212 MEFs, but this blockade can be bypassed by Sufu knockdown, indicating a pathway-specific defect upstream of Sufu. PPXY mutants retain intrinsic inhibitory activity comparable to wildtype Ptch1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 are supported by luciferase reporter assays in Figure 4A-C. The Sufu rescue experiment (Figure 4B) demonstrates pathway specificity, while the cyclopamine control (Figure 4C) confirms that PPXY mutants retain intrinsic Smo-inhibitory function but cannot respond to ligand.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The \u03942PY mutant shows robust non-cell autonomous inhibition of Shh signaling at limiting ligand concentrations (1:64 dilution) but this effect is nullified at high concentrations (1:16 dilution), indicating that PPXY-mediated endocytosis regulates both cell autonomous and non-cell autonomous Ptch1 functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by the mixing experiment data in Figure 4D showing dose-dependent effects of \u03942PY on neighboring cells. This demonstrates that Ptch1 endocytosis affects ligand sequestration (non-cell autonomous function) in addition to direct pathway inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Among HECT-domain E3 ligases tested, only Smurf1 and Smurf2 promote Ptch1 degradation when co-expressed in HEK293 cells. Ligase-deficient Smurf1CA and Smurf2CG mutants fail to affect Ptch1 stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by Western blot screening data in Figure 5A,B showing specific effects of Smurf1/2 but not other HECT ligases (Nedd4, Nedd4l, Wwp1, Wwp2, Huwe1, Herc family, Hecw1/2) on Ptch1 levels. The ligase-dead mutant controls confirm enzymatic activity is required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "siRNA knockdown of Smurf1, Smurf2, or both augments ciliary localization of Ptch1-GFP in NIH3T3 cells both with and without ShhN treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by confocal imaging data in Figure 5C,D and Figure 5\u2014figure supplement 1 showing increased ciliary Ptch1-GFP after Smurf knockdown. This phenocopies the PPXY deletion mutants, supporting the Smurf-PPXY functional connection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Smurf1 and Smurf2 are induced by Shh and show compensatory upregulation when one is deleted. Simultaneous silencing of both Smurfs in wildtype MEFs completely abolishes Shh induction of Gli1, while single knockouts retain considerable responsiveness. Ad-cre ablation of Smurf2fl in Smurf1\u2212/\u2212 MEFs severely dampens Gli1 response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C98-C102 are supported by RT-PCR and RT-qPCR data in Figure 5E-I showing Shh induction of Smurfs and requirement for both Smurfs for Gli1 activation. The genetic redundancy and compensatory upregulation are clearly demonstrated, as is the severe phenotype when both are eliminated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Loss of both Smurfs impairs Shh-induced ciliary import of Smo and Gli3. The defect in GliBS-luc induction can be rescued by reintroducing wildtype Smurf1/2 but not ligase-dead mutants, or by Sufu knockdown, confirming pathway specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 are supported by immunofluorescence data in Figure 6A-C and rescue experiments in Figure 6D-E. The requirement for ligase activity and the Sufu bypass demonstrate that Smurfs function specifically in the Shh pathway upstream of Sufu.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C110",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Ptch1 and Smurfs physically interact and colocalize in Cav-1 positive lipid rafts. ShhN treatment causes Smurf2 to redistribute from nucleus to cytoplasm and enhances Ptch1-Smurf FRET. The \u03942PY mutant fails to interact with Smurfs by FRET, co-sedimentation, and co-immunoprecipitation, while single PY deletions retain reduced binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C4, C110, C113-C123 are supported by multiple complementary approaches in Figure 7: confocal imaging (7A), subcellular redistribution (7B), FRET analysis (7C-E), sucrose gradient (1E), and co-IP (7F). The convergent evidence from multiple techniques strongly supports direct Ptch1-Smurf interaction in lipid rafts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Removal of Smurf2fl alleles in Smurf1\u2212/\u2212 MEFs stabilizes Ptch1-FLAG against ShhN-induced degradation, while \u03942PY stability is unaffected by ShhN or Smurf loss. The loop2 mutant that cannot bind Shh loses responsiveness to ShhN but is stabilized in Smurf-null cells. Ptch1 turnover occurs normally in Smo\u2212/\u2212 MEFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C129 are supported by cyclohexamide chase experiments in Figure 8A-H showing Smurf-dependent, Shh-induced Ptch1 turnover that requires ligand binding but not Smo. The genetic controls (Smurf-null, Smo-null, loop2 mutant) provide strong evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Ptch1-FLAG is readily ubiquitinated in Smurf1\u2212/\u2212;Smurf2fl/fl MEFs, but \u03942PY shows diminished ubiquitination. Neither form is ubiquitinated after Smurf2fl removal. In vitro reconstitution shows His6-Smurf2 but not Smurf2CG enhances Ptch1 ubiquitination. Poly-ubiquitin chains are likely both K48 and K63 linkage. ShhN enhances Ptch1 ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 are supported by ubiquitination assays in Figure 9A-D including in vivo (9A), in vitro reconstitution (9B), linkage-specific ubiquitin mutants (9C), and ShhN induction (9D). The data demonstrate direct Smurf-mediated ubiquitination of Ptch1 dependent on PPXY motifs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C145",
+      "C146"
+    ],
+    "result": "Smurf-mediated Ptch1 endocytosis is essential for Shh pathway activation and cerebellar development. Removal of both Smurfs reduces NeuN-positive granule cells in P7 cerebellar slices and blocks GCP proliferation in response to ShhN but not IGF1, demonstrating pathway specificity. This establishes a critical role for Smurfs in Shh-dependent cerebellar organogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C140-C146 are supported by ex vivo cerebellar slice culture (Figure 10A) and in vitro GCP proliferation assays (Figure 10B,C). The IGF1 control demonstrates Shh pathway specificity. The physiological relevance of the Smurf-Ptch1 mechanism is clearly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Background knowledge claims about Shh signaling, pathway components, endocytosis mechanisms, and prior literature on Ptch1/Smo trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C39 represent established knowledge from the literature, properly cited and providing necessary context for the study. These are not novel findings but appropriate background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The authors propose a model where Shh-induced Ptch1 production and turnover create a negative feedback loop that transforms graded Shh signals into stepwise output responses. Without endocytosis, Ptch1 accumulates in cilia, hampering Smo function and restricting signaling amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C147-C151 represent the authors' interpretive model synthesizing their findings. While speculative in parts (C148), the model is well-supported by the experimental data showing coordinated regulation of Ptch1 synthesis, localization, and degradation. The inference about ciliary accumulation (C149) is directly supported by Figures 1-3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Discussion of Ptch1 structure, mechanism of Smo inhibition, comparison to Drosophila studies, and speculation about therapeutic implications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C168 mix established knowledge (C152-C153, C155, C157, C160-C164, C166), inferences from the current data (C154, C159, C165, C167), and speculation (C156, C168). The comparison to Drosophila DSmurf (C163-C164) highlights important mechanistic differences. The therapeutic speculation (C168) is premature without additional validation.",
+    "result_type": "MINOR"
+  }
+]

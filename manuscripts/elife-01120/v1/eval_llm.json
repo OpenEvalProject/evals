@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C18",
+      "C19",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The authors developed a cheminformatics pipeline using receptor-optimized molecular descriptors to predict ligands for Drosophila odorant receptors. The method uses Sequential-Forward-Selection to identify unique optimized descriptor subsets for each receptor from 3424 combined Dragon and Cerius2 descriptors, then screens >240,000 compounds to identify top 500 predicted ligands per receptor. Optimized descriptor sets showed superior performance compared to non-optimized methods (Dragon, Cerius2, MCS, AP), with preference for 3D and 2D descriptors over 1D and 0D descriptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C55 collectively describe a well-documented computational methodology with clear performance comparisons. The optimization approach (C38, C41-C44) shows measurable improvements over baseline methods (C34-C36), supported by Figure 1B. The preference for 3D/2D descriptors (C42-C43) is data-driven from Table 1. The screening scale (C52-C55) is explicitly stated and the chemical libraries are well-defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Computational validation using five independent trials of fivefold cross-validation followed by ROC analysis yielded an AUC of 0.815, demonstrating the predictive ability of the Or-optimized descriptor method for 12 receptors with sufficient training data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 describe a rigorous computational validation using established methods (ROC analysis, cross-validation). The AUC value of 0.815 is reported with reference to Figure 1C. The validation was appropriately limited to 12 receptors with adequate training data (>1 very strong activator and >5 strong activators), showing methodological rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Hierarchical clustering analysis using receptor-specific optimized descriptor sets shows that activating odorants cluster tightly together for each receptor and share sub-structures and pharmacophore features. The method successfully clusters even weak activators for receptors with limited training data (Or2a, Or23a, Or43a, Or85f), though some receptors (Or35a, Or98a) show incomplete clustering of highly activating compounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 report clustering analysis results supported by Figures 1D and Figure 1\u2014figure supplement 2. The observation of incomplete clustering for Or35a and Or98a (C49) is appropriately acknowledged with speculative explanations. The ability to cluster weak activators (C50-C51) demonstrates robustness of the method even with limited training data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C20",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Experimental validation using single-unit electrophysiology on 141 predicted receptor-odor interactions across 9 receptors achieved ~71% success rate in identifying ligands (activators or inhibitors). The method identified new activators for every receptor tested and inhibitors for several receptors (~13% of tested compounds). Success rates varied by receptor, with >85% success for Or7a, Or22a, Or59b, Or85a, Or85b, and Or98a, but lower performance for aromatic-detecting receptors Or10a and Or49b due to limited aromatic compounds in the training set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C69 report comprehensive electrophysiological validation with clear success metrics supported by Table 2 and Figure 2A. The 71% overall success rate is well-documented across 141 interactions. The explanation for poor performance of Or10a and Or49b (C67-C68) based on training set composition (13/109 aromatic compounds) is logical and data-driven. Three interactions were independently validated by previous studies (C64), providing external confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Specificity testing of 504 non-target receptor-odor interactions showed only 10% evoked responses >50 spikes/s and 3.7% >100 spikes/s, demonstrating high specificity. Activity strongly correlates with predicted odor ranking, with top 500 hits showing far higher likelihood of activation and mean activity than distantly ranked odors, with drastic drop-off beyond rank 1000.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C70-C75 report rigorous specificity testing supported by Figure 3A-B. The low false positive rate (10% at >50 spikes/s threshold) demonstrates specificity. The correlation between ranking and activity (C72-C75) provides strong validation that the distance metric is meaningful. The large number of non-target interactions tested (504) provides statistical power for the specificity assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The mean vapor pressure of activating odors (11.84 Torr) is 7.5 times higher than inactive odors (1.58 Torr), suggesting some inactive predictions may result from inadequate volatilization and delivery to ORNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C60 reports a quantitative observation, but C61's interpretation is speculative. While the vapor pressure difference is substantial and could explain some false negatives, no direct experimental validation (e.g., testing at higher concentrations or with different delivery methods) was performed to confirm this hypothesis. This represents a plausible but unvalidated explanation for prediction failures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Inhibitors were identified by structural similarity to known activators, suggesting they may bind to similar receptor sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 is an inference about mechanism without direct experimental validation. While the observation that inhibitors are structurally similar to activators is data-supported (C62), the conclusion about binding sites is speculative. No binding studies, mutagenesis, or competition assays were performed to validate this mechanism. The claim is plausible but requires additional experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Hierarchical cluster analysis comparing descriptor-based, activity-based, cross-prediction, and phylogenetic trees shows maximum overlap (11/24 Ors) between descriptor and activity trees, with only two subgroups conserved across all three non-phylogenetic trees. The phylogenetic tree shows fewer conserved relationships, consistent with previous observations that conserved amino acid residues do not strongly correlate with ligand specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 report systematic comparison of receptor relationships using different metrics, supported by Figure 4A. The observation that descriptor-based clustering best captures both known and predicted activity relationships (C78) is data-driven. The phylogenetic analysis (C80-C81) is consistent with cited previous work (Hallem et al., 2004), providing external validation. However, C79 is somewhat speculative about expanding beyond training data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Analysis of predicted ligand distributions shows substantial variation across receptors, with plant volatiles constituting a large portion of predicted ligands. Receptors are not specialized for odors from a single source, and predictions support that the olfactory system can detect thousands of volatile chemicals, many never encountered in the organism's environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 report analysis of prediction patterns supported by Figures 4B and 5A. The source diversity analysis (C84-C85) is data-driven from the natural compound library composition. Claim C83 appropriately contextualizes predictions within previous observations, though it extends beyond direct experimental validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C108",
+      "C114"
+    ],
+    "result": "Analysis of across-receptor activation patterns reveals that only 25% of natural compounds in top 500 predictions activate multiple receptors, with further reduction for Pubchem library compounds. Cross-activation by experimentally validated ligands is lower than previously reported for comparable ligands, suggesting many natural odors may be detected by few receptors, particularly at low concentrations, which may enhance olfactory system specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89, C108, and C114 report across-receptor activation analysis supported by Figure 5B. The comparison with previous data (C88, citing Hallem and Carlson 2006) provides validation. However, the interpretation about low-concentration detection (C89, C108) and enhanced specificity (C114) extends beyond direct experimental evidence, as concentration-dependent responses were not systematically tested. The claims are data-supported but interpretations are somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study screened >240,000 chemicals and predicted >10,000 new ligands, representing a substantial expansion of the peripheral olfactory code for Drosophila and providing a system-level view of odor detection. Strong correlation exists between predicted ligand ranks and electrophysiological activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 summarize the scale and significance of the work, supported by Figure 6A and the experimental validation data. The screening scale (C91) is well-documented. The correlation between ranking and activity (C90) is supported by Figure 3B. Claims C92-C93 about substantial expansion and system-level view are reasonable interpretations given the ~40-fold increase in tested chemical space compared to previous decade of work (C16).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Attempts to identify molecular descriptors differentiating agonists from inverse agonists were unsuccessful, possibly due to insufficient inverse agonists in training data or because inverse agonists may act via the same binding sites as agonists and share structural features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 reports a negative result honestly. Claims C95-C96 provide speculative explanations for this limitation. While the explanations are plausible, they remain untested hypotheses. The acknowledgment of this limitation is appropriate and demonstrates scientific rigor in reporting both successes and failures of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Previous computational studies on Drosophila olfaction achieved ~25% success rate with 47 odorants and 21 tested compounds (Schmuker et al., 2007), and QSAR modeling identified potential odor-binding regions 15 angstroms deep and 6 angstroms wide (Guo and Kim, 2010). These studies collectively suggest computational approaches have great utility for studying sensory receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 accurately cite and contextualize previous work. The comparison with Schmuker et al. (2007) showing ~25% vs current ~71% success rate demonstrates clear improvement. The citations appear accurate and the interpretation (C102) about utility of computational approaches is reasonable given the collective evidence. This provides appropriate context for the current work's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The approach is conservative, designed to identify structurally similar ligands, which may limit novel chemotype identification. Compounds sharing similar descriptor values have structural similarity in selected molecular regions but may differ elsewhere. Future improvements could include machine learning approaches (SVMs) or sequential floating search techniques. The conservative nature and potential for additional unexplored binding sites may explain disparities with combinatorial coding models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C111 provide honest assessment of methodological limitations and future directions. The acknowledgment that the method is conservative (C103) and may miss novel chemotypes (C104) is appropriate. The suggestions for improvement (C106-C107) are reasonable. The speculative explanations for observed patterns (C109-C111) are clearly marked as possibilities rather than conclusions. This demonstrates good scientific practice in discussing limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "15-20% of odors are predicted to activate several receptors (up to 50%) simultaneously, which may aid the olfactory system in discriminating fine concentration changes by having receptors tuned to different concentration ranges, as demonstrated for Or42a and Or42b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 report prediction results with functional interpretation. The 15-20% cross-activation rate is data-supported. The interpretation about concentration discrimination (C116) is reasonable and supported by citation to Kreher et al. (2008) showing Or42a/Or42b example. However, this functional interpretation extends beyond direct experimental validation in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The cheminformatics pipeline can potentially be applied to other insects (mosquitoes) and vertebrates (mice, humans) whose receptors have been decoded, and could assist in rational prioritization for discovering insect repellents and attractants for disease vectors and crop pests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C119 are speculative about future applications without experimental validation in other species. While the citations (Carey et al., 2010; Saito et al., 2009) establish that receptor data exists for these organisms, no actual application or validation of the method in these systems is presented. The potential utility is plausible but remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C37",
+      "C40",
+      "C112",
+      "C113"
+    ],
+    "result": "Background claims establish that olfactory coding depends on receptor-odor interactions and signaling modes, that organisms have evolved large receptor families, and that current approaches face major limitations in systematically testing chemical space. The similarity property principle from pharmaceutical applications was adapted for olfactory receptors despite challenges from smaller odorant size and detection at low volatile concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C16, C22-C28, C37, C40, C112-C113 provide background context well-supported by appropriate citations. These establish the scientific foundation and rationale for the study. The citations appear accurate and the characterization of field limitations (C11-C16) provides clear motivation. The challenges specific to odorant analysis (C24-C28) are well-documented with examples and citations.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2379 @@
+{
+  "submission": {
+    "id": "acf4fbd0-5bd2-44ce-ad52-f78970256909",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:13:32.111835Z",
+    "updated_at": "2025-11-28T20:13:32.111835Z"
+  },
+  "content": [
+    {
+      "id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "submission_id": "acf4fbd0-5bd2-44ce-ad52-f78970256909",
+      "content_type": "manuscript",
+      "content_text": "# Atomic model of the F420-reducing [NiFe] hydrogenase by electron cryo-microscopy using a direct electron detector\n\n## Authors\n\n- Matteo Allegretti<sup>1</sup>\n- Deryck J Mills<sup>1</sup>\n- Greg McMullan<sup>2</sup>\n- Werner K\u00fchlbrandt<sup>1</sup>\n- Janet Vonck<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Structural Biology Max Planck Institute of Biophysics Frankfurt Germany\n2. Medical Research Council Laboratory of Molecular Biology Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe introduction of direct electron detectors with higher detective quantum efficiency and fast read-out marks the beginning of a new era in electron cryo-microscopy. Using the FEI Falcon II direct electron detector in video mode, we have reconstructed a map at 3.36 \u00c5 resolution of the 1.2 MDa F420-reducing hydrogenase (Frh) from methanogenic archaea from only 320,000 asymmetric units. Videos frames were aligned by a combination of image and particle alignment procedures to overcome the effects of beam-induced motion. The reconstructed density map shows all secondary structure as well as clear side chain densities for most residues. The full coordination of all cofactors in the electron transfer chain (a [NiFe] center, four [4Fe4S] clusters and an FAD) is clearly visible along with a well-defined substrate access channel. From the rigidity of the complex we conclude that catalysis is diffusion-limited and does not depend on protein flexibility or conformational changes.\n\n## Introduction\n\nIt has long been recognized that electron cryo-microscopy (cryo-EM) has the potential to solve protein structures at near-atomic resolution (Henderson, 1995). Since the first sub-nanometer resolution cryo-EM structures of icosahedral viruses, which have the advantage of multi-MDa size and high symmetry (B\u00f6ttcher et al., 1997; Conway et al., 1997), steady advances in instrumentation have yielded a number of virus structures at better than 4 \u00c5 resolution (Grigorieff and Harrison, 2011). For smaller and less symmetrical structures, progress has been slower, but several complexes have yielded structures at around 6 \u00c5 resolution where secondary structure is recognizable and X-ray structures of subcomplexes can be reliably fitted (Ludtke et al., 2004; Armache et al., 2010; Gipson et al., 2010). In a few cases, side chain densities have been resolved (Cong et al., 2010; Ludtke and Baker, 2008; Zhang et al., 2010, 2013; Mills et al., 2013). Radiation damage limits the electron dose that can be used in any individual EM image and the resulting low signal-to-noise ratio (SNR) has meant that until recently high-resolution maps have required the equivalent of 106 images of asymmetric units.\n\nThe recent introduction of direct electron detection cameras with much better detective quantum efficiency (DQE) has meant that images having higher SNR can be obtained with the same, or lower, total electron exposure. In addition, these cameras have frame rates which make it possible to collect videos of the particles in the thin film of vitreous water during an exposure, and thus partially correct for the effects of beam-induced particle movement and specimen drift. Using a 70-MDa virus that can be accurately aligned even at short exposures, it was shown that electron irradiation causes random translations and rotations of the particles, which are typically largest in the first few frames (Brilot et al., 2012; Campbell et al., 2012). In two recent studies, image processing schemes were developed to correct for these beam-induced motions. Using the 700 kDa archaeal 20S proteasome, which is too small to reliably detect and align in images recorded with a short exposure, a protocol was developed to align entire frames or subareas of >2000 \u00d7 2000 pixels to each other (Li et al., 2013) (The motion correction software is available to download from http://www.nature.com/nmeth/journal/v10/n6/extref/nmeth.2472-S2.zip). For the much larger ribosome (\u223c4 MDa) a statistical video processing approach was developed, which acts on individual particles using a user-defined running average of video frames (Bai et al., 2013). Both studies produced maps of unprecedented resolution, 3.3 \u00c5 for the D7 proteasome from 126,000 particles and 4.5 \u00c5 from 35,000 asymmetric 80S ribosomes.\n\nRecently we determined the structure of the 1.2 MDa Frh complex, the F420-dependent hydrogenase from Methanothermobacter marburgensis, ab initio from cryo-EM data collected on photographic film (Mills et al., 2013). Frh is a key enzyme in the metabolism of methanogenic archaea, where the reduction of carbon dioxide to methane involves the oxidation of four molecules of H2 by a number of different hydrogenases. The reduced form of the F420 coenzyme, which is the electron donor in several of these steps, is regenerated by Frh (Thauer et al., 2010). The central role of Frh in the metabolism of methanogens is reflected in its abundance (\u223c2%) in the soluble cell protein (Fox et al., 1987). Frh is a heterotrimeric enzyme composed of the 43 kDa subunit FrhA that contains a [NiFe]-center, the 26 kDa subunit FrhG with three [4Fe4S] clusters, and the 31 kDa iron\u2013sulphur flavoprotein FrhB, which contains the F420-binding site and has one [4Fe4S] cluster and an FAD. Our cryo-EM study showed that the Frh complex is a dodecamer with tetrahedral symmetry. The map had \u223c5 \u00c5 resolution which was sufficient to show secondary structure and density for many side chains as well as the cofactors forming the electron transfer chain, making it possible to trace the three protein chains, one of them without a template.\n\nWe have now collected a new dataset of Frh as videos on a back-thinned Falcon II detector and reconstructed a cryo-EM using a \u2018gold standard\u2019 refinement approach. The resulting map from 26,000 particles has a resolution of 3.36 \u00c5, which enabled us to refine the model obtained from film data. We can now trace the three proteins in the complex completely, and localize most side chains with confidence. We compare and discuss different processing schemes to deal with the video data.\n\n## Results\n\nImages of the Frh complex were collected using the back-thinned FEI Falcon-II in video mode with 18 frames per second. Using videos allows long exposures in which the individual particles and Thon rings are clearly visible, while retaining the radiation-sensitive higher resolution information only present during the initial exposure. The particles were clearly distinguishable below 1 \u03bcm defocus with a 1.5 s exposure (\u223c90 e/\u00c52) (Figure 1A). A dataset of 33,590 particles (403,080 asymmetric units) at a defocus range of 0.8\u20133.5 \u00b5m was collected from 235 images in two sessions on a single grid. Areas of very thin ice were selected that we estimate to be only slightly thicker than the particle diameter of \u223c175 \u00c5; often similar holes nearby had no particles in the center but a densely packed outer rim, so apparently the thin ice had squeezed the complexes out to the edge of the hole.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01963/elife-01963-fig1-v1.jpg)\n\n**Figure 1.:** (A) A typical electron micrograph recorded with the Falcon II camera on the FEI Tecnai Polara operated at 300 kV. The defocus was determined by CTFFIND3 to be 0.9 \u00b5m (Mindell and Grigorieff, 2003). The particles are clearly visible and easy to box. Scale bar, 25 nm. (B) CTF of boxed particles. The inset shows a zoom of the high-resolution range. Thon rings are visible beyond 80% of the Nyquist frequency at 0.3 \u00c5\u22121.\n\nThe Frh dodecamer was refined from a low-pass filtered model to high resolution using the RELION gold standard refinement procedure. In this protocol, two half datasets are refined completely independently throughout, and after each cycle the new reference volumes are low-pass filtered to the resolution where the Fourier shell correlation (FSC) between the two volumes drops to 0.143, thus preventing overfitting of noise (Scheres and Chen, 2012). A first refinement using the sum of the first 20 video frames (discarding the last 4 frames because of likely radiation damage [Baker and Rubinstein, 2010]) yielded a map at 3.94 \u00c5 resolution (Figure 2A) that looked considerably better than our previous map from 84,000 particles on film. Also, the map was virtually noise-free due to the RELION refinement procedure (Scheres, 2012). Next we applied the frame alignment software (Li et al., 2013) and aligned all 24 frames to each other. In the majority of cases, the first frame showed a large movement in comparison with the others (Figure 3A). We refined the sum of the aligned frames with or without the first frame and found that discarding the first frame results in a higher-resolution map (Figure 3B). As found also by others (Li et al., 2013), the correction cannot deal with the fast motion of the particles during the first frame. On this basis we discarded the first frame of every video for all subsequent refinements. The refinement of the 20 aligned frames resulted in a 3.74 \u00c5 map (Figure 2A). In another refinement approach, we used the statistical alignment procedure (Bai et al., 2013) implemented in RELION (Scheres, 2012). This method follows the movement of the particles within the videos (particle-based method) using a running average of frames. This procedure also improved the resolution relative to the unaligned particles in a very similar way to the whole-frame alignment (Figure 2A); the best resolution was obtained when 5 frames were averaged. In yet another approach we combined the two alignment procedures (whole-frame and particle-based). The resolution curve of this refinement gave a better FSC than the others over all frequencies and the resulting reconstruction had a resolution of 3.69 \u00c5 (Figure 2A), indicating that for the intermediate-sized particle investigated here the combination of the two alignment procedures works best.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01963/elife-01963-fig2-v1.jpg)\n\n**Figure 2.:** All refinements were performed with the gold standard procedure in RELION (Scheres and Chen, 2012). A post-processing procedure (Chen et al., 2013) was applied unless otherwise indicated. The dotted line is at FSC 0.143, used to determine the resolution from comparing two independently refined half data sets (Rosenthal and Henderson, 2003). (A) Comparison of different alignment procedures. Blue, average of 20 unaligned frames. Purple, 20 frames aligned with the statistical video processing procedure (Bai et al., 2013). Red, refinement after aligning frames with the area-motion correction software (Li et al., 2013). Gold, combination of the latter two alignment procedures. (B) Effect of radiation damage. Blue, 20 frames (3.69 \u00c5); purple, 16 frames (3.69 \u00c5); red, 12 frames (3.60 \u00c5); gold, 8 frames (3.43 \u00c5); green, 6 frames (3.39 \u00c5). All curves were obtained by the combination approach described above. (C) Data set quality. Particle images of sub-standard quality were omitted from the original data set of 33,590 images, yielding a smaller dataset of 26,635 particles (\u2018Results\u2019). Refinement using 8 frames of the reduced data set (green, 3.39 \u00c5). The improvement is clear in comparison with the full dataset (blue, 3.43 \u00c5). A further improvement (red, 3.36 \u00c5) resulted from using 6 instead of 8 frames. (D) Post-processing to determine the resolution and B-factor (Chen et al., 2013) of the final map from the 6-frame refinement. The raw unmasked map (purple) indicates a resolution of 3.52 \u00c5; the map masked with a soft mask (red) indicates the final resolution of 3.36 \u00c5. The gold curve shows the FSC for the two half data sets with randomized phases beyond 4.5 \u00c5. Subtraction of the gold curve from the red curve yields the green curve, which indicates the true map resolution corrected for over-aggressive masking. The close correspondence of the red and green curves shows that the used soft mask did not introduce spurious correlation and the true map resolution is 3.36 \u00c5. A B factor of \u2212156 \u00c52 was determined and applied to sharpen the map.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01963/elife-01963-fig3-v1.jpg)\n\n**Figure 3.:** The motion correction software indicates a large movement at the beginning of the exposure. (A) Video frame alignment for three separate micrographs. Each spot represents one frame. The drift plots show that the movement between the first and second frame is considerably higher than in subsequent frames, although some micrographs (red and green) indicate much higher drift than others (blue). (B) FSC curves of a refinement with and without the first video frame. The violet curve represents a refinement of frames 1\u201317, the green curve frames 2\u201317. Although at FSC 0.143 the resolution is the same for for both maps (3.69 \u00c5), the green curve without the first frame clearly shows a higher FSC in the whole resolution range.\n\nWe had already discarded the last 4 frames of the 24-frame videos, because of likely radiation damage. We then continued to assess the effect of radiation damage on the quality of the map by successively reducing the number of frames. Every omitted frame improved the map resolution until only 6 frames were averaged. This gave the best resolution of 3.39 \u00c5, compared to 3.74 \u00c5 for all 20 frames (Figure 2B). Reducing the number of averaged frames further to 4 or 5 made the resolution worse.\n\nWe attempted to improve the resolution further by adding more data. A third microscope session on a different grid yielded another 15,000 particles. Adding them, however, reduced the map resolution and these images were therefore not included in further steps. We assume the data quality was worse because of the thicker ice on this grid, which had made it necessary to use a higher defocus, never less than 1.2 \u00b5m, to distinguish the particles. We therefore decided to discard suboptimal images from the first dataset to improve the map. We removed the images with high defocus (>2.5 \u00b5m) and those that were of poor quality as judged by the visibility and symmetry of the Thon rings. This reduced the dataset by 20% from 33,590 to 26,635 particles (319,620 asymmetric units). Refinement of this smaller dataset under otherwise identical conditions resulted in maps with better resolution than the full dataset, and the best map, with 6 frames averaged, extended to 3.36 \u00c5 resolution (Figures 2C and 4). The accumulated dose for this data was \u223c24 e\u2212/\u00c52. We tested the local resolution of the map with the program ResMap (Kucukelbir et al., 2014) to identify possible flexible protein regions. The local resolution map was featureless (not shown), indicating that the dodecameric Frh complex is completely rigid.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01963/elife-01963-fig4-v1.jpg)\n\nTo assess the effects of radiation damage further, we also created maps of the last 6 and the middle 6 frames of the 20-frame videos of the reduced dataset, averaging particles that were in effect pre-irradiated with \u223c24 and 49 e\u2212/\u00c52. This resulted in maps of 3.94 and 4.16 \u00c5 resolution, respectively, which was clearly reflected in the poorer visibility of side chain densities (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01963/elife-01963-fig5-v1.jpg)\n\n**Figure 5.:** Helix 124\u2013144 of FrhA in the map calculated from (A) video frames 1\u20136 (3.36 \u00c5), (B) frames 8\u201313, pre-irradiated by \u223c24 e/\u00c52 (3.94 \u00c5), and (C) frames 15\u201320, pre-irradiated by \u223c49 e/\u00c52 (4.16 \u00c5). Note that side chain density is lacking for Asp125 and Glu132 already in the first map.\n\nWe fitted the model of the FrhABG heterotrimer based on the model built into the \u223c5 \u00c5 map obtained previously from film data (Mills et al., 2013). The overall features of the 3.36 \u00c5 map were similar, but the higher resolution of the new map and the low noise level made the interpretation of the electron densities unambiguous (Figure 6; Video 1). Alpha helices (Figure 7) and beta sheets (Figure 8) were easily recognizable and the large majority of side chains had good density (Figure 9; Video 2). Most of the protein could be fitted to the map using the \u2018real space refine\u2019 feature in Coot, which had not been possible for the lower resolution map from film images. The FSC between this map and a map calculated from the fitted model is 0.5 at 3.56 \u00c5 resolution, close to the resolution of the final map, confirming the correctness of the fit (Figure 10).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01963/elife-01963-fig6-v1.jpg)\n\n**Figure 6.:** (A) Slice through an FrhABG heterotrimer at the level of the electron transfer chain. (B) The same slice with atomic model. In this and other figures the carbons of FrhA are green, FrhG magenta, and FrhB blue. Green and orange spheres indicate the [NiFe] center in FrhA; the [4Fe4S] clusters in FrhG and FrhB are shown as orange and yellow spheres. The FAD in FrhB is shown as a stick model with yellow carbons.\n\n![Video 1.](https://cdn.elifesciences.org/articles/01963/elife-01963-media1.mp4.jpg)\n\n![Figure 7.](https://cdn.elifesciences.org/articles/01963/elife-01963-fig7-v1.jpg)\n\n**Figure 7.:** Note the absence of side chain density for glutamate and aspartate side chains.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/01963/elife-01963-fig8-v1.jpg)\n\n**Figure 8.:** (A) Top view, (B\u2013D) side views of individual strands 341\u2013348, 328\u2013339 and 319\u2013327, rotated by 90\u00b0 relative to (A).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/01963/elife-01963-fig9-v1.jpg)\n\n**Figure 9.:** The histogram shows the number of residues on the y-axis and the amino acid (one letter code) on the x-axis. Blue bars indicate fully resolved side chains, red bars indicate side chains without or with ambiguous map density. Glycine residues (no side chain) are indicated in green for completeness. Negatively charged side chains of aspartate (D) and glutamate (E) are almost all missing. In contrast, side chains of hydrophobic residues like valine (V), leucine (L), isoleucine (I), phenylalanine (F), tyrosine (Y), and tryptophan (W), are nearly all visible. Excluding glycine, aspartate and glutamate, 86% of side chains are well visible. Unresolved side chains other than aspartate and glutamate are mostly located on the surface.\n\n![Video 2.](https://cdn.elifesciences.org/articles/01963/elife-01963-media2.mp4.jpg)\n\n![Figure 10.](https://cdn.elifesciences.org/articles/01963/elife-01963-fig10-v1.jpg)\n\n**Figure 10.:** The blue line shows the FSC between the final cryo-EM map and a map calculated from the fitted model; the red line is the FSC between maps from independent halves of the data. Dotted lines indicate the 0.5 FSC criterion for the map/model comparison and 0.143 for the half datasets. The cryo-EM map was filtered to 3.36 \u00c5, causing the map-to-model correlation to drop to 0 at that resolution.\n\nAll three subunits were traced completely except for a few N- or C-terminal residues, accounting for 893 out of 903 amino acids (Figure 11). We found that all three proteins had been traced essentially correctly in the lower-resolution film map (Video 3). The largest differences between the two models were found in surface loops that had been difficult to trace in the film map. The only unresolved part in the previous model involved a 12-residue stretch in FrhG (188\u2013199), for which no density was found and which was thought to form a flexible surface loop. In the new map, two nearby density features, modelled as extended loops before, were clearly recognizable as alpha-helices (194\u2013201 and 208\u2013215) that accommodate the missing residues. The resulting shift of residues brings the cysteine residues C206 and C208, which are conserved in the FrhG family (Figure 11B), near a strong density on the dimer axis between two FrhG subunits. The cysteines of the dimer partner are just a few \u00c5 away, and the density in between the four cysteine side chains is strongly suggestive of a coordinated ion (Figure 12). Although the cysteine side chains are not completely resolved, their tetrahedral arrangement suggests that it is a zinc ion (Dokmani\u0107 et al., 2008; Harding et al., 2010; Rul\u00ed\u0161ek and Vondr\u00e1\u0161ek, 1998; Zheng et al., 2008).\n\n![Figure 11.](https://cdn.elifesciences.org/articles/01963/elife-01963-fig11-v1.jpg)\n\n**Figure 11.:** \u03b1-helices are highlighted in green, \u03b2-strands in blue. The second line shows a consensus sequence of the protein families (Mills et al., 2013) with fully conserved amino acids in capitals and partly conserved residues in lower case (h: hydrophobic; s: small [GAS]; l: large [LIFYHW]; a: aromatic [FYWH]; z: T or S; n: negative, D or E; p: positive, R or K). (A) FrhA. In the consensus sequence, the [NiFe] ligands are highlighted in orange and the ligands of the third ion in red. (B) FrhG. Ligands of the proximal, medial, and distal [4Fe4S] cluster are shown in yellow, orange, and red, respectively. The cysteines coordinating a putative zinc ion on the FrhG dimer interface are highlighted in magenta. (C) FrhB. The residues for coordination of the iron\u2013sulphur cluster and FAD are highlighted in green and cyan, respectively, and residues lining the F420 access channel in yellow.\n\n![Video 3.](https://cdn.elifesciences.org/articles/01963/elife-01963-media3.mp4.jpg)\n\n**Video 3.:** Light colours: film, dark colours: Falcon II. FrhA is shown in green, FrhG magenta, FrhB blue.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/01963/elife-01963-fig12-v1.jpg)\n\n**Figure 12.:** The two protomers are shown in shades of purple. A high density on the dimer axis between two copies of Cys206 and Cys208 is interpreted as an ion (grey sphere), most likely Zn2+. The ion is \u223c9 \u00c5 away from the medial FeS cluster (top left and bottom right).\n\nThe FAD cofactor in FrhB has continuous density in the map, and its folded conformation with the adenine and isoalloxazine moieties in close proximity (Mills et al., 2013) is confirmed (Figure 13; Video 4). As noted before (Mills et al., 2013), the FAD is completely surrounded by conserved residues, including loops 23\u201330, 71\u201377, and 131\u2013138 (which includes Cys134, a ligand of the nearby FeS cluster i.e., the electron donor to FAD) (Figure 11C). The binding pocket is well-defined in the new map, with the pyrophosphate moiety at the N-terminal end of helix 27\u201339 and the conserved 24QDGG as an extended chain around it (Figure 13A). There is no density for the substrate, F420, but the FAD is accessible from the surface through a \u223c5 \u00c5 gap between the main body of FrhB and a domain formed by residues 128\u2013188 containing an alpha helix and a three-stranded beta sheet (Video 5). This putative substrate access channel is, like the FAD itself, completely lined by conserved residues (Video 6). The model for the FrhABG trimer and the dodecamer is shown in Figure 14.\n\n![Figure 13.](https://cdn.elifesciences.org/articles/01963/elife-01963-fig13-v1.jpg)\n\n**Figure 13.:** Conserved residues are labelled in black. Other residues mentioned in the text are grey. (A) The phosphate moiety (orange) sits in a pocket formed by A23\u2013T30 at the C-terminal end of helix 28\u201339. The adenine moiety (left) is coordinated by the loop A72\u2013N81. (B) In this view, the loop I132\u2013F138 surrounding the isoalloxazine ring can be seen as well as the highly conserved loop G73\u2013T77.\n\n![Video 4.](https://cdn.elifesciences.org/articles/01963/elife-01963-media4.mp4.jpg)\n\n![Video 5.](https://cdn.elifesciences.org/articles/01963/elife-01963-media5.mp4.jpg)\n\n**Video 5.:** The substrate access channel from the surface to FAD is clearly visible between two domains of FrhB.\n\n![Video 6.](https://cdn.elifesciences.org/articles/01963/elife-01963-media6.mp4.jpg)\n\n**Video 6.:** Conserved residues and corresponding densities are shown in red and partially conserved residues in orange. Both ligands and the F420 access channel are completely surrounded by conserved residues.\n\n![Figure 14.](https://cdn.elifesciences.org/articles/01963/elife-01963-fig14-v1.jpg)\n\n**Figure 14.:** FrhA is green, FrhG magenta, and FrhB blue. The [NiFe] center in FrhA is shown as green and orange spheres, the three [4Fe4S] clusters as orange and yellow spheres, and the FAD in FrhB as a stick model with yellow carbons, the ion in FrhA is orange, and the putative zinc ion on the twofold axis of the FrhG dimer is grey.\n\n## Discussion\n\nCryo-EM has long had the potential of reaching near-atomic resolution, but until very recently this has only been achieved for very large, highly symmetrical icosahedral viruses. The fundamental problem is the inevitable radiation damage to the biological sample caused by the electron beam. Reaching high resolution requires low exposures to maximize the SNR of rapidly destroyed high-resolution information. The resulting images are noisy, which makes it both difficult to detect particles and to determine the defocus parameters accurately. The high frame rate of direct electron detectors allows data collection in video mode, which removes these restrictions and allows beam-induced motion of particles to be identified and partially corrected for. Just as importantly, direct electron detectors offer increased detective quantum efficiency at high resolution and so while individual images are still noisy they contain more information. The combination of better images and improved data processing is now leading to better reconstructions which in turn allows more information to be extracted from the images due to better alignment of individual particles.\n\nThe advantages are illustrated in recently published studies of two very different specimens, the 4 MDa asymmetric Saccharomyces cerevisiae ribosome and the 700 kDa D7-symmetric proteasome. These studies used two different detectors, the FEI Falcon II and the Gatan K2, respectively, and employed different strategies to align the video frames (Bai et al., 2013; Li et al., 2013). We have now reconstructed the 1.2 MDa tetrahedral Frh complex from \u223c26,000 particles collected on the Falcon II, and determined the structure of the three proteins in the complex at high resolution.\n\nThe Falcon II data quality is far superior to that obtained with photographic film. With film we obtained a 5 \u00c5 map from 84,000 Frh particles (Mills et al., 2013), but with Falcon II images of the same sample and the same electron microscope we were able to achieve a map with better than 4 \u00c5 resolution from 70% fewer particles. The higher DQE of the detector makes it possible to reliably detect particles at very low defocus. This is illustrated by Figure 1A, showing a micrograph taken at 900 nm defocus in which the particles are clearly visible, whereas with film we were not able to detect the particles at less than 1500 nm defocus.\n\nThe high-resolution signal for the low-defocus images is very much better than that for images recorded at higher defocus, which was a critical factor in attaining the final map. This is illustrated by the fact that adding more particles recorded at higher defocus (from a grid with thicker ice) actually degraded the overall resolution, and that omitting particles with more than 2500 nm defocus, which did not contribute to the signal at high resolution, improved the map (Figure 2C).\n\nA decisive advantage of direct electron detectors over film is the possibility of collecting video data. We found that two issues are important here: aligning the video frames to reduce the effects of beam-induced movement, and selecting the frame sequence used in the final map reconstruction to eliminate data affected by radiation damage. We used two approaches for video alignment. The first was the procedure developed by Li et al. (2013) for aligning whole frames (or large fractions of frames) independent of the visibility of the particles of interest in the individual frames. This was developed for the 700 kDa 20S proteasome and is most useful for relatively small protein complexes that are hard to detect on images recorded at low electron exposure. The second method is the statistical alignment procedure developed by Bai et al. (2013), which works on the particle level on user-defined running averages of substacks and requires the particles to be visible on the substacks. This was developed for ribosomes, which for a given dose are easier to detect due to their large size (several MDa) and high RNA content. The 1.2 MDa Frh complex, which contains 48 [4Fe4S] clusters and several other metal ions, is intermediate in density and size between the proteasome and the ribosome. For this complex we found that both video alignment methods gave similar improvements in final map resolution compared to unaligned frames (Figure 2A). However, the combination of the two methods, running the statistical particle alignment on pre-aligned stacks, yielded another improvement of similar magnitude. We used a running average of 5 frames for the particle-based alignment, so it is not unexpected that a pre-alignment of the frames was advantageous.\n\nCollecting data in video mode also allows elimination of sub-optimal frames from the reconstruction. As was found in earlier studies (Brilot et al., 2012; Campbell et al., 2012; Li et al., 2013), beam-induced movement was much more noticeable in the first frame than in subsequent frames (Figure 3A). This large movement during the first fraction of the exposure would blur the first frame, and by omitting it, we obtained an improvement in resolution (Figure 3B). The later frames are increasingly affected by radiation damage. Reducing the number of frames used in the reconstruction to only 6 (out of the total 24) produced the best map (Figure 2B). The accumulated dose in these frames was \u223c24 e/\u00c52, very similar to the accumulated dose (\u223c21 e/\u00c52) used for the 3.3 \u00c5 proteasome map (Li et al., 2013). A 4.16 \u00c5 reconstruction after a refinement of only the last 6 frames of the 20-frame videos still showed partial side chains and clear helices (Figure 5C). In case of smaller particles than the 1.2 MDa Frh complex, it would be advantageous to record videos over longer periods with higher cumulative doses, so that the particles are more visible and easier to align. The later, radiation-damaged frames can then be omitted from the reconstruction if necessary, as suggested before (Bai et al., 2013). Thus, direct electron detectors provide a way to optimize a posteriori the electron exposure of the data used for reconstruction.\n\nOur 3.36 \u00c5 resolution map made it possible to determine the structure of the Frh complex unambiguously. All elements of secondary structure are obvious, and side chain density is clearly visible for most residues in the protein interior. Side chains on the surface are in general not seen, probably due to their flexibility in the aqueous solvent. The only conspicuous exceptions are the side chains of glutamates and aspartates, which are almost all absent (Figure 9), even in maps reconstructed from the earliest, least damaged frames (Figure 5A). An absence of aspartate and glutamate side chain densities can also be observed in other high-resolution cryo-EM maps, including the electron crystallography maps of LHC-II (K\u00fchlbrandt et al., 1994) and bacteriorhodopsin (Kimura et al., 1997) and the recent 3.3-\u00c5 single particle map of the 20S proteasome (Li et al., 2013). In X-ray crystallography it was noted that carboxylate side chains have higher B-factors after extended exposure to intense synchrotron radiation, possibly due to decarboxylation (Weik et al., 2000). A quantification of synchrotron radiation damage on carboxylate side chains (Fioravanti et al., 2006) shows that this damage already occurs at radiation doses equivalent to less than 1 e/\u00c52 (Henderson, 1990), a much lower dose than is feasible in cryo-EM. This implies that the decarboxylation would have occurred well within the first frame of our video data set and aspartate and glutamate side chains would in general not be visible in cryo-EM maps. However, not all are absent. Among the few visible carboxylate side chains in Frh, two are involved in ligand binding: FrhG Asp60 in the coordination of the proximal FeS cluster, and FrhA Glu44 in liganding a possible Fe or Mg ion (Mills et al., 2013; Figure 15). In X-ray crystallography it is also found that not all glutamate and aspartate side chains are equally susceptible to radiation damage, but the dependence on the structural and chemical environment is not well understood (Fioravanti et al., 2006). In the 3-\u00c5 bacteriorhodopsin EM map, the side chains of Asp85 and Asp212, which from spectroscopy are known to be deprotonated, were invisible, whereas the protonated side chains of Asp96 and Asp115 had good density (Kimura et al., 1997). Active sites are often found to contain the most radiation-sensitive residues in X-ray crystallography, but the protonation state was not found to be essential, and a relation to pKa was also not observed (Fioravanti et al., 2006). As more high-resolution cryo-EM maps become available, more data on the relative radiation sensitivity of side chains in different environments may give new insights in protein structure and dynamics.\n\n![Figure 15.](https://cdn.elifesciences.org/articles/01963/elife-01963-fig15-v1.jpg)\n\n**Figure 15.:** (A) The proximal FeS cluster of FrhG is coordinated by three cysteine residues and an aspartate (Asp60) with clear density. (B) An ion in FrhA (grey sphere) is coordinated by the C-terminal His386, the main chain oxygen of Ala347 and by Glu44, one of the few carboxylate residues with clear density.\n\nThe structure of Frh was traced ab initio in our previous cryo-EM map from film data, which had a nominal overall resolution of 5.5 \u00c5 as determined by gold-standard FSC, but a significantly higher resolution of \u223c4.5 \u00c5 in well-defined regions of the map (Mills et al., 2013). There were many indications that our original Frh structure was essentially correct, for example well-resolved hydrophobic side chains in the protein interior and the observation of secondary structure in regions where it was expected from prediction programs. It was nevertheless gratifying to see how well the model fits the new, higher-resolution map. Note that it would hardly be possible to trace an electron density map obtained by X-ray crystallography at a nominal resolution of 5.5 \u00c5. This clear difference reflects the quality of the phase information, which is conserved in the phase contrast electron micrographs and determined directly by image processing, whereas in X-ray crystallography it is determined indirectly by isomorphous replacement or anomalous scattering.\n\nAlthough the overall chain trace is the same, in detail the model based on the 3.36 \u00c5 map is of course much improved. The function of Frh is the hydrogenation of F420 by molecular hydrogen. Electrons are extracted from hydrogen by the [NiFe] cluster in FrhA, and transferred via the three [4Fe4S] clusters in FrhG and another one in FrhB to FAD and from there to the substrate. The electron transfer chain is clearly recognizable. The [NiFe] cluster has a high density (Figure 15B) and is coordinated by conserved residues, as in the large subunits of other [NiFe] hydrogenases (Figure 11A). Nearby is another ion, also conserved, coordinated among others by the C-terminal histidine of FrhA, His386 (Figure 15B). The four FeS clusters were easily localized in the film map because of their high density; moreover, they are arranged in a chain with distances of \u223c10 \u00c5 (Mills et al., 2013). In the Falcon II map, the clusters are not just featureless blobs, but their tetrahedral coordination (mostly by cysteine residues, or, in one case, an aspartate) can be clearly seen (Figure 6, Figure 15A). Thus their orientation can be modelled correctly, with the irons facing the sulphurs of the cysteine side chains. One unexpected feature found in the new map was the density for an ion on the dimer interface between two FrhG subunits (Figure 12). This density feature was actually visible in the film map, but since the flanking conserved cysteines from the two FrhG subunits were not recognized, its interpretation as an ion was not obvious. The function of this ion is most likely to stabilize the dodecameric complex, but its location between the two medial FeS clusters at a distance of only 9 \u00c5, which is less than the distance of \u223c10 \u00c5 between adjacent FeS clusters in the electron transfer chains, means that a role in electron transfer cannot be ruled out. The final part of the electron transfer chain, the FAD in FrhB, which is close to the last FeS cluster, has unambiguous, continuous density in the Falcon II map (Figure 13; Video 4). FAD acts as a one-electron/two-electron redox switch between the FeS clusters and the F420 substrate (Fox et al., 1987; Alex et al., 1990; Thauer et al., 2010). This means that the substrate needs to approach the FAD to within van der Waals distance to enable hydride transfer (Ceh et al., 2009). In our previous study, we collected data from Frh with and without the substrate. In the map obtained in the presence of substrate we had identified a density near the FAD isoalloxazine ring that we interpreted as part of F420 at low occupancy (Mills et al., 2013). For the new Falcon-II map, we used an Frh sample with a large excess of F420, but the F420 binding pocket is clearly empty. As the same sample was used in both studies, we conclude that the density in the film map must have been due to noise. An access channel for the substrate can easily be recognized (Video 5) and its significance is confirmed by the high conservation of the amino acid residues lining the channel (Video 6). There is no indication of even a low occupancy of substrate or of flexibility in this map region. A map of local resolution (Kucukelbir et al., 2014) confirmed that the protein region around this pocket is rigid. This suggests that conformational changes do not play a role for the access of F420 to the hydride donor, consistent with the finding that F420 reduction by Frh is very rapid and most likely diffusion-limited (Livingston et al., 1987).\n\nThe advent of direct electron detection cameras opens new horizons for cryo-EM. It is now possible to obtain higher-resolution maps with many fewer images. Using the video data collection mode, the optimal data in terms of SNR or radiation damage can be extracted a posteriori, and frame alignment schemes can be fine-tuned to the object under investigation.\n\n## Materials and methods\n\n### Data collection\n\nThe purification of the Frh complex from Methanothermobacter marburgensis and the preparation of the grids for the electron microscope data collection were performed as described (Mills et al., 2013). Briefly, 3 \u03bcl of a 0.7 mg/ml Frh sample in the presence of 10 mM F420 was applied to freshly glow discharged Quantifoil R1/4 holey carbon grids (Quantifoil Micro Tools, Jena, Germany). The grids were blotted in an FEI Vitrobot plunge-freezer. Data was collected on an FEI Tecnai Polara operating at 300 kV, using a back-thinned FEI Falcon II direct electron detector. The microscope was carefully aligned as previously described (Mills et al., 2013) and the Falcon II camera was calibrated at the desired nominal magnification of 78,000\u00d7. The calibrated magnification on the 14 \u00b5m pixel camera was 106,000, resulting in a 1.32 \u00c5 pixel size at the specimen. The camera system was set up to record 18 frames/sec as previously described (Bai et al., 2013). Videos were collected for 1.5 s with a total of 24 frames with a calibrated dose of 3.5 e\u2212/\u00c52 per frame, at various defocus values in the range between 0.8 and 3.8 \u03bcm.\n\n### Image processing\n\nParticle picking was carried out using the semi-automatic procedure of EMAN Boxer (Ludtke et al., 1999), and the contrast transfer function of every image was determined using CTFFIND3 (Mindell and Grigorieff, 2003) in the RELION workflow (Scheres, 2012). If necessary, the CTF values were double-checked using the particle-based CTF procedure of EMAN2 (Tang et al., 2007). Four independent refinements were launched with the gold standard refinement procedure of RELION (Scheres and Chen, 2012) starting from our previous Frh map from film data (Mills et al., 2013) low-pass filtered to 60 \u00c5, using 20 frames (from frame 2 to frame 21), testing four different approaches:The 20 unaligned frames of each video were added up without motion correction;The 20 frames of each video were aligned using the whole-image motion correction method described in Li et al., 2013 (the authors kindly provided the necessary support to install the software);The 20 unaligned frames were processed by the statistical video refinement procedure described in Bai et al. (2013) (particle-based);A combination of approaches 2 and 3, applying the statistical video refinement procedure (Bai et al., 2013) to the 20 frames pre-aligned using the whole-image motion correction software (Li et al., 2013).\n\nProcedure number 4, which combines the area-based and particle-based frame alignment, gave the best results. All further maps as described in the Results section were obtained by RELION refinement as in procedure 4, unless less than 8 video frames were used, in which case procedure 2 was followed. Tetrahedral symmetry was applied in all refinements.\n\nA post-processing procedure implemented in RELION (Scheres, 2012) was applied to the final maps for appropriate masking, B-factor sharpening and resolution validation to avoid over-fitting (Chen et al., 2013). In this procedure, the appropriate B-factor is determined according to Rosenthal and Henderson (2003), after correction for the Falcon II MTF. In addition, a soft mask is applied to the last two unfiltered models before convergence and a new FSC curve is calculated. The procedure also measures any spurious correlation due to too tight masking, by subtracting the FSC curve between the two masked half datasets where the phases beyond a chosen resolution were randomized. For all maps, B factors between \u2212150 and \u2212230 \u00c52 were found. All resolutions stated are at FSC 0.143 (Rosenthal and Henderson, 2003) after applying this post-processing procedure.\n\nThe local resolution of the map was estimated with the ResMap software (available at http://resmap.sourceforge.net) (Kucukelbir et al., 2014).\n\n### Model building\n\nThe protein structure was built in Coot (Emsley and Cowtan, 2004) into the high-resolution map using real-space refinement, starting with the earlier model from cryo-EM data recorded on film (Mills et al., 2013). Torsion angle, planar peptide, and Ramachandran restraints were applied throughout. The final model for the FrhABG heterotrimer contains 893 amino acid residues out of a possible 903, a [NiFe] cluster, four [4Fe4S] clusters, one FAD, and two metal ions, one of them coordinated by two trimers. 96.5% of residues have backbone dihedral angles in the most favored region of the Ramachandran plot and the remaining 3.5% are in the generously allowed regions.\n\nFigures were made using Chimera (Pettersen et al., 2004).\n",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "7846d112-9496-4803-936e-0f14e93a7228",
+      "submission_id": "acf4fbd0-5bd2-44ce-ad52-f78970256909",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wesley Sundquist, University of Utah , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01963.024](https://doi.org/10.7554/eLife.01963.024)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cNear-atomic model of the F420-reducing [NiFe] hydrogenase by cryo-electron microscopy using a direct electron detector\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor, John Kuriyan, and 3 reviewers, one of whom, Wesley Sundquist, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe authors describe a high resolution electron cryomicroscopy (cryo-EM) reconstruction of the F420 reducing NiFe hydrogenase from the methanogenic archaeon, Methanothermobacter marburgensis (Frh). Frh is an exceptionally well behaved, heterotrimeric enzyme with overall Td symmetry, providing 12-fold molecular averaging. The new 3.36 \u00c5 resolution reconstruction represents a significant improvement on the \u223c5 \u00c5 reconstruction reported last year by the same group.\n\nThe strengths of the study are that it provides: 1) a reconstruction that is \u201cstate-of-the-art\u201d in terms of methodology and resolution, 2) helpful comparative analyses of different methodological approaches, and 3) additional information on the Frh structure, including side chain positions. The authors found that the reconstruction resolution was optimized when they a) averaged frames 2-7 (omitting the first frame owing to large sample motions and omitting subsequent frames owing to radiation damage), b) omitted images with the thicker ice, high defocus values and poor Thon rings, and c) combined the whole frame and particle alignment methods. With the optimized reconstruction, the authors were able to: a) confirm that the previous structure was correct, b) assign two new surface helices, c) identify a new Zn2+(Cys)4 site at the FhrG dimer interface, d) argue that the enzyme\u2019s active site does not appear to adjust substantially upon F420 substrate binding, e) add to the available data concerning electron beam-induced decarboxylation of Asp and Glu residues (most such side chains are decarboxylated, but several are not, including several that coordinate cofactors), and f) demonstrate that reliable near atomic-resolution information was present even in their previous EM maps that exhibited nominal overall \u223c5 \u00c5 resolution, thanks to the direct phase information present in the images.\n\nThe study is of high technical quality and it provides another excellent example of the ongoing revolution in cryo-EM, where improved detector quantum efficiencies are increasing image signal-to-noise and improved software packages and data analysis approaches are making better use of the improved signal. The manuscript is as important for its demonstration of technical capability as for its biological insights.\n\nIssues that should be addressed prior to publication:\n\n1) Since the authors interpret their density in terms of an atomic model (and they deposit coordinates) they should include in the paper, in addition to all the FSC curves shown in Figures 2 and 3, at least one FSC between their best map and their best model. If their interpretation of the density map in terms of the model is mostly correct, then the map/model FSC should have a value of 0.5 at the same resolution where the gold-standard FSC between maps calculated from the two independent halves of the experimental data is 0.143. If it is not roughly in that range, then they should try to improve their model. This is a very rigorous test and should be included in any paper where a map and model are presented.\n\n2) In Figure 2D, and the legend that describes it; the authors may have misunderstood the procedure in Chen et al. (2013) that is required to determine the extent of overfitting. In that paper, there were two uses of the idea of randomizing the phases. In the first, all the raw single particle images have their phases randomized beyond a chosen resolution. The entire structure determination is then repeated and equation 4 from Chen et al. is then used to calculate the true FSC in which any overfitting can be measured and removed to produce an FSCtrue plot. However, there is also another use of equation 4 of Chen et al shown in their Figure 4, which was used to determine the effect of any aggressive masking. In this second application of equation 4, the final 3D map has its phases randomized beyond a chosen resolution, and the FSC and the corrected FSCtrue is calculated to measure and remove the effect of masking. From the figure legend in Allegrini et al., it is unclear whether the authors have carried out the first or the second procedure. The first does indeed test for overfitting, whereas the second test only for over-aggressive masking. If the authors have done only the second, then all they have really done is to test whether the Relion masking is soft. In that case, they should carry out the (more time-consuming) procedure of repeating the entire structure determination using randomized high-resolution phases for the raw single particle images. Failing that, if the FSC test proposed in item 1 ends up being \u223c0.5, (between the best density and the best model), then it is probably sufficient simply to correct the Figure 4 legend regarding the use of the HR-noise test (and remove all references to determination of overfitting, assuming they haven\u2019t actually done that).\n\n3) The issue of substrate occupancy should be clarified. It appears that the authors have made a typographical error in the Discussion when they say that: \u201cWe used an Frh sample with a large excess of FAD to calculate...\u201d (presumably they mean to say \u201cF420\u201d rather than \u201cFAD\u201d?). The more significant issue is that it is unclear why they previously assigned density for the isoalloxazine ring of F420 in the F420-replete sample but now don\u2019t see any density in the new higher resolution map. Looking back at the previous F420 density, it appears that this could well have been noise, but if this was the case then it should be stated clearly (or, if not, the discrepancy should be explained). The authors should also exercise care in how they phrase the conclusion that they expect no conformational changes when F420 binds if they don\u2019t really have a structure of the F420-bound enzyme.\n",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d7f3c24f-0093-47c2-a922-633aa8b5ac09",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C1",
+      "claim": "Direct electron detectors have higher detective quantum efficiency than photographic film.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent introduction of direct electron detection cameras with much better detective quantum efficiency (DQE) has meant that images having higher SNR can be obtained with the same, or lower, total electron exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a known fact about direct electron detectors compared to previous technology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "08536c9c-1380-4f7a-9609-54e6638c26f7",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C2",
+      "claim": "Direct electron detectors have frame rates that make it possible to collect videos of particles during an exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, these cameras have frame rates which make it possible to collect videos of the particles in the thin film of vitreous water during an exposure, and thus partially correct for the effects of beam-induced particle movement and specimen drift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a known capability of direct electron detectors",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "24e1f5ed-432e-4a20-b695-fab81316ce62",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C3",
+      "claim": "Electron irradiation causes random translations and rotations of particles, which are typically largest in the first few frames.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a 70-MDa virus that can be accurately aligned even at short exposures, it was shown that electron irradiation causes random translations and rotations of the particles, which are typically largest in the first few frames (Brilot et al., 2012; Campbell et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "fb613f85-b407-4b75-a2e8-94fa177af0df",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C4",
+      "claim": "A 3.3 \u00c5 resolution map of the D7 proteasome was produced from 126,000 particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Both studies produced maps of unprecedented resolution, 3.3 \u00c5 for the D7 proteasome from 126,000 particles and 4.5 \u00c5 from 35,000 asymmetric 80S ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited as a result from previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "3c00c83f-a67b-4d7e-bf16-499c7dbd80f1",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C5",
+      "claim": "A 4.5 \u00c5 resolution map of the 80S ribosome was produced from 35,000 asymmetric units.",
+      "claim_type": "EXPLICIT",
+      "source": "Both studies produced maps of unprecedented resolution, 3.3 \u00c5 for the D7 proteasome from 126,000 particles and 4.5 \u00c5 from 35,000 asymmetric 80S ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited as a result from previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "bd888fea-e3ae-4d11-9a36-a17374296566",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C6",
+      "claim": "Frh is a 1.2 MDa complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently we determined the structure of the 1.2 MDa Frh complex, the F420-dependent hydrogenase from Methanothermobacter marburgensis, ab initio from cryo-EM data collected on photographic film (Mills et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a known property of the Frh complex",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "69df13c4-d5f5-48ba-8f98-79b9aae2676a",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C7",
+      "claim": "Frh is a key enzyme in the metabolism of methanogenic archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "Frh is a key enzyme in the metabolism of methanogenic archaea, where the reduction of carbon dioxide to methane involves the oxidation of four molecules of H2 by a number of different hydrogenases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about Frh function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "9e524e18-a262-403e-8138-b7a04c8eb013",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C8",
+      "claim": "The reduced form of the F420 coenzyme is regenerated by Frh.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced form of the F420 coenzyme, which is the electron donor in several of these steps, is regenerated by Frh (Thauer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "9a7ed22f-e087-4d2d-a532-b1880480a2d1",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C9",
+      "claim": "Frh comprises approximately 2% of the soluble cell protein in methanogens.",
+      "claim_type": "EXPLICIT",
+      "source": "The central role of Frh in the metabolism of methanogens is reflected in its abundance (\u223c2%) in the soluble cell protein (Fox et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "646eb870-94dc-440d-a50b-aafb716c2b82",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C10",
+      "claim": "Frh is a heterotrimeric enzyme composed of FrhA (43 kDa), FrhG (26 kDa), and FrhB (31 kDa).",
+      "claim_type": "EXPLICIT",
+      "source": "Frh is a heterotrimeric enzyme composed of the 43 kDa subunit FrhA that contains a [NiFe]-center, the 26 kDa subunit FrhG with three [4Fe4S] clusters, and the 31 kDa iron\u2013sulphur flavoprotein FrhB, which contains the F420-binding site and has one [4Fe4S] cluster and an FAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about Frh structure",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "29d04266-daae-45dc-a679-a2e2a6922b52",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C11",
+      "claim": "FrhA contains a [NiFe]-center.",
+      "claim_type": "EXPLICIT",
+      "source": "Frh is a heterotrimeric enzyme composed of the 43 kDa subunit FrhA that contains a [NiFe]-center, the 26 kDa subunit FrhG with three [4Fe4S] clusters, and the 31 kDa iron\u2013sulphur flavoprotein FrhB, which contains the F420-binding site and has one [4Fe4S] cluster and an FAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about FrhA composition",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "2ad89862-68ad-4e7a-971a-ddcaa2aae72e",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C12",
+      "claim": "FrhG contains three [4Fe4S] clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Frh is a heterotrimeric enzyme composed of the 43 kDa subunit FrhA that contains a [NiFe]-center, the 26 kDa subunit FrhG with three [4Fe4S] clusters, and the 31 kDa iron\u2013sulphur flavoprotein FrhB, which contains the F420-binding site and has one [4Fe4S] cluster and an FAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about FrhG composition",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "4b008b79-8f82-43f5-b4e5-90c7d538013b",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C13",
+      "claim": "FrhB contains the F420-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Frh is a heterotrimeric enzyme composed of the 43 kDa subunit FrhA that contains a [NiFe]-center, the 26 kDa subunit FrhG with three [4Fe4S] clusters, and the 31 kDa iron\u2013sulphur flavoprotein FrhB, which contains the F420-binding site and has one [4Fe4S] cluster and an FAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about FrhB function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "9f243b45-1d27-4fb1-93e5-29a4f07db902",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C14",
+      "claim": "FrhB contains one [4Fe4S] cluster and an FAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Frh is a heterotrimeric enzyme composed of the 43 kDa subunit FrhA that contains a [NiFe]-center, the 26 kDa subunit FrhG with three [4Fe4S] clusters, and the 31 kDa iron\u2013sulphur flavoprotein FrhB, which contains the F420-binding site and has one [4Fe4S] cluster and an FAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about FrhB composition",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "4bd06279-4baa-4349-b46b-664fcea5b64b",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C15",
+      "claim": "The Frh complex is a dodecamer with tetrahedral symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Our cryo-EM study showed that the Frh complex is a dodecamer with tetrahedral symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from previous cryo-EM study by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "c4956796-7593-4f13-aa53-76cfac77c6f8",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C16",
+      "claim": "A previous cryo-EM map of Frh from film data had approximately 5 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The map had \u223c5 \u00c5 resolution which was sufficient to show secondary structure and density for many side chains as well as the cofactors forming the electron transfer chain, making it possible to trace the three protein chains, one of them without a template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from the authors' previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "056a5dad-79ff-47a1-b1c7-0ba049ab1b47",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C17",
+      "claim": "A new cryo-EM map of Frh was reconstructed from 26,000 particles at 3.36 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting map from 26,000 particles has a resolution of 3.36 \u00c5, which enabled us to refine the model obtained from film data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "0cc54264-49d5-47dd-8fac-b4aa12d7a4fc",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C18",
+      "claim": "Images were collected using the FEI Falcon-II detector in video mode with 18 frames per second.",
+      "claim_type": "EXPLICIT",
+      "source": "Images of the Frh complex were collected using the back-thinned FEI Falcon-II in video mode with 18 frames per second.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a method used in the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "5d62424a-6a4e-415f-bdc5-37ae63bd5999",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C19",
+      "claim": "A dataset of 33,590 particles (403,080 asymmetric units) was collected from 235 images.",
+      "claim_type": "EXPLICIT",
+      "source": "A dataset of 33,590 particles (403,080 asymmetric units) at a defocus range of 0.8\u20133.5 \u00b5m was collected from 235 images in two sessions on a single grid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as data collection results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "172ce9c1-b820-4261-809f-675fce4fa1eb",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C20",
+      "claim": "The defocus range used was 0.8\u20133.5 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "A dataset of 33,590 particles (403,080 asymmetric units) at a defocus range of 0.8\u20133.5 \u00b5m was collected from 235 images in two sessions on a single grid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a parameter of data collection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "aeec7751-55f5-4a0d-b325-5b9bb5085cb3",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C21",
+      "claim": "The Frh complex has a diameter of approximately 175 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Areas of very thin ice were selected that we estimate to be only slightly thicker than the particle diameter of \u223c175 \u00c5",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an estimate based on observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "eb8b4a55-62e1-492a-ae7d-8bc35a048333",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C22",
+      "claim": "A first refinement using the sum of the first 20 video frames yielded a map at 3.94 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "A first refinement using the sum of the first 20 video frames (discarding the last 4 frames because of likely radiation damage [Baker and Rubinstein, 2010]) yielded a map at 3.94 \u00c5 resolution (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a result from data processing, shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "2e5375b0-0ae5-4805-8151-53a19a30db27",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C23",
+      "claim": "The first frame of videos showed a large movement in comparison with subsequent frames in the majority of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "In the majority of cases, the first frame showed a large movement in comparison with the others (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from frame alignment analysis, shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "3b829011-625e-49b5-8f53-5e3ef6ec0efd",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C24",
+      "claim": "Discarding the first frame results in a higher-resolution map than including it.",
+      "claim_type": "EXPLICIT",
+      "source": "We refined the sum of the aligned frames with or without the first frame and found that discarding the first frame results in a higher-resolution map (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a result from comparative refinement, shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "e203f6e0-19e3-4af6-a1ef-b36dfc9ace07",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C25",
+      "claim": "Refinement of 20 aligned frames resulted in a 3.74 \u00c5 map.",
+      "claim_type": "EXPLICIT",
+      "source": "The refinement of the 20 aligned frames resulted in a 3.74 \u00c5 map (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a result from data processing, shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "a88337c3-a095-4741-9776-d6c80b4e2476",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C26",
+      "claim": "Statistical alignment procedure using a running average of 5 frames gave the best resolution among particle-based methods.",
+      "claim_type": "EXPLICIT",
+      "source": "This procedure also improved the resolution relative to the unaligned particles in a very similar way to the whole-frame alignment (Figure 2A); the best resolution was obtained when 5 frames were averaged.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a result from testing different frame averaging parameters, shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "7a854432-0554-4251-9e0c-cb11b0df5cac",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C27",
+      "claim": "Combining whole-frame and particle-based alignment procedures resulted in a 3.69 \u00c5 resolution map.",
+      "claim_type": "EXPLICIT",
+      "source": "In yet another approach we combined the two alignment procedures (whole-frame and particle-based). The resolution curve of this refinement gave a better FSC than the others over all frequencies and the resulting reconstruction had a resolution of 3.69 \u00c5 (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a result from combined alignment approach, shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "9dffdc22-cecb-4157-a77d-e1b9e1af3d60",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C28",
+      "claim": "For the intermediate-sized Frh particle, the combination of whole-frame and particle-based alignment procedures works best.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that for the intermediate-sized particle investigated here the combination of the two alignment procedures works best.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from comparing different alignment methods",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "66defe0b-ca22-4984-96db-7410572f83c8",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C29",
+      "claim": "Reducing the number of averaged frames to 6 gave the best resolution of 3.39 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Every omitted frame improved the map resolution until only 6 frames were averaged. This gave the best resolution of 3.39 \u00c5, compared to 3.74 \u00c5 for all 20 frames (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a result from testing different numbers of frames, shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "5444ec07-7e14-476f-acf3-1c69d50f81aa",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C30",
+      "claim": "Reducing the number of averaged frames to fewer than 6 made the resolution worse.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing the number of averaged frames further to 4 or 5 made the resolution worse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from testing fewer frames",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "8599c153-3f0d-493c-8e7d-d9d07bbb6f73",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C31",
+      "claim": "Adding 15,000 particles from a third microscope session reduced the map resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "A third microscope session on a different grid yielded another 15,000 particles. Adding them, however, reduced the map resolution and these images were therefore not included in further steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from attempting to add more data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "52a9d486-df25-4a56-92fc-77ba78c7282a",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C32",
+      "claim": "The third dataset had worse data quality because of thicker ice on the grid.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume the data quality was worse because of the thicker ice on this grid, which had made it necessary to use a higher defocus, never less than 1.2 \u00b5m, to distinguish the particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an inference about why the third dataset was of lower quality",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "63c4422b-3254-4002-a87a-aa701f19413e",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C33",
+      "claim": "Removing images with high defocus (>2.5 \u00b5m) and poor quality reduced the dataset from 33,590 to 26,635 particles.",
+      "claim_type": "EXPLICIT",
+      "source": "We removed the images with high defocus (>2.5 \u00b5m) and those that were of poor quality as judged by the visibility and symmetry of the Thon rings. This reduced the dataset by 20% from 33,590 to 26,635 particles (319,620 asymmetric units).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a data processing step and its result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "5bd7082e-8279-4363-8a53-6bb27e114a47",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C34",
+      "claim": "Refinement of the reduced dataset with 6 frames averaged resulted in a 3.36 \u00c5 resolution map.",
+      "claim_type": "EXPLICIT",
+      "source": "Refinement of this smaller dataset under otherwise identical conditions resulted in maps with better resolution than the full dataset, and the best map, with 6 frames averaged, extended to 3.36 \u00c5 resolution (Figures 2C and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as the final result from optimized data processing, shown in Figures 2C and 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "f4a3b859-4427-4fbd-838d-5dc64df8c7fb",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C35",
+      "claim": "The accumulated dose for the final 6-frame data was approximately 24 e\u2212/\u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "The accumulated dose for this data was \u223c24 e\u2212/\u00c52.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a calculated parameter of the final dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "9a0a7cb7-56d3-42af-b17f-3e2bc510222c",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C36",
+      "claim": "The local resolution map was featureless, indicating that the dodecameric Frh complex is completely rigid.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the local resolution of the map with the program ResMap (Kucukelbir et al., 2014) to identify possible flexible protein regions. The local resolution map was featureless (not shown), indicating that the dodecameric Frh complex is completely rigid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from local resolution analysis and its interpretation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "f6f2fa06-67da-4c60-bf92-d5c133073bd8",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C37",
+      "claim": "A map from the last 6 frames (pre-irradiated with ~24 e\u2212/\u00c52) had 3.94 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "we also created maps of the last 6 and the middle 6 frames of the 20-frame videos of the reduced dataset, averaging particles that were in effect pre-irradiated with \u223c24 and 49 e\u2212/\u00c52. This resulted in maps of 3.94 and 4.16 \u00c5 resolution, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from analyzing radiation damage effects",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "b078aa33-4a0f-4328-91c5-6848f95834ed",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C38",
+      "claim": "A map from the middle 6 frames (pre-irradiated with ~49 e\u2212/\u00c52) had 4.16 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "we also created maps of the last 6 and the middle 6 frames of the 20-frame videos of the reduced dataset, averaging particles that were in effect pre-irradiated with \u223c24 and 49 e\u2212/\u00c52. This resulted in maps of 3.94 and 4.16 \u00c5 resolution, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from analyzing radiation damage effects",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "78eb4256-cff5-4081-9b04-30d3713c46c9",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C39",
+      "claim": "Pre-irradiation resulted in poorer visibility of side chain densities.",
+      "claim_type": "EXPLICIT",
+      "source": "which was clearly reflected in the poorer visibility of side chain densities (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from comparing maps with different pre-irradiation doses, shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "e06729e5-ee0a-4b2d-b894-00dcfc500d65",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C40",
+      "claim": "The 3.36 \u00c5 map shows all secondary structure clearly.",
+      "claim_type": "EXPLICIT",
+      "source": "The reconstructed density map shows all secondary structure as well as clear side chain densities for most residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a description of the final map quality",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "65560f74-2fb0-4e9d-8112-71281e8f5ad6",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C41",
+      "claim": "The 3.36 \u00c5 map shows clear side chain densities for most residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The reconstructed density map shows all secondary structure as well as clear side chain densities for most residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a description of the final map quality",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "e2e12506-6e7e-457a-aad4-259927fb8d37",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C42",
+      "claim": "The full coordination of all cofactors in the electron transfer chain is clearly visible in the 3.36 \u00c5 map.",
+      "claim_type": "EXPLICIT",
+      "source": "The full coordination of all cofactors in the electron transfer chain (a [NiFe] center, four [4Fe4S] clusters and an FAD) is clearly visible along with a well-defined substrate access channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a description of the final map quality",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "3f862b1b-6b43-472c-9ac3-eac21aad7a93",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C43",
+      "claim": "A well-defined substrate access channel is visible in the 3.36 \u00c5 map.",
+      "claim_type": "EXPLICIT",
+      "source": "The full coordination of all cofactors in the electron transfer chain (a [NiFe] center, four [4Fe4S] clusters and an FAD) is clearly visible along with a well-defined substrate access channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a description of the final map quality",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "0a17e8c4-26af-48e0-8328-fa196fde1f25",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C44",
+      "claim": "Catalysis by Frh is diffusion-limited and does not depend on protein flexibility or conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "From the rigidity of the complex we conclude that catalysis is diffusion-limited and does not depend on protein flexibility or conformational changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion drawn from the observed rigidity of the complex",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "c1bdeac1-9b3a-4aa0-b12b-4843cfa99d98",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C45",
+      "claim": "Alpha helices and beta sheets were easily recognizable in the 3.36 \u00c5 map.",
+      "claim_type": "EXPLICIT",
+      "source": "Alpha helices (Figure 7) and beta sheets (Figure 8) were easily recognizable",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation about map quality, shown in Figures 7 and 8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "d97e58a7-d0c9-417f-82ef-3b24fb12a5a3",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C46",
+      "claim": "The large majority of side chains had good density in the 3.36 \u00c5 map.",
+      "claim_type": "EXPLICIT",
+      "source": "and the large majority of side chains had good density (Figure 9; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation about map quality, shown in Figure 9 and Video 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "1e8a09b7-c265-40f5-bda3-44c24fafb57f",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C47",
+      "claim": "Most of the protein could be fitted to the map using real space refinement in Coot.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the protein could be fitted to the map using the 'real space refine' feature in Coot, which had not been possible for the lower resolution map from film images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result of model building",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "9f4f1cac-37ad-435e-b4db-36c88edca6fb",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C48",
+      "claim": "The FSC between the final map and a map calculated from the fitted model is 0.5 at 3.56 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The FSC between this map and a map calculated from the fitted model is 0.5 at 3.56 \u00c5 resolution, close to the resolution of the final map, confirming the correctness of the fit (Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a validation result, shown in Figure 10",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "3449ef15-b71e-4fa4-b95d-8c98bae74d05",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C49",
+      "claim": "All three subunits were traced completely except for a few N- or C-terminal residues, accounting for 893 out of 903 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "All three subunits were traced completely except for a few N- or C-terminal residues, accounting for 893 out of 903 amino acids (Figure 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a result of model building, shown in Figure 11",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "8fb0212c-763b-4b05-953a-2885a04d50a3",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C50",
+      "claim": "All three proteins had been traced essentially correctly in the lower-resolution film map.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all three proteins had been traced essentially correctly in the lower-resolution film map (Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a comparison between the new and old models, shown in Video 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "7b3538cc-9c9f-4a4a-be6a-cf5eb657539d",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C51",
+      "claim": "The largest differences between the two models were found in surface loops that had been difficult to trace in the film map.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest differences between the two models were found in surface loops that had been difficult to trace in the film map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison between the new and old models",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "158c853d-c574-446d-91fd-1e91dd5fbed5",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C52",
+      "claim": "A 12-residue stretch in FrhG (188\u2013199) that was unresolved in the previous model is now resolved as two alpha-helices (194\u2013201 and 208\u2013215).",
+      "claim_type": "EXPLICIT",
+      "source": "The only unresolved part in the previous model involved a 12-residue stretch in FrhG (188\u2013199), for which no density was found and which was thought to form a flexible surface loop. In the new map, two nearby density features, modelled as extended loops before, were clearly recognizable as alpha-helices (194\u2013201 and 208\u2013215) that accommodate the missing residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison between the new and old models",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "86ac8a6c-cb9b-4d4c-b045-d828d5dcce51",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C53",
+      "claim": "The conserved cysteines C206 and C208 in FrhG are near a strong density on the dimer axis between two FrhG subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting shift of residues brings the cysteine residues C206 and C208, which are conserved in the FrhG family (Figure 11B), near a strong density on the dimer axis between two FrhG subunits.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the new model, shown in Figure 11B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "edac3d18-1d49-4beb-9c22-7e810801ab5e",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C54",
+      "claim": "The density between four cysteine side chains (C206 and C208 from two FrhG subunits) is strongly suggestive of a coordinated ion.",
+      "claim_type": "EXPLICIT",
+      "source": "The cysteines of the dimer partner are just a few \u00c5 away, and the density in between the four cysteine side chains is strongly suggestive of a coordinated ion (Figure 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an interpretation of the density, shown in Figure 12",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "6d2905d4-4f38-420e-b8fe-ac6dab44d9e7",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C55",
+      "claim": "The tetrahedral arrangement of the four cysteines suggests the coordinated ion is zinc.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the cysteine side chains are not completely resolved, their tetrahedral arrangement suggests that it is a zinc ion (Dokmani\u0107 et al., 2008; Harding et al., 2010; Rul\u00ed\u0161ek and Vondr\u00e1\u0161ek, 1998; Zheng et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an inference based on structural arrangement and supported by citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "24b5ed80-05d9-4bc6-91cf-82331c694ac1",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C56",
+      "claim": "The FAD cofactor in FrhB has continuous density in the map.",
+      "claim_type": "EXPLICIT",
+      "source": "The FAD cofactor in FrhB has continuous density in the map, and its folded conformation with the adenine and isoalloxazine moieties in close proximity (Mills et al., 2013) is confirmed (Figure 13; Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the map, shown in Figure 13 and Video 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "8d4c655f-896d-49f2-a265-6c7b7afd01ae",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C57",
+      "claim": "The FAD has a folded conformation with the adenine and isoalloxazine moieties in close proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "The FAD cofactor in FrhB has continuous density in the map, and its folded conformation with the adenine and isoalloxazine moieties in close proximity (Mills et al., 2013) is confirmed (Figure 13; Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a confirmation of previous observation, shown in Figure 13 and Video 4",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "d5243186-b918-40af-9e80-2d888f0e984c",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C58",
+      "claim": "The FAD is completely surrounded by conserved residues.",
+      "claim_type": "EXPLICIT",
+      "source": "As noted before (Mills et al., 2013), the FAD is completely surrounded by conserved residues, including loops 23\u201330, 71\u201377, and 131\u2013138 (which includes Cys134, a ligand of the nearby FeS cluster i.e., the electron donor to FAD) (Figure 11C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation confirmed from previous study, shown in Figure 11C",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "44279bbb-8774-4ed2-87f3-cf61183254af",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C59",
+      "claim": "There is no density for the substrate F420 in the map.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no density for the substrate, F420, but the FAD is accessible from the surface through a \u223c5 \u00c5 gap between the main body of FrhB and a domain formed by residues 128\u2013188 containing an alpha helix and a three-stranded beta sheet (Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the map, shown in Video 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "4a7631b3-744a-4e14-a131-76fc32045271",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C60",
+      "claim": "The FAD is accessible from the surface through a ~5 \u00c5 gap.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no density for the substrate, F420, but the FAD is accessible from the surface through a \u223c5 \u00c5 gap between the main body of FrhB and a domain formed by residues 128\u2013188 containing an alpha helix and a three-stranded beta sheet (Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the map, shown in Video 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "3cb827e8-01b1-4992-983f-6142295e5475",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C61",
+      "claim": "The putative substrate access channel is completely lined by conserved residues.",
+      "claim_type": "EXPLICIT",
+      "source": "This putative substrate access channel is, like the FAD itself, completely lined by conserved residues (Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the map, shown in Video 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "561245e5-e117-46c8-b0d2-378225d8076a",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C62",
+      "claim": "The Falcon II data quality is far superior to that obtained with photographic film.",
+      "claim_type": "EXPLICIT",
+      "source": "The Falcon II data quality is far superior to that obtained with photographic film.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison between the two detection methods",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "eaebdd16-7aa5-4d62-83f3-b68f9963d8a0",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C63",
+      "claim": "With film, a 5 \u00c5 map was obtained from 84,000 Frh particles.",
+      "claim_type": "EXPLICIT",
+      "source": "With film we obtained a 5 \u00c5 map from 84,000 Frh particles (Mills et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "e7616b7e-9208-402c-b4eb-c718e301e752",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C64",
+      "claim": "With Falcon II, a map with better than 4 \u00c5 resolution was achieved from 70% fewer particles than with film.",
+      "claim_type": "EXPLICIT",
+      "source": "but with Falcon II images of the same sample and the same electron microscope we were able to achieve a map with better than 4 \u00c5 resolution from 70% fewer particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison of results between film and Falcon II",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "0f5fc463-245c-4518-a858-bd812837b065",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C65",
+      "claim": "The higher DQE of the Falcon II detector makes it possible to reliably detect particles at very low defocus.",
+      "claim_type": "EXPLICIT",
+      "source": "The higher DQE of the detector makes it possible to reliably detect particles at very low defocus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an advantage of the Falcon II detector",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "422a4d43-b440-4ac1-bec2-976011a9d555",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C66",
+      "claim": "With Falcon II, particles were clearly visible at 900 nm defocus, whereas with film particles could not be detected at less than 1500 nm defocus.",
+      "claim_type": "EXPLICIT",
+      "source": "This is illustrated by Figure 1A, showing a micrograph taken at 900 nm defocus in which the particles are clearly visible, whereas with film we were not able to detect the particles at less than 1500 nm defocus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a comparison between film and Falcon II, shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "680cacd4-bfaf-4183-9892-efd4578e1373",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C67",
+      "claim": "The high-resolution signal for low-defocus images is very much better than that for images recorded at higher defocus.",
+      "claim_type": "EXPLICIT",
+      "source": "The high-resolution signal for the low-defocus images is very much better than that for images recorded at higher defocus, which was a critical factor in attaining the final map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation about data quality",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "e30da06b-2a53-4df9-bbeb-edaaa4b61dff",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C68",
+      "claim": "Both whole-frame and particle-based video alignment methods gave similar improvements in final map resolution compared to unaligned frames for the 1.2 MDa Frh complex.",
+      "claim_type": "EXPLICIT",
+      "source": "For this complex we found that both video alignment methods gave similar improvements in final map resolution compared to unaligned frames (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a result from comparing alignment methods, shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "db62f338-ab9c-48e2-b680-8c2445e484fd",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C69",
+      "claim": "The accumulated dose used for the 3.36 \u00c5 Frh map (~24 e/\u00c52) is very similar to the accumulated dose used for the 3.3 \u00c5 proteasome map (~21 e/\u00c52).",
+      "claim_type": "EXPLICIT",
+      "source": "The accumulated dose in these frames was \u223c24 e/\u00c52, very similar to the accumulated dose (\u223c21 e/\u00c52) used for the 3.3 \u00c5 proteasome map (Li et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison with previous study",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "b3a762dc-772f-4747-8eff-b078017b2e14",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C70",
+      "claim": "A 4.16 \u00c5 reconstruction from the last 6 frames still showed partial side chains and clear helices.",
+      "claim_type": "EXPLICIT",
+      "source": "A 4.16 \u00c5 reconstruction after a refinement of only the last 6 frames of the 20-frame videos still showed partial side chains and clear helices (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation about map quality despite radiation damage, shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "9d2bfb80-4a75-40d7-b5e1-9054015f9c7a",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C71",
+      "claim": "For smaller particles than the 1.2 MDa Frh complex, it would be advantageous to record videos over longer periods with higher cumulative doses.",
+      "claim_type": "EXPLICIT",
+      "source": "In case of smaller particles than the 1.2 MDa Frh complex, it would be advantageous to record videos over longer periods with higher cumulative doses, so that the particles are more visible and easier to align.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a recommendation based on the current study",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "1a30df3a-50e9-4bc2-8818-6d9b8febba88",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C72",
+      "claim": "Direct electron detectors provide a way to optimize a posteriori the electron exposure of the data used for reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, direct electron detectors provide a way to optimize a posteriori the electron exposure of the data used for reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion about the advantages of direct electron detectors",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "790f2885-7677-430d-a728-814d5afd52e4",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C73",
+      "claim": "Side chains on the surface are in general not seen in the 3.36 \u00c5 map, probably due to their flexibility in the aqueous solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "Side chains on the surface are in general not seen, probably due to their flexibility in the aqueous solvent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation and interpretation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "88758669-a259-406e-a4da-9bde487e27d0",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C74",
+      "claim": "The side chains of glutamates and aspartates are almost all absent in the 3.36 \u00c5 map.",
+      "claim_type": "EXPLICIT",
+      "source": "The only conspicuous exceptions are the side chains of glutamates and aspartates, which are almost all absent (Figure 9)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the map, shown in Figure 9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "7944090b-bcbc-4919-80aa-3ff9104ebe17",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C75",
+      "claim": "An absence of aspartate and glutamate side chain densities can be observed in other high-resolution cryo-EM maps.",
+      "claim_type": "EXPLICIT",
+      "source": "An absence of aspartate and glutamate side chain densities can also be observed in other high-resolution cryo-EM maps, including the electron crystallography maps of LHC-II (K\u00fchlbrandt et al., 1994) and bacteriorhodopsin (Kimura et al., 1997) and the recent 3.3-\u00c5 single particle map of the 20S proteasome (Li et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to other studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "3c2b5eb6-d089-44f4-9569-d610e66e591a",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C76",
+      "claim": "In X-ray crystallography, carboxylate side chains have higher B-factors after extended exposure to intense synchrotron radiation, possibly due to decarboxylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In X-ray crystallography it was noted that carboxylate side chains have higher B-factors after extended exposure to intense synchrotron radiation, possibly due to decarboxylation (Weik et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "51ce2785-b5d6-4832-bd12-4b93923abc85",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C77",
+      "claim": "Synchrotron radiation damage on carboxylate side chains occurs at radiation doses equivalent to less than 1 e/\u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "A quantification of synchrotron radiation damage on carboxylate side chains (Fioravanti et al., 2006) shows that this damage already occurs at radiation doses equivalent to less than 1 e/\u00c52 (Henderson, 1990), a much lower dose than is feasible in cryo-EM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "d1981bd5-8f10-47dc-8251-9b62261c199a",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C78",
+      "claim": "Decarboxylation of aspartate and glutamate would have occurred well within the first frame of the video dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the decarboxylation would have occurred well within the first frame of our video data set and aspartate and glutamate side chains would in general not be visible in cryo-EM maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an inference from radiation damage data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "ba6ad7a7-819d-4aa7-99d1-e9ac0ffbc294",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C79",
+      "claim": "FrhG Asp60 is involved in the coordination of the proximal FeS cluster and has visible density.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the few visible carboxylate side chains in Frh, two are involved in ligand binding: FrhG Asp60 in the coordination of the proximal FeS cluster, and FrhA Glu44 in liganding a possible Fe or Mg ion (Mills et al., 2013; Figure 15).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the map, shown in Figure 15",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "84a18ede-5a68-4b68-aaf1-4f47cb491c80",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C80",
+      "claim": "FrhA Glu44 is involved in liganding a possible Fe or Mg ion and has visible density.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the few visible carboxylate side chains in Frh, two are involved in ligand binding: FrhG Asp60 in the coordination of the proximal FeS cluster, and FrhA Glu44 in liganding a possible Fe or Mg ion (Mills et al., 2013; Figure 15).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the map, shown in Figure 15",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "571c51c9-4ac0-4197-b173-54956b1f566e",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C81",
+      "claim": "In X-ray crystallography, not all glutamate and aspartate side chains are equally susceptible to radiation damage.",
+      "claim_type": "EXPLICIT",
+      "source": "In X-ray crystallography it is also found that not all glutamate and aspartate side chains are equally susceptible to radiation damage, but the dependence on the structural and chemical environment is not well understood (Fioravanti et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "e612c35b-ab19-431f-9e63-6eaae15f5900",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C82",
+      "claim": "In the 3-\u00c5 bacteriorhodopsin EM map, the side chains of deprotonated Asp85 and Asp212 were invisible, whereas the protonated side chains of Asp96 and Asp115 had good density.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 3-\u00c5 bacteriorhodopsin EM map, the side chains of Asp85 and Asp212, which from spectroscopy are known to be deprotonated, were invisible, whereas the protonated side chains of Asp96 and Asp115 had good density (Kimura et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "c87b437f-c3ed-4d17-9af1-7278cfb2f6dc",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C83",
+      "claim": "The structure of Frh was traced ab initio in the previous cryo-EM map from film data.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of Frh was traced ab initio in our previous cryo-EM map from film data, which had a nominal overall resolution of 5.5 \u00c5 as determined by gold-standard FSC, but a significantly higher resolution of \u223c4.5 \u00c5 in well-defined regions of the map (Mills et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a description of previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "0ba4ff1c-bdca-4075-acc1-9abb19b367fb",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C84",
+      "claim": "The previous Frh structure from film data was essentially correct.",
+      "claim_type": "EXPLICIT",
+      "source": "There were many indications that our original Frh structure was essentially correct, for example well-resolved hydrophobic side chains in the protein interior and the observation of secondary structure in regions where it was expected from prediction programs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a validation of previous work",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "64e59b06-3c12-489a-ace9-92d3537df9a0",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C85",
+      "claim": "It would hardly be possible to trace an electron density map obtained by X-ray crystallography at a nominal resolution of 5.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that it would hardly be possible to trace an electron density map obtained by X-ray crystallography at a nominal resolution of 5.5 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a comparison between cryo-EM and X-ray crystallography",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "5c1a51e8-f285-41e5-9eaf-8337e9e20921",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C86",
+      "claim": "The difference in traceability between cryo-EM and X-ray maps at similar resolution reflects the quality of the phase information.",
+      "claim_type": "EXPLICIT",
+      "source": "This clear difference reflects the quality of the phase information, which is conserved in the phase contrast electron micrographs and determined directly by image processing, whereas in X-ray crystallography it is determined indirectly by isomorphous replacement or anomalous scattering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an explanation for the difference between cryo-EM and X-ray crystallography",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "cbdb2afd-022b-449c-9628-7148e922f99c",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C87",
+      "claim": "The function of Frh is the hydrogenation of F420 by molecular hydrogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the overall chain trace is the same, in detail the model based on the 3.36 \u00c5 map is of course much improved. The function of Frh is the hydrogenation of F420 by molecular hydrogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about Frh function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "4b1b6aa7-0610-4eb5-bd4f-76aada51835a",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C88",
+      "claim": "Electrons are extracted from hydrogen by the [NiFe] cluster in FrhA and transferred via the three [4Fe4S] clusters in FrhG and another one in FrhB to FAD and from there to the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrons are extracted from hydrogen by the [NiFe] cluster in FrhA, and transferred via the three [4Fe4S] clusters in FrhG and another one in FrhB to FAD and from there to the substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about the electron transfer pathway",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "dc3cf5d4-11b5-49d3-ba8c-4cac8f28d100",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C89",
+      "claim": "The electron transfer chain is clearly recognizable in the 3.36 \u00c5 map.",
+      "claim_type": "EXPLICIT",
+      "source": "The electron transfer chain is clearly recognizable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from the map",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "839c7954-4dc8-48ff-9b36-8b144685bb99",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C90",
+      "claim": "The [NiFe] cluster has a high density and is coordinated by conserved residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The [NiFe] cluster has a high density (Figure 15B) and is coordinated by conserved residues, as in the large subunits of other [NiFe] hydrogenases (Figure 11A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the map, shown in Figures 15B and 11A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "12652d77-8cfe-4c23-a6fd-1a4d9155a4d2",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C91",
+      "claim": "There is another conserved ion near the [NiFe] cluster, coordinated among others by the C-terminal histidine of FrhA, His386.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearby is another ion, also conserved, coordinated among others by the C-terminal histidine of FrhA, His386 (Figure 15B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the map, shown in Figure 15B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "376ea8f9-b242-4bd1-bafa-f94cd6f189c2",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C92",
+      "claim": "The four FeS clusters are arranged in a chain with distances of ~10 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The four FeS clusters were easily localized in the film map because of their high density; moreover, they are arranged in a chain with distances of \u223c10 \u00c5 (Mills et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from previous study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "576b43d8-5f3b-496b-a735-8b222123b013",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C93",
+      "claim": "In the Falcon II map, the tetrahedral coordination of the FeS clusters can be clearly seen.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Falcon II map, the clusters are not just featureless blobs, but their tetrahedral coordination (mostly by cysteine residues, or, in one case, an aspartate) can be clearly seen (Figure 6, Figure 15A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from the map, shown in Figures 6 and 15A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "93d66725-d697-4e68-aacc-5f6bfca9ce43",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C94",
+      "claim": "The orientation of the FeS clusters can be modelled correctly, with the irons facing the sulphurs of the cysteine side chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus their orientation can be modelled correctly, with the irons facing the sulphurs of the cysteine side chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result of improved map quality",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "d13a3734-fe95-4c1d-9a95-2a2b89076c96",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C95",
+      "claim": "The density for an ion on the dimer interface between two FrhG subunits was visible in the film map but not recognized as an ion.",
+      "claim_type": "EXPLICIT",
+      "source": "One unexpected feature found in the new map was the density for an ion on the dimer interface between two FrhG subunits (Figure 12). This density feature was actually visible in the film map, but since the flanking conserved cysteines from the two FrhG subunits were not recognized, its interpretation as an ion was not obvious.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a comparison between the new and old maps, shown in Figure 12",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "72167ff6-d908-43e0-9e0c-6d071b7605fa",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C96",
+      "claim": "The function of the ion on the FrhG dimer interface is most likely to stabilize the dodecameric complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The function of this ion is most likely to stabilize the dodecameric complex, but its location between the two medial FeS clusters at a distance of only 9 \u00c5, which is less than the distance of \u223c10 \u00c5 between adjacent FeS clusters in the electron transfer chains, means that a role in electron transfer cannot be ruled out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an inference about the ion's function",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "f5010aac-57af-4413-a62f-44ae050d13cc",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C97",
+      "claim": "A role in electron transfer for the ion on the FrhG dimer interface cannot be ruled out.",
+      "claim_type": "EXPLICIT",
+      "source": "The function of this ion is most likely to stabilize the dodecameric complex, but its location between the two medial FeS clusters at a distance of only 9 \u00c5, which is less than the distance of \u223c10 \u00c5 between adjacent FeS clusters in the electron transfer chains, means that a role in electron transfer cannot be ruled out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a speculation about the ion's function",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "aa8c0295-3e15-43b5-8331-f6a5ce651c34",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C98",
+      "claim": "FAD acts as a one-electron/two-electron redox switch between the FeS clusters and the F420 substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "FAD acts as a one-electron/two-electron redox switch between the FeS clusters and the F420 substrate (Fox et al., 1987; Alex et al., 1990; Thauer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "1e89b057-9463-48e1-b505-b403aae17fd6",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C99",
+      "claim": "The substrate needs to approach the FAD to within van der Waals distance to enable hydride transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the substrate needs to approach the FAD to within van der Waals distance to enable hydride transfer (Ceh et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "30d783d7-b010-4f3c-a923-a629f0ea1265",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C100",
+      "claim": "In a previous study, a density near the FAD isoalloxazine ring was interpreted as part of F420 at low occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous study, we collected data from Frh with and without the substrate. In the map obtained in the presence of substrate we had identified a density near the FAD isoalloxazine ring that we interpreted as part of F420 at low occupancy (Mills et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a description of previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "70eddd02-9426-405b-a147-ebdbc6219dd0",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C101",
+      "claim": "The F420 binding pocket is clearly empty in the new Falcon-II map despite using a sample with a large excess of F420.",
+      "claim_type": "EXPLICIT",
+      "source": "For the new Falcon-II map, we used an Frh sample with a large excess of F420, but the F420 binding pocket is clearly empty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from the new map",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "4c5e23f7-dcd1-4e69-a7e5-4a41599e6106",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C102",
+      "claim": "The density interpreted as F420 in the film map must have been due to noise.",
+      "claim_type": "EXPLICIT",
+      "source": "As the same sample was used in both studies, we conclude that the density in the film map must have been due to noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from comparing the two maps",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "628cfde9-81f8-40a1-8f42-003c43f6a238",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C103",
+      "claim": "There is no indication of even a low occupancy of substrate or of flexibility in the F420 binding region.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no indication of even a low occupancy of substrate or of flexibility in this map region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from the map",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "2196a2ac-68f7-45ae-94f0-019d1d77de57",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C104",
+      "claim": "The protein region around the F420 binding pocket is rigid.",
+      "claim_type": "EXPLICIT",
+      "source": "A map of local resolution (Kucukelbir et al., 2014) confirmed that the protein region around this pocket is rigid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from local resolution analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "bee186b8-3273-4562-b8d3-3ab5906e5f8a",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C105",
+      "claim": "Conformational changes do not play a role for the access of F420 to the hydride donor.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that conformational changes do not play a role for the access of F420 to the hydride donor, consistent with the finding that F420 reduction by Frh is very rapid and most likely diffusion-limited (Livingston et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an inference from the rigidity of the complex, supported by citation",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "6100b33b-6755-404d-9cfe-50b1f925551f",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C106",
+      "claim": "F420 reduction by Frh is very rapid and most likely diffusion-limited.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that conformational changes do not play a role for the access of F420 to the hydride donor, consistent with the finding that F420 reduction by Frh is very rapid and most likely diffusion-limited (Livingston et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "98504517-1210-4c8d-be27-fc37037a8eb5",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C107",
+      "claim": "Direct electron detection cameras open new horizons for cryo-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "The advent of direct electron detection cameras opens new horizons for cryo-EM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a general conclusion about the impact of the technology",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "03f5df49-53a3-45c0-8523-888e252af425",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C108",
+      "claim": "It is now possible to obtain higher-resolution maps with many fewer images using direct electron detectors.",
+      "claim_type": "EXPLICIT",
+      "source": "It is now possible to obtain higher-resolution maps with many fewer images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion about the advantages of direct electron detectors",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "64dfcd25-de4e-44e4-a633-63993e21aad7",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C109",
+      "claim": "Using video data collection mode, the optimal data in terms of SNR or radiation damage can be extracted a posteriori.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the video data collection mode, the optimal data in terms of SNR or radiation damage can be extracted a posteriori",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion about the advantages of video mode",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "3eb2ecd8-a54e-4c6e-ab24-c7ef9e9acd00",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C110",
+      "claim": "Frame alignment schemes can be fine-tuned to the object under investigation.",
+      "claim_type": "EXPLICIT",
+      "source": "and frame alignment schemes can be fine-tuned to the object under investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion about the flexibility of video processing",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "b9186fcd-f8d9-4804-9022-582a946fd37c",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C111",
+      "claim": "The purification of the Frh complex from Methanothermobacter marburgensis was performed as previously described.",
+      "claim_type": "EXPLICIT",
+      "source": "The purification of the Frh complex from Methanothermobacter marburgensis and the preparation of the grids for the electron microscope data collection were performed as described (Mills et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a method with citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "af937c73-a0fa-42ae-9933-91e38712f6cf",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C112",
+      "claim": "3 \u03bcl of a 0.7 mg/ml Frh sample in the presence of 10 mM F420 was applied to Quantifoil R1/4 holey carbon grids.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, 3 \u03bcl of a 0.7 mg/ml Frh sample in the presence of 10 mM F420 was applied to freshly glow discharged Quantifoil R1/4 holey carbon grids (Quantifoil Micro Tools, Jena, Germany).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a method used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "fd781502-5f20-428a-a01e-9396a66e818c",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C113",
+      "claim": "Data was collected on an FEI Tecnai Polara operating at 300 kV.",
+      "claim_type": "EXPLICIT",
+      "source": "Data was collected on an FEI Tecnai Polara operating at 300 kV, using a back-thinned FEI Falcon II direct electron detector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a method used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "bc082ee0-ac6d-4555-828d-591908726365",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C114",
+      "claim": "The calibrated magnification on the 14 \u00b5m pixel camera was 106,000, resulting in a 1.32 \u00c5 pixel size at the specimen.",
+      "claim_type": "EXPLICIT",
+      "source": "The calibrated magnification on the 14 \u00b5m pixel camera was 106,000, resulting in a 1.32 \u00c5 pixel size at the specimen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a method parameter",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "98fca3d4-0927-4306-8f64-5ebdd7f1f0e8",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C115",
+      "claim": "Videos were collected for 1.5 s with a total of 24 frames with a calibrated dose of 3.5 e\u2212/\u00c52 per frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Videos were collected for 1.5 s with a total of 24 frames with a calibrated dose of 3.5 e\u2212/\u00c52 per frame, at various defocus values in the range between 0.8 and 3.8 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a method parameter",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "beb5b1cd-7b20-4caa-ac2f-5b9f242e7be7",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C116",
+      "claim": "Tetrahedral symmetry was applied in all refinements.",
+      "claim_type": "EXPLICIT",
+      "source": "Tetrahedral symmetry was applied in all refinements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a method used in data processing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "3c1b6bf7-5ac2-4e1a-adad-57de9845adf6",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C117",
+      "claim": "B factors between \u2212150 and \u2212230 \u00c52 were found for all maps.",
+      "claim_type": "EXPLICIT",
+      "source": "For all maps, B factors between \u2212150 and \u2212230 \u00c52 were found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from post-processing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "5ad5e8f5-dec4-43c0-8ab6-ef6079c4eaaf",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C118",
+      "claim": "The final model for the FrhABG heterotrimer contains 893 amino acid residues out of a possible 903.",
+      "claim_type": "EXPLICIT",
+      "source": "The final model for the FrhABG heterotrimer contains 893 amino acid residues out of a possible 903, a [NiFe] cluster, four [4Fe4S] clusters, one FAD, and two metal ions, one of them coordinated by two trimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a description of the final model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "bf442dae-02da-45b8-b502-2485d1de3e91",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C119",
+      "claim": "96.5% of residues in the final model have backbone dihedral angles in the most favored region of the Ramachandran plot.",
+      "claim_type": "EXPLICIT",
+      "source": "96.5% of residues have backbone dihedral angles in the most favored region of the Ramachandran plot and the remaining 3.5% are in the generously allowed regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a validation metric for the final model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "518fd6a7-d74d-4220-8d0d-71b2c82987f3",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C120",
+      "claim": "Excluding glycine, aspartate and glutamate, 86% of side chains are well visible in the 3.36 \u00c5 map.",
+      "claim_type": "EXPLICIT",
+      "source": "Excluding glycine, aspartate and glutamate, 86% of side chains are well visible.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a quantification of map quality, shown in Figure 9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "19e05b83-4756-412b-be21-bbf1b1fd720f",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C121",
+      "claim": "Unresolved side chains other than aspartate and glutamate are mostly located on the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Unresolved side chains other than aspartate and glutamate are mostly located on the surface.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation about the distribution of unresolved side chains, shown in Figure 9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "d73f64aa-122b-4465-9ae0-267d4ecd4f8e",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C122",
+      "claim": "Particles were clearly distinguishable below 1 \u03bcm defocus with a 1.5 s exposure (~90 e/\u00c52).",
+      "claim_type": "EXPLICIT",
+      "source": "The particles were clearly distinguishable below 1 \u03bcm defocus with a 1.5 s exposure (\u223c90 e/\u00c52) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation about data quality, shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "b398988c-552d-4e11-9dd9-1b79fb741042",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "claim_id": "C123",
+      "claim": "Thon rings are visible beyond 80% of the Nyquist frequency at 0.3 \u00c5\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Thon rings are visible beyond 80% of the Nyquist frequency at 0.3 \u00c5\u22121.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation about CTF quality, shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Using the Falcon II direct electron detector in video mode, the authors collected cryo-EM data of the Frh complex and achieved a 3.36 \u00c5 resolution map from 26,635 particles using optimized frame alignment and data selection procedures. The combination of whole-frame and particle-based alignment methods worked best for this intermediate-sized complex, and using only 6 frames (accumulated dose ~24 e\u207b/\u00c5\u00b2) gave optimal resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C35 and C111-C116 collectively describe a well-documented data collection and processing workflow with clear methodological details, systematic optimization of parameters, and consistent results shown in multiple figures. The resolution improvements from different alignment strategies are quantified and the final 3.36 \u00c5 map is validated through multiple metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "98749808-53d8-4dfd-a43c-d71089be6613",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The 3.36 \u00c5 resolution map shows clear secondary structure, side chain densities for most residues (86% excluding Gly, Asp, Glu), full coordination of all cofactors in the electron transfer chain, and a well-defined substrate access channel. The model was built with 893 of 903 residues and validated with good Ramachandran statistics (96.5% in favored regions) and FSC of 0.5 at 3.56 \u00c5 between map and model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C49 and C118-C121 describe the quality of the final map and model with specific quantitative metrics, visual evidence in multiple figures, and standard validation measures. The consistency between map resolution, model quality, and validation statistics supports these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "8b3a5af0-5213-415b-aa9b-cf5e9885f582",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Comparison with the previous film-based structure showed that the protein chains were traced essentially correctly, with the main differences in surface loops. A previously unresolved 12-residue stretch in FrhG (188-199) was now resolved as two alpha-helices, revealing conserved cysteines C206 and C208 near a density on the FrhG dimer interface that is interpreted as a coordinated zinc ion based on tetrahedral arrangement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 and C95 describe specific structural improvements enabled by the higher resolution map, with clear identification of previously missing residues and discovery of a putative zinc binding site. The tetrahedral coordination geometry and conservation of cysteines support the zinc assignment, though the claim acknowledges the cysteine side chains are not completely resolved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "703e91dd-a667-4918-9b47-b02561af86b9",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The FAD cofactor shows continuous density in a folded conformation with conserved residues lining the binding pocket. No density for substrate F420 was observed despite using excess substrate, contradicting a previous interpretation from the film map. The FAD is accessible through a ~5 \u00c5 gap that forms a putative substrate access channel lined by conserved residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 and C100-C103 describe the FAD binding site structure and substrate access with visual evidence. The authors appropriately acknowledge their previous misinterpretation of noise as substrate density in the lower-resolution film map, demonstrating scientific rigor. The absence of substrate despite excess F420 is clearly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "21fcccde-400a-4fcb-b91f-0d72f7cd3c43",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Local resolution analysis showed the Frh complex is completely rigid, including the F420 binding region. The authors conclude that catalysis is diffusion-limited and does not depend on protein flexibility or conformational changes, consistent with the known rapid kinetics of F420 reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C44, C104-C106 connect structural observations (uniform local resolution, rigid binding pocket) to functional conclusions about the catalytic mechanism. The inference is supported by ResMap analysis and is consistent with prior kinetic data (C106), though the conclusion about mechanism is based on structural rigidity rather than direct functional measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "42af6a97-f751-4c61-a65b-a1a06b48e813",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The electron transfer chain is clearly visible in the map, showing the [NiFe] cluster with high density coordinated by conserved residues, another conserved ion near it coordinated by His386, and four [4Fe4S] clusters arranged in a chain with ~10 \u00c5 spacing. The improved resolution allows visualization of tetrahedral coordination and correct orientation of the FeS clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C94 describe the electron transfer chain components with specific structural details visible in the high-resolution map. The ability to see tetrahedral coordination and orient the clusters correctly represents a clear improvement over the previous film-based structure, supported by visual evidence in figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "0bc0cf40-dd49-4d83-8e79-05b5542ae949",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Glutamate and aspartate side chains are almost entirely absent from the map, even in the earliest frames, consistent with radiation damage observed in other cryo-EM maps and X-ray crystallography. The authors propose this results from decarboxylation occurring at doses <1 e\u207b/\u00c5\u00b2, well within the first frame. Exceptions include Asp60 and Glu44 involved in metal coordination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C82 systematically document the absence of acidic side chains and provide a mechanistic explanation based on radiation damage literature. The observation is quantified (Figure 9), compared to other structures, and supported by radiation damage studies. The exceptions (metal-coordinating residues) are noted, and the authors acknowledge uncertainty about environmental factors affecting susceptibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "975b5385-dd8f-445c-9591-a14f9abe8778",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Maps reconstructed from later video frames (pre-irradiated with ~24 and ~49 e\u207b/\u00c5\u00b2) had progressively worse resolution (3.94 \u00c5 and 4.16 \u00c5) and poorer side chain visibility, demonstrating the effects of radiation damage. However, even the 4.16 \u00c5 map from heavily irradiated frames showed partial side chains and clear helices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 and C70 quantify radiation damage effects by comparing maps from different frame ranges, with clear visual evidence in Figure 5. The systematic degradation with increasing dose and the observation that structural information persists even after significant damage are well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "8381a949-8eb1-4a49-9cc4-32ba8d6bf292",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Falcon II detector provided far superior data quality compared to photographic film, achieving better than 4 \u00c5 resolution from 70% fewer particles (26,000 vs 84,000). The higher DQE enabled reliable particle detection at very low defocus (900 nm vs \u22651500 nm for film), and low-defocus images had much better high-resolution signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 provide a direct comparison between Falcon II and film data for the same sample, with specific quantitative improvements in particle requirements, defocus limits, and resolution. The comparison is fair (same sample, same microscope) and the advantages are clearly demonstrated with visual evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "2385ab09-84b9-4dee-8fe6-dc742179b70a",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "For the 1.2 MDa Frh complex, both whole-frame and particle-based alignment methods gave similar improvements compared to unaligned frames. The optimal accumulated dose (~24 e\u207b/\u00c5\u00b2) was very similar to that used for the 3.3 \u00c5 proteasome map (~21 e\u207b/\u00c5\u00b2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 compare alignment methods and optimal doses, with results shown in Figure 2A and comparison to published work. The finding that both methods work similarly for this intermediate-sized particle is clearly demonstrated, and the dose comparison provides useful context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "539b7c3e-7ee0-4e94-9bcd-41c5651b89b2",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Adding 15,000 particles from a third microscope session reduced map resolution, likely due to thicker ice requiring higher defocus (\u22651.2 \u03bcm) for particle detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 document a negative result (adding data degraded resolution) and provide a reasonable explanation based on ice thickness and defocus. This demonstrates appropriate quality control in data processing, though the explanation is inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "b9c37ef4-a86e-4014-89ae-0b676f32f7cb",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The putative zinc ion on the FrhG dimer interface most likely functions to stabilize the dodecameric complex, but a role in electron transfer cannot be ruled out given its location 9 \u00c5 from medial FeS clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C97 propose two possible functions for the ion but acknowledge uncertainty. The structural location is described, but functional validation would require additional experiments. The speculation is reasonable but not definitively supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "3c0f08ab-0613-4921-9a1b-25b1b42a0c71",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Direct electron detectors enable obtaining higher-resolution maps with fewer images, allow a posteriori optimization of electron exposure and frame selection, and permit fine-tuning of alignment schemes for different specimens. For smaller particles, longer videos with higher cumulative doses would be advantageous.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 and C107-C110 summarize the advantages of direct electron detectors and video mode based on the demonstrated results. The conclusions about flexibility and optimization are supported by the systematic testing shown in the paper. The recommendation for smaller particles (C71) is reasonable extrapolation from the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "73b02fed-85fa-42b4-aeb9-a676711f0474",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The previous Frh structure traced ab initio from 5.5 \u00c5 film data was essentially correct, which would be difficult to achieve with X-ray crystallography at similar resolution. This difference reflects the superior phase information in cryo-EM, which is determined directly rather than indirectly as in crystallography.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 validate the previous work and explain why cryo-EM maps are more interpretable than X-ray maps at similar nominal resolution. The comparison between the two Frh structures (C50) supports the claim that the original model was essentially correct, and the explanation about phase information is well-established knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "5bfc6e2b-dc52-4b81-bf2f-450cf7f5a205",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Direct electron detectors have higher DQE than film, enable video collection to correct beam-induced motion (largest in first frames), and have enabled unprecedented resolution maps including 3.3 \u00c5 for proteasome and 4.5 \u00c5 for ribosome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 summarize established knowledge and recent achievements in the field, properly cited to prior work. These provide context for the current study but are not original findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "73239651-224d-4eaa-902f-5bea4eed7f38",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Frh is a 1.2 MDa dodecameric complex with tetrahedral symmetry, comprising heterotrimers of FrhA (43 kDa, [NiFe] center), FrhG (26 kDa, three [4Fe4S] clusters), and FrhB (31 kDa, F420-binding site, one [4Fe4S] cluster, FAD). It catalyzes F420 hydrogenation via electron transfer from H\u2082 through the [NiFe] cluster, four [4Fe4S] clusters, and FAD to substrate. A previous film-based map achieved ~5 \u00c5 resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C16 and C87-C88, C98-C99 describe established knowledge about Frh structure and function, properly cited to prior work including the authors' previous study. These provide essential background but are not new findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    },
+    {
+      "id": "77de41e0-e68a-452b-a8ea-f010210404c8",
+      "content_id": "d707e917-7b26-47ea-b4f0-fae4bda4d811",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "B-factors between -150 and -230 \u0172 were found for all maps. Particles were clearly distinguishable below 1 \u03bcm defocus with 1.5 s exposure (~90 e\u207b/\u0172), and Thon rings were visible beyond 80% of Nyquist frequency at 0.3 \u0172\u207b\u00b9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C117, C122-C123 report technical parameters and data quality metrics with visual evidence. These are standard quality indicators that support the overall data quality but are routine reporting rather than major findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:13:32.111835Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "056a5dad-79ff-47a1-b1c7-0ba049ab1b47",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "0cc54264-49d5-47dd-8fac-b4aa12d7a4fc",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "5d62424a-6a4e-415f-bdc5-37ae63bd5999",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "172ce9c1-b820-4261-809f-675fce4fa1eb",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "aeec7751-55f5-4a0d-b325-5b9bb5085cb3",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "eb8b4a55-62e1-492a-ae7d-8bc35a048333",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "2e5375b0-0ae5-4805-8151-53a19a30db27",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "3b829011-625e-49b5-8f53-5e3ef6ec0efd",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "e203f6e0-19e3-4af6-a1ef-b36dfc9ace07",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "a88337c3-a095-4741-9776-d6c80b4e2476",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "7a854432-0554-4251-9e0c-cb11b0df5cac",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "9dffdc22-cecb-4157-a77d-e1b9e1af3d60",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "66defe0b-ca22-4984-96db-7410572f83c8",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "5444ec07-7e14-476f-acf3-1c69d50f81aa",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "63c4422b-3254-4002-a87a-aa701f19413e",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "5bd7082e-8279-4363-8a53-6bb27e114a47",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "f4a3b859-4427-4fbd-838d-5dc64df8c7fb",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "b9186fcd-f8d9-4804-9022-582a946fd37c",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "af937c73-a0fa-42ae-9933-91e38712f6cf",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "fd781502-5f20-428a-a01e-9396a66e818c",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "bc082ee0-ac6d-4555-828d-591908726365",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "98fca3d4-0927-4306-8f64-5ebdd7f1f0e8",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "beb5b1cd-7b20-4caa-ac2f-5b9f242e7be7",
+      "result_id": "863f9e87-525e-4fb4-b8d4-fd8ee3db10ac"
+    },
+    {
+      "claim_id": "e06729e5-ee0a-4b2d-b894-00dcfc500d65",
+      "result_id": "98749808-53d8-4dfd-a43c-d71089be6613"
+    },
+    {
+      "claim_id": "65560f74-2fb0-4e9d-8112-71281e8f5ad6",
+      "result_id": "98749808-53d8-4dfd-a43c-d71089be6613"
+    },
+    {
+      "claim_id": "e2e12506-6e7e-457a-aad4-259927fb8d37",
+      "result_id": "98749808-53d8-4dfd-a43c-d71089be6613"
+    },
+    {
+      "claim_id": "3f862b1b-6b43-472c-9ac3-eac21aad7a93",
+      "result_id": "98749808-53d8-4dfd-a43c-d71089be6613"
+    },
+    {
+      "claim_id": "c1bdeac1-9b3a-4aa0-b12b-4843cfa99d98",
+      "result_id": "98749808-53d8-4dfd-a43c-d71089be6613"
+    },
+    {
+      "claim_id": "d97e58a7-d0c9-417f-82ef-3b24fb12a5a3",
+      "result_id": "98749808-53d8-4dfd-a43c-d71089be6613"
+    },
+    {
+      "claim_id": "1e8a09b7-c265-40f5-bda3-44c24fafb57f",
+      "result_id": "98749808-53d8-4dfd-a43c-d71089be6613"
+    },
+    {
+      "claim_id": "9f4f1cac-37ad-435e-b4db-36c88edca6fb",
+      "result_id": "98749808-53d8-4dfd-a43c-d71089be6613"
+    },
+    {
+      "claim_id": "3449ef15-b71e-4fa4-b95d-8c98bae74d05",
+      "result_id": "98749808-53d8-4dfd-a43c-d71089be6613"
+    },
+    {
+      "claim_id": "5ad5e8f5-dec4-43c0-8ab6-ef6079c4eaaf",
+      "result_id": "98749808-53d8-4dfd-a43c-d71089be6613"
+    },
+    {
+      "claim_id": "bf442dae-02da-45b8-b502-2485d1de3e91",
+      "result_id": "98749808-53d8-4dfd-a43c-d71089be6613"
+    },
+    {
+      "claim_id": "518fd6a7-d74d-4220-8d0d-71b2c82987f3",
+      "result_id": "98749808-53d8-4dfd-a43c-d71089be6613"
+    },
+    {
+      "claim_id": "19e05b83-4756-412b-be21-bbf1b1fd720f",
+      "result_id": "98749808-53d8-4dfd-a43c-d71089be6613"
+    },
+    {
+      "claim_id": "8fb0212c-763b-4b05-953a-2885a04d50a3",
+      "result_id": "8b3a5af0-5213-415b-aa9b-cf5e9885f582"
+    },
+    {
+      "claim_id": "7b3538cc-9c9f-4a4a-be6a-cf5eb657539d",
+      "result_id": "8b3a5af0-5213-415b-aa9b-cf5e9885f582"
+    },
+    {
+      "claim_id": "158c853d-c574-446d-91fd-1e91dd5fbed5",
+      "result_id": "8b3a5af0-5213-415b-aa9b-cf5e9885f582"
+    },
+    {
+      "claim_id": "86ac8a6c-cb9b-4d4c-b045-d828d5dcce51",
+      "result_id": "8b3a5af0-5213-415b-aa9b-cf5e9885f582"
+    },
+    {
+      "claim_id": "edac3d18-1d49-4beb-9c22-7e810801ab5e",
+      "result_id": "8b3a5af0-5213-415b-aa9b-cf5e9885f582"
+    },
+    {
+      "claim_id": "6d2905d4-4f38-420e-b8fe-ac6dab44d9e7",
+      "result_id": "8b3a5af0-5213-415b-aa9b-cf5e9885f582"
+    },
+    {
+      "claim_id": "d13a3734-fe95-4c1d-9a95-2a2b89076c96",
+      "result_id": "8b3a5af0-5213-415b-aa9b-cf5e9885f582"
+    },
+    {
+      "claim_id": "24b5ed80-05d9-4bc6-91cf-82331c694ac1",
+      "result_id": "703e91dd-a667-4918-9b47-b02561af86b9"
+    },
+    {
+      "claim_id": "8d4c655f-896d-49f2-a265-6c7b7afd01ae",
+      "result_id": "703e91dd-a667-4918-9b47-b02561af86b9"
+    },
+    {
+      "claim_id": "d5243186-b918-40af-9e80-2d888f0e984c",
+      "result_id": "703e91dd-a667-4918-9b47-b02561af86b9"
+    },
+    {
+      "claim_id": "44279bbb-8774-4ed2-87f3-cf61183254af",
+      "result_id": "703e91dd-a667-4918-9b47-b02561af86b9"
+    },
+    {
+      "claim_id": "4a7631b3-744a-4e14-a131-76fc32045271",
+      "result_id": "703e91dd-a667-4918-9b47-b02561af86b9"
+    },
+    {
+      "claim_id": "3cb827e8-01b1-4992-983f-6142295e5475",
+      "result_id": "703e91dd-a667-4918-9b47-b02561af86b9"
+    },
+    {
+      "claim_id": "30d783d7-b010-4f3c-a923-a629f0ea1265",
+      "result_id": "703e91dd-a667-4918-9b47-b02561af86b9"
+    },
+    {
+      "claim_id": "70eddd02-9426-405b-a147-ebdbc6219dd0",
+      "result_id": "703e91dd-a667-4918-9b47-b02561af86b9"
+    },
+    {
+      "claim_id": "4c5e23f7-dcd1-4e69-a7e5-4a41599e6106",
+      "result_id": "703e91dd-a667-4918-9b47-b02561af86b9"
+    },
+    {
+      "claim_id": "628cfde9-81f8-40a1-8f42-003c43f6a238",
+      "result_id": "703e91dd-a667-4918-9b47-b02561af86b9"
+    },
+    {
+      "claim_id": "9a0a7cb7-56d3-42af-b17f-3e2bc510222c",
+      "result_id": "21fcccde-400a-4fcb-b91f-0d72f7cd3c43"
+    },
+    {
+      "claim_id": "0a17e8c4-26af-48e0-8328-fa196fde1f25",
+      "result_id": "21fcccde-400a-4fcb-b91f-0d72f7cd3c43"
+    },
+    {
+      "claim_id": "2196a2ac-68f7-45ae-94f0-019d1d77de57",
+      "result_id": "21fcccde-400a-4fcb-b91f-0d72f7cd3c43"
+    },
+    {
+      "claim_id": "bee186b8-3273-4562-b8d3-3ab5906e5f8a",
+      "result_id": "21fcccde-400a-4fcb-b91f-0d72f7cd3c43"
+    },
+    {
+      "claim_id": "6100b33b-6755-404d-9cfe-50b1f925551f",
+      "result_id": "21fcccde-400a-4fcb-b91f-0d72f7cd3c43"
+    },
+    {
+      "claim_id": "dc3cf5d4-11b5-49d3-ba8c-4cac8f28d100",
+      "result_id": "42af6a97-f751-4c61-a65b-a1a06b48e813"
+    },
+    {
+      "claim_id": "839c7954-4dc8-48ff-9b36-8b144685bb99",
+      "result_id": "42af6a97-f751-4c61-a65b-a1a06b48e813"
+    },
+    {
+      "claim_id": "12652d77-8cfe-4c23-a6fd-1a4d9155a4d2",
+      "result_id": "42af6a97-f751-4c61-a65b-a1a06b48e813"
+    },
+    {
+      "claim_id": "376ea8f9-b242-4bd1-bafa-f94cd6f189c2",
+      "result_id": "42af6a97-f751-4c61-a65b-a1a06b48e813"
+    },
+    {
+      "claim_id": "576b43d8-5f3b-496b-a735-8b222123b013",
+      "result_id": "42af6a97-f751-4c61-a65b-a1a06b48e813"
+    },
+    {
+      "claim_id": "93d66725-d697-4e68-aacc-5f6bfca9ce43",
+      "result_id": "42af6a97-f751-4c61-a65b-a1a06b48e813"
+    },
+    {
+      "claim_id": "790f2885-7677-430d-a728-814d5afd52e4",
+      "result_id": "0bc0cf40-dd49-4d83-8e79-05b5542ae949"
+    },
+    {
+      "claim_id": "88758669-a259-406e-a4da-9bde487e27d0",
+      "result_id": "0bc0cf40-dd49-4d83-8e79-05b5542ae949"
+    },
+    {
+      "claim_id": "7944090b-bcbc-4919-80aa-3ff9104ebe17",
+      "result_id": "0bc0cf40-dd49-4d83-8e79-05b5542ae949"
+    },
+    {
+      "claim_id": "3c2b5eb6-d089-44f4-9569-d610e66e591a",
+      "result_id": "0bc0cf40-dd49-4d83-8e79-05b5542ae949"
+    },
+    {
+      "claim_id": "51ce2785-b5d6-4832-bd12-4b93923abc85",
+      "result_id": "0bc0cf40-dd49-4d83-8e79-05b5542ae949"
+    },
+    {
+      "claim_id": "d1981bd5-8f10-47dc-8251-9b62261c199a",
+      "result_id": "0bc0cf40-dd49-4d83-8e79-05b5542ae949"
+    },
+    {
+      "claim_id": "ba6ad7a7-819d-4aa7-99d1-e9ac0ffbc294",
+      "result_id": "0bc0cf40-dd49-4d83-8e79-05b5542ae949"
+    },
+    {
+      "claim_id": "84a18ede-5a68-4b68-aaf1-4f47cb491c80",
+      "result_id": "0bc0cf40-dd49-4d83-8e79-05b5542ae949"
+    },
+    {
+      "claim_id": "571c51c9-4ac0-4197-b173-54956b1f566e",
+      "result_id": "0bc0cf40-dd49-4d83-8e79-05b5542ae949"
+    },
+    {
+      "claim_id": "e612c35b-ab19-431f-9e63-6eaae15f5900",
+      "result_id": "0bc0cf40-dd49-4d83-8e79-05b5542ae949"
+    },
+    {
+      "claim_id": "f6f2fa06-67da-4c60-bf92-d5c133073bd8",
+      "result_id": "975b5385-dd8f-445c-9591-a14f9abe8778"
+    },
+    {
+      "claim_id": "b078aa33-4a0f-4328-91c5-6848f95834ed",
+      "result_id": "975b5385-dd8f-445c-9591-a14f9abe8778"
+    },
+    {
+      "claim_id": "78eb4256-cff5-4081-9b04-30d3713c46c9",
+      "result_id": "975b5385-dd8f-445c-9591-a14f9abe8778"
+    },
+    {
+      "claim_id": "b3a762dc-772f-4747-8eff-b078017b2e14",
+      "result_id": "975b5385-dd8f-445c-9591-a14f9abe8778"
+    },
+    {
+      "claim_id": "561245e5-e117-46c8-b0d2-378225d8076a",
+      "result_id": "8381a949-8eb1-4a49-9cc4-32ba8d6bf292"
+    },
+    {
+      "claim_id": "eaebdd16-7aa5-4d62-83f3-b68f9963d8a0",
+      "result_id": "8381a949-8eb1-4a49-9cc4-32ba8d6bf292"
+    },
+    {
+      "claim_id": "e7616b7e-9208-402c-b4eb-c718e301e752",
+      "result_id": "8381a949-8eb1-4a49-9cc4-32ba8d6bf292"
+    },
+    {
+      "claim_id": "0f5fc463-245c-4518-a858-bd812837b065",
+      "result_id": "8381a949-8eb1-4a49-9cc4-32ba8d6bf292"
+    },
+    {
+      "claim_id": "422a4d43-b440-4ac1-bec2-976011a9d555",
+      "result_id": "8381a949-8eb1-4a49-9cc4-32ba8d6bf292"
+    },
+    {
+      "claim_id": "680cacd4-bfaf-4183-9892-efd4578e1373",
+      "result_id": "8381a949-8eb1-4a49-9cc4-32ba8d6bf292"
+    },
+    {
+      "claim_id": "e30da06b-2a53-4df9-bbeb-edaaa4b61dff",
+      "result_id": "2385ab09-84b9-4dee-8fe6-dc742179b70a"
+    },
+    {
+      "claim_id": "db62f338-ab9c-48e2-b680-8c2445e484fd",
+      "result_id": "2385ab09-84b9-4dee-8fe6-dc742179b70a"
+    },
+    {
+      "claim_id": "8599c153-3f0d-493c-8e7d-d9d07bbb6f73",
+      "result_id": "539b7c3e-7ee0-4e94-9bcd-41c5651b89b2"
+    },
+    {
+      "claim_id": "52a9d486-df25-4a56-92fc-77ba78c7282a",
+      "result_id": "539b7c3e-7ee0-4e94-9bcd-41c5651b89b2"
+    },
+    {
+      "claim_id": "72167ff6-d908-43e0-9e0c-6d071b7605fa",
+      "result_id": "b9c37ef4-a86e-4014-89ae-0b676f32f7cb"
+    },
+    {
+      "claim_id": "f5010aac-57af-4413-a62f-44ae050d13cc",
+      "result_id": "b9c37ef4-a86e-4014-89ae-0b676f32f7cb"
+    },
+    {
+      "claim_id": "9d2bfb80-4a75-40d7-b5e1-9054015f9c7a",
+      "result_id": "3c0f08ab-0613-4921-9a1b-25b1b42a0c71"
+    },
+    {
+      "claim_id": "1a30df3a-50e9-4bc2-8818-6d9b8febba88",
+      "result_id": "3c0f08ab-0613-4921-9a1b-25b1b42a0c71"
+    },
+    {
+      "claim_id": "98504517-1210-4c8d-be27-fc37037a8eb5",
+      "result_id": "3c0f08ab-0613-4921-9a1b-25b1b42a0c71"
+    },
+    {
+      "claim_id": "03f5df49-53a3-45c0-8523-888e252af425",
+      "result_id": "3c0f08ab-0613-4921-9a1b-25b1b42a0c71"
+    },
+    {
+      "claim_id": "64dfcd25-de4e-44e4-a633-63993e21aad7",
+      "result_id": "3c0f08ab-0613-4921-9a1b-25b1b42a0c71"
+    },
+    {
+      "claim_id": "3eb2ecd8-a54e-4c6e-ab24-c7ef9e9acd00",
+      "result_id": "3c0f08ab-0613-4921-9a1b-25b1b42a0c71"
+    },
+    {
+      "claim_id": "c87b437f-c3ed-4d17-9af1-7278cfb2f6dc",
+      "result_id": "73b02fed-85fa-42b4-aeb9-a676711f0474"
+    },
+    {
+      "claim_id": "0ba4ff1c-bdca-4075-acc1-9abb19b367fb",
+      "result_id": "73b02fed-85fa-42b4-aeb9-a676711f0474"
+    },
+    {
+      "claim_id": "64e59b06-3c12-489a-ace9-92d3537df9a0",
+      "result_id": "73b02fed-85fa-42b4-aeb9-a676711f0474"
+    },
+    {
+      "claim_id": "5c1a51e8-f285-41e5-9eaf-8337e9e20921",
+      "result_id": "73b02fed-85fa-42b4-aeb9-a676711f0474"
+    },
+    {
+      "claim_id": "d7f3c24f-0093-47c2-a922-633aa8b5ac09",
+      "result_id": "5bfc6e2b-dc52-4b81-bf2f-450cf7f5a205"
+    },
+    {
+      "claim_id": "08536c9c-1380-4f7a-9609-54e6638c26f7",
+      "result_id": "5bfc6e2b-dc52-4b81-bf2f-450cf7f5a205"
+    },
+    {
+      "claim_id": "24e1f5ed-432e-4a20-b695-fab81316ce62",
+      "result_id": "5bfc6e2b-dc52-4b81-bf2f-450cf7f5a205"
+    },
+    {
+      "claim_id": "fb613f85-b407-4b75-a2e8-94fa177af0df",
+      "result_id": "5bfc6e2b-dc52-4b81-bf2f-450cf7f5a205"
+    },
+    {
+      "claim_id": "3c00c83f-a67b-4d7e-bf16-499c7dbd80f1",
+      "result_id": "5bfc6e2b-dc52-4b81-bf2f-450cf7f5a205"
+    },
+    {
+      "claim_id": "bd888fea-e3ae-4d11-9a36-a17374296566",
+      "result_id": "73239651-224d-4eaa-902f-5bea4eed7f38"
+    },
+    {
+      "claim_id": "69df13c4-d5f5-48ba-8f98-79b9aae2676a",
+      "result_id": "73239651-224d-4eaa-902f-5bea4eed7f38"
+    },
+    {
+      "claim_id": "9e524e18-a262-403e-8138-b7a04c8eb013",
+      "result_id": "73239651-224d-4eaa-902f-5bea4eed7f38"
+    },
+    {
+      "claim_id": "9a7ed22f-e087-4d2d-a532-b1880480a2d1",
+      "result_id": "73239651-224d-4eaa-902f-5bea4eed7f38"
+    },
+    {
+      "claim_id": "646eb870-94dc-440d-a50b-aafb716c2b82",
+      "result_id": "73239651-224d-4eaa-902f-5bea4eed7f38"
+    },
+    {
+      "claim_id": "29d04266-daae-45dc-a679-a2e2a6922b52",
+      "result_id": "73239651-224d-4eaa-902f-5bea4eed7f38"
+    },
+    {
+      "claim_id": "2ad89862-68ad-4e7a-971a-ddcaa2aae72e",
+      "result_id": "73239651-224d-4eaa-902f-5bea4eed7f38"
+    },
+    {
+      "claim_id": "4b008b79-8f82-43f5-b4e5-90c7d538013b",
+      "result_id": "73239651-224d-4eaa-902f-5bea4eed7f38"
+    },
+    {
+      "claim_id": "9f243b45-1d27-4fb1-93e5-29a4f07db902",
+      "result_id": "73239651-224d-4eaa-902f-5bea4eed7f38"
+    },
+    {
+      "claim_id": "4bd06279-4baa-4349-b46b-664fcea5b64b",
+      "result_id": "73239651-224d-4eaa-902f-5bea4eed7f38"
+    },
+    {
+      "claim_id": "c4956796-7593-4f13-aa53-76cfac77c6f8",
+      "result_id": "73239651-224d-4eaa-902f-5bea4eed7f38"
+    },
+    {
+      "claim_id": "cbdb2afd-022b-449c-9628-7148e922f99c",
+      "result_id": "73239651-224d-4eaa-902f-5bea4eed7f38"
+    },
+    {
+      "claim_id": "4b1b6aa7-0610-4eb5-bd4f-76aada51835a",
+      "result_id": "73239651-224d-4eaa-902f-5bea4eed7f38"
+    },
+    {
+      "claim_id": "aa8c0295-3e15-43b5-8331-f6a5ce651c34",
+      "result_id": "73239651-224d-4eaa-902f-5bea4eed7f38"
+    },
+    {
+      "claim_id": "1e89b057-9463-48e1-b505-b403aae17fd6",
+      "result_id": "73239651-224d-4eaa-902f-5bea4eed7f38"
+    },
+    {
+      "claim_id": "3c1b6bf7-5ac2-4e1a-adad-57de9845adf6",
+      "result_id": "77de41e0-e68a-452b-a8ea-f010210404c8"
+    },
+    {
+      "claim_id": "d73f64aa-122b-4465-9ae0-267d4ecd4f8e",
+      "result_id": "77de41e0-e68a-452b-a8ea-f010210404c8"
+    },
+    {
+      "claim_id": "b398988c-552d-4e11-9dd9-1b79fb741042",
+      "result_id": "77de41e0-e68a-452b-a8ea-f010210404c8"
+    }
+  ],
+  "comparisons": []
+}

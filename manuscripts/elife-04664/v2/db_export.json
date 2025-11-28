@@ -1,0 +1,1783 @@
+{
+  "submission": {
+    "id": "758d5407-1963-4d17-9494-7d69b9012240",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:57:29.916786Z",
+    "updated_at": "2025-11-28T21:57:29.916786Z"
+  },
+  "content": [
+    {
+      "id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "submission_id": "758d5407-1963-4d17-9494-7d69b9012240",
+      "content_type": "manuscript",
+      "content_text": "# Early asymmetric cues triggering the dorsal/ventral gene regulatory network of the sea urchin embryo\n\n## Authors\n\n- Vincenzo Cavalieri<sup>1</sup> \u2020\n- Giovanni Spinelli<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biological, Chemical and Pharmaceutical Sciences and Technologies University of Palermo Palermo Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nDorsal/ventral (DV) patterning of the sea urchin embryo relies on a ventrally-localized organizer expressing Nodal, a pivotal regulator of the DV gene regulatory network. However, the inceptive mechanisms imposing the symmetry-breaking are incompletely understood. In Paracentrotus lividus, the Hbox12 homeodomain-containing repressor is expressed by prospective dorsal cells, spatially facing and preceding the onset of nodal transcription. We report that Hbox12 misexpression provokes DV abnormalities, attenuating nodal and nodal-dependent transcription. Reciprocally, impairing hbox12 function disrupts DV polarity by allowing ectopic expression of nodal. Clonal loss-of-function, inflicted by blastomere transplantation or gene-transfer assays, highlights that DV polarization requires Hbox12 action in dorsal cells. Remarkably, the localized knock-down of nodal restores DV polarity of embryos lacking hbox12 function. Finally, we show that hbox12 is a dorsal-specific negative modulator of the p38-MAPK activity, which is required for nodal expression. Altogether, our results suggest that Hbox12 function is essential for proper positioning of the DV organizer.\n\n## Introduction\n\nPatterning of the embryonic ectoderm along the dorsal/ventral (DV) axis, also known as oral/aboral axis, has been extensively studied in various species of sea urchins. DV polarity is not firmly established in the unfertilized egg, but rather relies on a combination of inherited maternal information and inductive interactions among early blastomeres, becoming morphologically recognizable from the gastrula stage onward (Brandhorst and Klein, 2002; Angerer and Angerer, 2003; Molina et al., 2013). The ectoderm of the pluteus larva is noticeably partitioned into four main domains: (1) the oral/ventral ectoderm, a thickened epithelium surrounding the mouth, (2) the aboral/dorsal ectoderm, a squamous epithelium that covers most of the rest of the larval body, (3) the ciliary band, a belt of ciliated cells positioned at the border between oral and aboral ectoderm, and (4) the apical neurogenic domain.\n\nThe genetic landmark of polarization along the secondary axis is the zygotic expression of the TGF-\u03b2 superfamily member Nodal on the future oral side, which behaves as an organizing centre imposing DV polarity in all three germ layers of the embryo (Duboc et al., 2004; Flowers et al., 2004; Duboc et al., 2010; Materna et al., 2013). Targets of Nodal signaling within the oral ectoderm include genes encoding the TGF-\u03b2 pathway extracellular components Lefty, BMP2/4 and Chordin (Angerer et al., 2000; Duboc et al., 2004, 2008; Bradham et al., 2009; Lapraz et al., 2009; Yaguchi et al., 2010). Although they are expressed by the same cells, Lefty is thought to diffuse more rapidly than Nodal, thus acting as a long-range Nodal inhibitor (Bolouri and Davidson, 2010; Duboc et al., 2004, 2008). The BMP2/4 ligand acts instead as a relay to specify the aboral ectoderm, to which its signaling activity is confined, due to inhibition of BMP2/4 reception by Chordin within the oral ectoderm (Angerer et al., 2000; Duboc et al., 2004; Lapraz et al., 2009; Chen et al., 2011).\n\nThe amount of details available on molecular circuits that govern DV patterning downstream of nodal expression is growing rapidly (Su, 2009; Saudemont et al., 2010; Yaguchi et al., 2010; Chen et al., 2011; Li et al., 2012, 2013). As opposite, only fuzzy clues are known as to the early steps that trigger the DV gene regulatory network. According to the current models, at the early blastula stage a maternally related anisotropy in redox gradient would transiently inactivate the p38 kinase in the future dorsal ectoderm (Bradham and McClay, 2006; Coffman, 2009), somehow leading to activation of the maternal bZIP and Oct1/2 factors on the ventral side (Nam et al., 2007; Range et al., 2007; Range and Lepage, 2011). The cis-regulatory apparatus of nodal responds to these factors, as well as to the maternal positive inputs of SoxB1 and Univin (Range et al., 2007), directing the expression of the gene within a discrete sector of the ectoderm that corresponds to the presumptive oral ectoderm (Duboc et al., 2004; Flowers et al., 2004; Saudemont et al., 2010). Such a spatial expression profile is then consolidated by a positive feedback mechanism related to the Nodal signal transduction system, and by the concurrent Nodal-dependent production of the Nodal antagonist Lefty.\n\nIt should be noted that all of the known positive inputs converging on the nodal cis-regulatory apparatus are broadly distributed in the embryo as early as nodal transcription occurs, raising the question of whether additional negative regulators are involved in the initial repression of nodal in all but the oral territories. In strict accordance with this possibility, it has been shown that the transcription repressor FoxQ2 contributes, together with Lefty, to suppress nodal expression in the apical neurogenic ectoderm (Yaguchi et al., 2008). On the other hand, a similar negative function acting on nodal within the presumptive dorsal ectoderm cells has not yet been uncovered. An extremely interesting candidate for this role is the zygotically-expressed hbox12 homeobox-containing gene. In Paracentrotus lividus, hbox12 expression precedes the onset of nodal transcription, then declines after the 60-cell stage and is no longer detectable by hatching (Di Bernardo et al., 1995; this paper). Intriguingly, hbox12 transcripts are asymmetrically distributed along the DV axis, being confined in cells that become aboral ectoderm, as revealed by cis-regulatory analysis (Cavalieri et al., 2008). The observed pattern of expression is so far unique in sea urchin development, and suggests that the Hbox12 transcription factor could act as a precocious input within the gene regulatory network that directs DV patterning. In agreement with this hypothesis, we have previously shown that disrupting the function of the Otx activator, a driver of hbox12, downregulates hbox12 transcription and dramatically affects embryo polarization along the DV axis (Cavalieri et al., 2008). Here we extend these findings providing more direct evidence indicating that hbox12 is a key upstream gene in the symmetry-breaking sequence of events, functioning to prevent the ectopic activation of nodal transcription within the prospective dorsal side of the early sea urchin embryo.\n\n## Results\n\n### Ectopic expression of the hbox12 repressor disrupts morphogenesis and affects nodal transcription\n\nThe timing and spatial expression profile of hbox12 described earlier (Di Bernardo et al., 1995) led us to initially hypothesize an involvement of such a gene in the negative control of nodal expression. This is further supported by directly comparing the dynamic temporal and spatial patterns of hbox12 and nodal transcription during very early development. As expected, hbox12 expression begins at least two cell divisions earlier with respect to that of nodal (Figure 1A). Double-labeling whole mount in situ hybridization (WMISH) at the early blastula stage showed that the spatial domains of expression of the two genes occupy opposite sectors of the embryo (Figure 1B). These results, coupled with those of the cis-regulatory analysis reported previously (Cavalieri et al., 2008), lead us to definitively conclude that hbox12 is expressed in the prospective dorsal ectoderm of the early embryo. Thus, hbox12 is expressed at the right time and in the right place to regulate nodal expression.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04664/elife-04664-fig1-v2.jpg)\n\n**Figure 1.:** (A) Temporal expression profiles examined by qPCR. Values at the different stages are shown as a percentage of the maximum signal intensity. Absolute numbers of transcripts per embryo given at the 60-cell stage are averages of the results of two independent experiments using distinct batches of cDNA. Abbreviations of the examined developmental stages: 2, 2-cell; 4, 4-cell; 8, 8-cell; 16, 16-cell; 32, 32-cell; 60, 60-cell; Mor, morula; eB, early blastula; HB, hatching blastula. (B) Spatial restriction of the hbox12 and nodal transcripts observed following WMISH at the indicated stage.\n\nAs a first approach to reveal the role of hbox12 during embryogenesis, we microinjected into zygotes the synthetic full-length mRNA at dosage ranging from 0.01 to 0.4 pg. When eggs from the same batches were injected with equal amounts of the control out-of-frame strim1 transcript (Cavalieri et al., 2011), or low amounts of the hbox12 mRNA (<0.05 pg), the embryos developed normally (Figure 2A\u2013C). By contrast, 50% (n > 1500) of the specimens ubiquitously expressing 0.1 pg of the functional hbox12 mRNA exhibited a highly reproducible strong perturbation. Development of these embryos was apparently normal until the mesenchyme blastula stage (Figure 2D). At gastrula stage, when control embryos displayed a clear DV polarity as shown by the thickening of the ventral side and the symmetric ventral-lateral arrangement of the two primary mesenchyme cell (PMC) clusters (Figure 2B), embryos translating exogenous hbox12 mRNA appeared quite rounded and their PMCs were irregularly dispersed into the blastocoel (Figure 2E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04664/elife-04664-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013G) 0.1 pg of the full-length hbox12 mRNA (D\u2013F) or the hd-En mRNA (G), as well as a control out-of-frame strim1 transcript (A\u2013C), were injected into zygotes and embryos were observed at the indicated stages. Overexpression of either hbox12 or hd-En severely perturbed DV axis formation, inflicting morphological defects that appeared from the gastrula stage onward. (H) qPCR measurements of nodal transcript abundance in embryos injected with increasing amounts of the hbox12 mRNA. Values are shown as a percentage of the nodal mRNA level in control uninjected embryos. Further detail for the qPCR procedure is given in \u2018Materials and methods\u2019. (I) Changes in gene expression level of nodal and other territorial marker genes assessed by qPCR in hbox12-injected embryos. Data are indicated as normalized \u0394Ct (\u0394\u0394Ct, left ordinate), and as the corresponding fold difference in transcript abundance (right ordinate), with respect to control embryos, at the same stage of development, derived from zygotes injected with the strim1 out-of-frame transcript. The gray region represents \u0394\u0394Ct values corresponding to less than threefold difference. Although this is commonly considered the limit of significance for qPCR assays, the relevance of our measurements is reinforced by WMISH results (see text for details). Error bars are standard errors for the qPCR replicates. Oligonucleotide primer pairs used for qPCR reactions and amplicon lengths are indicated in Supplementary file 1. Abbreviations: lG, late gastrula; VEB, very early blastula.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04664/elife-04664-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Changes in gene expression levels was assessed by qPCR in cDNA samples resulting from hd-En-injected embryos. Data are normalized and indicated as in Figure 2I. The gray region represents \u0394\u0394Ct values corresponding to less than threefold difference. See also Supplementary file 1.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04664/elife-04664-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Control strim1 out-of-frame transcript (A\u2013D) and hbox12 mRNA injected (E\u2013K) embryos were fixed at the mesenchyme blastula (A\u2013C, E\u2013G and I\u2013K) or prism (D and H) stages and analysed by chromogenic WMISH with the indicated probes. The embryos shown in (D) and (H) are oriented in a oral/ventral and lateral view, respectively, while all the other embryos are in a vegetal view.\n\nA striking phenotype was even more apparent at the pluteus stage. Control-injected embryos were normal angular-shaped larvae exhibiting the characteristic bilateral symmetry (Figure 2C). By contrast, hbox12-injected embryos appeared almost spherical (Figure 2F). In these specimens, PMCs retained a certain biomineralizing activity, producing two calcareous elements which did not elongate as much as those of the control embryos at the same stage. These embryos displayed a straight archenteron and did not form a stomodeum. As judged by morphological observation, their ectoderm was composed of only a thick and a squamous epithelium, respectively coating the animal and the vegetal side of the larva.\n\nExactly the same phenotype was obtained following injection of similar amounts of a synthetic mRNA encoding for the chimeric repressor HD-En (Figure 2G), in which the homeodomain of Hbox12 was joined to the repressor domain of Drosophila Engrailed. It follows that Hbox12 normally function as a transcriptional repressor in the early embryo.\n\nAltogether, the phenotypes showed in Figure 2 are broadly similar to those obtained by the knock-down of nodal function (Duboc et al., 2004), again suggesting a potential negative effect of the Hbox12 transcription factor on nodal expression. Indeed, microinjection of equal amounts of either hbox12 or hd-En mRNA caused a dose-dependent attenuation in the level of nodal transcript at a very similar extent, as revealed by qPCR analysis from hbox12-injected embryos at morula stage (Figure 2H and Figure 2\u2014figure supplement 1). Expression of the additional oral ectoderm marker goosecoid (gsc) as well as the aboral ectoderm marker tbx2/3 was also reduced (Figure 2I and Figure 2\u2014figure supplement 1), as expected from the perturbed expression of nodal normally necessary for the establishment of the entire DV axis (Duboc et al., 2004). The variations in transcript abundance shown in Figure 2H,I could appear somewhat modest, although they are of the same order of magnitude as those reported by other authors (Agca et al., 2010; Bergeron et al., 2011; Coffman et al., 2004). A possible explanation is that the qPCR data refer to the whole embryo population, affected and not affected. In fact, in our experiments only about half of the hbox12-injected embryos developed as aberrant larvae that, unfortunately, could not be isolated at early stages because they were virtually indistinguishable from the unaffected ones. In addition, the phenotype exhibited by the affected embryos was broadly similar but not perfectly identical to that obtained following knock down of nodal (Duboc et al., 2004), leading us to speculate that nodal expression was decreased to some extent in the overtly affected embryos. In close agreement with this hypothesis, WMISH showed that the expression of nodal, gsc, and tbx2/3 genes was apparently reduced (n = 36/93; Figure 2\u2014figure supplement 2E\u2013G) or even nullified (n = 8/93; Figure 2\u2014figure supplement 2I\u2013K) in roughly 47% (n = 93) of hbox12-injected embryos. Although we were not able to quantify subtle differences, if any, in gene expression between control- and hbox12-injected embryos by a mere analysis of Dig-probe staining, the overall fraction of embryos showing defective expression of nodal, gsc, and tbx2/3 was somewhat consistent with that of embryos that ultimately displayed unambiguous loss of DV polarization at later stages (Figure 2E,F). These findings substantially override the lack of significance in of qPCR expression data, that although showed less than threefold difference, are strengthened by the WMISH results. Altogether, our findings indicate that ectopic expression of hbox12 disrupted the patterning of the ectodermal domains along the DV axis.\n\nBy WMISH with the PMC-specific marker msp130 we also confirmed that in the hbox12-injected embryos the complement of PMCs was quite congruent with that of control embryos at the same stage but, in most embryos (70%, n = 250), the distribution of PMCs into the blastocoel was disorganized (compare panels J and K of Figure 2\u2014figure supplement 2). This finding indicates that defects in PMC arrangement are due to a failure in the ectoderm to provide adequate patterning information. In close agreement, the transcript level of ectoderm-specific genes that have been previously implicated in skeletogenesis was reduced in hbox12-overexpressing embryos (Figure 2I).\n\n### DV abnormalities arise from hbox12 misexpression in the animal hemisphere\n\nAs hbox12 transcripts are present in a quadrant of the early embryo including the presumptive aboral ectoderm founder cells of the animal hemisphere and part of the veg1 tier (Di Bernardo et al., 1995; Cavalieri et al., 2008), we assessed hbox12 misexpression in each domain by transplantation experiments. Zygotes were injected with the full-length hbox12 mRNA together with the Texas Red-conjugated dextran (TRCD) lineage tracer and allowed to develop up to the 16-cell stage. Then, animal and vegetal halves from these embryos were separated and recombined with their complementary halves derived from control uninjected embryos (Figure 3A), and resulting chimeras were observed at pluteus stage. When hbox12 was overexpressed exclusively in vegetal halves, almost all chimeras (n = 9/10) developed into larvae that were indistinguishable from controls (Figure 3C). In these embryos, descendants of vegetal cells normally formed the endomesoderm territories which, owing to TRCD, appeared red fluorescent.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04664/elife-04664-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic illustrating that, at the 16-cell stage, animal and vegetal halves of hbox12/TRCD-injected and control uninjected embryos were isolated and recombined. (B\u2013C) Side views of representative examples of the resulting reciprocal chimeras examined at 48 hpf. The composition of the chimeras is shown in the diagrams in the left panels (Ba and Ca). Images for each embryo are shown under DIC optics with simultaneous plane polarized light illumination (Bb and Cb), epifluorescence (Bc and Cc), and aggregate merging (Bd and Cd).\n\nBy contrast, 6/10 of the reciprocal chimeric embryos, in which hbox12 was present in the animal hemisphere (Figure 3B), produced the same phenotype as that observed with ubiquitous hbox12 overexpression. Indeed, DV polarization was apparently impaired, stomodaeum did not form, and skeletal elements remained poorly elongated. Taken together, these findings reveal that overexpression of the transcriptional repressor Hbox12 in cells derived from the animal hemisphere impinges on the establishment of the DV axis.\n\n### Establishment of the DV axis absolutely requires Hbox12 function\n\nTo study in more detail the role of hbox12, we first attempted to block the expression of the protein by injecting morpholino-substituted antisense oligonucleotides directed against the translation initiation site. Unfortunately, injected embryos always developed to the pluteus stage with no overt abnormalities. As multiple copies of the hbox12 gene exist in P. lividus (Cavalieri et al., 2008), this failure may be due to gene copies with different translation initiation sites.\n\nThe Hbox12 protein includes the homeodomain close to the N-terminus and two serine-rich octapeptide repeats in the C-terminal region, which probably account for transcription repressor activity (Cavalieri et al., 2008). Therefore, to disrupt the hbox12 function we expressed a truncated form of the protein, referred to as HD, which sequence ends just after the homeodomain. In principle, HD should efficiently compete with the endogenous Hbox12 for binding to DNA, quenching the repressor activity on target genes.\n\nAgain, almost all embryos injected with the control strim1 transcript developed without deleterious effects (Figure 4Aa\u2013b). By contrast, embryos injected with hd mRNA exhibited a failure of the DV axial patterning. At the gastrula stage, when controls exhibited a correctly partitioned ectoderm (Figure 4Aa), the vast majority of the hd-injected embryos (80%, n > 1200) appeared to be constituted by a uniformly thickened epithelium and no discernable ciliary band was identified (Figure 4Ac). The PMCs were homogeneously distributed around the straight archenteron, without distinguishable clusters, forming six to eight triradiate spicule rudiments (Figure 4Ac\u2013c\u2032). At the pluteus stage, HD-expressing embryos exhibited a range of phenotypes that could be ranked in order of severity. The most dramatically affected embryos (62%, n > 1200) have developed an archenteron. However, it never bent to fuse with the oral ectoderm but did grow from the centre of a spherical embryo (Figure 4Ad). In these specimens, PMCs adopted a full radial distribution, as confirmed by WMISH with the msp130 probe (Figure 4Bh, n = 31/45), and formed a grossly mispatterned skeleton around the circumference of the embryo (Figure 4Ad\u2013d\u2032). Moreover, pigment cells were not detected at all and embryos appeared uniformly albino (Figure 4Ad). A smaller fraction of hd-injected embryos (28%) showed a slightly less severe phenotype (Figure 4Ae\u2013e\u2032), indicating that axial specification was partially impaired in these embryos.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04664/elife-04664-fig4-v2.jpg)\n\n**Figure 4.:** (A) Zygotes were injected with the control out-of-frame strim1 RNA (Aa\u2013Ab) or the hd mRNA (Ac\u2013Ae), and the resulting embryos were observed from a vegetal view at the indicated stages. (B) Control- (Ba\u2013Bd) and hd-injected (Be\u2013Bh) embryos were fixed at the mesenchyme blastula stage and analysed by WMISH with the indicated probes. The embryo shown in (Ba) is oriented in a lateral view, while all the other embryos are in a vegetal view. (C) Changes in gene expression level of territorial marker genes assessed by qPCR during development of hd-injected embryos. Data are normalized and indicated as in Figure 2I. The gray region represents \u0394\u0394Ct values corresponding to non-significant variation (less than threefold difference). See also Supplementary file 1. Abbreviations: VEB, very early blastula; EB, early blastula; MB, mesenchyme blastula; lG, late gastrula.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04664/elife-04664-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Identical residues are shaded by differently coloured boxes, while double and single dots indicate decreasing degree of conservation; divergent amino acids are indicated by blank spaces. The Glutamine at position 50 is marked by an asterisk. Accession numbers were: Hbox12, X83675.1, and Otp, AJ007501.1.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04664/elife-04664-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Zygotes were injected with the synthetic mRNAs coding for the isolated homeodomain of either Hbox12 or Otp and observed at the early blastula stage (upper panels). Total RNA was extracted from embryos at the morula stage, and changes in gene expression level of nodal and gsc determined by qPCR measurements. Data are indicated as in Figure 2I. The gray region represents \u0394\u0394Ct values corresponding to non-significant variation (less than threefold difference). See also Supplementary file 1.\n\nTo ascertain the specification of different cell types in hd-injected embryos, we used a set of marker genes specific for the major embryonic territories. By WMISH, we first examined the expression of nodal and gsc, which are expressed exclusively in ventral ectoderm cells of control mesenchyme blastulae (Figure 4Ba,4Bb). In sharp contrast, we found that HD expression in embryos at the same stage caused broadened ectodermic transcription of both genes in approximately 70% (n > 80) of the resulting embryos (Figure 4Be,4Bf). The mRNA abundance of nodal and gsc was examined by qPCR and, as expected, upregulation was detected for both genes during development (Figure 4C).\n\nThe precise mechanisms that dictate the physiological function and target range of individual homeodomain proteins are in general either unknown or incompletely delineated (Svingen and Tonissen, 2006). As the DNA-binding properties of the homeodomains could not be, by themselves, sufficiently discriminating to distinguish between different sets of target genes in vivo (Hoey and Levine, 1988), to assess the specificity of HD on nodal and gsc gene transcription, we injected an equal amount of otp-hd, a synthetic mRNA coding for the closely related homeodomain of Orthopedia (Di Bernardo et al., 1999; Cavalieri et al., 2003). Otp and Hbox12 homeodomains belong both to the Q50 class and show a very similar helix-III (Figure 4\u2014figure supplement 1). As shown in Figure 4\u2014figure supplement 2, all the early developing embryos expressing such an isolated DNA-binding domain did not display perceptible phenotypic aberration with respect to control injected embryos at the same stage. Most important, the transcript abundance of both nodal and gsc did not change significantly in embryos expressing the otp-hd. Altogether, these findings imply that impairing Hbox12 function through expression of HD specifically biased DV patterning toward ventralization.\n\nWe also noted that the mRNA abundance of the dorsal specific gene tbx2/3 did fluctuate following a peculiar trend during development of hd-injected embryos. Although it was dramatically increased at early blastula stages (Figure 4C), it appeared significantly down-regulated at mesenchyme blastula stage (Figure 4Bg, n = 34/42, and Figure 4C) and almost completely abolished at late gastrula stage (Figure 4C). It should be emphasized that tbx2/3 is expressed at a very low level during early embryogenesis (Chen et al., 2011; Ben-Tabou de-Leon et al., 2013). Hence, the simplest interpretation of the qPCR results is that the initial rise in tbx2/3 transcription level could be due to an early pulse of BMP2/4 before the HD-induced overexpression of Nodal swamps the system. In close agreement, it has been shown in P. lividus that injection of nodal mRNA abrogates the expression of tbx2/3 across the gastrula-stage embryo (Duboc et al., 2004, 2010; Saudemont et al., 2010).\n\nConsistently with the derepression of nodal, the expression of four ventro-lateral ectoderm specific markers, strim1, fgf, otp and pax2/5/8, was robustly down-regulated in hd-injected gastrulae (Figure 4C), strongly supporting the hypothesis that ectoderm patterning was impaired in these embryos.\n\nAs described, an adjunctive defect characterizing most of the hd-injected embryos consisted in the lack of pigment cells. Known to be a cohort of secondary mesenchyme cells which expresses the specific marker gcm, the pigment cell precursors occupy a dorsal sector of the vegetal plate at the late mesenchyme blastula stage (Ransick et al., 2002; R\u00f6ttinger et al., 2006; Duboc et al., 2010). At this stage, hd-injected embryos had downregulated gcm expression (Figure 4C). It is known that Nodal signaling antagonizes the specification of pigment cells (Duboc et al., 2010), and our result is perfectly congruent with the reported loss of gcm expression, and the albino phenotype, provoked by the ectopic expression of nodal across the embryo (Duboc et al., 2010). On this basis, we plausibly assume that the HD-induced overexpression of nodal similarly affected the specification of pigment cells in HD-expressing embryos.\n\n### Hbox12 function is necessary in presumptive aboral ectoderm cells to ensure DV polarization\n\nHd transcript was injected into zygotes along with the TRCD-fluorescent tracer and then, at the 16-cell stage, animal and vegetal halves from these embryos were separated and recombined with their complementary halves derived from uninjected embryos. When HD was expressed only in vegetal halves, the resulting chimeras developed into normal plutei (n = 10/10), which endomesodermal territories appeared red-fluorescent (Figure 5B). Thus, hbox12 function is not required in the vegetal half for DV polarization. By contrast, the reciprocal chimeric embryos, in which hbox12 function was disrupted in the animal hemisphere, phenocopied the morphologies of the non-chimeric hd-injected embryos, and the strongly perturbed phenotype prevailed (n = 7/10; Figure 5A). These results support the contention that inhibition of hbox12 activity in the animal hemisphere, where it is normally expressed, is sufficient to impede the establishment of the DV axis. In addition, these findings indicate that skeletogenic disorders originate not in PMCs, but are due to a failure in the overlying ectoderm to provide adequate patterning information.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04664/elife-04664-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013B) Diagrams in (Aa) and (Ba) show the composition of the reciprocal chimeras resulting from animal and vegetal half recombination of hd/TRCD-injected and control uninjected embryos at the 16-cell stage. (Ab\u2013Ae and Bb\u2013Be) Side views of the resulting chimeras examined at 48 hpf. Images for each embryo are shown under DIC optics (Ab and Bb), plane polarized light illumination (Ac and Bc), epifluorescence (Ad and Bd), and aggregate merging (Ae and Be).\n\nTo further strengthen confidence in this evidence, we attempted to disrupt the hbox12 activity exclusively in aboral ectoderm founder cells. This was accomplished by introducing into zygotes the expression construct phbox12-HD-GFP, in which the HD-GFP fusion protein was specifically placed under the control of the wild type cis-regulatory sequences of the hbox12 gene. This construct or phbox12-GFP, the control lacking HD (Cavalieri et al., 2008; see also \u2018Materials and methods\u2019), was injected into zygotes and developing embryos were scored for GFP expression. In this experiment, the transgenes were delivered along with TRCD, to discriminate among injected embryos and those that escaped microinjection (not-fluorescent).\n\nAs expected, both constructs were expressed at a similar extent during early embryogenesis, as indicated by roughly comparable green fluorescence of embryos observed at the early blastula stage (Figure 6\u2014figure supplement 1A\u2013B). In agreement with previous observations (Cavalieri et al., 2008), at the gastrula stage green fluorescence was specifically detected in the ectoderm of an average of 60% (n > 500) of injected embryos (Figure 6A\u2013B). However, whereas phbox12-GFP expression occurred in large ectoderm patches (Figure 6Ac\u2013d), scattered and less fluorescent cells were observed in phbox12-HD-GFP-injected embryos (Figure 6Bc\u2013d). This evidence and the fact that the number of HD-GFP-stained cells progressively extinguished as development proceeded (not shown) most likely indicate a low stability of the chimeric protein. Strikingly, despite this circumstance, most of the phbox12-HD-GFP-injected gastrulae expressing the transgene did show an equally thickened ectoderm and synthesized supernumerary spicule rudiments (Figure 6Ba\u2013b), resembling embryos at the same stage that received exogenous hd mRNA (Figs 3Ac\u2013c\u2032 and 4Ab\u2013c).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04664/elife-04664-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013E) Zygotes were injected with the indicated transgenes, and the resulting embryos were observed from a vegetal view at the indicated stages. Bright field (Ca, Da, and Ea), DIC (Aa, Ba, Cb, Db, and Eb), Dark field (Ab, Bb, Cc, Dc, and Ec), epifluorescence (Ac, Bc, Cd, Dd, and Ed), and aggregate merging (Ad, Bd, Ce, De, and Ee) images are shown.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04664/elife-04664-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A\u2013C) Zygotes were injected with either the phbox12-GFP (A) or phbox12-HD-GFP (B) DNA constructs or with the hd-GFP synthetic transcript (C), and embryos were observed at the indicated stages. (D) Control embryo injected with TRCD.\n\nTo obtain statistically relevant results we scored thousands of injected embryos at the early blastula stage. Specimens expressing HD-GFP at high level were transferred into a distinct plate filled with filtered sea water, and finally scored for the phenotype at 48 hr post-fertilization (hpf). At this stage, all the phbox12-GFP injected embryos were normal pluteus larvae expressing the transgene reporter in their aboral ectoderm (n > 500; Figure 6C). By contrast, about one half (n > 800) of the phbox12-HD-GFP-injected embryos phenocopied the abnormalities observed following hd mRNA overexpression (Figure 6D,E).\n\nDespite the expected absence of GFP fluorescence at this stage (Figure 6Dd,6Ed), most of the affected embryos (78%) displayed profound defects in the establishment of the DV polarity, as shown by the absence of the larval arms and aboral vertex, and the reduced number of pigment cells (Figure 6E). Worth mentioning, more than 60% of these embryos maintained such an abnormal phenotype for up to a week when maintained in culture, excluding that they were stunted embryos that could become normal with more developmental time. Otherwise, a smaller fraction (22%) of the phbox12-HD-GFP-injected embryos showed rather severe radialization coupled to the presence of multiple ectopic spicules (Figure 6D).\n\nIn this experimental assay, the prevalence of the milder phenotype could be explained by the combination between the mosaic incorporation of the exogenous DNA construct in the embryo (Flytzanis et al., 1985; Franks et al., 1988; Hough-Evans et al., 1988), and the rapid turnover of the HD-GFP protein.\n\nThe number of the dark-red pigment cells was quantified in late stage pluteus larvae using DIC optics. The total average number of these cells was about 45 \u00b1 5 in phbox12-GFP-expressing larvae developed from two distinct batches of zygotes (n = 35 embryos counted in each experiment). This number did not differ from that observed in control uninjected plutei. In striking contrast, pigment cell population was greatly decreased in more than one half of phbox12-HD-GFP injected embryos observed at the same stage. In particular, specimens showing the milder phenotype differentiated less than 16 pigment cells (Figure 6E), and this number did not vary culturing the embryos up to a week (not shown). No pigment cells were instead detected in the phbox12-HD-GFP injected embryos exhibiting the fully radialized phenotype (Figure 6D), once again supporting the hypothesis that loss of hbox12 function biased axial specification toward ventralization.\n\n### The localized knock-down of nodal restores DV polarization in HD-expressing embryos\n\nThe results described in the previous sections strongly suggest that hbox12 acts upstream of nodal, being involved in the asymmetrical establishment of the DV organizing centre. To better demonstrate the specificity of such a functional relationship, we performed a rescue assay in which the spatially restricted knock-down of nodal was superimposed on HD-expressing embryos. The experimental assay is depicted in Figure 7A. The hd-GFP mRNA was first microinjected into zygotes. At the 4-cell stage, the morpholino-oligonucleotide directed against nodal mRNA sequence (Mo-nodal) (Duboc et al., 2004) was successively injected into a single randomly chosen blastomere. To follow the fate of the re-injected cells, Mo-nodal was delivered together with the rhodamine-labelled dextran (RLDX) tracer. As expected, embryos injected with the hd-GFP mRNA and observed at the hatching blastula stage showed a diffused green fluorescence, indicating that the synthetic transcript was efficiently translated throughout the early embryo (Figure 6\u2014figure supplement 1C). Since, as mentioned, the abundance of the HD-GFP protein is rather quickly eroded following embryogenesis, early developing specimens simultaneously displaying GFP and RLDX fluorescence were selected for microscopic observation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04664/elife-04664-fig7-v2.jpg)\n\n**Figure 7.:** (A) At the 4-cell stage, one blastomere of hd-GFP mRNA injected embryos was co-injected with a morpholino oligonucleotide directed against nodal (Mo-nodal) together with the RLDX red fluorescent tracer. The resulting embryos were scored for simultaneous GFP/RLDX fluorescence at the early blastula stage, and eventually examined by microscopic observation at the pluteus stage. (B\u2013G) Representative examples of embryos injected with either the hd-GFP mRNA (B and E) or the Mo-nodal alone (C and F), and of double-injected rescued embryos (D\u2013G). Note that in both the rescued pluteus larvae shown in (D) and (G), the progeny of the blastomere that received Mo-nodal was embedded into the dorsal structures.\n\nSister batches of zygotes were injected with either the hd-GFP mRNA or Mo-nodal alone, and observed at 48 hpf. Once again, the former embryos exhibited a typically ventralized phenotype (Figure 7B,E), while embryos resulting from Mo-nodal injection developed into bell-shaped larvae with multiple entangled spicules (Figure 7C,F). In these embryos, most of the ventral and dorsal ectoderm was replaced by a thick ciliated epithelium which, as demonstrated by other authors (Duboc et al., 2004), represents the default state of the ectoderm. Thus, both hd-GFP and Mo-nodal injected embryos, albeit with peculiar differences, never acquired any bilateral symmetry. Conversely, almost all double-injected embryos (n > 250) developed into normal pluteus larvae with a harmoniously patterned DV axis (Figure 7D,G). Remarkably, inspection of these embryos under fluorescence illumination clearly revealed that the progeny of the blastomere injected with Mo-nodal was always found on the dorsal face of the rescued pluteus larvae (Figure 7Db\u2013c,7Gb\u2013c).\n\nAs it has been extensively shown that injection of Mo-nodal in P. lividus embryos abrogates translation of the Nodal ligand (Duboc et al., 2004, 2010; Range et al., 2007; Saudemont et al., 2010; Bessodes et al., 2012), we reasonably infer that in the double hd-GFP and Mo-nodal injected embryos, clonal knock-down of nodal was able to restore the asymmetrical production of the Nodal ligand, which in turn sufficed to resume the entire DV axis.\n\n### Hbox12 expression negatively regulates the activity of the p38 MAPK\n\nAccording to current models, the activation of nodal requires a phosphorylation event catalyzed by the p38 MAPK (Bradham and McClay, 2006; Nam et al., 2007; Range et al., 2007; Coffman et al., 2009). As mentioned, p38 is globally active, but is transiently inactivated in the prospective dorsal side of the early embryo, immediately before the onset of nodal expression (Bradham and McClay, 2006). By this time, that in P. lividus corresponds to the 60-cell stage, the peak of hbox12 transcription has just been accomplished (Figure 1), and therefore, anisotropic inactivation of p38 should correlate with hbox12 expression. To confirm that prediction, the impact of perturbing hbox12 function on p38 activity was determined by expressing a GFP-tagged p38, to reflect kinase activation as GFP nuclearization in living embryos (the inactive kinase is instead cytoplasmic).\n\nEmbryos expressing such a fusion protein developed normally whereas, at the 60-cell stage, p38 was cleared for a brief interval from nuclei on one side of the embryo (Figure 8A), which is thought to be the dorsal side. Impairing Hbox12 function, by co-injection of the hd mRNA, efficiently supplanted the p38 asymmetry, as shown by the uniform nuclear GFP staining in roughly 80% (n > 250) of the resulting embryos observed at the 60-cell stage (Figure 8B). Thus, loss of hbox12 function revoked the transitory phase of p38 inactivation in dorsal cells. Reciprocally, uniform ectopic expression of the full-length hbox12 mRNA completely reversed this pattern, restraining p38-GFP to the cytoplasm in all blastomeres of early embryos (>80%, n > 250; Figure 8C).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/04664/elife-04664-fig8-v2.jpg)\n\n**Figure 8.:** (A\u2013C) Embryos injected with the p38-GFP mRNA either alone (A) or in the presence of the hd mRNA (B) or the hbox12 mRNA (C), respectively, and analyzed by live confocal microscopy at the 60-cell stage. Images are internal projections of 10\u201315 sections from a confocal z-series. (D) At the 4-cell stage, one blastomere of p38-GFP mRNA injected embryos was co-injected with the hbox12 mRNA, and the resulting embryos were examined by live confocal microscopy at the early blastula stage. Representative examples of control p38-GFP mRNA injected (E) and double-injected (F) embryos are shown.\n\nTo exclude that the ubiquitous p38-GFP nuclear clearance did reflect a visualization artefact, we analyzed the p38 activation in embryos misexpressing hbox12 in one blastomere at the 4-cell stage, rather than into the zygote. Indeed, in this experimental assay, three-fourths of each embryo that resulted from the uninjected blastomeres provides an internal control. Thus, following injection of the p38-GFP mRNA into zygotes, the functional hbox12 mRNA was injected, along with TRCD, into one blastomere of embryos at the 4-cell stage, and the resulting embryos were scored for GFP localization at the early blastula stage (Figure 8D). At this time, active p38 had recovered its ubiquitous distribution, as indicated by the GFP staining present in all nuclei of control embryos (92%, n = 200) injected with the p38-GFP mRNA alone (Figure 8E). Remarkably, in almost all the double-injected embryos (87%, n > 200), the progeny of the blastomere that received exogenous hbox12 mRNA firmly detained GFP staining within the cytoplasm (Figure 8F), consistent with p38 being a downstream target of Hbox12. Importantly, nuclear TRCD-fluorescence clearly highlights that the hbox12-misexpressing cells were perfectly intact and divided synchronously with respect to surrounding cells of the double injected embryos.\n\nIt should be emphasized that at the 60-cell stage p38 is normally activated in a sector encompassing about 250\u00b0 (Figure 8A). On the basis of this observation, we reasoned that inhibition of p38 activity through clonal misexpression of hbox12 could only be attained, at most, in about one third of such a spatial domain. Therefore, it was not surprising to observe that the double-injected embryos developed as normal-looking pluteus larvae (not shown).\n\nTo sum up, these results very well correlate with either the ectopic or reduced expression of nodal in hd-injected and hbox12 overexpressing embryos, respectively. Most importantly, our findings also strongly support the hypothesis that Hbox12 defines the future dorsal side of the embryo by transient inactivation of p38 activity at a key time point, thereby allowing the asymmetric expression of nodal on the opposite side.\n\n## Discussion\n\n### hbox12 and establishing of the DV positional information\n\nDuring early development of bilaterian embryos symmetry breaking is imposed through establishing of distinct polarities, which are precursors of the larval axes. Although polarization is morphologically not apparent in the zygote, fates of different embryonic regions are patterned on the axial coordinate system by a combination of maternally inherited factors and differential zygotic gene expression (De Robertis, 2009).\n\nIn sea urchins, the embryonic DV axis formation is intimately linked to a small group of cells that specifically begin to express nodal by the early blastula stage and behaves as a DV organizing centre. Production of the Nodal ligand by these cells is pivotal for both defining of their ventral identity and accomplishing the DV patterning program (Duboc et al., 2004; Flowers et al., 2004; Yaguchi et al., 2007). Indeed, Nodal signaling locally induces the production of BMP2/4, a diffusible relay molecule which is translocated on the opposite side of the embryo to specify dorsal cell fates (Angerer et al., 2000; Lapraz et al., 2009; Chen et al., 2011). The DV organizer is also a source of Lefty, which restricts Nodal signaling to the ventral side, and Chordin, which prevents BMP2/4 signaling in the ventral ectoderm (Bradham et al., 2009; Lapraz et al., 2009). Because polarization requires the concerted action of all these secreted proteins, unveiling the mechanisms that allow competence for spatial positioning of the DV organizer activities is crucial for understanding embryonic patterning.\n\nThe data presented here establish that hbox12 is a key upstream gene in patterning the DV axis of the sea urchin embryo, where it functions to prevent ectopic activation of nodal transcription within the prospective dorsal ectoderm. To our knowledge, hbox12 represents the earliest known zygotic regulatory gene expressed by non-organizer cells and involved in the restriction of the DV organizer field. As a first piece of evidence to support this assertion, we found that overexpression of hbox12 severely perturbs DV polarity in embryos ubiquitously translating the synthetic full-length hbox12 mRNA as well as in chimeric specimens bearing the hbox12 transcript in the animal hemisphere. An almost perfect equivalence of effects is obtained by the expression of HD-En obligate repressor, clearly indicating that Hbox12 acts as a transcriptional repressor in the embryo.\n\nRemarkably, the transcript abundance of nodal suffered a dose-dependent attenuation following misexpression of hbox12 through injection of either hbox12 or hd-En synthetic mRNAs into zygotes. As a consequence, gsc and tbx2/3 genes, which are differentially expressed along the DV axis, downstream to nodal signaling, were also down-regulated in both the experimental assays.\n\nThe notion of an important role of hbox12 in limiting the DV organizer function is even further strengthened by the loss-of-function experiments following injection of the hd RNA, which revealed that axial specification strayed off the canonical track, eventually culminating in strong ventralization. In particular, the morphology of the hd-injected embryos was steadily spherical during development, never evolving into the characteristic easel-like shape of unperturbed embryos. Their ectoderm did not partition into morphologically distinguishable domains, PMCs were radially distributed around the straight archenteron, forming a mispatterned circular-shaped skeleton, and pigment cells were not produced. As described, all these phenotypic traits have been reported to arise following ectopic expression of nodal (Bradham and McClay, 2006; Duboc et al., 2004; Saudemont et al., 2010; Yaguchi et al., 2010). Accordingly, molecular analyses revealed a dramatic expansion of the nodal expressing domain.\n\nThe specificity exerted by HD on both nodal and gsc gene transcription is well supported by the absence of effect on these marker genes following overexpression of the isolated homeodomain of Otp, indicating individual discrimination of the two homeodomains.\n\nFurthermore, clonal expression of HD imposed by either blastomere transplantation experiments or gene transfer assays unequivocally highlights that Hbox12 action in presumptive dorsal ectoderm cells is necessary to harmoniously pattern the embryo along its DV axis.\n\nThis evidence is even better corroborated by the fact that injection of the morpholino oligonucleotide against nodal mRNA into a single blastomere at the 4-cell stage could substantially restore the DV polarity of embryos ventralized by the injection of hd RNA. Lineage tracing clearly showed that the progeny of the injected blastomere was invariably embedded into the dorsal structures of the rescued larvae. Such a result is fully consistent with the regulative nature of the DV axis specification, historically highlighted since the experiment of Driesch demonstrating the totipotency of each blastomere of the 4-cell stage embryo (Driesch, 1892). In fact, cell fates along the DV axis are progressively determined through early development by means of intercellular signaling (Hurley et al., 1989; Duboc et al., 2004). Accordingly, hbox12 transcription is not activated cell-autonomously, being almost undetectable in dissociated embryos (Di Bernardo et al., 1995).\n\nAltogether, our findings show that the equilibrium of DV patterning is severely disrupted from the beginning in the absence of the Hbox12 function.\n\n### Hbox12 and the nascent DV gene regulatory network\n\nThe events that drive the transcriptional regulation of nodal are not completely understood. An interesting line of questioning to pursue in the future would be to evaluate whether Hbox12 directly represses nodal transcription in dorsal cells. Intriguingly, several consensus binding sites for homeodomain-containing factors do exist within the promoter sequence of the nodal gene (Range et al., 2007). On this basis, we cannot exclude the direct association of Hbox12 to the cis-regulatory apparatus of nodal (Figure 9).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/04664/elife-04664-fig9-v2.jpg)\n\n**Figure 9.:** In the early embryo, hbox12 transcription is initiated by combinatorial positive inputs from Otx and probably Sox in the future dorsal ectoderm (Cavalieri et al., 2008). hbox12-dependent suppression of nodal gene expression in these cells is mediated by the transient inactivation of p38 and/or probably by direct repression. On the ventral side of the embryo, hbox12 expression is negatively regulated by unidentified repressors (Cavalieri et al., 2008). In these cells, active p38 stimulates nodal expression probably through Oct1/2 or other intermediate transcription factors (Range and Lepage, 2011), allowing the establishment of the DV organizer and patterning along the secondary axis.\n\nOn the other hand, several lines of evidence indicate that redox signaling is involved in transcriptional activation of nodal. Old and new intriguing experiments suggest that a respiratory gradient in the early sea urchin embryo could bias DV axis orientation (Pease, 1941; Child, 1948; Czihak, 1963; Coffman and Davidson, 2001). As an additional clue, the mitochondrial enzyme cytochrome oxidase has higher activity in the presumptive ventral side of the early embryo (Czihak, 1963), probably due to a local enrichment in mitochondria (Coffman et al., 2004). A possible link between the redox gradient and the initiation of nodal transcription is represented by the stress activated kinase p38, which is responsive to reactive-oxygen-species in the sea urchin embryo (Coffman et al., 2009) and is required for nodal expression (Bradham and McClay, 2006). In agreement with this hypothesis, we show that Hbox12 is functionally upstream of p38. This conclusion is firstly supported by the fact that impairing Hbox12 function, by injection of the hd RNA, efficiently supplanted the anisotropic inactivation of a GFP-tagged p38 in the prospective dorsal side of the 60-cell stage embryo. By contrast, and in accordance with the previous result, either the ectopic or clonal expression of the hbox12 mRNA specifically prevents p38-GFP nuclear translocation. These findings strongly suggest that a disrupted distribution of active/inactive p38 realistically accounts for either the ectopic or reduced expression of nodal in hd-injected and hbox12 overexpressing embryos, respectively, and concomitant abnormalities in DV patterning.\n\nTaken together, these results show clearly that the negative regulation of nodal gene transcription in presumptive dorsal cells is under the control of hbox12 by means of specific p38 inactivation during early steps of embryogenesis (Figure 9). The mechanism by which Hbox12 suppresses p38 function remains an open question. As the functional status of p38 depends upon the balance between specific kinase and phosphatase activities, Hbox12 might switch such a balance in dorsal cells. For instance, this could be accomplished by suppressing locally the expression of the kinase involved in p38 activation. In a distinct scenario, Hbox12 might work in a regulatory tandem together with a downstream repressor, constituting a so-called double-negative gate which in turn would allow the dorsal-restricted expression of the phosphatase acting on p38. Such an exclusion effect is not uncommon, especially during early embryogenesis, and numerous examples have been described across metazoans (Oliveri and Davidson, 2007). Another fascinating possibility will require learning whether p38 directly interacts with the Hbox12 regulator as it does with other homeodomain-containing transcription factors (Houde et al., 2001; Zhou et al., 2013). Whatever is the mechanism, our results shed new light on the understanding of symmetry breaking events acting upstream of Nodal signaling for the establishment of the DV organizer activity during early embryogenesis of the sea urchin. This makes hbox12 the earliest regulatory gene integrated in the molecular circuit that initiate DV axis formation in the embryo. The identification and characterization of potential asymmetric input drivers involved in the control of hbox12 transcription might further improve our understanding of the nature of DV polarization. On this basis, an intriguing issue to be elucidated would be to know whether maternal redox information somehow integrates at the level of the cis-regulatory apparatus of the hbox12 gene. Experiments are currently underway to explore this possibility.\n\n### An evolutionary perspective\n\nAmong the paired-like class of homeodomain-containing proteins identified in sea urchins, Pmar1 from Strongylocentrotus purpuratus (Oliveri et al., 2002), and its ortholog Micro1 from Hemicentrotus pulcherrimus (Kitamura et al., 2002), appeared to be the most similar to Hbox12. We reasoned that if they were orthologous genes they should show high identity, same cis-regulation, as well as spatiotemporal expression pattern, and function.\n\nFor instance, the homeodomain of the Otx regulator is 100% identical between S. purpuratus, H. pulcherrimus and P. lividus and fulfils the same function. By contrast, Hbox12 and Pmar1/Micro1 proteins display only an average of 74% identity, with differences found even in the homeodomain.\n\nThe spatial expression pattern, and to some extent the timing of activation, of hbox12 and pmar1 are profoundly different (Figure 1; Di Bernardo et al., 1995; Oliveri et al., 2002). In addition, while pmar1 expression is thought to be cell-autonomous in micromeres (Oliveri et al., 2002), hbox12 transcription depends on cell\u2013cell interactions (Di Bernardo et al., 1995). Notably, we have demonstrated that the hbox12 cis-regulatory system is transiently active in the prospective dorsal ectoderm, congruent with the spatiotemporal restriction of the endogenous gene (Cavalieri et al., 2008).\n\nGiven this premise, a clear cut discordance between the functional outputs of Pmar1 and Hbox12 was expected. Indeed, Pmar1 act as a anti-repressor inhibiting the transcription of the ubiquitous repressor HesC, which negatively regulates the repertoire of early micromere specification genes (Oliveri et al., 2003; Yamazaki et al., 2005; Revilla-i-Domingo et al., 2007). Our results rather suggest an involvement of Hbox12 at the top of the regulatory hierarchy implicated in the polarization of the embryo along the DV axis.\n\nNoteworthy, multiple copies of both hbox12 and pmar1/micro1 genes are clustered in P. lividus and S. purpuratus/H. pulcherrimus genomes respectively, suggesting that numerous rounds of duplication have occurred at these loci during evolution. From this and aforementioned considerations, we suppose that hbox12 and pmar1 could be paralogs, rather than orthologs. Considering that the time point for the split between the Strongylocentrotid species and the more recent Parechinid P. lividus species is estimated to be about 35\u201350 Myr (Smith, 1988), in such a speculative scenario hbox12 may have arisen by a P. lividus lineage-specific duplication from a common ancestor with pmar1.\n\nIn this regard, of interest is the sobering clue that the two cited sea urchin species differ in aspects of DV axis determination. For instance, in S. purpuratus the DV axis passes through a plane about 45\u00b0 clockwise from the first cleavage furrow (Cameron et al., 1989), indicating that secondary axis specification is initiated between fertilization and first cleavage, which is consistent with the asymmetric distribution of mitochondria within eggs and early embryos of this species (Coffman et al., 2004). Classical studies in P. lividus embryos instead demonstrate that DV axis is randomly oriented with respect to the first cleavage plane, and that it is established between the fifth and eighth cleavage stage (Horstadius and Wolsky, 1936), which broadly corresponds to the peak of hbox12 expression.\n\n## Materials and methods\n\n### Microinjection, embryo manipulation and imaging\n\nMicroinjection was conducted as described (Cavalieri et al., 2007, 2009a). Synthetic mRNAs were resuspended in 30% glycerol and, in selected experiments, TRCD (Molecular Probes, Italy) was added at 5%. For overexpression experiments, capped mRNAs were synthesized from the linearized pCS2 constructs using the mMessage mMachine kit (Ambion, Italy). Approximately 1\u20132 pl of the purified RNAs were then injected at the following concentrations: hbox12 and strim1 out-of-frame, 0.01\u20130.4 pg/pl; hd, hd-GFP, and otp-hd, 0.4 pg/pl. Mo-nodal was instead injected at 0.5 mM along with RDLX. For DNA constructs, approximately 5000 molecules of the linearized phbox12-HD-GFP or the control phbox12-GFP transgenes were injected per zygote. The phbox12-GFP transgene corresponds to the construct initially referred to as 1.45GFP (Cavalieri et al., 2008). Such a construct contains a genomic fragment including 1.45 kb of the promoter sequence of hbox12, abutting at the 3\u2032 end the ATG start codon fused in frame with the GFP coding sequence (further details are provided in Cavalieri et al., 2008). For all experiments, several hundreds of injected embryos were observed and each experiment was repeated at least three times with different batches of eggs.\n\nRecombination of animal and vegetal halves were carried out as described (Cavalieri et al., 2011). Briefly, control or injected P. lividus embryos at the 16-cell stage were transferred into a modified Kiehart chamber in Ca2+-free sea water and manipulated with fine glass needles under a Leica M165FC stereomicroscope equipped with micromanipulators (Narishige, UK). After surgery, the embryos were returned to regular sea water and reared until the desired stage.\n\nTransplanted and non-chimeric injected embryos at the desired stage were harvested, mounted on glass slides and examined under a Leica DM-4500B upright fluorescent microscope. Digital images were captured and processed using Adobe Photoshop CS6.\n\n### Quantitative PCR and whole mount in situ hybridization\n\nReverse-transcription and qPCR analysis were performed as described (Cavalieri et al., 2009b, 2011, 2013). Briefly, total RNA from batches of unfertilized eggs and embryos grown at the desired stage was extracted by using the Power SYBR Green Cells-to-CT kit (Ambion, Italy) and reverse transcribed following the manufacturer's recommendations. The resulting cDNA sample was further diluted and the equivalent amount corresponding to one embryo was used as template for qPCR analysis, using the oligonucleotide primers indicated in Supplementary file 1. qPCR experiments were performed from two distinct batches and all reactions were run in triplicate on a 7300 Real-Time PCR system (Applied Biosystems, Italy) using SYBR Green detection chemistry. ROX was used as a measure of background fluorescence and, at the end of the amplification reactions, a \u2018melting-curve analysis\u2019 was run to confirm the homogeneity of all amplicons. Calculations from qPCR raw data were performed by the RQ Study software version 1.2.3 (Applied Biosystems, Italy), using the comparative Ct method. Primer efficiencies (i.e., the amplification factors for each cycle) were found to exceed 1.9. In every experiment, a no-template control was included for each primers set. A cytochrome oxidase or the mbf1 mRNA, which are known to be expressed at a constant level during development (Cavalieri et al., 2008, 2009b), were used to normalize all data, in order to account for fluctuations among different preparations.\n\nFor developmental expression analysis of hbox12 and nodal, the number of transcripts per embryo at the 60-cell stage was estimated assuming a reference standard number of 1000 copies/embryo of the z12 mRNA (Wang et al., 1995; Materna et al., 2010).\n\nChromogenic whole mount in situ hybridization procedure was performed as described (Cavalieri et al., 2011), with Digoxigenin-labeled antisense RNA probes and staged embryos. For the simultaneous detection of hbox12 and nodal transcripts we followed the double two-color WMISH procedure (Cavalieri et al., 2011). In this experiment, embryos were co-hybridized with a Digoxigenin-labeled hbox12 probe along with a Fluorescein-labeled nodal probe. Probes were then sequentially revealed using alkaline phosphatase-conjugated antibody with NBT/BCIP (for the dig-probe) or BCIP (for the fluo-probe) as chromogenic substrate.\n",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "285e7616-3272-47c0-bc0d-0ddd112fd9a5",
+      "submission_id": "758d5407-1963-4d17-9494-7d69b9012240",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Robb Krumlauf, Stowers Institute for Medical Research , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04664.018](https://doi.org/10.7554/eLife.04664.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe reviewers are in agreement that this paper has the potential represent an important contribution to understanding the specification and patterning of the dorsal-ventral (aboral-oral) axis of the sea urchin embryo. This manuscript presents generally compelling experimental evidence that the sea urchin Hbox12 gene encodes a transcriptional repressor whose early expression in the dorsal animal domain of the embryo is required for the proper dorsal-ventral patterning of the embryo by restricting Nodal to the ventral domain. The work contributes to our understanding of early symmetry breaking events in embryonic development and because Nodal has an important role in patterning of other deuterostome embryos this study should be of interest to the broader research community. However there are several important points which need to be addressed in a revised version of the paper before making a final decision on acceptance for publication.\n\n1) The morphological evidence presented strongly supports the conclusions. The analysis of gene expression is somewhat less compelling. It is stated \u201cmicroinjection of equal amounts of either hbox12 or hd-En mRNA caused a dose-dependent attenuation in the level of nodal transcript at a very similar extent\u201d. However, as mentioned in Figure 2\u2013figure supplement 1 (but not in the Results or Discussion), the reduction in nodal transcript was actually less than significant in the quantitative PCR assay used. The authors reasonably point out that this may be because many of the embryos injected with these mRNAs ultimately did not show loss of dorsal-ventral patterning. This lack of consistency in injected embryos is of some concern and somewhat unusual. The lack of significance (and marginal significance of other qPCR data) should be made clear in the text (and in the legend to Figure 2 which mentions the gray area but not the lack of significance).\n\n2) It is stated \u201dWe conclude that in the double hd-GFP and Mo-nodal injected embryos, clonal knock-down of nodal was able to restore the asymmetrical production of the Nodal ligand, which in turn sufficed to resume the entire DV axis.\u201d While this is a reasonable interpretation, no direct evidence was presented for the abundance or localization of the Nodal (or nodal mRNA) in this experiment, so the statement is conjectural and should be modified.\n\n3) The hbox12 gene is annotated in the S. purpuratus genome as pmar1 and has been extensively characterized by Oliveri and Davidson. Pmar1 is expressed in micromeres and functions as a critical component of an endomesodermal specification regulatory network. This paper is essentially proposing that there is a radical difference in the function of this gene in two closely related species of urchin. The authors need to make an attempt to provide a reasonable explanation for what many would consider a contradiction. Hence, address a rationale for what appear to be differences in fundamental molecular patterning mechanisms in closely related species.\n\n4) There is a need to see clear data on the localization of the expression of hbox12. An underlying assumption of this paper is that expression is restricted to presumptive dorsal ectoderm. The cis-regulatory DNA drives mosaic expression of GFP in dorsal ectoderm, as previously reported, but a conventional in situ hybridization or antibody staining would be reassuring to clearly demonstrate that there is a sound basis for the assumed localization of transcription.\n\n5) General point, it is difficult to come to the conclusions that the authors report without analyzing the distribution of the tissue specific genes that have only been quantified by qPCR; it is essential to have both. Conventional loss of function experiments are not provided data, presumably because there are multiple genes. The RNA overexpression only partly overcomes this problem and the overexpression phenotype is not fully described. For instance, there is a description in the text, and a figure (Figure 2), but the only substantiation of changes in tissue distribution is a low quality in situ RNA hybridization for a mesenchyme gene. If the contention is that there is a change in the distribution of ectodermal domains, this really should be substantiated with tissue specific gene or antibody localizations with specific markers.\n\n6) Specific expression analysis this would help other parts of the paper as well, for instance in the Results section, the defects are not clearly dorsal-ventral polarity and tissue specific markers should be used to establish this. Similarly the authors assert a dorsal-ventral defect without demonstrating alterations in the distribution of tissue markers.\n\n7) A minor point, a curious outcome of the experiments is the effects on the pigment cell lineage. As this lineage arises from mesoderm, the effect is not fully explained. A clear demonstration that the early commitment of macromere derived cells is the proximal effect by using tissue specific gene probes; the standard in the field would be valuable. The loss of pigment and the suppression of GCM could come about in several ways: one cannot assume it is at the level of specification.\n",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1e88ed80-0059-47c5-b009-b496c100f036",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C1",
+      "claim": "In Paracentrotus lividus, the Hbox12 homeodomain-containing repressor is expressed by prospective dorsal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In Paracentrotus lividus, the Hbox12 homeodomain-containing repressor is expressed by prospective dorsal cells, spatially facing and preceding the onset of nodal transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this finding, which is supported by experimental data shown in Figure 1 and described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "10dfd7d8-a53f-4055-892a-51a09ac203a4",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C2",
+      "claim": "Hbox12 expression spatially faces and precedes the onset of nodal transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "In Paracentrotus lividus, the Hbox12 homeodomain-containing repressor is expressed by prospective dorsal cells, spatially facing and preceding the onset of nodal transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Temporal and spatial expression data in Figure 1 show hbox12 expression begins at least two cell divisions earlier than nodal and occupies opposite sectors of the embryo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "aa412ca8-c489-4e00-b743-e43e86a92554",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C3",
+      "claim": "Hbox12 misexpression provokes DV abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "We report that Hbox12 misexpression provokes DV abnormalities, attenuating nodal and nodal-dependent transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from microinjection experiments shown in Figure 2 demonstrate morphological abnormalities and altered gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "126b2fb3-bd10-46c0-a81f-f515093267b2",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C4",
+      "claim": "Hbox12 misexpression attenuates nodal transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "We report that Hbox12 misexpression provokes DV abnormalities, attenuating nodal and nodal-dependent transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "qPCR data in Figure 2H,I show dose-dependent reduction in nodal transcript levels following hbox12 mRNA injection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "2cc4940b-368d-4caf-8b19-21416fe2a00f",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C5",
+      "claim": "Hbox12 misexpression attenuates nodal-dependent transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "We report that Hbox12 misexpression provokes DV abnormalities, attenuating nodal and nodal-dependent transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "qPCR and WMISH data in Figure 2 show reduced expression of nodal-dependent genes like gsc and tbx2/3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "cacec99b-d194-4bba-aa10-268c4089c7ea",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C6",
+      "claim": "Impairing hbox12 function disrupts DV polarity by allowing ectopic expression of nodal.",
+      "claim_type": "EXPLICIT",
+      "source": "Reciprocally, impairing hbox12 function disrupts DV polarity by allowing ectopic expression of nodal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Loss-of-function experiments using HD construct shown in Figure 4 demonstrate expanded nodal expression domain and ventralized phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "54b0147a-dfc6-444e-ba64-374056a5d61b",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C7",
+      "claim": "DV polarization requires Hbox12 action in dorsal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Clonal loss-of-function, inflicted by blastomere transplantation or gene-transfer assays, highlights that DV polarization requires Hbox12 action in dorsal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Chimera experiments in Figures 3, 5, and 6 show that disrupting hbox12 function specifically in animal hemisphere cells causes DV patterning defects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "e0f5f344-ee37-4833-88a2-a4f586785f74",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C8",
+      "claim": "Localized knock-down of nodal restores DV polarity of embryos lacking hbox12 function.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the localized knock-down of nodal restores DV polarity of embryos lacking hbox12 function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Rescue experiments shown in Figure 7 demonstrate that clonal nodal knockdown in HD-expressing embryos restores normal DV axis formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "7d5be7cc-60b4-4014-b51c-60fb34338b99",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C9",
+      "claim": "hbox12 is a dorsal-specific negative modulator of p38-MAPK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that hbox12 is a dorsal-specific negative modulator of the p38-MAPK activity, which is required for nodal expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Live imaging experiments with p38-GFP fusion protein in Figure 8 show that hbox12 expression correlates with p38 inactivation and that manipulating hbox12 alters p38 activity patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "fffa612f-cd3f-4adc-b421-bed51bd63366",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C10",
+      "claim": "p38-MAPK activity is required for nodal expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that hbox12 is a dorsal-specific negative modulator of the p38-MAPK activity, which is required for nodal expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work (Bradham and McClay, 2006; Nam et al., 2007; Range et al., 2007; Coffman et al., 2009) and the correlation between p38 activity patterns and nodal expression.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "bede6cdb-300e-440d-ac86-37e03f639aed",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C11",
+      "claim": "Hbox12 function is essential for proper positioning of the DV organizer.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results suggest that Hbox12 function is essential for proper positioning of the DV organizer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the combined results of gain-of-function, loss-of-function, and rescue experiments showing that Hbox12 restricts nodal expression to the ventral side.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "8db5881d-6bf1-41aa-88f6-97b4e9b77bed",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C12",
+      "claim": "DV polarity is not firmly established in the unfertilized egg.",
+      "claim_type": "EXPLICIT",
+      "source": "DV polarity is not firmly established in the unfertilized egg, but rather relies on a combination of inherited maternal information and inductive interactions among early blastomeres, becoming morphologically recognizable from the gastrula stage onward (Brandhorst and Klein, 2002; Angerer and Angerer, 2003; Molina et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "2208fa4c-d68e-4f6b-a821-7e9340b339d3",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C13",
+      "claim": "DV polarity relies on a combination of inherited maternal information and inductive interactions among early blastomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "DV polarity is not firmly established in the unfertilized egg, but rather relies on a combination of inherited maternal information and inductive interactions among early blastomeres, becoming morphologically recognizable from the gastrula stage onward (Brandhorst and Klein, 2002; Angerer and Angerer, 2003; Molina et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "b903f500-ca8c-45cd-80fe-f056f6ee5804",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C14",
+      "claim": "DV polarity becomes morphologically recognizable from the gastrula stage onward.",
+      "claim_type": "EXPLICIT",
+      "source": "DV polarity is not firmly established in the unfertilized egg, but rather relies on a combination of inherited maternal information and inductive interactions among early blastomeres, becoming morphologically recognizable from the gastrula stage onward (Brandhorst and Klein, 2002; Angerer and Angerer, 2003; Molina et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "ebdafa5b-9677-488f-ae02-26265a05056b",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C15",
+      "claim": "The ectoderm of the pluteus larva is partitioned into four main domains: oral/ventral ectoderm, aboral/dorsal ectoderm, ciliary band, and apical neurogenic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The ectoderm of the pluteus larva is noticeably partitioned into four main domains: (1) the oral/ventral ectoderm, a thickened epithelium surrounding the mouth, (2) the aboral/dorsal ectoderm, a squamous epithelium that covers most of the rest of the larval body, (3) the ciliary band, a belt of ciliated cells positioned at the border between oral and aboral ectoderm, and (4) the apical neurogenic domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of established sea urchin larval anatomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "a39ee9cb-a9b8-47ea-9552-6499364048ee",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C16",
+      "claim": "Nodal is expressed on the future oral side and behaves as an organizing centre imposing DV polarity in all three germ layers.",
+      "claim_type": "EXPLICIT",
+      "source": "The genetic landmark of polarization along the secondary axis is the zygotic expression of the TGF-\u03b2 superfamily member Nodal on the future oral side, which behaves as an organizing centre imposing DV polarity in all three germ layers of the embryo (Duboc et al., 2004; Flowers et al., 2004; Duboc et al., 2010; Materna et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "ffc8dfa4-2e8b-437d-a5d1-9b3afaade14b",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C17",
+      "claim": "Targets of Nodal signaling within the oral ectoderm include genes encoding Lefty, BMP2/4 and Chordin.",
+      "claim_type": "EXPLICIT",
+      "source": "Targets of Nodal signaling within the oral ectoderm include genes encoding the TGF-\u03b2 pathway extracellular components Lefty, BMP2/4 and Chordin (Angerer et al., 2000; Duboc et al., 2004, 2008; Bradham et al., 2009; Lapraz et al., 2009; Yaguchi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "05553703-b8bb-4e05-80d3-17aa5d8e19d7",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C18",
+      "claim": "Lefty diffuses more rapidly than Nodal and acts as a long-range Nodal inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Although they are expressed by the same cells, Lefty is thought to diffuse more rapidly than Nodal, thus acting as a long-range Nodal inhibitor (Bolouri and Davidson, 2010; Duboc et al., 2004, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "38d4e2ed-ba36-462b-ac85-abab5f5361f4",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C19",
+      "claim": "BMP2/4 acts as a relay to specify the aboral ectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "The BMP2/4 ligand acts instead as a relay to specify the aboral ectoderm, to which its signaling activity is confined, due to inhibition of BMP2/4 reception by Chordin within the oral ectoderm (Angerer et al., 2000; Duboc et al., 2004; Lapraz et al., 2009; Chen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "24adca7d-888f-4cc8-8158-894365a58f8c",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C20",
+      "claim": "BMP2/4 signaling is confined to the aboral ectoderm due to inhibition by Chordin within the oral ectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "The BMP2/4 ligand acts instead as a relay to specify the aboral ectoderm, to which its signaling activity is confined, due to inhibition of BMP2/4 reception by Chordin within the oral ectoderm (Angerer et al., 2000; Duboc et al., 2004; Lapraz et al., 2009; Chen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "fc047b93-3b3e-4d9d-bfd1-b18ffe476bc5",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C21",
+      "claim": "At the early blastula stage, a maternally related anisotropy in redox gradient transiently inactivates p38 kinase in the future dorsal ectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the current models, at the early blastula stage a maternally related anisotropy in redox gradient would transiently inactivate the p38 kinase in the future dorsal ectoderm (Bradham and McClay, 2006; Coffman, 2009), somehow leading to activation of the maternal bZIP and Oct1/2 factors on the ventral side (Nam et al., 2007; Range et al., 2007; Range and Lepage, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes current models supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "93a38af6-46bd-43d2-9170-77d8c9d85431",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C22",
+      "claim": "Redox gradient inactivation of p38 leads to activation of maternal bZIP and Oct1/2 factors on the ventral side.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the current models, at the early blastula stage a maternally related anisotropy in redox gradient would transiently inactivate the p38 kinase in the future dorsal ectoderm (Bradham and McClay, 2006; Coffman, 2009), somehow leading to activation of the maternal bZIP and Oct1/2 factors on the ventral side (Nam et al., 2007; Range et al., 2007; Range and Lepage, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes current models supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "9045d716-739c-4416-8c11-b4c55e59d586",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C23",
+      "claim": "The cis-regulatory apparatus of nodal responds to maternal bZIP, Oct1/2, SoxB1, and Univin factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The cis-regulatory apparatus of nodal responds to these factors, as well as to the maternal positive inputs of SoxB1 and Univin (Range et al., 2007), directing the expression of the gene within a discrete sector of the ectoderm that corresponds to the presumptive oral ectoderm (Duboc et al., 2004; Flowers et al., 2004; Saudemont et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "ce29933d-e1bc-4b92-82ab-228c16822a61",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C24",
+      "claim": "nodal spatial expression is consolidated by a positive feedback mechanism related to Nodal signal transduction and by Nodal-dependent production of Lefty.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a spatial expression profile is then consolidated by a positive feedback mechanism related to the Nodal signal transduction system, and by the concurrent Nodal-dependent production of the Nodal antagonist Lefty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes established regulatory mechanisms in the nodal pathway.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "9792c59c-5626-4b52-8112-b461a2ec6695",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C25",
+      "claim": "FoxQ2 contributes to suppress nodal expression in the apical neurogenic ectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "In strict accordance with this possibility, it has been shown that the transcription repressor FoxQ2 contributes, together with Lefty, to suppress nodal expression in the apical neurogenic ectoderm (Yaguchi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "d82b1bbd-0416-497e-9ea6-36730cf4cf16",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C26",
+      "claim": "hbox12 expression begins at least two cell divisions earlier than nodal expression.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, hbox12 expression begins at least two cell divisions earlier with respect to that of nodal (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Temporal expression data shown in Figure 1A demonstrates the timing difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "84913745-18d9-4073-9a3c-6140c959544b",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C27",
+      "claim": "hbox12 and nodal occupy opposite sectors of the early blastula embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Double-labeling whole mount in situ hybridization (WMISH) at the early blastula stage showed that the spatial domains of expression of the two genes occupy opposite sectors of the embryo (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Double-labeling WMISH shown in Figure 1B demonstrates spatial separation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "46d6a2ef-2b65-4bcb-a293-4c3d3eb3b9f9",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C28",
+      "claim": "hbox12 is expressed in the prospective dorsal ectoderm of the early embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "These results, coupled with those of the cis-regulatory analysis reported previously (Cavalieri et al., 2008), lead us to definitively conclude that hbox12 is expressed in the prospective dorsal ectoderm of the early embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on current data and previous cis-regulatory analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "7b1d1713-2ecb-44cc-a501-596442bfb56e",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C29",
+      "claim": "50% of embryos ubiquitously expressing 0.1 pg of hbox12 mRNA exhibited strong DV perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, 50% (n > 1500) of the specimens ubiquitously expressing 0.1 pg of the functional hbox12 mRNA exhibited a highly reproducible strong perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from microinjection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "3147e54f-0084-4270-84fc-576a802f0d4d",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C30",
+      "claim": "hbox12-injected embryos at gastrula stage appeared rounded with irregularly dispersed PMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "At gastrula stage, when control embryos displayed a clear DV polarity as shown by the thickening of the ventral side and the symmetric ventral-lateral arrangement of the two primary mesenchyme cell (PMC) clusters (Figure 2B), embryos translating exogenous hbox12 mRNA appeared quite rounded and their PMCs were irregularly dispersed into the blastocoel (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Morphological observations shown in Figure 2E demonstrate the phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "55e445e7-2871-4604-9f04-748e8b40909f",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C31",
+      "claim": "hbox12-injected embryos at pluteus stage appeared almost spherical without stomodeum formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Control-injected embryos were normal angular-shaped larvae exhibiting the characteristic bilateral symmetry (Figure 2C). By contrast, hbox12-injected embryos appeared almost spherical (Figure 2F). In these specimens, PMCs retained a certain biomineralizing activity, producing two calcareous elements which did not elongate as much as those of the control embryos at the same stage. These embryos displayed a straight archenteron and did not form a stomodeum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Morphological observations shown in Figure 2F demonstrate the phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "e50c4eeb-ccfb-4b86-aa6f-c09fc5ef4f7e",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C32",
+      "claim": "HD-En injection produces the same phenotype as hbox12 injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Exactly the same phenotype was obtained following injection of similar amounts of a synthetic mRNA encoding for the chimeric repressor HD-En (Figure 2G), in which the homeodomain of Hbox12 was joined to the repressor domain of Drosophila Engrailed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental comparison shown in Figure 2G demonstrates equivalent phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "697503e6-d8ed-408d-8f4e-758596e2d09a",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C33",
+      "claim": "Hbox12 normally functions as a transcriptional repressor in the early embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "It follows that Hbox12 normally function as a transcriptional repressor in the early embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the HD-En fusion protein experiment showing equivalent effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "26414628-ba43-41d2-b09a-b64e1b93781a",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C34",
+      "claim": "Microinjection of hbox12 or hd-En mRNA causes dose-dependent attenuation of nodal transcript level.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, microinjection of equal amounts of either hbox12 or hd-En mRNA caused a dose-dependent attenuation in the level of nodal transcript at a very similar extent, as revealed by qPCR analysis from hbox12-injected embryos at morula stage (Figure 2H and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qPCR data shown in Figure 2H demonstrate dose-dependent effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "ecb9cb38-980d-4a07-9682-15d3714a7ae7",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C35",
+      "claim": "Expression of goosecoid and tbx2/3 is reduced in hbox12-injected embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the additional oral ectoderm marker goosecoid (gsc) as well as the aboral ectoderm marker tbx2/3 was also reduced (Figure 2I and Figure 2\u2014figure supplement 1), as expected from the perturbed expression of nodal normally necessary for the establishment of the entire DV axis (Duboc et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qPCR data shown in Figure 2I demonstrate reduced expression of these markers.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "bbe7fecb-fedc-4540-a98e-727421099f68",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C36",
+      "claim": "Approximately 47% of hbox12-injected embryos showed defective expression of nodal, gsc, and tbx2/3 by WMISH.",
+      "claim_type": "EXPLICIT",
+      "source": "In close agreement with this hypothesis, WMISH showed that the expression of nodal, gsc, and tbx2/3 genes was apparently reduced (n = 36/93; Figure 2\u2014figure supplement 2E\u2013G) or even nullified (n = 8/93; Figure 2\u2014figure supplement 2I\u2013K) in roughly 47% (n = 93) of hbox12-injected embryos.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "WMISH data shown in Figure 2\u2014figure supplement 2 provide quantitative assessment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "c57ced9d-076e-4b7d-95e0-c512c9eef47e",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C37",
+      "claim": "In 70% of hbox12-injected embryos, PMC distribution into the blastocoel was disorganized.",
+      "claim_type": "EXPLICIT",
+      "source": "By WMISH with the PMC-specific marker msp130 we also confirmed that in the hbox12-injected embryos the complement of PMCs was quite congruent with that of control embryos at the same stage but, in most embryos (70%, n = 250), the distribution of PMCs into the blastocoel was disorganized (compare panels J and K of Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "WMISH data shown in Figure 2\u2014figure supplement 2 provide quantitative assessment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "800e2b57-723f-47b5-842b-a85f5c801cf8",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C38",
+      "claim": "Defects in PMC arrangement are due to failure in the ectoderm to provide adequate patterning information.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding indicates that defects in PMC arrangement are due to a failure in the ectoderm to provide adequate patterning information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that PMC numbers are normal but their distribution is abnormal.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "f0d0534d-d0c3-4792-82b7-c707f623b4ff",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C39",
+      "claim": "When hbox12 was overexpressed exclusively in vegetal halves, almost all chimeras (9/10) developed into normal larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "When hbox12 was overexpressed exclusively in vegetal halves, almost all chimeras (n = 9/10) developed into larvae that were indistinguishable from controls (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Chimera experiments shown in Figure 3C provide quantitative results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "dff0c4b2-57d5-4ff1-8041-9987dae0d54b",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C40",
+      "claim": "6/10 chimeric embryos with hbox12 in the animal hemisphere produced the same phenotype as ubiquitous hbox12 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, 6/10 of the reciprocal chimeric embryos, in which hbox12 was present in the animal hemisphere (Figure 3B), produced the same phenotype as that observed with ubiquitous hbox12 overexpression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Chimera experiments shown in Figure 3B provide quantitative results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "439df2d1-9f35-4836-8f6a-9ead0b504465",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C41",
+      "claim": "Overexpression of Hbox12 in cells derived from the animal hemisphere impinges on the establishment of the DV axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings reveal that overexpression of the transcriptional repressor Hbox12 in cells derived from the animal hemisphere impinges on the establishment of the DV axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the chimera experiments showing animal-specific effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "284a14c5-7a6e-4dcf-be6d-1a74228d705f",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C42",
+      "claim": "80% of hd-injected embryos exhibited failure of DV axial patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, embryos injected with hd mRNA exhibited a failure of the DV axial patterning. At the gastrula stage, when controls exhibited a correctly partitioned ectoderm (Figure 4Aa), the vast majority of the hd-injected embryos (80%, n > 1200) appeared to be constituted by a uniformly thickened epithelium and no discernable ciliary band was identified (Figure 4Ac).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Morphological observations and quantification shown in Figure 4Ac provide the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "f742477c-a7a3-4c82-9e31-6f4af4b5eb1d",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C43",
+      "claim": "62% of HD-expressing embryos developed a spherical morphology with radially distributed PMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The most dramatically affected embryos (62%, n > 1200) have developed an archenteron. However, it never bent to fuse with the oral ectoderm but did grow from the centre of a spherical embryo (Figure 4Ad). In these specimens, PMCs adopted a full radial distribution, as confirmed by WMISH with the msp130 probe (Figure 4Bh, n = 31/45), and formed a grossly mispatterned skeleton around the circumference of the embryo (Figure 4Ad\u2013d\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Morphological observations and quantification shown in Figure 4Ad provide the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "57f431a4-5c82-4dfd-8866-f244db0ca36e",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C44",
+      "claim": "HD-expressing embryos lacked pigment cells and appeared uniformly albino.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, pigment cells were not detected at all and embryos appeared uniformly albino (Figure 4Ad).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Morphological observations shown in Figure 4Ad demonstrate the phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "10564d36-f699-4b0e-b9c7-90d06389f177",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C45",
+      "claim": "HD expression causes broadened ectodermic transcription of nodal and gsc in approximately 70% of embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In sharp contrast, we found that HD expression in embryos at the same stage caused broadened ectodermic transcription of both genes in approximately 70% (n > 80) of the resulting embryos (Figure 4Be,4Bf).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "WMISH data shown in Figure 4Be,Bf provide quantitative assessment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "d40387b9-5141-4dea-b6a4-36d1adcae3ea",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C46",
+      "claim": "The mRNA abundance of nodal and gsc was upregulated during development of hd-injected embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "The mRNA abundance of nodal and gsc was examined by qPCR and, as expected, upregulation was detected for both genes during development (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qPCR data shown in Figure 4C demonstrate upregulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "43e040f3-b71a-437b-a4aa-470f6993784f",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C47",
+      "claim": "Expression of otp-hd does not cause perceptible phenotypic aberration or changes in nodal and gsc expression.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4\u2014figure supplement 2, all the early developing embryos expressing such an isolated DNA-binding domain did not display perceptible phenotypic aberration with respect to control injected embryos at the same stage. Most important, the transcript abundance of both nodal and gsc did not change significantly in embryos expressing the otp-hd.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 4\u2014figure supplement 2 demonstrate specificity of HD effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "3f9c7f56-7746-4bad-9539-08daca5a436e",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C48",
+      "claim": "Impairing Hbox12 function through expression of HD specifically biased DV patterning toward ventralization.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these findings imply that impairing Hbox12 function through expression of HD specifically biased DV patterning toward ventralization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the combined phenotypic and molecular data showing expanded ventral markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "8754c5dc-48a7-4cf4-a1b1-71c174269920",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C49",
+      "claim": "tbx2/3 expression was dramatically increased at early blastula stages in hd-injected embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noted that the mRNA abundance of the dorsal specific gene tbx2/3 did fluctuate following a peculiar trend during development of hd-injected embryos. Although it was dramatically increased at early blastula stages (Figure 4C), it appeared significantly down-regulated at mesenchyme blastula stage (Figure 4Bg, n = 34/42, and Figure 4C) and almost completely abolished at late gastrula stage (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qPCR and WMISH data shown in Figure 4C and 4Bg demonstrate the temporal pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "ab363c29-3b67-4467-b2ef-fa291f4225f3",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C50",
+      "claim": "Expression of ventro-lateral ectoderm markers strim1, fgf, otp and pax2/5/8 was robustly down-regulated in hd-injected gastrulae.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently with the derepression of nodal, the expression of four ventro-lateral ectoderm specific markers, strim1, fgf, otp and pax2/5/8, was robustly down-regulated in hd-injected gastrulae (Figure 4C), strongly supporting the hypothesis that ectoderm patterning was impaired in these embryos.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qPCR data shown in Figure 4C demonstrate downregulation of these markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "0040d8ec-fb14-444c-a15b-099f5886ccf7",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C51",
+      "claim": "hd-injected embryos had downregulated gcm expression at late mesenchyme blastula stage.",
+      "claim_type": "EXPLICIT",
+      "source": "At this stage, hd-injected embryos had downregulated gcm expression (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "qPCR data shown in Figure 4C demonstrate downregulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "076e2bf5-0174-467c-a7ec-41c4f9652117",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C52",
+      "claim": "When HD was expressed only in vegetal halves, the resulting chimeras developed into normal plutei (10/10).",
+      "claim_type": "EXPLICIT",
+      "source": "When HD was expressed only in vegetal halves, the resulting chimeras developed into normal plutei (n = 10/10), which endomesodermal territories appeared red-fluorescent (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Chimera experiments shown in Figure 5B provide quantitative results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "9ea1440b-cc86-427f-ac78-b49e5dc37f01",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C53",
+      "claim": "hbox12 function is not required in the vegetal half for DV polarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, hbox12 function is not required in the vegetal half for DV polarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the chimera experiments showing normal development when HD is restricted to vegetal cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "ac4cf633-6527-45b1-976a-c683de7f1a42",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C54",
+      "claim": "Reciprocal chimeric embryos with hbox12 function disrupted in the animal hemisphere phenocopied non-chimeric hd-injected embryos (7/10).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the reciprocal chimeric embryos, in which hbox12 function was disrupted in the animal hemisphere, phenocopied the morphologies of the non-chimeric hd-injected embryos, and the strongly perturbed phenotype prevailed (n = 7/10; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Chimera experiments shown in Figure 5A provide quantitative results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "237e2ff4-0284-417b-91f2-b1bed45ae783",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C55",
+      "claim": "Inhibition of hbox12 activity in the animal hemisphere is sufficient to impede the establishment of the DV axis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the contention that inhibition of hbox12 activity in the animal hemisphere, where it is normally expressed, is sufficient to impede the establishment of the DV axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the chimera experiments showing animal-specific effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "2c58d567-0389-4444-a4a9-e426696e8236",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C56",
+      "claim": "Skeletogenic disorders originate in the ectoderm, not in PMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, these findings indicate that skeletogenic disorders originate not in PMCs, but are due to a failure in the overlying ectoderm to provide adequate patterning information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from chimera experiments showing that disrupting hbox12 in ectoderm affects skeleton formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "d6fa2cfc-fe00-4523-8988-84ea5d394c94",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C57",
+      "claim": "phbox12-GFP and phbox12-HD-GFP constructs were expressed at similar extent during early embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, both constructs were expressed at a similar extent during early embryogenesis, as indicated by roughly comparable green fluorescence of embryos observed at the early blastula stage (Figure 6\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Fluorescence observations shown in Figure 6\u2014figure supplement 1 demonstrate comparable expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "847e8bed-3858-4dd3-a49e-72f4cfca9d3c",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C58",
+      "claim": "At gastrula stage, green fluorescence was specifically detected in the ectoderm of an average of 60% of injected embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous observations (Cavalieri et al., 2008), at the gastrula stage green fluorescence was specifically detected in the ectoderm of an average of 60% (n > 500) of injected embryos (Figure 6A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Fluorescence observations shown in Figure 6A-B provide quantitative data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "918e8bdd-79f3-46f0-87a8-2e7a9ca07d12",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C59",
+      "claim": "Most phbox12-HD-GFP-injected gastrulae expressing the transgene showed an equally thickened ectoderm and synthesized supernumerary spicule rudiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, despite this circumstance, most of the phbox12-HD-GFP-injected gastrulae expressing the transgene did show an equally thickened ectoderm and synthesized supernumerary spicule rudiments (Figure 6Ba\u2013b), resembling embryos at the same stage that received exogenous hd mRNA (Figs 3Ac\u2013c\u2032 and 4Ab\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Morphological observations shown in Figure 6Ba-b demonstrate the phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "71afee22-30cb-400c-8a61-352f383c2e52",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C60",
+      "claim": "About one half of phbox12-HD-GFP-injected embryos phenocopied abnormalities observed following hd mRNA overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, about one half (n > 800) of the phbox12-HD-GFP-injected embryos phenocopied the abnormalities observed following hd mRNA overexpression (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative observations shown in Figure 6D,E provide the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "29fdc69c-c799-4d01-8e88-77222cacfb34",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C61",
+      "claim": "78% of affected phbox12-HD-GFP embryos displayed profound defects in DV polarity establishment.",
+      "claim_type": "EXPLICIT",
+      "source": "Worth mentioning, more than 60% of these embryos maintained such an abnormal phenotype for up to a week when maintained in culture, excluding that they were stunted embryos that could become normal with more developmental time. Otherwise, a smaller fraction (22%) of the phbox12-HD-GFP-injected embryos showed rather severe radialization coupled to the presence of multiple ectopic spicules (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative observations and long-term culture shown in Figure 6E provide the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "78c97089-393f-4254-9388-580231471a66",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C62",
+      "claim": "The total average number of pigment cells was about 45 \u00b1 5 in phbox12-GFP-expressing larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "The total average number of these cells was about 45 \u00b1 5 in phbox12-GFP-expressing larvae developed from two distinct batches of zygotes (n = 35 embryos counted in each experiment).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative cell counting provides the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "cd199aec-979c-49d3-8189-23657594481e",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C63",
+      "claim": "Pigment cell population was greatly decreased in more than one half of phbox12-HD-GFP injected embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In striking contrast, pigment cell population was greatly decreased in more than one half of phbox12-HD-GFP injected embryos observed at the same stage. In particular, specimens showing the milder phenotype differentiated less than 16 pigment cells (Figure 6E), and this number did not vary culturing the embryos up to a week (not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative cell counting shown in Figure 6E provides the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "bc49e87b-6909-4cfe-b6ad-4c6b24f996b7",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C64",
+      "claim": "Almost all double-injected embryos (>250) with hd-GFP and clonal Mo-nodal developed into normal pluteus larvae with harmoniously patterned DV axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, almost all double-injected embryos (n > 250) developed into normal pluteus larvae with a harmoniously patterned DV axis (Figure 7D,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Rescue experiments shown in Figure 7D,G provide quantitative results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "5ed8806a-636c-433f-9de3-d1ee5f2f9251",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C65",
+      "claim": "The progeny of the blastomere injected with Mo-nodal was always found on the dorsal face of rescued pluteus larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, inspection of these embryos under fluorescence illumination clearly revealed that the progeny of the blastomere injected with Mo-nodal was always found on the dorsal face of the rescued pluteus larvae (Figure 7Db\u2013c,7Gb\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Lineage tracing shown in Figure 7Db-c,Gb-c demonstrates the spatial localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "a3bd94ed-dc2c-4834-9f78-b2f360c16375",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C66",
+      "claim": "Clonal knock-down of nodal was able to restore the asymmetrical production of Nodal ligand in double hd-GFP and Mo-nodal injected embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "As it has been extensively shown that injection of Mo-nodal in P. lividus embryos abrogates translation of the Nodal ligand (Duboc et al., 2004, 2010; Range et al., 2007; Saudemont et al., 2010; Bessodes et al., 2012), we reasonably infer that in the double hd-GFP and Mo-nodal injected embryos, clonal knock-down of nodal was able to restore the asymmetrical production of the Nodal ligand, which in turn sufficed to resume the entire DV axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This inference is based on the rescue phenotype and citations to previous work showing Mo-nodal efficacy.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "fa4c3464-260e-4801-a7ec-f583e9dbf326",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C67",
+      "claim": "p38 is globally active but transiently inactivated in the prospective dorsal side of the early embryo immediately before nodal expression onset.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned, p38 is globally active, but is transiently inactivated in the prospective dorsal side of the early embryo, immediately before the onset of nodal expression (Bradham and McClay, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "d37ade23-a543-4eea-a112-901628762e52",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C68",
+      "claim": "At the 60-cell stage in P. lividus, the peak of hbox12 transcription has just been accomplished.",
+      "claim_type": "EXPLICIT",
+      "source": "By this time, that in P. lividus corresponds to the 60-cell stage, the peak of hbox12 transcription has just been accomplished (Figure 1), and therefore, anisotropic inactivation of p38 should correlate with hbox12 expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on temporal expression data shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "276ef627-f83a-487a-9501-5db96d865abb",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C69",
+      "claim": "At the 60-cell stage, p38 was cleared for a brief interval from nuclei on one side of the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos expressing such a fusion protein developed normally whereas, at the 60-cell stage, p38 was cleared for a brief interval from nuclei on one side of the embryo (Figure 8A), which is thought to be the dorsal side.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Live imaging data shown in Figure 8A demonstrates the asymmetric p38 localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "cc070b2e-2ec5-48f9-9695-c4d86e3b36f2",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C70",
+      "claim": "Impairing Hbox12 function by co-injection of hd mRNA efficiently supplanted p38 asymmetry in roughly 80% of embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Impairing Hbox12 function, by co-injection of the hd mRNA, efficiently supplanted the p38 asymmetry, as shown by the uniform nuclear GFP staining in roughly 80% (n > 250) of the resulting embryos observed at the 60-cell stage (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Live imaging data shown in Figure 8B provides quantitative results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "e7e87b62-1cb0-4e31-88f9-a8440428b2f5",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C71",
+      "claim": "Loss of hbox12 function revoked the transitory phase of p38 inactivation in dorsal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, loss of hbox12 function revoked the transitory phase of p38 inactivation in dorsal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the p38-GFP localization experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "c4488fdc-ffb8-40d5-ae90-451a3bcd6dd2",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C72",
+      "claim": "Uniform ectopic expression of hbox12 mRNA restrained p38-GFP to the cytoplasm in all blastomeres of early embryos (>80%).",
+      "claim_type": "EXPLICIT",
+      "source": "Reciprocally, uniform ectopic expression of the full-length hbox12 mRNA completely reversed this pattern, restraining p38-GFP to the cytoplasm in all blastomeres of early embryos (>80%, n > 250; Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Live imaging data shown in Figure 8C provides quantitative results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "000a2dd9-b1a1-4a75-9834-f720062018ea",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C73",
+      "claim": "In almost all double-injected embryos (87%), the progeny of the blastomere that received exogenous hbox12 mRNA detained GFP staining within the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in almost all the double-injected embryos (87%, n > 200), the progeny of the blastomere that received exogenous hbox12 mRNA firmly detained GFP staining within the cytoplasm (Figure 8F), consistent with p38 being a downstream target of Hbox12.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Live imaging data shown in Figure 8F provides quantitative results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "675022c3-432e-476a-bc33-8c1fabbdfb97",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C74",
+      "claim": "p38 is a downstream target of Hbox12.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in almost all the double-injected embryos (87%, n > 200), the progeny of the blastomere that received exogenous hbox12 mRNA firmly detained GFP staining within the cytoplasm (Figure 8F), consistent with p38 being a downstream target of Hbox12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the clonal hbox12 expression experiments showing cell-autonomous effects on p38 localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "77f2058e-8166-471a-be16-1604e189b85b",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C75",
+      "claim": "Hbox12 defines the future dorsal side of the embryo by transient inactivation of p38 activity at a key time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, our findings also strongly support the hypothesis that Hbox12 defines the future dorsal side of the embryo by transient inactivation of p38 activity at a key time point, thereby allowing the asymmetric expression of nodal on the opposite side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion integrates multiple lines of evidence showing hbox12 effects on p38 activity and nodal expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "5a225b2a-db3f-4d01-9f1b-1643fc375289",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C76",
+      "claim": "hbox12 represents the earliest known zygotic regulatory gene expressed by non-organizer cells and involved in the restriction of the DV organizer field.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, hbox12 represents the earliest known zygotic regulatory gene expressed by non-organizer cells and involved in the restriction of the DV organizer field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the temporal expression data and functional studies presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "94616b3c-34b0-4c1e-887d-a1350ba2b22b",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C77",
+      "claim": "Hbox12 acts as a transcriptional repressor in the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "An almost perfect equivalence of effects is obtained by the expression of HD-En obligate repressor, clearly indicating that Hbox12 acts as a transcriptional repressor in the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the HD-En fusion protein experiments showing equivalent phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "4b2fb4ee-db38-401b-8508-068a05979dee",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C78",
+      "claim": "Multiple copies of hbox12 gene exist in P. lividus.",
+      "claim_type": "EXPLICIT",
+      "source": "As multiple copies of the hbox12 gene exist in P. lividus (Cavalieri et al., 2008), this failure may be due to gene copies with different translation initiation sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "b13b46e7-2310-4edd-8f87-1fe9a7cc7aae",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C79",
+      "claim": "The Hbox12 protein includes the homeodomain close to the N-terminus and two serine-rich octapeptide repeats in the C-terminal region.",
+      "claim_type": "EXPLICIT",
+      "source": "The Hbox12 protein includes the homeodomain close to the N-terminus and two serine-rich octapeptide repeats in the C-terminal region, which probably account for transcription repressor activity (Cavalieri et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural information is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "9333a215-425a-4457-a4ef-f06b87416d69",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C80",
+      "claim": "In S. purpuratus, the DV axis passes through a plane about 45\u00b0 clockwise from the first cleavage furrow.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in S. purpuratus the DV axis passes through a plane about 45\u00b0 clockwise from the first cleavage furrow (Cameron et al., 1989), indicating that secondary axis specification is initiated between fertilization and first cleavage, which is consistent with the asymmetric distribution of mitochondria within eggs and early embryos of this species (Coffman et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "ed323a7b-a3a0-4a34-ac2e-8203e6300c51",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C81",
+      "claim": "In P. lividus, DV axis is randomly oriented with respect to the first cleavage plane.",
+      "claim_type": "EXPLICIT",
+      "source": "Classical studies in P. lividus embryos instead demonstrate that DV axis is randomly oriented with respect to the first cleavage plane, and that it is established between the fifth and eighth cleavage stage (Horstadius and Wolsky, 1936), which broadly corresponds to the peak of hbox12 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to classical work and correlation with hbox12 expression timing.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "e840f448-31e1-4815-8430-bb14fc22d35a",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C82",
+      "claim": "Hbox12 and Pmar1/Micro1 proteins display only an average of 74% identity.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the homeodomain of the Otx regulator is 100% identical between S. purpuratus, H. pulcherrimus and P. lividus and fulfils the same function. By contrast, Hbox12 and Pmar1/Micro1 proteins display only an average of 74% identity, with differences found even in the homeodomain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative sequence analysis result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "ad7f6e30-2aa0-48ef-8784-273c0770f81f",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C83",
+      "claim": "pmar1 expression is thought to be cell-autonomous in micromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, while pmar1 expression is thought to be cell-autonomous in micromeres (Oliveri et al., 2002), hbox12 transcription depends on cell\u2013cell interactions (Di Bernardo et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "5147267b-eac9-4cef-af66-a1f685316e15",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C84",
+      "claim": "hbox12 transcription depends on cell-cell interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, while pmar1 expression is thought to be cell-autonomous in micromeres (Oliveri et al., 2002), hbox12 transcription depends on cell\u2013cell interactions (Di Bernardo et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "311c192c-efd8-4402-9e33-93fd3e03dcb9",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C85",
+      "claim": "Pmar1 acts as an anti-repressor inhibiting the transcription of the ubiquitous repressor HesC.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Pmar1 act as a anti-repressor inhibiting the transcription of the ubiquitous repressor HesC, which negatively regulates the repertoire of early micromere specification genes (Oliveri et al., 2003; Yamazaki et al., 2005; Revilla-i-Domingo et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "e8d7c2eb-fd76-44d3-81c5-41840547ce1a",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C86",
+      "claim": "Multiple copies of both hbox12 and pmar1/micro1 genes are clustered in P. lividus and S. purpuratus/H. pulcherrimus genomes respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, multiple copies of both hbox12 and pmar1/micro1 genes are clustered in P. lividus and S. purpuratus/H. pulcherrimus genomes respectively, suggesting that numerous rounds of duplication have occurred at these loci during evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a genomic observation that leads to an evolutionary inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "48f205c8-894e-4392-84c5-21176a8ed645",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C87",
+      "claim": "The time point for the split between Strongylocentrotid species and Parechinid P. lividus species is estimated to be about 35-50 Myr.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the time point for the split between the Strongylocentrotid species and the more recent Parechinid P. lividus species is estimated to be about 35\u201350 Myr (Smith, 1988), in such a speculative scenario hbox12 may have arisen by a P. lividus lineage-specific duplication from a common ancestor with pmar1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "28700ba4-9512-4c58-9055-fcc80ac2c00e",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C88",
+      "claim": "hbox12 may have arisen by a P. lividus lineage-specific duplication from a common ancestor with pmar1.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the time point for the split between the Strongylocentrotid species and the more recent Parechinid P. lividus species is estimated to be about 35\u201350 Myr (Smith, 1988), in such a speculative scenario hbox12 may have arisen by a P. lividus lineage-specific duplication from a common ancestor with pmar1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative evolutionary hypothesis based on sequence comparisons and divergence times.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "100e0a1f-10ba-4026-a892-1c1554639078",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C91",
+      "claim": "hbox12 expression declines after the 60-cell stage and is no longer detectable by hatching.",
+      "claim_type": "EXPLICIT",
+      "source": "In Paracentrotus lividus, hbox12 expression precedes the onset of nodal transcription, then declines after the 60-cell stage and is no longer detectable by hatching (Di Bernardo et al., 1995; this paper).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This temporal expression pattern is supported by citation and current data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "89fd73fb-5c1f-4c97-bf05-0cf9d827cbdc",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C92",
+      "claim": "hbox12 transcripts are asymmetrically distributed along the DV axis, being confined in cells that become aboral ectoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, hbox12 transcripts are asymmetrically distributed along the DV axis, being confined in cells that become aboral ectoderm, as revealed by cis-regulatory analysis (Cavalieri et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous cis-regulatory analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "48451e19-1d6e-447f-8f64-b67dacd29d0e",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "claim_id": "C93",
+      "claim": "Disrupting the function of Otx downregulates hbox12 transcription and dramatically affects embryo polarization along the DV axis.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this hypothesis, we have previously shown that disrupting the function of the Otx activator, a driver of hbox12, downregulates hbox12 transcription and dramatically affects embryo polarization along the DV axis (Cavalieri et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "80e8ab65-a9f0-413e-bd80-a5625e6e5d2e",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Hbox12 is expressed in prospective dorsal ectoderm cells of early P. lividus embryos, with expression beginning at least two cell divisions before nodal and occupying opposite spatial sectors. Expression peaks at the 60-cell stage and declines thereafter, becoming undetectable by hatching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C26-C28, C91-C92 are well-supported by temporal qPCR data (Figure 1A) showing hbox12 expression precedes nodal by at least two cell divisions, and double-labeling WMISH (Figure 1B) demonstrating opposite spatial domains. The temporal pattern and dorsal localization are confirmed by both current experimental data and previous cis-regulatory analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "fcbaefc5-b1ea-4491-bff8-f1388a5b6df6",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ubiquitous overexpression of hbox12 causes dose-dependent DV axis abnormalities, including reduced nodal and nodal-dependent gene expression (gsc, tbx2/3), rounded morphology at gastrula stage, spherical pluteus without stomodeum, and disorganized PMC distribution. Approximately 50% of embryos injected with 0.1 pg hbox12 mRNA showed strong DV perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C29-C31, C34-C38 are supported by comprehensive morphological observations (Figure 2D-F), qPCR data showing dose-dependent reduction in nodal, gsc, and tbx2/3 (Figure 2H-I), and WMISH confirming reduced or absent expression in ~47% of embryos (Figure 2\u2014figure supplement 2). The phenotypic penetrance and molecular changes are well-documented with appropriate sample sizes (n>1500 for morphology, n=93 for WMISH).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "cd9bda8d-d1f2-47bd-a082-708a1200b776",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Hbox12 functions as a transcriptional repressor in the early embryo, as demonstrated by equivalent phenotypes produced by injection of hbox12 mRNA and HD-En chimeric repressor construct.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33, C77 are supported by experimental comparison showing that HD-En (homeodomain of Hbox12 fused to Engrailed repressor domain) produces identical phenotypes to full-length hbox12 overexpression (Figure 2G). This functional equivalence provides strong evidence for repressor activity, though direct biochemical evidence of repression is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "9d148552-fa0b-4cbf-b08d-77eccdf1e0b0",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Chimera experiments demonstrate that hbox12 overexpression specifically in the animal hemisphere (6/10 embryos) causes DV axis defects, while overexpression in vegetal halves (9/10 embryos) results in normal development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by blastomere transplantation experiments with quantitative results (Figure 3B-C). The spatial specificity is clear, though the penetrance in animal hemisphere chimeras (60%) is lower than ubiquitous injection (50%), which may reflect mosaic incorporation or dosage effects. The conclusion that animal hemisphere expression is critical for DV axis establishment is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "6f0872d5-489e-45fe-b64d-7e44c2f0c98a",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Loss of hbox12 function through HD dominant-negative construct causes ventralization, with 80% of embryos showing uniformly thickened ectoderm, radially distributed PMCs, expanded nodal and gsc expression domains (~70% of embryos), absence of pigment cells, and downregulation of ventro-lateral markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C42-C46, C48-C51 are supported by extensive morphological (Figure 4Ac-Ad), molecular (WMISH in Figure 4Be-Bf showing expanded nodal/gsc in ~70% of embryos), and qPCR data (Figure 4C) demonstrating upregulation of ventral markers and downregulation of dorsal/lateral markers. The ventralization phenotype is consistent across multiple assays with large sample sizes (n>1200 for morphology, n>80 for WMISH).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "89b5ec5d-bdee-495e-a381-55bf61d0c7b0",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Expression of otp-hd (isolated homeodomain of Orthopedia) does not cause phenotypic aberrations or changes in nodal and gsc expression, demonstrating specificity of HD effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by control experiments (Figure 4\u2014figure supplement 2) showing that a closely related homeodomain (Otp, 74% identity with Hbox12) does not produce the same effects as HD. This negative control strengthens the specificity argument, though the mechanism of discrimination remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "d26fb058-897d-4036-8d20-4ca3a5fed07d",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Chimera experiments with HD expression restricted to vegetal halves produce normal plutei (10/10), while HD expression in animal hemisphere causes DV defects (7/10), demonstrating that hbox12 function is required specifically in the animal hemisphere/dorsal ectoderm for DV polarization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 are supported by reciprocal chimera experiments (Figure 5A-B) with clear quantitative results. The spatial requirement is unambiguous, and the inference that skeletogenic defects originate in ectoderm rather than PMCs is reasonable given the experimental design, though this remains an indirect conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "1969374a-b517-4ac3-8b8d-b8996fce6a93",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Gene transfer assays using phbox12-HD-GFP construct show that tissue-specific disruption of hbox12 function in dorsal ectoderm causes DV patterning defects in ~50% of embryos, with 78% showing profound DV polarity defects and reduced pigment cell numbers (from 45\u00b15 to <16).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C63 are supported by transgenic experiments (Figure 6) showing that phbox12-HD-GFP expression in dorsal ectoderm produces DV defects similar to ubiquitous HD expression. The lower penetrance (~50% vs 80%) and milder phenotypes are explained by mosaic incorporation and HD-GFP protein instability. Quantitative pigment cell counts provide additional support. However, the rapid protein turnover complicates interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "5898a2f8-6284-46c2-826f-3c907ac1735d",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Rescue experiments demonstrate that clonal knockdown of nodal in one blastomere at the 4-cell stage restores normal DV polarity in HD-expressing embryos (>250 embryos), with Mo-nodal-injected cell progeny always localized to the dorsal face of rescued larvae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C64-C66 are strongly supported by rescue experiments (Figure 7) showing that localized nodal knockdown can restore DV axis in ventralized embryos. The lineage tracing clearly demonstrates dorsal localization of rescued cells. The inference that asymmetric Nodal production is restored is reasonable based on previous Mo-nodal validation studies, though Nodal protein was not directly measured here.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "3b8e129f-0524-4ee4-8c5c-a4d0ac1d4c81",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Hbox12 negatively regulates p38-MAPK activity in dorsal cells. At the 60-cell stage, p38-GFP is cleared from nuclei on one side of control embryos, but HD co-injection causes uniform nuclear p38 (80% of embryos). Conversely, hbox12 overexpression restrains p38-GFP to cytoplasm (>80% of embryos), and clonal hbox12 expression cell-autonomously inactivates p38 (87% of embryos).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C67-C75 are well-supported by live imaging experiments with p38-GFP fusion protein (Figure 8). The correlation between hbox12 expression and p38 inactivation is demonstrated through gain-of-function, loss-of-function, and clonal expression experiments with high penetrance. The conclusion that p38 is downstream of Hbox12 is strongly supported, though the molecular mechanism remains unknown. Claim C10 relies on citations rather than direct experimental evidence in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "a22e0e84-3584-488a-b872-922c99d31e52",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Hbox12 function is essential for proper positioning of the DV organizer and represents the earliest known zygotic regulatory gene expressed by non-organizer cells involved in restricting the DV organizer field.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C76 are supported by the integrated results from all experimental approaches showing that Hbox12 restricts nodal expression to the ventral side through p38 regulation. The temporal expression data, gain/loss-of-function studies, and rescue experiments collectively support this conclusion. The claim of being the 'earliest known' gene is a comparative statement that depends on the literature and may be subject to revision.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "0c394542-fa0f-45f9-99c3-b712be697ca4",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background information on sea urchin DV axis formation: DV polarity is not firmly established in unfertilized eggs but relies on maternal information and cell interactions; the ectoderm is partitioned into four domains; Nodal acts as a DV organizer; and current models propose that redox gradients inactivate p38 dorsally, leading to ventral activation of bZIP/Oct1/2 factors that drive nodal expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C25 are background information supported by extensive citations to previous literature. These are well-established facts in the field and provide appropriate context for the current study. No new experimental evidence is presented for these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    },
+    {
+      "id": "afc0b92a-6d2f-40e8-99d5-7cd3f0adb8c5",
+      "content_id": "98644e3a-2036-4cb8-a943-13c61aafde1a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Evolutionary and comparative analysis: Multiple hbox12 gene copies exist in P. lividus; Hbox12 and Pmar1/Micro1 show only 74% identity; hbox12 may have arisen by P. lividus lineage-specific duplication from a common ancestor with pmar1 approximately 35-50 Myr ago; and hbox12 transcription depends on cell-cell interactions and is regulated by Otx.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C88, C92-C93 are supported by citations to previous work (sequence analysis, genomic organization, divergence times, regulatory studies). The evolutionary hypothesis (C88) is explicitly speculative. The comparative analysis with Pmar1/Micro1 is reasonable but the evolutionary relationship remains uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:57:29.916786Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1e88ed80-0059-47c5-b009-b496c100f036",
+      "result_id": "80e8ab65-a9f0-413e-bd80-a5625e6e5d2e"
+    },
+    {
+      "claim_id": "10dfd7d8-a53f-4055-892a-51a09ac203a4",
+      "result_id": "80e8ab65-a9f0-413e-bd80-a5625e6e5d2e"
+    },
+    {
+      "claim_id": "d82b1bbd-0416-497e-9ea6-36730cf4cf16",
+      "result_id": "80e8ab65-a9f0-413e-bd80-a5625e6e5d2e"
+    },
+    {
+      "claim_id": "84913745-18d9-4073-9a3c-6140c959544b",
+      "result_id": "80e8ab65-a9f0-413e-bd80-a5625e6e5d2e"
+    },
+    {
+      "claim_id": "46d6a2ef-2b65-4bcb-a293-4c3d3eb3b9f9",
+      "result_id": "80e8ab65-a9f0-413e-bd80-a5625e6e5d2e"
+    },
+    {
+      "claim_id": "100e0a1f-10ba-4026-a892-1c1554639078",
+      "result_id": "80e8ab65-a9f0-413e-bd80-a5625e6e5d2e"
+    },
+    {
+      "claim_id": "89fd73fb-5c1f-4c97-bf05-0cf9d827cbdc",
+      "result_id": "80e8ab65-a9f0-413e-bd80-a5625e6e5d2e"
+    },
+    {
+      "claim_id": "aa412ca8-c489-4e00-b743-e43e86a92554",
+      "result_id": "fcbaefc5-b1ea-4491-bff8-f1388a5b6df6"
+    },
+    {
+      "claim_id": "126b2fb3-bd10-46c0-a81f-f515093267b2",
+      "result_id": "fcbaefc5-b1ea-4491-bff8-f1388a5b6df6"
+    },
+    {
+      "claim_id": "2cc4940b-368d-4caf-8b19-21416fe2a00f",
+      "result_id": "fcbaefc5-b1ea-4491-bff8-f1388a5b6df6"
+    },
+    {
+      "claim_id": "7b1d1713-2ecb-44cc-a501-596442bfb56e",
+      "result_id": "fcbaefc5-b1ea-4491-bff8-f1388a5b6df6"
+    },
+    {
+      "claim_id": "3147e54f-0084-4270-84fc-576a802f0d4d",
+      "result_id": "fcbaefc5-b1ea-4491-bff8-f1388a5b6df6"
+    },
+    {
+      "claim_id": "55e445e7-2871-4604-9f04-748e8b40909f",
+      "result_id": "fcbaefc5-b1ea-4491-bff8-f1388a5b6df6"
+    },
+    {
+      "claim_id": "26414628-ba43-41d2-b09a-b64e1b93781a",
+      "result_id": "fcbaefc5-b1ea-4491-bff8-f1388a5b6df6"
+    },
+    {
+      "claim_id": "ecb9cb38-980d-4a07-9682-15d3714a7ae7",
+      "result_id": "fcbaefc5-b1ea-4491-bff8-f1388a5b6df6"
+    },
+    {
+      "claim_id": "bbe7fecb-fedc-4540-a98e-727421099f68",
+      "result_id": "fcbaefc5-b1ea-4491-bff8-f1388a5b6df6"
+    },
+    {
+      "claim_id": "c57ced9d-076e-4b7d-95e0-c512c9eef47e",
+      "result_id": "fcbaefc5-b1ea-4491-bff8-f1388a5b6df6"
+    },
+    {
+      "claim_id": "800e2b57-723f-47b5-842b-a85f5c801cf8",
+      "result_id": "fcbaefc5-b1ea-4491-bff8-f1388a5b6df6"
+    },
+    {
+      "claim_id": "e50c4eeb-ccfb-4b86-aa6f-c09fc5ef4f7e",
+      "result_id": "cd9bda8d-d1f2-47bd-a082-708a1200b776"
+    },
+    {
+      "claim_id": "697503e6-d8ed-408d-8f4e-758596e2d09a",
+      "result_id": "cd9bda8d-d1f2-47bd-a082-708a1200b776"
+    },
+    {
+      "claim_id": "94616b3c-34b0-4c1e-887d-a1350ba2b22b",
+      "result_id": "cd9bda8d-d1f2-47bd-a082-708a1200b776"
+    },
+    {
+      "claim_id": "f0d0534d-d0c3-4792-82b7-c707f623b4ff",
+      "result_id": "9d148552-fa0b-4cbf-b08d-77eccdf1e0b0"
+    },
+    {
+      "claim_id": "dff0c4b2-57d5-4ff1-8041-9987dae0d54b",
+      "result_id": "9d148552-fa0b-4cbf-b08d-77eccdf1e0b0"
+    },
+    {
+      "claim_id": "439df2d1-9f35-4836-8f6a-9ead0b504465",
+      "result_id": "9d148552-fa0b-4cbf-b08d-77eccdf1e0b0"
+    },
+    {
+      "claim_id": "cacec99b-d194-4bba-aa10-268c4089c7ea",
+      "result_id": "6f0872d5-489e-45fe-b64d-7e44c2f0c98a"
+    },
+    {
+      "claim_id": "284a14c5-7a6e-4dcf-be6d-1a74228d705f",
+      "result_id": "6f0872d5-489e-45fe-b64d-7e44c2f0c98a"
+    },
+    {
+      "claim_id": "f742477c-a7a3-4c82-9e31-6f4af4b5eb1d",
+      "result_id": "6f0872d5-489e-45fe-b64d-7e44c2f0c98a"
+    },
+    {
+      "claim_id": "57f431a4-5c82-4dfd-8866-f244db0ca36e",
+      "result_id": "6f0872d5-489e-45fe-b64d-7e44c2f0c98a"
+    },
+    {
+      "claim_id": "10564d36-f699-4b0e-b9c7-90d06389f177",
+      "result_id": "6f0872d5-489e-45fe-b64d-7e44c2f0c98a"
+    },
+    {
+      "claim_id": "d40387b9-5141-4dea-b6a4-36d1adcae3ea",
+      "result_id": "6f0872d5-489e-45fe-b64d-7e44c2f0c98a"
+    },
+    {
+      "claim_id": "3f9c7f56-7746-4bad-9539-08daca5a436e",
+      "result_id": "6f0872d5-489e-45fe-b64d-7e44c2f0c98a"
+    },
+    {
+      "claim_id": "8754c5dc-48a7-4cf4-a1b1-71c174269920",
+      "result_id": "6f0872d5-489e-45fe-b64d-7e44c2f0c98a"
+    },
+    {
+      "claim_id": "ab363c29-3b67-4467-b2ef-fa291f4225f3",
+      "result_id": "6f0872d5-489e-45fe-b64d-7e44c2f0c98a"
+    },
+    {
+      "claim_id": "0040d8ec-fb14-444c-a15b-099f5886ccf7",
+      "result_id": "6f0872d5-489e-45fe-b64d-7e44c2f0c98a"
+    },
+    {
+      "claim_id": "43e040f3-b71a-437b-a4aa-470f6993784f",
+      "result_id": "89b5ec5d-bdee-495e-a381-55bf61d0c7b0"
+    },
+    {
+      "claim_id": "076e2bf5-0174-467c-a7ec-41c4f9652117",
+      "result_id": "d26fb058-897d-4036-8d20-4ca3a5fed07d"
+    },
+    {
+      "claim_id": "9ea1440b-cc86-427f-ac78-b49e5dc37f01",
+      "result_id": "d26fb058-897d-4036-8d20-4ca3a5fed07d"
+    },
+    {
+      "claim_id": "ac4cf633-6527-45b1-976a-c683de7f1a42",
+      "result_id": "d26fb058-897d-4036-8d20-4ca3a5fed07d"
+    },
+    {
+      "claim_id": "237e2ff4-0284-417b-91f2-b1bed45ae783",
+      "result_id": "d26fb058-897d-4036-8d20-4ca3a5fed07d"
+    },
+    {
+      "claim_id": "2c58d567-0389-4444-a4a9-e426696e8236",
+      "result_id": "d26fb058-897d-4036-8d20-4ca3a5fed07d"
+    },
+    {
+      "claim_id": "d6fa2cfc-fe00-4523-8988-84ea5d394c94",
+      "result_id": "1969374a-b517-4ac3-8b8d-b8996fce6a93"
+    },
+    {
+      "claim_id": "847e8bed-3858-4dd3-a49e-72f4cfca9d3c",
+      "result_id": "1969374a-b517-4ac3-8b8d-b8996fce6a93"
+    },
+    {
+      "claim_id": "918e8bdd-79f3-46f0-87a8-2e7a9ca07d12",
+      "result_id": "1969374a-b517-4ac3-8b8d-b8996fce6a93"
+    },
+    {
+      "claim_id": "71afee22-30cb-400c-8a61-352f383c2e52",
+      "result_id": "1969374a-b517-4ac3-8b8d-b8996fce6a93"
+    },
+    {
+      "claim_id": "29fdc69c-c799-4d01-8e88-77222cacfb34",
+      "result_id": "1969374a-b517-4ac3-8b8d-b8996fce6a93"
+    },
+    {
+      "claim_id": "78c97089-393f-4254-9388-580231471a66",
+      "result_id": "1969374a-b517-4ac3-8b8d-b8996fce6a93"
+    },
+    {
+      "claim_id": "cd199aec-979c-49d3-8189-23657594481e",
+      "result_id": "1969374a-b517-4ac3-8b8d-b8996fce6a93"
+    },
+    {
+      "claim_id": "54b0147a-dfc6-444e-ba64-374056a5d61b",
+      "result_id": "5898a2f8-6284-46c2-826f-3c907ac1735d"
+    },
+    {
+      "claim_id": "e0f5f344-ee37-4833-88a2-a4f586785f74",
+      "result_id": "5898a2f8-6284-46c2-826f-3c907ac1735d"
+    },
+    {
+      "claim_id": "bc49e87b-6909-4cfe-b6ad-4c6b24f996b7",
+      "result_id": "5898a2f8-6284-46c2-826f-3c907ac1735d"
+    },
+    {
+      "claim_id": "5ed8806a-636c-433f-9de3-d1ee5f2f9251",
+      "result_id": "5898a2f8-6284-46c2-826f-3c907ac1735d"
+    },
+    {
+      "claim_id": "a3bd94ed-dc2c-4834-9f78-b2f360c16375",
+      "result_id": "5898a2f8-6284-46c2-826f-3c907ac1735d"
+    },
+    {
+      "claim_id": "7d5be7cc-60b4-4014-b51c-60fb34338b99",
+      "result_id": "3b8e129f-0524-4ee4-8c5c-a4d0ac1d4c81"
+    },
+    {
+      "claim_id": "fffa612f-cd3f-4adc-b421-bed51bd63366",
+      "result_id": "3b8e129f-0524-4ee4-8c5c-a4d0ac1d4c81"
+    },
+    {
+      "claim_id": "fa4c3464-260e-4801-a7ec-f583e9dbf326",
+      "result_id": "3b8e129f-0524-4ee4-8c5c-a4d0ac1d4c81"
+    },
+    {
+      "claim_id": "d37ade23-a543-4eea-a112-901628762e52",
+      "result_id": "3b8e129f-0524-4ee4-8c5c-a4d0ac1d4c81"
+    },
+    {
+      "claim_id": "276ef627-f83a-487a-9501-5db96d865abb",
+      "result_id": "3b8e129f-0524-4ee4-8c5c-a4d0ac1d4c81"
+    },
+    {
+      "claim_id": "cc070b2e-2ec5-48f9-9695-c4d86e3b36f2",
+      "result_id": "3b8e129f-0524-4ee4-8c5c-a4d0ac1d4c81"
+    },
+    {
+      "claim_id": "e7e87b62-1cb0-4e31-88f9-a8440428b2f5",
+      "result_id": "3b8e129f-0524-4ee4-8c5c-a4d0ac1d4c81"
+    },
+    {
+      "claim_id": "c4488fdc-ffb8-40d5-ae90-451a3bcd6dd2",
+      "result_id": "3b8e129f-0524-4ee4-8c5c-a4d0ac1d4c81"
+    },
+    {
+      "claim_id": "000a2dd9-b1a1-4a75-9834-f720062018ea",
+      "result_id": "3b8e129f-0524-4ee4-8c5c-a4d0ac1d4c81"
+    },
+    {
+      "claim_id": "675022c3-432e-476a-bc33-8c1fabbdfb97",
+      "result_id": "3b8e129f-0524-4ee4-8c5c-a4d0ac1d4c81"
+    },
+    {
+      "claim_id": "77f2058e-8166-471a-be16-1604e189b85b",
+      "result_id": "3b8e129f-0524-4ee4-8c5c-a4d0ac1d4c81"
+    },
+    {
+      "claim_id": "bede6cdb-300e-440d-ac86-37e03f639aed",
+      "result_id": "a22e0e84-3584-488a-b872-922c99d31e52"
+    },
+    {
+      "claim_id": "5a225b2a-db3f-4d01-9f1b-1643fc375289",
+      "result_id": "a22e0e84-3584-488a-b872-922c99d31e52"
+    },
+    {
+      "claim_id": "8db5881d-6bf1-41aa-88f6-97b4e9b77bed",
+      "result_id": "0c394542-fa0f-45f9-99c3-b712be697ca4"
+    },
+    {
+      "claim_id": "2208fa4c-d68e-4f6b-a821-7e9340b339d3",
+      "result_id": "0c394542-fa0f-45f9-99c3-b712be697ca4"
+    },
+    {
+      "claim_id": "b903f500-ca8c-45cd-80fe-f056f6ee5804",
+      "result_id": "0c394542-fa0f-45f9-99c3-b712be697ca4"
+    },
+    {
+      "claim_id": "ebdafa5b-9677-488f-ae02-26265a05056b",
+      "result_id": "0c394542-fa0f-45f9-99c3-b712be697ca4"
+    },
+    {
+      "claim_id": "a39ee9cb-a9b8-47ea-9552-6499364048ee",
+      "result_id": "0c394542-fa0f-45f9-99c3-b712be697ca4"
+    },
+    {
+      "claim_id": "ffc8dfa4-2e8b-437d-a5d1-9b3afaade14b",
+      "result_id": "0c394542-fa0f-45f9-99c3-b712be697ca4"
+    },
+    {
+      "claim_id": "05553703-b8bb-4e05-80d3-17aa5d8e19d7",
+      "result_id": "0c394542-fa0f-45f9-99c3-b712be697ca4"
+    },
+    {
+      "claim_id": "38d4e2ed-ba36-462b-ac85-abab5f5361f4",
+      "result_id": "0c394542-fa0f-45f9-99c3-b712be697ca4"
+    },
+    {
+      "claim_id": "24adca7d-888f-4cc8-8158-894365a58f8c",
+      "result_id": "0c394542-fa0f-45f9-99c3-b712be697ca4"
+    },
+    {
+      "claim_id": "fc047b93-3b3e-4d9d-bfd1-b18ffe476bc5",
+      "result_id": "0c394542-fa0f-45f9-99c3-b712be697ca4"
+    },
+    {
+      "claim_id": "93a38af6-46bd-43d2-9170-77d8c9d85431",
+      "result_id": "0c394542-fa0f-45f9-99c3-b712be697ca4"
+    },
+    {
+      "claim_id": "9045d716-739c-4416-8c11-b4c55e59d586",
+      "result_id": "0c394542-fa0f-45f9-99c3-b712be697ca4"
+    },
+    {
+      "claim_id": "ce29933d-e1bc-4b92-82ab-228c16822a61",
+      "result_id": "0c394542-fa0f-45f9-99c3-b712be697ca4"
+    },
+    {
+      "claim_id": "9792c59c-5626-4b52-8112-b461a2ec6695",
+      "result_id": "0c394542-fa0f-45f9-99c3-b712be697ca4"
+    },
+    {
+      "claim_id": "4b2fb4ee-db38-401b-8508-068a05979dee",
+      "result_id": "afc0b92a-6d2f-40e8-99d5-7cd3f0adb8c5"
+    },
+    {
+      "claim_id": "b13b46e7-2310-4edd-8f87-1fe9a7cc7aae",
+      "result_id": "afc0b92a-6d2f-40e8-99d5-7cd3f0adb8c5"
+    },
+    {
+      "claim_id": "9333a215-425a-4457-a4ef-f06b87416d69",
+      "result_id": "afc0b92a-6d2f-40e8-99d5-7cd3f0adb8c5"
+    },
+    {
+      "claim_id": "ed323a7b-a3a0-4a34-ac2e-8203e6300c51",
+      "result_id": "afc0b92a-6d2f-40e8-99d5-7cd3f0adb8c5"
+    },
+    {
+      "claim_id": "e840f448-31e1-4815-8430-bb14fc22d35a",
+      "result_id": "afc0b92a-6d2f-40e8-99d5-7cd3f0adb8c5"
+    },
+    {
+      "claim_id": "ad7f6e30-2aa0-48ef-8784-273c0770f81f",
+      "result_id": "afc0b92a-6d2f-40e8-99d5-7cd3f0adb8c5"
+    },
+    {
+      "claim_id": "5147267b-eac9-4cef-af66-a1f685316e15",
+      "result_id": "afc0b92a-6d2f-40e8-99d5-7cd3f0adb8c5"
+    },
+    {
+      "claim_id": "311c192c-efd8-4402-9e33-93fd3e03dcb9",
+      "result_id": "afc0b92a-6d2f-40e8-99d5-7cd3f0adb8c5"
+    },
+    {
+      "claim_id": "e8d7c2eb-fd76-44d3-81c5-41840547ce1a",
+      "result_id": "afc0b92a-6d2f-40e8-99d5-7cd3f0adb8c5"
+    },
+    {
+      "claim_id": "48f205c8-894e-4392-84c5-21176a8ed645",
+      "result_id": "afc0b92a-6d2f-40e8-99d5-7cd3f0adb8c5"
+    },
+    {
+      "claim_id": "28700ba4-9512-4c58-9055-fcc80ac2c00e",
+      "result_id": "afc0b92a-6d2f-40e8-99d5-7cd3f0adb8c5"
+    },
+    {
+      "claim_id": "89fd73fb-5c1f-4c97-bf05-0cf9d827cbdc",
+      "result_id": "afc0b92a-6d2f-40e8-99d5-7cd3f0adb8c5"
+    },
+    {
+      "claim_id": "48451e19-1d6e-447f-8f64-b67dacd29d0e",
+      "result_id": "afc0b92a-6d2f-40e8-99d5-7cd3f0adb8c5"
+    }
+  ],
+  "comparisons": []
+}

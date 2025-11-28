@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Transcription is inherently stochastic and noisy, with fluctuations at every step causing variations in RNA synthesis and affecting physiology and differentiation in otherwise identical cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 represent established knowledge about transcriptional stochasticity supported by the cited literature. These are background claims that provide context for the study rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Transcription proceeds through multiple steps (closed complex formation, promoter melting, abortive cycling, promoter escape, elongation, and termination), and molecular fluctuations at any step can cause cell-to-cell variability in RNA transcript levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 describe the established multi-step transcription process and its stochastic nature, supported by review articles and multiple citations. These are background claims establishing the scientific context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Single-molecule techniques can directly monitor molecular fluctuations in real-time without averaging, and have revealed pausing, backtracking, force, and torque generation by RNA polymerase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 summarize prior work on single-molecule methods applied to transcription, supported by multiple citations. These provide methodological context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "Conventional oligonucleotide probes hybridize several orders of magnitude slower than diffusion under physiological conditions (kon < 10^5 M^-1 s^-1), limiting real-time nascent RNA detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 establishes the limitation of existing methods that motivates the development of fastFISH, supported by citation to Chan et al., 1995.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Three-base nucleic acid sequences (AUC for RNA, ATG/ATC for DNA) are intrinsically unstructured with positive free energies of self-folding, while four-base sequences are predominantly structured with negative free energies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C26 present computational analysis using Mfold showing that three-base sequences have positive \u0394G37\u00b0C (+2.5 \u00b1 0.6 kCal mol^-1 for AUC) versus negative \u0394G37\u00b0C (-1.7 \u00b1 1.7 kCal mol^-1 for four-base sequences). The data in Figure 1A support these findings, and the mechanistic explanation based on guanine's base-pairing strength (C24) is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Three-letter 19-mer sequences retain sufficient complexity (8.1 \u00b1 0.8) for specific hybridization, with ~31% having complexity indices \u22659 that match or exceed human exon complexity (8.9 \u00b1 1.0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 present Lempel-Ziv complexity analysis demonstrating that three-base sequences maintain adequate sequence specificity despite reduced alphabet. The data in Figure 1B support these quantitative findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "FastFISH probes F1 and F2 hybridize at exceptionally fast rates (6\u00d710^6 and 4\u00d710^6 M^-1s^-1), at least 100-fold faster than conventional probes, with rates decreasing when G residues are introduced (10-fold for 1G, 300-fold for 4G).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 present single-molecule TIRF/CoSMoS measurements of hybridization kinetics shown in Figure 1C and Figure 1\u2014figure supplement 2D. The dose-dependent effect of G residues on hybridization rate validates the AUC design principle. The comparison to literature values is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Self-quenching of fastFISH probes enables use of free probes at concentrations up to 1 \u03bcM, likely mediated by random polymer motion and/or contact quenching rather than hairpin formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 demonstrate the practical implementation of self-quenching for single-molecule imaging (Figure 1D, Figure 1\u2014figure supplement 3). The mechanistic interpretation (C38) is reasonable given the lack of secondary structure, though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "FastFISH achieves exceptionally fast hybridization rates (~10^7 M^-1s^-1) using intrinsically unstructured nucleic acid sequences, enabling deterministic detection of single nascent transcripts and measurement of transcription kinetics at sub-second temporal resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 summarize the main technical achievement of the study. The hybridization rates are experimentally validated (C31-C32), nascent transcript detection is demonstrated in Figures 2 and 4, and kinetic measurements are shown in Figures 3-5. These claims represent the core contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "T7 RNAP initiates transcripts at \u22651 s^-1 and elongates at ~240 nt s^-1 at 37\u00b0C, making it an excellent test case for fastFISH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 cite established kinetic parameters for T7 RNAP from prior studies (Martin and Coleman, 1987; Golomb and Chamberlin, 1974; Bonner et al., 1994), providing rationale for using this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Specific probe-DNA co-localization was observed with wild-type but not null mutant promoters, with 10-30% of DNA templates showing co-localization, limited by surface accessibility rather than probe hybridization efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 demonstrate promoter-specific transcription detection (Figure 2B, 2D). The interpretation that incomplete utilization is due to surface effects rather than probe efficiency (C43) is supported by the high detection efficiency shown later in Figure 4F (~81%).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "RNAP-DNA interactions comprise two populations: short-lived non-productive events (T0~0.14-0.3 s) and long-lived productive transcription cycles (T1~1.7 s for 295 bp), with dwell time increasing linearly with transcript length, yielding an elongation rate of ~300 nt s^-1 and Tstationary of 0.7\u00b10.3 s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 present single-molecule analysis of RNAP dynamics (Figure 3). The two-population model is supported by dwell time distributions, the linear relationship between dwell time and transcript length validates the elongation measurement, and the calculations are mathematically sound. However, the interpretation of short-lived events as RPc/RPo (C45) relies on control experiments that could be more definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "FastFISH detects nascent RNA with ~81% efficiency, with probe arrival within 1 s of RNAP binding. The average delay (\u0394Ton = 0.7\u00b10.2 s) enables calculation of abortive cycling time (Tabortive~0.2 s). In ~72% of events, probe and RNAP dissociate simultaneously; in ~28%, RNA persists \u22650.4 s after RNAP run-off.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C60 present comprehensive two-color analysis of transcription (Figure 4). The specificity controls (C51-C53) are rigorous, including NTP dependence, target sequence requirement, and position-dependent delay. The efficiency calculation (C54) and kinetic analysis (C58-C60) are well-supported. The calculation of Tabortive (C59) appropriately accounts for elongation time and probe hybridization kinetics. The interpretation of RNAP dwelling at DNA ends (C60) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "FastFISH probe hybridization rates (~10^7 M^-1s^-1) exceed literature values by up to three orders of magnitude, the three-base rule applies to DNA-DNA pairs, and self-quenching occurs through random polymer motion/contact quenching without hairpin formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 summarize key findings. C61 is supported by experimental data and literature comparison. C62 is stated as unpublished observation, limiting verification. C63 is a reasonable mechanistic inference supported by citations, though not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Measured kinetic rates (RPc dissociation: koff~3 s^-1; promoter escape: kescape~5 s^-1; elongation: 300\u00b160 nt s^-1) are faster than previous studies, likely due to optimal physiological temperature (37\u00b0C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 compare measured rates to literature values with appropriate citations. The interpretation that temperature accounts for faster rates (C67) is supported by citation to Maslak and Martin, 1993, showing 10-fold rate increase from 20-37\u00b0C. This is a reasonable explanation, though other factors (e.g., lack of force/tethering) may also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The dwell time distribution of productive RNAP-DNA interactions is skewed toward longer events, likely due to spontaneous pausing. Pausing at free DNA ends has been observed with multi-subunit RNAPs in ensemble assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 describes an observation from Figure 3F with a reasonable interpretation. Claim C69 provides literature context (Arndt and Chamberlin, 1988; Izban et al., 1995). These are valid observations, though the mechanistic basis for T7 RNAP pausing remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Nucleic acid hybridization requires unfolding into unstructured coils before annealing, and probes with less stable secondary structures or shorter hairpins show faster hybridization rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 summarize established principles of nucleic acid hybridization kinetics from the literature, providing theoretical foundation for the fastFISH design strategy.",
+    "result_type": "MINOR"
+  }
+]

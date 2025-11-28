@@ -1,0 +1,1770 @@
+{
+  "submission": {
+    "id": "5c4cc6ba-52a6-434b-99d4-cc572b4caecc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:16:36.668645Z",
+    "updated_at": "2025-11-28T20:16:36.668645Z"
+  },
+  "content": [
+    {
+      "id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "submission_id": "5c4cc6ba-52a6-434b-99d4-cc572b4caecc",
+      "content_type": "manuscript",
+      "content_text": "# A KRAS-directed transcriptional silencing pathway that mediates the CpG island methylator phenotype\n\n## Authors\n\n- Ryan W Serra<sup>1</sup>\n- Minggang Fang<sup>1</sup>\n- Sung Mi Park<sup>1</sup>\n- Lloyd Hutchinson<sup>3</sup>\n- Michael R Green<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Programs in Gene Function and Expression and Molecular Medicine University of Massachusetts Medical School Worcester United States\n2. Howard Hughes Medical Institute Chevy Chase United States\n3. Department of Pathology University of Massachusetts Medical School Worcester United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nApproximately 70% of KRAS-positive colorectal cancers (CRCs) have a CpG island methylator phenotype (CIMP) characterized by aberrant DNA hypermethylation and transcriptional silencing of many genes. The factors involved in, and the mechanistic basis of, CIMP is not understood. Among the CIMP genes are the tumor suppressors p14ARF, p15INK4B, and p16INK4A, encoded by the INK4-ARF locus. In this study, we perform an RNA interference screen and identify ZNF304, a zinc-finger DNA-binding protein, as the pivotal factor required for INK4-ARF silencing and CIMP in CRCs containing activated KRAS. In KRAS-positive human CRC cell lines and tumors, ZNF304 is bound at the promoters of INK4-ARF and other CIMP genes. Promoter-bound ZNF304 recruits a corepressor complex that includes the DNA methyltransferase DNMT1, resulting in DNA hypermethylation and transcriptional silencing. KRAS promotes silencing through upregulation of ZNF304, which drives DNA binding. Finally, we show that ZNF304 also directs transcriptional silencing of INK4-ARF in human embryonic stem cells.\n\n## Introduction\n\nEpigenetic dysregulation of gene expression plays a major role in the initiation and progression of cancer (reviewed in Baylin and Jones, 2011; Esteller, 2008; Hassler and Egger, 2012). Among the various epigenetic alterations of cancer genomes, abnormal gains of DNA methylation in normally unmethylated gene promoter CpG islands have been the most extensively investigated. DNA hypermethylation can alter genetic stability and genomic structure, and is associated with transcriptional silencing of gene expression (commonly referred to as epigenetic silencing; reviewed in Baylin and Jones, 2011; Esteller, 2008; Hassler and Egger, 2012). Numerous studies have identified specific genes affecting cellular growth control that become hypermethylated and transcriptionally silenced in many cancers.\n\nColorectal cancers (CRCs) provide a striking example of alterations in DNA methylation that occur during tumor development. A subset of CRCs have a so-called CpG island methylator phenotype (CIMP) characterized by aberrant DNA hypermethylation of many genes. In fact, CRCs can be categorized into three distinct subclasses based on their epigenetic and genetic profiles: CIMP-1 (also called CIMP-high), characterized by intense methylation of multiple genes, microsatellite instability and BRAF mutations; CIMP-2 (also called CIMP-low), typified by methylation of a more limited group of genes and mutation in KRAS; and CIMP-negative, distinguished by infrequent methylation and p53 mutation (Yagi et al., 2010; Kaneda and Yagi, 2011). Specific panels of CIMP marker genes have been developed to classify CRCs into these three subclasses. These CIMP marker genes have potential clinical value, and are currently being evaluated as biomarkers for risk, diagnosis, prognosis, and prediction of therapeutic responsiveness (reviewed in Egger et al., 2012; Gyparaki et al., 2013).\n\nAmong the CIMP genes are three well-known tumor suppressors: p14ARF, p16INK4A (also known as CDKN2A), and p15INK4B (also known as CDKN2B) (reviewed in Gil and Peters, 2006). These three genes are located in close proximity to one another (within a 35 kb region) at the INK4-ARF locus, yet each is transcribed from a distinct promoter. Interestingly, p14ARF and p16INK4A share exons two and three, but each is translated in a different reading frame, yielding unrelated polypeptides. Inactivation of the INK4-ARF locus is one of the most frequent events in cancers (reviewed in Kim and Sharpless, 2006). For example, INK4-ARF is transcriptionally silenced in 30\u201345% of all CRCs and in 70% of CRCs that harbor an activating KRAS mutation (Burri et al., 2001; Dominguez et al., 2003; Lind et al., 2004).\n\nThe INK4-ARF locus is also silenced in some non-malignant cells. For example, INK4-ARF is silenced in embryonic, fetal, and adult stem cells, but in more differentiated cells, it becomes poised for expression and increasingly responsive to aberrant mitogenic signals such as those elicited by activated oncogenes (reviewed in Sherr, 2012). This process is reversed when somatic cells are induced to regain pluripotency through reprogramming. Expression of INK4-ARF limits stem cell self-renewal, suggesting that coordinated INK4-ARF expression may normally act to restrict stem cell numbers. Accordingly, the INK4-ARF locus has been shown to be a barrier for reprogramming (Li et al., 2009).\n\nIn actively growing human diploid fibroblasts, the INK4A-ARF locus is silenced by histone H3 lysine 27 trimethylation (H3K27me3) directed by Polycomb group proteins. When such cells are exposed to cellular stress, such as oncogenic signals, the H3K27me3 mark on the locus is decreased, resulting in expression of INK4A-ARF genes (Jacobs et al., 1999; Bracken et al., 2007; Kotake et al., 2007). Transcriptional activation is due, at least in part, to upregulation of the H3K27 demethylase JMJD3, which removes H3K27me3 from INK4A-ARF (Agger et al., 2009). Whether the mechanism of INK4-ARF silencing in stem cells and primary differentiated cells is related to, or distinct from, that in cancer cells is unknown.\n\nThe factors, regulatory pathways, and mechanisms underlying the aberrant promoter hypermethylation and transcriptional silencing characteristic of CIMP-positive CRCs remain to be determined. In addition, the relationship between the initiating genetic events responsible for tumorigenesis (e.g., acquisition of activating mutations in oncogenes) and the epigenetic alterations in CIMP-positive CRCs is not understood. To begin to address these questions, in this study, using p14ARF as a representative CIMP gene, we perform an RNA interference (RNAi) screen to identify factors required for p14ARF silencing. Our results reveal a KRAS-directed pathway that mediates silencing of the entire INK4-ARF locus, is responsible for CIMP in CRCs, and is related to the pathway that silences INK4-ARF in human embryonic stem cells (hESCs).\n\n## Results\n\n### An RNAi screen to identify mediators of INK4-ARF transcriptional silencing\n\nTo screen for factors involved in transcriptional silencing of INK4-ARF, we generated a reporter construct in which the p14ARF promoter was used to direct expression of the blasticidin-resistance (BlastR) gene (Figure 1A). This p14ARF-BlastR reporter construct was stably transduced into DLD-1 cells, a human CRC cell line in which endogenous p14ARF is transcriptionally silenced (Zheng et al., 2000; Figure 1B). We selected cells in which the reporter gene had been silenced, as evidenced by acquisition of blasticidin resistance (Figure 1C), transcriptional derepression (Figure 1B), and decreased DNA hypermethylation (Figure 1D) following treatment with the DNA methyltransferase inhibitor 5-aza-2\u2032-deoxycytidine.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of the shRNA screen. (B) qRT-PCR analysis monitoring p14ARF expression in parental DLD-1 cells, or p14ARF and BlastR expression in DLD-1/p14ARF-BlastR cells, following treatment with either DMSO or 5-aza-2\u2032-deoxycytidine (AZA). The results were normalized to that observed upon DMSO treatment, which was set to 1. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01. (C) Viability of DLD-1 or DLD-1/p14ARF-BlastR cells treated with DMSO or AZA for 3 days and then 0, 5, or 10 \u00b5M blasticidin for 6 days. Cells were stained with crystal violet. (D) Bisulfite sequencing analysis of the endogenous p14ARF promoter in parental DLD-1 cells or the p14ARF-BlastR reporter in DLD-1/p14ARF-BlastR cells treated in the absence or presence of AZA. (Top) Schematic of the p14ARF promoter; positions of CpGs are shown to scale by vertical lines. (Bottom) Each circle represents a methylated (black) or unmethylated (white) CpG dinucleotide. Each row represents a single clone.\n\nA genome-wide human small hairpin (shRNA) library (Silva et al., 2005) comprising \u223c62,400 shRNAs was divided into 10 pools, which were packaged into retrovirus particles and used to stably transduce the DLD-1/p14ARF-BlastR reporter cell line. Blasticidin-resistant colonies, indicative of derepression of the reporter gene, were selected and the shRNAs identified by sequence analysis (Figure 1A).\n\nPositive candidates identified in the primary screen were validated by stably transducing DLD-1 cells with an shRNA directed against each candidate gene, followed by the analysis of endogenous p14ARF expression by quantitative RT-PCR (qRT-PCR). Using this approach, we identified eight genes that, following shRNA-mediated knockdown, resulted in derepression of endogenous p14ARF (Figure 2A, Figure 2\u2014figure supplement 1). qRT-PCR analysis confirmed that each shRNA reduced target gene expression (Figure 2\u2014figure supplement 2). For all genes, a second shRNA whose sequence was unrelated to that isolated from the primary screen also resulted in target gene knockdown (Figure 2\u2014figure supplement 3A) and derepression of endogenous p14ARF (Figure 2\u2014figure supplement 3B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig2-v1.jpg)\n\n**Figure 2.:** (A) qRT-PCR analysis monitoring INK4-ARF expression in DLD-1 cells expressing a non-silencing (NS) or ZNF304 shRNA. The results were normalized to that obtained with the NS control, which was set to 1. (B) Immunoblot analysis monitoring INK4-ARF levels in DLD-1 cells expressing a NS or ZNF304 shRNA. \u03b1-tubulin (TUBA) was monitored as a loading control. (C) qRT-PCR analysis monitoring INK4-ARF expression in DLD-1 cells expressing a NS, KAP1, SETDB1, DNMT1, DNMT3A, or DNMT3B shRNA. (D) ChIP assay monitoring binding of ZNF304, KAP1, SETDB1 and DNMT1 to INK4-ARF promoters in DLD-1 cells expressing a NS or ZNF304 shRNA. The results were normalized to that obtained with IgG, which was set to 1. (E) Bisulfite sequencing analysis of the p14ARF promoter in DLD-1 cells expressing a NS, KAP1, SETDB1, or DNMT1 shRNA. (F) Tumor formation assay. DLD-1 cells expressing a NS and ZNF304 (left) or DNMT1 (right) shRNA were subcutaneously injected into the flanks of nude mice (n = 3), and tumor formation was measured. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01. Results from experiments showing validation of candidates from the RNAi screen, and ZNF304 corepressors, for a role in INK4-ARF transcriptional silencing in DLD-1 cells are presented in Figure 2\u2014figure supplements 1 and 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) List of candidate genes obtained from the primary RNAi screen. (B) qRT-PCR analysis monitoring expression of p14ARF, p15INK4B, and p16INK4A in DLD-1 cells stably expressing an shRNA targeting a gene isolated from the RNAi screen or, as a control, a non-silencing (NS) shRNA. The results were normalized to that obtained with the NS shRNA, which was set to 1. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** qRT-PCR analysis monitoring knockdown efficiency for each candidate using an shRNA isolated from the primary screen. Values are given relative to expression of each gene following treatment with a NS shRNA, which was set to 1. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) qRT-PCR analysis monitoring knockdown efficiency for each candidate using a second shRNA unrelated to that isolated in the primary screen. Values are given relative to expression of each gene following treatment with a NS shRNA, which was set to 1. (B) qRT-PCR analysis monitoring p14ARF expression in DLD-1 cells stably expressing an shRNA targeting a candidate gene, using a second, unrelated shRNA against the same target gene. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) qRT-PCR analysis monitoring knockdown efficiency of KAP1, SETDB1, DNMT1, DNMT3A, and DNMT3B. Values are given relative to expression of each gene following treatment with a NS shRNA, which was set to 1. (B) qRT-PCR analysis monitoring knockdown efficiency using a second, unrelated shRNA against the same target gene. (C) qRT-PCR analysis monitoring expression of p14ARF, p15INK4B, and p16INK4A in DLD-1 cells stably expressing a second, unrelated shRNA against KAP1, SETDB1, DNMT1 DNMT3A, or DNMT3B. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01.\n\n### Identification of a ZNF304-corepressor complex required for transcriptional silencing of INK4-ARF\n\nOur previous studies have shown that transcriptional silencing of tumor suppressor genes (TSGs) involves a sequence-specific DNA-binding protein (Gazin et al., 2007; Palakurthy et al., 2009). Therefore, we elected to focus on ZNF304, a zinc finger DNA-binding protein that contains a KRAB repressor domain (Sabater et al., 2002). The qRT-PCR and immunoblot results of Figure 2A,B show that in addition to p14ARF, knockdown of ZNF304 derepressed p15INK4B and p16INK4A, which are also transcriptionally silenced in DLD-1 cells (Zheng et al., 2000; Ishiguro et al., 2006).\n\nKRAB domain proteins function by recruiting a corepressor complex that includes the scaffolding protein KAP1 and the histone methyltransferase SETDB1 (Iyengar and Farnham, 2011). Knockdown of KAP1 or SETDB1 (Figure 2\u2014figure supplement 4A) resulted in derepression of p14ARF, p15INK4B, and p16INK4A (Figure 2C). Similar results were obtained using a second, unrelated KAP1 or SETDB1 shRNA (Figure 2\u2014figure supplement 4B,C). p14ARF, p15INK4B, and p16INK4A were also substantially derepressed following knockdown of DNMT1 but not the other DNA methyltransferases, DNMT3A, or DNMT3B (Figure 2C, Figure 2\u2014figure supplement 4). The identification of KAP1, SETDB1, and DNMT1 as ZNF304 corepressors indicates that our shRNA screen, like other large-scale shRNA screens (reviewed in Mullenders and Bernards, 2009), was not saturating.\n\nThe chromatin immunoprecipitation (ChIP) assay of Figure 2D shows that ZNF304, as well as KAP1, SETDB1 and DNMT1, were bound to the p14ARF, p15INK4B, and p16INK4A promoters in DLD-1 cells. Notably, knockdown of ZNF304 substantially decreased binding of KAP1, SETDB1, and DNMT1. Knockdown of ZNF304, KAP1, SETDB1 or DNMT1 also decreased p14ARF promoter hypermethylation (Figure 2E).\n\nWe predicted that the loss of ZNF304, which results in derepression of the INK4-ARF locus, would reduce tumorigenicity. Consistent with this prediction, Figure 2F shows that shRNA-mediated knockdown of ZNF304 in DLD-1 cells significantly suppressed tumor growth in mouse xenografts. shRNA-mediated knockdown of DNMT1 similarly suppressed tumor growth, consistent with previous results (Morita et al., 2013).\n\n### Activated KRAS-mediated upregulation of ZNF304 is required for transcriptional silencing of INK4-ARF\n\nDLD-1 cells contain an activated KRAS(G13D) mutation and we therefore investigated the relationship between KRAS and silencing of INK4-ARF. shRNA-mediated knockdown of KRAS in DLD-1 cells (Figure 3\u2014figure supplement 1A,B) resulted in derepression of p14ARF, p15INK4A, and p16INK4B (Figure 3A, Figure 3\u2014figure supplement 1C) and substantially reduced binding of ZNF304 and its corepressors to all three promoters (Figure 3B). Similarly, treatment with manumycin A, a RAS farnesyltransferase inhibitor (Hara et al., 1993), also resulted in derepression of p14ARF, p15INK4B, and p16INK4A (Figure 3C) and reduced binding of ZNF304 and its corepressors to the three promoters (Figure 3D). Notably, shRNA-mediated knockdown or pharmacological inhibition of KRAS markedly reduced ZNF304 protein levels (Figure 3E). Likewise, addition of the phosphoinositide 3-kinase (PI3K) inhibitor LY294002 (Vlahos et al., 1994) or PI-103, which blocks the PI3K-AKT signaling pathway downstream of activated KRAS (Hayakawa et al., 2006), also derepressed p14ARF, p15INK4B, and p16INK4A and reduced ZNF304 levels (Figure 3F). By contrast, following shRNA-mediated knockdown or pharmacological inhibition of KRAS, ZNF304 mRNA levels were not significantly affected (Figure 3G). Thus, upregulation of ZNF304 by activated KRAS is predominantly post-transcriptional. Consistent with this idea, the reduction of ZNF304 protein levels following KRAS inhibition could be counteracted by proteasome inhibition (Figure 3H).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig3-v1.jpg)\n\n**Figure 3.:** (A) qRT-PCR analysis monitoring INK4A-ARF expression in DLD-1 cells expressing a NS or KRAS shRNA. (B) ChIP analysis monitoring binding of ZNF304, KAP1, SETDB1, and DNMT1 to INK4-ARF promoters in DLD-1 cells expressing a NS or KRAS shRNA. (C) qRT-PCR analysis monitoring INK4A-ARF expression in DLD-1 cells treated with DMSO or manumycin A (Man. A). The results were normalized to DMSO, which was set to 1. (D) ChIP analysis monitoring binding of ZNF304, KAP1, SETDB1, and DNMT1 to INK4-ARF promoters in DLD-1 cells treated with DMSO or Man. A. (E) Immunoblot analysis showing INK4-ARF levels in DLD-1 cells treated with a NS or KRAS shRNA, or DMSO or Man. A. (F) Immunoblot analysis showing INK4-ARF levels in DLD-1 cells treated with DMSO, LY294002, or PI-103. (G) qRT-PCR analysis monitoring ZNF304 expression in DLD-1 cells treated with a NS or KRAS shRNA, or DMSO or Man. A. (H) Immunoblot analysis showing ZNF304 levels in DLD-1 cells treated with Man. A for 24 hr and 0\u201310 \u00b5M MG-132 for 4 hr. (I) PAT-ChIP analysis monitoring binding of ZNF304 to INK4-ARF promoters in matched adjacent normal (N) and KRAS-positive CRC human tumor (T) samples. Results were normalized to normal samples, which were set to 1. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01. Results from experiments validating KRAS knockdown efficiency and the role of KRAS in repressing p14ARF expression, as well as experiments validating the role of ZNF304 and its corepressors in INK4-ARF silencing in other KRAS-positive CRC cell lines, are presented in Figure 3\u2014figure supplements 1\u20134.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A and B) Validation of KRAS shRNA knockdown efficiency. qRT-PCR analysis monitoring KRAS expression in DLD-1 cells stably expressing a NS or KRAS shRNA (A) or a second, unrelated KRAS shRNA (B). Values are given relative to expression of KRAS following treatment with a NS shRNA, which was set to 1. (C) qRT-PCR analysis monitoring p14ARF expression in DLD-1 cells stably expressing a second, unrelated KRAS shRNA. Values are given relative to expression of p14ARF following treatment with a NS shRNA, which was set to 1. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** ChIP analysis monitoring binding of ZNF304, KAP1, SETDB1, and DNMT1 at the promoters of p14ARF, p15INK4B, and p16INK4A in HCT116 (left) and HCT15 (right) cells. As a negative control, binding of the factors was also monitored at an irrelevant DNA region (negative control [NC] DNA). The results were normalized to that obtained with an IgG control antibody, which was set to 1. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) qRT-PCR analysis monitoring expression of p14ARF, p15INK4B, and p16INK4A in HCT116 (left) and HCT15 (right) cells stably expressing an NS, ZNF304, or KRAS shRNA. The results were normalized to that obtained with the NS shRNA, which was set to 1. (B) qRT-PCR analysis monitoring knockdown efficiency of the ZNF304 and KRAS shRNAs in HCT116 (left) and HCT15 (right) cells. (C) qRT-PCR analysis monitoring expression of p14ARF, p15INK4B, and p16INK4A in HCT116 (left) and HCT15 (right) cells treated with DMSO (as a control) or manumycin A (Man. A). The results were normalized to that obtained with DMSO, which was set to 1. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Bisulfite sequencing analysis of the p14ARF promoter in matched adjacent normal colon (N) and KRAS-positive CRC human tumor samples (T) samples. (Top) Schematic of the promoter; positions of CpGs are shown to scale by vertical lines. (Bottom) Each circle represents a methylated (black) or unmethylated (white) CpG dinucleotide. Each row represents a single clone.\n\n### Validation of the role of ZNF304 in INK4-ARF silencing in other KRAS-positive human CRC cell lines and tumor samples\n\nTo determine the generality and clinical relevance of these results, we analyzed other KRAS-positive human CRC cell lines and tumor samples. In HCT116 and HCT15 CRC cell lines, in which INK4-ARF is transcriptionally silenced (Yagi et al., 2010), ZNF304 and its corepressors were associated with the p14ARF, p15INK4B, and p16INK4A promoters (Figure 3\u2014figure supplement 2). Moreover, shRNA-mediated knockdown of ZNF304 or KRAS (Figure 3\u2014figure supplement 3A,B) or treatment with manumycin A (Figure 3\u2014figure supplement 3C) derepressed p14ARF, p15INK4B, and p16INK4A expression.\n\nWe next used a pathology tissue ChIP (PAT-ChIP) assay (Fanelli et al., 2011) to measure association of ZNF304 with p14ARF, p15INK4B, and p16INK4A promoters in KRAS-positive human CRC tumor samples and, as a control, adjacent matched normal colon. Figure 3I shows that ZNF304 was substantially enriched at the three promoters in CRC tumor samples relative to adjacent normal colon. Bisulfite sequencing analysis confirmed p14ARF promoter hypermethylation in the KRAS-positive CRC tumors but not in the matched normal colon (Figure 3\u2014figure supplement 4).\n\n### Activated KRAS upregulates ZNF304 through the deubiquitinase USP28\n\nAnother factor isolated in our primary RNAi screen was USP28 (Figure 2\u2014figure supplement 1), a nuclear-localized deubiquitinase (Popov et al., 2007). We therefore asked whether USP28 was responsible for stabilization of ZNF304. Similar to the results with KRAS, knockdown of USP28 in DLD-1 cells substantially reduced ZNF304 protein (Figure 4A) but not mRNA (Figure 4B) levels. The co-immunoprecipitation experiment of Figure 4C shows that USP28 and ZNF304 were physically associated. Moreover, co-transfection of DLD-1 cells with wild-type USP28, but not a catalytically inactive USP28(C171A) mutant (Popov et al., 2007), reduced ubiquitination of ZNF304 (Figure 4D). Notably, shRNA-mediated knockdown or pharmacological inhibition of KRAS led to reduced levels of USP28 protein (Figure 4E) and mRNA (Figure 4F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig4-v1.jpg)\n\n**Figure 4.:** (A) Immunoblot analysis showing ZNF304 levels in DLD-1 cells expressing a NS or USP28 shRNA. (B) qRT-PCR analysis monitoring ZNF304 expression in DLD-1 cells expressing a NS or USP28 shRNA. (C) Co-immunoprecipitation analysis. DLD-1 cell extracts were immunoprecipitated with a ZNF304, USP28 or control (IgG) antibody, and the immunoprecipitate was analyzed for ZNF304 or USP28 by immunoblotting. (D) HA-ubiquitination pull-down assay. Extracts from 293T cells expressing HA-tagged ubiquitin, FLAG-tagged ZNF304, and FLAG-tagged wild-type (WT) or mutant (C171A) USP28 were immunoprecipitated using an HA antibody, and the immunoprecipitate was analyzed using a ZNF304 antibody. The arrowhead indicates the position of full-length (FL) ZNF304. (E) Immunoblot analysis showing USP28 levels in DLD-1 cells treated with a KRAS shRNA or inhibitor. (F) qRT-PCR analysis monitoring USP28 expression in DLD-1 cells treated with a KRAS shRNA or inhibitor. (G) ChIP analysis monitoring binding of cJUN to the USP28 promoter or an irrelevant negative control (NC) DNA region. (H and I) qRT-PCR analysis monitoring USP28 (H) or INK4-ARF (I) expression in DLD-1 cells expressing a control scrambled (SC) or cJUN siRNA. Experiments validating the role of cJUN in regulating USP28 expression are presented in Figure 4\u2014figure supplements 1,2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Schematic diagram showing the positions and sequences of two putative cJUN-binding sites in the USP28 promoter. The extended consensus AP-1 (cJUN)-binding sequence is also shown.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) qRT-PCR analysis monitoring knockdown efficiency of cJUN using two unrelated siRNAs. The results were normalized to that obtained with a control scrambled (SC) siRNA, which was set to 1. (B and C) qRT-PCR analysis monitoring expression of USP28 (B) or INK4-ARF (C) in DLD-1 cells expressing a SC or cJUN siRNA that was unrelated in sequence to that used in Figure 4H,G. The results were normalized to that obtained with the SC siRNA, which was set to 1. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01.\n\nThe results of Figure 4F showed that KRAS promoted the transcriptional upregulation of USP28. To gain insight into the basis of KRAS-mediated regulation of USP28 transcription, we performed bioinformatic analysis on the USP28 promoter and identified two putative binding sites for the transcription factor cJUN (Figure 4\u2014figure supplement 1). Notably, previous studies have shown that KRAS increases cJUN activity (Mechta et al., 1997). The ChIP results of Figure 4G show, consistent with the bioinformatic prediction, that in DLD-1 cells cJUN was bound to the USP28 promoter. Moreover, knockdown of cJUN (Figure 4\u2014figure supplement 2A) resulted in decreased expression of USP28 (Figure 4H, Figure 4\u2014figure supplement 2B) and derepression of p14ARF, p15INK4B, and p16INK4A (Figure 4I, Figure 4\u2014figure supplement 2C). Thus, cJUN is responsible, at least in part, for RAS-mediated transcriptional upregulation of USP28.\n\n### Role of the protein kinase PRKD1 in KRAS-mediated stabilization of ZNF304\n\nPrevious studies have shown that deubiquitinase\u2013substrate interactions are often regulated by phosphorylation (Kessler and Edelmann, 2011). Notably, USP28 contains two predicted phosphorylation sites for PRKD1 (consensus sequence LxRxxS, [Nishikawa et al., 1997]; Figure 5A), a serine/threonine protein kinase (Johannes et al., 1994) isolated in our RNAi screen (Figure 2\u2014figure supplement 1) that is dysregulated in a variety of cancers (Sundram et al., 2011). We therefore analyzed the role of PRKD1 in KRAS-mediated stabilization of ZNF304. shRNA-mediated knockdown of PRKD1 in DLD-1 cells resulted in decreased ZNF304 protein levels (Figure 5B), whereas ZNF304 mRNA levels were not significantly affected (Figure 5C). Furthermore, treatment of DLD-1 cells with a PRKD1 chemical inhibitor, CRT0066101 (Harikumar et al., 2010), also resulted in decreased ZNF304 protein levels (Figure 5D), derepression of p14ARF, p15INK4B, and p16INK4A (Figure 5E), and loss of ZNF304, KAP1, SETDB1, and DNMT1 binding to the three promoters (Figure 5F). Similar to the results with USP28, PRKD1 protein and mRNA levels decreased following shRNA-mediated knockdown or pharmacological inhibition of KRAS (Figure 5G,H).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig5-v1.jpg)\n\n**Figure 5.:** (A) Multiple sequence alignment of the two putative PRKD1 phosphorylation sites in USP28. Blue indicates conserved leucine and arginine residues in the PRKD1 phosphorylation consensus sequence, and yellow indicates the putative phosphorylated serine residue. The alignment was performed using NCBI\u2019s HomoloGene; amino acid numbers refer to the human protein. (B and C) Immunoblot (B) and qRT-PCR (C) analysis monitoring ZNF304 in DLD-1 cells expressing a NS or PRKD1 shRNA. (D) Immunoblot analysis showing p14ARF levels in DLD-1 cells treated with DMSO or CRT0066101 (CRT). (E) qRT-PCR analysis monitoring INK4-ARF expression in DLD-1 cells treated with DMSO or CRT. (F) ChIP monitoring ZNF304 and corepressor binding to INK4-ARF in CRT0066101-treated DLD-1 cells. (G and H) PRKD1 immunoblot (G) and qRT-PCR (H) in DLD-1 cells treated with a KRAS shRNA or inhibitor. (I) Co-immunoprecipitation analysis. DLD-1 cell extracts were immunoprecipitated with a PRKD1, USP28 or control (IgG) antibody, and the immunoprecipitate was analyzed for PRKD1 or USP28 by immunoblotting. (J) (Left) In vitro kinase assay. Purified wild-type (WT) or kinase dead (KD) PRKD1 was incubated with USP28 peptides (shown on the right) and \u03b3-ATP and analyzed for incorporation of the radiolabel by autoradiography. (K) HA-ubiquitination pull-down assay as described in Figure 4D except 293T cells expressed WT or mutant (S899A) USP28. (L) ChIP analysis monitoring binding of CDX1 to the PRKD1 promoter or an irrelevant DNA region (NC) DNA. (M and N) qRT-PCR analysis monitoring PRKD1 (M) or INK4-ARF (N) expression in DLD-1 cells expressing a control scrambled (SC) or CDX1 siRNA. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01. Control experiments related to Figure 5 are presented in Figure 5\u2014figure supplements 1\u20134.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Purified wild-type (WT) and kinase-dead (KD) PRKD1 proteins were incubated in a standard in vitro kinase reaction with radioactive \u03b3-ATP. The reaction mixture was run on a gel, and incorporation of the radiolabel was detected by autoradiography. The silver-stained (SS) gel shows the abundance of each protein. The results show that only wild-type PRKD1 was capable of autophosphorylation, indicative of PRKD1 kinase activity.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** HA-ubiquitination pull-down assay. Extracts from 293T cells expressing HA-tagged ubiquitin, FLAG-tagged ZNF304, and FLAG-tagged wild-type (WT) USP28 treated in the presence or absence of 10 \u00b5M CRT0066101 were immunoprecipitated using an HA antibody, and the immunoprecipitate was analyzed by immunoblotting using a ZNF304 antibody. The arrowhead indicates the position of full-length (FL) ZNF304.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Schematic diagram showing the positions and sequences of the putative CDX1-binding sites in the PRKD1 promoter. The extended consensus CDX1-binding sequence, according to the TRANSFAC database, is also shown.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A) qRT-PCR analysis monitoring knockdown efficiency of CDX1 using two unrelated siRNAs. The results were normalized to that obtained with a control scrambled (SC) siRNA, which was set to 1. (B and C) qRT-PCR analysis monitoring expression of USP28 (B) or INK4-ARF (C) in DLD-1 cells expressing a scrambled or CDX1 siRNA that was unrelated in sequence to that used in Figure 5M,N. The results were normalized to that obtained with the SC siRNA, which was set to 1. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01.\n\nWe next asked whether USP28 is a substrate of PRKD1. Consistent with this possibility, we found that USP28 and PRKD1 were stably associated in a co-immunoprecipitation assay (Figure 5I). We then performed an in vitro kinase assay with purified PRKD1 whose activity was verified in an autophosphorylation assay (Figure 5\u2014figure supplement 1). Figure 5J shows that PRKD1 could phosphorylate a USP28 peptide containing the second, more conserved predicted phosphorylation site (Figure 5A). Notably, unlike wild-type USP28, a USP28 derivative containing a mutation in the PRKD1 phosphorylation site, USP28(S899A), was unable to reduce ZNF304 ubiquitination (Figure 5K). Likewise, treatment with the PRKD1 inhibitor CRT0066101 prevented USP28 from reducing ubiquitination of ZNF304 (Figure 5\u2014figure supplement 2).\n\nThe results of Figure 5H demonstrated that KRAS promoted the transcriptional upregulation of PRKD1. To gain mechanistic insight into this process, we performed bioinformatic analysis on the PRKD1 promoter and identified consensus binding sites for the intestine-specific transcription factor CDX1 (Figure 5\u2014figure supplement 3). Notably, previous studies have shown that KRAS positively regulates CDX1 activity through the mitogen-activated protein kinase pathway (Lorentz et al., 1999). The ChIP results of Figure 5L show, consistent with the bioinformatic prediction, that CDX1 was bound to the PRKD1 promoter in DLD-1 cells. Moreover, knockdown of CDX1 (Figure 5\u2013figure supplement 4A) resulted in decreased expression of PRKD1 (Figure 5M, Figure 5\u2014figure supplement 4B) and derepression of p14ARF, p15INK4B, and p16INK4A (Figure 5N, Figure 5\u2014figure supplement 4C) Thus, CDX1 is responsible, at least in part, for RAS-mediated transcriptional upregulation of PRKD1.\n\n### The ZNF304-corepressor complex mediates CIMP in KRAS-positive CRCs\n\nAs stated above, approximately 70% of CRCs containing activated KRAS are CIMP-positive as defined by aberrant hypermethylation of a representative panel of \u223c50 CIMP marker genes (Yagi et al., 2010; Kaneda and Yagi, 2011). Notably, these CIMP marker genes include p14ARF and p16INK4A, as well as other TSGs, which prompted us to ask whether ZNF304 and its corepressors have a general role in the aberrant hypermethylation and transcriptional silencing characteristic of CIMP-positive CRCs containing activated KRAS. To address this possibility, we knocked down KRAS or ZNF304 in DLD-1 cells and analyzed CIMP marker gene expression by qRT-PCR. Remarkably, knockdown of either KRAS or ZNF304 derepressed expression of all 50 CIMP marker genes analyzed (Figure 6A). Interestingly, knockdown of either KRAS or ZNF304 also derepressed VIM and SEPT9 (Figure 6\u2014figure supplement 1), whose DNA hypermethylation is used to diagnose CRC (Gyparaki et al., 2013). Bisulfite sequencing analysis of a representative subset of CIMP marker genes, which included p14ARF, p16INK4A and seven additional genes, revealed that shRNA-mediated knockdown of KRAS or ZNF304 also decreased promoter hypermethylation (Figure 2E, Figure 6\u2014figure supplement 2). ChIP analysis showed significant enrichment of ZNF304, KAP1, SETDB1, and DNMT1 on the promoters of the nine CIMP marker genes (Figures 2D and 6B), whose expression was also derepressed by the knockdown of the ZNF304 corepressors (Figures 2C and 6C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig6-v1.jpg)\n\n**Figure 6.:** (A) qRT-PCR analysis monitoring expression of CIMP marker genes in DLD-1 cells expressing a ZNF304 or KRAS shRNA. The results were normalized to that obtained with the NS control, which was set to 1. (B) ChIP analysis monitoring binding of ZNF304, KAP1, SETDB1, and DNMT1 to CIMP promoters or an irrelevant DNA region (NC). (C) qRT-PCR analysis monitoring expression of CIMP marker genes in DLD-1 cells expressing a NS, KAP1, SETDB1, or DNMT1 shRNA. (D) PAT-ChIP analysis monitoring binding of ZNF304 to CIMP promoters in matched adjacent normal (N) and KRAS-positive CRC human tumor (T) samples. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01. (E) Model for ZNF304-corepressor-mediated transcriptional silencing of INK4-ARF and CIMP marker genes in CRCs. Experiments validating the role of ZNF304 and corepressors in silencing of CIMP genes in KRAS-positive CRC cell lines, and experiments showing that the promoters of CIMP genes are hypermethylated in KRAS-positive CRC tumor samples, are presented in Figure 6\u2014figure supplements 1\u20136.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** qRT-PCR analysis monitoring expression of VIM and SEPT9 in DLD-1 cells stably expressing a ZNF304 or KRAS shRNA. The results were normalized to the expression level obtained using a NS shRNA, which was set to 1. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Bisulfite sequencing analysis of the promoters of CIMP marker genes in DLD-1 cells stably expressing a NS, KRAS or ZNF304 shRNA. (Top) Schematic of the promoter; positions of CpGs are shown to scale by vertical lines. (Bottom) Each circle represents a methylated (black) or unmethylated (white) CpG dinucleotide. Each row represents a single clone.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Bisulfite sequencing analysis of the promoters of representative CIMP marker genes in HCT116 (top) and HCT15 (bottom) cells. (Top) Schematic of the promoter; positions of CpGs are shown to scale by vertical lines. (Bottom) Each circle represents a methylated (black) or unmethylated (white) CpG dinucleotide. Each row represents a single clone.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig6-figsupp4-v1.jpg)\n\n**Figure 6\u2014figure supplement 4.:** ChIP analysis monitoring binding of ZNF304, KAP1, SETDB1, and DNMT1 at the promoters of CIMP marker genes in HCT116 (top) and HCT15 (bottom) cells. As a negative control, binding of the factors was also monitored at an irrelevant DNA region (negative control [NC] DNA). The results were normalized to that obtained with an IgG control antibody, which was set to 1. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01.\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig6-figsupp5-v1.jpg)\n\n**Figure 6\u2014figure supplement 5.:** qRT-PCR analysis monitoring expression of CIMP marker genes in HCT116 (top) and HCT15 (bottom) cells stably expressing an NS, ZNF304 or KRAS shRNA. The results were normalized to that obtained with the NS shRNA, which was set to 1. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01.\n\n![Figure 6\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig6-figsupp6-v1.jpg)\n\n**Figure 6\u2014figure supplement 6.:** Bisulfite sequencing analysis of the AOX1, CACNA1G and IRF8 promoters in matched adjacent normal colon (N) and KRAS-positive CRC human tumor samples (T) samples. (Top) Schematic of the promoter; positions of CpGs are shown to scale by vertical lines. (Bottom) Each circle represents a methylated (black) or unmethylated (white) CpG dinucleotide. Each row represents a single clone.\n\nWe next asked whether ZNF304 and its corepressors silenced CIMP marker genes in other KRAS-positive human CRC cell lines and tumor samples. In CIMP-positive HCT116 and HCT15 CRC cells (Zheng et al., 2000; Figure 6\u2014figure supplement 3), ZNF304, KAP1, SETDB1, and DNMT1 were associated with the promoters of the nine CIMP marker genes (Figure 3\u2014figure supplement 2, Figure 6\u2014figure supplement 4), whose expression was derepressed by shRNA-mediated knockdown of ZNF304 or KRAS (Figures 2A and 3A, Figure 6\u2014figure supplement 5).\n\nThe PAT-ChIP results of Figures 3I and 6D show that ZNF304 was substantially enriched at the promoters of the nine CIMP marker genes in KRAS-positive human CRC tumors relative to matched normal colon. Bisulfite sequencing analysis of representative CIMP marker genes confirmed promoter hypermethylation in all KRAS-positive CRC tumor samples (Figure 6\u2014figure supplement 6). These results and those described above reveal a specific pathway that mediates CIMP in KRAS-positive CRCs that is summarized in Figure 6E and discussed below.\n\n### ZNF304 also directs transcriptional silencing of INK4-ARF in hESCs\n\nAs described above, the INK4-ARF locus is also transcriptionally silenced in undifferentiated hESCs and becomes poised for expression following differentiation (Sherr, 2012). We therefore analyzed a possible role for ZNF304 and its corepressors in H9 cells, a well-characterized hESC line. The immunoblot results of Figure 7A show that in undifferentiated H9 hESCs, ZNF304 was present at high levels, which markedly decreased following differentiation by retinoic acid treatment. Moreover, in undifferentiated H9 hESCs ZNF304, KAP1, SETDB1, and DNMT1 were substantially enriched at the p14ARF, p15INK4B, and p16INK4A promoters (Figure 7B), which was largely lost following differentiation. Finally, knockdown of ZNF304 in undifferentiated H9 hESCs (Figure 7\u2014figure supplement 1) resulted in decreased association of KAP1, SETDB1, and DNMT1 with the p14ARF, p15INK4B, and p16INK4A promoters (Figure 7C) and increased expression of p14ARF, p15INK4B, and p16INK4A (Figure 7D). Collectively, these results indicate that ZNF304 and its corepressors are also responsible for transcriptional silencing of INK4-ARF in undifferentiated hESCs.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig7-v1.jpg)\n\n**Figure 7.:** (A) Immunoblot analysis showing ZNF304 levels in undifferentiated (DMSO) or retinoic acid (RA)-treated hESCs. (B and C) ChIP analysis monitoring binding of ZNF304, KAP1, SETDB1, and DNMT1 to INK4-ARF in undifferentiated or RA-treated hESCs (B) or in hESCs expressing a NS or ZNF304 shRNA (C). (D) qRT-PCR analysis monitoring INK4-ARF expression in hESCs expressing a NS, ZNF304, KAP1, SETDB1, or DNMT1 shRNA. (E) Bisulfite sequencing analysis of the p14ARF and p16INK4A promoters in H9 hESCs and DLD-1 cells. (F and G) ChIP analysis monitoring enrichment of H3K27me3, H3K9me3, and H3K4me3 (F) and EZH2 and BMI1 (G) at INK4-ARF or an irrelevant DNA region (NC) in H9 hESCs and DLD-1 cells. (H and I) ChIP analysis monitoring binding of EZH2 and BMI1 (H) and H3K27me3, H3K9me3 and H3K4me3 (I) at INK4-ARF in H9 hESCs and DLD-1 cells expressing a NS or ZNF304 shRNA. (J) qRT-PCR analysis monitoring INK4-ARF expression in H9 hESCs and DLD-1 cells expressing an NS, EZH2, or BMI1 shRNA. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01. Control experiments related to Figure 7 are shown in Figure 7\u2014figure supplements 1,2.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** qRT-PCR analysis monitoring knockdown efficiency of ZNF304, KAP1, SETDB1, and DNMT1 in H9 hESCs. The results were normalized to that obtained with the NS shRNA, which was set to 1. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A and B) qRT-PCR analysis monitoring knockdown efficiency of two unrelated EZH2 and BMI1 shRNAs in H9 hESCs and DLD-1 cells. The results were normalized to that obtained with the NS shRNA, which was set to 1. (C) qRT-PCR analysis monitoring INK4-ARF expression in H9 hESCs and DLD-1 cells expressing an NS shRNA, or an shRNA against EZH2 or BMI1 that is unrelated to that used in Figure 7J. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01.\n\nAs described above, in DLD-1 and other KRAS-positive CRC cell lines and tumors, the INK4-ARF locus is extensively hypermethylated. However, the bisulfite sequencing results of Figure 7E show that unlike DLD-1 cells, in H9 hESCs the p14ARF and p16INK4A promoters were not hypermethylated. We therefore sought to investigate how ZNF304 promoted INK4-ARF silencing in H9 hESCs in the absence of DNA hypermethylation. As mentioned above, previous studies have described a role for Polycomb repressive complexes (PRCs) in silencing of INK4-ARF in several non-malignant cell types including fibroblasts, mouse ESCs, and adult stem cells (Jacobs et al., 1999; Molofsky et al., 2005; Bracken et al., 2007; Li et al., 2009).\n\nWe therefore investigated the possible role of PRCs in INK4-ARF silencing in H9 hESCs and, for comparison, in KRAS-positive DLD-1 CRC cells. We first analyzed the INK4-ARF locus for the presence of the inhibitory histone mark, H3K27me3, which is catalyzed by the PRC2 subunit EZH2. The ChIP results of Figure 7F show substantial enrichment of H3K27me3 at the p14ARF, p15INK4B, and p16INK4A promoters in H9 hESCs, whereas in DLD-1 cells the level of H3K27me3 was substantially lower. By contrast, the level of histone H3 lysine 9 trimethylation (H3K9me3) at the p14ARF, p15INK4B, and p16INK4A promoters was much higher in DLD-1 cells than in H9 hESCs. As expected, there was no significant enrichment of histone H3 lysine 4 trimethylation (H3K4me3), a mark associated with transcription activity, in either DLD-1 cells or H9 hESCs.\n\nThe results described above indicated that although INK4-ARF is silenced in both KRAS-positive CRC cells and H9 hESCs, the inhibitory chromatin marks differ. To determine whether the differential inhibitory marks resulted from selective recruitment of repressive cofactors, we performed ChIP experiments. The results of Figure 7G show that in both H9 hESCs and DLD-1 cells, the PRC2 subunit EZH2 and the PRC1 subunit BMI1 were associated with the p14ARF, p15INK4B, and p16INK4A promoters. Thus, although the inhibitory marks on INK4-ARF differ in H9 hESCs and DLD-1 cells, the same set of repressive cofactors is present.\n\nTo determine whether ZNF304 was responsible for recruitment of PRC1 and PRC2, we performed ChIP experiments following depletion of ZNF304. Figure 7H shows that in both H9 hESCs and DLD-1 cells, knockdown of ZNF304 decreased binding of EZH2 and BMI1 to the p14ARF, p15INK4B, and p16INK4A promoters, which, as expected, was accompanied by a loss of H3K27me3 (Figure 7I). Also, as expected, in both H9 hESCs and DLD-1 cells, the knockdown of ZNF304 resulted in decreased H3K9me3 and increased H3K4me3 at the p14ARF, p15INK4B, and p16INK4A promoters (Figure 7I).\n\nThe differential levels of H3K27me3 on INK4-ARF described above raised the possibility that PRCs might have a more important role in silencing of p14ARF, p15INK4B, and p16INK4A in H9 hESCs compared to DLD-1 cells. Consistent with this idea, the knockdown of EZH2 or BMI1 (Figure 7\u2014figure supplement 2A,B) increased expression of p14ARF, p15INK4B, and p16INK4A in H9 hESCs but not in DLD-1 cells (Figure 7J, Figure 7\u2014figure supplement 2C).\n\n## Discussion\n\nIt is well established that in many cancers specific genes affecting cellular growth control are hypermethylated and transcriptionally silenced (Baylin, 2005; Esteller, 2006). However, the mechanistic basis of epigenetic silencing is not understood. According to one model, an epigenetic event, such as hypermethylation of a CpG-rich promoter region of a TSG, occurs randomly due, for example, to loss of fidelity or mutation of an epigenetic enzyme. The hypermethylation results in silencing of the TSG, which confers a selectable growth advantage (reviewed in Hassler and Egger, 2012). In a second model, transcriptional silencing occurs through a specific pathway, comprising a defined set of components, initiated by an oncoprotein.\n\n### A ZNF304-corepressor complex mediates INK4-ARF silencing in KRAS-positive CRCs\n\nIn this report, we have identified a specific pathway that mediates CIMP in KRAS-positive CRCs (Figure 6E). The pathway is initiated on DNA by binding of the transcriptional repressor, ZNF304, which recruits a corepressor complex that includes SETDB1, KAP1 and DNMT1, leading to promoter hypermethylation and transcriptional silencing. Activated KRAS regulates the pathway by maintaining high levels of ZNF304, which drives DNA binding. The basis by which activated KRAS increases ZNF304 levels is transcriptional upregulation of PRKD1, a serine/threonine kinase, and USP28, a deubiquitinase, two of the factors that were isolated in our primary RNAi screen. We further showed that PRKD1 phosphorylates USP28, which interacts with and stabilizes ZNF304 from proteolytic degradation.\n\nZNF304 is a member of large family of transcription factors. About two-thirds of the approximately 1500 transcription factors encoded by mammalian genomes contain C2H2 zinc-fingers and more than half of these harbor an N-terminal KRAB transcriptional repression domain (KRAB-ZFP proteins; reviewed in Lupo et al., 2013). In a previous study, we have found that silencing of the Fas tumor suppressor in RAS-transformed NIH 3T3 cells requires ZFP354B (Gazin et al., 2007), which like ZNF304 is a KRAB-ZFP protein. Moreover, like ZNF304, ZFP354B levels are increased by activated RAS. These findings suggest that KRAB-ZFP transcription factors may have a widespread role in transcriptional silencing of TSGs in cancer cells.\n\n### Implications for the role of KRAS in CIMP and tumorigenicity\n\nApproximately 70% of CRCs containing activated KRAS are CIMP-positive. However, whether activated KRAS is merely associated with or is directly responsible for CIMP remained to be determined. In this study, we have shown that activated KRAS directs a pathway that silences INK4A-ARF and a large number of other genes characteristic of CIMP-positive CRCs. Our results show how a single oncoprotein-directed pathway can silence multiple, unrelated genes.\n\nAlthough we have shown that in CRC cells KRAS directs and is required to maintain transcriptional silencing of INK4A-ARF, in primary cells oncogenic signals (such as activated KRAS) induce transcription of INK4A-ARF, which leads to p53 and Rb pathway activation and ultimately growth arrest (Sherr, 2012). Thus, transformation of a primary to a cancer cell involves a switch converting KRAS from an activator to a repressor of INK4-ARF. Consistent with this idea, we found, as expected, that expression of activated KRAS(G12V) in non-transformed WI-38 fibroblasts transcriptionally activated p14ARF, p15INK4B, and p16INK4 (Figure 8A). However, in contrast to the results in KRAS-positive CRC cell lines, in WI-38 cells KRAS failed to increase ZNF304 protein levels (Figure 8B) or significantly stimulate USP28 and PRKD1 transcription (Figure 8C), explaining at least in part why KRAS expression does not result in INK4-ARF silencing. These results in WI-38 cells reinforce the pivotal role of ZNF304 and the KRAS-directed pathway we describe in mediating INK4-ARF silencing in KRAS-positive CRCs. We speculate that linking INK4-ARF silencing directly to KRAS may ensure that the locus is not reactivated in CRC tumor cells.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/02313/elife-02313-fig8-v1.jpg)\n\n**Figure 8.:** (A) qRT-PCR analysis monitoring INK4-ARF expression in WI-38 cells expressing vector or KRAS(G12V). The results were normalized to the expression level obtained in vector-expressing cells, which was set to 1. (B) Immunoblot analysis showing levels of ZNF304, phosphorylated ERK (p-ERK) and total ERK (t-ERK) in WI-38 cells expressing vector or KRAS(G12V). (C) qRT-PCR analysis monitoring expression of USP28 and PRKD1 in WI-38 cells expressing vector or KRAS(G12V). The results were normalized to the expression level obtained in vector-expressing cells, which was set to 1. Data are represented as mean \u00b1 SD. *p\u22640.05, **p\u22640.01.\n\nCollectively, our results indicate that the ZNF304 pathway mediates transcriptional silencing of p14ARF, p15INK4B, and p16INK4A and other TSGs thereby facilitating RAS-driven tumorigenicity. Thus, in addition to its well-established role in promoting cellular proliferation and preventing apoptosis through downstream signaling pathways (reviewed in Karnoub and Weinberg, 2008), RAS induces \u2018secondary\u2019 oncogenic events by inactivating TSGs through transcriptional silencing. This additional activity may explain, at least in part, why RAS is such a potent oncoprotein and why activating RAS mutations are found at high frequency in human tumors.\n\nFinally, the continual requirement of the components of the RAS-directed ZNF304 pathway to maintain silencing has therapeutic implications. The approval of DNA demethylating agents and histone deacetylase inhibitors for treatment of lymphoma patients clearly established the potential to reverse tumor-specific epigenetic alterations (Mann et al., 2007; Kelly et al., 2010). However, DNA methyltransferase and histone deacetylase inhibitors broadly and non-selectively interfere with silencing. More efficacious therapeutics may be obtained by selectively inhibiting the silencing pathway initiated by the relevant oncoprotein. Thus, factors such as USP28 and PRKD1 may provide attractive anti-cancer targets.\n\n### Transcriptional silencing of INK4-ARF in hESCs is directed by ZNF304\n\nUnexpectedly, we have found that silencing of INK4A-ARF in undifferentiated hESCs is also mediated by ZNF304-directed recruitment of repressive cofactors. We note that the fold-increase of p14ARF, p15INK4B, and p16INK4A expression following knockdown of ZNF304 or repressive cofactors in H9 hESCs was less than that observed in KRAS-positive CRC cell lines, but is entirely consistent with results of other studies analyzing the role of INK4-ARF repressors in non-malignant cells (e.g., Bracken et al., 2007). This lack of robust re-expression of INK4-ARF in H9 hESCs and other non-malignant cells is presumably due to the absence of oncogenic signals that would strongly stimulate transcription of INK4-ARF genes.\n\nZNF304 is present at high levels in hESCs despite the absence of activated RAS. Interestingly, in ESCs KRAB-ZFPs, and their corepressor KAP1, have been shown to play an important role in silencing of endogenous retroviruses (Rowe et al., 2013). Thus, there may be some general mechanism for activation of KRAB-ZFPs in ESCs. Our finding that ZNF304 levels are elevated in both KRAS-positive CRC cells and hESCs is consistent with studies reporting a variety of similarities between cancer cells and stem cells (reviewed in Kim and Orkin, 2011).\n\nIn non-malignant differentiated cells INK4-ARF is reversibly silenced through association with PRCs. Although ZNF304 mediates recruitment of PRCs to INK4-ARF in undifferentiated H9 hESCS, following differentiation ZNF304 levels dramatically decline and there is no longer significant binding of ZNF304 at the p14ARF, p15INK4B, and p16INK4A promoters. Several other transcription factors such as TWIST1, ZFP277, HLX1, HOXA9 and the long non-coding RNA ANRIL have been reported to recruit PRCs and repress INK4-ARF in various differentiated non-malignant cells that presumably lack high levels of ZNF304 (Negishi et al., 2010; Yang et al., 2010; Yap et al., 2010; Martin et al., 2013; Ribeiro et al., 2013).\n\nIn ESCs, many developmentally important genes are reversibly silenced by PRCs and contain the repressive H3K27me3 mark. In fact, in ESCs H3K27me3 is a more predominant silencing mechanism than DNA hypermethylation, which is believed to be because H3K27me3 is more readily reversible. Several studies have identified subgroups of genes in which the H3K27me3 present in ESCs is replaced by abnormal DNA hypermethylation in cancer cells. This phenomenon, which has been referred to as \u2018epigenetic switching\u2019, results in the permanent silencing of key regulatory genes that may contribute to cell proliferation and tumorigenesis (reviewed in Sharma et al., 2010).\n\nThis differential repression pattern is exactly what we found for INK4-ARF in hESCs and KRAS-positive CRC cells. One model to explain the two repression patterns is differential recruitment of corepressors, such as PRCs or DNMTs, in non-malignant and cancer cells. However, we found that in hESCs and KRAS-positive CRC cells the same set of corepressors are recruited to INK4-ARF. Moreover, corepressor recruitment is dependent upon the same sequence-specific DNA-binding protein, ZNF304. Our results suggest a model involving differential enzymatic activity of a common, promoter-bound corepressor complex resulting in predominantly DNA hypermethylation, in KRAS-positive CRC cells, or predominantly H3K27me3, in hESCs.\n\n## Materials and methods\n\n### Cell lines and culture\n\nDLD-1, HCT15, and HCT116 cells were obtained from ATCC (Manassas, VA) and grown as recommended by the supplier. H9 hESCs were grown in mTeSR1 media (STEMCELL Technologies, Vancouver, Canada) under feeder-free conditions on plates coated with Matrigel (BD Biosciences, San Jose, CA). DLD-1 cells were treated with 10 \u00b5M manumycin A (Calbiochem, Darmstadt, Germany) for 24 hr, 20 \u00b5M LY294002 (Calbiochem) for 24 hr, 10 \u00b5M PI-103 (Cayman Chemical) for 24 hr, 0\u201310 \u00b5M MG-132 (Cayman Chemical, Ann Arbor, MI) for 4 hr, or 10 \u00b5M CRT0066101 (Cancer Research Technology, London, UK) for 24 hr. To induce differentiation, H9 hESCs were treated with 10 \u00b5M retinoic acid (Sigma\u2013Aldrich, St. Louis, MO) for 3 (Figure 7A) or 4 (Figure 7B) days.\n\nWI-38 cells were obtained from ATCC and cultured as recommended by the supplier. To produce retroviruses, HEK293T cells were tranfected with pBabe K-Ras12V (12544; Addgeneplasmid; Khosravi-Far et al., 1996) or empty vector (pBABE-puro; 1764; Addgene plasmid). WI-38 cells were seeded with the KRAS or empty vector retrovirus and 3 days later selected with puromycin. The cells were harvested for total RNA for qRT-PCR analysis on day 4, or for total protein for immunoblot analysis on day 7.\n\n### Reporter construct cloning and validation\n\nTo construct the p14ARF-BlastR reporter, 3.98 kb of the p14ARF promoter was PCR amplified from a BAC using primers engineered with BglII and SalI restriction sites, and cloned into a derivative of pDsRed2-N1 (Clontech, Mountainview, CA) in which the CMV promoter had been excised, the BlastR gene (PCR amplified from pEF6/V5-HisB; Invitrogen, Grand Island, NY) had been inserted in-frame with DsRed2, and the TK gene (PCR amplified from the HSV-1-TK gene; Addgene) had been inserted in-frame with DsRed2-BlastR. The plasmid was linearized and stably transfected into DLD-1 cells using an Amaxa nucleofactor. Immediately after nucleofection, the cells were placed in complete growth medium for 72 hr. Viable cells were allowed to grow into colonies and then selected with 500 \u00b5g/ml G418 (Calbiochem). Surviving colonies were individually isolated, expanded, and tested for blasticidin sensitivity; to minimize non-specific survival in the shRNA screen, clones with the lowest resistance to blasticiden, indicating complete reporter silencing, were chosen for further characterization. Clones were treated with 10 \u00b5M 5-aza-2\u2032-deoxycytodine (Calbiochem) every 24 hr for 72 hr. After 24 hr treatment, 0, 5, or 10 \u00b5M blasticidin (Sigma-Aldrich) was added for 6 days, and cells were fixed and stained with 0.1% crystal violet to assess viability. Treatment with 5-aza-2\u2032-deoxycytodine and subsequent challenge with blasticidin was used to identify a clone with robust survival when treated with both drugs.\n\n### shRNA screen\n\nThe human shRNAmir library (release 1.20; Open Biosystems/Thermo Scientific, Pittsburgh, PA) was obtained through the UMass Medical School RNAi Core facility (Worcester, MA). Retroviral pools were generated and used to transduce DLD-1/p14ARF-BlastR cells as previously described (Gazin et al., 2007). The cells were selected with puromycin (4 \u03bcg/ml) for 3 days, and the puromycin-resistant population was challenged with blasticidin (10 \u00b5g/ml) for 14 days. The cells that bypassed the basticidin challenge formed colonies that were isolated and individually expanded, and shRNAs were identified by sequence analysis as previously described (Gazin et al., 2007). Individual knockdown cell lines were generated by stable transduction of 1 \u00d7 105 cells with a single shRNA (Supplementary file 1) followed by puromycin selection.\n\n### qRT-PCR\n\nTotal RNA was isolated and reverse transcription was performed as described (Gazin et al., 2007), followed by qRT-PCR using Power SYBR Green PCR Master Mix (Applied Biosystems, Grand Island, NY). GAPDH was used as an internal reference gene for normalization. See Supplementary file 2 for primer sequences.\n\n### Immunoblot analysis\n\nCell extracts were prepared by lysis in Laemmli buffer in the presence of protease inhibitor cocktail (Roche, Indianapolis, IN). The ZNF304 antibody was generated (by 21st Century Biochemicals, Marlboro, MA) against a peptide corresponding to amino acids GFWCEAEHEAPSEQSV. The following commercial antibodies were used: p14ARF (Cell Signaling Technology, Danvers, MA), p15INK4B (Abcam, Cambridge, MA), p16INK4A (Cell Signaling Technology), USP28 (Bethyl Laboratories, Montgomery, TX), PRKD1 (Cell Signaling Technology), phospho-ERK1/2 and total ERK1/2 (both from Cell Signaling Technology). The \u03b1-tubulin (TUBA) antibody was generated in-house.\n\n### ChIP assays\n\nChIP assays were performed as previously described (Gazin et al., 2007) using the following antibodies: ZNF304 (described above), KAP1 (Bethyl Laboratories), SETDB1 (Millipore, Billerica, MA), DNMT1, DNMT3A, and DNMT3B (all from Imgenex, San Deigo, CA), cJUN (Millipore), H3K27me3 (Cell Signaling Technology), H3K9me3 (Millipore), H3K4me3 (Abcam), EZH2 (Millipore) and BMI1 (Abcam). The CDX1 antibody (Chan et al., 2009) was kindly provided by Walter Bodmer (University of Oxford, UK). ChIP products were analyzed by qRT-PCR (see Supplementary file 1 for primers). Samples were quantified as percentage of input, and then normalized to an irrelevant region in the genome (\u223c3.2 kb upstream from the transcription start site of GCLC). Fold enrichment was calculated by setting the IgG control IP sample to a value of 1.\n\n### Bisulfite sequencing\n\nBisulfite modification was carried out using an EpiTect Bisulfite Kit (QIAGEN, Germantown, MD) followed by assay kits from EpigenDX (Hopkinton, MA) or nested PCR primers. Multiple independent clones were sequenced from each PCR product within each cell line (see Supplementary file 2 for primer sequences), of which six representative clones are displayed.\n\n### Tumor formation assays\n\nDLD-1 cells (2 \u00d7 106) expressing either a NS, ZNF304 or DNMT1 shRNA were suspended in 100 \u00b5l of serum-free RPMI and injected subcutaneously into the right flank of athymic BALB/c (nu/nu) mice (Taconic) (n = 3 mice per shRNA). Tumor dimensions were measured every 7 days for 4 weeks and tumor volume was calculated using the formula \u03c0/6 \u00d7 (length) \u00d7 (width)2. All experiments were performed in accordance with the Institutional Animal Care and Use Committee (IACUC) guidelines.\n\n### PAT-ChIP assay\n\nThis study was approved by the institutional review board at the University of Massachusetts Medical School (UMMS). Archived specimens (2010\u20132012) with sufficient tissue for analysis were obtained from the Department of Pathology at UMMS, and the CRC diagnosis was made by a UMMS pathologist. KRAS mutational analysis was performed by the UMass Memorial Laboratory of Diagnostic Molecular Oncology (Worcester, MA). Formalin-fixed paraffin embedded tissue sections of matched adjacent normal colon and tumor samples isolated from individuals with invasive or metastatic KRAS-positive CRC were de-paraffinized in Histolemon-Erba RS solution (Carlo Erba Reagents, France) four times for 10 min at room temperature. The tissue was then resuspended in 100% ethanol, incubated for 10 min at room temperature, spun down and resuspended in 95% ethanol. The washing/resuspension steps were repeated, gradually increasing the percentage of water (to achieve 70%, 50%, 20%, 0% ethanol) to rehydrate the tissue. The resulting material was then processed as previously described (Fanelli et al., 2011).\n\n### Co-immunoprecipitation assays\n\nDLD-1 cell lysate was immunopreciptated with a ZNF304, USP28, PRKD1 or control (IgG) antibody, and the immunoprecipitate was analyzed for ZNF304, USP28 or PRKD1 by immunoblotting. Input lanes represent 10% of immunoprecipitated lanes.\n\n### HA-ubiquitin pull-down assays\n\nZNF304 was PCR amplified from a BAC using primers engineered with HindIII and BamH1 sites and cloned into p3XFLAG-myc-CMV-26 (Sigma-Aldrich) to generate p3XFLAG-ZNF304. p3XFLAG-USP28 and p3XFLAG-USP28(C171A) (Popov et al., 2007) were kindly provided by Stephen Elledge (Harvard Medical School, Boston, MA); p3XFLAG-USP28(S899A) was generated by patch PCR using p3XFLAG-USP28 as a template. 293T cells (2 \u00d7 106) were plated on 10-cm dishes and transfected with 1 \u00b5g p3XFLAG-ZNF304, 1 \u00b5g p3XFLAG-USP28 (wild-type or mutant), 1 \u00b5g pcDNA3.1-HA-Ubiquitin (Addgene), and 0.5 \u00b5g pmaxGFP (Lonza Biologics Inc., Hopkinton, MA) using Effectene reagent (QIAGEN). To ensure equivalent transfection efficiency, eGFP expression was monitored 48 hr later. Cells were harvested in NETN-150 buffer (20 mM Tris\u2013HCl, pH 8.0, 150 mM NaCl, 1 mM EDTA and 0.05% NP-40) plus 1X protease inhibitor cocktail (Roche). Pull-downs were performed using an HA antibody (Cell Signaling Technology) and anti-rabbit Trublot beads (eBioscience, San Diego, CA). Beads were incubated with lysate for 18 hr, washed three times using NETN-150 buffer, and eluted in 2X sample buffer. Input samples were probed with a FLAG-M2 (Sigma-Aldrich) or TUBA antibody, and immunoprecipitated samples were probed with a ZNF304 antibody.\n\n### In vitro kinase assay\n\nPlasmids expressing His-tagged wild-type and kinase-dead PRKD1 proteins were constructed by digesting plamids HA.PKD (Storz and Toker, 2003) and HA.PKD.K/W (Storz et al., 2003) (10808 and 10809; Addgene plasmids), respectively, with BamHI and XhoI and ligating into pRSET A (Life Technologies, Grand Island, NY). To ensure activity of the purified wild-type protein, a 20-\u00b5l reaction was set up as follows: 1 \u00b5l 32P-\u03b3-ATP (10 mCi), 1 \u00b5l 10 \u00b5M ATP, 0.2 mM microcystin, 4 \u00b5l 5X kinase buffer (23 mM MOPS, 11.5 mM \u03b2-glycerphosphate, 23 mM MgCl2, 4.6 mM EGTA, 1.8 mM EDTA, 0.25 mM DTT [pH 7.0]), and 60 nM purifiedHis-PRKD1 diluted in 1X kinase buffer. Reactions were incubated for 30 min at 30\u00b0C and stopped using 2X Laemmli Sample Buffer. Autophosphorylation of the wild-type protein was confirmed by immunoblotting with a PRKD1-Ser916 antibody (Cell Signaling Technology). To monitor phosphorylation of USP28, the above reaction was carried out using 10 \u00b5M substrate (peptides corresponding to amino acids 543\u2013557 [TCLQRWRSEIEQDIQ] or 892\u2013906 [YSLFRKVSVYLLTGL] in USP28) diluted in 1X kinase buffer. Incorporation of the radiolabel into the peptide was monitored by autoradiography.\n\n### USP28 and PRKD1 promoter analysis\n\nThe USP28 and PRKD1 promoters were analyzed using the TRANSFAC database (www.gene-regulation.com/pub/databases.html) to identify putative transcription factor binding sites.\n\n### Statistics\n\nAll quantitative data were collected from experiments performed in at least triplicate, and expressed as mean \u00b1 standard deviation. Differences between groups were assayed using two-tailed student t test using Microsoft Excel. Significant differences were considered when p<0.05; *p\u22640.05, and **p\u22640.01.\n",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "1c037f9d-04bf-446c-a0c6-969fab240948",
+      "submission_id": "5c4cc6ba-52a6-434b-99d4-cc572b4caecc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kevin Struhl, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02313.035](https://doi.org/10.7554/eLife.02313.035)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cA KRAS-directed transcriptional silencing pathway that mediates the CpG island methylator phenotype\u201d for consideration at eLife. Your article has been favorably reviewed by a Senior editor (Jim Manley) and a member of our Board of Reviewing Editors (Kevin Struhl).\n\nWe are very pleased to inform you that your article has been accepted for publication: this is a superb paper that deserves to be published in eLife. The authors describe a detailed pathway in which activated KRAS ultimately leads to DNA methylation of the INK4-ARF and a number of other CIMP loci. The pathway was elucidated through a genome-wide RNAi screen and a large number of standard molecular biological experiments. It involves a DNA-binding transcription factor and its associated co\u2013repressor complex, a DNA methylase, a deubiquitinase, a protein kinase, and the AP-1 factor June Moreover, the authors provide clear evidence that this pathway is relevant in human cancer by analyzing patient samples. Lastly, they also show that aspects of this pathway also occur in embryonic stem cells, providing a new link between such stem cells and the cancer state. Although the Green laboratory published a seminal paper showing that DNA methylation of tumor suppressor genes can arise from a detailed genetic pathway as opposed to previous belief that methylation occurs randomly (and then propagated), this paper uses a completely different system. As such, it is important for its own sake as well as providing a new example of the general principle, which I think is largely under-appreciated in the haze of cancer and chromatin work. The paper is extremely well written, and I have no specific comments other than to cite the work of Sonia Kohai.\n\n[Editors\u2019 note: no revisions were requested so there is not an accompanying author response.]\n",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c07364bd-17ba-435d-8421-110da9798870",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C1",
+      "claim": "Approximately 70% of KRAS-positive colorectal cancers (CRCs) have a CpG island methylator phenotype (CIMP) characterized by aberrant DNA hypermethylation and transcriptional silencing of many genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 70% of KRAS-positive colorectal cancers (CRCs) have a CpG island methylator phenotype (CIMP) characterized by aberrant DNA hypermethylation and transcriptional silencing of many genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established knowledge in the field and is stated as a known fact in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "e2903419-97f7-48ca-b83e-9f8753aa3f17",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C2",
+      "claim": "The tumor suppressors p14ARF, p15INK4B, and p16INK4A are encoded by the INK4-ARF locus and are among the CIMP genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the CIMP genes are the tumor suppressors p14ARF, p15INK4B, and p16INK4A, encoded by the INK4-ARF locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the INK4-ARF locus and CIMP genes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "6d919dce-b414-4af5-8d37-fab0f8d45f92",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C3",
+      "claim": "ZNF304 is a zinc-finger DNA-binding protein identified as the pivotal factor required for INK4-ARF silencing and CIMP in CRCs containing activated KRAS.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we perform an RNA interference screen and identify ZNF304, a zinc-finger DNA-binding protein, as the pivotal factor required for INK4-ARF silencing and CIMP in CRCs containing activated KRAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the RNAi screen data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "468e2fd2-e7f2-4a68-b0d0-b0fd13e9f378",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C4",
+      "claim": "In KRAS-positive human CRC cell lines and tumors, ZNF304 is bound at the promoters of INK4-ARF and other CIMP genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In KRAS-positive human CRC cell lines and tumors, ZNF304 is bound at the promoters of INK4-ARF and other CIMP genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP assay data shown in Figures 2D, 3I, and 6B,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "d8250651-ffe4-4058-a016-ebcdb191ad9a",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C5",
+      "claim": "Promoter-bound ZNF304 recruits a corepressor complex that includes the DNA methyltransferase DNMT1, resulting in DNA hypermethylation and transcriptional silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Promoter-bound ZNF304 recruits a corepressor complex that includes the DNA methyltransferase DNMT1, resulting in DNA hypermethylation and transcriptional silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP data (Figure 2D) and bisulfite sequencing data (Figure 2E) showing DNMT1 binding and DNA methylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "292061b5-a9bb-44c3-8942-cbda5ed23e73",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C6",
+      "claim": "KRAS promotes silencing through upregulation of ZNF304, which drives DNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "KRAS promotes silencing through upregulation of ZNF304, which drives DNA binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that KRAS knockdown reduces ZNF304 protein levels (Figure 3E) and ZNF304 binding to promoters (Figure 3B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "d3b9eabe-0d12-49fc-af5a-008b33d59e28",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C7",
+      "claim": "ZNF304 directs transcriptional silencing of INK4-ARF in human embryonic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that ZNF304 also directs transcriptional silencing of INK4-ARF in human embryonic stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 7 showing ZNF304 binding and effects of ZNF304 knockdown in H9 hESCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "32d549af-8954-4876-8460-57ad96a9a4cf",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C8",
+      "claim": "CRCs can be categorized into three distinct subclasses based on their epigenetic and genetic profiles: CIMP-1 (CIMP-high), CIMP-2 (CIMP-low), and CIMP-negative.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, CRCs can be categorized into three distinct subclasses based on their epigenetic and genetic profiles: CIMP-1 (also called CIMP-high), characterized by intense methylation of multiple genes, microsatellite instability and BRAF mutations; CIMP-2 (also called CIMP-low), typified by methylation of a more limited group of genes and mutation in KRAS; and CIMP-negative, distinguished by infrequent methylation and p53 mutation (Yagi et al., 2010; Kaneda and Yagi, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This classification is supported by citations to published literature (Yagi et al., 2010; Kaneda and Yagi, 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "75b696de-ed33-4077-a509-d5a7ac3c19e6",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C9",
+      "claim": "INK4-ARF is transcriptionally silenced in 30\u201345% of all CRCs and in 70% of CRCs that harbor an activating KRAS mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, INK4-ARF is transcriptionally silenced in 30\u201345% of all CRCs and in 70% of CRCs that harbor an activating KRAS mutation (Burri et al., 2001; Dominguez et al., 2003; Lind et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies (Burri et al., 2001; Dominguez et al., 2003; Lind et al., 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "5abec8b9-60e0-4b82-a816-070aa311cc36",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C10",
+      "claim": "The INK4-ARF locus is silenced in embryonic, fetal, and adult stem cells, but in more differentiated cells, it becomes poised for expression and increasingly responsive to aberrant mitogenic signals.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, INK4-ARF is silenced in embryonic, fetal, and adult stem cells, but in more differentiated cells, it becomes poised for expression and increasingly responsive to aberrant mitogenic signals such as those elicited by activated oncogenes (reviewed in Sherr, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review article (Sherr, 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "a0c2b888-6b25-4278-b016-c7c41e56ac32",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C11",
+      "claim": "Expression of INK4-ARF limits stem cell self-renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of INK4-ARF limits stem cell self-renewal, suggesting that coordinated INK4-ARF expression may normally act to restrict stem cell numbers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "14d13123-a5ec-4bc4-8620-97cb963e2cef",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C12",
+      "claim": "The INK4-ARF locus has been shown to be a barrier for reprogramming.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the INK4-ARF locus has been shown to be a barrier for reprogramming (Li et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Li et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "d15b3be8-aa80-443c-a096-7b5f97f17841",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C13",
+      "claim": "In actively growing human diploid fibroblasts, the INK4A-ARF locus is silenced by histone H3 lysine 27 trimethylation (H3K27me3) directed by Polycomb group proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In actively growing human diploid fibroblasts, the INK4A-ARF locus is silenced by histone H3 lysine 27 trimethylation (H3K27me3) directed by Polycomb group proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and supported by citations (Jacobs et al., 1999; Bracken et al., 2007; Kotake et al., 2007).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "8bffba1f-dde2-4208-8cfa-1dfe1e09aa54",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C14",
+      "claim": "When cells are exposed to cellular stress, such as oncogenic signals, the H3K27me3 mark on the INK4A-ARF locus is decreased, resulting in expression of INK4A-ARF genes.",
+      "claim_type": "EXPLICIT",
+      "source": "When such cells are exposed to cellular stress, such as oncogenic signals, the H3K27me3 mark on the locus is decreased, resulting in expression of INK4A-ARF genes (Jacobs et al., 1999; Bracken et al., 2007; Kotake et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies (Jacobs et al., 1999; Bracken et al., 2007; Kotake et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "b3434fd0-2cea-4b19-9a34-8ef4ae06eebc",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C15",
+      "claim": "Transcriptional activation of INK4A-ARF is due, at least in part, to upregulation of the H3K27 demethylase JMJD3, which removes H3K27me3 from INK4A-ARF.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional activation is due, at least in part, to upregulation of the H3K27 demethylase JMJD3, which removes H3K27me3 from INK4A-ARF (Agger et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Agger et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "2ae36108-fc60-47b3-bfc0-8f79250fcd93",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C16",
+      "claim": "A p14ARF-BlastR reporter construct was stably transduced into DLD-1 cells, and cells in which the reporter gene had been silenced were selected.",
+      "claim_type": "EXPLICIT",
+      "source": "This p14ARF-BlastR reporter construct was stably transduced into DLD-1 cells, a human CRC cell line in which endogenous p14ARF is transcriptionally silenced (Zheng et al., 2000; Figure 1B). We selected cells in which the reporter gene had been silenced, as evidenced by acquisition of blasticidin resistance (Figure 1C), transcriptional derepression (Figure 1B), and decreased DNA hypermethylation (Figure 1D) following treatment with the DNA methyltransferase inhibitor 5-aza-2\u2032-deoxycytidine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 1B, 1C, and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "23079089-4471-4f0a-bab4-ff1f4fad2b74",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C17",
+      "claim": "Treatment with 5-aza-2\u2032-deoxycytidine resulted in transcriptional derepression of the p14ARF-BlastR reporter in DLD-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected cells in which the reporter gene had been silenced, as evidenced by acquisition of blasticidin resistance (Figure 1C), transcriptional derepression (Figure 1B), and decreased DNA hypermethylation (Figure 1D) following treatment with the DNA methyltransferase inhibitor 5-aza-2\u2032-deoxycytidine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "e0337ced-fdf2-4a9f-b6d2-0a8f0a1ce40a",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C18",
+      "claim": "A genome-wide human shRNA library comprising \u223c62,400 shRNAs was used to transduce the DLD-1/p14ARF-BlastR reporter cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "A genome-wide human small hairpin (shRNA) library (Silva et al., 2005) comprising \u223c62,400 shRNAs was divided into 10 pools, which were packaged into retrovirus particles and used to stably transduce the DLD-1/p14ARF-BlastR reporter cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology used in the RNAi screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "b379ee78-c620-4f6c-8dfb-56693ce4d9a0",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C19",
+      "claim": "Eight genes were identified from the RNAi screen that, following shRNA-mediated knockdown, resulted in derepression of endogenous p14ARF.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we identified eight genes that, following shRNA-mediated knockdown, resulted in derepression of endogenous p14ARF (Figure 2A, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 2A and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "2bd52c13-ac7c-49be-b6ea-6f62d70c5f37",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C20",
+      "claim": "ZNF304 is a member of the KRAB domain protein family.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we elected to focus on ZNF304, a zinc finger DNA-binding protein that contains a KRAB repressor domain (Sabater et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Sabater et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "795e9197-6cc3-4d06-9fac-f9edb06a4c90",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C21",
+      "claim": "Knockdown of ZNF304 in DLD-1 cells derepressed p14ARF, p15INK4B, and p16INK4A.",
+      "claim_type": "EXPLICIT",
+      "source": "The qRT-PCR and immunoblot results of Figure 2A,B show that in addition to p14ARF, knockdown of ZNF304 derepressed p15INK4B and p16INK4A, which are also transcriptionally silenced in DLD-1 cells (Zheng et al., 2000; Ishiguro et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data in Figure 2A and immunoblot data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "07def4b5-f02f-4c84-a6b9-684605afa776",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C22",
+      "claim": "KRAB domain proteins function by recruiting a corepressor complex that includes the scaffolding protein KAP1 and the histone methyltransferase SETDB1.",
+      "claim_type": "EXPLICIT",
+      "source": "KRAB domain proteins function by recruiting a corepressor complex that includes the scaffolding protein KAP1 and the histone methyltransferase SETDB1 (Iyengar and Farnham, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Iyengar and Farnham, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "52b6ad8f-f335-4779-a54f-24494c1f7bd7",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C23",
+      "claim": "Knockdown of KAP1 or SETDB1 resulted in derepression of p14ARF, p15INK4B, and p16INK4A in DLD-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of KAP1 or SETDB1 (Figure 2\u2014figure supplement 4A) resulted in derepression of p14ARF, p15INK4B, and p16INK4A (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "284a9051-a618-4633-ad54-2f846a1cf852",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C24",
+      "claim": "p14ARF, p15INK4B, and p16INK4A were substantially derepressed following knockdown of DNMT1 but not DNMT3A or DNMT3B.",
+      "claim_type": "EXPLICIT",
+      "source": "p14ARF, p15INK4B, and p16INK4A were also substantially derepressed following knockdown of DNMT1 but not the other DNA methyltransferases, DNMT3A, or DNMT3B (Figure 2C, Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "67573bf4-dabb-44b9-9294-a6af393cf063",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C25",
+      "claim": "ZNF304, KAP1, SETDB1, and DNMT1 were bound to the p14ARF, p15INK4B, and p16INK4A promoters in DLD-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromatin immunoprecipitation (ChIP) assay of Figure 2D shows that ZNF304, as well as KAP1, SETDB1 and DNMT1, were bound to the p14ARF, p15INK4B, and p16INK4A promoters in DLD-1 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "511fa765-3084-43e8-8391-32c824529098",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C26",
+      "claim": "Knockdown of ZNF304 substantially decreased binding of KAP1, SETDB1, and DNMT1 to the p14ARF, p15INK4B, and p16INK4A promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, knockdown of ZNF304 substantially decreased binding of KAP1, SETDB1, and DNMT1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "78f3adee-5fd2-4be8-9243-bd6b18e33e67",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C27",
+      "claim": "Knockdown of ZNF304, KAP1, SETDB1, or DNMT1 decreased p14ARF promoter hypermethylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of ZNF304, KAP1, SETDB1 or DNMT1 also decreased p14ARF promoter hypermethylation (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bisulfite sequencing data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "bbd053c1-09fe-4328-ad08-ef3e27a9c5f6",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C28",
+      "claim": "shRNA-mediated knockdown of ZNF304 in DLD-1 cells significantly suppressed tumor growth in mouse xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this prediction, Figure 2F shows that shRNA-mediated knockdown of ZNF304 in DLD-1 cells significantly suppressed tumor growth in mouse xenografts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tumor formation assay data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "8eadc06b-af84-405a-aa77-cc8d45c1c337",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C29",
+      "claim": "shRNA-mediated knockdown of DNMT1 suppressed tumor growth in mouse xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "shRNA-mediated knockdown of DNMT1 similarly suppressed tumor growth, consistent with previous results (Morita et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tumor formation assay data shown in Figure 2F and a citation to Morita et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "9b206d31-b47e-4c96-a0f4-38fdeaa6b52b",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C30",
+      "claim": "DLD-1 cells contain an activated KRAS(G13D) mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "DLD-1 cells contain an activated KRAS(G13D) mutation and we therefore investigated the relationship between KRAS and silencing of INK4-ARF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of the DLD-1 cell line.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "4ec80b8b-6fcc-4066-982a-3087f631ef29",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C31",
+      "claim": "shRNA-mediated knockdown of KRAS in DLD-1 cells resulted in derepression of p14ARF, p15INK4A, and p16INK4B.",
+      "claim_type": "EXPLICIT",
+      "source": "shRNA-mediated knockdown of KRAS in DLD-1 cells (Figure 3\u2014figure supplement 1A,B) resulted in derepression of p14ARF, p15INK4A, and p16INK4B (Figure 3A, Figure 3\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "8ca972d5-2ef9-4e94-ac15-32c372fbd85b",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C32",
+      "claim": "shRNA-mediated knockdown of KRAS substantially reduced binding of ZNF304 and its corepressors to the p14ARF, p15INK4B, and p16INK4A promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "shRNA-mediated knockdown of KRAS in DLD-1 cells (Figure 3\u2014figure supplement 1A,B) resulted in derepression of p14ARF, p15INK4A, and p16INK4B (Figure 3A, Figure 3\u2014figure supplement 1C) and substantially reduced binding of ZNF304 and its corepressors to all three promoters (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "47e0a2b6-34b1-4941-8a57-9f2709a238e5",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C33",
+      "claim": "Treatment with manumycin A resulted in derepression of p14ARF, p15INK4B, and p16INK4A in DLD-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, treatment with manumycin A, a RAS farnesyltransferase inhibitor (Hara et al., 1993), also resulted in derepression of p14ARF, p15INK4B, and p16INK4A (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "525bc5a8-0159-4300-a760-373e83c2acf3",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C34",
+      "claim": "Treatment with manumycin A reduced binding of ZNF304 and its corepressors to the p14ARF, p15INK4B, and p16INK4A promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, treatment with manumycin A, a RAS farnesyltransferase inhibitor (Hara et al., 1993), also resulted in derepression of p14ARF, p15INK4B, and p16INK4A (Figure 3C) and reduced binding of ZNF304 and its corepressors to the three promoters (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "59630197-56e5-41ad-8fd6-ccfffc4c020e",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C35",
+      "claim": "shRNA-mediated knockdown or pharmacological inhibition of KRAS markedly reduced ZNF304 protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, shRNA-mediated knockdown or pharmacological inhibition of KRAS markedly reduced ZNF304 protein levels (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "16831f25-6623-4094-84a3-dfd4d21fd1d9",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C36",
+      "claim": "Addition of the PI3K inhibitor LY294002 or PI-103 derepressed p14ARF, p15INK4B, and p16INK4A and reduced ZNF304 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, addition of the phosphoinositide 3-kinase (PI3K) inhibitor LY294002 (Vlahos et al., 1994) or PI-103, which blocks the PI3K-AKT signaling pathway downstream of activated KRAS (Hayakawa et al., 2006), also derepressed p14ARF, p15INK4B, and p16INK4A and reduced ZNF304 levels (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "4421d90a-a99e-49c0-9c7c-1ab047c5d513",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C37",
+      "claim": "Following shRNA-mediated knockdown or pharmacological inhibition of KRAS, ZNF304 mRNA levels were not significantly affected.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, following shRNA-mediated knockdown or pharmacological inhibition of KRAS, ZNF304 mRNA levels were not significantly affected (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "f9b490b0-665f-4771-a95d-d2095c985f5b",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C38",
+      "claim": "Upregulation of ZNF304 by activated KRAS is predominantly post-transcriptional.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, upregulation of ZNF304 by activated KRAS is predominantly post-transcriptional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that KRAS affects ZNF304 protein but not mRNA levels.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "94735cb3-4638-4497-9f18-691b97b1f7fd",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C39",
+      "claim": "The reduction of ZNF304 protein levels following KRAS inhibition could be counteracted by proteasome inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, the reduction of ZNF304 protein levels following KRAS inhibition could be counteracted by proteasome inhibition (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "6d82cc94-3a67-4524-8125-f9a78db11805",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C40",
+      "claim": "In HCT116 and HCT15 CRC cell lines, ZNF304 and its corepressors were associated with the p14ARF, p15INK4B, and p16INK4A promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "In HCT116 and HCT15 CRC cell lines, in which INK4-ARF is transcriptionally silenced (Yagi et al., 2010), ZNF304 and its corepressors were associated with the p14ARF, p15INK4B, and p16INK4A promoters (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "2eb2c7c1-2cd0-45b5-9090-9209e5cbb0e3",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C41",
+      "claim": "shRNA-mediated knockdown of ZNF304 or KRAS or treatment with manumycin A derepressed p14ARF, p15INK4B, and p16INK4A expression in HCT116 and HCT15 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, shRNA-mediated knockdown of ZNF304 or KRAS (Figure 3\u2014figure supplement 3A,B) or treatment with manumycin A (Figure 3\u2014figure supplement 3C) derepressed p14ARF, p15INK4B, and p16INK4A expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 3\u2014figure supplement 3A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "5ee73625-3cf3-4985-b340-dfe9057422f4",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C42",
+      "claim": "ZNF304 was substantially enriched at the p14ARF, p15INK4B, and p16INK4A promoters in KRAS-positive human CRC tumor samples relative to adjacent normal colon.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3I shows that ZNF304 was substantially enriched at the three promoters in CRC tumor samples relative to adjacent normal colon.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PAT-ChIP data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "4ca3ca43-8a07-4c08-98c8-957d38c45623",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C43",
+      "claim": "Bisulfite sequencing analysis confirmed p14ARF promoter hypermethylation in KRAS-positive CRC tumors but not in matched normal colon.",
+      "claim_type": "EXPLICIT",
+      "source": "Bisulfite sequencing analysis confirmed p14ARF promoter hypermethylation in the KRAS-positive CRC tumors but not in the matched normal colon (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bisulfite sequencing data shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "5f7cd024-cf15-4e78-9f3a-139ad9b45aeb",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C44",
+      "claim": "USP28 is a nuclear-localized deubiquitinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Another factor isolated in our primary RNAi screen was USP28 (Figure 2\u2014figure supplement 1), a nuclear-localized deubiquitinase (Popov et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Popov et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "8df53b13-c3c3-46e2-aa78-58874de8a0a4",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C45",
+      "claim": "Knockdown of USP28 in DLD-1 cells substantially reduced ZNF304 protein but not mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the results with KRAS, knockdown of USP28 in DLD-1 cells substantially reduced ZNF304 protein (Figure 4A) but not mRNA (Figure 4B) levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data in Figure 4A and qRT-PCR data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "83a3f7c2-0f84-461c-9e4f-aa13f439012b",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C46",
+      "claim": "USP28 and ZNF304 were physically associated.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-immunoprecipitation experiment of Figure 4C shows that USP28 and ZNF304 were physically associated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "6e0ff63f-6c25-46be-b4b9-5c5c70b614f0",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C47",
+      "claim": "Co-transfection of DLD-1 cells with wild-type USP28, but not a catalytically inactive USP28(C171A) mutant, reduced ubiquitination of ZNF304.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, co-transfection of DLD-1 cells with wild-type USP28, but not a catalytically inactive USP28(C171A) mutant (Popov et al., 2007), reduced ubiquitination of ZNF304 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HA-ubiquitination pull-down assay data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "bcc561b4-c82f-4fc2-b5c0-96a4448a7923",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C48",
+      "claim": "shRNA-mediated knockdown or pharmacological inhibition of KRAS led to reduced levels of USP28 protein and mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, shRNA-mediated knockdown or pharmacological inhibition of KRAS led to reduced levels of USP28 protein (Figure 4E) and mRNA (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data in Figure 4E and qRT-PCR data in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "10c182ed-9e35-44f5-b143-4f017d78c695",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C49",
+      "claim": "The USP28 promoter contains two putative binding sites for the transcription factor cJUN.",
+      "claim_type": "EXPLICIT",
+      "source": "To gain insight into the basis of KRAS-mediated regulation of USP28 transcription, we performed bioinformatic analysis on the USP28 promoter and identified two putative binding sites for the transcription factor cJUN (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatic analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "82f48257-66ef-414e-8e58-a873698250ff",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C50",
+      "claim": "KRAS increases cJUN activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, previous studies have shown that KRAS increases cJUN activity (Mechta et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Mechta et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "96d709bf-16f2-415a-8f93-b7a4834cd618",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C51",
+      "claim": "In DLD-1 cells, cJUN was bound to the USP28 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "The ChIP results of Figure 4G show, consistent with the bioinformatic prediction, that in DLD-1 cells cJUN was bound to the USP28 promoter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "055f9376-4c11-43e8-9ecb-472410ca6560",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C52",
+      "claim": "Knockdown of cJUN resulted in decreased expression of USP28 and derepression of p14ARF, p15INK4B, and p16INK4A.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, knockdown of cJUN (Figure 4\u2014figure supplement 2A) resulted in decreased expression of USP28 (Figure 4H, Figure 4\u2014figure supplement 2B) and derepression of p14ARF, p15INK4B, and p16INK4A (Figure 4I, Figure 4\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figures 4H and 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "228ac475-29e9-406c-8ca3-cf87242bb456",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C53",
+      "claim": "cJUN is responsible, at least in part, for RAS-mediated transcriptional upregulation of USP28.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cJUN is responsible, at least in part, for RAS-mediated transcriptional upregulation of USP28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing cJUN binding to the USP28 promoter and effects of cJUN knockdown.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "e5d67dd6-350f-4561-a861-4f043965f4d3",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C54",
+      "claim": "USP28 contains two predicted phosphorylation sites for PRKD1.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, USP28 contains two predicted phosphorylation sites for PRKD1 (consensus sequence LxRxxS, [Nishikawa et al., 1997]; Figure 5A), a serine/threonine protein kinase (Johannes et al., 1994) isolated in our RNAi screen (Figure 2\u2014figure supplement 1) that is dysregulated in a variety of cancers (Sundram et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis shown in Figure 5A and citations to Nishikawa et al., 1997 and Johannes et al., 1994.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "ded90b9b-d51f-4759-9ef8-f30a673e88a3",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C55",
+      "claim": "shRNA-mediated knockdown of PRKD1 in DLD-1 cells resulted in decreased ZNF304 protein levels, whereas ZNF304 mRNA levels were not significantly affected.",
+      "claim_type": "EXPLICIT",
+      "source": "shRNA-mediated knockdown of PRKD1 in DLD-1 cells resulted in decreased ZNF304 protein levels (Figure 5B), whereas ZNF304 mRNA levels were not significantly affected (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data in Figure 5B and qRT-PCR data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "270a8dea-8adc-41f3-85b0-ea216c84a09f",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C56",
+      "claim": "Treatment of DLD-1 cells with the PRKD1 chemical inhibitor CRT0066101 resulted in decreased ZNF304 protein levels, derepression of p14ARF, p15INK4B, and p16INK4A, and loss of ZNF304, KAP1, SETDB1, and DNMT1 binding to the three promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, treatment of DLD-1 cells with a PRKD1 chemical inhibitor, CRT0066101 (Harikumar et al., 2010), also resulted in decreased ZNF304 protein levels (Figure 5D), derepression of p14ARF, p15INK4B, and p16INK4A (Figure 5E), and loss of ZNF304, KAP1, SETDB1, and DNMT1 binding to the three promoters (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data in Figure 5D, qRT-PCR data in Figure 5E, and ChIP data in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "afb8554a-2976-4781-ac62-19cf2ff9a1c3",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C57",
+      "claim": "PRKD1 protein and mRNA levels decreased following shRNA-mediated knockdown or pharmacological inhibition of KRAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the results with USP28, PRKD1 protein and mRNA levels decreased following shRNA-mediated knockdown or pharmacological inhibition of KRAS (Figure 5G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data in Figure 5G and qRT-PCR data in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "47bd729d-2f4d-415f-939c-d5d3417a0205",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C58",
+      "claim": "USP28 and PRKD1 were stably associated.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this possibility, we found that USP28 and PRKD1 were stably associated in a co-immunoprecipitation assay (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "73e6f16b-dafd-4e2e-b4a3-9c90d1c5180a",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C59",
+      "claim": "PRKD1 could phosphorylate a USP28 peptide containing the second, more conserved predicted phosphorylation site.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5J shows that PRKD1 could phosphorylate a USP28 peptide containing the second, more conserved predicted phosphorylation site (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro kinase assay data shown in Figure 5J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "ace23719-5e12-4602-84b2-fe8c05d7fb94",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C60",
+      "claim": "Unlike wild-type USP28, a USP28 derivative containing a mutation in the PRKD1 phosphorylation site, USP28(S899A), was unable to reduce ZNF304 ubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, unlike wild-type USP28, a USP28 derivative containing a mutation in the PRKD1 phosphorylation site, USP28(S899A), was unable to reduce ZNF304 ubiquitination (Figure 5K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HA-ubiquitination pull-down assay data shown in Figure 5K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "cd7221d3-8b3a-474a-ba04-469ef5430ced",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C61",
+      "claim": "Treatment with the PRKD1 inhibitor CRT0066101 prevented USP28 from reducing ubiquitination of ZNF304.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, treatment with the PRKD1 inhibitor CRT0066101 prevented USP28 from reducing ubiquitination of ZNF304 (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HA-ubiquitination pull-down assay data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "232d4111-f254-463a-b0bd-73bfd253985a",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C62",
+      "claim": "The PRKD1 promoter contains consensus binding sites for the intestine-specific transcription factor CDX1.",
+      "claim_type": "EXPLICIT",
+      "source": "To gain mechanistic insight into this process, we performed bioinformatic analysis on the PRKD1 promoter and identified consensus binding sites for the intestine-specific transcription factor CDX1 (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bioinformatic analysis shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "28904a17-90c4-48fc-8e50-dcd53e8719ea",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C63",
+      "claim": "KRAS positively regulates CDX1 activity through the mitogen-activated protein kinase pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, previous studies have shown that KRAS positively regulates CDX1 activity through the mitogen-activated protein kinase pathway (Lorentz et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lorentz et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "e0759f06-974b-455f-ad09-15b1b2efbae8",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C64",
+      "claim": "CDX1 was bound to the PRKD1 promoter in DLD-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The ChIP results of Figure 5L show, consistent with the bioinformatic prediction, that CDX1 was bound to the PRKD1 promoter in DLD-1 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 5L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "7ec332ed-476f-4177-8088-0c492f0edfcf",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C65",
+      "claim": "Knockdown of CDX1 resulted in decreased expression of PRKD1 and derepression of p14ARF, p15INK4B, and p16INK4A.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, knockdown of CDX1 (Figure 5\u2013figure supplement 4A) resulted in decreased expression of PRKD1 (Figure 5M, Figure 5\u2014figure supplement 4B) and derepression of p14ARF, p15INK4B, and p16INK4A (Figure 5N, Figure 5\u2014figure supplement 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figures 5M and 5N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "e45b75cb-0380-4e41-a5e0-01aeb3ddc448",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C66",
+      "claim": "CDX1 is responsible, at least in part, for RAS-mediated transcriptional upregulation of PRKD1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, CDX1 is responsible, at least in part, for RAS-mediated transcriptional upregulation of PRKD1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing CDX1 binding to the PRKD1 promoter and effects of CDX1 knockdown.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "b216317e-9795-42a9-aaa1-9f6d3b45ef3d",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C67",
+      "claim": "Approximately 70% of CRCs containing activated KRAS are CIMP-positive as defined by aberrant hypermethylation of a representative panel of \u223c50 CIMP marker genes.",
+      "claim_type": "EXPLICIT",
+      "source": "As stated above, approximately 70% of CRCs containing activated KRAS are CIMP-positive as defined by aberrant hypermethylation of a representative panel of \u223c50 CIMP marker genes (Yagi et al., 2010; Kaneda and Yagi, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yagi et al., 2010 and Kaneda and Yagi, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "9fa1d20c-d52e-45d0-82f6-0d33af5ac2e5",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C68",
+      "claim": "Knockdown of either KRAS or ZNF304 derepressed expression of all 50 CIMP marker genes analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, knockdown of either KRAS or ZNF304 derepressed expression of all 50 CIMP marker genes analyzed (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "1a662084-5060-4fa8-b1e7-932e32917654",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C69",
+      "claim": "Knockdown of either KRAS or ZNF304 derepressed VIM and SEPT9.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, knockdown of either KRAS or ZNF304 also derepressed VIM and SEPT9 (Figure 6\u2014figure supplement 1), whose DNA hypermethylation is used to diagnose CRC (Gyparaki et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "262bfea4-0768-4210-a22b-a418e0390f3b",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C70",
+      "claim": "shRNA-mediated knockdown of KRAS or ZNF304 decreased promoter hypermethylation of a representative subset of CIMP marker genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Bisulfite sequencing analysis of a representative subset of CIMP marker genes, which included p14ARF, p16INK4A and seven additional genes, revealed that shRNA-mediated knockdown of KRAS or ZNF304 also decreased promoter hypermethylation (Figure 2E, Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bisulfite sequencing data shown in Figure 2E and Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "20d16cf3-c8ab-40d3-8ba5-1f165d69b1ca",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C71",
+      "claim": "ChIP analysis showed significant enrichment of ZNF304, KAP1, SETDB1, and DNMT1 on the promoters of nine CIMP marker genes.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP analysis showed significant enrichment of ZNF304, KAP1, SETDB1, and DNMT1 on the promoters of the nine CIMP marker genes (Figures 2D and 6B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figures 2D and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "b6302287-cb43-4e54-bd0f-2fa4ef389161",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C72",
+      "claim": "Expression of nine CIMP marker genes was derepressed by the knockdown of the ZNF304 corepressors.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP analysis showed significant enrichment of ZNF304, KAP1, SETDB1, and DNMT1 on the promoters of the nine CIMP marker genes (Figures 2D and 6B), whose expression was also derepressed by the knockdown of the ZNF304 corepressors (Figures 2C and 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figures 2C and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "ad217aee-15a2-4071-843f-bffcd4143fb4",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C73",
+      "claim": "In CIMP-positive HCT116 and HCT15 CRC cells, ZNF304, KAP1, SETDB1, and DNMT1 were associated with the promoters of nine CIMP marker genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In CIMP-positive HCT116 and HCT15 CRC cells (Zheng et al., 2000; Figure 6\u2014figure supplement 3), ZNF304, KAP1, SETDB1, and DNMT1 were associated with the promoters of the nine CIMP marker genes (Figure 3\u2014figure supplement 2, Figure 6\u2014figure supplement 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 3\u2014figure supplement 2 and Figure 6\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "3062fff8-7cb5-4312-b313-b0ee49f4ba43",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C74",
+      "claim": "Expression of nine CIMP marker genes was derepressed by shRNA-mediated knockdown of ZNF304 or KRAS in HCT116 and HCT15 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In CIMP-positive HCT116 and HCT15 CRC cells (Zheng et al., 2000; Figure 6\u2014figure supplement 3), ZNF304, KAP1, SETDB1, and DNMT1 were associated with the promoters of the nine CIMP marker genes (Figure 3\u2014figure supplement 2, Figure 6\u2014figure supplement 4), whose expression was derepressed by shRNA-mediated knockdown of ZNF304 or KRAS (Figures 2A and 3A, Figure 6\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figures 2A, 3A, and Figure 6\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "fb3a7c58-4110-4183-85ca-29ff974a4661",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C75",
+      "claim": "ZNF304 was substantially enriched at the promoters of nine CIMP marker genes in KRAS-positive human CRC tumors relative to matched normal colon.",
+      "claim_type": "EXPLICIT",
+      "source": "The PAT-ChIP results of Figures 3I and 6D show that ZNF304 was substantially enriched at the promoters of the nine CIMP marker genes in KRAS-positive human CRC tumors relative to matched normal colon.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PAT-ChIP data shown in Figures 3I and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "c1b7213d-a871-413f-b506-cc958c2cb2ee",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C76",
+      "claim": "Bisulfite sequencing analysis confirmed promoter hypermethylation of representative CIMP marker genes in all KRAS-positive CRC tumor samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Bisulfite sequencing analysis of representative CIMP marker genes confirmed promoter hypermethylation in all KRAS-positive CRC tumor samples (Figure 6\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bisulfite sequencing data shown in Figure 6\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "d6147afd-b4d7-4a4f-b87d-da88f095deca",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C77",
+      "claim": "In undifferentiated H9 hESCs, ZNF304 was present at high levels, which markedly decreased following differentiation by retinoic acid treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The immunoblot results of Figure 7A show that in undifferentiated H9 hESCs, ZNF304 was present at high levels, which markedly decreased following differentiation by retinoic acid treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "f74020ff-8b4c-4679-a62b-d8cd7321ccd4",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C78",
+      "claim": "In undifferentiated H9 hESCs, ZNF304, KAP1, SETDB1, and DNMT1 were substantially enriched at the p14ARF, p15INK4B, and p16INK4A promoters, which was largely lost following differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in undifferentiated H9 hESCs ZNF304, KAP1, SETDB1, and DNMT1 were substantially enriched at the p14ARF, p15INK4B, and p16INK4A promoters (Figure 7B), which was largely lost following differentiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "b1d19b32-7c7d-4af4-8120-cf8c23e5d53d",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C79",
+      "claim": "Knockdown of ZNF304 in undifferentiated H9 hESCs resulted in decreased association of KAP1, SETDB1, and DNMT1 with the p14ARF, p15INK4B, and p16INK4A promoters and increased expression of p14ARF, p15INK4B, and p16INK4A.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, knockdown of ZNF304 in undifferentiated H9 hESCs (Figure 7\u2014figure supplement 1) resulted in decreased association of KAP1, SETDB1, and DNMT1 with the p14ARF, p15INK4B, and p16INK4A promoters (Figure 7C) and increased expression of p14ARF, p15INK4B, and p16INK4A (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data in Figure 7C and qRT-PCR data in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "8b3ea1da-49c9-4613-80df-c6161c1afe6a",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C80",
+      "claim": "In H9 hESCs, the p14ARF and p16INK4A promoters were not hypermethylated, unlike in DLD-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the bisulfite sequencing results of Figure 7E show that unlike DLD-1 cells, in H9 hESCs the p14ARF and p16INK4A promoters were not hypermethylated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bisulfite sequencing data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "0763af20-6fca-4270-8240-45d10fe327d3",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C81",
+      "claim": "There was substantial enrichment of H3K27me3 at the p14ARF, p15INK4B, and p16INK4A promoters in H9 hESCs, whereas in DLD-1 cells the level of H3K27me3 was substantially lower.",
+      "claim_type": "EXPLICIT",
+      "source": "The ChIP results of Figure 7F show substantial enrichment of H3K27me3 at the p14ARF, p15INK4B, and p16INK4A promoters in H9 hESCs, whereas in DLD-1 cells the level of H3K27me3 was substantially lower.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "b8733232-be44-4b9a-af73-a7f7eccb9a27",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C82",
+      "claim": "The level of H3K9me3 at the p14ARF, p15INK4B, and p16INK4A promoters was much higher in DLD-1 cells than in H9 hESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the level of histone H3 lysine 9 trimethylation (H3K9me3) at the p14ARF, p15INK4B, and p16INK4A promoters was much higher in DLD-1 cells than in H9 hESCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "ab6ff170-df76-4620-80db-87564f548f57",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C83",
+      "claim": "There was no significant enrichment of H3K4me3 at the p14ARF, p15INK4B, and p16INK4A promoters in either DLD-1 cells or H9 hESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, there was no significant enrichment of histone H3 lysine 4 trimethylation (H3K4me3), a mark associated with transcription activity, in either DLD-1 cells or H9 hESCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "995267df-324b-457c-aa7d-34cb4da1d864",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C84",
+      "claim": "In both H9 hESCs and DLD-1 cells, the PRC2 subunit EZH2 and the PRC1 subunit BMI1 were associated with the p14ARF, p15INK4B, and p16INK4A promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of Figure 7G show that in both H9 hESCs and DLD-1 cells, the PRC2 subunit EZH2 and the PRC1 subunit BMI1 were associated with the p14ARF, p15INK4B, and p16INK4A promoters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "dd82621b-a49e-472f-90ca-1fb58c8b138a",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C85",
+      "claim": "In both H9 hESCs and DLD-1 cells, knockdown of ZNF304 decreased binding of EZH2 and BMI1 to the p14ARF, p15INK4B, and p16INK4A promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 7H shows that in both H9 hESCs and DLD-1 cells, knockdown of ZNF304 decreased binding of EZH2 and BMI1 to the p14ARF, p15INK4B, and p16INK4A promoters, which, as expected, was accompanied by a loss of H3K27me3 (Figure 7I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 7H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "ca40b167-8ef9-4cd5-ba9c-45fd21aa73fb",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C86",
+      "claim": "In both H9 hESCs and DLD-1 cells, knockdown of ZNF304 resulted in decreased H3K9me3 and increased H3K4me3 at the p14ARF, p15INK4B, and p16INK4A promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, as expected, in both H9 hESCs and DLD-1 cells, the knockdown of ZNF304 resulted in decreased H3K9me3 and increased H3K4me3 at the p14ARF, p15INK4B, and p16INK4A promoters (Figure 7I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data shown in Figure 7I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "583fcc6f-e167-477d-a159-6bed23aa8e0b",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C87",
+      "claim": "Knockdown of EZH2 or BMI1 increased expression of p14ARF, p15INK4B, and p16INK4A in H9 hESCs but not in DLD-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, the knockdown of EZH2 or BMI1 (Figure 7\u2014figure supplement 2A,B) increased expression of p14ARF, p15INK4B, and p16INK4A in H9 hESCs but not in DLD-1 cells (Figure 7J, Figure 7\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 7J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "a805cb6f-ac7f-4266-91b4-72c72f58fcba",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C88",
+      "claim": "In a previous study, silencing of the Fas tumor suppressor in RAS-transformed NIH 3T3 cells requires ZFP354B, which like ZNF304 is a KRAB-ZFP protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study, we have found that silencing of the Fas tumor suppressor in RAS-transformed NIH 3T3 cells requires ZFP354B (Gazin et al., 2007), which like ZNF304 is a KRAB-ZFP protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gazin et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "9a81b434-6955-4002-b5f2-56150b764e19",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C89",
+      "claim": "Like ZNF304, ZFP354B levels are increased by activated RAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, like ZNF304, ZFP354B levels are increased by activated RAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "f0f127b3-e2f0-4d48-af75-5ad806867bb3",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C90",
+      "claim": "Expression of activated KRAS(G12V) in non-transformed WI-38 fibroblasts transcriptionally activated p14ARF, p15INK4B, and p16INK4.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, we found, as expected, that expression of activated KRAS(G12V) in non-transformed WI-38 fibroblasts transcriptionally activated p14ARF, p15INK4B, and p16INK4 (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "0350446b-2d0f-45c2-b9e8-8ab826898958",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C91",
+      "claim": "In WI-38 cells, KRAS failed to increase ZNF304 protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to the results in KRAS-positive CRC cell lines, in WI-38 cells KRAS failed to increase ZNF304 protein levels (Figure 8B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "a54f99b5-3b00-462d-ab87-fd6758f64e68",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "claim_id": "C92",
+      "claim": "In WI-38 cells, KRAS did not significantly stimulate USP28 and PRKD1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to the results in KRAS-positive CRC cell lines, in WI-38 cells KRAS failed to increase ZNF304 protein levels (Figure 8B) or significantly stimulate USP28 and PRKD1 transcription (Figure 8C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "10eca8b3-f571-4dec-8e72-fdda5c371c47",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "An RNAi screen using a p14ARF-BlastR reporter in DLD-1 cells identified eight genes whose knockdown resulted in derepression of endogenous p14ARF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 describe the establishment of a reporter system (C16, C17), the execution of a genome-wide shRNA screen (C18), and the identification of eight candidate genes (C19). The experimental design is sound, with appropriate validation using 5-aza-2'-deoxycytidine treatment and multiple independent shRNAs for each candidate. The data in Figures 1 and 2 support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "7e1ebf11-9037-4466-8725-cb8372440cd2",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ZNF304, a KRAB domain-containing zinc-finger protein, was identified as a key factor required for INK4-ARF silencing in DLD-1 cells. ZNF304 recruits a corepressor complex including KAP1, SETDB1, and DNMT1 to the INK4-ARF promoters, resulting in DNA hypermethylation and transcriptional silencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C20-C27 collectively demonstrate that ZNF304 is a pivotal factor for INK4-ARF silencing. The data show that ZNF304 knockdown derepresses all three INK4-ARF genes (C21), that known KRAB corepressors (KAP1, SETDB1) and DNMT1 are required for silencing (C23, C24), and that these factors bind to INK4-ARF promoters in a ZNF304-dependent manner (C25, C26). Bisulfite sequencing confirms DNA hypermethylation is reduced upon knockdown (C27). The mechanistic model is well-supported by converging lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "c4db216f-f42a-475f-aa67-32b70352d912",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Knockdown of ZNF304 or DNMT1 significantly suppressed tumor growth in mouse xenografts of DLD-1 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C29 demonstrate functional consequences of ZNF304 and DNMT1 knockdown in vivo. The tumor formation assay data in Figure 2F show statistically significant reduction in tumor growth. However, the sample size (n=3 mice per group) is relatively small, and no information is provided about tumor take rate or variability between animals. Despite these limitations, the result is supported by the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "0ec3758e-3ab6-492a-b79b-3c1af8a50190",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Activated KRAS promotes INK4-ARF silencing through post-transcriptional upregulation of ZNF304 protein levels. KRAS knockdown or pharmacological inhibition reduces ZNF304 protein but not mRNA levels, and this reduction can be counteracted by proteasome inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C39 establish that KRAS regulates ZNF304 at the post-transcriptional level. Multiple lines of evidence support this: genetic (shRNA) and pharmacological (manumycin A, PI3K inhibitors) KRAS inhibition all reduce ZNF304 protein (C35, C36) but not mRNA (C37), leading to loss of corepressor binding (C32, C34) and gene derepression (C31, C33). Proteasome inhibition rescues ZNF304 protein levels (C39), supporting a model of protein stabilization. The inference that regulation is post-transcriptional (C38) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "377b6399-60b5-400d-bc6c-ae589a5a73af",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The ZNF304-mediated silencing mechanism operates in multiple KRAS-positive CRC cell lines (HCT116, HCT15) and in human KRAS-positive CRC tumor samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 extend the findings beyond DLD-1 cells. ChIP data show ZNF304 and corepressor binding in HCT116 and HCT15 cells (C40), knockdown experiments confirm functional relevance (C41), and PAT-ChIP on human tumor samples demonstrates enrichment of ZNF304 at INK4-ARF promoters in tumors versus normal tissue (C42). Bisulfite sequencing confirms promoter hypermethylation in tumors (C43). The generalizability of the findings is well-supported, though the number of tumor samples analyzed is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "1f8c7063-6c81-41c1-b030-74ea836adbad",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "KRAS upregulates ZNF304 protein levels through transcriptional activation of USP28, a deubiquitinase that physically interacts with and stabilizes ZNF304. cJUN mediates KRAS-dependent transcriptional upregulation of USP28.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C53 establish a mechanistic link between KRAS and ZNF304 stabilization through USP28. The data show that USP28 knockdown reduces ZNF304 protein but not mRNA (C45), USP28 and ZNF304 physically interact (C46), wild-type but not catalytically inactive USP28 reduces ZNF304 ubiquitination (C47), and KRAS regulates USP28 at both protein and mRNA levels (C48). Bioinformatic prediction (C49), ChIP data (C51), and knockdown experiments (C52) support cJUN-mediated transcriptional regulation of USP28. The pathway is well-supported by multiple complementary experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "dd8897bd-2dd3-4990-ac91-725c3e2fd8a3",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PRKD1, a serine/threonine kinase, phosphorylates USP28 at S899, which is required for USP28-mediated stabilization of ZNF304. KRAS transcriptionally upregulates PRKD1 through CDX1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C66 establish PRKD1 as a regulator of USP28 activity. The data show that PRKD1 knockdown or inhibition reduces ZNF304 protein (C55, C56), KRAS regulates PRKD1 at both protein and mRNA levels (C57), PRKD1 and USP28 physically interact (C58), PRKD1 phosphorylates a USP28 peptide containing S899 in vitro (C59), and mutation of S899 or PRKD1 inhibition prevents USP28-mediated deubiquitination of ZNF304 (C60, C61). The CDX1-mediated transcriptional regulation of PRKD1 is supported by bioinformatic prediction (C62), ChIP (C64), and knockdown experiments (C65). The pathway is well-supported, though the in vitro kinase assay uses peptides rather than full-length protein.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "de00e3c8-91be-4ec5-a300-9505bad94f58",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The ZNF304-corepressor complex mediates CIMP in KRAS-positive CRCs. Knockdown of KRAS or ZNF304 derepresses all 50 CIMP marker genes analyzed, and ZNF304 and its corepressors are enriched at CIMP gene promoters in multiple CRC cell lines and human tumor samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C76 demonstrate that the ZNF304 pathway has broad effects on CIMP genes beyond INK4-ARF. The remarkable finding that all 50 CIMP marker genes are derepressed by KRAS or ZNF304 knockdown (C68) is supported by qRT-PCR data. ChIP data show ZNF304 and corepressor enrichment at a subset of CIMP gene promoters in cell lines (C71, C73) and human tumors (C75), and bisulfite sequencing confirms promoter hypermethylation (C70, C76). The generality of the mechanism across CIMP genes is well-supported, though only a subset of genes were analyzed by ChIP and bisulfite sequencing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "03d64c77-a761-4a26-ade7-d5bbe65769f3",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ZNF304 directs transcriptional silencing of INK4-ARF in human embryonic stem cells (H9 hESCs) through recruitment of the same corepressor complex, but the mechanism differs from CRC cells: in hESCs, silencing is mediated primarily by H3K27me3 and Polycomb complexes rather than DNA hypermethylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C87 demonstrate that ZNF304 functions in hESCs but through a different epigenetic mechanism. The data show that ZNF304 levels are high in undifferentiated hESCs and decrease upon differentiation (C77), ZNF304 and corepressors are enriched at INK4-ARF promoters (C78), and knockdown of ZNF304 reduces corepressor binding and increases gene expression (C79). Critically, bisulfite sequencing shows no DNA hypermethylation in hESCs (C80), while ChIP shows high H3K27me3 in hESCs versus high H3K9me3 in DLD-1 cells (C81, C82). ZNF304 recruits PRC1 and PRC2 in both cell types (C84, C85), but knockdown of EZH2 or BMI1 derepresses INK4-ARF only in hESCs (C87). This differential mechanism is well-supported and represents an important finding about context-dependent epigenetic regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "96591edb-6630-4838-8199-e3be67ce6e27",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In non-transformed WI-38 fibroblasts, activated KRAS transcriptionally activates INK4-ARF genes but fails to increase ZNF304 protein levels or significantly stimulate USP28 and PRKD1 transcription, explaining why KRAS does not silence INK4-ARF in primary cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C92 address an important question about why KRAS activates rather than silences INK4-ARF in primary cells. The data show that KRAS(G12V) expression in WI-38 cells activates INK4-ARF transcription (C90) but does not increase ZNF304 protein (C91) or USP28/PRKD1 mRNA (C92). This supports the model that the silencing pathway is specific to cancer cells. However, the mechanism underlying this differential response is not explored, and it remains unclear why the KRAS-USP28-PRKD1 pathway is not active in WI-38 cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "fbcef6d4-4737-492b-b497-eac09d4ad8fe",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims about CIMP, INK4-ARF locus, and its regulation in cancer and stem cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C15 provide background information about CIMP in CRCs, the INK4-ARF locus, and its regulation in various cell types. These claims are supported by citations to published literature and represent established knowledge in the field. The claims accurately represent the current understanding of CIMP and INK4-ARF regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    },
+    {
+      "id": "f8a62a7c-0913-4aea-ab98-a93aaf75d702",
+      "content_id": "5c370ed7-badf-4577-b1c5-8e28ac1628d8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims about KRAB domain proteins, USP28, and prior work on ZFP354B.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C44, C88, and C89 provide background information about KRAB domain protein function, USP28 as a deubiquitinase, and prior work showing that another KRAB-ZFP protein (ZFP354B) is involved in RAS-mediated silencing of the Fas tumor suppressor. These claims are supported by citations to published literature and provide relevant context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:16:36.668645Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2ae36108-fc60-47b3-bfc0-8f79250fcd93",
+      "result_id": "10eca8b3-f571-4dec-8e72-fdda5c371c47"
+    },
+    {
+      "claim_id": "23079089-4471-4f0a-bab4-ff1f4fad2b74",
+      "result_id": "10eca8b3-f571-4dec-8e72-fdda5c371c47"
+    },
+    {
+      "claim_id": "e0337ced-fdf2-4a9f-b6d2-0a8f0a1ce40a",
+      "result_id": "10eca8b3-f571-4dec-8e72-fdda5c371c47"
+    },
+    {
+      "claim_id": "b379ee78-c620-4f6c-8dfb-56693ce4d9a0",
+      "result_id": "10eca8b3-f571-4dec-8e72-fdda5c371c47"
+    },
+    {
+      "claim_id": "6d919dce-b414-4af5-8d37-fab0f8d45f92",
+      "result_id": "7e1ebf11-9037-4466-8725-cb8372440cd2"
+    },
+    {
+      "claim_id": "2bd52c13-ac7c-49be-b6ea-6f62d70c5f37",
+      "result_id": "7e1ebf11-9037-4466-8725-cb8372440cd2"
+    },
+    {
+      "claim_id": "795e9197-6cc3-4d06-9fac-f9edb06a4c90",
+      "result_id": "7e1ebf11-9037-4466-8725-cb8372440cd2"
+    },
+    {
+      "claim_id": "52b6ad8f-f335-4779-a54f-24494c1f7bd7",
+      "result_id": "7e1ebf11-9037-4466-8725-cb8372440cd2"
+    },
+    {
+      "claim_id": "284a9051-a618-4633-ad54-2f846a1cf852",
+      "result_id": "7e1ebf11-9037-4466-8725-cb8372440cd2"
+    },
+    {
+      "claim_id": "67573bf4-dabb-44b9-9294-a6af393cf063",
+      "result_id": "7e1ebf11-9037-4466-8725-cb8372440cd2"
+    },
+    {
+      "claim_id": "511fa765-3084-43e8-8391-32c824529098",
+      "result_id": "7e1ebf11-9037-4466-8725-cb8372440cd2"
+    },
+    {
+      "claim_id": "78f3adee-5fd2-4be8-9243-bd6b18e33e67",
+      "result_id": "7e1ebf11-9037-4466-8725-cb8372440cd2"
+    },
+    {
+      "claim_id": "bbd053c1-09fe-4328-ad08-ef3e27a9c5f6",
+      "result_id": "c4db216f-f42a-475f-aa67-32b70352d912"
+    },
+    {
+      "claim_id": "8eadc06b-af84-405a-aa77-cc8d45c1c337",
+      "result_id": "c4db216f-f42a-475f-aa67-32b70352d912"
+    },
+    {
+      "claim_id": "9b206d31-b47e-4c96-a0f4-38fdeaa6b52b",
+      "result_id": "0ec3758e-3ab6-492a-b79b-3c1af8a50190"
+    },
+    {
+      "claim_id": "4ec80b8b-6fcc-4066-982a-3087f631ef29",
+      "result_id": "0ec3758e-3ab6-492a-b79b-3c1af8a50190"
+    },
+    {
+      "claim_id": "8ca972d5-2ef9-4e94-ac15-32c372fbd85b",
+      "result_id": "0ec3758e-3ab6-492a-b79b-3c1af8a50190"
+    },
+    {
+      "claim_id": "47e0a2b6-34b1-4941-8a57-9f2709a238e5",
+      "result_id": "0ec3758e-3ab6-492a-b79b-3c1af8a50190"
+    },
+    {
+      "claim_id": "525bc5a8-0159-4300-a760-373e83c2acf3",
+      "result_id": "0ec3758e-3ab6-492a-b79b-3c1af8a50190"
+    },
+    {
+      "claim_id": "59630197-56e5-41ad-8fd6-ccfffc4c020e",
+      "result_id": "0ec3758e-3ab6-492a-b79b-3c1af8a50190"
+    },
+    {
+      "claim_id": "16831f25-6623-4094-84a3-dfd4d21fd1d9",
+      "result_id": "0ec3758e-3ab6-492a-b79b-3c1af8a50190"
+    },
+    {
+      "claim_id": "4421d90a-a99e-49c0-9c7c-1ab047c5d513",
+      "result_id": "0ec3758e-3ab6-492a-b79b-3c1af8a50190"
+    },
+    {
+      "claim_id": "f9b490b0-665f-4771-a95d-d2095c985f5b",
+      "result_id": "0ec3758e-3ab6-492a-b79b-3c1af8a50190"
+    },
+    {
+      "claim_id": "94735cb3-4638-4497-9f18-691b97b1f7fd",
+      "result_id": "0ec3758e-3ab6-492a-b79b-3c1af8a50190"
+    },
+    {
+      "claim_id": "6d82cc94-3a67-4524-8125-f9a78db11805",
+      "result_id": "377b6399-60b5-400d-bc6c-ae589a5a73af"
+    },
+    {
+      "claim_id": "2eb2c7c1-2cd0-45b5-9090-9209e5cbb0e3",
+      "result_id": "377b6399-60b5-400d-bc6c-ae589a5a73af"
+    },
+    {
+      "claim_id": "5ee73625-3cf3-4985-b340-dfe9057422f4",
+      "result_id": "377b6399-60b5-400d-bc6c-ae589a5a73af"
+    },
+    {
+      "claim_id": "4ca3ca43-8a07-4c08-98c8-957d38c45623",
+      "result_id": "377b6399-60b5-400d-bc6c-ae589a5a73af"
+    },
+    {
+      "claim_id": "5f7cd024-cf15-4e78-9f3a-139ad9b45aeb",
+      "result_id": "1f8c7063-6c81-41c1-b030-74ea836adbad"
+    },
+    {
+      "claim_id": "8df53b13-c3c3-46e2-aa78-58874de8a0a4",
+      "result_id": "1f8c7063-6c81-41c1-b030-74ea836adbad"
+    },
+    {
+      "claim_id": "83a3f7c2-0f84-461c-9e4f-aa13f439012b",
+      "result_id": "1f8c7063-6c81-41c1-b030-74ea836adbad"
+    },
+    {
+      "claim_id": "6e0ff63f-6c25-46be-b4b9-5c5c70b614f0",
+      "result_id": "1f8c7063-6c81-41c1-b030-74ea836adbad"
+    },
+    {
+      "claim_id": "bcc561b4-c82f-4fc2-b5c0-96a4448a7923",
+      "result_id": "1f8c7063-6c81-41c1-b030-74ea836adbad"
+    },
+    {
+      "claim_id": "10c182ed-9e35-44f5-b143-4f017d78c695",
+      "result_id": "1f8c7063-6c81-41c1-b030-74ea836adbad"
+    },
+    {
+      "claim_id": "82f48257-66ef-414e-8e58-a873698250ff",
+      "result_id": "1f8c7063-6c81-41c1-b030-74ea836adbad"
+    },
+    {
+      "claim_id": "96d709bf-16f2-415a-8f93-b7a4834cd618",
+      "result_id": "1f8c7063-6c81-41c1-b030-74ea836adbad"
+    },
+    {
+      "claim_id": "055f9376-4c11-43e8-9ecb-472410ca6560",
+      "result_id": "1f8c7063-6c81-41c1-b030-74ea836adbad"
+    },
+    {
+      "claim_id": "228ac475-29e9-406c-8ca3-cf87242bb456",
+      "result_id": "1f8c7063-6c81-41c1-b030-74ea836adbad"
+    },
+    {
+      "claim_id": "e5d67dd6-350f-4561-a861-4f043965f4d3",
+      "result_id": "dd8897bd-2dd3-4990-ac91-725c3e2fd8a3"
+    },
+    {
+      "claim_id": "ded90b9b-d51f-4759-9ef8-f30a673e88a3",
+      "result_id": "dd8897bd-2dd3-4990-ac91-725c3e2fd8a3"
+    },
+    {
+      "claim_id": "270a8dea-8adc-41f3-85b0-ea216c84a09f",
+      "result_id": "dd8897bd-2dd3-4990-ac91-725c3e2fd8a3"
+    },
+    {
+      "claim_id": "afb8554a-2976-4781-ac62-19cf2ff9a1c3",
+      "result_id": "dd8897bd-2dd3-4990-ac91-725c3e2fd8a3"
+    },
+    {
+      "claim_id": "47bd729d-2f4d-415f-939c-d5d3417a0205",
+      "result_id": "dd8897bd-2dd3-4990-ac91-725c3e2fd8a3"
+    },
+    {
+      "claim_id": "73e6f16b-dafd-4e2e-b4a3-9c90d1c5180a",
+      "result_id": "dd8897bd-2dd3-4990-ac91-725c3e2fd8a3"
+    },
+    {
+      "claim_id": "ace23719-5e12-4602-84b2-fe8c05d7fb94",
+      "result_id": "dd8897bd-2dd3-4990-ac91-725c3e2fd8a3"
+    },
+    {
+      "claim_id": "cd7221d3-8b3a-474a-ba04-469ef5430ced",
+      "result_id": "dd8897bd-2dd3-4990-ac91-725c3e2fd8a3"
+    },
+    {
+      "claim_id": "232d4111-f254-463a-b0bd-73bfd253985a",
+      "result_id": "dd8897bd-2dd3-4990-ac91-725c3e2fd8a3"
+    },
+    {
+      "claim_id": "28904a17-90c4-48fc-8e50-dcd53e8719ea",
+      "result_id": "dd8897bd-2dd3-4990-ac91-725c3e2fd8a3"
+    },
+    {
+      "claim_id": "e0759f06-974b-455f-ad09-15b1b2efbae8",
+      "result_id": "dd8897bd-2dd3-4990-ac91-725c3e2fd8a3"
+    },
+    {
+      "claim_id": "7ec332ed-476f-4177-8088-0c492f0edfcf",
+      "result_id": "dd8897bd-2dd3-4990-ac91-725c3e2fd8a3"
+    },
+    {
+      "claim_id": "e45b75cb-0380-4e41-a5e0-01aeb3ddc448",
+      "result_id": "dd8897bd-2dd3-4990-ac91-725c3e2fd8a3"
+    },
+    {
+      "claim_id": "b216317e-9795-42a9-aaa1-9f6d3b45ef3d",
+      "result_id": "de00e3c8-91be-4ec5-a300-9505bad94f58"
+    },
+    {
+      "claim_id": "9fa1d20c-d52e-45d0-82f6-0d33af5ac2e5",
+      "result_id": "de00e3c8-91be-4ec5-a300-9505bad94f58"
+    },
+    {
+      "claim_id": "1a662084-5060-4fa8-b1e7-932e32917654",
+      "result_id": "de00e3c8-91be-4ec5-a300-9505bad94f58"
+    },
+    {
+      "claim_id": "262bfea4-0768-4210-a22b-a418e0390f3b",
+      "result_id": "de00e3c8-91be-4ec5-a300-9505bad94f58"
+    },
+    {
+      "claim_id": "20d16cf3-c8ab-40d3-8ba5-1f165d69b1ca",
+      "result_id": "de00e3c8-91be-4ec5-a300-9505bad94f58"
+    },
+    {
+      "claim_id": "b6302287-cb43-4e54-bd0f-2fa4ef389161",
+      "result_id": "de00e3c8-91be-4ec5-a300-9505bad94f58"
+    },
+    {
+      "claim_id": "ad217aee-15a2-4071-843f-bffcd4143fb4",
+      "result_id": "de00e3c8-91be-4ec5-a300-9505bad94f58"
+    },
+    {
+      "claim_id": "3062fff8-7cb5-4312-b313-b0ee49f4ba43",
+      "result_id": "de00e3c8-91be-4ec5-a300-9505bad94f58"
+    },
+    {
+      "claim_id": "fb3a7c58-4110-4183-85ca-29ff974a4661",
+      "result_id": "de00e3c8-91be-4ec5-a300-9505bad94f58"
+    },
+    {
+      "claim_id": "c1b7213d-a871-413f-b506-cc958c2cb2ee",
+      "result_id": "de00e3c8-91be-4ec5-a300-9505bad94f58"
+    },
+    {
+      "claim_id": "d6147afd-b4d7-4a4f-b87d-da88f095deca",
+      "result_id": "03d64c77-a761-4a26-ade7-d5bbe65769f3"
+    },
+    {
+      "claim_id": "f74020ff-8b4c-4679-a62b-d8cd7321ccd4",
+      "result_id": "03d64c77-a761-4a26-ade7-d5bbe65769f3"
+    },
+    {
+      "claim_id": "b1d19b32-7c7d-4af4-8120-cf8c23e5d53d",
+      "result_id": "03d64c77-a761-4a26-ade7-d5bbe65769f3"
+    },
+    {
+      "claim_id": "8b3ea1da-49c9-4613-80df-c6161c1afe6a",
+      "result_id": "03d64c77-a761-4a26-ade7-d5bbe65769f3"
+    },
+    {
+      "claim_id": "0763af20-6fca-4270-8240-45d10fe327d3",
+      "result_id": "03d64c77-a761-4a26-ade7-d5bbe65769f3"
+    },
+    {
+      "claim_id": "b8733232-be44-4b9a-af73-a7f7eccb9a27",
+      "result_id": "03d64c77-a761-4a26-ade7-d5bbe65769f3"
+    },
+    {
+      "claim_id": "ab6ff170-df76-4620-80db-87564f548f57",
+      "result_id": "03d64c77-a761-4a26-ade7-d5bbe65769f3"
+    },
+    {
+      "claim_id": "995267df-324b-457c-aa7d-34cb4da1d864",
+      "result_id": "03d64c77-a761-4a26-ade7-d5bbe65769f3"
+    },
+    {
+      "claim_id": "dd82621b-a49e-472f-90ca-1fb58c8b138a",
+      "result_id": "03d64c77-a761-4a26-ade7-d5bbe65769f3"
+    },
+    {
+      "claim_id": "ca40b167-8ef9-4cd5-ba9c-45fd21aa73fb",
+      "result_id": "03d64c77-a761-4a26-ade7-d5bbe65769f3"
+    },
+    {
+      "claim_id": "583fcc6f-e167-477d-a159-6bed23aa8e0b",
+      "result_id": "03d64c77-a761-4a26-ade7-d5bbe65769f3"
+    },
+    {
+      "claim_id": "f0f127b3-e2f0-4d48-af75-5ad806867bb3",
+      "result_id": "96591edb-6630-4838-8199-e3be67ce6e27"
+    },
+    {
+      "claim_id": "0350446b-2d0f-45c2-b9e8-8ab826898958",
+      "result_id": "96591edb-6630-4838-8199-e3be67ce6e27"
+    },
+    {
+      "claim_id": "a54f99b5-3b00-462d-ab87-fd6758f64e68",
+      "result_id": "96591edb-6630-4838-8199-e3be67ce6e27"
+    },
+    {
+      "claim_id": "c07364bd-17ba-435d-8421-110da9798870",
+      "result_id": "fbcef6d4-4737-492b-b497-eac09d4ad8fe"
+    },
+    {
+      "claim_id": "e2903419-97f7-48ca-b83e-9f8753aa3f17",
+      "result_id": "fbcef6d4-4737-492b-b497-eac09d4ad8fe"
+    },
+    {
+      "claim_id": "32d549af-8954-4876-8460-57ad96a9a4cf",
+      "result_id": "fbcef6d4-4737-492b-b497-eac09d4ad8fe"
+    },
+    {
+      "claim_id": "75b696de-ed33-4077-a509-d5a7ac3c19e6",
+      "result_id": "fbcef6d4-4737-492b-b497-eac09d4ad8fe"
+    },
+    {
+      "claim_id": "5abec8b9-60e0-4b82-a816-070aa311cc36",
+      "result_id": "fbcef6d4-4737-492b-b497-eac09d4ad8fe"
+    },
+    {
+      "claim_id": "a0c2b888-6b25-4278-b016-c7c41e56ac32",
+      "result_id": "fbcef6d4-4737-492b-b497-eac09d4ad8fe"
+    },
+    {
+      "claim_id": "14d13123-a5ec-4bc4-8620-97cb963e2cef",
+      "result_id": "fbcef6d4-4737-492b-b497-eac09d4ad8fe"
+    },
+    {
+      "claim_id": "d15b3be8-aa80-443c-a096-7b5f97f17841",
+      "result_id": "fbcef6d4-4737-492b-b497-eac09d4ad8fe"
+    },
+    {
+      "claim_id": "8bffba1f-dde2-4208-8cfa-1dfe1e09aa54",
+      "result_id": "fbcef6d4-4737-492b-b497-eac09d4ad8fe"
+    },
+    {
+      "claim_id": "b3434fd0-2cea-4b19-9a34-8ef4ae06eebc",
+      "result_id": "fbcef6d4-4737-492b-b497-eac09d4ad8fe"
+    },
+    {
+      "claim_id": "07def4b5-f02f-4c84-a6b9-684605afa776",
+      "result_id": "f8a62a7c-0913-4aea-ab98-a93aaf75d702"
+    },
+    {
+      "claim_id": "5f7cd024-cf15-4e78-9f3a-139ad9b45aeb",
+      "result_id": "f8a62a7c-0913-4aea-ab98-a93aaf75d702"
+    },
+    {
+      "claim_id": "a805cb6f-ac7f-4266-91b4-72c72f58fcba",
+      "result_id": "f8a62a7c-0913-4aea-ab98-a93aaf75d702"
+    },
+    {
+      "claim_id": "9a81b434-6955-4002-b5f2-56150b764e19",
+      "result_id": "f8a62a7c-0913-4aea-ab98-a93aaf75d702"
+    }
+  ],
+  "comparisons": []
+}

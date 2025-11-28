@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "PRIME is a novel computational method that generates cell-specific genome-scale metabolic models (GSMMs) by integrating gene expression and phenotypic data. The method identifies genes significantly correlated with a phenotype of interest, then modifies reaction flux bounds according to gene expression levels within an effective flux range. More than 280 models were built for normal and cancer cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C19-C21 describe the PRIME algorithm's methodology, which is clearly documented in the methods section with mathematical formulations. Claims C2-C3 report the number of models built and their predictive success, which is supported by the experimental results presented throughout the manuscript. The algorithmic steps are logically sound and the implementation is described in sufficient detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Existing methods (iMAT and E-Flux) show limited performance in predicting proliferation rates for datasets with subtle gene expression differences. iMAT yielded insignificant or negative correlations for both HapMap (R=0.03, p=0.66) and NCI-60 (R=-0.07, p=0.59) datasets. E-Flux failed for HapMap (R=0.1-0.11, p>0.07) but succeeded for NCI-60 (R=0.43-0.44, p<3.6e-4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 present specific correlation coefficients and p-values comparing existing methods' performance. The high gene expression correlation (R>0.92) between samples is documented, and the performance metrics for iMAT and E-Flux are clearly reported with statistical significance values. These results provide the motivation for developing PRIME.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "PRIME successfully predicted proliferation rates for 224 HapMap lymphoblast cell lines with high significance (Spearman R=0.44, p=5.87e-12). The models correctly predicted population-level differences in proliferation rates (CEU<YRI<JPT<CHB) and maintained significance after five-fold cross-validation (mean R=0.26, p=0.007).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 present the core validation results for PRIME on normal cell lines. The correlation coefficients, p-values, and cross-validation results are clearly reported with appropriate statistical tests. The ability to predict both individual and population-level differences strengthens the validation. The cross-validation addresses potential overfitting concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "PRIME achieved highly significant correlations for NCI-60 cancer cell lines (Spearman R=0.69, p=1.22e-9), with cross-validation yielding R=0.56 (p=0.006). Tumor type-specific predictions were also significant (R=0.71, p=0.03). The higher performance for cancer versus normal cells is attributed to stronger correlation between metabolic gene expression and growth rate in the cancer dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 demonstrate PRIME's performance on cancer cell lines with appropriate statistical validation including cross-validation. The explanation for differential performance (C29) is supported by supplementary data. The tumor type-level predictions provide additional validation of the models' biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Control analyses validated PRIME's approach: modifying all enzyme-associated reactions decreased performance; random reaction sets yielded significantly inferior results (p<9.9e-4); and permutation tests confirmed the superiority of original predictions (p<9.9e-4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 present rigorous control analyses that validate PRIME's specific design choices. The permutation tests with 1000 iterations provide strong statistical evidence that the results are not due to chance. These controls address potential concerns about the specificity of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "PRIME successfully predicted drug responses for 12 out of 16 drugs tested (p<0.05), with permutation tests yielding highly significant results (p<9.9e-4). Partial correlation analysis controlling for proliferation rate maintained significant associations for HapMap and CEU datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 demonstrate PRIME's ability to predict drug responses beyond proliferation rates. The partial correlation analysis (C35) is particularly important as it shows that predictions are not solely driven by growth rate, addressing a potential confounding factor. The permutation tests provide appropriate statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "PRIME predicted uptake and secretion rates for 14 out of 33 metabolites with significant correlations (FDR-adjusted p<0.05), validated by permutation tests (p<9.9e-4). E-Flux models yielded insignificant results for all metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 provide additional validation of PRIME models through metabolite flux predictions. The use of FDR correction for multiple testing is appropriate. The comparison to E-Flux (C38) demonstrates PRIME's superior performance. The permutation test provides statistical rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "PRIME identified selective and non-selective drug targets. Non-selective targets were enriched for cytostatic drugs (p=7.28e-4). Selective targets included 3 of 5 metabolic targets from Cheong et al. (p=3.98e-4) and were enriched for genes associated with improved survival when downregulated (p=2.1e-5). MLYCD was identified as a top selective target, with E-Flux predicting <10% growth reduction for both cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 demonstrate PRIME's ability to identify clinically relevant drug targets. The enrichment analyses with appropriate statistical tests validate the predictions against known drug targets and clinical outcomes. The comparison to E-Flux (C43) highlights PRIME's advantage in identifying selective targets. The Cox multivariate regression analysis controlling for clinical variables strengthens the survival association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C73"
+    ],
+    "result": "MLYCD was experimentally validated as a selective cancer target. siRNA-mediated silencing significantly inhibited proliferation of leukemia cell lines (RPMI-8226, K562) and renal cancer cell lines (TK-10, CAKI-1) but had no effect on normal HapMap cells or non-transformed renal cells (HK-2). The selectivity could not be explained by differential MLYCD expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48, C73 provide experimental validation of PRIME's top prediction across multiple cancer types. The experiments include appropriate controls (normal cell lines) and multiple independent siRNA constructs. The observation that selectivity is not explained by expression levels (C48) is important for understanding the mechanism. Statistical significance is reported with appropriate error bars.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "MLYCD depletion reduces fatty acid oxidation in cancer cells. Isotope tracing with 13C16-palmitate showed significant decreases in 13C-labeling of palmitoyl-carnitine and m+2 isotopologues of TCA cycle intermediates, consistent with prior reports that MLYCD depletion leads to malonyl-CoA accumulation and CPT1 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 provide mechanistic insights into MLYCD function using isotope tracing. The experimental design is appropriate, and the results are consistent with prior literature (C49). The interpretation that fatty acid oxidation is reduced (C52) is well-supported by the isotope labeling data (C50-C51). Statistical significance is indicated in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "MLYCD-depleted cells showed striking accumulation of succinate and decreases in fumarate and malate, consistent with inhibition of succinate dehydrogenase (SDH), potentially caused by malonyl-CoA-derived malonate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 presents clear metabolite abundance data, but C54's interpretation that this is consistent with SDH inhibition is speculative. While the metabolite pattern is consistent with SDH inhibition, no direct measurement of SDH activity is provided, and the proposed mechanism involving malonate is not experimentally validated. The claim uses cautious language ('may be caused by') but lacks direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "PRIME models predicted that MLYCD suppression diverts malonyl-CoA to fatty acid biosynthesis. Isotope tracing with 13C6-glucose showed significantly increased m+4 and m+6 palmitate isotopologues in MLYCD-depleted cells, indicating accelerated fatty acid synthesis despite slightly decreased citrate labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 demonstrate successful experimental validation of a PRIME model prediction. The isotope tracing experiment with 13C6-glucose is appropriately designed to test fatty acid synthesis. The observation of increased palmitate labeling (C56) despite decreased citrate labeling provides strong evidence for accelerated fatty acid synthesis (C57). Statistical significance is indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "MLYCD depletion increases pentose phosphate pathway (PPP) flux and impairs redox homeostasis. MLYCD-depleted cells showed increased PPP flux (as predicted by PRIME), lower GSH/GSSG ratio, and proliferation defects that were fully restored by N-acetyl-cysteine (NAC), suggesting that cancer cell suppression depends on aberrant fatty acid synthesis activation leading to reduced redox homeostasis maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 provide a comprehensive mechanistic explanation for MLYCD's selective effects. The PPP flux measurement (C58) validates another PRIME prediction. The GSH/GSSG ratio (C59) provides direct evidence of redox stress. The NAC rescue experiment (C60) is a critical functional validation that establishes causality. The mechanistic conclusion (C61) is well-supported by the integrated data, though the language appropriately uses 'at least in part' to acknowledge complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "PRIME successfully predicted differential effects of gene knockdowns on breast cancer cell growth. 11 of 13 tested genes showed predicted effects (empiric p<0.01), with significant correlation between predicted and measured inhibition values (Spearman R=0.64, p=1e-3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 demonstrate PRIME's ability to predict cell-specific responses beyond the MLYCD validation. The 85% success rate (11/13) is substantial, and the correlation between predicted and measured effects provides quantitative validation. The empiric p-value from permutation testing is appropriate. This extends PRIME's utility beyond identifying selective targets to predicting differential responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "PRIME successfully inferred cancer patient prognosis using models built from NCI-60-derived growth-associated genes. Patients with predicted low growth rates showed significantly improved survival in breast cancer (logrank p=0.01, 1e-3) and lung cancer (p=0.02) datasets, supported by Cox univariate analysis (p=1e-3, 1e-4, 2e-3). Multiple linear regression and existing methods (iMAT, E-Flux) showed inferior performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 demonstrate PRIME's translational potential for patient stratification. The survival analyses use appropriate statistical methods (Kaplan-Meier, Cox regression) and are validated across multiple independent datasets. The comparison to alternative approaches (C67-C68) strengthens the conclusions. However, the signal is acknowledged as 'mild' in the discussion, and the approach of transferring growth-associated genes from cell lines to patients requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "PRIME is claimed to be the first method able to generate human cell-specific GSMMs that can predict metabolic phenotypes in an individual manner, including growth rates and drug response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 asserts novelty based on the results presented. The claim is supported by the demonstrated ability to predict individual cell phenotypes (growth rates, drug responses, metabolite fluxes) and the comparison showing superior performance to existing methods (iMAT, E-Flux). The qualifier 'to the best of our knowledge' is appropriate. The integration of phenotypic data with expression data to build individual models is a key distinguishing feature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "PRIME has several acknowledged limitations: it assumes cells maximize proliferation (inappropriate for non-proliferating cells), assumes all models share the same enzymes differing only in abundance (ignoring coding variants), and requires phenotypic measurements that are not always available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 explicitly state limitations of PRIME in the discussion. These are reasonable and important caveats that appropriately qualify the method's applicability. The authors acknowledge these limitations transparently, which is scientifically appropriate. These limitations suggest directions for future improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "While MLYCD loss in humans causes methylmalonic aciduria (a rare autosomal recessive disorder), prior studies in rodents, pigs, human skeletal muscle, and non-transformed fibroblasts suggest MLYCD inhibition is well tolerated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 address the clinical safety concern for MLYCD as a drug target. C74 states a known clinical fact, and C75 cites multiple prior studies suggesting tolerability. However, the apparent contradiction between the severe human genetic disorder and the tolerability studies is not fully resolved. The discussion suggests other factors may contribute to the disorder's severity, but this remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript provides background on personalized medicine in cancer, the development of human genome-scale metabolic models, and limitations of existing context-specific modeling methods that motivated PRIME's development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 provide literature context and motivation for the study. These claims are appropriately cited and accurately represent the state of the field. The identification of limitations in existing methods (C11-C12, C14) provides clear motivation for developing PRIME. These are standard background claims that frame the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The main conclusion is that incorporating gene expression and phenotypic data within a genome-scale metabolic model via PRIME results in functional cell-specific models with considerable predictive power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 summarizes the overall conclusion based on the comprehensive results presented. This conclusion is well-supported by the multiple lines of evidence: successful prediction of proliferation rates, drug responses, metabolite fluxes, experimental validation of MLYCD, and patient prognosis inference. The qualifier 'considerable' is appropriate given the demonstrated performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The methods section describes the mathematical framework for constraint-based metabolic modeling, data sources, and simulation approaches used in the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 describe standard methodological details that are appropriately documented and cited. These include the mathematical representation of metabolic networks (C77-C78), specific model components used (C79-C80), simulation methods (C81), and data sources (C82-C84). These methodological claims are factual and verifiable.",
+    "result_type": "MINOR"
+  }
+]

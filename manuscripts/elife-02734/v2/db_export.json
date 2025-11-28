@@ -1,0 +1,1762 @@
+{
+  "submission": {
+    "id": "ee2288a0-2ca4-4515-a0f7-17848f308efa",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:49:41.789888Z",
+    "updated_at": "2025-11-28T20:49:41.789888Z"
+  },
+  "content": [
+    {
+      "id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "submission_id": "ee2288a0-2ca4-4515-a0f7-17848f308efa",
+      "content_type": "manuscript",
+      "content_text": "# Loss of the multifunctional RNA-binding protein RBM47 as a source of selectable metastatic traits in breast cancer\n\n## Authors\n\n- Sakari Vanharanta<sup>1</sup>\n- Christina B Marney<sup>3</sup>\n- Weiping Shu<sup>1</sup>\n- Manuel Valiente<sup>1</sup>\n- Yilong Zou<sup>1</sup>\n- Aldo Mele<sup>3</sup>\n- Robert B Darnell<sup>3</sup> \u2020\n- Joan Massagu\u00e9<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Cancer Biology and Genetics Program Memorial Sloan-Kettering Cancer Center New York United States\n2. MRC Cancer Unit University of Cambridge Cambridge United Kingdom\n3. Laboratory of Molecular Neuro-Oncology The Rockefeller University New York United States\n4. Howard Hughes Medical Institute, The Rockefeller University New York United States\n5. Howard Hughes Medical Institute, Memorial Sloan-Kettering Cancer Center New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe mechanisms through which cancer cells lock in altered transcriptional programs in support of metastasis remain largely unknown. Through integrative analysis of clinical breast cancer gene expression datasets, cell line models of breast cancer progression, and mutation data from cancer genome resequencing studies, we identified RNA binding motif protein 47 (RBM47) as a suppressor of breast cancer progression and metastasis. RBM47 inhibited breast cancer re-initiation and growth in experimental models. Transcriptome-wide HITS-CLIP analysis revealed widespread RBM47 binding to mRNAs, most prominently in introns and 3\u2032UTRs. RBM47 altered splicing and abundance of a subset of its target mRNAs. Some of the mRNAs stabilized by RBM47, as exemplified by dickkopf WNT signaling pathway inhibitor 1, inhibit tumor progression downstream of RBM47. Our work identifies RBM47 as an RNA-binding protein that can suppress breast cancer progression and demonstrates how the inactivation of a broadly targeted RNA chaperone enables selection of a pro-metastatic state.\n\n## Introduction\n\nCancers arise through an evolutionary process that feeds from stochastic genetic alterations and selection (Vogelstein et al., 2013). The identities of the alterations that get selected for are rapidly coming to light through large-scale resequencing efforts. For example, several independent studies have characterized the mutational complement of breast cancer, one of the most common human malignancies (Shah et al., 2009; Stephens et al., 2009; Ding et al., 2010; Banerji et al., 2012; Cancer Genome Atlas Network, 2012; Shah et al., 2012; Stephens et al., 2012). Besides confirming previously known cancer genes, such as TP53 and PIK3CA, most studies also report a long tail of rarely mutated genes. While many of these mutations are likely to be passenger events, some of them are potential mediators of tumor phenotypes. How to identify such low-frequency driver mutations remains a challenge.\n\nIn addition to mutations that directly promote tumorigenesis through specific alterations in cell signaling and repair pathways, many aberrations found in cancers do not affect cell signaling pathways directly, but rather, they support the stabilization of altered transcriptomic profiles that facilitate the emergence of pro-tumorigenic and metastatic traits. Mutations in epigenetic regulators fall into this category (Shen and Laird, 2013). The phenotypic output of such alterations would depend on the activity of already existing signaling processes. Indeed, examples of epigenetic alterations that result in a phenotypic trait in the presence of a specific transcriptional program have been described (Vanharanta et al., 2013). Analogously, aberrations in the multi-step mRNA processing and turnover cascade (Moore and Proudfoot, 2009) could also lock in aberrant transcriptomic states.\n\nPrecise regulation of RNA metabolism is fundamental in the generation of biological complexity in both normal and disease states (Sharp, 2009; Licatalosi and Darnell, 2010). The concerted action of multiple RNA binding proteins (RBPs) regulate the spatial, temporal and functional dynamics of the transcriptome via alternative splicing, alternative polyadenylation and transcript stability (Moore and Proudfoot, 2009). While malignancy-associated dysregulation of RNA metabolism via aberrant microRNA expression is relatively well established (Di Leva et al., 2013; Pencheva and Tavazoie, 2013), a growing body of evidence indicates a prominent role also for RBPs in both the development and progression of cancer. For example, upregulation of the splicing regulator SRSF1 is associated with multiple tumor types (Karni et al., 2007), and is necessary for the oncogenic activity of MYC in lung cancer (Das et al., 2012). Conversely, RBM5 has been shown to be tumor suppressive in several cancer models (Oh et al., 2002; Mourtada-Maarabouni et al., 2006; Oh et al., 2006).\n\nWe hypothesized that combining cancer genome resequencing data with gene expression information from both clinical data sets and experimental model systems of metastasis would allow the identification of rarely mutated cancer genes with potential functional significance. This approach identified RNA binding motif protein 47 (RBM47) as a suppressor of breast cancer progression. By analyzing the transcriptome-wide RBM47 binding patterns we demonstrate that RBM47, a previously uncharacterized RNA-binding protein, modulates mRNA splicing and stability. Loss of RBM47 function thus provides a specific example of the power of global RNA modulatory events in the selection of pro-metastatic phenotypic traits.\n\n## Results\n\n### RBM47 inactivation associated with breast cancer progression\n\nWe combined gene expression data from triple negative metastatic breast cancer models (Minn et al., 2005; Bos et al., 2009) and a cohort of 368 untreated clinical breast cancer cases (Minn et al., 2005; Wang et al., 2005) with mutational data from a brain metastasis that originated from a basal breast cancer (Ding et al., 2010; Figure 1A). Specifically, we looked for genes that had reduced mRNA expression in functionally metastatic cancer cells, evidence for low mRNA expression associated with poor patient outcome in clinical samples, and an enriched mutation in the brain metastasis sequenced by Ding et al. (2010). RBM47, a gene encoding a previously uncharacterized putative RNA-binding protein was the only one that fulfilled all these criteria (Baltz et al., 2012; Castello et al., 2012; Ray et al., 2013). We confirmed the lower expression of RBM47 mRNA in the highly metastatic cells (Figure 1B). This translated into a comparable difference at the protein level (Figure 1C). In the clinical data sets, low RBM47 mRNA expression was significantly associated with relapse to brain and lung (Figure 1D,E) but not to bone (Figure 1F). In multivariate analysis combining RBM47 expression with estrogen, progesterone and HER2 receptor status (ER, PR and HER2), the association with brain metastasis remained statistically significant (Figure 1\u2014figure supplement 1A). We further characterized the expression patterns of RBM47 in the TCGA cohort of 748 breast cancer samples studied by RNA-seq (Cerami et al., 2012; Cancer Genome Atlas Network, 2012). We found that low RBM47 expression was significantly associated with claudin-low and basal breast cancers (Figure 1G), two subtypes of poor prognosis (Smid et al., 2008; Lu et al., 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02734/elife-02734-fig1-v2.jpg)\n\n**Figure 1.:** (A) A schematic of the analytical approach. Genes identified as mutated in a breast cancer brain metastasis by Ding et al. (2010) where compared to metastasis-associated gene expression traits in both clinical data sets and experimental model systems. This identified RBM47 as a putative breast cancer suppressor gene. (B) RBM47 mRNA expression measured by quantitative real-time RT-PCR in two cell line systems of breast cancer metastasis. In both panels, the data are normalized to the parental cell line (Par). Error bars represent 95% confidence intervals obtained from multiple PCR reactions. LM, lung metastatic derivative; BoM, bone metastatic derivative; BrM, brain metastatic derivative. (C) RBM47 protein expression measured by Western blotting. Samples as in (B). Tubulin used as a loading control. (D) Brain metastasis free survival in a cohort of 368 untreated breast cancer patients. Cases classified based on RBM47 mRNA expression, bottom 1/3 in blue, top 2/3 in red. p-value derived from a Cox proportional hazards model using RBM47 expression as a continuous variable. (E) Lung metastasis free survival in a cohort of 368 untreated breast cancer patients. Cases classified based on RBM47 mRNA expression, bottom 1/3 in blue, top 2/3 in red. p-value derived from a Cox proportional hazards model using RBM47 expression as a continuous variable. (F) Bone metastasis free survival in a cohort of 368 untreated breast cancer patients. Cases classified based on RBM47 mRNA expression, bottom 1/3 in blue, top 2/3 in red. p-value derived from a Cox proportional hazards model using RBM47 expression as a continuous variable.(G) RBM47 expression as measured by RNA-seq in the TCGA data set of 748 patients. Samples grouped based on breast cancer molecular subtype: luminal A, luminal B, Her2 positive, claudin low and basal. RBM47 expression is lower in claudin low and basal subtypes, both of which are associated with poor patient outcome. (H) A schematic showing the predicted protein structure of RBM47, its closest homologue A1CF, a known RNA-binding protein, and the predicted structure of RBM47I281fs mutant. Blue diamonds represent RRM motifs, pink rectangle represents a truncated RRM motif.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02734/elife-02734-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Multivariate Cox proportional hazards models for both brain and lung metastasis free survival in a cohort of 368 untreated breast cancer patients. The model incorporates RBM47 expression as a continuous variable, estrogen receptor (ER) expression, progesterone receptor (PR) expression and Her2 expression. (B) A list of protein-altering RBM47 breast cancer mutations in the Catalogue of Somatic Mutations in Cancer database (COSMIC, http://cancer.sanger.ac.uk/cancergenome/projects/cosmic/) as of June 2013. (C) Percentage of genetic alterations, non-synonymous mutations or homozygous deletions, in RBM47 in the TCGA cohort of 748 breast cancers classified based on molecular subtypes: luminal A, luminal B, Her2 positive, claudin low and basal. A significant enrichment is observed in the basal subtype (p=0.00015, Fisher's exact test).\n\nThe RBM47I281fs mutation first reported in a brain metastasis truncates the protein from the third RNA recognition motif (RRM) onwards (Figure 1H). As this mutation was already present in a minority subpopulation of the corresponding primary tumor (Ding et al., 2010), we looked for additional evidence of genetic RBM47 aberrations in primary breast cancer cohorts. The catalogue of somatic mutations in cancer (COSMIC) database (Forbes et al., 2010) reported 9 non-synonymous mutations in RBM47, three of which were frameshift mutations truncating one or more of the RRM domains (Figure 1\u2014figure supplement 1B). Furthermore, analysis of the data from the TCGA cohort revealed that in basal breast cancer, RBM47 was targeted by a mutation or homozygous deletion in \u223c8% of the cases (Figure 1\u2014figure supplement 1C). Moreover, heterozygous loss of the RBM47 locus was present in 30% of the TCGA cohort (Cerami et al., 2012). These correlative analyses of multiple different breast cancer data sets, both experimental systems and large clinical patient cohorts, suggested that reduced expression or function of RBM47 is associated with breast cancer progression already within primary tumors, and that clones with reduced RBM47 function may display enhanced lung and brain metastatic fitness.\n\n### RBM47 suppresses breast cancer progression\n\nIn order to test the role of RBM47 as a suppressor of breast cancer progression, we stably introduced both wild type RBM47 and RBM47I281fs in the lung metastatic (LM2) and brain metastatic (BrM2) derivatives of the MDA-MB-231 triple negative breast cancer cells (MDA231 for short), respectively (Figure 2\u2014figure supplement 1A; Minn et al., 2005; Bos et al., 2009). Of note, despite robust mRNA expression, the mutant RBM47I281fs protein levels were low, indicating that the mutant protein was unstable and therefore inactive (Figure 2\u2014figure supplement 1B). As determined by in vivo bioluminescence in experimental metastasis assays, wild type RBM47 inhibited lung colonization by the MDA231-LM2 cells, when compared to RBM47I281fs (Figure 2A\u2013B). Similarly, we observed extended brain metastasis free survival in mice inoculated with the MDA231-BrM2 cells expressing RBM47 when compared to those expressing RBM47I281fs (Figure 2C). This difference translated into reduced brain metastatic burden as determined by ex vivo imaging (Figure 2D,E, Figure 2\u2014figure supplement 1C). We then tested the effects of inhibiting endogenous RBM47 in the metastatic colonization of the parental MDA231 cells. With comparable effects of RBM47 re-expression seen in both the lung and brain metastasis models (Figure 2A,E), we chose the lung colonization assay for loss-of-function studies as this allowed the simultaneous analysis of a greater number of tumor re-initiation events. Two RBM47-targeting shRNA constructs significantly shortened the lung metastasis free survival in mice when compared to controls (Figure 2F, Figure 2\u2014figure supplement 1D), as determined by bioluminescence imaging (Figure 2G,H). This result was confirmed with a second more indolent cancer cell clone (Figure 2\u2014figure supplement 1E\u2013G).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02734/elife-02734-fig2-v2.jpg)\n\n**Figure 2.:** (A) Normalized lung photon flux in mice after tail vein inoculation of MDA231-LM2 cells expressing either wild type RBM47 or RBM47I281fs. p-value calculated utilizing repeated measures two-way ANOVA. N = 6 for RBM47I281fs, N = 8 for RBM47. (B) Representative bioluminescence images from the experiment shown in (A). The color scale shows bioluminescence (photons/second). (C) Brain metastasis free survival as determined by in vivo bioluminescence imaging in mice after intracardiac inoculation of MDA231-BrM2 cells expressing either wild type RBM47 or RBM47I281fs. p-value calculated using the log-rank test. N = 9 for RBM47I281fs, N = 7 for RBM47. (D) Representative bioluminescence images from the experiment shown in (C). The color scale shows bioluminescence (photons/second). (E) Ex vivo quantification of bioluminescence from brain metastases on day 42 of the experiment shown in panel (C). P-value calculated by two-tailed Student's t test. (F) Lung metastasis free survival as determined by in vivo bioluminescence imaging in mice after tail vein inoculation of parental MDA231 cells expressing either control vector (pGIPZ) or hairpins against RBM47 (shRNA1 and shRNA2). p-values calculated using the log-rank test. N = 8 for Ctrl group, N = 6 for shRNA1, N = 5 for shRNA2. (G) In vivo bioluminescence imaging on day 36 of the experiment shown in (F) demonstrates earlier emergence of detectable lung metastasis for the RBM47 knockdown groups when compared to the control animals. The color scale shows bioluminescence (photons/second). (H) Quantification of bioluminescence for the time point shown in (G). Data normalized to signal on day 0 for each animal. p-value calculated using the Wilcoxon rank-sum test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02734/elife-02734-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) RBM47 mRNA expression measured by quantitative real-time RT-PCR in 231-BrM2 and 231-LM2 cells transduced with either wild type RBM47 or RBM47I280fs-expressing cDNA constructs, respectively. The data are normalized to the untransduced control cell lines. Error bars represent 95% confidence intervals obtained from multiple PCR reactions. (B) Flag-RBM47 protein expression determined by Western blotting in non-clonal 231BrM2 tet-on Flag-RBM47 cells. No RBM47 or Flag protein is detected in the cells expressing Flag-RBM47I281fs (predicted size 34 kDa) treated with the same doxycycline doses. (C) Quantification of bioluminescence from the head of mice on day 0 of the experiment shown in Figure 2C. p-value calculated by two-tailed Student's t test. (D) RBM47 mRNA and protein expression measured by quantitative real-time RT-PCR and Western blotting, respectively, in parental MDA-231 cells expressing either control vector (pGIPZ) or hairpins against RBM47 (shRNA1 and shRNA2). Error bars represent 95% confidence intervals obtained from multiple PCR reactions. Tubulin used as a protein loading control. (E) RBM47 mRNA and protein expression measured by quantitative real-time RT-PCR and Western blotting, respectively, in parental CN34 cells expressing either control vector (pGIPZ) or hairpins against RBM47 (shRNA1 and shRNA2). Error bars represent 95% confidence intervals obtained from multiple PCR reactions. Tubulin used as a protein loading control. (F) Quantification of lung metastatic burden on day 0 by in vivo bioluminescence imaging in mice after tail vein inoculation of parental CN34 cells expressing either control vector (pGIPZ) or hairpins against RBM47 (shRNA1 and shRNA2). p-values calculated using two-sided Student's t test. N = 5 for all groups. (G) Quantification of lung metastatic burden on day 141 by in vivo bioluminescence imaging in mice after tail vein inoculation of parental CN34 cells expressing either control vector (pGIPZ) or hairpins against RBM47 (shRNA1 and shRNA2). p-values calculated using two-sided Student's t test. N = 4 for Ctrl group, N = 5 for shRNA1, N = 4 for shRNA2.\n\n### Clonal heterogeneity in RBM47 sensitivity\n\nThe initial functional experiments suggested that the tumor suppressive effect of RBM47 on the overall population of metastatic cancer cells was modest. This could reflect either weak tumor suppressive function of RBM47 in general, heterogeneity in the sensitivity to RBM47 among different cancer cell subpopulations, or in the case of RBM47 reintroduction, loss of transgene expression. In order to distinguish between these possibilities, we used immunohistochemistry to assess RBM47 expression in the lung nodules formed either by wild type RBM47 or RBM47I281fs expressing cells. This revealed that some cancer clones were able to form robust lung metastasis even in the presence of RBM47 (Figure 3A, Figure 3\u2014figure supplement 1A), but that many of the metastases formed after the inoculation of wild type RBM47-expressing cells had avoided or suppressed the expression of RBM47 (Figure 3B, Figure 3A\u2014figure supplement 1A). As expected, the RBM47I281fs-expressing tumors contained only weakly staining cancer cells intermingled with small cells with strong RBM47 expression (Figure 3C), similar to those seen in normal lung parenchyma (Figure 3D). The rate of proliferation as determined by Ki67 immunohistochemistry did not correlate with the level of RBM47 expression (Figure 3\u2014figure supplement 1A). This was in line with the idea that some clones were more sensitive to RBM47 than others, but also that a strong selective pressure led metastatic cells to lose RBM47, a finding consistent with the initial observation of RBM47 loss in metastatic cell populations (Figure 1C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02734/elife-02734-fig3-v2.jpg)\n\n**Figure 3.:** (A) A lung metastatic nodule with strong RBM47 expression in a mouse inoculated with RBM47-transduced MDA231-LM2 cells. RBM47 protein expression detected by immunohistochemistry using an antibody against RBM47. (B) A lung metastatic nodule with weak RBM47 expression in a mouse inoculated with RBM47-transduced MDA231-LM2 cells. RBM47 protein expression detected by immunohistochemistry. Note the clearly reduced staining when compared to panel (A). (C) A lung metastatic nodule with weak RBM47 expression in a mouse inoculated with RBM47I280fs-transduced MDA231-LM2 cells. RBM47 protein expression detected by immunohistochemistry. Staining intensity similar to that seen in panel (B). (D) RBM47 expression in normal mouse lung. RBM47 protein expression detected by immunohistochemistry. Note small cells with strong RBM47 expression, similar to those seen in panels (B) and (C). (E) Brain metastasis free survival as determined by in vivo bioluminescence imaging in mice after intracardiac inoculation of WT10 cells. The RBM47 group received doxycycline in diet. p-value calculated using the log-rank test. N = 9 for both groups. (F) Representative ex vivo bioluminescence images from brain metastasis of the experiment shown in (E). The color scale shows bioluminescence (photons/second). (G) Ex vivo quantification of bioluminescence from brain metastases with and without RBM47 reintroduction. WT10 data from the experiment shown in (E). WT6 data from a similar experimental setup. p-value calculated by two-tailed Student's t test. N = 9 for Ctrl group, N = 10 for RBM47 group. (H) Brain metastasis free survival as determined by in vivo bioluminescence imaging in mice after intracardiac inoculation of MUT3 cells. The I281fs group received doxycycline in diet. p-value calculated using the log-rank test. N = 9 for Ctrl group, N = 7 for RBM47I281fs group. (I) Representative ex vivo bioluminescence images from brain metastases of the experiment shown in (H). The color scale shows bioluminescence (photons/second). (J) Ex vivo quantification of bioluminescence from brain metastases of the experiment shown in (H). p-value calculated by two-tailed Student's t test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02734/elife-02734-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Examples of lung metastatic nodules in a mouse inoculated with RBM47-transduced 231-LM2 cells. Some metastases have strong expression of RBM47 (left), whereas others show only weak RBM47 expression (right). Staining against human vimentin and Ki67 is shown for the same lesions.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02734/elife-02734-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) RBM47 mRNA expression measured by quantitative real-time RT-PCR in WT6 cells treated with increasing concentrations of doxycycline. Error bars represent 95% confidence intervals obtained from multiple PCR reactions. (B) RBM47 mRNA expression measured by quantitative real-time RT-PCR in WT10 cells treated with increasing concentrations of doxycycline. Error bars represent 95% confidence intervals obtained from multiple PCR reactions. (C) RBM47 mRNA expression measured by quantitative real-time RT-PCR in MUT3 cells treated with increasing concentrations of doxycycline. Error bars represent 95% confidence intervals obtained from multiple PCR reactions. (D) RBM47 protein expression detected by Western blotting in WT6 cells treated with increasing concentrations of doxycycline. ACTB used as a loading control. Quantification of signal shown in the lower panel, normalized to both ACTB loading control and the level of endogenous RBM47 detected in HCC1954 cells. (E) RBM47 protein expression detected by Western blotting in WT10 cells treated with increasing concentrations of doxycycline. ACTB used as a loading control. Quantification of signal shown in the lower panel, normalized to both ACTB loading control and the level of endogenous RBM47 detected in HCC1954 cells. (F) Proliferation of WT6 cells assessed under standard tissue culture conditions with and without doxycycline (2.5 ng/ml). (G) Demonstration of doxycycline-inducible gene induction in brain metastatic lesions formed by 231-BrM2 cells transduced with an inducible RFP construct. Cancer cells express constitutively GFP. Doxycycline treatment started on day 14 after intracardiac cancer cell inoculation. Doxycycline-inducible RFP expression can be seen in cancer cells.\n\nIn order to allow better experimental control over RBM47 expression we utilized a conditional expression system. By focusing on the two brain metastatic cell lines that expressed the lowest levels of endogenous RBM47 (Figure 1C) we generated single cell-derived clones with doxycycline-inducible expression of either wild type RBM47 (henceforth WT10 and WT6, respectively) or the patient-derived mutant RBM47I281fs (henceforth MUT3). All clones exhibited dose-dependent RBM47 mRNA upregulation upon doxycycline induction (Figure 3\u2014figure supplement 2A\u2013C) that translated into increased RBM47 protein expression in the wild type-expressing clones (Figure 3\u2014figure supplement 2D,E). Cancer cells also tolerated RBM47 in vitro (Figure 3\u2014figure supplement 2F). After confirming the feasibility of doxycycline-mediated conditional gene activation in metastatic brain lesions (Figure 3\u2014figure supplement 2G), we inoculated WT6, WT10 and MUT3 cells into immunocompromized mice and assessed their brain-metastatic phenotype. All clones formed robust brain metastases under doxycycline-free conditions (Figure 3E\u2013J). The induction of RBM47 expression with doxycycline in the diet inhibited robustly brain colonization of both metastatic cell clones, WT6 and WT10 (Figure 3E\u2013G). However, the patient-derived mutant RBM47I281fs did not show any tumor suppressive effects (Figure 3H\u2013J). Collectively, these results demonstrated that RBM47 was able to strongly inhibit metastatic functions of some cancer clones, whereas other clones were able to form metastasis despite the presence of RBM47.\n\n### Transcriptome-wide identification of RBM47 binding sites\n\nTo determine whether RBM47 can directly bind RNA in vivo, we made use of the ability of UV-irradiation at 254 nm to induce chemical crosslinks between RNA and proteins that are in direct contact (Darnell, 2010). \u03b3-32P-labeled RNA was detected by autoradiogram at \u223c76 kD, the predicted size of Flag-RBM47, in Flag-immunoprecipitates from UV-irradiated, doxycycline-treated MDA231-BrM2 WT Flag-RBM47 cells, but not doxycycline-treated empty vector control or non-irradiated WT Flag-RBM47 expressing cells (Figure 4A). To identify directly bound RBM47 targets, a modified version of the high throughput sequencing and cross-linking immunoprecipitation (HITS-CLIP) protocol (Licatalosi et al., 2008; Weyn-Vanhentenryck et al., 2014) was carried out in duplicate on Flag-RBM47 expressing MDA231-BrM2 cells treated with doxycycline. (Figure 4B, see 'Materials and methods'). RBM47-bound HITS-CLIP reads were mapped to the human genome, yielding \u223c7.7 \u00d7 106 and \u223c2.0 \u00d7 106 unique reads (tags) per replicate. 75% of the tags mapped to regions corresponding to UCSC/Refseq genes, with a high degree of reproducibility of binding observed between replicates (Spearmann correlation coefficient R2 = 0.998, total tags per gene, Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02734/elife-02734-fig4-v2.jpg)\n\n**Figure 4.:** (A) Radiolabelled RNA is detectable in RBM47-expressing 231-BrM2 metastatic cells that have been UV-irradiated indicating in vivo RNA binding ability. No RNA is detected in non-crosslinked cells despite the presence of ample immunoprecipitated Flag-RBM47 protein. No RNA or protein is detected in control 231-BrM2 transduced with empty vector. Samples run in duplicate. (B) Schematic of the modified HITS-CLIP protocol showing autoradiogram of duplicate Flag-RBM47 samples used. Purified RBM47-bound RNA fragments (green) were polyA tailed and reverse transcribed in the presence of Brd-U using a polydT-NV primer encoding the full sense sequence of the Illumina reverse sequencing primer (blue), an abasic furan that serves as an ApeI cut site (\u03be), a partial reverse complement to the Illumina forward sequencing primer (orange), and two hexamer sequences (purple): a known-sequence index for multiplexing and a degenerate barcode used to distinguish unique cDNA clones from PCR duplicates. cDNA were stringently purified, circularized and linearized using ApeI to bring the Illumina sequence into correct orientation with respect to the cloned fragment, and the samples PCR amplified and deep sequenced. (C) RBM47 HITS-CLIP is highly reproducible between replicate experiments at the level of unique CLIP tags per transcript. (D) Increasing the stringency of biologically reproducible RBM47 binding site definition reveals predominant binding in 3\u2032UTRs and intronic regions of target transcripts, with the most robust binding (tags per binding site) evident in 3\u2032UTRs. (E) Distribution of tags number per biologically reproducible cluster in coding and non-coding regions of RBM47-targeted transcripts reveals a bimodal binding pattern between 3\u2032UTRs and introns, with the latter having large numbers of reproducible yet less robust binding. (F) MEME analysis reveals an enrichment for polyU sequences (50 sites, p=2.4e\u221216) in the \u00b110 nt foot print region surrounding reproducible RBM47 deletion CIMS (357 sites with \u22655 mutations, FDR \u22640.01, Zhang and Darnell, 2011). (G) Widespread RBM47 binding is seen in target transcripts, as exemplified by binding patterns seen in the 3\u2032UTRs of DKK1 and IL8.\n\nTo identify robust and reproducible RBM47-binding sites, tags were clustered to return regions with evidence of binding in both replicates (biological complexity, BC = 2) with increasingly stringent filters (Figure 4D): tags per cluster (tags \u22652, 617,026 clusters; tags \u226510, 94,966 clusters), a previously described significant peak threshold (significant peak height \u226510, 29,562 clusters [Chi et al., 2009]), and a ranked reproducibility chi-squared score (p\u22640.01, 19,433 clusters [Darnell et al., 2011]). As has been previously described for the n-ELAV proteins (Ince-Dunn et al., 2012), identification of the most robust binding through increased stringency of cluster definition led to an increase in proportional binding in 3\u2032UTR regions. For RBM47 this occurred due to loss of the majority of reproducible, yet relatively small intronic binding sites (Figure 4E), which may reflect the relative abundance of pre- and mature RNA message. Motif analysis (MEME, Bailey and Elkan, 1994) failed to identify an enriched RBM47-binding sequence in \u00b110 nt footprints centered on the top 3000 significant peaks (data not shown), but revealed a polyU sequence enriched in RBM47-binding sites containing cross-link induced mutations (deletion CIMS, Zhang and Darnell, 2011, Figure 4F). The apparent lack of an enriched RBM47-binding motif within robust CLIP-derived binding sites may reflect the broad binding patterns observed, as exemplified by the predominantly 3\u2032UTR binding in DKK1 and IL8 (Figure 4G).\n\n### RBM47 regulates alternative splicing\n\nReproducible binding of RBPs in intronic regions has proven to be predictive of a role in pre-mRNA processing for multiple proteins. To explore the relationship between RBM47 intronic binding and alternative splicing, RNA-seq was carried out in triplicate to compare MDA231-BrM2 cells and RBM47-expressing WT10 cells. Reads were mapped to cassette (CA) exon junctions as described previously for Mbnl2 (Charizanis et al., 2012), and an average inclusion rate (IR) calculated for each cell type to allow for the identification of reciprocal splicing changes while normalizing for changes in RNA stability (Ule et al., 2005; Figure 5A). The average change in inclusion rate (\u0394I) was then calculated such that positive \u0394I indicates RBM47-dependent cassette exon inclusion. This analysis revealed 121 and 140 CA exons with significant RBM47-dependent inclusion and exclusion, respectively. To assess whether RBM47-binding occurred in the vicinity of these splice sites, HITS-CLIP tags in BC2 tags \u22655 clusters (to account for lower levels of intronic binding seen in Figure 4E) in the region of the alternative splice were calculated. Forty-eight RBM47-bound included and 49 RBM47-bound excluded CA exons were identified in a total of 84 genes (Figure 5B; Supplementary file 1). RBM47-dependent splicing changes were confirmed via RT-PCR as shown for SLK, MDM4, LIMCH1, MBNL1 and SEC31A (Figure 5C, Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/02734/elife-02734-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic showing the method used to calculate alternative exon inclusion rates from paired-end RNA-seq data. 5\u2032CE\u20135\u2032 flanking constitutive exon, 3\u2032CE\u20133\u2032 flanking constitutive exon, 5\u2032FI\u20135\u2032 Flanking intron, 3\u2032FI\u20133\u2032 Flanking intron. (B) Scatter plot of all expressed alternatively spliced CA exons showing RBM47-dependent change in inclusion (black, \u226510 RNA-seq reads spanning exon\u2013exon junctions, \u0394I \u2265|0.2|, p\u22640.05) with orange points indicating RBM47-bound and included CA exons, and blue points indicating bound and excluded exons, respectively. CA exons were considered bound given a total of tags \u226510 in BC2 tags \u22655 clusters mapping to the region spanning the start of the 5\u2032CE to the end of the 3\u2032CE. p-values calculated by Fisher's exact test using total isoform 1 and total isoform 2 RNA-seq reads in each condition. (C) Left panel shows a section of the SLK transcript (blue) that includes a CA exon (grey box). The top two panels show RNA-seq data from WT10 (green) and control cells (red), with RBM47 HITS-CLIP tags mapping to the region shown beneath in black. Increased RNA-seq signal corresponding to the CA exon is seen in the presence of RBM47 expression, while robust binding is evident in the 5\u2032FI. Independent RT-PCR validation of this splice is shown in the right panel, with IR calculated using ImageJ analysis of autoradiograms. (D) Normalized complexity map of RBM47-dependent alternative splicing of CA exons. Orange and blue peaks represent binding associated with RBM47-dependent exon inclusion and exclusion, respectively.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02734/elife-02734-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) RBM47-dependent exclusion of exon 6 of MDM4, as in Figure 5C. (B) RBM47-dependent exclusion of a CA in LIMCH1, as in Figure 5C. (C) RBM47-dependent inclusion of exon 5 in MBNL1, as in Figure 5C. (D) RBM47-dependent inclusion of two CA exons in SEC31A, as in Figure 5C.\n\nBy mapping normalized RBM47 CLIP tags associated with RBM47-dependent splicing changes on a composite transcript (Licatalosi et al., 2008) we generated an RNA binding map of consensus binding sites within 1 kb of exon-intron boundaries, with respect to exon inclusion or exclusion (Figure 5D). The resulting normalized complexity map reveals enriched RBM47 binding in the vicinity of splice acceptor sites of the CA exon and 3\u2032 CE for included alternative isoforms, while relative enrichment of RBM47 binding was seen at the 5\u2032 CE splice donor and 3\u2032CE splice acceptor of excluded isoforms.\n\n### RBM47 affects mRNA steady state levels\n\nTo further study the functional consequences of RBM47-mRNA binding events, we determined global steady state mRNA levels in the RBM47 expressing brain metastatic cells by RNA-seq. We took advantage of the clonal doxycycline-inducible cell line systems, which facilitated the analysis of RBM47 dose-dependence. First, genome-wide analyses showed that the mRNA level of several more genes correlated significantly with increasing concentrations of doxycycline in both cell lines expressing the wild type RBM47 (WT6 and WT10), when compared to cells expressing the mutant (Figure 6A). This result indicated that RBM47 elicits dose-dependent changes in mRNA levels. The correlation coefficients followed a pattern that suggested the existence of mRNA species that correlated both positively and negatively with wild type, but not mutant, RBM47 expression, that is few genes in MUT3 cells had correlation coefficients close to 1 or \u22121, whereas in WT6 and WT10 cells such genes were abundant (Figure 6B). Encouraged by these observations, we looked for mRNAs that fulfilled the following criteria: (i) p-value of correlation less than 0.01 in both WT6 and WT10 cells, (ii) mRNA expression change detectable already at the lowest levels of RBM47 expression in both cell clones and (iii) no significant correlation with RBM47I281fs expression. This revealed a set of 102 mRNAs that were upregulated and 92 that were downregulated, respectively, in cells expressing the wild type RBM47 (Figure 6C, Figure 6\u2014figure supplement 1A,B; Supplementary file 2). Importantly, these changes were observed already with the lowest expression level of RBM47 that was comparable or lower than those detected in endogenously RBM47 expressing cells (Figure 3\u2014figure supplement 2D,E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/02734/elife-02734-fig6-v2.jpg)\n\n**Figure 6.:** (A) Distribution of p-values from correlation analysis of doxycycline concentration and gene expression for all genes in WT6, WT10 and MUT3 cell lines, respectively. Global gene expression determined by RNA-seq. (B) Distribution of correlation coefficients between doxycycline concentration and gene expression in WT6, WT10 and MUT3 cell lines, respectively. (C) Heat maps showing the top 102 positively (UP) correlated and 92 negatively (DOWN) correlated genes with RBM47 expression in WT6 and WT10 cells. The expression of these genes does not correlate with RBM47I280fs expression in the MUT3 cells. (D) RBM47 mRNA expression in the TCGA cohort of breast cancer samples classified by the clusters shown in Figure 6\u2014figure supplement 1C. p-value determined by two-tailed Student's t test. (E) Fold change between Cluster 1 and Cluster 2 shown for the 102 positively and 92 negatively correlated RBM47 target genes, respectively. Positive fold change shows higher expression in Cluster 2, which has lower expression of RBM47. The genes that are induced upon RBM47 reintroduction tend to have lower expression in Cluster 2, and the genes that show lower expression upon RBM47 reintroduction tend to have higher expression in Cluster 2. This is in line with the experimental results shown in panel (C). P-value determined by two-tailed Student's t test. (F) Pie charts showing the fraction of target genes with more than 100 RBM47 tags for both the 102 positively and 92 negatively correlated RBM47 target genes. (G) Tags per transcript plotted for both the positively and negatively correlated RBM47 target genes that showed more than 1 tag. The only two binding partners with >104 tags represent DKK1 and IL8, respectively. (H) Secreted DKK1 and IL8 protein levels determined by ELISA in WT6 cells treated with the indicated doxycycline concentrations. VEGFA used as a control.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02734/elife-02734-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Normalized average RNA-seq reads per transcript for the 102 positively correlated RBM47 target genes shown for WT6, WT10 and MUT3 cells treated with the indicated doxycycline concentrations. (B) Normalized average counts for the 92 negatively correlated RBM47 target genes shown for WT6, WT10 and MUT3 cells treated with the indicated doxycycline concentrations. (C) A heatmap showing unsupervised hierarchical clustering in the TCGA cohort of 748 samples using the 194 RBM47 target genes identified by RNA-seq. Two main clusters are detected.\n\nTo determine whether the 194 RBM47-responsive genes displayed clinically meaningful expression patterns, we conducted an unsupervised hierarchical clustering analysis of the TCGA cohort of breast cancer specimens. Two main clusters emerged, one of which harbored characteristics of the RBM47-low phenotype (\u2018Cluster 2\u2019, Figure 6\u2014figure supplement 1C). First, this subgroup, Cluster 2, had significantly lower RBM47 expression levels when compared to Cluster 1 (Figure 6D). Second, the genes that were induced upon RBM47 reintroduction tended to have lower expression in Cluster 2, whereas genes with reduced expression level in the RBM47-expressing cells tended to show higher expression in Cluster 2 (Figure 6E). These observations validated in clinical tumor samples the RBM47-dependent gene expression correlations identified in vitro.\n\nTo identify directly regulated targets of RBM47, we combined the mRNA expression data with the HITS-CLIP-derived RBM47 transcriptome-wide binding data. Of the 2498 strongest binding partners with >100 tags per transcript (total tags in BC2 tags \u226510 clusters; Supplementary file 3), 25 were among the 102 RBM47-upregulated genes and 17 among the 92 RBM47-downregulated genes (Figure 6F), indicating no significant binding preference for either groups. This was reflected in the similar overall RBM47 binding profiles in both the up- and down-regulated genes (Figure 6G). Two of the top-scoring RBM47 binding mRNAs, IL8 and DKK1 (17,079 and 16,208 tags in clusters per gene, respectively, Figure 4G), were among the upregulated genes. This increase in mRNA levels was associated with increased protein secretion as determined by ELISA, whereas VEGFA, the mRNA of which was bound but not upregulated by RBM47, showed no change in protein secretion (Figure 6H).\n\n### RBM47 modulates DKK1 mRNA stability\n\nNuclear RNA binding proteins typically function in large multiprotein complexes that regulate mRNA biogenesis (Dreyfuss et al., 2002). Our data from both genome-wide HITS-CLIP and RNA-seq analysis was compatible with RBM47 being a member of these RNA chaperone units. This suggested that RBM47 may not necessarily have a direct tumor suppressive signaling function. Rather, it raised the possibility that loss of RBM47, leading to subtle changes in multiple mRNAs, either through stabilization, destabilization or alternative splicing, could be selected for if the net effect of both growth-promoting and growth-inhibiting changes would be beneficial for cancer cells under the stress of dissemination to and colonizing distant organs. In line with this, both the up- and down-regulated target genes of RBM47, as well as the genes that were targets of RBM47-mediated alternative splicing, contain genes that have previously been shown to either promote or inhibit tumor phenotypes (Supplementary file 1 and Supplementary file 3). For example, DKK1 (Bafico et al., 2004; Cowling et al., 2007; Mikheev et al., 2008), HTATIP2 (Zhao et al., 2007), HBP1 (Paulson et al., 2007; Li et al., 2011), MXI1 (Lahoz et al., 1994) and CASP7 (Hudson et al., 2013), all bound by RBM47 and upregulated upon RBM47 reintroduction, have known tumor suppressive functions. Similarly, RBM47-induced splicing changes were seen in genes such as SLK (Roovers et al., 2009), MDM4 (Wade et al., 2013) and TNC (Oskarsson et al., 2011), all of which are genes with known functions in cancer.\n\nFocusing on DKK1, one of the most robustly bound RBM47 target transcripts identified by HITS-CLIP, we investigated the possible role of RBM47 as a modulator of mRNA abundance. As predicted by our results in WT6 and WT10 cells, knockdown of RBM47 in two additional breast cancer cell lines expressing high levels of endogenous RBM47, SKBR3 and ZR-75-30, reduced DKK1 mRNA levels (Figure 7A, Figure 7\u2014figure supplement 1A). This validated RBM47 as a modulator of DKK1 mRNA level in breast cancer cells.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/02734/elife-02734-fig7-v2.jpg)\n\n**Figure 7.:** (A) RBM47 and DKK1 mRNA expression measured by quantitative real-time RT-PCR in SKBR3 cells expressing either control vector (pGIPZ) or hairpins against RBM47 (shRNA1 and shRNA2). Error bars represent 95% confidence intervals obtained from multiple PCR reactions. (B) DKK1 mRNA stability determined by measuring mRNA levels by quantitative real-time RT-PCR in WT6, WT10 and MUT3 cells, treated with or without doxycycline, after inhibition of transcription with actinomycin D. Data normalized to time point 0. Error bars represent 95% confidence intervals obtained from multiple PCR reactions. WT6: T1/2 Ctrl = 2.3 hr, T1/2 Dox = 9.8 hr; WT10: T1/2 Ctrl = 2.4 hr, T1/2 Dox = 5.4 hr; MUT3: T1/2 Ctrl = 2.1 hr, T1/2 Dox = 2.2 hr. (C) Schematic showing the locations of different DKK1 miR-constructs in relation to DKK1 genomic locus and RBM47 binding patterns. miRm and miRn target exon 1 that is not bound by RBM47. miRo, miRp and miRq target DKK1 3\u2032UTR that is strongly bound by RBM47. (D) DKK1 mRNA expression measured by quantitative real-time RT-PCR in WT6 cells expressing either control vector (pGIPZ) or the five DKK1-targeting miR constructs shown in panel (C). Error bars represent 95% confidence intervals obtained from multiple PCR reactions. (E) DKK1 mRNA expression measured by quantitative real-time RT-PCR in WT6 cells expressing either control vector (pGIPZ) or the five DKK1-targeting miR constructs, with or without doxycycline treatment. Data normalized to the non-treated control for each cell line separately. Error bars represent 95% confidence intervals obtained from multiple PCR reactions. (F) DKK1 mRNA expression measured by quantitative real-time RT-PCR in WT10 cells expressing either control vector (pGIPZ) or the five DKK1-targeting miR constructs shown in panel (C). Error bars represent 95% confidence intervals obtained from multiple PCR reactions. (G) DKK1 mRNA expression measured by quantitative real-time RT-PCR in WT10 cells expressing either control vector (pGIPZ) or the five DKK1-targeting miR constructs, with or without doxycycline treatment. Data normalized to the non-treated control for each cell line separately. Error bars represent 95% confidence intervals obtained from multiple PCR reactions.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02734/elife-02734-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) RBM47 and DKK1 mRNA expression measured by quantitative real-time RT-PCR in ZR-75-30 cells expressing either control vector (pGIPZ) or a hairpin against RBM47 (shRNA2). Error bars represent 95% confidence intervals obtained from multiple PCR reactions.\n\nThe fact that RBM47 bound to DKK1 mRNA 3\u2032UTR and increased DKK1 mRNA levels suggested the possibility that RBM47 had the capability of stabilizing DKK1 mRNA. We tested this by treating cancer cells with actinomycin D, a general inhibitor of transcription, and measuring DKK1 mRNA levels in the following hours. This demonstrated that wild type RBM47, but not the RBM47I281fs mutant, was able to increase the half-life of DKK1 mRNA by up to fourfold (Figure 7B).\n\n### RBM47 protects DKK1 3\u2032UTR from destabilizing factors\n\nAs RBM47 binding to DKK1 was concentrated on the 3\u2032UTR, a known region of regulatory activity (Zhou et al., 2012), we considered the possibility that RBM47 could compete with microRNAs or other mRNA destabilizing factors that target the 3\u2032UTR (Bhattacharyya et al., 2006; Young et al., 2012). To test this experimentally, we generated miR-30-based shRNA-miR constructs that targeted different regions of the DKK1 transcript, two at the 5\u2032 end with minimal RBM47 binding and three at the 3\u2032 end with abundant RBM47 signal (Figure 7C; Fellmann et al., 2011). All constructs knocked the DKK1 transcript level down by 65\u201380% in the WT6 cells when no doxycycline was present (Figure 7D). The induction of RBM47 expression did not have a significant effect on the efficiency on the 5\u2032-targeting shRNA-miRs (Figure 7E). In contrast, RBM47 inhibited the capability of the 3\u2032-targeting shRNA-miRs to keep the DKK1 mRNA level down (Figure 7E). Similar observations were made with the WT10 cells (Figure 7F,G). Argonaute HITS-CLIP in the MDA231-BrM2 cells (CBM et al., unpublished data) indicates robust binding to the DKK1 3\u2032UTR, supporting the regulatory role of this region. We conclude that the effects of RBM47 on DKK1 mRNA levels may be due to the ability of RBM47 to protect this mRNA from destabilizing factors, possibly through direct interaction with the DKK1 mRNA.\n\n### RBM47 inhibits tumor progression by suppressing Wnt activity\n\nDKK1 is an inhibitor of Wnt signaling, a pathway with a well-established role in regulating stem cell characteristics in both normal and malignant cells (Clevers and Nusse, 2012). Indeed, DKK1 as well as other Wnt antagonists have been shown to inhibit breast cancer progression (Bafico et al., 2004; Cowling et al., 2007; Mikheev et al., 2008; Matsuda et al., 2009). The fact that RBM47 was able to increase DKK1 secretion therefore suggested that RBM47 may also inhibit Wnt signaling and consequently reduce the tumorigenic fitness of metastatic breast cancer cells. We first tested the effects of RBM47 on cancer cell Wnt responsiveness by treating WT6 cells with recombinant Wnt3A and subsequently measuring the expression of AXIN2, a common TCF/\u03b2-catenin target gene and a general marker of Wnt activity (Lustig et al., 2002; Clevers and Nusse, 2012). Doxycycline-induced expression of RBM47 in WT6 cells led to a dampened Wnt3A-dependent AXIN2 induction (Figure 8A). This inhibition of AXIN2 expression was at least partially dependent on DKK1 (Figure 8B). In agreement with these results, human breast cancers with low RBM47 expression had in general higher levels of Wnt transcriptomic activity when compared to tumors with high RBM47 expression in the TCGA cohort (Figure 8C).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/02734/elife-02734-fig8-v2.jpg)\n\n**Figure 8.:** (A) AXIN2 mRNA levels determined by quantitative real-time RT-PCR in WT6 cells treated with recombinant WNT3A in the presence of increasing concentrations of doxycycline. Error bars represent 95% confidence intervals obtained from multiple PCR reactions. (B) Normalized level of AXIN2 mRNA inhibition as determined by quantitative real-time RT-PCR in WT6 cells transduced wither with control vector or shRNAmiR constructs targeting the first exon of DKK1. The cells were treated with recombinant WNT3A in the presence of increasing concentrations of doxycycline. Error bars represent 95% confidence intervals obtained from multiple PCR reactions. (C) Wnt pathway activity assessed in the TCGA cohort of primary breast tumors, grouped by RBM47 expression tertiles (L, low; M, medium; H, high). Wnt signature value calculated as sum of z-scores for a curated set of 16 Wnt target genes in breast cancer. p-value determined by linear regression analysis. (D) Mammary tumor re-initiation assay. 5,000 WT6 cells implanted orthotopically in mice. RBM47 induced by doxycycline feed. Tumor growth detected by bioluminescence. p-value determined by the log-rank test. N = 20 tumors for each group. (E) Quantification of mammary tumor burden by in vivo bioluminescence imaging on day 33 of the experiment shown in (D). Data normalized to day 0 for each tumor. p-value calculated by the Wilcoxon rank-sum test. (F) Quantification of mammary tumor burden by in vivo bioluminescence imaging in mice inoculated with 231-Brm2 cells transduced with either control (pGIPZ) or DKK1-targeting shRNAmiR constructs. Data normalized to day 0 for each tumor. p-value calculated by one-tailed Wilcoxon rank-sum test. (G) Quantification of ex vivo brain bioluminescence shown for mice inoculated intracardiacly with WT6 cells transduced with either control (pGIPZ) or DKK1-targeting shRNAmiR constructs in the presence of RBM47, that is doxycycline in diet. One out of 9 (11%) control mice developed robust brain metastasis whereas 8/17 (47%) mice in the DKK1 knockdown groups showed metastasis. p-value calculated by one-tailed Student's t test. (H) Representative images of coronal brain sections analyzed for GFP immunofluorescence from the experiment shown in panel (G). Lesion contours are marked in white. Arrowheads indicate the lesions shown in higher magnification on the right; a similar brain area is shown for the control group. Scale bar 500 \u03bcm. (I) At the global level, RBM47 binds to \u223c2500 target mRNAs. However, the abundance or alternative splicing of only a fraction of these change depending on RBM47 status. The target genes represent molecules from various signaling pathways. The net effect of growth promoting and inhibiting alterations determine whether RBM47 loss is beneficial for a particular cancer clone. (J) At the target mRNA level, the effects of RBM47 are dependent on the presence of other factors that modulate mRNA processing. Hence, the phenotype of RBM47 loss depends on the intracellular molecular milieu on a per transcript basis. This is exemplified by the interaction of RBM47 with DKK1 mRNA.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02734/elife-02734-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Quantification of mammary tumor burden by in vivo bioluminescence imaging on day 36 after 5,000 WT10 cells were implanted orthotopically in mice. RBM47 induced by doxycycline feed. Data normalized to day 0 for each tumor. p-value calculated by the Wilcoxon rank-sum test. (B) DKK1 mRNA measured by quantitative real-time RT-PCR in 231-BrM2 cells transduced with either control (pGIPZ) or DKK1-targeting shRNAmiR constructs. Error bars represent 95% confidence intervals obtained from multiple PCR reactions. (C) Secreted DKK1 protein levels determined by ELISA in WT6 cells transduced with either control (pGIPZ) or DKK1-targeting shRNAmiR constructs, with or without doxycycline treatment.\n\nWe then tested the possibility that RBM47 would suppress tumorigenesis by implanting low numbers of WT6 cells at the orthotopic site. The induction of RBM47 by doxycycline was able to significantly delay the emergence of mammary tumors (Figure 8D), and the tumors that formed were smaller in size (Figure 8E). This observation was confirmed in WT10 cells (Figure 8\u2014figure supplement 1A). In line with this, inhibition of DKK1 expression in the MDA231-BrM2 cells promoted tumor formation in the orthotopic site (Figure 8F, Figure 8\u2014figure supplement 1B). Finally, we used the two exon 1 DKK1 shRNAmiR constructs (Figure 7C) to reduce DKK1 levels in the WT6 cells (Figure 8\u2014figure supplement 1C) and tested how this affected the brain metastatic ability of these cells in the presence of RBM47. Only 1/9 mice (16%) injected with control cells developed brain metastasis, whereas 8/17 mice (47%) inoculated with DKK1 RNAi construct transduced cells developed metastasis (Figure 8G,H). Taken together, these observations suggested that RBM47-dependent suppression of tumor progression was partially mediated by its ability to increase the production of the Wnt antagonist DKK1, a secreted protein that can inhibit tumor phenotypes in metastatic cancer cells.\n\n## Discussion\n\nCancer genomes contain numerous genes with low-frequency mutations of unknown functional significance. We have studied one such gene, the previously uncharacterized RBM47, and demonstrate that it has tumor suppressive functions in breast cancer. RBM47 acts as a multifunctional RBP modulating alternative splicing and the abundance of several mRNAs, which can lead to inhibition of cancer progression (Figure 8I,J). These results highlight the significance of infrequent mutations in cancer, the importance of integrated experimental approaches to identify such functionally relevant mutations, and the role of broadly targeted mRNA chaperones as determinants of cancer progression.\n\nRBM47 contains three classical RNA recognition motifs (RRM domains). The closest homologs of RBM47 are Apobec1 complementation factor (A1CF) and hnRNP-Q, which regulate RNA editing (Mehta et al., 2000) and splicing and transcript stability, respectively (Chen et al., 2008; Weidensdorfer et al., 2009). In general, RBPs bind to and influence the function and fate of both pre-mRNAs and mRNAs (Dreyfuss et al., 2002). They can operate in large multiprotein complexes that dynamically regulate all the steps of mRNA biogenesis, nuclear export, stability and translation. Individual subunits of these complexes can therefore have diverse phenotypic roles depending on the exact protein complex they are in Chaudhury et al. (2010). Our observations on RBM47 are in line with these known general principles of RBP function.\n\nOur data demonstrate widespread and reproducible RBM47 binding to target mRNAs predominantly in introns and 3\u2032UTRs, with the most robust binding occurring in 3\u2032UTRs. Recent RNA-compete studies have proposed a binding motif for RBM47 in vitro (Ray et al., 2013). Our in vivo HITS-CLIP data does not suggest a clear nucleotide binding specificity for exogenous Flag-tagged RBM47, although some preference was observed for polyU stretches around CIMS sites. It has been shown that the presence of a canonical motif is neither necessary nor sufficient to predict HITS-CLIP binding sites of FUS in both mouse and human brain (Lagier-Tourenne et al., 2012), while specific sites suggested by in vitro RNA selection experiments are not enriched in HITS-CLIP derived FMRP binding sites in vivo (Darnell et al., 2011). This would suggest that other factors such as RNA accessibility, secondary structure or protein\u2013protein interactions may modulate RBM47 target choice (Li et al., 2014). Further work is therefore needed for a comprehensive understanding of the determinants of RBM47-mRNA interactions.\n\nWe find that RBM47 binds robustly to \u223c2500 gene transcripts in human breast cancer cells, with only a subset showing steady state level change or alternative splicing upon RBM47 reintroduction. Given the stringent criteria used to define RBM47-bound and regulated targets and the generally low level of intronic RNA in a cell, it is likely that this subset is an underestimation of the number of RBM47-regulated transcripts, and does not take into account the potential for regulatory events, such as re-localization, that may not alter steady state transcript levels. The complex interplay of RBPs in agonistic and antagonistic modulation of mRNA is becoming increasingly apparent. For example, the RRM-domain containing protein HuR modulates the destabilizing effects of miRNAs (Bhattacharyya et al., 2006; Kim et al., 2009; Young et al., 2012) and AUF1 (Zou et al., 2010) on common target transcripts. The data presented here suggest that target-specific RBM47 regulation may arise through modulation of accessibility of other factors to a common mRNA transcript.\n\nRBM47 binds and regulates transcripts that encode for proteins of several different biological functions. The effects of reduced RBM47 activity on cancer cell fitness, determined by the sum phenotypic output of all regulated target transcripts, may therefore vary depending on the context. Such pleiotropic effects could target multiple steps of cancer progression. Indeed, even though RBM47 loss was associated with metastatic cancer clones in our model systems, evidence for selection against RBM47 was detected already in primary breast cancers. One of the most highly bound RBM47 mRNA targets, the secreted Wnt inhibitor DKK1, is stabilized by RBM47 and partially mediates RBM47 tumor suppressive function. Interestingly, rbm47 knockdown in zebra fish embryos leads to a headless phenotype mediated via up-regulation of the wnt8a pathway (Guan et al., 2013). In addition to DKK1, our analysis identified a number of potential mediators of RBM47 effects for future studies.\n\nFrom a general perspective, the present findings illuminate two concepts. First, we show that low-frequency cancer mutations can give rise to tumorigenic phenotypes. Our work highlights the power of orthogonal approaches for the analysis of cancer genome resequencing data. Second, we show that loss of a broadly targeted and multifunctional RBP can increase the fitness of certain cancer cell clones in support of metastasis. This complements previous findings of RNA-binding proteins as mediators of oncogenic phenotypes (Karni et al., 2007; Richard et al., 2008; Sommer et al., 2011; Das et al., 2012; Wang et al., 2013). Deregulation of RNA-binding proteins is thus emerging as a prominent source of complex transcriptomic diversity that can serve as a platform for the selection of metastatic traits during tumor progression.\n\n## Materials and methods\n\n### Cell lines\n\nThe metastatic breast cancer cell lines have been previously described (Kang et al., 2003; Minn et al., 2005; Bos et al., 2009). SKBR3, ZR-75-30 and HCC1954 cells were obtained from ATCC (Manassas, VA). For retrovirus and lentivirus production, GPG29 and 293T cells, respectively, were utilized. All cell lines were maintained under standard tissue culture conditions. Single cell-derived clones were isolated utilizing fluorescence-activated cell sorting from genetically engineered 231-BrM2 (WT10, MUT3) and CN34-BrM2 (WT6) cells.\n\n### cDNA expression and RNAi\n\nFor RBM47 restoration, RBM47 was cloned into the pBABE-puro retroviral expression vector. The RBM47I281fs was generated by site-directed mutagenesis. Virus was generated in the GPG29 packaging cells. For the generation of doxycycline-inducible expression constructs, both wild type and mutant FLAG-RBM47 were cloned into the pRetroX-Tight-Pur expression system (Clontech, Mountain View, CA).\n\nFor RNAi-mediated gene silencing, RBM47 pGIPZ shRNA constructs (clones V2LHS_176331 and V3LHS_393928, respectively) were obtained from Open Biosystems (Lafayette, CO). The DKK1 shRNAmiR constructs were designed based on the rules described by Fellmann et al. (2011) and cloned into the pGIPZ vector as described (Dow et al., 2012) using the following oligonucleotide templates:DKK1miRm: TGCTGTTGACAGTGAGCGACGGGTCTTTGTCGCGATGGTATAGTGAAGCCACAGATGTATACCATCGCGACAAAGACCCGGTGCCTACTGCCTCGGADKK1miRn: TGCTGTTGACAGTGAGCGACACCTTGAACTCGGTTCTCAATAGTGAAGCCACAGATGTATTGAGAACCGAGTTCAAGGTGGTGCCTACTGCCTCGGADKK1miRo: TGCTGTTGACAGTGAGCGCCAACTCAATCCTAAGGATATATAGTGAAGCCACAGATGTATATATCCTTAGGATTGAGTTGATGCCTACTGCCTCGGADKK1miRp: TGCTGTTGACAGTGAGCGACAGTAAATTACTGTATTGTAATAGTGAAGCCACAGATGTATTACAATACAGTAATTTACTGCTGCCTACTGCCTCGGADKK1miRq: TGCTGTTGACAGTGAGCGAAACGGAAGTGTGATATGTTTATAGTGAAGCCACAGATGTATAAACATATCACACTTCCGTTCTGCCTACTGCCTCGGA\n\nThe pGIPZ empty vector was used as a control.\n\n### Animal studies\n\nAll animal experiments were performed in accordance with a protocol approved by MSKCC Institutional Animal Care and Use Committee. Lung metastasis assays were conducted in 5\u20137 week old female NOD/SCID mice. Brain metastasis and mammary tumor assays were carried out using 5\u20137 week old female athymic nude mice. In vivo bioluminescence imaging was performed using the IVIS Spectrum Xenogen machine (Caliper Life Sciences, Hopkinton, MA). For orthotopic mammary tumor assays, cells were mixed with Matrigel. Injections were confirmed and tumor growth was followed by bioluminescent imaging. Statistical significance of tumor and metastasis free survival was assessed by the log-rank test. Differences in raw and normalized bioluminescence signal was assessed by the Student's t test and Wilcoxon rank-sum test, respectively. Brain images were acquired with a Leica SP5 up-right confocal microscope and Zeiss AxioVert 200 M using 20X and 5X objectives. Image analysis was performed with Metamorph and ImageJ softwares.\n\n### mRNA and protein detection\n\nTotal RNA was extracted using PrepEase RNA spin kit (USB, Cleveland, OH). We used Transcriptor First Strand cDNA Synthesis Kit (Roche, Indianapolis, IN) for cDNA synthesis. Quantitative PCR was performed using predesigned Taqman gene expression assays (Life Technologies, Carlsbad, CA) and the 7900HT or ViiA 7 real-time PCR systems (Applied Biosystems/Life Technologies). TBP was used as a housekeeping control gene. mRNA stability was assessed by performing quantitative PCR after actinomycin D treatment. For immunoblotting, antibodies recognizing RBM47 (HPA006347; Sigma, St. Luis, MO), \u03b1-tubulin (11H10; Cell Signaling, Danvers, MA) and ACTB (Sigma) were utilized. Secondary antibodies were HRP (Pierce, Rockford, IL) or fluorescence (LiCor, Lincoln, NE) conjugated. Immunostaining for RBM47 (HPA006347; Sigma) was performed according to standard protocols in the MSKCC Molecular Cytology Core Facility on paraffin embedded tissue blocks. Secreted protein was detected by ELISA (R&D, Minneapolis, MN).\n\n### HITS-CLIP\n\n231BrM2 tet-on FLAG-RBM47 cells were treated with 1 ng/ml doxycycline for 3 days before 254 nm UV crosslinking at 400 mJ/cm2 on a bed of ice (Stratalinker2400; Stratagene, La Jolla, CA). Samples were processed for HITS-CLIP as previously described (Licatalosi et al., 2008) using an anti-Flag antibody (F3165; Sigma), and omitting 3\u2032 linker ligation in favor of direct labeling of protein-bound RNA with 32P-\u03b3-ATP. Non-crosslinked cells were used as a negative control, with IPed Flag-RBM47 protein detected using a second anti-Flag antibody (F7425; Sigma). Purified RBM47-bound RNA fragments were polyA tailed (E-PAP; NEB), and reverse transcribed (Superscript III; Invitrogen, Carlsbad, CA) in the presence of Br-dUTP (Sigma). Unique polydT-NV RT-primers were used per replicate, containing Solexa sequences separated by an abasic furan (that serves as an ApeI cut site), a 6 nt degenerate region and a 6 nt index sequence to allow for multiplexing during sequencing.RT Primer 1pGCACTGTTN6GATCGTCGGACTGTAGAACTCT/idSp/CAAGCAGAAGACGGCATACGAT20VNRT Primer 2pGCGAAACTN6GATCGTCGGACTGTAGAACTCT/idSp/CAAGCAGAAGACGGCATACGAT20VN\n\nBrdU-cDNA was stringently purified by IP (sc-32323; Santa Cruz, Dallas, TX) using ProteinG dynabeads (Invitrogen), eluted from the beads via BrdU competitive elution (Sigma), and re-immunoprecipitated. cDNA was circularized on bead (CircLigase ssDNA Ligase II, Epicentre, Madison, WI), washed and digested with ApeI (NEB, Ipswich, MA) to relinearize. cDNAs were eluted from the beads by heating to 98C in Phusion HF Buffer (NEB), then PCR amplified using Phusion DNA polymerase (NEB) and SYBR Green I (Invitrogen) in an iQ5 real-time PCR machine in order to monitor amplification, with the samples being removed when the RFU signal reached \u223c1000.\n\nP5\u2014aatgatacggcgaccaccgacaggttcagagttctacagtccgacg\n\nP3\u2014caagcagaagacggcata\n\nPCR products were purified using MinElute columns (Qiagen, Valencia, CA) as per manufacturer's instructions and quantified using Quant-It (Invitrogen). cDNA was multiplexed and sequenced using Illumina Hi-Seq (small RNA sequencing primer\u2014cgacaggttcagagttctacagtccgacgatc). All data analysis was done using the Galaxy platform (Hillman-Jackson et al., 2012), as previously described (Licatalosi et al., 2008; Chi et al., 2009; Darnell et al., 2011; Zhang and Darnell, 2011).\n\n### RT-PCR validation\n\nRT-PCR validiation was carried out using total RNA from MDA231-BrM2 (Control) and WT10 cells (iScript, Bio-Rad, Accuprime Pfx Supermix 1, Life Technologies) as previously described (Licatalosi et al., 2012). In all cases lanes 1\u20133 contain an equal mixture of control and WT10 cell cDNA amplified at n-1, n and n+1 cycles, lane 4 contains an absence of reverse transcriptase control (\u2212RT), with all other lanes corresponding to replicate samples of the indicated cell type amplified to n cycles. IR and \u0394I calculated using ImageJ (Schneider et al., 2012).\n\n### Bioinformatic analysis\n\nAll analyses were conducted using R. Microarray data from human untreated tumor data sets (GSE2603 [Minn et al., 2005] and GSE2034 [Wang et al., 2005]) were preprocessed as described (Zhang et al., 2009). For the RNA-seq TCGA data set, normalized mRNA z-scores were downloaded from the TCGA cBio portal (Cerami et al., 2012). The microarray data from metastatic cell lines (Minn et al., 2005; Bos et al., 2009) were processed with GCRMA together with updated probe set definitions using R packages affy, gcrma and hs133ahsentrezgcdf (version 10). Unsupervised hierarchical clustering was performed using the function heatmap.2 with Pearson's correlation coefficient as the similarity metric. For survival analysis, a Cox proportional hazards model was utilized as implemented in the coxph function in the R-package survival. For RNA-seq analysis of the cell lines, raw paired-end sequencing data were mapped to human genome (hg19 build) with STAR2.3.0 (Dobin et al., 2013) using standard options. Reads mapped to each transcript were counted by HTSeq v0.5.4 (Anders and Huber, 2010) with default settings. The read count table was normalized to library size by DESeq (Anders and Huber, 2010). Correlation with RBM47 expression was assessed by Pearson's correlation coefficient utilizing the R functions cor and cor.test. Wnt pathway activity in clinical tumors was assessed utilizing a curated list of Wnt target genes in breast cancer (Matsuda et al., 2009) and calculating sums of z-scores for each tumor.\n\n### Accession numbers\n\nRNA-seq and HITS-CLIP data have been deposited to the Gene Expression Omnibus under the accession numbers GSE53779 and GSE58381.\n",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "d3e686fa-4c32-45a9-9d69-a08f7ecd40ee",
+      "submission_id": "ee2288a0-2ca4-4515-a0f7-17848f308efa",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Roy Parker, University of Colorado , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02734.022](https://doi.org/10.7554/eLife.02734.022)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cLoss of the multifunctional RNA-binding protein RBM47 as a source of selectable metastatic traits in breast cancer\u201d for consideration at eLife. Your article has been favorably evaluated by Tony Hunter (Senior editor) and 2 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe reviewers felt that the identification of the RBM47 RNA-binding protein as a regulator of metastasis was an important contribution that could be published in eLife. However, the following issues would need to be addressed before we can consider the work further for publication in eLife.\n\nMajor comments:\n\n1) A critical issue is whether RBM47 has a specific role in regulating metastasis as opposed to more broadly affecting cell proliferation and growth. More specifically, Figures 2 and 3 attempt to show that RBM47 suppresses experimental metastases in the brain and the lung. However, without examining whether RBM47 overexpression and knockdown also affect cell proliferation in culture and primary tumor growth in mice, it is unclear whether RMB47 specifically regulates metastasis vs. cell proliferation. Indeed, Figure 8C-8E shows that expression of RBM47 drastically inhibits primary tumor growth, suggesting a possible role of RBM47 in regulating primary tumor growth, with a possible downstream effect on metastasis. Figure 8 aims to demonstrate a critical role of DKK1 downstream of RBM47 in suppressing tumor progression. Since Figure 8F shows that DKK1 knockdown resulted in significantly bigger primary tumors, it is again unclear whether there is any specific effect on metastasis. For this work to be of sufficient impact for publication in eLife experiments to demonstrate a specific role of RBM47 in metastasis, as opposed to general cell proliferation, are required.\n\n2) Given the pleiotropic effects of the RBM47 protein on cellular RNA metabolism, it is possible that multiple target RNAs are involved and stronger evidence that the DKK1 and Wnt signaling pathways are the primary targets would be required. Possible experiments include:\n\na) Examining whether RBM47 expression is inversely correlated with Wnt gene signatures in the human breast tumor datasets described in Figure 1.\n\nb) Examining if weaker DKK1 shRNAs have the appropriate effect on tumor growth and metastasis as related to RBM47. This is based on the observation that Figure 8S1B shows that RBM47 overexpression resulted in \u223c3-fold increase of DKK1 protein level. However, DKK1 shRNAs used in suppression of DKK1 protein to an almost undetectable level; much lower than the level in the control cells without RBM47. Therefore, the observed tumor growth and brain metastasis formation upon DKK1 knockdown (Figure 8F-8H) may not be necessarily related to RBM47. To test this, much weaker DKK1 shRNAs should be used to bring down the DKK1 protein level to the level in the control cells as shown in Figure 8S1B to test its effect on tumor growth and metastasis. Ideally, depletion of the relevant Wnts expressed by these cells would establish the importance of DKK1 as a target for metastasis suppression by RBM47.\n\n3) Most of the experiments were carried out with the metastatic variants of the MDA-MB-231 cell line, and one would like to know how general the effect of manipulating RBM47 levels on breast cancer cell metastasis is. Some experiments were carried out with CN34 cells, a metastatic breast cancer line derived from a pleural effusion at MSKCC, and these data support the conclusion that RBM47 acts to reduce metastasis. In this regard, the authors showed that CN34-BrM2 cells have low levels of RBM47 \u2013 did they check if RBM47 expression reduces the level of brain metastases? Have any other breast cancer cell lines been assessed for the effects of RBM47 expression or depletion on metastatic potential (e.g. lines like SKBR3 that have high endogenous RBM47)?\n\nMinor comments:\n\n4) It would improve the CLIP data to normalize their number of tags to the abundance of that RNA from the RNA-seq data. This might reveal a more relevant binding to intron sequences (which are generally present at low levels).\n\n5) It is possible that effects on alternative splicing can influence RNA stability due to sequence differences in mature mRNAs. Although not required for publication, it would improve the manuscript if the authors determined whether there is a significant overlap between mRNAs with altered splicing and abundance in order to see if these two sets are related.\n\n6) The CLIP experiment was done with over-expressed RBM47 protein and this has the potential to influence the observed binding sites. This caveat should at least be made explicit in the manuscript.\n\n7) The key functional data presented in this study (Figures 2, 3, and 8) relied on overexpressing RBM47 in tumor cells. It is unclear how the level of RBM47 overexpression is compared to the physiological level of RBM47 in normal cells or the parental non-metastatic cells. This information is critical to determine whether the observed tumor growth reduction upon RBM47 overexpression is due to physiological effect of RBM47 or due to toxic effects of overexpressed RBM47.\n\n8) It would significantly strengthen the manuscript if the effect of RBM47 on metastasis could be ascribed to a specific step in metastasis (e.g. invasion, survival, stem cell properties, interaction with stromal cells, or per-metastatic niche).\n\n9) Since no biochemical analysis was performed on the RBM47 I281fs mutant, it is unclear whether this mutation completely abolishes RBM47 function. Therefore, in Figure 2, LM2 cells expressing a vector control should also have been used to compare the effect on expressing WT and MUT RBM47.\n\n10) In Figure 2F shRNAs were used to knock down RBM47 in LM2 cells to determine the effects on lung colonization. Western blotting analysis should be presented to show the RBM47 knockdown levels. Instead, it is confusing why Figure 3S1A shows the western blot with CN34 cells.\n\n11) Figure 3A-3D should include staining for RBM47 in the parental cells or cells expressing a control vector. Otherwise, it is unclear what is the negative RBM47 staining. Figure 3S1B states these are RBM47 negative tumors, although many show positive signals. It is important to co-stain for a marker specific for tumor cells, so that expression of RBM47 in tumor cells vs. stromal cells can be separated.\n",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9ff20225-1ae4-4e43-83fe-01ebfe0f52d3",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C1",
+      "claim": "RBM47 was identified as a suppressor of breast cancer progression and metastasis through integrative analysis of clinical breast cancer gene expression datasets, cell line models, and mutation data from cancer genome resequencing studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Through integrative analysis of clinical breast cancer gene expression datasets, cell line models of breast cancer progression, and mutation data from cancer genome resequencing studies, we identified RNA binding motif protein 47 (RBM47) as a suppressor of breast cancer progression and metastasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental approach described in the abstract and detailed in the results section, combining multiple data sources.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "b7843268-f5cb-4729-9d4a-d985c0621106",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C2",
+      "claim": "RBM47 inhibited breast cancer re-initiation and growth in experimental models.",
+      "claim_type": "EXPLICIT",
+      "source": "RBM47 inhibited breast cancer re-initiation and growth in experimental models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from in vivo models shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "c41e94a3-2674-4029-83a1-1d52f8f6f342",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C3",
+      "claim": "Transcriptome-wide HITS-CLIP analysis revealed widespread RBM47 binding to mRNAs, most prominently in introns and 3\u2032UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptome-wide HITS-CLIP analysis revealed widespread RBM47 binding to mRNAs, most prominently in introns and 3\u2032UTRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by HITS-CLIP experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "db29eb08-2c7b-435a-aa7b-32afc559c4ed",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C4",
+      "claim": "RBM47 altered splicing and abundance of a subset of its target mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "RBM47 altered splicing and abundance of a subset of its target mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq and HITS-CLIP data showing changes in mRNA levels and splicing patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "768836c6-e0f1-4741-a3a8-6af585cab315",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C5",
+      "claim": "Dickkopf WNT signaling pathway inhibitor 1 (DKK1) is stabilized by RBM47 and inhibits tumor progression downstream of RBM47.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the mRNAs stabilized by RBM47, as exemplified by dickkopf WNT signaling pathway inhibitor 1, inhibit tumor progression downstream of RBM47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing DKK1 mRNA stabilization and functional assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "4f8187c7-9111-49f4-8c4e-078c4dc6d1be",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C6",
+      "claim": "RBM47 was the only gene that fulfilled the criteria of reduced mRNA expression in functionally metastatic cancer cells, low mRNA expression associated with poor patient outcome, and enriched mutation in a brain metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "RBM47, a gene encoding a previously uncharacterized putative RNA-binding protein was the only one that fulfilled all these criteria (Baltz et al., 2012; Castello et al., 2012; Ray et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the integrative analysis of multiple datasets as described in the methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "c0f7c2ab-7200-44dc-bf8d-11bf664e2a02",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C7",
+      "claim": "RBM47 mRNA expression is lower in highly metastatic cells compared to parental cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the lower expression of RBM47 mRNA in the highly metastatic cells (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative RT-PCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "2b80c879-9195-4391-9133-50bc166d2f52",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C8",
+      "claim": "Lower RBM47 mRNA expression translates into a comparable difference at the protein level.",
+      "claim_type": "EXPLICIT",
+      "source": "This translated into a comparable difference at the protein level (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blotting data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "c191d365-6429-4741-8bfc-c2c4e75dfbdb",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C9",
+      "claim": "Low RBM47 mRNA expression is significantly associated with relapse to brain and lung in clinical datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "In the clinical data sets, low RBM47 mRNA expression was significantly associated with relapse to brain and lung (Figure 1D,E) but not to bone (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by survival analysis of clinical data shown in Figures 1D and 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "5e64fd07-37c0-4678-b84c-7e87489796fe",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C10",
+      "claim": "Low RBM47 mRNA expression is not significantly associated with relapse to bone in clinical datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "In the clinical data sets, low RBM47 mRNA expression was significantly associated with relapse to brain and lung (Figure 1D,E) but not to bone (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by survival analysis of clinical data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "747f6791-f7e4-4338-a35f-5866bf3fccb3",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C11",
+      "claim": "In multivariate analysis combining RBM47 expression with ER, PR and HER2 receptor status, the association with brain metastasis remained statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "In multivariate analysis combining RBM47 expression with estrogen, progesterone and HER2 receptor status (ER, PR and HER2), the association with brain metastasis remained statistically significant (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by multivariate Cox proportional hazards model analysis shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "d3855cc9-ed69-4c1c-8130-57d18f4dec75",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C12",
+      "claim": "Low RBM47 expression is significantly associated with claudin-low and basal breast cancers in the TCGA cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that low RBM47 expression was significantly associated with claudin-low and basal breast cancers (Figure 1G), two subtypes of poor prognosis (Smid et al., 2008; Lu et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data from the TCGA cohort shown in Figure 1G.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "088b4737-bfb7-46b5-8c30-c7e68280726d",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C13",
+      "claim": "Claudin-low and basal breast cancers are two subtypes of poor prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that low RBM47 expression was significantly associated with claudin-low and basal breast cancers (Figure 1G), two subtypes of poor prognosis (Smid et al., 2008; Lu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "ac53d7bd-6331-44ba-bed6-12b26f85985d",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C14",
+      "claim": "The RBM47I281fs mutation truncates the protein from the third RNA recognition motif (RRM) onwards.",
+      "claim_type": "EXPLICIT",
+      "source": "The RBM47I281fs mutation first reported in a brain metastasis truncates the protein from the third RNA recognition motif (RRM) onwards (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the protein structure diagram shown in Figure 1H and reference to the mutation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "121ee9c1-2f89-4807-b179-aa60100b7f56",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C15",
+      "claim": "The RBM47I281fs mutation was already present in a minority subpopulation of the corresponding primary tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "As this mutation was already present in a minority subpopulation of the corresponding primary tumor (Ding et al., 2010), we looked for additional evidence of genetic RBM47 aberrations in primary breast cancer cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ding et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "c1c42537-cc91-44c1-b31b-cc7a8561e32d",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C16",
+      "claim": "The COSMIC database reported 9 non-synonymous mutations in RBM47, three of which were frameshift mutations truncating one or more of the RRM domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The catalogue of somatic mutations in cancer (COSMIC) database (Forbes et al., 2010) reported 9 non-synonymous mutations in RBM47, three of which were frameshift mutations truncating one or more of the RRM domains (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from the COSMIC database shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "dc302344-883c-484d-9935-03da7064af8d",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C17",
+      "claim": "In basal breast cancer, RBM47 was targeted by a mutation or homozygous deletion in approximately 8% of the cases in the TCGA cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, analysis of the data from the TCGA cohort revealed that in basal breast cancer, RBM47 was targeted by a mutation or homozygous deletion in \u223c8% of the cases (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of TCGA data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "ef2acafe-1869-490c-a084-6e79f6924685",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C18",
+      "claim": "Heterozygous loss of the RBM47 locus was present in 30% of the TCGA cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, heterozygous loss of the RBM47 locus was present in 30% of the TCGA cohort (Cerami et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of TCGA data with citation to Cerami et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "a6309d5d-5ada-4f80-930b-5ffec990d115",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C19",
+      "claim": "Wild type RBM47 inhibited lung colonization by MDA231-LM2 cells when compared to RBM47I281fs.",
+      "claim_type": "EXPLICIT",
+      "source": "As determined by in vivo bioluminescence in experimental metastasis assays, wild type RBM47 inhibited lung colonization by the MDA231-LM2 cells, when compared to RBM47I281fs (Figure 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo bioluminescence data shown in Figures 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "81b5c0a1-386c-4ccb-90fb-5637bf456650",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C20",
+      "claim": "Wild type RBM47 extended brain metastasis free survival in mice inoculated with MDA231-BrM2 cells when compared to RBM47I281fs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we observed extended brain metastasis free survival in mice inoculated with the MDA231-BrM2 cells expressing RBM47 when compared to those expressing RBM47I281fs (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by survival analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "79f3319e-3bd2-4ec0-85ab-0a17c9b4b9ed",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C21",
+      "claim": "The difference in brain metastasis free survival translated into reduced brain metastatic burden as determined by ex vivo imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference translated into reduced brain metastatic burden as determined by ex vivo imaging (Figure 2D,E, Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ex vivo bioluminescence imaging data shown in Figures 2D, 2E, and Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "9c98482f-9b0f-4176-8755-243f7dea03e8",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C22",
+      "claim": "Two RBM47-targeting shRNA constructs significantly shortened the lung metastasis free survival in mice when compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Two RBM47-targeting shRNA constructs significantly shortened the lung metastasis free survival in mice when compared to controls (Figure 2F, Figure 2\u2014figure supplement 1D), as determined by bioluminescence imaging (Figure 2G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by survival analysis and bioluminescence imaging data shown in Figures 2F-H and Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "49723189-f25b-4f2f-8233-7a69f130287c",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C23",
+      "claim": "Despite robust mRNA expression, the mutant RBM47I281fs protein levels were low, indicating that the mutant protein was unstable and therefore inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, despite robust mRNA expression, the mutant RBM47I281fs protein levels were low, indicating that the mutant protein was unstable and therefore inactive (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Western blotting data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "eb58eff3-31af-4ff4-bd30-fd0e306ad18a",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C24",
+      "claim": "Some cancer clones were able to form robust lung metastasis even in the presence of RBM47.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that some cancer clones were able to form robust lung metastasis even in the presence of RBM47 (Figure 3A, Figure 3\u2014figure supplement 1A), but that many of the metastases formed after the inoculation of wild type RBM47-expressing cells had avoided or suppressed the expression of RBM47 (Figure 3B, Figure 3A\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 3A and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "afb52a43-ffff-43af-a153-0c5807009217",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C25",
+      "claim": "Many of the metastases formed after the inoculation of wild type RBM47-expressing cells had avoided or suppressed the expression of RBM47.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that some cancer clones were able to form robust lung metastasis even in the presence of RBM47 (Figure 3A, Figure 3\u2014figure supplement 1A), but that many of the metastases formed after the inoculation of wild type RBM47-expressing cells had avoided or suppressed the expression of RBM47 (Figure 3B, Figure 3A\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 3B and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "77c034af-836d-4caa-a2c4-87c2e83705f0",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C26",
+      "claim": "The rate of proliferation as determined by Ki67 immunohistochemistry did not correlate with the level of RBM47 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of proliferation as determined by Ki67 immunohistochemistry did not correlate with the level of RBM47 expression (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Ki67 immunohistochemistry data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "1a080c66-9723-4b0f-bcf1-2f6ee07fc408",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C27",
+      "claim": "The induction of RBM47 expression with doxycycline inhibited robustly brain colonization of both metastatic cell clones, WT6 and WT10.",
+      "claim_type": "EXPLICIT",
+      "source": "The induction of RBM47 expression with doxycycline in the diet inhibited robustly brain colonization of both metastatic cell clones, WT6 and WT10 (Figure 3E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo and ex vivo bioluminescence data shown in Figures 3E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "6370c4f4-e592-4168-bd23-d093aa9e1005",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C28",
+      "claim": "The patient-derived mutant RBM47I281fs did not show any tumor suppressive effects.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the patient-derived mutant RBM47I281fs did not show any tumor suppressive effects (Figure 3H\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo and ex vivo bioluminescence data shown in Figures 3H-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "9316aea5-7f4e-429c-a393-e733b9846790",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C29",
+      "claim": "RBM47 can directly bind RNA in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether RBM47 can directly bind RNA in vivo, we made use of the ability of UV-irradiation at 254 nm to induce chemical crosslinks between RNA and proteins that are in direct contact (Darnell, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by UV-crosslinking experiments shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "1b0812fb-2571-454c-9bd7-9d70c41f1312",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C30",
+      "claim": "\u03b3-32P-labeled RNA was detected by autoradiogram at approximately 76 kD, the predicted size of Flag-RBM47, in Flag-immunoprecipitates from UV-irradiated, doxycycline-treated MDA231-BrM2 WT Flag-RBM47 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b3-32P-labeled RNA was detected by autoradiogram at \u223c76 kD, the predicted size of Flag-RBM47, in Flag-immunoprecipitates from UV-irradiated, doxycycline-treated MDA231-BrM2 WT Flag-RBM47 cells, but not doxycycline-treated empty vector control or non-irradiated WT Flag-RBM47 expressing cells (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by autoradiogram data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "9db3fcdf-efe0-4c31-bc1f-87a7c883a27a",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C31",
+      "claim": "RBM47 HITS-CLIP yielded approximately 7.7 \u00d7 10^6 and approximately 2.0 \u00d7 10^6 unique reads (tags) per replicate.",
+      "claim_type": "EXPLICIT",
+      "source": "RBM47-bound HITS-CLIP reads were mapped to the human genome, yielding \u223c7.7 \u00d7 106 and \u223c2.0 \u00d7 106 unique reads (tags) per replicate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by HITS-CLIP sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "ed56e4be-04f1-41d6-9537-6f2c49b1eadc",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C32",
+      "claim": "75% of the HITS-CLIP tags mapped to regions corresponding to UCSC/Refseq genes.",
+      "claim_type": "EXPLICIT",
+      "source": "75% of the tags mapped to regions corresponding to UCSC/Refseq genes, with a high degree of reproducibility of binding observed between replicates (Spearmann correlation coefficient R2 = 0.998, total tags per gene, Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by HITS-CLIP data analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "928ea204-8b01-4552-8c25-8faf17433820",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C33",
+      "claim": "There is a high degree of reproducibility of RBM47 binding observed between replicates (Spearmann correlation coefficient R2 = 0.998).",
+      "claim_type": "EXPLICIT",
+      "source": "75% of the tags mapped to regions corresponding to UCSC/Refseq genes, with a high degree of reproducibility of binding observed between replicates (Spearmann correlation coefficient R2 = 0.998, total tags per gene, Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis of HITS-CLIP data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "2e3e55f5-c6a1-4766-a03f-c52eaf5b7beb",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C34",
+      "claim": "Increasing the stringency of biologically reproducible RBM47 binding site definition reveals predominant binding in 3\u2032UTRs and intronic regions of target transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the stringency of biologically reproducible RBM47 binding site definition reveals predominant binding in 3\u2032UTRs and intronic regions of target transcripts, with the most robust binding (tags per binding site) evident in 3\u2032UTRs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by HITS-CLIP data analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "619c373f-a684-4c78-bb9a-a981ef61cbac",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C35",
+      "claim": "MEME analysis reveals an enrichment for polyU sequences in the \u00b110 nt footprint region surrounding reproducible RBM47 deletion CIMS.",
+      "claim_type": "EXPLICIT",
+      "source": "MEME analysis reveals an enrichment for polyU sequences (50 sites, p=2.4e\u221216) in the \u00b110 nt foot print region surrounding reproducible RBM47 deletion CIMS (357 sites with \u22655 mutations, FDR \u22640.01, Zhang and Darnell, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MEME motif analysis shown in Figure 4F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "eb7cc0d0-acdd-4e00-ba8d-c4410689042a",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C36",
+      "claim": "Widespread RBM47 binding is seen in target transcripts, as exemplified by binding patterns seen in the 3\u2032UTRs of DKK1 and IL8.",
+      "claim_type": "EXPLICIT",
+      "source": "Widespread RBM47 binding is seen in target transcripts, as exemplified by binding patterns seen in the 3\u2032UTRs of DKK1 and IL8.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by HITS-CLIP data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "5ee9e7c9-61a2-49ec-ae73-1ba718614289",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C37",
+      "claim": "RNA-seq analysis revealed 121 and 140 CA exons with significant RBM47-dependent inclusion and exclusion, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed 121 and 140 CA exons with significant RBM47-dependent inclusion and exclusion, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "f968ecd5-5966-4b60-9ec4-9650368906a5",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C38",
+      "claim": "Forty-eight RBM47-bound included and 49 RBM47-bound excluded CA exons were identified in a total of 84 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Forty-eight RBM47-bound included and 49 RBM47-bound excluded CA exons were identified in a total of 84 genes (Figure 5B; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by combined HITS-CLIP and RNA-seq analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "acb4fd3f-ccf6-4cbe-8086-84899840d3d5",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C39",
+      "claim": "RBM47-dependent splicing changes were confirmed via RT-PCR for SLK, MDM4, LIMCH1, MBNL1 and SEC31A.",
+      "claim_type": "EXPLICIT",
+      "source": "RBM47-dependent splicing changes were confirmed via RT-PCR as shown for SLK, MDM4, LIMCH1, MBNL1 and SEC31A (Figure 5C, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-PCR validation data shown in Figure 5C and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "d195be1a-0cc3-4a0e-90cc-979f95940e5d",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C40",
+      "claim": "The normalized complexity map reveals enriched RBM47 binding in the vicinity of splice acceptor sites of the CA exon and 3\u2032 CE for included alternative isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting normalized complexity map reveals enriched RBM47 binding in the vicinity of splice acceptor sites of the CA exon and 3\u2032 CE for included alternative isoforms, while relative enrichment of RBM47 binding was seen at the 5\u2032 CE splice donor and 3\u2032CE splice acceptor of excluded isoforms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the normalized complexity map shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "7bf34136-65ea-4abc-8f08-6642641d8cca",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C41",
+      "claim": "Relative enrichment of RBM47 binding was seen at the 5\u2032 CE splice donor and 3\u2032CE splice acceptor of excluded isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting normalized complexity map reveals enriched RBM47 binding in the vicinity of splice acceptor sites of the CA exon and 3\u2032 CE for included alternative isoforms, while relative enrichment of RBM47 binding was seen at the 5\u2032 CE splice donor and 3\u2032CE splice acceptor of excluded isoforms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the normalized complexity map shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "b1f063e3-6d4e-455e-a80f-4d015dd91b67",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C42",
+      "claim": "The mRNA level of several more genes correlated significantly with increasing concentrations of doxycycline in both cell lines expressing the wild type RBM47 (WT6 and WT10), when compared to cells expressing the mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "First, genome-wide analyses showed that the mRNA level of several more genes correlated significantly with increasing concentrations of doxycycline in both cell lines expressing the wild type RBM47 (WT6 and WT10), when compared to cells expressing the mutant (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "45b87bbf-e3e9-4de7-bded-15dbc356b084",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C43",
+      "claim": "A set of 102 mRNAs were upregulated and 92 were downregulated in cells expressing the wild type RBM47.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed a set of 102 mRNAs that were upregulated and 92 that were downregulated, respectively, in cells expressing the wild type RBM47 (Figure 6C, Figure 6\u2014figure supplement 1A,B; Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data analysis shown in Figure 6C and Figure 6\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "743562be-5705-4d98-8b55-f48fc465dfeb",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C44",
+      "claim": "These changes in mRNA levels were observed already with the lowest expression level of RBM47 that was comparable or lower than those detected in endogenously RBM47 expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these changes were observed already with the lowest expression level of RBM47 that was comparable or lower than those detected in endogenously RBM47 expressing cells (Figure 3\u2014figure supplement 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of RBM47 expression levels shown in Figure 3\u2014figure supplement 2D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "ffaac0d5-553a-496f-a932-1c21c0cbb7b8",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C45",
+      "claim": "Unsupervised hierarchical clustering analysis of the TCGA cohort using the 194 RBM47-responsive genes revealed two main clusters, one of which harbored characteristics of the RBM47-low phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether the 194 RBM47-responsive genes displayed clinically meaningful expression patterns, we conducted an unsupervised hierarchical clustering analysis of the TCGA cohort of breast cancer specimens. Two main clusters emerged, one of which harbored characteristics of the RBM47-low phenotype ('Cluster 2', Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by hierarchical clustering analysis shown in Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "ef4f32da-6bf0-4316-8844-9ce7ac0def3a",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C46",
+      "claim": "Cluster 2 had significantly lower RBM47 expression levels when compared to Cluster 1.",
+      "claim_type": "EXPLICIT",
+      "source": "First, this subgroup, Cluster 2, had significantly lower RBM47 expression levels when compared to Cluster 1 (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RBM47 expression analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "1dfe24b9-097f-4611-a2cb-454179b60255",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C47",
+      "claim": "The genes that were induced upon RBM47 reintroduction tended to have lower expression in Cluster 2, whereas genes with reduced expression level in the RBM47-expressing cells tended to show higher expression in Cluster 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the genes that were induced upon RBM47 reintroduction tended to have lower expression in Cluster 2, whereas genes with reduced expression level in the RBM47-expressing cells tended to show higher expression in Cluster 2 (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression analysis shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "a322b33d-a7ec-40ca-950c-bba03eeb8b81",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C48",
+      "claim": "Of the 2498 strongest binding partners with >100 tags per transcript, 25 were among the 102 RBM47-upregulated genes and 17 among the 92 RBM47-downregulated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 2498 strongest binding partners with >100 tags per transcript (total tags in BC2 tags \u226510 clusters; Supplementary file 3), 25 were among the 102 RBM47-upregulated genes and 17 among the 92 RBM47-downregulated genes (Figure 6F), indicating no significant binding preference for either groups.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by combined HITS-CLIP and RNA-seq analysis shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "b083d449-27f3-4daa-a589-8ad29cc53563",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C49",
+      "claim": "IL8 and DKK1 were among the top-scoring RBM47 binding mRNAs and were among the upregulated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the top-scoring RBM47 binding mRNAs, IL8 and DKK1 (17,079 and 16,208 tags in clusters per gene, respectively, Figure 4G), were among the upregulated genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by HITS-CLIP and RNA-seq data shown in Figures 4G and 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "38be7224-68ab-47dc-9a6b-0bf38b47fcaa",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C50",
+      "claim": "The increase in DKK1 and IL8 mRNA levels was associated with increased protein secretion as determined by ELISA.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase in mRNA levels was associated with increased protein secretion as determined by ELISA, whereas VEGFA, the mRNA of which was bound but not upregulated by RBM47, showed no change in protein secretion (Figure 6H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ELISA data shown in Figure 6H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "e731f33f-d90b-4953-a691-aca08eb5c6d0",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C51",
+      "claim": "VEGFA mRNA was bound but not upregulated by RBM47 and showed no change in protein secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase in mRNA levels was associated with increased protein secretion as determined by ELISA, whereas VEGFA, the mRNA of which was bound but not upregulated by RBM47, showed no change in protein secretion (Figure 6H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ELISA data shown in Figure 6H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "085eef57-c744-4983-b20f-25a412858ea2",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C52",
+      "claim": "Knockdown of RBM47 in SKBR3 and ZR-75-30 cells reduced DKK1 mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by our results in WT6 and WT10 cells, knockdown of RBM47 in two additional breast cancer cell lines expressing high levels of endogenous RBM47, SKBR3 and ZR-75-30, reduced DKK1 mRNA levels (Figure 7A, Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative RT-PCR data shown in Figure 7A and Figure 7\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "e0ac7d2b-76de-47f4-a99b-067f85ed7dcb",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C53",
+      "claim": "Wild type RBM47, but not the RBM47I281fs mutant, was able to increase the half-life of DKK1 mRNA by up to fourfold.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrated that wild type RBM47, but not the RBM47I281fs mutant, was able to increase the half-life of DKK1 mRNA by up to fourfold (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mRNA stability assay data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "54eef7d1-868d-40d8-8c2b-458e3b97337c",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C54",
+      "claim": "RBM47 inhibited the capability of the 3\u2032-targeting shRNA-miRs to keep the DKK1 mRNA level down.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, RBM47 inhibited the capability of the 3\u2032-targeting shRNA-miRs to keep the DKK1 mRNA level down (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative RT-PCR data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "52133918-db25-4acb-b8b3-ae13c12176a4",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C55",
+      "claim": "The induction of RBM47 expression did not have a significant effect on the efficiency of the 5\u2032-targeting shRNA-miRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The induction of RBM47 expression did not have a significant effect on the efficiency on the 5\u2032-targeting shRNA-miRs (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative RT-PCR data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "53fc9597-c8fb-4f6d-9c07-1cd5aa2600b2",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C56",
+      "claim": "Doxycycline-induced expression of RBM47 in WT6 cells led to a dampened Wnt3A-dependent AXIN2 induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Doxycycline-induced expression of RBM47 in WT6 cells led to a dampened Wnt3A-dependent AXIN2 induction (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative RT-PCR data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "36db374a-1635-45f8-9dfd-9724a439d30e",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C57",
+      "claim": "The inhibition of AXIN2 expression by RBM47 was at least partially dependent on DKK1.",
+      "claim_type": "EXPLICIT",
+      "source": "This inhibition of AXIN2 expression was at least partially dependent on DKK1 (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative RT-PCR data with DKK1 knockdown shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "c4a187b3-0a72-45cc-922b-153bcbd4e8ec",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C58",
+      "claim": "Human breast cancers with low RBM47 expression had in general higher levels of Wnt transcriptomic activity when compared to tumors with high RBM47 expression in the TCGA cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with these results, human breast cancers with low RBM47 expression had in general higher levels of Wnt transcriptomic activity when compared to tumors with high RBM47 expression in the TCGA cohort (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Wnt pathway activity analysis in the TCGA cohort shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "14555cb4-298f-455c-806a-f02396a24826",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C59",
+      "claim": "The induction of RBM47 by doxycycline was able to significantly delay the emergence of mammary tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The induction of RBM47 by doxycycline was able to significantly delay the emergence of mammary tumors (Figure 8D), and the tumors that formed were smaller in size (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo bioluminescence data shown in Figures 8D and 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "2a3411e2-358e-4339-8f0a-f8b9425e2243",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C60",
+      "claim": "Inhibition of DKK1 expression in the MDA231-BrM2 cells promoted tumor formation in the orthotopic site.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, inhibition of DKK1 expression in the MDA231-BrM2 cells promoted tumor formation in the orthotopic site (Figure 8F, Figure 8\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo bioluminescence data shown in Figure 8F and Figure 8\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "12cd0d85-6deb-401f-b14c-6e169dcaf2b4",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C61",
+      "claim": "Only 1/9 mice (16%) injected with control cells developed brain metastasis, whereas 8/17 mice (47%) inoculated with DKK1 RNAi construct transduced cells developed metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 1/9 mice (16%) injected with control cells developed brain metastasis, whereas 8/17 mice (47%) inoculated with DKK1 RNAi construct transduced cells developed metastasis (Figure 8G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ex vivo bioluminescence data shown in Figures 8G and 8H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "076f191a-8605-4f34-8f8e-06fe38df2391",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C62",
+      "claim": "RBM47 contains three classical RNA recognition motifs (RRM domains).",
+      "claim_type": "EXPLICIT",
+      "source": "RBM47 contains three classical RNA recognition motifs (RRM domains).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the protein structure of RBM47.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "53031c00-580f-4216-bb95-8f78e6d7a149",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C63",
+      "claim": "The closest homologs of RBM47 are Apobec1 complementation factor (A1CF) and hnRNP-Q.",
+      "claim_type": "EXPLICIT",
+      "source": "The closest homologs of RBM47 are Apobec1 complementation factor (A1CF) and hnRNP-Q, which regulate RNA editing (Mehta et al., 2000) and splicing and transcript stability, respectively (Chen et al., 2008; Weidensdorfer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequence homology analysis and citations to published literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "d9c0d30b-34b3-4ad9-9639-53fd0b29207c",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C64",
+      "claim": "A1CF regulates RNA editing.",
+      "claim_type": "EXPLICIT",
+      "source": "The closest homologs of RBM47 are Apobec1 complementation factor (A1CF) and hnRNP-Q, which regulate RNA editing (Mehta et al., 2000) and splicing and transcript stability, respectively (Chen et al., 2008; Weidensdorfer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mehta et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "7784f3aa-3e95-49e8-bad4-49809f508c9e",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C65",
+      "claim": "hnRNP-Q regulates splicing and transcript stability.",
+      "claim_type": "EXPLICIT",
+      "source": "The closest homologs of RBM47 are Apobec1 complementation factor (A1CF) and hnRNP-Q, which regulate RNA editing (Mehta et al., 2000) and splicing and transcript stability, respectively (Chen et al., 2008; Weidensdorfer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chen et al., 2008 and Weidensdorfer et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "0a54d1a7-180d-4dcc-b283-b2d45f6df25c",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C66",
+      "claim": "RBM47 binds robustly to approximately 2500 gene transcripts in human breast cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that RBM47 binds robustly to \u223c2500 gene transcripts in human breast cancer cells, with only a subset showing steady state level change or alternative splicing upon RBM47 reintroduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by HITS-CLIP data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "4cf4718e-2f88-44b5-a019-09c4bf985bb0",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C67",
+      "claim": "Only a subset of RBM47-bound transcripts show steady state level change or alternative splicing upon RBM47 reintroduction.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that RBM47 binds robustly to \u223c2500 gene transcripts in human breast cancer cells, with only a subset showing steady state level change or alternative splicing upon RBM47 reintroduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by combined HITS-CLIP and RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "32f81dd8-3c07-4e2e-8689-a08957766e65",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C68",
+      "claim": "The RRM-domain containing protein HuR modulates the destabilizing effects of miRNAs and AUF1 on common target transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the RRM-domain containing protein HuR modulates the destabilizing effects of miRNAs (Bhattacharyya et al., 2006; Kim et al., 2009; Young et al., 2012) and AUF1 (Zou et al., 2010) on common target transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "3d096306-067a-41a9-9aa3-ac8703ec91c1",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C69",
+      "claim": "DKK1 is a secreted Wnt inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most highly bound RBM47 mRNA targets, the secreted Wnt inhibitor DKK1, is stabilized by RBM47 and partially mediates RBM47 tumor suppressive function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DKK1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "32378dc8-8238-4e9a-a760-9e8e97f0fb47",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C70",
+      "claim": "rbm47 knockdown in zebra fish embryos leads to a headless phenotype mediated via up-regulation of the wnt8a pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, rbm47 knockdown in zebra fish embryos leads to a headless phenotype mediated via up-regulation of the wnt8a pathway (Guan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Guan et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "5047c232-7260-4f2f-9203-fe3f3484416d",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C71",
+      "claim": "Low-frequency cancer mutations can give rise to tumorigenic phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we show that low-frequency cancer mutations can give rise to tumorigenic phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the study of RBM47.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "a93872ab-f17a-45f0-a14a-3544bbd88830",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C72",
+      "claim": "Loss of a broadly targeted and multifunctional RBP can increase the fitness of certain cancer cell clones in support of metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we show that loss of a broadly targeted and multifunctional RBP can increase the fitness of certain cancer cell clones in support of metastasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the study of RBM47.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "2c387849-5698-4ed6-bff0-7bd4210703a2",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C73",
+      "claim": "Deregulation of RNA-binding proteins is emerging as a prominent source of complex transcriptomic diversity that can serve as a platform for the selection of metastatic traits during tumor progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Deregulation of RNA-binding proteins is thus emerging as a prominent source of complex transcriptomic diversity that can serve as a platform for the selection of metastatic traits during tumor progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the study and broader literature context.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "6a5cf209-a7de-4c87-83d1-929af75ac0da",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C74",
+      "claim": "Cancers arise through an evolutionary process that feeds from stochastic genetic alterations and selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancers arise through an evolutionary process that feeds from stochastic genetic alterations and selection (Vogelstein et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Vogelstein et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "3373c910-bc4d-4ae1-8c88-321827d6599e",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C75",
+      "claim": "Several independent studies have characterized the mutational complement of breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, several independent studies have characterized the mutational complement of breast cancer, one of the most common human malignancies (Shah et al., 2009; Stephens et al., 2009; Ding et al., 2010; Banerji et al., 2012; Cancer Genome Atlas Network, 2012; Shah et al., 2012; Stephens et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "6cff92b4-b262-4999-91bd-2c1fcb6146c7",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C76",
+      "claim": "Breast cancer is one of the most common human malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, several independent studies have characterized the mutational complement of breast cancer, one of the most common human malignancies (Shah et al., 2009; Stephens et al., 2009; Ding et al., 2010; Banerji et al., 2012; Cancer Genome Atlas Network, 2012; Shah et al., 2012; Stephens et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established epidemiological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "e0ab2a79-582e-46c5-82a3-2c0c28563dce",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C77",
+      "claim": "Most breast cancer resequencing studies report a long tail of rarely mutated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides confirming previously known cancer genes, such as TP53 and PIK3CA, most studies also report a long tail of rarely mutated genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation from cancer genome sequencing studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "25463c3e-9658-475f-a99f-8b28ff870cb9",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C78",
+      "claim": "Many mutations in the long tail of rarely mutated genes are likely to be passenger events.",
+      "claim_type": "EXPLICIT",
+      "source": "While many of these mutations are likely to be passenger events, some of them are potential mediators of tumor phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle in cancer genomics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "36293959-8d39-4483-8d30-b24597fe4cc0",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C79",
+      "claim": "Some mutations in the long tail of rarely mutated genes are potential mediators of tumor phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "While many of these mutations are likely to be passenger events, some of them are potential mediators of tumor phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle in cancer genomics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "ff10ea5d-af22-4d3e-8e26-48c23cee4f08",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C80",
+      "claim": "Mutations in epigenetic regulators support the stabilization of altered transcriptomic profiles that facilitate the emergence of pro-tumorigenic and metastatic traits.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to mutations that directly promote tumorigenesis through specific alterations in cell signaling and repair pathways, many aberrations found in cancers do not affect cell signaling pathways directly, but rather, they support the stabilization of altered transcriptomic profiles that facilitate the emergence of pro-tumorigenic and metastatic traits. Mutations in epigenetic regulators fall into this category (Shen and Laird, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Shen and Laird, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "b903c306-148c-4056-853d-8283f58e05b4",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C81",
+      "claim": "The phenotypic output of alterations in epigenetic regulators depends on the activity of already existing signaling processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotypic output of such alterations would depend on the activity of already existing signaling processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about how epigenetic alterations function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "4e33ce3f-b20e-4435-81a1-9d539fc7490a",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C82",
+      "claim": "Examples of epigenetic alterations that result in a phenotypic trait in the presence of a specific transcriptional program have been described.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, examples of epigenetic alterations that result in a phenotypic trait in the presence of a specific transcriptional program have been described (Vanharanta et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Vanharanta et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "088cae8d-35a6-49f4-9e52-47a8d97687f9",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C83",
+      "claim": "Aberrations in the multi-step mRNA processing and turnover cascade could lock in aberrant transcriptomic states.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogously, aberrations in the multi-step mRNA processing and turnover cascade (Moore and Proudfoot, 2009) could also lock in aberrant transcriptomic states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on analogy with epigenetic alterations, with citation to Moore and Proudfoot, 2009.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "2daa9c05-f70b-4b7e-89ce-58d0279f54ab",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C84",
+      "claim": "Precise regulation of RNA metabolism is fundamental in the generation of biological complexity in both normal and disease states.",
+      "claim_type": "EXPLICIT",
+      "source": "Precise regulation of RNA metabolism is fundamental in the generation of biological complexity in both normal and disease states (Sharp, 2009; Licatalosi and Darnell, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Sharp, 2009 and Licatalosi and Darnell, 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "2a5b25aa-5af4-49f6-bcd5-76f3cf9dcfcf",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C85",
+      "claim": "The concerted action of multiple RNA binding proteins regulate the spatial, temporal and functional dynamics of the transcriptome via alternative splicing, alternative polyadenylation and transcript stability.",
+      "claim_type": "EXPLICIT",
+      "source": "The concerted action of multiple RNA binding proteins (RBPs) regulate the spatial, temporal and functional dynamics of the transcriptome via alternative splicing, alternative polyadenylation and transcript stability (Moore and Proudfoot, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Moore and Proudfoot, 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "b570a864-b0ea-4945-9d3a-6a27ba8f535c",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C86",
+      "claim": "Malignancy-associated dysregulation of RNA metabolism via aberrant microRNA expression is relatively well established.",
+      "claim_type": "EXPLICIT",
+      "source": "While malignancy-associated dysregulation of RNA metabolism via aberrant microRNA expression is relatively well established (Di Leva et al., 2013; Pencheva and Tavazoie, 2013), a growing body of evidence indicates a prominent role also for RBPs in both the development and progression of cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Di Leva et al., 2013 and Pencheva and Tavazoie, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "d5dc4273-2ca9-41d7-95bc-5fe7b1c28f79",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C87",
+      "claim": "A growing body of evidence indicates a prominent role for RBPs in both the development and progression of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "While malignancy-associated dysregulation of RNA metabolism via aberrant microRNA expression is relatively well established (Di Leva et al., 2013; Pencheva and Tavazoie, 2013), a growing body of evidence indicates a prominent role also for RBPs in both the development and progression of cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the emerging role of RBPs in cancer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "3b660c7d-43b7-444f-8b25-9624c28db04c",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C88",
+      "claim": "Upregulation of the splicing regulator SRSF1 is associated with multiple tumor types.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, upregulation of the splicing regulator SRSF1 is associated with multiple tumor types (Karni et al., 2007), and is necessary for the oncogenic activity of MYC in lung cancer (Das et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Karni et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "07edda01-f2e2-4f20-9531-cbe5c3405147",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C89",
+      "claim": "SRSF1 is necessary for the oncogenic activity of MYC in lung cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, upregulation of the splicing regulator SRSF1 is associated with multiple tumor types (Karni et al., 2007), and is necessary for the oncogenic activity of MYC in lung cancer (Das et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Das et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "fe545f09-b8b2-4bca-866e-312fe0b3a54c",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "claim_id": "C90",
+      "claim": "RBM5 has been shown to be tumor suppressive in several cancer models.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, RBM5 has been shown to be tumor suppressive in several cancer models (Oh et al., 2002; Mourtada-Maarabouni et al., 2006; Oh et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Oh et al., 2002, Mourtada-Maarabouni et al., 2006, and Oh et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7c3e4e97-c23f-420c-8ace-bb28ab3b4160",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RBM47 was identified as a candidate breast cancer suppressor through integrative analysis of clinical gene expression data, cell line models, and mutation data. Low RBM47 expression correlates with poor prognosis in brain and lung metastasis, is associated with aggressive breast cancer subtypes, and RBM47 is genetically altered in a subset of breast cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C12, and C14-C18 collectively demonstrate a comprehensive integrative analysis identifying RBM47 as a candidate suppressor. The data includes validated expression differences (C7-C8), significant clinical associations with metastasis (C9-C11), subtype associations (C12), and genetic alterations (C14-C18). The multivariate analysis (C11) strengthens the clinical relevance. The convergence of multiple independent data sources provides strong support for this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "51fb1a78-a2c3-4f81-ab59-d43b0b1b0ee0",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Wild-type RBM47, but not the patient-derived RBM47I281fs mutant, suppresses breast cancer metastasis in experimental models. RBM47 overexpression inhibits lung and brain colonization, while RBM47 knockdown promotes metastasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 and C27-C28 provide strong functional evidence for RBM47 as a metastasis suppressor through both gain-of-function (C19-C21, C27) and loss-of-function (C22) experiments. The mutant control (C23, C28) demonstrates specificity. The use of multiple cell lines and metastatic sites strengthens the conclusion. The data are internally consistent and supported by appropriate in vivo models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "c1782945-f5ff-423e-87bc-2e3c46dbb898",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cancer cell populations show heterogeneous sensitivity to RBM47, with some clones forming metastases despite RBM47 expression while others suppress or lose RBM47 expression during metastatic progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 are supported by immunohistochemistry data showing variable RBM47 expression in metastatic lesions. The observation that proliferation does not correlate with RBM47 levels (C26) suggests the effect is not simply on growth rate. This heterogeneity is important for understanding the biological context of RBM47 function, though it also indicates complexity in the tumor suppressor mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "8b900b2d-7831-487e-8c40-625dffb1c385",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RBM47 directly binds RNA in vivo and exhibits widespread binding to approximately 2,500 gene transcripts, predominantly in 3'UTRs and introns, with enrichment for polyU sequences at binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 and C66 are well-supported by HITS-CLIP data with appropriate controls (C29-C30), high reproducibility between replicates (C33), and systematic analysis of binding patterns (C31-C36). The identification of polyU motif enrichment (C35) provides mechanistic insight. The data quality metrics (reproducibility R\u00b2=0.998) and stringent filtering strengthen confidence in the binding site identification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "ab9311ae-d5c8-43b8-b53e-55b3c377a0a8",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RBM47 regulates alternative splicing of cassette exons, with 97 RBM47-bound exons showing significant splicing changes. RBM47 binding patterns near splice sites differ between included and excluded exons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 are supported by RNA-seq analysis (C37-C38) with RT-PCR validation of specific targets (C39). The normalized complexity map (C40-C41) provides mechanistic insight into position-dependent splicing regulation. The integration of HITS-CLIP and RNA-seq data strengthens the conclusion that RBM47 directly regulates splicing of bound transcripts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "465fff70-91df-48af-b082-c752eb80bc30",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RBM47 regulates steady-state mRNA levels of 194 genes (102 upregulated, 92 downregulated) in a dose-dependent manner at physiologically relevant expression levels. These gene expression patterns are clinically relevant and distinguish breast cancer subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 and C67 demonstrate RBM47-dependent mRNA regulation through dose-response analysis (C42-C43), validation at physiological levels (C44), and clinical relevance through TCGA clustering (C45-C47). The use of mutant controls and multiple clonal lines strengthens the specificity. The observation that only a subset of bound transcripts show expression changes (C67) is appropriately noted and consistent with complex post-transcriptional regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "40c7d2df-a287-499f-804d-eeb0c380b00f",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Among RBM47-regulated genes, DKK1 and IL8 are top-scoring binding targets whose increased mRNA levels correlate with increased protein secretion, while VEGFA serves as a negative control showing binding without upregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 integrate HITS-CLIP binding data with RNA-seq and ELISA protein measurements. The inclusion of VEGFA as a bound but non-regulated control (C51) strengthens the conclusion that binding alone is insufficient for regulation. The high tag counts for DKK1 and IL8 (C49) support robust binding. The protein-level validation (C50) is critical for demonstrating functional consequences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "f7aaa1a7-c5da-403f-9f97-f0ae7a496144",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RBM47 stabilizes DKK1 mRNA by increasing its half-life up to fourfold and protects the DKK1 3'UTR from destabilizing factors, while not affecting 5'-targeting regulatory elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 provide mechanistic insight into RBM47 function through mRNA stability assays (C52-C53) and targeted knockdown experiments with region-specific shRNA-miRs (C54-C55). The position-dependent protection (3'UTR vs 5'UTR) is consistent with the HITS-CLIP binding patterns. The fourfold increase in half-life (C53) is substantial and biologically significant. The mutant control strengthens specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "8ecfe973-2df8-4270-823d-fbc16369c004",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "RBM47 suppresses tumor progression through DKK1-mediated inhibition of Wnt signaling. RBM47 expression dampens Wnt-dependent gene expression, and DKK1 knockdown partially rescues RBM47's tumor-suppressive effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 establish a mechanistic pathway linking RBM47 to Wnt inhibition through DKK1. The data include Wnt reporter assays (C56), DKK1 dependency experiments (C57), clinical correlation (C58), and functional rescue experiments (C59-C61). The partial dependency (C57) appropriately indicates DKK1 is one of multiple mediators. The in vivo validation (C59-C61) strengthens the biological relevance of this mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "a53dcc78-d7bd-4480-b277-da9aa546f8e3",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "RBM47 inhibits breast cancer re-initiation and growth by altering splicing and abundance of target mRNAs, with DKK1 exemplifying mRNAs that are stabilized and mediate tumor suppression downstream of RBM47.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C4, and C5 summarize the major functional findings. These are well-supported by the detailed experimental evidence in other claim groups. C2 is validated by in vivo experiments (C19-C22, C27-C28, C59-C61), C4 by HITS-CLIP and RNA-seq data (C37-C43), and C5 by mechanistic studies (C52-C61). The integration of these findings provides a coherent model of RBM47 function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "8710e1cc-5c32-45c4-aa15-7794014e511f",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Transcriptome-wide HITS-CLIP analysis revealed widespread RBM47 binding to mRNAs, most prominently in introns and 3'UTRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 is directly supported by the detailed HITS-CLIP analysis presented in claims C29-C36. The binding patterns are well-characterized with high reproducibility and appropriate controls. This is a key technical result that enables the mechanistic studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "e16bd55c-8610-48e9-9d40-8e2c74135205",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study demonstrates that low-frequency cancer mutations can drive tumorigenic phenotypes and that loss of broadly targeted RNA-binding proteins can increase metastatic fitness, establishing RBP deregulation as a source of transcriptomic diversity supporting metastatic trait selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 represent high-level conclusions drawn from the entire study. These are well-supported by the comprehensive data showing RBM47 as a low-frequency mutated gene (C14-C18) with functional consequences (C19-C28) mediated through broad transcriptomic effects (C37-C47). The conclusions appropriately synthesize the findings and place them in broader context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    },
+    {
+      "id": "d0744e70-2fbc-436f-abd7-b131e8023ed1",
+      "content_id": "ec53d29c-93b1-40fb-9302-78f91c9df29d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript provides appropriate background context on breast cancer genomics, RNA-binding protein function, and prior work on related proteins, establishing the rationale for studying RBM47.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C62-C65, C68-C70, and C74-C90 represent background knowledge and literature citations that provide context for the study. These are appropriately cited and generally accurate representations of established knowledge. While important for framing the work, these are not novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:49:41.789888Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9ff20225-1ae4-4e43-83fe-01ebfe0f52d3",
+      "result_id": "7c3e4e97-c23f-420c-8ace-bb28ab3b4160"
+    },
+    {
+      "claim_id": "4f8187c7-9111-49f4-8c4e-078c4dc6d1be",
+      "result_id": "7c3e4e97-c23f-420c-8ace-bb28ab3b4160"
+    },
+    {
+      "claim_id": "c0f7c2ab-7200-44dc-bf8d-11bf664e2a02",
+      "result_id": "7c3e4e97-c23f-420c-8ace-bb28ab3b4160"
+    },
+    {
+      "claim_id": "2b80c879-9195-4391-9133-50bc166d2f52",
+      "result_id": "7c3e4e97-c23f-420c-8ace-bb28ab3b4160"
+    },
+    {
+      "claim_id": "c191d365-6429-4741-8bfc-c2c4e75dfbdb",
+      "result_id": "7c3e4e97-c23f-420c-8ace-bb28ab3b4160"
+    },
+    {
+      "claim_id": "5e64fd07-37c0-4678-b84c-7e87489796fe",
+      "result_id": "7c3e4e97-c23f-420c-8ace-bb28ab3b4160"
+    },
+    {
+      "claim_id": "747f6791-f7e4-4338-a35f-5866bf3fccb3",
+      "result_id": "7c3e4e97-c23f-420c-8ace-bb28ab3b4160"
+    },
+    {
+      "claim_id": "d3855cc9-ed69-4c1c-8130-57d18f4dec75",
+      "result_id": "7c3e4e97-c23f-420c-8ace-bb28ab3b4160"
+    },
+    {
+      "claim_id": "ac53d7bd-6331-44ba-bed6-12b26f85985d",
+      "result_id": "7c3e4e97-c23f-420c-8ace-bb28ab3b4160"
+    },
+    {
+      "claim_id": "121ee9c1-2f89-4807-b179-aa60100b7f56",
+      "result_id": "7c3e4e97-c23f-420c-8ace-bb28ab3b4160"
+    },
+    {
+      "claim_id": "c1c42537-cc91-44c1-b31b-cc7a8561e32d",
+      "result_id": "7c3e4e97-c23f-420c-8ace-bb28ab3b4160"
+    },
+    {
+      "claim_id": "dc302344-883c-484d-9935-03da7064af8d",
+      "result_id": "7c3e4e97-c23f-420c-8ace-bb28ab3b4160"
+    },
+    {
+      "claim_id": "ef2acafe-1869-490c-a084-6e79f6924685",
+      "result_id": "7c3e4e97-c23f-420c-8ace-bb28ab3b4160"
+    },
+    {
+      "claim_id": "a6309d5d-5ada-4f80-930b-5ffec990d115",
+      "result_id": "51fb1a78-a2c3-4f81-ab59-d43b0b1b0ee0"
+    },
+    {
+      "claim_id": "81b5c0a1-386c-4ccb-90fb-5637bf456650",
+      "result_id": "51fb1a78-a2c3-4f81-ab59-d43b0b1b0ee0"
+    },
+    {
+      "claim_id": "79f3319e-3bd2-4ec0-85ab-0a17c9b4b9ed",
+      "result_id": "51fb1a78-a2c3-4f81-ab59-d43b0b1b0ee0"
+    },
+    {
+      "claim_id": "9c98482f-9b0f-4176-8755-243f7dea03e8",
+      "result_id": "51fb1a78-a2c3-4f81-ab59-d43b0b1b0ee0"
+    },
+    {
+      "claim_id": "49723189-f25b-4f2f-8233-7a69f130287c",
+      "result_id": "51fb1a78-a2c3-4f81-ab59-d43b0b1b0ee0"
+    },
+    {
+      "claim_id": "1a080c66-9723-4b0f-bcf1-2f6ee07fc408",
+      "result_id": "51fb1a78-a2c3-4f81-ab59-d43b0b1b0ee0"
+    },
+    {
+      "claim_id": "6370c4f4-e592-4168-bd23-d093aa9e1005",
+      "result_id": "51fb1a78-a2c3-4f81-ab59-d43b0b1b0ee0"
+    },
+    {
+      "claim_id": "eb58eff3-31af-4ff4-bd30-fd0e306ad18a",
+      "result_id": "c1782945-f5ff-423e-87bc-2e3c46dbb898"
+    },
+    {
+      "claim_id": "afb52a43-ffff-43af-a153-0c5807009217",
+      "result_id": "c1782945-f5ff-423e-87bc-2e3c46dbb898"
+    },
+    {
+      "claim_id": "77c034af-836d-4caa-a2c4-87c2e83705f0",
+      "result_id": "c1782945-f5ff-423e-87bc-2e3c46dbb898"
+    },
+    {
+      "claim_id": "9316aea5-7f4e-429c-a393-e733b9846790",
+      "result_id": "8b900b2d-7831-487e-8c40-625dffb1c385"
+    },
+    {
+      "claim_id": "1b0812fb-2571-454c-9bd7-9d70c41f1312",
+      "result_id": "8b900b2d-7831-487e-8c40-625dffb1c385"
+    },
+    {
+      "claim_id": "9db3fcdf-efe0-4c31-bc1f-87a7c883a27a",
+      "result_id": "8b900b2d-7831-487e-8c40-625dffb1c385"
+    },
+    {
+      "claim_id": "ed56e4be-04f1-41d6-9537-6f2c49b1eadc",
+      "result_id": "8b900b2d-7831-487e-8c40-625dffb1c385"
+    },
+    {
+      "claim_id": "928ea204-8b01-4552-8c25-8faf17433820",
+      "result_id": "8b900b2d-7831-487e-8c40-625dffb1c385"
+    },
+    {
+      "claim_id": "2e3e55f5-c6a1-4766-a03f-c52eaf5b7beb",
+      "result_id": "8b900b2d-7831-487e-8c40-625dffb1c385"
+    },
+    {
+      "claim_id": "619c373f-a684-4c78-bb9a-a981ef61cbac",
+      "result_id": "8b900b2d-7831-487e-8c40-625dffb1c385"
+    },
+    {
+      "claim_id": "eb7cc0d0-acdd-4e00-ba8d-c4410689042a",
+      "result_id": "8b900b2d-7831-487e-8c40-625dffb1c385"
+    },
+    {
+      "claim_id": "0a54d1a7-180d-4dcc-b283-b2d45f6df25c",
+      "result_id": "8b900b2d-7831-487e-8c40-625dffb1c385"
+    },
+    {
+      "claim_id": "5ee9e7c9-61a2-49ec-ae73-1ba718614289",
+      "result_id": "ab9311ae-d5c8-43b8-b53e-55b3c377a0a8"
+    },
+    {
+      "claim_id": "f968ecd5-5966-4b60-9ec4-9650368906a5",
+      "result_id": "ab9311ae-d5c8-43b8-b53e-55b3c377a0a8"
+    },
+    {
+      "claim_id": "acb4fd3f-ccf6-4cbe-8086-84899840d3d5",
+      "result_id": "ab9311ae-d5c8-43b8-b53e-55b3c377a0a8"
+    },
+    {
+      "claim_id": "d195be1a-0cc3-4a0e-90cc-979f95940e5d",
+      "result_id": "ab9311ae-d5c8-43b8-b53e-55b3c377a0a8"
+    },
+    {
+      "claim_id": "7bf34136-65ea-4abc-8f08-6642641d8cca",
+      "result_id": "ab9311ae-d5c8-43b8-b53e-55b3c377a0a8"
+    },
+    {
+      "claim_id": "b1f063e3-6d4e-455e-a80f-4d015dd91b67",
+      "result_id": "465fff70-91df-48af-b082-c752eb80bc30"
+    },
+    {
+      "claim_id": "45b87bbf-e3e9-4de7-bded-15dbc356b084",
+      "result_id": "465fff70-91df-48af-b082-c752eb80bc30"
+    },
+    {
+      "claim_id": "743562be-5705-4d98-8b55-f48fc465dfeb",
+      "result_id": "465fff70-91df-48af-b082-c752eb80bc30"
+    },
+    {
+      "claim_id": "ffaac0d5-553a-496f-a932-1c21c0cbb7b8",
+      "result_id": "465fff70-91df-48af-b082-c752eb80bc30"
+    },
+    {
+      "claim_id": "ef4f32da-6bf0-4316-8844-9ce7ac0def3a",
+      "result_id": "465fff70-91df-48af-b082-c752eb80bc30"
+    },
+    {
+      "claim_id": "1dfe24b9-097f-4611-a2cb-454179b60255",
+      "result_id": "465fff70-91df-48af-b082-c752eb80bc30"
+    },
+    {
+      "claim_id": "4cf4718e-2f88-44b5-a019-09c4bf985bb0",
+      "result_id": "465fff70-91df-48af-b082-c752eb80bc30"
+    },
+    {
+      "claim_id": "a322b33d-a7ec-40ca-950c-bba03eeb8b81",
+      "result_id": "40c7d2df-a287-499f-804d-eeb0c380b00f"
+    },
+    {
+      "claim_id": "b083d449-27f3-4daa-a589-8ad29cc53563",
+      "result_id": "40c7d2df-a287-499f-804d-eeb0c380b00f"
+    },
+    {
+      "claim_id": "38be7224-68ab-47dc-9a6b-0bf38b47fcaa",
+      "result_id": "40c7d2df-a287-499f-804d-eeb0c380b00f"
+    },
+    {
+      "claim_id": "e731f33f-d90b-4953-a691-aca08eb5c6d0",
+      "result_id": "40c7d2df-a287-499f-804d-eeb0c380b00f"
+    },
+    {
+      "claim_id": "085eef57-c744-4983-b20f-25a412858ea2",
+      "result_id": "f7aaa1a7-c5da-403f-9f97-f0ae7a496144"
+    },
+    {
+      "claim_id": "e0ac7d2b-76de-47f4-a99b-067f85ed7dcb",
+      "result_id": "f7aaa1a7-c5da-403f-9f97-f0ae7a496144"
+    },
+    {
+      "claim_id": "54eef7d1-868d-40d8-8c2b-458e3b97337c",
+      "result_id": "f7aaa1a7-c5da-403f-9f97-f0ae7a496144"
+    },
+    {
+      "claim_id": "52133918-db25-4acb-b8b3-ae13c12176a4",
+      "result_id": "f7aaa1a7-c5da-403f-9f97-f0ae7a496144"
+    },
+    {
+      "claim_id": "53fc9597-c8fb-4f6d-9c07-1cd5aa2600b2",
+      "result_id": "8ecfe973-2df8-4270-823d-fbc16369c004"
+    },
+    {
+      "claim_id": "36db374a-1635-45f8-9dfd-9724a439d30e",
+      "result_id": "8ecfe973-2df8-4270-823d-fbc16369c004"
+    },
+    {
+      "claim_id": "c4a187b3-0a72-45cc-922b-153bcbd4e8ec",
+      "result_id": "8ecfe973-2df8-4270-823d-fbc16369c004"
+    },
+    {
+      "claim_id": "14555cb4-298f-455c-806a-f02396a24826",
+      "result_id": "8ecfe973-2df8-4270-823d-fbc16369c004"
+    },
+    {
+      "claim_id": "2a3411e2-358e-4339-8f0a-f8b9425e2243",
+      "result_id": "8ecfe973-2df8-4270-823d-fbc16369c004"
+    },
+    {
+      "claim_id": "12cd0d85-6deb-401f-b14c-6e169dcaf2b4",
+      "result_id": "8ecfe973-2df8-4270-823d-fbc16369c004"
+    },
+    {
+      "claim_id": "b7843268-f5cb-4729-9d4a-d985c0621106",
+      "result_id": "a53dcc78-d7bd-4480-b277-da9aa546f8e3"
+    },
+    {
+      "claim_id": "db29eb08-2c7b-435a-aa7b-32afc559c4ed",
+      "result_id": "a53dcc78-d7bd-4480-b277-da9aa546f8e3"
+    },
+    {
+      "claim_id": "768836c6-e0f1-4741-a3a8-6af585cab315",
+      "result_id": "a53dcc78-d7bd-4480-b277-da9aa546f8e3"
+    },
+    {
+      "claim_id": "c41e94a3-2674-4029-83a1-1d52f8f6f342",
+      "result_id": "8710e1cc-5c32-45c4-aa15-7794014e511f"
+    },
+    {
+      "claim_id": "5047c232-7260-4f2f-9203-fe3f3484416d",
+      "result_id": "e16bd55c-8610-48e9-9d40-8e2c74135205"
+    },
+    {
+      "claim_id": "a93872ab-f17a-45f0-a14a-3544bbd88830",
+      "result_id": "e16bd55c-8610-48e9-9d40-8e2c74135205"
+    },
+    {
+      "claim_id": "2c387849-5698-4ed6-bff0-7bd4210703a2",
+      "result_id": "e16bd55c-8610-48e9-9d40-8e2c74135205"
+    },
+    {
+      "claim_id": "088b4737-bfb7-46b5-8c30-c7e68280726d",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "076f191a-8605-4f34-8f8e-06fe38df2391",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "53031c00-580f-4216-bb95-8f78e6d7a149",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "d9c0d30b-34b3-4ad9-9639-53fd0b29207c",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "7784f3aa-3e95-49e8-bad4-49809f508c9e",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "32f81dd8-3c07-4e2e-8689-a08957766e65",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "3d096306-067a-41a9-9aa3-ac8703ec91c1",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "32378dc8-8238-4e9a-a760-9e8e97f0fb47",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "6a5cf209-a7de-4c87-83d1-929af75ac0da",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "3373c910-bc4d-4ae1-8c88-321827d6599e",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "6cff92b4-b262-4999-91bd-2c1fcb6146c7",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "e0ab2a79-582e-46c5-82a3-2c0c28563dce",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "25463c3e-9658-475f-a99f-8b28ff870cb9",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "36293959-8d39-4483-8d30-b24597fe4cc0",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "ff10ea5d-af22-4d3e-8e26-48c23cee4f08",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "b903c306-148c-4056-853d-8283f58e05b4",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "4e33ce3f-b20e-4435-81a1-9d539fc7490a",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "088cae8d-35a6-49f4-9e52-47a8d97687f9",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "2daa9c05-f70b-4b7e-89ce-58d0279f54ab",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "2a5b25aa-5af4-49f6-bcd5-76f3cf9dcfcf",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "b570a864-b0ea-4945-9d3a-6a27ba8f535c",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "d5dc4273-2ca9-41d7-95bc-5fe7b1c28f79",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "3b660c7d-43b7-444f-8b25-9624c28db04c",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "07edda01-f2e2-4f20-9531-cbe5c3405147",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    },
+    {
+      "claim_id": "fe545f09-b8b2-4bca-866e-312fe0b3a54c",
+      "result_id": "d0744e70-2fbc-436f-abd7-b131e8023ed1"
+    }
+  ],
+  "comparisons": []
+}

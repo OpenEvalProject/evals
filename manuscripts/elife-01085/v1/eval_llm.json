@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Gic1 acts as a scaffolding protein that cross-links septin filaments into long, flexible railroad-like cables. EM and cryo-ET data show that Gic1 forms cross-bridges between septin filaments (keeping them ~20 nm apart), binds to at least two adjacent septin subunits per filament with gaps of six free subunits between Gic1 molecules, and can simultaneously interact with up to six septin polymers. The resulting cables are flexible, allowing bending and mesh-like interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C34, and C47-C53 are directly supported by EM (Figures 1, 3) and cryo-ET data showing the structural organization of septin-Gic1 complexes. The observations are consistent across multiple imaging modalities and provide clear visual evidence of Gic1's scaffolding role. The flexibility and variable filament organization are directly observed in the tomographic reconstructions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Gic1 specifically binds to the septin subunit Cdc10. Antibody labeling shows Cdc11 sits between Gic1 cross-bridges, suggesting Gic1 binds Cdc10 based on known septin order. Septin-Cdc10\u0394 does not bind Gic1, while septin-Cdc11\u0394 (which normally doesn't polymerize) forms filaments when Gic1 is added. SPA of Cdc11\u0394 filaments shows only four subunits between Gic1 cross-bridges, ruling out Cdc12 interaction. Yeast two-hybrid assays confirm Gic1 only interacts with Cdc10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 are well-supported by converging lines of evidence: antibody labeling (Figure 2A-B), deletion mutant analysis (Figure 2D-G), SPA (Figure 2H-I), and yeast two-hybrid assays (Figure 2J). The multiple independent approaches all point to Cdc10 as the Gic1 binding partner, contradicting prior literature (C37) that suggested Cdc12 interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Gic1(104-314) has a calculated molecular weight of 23 kDa but elutes at ~49 kDa from gel filtration, suggesting it forms dimers. In typical Gic1 cross-bridges, up to 12 Cdc10 subunits are involved (two per filament), and the heterogeneity of cross-bridges suggests variable numbers of Gic1 molecules per cross-bridge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by gel filtration data (Figure 4B) and structural analysis from cryo-ET (Figure 3E). The gel filtration provides direct evidence for dimerization, while the structural heterogeneity is observed in the EM and cryo-ET reconstructions. The inference about variable Gic1 stoichiometry is reasonable given the observed structural variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Gic1 binds specifically to Cdc42-GTP (GppNHp) but not to Cdc42-GDP. When Cdc42-GppNHp is added to septin-Gic1 complexes, the cross-bridges become ~1.5 times larger, spanning four septin subunits instead of two, suggesting direct interaction of Cdc42-GppNHp with Gic1 on septin filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by gel filtration data (Figure 5) showing selective binding to Cdc42-GTP, and EM/cryo-ET data (Figure 6) showing enlarged cross-bridges in the presence of Cdc42-GppNHp. The structural changes provide strong evidence for direct Cdc42-GTP-Gic1 interaction on filaments. The observations are consistent with prior literature on CRIB domain-mediated interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "At high concentrations of Cdc42-GppNHp, the septin-Gic1-Cdc42 complex dissociates. The authors propose that full decoration of Gic1 with Cdc42 destabilizes the Gic1-septin interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is directly observed in EM data (Figures 6D, 7), showing dissociation at high Cdc42-GppNHp concentrations. However, C65 is speculative\u2014the proposed mechanism of 'full decoration' causing destabilization is not directly tested. Alternative explanations (e.g., competition for binding sites, conformational changes) are not ruled out. Additional experiments would be needed to confirm the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Cdc42-GDP does not bind to septin-Gic1 complexes even at 10\u00d7 higher concentrations. This behavior is similar to the human Borg protein, where Cdc42-GTP negatively regulates Borg-septin association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is directly supported by EM data (Figure 8) showing no binding of Cdc42-GDP to septin-Gic1 complexes. Claims C67-C68 appropriately cite prior literature on Borg and draw reasonable parallels to the current findings. The comparison strengthens the interpretation of the Gic1-Cdc42 regulatory mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In the absence of Gic1, Cdc42-GDP (but not Cdc42-GTP) binds specifically to septin filaments and causes their disassembly into octamers and hexamers. Cdc42-GDP binds to Cdc10, resulting in octamers with Cdc10 at the caps (rather than Cdc11 as in high-salt conditions). The binding likely influences the Cdc10-Cdc3 G interface, forming Cdc42-GDP-Cdc10 dimers and hexameric complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 are well-supported by EM data (Figures 9, 10) showing specific binding and time-dependent disassembly, gel filtration (Figure 9D), SPA (Figure 9E-F), and antibody labeling (Figure 9G-H). The identification of Cdc10 as the binding site is based on antibody localization and known septin order. Claims C75-C77 involve structural inference and some speculation about the mechanism, but are reasonable given the data. The observation of a GDP-bound small GTPase having direct functional activity is unusual but well-documented here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Direct interaction of a protein with Cdc42-GDP is unusual since most effectors bind Cdc42-GTP. However, other proteins like Msb3 and Msb4 (GAP proteins involved in cell polarization) also interact with Cdc42-GDP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 accurately represent established knowledge about small G proteins and appropriately cite precedent (Tcheperegine et al., 2005) for Cdc42-GDP interactions. This contextualizes the surprising finding and shows it is not without precedent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The N-terminal region of Cdc10 is the least conserved among septin structures and is essential for Cdc42-GDP binding. Deletion of the N-terminal 29 residues of Cdc10 results in non-polymerizing complexes (tetramers and inside-out octamers), and Cdc42-GDP does not bind to Cdc10(30-322). This same region is important for PIP2 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by homology modeling and conservation analysis (Figure 12). Claims C82-C85 are supported by EM, SPA, and gel filtration data (Figure 13A-G) showing loss of polymerization and Cdc42-GDP binding upon N-terminal deletion. Claim C86 appropriately cites prior work (Bertin et al., 2010). The convergence of computational prediction and experimental validation strongly supports the N-terminal region as the Cdc42-GDP binding site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Both Gic1 and Cdc42-GDP bind to Cdc10 and likely compete for the same binding site. Gic1 has higher affinity for Cdc10 than Cdc42-GDP, as demonstrated by Gic1 displacing Cdc42-GDP from septin complexes and inducing polymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by EM data showing no Cdc42-GDP binding to septin-Gic1 complexes (Figure 8) and Gic1-induced polymerization of septin-Cdc42-GDP complexes (Figure 14A-B). The competitive binding model is reasonable given both proteins bind Cdc10, and the displacement experiment provides direct evidence for higher Gic1 affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Gic1 not only scaffolds septin filaments but also stabilizes them. Septin-Gic1 complexes form even under high-salt conditions that normally prevent polymerization, and pre-formed septin-Gic1 complexes remain stable when dialyzed into high salt. Gic1 can also induce polymerization of septin-Cdc11\u0394 complexes that normally don't polymerize.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 are supported by EM data (Figure 14C-F, Figure 2G) showing filament formation under conditions that normally prevent polymerization. The observations demonstrate that Gic1's stabilizing effect is stronger than the destabilizing effect of high salt or Cdc11 deletion. This is a clear demonstration of Gic1's dual role in scaffolding and stabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Gic1 does not induce filament formation of septin-Cdc10(30-322) complexes, but still binds to Cdc10(30-322) as shown by additional density in EM and gel filtration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by EM and gel filtration data (Figure 13H-L). This demonstrates that while Gic1 can bind to the truncated Cdc10, the N-terminal region is required for Gic1 to stabilize the Cdc10-Cdc10 interface and promote polymerization. This distinguishes binding from functional stabilization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors propose a model for septin ring formation and disassembly: (1) Cdc42-GDP recruits septin octamers to the bud site; (2) Cdc24 catalyzes nucleotide exchange, causing Cdc42 to dissociate and septins to polymerize; (3) Cdc42-GTP recruits Gic1, which scaffolds and stabilizes filaments; (4) Gic1-septin cable formation doesn't require Cdc42-GTP, so upon GTP hydrolysis, Cdc42-GDP dissociates and recruits more septins; (5) Later in the cell cycle, increased Cdc42-GTP binds Gic1-septin complexes, competing with Cdc10 for Gic1, causing disassembly; (6) After GTP hydrolysis, Cdc42-GDP binds septin filaments and disassembles them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C108 present a comprehensive mechanistic model based on the experimental findings. While the individual biochemical interactions are well-supported by the data, the proposed cell cycle dynamics are largely speculative. The model makes reasonable inferences from in vitro observations but lacks direct in vivo validation. Key aspects like the timing of Cdc42-GTP concentration changes (C106), the recruitment function of Cdc42-GDP (C98), and the sequential events during the cell cycle are not directly tested. The model is internally consistent with the biochemical data but would require in vivo experiments (e.g., live-cell imaging, localization studies, temporal dynamics) to be fully validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The proposed model explains septin recycling through cell divisions and the observed cycles of GTP loading/hydrolysis by Cdc42 during budding. The authors conclude that Gic1 and Cdc42, along with other factors, regulate septin recruitment, ring formation, and disassembly, with Cdc42 playing both regulatory and recruitment roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 appropriately connect the proposed model to prior observations in the literature (McMurray and Thorner, 2009; Gladfelter et al., 2002). The conclusion (C111-C112) is a reasonable synthesis of the findings, acknowledging the complexity of the system while highlighting the key roles of Gic1 and Cdc42. The claim that Cdc42 has a recruitment role (C112) is a significant conceptual advance supported by the Cdc42-GDP binding data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The organization and polymerization of septin filaments is controlled by the interaction of Gics with Cdc10 and the interaction of both proteins with PIP2. Cdc10 is mainly responsible for septin-PIP2 interaction, and Gic2 (Gic1 homologue) also interacts with PIP2 through its polybasic region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 appropriately cite prior literature (Bertin et al., 2010; Orlando et al., 2008) and integrate it with the current findings on Gic1-Cdc10 interaction. The inference (C45) is reasonable given that both Gic1 and Cdc10 bind the same septin subunit and both interact with PIP2. This provides a coherent model for membrane localization and filament organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C46"
+    ],
+    "result": "Background claims about septins, their cellular roles, structural organization, and regulation by Cdc42 and Gic proteins, based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C26, and C46 are background statements appropriately supported by citations to prior literature. These establish the context for the current study and are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  }
+]

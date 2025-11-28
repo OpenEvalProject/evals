@@ -1,0 +1,407 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The study identified 1152 orphan genes in D. pseudoobscura (7% of all genes) and demonstrated that these orphans are subject to purifying selection, as evidenced by dN/dS < 1, sequence conservation greater than intergenic regions, and intermediate codon usage bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 provide converging evidence from multiple independent metrics (dN/dS ratios, sequence conservation, codon usage bias, and polymorphism data) that orphan genes are functionally constrained and under purifying selection. The statistical tests are appropriate and significant (p < 10^-15 in multiple cases), and the comparison with intergenic regions provides a proper negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C31",
+      "C67",
+      "C69",
+      "C102"
+    ],
+    "result": "Orphans are rapidly lost, with recently emerged orphans being lost at higher rates than older ones, and orphans being lost significantly more often than old genes (Fisher's exact test, p=3.3\u00d710^-8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C31, C67, C69, and C102 collectively demonstrate the rapid turnover of orphan genes with age-dependent loss rates. The data in Figure 10 shows a clear trend of decreasing loss rates with orphan age, and the statistical comparison with old genes is significant. This supports the rapid-turnover hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C30",
+      "C98",
+      "C99"
+    ],
+    "result": "Lost and retained orphans show similar evolutionary signatures of functional conservation (dN/dS, gene length, codon usage bias), indicating that orphan loss is not driven by high rates of sequence evolution but reflects lineage-specific functional requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C30, C98, and C99 are supported by data in Figure 15 showing no significant differences in dN/dS (p=0.5835) and gene length (p=0.7235) between lost and conserved orphans. This is a key finding that distinguishes the mechanism of orphan loss from simple relaxation of purifying selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Highly expressed orphans with strong male-bias are more likely to be retained. The fraction of male-biased genes increases with orphan age due to preferential loss of unbiased orphans, not gradual acquisition of male-bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C29, C72-C75, and C82-C87 are supported by data in Figures 15, 17, 18, and 19. The correlation between male-bias strength and orphan retention (Spearman's rho = 0.811, p=0.027) and the significant difference in male-bias between lost and conserved orphans in D. miranda (p=0.032) provide strong evidence for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The old-X chromosome (XL) has significantly more orphans than the neo-X (XR) across all age classes, indicating that X-linkage alone is insufficient to explain orphan enrichment and that an unidentified feature of the ancestral X affects orphan emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C54, C57, C58, and C59 are supported by data in Figures 4 and 7 showing consistent differences in orphan numbers between XL and XR across all age classes (\u03c7\u00b2-test, p < 0.01 for all age classes). The persistence of this difference across age classes rules out the simple X-linkage hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The oldest orphans (age class 4) show a pronounced excess of pseudogenized orphans on the neo-X (XR) in D. affinis and D. miranda, restricted to orphans that originated before the chromosomal fusion, suggesting that the change in chromosomal environment affected orphan function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C61, C62, C64, C65, C66, C109, C110, and C111 are supported by data in Figure 8A showing significant excess of pseudogenized orphans on XR for age class 4 (\u03c7\u00b2-test, p < 0.001 for both D. lowei and D. miranda). The analysis ruling out gene duplication as an explanation (C64, C65) strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Orphan genes are shorter (median 344 bp vs 1470 bp), have lower GC content (0.54 vs 0.55), and are expressed at lower levels (29 FPKM vs 41 FPKM in males) compared to old genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C13-C15 are supported by data in Figure 3 with highly significant statistical tests (Mann-Whitney test, p < 10^-15 for length and expression, p = 3.9\u00d710^-7 for GC content). These findings are consistent with previous studies cited in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C73",
+      "C101"
+    ],
+    "result": "Orphans are more enriched in microsatellites than old genes, and conserved orphans contain fewer microsatellites than lost orphans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C73, and C101 are supported by data in Figures 3D and 15D showing significant differences in microsatellite content (Mann-Whitney test, p = 1.8\u00d710^-4 for orphans vs old genes, p = 0.00049 for conserved vs lost orphans). This is consistent with previous findings in vertebrates and rice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16",
+      "C78",
+      "C79"
+    ],
+    "result": "Orphans often show testis-biased expression and have a male-biased gene expression pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C78, and C79 are supported by data in Figure 3H and citations to previous studies (Levine et al., 2006; Begun et al., 2007; Metta and Schl\u00f6tterer, 2008). The \u03c7\u00b2-test shows significant enrichment of male-biased genes among orphans (p < 10^-15).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "The distribution of orphans is heterogeneous across chromosomes, with the X chromosome having the highest fraction of orphans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C49 are supported by a highly significant \u03c7\u00b2-test (p < 10^-15) showing non-random distribution of orphans across chromosomes. This sets up the more detailed analysis of old-X vs neo-X differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The fraction of genes with a paralog (>90% protein similarity) is similar for orphans (6.9%) and old genes (6.4%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by direct analysis using CD-Hit. The similar paralog fractions suggest that recent gene duplication does not explain the high number of orphans, though no statistical test is provided to assess significance of the small difference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Unlike mammals, none of the D. pseudoobscura orphans was found to be associated with transposable elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by the transposon detection analysis described in the methods. This finding contrasts with mammals and suggests different mechanisms of orphan gene origination in Drosophila.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Average GC content, microsatellite density, transposon density, and length of intergenic regions differ between the old-X and neo-X chromosomal arms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by data in Figure 5 showing differences in multiple genomic features between XL and XR. However, the manuscript notes that GC content is not significantly different for 100 kb windows (p=0.1092), only for 10 kb windows.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Premature termination codons (PTCs) are enriched at the beginning and end of the ORF, and orphans of age class 3 are lost more often than age class 4 when considering only ORF-disrupting mutations in the first half of the ORF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C71 are supported by data in Figures 12 and 13. The enrichment of PTCs at ORF ends is consistent with previous studies in D. melanogaster and D. pseudoobscura. The analysis restricting to first-half mutations strengthens the age-dependent loss finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Conserved orphans tend to increase their expression level as they become older, whereas lost orphans tend to decrease their expression level with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C77 are supported by data in Figure 16 showing opposite trends in expression changes with age for conserved vs lost orphans. This suggests that expression level is associated with orphan retention.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Most losses (~76%) were due to disabling mutations rather than deletions of the orphan gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is a direct observation from the study's analysis of orphan losses. This finding is important for understanding the mechanism of orphan loss, though the manuscript acknowledges this may be an underestimate due to conservative criteria.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "A surplus of orphan gains was observed, which the authors interpret as reflecting limited evolutionary time to acquire mutations rather than an actual increase in gene number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93, C94, and C95 present an observation (surplus of gains) and an interpretation. The data in Figure 6 supports the observation, but the interpretation (C95) is speculative and acknowledges that the conservative criteria for identifying losses may contribute to this discrepancy. The conclusion requires longer-term evolutionary data to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The study acknowledges limitations in identifying all orphans that have lost function, as it uses conservative criteria for disabling mutations and does not account for loss of function due to changes in gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C97 are explicit acknowledgments of methodological limitations. These are important caveats that suggest the true rate of orphan loss may be higher than reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The D. miranda lineage shows a higher loss of young orphan genes, but statistical testing is precluded by small sample size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 describes an observed trend but explicitly states that statistical testing is not possible due to small sample size. This observation is consistent with the pattern in D. persimilis but cannot be confirmed as significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C32"
+    ],
+    "result": "Background claims about orphan genes from prior literature, including their definition, prevalence, origins, characteristics, and the rapid-turnover hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C28, and C32 are background knowledge claims supported by appropriate citations to the literature. These establish the context for the study and are generally well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "In the obscura group, the two X-chromosome arms have different evolutionary histories: XL corresponds to Muller's element A (homologous to D. melanogaster X), while XR was recently derived from an autosome (Muller's element D).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, and C52 describe established knowledge about the evolutionary history of the obscura group X chromosomes. This is well-documented in the literature and provides essential context for interpreting the orphan distribution patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C63",
+      "C107",
+      "C108"
+    ],
+    "result": "The neo-X chromosome is now fully dosage compensated and has obtained a similar base composition as the old-X, according to previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C107, and C108 are supported by citations to Abraham and Lucchesi (1974) and Gallach et al. (2007). These provide important context for interpreting the differential orphan loss on the neo-X.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C104",
+      "C105"
+    ],
+    "result": "Speculative hypotheses about orphan function from prior literature, including roles in adaptation, gene network stabilization, and testis expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80, C81, C104, and C105 present speculative hypotheses from the literature about orphan gene function and expression patterns. These are appropriately cited but remain hypotheses that require further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Summary of previous research approaches and the gap this study addresses: orphan evolution was primarily studied on long phylogenetic branches, which is good for discovering orphans but does not allow tracing their evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 accurately summarize the state of previous research and the motivation for this study. This establishes the novelty of the close-species comparative approach used here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C100",
+      "C103",
+      "C106",
+      "C112",
+      "C113"
+    ],
+    "result": "Speculative interpretations by the authors about mechanisms of orphan loss and function, including stochastic loss, temporary functional roles, and diminished selective advantage after chromosomal translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100, C103, C106, C112, and C113 present speculative interpretations of the data. While these are reasonable hypotheses consistent with the observations, they require additional experimental validation to be confirmed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Both orphan gene loss and duplication contribute to fast gene content remodeling on a newly formed sex chromosome in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114 and C115 synthesize the study's findings on orphan loss with previous work on gene duplication (Meisel et al., 2009) to propose a broader conclusion about sex chromosome evolution. This is a reasonable synthesis supported by the data, though it extends beyond the direct findings of this study.",
+    "result_type": "MINOR"
+  }
+]

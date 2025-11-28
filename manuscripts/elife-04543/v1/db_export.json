@@ -1,0 +1,2357 @@
+{
+  "submission": {
+    "id": "6f13b152-117c-49b9-a8f3-d8742c35b9b1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:06:27.972134Z",
+    "updated_at": "2025-11-28T22:06:27.972134Z"
+  },
+  "content": [
+    {
+      "id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "submission_id": "6f13b152-117c-49b9-a8f3-d8742c35b9b1",
+      "content_type": "manuscript",
+      "content_text": "# An intracellular anion channel critical for pigmentation\n\n## Authors\n\n- Nicholas W Bellono<sup>1</sup>\n- Iliana E Escobar<sup>1</sup>\n- Ariel J Lefkovith<sup>2</sup>\n- Michael S Marks<sup>2</sup>\n- Elena Oancea<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular Pharmacology, Physiology and Biotechnology Brown University Providence United States\n2. Department of Pathology and Laboratory Medicine Children's Hospital of Philadelphia, University of Pennsylvania Philadelphia United States\n3. Department of Physiology Children's Hospital of Philadelphia, University of Pennsylvania Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIntracellular ion channels are essential regulators of organellar and cellular function, yet the molecular identity and physiological role of many of these channels remains elusive. In particular, no ion channel has been characterized in melanosomes, organelles that produce and store the major mammalian pigment melanin. Defects in melanosome function cause albinism, characterized by vision and pigmentation deficits, impaired retinal development, and increased susceptibility to skin and eye cancers. The most common form of albinism is caused by mutations in oculocutaneous albinism II (OCA2), a melanosome-specific transmembrane protein with unknown function. Here we used direct patch-clamp of skin and eye melanosomes to identify a novel chloride-selective anion conductance mediated by OCA2 and required for melanin production. Expression of OCA2 increases organelle pH, suggesting that the chloride channel might regulate melanin synthesis by modulating melanosome pH. Thus, a melanosomal anion channel that requires OCA2 is essential for skin and eye pigmentation.\n\n## Introduction\n\nIon channels are membrane proteins that regulate the concentration of key signaling ions to control a wide range of cellular functions. While plasma membrane ion channels have been extensively studied, much less is known about the identity and physiology of intracellular channels because they are less accessible to direct electrophysiological characterization.\n\nMelanosomes are lysosome-related organelles that produce and store melanin, a natural pigment present in most organisms. Impaired melanin synthesis and storage affects visual system development and pigmentation of the skin, eyes, and hair, leading to reduced protection against ultraviolet radiation and predisposition for skin and eye cancers. A number of genes encoding putative melanosomal ion transport proteins are critical for melanosomal function, as mutations in these genes result in oculocutaneous albinism (OCA) (Montoliu et al., 2014). This suggests that ionic homeostasis plays an important role in melanin synthesis and storage, yet how ion channels might contribute to melanosome function and pigmentation remains poorly understood (Bellono and Oancea, 2014).\n\nOne of the most common forms of albinism is caused by mutations in a highly conserved protein encoded by the oculocutaneous albinism II gene (OCA2) (Gardner et al., 1992; Rinchik et al., 1993; Rosemblat et al., 1994; Lee et al., 1994a; Sitaram et al., 2009) (Figure 1\u2014figure supplement 1). OCA2-deficient animals lack pigment (Gardner et al., 1992; Protas et al., 2006) and reduced OCA2 expression leads to decreased melanin underlying blue eye color in humans (Eiberg et al., 2008; Sturm et al., 2008). OCA2 has twelve predicted transmembrane domains (Gardner et al., 1992), is localized to melanosomal membranes (Rosemblat et al., 1994; Sitaram et al., 2009), and has been implicated in pH regulation of melanosomes and trafficking of the melanogenic enzyme tyrosinase (Puri et al., 2000; Manga and Orlow, 2001; Chen et al., 2002, 2004; Ni-Komatsu and Orlow, 2006). Despite its importance, the function of OCA2 and the molecular mechanism by which it regulates melanin are not known.\n\nHere we identify and characterize a new intracellular ion channel that resides in the melanosomal membrane and requires OCA2 expression. Using whole-organelle and single-channel patch-clamp recordings we found that OCA2 contributes to an anion channel required for pigmentation. The OCA2-mediated Cl\u2212 current was nearly abolished by a mutation identified in patients with oculocutaneous albinism type II. Interestingly, expression of OCA2 in endolysosomes increased organelle pH, providing a potential mechanism for how OCA2 regulates melanogenesis. Thus, a previously uncharacterized OCA2-dependent anion channel is critical for melanosomal function and pigmentation, revealing a novel function for intracellular ion channels.\n\n## Results and discussion\n\nBecause intracellular ion channels are important regulators of organellar and cellular function and defects in melanosomes, lysosomal-related organelles present in melanocytes and retina, often result in severe pigmentation phenotypes, we wondered how ion channels contribute to melanosome function. We investigated OCA2, a melanosome-specific membrane protein of unknown function that, when mutated, results in albinism.\n\n### OCA2 expression in endolysosomes leads to a Cl\u2212 conductance (IOCA2)\n\nIn melanocytes and retinal pigment epithelium (RPE) OCA2 is restricted to melanosomes, but when expressed in heterologous systems it localizes to lysosomes and late endosomes (endolysosomes) (Sitaram et al., 2009). To investigate if OCA2 has ion transport activity, we expressed OCA2 tagged with GFP (GFP-OCA2) or mCherry (mCherry-OCA2) in AD293 cells, where it colocalized with the endolysosomal marker LAMP1 (Figure 1A). Endolysosomes are an ideal melanosome-related heterologous system because they can be enlarged by treating cells with 1 \u03bcM vacuolin-1 and mechanically released from the cytoplasm with a glass pipette (Cerny et al., 2004; Saito et al., 2007; Dong et al., 2008). We recorded whole-organelle currents from endolysosomes expressing GFP-OCA2 and found that voltage pulses evoked a large outwardly rectifying current (IOCA2) that was not present in mock-transfected cells (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04543/elife-04543-fig1-v1.jpg)\n\n**Figure 1.:** (A) Heterologous GFP-OCA2 localized to LAMP1-mCherry-positive late endosomes and lysosomes (endolysosomes) individually dissected from AD293 cells for patch-clamp experiments (scale bar = 5 \u03bcm). Whole-endolysosomal currents elicited by voltage steps between \u221280 mV and +80 mV in a representative endolysosome expressing GFP-OCA2 or in an endolysosome from a mock-transfected cell. (B) Representative whole-endolysosome current\u2013voltage (I\u2013V) relationships in response to voltage ramps. Outwardly rectifying IOCA2 was nearly abolished and its reversal potential (Erev) shifted in the positive direction when luminal Cl\u2212 was substituted for gluconate (Gluc\u2212), similar to currents measured from mock-transfected endolysosomes containing a Cl\u2212-based luminal solution. (C) Average current densities (pA/pF) measured at 100 mV. Inset: Average Erev (\u00b1s.e.m., n = 6\u20139 endolysosomes for each condition). (D) In a representative OCA2-expressing endolysosome, Erev was dependent on cytoplasmic [Cl\u2212] ([Cl\u2212]cyto). NMDG-based solutions were used to inhibit endogenous cation permeabilities. (E) IOCA2 Erev varied linearly with [Cl\u2212]cyto when [Cl\u2212]luminal was kept at 48 mM. Each point represents one endolysosome at the [Cl\u2212]cyto indicated on the x-axis.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04543/elife-04543-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Predicted membrane topology and homology of OCA2 from human, mouse, zebrafish and cavefish. OCA2 sequences were aligned using MegAlign (DNASTAR). Accession numbers of OCA2 sequences used in alignments generated using Clustal W in MegAlign (DNASTAR): NP-000266.2 (human), NP-068679.1 (mouse), XP_695807.5 (zebrafish), ABB29299.1 (cavefish). Amino acid percent identity was determined using Protein BLAST (http://blast.ncbi.nlm.nih.gov) for the indicated regions. TM = transmembrane domain, AA = amino acid. Inset: OCA2 alignment showing conserved regions with albinism-associated mutations used in this study (K614E in dark blue, V443I in purple, 5mut in light blue). (B) OCA2 mRNA expression profile in human tissue. OCA2 expression levels were highest in retina, consistent with OCA2 expression in the densely pigmented retinal pigment epithelium (RPE). Human skin had the second highest levels of OCA2 mRNA, due to high expression in melanocytes and very low levels in keratinocytes and skin fibroblasts, consistent with OCA2 expression in pigment cells. (n = 4 experiments).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04543/elife-04543-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) In the same endolysosome, IOCA2 was not significantly different when cytoplasmic K+ was substituted with Na+. (B) The IOCA2 amplitude at 100 mV or Erev was not significantly different when cytoplasmic K+ was substituted with Na+ (\u00b1s.e.m., n = 3 endolysosomes). (C) IOCA2 current density (pA/pF) measured in endolysosomes expressing OCA2 was similar with a luminal pH of 4.6 or 6.8. Inset: Average Erev (\u00b1s.e.m., n = 4 endolysosomes per condition).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04543/elife-04543-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Average IOCA2 current densities (pA/pF) were calculated at the indicated voltages. Currents recorded from mock-transfected AD293 endolysosomes (A) or endolysosomes expressing OCA2 in the presence of luminal Gluc\u2212 (B) were subtracted from currents measured from OCA2-expressing endolysosomes in the presence of luminal Cl\u2212. \u0394(OCA2 \u2212 mock) and \u0394(luminal NaCl \u2212 NaGluc) currents have an Erev near ECl (ECl = Nernst potential for Cl\u2212; \u00b1s.e.m., n = 5 endolysosomes per condition).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/04543/elife-04543-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) In a representative endolysosome IOCA2 was not affected by Cl\u2212 channel inhibitors 4,4\u2032-diisothiocyanato-2,2\u2032-stilbenedisulfonic acid disodium salt (DIDS), niflumic acid (NFA), or 5-Nitro-2-(3-phenylpropylamino)benzoic acid (NPPB) (each at 100 \u03bcM), compared to control (DMSO vehicle). (B) The average current amplitude of IOCA2 normalized to control conditions (<1% DMSO) was similar when DIDS, NFA, or NPPB was bath applied at 100 \u03bcM or 300 \u03bcM (n = 3\u20134 endolysosomes for each). DIDS blocks several members of the Chloride Channel (ClC) family, Ca2+-activated Cl\u2212 channels (CaCC), Maxi Cl\u2212 channels, and volume regulated Cl\u2212 channels (VRAC); NFA blocks several ClC members, VRAC, and CaCC; NPPB inhibits several ClC members, Maxi Cl\u2212, VRAC, and cystic fibrosis transmembrane conductance regulator (CFTR). Pharmacological profile information was obtained from the International Union of Basic and Clinical Pharmacology (IUPHAR, http://www.iuphar-db.org).\n\nThe measured outward current could result either from K+, the main cation in the bath, moving into the endolysosome, or Cl\u2212, the main anion in the pipette solution, moving out of the endolysosome. We tested if IOCA2 carries K+ into the lumen by replacing it with Na+ in the bath solution. We detected no significant change in the current amplitude or reversal potential (Erev) (Figure 1\u2014figure supplement 2A,B), suggesting that K+ is not required for IOCA2. We next tested if IOCA2 is mediated by luminal Cl\u2212 moving into the cytoplasm by replacing Cl\u2212 in the pipette solution with the impermeant anion gluconate (Gluc\u2212). IOCA2 was nearly abolished with Gluc\u2212 in the pipette and Erev was significantly shifted in the positive direction, consistent with the endogenous current recorded in endolysosomes from mock-transfected cells (Figure 1B,C). The similar current amplitude and positive Erev measured in mock-transfected and OCA2-expressing endolysosomes with luminal Gluc\u2212 suggests the presence of an endogenous cationic permeability. When we subtracted this endogenous current from IOCA2, the Erev for IOCA2 became similar to ECl predicted by the Nernst equation (Figure 1\u2014figure supplement 3). The significant reduction in current amplitude in the presence of luminal Gluc\u2212 indicates that IOCA2 is mediated by Cl\u2212, consistent with OCA2 homology to bacterial anion transporters (Rinchik et al., 1993; Brilliant, 2001; Kobayashi et al., 2006). We tested whether a range of pharmacological inhibitors of different Cl\u2212 channels and transporters affect IOCA2 by bath-applying 4,4\u2032-diisothiocyanato-2,2\u2032-stilbenedisulfonic acid disodium salt (DIDS), niflumic acid (NFA), or 5-Nitro-2-(3-phenylpropylamino)benzoic acid (NPPB), but none significantly altered IOCA2 amplitude (Figure 1\u2014figure supplement 4). Thus, IOCA2 has a different pharmacological profile from the channels and transporters that are inhibited by the tested compounds.\n\nThe Nernst equation predicts that if IOCA2 were due to selective transport of Cl\u2212, Erev will be dependent on the Cl\u2212 concentration ([Cl\u2212]) gradient across the endolysosomal membrane. To establish whether this is the case, we determined Erev for currents measured at variable cytoplasmic and constant luminal [Cl\u2212], using NMDG-based solutions to prevent endogenous cationic permeability. Erev for 48 mM luminal and 8 mM cytoplasmic [Cl\u2212] was \u221242.7 \u00b1 2.3 mV and shifted to 1.6 \u00b1 2.5 mV under symmetrical 48 mM [Cl\u2212] (Figure 1D). Erev increased linearly as a function of cytosolic [Cl\u2212] ([Cl\u2212]cyto), with a 10-fold change in [Cl\u2212]cyto corresponding to a shift in Erev of 58 mV, consistent with a highly Cl\u2212 selective current (Figure 1E).\n\n### Mutations associated with oculocutaneous albinism disorder affect IOCA2\n\nOCA2 shares little homology with known chloride channels or transporters; OCA2 might be an accessory subunit of a Cl\u2212 transporter or form a Cl\u2212 channel or carrier protein itself. To determine if specific OCA2 residues are required for Cl\u2212 transport, we sought to identify mutations important for ion transport, but not melanosomal localization. We analyzed mCherry-OCA2 variants containing disease-related mutations within highly conserved regions of the protein (Figure 1\u2014figure supplement 1A). We chose mutations identified in patients with OCA type II through human genetic studies: V443I, a common albinism-associated mutation in a predicted luminal loop and important for melanin content in vitro (Lee et al., 1994a, 1994b; Sviderskaya et al., 1997; King et al., 2003; Garrison et al., 2004; Hongyi et al., 2007; Preising et al., 2007; Hutton and Spritz, 2008; Rimoldi et al., 2014) and K614E, in a predicted cytoplasmic loop (Passmore et al., 1999). We also generated an OCA2 variant with five point mutations in the same predicted luminal loop as V443I (5mut: V443I, M446V, I473S, N476D, N489D) (Lee et al., 1994a, 1994b; Spritz et al., 1995; Hongyi et al., 2007; Preising et al., 2007) (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04543/elife-04543-fig2-v1.jpg)\n\n**Figure 2.:** (A) Predicted topology of OCA2 with albinism-associated mutations: K614E (dark blue) in a conserved cytoplasmic loop, V443I (purple) in a highly conserved luminal loop, and 5mut (light blue) consisting of 5 point mutations (V443I, M446V, I473S, N476D, N489D) in the same luminal loop. (B) mCherry-tagged WT, K614E, and V443I OCA2 localized to LAMP1-GFP-positive isolated endolysosomes (merged in yellow), while 5mut did not (scale bar = 5 \u03bcm). (C) Representative I\u2013V relationships measured in response to voltage ramps from endolysosomes expressing WT, K614E, V443I, or from endolysosomes isolated from cells expressing 5mut OCA2. (D) Average IOCA2 current densities (pA/pF) measured at 100 mV (\u00b1s.e.m., n = 4\u20138 endolysosomes for each condition). (E) Melan-ink4a melanocytes expressing mCherry-tagged (red) WT, V443I, or K614E and stained with anti-tyrosinase-related protein one (TYRP1) antibodies (green). Insets, 3\u00d7 magnification of boxed regions. Merged images (right) show that WT, V443I, and K614E OCA2 variants localize primarily to TYRP1-positive compartments (scale bar = 10 \u03bcm).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04543/elife-04543-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) HeLa cells expressing mCherry-tagged WT, K614E, V443I, or 5mut OCA2 (red) and stained with LAMP1 antibodies (green). All OCA2 variants, except 5mut, localized primarily to LAMP1-positive compartments (orange in merged images) (scale bar = 10 \u03bcm). (B) Melan-ink4a melanocytes expressing 5mut OCA2 tagged with mCherry (red) and stained with anti-TYRP1 antibodies show that 5mut OCA2-mCherry does not localize to TYRP1-positive compartments (green) in melanocytes (scale bar = 10 \u03bcm).\n\nUpon expression in HeLa cells, the K614E and V443I mutants colocalized with the endolysosomal marker LAMP1, similar to WT mCherry-OCA2 (Figure 2\u2014figure supplement 1A), indicating that both mutants traffic efficiently to endolysosomes when expressed in non-melanocytic cells. By contrast, 5mut OCA2 localized primarily to endoplasmic reticulum-like structures rather than endolysosomes (Figure 2\u2014figure supplement 1A), therefore it could be used as a negative control. In pigment cells containing melanosomes (melan-ink4a), expression of OCA2 variants revealed that WT, as well as V443I and K614E mutants colocalized with the melanosomal tyrosinase-related protein 1 (TYRP1; overlap with TYRP1 = 60.1 \u00b1 21.3% for WT; 50.7 \u00b1 13.9% for V433I; and 53.6 \u00b1 16.1% for K614E mCherry-OCA2) (Figure 2E), whereas overlap with the endolysosomal marker LAMP2 was minimal (11.8 \u00b1 10.7% among all variants). A portion of K614E localized to vesicular structures without TYRP1 but that contained pigment when imaged by bright field microscopy.\n\nTo determine if albinism-associated mutations affect IOCA2, we expressed mCherry-tagged WT, K614E, V443I or 5mut OCA2 in AD293 cells together with LAMP1-GFP (Figure 2B). Currents recorded from AD293 endolysosomes identified by LAMP1-GFP and expressing K614E had similar amplitudes and Erev as WT OCA2 (Figure 2C,D), but those expressing V443I had amplitudes reduced by \u223c85% and Erev shifted to more positive values (Figure 2C,D). Endolysosomes of cells expressing 5mut had very small current amplitudes and a positive Erev, similar to mock-transfected cells (Figure 2C,D).\n\nCollectively, these data suggest that the V443I-containing luminal loop between transmembrane domains 5 and 6 is critical for the OCA2-mediated Cl\u2212 current. The K614E mutation had little effect on localization or OCA2-mediated currents in our experiments. Because K614E was identified in albinism patients with an additional OCA2 mutation (Passmore et al., 1999), its associated phenotype might be too mild to detect in our assays or might be masked by overexpression.\n\n### OCA2 regulates organelle pH\n\nHow does the OCA2-mediated anion conductance affect pigmentation? Early stage melanosomes are highly acidic (Raposo et al., 2001), but because tyrosinase is inactive at pH < 6.0, melanosomal pH is thought to increase in order to allow for melanin synthesis (Ancans et al., 2001; Halaban et al., 2002). We tested the hypothesis that OCA2-mediated anion extrusion from melanosomes regulates luminal pH (Puri et al., 2000; Brilliant, 2001; Manga and Orlow, 2001; Chen et al., 2002, 2004; Ni-Komatsu and Orlow, 2006), similar to other anionic conductances (Stauber and Jentsch, 2013). We expressed in endolysosomes of AD293 cells ecliptic pHluorin-LAMP1, which becomes fluorescent at pH > 6 (Rak et al., 2011) (Figure 3A). Endolysosomes of control cells were acidic and lacked fluorescence emission at baseline (Figure 3B), but exhibited increased fluorescence upon neutralization (pH > 6) of organellar pH by cellular treatment with the vacuolar H+-ATPase inhibitor bafilomycin A1 (BafA1) (Figure 3A\u2013C). In contrast, coexpression of WT OCA2 with pHluorin-LAMP1 resulted in endolysosomes that were fluorescent at baseline, with only a small increase in fluorescence in response to BafA1 (Figure 3B,C). This indicates that OCA2 expression increased the pH of endolysosomes to > 6.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04543/elife-04543-fig3-v1.jpg)\n\n**Figure 3.:** (A) Ecliptic pHluorin-LAMP1 fluoresces when luminal pH > 6, but not when pH < 6. The V-ATPase inhibitor bafilomycin A1 (BafA1, 2 \u03bcM) was used to neutralize acidic endolysosomes and detect pHluorin-LAMP1 expression. (B) Endolysosomes from mock-transfected control (CTL) AD293 cells expressing pHluorin-LAMP1 were not fluorescent at baseline (Fo) but brightly fluoresced after BafA1 treatment (FBafA1). Endolysosomes coexpressing pHluorin-LAMP1 and mCherry-tagged WT or K614E OCA2 were fluorescent prior to BafA1 treatment (Fo), indicating that expression increased pH. Endolysosomes that coexpressed pHluorin-LAMP1 and V443I were dim at baseline (Fo), similar to CTL and mislocalized 5mut, representing an acidic lumen, and pHluorin-LAMP1 fluorescence increased upon BafA1 treatment (FBafA1) (scale bar = 10 \u00b5m). (C) Fluorescence intensity following BafA1 treatment was compared with baseline fluorescence to determine relative baseline acidity in enodolysosomes from CTL cells, expressing WT, K614E, V443I, OCA2 or from cells expressing mislocalized 5mut. Bars represent average normalized change in pHluorin-LAMP1 fluorescence (\u00b1s.e.m., n = 3 independent experiments, each experiment calculated as the average of n = 78\u2013214 endolysosomes).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04543/elife-04543-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Lysosensor calibration curve determined from the emission ratio W1 (417\u2013480 nm)/W2 (490\u2013530 nm) at 405 nm excitation for pH values between 5 and 7. Representative curve from one experiment (\u00b1s.e.m., n = 231\u2013350 endolysosomes). (B) Predicted pH values based on LysoSensor calibration in LAMP1-expressing control endolysosomes (CTL) compared with endolysosomes expressing WT, K614E, or V443I OCA2 (\u00b1s.e.m., n = 3 independent experiments, each experiment calculated as the average of n = 109\u2013635 endolysosomes). (C) Right: Color scale used for Lysosensor. Acidic endolysosomes are shown in green and more neutral ones in blue. Left: AD293 cells loaded with Lysosensor and expressing LAMP1-mCherry (used as a control) or mCherry-tagged WT, K614E, V443I OCA2. Endolysosomes expressing LAMP1-mCherry are green, suggesting that they have acidic pH. Endolysosomes expressing WT or K614E, but not V443I, shift their pH to more neutral values as shown by the blue color (scale bar = 10 \u03bcm).\n\nTo determine if changes in pH required the OCA2-mediated anion conductance, we examined changes in pHluorin-LAMP1 fluorescence elicited by the expression of albinism-associated OCA2 mutants. Endolysosomes expressing K614E exhibited basal fluorescence and little change in fluorescence following treatment with BafA1 (Figure 3B,C), consistent with its intact conductance and localization to endolysosomes (Figure 2, Figure 3\u2014figure supplement 1). However, endolysosomes expressing V443I, which have significantly reduced current amplitudes but intact localization (Figure 2, Figure 3\u2014figure supplement 1), had dim fluorescence at baseline that increased dramatically following BafA1 treatment (Figure 3B,C). Endolysosomes from cells expressing mislocalized 5mut lacked basal fluorescence and increased their fluorescence with BafA1 treatment (Figure 3B,C), similar to untransfected cells. Together, these results support the notion that OCA2-mediated ion transport in organelles modulates luminal pH.\n\nWe confirmed the observed OCA2-associated changes in luminal pH using the ratiometric pH-sensitive dye LysoSensor DND-160. Based on LysoSensor calibration, the luminal pH of LAMP1-positive compartments in control cells had an approximate pH value of 5.12 \u00b1 0.03, while the luminal pH of WT OCA2-expressing endolysosomes was significantly greater (6.67 \u00b1 0.03, Figure 3\u2014figure supplement 1A\u2013C). Expression of the K614E mutant increased pH to 6.32 \u00b1 0.03, while V443I only modestly raised the luminal pH of endolysosomes to 5.72 \u00b1 0.04, (Figure 3\u2014figure supplement 1B). Melanosomal pH measurements were not possible because fluorescent indicator uptake in melanosomes is impaired and melanin interferes with the emission of fluorescent proteins.\n\nOur pH measurements are consistent for the two indicators and show that OCA2-mediated Cl\u2212 transport shifts the endolysosomal pH toward neutral values that in melanosomes would be optimal for tyrosinase activity and melanin synthesis. The mechanism by which OCA2 modulates pH is unclear. We hypothesize that OCA2-mediated Cl\u2212 efflux from the lumen regulates the organelle membrane potential, reducing vacuolar H+-ATPase activity and resulting in less H+ being pumped in the lumen. Alternatively, the pH modulation by the OCA2-mediated Cl\u2212 conductance could be a more complex mechanism involving the contribution of additional channels and transporters. Thus, our model for pH regulation by OCA2 remains tentative and awaits a better understanding of melanosomal membrane conductance and signaling.\n\n### OCA2 contributes to a melanosomal chloride conductance (Imelano) required for pigmentation\n\nTo investigate endogenous OCA2, we measured native currents by direct patch-clamp recordings from melanosomes. This is technically challenging due to the intracellular localization and small size (300\u2013500 nm) of melanosomes and because treatment of melanocytes with vacuolin-1 did not significantly enlarge melanosomes. To circumvent these difficulties we exploited a dermal melanocyte cell line derived from mice deficient in ocular albinism 1 (Oa1) (Palmisano et al., 2008), in which melanosomes are enlarged to up to \u223c1 \u03bcm diameter (Cortese et al., 2005). Recordings from individual melanosomes dissected from Oa1\u2212/\u2212 melanocytes under the same conditions used for endolysosome patch-clamp experiments (Figure 4A) revealed a large outwardly rectifying current (Imelano) with a negative Erev that was dependent on luminal Cl\u2212, similar to currents recorded from OCA2-expressing endolysosomes (Figure 4B,C). When currents recorded in the presence of luminal Gluc\u2212 were subtracted from Imelano measured in the presence of Cl\u2212, Erev was similar to ECl (Figure 4\u2014figure supplement 1A). The Erev for Imelano measured with NMDG-based solutions was found to be \u221244.3 \u00b1 2.5 mV for 48 mM luminal and 8 mM cytoplasmic [Cl\u2212] and \u22122.3 \u00b1 1.1 mV for symmetrical 48 mM [Cl\u2212] (Figure 4\u2014figure supplement 1B,C), consistent with the values measured for endolysosomes expressing OCA2 (Figure 1E) and with the Nernst potential for Cl\u2212 selective currents.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04543/elife-04543-fig4-v1.jpg)\n\n**Figure 4.:** (A) Dermal macromelanosomes were individually dissected from Oa1\u2212/\u2212 melanocytes and patch-clamped. A NaCl-based luminal solution and KGluc-based cytoplasmic solution were used for recordings (scale bar = 10 \u03bcm). (B) Representative I\u2013V relationships exhibit a Cl\u2212-dependent outwardly rectifying current (Imelano) with a negative Erev. Substituting luminal Cl\u2212 for Gluc\u2212 reduced the current amplitude and shifted Erev of Imelano. (C) Average current densities (pA/pF) measured at 100 mV. Inset: Average Erev (\u00b1s.e.m., n = 4\u20135 dermal melanosomes for each condition). (D) Patch-clamp experiments using freshly isolated bullfrog RPE melanosomes (scale = 10 \u03bcm). (E) Representative whole-RPE melanosome current\u2013voltage (I\u2013V) relationships in response to voltage ramps. Outwardly rectifying Imelano was reduced and Erev shifted in the positive direction when luminal Cl\u2212 was substituted for Gluc\u2212. (F) Average current densities (pA/pF) measured at 100 mV. Inset: Average Erev (\u00b1s.e.m., n = 5 RPE melanosomes for each condition).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04543/elife-04543-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Average current densities (pA/pF) at the indicated voltages were subtracted to calculate the Cl\u2212 component of Imelano. \u0394(luminal NaCl \u2212 NaGluc) current has an Erev near ECl (ECl = Nernst potential for Cl\u2212;  \u00b1s.e.m., n = 4 melanosomes per condition). (B) In a representative dermal melanosome, Erev was dependent on [Cl\u2212]cyto. NMDG-based solutions were used to inhibit endogenous cation permeability. (C) Imelano Erev as a function of [Cl\u2212]cyto, when [Cl\u2212]luminal was kept at 48 mM. Each point represents a melanosome at the indicated [Cl\u2212]cyto on the x-axis. Assuming linear Erev dependence on [Cl\u2212]cyto, the slope of the fitted line is 56 mV/10-fold \u0394[Cl\u2212]cyto.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04543/elife-04543-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Melanosomes were dissected from freshly isolated bullfrog RPE cells using two glass pipettes. The sequence of images shows one pipette used to hold the non-adherent cell and one to dissect the cell to isolate individual melanosomes (red circle) for patch-clamp experiments (scale = 10 \u03bcm).\n\nIn addition to skin melanocytes, melanosomes are also present in the retinal pigment epithelium of the eye. We patch-clamped melanosomes dissected from freshly isolated RPE cells from American bullfrog (Lithobates catesbeianus) that are larger than those from mammalian RPE, thus allowing for patch-clamp experiments (Figure 4E, Figure 4\u2014figure supplement 2). RPE whole-melanosome recordings identified an outwardly rectifying current with a negative Erev that was nearly abolished (reduced by \u223c90%) by substituting luminal Cl\u2212 with Gluc\u2212 (Figure 4E,F). Together, these data indicate that a current with similar properties as IOCA2 is present in melanosomes from skin and RPE.\n\nTo determine if OCA2 contributes to Imelano, we used OCA2-targeted siRNA to reduce OCA2 expression (Figure 5\u2014figure supplement 1A). Consistent with previous findings (Sviderskaya et al., 1997), reducing endogenous OCA2 expression markedly decreased melanin content in Oa1\u2212/\u2212 melanocytes (Figure 5A, Figure 5\u2014figure supplement 1B). Melanosomes dissected from melanocytes expressing OCA2-targeted siRNA had dramatically reduced current amplitudes and melanin content compared with melanosomes from cells expressing scrambled siRNA (control), indicating that OCA2 is required for Imelano and pigmentation (Figure 5B,C). Expression of WT OCA2, but not of the V443I mutant, in siRNA-treated cells was sufficient to reconstitute Imelano and rescue melanization (Figure 5A\u2013C), suggesting that the OCA2-mediated current is required for melanin production.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04543/elife-04543-fig5-v1.jpg)\n\n**Figure 5.:** (A) Representative images of Oa1\u2212/\u2212 melanocytes expressing scrambled or OCA2-targeted siRNA, the latter of which significantly decreased melanin content. Pigmentation was restored by transfection with mCherry-tagged WT OCA2, but not with the mCherry-tagged V443I mutant (scale bar = 10 \u03bcm). (B) Representative I\u2013V relationships from melanosomes from cells expressing scrambled siRNA, OCA2-targeted siRNA, and rescued with WT or V443I OCA2. Insets: images of the individual melanosomes used for the shown recordings (scale bar = 3 \u03bcm). (C) Average Imelano current densities (pA/pF) measured at 100 mV in melanosomes from cells expressing scrambled siRNA or OCA2-targeted siRNA (\u00b1s.e.m., n = 4 melanosomes per condition). (D) Average current densities (pA/pF) measured at 100 mV in melanosomes expressing WT or V443I OCA2 from cells expressing OCA2-targeted siRNA (\u00b1s.e.m., n = 3\u20134 melanosomes per condition).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04543/elife-04543-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) OCA2 mRNA levels in melanocytes expressing OCA2-targeted siRNA was reduced by \u223c90% compared with scrambled siRNA-expressing melanocytes (\u00b1s.e.m., n = 3 experiments). (B) Melanin content of melanocytes expressing OCA2-targeted siRNA was \u223c73% lower than that of scrambled siRNA-expressing melanocytes (\u00b1s.e.m., n = 3 experiments).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04543/elife-04543-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Representative images of melanosomes from Oa1\u2212/\u2212 melanocytes treated with the tyrosinase inhibitor phenylthiourea (PTU, 300 \u03bcM) have significantly reduced pigment (scale bar = 3 \u03bcm). (B) A similar Imelano was measured from melanosomes of PTU-treated and control Oa1\u2212/\u2212 melanocytes. (C) Average current densities (pA/pF) measured at 100 mV. Inset: Average Erev (\u00b1s.e.m., n = 5 melanosomes per condition).\n\nMight melanin itself be critical for Imelano? To address this question, we treated Oa1\u2212/\u2212 melanocytes with phenylthiourea (PTU), a potent inhibitor of the key melanogenic enzyme tyrosinase, resulting in melanin depletion (Figure 5\u2014figure supplement 2A). Recording from melanosomes dissected from PTU-treated melanocytes revealed a current with the same properties as in vehicle-treated cells and similar to Imelano, suggesting that melanin does not influence Imelano (Figure 5\u2014figure supplement 2B,C). We thus concluded that OCA2 expression is required for Imelano and melanization, but melanin is not required for Imelano.\n\nWe next sought to compare the biophysical properties of the endogenous OCA2-mediated melanosome current (Imelano) in dermal and RPE melanosomes with those of the OCA2-expressing endolysosome current (IOCA2). Excised cytoplasmic-side-out patches from partially dissected endolysosomes of OCA2-expressing AD293 cells (Figure 6A) exhibited single-channel currents (iOCA2) with greatest activity at positive membrane potentials (Figure 6B), consistent with the outward rectification measured for whole-endolysosome IOCA2 (Figure 1B). Patches from mock-transfected endolysosomes did not exhibit similar single-channel activity (Figure 6\u2014figure supplement 1A,B). The Erev of iOCA2 was \u221266 mV, close to ECl predicted by the Nernst equation (\u221268 mV), and the unitary slope conductance was 58 \u00b1 2 pS (Figure 6C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04543/elife-04543-fig6-v1.jpg)\n\n**Figure 6.:** (A) Cytoplasmic-side-out patches were excised from partially dissected organelles to carry out single-channel recordings. (B) Representative single-channel currents recorded in response to voltage steps between \u221280 mV and +80 mV from a patch excised from an OCA2-expressing endolysosome (O indicates the open state and C the closed state of the channel). (C) Average single-channel current amplitudes from patches excised from OCA2-expressing endolysosomes (\u00b1s.e.m., n = 4 patches) (ECl = Nernst potential for Cl\u2212). (D) Single-channel currents from a representative patch excised from a dermal melanosome that contains at least two channels (O1 indicates one open channel, O2 indicates two channels open simultaneously, and C both channels closed). (E) Average single-channel current amplitudes from patches excised from dermal melanosomes (\u00b1s.e.m., n = 3 patches). (F) In a representative OCA2-expressing endolysosome, dermal melanosome, and RPE melanosome, currents were selective for Cl\u2212 and Br\u2212, but not I\u2212, F\u2212, or Gluc\u2212. In the same organelle, currents were recorded with 48 mM luminal NMDG-Cl while substituting symmetrical concentrations of cytoplasmic anions in an NMDG-based solution. (G) IOCA2 permeability ratios based on Erev measurements (\u00b1s.e.m., n = 3\u20137 organelles for each condition).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04543/elife-04543-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Top: Representative single-channel currents recorded at 80 mV from cytoplasmic-side-out patches excised from an endolysosome isolated from a mock-transfected AD293 cell, OCA2-expressing endolysosome, and dermal melanosome. Bottom: Associated amplitude histograms. Inset: None of the endolysosome patches from mock-transfected cells exhibited significant single-channel activity (scale = 10 pA, 250 ms). (B) Average maximal current amplitudes at 80 mV calculated from the Gaussian fit of amplitude histograms of individual membrane patches excised from mock-transfected, OCA2-expressing endolysosomes, or dermal melanosomes (\u00b1s.e.m., n = 4\u20136 patches for each condition, i = 0.18 \u00b1 0.18 pA for mock-transfected AD293 endolysosomes, 8.59 \u00b1 0.46 pA for OCA2-expressing endolysosomes, 9.00 \u00b1 0.51 pA for dermal melanosomes).\n\nIon channels are pore-proteins that allow rapid diffusion of ions (>106 ions/s) down their concentration gradients, while carriers and pumps typically move ions at slower rates (<105 ions/s). We thus calculated the OCA2-mediated transport rate at 80 mV, where we measured the largest single-channel amplitude, and found a transport rate of \u223c5.5 \u00d7 107 ions/s. The large conductance recorded in isolated patches from OCA2-expressing endolysosomes indicates that OCA2 functions as a critical component of an electrodiffusive anion channel. Similar properties were measured for single-channel currents in excised cytoplasmic-side-out patches of dermal melanosomes from Oa1\u2212/\u2212 melanocytes (imelano) (Erev = \u221267 mV and unitary slope conductance = 60 \u00b1 1 pS) (Figure 6D,E). Thus, the single-channel properties of this endogenous melanosomal current are nearly identical to those recorded from OCA2-expressing endolysosomes.\n\nTo determine the anion selectivity of the recorded currents, we estimated the permeability to different anions by determining Erev under symmetrical concentrations (48 mM) of luminal Cl\u2212 and cytoplasmic Cl\u2212, Br\u2212, I\u2212, F\u2212 or Gluc\u2212. Erev for IOCA2 was close to zero for cytoplasmic Cl\u2212 and Br\u2212 and shifted to negative voltages for I\u2212, F\u2212, and Gluc\u2212 (Figure 6F), suggesting that in endolysosomes OCA2 mediates a current selective for Cl\u2212 and Br\u2212, but poorly permeable to I\u2212, F\u2212, and Gluc\u2212. A similar shift in Erev was measured for Imelano in dermal or RPE melanosomes (Figure 6F), indicating that the endogenous currents have the same selectivity profile. Moreover, the calculated permeability ratios (Px/PCl) for the heterologously expressed currents were nearly the same as the endogenous ones (Figure 6G). Collectively, these results suggest that IOCA2 and Imelano are mediated by the same anion channel.\n\n### Conclusions and implications\n\nOur results suggest that OCA2 is an essential component of a melanosome-specific anion channel. Heterologous endolysosomal expression of OCA2 contributes to a chloride channel with biophysical properties similar to an endogenous melanosomal OCA2-mediated channel. Importantly, OCA2 activity controls the melanin content of melanosomes, most likely by regulating organellar pH. We propose that OCA2 contributes to a novel melanosome-specific anion current that modulates melanosomal pH for optimal tyrosinase activity required for melanogenesis.\n\n## Materials and methods\n\n### Cells and tissue\n\nAll cells were grown at 37\u00b0C and 5% CO2, and reagents were from Invitrogen/Life Technologies (Grand Island, NY) unless stated otherwise. AD293, HeLa, and NF-SV60 fibroblasts were grown in DMEM, 10% fetal bovine serum (FBS, Atlanta Biologicals, Flowery Branch, GA) with or without 1% penicillin/streptomycin (P/S).\n\nImmortalized mouse melanocyte cell lines melan-Ink4a (Sviderskaya et al., 2002) and melan-Oa1 (Palmisano et al., 2008) were grown in RPMI 1640, 10% FBS, 1% P/S, 200 nM phorbol 12-myristate-13-acetate (Sigma, St. Louis, MO) at 37\u00b0C and 10% CO2. Primary human epidermal melanocytes and keratinocytes were isolated from neonatal foreskin. Human epidermal melanocytes (Cascade Biologics/Life Technologies) were cultured in Medium 254, Human Melanocytes Growth Supplement, and 1% P/S. Human epidermal keratinocytes (Lifeline Cell Technology, Frederick, MD) were cultured in Dermalife basal medium supplemented with LifeFactors and 1% P/S.\n\nTransfection of cells used for electrophysiology and imaging was carried out using Lipofectamine 2000 (Invitrogen/Life Technologies) according to manufacturer's protocol, unless otherwise stated.\n\n#### RPE tissue\n\nAmerican Bullfrogs (L. catesbeianus) eyes were hemisected and RPE tissue was removed from the eyes with forceps after removal of the retinas. The dissection was performed in normal room light using light-adapted frogs. The tissue was kept at 4\u00b0C in a modified Ringer's solution containing (mM): 111 NaCl, 2.5 KCl, 1 CaCl2, 1.5 MgCl2, 0.02 EDTA, 3 HEPES, pH 7.6. Tissue was used for a maximum of 36 hr.\n\n### Molecular biology\n\nOCA2 tagged with GFP or mCherry was generated by inserting human OCA2 (hOCA2, NM_000275) between the BamHI/Xhol sites of pcDNA4/TO (Invitrogen/Life Technologies). K614E and V443I mutations in hOCA2 were made using site-directed mutagenesis and verified by sequencing. 5mut hOCA2 was generated by Genscript (Piscataway, NJ).\n\n#### siRNA\n\nMouse OCA2 (mOCA2)-targeted and scrambled siRNAs were designed and expressed using the BLOCK-iT miRNA lentiviral system (Invitrogen/Life Technologies). mOCA2 specific oligos were cloned into pcDNA6.2-GW/EmGFP-miRNA, then recombined into pLenti6/V5-DEST vector and expressed in Oa1\u2212/\u2212 mouse melanocytes using viral transduction (Bellono et al., 2013). Stable cell lines of OCA2-targetd or control siRNA-expressing melanocytes were created using fluorescence-activated cell sorting (FACS) and subsequently kept under blasticidin selection (10 \u03bcg/ml). For rescue experiments hOCA2 was transfected in mouse melanocytes expressing mOCA2-targeted siRNA.\n\n#### Quantitative PCR\n\nTotal RNA was extracted using the RNeasy Plus kit (QIAGEN) and reverse transcribed using SuperScript III kit (Invitrogen/Life Sciences). mOCA2 mRNA levels were determined using the following primers: F 5\u2032-CAGGAATCGCAGAGAAGCAT-3\u2032 and R 5\u2032-AGATAGCACATCCCAATGGTG-3\u2032. hOCA2 mRNA levels in an array of human tissues (Origene) and in human epidermal skin cells were determined by qPCR with the following primers F 5\u2032-GTGTGCAGGGATTGCAGAAC-3\u2032 and R 5\u2032-ACATCCCAACAGTGCAGGAC-3\u2032. Reactions were prepared according to manufacturer instructions using Power SYBR Green (Applied Biosystems/Life Technologies) and cycled on a 7500 Real-Time PCR System (Applied Biosystems/Life Technologies). Actin was used as an internal control and all reactions were run in triplicate. mRNA levels were quantified by calculating 2\u2212\u0394CT values for each condition.\n\n### Organellar electrophysiology\n\n#### Organelle dissection\n\nAD293 cells were transiently transfected 1 day prior to electrophysiological recordings and treated with 1 \u03bcM vacuolin-1 (EMD Millipore, Billerica, MA) for 6\u201312 hr before the patch clamp experiments. Enlarged endolysosomes were individually dissected for patch clamp experiments, as previously described (Dong et al., 2008). In short, a borosilicate patch pipette was used to cut the cell membrane and push out individual organelles. Enlarged dermal melanosomes were dissected from Oa1\u2212/\u2212 mouse melanocytes and RPE melanosomes from bullfrog RPE cells using two patch pipettes.\n\n#### Recording conditions\n\nOrganelle patch-clamp recordings were carried out at room temperature using an EPC 10 amplifier (HEKA Instruments, Lambrecht, Germany) with PatchMaster software (HEKA Instruments). Data were filtered at 2.9 kHz and digitized at 10 kHz. Membrane potentials were corrected for liquid junction potentials. Organelle currents were recorded using borosilicate glass pipettes polished to 7\u20138 M\u03a9 for lysosomes and 9\u201312 M\u03a9 for melanosomes. Standard pipette/lumen solutions contained (mM): 140 NaCl, 5 KCl, 1 MgCl2, 2 CaCl2, 10 HEPES, 10 MES, 10 glucose; pH 4.6 for endolysosomes and pH 6.8 for melanosomes, unless otherwise stated. Standard bath/cytoplasmic solution contained (mM): 140 K-gluconate, 5 NaCl, 2 MgCl2, 0.39 CaCl2, 1 EGTA (Ca2+ buffered to 100 nM), 20 HEPES, pH 7.2. NMDG-based solutions were used in some experiments to block endogenous cation permeabilities. The holding potential was 0 mV and currents were measured in response to 500 ms voltage ramps from \u2212100 to +100 mV, unless otherwise stated. Whole-organelle current density was calculated by normalizing to capacitance (0.14\u20130.5 pF for melanosomes, 0.24\u20131.2 pF for endolyosomes). Single-channel current amplitudes were measured from the middle of the noise band between closed and open states or calculated from the difference between Gaussian-fitted closed and open peaks on all-points amplitude histograms for each excised patch record. To determine if IOCA2 passes Cl\u2212 electrodiffusively, reversal potential (Erev) was measured using 48 mM luminal Cl\u2212 and variable cytoplasmic [Cl\u2212] and compared with Erev predicted by the Nernst potential for Cl\u2212: ECl = (RT/zF)ln([Clluminal]/[Clcytoplasmic]). R = gas constant, z = valence (\u22121 for Cl\u2212), T = absolute temperature, and F = Faraday constant.\n\n#### Anion permeability\n\nRelative permeability of IOCA2 was determined by measuring the shift in Erev after the substitution of bath/cytoplasmic anions from Cl\u2212 to Br\u2212, I\u2212, F\u2212, or Gluc\u2212. Pipette/luminal and bath/cytoplasmic solutions were 48 mM NMDG-X solutions, where X = Cl\u2212 for pipette/luminal and X = Cl\u2212, Br\u2212, I\u2212, F\u2212, or Gluc\u2212 for bath/cytoplasmic. Permeability ratios were estimated using the Goldman-Hodgkin-Katz (GHK) equation: PX/PCl = exp (\u0394ErevF/RT), where \u0394Erev is the difference between Erev in symmetrical Cl (Erev = 0 mV) and that in cytoplasmic X. We did not correct for the possibility of the permeation of symmetrical NMDG+ or H+.\n\n### pH imaging\n\n#### pHluorin-LAMP1\n\nAD293 cells were cotransfected with mCherry-OCA2 and pHluorin-LAMP1 1 day prior to imaging experiments. pHluorin-LAMP1 expression was verified by treatment with bafilomycin A1 (BafA1, 2 \u03bcM). pHluorin-LAMP1 fluorescence intensity was quantified in endoysosomes that coexpressed mCherry-OCA2 and pHluorin-LAMP1 by subtracting the initial fluorescence from fluorescence elicited by treatment with BafA1: [(FBafA1 \u2212 Fo)/Fo]\u22121.\n\n#### LysoSensor DND-160\n\nAD293 cells were transfected 1 day prior to imaging experiments with mCherry-OCA2 or LAMP1 to identify endolysosomes, and incubated with 1 \u03bcM LysoSensor-ND160 for 5 min. Lysosensor was excited at 405 nm and its emission detected at 417\u2013483 nm (W1) and 490\u2013530 nm (W2). The ratio of emissions (W1/W2) in endolysosomes expressing mCherry-tagged OCA2 or LAMP1 was assigned to a pH value based on a calibration curve generated prior to each experiment using solutions containing 125 mM KCl, 25 mM NaCl, 24 \u03bcM Monensin, and varying concentrations of MES to adjust the pH to 3.5, 4.5, 5, 5.5, 6.5, 7, 7.5. The fluorescence ratio was linear for pH 5.0\u20137.0.\n\n### Immunofluorescence microscopy\n\nMelan-ink4a melanocytes were seeded on coverslips coated with Matrigel (BD Biosciences, San Jose, CA) at 3\u20134 \u00d7 104 cells/well in a 24-well plate, transfected the next day with 0.8 \u03bcg of plasmid DNA; HeLa cells were seeded on glass coverslips at 105 cells/well in a six well plate, transfected the next day using GeneJuice (EMD Millipore) as recommended by the manufacturer, with 0.1 \u00b5g of plasmid DNA. Both cell types were analyzed 48 hr post-transfection. Cells were fixed in HBSS (Invitrogen)/2% paraformaldehyde (Sigma) for 20 min at roo temperature, washed once with PBS and labeled with primary and secondary antibodies diluted in PBS with 0.2% (wt/vol) saponin, 0.1% (wt/vol) bovine serum albumin, 0.02% (wt/vol) sodium azide as described (Calvo et al., 1999). Nuclei were labeled with 500 ng/\u00b5l Hoescht 33342 (Sigma). Antibodies used were: mouse anti-TYRP1 (TA99/mel-5, ATCC); mouse anti-human LAMP1 (H4A3) and rat anti-mouse LAMP2 (GL2A7; both from Developmental Studies Hybridoma Bank, Iowa City, IA). Donkey antibodies specific to mouse or rat immunoglobulin and conjugated to Dylight 594 or 488 were from Jackson Immunoresearch (West Grove, PA). Cells were imaged using a 100\u00d7 HCX PL APO Lens on a Leica DM IRBE microscope equipped with a Retiga Exi Fast 1394 digital camera (Qimaging, Surrey, Canada) and Improvision Openlab software (Perkin\u2013Elmer, Waltham, MA). Sequential z-stack images separated by 0.2 \u00b5m were acquired and deconvolved using the OpenLab Volume Deconvolution module. Images from single stacks are shown. Final images were generated and insets magnified using Photoshop (Adobe, San Jose, CA). Colocalization analyses were performed using OpenLab software, as described (Setty et al., 2007). Briefly, images of individual cropped cells were rendered binary using the \u2018Density slice\u2019 module and the densely labeled perinuclear region was excluded from analysis. Pixel overlap between binary red and green images in the remaining cell regions was defined using the \u2018Boolean operations\u2019 module and further analyzed using Excel (Microsoft, Redmond, WA).\n\n### Melanin quantification\n\nMelanin from Oa1\u2212/\u2212 melanocytes expressing scrambled or OCA2-targeted siRNA was quantified as previously described (Oancea et al., 2009). Briefly, the soluble and insoluble fractions of melanocytes were separated after cell lysis with 1% Triton X-100 (Sigma) in PBS pH 7.4. Total protein was measured in the soluble fraction using a Bradford Assay (Bio-Rad Laboratories, Waltham, MA). The insoluble fraction was dissolved in 1 N NaOH by incubation for 30 min at 80\u00b0C and used to quantify melanin by measuring the optical density of each sample at 405 nm, then fit with a standard curve generated using synthetic melanin (Sigma). Average cellular melanin values were quantified as the ratio between total melanin and total protein from the same dish.\n\n### Data analysis\n\nAll data are shown as mean \u00b1 s.e.m. Data were considered significant if p < 0.05 using unpaired two-tailed Student t test or one-way ANOVA.\n",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "99f6cbd2-eda9-4f5f-8b17-cbfbc560f49d",
+      "submission_id": "6f13b152-117c-49b9-a8f3-d8742c35b9b1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christopher Miller, Howard Hughes Medical Institute, Brandeis University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04543.020](https://doi.org/10.7554/eLife.04543.020)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cAn intracellular anion channel critical for pigmentation\u201d for consideration at eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor) and Chris Miller, who is serving as a guest editor, as well as two other reviewers, one of whom, David Clapham, has agreed to reveal his identity. Chris Miller has been in touch with you about the steps required for submission of a revised manuscript. This is a more formal letter that summarizes the decision.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis is a satisfying study that identifies a novel ion channel involved in regulation of acidification of melanosomes, which are lysosome-like intracellular organelles specialized for melanin pigment-producing cells. The authors start with a guess \u2013 that OCA2, an unknown-function membrane protein whose genetic disruption leads to albinism \u2013 might contribute to melanosome physiology. Accordingly, they heterologously express OCA2 in mammalian cells, showing that the protein is directed to the endolysosomes, and in exceedingly challenging patch-recording experiments document a new current appearing in dissected lysosomes. They carry out a thorough characterization of this voltage-dependent, Cl- selective current, showing that it is reduced by certain mutations associated with albinism. Moreover, they detect a similar current endogenous to melanosomes from a melanocyte cell line. The biological function of this current is addressed by experiments showing that heterologous expression of OCA2 leads to pH regulation in lysosomes similar to that known for melanosomes in melanocytes, and effect that albinism mutants fail to produce. Moreover, they show that proper pH regulation in the melanocyte line is suppressed by OCA2 siRNA.\n\nThese difficult experiments are carefully done, the analysis is rigorous, and the conclusions compelling (but see below). Moreover, the system offers novel insight into an unusual cellular physiology: pH regulation of melanin-producing organelles in melanocytes and retinal pigment epithelial cells.\n\nThe reviewers had several criticisms that will need to be addressed in a revised manuscript.\n\n1) The conclusion that the OCA2 currents observed are mediated by an electrodiffusive ion channel mechanism is not well enough supported by the single-channel recordings of Figure 6. It is clear that these recordings are unusually difficult to make, but the absence of a statistically serious argument that these appear only upon OCA2 expression is lacking here. Since OCA2 is a member of the SLC13 family, for which only transporters are known, makes it all the more important to establish the identity of the single channels observed.\n\n2) The use of Lysotracker to put a precise value on the lumenal pH of these lysosome-like compartments is questioned. Lysosensors are weak bases that accumulate in acidic organelles, but since this accumulation is pH dependent, as is the molecules' fluorescence it is very difficult to be confident of assessments of pH change. The calibrations are questionable because monensin alone is unlikely to allow full pH equilibration with the bathing medium.\n\n3) The authors have given no plausible picture of why expression of a Cl- conductance should lead to alkalinization of the melanosomal lumen via the V-ATPAse, rather than acidification, and so the physiological rationale of the study needs sharpening in the Discussion (or Introduction).\n\n4) The family of voltage-pulse-evoked currents (Figure 4F) are far noisier than the ramp-evoked IV curves of Figure 4E, and this discrepancy raises concerns. In addition, the currents of Figure 4F are rather redundant to those of 4E, and could be removed, but the large difference on primary data quality should be explained in the authors' response.\n\n5) Albinism mutations. All three reported mutations presumably cause albinism, but the K614E mutation seems to generate completely normal currents. The authors never address this discrepancy, which is difficult to reconcile with the claimed function of the protein.\n",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "36a202b5-460f-4e40-8219-a3b3aaeceedc",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C1",
+      "claim": "Intracellular ion channels are essential regulators of organellar and cellular function.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular ion channels are essential regulators of organellar and cellular function, yet the molecular identity and physiological role of many of these channels remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the importance of intracellular ion channels, drawing from established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "07e9a59e-bdd4-473c-9a0b-048483653ce8",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C2",
+      "claim": "The molecular identity and physiological role of many intracellular ion channels remains elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular ion channels are essential regulators of organellar and cellular function, yet the molecular identity and physiological role of many of these channels remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "410a159e-15c8-438d-bec9-c03c24315bef",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C3",
+      "claim": "No ion channel has been characterized in melanosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, no ion channel has been characterized in melanosomes, organelles that produce and store the major mammalian pigment melanin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of prior characterization in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "53626670-738d-4282-8f6a-502e7a0a357c",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C4",
+      "claim": "Melanosomes are organelles that produce and store the major mammalian pigment melanin.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, no ion channel has been characterized in melanosomes, organelles that produce and store the major mammalian pigment melanin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about melanosome function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "5a47cab2-1a4b-466b-b6aa-dfed7e5a3db8",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C5",
+      "claim": "Defects in melanosome function cause albinism.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in melanosome function cause albinism, characterized by vision and pigmentation deficits, impaired retinal development, and increased susceptibility to skin and eye cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the consequences of melanosome dysfunction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "287c3af7-cc72-40b5-9756-0b1589b7675c",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C6",
+      "claim": "Albinism is characterized by vision and pigmentation deficits, impaired retinal development, and increased susceptibility to skin and eye cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in melanosome function cause albinism, characterized by vision and pigmentation deficits, impaired retinal development, and increased susceptibility to skin and eye cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clinical features of albinism based on established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "fd0d8e88-2978-4aff-becd-ff79f94f0bb4",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C7",
+      "claim": "The most common form of albinism is caused by mutations in oculocutaneous albinism II (OCA2).",
+      "claim_type": "EXPLICIT",
+      "source": "The most common form of albinism is caused by mutations in oculocutaneous albinism II (OCA2), a melanosome-specific transmembrane protein with unknown function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the genetic basis of albinism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "1716f03b-7328-4ea3-8bf6-859ffa4fd500",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C8",
+      "claim": "OCA2 is a melanosome-specific transmembrane protein with unknown function.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common form of albinism is caused by mutations in oculocutaneous albinism II (OCA2), a melanosome-specific transmembrane protein with unknown function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the known properties and knowledge gap regarding OCA2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "d2776a54-6b36-44f3-a64b-80d2fcddbfdf",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C9",
+      "claim": "Direct patch-clamp of skin and eye melanosomes identified a novel chloride-selective anion conductance mediated by OCA2.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we used direct patch-clamp of skin and eye melanosomes to identify a novel chloride-selective anion conductance mediated by OCA2 and required for melanin production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "b1faf400-7cbe-42f9-bc89-992080a2dd75",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C10",
+      "claim": "The OCA2-mediated chloride-selective anion conductance is required for melanin production.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we used direct patch-clamp of skin and eye melanosomes to identify a novel chloride-selective anion conductance mediated by OCA2 and required for melanin production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data showing reduced melanin content when OCA2 is knocked down.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "fe2cd28b-6237-4d9c-9cd3-451da47a22b6",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C11",
+      "claim": "Expression of OCA2 increases organelle pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of OCA2 increases organelle pH, suggesting that the chloride channel might regulate melanin synthesis by modulating melanosome pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data using pHluorin-LAMP1 and LysoSensor measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "dfe10602-84a3-4611-9fdc-0c521083a15d",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C12",
+      "claim": "The chloride channel might regulate melanin synthesis by modulating melanosome pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of OCA2 increases organelle pH, suggesting that the chloride channel might regulate melanin synthesis by modulating melanosome pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism proposed based on the pH measurements and known requirements for tyrosinase activity.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "1d7cdd0f-8f35-4fa0-b36d-df3e4a186cc0",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C13",
+      "claim": "A melanosomal anion channel that requires OCA2 is essential for skin and eye pigmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a melanosomal anion channel that requires OCA2 is essential for skin and eye pigmentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is supported by experimental data showing reduced pigmentation when OCA2 is knocked down and rescue with WT OCA2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "cec13a15-c6b5-4d13-b4bf-3460720765c6",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C14",
+      "claim": "Intracellular channels are less accessible to direct electrophysiological characterization than plasma membrane ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "While plasma membrane ion channels have been extensively studied, much less is known about the identity and physiology of intracellular channels because they are less accessible to direct electrophysiological characterization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the technical challenges in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "a53ead3d-9f11-4f77-9efc-49176a4d9bb6",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C15",
+      "claim": "Melanosomes are lysosome-related organelles that produce and store melanin.",
+      "claim_type": "EXPLICIT",
+      "source": "Melanosomes are lysosome-related organelles that produce and store melanin, a natural pigment present in most organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about melanosome classification and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "cca7cb68-886a-482f-958a-dcc94d9f8676",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C16",
+      "claim": "Melanin is a natural pigment present in most organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Melanosomes are lysosome-related organelles that produce and store melanin, a natural pigment present in most organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about melanin distribution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "dcd3464a-d4eb-41ae-a28e-26cc9dd07277",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C17",
+      "claim": "Impaired melanin synthesis and storage affects visual system development and pigmentation of the skin, eyes, and hair.",
+      "claim_type": "EXPLICIT",
+      "source": "Impaired melanin synthesis and storage affects visual system development and pigmentation of the skin, eyes, and hair, leading to reduced protection against ultraviolet radiation and predisposition for skin and eye cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the consequences of impaired melanin production.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "69850fbe-367d-40f4-9cfb-275388c1afcd",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C18",
+      "claim": "Impaired melanin synthesis and storage leads to reduced protection against ultraviolet radiation and predisposition for skin and eye cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Impaired melanin synthesis and storage affects visual system development and pigmentation of the skin, eyes, and hair, leading to reduced protection against ultraviolet radiation and predisposition for skin and eye cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the protective role of melanin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "7de9211c-7706-404b-ba9c-0bbf73d16a8b",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C19",
+      "claim": "Mutations in genes encoding putative melanosomal ion transport proteins result in oculocutaneous albinism (OCA).",
+      "claim_type": "EXPLICIT",
+      "source": "A number of genes encoding putative melanosomal ion transport proteins are critical for melanosomal function, as mutations in these genes result in oculocutaneous albinism (OCA) (Montoliu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "c0cdd131-52dd-417b-9da1-058b5f62ebdb",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C20",
+      "claim": "Ionic homeostasis plays an important role in melanin synthesis and storage.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that ionic homeostasis plays an important role in melanin synthesis and storage, yet how ion channels might contribute to melanosome function and pigmentation remains poorly understood (Bellono and Oancea, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the genetic evidence and cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "d66da3ad-ef25-4b21-b89a-93c4d90bd4ae",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C21",
+      "claim": "How ion channels might contribute to melanosome function and pigmentation remains poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that ionic homeostasis plays an important role in melanin synthesis and storage, yet how ion channels might contribute to melanosome function and pigmentation remains poorly understood (Bellono and Oancea, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "abcef67e-ebad-4d63-b6f0-f129c04238d1",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C22",
+      "claim": "OCA2 is encoded by the oculocutaneous albinism II gene.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most common forms of albinism is caused by mutations in a highly conserved protein encoded by the oculocutaneous albinism II gene (OCA2) (Gardner et al., 1992; Rinchik et al., 1993; Rosemblat et al., 1994; Lee et al., 1994a; Sitaram et al., 2009) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "54179727-e81f-4437-8285-c285e2b641a1",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C23",
+      "claim": "OCA2 is a highly conserved protein.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most common forms of albinism is caused by mutations in a highly conserved protein encoded by the oculocutaneous albinism II gene (OCA2) (Gardner et al., 1992; Rinchik et al., 1993; Rosemblat et al., 1994; Lee et al., 1994a; Sitaram et al., 2009) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and shown in Figure 1\u2014figure supplement 1 which displays sequence homology across species.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "5572582f-35ea-405a-bd1a-3c9153480256",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C24",
+      "claim": "OCA2-deficient animals lack pigment.",
+      "claim_type": "EXPLICIT",
+      "source": "OCA2-deficient animals lack pigment (Gardner et al., 1992; Protas et al., 2006) and reduced OCA2 expression leads to decreased melanin underlying blue eye color in humans (Eiberg et al., 2008; Sturm et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "b85559be-b887-41c0-a1d6-5bb10bd1bbc7",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C25",
+      "claim": "Reduced OCA2 expression leads to decreased melanin underlying blue eye color in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "OCA2-deficient animals lack pigment (Gardner et al., 1992; Protas et al., 2006) and reduced OCA2 expression leads to decreased melanin underlying blue eye color in humans (Eiberg et al., 2008; Sturm et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "0a56414d-329b-461f-aa80-fefad4d62371",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C26",
+      "claim": "OCA2 has twelve predicted transmembrane domains.",
+      "claim_type": "EXPLICIT",
+      "source": "OCA2 has twelve predicted transmembrane domains (Gardner et al., 1992), is localized to melanosomal membranes (Rosemblat et al., 1994; Sitaram et al., 2009), and has been implicated in pH regulation of melanosomes and trafficking of the melanogenic enzyme tyrosinase (Puri et al., 2000; Manga and Orlow, 2001; Chen et al., 2002, 2004; Ni-Komatsu and Orlow, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "76300256-276d-49f5-966f-8b1c679bba25",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C27",
+      "claim": "OCA2 is localized to melanosomal membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "OCA2 has twelve predicted transmembrane domains (Gardner et al., 1992), is localized to melanosomal membranes (Rosemblat et al., 1994; Sitaram et al., 2009), and has been implicated in pH regulation of melanosomes and trafficking of the melanogenic enzyme tyrosinase (Puri et al., 2000; Manga and Orlow, 2001; Chen et al., 2002, 2004; Ni-Komatsu and Orlow, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "f12cb1e6-4d91-4e56-8467-cd7895b508f1",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C28",
+      "claim": "OCA2 has been implicated in pH regulation of melanosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "OCA2 has twelve predicted transmembrane domains (Gardner et al., 1992), is localized to melanosomal membranes (Rosemblat et al., 1994; Sitaram et al., 2009), and has been implicated in pH regulation of melanosomes and trafficking of the melanogenic enzyme tyrosinase (Puri et al., 2000; Manga and Orlow, 2001; Chen et al., 2002, 2004; Ni-Komatsu and Orlow, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "7e5bcc84-c693-471e-9545-c9e70be8be5d",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C29",
+      "claim": "OCA2 has been implicated in trafficking of the melanogenic enzyme tyrosinase.",
+      "claim_type": "EXPLICIT",
+      "source": "OCA2 has twelve predicted transmembrane domains (Gardner et al., 1992), is localized to melanosomal membranes (Rosemblat et al., 1994; Sitaram et al., 2009), and has been implicated in pH regulation of melanosomes and trafficking of the melanogenic enzyme tyrosinase (Puri et al., 2000; Manga and Orlow, 2001; Chen et al., 2002, 2004; Ni-Komatsu and Orlow, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "a5ecab49-1461-46e5-b740-35dbe0ae74aa",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C30",
+      "claim": "The function of OCA2 and the molecular mechanism by which it regulates melanin are not known.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its importance, the function of OCA2 and the molecular mechanism by which it regulates melanin are not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "1b8090e2-7067-4efb-88c2-c7e81546c692",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C31",
+      "claim": "OCA2 contributes to an anion channel required for pigmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using whole-organelle and single-channel patch-clamp recordings we found that OCA2 contributes to an anion channel required for pigmentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "541d4ddf-99b7-4117-a945-b13ccf4e0237",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C32",
+      "claim": "The OCA2-mediated Cl\u2212 current was nearly abolished by a mutation identified in patients with oculocutaneous albinism type II.",
+      "claim_type": "EXPLICIT",
+      "source": "The OCA2-mediated Cl\u2212 current was nearly abolished by a mutation identified in patients with oculocutaneous albinism type II.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing reduced current amplitude with the V443I mutation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "8c5125c0-bbdc-4535-b7bb-18726d3a88b7",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C33",
+      "claim": "Expression of OCA2 in endolysosomes increased organelle pH, providing a potential mechanism for how OCA2 regulates melanogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, expression of OCA2 in endolysosomes increased organelle pH, providing a potential mechanism for how OCA2 regulates melanogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and represents a mechanistic inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "2526b64a-22b6-4984-8fed-5aeb242f65c9",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C34",
+      "claim": "A previously uncharacterized OCA2-dependent anion channel is critical for melanosomal function and pigmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a previously uncharacterized OCA2-dependent anion channel is critical for melanosomal function and pigmentation, revealing a novel function for intracellular ion channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "37a5ae7f-2e03-4789-8fbd-47bf533f5454",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C35",
+      "claim": "When expressed in heterologous systems, OCA2 localizes to lysosomes and late endosomes (endolysosomes).",
+      "claim_type": "EXPLICIT",
+      "source": "In melanocytes and retinal pigment epithelium (RPE) OCA2 is restricted to melanosomes, but when expressed in heterologous systems it localizes to lysosomes and late endosomes (endolysosomes) (Sitaram et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "d3e5ac65-9769-4ff8-8fab-d353b66a83e7",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C36",
+      "claim": "In melanocytes and retinal pigment epithelium (RPE) OCA2 is restricted to melanosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In melanocytes and retinal pigment epithelium (RPE) OCA2 is restricted to melanosomes, but when expressed in heterologous systems it localizes to lysosomes and late endosomes (endolysosomes) (Sitaram et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "b99eaa28-edf3-4d9e-bb0f-636c2a959afe",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C37",
+      "claim": "GFP-OCA2 colocalized with the endolysosomal marker LAMP1 in AD293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate if OCA2 has ion transport activity, we expressed OCA2 tagged with GFP (GFP-OCA2) or mCherry (mCherry-OCA2) in AD293 cells, where it colocalized with the endolysosomal marker LAMP1 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "05c40911-6445-465d-8e09-0665bcb6bd31",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C38",
+      "claim": "Endolysosomes can be enlarged by treating cells with 1 \u03bcM vacuolin-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Endolysosomes are an ideal melanosome-related heterologous system because they can be enlarged by treating cells with 1 \u03bcM vacuolin-1 and mechanically released from the cytoplasm with a glass pipette (Cerny et al., 2004; Saito et al., 2007; Dong et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior methodological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "6d890007-9771-4fdc-ab77-58223f7dd02f",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C39",
+      "claim": "Endolysosomes can be mechanically released from the cytoplasm with a glass pipette.",
+      "claim_type": "EXPLICIT",
+      "source": "Endolysosomes are an ideal melanosome-related heterologous system because they can be enlarged by treating cells with 1 \u03bcM vacuolin-1 and mechanically released from the cytoplasm with a glass pipette (Cerny et al., 2004; Saito et al., 2007; Dong et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior methodological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "1b0eecc1-4daa-4cc0-8c75-f8a9f541de12",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C40",
+      "claim": "Voltage pulses evoked a large outwardly rectifying current (IOCA2) in endolysosomes expressing GFP-OCA2.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded whole-organelle currents from endolysosomes expressing GFP-OCA2 and found that voltage pulses evoked a large outwardly rectifying current (IOCA2) that was not present in mock-transfected cells (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "2ddca7a7-91c7-4bbc-b4c4-b0e2fb95d68c",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C41",
+      "claim": "IOCA2 was not present in mock-transfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded whole-organelle currents from endolysosomes expressing GFP-OCA2 and found that voltage pulses evoked a large outwardly rectifying current (IOCA2) that was not present in mock-transfected cells (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "d9202d30-4ae8-46a8-8311-2bbc672ac71b",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C42",
+      "claim": "Replacing K+ with Na+ in the bath solution did not significantly change the current amplitude or reversal potential of IOCA2.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested if IOCA2 carries K+ into the lumen by replacing it with Na+ in the bath solution. We detected no significant change in the current amplitude or reversal potential (Erev) (Figure 1\u2014figure supplement 2A,B), suggesting that K+ is not required for IOCA2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "fb2fb3a6-1961-4d67-8aea-86d6d5a504ed",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C43",
+      "claim": "K+ is not required for IOCA2.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested if IOCA2 carries K+ into the lumen by replacing it with Na+ in the bath solution. We detected no significant change in the current amplitude or reversal potential (Erev) (Figure 1\u2014figure supplement 2A,B), suggesting that K+ is not required for IOCA2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental data showing no change when K+ was replaced with Na+.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "2ee60ba5-8395-4b76-9032-489e59a414d1",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C44",
+      "claim": "IOCA2 was nearly abolished when luminal Cl\u2212 was replaced with gluconate.",
+      "claim_type": "EXPLICIT",
+      "source": "IOCA2 was nearly abolished with Gluc\u2212 in the pipette and Erev was significantly shifted in the positive direction, consistent with the endogenous current recorded in endolysosomes from mock-transfected cells (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "c56820cc-7e4f-4b80-bdfb-5343c6c158b5",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C45",
+      "claim": "Erev of IOCA2 was significantly shifted in the positive direction when luminal Cl\u2212 was replaced with gluconate.",
+      "claim_type": "EXPLICIT",
+      "source": "IOCA2 was nearly abolished with Gluc\u2212 in the pipette and Erev was significantly shifted in the positive direction, consistent with the endogenous current recorded in endolysosomes from mock-transfected cells (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "6424b02a-6776-4869-817b-997db5e61858",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C46",
+      "claim": "The similar current amplitude and positive Erev measured in mock-transfected and OCA2-expressing endolysosomes with luminal Gluc\u2212 suggests the presence of an endogenous cationic permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "The similar current amplitude and positive Erev measured in mock-transfected and OCA2-expressing endolysosomes with luminal Gluc\u2212 suggests the presence of an endogenous cationic permeability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "80fc31cb-6f93-4705-8458-661d2b329418",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C47",
+      "claim": "When the endogenous current was subtracted from IOCA2, the Erev for IOCA2 became similar to ECl predicted by the Nernst equation.",
+      "claim_type": "EXPLICIT",
+      "source": "When we subtracted this endogenous current from IOCA2, the Erev for IOCA2 became similar to ECl predicted by the Nernst equation (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "41cf8145-0599-4884-9f80-0b6c67cf5818",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C48",
+      "claim": "IOCA2 is mediated by Cl\u2212.",
+      "claim_type": "EXPLICIT",
+      "source": "The significant reduction in current amplitude in the presence of luminal Gluc\u2212 indicates that IOCA2 is mediated by Cl\u2212, consistent with OCA2 homology to bacterial anion transporters (Rinchik et al., 1993; Brilliant, 2001; Kobayashi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citations to prior literature on OCA2 homology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "a328f5d2-096c-41d0-8f7e-6346dd76c441",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C49",
+      "claim": "OCA2 has homology to bacterial anion transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "The significant reduction in current amplitude in the presence of luminal Gluc\u2212 indicates that IOCA2 is mediated by Cl\u2212, consistent with OCA2 homology to bacterial anion transporters (Rinchik et al., 1993; Brilliant, 2001; Kobayashi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "f344036b-c151-43ef-accb-4a54fa8a98a0",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C50",
+      "claim": "DIDS, NFA, and NPPB did not significantly alter IOCA2 amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested whether a range of pharmacological inhibitors of different Cl\u2212 channels and transporters affect IOCA2 by bath-applying 4,4\u2032-diisothiocyanato-2,2\u2032-stilbenedisulfonic acid disodium salt (DIDS), niflumic acid (NFA), or 5-Nitro-2-(3-phenylpropylamino)benzoic acid (NPPB), but none significantly altered IOCA2 amplitude (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "d95f581c-77c6-4b25-a286-c76f9679aac3",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C51",
+      "claim": "IOCA2 has a different pharmacological profile from the channels and transporters that are inhibited by DIDS, NFA, and NPPB.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, IOCA2 has a different pharmacological profile from the channels and transporters that are inhibited by the tested compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing lack of inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "7611e0cb-82f3-4252-bb9e-c443d34522f6",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C52",
+      "claim": "Erev for IOCA2 with 48 mM luminal and 8 mM cytoplasmic [Cl\u2212] was \u221242.7 \u00b1 2.3 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Erev for 48 mM luminal and 8 mM cytoplasmic [Cl\u2212] was \u221242.7 \u00b1 2.3 mV and shifted to 1.6 \u00b1 2.5 mV under symmetrical 48 mM [Cl\u2212] (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "181014c6-ac77-451c-bffc-e684e789baf7",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C53",
+      "claim": "Erev for IOCA2 shifted to 1.6 \u00b1 2.5 mV under symmetrical 48 mM [Cl\u2212].",
+      "claim_type": "EXPLICIT",
+      "source": "Erev for 48 mM luminal and 8 mM cytoplasmic [Cl\u2212] was \u221242.7 \u00b1 2.3 mV and shifted to 1.6 \u00b1 2.5 mV under symmetrical 48 mM [Cl\u2212] (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "664e02c2-af6a-468f-ad2e-d539c079506d",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C54",
+      "claim": "Erev increased linearly as a function of cytosolic [Cl\u2212], with a 10-fold change in [Cl\u2212]cyto corresponding to a shift in Erev of 58 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Erev increased linearly as a function of cytosolic [Cl\u2212] ([Cl\u2212]cyto), with a 10-fold change in [Cl\u2212]cyto corresponding to a shift in Erev of 58 mV, consistent with a highly Cl\u2212 selective current (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "f0863fc7-ba7c-49b7-8e6f-b35191f977a0",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C55",
+      "claim": "The 10-fold change in [Cl\u2212]cyto corresponding to a shift in Erev of 58 mV is consistent with a highly Cl\u2212 selective current.",
+      "claim_type": "EXPLICIT",
+      "source": "Erev increased linearly as a function of cytosolic [Cl\u2212] ([Cl\u2212]cyto), with a 10-fold change in [Cl\u2212]cyto corresponding to a shift in Erev of 58 mV, consistent with a highly Cl\u2212 selective current (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on comparison with the Nernst equation prediction for a Cl\u2212 selective current.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "daa701e1-df1c-4d44-9c41-2762ace6537f",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C56",
+      "claim": "V443I is a common albinism-associated mutation in a predicted luminal loop and important for melanin content in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose mutations identified in patients with OCA type II through human genetic studies: V443I, a common albinism-associated mutation in a predicted luminal loop and important for melanin content in vitro (Lee et al., 1994a, 1994b; Sviderskaya et al., 1997; King et al., 2003; Garrison et al., 2004; Hongyi et al., 2007; Preising et al., 2007; Hutton and Spritz, 2008; Rimoldi et al., 2014) and K614E, in a predicted cytoplasmic loop (Passmore et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior genetic and functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "34054981-9da6-4bb6-ac34-53bc39df36f6",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C57",
+      "claim": "K614E is an albinism-associated mutation in a predicted cytoplasmic loop.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose mutations identified in patients with OCA type II through human genetic studies: V443I, a common albinism-associated mutation in a predicted luminal loop and important for melanin content in vitro (Lee et al., 1994a, 1994b; Sviderskaya et al., 1997; King et al., 2003; Garrison et al., 2004; Hongyi et al., 2007; Preising et al., 2007; Hutton and Spritz, 2008; Rimoldi et al., 2014) and K614E, in a predicted cytoplasmic loop (Passmore et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "863a1902-3cc5-4ba9-8659-00922a48a9d1",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C58",
+      "claim": "The K614E and V443I mutants colocalized with the endolysosomal marker LAMP1 in HeLa cells, similar to WT mCherry-OCA2.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon expression in HeLa cells, the K614E and V443I mutants colocalized with the endolysosomal marker LAMP1, similar to WT mCherry-OCA2 (Figure 2\u2014figure supplement 1A), indicating that both mutants traffic efficiently to endolysosomes when expressed in non-melanocytic cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "2c310420-5601-4e2c-bd99-3ca82f26b397",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C59",
+      "claim": "K614E and V443I mutants traffic efficiently to endolysosomes when expressed in non-melanocytic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon expression in HeLa cells, the K614E and V443I mutants colocalized with the endolysosomal marker LAMP1, similar to WT mCherry-OCA2 (Figure 2\u2014figure supplement 1A), indicating that both mutants traffic efficiently to endolysosomes when expressed in non-melanocytic cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the colocalization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "bd2a3c96-fe49-4314-99ea-2a71c6929eca",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C60",
+      "claim": "5mut OCA2 localized primarily to endoplasmic reticulum-like structures rather than endolysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, 5mut OCA2 localized primarily to endoplasmic reticulum-like structures rather than endolysosomes (Figure 2\u2014figure supplement 1A), therefore it could be used as a negative control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "aa65d2af-e920-4402-b70c-d8d08c393f9f",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C61",
+      "claim": "WT, V443I and K614E OCA2 variants colocalized with the melanosomal tyrosinase-related protein 1 (TYRP1) in melan-ink4a cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In pigment cells containing melanosomes (melan-ink4a), expression of OCA2 variants revealed that WT, as well as V443I and K614E mutants colocalized with the melanosomal tyrosinase-related protein 1 (TYRP1; overlap with TYRP1 = 60.1 \u00b1 21.3% for WT; 50.7 \u00b1 13.9% for V433I; and 53.6 \u00b1 16.1% for K614E mCherry-OCA2) (Figure 2E), whereas overlap with the endolysosomal marker LAMP2 was minimal (11.8 \u00b1 10.7% among all variants).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "f03eff77-7976-4119-9fb1-167e77644546",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C62",
+      "claim": "Overlap of WT, V443I and K614E OCA2 variants with the endolysosomal marker LAMP2 was minimal (11.8 \u00b1 10.7% among all variants) in melan-ink4a cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In pigment cells containing melanosomes (melan-ink4a), expression of OCA2 variants revealed that WT, as well as V443I and K614E mutants colocalized with the melanosomal tyrosinase-related protein 1 (TYRP1; overlap with TYRP1 = 60.1 \u00b1 21.3% for WT; 50.7 \u00b1 13.9% for V433I; and 53.6 \u00b1 16.1% for K614E mCherry-OCA2) (Figure 2E), whereas overlap with the endolysosomal marker LAMP2 was minimal (11.8 \u00b1 10.7% among all variants).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "5a25609d-66ce-4161-bfba-4c7cac9ebcc8",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C63",
+      "claim": "Currents recorded from AD293 endolysosomes expressing K614E had similar amplitudes and Erev as WT OCA2.",
+      "claim_type": "EXPLICIT",
+      "source": "Currents recorded from AD293 endolysosomes identified by LAMP1-GFP and expressing K614E had similar amplitudes and Erev as WT OCA2 (Figure 2C,D), but those expressing V443I had amplitudes reduced by \u223c85% and Erev shifted to more positive values (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "375c0ea0-a4af-4994-929d-1c7f32a7c3c8",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C64",
+      "claim": "Endolysosomes expressing V443I had current amplitudes reduced by \u223c85% and Erev shifted to more positive values.",
+      "claim_type": "EXPLICIT",
+      "source": "Currents recorded from AD293 endolysosomes identified by LAMP1-GFP and expressing K614E had similar amplitudes and Erev as WT OCA2 (Figure 2C,D), but those expressing V443I had amplitudes reduced by \u223c85% and Erev shifted to more positive values (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "2bcf9950-9faf-4fdc-b8d3-dde873201aac",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C65",
+      "claim": "Endolysosomes of cells expressing 5mut had very small current amplitudes and a positive Erev, similar to mock-transfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Endolysosomes of cells expressing 5mut had very small current amplitudes and a positive Erev, similar to mock-transfected cells (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "5e2d89e2-d707-4d00-a230-6945f1b3f98c",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C66",
+      "claim": "The V443I-containing luminal loop between transmembrane domains 5 and 6 is critical for the OCA2-mediated Cl\u2212 current.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data suggest that the V443I-containing luminal loop between transmembrane domains 5 and 6 is critical for the OCA2-mediated Cl\u2212 current.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing reduced current with V443I mutation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "a41b7b41-cf92-498a-91ad-9396efe2d3e4",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C67",
+      "claim": "The K614E mutation had little effect on localization or OCA2-mediated currents.",
+      "claim_type": "EXPLICIT",
+      "source": "The K614E mutation had little effect on localization or OCA2-mediated currents in our experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "093b28cb-3226-4b64-922e-9be22a4a278e",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C68",
+      "claim": "K614E was identified in albinism patients with an additional OCA2 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because K614E was identified in albinism patients with an additional OCA2 mutation (Passmore et al., 1999), its associated phenotype might be too mild to detect in our assays or might be masked by overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "9e3f010b-5397-45d6-8510-9efb97dc6674",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C69",
+      "claim": "The K614E associated phenotype might be too mild to detect in the assays or might be masked by overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Because K614E was identified in albinism patients with an additional OCA2 mutation (Passmore et al., 1999), its associated phenotype might be too mild to detect in our assays or might be masked by overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about why K614E did not show a strong effect in the experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "abf60304-0910-4efb-905c-598ab3f11f9f",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C70",
+      "claim": "Early stage melanosomes are highly acidic.",
+      "claim_type": "EXPLICIT",
+      "source": "Early stage melanosomes are highly acidic (Raposo et al., 2001), but because tyrosinase is inactive at pH < 6.0, melanosomal pH is thought to increase in order to allow for melanin synthesis (Ancans et al., 2001; Halaban et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "53451f70-ecb7-4bc4-b00c-28d408cfa841",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C71",
+      "claim": "Tyrosinase is inactive at pH < 6.0.",
+      "claim_type": "EXPLICIT",
+      "source": "Early stage melanosomes are highly acidic (Raposo et al., 2001), but because tyrosinase is inactive at pH < 6.0, melanosomal pH is thought to increase in order to allow for melanin synthesis (Ancans et al., 2001; Halaban et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "bf26bd73-7c08-4425-905f-824a2df49003",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C72",
+      "claim": "Melanosomal pH is thought to increase in order to allow for melanin synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Early stage melanosomes are highly acidic (Raposo et al., 2001), but because tyrosinase is inactive at pH < 6.0, melanosomal pH is thought to increase in order to allow for melanin synthesis (Ancans et al., 2001; Halaban et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "65118a53-a1d0-4e21-8d02-5784d5b5a73c",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C73",
+      "claim": "Endolysosomes of control cells were acidic and lacked fluorescence emission at baseline when expressing ecliptic pHluorin-LAMP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Endolysosomes of control cells were acidic and lacked fluorescence emission at baseline (Figure 3B), but exhibited increased fluorescence upon neutralization (pH > 6) of organellar pH by cellular treatment with the vacuolar H+-ATPase inhibitor bafilomycin A1 (BafA1) (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "d50a501d-e662-454e-9e16-9b4926291692",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C74",
+      "claim": "Control endolysosomes exhibited increased fluorescence upon neutralization (pH > 6) of organellar pH by cellular treatment with bafilomycin A1 (BafA1).",
+      "claim_type": "EXPLICIT",
+      "source": "Endolysosomes of control cells were acidic and lacked fluorescence emission at baseline (Figure 3B), but exhibited increased fluorescence upon neutralization (pH > 6) of organellar pH by cellular treatment with the vacuolar H+-ATPase inhibitor bafilomycin A1 (BafA1) (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "a588c569-2ac2-47bd-9056-8b1ce31a37d0",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C75",
+      "claim": "Coexpression of WT OCA2 with pHluorin-LAMP1 resulted in endolysosomes that were fluorescent at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, coexpression of WT OCA2 with pHluorin-LAMP1 resulted in endolysosomes that were fluorescent at baseline, with only a small increase in fluorescence in response to BafA1 (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "bd1276e2-f871-440c-b602-ea2f39e1f227",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C76",
+      "claim": "Endolysosomes coexpressing WT OCA2 with pHluorin-LAMP1 had only a small increase in fluorescence in response to BafA1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, coexpression of WT OCA2 with pHluorin-LAMP1 resulted in endolysosomes that were fluorescent at baseline, with only a small increase in fluorescence in response to BafA1 (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "85470457-7e6f-42fb-8c6e-7a6dcd480a5b",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C77",
+      "claim": "OCA2 expression increased the pH of endolysosomes to > 6.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that OCA2 expression increased the pH of endolysosomes to > 6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the pHluorin-LAMP1 fluorescence data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "00651a90-531b-4a2c-825e-98cda691dfe8",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C78",
+      "claim": "Endolysosomes expressing K614E exhibited basal fluorescence and little change in fluorescence following treatment with BafA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Endolysosomes expressing K614E exhibited basal fluorescence and little change in fluorescence following treatment with BafA1 (Figure 3B,C), consistent with its intact conductance and localization to endolysosomes (Figure 2, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "886d31d5-6aba-4d79-a73c-c70c450a5dec",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C79",
+      "claim": "Endolysosomes expressing V443I had dim fluorescence at baseline that increased dramatically following BafA1 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, endolysosomes expressing V443I, which have significantly reduced current amplitudes but intact localization (Figure 2, Figure 3\u2014figure supplement 1), had dim fluorescence at baseline that increased dramatically following BafA1 treatment (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "a427d218-2955-4831-8f54-665fcefbd8b6",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C80",
+      "claim": "Endolysosomes from cells expressing mislocalized 5mut lacked basal fluorescence and increased their fluorescence with BafA1 treatment, similar to untransfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Endolysosomes from cells expressing mislocalized 5mut lacked basal fluorescence and increased their fluorescence with BafA1 treatment (Figure 3B,C), similar to untransfected cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "ea833568-a9a4-4bc1-898c-1c8d90610e63",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C81",
+      "claim": "OCA2-mediated ion transport in organelles modulates luminal pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results support the notion that OCA2-mediated ion transport in organelles modulates luminal pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the pH measurement data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "2fe5bbc6-d5b2-4685-9e3d-f40ecd4e448e",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C82",
+      "claim": "The luminal pH of LAMP1-positive compartments in control cells had an approximate pH value of 5.12 \u00b1 0.03 based on LysoSensor calibration.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on LysoSensor calibration, the luminal pH of LAMP1-positive compartments in control cells had an approximate pH value of 5.12 \u00b1 0.03, while the luminal pH of WT OCA2-expressing endolysosomes was significantly greater (6.67 \u00b1 0.03, Figure 3\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "9ed85f1f-84e5-427f-b050-2dc184682fbb",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C83",
+      "claim": "The luminal pH of WT OCA2-expressing endolysosomes was 6.67 \u00b1 0.03 based on LysoSensor calibration.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on LysoSensor calibration, the luminal pH of LAMP1-positive compartments in control cells had an approximate pH value of 5.12 \u00b1 0.03, while the luminal pH of WT OCA2-expressing endolysosomes was significantly greater (6.67 \u00b1 0.03, Figure 3\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "105a91cf-e4f8-4e64-8d7a-8468528d967f",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C84",
+      "claim": "Expression of the K614E mutant increased pH to 6.32 \u00b1 0.03.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the K614E mutant increased pH to 6.32 \u00b1 0.03, while V443I only modestly raised the luminal pH of endolysosomes to 5.72 \u00b1 0.04, (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "b982406b-747f-492a-812e-ec8d1ada124c",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C85",
+      "claim": "V443I only modestly raised the luminal pH of endolysosomes to 5.72 \u00b1 0.04.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the K614E mutant increased pH to 6.32 \u00b1 0.03, while V443I only modestly raised the luminal pH of endolysosomes to 5.72 \u00b1 0.04, (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "4aca1a41-ddbb-42d7-885d-56c471346cc2",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C86",
+      "claim": "Melanosomal pH measurements were not possible because fluorescent indicator uptake in melanosomes is impaired and melanin interferes with the emission of fluorescent proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Melanosomal pH measurements were not possible because fluorescent indicator uptake in melanosomes is impaired and melanin interferes with the emission of fluorescent proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about technical limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "8a6bd659-f115-47c1-a23c-6c1a6ba7b01f",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C87",
+      "claim": "OCA2-mediated Cl\u2212 transport shifts the endolysosomal pH toward neutral values that in melanosomes would be optimal for tyrosinase activity and melanin synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our pH measurements are consistent for the two indicators and show that OCA2-mediated Cl\u2212 transport shifts the endolysosomal pH toward neutral values that in melanosomes would be optimal for tyrosinase activity and melanin synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the pH measurements and known requirements for tyrosinase activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "8b61f686-bbd9-47cd-82cd-3e100dcc5684",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C88",
+      "claim": "OCA2-mediated Cl\u2212 efflux from the lumen may regulate the organelle membrane potential, reducing vacuolar H+-ATPase activity and resulting in less H+ being pumped in the lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that OCA2-mediated Cl\u2212 efflux from the lumen regulates the organelle membrane potential, reducing vacuolar H+-ATPase activity and resulting in less H+ being pumped in the lumen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the pH modulation mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "51bd3751-b5fa-4b37-8f65-68b7aa193d01",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C89",
+      "claim": "The pH modulation by the OCA2-mediated Cl\u2212 conductance could be a more complex mechanism involving the contribution of additional channels and transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the pH modulation by the OCA2-mediated Cl\u2212 conductance could be a more complex mechanism involving the contribution of additional channels and transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative speculation about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "be977990-5073-48f8-b16a-3300ae09d94b",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C90",
+      "claim": "Treatment of melanocytes with vacuolin-1 did not significantly enlarge melanosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is technically challenging due to the intracellular localization and small size (300\u2013500 nm) of melanosomes and because treatment of melanocytes with vacuolin-1 did not significantly enlarge melanosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "ce62f7e7-1b15-4f6f-b7db-1d9a56150560",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C91",
+      "claim": "Melanosomes in Oa1\u2212/\u2212 melanocytes are enlarged to up to \u223c1 \u03bcm diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "To circumvent these difficulties we exploited a dermal melanocyte cell line derived from mice deficient in ocular albinism 1 (Oa1) (Palmisano et al., 2008), in which melanosomes are enlarged to up to \u223c1 \u03bcm diameter (Cortese et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "5aeb5748-3cd3-4068-aa67-47d971de0923",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C92",
+      "claim": "Recordings from individual melanosomes dissected from Oa1\u2212/\u2212 melanocytes revealed a large outwardly rectifying current (Imelano) with a negative Erev that was dependent on luminal Cl\u2212.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings from individual melanosomes dissected from Oa1\u2212/\u2212 melanocytes under the same conditions used for endolysosome patch-clamp experiments (Figure 4A) revealed a large outwardly rectifying current (Imelano) with a negative Erev that was dependent on luminal Cl\u2212, similar to currents recorded from OCA2-expressing endolysosomes (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "81cd825e-25cb-45d1-b922-0b1cb19dc1e9",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C93",
+      "claim": "Imelano is similar to currents recorded from OCA2-expressing endolysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings from individual melanosomes dissected from Oa1\u2212/\u2212 melanocytes under the same conditions used for endolysosome patch-clamp experiments (Figure 4A) revealed a large outwardly rectifying current (Imelano) with a negative Erev that was dependent on luminal Cl\u2212, similar to currents recorded from OCA2-expressing endolysosomes (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "7081e9e6-f80a-4a20-ba7a-f6028fd22c90",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C94",
+      "claim": "When currents recorded in the presence of luminal Gluc\u2212 were subtracted from Imelano measured in the presence of Cl\u2212, Erev was similar to ECl.",
+      "claim_type": "EXPLICIT",
+      "source": "When currents recorded in the presence of luminal Gluc\u2212 were subtracted from Imelano measured in the presence of Cl\u2212, Erev was similar to ECl (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "3a4c4e08-7937-4109-a52d-32d706d85126",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C95",
+      "claim": "The Erev for Imelano measured with NMDG-based solutions was \u221244.3 \u00b1 2.5 mV for 48 mM luminal and 8 mM cytoplasmic [Cl\u2212].",
+      "claim_type": "EXPLICIT",
+      "source": "The Erev for Imelano measured with NMDG-based solutions was found to be \u221244.3 \u00b1 2.5 mV for 48 mM luminal and 8 mM cytoplasmic [Cl\u2212] and \u22122.3 \u00b1 1.1 mV for symmetrical 48 mM [Cl\u2212] (Figure 4\u2014figure supplement 1B,C), consistent with the values measured for endolysosomes expressing OCA2 (Figure 1E) and with the Nernst potential for Cl\u2212 selective currents.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "bed03486-2b94-4cc9-80ff-4f6ee60e559d",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C96",
+      "claim": "The Erev for Imelano measured with NMDG-based solutions was \u22122.3 \u00b1 1.1 mV for symmetrical 48 mM [Cl\u2212].",
+      "claim_type": "EXPLICIT",
+      "source": "The Erev for Imelano measured with NMDG-based solutions was found to be \u221244.3 \u00b1 2.5 mV for 48 mM luminal and 8 mM cytoplasmic [Cl\u2212] and \u22122.3 \u00b1 1.1 mV for symmetrical 48 mM [Cl\u2212] (Figure 4\u2014figure supplement 1B,C), consistent with the values measured for endolysosomes expressing OCA2 (Figure 1E) and with the Nernst potential for Cl\u2212 selective currents.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "9c627b2a-aaf5-46c1-81e3-18abeec72c15",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C97",
+      "claim": "The Erev values for Imelano are consistent with the values measured for endolysosomes expressing OCA2 and with the Nernst potential for Cl\u2212 selective currents.",
+      "claim_type": "EXPLICIT",
+      "source": "The Erev for Imelano measured with NMDG-based solutions was found to be \u221244.3 \u00b1 2.5 mV for 48 mM luminal and 8 mM cytoplasmic [Cl\u2212] and \u22122.3 \u00b1 1.1 mV for symmetrical 48 mM [Cl\u2212] (Figure 4\u2014figure supplement 1B,C), consistent with the values measured for endolysosomes expressing OCA2 (Figure 1E) and with the Nernst potential for Cl\u2212 selective currents.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on comparison of experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "ed3d0b10-4b41-45bc-8f1f-e7c111661642",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C98",
+      "claim": "RPE whole-melanosome recordings identified an outwardly rectifying current with a negative Erev that was nearly abolished (reduced by \u223c90%) by substituting luminal Cl\u2212 with Gluc\u2212.",
+      "claim_type": "EXPLICIT",
+      "source": "RPE whole-melanosome recordings identified an outwardly rectifying current with a negative Erev that was nearly abolished (reduced by \u223c90%) by substituting luminal Cl\u2212 with Gluc\u2212 (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "a41566f4-abd3-4068-b067-dbcf7a5e1e1a",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C99",
+      "claim": "A current with similar properties as IOCA2 is present in melanosomes from skin and RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that a current with similar properties as IOCA2 is present in melanosomes from skin and RPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data from dermal and RPE melanosomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "38ee134d-70d6-4523-9e6b-8985b36d54dc",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C100",
+      "claim": "Reducing endogenous OCA2 expression markedly decreased melanin content in Oa1\u2212/\u2212 melanocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings (Sviderskaya et al., 1997), reducing endogenous OCA2 expression markedly decreased melanin content in Oa1\u2212/\u2212 melanocytes (Figure 5A, Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A and Figure 5\u2014figure supplement 1B, and is consistent with prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "1f4cf43e-2692-49de-8041-3d317e979413",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C101",
+      "claim": "Melanosomes dissected from melanocytes expressing OCA2-targeted siRNA had dramatically reduced current amplitudes and melanin content compared with melanosomes from cells expressing scrambled siRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Melanosomes dissected from melanocytes expressing OCA2-targeted siRNA had dramatically reduced current amplitudes and melanin content compared with melanosomes from cells expressing scrambled siRNA (control), indicating that OCA2 is required for Imelano and pigmentation (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "619562be-d377-4b62-b4f7-bef514dc0707",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C102",
+      "claim": "OCA2 is required for Imelano and pigmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Melanosomes dissected from melanocytes expressing OCA2-targeted siRNA had dramatically reduced current amplitudes and melanin content compared with melanosomes from cells expressing scrambled siRNA (control), indicating that OCA2 is required for Imelano and pigmentation (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental data showing reduced current and melanin with OCA2 knockdown.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "e58764c3-a754-43ff-a8ef-29ea82d18be6",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C103",
+      "claim": "Expression of WT OCA2, but not of the V443I mutant, in siRNA-treated cells was sufficient to reconstitute Imelano and rescue melanization.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of WT OCA2, but not of the V443I mutant, in siRNA-treated cells was sufficient to reconstitute Imelano and rescue melanization (Figure 5A\u2013C), suggesting that the OCA2-mediated current is required for melanin production.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "fdb0b99e-572a-4584-9999-11f5d0f16f14",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C104",
+      "claim": "The OCA2-mediated current is required for melanin production.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of WT OCA2, but not of the V443I mutant, in siRNA-treated cells was sufficient to reconstitute Imelano and rescue melanization (Figure 5A\u2013C), suggesting that the OCA2-mediated current is required for melanin production.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the rescue experiment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "90118595-c785-4c65-9469-4a1643e18418",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C105",
+      "claim": "A similar Imelano was measured from melanosomes of PTU-treated and control Oa1\u2212/\u2212 melanocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Recording from melanosomes dissected from PTU-treated melanocytes revealed a current with the same properties as in vehicle-treated cells and similar to Imelano, suggesting that melanin does not influence Imelano (Figure 5\u2014figure supplement 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "ed784096-0e0a-40a0-99b6-ac642c902c43",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C106",
+      "claim": "Melanin does not influence Imelano.",
+      "claim_type": "EXPLICIT",
+      "source": "Recording from melanosomes dissected from PTU-treated melanocytes revealed a current with the same properties as in vehicle-treated cells and similar to Imelano, suggesting that melanin does not influence Imelano (Figure 5\u2014figure supplement 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental data showing similar currents with and without melanin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "39405250-4e9c-4e0b-8895-a7e0158fb872",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C107",
+      "claim": "OCA2 expression is required for Imelano and melanization, but melanin is not required for Imelano.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus concluded that OCA2 expression is required for Imelano and melanization, but melanin is not required for Imelano.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data from siRNA knockdown and PTU treatment experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "6211e8b8-5619-44c2-a683-43f762416377",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C108",
+      "claim": "Excised cytoplasmic-side-out patches from partially dissected endolysosomes of OCA2-expressing AD293 cells exhibited single-channel currents (iOCA2) with greatest activity at positive membrane potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Excised cytoplasmic-side-out patches from partially dissected endolysosomes of OCA2-expressing AD293 cells (Figure 6A) exhibited single-channel currents (iOCA2) with greatest activity at positive membrane potentials (Figure 6B), consistent with the outward rectification measured for whole-endolysosome IOCA2 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "dbacb495-2cb2-49bf-a907-6af58af1b601",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C109",
+      "claim": "Patches from mock-transfected endolysosomes did not exhibit similar single-channel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Patches from mock-transfected endolysosomes did not exhibit similar single-channel activity (Figure 6\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "232fd755-931b-4e69-a91f-76b1fbc67032",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C110",
+      "claim": "The Erev of iOCA2 was \u221266 mV, close to ECl predicted by the Nernst equation (\u221268 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "The Erev of iOCA2 was \u221266 mV, close to ECl predicted by the Nernst equation (\u221268 mV), and the unitary slope conductance was 58 \u00b1 2 pS (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "5af9c0da-53e3-48cd-a3c7-a80ac2a097c4",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C111",
+      "claim": "The unitary slope conductance of iOCA2 was 58 \u00b1 2 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "The Erev of iOCA2 was \u221266 mV, close to ECl predicted by the Nernst equation (\u221268 mV), and the unitary slope conductance was 58 \u00b1 2 pS (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "4c3a550b-4bda-4bf6-9280-a39a90e513ae",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C112",
+      "claim": "The OCA2-mediated transport rate at 80 mV was \u223c5.5 \u00d7 10^7 ions/s.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus calculated the OCA2-mediated transport rate at 80 mV, where we measured the largest single-channel amplitude, and found a transport rate of \u223c5.5 \u00d7 107 ions/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "f881f12a-5d52-4042-9220-d4ec2a9064a1",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C113",
+      "claim": "The large conductance recorded in isolated patches from OCA2-expressing endolysosomes indicates that OCA2 functions as a critical component of an electrodiffusive anion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The large conductance recorded in isolated patches from OCA2-expressing endolysosomes indicates that OCA2 functions as a critical component of an electrodiffusive anion channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the high transport rate consistent with ion channel function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "30c1f20d-b930-4333-91cd-993080ea3051",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C114",
+      "claim": "Single-channel currents in excised cytoplasmic-side-out patches of dermal melanosomes from Oa1\u2212/\u2212 melanocytes (imelano) had Erev = \u221267 mV and unitary slope conductance = 60 \u00b1 1 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar properties were measured for single-channel currents in excised cytoplasmic-side-out patches of dermal melanosomes from Oa1\u2212/\u2212 melanocytes (imelano) (Erev = \u221267 mV and unitary slope conductance = 60 \u00b1 1 pS) (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "98529211-9452-448e-921d-65af7c1e309c",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C115",
+      "claim": "The single-channel properties of the endogenous melanosomal current are nearly identical to those recorded from OCA2-expressing endolysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the single-channel properties of this endogenous melanosomal current are nearly identical to those recorded from OCA2-expressing endolysosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "1d54c376-2c35-49b4-a082-ea90a363431f",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C116",
+      "claim": "IOCA2 is selective for Cl\u2212 and Br\u2212, but poorly permeable to I\u2212, F\u2212, and Gluc\u2212.",
+      "claim_type": "EXPLICIT",
+      "source": "Erev for IOCA2 was close to zero for cytoplasmic Cl\u2212 and Br\u2212 and shifted to negative voltages for I\u2212, F\u2212, and Gluc\u2212 (Figure 6F), suggesting that in endolysosomes OCA2 mediates a current selective for Cl\u2212 and Br\u2212, but poorly permeable to I\u2212, F\u2212, and Gluc\u2212.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "8ae7b0b7-d1cc-4c2f-a616-48bded1cb135",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C117",
+      "claim": "A similar shift in Erev was measured for Imelano in dermal or RPE melanosomes, indicating that the endogenous currents have the same selectivity profile.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar shift in Erev was measured for Imelano in dermal or RPE melanosomes (Figure 6F), indicating that the endogenous currents have the same selectivity profile.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "dab20dc2-b07a-473e-a626-eadc8c972a89",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C118",
+      "claim": "The calculated permeability ratios (Px/PCl) for the heterologously expressed currents were nearly the same as the endogenous ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the calculated permeability ratios (Px/PCl) for the heterologously expressed currents were nearly the same as the endogenous ones (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "9a55b5b2-13e8-4004-ad84-399162e9182a",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C119",
+      "claim": "IOCA2 and Imelano are mediated by the same anion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggest that IOCA2 and Imelano are mediated by the same anion channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similar biophysical and selectivity properties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "f3fa7c32-8fee-45ae-b351-ec2b872b9b22",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C120",
+      "claim": "OCA2 is an essential component of a melanosome-specific anion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that OCA2 is an essential component of a melanosome-specific anion channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "4b27b5c3-19ed-4f81-b0fc-cec80ea8000a",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C121",
+      "claim": "Heterologous endolysosomal expression of OCA2 contributes to a chloride channel with biophysical properties similar to an endogenous melanosomal OCA2-mediated channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterologous endolysosomal expression of OCA2 contributes to a chloride channel with biophysical properties similar to an endogenous melanosomal OCA2-mediated channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data comparing heterologous and endogenous currents.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "b6752f50-7370-4ca7-91e6-8d5e2913225d",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C122",
+      "claim": "OCA2 activity controls the melanin content of melanosomes, most likely by regulating organellar pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, OCA2 activity controls the melanin content of melanosomes, most likely by regulating organellar pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data showing pH changes and melanin content changes with OCA2 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "e65e0d78-94ee-429e-8117-7cde4dd30d11",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "claim_id": "C123",
+      "claim": "OCA2 contributes to a novel melanosome-specific anion current that modulates melanosomal pH for optimal tyrosinase activity required for melanogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that OCA2 contributes to a novel melanosome-specific anion current that modulates melanosomal pH for optimal tyrosinase activity required for melanogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a5d9141b-3fd9-4566-83ed-4d051ccef233",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Expression of OCA2 in endolysosomes produces a large outwardly rectifying chloride-selective current (IOCA2) that is absent in mock-transfected cells. The current is abolished when luminal Cl\u207b is replaced with gluconate, and the reversal potential shifts with cytoplasmic [Cl\u207b] according to the Nernst equation (58 mV per 10-fold change), confirming high Cl\u207b selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C55 provide strong converging evidence for a Cl\u207b-selective current. The ion substitution experiments (C42-C48), reversal potential measurements (C52-C55), and appropriate controls (C41) demonstrate rigorous electrophysiological characterization. The 58 mV slope matches theoretical predictions for a Cl\u207b-selective channel, and subtraction of endogenous currents (C47) appropriately isolates the OCA2-specific component.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "e4e6d77c-8cce-4b56-8579-61b2ed88d9ad",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "IOCA2 is not inhibited by common chloride channel blockers DIDS, NFA, or NPPB, indicating a distinct pharmacological profile from known Cl\u207b channels and transporters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 demonstrate appropriate pharmacological characterization. The lack of inhibition by multiple structurally distinct blockers supports the novelty of this conductance, though the negative result limits mechanistic insight. The experimental design is sound with appropriate controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "f3ef507e-c5f4-4329-8463-64712336b808",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The V443I mutation, identified in albinism patients, reduces IOCA2 amplitude by ~85% while maintaining proper localization to endolysosomes and melanosomes. The K614E mutation and 5mut construct serve as controls, with K614E showing normal currents and 5mut showing mislocalization and loss of function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C67 establish structure-function relationships using disease-relevant mutations. The V443I data (C64) strongly link channel function to disease, with proper localization controls (C58-C62) ruling out trafficking defects. The K614E result (C63, C67) is appropriately interpreted as potentially requiring compound heterozygosity (C68-C69). The 5mut serves as an effective negative control (C60, C65).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "3291333c-10ae-4a2a-808d-56c39d8fb98a",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "OCA2 expression increases endolysosomal pH from ~5.1 to ~6.7, as measured by pHluorin-LAMP1 and LysoSensor. The pH increase requires functional OCA2, as the V443I mutant shows minimal pH change (5.72) while K614E increases pH to 6.32. This pH shift would optimize tyrosinase activity for melanin synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C87 demonstrate pH modulation using two independent methods (pHluorin and LysoSensor), providing strong validation. The correlation between current amplitude and pH change across mutants (C78-C85) supports a mechanistic link. However, the proposed mechanism (C87) remains inferential, as direct melanosomal pH measurements were not possible (C86). The pH values are consistent with tyrosinase requirements from prior literature (C70-C72).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "52277404-77da-4bce-996e-44997ef72edc",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors hypothesize that OCA2-mediated Cl\u207b efflux regulates membrane potential, thereby reducing V-ATPase activity and increasing luminal pH. Alternative mechanisms involving additional channels and transporters are acknowledged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C89 are explicitly speculative hypotheses without direct experimental validation. While the pH data support that OCA2 affects pH, the mechanistic pathway remains untested. The authors appropriately acknowledge uncertainty and alternative explanations, but no experiments directly test membrane potential, V-ATPase activity, or the involvement of other transporters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "aff27d4e-d410-4f9f-9147-81cc89c20d99",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Native melanosomes from Oa1\u207b/\u207b dermal melanocytes and bullfrog RPE exhibit a chloride-selective current (Imelano) with properties nearly identical to IOCA2, including outward rectification, Cl\u207b dependence, and reversal potentials matching Nernst predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C99 provide critical validation that the heterologous system recapitulates native melanosomal currents. The use of enlarged Oa1\u207b/\u207b melanosomes (C91) cleverly overcomes technical limitations (C90). The biophysical similarity between Imelano and IOCA2 (C93, C97) strongly suggests they represent the same channel. Data from two melanosome sources (dermal and RPE, C92, C98) strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "573626ef-33c8-43a2-a30f-60afb8ae4c0b",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "siRNA knockdown of OCA2 reduces both Imelano current amplitude and melanin content by ~73-90%. Wild-type OCA2, but not the V443I mutant, rescues both current and pigmentation, demonstrating that the OCA2-mediated current is required for melanin production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C107 establish functional necessity through loss-of-function and rescue experiments. The parallel reduction in current and melanin (C101) with siRNA, and selective rescue by WT but not V443I (C103), provide strong causal evidence. The consistency with prior literature (C100) and appropriate controls strengthen the conclusion. This is a key result linking channel function to pigmentation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "d380f594-202d-4873-8146-405a8083d2cb",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Treatment with the tyrosinase inhibitor PTU depletes melanin but does not affect Imelano, indicating that melanin itself is not required for the current.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C106 appropriately test whether melanin affects channel function. The PTU experiment provides a clean control showing that the current is upstream of melanin production, not a consequence of it. This addresses a potential confound in the interpretation of the pigmentation data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "8f8916d9-cecb-4fb7-8a8e-c65df532a385",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Single-channel recordings from OCA2-expressing endolysosomes reveal a unitary conductance of 58 \u00b1 2 pS with Erev = -66 mV, yielding a transport rate of ~5.5 \u00d7 10\u2077 ions/s. Native dermal melanosomes show nearly identical single-channel properties (60 \u00b1 1 pS, Erev = -67 mV).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C115 provide definitive biophysical evidence that OCA2 functions as an ion channel rather than a transporter. The high transport rate (C112) exceeds typical carrier rates by >100-fold, and the single-channel conductance is consistent across heterologous and native systems (C114-C115). Appropriate negative controls from mock-transfected cells (C109) strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "7a3af7d7-3734-4d1e-b781-67be290e7025",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "IOCA2 and Imelano exhibit identical anion selectivity profiles: high permeability to Cl\u207b and Br\u207b, but poor permeability to I\u207b, F\u207b, and gluconate. Calculated permeability ratios are nearly identical between heterologous and native currents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C116-C119 demonstrate that heterologous and native currents share detailed selectivity properties, strongly supporting that they represent the same channel. The systematic testing of multiple anions and quantitative permeability calculations provide rigorous characterization. The identical selectivity profiles across three systems (endolysosomes, dermal melanosomes, RPE melanosomes) is compelling evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "1e887ff7-7e42-4126-94a3-f17660658c40",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors conclude that OCA2 is an essential component of a novel melanosome-specific anion channel that controls melanin content by regulating organellar pH for optimal tyrosinase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C120-C123 represent the integrated conclusions of the study. The evidence from heterologous expression (C121), pH modulation (C122), and functional requirement for pigmentation collectively support these conclusions. However, the mechanistic link through pH (C122-C123) remains somewhat inferential, as direct melanosomal pH measurements were not possible and the V-ATPase hypothesis is untested. The conclusion that OCA2 is 'essential' is well-supported by the knockdown/rescue data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "26285e18-20e5-4491-89b9-bf7c323628b8",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The introduction establishes that intracellular ion channels are important but understudied, no ion channel has been characterized in melanosomes, and OCA2 is a melanosome-specific protein of unknown function whose mutations cause the most common form of albinism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C30 provide appropriate background context supported by citations to prior literature. The statements about OCA2 conservation (C23), localization (C27), and disease association (C7, C24-C25) are well-established. The knowledge gap regarding OCA2 function (C8, C30) and melanosomal ion channels (C3, C21) appropriately motivates the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "d23f821d-1f5e-4a07-bd7c-9d9c676878a1",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "OCA2 localizes to melanosomes in melanocytes and RPE, but to endolysosomes when expressed in heterologous systems. Endolysosomes can be enlarged with vacuolin-1 and mechanically isolated for patch-clamp experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 establish the rationale for using endolysosomes as a heterologous system. The localization pattern (C35-C36) is supported by prior literature (citations), and the methodological approach (C38-C39) is validated by cited studies. This provides appropriate justification for the experimental strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "33f1a7ff-e104-4805-956c-1772b1901a49",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "OCA2 has homology to bacterial anion transporters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by multiple citations and provides context for the chloride selectivity findings. However, the manuscript does not present new homology analysis or structural predictions beyond citing prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "47ecd8fc-4629-4014-b226-71dcb9e99a30",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The K614E mutation was identified in albinism patients with an additional OCA2 mutation, and its phenotype might be too mild to detect in the assays or masked by overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C69 appropriately acknowledge the negative result for K614E but offer only speculation about why it doesn't affect function in their assays. The compound heterozygosity explanation (C68) is plausible but not tested. This represents appropriate scientific caution about interpreting negative results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "e52432a2-9745-49b5-b70c-6dcc6da789af",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Early melanosomes are highly acidic (pH < 6), but melanosomal pH must increase to allow tyrosinase activity and melanin synthesis, as tyrosinase is inactive below pH 6.0.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 summarize established knowledge from cited literature about melanosomal pH dynamics and tyrosinase requirements. This provides important context for interpreting the pH modulation results but represents prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "500ca17e-fe3e-4653-9d64-773c27fa0d43",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Direct melanosomal pH measurements were not possible because fluorescent indicator uptake is impaired in melanosomes and melanin interferes with fluorescent protein emission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C86 appropriately acknowledges a technical limitation that prevents direct validation of the pH hypothesis in melanosomes. This transparency about experimental constraints is important for interpreting the reliance on endolysosomal pH measurements as a proxy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    },
+    {
+      "id": "509101d4-1cb9-4699-89b3-7af8d2cdfb91",
+      "content_id": "8954ce8e-e483-4ff9-b17f-64e3adc4f433",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Treatment of melanocytes with vacuolin-1 did not significantly enlarge melanosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 explains why the authors used Oa1\u207b/\u207b melanocytes with naturally enlarged melanosomes rather than the vacuolin-1 approach that worked for endolysosomes. This demonstrates appropriate adaptation of methodology to overcome technical challenges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:06:27.972134Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b99eaa28-edf3-4d9e-bb0f-636c2a959afe",
+      "result_id": "a5d9141b-3fd9-4566-83ed-4d051ccef233"
+    },
+    {
+      "claim_id": "1b0eecc1-4daa-4cc0-8c75-f8a9f541de12",
+      "result_id": "a5d9141b-3fd9-4566-83ed-4d051ccef233"
+    },
+    {
+      "claim_id": "2ddca7a7-91c7-4bbc-b4c4-b0e2fb95d68c",
+      "result_id": "a5d9141b-3fd9-4566-83ed-4d051ccef233"
+    },
+    {
+      "claim_id": "d9202d30-4ae8-46a8-8311-2bbc672ac71b",
+      "result_id": "a5d9141b-3fd9-4566-83ed-4d051ccef233"
+    },
+    {
+      "claim_id": "fb2fb3a6-1961-4d67-8aea-86d6d5a504ed",
+      "result_id": "a5d9141b-3fd9-4566-83ed-4d051ccef233"
+    },
+    {
+      "claim_id": "2ee60ba5-8395-4b76-9032-489e59a414d1",
+      "result_id": "a5d9141b-3fd9-4566-83ed-4d051ccef233"
+    },
+    {
+      "claim_id": "c56820cc-7e4f-4b80-bdfb-5343c6c158b5",
+      "result_id": "a5d9141b-3fd9-4566-83ed-4d051ccef233"
+    },
+    {
+      "claim_id": "6424b02a-6776-4869-817b-997db5e61858",
+      "result_id": "a5d9141b-3fd9-4566-83ed-4d051ccef233"
+    },
+    {
+      "claim_id": "80fc31cb-6f93-4705-8458-661d2b329418",
+      "result_id": "a5d9141b-3fd9-4566-83ed-4d051ccef233"
+    },
+    {
+      "claim_id": "41cf8145-0599-4884-9f80-0b6c67cf5818",
+      "result_id": "a5d9141b-3fd9-4566-83ed-4d051ccef233"
+    },
+    {
+      "claim_id": "7611e0cb-82f3-4252-bb9e-c443d34522f6",
+      "result_id": "a5d9141b-3fd9-4566-83ed-4d051ccef233"
+    },
+    {
+      "claim_id": "181014c6-ac77-451c-bffc-e684e789baf7",
+      "result_id": "a5d9141b-3fd9-4566-83ed-4d051ccef233"
+    },
+    {
+      "claim_id": "664e02c2-af6a-468f-ad2e-d539c079506d",
+      "result_id": "a5d9141b-3fd9-4566-83ed-4d051ccef233"
+    },
+    {
+      "claim_id": "f0863fc7-ba7c-49b7-8e6f-b35191f977a0",
+      "result_id": "a5d9141b-3fd9-4566-83ed-4d051ccef233"
+    },
+    {
+      "claim_id": "f344036b-c151-43ef-accb-4a54fa8a98a0",
+      "result_id": "e4e6d77c-8cce-4b56-8579-61b2ed88d9ad"
+    },
+    {
+      "claim_id": "d95f581c-77c6-4b25-a286-c76f9679aac3",
+      "result_id": "e4e6d77c-8cce-4b56-8579-61b2ed88d9ad"
+    },
+    {
+      "claim_id": "daa701e1-df1c-4d44-9c41-2762ace6537f",
+      "result_id": "f3ef507e-c5f4-4329-8463-64712336b808"
+    },
+    {
+      "claim_id": "34054981-9da6-4bb6-ac34-53bc39df36f6",
+      "result_id": "f3ef507e-c5f4-4329-8463-64712336b808"
+    },
+    {
+      "claim_id": "863a1902-3cc5-4ba9-8659-00922a48a9d1",
+      "result_id": "f3ef507e-c5f4-4329-8463-64712336b808"
+    },
+    {
+      "claim_id": "2c310420-5601-4e2c-bd99-3ca82f26b397",
+      "result_id": "f3ef507e-c5f4-4329-8463-64712336b808"
+    },
+    {
+      "claim_id": "bd2a3c96-fe49-4314-99ea-2a71c6929eca",
+      "result_id": "f3ef507e-c5f4-4329-8463-64712336b808"
+    },
+    {
+      "claim_id": "aa65d2af-e920-4402-b70c-d8d08c393f9f",
+      "result_id": "f3ef507e-c5f4-4329-8463-64712336b808"
+    },
+    {
+      "claim_id": "f03eff77-7976-4119-9fb1-167e77644546",
+      "result_id": "f3ef507e-c5f4-4329-8463-64712336b808"
+    },
+    {
+      "claim_id": "5a25609d-66ce-4161-bfba-4c7cac9ebcc8",
+      "result_id": "f3ef507e-c5f4-4329-8463-64712336b808"
+    },
+    {
+      "claim_id": "375c0ea0-a4af-4994-929d-1c7f32a7c3c8",
+      "result_id": "f3ef507e-c5f4-4329-8463-64712336b808"
+    },
+    {
+      "claim_id": "2bcf9950-9faf-4fdc-b8d3-dde873201aac",
+      "result_id": "f3ef507e-c5f4-4329-8463-64712336b808"
+    },
+    {
+      "claim_id": "5e2d89e2-d707-4d00-a230-6945f1b3f98c",
+      "result_id": "f3ef507e-c5f4-4329-8463-64712336b808"
+    },
+    {
+      "claim_id": "a41b7b41-cf92-498a-91ad-9396efe2d3e4",
+      "result_id": "f3ef507e-c5f4-4329-8463-64712336b808"
+    },
+    {
+      "claim_id": "65118a53-a1d0-4e21-8d02-5784d5b5a73c",
+      "result_id": "3291333c-10ae-4a2a-808d-56c39d8fb98a"
+    },
+    {
+      "claim_id": "d50a501d-e662-454e-9e16-9b4926291692",
+      "result_id": "3291333c-10ae-4a2a-808d-56c39d8fb98a"
+    },
+    {
+      "claim_id": "a588c569-2ac2-47bd-9056-8b1ce31a37d0",
+      "result_id": "3291333c-10ae-4a2a-808d-56c39d8fb98a"
+    },
+    {
+      "claim_id": "bd1276e2-f871-440c-b602-ea2f39e1f227",
+      "result_id": "3291333c-10ae-4a2a-808d-56c39d8fb98a"
+    },
+    {
+      "claim_id": "85470457-7e6f-42fb-8c6e-7a6dcd480a5b",
+      "result_id": "3291333c-10ae-4a2a-808d-56c39d8fb98a"
+    },
+    {
+      "claim_id": "00651a90-531b-4a2c-825e-98cda691dfe8",
+      "result_id": "3291333c-10ae-4a2a-808d-56c39d8fb98a"
+    },
+    {
+      "claim_id": "886d31d5-6aba-4d79-a73c-c70c450a5dec",
+      "result_id": "3291333c-10ae-4a2a-808d-56c39d8fb98a"
+    },
+    {
+      "claim_id": "a427d218-2955-4831-8f54-665fcefbd8b6",
+      "result_id": "3291333c-10ae-4a2a-808d-56c39d8fb98a"
+    },
+    {
+      "claim_id": "ea833568-a9a4-4bc1-898c-1c8d90610e63",
+      "result_id": "3291333c-10ae-4a2a-808d-56c39d8fb98a"
+    },
+    {
+      "claim_id": "2fe5bbc6-d5b2-4685-9e3d-f40ecd4e448e",
+      "result_id": "3291333c-10ae-4a2a-808d-56c39d8fb98a"
+    },
+    {
+      "claim_id": "9ed85f1f-84e5-427f-b050-2dc184682fbb",
+      "result_id": "3291333c-10ae-4a2a-808d-56c39d8fb98a"
+    },
+    {
+      "claim_id": "105a91cf-e4f8-4e64-8d7a-8468528d967f",
+      "result_id": "3291333c-10ae-4a2a-808d-56c39d8fb98a"
+    },
+    {
+      "claim_id": "b982406b-747f-492a-812e-ec8d1ada124c",
+      "result_id": "3291333c-10ae-4a2a-808d-56c39d8fb98a"
+    },
+    {
+      "claim_id": "8a6bd659-f115-47c1-a23c-6c1a6ba7b01f",
+      "result_id": "3291333c-10ae-4a2a-808d-56c39d8fb98a"
+    },
+    {
+      "claim_id": "8b61f686-bbd9-47cd-82cd-3e100dcc5684",
+      "result_id": "52277404-77da-4bce-996e-44997ef72edc"
+    },
+    {
+      "claim_id": "51bd3751-b5fa-4b37-8f65-68b7aa193d01",
+      "result_id": "52277404-77da-4bce-996e-44997ef72edc"
+    },
+    {
+      "claim_id": "ce62f7e7-1b15-4f6f-b7db-1d9a56150560",
+      "result_id": "aff27d4e-d410-4f9f-9147-81cc89c20d99"
+    },
+    {
+      "claim_id": "5aeb5748-3cd3-4068-aa67-47d971de0923",
+      "result_id": "aff27d4e-d410-4f9f-9147-81cc89c20d99"
+    },
+    {
+      "claim_id": "81cd825e-25cb-45d1-b922-0b1cb19dc1e9",
+      "result_id": "aff27d4e-d410-4f9f-9147-81cc89c20d99"
+    },
+    {
+      "claim_id": "7081e9e6-f80a-4a20-ba7a-f6028fd22c90",
+      "result_id": "aff27d4e-d410-4f9f-9147-81cc89c20d99"
+    },
+    {
+      "claim_id": "3a4c4e08-7937-4109-a52d-32d706d85126",
+      "result_id": "aff27d4e-d410-4f9f-9147-81cc89c20d99"
+    },
+    {
+      "claim_id": "bed03486-2b94-4cc9-80ff-4f6ee60e559d",
+      "result_id": "aff27d4e-d410-4f9f-9147-81cc89c20d99"
+    },
+    {
+      "claim_id": "9c627b2a-aaf5-46c1-81e3-18abeec72c15",
+      "result_id": "aff27d4e-d410-4f9f-9147-81cc89c20d99"
+    },
+    {
+      "claim_id": "ed3d0b10-4b41-45bc-8f1f-e7c111661642",
+      "result_id": "aff27d4e-d410-4f9f-9147-81cc89c20d99"
+    },
+    {
+      "claim_id": "a41566f4-abd3-4068-b067-dbcf7a5e1e1a",
+      "result_id": "aff27d4e-d410-4f9f-9147-81cc89c20d99"
+    },
+    {
+      "claim_id": "38ee134d-70d6-4523-9e6b-8985b36d54dc",
+      "result_id": "573626ef-33c8-43a2-a30f-60afb8ae4c0b"
+    },
+    {
+      "claim_id": "1f4cf43e-2692-49de-8041-3d317e979413",
+      "result_id": "573626ef-33c8-43a2-a30f-60afb8ae4c0b"
+    },
+    {
+      "claim_id": "619562be-d377-4b62-b4f7-bef514dc0707",
+      "result_id": "573626ef-33c8-43a2-a30f-60afb8ae4c0b"
+    },
+    {
+      "claim_id": "e58764c3-a754-43ff-a8ef-29ea82d18be6",
+      "result_id": "573626ef-33c8-43a2-a30f-60afb8ae4c0b"
+    },
+    {
+      "claim_id": "fdb0b99e-572a-4584-9999-11f5d0f16f14",
+      "result_id": "573626ef-33c8-43a2-a30f-60afb8ae4c0b"
+    },
+    {
+      "claim_id": "39405250-4e9c-4e0b-8895-a7e0158fb872",
+      "result_id": "573626ef-33c8-43a2-a30f-60afb8ae4c0b"
+    },
+    {
+      "claim_id": "90118595-c785-4c65-9469-4a1643e18418",
+      "result_id": "d380f594-202d-4873-8146-405a8083d2cb"
+    },
+    {
+      "claim_id": "ed784096-0e0a-40a0-99b6-ac642c902c43",
+      "result_id": "d380f594-202d-4873-8146-405a8083d2cb"
+    },
+    {
+      "claim_id": "6211e8b8-5619-44c2-a683-43f762416377",
+      "result_id": "8f8916d9-cecb-4fb7-8a8e-c65df532a385"
+    },
+    {
+      "claim_id": "dbacb495-2cb2-49bf-a907-6af58af1b601",
+      "result_id": "8f8916d9-cecb-4fb7-8a8e-c65df532a385"
+    },
+    {
+      "claim_id": "232fd755-931b-4e69-a91f-76b1fbc67032",
+      "result_id": "8f8916d9-cecb-4fb7-8a8e-c65df532a385"
+    },
+    {
+      "claim_id": "5af9c0da-53e3-48cd-a3c7-a80ac2a097c4",
+      "result_id": "8f8916d9-cecb-4fb7-8a8e-c65df532a385"
+    },
+    {
+      "claim_id": "4c3a550b-4bda-4bf6-9280-a39a90e513ae",
+      "result_id": "8f8916d9-cecb-4fb7-8a8e-c65df532a385"
+    },
+    {
+      "claim_id": "f881f12a-5d52-4042-9220-d4ec2a9064a1",
+      "result_id": "8f8916d9-cecb-4fb7-8a8e-c65df532a385"
+    },
+    {
+      "claim_id": "30c1f20d-b930-4333-91cd-993080ea3051",
+      "result_id": "8f8916d9-cecb-4fb7-8a8e-c65df532a385"
+    },
+    {
+      "claim_id": "98529211-9452-448e-921d-65af7c1e309c",
+      "result_id": "8f8916d9-cecb-4fb7-8a8e-c65df532a385"
+    },
+    {
+      "claim_id": "1d54c376-2c35-49b4-a082-ea90a363431f",
+      "result_id": "7a3af7d7-3734-4d1e-b781-67be290e7025"
+    },
+    {
+      "claim_id": "8ae7b0b7-d1cc-4c2f-a616-48bded1cb135",
+      "result_id": "7a3af7d7-3734-4d1e-b781-67be290e7025"
+    },
+    {
+      "claim_id": "dab20dc2-b07a-473e-a626-eadc8c972a89",
+      "result_id": "7a3af7d7-3734-4d1e-b781-67be290e7025"
+    },
+    {
+      "claim_id": "9a55b5b2-13e8-4004-ad84-399162e9182a",
+      "result_id": "7a3af7d7-3734-4d1e-b781-67be290e7025"
+    },
+    {
+      "claim_id": "f3fa7c32-8fee-45ae-b351-ec2b872b9b22",
+      "result_id": "1e887ff7-7e42-4126-94a3-f17660658c40"
+    },
+    {
+      "claim_id": "4b27b5c3-19ed-4f81-b0fc-cec80ea8000a",
+      "result_id": "1e887ff7-7e42-4126-94a3-f17660658c40"
+    },
+    {
+      "claim_id": "b6752f50-7370-4ca7-91e6-8d5e2913225d",
+      "result_id": "1e887ff7-7e42-4126-94a3-f17660658c40"
+    },
+    {
+      "claim_id": "e65e0d78-94ee-429e-8117-7cde4dd30d11",
+      "result_id": "1e887ff7-7e42-4126-94a3-f17660658c40"
+    },
+    {
+      "claim_id": "36a202b5-460f-4e40-8219-a3b3aaeceedc",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "07e9a59e-bdd4-473c-9a0b-048483653ce8",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "410a159e-15c8-438d-bec9-c03c24315bef",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "53626670-738d-4282-8f6a-502e7a0a357c",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "5a47cab2-1a4b-466b-b6aa-dfed7e5a3db8",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "287c3af7-cc72-40b5-9756-0b1589b7675c",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "fd0d8e88-2978-4aff-becd-ff79f94f0bb4",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "1716f03b-7328-4ea3-8bf6-859ffa4fd500",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "cec13a15-c6b5-4d13-b4bf-3460720765c6",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "a53ead3d-9f11-4f77-9efc-49176a4d9bb6",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "cca7cb68-886a-482f-958a-dcc94d9f8676",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "dcd3464a-d4eb-41ae-a28e-26cc9dd07277",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "69850fbe-367d-40f4-9cfb-275388c1afcd",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "7de9211c-7706-404b-ba9c-0bbf73d16a8b",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "c0cdd131-52dd-417b-9da1-058b5f62ebdb",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "d66da3ad-ef25-4b21-b89a-93c4d90bd4ae",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "abcef67e-ebad-4d63-b6f0-f129c04238d1",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "54179727-e81f-4437-8285-c285e2b641a1",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "5572582f-35ea-405a-bd1a-3c9153480256",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "b85559be-b887-41c0-a1d6-5bb10bd1bbc7",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "0a56414d-329b-461f-aa80-fefad4d62371",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "76300256-276d-49f5-966f-8b1c679bba25",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "f12cb1e6-4d91-4e56-8467-cd7895b508f1",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "7e5bcc84-c693-471e-9545-c9e70be8be5d",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "a5ecab49-1461-46e5-b740-35dbe0ae74aa",
+      "result_id": "26285e18-20e5-4491-89b9-bf7c323628b8"
+    },
+    {
+      "claim_id": "37a5ae7f-2e03-4789-8fbd-47bf533f5454",
+      "result_id": "d23f821d-1f5e-4a07-bd7c-9d9c676878a1"
+    },
+    {
+      "claim_id": "d3e5ac65-9769-4ff8-8fab-d353b66a83e7",
+      "result_id": "d23f821d-1f5e-4a07-bd7c-9d9c676878a1"
+    },
+    {
+      "claim_id": "05c40911-6445-465d-8e09-0665bcb6bd31",
+      "result_id": "d23f821d-1f5e-4a07-bd7c-9d9c676878a1"
+    },
+    {
+      "claim_id": "6d890007-9771-4fdc-ab77-58223f7dd02f",
+      "result_id": "d23f821d-1f5e-4a07-bd7c-9d9c676878a1"
+    },
+    {
+      "claim_id": "a328f5d2-096c-41d0-8f7e-6346dd76c441",
+      "result_id": "33f1a7ff-e104-4805-956c-1772b1901a49"
+    },
+    {
+      "claim_id": "093b28cb-3226-4b64-922e-9be22a4a278e",
+      "result_id": "47ecd8fc-4629-4014-b226-71dcb9e99a30"
+    },
+    {
+      "claim_id": "9e3f010b-5397-45d6-8510-9efb97dc6674",
+      "result_id": "47ecd8fc-4629-4014-b226-71dcb9e99a30"
+    },
+    {
+      "claim_id": "abf60304-0910-4efb-905c-598ab3f11f9f",
+      "result_id": "e52432a2-9745-49b5-b70c-6dcc6da789af"
+    },
+    {
+      "claim_id": "53451f70-ecb7-4bc4-b00c-28d408cfa841",
+      "result_id": "e52432a2-9745-49b5-b70c-6dcc6da789af"
+    },
+    {
+      "claim_id": "bf26bd73-7c08-4425-905f-824a2df49003",
+      "result_id": "e52432a2-9745-49b5-b70c-6dcc6da789af"
+    },
+    {
+      "claim_id": "4aca1a41-ddbb-42d7-885d-56c471346cc2",
+      "result_id": "500ca17e-fe3e-4653-9d64-773c27fa0d43"
+    },
+    {
+      "claim_id": "be977990-5073-48f8-b16a-3300ae09d94b",
+      "result_id": "509101d4-1cb9-4699-89b3-7af8d2cdfb91"
+    }
+  ],
+  "comparisons": []
+}

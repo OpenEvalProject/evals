@@ -1,0 +1,1268 @@
+{
+  "submission": {
+    "id": "00909cfa-900a-461f-9b01-0e520ec6a3a6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:20:05.454505Z",
+    "updated_at": "2025-11-28T20:20:05.454505Z"
+  },
+  "content": [
+    {
+      "id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "submission_id": "00909cfa-900a-461f-9b01-0e520ec6a3a6",
+      "content_type": "manuscript",
+      "content_text": "# Acetylation of histone H3 at lysine 64 regulates nucleosome dynamics and facilitates transcription\n\n## Authors\n\n- Vincenzo Di Cerbo<sup>1</sup>\n- Fabio Mohn<sup>3</sup>\n- Daniel P Ryan<sup>4</sup>\n- Emilie Montellier<sup>5</sup>\n- Salim Kacem<sup>7</sup>\n- Philipp Tropberger<sup>1</sup>\n- Eleni Kallis<sup>8</sup>\n- Monika Holzner<sup>8</sup>\n- Leslie Hoerner<sup>9</sup>\n- Angelika Feldmann<sup>9</sup>\n- Florian Martin Richter<sup>10</sup>\n- Andrew J Bannister<sup>11</sup>\n- Gerhard Mittler<sup>13</sup>\n- Jens Michaelis<sup>8</sup>\n- Saadi Khochbin<sup>5</sup>\n- Robert Feil<sup>7</sup>\n- Dirk Schuebeler<sup>9</sup>\n- Tom Owen-Hughes<sup>4</sup>\n- Sylvain Daujat<sup>1</sup> \u2020\n- Robert Schneider<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Functional Genomics Institut de G\u00e9n\u00e9tique et de Biologie Mol\u00e9culaire et Cellulaire (IGBMC), CNRS UMR Strasbourg France\n2. Max Planck Institute of Immunobiology and Epigenetics Freiburg Germany\n3. Institute of Molecular Biotechnology Vienna Austria\n4. Wellcome Trust Centre for Gene Regulation and Expression College of Life Sciences, University of Dundee Dundee United Kingdom\n5. INSERM U823 Universit\u00e9 Joseph Fourier Grenoble France\n6. Facult\u00e9 de M\u00e9decine Institut Albert Bonniot Grenoble France\n7. Institut de G\u00e9n\u00e9tique Mol\u00e9culaire CNRS UMR5535/Universit\u00e9 de Montpellier I and II Montpellier France\n8. Institute for Biophysics Ulm University Ulm Germany\n9. Friedrich Miescher Institute for Biomedical Research (FMI) Basel Switzerland\n10. Cellular Immunobiology Max Planck Institute of Immunobiology and Epigenetics Freiburg Germany\n11. Gurdon Institute Cambridge United Kingdom\n12. Department of Pathology University of Cambridge Cambridge United Kingdom\n13. Max Planck Institute of Immunobiology and Epigenetics Freiburg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nPost-translational modifications of proteins have emerged as a major mechanism for regulating gene expression. However, our understanding of how histone modifications directly affect chromatin function remains limited. In this study, we investigate acetylation of histone H3 at lysine 64 (H3K64ac), a previously uncharacterized acetylation on the lateral surface of the histone octamer. We show that H3K64ac regulates nucleosome stability and facilitates nucleosome eviction and hence gene expression in vivo. In line with this, we demonstrate that H3K64ac is enriched in vivo at the transcriptional start sites of active genes and it defines transcriptionally active chromatin. Moreover, we find that the p300 co-activator acetylates H3K64, and consistent with a transcriptional activation function, H3K64ac opposes its repressive counterpart H3K64me3. Our findings reveal an important role for a histone modification within the nucleosome core as a regulator of chromatin function and they demonstrate that lateral surface modifications can define functionally opposing chromatin states.\n\n## Introduction\n\nHistone modifications are central to the regulation of all chromatin-based processes. Four core histones\u2014H3, H4, H2A, and H2B\u2014comprise the nucleosomal core particle, and each may be decorated with multiple covalent modifications, including acetylation, methylation, phosphorylation, sumoylation, and ubiquitination (Kouzarides, 2007). To date, most attention has focused on modifications within the flexible N-terminal tails of histones, which extend from their own nucleosome. Due to their accessibility, \u2018reader\u2019 or effector proteins selectively bind to modified sites in the tails to mediate downstream effects. In this way \u2018readers\u2019 can provide a relatively simple mechanism enabling cells to decipher the so-called \u2018histone-code\u2019, to facilitate the regulation of biological processes such as transcription, DNA replication, and damage repair.\n\nInterestingly, covalent modifications also occur within the globular domain of histones (Garcia, 2009), especially at positions that are in close contact with the nucleosomal DNA wrapped around each octamer. In particular, modifications on the outer surface of the histone octamer, the so-called lateral surface, have the potential to directly influence chromatin structure by altering histone\u2013histone or histone\u2013DNA interactions (Cosgrove, 2007; Tropberger and Schneider, 2010; Tropberger et al., 2013). Because of their structurally important position close to the DNA, one can directly address the mechanism(s) by which these lateral surface modifications impact on nucleosome dynamics and chromatin function. This is in contrast to tail modifications that play a mainly indirect role in chromatin regulation through recruitment of effector proteins.\n\nUnderstanding how histone modifications ultimately impact on chromatin function is still an open challenge and this has not been helped by the fact that the repertoire of known modifications is far from complete (Tan et al., 2011). Here, we have investigated the functional mechanism of an uncharacterized acetylation site, lysine 64 of histone H3 (H3K64ac), which lies within the H3 globular domain. We demonstrate that this lateral surface modification can directly influence nucleosomal stability and dynamics, which consequently affects transcriptional regulation.\n\n## Results\n\n### H3K64ac is a novel histone modification enriched in euchromatin\n\nWe used mass spectrometry to identify novel histone modifications and found an uncharacterized acetylation site on histone H3 lysine 64 (H3K64ac) (Figure 1A, Figure 1\u2014figure supplement 1A,B). H3K64 is the first amino acid of the H3 alpha1 helix, the first of three alpha helices in the histone fold. It is found on the lateral surface of the histone octamer in close proximity to the inner gyre of DNA (Davey et al., 2002; Figure 1B) at a location distinct from other potentially acetylated residues, such as H3K56.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig1-v1.jpg)\n\n**Figure 1.:** (A) CID MS/MS spectrum of the tryptic peptide (K(ac)LPFQR; m/z [MH22+] 415.74823) derived from endogenous histone H3 demonstrating K64 acetylation. The presence of the b2, the y5, the y5-NH3(y5*) and the immonium ions derived from (\u025b) acetyl-lysine (enlarged spectrum inlet) are used for site localization to lysine 64. (B) H3K64 is on the lateral surface of the histone octamer. 3D modelling of a nucleosome. H3 dimer is shown in blue and the proximity of acetylated H3K64 (red rectangle) with the DNA is highlighted in the zoomed-in inset. In red are shown the main-chain and the side-chain of lysine 64. The acetyl group linked to the side-chain terminal nitrogen atom (in blue) appears in green, with its oxygen atom in purple. All hydrogen atoms are displayed in grey. (C) Peptide competition of H3K64ac immunoblot. H3K64ac antibody was pre-adsorbed with 50 pmoles/ml of indicated peptides. Amido black staining is shown as loading control (bottom panel). (D) Immunoblot analysis of H3K64 acetylation state in different cell lines, treated (+) or not (\u2212) with HDACs inhibitor Na-Butyrate. Untreated MCF7 nuclesosomes were used as control. Ponceau staining is shown as loading control (bottom panel). (E) H3K64ac is enriched in euchromatic regions. H3K64 acetylation (ac, upper panels) and tri-methylation patterns (me3, lower panels) in MEFs. DAPI dense foci represent pericentric heterochromatin. Single sections are shown. Scale bar, 10 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** CID MS/MS spectra of a chymotryptic (LIRK(ac)LPF; m/z [MH22+] 464.80363) and a tryptic (K(ac)LPFQR; m/z [MH22+] 415.74823) peptide (A and B panels, respectively) derived from endogenous histone H3 demonstrating the acetylation of K64. The mass difference between the b4 and b3 ion of the chymotryptic peptide LIRK(ac)LPF indicates the presence of acetyl-lysine. This is further corroborated by the virtually identical MS/MS spectral overlay of the tryptic peptide K(ac)LPFQR (see also Figure 1) either derived from endogenous H3 (illustrated in black) or the synthetic peptide STELLIRK(ac)LPFQRLVGC(amide) (highlighted in red).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Western blot analysis with H3K64ac antibody (left panel) on nuclear extracts from untreated (\u2212) or Na-butyrate-treated (+) HeLa cells. Ponceau staining is shown as loading control (right panel). (B), (C), (D), and (E) Immuno-dot blots showing specific reactivity of the H3K64ac antibody. Aliquots of indicated pmoles of linear H3 peptides were spotted on the membrane. Of note, detection of peptides in (E) has been checked with H3K9ac, H3K18ac, and H3K27ac specific antibodies. (F) Peptide competition assay of H3K64ac immunoblot. H3K64ac antibody was pre-adsorbed with 50 pmoles/ml of indicated peptides. Ponceau staining is shown as loading control (bottom panel). (G) The H3K64ac antibody detects globular, tailless H3. Nucleosomes from NIH3T3 cells were incubated with no (\u2212) or increasing amounts of trypsin to cleave the histone tails and immunoblotted as indicated for H3K9ac, H3K18ac, H3K27ac, H3K64ac and H3. The position of full-length and tailless H3 is indicated and loading was controlled by ponceau staining. (H) Peptide competition assay in immunofluorescence. MEFs were treated overnight with Na-butyrate (NaB) and then stained with H3K64ac antibody, pre-incubated with 100 pmoles/ml of either unmodified or acetylated K64 peptide. (I) Immunoblot analysis of H3K64 acetylation state in additional cell lines (Drosophila S2, mouse MEFs, human HeLa) with H3K64ac antibody. Inhibition of HDACs by Na-butyrate treatment increases acetylation levels. Ponceau staining is shown as loading control (bottom panel).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** DAPI dense foci (panel 1) represent pericentric heterochromatin where H3K9me3 is enriched and H3K64ac excluded (compare panels 2, 3 with 4 and panels 5 with 6, representing a magnified view of the cell indicated by a white star). In panel 4 and 6 H3K9me3 appears in red and H3K64ac in green. Shown are single sections, scale bar, 10 \u00b5m.\n\nTo study the biological function of H3K64ac, we first performed an exhaustive characterization of an antibody raised against this modification. This antibody specifically detects endogenous acetylated histone H3 (Figure 1\u2014figure supplement 2A) and recognizes a K64-acetylated peptide with a high degree of specificity (Figure 1\u2014figure supplement 2B\u2013E) compared to other H3 acetylated lysines. Its recognition of H3 was efficiently competed by the immunizing peptide, but not by other peptides containing acetylated, methylated, or unmodified histone regions (Figure 1C, Figure 1\u2014figure supplement 2F). Furthermore, limited tryptic digestion of native nucleosomes, which removes the H3 tails whilst leaving the DNA-protected H3 core region largely intact, confirmed the antibody\u2019s specificity. Indeed, this digestion treatment resulted in the loss of signal for the tail modifications, such as H3K9ac, H3K18ac, and H3K27ac. In contrast, the truncated H3 core was still recognized by the H3K64ac antibody at levels comparable to the undigested H3 (Figure 1\u2014figure supplement 2G).\n\nUsing this antibody, we found that H3K64ac is present in a variety of mouse and human cell lines and tissues suggesting a rather ubiquitous function (Figure 1D, Figure 1\u2014figure supplement 2I). Upon HDAC-inhibitor treatment, H3K64 acetylation levels increased (Figure 1D, Figure 1\u2014figure supplement 2I). Immunofluorescence (IF) showed a distinct nuclear localization of H3K64ac with a relative depletion from heterochromatin (Figure 1E, Figure 1\u2014figure supplement 3, compare panels 5 and 6, and Figure 1\u2014figure supplement 2H). Interestingly, this localization pattern is the opposite to that of H3K64me3 (Figure 1E). We previously established that H3K64me3 is a novel repressive mark enriched in pericentromeric heterochromatin that might help to \u2018lock\u2019 the conformation and/or position of the nucleosome, and consequently the surrounding chromatin (Daujat et al., 2009; Lange et al., 2013)\n\n### H3K64ac associates with active regulatory genomic regions\n\nTo obtain a comprehensive picture of the genomic distribution of H3K64ac, we performed ChIP-on-chip assays using chromatin isolated from mouse embryonic stem (ES) cells and Nimblegen tiling microarrays (Figure 2\u2014figure supplement 1A; Lienert et al., 2011). In line with the euchromatic localization detected in IF, we found strong enrichment of H3K64ac at the transcriptional start site (TSS) of active genes (Figure 2A, Figure 2\u2014figure supplement 1A\u2013C). At TSSs, we detected a strong correlation between the enrichment of H3K64ac and RNA Polymerase II occupancy (Figure 2B), as well as with the presence of active histone marks (Figure 2\u2014figure supplement 1D), suggesting a role for H3K64ac in transcriptional activation. Of note, local H3K64ac enrichment is indicative of the steady-state mRNA level of the respective gene (Figure 2C) and it is not simply due to increased histone H3 density (Figure 2\u2014figure supplement 1E). Consistent with this, H3K64ac enrichment is anti-correlated with repressive marks such as H3K27me3 and H3K64me3 (Figure 2\u2014figure supplement 1D). Furthermore, we find H3K64ac strongly enriched at enhancers (Figure 2A), with a preference for active enhancers, where it co-localizes with established enhancer marks such as H3K27ac, H3K4me1, and p300-binding (Figure 2D; Creyghton et al., 2010; Rada-Iglesias et al., 2011). Multiple single gene validations by ChIP-qPCR confirmed the genome-wide data and also revealed that H3K64ac levels are very low at repetitive elements (Figure 2\u2014figure supplement 2A,B), where H3K64me3 is highly enriched (Daujat et al., 2009), again indicating opposing genomic localizations for these two marks.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig2-v1.jpg)\n\n**Figure 2.:** (A) H3K64ac is predominantly localized to active TSS and enhancers in mouse ES cells (see also D). Boxplot showing H3K64ac signal intensity (log2 ChIP/input) for all microarray probes at active TSS, inactive TSS, enhancers, gene bodies, and intergenic regions. (B) Comparison of H3K64ac and RNA Pol II at TSS. Scatterplot showing signal density distribution and global correlation. The green line is a loess-fitted trend line. (C) Meta-gene plot showing H3K64ac enrichment around TSS grouped according to their expression level. (D) Boxplot comparing H3K64ac to \u2018enhancer-specific\u2019 histone modifications and p300 levels (Creyghton et al., 2010) at active enhancers, inactive enhancers and control regions (enhancer regions shifted by 100 kb). H3K64ac levels were measured by ChIP-on-chip (left Y axis), whereas the other modifications and p300 by ChIP-seq (right Y axis).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Scatterplot showing global correlation between raw data from the two biological H3K64ac ChIP-on-chip replicate experiments. The green line is a loess-fitted trend line. (B) UCSC browser screenshots of H3K64ac enrichment at the proximal promoter of active genes (Eif3a, upper panel and Taf5, lower panel). (C) UCSC browser screenshots of H3K64ac enrichment at the proximal promoter of inactive genes (Cyp2c55 and Cyp2c65). For (B) and (C) shown are the enrichments for H3K64ac (as log2 values of ChIP/input) for one biological replicate. Areas in light blue highlight the region surrounding the TSS of the indicated genes. (D) Scatterplots showing global correlation at TSS between H3K64ac and \u2018active\u2019 modifications such as H3K9ac and H3K4me2 and \u2018repressive\u2019 marks such as H3K27me3 and H3K64me3. The green line is a loess-fitted trend line. (E) Meta-gene plot showing total H3 enrichment around TSS grouped according to their expression level. Of note, H3 density is rather uniform and the slight enrichment proximal to the TSS cannot explain the strong enrichment of H3K64ac detected in the same region (Figure 2C).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Native ChIP analysis of H3K64ac on different genomic regions in mouse ES cells. H3K64ac is enriched at the TSS of active genes, but depleted from inactive genes and repeats. (B) Native ChIP analysis performed as in (A). As expected the active H3K4me3 mark is enriched at active genes, but depleted from inactive genes and repeats, in an exact opposite manner to H3K9me3 enriched in repetitive regions.\n\nTo study H3K64ac in a dynamic system, we followed the kinetics of H3K64ac during ES cell differentiation (Figure 3A). In pluripotent ES cells, H3K64ac is strongly enriched at active pluripotency-associated genes such as Nanog, Pou5f1 and Dppa3, whereas after retinoic acid-induced differentiation this enrichment shifts towards active differentiation-associated genes (e.g., Hoxb3 and Hoxd3, Pax6) demonstrating that H3K64ac levels reflect transcriptional activity during differentiation. Since we found H3K64ac tightly associated with transcribed regions, we next asked if H3K64ac is enriched on specific H3 variants. In line with previous findings that H3.3 has covalent modifications associated with transcriptionally active chromatin (Hake et al., 2006), we found the highest enrichment of H3K64ac on the H3 variant H3.3 (Figure 3B, Figure 3\u2014figure supplement 1A). Importantly these experiments also show that mutation of K64 to R results in a loss of detection of H3 by the H3K64ac antibody used (Figure 3\u2014figure supplement 1B), suggesting high specificity of the antibody.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig3-v1.jpg)\n\n**Figure 3.:** (A) ChIP analysis of H3K64ac on pluripotency genes and differentiation-specific genes. Real-time PCR analysis for indicated promoter regions and gene desert in undifferentiated (yellow bars) or retinoic acid-induced (blue bars) ES cells. (B) Distribution of H3K64ac among the H3 variants. Flag-HA-tagged histones H3.1, H3.2, or H3.3 were immunoprecipitated and probed with H3K64ac antibody. Average quantification of three biological replicates (\u00b1SD) showing H3K64ac signal over HA relative to H3.1. (C) The active alleles of ICRs are specifically marked by H3K64ac. Native ChIP performed on primary embryonic fibroblasts of (C57Bl/6 x JF1) F1 genotype followed by radioactive PCR across polymorphic nucleotides between the paternal JF1 (M. m. molossinus) and the maternal C57BL/6J (B6) genomes. Single-strand conformation polymorphisms (SSCP) were revealed by electrophoresis through a non-denaturing agarose gel. The left panels show PCRs on control genomic DNAs to depict the SSCP polymorphisms used. In the input chromatin (input), the parental were equally represented at the loci analysed. U, unbound fraction; B, bound fraction; M, maternal allele; P, paternal allele.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative immunoblot of Flag-immunoprecipitated H3 variants, probed with H3K64ac antibody (top panel) and HA antibody as loading control (bottom panel). An antibody control lane with an H3.2K64R mutant is also shown. (B) Antibody specificity was verified using H3.1K64R and H3.3K64R point mutants. Flag immunoprecipitated K64R mutants or wt variants were probed with H3K64ac antibody (top), and anti-HA antibody as loading control (bottom).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** UCSC browser screenshots of H3K64ac enrichment at the KvDMR1 ICR region in mouse ES cells validating enrichment at ICRs. Shown are the log2 values of ChIP/input measurements.\n\nOur staining and ChIP data suggested mutually exclusive distribution patterns of H3K64 acetylation and methylation. To corroborate this in a functional model, we made use of imprinted loci; an ideal system to study potentially opposing histone marks, as one allele is transcriptionally silent whilst the other one is active (Singh et al., 2010). We analysed five imprinting control regions (ICRs) and in each case we found that the transcriptionally active alleles were specifically enriched in H3K64ac, whereas the inactive ones were enriched in H3K64me3 (Figure 3C, Figure 3\u2014figure supplement 2). These data suggest that H3K64ac and H3K64me3 can define functionally opposing chromatin states.\n\n### H3K64ac can be set by p300/CBP\n\nTo identify the enzyme(s) responsible for H3K64ac, we systematically depleted candidates from different HAT families. In these assays, knockdown of p300 and CBP, but not of other HATs decreased the steady-state levels of H3K64ac (Figure 4A, Figure 4\u2014figure supplement 1A). This decrease was most pronounced at p300/CBP-specific genomic target regions (Figure 4B). In line with this, overexpression of p300 resulted in increased levels of H3K64ac (Figure 4C, Figure 4\u2014figure supplement 1B), and p300 and H3K64ac distributions showed a strong correlation (Figure 4\u2014figure supplement 1C). Moreover, p300 and CBP can acetylate H3K64 in vitro on free H3 (Figure 4D) and within chromatin (Figure 4\u2014figure supplement 1D). Altogether these data clearly establish p300/CBP as H3K64 acetyltransferases, not excluding the presence of additional H3K64 acetyltransferases.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig4-v1.jpg)\n\n**Figure 4.:** (A) siRNA-mediated depletion of HATs (as indicated) in MCF7 cells. Immunoblot analysis of global H3K64ac levels and additional modifications as controls for siRNA efficiency. Anti-H3 blot and Ponceau staining are shown as loading controls. (B) ChIP analysis of H3K64ac enrichment on different mouse genomic regions (as indicated) upon depletion of p300/CBP (yellow) compared to the control knock-down (scramble, blue). (C) Overexpression of p300 in HEK293 cells. Control (empty vector) or p300 overexpressing cells co-expressed mCherry (red, top panel) and were assessed for H3K64ac levels (green) in immunoflourescence. (D) In vitro HAT assay with p300 or CBP using recombinant H3 (wt or K64A mutant) as substrate and probed with the H3K64ac antibody (top panel). Ponceau staining as loading control (middle panel) and H3K9ac western blot as activity control (bottom panel) are shown.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Validation of HATs knock-down. Upon transfection of targeted siRNA, mRNA levels of indicated HATs are strongly reduced compared to the scramble control. (B) p300 overexpression in HEK293 cells (marked by mCherry expression, red) leads to an increase in the acetylation level of H3K9 (left panel), a p300 target, but no increase in H4K16 acetylation (right panel). (C) Scatterplot showing signal density distribution and global correlation between H3K64ac and p300 at TSS. Green lines are loess-fitted trend lines. (D) Immunoblot showing specific p300 activity on H3K64 (top) within an immobilised chromatin template. p300 was recruited by the transcriptional factor VP16. Autoradiography (3H-acetyl-CoA incorporation, middle) as enzyme activity control and ponceau staining as loading control (bottom) are shown.\n\n### H3K64ac can increase nucleosome instability\n\nGiven the location of H3K64ac on the nucleosome\u2019s lateral surface, a potential mechanism is that it acts through modulating ATP-dependent chromatin remodelling and/or nucleosome stability. To investigate this, we produced recombinant histone H3 acetylated on K64 in Escherichia coli using site-specific genetically directed incorporation of acetyl-lysine (Neumann et al., 2009; Figure 5\u2014figure supplement 1A,B). To address effects on chromatin remodelling, we incubated H3K64ac and unmodified nucleosomes with two different chromatin remodelers belonging to two different Snf2 subfamilies, Chd1 and RSC (Flaus et al., 2006; Clapier and Cairns, 2009). Our results show that Chd1 repositioned H3K64-acetylated nucleosomes faster than unmodified nucleosomes. This was not the case when we used the RSC enzyme (Figure 5\u2014figure supplement 2). This suggests that acetylation of H3K64 could differentially affect remodelling enzymes. Next, we sought to investigate whether H3K64ac also impacts on passive fluctuations in nucleosome structure and interrogated whether H3K64ac affects the stability of DNA association with histone octamers within nucleosomes. To do this, we attached fluorescent dyes to specific sites on the DNA, 35 bp from each end of the nucleosomal DNA, and performed FRET measurements (Neumann et al., 2009). Using this strategy, we observed that the FRET interaction for H3K64ac nucleosomes was more sensitive to salt-disruption than unmodified nucleosomes at NaCl concentrations ranging between \u223c0.5 M and 1.0 M (Figure 5A). In parallel, we also measured the salt-dependent nucleosome stability by single-molecule FRET, which again resulted in a lower stability of H3K64ac nucleosomes (Figure 5\u2014figure supplement 3). Together these data demonstrate a decreased stability of H3K64ac nucleosomes, distinguishing this acetylation from H3K56ac that was reported not to significantly affect nucleosome stability under comparable conditions (Neumann et al., 2009).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig5-v1.jpg)\n\n**Figure 5.:** (A) H3K64ac nucleosomes are more sensitive to salt-induced disruption in in vitro FRET assays. Left, different views of a nucleosome with H3K64 highlighted in blue (spacefill) and the internal positions of the dye-labeled bases 35 bp from the end of the nucleosome. Right, the average (\u00b1s.e.) of three separate titrations is shown for unmodified (black squares), H3K9ac (unfilled squares), and H3K64ac nucleosomes (unfilled triangles). (B) Competitive in vitro nucleosome assembly reactions suggest that H3K64ac weakens histone\u2013DNA interactions. Unmodified, H3K9ac, and H3K64ac nucleosomes were assembled in the presence of an excess of non-specific competitor DNA. The average (\u00b1s.e.) of three independent competitive assembly reactions is shown. (C) In spermatogenesis H3K64ac levels are high in elongating spermatids during the wave of massive chromatin remodelling. Schematic of mouse spermatogenesis (top). Immunofluorescence stainings (IF) show high H3K64ac levels in elongating spermatids (E) and below detection limit in spermatocytes (P) and round spermatids (R). Scale bar, 5 \u00b5m. (D) Immunohistochemistry stainings (IHC) on sections of mouse testis tubules. H3K64ac (brown) is enriched in elongating spermatids (stages IX-X), which are present near the lumen. Scale bar, 20 \u03bcm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Validation of H3 acetylation on the octamer substrates used in the in vitro assays. The immunoblots show the acetylation levels of the reconstituted octamers specifically acetylated either on H3K64 or H3K9 compared with the unmodified H3. Ponceau staining is shown as loading control. (B) Staining of protein gel used to check that equal amounts of proteins had been used in the experiments and to assess H2A\u2013H2B dimer, as well as unmodified, H3K64ac, and H3K9ac tetramer qualities.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** RSC or Chd1 were incubated with a mixture containing equal amounts of differentially fluorescent-labeled nucleosomes: unmodified (Cy5), H3K64ac (Cy3). Bottom panels show representative native PAGEs used to calculate the relative rates of remodeling by RSC and Chd1. Top panels show the relative rates of remodeling determined by fitting the data with a single exponential function (solid line for unmodified, dashed line for H3K64ac). The rates of nucleosome positioning (\u00b1s.e.) calculated from three independent remodeling reactions are shown.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The fraction of intact nucleosomes at each salt concentration was normalized to the fraction at 0 mM NaCl. Every data point is the average (\u00b1SD) of at least three measurements. The data were fit with a sigmoidal function to determine the NaCl concentrations at which the FRET signal is 0.5 (C0.5, see Supplemental methods).\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A) Immunohistochemistry (IHC) stainings on sections of mouse testis tubules for different acetylation sites on H3. Note that modification shows distinct patterns of enrichment across the differentiation stages of spermatocytes. Top panels show the specific antibody staining (brown) together with the counterstaining (eosin, red). In the middle planels, only the staining from each specific antibody (brown) is shown. The area in the dashed-line box is magnified 3X in the bottom panel. Scale bar, 20 \u03bcm. (B) Immunofluorescence on sections of mouse testis tubules. H3K64me3 signal is strongly detected in the chromocenter of round spermatids as well as in elongating spermatids, in particular at regions where histone replacement occurs late (arrows), scale bar, 5 \u00b5m.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig5-figsupp5-v1.jpg)\n\n**Figure 5\u2014figure supplement 5.:** (A) Distances in \u00c5 between DNA backbone phosphate oxygen atoms and H3K64 main-chain amide (red text) or terminal nitrogen atoms (black text) in the high-resolution (1.9 \u00c5) crystal structure of the nucleosome (PDB ID 1KX5). The H3K64 main-chain amide directly interacts with the DNA phosphate backbone, this places the H3K64 side-chain within a range to form direct interactions with the DNA. The measured distances are shown as yellow-dashed lines. (B) Two alternate side-chain rotamer conformations of H3K64 (light blue) are shown that demonstrate that the H3K64 side-chain has the potential to form direct ionic interactions with the DNA phosphate backbone. (C) The side-chain of H3K64 is part of an extensive water-mediated hydrogen bonding network between histones and DNA in the high-resolution crystal structure of the nucleosome (PDB ID 1KX5). Water atoms are shown as red spheres and hydrogen bonds as dashed black lines. Each of the displayed hydrogen bonds can be traced back to the water molecule bound to H3K64.\n\nModifications of histones that affect interactions between the H3\u2013H4 tetramer and DNA also have the potential to influence the efficiency of chromatin assembly. To address whether H3K64ac affects the affinity of histone\u2013DNA binding, we performed competitive nucleosome reconstitution assays (Th\u00e5str\u00f6m et al., 2004). Figure 5B shows that H3K64ac reduces the level of nucleosome assembly, relative to unmodified H3, indicating that H3K64 acetylation reduces histone\u2013DNA binding affinity. In contrast, acetylation at H3K9 had no detectable effect (Figure 5A,B), illustrating functional differences between acetylation of lateral surface and histone tail lysines. In concert, these observations demonstrate that H3K64ac directly influences histone\u2013DNA association and nucleosome stability. This could provide a mechanistic explanation as to why H3K64ac is found in vivo at sites where increased nucleosome mobility/instability is required, such as the TSS of active genes (Segal et al., 2006).\n\nIn vivo, one of the most dramatic chromatin-reorganization events that require nucleosome instability occurs during spermatogenesis. In mammalian elongating spermatids, histones are initially replaced by the transition proteins and then by protamines (Gaucher et al., 2010, 2012). In spermatocytes and round spermatids H3K64ac was below the limit of detection. However, the levels of H3K64ac dramatically increased in elongating spermatids (Figure 5C,D). At approximately the same time, we also detected the presence of some specific H3 tail acetylations (Figure 5\u2014figure supplement 4A). Notably, we observed this increase in H3K64ac precisely during the period of nucleosome disassembly and replacement of histones by transition proteins in spermiogenesis. Our present data suggest a potential role for lateral surface modifications, such as H3K64ac, in this replacement process by creating a less stable, more \u2018open\u2019 chromatin state. In contrast to this, H3K64me3 is enriched in the part of the spermatid where genomic regions that undergo late histone replacement are located, suggesting that H3K64me3 may \u2018stabilize\u2019 particular regions of chromatin thereby protecting them from histone exchange (Figure 5\u2014figure supplement 4B).\n\n### H3K64ac can promote histone eviction and facilitate transcription\n\nTo test whether H3K64ac can indeed promote histone displacement from chromatin, we assembled chromatin with unmodified H3, H3K64R, or H3K64ac octamers on a template containing five GAL4-binding sites in front of a MLP promoter (Figure 6\u2014figure supplement 1) and performed a histone eviction assay (Figure 6A, left panel). Using this assay, we detected more H3 in the evicted fraction from H3K64ac chromatin than from H3K64R chromatin (Figure 6A, right panel, Figure 6\u2014figure supplement 2A), suggesting that the destabilization introduced by H3K64ac facilitates histone displacement and eviction. This could explain at least in part how H3K64ac can directly impact on nucleosome stability at active promoters and is in line with our observation that H3K64ac is associated with regions of the genome that are transcriptionally active or require histone exchange/turnover. Of note, we detected equivalent binding of Nap1 to each of the H3 species used (unmodified, K64R, or K64ac) indicating that the observed difference in histone eviction is not due to differential Nap1 histone binding (Figure 6\u2014figure supplement 2B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig6-v1.jpg)\n\n**Figure 6.:** (A) H3K64ac promotes histone eviction. Schematic of eviction assay (left) shows chromatin templates assembled on a biotin-labeled pG5-MLP promoter fragment. Recruitment of transcriptional activators and p300 causes displacement of histone octamers, and histones can be trapped onto a supercoiled plasmid (not shown) by Nap1. Immunoblot of the evicted fraction (right, supernatant) with anti-H3 antibody shows the total amount of H3 released from unmodified H3, H3K64R, or H3K64ac chromatin templates in the presence or absence of acetyl-CoA. Ponceau staining as loading control and autoradiography (3H-acetyl-CoA incorporation) on the immobilized fraction as control for p300 activity are shown. (B) The acetylation mimic H3K64Q promotes transcription of early-response genes. NIH3T3 cells overexpressing either wild type, K64R, or K64Q FlagHA-H3.3 were stimulated with 25 nM TPA for the indicated times. mRNA levels of the indicated genes were analysed by qPCR. Gapdh is shown as control gene. Average of three experiments (\u00b1s.e.) are shown.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Representative gels for chromatin assembly onto pG5-MLP promoter DNA fragment (\u2248 680 bp). Ethidium bromide staining of a 0.8% agarose gel (left) showing chromatin reconstitution efficiency at different octamer:DNA ratios. Comparable chromatin templates were selected and used in the assays (arrows). Ethidium bromide staining of native 5% polyacrylamide gel (right) shows that comparable chromatin templates were used in the assays.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Eviction assay performed as described in the Figure 6A, but comparing the effect of Nap1 (+/\u2212 Nap1). Anti-H3 immunoblot of the supernatant fraction shows that the presence of Nap1 is essential for this assay. Ponceau staining as loading control and autoradiography (3H-acetyl-CoA incorporation) on the immobilized fraction as control for p300 activity are shown. (B) Coomassie staining of the Nap1 pull-down of each H3 species showing that Nap1 binds equally unmodified, K64R, or K64ac H3s. Top gel shows the pull-down material from Ni2+ beads with or without Nap1; bottom gel shows the input before the pull-down, as control.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Anti-HA immunoblot (top) shows that the generated NIH3T3 stable cell lines express each of the exogenous FlagHA-H3.3 types (wt, K64R, or K64Q). Untransfected control is used for signal specificity; ponceau staining is used for loading control; asterisk indicates the molecular size of the FlagHA-H3.3 shifted upwards compared to endogenous H3. (B) Expression of the negative control gene Hsp70 upon TPA induction. Hsp70 is inducible only by heat shock and its expression does not significantly vary among each stable cell line upon TPA stimulation.\n\nFinally, to demonstrate a function for H3K64ac in gene expression in vivo, we expressed wildtype H3.3, H3.3K64Q (acetylated lysine mimetic) and H3.3K64R (retains positive charge but is non-acetylatable) in NIH3T3 cells (Figure 6\u2014figure supplement 3A) and assayed for effects in TPA-dependent early-response gene activation. In this setup, H3K64Q promoted the expression of certain genes, such as c-fos, Egr1, and c-myc, (Figure 6B), above the levels obtained when assaying wildtype H3.3 or the acetylation-deficient H3.3K64R. Notably, expression of control genes such as Gapdh and Hsp70 was unaffected (Figure 6B, Figure 6\u2014figure supplement 3B). The observed transcriptional effects due to a single acetylation mimic within the globular domain strongly suggest that H3K64ac has an intrinsic ability to impact upon transcription mechanisms in vivo. Taken together, our results provide novel mechanistic insights into how a single histone modification, H3K64ac, within a nucleosome could specifically regulate nucleosome stability and transcription.\n\n## Discussion\n\nWe have identified and functionally characterized a novel histone modification located on the octamer\u2019s lateral surface in close proximity to the DNA backbone of the inner gyre. The main chain atoms of H3K64 are in direct contact with the DNA phosphate backbone and this places the H3K64 side chain close enough to potentially contact the DNA, with the average H3K64 side-chain nitrogen-to-DNA distance approximately 6.1 \u00c5 (Figure 5\u2014figure supplement 5A,B). Lysine acetylation results in increased bulk and charge neutralization of the lysine side-chain, and it is likely that acetylation of lateral surface lysines (e.g., H3K64) could interfere with histone\u2013DNA interactions. Interestingly, in the high-resolution crystal structure of the nucleosome (PDB 1KX5; Davey et al., 2002) H3K64 is found to be involved in an extensive network of water-mediated hydrogen bonds that link numerous water molecules, histone side- and main-chain atoms and the DNA (Figure 5\u2014figure supplement 5C). Acetylation of H3K64 would be predicted to disrupt this hydrogen bond network. Davey et al. estimate from their crystallographic analysis that water-bridged interactions between histones and DNA are as important to nucleosome stability as the direct histone\u2013DNA contacts (Davey et al., 2002). These water-bridges provide a plasticity that allows the histone core to adapt to myriad variations in the DNA sequence and conformation. They postulate that disruption of even a single water\u2013bridge interaction (e.g., acetylation of H3K64) has the potential to significantly affect nucleosome stability. This is indeed fully supported by our findings\u2014we demonstrate that H3K64ac exerts a direct effect on nucleosome stability and facilitates histone eviction.\n\nH3K64 acetylation could cause the reduced FRET signal we observed in the salt-dependent dissociation assay in multiple ways. A pre-requisite for the loss of histones from the nucleosome is the dissociation of DNA from the surface of the histone octamer. Given the proximity of H3K64ac to DNA it is likely that it may facilitate this dissociation. This loss of histone\u2013DNA contacts caused by H3K64ac may aid the loss of H2A\u2013H2B dimers, contributing to the observed change in FRET signal. Alternatively, following the loss of H2A\u2013H2B dimers H3K64ac may favour dissociation of DNA from histones H3 and H4, or H3K64ac may affect water-mediated hydrogen bonds that directly influence the association of H2A\u2013H2B dimers. These modes of action are not mutually exclusive and they are consistent with the observed effects of H3K64ac in chromatin assembly in vitro. They also all have the potential to influence chromatin organization during cycles of assembly/disassembly at gene regulatory elements. We detect an approximately 60 mM decrease in the salt-dependent stability between H3K64ac and unmodified/H3K9ac nucleosomes. This difference in salt stability of H3K64ac appears to be in a range consistent with the observed changes in nucleosome dynamics. Gansen et al. (2013) showed that simultaneous acetylation of all sites in H3 results in a decrease in nucleosome salt stability of approximately 100\u2013130 mM NaCl. Furthermore, a fundamental change in the histone content of the nucleosome via incorporation of the histone H2A variant H2A.Z, increases salt stability by up to \u223c70 mM (Park et al., 2004). Moreover, the observed enrichment of H3K64ac at active gene promoters and during chromatin reorganization in spermiogenesis argues for a role of H3K64ac in creating an open, permissive chromatin state. Indeed, this is supported by increased histone eviction and the finding that a mutation mimicking constitutive acetylation, H3K64 to Q, can promote transcription of at least certain genes. We consider a twofold higher transcription due to a single histone mutation as biologically important.\n\nAdditional lysines on the octamer\u2019s lateral surface have been found to be acetylated, such as H3K56, which is located closer to the ends of the nucleosomal DNA. Interestingly, these acetylations can mediate distinct effects on nucleosomes (this work and Neumann et al., 2009; Tropberger et al., 2013). Thus, specificity exists in the way that the biomechanical properties of nucleosomes are affected differentially by acetylation at different sites within the globular domain of H3.\n\nDespite considerable efforts, we have so far been unable to detect specific readers, or binders of H3K64ac. Consequently, we prefer a model in which it acts via direct effects. However, H3K64ac may also function by preventing H3K64me3 from being laid down at key genomic regions. We have previously suggested that methylation of H3K64 is involved in the creation of repressive chromatin states (Daujat et al., 2009; Lange et al., 2013). Thus, H3K64ac might serve to prevent the nucleosome from adopting a repressive conformation, thereby maintaining chromatin in a transcriptionally competent state. Our working model (Figure 7) proposes that opposing chromatin states can be defined via the mutually exclusive presence of H3K64ac or H3K64me3. This model is reinforced by the observed distinct and largely mutually exclusive genomic distribution patterns of these two H3K64 modifications.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/01632/elife-01632-fig7-v1.jpg)\n\n**Figure 7.:** H3K64ac (bottom) helps to create an open, permissive chromatin environment. In contrast to this H3K64me3 could lock the nucleosomes in a stable, repressive conformation (top), resulting in an inactive chromatin environment. H3K64ac can directly act by affecting nucleosome dynamics, but also indirectly by blocking methylation of the same residue.\n\nThe data provided here strengthen the concept that lateral surface modifications play a key role in regulating chromatin function, as initially proposed by others (Cosgrove et al., 2004; Mersfelder and Parthun, 2006) and us (Tropberger and Schneider, 2013). They also extend our understanding of chromatin regulation and provide mechanistic insights into how chromatin organization is spatially and temporally controlled by globular domain modifications. The identification of novel pathways regulating chromatin function has also the potential to highlight druggable targets for diseases in which chromatin states have been distorted.\n\n## Materials and methods\n\n### MS/MS analysis of acetylated H3\n\nIn vivo modified histone H3 was digested either with trypsin or chymotrypsin and analyzed by nanoLC-MS as previously published (Waldmann et al., 2011). For both digests, STAGE tip-assisted sample purification was achieved essentially as described (Rappsilber et al., 2007). Desalted samples were subsequently analyzed using nanoflow (Agilent 1200 nanoLC, Germany) LC-MS/MS on a linear ion trap (LIT)-Orbitrap (LTQ-Orbitrap XL) mass spectrometer (ThermoFisher, Germany). Peptides were eluted with a linear gradient of 10\u201360% buffer B (80% ACN and 0.5% acetic acid) at a flow rate of 250 nl/min over 40 or 60 min depending on the experiment. Data were acquired using a data-dependent \u2018top 5\u2019 method, dynamically choosing the five most abundant precursor ions from the survey scan (mass range 250\u20131650 Th) in order to isolate and fragment them in the LTQ. All data were acquired in the profile mode and dynamic exclusion was defined by a list size of 500 features and exclusion duration of 30 s with a MMD of 10 ppm. Early expiration was disabled to decrease the resequencing of isotope clusters. The isolation window for the precursor ion selection was set to 2.0 Th. Precursor ion charge state screening was enabled, and all unassigned charge states as well as singly charged ions were rejected. For the survey scan a target value of 10,00,000 (1000 ms maximal injection time) and a resolution of 60,000 at m/z 400 were set (with lock mass option enabled for the 445.120024 ion), whereas the target value for the fragment ion spectra was limited to 10,000 ions (200 ms maximal injection time). The general mass spectrometric conditions were: spray voltage, 2.3 kV; no sheath and auxiliary gas flow; ion transfer tube temperature, 150\u00b0C; collision gas pressure, 1.3 mTorr; normalized collision energy using wide-band activation mode; 35% for MS2. Ion selection thresholds were 500 or 1000 counts for MS2 depending on the experiment. An activation q = 0.25 and activation time of 30 ms was applied.\n\nMS data were processed into peak lists by DTASuperCharge 2.0b1 (part of the MSQuant 2.0b7 software environment Mortensen et al., 2010) and searched with Mascot 2.2 against the human International Protein Index protein database (IPI, version 3.65) combined with frequently observed contaminants and concatenated with the reversed versions of all sequences. The MMD for monoisotopic precursor ions and MS/MS peaks were restricted to 5 ppm and 0.8 Da, respectively. Enzyme specificity was set to trypsin (with a maximum of two missed cleavages) allowing cleavage N-terminal to proline and C-terminal to aspartate. Modifications were cysteine carbamidomethylation (fixed) and protein lysine acetylation, lysine butyrylation, lysine propionylation, lysine and arginine methylation (all states), lysine formylation, serine/threonine/tyrosine phosphorylation, deamidation (asparagine and glutamine) and methionine oxidation (variable). Alternatively, we searched the chymotrypsin digested sample with low chymotrypsin specificity (cleavage carboxyterminal to L, M, W, F, and Y allowing a maximum of four missed cleavages). Protein and peptide identifications were further analyzed and manually verified by inspection of chromatograms and spectra.\n\nTo confirm the identity of the tryptic peptide K(Ac)LPFQR (Figure 1A) a synthetic peptide (Biosyntan, Berlin) harbouring the sequence STELLIRK(ac)LPFQRLVGC was trypsin digested and demonstrated the generation of three tryptic peptides, in particular the peptide K(ac)LPFQR. The MS/MS fragment spectrum of the latter was virtually identical to the one derived from the endogenous tryptic peptide. Both spectra contain two significant immonium ion peaks (at m/z 143 and m/z 126) that indicate the presence of acetylated lysine at the amino terminus (Trelle and Jensen, 2008). In addition two chymotryptic peptides with the sequence LIRK(Ac)LPF (Figure 1A) and IRK(Ac)LPF (Figure 1\u2014figure supplement 1A) confirm the presence of an acetylated lysine at K64 of endogenous histone H3.\n\n### 3D modeling\n\nThe acetylation of H3K64 was modelled on the 1KX5 Xenopus laevis nucleosome core particle structure (Davey and Richmond, 2002). Pictures and modifications were generated using PyMOL (http://www.pymol.org).\n\n### Cell culture\n\nMouse embryonic stem (ES) cells used for chromatin immunoprecipitation (ChIP) experiments were derived and cultivated as described previously (Mohn et al., 2008). ES cells differentiation was carried out as described previously (Bibel et al., 2007). Briefly, embryonic stem cells were cultured feeder-free for three to five passages after which LIF was withdrawn to allow formation of cellular aggregates in liquid culture. After 4 days, retinoic acid (RA) was added to induce neuronal progenitor (NP) formation for another 4 days before chromatin isolation. All the other mammalian cell lines were cultured in DMEM (PAA, GE Healthcare Life Sciences, Sweden) medium supplemented with 10% FCS, 2 mM L-glutamine, 100 U/ml Penicillin and 0.1 mg/ml Streptomycin. For the HDAC inhibitors treatment either Na-butyrate (10 mM, overnight) or Trichostatin A (TSA, 0.2 \u00b5M, 48 hr) were used.\n\n### Antibody characterization\n\nFor characterization of the H3K64ac antibody (Active motif, Carlsbad, CA, cat no. 39545, lot 32908001) immuno-dot blotting and peptide competitions were carried out as described previously (Daujat et al., 2009). Histone H3 acetylated peptides corresponding to amino-acid residues 1\u201315 (for K9), 12\u201324 (for K18), 1\u201327 (for K23), 1\u201327 (for K9-K14-K23), and 51\u201362 (for K56) and histone H3 methylated peptides corresponding to amino-acid residues 57\u201371 (for K64me1, me2 and me3) were used in these assays.\n\n### Mononucleosome preparation and limited trypsin digestion\n\n1 \u00d7 108 mouse NIH3T3 cells were harvested, washed in PBS, resuspended in cold hypotonic buffer (5 mM KCl, 1.5 mM MgCl2, 20 mM Hepes pH 7.5, 1x protease inhibitors (Roche, Switzerland), 5 mM Na-butyrate) at a density of 2 \u00d7 107 cells/ml and pelleted. Cells were resuspended in the same buffer at 4 \u00d7 107 cells/ml and incubated on ice for 10 min. Cell suspension was dounced 12 times with the S pestle and store on ice for 30 min. After 10 min of centrifugation at 500\u00d7g at 4\u00b0C, released nuclei were resuspended in 1 ml of isolation buffer-100 (0.25 M sucrose, 100 mM NaCl 1.5 mM MgCl2, 1 mM CaCl2, 10 mM Tris\u2013HCl pH 7.5, 1x protease inhibitors, 5 mM Na-butyrate) and stored 10 min on ice. After 5 min of centrifugation at 4\u00b0C nuclei were resuspended in 1 ml of isolation buffer-250 (same as previously with 250 mM NaCl) and stored 10 min on ice. Nuclei were centrifuged at 4000\u00d7g for 10 min at 4\u00b0C and resuspended in 1 ml of isolation buffer-0 (same as previously with no NaCl) for DNA concentration determination. The chromatin was then digested in the same buffer for 30 min at 37\u00b0C (50 units/mg DNA of Micrococcal Nuclease in the presence of 3 mM CaCl2) and stopped by the addition of 10 mM EDTA. Nuclei were centrifuged at 10000\u00d7g for 10 min and resuspended in 1 ml of lysis buffer (650 mM NaCl, 5 mM EDTA pH 8.0, 10 mM Tris\u2013HCl pH 6.8, 1x protease inhibitors, 5 mM Na-butyrate) and incubated on ice for 30 min. Lysed nuclei were centrifuged at 16500\u00d7g for 10 min at 4\u00b0C and supernatant containing digested chromatin was loaded on a 5\u201340% sucrose gradient and centrifuged at 40,000 rpm (SW41 rotor) for 16 hr at 4\u00b0C. 600 \u00b5l fractions were then collected and the concentration of chromatin was determined at OD 260 nm. Chromatin of each fraction was either analysed by electrophoresis on a 1% agarose gel in 0.5x TBE or by SDS-PAGE to assess DNA size and core histones integrity. Fractions containing mononucleosomes were pooled and used for limited trypsin digestion.\n\n10 \u00b5g of DNA corresponding to mononucleosomes were digested by 20 and 30 \u00b5g of trypsin for 30 min at 26\u00b0C in 250 \u00b5l final of PBS. This mild digestion cuts the N-terminal histones tails protruding out from the nucleosome and leaves the H3 core region (protected by the DNA) mainly intact. Intact or digested nucleosomes were analysed by SDS-PAGE and Western blotting for the presence of N-terminal H3 acetylations (anti-H3K9ac; anti-H3K18ac; anti-H3K27ac) and H3K64 acetylation. H3 digestion pattern was controlled with an anti-H3 antibody.\n\n### ChIP analysis\n\nChIPs of histone modifications on native or crosslinked chromatin were performed with minor modifications of procedures described previously (Cuthbert et al., 2004; Daujat et al., 2009).\n\nFor native ChIPs nuclei were extracted and isolated over a sucrose cushion, resuspended in MNase buffer (0.32 M sucrose, 50 mM Tris-HCl pH 7.5, 4 mM MgCl2, 1 mM CaCl2) and digested with 10 U MNase (Thermo Fisher Scientific Inc., Waltham, MA) for at least 15 min at 37\u00b0C, so that mononuceosomes were released. This chromatin was incubated overnight with specific antibodies and then precipitated with protein A/G Sepharose 4 fast flow beads (GE Healthcare Life Sciences). After washing three times with increasing amount of salt (50 mM Tris-HCl pH 7.5, 10 mM EDTA, containing either 75 mM, or 125 mM, or 175 mM NaCl), immunoprecipitated DNA was eluted and purified.\n\nFor ChIPs on cross-linked chromatin ES cells were lysed and sonicated to produce chromatin fragments of 0.5 Kb on average. Diluted chromatin equivalent to 2 \u00d7 106 cells was subjected to immunoprecipitation overnight. Sepharose beads were used to recover chromatin. Precipitates were washed 10 min at RT two times in lysis buffer (50 mM HEPES/KOH pH 7.5, 500 mM NaCl, 1 mM EDTA, 1% Triton X-100, 0.1% DOC, 0.1% SDS), once in DOC buffer (10 mM Tris pH 8, 0.25 mM LiCl, 0.5% NP40, 0.5% DOC, 1 mM EDTA) and once in TE and DNA was recovered as described previously (Dedon et al., 1991; Orlando et al., 1997; Daujat et al., 2002). Quantitative real-time PCR were performed using SybrGreen (Thermo Fisher Scientific Inc.) on an ABI Prism 7300 apparatus (Applied Biosystems, France). The 5\u2032 to 3\u2032 sequences of the ChIP primers used for different genomic regions in qPCR are listed in Supplementary file 1.\n\nChIP-on-chip of histone modifications were carried out as described previously (Mohn et al., 2008).\n\nFor ChIP followed by PCR-SSCP to distinguish the parental alleles, primary MEFs were derived from 13.5 d.p.c. (C57BL/6 x JF1)F1 foetuses (genotype: [C57BL/6 x M. m. molossinus]F1). After ChIP, DNA was extracted from the immunoprecipitated (B, bound) and unbound (U) chromatin. As a control mock precipitation, we used a rabbit IgG antiserum against chicken IgI (Sigma-Aldrich, St. Louis, MO, cat no. C2288, lot 21K4851). The maternal (M) and paternal (P) alleles were distinguished by radio-active PCR amplification across nucleotides that were polymorphic between the paternal JF1 (M. m. molossinus) and the maternal C57BL/6J (B6) genome. Primers used for PCR are listed in Supplementary file 1.\n\nFollowing denaturation of the amplification products, single-strand conformation polymorphisms (SSCP) were revealed by electrophoresis through a non-denaturing agarose gel (Gregory and Feil, 1999; Umlauf et al., 2004; Pannetier et al., 2008).\n\n### Microarray design, hybridization and analysis\n\nChIP samples were hybridized to custom tiling microarrays (Lienert et al., 2011) representing all well-annotated promoters and the complete chromosome 19 with an average probe spacing of 100 bp (NimbleGen Systems Inc., Madison, WI).\n\nSample labelling, hybridization and array scanning were performed according to the manufacturer\u2019s protocols using a MAUI hybridization station and a NimbleGen MS200 slide scanner in combination with NimbleScan software (NimbleGen Systems Inc.). Further processing was done using R. For analysis raw fluorescent intensity values were used to calculate log2 of the bound/input ratios for each individual oligo. Subsequently, for comparison all arrays were normalized to a median log2 = 0 and scaled to have the same median absolute deviation using the \u2018LIMMA\u2019 R/Bioconductor package (Smyth and Speed, 2003; Smyth, 2004). For boxplots, all microarray probes that overlap the indicated genomic regions were grouped and log2 ChIP/Input values for every probe are displayed as one boxplot per class. Active and inactive TSS (activity cutoff defined according to Lienert et al., 2011) contain probes that are in a 2-kb window (\u00b1 1 kb) around the respective transcription start sites, \u2018enhancers\u2019 contains all probes overlapping the enhancer regions as defined by Creyghton et al. (2010), \u2018genic\u2019 represents all probes that map to annotated genes without the first 1000 bp to avoid overlap with the promoters, and \u2018intergenic\u2019 contains all remaining probes on chromosome 19 that are not in any of the other groups to avoid overlap between the individual classes.\n\nThe data discussed in this publication have been deposited in NCBI\u2019s Gene Expression Omnibus (Edgar et al., 2002) and are accessible through GEO Series accession number GSE35355 (http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35355).\n\n### Deep sequencing data and analysis\n\nH3K27ac and p300 ChIPseq data were taken from Creyghton et al. (2010), H3K4me1 data from Stadler et al. (2011), mRNA expression data from Lienert et al. (2011). Raw data was downloaded from the NCBI Gene Expression Omnibus and the reads were mapped to the Mus musculus genome (mm9) and transcriptome (RefSeq, downloaded on 07/17/2009) as previously described (Lienert et al., 2011).\n\nFor promoter analysis, mapped reads were counted in a 2-kb window centred around all transcription start sites without further normalization.\n\nEnhancers were classified according to the definitions previously reported (Creyghton et al., 2010). In brief, active enhancer regions required a significant enrichment for both, H3K4me1 and H3K27ac, while inactive enhancers were defined as regions containing only H3K4me1 (Creyghton et al., 2010). Total H3 ChIP-seq data to generate the meta plots around the TSSs and to calculate enrichments were extracted from Mikkelsen et al., 2007. Read densities \u00b1 15 kb around TSSs were binned in 1 kb windows and plotted as mildly smoothed lines using R (lowess, f = 0.05).\n\n### Western blotting analysis and protein pull-down\n\nFor histone extraction, nuclei were isolated by incubating the cell pellets 10 min in TEB buffer (0.5% Triton X-100 in PBS) and histones were acid extracted with 0.2 N HCl overnight at 4\u00b0C. After extraction, protein concentration was measured according to the Bradford method and equal amounts of protein were separated on SDS-PAGE and transferred onto nitrocellulose membrane.\n\nFor nuclear extracts preparation, HeLa cell pellets were incubated with TEB buffer as before, but then nuclei were incubated in extraction buffer (0.3% SDS, 0.8 M NaCl, 0.3% NP40) diluted in water to a final NaCl concentration of 0.4 M and sonicated.\n\nFor H3 variants quantification, histones were acid extracted as described above from HEK293 cell lines stably expressing different FlagHA-H3 variants and immunoprecipitated using anti-Flag beads (Sigma-Aldrich). Bound FlagHA-tagged H3s were eluted by boiling in Leammli buffer. Quantification was done using the ImageJ software and the ratio between specific H3K64ac and HA signals (loading control) was calculated.\n\nFor Nap1 pull-down, His-tagged Nap1 was pre-incubated with different histone species in incubation buffer (10 mM Tris\u2013HCl pH 8.0, 100 mM NaCl, 100 ng/\u00b5l BSA, 0.05% NP-40, 1 mM EDTA, 1 mM DTT, 5% glycerol) for 30 min at 30\u00b0C 300 RPM. Samples were then supplied with nickel beads (His-Select Nickel Affinity Gel, Sigma) and incubated for 4 hr on the wheel at 4\u00b0C. Bound material was washed with wash buffer (10 mM Tris-HCl pH 8, 250 mM NaCl, 0.1% NP-40, 1 mM EDTA, 1 mM DTT, 5% glycerol) and elution was achieved by boiling the beads in Leammli buffer.\n\n### Overexpression and siRNA knock-downs\n\nFor HATs overexpression, a tagged p300 HAT domain was cloned in pcDNA3 vector and 5 \u03bcg of plasmid were transfected together with a carrier DNA plasmid (0.5 \u03bcg) expressing mCherry. HEK293 cells were grown on poly-L-lysine-coated coverslips, transfected with the conventional calcium-phosphate method and processed for immunofluorescence (see below for details) after 24 hr.\n\nFor HATs knock-down RNAiMAX (Invitrogen, Carlsbad, CA) was used and a reverse transfection protocol was applied following the supplier\u2019s instructions. The siRNAs used were an ON-target plus SMART pool from Dharmacon (Thermo Fisher Scientific Inc.): p300, L-003486-00-0010; CBP, L-003477-00-0010; GCN5, L-009722-00; PCAF, L-005055-00; scramble negative control, D-001810-10. hMof siRNA was purchased from MWG (Eurofins, Germany) with sequence 5\u2032-GUGAUCGAGUCUCGAGUGArUrU-3\u2032. Briefly, a mixture of 50 nM total of siRNA and lipofectamine were prepared in the wells and subsequently MCF7 cells were plated on it and grown for 72 hr.\n\n### HAT assay\n\nFull-length HATs were expressed and purified from Sf9 cells as described elsewhere (Kraus and Kadonaga, 1998). Recombinant GST-tagged HAT domains were expressed in E. coli and then purified. For the HAT assay, recombinant histones H3 (wt and K64A) and H4 were incubated with the specific HAT in the presence of acetyl-CoA (without in case of mock reaction) in HAT buffer (50 mM Tris\u2013HCl pH8.0, 7% glycerol, 25 mM NaCl, 0.1 mM EDTA, 5 mM DTT) for 1 hr at 30\u00b0C. The reaction was then analysed by western blotting with the specific H3K64ac antibody and the activity of the enzyme was checked using antibodies against known specific targets.\n\n### Antibodies\n\nHistone modifications primary antibodies: H3K4me3 (Millipore, Billerica, MA), H3K9ac (Cell Signaling, Boston, MA), ChIP grade H3K9ac (Abcam, UK), H3K9ac (Millipore, Billerica, MA), H3K9me3 (Millipore), H3K14ac (Millipore), H3K18ac (Cell Signaling), H3K18ac (Abcam), ChIP grade H3K27ac (Abcam), H3K27me3 (Millipore), H3 (Abcam), H4K16ac (Santa Cruz Biotechnology Inc., Dallas, Texas).\n\nNon-histone primary antibodies: HA (Abcam).\n\n### Immunofluorescence (IF) staining\n\nCells were fixed in 4% paraformaldehyde/2% sucrose for 15 min, washed three times in cold PBS and permeabilised with 0.5% Triton X-100 in PBS for 20 min. After washing in PBS, cells were blocked in 3% BSA/PBS and then stained with specific primary antibodies overnight at 4\u00b0C. Fluorescent secondary antibodies (FITC or RedX from Jackson Immunoresearch, UK) were then used for detection. Coverslips were either directly mounted with Vectashield containing DAPI (Vector laboratories, UK) or stained with DAPI for 10 min and then mounted with DABCO (Sigma-Aldrich).\n\nConfocal microscopy was performed in a Leica TCS SP2/MP inverted confocal microscope using a 63\u00d7 or 100\u00d7 oil objective. Images were acquired along the Z-axis every 0.5 \u03bcm.\n\n### Immunofluorescence on tubules\n\nTubules of mice were prepared as previously reported (Kotaja et al., 2004). Cells were fixed in 90% ethanol for 10 min at RT. They were permeabilised with 0.2% Triton X-100 and 0.5% saponine in PBS for 15 min at RT and blocked with 5% milk in PBS. They were incubated with anti-H3K64me3 at 4\u00b0C overnight, followed by incubation with Alexa488 conjugated secondary antibody for 30 min at 37\u00b0C. Finally, cells were counterstained with DAPI and mounted in Vectashield with DAPI (Vector laboratories).\n\n### Immunofluorescence on testis imprint\n\nImprints of mice testes were prepared and fixed in 90% ethanol for 10 min at RT. They were permeabilised with 0.6% Triton X-100 in PBS containing for 15 min at room temperature and blocked with 4% BSA and 0.2% Tween in PBS. They were incubated with anti-H3K64ac at 4\u00b0C overnight, followed by incubation with Alexa488 conjugated secondary antibody for 30 min at 37\u00b0C.\n\n### Immunohistochemistry (IHC) of testis cross-sections\n\nAFA\u2019s fixed, paraffin-embedded testicular sections (7 \u00b5m) were deparaffinised using toluene and hydrated through graded series of ethanol (100%, 90%, 70%). The sections were then incubated with proteinase K (20 \u00b5g/ml) in PBS containing 0.5% SDS for antigen retrieval, 15 min at 37\u00b0C. They were then blocked by incubation with PBS containing 5% milk for 30 min. Immunostaining was performed by three sequential experimental steps: incubation with anti-H3K64ac antibody overnight at 4\u00b0C, washed, and then incubated with a biotinylated secondary antibody for 30 min at RT. The slides were washed in PBS with 0.5% milk; the final detection was performed using the ABC Elite kit Vectastain and the DAB peroxidase Substrate kit (Vector Laboratories) according to the manufacturer\u2019s instructions. The slides were washed and stained with PAS (Periodic Acid Schiff; Sigma-Aldrich) and hematoxylin eosin, dehydrated, and mounted in Eukitt (Sigma-Aldrich). The testis tubules sections were observed with a transmission light microscope and staged according to the criteria previously described (Russel et al., 1990).\n\n### Expression and purification of K64 acetylated H3\n\nBL21 gold cells were transformed with plasmid pAcKRS-3 encoding for the tRNA acetyl-lysine synthetase and pCDF PylT-1, and containing the amber suppressor tRNA and the H3 cDNA wild type, K64AMBER, or K9AMBER codon. The cells were then cultured as described before (Neumann et al., 2009). To purify the recombinant histones, cells were resuspended in wash buffer (50 mM Tris-HCl pH7.5, 100 mM NaCl, 1 mM \u03b2-mercaptoethanol) supplemented with 20 mM Nicotinamide (NAM) and 10 mg/ml lysozyme and then sonicated. The inclusion bodies were washed with the same buffer supplemented with 1% Triton X-100 and then histones were extracted with unfolding buffer (6 M Guanidium HCl, 20 mM Na-acetate pH5.2, 1 mM DTT) for 1 hr at RT. The extracted proteins were dialysed against SAU200 buffer (7 M urea, 20 mM Na-acetate pH5.2, 200 mM NaCl, 5 mM \u03b2-mercaptoethanol, 1 mM EDTA) before loading the sample on a ResourceS ion exchange column (GE Healthcare Life Sciences).\n\n### Nucleosome reconstitutions\n\nNucleosomes were assembled using DNA fragments derived from the MMTV-A positioning sequence (Flaus and Richmond, 1998; Flaus and Owen-Hughes, 2003; Ferreira et al., 2007), and were purified as unmodified or acetylated H3/H4 tetramers and a stoichiometric amount of H2A/H2B dimers. All DNA fragments were made by PCR using fluorescently labelled primers. The PCR products were purified by anion exchange chromatography on a 1.8 ml SOURCE 15Q column (GE Healthcare Life Sciences) or native (0.5\u00d7 TBE) PAGE. The notation xAy denotes the 147-bp MMTV-A sequence with flanking DNA of x and y bp on the upstream and downstream side, respectively. Typically, assembly was performed by salt-gradient dialysis using a double-dialysis method (unless specified otherwise), as follows\u2014reactions (25\u201335 \u00b5l) were placed in microdialysis buttons, which were placed inside a dialysis bag containing 30 ml 0.5\u00d7 TE and 2 M NaCl, the dialysis bag was then dialysed overnight against 2 L of 0.5\u00d7 TE at 4\u00b0C.\n\n### Salt-dependent disassembly of nucleosomes monitored by quenched FRET of AlexaFluor488\n\nThe 147-bp DNA fragment 0A0 was internally labeled with the fluorescent dye AF488 and the dark quencher BHQ1. The DNA was made by PCR using primers that contained an internally labeled thymidine 35 bp from the 5\u2032 end of the primer (indicated as bold and underlined).\n\nForward AF488 primer:\n\n-ACTTGCAACAGTCCTAACATTCACCTCTTGTGTGTTTGTGTCT\n\nReverse BHQ1 primer:\n\n-CAAAAAACTGTGCCGCAGTCGGCCGACCTGAGGGTCGCCGGGG\n\nUnmodified and acetylated nucleosomes were assembled on the doubly-labeled DNA and the integrity of reconstituted nucleosomes was checked by running equal amounts of each nucleosome reconstitution (equivalent to 600 ng DNA) on 0.5\u00d7 TBE 5% native polyacrylamide gels. To measure qF the nucleosomes were diluted to 40 nM in the final dialysis buffer and then diluted with an equal volume of 2\u00d7 NaCl stock solutions, yielding final NaCl concentrations from 0 M to 2.0 M. Reactions were left for at least 15 min to reach equilibrium, transferred to 96-well half-area black non-binding surface microplates (Corning, Corning NY) and AF488 fluorescence measured on a BMG Labtech FLUOstar Optima plate-reader using 488p and 520p excitation and emission filters, respectively. Titrations using DNA alone were performed and confirmed that NaCl-induced changes in qF of nucleosomes was due to nucleosome disruption and not solute-dependent effects on the fluorophore. Upper and lower plateaus for each titration were used to normalise the data on a scale from 1\u20130. The plateau values were calculated by fitting the raw data using the sigmoid function described below in Microcal Origin 8.6 Software. Average titration curves were calculated from normalised data from three separate titrations (using different nucleosome reconstitutions) for unmodified and acetylated nucleosomes and fit again with the sigmoid function to determine the average NaCl concentration at which the normalised qF (qFnorm) is 0.5 (C0.5):\n\n$$\nqF_{norm}=A2+\\frac{A1\u2212A2}{1+e^{(C\u2212C_{0.5})/dC}}\n$$\n\nA1 and A2 are the lower and upper plateau values, respectively, C the NaCl concentration and dC a constant.\n\n### Competitive nucleosome assembly experiments\n\nThe competitive reconstitution procedure is based on that described in Th\u00e5str\u00f6m et al. (2004) and Manohar et al. (2009). However, we found that using the dilution method described below gave more consistent results than the double-dialysis method. Reactions were initially set up in 14.5 \u00b5l 1\u00d7 TE and 2 M NaCl and contained 5 \u00b5g UltraPure sheared salmon sperm DNA (Invitrogen) as non-specific competitor, 1 \u03bcg Cy3-labelled 0A0 DNA as the specific assembly fragment, 80 pmol H2A/H2B dimer, 40 pmol of unmodified or acetylated H3/H4 tetramer. A mastermix containing all components except the tetramer was assembled, split into separate reaction tubes, and the required amount of concentration-matched unmodified/acetylated tetramer added. This was to ensure the maximum amount of consistency between the reactions. The NaCl concentration was then decreased by addition of 1\u00d7 TE 0.1 mM DTT to give concentrations of 1.5, 1.0, 0.75, 0.6, and 0.4 M, with sufficient time given for the reactions to equilibrate at each NaCl concentration (15\u201330 min). Once reactions had reached 0.4 M NaCl they were split into two separate microdialysis buttons and dialysed against 1\u00d7 TE 0.1 mM DTT for several hours to reduce the NaCl to 0 M. The reactions were split in two to assess variability during dialysis; however, we found they did not vary by more than 3%. The reactions were then mixed with sucrose to a final concentration of 10% (w/v) and run on 0.2\u00d7 TBE 6% native polyacrylamide gels run at 200 V for 75 min at 4\u00b0C. Reactions using unmodified and acetylated tetramer were always set up side-by-side. The data are the average of three different batches of assembly reactions performed on different days. Band intensities were quantified in AIDA software. The average assembly efficiency of the unmodified nucleosome reactions from each batch was defined as 1.0 and used as a reference for normalisation.\n\n### ATP-driven remodelling reactions\n\nNucleosomes were assembled on Cy3- or Cy5-labelled 54A18 DNA for RSC remodelling reactions or 54A0 for Chd1 reactions. Recombinant Chd1 was produced as described in Ryan et al. (2011). TAP-tagged RSC was produced as described in Ferreira et al. (2007). The remodelling reactions were carried out essentially as described in Ferreira et al. (2007); Somers and Owen-Hughes (2009) and Ryan et al. (2011). Briefly, the reactions contained 50 mM Tris pH 7.5, 50 mM NaCl, 3 mM MgCl2, and 1 mM ATP (or 1 mM ATP\u03b3S where indicated), 50 nM each of H3K64-acetylated nucleosomes and unmodified nucleosomes on Cy3- and Cy5-labelled DNA, respectively, and either 1 nM Chd1 or 0.5 nM RSC. The reactions were incubated at 30\u00b0C and samples taken at 0, 5, 10, 15, 20, 30, and 45 min. The reactions were stopped by the addition of 500 ng HindIII digested \u03bb DNA and sucrose to 5% w/v and placing on ice. Products were resolved on 0.2\u00d7 TBE 5% native polyacrylamide gels run for 3 hr at 300 V at 4\u00b0C. Gels were imaged on an FLA-5100 fluorescence scanner. Band intensities were quantitated in AIDA software. Initial rates were obtained by fitting using the following equation in MicroCal Origin 7.0 software and solving the derivative at zero time:\n\n$$\ny=a(1\u2212e^{\u2212bx})\n$$\n\nwhere, a describes the value of the asymptote of the curve and b the relative rate in terms of normalized fraction of nucleosomes repositioned per minute. The fraction is a normalised unitless value and so the units for the rate are just min\u22121.\n\n### Single-molecule FRET (smFRET) analysis\n\nUnmodified or H3K64 acetylated nucleosomes were assembled on the 147-bp DNA fragment 0A0, which was labeled with fluorescent dyes attached to the same thymidine of the primer sequences shown before (see also \u2018Salt-dependent disassembly of nucleosomes monitored by quenched FRET of AlexaFluor488\u2019 in \u2018Materials and methods\u2019 section), 6-Tamra (forward primer) and alexa647 (reverse primer). PCR products were purified by DNA precipitation followed by size exclusion chromatography using a Superose 6 PC 3.2/30 column (GE Healthcare Life Sciences).\n\nDNA and histone octamers containing either unmodified H3 or H3K64ac were assembled to mononucleosomes by salt-gradient dialysis according to the double-dialysis method described above, but placing microdialysis buttons into 300 ml 0.5\u00d7 TE-NP40 and 2 M NaCl, and dialysing them overnight against 3 l of 0.5\u00d7 TE-NP40 and 50 mM NaCl at 4\u00b0C. Finally, the buttons were placed in 1 L 0.5\u00d7 TE-NP40 buffer for 1 hr. A 1:20 mixture of labelled and unlabelled DNA was used for the assembly to generate a mixture of labelled and unlabelled nucleosomes and thus avoid nucleosome disruption due to low nucleosome concentration during the single-molecule experiments.\n\nFor smFRET measurements, nucleosomes were diluted in measurement buffer (10 mM Tris\u2013HCl pH 7.6, 1 mM EDTA, 0.05% NP40, 0.1 mg/ml BSA and varying amounts of NaCl, ranging from 0 to 1 M) to a concentration in the order of 500 pM, corresponding to a picomolar concentration of the fluorescent species. Samples were then kept at 4\u00b0C for at least 18 hr to allow for adaptation to the respective final salt concentration. A 20 \u00b5l drop was placed on a PEG-coated coverslip and measurements were performed for 10 min at room temperature. At least three measurements were performed for each salt concentration on a custom built confocal microscope using freely diffusing molecules and time-correlated single photon counting (TCSPC), as described in B\u00f6nisch et al. (2012). Photon arrival times were recorded by a Hydra Harp 400 (PicoQuant GmbH, Germany).\n\nTo select bursts of fluorescence, an all-photons burst search (APBS, Nir et al., 2006) was performed on the recorded data, requiring a minimum of five photons in 500 \u00b5s and at least 30 photons in total per burst. For each burst, FRET efficiency and stoichiometry were calculated from the recorded signals as explained in B\u00f6nisch et al. (2012). Only bursts with more than 50 photons in total were considered for further analysis. The populations of singly-labeled molecules were excluded by a stoichiometry (Sto) threshold of 0.1<Sto<0.7 and rare multi-molecule events were excluded by limiting the time deviation signals (TDS) to TDS<1 and TDSred-PIE<0.4 as explained in B\u00f6nisch et al. (2012).\n\nBecause of the chosen position of the dyes, intact nucleosomes showed an intermediate to high FRET efficiency, while disassembled nucleosomes showed a very low FRET efficiency (dyes position shown in Figure 5A). Thus, two FRET populations, represented by two Gaussian distance distributions, were fitted to the data by probability distribution analysis (PDA, Antonik et al., 2006) assuming a F\u00f6rster radius of 60 nm. Additional measurement allowed us to estimate a background signal of 0.2 kHz in all channels, 4% crosstalk, and a \u03b3-factor of 0.7, as a correction factor for differences in the quantum yields of the dyes and the wavelength-dependent detection efficiencies of the setup. Measures of the higher FRET efficiency corresponded to the fraction of intact nucleosomes at the respective salt concentration. These values were normalized to the higher FRET efficiency value at 0 mM NaCl to allow comparison between unmodified and acetylated nucleosomes. The sigmoidal fit function described in the section \u2018Salt-dependent disassembly of nucleosomes monitored by quenched fluorescence (qF) of AlexaFluor488 (AF488)\u2019 was used to fit the data and retrieve C0.5.\n\n### Histone eviction assay\n\nThe histone eviction assay was adapted from a protocol developed by Ito et al. (2000) and Sharma and Nyborg (2008). Chromatin templates containing unmodified H3, H3K64ac, or H3K64R were assembled on an \u223c680-bp linear DNA fragment labeled with biotin on the 5\u2032 end. Chromatin was assembled using the salt dilution method as described in Gutierrez et al. (2007), where 20 \u00b5l reactions at 1 M NaCl were diluted with 1\u00d7 TE, 1 mM DTT to 0.8, 0.6, 0.4, 0.2, and 0.1 M (final dilution buffer 2\u00d7: 2\u00d7 TE, 20% glycerol, 0.1% NP40, 200 ng/\u00b5l BSA, 2 mM DTT, 1 mM Na-butyrate, protease inhibitors). Each dilution step was carried out at 4\u00b0C, 400 RPM, for 45 min. Assembled chromatin was analysed on native 5% polyacrylamide gel run in 0.2\u00d7 TBE for 90 min at 150 V. Chromatin templates were bound on streptavidin beads for 3 hr at 4\u00b0C (10 mM Tris\u2013HCl pH8, 100 ng/\u00b5l BSA, 100 mM NaCl, 0.05% NP-40, 1 mM EDTA, 1 mM DTT, 0.1 mM AEBSF, 0.5 mM Na-butyrate, 10% glycerol) and the immobilised template was incubated (10 mM Tris\u2013HCl pH 8.0, 100 ng/\u00b5l BSA, 100 mM NaCl, 0.05% NP-40, 1 mM EDTA, 1 mM DTT, 1 mM Na-butyrate, 5% glycerol) first with Gal4-VP16 for 20 min at 30\u00b0C, 450 RPM, and then with full-length p300 and Nap1 (Drosophila, full length, expressed in Sf9 cells) for 15 min. Then, a mixture of radioactive 3H-acetyl-CoA and 100 \u00b5M cold acetyl-CoA was added to the samples and incubated for 40 min at 30\u00b0C. Before this last incubation, each reaction was supplemented with 1 \u00b5g of a supercoiled plasmid, on which the evicted octamers are assembled by Nap1. The supernatant fraction was recovered and assayed in western blot for total H3 amounts. The bound fraction was washed three times and analysed on SDS-PAGE for p300 specific activity onto chromatin.\n\n### TPA induction and qPCR analysis\n\nNIH3T3 cell lines stably expressing different FlagHA-H3.3 species were seeded in selection medium containing 10% FBS and then starved for 2 days in starvation medium without FBS. Gene induction was stimulated supplementing the cells with fresh starvation medium supplemented with 25 nM TPA (Cell Signaling). After the indicated times of induction, total RNA was isolated using Quick RNA Miniprep kit (Zymo Research, Irvine, CA). Equal amounts of RNA were employed for first strand cDNA synthesis using RevertAid H Minus First Strand cDNA Synthesis Kit (Thermo Fisher Scientific). cDNA samples were then used as templates to perform quantitative real-time PCR using SybrGreen (Thermo Fisher Scientific) on LightCycler 480 II (Roche). Fold change values in gene expression were calculated relative to the untreated samples for each cell line using the\u2014dCt method. Primers used for qPCR are listed in Supplementary file 1.\n",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "5304c4f3-2f15-48b6-85a0-b8dd85fa3fda",
+      "submission_id": "00909cfa-900a-461f-9b01-0e520ec6a3a6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- James T Kadonaga, University of California, San Diego , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01632.027](https://doi.org/10.7554/eLife.01632.027)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cAcetylation of histone H3 at lysine 64 regulates nucleosome dynamics and facilitates transcription\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIn this study, the authors identified and characterized a novel histone acetylation site at H3K64. This residue, located on the outer (lateral) surface of the histone octamer, is close to the DNA within the nucleosome structure and is thus potentially interesting because its acetylation may disrupt the nucleosome in a manner similar to that caused by H3K56ac. H3K64ac was identified by mass spec and found to be present in mice and humans (Figure 1). Genome-wide analyses revealed that H3K64ac correlated with enhancers as well as active promoters (Figures 2 and 3). Acetylation of H3K64 appears to be performed largely, but not necessarily exclusively, by p300/CBP (Figure 4). Acetylation of H3K64 may cause a slight destabilization of nucleosomes at NaCl concentrations greater than 0.35 M (Figure 5A). The localization of H3K64ac during spermatogenesis was also examined (Figure 5B). Figure 6 addresses, somewhat incompletely, the possible role of H3K64ac in histone eviction and transcription.\n\nHence, this study describes acetylation of H3K64 in mice and humans and finds that p300/CBP largely contribute to this acetylation. In a manner similar to other acetylation marks in H3, H3K64ac is found in transcriptionally active chromatin. H3K64ac may destabilize nucleosome stability and facilitate transcription. The main strengths of this work are the identification of H3K64ac, the prominent role of p300/CBP in acetylating H3K64, and the association of H3K64ac with active chromatin. Two key concerns are the specificity of the H3K64ac antibodies and the abundance of H3K64ac relative to H3K18ac and H3K27ac, which are also generated by p300/CBP. The functional studies are also less convincing.\n\nMajor comments:\n\n1) The authors need to test more thoroughly the specificity of the H3K64ac antibodies, as many results depend upon whether or not the antibodies are specific. In particular, the authors need to test whether singly acetylated peptides containing H3K18ac or H3K27ac (sites that are also acetylated by p300/CBP) are recognized by the H3K64ac antisera. Thus, both Figure 1C and Figure 1\u2013figure supplement 2C should be expanded to test these peptides.\n\n2) It is essential to determine the relative abundance (by mass spec) of H3K64ac compared to H3K18ac and H3K27ac, as this issue is relevant to the possible roles of H3K64ac in the cell.\n\n3) In addition, if the abundance of H3K64ac relative to H3K18ac or H3K27ac is very low, then the specificity of the antibodies (point 1 above) becomes even more critical. In this scenario, the authors should make the H3K64R mutation in the epitope tagged H3.1 and H3.3 histones that they use in later figures, express it in cells and show by western blot that their antibody no longer recognizes the tagged H3 from cells to prove specificity of the antibody. This is especially important because CBP is the apparent HAT for H3K64ac and the pattern of localization of the H3K64ac antibodies to promoters is similar to that of other H3 acetylation marks.\n\n4) Figure 2. The meta gene analysis in Figure 2C shows a dramatic dip right over the TSS and a peak on either side for H3K64ac signal normalized by Input. It is well-known that there is histone displacement at the TSS to proximal regions to allow for the regulatory machinery to bind. Therefore, the meta gene results could be indicative of higher H3 concentration in the proximal regions of the TSS (and corresponding depletion over TSS) rather than a specific increase in H3K64ac. The authors should normalize the signal ChIP to H3 rather than input for this particular case.\n\n5) Figure 5. The experiments on H3K64ac being involved in histone eviction are problematic. First, the line is a poor fit to the data. The actual data points indicate that there is, at best, roughly a 50 mM difference in the NaCl concentration between the H3K64ac data and the other data.\n\n6) Figure 6A is incomplete. For each different histone (unmod, K64R, K64ac), data needs to be shown for +/- NAP1, +/- Gal4-VP16, +/- p300, and +/- AcCoA. It is not possible to interpret the data in the absence of the missing conditions. Also, does the supernatant contain nucleosomes as shown in the Figure? If so, do the nucleosomes have NAP1 bound to them as shown in the Figure? In this experiment, is it simply possible that NAP1 cannot recognize H3K64R?\n\n7) The data in Figure 6B are interpreted as showing that a K to Q mimic of lysine 64 increases transcription. However, the increased transcription in the K64Q mutant is subtle (less than 2 fold) and is only seen at some genes and at some time points. The interpretation of the results needs to reflect the data more accurately.\n\n[Editors' note: further clarifications were requested prior to acceptance, as described below.]\n\n1) Can the authors indicate the source/origin (yeast, human, etc.) of the Nap1?\n\n2) Figure 5A. The lines still do not seem to be a good fit to the data, especially the H3K9ac line.\n\n3) Figure 5A. One additional complication in the interpretation of the data is that H2A-H2B begin to dissociate from chromatin at around 0.6 M NaCl.\n",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "32036e97-4d47-4c23-a527-2b9d02d4c484",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C1",
+      "claim": "H3K64ac is an uncharacterized acetylation site on histone H3 lysine 64 identified by mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "We used mass spectrometry to identify novel histone modifications and found an uncharacterized acetylation site on histone H3 lysine 64 (H3K64ac) (Figure 1A, Figure 1\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mass spectrometry data shown in Figure 1A and supplementary figures, demonstrating detection of acetylated K64 peptides.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "06857acd-7749-4dd1-b059-e786a48251da",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C2",
+      "claim": "H3K64 is located on the lateral surface of the histone octamer in close proximity to the inner gyre of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K64 is the first amino acid of the H3 alpha1 helix, the first of three alpha helices in the histone fold. It is found on the lateral surface of the histone octamer in close proximity to the inner gyre of DNA (Davey et al., 2002; Figure 1B) at a location distinct from other potentially acetylated residues, such as H3K56.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural data from Davey et al., 2002 and 3D modeling shown in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "7ecd6df2-bc49-4547-a0d5-85bfad53d97f",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C3",
+      "claim": "H3K64ac is present in a variety of mouse and human cell lines and tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this antibody, we found that H3K64ac is present in a variety of mouse and human cell lines and tissues suggesting a rather ubiquitous function (Figure 1D, Figure 1\u2014figure supplement 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoblot data showing H3K64ac detection across multiple cell lines in Figure 1D and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "bbbc5546-0d6b-44ba-805d-44914635b542",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C4",
+      "claim": "H3K64 acetylation levels increase upon HDAC-inhibitor treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon HDAC-inhibitor treatment, H3K64 acetylation levels increased (Figure 1D, Figure 1\u2014figure supplement 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoblot data comparing untreated and Na-butyrate treated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "59cc85db-2f81-4fc8-a8c7-376322b28816",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C5",
+      "claim": "H3K64ac shows a distinct nuclear localization with relative depletion from heterochromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence (IF) showed a distinct nuclear localization of H3K64ac with a relative depletion from heterochromatin (Figure 1E, Figure 1\u2014figure supplement 3, compare panels 5 and 6, and Figure 1\u2014figure supplement 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence imaging showing H3K64ac distribution pattern in cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "572c91f0-6f9b-4e9e-85f3-a57acb6253ef",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C6",
+      "claim": "The localization pattern of H3K64ac is opposite to that of H3K64me3.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this localization pattern is the opposite to that of H3K64me3 (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparative immunofluorescence data showing mutually exclusive localization patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "164111fe-5083-434f-b4b5-6a6a56bc6cfc",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C7",
+      "claim": "H3K64me3 is a repressive mark enriched in pericentromeric heterochromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously established that H3K64me3 is a novel repressive mark enriched in pericentromeric heterochromatin that might help to 'lock' the conformation and/or position of the nucleosome, and consequently the surrounding chromatin (Daujat et al., 2009; Lange et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by previous publications from the authors' group.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "078ca600-2d1b-451b-8b69-0230eacfa29c",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C8",
+      "claim": "H3K64ac is strongly enriched at the transcriptional start site (TSS) of active genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the euchromatic localization detected in IF, we found strong enrichment of H3K64ac at the transcriptional start site (TSS) of active genes (Figure 2A, Figure 2\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-on-chip data showing H3K64ac enrichment at active TSSs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "66dd581e-de1f-410a-b391-07e21ce46c5e",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C9",
+      "claim": "H3K64ac enrichment at TSSs shows strong correlation with RNA Polymerase II occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "At TSSs, we detected a strong correlation between the enrichment of H3K64ac and RNA Polymerase II occupancy (Figure 2B), as well as with the presence of active histone marks (Figure 2\u2014figure supplement 1D), suggesting a role for H3K64ac in transcriptional activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by scatterplot analysis showing correlation between H3K64ac and RNA Pol II ChIP data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "e8ea7577-2d01-4cc2-9e0c-2097833bc930",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C10",
+      "claim": "Local H3K64ac enrichment is indicative of the steady-state mRNA level of the respective gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, local H3K64ac enrichment is indicative of the steady-state mRNA level of the respective gene (Figure 2C) and it is not simply due to increased histone H3 density (Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by meta-gene plot analysis correlating H3K64ac levels with gene expression levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "ce61eee9-edbe-4366-b647-14646afa8855",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C11",
+      "claim": "H3K64ac enrichment is anti-correlated with repressive marks such as H3K27me3 and H3K64me3.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, H3K64ac enrichment is anti-correlated with repressive marks such as H3K27me3 and H3K64me3 (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by scatterplot analysis showing negative correlation between H3K64ac and repressive marks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "e8e52a48-fc07-40bb-8d58-8865fe12c07d",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C12",
+      "claim": "H3K64ac is strongly enriched at enhancers, with a preference for active enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we find H3K64ac strongly enriched at enhancers (Figure 2A), with a preference for active enhancers, where it co-localizes with established enhancer marks such as H3K27ac, H3K4me1, and p300-binding (Figure 2D; Creyghton et al., 2010; Rada-Iglesias et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-on-chip data and comparison with published enhancer datasets.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "f24e422e-d42b-425a-987d-65aaaa19878a",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C13",
+      "claim": "H3K64ac levels are very low at repetitive elements where H3K64me3 is highly enriched.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple single gene validations by ChIP-qPCR confirmed the genome-wide data and also revealed that H3K64ac levels are very low at repetitive elements (Figure 2\u2014figure supplement 2A,B), where H3K64me3 is highly enriched (Daujat et al., 2009), again indicating opposing genomic localizations for these two marks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data at repetitive elements and previous publication on H3K64me3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "f66d76dd-5421-416a-a219-393f995945d3",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C14",
+      "claim": "H3K64ac enrichment shifts from pluripotency-associated genes to differentiation-associated genes during ES cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In pluripotent ES cells, H3K64ac is strongly enriched at active pluripotency-associated genes such as Nanog, Pou5f1 and Dppa3, whereas after retinoic acid-induced differentiation this enrichment shifts towards active differentiation-associated genes (e.g., Hoxb3 and Hoxd3, Pax6) demonstrating that H3K64ac levels reflect transcriptional activity during differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP analysis comparing undifferentiated and differentiated ES cells shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "6ca5c356-c236-4fa4-a3dc-86ee8ee13b17",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C15",
+      "claim": "H3K64ac is most highly enriched on the H3 variant H3.3.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous findings that H3.3 has covalent modifications associated with transcriptionally active chromatin (Hake et al., 2006), we found the highest enrichment of H3K64ac on the H3 variant H3.3 (Figure 3B, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoprecipitation data of Flag-HA-tagged H3 variants showing highest H3K64ac signal on H3.3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "4419d6a2-d665-4cac-91f1-c1e226ad6818",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C16",
+      "claim": "The transcriptionally active alleles of imprinting control regions (ICRs) are specifically marked by H3K64ac.",
+      "claim_type": "EXPLICIT",
+      "source": "We analysed five imprinting control regions (ICRs) and in each case we found that the transcriptionally active alleles were specifically enriched in H3K64ac, whereas the inactive ones were enriched in H3K64me3 (Figure 3C, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by allele-specific ChIP data using polymorphic nucleotides to distinguish parental alleles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "c5d4e629-d376-461d-9d4e-3f36d2067222",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C17",
+      "claim": "H3K64ac and H3K64me3 can define functionally opposing chromatin states.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that H3K64ac and H3K64me3 can define functionally opposing chromatin states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the mutually exclusive distribution patterns and opposing associations with active vs. inactive chromatin.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "5897c655-d85e-4c70-9355-829f69cb2e26",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C18",
+      "claim": "Knockdown of p300 and CBP decreases the steady-state levels of H3K64ac.",
+      "claim_type": "EXPLICIT",
+      "source": "In these assays, knockdown of p300 and CBP, but not of other HATs decreased the steady-state levels of H3K64ac (Figure 4A, Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by siRNA knockdown experiments followed by immunoblot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "7d8a4ae1-3507-4924-bbcd-6f2fe3163d32",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C19",
+      "claim": "The decrease in H3K64ac upon p300/CBP knockdown is most pronounced at p300/CBP-specific genomic target regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This decrease was most pronounced at p300/CBP-specific genomic target regions (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR analysis at specific genomic loci following p300/CBP knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "8840cecb-9ad1-4380-b9fb-f27495ceab93",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C20",
+      "claim": "Overexpression of p300 results in increased levels of H3K64ac.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, overexpression of p300 resulted in increased levels of H3K64ac (Figure 4C, Figure 4\u2014figure supplement 1B), and p300 and H3K64ac distributions showed a strong correlation (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data showing increased H3K64ac in p300-overexpressing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "fe49d65a-4459-4ef0-9235-a90e9de92676",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C21",
+      "claim": "p300 and CBP can acetylate H3K64 in vitro on free H3 and within chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, p300 and CBP can acetylate H3K64 in vitro on free H3 (Figure 4D) and within chromatin (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro HAT assays using recombinant H3 and chromatin templates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "9eee52e5-20bf-4194-8336-c285faff059e",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C22",
+      "claim": "p300/CBP are H3K64 acetyltransferases.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether these data clearly establish p300/CBP as H3K64 acetyltransferases, not excluding the presence of additional H3K64 acetyltransferases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple lines of evidence including knockdown, overexpression, and in vitro acetylation assays.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "ba0ebc32-b821-493e-8e0c-3fe61e76269c",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C23",
+      "claim": "Chd1 repositions H3K64-acetylated nucleosomes faster than unmodified nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that Chd1 repositioned H3K64-acetylated nucleosomes faster than unmodified nucleosomes. This was not the case when we used the RSC enzyme (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro chromatin remodeling assays comparing rates of nucleosome repositioning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "18912726-dd0b-4d0b-8728-b32d9eaf9b14",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C24",
+      "claim": "Acetylation of H3K64 differentially affects chromatin remodeling enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that acetylation of H3K64 could differentially affect remodelling enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential effects observed with Chd1 vs. RSC remodeling enzymes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "003b0126-cfb5-4d49-ae04-deab838ed980",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C25",
+      "claim": "H3K64ac nucleosomes are more sensitive to salt-induced disruption than unmodified nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this strategy, we observed that the FRET interaction for H3K64ac nucleosomes was more sensitive to salt-disruption than unmodified nucleosomes at NaCl concentrations ranging between \u223c0.5 M and 1.0 M (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FRET measurements showing lower salt stability of H3K64ac nucleosomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "235250f2-ff56-475e-a1ac-c2d2cef86b5b",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C26",
+      "claim": "Single-molecule FRET measurements show lower stability of H3K64ac nucleosomes compared to unmodified nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, we also measured the salt-dependent nucleosome stability by single-molecule FRET, which again resulted in a lower stability of H3K64ac nucleosomes (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by single-molecule FRET data showing decreased nucleosome stability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "c7535c6c-7a9e-4be4-97a2-577d31d59b65",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C27",
+      "claim": "H3K64ac decreases nucleosome stability, distinguishing it from H3K56ac which does not significantly affect nucleosome stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data demonstrate a decreased stability of H3K64ac nucleosomes, distinguishing this acetylation from H3K56ac that was reported not to significantly affect nucleosome stability under comparable conditions (Neumann et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with published data on H3K56ac and current experimental results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "a7251f5c-daaf-4f50-bb82-1406c28417df",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C28",
+      "claim": "H3K64ac reduces the level of nucleosome assembly relative to unmodified H3 in competitive reconstitution assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5B shows that H3K64ac reduces the level of nucleosome assembly, relative to unmodified H3, indicating that H3K64 acetylation reduces histone\u2013DNA binding affinity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by competitive nucleosome assembly experiments showing reduced assembly efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "429682cc-8d6e-495a-9117-96c4da9e90f4",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C29",
+      "claim": "Acetylation at H3K9 has no detectable effect on nucleosome stability or assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, acetylation at H3K9 had no detectable effect (Figure 5A,B), illustrating functional differences between acetylation of lateral surface and histone tail lysines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FRET and competitive assembly data comparing H3K9ac to H3K64ac.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "2ce2766f-f125-4298-831d-1436d23112a8",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C30",
+      "claim": "H3K64ac directly influences histone\u2013DNA association and nucleosome stability.",
+      "claim_type": "EXPLICIT",
+      "source": "In concert, these observations demonstrate that H3K64ac directly influences histone\u2013DNA association and nucleosome stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple in vitro assays showing effects on nucleosome stability and assembly.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "d30b348d-b65a-4a31-8a40-2e26bc83d3cd",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C31",
+      "claim": "H3K64ac levels dramatically increase in elongating spermatids during the period of nucleosome disassembly and histone replacement.",
+      "claim_type": "EXPLICIT",
+      "source": "In spermatocytes and round spermatids H3K64ac was below the limit of detection. However, the levels of H3K64ac dramatically increased in elongating spermatids (Figure 5C,D). At approximately the same time, we also detected the presence of some specific H3 tail acetylations (Figure 5\u2014figure supplement 4A). Notably, we observed this increase in H3K64ac precisely during the period of nucleosome disassembly and replacement of histones by transition proteins in spermiogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence and immunohistochemistry data on testis sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "6807d187-5634-4ce3-b307-1f9f5ee276e8",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C32",
+      "claim": "H3K64ac may play a role in histone replacement during spermiogenesis by creating a less stable, more 'open' chromatin state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our present data suggest a potential role for lateral surface modifications, such as H3K64ac, in this replacement process by creating a less stable, more 'open' chromatin state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the timing of H3K64ac appearance during spermiogenesis and its known effects on nucleosome stability.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "304a062c-a44f-4cd4-ab99-fcd90da25d45",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C33",
+      "claim": "H3K64me3 is enriched in regions of spermatids where genomic regions undergo late histone replacement.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to this, H3K64me3 is enriched in the part of the spermatid where genomic regions that undergo late histone replacement are located, suggesting that H3K64me3 may 'stabilize' particular regions of chromatin thereby protecting them from histone exchange (Figure 5\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data on testis sections showing H3K64me3 localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "1222fefb-446e-44b2-8417-dc678517b12a",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C34",
+      "claim": "H3K64ac promotes histone displacement from chromatin more than H3K64R in eviction assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this assay, we detected more H3 in the evicted fraction from H3K64ac chromatin than from H3K64R chromatin (Figure 6A, right panel, Figure 6\u2014figure supplement 2A), suggesting that the destabilization introduced by H3K64ac facilitates histone displacement and eviction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro histone eviction assays comparing different H3 species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "35c5045e-72c7-48da-80b9-0273734f9ec4",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C35",
+      "claim": "The observed difference in histone eviction is not due to differential Nap1 histone binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we detected equivalent binding of Nap1 to each of the H3 species used (unmodified, K64R, or K64ac) indicating that the observed difference in histone eviction is not due to differential Nap1 histone binding (Figure 6\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Nap1 pull-down experiments showing equal binding to all H3 species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "ec842f23-d121-4fc7-9f1d-4ddab5839c43",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C36",
+      "claim": "The acetylation mimic H3K64Q promotes transcription of early-response genes c-fos, Egr1, and c-myc above levels obtained with wildtype H3.3 or H3.3K64R.",
+      "claim_type": "EXPLICIT",
+      "source": "In this setup, H3K64Q promoted the expression of certain genes, such as c-fos, Egr1, and c-myc, (Figure 6B), above the levels obtained when assaying wildtype H3.3 or the acetylation-deficient H3.3K64R.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR analysis of gene expression in NIH3T3 cells expressing different H3.3 variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "b1d8cc86-a625-45fc-bebb-36be799796f5",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C37",
+      "claim": "Expression of control genes Gapdh and Hsp70 is unaffected by H3K64Q.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, expression of control genes such as Gapdh and Hsp70 was unaffected (Figure 6B, Figure 6\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data showing no change in control gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "04f4208a-fd39-440d-a90a-59d3a45ee2a1",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C38",
+      "claim": "H3K64ac has an intrinsic ability to impact upon transcription mechanisms in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed transcriptional effects due to a single acetylation mimic within the globular domain strongly suggest that H3K64ac has an intrinsic ability to impact upon transcription mechanisms in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the transcriptional effects observed with the H3K64Q acetylation mimic.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "56d0d3c1-2919-4f7b-9a83-806acd4ec9ca",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C39",
+      "claim": "The main chain atoms of H3K64 are in direct contact with the DNA phosphate backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "The main chain atoms of H3K64 are in direct contact with the DNA phosphate backbone and this places the H3K64 side chain close enough to potentially contact the DNA, with the average H3K64 side-chain nitrogen-to-DNA distance approximately 6.1 \u00c5 (Figure 5\u2014figure supplement 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural analysis of the high-resolution nucleosome crystal structure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "c674fa55-e675-4273-923b-e5ae3dc02d15",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C40",
+      "claim": "Lysine acetylation results in increased bulk and charge neutralization of the lysine side-chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysine acetylation results in increased bulk and charge neutralization of the lysine side-chain, and it is likely that acetylation of lateral surface lysines (e.g., H3K64) could interfere with histone\u2013DNA interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of the chemical effects of lysine acetylation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "ac71dc62-bd50-4f55-b2c0-0dcfe6f58347",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C41",
+      "claim": "H3K64 is involved in an extensive network of water-mediated hydrogen bonds linking water molecules, histone atoms, and DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the high-resolution crystal structure of the nucleosome (PDB 1KX5; Davey et al., 2002) H3K64 is found to be involved in an extensive network of water-mediated hydrogen bonds that link numerous water molecules, histone side- and main-chain atoms and the DNA (Figure 5\u2014figure supplement 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of the high-resolution nucleosome crystal structure from Davey et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "10323889-dc72-4c12-b4e8-49874b8aa15b",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C42",
+      "claim": "Acetylation of H3K64 would be predicted to disrupt the water-mediated hydrogen bond network.",
+      "claim_type": "EXPLICIT",
+      "source": "Acetylation of H3K64 would be predicted to disrupt this hydrogen bond network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the structural position of H3K64 and the chemical effects of acetylation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "93bd5817-f505-41b4-9935-b05543b20af9",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C43",
+      "claim": "Water-bridged interactions between histones and DNA are as important to nucleosome stability as direct histone\u2013DNA contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Davey et al. estimate from their crystallographic analysis that water-bridged interactions between histones and DNA are as important to nucleosome stability as the direct histone\u2013DNA contacts (Davey et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on published crystallographic analysis by Davey et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "9a724614-16e1-4bbc-b152-4be66933dfbd",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C44",
+      "claim": "Disruption of even a single water-bridge interaction has the potential to significantly affect nucleosome stability.",
+      "claim_type": "EXPLICIT",
+      "source": "They postulate that disruption of even a single water\u2013bridge interaction (e.g., acetylation of H3K64) has the potential to significantly affect nucleosome stability. This is indeed fully supported by our findings\u2014we demonstrate that H3K64ac exerts a direct effect on nucleosome stability and facilitates histone eviction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on postulation by Davey et al. and supported by experimental findings in this study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "045aec7b-c887-458e-ad7c-277093ffcbe0",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C45",
+      "claim": "The observed enrichment of H3K64ac at active gene promoters argues for a role in creating an open, permissive chromatin state.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the observed enrichment of H3K64ac at active gene promoters and during chromatin reorganization in spermiogenesis argues for a role of H3K64ac in creating an open, permissive chromatin state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the genomic distribution patterns and functional context of H3K64ac.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "eb02a659-991e-4b89-9ebc-548536c86cbb",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C46",
+      "claim": "A twofold higher transcription due to a single histone mutation is considered biologically important.",
+      "claim_type": "EXPLICIT",
+      "source": "We consider a twofold higher transcription due to a single histone mutation as biologically important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the authors' interpretation of the biological significance of their findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "2bad9c2e-a84c-44c0-92e8-c3e24300ba95",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C47",
+      "claim": "Different acetylations on the octamer's lateral surface can mediate distinct effects on nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional lysines on the octamer's lateral surface have been found to be acetylated, such as H3K56, which is located closer to the ends of the nucleosomal DNA. Interestingly, these acetylations can mediate distinct effects on nucleosomes (this work and Neumann et al., 2009; Tropberger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with published work on H3K56ac and other lateral surface modifications.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "7d3d2cd2-8e8c-4aaa-9337-d83ad21b3b15",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C48",
+      "claim": "Specificity exists in the way that the biomechanical properties of nucleosomes are affected differentially by acetylation at different sites within the globular domain of H3.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, specificity exists in the way that the biomechanical properties of nucleosomes are affected differentially by acetylation at different sites within the globular domain of H3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the distinct effects observed for different acetylation sites.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "7c86e153-0636-4d8d-b336-e8bfb5538da6",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C49",
+      "claim": "H3K64ac might serve to prevent the nucleosome from adopting a repressive conformation, thereby maintaining chromatin in a transcriptionally competent state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, H3K64ac may also function by preventing H3K64me3 from being laid down at key genomic regions. We have previously suggested that methylation of H3K64 is involved in the creation of repressive chromatin states (Daujat et al., 2009; Lange et al., 2013). Thus, H3K64ac might serve to prevent the nucleosome from adopting a repressive conformation, thereby maintaining chromatin in a transcriptionally competent state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the mutually exclusive distribution of H3K64ac and H3K64me3 and their opposing functions.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "74cf0416-3760-47f9-9c84-6ea5f1a92b19",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C50",
+      "claim": "Opposing chromatin states can be defined via the mutually exclusive presence of H3K64ac or H3K64me3.",
+      "claim_type": "EXPLICIT",
+      "source": "Our working model (Figure 7) proposes that opposing chromatin states can be defined via the mutually exclusive presence of H3K64ac or H3K64me3. This model is reinforced by the observed distinct and largely mutually exclusive genomic distribution patterns of these two H3K64 modifications.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the cumulative evidence from genomic distribution and functional studies.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "24185c88-9938-41e5-9e88-3d156da9b477",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C51",
+      "claim": "Lateral surface modifications play a key role in regulating chromatin function.",
+      "claim_type": "EXPLICIT",
+      "source": "The data provided here strengthen the concept that lateral surface modifications play a key role in regulating chromatin function, as initially proposed by others (Cosgrove et al., 2004; Mersfelder and Parthun, 2006) and us (Tropberger and Schneider, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the current study and supported by previous publications.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "7976e9ea-82cd-4d72-bcc1-6d409e29f6c1",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C52",
+      "claim": "The identification of novel pathways regulating chromatin function has the potential to highlight druggable targets for diseases in which chromatin states have been distorted.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of novel pathways regulating chromatin function has also the potential to highlight druggable targets for diseases in which chromatin states have been distorted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential therapeutic applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "b4a75520-5f4f-4879-803b-ceb7c066c474",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C53",
+      "claim": "H3K64ac regulates nucleosome stability and facilitates nucleosome eviction and gene expression in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that H3K64ac regulates nucleosome stability and facilitates nucleosome eviction and hence gene expression in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by multiple lines of evidence throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "f33c966e-4b56-4377-89e8-fbba6d426cec",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C54",
+      "claim": "H3K64ac defines transcriptionally active chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, we demonstrate that H3K64ac is enriched in vivo at the transcriptional start sites of active genes and it defines transcriptionally active chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-on-chip data showing enrichment at active TSSs and correlation with transcriptional activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "cf28d25a-6384-49ff-ba5c-8f8bbf4dbca6",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C55",
+      "claim": "H3K64ac opposes its repressive counterpart H3K64me3.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find that the p300 co-activator acetylates H3K64, and consistent with a transcriptional activation function, H3K64ac opposes its repressive counterpart H3K64me3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the mutually exclusive distribution patterns and opposing functional associations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "a164821d-a82e-41d5-9eeb-3b8d723a41fd",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "claim_id": "C56",
+      "claim": "Lateral surface modifications can define functionally opposing chromatin states.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings reveal an important role for a histone modification within the nucleosome core as a regulator of chromatin function and they demonstrate that lateral surface modifications can define functionally opposing chromatin states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a major conclusion of the study based on the opposing functions of H3K64ac and H3K64me3.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "27032a2d-f920-4b52-a4d1-16efdd90a9a3",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "H3K64ac is a novel histone modification identified by mass spectrometry, located on the lateral surface of the histone octamer near DNA, present ubiquitously across cell types, inducible by HDAC inhibitors, and enriched in euchromatin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 are well-supported by complementary experimental approaches: mass spectrometry identification (C1), structural modeling (C2), immunoblot detection across multiple cell lines (C3), HDAC inhibitor response (C4), and immunofluorescence localization (C5). The antibody characterization is thorough, including peptide competition and trypsin digestion controls. The convergence of multiple independent methods strengthens confidence in the identification and characterization of this modification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "22f31a85-e821-482a-b981-f07552285ed7",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "H3K64ac and H3K64me3 show opposing localization patterns, with H3K64me3 being a repressive heterochromatic mark and the two modifications defining functionally opposing chromatin states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C17 are supported by immunofluorescence data showing mutually exclusive localization patterns and prior publications establishing H3K64me3 as a repressive mark. However, the inference that these modifications define opposing chromatin states (C17) relies heavily on correlative localization data. Direct functional competition experiments or sequential ChIP would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "aa61f016-060e-4476-a83c-b857d01e1200",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "H3K64ac is enriched at transcriptional start sites of active genes, correlates with RNA Polymerase II occupancy and active histone marks, anti-correlates with repressive marks, is enriched at active enhancers, and defines transcriptionally active chromatin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 and C54 are well-supported by genome-wide ChIP-on-chip data with biological replicates (Pearson correlation 0.825), validated by ChIP-qPCR at individual loci. The correlation with RNA Pol II (Spearman coefficient 0.789) and mRNA levels is strong. The anti-correlation with repressive marks and enrichment at enhancers marked by H3K27ac, H3K4me1, and p300 provide convergent evidence. The conclusion that H3K64ac defines active chromatin (C54) is justified by the comprehensive genomic distribution analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "9678c28a-f069-4f44-b228-002838780d77",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "H3K64ac enrichment shifts from pluripotency genes to differentiation genes during ES cell differentiation, reflecting transcriptional activity changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 is supported by ChIP analysis comparing undifferentiated and differentiated ES cells at specific gene loci. The dynamic redistribution of H3K64ac during differentiation provides functional validation of its association with active transcription. However, genome-wide analysis during differentiation time courses would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "ab0e85d6-2513-48f5-ae8a-17990cb4b21a",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "H3K64ac is most highly enriched on the H3.3 histone variant compared to H3.1 and H3.2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 is supported by immunoprecipitation of Flag-HA-tagged H3 variants showing highest H3K64ac signal on H3.3, consistent with H3.3's association with transcriptionally active chromatin. The K64R mutant control demonstrates antibody specificity. Quantification shows ~1.4-fold enrichment on H3.3 relative to H3.1, which is modest but statistically significant (n=3 biological replicates).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "1bd4a178-24eb-4221-87e8-e58cc5e38413",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Transcriptionally active alleles of imprinting control regions are specifically marked by H3K64ac, while inactive alleles are enriched in H3K64me3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C16 is supported by allele-specific ChIP using polymorphic nucleotides to distinguish parental alleles at five ICRs. The SSCP-based approach provides clear separation of maternal and paternal alleles. This elegant experiment demonstrates functional opposition of H3K64ac and H3K64me3 at the same genomic loci, strengthening the model of opposing chromatin states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "1b70dc1f-986d-4ba7-803c-29a3d52484d5",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "p300 and CBP are H3K64 acetyltransferases, as demonstrated by siRNA knockdown reducing H3K64ac levels (especially at p300/CBP target regions), overexpression increasing H3K64ac, and in vitro acetylation of H3K64 by p300/CBP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 are well-supported by multiple complementary approaches: systematic siRNA screening of HAT families, genomic localization showing correlation between p300 and H3K64ac (Spearman coefficient 0.764), overexpression experiments, and in vitro HAT assays on both free H3 and chromatin templates. The K64A mutant control in vitro confirms specificity. However, the authors appropriately note that additional H3K64 acetyltransferases may exist, as knockdown does not completely eliminate H3K64ac.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "5a700282-8971-451c-9cdd-bbd8a416f1a8",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "H3K64 acetylation differentially affects chromatin remodeling enzymes, with Chd1 repositioning H3K64ac nucleosomes faster than unmodified nucleosomes, while RSC shows no differential effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 are supported by in vitro remodeling assays showing Chd1 repositions H3K64ac nucleosomes ~1.7-fold faster than unmodified (0.038 vs 0.023 min\u207b\u00b9), while RSC shows minimal difference (0.056 vs 0.083 min\u207b\u00b9). The differential effects suggest specificity in how remodelers recognize H3K64ac. However, the biological significance of these rate differences and whether they occur in vivo requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "dd074c4a-0ff3-4268-a082-baba8c43a439",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "H3K64ac decreases nucleosome stability, as shown by increased sensitivity to salt-induced disruption in FRET assays, reduced nucleosome assembly efficiency in competitive reconstitution, and distinction from H3K56ac and H3K9ac which show different effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 are strongly supported by multiple biophysical approaches: ensemble FRET showing ~75 mM decrease in C\u2080.\u2085 (622 vs 697 mM NaCl), single-molecule FRET showing ~62 mM decrease (488 vs 550 mM), and competitive assembly showing ~25% reduction in assembly efficiency. The H3K9ac control showing no effect demonstrates specificity for lateral surface modifications. The convergence of independent methods provides robust evidence for decreased nucleosome stability. Statistical significance is demonstrated (p<0.05 for FRET, p<0.01 for assembly).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "aa56f2e7-d819-4494-ae2c-4b5220174f0e",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "H3K64ac levels dramatically increase in elongating spermatids during nucleosome disassembly and histone replacement, suggesting a role in creating an open chromatin state, while H3K64me3 is enriched in regions undergoing late histone replacement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C31 and C33 are supported by immunofluorescence and immunohistochemistry on testis sections showing stage-specific enrichment patterns. However, claim C32 regarding H3K64ac's role in histone replacement is speculative, based on temporal correlation rather than functional demonstration. The proposed mechanism is plausible given the nucleosome destabilization data, but direct evidence (e.g., perturbation experiments, histone exchange assays in spermatids) is lacking. The correlation is suggestive but insufficient to establish causation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "a300dcfe-3004-44d1-b018-3dbe800583f1",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "H3K64ac promotes histone displacement from chromatin more than H3K64R in in vitro eviction assays, and this difference is not due to differential Nap1 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 are supported by in vitro histone eviction assays showing increased H3 in the evicted fraction from H3K64ac chromatin compared to H3K64R. The Nap1 pull-down control demonstrates equal binding to all H3 species, ruling out differential chaperone affinity as an explanation. However, the assay uses artificial chromatin templates and may not fully recapitulate in vivo conditions. The biological relevance would be strengthened by in vivo histone exchange measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "6c31ea9c-2002-4e1f-8f5f-fbf878cf83fe",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The acetylation mimic H3K64Q promotes transcription of early-response genes (c-fos, Egr1, c-myc) above levels with wildtype H3.3 or H3.3K64R, while control genes are unaffected, demonstrating H3K64ac's intrinsic ability to impact transcription in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 are supported by qPCR analysis in NIH3T3 cells expressing different H3.3 variants following TPA induction. The H3K64Q mimic shows ~2-fold higher expression of specific early-response genes compared to wildtype or K64R, while control genes (Gapdh, Hsp70) are unaffected. The specificity for certain genes and lack of effect on controls strengthens the conclusion. However, the authors' statement that 2-fold is 'biologically important' (C46) is subjective. The use of glutamine as an acetylation mimic is imperfect, and direct measurement of transcription from H3K64ac-containing nucleosomes would be more definitive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "aa47b2ea-727d-4422-b90e-ee8dc18aab67",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "H3K64 is positioned to interact with DNA through direct contacts and an extensive water-mediated hydrogen bond network, and acetylation would disrupt these interactions, potentially affecting nucleosome stability significantly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 are supported by structural analysis of the high-resolution nucleosome crystal structure (PDB 1KX5). The main chain atoms of H3K64 directly contact DNA phosphate backbone, the side chain is ~6.1 \u00c5 from DNA, and H3K64 participates in water-mediated hydrogen bonds. The predictions about acetylation disrupting these interactions (C40, C42) are reasonable inferences based on the chemical properties of acetylation. The citation of Davey et al.'s estimate that water-bridges are as important as direct contacts (C43) provides theoretical support. However, these are structural predictions rather than direct experimental measurements of the acetylated state.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "0e2d95ba-de47-4801-9b7b-9b1dd7dab3cd",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The enrichment of H3K64ac at active gene promoters and during spermiogenesis argues for a role in creating an open, permissive chromatin state, and 2-fold transcriptional changes from a single histone mutation are considered biologically important.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 is a reasonable inference from the genomic distribution data and functional assays, though it remains somewhat speculative without direct chromatin accessibility measurements. Claim C46 is a subjective interpretation of biological significance. While 2-fold changes can be meaningful, the statement lacks context about effect sizes for other histone modifications or comparison to physiological ranges. The evaluation is supported by the data but the interpretation of 'biological importance' is debatable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "13803a81-9d6a-44ee-aa05-b0b0d43b3d55",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Different acetylations on the octamer's lateral surface (H3K64ac vs H3K56ac) mediate distinct effects on nucleosomes, demonstrating specificity in how biomechanical properties are affected by acetylation at different sites within the globular domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are supported by comparison with published work on H3K56ac showing that H3K56ac does not significantly affect nucleosome stability under comparable conditions (Neumann et al., 2009), while H3K64ac clearly does. This demonstrates position-specific effects of lateral surface acetylation. The conclusion about specificity is justified, though the mechanistic basis for these differences could be explored further.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "23ab87be-eb9f-48da-9422-cf386dd77ff7",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "H3K64ac might prevent nucleosomes from adopting a repressive conformation by blocking H3K64me3 deposition, and opposing chromatin states can be defined via mutually exclusive presence of H3K64ac or H3K64me3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49-C50 present a working model based on the cumulative evidence but remain speculative. The mutually exclusive distribution patterns and opposing functional associations support the model, but direct evidence for H3K64ac preventing H3K64me3 deposition is lacking. The model is plausible and consistent with the data, but experiments showing that H3K64ac blocks H3K64 methyltransferases or that removal of H3K64ac leads to increased H3K64me3 would be needed to confirm this mechanism. The model is presented appropriately as a hypothesis rather than established fact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "3d64823b-d361-40c7-bc6b-28020cea3dfd",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Lateral surface modifications play a key role in regulating chromatin function, strengthening concepts initially proposed by others.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 is a broad conclusion supported by the comprehensive characterization of H3K64ac's effects on nucleosome stability, chromatin remodeling, and transcription. The data provide strong evidence for direct functional roles of lateral surface modifications, extending beyond the reader-based mechanisms typical of tail modifications. This represents a significant conceptual advance in understanding chromatin regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "4e8a3dc5-0847-42b4-84b8-256e3e425926",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Identification of novel chromatin regulatory pathways has potential to highlight druggable targets for diseases with distorted chromatin states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C52 is highly speculative and represents potential future applications rather than demonstrated results. While p300/CBP are known drug targets and chromatin dysregulation occurs in disease, no evidence is presented linking H3K64ac specifically to disease states or demonstrating therapeutic potential. This is appropriate for a discussion section but should not be considered a supported result of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    },
+    {
+      "id": "35d16593-ccca-4f64-8fb0-4b1fcad94b87",
+      "content_id": "62cf7a62-0d60-4392-b24d-14804a5036e9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "H3K64ac regulates nucleosome stability, facilitates nucleosome eviction and gene expression in vivo, opposes H3K64me3, and demonstrates that lateral surface modifications can define functionally opposing chromatin states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C55, and C56 represent the major conclusions of the study, synthesizing results from multiple experimental approaches. These conclusions are well-supported by the convergent evidence from: (1) biophysical measurements of nucleosome stability, (2) in vitro eviction assays, (3) genome-wide localization at active genes, (4) transcriptional effects of H3K64Q, (5) mutually exclusive distribution with H3K64me3, and (6) allele-specific enrichment at ICRs. The integration of structural, biochemical, genomic, and functional data provides strong support for these major conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:20:05.454505Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "32036e97-4d47-4c23-a527-2b9d02d4c484",
+      "result_id": "27032a2d-f920-4b52-a4d1-16efdd90a9a3"
+    },
+    {
+      "claim_id": "06857acd-7749-4dd1-b059-e786a48251da",
+      "result_id": "27032a2d-f920-4b52-a4d1-16efdd90a9a3"
+    },
+    {
+      "claim_id": "7ecd6df2-bc49-4547-a0d5-85bfad53d97f",
+      "result_id": "27032a2d-f920-4b52-a4d1-16efdd90a9a3"
+    },
+    {
+      "claim_id": "bbbc5546-0d6b-44ba-805d-44914635b542",
+      "result_id": "27032a2d-f920-4b52-a4d1-16efdd90a9a3"
+    },
+    {
+      "claim_id": "59cc85db-2f81-4fc8-a8c7-376322b28816",
+      "result_id": "27032a2d-f920-4b52-a4d1-16efdd90a9a3"
+    },
+    {
+      "claim_id": "572c91f0-6f9b-4e9e-85f3-a57acb6253ef",
+      "result_id": "22f31a85-e821-482a-b981-f07552285ed7"
+    },
+    {
+      "claim_id": "164111fe-5083-434f-b4b5-6a6a56bc6cfc",
+      "result_id": "22f31a85-e821-482a-b981-f07552285ed7"
+    },
+    {
+      "claim_id": "c5d4e629-d376-461d-9d4e-3f36d2067222",
+      "result_id": "22f31a85-e821-482a-b981-f07552285ed7"
+    },
+    {
+      "claim_id": "078ca600-2d1b-451b-8b69-0230eacfa29c",
+      "result_id": "aa61f016-060e-4476-a83c-b857d01e1200"
+    },
+    {
+      "claim_id": "66dd581e-de1f-410a-b391-07e21ce46c5e",
+      "result_id": "aa61f016-060e-4476-a83c-b857d01e1200"
+    },
+    {
+      "claim_id": "e8ea7577-2d01-4cc2-9e0c-2097833bc930",
+      "result_id": "aa61f016-060e-4476-a83c-b857d01e1200"
+    },
+    {
+      "claim_id": "ce61eee9-edbe-4366-b647-14646afa8855",
+      "result_id": "aa61f016-060e-4476-a83c-b857d01e1200"
+    },
+    {
+      "claim_id": "e8e52a48-fc07-40bb-8d58-8865fe12c07d",
+      "result_id": "aa61f016-060e-4476-a83c-b857d01e1200"
+    },
+    {
+      "claim_id": "f24e422e-d42b-425a-987d-65aaaa19878a",
+      "result_id": "aa61f016-060e-4476-a83c-b857d01e1200"
+    },
+    {
+      "claim_id": "f33c966e-4b56-4377-89e8-fbba6d426cec",
+      "result_id": "aa61f016-060e-4476-a83c-b857d01e1200"
+    },
+    {
+      "claim_id": "f66d76dd-5421-416a-a219-393f995945d3",
+      "result_id": "9678c28a-f069-4f44-b228-002838780d77"
+    },
+    {
+      "claim_id": "6ca5c356-c236-4fa4-a3dc-86ee8ee13b17",
+      "result_id": "ab0e85d6-2513-48f5-ae8a-17990cb4b21a"
+    },
+    {
+      "claim_id": "4419d6a2-d665-4cac-91f1-c1e226ad6818",
+      "result_id": "1bd4a178-24eb-4221-87e8-e58cc5e38413"
+    },
+    {
+      "claim_id": "5897c655-d85e-4c70-9355-829f69cb2e26",
+      "result_id": "1b70dc1f-986d-4ba7-803c-29a3d52484d5"
+    },
+    {
+      "claim_id": "7d8a4ae1-3507-4924-bbcd-6f2fe3163d32",
+      "result_id": "1b70dc1f-986d-4ba7-803c-29a3d52484d5"
+    },
+    {
+      "claim_id": "8840cecb-9ad1-4380-b9fb-f27495ceab93",
+      "result_id": "1b70dc1f-986d-4ba7-803c-29a3d52484d5"
+    },
+    {
+      "claim_id": "fe49d65a-4459-4ef0-9235-a90e9de92676",
+      "result_id": "1b70dc1f-986d-4ba7-803c-29a3d52484d5"
+    },
+    {
+      "claim_id": "9eee52e5-20bf-4194-8336-c285faff059e",
+      "result_id": "1b70dc1f-986d-4ba7-803c-29a3d52484d5"
+    },
+    {
+      "claim_id": "ba0ebc32-b821-493e-8e0c-3fe61e76269c",
+      "result_id": "5a700282-8971-451c-9cdd-bbd8a416f1a8"
+    },
+    {
+      "claim_id": "18912726-dd0b-4d0b-8728-b32d9eaf9b14",
+      "result_id": "5a700282-8971-451c-9cdd-bbd8a416f1a8"
+    },
+    {
+      "claim_id": "003b0126-cfb5-4d49-ae04-deab838ed980",
+      "result_id": "dd074c4a-0ff3-4268-a082-baba8c43a439"
+    },
+    {
+      "claim_id": "235250f2-ff56-475e-a1ac-c2d2cef86b5b",
+      "result_id": "dd074c4a-0ff3-4268-a082-baba8c43a439"
+    },
+    {
+      "claim_id": "c7535c6c-7a9e-4be4-97a2-577d31d59b65",
+      "result_id": "dd074c4a-0ff3-4268-a082-baba8c43a439"
+    },
+    {
+      "claim_id": "a7251f5c-daaf-4f50-bb82-1406c28417df",
+      "result_id": "dd074c4a-0ff3-4268-a082-baba8c43a439"
+    },
+    {
+      "claim_id": "429682cc-8d6e-495a-9117-96c4da9e90f4",
+      "result_id": "dd074c4a-0ff3-4268-a082-baba8c43a439"
+    },
+    {
+      "claim_id": "2ce2766f-f125-4298-831d-1436d23112a8",
+      "result_id": "dd074c4a-0ff3-4268-a082-baba8c43a439"
+    },
+    {
+      "claim_id": "d30b348d-b65a-4a31-8a40-2e26bc83d3cd",
+      "result_id": "aa56f2e7-d819-4494-ae2c-4b5220174f0e"
+    },
+    {
+      "claim_id": "6807d187-5634-4ce3-b307-1f9f5ee276e8",
+      "result_id": "aa56f2e7-d819-4494-ae2c-4b5220174f0e"
+    },
+    {
+      "claim_id": "304a062c-a44f-4cd4-ab99-fcd90da25d45",
+      "result_id": "aa56f2e7-d819-4494-ae2c-4b5220174f0e"
+    },
+    {
+      "claim_id": "1222fefb-446e-44b2-8417-dc678517b12a",
+      "result_id": "a300dcfe-3004-44d1-b018-3dbe800583f1"
+    },
+    {
+      "claim_id": "35c5045e-72c7-48da-80b9-0273734f9ec4",
+      "result_id": "a300dcfe-3004-44d1-b018-3dbe800583f1"
+    },
+    {
+      "claim_id": "ec842f23-d121-4fc7-9f1d-4ddab5839c43",
+      "result_id": "6c31ea9c-2002-4e1f-8f5f-fbf878cf83fe"
+    },
+    {
+      "claim_id": "b1d8cc86-a625-45fc-bebb-36be799796f5",
+      "result_id": "6c31ea9c-2002-4e1f-8f5f-fbf878cf83fe"
+    },
+    {
+      "claim_id": "04f4208a-fd39-440d-a90a-59d3a45ee2a1",
+      "result_id": "6c31ea9c-2002-4e1f-8f5f-fbf878cf83fe"
+    },
+    {
+      "claim_id": "56d0d3c1-2919-4f7b-9a83-806acd4ec9ca",
+      "result_id": "aa47b2ea-727d-4422-b90e-ee8dc18aab67"
+    },
+    {
+      "claim_id": "c674fa55-e675-4273-923b-e5ae3dc02d15",
+      "result_id": "aa47b2ea-727d-4422-b90e-ee8dc18aab67"
+    },
+    {
+      "claim_id": "ac71dc62-bd50-4f55-b2c0-0dcfe6f58347",
+      "result_id": "aa47b2ea-727d-4422-b90e-ee8dc18aab67"
+    },
+    {
+      "claim_id": "10323889-dc72-4c12-b4e8-49874b8aa15b",
+      "result_id": "aa47b2ea-727d-4422-b90e-ee8dc18aab67"
+    },
+    {
+      "claim_id": "93bd5817-f505-41b4-9935-b05543b20af9",
+      "result_id": "aa47b2ea-727d-4422-b90e-ee8dc18aab67"
+    },
+    {
+      "claim_id": "9a724614-16e1-4bbc-b152-4be66933dfbd",
+      "result_id": "aa47b2ea-727d-4422-b90e-ee8dc18aab67"
+    },
+    {
+      "claim_id": "045aec7b-c887-458e-ad7c-277093ffcbe0",
+      "result_id": "0e2d95ba-de47-4801-9b7b-9b1dd7dab3cd"
+    },
+    {
+      "claim_id": "eb02a659-991e-4b89-9ebc-548536c86cbb",
+      "result_id": "0e2d95ba-de47-4801-9b7b-9b1dd7dab3cd"
+    },
+    {
+      "claim_id": "2bad9c2e-a84c-44c0-92e8-c3e24300ba95",
+      "result_id": "13803a81-9d6a-44ee-aa05-b0b0d43b3d55"
+    },
+    {
+      "claim_id": "7d3d2cd2-8e8c-4aaa-9337-d83ad21b3b15",
+      "result_id": "13803a81-9d6a-44ee-aa05-b0b0d43b3d55"
+    },
+    {
+      "claim_id": "7c86e153-0636-4d8d-b336-e8bfb5538da6",
+      "result_id": "23ab87be-eb9f-48da-9422-cf386dd77ff7"
+    },
+    {
+      "claim_id": "74cf0416-3760-47f9-9c84-6ea5f1a92b19",
+      "result_id": "23ab87be-eb9f-48da-9422-cf386dd77ff7"
+    },
+    {
+      "claim_id": "24185c88-9938-41e5-9e88-3d156da9b477",
+      "result_id": "3d64823b-d361-40c7-bc6b-28020cea3dfd"
+    },
+    {
+      "claim_id": "7976e9ea-82cd-4d72-bcc1-6d409e29f6c1",
+      "result_id": "4e8a3dc5-0847-42b4-84b8-256e3e425926"
+    },
+    {
+      "claim_id": "b4a75520-5f4f-4879-803b-ceb7c066c474",
+      "result_id": "35d16593-ccca-4f64-8fb0-4b1fcad94b87"
+    },
+    {
+      "claim_id": "cf28d25a-6384-49ff-ba5c-8f8bbf4dbca6",
+      "result_id": "35d16593-ccca-4f64-8fb0-4b1fcad94b87"
+    },
+    {
+      "claim_id": "a164821d-a82e-41d5-9eeb-3b8d723a41fd",
+      "result_id": "35d16593-ccca-4f64-8fb0-4b1fcad94b87"
+    }
+  ],
+  "comparisons": []
+}

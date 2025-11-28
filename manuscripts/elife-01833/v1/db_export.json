@@ -1,0 +1,1585 @@
+{
+  "submission": {
+    "id": "1ef5a026-2334-4aa2-9bf1-7b2daa62a56c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:10:36.193038Z",
+    "updated_at": "2025-11-28T20:10:36.193038Z"
+  },
+  "content": [
+    {
+      "id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "submission_id": "1ef5a026-2334-4aa2-9bf1-7b2daa62a56c",
+      "content_type": "manuscript",
+      "content_text": "# Auditory synapses to song premotor neurons are gated off during vocalization in zebra finches\n\n## Authors\n\n- Kosuke Hamaguchi<sup>1</sup>\n- Katherine A Tschida<sup>1</sup>\n- Inho Yoon<sup>2</sup>\n- Bruce R Donald<sup>2</sup>\n- Richard Mooney<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Neurobiology Duke University Medical Center Durham United States\n2. Department of Electrical and Computer Engineering Duke University Durham United States\n3. Department of Computer Science Duke University Durham United States\n4. Department of Biochemistry Duke University Medical Center Durham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSongbirds use auditory feedback to learn and maintain their songs, but how feedback interacts with vocal motor circuitry remains unclear. A potential site for this interaction is the song premotor nucleus HVC, which receives auditory input and contains neurons (HVCX cells) that innervate an anterior forebrain pathway (AFP) important to feedback-dependent vocal plasticity. Although the singing-related output of HVCX cells is unaltered by distorted auditory feedback (DAF), deafening gradually weakens synapses on HVCX cells, raising the possibility that they integrate feedback only at subthreshold levels during singing. Using intracellular recordings in singing zebra finches, we found that DAF failed to perturb singing-related synaptic activity of HVCX cells, although many of these cells responded to auditory stimuli in non-singing states. Moreover, in vivo multiphoton imaging revealed that deafening-induced changes to HVCX synapses require intact AFP output. These findings support a model in which the AFP accesses feedback independent of HVC.\n\n## Introduction\n\nMany elaborate behaviors, ranging from playing a guitar to engaging in a conversation, depend on the brain\u2019s ability to integrate performance-related auditory feedback with the output of motor circuits controlling behavior. The synaptic mechanisms underlying the integration of sensory and motor-related signals remain enigmatic. Songbirds use auditory feedback to learn and maintain their vocalizations (Konishi, 1965; Price, 1979) and possess well-delineated neural circuits for singing (Nottebohm et al., 1982), thus providing an attractive organism in which to identify synaptic mechanisms for auditory\u2013vocal integration. Nevertheless, despite important progress in identifying synaptic mechanisms of auditory-guided song plasticity (Mooney, 1992; Olveczky et al., 2005; Andalman and Fee, 2009; Roberts et al., 2010; Warren et al., 2011), how auditory feedback is integrated in the brain to affect the neural circuits for singing remains poorly understood.\n\nOne site where feedback could interact with song motor commands is the sensorimotor nucleus HVC, which is necessary for singing (Nottebohm et al., 1976), exhibits neural activity precisely time-locked to song (Hahnloser et al., 2002; Kozhevnikov and Fee, 2007; Prather et al., 2008), and receives input from auditory regions that contain auditory feedback-sensitive neurons (Keller and Hahnloser, 2009). Within HVC, a distinct type of projection neuron (HVCX) provides input to an anterior forebrain pathway (AFP) that is necessary for song learning and that is anatomically similar to cortico-basal ganglia pathways in mammals (Farries and Perkel, 2002; Doupe et al., 2005). Various studies have shown that the output nucleus of the AFP (the lateral magnocellular nucleus of the anterior nidopallium, or LMAN) is the source of behavioral variations that can adaptively bias song in response to feedback perturbations (Andalman and Fee, 2009; Warren et al., 2011; Charlesworth et al., 2012). Specifically, LMAN lesions prevent deafening-induced song degradation (Brainard and Doupe, 2000; Andalman and Fee, 2009; Warren et al., 2011), and inactivating LMAN can reverse shifts in syllable pitch induced by distorted auditory feedback (DAF) (Brainard and Doupe, 2000; Andalman and Fee, 2009; Warren et al., 2011). These findings suggest that the AFP has access to feedback-related information about song performance. One potential source of this information is the HVCX cell population, because auditory responses that can be detected in the AFP of anesthetized birds disappear when HVC is pharmacologically inactivated (Roy and Mooney, 2009). Moreover, individual HVCX cells can fire in remarkably similar patterns during singing and in response to song playback (Prather et al., 2008; Fujimoto et al., 2011). However, the singing-related action potential activity of HVCX cells does not change when auditory feedback is masked by noise bursts (Kozhevnikov and Fee, 2007; Prather et al., 2008). These and other observations (Hessler and Doupe, 1999) are consistent with the idea that in singing birds, HVCX cells provide the AFP with a motor-related efference copy rather than an auditory feedback signal.\n\nAlthough extracellular recordings indicate that HVCX cell output in singing birds is insensitive to feedback perturbations over tens of minutes, a recent imaging study found that deafening shrinks and destabilizes dendritic spines on HVCX neurons within \u223c12\u201348 hr, and these changes precede and predict the severity of song degradation (Tschida and Mooney, 2012). Therefore, a remaining possibility is that HVCX cells receive subthreshold feedback signals during singing that modify their dendritic spines and more slowly alter HVCX action potential output, and thus AFP activity, over a period of hours to days. One prediction of this model is that synaptic inputs onto HVCX cells will be acutely sensitive to feedback perturbation. In this study, we tested this idea using sharp intracellular current clamp recordings in freely singing zebra finches exposed to DAF. A second prediction of this model is that the deafening-induced changes in HVCX spines will be caused by feedforward changes to HVC\u2019s auditory afferents rather than by AFP-dependent mechanisms that drive deafening-induced vocal plasticity. To test this prediction, we imaged HVCX dendritic spines in zebra finches that received LMAN lesions prior to deafening.\n\n## Results\n\n### Singing-related subthreshold activity of HVCX cells is insensitive to DAF\n\nTo determine whether synaptic inputs onto HVCX cells convey auditory feedback signals during singing, we made intracellular sharp electrode recordings from HVC neurons in unrestrained, young adult (\u223c95 days post hatch [dph]) male zebra finches using a modified version of recording techniques developed recently (Lee et al., 2006; Long et al., 2010) (Figure 1\u2014figure supplement 1). We recorded from a total of 72 HVCX neurons in 11 birds as they engaged in spontaneous bouts of singing produced in social isolation (i.e., undirected song) and/or listened to playback of the bird\u2019s own song (BOS). HVCX cells were identified either by antidromic stimulation methods (Figure 1A,B), DC current-evoked firing patterns (Mooney, 2000), or characteristic singing-related hyperpolarization (Long et al., 2010). As previously reported (Long et al., 2010), all HVCX cells we recorded without current injection showed spontaneous, regular action potential activity when the bird was not vocalizing (8.2 \u00b1 5.8 Hz, mean \u00b1SD), entered a hyperpolarized state within several hundred milliseconds before song onset (baseline \u221258.5 \u00b1 7.1 mV, during singing \u221262.3 \u00b1 7.3 mV), and all except two exhibited one or more action potential bursts during the utterance of the stereotyped sequence of syllables constituting the song motif (Figure 1D, Video 1). Each cell\u2019s pattern of subthreshold membrane potential activity (Vm) and action potential bursts were highly stereotyped from one motif to the next and from bout to bout (Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01833/elife-01833-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic illustrates the configuration of the in vivo intracellular recording methods used to measure subthreshold activity of HVCX neurons. Abbreviations: AFP, anterior forebrain pathway (light blue); SMP, song motor pathway (red); RA, robust nucleus of arcopallium; DLM, dorsolateral division of the medial thalamus; LMAN, lateral magno-cellular nucleus of the anterior nidopallium; VRN, brain stem vocal respiratory network, which includes the tracheosyringeal portion of the hypoglossal motor nucleus (nXIIts) and the respiratory premotor neurons located in the rostral ventrolateral medulla (RVL); R, rostral; D, dorsal. (B) Antidromic identification of HVCX neurons was achieved by electrically stimulating Area X combined with spike collision tests. (C) The experimental design used to generate distorted auditory feedback (DAF). Shortly (\u223c8 to 10 ms) after detecting that the bird sang the target syllable, a recorded version of the target syllable or a noise burst was played to the bird through a speaker (hit); DAF was suppressed on randomly chosen trials (catch). (D) Examples of HVCX intracellular membrane potential recordings during hit and catch conditions. Top: sonogram. Middle: simultaneously recorded HVCX neuron membrane potential. Bottom: expanded view of membrane potential traces aligned to the onset of the entire motif (iabcd), which was sung twice in this bout. The timing of DAF is shown in boxed and shaded regions.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01833/elife-01833-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic diagram of sharp intracellular microdrive, based on a Microdrive design developed by Michale Fee. (B) A male zebra finch with a microdrive implanted over HVC.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/01833/elife-01833-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (1) First, a multi-taper estimate of spectrum density (Mitra and Pesaran, 1999; Thomson, 1982) of the most recent sound segment (5 ms duration) is calculated. We used the first two Slepian sequences (calculated by dpss function in MATLAB) with NW parameter = 4. (2) Features including sound amplitude, mean frequency, Wiener entropy, frequency modulation (FM), and pitch are calculated. A sound event is detected as a continuous sound chunk during which sound amplitude is higher than a threshold (set to \u223c10 times from the baseline noise level). (3) At the end of each sound event, mean and variance of spectral features during the sound event are calculated to identify the pre-target syllable, using a support vector machine (SVM) algorithm. Only two dimensions from the test samples are shown. (4) Once the pre-target syllable is detected, the program starts to detect the onset of target syllables defined as the sound segments that satisfy pre-set conditions for at least 3 ms. If all the conditions are not satisfied for a fixed duration (\u223c100 ms), the program stops detecting the target syllable and starts to look for the pre-target syllable. (5) When the onset of the target syllable is detected, DAF is either executed immediately or suppressed with some probability (usually set to p=0.5).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/01833/elife-01833-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** When spectral features of a syllable meet certain criteria, white noise is played to the bird. This type of contingent DAF protocol is known to induce adaptive changes in the spectral features of song (Andalman and Fee, 2009; Warren et al., 2011). The criteria used here to trigger DAF were (1) sound amplitude \u223c1\u20135 dB above baseline and (2) a mean frequency above or below a certain threshold (orange regions in [C and D]). This frequency threshold was iteratively adjusted to induce vocal changes in the birds. (A and B) Examples of target syllables (syllable b) that did not receive DAF (A) and that received DAF (B; denoted as b\u2019). (C) Distribution of target syllable frequency as a function of number of syllable renditions (black dots, 10 ms window measured from target onset; red line is running average of syllable frequency). (D) Mean \u00b1 SD of the target syllable frequency on each day. The mean frequency of the target syllable shifted significantly after several days of contingent DAF in both upward (day1\u20134) and downward (day 5\u20139) directions (t-test, day 1 vs day 4, day 4 vs day 7, day 7 vs day 9, p<10\u221233). Here, the mean frequency threshold was set to <5000 Hz (days 1\u20134, escape in upward shift), >5800 Hz (days 5\u20137, escape in downward shift), and >5400 Hz (days 8 and 9, escape in downward shift).\n\n![Video 1.](https://cdn.elifesciences.org/articles/01833/elife-01833-media1.mp4.jpg)\n\n**Video 1.:** Left; microphone (blue), membrane potential (green), and speaker output (red) updated at 1 Hz. Right; simultaneously monitored image recorded through a webcam in the recording chamber. In this movie, sound is recorded through the webcam. The whole movie is played in normal speed (x1). Injection current was changed from negative (\u22120.67 nA), to zero current (0 nA).\n\nAlthough previous studies have shown that singing-related action potentials of HVCX neurons are insensitive to DAF (Kozhevnikov and Fee, 2007; Prather et al., 2008), we tested whether singing-related synaptic inputs to HVCX cells encode auditory information by perturbing auditory feedback during singing. To distort the bird\u2019s experience of singing-related auditory feedback, we used a computer-controlled real-time system to detect a specific syllable in the bird\u2019s song motif and trigger sound playback during the production of the ensuing \u2018target\u2019 syllable (Figure 1C; \u2018Materials and methods\u2019 and Figure 1\u2014figure supplement 2). Playback sounds included either a 100-ms noise burst or a recorded version of one of the bird\u2019s own syllables; using either of these stimuli to distort singing-related auditory feedback has been shown to induce gradual changes to adult song, indicating the existence of neural circuitry that detects these acute feedback perturbations and induces vocal plasticity (Leonardo and Konishi, 1999; Tumer and Brainard, 2007; Andalman and Fee, 2009). To establish the efficacy of this DAF method, we set the sound amplitude slightly above the level that causes song truncation in some initial trials (\u223c65 dB at the center of the cage). To ensure that any changes in subthreshold activity we might detect were driven by feedback perturbations rather than by acute changes in motor-related activity, we excluded from analysis any trials in which DAF triggered truncation or changes in song tempo (see below for a description of subthreshold activity in those DAF trials that evoked acute motor effects; also see Sakata and Brainard, 2008). In separate behavioral experiments, we also confirmed that applying our perturbation protocol in a pitch-contingent manner over a period of days as previously described (Tumer and Brainard, 2007) was sufficient to shift the pitch of target syllables (Figure 1\u2014figure supplement 3; the observed hit rate was 30\u201370%).\n\nTo measure any rapid effects of DAF on the singing-related synaptic activity of HVCX cells, we compared membrane potential records from randomly interleaved trials with (\u2018hit\u2019) and without (\u2018catch\u2019) DAF (Figures 1D and 2A; target hit rate = 50%; observed rate was 30\u201370%). In a subset of cells, we used current injection to strongly hyperpolarize the membrane potential to maximize our ability to detect feedback-dependent changes in inhibitory inputs. To quantify the amplitude and timing of singing-related synaptic activity, we computed the average deviation of the baseline subtracted membrane potential between hit and catch trials (\u0394Vm; see \u2018Materials and methods\u2019) and estimated the onset times of depolarizing postsynaptic potentials (dPSPs) 20\u2013200 ms after DAF onset, which brackets the auditory-evoked synaptic latencies of HVC neurons (Lei and Mooney, 2010) and the offset of the DAF stimulus (Figure 2A\u2013D). As a population, HVCX cells exhibited no systematic changes in \u0394Vm or dPSP onset times in the presence of DAF (Figure 2B\u2013D; n = 34 cells). When treated on a cell-by-cell basis, none showed changes in dPSP onset times, and only two cells showed slight (<1 mV) but significant changes in \u0394Vm (0.01 \u2264 p<0.05; see Figure 2A, right, for one of these positive cases), an outcome that could be accounted for by a false positive rate for this sample size (38 comparisons; 4 cells were sampled at two different \u2018resting\u2019 potentials). Taken together, these results indicate that fast synaptic inputs onto HVCX neurons are insensitive to auditory feedback perturbation during singing.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01833/elife-01833-fig2-v1.jpg)\n\n**Figure 2.:** (A) Each row represents (from top to bottom) the speaker output (Speaker), microphone input (MIC), trial-averaged membrane potential activity in hit (red) and catch (black) trials relative to the baseline (defined as \u2212200 to 0 ms before DAF onset), and the difference in membrane potential between hit and catch conditions (\u0394Vm). Two examples of HVCX singing-related subthreshold activity are shown. Two time ranges are set to bracket DAF onset and offset (fast: 20\u201360 ms, red-shaded region covers the fastest synaptic latency of HVC in response to auditory stimuli [Lei and Mooney, 2010]; slow: 60\u2013200 ms, purple shaded region covers the remainder of the DAF period). Red horizontal lines indicate the timing of the DAF stimulus presented during each electrophysiological recording. Data are aligned to the onset of the target syllable, and time zero is set to the mean DAF onset. (B) Population analysis of time-averaged \u0394Vm in fast and slow response windows showed no significant changes in response to DAF (n = 38 comparisons made from n = 34 cells; four cells were analyzed at both resting and at hyperpolarized membrane potentials. Individual cell-based analysis revealed that all except two cells showed non-significant changes; triangles [p<0.05], crosses [p\u22650.05, paired t-test]). (C) Examples of dPSP onset timings aligned to target syllable onset obtained from a single cell. (D) Onset timings of dPSPs measured in catch vs hit trials were indistinguishable (n = 45 dPSPs [1\u20134 dPSP onsets per cell] from 18 cells; see \u2018Materials and methods\u2019 for more information about dPSP onset detection and clustering methods used for peak detection; mean p=0.52, min p=0.06, t-test).\n\n### DAF-insensitive HVCX cells can respond to auditory stimuli in non-singing states\n\nAlthough previous recordings made in anesthetized zebra finches indicate that most HVCX cells can respond to auditory stimulation, and the sample of HVCX cells that we tested with DAF is reasonably large (n = 34), it remains possible that we sampled entirely from a subset of cells that do not receive auditory input. However, we found that DAF-insensitive HVCX cells could respond to auditory presentation of the bird\u2019s own song during periods when the bird was not singing, including during the daytime or minutes to hours into the night (Figure 3A\u2013B; 7/8 DAF-insensitive cells showed significant subthreshold responses to BOS playback during the day, and 4/4 DAF-insensitive cells that we tracked across the day\u2013night boundary showed significant sub- and suprathreshold responses during darkness). Moreover, the majority of HVCX cells we recorded from, including those in which we did not collect singing-related activity, displayed BOS-evoked auditory activity during the day or night (Figure 3\u2014figure supplement 1, subthreshold responses: n = 15/27 cells in day; 10/11 cells in night; suprathreshold responses: 5/12 cells in day; 7/8 cells in night). Indeed, the increased proportion of auditory-responsive HVCX cells we detected during the night is consistent with prior extracellular studies that show auditory responses in the zebra finch HVC are strongly state-dependent (Cardin and Schmidt, 2003; Rauske et al., 2003; Nick and Konishi, 2005). Therefore, we presume that many of the DAF-insensitive cells that we recorded receive auditory input but that these inputs are not activated during singing.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01833/elife-01833-fig3-v1.jpg)\n\n**Figure 3.:** (A) Examples of trial-averaged singing-related subthreshold activity of DAF-insensitive cells in hit and catch conditions, following the same scheme shown in Figure 2A. (B) Examples of averaged subthreshold responses to BOS playback in the cells shown in (A) in day (light on) or night (light off) conditions. The significance of the BOS-evoked auditory response measured in non-singing states was determined either by the difference in the mean (Mann\u2013Whitney U-test) or standard deviations (Ansari\u2013Bradley test, a non-parametric test of variance) of the membrane potential fluctuations during the stimulus period and a pre-stimulus baseline period.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01833/elife-01833-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Plots of subthreshold (Vm, top row) and suprathreshold (bottom row) responses to BOS playback measured by the mean and standard deviations (SDs). N = 30 HVCX cells in total. Significance level of auditory responses are tested using either the Mann\u2013Whitney U-test (p<0.05 using ranksum function in MATLAB) or the Ansari\u2013Bradley test (non-parametric test of variance, p<0.05, applied only when there is no significant difference in mean. Using ansaribradley function in MATLAB.) Circles, significant cells; Crosses, non-significant cells. (B) Summary of auditory responsive cells in day and night time. Subthreshold responses: 56% in day (15/27), 91% in night (10/11). Suprathreshold responses: 42% (5/12) in day, 88% (7/8) in night. (C and D) Bar plots showing the increased strength of subthreshold (C) and suprathreshold (D) responses to BOS playback during day and night-time recordings.\n\nPrior studies in other songbirds indicate that a subset of HVCX cells display a strong correspondence in their auditory and motor-related activity (Prather et al., 2008; Fujimoto et al., 2011), and this sensorimotor \u2018mirroring\u2019 is speculated to arise from the integration of feedback- and motor-related signals by these cells (Hanuschkin et al., 2013). Although prior studies have not described auditory\u2013vocal mirroring in HVC of zebra finches, longer intracellular recordings (>3 hr) that we made in two DAF-insensitive HVCX cells revealed clear evidence of auditory\u2013vocal mirroring (Figure 4A,B). Specifically, at later times during the night, we detected BOS-evoked sub- and supra-threshold activity that closely resembled the singing-related activity recorded earlier during the daytime. Moreover, in a larger subset of HVCX cells in which we recorded singing-related activity with or without DAF during the day and tracked across the day\u2013night boundary, we found that the correlation in membrane potential activity recorded during singing and in response to BOS playback increased at later times in the night (Figure 4C). These findings show that auditory\u2013vocal mirror neurons in the zebra finch HVC are insensitive to auditory feedback perturbation during singing and also suggest that sensorimotor mirroring may be a latent feature of a large cohort of HVCX cells in this species.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01833/elife-01833-fig4-v1.jpg)\n\n**Figure 4.:** (A) Examples of singing and auditory-related membrane potential activity of two HVCX cells aligned to each bird\u2019s motif. Initially weak but significant auditory responses during the day (black) become robust during the night (blue) and precisely mirror the cell\u2019s singing-related activity (red). The cell at the top is the same cell shown in Figure 3 (A) right, which lacked DAF sensitivity. (B) Emergence of robust BOS-evoked subthreshold activity as the night progresses. Top: BOS responses near the day\u2013night boundary (same cell shown in Figure 4A, top). Baseline-subtracted membrane potential responses aligned to the BOS playback (top panel) and shown in the order of the recording time. Bottom: normalized voltage trace of the cell\u2019s BOS evoked activity at day (black), night (blue) and singing-related activity (red). (C) The same cell\u2019s action potential response to BOS playback, plotted in the same scheme used in (B). 1\u20132 hr after nightfall, strong BOS-evoked action potential activity was detected that closely mirrored the singing-related activity recorded from this same cell 4\u20135 hr earlier, during the daytime. (D) Similarity of a cell\u2019s subthreshold activity during singing and hearing the same motif in the day or night measured by the correlation coefficient (C.C.) of averaged membrane potential records reveals enhanced similarity of singing-related and BOS-evoked activity later in the night (\u226530 min after light off). Data are only from auditory-responsive cells in which we also collected singing data (singing vs hearing data during the day: n = 7, C.C. = 0.076 \u00b1 0.041 (SEM); Early night, < 30 min after light off: n = 7, C.C. = 0.077 \u00b1 0.061; Late night, \u2265 30 min after light off: n = 4, C.C. = 0.302 \u00b1 0.105. Mann\u2013Whitney U-test, p=0.04 compared to day).\n\n### Intracellular methods can detect DAF-related synaptic activity in cells ventral to HVC\n\nA remaining issue is whether the intracellular recording methods we used can detect small subthreshold membrane potential fluctuations in cells that are likely to receive input from DAF-sensing cells. In a small subset of experiments, we made intracellular recordings (n = 14 neurons in 5 birds) in the region immediately ventral to HVC (i.e., HVC shelf, Figure 5\u2014figure supplement 1A), which is known to receive input from auditory regions (Fortune and Margoliash, 1995; Vates et al., 1996) that contain DAF-sensitive neurons (Keller and Hahnloser, 2009). During singing, we found that most (5/9) HVC shelf cells showed significantly greater subthreshold depolarizing responses in the presence of DAF, consistent with the notion that they receive synaptic input from neurons that exhibit DAF-sensitive action potential output (Figure 5A,C, D; one of these cells also showed a significant suprathreshold response to DAF, Figure 5B). These recordings also revealed that synaptic activity in HVC shelf cells can be modulated during singing, although the pattern of this activity was less stereotyped from one motif to the next than observed in HVCX cells (Figure 5\u2014figure supplement 1B. HVC shelf: n = 14 cells, C.C. = 0.12 \u00b1 0.03 (SEM). HVCX cells: n = 53 cells, C.C. = 0.70 \u00b1 0.02, without time warping). These data confirm that the intracellular recording technique used here can detect subthreshold membrane potential responses to DAF in the singing zebra finch, further strengthening the idea that auditory-related synaptic inputs to HVCX cells are gated in an \u2018off\u2019 position during singing.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01833/elife-01833-fig5-v1.jpg)\n\n**Figure 5.:** (A) Examples of trial-averaged subthreshold activity patterns of DAF-sensitive HVC shelf cells in hit and catch conditions, following the same scheme as Figure 2A. Exposure to DAF significantly increased subthreshold depolarizations during singing. (B) An HVC shelf cell that showed a significant suprathreshold response to DAF, following the same scheme shown in Figure 2A except for the addition of a spike-rastergram in the second row. (C) Time-averaged \u0394Vm in fast and slow response windows (n = 9 cells, triangles [p<0.05], crosses [p\u22650.05, paired t-test]). (D) DAF sensitivity plot for HVC shelf neurons and HVCX cells. Nearly half of the HVC shelf neurons showed DAF sensitivity. The minimum p-values of time-averaged \u0394Vm either in fast or slow time window are plotted, Mann\u2013Whitney U-test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/01833/elife-01833-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) An example of intracellular membrane potential recordings from an HVC shelf neuron during DAF hit and catch conditions, following the same scheme as Figure 1D. Scale bars, 500 ms \u00d7 10 mV. (B). Correlation Coefficient (C.C.) of membrane potential traces of individual HVCX and HVC shelf cells recorded while birds sang many renditions of the same motif. No time warping is applied to the data. Mann\u2013Whitney U-test, p<10\u22127.\n\n### Evidence that HVCX cells encode motor-related information\n\nOur findings indicate that HVCX cells are insensitive to auditory feedback perturbation during singing, raising the possibility that they primarily encode motor-related information. One expectation of a motor-related signal is that it should precede sound onset during singing. To test this idea, we examined the relationship between the onsets of dPSPs and syllables during bouts of singing (Figure 6A\u2013C). Population-averaged cross-correlation analysis revealed that dPSP onsets in HVCX cells occur on average \u223c25 ms before syllable onsets (n = 53 cells, Figure 6D), similar to the findings from prior extracellular studies (Kozhevnikov and Fee, 2007; Fujimoto et al., 2011). In contrast, dPSP onsets were not correlated with syllable offsets (Figure 6D), indicating that singing-related synaptic inputs to HVCX cells are correlated to future, rather than ongoing or past, vocal output. Another expectation of a motor-related signal is that, should change in parallel to changes in vocal output. As previously mentioned, DAF can trigger acute effects, such as truncation or slowing of song tempo (Figure 6E,G) (Sakata and Brainard, 2008), which are distinct from the slower changes in song that are associated with feedback-dependent error correction mechanisms. In fact, we observed significant changes in membrane potential fluctuations of HVCX cells when DAF-triggered song truncation or delays in syllable onsets (Figure 6F,H). Therefore, the intracellular method we used is capable of detecting DAF-related changes in the subthreshold activity of HVCX cells, but only when DAF triggers acute vocal motor effects. Taken together, these findings suggest that synaptic inputs to HVCX cells do not convey auditory feedback signals during singing and instead encode information about future vocal output, consistent with a motor-related signal.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01833/elife-01833-fig6-v1.jpg)\n\n**Figure 6.:** (A) An example of a stereotyped syllable sequence, with syllables underlined by orange bars. (B) Pseudo-color representation of the membrane potential patterns relative to baseline while the bird sang many repetitions of the syllable sequence shown in (A). Black dots; syllable onsets. Data are aligned to a specific syllable and sorted from long to short motifs, which reflect natural variations in zebra finch song tempo. (C) Same data shown in (B), but dPSP onsets are shown by black dots, and the timing of individual syllables is represented by the orange regions. (D) Syllable onset- and offset-triggered average of dPSP onset rate (n = 53 HVCX cells). (E) Example spectrograms from catch and \u2018hit-and-truncated\u2019 songs. (F) Trial-averaged subthreshold activity during hit-and-truncated songs showed a clear deviation from activity during catch trials. (G) Cumulative histogram of syllable onset timings relative to DAF onset in hit trials including delayed syllables (red dashed line), hit trials without delayed syllables (red solid line), and catch trials (black line). (H) Examples of trial-averaged subthreshold activity reveal that delayed motor output drives changes in the subthreshold activity (compare black and red dashed lines). After removing hit trials with delayed syllables, the subthreshold activity in hit and catch conditions is nearly identical (black vs red solid lines).\n\n### Deafening-induced changes to HVCX spines depends on an intact AFP\n\nOur finding that HVCX cells lack feedback-sensitive synaptic activity during singing raises the question of how deafening drives structural and functional changes to synapses on HVCX cells that precede song degradation (Tschida and Mooney, 2012). One possibility is that feedback perturbations are detected by auditory neurons indirectly presynaptic to HVCX cells, and information from these feedback-sensing cells alters synapses on HVCX cells more gradually as a prelude to the AFP-mediated error correction processes that result in vocal plasticity (Figure 7A). In this \u2018feedforward model\u2019, disrupting auditory feedback should be sufficient to induce synaptic changes in HVCX cells regardless of any downstream processes in the AFP. Another possibility is that deafening-induced changes to synapses on HVCX cells depend on downstream processes in the AFP that are known to be critical for feedback-dependent changes to song (Figure 7B). Indeed, contrary to the long-held assumption that activity only propagates from HVC to the AFP, a recent study established that activity could propagate from LMAN through recurrent circuitry to HVC (Hamaguchi and Mooney, 2012). Therefore, a remaining possibility is that deafening-induced changes to synapses on HVCX cells depend on LMAN activity and not simply on the removal of auditory feedback to HVC, as predicted by the feedforward model.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/01833/elife-01833-fig7-v1.jpg)\n\n**Figure 7.:** (A) A model where deafening triggers slow changes to HVCX spines, subsequently altering AFP activity, which in turn drives vocal plasticity. In this model, LMAN lesions prevent deafening-induced song degradation but will not prevent deafening-induced changes to HVCX spines. (B) A model where deafening acts through LMAN to trigger song plasticity and also to drive changes to HVCX spines. In this model, LMAN lesions will prevent both deafening-induced song degradation and deafening-induced changes to HVCX spines.\n\nTo distinguish between these possibilities, we used multiphoton in vivo imaging methods to monitor the size and stability of dendritic spines on HVCX cells in adult male zebra finches that received bilateral LMAN lesions prior to surgical deafening (n = 3 male zebra finches, 120\u2013140 dph). As previously described (Roberts et al., 2010; Tschida and Mooney, 2012), a GFP-lentivirus was injected into HVC to label HVC cells, and a retrograde tracer was injected bilaterally into Area X to facilitate identification of HVCX cells. Additionally, we placed bilateral lesions in LMAN with ibotenic acid 4\u20135 days before the first imaging session, which was conducted during the bird\u2019s subjective nighttime (Figure 8A). The morning following the first imaging session, the birds were deafened by bilateral surgical removal of the cochlea, which triggers a form of AFP-dependent song degradation that we confirmed here can be dramatically reduced by prior LMAN lesions (Figure 8A; only syllables that underwent significant degradation within the first 3d post-deafening are shown; p values reported in Figure 8A for difference in magnitude of spectral change between LMAN lesion and LMAN intact birds; also see below). Surprisingly, in addition to greatly reducing song degradation, LMAN lesions completely prevented the decrease in HVCX cell spine size index that normally follows deafening (Figure 8B\u2013C; 471 spines from 7 HVCX neurons in 3 LMAN lesion-deafened birds; 495 spines from 7 HVCX cells in 6 LMAN-intact deafened birds; spine data from LMAN intact-deafened birds were previously reported in Tschida and Mooney, 2012; p=0.001 for difference between groups across all time bins). In fact, the post-deafening spine size index values from HVCX cells in deafened birds with LMAN lesions measured here did not differ from values measured from longitudinally imaged birds with normal hearing (data not shown; spine data from birds with normal hearing were previously reported in Tschida and Mooney, 2012). Lesions to LMAN also prevented deafening-induced decreases in HVCX cell spine stability, and spine stability measurements from HVCX cells in LMAN lesion-deafened birds were significantly higher than those from LMAN intact-deafened HVCX cells in all post-song degradation time bins (Figure 8C; 2401 spines from 7 HVCX cells in 3 LMAN lesion-deafened birds; 3562 spines from 14 HVCX cells in 9 LMAN intact-deafened birds; spine data from LMAN intact-deafened birds were previously reported in Tschida and Mooney, 2012; p\u22640.02 for difference between groups in last 3 time bins). Therefore, in contrast to a feedforward model of auditory feedback processing by HVC, deafening-induced changes to dendritic spines on HVCX cells depend on an intact LMAN.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/01833/elife-01833-fig8-v1.jpg)\n\n**Figure 8.:** (A) Upper left: schematic illustrates surgical manipulations for in vivo imaging experiments. Lower left: quantification of deafening-induced changes to syllable entropy and EV at 3 days post-deafening in LMAN intact (black) and LMAN lesion (red) birds (only syllables that underwent significant degradation by 3 days post-deafening are shown; song degradation analyzed in a total of 6 LMAN lesion birds (3 used for imaging) and 19 LMAN intact birds (13 used for imaging in Tschida and Mooney, 2012); entropy: 14 syllables from 10 LMAN intact birds, 5 syllables from 5 LMAN lesion birds; EV: 12 syllables from 9 LMAN intact birds, 8 syllables from 4 LMAN intact birds). Right: representative songs before and after deafening from LMAN lesion and LMAN intact birds. Deafened birds that received LMAN lesions still undergo subtle but significant song degradation. (B) Representative in vivo, two-photon images of HVCX neurons showing changes in spine size between 2 and 3 days post-deafening in deafened birds with or without LMAN lesions. LMAN lesions prevent the decrease in the size of HVCX spines that normally follows deafening (size index <1 in LMAN intact birds). Scale bars, 5 \u00b5m. (C) Spine size index (left) and spine stability (right) is significantly higher in deafened birds with LMAN lesions. Quantification of spine size (left) and stability (right) in HVCX neurons from deafened birds with (red) and without (black) LMAN lesions (LMAN intact data were previously reported in Tschida and Mooney (2012), except the values reported here have not been normalized to baseline, pre-deafening measurements). Time bins with significant differences between intact and LMAN lesion groups are indicated with asterisks (p<0.05).\n\nWe also conducted several control measurements to exclude the possibility that LMAN lesions by themselves trigger reactive changes in HVC circuitry or to the bird\u2019s song that might occlude or otherwise alter spine dynamics in HVC. First, spine dynamics in HVCX cells following LMAN lesions but prior to deafening did not differ from values obtained from similarly aged birds with normal hearing and an intact LMAN (Figure 9A; HVCX cell spine size index: 1.10 \u00b1 0.06 in LMAN lesion group; 1.07 \u00b1 0.03 in LMAN intact group, mean \u00b1SEM, p=0.62; HVCX cell spine stability: 94.0 \u00b1 1.1% in LMAN lesion group, 92.0 \u00b1 1.6% in LMAN intact group, p=0.61; LMAN intact data previously reported in Tschida and Mooney, 2012). Second, prior to deafening, LMAN lesions did not affect the mean or variability of syllable entropy or entropy variance (EV), two features that are sensitive to small changes in song\u2019s acoustic structure (Figure 9B; Wilcoxon signed-ranks test used to compare pre-lesion to post-lesion values for 25 syllables from 6 birds [includes 3 birds used for imaging]; data shown only for mean entropy and EV; p=0.09 for mean entropy, p=0.92 for coefficient of variation [CV] of entropy, p=0.25 for mean EV, p=0.31 for CV of EV). Third, a post mortem analysis of brain tissue indicated that the lesions we made in LMAN were comparable in volume to those reported in previous studies that have established LMAN\u2019s role in preventing deafening-induced song degradation (40\u2013100% lesion extent, Brainard and Doupe, 2000). Finally, although the LMAN lesions we made largely prevented deafening-induced song degradation, birds that received LMAN lesions still showed extremely subtle but significant song degradation following deafening, as previously reported (Figure 8A) (Brainard and Doupe, 2000; Horita et al., 2008). Therefore, neither the complete abolition of auditory feedback by deafening nor the expression of small amounts of deafening-induced vocal plasticity in LMAN-lesioned birds are sufficient to drive structural changes to HVC dendritic spines.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/01833/elife-01833-fig9-v1.jpg)\n\n**Figure 9.:** (A) LMAN lesions affect neither spine size index nor spine stability in HVCX neurons (p=0.62 for size, p=0.61 for stability; LMAN intact data were previously reported in Tschida and Mooney, 2012). (B) LMAN lesions do not affect mean syllable entropy or EV (pre-lesion songs compared to songs from 4 to 5 days post-lesion; 25 syllables from 6 birds, p=0.09 for difference in mean entropy, p=0.25 for mean EV.\n\n## Discussion\n\nResolving how feedback-related information enters the AFP is a critical step to understand neural mechanisms of vocal learning. HVCX cells are attractive candidates for providing this information because they provide auditory input to the AFP (Roy and Mooney, 2009), receive inputs that are weakened by deafening (Tschida and Mooney, 2012), and may receive inputs from DAF-sensitive neurons, including HVC interneurons (Sakata and Brainard, 2008; Keller and Hahnloser, 2009). Furthermore, some forms of mammalian cortical plasticity initially involve changes to inhibitory rather than excitatory synapses (Froemke et al., 2007; Keck et al., 2011), raising the possibility that DAF might alter inhibitory input onto HVCX cells prior to any changes in excitatory input. Therefore, although the singing-related action potential output of HVCX neurons is insensitive to DAF (Kozhevnikov and Fee, 2007; Prather et al., 2008), the possibility remained that these cells integrate input from feedback-sensing cells during singing at subthreshold levels, which could then trigger slower changes to synapses on HVCX neurons as a prelude to vocal plasticity (Tschida and Mooney, 2012). By directly measuring synaptic activity in singing birds, we found that singing-related synaptic activity in HVCX neurons lacks real-time sensitivity to feedback perturbation. Moreover, many HVCX cells that we recorded displayed auditory responses in non-singing states, including a subset of cells that exhibited auditory-motor mirroring, a property which has been theorized to arise through integration of real-time feedback signals (Hanuschkin et al., 2013). Therefore, although HVCX cells receive fast synaptic inputs from several sources that may have the potential to convey auditory feedback during singing, these inputs appear to be gated to an \u2018off\u2019 position during vocalization in zebra finches (Shea and Margoliash, 2003; Cardin and Schmidt, 2004; Coleman et al., 2007).\n\nOne potential concern is that a synaptic feedback \u2018gate\u2019 onto HVCX cells may only open after the bird has experienced frequent and prolonged exposure to DAF. Several observations allay this concern. First, the hit rate for applying DAF we used during intracellular recordings (i.e., \u223c50%) has been shown here (Figure 1\u2014figure supplement 3) and by others to be sufficiently frequent to drive adaptive changes in pitch (Andalman and Fee, 2009; Charlesworth et al., 2012; Ali et al., 2013). Second, all of the analyses of subthreshold DAF sensitivity we performed were conducted after the bird had been exposed to DAF for at least an entire preceding day, the time required for the bird to habituate to the exposure, as determined by the decreased frequency of song truncations we observed in response to DAF. Finally, because we recorded from individual birds for 1 to 2 weeks and exposed them to DAF throughout much of that time window, many of the cells we recorded from were monitored after the animal had experienced many days or even more than a week of DAF. That is, our intracellular recordings and analyses of subthreshold DAF sensitivity were made in conditions where the bird\u2019s exposure to DAF was both frequent and prolonged. And although we did not track any single cell\u2019s activity while DAF exposure induced song plasticity, a recent study by Ali et al. (2013) has shown that singing-related HVC multiunit activity remains unchanged even after contingent DAF is used to drive changes in song pitch. Therefore, we support a model in which auditory synapses onto HVCX cells are always gated off when the bird is singing, while also recognizing that experiments involving longer-term intracellular recordings in birds that are undergoing DAF-induced song plasticity are required to fully resolve this issue.\n\nThe absence of any detectable synaptic trace of auditory feedback in HVCX cells during singing raises the question of how deafening drives changes to synapses on these cells. One possibility is that auditory feedback information is first transmitted to HVCX cells and then to downstream error correction circuits in the AFP, but that this information transfer occurs slowly and only when the bird is not singing. Regardless of the plausibility of such an offline feedforward model, it predicts that removal of auditory feedback independent of downstream error correction processes in the AFP should be sufficient to trigger changes to dendritic spines in HVC. In contrast, we found that LMAN lesions prevent the shrinkage and destabilization of HVCX dendritic spines that normally follow deafening. Therefore, deafening-induced changes to HVCX spines depend on an intact AFP, rather than resulting simply from the removal of auditory drive to HVC, thus raising the possibility that HVC receives error-correction signals from the AFP (Ali et al., 2013). Although the current experiments cannot resolve whether deafening-induced changes in HVC are driven solely by changes in LMAN activity or instead by LMAN acting in concert with the removal of auditory inputs to HVCX cells, the total insensitivity of HVCX cells to acute feedback perturbations suggests to us that deafening-induced synaptic changes in HVCX cells are a consequence rather than a cause of error correction processes mediated by the AFP. The indirect, recurrent pathways that can convey activity from LMAN to HVC (Hamaguchi and Mooney, 2012) provide a substrate over which the consequences of error correction processes in the AFP could be transmitted back to the early stages of the vocal motor hierarchy. Furthermore, because LMAN can access multiple stages of the motor hierarchy in tens of milliseconds (Hamaguchi and Mooney, 2012) and song may only change in response to altered feedback over hours or days, the consequences of performance evaluation may be widely distributed in the song motor network even before behavioral changes are first evident.\n\nA remaining important question is how and in what form auditory feedback information enters the AFP to facilitate error correction. Previous studies have shown that input and output cells of the AFP (HVCX and LMAN neurons) are not real-time sensors of auditory feedback (Leonardo, 2004; Kozhevnikov and Fee, 2007; Prather et al., 2008), and the current study shows that even those feedback-dependent changes that can be detected in HVC depend on the AFP rather than fast synaptic signaling onto HVCX cells from feedback-sensing auditory neurons. These findings suggest that HVC is downstream of the performance evaluation provided by real-time feedback sensors, and also raises the possibility that these sensors communicate error-related information to the AFP independent of HVC. Notably, the ventral tegmental area provides input to Area X (Lewis et al., 1981) and receives indirect input from several auditory regions, including the HVC shelf, that contain DAF-sensitive cells (Wild et al., 1993; Fortune and Margoliash, 1995; Vates et al., 1996; Keller and Hahnloser, 2009). In this scenario, the consequences of error detection would reach the AFP in the form of neuromodulatory signals from the VTA, an arrangement that would buffer the entire song premotor circuitry from the role of acute feedback processing. In fact, this buffered feedback architecture, along with the gating of auditory inputs to HVC, may be necessary when the frequency of motor control is so fast that a relatively slow feedback signal becomes uninformative for the ongoing motor command.\n\n## Materials and Methods\n\n### Subjects\n\nAll experiments were carried out in accordance with a protocol approved by Duke University Institutional Animal Care and Use Committee. Data were collected from 14 adult (age range, 85-150 post hatch days) male zebra finches (Taeniopygia guttata): n = 11 for intracellular recordings in freely singing birds, n = 3 for HVC longitudinal imaging combined with LMAN lesion and deafening.\n\n### Intracellular recordings in singing birds\n\nIntracellular recordings were made in zebra finches using a modified version of a microdrive (Figure 1\u2014figure supplement 1, original design by M Fee, MIT, Long et al., 2010) constructed by stereolithography (Agile Manufacturing, Inc, Ontario, Canada). A miniature motor (Part # 0206A001B+02/1 47:1-Y2825; Micromo, FL) was used to move the micropipette attached to the shuttle, and two additional stainless steel screws were used to stabilize the movement of the micropipette. A miniaturized headstage (by IY, equivalent to HS-2A headstage with gain x0.1, Axon Instruments [now Molecular Devices, CA]) was mounted on the back of the base to send signals and receive command current from the intracellular recording amplifier (AxoClamp-2B; Axon Instruments) through a flexible tether cable (Omnetics, MN). The microdrive was surgically implanted over HVC using stereotaxic coordinates. All recordings were made from the right hemisphere. HVCX neurons were identified by antidromic stimulation of Area X with a bipolar stimulating electrode (a pair of 75 \u03bcm diameter silver wires, \u223c500 \u03bcm apart, A-M systems, WA) implanted into Area X, or by their spontaneous, DC-evoked, and singing-related activity. Recordings were attempted for approximately 7\u201321 days per bird and recording pipettes were changed daily.\n\n### Data acquisition for intracellular recordings\n\nCustom MATLAB software with xPCtarget toolbox (by KH) (Mathworks, MA) was used for recording the microphone signal and membrane potential data, real-time detection of the target syllable, and generation of distorted auditory feedback [DAF] (Figure 1\u2014figure supplement 2). In most intracellular recording sessions, we randomly selected a subset of songs as \u2018catch\u2019 trials for which DAF playbacks were suppressed (target hit rate 50%, actual hit rate, 30\u201370%). The microphone and membrane potential data were simultaneously recorded at 44 kHz for feature detection, down-sampled to 22 kHz, and saved for post-hoc analysis.\n\n### Detection of target syllable and execution of DAF\n\nFor the online detection of the pre-target syllable, spectral features were calculated in short (5 ms) segments of sound and updated at 1000 Hz (Figure 1\u2014figure supplement 2, step 1, 2). Before the experiments, a support-vector machine (SVM) algorithm was used to define the pre-target syllable (SVM algorithm with a Gaussian kernel using soft margins was written by KH in MATLAB). During the experiment, the same SVM algorithm and the same parameter sets (written in Simulink and xPC Target, MATLAB by KH) were used for the online detection of the pre-target syllable (Figure 1\u2014figure supplement 2, step 3). Once the pre-target syllable was detected, spectral features including sound amplitude, mean frequency, Wiener entropy, FM, and pitch values were measured for a duration \u223c100 ms (Figure 1\u2014figure supplement 2, step 4). Because the occurrence of the target syllable was almost completely predicted by the detection of the pre-target syllable in zebra finch songs, we defined the occurrence of the target syllable simply as the time when sound amplitude crossed a threshold. The occurrence of the target syllable was confirmed in post-hoc analysis. To avoid false positives (triggering DAF by detecting a natural fluctuation of syllable features), the criteria need to be met for more than 3 ms before executing DAF playback; therefore, the minimum latency between the detection of target syllable and the delivery of auditory feedback is 3\u20134 ms. We set the sound amplitude slightly above the level where birds tend to truncate their song (\u223c65 dB at the center of the cage) to establish the saliency of DAF. Birds gradually begin to sing motifs of normal duration and tempo even with DAF, and our analysis is limited to the songs without truncation and delayed syllables except for Figure 6. Song truncation was detected by the absence of expected syllables following DAF onset. Delayed syllables were detected by referencing the expected distribution of the syllable onset timings in catch conditions with the probability p(\u03c4 | catch), where \u03c4 is the syllable onset timings relative to DAF. By randomly selecting the hit trials with the probability of p(\u03c4 | catch)/p(\u03c4 | hit), we made the syllable onset timing distributions in hit and catch conditions equivalent.\n\nIn separate experiments, we used sound amplitude and mean frequency as the contingency criteria (Figure 1\u2014figure supplement 2, step 4). In this case, the bird can escape from DAF by slowly changing its syllable structure toward a certain direction of spectral features, such as higher or lower frequency. These experiments confirmed that our perturbation protocol can shift spectral features of target syllables when DAF was applied in a contingent manner as previously reported (Tumer and Brainard, 2007; Andalman and Fee, 2009) (Figure 1\u2014figure supplement 3).\n\n### Analysis of bird song for intracellular recordings\n\nTo precisely align intracellular recording data to the singing data, we first analyzed the microphone data to identify distinct syllables. The mean and variance of spectral features (sound amplitude, entropy, FM, mean frequency, pitch, goodness of pitch) during each sound event were saved in a MySQL database (http://www.mysql.com). We classified them into mutually exclusive labels, such as introductory notes, syllables, and cage noise, using an SVM-based classification algorithm (Chang and Lin, 2001), using a Gaussian kernel with soft margins implemented in a Matlab-based GUI interface written by KH. Manually classified data were used to train the SVM algorithm until classification accuracy exceeds 98% correctness, estimated by the cross-validation method.\n\n### Analysis of intracellular data\n\nTo measure subthreshold DAF sensitivity, raw voltage measurements were first median-filtered to eliminate spikes (5 ms window). The filtered membrane potential data were then grouped into similar voltage ranges to ensure that average membrane potential did not differ between hit and catch conditions. For each voltage group, neurons from which we obtained at least 14 motifs of associated membrane potential data in total were used to measure DAF sensitivity. The differences of the baseline-subtracted Vm generated from catch and hit trials averaged over fast and slow time windows (20\u201360 ms and 60\u2013200 ms) were compared using t-tests. Here the baseline-subtracted Vm is defined as $V_{m}^{i}(t|S)\u2212baseline^{i}$ where $V_{m}^{i}(t|S)$ is the median filtered voltage trace at time t in i\u2013th trial in condition S = {\u2018hit\u2019, \u2019catch\u2019}. The baseline of i\u2013th trial was calculated as the mean of $V_{m}^{i}(t|S)$ during \u2212200 to 0 ms relative to DAF onset. The difference of the mean of baseline-subtracted Vm (\u0394Vm) are defined as follows:\n\n$$\n\u0394V_{m}(t)=\u00a0\\frac{1}{M}\\sum_{i}^{M}(V_{m}^{i}(t|hit)\u2212baseline^{i})\u2212\\frac{1}{N}\\sum_{j}^{N}(V_{m}^{j}(t|catch)\u2212baseline^{j})\n$$\n\n.\n\nTo calculate the mean firing rate and mean membrane potential before and during singing, mean values of the median-filtered voltage were calculated from a 0.5-s period before song (\u22121 to \u22120.5 s before bout onset) and a 0.5 s period during singing (0\u20130.5 s after bout onset). Here, the onset of a song is defined as the first introductory note or syllable proceeded by at least 1 s of silence. For each cell, up to the first 50 bouts that occurred during the recording were used for calculating mean firing rate and resting potential. We excluded the period from \u22120.5 to 0 s before song onset from these calculations because all HVC neurons recorded here displayed sharp transitions in firing rate and/or membrane potential within this period. Spikes were detected as events where the membrane potential deviates >+30 mV from the high-pass filtered membrane potential (>400Hz).\n\n### Synaptic onset analysis\n\nDepolarizing post-synaptic potentials (dPSPs) were detected using a modified version of the algorithm previously reported (Ankri et al., 1994). Briefly, the onsets of dPSPs were defined as the time points where dV/dt exceeds a threshold defined as 0.8\u20131.5 times higher than its standard deviation. The threshold was set relatively high; therefore, our analysis is limited to sharp-rising dPSPs. Other parameter values were set to dt = 4 ms and refractoriness = 5 ms. Because zebra finch songs are highly stereotyped, the onset timing of each dPSP is highly stereotyped across bouts, and dPSP onsets naturally form clusters in dPSP raster plot (Figure 2C). To identify each dPSP onset cluster, we used a k-means clustering algorithm to identify dPSP onsets. The number of clusters is given by inspecting the dPSP histogram and raster plots. The time range for this analysis is 20\u2013200 ms after DAF onset. We did not include cells with overlapping dPSPs because the identification of the corresponding dPSPs across hit and catch conditions is difficult.\n\n### Measurement of auditory responses\n\nTo quantify the auditory responses of the intracellularly recorded neurons, we first measured the subthreshold (median-filtered voltage trace relative to baseline) and suprathreshold (firing rate) activity during and before playback of the bird\u2019s own song (BOS), a stimulus known to evoke robust and selective responses in HVC neurons (stimulus duration was 1\u20132.4 s, played to birds at random intervals of 15-60 s). We analyzed data from neurons with 7 or more trials and the significance of each neuron\u2019s response was evaluated by either a statistical test for differences in median value (Mann\u2013Whitney U-test) or variance (Ansari\u2013Bradley test). The Ansari\u2013Bradley test is applicable only when there is no significant difference in median value; therefore, we first tested for a significant difference in the median response using the Mann\u2013Whitney U-test and then applied the Ansari\u2013Bradley test if there was no significant difference in median response. Cells that exhibited a significant difference in either the median or variance were defined as \u2018responsive\u2019. The threshold for statistical significance was set to p=0.025 for both tests. Response index of variable r (Vm or firing rate) is defined as follows;\n\n$$\nResponse\u00a0index=|r_{response}\u2212r_{response}|/|r_{response}+r_{base}|,\n$$\n\nwhere, $r_{response}$ and $r_{base}$ are the mean or standard deviation of variable r measured during response and baseline periods, respectively.\n\nThe expected playback amplitude was subtracted from the sound amplitude recorded through the microphone to detect and eliminate trials when the bird vocalized during BOS playback. The sound amplitude was set to around 60 dB at the center of the cage during day-time recordings (light on) and \u223c45 dB during night-time recordings (light off).\n\nWe classified our dataset based on both recording time and the bird\u2019s behavioral state. For day-time recordings, the bird\u2019s wakefulness was monitored by video, and we excluded data from periods when the bird closed its eyes and perched quietly for >1 min. For night-time recordings, the light was turned off and we excluded the trials when the bird was making noise. The light was turned on at a fixed time each day (9AM) and was turned off around 9 PM (\u00b12 hr; day/night ratio between 14:10 and 10:14 hr).\n\n### Deafening and quantification of song degradation\n\nMale zebra finches (120\u2013150 dph) were anesthetized with isoflurane and deafened by bilateral cochlear removal. Undirected song was recorded continuously starting at least 2 days before until at least 1 week after deafening. Wiener entropy and entropy variance (EV) of each syllable in a bird\u2019s song were quantified using Sound Analysis Pro (Tchernichovski et al., 2000). 30 examples of each syllable were measured on each day, and values from two pre-deafening days were pooled to obtain a baseline distribution for each syllable. The onset of song degradation for each bird was defined as the day on which the distribution of values for either the entropy or EV of any syllable differed significantly from the baseline distribution and remained significantly different on all subsequent days (one-way ANOVA).\n\n### Fluorescent labeling of HVC neurons and in vivo two-photon imaging\n\nAs previously described (Tschida and Mooney, 2012), GFP-lentivirus (\u223c1 \u00b5L; eGFP expressed under the control of the Rous Sarcoma Virus LTR [FRGW]) was injected into HVC and Fast Blue or Alexa-Fluor 594 conjugated dextran amine were injected into Area X and RA (64-160 nL) in isoflurane-anesthetized male finches 4 days to 2 weeks prior to imaging. The birds were placed on a reverse day\u2013night cycle 1 week before the first imaging session to minimize effects of imaging on their daytime behavior and were imaged longitudinally starting 1\u20132 nights prior to deafening. On the first night of imaging, birds were anesthetized with isoflurane and placed in a stereotaxic apparatus. A headpost was affixed to the skull using dental acrylic, and bilateral craniotomies (1\u20132 mm2) were made over HVC. The dura was excised, and a custom-cut coverslip (No. 1 thickness) was placed over the pial surface and sealed in with dental acrylic. The birds were placed on a custom stage under a Zeiss Laser Scanning Two-Photon Microscope 510. Only GFP-labeled neurons within a field of retrogradely labeled neurons were classified as HVC neurons and imaged. Dendritic segments of identified HVC neurons were imaged twice nightly at 2 hr intervals (Zeiss Laser Scanning Two-Photon Microscope 510, 1024 \u00d7 1024 pixels, 76 \u00d7 76 \u00b5m2 image size, 3.2 \u00b5s/pixel, averaging 2 samples per pixel with 1 \u00b5m z-steps, using a 40x/0.8NA Zeiss IR-Archoplan immersion objective).\n\n### Image analysis\n\nThree-dimensional image stacks were smoothed using a Gaussian filter (ImageJ); brightness and contrast adjustments were not made for data analysis, although images were contrast-enhanced for figure presentation. Dendritic segments to be analyzed were selected and identified in image stacks collected either 2 hr or 24 hr apart. Spine size (measured across nights, 24 hr interval) was measured as the integrated optical density of each spine head, background-subtracted (using the optical density of neuropil next to the dendrite) and normalized to the mean brightness of the adjacent dendritic shaft. Spine size index was calculated as the ratio of spine size values measured during imaging sessions separated by 24 hr (time 24 size/time 0 size). Spine stability was calculated as the percentage of spines maintained each night (2 hr interval). Data from LMAN intact, deafened birds and LMAN intact, hearing birds (previously described in Tschida and Mooney, 2012) are reported as raw values (i.e., post-deafening measurements of spine size index and spine stability were not normalized to baseline, pre-deafening measurements for data presentation).\n\n### LMAN lesions\n\nThe boundaries of LMAN were mapped out using extracellular recordings, and LMAN was lesioned bilaterally by 7% ibotenic acid injection at least 4 days prior to deafening or imaging. Nissl-stained tissue from 2 LMAN intact control birds was used to estimate the average volume of LMAN, and the volume of LMAN remaining in LMAN lesion birds was divided by this value to estimate lesion extent. Additionally, injections of retrograde tracer were made into RA 4\u20135 days prior to sacrificing the animals to retrogradely label any remaining RA-projecting neurons in LMAN and to aid in the identification of remaining, non-lesioned portions of LMAN in Nissl-stained tissue sections.\n\n### Source code\n\nMATLAB and xPCtarget based data acquisition program for realtime detection of target syllable and playback of sound. This program also contains cell search mode and antidromic cell type identification mode used to conduct intracellular recording in freely behaving birds. All the codes are uploaded in GitHub (https://github.com/hamaguchikosuke/RealSong_control).\n",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "47827516-7296-43fa-b6a9-82fe53f66f7f",
+      "submission_id": "1ef5a026-2334-4aa2-9bf1-7b2daa62a56c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01833.018](https://doi.org/10.7554/eLife.01833.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\n[Editors\u2019 note: although it is not typical of the review process at eLife, in this case the editors decided to include the reviews in their entirety for the authors\u2019 consideration as they prepared their revised submission.]\n\nThank you for sending your work entitled \u201cMechanisms underlying a synaptic trace of auditory feedback in a sensorimotor nucleus important to learned birdsong\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Ronald L Calabrese, Reviewing editor; Marc Schmidt, peer reviewer.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nIn this study, Hamaguchi et al. perform a careful electrophysiological analysis of subthreshold activity in HCVX neurons using sharp microelectrode recordings of the awake unrestrained songbird to assess the role of auditory feedback during singing in these neurons. Positioned as they are in the auditory/singing pathway these HCVX neuron seem a likely target for feedback during singing that leads to behavioral plasticity, but extracellular recordings have not shown an effect of acoustic feedback on spiking during singing: thus the motivation in this study to look for subthreshold effects of feedback. The results show convincingly that synaptic input to HVCX cells can be driven by sound input but not during singing corroborating the previous extracellular results. These experiments are supplemented by an ablation (AFP) experiment that shows that deafening induced plasticity of spines on HVCX neurons requires an anterior forebrain pathway. This structural study provides novel conclusions. This elegant analysis in freely singing birds will generate wide interest in the songbird and sensory motor integration communities.\n\nAll the reviewers thought the work was elegant and important but there were some minor concerns that should be addressed. The reviews are highly congruent and complementary, and they are provided in their entirety so that the authors can benefit from them directly. The authors should address reviewer concerns and implement all the minor edits. They should particularly address this minor concern:\n\n\u201cA remote possibility with DAF is that auditory responses in HVCX might only occur after a window of time. One could envisage, for example, that HVC only processes auditory feedback errors if these occur for a critical amount of time. In other words, auditory flow might be gated for small infrequent errors (this might prevent the motor system from changing to any random perturbation of auditory feedback during singing) but might become \u201cun-gated\u201d once the perturbations are sensed as occurring in a consistent manner (this \u201cconsistency\u201d could potentially be monitored in the auditory forebrain and need not rely on the AFP or VTA). A prediction of this idea is that HVCX neurons would not show any changes in activity if (1) DAF is too infrequent or (2) when DAF is first introduced. It would be helpful for the authors to address this issue. This argument could easily be resolved if the authors are able to show that DAF-induced changes in song also occur in the birds they record from. Ideally, the most convincing argument would be to show a lack of change in HVCX neurons during DAF even while the birds undergo changes in song.\u201d\n\nBecause such a demonstration would constitute a new study they should squarely address this issue in Discussion.\n\nAnother point that the authors should address is making the title more descriptive of what the manuscript actually presents.\n\nReviewer#1:\n\nIn this manuscript the authors perform a careful electrophysiological analysis of subthreshold activity in HCVX neurons using sharp electrode recordings of the awake unrestrained songbird during singing to assess the role of auditory feedback during singing in these neurons. Positioned as they are in the auditory/singing pathway these HCVX neuron seem a likely target for feedback during singing that leads to behavioral plasticity, but extracellular recordings have not shown acute feedback during singing: thus the motivation in this study to look for subthreshold feedback. The results show convincingly that synaptic input to HVCX cells can be driven by sound input but not during singing corroborating the previous extracellular results. These experiments are supplemented by an ablation experiment that shows that deafening induced plasticity of spines on HVCX neurons requires an anterior forebrain pathway. This structural study provides novel conclusions. This elegant analysis in freely singing birds will generate wide interest in the songbird and sensory motor integration communities.\n\nConcerns:\n\nThe writing is succinct but the paper is not always easy to follow and could benefit from more explanation for the general reader. The work is carefully done with detailed analysis and the figures appropriately illustrate the data. Nevertheless the figures are very complicated and could benefit from more detailed legends and perhaps better labeling. A better general figure of the system than Figure 1A would help, including some of the detail of Figure 7 up front. Essential information from the supplemental figures should be incorporated into the text according to eLife policy \u2013 I defer to the expert reviewers on what is essential.\n\nReviewer#2:\n\nThe authors convincingly demonstrate their two main points: lack of subthreshold responses to auditory feedback perturbations in HVCX neurons and a dependence of deafening-induced changes in spine morphology on an intact AFP. The work represents a very high level of technical proficiency and, except in rare cases, the presentation is very clear.\n\nMy primary concern centers on the impact of the paper\u2019s findings. As the authors correctly point out, a number of prior studies have used extracellular recordings to show that the pattern of action potentials fired by HVCX neurons is insensitive to perturbations of auditory feedback. The first main finding of the present manuscript \u2013 that subthreshold activity is also not affected by feedback perturbations \u2013 therefore confirms current thinking in the field and appears to have limited interest except to specialists in the system.\n\nThe paper\u2019s second main finding \u2013 that post-deafening changes in spine morphology in X-projecting HVC neurons depends on an intact AFP \u2013 has somewhat higher impact. Earlier work from the same lab (Tschida and Mooney, Neuron 2012) convincingly demonstrated that deafening-induced changes in spine morphology precede the degradation of song and that the changes in spine size predicted the magnitude of behavioral changes. These earlier results raise the question of whether the morphological changes reflect the sensory perturbation (deafening) or the beginning of AFP-dependent motor changes that are first detectable days later. The present results demonstrating that spine changes depend on an intact AFP show that such changes are not solely a function of altered auditory feedback, ruling out a simple model (Figure 7A) in which changes in spine morphology depend only on the removal of ascending auditory inputs. Although ruling out this model leaves several important questions unanswered (especially the mechanisms by which patterns of AFP activity could regulate spine changes in HVC and how LMAN\u2019s indirect inputs to HVC might interact with ascending auditory signals), it nevertheless represents an advance in knowledge over prior studies.\n\nIn summary, I have no substantial concerns about how the research was performed or the validity of the results. My primary concern is that the first finding described above does not substantially change current thinking about the system. The second finding advances our understanding of sensorimotor plasticity by ruling out a simple model of auditory dependence and therefore will be of greater interest to readers.\n\nReviewer#3:\n\nThis is a very carefully executed experimental study investigating, in songbirds, how and where auditory feedback modifies vocal motor circuits. This is a question that lies at the core of how auditory feedback shapes vocal learning. Over the past several decades, a number of increasingly refined experiments have shown that auditory feedback is necessary for vocal learning and that perturbations of auditory feedback will cause, even the normally stereotyped song of adult zebra finches, to degrade. The time course over which this degradation occurs is not immediate. Depending on the experimental paradigm and the precision with which song is analyzed, changes in song acoustic structure can be observed within hours to days. Because lesions of a specialized basal ganglia circuit (known as the anterior forebrain pathway (AFP)) prevents song degradation following feedback perturbation (e.g., deafening by cochlear removal or distorted auditory feedback (DAF)), it has been hypothesized and shown that song degradation is an active process that can be prevented by interrupting this basal ganglia circuit, for example with lesions of its output nucleus, LMAN.\n\nOne of the primary assumptions has always been that auditory feedback information is processed by nucleus HVC. This nucleus receives direct input from the auditory forebrain, is necessary for song production and was thought to provide the only known auditory input to the basal ganglia circuit by way of neurons that project directly to the basal ganglia, known as HVCX-projection neurons. It had been assumed that these neurons would relay auditory feedback information to the basal ganglia. It was therefore surprising that these neurons did not shown any changes in firing pattern during DAF even though feedback distortion was sufficient to perturb song.\n\nIn the present study, the authors used intracellular electrodes (technically heroic experiments) to record from HVCX-projecting neurons during singing under both normal and DAF conditions. They provide compelling evidence that DAF does not alter (at all!) the highly stereotyped membrane potential fluctuations that are recorded during song production. This despite recent findings, by the same lab, that DAF modifies synaptic inputs onto these cells. While these results do not provide a direct answer as to where auditory feedback is first monitored in the vocal motor system, these experiments are extremely important in ruling out HVC as the site for such monitoring.\n\nIn this study the authors also show that changes in synaptic strength (as measured by spine dynamics) of HVCX-projection neurons following auditory feedback perturbation (here they use deafening) are dependent on LMAN. They use this finding to argue that auditory feedback dependent changes in HVCX-projecting neurons are dependent on LMAN and that HVC is therefore downstream of where the real-time sensors of auditory feedback. Because the authors have previously show that LMAN receives direct auditory input from the VTA, they suggest that this circuit might be a possible candidate for auditory feedback processing, but they do not show any evidence for this.\n\nWhile the authors do not, in the end, show where auditory feedback processing occurs, this study is extremely important because it makes a strong case that it does not occur in HVC. The paper is well written and the experiments are performed with great care and the conclusions sounds.\n\nConcerns:\n\nA remote possibility with DAF is that auditory responses in HVCX might only occur after a window of time. One could envisage, for example, that HVC only processes auditory feedback errors if these occur for a critical amount of time. In other words, auditory flow might be gated for small infrequent errors (this might prevent the motor system from changing to any random perturbation of auditory feedback during singing) but might become \u201cun-gated\u201d once the perturbations are sensed as occurring in a consistent manner (this \u201cconsistency\u201d could potentially be monitored in the auditory forebrain and need not rely on the AFP or VTA). A prediction of this idea is that HVCX neurons would not show any changes in activity if (1) DAF is too infrequent or (2) when DAF is first introduced. It would be helpful for the authors to address this issue. This argument could easily be resolved if the authors are able to show that DAF-induced changes in song also occur in the birds they record from. Ideally, the most convincing argument would be to show a lack of change in HVCX neurons during DAF even while the birds undergo changes in song.\n",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a81c549e-0193-47d4-9143-eeb35b82a926",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C1",
+      "claim": "HVC is necessary for singing in zebra finches.",
+      "claim_type": "EXPLICIT",
+      "source": "One site where feedback could interact with song motor commands is the sensorimotor nucleus HVC, which is necessary for singing (Nottebohm et al., 1976)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nottebohm et al., 1976",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "6d01a1b2-baa8-4064-bf8d-9da1fe066002",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C2",
+      "claim": "HVC exhibits neural activity precisely time-locked to song.",
+      "claim_type": "EXPLICIT",
+      "source": "HVC, which is necessary for singing (Nottebohm et al., 1976), exhibits neural activity precisely time-locked to song (Hahnloser et al., 2002; Kozhevnikov and Fee, 2007; Prather et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "ce931fe5-7fe0-4b0c-8317-3ab5717ff978",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C3",
+      "claim": "HVC receives input from auditory regions that contain auditory feedback-sensitive neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "HVC, which is necessary for singing (Nottebohm et al., 1976), exhibits neural activity precisely time-locked to song (Hahnloser et al., 2002; Kozhevnikov and Fee, 2007; Prather et al., 2008), and receives input from auditory regions that contain auditory feedback-sensitive neurons (Keller and Hahnloser, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Keller and Hahnloser, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "59c82014-2472-436e-9e78-4bf5e1fa70e3",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C4",
+      "claim": "HVCX neurons provide input to the anterior forebrain pathway (AFP).",
+      "claim_type": "EXPLICIT",
+      "source": "Within HVC, a distinct type of projection neuron (HVCX) provides input to an anterior forebrain pathway (AFP)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the text",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "af8be00e-1d74-4a80-962b-0a478eafc17c",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C5",
+      "claim": "The AFP is necessary for song learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Within HVC, a distinct type of projection neuron (HVCX) provides input to an anterior forebrain pathway (AFP) that is necessary for song learning",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the text",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "3aff1279-5578-4977-9d7d-8dd8bc5b915b",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C6",
+      "claim": "The AFP is anatomically similar to cortico-basal ganglia pathways in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "an anterior forebrain pathway (AFP) that is necessary for song learning and that is anatomically similar to cortico-basal ganglia pathways in mammals (Farries and Perkel, 2002; Doupe et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Farries and Perkel, 2002; Doupe et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "27345812-4d65-4324-a3da-21552333f2b1",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C7",
+      "claim": "LMAN is the source of behavioral variations that can adaptively bias song in response to feedback perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Various studies have shown that the output nucleus of the AFP (the lateral magnocellular nucleus of the anterior nidopallium, or LMAN) is the source of behavioral variations that can adaptively bias song in response to feedback perturbations (Andalman and Fee, 2009; Warren et al., 2011; Charlesworth et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "8ececa15-7786-4689-9044-ac3b2a8febc8",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C8",
+      "claim": "LMAN lesions prevent deafening-induced song degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, LMAN lesions prevent deafening-induced song degradation (Brainard and Doupe, 2000; Andalman and Fee, 2009; Warren et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "9edf296b-ad55-4ef5-978b-d253615ea278",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C9",
+      "claim": "Inactivating LMAN can reverse shifts in syllable pitch induced by distorted auditory feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "inactivating LMAN can reverse shifts in syllable pitch induced by distorted auditory feedback (DAF) (Brainard and Doupe, 2000; Andalman and Fee, 2009; Warren et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "fee5767c-f3e9-46f0-872c-566521345781",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C10",
+      "claim": "Auditory responses detected in the AFP of anesthetized birds disappear when HVC is pharmacologically inactivated.",
+      "claim_type": "EXPLICIT",
+      "source": "auditory responses that can be detected in the AFP of anesthetized birds disappear when HVC is pharmacologically inactivated (Roy and Mooney, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Roy and Mooney, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "092c2729-3835-4871-8ac4-f324e41bfaa8",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C11",
+      "claim": "Individual HVCX cells can fire in remarkably similar patterns during singing and in response to song playback.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, individual HVCX cells can fire in remarkably similar patterns during singing and in response to song playback (Prather et al., 2008; Fujimoto et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Prather et al., 2008; Fujimoto et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "be635fb2-2566-4390-b272-17ce10e52464",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C12",
+      "claim": "The singing-related action potential activity of HVCX cells does not change when auditory feedback is masked by noise bursts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the singing-related action potential activity of HVCX cells does not change when auditory feedback is masked by noise bursts (Kozhevnikov and Fee, 2007; Prather et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kozhevnikov and Fee, 2007; Prather et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "2c11580e-0a31-4262-b6df-bc97e96c72b5",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C13",
+      "claim": "Deafening shrinks and destabilizes dendritic spines on HVCX neurons within approximately 12-48 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "a recent imaging study found that deafening shrinks and destabilizes dendritic spines on HVCX neurons within \u223c12\u201348 hr, and these changes precede and predict the severity of song degradation (Tschida and Mooney, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tschida and Mooney, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "8f708c8d-e00b-446b-b4a8-34755273dd4d",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C14",
+      "claim": "Deafening-induced changes to HVCX dendritic spines precede and predict the severity of song degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "a recent imaging study found that deafening shrinks and destabilizes dendritic spines on HVCX neurons within \u223c12\u201348 hr, and these changes precede and predict the severity of song degradation (Tschida and Mooney, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tschida and Mooney, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "864fe7d9-4456-4547-85c9-ab20e978ddf1",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C15",
+      "claim": "Distorted auditory feedback (DAF) failed to perturb singing-related synaptic activity of HVCX cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using intracellular recordings in singing zebra finches, we found that DAF failed to perturb singing-related synaptic activity of HVCX cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "6e5f6419-ad0f-46e2-811a-07947744415c",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C16",
+      "claim": "Many HVCX cells responded to auditory stimuli in non-singing states.",
+      "claim_type": "EXPLICIT",
+      "source": "Using intracellular recordings in singing zebra finches, we found that DAF failed to perturb singing-related synaptic activity of HVCX cells, although many of these cells responded to auditory stimuli in non-singing states",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "1affbdec-4605-4a69-973c-a949bef743ce",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C17",
+      "claim": "Deafening-induced changes to HVCX synapses require intact AFP output.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in vivo multiphoton imaging revealed that deafening-induced changes to HVCX synapses require intact AFP output",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "559b7392-de92-40db-9f56-fb8f070b95bb",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C18",
+      "claim": "The AFP accesses feedback independent of HVC.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings support a model in which the AFP accesses feedback independent of HVC",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "38e43c80-32a2-458a-b874-47ac2c1873d3",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C19",
+      "claim": "Songbirds use auditory feedback to learn and maintain their vocalizations.",
+      "claim_type": "EXPLICIT",
+      "source": "Songbirds use auditory feedback to learn and maintain their vocalizations (Konishi, 1965; Price, 1979)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Konishi, 1965; Price, 1979",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "0044553c-f40e-47e7-a705-0f429b513faf",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C20",
+      "claim": "A total of 72 HVCX neurons were recorded from 11 birds.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded from a total of 72 HVCX neurons in 11 birds as they engaged in spontaneous bouts of singing produced in social isolation (i.e., undirected song) and/or listened to playback of the bird's own song (BOS)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological detail from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "6870e61e-5bd4-42a0-8022-a92d64f1d1bf",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C21",
+      "claim": "HVCX cells were identified by antidromic stimulation methods, DC current-evoked firing patterns, or characteristic singing-related hyperpolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "HVCX cells were identified either by antidromic stimulation methods (Figure 1A,B), DC current-evoked firing patterns (Mooney, 2000), or characteristic singing-related hyperpolarization (Long et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological detail from the current study with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "7bfc61de-c400-4c3d-ac2f-78e84dc73220",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C22",
+      "claim": "All HVCX cells recorded showed spontaneous, regular action potential activity when the bird was not vocalizing at 8.2 \u00b1 5.8 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported (Long et al., 2010), all HVCX cells we recorded without current injection showed spontaneous, regular action potential activity when the bird was not vocalizing (8.2 \u00b1 5.8 Hz, mean \u00b1SD)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the current study with citation to prior work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "a46636c1-fd92-46d0-8940-28d79329e0d9",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C23",
+      "claim": "HVCX cells entered a hyperpolarized state within several hundred milliseconds before song onset.",
+      "claim_type": "EXPLICIT",
+      "source": "all HVCX cells we recorded without current injection showed spontaneous, regular action potential activity when the bird was not vocalizing (8.2 \u00b1 5.8 Hz, mean \u00b1SD), entered a hyperpolarized state within several hundred milliseconds before song onset (baseline \u221258.5 \u00b1 7.1 mV, during singing \u221262.3 \u00b1 7.3 mV)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "f179dc39-98c2-4ddb-ae73-c328ab1f58c1",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C24",
+      "claim": "All except two HVCX cells exhibited one or more action potential bursts during the utterance of the song motif.",
+      "claim_type": "EXPLICIT",
+      "source": "all except two exhibited one or more action potential bursts during the utterance of the stereotyped sequence of syllables constituting the song motif (Figure 1D, Video 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure and video",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "11f552a9-8f58-447d-a511-ee020a838edd",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C25",
+      "claim": "Each HVCX cell's pattern of subthreshold membrane potential activity and action potential bursts were highly stereotyped from one motif to the next and from bout to bout.",
+      "claim_type": "EXPLICIT",
+      "source": "Each cell's pattern of subthreshold membrane potential activity (Vm) and action potential bursts were highly stereotyped from one motif to the next and from bout to bout (Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "4da8d208-c94b-4c53-af8b-ff97195d85df",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C26",
+      "claim": "As a population, HVCX cells exhibited no systematic changes in \u0394Vm or dPSP onset times in the presence of DAF.",
+      "claim_type": "EXPLICIT",
+      "source": "As a population, HVCX cells exhibited no systematic changes in \u0394Vm or dPSP onset times in the presence of DAF (Figure 2B\u2013D; n = 34 cells)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "44fe877d-d362-4918-95d9-92bab86290a3",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C27",
+      "claim": "None of the HVCX cells showed changes in dPSP onset times when treated on a cell-by-cell basis.",
+      "claim_type": "EXPLICIT",
+      "source": "When treated on a cell-by-cell basis, none showed changes in dPSP onset times",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "a67a742b-0396-40fc-a274-59014cd4a423",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C28",
+      "claim": "Only two HVCX cells showed slight (<1 mV) but significant changes in \u0394Vm.",
+      "claim_type": "EXPLICIT",
+      "source": "only two cells showed slight (<1 mV) but significant changes in \u0394Vm (0.01 \u2264 p<0.05; see Figure 2A, right, for one of these positive cases)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "3ce700a1-8dd6-4c26-b784-40114b5940a4",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C29",
+      "claim": "Fast synaptic inputs onto HVCX neurons are insensitive to auditory feedback perturbation during singing.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that fast synaptic inputs onto HVCX neurons are insensitive to auditory feedback perturbation during singing",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "8e449711-aecb-42b1-be3d-90a882edec3a",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C30",
+      "claim": "7 out of 8 DAF-insensitive HVCX cells showed significant subthreshold responses to BOS playback during the day.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that DAF-insensitive HVCX cells could respond to auditory presentation of the bird's own song during periods when the bird was not singing, including during the daytime or minutes to hours into the night (Figure 3A\u2013B; 7/8 DAF-insensitive cells showed significant subthreshold responses to BOS playback during the day",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "72871e83-a440-417c-8fef-c98cc60ccdfc",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C31",
+      "claim": "4 out of 4 DAF-insensitive HVCX cells tracked across the day-night boundary showed significant sub- and suprathreshold responses during darkness.",
+      "claim_type": "EXPLICIT",
+      "source": "4/4 DAF-insensitive cells that we tracked across the day\u2013night boundary showed significant sub- and suprathreshold responses during darkness)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "3bafae97-15b7-49d0-ae3b-b802233b31b2",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C32",
+      "claim": "The majority of HVCX cells displayed BOS-evoked auditory activity during the day or night.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the majority of HVCX cells we recorded from, including those in which we did not collect singing-related activity, displayed BOS-evoked auditory activity during the day or night (Figure 3\u2014figure supplement 1, subthreshold responses: n = 15/27 cells in day; 10/11 cells in night; suprathreshold responses: 5/12 cells in day; 7/8 cells in night)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure supplement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "72d3da8a-8f74-4b02-9d6c-22ef1d3516d6",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C33",
+      "claim": "Auditory responses in the zebra finch HVC are strongly state-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the increased proportion of auditory-responsive HVCX cells we detected during the night is consistent with prior extracellular studies that show auditory responses in the zebra finch HVC are strongly state-dependent (Cardin and Schmidt, 2003; Rauske et al., 2003; Nick and Konishi, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "5b2794b9-bfc9-477d-8af3-9eef77bfc391",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C34",
+      "claim": "Longer intracellular recordings revealed clear evidence of auditory-vocal mirroring in two DAF-insensitive HVCX cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although prior studies have not described auditory\u2013vocal mirroring in HVC of zebra finches, longer intracellular recordings (>3 hr) that we made in two DAF-insensitive HVCX cells revealed clear evidence of auditory\u2013vocal mirroring (Figure 4A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "459bbc3f-0cc2-4f57-b7ec-f0aecae710a3",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C35",
+      "claim": "BOS-evoked sub- and supra-threshold activity closely resembled the singing-related activity recorded earlier during the daytime in two HVCX cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, at later times during the night, we detected BOS-evoked sub- and supra-threshold activity that closely resembled the singing-related activity recorded earlier during the daytime",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "85ba8f1f-de6f-420a-ab5a-92ffba92497c",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C36",
+      "claim": "The correlation in membrane potential activity recorded during singing and in response to BOS playback increased at later times in the night.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in a larger subset of HVCX cells in which we recorded singing-related activity with or without DAF during the day and tracked across the day\u2013night boundary, we found that the correlation in membrane potential activity recorded during singing and in response to BOS playback increased at later times in the night (Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "41dabf1e-8317-4a57-912c-b695f80a3355",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C37",
+      "claim": "Auditory-vocal mirror neurons in the zebra finch HVC are insensitive to auditory feedback perturbation during singing.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings show that auditory\u2013vocal mirror neurons in the zebra finch HVC are insensitive to auditory feedback perturbation during singing",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "3045057a-acf9-4f6e-b597-087658be4dcc",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C38",
+      "claim": "Sensorimotor mirroring may be a latent feature of a large cohort of HVCX cells in zebra finches.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings show that auditory\u2013vocal mirror neurons in the zebra finch HVC are insensitive to auditory feedback perturbation during singing and also suggest that sensorimotor mirroring may be a latent feature of a large cohort of HVCX cells in this species",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "72d18d25-bf54-4e61-a9ed-204742424332",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C39",
+      "claim": "Most (5/9) HVC shelf cells showed significantly greater subthreshold depolarizing responses in the presence of DAF.",
+      "claim_type": "EXPLICIT",
+      "source": "During singing, we found that most (5/9) HVC shelf cells showed significantly greater subthreshold depolarizing responses in the presence of DAF, consistent with the notion that they receive synaptic input from neurons that exhibit DAF-sensitive action potential output (Figure 5A,C, D",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "c19ca766-c6f0-4dd4-96d2-48ed9101a564",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C40",
+      "claim": "One HVC shelf cell showed a significant suprathreshold response to DAF.",
+      "claim_type": "EXPLICIT",
+      "source": "one of these cells also showed a significant suprathreshold response to DAF, Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "00021bb5-5938-42c9-a2e1-03c8b811d00c",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C41",
+      "claim": "Synaptic activity in HVC shelf cells can be modulated during singing.",
+      "claim_type": "EXPLICIT",
+      "source": "These recordings also revealed that synaptic activity in HVC shelf cells can be modulated during singing",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "bd58ea08-3b97-4f35-a49b-8cc21492071f",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C42",
+      "claim": "The pattern of synaptic activity in HVC shelf cells was less stereotyped from one motif to the next than observed in HVCX cells.",
+      "claim_type": "EXPLICIT",
+      "source": "although the pattern of this activity was less stereotyped from one motif to the next than observed in HVCX cells (Figure 5\u2014figure supplement 1B. HVC shelf: n = 14 cells, C.C. = 0.12 \u00b1 0.03 (SEM). HVCX cells: n = 53 cells, C.C. = 0.70 \u00b1 0.02, without time warping)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure supplement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "6309add3-e7dc-43cf-bdfc-9cee70d5e714",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C43",
+      "claim": "The intracellular recording technique can detect subthreshold membrane potential responses to DAF in the singing zebra finch.",
+      "claim_type": "EXPLICIT",
+      "source": "These data confirm that the intracellular recording technique used here can detect subthreshold membrane potential responses to DAF in the singing zebra finch",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "3d791fa8-f8bf-4778-85a0-414afe9275c2",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C44",
+      "claim": "Auditory-related synaptic inputs to HVCX cells are gated in an 'off' position during singing.",
+      "claim_type": "EXPLICIT",
+      "source": "These data confirm that the intracellular recording technique used here can detect subthreshold membrane potential responses to DAF in the singing zebra finch, further strengthening the idea that auditory-related synaptic inputs to HVCX cells are gated in an 'off' position during singing",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "378544c6-8900-428c-8452-700c3ea0bcce",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C45",
+      "claim": "dPSP onsets in HVCX cells occur on average approximately 25 ms before syllable onsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Population-averaged cross-correlation analysis revealed that dPSP onsets in HVCX cells occur on average \u223c25 ms before syllable onsets (n = 53 cells, Figure 6D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "ea72e8f4-f863-4f37-9b95-62bddd467da2",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C46",
+      "claim": "dPSP onsets were not correlated with syllable offsets.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, dPSP onsets were not correlated with syllable offsets (Figure 6D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "4b7300ba-cc15-4e3a-a135-5abd2cd1d87e",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C47",
+      "claim": "Singing-related synaptic inputs to HVCX cells are correlated to future, rather than ongoing or past, vocal output.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, dPSP onsets were not correlated with syllable offsets (Figure 6D), indicating that singing-related synaptic inputs to HVCX cells are correlated to future, rather than ongoing or past, vocal output",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a conclusion from the current study's findings with reference to figure",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "c8a089b0-2bd1-4199-aad5-7dce2ea0ee09",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C48",
+      "claim": "Significant changes in membrane potential fluctuations of HVCX cells were observed when DAF triggered song truncation or delays in syllable onsets.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we observed significant changes in membrane potential fluctuations of HVCX cells when DAF-triggered song truncation or delays in syllable onsets (Figure 6F,H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "dde637c4-e11d-457f-aa72-e7d17bdc5992",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C49",
+      "claim": "The intracellular method is capable of detecting DAF-related changes in the subthreshold activity of HVCX cells, but only when DAF triggers acute vocal motor effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the intracellular method we used is capable of detecting DAF-related changes in the subthreshold activity of HVCX cells, but only when DAF triggers acute vocal motor effects",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "7a9c3482-dd7e-4115-97c0-a809fd0dc6d7",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C50",
+      "claim": "Synaptic inputs to HVCX cells do not convey auditory feedback signals during singing and instead encode information about future vocal output, consistent with a motor-related signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings suggest that synaptic inputs to HVCX cells do not convey auditory feedback signals during singing and instead encode information about future vocal output, consistent with a motor-related signal",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "14fac539-4825-40bb-8d57-1d34b287e05a",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C51",
+      "claim": "LMAN lesions prevent the decrease in HVCX cell spine size index that normally follows deafening.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, in addition to greatly reducing song degradation, LMAN lesions completely prevented the decrease in HVCX cell spine size index that normally follows deafening (Figure 8B\u2013C; 471 spines from 7 HVCX neurons in 3 LMAN lesion-deafened birds; 495 spines from 7 HVCX cells in 6 LMAN-intact deafened birds; spine data from LMAN intact-deafened birds were previously reported in Tschida and Mooney, 2012; p=0.001 for difference between groups across all time bins)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure and statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "81d25b2f-1289-40ab-9913-fdbb793fb3fb",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C52",
+      "claim": "Post-deafening spine size index values from HVCX cells in deafened birds with LMAN lesions did not differ from values measured from longitudinally imaged birds with normal hearing.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the post-deafening spine size index values from HVCX cells in deafened birds with LMAN lesions measured here did not differ from values measured from longitudinally imaged birds with normal hearing (data not shown; spine data from birds with normal hearing were previously reported in Tschida and Mooney, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the current study with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "b2aa6a41-6ebf-46a2-bae1-e926416752f4",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C53",
+      "claim": "Lesions to LMAN prevented deafening-induced decreases in HVCX cell spine stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Lesions to LMAN also prevented deafening-induced decreases in HVCX cell spine stability, and spine stability measurements from HVCX cells in LMAN lesion-deafened birds were significantly higher than those from LMAN intact-deafened HVCX cells in all post-song degradation time bins (Figure 8C; 2401 spines from 7 HVCX cells in 3 LMAN lesion-deafened birds; 3562 spines from 14 HVCX cells in 9 LMAN intact-deafened birds; spine data from LMAN intact-deafened birds were previously reported in Tschida and Mooney, 2012; p\u22640.02 for difference between groups in last 3 time bins)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure and statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "8f15e533-cde5-4cfa-b827-341ddd9fa0a3",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C54",
+      "claim": "Deafening-induced changes to dendritic spines on HVCX cells depend on an intact LMAN.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in contrast to a feedforward model of auditory feedback processing by HVC, deafening-induced changes to dendritic spines on HVCX cells depend on an intact LMAN",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "e1999187-9d6e-4c6f-930d-c05a1ca3e3e7",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C55",
+      "claim": "Spine dynamics in HVCX cells following LMAN lesions but prior to deafening did not differ from values obtained from similarly aged birds with normal hearing and an intact LMAN.",
+      "claim_type": "EXPLICIT",
+      "source": "First, spine dynamics in HVCX cells following LMAN lesions but prior to deafening did not differ from values obtained from similarly aged birds with normal hearing and an intact LMAN (Figure 9A; HVCX cell spine size index: 1.10 \u00b1 0.06 in LMAN lesion group; 1.07 \u00b1 0.03 in LMAN intact group, mean \u00b1SEM, p=0.62; HVCX cell spine stability: 94.0 \u00b1 1.1% in LMAN lesion group, 92.0 \u00b1 1.6% in LMAN intact group, p=0.61; LMAN intact data previously reported in Tschida and Mooney, 2012)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure and statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "6d1581e0-b7a9-4620-88ab-a050d161f7db",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C56",
+      "claim": "Prior to deafening, LMAN lesions did not affect the mean or variability of syllable entropy or entropy variance (EV).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, prior to deafening, LMAN lesions did not affect the mean or variability of syllable entropy or entropy variance (EV), two features that are sensitive to small changes in song's acoustic structure (Figure 9B; Wilcoxon signed-ranks test used to compare pre-lesion to post-lesion values for 25 syllables from 6 birds [includes 3 birds used for imaging]; data shown only for mean entropy and EV; p=0.09 for mean entropy, p=0.92 for coefficient of variation [CV] of entropy, p=0.25 for mean EV, p=0.31 for CV of EV)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure and statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "2405ac22-44c9-43c9-9e3e-88435f72340d",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C57",
+      "claim": "The lesions made in LMAN were comparable in volume to those reported in previous studies that have established LMAN's role in preventing deafening-induced song degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, a post mortem analysis of brain tissue indicated that the lesions we made in LMAN were comparable in volume to those reported in previous studies that have established LMAN's role in preventing deafening-induced song degradation (40\u2013100% lesion extent, Brainard and Doupe, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the current study with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "b70da07c-fd6b-42d3-8ec6-0f38510b6125",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C58",
+      "claim": "Birds that received LMAN lesions still showed extremely subtle but significant song degradation following deafening.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, although the LMAN lesions we made largely prevented deafening-induced song degradation, birds that received LMAN lesions still showed extremely subtle but significant song degradation following deafening, as previously reported (Figure 8A) (Brainard and Doupe, 2000; Horita et al., 2008)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "eb6ad8f2-8c78-4e8a-83db-7b3e4d67134b",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C59",
+      "claim": "Neither the complete abolition of auditory feedback by deafening nor the expression of small amounts of deafening-induced vocal plasticity in LMAN-lesioned birds are sufficient to drive structural changes to HVC dendritic spines.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, neither the complete abolition of auditory feedback by deafening nor the expression of small amounts of deafening-induced vocal plasticity in LMAN-lesioned birds are sufficient to drive structural changes to HVC dendritic spines",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "bafeb789-6837-4aeb-be2e-f4ba8246bf45",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C60",
+      "claim": "Singing-related synaptic activity in HVCX neurons lacks real-time sensitivity to feedback perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "By directly measuring synaptic activity in singing birds, we found that singing-related synaptic activity in HVCX neurons lacks real-time sensitivity to feedback perturbation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "f7259865-230e-4aff-a628-e8bff81149a9",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C61",
+      "claim": "Many HVCX cells displayed auditory responses in non-singing states, including a subset of cells that exhibited auditory-motor mirroring.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, many HVCX cells that we recorded displayed auditory responses in non-singing states, including a subset of cells that exhibited auditory-motor mirroring",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "f2619569-016f-406d-a4b6-dcfd70e5779b",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C62",
+      "claim": "Although HVCX cells receive fast synaptic inputs from several sources that may have the potential to convey auditory feedback during singing, these inputs appear to be gated to an 'off' position during vocalization in zebra finches.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, although HVCX cells receive fast synaptic inputs from several sources that may have the potential to convey auditory feedback during singing, these inputs appear to be gated to an 'off' position during vocalization in zebra finches (Shea and Margoliash, 2003; Cardin and Schmidt, 2004; Coleman et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings with citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "e29f1188-6768-4169-a98b-022cdb52e791",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C63",
+      "claim": "The hit rate for applying DAF used during intracellular recordings (approximately 50%) has been shown to be sufficiently frequent to drive adaptive changes in pitch.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the hit rate for applying DAF we used during intracellular recordings (i.e., \u223c50%) has been shown here (Figure 1\u2014figure supplement 3) and by others to be sufficiently frequent to drive adaptive changes in pitch (Andalman and Fee, 2009; Charlesworth et al., 2012; Ali et al., 2013)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from the current study with reference to figure supplement and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "95fc9531-f81a-4303-98db-d095cada7036",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C64",
+      "claim": "All of the analyses of subthreshold DAF sensitivity were conducted after the bird had been exposed to DAF for at least an entire preceding day.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, all of the analyses of subthreshold DAF sensitivity we performed were conducted after the bird had been exposed to DAF for at least an entire preceding day, the time required for the bird to habituate to the exposure, as determined by the decreased frequency of song truncations we observed in response to DAF",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological detail from the current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "ac994bd6-80e1-4bc5-84c8-bd348d3ce583",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C65",
+      "claim": "Singing-related HVC multiunit activity remains unchanged even after contingent DAF is used to drive changes in song pitch.",
+      "claim_type": "EXPLICIT",
+      "source": "And although we did not track any single cell's activity while DAF exposure induced song plasticity, a recent study by Ali et al. (2013) has shown that singing-related HVC multiunit activity remains unchanged even after contingent DAF is used to drive changes in song pitch",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ali et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "cd25d342-e012-41ee-a23e-7021e3bf6227",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C66",
+      "claim": "Auditory synapses onto HVCX cells are always gated off when the bird is singing.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we support a model in which auditory synapses onto HVCX cells are always gated off when the bird is singing",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "9b9c6242-ae5a-4d1b-a9dd-708327b23773",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C67",
+      "claim": "Deafening-induced changes to HVCX spines depend on an intact AFP, rather than resulting simply from the removal of auditory drive to HVC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found that LMAN lesions prevent the shrinkage and destabilization of HVCX dendritic spines that normally follow deafening. Therefore, deafening-induced changes to HVCX spines depend on an intact AFP, rather than resulting simply from the removal of auditory drive to HVC",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "34ed2ecb-c99a-4494-8fa6-964dc653a2b9",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C68",
+      "claim": "Deafening-induced synaptic changes in HVCX cells are a consequence rather than a cause of error correction processes mediated by the AFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the current experiments cannot resolve whether deafening-induced changes in HVC are driven solely by changes in LMAN activity or instead by LMAN acting in concert with the removal of auditory inputs to HVCX cells, the total insensitivity of HVCX cells to acute feedback perturbations suggests to us that deafening-induced synaptic changes in HVCX cells are a consequence rather than a cause of error correction processes mediated by the AFP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "568bbd29-f2ce-47ce-aaf8-f12497a7a8cf",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C69",
+      "claim": "The indirect, recurrent pathways that can convey activity from LMAN to HVC provide a substrate over which the consequences of error correction processes in the AFP could be transmitted back to the early stages of the vocal motor hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "The indirect, recurrent pathways that can convey activity from LMAN to HVC (Hamaguchi and Mooney, 2012) provide a substrate over which the consequences of error correction processes in the AFP could be transmitted back to the early stages of the vocal motor hierarchy",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings with citation",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "d0e18e63-0581-4a23-9486-75262b876cb7",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C70",
+      "claim": "LMAN can access multiple stages of the motor hierarchy in tens of milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, because LMAN can access multiple stages of the motor hierarchy in tens of milliseconds (Hamaguchi and Mooney, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hamaguchi and Mooney, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "a144ee1f-95c9-44ee-8eac-dffe28d3863d",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C71",
+      "claim": "The consequences of performance evaluation may be widely distributed in the song motor network even before behavioral changes are first evident.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, because LMAN can access multiple stages of the motor hierarchy in tens of milliseconds (Hamaguchi and Mooney, 2012) and song may only change in response to altered feedback over hours or days, the consequences of performance evaluation may be widely distributed in the song motor network even before behavioral changes are first evident",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings with citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "a8d9f8e2-1be2-4e04-8fa3-95c4c22398b6",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C72",
+      "claim": "Input and output cells of the AFP (HVCX and LMAN neurons) are not real-time sensors of auditory feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that input and output cells of the AFP (HVCX and LMAN neurons) are not real-time sensors of auditory feedback (Leonardo, 2004; Kozhevnikov and Fee, 2007; Prather et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "e714f75c-e4a3-4d5a-b352-40139c25331e",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C73",
+      "claim": "Feedback-dependent changes that can be detected in HVC depend on the AFP rather than fast synaptic signaling onto HVCX cells from feedback-sensing auditory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "the current study shows that even those feedback-dependent changes that can be detected in HVC depend on the AFP rather than fast synaptic signaling onto HVCX cells from feedback-sensing auditory neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "933be717-600a-4150-ab2b-2687d0d77b87",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C74",
+      "claim": "HVC is downstream of the performance evaluation provided by real-time feedback sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that HVC is downstream of the performance evaluation provided by real-time feedback sensors",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "8453e9fa-b2d5-49cc-9d41-52d41dbdc474",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C75",
+      "claim": "Real-time feedback sensors may communicate error-related information to the AFP independent of HVC.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that HVC is downstream of the performance evaluation provided by real-time feedback sensors, and also raises the possibility that these sensors communicate error-related information to the AFP independent of HVC",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the current study's findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "9a14d617-8a3b-45ba-9832-f7d001dd8ee7",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C76",
+      "claim": "The ventral tegmental area provides input to Area X.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the ventral tegmental area provides input to Area X (Lewis et al., 1981)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lewis et al., 1981",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "33291fd4-018c-4d52-90ff-16e624aae61c",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C77",
+      "claim": "The ventral tegmental area receives indirect input from several auditory regions, including the HVC shelf, that contain DAF-sensitive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the ventral tegmental area provides input to Area X (Lewis et al., 1981) and receives indirect input from several auditory regions, including the HVC shelf, that contain DAF-sensitive cells (Wild et al., 1993; Fortune and Margoliash, 1995; Vates et al., 1996; Keller and Hahnloser, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "e08ce90e-5fbc-4117-8344-82a5c9dc859c",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C78",
+      "claim": "The consequences of error detection may reach the AFP in the form of neuromodulatory signals from the VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scenario, the consequences of error detection would reach the AFP in the form of neuromodulatory signals from the VTA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a speculative scenario",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "16ef1ffa-b905-43e5-8615-073c46187c0a",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "claim_id": "C79",
+      "claim": "A buffered feedback architecture, along with the gating of auditory inputs to HVC, may be necessary when the frequency of motor control is so fast that a relatively slow feedback signal becomes uninformative for the ongoing motor command.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, this buffered feedback architecture, along with the gating of auditory inputs to HVC, may be necessary when the frequency of motor control is so fast that a relatively slow feedback signal becomes uninformative for the ongoing motor command",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a speculative conclusion",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5e302486-a37c-41da-9724-5b851fdafed9",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HVCX cells show no systematic changes in synaptic activity (\u0394Vm or dPSP onset times) in response to distorted auditory feedback (DAF) during singing. Population analysis of 34 cells revealed no significant changes, with only 2/34 cells showing slight (<1 mV) but significant \u0394Vm changes that could be explained by false positive rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C26-C28 provide converging evidence from population-level and single-cell analyses showing HVCX cells lack DAF sensitivity during singing. The statistical analysis is appropriate (paired t-tests), sample size is reasonable (n=34 cells from 11 birds), and the authors appropriately account for multiple comparisons. Claim C29's conclusion is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "3b8cfefa-1023-428c-b6d2-7ed8120fe67d",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Many HVCX cells that are insensitive to DAF during singing respond to auditory stimuli (BOS playback) in non-singing states. The proportion of auditory-responsive cells increases at night (91% subthreshold, 88% suprathreshold) compared to day (56% subthreshold, 42% suprathreshold).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 provide specific quantitative data showing HVCX cells respond to auditory stimuli when not singing. The state-dependent increase in auditory responsiveness (C33) is consistent with prior literature. Sample sizes are adequate (27 cells day, 11 cells night) and statistical tests are appropriate (Mann-Whitney U-test, Ansari-Bradley test).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "b3888d74-6e7e-42c8-9acd-331db66272e2",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Two DAF-insensitive HVCX cells recorded for >3 hours showed auditory-vocal mirroring, where BOS-evoked activity closely resembled singing-related activity. The correlation between singing and hearing increased at later times in the night, suggesting sensorimotor mirroring may be a latent feature of many HVCX cells in zebra finches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 provide direct evidence of auditory-vocal mirroring in zebra finches, a phenomenon not previously described in this species. The data show increased correlation at night (C.C. = 0.302 \u00b1 0.105 late night vs 0.076 \u00b1 0.041 day, p=0.04). However, the sample size for mirroring is small (n=2 cells for detailed analysis), making the generalization in C38 somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "1e32130d-0bc2-49dc-8c48-16bd77681fa4",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "HVC shelf cells (5/9) showed significantly greater subthreshold depolarizing responses to DAF during singing, confirming the intracellular recording technique can detect DAF-related membrane potential changes. This validates that the lack of DAF sensitivity in HVCX cells reflects genuine gating of auditory inputs rather than technical limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 provide critical positive control data showing the recording method can detect DAF responses. The statistical significance (p<10^-8 to p<10^-10) and sample size (n=9 cells) are adequate. Claim C43-C44's conclusions are well-justified, strengthening the interpretation that HVCX cells have gated auditory inputs during singing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "f31bb1ae-388f-4e28-a46e-861a8da5e6aa",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "dPSP onsets in HVCX cells occur ~25 ms before syllable onsets and are not correlated with syllable offsets, indicating synaptic inputs encode information about future vocal output rather than ongoing or past output, consistent with a motor-related signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 provide quantitative timing data from population analysis (n=53 cells) showing dPSPs precede vocal output. The cross-correlation analysis is appropriate. Claims C47 and C50 draw reasonable conclusions about motor-related encoding, consistent with prior extracellular studies showing similar timing relationships.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "8d3f311e-b5d2-44fd-adce-73af9bb602ce",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "HVCX cells showed significant membrane potential changes only when DAF triggered acute vocal motor effects (song truncation or syllable delays), demonstrating the intracellular method can detect DAF-related changes when they are accompanied by motor output changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 provide important evidence that the recording method is sensitive enough to detect changes when motor output is affected. This further validates that the lack of DAF sensitivity during normal singing reflects genuine biological gating rather than technical insensitivity. The logic is sound and strengthens the main conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "eb9a5a0a-fdc4-410f-a227-662740933c05",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LMAN lesions completely prevented deafening-induced decreases in HVCX spine size index (p=0.001) and spine stability (p\u22640.02), demonstrating that deafening-induced synaptic changes in HVCX cells depend on intact AFP output rather than direct removal of auditory input to HVC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 provide strong quantitative evidence from imaging experiments (471 spines from 7 neurons in 3 LMAN-lesioned birds vs 495 spines from 7 neurons in 6 intact birds). Statistical tests show significant differences. Claims C54 and C67 draw appropriate conclusions that contradict a feedforward model. The experimental design with LMAN lesions prior to deafening is well-controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "0cb4489f-89d4-49a3-84e3-0e2e65ada7b7",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Multiple control experiments validated the LMAN lesion approach: spine dynamics were normal before deafening (p=0.62 for size, p=0.61 for stability), song structure was unaffected (p>0.09 for all measures), lesion extent was comparable to prior studies (40-100%), and birds still showed subtle song degradation post-deafening, yet spine changes were absent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 provide comprehensive controls addressing potential confounds. The statistical analyses are appropriate and sample sizes adequate (25 syllables from 6 birds for song analysis). Claim C59's conclusion that neither complete deafening nor subtle vocal plasticity alone drives spine changes is well-justified by the control data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "4de70c56-c6ac-4ebf-91a1-fe9581879312",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study supports a model where the AFP accesses auditory feedback independent of HVC. HVCX cells lack real-time feedback sensitivity during singing due to gating of auditory inputs, and feedback-dependent changes in HVC depend on AFP activity rather than direct auditory input, suggesting HVC is downstream of performance evaluation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C60, C62, C66, C73-C75 represent the main interpretive conclusions synthesizing the experimental findings. The model is well-supported by converging evidence from intracellular recordings (no DAF sensitivity), imaging (LMAN-dependent spine changes), and control experiments. However, C75 about AFP accessing feedback independent of HVC is somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "4bd5f474-e809-4273-a4f1-32751f84c83e",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The DAF protocol used (~50% hit rate) was validated as sufficient to drive adaptive pitch changes, birds were exposed to DAF for at least one full day before analysis to allow habituation, and prior work shows HVC multiunit activity remains unchanged during DAF-induced song plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 address potential concerns about DAF exposure frequency and duration. The validation experiment (Figure 1-supplement 3) demonstrates the protocol can induce vocal plasticity. Claim C65 cites supporting evidence from Ali et al. (2013). These controls strengthen confidence that the lack of HVCX sensitivity is not due to insufficient DAF exposure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "9a41a47a-b5db-4736-85b3-2b11c7215556",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that deafening-induced synaptic changes in HVCX cells are a consequence rather than cause of AFP-mediated error correction, with LMAN-to-HVC recurrent pathways providing a substrate for transmitting error correction signals back to early motor stages, potentially distributing consequences of performance evaluation before behavioral changes emerge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C71 represent speculative mechanistic interpretations. While C69-C70 cite anatomical evidence for LMAN-to-HVC pathways, C68 and C71 are explicitly acknowledged as unresolved by the current experiments. The speculation is reasonable given the data but lacks direct experimental support. The authors appropriately qualify these as possibilities rather than established facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "1963743f-8a6d-4133-9af3-ff889275f102",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors speculate that error-related information may reach the AFP via neuromodulatory signals from the ventral tegmental area (VTA), which receives input from DAF-sensitive auditory regions. This buffered feedback architecture may be necessary when motor control is too fast for slow feedback signals to inform ongoing commands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C77 cite anatomical connectivity supporting the VTA pathway hypothesis, but C78-C79 are explicitly speculative scenarios without direct experimental evidence. The speculation is plausible and consistent with the data, but represents future directions rather than established findings. The authors appropriately present this as a possible mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "8730c92c-12df-4193-9bbd-6505956dab55",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Intracellular recordings from 72 HVCX neurons in 11 birds during singing revealed characteristic properties: spontaneous firing at 8.2\u00b15.8 Hz when not vocalizing, hyperpolarization before song onset (baseline -58.5\u00b17.1 mV, singing -62.3\u00b17.3 mV), and highly stereotyped patterns of subthreshold activity and action potential bursts during motif production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C25 describe basic electrophysiological properties of HVCX cells that replicate prior findings (Long et al., 2010). The sample size is substantial (72 neurons from 11 birds), cell identification methods are rigorous (antidromic stimulation, firing patterns, hyperpolarization), and the data are consistent with established literature. These provide essential characterization for the main experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    },
+    {
+      "id": "d7ae0abf-3992-476c-94d4-463bf2ace8be",
+      "content_id": "ff5bd006-4506-496b-b537-afdbccec0eb1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The introduction establishes the songbird vocal learning system and prior knowledge about HVC, AFP, and LMAN function, including that HVC is necessary for singing, receives auditory input, projects to the AFP, and that LMAN is critical for feedback-dependent vocal plasticity and preventing deafening-induced song degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C14, C19, C33, C72 summarize established prior work supported by appropriate citations. These background claims provide essential context for the current study's hypotheses and experimental design. The citations appear accurate and the claims represent consensus knowledge in the field. No original data evaluation is needed for these literature-based claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:10:36.193038Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "864fe7d9-4456-4547-85c9-ab20e978ddf1",
+      "result_id": "5e302486-a37c-41da-9724-5b851fdafed9"
+    },
+    {
+      "claim_id": "4da8d208-c94b-4c53-af8b-ff97195d85df",
+      "result_id": "5e302486-a37c-41da-9724-5b851fdafed9"
+    },
+    {
+      "claim_id": "44fe877d-d362-4918-95d9-92bab86290a3",
+      "result_id": "5e302486-a37c-41da-9724-5b851fdafed9"
+    },
+    {
+      "claim_id": "a67a742b-0396-40fc-a274-59014cd4a423",
+      "result_id": "5e302486-a37c-41da-9724-5b851fdafed9"
+    },
+    {
+      "claim_id": "3ce700a1-8dd6-4c26-b784-40114b5940a4",
+      "result_id": "5e302486-a37c-41da-9724-5b851fdafed9"
+    },
+    {
+      "claim_id": "8e449711-aecb-42b1-be3d-90a882edec3a",
+      "result_id": "3b8cfefa-1023-428c-b6d2-7ed8120fe67d"
+    },
+    {
+      "claim_id": "72871e83-a440-417c-8fef-c98cc60ccdfc",
+      "result_id": "3b8cfefa-1023-428c-b6d2-7ed8120fe67d"
+    },
+    {
+      "claim_id": "3bafae97-15b7-49d0-ae3b-b802233b31b2",
+      "result_id": "3b8cfefa-1023-428c-b6d2-7ed8120fe67d"
+    },
+    {
+      "claim_id": "6e5f6419-ad0f-46e2-811a-07947744415c",
+      "result_id": "3b8cfefa-1023-428c-b6d2-7ed8120fe67d"
+    },
+    {
+      "claim_id": "f7259865-230e-4aff-a628-e8bff81149a9",
+      "result_id": "3b8cfefa-1023-428c-b6d2-7ed8120fe67d"
+    },
+    {
+      "claim_id": "5b2794b9-bfc9-477d-8af3-9eef77bfc391",
+      "result_id": "b3888d74-6e7e-42c8-9acd-331db66272e2"
+    },
+    {
+      "claim_id": "459bbc3f-0cc2-4f57-b7ec-f0aecae710a3",
+      "result_id": "b3888d74-6e7e-42c8-9acd-331db66272e2"
+    },
+    {
+      "claim_id": "85ba8f1f-de6f-420a-ab5a-92ffba92497c",
+      "result_id": "b3888d74-6e7e-42c8-9acd-331db66272e2"
+    },
+    {
+      "claim_id": "41dabf1e-8317-4a57-912c-b695f80a3355",
+      "result_id": "b3888d74-6e7e-42c8-9acd-331db66272e2"
+    },
+    {
+      "claim_id": "3045057a-acf9-4f6e-b597-087658be4dcc",
+      "result_id": "b3888d74-6e7e-42c8-9acd-331db66272e2"
+    },
+    {
+      "claim_id": "72d18d25-bf54-4e61-a9ed-204742424332",
+      "result_id": "1e32130d-0bc2-49dc-8c48-16bd77681fa4"
+    },
+    {
+      "claim_id": "c19ca766-c6f0-4dd4-96d2-48ed9101a564",
+      "result_id": "1e32130d-0bc2-49dc-8c48-16bd77681fa4"
+    },
+    {
+      "claim_id": "00021bb5-5938-42c9-a2e1-03c8b811d00c",
+      "result_id": "1e32130d-0bc2-49dc-8c48-16bd77681fa4"
+    },
+    {
+      "claim_id": "bd58ea08-3b97-4f35-a49b-8cc21492071f",
+      "result_id": "1e32130d-0bc2-49dc-8c48-16bd77681fa4"
+    },
+    {
+      "claim_id": "6309add3-e7dc-43cf-bdfc-9cee70d5e714",
+      "result_id": "1e32130d-0bc2-49dc-8c48-16bd77681fa4"
+    },
+    {
+      "claim_id": "3d791fa8-f8bf-4778-85a0-414afe9275c2",
+      "result_id": "1e32130d-0bc2-49dc-8c48-16bd77681fa4"
+    },
+    {
+      "claim_id": "378544c6-8900-428c-8452-700c3ea0bcce",
+      "result_id": "f31bb1ae-388f-4e28-a46e-861a8da5e6aa"
+    },
+    {
+      "claim_id": "ea72e8f4-f863-4f37-9b95-62bddd467da2",
+      "result_id": "f31bb1ae-388f-4e28-a46e-861a8da5e6aa"
+    },
+    {
+      "claim_id": "4b7300ba-cc15-4e3a-a135-5abd2cd1d87e",
+      "result_id": "f31bb1ae-388f-4e28-a46e-861a8da5e6aa"
+    },
+    {
+      "claim_id": "7a9c3482-dd7e-4115-97c0-a809fd0dc6d7",
+      "result_id": "f31bb1ae-388f-4e28-a46e-861a8da5e6aa"
+    },
+    {
+      "claim_id": "c8a089b0-2bd1-4199-aad5-7dce2ea0ee09",
+      "result_id": "8d3f311e-b5d2-44fd-adce-73af9bb602ce"
+    },
+    {
+      "claim_id": "dde637c4-e11d-457f-aa72-e7d17bdc5992",
+      "result_id": "8d3f311e-b5d2-44fd-adce-73af9bb602ce"
+    },
+    {
+      "claim_id": "14fac539-4825-40bb-8d57-1d34b287e05a",
+      "result_id": "eb9a5a0a-fdc4-410f-a227-662740933c05"
+    },
+    {
+      "claim_id": "81d25b2f-1289-40ab-9913-fdbb793fb3fb",
+      "result_id": "eb9a5a0a-fdc4-410f-a227-662740933c05"
+    },
+    {
+      "claim_id": "b2aa6a41-6ebf-46a2-bae1-e926416752f4",
+      "result_id": "eb9a5a0a-fdc4-410f-a227-662740933c05"
+    },
+    {
+      "claim_id": "8f15e533-cde5-4cfa-b827-341ddd9fa0a3",
+      "result_id": "eb9a5a0a-fdc4-410f-a227-662740933c05"
+    },
+    {
+      "claim_id": "9b9c6242-ae5a-4d1b-a9dd-708327b23773",
+      "result_id": "eb9a5a0a-fdc4-410f-a227-662740933c05"
+    },
+    {
+      "claim_id": "e1999187-9d6e-4c6f-930d-c05a1ca3e3e7",
+      "result_id": "0cb4489f-89d4-49a3-84e3-0e2e65ada7b7"
+    },
+    {
+      "claim_id": "6d1581e0-b7a9-4620-88ab-a050d161f7db",
+      "result_id": "0cb4489f-89d4-49a3-84e3-0e2e65ada7b7"
+    },
+    {
+      "claim_id": "2405ac22-44c9-43c9-9e3e-88435f72340d",
+      "result_id": "0cb4489f-89d4-49a3-84e3-0e2e65ada7b7"
+    },
+    {
+      "claim_id": "b70da07c-fd6b-42d3-8ec6-0f38510b6125",
+      "result_id": "0cb4489f-89d4-49a3-84e3-0e2e65ada7b7"
+    },
+    {
+      "claim_id": "eb6ad8f2-8c78-4e8a-83db-7b3e4d67134b",
+      "result_id": "0cb4489f-89d4-49a3-84e3-0e2e65ada7b7"
+    },
+    {
+      "claim_id": "559b7392-de92-40db-9f56-fb8f070b95bb",
+      "result_id": "4de70c56-c6ac-4ebf-91a1-fe9581879312"
+    },
+    {
+      "claim_id": "bafeb789-6837-4aeb-be2e-f4ba8246bf45",
+      "result_id": "4de70c56-c6ac-4ebf-91a1-fe9581879312"
+    },
+    {
+      "claim_id": "f2619569-016f-406d-a4b6-dcfd70e5779b",
+      "result_id": "4de70c56-c6ac-4ebf-91a1-fe9581879312"
+    },
+    {
+      "claim_id": "cd25d342-e012-41ee-a23e-7021e3bf6227",
+      "result_id": "4de70c56-c6ac-4ebf-91a1-fe9581879312"
+    },
+    {
+      "claim_id": "e714f75c-e4a3-4d5a-b352-40139c25331e",
+      "result_id": "4de70c56-c6ac-4ebf-91a1-fe9581879312"
+    },
+    {
+      "claim_id": "933be717-600a-4150-ab2b-2687d0d77b87",
+      "result_id": "4de70c56-c6ac-4ebf-91a1-fe9581879312"
+    },
+    {
+      "claim_id": "8453e9fa-b2d5-49cc-9d41-52d41dbdc474",
+      "result_id": "4de70c56-c6ac-4ebf-91a1-fe9581879312"
+    },
+    {
+      "claim_id": "e29f1188-6768-4169-a98b-022cdb52e791",
+      "result_id": "4bd5f474-e809-4273-a4f1-32751f84c83e"
+    },
+    {
+      "claim_id": "95fc9531-f81a-4303-98db-d095cada7036",
+      "result_id": "4bd5f474-e809-4273-a4f1-32751f84c83e"
+    },
+    {
+      "claim_id": "ac994bd6-80e1-4bc5-84c8-bd348d3ce583",
+      "result_id": "4bd5f474-e809-4273-a4f1-32751f84c83e"
+    },
+    {
+      "claim_id": "34ed2ecb-c99a-4494-8fa6-964dc653a2b9",
+      "result_id": "9a41a47a-b5db-4736-85b3-2b11c7215556"
+    },
+    {
+      "claim_id": "568bbd29-f2ce-47ce-aaf8-f12497a7a8cf",
+      "result_id": "9a41a47a-b5db-4736-85b3-2b11c7215556"
+    },
+    {
+      "claim_id": "d0e18e63-0581-4a23-9486-75262b876cb7",
+      "result_id": "9a41a47a-b5db-4736-85b3-2b11c7215556"
+    },
+    {
+      "claim_id": "a144ee1f-95c9-44ee-8eac-dffe28d3863d",
+      "result_id": "9a41a47a-b5db-4736-85b3-2b11c7215556"
+    },
+    {
+      "claim_id": "9a14d617-8a3b-45ba-9832-f7d001dd8ee7",
+      "result_id": "1963743f-8a6d-4133-9af3-ff889275f102"
+    },
+    {
+      "claim_id": "33291fd4-018c-4d52-90ff-16e624aae61c",
+      "result_id": "1963743f-8a6d-4133-9af3-ff889275f102"
+    },
+    {
+      "claim_id": "e08ce90e-5fbc-4117-8344-82a5c9dc859c",
+      "result_id": "1963743f-8a6d-4133-9af3-ff889275f102"
+    },
+    {
+      "claim_id": "16ef1ffa-b905-43e5-8615-073c46187c0a",
+      "result_id": "1963743f-8a6d-4133-9af3-ff889275f102"
+    },
+    {
+      "claim_id": "0044553c-f40e-47e7-a705-0f429b513faf",
+      "result_id": "8730c92c-12df-4193-9bbd-6505956dab55"
+    },
+    {
+      "claim_id": "6870e61e-5bd4-42a0-8022-a92d64f1d1bf",
+      "result_id": "8730c92c-12df-4193-9bbd-6505956dab55"
+    },
+    {
+      "claim_id": "7bfc61de-c400-4c3d-ac2f-78e84dc73220",
+      "result_id": "8730c92c-12df-4193-9bbd-6505956dab55"
+    },
+    {
+      "claim_id": "a46636c1-fd92-46d0-8940-28d79329e0d9",
+      "result_id": "8730c92c-12df-4193-9bbd-6505956dab55"
+    },
+    {
+      "claim_id": "f179dc39-98c2-4ddb-ae73-c328ab1f58c1",
+      "result_id": "8730c92c-12df-4193-9bbd-6505956dab55"
+    },
+    {
+      "claim_id": "11f552a9-8f58-447d-a511-ee020a838edd",
+      "result_id": "8730c92c-12df-4193-9bbd-6505956dab55"
+    },
+    {
+      "claim_id": "a81c549e-0193-47d4-9143-eeb35b82a926",
+      "result_id": "d7ae0abf-3992-476c-94d4-463bf2ace8be"
+    },
+    {
+      "claim_id": "6d01a1b2-baa8-4064-bf8d-9da1fe066002",
+      "result_id": "d7ae0abf-3992-476c-94d4-463bf2ace8be"
+    },
+    {
+      "claim_id": "ce931fe5-7fe0-4b0c-8317-3ab5717ff978",
+      "result_id": "d7ae0abf-3992-476c-94d4-463bf2ace8be"
+    },
+    {
+      "claim_id": "59c82014-2472-436e-9e78-4bf5e1fa70e3",
+      "result_id": "d7ae0abf-3992-476c-94d4-463bf2ace8be"
+    },
+    {
+      "claim_id": "af8be00e-1d74-4a80-962b-0a478eafc17c",
+      "result_id": "d7ae0abf-3992-476c-94d4-463bf2ace8be"
+    },
+    {
+      "claim_id": "3aff1279-5578-4977-9d7d-8dd8bc5b915b",
+      "result_id": "d7ae0abf-3992-476c-94d4-463bf2ace8be"
+    },
+    {
+      "claim_id": "27345812-4d65-4324-a3da-21552333f2b1",
+      "result_id": "d7ae0abf-3992-476c-94d4-463bf2ace8be"
+    },
+    {
+      "claim_id": "8ececa15-7786-4689-9044-ac3b2a8febc8",
+      "result_id": "d7ae0abf-3992-476c-94d4-463bf2ace8be"
+    },
+    {
+      "claim_id": "9edf296b-ad55-4ef5-978b-d253615ea278",
+      "result_id": "d7ae0abf-3992-476c-94d4-463bf2ace8be"
+    },
+    {
+      "claim_id": "fee5767c-f3e9-46f0-872c-566521345781",
+      "result_id": "d7ae0abf-3992-476c-94d4-463bf2ace8be"
+    },
+    {
+      "claim_id": "092c2729-3835-4871-8ac4-f324e41bfaa8",
+      "result_id": "d7ae0abf-3992-476c-94d4-463bf2ace8be"
+    },
+    {
+      "claim_id": "be635fb2-2566-4390-b272-17ce10e52464",
+      "result_id": "d7ae0abf-3992-476c-94d4-463bf2ace8be"
+    },
+    {
+      "claim_id": "2c11580e-0a31-4262-b6df-bc97e96c72b5",
+      "result_id": "d7ae0abf-3992-476c-94d4-463bf2ace8be"
+    },
+    {
+      "claim_id": "8f708c8d-e00b-446b-b4a8-34755273dd4d",
+      "result_id": "d7ae0abf-3992-476c-94d4-463bf2ace8be"
+    },
+    {
+      "claim_id": "38e43c80-32a2-458a-b874-47ac2c1873d3",
+      "result_id": "d7ae0abf-3992-476c-94d4-463bf2ace8be"
+    },
+    {
+      "claim_id": "72d3da8a-8f74-4b02-9d6c-22ef1d3516d6",
+      "result_id": "d7ae0abf-3992-476c-94d4-463bf2ace8be"
+    },
+    {
+      "claim_id": "a8d9f8e2-1be2-4e04-8fa3-95c4c22398b6",
+      "result_id": "d7ae0abf-3992-476c-94d4-463bf2ace8be"
+    }
+  ],
+  "comparisons": []
+}

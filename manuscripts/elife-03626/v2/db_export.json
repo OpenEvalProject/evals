@@ -1,0 +1,2044 @@
+{
+  "submission": {
+    "id": "5007a2f6-da20-4a46-afac-968e185901e8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:21:56.811262Z",
+    "updated_at": "2025-11-28T21:21:56.811262Z"
+  },
+  "content": [
+    {
+      "id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "submission_id": "5007a2f6-da20-4a46-afac-968e185901e8",
+      "content_type": "manuscript",
+      "content_text": "# Pvr expression regulators in equilibrium signal control and maintenance of Drosophila blood progenitors\n\n## Authors\n\n- Bama Charan Mondal<sup>1</sup>\n- Jiwon Shim<sup>1</sup> ([ORCID: 0000-0003-2409-1130](https://orcid.org/0000-0003-2409-1130))\n- Cory J Evans<sup>1</sup> \u2020\n- Utpal Banerjee<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular, Cell and Developmental Biology University of California, Los Angeles Los Angeles United States\n2. Department of Life Science Hanyang University Seoul Republic of Korea\n3. Department of Biological Chemistry University of California, Los Angeles Los Angeles United States\n4. Molecular Biology Institute University of California, Los Angeles Los Angeles United States\n5. Eli and Edythe Broad Center of Regenerative Medicine and Stem Cell Research University of California, Los Angeles Los Angeles United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBlood progenitors within the lymph gland, a larval organ that supports hematopoiesis in Drosophila melanogaster, are maintained by integrating signals emanating from niche-like cells and those from differentiating blood cells. We term the signal from differentiating cells the \u2018equilibrium signal\u2019 in order to distinguish it from the \u2018niche signal\u2019. Earlier we showed that equilibrium signaling utilizes Pvr (the Drosophila PDGF/VEGF receptor), STAT92E, and adenosine deaminase-related growth factor A (ADGF-A) (Mondal et al., 2011). Little is known about how this signal initiates during hematopoietic development. To identify new genes involved in lymph gland blood progenitor maintenance, particularly those involved in equilibrium signaling, we performed a genetic screen that identified bip1 (bric \u00e0 brac interacting protein 1) and Nucleoporin 98 (Nup98) as additional regulators of the equilibrium signal. We show that the products of these genes along with the Bip1-interacting protein RpS8 (Ribosomal protein S8) are required for the proper expression of Pvr.\n\n## Introduction\n\nSimilar to vertebrates, blood cell differentiation in Drosophila is regulated in multiple hematopoietic environments, which include the head mesoderm of the embryo (Tepass et al., 1994; Lebestky et al., 2000; Milchanowski et al., 2004), the specialized, tissue-associated microenvironments of the larval periphery (e.g, body wall hematopoietic pockets) (Markus et al., 2009; Makhijani et al., 2011), and the larval lymph gland, an organ dedicated to the development of blood cells that normally contribute to the pupal and adult stages (Rizki, 1978; Shrestha and Gateff, 1982; Lanot et al., 2001; Jung et al., 2005). Understanding how blood cell development is regulated in the lymph gland is the primary goal underlying the work presented here. Differentiating blood cells (hemocytes) of the lymph gland are derived from multipotent progenitors (Jung et al., 2005; Mandal et al., 2007; Martinez-Agosto et al., 2007). These blood progenitors readily proliferate during the early growth phases of lymph gland development, which is followed by a period in which many of these cells slow their rate of division and are maintained without differentiation in a region termed the medullary zone (MZ, Figure 1) (Jung et al., 2005; Mandal et al., 2007). During the same period, other progenitor cells begin to differentiate along the peripheral edge of the lymph gland to give rise to a separate cortical zone (CZ) (Jung et al., 2005). How progenitor cell maintenance and differentiation are regulated during the course of lymph gland development has become a major area of exploration in recent years, and several different signaling pathways have been identified that maintain progenitor cells through the larval stages (Lebestky et al., 2003; Mandal et al., 2007; Owusu-Ansah and Banerjee, 2009; Sinenko et al., 2009; Mondal et al., 2011; Mukherjee et al., 2011; Tokusumi et al., 2011; Dragojlovic-Munther and Martinez-Agosto, 2012; Pennetier et al., 2012; Shim et al., 2012; Sinenko et al., 2012). Wingless (Wg; Wnt in vertebrates) is expressed by blood progenitor cells in the lymph gland and has an important role in promoting their maintenance (Sinenko et al., 2009), and reactive oxygen species (ROS) function in these cells to potentiate blood progenitor differentiation both in the context of normal development and during oxidative stress (Owusu-Ansah and Banerjee, 2009). Progenitor cell maintenance at late developmental stages is also dependent upon Hedgehog (Hh) signaling from a small population of cells called the posterior signaling center that functions as a hematopoietic niche (PSC) (Lebestky et al., 2003; Jung et al., 2005).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03626/elife-03626-fig1-v2.jpg)\n\n**Figure 1.:** The lymph gland primary lobe consists of three distinct cellular populations or zones. The medullary zone (MZ) contains blood progenitor cells while the nearby cortical zone (CZ) contains differentiating and mature blood cells. The posterior signaling center (PSC) functions as a supportive population (a niche) that expresses Hedgehog (Hh) and maintains the progenitor cells utilizing this \u2018niche signal\u2019. The receptor tyrosine kinase (RTK) Pvr and the STAT (STAT92E) transcriptional activator are required in CZ cells for the proper expression and secretion of the extracellular enzyme ADGF-A, which keeps the extracellular adenosine levels relatively low by converting it to inosine. The Pvr ligand Pvf1 is made in PSC cells and is transported through the lymph gland to activate Pvr in CZ cells. Collectively, we refer to the system that generates ADGF-A from the differentiating cells as \u2018equilibrium signaling\u2019, which is required independently of the niche-derived Hh signaling for the maintenance of progenitor blood cells in the MZ. Signaling events downstream of both ADGF-A and Hh (dashed arrows) cause the inhibition of Protein Kinase A (PKA) within progenitor blood cells, thereby promoting their maintenance. The individual components are color coded to match the schematic of the lymph gland. The equilibrium signal ADGF-A is blue, originating from the CZ; the niche signal Hh is magenta, originating in the PSC; PKA is gray, functioning in the MZ progenitor cells. Full details of this molecular pathway can be found in Mondal et al., (2011).\n\nMore recently, it has been discovered that the maintenance of lymph gland blood progenitors also requires a backward signal arising from the differentiating cells (Mondal et al., 2011). This signal is controlled by a novel pathway that combines the function of the receptor tyrosine kinase Pvr and JAK-independent STAT (STAT92E) activation in differentiating cells, followed by the expression of ADGF-A (Figure 1), a secreted enzyme that converts adenosine to inosine (Mondal et al., 2011). Extracellular adenosine is a well-established signal in mammalian systems in various contexts, particularly stress conditions (Fredholm, 2007; Sheth et al., 2014), and an elevated adenosine level in Drosophila causes extensive blood cell proliferation (Dolezal et al., 2005; Mondal et al., 2011). It has been demonstrated that differentiating and mature cells express (and are the primary source of) ADGF-A, and that its enzymatic activity (which converts adenosine to inosine) is required for progenitor cell maintenance (Mondal et al., 2011). As differentiation proceeds, ADGF-A expression (activity) increasingly promotes the maintenance of extant blood progenitors through the reduction of stimulatory adenosine. In this way, the differentiating cell population helps balance the progenitor/differentiating cell ratio and is the basis for our referring to ADGF-A as an \u2018equilibrium signal\u2019.\n\nLoss of ADGF-A (or STAT or Pvr) from differentiating cells increases extracellular adenosine level and thereby increases Adenosine Receptor (AdoR) signaling and downstream Protein Kinase A (PKA) activity in progenitors, which causes these cells to proliferate (Dolezal et al., 2005; Mondal et al., 2011). PKA is a central regulator of progenitor maintenance because it integrates input from both the equilibrium signal (ADGF-A) and the niche signal (Hh). PKA mediates the conversion of the transcriptional regulator Cubitus interruptus (Ci, a homolog of vertebrate Gli) from its full length form (Ci155), required for progenitor maintenance (Mandal et al., 2007), to a cleaved form (Ci75) that promotes proliferation. Signaling by Hh inhibits PKA and promotes Ci155 stabilization whereas adenosine/AdoR signaling activates PKA and promotes Ci75 conversion. Thus, both Hh (the niche signal) and ADGF-A (the equilibrium signal which removes adenosine) limit PKA activity and promote progenitor cell maintenance.\n\nAlthough niche and equilibrium signaling are both clearly important, details of their regulation and interaction are less clear. Thus, we performed a loss-of-function genetic screen to identify new genes involved in lymph gland blood progenitor maintenance, particularly those involved in equilibrium signaling. In this study, we report the results of this screen and the identification of three genes, bip1, RpS8, and Nup98, as new components of the equilibrium signaling pathway.\n\n## Results and discussion\n\n### HHLT-gal4 and its use for whole-animal genetic screening during hematopoietic development\n\nUnlike the adult eye or wing, analysis of internal larval tissues such as the lymph gland requires laborious dissection and processing. To circumvent this barrier to genetic screening, we generated a line of flies termed the Hand-Hemolectin Lineage Traced-gal4 line (HHLT-gal4 UAS-2XEGFP, Figure 2A; see \u2018Materials and methods\u2019 for precise genotype) in which the hematopoietic system is labeled by Gal4-dependent expression of EGFP, such that it can be visualized in live, whole animals (Figure 2B\u2013C). This line makes use of two gal4 drivers to target early lymph gland blood cells (hemocytes; Hand-gal4) and circulating and sessile blood cells (Hemolectin-gal4 or Hml-gal4) and incorporates a Gal4/FLP recombinase-dependent cell lineage tracing cassette to maintain Gal4 expression in the lymph gland after the Hand-gal4 driver itself is down-regulated during the first instar. The Hand-gal4 driver is expressed in the embryonic cardiogenic mesoderm from which the lymph gland is derived. Therefore, the dorsal vessel (heart) cardioblasts and the pericardial nephrocytes are also marked by the cell lineage tracing cassette (Figure 2B). EGFP is not expressed in other larval tissues, except in the late third-instar salivary glands that are readily discernible from the hematopoietic system (Figure 2B,E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03626/elife-03626-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic describing the key elements of the HHLT-gal4 driver line. (B) Image showing the hematopoietic system within a wandering stage third-instar HHLT > GFP larva (dorsal view). Primary, secondary, and tertiary lobes of the lymph gland are readily discernible through overlying musculature, epidermal cells, and cuticle. Lymph gland lobes develop bilaterally, flanking the larval heart (dorsal vessel, DV). Non-blood pericardial cells (PC) also express GFP due to early expression of Hand-gal4. Circulating/sessile blood cells also express GFP due to Hml-gal4 and sessile groups are easily observable. GFP is also seen in ventrally located salivary glands (SG, out of focus) of larvae beyond the third-instar transition (due to Hand-gal4). (C) HHLT > GFP control larvae; (D) HHLT > GFP larvae overexpressing Ras85D (LA 527) exhibit hyperproliferative lymph glands; (E) HHLT > GFP larvae overexpressing combgap (LA 630) show little or no GFP expression in the lymph gland region. Arrows indicate GFP fluorescence from salivary glands (SG).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03626/elife-03626-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) HHLT > GFP larvae (outcrossed to w1118) showing baseline fluorescence. (B\u2013B\u2032) HHLT > GFP larvae expressing UAS-human activated Raf (h-RafACT) show increased GFP fluorescence with the same exposure (B) as for control larvae (A) and exhibit enlarged lymph glands with reduced exposure time (B\u2032). (C) HHLT > GFP larvae expressing UAS-activated Drosophila Alk (DAlkACT) also exhibit enlarged lymph glands. (D and E) Relative bleed cell densities from control animals (D) and animals expressing UAS-DAlkACT (E) which show an expansion. (F) HHLT > GFP larvae expressing UAS-diap1-RNAi exhibit reduced fluorescence in lymph gland and circulating cells. The obvious changes in the level of HHLT-gal4-mediated EGFP expression observed in these backgrounds shows that HHLT-gal4 is indeed a useful tool with which to assess the hematopoietic system in vivo, in the context of a genetic screen.\n\n### Screening for progenitor maintenance genes in the developing lymph gland\n\nA screen was conducted in which HHLT-gal4 was used to independently misexpress 503 unique UAS-controlled Drosophila genes, with their effects on the hematopoietic system assessed in whole animals based upon EGFP expression. The particular collection of UAS-based gene misexpression lines used (termed LA lines) are mapped insertions (against Flybase release 5.7) of the P{Mae-UAS.6.11} element into endogenous gene loci that have been previously shown to cause developmental phenotypes upon misexpression (Crisp and Merriam, 1997; Bellen et al., 2004). When crossed to HHLT-gal4, 281 of these lines cause a scorable phenotype in either lymph glands or circulating blood cells of late third-instar larvae (Supplementary file 1). As an example, LA line 527, which is predicted to misexpress Ras85D, causes a robust expansion of the lymph gland (Figure 2D), consistent with the previously identified role of Ras85D in controlling hemocyte proliferation (Asha et al., 2003; Sinenko and Mathey-Prevot, 2004). By contrast, LA line 630 misexpresses the gene combgap (encoding a zinc finger transcription factor) and causes a strong reduction in lymph gland size (Figure 2E).\n\nWe used these results from the misexpression screen as a means to select potentially relevant genes for the subsequent loss-of-function analyses by RNA interference (using UAS-RNAi lines). We were able to obtain RNAi lines targeting 251 of the candidate genes identified by misexpression and found that 73 RNAi lines targeting 69 genes alter lymph gland size or morphology when crossed to HHLT-gal4 (Supplementary file 2).\n\nTo characterize the RNAi phenotypes in more detail, the level of blood cell differentiation within the lymph gland was evaluated by immunostaining with anti-Peroxidasin (Pxn) antibodies (Nelson et al., 1994). In wild-type lymph glands, expression of mature cell markers such as Pxn is restricted to the periphery of the primary lobe (the cortical zone) (Jung et al., 2005). By contrast, when niche signaling or equilibrium signaling are compromised, progenitor cells are lost and differentiation markers, including Pxn, are expressed throughout the lymph gland primary lobes (Mandal et al., 2007; Mondal et al., 2011). Rescreening the 73 identified RNAi lines using HHLT-gal4 identified 20 genes (21 RNAi lines) that, when knocked down, cause the expression of Pxn in cells throughout the lymph gland primary lobe (Figure 3; Table 1 and Supplementary file 2). Compared to controls, the progenitor population (Pxn negative) is either strongly reduced or absent in each RNAi background. This \u2018expanded\u2019 Pxn phenotype is interpreted as a loss-of-progenitor cell phenotype.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03626/elife-03626-fig3-v2.jpg)\n\n**Figure 3.:** Peroxidasin (Pxn, red) is normally restricted to cortical zone cells (near the periphery) (A, control) but is seen throughout the lymph gland in RNAi backgrounds (B\u2013V) expressed by HHLT-gal4. Line identifiers and gene targets are shown; additional details listed in Table 1. Images represent a single middle confocal section taken from a Z-plane series through the entire primary lobe.\n\n**Table 1.**\n RNAi lines and target genes causing an \u2018expanded\u2019 Peroxidasin expression phenotype with HHLT-gal4\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Line #</th>\n      <th>UAS-RNAi ID</th>\n      <th>RNAi target</th>\n      <th>Gene</th>\n      <th>Off targets</th>\n      <th>LG size/quality</th>\n      <th>Protein function</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>3859</td>\n      <td>CG4214</td>\n      <td>Syx5</td>\n      <td>0</td>\n      <td>Small/missing</td>\n      <td>Golgi SNARE</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>6543</td>\n      <td>CG7398</td>\n      <td>Trn</td>\n      <td>1</td>\n      <td>Large/baggy</td>\n      <td>hnRNP nuclear import</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>9572</td>\n      <td>CG5738</td>\n      <td>lolal</td>\n      <td>0</td>\n      <td>Small</td>\n      <td>Transcription factor</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>12574</td>\n      <td>CG12052</td>\n      <td>lola</td>\n      <td>0</td>\n      <td>Large/baggy</td>\n      <td>Transcription factor</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>12759</td>\n      <td>CG6854</td>\n      <td>CTPsyn</td>\n      <td>0</td>\n      <td>Small/baggy</td>\n      <td>CTP synthase</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>15886</td>\n      <td>CG6376</td>\n      <td>E2f</td>\n      <td>1</td>\n      <td>Small/normal</td>\n      <td>Transcription factor</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>17954</td>\n      <td>CG10009</td>\n      <td>Noa36</td>\n      <td>0</td>\n      <td>Small/missing</td>\n      <td>Zinc finger nucleolar protein</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>19485</td>\n      <td>CG10009</td>\n      <td>Noa36</td>\n      <td>0</td>\n      <td>Small/missing</td>\n      <td>Zinc finger nucleolar protein</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>22836</td>\n      <td>CG10267</td>\n      <td>Zif</td>\n      <td>0</td>\n      <td>Small/missing</td>\n      <td>Transcription factor</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>24215</td>\n      <td>CG8149</td>\n      <td>CG8149</td>\n      <td>0</td>\n      <td>Baggy</td>\n      <td>DNA binding protein</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>26176</td>\n      <td>CG3363</td>\n      <td>CG3363</td>\n      <td>0</td>\n      <td>Small</td>\n      <td>Unknown</td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>26370</td>\n      <td>CG4036</td>\n      <td>CG4036</td>\n      <td>1</td>\n      <td>Large</td>\n      <td>Oxidoreductase</td>\n    </tr>\n    <tr>\n      <td>13</td>\n      <td>38472</td>\n      <td>CG1129</td>\n      <td>CG1129</td>\n      <td>0</td>\n      <td>Small/missing</td>\n      <td>Peptide transferase</td>\n    </tr>\n    <tr>\n      <td>14</td>\n      <td>40306</td>\n      <td>CG31938</td>\n      <td>Rrp40</td>\n      <td>0</td>\n      <td>Small/normal</td>\n      <td>RNA exosome</td>\n    </tr>\n    <tr>\n      <td>15</td>\n      <td>41009</td>\n      <td>CG3836</td>\n      <td>stwl</td>\n      <td>0</td>\n      <td>Small/normal</td>\n      <td>Transcription factor</td>\n    </tr>\n    <tr>\n      <td>16</td>\n      <td>44606</td>\n      <td>CG6778</td>\n      <td>Aats-gly</td>\n      <td>0</td>\n      <td>Small/missing</td>\n      <td>Glycyl-tRNA synthetase</td>\n    </tr>\n    <tr>\n      <td>17</td>\n      <td>49753*</td>\n      <td>CG33155</td>\n      <td>CG33155</td>\n      <td>4</td>\n      <td>Small/normal</td>\n      <td>Unknown</td>\n    </tr>\n    <tr>\n      <td>18</td>\n      <td>7574R-2</td>\n      <td>CG7574</td>\n      <td>bip1</td>\n      <td>0</td>\n      <td>Small/baggy</td>\n      <td>Transcription factor</td>\n    </tr>\n    <tr>\n      <td>19</td>\n      <td>10198R-1</td>\n      <td>CG10198</td>\n      <td>Nup98-96</td>\n      <td>0</td>\n      <td>Small/missing</td>\n      <td>Nucleoporin</td>\n    </tr>\n    <tr>\n      <td>20</td>\n      <td>12030R-2</td>\n      <td>CG12030</td>\n      <td>Gale</td>\n      <td>0</td>\n      <td>Small</td>\n      <td>UDP-galactose 4'-epimerase</td>\n    </tr>\n    <tr>\n      <td>21</td>\n      <td>12765R-3</td>\n      <td>CG12765</td>\n      <td>fsd</td>\n      <td>0</td>\n      <td>Small/normal</td>\n      <td>F-box protein</td>\n    </tr>\n  </tbody>\n</table>\n\n_*This RNAi line targeting sequence overlaps with the putative mRpL53 gene in the same locus. Lines 1\u201317 from VDRC, lines 18\u201321 from NIG Japan._\n\n### Zone-specific screening identifies putative equilibrium signaling genes\n\nUsing the pan-lymph gland HHLT-gal4 driver, we identified 21 RNAi lines that cause a loss of progenitor cells in the primary lobes at late stages of lymph gland development. In order to discern whether any of the associated candidate genes have a specific progenitor-maintenance function that is restricted to cells belonging to a single zone, we rescreened the 21 RNAi lines using cell-type-specific Gal4-expressing lines. Targeting RNAi to differentiating and mature cells using Hml-gal4 (Sinenko and Mathey-Prevot, 2004) identified six genes (CG6854 [CTPsyn], CG7398 [Transportin], CG7574 [bip1], CG10009 [Noa36], CG10198 [Nup98, also known as Nup98-96], and CG31938 [Rrp40]) that cause an expansion of Pxn (Figure 4A\u2013G) and Hml-gal4, UAS EGFP (Figure 4H\u2013M) expression. Since the function of these genes is needed in the CZ for the maintenance of the MZ progenitors, these six genes encode likely candidates for new components of the equilibrium signaling pathway.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03626/elife-03626-fig4-v2.jpg)\n\n**Figure 4.:** RNAi from identified lines (Figure 3/Table 1) was expressed in lymph glands using Hml-gal4 UAS-GFP (Hml > GFP). In the control, Pxn (A) and GFP (A\u2032) are restricted to the cortical zone (periphery). By contrast, knock down of six candidate genes causes extensive expression of Pxn (B\u2013G) and Hml (Hml > GFP) (B\u2032\u2013G\u2032) throughout the lymph gland, indicating a loss of progenitors in these genetic backgrounds. The combined Pxn and Hml expression patterns for each genetic background are shown (MERGE, A\u2033\u2013G\u2033). DNA (blue) is stained to mark nuclei.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03626/elife-03626-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Control (dome-gal4 with no UAS-dsRNA) with Pxn expression (red) limited to the cortical zone of the lymph gland primary lobe; DNA (blue). (B\u2013L) Individual candidate genes identified by RNAi knockdown directly in progenitor cells using dome-gal4. RNAi for each gene causes the expansion of Pxn expression (red) throughout the primary lobes.\n\nScreening with dome-gal4 (Jung et al., 2005) to target RNAi to the progenitor cells identified eleven genes (Figure 4\u2014figure supplement 1A\u2013L), three of which (Transportin, Noa36, and Rrp40) are in common with those identified using Hml-gal4. By contrast, use of Antennapedia-gal4 (Antp-gal4) (Mandal et al., 2007) to target RNAi specifically to niche cells failed to identify any of the 21 lines as additional niche signaling components (not shown). Lastly, seven of the 21 RNAi lines did not cause a phenotype when expressed with any of the zone-specific Gal4 driver lines used. Taken together, our screen identified three genes, CTPsyn, bip1, and Nup98, which cause a loss of lymph gland progenitor cells upon RNAi knock down in differentiating cells, but not in progenitor cells or in niche cells. As described below, it was ultimately possible to connect two of these genes, bip1 and Nup98, to the equilibrium signaling pathway through the control of Pvr expression.\n\n### The bip1 gene functions in differentiating cells to regulate progenitor maintenance\n\nThe bip1 gene was originally identified through a yeast two-hybrid screen that showed that its encoded protein binds the BTB/POZ domain of the transcription factor Bric \u00e0 brac 1 (Bab1) (Pointud et al., 2001), a protein that has several developmental roles including the formation of ovarian terminal filament cells that are required for germline stem cell maintenance (Lin and Spradling, 1993; Sahut-Barnola et al., 1995; Couderc et al., 2002). Analysis of the predicted Bip1 amino acid sequence (InterPro) (Hunter et al., 2012) identifies a THAP domain containing a C2CH-type zinc finger motif that is known to bind DNA (Sabogal et al., 2010).\n\nAs no known bip1 mutants exist, several different approaches were used to validate the bip1 RNAi results and elucidate the function of the bip1 gene in differentiating the blood cells. First, qRT-PCR confirmed that bip1 is expressed in the lymph gland and demonstrated that the bip1 RNAi line (NIG 7574R-2) actually targets bip1 transcripts. Indeed, RNAi knock down of bip1 using Hml-gal4 (Sinenko and Mathey-Prevot, 2004; Jung et al., 2005) reduces bip1 mRNA levels in the lymph gland to approximately ten percent of that observed in controls (Figure 5A). The bip1 RNAi blood phenotype is also suppressible by the simultaneous overexpression of bip1 (UAS-bip1LA645; Figure 5B\u2013B'), demonstrating the specific requirement for bip1 in maintaining progenitors. Driving bip1 RNAi with Pxn-gal4, an alternative differentiating- and mature-cell driver to Hml-gal4, also causes the loss of progenitor cells (Figure 5C\u2013C\u2032), thereby confirming that bip1 knock-down in differentiating cells is key to its associated phenotype. Additionally, the progenitor cell marker dome-MESO-lacZ (Hombria et al., 2005; Krzemien et al., 2007) is strongly reduced relative to control lymph glands (Figure 5D\u2013D\u2032) in the bip1 RNAi (Hml-gal4) background. This result confirms that progenitor cells fail to be maintained in bip1 RNAi lymph glands, rather than ectopically upregulating Pxn and Hml-gal4 expression.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03626/elife-03626-fig5-v2.jpg)\n\n**Figure 5.:** (A) Quantitative RT-PCR demonstrates that bip1 is expressed in the lymph gland and that the RNAi line NIG 7574R-1 targeting bip1 indeed reduces bip1 transcript level when expressed using Hml-gal4. Hml-gal4 expresses GFP throughout the primary lobes in bip1 RNAi lymph glands (Hml > bip1-i, B), and this phenotype is suppressed by overexpression of bip1 (B\u2032), restoring both the cortical and the medullary zones. (C\u2013C\u2032) Expression of bip1 RNAi using Pxn-gal4 phenocopies obtained with Hml-gal4, further supporting a cell-type-specific function of bip1. Expression of the progenitor cell marker dome-MESO-lacZ (D) is strongly reduced in bip1 RNAi lymph glands (D\u2032), demonstrating that the gain in differentiation markers is due to the loss of progenitor cells that normally express dome-MESO-lacZ. RNAi knock down of RpS8, encoding a putative Bip1-interacting protein, causes the expansion of Pxn and Hml-gal4 expression throughout the lymph gland (E\u2013E\u2032), similar to that observed upon the loss of bip1.\n\nSeveral ribosomal components, including Ribosomal protein S8 (RpS8), have been shown to associate with chromatin at active transcription sites and to associate with nascent transcripts to form ribonucleoprotein complexes (Brogna et al., 2002). Interestingly, RpS8 has also been identified in genomic-scale yeast two-hybrid analyses as a Bip1-interacting protein (Giot et al., 2003; Formstecher et al., 2005; Stark et al., 2006), which suggests that Bip1 and RpS8 may function together in vivo to regulate gene expression. Consistent with this idea, RNAi knockdown of RpS8 also causes the expanded expression of both Pxn and Hml-gal4 UAS-GFP expression throughout the lymph gland primary lobes (Figure 5E\u2013E\u2032). This result reflects a specific function of RpS8 in these cells because knockdown directly in niche or progenitor cells (using Antp-gal4 and dome-gal4, respectively) does not cause their loss to differentiation (not shown). Thus, RpS8 RNAi effectively phenocopies bip1 RNAi, as both cause a loss of progenitor cells when knocked down in differentiating cells. Collectively, these data support a model in which Bip1 functions along with RpS8 in a protein complex within differentiating cells to maintain multipotent lymph gland progenitors at later stages of development, consistent with a potential function in the equilibrium signaling pathway.\n\n### bip1 functions genetically upstream of the equilibrium signaling pathway\n\nThe progenitor maintenance function of Pvr signaling in differentiated cells requires the downstream function of the STAT transcriptional activator and the secreted enzyme ADGF-A (Mondal et al., 2011), and, consistent with this relationship, overexpression of either activated STAT (STATACT) (Ekas et al., 2010) or ADGF-A in differentiating cells can suppress the Pvr loss-of-function phenotype (Mondal et al., 2011). Likewise, we find that overexpression of STATACT or ADGF-A can suppress the bip1 RNAi phenotype (Figure 6A\u2013D\u2032). Furthermore, overexpression of Pvr also strongly suppresses the bip1 RNAi phenotype, returning lymph gland morphology and organization to essentially wild type (Figure 6E\u2013E\u2032). By contrast, overexpression of bip1 does not suppress the Pvr RNAi phenotype (Hml-gal4 UAS-Pvr RNAi UAS-bip1LA645; not shown). Collectively, these results place bip1 function genetically upstream of Pvr and other equilibrium signaling components in lymph gland progenitor maintenance by differentiating cells.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/03626/elife-03626-fig6-v2.jpg)\n\n**Figure 6.:** Expression of bip1 RNAi in differentiating cells (Hml-gal4 or Hml>, B\u2013B\u2032) causes expansion of both Pxn and Hml-gal4 UAS-GFP throughout the lymph gland, as compared to controls (A\u2013A\u2032). Misexpression of either activated STAT (STATACT, C\u2013C\u2032), ADGF-A (D\u2013D\u2032), or Pvr (E\u2013E\u2032) partially (in the case of STAT activation or ADGF-A overexpression) or fully (in case of Pvr overexpression) suppresses this bip1 phenotype, suggesting that bip1 functions upstream of these genes. Expression of Pvr in control third-instar lymph glands (F\u2013F\u2032) and mid-second instar (40 hr post-hatching, G\u2013G\u2032). Reduced expression of Pvr is already apparent in bip1 RNAi lymph glands by 40 hr (H\u2013H\u2032), and this loss is even stronger in homozygous animals expressing higher levels of RNAi (I\u2013I\u2032); increased differentiation, based upon Hml-gal4 UAS-GFP expression, is also apparent (I). Strong suppression of Pvr is also observed in homozygous bip1 RNAi lymph glands (J\u2013J\u2032). RNAi knockdown of RpS8 also causes differentiation and the loss of Pvr expression (K\u2013K\u2032). Likewise, RNAi knockdown of Nup98 also causes differentiation and the loss of Pvr expression (L\u2013L\u2032). (M) Control background (Hml-gal4/+) showing normal expression of the differentiation marker Pxn in the cortical zone of the lymph gland. Progenitor cells in the MZ region are easily discerned by their lack of Pxn expression. By contrast, few progenitor cells (Pxn-negative cells) are observed in lymph glands when single-copy loss-of-function mutations of Pvr and Nup98 (PvrC2195/+; Nup98Df(3R)mbc-R1/+) are combined (M\u2032), further indicating the close interaction between these genes. The middle-third (confocal z-stack) of the primary lobe is shown. Misexpression of bip1 in this background is sufficient to suppress these phenotypes and restore Pvr expression to the lymph gland (N\u2013N\u2032).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03626/elife-03626-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Quantitative RT-PCR analysis demonstrating that RNAi knockdown of bip1 in lymph glands (A) and circulating cells (B) using Hml-gal4 causes a reduction in Pvr transcript levels to approximately 70% and 34% of the control (Hml-gal4 only) level, respectively. RpS8 RNAi using Hml-gal4 reduces Pvr to approximately 32% of the control level (C, circulating cells). Note that Hml-gal4 is only expressed in a subset of cells in the lymph gland but in the vast majority of cells in circulation.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03626/elife-03626-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Mock FLP-out Gal4-expressing clones (GFP-positive cells, green) show no reduction in Pvr expression (red, A\u2013A\u2032), whereas similar clones expressing Pvr RNAi show a very strong reduction in Pvr protein expression (B\u2013B\u2032). FLP-out Gal4-expressing clones expressing either bip1 RNAi (C\u2013C\u2032) or Nup98 RNAi (D\u2013D\u2032) also reduce Pvr protein levels, with bip1 RNAi exhibiting somewhat stronger effects. FLP-out clones were made using Hand-gal4 UAS-FLP Ay-gal4 UAS-GFP at 25\u00b0C. Restricting the RNAi knockdown of bip1 (F), Nup98 (G), or RpS8 (H) to circulating cells with srpHemo-gal4 (E) shows no effect on lymph gland Pvr levels.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03626/elife-03626-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Hml-gal4 control showing normal cortical zone expression (UAS-GFP). (A\u2032) Pvr is expressed normally throughout the primary lobe in control lymph gland in (A). (B\u2013B\u2032) Loss of Sec13 by RNAi (Hml-gal4 UAS-Sec13-i) does not cause increased differentiation (GFP expression) or the loss of Pvr expression (red). DNA, blue.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/03626/elife-03626-fig6-figsupp4-v2.jpg)\n\n**Figure 6\u2014figure supplement 4.:** The lymph gland marker P1 is normally restricted to the differentiated cells of the cortical zone. However, in collier1 (col1) mutants that lack niche signaling, P1 expression (A, green) is observed throughout, indicating strong differentiation and a lack of progenitor cells. In this background, Pvr is expressed at normal levels (A\u2032, compare with cortical zone levels in Figure 6F\u2032), indicating that loss of Pvr is not a general feature of highly differentiated lymph glands.\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/03626/elife-03626-fig6-figsupp5-v2.jpg)\n\n**Figure 6\u2014figure supplement 5.:** Compared with control levels (A, Hml-gal4), overexpression of bip1 (B, UAS-bip1LA645), Nup98 (C, UAS-Nup98 [Parrott et al., 2011]), or RpS8 (D, UAS-RpS8DP01446 [Staudt t al., 2005]) does not significantly affect Pvr levels (red). Likewise, RNAi knockdown of Nup154 (F), Nup214 (G), or Nup358 (H) (all with Hml-gal4) does not significantly alter Pvr level compared to controls (E), further supporting the specific function of Nup98 in Pvr regulation.\n\n### Bip1 and RpS8 control the equilibrium signaling pathway by regulating Pvr expression\n\nThe suppression of the bip1 RNAi phenotype by overexpression of Pvr suggested that bip1 may positively control Pvr expression during normal development. Indeed, a reduction in Pvr protein expression within the lymph gland is observed in the bip1 RNAi background by mid-second instar, soon after differentiation begins (\u223c40 hr post-hatching; Figure 6F\u2013J\u2032). This reduction in Pvr expression is even stronger (along with significantly increased differentiation, based upon Hml-gal4 expression) at the same developmental time point in larvae having two copies of Hml-gal4 UAS-bip1 RNAi (compare Figure 6I\u2032 with Figure 6H\u2032), further supporting the model that bip1 RNAi causes the loss of Pvr expression. By the late third instar (when the bip1 RNAi differentiation phenotype is most apparent), Pvr protein levels in the lymph gland remain strongly reduced (Figure 6J\u2013J\u2032).\n\nKnockdown of bip1 function in lymph glands by Hml-gal4-mediated RNAi reduces lymph gland Pvr transcript levels to approximately 70% of control levels (assessed by qRT-PCR; Figure 6\u2014figure supplement 1A), consistent with the observed loss of Pvr protein (Figure 6H\u2032\u2013J\u2032). However, because not all lymph gland cells express Hml (Hml-gal4), the actual reduction of Pvr transcript levels in cells expressing bip1 RNAi is likely to be greater than the observed total reduction. In support of this idea, bip1 RNAi in circulating blood cells (where greater than 90% express Hml-gal4) reduces Pvr transcript level to approximately 35% of the control level (Figure 6\u2014figure supplement 1B). Expression of bip1 RNAi in FLP-out Gal4-expressing cell clones made exclusively in the lymph gland strongly reduces Pvr levels compared to nearby cells not expressing RNAi as well as to mock clones (Figure 6\u2014figure supplement 2A\u2013C), consistent with the autonomous regulation of Pvr by bip1 in the lymph gland. Furthermore, bip1 RNAi expression with srpHemo-gal4 (Bruckner et al., 2004), which expresses in a large fraction of circulating cells but in few or no cells within the lymph gland, does not reduce lymph gland Pvr levels (Figure 6\u2014figure supplement 2E\u2013H). Collectively, these data indicate that bip1 is required for proper Pvr protein expression, and therefore proper equilibrium signaling, within the developing lymph gland.\n\nAs described above, RpS8 is a putative Bip1-interacting protein in vivo and RpS8 RNAi in differentiating lymph gland cells, like bip1 RNAi, causes the loss of progenitor cells (Figure 5F\u2013F\u2032). This effect is likely due to the loss of equilibrium signaling during development since RpS8 RNAi also reduces Pvr protein expression in the lymph gland (Figure 6K\u2013K\u2032). Knockdown of RpS8 by RNAi, as with knockdown of bip1, also reduces Pvr transcript levels (Figure 6\u2014figure supplement 1C). Interestingly, a Drosophila RNAi screen using the blood-related S2 cell line previously identified both Pvr and RpS8 as regulators of cell size and division (Sims et al., 2009). Although the relationship between Pvr and RpS8 was not explored, their results as well as ours are consistent with RpS8 having a regulatory role in Pvr expression in blood cells.\n\n### Nup98 also regulates Pvr expression\n\nIn addition to bip1, the screen described here identified Nup98 as a potential equilibrium signaling component because its knockdown in differentiating cells specifically causes a loss of progenitors cells (Figure 3T and Figure 4F\u2013F\u2032\u2032). Although Nup98 is widely known as a general component of the nuclear pore complex, recent work has demonstrated that Nup98 and other nuclear pore components such as Sec13 and Nup88, can regulate gene expression through the binding of target promoters (Capelson et al., 2010; Kalverda et al., 2010; Liang et al., 2013). Moreover, chromatin immunoprecipitation experiments identified bip1, RpS8, and the equilibrium signaling genes Pvr and STAT (STAT92E) as in vivo Nup98 regulatory targets (Capelson et al., 2010). Consistent with a function in regulation of equilibrium signaling genes, Nup98 knockdown specifically in differentiating cells of lymph glands causes a strong reduction in Pvr expression (Figure 6L\u2013L\u2032). By contrast, RNAi knockdown of the nucleoporin Sec13 in differentiating cells has no effect on the maintenance of progenitor cells or Pvr expression (Figure 6\u2014figure supplement 3) underscoring the specific role of Nup98 in Pvr expression control. Furthermore, the close genetic relationship between Nup98 and Pvr is illustrated by the fact that single-copy loss of these genes in combination causes extensive loss of progenitor cells to differentiation (Figure 6M\u2013M\u2032). Interestingly, overexpression of bip1 in Nup98 RNAi lymph glands (Hml-gal4 UAS-Nup98 RNAi UAS-bip1LA645) is sufficient to restore Pvr protein expression and to suppress the loss of progenitors to differentiation (based upon lymph gland morphology and Hml-gal4 expression; Figure 6N\u2013N\u2032).\n\nAs has been shown, knockdown of bip1, Nup98, or RpS8 in differentiating cells each causes a strong reduction in Pvr expression in the lymph gland. Our interpretation of this common phenotype is that each gene works in the equilibrium signaling pathway to control Pvr expression, although an alternative hypothesis is that the loss of Pvr expression is a common feature of highly differentiated lymph glands and is not specifically related to the function of these genes. To test this, Pvr expression was examined in collier (col) mutant lymph glands, which lack niche signaling and are strongly differentiated by late larval stages (Crozatier et al., 2004; Mandal et al., 2007), and was found to be normal (Figure 6\u2014figure supplement 4, compare with Pvr expression in wild-type cortical zone differentiating cells in Figure 6F\u2032). Thus, Pvr requires bip1, RpS8, and Nup98 for proper developmental expression in the lymph gland.\n\nSeveral genetic screens, including overexpression and enhancer/suppressor screens of mutant or tumor phenotypes, have been conducted in the fly hematopoietic system (Milchanowski et al., 2004; Zettervall et al., 2004; Stofanko et al., 2008; Avet-Rochex et al., 2010; Tan et al., 2012; Tokusumi et al., 2012); however, the screen described here represents the first loss-of-function screen targeting normal developmental mechanisms throughout the lymph gland. This was accomplished with the development and use of the pan-lymph gland expression tool HHLT-gal4 to drive UAS-mediated RNAi, which identified 20 different candidate genes that cause a loss of progenitor cells when knocked down within the lymph gland. From subsequent analyses using lymph gland zone-restricted Gal4 driver lines, we arrive at a model (Figure 7) in which Bip1, RpS8, and Nup98 are required in differentiating blood cells upstream of Pvr to control its expression and function in the equilibrium signaling pathway that maintains blood progenitors within the lymph gland. Future analyses will be required to identify additional components of this important signaling pathway and to provide more information about how equilibrium signaling interacts with other pathways in the control of blood cell progenitor maintenance, cell fate specification, and proliferation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/03626/elife-03626-fig7-v2.jpg)\n\n**Figure 7.:** Bip1, RpS8, and Nup98 are independently required for the expression of Pvr (direct arrows). Rescue of endogenous Pvr expression by misexpression of bip1 in the Nup98 RNAi background indicates that bip1 functions genetically downstream of Nup98 (dashed arrow) in the control of Pvr expression. Bip1 and RpS8 may work together in a complex (dashed line) to control Pvr expression in vivo. These components collectively comprise the known equilibrium signaling pathway working within the lymph gland to promote progenitor cell maintenance, along with the previously known Hh niche signaling mechanism.\n\nThe Pvr receptor, with its numerous developmental roles, is arguably one of the most important members of the Drosophila RTK family, yet most of what is known about Pvr stems from analyses of how it works in the context of intracellular signaling. Little is known about how Pvr gene or protein expression is regulated. Importantly, the work described here sheds new light upon this issue by demonstrating a role for bip1, RpS8, and Nup98 in the regulation of Pvr expression. Our data and that of others suggest that this regulation of Pvr is likely taking place at the gene level, although other mechanisms are also possible. Ribosomes are required for protein translation, however specific ribosomal components or subunits may selectively stabilize transcripts and/or mediate preferential translation (Xue and Barna, 2012), while nucleoporins control both nuclear entry of regulatory proteins and the exit of mRNAs to the cytoplasm, and specific subcomponents are known to exhibit differential functions in this regard (Strambio-De-Castillia et al., 2010). Thus, RpS8 and Nup98 may selectively affect Pvr expression post-transcriptionally through transcript stabilization, transport, and translation. Although the specific mechanisms of molecular control of Pvr expression by bip1, RpS8, and Nup98 remain to be determined, their function is clearly critical in mediating proper equilibrium signaling and, therefore, proper blood progenitor maintenance within the lymph gland. The finding that bip1 regulates Pvr expression in the context of hematopoietic equilibrium signaling represents the first functional association for bip1 in Drosophila. The predicted Bip1 protein exhibits only one recognizable structural sequence, namely a THAP domain that contains a putative DNA-binding zinc finger motif. Our results suggest that Bip1 behaves as a positive regulator of Pvr transcription, but whether this occurs directly through Bip1 interaction with the Pvr locus will require further investigation.\n\nUnderstanding how progenitor cell maintenance and homeostasis is controlled over developmental time is crucial for understanding normal cellular and tissue dynamics, especially in the context of ageing or disease. The identification of Bip1 and Nup98 as regulators of hematopoietic progenitors in Drosophila may be indicative of important conserved functions of related proteins within the vertebrate blood lineages similar to what has been shown previously for GATA, FOG, and RUNX factors (Waltzer et al., 2010). THAP-domain proteins are conserved across species and have been reported to have a variety of important functions in mammalian systems, including maintenance of murine embryonic stem cell pluripotency (Cayrol et al., 2007; Dejosez et al., 2008, 2010). What role, if any, THAP-domain proteins have in vertebrate blood progenitor maintenance (or hematopoiesis in general) remains to be established. Likewise, Nup98 has not been implicated in any normal hematopoietic role despite being a well-studied protein in other contexts.\n\nWith regard to the diseased state, mutations in the human THAP1 gene have been associated with dystonia (Fuchs et al., 2009; Paisan-Ruiz et al., 2009; Kaiser et al., 2010; Mazars et al., 2010), a neuromuscular disorder that causes repetitive, involuntary muscular contraction, and THAP1/Par4 protein complexes have been shown to promote apoptosis in leukemic blood cells in various experimental contexts in vitro (Lu et al., 2013; Zhang et al., 2014). Chromosomal translocations that generate Nup98 fusion proteins have been implicated in numerous human myelodysplastic syndromes and leukemias (Nishiyama et al., 1999; Ahuja et al., 2001; Lin et al., 2005; Nakamura, 2005; van Zutven et al., 2006; Slape et al., 2008; Kaltenbach et al., 2010; Murayama et al., 2013), further underscoring the need to explore Nup98 function in the hematopoietic system. Therefore, the study of bip1 and Nup98 in Drosophila, a powerful molecular genetic system, will likely be of benefit to understand the function of related vertebrate genes in normal and disease contexts.\n\n## Materials and methods\n\n### Fly stocks\n\nMisexpression P{Mae-UAS.6.11} inserts (LA lines) were obtained from John Merriam, UCLA (Los Angeles, California). UAS-RNAi lines were obtained from the Vienna Drosophila RNAi Center (VDRC, Vienna, Austria), the National Institute of Genetics (NIG, Kyoto, Japan), and the Bloomington Drosophila Stock Center (TRiP lines, BDSC, Bloomington, Indiana). The lines UAS-FLP.JD1, UAS-2XEGFP, P{GAL4-Act5C(FRT.CD2).P}S, UAS-human RafACT, Df(3R)mbc-R1, UAS-RpS8PD01446, and w1118 (BDSC 5905) were from the BDSC. Pvrc02195 was from Exelixis (available from BDSC, obtained from D Montell). Hml\u0394-gal4 UAS-2XEGFP (S Sinenko), Antp-gal4/TM6B Tb (S Cohen), P{ubi-gal80 ts}10; Antp-gal4/TM6B Tb (this lab), domeless-gal4 UAS-2XEYFP/FM7i (this lab), UAS-DAlkACT (R Palmer), dome-MESO-lacZ (S Brown), Pxn-gal4 (M Galko), UAS-STATACT (E Bach), UAS-ADGF-A (T Dolezal), collier1; P(col5-cDNA)/CyO-TM6B, Tb (M Crozatier), srpHemo-gal4 (K Br\u00fcckner), and Hand-gal4 (Z Han) have been previously described.\n\n### HHLT-gal4 construction and whole animal screening\n\nSecond chromosome inserts of Hand-gal4, Hml\u0394-gal4, UAS-FLP.JD1, and UAS-2XEGFP were recombined onto a single chromosome and placed with P{GAL4-Act5C(FRT.CD2).P}S on Chromosome 3. Because Gal4 reporter lines with specific, pan-lymph gland expression are unknown, we took advantage of a FLP-out lineage tracing approach that we have used previously to perpetually mark lymph gland cells (Jung et al., 2005; Evans et al., 2009). The Hand-gal4 reporter reflects the expression of the Hand gene, which is expressed in the cardiogenic mesoderm, from which the lymph gland is derived. Within the lymph gland, Hand-gal4 is expressed from the late embryo through the first larval instar but then is downregulated (Han and Olson, 2005). Using Hand-gal4 in conjunction with UAS-FLP and a FLP-out Gal4-expressing line (P{GAL4-Act5C(FRT.CD2).P}S) (Pignoni and Zipursky, 1997), lymph gland cells are perpetually with EGFP throughout all subsequent developmental stages. To express EGFP in circulating cells, we used Hemolectin-gal4 (Hml\u0394-gal4) (Sinenko and Mathey-Prevot, 2004), which is specific to mature blood cells both in circulation and in the lymph gland cortical zone (Jung et al., 2005). HHLT-gal4 expression is easily detectable in lymph glands and circulating cells of whole animals throughout larval development. Due to the embryonic activity of Hand-gal4, HHLT-gal4 also labels dorsal vessel cardioblasts and pericardial cells, although by late larval stages the expression of EGFP in the former is almost undetectable.\n\nHHLT-gal4 virgins were crossed to males from individual LA lines, RNAi lines, or w1118 as a control. All crosses were reared at 29\u00b0C to maximize Gal4 activity. Wandering third-instar larvae from control and experimental crosses were collected, washed with water, and placed in glass spot wells (Fisher) on ice to minimize movement. Animals were scored visually using a Zeiss Axioskop 2 compound fluorescence microscope. Non-screen images of HHLT > GFP larvae were collected with a Zeiss SteREO Lumar fluorescence microscope. Images were collected using either an AxioCam HRc or HRm camera with AxioVision software.\n\n### Tissue dissection and antibody staining and analysis\n\nLymph glands were dissected and processed as previously described (Jung et al., 2005). Briefly, lymph glands were dissecting from third-instar larvae in 1\u00d7 PBS, fixed in 4% formaldehyde/1\u00d7 PBS for 30 min, washed three times in 1\u00d7PBS with 0.4% Triton-X (1\u00d7 PBST) for 15 min each, blocked in 10% normal goat serum/1\u00d7 PBST for 30 min, followed by incubation with primary antibodies in block. Primary antibodies were incubated with tissue overnight at 4\u00b0C and then washed three times in 1\u00d7 PBST for 15 min each, reblocked for 15 min, followed by incubation with secondary antibodies for 3 hr at room temperature. Samples were washed three times in 1\u00d7 PBST, with TO-PRO-3 iodide (diluted 1:1000; Invitrogen, Carlsbad, California) added to the last wash to stain nuclei. Samples were washed briefly with 1\u00d7 PBS to remove excess TO-PRO-3 and detergent prior to mounting on glass slides in VectaShield (Vector Laboratories, Burlingame, California). Mouse anti-Peroxidasin was a kind gift from John and Lisa Fessler (UCLA) and was used at 1:1500 dilution. Rat anti-Pvr was a kind gift from Benny Shilo and was used at 1:400 dilution. Secondary Cy3-labeled antibodies were obtained from Jackson ImmunoResearch Laboratories Inc. (West Grove, Pennsylvania) and used at 1:500 dilution.\n\n### Quantitative real-time PCR analysis\n\nLymph glands from 50 third-instar larvae were isolated by dissection. For fat body analysis, ten third-instar larvae were used. RNA was extracted from these tissues with the RNeasy mini kit (Qiagen, Germantown, Maryland). Relative quantitative RT-PCR (comparative CT) was performed using Power SYBR Green RNA-to-CT 1-step kit (Applied Biosystems, Carlsbad, California) and a StepOne Real-Time PCR detection thermal cycler (Applied Biosystems) using primers specific for Pvr, bip1, and rp49. Primer sequences are: Pvr(forward), 5\u2032-TTCGGATTTCGATGGTGAAT-3\u2032; Pvr(reverse), 5\u2032-CGGACACTAAGCTGGTCGAT-3\u2032; bip1(forward), 5\u2032-CGGAGTTTATGGACAGCACA-3\u2032; bip1(reverse), 5\u2032-CCTTAGCAGGAGGAGGAGGT-3\u2032; rp49(forward), 5\u2032-GCTAAGCTGTCGCACAAATG-3\u2032; rp49(reverse), 5\u2032-GTTCGATCCGTAACCGATGT-3\u2032.\n",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "2ff9ee82-06bf-4967-9bcb-2b22637cc1c5",
+      "submission_id": "5007a2f6-da20-4a46-afac-968e185901e8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Benjamin Ohlstein, Columbia University Medical Center , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03626.020](https://doi.org/10.7554/eLife.03626.020)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cMaintenance of Drosophila blood progenitors by equilibrium signal regulators functioning in differentiating blood cells\u201d for consideration at eLife. Your article has been favorably evaluated by K (Vijay) VijayRaghavan (Senior editor) and 3 reviewers, one of whom served as a guest Reviewing editor.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis paper from Mondal and colleagues addresses how blood cell progenitors within the Drosophila larval lymph gland are maintained. The work follows on from an earlier Cell paper that showed the existence of an 'equilibrium signal' from differentiating blood cells centered around PVR. In this study the authors have carried out a well-designed screen to identify novel genes required for blood progenitor maintenance and successfully identify 20 novel regulators of this process. The study then focuses on those that regulate the 'equilibrium signal' in the differentiating cells, namely bip1 and Nup98. The upstream regulation of PVR is an understudied and very important question that has wide-reaching implications, which will likely benefit our understanding of the regulation of this receptor family across species.\n\nTechnically this paper is excellent, the screen is beautifully designed and the HHLT-gal4 line is likely to be a great resource to the research community. However, there is little follow up work to the screen. Whilst the screen must have been very labour intensive the paper does feel more like a 'technique paper' rather than a ground-breaking research paper. Therefore, the storyline of the manuscript would benefit from re-shaping and focusing, placing less emphasis on the early steps of screening and more on PVR regulation. The authors may even want the title to reflect this. Some experimental clarifications and amendments of the text would be required to make the manuscript suitable for publication.\n\nSubstantive concerns:\n\n1) The authors should address whether regulation of PVR by Nup98, bip1 and RpS8 is cell autonomous, or related to non-autonomous events, which could even originate from the population of tissue hemocytes/macrophages (by the authors called 'circulating hemocytes', see comment below), which express the same drivers as differentiating/-ed hemocytes of the LG (ie Hml-GAL4 and Pxn-GAL4). This overlap in expression is in fact a major caveat of most LG papers, an issue that receives increasing attention now that the biology of larval tissue hemocytes, the active hemocyte population of the larva, has been revealed in more detail (see below). The LG field would greatly benefit from an expression system for differentiated LG-hemocytes only (e.g. by inducible elimination of GAL4 in the earlier differentiated population of tissue hemocytes). However, in the absence of such a tool the authors need to retreat to other methods to demonstrate whether or not the presented regulation of PVR is cell autonomous. These methods should comprise:\n\n1a) Use of flipout-GAL4 to generate in vivo RNAi clones of the genes in question, assessing PVR expression and the GAL4 expressing clones (e.g. by UAS-GFP) in the LG. Side-by-side comparison of kd and control tissue should allow to evaluate cell autonomous effects.\n\n1b) Use of Hand-GAL4 with UAS-GAL4, or HHLT without Hml-GAL4, as driver to determine the effects of RNAi of the genes in question on LG PVR expression, in the absence of expression in tissue hemocytes.\n\n2) The authors show all genes of the RNAi screen that led to increased Pxn expression. Do all or just some of these kds affect PVR expression? Was this a selection criterion by the authors to go forward with specific genes?\n\n3) What is the overexpression phenotype of Nup98, bip1 and RpS8? From the phenotypes listed in Supplementary File 1 it looks as if they may not be fully complementary to the RNAi phenotypes. This is not a big issue as complex regulatory effects are possible, but nevertheless the authors should mention phenotypes and expression levels of PVR.\n\n4) The discussion mainly focuses on specific hypotheses, i.e. a functional transcription complex consisting of bip1 and RpL8, suggested by third party interaction reports, and Nup98 targeting the promoter of PVR and other genes by third party ChIP data. While these are possible mechanisms, the authors should also discuss alternative and more traditional scenarios, such as general roles of nuclear pore components and consequences of their loss-of-function, and a role of ribosomal subunits either as part of the general translation machinery or in the translation regulation of specific transcripts (see e.g. review by Xue and Barna Nat Rev Mol Cell Biol 2012). Do the authors know whether other nup genes or other ribosomal proteins also have an effect on PVR expression in their system? In this context it would be very interesting to find out whether the identified PVR upstream regulators, and maybe related genes of the same functional families, may have been found by other approaches such as genome-wide RNAi screening for PVR modifiers. Any information from complementary systems would greatly synergize with the observations made by the authors.\n\n5) Some phrasing of the manuscript is misleading and should be corrected.\n\n5a) In the introduction, the LG is presented as 'the larval hematopoietic organ'. This may mislead to think that all hemocyte tools have high LG specificity and no crosstalk with another blood cell population may take place. To provide a more balanced view, the population of larval self-renewing tissue hemocytes/macrophages needs to be mentioned, and appropriate literature should be cited (Markus PNAS 2009; Makhijani et al. Development 2011; Makhijani and Br\u00fcckner Fly 2012; Gold and Br\u00fcckner Exp Hematology 2014).\n\n5b) Related to this, when using Hml-GAL4 or another driver active in both the LG and tissue hemocyte populations, the authors should stay away from overstating specificity such as \u201coverexpression of bip1 in Nup98 RNAi lymph glands...\u201d (main text discussing Figure 6).\n\n5c) Hml-GAL4 does not only express in 'differentiating' hemocytes, but mainly in fully 'differentiated' hemocytes of both the tissue hemocyte population and differentiated LG hemocytes. The term 'differentiating' should therefore be used with caution.\n\n5d) 'Circulating hemocytes' should be changed to 'tissue hemocytes', which are also known as 'larval hemocytes'. Recent research has shown that this independent population of hemocytes is largely resident in inductive tissue microenvironments (Hematopoietic Pockets), and under unchallenged conditions enters circulation only gradually and rather late in larval life (see references above).\n",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "138eac8b-323c-44a7-8707-db3061c93bc2",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C1",
+      "claim": "Blood progenitors within the lymph gland are maintained by integrating signals emanating from niche-like cells and those from differentiating blood cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Blood progenitors within the lymph gland, a larval organ that supports hematopoiesis in Drosophila melanogaster, are maintained by integrating signals emanating from niche-like cells and those from differentiating blood cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a summary of the biological system being studied.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "3104155a-6a16-42d9-95d4-a5defada0564",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C2",
+      "claim": "The signal from differentiating cells is termed the 'equilibrium signal' to distinguish it from the 'niche signal'.",
+      "claim_type": "EXPLICIT",
+      "source": "We term the signal from differentiating cells the 'equilibrium signal' in order to distinguish it from the 'niche signal'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement made by the authors in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "81d9705d-270c-4eee-aedd-5a70b41ae22b",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C3",
+      "claim": "Equilibrium signaling utilizes Pvr (the Drosophila PDGF/VEGF receptor), STAT92E, and adenosine deaminase-related growth factor A (ADGF-A).",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier we showed that equilibrium signaling utilizes Pvr (the Drosophila PDGF/VEGF receptor), STAT92E, and adenosine deaminase-related growth factor A (ADGF-A) (Mondal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "d1c654af-d81c-40ea-977c-d0f984dd48e2",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C4",
+      "claim": "bip1 (bric \u00e0 brac interacting protein 1) is a regulator of the equilibrium signal.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify new genes involved in lymph gland blood progenitor maintenance, particularly those involved in equilibrium signaling, we performed a genetic screen that identified bip1 (bric \u00e0 brac interacting protein 1) and Nucleoporin 98 (Nup98) as additional regulators of the equilibrium signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the genetic screen described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "49dbf6b7-f18a-41cd-966f-94d07c38c388",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C5",
+      "claim": "Nucleoporin 98 (Nup98) is a regulator of the equilibrium signal.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify new genes involved in lymph gland blood progenitor maintenance, particularly those involved in equilibrium signaling, we performed a genetic screen that identified bip1 (bric \u00e0 brac interacting protein 1) and Nucleoporin 98 (Nup98) as additional regulators of the equilibrium signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the genetic screen described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "e62dae23-6a2b-463b-bdf5-ecc628c8640f",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C6",
+      "claim": "The products of bip1, Nup98, and RpS8 (Ribosomal protein S8) are required for the proper expression of Pvr.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the products of these genes along with the Bip1-interacting protein RpS8 (Ribosomal protein S8) are required for the proper expression of Pvr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "da1d9c45-b5ff-41e3-81a1-ea4dd351b769",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C7",
+      "claim": "Blood cell differentiation in Drosophila is regulated in the head mesoderm of the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to vertebrates, blood cell differentiation in Drosophila is regulated in multiple hematopoietic environments, which include the head mesoderm of the embryo (Tepass et al., 1994; Lebestky et al., 2000; Milchanowski et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "12a6e120-af9b-43b5-bb25-8559f098f34b",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C8",
+      "claim": "Blood cell differentiation in Drosophila is regulated in the specialized, tissue-associated microenvironments of the larval periphery (e.g, body wall hematopoietic pockets).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to vertebrates, blood cell differentiation in Drosophila is regulated in multiple hematopoietic environments, which include the head mesoderm of the embryo (Tepass et al., 1994; Lebestky et al., 2000; Milchanowski et al., 2004), the specialized, tissue-associated microenvironments of the larval periphery (e.g, body wall hematopoietic pockets) (Markus et al., 2009; Makhijani et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "66ad8625-c598-412e-a931-52e42c685e21",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C9",
+      "claim": "Blood cell differentiation in Drosophila is regulated in the larval lymph gland.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to vertebrates, blood cell differentiation in Drosophila is regulated in multiple hematopoietic environments, which include the head mesoderm of the embryo (Tepass et al., 1994; Lebestky et al., 2000; Milchanowski et al., 2004), the specialized, tissue-associated microenvironments of the larval periphery (e.g, body wall hematopoietic pockets) (Markus et al., 2009; Makhijani et al., 2011), and the larval lymph gland, an organ dedicated to the development of blood cells that normally contribute to the pupal and adult stages (Rizki, 1978; Shrestha and Gateff, 1982; Lanot et al., 2001; Jung et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "09921ede-539e-4417-b012-d2d47ec418f0",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C10",
+      "claim": "Differentiating blood cells (hemocytes) of the lymph gland are derived from multipotent progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Differentiating blood cells (hemocytes) of the lymph gland are derived from multipotent progenitors (Jung et al., 2005; Mandal et al., 2007; Martinez-Agosto et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "0a4f9ac6-8912-4115-82ec-8fa3f343745f",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C11",
+      "claim": "Blood progenitors readily proliferate during the early growth phases of lymph gland development.",
+      "claim_type": "EXPLICIT",
+      "source": "These blood progenitors readily proliferate during the early growth phases of lymph gland development, which is followed by a period in which many of these cells slow their rate of division and are maintained without differentiation in a region termed the medullary zone (MZ, Figure 1) (Jung et al., 2005; Mandal et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "73094803-ae3e-4883-b833-bb9e9bd1966a",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C12",
+      "claim": "Blood progenitors are maintained without differentiation in a region termed the medullary zone (MZ).",
+      "claim_type": "EXPLICIT",
+      "source": "These blood progenitors readily proliferate during the early growth phases of lymph gland development, which is followed by a period in which many of these cells slow their rate of division and are maintained without differentiation in a region termed the medullary zone (MZ, Figure 1) (Jung et al., 2005; Mandal et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "fd93a659-09a5-4739-ac07-76deede4873d",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C13",
+      "claim": "Progenitor cells begin to differentiate along the peripheral edge of the lymph gland to give rise to a separate cortical zone (CZ).",
+      "claim_type": "EXPLICIT",
+      "source": "During the same period, other progenitor cells begin to differentiate along the peripheral edge of the lymph gland to give rise to a separate cortical zone (CZ) (Jung et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "b3bdbe27-fdc5-4efd-a1c8-e2ad890a4f44",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C14",
+      "claim": "Wingless (Wg; Wnt in vertebrates) is expressed by blood progenitor cells in the lymph gland.",
+      "claim_type": "EXPLICIT",
+      "source": "Wingless (Wg; Wnt in vertebrates) is expressed by blood progenitor cells in the lymph gland and has an important role in promoting their maintenance (Sinenko et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "5824ba88-6c70-485e-8c33-cfd67fae5e2a",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C15",
+      "claim": "Wingless has an important role in promoting blood progenitor cell maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Wingless (Wg; Wnt in vertebrates) is expressed by blood progenitor cells in the lymph gland and has an important role in promoting their maintenance (Sinenko et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "64d143f9-ba7d-4664-94d1-35ad6b54d4d1",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C16",
+      "claim": "Reactive oxygen species (ROS) function in progenitor cells to potentiate blood progenitor differentiation both in the context of normal development and during oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "and reactive oxygen species (ROS) function in these cells to potentiate blood progenitor differentiation both in the context of normal development and during oxidative stress (Owusu-Ansah and Banerjee, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "70af8a53-dc70-4fcc-8f07-550879ef65da",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C17",
+      "claim": "Progenitor cell maintenance at late developmental stages is dependent upon Hedgehog (Hh) signaling from the posterior signaling center (PSC).",
+      "claim_type": "EXPLICIT",
+      "source": "Progenitor cell maintenance at late developmental stages is also dependent upon Hedgehog (Hh) signaling from a small population of cells called the posterior signaling center that functions as a hematopoietic niche (PSC) (Lebestky et al., 2003; Jung et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "4503f464-f6fe-49bf-b267-b6dfede91e35",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C18",
+      "claim": "The posterior signaling center (PSC) functions as a hematopoietic niche.",
+      "claim_type": "EXPLICIT",
+      "source": "Progenitor cell maintenance at late developmental stages is also dependent upon Hedgehog (Hh) signaling from a small population of cells called the posterior signaling center that functions as a hematopoietic niche (PSC) (Lebestky et al., 2003; Jung et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "ad923fca-704e-48db-8650-000c3c5293cd",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C19",
+      "claim": "The maintenance of lymph gland blood progenitors requires a backward signal arising from the differentiating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, it has been discovered that the maintenance of lymph gland blood progenitors also requires a backward signal arising from the differentiating cells (Mondal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "9d70fdb6-a8ee-4fbd-a425-7bdeb86b3af0",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C20",
+      "claim": "The backward signal from differentiating cells is controlled by a pathway that combines the function of the receptor tyrosine kinase Pvr and JAK-independent STAT (STAT92E) activation in differentiating cells, followed by the expression of ADGF-A.",
+      "claim_type": "EXPLICIT",
+      "source": "This signal is controlled by a novel pathway that combines the function of the receptor tyrosine kinase Pvr and JAK-independent STAT (STAT92E) activation in differentiating cells, followed by the expression of ADGF-A (Figure 1), a secreted enzyme that converts adenosine to inosine (Mondal et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to previous work and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "1c470345-0f32-40d1-b1ce-eb6cd1e6a86e",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C21",
+      "claim": "ADGF-A is a secreted enzyme that converts adenosine to inosine.",
+      "claim_type": "EXPLICIT",
+      "source": "This signal is controlled by a novel pathway that combines the function of the receptor tyrosine kinase Pvr and JAK-independent STAT (STAT92E) activation in differentiating cells, followed by the expression of ADGF-A (Figure 1), a secreted enzyme that converts adenosine to inosine (Mondal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "aa01f0b9-523b-47f3-9c01-bb63997b42f2",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C22",
+      "claim": "Extracellular adenosine is a well-established signal in mammalian systems in various contexts, particularly stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular adenosine is a well-established signal in mammalian systems in various contexts, particularly stress conditions (Fredholm, 2007; Sheth et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "c749860f-9f2f-4e82-8729-2d0397370ce8",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C23",
+      "claim": "An elevated adenosine level in Drosophila causes extensive blood cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "and an elevated adenosine level in Drosophila causes extensive blood cell proliferation (Dolezal et al., 2005; Mondal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "ccdefff2-3be2-47c5-8045-875133fcfd0b",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C24",
+      "claim": "Differentiating and mature cells express (and are the primary source of) ADGF-A.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been demonstrated that differentiating and mature cells express (and are the primary source of) ADGF-A, and that its enzymatic activity (which converts adenosine to inosine) is required for progenitor cell maintenance (Mondal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "da0b58e1-c20b-4c49-96a4-80e23b196b21",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C25",
+      "claim": "ADGF-A enzymatic activity (which converts adenosine to inosine) is required for progenitor cell maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been demonstrated that differentiating and mature cells express (and are the primary source of) ADGF-A, and that its enzymatic activity (which converts adenosine to inosine) is required for progenitor cell maintenance (Mondal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "fa1f2d3a-e3d5-4bd1-8f0f-7c505a791c1b",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C26",
+      "claim": "As differentiation proceeds, ADGF-A expression (activity) increasingly promotes the maintenance of extant blood progenitors through the reduction of stimulatory adenosine.",
+      "claim_type": "EXPLICIT",
+      "source": "As differentiation proceeds, ADGF-A expression (activity) increasingly promotes the maintenance of extant blood progenitors through the reduction of stimulatory adenosine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the equilibrium signaling model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "e7c9e150-3ed4-4f58-960a-40a9b2d8f745",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C27",
+      "claim": "Loss of ADGF-A from differentiating cells increases extracellular adenosine level.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of ADGF-A (or STAT or Pvr) from differentiating cells increases extracellular adenosine level and thereby increases Adenosine Receptor (AdoR) signaling and downstream Protein Kinase A (PKA) activity in progenitors, which causes these cells to proliferate (Dolezal et al., 2005; Mondal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "084b334e-856e-4b6b-adec-4b3259fc252d",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C28",
+      "claim": "Loss of STAT from differentiating cells increases extracellular adenosine level.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of ADGF-A (or STAT or Pvr) from differentiating cells increases extracellular adenosine level and thereby increases Adenosine Receptor (AdoR) signaling and downstream Protein Kinase A (PKA) activity in progenitors, which causes these cells to proliferate (Dolezal et al., 2005; Mondal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "4bb3811c-8ab3-4cc3-bc28-6de6cc29f784",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C29",
+      "claim": "Loss of Pvr from differentiating cells increases extracellular adenosine level.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of ADGF-A (or STAT or Pvr) from differentiating cells increases extracellular adenosine level and thereby increases Adenosine Receptor (AdoR) signaling and downstream Protein Kinase A (PKA) activity in progenitors, which causes these cells to proliferate (Dolezal et al., 2005; Mondal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "3454b086-5a0a-4c70-9ef3-fd85b1f93cba",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C30",
+      "claim": "Increased extracellular adenosine increases Adenosine Receptor (AdoR) signaling and downstream Protein Kinase A (PKA) activity in progenitors, which causes these cells to proliferate.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of ADGF-A (or STAT or Pvr) from differentiating cells increases extracellular adenosine level and thereby increases Adenosine Receptor (AdoR) signaling and downstream Protein Kinase A (PKA) activity in progenitors, which causes these cells to proliferate (Dolezal et al., 2005; Mondal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "0ad8e832-b722-40e7-b4b2-2f96df8f99cf",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C31",
+      "claim": "PKA is a central regulator of progenitor maintenance because it integrates input from both the equilibrium signal (ADGF-A) and the niche signal (Hh).",
+      "claim_type": "EXPLICIT",
+      "source": "PKA is a central regulator of progenitor maintenance because it integrates input from both the equilibrium signal (ADGF-A) and the niche signal (Hh).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the signaling model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "a1840dac-2a9b-4114-9737-3f68b5bc6a66",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C32",
+      "claim": "PKA mediates the conversion of the transcriptional regulator Cubitus interruptus (Ci, a homolog of vertebrate Gli) from its full length form (Ci155), required for progenitor maintenance, to a cleaved form (Ci75) that promotes proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "PKA mediates the conversion of the transcriptional regulator Cubitus interruptus (Ci, a homolog of vertebrate Gli) from its full length form (Ci155), required for progenitor maintenance (Mandal et al., 2007), to a cleaved form (Ci75) that promotes proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "f341f4a0-ab6f-41cc-89f1-73ad6a3dfc2a",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C33",
+      "claim": "Signaling by Hh inhibits PKA and promotes Ci155 stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Signaling by Hh inhibits PKA and promotes Ci155 stabilization whereas adenosine/AdoR signaling activates PKA and promotes Ci75 conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic description of the signaling pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "5773b214-4de9-4600-be41-15e0f306ae0b",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C34",
+      "claim": "Adenosine/AdoR signaling activates PKA and promotes Ci75 conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Signaling by Hh inhibits PKA and promotes Ci155 stabilization whereas adenosine/AdoR signaling activates PKA and promotes Ci75 conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic description of the signaling pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "7da3accb-e613-4eaf-be31-e554825dd1ac",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C35",
+      "claim": "Both Hh (the niche signal) and ADGF-A (the equilibrium signal which removes adenosine) limit PKA activity and promote progenitor cell maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both Hh (the niche signal) and ADGF-A (the equilibrium signal which removes adenosine) limit PKA activity and promote progenitor cell maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the signaling mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "901abb74-77a9-47ca-8f49-e712d105270f",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C36",
+      "claim": "The HHLT-gal4 line labels the hematopoietic system by Gal4-dependent expression of EGFP, such that it can be visualized in live, whole animals.",
+      "claim_type": "EXPLICIT",
+      "source": "To circumvent this barrier to genetic screening, we generated a line of flies termed the Hand-Hemolectin Lineage Traced-gal4 line (HHLT-gal4 UAS-2XEGFP, Figure 2A; see 'Materials and methods' for precise genotype) in which the hematopoietic system is labeled by Gal4-dependent expression of EGFP, such that it can be visualized in live, whole animals (Figure 2B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the tool developed for the screen, supported by Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "823ae097-f6f0-4d98-b5a8-a7f3755d5619",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C37",
+      "claim": "The HHLT-gal4 line makes use of two gal4 drivers to target early lymph gland blood cells (hemocytes; Hand-gal4) and circulating and sessile blood cells (Hemolectin-gal4 or Hml-gal4).",
+      "claim_type": "EXPLICIT",
+      "source": "This line makes use of two gal4 drivers to target early lymph gland blood cells (hemocytes; Hand-gal4) and circulating and sessile blood cells (Hemolectin-gal4 or Hml-gal4) and incorporates a Gal4/FLP recombinase-dependent cell lineage tracing cassette to maintain Gal4 expression in the lymph gland after the Hand-gal4 driver itself is down-regulated during the first instar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the genetic components of the HHLT-gal4 line.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "45c81adc-7c12-42c9-a06b-c5c548d7f1c9",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C38",
+      "claim": "The HHLT-gal4 line incorporates a Gal4/FLP recombinase-dependent cell lineage tracing cassette to maintain Gal4 expression in the lymph gland after the Hand-gal4 driver itself is down-regulated during the first instar.",
+      "claim_type": "EXPLICIT",
+      "source": "This line makes use of two gal4 drivers to target early lymph gland blood cells (hemocytes; Hand-gal4) and circulating and sessile blood cells (Hemolectin-gal4 or Hml-gal4) and incorporates a Gal4/FLP recombinase-dependent cell lineage tracing cassette to maintain Gal4 expression in the lymph gland after the Hand-gal4 driver itself is down-regulated during the first instar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the genetic components of the HHLT-gal4 line.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "2cd957bc-0945-4a96-8d40-c52c6976f16c",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C39",
+      "claim": "The Hand-gal4 driver is expressed in the embryonic cardiogenic mesoderm from which the lymph gland is derived.",
+      "claim_type": "EXPLICIT",
+      "source": "The Hand-gal4 driver is expressed in the embryonic cardiogenic mesoderm from which the lymph gland is derived.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the expression pattern of Hand-gal4.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "5f388fee-1abc-4cd7-bd6f-c6244e2a8beb",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C40",
+      "claim": "The dorsal vessel (heart) cardioblasts and the pericardial nephrocytes are marked by the cell lineage tracing cassette in HHLT-gal4.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the dorsal vessel (heart) cardioblasts and the pericardial nephrocytes are also marked by the cell lineage tracing cassette (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the expression pattern of HHLT-gal4, supported by Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "5dd4d4fd-3ab0-45e6-8d44-805e53273d5c",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C41",
+      "claim": "EGFP is not expressed in other larval tissues in HHLT-gal4, except in the late third-instar salivary glands.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFP is not expressed in other larval tissues, except in the late third-instar salivary glands that are readily discernible from the hematopoietic system (Figure 2B,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the expression pattern of HHLT-gal4, supported by Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "5c9d8cea-a955-4b4b-bb24-54afb2e6764c",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C42",
+      "claim": "A screen was conducted in which HHLT-gal4 was used to independently misexpress 503 unique UAS-controlled Drosophila genes.",
+      "claim_type": "EXPLICIT",
+      "source": "A screen was conducted in which HHLT-gal4 was used to independently misexpress 503 unique UAS-controlled Drosophila genes, with their effects on the hematopoietic system assessed in whole animals based upon EGFP expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the screening methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "eb213e0e-2ded-4492-9991-d468700bf1bb",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C43",
+      "claim": "When crossed to HHLT-gal4, 281 of the LA lines cause a scorable phenotype in either lymph glands or circulating blood cells of late third-instar larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "When crossed to HHLT-gal4, 281 of these lines cause a scorable phenotype in either lymph glands or circulating blood cells of late third-instar larvae (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the misexpression screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "7239196a-c93c-44b3-8b5e-cd6b8ca7d950",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C44",
+      "claim": "LA line 527, which is predicted to misexpress Ras85D, causes a robust expansion of the lymph gland.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, LA line 527, which is predicted to misexpress Ras85D, causes a robust expansion of the lymph gland (Figure 2D), consistent with the previously identified role of Ras85D in controlling hemocyte proliferation (Asha et al., 2003; Sinenko and Mathey-Prevot, 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the misexpression screen, supported by Figure 2D and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "d067ebb0-183e-49f7-b606-c8fc2208f596",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C45",
+      "claim": "LA line 630 misexpresses the gene combgap (encoding a zinc finger transcription factor) and causes a strong reduction in lymph gland size.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, LA line 630 misexpresses the gene combgap (encoding a zinc finger transcription factor) and causes a strong reduction in lymph gland size (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the misexpression screen, supported by Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "a2ebabbc-3e5c-45c0-b712-7732e03114cf",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C46",
+      "claim": "73 RNAi lines targeting 69 genes alter lymph gland size or morphology when crossed to HHLT-gal4.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to obtain RNAi lines targeting 251 of the candidate genes identified by misexpression and found that 73 RNAi lines targeting 69 genes alter lymph gland size or morphology when crossed to HHLT-gal4 (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the RNAi screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "046a0283-7efa-415f-93ac-0ef096214a87",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C47",
+      "claim": "In wild-type lymph glands, expression of mature cell markers such as Pxn is restricted to the periphery of the primary lobe (the cortical zone).",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type lymph glands, expression of mature cell markers such as Pxn is restricted to the periphery of the primary lobe (the cortical zone) (Jung et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of normal lymph gland organization, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "b8447072-1632-412c-877f-5bee5ae8980c",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C48",
+      "claim": "When niche signaling or equilibrium signaling are compromised, progenitor cells are lost and differentiation markers, including Pxn, are expressed throughout the lymph gland primary lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, when niche signaling or equilibrium signaling are compromised, progenitor cells are lost and differentiation markers, including Pxn, are expressed throughout the lymph gland primary lobes (Mandal et al., 2007; Mondal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the phenotype when signaling is disrupted, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "c15eeae1-3ea6-49dc-86b2-1c71c7945ef4",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C49",
+      "claim": "Rescreening the 73 identified RNAi lines using HHLT-gal4 identified 20 genes (21 RNAi lines) that, when knocked down, cause the expression of Pxn in cells throughout the lymph gland primary lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Rescreening the 73 identified RNAi lines using HHLT-gal4 identified 20 genes (21 RNAi lines) that, when knocked down, cause the expression of Pxn in cells throughout the lymph gland primary lobe (Figure 3; Table 1 and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the RNAi screen, supported by Figure 3 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "a992efa6-8308-44ae-a690-b5f6047302f2",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C50",
+      "claim": "The progenitor population (Pxn negative) is either strongly reduced or absent in each RNAi background that causes expanded Pxn expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to controls, the progenitor population (Pxn negative) is either strongly reduced or absent in each RNAi background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the RNAi screen results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "e049ff41-4255-4b7c-8be3-a5147eb905a5",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C51",
+      "claim": "Targeting RNAi to differentiating and mature cells using Hml-gal4 identified six genes (CG6854 [CTPsyn], CG7398 [Transportin], CG7574 [bip1], CG10009 [Noa36], CG10198 [Nup98, also known as Nup98-96], and CG31938 [Rrp40]) that cause an expansion of Pxn.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting RNAi to differentiating and mature cells using Hml-gal4 (Sinenko and Mathey-Prevot, 2004) identified six genes (CG6854 [CTPsyn], CG7398 [Transportin], CG7574 [bip1], CG10009 [Noa36], CG10198 [Nup98, also known as Nup98-96], and CG31938 [Rrp40]) that cause an expansion of Pxn (Figure 4A\u2013G) and Hml-gal4, UAS EGFP (Figure 4H\u2013M) expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the zone-specific RNAi screen, supported by Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "3dc7374b-20f3-468a-be94-acad308ec213",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C52",
+      "claim": "The six genes identified by Hml-gal4 screening encode likely candidates for new components of the equilibrium signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the function of these genes is needed in the CZ for the maintenance of the MZ progenitors, these six genes encode likely candidates for new components of the equilibrium signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the zone-specific screening results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "3999981b-dfa9-4769-b29c-04a597a4a5f7",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C53",
+      "claim": "Screening with dome-gal4 to target RNAi to the progenitor cells identified eleven genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Screening with dome-gal4 (Jung et al., 2005) to target RNAi to the progenitor cells identified eleven genes (Figure 4\u2014figure supplement 1A\u2013L), three of which (Transportin, Noa36, and Rrp40) are in common with those identified using Hml-gal4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the zone-specific RNAi screen, supported by Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "b44f4efb-32fd-44d4-a5ac-2f5330ca9782",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C54",
+      "claim": "Use of Antennapedia-gal4 (Antp-gal4) to target RNAi specifically to niche cells failed to identify any of the 21 lines as additional niche signaling components.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, use of Antennapedia-gal4 (Antp-gal4) (Mandal et al., 2007) to target RNAi specifically to niche cells failed to identify any of the 21 lines as additional niche signaling components (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the zone-specific RNAi screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "7ab21684-ef3b-41fe-99f1-0553c4287b19",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C55",
+      "claim": "Seven of the 21 RNAi lines did not cause a phenotype when expressed with any of the zone-specific Gal4 driver lines used.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, seven of the 21 RNAi lines did not cause a phenotype when expressed with any of the zone-specific Gal4 driver lines used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the zone-specific RNAi screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "677af61a-a801-4ff4-9fdc-a029a21dd356",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C56",
+      "claim": "CTPsyn, bip1, and Nup98 cause a loss of lymph gland progenitor cells upon RNAi knock down in differentiating cells, but not in progenitor cells or in niche cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our screen identified three genes, CTPsyn, bip1, and Nup98, which cause a loss of lymph gland progenitor cells upon RNAi knock down in differentiating cells, but not in progenitor cells or in niche cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the zone-specific screening results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "88cb519d-09bc-4e96-81af-1405831811e1",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C57",
+      "claim": "The bip1 gene was originally identified through a yeast two-hybrid screen that showed that its encoded protein binds the BTB/POZ domain of the transcription factor Bric \u00e0 brac 1 (Bab1).",
+      "claim_type": "EXPLICIT",
+      "source": "The bip1 gene was originally identified through a yeast two-hybrid screen that showed that its encoded protein binds the BTB/POZ domain of the transcription factor Bric \u00e0 brac 1 (Bab1) (Pointud et al., 2001), a protein that has several developmental roles including the formation of ovarian terminal filament cells that are required for germline stem cell maintenance (Lin and Spradling, 1993; Sahut-Barnola et al., 1995; Couderc et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about bip1, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "ffd10486-22ab-46d6-955e-6ac2e1fa7208",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C58",
+      "claim": "Bab1 has several developmental roles including the formation of ovarian terminal filament cells that are required for germline stem cell maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "The bip1 gene was originally identified through a yeast two-hybrid screen that showed that its encoded protein binds the BTB/POZ domain of the transcription factor Bric \u00e0 brac 1 (Bab1) (Pointud et al., 2001), a protein that has several developmental roles including the formation of ovarian terminal filament cells that are required for germline stem cell maintenance (Lin and Spradling, 1993; Sahut-Barnola et al., 1995; Couderc et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about Bab1, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "a22f30e5-5624-4191-9891-fa8fb7b7502f",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C59",
+      "claim": "Analysis of the predicted Bip1 amino acid sequence identifies a THAP domain containing a C2CH-type zinc finger motif that is known to bind DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the predicted Bip1 amino acid sequence (InterPro) (Hunter et al., 2012) identifies a THAP domain containing a C2CH-type zinc finger motif that is known to bind DNA (Sabogal et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of Bip1 protein structure, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "b8d52290-4057-42c0-8ce1-2c325450adc8",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C60",
+      "claim": "RNAi knock down of bip1 using Hml-gal4 reduces bip1 mRNA levels in the lymph gland to approximately ten percent of that observed in controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, RNAi knock down of bip1 using Hml-gal4 (Sinenko and Mathey-Prevot, 2004; Jung et al., 2005) reduces bip1 mRNA levels in the lymph gland to approximately ten percent of that observed in controls (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from qRT-PCR validation, supported by Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "76504d97-e3ab-4c3f-b905-9d85fcaaa834",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C61",
+      "claim": "The bip1 RNAi blood phenotype is suppressible by the simultaneous overexpression of bip1.",
+      "claim_type": "EXPLICIT",
+      "source": "The bip1 RNAi blood phenotype is also suppressible by the simultaneous overexpression of bip1 (UAS-bip1LA645; Figure 5B\u2013B'), demonstrating the specific requirement for bip1 in maintaining progenitors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from genetic rescue experiments, supported by Figure 5B-B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "e96ed8f6-b63b-4ff4-b1ba-b3a0d86cef4c",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C62",
+      "claim": "Driving bip1 RNAi with Pxn-gal4 causes the loss of progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Driving bip1 RNAi with Pxn-gal4, an alternative differentiating- and mature-cell driver to Hml-gal4, also causes the loss of progenitor cells (Figure 5C\u2013C\u2032), thereby confirming that bip1 knock-down in differentiating cells is key to its associated phenotype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from zone-specific RNAi experiments, supported by Figure 5C-C'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "fa5b7e49-fdee-4ff7-ad38-ff664228f3b9",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C63",
+      "claim": "The progenitor cell marker dome-MESO-lacZ is strongly reduced relative to control lymph glands in the bip1 RNAi (Hml-gal4) background.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the progenitor cell marker dome-MESO-lacZ (Hombria et al., 2005; Krzemien et al., 2007) is strongly reduced relative to control lymph glands (Figure 5D\u2013D\u2032) in the bip1 RNAi (Hml-gal4) background.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from marker analysis, supported by Figure 5D-D'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "5b590042-4274-4d0e-8a92-c34338980569",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C64",
+      "claim": "RpS8 has been identified in genomic-scale yeast two-hybrid analyses as a Bip1-interacting protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, RpS8 has also been identified in genomic-scale yeast two-hybrid analyses as a Bip1-interacting protein (Giot et al., 2003; Formstecher et al., 2005; Stark et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about RpS8, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "4772c5db-dee5-4aa2-b32a-f162a2078f6a",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C65",
+      "claim": "RNAi knockdown of RpS8 causes the expanded expression of both Pxn and Hml-gal4 UAS-GFP expression throughout the lymph gland primary lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, RNAi knockdown of RpS8 also causes the expanded expression of both Pxn and Hml-gal4 UAS-GFP expression throughout the lymph gland primary lobes (Figure 5E\u2013E\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from RNAi experiments, supported by Figure 5E-E'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "175ef59b-4c31-4a55-868d-564ed2ae619d",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C66",
+      "claim": "Knockdown of RpS8 directly in niche or progenitor cells (using Antp-gal4 and dome-gal4, respectively) does not cause their loss to differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This result reflects a specific function of RpS8 in these cells because knockdown directly in niche or progenitor cells (using Antp-gal4 and dome-gal4, respectively) does not cause their loss to differentiation (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from zone-specific RNAi experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "3681ff4f-83ef-452d-bbd7-ca7aad373da8",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C67",
+      "claim": "Overexpression of either activated STAT (STATACT) or ADGF-A in differentiating cells can suppress the Pvr loss-of-function phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The progenitor maintenance function of Pvr signaling in differentiated cells requires the downstream function of the STAT transcriptional activator and the secreted enzyme ADGF-A (Mondal et al., 2011), and, consistent with this relationship, overexpression of either activated STAT (STATACT) (Ekas et al., 2010) or ADGF-A in differentiating cells can suppress the Pvr loss-of-function phenotype (Mondal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about the equilibrium signaling pathway, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "64f53aa6-ed2a-4ae4-ad19-267402e9b96b",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C68",
+      "claim": "Overexpression of STATACT or ADGF-A can suppress the bip1 RNAi phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we find that overexpression of STATACT or ADGF-A can suppress the bip1 RNAi phenotype (Figure 6A\u2013D\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from genetic suppression experiments, supported by Figure 6A-D'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "8dd09b95-75cb-4de9-b044-34f4b1f9a72b",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C69",
+      "claim": "Overexpression of Pvr strongly suppresses the bip1 RNAi phenotype, returning lymph gland morphology and organization to essentially wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, overexpression of Pvr also strongly suppresses the bip1 RNAi phenotype, returning lymph gland morphology and organization to essentially wild type (Figure 6E\u2013E\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from genetic suppression experiments, supported by Figure 6E-E'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "cf1dd3eb-f2ce-437f-b719-6e9bbe54489b",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C70",
+      "claim": "Overexpression of bip1 does not suppress the Pvr RNAi phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, overexpression of bip1 does not suppress the Pvr RNAi phenotype (Hml-gal4 UAS-Pvr RNAi UAS-bip1LA645; not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from genetic suppression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "5e4959f3-591d-4232-9190-1c2e221cd5bd",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C71",
+      "claim": "bip1 function is genetically upstream of Pvr and other equilibrium signaling components in lymph gland progenitor maintenance by differentiating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results place bip1 function genetically upstream of Pvr and other equilibrium signaling components in lymph gland progenitor maintenance by differentiating cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the genetic suppression results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "4d51d172-f0b3-4c26-9791-13dbf7d2fd36",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C72",
+      "claim": "A reduction in Pvr protein expression within the lymph gland is observed in the bip1 RNAi background by mid-second instar, soon after differentiation begins (\u223c40 hr post-hatching).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a reduction in Pvr protein expression within the lymph gland is observed in the bip1 RNAi background by mid-second instar, soon after differentiation begins (\u223c40 hr post-hatching; Figure 6F\u2013J\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from immunostaining experiments, supported by Figure 6F-J'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "53183617-2d50-4006-bcf7-07adba1c0e0b",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C73",
+      "claim": "By the late third instar, Pvr protein levels in the lymph gland remain strongly reduced in bip1 RNAi backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "By the late third instar (when the bip1 RNAi differentiation phenotype is most apparent), Pvr protein levels in the lymph gland remain strongly reduced (Figure 6J\u2013J\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from immunostaining experiments, supported by Figure 6J-J'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "ea1083f8-9b43-43b0-b85f-0983525beee2",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C74",
+      "claim": "Knockdown of bip1 function in lymph glands by Hml-gal4-mediated RNAi reduces lymph gland Pvr transcript levels to approximately 70% of control levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of bip1 function in lymph glands by Hml-gal4-mediated RNAi reduces lymph gland Pvr transcript levels to approximately 70% of control levels (assessed by qRT-PCR; Figure 6\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from qRT-PCR experiments, supported by Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "2361c60c-edfd-4a35-a3ad-6754f5ef8e7f",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C75",
+      "claim": "bip1 RNAi in circulating blood cells reduces Pvr transcript level to approximately 35% of the control level.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this idea, bip1 RNAi in circulating blood cells (where greater than 90% express Hml-gal4) reduces Pvr transcript level to approximately 35% of the control level (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from qRT-PCR experiments, supported by Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "f361a0a9-6450-444a-98f8-5883d6017e3f",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C76",
+      "claim": "Expression of bip1 RNAi in FLP-out Gal4-expressing cell clones made exclusively in the lymph gland strongly reduces Pvr levels compared to nearby cells not expressing RNAi as well as to mock clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of bip1 RNAi in FLP-out Gal4-expressing cell clones made exclusively in the lymph gland strongly reduces Pvr levels compared to nearby cells not expressing RNAi as well as to mock clones (Figure 6\u2014figure supplement 2A\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from clonal analysis experiments, supported by Figure 6\u2014figure supplement 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "db2d21b1-b03f-4106-a67a-f6f35aea5c09",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C77",
+      "claim": "bip1 RNAi expression with srpHemo-gal4 does not reduce lymph gland Pvr levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, bip1 RNAi expression with srpHemo-gal4 (Bruckner et al., 2004), which expresses in a large fraction of circulating cells but in few or no cells within the lymph gland, does not reduce lymph gland Pvr levels (Figure 6\u2014figure supplement 2E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from zone-specific RNAi experiments, supported by Figure 6\u2014figure supplement 2E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "2437ee6f-c9da-43ac-afc7-af9bc1f6ae81",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C78",
+      "claim": "bip1 is required for proper Pvr protein expression, and therefore proper equilibrium signaling, within the developing lymph gland.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data indicate that bip1 is required for proper Pvr protein expression, and therefore proper equilibrium signaling, within the developing lymph gland.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretation of the bip1 experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "73a34e86-05d6-4762-ba83-d149ae8b9de8",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C79",
+      "claim": "RpS8 RNAi reduces Pvr protein expression in the lymph gland.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is likely due to the loss of equilibrium signaling during development since RpS8 RNAi also reduces Pvr protein expression in the lymph gland (Figure 6K\u2013K\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from immunostaining experiments, supported by Figure 6K-K'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "9b5a96fa-d35d-4fc9-a17e-25de233d755f",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C80",
+      "claim": "Knockdown of RpS8 by RNAi reduces Pvr transcript levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of RpS8 by RNAi, as with knockdown of bip1, also reduces Pvr transcript levels (Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from qRT-PCR experiments, supported by Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "8f59dfb0-3adf-45ba-95e1-152639311567",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C81",
+      "claim": "A Drosophila RNAi screen using the blood-related S2 cell line previously identified both Pvr and RpS8 as regulators of cell size and division.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a Drosophila RNAi screen using the blood-related S2 cell line previously identified both Pvr and RpS8 as regulators of cell size and division (Sims et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information from a previous study, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "94ec405f-a13c-4f21-bcfd-a912c223b6ed",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C82",
+      "claim": "Nup98 knockdown in differentiating cells specifically causes a loss of progenitors cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to bip1, the screen described here identified Nup98 as a potential equilibrium signaling component because its knockdown in differentiating cells specifically causes a loss of progenitors cells (Figure 3T and Figure 4F\u2013F\u2032\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the RNAi screen, supported by Figures 3T and 4F-F''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "9493e9eb-ed51-4b3d-b7d1-43d06455664d",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C83",
+      "claim": "Nup98 and other nuclear pore components such as Sec13 and Nup88 can regulate gene expression through the binding of target promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Nup98 is widely known as a general component of the nuclear pore complex, recent work has demonstrated that Nup98 and other nuclear pore components such as Sec13 and Nup88, can regulate gene expression through the binding of target promoters (Capelson et al., 2010; Kalverda et al., 2010; Liang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about Nup98, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "a455efe9-494a-472d-9b1b-bec1e599f1da",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C84",
+      "claim": "Chromatin immunoprecipitation experiments identified bip1, RpS8, and the equilibrium signaling genes Pvr and STAT (STAT92E) as in vivo Nup98 regulatory targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, chromatin immunoprecipitation experiments identified bip1, RpS8, and the equilibrium signaling genes Pvr and STAT (STAT92E) as in vivo Nup98 regulatory targets (Capelson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information from a previous study, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "37fd9017-ee04-4e37-a691-1add2155f3f8",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C85",
+      "claim": "Nup98 knockdown specifically in differentiating cells of lymph glands causes a strong reduction in Pvr expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a function in regulation of equilibrium signaling genes, Nup98 knockdown specifically in differentiating cells of lymph glands causes a strong reduction in Pvr expression (Figure 6L\u2013L\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from immunostaining experiments, supported by Figure 6L-L'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "8c7240f3-d22e-4efe-8c9e-ede8eccb6de3",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C86",
+      "claim": "RNAi knockdown of the nucleoporin Sec13 in differentiating cells has no effect on the maintenance of progenitor cells or Pvr expression.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, RNAi knockdown of the nucleoporin Sec13 in differentiating cells has no effect on the maintenance of progenitor cells or Pvr expression (Figure 6\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from RNAi experiments, supported by Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "dd641279-e48a-4983-98f8-47785228b18b",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C87",
+      "claim": "Single-copy loss of Nup98 and Pvr in combination causes extensive loss of progenitor cells to differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the close genetic relationship between Nup98 and Pvr is illustrated by the fact that single-copy loss of these genes in combination causes extensive loss of progenitor cells to differentiation (Figure 6M\u2013M\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from genetic interaction experiments, supported by Figure 6M-M'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "8bfa4a6d-9601-4bbf-a677-dde6150281d7",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C88",
+      "claim": "Overexpression of bip1 in Nup98 RNAi lymph glands is sufficient to restore Pvr protein expression and to suppress the loss of progenitors to differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, overexpression of bip1 in Nup98 RNAi lymph glands (Hml-gal4 UAS-Nup98 RNAi UAS-bip1LA645) is sufficient to restore Pvr protein expression and to suppress the loss of progenitors to differentiation (based upon lymph gland morphology and Hml-gal4 expression; Figure 6N\u2013N\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from genetic rescue experiments, supported by Figure 6N-N'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "f3fac8d5-910e-446b-8213-a6249d97bfc0",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C89",
+      "claim": "Pvr expression is normal in collier (col) mutant lymph glands, which lack niche signaling and are strongly differentiated by late larval stages.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, Pvr expression was examined in collier (col) mutant lymph glands, which lack niche signaling and are strongly differentiated by late larval stages (Crozatier et al., 2004; Mandal et al., 2007), and was found to be normal (Figure 6\u2014figure supplement 4, compare with Pvr expression in wild-type cortical zone differentiating cells in Figure 6F\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from mutant analysis, supported by Figure 6\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "f0ea26f6-ce88-404c-a761-c3e32e764a88",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C90",
+      "claim": "Pvr requires bip1, RpS8, and Nup98 for proper developmental expression in the lymph gland.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Pvr requires bip1, RpS8, and Nup98 for proper developmental expression in the lymph gland.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretation of the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "e226a77f-7025-4ce4-b279-f86a2f3b4683",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C91",
+      "claim": "Bip1, RpS8, and Nup98 are independently required for the expression of Pvr.",
+      "claim_type": "EXPLICIT",
+      "source": "Bip1, RpS8, and Nup98 are independently required for the expression of Pvr (direct arrows).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in the model in Figure 7.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "0fe9c4b2-9b9a-472f-a10d-64459271b7fb",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C92",
+      "claim": "Rescue of endogenous Pvr expression by misexpression of bip1 in the Nup98 RNAi background indicates that bip1 functions genetically downstream of Nup98 in the control of Pvr expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Rescue of endogenous Pvr expression by misexpression of bip1 in the Nup98 RNAi background indicates that bip1 functions genetically downstream of Nup98 (dashed arrow) in the control of Pvr expression.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in the model in Figure 7 and is based on the rescue experiment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "c848041d-c1ff-405b-8296-679d06aa7a4e",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C93",
+      "claim": "Bip1 and RpS8 may work together in a complex to control Pvr expression in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Bip1 and RpS8 may work together in a complex (dashed line) to control Pvr expression in vivo.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in the model in Figure 7 and is based on the yeast two-hybrid data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "54d42263-4739-488b-bd6d-d770ac5c8fe3",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C94",
+      "claim": "The predicted Bip1 protein exhibits only one recognizable structural sequence, namely a THAP domain that contains a putative DNA-binding zinc finger motif.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted Bip1 protein exhibits only one recognizable structural sequence, namely a THAP domain that contains a putative DNA-binding zinc finger motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of Bip1 protein structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "bde39e16-5693-4fca-9125-3e92b7a56efb",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C95",
+      "claim": "Bip1 behaves as a positive regulator of Pvr transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that Bip1 behaves as a positive regulator of Pvr transcription, but whether this occurs directly through Bip1 interaction with the Pvr locus will require further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "2e56a5c1-4ca1-4f8b-8cf2-7a3ade010591",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C96",
+      "claim": "The identification of Bip1 and Nup98 as regulators of hematopoietic progenitors in Drosophila may be indicative of important conserved functions of related proteins within the vertebrate blood lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of Bip1 and Nup98 as regulators of hematopoietic progenitors in Drosophila may be indicative of important conserved functions of related proteins within the vertebrate blood lineages similar to what has been shown previously for GATA, FOG, and RUNX factors (Waltzer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential conservation of function.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "d76f9421-8425-41da-9f5f-8b270a3cf621",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C97",
+      "claim": "THAP-domain proteins are conserved across species and have been reported to have a variety of important functions in mammalian systems, including maintenance of murine embryonic stem cell pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "THAP-domain proteins are conserved across species and have been reported to have a variety of important functions in mammalian systems, including maintenance of murine embryonic stem cell pluripotency (Cayrol et al., 2007; Dejosez et al., 2008, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about THAP-domain proteins, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "772dd269-d584-431c-bf1d-3ea38100a701",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C98",
+      "claim": "Mutations in the human THAP1 gene have been associated with dystonia.",
+      "claim_type": "EXPLICIT",
+      "source": "With regard to the diseased state, mutations in the human THAP1 gene have been associated with dystonia (Fuchs et al., 2009; Paisan-Ruiz et al., 2009; Kaiser et al., 2010; Mazars et al., 2010), a neuromuscular disorder that causes repetitive, involuntary muscular contraction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about THAP1, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "9b1c9a96-bf80-47a3-82de-45e8e0470fff",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C99",
+      "claim": "THAP1/Par4 protein complexes have been shown to promote apoptosis in leukemic blood cells in various experimental contexts in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "and THAP1/Par4 protein complexes have been shown to promote apoptosis in leukemic blood cells in various experimental contexts in vitro (Lu et al., 2013; Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about THAP1, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "58fb2df8-4825-4206-b885-86184fe29cab",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "claim_id": "C100",
+      "claim": "Chromosomal translocations that generate Nup98 fusion proteins have been implicated in numerous human myelodysplastic syndromes and leukemias.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromosomal translocations that generate Nup98 fusion proteins have been implicated in numerous human myelodysplastic syndromes and leukemias (Nishiyama et al., 1999; Ahuja et al., 2001; Lin et al., 2005; Nakamura, 2005; van Zutven et al., 2006; Slape et al., 2008; Kaltenbach et al., 2010; Murayama et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is background information about Nup98, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "04c71926-4d8f-41fd-a506-d14c1309af8d",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed the HHLT-gal4 line, a genetic tool that labels the hematopoietic system with EGFP in live whole animals. This line combines Hand-gal4 and Hemolectin-gal4 drivers with a lineage tracing cassette to maintain expression throughout larval development, enabling whole-animal screening of lymph gland phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 describe the construction and expression pattern of HHLT-gal4, supported by Figure 2 showing EGFP expression in lymph glands, circulating cells, and other tissues. The tool's design is clearly documented and its utility for screening is demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "e2dc014c-af25-48e8-b37b-b1c5817c24d6",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A misexpression screen using HHLT-gal4 to drive 503 UAS-controlled genes identified 281 lines causing scorable hematopoietic phenotypes. Follow-up RNAi screening of 251 candidate genes identified 73 RNAi lines (targeting 69 genes) that alter lymph gland size or morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 describe the screening methodology and results, supported by Figure 2 examples (Ras85D expansion, combgap reduction) and Supplementary files. The screen design is appropriate and results are clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "2cab988b-0205-41de-801f-c3677852d879",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Rescreening 73 RNAi lines with Pxn immunostaining identified 20 genes (21 RNAi lines) that cause loss of progenitor cells, evidenced by expanded Pxn expression throughout lymph gland primary lobes instead of restriction to the cortical zone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 describe the Pxn-based characterization of RNAi phenotypes, supported by Figure 3 showing expanded Pxn in 21 RNAi backgrounds and Table 1 listing the genes. The interpretation that expanded Pxn indicates progenitor loss is consistent with cited prior work (C48).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "3274e702-2d03-465b-98f8-9b07c9ea7b0e",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Zone-specific RNAi screening identified three genes (CTPsyn, bip1, Nup98) that cause progenitor loss specifically when knocked down in differentiating cells (Hml-gal4) but not in progenitor cells (dome-gal4) or niche cells (Antp-gal4), identifying them as candidate equilibrium signaling components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 describe zone-specific screening results supported by Figure 4 showing six genes with Hml-gal4 phenotypes and Figure 4\u2014supplement 1 showing dome-gal4 results. The logic that differentiating cell-specific requirements indicate equilibrium signaling involvement is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "ab30eeda-b7d7-4963-9a25-548590e12ce0",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "bip1 RNAi validation experiments demonstrate that knockdown reduces bip1 mRNA to ~10% of control, the phenotype is suppressible by bip1 overexpression, occurs with multiple differentiating cell drivers (Hml-gal4, Pxn-gal4), and causes loss of the progenitor marker dome-MESO-lacZ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 provide multiple lines of validation for bip1 RNAi specificity and phenotype, supported by Figure 5A (qRT-PCR), 5B-B' (rescue), 5C-C' (Pxn-gal4), and 5D-D' (dome-MESO-lacZ). These controls are appropriate and strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "7735638d-7836-44bd-b205-c7234aa24903",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RpS8, a putative Bip1-interacting protein identified by yeast two-hybrid, phenocopies bip1 when knocked down in differentiating cells, causing expanded Pxn and Hml-gal4 expression, but not when knocked down in niche or progenitor cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 establish RpS8 as functionally related to bip1, supported by prior yeast two-hybrid data (C64, citations) and Figure 5E-E' showing the RNAi phenotype. The zone-specific requirement parallels bip1, supporting a functional relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "fbcaef15-8c76-4f49-a4fb-da183ea00174",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Genetic suppression experiments show that overexpression of STATACT, ADGF-A, or Pvr can suppress the bip1 RNAi phenotype, but bip1 overexpression cannot suppress Pvr RNAi, placing bip1 genetically upstream of Pvr and other equilibrium signaling components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 describe epistasis experiments supported by Figure 6A-E' showing suppression by downstream components. The logic of genetic ordering is sound, though the interpretation assumes linear pathway relationships rather than more complex regulatory networks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "2b19fe1a-3083-4433-8d28-dfa63adf4a7c",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "bip1 is required for proper Pvr expression in the lymph gland. bip1 RNAi causes reduced Pvr protein by mid-second instar (~40 hr) and late third instar, reduces Pvr transcript to ~70% in lymph glands and ~35% in circulating cells, and acts cell-autonomously based on clonal analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C78 demonstrate bip1 regulation of Pvr through multiple approaches: immunostaining (Figure 6F-J'), qRT-PCR (Figure 6\u2014supplement 1A-B), clonal analysis (Figure 6\u2014supplement 2A-C), and zone-specific drivers (Figure 6\u2014supplement 2E-H). The evidence converges on cell-autonomous Pvr regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "52f27655-7092-4539-aa50-0278f57fc99d",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "RpS8 RNAi reduces both Pvr protein expression in the lymph gland and Pvr transcript levels, similar to bip1 RNAi, supporting a role for RpS8 in Pvr regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 show RpS8 effects on Pvr, supported by Figure 6K-K' (protein) and Figure 6\u2014supplement 1C (transcript). The parallel with bip1 strengthens the model that these proteins work together to regulate Pvr.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "fdb6936c-34f9-4a17-b62d-cecc2155897d",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Nup98 knockdown in differentiating cells causes progenitor loss and strongly reduces Pvr expression. Nup98 shows genetic interaction with Pvr (single-copy loss of both causes progenitor loss), and bip1 overexpression can rescue the Nup98 RNAi phenotype and restore Pvr expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82, C85-C88 establish Nup98 as a Pvr regulator through RNAi (Figures 3T, 4F-F'', 6L-L'), genetic interaction (Figure 6M-M'), and rescue by bip1 (Figure 6N-N'). The rescue experiment (C88) places bip1 downstream of Nup98, though the mechanism remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "175cd89c-0b0d-42cc-b4de-9a7135ce3d8d",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Pvr expression is normal in collier mutant lymph glands that lack niche signaling and are highly differentiated, demonstrating that reduced Pvr is not a general feature of differentiated lymph glands but specifically requires bip1, RpS8, and Nup98.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 provide an important control showing that Pvr loss is not simply a consequence of differentiation, supported by Figure 6\u2014supplement 4. This strengthens the conclusion that bip1, RpS8, and Nup98 specifically regulate Pvr expression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "1b6c9190-dec8-48b3-bcc9-663a6925803d",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A model is proposed where Bip1, RpS8, and Nup98 are independently required for Pvr expression, with bip1 functioning genetically downstream of Nup98 (based on rescue experiments), and Bip1 and RpS8 potentially working together in a complex (based on yeast two-hybrid data).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91-C93 present a model (Figure 7) integrating the genetic data. While the epistasis relationships are supported by rescue experiments (C88, C92), the model assumes independent requirements (C91) and potential complex formation (C93) that are not directly tested. The model is reasonable but speculative regarding molecular mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "5369286f-5938-4866-b57d-22494a9422b0",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A genetic screen identified bip1 and Nup98 as regulators of the equilibrium signal, and these genes along with RpS8 are required for proper Pvr expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 summarize the main findings, which are well-supported by the screening data (C42-C56), validation experiments (C60-C66), and Pvr expression analyses (C72-C90). This represents the core discovery of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on equilibrium signaling: Blood progenitors in the lymph gland are maintained by integrating niche signals and equilibrium signals from differentiating cells. The equilibrium signal utilizes Pvr, STAT92E, and ADGF-A to control adenosine levels, which regulate PKA activity and progenitor maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C19-C35 provide background on the equilibrium signaling pathway, supported by citations to prior work (primarily Mondal et al., 2011). This establishes the context for the current study but represents prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "325efee5-c455-4ee7-a749-9c855671dd3d",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background on Drosophila hematopoiesis: Blood cell differentiation occurs in multiple environments including the embryonic head mesoderm, larval periphery, and lymph gland. The lymph gland contains progenitors in the medullary zone and differentiating cells in the cortical zone, maintained by signals including Wnt, ROS, and Hedgehog from the PSC niche.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C18 provide background on Drosophila hematopoiesis, supported by extensive citations to prior work. This contextualizes the study but represents established knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "80060be8-3520-4486-9d5a-6044ba0d46f1",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background on bip1: The bip1 gene encodes a protein with a THAP domain containing a DNA-binding zinc finger motif. It was originally identified as binding Bab1, a transcription factor involved in ovarian terminal filament cell formation required for germline stem cell maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59, C94 provide background on bip1 structure and prior identification, supported by citations. This contextualizes the gene but represents prior knowledge. The structural information (THAP domain) is relevant for interpreting bip1 function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "0d9d6284-e5b3-407f-993e-3df3b3d3c4ca",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on Nup98: Nup98 and other nucleoporins can regulate gene expression through promoter binding. Chromatin immunoprecipitation identified bip1, RpS8, Pvr, and STAT92E as in vivo Nup98 regulatory targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 provide background on Nup98 function from prior work (Capelson et al., 2010), which identified bip1, RpS8, and equilibrium signaling genes as Nup98 targets. This prior ChIP data supports the functional connection found in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "d4e12093-b028-46ce-b0d7-0c7728301d77",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Interpretation: Bip1 behaves as a positive regulator of Pvr transcription, though whether this occurs directly through Bip1 interaction with the Pvr locus requires further investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C95 provides a cautious interpretation of the data. The positive regulatory role is supported by loss-of-function and rescue experiments, but the authors appropriately note that direct transcriptional regulation remains to be demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "90fa6f6a-0bad-4f6b-ba56-204b1cc9f2f8",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Discussion of potential conservation and disease relevance: The identification of Bip1 and Nup98 as hematopoietic regulators may indicate conserved functions in vertebrates. THAP-domain proteins have roles in mammalian stem cell maintenance, THAP1 mutations are associated with dystonia and leukemic cell apoptosis, and Nup98 translocations are implicated in myelodysplastic syndromes and leukemias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C100 discuss potential conservation and disease relevance, supported by citations to prior work on THAP proteins and Nup98 in disease. However, these are speculative connections (C96 uses 'may be indicative') without direct experimental evidence linking the Drosophila findings to vertebrate biology or disease mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "f6e2ccf2-60ee-4cbe-a412-ed4b29cf3977",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background on adenosine and related screens: Extracellular adenosine is a well-established signal in mammalian stress conditions, elevated adenosine causes blood cell proliferation in Drosophila, and a prior S2 cell screen identified both Pvr and RpS8 as regulators of cell size and division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23, C81 provide relevant background on adenosine signaling and prior screening results, supported by citations. The S2 cell screen result (C81) provides independent support for a Pvr-RpS8 connection, though the relationship was not explored in that study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    },
+    {
+      "id": "ea328911-6f4f-41ea-8240-aab73a6495ee",
+      "content_id": "8cd051a4-8d99-4f2e-93f2-d5d315c7466f",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Background on Pvr pathway: Overexpression of activated STAT or ADGF-A in differentiating cells can suppress the Pvr loss-of-function phenotype, establishing the downstream pathway relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 describes prior work (Mondal et al., 2011) establishing the Pvr\u2192STAT\u2192ADGF-A pathway. This provides the framework for interpreting the suppression experiments in the current study (C68-C71).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:21:56.811262Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "901abb74-77a9-47ca-8f49-e712d105270f",
+      "result_id": "04c71926-4d8f-41fd-a506-d14c1309af8d"
+    },
+    {
+      "claim_id": "823ae097-f6f0-4d98-b5a8-a7f3755d5619",
+      "result_id": "04c71926-4d8f-41fd-a506-d14c1309af8d"
+    },
+    {
+      "claim_id": "45c81adc-7c12-42c9-a06b-c5c548d7f1c9",
+      "result_id": "04c71926-4d8f-41fd-a506-d14c1309af8d"
+    },
+    {
+      "claim_id": "2cd957bc-0945-4a96-8d40-c52c6976f16c",
+      "result_id": "04c71926-4d8f-41fd-a506-d14c1309af8d"
+    },
+    {
+      "claim_id": "5f388fee-1abc-4cd7-bd6f-c6244e2a8beb",
+      "result_id": "04c71926-4d8f-41fd-a506-d14c1309af8d"
+    },
+    {
+      "claim_id": "5dd4d4fd-3ab0-45e6-8d44-805e53273d5c",
+      "result_id": "04c71926-4d8f-41fd-a506-d14c1309af8d"
+    },
+    {
+      "claim_id": "5c9d8cea-a955-4b4b-bb24-54afb2e6764c",
+      "result_id": "e2dc014c-af25-48e8-b37b-b1c5817c24d6"
+    },
+    {
+      "claim_id": "eb213e0e-2ded-4492-9991-d468700bf1bb",
+      "result_id": "e2dc014c-af25-48e8-b37b-b1c5817c24d6"
+    },
+    {
+      "claim_id": "7239196a-c93c-44b3-8b5e-cd6b8ca7d950",
+      "result_id": "e2dc014c-af25-48e8-b37b-b1c5817c24d6"
+    },
+    {
+      "claim_id": "d067ebb0-183e-49f7-b606-c8fc2208f596",
+      "result_id": "e2dc014c-af25-48e8-b37b-b1c5817c24d6"
+    },
+    {
+      "claim_id": "a2ebabbc-3e5c-45c0-b712-7732e03114cf",
+      "result_id": "e2dc014c-af25-48e8-b37b-b1c5817c24d6"
+    },
+    {
+      "claim_id": "046a0283-7efa-415f-93ac-0ef096214a87",
+      "result_id": "2cab988b-0205-41de-801f-c3677852d879"
+    },
+    {
+      "claim_id": "b8447072-1632-412c-877f-5bee5ae8980c",
+      "result_id": "2cab988b-0205-41de-801f-c3677852d879"
+    },
+    {
+      "claim_id": "c15eeae1-3ea6-49dc-86b2-1c71c7945ef4",
+      "result_id": "2cab988b-0205-41de-801f-c3677852d879"
+    },
+    {
+      "claim_id": "a992efa6-8308-44ae-a690-b5f6047302f2",
+      "result_id": "2cab988b-0205-41de-801f-c3677852d879"
+    },
+    {
+      "claim_id": "e049ff41-4255-4b7c-8be3-a5147eb905a5",
+      "result_id": "3274e702-2d03-465b-98f8-9b07c9ea7b0e"
+    },
+    {
+      "claim_id": "3dc7374b-20f3-468a-be94-acad308ec213",
+      "result_id": "3274e702-2d03-465b-98f8-9b07c9ea7b0e"
+    },
+    {
+      "claim_id": "3999981b-dfa9-4769-b29c-04a597a4a5f7",
+      "result_id": "3274e702-2d03-465b-98f8-9b07c9ea7b0e"
+    },
+    {
+      "claim_id": "b44f4efb-32fd-44d4-a5ac-2f5330ca9782",
+      "result_id": "3274e702-2d03-465b-98f8-9b07c9ea7b0e"
+    },
+    {
+      "claim_id": "7ab21684-ef3b-41fe-99f1-0553c4287b19",
+      "result_id": "3274e702-2d03-465b-98f8-9b07c9ea7b0e"
+    },
+    {
+      "claim_id": "677af61a-a801-4ff4-9fdc-a029a21dd356",
+      "result_id": "3274e702-2d03-465b-98f8-9b07c9ea7b0e"
+    },
+    {
+      "claim_id": "b8d52290-4057-42c0-8ce1-2c325450adc8",
+      "result_id": "ab30eeda-b7d7-4963-9a25-548590e12ce0"
+    },
+    {
+      "claim_id": "76504d97-e3ab-4c3f-b905-9d85fcaaa834",
+      "result_id": "ab30eeda-b7d7-4963-9a25-548590e12ce0"
+    },
+    {
+      "claim_id": "e96ed8f6-b63b-4ff4-b1ba-b3a0d86cef4c",
+      "result_id": "ab30eeda-b7d7-4963-9a25-548590e12ce0"
+    },
+    {
+      "claim_id": "fa5b7e49-fdee-4ff7-ad38-ff664228f3b9",
+      "result_id": "ab30eeda-b7d7-4963-9a25-548590e12ce0"
+    },
+    {
+      "claim_id": "5b590042-4274-4d0e-8a92-c34338980569",
+      "result_id": "7735638d-7836-44bd-b205-c7234aa24903"
+    },
+    {
+      "claim_id": "4772c5db-dee5-4aa2-b32a-f162a2078f6a",
+      "result_id": "7735638d-7836-44bd-b205-c7234aa24903"
+    },
+    {
+      "claim_id": "175ef59b-4c31-4a55-868d-564ed2ae619d",
+      "result_id": "7735638d-7836-44bd-b205-c7234aa24903"
+    },
+    {
+      "claim_id": "64f53aa6-ed2a-4ae4-ad19-267402e9b96b",
+      "result_id": "fbcaef15-8c76-4f49-a4fb-da183ea00174"
+    },
+    {
+      "claim_id": "8dd09b95-75cb-4de9-b044-34f4b1f9a72b",
+      "result_id": "fbcaef15-8c76-4f49-a4fb-da183ea00174"
+    },
+    {
+      "claim_id": "cf1dd3eb-f2ce-437f-b719-6e9bbe54489b",
+      "result_id": "fbcaef15-8c76-4f49-a4fb-da183ea00174"
+    },
+    {
+      "claim_id": "5e4959f3-591d-4232-9190-1c2e221cd5bd",
+      "result_id": "fbcaef15-8c76-4f49-a4fb-da183ea00174"
+    },
+    {
+      "claim_id": "4d51d172-f0b3-4c26-9791-13dbf7d2fd36",
+      "result_id": "2b19fe1a-3083-4433-8d28-dfa63adf4a7c"
+    },
+    {
+      "claim_id": "53183617-2d50-4006-bcf7-07adba1c0e0b",
+      "result_id": "2b19fe1a-3083-4433-8d28-dfa63adf4a7c"
+    },
+    {
+      "claim_id": "ea1083f8-9b43-43b0-b85f-0983525beee2",
+      "result_id": "2b19fe1a-3083-4433-8d28-dfa63adf4a7c"
+    },
+    {
+      "claim_id": "2361c60c-edfd-4a35-a3ad-6754f5ef8e7f",
+      "result_id": "2b19fe1a-3083-4433-8d28-dfa63adf4a7c"
+    },
+    {
+      "claim_id": "f361a0a9-6450-444a-98f8-5883d6017e3f",
+      "result_id": "2b19fe1a-3083-4433-8d28-dfa63adf4a7c"
+    },
+    {
+      "claim_id": "db2d21b1-b03f-4106-a67a-f6f35aea5c09",
+      "result_id": "2b19fe1a-3083-4433-8d28-dfa63adf4a7c"
+    },
+    {
+      "claim_id": "2437ee6f-c9da-43ac-afc7-af9bc1f6ae81",
+      "result_id": "2b19fe1a-3083-4433-8d28-dfa63adf4a7c"
+    },
+    {
+      "claim_id": "73a34e86-05d6-4762-ba83-d149ae8b9de8",
+      "result_id": "52f27655-7092-4539-aa50-0278f57fc99d"
+    },
+    {
+      "claim_id": "9b5a96fa-d35d-4fc9-a17e-25de233d755f",
+      "result_id": "52f27655-7092-4539-aa50-0278f57fc99d"
+    },
+    {
+      "claim_id": "94ec405f-a13c-4f21-bcfd-a912c223b6ed",
+      "result_id": "fdb6936c-34f9-4a17-b62d-cecc2155897d"
+    },
+    {
+      "claim_id": "37fd9017-ee04-4e37-a691-1add2155f3f8",
+      "result_id": "fdb6936c-34f9-4a17-b62d-cecc2155897d"
+    },
+    {
+      "claim_id": "8c7240f3-d22e-4efe-8c9e-ede8eccb6de3",
+      "result_id": "fdb6936c-34f9-4a17-b62d-cecc2155897d"
+    },
+    {
+      "claim_id": "dd641279-e48a-4983-98f8-47785228b18b",
+      "result_id": "fdb6936c-34f9-4a17-b62d-cecc2155897d"
+    },
+    {
+      "claim_id": "8bfa4a6d-9601-4bbf-a677-dde6150281d7",
+      "result_id": "fdb6936c-34f9-4a17-b62d-cecc2155897d"
+    },
+    {
+      "claim_id": "f3fac8d5-910e-446b-8213-a6249d97bfc0",
+      "result_id": "175cd89c-0b0d-42cc-b4de-9a7135ce3d8d"
+    },
+    {
+      "claim_id": "f0ea26f6-ce88-404c-a761-c3e32e764a88",
+      "result_id": "175cd89c-0b0d-42cc-b4de-9a7135ce3d8d"
+    },
+    {
+      "claim_id": "e226a77f-7025-4ce4-b279-f86a2f3b4683",
+      "result_id": "1b6c9190-dec8-48b3-bcc9-663a6925803d"
+    },
+    {
+      "claim_id": "0fe9c4b2-9b9a-472f-a10d-64459271b7fb",
+      "result_id": "1b6c9190-dec8-48b3-bcc9-663a6925803d"
+    },
+    {
+      "claim_id": "c848041d-c1ff-405b-8296-679d06aa7a4e",
+      "result_id": "1b6c9190-dec8-48b3-bcc9-663a6925803d"
+    },
+    {
+      "claim_id": "d1c654af-d81c-40ea-977c-d0f984dd48e2",
+      "result_id": "5369286f-5938-4866-b57d-22494a9422b0"
+    },
+    {
+      "claim_id": "49dbf6b7-f18a-41cd-966f-94d07c38c388",
+      "result_id": "5369286f-5938-4866-b57d-22494a9422b0"
+    },
+    {
+      "claim_id": "e62dae23-6a2b-463b-bdf5-ecc628c8640f",
+      "result_id": "5369286f-5938-4866-b57d-22494a9422b0"
+    },
+    {
+      "claim_id": "138eac8b-323c-44a7-8707-db3061c93bc2",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "3104155a-6a16-42d9-95d4-a5defada0564",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "81d9705d-270c-4eee-aedd-5a70b41ae22b",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "ad923fca-704e-48db-8650-000c3c5293cd",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "9d70fdb6-a8ee-4fbd-a425-7bdeb86b3af0",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "1c470345-0f32-40d1-b1ce-eb6cd1e6a86e",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "ccdefff2-3be2-47c5-8045-875133fcfd0b",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "da0b58e1-c20b-4c49-96a4-80e23b196b21",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "fa1f2d3a-e3d5-4bd1-8f0f-7c505a791c1b",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "e7c9e150-3ed4-4f58-960a-40a9b2d8f745",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "084b334e-856e-4b6b-adec-4b3259fc252d",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "4bb3811c-8ab3-4cc3-bc28-6de6cc29f784",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "3454b086-5a0a-4c70-9ef3-fd85b1f93cba",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "0ad8e832-b722-40e7-b4b2-2f96df8f99cf",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "a1840dac-2a9b-4114-9737-3f68b5bc6a66",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "f341f4a0-ab6f-41cc-89f1-73ad6a3dfc2a",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "5773b214-4de9-4600-be41-15e0f306ae0b",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "7da3accb-e613-4eaf-be31-e554825dd1ac",
+      "result_id": "3ccd5c6b-64e6-4a9e-b7c2-6cb987e416da"
+    },
+    {
+      "claim_id": "da1d9c45-b5ff-41e3-81a1-ea4dd351b769",
+      "result_id": "325efee5-c455-4ee7-a749-9c855671dd3d"
+    },
+    {
+      "claim_id": "12a6e120-af9b-43b5-bb25-8559f098f34b",
+      "result_id": "325efee5-c455-4ee7-a749-9c855671dd3d"
+    },
+    {
+      "claim_id": "66ad8625-c598-412e-a931-52e42c685e21",
+      "result_id": "325efee5-c455-4ee7-a749-9c855671dd3d"
+    },
+    {
+      "claim_id": "09921ede-539e-4417-b012-d2d47ec418f0",
+      "result_id": "325efee5-c455-4ee7-a749-9c855671dd3d"
+    },
+    {
+      "claim_id": "0a4f9ac6-8912-4115-82ec-8fa3f343745f",
+      "result_id": "325efee5-c455-4ee7-a749-9c855671dd3d"
+    },
+    {
+      "claim_id": "73094803-ae3e-4883-b833-bb9e9bd1966a",
+      "result_id": "325efee5-c455-4ee7-a749-9c855671dd3d"
+    },
+    {
+      "claim_id": "fd93a659-09a5-4739-ac07-76deede4873d",
+      "result_id": "325efee5-c455-4ee7-a749-9c855671dd3d"
+    },
+    {
+      "claim_id": "b3bdbe27-fdc5-4efd-a1c8-e2ad890a4f44",
+      "result_id": "325efee5-c455-4ee7-a749-9c855671dd3d"
+    },
+    {
+      "claim_id": "5824ba88-6c70-485e-8c33-cfd67fae5e2a",
+      "result_id": "325efee5-c455-4ee7-a749-9c855671dd3d"
+    },
+    {
+      "claim_id": "64d143f9-ba7d-4664-94d1-35ad6b54d4d1",
+      "result_id": "325efee5-c455-4ee7-a749-9c855671dd3d"
+    },
+    {
+      "claim_id": "70af8a53-dc70-4fcc-8f07-550879ef65da",
+      "result_id": "325efee5-c455-4ee7-a749-9c855671dd3d"
+    },
+    {
+      "claim_id": "4503f464-f6fe-49bf-b267-b6dfede91e35",
+      "result_id": "325efee5-c455-4ee7-a749-9c855671dd3d"
+    },
+    {
+      "claim_id": "88cb519d-09bc-4e96-81af-1405831811e1",
+      "result_id": "80060be8-3520-4486-9d5a-6044ba0d46f1"
+    },
+    {
+      "claim_id": "ffd10486-22ab-46d6-955e-6ac2e1fa7208",
+      "result_id": "80060be8-3520-4486-9d5a-6044ba0d46f1"
+    },
+    {
+      "claim_id": "a22f30e5-5624-4191-9891-fa8fb7b7502f",
+      "result_id": "80060be8-3520-4486-9d5a-6044ba0d46f1"
+    },
+    {
+      "claim_id": "54d42263-4739-488b-bd6d-d770ac5c8fe3",
+      "result_id": "80060be8-3520-4486-9d5a-6044ba0d46f1"
+    },
+    {
+      "claim_id": "9493e9eb-ed51-4b3d-b7d1-43d06455664d",
+      "result_id": "0d9d6284-e5b3-407f-993e-3df3b3d3c4ca"
+    },
+    {
+      "claim_id": "a455efe9-494a-472d-9b1b-bec1e599f1da",
+      "result_id": "0d9d6284-e5b3-407f-993e-3df3b3d3c4ca"
+    },
+    {
+      "claim_id": "bde39e16-5693-4fca-9125-3e92b7a56efb",
+      "result_id": "d4e12093-b028-46ce-b0d7-0c7728301d77"
+    },
+    {
+      "claim_id": "2e56a5c1-4ca1-4f8b-8cf2-7a3ade010591",
+      "result_id": "90fa6f6a-0bad-4f6b-ba56-204b1cc9f2f8"
+    },
+    {
+      "claim_id": "d76f9421-8425-41da-9f5f-8b270a3cf621",
+      "result_id": "90fa6f6a-0bad-4f6b-ba56-204b1cc9f2f8"
+    },
+    {
+      "claim_id": "772dd269-d584-431c-bf1d-3ea38100a701",
+      "result_id": "90fa6f6a-0bad-4f6b-ba56-204b1cc9f2f8"
+    },
+    {
+      "claim_id": "9b1c9a96-bf80-47a3-82de-45e8e0470fff",
+      "result_id": "90fa6f6a-0bad-4f6b-ba56-204b1cc9f2f8"
+    },
+    {
+      "claim_id": "58fb2df8-4825-4206-b885-86184fe29cab",
+      "result_id": "90fa6f6a-0bad-4f6b-ba56-204b1cc9f2f8"
+    },
+    {
+      "claim_id": "aa01f0b9-523b-47f3-9c01-bb63997b42f2",
+      "result_id": "f6e2ccf2-60ee-4cbe-a412-ed4b29cf3977"
+    },
+    {
+      "claim_id": "c749860f-9f2f-4e82-8729-2d0397370ce8",
+      "result_id": "f6e2ccf2-60ee-4cbe-a412-ed4b29cf3977"
+    },
+    {
+      "claim_id": "8f59dfb0-3adf-45ba-95e1-152639311567",
+      "result_id": "f6e2ccf2-60ee-4cbe-a412-ed4b29cf3977"
+    },
+    {
+      "claim_id": "3681ff4f-83ef-452d-bbd7-ca7aad373da8",
+      "result_id": "ea328911-6f4f-41ea-8240-aab73a6495ee"
+    }
+  ],
+  "comparisons": []
+}

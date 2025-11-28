@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C75",
+      "C76"
+    ],
+    "result": "A computational model combining molecular chemotaxis dynamics with cell-to-cell protein variability successfully reproduces experimental measurements of behavioral diversity in wildtype E. coli populations, with protein abundance differences as the sole driver of behavioral variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C75 demonstrate the model fits multiple experimental datasets (Park et al., 2010; Kollmann et al., 2005) simultaneously for both population means and single-cell distributions. Claims C53, C76 establish that protein level variation alone drives behavioral diversity in the model, providing a mechanistic explanation. The fit quality shown in Figure 2\u2014figure supplement 1 supports these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C62"
+    ],
+    "result": "Simulations reveal that optimal chemotactic phenotypes depend strongly on environmental parameters: nearby sources favor high clockwise bias and short adaptation times, while distant sources require low clockwise bias and long adaptation times, with colonization tasks generally favoring shorter adaptation times than foraging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62 describe simulation results showing environment-dependent optimal phenotypes (Figures 2B-F). The mechanistic explanations (C58: steep gradients require fast adaptation) are logically sound. The results are internally consistent across foraging and colonization tasks, with 6000-30,000 replicates per phenotype providing statistical robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Source concentration has minor effects on colonization performance, while CheY-P dynamic range is negligible for performance once sufficiently high to maintain linearity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by systematic parameter scans shown in Figure 2\u2014figure supplements 7-8. The finding that CheY-P dynamic range matters only for linearity (C60) is mechanistically justified and allows simplification of subsequent analyses. These are secondary findings that inform the main analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Performance trade-offs arise when cells must optimize for both near and far sources, with trade-off strength (convex to concave Pareto fronts) increasing with environmental disparity and rapid environmental turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 describe the emergence and characterization of performance trade-offs shown in Figure 4 and supplements. The transition from convex to concave Pareto fronts with increasing environmental disparity is clearly demonstrated. The effect of time constraints (C67, Figure 2\u2014figure supplement 6) strengthens the conclusions about trade-off dependence on environmental parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Nonlinear selection functions can transform neutral performance trade-offs into strong or weak fitness trade-offs depending on selection stringency, demonstrating that fitness trade-off strength depends on both performance trade-offs and the selection process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 describe how different selection functions (Hill equations for foraging, time thresholds for colonization) transform performance into fitness, shown in Figure 5. The systematic exploration of selection parameters demonstrates the principle that selection nonlinearity modulates trade-off strength (C73-C74). This is a novel conceptual contribution supported by the simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Optimization of gene expression parameters shows that weak trade-offs favor reduced protein noise and phenotypic variability, while all optimal populations constrain phenotypic diversity to the Pareto front, with irreducible noise preventing complete condensation to a single generalist phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 describe optimization results shown in Figure 7. The finding that optimal populations distribute along the Pareto front (C78) with different noise levels for weak vs. strong trade-offs (C77, C79) is clearly demonstrated. The constraint imposed by lower bounds on noise (C80-C81) is mechanistically justified and represents an important biological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Optimized populations exploit network architecture constraints differently for different trade-offs: strong foraging trade-offs use correlated noise to create an inverse relationship between clockwise bias and adaptation time, while strong colonization trade-offs increase intrinsic noise to diversify protein ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 describe mechanistic strategies used by optimized populations (Figure 7). The exploitation of network architecture (C84-C85) and modulation of noise types (C86) represent specific, testable predictions. The consistency across optimization cases (C87-C88) strengthens the conclusions about adaptive noise control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study predicts that different selection conditions will select for different optimal subpopulations, with single-condition selection reducing diversity to a noise floor and alternating selection potentially enhancing phenotypic noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C93 are predictions for future experiments rather than demonstrated results. While C91 cites supporting evidence from Park et al., 2011, the specific predictions about noise evolution (C92-C93) remain untested. These are reasonable extrapolations from the model but require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Three phenotypic parameters (clockwise bias, adaptation time, CheY-P dynamic range) determined by protein copy numbers are the main determinants of chemotactic performance, with this dependency being signal-independent due to shared processing proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 establish the conceptual framework linking protein levels to phenotypic parameters to performance. This is supported by the model derivation (Methods) and the successful reproduction of experimental data (C52, C75). The signal-independence claim (C26) follows logically from the network architecture (C5) but is not directly tested experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Operon organization ensures correlated noise in protein expression, conserving protein ratios across cells and reducing occurrence of non-functional parameter combinations while maintaining adaptation precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 describe established properties of the chemotaxis system supported by multiple citations (Lovdok et al., 2009; 2007; Alon et al., 1999; Kollmann et al., 2005). These claims provide essential biological context for understanding how the system constrains phenotypic diversity and are well-supported by prior experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The chemotaxis system exhibits plasticity in phenotypic distributions that can provide fitness advantages in trade-offs arising from environmental variability, with nonlinear selection modulating the optimality of pure versus mixed population strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 summarize the main conclusions from the study. These are well-supported by the simulation results (C64-C74), optimization results (C77-C88), and represent the integration of multiple lines of evidence. The distinction between performance and fitness (C97) is a novel conceptual contribution demonstrated throughout the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C89",
+      "C99",
+      "C103",
+      "C104",
+      "C107",
+      "C108"
+    ],
+    "result": "The study proposes that constraining diversity to the Pareto front may be a general biological strategy for dealing with irreducible noise, achievable through mutations in regulatory elements, and that phenotypic diversification could serve as an evolutionary stepping-stone to multiple biological modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C83, C89, C99, C103-C104, C107-C108 are speculative proposals about general principles and evolutionary implications. While these are reasonable extrapolations from the results, they extend beyond what is directly demonstrated. The proposals are conceptually interesting but require validation in other systems and evolutionary contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C31",
+      "C37",
+      "C38"
+    ],
+    "result": "E. coli uses a single chemotaxis network with well-characterized molecular components and behaviors, exhibiting robustness in population-average behavior while maintaining substantial cell-to-cell variability in clockwise bias and adaptation time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22, C31, C37-C38 provide established background on E. coli chemotaxis, supported by extensive citations to prior work. These claims establish the biological context and are well-supported by decades of research. The observation of variability despite robustness (C37-C38) motivates the study's research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Population diversity is an established adaptive strategy for environmental uncertainty, with prior work showing that chemotactic performance depends on phenotypic parameters and that bacteria encounter diverse environments with varying gradient steepness, potentially leading to fitness trade-offs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C51 establish the theoretical and empirical context for studying diversity and trade-offs, supported by appropriate citations. These claims synthesize prior knowledge about bet-hedging, environmental diversity, and trade-offs to motivate the current study. The logical connections are sound and well-supported by literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The dependence of optimal phenotype on environment in the current simulations follows the same trend as in a previous analytical model, with distant sources analogous to shallow gradients and near sources to steep gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 establishes consistency between the current simulation results and prior analytical work (Dufour et al., 2014). This cross-validation strengthens confidence in both approaches and demonstrates that the more complex ecological simulations recapitulate principles from simpler models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Horizontal integration of signals through shared proteins is economical and ubiquitous but introduces trade-offs by design, with many biological systems exhibiting substantial non-genetic cell-to-cell variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 place the findings in broader biological context. C100 states established knowledge, C101 is a conclusion from the study supported by the trade-off results, and C102 is supported by citations to diverse systems. These claims effectively generalize the findings beyond E. coli chemotaxis.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C38",
+      "C82",
+      "C83"
+    ],
+    "result": "In ES cells, Hox clusters are organized as single 3D chromatin compartments containing all genes with bivalent chromatin marks (H3K27me3 and H3K4me3). The size of strong 4C-seq interaction profiles exactly matches the distribution of these bivalent marks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26, C38, C82, and C83 collectively demonstrate that ES cells show Hox clusters organized as single compartments with bivalent marks. This is directly supported by 4C-seq and ChIP-seq data shown in Figure 1, with multiple viewpoints (Hoxd13, Hoxd9, Hoxd4) all showing similar interaction profiles matching the extent of bivalent chromatin marks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C84",
+      "C86",
+      "C87"
+    ],
+    "result": "ES cells show less defined 3D compartments compared to differentiated cells, with increased interactions with surrounding chromatin. This difference correlates with higher background transcription in ES cells, particularly at the HoxB cluster which forms two separated compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C40, C84, C86, and C87 are supported by quantitative 4C-seq comparisons between ES cells and E10.5 forebrain (Figure 1B,C and supplements), RNA-seq data (Figure 1\u2014supplement 7), and specific analysis of HoxB showing two compartments in ES cells versus one in forebrain. The correlation between chromatin organization and transcription is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "H3K27me3 marks strongly correlate with 3D organization in both ES and brain cells, while H3K4me3 marks show no particular correlation in the bivalent state, suggesting H3K4me3 does not contribute to 3D compartment formation in ES cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C89, and C90 are supported by Spearman correlation analysis presented in Table 1, which systematically compares 4C-seq and ChIP-seq signals across multiple samples and viewpoints. The statistical approach is appropriate and the conclusions are directly supported by the quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "ES cells show low-level transcription of most Hox genes (confirmed by RNA-seq and RT-qPCR), with posterior genes more prone to background activation than anterior genes. In contrast, E10.5 forebrain cells show minimal Hox transcription with no reliable spliced transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 are supported by RNA-seq data (Figure 1\u2014supplement 7A,B) and RT-qPCR validation (Figure 1\u2014supplement 7C). The comparison between ES cells and forebrain is quantitative and shows clear differences. The observation about posterior vs anterior gene transcription is evident from the RNA-seq data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C45",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "During sequential Hox gene activation in E8.5 PSM, genes switch from an inactive to an active 3D compartment in a bi-modal organization. Inactive genes (e.g., Hoxd13) interact with H3K27me3-marked domains, while active genes (e.g., Hoxd4) interact with H3K4me3-marked domains. This pattern is observed across all Hox clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C35, C45, C101-C105 are strongly supported by 4C-seq data from E8.5 PSM samples (Figure 2 and supplements) showing clear bi-modal organization. The correlation between 3D organization and histone marks is demonstrated quantitatively (Figure 2B, Table 1). The observation extends to all four Hox clusters (Figure 2\u2014supplements 1 and 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "During the transition from E8.5 to E10.5, individual Hox genes progressively switch from inactive to active compartments in a stepwise manner. Hoxd11 re-deploys interactions from centromeric to telomeric compartments upon activation, while Hoxd4 progressively extends contacts to newly activated genes (Hoxd10, Hoxd11, Hoxd12), suggesting gene-by-gene rather than block transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C124 are supported by detailed temporal 4C-seq analysis (Figure 3) comparing E8.5 PSM, E9.5 tail bud, and E10.5 tail bud. The progressive extension of Hoxd4 contacts and the switching behavior of Hoxd11 are clearly demonstrated. The conclusion about stepwise vs. block transitions is well-supported by the dynamic interaction patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C127",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Temporal and spatial patterns of 3D organization align: E8.5 PSM profiles match E10.5 anterior trunk, E9.5 tail bud matches E10.5 lumbo-sacral trunk, suggesting that bimodal distributions established during temporal colinearity are frozen and maintained at corresponding body levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127, C130-C135 are supported by systematic comparison of temporal samples (E8.5, E9.5) with spatial samples at E10.5 (Figure 4). The 4C-seq profiles show clear correspondence between temporal progression and spatial position. However, C134 and C135 involve interpretive conclusions about 'freezing' and 'memorization' that, while consistent with the data, represent mechanistic inferences beyond direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C37",
+      "C68",
+      "C139",
+      "C140",
+      "C141",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "During temporal colinearity, Hox genes display substantial interactions with flanking gene deserts, with gene-specific preferences for centromeric or telomeric deserts. However, these long-range interactions remain largely constitutive and show minimal dynamics during transcriptional activation, unlike the situation in limb development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C36, C37, C68, C139-C141, C147-C149 are supported by long-range interaction analysis (Figure 5 and supplements) using methodology from Woltering et al., 2014. The constitutive nature of long-range interactions is demonstrated by quantification (Figure 5B,C) and hierarchical clustering (Figure 5\u2014supplement 1B). The contrast with limb development is supported by comparison to published data (Andrey et al., 2013).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The HoxD cluster in ES cells forms a 'micro-TAD' with strong internal interactions despite a TAD boundary identified by HiC at Hoxd12-Hoxd11. The authors propose this boundary represents an average of two distinct configurations where each allele positions the entire cluster toward either the centromeric or telomeric TAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C75, C143-C145 attempt to reconcile apparent discrepancies between HiC data (Dixon et al., 2012) and 4C-seq results. While C71, C72, and C145 are supported by direct data comparison (Figure 5\u2014supplement 2), claims C73-C75 propose a speculative model to explain the paradox. This model is plausible but lacks direct experimental validation at the single-allele level. The hypothesis requires single-cell or allele-specific analysis to be definitively supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The presence of Hox genes in 3D compartments is not merely an a posteriori mechanism for maintaining transcriptional states but is instrumental in the precise regulation of transcriptional timing during temporal colinearity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C47 represent key interpretive conclusions from the temporal dynamics data. The observation that 3D reorganization occurs coincident with (not after) transcriptional activation (Figures 2-4) supports this interpretation. However, this is correlative evidence; definitive proof of causality would require perturbation experiments disrupting 3D organization and measuring effects on timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C56",
+      "C58"
+    ],
+    "result": "The progressive 3D transition may function primarily to protect posterior Hox genes from premature activation rather than to precisely regulate timing. This is supported by basal transcription of posterior genes in ES cells and the detrimental effects of premature activation. Polycomb group proteins may provide directional sensitivity through graded H3K27me3 distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50, C51, C52, C54, C56, and C58 present mechanistic hypotheses. C51 is supported by citations (Young et al., 2009; Mallo et al., 2010), and C52 is supported by the ES cell transcription data. However, C50, C54, C56, and C58 are speculative models about mechanism. The correlation between H3K27me3 and 3D organization is demonstrated, but the proposed directional de-repression model lacks direct experimental validation in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Embryonic 4C-seq samples required pooling of 129-196 embryos for early stages (E8.5-E10.5 PSM/tail bud samples) and approximately 20 embryos for E10.5 forebrain samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are methodological details clearly stated in the Materials and methods section. These sample sizes are appropriate given the small amount of tissue available at early developmental stages and the requirements of 4C-seq methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The relaxed chromatin organization in ES cells may reflect developmental plasticity. In more na\u00efve ES cells (grown with kinase inhibitors), H3K27me3 marks are nearly absent, suggesting that structuring into fully inactive 3D compartments is a gradual developmental process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C41 is an interpretation supported by citation (Mattout and Meshorer, 2010). C42 is supported by citation (Marks et al., 2012). However, C43 and C44 are speculative hypotheses extrapolating from the correlation between H3K27me3 and 3D organization. The authors did not directly test 3D organization in kinase inhibitor-treated ES cells, making these predictions untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C48",
+      "C49",
+      "C65",
+      "C66"
+    ],
+    "result": "Temporal and spatial colinearity likely reflect the same organizational principle, with temporal colinearity translating time into spatial coordinates. However, transcriptional timing may not be absolutely required for proper spatial distribution, as chromatin domains may function to fix activation states and translate temporal parameters into spatial coordinates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C21, C48, C49, C65, and C66 present interpretive frameworks connecting temporal and spatial colinearity. C48 and C49 are supported by citations to prior work. However, these claims involve conceptual models about the relationship between timing and spatial patterning that go beyond the direct observations in this study. The data show correlation between temporal dynamics and spatial patterns but do not definitively establish the mechanistic relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on Hox gene biology: Hox genes are essential developmental regulators organized in four clusters in mammals, with sequential activation following genomic topology (temporal colinearity) and spatial distribution along the body axis (spatial colinearity). This structure-function relationship was first described in Drosophila and extended to vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 provide established background knowledge about Hox gene organization and function. These are well-supported by extensive citations to foundational literature in the field (Lewis, 1978; Duboule and Dolle, 1989; Izpisua-Belmonte et al., 1991; Deschamps et al., 1999; and many others). This represents consensus knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Prior work established that spatial colinearity can sometimes be recapitulated by single-gene transgenes and relies on local regulatory elements, while temporal colinearity requires cluster integrity. Hox clusters show bivalent chromatin in ES cells, which resolves to opposing H3K27me3/H3K4me3 distributions upon activation. Bi-modal 3D organization was previously observed at E10.5 in spatial contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C34 summarize prior work from the authors' lab and others, establishing the context for the current study. These are supported by appropriate citations (Tschopp et al., 2009; Soshnikova and Duboule, 2009; Noordermeer et al., 2011; and others). C32 and C33 include some speculation about function, but the observations themselves are well-documented.",
+    "result_type": "MINOR"
+  }
+]

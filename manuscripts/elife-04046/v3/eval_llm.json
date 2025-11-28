@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Immediate firing motoneurons are S-type (slow-contracting) motoneurons, while delayed firing motoneurons are F-type (fast-contracting) motoneurons. This classification is supported by electrical properties (lower input conductance, rheobase, and more hyperpolarized voltage threshold in immediate firing neurons), morphological differences (smaller dendritic trees in immediate firing neurons), and molecular markers (immediate firing neurons are Err\u03b2+/Chodl-, delayed firing neurons are Err\u03b2-/Chodl+/-). MMP9 expression confirms immediate firing neurons are ALS-resistant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C60 provide converging evidence from multiple independent approaches (electrophysiology, morphology, immunohistochemistry, in situ hybridization) that consistently identify immediate firing neurons as S-type and delayed firing neurons as F-type. The molecular markers align with established literature (C47-C48), and MMP9 expression (C55-C60) independently confirms the vulnerability classification. Sample sizes are adequate (N=6-15 for molecular markers) and statistical tests are appropriately applied (p=0.007 for branching points).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C24",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "In neonatal mSOD1 mice, only immediate firing (S-type) motoneurons display hyperexcitability, characterized by decreased rheobase (2-fold reduction) and hyperpolarized voltage threshold for spiking. Delayed firing (F-type) motoneurons show unchanged excitability. Input conductance and resting membrane potential remain unchanged in both subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C72 demonstrate selective hyperexcitability in immediate firing neurons through multiple measurements (rheobase, voltage threshold, recruitment current on ramps). Statistical tests are appropriate (t-test p=0.04, Chow test p=0.0004 for immediate firing; p=0.4 for delayed firing). The finding that input conductance is unchanged (C64, C69) while excitability increases is mechanistically explained by voltage threshold hyperpolarization (C70), providing internal consistency. Sample sizes are adequate (WT: N=29-63; mSOD1: N=16-31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Mixed mode oscillations (MMOs), which reflect low excitability state, are absent in most mSOD1 immediate firing motoneurons (8/11 lack MMOs) but present in nearly all delayed firing motoneurons (31/31 mSOD1, 49/50 WT). The absence of MMOs in immediate firing neurons further confirms their hyperexcitability in mSOD1 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C81 use MMOs as an independent measure of excitability state, building on the authors' previous work (C73-C75). The proportions are statistically significant (Fisher's exact test, p=0.003, C80) and consistent with the rheobase/voltage threshold findings. The mechanistic link between MMOs and sodium/potassium current balance (C74) is established from prior work, providing theoretical support for using MMO absence as a hyperexcitability indicator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The gain in the primary firing range and AHP conductance are unchanged in mSOD1 mice for both immediate and delayed firing motoneurons, suggesting that AHP-related properties are not altered by the mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 show no significant differences in primary range gain (p=0.7 for immediate firing, C82) and firing frequency at 0.5s post-recruitment for delayed firing neurons (C85). The inference that AHP conductance is unchanged (C84) is reasonable given established relationships between gain and AHP conductance (C83), though direct measurement of AHP conductance would strengthen this conclusion. Sample sizes are adequate (N=9-42).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C97"
+    ],
+    "result": "In mSOD1 mice, immediate firing motoneurons show specific dendritic shrinkage with 32% reduction in total dendritic length and 28-25% shorter dendritic paths and terminal segments, while delayed firing motoneurons show no morphological changes (excluding one outlier). The number of branching points remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C94 demonstrate selective morphological alterations in immediate firing neurons with appropriate statistical tests (Kolmogorov-Smirnov test p<0.0001 for path distribution, C93; p=0.8 for branching points, C90). The exclusion of one outlier in delayed firing neurons (C88) is justified and documented. The finding that branching points are unchanged while total length decreases indicates shorter individual segments rather than loss of dendritic trees. Sample sizes are smaller for morphology (N=5-14) but adequate for the observed effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C25",
+      "C26",
+      "C95",
+      "C96",
+      "C98",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Early intrinsic hyperexcitability does not contribute to motoneuron degeneration in ALS. This conclusion is based on the finding that S-type motoneurons (which are ALS-resistant) display hyperexcitability in neonatal mSOD1 mice, while F-type motoneurons (which are ALS-vulnerable) do not show hyperexcitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C117 present the main conclusion that contradicts the longstanding hypothesis (C3, C8). The logic is sound: if hyperexcitability caused degeneration, the hyperexcitable neurons (S-type) should degenerate, but they are resistant (C2, C25). Conversely, vulnerable F-type neurons (C1, C25) are not hyperexcitable (C4, C24, C116). This inverse correlation strongly argues against hyperexcitability as a causative factor. The conclusion is appropriately cautious, stating hyperexcitability does not contribute to degeneration rather than claiming it is protective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The delayed firing pattern in F-type motoneurons is due to specific potassium currents (A-current and slowly activating/inactivating K+ current) that make them less excitable than S-type motoneurons in neonates. This pattern is transient and disappears with age, after which size differences primarily determine excitability differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 provide mechanistic explanation for the delayed firing pattern based on the authors' previous work (C99) and established literature (C101). The developmental trajectory is clearly stated. However, C99 cites only an abstract (SfN abstract 2012), which limits verification. The inference about potassium currents making F-type neurons less excitable (C100) is reasonable but would benefit from direct current measurements in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The mechanism of hyperexcitability in neonatal immediate firing motoneurons differs from that in embryonic motoneurons and from spinal muscular atrophy. In embryos, hyperexcitability arises from decreased input conductance due to dendritic shortening, while in neonatal immediate firing neurons, input conductance is unchanged despite dendritic shortening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 appropriately distinguish the current findings from related work in embryonic stages and other diseases. The comparison is well-supported by citations (C103-C106). The observation that dendritic shortening in neonates does not decrease input conductance (unlike in embryos) is explained by differences in electrotonic compactness (C104), providing mechanistic insight. The comparison to spinal muscular atrophy (C105-C106) contextualizes the findings within motoneuron diseases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The dendritic shrinkage and voltage threshold changes in immediate firing motoneurons might result from homeostatic responses to increased synaptic activity during embryonic development. Synaptic hyperactivity, dendritic shrinkage, and intrinsic hyperexcitability might be causally linked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C114 present speculative mechanisms (note use of 'might' throughout) linking synaptic activity changes to morphological and electrical alterations. While the hypothesis is plausible and supported by general principles (C109-C110) and prior observations of synaptic alterations (C108, C113), the current study does not directly measure synaptic activity or test causal relationships. The speculation is appropriately qualified but remains unvalidated. Testing this hypothesis would require developmental studies with synaptic activity measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The specific dendritic shrinkage of S-type motoneurons may have beneficial effects by reducing metabolic demand, which could contribute to their survival in ALS. Hyperexcitability might also contribute to survival, though the persistence of hyperexcitability in adults is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C125 present speculative interpretations about the functional significance of the observed changes. While the logic connecting smaller membrane surface to reduced metabolic demand (C122) and metabolic stress in ALS (C123) is sound, the actual benefit is not demonstrated. The suggestion that hyperexcitability might aid survival (C125) is based on one citation and contradicts the traditional view. The authors appropriately acknowledge uncertainty about whether early hyperexcitability persists into adulthood, which is critical for evaluating long-term effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "Adult spinal motoneurons are not hyperexcitable on average just prior to neuromuscular junction degeneration, and some become hypoexcitable, losing the capacity for repetitive discharge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 cite recent work (Delestree et al., 2014) showing that the neonatal hyperexcitability does not persist into adulthood in the overall motoneuron population. This contextualizes the current findings and raises important questions about the temporal dynamics of excitability changes. However, the authors note that S-type and F-type neurons were pooled in that study, leaving open the possibility of subtype-specific differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Previous studies on motoneuron excitability in ALS models have yielded contradictory results, with some reporting hyperexcitability and others reporting unchanged or decreased excitability. These discrepancies may be due to failure to account for motoneuron heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C18 accurately summarize the conflicting literature on motoneuron excitability in ALS models, with appropriate citations. The authors correctly identify that previous studies did not distinguish between motoneuron subtypes (C17), which is a key insight motivating the current work. The review of prior work is balanced, presenting both supporting and contradictory findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The experiments were performed in accordance with ethical guidelines and used 6-10 day-old B6.Cg-Tg(SOD1-G93A)1Gur/J mice and non-transgenic littermates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 provide standard methodological information about ethical approval and animal subjects. The use of the high-expressor SOD1-G93A line is appropriate and well-established for ALS research. The age range (P6-P10) is clearly specified and justified as the period when early pathophysiological changes occur.",
+    "result_type": "MINOR"
+  }
+]

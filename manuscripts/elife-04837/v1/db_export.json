@@ -1,0 +1,2251 @@
+{
+  "submission": {
+    "id": "be76e756-5d89-4b0d-9b7e-b3e0005a014b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:45:11.855860Z",
+    "updated_at": "2025-11-28T22:45:11.855860Z"
+  },
+  "content": [
+    {
+      "id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "submission_id": "be76e756-5d89-4b0d-9b7e-b3e0005a014b",
+      "content_type": "manuscript",
+      "content_text": "# Conservation of transcription factor binding specificities across 600 million years of bilateria evolution\n\n## Authors\n\n- Kazuhiro R Nitta<sup>1</sup>\n- Arttu Jolma<sup>1</sup>\n- Yimeng Yin<sup>1</sup>\n- Ekaterina Morgunova<sup>1</sup>\n- Teemu Kivioja<sup>2</sup>\n- Junaid Akhtar<sup>3</sup>\n- Korneel Hens<sup>4</sup> ([ORCID: 0000-0002-0362-7007](https://orcid.org/0000-0002-0362-7007))\n- Jarkko Toivonen<sup>5</sup>\n- Bart Deplancke<sup>6</sup>\n- Eileen E M Furlong<sup>3</sup>\n- Jussi Taipale<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biosciences and Nutrition Karolinska Institutet Stockholm Sweden\n2. Genome-Scale Biology Program University of Helsinki Helsinki Finland\n3. Genome Biology Unit European Molecular Biology Laboratory Heidelberg Germany\n4. Institute of Bioengineering, School of Life Sciences Swiss Federal Institute of Technology Lausanne Switzerland\n5. Department of Computer Science University of Helsinki Helsinki Finland\n6. Institute of Bioengineering, School of Life Sciences Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nDivergent morphology of species has largely been ascribed to genetic differences in the tissue-specific expression of proteins, which could be achieved by divergence in cis-regulatory elements or by altering the binding specificity of transcription factors (TFs). The relative importance of the latter has been difficult to assess, as previous systematic analyses of TF binding specificity have been performed using different methods in different species. To address this, we determined the binding specificities of 242 Drosophila TFs, and compared them to human and mouse data. This analysis revealed that TF binding specificities are highly conserved between Drosophila and mammals, and that for orthologous TFs, the similarity extends even to the level of very subtle dinucleotide binding preferences. The few human TFs with divergent specificities function in cell types not found in fruit flies, suggesting that evolution of TF specificities contributes to emergence of novel types of differentiated cells.\n\n## Introduction\n\nIt is estimated that the divergence between vertebrate and invertebrate lineages occurred over 600 million years ago (Hedges et al., 2006; Peterson et al., 2008). After the divergence, protein coding sequences have retained a relatively high level of similarity, whereas homology in gene-regulatory elements is not detectable, despite the fact that many developmental pathways and regulatory relationships between TFs and their target genes have been conserved (see e g., Goodrich et al., 1996; Pichaud and Desplan, 2002; Ciglar and Furlong, 2009). Lack of sequence conservation in gene regulatory elements despite their conserved function could be a consequence of divergence of the gene regulatory code between vertebrates and invertebrates. Some changes in coding sequences of TFs have indeed been observed, and linked to specific evolutionary adaptations (Enard et al., 2002; Di-Po\u00ef et al., 2010).\n\nSeveral studies have indicated that primary TF DNA binding specificity evolves slowly, and is extremely conserved between mammalian species (see e g., Bohmann et al., 1987; Struhl, 1987; Merika and Orkin, 1993; Amoutzias et al., 2007; Wei et al., 2010; Jolma et al., 2013). The origin of most structural families of TFs dates well before the emergence of mammals, and even predates the divergence of vertebrates and invertebrates. Within each TF family, DNA binding specificity has also diverged considerably, with many families having 2\u201310 different subclasses displaying different primary binding specificities (Berger et al., 2008; Wei et al., 2010; Jolma et al., 2013). In addition, many differences in the TF repertoire between invertebrates and vertebrates exist due to the expansion of some gene families, such as nuclear receptors and C2H2 zinc finger factors in vertebrates (Charoensawan et al., 2010). It is currently unclear to what extent such expansion of TF families has changed the gene regulatory code by introducing novel DNA-binding specificities.\n\nSystematic comparison of DNA binding specificities between vertebrates and invertebrates has been difficult. Databases collecting TF binding specificity information, such as TRANSFAC (Matys et al., 2006) and Jaspar (Bryne et al., 2008) contain a large number of specificities from different species. However, the data are generally derived using different methods in different laboratories, and therefore it is very difficult to separate method-specific biases from real differences in binding specificity, particularly in cases where the differences are not very pronounced. Comparison of TF binding specificities obtained using in vivo methods such as ChIP-seq or deep DNase I hypersensitivity (Celniker et al., 2009; ENCODE Project Consortium, 2012; Wang et al., 2013; He et al., 2014), in turn, can result in identification of signals derived from heterodimers or indirect DNA binding, and is affected by biases due to the fact that different genomes have different GC content and repertoire of repetitive elements. Furthermore, although large systematic datasets exist for in vitro binding specificity of human and mouse TFs determined using protein-binding microarrays (Badis et al., 2009) and high throughput SELEX (HT-SELEX; Jolma et al., 2013), these methods have not been previously used to systematically analyze specificities of many TF families from more distantly related organisms. Conversely, a large collection of Drosophila TF binding specificities has been generated using bacterial one-hybrid assay (B1H; Noyes et al., 2008; Zhu et al., 2011; Enuameh et al., 2013). However, this method has not been applied to mammalian TFs at a scale sufficient for a broad comparison of TF specificity.\n\nThe lack of large, high resolution datasets generated using similar methods have limited previous studies of conservation of TF binding specificity to studies of divergence of strong core binding specificities in a limited number of cases (see e g., Bohmann et al., 1987; Struhl, 1987). However, in addition to the primary specificity, many TFs have secondary modes of DNA binding, can recognize multiple different homodimeric sites and/or recognize multiple different sequences based on DNA shape (Badis et al., 2009; Rohs et al., 2010; Jolma et al., 2013). These, more subtle DNA binding preferences could potentially change faster than and independently of the canonical core DNA recognition motif, and could thus also allow TF specificity to slowly drift in evolution.\n\nTo characterize the role of divergence and subtle drift in TF DNA binding specificity in animal diversity, we used HT-SELEX to determine TF binding specificities in Drosophila melanogaster. For this, we used existing full-length collection of Drosophila TF cDNAs (Hens et al., 2011), and also generated a novel genome-scale collection of fruit fly TF DNA binding domain (DBD) constructs. The TFs were expressed in E. coli and their specificity determined using HT-SELEX (Jolma et al., 2010, 2013), and compared to our existing human and mouse HT-SELEX data. A striking level of conservation of TF binding specificity was observed, with fruit flies having almost as complex a repertoire of TF binding motifs as humans. Conservation of specificity extended to secondary modes of binding, and even subtle dinucleotide preferences, suggesting that TF binding specificities are not subject to substantial evolutionary drift. Specificities exclusive to either of the species were detected most commonly in cases where a TF subfamily had expanded in one of the species. Only two clear cases of divergence of specificity were observed between orthologs. These results indicate that TF evolution is constrained by structural limitations of the TF folds, and that changes in specificity are rare, and when they occur, tend to have relatively large effects. Interestingly, TF specificities that exist only in human are important for physiology of cell types that do not exist in fruit flies, suggesting that novel TF specificities contribute to formation of new types of differentiated cells.\n\n## Results\n\n### Determination of DNA binding specificities of Drosophila TFs by HT-SELEX\n\nA collection of cDNAs of DNA binding domains (DBDs) and full-length Drosophila TFs were compiled based on annotations in FlyTF.org (Pfreundt et al., 2010) and Hens et al. (2011), respectively. A total of 760 DBDs and 633 full length fruit fly TF constructs were expressed in E. coli as N-terminal thioredoxin-HIS tag fusion proteins, and subjected to the HT-SELEX process (Figure 1; Supplementary file 1A\u2013C; see \u2018Materials and methods\u2019 for details). Together, the clone collections covered 271/294 (92%) and 612/754 (81%) of \u2018trusted TFs\u2019 and \u2018putative TFs\u2019 in FlyTF.org (Pfreundt et al., 2010). Briefly, the expressed proteins were purified, incubated with a selection ligand library containing 20 or 40 base pair random DNA sequences, and immobilized to nickel agarose beads. Co-bound ligands were then separated from free ligands, PCR amplified, and the process repeated 3\u20136 times. Initial selection ligand libraries, and libraries obtained after each selection cycle were sequenced using a massively parallel sequencer (HT-SELEX; Jolma et al., 2010, 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig1-v1.jpg)\n\n**Figure 1.:** (A) Drosophila HT-SELEX pipeline. (B) Coverage of TFs. Number of genes (blue), and number of genes for which we obtained a HT-SELEX model (red) are shown for each TF structural family. Genes that encode more than one domain are counted as members of multiple structural categories. (C) Classification of all binding models into non-repetitive sites (monomer), and sites with two, three or four similar subsequences (dimer, trimer and dimer of dimers, respectively). Logos, for an example, for each type of model are shown, arrows indicate half-sites to highlight multimeric sites. (D) Classification of primary and secondary models (left). Type of secondary model is indicated on the right. Red boxes and black bracket indicate differences between the primary (top) and secondary (bottom) models. Seeds for the generation of the models were identified using the Autoseed algorithm (see \u2018Material and methods\u2019 and Figure 1\u2014figure supplements 1\u201314 for details).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A, B) A four base ungapped subsequence \u2018ACGT\u2019 and types of subsequences that are at Huddinge distance of one from it (A) and a gapped subsequence with four defined bases \u2018ACnGT\u2019 and types of subsequences that are at Huddinge distance of one from it (B). Note that shift of gapped subsequences results in a minimum Huddinge distance of 2 (gray cross). Comparison of subsequences with different number of defined bases (shorter, longer and shorter with gap) requires a threshold to compensate for the fact that shorter subsequences that match perfectly to longer ones are always present at equal or higher numbers than the longer subsequence.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Drosophila TFs are in red typeface. Left and right columns indicate primary and secondary motif, respectively.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Drosophila TFs are in red typeface. Left and right columns indicate primary and secondary motif respectively.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Asterisk indicates Ets98B; underlining indicates region where different 5\u2032 sequences were enriched in different experiments. Indicated motif represents sequence obtained from both DBD and full-length protein in one set of experiments. Core and 3\u2032 flank shown were identified in all experiments. Drosophila TFs are in red typeface. Left and right columns indicate primary and secondary motif respectively.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Drosophila TFs are in red typeface. Left and right columns indicate primary and secondary motif respectively.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Drosophila TFs are in red typeface. Left and right columns indicate primary and secondary motif respectively.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig1-figsupp7-v1.jpg)\n\n**Figure 1\u2014figure supplement 7.:** Drosophila TFs are in red typeface. Left and right columns indicate primary and secondary motif respectively.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig1-figsupp8-v1.jpg)\n\n**Figure 1\u2014figure supplement 8.:** Drosophila TFs are in red typeface. Left and right columns indicate primary and secondary motif respectively.\n\n![Figure 1\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig1-figsupp9-v1.jpg)\n\n**Figure 1\u2014figure supplement 9.:** Drosophila TFs are in red typeface. Left and right columns indicate primary and secondary motif respectively.\n\n![Figure 1\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig1-figsupp10-v1.jpg)\n\n**Figure 1\u2014figure supplement 10.:** Drosophila TFs are in red typeface. Left and right columns indicate primary and secondary motif respectively.\n\n![Figure 1\u2014figure supplement 11.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig1-figsupp11-v1.jpg)\n\n**Figure 1\u2014figure supplement 11.:** Drosophila TFs are in red typeface. Left and right columns indicate primary and secondary motif respectively.\n\n![Figure 1\u2014figure supplement 12.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig1-figsupp12-v1.jpg)\n\n**Figure 1\u2014figure supplement 12.:** Drosophila TFs are in red typeface. Left and right columns indicate primary and secondary motif respectively.\n\n![Figure 1\u2014figure supplement 13.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig1-figsupp13-v1.jpg)\n\n**Figure 1\u2014figure supplement 13.:** Drosophila TFs are in red typeface. Left and right columns indicate primary and secondary motif respectively.\n\n![Figure 1\u2014figure supplement 14.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig1-figsupp14-v1.jpg)\n\n**Figure 1\u2014figure supplement 14.:** (A) CrebB-17A, (B) Pdp1, and (C) Ptx1. Bar represents the position of the seed. Note that all experiments enrich very similar motifs irrespective of the length of the randomized region, and that flanking sequences adjacent to the seed display no preference. Apparent specificity at the very end of the flanks (asterisks) is an artefact caused by the small number of reads where the seed sequence matches to the very end of the randomized region (position of randomized region in such cases is indicated by brackets).\n\nThe obtained sequences were analyzed computationally, resulting in the identification of robustly enriched subsequences for a total of 196 DBDs and 92 full-length TF proteins, representing a total of 242 unique fruit fly TFs. We next determined the primary binding profiles for each protein by aligning the enriched sequences to a seed sequence, and calculating a position weight matrix (PWM) using the background corrected multinomial method as described previously (Jolma et al., 2010, 2013). Motifs were obtained for 86% of fruit fly TF families, with median within-family coverage of 49% (Figure 1B). Similar to earlier studies (Badis et al., 2009; Jolma et al., 2013), a relatively low success rate was observed for C2H2 zinc fingers and basic helix-loop-helix proteins, probably at least in part due to difficulty in computational identification of DNA-binding zinc finger proteins, and the fact that many bHLH proteins bind to DNA as obligate heterodimers. In addition, relatively low success rate was observed for large DBD constructs and full-length proteins, probably due to difficulty of expressing them in an active form in E. coli.\n\n### Identification of secondary binding modes and dinucleotide preferences\n\nTo improve the detection of enriched subsequences in the HT-SELEX experiments, we developed a novel algorithm, Autoseed, that identifies all subsequences that represent local maxima, that is, are enriched more than any closely related sequence. The method is based on a novel distance measure between two subsequences, the Huddinge distance (see Figure 1\u2014figure supplement 1 and \u2018Material and methods\u2019 for details). In this method, a subsequence is aligned to all other subsequences, and its count is compared to counts of subsequences that contain n \u2212 1 perfectly matching bases, where n is the maximum number of defined bases in the aligned subsequences. The method compares also gapped subsequences to ungapped ones, and can thus identify diverse motifs with widely spaced recognition sites, and differentiate between monomers and dimers of the same subsequence. In addition, as subsequences that differ by more than one substitution are not compared to each other, the method can identify strong dinucleotide preferences. Subsequences that differ by one in the number of defined bases are also compared to each other using a threshold to correct for the higher expected count of the subsequence that contains lower number of defined bases.\n\nAnalysis of the fruit fly HT-SELEX dataset using Autoseed resulted in the identification of 416 motifs, of which 210 were monomeric, 198 dimeric, 5 trimeric, and 3 dimers of dimers (Figure 1C). Of these motifs, 90 describe secondary binding modes\u2014bound sequences that are distinctly different from the primary TF binding site (see Badis et al., 2009; Rohs et al., 2010; Jolma et al., 2013) for a TF that has a stronger primary binding motif. Of the secondary models, 29 cases were due to strong dinucleotide preferences, 21 cases were due to flanking sequence variants, and 40 cases were due to spacing and orientation preferences (Figure 1D). Seed sequences and SELEX cycles used are indicated in Supplementary file 1D, and the obtained binding profile logos are in Figure 1\u2014figure supplement 2-13 and all quantitative PWMs are in Supplementary file 1E and Supplementary file 2.\n\n### Amino-acid sequence similarity predicts TF DNA-binding specificity\n\nAs suggested by previous studies (Wei et al., 2010; Jolma et al., 2013; Weirauch et al., 2014), different TF structural families had clearly divergent specificities, and amino-acid sequence similarity was predictive of overall DNA binding specificity in most TF families. For example, we could classify fruit fly bHLH proteins into six subfamilies based on their preferred 6 bp core motifs (Figure 2). Members that are similar in amino-acid sequence generally recognized the same core sequence, and highly similar TFs recognized also similar flanking nucleotides (e.g., HLHm3, HLHmbeta, HLHmgamma, HLHmdelta). Order based on similarity of TF DNA binding specificities, calculated using correlations between scores of all possible gapped 6 bp subsequences (see \u2018Materials and methods\u2019 for details), largely recapitulated the phylogenetic relationships between the DBDs (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig2-v1.jpg)\n\n**Figure 2.:** Barcode logos (middle) for bHLH DBDs arranged according to the amino-acid sequence similarity indicate that sequence conservation is predictive of binding specificity. Inset shows an example of a conversion of a sequence logo into a Barcode logo. For each position, the frequency of each base is indicated by the width of the corresponding colored bar; the intensity of color and the height of the bars at each position are determined by the base with the highest frequency. The core recognition sequences are also indicated (right). Note that structurally close TFs recognize the same core sequences and similar flanking sequences (e.g., HLHm3, HLHmgamma, and HLHmdelta). Note also that CAGCTG motif is recognized by two distinct clades (Asterisks). For analysis of other TF families, see Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Rows and columns are ordered by motif similarity measured using all possible 6 bp sequences with variable length gaps in the middle. Subfamilies are indicated by the respective core binding motifs. Homeodomain models containing the canonical (T/C)AATTA site are on bottom right, and models containing TAATCC or TAAA(T/C)G are indicated by an asterisk. Dimeric homeodomain sites (Dimer) are also indicated. Inset shows the two-dimensional color scale, yellow indicates that both motifs and amino-acid sequences are similar. Note that in general, the motif similarity is determined by TF structural family. Note also the red rectangles off the diagonal, indicating that although the homeodomain proteins binding to different motifs have high sequence similarity, the motifs themselves are divergent. See Figure 2\u2014source data 1 for details.\n\n### Comparison with existing Drosophila motifs\n\nSeveral previous studies have analyzed TF DNA binding specificities in Drosophila using methods different to those used here. The highest coverage fruit fly TF-specificity dataset has been generated using the bacterial one hybrid (B1H) and DNase I footprinting methods (Noyes et al., 2008; Zhu et al., 2011; Enuameh et al., 2013). This collection contains a partial or complete specificities for a total of 325 fruit fly TFs. The profiles we obtained for the proteins that had been analyzed using B1H showed, with very few exceptions, the same core binding specificities (Figure 3\u2014figure supplement 1).\n\nTo compare the similarity of the datasets in detail, we used the motif similarity score from SSTAT (Pape et al., 2008) to draw a dendrogram (Figure 3\u2014figure supplement 1). Motifs generally clustered based on the corresponding TF families. However, motifs obtained using HT-SELEX and B1H for the same proteins were often not located next to each other. One reason for this is that flanking sequences obtained using HT-SELEX and B1H are often not identical. The HT-SELEX data also generally yield somewhat longer profiles (average width of 12.7 bp vs 10.7 bp), particularly in cases where TFs bind as dimers (e.g., nuclear receptors). We and others have shown earlier that inclusion of dimeric sites and the extended flanking specificity improve prediction of in vivo occupied sites (Jolma et al., 2013; Orenstein and Shamir, 2014), indicating that the extended specificity information revealed by HT-SELEX is biologically relevant.\n\nIn addition, the HT-SELEX data include binding models for 65 genes, which are not included in the B1H collection (Supplementary file 1C). In conclusion, our dataset and the existing B1H dataset support each other, but appear to have method-specific differences and do not overlap completely.\n\n### Conservation of primary DNA-binding specificities between Drosophila and humans\n\nTFs are generally highly conserved in evolution. However, sequence analysis of DBD sequences of Drosophila and human revealed substantial differences in conservation of orthologous TF DBD pairs both between and within different TF families (Figure 3\u2014figure supplement 2), suggesting that some divergence of TF binding specificity could have occurred. To address the conservation of the binding specificities, we first calculated motif similarity score of all previously existing B1H and HT-SELEX binding profiles for Drosophila and mammals, respectively, and illustrated their similarities as a network map (Figure 3). Analysis of similarity between canonical homeodomain TF binding specificities between fruit fly and mammals using these existing datasets suggested that fruit fly homeodomains bind to a smaller subset of sites than human homeodomains (Figure 3A). However, this result could be due to the method-specific differences discussed above rather than true evolutionary divergence. Indeed, comparison between our HT-SELEX derived fruit fly and mammalian TF profiles indicate that fruit fly and human homeodomains bind to a similar range of sequences (Figure 3B). Analyses of other families, including T-box proteins, Nkx type homeodomains, and C2H2 zinc fingers of the EGR family using B1H data produce similarly misleading results suggesting divergence of DNA-binding specificity. In contrast, comparison of our results generated using the same method yields very similar specificity profiles between orthologous proteins from human and fruit fly (Figure 3C\u2013E). Consistently with this finding, analysis of in vivo motifs for Nkx and EGR proteins supports the motif derived by HT-SELEX (Figure 3\u2014figure supplement 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig3-v1.jpg)\n\n**Figure 3.:** (A) Network graph of previously determined mammalian and fruit fly homeodomain protein DNA binding specificities. Mammalian and fruit fly TF models are represented by black and blue nodes, respectively, and an edge is drawn between similar models. Note that based on existing data, it appears that fruit fly homeodomains (blue) recognize only a subset of the mammalian homeodomain specificities. Partial consensus sequences for the node clusters are also indicated. (B) Increased precision obtained by using HT-SELEX for both fruit fly and mammalian TFs reveals that the range of mammalian homeodomain specificities is covered by fruit fly TFs. Note also that Drosophila has only one posterior homeodomain protein (Abd-B) that recognizes a motif (asterisk) that is similar to motifs bound by human HOX9-12. Drosophila thus lacks a protein whose motif preference is similar to that of human HOX13 proteins (six models inside red oval; see also Jolma et al., 2013). (C, D, E) Analysis of previous models for T-box, Nkx homeodomain and EGR proteins. Note that previous data for mammals (black) and fruit flies (blue) suggest divergence of the fruit fly specificity, whereas the fruit fly HT-SELEX data (red) reveal the similarity of the mammalian and fruit fly binding profiles. See Figure 3\u2014source data 1 for details. See also Figure 3\u2014figure supplements 1\u20133.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Dendrogram shows motif similarities between the fruit fly motif collection in this study and the bacterial one hybrid collection (Noyes et al., 2008; Zhu et al., 2011; Enuameh et al., 2013). Barcode logos of all models are also shown. HT-SELEX models are highlighted by red bars. Note that the B1H motifs and HT-SELEX motifs are similar but that B1H defines a shorter motif than HT-SELEX (see Figure 3\u2014figure supplement 3).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Note that many TF domains are highly conserved, but that others display levels of conservation that are similar to those observed for domains involved in protein\u2013protein, protein-RNA, and enzyme\u2013substrate interactions (kinase domains, RNA recognition module (RRM), SH2, SH3, and Bromodomains). Note also the broad distributions of conservation scores within TF families.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Homeobox family gene repo. HT-SELEX reveals weak flanking preference that is not identified by B1H. HT-SELEX also identifies a homodimeric motif (see Jolma et al., 2013). (B) Comparison between HT-SELEX and B1H motifs for Drosophila Nkx gene tin and human NKX2-3. Main difference is indicated by box. Note that site identified using DNase I (Bergman et al., 2005) supports the flanking specificity revealed by HT-SELEX. (C) Comparison between HT-SELEX and B1H motifs for C2H2 zinc finger protein klu/EGR. Main difference is indicated by box. Note that site identified using MEME analysis of ChIP-seq data from Yan et al. (2013) supports the flanking specificity revealed by HT-SELEX.\n\nIn addition, several reports have also described structural differences of TFs between fruit flies and mammals. For example, bZIP proteins of the CREB3 subfamily were classified into three subclasses A, B, and C based on the presence or absence of TM and MD1 domains. Fruit fly CrebA is subclass C, whereas its human orthologs CREB3L1 and L2 belong to subclass A (Barbosa et al., 2013). However, no differences between DNA binding specificities of these proteins were revealed by our analysis. Likewise, we did not observe differences between orthologous proteins in AP2, bHLH, GCM, HMG, MADS, RFX, and T-box families (Figure 1\u2014figure supplement 2\u201313 and not shown).\n\nA global comparison between fruit fly and mammalian TF binding specificities also revealed that fruit fly DNA-binding specificities cover almost the complete range of mammalian TF specificities (Figure 4), and that clustering of motifs is not influenced by the species indicating that orthologous proteins recognize highly conserved motifs. These results indicate that the gene regulatory code that determines how DNA sequence directs gene expression is highly conserved in evolution.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig4-v1.jpg)\n\n**Figure 4.:** Dendrogram shows motif similarities between the fruit fly motif collection in this study and the human and mouse HT-SELEX collection of (Jolma et al., 2010; Jolma et al., 2013). Where both human and mouse motifs exist, human motif is shown. Drosophila models are indicated by red bars. Barcode logos for each factor are also shown. An example of conversion of a sequence logo into a Barcode logo is shown in center. See Figure 4\u2014source data 1 for details.\n\n### Conservation of secondary binding modes and dinucleotide preferences of TFs\n\nConservation of primary TF binding specificity is perhaps not that surprising, given the structural constraints of TF folds, and the fact that in many cases a large number of target sites would need to co-evolve with the TF binding specificity. However, more subtle changes in TF DNA-binding specificity could occur, resulting in morphological changes due to loss or gain of secondary TF-DNA binding modes, or due to slow alteration of TF specificity.\n\nTo determine whether secondary TF-DNA binding modes are conserved, we compared secondary modes of binding between TFs in several structural families. In all cases where sufficiently high quality data existed for detection of weaker binding sites in both species, the secondary modes were conserved (Figure 5A and not shown), indicating that TF specificity does not commonly evolve by loss or gain of secondary binding modes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig5-v1.jpg)\n\n**Figure 5.:** (A) Conservation of secondary binding modes. Sequence logos showing primary and secondary binding specificities for the indicated Drosophila (red typeface) and human (gray typeface) transcription factors are shown. Note that similar secondary modes exist for all factors. (B) Heatmap showing interdependency between bases in the binding model of the Runt family TF lz. Color of each tile indicates the deviation of the observed base distribution from a prediction using a mononucleotide (PWM) model that assumes independence of the indicated bases (color scale on the right; red indicates high deviation). Bracket indicates the two bases that show the largest deviation. Inset shows magnification of the tile; dots inside the each tile indicate pairs of bases that are over- (yellow) or under- (blue) represented relative to mononucleotide model prediction. (C, D, E) Conservation of dinucleotide preferences of the indicated orthologous proteins from fruit fly and human. Base positions deviating from mononucleotide model are indicated by red circles on the heatmap and brackets above the sequence logos.\n\nTo detect more subtle drift in TF specificity, we analyzed conservation of dinucleotide preferences resulting from structure-based TF-DNA recognition (Rohs et al., 2010; Jolma et al., 2013). To rapidly analyze the dinucleotide preferences, we developed a tool to visualize the extent to which a model based on independence of binding of individual bases (PWM) fails to describe the observed distribution of nucleotide pairs at all base positions. The score is based on the fraction of counts that are mispredicted, being maximal in cases where only two dinucleotides (e.g., AA and TT) are allowed and present at an equal frequency. In such a case, a mononucleotide model mispredicts half of all of counts to the dinucleotides AT and TA that are not bound at all. An almost as extreme case of dinucleotide preference is observed in a homodimeric site of the Runt family gene, lozenge (lz) (Figure 5B).\n\nAnalysis of conservation of such dinucleotide preferences in several TF families, including homeobox, heat shock factor, and nuclear receptors indicated that in all cases, even the dinucleotide preferences of the TFs were conserved between fruit flies and humans (Figure 5C\u2013E). Taken together, these results indicate that orthologous TFs bind to DNA in a very similar manner, resulting in conservation of even the secondary DNA binding modes and subtle dinucleotide preferences.\n\n### Evolution of TF binding specificity via gene duplication followed by divergence\n\nTFs are generally highly conserved between fruit flies and humans (Choo and Russell, 2011). However, both fruit flies and humans have a TF class that recognizes a unique site and does not exist in the other lineage, brinker and interferon regulatory factor (IRF) TFs, respectively. In addition, there are several subfamilies of TFs that recognize unique sites and are species-specific. For example, our analysis indicates that fruit fly lacks monomeric TFs that recognize sites similar to those of non-canonical E2F repressors (E2F7 and E2F8; see Jolma et al., 2013) and members of the class III ETS family (Wei et al., 2010) (Figure 1\u2014figure supplement 4 and data not shown). In addition, Drosophila has only one protein (ERR) that is homologous to human nuclear receptor group that includes three subgroups, androgen receptor (AR), estrogen receptor (ESR), and estrogen-receptor related protein (ESRR) subgroups. The fruit fly ERR protein recognizes a site that is similar to that recognized by human ESRR. However, no fruit fly orthologs exist for any of the proteins in the ESR or AR subgroups, which recognize different sites (Figure 6A). Conversely, the fruit fly knirps-like (knrl) nuclear receptor (NR0 subfamily) has no orthologs in human (King-Jones and Thummel, 2005) and its motif is distinct from the other NR proteins (Figure 1\u2014figure supplement 9). Similarly, the Pax family transcription factor, Poxn, has no ortholog in human (Hill et al., 2010). While other Pax TFs recognize a monomeric Paired binding site, Poxn binds to a dimeric variant of the site (Figure 6B). These results indicate that TF DNA-binding specificity can evolve via duplication and divergence, and that such changes can yield novel DNA-binding specificities.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig6-v1.jpg)\n\n**Figure 6.:** (A) Duplication and divergence has generated three distinct specificities in related nuclear receptors. Dendrogram is drawn based on amino-acid sequence similarity between the DBDs. Binding motifs are shown on the right column. Only one of the specificities (top clade), a monomeric AAGGTCA motif (blue arrow) exists in Drosophila. A human-specific site (middle clade) recognized by ESR1 is a dimer with the same half-site, but in a head-to-head configuration. Another human-specific site (bottom clade) recognized by androgen receptor has a different half-site (G/A)G(A/T)ACA (green arrow). (B) Specificity of the Pax proteins in relation to the sequence similarity of their paired DBDs. Binding motifs (right) are categorized into paired, homeodomain (homeo), and paired and homeodomain (P + H). Note that fruit fly Poxn binds to a site that is not recognized by any of the human PAX proteins. Arrows indicate an orientation of the paired motifs. N.D. = not determined. Complete data for all major families are shown in Figure 1\u2014figure supplement 2\u201313.\n\n### Changes in binding specificity between orthologs\n\nAnalysis of all our data also resulted in the identification of two cases where a direct ortholog between fruit fly and humans had altered specificity. CG30420 (also known as Atf-2) is an ortholog of mammalian ATF2 and ATF7 (Sano et al., 2005; Figure 7A). This gene recognizes a GACGT(C/G) sequence, whereas all other Atf subfamily genes including ATF7 and ATF2 recognize GACGT(C/A) (Figure 7B and Figure 1\u2014figure supplement 4). Analysis of enrichment of 10 bp subsequences (10-mers) indicates that one set of 10-mers containing GACGT(C/A) are enriched by both CG30420 and ATF7, whereas 10-mers containing GACGTG sequences are enriched only by CG30420 (Figure 7C), indicating that CG30420 can recognize a larger variety of sequences than ATF2 or ATF7. The specificity of CG30420 was observed for both DBD and full-length TF, and also reproducible using a completely independent DBD expression construct. Consistently with the change in specificity, a key asparagine that hydrogen bonds to the cytosine base in other CRE/ATF bZIP proteins is replaced by an arginine in CG30420 (Figure 7\u2014figure supplement 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig7-v1.jpg)\n\n**Figure 7.:** (A, B, C) The Drosophila bZIP protein CG30420 recognizes a site that is different from those recognized by its human orthologs ATF2 and ATF7. Box in B indicates the position whose specificity is diverged between fruit fly and human. Note that CG30420 recognizes a 10-mer ATGACGTGAT that is not bound by ATF7. Enrichment of 10-mers in CG30420 and ATF7 experiments is shown in panel C, oval indicates 10-mers preferentially recognized by CG30420. Two-dimensional color scale indicates the score of each k-mer against CG30420 and ATF7 PWM models (red indicates strong match to both, violet and green strong matches to only CG30420 and ATF7, respectively). For replicates and structural analysis, see Figure 7\u2014figure supplement 1. (D, E) The diverged binding specificities between Drosophila and human in nuclear receptor subfamily. Whereas, all human NR1I subfamily genes (VDR, NR1I2, NR1I3) recognize a motif containing direct repeat of a GTTCA motif, Hr96 (NR1J subfamily) recognizes tail-to-tail dimer of a different half-site, GT(G/T)CA. Drosophila knrl (NR0 subfamily), which has no human ortholog, recognizes a G(A/G)(G/T)CA motif, which is not recognized by any human nuclear receptor. The diverged position in NR1 subfamily is indicated by red triangle. Dendrograms in A and D show amino-acid sequence similarity of the DNA-binding domains. (F) Summary of biological roles of TFs with divergent specificities. Cell types and biological functions are indicated in green in Drosophila (left) and human (right). For some TFs with multiple functions (e.g., bZIP and HOX proteins, nuclear receptors), only one divergent role is shown for clarity. In addition to their divergent roles, Hr96 and its orthologs have also shared functionality (xenobiotic responses; (King-Jones et al., 2006; Reschly and Krasowski, 2006)). Note that TFs with novel specificities are often associated with cell types that do not exist in the other organism. References: 1(Lunde et al., 1998); 2(Hsouna et al., 2004); 3(Boll and Noll, 2002); 4(Horner et al., 2009); 5(Schwank et al., 2008); 6(Doumpas et al., 2013); 7(Seong et al., 2011); 8(Gregorieff et al., 2009); 9(Bartel et al., 2000); 10(Lu et al., 2003); 11(Oliveira et al., 2004); 12(Pardee et al., 2011); 13(Zakany and Duboule, 2007); 14(Maekawa et al., 1999); 15(Chen et al., 2012). Raw data and scripts are provided at Figure 7\u2014source data 1.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04837/elife-04837-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Ribbon diagram of the CREB bZIP/DNA complex (protein in green, DNA in yellow) and model of DNA recognition helix of CG30420 (in pink). Arrow indicates position of an amino-acid that recognizes bottom strand thymidine (T8), and the top strand cytosine (C14) that located at the position where the specificity difference between CG30420 and bZIP proteins of the CREB family are observed. The DNA sequence co-crystallized with CREB is shown below the structure (PDB entry 1DH3). (B) Close view of the Asn293 that recognizes bottom strand T8 and top strand C14 bases of the CRE site. This residue is replaced in CG30420 by an arginine, a bulky side chain that does not fit to the site, and is most likely directed to a backbone phosphate. This amino-acid substitution most likely explains the observed difference in specificity between CG30420 and CREB family proteins at this position. (C) Sequence alignment of CREB1 and CG30420 (CLUSTAL/omega). Residues involved in DNA interactions are colored (red = divergent, green = similar). (D) Reproducibility of the HT-SELEX for CG30420. Three independent experiments with three different constructs for CG30420 show very similar results.\n\nSimilarly, Hr96, a Drosophila NR1J group nuclear receptor gene recognizes tail-to-tail repetitive GT(A/G)CA motifs while the related human NR1 genes recognize head-to-tail repetitive GTTCA motifs (Figure 7D,E). Likewise, the class IV ETS family protein SPDEF and its ortholog Ets98B recognized the same core sequence, but differed in their preferences for 3\u2032 flanking sequences (Figure 1\u2014figure supplement 4). Taken together, these results indicate that in some isolated cases, specificities of orthologous TFs can diverge over long evolutionary time. Whether the divergence has originally occurred via duplication and divergence, followed by loss of different paralogs in each lineage is not clear.\n\n## Discussion\n\n### High resolution binding profiles of Drosophila TFs\n\nWe report here high-resolution DNA-binding specificity for a large fraction of Drosophila TFs. The binding models were determined using HT-SELEX, the same method we have used previously to determine specificities of mammalian TFs. Consistent with our earlier data, we found that TFs and TF DBDs recognize the same, relatively long sites, with more than half of all models being >10 bp in length (Jolma et al., 2013). To analyze the data, we developed novel computational algorithms, including a novel distance metric for gapped subsequences, score for dinucleotide preferences, and a method for comparing TF binding specificity models to each other. In addition, we developed a new barcode logo that facilitates visualization of similarities and differences in PWMs. These methods will have many applications in DNA sequence-analyses that extend beyond analysis of TF binding specificity.\n\nThe high resolution of the data coupled with the novel computational and data visualization tools allowed comparison of TF binding specificities at an unprecedented scale and resolution, revealing a striking level of conservation of binding specificities that extends to homodimeric sites, minor secondary binding modes, and subtle dinucleotide preferences. This result is surprising even considering the similarity of protein sequences between DBD ortholog pairs, and also in marked contrast to the reported low degree of conservation of protein\u2013protein interactions between species (Gandhi et al., 2006). Despite significant number of differences in the number of TFs, most binding specificities present in mammals were also identified in Drosophila, suggesting that the gene regulatory code is highly conserved.\n\n### Comparison with earlier data\n\nPreviously, Wolfe and colleagues have reported a dataset of Drosophila TF motifs (Noyes et al., 2008; Zhu et al., 2011; Enuameh et al., 2013). Much of these data are obtained using B1H analysis. Our data generally show good agreement with these data at the level of consensus and/or core TF binding sequences. However, the flanking sequences recognized by many TFs (Jolma et al., 2013) are poorly defined in the B1H data, probably at least in part due to the fact that a large fraction of the B1H data is derived from relatively few sequence reads generated using Sanger-sequencing. In addition, our data are generated using more than 10,000-fold more complex library, allowing analysis of longer dimeric motifs and more complex binding modes (e.g., secondary motifs and dinucleotide preferences). Thus, in addition to extending the repertoire of Drosophila TF binding specificities by providing 122 novel high-resolution motifs, our dataset extends previous models by shedding light on new features of Drosophila TF DNA-binding characteristics.\n\n### Conservation of transcription factor binding specificity between fruit flies and mammals\n\nTFs that belong to the same structural family generally bind to similar sites (e.g., Figure 2\u2014figure supplement 1 and Jolma et al., 2013), which is thought to represent the limited sequence space that can be recognized by particular protein folds. We show here that structural similarity of proteins defines not only the similarity of the core DNA binding site but also the flanking sequences, and that almost all specificities available for a human are also present in fruit flies (Figures 2, 4). Drosophila has many genes that are orthologous to human TF genes with highly conserved DBD protein sequences even though these species diverged over 600 million years ago (Figure 4; Figure 3\u2014figure supplement 2). We show here that orthologous TFs have almost identical core DNA binding profiles, flanking sequences, and secondary modes of binding (Figure 5 and Figure 1\u2014figure supplement 2\u201313). This fact suggests that DNA binding specificity is highly constrained by protein structure and is difficult to alter even over long evolutionary time scales. These results also indicate that TF specificity is not generally subject to subtle drift, but tends to either stay very similar or evolve to a distinctly different state.\n\n### Divergence of specificity\n\nAlthough humans have a larger number of TFs than fruit flies, the gene duplication events that have occurred after separation of the invertebrate and vertebrate lineages have generally not lead to emergence of novel TF specificities, outside of the rapidly evolving human zinc finger proteins that suppress endogenous retroviruses (Rowe et al., 2010; Lukic et al., 2014). However, we did find a few cases where a clear divergence of TF specificity had occurred. Most cases involved TFs whose genes have duplicated, and then diverged. In several cases, orthologs of a human protein with a particular specificity do not exist in fruit flies. Examples include non-canonical E2F repressors (E2F7, E2F8), ETS class III (SPI1, SPIB, and SPIC), and nuclear receptors of the ESR and AR subgroups. Conversely, the fruit fly nuclear receptor knirps-like (knrl) and the Pax protein Poxn do not have direct human orthologs, and recognize sites not bound by human TFs. In addition, the arthropod specific TF, brk, recognizes a unique binding site.\n\nWe also identified few cases where an apparent direct ortholog has acquired a novel specificity in either vertebrates or invertebrates (Figure 7). One case affected the bZIP proteins CG30420 and its human orthologs ATF2 and ATF7, and another the nuclear receptors Hr96 and NR1I. In addition, the human ETS class IV proteins, SPDEF, and its fruit fly ortholog Ets98B recognized an identical GGAT core motif, but preferred different sequences in their 3\u2032 flanks. Surprisingly, recognition of a secondary site we have previously described for SPDEF (Jolma et al., 2013) was conserved in fruit flies, with nearly identical sites bound by both SPDEF and Ets98B. The conservation of the secondary binding mode despite divergence of the primary specificity indicates that the binding modes can in some cases evolve independently of each other. Protein sequence-level conservation of the DNA-binding domains of the ETS proteins suggests that the divergence in specificity occurred at or near the divergence of invertebrates and vertebrates (not shown).\n\n### Biological roles of TFs with divergent specificity\n\nIndividual cell types of a multicellular organism are defined by expression of specific combinations of TFs (Takahashi and Yamanaka, 2006), and the number of TF genes correlates with complexity of organisms (see e g., Mastracci and Sussel, 2012). Interestingly, many of the TFs that we find to have a different specificity in humans are related to endocrine system function (AR, ESR1), or physiology of cell types that do not exist in fruit flies (Figure 7F). For example, ATF2 and non-canonical E2F repressors are important for placental morphogenesis (Chen et al., 2012; Maekawa et al., 1999), whereas ETS class III and IRF factors have important roles in differentiation of cells of the adaptive immune system (Bartel et al., 2000; Lu et al., 2003). SPDEF, in turn, regulates goblet cell differentiation in lung, conjunctiva, and intestine (Chen et al., 2009; Gregorieff et al., 2009; Marko et al., 2013). Although Drosophila has intestinal stem cells and enterocyte-related cells, it does not have a cell type similar to mammalian goblet cells (Jiang and Edgar, 2012). These results suggest that evolution of novel TF binding specificities has contributed to emergence of novel types of differentiated cells.\n\nTaken together, our results indicate that human and fruit fly TF binding specificities display a striking level of conservation, despite dramatic morphological differences resulting from more than 600 million years of evolution and lack of detectable sequence conservation at the level of cis-regulatory elements. These results indicate that analogously to the genetic code, which is more conserved than protein-coding DNA (Moura et al., 2010), the gene regulatory code is much more conserved than the regulatory sequences themselves. Our results suggest that morphological divergence is not driven by subtle drift in specificity of TFs, but primarily caused by cis-regulatory changes (Carroll, 2000; Levine and Tjian, 2003), with some contribution from relatively large shifts in binding specificities of specific TFs.\n\n## Materials and methods\n\n### Data availability\n\nHT-SELEX sequence data are deposited to European Nucleotide Archive (ENA, EMBL-EBI) under accession PRJEB7373.\n\n### Clone collection and protein production\n\nCollection consisting of 760 DNA-binding domains was cloned by PCR, or generated by gene synthesis (codon optimized, Genscript) as indicated in Supplementary file 1A. DBD sequences for the collection were selected using Pfam or Interpro predicted DBDs, with addition of 4\u20135 flanking amino acid residues. Collection of 633 fruit fly full-length TF clones has been previously described (Hens et al., 2011). Constructs were verified by sequencing at least one end using a capillary sequencer (MWG, Germany). Clones were transferred to N-terminal thioredoxin hexahistidine bacterial expression vector (pETG-20A; Vincentelli et al., 2011) by a Gateway LR reaction (Invitrogen, Carlsbad, CA). The Rosetta (DE3)pLysS (Novagen) strain was used for protein production. E. coli cells were cultured in two wells of a deep 96-well plate (Thermo, AB0661) at 17\u201320\u00b0C in ZYP5052 autoinduction medium (see Vincentelli et al., 2011). Expressed proteins were purified using His-tag with Ni Sepharose 6 Fast Flow resin (GE Healthcare) and a 20 \u00b5m pore size filter plate (Nunc, 278011) as described in Vincentelli et al. (2011) and Jolma et al. (2013). All proteins except NFI were expressed in E. coli. NFI was expressed in Drosophila S2 Schneider cells using the expression vector pMT-Dest-HisSBP3xV5 (Bonke et al., 2013), protein expression was performed as described previously (Bonke et al., 2013).\n\n### Identification of secondary binding modes and dinucleotide preferences\n\nSimilarity of gapped and ungapped subsequences were analyzed using a novel distance metric \u2018Huddinge distance\u2019, that is based on number of defined and alignable bases between the compared subsequences. Formally, Huddinge distance between two gapped or ungapped subsequences is defined as d \u2212 a, where d is the maximum number of defined bases in either of the compared subsequences, and a is the maximum number of bases that can be perfectly aligned between them without introduction of new gaps. Subsequences that had higher counts than any of their neighbors at Huddinge distance of one were identified as local maxima, and used as initial seeds for the generation of the binding profiles.\n\nThe Autoseed method is in principle capable of identifying any specificity that results in enrichment of subsequences longer than 2 bp. In general, longer subsequences are expected to be more rare and thus more easily identified. Thus, HT-SELEX combined with Autoseed may not be able to identify specificity for relatively non-specific or accessory DNA-binding proteins that display weak mononucleotide or dinucleotide preferences. Scripts and software are supplied as Supplementary files.\n\n### HT-SELEX and PWM models\n\nHT-SELEX was performed essentially as described in Jolma et al. (2013) using selection ligands containing a 6 and 2\u20133 bp barcode before and after the 20 or 40 bp randomized region, respectively. The experimental reproducibility using 20 and 40 bp randomized regions is shown in Figure 1\u2014figure supplement 14. Sequences of selection ligands are indicated in Supplementary file 1B. The DNA ligands were mixed with purified proteins in a binding buffer (10 mM Tris\u2013HCl (pH 7.5), 50 mM NaCl, 1 mM MgCl2, 0.5 mM DTT, 0.5 mM EDTA, 4% glycerol, 5 \u00b5g/ml poly (dI-dC)) or a crude lysate of NFI expression vector transfected S2 cells, and were incubated at room temperature for 10 min. Then Ni Sepharose 6 Fast Flow resin (GE Healthcare), or High capacity Streptavidin Agarose resin (Thermo, 20,359) for NFI, equilibrated in binding buffer was added and the mixture was incubated for additional 20 min. After washing 12 times to remove nonspecifically bound oligonucleotides, the complexes were suspended in milliQ water. Subsequently, bound selection ligands were amplified by PCR using Phusion DNA polymerase (Finnzymes), and the resulting products used as selection ligands for the next round of selection. This process was repeated four to seven times. After each cycle, the selection ligands were pooled and sequenced using Illumina HiSeq 2000 sequencer. Raw sequencing data were binned according to barcodes and used for further analyses.\n\nPWM models were generated using initial seeds identified using IniMotif (Jolma et al., 2010) and/or Autoseed (above) that were refined by expert analysis as described in Jolma et al. (2013). Exact seeds, cycles, and multinomial model used are indicated in Supplementary file 1D. For comparison with Drosophila models in Figures 6 and 7, Human HT-SELEX data were generated for PAX3, PGR, NR1I2, and NR1I3 using E. coli expressed DBDs, and the obtained data and data from Jolma et al. (2013) were reanalyzed using the Autoseed-based pipeline.\n\n### Data visualization\n\nAll dendrograms based on amino-acid sequence similarity were generated by PRANK (Probabilistic Alignment Kit) v. 121218 (L\u00f6ytynoja and Goldman, 2005) using default parameters and DBD sequences predicted by Pfam or Interpro.\n\nBarcode logos were designed to allow visual alignment of sequences based on similarity of color profiles. At each base position, four bars are drawn that represent the frequency of the bases. Width of each bar is proportional to the frequency of the corresponding base (range 0\u20131), and height and color intensity of all the bars at a given position are proportional to the frequency of the most common base at that position (range 0.25\u20131).\n\nTo illustrate the correlation between protein sequence similarity and motif similarity (Figure 2\u2014figure supplement 1), we drew a two dimensional heatmap. Amino-acid similarity scores were calculated using Blastp (Altschul et al., 1990) with same DBD sequences as for the phylogenetic trees. The score is calculated by multiplying the Blastp score by matching length, and then dividing it by the length of the shorter query sequence. Where more than two DBDs were present in the compared TFs (e.g., Pax family), the score from the comparison resulting in the higher score was used.\n\nTo draw the box plot for the structural domain sequence conservation (Figure 3\u2014figure supplement 2), the orthologous gene list was downloaded from Ensembl biomart (version 78; genome assembly GRCh38). In case one fruit fly gene had more than one human ortholog, the human gene with the highest score was selected for the analysis. Protein conservation score was calculated by blastp as described above. Where more than one DBDs were present in the TFs analyzed (e.g., Pax), the protein sequences of all the DBDs were concatenated to a single sequence.\n\nMotif network graph (Figure 3) and dendrogram (Figure 4) are based on motif distance scores calculated by SSTAT (Pape et al., 2008). Motif similarity network (see Jolma et al., 2013)) based on data generated in this work, and on existing B1H data (flyfactorsurvey database, downloaded 19 Feb 2013) and HT-SELEX data from Jolma et al. (2013) was drawn using Cytoscape V3 (Lopes et al., 2010). Motif dendrogram was drawn by using euclidean distance metric with average linkage with R package ape.\n\nDinucleotide preference heatmap (Figure 5) illustrates the fraction of counts that are mispredicted if a mononucleotide model is used to predict the number of nucleotide pairs at a given pair of base positions. Score is scaled between 0% (bases bind independently of each other) and 100% (where half of all counts are mispredicted).\n\nTo compare enrichment of subsequences in two different datasets, scatter-plots of log-odd scores of the subsequence counts were generated using R. To illustrate subsequences that match to PWM models, the subsequences were scored against the indicated PWMs and colored according to the color scales indicated.\n\nScripts and software are supplied as Supplementary file 3.\n",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "3c83734f-6895-437f-bf92-c9a43158ab6a",
+      "submission_id": "be76e756-5d89-4b0d-9b7e-b3e0005a014b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bing Ren, University of California, San Diego School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04837.036](https://doi.org/10.7554/eLife.04837.036)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cConservation of transcription factor binding specificities across 600 million years of bilatera evolution\u201d for consideration at eLife. Your article has been favorably evaluated by Diethard Tautz (Senior editor) and 3 reviewers, one of whom, Bing Ren, is a member of our Board of Reviewing Editors. One of the other two reviewers, Kevin White, has agreed to share his identity.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nNitta et al. used HT-SELEX to characterize the DNA binding specificity for close to 900 Drosophila transcription factors (TF), generating DNA binding motifs for approximately 230 of them. For many of these TFs, they identified more than one motif recognized by the TFs. The authors then used this tremendous resource to address an important question, are TF binding specificities in Drosophila conserved in mammals? To do so, they have developed several new algorithms and generated many high-resolution PWMs for 230 fly TFs. Together with their previous work, this study will have a big impact on the transcription field and data generated will serve as a valuable resources for both experimental and computational researchers. The results not only confirmed previously known Drosophila TF binding specificities mapped using different approaches (mainly yeast one hybrid), but also added roughly 110 new TF binding motifs. The key finding is that Drosophila and Mammalian TFs with similar protein sequences have highly similar DNA binding specificity, which uncovers a strong conservation of DNA binding specificity of transcription factors over long period of evolution. This is very significant because it argues for a strong negative selection pressure for TF genes. Such conservation, though having been pointed out in previous studies (for example, Noyes MB et al., Cell, 2008), is interesting especially given the large scale and systematic nature. Another contribution is the AutoSeed program, which would be useful for processing of large SELECT datasets for extraction of TF binding motifs. The divergent binding specificity in human is interesting as it might be relevant to the emergence of novel cell types.\n\nTechnologically, the experiment was well designed and the analysis was thorough. The manuscript was well written and results were clearly presented.\n\nMain concerns:\n\n1) While the reviewers agree that the high degree of conservation in TF recognition motifs between mammals and flies is a potentially significant finding, to gain novelty some felt that it would be important that the authors, through either new analyses or new experiments, demonstrate the degree to which such conservation is unexpected, or unusual, for example, in comparison with other protein classes.\n\n2) A missed opportunity is that there is relatively little in-depth characterization of TF binding specificity in terms of the relationship between DNA motifs and DNA binding domains for different family of TFs.\n\n3) Since both 20- and 40-mer random sequences were used as DNA ligands, how reproducible were the motifs generated between the two pools of the DNA ligands?\n\n4) Many C2H2 zinc finger and bHLH TFs failed to generate any significant motifs. Did they fail to recognize any 20- or 40-mer sequences or were the sequences they bind to too diverse to generate a significant motif?\n\n5) The authors described comparison between motifs obtained by HT-SELEX and B1H system and concluded that there exists method-specific difference as illustrated in Figures 2 and 3. Have the authors tested the differences using EMSA or cell-based luciferase assays? It is important for the community to fully understand what caused the discrepancy and which method(s) is more reliable.\n\n6) ATFs are known to recognize octameric palindrome sequences. If the authors' discovery of ATGACGTGAT as a new consensus for fly Aft-2 were true, it would disrupt this palindrome. Have the authors applied orthogonal method, such as EMSA and luciferase assays, to validate the expected interactions? Since this is one of the two cases reported in this study that an ortholog TF pair showed divergent binding specificity, the authors should provide more solid evidence.\n\n7) The PWMs in the supplement table is missing. This information should be made publically available.\n",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "146eafff-3495-41c2-a7ac-a6305c8dcf81",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C1",
+      "claim": "The divergence between vertebrate and invertebrate lineages occurred over 600 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that the divergence between vertebrate and invertebrate lineages occurred over 600 million years ago (Hedges et al., 2006; Peterson et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hedges et al., 2006 and Peterson et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "2609f4b9-97f0-4c60-bb8b-6d610dd08eb6",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C2",
+      "claim": "After the divergence between vertebrates and invertebrates, protein coding sequences have retained a relatively high level of similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "After the divergence, protein coding sequences have retained a relatively high level of similarity, whereas homology in gene-regulatory elements is not detectable, despite the fact that many developmental pathways and regulatory relationships between TFs and their target genes have been conserved (see e g., Goodrich et al., 1996; Pichaud and Desplan, 2002; Ciglar and Furlong, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Goodrich et al., 1996; Pichaud and Desplan, 2002; Ciglar and Furlong, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "08fb9168-7de8-4c5c-aa2f-857ecae2b353",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C3",
+      "claim": "Homology in gene-regulatory elements is not detectable between vertebrates and invertebrates despite conserved developmental pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "After the divergence, protein coding sequences have retained a relatively high level of similarity, whereas homology in gene-regulatory elements is not detectable, despite the fact that many developmental pathways and regulatory relationships between TFs and their target genes have been conserved (see e g., Goodrich et al., 1996; Pichaud and Desplan, 2002; Ciglar and Furlong, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Goodrich et al., 1996; Pichaud and Desplan, 2002; Ciglar and Furlong, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "51a2e0ee-c1e5-4db2-8bb2-543a71d8b0b2",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C4",
+      "claim": "Many developmental pathways and regulatory relationships between TFs and their target genes have been conserved between vertebrates and invertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "After the divergence, protein coding sequences have retained a relatively high level of similarity, whereas homology in gene-regulatory elements is not detectable, despite the fact that many developmental pathways and regulatory relationships between TFs and their target genes have been conserved (see e g., Goodrich et al., 1996; Pichaud and Desplan, 2002; Ciglar and Furlong, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Goodrich et al., 1996; Pichaud and Desplan, 2002; Ciglar and Furlong, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "19516351-b208-4fa6-86fc-82f587ace1e6",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C5",
+      "claim": "Some changes in coding sequences of TFs have been observed and linked to specific evolutionary adaptations.",
+      "claim_type": "EXPLICIT",
+      "source": "Some changes in coding sequences of TFs have indeed been observed, and linked to specific evolutionary adaptations (Enard et al., 2002; Di-Po\u00ef et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Enard et al., 2002 and Di-Po\u00ef et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "5cc54529-6013-41ef-ab80-ddd0ae7adef1",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C6",
+      "claim": "Primary TF DNA binding specificity evolves slowly and is extremely conserved between mammalian species.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have indicated that primary TF DNA binding specificity evolves slowly, and is extremely conserved between mammalian species (see e g., Bohmann et al., 1987; Struhl, 1987; Merika and Orkin, 1993; Amoutzias et al., 2007; Wei et al., 2010; Jolma et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations including Bohmann et al., 1987; Struhl, 1987; Merika and Orkin, 1993; Amoutzias et al., 2007; Wei et al., 2010; Jolma et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "ff5a31f3-a129-42e5-a99f-cdab88155fa1",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C7",
+      "claim": "The origin of most structural families of TFs dates well before the emergence of mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The origin of most structural families of TFs dates well before the emergence of mammals, and even predates the divergence of vertebrates and invertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about TF evolution",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "7be08fd6-ab7c-4516-8df5-1abff486acd5",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C8",
+      "claim": "The origin of most structural families of TFs predates the divergence of vertebrates and invertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The origin of most structural families of TFs dates well before the emergence of mammals, and even predates the divergence of vertebrates and invertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about TF evolution",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "9816da4b-4521-4a1b-b93b-64a78e5071ef",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C9",
+      "claim": "Within each TF family, DNA binding specificity has diverged considerably, with many families having 2\u201310 different subclasses displaying different primary binding specificities.",
+      "claim_type": "EXPLICIT",
+      "source": "Within each TF family, DNA binding specificity has also diverged considerably, with many families having 2\u201310 different subclasses displaying different primary binding specificities (Berger et al., 2008; Wei et al., 2010; Jolma et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Berger et al., 2008; Wei et al., 2010; Jolma et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "5767e4b1-9c1c-422d-b803-e6c453452ddf",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C10",
+      "claim": "Many differences in the TF repertoire between invertebrates and vertebrates exist due to the expansion of some gene families, such as nuclear receptors and C2H2 zinc finger factors in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, many differences in the TF repertoire between invertebrates and vertebrates exist due to the expansion of some gene families, such as nuclear receptors and C2H2 zinc finger factors in vertebrates (Charoensawan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Charoensawan et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "ad647f81-b291-48ba-a564-4b46754e1d86",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C11",
+      "claim": "The binding specificities of 242 Drosophila TFs were determined in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, we determined the binding specificities of 242 Drosophila TFs, and compared them to human and mouse data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the experimental data presented",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "10fdf896-cd08-4878-953b-e9f098a418e1",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C12",
+      "claim": "TF binding specificities are highly conserved between Drosophila and mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that TF binding specificities are highly conserved between Drosophila and mammals, and that for orthologous TFs, the similarity extends even to the level of very subtle dinucleotide binding preferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the comparative analysis of HT-SELEX data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "fa4ba301-7149-4a54-9e30-0d9f952035d3",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C13",
+      "claim": "For orthologous TFs, the similarity in binding specificity extends to the level of very subtle dinucleotide binding preferences.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that TF binding specificities are highly conserved between Drosophila and mammals, and that for orthologous TFs, the similarity extends even to the level of very subtle dinucleotide binding preferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the comparative analysis of HT-SELEX data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "0b6169db-ada7-4748-879e-2e6e1004b8ef",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C14",
+      "claim": "The few human TFs with divergent specificities function in cell types not found in fruit flies.",
+      "claim_type": "EXPLICIT",
+      "source": "The few human TFs with divergent specificities function in cell types not found in fruit flies, suggesting that evolution of TF specificities contributes to emergence of novel types of differentiated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the analysis of TF functions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "931fe626-5ef8-423c-b026-84cf705eca69",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C15",
+      "claim": "Evolution of TF specificities contributes to emergence of novel types of differentiated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The few human TFs with divergent specificities function in cell types not found in fruit flies, suggesting that evolution of TF specificities contributes to emergence of novel types of differentiated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that divergent TFs function in cell types not found in fruit flies",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "9b047b2c-5aea-4fa6-a0d0-12deab08e772",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C16",
+      "claim": "A collection of 760 DNA-binding domains and 633 full-length Drosophila TF constructs were compiled for this study.",
+      "claim_type": "EXPLICIT",
+      "source": "A collection of cDNAs of DNA binding domains (DBDs) and full-length Drosophila TFs were compiled based on annotations in FlyTF.org (Pfreundt et al., 2010) and Hens et al. (2011), respectively. A total of 760 DBDs and 633 full length fruit fly TF constructs were expressed in E. coli as N-terminal thioredoxin-HIS tag fusion proteins, and subjected to the HT-SELEX process (Figure 1; Supplementary file 1A\u2013C; see 'Materials and methods' for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail supported by the experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "b7717c4d-8b29-4e26-bb9b-9eab9462d43c",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C17",
+      "claim": "The clone collections covered 271/294 (92%) of 'trusted TFs' and 612/754 (81%) of 'putative TFs' in FlyTF.org.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the clone collections covered 271/294 (92%) and 612/754 (81%) of 'trusted TFs' and 'putative TFs' in FlyTF.org (Pfreundt et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative description of the coverage of the study, supported by the experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "0dd55b19-7665-4fac-845d-42f5c28f0013",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C18",
+      "claim": "Robustly enriched subsequences were identified for a total of 196 DBDs and 92 full-length TF proteins, representing 242 unique fruit fly TFs.",
+      "claim_type": "EXPLICIT",
+      "source": "The obtained sequences were analyzed computationally, resulting in the identification of robustly enriched subsequences for a total of 196 DBDs and 92 full-length TF proteins, representing a total of 242 unique fruit fly TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the computational analysis of HT-SELEX data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "093f5806-24dd-48e0-8cdd-571c77d99f0f",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C19",
+      "claim": "Motifs were obtained for 86% of fruit fly TF families.",
+      "claim_type": "EXPLICIT",
+      "source": "Motifs were obtained for 86% of fruit fly TF families, with median within-family coverage of 49% (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the study, supported by Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "53f6d5c9-0975-4356-8758-92c68190b99f",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C20",
+      "claim": "The median within-family coverage of motifs was 49%.",
+      "claim_type": "EXPLICIT",
+      "source": "Motifs were obtained for 86% of fruit fly TF families, with median within-family coverage of 49% (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the study, supported by Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "eecfa95c-1de0-41b0-9a84-9143befd2d94",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C21",
+      "claim": "A relatively low success rate was observed for C2H2 zinc fingers and basic helix-loop-helix proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to earlier studies (Badis et al., 2009; Jolma et al., 2013), a relatively low success rate was observed for C2H2 zinc fingers and basic helix-loop-helix proteins, probably at least in part due to difficulty in computational identification of DNA-binding zinc finger proteins, and the fact that many bHLH proteins bind to DNA as obligate heterodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by the experimental data and comparison with earlier studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "9ae5414d-cbe6-4a75-a58d-750374c51cd9",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C22",
+      "claim": "The low success rate for C2H2 zinc fingers is probably at least in part due to difficulty in computational identification of DNA-binding zinc finger proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to earlier studies (Badis et al., 2009; Jolma et al., 2013), a relatively low success rate was observed for C2H2 zinc fingers and basic helix-loop-helix proteins, probably at least in part due to difficulty in computational identification of DNA-binding zinc finger proteins, and the fact that many bHLH proteins bind to DNA as obligate heterodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed low success rate",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "0292c53c-3125-48ef-89f5-8511fc6533d8",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C23",
+      "claim": "Many bHLH proteins bind to DNA as obligate heterodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to earlier studies (Badis et al., 2009; Jolma et al., 2013), a relatively low success rate was observed for C2H2 zinc fingers and basic helix-loop-helix proteins, probably at least in part due to difficulty in computational identification of DNA-binding zinc finger proteins, and the fact that many bHLH proteins bind to DNA as obligate heterodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bHLH proteins",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "2e18e38d-9ad4-4344-bfa4-ee130058b481",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C24",
+      "claim": "A relatively low success rate was observed for large DBD constructs and full-length proteins, probably due to difficulty of expressing them in an active form in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, relatively low success rate was observed for large DBD constructs and full-length proteins, probably due to difficulty of expressing them in an active form in E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data with a speculative explanation",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "fe12bca6-dd2b-4411-9674-86212cf19318",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C25",
+      "claim": "A novel algorithm called Autoseed was developed to identify enriched subsequences in HT-SELEX experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "To improve the detection of enriched subsequences in the HT-SELEX experiments, we developed a novel algorithm, Autoseed, that identifies all subsequences that represent local maxima, that is, are enriched more than any closely related sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological development described in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "24fa13f4-8690-486f-9741-657b831bf235",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C26",
+      "claim": "Autoseed identifies all subsequences that represent local maxima, that is, are enriched more than any closely related sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "To improve the detection of enriched subsequences in the HT-SELEX experiments, we developed a novel algorithm, Autoseed, that identifies all subsequences that represent local maxima, that is, are enriched more than any closely related sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Autoseed algorithm",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "e4e11ed6-5f30-482d-92df-f226239de22e",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C27",
+      "claim": "The Autoseed method is based on a novel distance measure between two subsequences called the Huddinge distance.",
+      "claim_type": "EXPLICIT",
+      "source": "The method is based on a novel distance measure between two subsequences, the Huddinge distance (see Figure 1\u2014figure supplement 1 and 'Material and methods' for details).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological detail described in the study and illustrated in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "be082b53-bdad-4596-9504-949f1a7a5bb1",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C28",
+      "claim": "The Autoseed method can identify diverse motifs with widely spaced recognition sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The method compares also gapped subsequences to ungapped ones, and can thus identify diverse motifs with widely spaced recognition sites, and differentiate between monomers and dimers of the same subsequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the capabilities of the Autoseed method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "0638e66d-e441-4fba-b24c-21a086a0e63c",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C29",
+      "claim": "The Autoseed method can differentiate between monomers and dimers of the same subsequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The method compares also gapped subsequences to ungapped ones, and can thus identify diverse motifs with widely spaced recognition sites, and differentiate between monomers and dimers of the same subsequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the capabilities of the Autoseed method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "e7586c93-7543-4a96-b3e1-a4e7a1ef37e9",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C30",
+      "claim": "The Autoseed method can identify strong dinucleotide preferences.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, as subsequences that differ by more than one substitution are not compared to each other, the method can identify strong dinucleotide preferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the capabilities of the Autoseed method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "bcda525a-43a5-485b-af91-efd65dd5ef6c",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C31",
+      "claim": "Analysis of the fruit fly HT-SELEX dataset using Autoseed resulted in the identification of 416 motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the fruit fly HT-SELEX dataset using Autoseed resulted in the identification of 416 motifs, of which 210 were monomeric, 198 dimeric, 5 trimeric, and 3 dimers of dimers (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the Autoseed analysis, supported by Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "f0e96c7d-4d03-49ae-b4d5-b81bb382f025",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C32",
+      "claim": "Of the 416 motifs identified, 210 were monomeric, 198 dimeric, 5 trimeric, and 3 dimers of dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the fruit fly HT-SELEX dataset using Autoseed resulted in the identification of 416 motifs, of which 210 were monomeric, 198 dimeric, 5 trimeric, and 3 dimers of dimers (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative breakdown of the motif types, supported by Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "cf209d39-e340-44b9-841c-13dd58c07169",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C33",
+      "claim": "90 of the 416 motifs describe secondary binding modes.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these motifs, 90 describe secondary binding modes\u2014bound sequences that are distinctly different from the primary TF binding site (see Badis et al., 2009; Rohs et al., 2010; Jolma et al., 2013) for a TF that has a stronger primary binding motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the analysis, with reference to previous work defining secondary binding modes",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "2829626f-08af-4a34-9d06-5c9f18b4c639",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C34",
+      "claim": "Of the secondary models, 29 cases were due to strong dinucleotide preferences, 21 cases were due to flanking sequence variants, and 40 cases were due to spacing and orientation preferences.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the secondary models, 29 cases were due to strong dinucleotide preferences, 21 cases were due to flanking sequence variants, and 40 cases were due to spacing and orientation preferences (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative breakdown of the types of secondary models, supported by Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "2835f5ef-7929-47b7-a11e-1a6814546f53",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C35",
+      "claim": "Different TF structural families have clearly divergent specificities.",
+      "claim_type": "EXPLICIT",
+      "source": "As suggested by previous studies (Wei et al., 2010; Jolma et al., 2013; Weirauch et al., 2014), different TF structural families had clearly divergent specificities, and amino-acid sequence similarity was predictive of overall DNA binding specificity in most TF families.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by the data and consistent with previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "d0f1e615-da29-4392-87fc-007e4b83dce6",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C36",
+      "claim": "Amino-acid sequence similarity is predictive of overall DNA binding specificity in most TF families.",
+      "claim_type": "EXPLICIT",
+      "source": "As suggested by previous studies (Wei et al., 2010; Jolma et al., 2013; Weirauch et al., 2014), different TF structural families had clearly divergent specificities, and amino-acid sequence similarity was predictive of overall DNA binding specificity in most TF families.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by the data and consistent with previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "d3924e16-34d1-41c4-ad77-87d4eac2aa8e",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C37",
+      "claim": "Fruit fly bHLH proteins can be classified into six subfamilies based on their preferred 6 bp core motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we could classify fruit fly bHLH proteins into six subfamilies based on their preferred 6 bp core motifs (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the analysis of bHLH proteins, supported by Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "00834efe-7910-40c7-93cd-d61a4e9b780a",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C38",
+      "claim": "Members of bHLH proteins that are similar in amino-acid sequence generally recognize the same core sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Members that are similar in amino-acid sequence generally recognized the same core sequence, and highly similar TFs recognized also similar flanking nucleotides (e.g., HLHm3, HLHmbeta, HLHmgamma, HLHmdelta).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the analysis of bHLH proteins",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "61c542bf-86ad-4915-b1e3-718c4197a475",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C39",
+      "claim": "Highly similar bHLH TFs recognize similar flanking nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Members that are similar in amino-acid sequence generally recognized the same core sequence, and highly similar TFs recognized also similar flanking nucleotides (e.g., HLHm3, HLHmbeta, HLHmgamma, HLHmdelta).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the analysis of bHLH proteins, with specific examples provided",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "2908b32b-f4b8-4c81-9c05-ce5275963eb1",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C40",
+      "claim": "Order based on similarity of TF DNA binding specificities largely recapitulates the phylogenetic relationships between the DBDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Order based on similarity of TF DNA binding specificities, calculated using correlations between scores of all possible gapped 6 bp subsequences (see 'Materials and methods' for details), largely recapitulated the phylogenetic relationships between the DBDs (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the comparative analysis, supported by Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "331e0ca3-c29a-463c-b47f-3d3c6fabf0f6",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C41",
+      "claim": "The profiles obtained for proteins analyzed using B1H showed, with very few exceptions, the same core binding specificities as those obtained by HT-SELEX.",
+      "claim_type": "EXPLICIT",
+      "source": "The profiles we obtained for the proteins that had been analyzed using B1H showed, with very few exceptions, the same core binding specificities (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between HT-SELEX and B1H data, supported by Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "225c1bc7-2b08-46a7-b8fd-933a14292ad7",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C42",
+      "claim": "Motifs obtained using HT-SELEX and B1H for the same proteins were often not located next to each other in the dendrogram.",
+      "claim_type": "EXPLICIT",
+      "source": "Motifs generally clustered based on the corresponding TF families. However, motifs obtained using HT-SELEX and B1H for the same proteins were often not located next to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the comparative analysis of HT-SELEX and B1H data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "936867b3-dde2-49b6-a2ec-a5ced102f919",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C43",
+      "claim": "Flanking sequences obtained using HT-SELEX and B1H are often not identical.",
+      "claim_type": "EXPLICIT",
+      "source": "One reason for this is that flanking sequences obtained using HT-SELEX and B1H are often not identical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the comparative analysis of HT-SELEX and B1H data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "5414b8a8-d2a3-47d7-9052-4e74b51ffd37",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C44",
+      "claim": "HT-SELEX data generally yield longer profiles than B1H data (average width of 12.7 bp vs 10.7 bp).",
+      "claim_type": "EXPLICIT",
+      "source": "The HT-SELEX data also generally yield somewhat longer profiles (average width of 12.7 bp vs 10.7 bp), particularly in cases where TFs bind as dimers (e.g., nuclear receptors).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison between HT-SELEX and B1H data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "2657015d-eb0f-4351-ad26-a0055fd1e179",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C45",
+      "claim": "Inclusion of dimeric sites and extended flanking specificity improve prediction of in vivo occupied sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have shown earlier that inclusion of dimeric sites and the extended flanking specificity improve prediction of in vivo occupied sites (Jolma et al., 2013; Orenstein and Shamir, 2014), indicating that the extended specificity information revealed by HT-SELEX is biologically relevant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jolma et al., 2013 and Orenstein and Shamir, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "04d59bcc-ac32-4d3e-8583-b69c103832b7",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C46",
+      "claim": "The extended specificity information revealed by HT-SELEX is biologically relevant.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have shown earlier that inclusion of dimeric sites and the extended flanking specificity improve prediction of in vivo occupied sites (Jolma et al., 2013; Orenstein and Shamir, 2014), indicating that the extended specificity information revealed by HT-SELEX is biologically relevant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the improved prediction of in vivo occupied sites",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "fe86768a-8c02-492f-8c5b-3344af8a01d6",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C47",
+      "claim": "The HT-SELEX data include binding models for 65 genes which are not included in the B1H collection.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the HT-SELEX data include binding models for 65 genes, which are not included in the B1H collection (Supplementary file 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison between the HT-SELEX and B1H datasets",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "7cd0b419-c9fe-4bbe-9917-fbea788d94b8",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C48",
+      "claim": "The HT-SELEX dataset and the existing B1H dataset support each other but have method-specific differences and do not overlap completely.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our dataset and the existing B1H dataset support each other, but appear to have method-specific differences and do not overlap completely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the comparison of HT-SELEX and B1H data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "e3777aaf-b4da-4670-8485-2bd40d571649",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C49",
+      "claim": "Sequence analysis of DBD sequences of Drosophila and human revealed substantial differences in conservation of orthologous TF DBD pairs both between and within different TF families.",
+      "claim_type": "EXPLICIT",
+      "source": "However, sequence analysis of DBD sequences of Drosophila and human revealed substantial differences in conservation of orthologous TF DBD pairs both between and within different TF families (Figure 3\u2014figure supplement 2), suggesting that some divergence of TF binding specificity could have occurred.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the sequence analysis, supported by Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "1848650f-9a10-4754-803d-9113d0b752ba",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C50",
+      "claim": "Comparison of HT-SELEX derived fruit fly and mammalian TF profiles indicates that fruit fly and human homeodomains bind to a similar range of sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this result could be due to the method-specific differences discussed above rather than true evolutionary divergence. Indeed, comparison between our HT-SELEX derived fruit fly and mammalian TF profiles indicate that fruit fly and human homeodomains bind to a similar range of sequences (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the comparative analysis of HT-SELEX data, supported by Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "123c35cf-cdb0-4401-86ee-a856705b0f23",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C51",
+      "claim": "Comparison of HT-SELEX results for orthologous proteins from human and fruit fly yields very similar specificity profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, comparison of our results generated using the same method yields very similar specificity profiles between orthologous proteins from human and fruit fly (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the comparative analysis of HT-SELEX data, supported by Figure 3C\u2013E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "c7edd4ff-2699-4cd8-89b7-d6e026e9df9a",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C52",
+      "claim": "Analysis of in vivo motifs for Nkx and EGR proteins supports the motif derived by HT-SELEX.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently with this finding, analysis of in vivo motifs for Nkx and EGR proteins supports the motif derived by HT-SELEX (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation of HT-SELEX results using in vivo data, supported by Figure 3\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "39968fa3-3d67-4511-ac90-a23c45ad8e23",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C53",
+      "claim": "Fruit fly DNA-binding specificities cover almost the complete range of mammalian TF specificities.",
+      "claim_type": "EXPLICIT",
+      "source": "A global comparison between fruit fly and mammalian TF binding specificities also revealed that fruit fly DNA-binding specificities cover almost the complete range of mammalian TF specificities (Figure 4), and that clustering of motifs is not influenced by the species indicating that orthologous proteins recognize highly conserved motifs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the global comparison of TF binding specificities, supported by Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "1252fd6f-ab23-4d67-9310-3a47bcdb1bd7",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C54",
+      "claim": "Clustering of motifs is not influenced by the species, indicating that orthologous proteins recognize highly conserved motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "A global comparison between fruit fly and mammalian TF binding specificities also revealed that fruit fly DNA-binding specificities cover almost the complete range of mammalian TF specificities (Figure 4), and that clustering of motifs is not influenced by the species indicating that orthologous proteins recognize highly conserved motifs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the global comparison of TF binding specificities, supported by Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "357fe2fd-6819-4ff8-8f80-bee7519e2d4a",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C55",
+      "claim": "The gene regulatory code that determines how DNA sequence directs gene expression is highly conserved in evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the gene regulatory code that determines how DNA sequence directs gene expression is highly conserved in evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the conservation of TF binding specificities",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "3218c55b-ed92-4d5d-9aba-ab89594c4a32",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C56",
+      "claim": "In all cases where sufficiently high quality data existed for detection of weaker binding sites in both species, the secondary modes of binding were conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases where sufficiently high quality data existed for detection of weaker binding sites in both species, the secondary modes were conserved (Figure 5A and not shown), indicating that TF specificity does not commonly evolve by loss or gain of secondary binding modes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the comparative analysis of secondary binding modes, supported by Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "76fe6703-8510-400b-b961-8c9073e68355",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C57",
+      "claim": "TF specificity does not commonly evolve by loss or gain of secondary binding modes.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases where sufficiently high quality data existed for detection of weaker binding sites in both species, the secondary modes were conserved (Figure 5A and not shown), indicating that TF specificity does not commonly evolve by loss or gain of secondary binding modes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the conservation of secondary binding modes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "1551c419-01b5-418b-8dd9-a3029b284c34",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C58",
+      "claim": "Dinucleotide preferences of TFs are conserved between fruit flies and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of conservation of such dinucleotide preferences in several TF families, including homeobox, heat shock factor, and nuclear receptors indicated that in all cases, even the dinucleotide preferences of the TFs were conserved between fruit flies and humans (Figure 5C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the analysis of dinucleotide preferences, supported by Figure 5C\u2013E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "c4eb8581-ecc8-437a-aec3-1ad2dea0eda1",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C59",
+      "claim": "Orthologous TFs bind to DNA in a very similar manner, resulting in conservation of even the secondary DNA binding modes and subtle dinucleotide preferences.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that orthologous TFs bind to DNA in a very similar manner, resulting in conservation of even the secondary DNA binding modes and subtle dinucleotide preferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the analysis of secondary binding modes and dinucleotide preferences",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "e8168a58-f986-467c-8a1a-f66455e000d0",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C60",
+      "claim": "Brinker is a TF class that recognizes a unique site and exists in fruit flies but not in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both fruit flies and humans have a TF class that recognizes a unique site and does not exist in the other lineage, brinker and interferon regulatory factor (IRF) TFs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the comparative analysis of TF specificities",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "3bfda684-e5fb-4b38-9005-c5dada7d94d7",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C61",
+      "claim": "Interferon regulatory factor (IRF) TFs are a TF class that recognizes a unique site and exists in humans but not in fruit flies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both fruit flies and humans have a TF class that recognizes a unique site and does not exist in the other lineage, brinker and interferon regulatory factor (IRF) TFs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the comparative analysis of TF specificities",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "897bbd9c-c8ae-434c-a6f2-99c0bde1cbcd",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C62",
+      "claim": "Fruit fly lacks monomeric TFs that recognize sites similar to those of non-canonical E2F repressors (E2F7 and E2F8).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, our analysis indicates that fruit fly lacks monomeric TFs that recognize sites similar to those of non-canonical E2F repressors (E2F7 and E2F8; see Jolma et al., 2013) and members of the class III ETS family (Wei et al., 2010) (Figure 1\u2014figure supplement 4 and data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the comparative analysis, supported by Figure 1\u2014figure supplement 4 and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "a19e622e-15fd-458d-852a-0061071718de",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C63",
+      "claim": "Fruit fly lacks monomeric TFs that recognize sites similar to those of members of the class III ETS family.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, our analysis indicates that fruit fly lacks monomeric TFs that recognize sites similar to those of non-canonical E2F repressors (E2F7 and E2F8; see Jolma et al., 2013) and members of the class III ETS family (Wei et al., 2010) (Figure 1\u2014figure supplement 4 and data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the comparative analysis, supported by Figure 1\u2014figure supplement 4 and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "6befb8f9-a95b-4bb8-976e-e0f54f4d9478",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C64",
+      "claim": "Drosophila has only one protein (ERR) that is homologous to human nuclear receptor group that includes AR, ESR, and ESRR subgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Drosophila has only one protein (ERR) that is homologous to human nuclear receptor group that includes three subgroups, androgen receptor (AR), estrogen receptor (ESR), and estrogen-receptor related protein (ESRR) subgroups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the comparative analysis of nuclear receptors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "7e867712-0339-494d-be07-ebace06e7df3",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C65",
+      "claim": "The fruit fly ERR protein recognizes a site that is similar to that recognized by human ESRR.",
+      "claim_type": "EXPLICIT",
+      "source": "The fruit fly ERR protein recognizes a site that is similar to that recognized by human ESRR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the comparative analysis of binding specificities",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "41b20e24-ebf7-4514-9eaa-09a3b4764c59",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C66",
+      "claim": "No fruit fly orthologs exist for any of the proteins in the ESR or AR subgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no fruit fly orthologs exist for any of the proteins in the ESR or AR subgroups, which recognize different sites (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the comparative analysis, supported by Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "f5d52880-883a-4d78-8a11-116509899e1f",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C67",
+      "claim": "The fruit fly knirps-like (knrl) nuclear receptor (NR0 subfamily) has no orthologs in human.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the fruit fly knirps-like (knrl) nuclear receptor (NR0 subfamily) has no orthologs in human (King-Jones and Thummel, 2005) and its motif is distinct from the other NR proteins (Figure 1\u2014figure supplement 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to King-Jones and Thummel, 2005 and Figure 1\u2014figure supplement 9",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "033e368f-ba07-4997-8504-b9b343aff017",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C68",
+      "claim": "The motif of knirps-like (knrl) is distinct from the other NR proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the fruit fly knirps-like (knrl) nuclear receptor (NR0 subfamily) has no orthologs in human (King-Jones and Thummel, 2005) and its motif is distinct from the other NR proteins (Figure 1\u2014figure supplement 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the analysis of binding specificities, supported by Figure 1\u2014figure supplement 9",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "ceecb08f-08cc-4f95-b8f1-0e68f29b74e3",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C69",
+      "claim": "The Pax family transcription factor, Poxn, has no ortholog in human.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the Pax family transcription factor, Poxn, has no ortholog in human (Hill et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hill et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "1cab8c18-2881-4c36-8440-331548b350b8",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C70",
+      "claim": "While other Pax TFs recognize a monomeric Paired binding site, Poxn binds to a dimeric variant of the site.",
+      "claim_type": "EXPLICIT",
+      "source": "While other Pax TFs recognize a monomeric Paired binding site, Poxn binds to a dimeric variant of the site (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the analysis of Pax TF binding specificities, supported by Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "3f6df309-a877-4200-8fc5-01eb2274b869",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C71",
+      "claim": "TF DNA-binding specificity can evolve via duplication and divergence.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that TF DNA-binding specificity can evolve via duplication and divergence, and that such changes can yield novel DNA-binding specificities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observations of species-specific TF specificities",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "bcd01822-579f-4a63-9464-0b50301dead4",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C72",
+      "claim": "Duplication and divergence of TFs can yield novel DNA-binding specificities.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that TF DNA-binding specificity can evolve via duplication and divergence, and that such changes can yield novel DNA-binding specificities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observations of species-specific TF specificities",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "0854993c-2770-4328-8679-93bf851ca0c3",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C73",
+      "claim": "CG30420 (also known as Atf-2) is an ortholog of mammalian ATF2 and ATF7.",
+      "claim_type": "EXPLICIT",
+      "source": "CG30420 (also known as Atf-2) is an ortholog of mammalian ATF2 and ATF7 (Sano et al., 2005; Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Sano et al., 2005 and Figure 7A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "346978c9-ddb8-4993-a015-1c67ee6a21f3",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C74",
+      "claim": "CG30420 recognizes a GACGT(C/G) sequence, whereas all other Atf subfamily genes including ATF7 and ATF2 recognize GACGT(C/A).",
+      "claim_type": "EXPLICIT",
+      "source": "This gene recognizes a GACGT(C/G) sequence, whereas all other Atf subfamily genes including ATF7 and ATF2 recognize GACGT(C/A) (Figure 7B and Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the analysis of binding specificities, supported by Figure 7B and Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "c35b06d6-4144-4c32-b93b-26b21f8b1016",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C75",
+      "claim": "CG30420 can recognize a larger variety of sequences than ATF2 or ATF7.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of enrichment of 10 bp subsequences (10-mers) indicates that one set of 10-mers containing GACGT(C/A) are enriched by both CG30420 and ATF7, whereas 10-mers containing GACGTG sequences are enriched only by CG30420 (Figure 7C), indicating that CG30420 can recognize a larger variety of sequences than ATF2 or ATF7.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the analysis of 10-mer enrichment, supported by Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "6e908d50-4a62-47d4-813c-10657c5fc273",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C76",
+      "claim": "The specificity of CG30420 was observed for both DBD and full-length TF, and was reproducible using a completely independent DBD expression construct.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity of CG30420 was observed for both DBD and full-length TF, and also reproducible using a completely independent DBD expression construct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation of the CG30420 specificity result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "3dd446b8-c1fa-4cd9-bad2-a93b35c88b94",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C77",
+      "claim": "A key asparagine that hydrogen bonds to the cytosine base in other CRE/ATF bZIP proteins is replaced by an arginine in CG30420.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently with the change in specificity, a key asparagine that hydrogen bonds to the cytosine base in other CRE/ATF bZIP proteins is replaced by an arginine in CG30420 (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation that explains the change in specificity, supported by Figure 7\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "01d2a47a-c28b-47c5-b931-16d10e631797",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C78",
+      "claim": "All human NR1I subfamily genes (VDR, NR1I2, NR1I3) recognize a motif containing direct repeat of a GTTCA motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Hr96, a Drosophila NR1J group nuclear receptor gene recognizes tail-to-tail repetitive GT(A/G)CA motifs while the related human NR1 genes recognize head-to-tail repetitive GTTCA motifs (Figure 7D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the analysis of nuclear receptor binding specificities, supported by Figure 7D,E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "a263a59d-8a83-46ed-ae73-50b82d7612ac",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C79",
+      "claim": "Hr96, a Drosophila NR1J group nuclear receptor gene, recognizes tail-to-tail repetitive GT(A/G)CA motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Hr96, a Drosophila NR1J group nuclear receptor gene recognizes tail-to-tail repetitive GT(A/G)CA motifs while the related human NR1 genes recognize head-to-tail repetitive GTTCA motifs (Figure 7D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the analysis of nuclear receptor binding specificities, supported by Figure 7D,E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "028a380f-a49b-4b9f-b9d2-9af7a42d5512",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C80",
+      "claim": "The class IV ETS family protein SPDEF and its ortholog Ets98B recognized the same core sequence, but differed in their preferences for 3\u2032 flanking sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the class IV ETS family protein SPDEF and its ortholog Ets98B recognized the same core sequence, but differed in their preferences for 3\u2032 flanking sequences (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the analysis of ETS protein binding specificities, supported by Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "94016e7e-0923-42cc-81de-1e88fc76baf3",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C81",
+      "claim": "In some isolated cases, specificities of orthologous TFs can diverge over long evolutionary time.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that in some isolated cases, specificities of orthologous TFs can diverge over long evolutionary time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the few cases of divergent specificities observed",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "29157280-54c0-4ede-ac6b-a4ca5068322a",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C82",
+      "claim": "TFs and TF DBDs recognize the same, relatively long sites, with more than half of all models being >10 bp in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our earlier data, we found that TFs and TF DBDs recognize the same, relatively long sites, with more than half of all models being >10 bp in length (Jolma et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of binding site lengths, consistent with previous work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "110ccebf-8988-4710-8801-e9b67c8fe0bd",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C83",
+      "claim": "The high resolution of the data coupled with novel computational and data visualization tools allowed comparison of TF binding specificities at an unprecedented scale and resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The high resolution of the data coupled with the novel computational and data visualization tools allowed comparison of TF binding specificities at an unprecedented scale and resolution, revealing a striking level of conservation of binding specificities that extends to homodimeric sites, minor secondary binding modes, and subtle dinucleotide preferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the methodological advances and their impact",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "1d965cd4-7a99-4cc2-9e79-a45c1be7dd4a",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C84",
+      "claim": "A striking level of conservation of binding specificities was revealed that extends to homodimeric sites, minor secondary binding modes, and subtle dinucleotide preferences.",
+      "claim_type": "EXPLICIT",
+      "source": "The high resolution of the data coupled with the novel computational and data visualization tools allowed comparison of TF binding specificities at an unprecedented scale and resolution, revealing a striking level of conservation of binding specificities that extends to homodimeric sites, minor secondary binding modes, and subtle dinucleotide preferences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "c43ff023-3b38-492e-92d1-3fef13a4225d",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C85",
+      "claim": "The conservation of TF binding specificities is surprising even considering the similarity of protein sequences between DBD ortholog pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is surprising even considering the similarity of protein sequences between DBD ortholog pairs, and also in marked contrast to the reported low degree of conservation of protein\u2013protein interactions between species (Gandhi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results in the context of protein sequence similarity and comparison with protein-protein interactions",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "d4ebb09c-eea7-4795-b11a-cda13c25e097",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C86",
+      "claim": "The conservation of TF binding specificities is in marked contrast to the reported low degree of conservation of protein\u2013protein interactions between species.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is surprising even considering the similarity of protein sequences between DBD ortholog pairs, and also in marked contrast to the reported low degree of conservation of protein\u2013protein interactions between species (Gandhi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous work on protein-protein interactions, supported by citation to Gandhi et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "7022a03d-b400-4d16-b0fc-4d25a32d5333",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C87",
+      "claim": "Despite significant number of differences in the number of TFs, most binding specificities present in mammals were also identified in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite significant number of differences in the number of TFs, most binding specificities present in mammals were also identified in Drosophila, suggesting that the gene regulatory code is highly conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the comparative analysis of TF binding specificities",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "3b692fb1-3db4-4209-a6b4-ca06115216c0",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C88",
+      "claim": "The gene regulatory code is highly conserved between Drosophila and mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite significant number of differences in the number of TFs, most binding specificities present in mammals were also identified in Drosophila, suggesting that the gene regulatory code is highly conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the conservation of TF binding specificities",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "c627d72e-50e8-4c4c-a1b8-c729e53f66a1",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C89",
+      "claim": "The HT-SELEX dataset extends previous B1H models by shedding light on new features of Drosophila TF DNA-binding characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in addition to extending the repertoire of Drosophila TF binding specificities by providing 122 novel high-resolution motifs, our dataset extends previous models by shedding light on new features of Drosophila TF DNA-binding characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the contributions of the HT-SELEX dataset",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "b7259365-a85b-49c7-ad52-60820fd46274",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C90",
+      "claim": "The HT-SELEX dataset provides 122 novel high-resolution motifs for Drosophila TF binding specificities.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in addition to extending the repertoire of Drosophila TF binding specificities by providing 122 novel high-resolution motifs, our dataset extends previous models by shedding light on new features of Drosophila TF DNA-binding characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative description of the novel contributions of the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "d481b46f-f245-4407-bea1-98f77348770a",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C91",
+      "claim": "Structural similarity of proteins defines not only the similarity of the core DNA binding site but also the flanking sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that structural similarity of proteins defines not only the similarity of the core DNA binding site but also the flanking sequences, and that almost all specificities available for a human are also present in fruit flies (Figures 2, 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the analysis of TF binding specificities, supported by Figures 2 and 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "8ecb1ec3-3ad5-464c-a546-bced532baca9",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C92",
+      "claim": "Almost all specificities available for a human are also present in fruit flies.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that structural similarity of proteins defines not only the similarity of the core DNA binding site but also the flanking sequences, and that almost all specificities available for a human are also present in fruit flies (Figures 2, 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the comparative analysis, supported by Figures 2 and 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "834c5ecc-22ff-4ffb-8608-8f01338a166a",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C93",
+      "claim": "Drosophila has many genes that are orthologous to human TF genes with highly conserved DBD protein sequences even though these species diverged over 600 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila has many genes that are orthologous to human TF genes with highly conserved DBD protein sequences even though these species diverged over 600 million years ago (Figure 4; Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the sequence analysis, supported by Figure 4 and Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "0f6a429d-61a4-49af-9766-93b0446b0406",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C94",
+      "claim": "Orthologous TFs have almost identical core DNA binding profiles, flanking sequences, and secondary modes of binding.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that orthologous TFs have almost identical core DNA binding profiles, flanking sequences, and secondary modes of binding (Figure 5 and Figure 1\u2014figure supplement 2\u201313).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the comparative analysis, supported by Figure 5 and Figure 1\u2014figure supplement 2\u201313",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "5ef3fbc5-9892-4095-a7e4-58fa11825ab0",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C95",
+      "claim": "DNA binding specificity is highly constrained by protein structure and is difficult to alter even over long evolutionary time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "This fact suggests that DNA binding specificity is highly constrained by protein structure and is difficult to alter even over long evolutionary time scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the conservation of TF binding specificities",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "c44c64dc-6e74-49ba-b83c-0d1a5dc04887",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C96",
+      "claim": "TF specificity is not generally subject to subtle drift, but tends to either stay very similar or evolve to a distinctly different state.",
+      "claim_type": "EXPLICIT",
+      "source": "These results also indicate that TF specificity is not generally subject to subtle drift, but tends to either stay very similar or evolve to a distinctly different state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the conservation of TF binding specificities and the few cases of divergence",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "d123cd04-79cb-4d1a-8399-dbfdad73a7bf",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C97",
+      "claim": "Gene duplication events that have occurred after separation of the invertebrate and vertebrate lineages have generally not lead to emergence of novel TF specificities, outside of the rapidly evolving human zinc finger proteins that suppress endogenous retroviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Although humans have a larger number of TFs than fruit flies, the gene duplication events that have occurred after separation of the invertebrate and vertebrate lineages have generally not lead to emergence of novel TF specificities, outside of the rapidly evolving human zinc finger proteins that suppress endogenous retroviruses (Rowe et al., 2010; Lukic et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the comparative analysis, with citations to Rowe et al., 2010 and Lukic et al., 2014",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "ca5a37f0-972e-441d-aef3-41631757cf51",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C98",
+      "claim": "Many of the TFs that have a different specificity in humans are related to endocrine system function or physiology of cell types that do not exist in fruit flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, many of the TFs that we find to have a different specificity in humans are related to endocrine system function (AR, ESR1), or physiology of cell types that do not exist in fruit flies (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the analysis of TFs with divergent specificities, supported by Figure 7F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "7f4b76c4-d634-48f6-95f4-3f7c01a5ce25",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C99",
+      "claim": "ATF2 and non-canonical E2F repressors are important for placental morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, ATF2 and non-canonical E2F repressors are important for placental morphogenesis (Chen et al., 2012; Maekawa et al., 1999), whereas ETS class III and IRF factors have important roles in differentiation of cells of the adaptive immune system (Bartel et al., 2000; Lu et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2012 and Maekawa et al., 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "7bfa8f4f-c010-4873-b26d-7449d498e21b",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C100",
+      "claim": "ETS class III and IRF factors have important roles in differentiation of cells of the adaptive immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, ATF2 and non-canonical E2F repressors are important for placental morphogenesis (Chen et al., 2012; Maekawa et al., 1999), whereas ETS class III and IRF factors have important roles in differentiation of cells of the adaptive immune system (Bartel et al., 2000; Lu et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bartel et al., 2000 and Lu et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "9f7c4dda-2a74-4bbb-97f0-80f1d7556461",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C101",
+      "claim": "SPDEF regulates goblet cell differentiation in lung, conjunctiva, and intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "SPDEF, in turn, regulates goblet cell differentiation in lung, conjunctiva, and intestine (Chen et al., 2009; Gregorieff et al., 2009; Marko et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2009; Gregorieff et al., 2009; Marko et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "fcbbdc6d-3270-4126-8506-8699a0992f93",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C102",
+      "claim": "Drosophila has intestinal stem cells and enterocyte-related cells, but does not have a cell type similar to mammalian goblet cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Drosophila has intestinal stem cells and enterocyte-related cells, it does not have a cell type similar to mammalian goblet cells (Jiang and Edgar, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Jiang and Edgar, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "023f53ac-6f07-4576-bf6b-f6a4e0d55638",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C103",
+      "claim": "Evolution of novel TF binding specificities has contributed to emergence of novel types of differentiated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that evolution of novel TF binding specificities has contributed to emergence of novel types of differentiated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that TFs with divergent specificities function in cell types not found in the other organism",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "38f7af88-e7d7-430d-95f4-4251e21d36ab",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C104",
+      "claim": "Human and fruit fly TF binding specificities display a striking level of conservation, despite dramatic morphological differences resulting from more than 600 million years of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results indicate that human and fruit fly TF binding specificities display a striking level of conservation, despite dramatic morphological differences resulting from more than 600 million years of evolution and lack of detectable sequence conservation at the level of cis-regulatory elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "c9477716-4a8d-443f-9fcf-8117849b7fbe",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C105",
+      "claim": "There is a lack of detectable sequence conservation at the level of cis-regulatory elements between human and fruit fly.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results indicate that human and fruit fly TF binding specificities display a striking level of conservation, despite dramatic morphological differences resulting from more than 600 million years of evolution and lack of detectable sequence conservation at the level of cis-regulatory elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the comparative analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "00a3ad23-5d9e-46f8-be8d-b6766703dbd1",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C106",
+      "claim": "The gene regulatory code is much more conserved than the regulatory sequences themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that analogously to the genetic code, which is more conserved than protein-coding DNA (Moura et al., 2010), the gene regulatory code is much more conserved than the regulatory sequences themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the conservation of TF binding specificities despite lack of sequence conservation in regulatory elements, with analogy to the genetic code supported by citation to Moura et al., 2010",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "b6f680fa-e20f-4a07-b0a5-a699118cc314",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C107",
+      "claim": "The genetic code is more conserved than protein-coding DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that analogously to the genetic code, which is more conserved than protein-coding DNA (Moura et al., 2010), the gene regulatory code is much more conserved than the regulatory sequences themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Moura et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "0ac28cd0-a83f-4555-893e-64dc7dc30529",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C108",
+      "claim": "Morphological divergence is primarily caused by cis-regulatory changes, with some contribution from relatively large shifts in binding specificities of specific TFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that morphological divergence is not driven by subtle drift in specificity of TFs, but primarily caused by cis-regulatory changes (Carroll, 2000; Levine and Tjian, 2003), with some contribution from relatively large shifts in binding specificities of specific TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study, supported by citations to Carroll, 2000 and Levine and Tjian, 2003",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "d2f0a4cd-c3b3-4b9a-95a1-16e6ae39ce47",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C109",
+      "claim": "Morphological divergence is not driven by subtle drift in specificity of TFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that morphological divergence is not driven by subtle drift in specificity of TFs, but primarily caused by cis-regulatory changes (Carroll, 2000; Levine and Tjian, 2003), with some contribution from relatively large shifts in binding specificities of specific TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study based on the conservation of TF binding specificities",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "544ab68f-0c0d-46b1-838b-f83618788b4d",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C110",
+      "claim": "TF evolution is constrained by structural limitations of the TF folds.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that TF evolution is constrained by structural limitations of the TF folds, and that changes in specificity are rare, and when they occur, tend to have relatively large effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the conservation of TF binding specificities",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "236bb90c-a589-45f5-8c44-3b7db95432ce",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C111",
+      "claim": "Changes in TF specificity are rare, and when they occur, tend to have relatively large effects.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that TF evolution is constrained by structural limitations of the TF folds, and that changes in specificity are rare, and when they occur, tend to have relatively large effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the few cases of divergent specificities observed",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "2e794337-5dc6-44b6-baf4-4b1d21fc3ec5",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C112",
+      "claim": "TF specificities that exist only in human are important for physiology of cell types that do not exist in fruit flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, TF specificities that exist only in human are important for physiology of cell types that do not exist in fruit flies, suggesting that novel TF specificities contribute to formation of new types of differentiated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the analysis of TFs with divergent specificities",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "325b1f3e-6ff6-4147-ba03-3863d5e20891",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "claim_id": "C113",
+      "claim": "Novel TF specificities contribute to formation of new types of differentiated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, TF specificities that exist only in human are important for physiology of cell types that do not exist in fruit flies, suggesting that novel TF specificities contribute to formation of new types of differentiated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that TFs with divergent specificities function in cell types not found in the other organism",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "62ef8f23-71c8-442c-a310-d568e9840598",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined DNA binding specificities for 242 unique Drosophila TFs using HT-SELEX, covering 92% of trusted TFs and 81% of putative TFs in FlyTF.org, providing 122 novel high-resolution motifs with 86% family coverage and 49% median within-family coverage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C16-C20, and C90 collectively describe the experimental scope and quantitative outcomes of the HT-SELEX study. The numbers are specific and consistent across claims, and the methodology is clearly described with appropriate experimental details including construct types (DBDs and full-length), expression system (E. coli), and coverage metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "67599f61-8699-4e23-a962-72d3bd5a3e38",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors developed a novel computational algorithm called Autoseed based on the Huddinge distance metric that identifies enriched subsequences representing local maxima and can detect diverse motifs including dimers, trimers, and dinucleotide preferences, resulting in identification of 416 motifs (210 monomeric, 198 dimeric, 5 trimeric, 3 dimers of dimers) including 90 secondary binding modes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C34 describe the development and application of the Autoseed algorithm with specific quantitative results. The algorithm's capabilities are clearly defined, and the breakdown of motif types is precise and internally consistent. The methodological innovation is supported by Figure 1 and supplementary materials.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "2f53c719-301c-4326-b346-af11ebd2daf3",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TF binding specificities are highly conserved between Drosophila and mammals, with orthologous TFs showing similarity extending to subtle dinucleotide binding preferences, core DNA binding profiles, flanking sequences, and secondary modes of binding, and fruit fly DNA-binding specificities covering almost the complete range of mammalian TF specificities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13, C50-C51, C53-C54, C84, C87, C92, and C94 collectively establish the primary finding of conservation. This is supported by extensive comparative analysis using the same HT-SELEX method for both species (Figures 3-5), avoiding method-specific biases that affected previous comparisons. The conservation extends from core sequences to subtle features, which is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "2ed16b31-6593-40e9-8b68-1ace0a556488",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Secondary binding modes and dinucleotide preferences are conserved between orthologous TFs in fruit flies and humans, indicating that TF specificity does not commonly evolve by loss or gain of secondary binding modes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 describe conservation of subtle binding features beyond primary specificity. This is supported by Figure 5 showing conservation across multiple TF families (homeobox, heat shock factor, nuclear receptors). The analysis includes appropriate controls (high quality data requirement) and the conclusion logically follows from the observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "1ee449f5-6f91-44b6-9358-e0304d4b3b82",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Human TFs with divergent specificities function in cell types not found in fruit flies (endocrine system, placenta, adaptive immune system, goblet cells), suggesting that evolution of TF specificities contributes to emergence of novel types of differentiated cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15, C98, C103, C112-C113 link divergent TF specificities to novel cell types. This is supported by Figure 7F and citations to functional studies (C99-C102). The correlation between divergent specificities and species-specific cell types is well-documented, though the causal relationship (C15, C103, C113) is inferential rather than experimentally demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "cc763562-997a-44e5-af2d-d230fa542226",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The Drosophila bZIP protein CG30420 (Atf-2) recognizes GACGT(C/G) sequences while its mammalian orthologs ATF2 and ATF7 recognize GACGT(C/A), with CG30420 recognizing a larger variety of sequences; this specificity change is associated with replacement of a key asparagine by arginine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C77 describe a specific case of divergent specificity with structural explanation. The specificity was validated using multiple constructs (DBD and full-length, independent expression constructs) as stated in C76. The structural basis (asparagine to arginine substitution) is supported by Figure 7\u2014figure supplement 1 showing the crystal structure and amino acid alignment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "2d15c7a4-f587-402d-af91-8f4940fa4a36",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In isolated cases, specificities of orthologous TFs diverged over evolutionary time, including Hr96 (Drosophila) recognizing tail-to-tail repetitive GT(A/G)CA motifs while related human NR1 genes recognize head-to-tail repetitive GTTCA motifs, and SPDEF/Ets98B differing in 3' flanking sequence preferences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 describe additional cases of divergence. These are supported by Figure 7D-E for nuclear receptors and Figure 1\u2014figure supplement 4 for ETS proteins. The data show clear differences in binding specificities between orthologs, though the number of such cases is limited (C81), consistent with the overall conservation finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "0332619e-e163-40a9-9945-ab56d5d51a53",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "TF DNA-binding specificity can evolve via duplication and divergence to yield novel specificities, with species-specific TF classes (brinker in flies, IRF in humans) and subfamily expansions (E2F7/E2F8, ETS class III, ESR/AR subgroups in humans; knirps-like, Poxn in flies) recognizing unique binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C72 describe evolution through duplication and divergence. The observations are supported by phylogenetic analysis (Figure 6) and binding specificity data. The cited literature (C67, C69) supports the orthology relationships. The conclusion about evolution via duplication and divergence (C71-C72) is a reasonable inference from the pattern of species-specific subfamilies with distinct specificities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "e6f5becd-b2b9-42c3-aa81-1dd4fedd0782",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Different TF structural families have divergent specificities, and amino-acid sequence similarity is predictive of DNA binding specificity in most TF families, as demonstrated by classification of fruit fly bHLH proteins into six subfamilies based on 6 bp core motifs, with sequence similarity recapitulating phylogenetic relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 describe the relationship between protein sequence and binding specificity. This is supported by Figure 2 showing bHLH classification and Figure 2\u2014figure supplement 1 showing correlation between motif similarity and amino acid sequence similarity. The observation is consistent with previous studies (C35-C36 cite Wei et al., 2010; Jolma et al., 2013; Weirauch et al., 2014).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "6bfe524a-e30a-4b84-8044-afb9b2ba36e8",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "HT-SELEX and B1H methods show agreement in core binding specificities but differ in flanking sequences and motif length (12.7 bp vs 10.7 bp average), with HT-SELEX providing 65 additional genes not in the B1H collection, indicating method-specific differences and incomplete overlap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44, C47-C48 compare HT-SELEX with existing B1H data. The comparison is supported by Figure 3\u2014figure supplement 1 showing dendrogram clustering. The quantitative differences in motif length (C44) and coverage (C47) are specific. The conclusion of method-specific differences (C48) is reasonable given the observed discrepancies in flanking sequences and motif positioning in dendrograms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "c1cf3163-e5a0-4feb-9fa1-0af4b88f7ecd",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Inclusion of dimeric sites and extended flanking specificity revealed by HT-SELEX improve prediction of in vivo occupied sites, indicating biological relevance of the extended specificity information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 assert biological relevance of HT-SELEX features. This is supported by citations to Jolma et al., 2013 and Orenstein and Shamir, 2014 showing improved in vivo site prediction. However, the validation is from prior work rather than new experiments in this study, making this a supporting rather than primary finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "222b11d2-9d31-4c7e-a131-4d55b97be860",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Low success rates were observed for C2H2 zinc fingers and bHLH proteins, likely due to computational identification difficulties and obligate heterodimerization, and for large constructs, likely due to expression difficulties in E. coli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 describe technical limitations. The observations (C21, C24) are supported by the experimental data (Figure 1B showing family coverage). The explanations (C22, C24) are speculative but reasonable. The observation is consistent with earlier studies (Badis et al., 2009; Jolma et al., 2013) as noted in C21. The fact about bHLH heterodimers (C23) is established knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "8c938bca-fed0-40ab-94d1-a1845c0436ad",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Sequence analysis revealed substantial differences in conservation of orthologous TF DBD pairs, but in vivo motifs for Nkx and EGR proteins support HT-SELEX-derived motifs rather than B1H motifs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49 and C52 address potential divergence and validation. C49 is supported by Figure 3\u2014figure supplement 2 showing variable conservation scores. C52 provides in vivo validation supporting HT-SELEX over B1H (Figure 3\u2014figure supplement 3), which is important for resolving method discrepancies. However, the validation is limited to two TF families.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "97de9551-c2dd-4dff-a0c9-e25d2483b463",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "TFs and TF DBDs recognize relatively long sites (>10 bp for more than half), and high-resolution data with novel computational tools enabled unprecedented comparison revealing new features of Drosophila TF DNA-binding characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83, C89 describe methodological advances and their impact. C82 is supported by the data and consistent with previous work (Jolma et al., 2013). C83 and C89 are summary statements about the study's contributions that are supported by the comprehensive analysis presented, though they are somewhat self-promotional in nature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "6966e188-d3a8-4a57-ac02-46a28dbaebfa",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The divergence between vertebrates and invertebrates occurred over 600 million years ago, after which protein coding sequences retained high similarity while gene-regulatory elements show no detectable homology despite conservation of developmental pathways; TF binding specificity evolves slowly and is conserved between mammalian species, though some changes have been linked to evolutionary adaptations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 provide background context from prior literature. All claims are supported by appropriate citations to published work. These establish the scientific context and motivation for the study but are not original findings. The claims are internally consistent and accurately represent the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "31a0bd5d-5bf4-42b0-96b7-0feecb18383f",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The gene regulatory code is highly conserved in evolution despite lack of sequence conservation in cis-regulatory elements, with DNA binding specificity highly constrained by protein structure and not subject to subtle drift; morphological divergence is primarily caused by cis-regulatory changes rather than TF specificity drift, with rare but large-effect changes in TF specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C88, C95-C96, C104-C106, C108-C111 present the major conclusions and interpretations. These are supported by the comprehensive conservation data (Figures 3-5) and the few cases of divergence (Figure 7). The analogy to the genetic code (C106-C107) is supported by citation to Moura et al., 2010. The conclusions about cis-regulatory changes (C108-C109) are supported by citations to Carroll, 2000 and Levine and Tjian, 2003. These are reasonable interpretations of the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "e78d6a31-3052-4d0a-a0cd-e6612e9c236b",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The conservation of TF binding specificities is surprising given protein sequence similarity and contrasts with low conservation of protein-protein interactions; gene duplication events after vertebrate-invertebrate separation generally did not lead to novel TF specificities except for rapidly evolving zinc finger proteins suppressing retroviruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86, C93, C97 provide comparative context and interpretation. C85-C86 compare with protein-protein interaction conservation (Gandhi et al., 2006). C93 is supported by Figure 4 and Figure 3\u2014figure supplement 2. C97 is supported by the comparative analysis and citations to Rowe et al., 2010 and Lukic et al., 2014. These interpretations are reasonable given the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "fe1ccb12-4433-4c34-8856-653bd95d14ee",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Structural similarity of proteins defines similarity of both core DNA binding sites and flanking sequences, with almost all human specificities present in fruit flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 summarizes a key finding supported by Figures 2 and 4. This integrates observations about the relationship between protein structure and binding specificity with the comparative analysis showing coverage of human specificities by fly TFs. The claim is well-supported by the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "43503514-2cbe-4783-8d43-903ddd713a14",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "ATF2 and E2F7/E2F8 are important for placental morphogenesis, ETS class III and IRF factors have roles in adaptive immune system differentiation, SPDEF regulates goblet cell differentiation, and Drosophila lacks goblet-like cells despite having intestinal stem cells and enterocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C102 provide functional context from literature for TFs with divergent specificities. Each claim is supported by appropriate citations to published functional studies. These establish the biological relevance of the divergent TFs but are not original findings of this study. They support the interpretation that divergent specificities associate with novel cell types.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    },
+    {
+      "id": "3be9ecab-f592-4d71-9811-aff46bcfd605",
+      "content_id": "ee7ec8d2-dc17-4b21-b75f-2c8b6362ad53",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The genetic code is more conserved than protein-coding DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C107 is a background fact from literature (Moura et al., 2010) used for analogy. This is not a finding of the current study but provides context for interpreting the conservation of the gene regulatory code. The citation is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:45:11.855860Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ad647f81-b291-48ba-a564-4b46754e1d86",
+      "result_id": "62ef8f23-71c8-442c-a310-d568e9840598"
+    },
+    {
+      "claim_id": "9b047b2c-5aea-4fa6-a0d0-12deab08e772",
+      "result_id": "62ef8f23-71c8-442c-a310-d568e9840598"
+    },
+    {
+      "claim_id": "b7717c4d-8b29-4e26-bb9b-9eab9462d43c",
+      "result_id": "62ef8f23-71c8-442c-a310-d568e9840598"
+    },
+    {
+      "claim_id": "0dd55b19-7665-4fac-845d-42f5c28f0013",
+      "result_id": "62ef8f23-71c8-442c-a310-d568e9840598"
+    },
+    {
+      "claim_id": "093f5806-24dd-48e0-8cdd-571c77d99f0f",
+      "result_id": "62ef8f23-71c8-442c-a310-d568e9840598"
+    },
+    {
+      "claim_id": "53f6d5c9-0975-4356-8758-92c68190b99f",
+      "result_id": "62ef8f23-71c8-442c-a310-d568e9840598"
+    },
+    {
+      "claim_id": "b7259365-a85b-49c7-ad52-60820fd46274",
+      "result_id": "62ef8f23-71c8-442c-a310-d568e9840598"
+    },
+    {
+      "claim_id": "fe12bca6-dd2b-4411-9674-86212cf19318",
+      "result_id": "67599f61-8699-4e23-a962-72d3bd5a3e38"
+    },
+    {
+      "claim_id": "24fa13f4-8690-486f-9741-657b831bf235",
+      "result_id": "67599f61-8699-4e23-a962-72d3bd5a3e38"
+    },
+    {
+      "claim_id": "e4e11ed6-5f30-482d-92df-f226239de22e",
+      "result_id": "67599f61-8699-4e23-a962-72d3bd5a3e38"
+    },
+    {
+      "claim_id": "be082b53-bdad-4596-9504-949f1a7a5bb1",
+      "result_id": "67599f61-8699-4e23-a962-72d3bd5a3e38"
+    },
+    {
+      "claim_id": "0638e66d-e441-4fba-b24c-21a086a0e63c",
+      "result_id": "67599f61-8699-4e23-a962-72d3bd5a3e38"
+    },
+    {
+      "claim_id": "e7586c93-7543-4a96-b3e1-a4e7a1ef37e9",
+      "result_id": "67599f61-8699-4e23-a962-72d3bd5a3e38"
+    },
+    {
+      "claim_id": "bcda525a-43a5-485b-af91-efd65dd5ef6c",
+      "result_id": "67599f61-8699-4e23-a962-72d3bd5a3e38"
+    },
+    {
+      "claim_id": "f0e96c7d-4d03-49ae-b4d5-b81bb382f025",
+      "result_id": "67599f61-8699-4e23-a962-72d3bd5a3e38"
+    },
+    {
+      "claim_id": "cf209d39-e340-44b9-841c-13dd58c07169",
+      "result_id": "67599f61-8699-4e23-a962-72d3bd5a3e38"
+    },
+    {
+      "claim_id": "2829626f-08af-4a34-9d06-5c9f18b4c639",
+      "result_id": "67599f61-8699-4e23-a962-72d3bd5a3e38"
+    },
+    {
+      "claim_id": "10fdf896-cd08-4878-953b-e9f098a418e1",
+      "result_id": "2f53c719-301c-4326-b346-af11ebd2daf3"
+    },
+    {
+      "claim_id": "fa4ba301-7149-4a54-9e30-0d9f952035d3",
+      "result_id": "2f53c719-301c-4326-b346-af11ebd2daf3"
+    },
+    {
+      "claim_id": "1848650f-9a10-4754-803d-9113d0b752ba",
+      "result_id": "2f53c719-301c-4326-b346-af11ebd2daf3"
+    },
+    {
+      "claim_id": "123c35cf-cdb0-4401-86ee-a856705b0f23",
+      "result_id": "2f53c719-301c-4326-b346-af11ebd2daf3"
+    },
+    {
+      "claim_id": "39968fa3-3d67-4511-ac90-a23c45ad8e23",
+      "result_id": "2f53c719-301c-4326-b346-af11ebd2daf3"
+    },
+    {
+      "claim_id": "1252fd6f-ab23-4d67-9310-3a47bcdb1bd7",
+      "result_id": "2f53c719-301c-4326-b346-af11ebd2daf3"
+    },
+    {
+      "claim_id": "1d965cd4-7a99-4cc2-9e79-a45c1be7dd4a",
+      "result_id": "2f53c719-301c-4326-b346-af11ebd2daf3"
+    },
+    {
+      "claim_id": "7022a03d-b400-4d16-b0fc-4d25a32d5333",
+      "result_id": "2f53c719-301c-4326-b346-af11ebd2daf3"
+    },
+    {
+      "claim_id": "8ecb1ec3-3ad5-464c-a546-bced532baca9",
+      "result_id": "2f53c719-301c-4326-b346-af11ebd2daf3"
+    },
+    {
+      "claim_id": "0f6a429d-61a4-49af-9766-93b0446b0406",
+      "result_id": "2f53c719-301c-4326-b346-af11ebd2daf3"
+    },
+    {
+      "claim_id": "3218c55b-ed92-4d5d-9aba-ab89594c4a32",
+      "result_id": "2ed16b31-6593-40e9-8b68-1ace0a556488"
+    },
+    {
+      "claim_id": "76fe6703-8510-400b-b961-8c9073e68355",
+      "result_id": "2ed16b31-6593-40e9-8b68-1ace0a556488"
+    },
+    {
+      "claim_id": "1551c419-01b5-418b-8dd9-a3029b284c34",
+      "result_id": "2ed16b31-6593-40e9-8b68-1ace0a556488"
+    },
+    {
+      "claim_id": "c4eb8581-ecc8-437a-aec3-1ad2dea0eda1",
+      "result_id": "2ed16b31-6593-40e9-8b68-1ace0a556488"
+    },
+    {
+      "claim_id": "0b6169db-ada7-4748-879e-2e6e1004b8ef",
+      "result_id": "1ee449f5-6f91-44b6-9358-e0304d4b3b82"
+    },
+    {
+      "claim_id": "931fe626-5ef8-423c-b026-84cf705eca69",
+      "result_id": "1ee449f5-6f91-44b6-9358-e0304d4b3b82"
+    },
+    {
+      "claim_id": "ca5a37f0-972e-441d-aef3-41631757cf51",
+      "result_id": "1ee449f5-6f91-44b6-9358-e0304d4b3b82"
+    },
+    {
+      "claim_id": "023f53ac-6f07-4576-bf6b-f6a4e0d55638",
+      "result_id": "1ee449f5-6f91-44b6-9358-e0304d4b3b82"
+    },
+    {
+      "claim_id": "2e794337-5dc6-44b6-baf4-4b1d21fc3ec5",
+      "result_id": "1ee449f5-6f91-44b6-9358-e0304d4b3b82"
+    },
+    {
+      "claim_id": "325b1f3e-6ff6-4147-ba03-3863d5e20891",
+      "result_id": "1ee449f5-6f91-44b6-9358-e0304d4b3b82"
+    },
+    {
+      "claim_id": "0854993c-2770-4328-8679-93bf851ca0c3",
+      "result_id": "cc763562-997a-44e5-af2d-d230fa542226"
+    },
+    {
+      "claim_id": "346978c9-ddb8-4993-a015-1c67ee6a21f3",
+      "result_id": "cc763562-997a-44e5-af2d-d230fa542226"
+    },
+    {
+      "claim_id": "c35b06d6-4144-4c32-b93b-26b21f8b1016",
+      "result_id": "cc763562-997a-44e5-af2d-d230fa542226"
+    },
+    {
+      "claim_id": "6e908d50-4a62-47d4-813c-10657c5fc273",
+      "result_id": "cc763562-997a-44e5-af2d-d230fa542226"
+    },
+    {
+      "claim_id": "3dd446b8-c1fa-4cd9-bad2-a93b35c88b94",
+      "result_id": "cc763562-997a-44e5-af2d-d230fa542226"
+    },
+    {
+      "claim_id": "01d2a47a-c28b-47c5-b931-16d10e631797",
+      "result_id": "2d15c7a4-f587-402d-af91-8f4940fa4a36"
+    },
+    {
+      "claim_id": "a263a59d-8a83-46ed-ae73-50b82d7612ac",
+      "result_id": "2d15c7a4-f587-402d-af91-8f4940fa4a36"
+    },
+    {
+      "claim_id": "028a380f-a49b-4b9f-b9d2-9af7a42d5512",
+      "result_id": "2d15c7a4-f587-402d-af91-8f4940fa4a36"
+    },
+    {
+      "claim_id": "94016e7e-0923-42cc-81de-1e88fc76baf3",
+      "result_id": "2d15c7a4-f587-402d-af91-8f4940fa4a36"
+    },
+    {
+      "claim_id": "e8168a58-f986-467c-8a1a-f66455e000d0",
+      "result_id": "0332619e-e163-40a9-9945-ab56d5d51a53"
+    },
+    {
+      "claim_id": "3bfda684-e5fb-4b38-9005-c5dada7d94d7",
+      "result_id": "0332619e-e163-40a9-9945-ab56d5d51a53"
+    },
+    {
+      "claim_id": "897bbd9c-c8ae-434c-a6f2-99c0bde1cbcd",
+      "result_id": "0332619e-e163-40a9-9945-ab56d5d51a53"
+    },
+    {
+      "claim_id": "a19e622e-15fd-458d-852a-0061071718de",
+      "result_id": "0332619e-e163-40a9-9945-ab56d5d51a53"
+    },
+    {
+      "claim_id": "6befb8f9-a95b-4bb8-976e-e0f54f4d9478",
+      "result_id": "0332619e-e163-40a9-9945-ab56d5d51a53"
+    },
+    {
+      "claim_id": "7e867712-0339-494d-be07-ebace06e7df3",
+      "result_id": "0332619e-e163-40a9-9945-ab56d5d51a53"
+    },
+    {
+      "claim_id": "41b20e24-ebf7-4514-9eaa-09a3b4764c59",
+      "result_id": "0332619e-e163-40a9-9945-ab56d5d51a53"
+    },
+    {
+      "claim_id": "f5d52880-883a-4d78-8a11-116509899e1f",
+      "result_id": "0332619e-e163-40a9-9945-ab56d5d51a53"
+    },
+    {
+      "claim_id": "033e368f-ba07-4997-8504-b9b343aff017",
+      "result_id": "0332619e-e163-40a9-9945-ab56d5d51a53"
+    },
+    {
+      "claim_id": "ceecb08f-08cc-4f95-b8f1-0e68f29b74e3",
+      "result_id": "0332619e-e163-40a9-9945-ab56d5d51a53"
+    },
+    {
+      "claim_id": "1cab8c18-2881-4c36-8440-331548b350b8",
+      "result_id": "0332619e-e163-40a9-9945-ab56d5d51a53"
+    },
+    {
+      "claim_id": "3f6df309-a877-4200-8fc5-01eb2274b869",
+      "result_id": "0332619e-e163-40a9-9945-ab56d5d51a53"
+    },
+    {
+      "claim_id": "bcd01822-579f-4a63-9464-0b50301dead4",
+      "result_id": "0332619e-e163-40a9-9945-ab56d5d51a53"
+    },
+    {
+      "claim_id": "2835f5ef-7929-47b7-a11e-1a6814546f53",
+      "result_id": "e6f5becd-b2b9-42c3-aa81-1dd4fedd0782"
+    },
+    {
+      "claim_id": "d0f1e615-da29-4392-87fc-007e4b83dce6",
+      "result_id": "e6f5becd-b2b9-42c3-aa81-1dd4fedd0782"
+    },
+    {
+      "claim_id": "d3924e16-34d1-41c4-ad77-87d4eac2aa8e",
+      "result_id": "e6f5becd-b2b9-42c3-aa81-1dd4fedd0782"
+    },
+    {
+      "claim_id": "00834efe-7910-40c7-93cd-d61a4e9b780a",
+      "result_id": "e6f5becd-b2b9-42c3-aa81-1dd4fedd0782"
+    },
+    {
+      "claim_id": "61c542bf-86ad-4915-b1e3-718c4197a475",
+      "result_id": "e6f5becd-b2b9-42c3-aa81-1dd4fedd0782"
+    },
+    {
+      "claim_id": "2908b32b-f4b8-4c81-9c05-ce5275963eb1",
+      "result_id": "e6f5becd-b2b9-42c3-aa81-1dd4fedd0782"
+    },
+    {
+      "claim_id": "331e0ca3-c29a-463c-b47f-3d3c6fabf0f6",
+      "result_id": "6bfe524a-e30a-4b84-8044-afb9b2ba36e8"
+    },
+    {
+      "claim_id": "225c1bc7-2b08-46a7-b8fd-933a14292ad7",
+      "result_id": "6bfe524a-e30a-4b84-8044-afb9b2ba36e8"
+    },
+    {
+      "claim_id": "936867b3-dde2-49b6-a2ec-a5ced102f919",
+      "result_id": "6bfe524a-e30a-4b84-8044-afb9b2ba36e8"
+    },
+    {
+      "claim_id": "5414b8a8-d2a3-47d7-9052-4e74b51ffd37",
+      "result_id": "6bfe524a-e30a-4b84-8044-afb9b2ba36e8"
+    },
+    {
+      "claim_id": "fe86768a-8c02-492f-8c5b-3344af8a01d6",
+      "result_id": "6bfe524a-e30a-4b84-8044-afb9b2ba36e8"
+    },
+    {
+      "claim_id": "7cd0b419-c9fe-4bbe-9917-fbea788d94b8",
+      "result_id": "6bfe524a-e30a-4b84-8044-afb9b2ba36e8"
+    },
+    {
+      "claim_id": "2657015d-eb0f-4351-ad26-a0055fd1e179",
+      "result_id": "c1cf3163-e5a0-4feb-9fa1-0af4b88f7ecd"
+    },
+    {
+      "claim_id": "04d59bcc-ac32-4d3e-8583-b69c103832b7",
+      "result_id": "c1cf3163-e5a0-4feb-9fa1-0af4b88f7ecd"
+    },
+    {
+      "claim_id": "eecfa95c-1de0-41b0-9a84-9143befd2d94",
+      "result_id": "222b11d2-9d31-4c7e-a131-4d55b97be860"
+    },
+    {
+      "claim_id": "9ae5414d-cbe6-4a75-a58d-750374c51cd9",
+      "result_id": "222b11d2-9d31-4c7e-a131-4d55b97be860"
+    },
+    {
+      "claim_id": "0292c53c-3125-48ef-89f5-8511fc6533d8",
+      "result_id": "222b11d2-9d31-4c7e-a131-4d55b97be860"
+    },
+    {
+      "claim_id": "2e18e38d-9ad4-4344-bfa4-ee130058b481",
+      "result_id": "222b11d2-9d31-4c7e-a131-4d55b97be860"
+    },
+    {
+      "claim_id": "e3777aaf-b4da-4670-8485-2bd40d571649",
+      "result_id": "8c938bca-fed0-40ab-94d1-a1845c0436ad"
+    },
+    {
+      "claim_id": "c7edd4ff-2699-4cd8-89b7-d6e026e9df9a",
+      "result_id": "8c938bca-fed0-40ab-94d1-a1845c0436ad"
+    },
+    {
+      "claim_id": "29157280-54c0-4ede-ac6b-a4ca5068322a",
+      "result_id": "97de9551-c2dd-4dff-a0c9-e25d2483b463"
+    },
+    {
+      "claim_id": "110ccebf-8988-4710-8801-e9b67c8fe0bd",
+      "result_id": "97de9551-c2dd-4dff-a0c9-e25d2483b463"
+    },
+    {
+      "claim_id": "c627d72e-50e8-4c4c-a1b8-c729e53f66a1",
+      "result_id": "97de9551-c2dd-4dff-a0c9-e25d2483b463"
+    },
+    {
+      "claim_id": "146eafff-3495-41c2-a7ac-a6305c8dcf81",
+      "result_id": "6966e188-d3a8-4a57-ac02-46a28dbaebfa"
+    },
+    {
+      "claim_id": "2609f4b9-97f0-4c60-bb8b-6d610dd08eb6",
+      "result_id": "6966e188-d3a8-4a57-ac02-46a28dbaebfa"
+    },
+    {
+      "claim_id": "08fb9168-7de8-4c5c-aa2f-857ecae2b353",
+      "result_id": "6966e188-d3a8-4a57-ac02-46a28dbaebfa"
+    },
+    {
+      "claim_id": "51a2e0ee-c1e5-4db2-8bb2-543a71d8b0b2",
+      "result_id": "6966e188-d3a8-4a57-ac02-46a28dbaebfa"
+    },
+    {
+      "claim_id": "19516351-b208-4fa6-86fc-82f587ace1e6",
+      "result_id": "6966e188-d3a8-4a57-ac02-46a28dbaebfa"
+    },
+    {
+      "claim_id": "5cc54529-6013-41ef-ab80-ddd0ae7adef1",
+      "result_id": "6966e188-d3a8-4a57-ac02-46a28dbaebfa"
+    },
+    {
+      "claim_id": "ff5a31f3-a129-42e5-a99f-cdab88155fa1",
+      "result_id": "6966e188-d3a8-4a57-ac02-46a28dbaebfa"
+    },
+    {
+      "claim_id": "7be08fd6-ab7c-4516-8df5-1abff486acd5",
+      "result_id": "6966e188-d3a8-4a57-ac02-46a28dbaebfa"
+    },
+    {
+      "claim_id": "9816da4b-4521-4a1b-b93b-64a78e5071ef",
+      "result_id": "6966e188-d3a8-4a57-ac02-46a28dbaebfa"
+    },
+    {
+      "claim_id": "5767e4b1-9c1c-422d-b803-e6c453452ddf",
+      "result_id": "6966e188-d3a8-4a57-ac02-46a28dbaebfa"
+    },
+    {
+      "claim_id": "357fe2fd-6819-4ff8-8f80-bee7519e2d4a",
+      "result_id": "31a0bd5d-5bf4-42b0-96b7-0feecb18383f"
+    },
+    {
+      "claim_id": "3b692fb1-3db4-4209-a6b4-ca06115216c0",
+      "result_id": "31a0bd5d-5bf4-42b0-96b7-0feecb18383f"
+    },
+    {
+      "claim_id": "5ef3fbc5-9892-4095-a7e4-58fa11825ab0",
+      "result_id": "31a0bd5d-5bf4-42b0-96b7-0feecb18383f"
+    },
+    {
+      "claim_id": "c44c64dc-6e74-49ba-b83c-0d1a5dc04887",
+      "result_id": "31a0bd5d-5bf4-42b0-96b7-0feecb18383f"
+    },
+    {
+      "claim_id": "38f7af88-e7d7-430d-95f4-4251e21d36ab",
+      "result_id": "31a0bd5d-5bf4-42b0-96b7-0feecb18383f"
+    },
+    {
+      "claim_id": "c9477716-4a8d-443f-9fcf-8117849b7fbe",
+      "result_id": "31a0bd5d-5bf4-42b0-96b7-0feecb18383f"
+    },
+    {
+      "claim_id": "00a3ad23-5d9e-46f8-be8d-b6766703dbd1",
+      "result_id": "31a0bd5d-5bf4-42b0-96b7-0feecb18383f"
+    },
+    {
+      "claim_id": "0ac28cd0-a83f-4555-893e-64dc7dc30529",
+      "result_id": "31a0bd5d-5bf4-42b0-96b7-0feecb18383f"
+    },
+    {
+      "claim_id": "d2f0a4cd-c3b3-4b9a-95a1-16e6ae39ce47",
+      "result_id": "31a0bd5d-5bf4-42b0-96b7-0feecb18383f"
+    },
+    {
+      "claim_id": "544ab68f-0c0d-46b1-838b-f83618788b4d",
+      "result_id": "31a0bd5d-5bf4-42b0-96b7-0feecb18383f"
+    },
+    {
+      "claim_id": "236bb90c-a589-45f5-8c44-3b7db95432ce",
+      "result_id": "31a0bd5d-5bf4-42b0-96b7-0feecb18383f"
+    },
+    {
+      "claim_id": "c43ff023-3b38-492e-92d1-3fef13a4225d",
+      "result_id": "e78d6a31-3052-4d0a-a0cd-e6612e9c236b"
+    },
+    {
+      "claim_id": "d4ebb09c-eea7-4795-b11a-cda13c25e097",
+      "result_id": "e78d6a31-3052-4d0a-a0cd-e6612e9c236b"
+    },
+    {
+      "claim_id": "834c5ecc-22ff-4ffb-8608-8f01338a166a",
+      "result_id": "e78d6a31-3052-4d0a-a0cd-e6612e9c236b"
+    },
+    {
+      "claim_id": "d123cd04-79cb-4d1a-8399-dbfdad73a7bf",
+      "result_id": "e78d6a31-3052-4d0a-a0cd-e6612e9c236b"
+    },
+    {
+      "claim_id": "d481b46f-f245-4407-bea1-98f77348770a",
+      "result_id": "fe1ccb12-4433-4c34-8856-653bd95d14ee"
+    },
+    {
+      "claim_id": "7f4b76c4-d634-48f6-95f4-3f7c01a5ce25",
+      "result_id": "43503514-2cbe-4783-8d43-903ddd713a14"
+    },
+    {
+      "claim_id": "7bfa8f4f-c010-4873-b26d-7449d498e21b",
+      "result_id": "43503514-2cbe-4783-8d43-903ddd713a14"
+    },
+    {
+      "claim_id": "9f7c4dda-2a74-4bbb-97f0-80f1d7556461",
+      "result_id": "43503514-2cbe-4783-8d43-903ddd713a14"
+    },
+    {
+      "claim_id": "fcbbdc6d-3270-4126-8506-8699a0992f93",
+      "result_id": "43503514-2cbe-4783-8d43-903ddd713a14"
+    },
+    {
+      "claim_id": "b6f680fa-e20f-4a07-b0a5-a699118cc314",
+      "result_id": "3be9ecab-f592-4d71-9811-aff46bcfd605"
+    }
+  ],
+  "comparisons": []
+}

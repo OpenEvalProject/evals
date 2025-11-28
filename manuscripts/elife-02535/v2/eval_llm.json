@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The study genotyped 143 hybrids from Calnali (20% X. malinche ancestry, 95% CI: 14-35%) and 170 hybrids from Tlatemaco (72% X. malinche ancestry, 95% CI: 66-80%) at 469,400 ancestry informative markers with a median density of 1 marker per 234 bp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the sample sizes and genomic ancestry proportions measured in the study. The data are clearly presented with confidence intervals and represent direct measurements from the MSG genotyping approach. The high marker density provides strong resolution for ancestry inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The Tlatemaco hybrid zone is estimated to be 56 generations old (CI: 55-57) and the Calnali hybrid zone 35 generations old (CI: 34.5-35.6), consistent with historical estimates of ~40 generations based on pollution-induced disruption of chemical cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The age estimates are derived from linkage disequilibrium decay analysis with tight confidence intervals. The consistency with independent historical estimates (C50) provides external validation. The methodology is appropriate and the results are well-constrained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Linkage disequilibrium decays to R\u00b2 < 0.5 at approximately 300 kb in both populations. Average genome-wide R\u00b2 between unlinked loci was 0.003 in Tlatemaco and 0.006 in Calnali, not significantly different from null expectations (1/2n).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe baseline LD patterns in the hybrid populations. The measurements are supported by Figure 2 and represent appropriate null comparisons. The consistency between populations and agreement with theoretical expectations strengthens confidence in the data quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "327 pairs of unlinked genomic regions show significant LD at FDR = 5% (150 pairs at FDR = 2%) in both populations. These regions have significantly elevated R\u00b2 (0.08 in Tlatemaco, 0.12 in Calnali, p<0.001) compared to genomic background and are non-randomly distributed across chromosomes (\u03c7\u00b2 = 87, p<3e-9), with no significant excess involving the X chromosome (p=0.11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The detection of significant LD pairs is supported by rigorous statistical testing including FDR correction and bootstrapping. The use of two independent populations to control for demographic effects is a major strength. The non-random genomic distribution and lack of X-chromosome enrichment are appropriately tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Regions in significant LD have a median size of 45 kb, with 67% containing \u226410 genes and 13 pairs at single-gene resolution. Approximately 10% of regions are very large (>5 Mb) and contain hundreds of genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the resolution achieved in mapping incompatibility regions. The high-density genotyping (820 markers/Mb) enables fine-scale mapping. The size distribution is clearly documented in supplementary figures. The presence of both small and large regions is biologically plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Among loci in significant LD, there is a significant excess of conspecific associations in both populations (94% in Calnali, 67% in Tlatemaco, p<0.001 by bootstrapping).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The excess of conspecific associations is a key prediction of selection against hybrid incompatibilities. The statistical significance is established through bootstrapping against the genomic background. The consistency across two independent populations strengthens the inference of selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C115"
+    ],
+    "result": "Approximate Bayesian computation estimates the average selection coefficient on negative epistatic interactions as s = 0.027 in Tlatemaco and s = 0.074 in Calnali. The observed patterns of LD are well described by a model of selection against hybrid incompatibilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ABC approach is appropriate for parameter estimation given the complexity of the system. Posterior predictive simulations (Figure 5) demonstrate that the BDM model can reproduce the observed genotype frequency deviations. The selection coefficients indicate weak to moderate selection, which is biologically reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Regions in significant conspecific LD show elevated divergence between X. birchmanni and X. malinche compared to the genomic background (p<0.001), including at synonymous sites (p<0.01). These same regions show no elevated divergence in the independent comparison of X. hellerii and X. clemenciae, indicating that elevated divergence is due to reduced gene flow rather than variation in mutation rate or selective constraint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The elevated divergence at LD regions is well-documented (Figure 6, Table 2). The key insight comes from the phylogenetically independent comparison showing no elevation in X. hellerii/X. clemenciae, which effectively rules out mutation rate or constraint differences. The elevated synonymous divergence further supports the gene flow hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Gene ontology analysis found no significantly enriched functional categories among genes in regions showing significant LD, suggesting a broad representation of functional categories among incompatibility loci, in contrast to previous studies that found enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of GO enrichment is clearly stated and contrasted with previous work (Payseur and Hoekstra 2005). While negative results require careful interpretation, the analysis appears appropriate and the sample size (242 regions with \u226410 genes) is substantial. This suggests a different architecture of incompatibilities than in some other systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C114",
+      "C116"
+    ],
+    "result": "Hundreds of pairs of genomic regions contribute to reproductive isolation between X. birchmanni and X. malinche, implying that reproductive isolation involves many loci despite recent divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central finding of the study, supported by the detection of 327 significant LD pairs at FDR = 5%. The use of two independent hybrid populations to control for demographic confounders is a major methodological strength. The number of incompatibilities is substantially higher than in comparable systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The true number of loci involved in incompatibilities may be hundreds more than detected, as the study has only moderate power (~30% for Calnali) and employs conservative criteria requiring significance in both populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The power analysis is appropriately conducted and the limitations are clearly acknowledged. The conservative approach of requiring significance in both populations increases specificity but reduces sensitivity. This is a reasonable interpretation of the study's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C84",
+      "C119",
+      "C120"
+    ],
+    "result": "Many incompatibilities are likely due to extrinsic selection (natural or sexual selection on hybrids) rather than intrinsic postzygotic isolation, which is known to be weak. This suggests that past research focusing on intrinsic isolation has vastly underestimated the number of regions contributing to reproductive isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference that extrinsic selection drives most incompatibilities is well-reasoned given: (1) weak intrinsic isolation documented in prior work (C6, C35-C37), (2) hybrid abundance in nature (C33), (3) sexual selection favoring hybrids (C38), and (4) the large number of incompatibilities detected. The comparison to Drosophila studies (C79) supports the underestimation claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study identifies approximately fourfold more genetic incompatibilities than a Drosophila species pair with similar divergence time. Previous studies focusing on postzygotic isolation provide only a lower limit on incompatibility numbers, as demonstrated by Drosophila competition experiments showing strong selection without detectable fertility or viability differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to Drosophila is appropriate given similar divergence times (~2 Ne generations). The citation of Fang et al. 2012 (C82) provides strong support that selection can be strong even without postzygotic isolation. This effectively demonstrates that traditional approaches miss many incompatibilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "No evidence of LD was found between Xmrk-2 and cdkn2x, genes previously implicated in melanoma-causing BDM incompatibilities in Xiphophorus hybrids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a clear negative result from the LD analysis. The lack of detection is consistent with prior suggestions (C35-C37) that melanomas may not be under strong selection in these hybrids. However, the authors appropriately note that cdkn2x may not be the actual repressor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Contrary to theoretical predictions and findings in other taxa, there is no significant excess of incompatibilities involving the X chromosome (p=0.11). This may be explained by the young age of the Xiphophorus X chromosome, autosomal influences on sex determination, and the small non-recombining region of the Y chromosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of large-X effect is clearly documented (C61, C102) and appropriately tested. The explanations offered (young X, autosomal sex determination, small non-recombining region) are supported by citations and provide plausible biological mechanisms for the deviation from theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "6% of locus pairs in Calnali and 33% in Tlatemaco show significant heterospecific associations, which may result from beneficial epistatic interactions (hybrid vigor) or divergent mating preferences between populations. However, only 2% of heterospecific associations are shared between populations, suggesting these patterns are not repeatable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The detection of heterospecific associations is clearly documented, but the explanations are largely speculative (C108, C113). The lack of repeatability across populations (C110) undermines confidence that these represent true biological signals rather than statistical artifacts or population-specific effects. More evidence would be needed to distinguish among alternative explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "Using samples from two populations with independent histories of hybridization allows exclusion of population structure and drift as potential causes of LD patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a key methodological strength of the study design. By requiring significance in both independent hybrid populations, the authors effectively control for population-specific demographic effects. This greatly increases confidence that detected LD reflects selection rather than drift or structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C4"
+    ],
+    "result": "X. birchmanni and X. malinche are recently diverged species with 0.5% genomic divergence per site (0.4% following polymorphism masking).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The divergence measurements are direct calculations from genome sequence data. The values are consistent with recent divergence and provide important context for interpreting the large number of incompatibilities detected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C7",
+      "C87",
+      "C117"
+    ],
+    "result": "Genetic incompatibilities play a significant role in limiting gene flow even in young species, and hybrid incompatibilities may be a common mechanism of restricting gene flow genome-wide even in species with incomplete reproductive isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is well-supported by the combined evidence of: (1) hundreds of incompatibilities in recently diverged species, (2) elevated divergence at LD regions indicating reduced gene flow, (3) genome-wide distribution of incompatibilities, and (4) persistence of species boundaries despite ongoing hybridization. This represents a major conceptual advance.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,2205 @@
+{
+  "submission": {
+    "id": "f6041350-d831-4c4a-8d99-e56e644f073d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:13:10.141562Z",
+    "updated_at": "2025-11-28T21:13:10.141562Z"
+  },
+  "content": [
+    {
+      "id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "submission_id": "f6041350-d831-4c4a-8d99-e56e644f073d",
+      "content_type": "manuscript",
+      "content_text": "# The master cell cycle regulator APC-Cdc20 regulates ciliary length and disassembly of the primary cilium\n\n## Authors\n\n- Weiping Wang<sup>1</sup>\n- Tao Wu<sup>1</sup>\n- Marc W Kirschner<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Systems Biology Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe primary cilium has an important role in signaling; defects in structure are associated with a variety of human diseases. Much of the most basic biology of this organelle is poorly understood, even basic mechanisms, such as control of growth and resorption. We show that the activity of the anaphase-promoting complex (APC), an E3 that regulates the onset of anaphase, destabilizes axonemal microtubules in the primary cilium. Furthermore, the metaphase APC co-activator, Cdc20, is specifically recruited to the basal body of primary cilia. Inhibition of APC-Cdc20 activity increases the ciliary length, while overexpression of Cdc20 suppresses cilium formation. APC-Cdc20 activity is required for the timely resorption of the cilium after serum stimulation. In addition, APC regulates the stability of axonemal microtubules through targeting Nek1, the ciliary kinase, for proteolysis. These data demonstrate a novel function of APC beyond cell cycle control and implicate critical role of ubiquitin-mediated proteolysis in ciliary disassembly.\n\n## Introduction\n\nThe primary cilium is a non-motile microtubule-based organelle, organized by the mother centriole (basal body). Though known for over a century, it received little interest until it was appreciated that it is highly enriched in receptors for various signaling pathways, including PDGF, calcium, receptor tyrosine kinases, Wnt, and Hh (Satir et al., 2010). The assembly of primary cilium is coupled to cell cycle exit and entry into quiescence. The primary cilium functions as a tumor suppressor organelle that regulates cell proliferation and differentiation (Pan et al., 2012). Dysfunctions of the primary cilium cause a set of human diseases, classified as ciliopathies, such as polycystic kidney diseases (Hildebrandt et al., 2011). Cancers are also associated with the loss of cilia, due to misregulated cell proliferation through ciliary signaling (Plotnikova et al., 2008).\n\nCiliopathies are highly associated with defective ciliogenesis and abnormal ciliary length. The assembly/disassembly of cilia and maintenance of ciliary length are tightly regulated through control of intraflagellar transport (IFT) and axoneme modification (Avasthi and Marshall, 2011). Ciliary length is regulated by the balance of the bidirectional transport of microtubule subunits and associated protein complexes through IFT (Pedersen and Rosenbaum, 2008). Importantly, the extension/resorption of primary cilia also involves changes of the stability of axonemal microtubules, which are controlled by post-translational modifications. For example, Aurora kinases stimulate disassembly of cilia and flagella by phosphorylation and activation of tubulin deacetylase (Pan et al., 2004; Pugacheva et al., 2007). Another key post-translational modification during ciliogenesis is ubiquitylation. In Chlamydomonas flagella, there is an increase in the levels of protein ubiquitylation during flagellar resorption (Huang et al., 2009). However, the precise mechanism for how ubiquitylation might control the process of ciliogenesis is not known.\n\nIt is curious that many mitotic regulators have been found to be involved in ciliogenesis, such as Aurora A kinase (Pugacheva et al., 2007) and NIMA-related kinases (Moniz et al., 2011). Recently, it was shown that anaphase-promoting complex (APC), the key ubiquitin E3 ligase that governs cell cycle progression is localized to the basal body of the motile cilia in multiciliated Xenopus epidermal cells, where it has some role in regulating ciliary polarity (Ganner et al., 2009). In mitosis, APC sequentially recruits co-activators (Cdc20 followed by Cdh1) and cooperates with two specific E2s (UBCH10 and Ube2S) to control proteolysis of key regulators of the metaphase to anaphase transition (Fujita et al., 2009; Fujita et al., 2009). APC also has a less well understood role in regulating other cellular processes, such as neurogenesis, metabolism, and myogenesis (Kim et al., 2009; Eguren et al., 2011).\n\nIn mitosis, the activity of APC-Cdc20 is tightly controlled at multiple levels. Regulation of phosphorylation of APC subunits and Cdc20 is essential for the timing of APC activation during mitotic progression (Kramer et al., 2000); APC-Cdc20 is also modulated by its inhibitor proteins (Luo et al., 2000; Madgwick et al., 2006). In addition, protein levels of APC cognate E2s, UBCH10 and Ube2S are crucial for the activation of APC-Cdc20, and play a role in the override of mitotic arrest (Reddy et al., 2007; Garnett et al., 2009). Although the function and regulation of APC-Cdc20 during mitosis and meiosis is thoroughly studied (Kramer et al., 2000; Madgwick et al., 2006), the non-mitotic roles of APC-Cdc20 remain largely unknown. It was recently found that APC-Cdc20 is localized to the centrosome of postmitotic neurons and plays an important role in dendrite morphogenesis (Kim et al., 2009). It would therefore be of interest to explore the potential activity of Cdc20 in quiescent and differentiated cells. All of this circumstantial evidence suggests that there may be a value in investigating whether APC has a broad regulatory role in the primary cilium. We report here that APC-Cdc20 is central to the regulation of the primary cilium. The APC is localized to the basal body of primary cilia of human epithelial cells, where it negatively controls the length and stability of the axonemal microtubules. During exit from the quiescent (G0) state APC-Cdc20 is activated and drives ciliary resorption.\n\n## Results\n\n### APC-Cdc20 is localized to the basal body of the ciliated human epithelial cell\n\nGiven the well-established role for APC in dividing cells, we are interested in whether APC is still active and what role it might have in quiescent ciliated cells. Human hTERT-RPE1 cell line is an established model to study the assembly/disassembly of primary cilia (Pugacheva et al., 2007). Greater than 80% of RPE1 cells are ciliated after serum-starvation for 48 hr, and disassembly of primary cilia occurs 1\u20132 hr after re-adding serum. We found that APC is still active in cytoplasmic extracts of quiescent ciliated RPE1, using the canonical APC substrate Securin (Figure 1\u2014figure supplement 1). Immunostaining showed that APC subunit 2 (APC2) is localized to the basal body of the ciliated cells (Figure 1A and Figure 1\u2014figure supplement 2A), consistent with the previous report that APC is localized to the basal body of motile cilia in the Xenopus epidermis (Ganner et al., 2009). Co-localization of APC2 with dynactin subunit P150 (Guo et al., 2006) further confirmed its localization to the mother centriole (Figure 1\u2014figure supplement 2B and 2C). Furthermore, we found that the APC co-activator Cdc20 is also localized to basal body of the primary cilium (Figure 1B), whereas Cdh1 did not show such localization (Figure1\u2014figure supplement 3). Interestingly, Cdc20 was not observed at the centrosome of cycling interphase non-ciliated cells (Figure 1B and Figure1\u2014figure supplement 2D), indicating that Cdc20 is specifically recruited to the basal body during ciliogenesis, rather than generally binding to the interphase centrosome. Western blotting showed that Cdc20 protein levels are dramatically reduced after serum starvation for 24 hr, due to the exit of cells from proliferation (Figure 1\u2014figure supplement 2E). Importantly, Cdc20 protein levels were significantly elevated at 48 hr after serum starvation, when >80% of the cells are ciliated, consistent with the appearance of this protein at the basal body. Thus, our data suggest that APC-Cdc20 may have a special role at the basal body after initiation of ciliogenesis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03083/elife-03083-fig1-v1.jpg)\n\n**Figure 1.:** (A) Subconfluent hTERT-RPE1 cells were serum starved for 48 hr, fixed, and stained for APC subunit 2 (APC2, red), acetylated tubulin (green) and DNA (blue). (B) Proliferating interphase RPE1 cells, serum starved cells, and quiescent cells after serum stimulation were fixed and stained for Cdc20 (red), acetylated tubulin (green), and DNA (blue). Boxes in main images indicate structures shown at higher magnification to right. The scale bars in this figure represent 10 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03083/elife-03083-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Cytosolic cell extracts were made from unsynchronized proliferating, serum-starved RPE1 cells respectively. Degradation of securin in these cell extracts at indicated time points was analyzed by western blot. TAME was added to test the dependence of the degradation on APC activity. Cell extract immunodepleted of Cdc20 was used for degradation assay as comparison.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03083/elife-03083-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Non-ciliated RPE1 cells (left) and ciliated cells (right) after serum starvation were stained for APC2 (red), acetylated tubulin (green), and DNA (blue). (B)Subconfluent hTERT-RPE1 cells were serum starved for 48 hr, fixed, and stained for APC subunit2 (APC2, red) and dynactin subunit P150 (green), and DNA (blue). (C) Starved RPE1 cells were fixed and stained for centrin 1 (red), dynactin subunit P150 (green), and DNA (blue). (D) Proliferating interphase cells and serum-starved cells were stained for Cdc20 (red) and \u03b3-tubulin (green). The scale bars in this figure represent 10 \u03bcm. (E) RPE1 cells were collected at indicated time points during starvation and post serum stimulation and subjected to western blot for Cdc20 and GAPDH respectively.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03083/elife-03083-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Starved RPE1 cells were fixed and stained for acetylated tubulin (green), DNA (blue), and Cdh1 (red). For Immunostaining of endogenous Cdh1, three different antibodies against Cdh1 were used as depicted.\n\n### APC-Cdc20 negatively regulates the length of the primary cilium\n\nWe then tested whether Cdc20 is required for some aspect of ciliogenesis. Reduction of APC subunit 2 (APC2) by siRNA significantly increased the length of primary cilia marked by acetylated tubulin staining (Figure 2A\u2013C). Consistently, the depletion of Cdc20 by siRNA had no effect on the percentage of ciliated cells, but there was a significant increase in the ciliary length (Figure 2D\u2013F). Negative Ki-67 staining demonstrated that these ciliated cells after the knockdown of either APC2 or Cdc20 are still in quiescent stage (Figure 2\u2014figure supplement 1A). In contrast, knockdown of Cdh1 by siRNA gave no obvious ciliary phenotype (Figure 2\u2014figure supplement 2A). This result is contradictory to a previous study proposing that APC-Cdh1 promote ciliogenesis (Miyamoto et al., 2011). Reciprocally, we asked what the effect would be for overexpression of Cdc20. When we transiently transfected cells with plasmid encoding Cdc20-GFP, we found it localized to the centrosome of quiescent cells, and completely suppressed the formation of primary cilia (Figure 2G,H). This phenotype was confirmed by Immunostaining of Arl13b, another specific marker for ciliary axoneme (Figure 2\u2014figure supplement 2B). These results suggested that Cdc20 negatively controls the length of the primary cilium.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03083/elife-03083-fig2-v1.jpg)\n\n**Figure 2.:** (A and D) RPE1 cells were treated with control siRNA or siRNA targeting APC2 or Cdc20 respectively, serum starved for 48 hr, and stained for acetylated tubulin (green) and DNA (blue). The scale bar represents 10 \u03bcm. (B and E) Western blot showed knockdown efficiency of siRNA treatment against Cdc20 and APc2. (C and F) Ciliary length was measured from ciliated cells based on acetylated-tubulin staining (n > 30). Data are means \u00b1S.D. p <0.005. (G) RPE1 cells were transiently transfected with vectors expressing GFP (green) or Cdc20-GFP (green) respectively, serum starved for 48 hr, and were stained for acetylated tubulin (red) and DNA (blue). The scale bar represents 5 \u03bcm. (H) Percentage of ciliated cells was obtained from five independent experiments. An average of 100 cells was counted in each of the experiments. Data are means \u00b1S.D.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03083/elife-03083-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Proliferating PRE1 cells, starved cells transfected with siRNA against APC2, Cdc20, or Ube2S were fixed and stained for ace-tubulin (red), DNA (blue), and Ki-67 (green, the proliferation marker). (B) RPE1 cells were serum-starved for 60 hr and further starved for 3 hr in the presence of DMSO or 20 \u03bcM proTAME before staining for acetylated-tubulin (red), Ki-67 (green), and DNA (blue). The scale bars represent 10 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03083/elife-03083-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) RPE1 cells were treated with control siRNA or siRNA-targeting Cdh1 respectively, serum starved for 48 hr. Samples were collected for western blot for Cdh1 and GAPDH. Ciliary length was measured from ciliated cells based on acetylated-tubulin staining (n > 30). Data are means \u00b1S.D. (B) RPE1 cells were transiently transfected with control vector or vector expressing Cdc20-GFP (green), serum starved for 48 hr, and stained for Arl13b (red) and DNA (blue). The scale bar represents 5 \u03bcm. Percentage of ciliated cells was calculated in control and Cdc20-GFP transfected cells.\n\nTo further validate the effect of Cdc20, we used a small molecule inhibitor of APC, proTAME. Previous studies showed that cell-permeable proTAME efficiently inhibits the APC activity through disruption of the association of APC with its co-activators (Zeng et al., 2010; Zeng and King, 2012). The advantage of small molecule inhibition over RNAi is that proTAME exerts its inhibitory effect immediately after drug treatment, which helps differentiate the ciliary phenotype from the possible secondary effect caused by impaired cell cycle control. The length of preformed cilia was increased from 4\u00b5m to 7\u00b5m after treatment of fully ciliated quiescent cells with proTAME for 3 hr (Figure 3), consistent with the Cdc20 knockdown or APC2 knockdown phenotype. Negative Ki-67 staining shows that the ciliated cells are still in quiescent stage after short-term treatment with this drug (Figure 2\u2014figure supplement 1B). This result supports the view that the activity of APC is required for maintaining the proper length of primary cilia.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03083/elife-03083-fig3-v1.jpg)\n\n**Figure 3.:** RPE1 cells were serum-starved for 60 hr and further starved for 3 hr in the presence of DMSO or 20 \u03bcM proTAME before staining for acetylated-tubulin (green) and DNA (blue). Ciliary length was measured from ciliated cells based on acetylated-tubulin staining (n > 30). Data are means \u00b1S.D. p <0.001. The scale bar: 10 \u03bcm.\n\n### APC activity is required for serum-induced resorption of primary cilia\n\nThese observations suggested that activation of APC-Cdc20 might be responsible for the destabilization and shortening of ciliary axoneme when quiescent cells re-enter the cell cycle. To test this hypothesis, we treated serum-starved cells with proTAME when adding serum; serum causes ciliary resorption and subsequent re-entry into the cell cycle. Primary cilia on DMSO-treated control cells significantly shortened and resorbed 4 hr after serum addition. ProTAME treatment delayed the shortening and resorption of cilia (Figure 4A,B), demonstrating that APC activity is required for efficient ciliary resorption before the exit of cells from quiescent phase. Suppression of either Cdc20 or APC2 by siRNA also significantly delayed ciliary shortening (Figure 4\u2014figure supplement 1). Calcium influx is known to be necessary and sufficient for shortening and resorption of the primary cilium (Besschetnova et al., 2010; Plotnikova et al., 2012), and we found that proTAME treatment also prevented ciliary shortening induced by Calcium ionophore treatment (Figure 4\u2014figure supplement 2A and 2B). Based on these results, APC-Cdc20 at the basal body has two related functions: it maintains cilium length of quiescent cells; it is required for shortening and resorption of the cilium.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03083/elife-03083-fig4-v1.jpg)\n\n**Figure 4.:** (A) Quiescent ciliated RPE1 cells were treated with serum containing either DMSO or 20 \u03bcM proTAME for 4 hr, fixed and stained for acetylated tubulin (green) and DNA (blue). Scale bar: 10 \u03bcm. (B) Quantitation of ciliary length and ciliation of DMSO or proTAME treated cells after serum stimulation. Ciliary length was measured from ciliated cells (n > 30) (*p <0.001); the percentage of ciliated cells was obtained from five independent experiments. Data are means \u00b1S.D. (C) Cells were treated with control siRNA or Ube2S targeting siRNA and were serum starved for 2 days in the presence of siRNA. Cilia were quantitated after release of cells from starvation for 4 hr. Ciliary length was measured from ciliated cells (n > 30) (*p <0.001); the percentage of ciliated cells was obtained from five independent experiments. Data are means \u00b1S.D.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03083/elife-03083-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Cells were transfected with control siRNA or Cdc20/APC2 targeting siRNA and serum starved for 2 days in the presence of siRNA. 4 hr after serum stimulation, these cells were fixed and stained for acetylated tubulin (red), \u03b3-tubulin (green), and DNA (blue). Scale bar = 10 \u03bcm.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03083/elife-03083-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A and B) Starved RPE1 cells were treated with DMSO, 1 \u03bcg/ml calcium ionophore (ion), or 1 \u03bcg/ml calcium ionophore +20 \u03bcM proTAME without serum for 3 hr. Cilia were visualized by acetylated tubulin staining (green) and DAPI staining of DNA (blue). Scale bar: 10 \u03bcm. Ciliary length was measured from ciliated cells (n > 30). (C) RPE1 cells were transfected with control siRNA or Ube2S targeting siRNA, serum starved for 2 days, treated with 1 \u03bcg/ml calcium ionophore for 3 hr. Ciliary length was measured from ciliated cells (n > 30). Data are means \u00b1S.D.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03083/elife-03083-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) siRNA-transfected cells were subjected to western blot for Ube2S. (B) siRNA-transfected starved cells were stained for acetylated tubulin (green) and DNA (blue).\n\nRegulation of APC in mitosis employs a special E2 enzyme, Ube2S, which elongates ubiquitin chains on a substrate through specific linkages at the K-11 position of ubiquitin (Williamson et al., 2009; Wu et al., 2010). Ube2S keeps APC partially active during mitotic arrest and is required to fully activate APC-Cdc20 (Garnett et al., 2009). We were interested in whether Ube2S is also involved in regulation of APC-Cdc20 during ciliogenesis. We found that depletion of Ube2S increased the cilium length in quiescent cells (Figure 4\u2014figure supplement 3) and delayed ciliary shortening and resorption upon either serum stimulation or calcium influx (Figure 4C; Figure 4\u2014figure supplement 2C). These data imply that the cell utilizes the general processes for regulation of APC-Cdc20 activity for both mitosis and ciliogenesis.\n\n### APC-Cdc20 controls the stability of axonemal microtubules through the regulation of Nek1 activity\n\nIn mitosis APC ubiquitylates specific regulatory molecules like cyclin B and securin that control the processes of the metaphase\u2013anaphase transition. Similarly, there should be substrates of APC that might regulate the stability of the ciliary axoneme. Aurora-A, a known APC substrate during late mitosis, plays an important role in regulating disassembly of primary cilium (Pugacheva et al., 2007). We showed that protein levels of Aurora-A do not decrease upon serum stimulation when APC-Cdc20 is activated (Figure 5\u2014figure supplement 1A), consistent with the previous report (Pugacheva et al., 2007). This may be explained by previous studies showing that during ciliogenesis, Aurora-A is autophosphorylated at S51 (Plotnikova et al., 2012), which protects it from APC-mediated degradation (Littlepage and Ruderman, 2002; Littlepage et al., 2002). Accordingly, the knockdown of Cdc20 in quiescent cells did not affect Aurora-A protein levels (Figure 5\u2014figure supplement 1B). It was indicated by recent studies that APC may regulate ciliogenesis through degradation of dishevelled protein (Ganner et al., 2009; Miyamoto et al., 2011). However, both specific ubiquitylation assay and in vitro degradation assay showed that dishevelled is not an authentic substrate of APC (Figure 5\u2014figure supplement 1C and 1D), contradictory to their argument.\n\nNek1, the founding member of the NIMA-related kinase family was a good candidate. Genetic mutation in Nek1 was highly associated with short-rib polydactyly syndrome Type Majewski, a new ciliopathy (Thiel et al., 2011), and Nek1 is localized to the basal body region (Shalom et al., 2008). Both human and mouse fibroblast cells with Nek1 mutations have cilia with abnormal branched structures (Shalom et al., 2008; Thiel et al., 2011). We found that the depletion of endogenous Nek1 by siRNA in serum-starved RPE1 cells generated cilia with branched structures, revealed by acetylated-tubulin staining (Figure 5A\u2013C and Figure 5\u2014figure supplement 2A), indicating that Nek1 controls the stability and integrity of axonemal microtubules. Nek1 knockdown in proliferating RPE1 cells did not affect the structure of either cytoplasmic-acetylated tubulin in microtubules or centrosomal gamma-tubulin (Figure 5\u2014figure supplement 2C), suggesting a specific and confined role of Nek1 in ciliogenesis. After serum addition, the branched structure can still be efficiently resorbed (Figure 5\u2014figure supplement 2B), consistent with the dynamics of ciliary disassembly, indicating that the branched structure is ciliary axoneme. We found that Nek1 levels decreased after serum stimulation (Figure 5D), suggesting that the degradation of Nek1 could be essential for triggering the destabilization of the primary cilium. Finally, Nek1 also has a canonical destruction box (RXXLXXXN), the APC recognition motif, right after its coiled-coil domain. We showed by degradation assays in vitro that Nek1 is degraded in HeLa cell extracts, and that this degradation can be suppressed by Emi1, a specific APC inhibitor protein (Figure 5E). Nek1 is efficiently ubiquitylated by APC in in vitro ubiquitylation assay involving purified APC (Figure 5F). Furthermore, overexpression of Cdc20 leads to reduction of Nek1 levels in quiescent RPE1 cells (Figure 5G). These results validate Nek1 as an APC substrate. Moreover, simultaneous depletion of Cdc20 and Nek1 partially rescued the branched cilia phenotype caused by Nek1 knockdown (Figure 5C), suggesting that APC-Cdc20 regulates the stability of ciliary axoneme at least in part through antagonizing Nek1 activity.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03083/elife-03083-fig5-v1.jpg)\n\n**Figure 5.:** (A) RPE1 cells were treated with control siRNA or Nek1 targeting siRNA, serum starved for 48 hr, and stained for acetylated tubulin (red), \u03b3-tubulin (green) and DNA (blue). Scale bar represents 5 \u03bcm. (B) siRNA-treated cells were subjected to Western blot for endogenous Nek1 and GAPDH. (C) Cells were transfected with control siRNA, Nek1 siRNA, or Nek1 siRNA together with Cdc20 siRNA respectively, serum starved for 2 days, and stained for acetylated tubulin. The percentage of cells with normal cilia or branched abnormal cilia was calculated from three independent experiments. Data are means \u00b1S.D. (D) Western blot showed the decrease of Nek1 protein levels after serum stimulation. (E) Degradation of 35S-labelled Nek1 was examined in cell extracts prepared from HeLa S3 cells. Emi1 was added to test if the degradation was dependent on APC activity. The data were analyzed by autoradiography. (F) HA-tagged Nek1 was expressed and labeled with 35S in reticulocyte lysate. 35S-labelled Nek1 was purified through HA tag and subjected to in vitro ubiquitylation catalyzed by purified APC. (G) RPE1 cells were transfected with plasmid expressing HA-Nek1 and/or Myc-Cdc20, starved for 2 days and subjected to western blot for Myc tag, HA tag, and GAPDH.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03083/elife-03083-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) RPE1 cells were starved for 48 hr, samples were collected at indicated time point after serum addition, and were subjected to western blot for Aurora-A and GAPDH. (B) RPE1 cells were transfected with control siRNA or siRNA against Cdc20, samples were collected after serum starved for 48 hr or 1 hr post serum addition and subjected for western blot for Aurora-A, Cdc20, and GAPDH. (C) 35S-labelled dishevelled protein (DVL) and securin were incubated in the HeLa S3 cell extracts. Samples were collected at indicated times and analyzed by autoradiography. Emi1 was added in the reaction to test whether the degradation was APC dependent. (D) 35S-labelled dishevelled and securin were subjected to in vitro ubiquitylation assay catalyzed by purified APC, recombinant Cdh1 and UBCH10.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03083/elife-03083-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) RPE1 cells were transfected with control siRNA and Nek1 targeting siRNA respectively, serum starved for 2 days, and stained for acetylated tubulin (red), Arl13b (green), and DNA (blue). (B) RPE1 cells transfected with Nek1 siRNA were starved for 2 days, fixed at 0 and 3 hr post serum addition, and stained for DNA (blue) and acetylated tubulin (red). (C) Proliferating RPE1 cells were transfected with siRNA in the presence of serum and stained for acetylated tubulin (red), \u03b3-tubulin (green), and DNA (blue). Scale bars represent 5 \u03bcm.\n\n## Discussion\n\nThe assembly, maintenance, and disassembly of the primary cilium are regulated by the control of intraflagellar transport and protein posttranslational modifications (Besschetnova et al., 2010). Impairment of ciliary length control and ciliary assembly can lead to inappropriate cell proliferation and defects in signal transduction, causing ciliopathies and perhaps tumorigenesis. Though more and more is understood about which proteins control ciliary function, much of it through human genetics, much less is known about regulatory features that control the timing of ciliogenesis, and with respect to our work here, ciliary resorption. Surprisingly, some of the machinery for regulation is very similar to that used in regulation of the mitotic cycle, which depends significantly on posttranslational modifications. In particular the mitotic process in cells is controlled from the top by the activation of a kinase, Cdk1-cyclin B and an E3 component of the ubiquitin pathway, APC-Cdc20 and APC-Cdh1. We have found that the same Cdc20 is recruited to the basal body of the primary cilium, where in complex with APC it negatively regulates ciliary length, by destabilizing axonemal microtubules. Following serum stimulation of quiescent cells, APC-Cdc20 is fully activated leading to ciliary shortening and resorption.\n\nA previous study in this area claimed that APC-Cdh1 promoted the assembly of primary cilia; a conclusion completely contrary to our results. Although they found, as we did (Figure 2D\u2013F), that Cdc20 knockdown promotes ciliogenesis, they explained it by assuming that Cdc20 is an inhibitor of APC-Cdh1, and that Cdc20 needs to be degraded for the activation of APC-Cdh1 to promote the assembly of cilia (Miyamoto et al., 2011). They also proposed that APC-Cdh1, but not Cdc20, specifically degrades dishevelled during ciliogenesis. There are several problems with their data and conclusions. We found that Cdc20 is recruited to the basal body of fully formed primary cilia, and there is no evidence for the presence of Cdh1 at the basal body (Figure 1B and Figure 1\u2014figure supplement 3). Knockdown of Cdh1 does not inhibit the assembly of cilia, contradictory to their model (Figure 2\u2014figure supplement 2A). In addition, depletion of APC subunit (APC2) or treatment of ciliated cells with proTAME, which inhibits APC through promoting dissociation of both Cdc20 and Cdh1, increases (and not decreases) ciliary length (Figure 2A\u2013C and Figure 3), consistent with the Cdc20 knockdown phenotype. There is no precedent for Cdc20 functioning as an inhibitor of Cdh1 in mitosis. Instead, APC-Cdh1 ubiquitylates Cdc20, leading to its rapid disappearance during anaphase (Pfleger and Kirschner, 2000). Finally, we showed that dishevelled is not an authentic substrate of APC-Cdh1 using both specific ubiquitylation assays and degradation assays in vitro (Figure 5\u2014figure supplement 1C and 1D). Thus, our data argue against their model and instead point to the role of APC-Cdc20 in negatively regulating ciliogenesis.\n\nFurthermore, our data show that APC-Cdc20 counteracts the Nek1 activity to regulate the stability of the ciliary axoneme during maintenance and resorption of cilia. Depletion of Nek1 resulted in branched axonemal microtubules. An explanation for this phenotype is that the function of Nek1 is to stabilize axonemal microtubules. Thus, depletion of Nek1 leads to the destabilization and disassembly of axonemal subunits. It would appear that the disassembled axonemal subunits cannot be transported out of cilia efficiently, and instead they are randomly reassembled in the ciliary lumen, resulting in branched and frayed structures. Depletion of Nek1 also results in defects in ciliary signaling, revealed by the absence of Arl13b staining (Figure 5\u2014figure supplement 2A). This indicates that proper regulation of APC-Cdc20 activity is also essential for normal cellular signaling through primary cilia.\n\nWe note that APC may control the degradation of a series of ciliary proteins besides Nek1, as this E3 ligase does during mitosis. It will be interesting to try to identify other known and unknown APC substrates in the primary cilium and determine how they are regulated during the process of elongation and resorption.\n\nThe regulation of APC activity during mitosis and meiosis is controlled by the activity of kinases, such as Cdk1 (Kramer at al., 2000; Madgwick et al., 2006). Our preliminary data showed that suppression of Cdk activity increased the ciliary length (unpublished data), consistent with the role of Cdk1 in stimulating APC activity as in mitosis/meiosis. It is also possible that some protein inhibitor of APC is involved in ciliogenesis, regulating the suppression and activation of APC activity during ciliary maintenance and disassembly respectively. It is worthwhile to further dissect the detailed mechanism underlying this process in the future study.\n\nThe regulation of the primary cilium has assumed a great importance in overall cellular regulation and disease. The assembly/disassembly of primary cilium is under strict homeostatic control, and it is responsive to cell cycle regulation. The regulatory apparatus bears great similarities to the posttranslational control in the mitotic cycle. Despite the known presence of many of the same components that were thought to be quintessential components of the mitotic engine, it was not clear that their function bears strong similarities to their use in the cell cycle. Central to mitosis is this is the anaphase-promoting complex and its metaphase/anaphase regulator Cdc20. It acts as a master regulator of downstream kinases and phosphatases but it also targets terminal protein substrates. The primary cilium is thought to be a concentrated signaling system whose length may therefore act as a rheostat controlling a complement of signaling activities in cells. It therefore becomes attractive to think of ways of perturbing ciliary length. As more and more evidence accumulates documenting the connection between defects in ciliogenesis and human diseases, there could be a growing interest need for new therapies that modulate ciliary length and ciliary disassembly. An understanding of the central role of the APC in control of ciliary length could aid in the identification of new drug targets that may have broad applicability.\n\n## Materials and methods\n\n### Cell culture and transfection\n\nhTERT-RPE1 cells were grown in Dulbecco's Modified Eagle Medium (DMEM) with 10% fetal bovine serum (FBS). For analysis of ciliary assembly, cells were plated at subconfluence on glass coverslips and starved for 48 hr in DMEM without serum to induce cilia formation. To induce ciliary resorption, starved ciliated cells at subconfluence were treated with DMEM medium with 10% serum for 1\u20134 hr. Plasmids were transiently transfected into cells with FuGENE 6 Transfection Reagent (Promega, Madison, WI). For siRNA treatment, cells were transfected with indicated siRNA by Lipofectamine RNAiMAX Transfection Reagent (Life Technologies, Beverly, MA).\n\n### Plasmids, siRNA, and drugs\n\nPlasmids from the laboratory stock are as follows: human securin, human HA-Nek1, GFP, human Cdc20-GFP, human cMyc-Cdc20, and human DVL in pCS2 vector.\n\nSMARTpool ON-TARGETplus siRNA for Nek1 and Cdc20 were obtained from Thermo scientific, Waltham, MA. Silencer Select siRNA for Ube2S were obtained from Life Technologies.\n\nCalcium ionophore was from Sigma, St. Louis, MO. proTAME was from Boston Biochem, Cambridge, MA.\n\n### Protein preparation, in vitro degradation and ubiquitylation assays\n\nRecombinant Emi1 and APC components are purified as previously described (Wang and Kirschner, 2013). Securin and HA-Nek1 were expressed and radiolabelled with 35S in reticulocyte lysate (Promega). HA-Nek1 was further purified through HA beads (Sigma) for ubiquitylation assay. Cell extracts were prepared from HeLa S3 cells and RPE1 cells as indicated. In vitro protein degradation and in vitro ubiquitylation assays were performed as described previously (Wang and Kirschner, 2013).\n\n### Western blot\n\nhTERT-RPE1 cells were lysed in SDS sample buffer, and proteins were separated by SDS-PAGE on 4\u201312% gel. Data were analyzed with the Odyssey Infra-red imaging system. Primary antibodies for western blot were as follows: anti-GAPDH (1:20,000; 0411; sc47724; Santa Cruz Biotech, Santa Cruz, CA), anti-Nek1 (1:100; PAB3282; Abnova, Taiwan), anti-c-Myc (1:500; 9E10; sc40; Santa Cruz Biotech), anti-HA (1:500; Y11; sc805; Santa Cruz Biotech), anti-Ube2S (1:1000; 2257; Strategic Diagnostics, Newark, DE), anti-actin (1:2000; A2066; Sigma), anti-Aurora A (1:1000; 3092; Cell Signaling, Beverly, MA), anti-Cdc20 (1:1000; AR12; K0140-3; MBL International, Woburn, MA). Infrared secondary antibodies (1:20,000; Li-COR Biosciences, Lincoln, NE) were used for Odyssey imaging.\n\n### Immunofluorescence\n\nCells on coverslips were fixed with 3.5% paraformaldehyde (10 min) at 37\u00b0C and then methanol (4 min) at 4\u00b0C, permeabilized with 0.2% Triton-X100 in PBS, blocked in 2.5% BSA in PBS, and incubated with antibodies. Alternatively, to optimize signals at centrosomes or basal bodies, cells were fixed in methanol at \u221220\u00b0C for 10 min and subjected to blocking and antibody incubation. Primary antibodies included anti-APC2 (1:50; home-made), anti-APC7 (1:50; 21,418; Santa Cruz Biotech), anti-Cdc20 (1:100; AR12; K0140-3; MBL International), anti-\u03b3-tubulin (1:5000; T5192; Sigma), anti-acetylated tubulin (K40) (1:2000; 6-11B-1; T7451; Sigma), anti-acetylated tubulin (K40) (1:2000; D20G3; 5335; Cell Signaling), anti-p150Glued (1:100; 1/p150Glued; 610473; BD Biosciences, San Jose, CA), anti-Arl13b (1:500; 17,711-1-AP; Proteintech, Chicago, IL), anti-ki-67 (1:500; ab15580; Abcam, Cambridge, MA), anti-centrin 1 (1:200; ab11257; Abcam), anti-Cdh1 (1:100; home-made), anti-Cdh1 (1:200; Ab-2; Calbiochem), anti-Cdh1 (1:200; 34-2000; Life Technologies). Secondary antibodies labeled with Alexa 488 and Alexa 568 were from Life Technologies. DNA was stained with DAPI. Images were acquired with Nikon 80i Upright Microscope, and processed with MetaMorph image acquisition software and Adobe Photoshop SC3.\n\nIn order to measure the length of cilia, during coverslip mounting, the coverslips were pressed hard against microscope slides to flatten most of the cilia. Only those cilia which were flattened into one plane were selected for image acquirement and length measurement.\n",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "0b504abe-1b57-4610-8fa4-57bffcdbe589",
+      "submission_id": "f6041350-d831-4c4a-8d99-e56e644f073d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- W James Nelson, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03083.018](https://doi.org/10.7554/eLife.03083.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cAPC-Cdc20 regulates ciliary length and disassembly of the primary cilium\u201d for consideration at eLife. Your article has been favorably evaluated by Randy Schekman (Senior editor) and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nYour study focuses on the regulation of primary cilium length, and reabsorption. This is a poorly understood area of cilium biology, and this work provides novel and interesting insights into a mechanism involving the anaphase-promoting complex APC/Cdc20. You confirm a previous study that APC/Cdc20 localize to the ciliary basal body. Using specific inhibitors, siRNAs and over-expression they then show that the APC/Cdc20 complex is required for controlling cilium length, and reabsorption upon serum-induced re-entry into the cell cycle. Significantly you show that the ciliary kinase Nek1 is an APC/Cdc20 substrate. Furthermore, the study addresses some inconsistencies in previous studies.\n\nDespite these overall positive comments, the reviewers agreed that there are flaws in your study that need to be addressed before it is considered further.\n\nGeneral comments:\n\n1) It is clear from the Discussion that the work is in contradiction to a prior study addressing the roles of APC, Cdc20, and Cdh1. However, because these issues are not raised until the Discussion, the presentation of data is not structured to rigorously allow critique of the prior work: many additional controls, and performance of side-by-side comparison of Cdc20 with Cdh1 throughout the work, would be necessary if this is the main point to be made. For example, it is stated that Cdh1 is not localized at the basal body, contrary to a previous study. However, the experimental conditions and antibodies used in your study are not discussed (were different antibodies used?), nor is there discussion of disheveled or its relevance to cilia in the main text. For example, it would be important to show parallel data for all experiments with Cdh1, rather than stating as unpublished data that the knockdown of this protein gave no ciliary effect. These data should include evidence that efficient knockdown was achieved. If you do not wish to do these experiments, then the discussion should be modified.\n\n2) Some of the data do not support the interpretation of observed results, particularly with Nek1, and some simple but important control experiments are missing. For example, if the action of Cdc20 is to promote Nek1 degradation, then overexpression of Nek1 or Nek1 with a mutated recognition sequence for APC should lengthen cilia under steady state conditions, or prevent ciliary resorption following induction of disassembly. This experiment would test your model directly.\n\n3) It is not clear how APC/Cdc20 activity is regulated \u2013 of particular importance is the finding that the level of at least Cdc20 is high at 48 hr serum starvation (Figure 1\u2013figure supplement 2D), but cilia are still present; is proteolysis of Nek1 inhibited? What happens upon serum add-back and cilium reabsorption? Are levels of APC/Cdc20 decreased, or are APC/Cdc20 relocalized from the basal body?\n\nSpecific comments:\n\n1) Is the APC present at the centriole(s) of a quiescent cell that does not have a cilium? This is important because some components of the centrosome/cilium complex only localize to that complex after the cilium compartment is formed (the transition zone components, for example), and it would be useful to know the APC's relationship to other components in the pathway of ciliogenesis. Similarly, in Figure 1B, it is stated that Cdc20 is not observed at the centrosome of cycling cells. However, it I important to show that there is no accompanying axoneme (e.g., stained by acetylated tubulin). This would be necessary to make the claim that staining is centrosomal rather than at the ciliary basal body, as many cilia persist in non-mitotic interphase cells.\n\n2) What criteria are used to conclude that the \u201cbranched axoneme\u201d shown in Figure 5 under conditions of Nek1 depletion has the structure of a ciliary axonome, such as doublet microtubules, and is surrounded by a ciliary membrane? It looks like an internal microtubule array associated with the centriole, which could be an aberrant axoneme, but might be something else. The lack of Arl13b, cited by the authors as evidence that there is a signaling defect under these circumstances, might actually be due to this not being a ciliary axoneme.\n\n3) Figure 1\u2013figure supplement 1: APC is still active in quiescent extracts based on an assay performed with degradation of securin. This assay should be used in parallel with lysates depleted for Cdc20, to make it clear that Cdc20 is important for this function; and with lysates treated with pro-TAME, as a control. As presented, this assay lacks a negative control. Figure 1\u2013figure supplement 2: Colocalization with the dynactin subunit P150 is used to demonstrate that the APC is associated with the mother centriole. This is not clear from the images in the Figure, because there is no marker of all centrioles. Ideally this experiment would be done with triple labeling for APC2, P150 and a marker such as centrin.\n\n4) Figure 2A-C: This figure shows the change in cilium length associated with compromising APC-Cdc20. There is no indication of how the length of cilia was measured, and this is important because the length is used throughout the paper and in some cases the change is modest in amount. To determine cilium length accurately, the z-axis must be taken into account.\n\n5) Figure 4A: According to the legend, \u201cCilia were visualized by acetylated tubulin staining (green)\u201d. The legend should also mention the DAPI staining of DNA in all of the panels. More importantly, it is not clear what is shown in the ionophore panel. What is the yellow labeling, and why is it shown as yellow if the intention was to show the acetylated-tubulin in green? Is the signal from the normal complement of stable acetylated microtubules?\n\n6) It is unclear why data on Aurora-A kinase are not shown, even though this kinase is known to be a proximal regulator of ciliary assembly that is localized to the basal body and targeted by the APC. The authors exclude Aurora-A by stating it is phosphorylated at S51 during ciliary resorption, protecting it from APC-mediated degradation. However, the cited reference does not indicate this information is contained in the paper. In general, the weakness of the data presented for Nek1 makes it important to examine at least minimally the interaction between Cdc20 and Aurora-A in this study. The authors could test this more directly by show effects of depletion or over-expression of Cdc20 on Aurora-A expression and localization to the basal body.\n",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b0b42317-70b1-4b45-b411-f340a94eae48",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C1",
+      "claim": "APC is still active in cytoplasmic extracts of quiescent ciliated RPE1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that APC is still active in cytoplasmic extracts of quiescent ciliated RPE1, using the canonical APC substrate Securin (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by degradation assay data shown in Figure 1\u2014figure supplement 1 demonstrating securin degradation in cell extracts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "931192b1-d1ad-480e-aa81-a61e114d0e82",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C2",
+      "claim": "APC subunit 2 (APC2) is localized to the basal body of ciliated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining showed that APC subunit 2 (APC2) is localized to the basal body of the ciliated cells (Figure 1A and Figure 1\u2014figure supplement 2A), consistent with the previous report that APC is localized to the basal body of motile cilia in the Xenopus epidermis (Ganner et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 1A and Figure 1\u2014figure supplement 2A, and corroborated by citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "596a13e8-10c6-4ec7-a4e0-3f5e1ba7f640",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C3",
+      "claim": "APC is localized to the basal body of motile cilia in the Xenopus epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with the previous report that APC is localized to the basal body of motile cilia in the Xenopus epidermis (Ganner et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ganner et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "259ada6d-37b9-4b43-b2d3-4827929d15d7",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C4",
+      "claim": "Co-localization of APC2 with dynactin subunit P150 confirms its localization to the mother centriole.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-localization of APC2 with dynactin subunit P150 (Guo et al., 2006) further confirmed its localization to the mother centriole (Figure 1\u2014figure supplement 2B and 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by co-localization data in Figure 1\u2014figure supplement 2B and 2C, and citation to Guo et al., 2006 for P150 as a mother centriole marker.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "df698c6b-a420-4012-baed-3f7a09bc7ded",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C5",
+      "claim": "The APC co-activator Cdc20 is localized to the basal body of the primary cilium.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that the APC co-activator Cdc20 is also localized to basal body of the primary cilium (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "8dc6fcba-1711-4aac-8b64-e569cdc3fbf7",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C6",
+      "claim": "Cdh1 did not show localization to the basal body of the primary cilium.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas Cdh1 did not show such localization (Figure1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "2fe9832d-f954-49ab-bcd4-d7dd1e774585",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C7",
+      "claim": "Cdc20 was not observed at the centrosome of cycling interphase non-ciliated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Cdc20 was not observed at the centrosome of cycling interphase non-ciliated cells (Figure 1B and Figure1\u2014figure supplement 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 1B and Figure 1\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "aa9d3f6a-61cb-445f-bdb5-68576a451c4b",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C8",
+      "claim": "Cdc20 is specifically recruited to the basal body during ciliogenesis, rather than generally binding to the interphase centrosome.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that Cdc20 is specifically recruited to the basal body during ciliogenesis, rather than generally binding to the interphase centrosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Cdc20 is present at the basal body of ciliated cells but not at the centrosome of non-ciliated interphase cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "0a7757a6-6f0a-4e7a-accb-3f8b8ec04fc4",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C9",
+      "claim": "Cdc20 protein levels are dramatically reduced after serum starvation for 24 hr, due to the exit of cells from proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting showed that Cdc20 protein levels are dramatically reduced after serum starvation for 24 hr, due to the exit of cells from proliferation (Figure 1\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 1\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "2ab0bb49-b378-4de1-afc6-eb26769b37c4",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C10",
+      "claim": "Cdc20 protein levels were significantly elevated at 48 hr after serum starvation, when >80% of the cells are ciliated.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Cdc20 protein levels were significantly elevated at 48 hr after serum starvation, when >80% of the cells are ciliated, consistent with the appearance of this protein at the basal body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Western blot data showing Cdc20 levels at different time points during starvation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "b400fe33-972d-4002-beb0-49bb0c7dae89",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C11",
+      "claim": "Greater than 80% of RPE1 cells are ciliated after serum-starvation for 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Greater than 80% of RPE1 cells are ciliated after serum-starvation for 48 hr",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an established characteristic of the RPE1 cell model system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "d10f30bf-2adf-488a-ad06-f043e6aaf70d",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C12",
+      "claim": "Disassembly of primary cilia occurs 1\u20132 hr after re-adding serum.",
+      "claim_type": "EXPLICIT",
+      "source": "and disassembly of primary cilia occurs 1\u20132 hr after re-adding serum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an established characteristic of the RPE1 cell model system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "543b9dcc-33e0-41ea-89db-5b7d1ef79169",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C13",
+      "claim": "Reduction of APC subunit 2 (APC2) by siRNA significantly increased the length of primary cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduction of APC subunit 2 (APC2) by siRNA significantly increased the length of primary cilia marked by acetylated tubulin staining (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining and quantification data in Figure 2A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "c87eb2fc-8450-4c4c-afeb-ea411667da23",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C14",
+      "claim": "Depletion of Cdc20 by siRNA had no effect on the percentage of ciliated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the depletion of Cdc20 by siRNA had no effect on the percentage of ciliated cells, but there was a significant increase in the ciliary length (Figure 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification data in Figure 2D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "a39831e7-1bba-4dd8-bcde-32333faf3db2",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C15",
+      "claim": "Depletion of Cdc20 by siRNA resulted in a significant increase in ciliary length.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the depletion of Cdc20 by siRNA had no effect on the percentage of ciliated cells, but there was a significant increase in the ciliary length (Figure 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification data in Figure 2D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "2f0926b8-c596-4720-ab4d-434278ccca25",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C16",
+      "claim": "Ciliated cells after the knockdown of either APC2 or Cdc20 are still in quiescent stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative Ki-67 staining demonstrated that these ciliated cells after the knockdown of either APC2 or Cdc20 are still in quiescent stage (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Ki-67 staining data in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "ec0174c2-8298-48eb-b786-97739ae83e1b",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C17",
+      "claim": "Knockdown of Cdh1 by siRNA gave no obvious ciliary phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, knockdown of Cdh1 by siRNA gave no obvious ciliary phenotype (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Figure 2\u2014figure supplement 2A showing no change in ciliary length.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "9a7fc347-65cd-4673-8036-0826bfee9247",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C18",
+      "claim": "A previous study proposed that APC-Cdh1 promote ciliogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is contradictory to a previous study proposing that APC-Cdh1 promote ciliogenesis (Miyamoto et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Miyamoto et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "f2c11c52-f701-4d46-9efd-8abbaeba5ff9",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C19",
+      "claim": "Transiently transfected Cdc20-GFP localized to the centrosome of quiescent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When we transiently transfected cells with plasmid encoding Cdc20-GFP, we found it localized to the centrosome of quiescent cells, and completely suppressed the formation of primary cilia (Figure 2G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 2G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "a7ec7f3d-a970-4199-918c-e7971291f89c",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C20",
+      "claim": "Overexpression of Cdc20-GFP completely suppressed the formation of primary cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "When we transiently transfected cells with plasmid encoding Cdc20-GFP, we found it localized to the centrosome of quiescent cells, and completely suppressed the formation of primary cilia (Figure 2G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification data in Figure 2G,H showing reduced percentage of ciliated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "9ba22d91-4bc6-4b4a-89e2-a98fbfb2a28e",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C21",
+      "claim": "The cilium suppression phenotype by Cdc20-GFP overexpression was confirmed by Immunostaining of Arl13b.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype was confirmed by Immunostaining of Arl13b, another specific marker for ciliary axoneme (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "0d713bc2-bfa8-47fd-b7f6-21f619eb7ebc",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C22",
+      "claim": "Cdc20 negatively controls the length of the primary cilium.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested that Cdc20 negatively controls the length of the primary cilium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined observations that Cdc20 depletion increases ciliary length and Cdc20 overexpression suppresses cilia formation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "e9111e0c-d8c3-4606-b39e-8206c149768a",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C23",
+      "claim": "Cell-permeable proTAME efficiently inhibits the APC activity through disruption of the association of APC with its co-activators.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that cell-permeable proTAME efficiently inhibits the APC activity through disruption of the association of APC with its co-activators (Zeng et al., 2010; Zeng and King, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zeng et al., 2010 and Zeng and King, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "06e2a4d7-03cd-414e-8991-e553affdabaf",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C24",
+      "claim": "The length of preformed cilia was increased from 4\u00b5m to 7\u00b5m after treatment of fully ciliated quiescent cells with proTAME for 3 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of preformed cilia was increased from 4\u00b5m to 7\u00b5m after treatment of fully ciliated quiescent cells with proTAME for 3 hr (Figure 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "ca1dee20-f7eb-4546-82e7-8d3822551c37",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C25",
+      "claim": "Ciliated cells are still in quiescent stage after short-term treatment with proTAME.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative Ki-67 staining shows that the ciliated cells are still in quiescent stage after short-term treatment with this drug (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Ki-67 staining data in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "872c1c6b-d767-4113-b095-1fec384a444f",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C26",
+      "claim": "The activity of APC is required for maintaining the proper length of primary cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "This result supports the view that the activity of APC is required for maintaining the proper length of primary cilia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that APC inhibition by proTAME increases ciliary length.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "f071b342-77b8-4c64-8e92-ec47bc5999c6",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C27",
+      "claim": "Primary cilia on DMSO-treated control cells significantly shortened and resorbed 4 hr after serum addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary cilia on DMSO-treated control cells significantly shortened and resorbed 4 hr after serum addition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Figure 4A,B showing ciliary length and percentage of ciliated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "74460187-04df-4bc7-87f1-9b0db36676fc",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C28",
+      "claim": "ProTAME treatment delayed the shortening and resorption of cilia after serum addition.",
+      "claim_type": "EXPLICIT",
+      "source": "ProTAME treatment delayed the shortening and resorption of cilia (Figure 4A,B), demonstrating that APC activity is required for efficient ciliary resorption before the exit of cells from quiescent phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification data in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "845f1408-e848-4d08-9a52-f9430fbb99a2",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C29",
+      "claim": "APC activity is required for efficient ciliary resorption before the exit of cells from quiescent phase.",
+      "claim_type": "EXPLICIT",
+      "source": "ProTAME treatment delayed the shortening and resorption of cilia (Figure 4A,B), demonstrating that APC activity is required for efficient ciliary resorption before the exit of cells from quiescent phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that APC inhibition delays ciliary resorption upon serum stimulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "f4ab06fa-ff94-445d-ada3-fa4f7fb9b3cb",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C30",
+      "claim": "Suppression of either Cdc20 or APC2 by siRNA significantly delayed ciliary shortening after serum addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppression of either Cdc20 or APC2 by siRNA also significantly delayed ciliary shortening (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "7ed901e2-5ec4-4f61-9169-c614562dc4ed",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C31",
+      "claim": "Calcium influx is necessary and sufficient for shortening and resorption of the primary cilium.",
+      "claim_type": "EXPLICIT",
+      "source": "Calcium influx is known to be necessary and sufficient for shortening and resorption of the primary cilium (Besschetnova et al., 2010; Plotnikova et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Besschetnova et al., 2010 and Plotnikova et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "fa0fa490-22e9-4c60-878d-5bb4443352cc",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C32",
+      "claim": "ProTAME treatment prevented ciliary shortening induced by Calcium ionophore treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "and we found that proTAME treatment also prevented ciliary shortening induced by Calcium ionophore treatment (Figure 4\u2014figure supplement 2A and 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification data in Figure 4\u2014figure supplement 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "2467a169-4425-4ccc-8693-c581022a57ed",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C33",
+      "claim": "APC-Cdc20 at the basal body maintains cilium length of quiescent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, APC-Cdc20 at the basal body has two related functions: it maintains cilium length of quiescent cells; it is required for shortening and resorption of the cilium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined observations that APC-Cdc20 inhibition increases ciliary length and delays ciliary resorption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "f500cedf-7254-43f3-be3b-af33de1f2928",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C34",
+      "claim": "APC-Cdc20 at the basal body is required for shortening and resorption of the cilium.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, APC-Cdc20 at the basal body has two related functions: it maintains cilium length of quiescent cells; it is required for shortening and resorption of the cilium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that APC-Cdc20 inhibition delays ciliary resorption upon serum stimulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "c107519d-dcd3-482a-a962-f98ea82cf451",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C35",
+      "claim": "Ube2S keeps APC partially active during mitotic arrest and is required to fully activate APC-Cdc20.",
+      "claim_type": "EXPLICIT",
+      "source": "Ube2S keeps APC partially active during mitotic arrest and is required to fully activate APC-Cdc20 (Garnett et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Garnett et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "0d089ab5-b0d4-4f1d-9725-0964921ee3b0",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C36",
+      "claim": "Depletion of Ube2S increased the cilium length in quiescent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that depletion of Ube2S increased the cilium length in quiescent cells (Figure 4\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining and quantification data in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "a7bf4b1e-2aab-46e0-893e-f24982032c6c",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C37",
+      "claim": "Depletion of Ube2S delayed ciliary shortening and resorption upon serum stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "and delayed ciliary shortening and resorption upon either serum stimulation or calcium influx (Figure 4C; Figure 4\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification data in Figure 4C and Figure 4\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "c072266e-7ff0-4a9d-894b-f6556c01e523",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C38",
+      "claim": "Depletion of Ube2S delayed ciliary shortening and resorption upon calcium influx.",
+      "claim_type": "EXPLICIT",
+      "source": "and delayed ciliary shortening and resorption upon either serum stimulation or calcium influx (Figure 4C; Figure 4\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification data in Figure 4C and Figure 4\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "95739ca0-d529-489d-abd3-eee31707d07f",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C39",
+      "claim": "The cell utilizes the general processes for regulation of APC-Cdc20 activity for both mitosis and ciliogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "These data imply that the cell utilizes the general processes for regulation of APC-Cdc20 activity for both mitosis and ciliogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Ube2S, a mitotic APC regulator, also regulates ciliary length and resorption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "cded17cc-b41a-480b-b27c-d303a791b904",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C40",
+      "claim": "Aurora-A is a known APC substrate during late mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Aurora-A, a known APC substrate during late mitosis, plays an important role in regulating disassembly of primary cilium (Pugacheva et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pugacheva et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "dcff9f9f-e913-4e72-a31e-b14b7f63dcc4",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C41",
+      "claim": "Aurora-A plays an important role in regulating disassembly of primary cilium.",
+      "claim_type": "EXPLICIT",
+      "source": "Aurora-A, a known APC substrate during late mitosis, plays an important role in regulating disassembly of primary cilium (Pugacheva et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pugacheva et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "c3ebb0d4-75b3-4c47-b562-ae638861ba33",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C42",
+      "claim": "Protein levels of Aurora-A do not decrease upon serum stimulation when APC-Cdc20 is activated.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that protein levels of Aurora-A do not decrease upon serum stimulation when APC-Cdc20 is activated (Figure 5\u2014figure supplement 1A), consistent with the previous report (Pugacheva et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 5\u2014figure supplement 1A and citation to Pugacheva et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "5523b2a5-425a-43b3-9864-15460cea1136",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C43",
+      "claim": "During ciliogenesis, Aurora-A is autophosphorylated at S51.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be explained by previous studies showing that during ciliogenesis, Aurora-A is autophosphorylated at S51 (Plotnikova et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Plotnikova et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "efe825c7-ff8a-4fae-a767-f9c17661cc9e",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C44",
+      "claim": "Autophosphorylation of Aurora-A at S51 protects it from APC-mediated degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "which protects it from APC-mediated degradation (Littlepage and Ruderman, 2002; Littlepage et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Littlepage and Ruderman, 2002 and Littlepage et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "ec9b2a6c-50e4-431d-b7fa-69d9aa7a864c",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C45",
+      "claim": "The knockdown of Cdc20 in quiescent cells did not affect Aurora-A protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the knockdown of Cdc20 in quiescent cells did not affect Aurora-A protein levels (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "dfdeda1b-ab2b-48e5-ab72-45fcbe150d7c",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C46",
+      "claim": "Recent studies indicated that APC may regulate ciliogenesis through degradation of dishevelled protein.",
+      "claim_type": "EXPLICIT",
+      "source": "It was indicated by recent studies that APC may regulate ciliogenesis through degradation of dishevelled protein (Ganner et al., 2009; Miyamoto et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ganner et al., 2009 and Miyamoto et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "53229854-45ff-461f-b857-046550fb1773",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C47",
+      "claim": "Dishevelled is not an authentic substrate of APC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both specific ubiquitylation assay and in vitro degradation assay showed that dishevelled is not an authentic substrate of APC (Figure 5\u2014figure supplement 1C and 1D), contradictory to their argument.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ubiquitylation and degradation assay data in Figure 5\u2014figure supplement 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "3d88daea-67dc-4078-9d9d-86f9af7d1ea4",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C48",
+      "claim": "Genetic mutation in Nek1 was highly associated with short-rib polydactyly syndrome Type Majewski, a new ciliopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic mutation in Nek1 was highly associated with short-rib polydactyly syndrome Type Majewski, a new ciliopathy (Thiel et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Thiel et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "cef10625-18f1-4291-84c3-6e8b6f2b24be",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C49",
+      "claim": "Nek1 is localized to the basal body region.",
+      "claim_type": "EXPLICIT",
+      "source": "and Nek1 is localized to the basal body region (Shalom et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shalom et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "dc56ef0a-307c-4d84-bc81-9e0762048994",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C50",
+      "claim": "Both human and mouse fibroblast cells with Nek1 mutations have cilia with abnormal branched structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Both human and mouse fibroblast cells with Nek1 mutations have cilia with abnormal branched structures (Shalom et al., 2008; Thiel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Shalom et al., 2008 and Thiel et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "4cbbc3bd-0fe6-4867-aea2-e5082fc9a401",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C51",
+      "claim": "The depletion of endogenous Nek1 by siRNA in serum-starved RPE1 cells generated cilia with branched structures.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the depletion of endogenous Nek1 by siRNA in serum-starved RPE1 cells generated cilia with branched structures, revealed by acetylated-tubulin staining (Figure 5A\u2013C and Figure 5\u2014figure supplement 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 5A\u2013C and Figure 5\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "781c0238-fd23-4c43-8781-07d4584d4467",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C52",
+      "claim": "Nek1 controls the stability and integrity of axonemal microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that Nek1 controls the stability and integrity of axonemal microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Nek1 depletion results in branched ciliary structures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "d9c0aa17-5629-4200-9405-fed9d3144707",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C53",
+      "claim": "Nek1 knockdown in proliferating RPE1 cells did not affect the structure of either cytoplasmic-acetylated tubulin in microtubules or centrosomal gamma-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Nek1 knockdown in proliferating RPE1 cells did not affect the structure of either cytoplasmic-acetylated tubulin in microtubules or centrosomal gamma-tubulin (Figure 5\u2014figure supplement 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 5\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "c59a4be8-2bff-4657-a888-1641e8df9bed",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C54",
+      "claim": "Nek1 has a specific and confined role in ciliogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting a specific and confined role of Nek1 in ciliogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Nek1 knockdown affects ciliary structure but not cytoplasmic microtubules or centrosomes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "3a04f4e2-3fed-4ecd-a13f-a4b5458e25fb",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C55",
+      "claim": "After serum addition, the branched structure can still be efficiently resorbed.",
+      "claim_type": "EXPLICIT",
+      "source": "After serum addition, the branched structure can still be efficiently resorbed (Figure 5\u2014figure supplement 2B), consistent with the dynamics of ciliary disassembly, indicating that the branched structure is ciliary axoneme.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 5\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "1555ac22-a6ec-4307-a615-7b5e5e6ed221",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C56",
+      "claim": "The branched structure is ciliary axoneme.",
+      "claim_type": "EXPLICIT",
+      "source": "After serum addition, the branched structure can still be efficiently resorbed (Figure 5\u2014figure supplement 2B), consistent with the dynamics of ciliary disassembly, indicating that the branched structure is ciliary axoneme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that the branched structure can be resorbed like normal cilia.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "bfa241ce-9dee-44b7-ac07-72324330bb1b",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C57",
+      "claim": "Nek1 levels decreased after serum stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Nek1 levels decreased after serum stimulation (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "3de2db4d-87fe-4672-b7a5-74c3041fe6bc",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C58",
+      "claim": "The degradation of Nek1 could be essential for triggering the destabilization of the primary cilium.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the degradation of Nek1 could be essential for triggering the destabilization of the primary cilium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Nek1 levels decrease after serum stimulation when cilia are resorbed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "29020ac9-bfc2-466c-a59e-d803d80dbdf8",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C59",
+      "claim": "Nek1 has a canonical destruction box (RXXLXXXN), the APC recognition motif, right after its coiled-coil domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Nek1 also has a canonical destruction box (RXXLXXXN), the APC recognition motif, right after its coiled-coil domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sequence analysis of Nek1 protein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "4e912927-c97d-450b-bcfc-26fb59fd5044",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C60",
+      "claim": "Nek1 is degraded in HeLa cell extracts, and this degradation can be suppressed by Emi1, a specific APC inhibitor protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed by degradation assays in vitro that Nek1 is degraded in HeLa cell extracts, and that this degradation can be suppressed by Emi1, a specific APC inhibitor protein (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by degradation assay data in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "25aca45b-9f13-447c-a0dc-b54a6f772eed",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C61",
+      "claim": "Nek1 is efficiently ubiquitylated by APC in in vitro ubiquitylation assay involving purified APC.",
+      "claim_type": "EXPLICIT",
+      "source": "Nek1 is efficiently ubiquitylated by APC in in vitro ubiquitylation assay involving purified APC (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ubiquitylation assay data in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "a643f265-b82f-4a41-9679-67d5cf62b6a2",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C62",
+      "claim": "Overexpression of Cdc20 leads to reduction of Nek1 levels in quiescent RPE1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, overexpression of Cdc20 leads to reduction of Nek1 levels in quiescent RPE1 cells (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "c75c86a2-a264-4f2b-b29c-981adbe98b13",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C63",
+      "claim": "Nek1 is an APC substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "These results validate Nek1 as an APC substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined observations that Nek1 has a destruction box, is degraded in an APC-dependent manner, is ubiquitylated by APC, and its levels are reduced by Cdc20 overexpression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "77609d86-5221-4481-aed4-e238be468daa",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C64",
+      "claim": "Simultaneous depletion of Cdc20 and Nek1 partially rescued the branched cilia phenotype caused by Nek1 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, simultaneous depletion of Cdc20 and Nek1 partially rescued the branched cilia phenotype caused by Nek1 knockdown (Figure 5C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "7e23779c-c6f5-4d68-ad98-52a4fc3d4c71",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C65",
+      "claim": "APC-Cdc20 regulates the stability of ciliary axoneme at least in part through antagonizing Nek1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that APC-Cdc20 regulates the stability of ciliary axoneme at least in part through antagonizing Nek1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that co-depletion of Cdc20 and Nek1 partially rescues the Nek1 knockdown phenotype.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "8db4c6d9-b303-4a7b-aa26-11021c2da39b",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C66",
+      "claim": "The primary cilium has an important role in signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary cilium has an important role in signaling; defects in structure are associated with a variety of human diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "9b86a267-3625-4de8-9109-9d2709268596",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C67",
+      "claim": "Defects in primary cilium structure are associated with a variety of human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary cilium has an important role in signaling; defects in structure are associated with a variety of human diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "09a9dfd2-2657-4534-bade-b4a1183dd900",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C68",
+      "claim": "The activity of the anaphase-promoting complex (APC) destabilizes axonemal microtubules in the primary cilium.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the activity of the anaphase-promoting complex (APC), an E3 that regulates the onset of anaphase, destabilizes axonemal microtubules in the primary cilium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the combined experimental data showing that APC inhibition increases ciliary length and delays resorption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "d8b4d83b-ad1a-4ab0-a4d1-459b867de1c1",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C69",
+      "claim": "The metaphase APC co-activator, Cdc20, is specifically recruited to the basal body of primary cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the metaphase APC co-activator, Cdc20, is specifically recruited to the basal body of primary cilia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunostaining data showing Cdc20 localization to the basal body.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "84bc07b6-b874-4dfa-913f-58f0c616ed23",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C70",
+      "claim": "Inhibition of APC-Cdc20 activity increases the ciliary length.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of APC-Cdc20 activity increases the ciliary length",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing that Cdc20 knockdown, APC2 knockdown, and proTAME treatment all increase ciliary length.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "89979912-4dc8-4eca-9c9b-696672e16ffe",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C71",
+      "claim": "Overexpression of Cdc20 suppresses cilium formation.",
+      "claim_type": "EXPLICIT",
+      "source": "while overexpression of Cdc20 suppresses cilium formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing that Cdc20-GFP overexpression reduces the percentage of ciliated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "d060ff13-b5c7-44f3-af98-ce5c91b0b545",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C72",
+      "claim": "APC-Cdc20 activity is required for the timely resorption of the cilium after serum stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "APC-Cdc20 activity is required for the timely resorption of the cilium after serum stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing that APC-Cdc20 inhibition delays ciliary resorption after serum addition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "0a28e35c-2da2-438a-a6d5-07eb1ad24b1a",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C73",
+      "claim": "APC regulates the stability of axonemal microtubules through targeting Nek1, the ciliary kinase, for proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, APC regulates the stability of axonemal microtubules through targeting Nek1, the ciliary kinase, for proteolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing that Nek1 is an APC substrate and that co-depletion of Cdc20 and Nek1 rescues the Nek1 knockdown phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "642b4ab2-62d9-4ff6-8288-2c5fba83e756",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C74",
+      "claim": "These data demonstrate a novel function of APC beyond cell cycle control.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate a novel function of APC beyond cell cycle control and implicate critical role of ubiquitin-mediated proteolysis in ciliary disassembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the overall findings that APC-Cdc20 regulates ciliary length and resorption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "fdc97549-053a-471d-beec-ad0adf5d4d6c",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C75",
+      "claim": "Ubiquitin-mediated proteolysis plays a critical role in ciliary disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate a novel function of APC beyond cell cycle control and implicate critical role of ubiquitin-mediated proteolysis in ciliary disassembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the findings that APC, a ubiquitin E3 ligase, regulates ciliary resorption through targeting Nek1 for degradation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "332bde17-9157-46c8-bfe1-5daeabf99096",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C76",
+      "claim": "The primary cilium is highly enriched in receptors for various signaling pathways, including PDGF, calcium, receptor tyrosine kinases, Wnt, and Hh.",
+      "claim_type": "EXPLICIT",
+      "source": "Though known for over a century, it received little interest until it was appreciated that it is highly enriched in receptors for various signaling pathways, including PDGF, calcium, receptor tyrosine kinases, Wnt, and Hh (Satir et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Satir et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "6d809689-95aa-4b31-86bf-e2818e795576",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C77",
+      "claim": "The assembly of primary cilium is coupled to cell cycle exit and entry into quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "The assembly of primary cilium is coupled to cell cycle exit and entry into quiescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "f2da197d-f590-4a18-8a50-03e4ca12b4e4",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C78",
+      "claim": "The primary cilium functions as a tumor suppressor organelle that regulates cell proliferation and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary cilium functions as a tumor suppressor organelle that regulates cell proliferation and differentiation (Pan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pan et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "cfad6324-4c63-4108-9457-2fae1d1c6e97",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C79",
+      "claim": "Dysfunctions of the primary cilium cause a set of human diseases, classified as ciliopathies, such as polycystic kidney diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysfunctions of the primary cilium cause a set of human diseases, classified as ciliopathies, such as polycystic kidney diseases (Hildebrandt et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hildebrandt et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "da98a8a4-76a7-4186-b358-f29c00683180",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C80",
+      "claim": "Cancers are associated with the loss of cilia, due to misregulated cell proliferation through ciliary signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancers are also associated with the loss of cilia, due to misregulated cell proliferation through ciliary signaling (Plotnikova et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Plotnikova et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "59d01cc4-f48d-41c9-8873-310fda6c12ee",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C81",
+      "claim": "Ciliopathies are highly associated with defective ciliogenesis and abnormal ciliary length.",
+      "claim_type": "EXPLICIT",
+      "source": "Ciliopathies are highly associated with defective ciliogenesis and abnormal ciliary length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "c95a32e7-7677-4784-b904-05269a0e12a9",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C82",
+      "claim": "The assembly/disassembly of cilia and maintenance of ciliary length are tightly regulated through control of intraflagellar transport (IFT) and axoneme modification.",
+      "claim_type": "EXPLICIT",
+      "source": "The assembly/disassembly of cilia and maintenance of ciliary length are tightly regulated through control of intraflagellar transport (IFT) and axoneme modification (Avasthi and Marshall, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Avasthi and Marshall, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "7e474f40-c312-4ae0-99cf-216619da21fe",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C83",
+      "claim": "Ciliary length is regulated by the balance of the bidirectional transport of microtubule subunits and associated protein complexes through IFT.",
+      "claim_type": "EXPLICIT",
+      "source": "Ciliary length is regulated by the balance of the bidirectional transport of microtubule subunits and associated protein complexes through IFT (Pedersen and Rosenbaum, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pedersen and Rosenbaum, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "5d6632b2-35ce-4adc-b30d-70b0cb168e5f",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C84",
+      "claim": "The extension/resorption of primary cilia involves changes of the stability of axonemal microtubules, which are controlled by post-translational modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the extension/resorption of primary cilia also involves changes of the stability of axonemal microtubules, which are controlled by post-translational modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "7dce380c-3eef-4959-a13e-2a85b5800383",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C85",
+      "claim": "Aurora kinases stimulate disassembly of cilia and flagella by phosphorylation and activation of tubulin deacetylase.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Aurora kinases stimulate disassembly of cilia and flagella by phosphorylation and activation of tubulin deacetylase (Pan et al., 2004; Pugacheva et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pan et al., 2004 and Pugacheva et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "a153ecc0-4c75-4e7f-960c-98dce7e9ff1f",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C86",
+      "claim": "In Chlamydomonas flagella, there is an increase in the levels of protein ubiquitylation during flagellar resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "In Chlamydomonas flagella, there is an increase in the levels of protein ubiquitylation during flagellar resorption (Huang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Huang et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "9a760892-d436-459c-a23f-9eec2ad9d60c",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C87",
+      "claim": "Many mitotic regulators have been found to be involved in ciliogenesis, such as Aurora A kinase and NIMA-related kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "It is curious that many mitotic regulators have been found to be involved in ciliogenesis, such as Aurora A kinase (Pugacheva et al., 2007) and NIMA-related kinases (Moniz et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pugacheva et al., 2007 and Moniz et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "7b242698-9286-481e-ae2d-f554b1e6d618",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C88",
+      "claim": "Anaphase-promoting complex (APC) is localized to the basal body of the motile cilia in multiciliated Xenopus epidermal cells, where it has some role in regulating ciliary polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it was shown that anaphase-promoting complex (APC), the key ubiquitin E3 ligase that governs cell cycle progression is localized to the basal body of the motile cilia in multiciliated Xenopus epidermal cells, where it has some role in regulating ciliary polarity (Ganner et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ganner et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "efb08255-6fbc-4cfe-a198-205ea7d7c1ce",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C89",
+      "claim": "In mitosis, APC sequentially recruits co-activators (Cdc20 followed by Cdh1) and cooperates with two specific E2s (UBCH10 and Ube2S) to control proteolysis of key regulators of the metaphase to anaphase transition.",
+      "claim_type": "EXPLICIT",
+      "source": "In mitosis, APC sequentially recruits co-activators (Cdc20 followed by Cdh1) and cooperates with two specific E2s (UBCH10 and Ube2S) to control proteolysis of key regulators of the metaphase to anaphase transition (Fujita et al., 2009; Fujita et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fujita et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "fe2231af-3af5-4fbe-8d5e-74afd24ca29d",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C90",
+      "claim": "APC has a less well understood role in regulating other cellular processes, such as neurogenesis, metabolism, and myogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "APC also has a less well understood role in regulating other cellular processes, such as neurogenesis, metabolism, and myogenesis (Kim et al., 2009; Eguren et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kim et al., 2009 and Eguren et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "f7cd6f5d-636c-4ec8-a5c9-f45140762e39",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C91",
+      "claim": "Regulation of phosphorylation of APC subunits and Cdc20 is essential for the timing of APC activation during mitotic progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulation of phosphorylation of APC subunits and Cdc20 is essential for the timing of APC activation during mitotic progression (Kramer et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kramer et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "8147c891-05bb-4b85-bc44-010335f60295",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C92",
+      "claim": "APC-Cdc20 is modulated by its inhibitor proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "APC-Cdc20 is also modulated by its inhibitor proteins (Luo et al., 2000; Madgwick et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Luo et al., 2000 and Madgwick et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "cb9e8483-7dd9-4c93-b134-3bab12d6ef97",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C93",
+      "claim": "Protein levels of APC cognate E2s, UBCH10 and Ube2S are crucial for the activation of APC-Cdc20, and play a role in the override of mitotic arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, protein levels of APC cognate E2s, UBCH10 and Ube2S are crucial for the activation of APC-Cdc20, and play a role in the override of mitotic arrest (Reddy et al., 2007; Garnett et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Reddy et al., 2007 and Garnett et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "db5b1b2f-b08a-426a-bf84-91f0e175859a",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C94",
+      "claim": "APC-Cdc20 is localized to the centrosome of postmitotic neurons and plays an important role in dendrite morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "It was recently found that APC-Cdc20 is localized to the centrosome of postmitotic neurons and plays an important role in dendrite morphogenesis (Kim et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kim et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "d7409e69-dd4d-482d-bb74-e22c8905ddac",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C95",
+      "claim": "APC is localized to the basal body of primary cilia of human epithelial cells, where it negatively controls the length and stability of the axonemal microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "The APC is localized to the basal body of primary cilia of human epithelial cells, where it negatively controls the length and stability of the axonemal microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the combined experimental data showing APC localization and effects of APC inhibition on ciliary length.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "9981dbd0-1ab8-42d8-a850-4f1e02f2362e",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C96",
+      "claim": "During exit from the quiescent (G0) state APC-Cdc20 is activated and drives ciliary resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "During exit from the quiescent (G0) state APC-Cdc20 is activated and drives ciliary resorption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing that APC-Cdc20 inhibition delays ciliary resorption after serum stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "b9a3074a-2257-45e5-a1c1-28085df4f54e",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C97",
+      "claim": "APC-Cdc20 counteracts the Nek1 activity to regulate the stability of the ciliary axoneme during maintenance and resorption of cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our data show that APC-Cdc20 counteracts the Nek1 activity to regulate the stability of the ciliary axoneme during maintenance and resorption of cilia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing that Nek1 is an APC substrate and that co-depletion of Cdc20 and Nek1 rescues the Nek1 knockdown phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "5bd64fb2-e43b-4774-a982-3863391977b2",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C98",
+      "claim": "The function of Nek1 is to stabilize axonemal microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "An explanation for this phenotype is that the function of Nek1 is to stabilize axonemal microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Nek1 depletion leads to branched ciliary structures.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "c1110629-4041-4e5a-8281-dd7f4c25653b",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C99",
+      "claim": "Depletion of Nek1 leads to the destabilization and disassembly of axonemal subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, depletion of Nek1 leads to the destabilization and disassembly of axonemal subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Nek1 depletion results in branched ciliary structures.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "4a794a65-19a2-4e3e-82bb-c31461283b55",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C100",
+      "claim": "The disassembled axonemal subunits cannot be transported out of cilia efficiently, and instead they are randomly reassembled in the ciliary lumen, resulting in branched and frayed structures.",
+      "claim_type": "EXPLICIT",
+      "source": "It would appear that the disassembled axonemal subunits cannot be transported out of cilia efficiently, and instead they are randomly reassembled in the ciliary lumen, resulting in branched and frayed structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for the branched ciliary phenotype observed upon Nek1 depletion.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "607d2b0d-3470-4897-ad07-6e03be3b52fa",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C101",
+      "claim": "Depletion of Nek1 results in defects in ciliary signaling, revealed by the absence of Arl13b staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of Nek1 also results in defects in ciliary signaling, revealed by the absence of Arl13b staining (Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data in Figure 5\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "f4ada760-bdc2-4e7e-8d16-4d3c55f06906",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C102",
+      "claim": "Proper regulation of APC-Cdc20 activity is essential for normal cellular signaling through primary cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that proper regulation of APC-Cdc20 activity is also essential for normal cellular signaling through primary cilia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Nek1 depletion, which is regulated by APC-Cdc20, results in defects in ciliary signaling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "1e6ef731-faa7-40f4-a2e4-d4e512e21d0f",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C103",
+      "claim": "APC may control the degradation of a series of ciliary proteins besides Nek1.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that APC may control the degradation of a series of ciliary proteins besides Nek1, as this E3 ligase does during mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on the known behavior of APC in mitosis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "a9af4d22-1a3d-43a5-a3f0-19c18370262b",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C104",
+      "claim": "The regulation of APC activity during mitosis and meiosis is controlled by the activity of kinases, such as Cdk1.",
+      "claim_type": "EXPLICIT",
+      "source": "The regulation of APC activity during mitosis and meiosis is controlled by the activity of kinases, such as Cdk1 (Kramer at al., 2000; Madgwick et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kramer et al., 2000 and Madgwick et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "b94948bb-df01-4a1a-9ed8-9fb34fadabdf",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C105",
+      "claim": "Suppression of Cdk activity increased the ciliary length.",
+      "claim_type": "EXPLICIT",
+      "source": "Our preliminary data showed that suppression of Cdk activity increased the ciliary length (unpublished data)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as unpublished preliminary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "7f0942d4-ac73-4a6b-bfa7-9a9593f4504a",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C106",
+      "claim": "The primary cilium is thought to be a concentrated signaling system whose length may act as a rheostat controlling a complement of signaling activities in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary cilium is thought to be a concentrated signaling system whose length may therefore act as a rheostat controlling a complement of signaling activities in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conceptual framework based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "e0fc6fc0-140b-4fe0-a064-a6dacc60a3ac",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "claim_id": "C107",
+      "claim": "An understanding of the central role of the APC in control of ciliary length could aid in the identification of new drug targets that may have broad applicability.",
+      "claim_type": "EXPLICIT",
+      "source": "An understanding of the central role of the APC in control of ciliary length could aid in the identification of new drug targets that may have broad applicability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential therapeutic applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2230a636-8278-4df8-ae8d-18e494009ad1",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "APC is active and localized to the basal body of primary cilia in quiescent RPE1 cells. APC2 co-localizes with the mother centriole marker P150, confirming its basal body localization, consistent with prior findings in Xenopus motile cilia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 provide converging evidence from degradation assays (C1), immunostaining (C2), and co-localization with established markers (C4), corroborated by prior work (C3). The data demonstrate both APC activity and specific localization to the basal body.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "d20e5b75-ae1f-4566-abc6-9d7a4781969a",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cdc20, but not Cdh1, is specifically recruited to the basal body of primary cilia during ciliogenesis. Cdc20 is absent from centrosomes of non-ciliated interphase cells, and its protein levels increase at 48 hr starvation when most cells are ciliated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C10 provide consistent immunostaining and Western blot evidence showing Cdc20 localization to ciliated cell basal bodies (C5), absence of Cdh1 (C6), absence from non-ciliated centrosomes (C7), and temporal correlation with ciliogenesis (C9-C10). The data support specific recruitment during ciliogenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "8695b081-c8eb-4d85-b460-b0fdd3f6f297",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Depletion of APC2 or Cdc20 by siRNA significantly increases primary ciliary length without affecting the percentage of ciliated cells or cell cycle status (cells remain quiescent).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 provide consistent siRNA knockdown data with quantification showing increased ciliary length (C13, C15), no change in ciliation percentage (C14), and Ki-67 staining confirming quiescence (C16). The controls adequately address potential cell cycle confounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "32d7e1ac-b090-48eb-8733-7950dcb062da",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cdh1 knockdown produces no ciliary phenotype, contradicting a previous study proposing APC-Cdh1 promotes ciliogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C17 provides direct experimental evidence showing no effect of Cdh1 depletion on ciliary length. This contradicts the cited prior work (C18), but the current data appear robust. However, the discrepancy with prior literature warrants further investigation of experimental conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "379269f3-b707-4ee6-8b8d-56fc407ad66c",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Overexpression of Cdc20-GFP localizes to the centrosome and completely suppresses primary cilium formation, confirmed by both acetylated tubulin and Arl13b staining. This demonstrates that Cdc20 negatively regulates ciliary length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 provide consistent gain-of-function data complementing the loss-of-function experiments. The use of two independent ciliary markers (C21) strengthens the conclusion. The inference that Cdc20 negatively controls ciliary length (C22) is well-supported by both loss- and gain-of-function data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "09fb04d9-1e84-4aa2-90ed-efd0f4dd7ee9",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Pharmacological inhibition of APC with proTAME increases the length of preformed cilia in quiescent cells (from 4\u00b5m to 7\u00b5m) without affecting quiescence status, demonstrating that APC activity is required for maintaining proper ciliary length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 provide strong evidence using a complementary pharmacological approach. The use of proTAME (C23, validated by prior work) provides acute inhibition, avoiding potential secondary effects of long-term knockdown. Ki-67 staining (C25) confirms cells remain quiescent. The conclusion (C26) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "7bc9514f-e7bd-4ebb-814f-1643292ccacf",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "APC activity is required for efficient ciliary resorption upon serum stimulation. ProTAME treatment or siRNA depletion of Cdc20/APC2 delays ciliary shortening and resorption after serum addition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 provide consistent evidence from both pharmacological (C28) and genetic (C30) approaches showing delayed ciliary resorption when APC-Cdc20 is inhibited. The control condition (C27) establishes the baseline. The conclusion (C29) is well-supported by converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "59617a36-e3bd-4e8b-b3df-11818972f07b",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "APC-Cdc20 at the basal body has dual functions: maintaining cilium length in quiescent cells and mediating ciliary resorption. ProTAME prevents calcium ionophore-induced ciliary shortening, demonstrating APC acts downstream of calcium signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 integrate prior knowledge (C31) with new data (C32) to support a dual-function model (C33-C34). The calcium ionophore experiment (C32) provides mechanistic insight into APC's position in the resorption pathway. The conclusions are well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "b3d17696-ac58-4515-b2ef-92d78cccb9bf",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Ube2S, an E2 enzyme required for full APC-Cdc20 activation in mitosis, also regulates ciliary length and resorption. Ube2S depletion increases ciliary length and delays resorption upon serum or calcium stimulation, suggesting cells use common APC regulatory mechanisms for both mitosis and ciliogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 extend the findings to include Ube2S, showing that mitotic APC regulators also function in ciliogenesis. The data (C36-C38) are consistent with the APC-Cdc20 phenotypes. The inference (C39) about shared regulatory mechanisms is reasonable but somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "c6d39697-4885-437b-8501-74145abcead3",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Aurora-A, a known APC substrate in mitosis, is not degraded during ciliary resorption. Aurora-A levels remain stable upon serum stimulation and are unaffected by Cdc20 knockdown, likely due to protective S51 autophosphorylation during ciliogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 provide evidence that Aurora-A is not an APC substrate during ciliogenesis, despite being one in mitosis. The Western blot data (C42, C45) and mechanistic explanation via S51 phosphorylation (C43-C44, supported by citations) are consistent. This negative result is important for defining APC's substrate specificity in cilia.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "86713679-944f-4049-a828-3979288b26e1",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Dishevelled is not an authentic APC substrate, contradicting recent studies suggesting APC regulates ciliogenesis through dishevelled degradation. Both ubiquitylation and degradation assays show dishevelled is not targeted by APC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 directly challenge prior work using specific biochemical assays. The in vitro ubiquitylation and degradation data (C47) provide strong evidence against dishevelled as an APC substrate. This is an important negative result that clarifies the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "90df3314-1b37-408d-8549-d12da9103fc2",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Nek1, a ciliary kinase associated with ciliopathies, controls the stability and integrity of axonemal microtubules. Nek1 depletion generates branched ciliary structures without affecting cytoplasmic microtubules or centrosomes, indicating a specific role in ciliogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C54 establish Nek1's role in ciliary structure. The genetic association with ciliopathy (C48), prior localization data (C49-C50), and new siRNA data showing branched cilia (C51) are consistent. The specificity controls (C53) strengthen the conclusion of a cilia-specific function (C54).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "d454e0a4-b876-4064-863e-8574b48236ce",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The branched structures produced by Nek1 depletion are ciliary axoneme, as they can be efficiently resorbed upon serum addition like normal cilia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 provide functional evidence that the branched structures are indeed ciliary. The resorption dynamics (C55) support the inference (C56). This is important for interpreting the Nek1 phenotype.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "81aefcdd-487c-4dfc-b9d7-635c2703f72d",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Nek1 is an APC substrate. Nek1 contains a canonical destruction box, is degraded in cell extracts in an APC-dependent manner, is ubiquitylated by purified APC in vitro, decreases upon serum stimulation, and is reduced by Cdc20 overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C63 provide comprehensive evidence that Nek1 is an APC substrate: sequence analysis (C59), degradation assays (C60), ubiquitylation assays (C61), temporal correlation (C57), and overexpression studies (C62). The multiple lines of evidence strongly support the conclusion (C63).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "f25c9aea-6996-4926-b2fa-75f7c8371a29",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Co-depletion of Cdc20 and Nek1 partially rescues the branched cilia phenotype caused by Nek1 knockdown, suggesting APC-Cdc20 regulates ciliary axoneme stability at least in part through antagonizing Nek1 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 provide genetic epistasis data supporting a functional relationship between APC-Cdc20 and Nek1. The partial rescue (C64) is consistent with APC having multiple substrates. The conclusion (C65) is appropriately cautious ('at least in part').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "cc312768-4eb1-479e-9450-12167f8540da",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors propose that Nek1 stabilizes axonemal microtubules, and its depletion causes destabilization and disassembly of axonemal subunits that cannot be efficiently transported out, leading to random reassembly into branched structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C98-C100 are explicitly speculative explanations for the branched phenotype. While the model is plausible and consistent with the data, it lacks direct experimental validation. The mechanism of branch formation requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "d55dd46c-e1b9-4512-9c16-ce7e612d25f3",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Nek1 depletion results in defects in ciliary signaling, as revealed by absence of Arl13b staining, indicating that proper APC-Cdc20 regulation is essential for normal ciliary signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C102 provide evidence linking the structural defects to functional consequences. The absence of Arl13b (C101), a ciliary signaling marker, supports the inference about signaling defects (C102). This connects the molecular mechanism to physiological function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "b30acecd-0b31-4ff9-8fbe-e95b6974ddea",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "APC may control degradation of multiple ciliary proteins besides Nek1, analogous to its role in mitosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C103 is speculative, based on analogy to mitotic function. While reasonable, it lacks direct experimental support in the current study. This represents a hypothesis for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "4c0226d2-0e76-4ea2-bf0a-cfde7f54c778",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Cdk activity may regulate APC during ciliogenesis, as suppression of Cdk activity increased ciliary length in preliminary experiments, analogous to Cdk1's role in regulating APC during mitosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C104-C105 suggest Cdk involvement based on mitotic precedent (C104) and unpublished preliminary data (C105). The unpublished nature of the data and lack of detail make this result uncertain. This requires further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "0067cd2a-1a19-44d2-9f71-3cbfa01c6b94",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The study demonstrates that APC-Cdc20 destabilizes axonemal microtubules in primary cilia through targeting Nek1 for proteolysis, representing a novel non-mitotic function of APC and implicating ubiquitin-mediated proteolysis in ciliary disassembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C75 summarize the major findings. The conclusions are well-supported by the comprehensive experimental data including localization, loss/gain-of-function studies, pharmacological inhibition, and substrate identification. This represents a significant advance in understanding ciliary regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "cf326cae-1c68-4484-aa4c-c8249c60879e",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "APC localizes to the basal body of primary cilia where it negatively controls ciliary length and stability. During exit from quiescence, APC-Cdc20 is activated to drive ciliary resorption, counteracting Nek1 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C97 integrate the major findings into a coherent model. The localization, functional, and mechanistic data collectively support these conclusions. This summary effectively captures the key discoveries.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "ce1b7142-34ec-4ebd-aada-6df068768737",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The RPE1 cell model system exhibits >80% ciliation after 48 hr serum starvation and ciliary disassembly 1-2 hr after serum re-addition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 describe established characteristics of the RPE1 model system. These are well-documented properties that provide context for the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The introduction establishes the biological context: primary cilia are important signaling organelles whose dysfunction causes ciliopathies and cancer; ciliary length is regulated by IFT and post-translational modifications; mitotic regulators including APC are involved in ciliogenesis; APC-Cdc20 is tightly regulated in mitosis and has non-mitotic functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C94 provide background knowledge supported by appropriate citations. These establish the rationale for investigating APC-Cdc20 in ciliogenesis and provide context for interpreting the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    },
+    {
+      "id": "c06bccde-f584-47ea-8669-ce28b1c50137",
+      "content_id": "aabd6b6f-7ca3-4631-bcac-4c7d92975998",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The authors speculate that primary ciliary length may act as a rheostat for signaling activities, and understanding APC's role could aid in identifying therapeutic targets for ciliopathies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C106-C107 are explicitly speculative statements about potential implications. While the therapeutic potential is plausible, these represent future directions rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:13:10.141562Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b0b42317-70b1-4b45-b411-f340a94eae48",
+      "result_id": "2230a636-8278-4df8-ae8d-18e494009ad1"
+    },
+    {
+      "claim_id": "931192b1-d1ad-480e-aa81-a61e114d0e82",
+      "result_id": "2230a636-8278-4df8-ae8d-18e494009ad1"
+    },
+    {
+      "claim_id": "596a13e8-10c6-4ec7-a4e0-3f5e1ba7f640",
+      "result_id": "2230a636-8278-4df8-ae8d-18e494009ad1"
+    },
+    {
+      "claim_id": "259ada6d-37b9-4b43-b2d3-4827929d15d7",
+      "result_id": "2230a636-8278-4df8-ae8d-18e494009ad1"
+    },
+    {
+      "claim_id": "df698c6b-a420-4012-baed-3f7a09bc7ded",
+      "result_id": "d20e5b75-ae1f-4566-abc6-9d7a4781969a"
+    },
+    {
+      "claim_id": "8dc6fcba-1711-4aac-8b64-e569cdc3fbf7",
+      "result_id": "d20e5b75-ae1f-4566-abc6-9d7a4781969a"
+    },
+    {
+      "claim_id": "2fe9832d-f954-49ab-bcd4-d7dd1e774585",
+      "result_id": "d20e5b75-ae1f-4566-abc6-9d7a4781969a"
+    },
+    {
+      "claim_id": "aa9d3f6a-61cb-445f-bdb5-68576a451c4b",
+      "result_id": "d20e5b75-ae1f-4566-abc6-9d7a4781969a"
+    },
+    {
+      "claim_id": "0a7757a6-6f0a-4e7a-accb-3f8b8ec04fc4",
+      "result_id": "d20e5b75-ae1f-4566-abc6-9d7a4781969a"
+    },
+    {
+      "claim_id": "2ab0bb49-b378-4de1-afc6-eb26769b37c4",
+      "result_id": "d20e5b75-ae1f-4566-abc6-9d7a4781969a"
+    },
+    {
+      "claim_id": "543b9dcc-33e0-41ea-89db-5b7d1ef79169",
+      "result_id": "8695b081-c8eb-4d85-b460-b0fdd3f6f297"
+    },
+    {
+      "claim_id": "c87eb2fc-8450-4c4c-afeb-ea411667da23",
+      "result_id": "8695b081-c8eb-4d85-b460-b0fdd3f6f297"
+    },
+    {
+      "claim_id": "a39831e7-1bba-4dd8-bcde-32333faf3db2",
+      "result_id": "8695b081-c8eb-4d85-b460-b0fdd3f6f297"
+    },
+    {
+      "claim_id": "2f0926b8-c596-4720-ab4d-434278ccca25",
+      "result_id": "8695b081-c8eb-4d85-b460-b0fdd3f6f297"
+    },
+    {
+      "claim_id": "ec0174c2-8298-48eb-b786-97739ae83e1b",
+      "result_id": "32d7e1ac-b090-48eb-8733-7950dcb062da"
+    },
+    {
+      "claim_id": "9a7fc347-65cd-4673-8036-0826bfee9247",
+      "result_id": "32d7e1ac-b090-48eb-8733-7950dcb062da"
+    },
+    {
+      "claim_id": "f2c11c52-f701-4d46-9efd-8abbaeba5ff9",
+      "result_id": "379269f3-b707-4ee6-8b8d-56fc407ad66c"
+    },
+    {
+      "claim_id": "a7ec7f3d-a970-4199-918c-e7971291f89c",
+      "result_id": "379269f3-b707-4ee6-8b8d-56fc407ad66c"
+    },
+    {
+      "claim_id": "9ba22d91-4bc6-4b4a-89e2-a98fbfb2a28e",
+      "result_id": "379269f3-b707-4ee6-8b8d-56fc407ad66c"
+    },
+    {
+      "claim_id": "0d713bc2-bfa8-47fd-b7f6-21f619eb7ebc",
+      "result_id": "379269f3-b707-4ee6-8b8d-56fc407ad66c"
+    },
+    {
+      "claim_id": "e9111e0c-d8c3-4606-b39e-8206c149768a",
+      "result_id": "09fb04d9-1e84-4aa2-90ed-efd0f4dd7ee9"
+    },
+    {
+      "claim_id": "06e2a4d7-03cd-414e-8991-e553affdabaf",
+      "result_id": "09fb04d9-1e84-4aa2-90ed-efd0f4dd7ee9"
+    },
+    {
+      "claim_id": "ca1dee20-f7eb-4546-82e7-8d3822551c37",
+      "result_id": "09fb04d9-1e84-4aa2-90ed-efd0f4dd7ee9"
+    },
+    {
+      "claim_id": "872c1c6b-d767-4113-b095-1fec384a444f",
+      "result_id": "09fb04d9-1e84-4aa2-90ed-efd0f4dd7ee9"
+    },
+    {
+      "claim_id": "f071b342-77b8-4c64-8e92-ec47bc5999c6",
+      "result_id": "7bc9514f-e7bd-4ebb-814f-1643292ccacf"
+    },
+    {
+      "claim_id": "74460187-04df-4bc7-87f1-9b0db36676fc",
+      "result_id": "7bc9514f-e7bd-4ebb-814f-1643292ccacf"
+    },
+    {
+      "claim_id": "845f1408-e848-4d08-9a52-f9430fbb99a2",
+      "result_id": "7bc9514f-e7bd-4ebb-814f-1643292ccacf"
+    },
+    {
+      "claim_id": "f4ab06fa-ff94-445d-ada3-fa4f7fb9b3cb",
+      "result_id": "7bc9514f-e7bd-4ebb-814f-1643292ccacf"
+    },
+    {
+      "claim_id": "7ed901e2-5ec4-4f61-9169-c614562dc4ed",
+      "result_id": "59617a36-e3bd-4e8b-b3df-11818972f07b"
+    },
+    {
+      "claim_id": "fa0fa490-22e9-4c60-878d-5bb4443352cc",
+      "result_id": "59617a36-e3bd-4e8b-b3df-11818972f07b"
+    },
+    {
+      "claim_id": "2467a169-4425-4ccc-8693-c581022a57ed",
+      "result_id": "59617a36-e3bd-4e8b-b3df-11818972f07b"
+    },
+    {
+      "claim_id": "f500cedf-7254-43f3-be3b-af33de1f2928",
+      "result_id": "59617a36-e3bd-4e8b-b3df-11818972f07b"
+    },
+    {
+      "claim_id": "c107519d-dcd3-482a-a962-f98ea82cf451",
+      "result_id": "b3d17696-ac58-4515-b2ef-92d78cccb9bf"
+    },
+    {
+      "claim_id": "0d089ab5-b0d4-4f1d-9725-0964921ee3b0",
+      "result_id": "b3d17696-ac58-4515-b2ef-92d78cccb9bf"
+    },
+    {
+      "claim_id": "a7bf4b1e-2aab-46e0-893e-f24982032c6c",
+      "result_id": "b3d17696-ac58-4515-b2ef-92d78cccb9bf"
+    },
+    {
+      "claim_id": "c072266e-7ff0-4a9d-894b-f6556c01e523",
+      "result_id": "b3d17696-ac58-4515-b2ef-92d78cccb9bf"
+    },
+    {
+      "claim_id": "95739ca0-d529-489d-abd3-eee31707d07f",
+      "result_id": "b3d17696-ac58-4515-b2ef-92d78cccb9bf"
+    },
+    {
+      "claim_id": "cded17cc-b41a-480b-b27c-d303a791b904",
+      "result_id": "c6d39697-4885-437b-8501-74145abcead3"
+    },
+    {
+      "claim_id": "dcff9f9f-e913-4e72-a31e-b14b7f63dcc4",
+      "result_id": "c6d39697-4885-437b-8501-74145abcead3"
+    },
+    {
+      "claim_id": "c3ebb0d4-75b3-4c47-b562-ae638861ba33",
+      "result_id": "c6d39697-4885-437b-8501-74145abcead3"
+    },
+    {
+      "claim_id": "5523b2a5-425a-43b3-9864-15460cea1136",
+      "result_id": "c6d39697-4885-437b-8501-74145abcead3"
+    },
+    {
+      "claim_id": "efe825c7-ff8a-4fae-a767-f9c17661cc9e",
+      "result_id": "c6d39697-4885-437b-8501-74145abcead3"
+    },
+    {
+      "claim_id": "ec9b2a6c-50e4-431d-b7fa-69d9aa7a864c",
+      "result_id": "c6d39697-4885-437b-8501-74145abcead3"
+    },
+    {
+      "claim_id": "dfdeda1b-ab2b-48e5-ab72-45fcbe150d7c",
+      "result_id": "86713679-944f-4049-a828-3979288b26e1"
+    },
+    {
+      "claim_id": "53229854-45ff-461f-b857-046550fb1773",
+      "result_id": "86713679-944f-4049-a828-3979288b26e1"
+    },
+    {
+      "claim_id": "3d88daea-67dc-4078-9d9d-86f9af7d1ea4",
+      "result_id": "90df3314-1b37-408d-8549-d12da9103fc2"
+    },
+    {
+      "claim_id": "cef10625-18f1-4291-84c3-6e8b6f2b24be",
+      "result_id": "90df3314-1b37-408d-8549-d12da9103fc2"
+    },
+    {
+      "claim_id": "dc56ef0a-307c-4d84-bc81-9e0762048994",
+      "result_id": "90df3314-1b37-408d-8549-d12da9103fc2"
+    },
+    {
+      "claim_id": "4cbbc3bd-0fe6-4867-aea2-e5082fc9a401",
+      "result_id": "90df3314-1b37-408d-8549-d12da9103fc2"
+    },
+    {
+      "claim_id": "781c0238-fd23-4c43-8781-07d4584d4467",
+      "result_id": "90df3314-1b37-408d-8549-d12da9103fc2"
+    },
+    {
+      "claim_id": "d9c0aa17-5629-4200-9405-fed9d3144707",
+      "result_id": "90df3314-1b37-408d-8549-d12da9103fc2"
+    },
+    {
+      "claim_id": "c59a4be8-2bff-4657-a888-1641e8df9bed",
+      "result_id": "90df3314-1b37-408d-8549-d12da9103fc2"
+    },
+    {
+      "claim_id": "3a04f4e2-3fed-4ecd-a13f-a4b5458e25fb",
+      "result_id": "d454e0a4-b876-4064-863e-8574b48236ce"
+    },
+    {
+      "claim_id": "1555ac22-a6ec-4307-a615-7b5e5e6ed221",
+      "result_id": "d454e0a4-b876-4064-863e-8574b48236ce"
+    },
+    {
+      "claim_id": "bfa241ce-9dee-44b7-ac07-72324330bb1b",
+      "result_id": "81aefcdd-487c-4dfc-b9d7-635c2703f72d"
+    },
+    {
+      "claim_id": "3de2db4d-87fe-4672-b7a5-74c3041fe6bc",
+      "result_id": "81aefcdd-487c-4dfc-b9d7-635c2703f72d"
+    },
+    {
+      "claim_id": "29020ac9-bfc2-466c-a59e-d803d80dbdf8",
+      "result_id": "81aefcdd-487c-4dfc-b9d7-635c2703f72d"
+    },
+    {
+      "claim_id": "4e912927-c97d-450b-bcfc-26fb59fd5044",
+      "result_id": "81aefcdd-487c-4dfc-b9d7-635c2703f72d"
+    },
+    {
+      "claim_id": "25aca45b-9f13-447c-a0dc-b54a6f772eed",
+      "result_id": "81aefcdd-487c-4dfc-b9d7-635c2703f72d"
+    },
+    {
+      "claim_id": "a643f265-b82f-4a41-9679-67d5cf62b6a2",
+      "result_id": "81aefcdd-487c-4dfc-b9d7-635c2703f72d"
+    },
+    {
+      "claim_id": "c75c86a2-a264-4f2b-b29c-981adbe98b13",
+      "result_id": "81aefcdd-487c-4dfc-b9d7-635c2703f72d"
+    },
+    {
+      "claim_id": "77609d86-5221-4481-aed4-e238be468daa",
+      "result_id": "f25c9aea-6996-4926-b2fa-75f7c8371a29"
+    },
+    {
+      "claim_id": "7e23779c-c6f5-4d68-ad98-52a4fc3d4c71",
+      "result_id": "f25c9aea-6996-4926-b2fa-75f7c8371a29"
+    },
+    {
+      "claim_id": "5bd64fb2-e43b-4774-a982-3863391977b2",
+      "result_id": "cc312768-4eb1-479e-9450-12167f8540da"
+    },
+    {
+      "claim_id": "c1110629-4041-4e5a-8281-dd7f4c25653b",
+      "result_id": "cc312768-4eb1-479e-9450-12167f8540da"
+    },
+    {
+      "claim_id": "4a794a65-19a2-4e3e-82bb-c31461283b55",
+      "result_id": "cc312768-4eb1-479e-9450-12167f8540da"
+    },
+    {
+      "claim_id": "607d2b0d-3470-4897-ad07-6e03be3b52fa",
+      "result_id": "d55dd46c-e1b9-4512-9c16-ce7e612d25f3"
+    },
+    {
+      "claim_id": "f4ada760-bdc2-4e7e-8d16-4d3c55f06906",
+      "result_id": "d55dd46c-e1b9-4512-9c16-ce7e612d25f3"
+    },
+    {
+      "claim_id": "1e6ef731-faa7-40f4-a2e4-d4e512e21d0f",
+      "result_id": "b30acecd-0b31-4ff9-8fbe-e95b6974ddea"
+    },
+    {
+      "claim_id": "a9af4d22-1a3d-43a5-a3f0-19c18370262b",
+      "result_id": "4c0226d2-0e76-4ea2-bf0a-cfde7f54c778"
+    },
+    {
+      "claim_id": "b94948bb-df01-4a1a-9ed8-9fb34fadabdf",
+      "result_id": "4c0226d2-0e76-4ea2-bf0a-cfde7f54c778"
+    },
+    {
+      "claim_id": "09a9dfd2-2657-4534-bade-b4a1183dd900",
+      "result_id": "0067cd2a-1a19-44d2-9f71-3cbfa01c6b94"
+    },
+    {
+      "claim_id": "d8b4d83b-ad1a-4ab0-a4d1-459b867de1c1",
+      "result_id": "0067cd2a-1a19-44d2-9f71-3cbfa01c6b94"
+    },
+    {
+      "claim_id": "84bc07b6-b874-4dfa-913f-58f0c616ed23",
+      "result_id": "0067cd2a-1a19-44d2-9f71-3cbfa01c6b94"
+    },
+    {
+      "claim_id": "89979912-4dc8-4eca-9c9b-696672e16ffe",
+      "result_id": "0067cd2a-1a19-44d2-9f71-3cbfa01c6b94"
+    },
+    {
+      "claim_id": "d060ff13-b5c7-44f3-af98-ce5c91b0b545",
+      "result_id": "0067cd2a-1a19-44d2-9f71-3cbfa01c6b94"
+    },
+    {
+      "claim_id": "0a28e35c-2da2-438a-a6d5-07eb1ad24b1a",
+      "result_id": "0067cd2a-1a19-44d2-9f71-3cbfa01c6b94"
+    },
+    {
+      "claim_id": "642b4ab2-62d9-4ff6-8288-2c5fba83e756",
+      "result_id": "0067cd2a-1a19-44d2-9f71-3cbfa01c6b94"
+    },
+    {
+      "claim_id": "fdc97549-053a-471d-beec-ad0adf5d4d6c",
+      "result_id": "0067cd2a-1a19-44d2-9f71-3cbfa01c6b94"
+    },
+    {
+      "claim_id": "d7409e69-dd4d-482d-bb74-e22c8905ddac",
+      "result_id": "cf326cae-1c68-4484-aa4c-c8249c60879e"
+    },
+    {
+      "claim_id": "9981dbd0-1ab8-42d8-a850-4f1e02f2362e",
+      "result_id": "cf326cae-1c68-4484-aa4c-c8249c60879e"
+    },
+    {
+      "claim_id": "b9a3074a-2257-45e5-a1c1-28085df4f54e",
+      "result_id": "cf326cae-1c68-4484-aa4c-c8249c60879e"
+    },
+    {
+      "claim_id": "b400fe33-972d-4002-beb0-49bb0c7dae89",
+      "result_id": "ce1b7142-34ec-4ebd-aada-6df068768737"
+    },
+    {
+      "claim_id": "d10f30bf-2adf-488a-ad06-f043e6aaf70d",
+      "result_id": "ce1b7142-34ec-4ebd-aada-6df068768737"
+    },
+    {
+      "claim_id": "8db4c6d9-b303-4a7b-aa26-11021c2da39b",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "9b86a267-3625-4de8-9109-9d2709268596",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "332bde17-9157-46c8-bfe1-5daeabf99096",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "6d809689-95aa-4b31-86bf-e2818e795576",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "f2da197d-f590-4a18-8a50-03e4ca12b4e4",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "cfad6324-4c63-4108-9457-2fae1d1c6e97",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "da98a8a4-76a7-4186-b358-f29c00683180",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "59d01cc4-f48d-41c9-8873-310fda6c12ee",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "c95a32e7-7677-4784-b904-05269a0e12a9",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "7e474f40-c312-4ae0-99cf-216619da21fe",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "5d6632b2-35ce-4adc-b30d-70b0cb168e5f",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "7dce380c-3eef-4959-a13e-2a85b5800383",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "a153ecc0-4c75-4e7f-960c-98dce7e9ff1f",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "9a760892-d436-459c-a23f-9eec2ad9d60c",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "7b242698-9286-481e-ae2d-f554b1e6d618",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "efb08255-6fbc-4cfe-a198-205ea7d7c1ce",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "fe2231af-3af5-4fbe-8d5e-74afd24ca29d",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "f7cd6f5d-636c-4ec8-a5c9-f45140762e39",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "8147c891-05bb-4b85-bc44-010335f60295",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "cb9e8483-7dd9-4c93-b134-3bab12d6ef97",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "db5b1b2f-b08a-426a-bf84-91f0e175859a",
+      "result_id": "49fa0eb8-1703-4c95-87b5-6c8ea87b3fa5"
+    },
+    {
+      "claim_id": "7f0942d4-ac73-4a6b-bfa7-9a9593f4504a",
+      "result_id": "c06bccde-f584-47ea-8669-ce28b1c50137"
+    },
+    {
+      "claim_id": "e0fc6fc0-140b-4fe0-a064-a6dacc60a3ac",
+      "result_id": "c06bccde-f584-47ea-8669-ce28b1c50137"
+    }
+  ],
+  "comparisons": []
+}

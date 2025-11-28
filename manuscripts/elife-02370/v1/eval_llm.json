@@ -1,0 +1,417 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C64"
+    ],
+    "result": "Computer simulations predict that neuropathic excitability changes (repetitive spiking, MPOs, bursting) arise from a switch in spike initiation dynamics at a critical tipping point, and this tipping point can be reached via multiple different molecular pathologies (degeneracy). The modeling shows a many-to-one mapping between molecular parameters and excitability, with continuous parameter changes leading to discontinuous changes in spike initiation dynamics via a subcritical Hopf bifurcation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The modeling predictions are well-supported by detailed bifurcation analysis (C51-C56) and are grounded in established dynamical systems theory (C43-C46). The claims are internally consistent and the mathematical framework appropriately characterizes the nonlinear dynamics. The model successfully predicts the experimental observations that follow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Decreasing subthreshold potassium conductance via 4-AP or \u03b1-dendrotoxin application reproduces neuropathic excitability (MPOs and repetitive spiking) in naive cutaneous afferents. In 8 of 15 neurons tested, potassium channel blockade successfully induced neuropathic changes, significantly higher than chance (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data clearly demonstrate that pharmacological reduction of potassium conductance can reproduce neuropathic excitability in naive neurons (C70-C78). The statistical analysis is appropriate (Fisher's exact test), sample sizes are reported, and the results are consistent with the modeling predictions. The use of two different blockers (4-AP and dendrotoxin) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Increasing subthreshold sodium conductance via dynamic clamp reproduces neuropathic excitability (MPOs and repetitive spiking) in naive cutaneous afferents. In 9 of 19 neurons tested, insertion of virtual sodium conductance successfully induced neuropathic changes, significantly higher than chance (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dynamic clamp experiments provide strong evidence that increasing sodium conductance can reproduce neuropathic excitability (C80-C83). The power spectral analysis confirms that the induced MPOs are comparable to injury-induced MPOs (C81). Statistical analysis is appropriate and the results confirm the modeling predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Bursting requires both a subcritical Hopf bifurcation and adaptation current. Insertion of virtual adaptation current enabled bursting in repetitively spiking neurons (3/3 tested) but had no effect in neurons with normal onset-only spiking, suggesting adaptation currents are upregulated after nerve injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental results (C85-C86) clearly confirm the modeling prediction (C84) that both conditions are necessary for bursting. The 100% success rate in enabling bursting when both conditions are met, and 0% when only one condition is met, provides strong support. However, C88 is speculative about the mechanism (upregulation vs. occult presence) and would benefit from additional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Combined manipulations (decreasing potassium conductance and increasing sodium conductance) can additively reproduce neuropathic excitability when individual manipulations are insufficient. The combination succeeded in 7 of 8 neurons where individual manipulations failed, and 4-AP significantly reduced the virtual sodium conductance needed for conversion (from 0.51 to 0.23 nS/pF, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data strongly support the prediction that manipulations can combine additively (C89-C91). The quantitative analysis showing reduced sodium conductance requirements with 4-AP provides clear evidence of additivity. Statistical analysis is appropriate (Mann-Whitney U test) and the results are consistent with the modeling framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Conductance changes can offset one another (subtractivity). Insertion of virtual potassium conductance reversed hyperexcitability induced by either 4-AP (3/3 neurons) or virtual sodium conductance (3/3 neurons), demonstrating that different manipulations can be subtractive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental results provide clear evidence for subtractivity with 100% success rates in both conditions tested (C92, C94). The demonstration that virtual potassium conductance reverses 4-AP effects also confirms the specificity of the 4-AP manipulation (C93). The small sample sizes (n=3 each) are a limitation but the consistency of results is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C95",
+      "C96",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Neuropathic excitability in injured neurons can be reversed by manipulations that move neurons back across their tipping point. In injured muscle afferents, insertion of virtual potassium conductance reversed neuropathic excitability in 10/10 neurons, and riluzole (sodium channel blocker) reversed it in 4/4 neurons. The small conductance needed for reversal (median 0.14 nS/pF) suggests the neuropathic state lies close to the tipping point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data strongly support the predictions with 100% success rates for both reversal strategies (C99-C100). The quantitative analysis of conductance requirements (C101) provides additional support for the proximity to the tipping point (C102). The use of two different approaches (dynamic clamp and pharmacology) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Nerve injury moves neurons closer to their tipping point even when they don't cross it. Injured cutaneous afferents that didn't exhibit neuropathic excitability still required significantly less virtual sodium conductance to reach criticality compared to naive afferents (0.30 vs 0.51 nS/pF, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data provide clear evidence that injury affects excitability quantitatively even in neurons that don't show qualitative changes (C103). The statistical analysis is appropriate and the conclusion (C104) logically follows from the data. This is an important finding that extends the concept of criticality beyond the binary classification of normal vs. neuropathic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Naive muscle afferents operate closer to their tipping point than cutaneous afferents. Neuropathic excitability was reproduced in 16/20 muscle afferents vs 9/19 cutaneous afferents (p<0.05), requiring less virtual sodium conductance (0.31 vs 0.51 nS/pF, p<0.001). This difference is not explained by input resistance, which did not differ significantly between the two populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data clearly demonstrate differential susceptibility between afferent types (C106-C107). The statistical analyses are appropriate and the conclusion (C108, C110) is well-supported. The control measurement of input resistance (C109) strengthens the interpretation by ruling out a simple explanation based on cell size or membrane properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Muscle afferents have lower expression of Kv1 channels than cutaneous afferents, explaining their reduced response to potassium channel blockers. The dendrotoxin-sensitive current was significantly smaller in muscle afferents (1.7 vs 4.2 pA/pF, p<0.01). However, 4-AP still moved muscle afferents toward their tipping point, as evidenced by reduced sodium conductance requirements with 4-AP (0.22 vs 0.31 nS/pF, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The voltage clamp measurements provide direct evidence for differential Kv1 expression (C112), and the functional consequences are clearly demonstrated (C111, C113). The interpretation that lower Kv1 expression contributes to muscle afferents being closer to their tipping point (C115) is reasonable but somewhat speculative given that many factors regulate excitability. The data are internally consistent and well-analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C116",
+      "C117"
+    ],
+    "result": "Multiple different manipulations successfully reproduced neuropathic excitability in naive neurons and reversed it in injured neurons, confirming criticality and degeneracy. Primary afferent hyperexcitability arises through a switch in spike initiation dynamics at a tipping point, and there are many different ways to cross that tipping point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is well-supported by the comprehensive experimental validation of multiple predictions. The demonstration that different molecular pathologies are individually sufficient (C6) and that no single pathology is uniquely necessary (C7) provides strong evidence for degeneracy. The experimental design, which tests manipulations within the same neurons, is a strength that avoids confounds from between-cell variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C12",
+      "C13",
+      "C119",
+      "C123",
+      "C124"
+    ],
+    "result": "The findings suggest that single-target drugs can be circumvented by maladaptive plasticity in multiple ion channels due to degeneracy, and that treatment strategies should move toward systems-based approaches. Deranged homeostatic regulation may maintain hyperexcitability by hijacking degeneracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the experimental data clearly demonstrate degeneracy in acute manipulations, the therapeutic implications (C8, C119, C124) are speculative extrapolations. The hypothesis about deranged homeostatic regulation (C123) is plausible but not directly tested. The acute reversal of neuropathic excitability in this study contrasts with the clinical observation that treatments often have only transient effects, suggesting additional factors not captured in the acute experimental paradigm. These claims require further validation in chronic treatment models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C105"
+    ],
+    "result": "Naive myelinated afferents (both cutaneous and muscle) normally exhibit onset-only spiking in response to sustained current injection, and can spike again in response to subsequent stimulus increments, ruling out complete sodium channel inactivation as the basis for non-repetitive spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental observations are clearly reported with appropriate sample sizes (n=23 cutaneous, n=27 muscle afferents). The interpretation that complete sodium channel inactivation is not responsible for onset-only spiking (C68) is well-supported by the demonstration of repeated spiking to incremental stimuli. This establishes the baseline phenotype for subsequent manipulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "The spike threshold in the soma of myelinated afferents is approximately -35 mV, which was used to parameterize the Morris-Lecar model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a well-established experimental observation used appropriately to constrain the model parameters. The value is consistent with published literature on myelinated afferents.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Spike initiation occurs through competition between fast-activating inward current and slower-activating outward current, with multiple ion channel types contributing to each net current. Currents with similar kinetics sum linearly, allowing injury-induced changes in any contributing channel to bias the competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by prior theoretical work (C43) and established biophysical principles (C45). The framework provides the theoretical foundation for understanding how multiple different molecular changes can produce equivalent functional outcomes (degeneracy). The citations to prior work are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C20"
+    ],
+    "result": "Neuropathic pain is difficult to treat despite numerous drug targets, and degeneracy has not yet informed pain research or analgesic drug development, though it has been recognized in other complex diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by appropriate citations and represent established knowledge in the field. They provide important context for the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Prior work demonstrates that increased Nav1.8 function is sufficient to produce neuropathic hypersensitivity, but Nav1.8 knockout animals can still develop injury-induced hypersensitivity, indicating that changes in other ion channels are also sufficient to cause neuropathic pain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent prior published work (supported by appropriate citations) and provide important evidence for degeneracy in neuropathic pain from the existing literature. The logic connecting these observations to degeneracy is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Hyperexcitability develops at multiple points along the neuraxis after nerve injury, including in myelinated afferents that contribute to mechanical allodynia. This hyperexcitability is characterized by both quantitative changes (reduced threshold) and qualitative changes (repetitive spiking, MPOs, bursting).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by multiple citations to established literature. They provide essential context for understanding the cellular basis of neuropathic pain and justify the focus on myelinated afferents.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The study targeted myelinated afferents (\u226530 \u03bcm diameter) because they are directly implicated in allodynia and have been reported to develop the triad of neuropathic excitability changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rationale for the experimental approach is clearly stated and well-justified based on prior literature. This methodological choice is appropriate for testing the hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Prior studies show that muscle afferents are more prone than cutaneous afferents to becoming grossly hyperexcitable after nerve injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim accurately represents prior published work (supported by appropriate citations) and provides important context for the differential susceptibility observed in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Criticality can explain why neuropathic symptoms develop at long and variable delays after injury, as molecular changes can develop occultly until a tipping point is reached. Symptoms could also wax and wane due to fluctuations around the tipping point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the clinical observation (C120) is well-established, the explanations based on criticality (C121-C122) are plausible hypotheses but not directly tested in this study. The acute experimental paradigm does not capture the temporal dynamics of symptom development after injury. These remain interesting speculations that require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Multi-target drugs and polypharmacy work well for epilepsy, and combination pharmacotherapy offers benefits for neuropathic pain. Neuropathic pain may reflect maladaptive homeostatic responses to injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by appropriate citations to published literature. They provide relevant context for the therapeutic implications of degeneracy, though the connection to the current study's findings is somewhat indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "Nerve injury induces numerous molecular changes within primary afferents as evidenced by gene expression profiling studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is well-supported by multiple citations to gene expression profiling studies. It provides important context for understanding the complexity of injury-induced changes and the challenge of identifying which changes are functionally relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C21"
+    ],
+    "result": "Degeneracy refers to multiple different mechanisms conveying equivalent function, distinct from redundancy. Both convey robustness, but if hijacked by pathogenic processes, degeneracy could make pathological states resistant to treatment. Degeneracy has been recognized in neural systems and other complex diseases including epilepsy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These definitional and background claims are well-supported by appropriate citations. They establish the conceptual framework for understanding degeneracy and its potential role in disease. The distinction between degeneracy and redundancy is important and clearly explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Changes in various parameters (other conductances, activation properties, reversal potentials) can all affect where the tipping point lies. In real neurons, the tipping point depends on numerous parameters and corresponds to a boundary in high-dimensional space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The modeling results (C62) demonstrate that multiple parameters affect the tipping point location. The inference about high-dimensional complexity in real neurons (C63) is reasonable given the large number of ion channels and their properties. This appropriately acknowledges the limitations of the simplified two-parameter analysis while maintaining the core concepts of criticality and degeneracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "Criticality and degeneracy are fundamentally important concepts for understanding how complex systems fail and how to therapeutically intervene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This broad conclusion is well-supported by the comprehensive experimental validation of the theoretical framework. The study successfully demonstrates the relevance of these concepts from dynamical systems theory to understanding neuropathic pain pathophysiology.",
+    "result_type": "MAJOR"
+  }
+]

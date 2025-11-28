@@ -1,0 +1,1818 @@
+{
+  "submission": {
+    "id": "be2c3f38-32df-47f9-a28f-c490cc50f960",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:39:05.636856Z",
+    "updated_at": "2025-11-28T21:39:05.636856Z"
+  },
+  "content": [
+    {
+      "id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "submission_id": "be2c3f38-32df-47f9-a28f-c490cc50f960",
+      "content_type": "manuscript",
+      "content_text": "# Improving pandemic influenza risk assessment\n\n## Authors\n\n- Colin A Russell<sup>1</sup> \u2020\n- Peter M Kasson<sup>2</sup>\n- Ruben O Donis<sup>3</sup>\n- Steven Riley<sup>4</sup>\n- John Dunbar<sup>5</sup>\n- Andrew Rambaut<sup>6</sup>\n- Jason Asher<sup>7</sup>\n- Stephen Burke<sup>8</sup>\n- C Todd Davis<sup>9</sup>\n- Rebecca J Garten<sup>10</sup>\n- Sandrasegaram Gnanakaran<sup>11</sup>\n- Simon I Hay<sup>12</sup> ([ORCID: 0000-0002-0611-7272](https://orcid.org/0000-0002-0611-7272))\n- Sander Herfst<sup>13</sup>\n- Nicola S Lewis<sup>14</sup>\n- James O Lloyd-Smith<sup>15</sup>\n- Catherine A Macken<sup>16</sup>\n- Sebastian Maurer-Stroh<sup>17</sup>\n- Elizabeth Neuhaus<sup>18</sup>\n- Colin R Parrish<sup>19</sup>\n- Kim M Pepin<sup>20</sup>\n- Samuel S Shepard<sup>21</sup>\n- David L Smith<sup>22</sup> ([ORCID: 0000-0003-4367-3849](https://orcid.org/0000-0003-4367-3849))\n- David L Suarez<sup>23</sup>\n- Susan C Trock<sup>24</sup>\n- Marc-Alain Widdowson<sup>25</sup>\n- Dylan B George<sup>26</sup>\n- Marc Lipsitch<sup>27</sup> ([ORCID: 0000-0003-1504-9213](https://orcid.org/0000-0003-1504-9213))\n- Jesse D Bloom<sup>28</sup> ([ORCID: 0000-0003-1267-3408](https://orcid.org/0000-0003-1267-3408))\n\n### Affiliations\n\n1. Department of Veterinary Medicine University of Cambridge Cambridge United Kingdom\n2. Department of Biomedical Engineering University of Virginia Charlottesville United States\n3. Influenza Division Centers for Disease Control and Prevention Atlanta United States\n4. Department of Infectious Disease Epidemiology School of Public Health, Imperial College London London United Kingdom ; Fogarty International Center National Institutes of Health Bethesda United States\n5. Bioscience Division Los Alamos National Laboratory Los Alamos United States\n6. Fogarty International Center National Institutes of Health Bethesda United States ; Institute of Evolutionary Biology University of Edinburgh Edinburgh United Kingdom\n7. Leidos contract support to the Division of Analytic Decision Support Biomedical Advanced Research and Development Authority, Department of Health and Human Services Washington United States\n8. Influenza Division Centers for Disease Control and Prevention Atlanta United States\n9. Influenza Division Centers for Disease Control and Prevention Atlanta United States\n10. Influenza Division Centers for Disease Control and Prevention Atlanta United States\n11. Bioscience Division Los Alamos National Laboratory Los Alamos United States\n12. Spatial Ecology and Epidemiology Group, Department of Zoology University of Oxford Oxford United Kingdom\n13. Department of Viroscience Postgraduate School of Molecular Medicine, Erasmus Medical Center Rotterdam Netherlands\n14. Department of Zoology University of Cambridge Cambridge United Kingdom\n15. Fogarty International Center National Institutes of Health Bethesda United States ; Department of Ecology and Evolutionary Biology University of California, Los Angeles Los Angeles United States\n16. Bioscience Division Los Alamos National Laboratory Los Alamos United States\n17. Bioinformatics Institute Agency for Science Technology and Research Singapore Singapore ; National Public Health Laboratory, Communicable Diseases Division Ministry of Health Singapore Singapore ; School of Biological Sciences Nanyang Technological University Singapore Singapore\n18. Influenza Division Centers for Disease Control and Prevention Atlanta United States\n19. James A Baker Institute College of Veterinary Medicine, Cornell University Ithaca United States\n20. Fogarty International Center National Institutes of Health Bethesda United States ; National Wildlife Research Center United States Department of Agriculture Fort Collins United States\n21. Influenza Division Centers for Disease Control and Prevention Atlanta United States\n22. Fogarty International Center National Institutes of Health Bethesda United States ; Spatial Ecology and Epidemiology Group, Department of Zoology University of Oxford Oxford United Kingdom ; Sanaria Institute for Global Health and Tropical Medicine Rockville United States\n23. Exotic and Emerging Avian Viral Diseases Research Unit, Southeast Poultry Research Laboratories United States Department of Agriculture Athens United States\n24. Influenza Division Centers for Disease Control and Prevention Atlanta United States\n25. Influenza Division Centers for Disease Control and Prevention Atlanta United States\n26. Fogarty International Center National Institutes of Health Bethesda United States ; Division of Analytic Decision Support, Biomedical Advanced Research and Development Authority Assistant Secretary for Preparedness and Response, Department of Health and Human Services Washington, DC United States\n27. Center for Communicable Disease Dynamics, Department of Epidemiology Harvard School of Public Health Boston United States ; Department of Immunology and Infectious Diseases Harvard School of Public Health Boston United States\n28. Division of Basic Sciences Fred Hutchinson Cancer Research Center Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAssessing the pandemic risk posed by specific non-human influenza A viruses is an important goal in public health research. As influenza virus genome sequencing becomes cheaper, faster, and more readily available, the ability to predict pandemic potential from sequence data could transform pandemic influenza risk assessment capabilities. However, the complexities of the relationships between virus genotype and phenotype make such predictions extremely difficult. The integration of experimental work, computational tool development, and analysis of evolutionary pathways, together with refinements to influenza surveillance, has the potential to transform our ability to assess the risks posed to humans by non-human influenza viruses and lead to improved pandemic preparedness and response.\n\n## Experimental approaches\n\nOne goal of experimental studies on non-human influenza viruses is to identify general virus traits that are likely to affect transmissibility between humans, and then relate those traits to specific virus sequence changes. For obvious reasons, direct experimental assessment of human-to-human transmission of potential pandemic viruses is not feasible. However, influenza viruses that have caused pandemics in humans have been shown to transmit efficiently in animal models (most commonly ferrets) (Chou et al., 2011, Yen et al., 2011), thus animal models are thought to be useful for examining the genetic changes in viruses that facilitate human-to-human transmission. For example, several studies have shown that genetic changes in the neuraminidase (NA) and matrix (M) gene segments acquired by the virus lineage responsible for the 2009 H1N1 pandemic increased transmissibility in animal models (Chou et al., 2011, Lakdawala et al., 2011, Yen et al., 2011), suggesting that these changes may have played a role in enhancing the virus's transmissibility in humans and hence paved the way for pandemic emergence. When animal experiments provide quantitative measures of virus traits, these can be integrated into quantitative measures of risk assessment such as the IRAT (Trock et al., 2012).\n\nRecently, several high-profile and controversial gain-of-function (GoF) studies have attempted to go beyond the characterization of existing viruses to prospectively identify new mutations in avian H5N1 viruses that enhance the ability of these viruses to transmit between ferrets by the airborne route (Chen et al., 2012, Herfst et al., 2012, Imai et al., 2012, Zhang et al., 2013). Important questions about the relative risks and benefits of these studies have been debated extensively elsewhere (Fauci, 2012; Fouchier et al., 2013; Lipkin, 2012; Casadevall and Imperiale, 2014; Lipsitch and Galvani, 2014); here, we focus on scientific considerations.\n\nBecause of the vast size of genetic space, such studies cannot possibly delineate all genetic variants of a virus that might be transmissible\u2014after all, there are more than 1018 different possible five-mutation variants of any given hemagglutinin (HA), which is more than what can reasonably be assayed experimentally and the vast majority will not facilitate transmissibility. A more modest goal is to attempt to associate classes of genetic or phenotypic traits with transmissibility. Transmissibility traits identified by GoF studies to date include some that were already known (such as switching receptor binding from avian-like \u03b12,3 sialic acid to human-like \u03b12,6 sialic acid linkages (Yamada et al., 2006) and lowering the optimal temperature for viral polymerase activity (Massin et al., 2001)), as well as some that are new, such as increasing HA stability and reducing glycosylation on HA's globular head (Herfst et al., 2012, Imai et al., 2012). Whether these traits are either necessary or sufficient for transmissibility among humans or even other mammalian animal models remains unclear. For example, a recent study of an avian H5N1 virus found that by reassorting its internal genes with those of a 2009 pandemic virus, the virus could be rendered transmissible in guinea pigs (which have both \u03b12,6 and \u03b12,3 sialic acid in the upper respiratory tract) despite retaining a preference for binding \u03b12,3 sialic acid. However, when mutations identified in earlier ferret GoF experiments were used to switch the receptor specificity to \u03b12,6 sialic acid, transmissibility was lost (Zhang et al., 2013).\n\nA key question for efforts to assess pandemic risk of non-human viruses is the degree to which certain substitutions are general markers for a phenotype, or whether the impacts of those mutations are dependent on genetic context and/or specific non-human host. Some mutations have been shown to be strong markers for phenotype for well-defined collections of viruses\u2014for instance, the NA mutation H275Y consistently confers oseltamivir resistance on N1 neuraminidases (although the impact of the mutation on surface expression of NA, and thus virus fitness, varies dramatically) (Baz et al., 2010, Bloom et al., 2010). Similarly, the PB2 E627K substitution adapts the viral polymerase to mammalian cells in some viruses (Long et al., 2013) but not others (Herfst et al., 2010), while other viruses have adapted to mammals via different substitutions in PB2 (Jagger et al., 2010, Mehle and Doudna, 2009; Zhu et al., 2010). In many cases, the effect of mutations can be highly sensitive to genetic context\u2014for instance, the effects of cytotoxic T-lymphocyte escape mutations on nucleoprotein (NP) function depend on the stability of the parent protein, which can be affected by at least dozens of other mutations (Gong et al., 2013). Similar patterns of context dependence have recently been shown for receptor binding specificity substitutions in H5N1 viruses (Tharakaraman et al., 2013). Therefore, even when phenotypic traits of interest can be identified, clear genetic markers for these traits are only present in some cases.\n\nThe utility of experimental studies for informing surveillance for higher-risk viruses hinges on the question of whether virus traits associated with risk of infection and transmission in humans possess clear genetic markers. If a trait only arises from a limited number of specific mutations or combination of mutations, then experimentally delineating these mutations would be helpful for surveillance. For these cases, it is important and useful for the community to have access to collections of interpretable genotype to phenotype traits such as in the H5N1 genetic changes inventory (http://www.cdc.gov/flu/avianflu/h5n1-genetic-changes.htm) as well as computational tools to quickly connect new sequences to the body of available mutation annotation knowledge (FluSurver: http://flusurver.bii.a-star.edu.sg/). On the other hand, if a trait can be conferred by a large number of different mutations or combinations of mutations, then it will be less effective to monitor specific mutations. In such cases, it may be more beneficial to focus on the broader biochemical properties of viruses or their proteins. Developing laboratory capacity for rapid phenotype assessment would therefore be a valuable complement to high-throughput sequencing of new viruses. Moving forwards, if such biochemical traits can be clearly delineated and reliably modeled, then computational simulation of proteins could be used to predict phenotype from sequence, even for sequences from viruses that have never been experimentally tested.\n\n## Computational predictions\n\nComputational methods present an attractive adjunct to experimental studies because they have higher throughput, have shorter turnaround times, are cheaper, and are safer than experimental work with whole virulent viruses. The main drawback of computational methods is the largely unknown accuracy of their predictions\u2014a drawback that is exacerbated by the lack of an established framework for validating the accuracy of the numerous computational prediction methods that populate the literature.\n\nThe elements of influenza pandemic risk assessment that are most amenable to computational prediction are those that correspond to well-defined, quantifiable molecular-scale traits such as receptor-binding preference, antiviral susceptibility, antigenicity of HA and NA, and possibly T-cell epitopes. Higher-level phenotypes such as transmissibility, that integrate phenomena at a range of scales, are not yet sufficiently well understood to be reasonable targets for computational predictions. A variety of computational methods shows promise for genotype-to-phenotype prediction including molecular dynamics simulations that combine high- and low-fidelity models (Amaro et al., 2009) and statistical learning approaches that use protein structure, dynamics, and sequence data to predict the phenotypic consequences of mutation (Kasson et al., 2009). However, better prospective validation of these tools against experimental data, particularly for exploring context dependency of genetic changes, is essential before these tools can be reliably used for informing public health decisions or policymaking (Figure 1).\n\nMaking substantial progress in the development of computational tools and the assessment of their accuracy will require collaboration between experimental and computational scientists to produce consistent testing and validation data. One possible mechanism to spur cooperation would be a series of regular community assessment exercises similar to Critical Assessment of protein Structure Prediction (CASP) (Moult et al., 2011). In a CASP-like exercise, one or more experimental groups would generate quantitative phenotype data for a set of viruses, for example the relative binding of \u03b12,3-sialoglycans and \u03b12,6-sialoglycans, pH profile of viral activation, or sensitivity to oseltamivir, and challenge computational groups to predict that virus phenotype data from the genetic sequences of the viruses tested. The quantitative experimental data would be held under embargo while the exercise runs. Computational groups would complete predictions for these targets, the experimental data set would then be released, and a meeting would be held to assess the performance of different methods to define avenues for improvement.\n\nIdeal experimental data sets for CASP-like exercises include thermophoretic or interferometric measurements of HA binding affinities to \u03b12,3- and \u03b12,6-sialoglycans (Xiong et al., 2013) and multi-method characterizations of viral pH activation shifts for sets of point mutants in HA (Galloway et al., 2013, Thoennes et al., 2008). Reliable computational prediction of biochemical traits from genetic data would be a major accomplishment. However, it should be recognized that further major developments, particularly computational prediction of total virus fitness in new hosts, would still be required for realizing the utility of computational tools in policymaking.\n\n## Evolutionary theory and modeling\n\nIn addition to the genotype\u2013phenotype relationship itself, there is a need for better understanding of the evolutionary mechanisms and pathways that allow adaptive mutations controlling host range to appear and rise in frequency. These mechanisms act in reservoir hosts, in intermediate hosts (if any), and in humans or other potential hosts; they also act at multiple scales, as viruses compete for replication within hosts and transmission between hosts (Park et al., 2013, Russell et al., 2012). Developing better phylodynamic model frameworks (Grenfell et al., 2004) for modeling virus host transfer and adaptation will require collaboration between theoreticians and experimentalists.\n\nSpecific goals would be to determine realistic parameters for mutation/selection processes (Illingworth et al., 2014) and virus population bottlenecks at transmission (Wilker et al., 2013) and to generate high-resolution data sets to test and train mechanistic models. Such data-driven mechanistic models could shed light on additional constraints to virus genetic change, such as fitness valleys that separate virus genotypes adapted to one species or another, or conflicts in selection acting at different biological scales. For example, at the most simple level of understanding of the role of receptor binding, avian to mammalian host switching is often assumed to only require a binary change in receptor specificity from \u03b12,3 to \u03b12,6 sialic acid and to be directly related to binding affinity. However, in addition to the \u03b12,3 and \u03b12,6 linkages, there is a tremendous variety in the structures of oligosaccharides displaying the sialic acids and in the structure of the sialic acids in different avian hosts (Gambaryan et al., 2012, Jourdain et al., 2011). The binding specificity for each receptor variant form may affect the potential for different viruses to cross the species barrier or make the difference between causing severe or only mild disease. Rich experimental data sets that provide insights on such factors will improve the power of evolutionary models to interpret experimental and field data.\n\n## Surveillance methodology\n\nDetection of the genetic changes and phenotypes of concern relies on systematic characterization of influenza viruses circulating in wild and domesticated animal populations. If there are virus traits that correlate with genetic markers observed to increase risk in humans, or that can be computationally inferred from genetic sequence data, it could be possible to monitor those markers in surveillance and adjust risk assessments prior to emergence in humans. However, the acquisition of samples entering existing surveillance networks is largely ad hoc, exhibits substantial variation by host and geographical region, and only a small proportion of the data end up in the public domain (Figure 3). Making non-human influenza surveillance more systematic by using statistical analysis to determine appropriate levels of coverage by geographic region and host species would facilitate the early detection of viruses of concern and also have the potential to facilitate detection of evolutionary and epidemiological patterns of virus activity that warn of potential emergence events.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03883/elife-03883-fig3-v1.jpg)\n\n**Figure 3.:** (A) Proportions of worldwide animal population by country (data from the Food and Agriculture Organization of the United Nations). (B) Number of unique influenza viruses for which sequence data exists in public databases from poultry or swine by country. Numbers of influenza virus sequences are not representative of influenza virus surveillance activities. Information regarding surveillance activities is not readily available. Virological surveillance, even if robust, may result in negative findings and is not captured in these figures. Most countries do not sequence every influenza virus isolate and some countries conduct virological surveillance without sharing sequence data publicly. Sequences deposited in public databases can reflect uneven geographic distribution and interest regarding viruses of concern such as H5N1 and H9N2.\n\nThere are large regions of the world and many animal populations for which little or no surveillance is performed but where significant animal influenza diversity can be inferred to exist. Systematic assessments of surveillance by geographic area and host species, similar to efforts for malaria (Gething et al., 2012, 2011, Hay et al., 2010, Sinka et al., 2012) and dengue (Bhatt et al., 2013), would help to identify major gaps where surveillance is either non-existent or unlikely to be sufficient for timely detection of viruses of concern. For enhancing surveillance, prioritizing among these gaps will require substantial improvements in understanding animal host ecology to identify hotspots for virus transmission within and among animal species. Similar efforts are required to better understand what aspects of the human\u2013animal interface facilitate transmission of viruses between animals and humans, particularly in animal production and domestic animal settings, and the human biological and epidemiological factors that promote chains of transmission of newly introduced viruses.\n\nOne motivation for changing existing surveillance systems is to increase their power to rapidly detect changes in patterns of non-human influenza virus activity. Substantial changes, such as the sudden proliferation of a previously rare virus subtype or of a virus with an H9N2 internal gene cassette (Gao et al., 2013, Garc\u00cca-Sastre and Schmolke, 2014; Guan et al., 1999), could indicate the emergence of new viral variants in non-human hosts that should be prioritized for further study even before the detection of human infections of zoonotic origin (Vijaykrishna et al., 2011). To be useful from a human health perspective such detection systems would require sampling of animals with no obvious signs of infection, routine assessment of particular genetic signatures or full genome sequencing, and near real-time sharing of these data; these activities all present potential financial, political, and logistical constraints.\n\nFurther development of surveillance infrastructure in some geographic locations and host species is likely to be unpopular or unfeasible due to economic disincentives for disease detection. However, the geographic movements of many non-human influenza hosts, via migration or trade, make it possible to identify surrogate sources of information. For example, by linking virological and serological data, it has been possible to make inferences about swine influenza virus activity in some parts of mainland China based only on the data from Hong Kong (Strelioff et al., 2013).\n\nA systematic, open, and timely global surveillance system based on viral sequence data would be a powerful tool in pandemic risk assessment. Viral sequences, with associated metadata and systematic recording of virus negative sample results, provide a rich source of information beyond the simple presence or absence of particular strains. Phylodynamic reconstructions from even a relatively small number of samples are capable of revealing lineages that are proliferating (Grenfell et al., 2004, Pybus and Rambaut, 2009). Phylogenetic methods can be used to reveal gaps in surveillance (Smith et al., 2009, Vijaykrishna et al., 2011). Genetic similarity between viruses in different locations or host species can identify drivers of transmission between populations (Faria et al., 2013, Lemey et al., 2014).\n\nData on negative samples would provide valuable denominators for estimating the prevalence of infection: tracking infection rates through time would give a window into transmission dynamics and allow investigation of mechanisms underlying virus circulation. The Influenza Research Database (IRD) (http://www.fludb.org) includes an animal surveillance database that contains negative test data but the amount of data is extremely limited compared to the global scale of ongoing surveillance activities. Standards should be developed for consistently recording these relevant associated metadata, so that the number of animals tested, the setting in which sampling took place, and the motivation for sampling associated with genetic data can be submitted in a consistent form to public data repositories, along with all sequence submissions.\n\n## Conclusions\n\nIt is currently not possible to predict which non-human influenza A virus will cause the next pandemic. Reducing the impact of the next pandemic will rely on early detection and mitigation strategies that slow the early spread to allow more preparatory work to be done. The integration of further experimental data with computational methods and mathematical models in conjunction with refinements to surveillance methodology will increase the feasibility of genotype-to-phenotype based assessments, increase the power of tools for more objectively assessing pandemic risk and decrease the time required for assessing the pandemic threat posed by extant non-human influenza A viruses\u2014all of which can inform strategies to help mitigate the impact of the next pandemic.\n\nEven as risk assessment capabilities improve, scientific insights into non-human influenza viruses must not give way to complacency that the most substantial threats have been identified and characterized. Despite the perceived risks of highly pathogenic H5N1 viruses, the emergence of the 2009 H1N1 pandemic virus in humans, the increasing incidence of human infection with H7N9 viruses in China since 2013, and the first documented human infections with H6N1 (Wei et al., 2013) and H10N8 (Chen et al., 2014) viruses highlight the importance of remaining vigilant against as-yet unrecognized high-risk viruses and the value of surveillance for influenza viruses in humans. Beyond further scientific investigations and refinement of surveillance capacity, the development of local surveillance-based outbreak response capacity worldwide remains essential. The first wave of the 2013 H7N9 outbreak in China demonstrated the value of swift coordinated action, including the timely dissemination of surveillance data, to limit further incursions of new viruses into the human population. Without developing similar response capacities in other areas at high risk of new virus introductions, we are only building expensive systems for watching the next pandemic unfold.\n",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "ee78d15a-64eb-4aa8-867d-ae6fca61798b",
+      "submission_id": "be2c3f38-32df-47f9-a28f-c490cc50f960",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sema Sgaier, Bill & Melinda Gates Foundation , India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03883.005](https://doi.org/10.7554/eLife.03883.005)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cImproving pandemic influenza risk assessment\u201d for consideration at eLife. Your article has been favorably evaluated by Prabhat Jha (Senior editor), Sema Sgaier (Reviewing editor), and two peer reviewers. There are only a few minor comments from the reviewers that we would like for you to address before publication.\n\n1) Author contributions: there are currently 25+ authors listed. One suggestion for you to consider is listing a few as main others and others as a group.\n\n2) Provide more references for the statements made throughout the paper; there are many statements where references would be helpful. Please review the text and address this where possible.\n\n3) Figure 2: Please change the label \u201cLevel of overall concern\u201d to \u201cLevel of public health concern/pandemic risk\u201d to be consistent with the figure legend.\n\n4) Abstract suggested change: \u201cit should become possible to predict pandemic potential from sequence data.\u201d\n",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f822bfb6-1f31-4a33-8072-0617799a78ff",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C1",
+      "claim": "Influenza virus genome sequencing is becoming cheaper, faster, and more readily available.",
+      "claim_type": "EXPLICIT",
+      "source": "As influenza virus genome sequencing becomes cheaper, faster, and more readily available, the ability to predict pandemic potential from sequence data could transform pandemic influenza risk assessment capabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a premise in the abstract without specific supporting data or citations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "8451eb31-95f2-4de5-9489-ebf73d98d22f",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C2",
+      "claim": "The relationships between virus genotype and phenotype are complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the complexities of the relationships between virus genotype and phenotype make such predictions extremely difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "bd7fe8ff-3138-4bca-b60a-3c1dd2b5eb23",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C3",
+      "claim": "Direct experimental assessment of human-to-human transmission of potential pandemic viruses is not feasible.",
+      "claim_type": "EXPLICIT",
+      "source": "For obvious reasons, direct experimental assessment of human-to-human transmission of potential pandemic viruses is not feasible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as self-evident knowledge based on ethical considerations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "8a75789d-24fb-4445-8c3f-b47aa30be280",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C4",
+      "claim": "Influenza viruses that have caused pandemics in humans transmit efficiently in ferret models.",
+      "claim_type": "EXPLICIT",
+      "source": "However, influenza viruses that have caused pandemics in humans have been shown to transmit efficiently in animal models (most commonly ferrets) (Chou et al., 2011, Yen et al., 2011), thus animal models are thought to be useful for examining the genetic changes in viruses that facilitate human-to-human transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chou et al., 2011 and Yen et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "f34116ed-10da-4f3d-8f07-81b3b01e739f",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C5",
+      "claim": "Animal models are useful for examining genetic changes in viruses that facilitate human-to-human transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "However, influenza viruses that have caused pandemics in humans have been shown to transmit efficiently in animal models (most commonly ferrets) (Chou et al., 2011, Yen et al., 2011), thus animal models are thought to be useful for examining the genetic changes in viruses that facilitate human-to-human transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that pandemic viruses transmit in animal models.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "e061ab4c-dc58-48a4-a295-65de97dadcb7",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C6",
+      "claim": "Genetic changes in the neuraminidase (NA) and matrix (M) gene segments acquired by the 2009 H1N1 pandemic virus lineage increased transmissibility in animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, several studies have shown that genetic changes in the neuraminidase (NA) and matrix (M) gene segments acquired by the virus lineage responsible for the 2009 H1N1 pandemic increased transmissibility in animal models (Chou et al., 2011, Lakdawala et al., 2011, Yen et al., 2011), suggesting that these changes may have played a role in enhancing the virus's transmissibility in humans and hence paved the way for pandemic emergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies (Chou et al., 2011, Lakdawala et al., 2011, Yen et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "c6337e66-7457-4ff8-8845-dc2956c70911",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C7",
+      "claim": "Genetic changes in NA and M gene segments may have enhanced the 2009 H1N1 virus's transmissibility in humans and facilitated pandemic emergence.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, several studies have shown that genetic changes in the neuraminidase (NA) and matrix (M) gene segments acquired by the virus lineage responsible for the 2009 H1N1 pandemic increased transmissibility in animal models (Chou et al., 2011, Lakdawala et al., 2011, Yen et al., 2011), suggesting that these changes may have played a role in enhancing the virus's transmissibility in humans and hence paved the way for pandemic emergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a speculation based on animal model data.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "b4496171-17a3-4ffa-aec5-cbaefc1d87b1",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C8",
+      "claim": "Animal experiments can provide quantitative measures of virus traits that can be integrated into quantitative risk assessment measures such as IRAT.",
+      "claim_type": "EXPLICIT",
+      "source": "When animal experiments provide quantitative measures of virus traits, these can be integrated into quantitative measures of risk assessment such as the IRAT (Trock et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Trock et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "0fc98b93-48bc-4622-b6b1-f24d7ae02262",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C9",
+      "claim": "Gain-of-function studies have attempted to prospectively identify new mutations in avian H5N1 viruses that enhance airborne transmission between ferrets.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, several high-profile and controversial gain-of-function (GoF) studies have attempted to go beyond the characterization of existing viruses to prospectively identify new mutations in avian H5N1 viruses that enhance the ability of these viruses to transmit between ferrets by the airborne route (Chen et al., 2012, Herfst et al., 2012, Imai et al., 2012, Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple GoF studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "efb013b1-5f03-4d55-949c-16d8e9b1cd34",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C10",
+      "claim": "There are more than 10^18 different possible five-mutation variants of any given hemagglutinin (HA).",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the vast size of genetic space, such studies cannot possibly delineate all genetic variants of a virus that might be transmissible\u2014after all, there are more than 1018 different possible five-mutation variants of any given hemagglutinin (HA), which is more than what can reasonably be assayed experimentally and the vast majority will not facilitate transmissibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on combinatorial mathematics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "811f6c90-19aa-42f4-8519-c4a9730d1f85",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C11",
+      "claim": "The vast majority of five-mutation variants of HA will not facilitate transmissibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the vast size of genetic space, such studies cannot possibly delineate all genetic variants of a virus that might be transmissible\u2014after all, there are more than 1018 different possible five-mutation variants of any given hemagglutinin (HA), which is more than what can reasonably be assayed experimentally and the vast majority will not facilitate transmissibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the understanding that most random mutations are not beneficial.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "e66f9c1e-d9d6-4317-a802-7d63076b0bfa",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C12",
+      "claim": "Switching receptor binding from avian-like \u03b12,3 sialic acid to human-like \u03b12,6 sialic acid linkages is a transmissibility trait identified by GoF studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmissibility traits identified by GoF studies to date include some that were already known (such as switching receptor binding from avian-like \u03b12,3 sialic acid to human-like \u03b12,6 sialic acid linkages (Yamada et al., 2006) and lowering the optimal temperature for viral polymerase activity (Massin et al., 2001)), as well as some that are new, such as increasing HA stability and reducing glycosylation on HA's globular head (Herfst et al., 2012, Imai et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yamada et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "ed565bc4-3752-40f6-952d-58272ba52bac",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C13",
+      "claim": "Lowering the optimal temperature for viral polymerase activity is a transmissibility trait identified by GoF studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmissibility traits identified by GoF studies to date include some that were already known (such as switching receptor binding from avian-like \u03b12,3 sialic acid to human-like \u03b12,6 sialic acid linkages (Yamada et al., 2006) and lowering the optimal temperature for viral polymerase activity (Massin et al., 2001)), as well as some that are new, such as increasing HA stability and reducing glycosylation on HA's globular head (Herfst et al., 2012, Imai et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Massin et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "52679a63-6aaa-4c3a-a059-2757cc499b0c",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C14",
+      "claim": "Increasing HA stability is a new transmissibility trait identified by GoF studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmissibility traits identified by GoF studies to date include some that were already known (such as switching receptor binding from avian-like \u03b12,3 sialic acid to human-like \u03b12,6 sialic acid linkages (Yamada et al., 2006) and lowering the optimal temperature for viral polymerase activity (Massin et al., 2001)), as well as some that are new, such as increasing HA stability and reducing glycosylation on HA's globular head (Herfst et al., 2012, Imai et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Herfst et al., 2012 and Imai et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "a7bf8b55-b706-43fa-a4c0-b73aab7832d3",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C15",
+      "claim": "Reducing glycosylation on HA's globular head is a new transmissibility trait identified by GoF studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmissibility traits identified by GoF studies to date include some that were already known (such as switching receptor binding from avian-like \u03b12,3 sialic acid to human-like \u03b12,6 sialic acid linkages (Yamada et al., 2006) and lowering the optimal temperature for viral polymerase activity (Massin et al., 2001)), as well as some that are new, such as increasing HA stability and reducing glycosylation on HA's globular head (Herfst et al., 2012, Imai et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Herfst et al., 2012 and Imai et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "34b53ec3-70e1-4fbf-9833-1bae936ac7d7",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C16",
+      "claim": "It is unclear whether the transmissibility traits identified in GoF studies are necessary or sufficient for transmissibility among humans or other mammalian animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether these traits are either necessary or sufficient for transmissibility among humans or even other mammalian animal models remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explicit limitation of current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "71f365bb-157e-44c0-ac34-2567237a3944",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C17",
+      "claim": "An avian H5N1 virus with internal genes reassorted from a 2009 pandemic virus became transmissible in guinea pigs despite retaining preference for \u03b12,3 sialic acid binding.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a recent study of an avian H5N1 virus found that by reassorting its internal genes with those of a 2009 pandemic virus, the virus could be rendered transmissible in guinea pigs (which have both \u03b12,6 and \u03b12,3 sialic acid in the upper respiratory tract) despite retaining a preference for binding \u03b12,3 sialic acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as a finding from a recent study, with citation to follow.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "0726ac40-c217-4463-959a-f136968d0ead",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C18",
+      "claim": "Guinea pigs have both \u03b12,6 and \u03b12,3 sialic acid in the upper respiratory tract.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a recent study of an avian H5N1 virus found that by reassorting its internal genes with those of a 2009 pandemic virus, the virus could be rendered transmissible in guinea pigs (which have both \u03b12,6 and \u03b12,3 sialic acid in the upper respiratory tract) despite retaining a preference for binding \u03b12,3 sialic acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about guinea pig biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "a1f30b87-6ce8-4240-95b4-6cd8c8c292c6",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C19",
+      "claim": "When mutations from ferret GoF experiments were used to switch H5N1 receptor specificity to \u03b12,6 sialic acid in a reassortant virus, transmissibility was lost.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when mutations identified in earlier ferret GoF experiments were used to switch the receptor specificity to \u03b12,6 sialic acid, transmissibility was lost (Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "ad8867b9-ada0-4d0d-8123-3ceafb12f513",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C20",
+      "claim": "The NA mutation H275Y consistently confers oseltamivir resistance on N1 neuraminidases.",
+      "claim_type": "EXPLICIT",
+      "source": "Some mutations have been shown to be strong markers for phenotype for well-defined collections of viruses\u2014for instance, the NA mutation H275Y consistently confers oseltamivir resistance on N1 neuraminidases (although the impact of the mutation on surface expression of NA, and thus virus fitness, varies dramatically) (Baz et al., 2010, Bloom et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Baz et al., 2010 and Bloom et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "76525ae9-bb4e-4b38-8389-da0417452708",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C21",
+      "claim": "The impact of the H275Y mutation on surface expression of NA and virus fitness varies dramatically.",
+      "claim_type": "EXPLICIT",
+      "source": "Some mutations have been shown to be strong markers for phenotype for well-defined collections of viruses\u2014for instance, the NA mutation H275Y consistently confers oseltamivir resistance on N1 neuraminidases (although the impact of the mutation on surface expression of NA, and thus virus fitness, varies dramatically) (Baz et al., 2010, Bloom et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Baz et al., 2010 and Bloom et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "aefc74d6-e7e9-45f7-8926-e37a59f8ab97",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C22",
+      "claim": "The PB2 E627K substitution adapts the viral polymerase to mammalian cells in some viruses but not others.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the PB2 E627K substitution adapts the viral polymerase to mammalian cells in some viruses (Long et al., 2013) but not others (Herfst et al., 2010), while other viruses have adapted to mammals via different substitutions in PB2 (Jagger et al., 2010, Mehle and Doudna, 2009; Zhu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Long et al., 2013 and Herfst et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "161e8a26-59b9-4917-b3e0-34bd604719e6",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C23",
+      "claim": "Some viruses have adapted to mammals via different substitutions in PB2 other than E627K.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the PB2 E627K substitution adapts the viral polymerase to mammalian cells in some viruses (Long et al., 2013) but not others (Herfst et al., 2010), while other viruses have adapted to mammals via different substitutions in PB2 (Jagger et al., 2010, Mehle and Doudna, 2009; Zhu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jagger et al., 2010, Mehle and Doudna, 2009, and Zhu et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "49fc85a8-7246-48da-b95c-51e5ee8a595f",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C24",
+      "claim": "The effects of cytotoxic T-lymphocyte escape mutations on nucleoprotein (NP) function depend on the stability of the parent protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In many cases, the effect of mutations can be highly sensitive to genetic context\u2014for instance, the effects of cytotoxic T-lymphocyte escape mutations on nucleoprotein (NP) function depend on the stability of the parent protein, which can be affected by at least dozens of other mutations (Gong et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gong et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "851c4a9d-6ca0-4c66-a8f0-76d46568d04e",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C25",
+      "claim": "The stability of the parent NP protein can be affected by at least dozens of other mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In many cases, the effect of mutations can be highly sensitive to genetic context\u2014for instance, the effects of cytotoxic T-lymphocyte escape mutations on nucleoprotein (NP) function depend on the stability of the parent protein, which can be affected by at least dozens of other mutations (Gong et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gong et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "f20ab652-8184-417d-8914-5ccdaf7f18d1",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C26",
+      "claim": "Context dependence has been shown for receptor binding specificity substitutions in H5N1 viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar patterns of context dependence have recently been shown for receptor binding specificity substitutions in H5N1 viruses (Tharakaraman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tharakaraman et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "8981ca45-cbd9-407a-a2b4-59ae011ea430",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C27",
+      "claim": "Computational methods have higher throughput, shorter turnaround times, are cheaper, and are safer than experimental work with whole virulent viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational methods present an attractive adjunct to experimental studies because they have higher throughput, have shorter turnaround times, are cheaper, and are safer than experimental work with whole virulent viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the advantages of computational methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "1e2a282d-0d78-4f3d-b333-da51bc9a52c8",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C28",
+      "claim": "The main drawback of computational methods is the largely unknown accuracy of their predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "The main drawback of computational methods is the largely unknown accuracy of their predictions\u2014a drawback that is exacerbated by the lack of an established framework for validating the accuracy of the numerous computational prediction methods that populate the literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation of computational methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "33748773-46e5-4b74-957e-020154fe3116",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C29",
+      "claim": "There is a lack of an established framework for validating the accuracy of computational prediction methods.",
+      "claim_type": "EXPLICIT",
+      "source": "The main drawback of computational methods is the largely unknown accuracy of their predictions\u2014a drawback that is exacerbated by the lack of an established framework for validating the accuracy of the numerous computational prediction methods that populate the literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known gap in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "d4edaac9-8a2f-480e-9566-ae96e1d68a56",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C30",
+      "claim": "Receptor-binding preference, antiviral susceptibility, antigenicity of HA and NA, and possibly T-cell epitopes are the elements of influenza pandemic risk assessment most amenable to computational prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "The elements of influenza pandemic risk assessment that are most amenable to computational prediction are those that correspond to well-defined, quantifiable molecular-scale traits such as receptor-binding preference, antiviral susceptibility, antigenicity of HA and NA, and possibly T-cell epitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an assessment of which traits are suitable for computational prediction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "3c3e6e4a-15d5-4503-8cab-36700d933220",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C31",
+      "claim": "Higher-level phenotypes such as transmissibility are not yet sufficiently well understood to be reasonable targets for computational predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher-level phenotypes such as transmissibility, that integrate phenomena at a range of scales, are not yet sufficiently well understood to be reasonable targets for computational predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of current understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "70d756e5-095d-4135-9146-826338d4850d",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C32",
+      "claim": "Molecular dynamics simulations that combine high- and low-fidelity models show promise for genotype-to-phenotype prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "A variety of computational methods shows promise for genotype-to-phenotype prediction including molecular dynamics simulations that combine high- and low-fidelity models (Amaro et al., 2009) and statistical learning approaches that use protein structure, dynamics, and sequence data to predict the phenotypic consequences of mutation (Kasson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Amaro et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "be0ba33a-a5a6-4c21-89cb-2bedc2f70000",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C33",
+      "claim": "Statistical learning approaches that use protein structure, dynamics, and sequence data show promise for predicting the phenotypic consequences of mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "A variety of computational methods shows promise for genotype-to-phenotype prediction including molecular dynamics simulations that combine high- and low-fidelity models (Amaro et al., 2009) and statistical learning approaches that use protein structure, dynamics, and sequence data to predict the phenotypic consequences of mutation (Kasson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kasson et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "4bbca89c-7e24-414d-9fce-0f32125367e1",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C34",
+      "claim": "Better prospective validation of computational tools against experimental data is essential before these tools can be reliably used for informing public health decisions or policymaking.",
+      "claim_type": "EXPLICIT",
+      "source": "However, better prospective validation of these tools against experimental data, particularly for exploring context dependency of genetic changes, is essential before these tools can be reliably used for informing public health decisions or policymaking (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement for future use of computational tools.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "1e409d0b-3a0d-4677-916c-c6a40e3d9af8",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C35",
+      "claim": "CASP-like exercises could spur cooperation between experimental and computational scientists to produce consistent testing and validation data.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible mechanism to spur cooperation would be a series of regular community assessment exercises similar to Critical Assessment of protein Structure Prediction (CASP) (Moult et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the CASP model, with citation to Moult et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "2671530b-46db-4cd0-812f-cbac9a8b0727",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C36",
+      "claim": "Thermophoretic or interferometric measurements of HA binding affinities to \u03b12,3- and \u03b12,6-sialoglycans are ideal experimental data sets for CASP-like exercises.",
+      "claim_type": "EXPLICIT",
+      "source": "Ideal experimental data sets for CASP-like exercises include thermophoretic or interferometric measurements of HA binding affinities to \u03b12,3- and \u03b12,6-sialoglycans (Xiong et al., 2013) and multi-method characterizations of viral pH activation shifts for sets of point mutants in HA (Galloway et al., 2013, Thoennes et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Xiong et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "28eb7dc0-056c-46fb-badb-808b9d6a8a7d",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C37",
+      "claim": "Multi-method characterizations of viral pH activation shifts for sets of point mutants in HA are ideal experimental data sets for CASP-like exercises.",
+      "claim_type": "EXPLICIT",
+      "source": "Ideal experimental data sets for CASP-like exercises include thermophoretic or interferometric measurements of HA binding affinities to \u03b12,3- and \u03b12,6-sialoglycans (Xiong et al., 2013) and multi-method characterizations of viral pH activation shifts for sets of point mutants in HA (Galloway et al., 2013, Thoennes et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Galloway et al., 2013 and Thoennes et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "ebc370db-ec45-4890-bbcd-f97bb1626953",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C38",
+      "claim": "Reliable computational prediction of biochemical traits from genetic data would be a major accomplishment.",
+      "claim_type": "EXPLICIT",
+      "source": "Reliable computational prediction of biochemical traits from genetic data would be a major accomplishment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an assessment of the significance of achieving this goal.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "e9d04fc9-0481-4e10-ac92-6a1be581ba5a",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C39",
+      "claim": "Further major developments, particularly computational prediction of total virus fitness in new hosts, would be required for realizing the utility of computational tools in policymaking.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it should be recognized that further major developments, particularly computational prediction of total virus fitness in new hosts, would still be required for realizing the utility of computational tools in policymaking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement for future utility of computational tools.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "44402a96-2165-401b-9f80-e33dd214baf1",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C40",
+      "claim": "There is a need for better understanding of the evolutionary mechanisms and pathways that allow adaptive mutations controlling host range to appear and rise in frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the genotype\u2013phenotype relationship itself, there is a need for better understanding of the evolutionary mechanisms and pathways that allow adaptive mutations controlling host range to appear and rise in frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "540503fd-8b16-4e17-88ee-72dc823b2e64",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C41",
+      "claim": "Evolutionary mechanisms act in reservoir hosts, in intermediate hosts (if any), and in humans or other potential hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "These mechanisms act in reservoir hosts, in intermediate hosts (if any), and in humans or other potential hosts; they also act at multiple scales, as viruses compete for replication within hosts and transmission between hosts (Park et al., 2013, Russell et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Park et al., 2013 and Russell et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "797836f5-4bbe-4e5d-a73b-56391ec517e2",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C42",
+      "claim": "Viruses compete for replication within hosts and transmission between hosts at multiple scales.",
+      "claim_type": "EXPLICIT",
+      "source": "These mechanisms act in reservoir hosts, in intermediate hosts (if any), and in humans or other potential hosts; they also act at multiple scales, as viruses compete for replication within hosts and transmission between hosts (Park et al., 2013, Russell et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Park et al., 2013 and Russell et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "38e59e98-ff03-4982-9798-424e27267e69",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C43",
+      "claim": "Developing better phylodynamic model frameworks for modeling virus host transfer and adaptation will require collaboration between theoreticians and experimentalists.",
+      "claim_type": "EXPLICIT",
+      "source": "Developing better phylodynamic model frameworks (Grenfell et al., 2004) for modeling virus host transfer and adaptation will require collaboration between theoreticians and experimentalists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement, with citation to Grenfell et al., 2004 for phylodynamic frameworks.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "82f56be9-911a-40c2-9783-83ab5f90d6da",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C44",
+      "claim": "There is tremendous variety in the structures of oligosaccharides displaying sialic acids and in the structure of the sialic acids in different avian hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in addition to the \u03b12,3 and \u03b12,6 linkages, there is a tremendous variety in the structures of oligosaccharides displaying the sialic acids and in the structure of the sialic acids in different avian hosts (Gambaryan et al., 2012, Jourdain et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gambaryan et al., 2012 and Jourdain et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "a3d41d67-3fcd-4dd0-911f-9c6fc0c7dc30",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C45",
+      "claim": "The binding specificity for each receptor variant form may affect the potential for different viruses to cross the species barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding specificity for each receptor variant form may affect the potential for different viruses to cross the species barrier or make the difference between causing severe or only mild disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation about the role of binding specificity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "24c928f5-ac21-4845-9607-c01d0ac008f4",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C46",
+      "claim": "The binding specificity for each receptor variant form may make the difference between causing severe or only mild disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding specificity for each receptor variant form may affect the potential for different viruses to cross the species barrier or make the difference between causing severe or only mild disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation about the role of binding specificity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "d79b1519-55f5-4a9c-a7b1-dc19b4b692f4",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C47",
+      "claim": "The acquisition of samples entering existing surveillance networks is largely ad hoc.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the acquisition of samples entering existing surveillance networks is largely ad hoc, exhibits substantial variation by host and geographical region, and only a small proportion of the data end up in the public domain (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation about current surveillance practices, with reference to Figure 3.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "18f6bb5e-8ff8-4a79-b9fd-cf9b58e37023",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C48",
+      "claim": "Sample acquisition in surveillance networks exhibits substantial variation by host and geographical region.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the acquisition of samples entering existing surveillance networks is largely ad hoc, exhibits substantial variation by host and geographical region, and only a small proportion of the data end up in the public domain (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation, with reference to Figure 3 showing geographic variation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "6c05699b-569c-4a12-81b1-b0cfe8f25770",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C49",
+      "claim": "Only a small proportion of surveillance data end up in the public domain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the acquisition of samples entering existing surveillance networks is largely ad hoc, exhibits substantial variation by host and geographical region, and only a small proportion of the data end up in the public domain (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation about data sharing practices, with reference to Figure 3.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "06a6fdc4-ece5-477c-b08d-80ff36ec44ca",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C50",
+      "claim": "Making non-human influenza surveillance more systematic by using statistical analysis to determine appropriate levels of coverage by geographic region and host species would facilitate early detection of viruses of concern.",
+      "claim_type": "EXPLICIT",
+      "source": "Making non-human influenza surveillance more systematic by using statistical analysis to determine appropriate levels of coverage by geographic region and host species would facilitate the early detection of viruses of concern and also have the potential to facilitate detection of evolutionary and epidemiological patterns of virus activity that warn of potential emergence events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a proposed benefit of systematic surveillance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "d91628ba-adb4-4777-8181-fbe80948dedc",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C51",
+      "claim": "Systematic surveillance has the potential to facilitate detection of evolutionary and epidemiological patterns of virus activity that warn of potential emergence events.",
+      "claim_type": "EXPLICIT",
+      "source": "Making non-human influenza surveillance more systematic by using statistical analysis to determine appropriate levels of coverage by geographic region and host species would facilitate the early detection of viruses of concern and also have the potential to facilitate detection of evolutionary and epidemiological patterns of virus activity that warn of potential emergence events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a proposed benefit of systematic surveillance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "e93447a4-0834-430b-9a00-20e1a465e78f",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C52",
+      "claim": "There are large regions of the world and many animal populations for which little or no surveillance is performed.",
+      "claim_type": "EXPLICIT",
+      "source": "There are large regions of the world and many animal populations for which little or no surveillance is performed but where significant animal influenza diversity can be inferred to exist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about surveillance gaps.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "3bcc8856-3d07-418f-ad36-fbf452ac9bb6",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C53",
+      "claim": "Significant animal influenza diversity can be inferred to exist in regions where little or no surveillance is performed.",
+      "claim_type": "EXPLICIT",
+      "source": "There are large regions of the world and many animal populations for which little or no surveillance is performed but where significant animal influenza diversity can be inferred to exist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference about viral diversity in under-surveilled regions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "96612107-ed5c-4891-b479-d7195380b2ce",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C54",
+      "claim": "Systematic assessments of surveillance by geographic area and host species would help identify major gaps where surveillance is either non-existent or unlikely to be sufficient for timely detection of viruses of concern.",
+      "claim_type": "EXPLICIT",
+      "source": "Systematic assessments of surveillance by geographic area and host species, similar to efforts for malaria (Gething et al., 2012, 2011, Hay et al., 2010, Sinka et al., 2012) and dengue (Bhatt et al., 2013), would help to identify major gaps where surveillance is either non-existent or unlikely to be sufficient for timely detection of viruses of concern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a proposed benefit, with citations to similar efforts for malaria and dengue.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "8a6156e3-63e6-4dfa-acd9-70b0c7deea17",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C55",
+      "claim": "The sudden proliferation of a previously rare virus subtype could indicate the emergence of new viral variants in non-human hosts that should be prioritized for further study.",
+      "claim_type": "EXPLICIT",
+      "source": "Substantial changes, such as the sudden proliferation of a previously rare virus subtype or of a virus with an H9N2 internal gene cassette (Gao et al., 2013, Garc\u00cca-Sastre and Schmolke, 2014; Guan et al., 1999), could indicate the emergence of new viral variants in non-human hosts that should be prioritized for further study even before the detection of human infections of zoonotic origin (Vijaykrishna et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference about what surveillance changes might indicate, with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "6a15de3b-56a1-464c-a113-fa68a95ee29c",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C56",
+      "claim": "The sudden proliferation of a virus with an H9N2 internal gene cassette could indicate the emergence of new viral variants in non-human hosts that should be prioritized for further study.",
+      "claim_type": "EXPLICIT",
+      "source": "Substantial changes, such as the sudden proliferation of a previously rare virus subtype or of a virus with an H9N2 internal gene cassette (Gao et al., 2013, Garc\u00cca-Sastre and Schmolke, 2014; Guan et al., 1999), could indicate the emergence of new viral variants in non-human hosts that should be prioritized for further study even before the detection of human infections of zoonotic origin (Vijaykrishna et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference, with citations to Gao et al., 2013, Garc\u00eda-Sastre and Schmolke, 2014, Guan et al., 1999, and Vijaykrishna et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "19fb3104-9150-404f-b65d-22a6ca50a867",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C57",
+      "claim": "Detection systems for changes in virus activity patterns would require sampling of animals with no obvious signs of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "To be useful from a human health perspective such detection systems would require sampling of animals with no obvious signs of infection, routine assessment of particular genetic signatures or full genome sequencing, and near real-time sharing of these data; these activities all present potential financial, political, and logistical constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement for effective detection systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "4d8f8047-5fed-4dd8-b1d0-e2dfa7a4d8e4",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C58",
+      "claim": "Detection systems for changes in virus activity patterns would require routine assessment of particular genetic signatures or full genome sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "To be useful from a human health perspective such detection systems would require sampling of animals with no obvious signs of infection, routine assessment of particular genetic signatures or full genome sequencing, and near real-time sharing of these data; these activities all present potential financial, political, and logistical constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement for effective detection systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "da73d83e-89ff-4852-9028-c40c1c7ba3a2",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C59",
+      "claim": "Detection systems for changes in virus activity patterns would require near real-time sharing of data.",
+      "claim_type": "EXPLICIT",
+      "source": "To be useful from a human health perspective such detection systems would require sampling of animals with no obvious signs of infection, routine assessment of particular genetic signatures or full genome sequencing, and near real-time sharing of these data; these activities all present potential financial, political, and logistical constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a requirement for effective detection systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "5be364cf-5583-4783-8f6f-af542c05d43b",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C60",
+      "claim": "Enhanced surveillance activities present potential financial, political, and logistical constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "To be useful from a human health perspective such detection systems would require sampling of animals with no obvious signs of infection, routine assessment of particular genetic signatures or full genome sequencing, and near real-time sharing of these data; these activities all present potential financial, political, and logistical constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recognition of practical limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "6cdb2959-1e5a-42c9-bfc2-aebb8ceb1e72",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C61",
+      "claim": "Further development of surveillance infrastructure in some geographic locations and host species is likely to be unpopular or unfeasible due to economic disincentives for disease detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Further development of surveillance infrastructure in some geographic locations and host species is likely to be unpopular or unfeasible due to economic disincentives for disease detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recognition of economic barriers to surveillance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "061c18e3-3724-4ce1-af95-f2aa05ba45d9",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C62",
+      "claim": "The geographic movements of many non-human influenza hosts via migration or trade make it possible to identify surrogate sources of information.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the geographic movements of many non-human influenza hosts, via migration or trade, make it possible to identify surrogate sources of information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about alternative surveillance strategies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "d2a17749-a614-4ba8-98bc-632aa7de3b8e",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C63",
+      "claim": "It has been possible to make inferences about swine influenza virus activity in some parts of mainland China based only on data from Hong Kong by linking virological and serological data.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, by linking virological and serological data, it has been possible to make inferences about swine influenza virus activity in some parts of mainland China based only on the data from Hong Kong (Strelioff et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Strelioff et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "db929810-f06e-43ea-90b9-8926d0d7f073",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C64",
+      "claim": "Phylodynamic reconstructions from even a relatively small number of samples are capable of revealing lineages that are proliferating.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylodynamic reconstructions from even a relatively small number of samples are capable of revealing lineages that are proliferating (Grenfell et al., 2004, Pybus and Rambaut, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Grenfell et al., 2004 and Pybus and Rambaut, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "f0c0893e-bc72-4340-8da5-025e2006c12f",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C65",
+      "claim": "Phylogenetic methods can be used to reveal gaps in surveillance.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic methods can be used to reveal gaps in surveillance (Smith et al., 2009, Vijaykrishna et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Smith et al., 2009 and Vijaykrishna et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "7af14ca7-a490-4659-97c7-e6866c0b0a88",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C66",
+      "claim": "Genetic similarity between viruses in different locations or host species can identify drivers of transmission between populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic similarity between viruses in different locations or host species can identify drivers of transmission between populations (Faria et al., 2013, Lemey et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Faria et al., 2013 and Lemey et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "335dc413-185d-4792-aaff-c2175a13d1e7",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C67",
+      "claim": "Data on negative samples would provide valuable denominators for estimating the prevalence of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Data on negative samples would provide valuable denominators for estimating the prevalence of infection: tracking infection rates through time would give a window into transmission dynamics and allow investigation of mechanisms underlying virus circulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a benefit of collecting negative sample data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "2af6663c-343f-4fa8-9749-e4b7bd70fc22",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C68",
+      "claim": "Tracking infection rates through time would give a window into transmission dynamics and allow investigation of mechanisms underlying virus circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Data on negative samples would provide valuable denominators for estimating the prevalence of infection: tracking infection rates through time would give a window into transmission dynamics and allow investigation of mechanisms underlying virus circulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a benefit of tracking infection rates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "fd693968-e3f3-49d4-a3be-d2f6883d08dc",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C69",
+      "claim": "The Influenza Research Database (IRD) includes an animal surveillance database that contains negative test data.",
+      "claim_type": "EXPLICIT",
+      "source": "The Influenza Research Database (IRD) (http://www.fludb.org) includes an animal surveillance database that contains negative test data but the amount of data is extremely limited compared to the global scale of ongoing surveillance activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the IRD database.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "98d5665c-f45c-4c20-b890-e9b20720510b",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C70",
+      "claim": "The amount of negative test data in the IRD is extremely limited compared to the global scale of ongoing surveillance activities.",
+      "claim_type": "EXPLICIT",
+      "source": "The Influenza Research Database (IRD) (http://www.fludb.org) includes an animal surveillance database that contains negative test data but the amount of data is extremely limited compared to the global scale of ongoing surveillance activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about data availability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "680e04a1-004e-456b-ad08-71a416685379",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C71",
+      "claim": "It is currently not possible to predict which non-human influenza A virus will cause the next pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "It is currently not possible to predict which non-human influenza A virus will cause the next pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of current capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "cc315e8c-031f-40a0-9241-2aa1895d8014",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C72",
+      "claim": "Reducing the impact of the next pandemic will rely on early detection and mitigation strategies that slow the early spread to allow more preparatory work to be done.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing the impact of the next pandemic will rely on early detection and mitigation strategies that slow the early spread to allow more preparatory work to be done.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a strategy for pandemic preparedness.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "1119fdd4-0d9b-4e47-abaf-e7ea8d7ff50f",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C73",
+      "claim": "The integration of experimental data with computational methods and mathematical models in conjunction with refinements to surveillance methodology will increase the feasibility of genotype-to-phenotype based assessments.",
+      "claim_type": "EXPLICIT",
+      "source": "The integration of further experimental data with computational methods and mathematical models in conjunction with refinements to surveillance methodology will increase the feasibility of genotype-to-phenotype based assessments, increase the power of tools for more objectively assessing pandemic risk and decrease the time required for assessing the pandemic threat posed by extant non-human influenza A viruses\u2014all of which can inform strategies to help mitigate the impact of the next pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction about future capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "7392b9d0-2d87-4634-8786-7b2854118f04",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C74",
+      "claim": "The integration of experimental data with computational methods and mathematical models will increase the power of tools for more objectively assessing pandemic risk.",
+      "claim_type": "EXPLICIT",
+      "source": "The integration of further experimental data with computational methods and mathematical models in conjunction with refinements to surveillance methodology will increase the feasibility of genotype-to-phenotype based assessments, increase the power of tools for more objectively assessing pandemic risk and decrease the time required for assessing the pandemic threat posed by extant non-human influenza A viruses\u2014all of which can inform strategies to help mitigate the impact of the next pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction about future capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "22d4a217-be21-4555-89d5-c66880aa1ec1",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C75",
+      "claim": "The integration of experimental data with computational methods and mathematical models will decrease the time required for assessing the pandemic threat posed by extant non-human influenza A viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "The integration of further experimental data with computational methods and mathematical models in conjunction with refinements to surveillance methodology will increase the feasibility of genotype-to-phenotype based assessments, increase the power of tools for more objectively assessing pandemic risk and decrease the time required for assessing the pandemic threat posed by extant non-human influenza A viruses\u2014all of which can inform strategies to help mitigate the impact of the next pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction about future capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "54b4f724-8091-493d-a584-a0210678ed47",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C76",
+      "claim": "The 2009 H1N1 pandemic virus emerged in humans despite the perceived risks of highly pathogenic H5N1 viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the perceived risks of highly pathogenic H5N1 viruses, the emergence of the 2009 H1N1 pandemic virus in humans, the increasing incidence of human infection with H7N9 viruses in China since 2013, and the first documented human infections with H6N1 (Wei et al., 2013) and H10N8 (Chen et al., 2014) viruses highlight the importance of remaining vigilant against as-yet unrecognized high-risk viruses and the value of surveillance for influenza viruses in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical fact.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "7302f3ce-726b-417e-8388-5a29dbe8b73e",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C77",
+      "claim": "There has been increasing incidence of human infection with H7N9 viruses in China since 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the perceived risks of highly pathogenic H5N1 viruses, the emergence of the 2009 H1N1 pandemic virus in humans, the increasing incidence of human infection with H7N9 viruses in China since 2013, and the first documented human infections with H6N1 (Wei et al., 2013) and H10N8 (Chen et al., 2014) viruses highlight the importance of remaining vigilant against as-yet unrecognized high-risk viruses and the value of surveillance for influenza viruses in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about recent epidemiological trends.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "1851d92e-e5d2-4644-add3-89c4e4873f7f",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C78",
+      "claim": "The first documented human infections with H6N1 virus occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the perceived risks of highly pathogenic H5N1 viruses, the emergence of the 2009 H1N1 pandemic virus in humans, the increasing incidence of human infection with H7N9 viruses in China since 2013, and the first documented human infections with H6N1 (Wei et al., 2013) and H10N8 (Chen et al., 2014) viruses highlight the importance of remaining vigilant against as-yet unrecognized high-risk viruses and the value of surveillance for influenza viruses in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wei et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "30713eed-bb2c-4a55-b1d3-7ccf2355a2b4",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C79",
+      "claim": "The first documented human infections with H10N8 virus occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the perceived risks of highly pathogenic H5N1 viruses, the emergence of the 2009 H1N1 pandemic virus in humans, the increasing incidence of human infection with H7N9 viruses in China since 2013, and the first documented human infections with H6N1 (Wei et al., 2013) and H10N8 (Chen et al., 2014) viruses highlight the importance of remaining vigilant against as-yet unrecognized high-risk viruses and the value of surveillance for influenza viruses in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "07ea6070-908e-47a5-ac16-508a6f12439c",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C80",
+      "claim": "Recent emergence events highlight the importance of remaining vigilant against as-yet unrecognized high-risk viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the perceived risks of highly pathogenic H5N1 viruses, the emergence of the 2009 H1N1 pandemic virus in humans, the increasing incidence of human infection with H7N9 viruses in China since 2013, and the first documented human infections with H6N1 (Wei et al., 2013) and H10N8 (Chen et al., 2014) viruses highlight the importance of remaining vigilant against as-yet unrecognized high-risk viruses and the value of surveillance for influenza viruses in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the pattern of unexpected virus emergences.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "9326837a-5d9d-4d6f-881c-abef689fe579",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C81",
+      "claim": "Recent emergence events highlight the value of surveillance for influenza viruses in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the perceived risks of highly pathogenic H5N1 viruses, the emergence of the 2009 H1N1 pandemic virus in humans, the increasing incidence of human infection with H7N9 viruses in China since 2013, and the first documented human infections with H6N1 (Wei et al., 2013) and H10N8 (Chen et al., 2014) viruses highlight the importance of remaining vigilant against as-yet unrecognized high-risk viruses and the value of surveillance for influenza viruses in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the pattern of virus emergences.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "a526f526-be55-4136-9cd1-a596a9847d61",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C82",
+      "claim": "The first wave of the 2013 H7N9 outbreak in China demonstrated the value of swift coordinated action to limit further incursions of new viruses into the human population.",
+      "claim_type": "EXPLICIT",
+      "source": "The first wave of the 2013 H7N9 outbreak in China demonstrated the value of swift coordinated action, including the timely dissemination of surveillance data, to limit further incursions of new viruses into the human population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a lesson learned from the H7N9 outbreak response.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "93c343d3-c648-47b8-88ae-abd306fc6ca3",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C83",
+      "claim": "Timely dissemination of surveillance data is part of swift coordinated action to limit virus incursions into the human population.",
+      "claim_type": "EXPLICIT",
+      "source": "The first wave of the 2013 H7N9 outbreak in China demonstrated the value of swift coordinated action, including the timely dissemination of surveillance data, to limit further incursions of new viruses into the human population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a component of effective outbreak response.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "211f720d-90af-4627-bc89-e71239edf116",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C84",
+      "claim": "Without developing surveillance-based outbreak response capacity in areas at high risk of new virus introductions, we are only building expensive systems for watching the next pandemic unfold.",
+      "claim_type": "EXPLICIT",
+      "source": "Without developing similar response capacities in other areas at high risk of new virus introductions, we are only building expensive systems for watching the next pandemic unfold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a warning about the limitations of surveillance without response capacity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "7b938477-41a9-428c-9225-6ec99a5b1d9d",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C85",
+      "claim": "Numbers of influenza virus sequences in public databases are not representative of influenza virus surveillance activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Numbers of influenza virus sequences are not representative of influenza virus surveillance activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Figure 3 caption as a caveat about interpreting the data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "b8b2c396-3e22-4fdd-a83d-8015bcd31e5d",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C86",
+      "claim": "Most countries do not sequence every influenza virus isolate.",
+      "claim_type": "EXPLICIT",
+      "source": "Most countries do not sequence every influenza virus isolate and some countries conduct virological surveillance without sharing sequence data publicly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about surveillance practices in the Figure 3 caption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "fb9d891f-758f-4f68-9ee7-2bd3b51aa3c3",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C87",
+      "claim": "Some countries conduct virological surveillance without sharing sequence data publicly.",
+      "claim_type": "EXPLICIT",
+      "source": "Most countries do not sequence every influenza virus isolate and some countries conduct virological surveillance without sharing sequence data publicly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about data sharing practices in the Figure 3 caption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "c3fed728-066f-4963-9cb3-524507f13deb",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C88",
+      "claim": "Sequences deposited in public databases can reflect uneven geographic distribution and interest regarding viruses of concern such as H5N1 and H9N2.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequences deposited in public databases can reflect uneven geographic distribution and interest regarding viruses of concern such as H5N1 and H9N2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about biases in public sequence databases in the Figure 3 caption.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "f66e3814-e5d4-4655-9ba4-fede5cab968a",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C89",
+      "claim": "Figure 3A shows proportions of worldwide animal population by country.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) Proportions of worldwide animal population by country (data from the Food and Agriculture Organization of the United Nations).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This describes the content of Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "75b9cebc-c7c1-4f73-b37c-f8017d2e5655",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "claim_id": "C90",
+      "claim": "Figure 3B shows the number of unique influenza viruses for which sequence data exists in public databases from poultry or swine by country.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Number of unique influenza viruses for which sequence data exists in public databases from poultry or swine by country.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This describes the content of Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ed2f307d-ea4a-49cf-b761-80cf78c4b027",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Animal models, particularly ferrets, are useful for examining genetic changes that facilitate human-to-human transmission of influenza viruses. Pandemic viruses transmit efficiently in ferret models, and genetic changes in NA and M gene segments of the 2009 H1N1 virus increased transmissibility in animal models, suggesting these changes may have enhanced human transmissibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 are well-supported by multiple citations to experimental studies. C7 appropriately presents the human relevance as speculation based on animal model data. C8 connects these findings to risk assessment frameworks with appropriate citation. The logical progression from animal model validation to specific genetic findings to risk assessment application is coherent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "a7495fae-62b0-4339-bf2d-255ae5811d77",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Gain-of-function studies have identified transmissibility traits in H5N1 viruses, including both previously known traits (receptor binding switch, polymerase temperature adaptation) and novel traits (HA stability, reduced glycosylation). However, the vast genetic space makes comprehensive exploration impossible, and whether these traits are necessary or sufficient for human transmissibility remains unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C12-C15 are supported by appropriate citations to GoF studies. C10-C11 provide valid mathematical reasoning about genetic space limitations. C16 explicitly acknowledges the key uncertainty about necessity and sufficiency, which is scientifically appropriate. The result accurately represents both the findings and their limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "b68da460-76cd-4522-9e05-cf7d1cc7a0b7",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "An H5N1 virus with reassorted internal genes from 2009 pandemic virus became transmissible in guinea pigs while retaining \u03b12,3 sialic acid binding preference, but introducing mutations to switch receptor specificity to \u03b12,6 abolished transmissibility, demonstrating context-dependent effects of receptor binding mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17 and C19 are supported by citation to Zhang et al., 2013. C18 provides relevant biological context about guinea pig receptor distribution. This result effectively demonstrates that receptor binding specificity alone does not determine transmissibility and that genetic context matters, which is a key finding challenging simplified models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "baf04426-0820-462b-864c-8fb1cb2683c0",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The effects of specific mutations on viral phenotypes are highly context-dependent. While some mutations like H275Y consistently confer oseltamivir resistance, others like PB2 E627K show variable effects across different viral backgrounds. Mutation effects can depend on protein stability and dozens of other mutations in the genetic background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All claims are supported by appropriate citations (C20-C21: Baz et al., Bloom et al.; C22-C23: Long et al., Herfst et al., Jagger et al., Mehle and Doudna, Zhu et al.; C24-C25: Gong et al.; C26: Tharakaraman et al.). The result accurately synthesizes evidence for genetic context dependence, which is critical for understanding genotype-phenotype relationships.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "9b7671fd-6134-4e86-a3d4-7d6b3eba8fbe",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Computational methods offer advantages over experimental approaches (higher throughput, speed, cost, safety) but suffer from unknown prediction accuracy and lack of validation frameworks. Molecular-scale traits like receptor binding and antiviral susceptibility are most amenable to computational prediction, while higher-level phenotypes like transmissibility are not yet sufficiently understood for reliable prediction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 accurately describe established knowledge about computational method advantages and limitations. C30-C31 provide reasonable assessments of which phenotypes are tractable for computational prediction based on current understanding. The distinction between molecular-scale and higher-level phenotypes is scientifically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "6b8a72e0-c2a2-451f-96db-1635ea6bd1d3",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Promising computational approaches for genotype-to-phenotype prediction include molecular dynamics simulations and statistical learning methods, but these require better prospective validation before use in policymaking. CASP-like community assessment exercises using quantitative experimental data (HA binding affinities, pH activation profiles) could facilitate validation and improvement of computational tools.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 cite specific computational approaches with appropriate references. C34 correctly identifies validation as essential before policy application. C35-C37 propose a reasonable validation framework modeled on CASP with appropriate experimental datasets cited. C38-C39 appropriately temper expectations about what computational prediction can currently achieve. This represents a well-reasoned proposal for advancing the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "7b158522-8045-42f3-941f-cd4ae1de6d5b",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Better understanding of evolutionary mechanisms controlling host range adaptation is needed, including how adaptive mutations appear and rise in frequency across reservoir hosts, intermediate hosts, and potential human hosts. These mechanisms operate at multiple scales as viruses compete within and between hosts. Developing improved phylodynamic models will require collaboration between theoreticians and experimentalists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 identify important gaps in understanding evolutionary mechanisms with appropriate citations (Park et al., Russell et al.). C43 proposes a reasonable collaborative approach with citation to phylodynamic frameworks (Grenfell et al.). The result accurately identifies a key research need and proposes an appropriate methodological approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "668cbf81-a815-4345-971d-a6ca8e7d7c55",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Beyond simple \u03b12,3 and \u03b12,6 linkages, there is tremendous variety in oligosaccharide structures and sialic acid forms across avian hosts. Binding specificity for different receptor variants may affect species barrier crossing potential and disease severity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is supported by citations to Gambaryan et al. and Jourdain et al. documenting receptor diversity. Claims C45-C46 appropriately present the functional implications as speculation rather than established fact. This result highlights an important complexity in receptor biology that challenges oversimplified models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "c57b3f6e-0cf5-496c-b300-d43beaa0b72d",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Current influenza surveillance in animal populations is largely ad hoc, exhibits substantial geographic and host variation, and results in limited public data sharing. Figure 3 shows disparities between animal population distributions and available sequence data, though sequence numbers do not fully represent surveillance activities since not all isolates are sequenced and some surveillance data are not shared publicly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 describe surveillance limitations with reference to Figure 3. Claims C85-C88 provide important caveats about interpreting sequence data as a proxy for surveillance. Claims C89-C90 describe Figure 3 content. The result accurately characterizes current surveillance limitations while acknowledging the complexity of interpreting available data. Figure 3 provides visual evidence supporting geographic disparities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "3f3331c0-e868-438f-bc84-ce45eff5d2d1",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Making non-human influenza surveillance more systematic through statistical analysis to determine appropriate geographic and host species coverage would facilitate early detection of concerning viruses and detection of evolutionary/epidemiological patterns warning of emergence events. Systematic assessments similar to those for malaria and dengue would help identify surveillance gaps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 present reasonable inferences about benefits of systematic surveillance. Claims C52-C53 identify surveillance gaps. C54 proposes systematic assessment with citations to analogous efforts for other diseases (malaria, dengue). The proposed approach is logical and builds on established methods from other disease systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "bf8f8c63-aae3-47ad-b4d1-88f613eedad2",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Sudden proliferation of previously rare virus subtypes or viruses with H9N2 internal genes could indicate emergence of new variants warranting prioritization for study. Effective detection systems would require sampling asymptomatic animals, routine genetic assessment/sequencing, and real-time data sharing, but face financial, political, and logistical constraints including economic disincentives for disease detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 present reasonable inferences about surveillance signals with appropriate citations. Claims C57-C59 identify logical requirements for effective detection systems. Claims C60-C61 acknowledge realistic practical constraints. The result accurately describes both the potential and limitations of enhanced surveillance approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "01dd0626-da81-4d33-b846-80690bfcec6a",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Host movements via migration or trade enable surrogate surveillance approaches. Phylodynamic and phylogenetic methods can reveal proliferating lineages, surveillance gaps, and transmission drivers between populations, even from relatively small sample sizes. For example, Hong Kong data has enabled inferences about mainland China swine influenza activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 identifies alternative surveillance strategies. C63 provides a concrete example with citation (Strelioff et al.). Claims C64-C66 describe phylogenetic/phylodynamic capabilities with appropriate citations (Grenfell et al., Pybus and Rambaut, Smith et al., Vijaykrishna et al., Faria et al., Lemey et al.). The result demonstrates how analytical methods can maximize information from limited surveillance data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "7da04f1a-40c5-4754-ae9e-361fdb9381a9",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Negative sample data would provide valuable denominators for estimating infection prevalence and understanding transmission dynamics. While the Influenza Research Database includes an animal surveillance database with negative test data, the amount is extremely limited compared to global surveillance activities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 present logical inferences about the value of negative sample data for epidemiological analysis. Claims C69-C70 accurately describe current data availability limitations. The result identifies an important gap in current surveillance data collection and sharing practices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "86dbdc44-eef5-4d32-8522-a60041dbcc32",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "It is currently impossible to predict which non-human influenza A virus will cause the next pandemic. Pandemic impact reduction will rely on early detection and mitigation to slow spread. Integration of experimental data, computational methods, mathematical models, and improved surveillance will increase feasibility of genotype-to-phenotype assessments, improve pandemic risk assessment tools, and decrease threat assessment time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 accurately states current predictive limitations. C72 presents a reasonable mitigation strategy. Claims C73-C75 present logical inferences about how integrated approaches could improve capabilities. These are appropriately framed as future possibilities rather than current capabilities. The result provides a realistic assessment of current limitations and future directions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "56ea2ef2-2e06-4665-854e-66c4b944daf7",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Despite focus on H5N1 risks, the 2009 H1N1 pandemic emerged unexpectedly, and recent years have seen increasing H7N9 infections in China and first documented human infections with H6N1 and H10N8 viruses. These emergence events highlight the importance of vigilance against unrecognized high-risk viruses and the value of human influenza surveillance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 state historical facts about virus emergence. Claims C78-C79 are supported by appropriate citations (Wei et al., Chen et al.). Claims C80-C81 draw reasonable inferences about the implications for surveillance. The result effectively uses historical examples to support the need for broad surveillance rather than narrow focus on perceived threats.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "c1e06b11-7373-4b8e-8a20-f264e9f8dbc7",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The 2013 H7N9 outbreak response in China demonstrated the value of swift coordinated action including timely surveillance data dissemination for limiting virus incursions. Without developing similar outbreak response capacity in other high-risk areas, surveillance systems merely enable watching pandemics unfold rather than preventing them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 cite a concrete example of effective outbreak response. C84 draws a logical inference about the limitations of surveillance without response capacity. The result effectively argues that surveillance must be coupled with response capability to be truly valuable for pandemic prevention.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    },
+    {
+      "id": "db7f1aeb-5435-47fb-a0cc-4a50b40f6923",
+      "content_id": "4e3d20b1-b311-4757-bca9-a603fc18c5f3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Influenza genome sequencing is becoming cheaper, faster, and more available, potentially transforming pandemic risk assessment through sequence-based predictions. However, the complex relationships between virus genotype and phenotype make such predictions extremely difficult, and direct experimental assessment of human-to-human transmission of potential pandemic viruses is not feasible for ethical reasons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 accurately describe established trends and challenges in the field. C3 states self-evident ethical constraints. These claims provide appropriate context for the manuscript's focus on alternative approaches to pandemic risk assessment. The result accurately frames the motivation and challenges for the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:39:05.636856Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8a75789d-24fb-4445-8c3f-b47aa30be280",
+      "result_id": "ed2f307d-ea4a-49cf-b761-80cf78c4b027"
+    },
+    {
+      "claim_id": "f34116ed-10da-4f3d-8f07-81b3b01e739f",
+      "result_id": "ed2f307d-ea4a-49cf-b761-80cf78c4b027"
+    },
+    {
+      "claim_id": "e061ab4c-dc58-48a4-a295-65de97dadcb7",
+      "result_id": "ed2f307d-ea4a-49cf-b761-80cf78c4b027"
+    },
+    {
+      "claim_id": "c6337e66-7457-4ff8-8845-dc2956c70911",
+      "result_id": "ed2f307d-ea4a-49cf-b761-80cf78c4b027"
+    },
+    {
+      "claim_id": "b4496171-17a3-4ffa-aec5-cbaefc1d87b1",
+      "result_id": "ed2f307d-ea4a-49cf-b761-80cf78c4b027"
+    },
+    {
+      "claim_id": "0fc98b93-48bc-4622-b6b1-f24d7ae02262",
+      "result_id": "a7495fae-62b0-4339-bf2d-255ae5811d77"
+    },
+    {
+      "claim_id": "efb013b1-5f03-4d55-949c-16d8e9b1cd34",
+      "result_id": "a7495fae-62b0-4339-bf2d-255ae5811d77"
+    },
+    {
+      "claim_id": "811f6c90-19aa-42f4-8519-c4a9730d1f85",
+      "result_id": "a7495fae-62b0-4339-bf2d-255ae5811d77"
+    },
+    {
+      "claim_id": "e66f9c1e-d9d6-4317-a802-7d63076b0bfa",
+      "result_id": "a7495fae-62b0-4339-bf2d-255ae5811d77"
+    },
+    {
+      "claim_id": "ed565bc4-3752-40f6-952d-58272ba52bac",
+      "result_id": "a7495fae-62b0-4339-bf2d-255ae5811d77"
+    },
+    {
+      "claim_id": "52679a63-6aaa-4c3a-a059-2757cc499b0c",
+      "result_id": "a7495fae-62b0-4339-bf2d-255ae5811d77"
+    },
+    {
+      "claim_id": "a7bf8b55-b706-43fa-a4c0-b73aab7832d3",
+      "result_id": "a7495fae-62b0-4339-bf2d-255ae5811d77"
+    },
+    {
+      "claim_id": "34b53ec3-70e1-4fbf-9833-1bae936ac7d7",
+      "result_id": "a7495fae-62b0-4339-bf2d-255ae5811d77"
+    },
+    {
+      "claim_id": "71f365bb-157e-44c0-ac34-2567237a3944",
+      "result_id": "b68da460-76cd-4522-9e05-cf7d1cc7a0b7"
+    },
+    {
+      "claim_id": "0726ac40-c217-4463-959a-f136968d0ead",
+      "result_id": "b68da460-76cd-4522-9e05-cf7d1cc7a0b7"
+    },
+    {
+      "claim_id": "a1f30b87-6ce8-4240-95b4-6cd8c8c292c6",
+      "result_id": "b68da460-76cd-4522-9e05-cf7d1cc7a0b7"
+    },
+    {
+      "claim_id": "ad8867b9-ada0-4d0d-8123-3ceafb12f513",
+      "result_id": "baf04426-0820-462b-864c-8fb1cb2683c0"
+    },
+    {
+      "claim_id": "76525ae9-bb4e-4b38-8389-da0417452708",
+      "result_id": "baf04426-0820-462b-864c-8fb1cb2683c0"
+    },
+    {
+      "claim_id": "aefc74d6-e7e9-45f7-8926-e37a59f8ab97",
+      "result_id": "baf04426-0820-462b-864c-8fb1cb2683c0"
+    },
+    {
+      "claim_id": "161e8a26-59b9-4917-b3e0-34bd604719e6",
+      "result_id": "baf04426-0820-462b-864c-8fb1cb2683c0"
+    },
+    {
+      "claim_id": "49fc85a8-7246-48da-b95c-51e5ee8a595f",
+      "result_id": "baf04426-0820-462b-864c-8fb1cb2683c0"
+    },
+    {
+      "claim_id": "851c4a9d-6ca0-4c66-a8f0-76d46568d04e",
+      "result_id": "baf04426-0820-462b-864c-8fb1cb2683c0"
+    },
+    {
+      "claim_id": "f20ab652-8184-417d-8914-5ccdaf7f18d1",
+      "result_id": "baf04426-0820-462b-864c-8fb1cb2683c0"
+    },
+    {
+      "claim_id": "8981ca45-cbd9-407a-a2b4-59ae011ea430",
+      "result_id": "9b7671fd-6134-4e86-a3d4-7d6b3eba8fbe"
+    },
+    {
+      "claim_id": "1e2a282d-0d78-4f3d-b333-da51bc9a52c8",
+      "result_id": "9b7671fd-6134-4e86-a3d4-7d6b3eba8fbe"
+    },
+    {
+      "claim_id": "33748773-46e5-4b74-957e-020154fe3116",
+      "result_id": "9b7671fd-6134-4e86-a3d4-7d6b3eba8fbe"
+    },
+    {
+      "claim_id": "d4edaac9-8a2f-480e-9566-ae96e1d68a56",
+      "result_id": "9b7671fd-6134-4e86-a3d4-7d6b3eba8fbe"
+    },
+    {
+      "claim_id": "3c3e6e4a-15d5-4503-8cab-36700d933220",
+      "result_id": "9b7671fd-6134-4e86-a3d4-7d6b3eba8fbe"
+    },
+    {
+      "claim_id": "70d756e5-095d-4135-9146-826338d4850d",
+      "result_id": "6b8a72e0-c2a2-451f-96db-1635ea6bd1d3"
+    },
+    {
+      "claim_id": "be0ba33a-a5a6-4c21-89cb-2bedc2f70000",
+      "result_id": "6b8a72e0-c2a2-451f-96db-1635ea6bd1d3"
+    },
+    {
+      "claim_id": "4bbca89c-7e24-414d-9fce-0f32125367e1",
+      "result_id": "6b8a72e0-c2a2-451f-96db-1635ea6bd1d3"
+    },
+    {
+      "claim_id": "1e409d0b-3a0d-4677-916c-c6a40e3d9af8",
+      "result_id": "6b8a72e0-c2a2-451f-96db-1635ea6bd1d3"
+    },
+    {
+      "claim_id": "2671530b-46db-4cd0-812f-cbac9a8b0727",
+      "result_id": "6b8a72e0-c2a2-451f-96db-1635ea6bd1d3"
+    },
+    {
+      "claim_id": "28eb7dc0-056c-46fb-badb-808b9d6a8a7d",
+      "result_id": "6b8a72e0-c2a2-451f-96db-1635ea6bd1d3"
+    },
+    {
+      "claim_id": "ebc370db-ec45-4890-bbcd-f97bb1626953",
+      "result_id": "6b8a72e0-c2a2-451f-96db-1635ea6bd1d3"
+    },
+    {
+      "claim_id": "e9d04fc9-0481-4e10-ac92-6a1be581ba5a",
+      "result_id": "6b8a72e0-c2a2-451f-96db-1635ea6bd1d3"
+    },
+    {
+      "claim_id": "44402a96-2165-401b-9f80-e33dd214baf1",
+      "result_id": "7b158522-8045-42f3-941f-cd4ae1de6d5b"
+    },
+    {
+      "claim_id": "540503fd-8b16-4e17-88ee-72dc823b2e64",
+      "result_id": "7b158522-8045-42f3-941f-cd4ae1de6d5b"
+    },
+    {
+      "claim_id": "797836f5-4bbe-4e5d-a73b-56391ec517e2",
+      "result_id": "7b158522-8045-42f3-941f-cd4ae1de6d5b"
+    },
+    {
+      "claim_id": "38e59e98-ff03-4982-9798-424e27267e69",
+      "result_id": "7b158522-8045-42f3-941f-cd4ae1de6d5b"
+    },
+    {
+      "claim_id": "82f56be9-911a-40c2-9783-83ab5f90d6da",
+      "result_id": "668cbf81-a815-4345-971d-a6ca8e7d7c55"
+    },
+    {
+      "claim_id": "a3d41d67-3fcd-4dd0-911f-9c6fc0c7dc30",
+      "result_id": "668cbf81-a815-4345-971d-a6ca8e7d7c55"
+    },
+    {
+      "claim_id": "24c928f5-ac21-4845-9607-c01d0ac008f4",
+      "result_id": "668cbf81-a815-4345-971d-a6ca8e7d7c55"
+    },
+    {
+      "claim_id": "d79b1519-55f5-4a9c-a7b1-dc19b4b692f4",
+      "result_id": "c57b3f6e-0cf5-496c-b300-d43beaa0b72d"
+    },
+    {
+      "claim_id": "18f6bb5e-8ff8-4a79-b9fd-cf9b58e37023",
+      "result_id": "c57b3f6e-0cf5-496c-b300-d43beaa0b72d"
+    },
+    {
+      "claim_id": "6c05699b-569c-4a12-81b1-b0cfe8f25770",
+      "result_id": "c57b3f6e-0cf5-496c-b300-d43beaa0b72d"
+    },
+    {
+      "claim_id": "7b938477-41a9-428c-9225-6ec99a5b1d9d",
+      "result_id": "c57b3f6e-0cf5-496c-b300-d43beaa0b72d"
+    },
+    {
+      "claim_id": "b8b2c396-3e22-4fdd-a83d-8015bcd31e5d",
+      "result_id": "c57b3f6e-0cf5-496c-b300-d43beaa0b72d"
+    },
+    {
+      "claim_id": "fb9d891f-758f-4f68-9ee7-2bd3b51aa3c3",
+      "result_id": "c57b3f6e-0cf5-496c-b300-d43beaa0b72d"
+    },
+    {
+      "claim_id": "c3fed728-066f-4963-9cb3-524507f13deb",
+      "result_id": "c57b3f6e-0cf5-496c-b300-d43beaa0b72d"
+    },
+    {
+      "claim_id": "f66e3814-e5d4-4655-9ba4-fede5cab968a",
+      "result_id": "c57b3f6e-0cf5-496c-b300-d43beaa0b72d"
+    },
+    {
+      "claim_id": "75b9cebc-c7c1-4f73-b37c-f8017d2e5655",
+      "result_id": "c57b3f6e-0cf5-496c-b300-d43beaa0b72d"
+    },
+    {
+      "claim_id": "06a6fdc4-ece5-477c-b08d-80ff36ec44ca",
+      "result_id": "3f3331c0-e868-438f-bc84-ce45eff5d2d1"
+    },
+    {
+      "claim_id": "d91628ba-adb4-4777-8181-fbe80948dedc",
+      "result_id": "3f3331c0-e868-438f-bc84-ce45eff5d2d1"
+    },
+    {
+      "claim_id": "e93447a4-0834-430b-9a00-20e1a465e78f",
+      "result_id": "3f3331c0-e868-438f-bc84-ce45eff5d2d1"
+    },
+    {
+      "claim_id": "3bcc8856-3d07-418f-ad36-fbf452ac9bb6",
+      "result_id": "3f3331c0-e868-438f-bc84-ce45eff5d2d1"
+    },
+    {
+      "claim_id": "96612107-ed5c-4891-b479-d7195380b2ce",
+      "result_id": "3f3331c0-e868-438f-bc84-ce45eff5d2d1"
+    },
+    {
+      "claim_id": "8a6156e3-63e6-4dfa-acd9-70b0c7deea17",
+      "result_id": "bf8f8c63-aae3-47ad-b4d1-88f613eedad2"
+    },
+    {
+      "claim_id": "6a15de3b-56a1-464c-a113-fa68a95ee29c",
+      "result_id": "bf8f8c63-aae3-47ad-b4d1-88f613eedad2"
+    },
+    {
+      "claim_id": "19fb3104-9150-404f-b65d-22a6ca50a867",
+      "result_id": "bf8f8c63-aae3-47ad-b4d1-88f613eedad2"
+    },
+    {
+      "claim_id": "4d8f8047-5fed-4dd8-b1d0-e2dfa7a4d8e4",
+      "result_id": "bf8f8c63-aae3-47ad-b4d1-88f613eedad2"
+    },
+    {
+      "claim_id": "da73d83e-89ff-4852-9028-c40c1c7ba3a2",
+      "result_id": "bf8f8c63-aae3-47ad-b4d1-88f613eedad2"
+    },
+    {
+      "claim_id": "5be364cf-5583-4783-8f6f-af542c05d43b",
+      "result_id": "bf8f8c63-aae3-47ad-b4d1-88f613eedad2"
+    },
+    {
+      "claim_id": "6cdb2959-1e5a-42c9-bfc2-aebb8ceb1e72",
+      "result_id": "bf8f8c63-aae3-47ad-b4d1-88f613eedad2"
+    },
+    {
+      "claim_id": "061c18e3-3724-4ce1-af95-f2aa05ba45d9",
+      "result_id": "01dd0626-da81-4d33-b846-80690bfcec6a"
+    },
+    {
+      "claim_id": "d2a17749-a614-4ba8-98bc-632aa7de3b8e",
+      "result_id": "01dd0626-da81-4d33-b846-80690bfcec6a"
+    },
+    {
+      "claim_id": "db929810-f06e-43ea-90b9-8926d0d7f073",
+      "result_id": "01dd0626-da81-4d33-b846-80690bfcec6a"
+    },
+    {
+      "claim_id": "f0c0893e-bc72-4340-8da5-025e2006c12f",
+      "result_id": "01dd0626-da81-4d33-b846-80690bfcec6a"
+    },
+    {
+      "claim_id": "7af14ca7-a490-4659-97c7-e6866c0b0a88",
+      "result_id": "01dd0626-da81-4d33-b846-80690bfcec6a"
+    },
+    {
+      "claim_id": "335dc413-185d-4792-aaff-c2175a13d1e7",
+      "result_id": "7da04f1a-40c5-4754-ae9e-361fdb9381a9"
+    },
+    {
+      "claim_id": "2af6663c-343f-4fa8-9749-e4b7bd70fc22",
+      "result_id": "7da04f1a-40c5-4754-ae9e-361fdb9381a9"
+    },
+    {
+      "claim_id": "fd693968-e3f3-49d4-a3be-d2f6883d08dc",
+      "result_id": "7da04f1a-40c5-4754-ae9e-361fdb9381a9"
+    },
+    {
+      "claim_id": "98d5665c-f45c-4c20-b890-e9b20720510b",
+      "result_id": "7da04f1a-40c5-4754-ae9e-361fdb9381a9"
+    },
+    {
+      "claim_id": "680e04a1-004e-456b-ad08-71a416685379",
+      "result_id": "86dbdc44-eef5-4d32-8522-a60041dbcc32"
+    },
+    {
+      "claim_id": "cc315e8c-031f-40a0-9241-2aa1895d8014",
+      "result_id": "86dbdc44-eef5-4d32-8522-a60041dbcc32"
+    },
+    {
+      "claim_id": "1119fdd4-0d9b-4e47-abaf-e7ea8d7ff50f",
+      "result_id": "86dbdc44-eef5-4d32-8522-a60041dbcc32"
+    },
+    {
+      "claim_id": "7392b9d0-2d87-4634-8786-7b2854118f04",
+      "result_id": "86dbdc44-eef5-4d32-8522-a60041dbcc32"
+    },
+    {
+      "claim_id": "22d4a217-be21-4555-89d5-c66880aa1ec1",
+      "result_id": "86dbdc44-eef5-4d32-8522-a60041dbcc32"
+    },
+    {
+      "claim_id": "54b4f724-8091-493d-a584-a0210678ed47",
+      "result_id": "56ea2ef2-2e06-4665-854e-66c4b944daf7"
+    },
+    {
+      "claim_id": "7302f3ce-726b-417e-8388-5a29dbe8b73e",
+      "result_id": "56ea2ef2-2e06-4665-854e-66c4b944daf7"
+    },
+    {
+      "claim_id": "1851d92e-e5d2-4644-add3-89c4e4873f7f",
+      "result_id": "56ea2ef2-2e06-4665-854e-66c4b944daf7"
+    },
+    {
+      "claim_id": "30713eed-bb2c-4a55-b1d3-7ccf2355a2b4",
+      "result_id": "56ea2ef2-2e06-4665-854e-66c4b944daf7"
+    },
+    {
+      "claim_id": "07ea6070-908e-47a5-ac16-508a6f12439c",
+      "result_id": "56ea2ef2-2e06-4665-854e-66c4b944daf7"
+    },
+    {
+      "claim_id": "9326837a-5d9d-4d6f-881c-abef689fe579",
+      "result_id": "56ea2ef2-2e06-4665-854e-66c4b944daf7"
+    },
+    {
+      "claim_id": "a526f526-be55-4136-9cd1-a596a9847d61",
+      "result_id": "c1e06b11-7373-4b8e-8a20-f264e9f8dbc7"
+    },
+    {
+      "claim_id": "93c343d3-c648-47b8-88ae-abd306fc6ca3",
+      "result_id": "c1e06b11-7373-4b8e-8a20-f264e9f8dbc7"
+    },
+    {
+      "claim_id": "211f720d-90af-4627-bc89-e71239edf116",
+      "result_id": "c1e06b11-7373-4b8e-8a20-f264e9f8dbc7"
+    },
+    {
+      "claim_id": "f822bfb6-1f31-4a33-8072-0617799a78ff",
+      "result_id": "db7f1aeb-5435-47fb-a0cc-4a50b40f6923"
+    },
+    {
+      "claim_id": "8451eb31-95f2-4de5-9489-ebf73d98d22f",
+      "result_id": "db7f1aeb-5435-47fb-a0cc-4a50b40f6923"
+    },
+    {
+      "claim_id": "bd7fe8ff-3138-4bca-b60a-3c1dd2b5eb23",
+      "result_id": "db7f1aeb-5435-47fb-a0cc-4a50b40f6923"
+    }
+  ],
+  "comparisons": []
+}

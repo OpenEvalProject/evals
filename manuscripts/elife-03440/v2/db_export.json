@@ -1,0 +1,1688 @@
+{
+  "submission": {
+    "id": "0712cfbe-6b32-420c-a4f7-dce847511c83",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:12:49.817600Z",
+    "updated_at": "2025-11-28T21:12:49.817600Z"
+  },
+  "content": [
+    {
+      "id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "submission_id": "0712cfbe-6b32-420c-a4f7-dce847511c83",
+      "content_type": "manuscript",
+      "content_text": "# mRNA-programmed translation pauses in the targeting of E. coli membrane proteins\n\n## Authors\n\n- Nir Fluman<sup>1</sup> \u2020\n- Sivan Navon<sup>1</sup>\n- Eitan Bibi<sup>2</sup>\n- Yitzhak Pilpel<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular Genetics Weizmann Institute of Science Rehovot Israel\n2. Department of Biological Chemistry Weizmann Institute of Science Rehovot Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn all living organisms, ribosomes translating membrane proteins are targeted to membrane translocons early in translation, by the ubiquitous signal recognition particle (SRP) system. In eukaryotes, the SRP Alu domain arrests translation elongation of membrane proteins until targeting is complete. Curiously, however, the Alu domain is lacking in most eubacteria. In this study, by analyzing genome-wide data on translation rates, we identified a potential compensatory mechanism in E. coli that serves to slow down the translation during membrane protein targeting. The underlying mechanism is likely programmed into the coding sequence, where Shine\u2013Dalgarno-like elements trigger elongation pauses at strategic positions during the early stages of translation. We provide experimental evidence that slow translation during targeting and improves membrane protein production fidelity, as it correlates with better folding of overexpressed membrane proteins. Thus, slow elongation is important for membrane protein targeting in E. coli, which utilizes mechanisms different from the eukaryotic one to control the translation speed.\n\n## Introduction\n\nThe rate of translation elongation varies considerably between different codons of the same gene, with some codons translated slower than the others (Ingolia et al., 2009; Li et al., 2012). Various factors can modulate the elongation rate. Some of them are sequence elements within the translated mRNA or protein that directly interact with the translational machinery (Tuller et al., 2010; Li et al., 2012; Charneski and Hurst, 2013; Pechmann and Frydman, 2013), such as charged amino acids that interact with the ribosome (Charneski and Hurst, 2013) or codons that interact with tRNAs (Tuller et al., 2010). Other factors act in trans and require the engagement of additional factors that can in turn affect ribosome speed (Walter and Blobel, 1981; Shalgi et al., 2013). Several studies indicate that the elongation rate can modulate protein folding and function (Kimchi-Sarfaty et al., 2007; Zhang et al., 2009; Yona et al., 2013; Zhou et al., 2013), but the underlying mechanisms are not yet well understood.\n\nOne of the best understood speed control mechanisms is found in the pathway that targets membrane proteins to the membrane translocon. Membrane proteins are extremely hydrophobic and aggregation-prone and are therefore inserted into the membrane co-translationally (White and von Heijne, 2008; Luirink et al., 2012). To do so, they must be targeted to the translocon early in translation before large polypeptide portions are synthesized (Lakkaraju et al., 2008). Targeting of ribosomes translating membrane proteins is mediated by the ubiquitous signal recognition particle (SRP) system (Bibi, 2011; Akopian et al., 2013). The core machinery is conserved in all organisms and is comprised of the ribonuceoprotein complex SRP and its receptor. The pathway works such that the SRP binds to the first transmembrane segment (TM) that emerges from the ribosome and directs it together with the translocon-associated SRP receptor to the translocon. In eukaryotes, the SRP arrests the elongation upon binding to ribosome-nascent chain complexes, in order to prevent the protein synthesis before targeting is complete (Walter and Blobel, 1981; Mason et al., 2000). The arrest is mediated through the SRP Alu domain that binds to the elongation factor binding site (Halic et al., 2004) and is kept until the ribosome arrives at the translocon, causing the SRP dissociation. Puzzlingly, however, the bacterial world displays a dichotomy in the structure of the SRP, wherein Gram-positive bacteria typically possess an Alu domain and Gram-negatives, such as E. coli, are typically devoid of it (Regalia et al., 2002). Accordingly, in vitro translation studies suggested that the Escherichia coli SRP cannot arrest translation (Raine et al., 2003). Thus, other mechanisms that compensate for the lack of Alu-mediated arrest in Gram-negative bacteria could be required, especially considering their faster translation rates compared to eukaryotes (Young and Bremer, 1976; Bonven and Gull\u00f8v, 1979). One such putative mechanism has recently been described (Yosef et al., 2010), which calls for further investigation.\n\nRecently, our ability to measure translation rates was revolutionized by the technology of ribosome profiling, enabling the estimation of elongation rates on a genome-wide level and at a single codon resolution (Ingolia et al., 2009). Studies conducted so far revealed remarkable heterogeneity in ribosome density between different codons within genes and suggested that translational pausing or slowing are actually quite common events (Ingolia et al., 2011; Li et al., 2012). These experiments also greatly advanced our understanding of how sequence elements modulate elongation rate (Li et al., 2012; Charneski and Hurst, 2013). A notable example is found in E. coli, where many if not most of the pause sites are mediated by internal Shine\u2013Dalgarno-like elements, which are capable of transiently binding to the ribosome as it translates the mRNA (Li et al., 2012). Despite this progress, it is still not fully understood what could be the function of such commonly observed pauses in cell physiology.\n\nTo meet this challenge, we explored where Shine\u2013Dalgarno-mediated pause sites are preferentially located across the E. coli transcriptome, by analyzing the existing data from ribosome profiling (Li et al., 2012). Our analyses revealed significant enrichment of pause events during the initial stages of membrane proteins translation. This location coincides with the stage in translation in which membrane proteins are thought to be targeted to the membrane translocons. We provide evidence that Shine\u2013Dalgarno-mediated pauses in E. coli possibly compensate for the lack of SRP Alu domain-mediated arrest during membrane protein targeting.\n\n## Results\n\n### Programmed pauses are enriched at the beginning of E. coli membrane proteins\n\nRecently, the ribosome occupancy across E. coli mRNAs was profiled in a genome-wide manner, revealing the locations of ribosome slowing as peaks of high ribosomal density. In that study, Li et al. (2012) found that ribosome pause sites are often explained by a Shine\u2013Dalgarno (SD)-like sequence located 8\u201311 nucleotides upstream of the currently decoded codon. In order to understand the potential function of pauses better, we sought to investigate where such mRNA-programmed pauses are preferentially located. To identify pause sites, we searched for codons exhibiting high local ribosome density compared to other codons in the same coding sequence. Ribosome density profiles for well-expressed genes (i.e., with reliable ribosome profiling data, \u2018Materials and methods\u2019) were calculated by normalizing the ribosome density in codons to the median density of the gene (Figure 1\u2014figure supplement 1A). Unless otherwise noted, all analyses were based on these normalized profiles. Assuming that ribosomes flow along mRNAs is in steady-state, ribosome density in these profiles is inversely proportional to translation speed (Tuller et al., 2010). The first and last four codons were excluded since they contain high density related to an initiation \u2018ramp\u2019 and translation termination, respectively (Tuller et al., 2010; Oh et al., 2011). We considered \u2018pause codons\u2019 as those that constitute the 5% of the most dense codons genome-wide, corresponding to \u223csixfold higher density than the median density of genes in which they reside (Figure 1\u2014figure supplement 1A). To generate a dependable SD-mediated set of pause sites, we filtered out pause codons for which we could not identify an upstream SD-like element (Figure 1\u2014figure supplement 1B, see \u2018Materials and methods\u2019). Codons that passed both filters (high local density and SD-like element) constitute \u223c2.5% of all codons and we refer to them as \u2018programmed pauses\u2019.\n\nWe first compared the pause occurrence of three protein classes: cytosolic, (inner) membrane, and periplasmic proteins. The ribosome density profiles of all coding sequences were aligned at their start codon, and the fraction of programmed pause codons in each position was analyzed. The results show that membrane proteins are enriched with pauses between codons 16 and 60, after which they level-down to values similar to cytosolic proteins (Figure 1A). Pauses occur in roughly 4% of the proteins at each codon position in membrane proteins within the codon range 16\u201360 (Figure 1A). Indeed, over the entire range of codons from position 16 to 60, we find that 69% of membrane proteins have at least one programmed pause position, significantly higher compared to cytosolic (50%, p = 1.5 \u00d7 10\u22127) and periplasmic proteins (41%, p = 6 \u00d7 10\u22128, Z-test for 2 proportions) (Figure 1A, inset). The occurrence of pauses in this codon range indicates that pauses are specifically enriched in membrane proteins only in the early stages of translation elongation, in a coding sequence region which coincides with the stage of membrane protein targeting. Two distinct peaks of elevated pauses were observed, the first in codons 16\u201336 and the second in codons 40\u201360 (defined here as \u2018region I\u2019 and \u2018region II\u2019, respectively, Figure 1A). In the following sections, we study each of these peaks separately.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03440/elife-03440-fig1-v2.jpg)\n\n**Figure 1.:** (A) Percentage of the programmed pauses in every codon across the coding sequences in membrane, cytoplasmic, and periplasmic proteins. Regions of elevated pause in membrane proteins are marked by I and II. Pause codon positions refer to codons in the A-site of the ribosome. Inset: percentage of proteins from different classes having at least one pause in the codon range 16\u201360. ** indicates p < 10\u22126. Error bars in figure and inset indicate s.e. for proportion. (B) Histogram of the distribution of the positions of the first codon of TM2 in E. coli membrane proteins that were analyzed in (A). N, number of proteins in which TM2 starts at the indicated position.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03440/elife-03440-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A and B) dskA gene as an example. (A) Median-normalized ribosome density profile for the E. coli gene dskA based on data from Li et al. (2012). Y axis scales to the left and right indicate the median-normalized and un-normalized values, respectively. Blue dashed line indicates median density of the gene. Red dashed line indicates the threshold for pause calling (density > \u223csixfold over the median). Orange indicates codons with programmed pauses (i.e., having upstream SD-like elements). (B) Calculated affinity of sequences in the coding sequences for the ribosome anti-Shine\u2013Dalgarno sequence (aSD). Red dashed line indicates the energetic threshold for SD-like element calling (\u0394G < \u22123.1). \u0394G values above 0 are shown in light gray. Asterisk marks SD-like elements that explain the programmed pauses indicated in orange in (A). (C) Venn diagrams representing the effect of modifying the energetic threshold for SD calling. A total of 868,507 codons from well-expressed genes were analyzed. Blue, fraction of slowly translated codons (density > 6.06); pink, fraction of codons with at least one upstream sequence element predicted to bind the ribosome aSD with the indicated \u0394G (\u2018Materials and methods\u2019). The intersection of blue and pink makes up the \u2018programmed pause\u2019 codons in each energetic threshold. Energetic thresholds analyzed represent the bottom 1%, 5%, or 10% genome-wide.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03440/elife-03440-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A and B) Frequencies of positively charged residues (R+K) that were shown to slow-down translation (Charneski and Hurst, 2013) in regions of programmed pauses. (A) Frequencies of R+K along the coding sequences in membrane (mem), cytosolic (cyt), and periplasmic (per) proteins. Membrane proteins are depleted of K and R in codons 16\u201360 (and also throughout the sequence) compared to cytosolic proteins. (B) Frequency of R+K in regions immediately preceding programmed pauses that occur in codons 16\u201360. Programmed pause events that occur in codons 16\u201360 were analyzed for each protein class separately, and the peptide sequences directly preceding pauses were aligned such that position 0 constitutes the pause codon position. The frequency of K+R in every position is shown as solid line. Dashed lines indicate the average frequencies of K+R in the entire protein sequences. No significant excess of positively charged amino acids preceding pauses is observed. (C) Codon rarity along coding sequence position, as indicated by mean relative synonymous codon usage (RSCU) (Sharp et al., 1986). Most of the bias for rare codons occurs before codon 15 (dashed line), while the pause-enrichment in membrane proteins occurs only later. (D) Frequencies of G (Gly) residues, whose G-nucleotide-rich codons may mediate pause (Li et al., 2012), along the coding sequences. Membrane proteins show only a slight elevation of Gly occurrence, which is not specific to the region of codons 16\u201360. (E) Analysis of coding reading frames of SD-like sequences preceding pauses indicates that most such motifs do not occur in frames that would encode glycines. Left: the canonical SD sequence (red) and definition of frames. Frame 1 was defined as the frame in which the canonical SD encodes Gly\u2013Gly dipeptide. Right: distribution of pause-preceding SD motifs in each frame. The analysis was done separately for membrane proteins in the codon range 16\u201360, for the other codons in membrane proteins, or for cytosolic proteins.\n\nAn important concern was that the pauses may occur as by-products of amino-acid or codon composition biases near the N-terminus of membrane proteins. In Figure 1\u2014figure supplement 2, we exclude several such biases for membrane proteins, by showing that positively-charged residues, glycince codons, or rare codons are not significantly enriched in codons 16\u201360 in membrane proteins. Notably, however, such abundant biases in periplasmic proteins may explain the apparent depletion of pause in their N-terminal codons (Figure 1A, Figure 1\u2014figure supplement 2), likely due to the presence of N-terminal signal peptides.\n\n### Pausing of ribosomes before the translation of the second transmembrane segment\n\nWe first investigated the programmed pause enrichment in region II, around codons 40\u201360 (Figure 1A); region I is discussed in a later section. We noticed that region II coincides with the location of the beginning of the second transmembrane segment (TM2) in many membrane proteins (Figure 1B). To test a potential link, we aligned all membrane proteins according to their TM2 start (Figure 2A) and calculated the frequency of pauses along the aligned coding sequences at various distances from that point. Indeed, we found a peak of high pause frequency just before the start of TM2 (Figure 2C) (p = 3 \u00d7 10\u22126, 2-sample t test), extending from five codons before TM2 to the second codon of the TM. This observation suggests that membrane protein translation is programmed to pause just before TM2 residues are added to the elongating nascent chain (Figure 2B). Curiously, the peak is much sharper when considering only proteins with intracellular N-termini (Figure 2D) (p = 4 \u00d7 10\u22129, 2-sample t test), in which TM2 occurs in \u2018Type-I topology\u2019 (the N-terminus of TM2 is extracellular), suggesting that proteins with extracellular N-termini do not pause before TM2. To explore the difference between the two groups, we analyzed amino acid biases before TM2 (Figure 2\u2014figure supplement 1A). The main difference was excess of arginines and lysines before the TM in proteins with extracellular N-termini, in accordance with the \u2018positive inside rule\u2019 (von Heijne, 2006). This difference is predicted to increase pauses in this location (Charneski and Hurst, 2013), unlike the actually observed decreased pauses in this group of proteins. Thus, differences in amino-acid sequences cannot account for the difference in the pausing behavior. We attempted to explore if proteins with extracellular N-termini may instead have pauses at other locations, however, analyses of these proteins were precluded by low statistical power due to small sample size (only 88 proteins in our data set are predicted to have extracellular N-termini, as opposed to 237 with intracellular N-termini). Therefore, with the current limitations, we cannot conclude if these proteins may have pauses elsewhere or if they do not utilize the pause strategy altogether. We therefore excluded these proteins, which constitute a minority of the membrane proteome, from further analysis in sections that deal with pauses in region II.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03440/elife-03440-fig2-v2.jpg)\n\n**Figure 2.:** (A) Membrane proteins were aligned such that the first residue of TM2 is aligned to position 0 (red line). (B) Visual scheme of the stage at which pause occurs during translation. Red marks SD-like element in the mRNA. Blue line and cylinders depict nascent polypeptide and possible TM location in the tunnel, respectively. (C and D) The frequency of codons having programmed pauses in every position was analyzed, either in all membrane proteins (C) or only in proteins having intracellular N-termini (D). Profiles of proteins aligned to TM2 are in blue. Profiles of proteins aligned to all other TMs are in black. (E) Average ribosome density profiles of proteins with (blue) or without (black) identifiable programmed pauses in codons \u22125 to +1 relative to TM2 start. (F) Same as (E) but only in mRNA nucleotide positions lacking upstream SD-like elements.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03440/elife-03440-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Amino-acid frequencies in various positions relative to TM2 start. Black and blue dashed lines depict proteins with intracellular or extracellular N-temini, respectively. (B) Programmed pause profiles of coding sequences aligned to different TMs. Membrane proteins with cytosolic N-termini were aligned such that the first residue of TM-X (X = 1\u20135) is aligned to position 0. The frequency of codons having programmed pauses in every position was analyzed, similar to Figure 2D. Light blue dashed lines indicate 95% confidence intervals. Red dashed lines depict the average frequency over the range.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03440/elife-03440-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Mean expression levels of genes in both groups. The gene expression was calculated for each gene as the logarithm of the median ribosome density in its coding sequence, reflecting the level of protein translation. Error bars indicate SEM. (B) Mean TM1 hydrophobicity in both protein groups. For each protein, TM1 and 5 flanking residues down- and up-stream were taken. Hydrophobicity was calculated by applying a sliding window of 18 residues and calculating the average Kyte\u2013Doolitle score. The maximal score was taken to represent the TM hydrophobicity. Error bars indicate SEM.\n\nNotably, when considering only the remaining proteins set (i.e., with intracellular N-termini), the peak of pause before TM2 could not be explained by amino-acid biases at this location since the slightly enriched amino acids there (Figure 2\u2014figure supplement 1A), are not encoded by G-nucleotide-rich codons that resemble the SD motif. Furthermore, the peak of pause in the proteins was specifically related to TM2, as we could not find similar peaks when aligning the coding sequences according to other TMs (Figure 2\u2014figure supplement 1B).\n\nThe pauses occur 35 \u00b1 13 codons after the beginning of the first TM. Given that the exit tunnel of the ribosome admits \u223c28 amino acids of the extended polypeptide (Bornemann et al., 2008), pausing of the ribosome at these positions means that in most proteins the first TM has partially emerged out of the ribosome during pausing. The pause location is reminiscent of the location at which the translation arrest occurs in the eukaryotic case, when the SRP arrests translation after TM1 was synthesized and exposed out of the ribosome. This suggests a common physiological role of slowing elongation during targeting. Interestingly, only \u223c25% of membrane proteins (59 out of 237) have identifiable pauses at codons \u22125 to +1 relative to TM2 start, and indeed only these proteins display high local ribosome density in this region (Figure 2E). The quantitative difference in density between proteins with and without pause in Figure 2E suggests that the pause duration is approximately 1.5 s (roughly the time it takes to translate 28 codons, see \u2018Materials and methods\u2019). To check the dependence of translation rate on SD-like elements, we repeated the density analysis of Figure 2E with a modified data set in which all nucleotide positions with even weak upstream SD-like motif were excluded from the analysis (\u2018Materials and methods\u2019). The results show that upon SD exclusion, the slow-down in this region was nearly abolished (Figure 2F) suggesting that the SD motif is necessary to generate the observed pauses. It is important to note that several important pauses probably escaped our detection. First, the pauses may occur at subtly different locations from codon \u22125 to +1 relative to TM2 and our thresholds for pause consideration might be too stringent. Secondly, the TMs and their boundaries are not accurately predicted by the existing methods (in about 25% of proteins, we found disagreements of at least 10 residues in the location of TM2 between two databases, Uniprot and ExTopoDB). Nevertheless, it seems that SD-programmed pauses before TM2 occur only in a subset of the membrane proteome and are not crucial for the production of all membrane proteins.\n\nWe thus hypothesized that proteins with or without a pause before TM2 may have different characteristics. Our analyses revealed two interesting differences. First, proteins with pause had higher expression on an average (p = 0.004, two sample t test) (Figure 2\u2014figure supplement 2A). This is consistent with a role of the pauses in promoting the production fidelity, since highly expressed proteins and their mRNAs require more tight quality control and are hence better adapted for fidelity (Drummond and Wilke, 2008; Tuller et al., 2010; Levy et al., 2012). Secondly, we find that TM1 in proteins with pause is less hydrophobic compared to proteins without identifiable pauses, suggesting that proteins with pause may have compromised affinity for SRP (Lee and Bernstein, 2001), (p = 0.006, two sample t test) (Figure 2\u2014figure supplement 2B). This is consistent with a recent study showing that slow elongation rates may rescue defects in the SRP-mediated targeting of membrane proteins with sub-optimal targeting signals, likely by extending the time window for productive targeting (Zhang and Shan, 2012).\n\n### Long loops between TM1 and TM2 are an alternative solution to pause before TM2\n\nThe existence of pauses before TM2 in only a subset of membrane proteins suggests the existence of alternative solutions in other proteins. We hypothesized that the role of the pause before TM2 is to delay the synthesis of TM2 after TM1 was synthesized, in order to complete membrane-targeting before synthesis of additional hydrophobic protein segments. If this is correct, then a long loop between these TMs whose translation requires more time could be just as beneficial. Indeed, our analysis revealed that first loops (i.e., those between TM1 and TM2) are enriched for long lengths of \u226560 residues and depleted of short lengths of \u226410 residues (Figure 3A, Figure 3\u2014figure supplement 1A) (p = 6 \u00d7 10\u221210 and p = 3 \u00d7 10\u22123 respectively, hypergeometric test). Consecutive loops locations between the other TMs showed no significant enrichment for longer loop (Figure 3\u2014figure supplement 1B). Although there could be alternative explanations for why membrane proteins evolved to have larger first loops, such loops can certainly delay the translation of TM2 after TM1 was synthesized. Indeed, we found that proteins having long first loops (\u226560 residues, 34 proteins) almost never had pauses before TM2 compared to proteins with shorter loops (Figure 3B) (p = 0.01, hypergeometric test). These findings suggest that the coding sequences of membrane proteins are designed to delay the translation of TM2 after TM1 was synthesized, either by extending the loops connecting these TMs or by pausing.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03440/elife-03440-fig3-v2.jpg)\n\n**Figure 3.:** (A) Enrichment of various loop lengths in first loops compared to all other loops. Shown are Log2 values of ratios. Inset: occurrence of long loops of length \u226560 in first loops or other loops. Error bars indicate s.e. for proportion. (B) Occurrence of pause before TM2 in proteins with long or short first loops. Error bars indicate s.e. for proportion.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03440/elife-03440-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Occurrence of short loops of length \u226410 in first loops or other loops. (B) Occurrence of loops with length \u226560 in increasing loop locations or all other loops. Similar to the inset in Figure 3A. The sample sizes of the test loops and the p-values (hypergeometric test) for enrichment are given above the bars. Error bars indicate s.e. for proportion.\n\n### Pausing of ribosomes before the nascent peptide emerges out of the tunnel\n\nWe next investigated the pause in codons 16\u201336 (region I, Figure 1A). The frequency of programmed pause codons and the mean codon density in this range were computed separately for the membrane and cytosolic proteins. Programmed pauses were enriched in membrane proteins compared to cytosolic proteins (p = 4 \u00d7 10\u22128, Z-test for two proportions) (Figure 4A). Consequently, local ribosome densities in membrane proteins mRNAs were significantly higher than those of cytosolic proteins (p = 1 \u00d7 10\u221236, 2-sample t test) (Figure 4C), suggesting slower translation. A mean difference of 0.56 density units per codon (Figure 4C) over a range of 21 codons indicates that translation is slowed by \u223c0.6 s (the time required to translate 12 codons, see \u2018Materials and methods\u2019) compared to the average cytosolic protein.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03440/elife-03440-fig4-v2.jpg)\n\n**Figure 4.:** (A and C) Comparison of the frequency of programmed pauses (A) or mean ribosome density (C) in codon range 16 to 36 between cytoplasmic and membrane proteins. Error bars indicate s.e. for proportion (A and B) or SEM (C and D). (B and D) Same comparisons between membrane proteins in which the first residue of TM1 occurs after or before position 80 of the polypeptide. (E) Visual scheme of the stage at which pause occurs during translation, similar to Figure 2B.\n\nA tendency to pause between codons 16 and 36 indicates that membrane proteins are programmed to pause before the nascent polypeptide emerges out of the ribosome exit tunnel (Figure 4E). In this state, the SRP cannot directly interact with the nascent peptide. However, recent studies showed that E. coli's SRP can efficiently target such ribosome-nascent-chain complexes to the membrane (Bornemann et al., 2008; Holtkamp et al., 2012) and that this is done regardless of the class of translated proteins (cytosolic/membrane/periplasmic). Thus, increased pausing at this codon range may perhaps give membrane proteins an advantage over cytosolic proteins in being targeted even before direct SRP\u2013nascent peptide interaction is possible.\n\nTo further test this hypothetical link to the SRP pathway, we considered also a later stage of the pathway in which the peptide emerges from the exit tunnel. A previous study showed that once a sufficiently long peptide emerges, targeting by the E. coli SRP becomes substrate-specific; namely, if the exposed peptide contains a hydrophobic transmembrane segment, then SRP will remain bound to the ribosome-nascent-chain complex and direct its targeting. Otherwise, hydrophilic peptides cause SRP-dissociation (Bornemann et al., 2008). We therefore reasoned that membrane proteins having long hydrophilic N-terminal tails before TM1 may constitute a unique case and may not benefit from such pauses, since the emerging hydrophilic peptide would cause SRP-dissociation and productive targeting would occur only later, when the first TM emerges. Indeed, unlike other membrane proteins, proteins with at least 80 residues before TM1 (n = 16) did not show an elevated pause frequency at codons 16\u201336 (p = 0.01, Z-test for two proportions), nor did they show elevated ribosome density (p = 0.013, one-tailed two-sample t test) (Figure 4B,D). Thus, although further studies are necessary, our results suggest that pauses that occur when the peptide is still unexposed may aid in the targeting of membrane proteins without long hydrophilic N-terminal tails.\n\n### Slowly translated proteins are better folded when overexpressed from plasmid\n\nOur findings suggest that slow translation might be beneficial during the targeting of E. coli membrane proteins, but what is the function of these pauses? A role in promoting production fidelity is suggested by the function of translation arrest in eukaryotes. In order to test this hypothesis directly, we chose a set of 100 membrane proteins to overexpress in E coli. Based on the results above, proteins having long polypeptide stretches (>50 residues) before the first TM or between TM1 and TM2 were excluded from the expression set. Overexpressed proteins were hybrids with a C-terminal GFP-His8, which enabled the separate detection of both the unfolded and folded protein levels, as shown for several membrane proteins (Waldo et al., 1999; Geertsma et al., 2008; Linares et al., 2010; M\u00fcller-Lucks et al., 2012; Schlegel et al., 2012). The discrimination is possible because unfolding or aggregation of fused proteins hinders GFP-folding and -fluorescence, whereas folded and fluorescent GFP is indicative of the functional and folded fused protein (Geertsma et al., 2008; Linares et al., 2010; M\u00fcller-Lucks et al., 2012; Schlegel et al., 2012). The resistance of folded GFP to SDS-denaturation allows the resolution of both GFP forms by SDS-PAGE and Western blotting, since folded GFP migrates faster (Figure 5\u2014figure supplement 1A). To confirm the method, we assessed the detergent-solubility of five different overexpressed membrane proteins. The results of fractionation studies showed that only the folded GFP-coupled forms were soluble with mild detergent, while the unfolded forms were insoluble and probably aggregated (Figure 5\u2014figure supplement 1A).\n\nNext, we expressed the entire set of proteins and quantified both the folded and unfolded forms (see an example in Figure 5\u2014figure supplement 1B). Eleven proteins were excluded from the original set due to problematic detection and two additional ones were outliers (Figure 5\u2014source data 1). Our set of 87 tested proteins covers a wide range of translation speeds at regions I and II, that is, at codons 16\u201336 and before TM2 (Figure 5A). We divided the set to three quantiles according to translation speed: from the 33% of genes having the fastest translation speed (lowest ribosome density) to those having the slowest speed (high density) in these codon ranges (Figure 5A, colors). Remarkably, genes with slower translation at these codons showed a 95% elevation in expression of the folded protein form, compared with genes having fast translation (p = 3 \u00d7 10\u22124, two-sample t test) (Figure 5B). This difference was not observed for expression of the unfolded/aggregated form of the proteins (Figure 5C), suggesting that translation speed during targeting specifically influences the extent of correct folding rather than affecting the overall expression level.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03440/elife-03440-fig5-v2.jpg)\n\n**Figure 5.:** (A) Histogram of translation speeds. For each gene, the ribosome density at codons 16\u201336 and before TM2 was averaged. The distribution of values in the different genes is shown (N, number of genes with indicated density). Colors indicate groups corresponding to different translation speeds at these codon ranges and accompany the rest of the figure. (B and C) Mean (\u00b1SEM) expression values of the folded (B) and unfolded (C) forms of proteins from the three different groups. (D) Effect of the total expression level on the percentage of unfolding in the different protein groups. (E) Folded vs total levels of expression in the three protein groups. Each dot represents a different protein. Dashed line depicts a 1:1 ratio wherein all of the expressed protein is detected in its folded form. The experiment was repeated three times.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03440/elife-03440-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** SDS-PAGE analysis of various membrane proteins overexpressed in E. coli. In-gel fluorescence detects only folded GFP. Western blotting with detection of all His-tagged proteins reveals both the folded and unfolded forms. The Western and fluorescence measurements were done on the same gels. (A) Fractionation and solubility of selected membrane proteins overexpressed in E. coli. Cells expressing the indicated proteins were disrupted by sonication (total) and ultracentrifuged to separate the cytosolic fraction (sup) from the membranes and aggregates (pellet). The pellet fraction was then solubilized with the mild detergent DDM which only solubilizes non-aggregated membrane proteins. Detergent-solubility was determined by ultracentrifugation (DDM-sol and insoluble). Only the lower, folded band is soluble with DDM in all cases. (B) SDS-PAGE analysis of various membrane proteins overexpressed in E. coli. Upper panel: in-gel fluorescence. Middle panels: low and high exposure of Western blotting. Lower panel: Coomassie stain of all cellular proteins, as a control for protein amounts. Two first lanes in all gels were from independent cell cultures expressing EmrD and served as standard.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03440/elife-03440-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Membrane proteins were divided to 3 groups, similar to Figure 5A, according to the rate of translation at codon range 16\u201336 (upper panel) or before TM2 (codons [\u22125]\u2013[+1] relative to TM2 start) (lower panel). The folded vs total levels of expression in the three protein groups are plotted, similar to Figure 5E. (B) Translation rates in different codon ranges and how they affect expression. Left panels: distributions of average translation rates in different codon ranges, as estimated from mean codon densities in different proteins (similar to Figure 5A). In increasing downstream codon regions, the number of slow proteins decreases. Right panels: folded vs total levels of expression in the three protein groups (similar to Figure 5E). Slowly translated proteins appear to benefit from better folding, regardless of where the pauses occur.\n\nWe then turned to investigate how expression level affects folding and its potential interplay with the speed of translation in determining the quality of folding. The percentage of unfolded protein was significantly correlated with the total level of the protein (folded + unfolded) (Spearman's r = 0.65, p = 6 \u00d7 10\u221212, Figure 5D). This indicates that regardless of the identity of the overexpressed protein, the cell's capacity to produce high amounts of folded membrane proteins is limited, and increased expression levels would result in increased aggregation. We propose that this dependency reflects saturation of the membrane protein biogenesis machineries in the cell, which becomes less efficient upon high membrane protein overexpression. This finding is in agreement with previous indications that membrane proteins are often better expressed in functional form under lower induction regimes (Wagner et al., 2008).\n\nConsistent with this notion, we observe that as total protein levels increase, the levels of folded proteins approach saturation (Figure 5E). However, the saturation curves show remarkable differences between proteins that are translated with different speed regimes in our codon range of interest. Proteins that are translated fast saturated at relatively low amounts of folded protein (apart from a single protein), while slowly translated proteins converged to higher saturation levels, if they saturated at all (Figure 5E). This effect is contributed by translation slowing at both codons 16 to 36 and at codons before TM2 (Figure 5\u2014figure supplement 2A). The trend is also reflected by the difference between the groups in Figure 5D and suggests that slow translation during targeting supports less aggregation of the overexpressed proteins. Notably, slow translation at other more downstream codon locations may also be beneficial for folding (Figure 5\u2014figure supplement 2B). However, slow translation is much more common at codons 16\u201360, that is at the codon region that covers regions I and II, than downstream (Figure 5\u2014figure supplement 2B), suggesting that slowing during targeting is of particular importance.\n\nOverall, the results suggest that regardless of the protein identity, slow translation during targeting is associated with better folding. Yet, the effect appears to depend on expression level and is possibly required only when membrane protein biogenesis becomes saturated. We propose that the presence of pauses in many proteins may alleviate the burden on cellular quality control under endogenous expression levels.\n\n### Engineered SD-like motifs improve the folding of membrane proteins\n\nIn order to test the potential causative relationship between slow translation and better folding, we set out to modify the rate of translation of genes by modifying their SD-like elements. In our limited set of genes, we found that engineering SD-like motifs in genes that are translated fast would be easier than tampering with existing SDs in slow genes. Three genes that are translated fast in our codon range of interest were selected, and 12 or 14 mutations were designed for each gene in order to maximize the affinity of the mRNA for the ribosomal anti-SD, while maintaining the amino-acid sequence unaltered (Figure 6\u2014figure supplement 1). The silent mutations enabled robust increases of anti-SD binding affinity in only two genes, ygdD and brnQ, while for the third gene, ybjJ, it only permitted a moderate increase (Figure 6A). In order to test the effect of the mutations on protein folding, we implemented the GFP-folding assay. Indeed, upon overexpressing the wild-type and mutant genes, we observed that the two mutants with robust increase in SD motifs folded better (Figure 6B,C, YgdD and BrnQ), whereas the third gene showed no difference (Figure 6B,C, YbjJ). Thus, SD-like motifs improve membrane protein folding and prevent aggregation, likely by slowing-down translation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/03440/elife-03440-fig6-v2.jpg)\n\n**Figure 6.:** (A) Effect of mutations on affinity for ribosomal anti-Shine\u2013Dalgarno sequence. Lower panels show calculated binding energies to anti-Shine\u2013Dalgarno sequence, similar to Figure 1\u2014figure supplement 1B. wt, wild-type; mut, mutant. Upper panel indicates the nucleotide positions in the coding sequence that code for TM1 and TM2. Note that all proteins and coding sequences are longer than the range of 70 amino-acids and 210 nucleotides shown. (B) Western blot analysis of protein\u2013GFP-His8 hybrids, similar to Figure 5\u2014figure supplement 1. (C) Densitomentry-based quantification of the percentage of the folded state from the total protein. Error bars represent SEM from three independent experiments. * indicates p < 0.01 (one tailed, paired t test).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03440/elife-03440-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Amino-acid (AA) and coding sequences of test genes and mutants. Only the range of amino-acids whose codons were mutated is shown. Amino-acid range is indicated in parenthesis. Mutated nucleotides are indicated in red.\n\n### Translation pauses in targeting of Bacillus subtilis membrane proteins\n\nOur findings indicate that, like in eukaryotes, slow translation during targeting promotes the fidelity of membrane protein production and folding, yet the underlying mechanisms are different. It seems that E. coli compensates for the lack of SRP Alu domain-mediated arrest, at least in part, by strategically positioned SD-mediated pauses. To test the notion of compensation more directly, we turned to analyze the data on B. subtilis, an organism that can potentially utilize both mechanisms. SD-like elements were shown to control translation pauses in B. subtilis, like in E. coli (Li et al., 2012). Additionally, although SRP-mediated arrest was never demonstrated in B. subtilis, unlike E. coli, this organism may have all components required for SRP-mediated arrest: the Alu domain of SRP RNA is present and this domain binds a protein (HBsu) that may function analogously to the eukaryotic SRP14 (Nakamura et al., 1999).\n\nIn order to examine the pausing behavior of B. sublitis, we analyzed ribosome profiling data of this organism (Li et al., 2012). We deliberately analyzed pause events, irrespective of the presence of SD-like sequences, since we suspected that in this bacterium pauses might not necessarily be programmed into the mRNA sequence. Thus, all codons having high local densities (within the top 5%) were counted as pauses. First, we compared membrane and cytosolic proteins by aligning their coding sequences to their start codons and analyzing the fraction of pause codons in each position. Figure 7A,B show that in both B. subtilis and E. coli, pauses were enriched in membrane proteins compared to cytosolic proteins; however, the precise positioning at which the pauses occurred was different. While in E. coli the enrichment occurred around codons 15\u201365, in B. subtilis it occurred only downstream around codons 45\u201385, with a peak at codon 64. Notably, the positioning of transmembrane segments along the sequence was comparable between E. coli and B. subtilis (Figure 7A,B, orange bars and Figure 7\u2014figure supplement 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/03440/elife-03440-fig7-v2.jpg)\n\n**Figure 7.:** (A and B) Percentage of pauses in codons across coding sequences in membrane (mem) and cytoplasmic (cyt) proteins in E. coli (A) and B. subtilis (B). Orange histograms at the bottom indicate the distribution of the position of the first codon of TM2 (similar to Figure 1B). (C) B. subtilis membrane proteins were aligned such that the first residues of TM1 or TM2 or TM3 are aligned to the position 0. The percentage of codons having pauses in every position was analyzed. (D) Visual scheme of the stage at which pause occurs during translation in B. subtilis, similar to Figure 2B. (E) Effect of position relative to TM1 on ribosome densities in positions lacking upstream SD-like elements.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03440/elife-03440-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The first TM residue was taken as the TM position, similar to Figure 1B. N, number of proteins in which the TM starts at the indicated position.\n\nThe different positioning indicates that unlike E. coli, the pauses in B. subtilis were not localized to the regions at or before TM2 (Figure 7B). We suspected that the Alu domain-mediated arrest is functional in B. subtilis, and therefore the pauses are expected to occur upon direct interaction of SRP with the first TM, when the TM emerges out of the ribosome exit tunnel. To examine this, we aligned the coding sequences of B. subtilis membrane proteins to the positions of the first residues of TM1 and the average pause profile was analyzed. This analysis showed a high elevation of pause events that occurred roughly in 45\u201365 codons after synthesis of the first residue of TM1 (Figure 7C,D). Notable, albeit lower, pause peaks were also observed when aligning the coding sequences to TM2 and TM3 (Figure 7C). However, considering that the distance between TM1 and TM2 or TM3 is not very variable (median distances 35 and 72, respectively), these peaks most likely reflect shifted and skewed representations of the peak downstream to TM1.\n\nThe position of the pause 45\u201365 codons downstream to TM1 agrees well with the exposure of the first TM out of the ribosome, where it can directly interact with the SRP (Houben et al., 2005). If this pause is indeed mediated by the Alu domain, then it should operate regardless of SD-like elements. To test SD-independent pauses, we excluded all positions in the sequence that have even weak upstream SD-like elements (\u2018Materials and methods\u2019). Using this SD-depleted data set, we then checked how the translation rate (as judged by the local ribosome density) is affected by the position relative to TM1. The results show that ribosome density 45\u201365 codons downstream to TM1 was significantly elevated compared to other positions (Figure 7E), suggesting that B. subtilis utilizes a pause strategy that is independent of the SD-like sequences, possibly involving the SRP Alu domain. This trend was not observed in E. coli (Figure 7E), suggesting that in the absence of SD-like sequences, the ability of the E. coli SRP to arrest elongation is low, if any. Taken together, our results suggest that B. subtilis employs the eukaryotic-like strategy for slowing the elongation of translated membrane proteins, and consequently does not utilize SD-mediated pauses to this end.\n\n## Discussion\n\nMembrane proteins constitute roughly 25% of the proteomes in all living organisms (Wallin and von Heijne, 1998) and their hydrophobic nature necessitates co-translational insertion. The ubiquitous SRP system is responsible for the timely delivery of ribosomes translating membrane proteins to membrane translocons. The conservation of the Alu domain in both eukaryotes and Gram-positive bacteria suggests that slow elongation during targeting is universally important (Mason et al., 2000; Lakkaraju et al., 2008). Therefore, the lack of this domain in Gram-negative bacteria, such as E. coli, was puzzling since it was not clear if and how such organisms can slow the elongation during targeting. In principle, the control of ribosome speed could be encoded in cis in the translated mRNA, or in trans, for example as in the case of the SRP Alu domain. Recent in vivo studies indicated that the E. coli SRP can inhibit membrane protein translation, but the precise underlying mechanism and the potential for influencing elongation rate are not yet clear (Yosef et al., 2010). Our analyses of in vivo translation rates in E. coli and B. subtilis support the notion that strong SRP-mediated arrest that is SD-independent requires the Alu domain and is therefore probably missing in Gram-negative bacteria. Remarkably, our results suggest that E. coli depends, at least in part, on a cis-encoded means to attenuate translation during targeting, presumably due to the lack of the Alu domain. Other bacteria probably also need to compensate for the lack of Alu domain-mediated translation arrest, and the utilization of SD-mediated pauses might be a general solution.\n\nThe mRNA-programmed mechanism is reminiscent of the Alu domain-mediated one. Both mechanisms act to slow elongation in the early stages of translation, in order to facilitate membrane protein-folding and avoid aggregation. However, there are also notable differences. First, the position of the pauses in E. coli is different from the position of Alu domain-mediated arrest, with the former occurring earlier in translation. The reason for this is currently unclear, but it might be related to the potential for earlier targeting of ribosomes in E. coli, even before the nascent peptide emerges from the ribosome exit tunnel (Bornemann et al., 2008; Holtkamp et al., 2012). Secondly, while the prokaryotic pausing relies on information embedded in the mRNA, the eukaryotic counterpart reads the protein. Lastly, there is a principal strategic difference between the two mechanisms. The SRP-mediated arrest is only relieved after proper targeting and SRP-dissociation, thus ensuring the fidelity of the process (Akopian et al., 2013). In contrast, at present it is reasonable to guess that the mRNA-programmed mechanism probably pauses for a fixed amount of time, without any feedback about the targeting status. In that respect, the SRP-mediated mechanism appears to be more efficient and elegant. Notably, however, it remains to be studied whether SD-mediated pauses may also be influenced by external factors that may report on the translocon arrival, as shown for translation arrest-peptides (Ismail et al., 2012). An attractive possibility is that SD-mediated pauses may somehow cooperate with the bacterial SRP and utilize the feedback provided by SRP-dissociation upon completion of targeting. Such a mechanism may also explain how the E. coli SRP regulates translation (Yosef et al., 2010).\n\nSlow translation is not essential for membrane\u2013protein targeting. In eukaryotes, the arrest function can be abolished by mutation without severely compromising viability (Mason et al., 2000; Lakkaraju et al., 2008). Similarly, in E. coli we observe a notable variability in the rate of translation between different membrane proteins. Our results indicate that slow translation is important especially at elevated protein amounts, when the cell's membrane protein biogenesis capacity might approach saturation. This observation agrees well with recent results in mammalian cells showing that slow translation helps in overcoming rate limitations that arise due to low concentrations of the SRP receptor. It therefore seems that both eukaryotes and prokaryotes possess limiting amounts of membrane protein biogenesis machineries, which may frequently be saturated, creating rate-limiting bottlenecks. These saturation problems are alleviated by slowing down the translation in strategic locations, which allows more time for targeting to complete before further polypeptide synthesis. In a broader perspective, translation pauses are a general strategy that is employed when a process that requires only a portion of the polypeptide is hindered by additional polypeptide segments. Two such processes are the co-translational targeting and the folding of individual domains in the multidomain proteins (Zhang et al., 2009; Pechmann et al., 2013). The time separation provided by the pause allows the completion of these processes without interruption, thus helping to avoid problems in protein folding and aggregation.\n\nFinally, we note that our findings may have implications to membrane protein research in general. Heterologous expression of eukaryotic membrane proteins in E. coli is notoriously difficult, often leading to poor expression of functional proteins, creating a serious bottleneck in the field (Granseth et al., 2009). Our study adds to recent studies revealing the existence of sequence preferences within coding sequences of membrane proteins in E. coli (Prilusky and Bibi, 2009; N\u00f8rholm et al., 2012, 2013), which may need to be obeyed by heterologous coding sequences. For example, SD-mediated pauses are probably lacking a priori in heterologous coding sequences. It therefore seems that in that respect, Gram-positive bacteria such as B. subtilis might be more compatible with eukaryotic membrane protein heterologous expression (Kunji et al., 2005), since they contain a translation arrest logic similar to the eukaryotic one.\n\n## Materials and methods\n\n### Data\n\nGenome sequences and associated data were downloaded from the NCBI FTP site (accessions NC_000913 for E. coli and NC_000964 for B. subtilis). Ribosome profiling data were taken from NCBI GEO accession GSE35641 (samples GSM872393 and GSM872397).\n\n### Protein localization and prediction of transmembrane segments\n\nPredicted locations of TMs for E. coli were from ExTopoDB (Tsaousis et al., 2010). For B. subtilis, TMs were predicted using the TMHMM algorithm (Krogh et al., 2001). Only proteins having at least two TMs were considered as membrane proteins. Cytosolic and periplasmic protein localizations were taken from Uniprot.\n\n### Identification of pause events\n\nRibosome density data were obtained from Li et al. (2012).Only genes with sufficiently high ribosome density reads were analyzed (median density of reads across the coding sequence >0.2). For each gene, the ribosome density in every nucleotide was divided by the median ribosome density across the coding sequence. Codon-wise density was calculated by averaging the nucleotide density in every three nucleotides of each codon. These densities indicate ribosome occupancy when the respective codons are located in the A-site of the ribosome. The first and last four codons were excluded from further analysis since they contain high densities associated with the slow translation initiation and termination. The threshold for pause codon consideration (top 5% of codon-wise density) was calculated by collecting codon density from the entire genome (for E. coli and B. subtilis, the thresholds were 6.06 and 23.4-fold higher than the median, respectively). Programmed pauses in E. coli were defined as codons having density above these thresholds and also having at least one SD-like element 8\u201311 nucleotides upstream of at least one of the codon nucleotides. Shine\u2013Dalgarno-like elements were identified based on the calculated binding energy of 10 nucleotide-long sequences to the ribosomal anti-SD, as described (Li et al., 2012). All positions having calculated binding energy of \u0394G < \u22123.1 kcal/mol, which constitute the lowest 5% (genome-wide), were considered as SD-like elements. We note that these thresholds represent a compromise since even higher \u0394G values may affect the ribosome density, and in addition many places with lower binding energies show no indication of pause (see Figure 1\u2014figure supplement 1C).\n\n### Estimation of translation time\n\nTo estimate differences in translation time, we calculated how much extra ribosome density is associated with a particular set of genes compared to a control set of genes over a specific range of codons. For codon range 16\u201336, we compared membrane and cytosolic genes over codons 16\u201336. A mean difference of 0.56 density units per codon (Figure 4C) over a range of 21 codons yields a difference of 11.8 density units. For codons before TM2, we computed the difference between proteins having or lacking programmed pauses at codons \u22125 to +1 relative to TM2 start. Mathematically, the difference is equal to the area trapped between the two curves in Figure 2D and equals 28 density units. Since the density units in the genes' profiles are normalized to the median codon density of the gene, it is assumed that each single density unit corresponds to the median time it takes the ribosome to translate a single codon. To estimate translation time, we used a previously determined value of elongation rate for the E. coli ribosome of 1 codon per 0.058 s (Young and Bremer, 1976).\n\n### Generation of SD-depleted data sets\n\nAll mRNA positions having calculated the binding energy of \u0394G < 2 kcal/mol were considered potential SD-like elements. Accordingly, ribosome densities 8\u201311 nucleotides downstream of them were excluded from analysis.\n\n### Expression levels\n\nThe median ribosome density of each gene from Li et al. (2012) was taken as expression level. Compared with mRNA levels, this quantity correlates better with protein expression as it reflects both RNA levels and the level of translation from each transcript (Ingolia et al., 2009).\n\n### TM hydrophobicity\n\nSequences corresponding to the first TM were analyzed. TMs shorter than 24 residues were increased to 24 by symmetrically including flanking residues from both sides. A sliding window average of hydrophobicity was calculated with a window length of 18 residues using the Kyte\u2013Doolittle hydrophobicity scale (Kyte and Doolittle, 1982). Only the highest hydrophobicity score was kept for each TM.\n\n### Heterologous expression\n\nPlasmids encoding membrane proteins\u2013GFP-His8 hybrids were previously reported (Daley et al., 2005). Only proteins having cytosolic N- and C-termini (Daley et al., 2005) were analyzed. The plasmids were transformed to E. coli BL21(DE3)pLysS. Overnight cultures grown in LB with kanamycin (30 \u03bcg/ml) and chloramphenicol (34 \u03bcg/ml) were diluted 1:100 into fresh (same) medium and allowed to grow for 2.75 hr at 37\u00b0C, until they reached a typical OD600 of 0.4\u20130.6. Cultures were then induced with 0.4 mM IPTG and allowed to grow for additional 2 hr and transferred to ice. Cells were harvested by centrifugation at 4\u00b0C, washed once with ice-cold buffer A (50 mM Tris\u2013HCl pH 8, 100 mM NaCl, 1 mM EDTA), resuspended in the same buffer at an OD600/ml of 1.5\u20132, and kept at \u221220\u00b0C. For disruption, cells were thawed, supplemented with 1 mM phenylmethanesulfonyl fluoride (PMSF), and sonicated well until the solution cleared completely.\n\n### Fractionation of membranes and aggregates\n\nThe procedure was carried at 4\u00b0C, and the samples were kept from all fractions. The crude sonicated cells (0.8 ml) were ultracentrifuged at 200,000\u00d7g for 30 min. The pellet was thoroughly resuspended in 0.72 ml of buffer A supplemented with 1 mM PMSF and then solubilized by the addition of 80 \u03bcl 10% \u03b2-dodecylmaltoside (Anatrace) and homogenized extensively. Samples were incubated for 30 min on ice and then re-centrifuged at 200,000\u00d7g for 30 min. Portions corresponding to equal amount of the starting material were taken from each fraction, supplemented with 1:4 of 5\u00d7 SDS sample buffer (120 mM Tris\u2013HCl pH 6.8, 50% glycerol, 100 mM DTT, 2% SDS, and 0.1% bromophenol blue), and loaded to 10% SDS-PAGE for analysis.\n\n### Western blotting and in-gel fluorescence\n\nIn-gel fluorescence was recorded using Molecular Dynamics Typhoon 9400 (GE Amersham). The gels were subsequently transferred to nitrocellulose membranes for Western analysis. His-tagged proteins were detected with His probe-HRP (Pierce).\n\n### High throughput quantification of membrane protein aggregation\n\nCultures were grown in 96-well plates with each clone in a single well. Each growth experiment included two independently grown cultures harboring the emrD gene as internal standards. Sonicated cells (0.2 ml) overexpressing membrane proteins were mixed with 0.05 ml 5\u00d7 SDS sample buffer and loaded to 10% SDS-PAGE gels. Each gel included the two emrD standard clones. The gels' proteins were detected for in-gel fluorescence and Western blotting (see above). Densitometric quantifications were carried using ImageQuant TL software (GE Healthcare, Tel-Aviv, Israel). First, the amount of the folded protein was extracted from fluorescence measurements and normalized to that of the folded EmrD (the amount of folded EmrD protein was defined as 1 arbitrary unit). The fraction of folded and aggregated protein for each clone was calculated based on quantification of Western blots. The amounts of aggregated and total protein were calculated by combining the knowledge on amount of the folded protein (from fluorescence) with the fraction of the folded protein (from Western blotting). Quantification values are reported in the Figure 5\u2014source data 1.\n\n### Mutagenesis\n\nMutagenesis was achieved by PCR with 5\u2032-phosphorylated mutagenic primers (Sigma-Aldrich) that amplify the entire plasmid. The PCR products were blunt-end ligated and transformed to E. coli DH5\u03b1. Mutant plasmids were sequenced to verify that they contain only the desired mutations. The primers sequences were: ygdD mutagenesis (GGGCGGTGGAGATGGGGTGGATACAGACGGGGCTCGAATACCAGGCGTTTC and CCATCGTCTTACTCAACACATGCGCCCCAAACGCCCCCAGAGCCACAAAAATGAAG); brnQ mutagenesis (CCTCCAATGGTGGGGTTGCAGGCGGGGGAGCACGTGTGGACTGCGGCATTCG and GAAAATAATGTTCCCCGCCCCCACAAACAACGCAAATGTCATAAAGCC); ybjJ mutagenesis (GGGCGACGAGGACGCCGGCGATAAGGGATATTCTCTCTGTCTCG and ACGACGCCATCAACAACCCCGGCAAAAAGAAGAACATAA).\n",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "dfc32250-da6c-4690-ad16-7cc8ffd1b26d",
+      "submission_id": "0712cfbe-6b32-420c-a4f7-dce847511c83",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nahum Sonenberg, McGill University , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03440.020](https://doi.org/10.7554/eLife.03440.020)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cmRNA-programmed translation pauses in the targeting of E. coli membrane proteins\u201d for consideration at eLife. Your article has been favorably evaluated by Aviv Regev (Senior editor) and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nFluman and colleagues describe a model how translation of membrane proteins is regulated in E. coli to avoid misfolding and aggregation of these proteins. This is an interesting and long-standing question, since the E. coli SRP lacks the Alu domain and it is thus unclear whether SRP can influence the elongation rates of membrane proteins. In a recent study, Yosef and co-authors (MBio, 2010) showed that overexpression of the M-domain of Ffh selectively affected translation of membrane proteins suggesting that Ffh might be responsible for arresting elongation in bacteria. In the present study Fluman and co-authors propose another mechanism of translational pausing based on the analysis of ribosome profiling data obtained by Li et al. (Nature, 2012). The authors suggest that in E. coli elongation pausing during membrane protein synthesis is programmed in the mRNA and mediated by the presence of Shine-Dalgarno-like (SD-like) sequences upstream of the TM2 coding region. Pausing at this position would allow concomitant binding of E. coli SRP to TM1. This mechanism applies to 25% of the membrane protein encoding mRNAs whereas synthesis of the remaining membrane proteins would be regulated by other mechanisms such as long internal loop sequences between TM1 and TM2.\n\nAll the reviewers agree that the paper is interesting, that the computational study is very thorough, and that the results are well presented and suggest an original model. As such it could stimulate research in this area. They also commented that the main conclusion is well reasoned and makes good physical sense. Being mainly computational, the manuscript states the caveats clearly and does not try to oversell the observations.\n\nNonetheless, the findings are largely correlative in nature. The main concern about the observed correlation between internal Shine-Dalgarno sites and transmembrane domains is that, because of the nature of the genetic code, both features have higher propensity towards a subset of amino acids, and non-causal correlation may arise from such effects. For example, glycine-rich regions tend to have more Shine-Dalgarno-like sites (G-rich nucleotide sequences) and to be found in between transmembrane domains (flexible loops). Additionally, among the synonymous codons for the same amino acid, Shine-Dalgarno-like codons tend to be rare codons. Together with the propensity to have rare codons towards the N-terminus of proteins, this might explain the increased number of pauses at the 5' end and the fact that there is diminished pausing at the second transmembrane domain when the second transmembrane domain is farther from the N-terminus (and therefore longer loops in between 1st and 2nd TM). To make a compelling case that evolution selects specifically for SD-like sites to facilitate membrane targeting, the authors need to establish that the enhanced pausing is not simply a by-product of the biases in amino acid or codon choices in this region.\n\nThe paper would be substantially strengthened if a causal link were established between the presence of SD-like sequences and improved folding and expression of membrane proteins. A direct experiment is to surgically remove the pauses and monitor the change in the folding efficiency and membrane targeting. This could be accomplished by introducing synonymous mutations to remove SD-like sequences and use the authors' reporter system to see if there is an enhanced defect in folding or membrane localization. It would nice if in the future you could remove the Alu portion of B. subtilis SRP RNA in the gram positive bacteria B. subtilis, to see if there is corresponding change in translational pausing and folding. For this paper however, you need to emphasize that the idea vis-a-vis B. Subtilis is highly hypothetical.\n\nIn summary, the results presented in this manuscript have potentially important implications for both the coding of bacterial proteins and the translocation mechanism for membrane proteins. A few key additional analysis and experiments as outlined above would remove ambiguity in the interpretation of the results and substantially strengthen the conclusions.\n\nSome specific comments:\n\n1) A concern is the lack of quantitative data on multiple occasions. For instance, it is mentioned that \u201cTo generate a dependable, SD-mediated set of pause sites, we filtered out pause codons for which we could not identify an upstream SD-like element\u201d, however it is not clear what was the number (or percentage of total) of the filtered-out codons. Similarly, in the Materials and methods section the authors note that \u201cthese thresholds represent a compromise since even higher \u0394G values may affect ribosome density and in addition, many places with lower binding energies show no indication of pause\u201d, but unfortunately no data are presented as to what is the number or ratio as whole of these non-fitting occurrences. There are a few more cases of this sort throughout the manuscript. The authors need to clarify these aspects of the report and possibly discuss the statistical significance of the elimination of the non-fitting occurrences and its impact on the final conclusion.\n\n2) While the authors excluded the proteins with TM2 that have extracellular N-termini (despite forming a sizable fraction of the total membrane proteins, 25%), it is not discussed why these proteins don't resemble their intracellular N-termini counterparts in the translational pause mechanism. If the pause is required for prevention of aggregation of the intracellular N-termini proteins, why is it not necessary for the extracellular ones?\n\n3) The following is confusing. The authors first assign the peak of pause to the TM2 of the intracellular N-termini proteins. Yet, when discussing the possible irrelevance of the positive-inside rule in this case it is stated, \u201cthe N-termini of these TMs are actually extra-cellular\u201d. One can't figure out whether the subject is still the intracellular N-termini protein or extracellular ones. On a related note, it would be interesting to investigate whether or not any particular type of amino is enriched in the N-termini of the extracellular ones.\n\n4) Where it is stated that \u201conly \u223c22% of membrane proteins (69 out of 321) have identifiable pauses at codons -5 to +1 relative to TM2 start\u201d. This doesn't seem to be consistent with the earlier statement that 69% of the membrane proteins have at least 1 pause site between codon 16-60. Although it is not clear how many of these membrane proteins have either TM1 or 2 or both, one could infer from Figure1A that the frequency of pause at TM1 and 2 is more or less 50:50. What could explain the discrepancy between 22% and 34.5% (half of 69%)?\n\n5) As a negative control in Figure 2, the ribosome densities aligned to TM2 for membrane protein-encoding mRNAs without SD-like sequences should be shown (the ones that were filtered out). Like in Figure 6e for the TM1 aligned sequences.\n",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a7511363-30b6-4dee-986f-4e18382e8dd8",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C1",
+      "claim": "In eukaryotes, the SRP Alu domain arrests translation elongation of membrane proteins until targeting is complete.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotes, the SRP Alu domain arrests translation elongation of membrane proteins until targeting is complete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "5dfdff98-622a-447d-a872-a26da708fc57",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C2",
+      "claim": "The Alu domain is lacking in most eubacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, however, the Alu domain is lacking in most eubacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "68a73961-cd00-4c3f-adde-58103c659220",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C3",
+      "claim": "Shine-Dalgarno-like elements trigger elongation pauses at strategic positions during the early stages of translation in E. coli membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The underlying mechanism is likely programmed into the coding sequence, where Shine\u2013Dalgarno-like elements trigger elongation pauses at strategic positions during the early stages of translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on genome-wide ribosome profiling data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "afc0722e-95f0-41a1-9357-978b071f6a75",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C4",
+      "claim": "Slow translation during targeting improves membrane protein production fidelity.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide experimental evidence that slow translation during targeting and improves membrane protein production fidelity, as it correlates with better folding of overexpressed membrane proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the GFP-folding assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "50e978d7-ce84-462a-a733-b16de0f2cd96",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C5",
+      "claim": "Membrane proteins are enriched with programmed pauses between codons 16 and 60.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that membrane proteins are enriched with pauses between codons 16 and 60, after which they level-down to values similar to cytosolic proteins (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A with statistical analysis of ribosome profiling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "c6813264-b0dd-4797-9dd2-f5760710a334",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C6",
+      "claim": "69% of membrane proteins have at least one programmed pause position in the codon range 16-60.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, over the entire range of codons from position 16 to 60, we find that 69% of membrane proteins have at least one programmed pause position, significantly higher compared to cytosolic (50%, p = 1.5 \u00d7 10\u22127) and periplasmic proteins (41%, p = 6 \u00d7 10\u22128, Z-test for 2 proportions) (Figure 1A, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of ribosome profiling data shown in Figure 1A inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "54131fe0-9adb-4c3b-afc4-bdd20feac62c",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C7",
+      "claim": "A peak of high pause frequency occurs just before the start of TM2 in membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found a peak of high pause frequency just before the start of TM2 (Figure 2C) (p = 3 \u00d7 10\u22126, 2-sample t test), extending from five codons before TM2 to the second codon of the TM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "76df8be7-850c-4ec6-ad28-a3e226ba4da3",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C8",
+      "claim": "The pause peak before TM2 is sharper in proteins with intracellular N-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, the peak is much sharper when considering only proteins with intracellular N-termini (Figure 2D) (p = 4 \u00d7 10\u22129, 2-sample t test), in which TM2 occurs in 'Type-I topology' (the N-terminus of TM2 is extracellular), suggesting that proteins with extracellular N-termini do not pause before TM2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "4bacbdff-f3b6-4e9c-9893-4e06b98a2e27",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C9",
+      "claim": "Pauses occur approximately 35 \u00b1 13 codons after the beginning of the first TM.",
+      "claim_type": "EXPLICIT",
+      "source": "The pauses occur 35 \u00b1 13 codons after the beginning of the first TM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "33585322-9548-48d2-9ad4-071a3fe79407",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C10",
+      "claim": "The ribosome exit tunnel admits approximately 28 amino acids of the extended polypeptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the exit tunnel of the ribosome admits \u223c28 amino acids of the extended polypeptide (Bornemann et al., 2008), pausing of the ribosome at these positions means that in most proteins the first TM has partially emerged out of the ribosome during pausing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bornemann et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "7ae29375-c45a-4494-ae99-651e1b253479",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C11",
+      "claim": "Only approximately 25% of membrane proteins have identifiable pauses at codons -5 to +1 relative to TM2 start.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only \u223c25% of membrane proteins (59 out of 237) have identifiable pauses at codons \u22125 to +1 relative to TM2 start, and indeed only these proteins display high local ribosome density in this region (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of ribosome profiling data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "0d1d16eb-b4fd-4afb-84d5-875ed53abc97",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C12",
+      "claim": "The pause duration before TM2 is approximately 1.5 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "The quantitative difference in density between proteins with and without pause in Figure 2E suggests that the pause duration is approximately 1.5 s (roughly the time it takes to translate 28 codons, see 'Materials and methods').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the ribosome density differences shown in Figure 2E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "6d5d151d-3350-4ec6-a148-ee564bec64e4",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C13",
+      "claim": "The SD motif is necessary to generate the observed pauses before TM2.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that upon SD exclusion, the slow-down in this region was nearly abolished (Figure 2F) suggesting that the SD motif is necessary to generate the observed pauses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2F where SD-like elements were excluded from analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "0a4b7542-0b02-4288-980d-ad0f16a11597",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C14",
+      "claim": "Proteins with pause before TM2 had higher expression on average compared to proteins without pause.",
+      "claim_type": "EXPLICIT",
+      "source": "First, proteins with pause had higher expression on an average (p = 0.004, two sample t test) (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2A with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "a8f17668-ca4c-45d9-8500-e10f3d8178b5",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C15",
+      "claim": "TM1 in proteins with pause is less hydrophobic compared to proteins without identifiable pauses.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, we find that TM1 in proteins with pause is less hydrophobic compared to proteins without identifiable pauses, suggesting that proteins with pause may have compromised affinity for SRP (Lee and Bernstein, 2001), (p = 0.006, two sample t test) (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2B with statistical analysis and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "d26d44dc-433c-4a9e-87ec-40d0abab3038",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C16",
+      "claim": "First loops between TM1 and TM2 are enriched for long lengths of \u226560 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our analysis revealed that first loops (i.e., those between TM1 and TM2) are enriched for long lengths of \u226560 residues and depleted of short lengths of \u226410 residues (Figure 3A, Figure 3\u2014figure supplement 1A) (p = 6 \u00d7 10\u221210 and p = 3 \u00d7 10\u22123 respectively, hypergeometric test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "99b37684-4a52-4a50-8afd-79937db8963e",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C17",
+      "claim": "Proteins having long first loops (\u226560 residues) almost never had pauses before TM2 compared to proteins with shorter loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that proteins having long first loops (\u226560 residues, 34 proteins) almost never had pauses before TM2 compared to proteins with shorter loops (Figure 3B) (p = 0.01, hypergeometric test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "b0136be3-790a-4f73-9d0e-977b3e910255",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C18",
+      "claim": "Programmed pauses are enriched in membrane proteins compared to cytosolic proteins in codons 16-36.",
+      "claim_type": "EXPLICIT",
+      "source": "Programmed pauses were enriched in membrane proteins compared to cytosolic proteins (p = 4 \u00d7 10\u22128, Z-test for two proportions) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "9c9ec3cd-88d2-498f-93b1-c0c25719a7f0",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C19",
+      "claim": "Local ribosome densities in membrane proteins mRNAs in codons 16-36 were significantly higher than those of cytosolic proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, local ribosome densities in membrane proteins mRNAs were significantly higher than those of cytosolic proteins (p = 1 \u00d7 10\u221236, 2-sample t test) (Figure 4C), suggesting slower translation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "76bd6c9c-c18c-4332-81db-86a7d39137be",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C20",
+      "claim": "Translation in codons 16-36 is slowed by approximately 0.6 seconds in membrane proteins compared to cytosolic proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "A mean difference of 0.56 density units per codon (Figure 4C) over a range of 21 codons indicates that translation is slowed by \u223c0.6 s (the time required to translate 12 codons, see 'Materials and methods') compared to the average cytosolic protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the density differences shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "71d0ea0c-238b-4eb9-af08-9e8b8ebcb701",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C21",
+      "claim": "E. coli's SRP can efficiently target ribosome-nascent-chain complexes to the membrane before the nascent peptide emerges from the exit tunnel.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent studies showed that E. coli's SRP can efficiently target such ribosome-nascent-chain complexes to the membrane (Bornemann et al., 2008; Holtkamp et al., 2012) and that this is done regardless of the class of translated proteins (cytosolic/membrane/periplasmic).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Bornemann et al., 2008 and Holtkamp et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "86227e15-cac3-49eb-9ce0-642e2b4a4076",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C22",
+      "claim": "Membrane proteins with at least 80 residues before TM1 did not show elevated pause frequency at codons 16-36.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, unlike other membrane proteins, proteins with at least 80 residues before TM1 (n = 16) did not show an elevated pause frequency at codons 16\u201336 (p = 0.01, Z-test for two proportions), nor did they show elevated ribosome density (p = 0.013, one-tailed two-sample t test) (Figure 4B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4B,D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "3117cb46-5734-4be8-a716-8061138c9387",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C23",
+      "claim": "Genes with slower translation at codons 16-36 and before TM2 showed a 95% elevation in expression of the folded protein form compared with genes having fast translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, genes with slower translation at these codons showed a 95% elevation in expression of the folded protein form, compared with genes having fast translation (p = 3 \u00d7 10\u22124, two-sample t test) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B with statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "794deb5e-d665-4ff2-9cf5-d8bb8817f55c",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C24",
+      "claim": "Translation speed during targeting does not affect the expression of the unfolded/aggregated form of the proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference was not observed for expression of the unfolded/aggregated form of the proteins (Figure 5C), suggesting that translation speed during targeting specifically influences the extent of correct folding rather than affecting the overall expression level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "6ad7236d-9738-46ee-9cc0-9d6c6439448b",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C25",
+      "claim": "The percentage of unfolded protein was significantly correlated with the total level of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage of unfolded protein was significantly correlated with the total level of the protein (folded + unfolded) (Spearman's r = 0.65, p = 6 \u00d7 10\u221212, Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "113df79d-8094-4258-9b04-23c1a080b267",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C26",
+      "claim": "Engineered SD-like motifs in ygdD and brnQ genes improved membrane protein folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, upon overexpressing the wild-type and mutant genes, we observed that the two mutants with robust increase in SD motifs folded better (Figure 6B,C, YgdD and BrnQ), whereas the third gene showed no difference (Figure 6B,C, YbjJ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6B,C with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "17b11d37-7afb-47a2-afa0-29e7f4a26c42",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C27",
+      "claim": "SD-like motifs improve membrane protein folding and prevent aggregation, likely by slowing-down translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, SD-like motifs improve membrane protein folding and prevent aggregation, likely by slowing-down translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the mutagenesis experiments shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "d9a0e29a-f815-47e9-8fa8-e032b90d67b0",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C28",
+      "claim": "In B. subtilis, pauses in membrane proteins occur around codons 45-85, with a peak at codon 64.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 7A,B show that in both B. subtilis and E. coli, pauses were enriched in membrane proteins compared to cytosolic proteins; however, the precise positioning at which the pauses occurred was different. While in E. coli the enrichment occurred around codons 15\u201365, in B. subtilis it occurred only downstream around codons 45\u201385, with a peak at codon 64.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7A,B comparing E. coli and B. subtilis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "afd124c7-e9cc-4de2-891e-5bcc7e5f380b",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C29",
+      "claim": "B. subtilis shows a high elevation of pause events roughly 45-65 codons after synthesis of the first residue of TM1.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed a high elevation of pause events that occurred roughly in 45\u201365 codons after synthesis of the first residue of TM1 (Figure 7C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "a6eb4d67-ec9e-49fa-afbe-a6edb0881ea3",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C30",
+      "claim": "In B. subtilis, ribosome density 45-65 codons downstream to TM1 was significantly elevated compared to other positions in SD-depleted data.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that ribosome density 45\u201365 codons downstream to TM1 was significantly elevated compared to other positions (Figure 7E), suggesting that B. subtilis utilizes a pause strategy that is independent of the SD-like sequences, possibly involving the SRP Alu domain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7E using SD-depleted data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "b3c1d3f2-62ca-44bb-bb25-ef8c49fec547",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C31",
+      "claim": "The trend of elevated ribosome density 45-65 codons downstream to TM1 was not observed in E. coli in SD-depleted data.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend was not observed in E. coli (Figure 7E), suggesting that in the absence of SD-like sequences, the ability of the E. coli SRP to arrest elongation is low, if any.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7E comparing E. coli and B. subtilis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "8f544b81-b59d-47a3-8921-8c02f92b91c5",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C32",
+      "claim": "B. subtilis employs the eukaryotic-like strategy for slowing the elongation of translated membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results suggest that B. subtilis employs the eukaryotic-like strategy for slowing the elongation of translated membrane proteins, and consequently does not utilize SD-mediated pauses to this end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the analysis of B. subtilis ribosome profiling data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "d3f03b19-2dfb-4d8c-9cdd-dab407d8fb8e",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C33",
+      "claim": "Membrane proteins constitute roughly 25% of the proteomes in all living organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane proteins constitute roughly 25% of the proteomes in all living organisms (Wallin and von Heijne, 1998) and their hydrophobic nature necessitates co-translational insertion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Wallin and von Heijne, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "4e84e83d-72fa-45d2-8138-6f76c6bcb5b1",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C34",
+      "claim": "The ubiquitous SRP system is responsible for the timely delivery of ribosomes translating membrane proteins to membrane translocons.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitous SRP system is responsible for the timely delivery of ribosomes translating membrane proteins to membrane translocons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "5163428c-1f58-4c8b-bd36-993783f3ac32",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C35",
+      "claim": "Gram-positive bacteria typically possess an Alu domain and Gram-negatives, such as E. coli, are typically devoid of it.",
+      "claim_type": "EXPLICIT",
+      "source": "Puzzlingly, however, the bacterial world displays a dichotomy in the structure of the SRP, wherein Gram-positive bacteria typically possess an Alu domain and Gram-negatives, such as E. coli, are typically devoid of it (Regalia et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Regalia et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "91f6b3d0-0109-4d01-9ead-0bd49f1a46e3",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C36",
+      "claim": "In vitro translation studies suggested that the Escherichia coli SRP cannot arrest translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, in vitro translation studies suggested that the Escherichia coli SRP cannot arrest translation (Raine et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Raine et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "565c6ece-af28-48a4-af1a-1c340ba048c4",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C37",
+      "claim": "Many if not most of the pause sites in E. coli are mediated by internal Shine-Dalgarno-like elements.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable example is found in E. coli, where many if not most of the pause sites are mediated by internal Shine\u2013Dalgarno-like elements, which are capable of transiently binding to the ribosome as it translates the mRNA (Li et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Li et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "2aee3b4f-e7ba-401e-a706-bd7ffa2fad58",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C38",
+      "claim": "The eukaryotic SRP arrests the elongation upon binding to ribosome-nascent chain complexes through the SRP Alu domain that binds to the elongation factor binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The arrest is mediated through the SRP Alu domain that binds to the elongation factor binding site (Halic et al., 2004) and is kept until the ribosome arrives at the translocon, causing the SRP dissociation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Halic et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "6b72ac47-11da-40fd-bdc8-fdc8219f4d71",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C39",
+      "claim": "Ribosome profiling enables the estimation of elongation rates on a genome-wide level and at a single codon resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, our ability to measure translation rates was revolutionized by the technology of ribosome profiling, enabling the estimation of elongation rates on a genome-wide level and at a single codon resolution (Ingolia et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Ingolia et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "a619d10d-722d-4afd-9326-97bb35305bf1",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C40",
+      "claim": "The elongation rate can modulate protein folding and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies indicate that the elongation rate can modulate protein folding and function (Kimchi-Sarfaty et al., 2007; Zhang et al., 2009; Yona et al., 2013; Zhou et al., 2013), but the underlying mechanisms are not yet well understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "9e18a99e-4a53-45ef-8400-93530c0c2e62",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C41",
+      "claim": "Membrane proteins are extremely hydrophobic and aggregation-prone and are therefore inserted into the membrane co-translationally.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane proteins are extremely hydrophobic and aggregation-prone and are therefore inserted into the membrane co-translationally (White and von Heijne, 2008; Luirink et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from White and von Heijne, 2008 and Luirink et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "c2a77173-de3c-4b28-9be6-41582da8e9d1",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C42",
+      "claim": "Membrane proteins must be targeted to the translocon early in translation before large polypeptide portions are synthesized.",
+      "claim_type": "EXPLICIT",
+      "source": "To do so, they must be targeted to the translocon early in translation before large polypeptide portions are synthesized (Lakkaraju et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Lakkaraju et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "60ddbf1a-4003-43ac-a475-611c5d32aa38",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C43",
+      "claim": "The SRP binds to the first transmembrane segment that emerges from the ribosome and directs it together with the translocon-associated SRP receptor to the translocon.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathway works such that the SRP binds to the first transmembrane segment (TM) that emerges from the ribosome and directs it together with the translocon-associated SRP receptor to the translocon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the SRP pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "04cedfa4-95e0-4d2f-8438-70aa4a3597c2",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C44",
+      "claim": "The eukaryotic SRP arrests elongation to prevent protein synthesis before targeting is complete.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotes, the SRP arrests the elongation upon binding to ribosome-nascent chain complexes, in order to prevent the protein synthesis before targeting is complete (Walter and Blobel, 1981; Mason et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Walter and Blobel, 1981 and Mason et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "e96d4547-bc9b-423f-902a-0e8cfa7d64d4",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C45",
+      "claim": "B. subtilis possesses the Alu domain of SRP RNA and this domain binds a protein (HBsu) that may function analogously to the eukaryotic SRP14.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, although SRP-mediated arrest was never demonstrated in B. subtilis, unlike E. coli, this organism may have all components required for SRP-mediated arrest: the Alu domain of SRP RNA is present and this domain binds a protein (HBsu) that may function analogously to the eukaryotic SRP14 (Nakamura et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Nakamura et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "660d8138-d115-4400-add4-33c0d32387e3",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C46",
+      "claim": "Unfolding or aggregation of GFP-fused proteins hinders GFP-folding and -fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "The discrimination is possible because unfolding or aggregation of fused proteins hinders GFP-folding and -fluorescence, whereas folded and fluorescent GFP is indicative of the functional and folded fused protein (Geertsma et al., 2008; Linares et al., 2010; M\u00fcller-Lucks et al., 2012; Schlegel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple studies on the GFP-folding assay.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "05d720d9-2e0c-4b67-9fb3-bf5a3072a157",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C47",
+      "claim": "Only the folded GFP-coupled forms of membrane proteins were soluble with mild detergent, while the unfolded forms were insoluble and probably aggregated.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of fractionation studies showed that only the folded GFP-coupled forms were soluble with mild detergent, while the unfolded forms were insoluble and probably aggregated (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1A with experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "e3435e1e-5c53-40bd-80bc-ce79c916217e",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C48",
+      "claim": "The cell's capacity to produce high amounts of folded membrane proteins is limited, and increased expression levels result in increased aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that regardless of the identity of the overexpressed protein, the cell's capacity to produce high amounts of folded membrane proteins is limited, and increased expression levels would result in increased aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation shown in Figure 5D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "a3fffd67-91c0-43fd-8b93-3b19a47f8dd6",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C49",
+      "claim": "As total protein levels increase, the levels of folded proteins approach saturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, we observe that as total protein levels increase, the levels of folded proteins approach saturation (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "eac7ff52-f91e-4b2a-8e55-dbcd583ff20e",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C50",
+      "claim": "Proteins that are translated fast saturated at relatively low amounts of folded protein, while slowly translated proteins converged to higher saturation levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the saturation curves show remarkable differences between proteins that are translated with different speed regimes in our codon range of interest. Proteins that are translated fast saturated at relatively low amounts of folded protein (apart from a single protein), while slowly translated proteins converged to higher saturation levels, if they saturated at all (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "972c6f08-8a3e-4d45-b275-5f809df1d009",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C51",
+      "claim": "Slow translation during targeting supports less aggregation of the overexpressed proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is contributed by translation slowing at both codons 16 to 36 and at codons before TM2 (Figure 5\u2014figure supplement 2A). The trend is also reflected by the difference between the groups in Figure 5D and suggests that slow translation during targeting supports less aggregation of the overexpressed proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 5D and 5\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "15ad88e0-b592-40b5-949a-6452f2eea213",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C52",
+      "claim": "Slow translation is important especially at elevated protein amounts, when the cell's membrane protein biogenesis capacity might approach saturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that slow translation is important especially at elevated protein amounts, when the cell's membrane protein biogenesis capacity might approach saturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the expression experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "70db3590-ea80-4a3c-8094-57bf92e52ac5",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C53",
+      "claim": "The arrest function in eukaryotes can be abolished by mutation without severely compromising viability.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotes, the arrest function can be abolished by mutation without severely compromising viability (Mason et al., 2000; Lakkaraju et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Mason et al., 2000 and Lakkaraju et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "56d1ca26-6741-408a-b46d-1fedb7bbc84b",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C54",
+      "claim": "Heterologous expression of eukaryotic membrane proteins in E. coli is notoriously difficult, often leading to poor expression of functional proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterologous expression of eukaryotic membrane proteins in E. coli is notoriously difficult, often leading to poor expression of functional proteins, creating a serious bottleneck in the field (Granseth et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Granseth et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "c0a34834-41e1-48ed-8db7-8d59a4a16f90",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C55",
+      "claim": "Gram-positive bacteria such as B. subtilis might be more compatible with eukaryotic membrane protein heterologous expression than E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "It therefore seems that in that respect, Gram-positive bacteria such as B. subtilis might be more compatible with eukaryotic membrane protein heterologous expression (Kunji et al., 2005), since they contain a translation arrest logic similar to the eukaryotic one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the findings and cited from Kunji et al., 2005.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "76b06b50-1560-41f8-8db6-124b70cf833f",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C56",
+      "claim": "E. coli depends, at least in part, on a cis-encoded means to attenuate translation during targeting, presumably due to the lack of the Alu domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, our results suggest that E. coli depends, at least in part, on a cis-encoded means to attenuate translation during targeting, presumably due to the lack of the Alu domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the analyses of E. coli and B. subtilis ribosome profiling data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "92a6bb71-209d-4e34-9c11-55472e57d5fd",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C57",
+      "claim": "The position of the pauses in E. coli is different from the position of Alu domain-mediated arrest, with the former occurring earlier in translation.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the position of the pauses in E. coli is different from the position of Alu domain-mediated arrest, with the former occurring earlier in translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from comparing E. coli and B. subtilis pause patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "7ae06692-7bd6-4a9e-819b-48a387419796",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C58",
+      "claim": "The prokaryotic pausing relies on information embedded in the mRNA, while the eukaryotic counterpart reads the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, while the prokaryotic pausing relies on information embedded in the mRNA, the eukaryotic counterpart reads the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mechanisms described.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "d0ab0dc4-ab5e-4387-97e5-f1983a63e756",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C59",
+      "claim": "The SRP-mediated arrest is only relieved after proper targeting and SRP-dissociation, thus ensuring the fidelity of the process.",
+      "claim_type": "EXPLICIT",
+      "source": "The SRP-mediated arrest is only relieved after proper targeting and SRP-dissociation, thus ensuring the fidelity of the process (Akopian et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Akopian et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "a2772af7-4b9c-4c12-821d-4b1af3d0e5b1",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C60",
+      "claim": "The mRNA-programmed mechanism probably pauses for a fixed amount of time, without any feedback about the targeting status.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at present it is reasonable to guess that the mRNA-programmed mechanism probably pauses for a fixed amount of time, without any feedback about the targeting status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the nature of SD-mediated pauses.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "a798b951-999e-4a1e-ac3e-c4bf8d5398de",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C61",
+      "claim": "Both eukaryotes and prokaryotes possess limiting amounts of membrane protein biogenesis machineries, which may frequently be saturated, creating rate-limiting bottlenecks.",
+      "claim_type": "EXPLICIT",
+      "source": "It therefore seems that both eukaryotes and prokaryotes possess limiting amounts of membrane protein biogenesis machineries, which may frequently be saturated, creating rate-limiting bottlenecks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results and cited studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "e3b7a4b7-c525-4204-b360-178fb70136c2",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C62",
+      "claim": "Translation pauses are a general strategy that is employed when a process that requires only a portion of the polypeptide is hindered by additional polypeptide segments.",
+      "claim_type": "EXPLICIT",
+      "source": "In a broader perspective, translation pauses are a general strategy that is employed when a process that requires only a portion of the polypeptide is hindered by additional polypeptide segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "8d2bb427-60d6-4f6b-af7b-2edb2c609f74",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C63",
+      "claim": "Two processes that benefit from translation pauses are the co-translational targeting and the folding of individual domains in the multidomain proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Two such processes are the co-translational targeting and the folding of individual domains in the multidomain proteins (Zhang et al., 2009; Pechmann et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Zhang et al., 2009 and Pechmann et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "8e3f6910-9456-41cf-90b8-ba4de594a8a3",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C64",
+      "claim": "SD-mediated pauses are probably lacking a priori in heterologous coding sequences expressed in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, SD-mediated pauses are probably lacking a priori in heterologous coding sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the findings about SD-mediated pauses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "3bd02710-053c-4d29-ada3-2e54d83da4bd",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C65",
+      "claim": "Codons constituting the 5% of the most dense codons genome-wide correspond to approximately sixfold higher density than the median density of genes in which they reside.",
+      "claim_type": "EXPLICIT",
+      "source": "We considered 'pause codons' as those that constitute the 5% of the most dense codons genome-wide, corresponding to \u223csixfold higher density than the median density of genes in which they reside (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the threshold used for pause calling as shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "eb89ba1d-8553-424b-981a-f7defef450d7",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C66",
+      "claim": "Programmed pauses constitute approximately 2.5% of all codons.",
+      "claim_type": "EXPLICIT",
+      "source": "Codons that passed both filters (high local density and SD-like element) constitute \u223c2.5% of all codons and we refer to them as 'programmed pauses'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the filtering criteria applied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "95bf813f-3494-4a8d-bad7-763774e279b8",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C67",
+      "claim": "The first and last four codons were excluded from pause analysis since they contain high density related to an initiation 'ramp' and translation termination.",
+      "claim_type": "EXPLICIT",
+      "source": "The first and last four codons were excluded since they contain high density related to an initiation 'ramp' and translation termination, respectively (Tuller et al., 2010; Oh et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Tuller et al., 2010 and Oh et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "5583f364-aab7-446c-a6fb-aff998bdcc44",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C68",
+      "claim": "Ribosome density in normalized profiles is inversely proportional to translation speed under steady-state conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming that ribosomes flow along mRNAs is in steady-state, ribosome density in these profiles is inversely proportional to translation speed (Tuller et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Tuller et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "34174337-4498-4747-8f20-f8af391c2d43",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C69",
+      "claim": "The E. coli ribosome translates at a rate of 1 codon per 0.058 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "To estimate translation time, we used a previously determined value of elongation rate for the E. coli ribosome of 1 codon per 0.058 s (Young and Bremer, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Young and Bremer, 1976.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "4791cc8b-cb4e-45ad-8f97-8bec08d0130e",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C70",
+      "claim": "Consecutive loops locations between the other TMs showed no significant enrichment for longer loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Consecutive loops locations between the other TMs showed no significant enrichment for longer loop (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "5fb14a63-8165-4384-988f-5ae2bbb8f8e1",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C71",
+      "claim": "Positively charged residues, glycine codons, or rare codons are not significantly enriched in codons 16-60 in membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 1\u2014figure supplement 2, we exclude several such biases for membrane proteins, by showing that positively-charged residues, glycince codons, or rare codons are not significantly enriched in codons 16\u201360 in membrane proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "1cab7eef-3dee-430c-801b-21a526564920",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C72",
+      "claim": "Periplasmic proteins show apparent depletion of pause in their N-terminal codons, likely due to the presence of N-terminal signal peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, however, such abundant biases in periplasmic proteins may explain the apparent depletion of pause in their N-terminal codons (Figure 1A, Figure 1\u2014figure supplement 2), likely due to the presence of N-terminal signal peptides.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "5a94f739-c82b-4000-b99a-a9d81fabf3c2",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C73",
+      "claim": "The main difference in amino acid composition before TM2 between proteins with intracellular vs extracellular N-termini is excess of arginines and lysines in proteins with extracellular N-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore the difference between the two groups, we analyzed amino acid biases before TM2 (Figure 2\u2014figure supplement 1A). The main difference was excess of arginines and lysines before the TM in proteins with extracellular N-termini, in accordance with the 'positive inside rule' (von Heijne, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1A and cited from von Heijne, 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "9c689ee3-1fe7-418b-a0cf-bd303e8b1536",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C74",
+      "claim": "The peak of pause before TM2 could not be explained by amino-acid biases at this location in proteins with intracellular N-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, when considering only the remaining proteins set (i.e., with intracellular N-termini), the peak of pause before TM2 could not be explained by amino-acid biases at this location since the slightly enriched amino acids there (Figure 2\u2014figure supplement 1A), are not encoded by G-nucleotide-rich codons that resemble the SD motif.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "3b7dc76f-fa48-42bc-9bbe-219ffb78f65c",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C75",
+      "claim": "The peak of pause in membrane proteins was specifically related to TM2, as similar peaks were not found when aligning the coding sequences according to other TMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the peak of pause in the proteins was specifically related to TM2, as we could not find similar peaks when aligning the coding sequences according to other TMs (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "65486c74-5545-4406-aee6-63cebf38f8bd",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C76",
+      "claim": "Slow elongation rates may rescue defects in the SRP-mediated targeting of membrane proteins with sub-optimal targeting signals.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with a recent study showing that slow elongation rates may rescue defects in the SRP-mediated targeting of membrane proteins with sub-optimal targeting signals, likely by extending the time window for productive targeting (Zhang and Shan, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Zhang and Shan, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "11bc4431-7907-4419-bd32-a0726d939974",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C77",
+      "claim": "Slow translation at other more downstream codon locations may also be beneficial for folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, slow translation at other more downstream codon locations may also be beneficial for folding (Figure 5\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "ae5e92a5-f7b1-49d3-ac3a-22c1964723c7",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C78",
+      "claim": "Slow translation is much more common at codons 16-60 than downstream.",
+      "claim_type": "EXPLICIT",
+      "source": "However, slow translation is much more common at codons 16\u201360, that is at the codon region that covers regions I and II, than downstream (Figure 5\u2014figure supplement 2B), suggesting that slowing during targeting is of particular importance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "b455d8a7-4113-4300-b612-37188cade23a",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C79",
+      "claim": "Regardless of the protein identity, slow translation during targeting is associated with better folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the results suggest that regardless of the protein identity, slow translation during targeting is associated with better folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the expression experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "3b2112be-b987-4fcb-b532-de22e8bbe0fc",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C80",
+      "claim": "The effect of slow translation on folding appears to depend on expression level and is possibly required only when membrane protein biogenesis becomes saturated.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the effect appears to depend on expression level and is possibly required only when membrane protein biogenesis becomes saturated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the expression level-dependent effects shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "4c7d025c-83c6-440b-81da-4b0613a8085a",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C81",
+      "claim": "The presence of pauses in many proteins may alleviate the burden on cellular quality control under endogenous expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the presence of pauses in many proteins may alleviate the burden on cellular quality control under endogenous expression levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "23cd76c0-db52-45a0-b582-65f4b17486d7",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C82",
+      "claim": "Notable pause peaks were observed when aligning B. subtilis coding sequences to TM2 and TM3, but these likely reflect shifted representations of the peak downstream to TM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Notable, albeit lower, pause peaks were also observed when aligning the coding sequences to TM2 and TM3 (Figure 7C). However, considering that the distance between TM1 and TM2 or TM3 is not very variable (median distances 35 and 72, respectively), these peaks most likely reflect shifted and skewed representations of the peak downstream to TM1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7C and explained by the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "32629ead-c402-4024-9e30-9c1dc11110ad",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C83",
+      "claim": "The position of the pause 45-65 codons downstream to TM1 in B. subtilis agrees well with the exposure of the first TM out of the ribosome, where it can directly interact with the SRP.",
+      "claim_type": "EXPLICIT",
+      "source": "The position of the pause 45\u201365 codons downstream to TM1 agrees well with the exposure of the first TM out of the ribosome, where it can directly interact with the SRP (Houben et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Houben et al., 2005.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "19c2e540-5177-48c4-bcb7-31fbca9a634d",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "claim_id": "C84",
+      "claim": "The positioning of transmembrane segments along the sequence was comparable between E. coli and B. subtilis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the positioning of transmembrane segments along the sequence was comparable between E. coli and B. subtilis (Figure 7A,B, orange bars and Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7A,B and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c8cc6d58-c2da-4167-b7ae-6fbd1c937414",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context that eukaryotes use the SRP Alu domain to arrest translation during membrane protein targeting, while most eubacteria (particularly Gram-negative bacteria like E. coli) lack this domain. This dichotomy creates a fundamental question about how E. coli manages translation speed during targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C35, C36, C38, and C44 collectively establish well-supported background knowledge from the literature. These claims are appropriately cited and represent established understanding in the field, providing the necessary context for the study's central hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "65223c1e-3187-4e41-b931-929966d37cda",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "E. coli membrane proteins show enrichment of programmed pauses (defined as high ribosome density codons with upstream SD-like elements) in codons 16-60, with 69% having at least one pause in this region compared to 50% of cytosolic proteins. This enrichment is not explained by amino acid composition biases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C65-C68, and C71 describe a statistically significant enrichment of programmed pauses in membrane proteins with appropriate statistical tests (p = 1.5 \u00d7 10\u207b\u2077) and controls for confounding factors. The methodology for defining pauses (top 5% density, ~6-fold over median) is clearly described and the exclusion of potential biases strengthens the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "d4350697-d529-4e8c-9129-c6c8804e5c07",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A peak of programmed pauses occurs 5 codons before to 2 codons into TM2 in membrane proteins with intracellular N-termini, approximately 35\u00b113 codons after TM1 begins. Only ~25% of membrane proteins show identifiable pauses at this location, with an estimated pause duration of ~1.5 seconds. SD-like elements are necessary for these pauses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9, C11-C13, and C73-C75 provide converging evidence for TM2-associated pauses with strong statistical support (p = 4 \u00d7 10\u207b\u2079 for intracellular N-termini). The SD-dependence is demonstrated by ablation experiments (Figure 2F), and alternative explanations based on amino acid composition are ruled out. The pause duration calculation is reasonable given the methodology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "61857077-5345-4ff2-a21d-517d2ab681e1",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Membrane proteins with pauses before TM2 have higher expression levels and less hydrophobic TM1 segments compared to proteins without pauses, suggesting pauses may compensate for compromised SRP affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C15, and C76 show statistically significant differences (p = 0.004 and p = 0.006) between proteins with and without TM2 pauses. The interpretation that less hydrophobic TM1 may compromise SRP binding is supported by citation and provides a mechanistic rationale for why certain proteins require pauses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "e253ebdd-84b6-4e4b-81d7-02c79adcd6ac",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "First loops (between TM1 and TM2) are enriched for long lengths (\u226560 residues) and proteins with long first loops rarely have pauses before TM2, suggesting long loops serve as an alternative mechanism to delay TM2 synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C17, and C70 demonstrate statistically significant enrichment of long first loops (p = 6 \u00d7 10\u207b\u00b9\u2070) and their inverse relationship with TM2 pauses (p = 0.01). The specificity to first loops (C70) strengthens the interpretation that this is a functionally relevant alternative strategy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "7cafd120-163a-4d85-8a06-c89e3ce7f0a4",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Membrane proteins show enriched programmed pauses and elevated ribosome density in codons 16-36 compared to cytosolic proteins, corresponding to ~0.6 seconds of slowed translation. This enrichment is absent in membrane proteins with \u226580 residues before TM1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 and C22 provide strong statistical evidence (p = 4 \u00d7 10\u207b\u2078 for pause frequency, p = 1 \u00d7 10\u207b\u00b3\u2076 for density) for early pauses in membrane proteins. The exception for proteins with long N-termini (C22) is consistent with the proposed targeting mechanism and strengthens the mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "774b8f03-113e-4c6e-bad5-a30f398241a5",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Membrane proteins with slower translation at codons 16-36 and before TM2 show 95% higher expression of folded protein compared to fast-translated proteins when overexpressed. This effect is expression-level dependent, with slowly translated proteins showing higher saturation levels for folded protein, suggesting slow translation helps prevent aggregation when membrane protein biogenesis capacity is saturated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 and C48-C52 present experimental evidence from the GFP-folding assay with strong statistical support (p = 3 \u00d7 10\u207b\u2074). The correlation between total expression and unfolded percentage (r = 0.65, p = 6 \u00d7 10\u207b\u00b9\u00b2) and the differential saturation behavior provide mechanistic insight. The experimental design appropriately distinguishes folded from unfolded protein.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "2c1289b3-8920-4eac-a8ce-220e5b07a7c8",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Engineering SD-like motifs into genes ygdD and brnQ improved membrane protein folding when overexpressed, demonstrating that SD-mediated pauses causally improve folding by slowing translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26 and C27 provide direct experimental evidence for causality through mutagenesis. The fact that two genes with robust SD increases showed improved folding while one with moderate increase did not (ybjJ) provides an appropriate dose-response relationship. This is critical validation of the correlative observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "c4091899-f263-4a80-8ea4-14d904aa5397",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "B. subtilis shows pause enrichment in membrane proteins at codons 45-85 (peak at codon 64), approximately 45-65 codons after TM1 start. Unlike E. coli, these pauses persist in SD-depleted data, suggesting B. subtilis uses an SD-independent, likely Alu domain-mediated mechanism similar to eukaryotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 and C82-C84 provide comparative analysis showing distinct pause patterns between E. coli and B. subtilis. The persistence of pauses in SD-depleted data (C30, C31) is key evidence for mechanistic differences. The positioning is consistent with Alu domain-mediated arrest when TM1 emerges from the ribosome (C83). The comparable TM positioning between species (C84) controls for sequence organization differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "85620242-ea87-4945-90fc-212afecfc53d",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "E. coli depends on cis-encoded (mRNA-programmed) SD-mediated pauses to compensate for lack of Alu domain, representing a mechanistically distinct solution from the trans-acting, protein-reading eukaryotic SRP arrest system. The mRNA-programmed mechanism likely pauses for fixed duration without feedback about targeting status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 synthesize the comparative findings between E. coli and B. subtilis to draw mechanistic conclusions. The inference that E. coli uses cis-encoded compensation is well-supported by the data showing SD-dependence in E. coli but not B. subtilis. The speculation about fixed duration (C60) is appropriately qualified and represents a reasonable hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "7a8994b8-1f57-4895-ac32-b1764d4d2980",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study's central finding is that SD-like elements trigger strategic translation pauses during early membrane protein synthesis in E. coli, and slow translation during targeting improves membrane protein folding fidelity, particularly at elevated expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C79, and C80 represent the main conclusions of the study. These are well-supported by the convergence of computational analysis (ribosome profiling), correlative experiments (GFP-folding assay), and causal validation (mutagenesis). The expression-level dependence (C80) appropriately qualifies the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "8e226ee9-17d7-4e48-9e18-36d859ccc348",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript cites established knowledge about ribosome structure, SRP pathway, membrane protein biogenesis, ribosome profiling methodology, and technical aspects of the GFP-folding assay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C21, C33, C34, C37, C39-C43, C45, C46, C53-C55, C63, and C69 represent appropriately cited background knowledge and methodological foundations. These provide necessary context and validate the experimental approaches used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "660b6c2a-f428-44d5-b7f4-fa1abf02491b",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Supporting experimental observations show that folded GFP-coupled membrane proteins are detergent-soluble while unfolded forms aggregate, and that slow translation at codons 16-60 is more common and important than at downstream positions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C77, and C78 provide important validation of the GFP-folding assay methodology (C47) and characterization of where slow translation is most prevalent (C77, C78). These support the main findings but are not primary conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "acea3efc-b597-4fad-ad8a-385942e80d65",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose broader implications: that both prokaryotes and eukaryotes have limiting membrane protein biogenesis capacity, that translation pauses are a general strategy for processes requiring only partial polypeptides, and that SD-mediated pauses may be lacking in heterologous sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61, C62, C64, and C81 represent broader interpretations and speculations. While C61 is reasonably inferred from the data, C62 and C64 are more speculative generalizations. C81 is explicitly proposed rather than demonstrated. These represent reasonable hypotheses but lack direct experimental validation in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    },
+    {
+      "id": "64e9f1f7-8264-4dd5-8b71-189438ff874a",
+      "content_id": "c14bf1c3-9da6-4c03-9716-0e873f316a62",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Periplasmic proteins show depletion of pauses in N-terminal codons, likely due to signal peptide composition biases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 provides a reasonable explanation for an observed pattern in the data, supported by analysis of amino acid biases. This is a minor observation that helps validate the specificity of the membrane protein findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:12:49.817600Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a7511363-30b6-4dee-986f-4e18382e8dd8",
+      "result_id": "c8cc6d58-c2da-4167-b7ae-6fbd1c937414"
+    },
+    {
+      "claim_id": "5dfdff98-622a-447d-a872-a26da708fc57",
+      "result_id": "c8cc6d58-c2da-4167-b7ae-6fbd1c937414"
+    },
+    {
+      "claim_id": "5163428c-1f58-4c8b-bd36-993783f3ac32",
+      "result_id": "c8cc6d58-c2da-4167-b7ae-6fbd1c937414"
+    },
+    {
+      "claim_id": "91f6b3d0-0109-4d01-9ead-0bd49f1a46e3",
+      "result_id": "c8cc6d58-c2da-4167-b7ae-6fbd1c937414"
+    },
+    {
+      "claim_id": "2aee3b4f-e7ba-401e-a706-bd7ffa2fad58",
+      "result_id": "c8cc6d58-c2da-4167-b7ae-6fbd1c937414"
+    },
+    {
+      "claim_id": "04cedfa4-95e0-4d2f-8438-70aa4a3597c2",
+      "result_id": "c8cc6d58-c2da-4167-b7ae-6fbd1c937414"
+    },
+    {
+      "claim_id": "50e978d7-ce84-462a-a733-b16de0f2cd96",
+      "result_id": "65223c1e-3187-4e41-b931-929966d37cda"
+    },
+    {
+      "claim_id": "c6813264-b0dd-4797-9dd2-f5760710a334",
+      "result_id": "65223c1e-3187-4e41-b931-929966d37cda"
+    },
+    {
+      "claim_id": "3bd02710-053c-4d29-ada3-2e54d83da4bd",
+      "result_id": "65223c1e-3187-4e41-b931-929966d37cda"
+    },
+    {
+      "claim_id": "eb89ba1d-8553-424b-981a-f7defef450d7",
+      "result_id": "65223c1e-3187-4e41-b931-929966d37cda"
+    },
+    {
+      "claim_id": "95bf813f-3494-4a8d-bad7-763774e279b8",
+      "result_id": "65223c1e-3187-4e41-b931-929966d37cda"
+    },
+    {
+      "claim_id": "5583f364-aab7-446c-a6fb-aff998bdcc44",
+      "result_id": "65223c1e-3187-4e41-b931-929966d37cda"
+    },
+    {
+      "claim_id": "5fb14a63-8165-4384-988f-5ae2bbb8f8e1",
+      "result_id": "65223c1e-3187-4e41-b931-929966d37cda"
+    },
+    {
+      "claim_id": "54131fe0-9adb-4c3b-afc4-bdd20feac62c",
+      "result_id": "d4350697-d529-4e8c-9129-c6c8804e5c07"
+    },
+    {
+      "claim_id": "76df8be7-850c-4ec6-ad28-a3e226ba4da3",
+      "result_id": "d4350697-d529-4e8c-9129-c6c8804e5c07"
+    },
+    {
+      "claim_id": "4bacbdff-f3b6-4e9c-9893-4e06b98a2e27",
+      "result_id": "d4350697-d529-4e8c-9129-c6c8804e5c07"
+    },
+    {
+      "claim_id": "7ae29375-c45a-4494-ae99-651e1b253479",
+      "result_id": "d4350697-d529-4e8c-9129-c6c8804e5c07"
+    },
+    {
+      "claim_id": "0d1d16eb-b4fd-4afb-84d5-875ed53abc97",
+      "result_id": "d4350697-d529-4e8c-9129-c6c8804e5c07"
+    },
+    {
+      "claim_id": "6d5d151d-3350-4ec6-a148-ee564bec64e4",
+      "result_id": "d4350697-d529-4e8c-9129-c6c8804e5c07"
+    },
+    {
+      "claim_id": "5a94f739-c82b-4000-b99a-a9d81fabf3c2",
+      "result_id": "d4350697-d529-4e8c-9129-c6c8804e5c07"
+    },
+    {
+      "claim_id": "9c689ee3-1fe7-418b-a0cf-bd303e8b1536",
+      "result_id": "d4350697-d529-4e8c-9129-c6c8804e5c07"
+    },
+    {
+      "claim_id": "3b7dc76f-fa48-42bc-9bbe-219ffb78f65c",
+      "result_id": "d4350697-d529-4e8c-9129-c6c8804e5c07"
+    },
+    {
+      "claim_id": "0a4b7542-0b02-4288-980d-ad0f16a11597",
+      "result_id": "61857077-5345-4ff2-a21d-517d2ab681e1"
+    },
+    {
+      "claim_id": "a8f17668-ca4c-45d9-8500-e10f3d8178b5",
+      "result_id": "61857077-5345-4ff2-a21d-517d2ab681e1"
+    },
+    {
+      "claim_id": "65486c74-5545-4406-aee6-63cebf38f8bd",
+      "result_id": "61857077-5345-4ff2-a21d-517d2ab681e1"
+    },
+    {
+      "claim_id": "d26d44dc-433c-4a9e-87ec-40d0abab3038",
+      "result_id": "e253ebdd-84b6-4e4b-81d7-02c79adcd6ac"
+    },
+    {
+      "claim_id": "99b37684-4a52-4a50-8afd-79937db8963e",
+      "result_id": "e253ebdd-84b6-4e4b-81d7-02c79adcd6ac"
+    },
+    {
+      "claim_id": "4791cc8b-cb4e-45ad-8f97-8bec08d0130e",
+      "result_id": "e253ebdd-84b6-4e4b-81d7-02c79adcd6ac"
+    },
+    {
+      "claim_id": "b0136be3-790a-4f73-9d0e-977b3e910255",
+      "result_id": "7cafd120-163a-4d85-8a06-c89e3ce7f0a4"
+    },
+    {
+      "claim_id": "9c9ec3cd-88d2-498f-93b1-c0c25719a7f0",
+      "result_id": "7cafd120-163a-4d85-8a06-c89e3ce7f0a4"
+    },
+    {
+      "claim_id": "76bd6c9c-c18c-4332-81db-86a7d39137be",
+      "result_id": "7cafd120-163a-4d85-8a06-c89e3ce7f0a4"
+    },
+    {
+      "claim_id": "86227e15-cac3-49eb-9ce0-642e2b4a4076",
+      "result_id": "7cafd120-163a-4d85-8a06-c89e3ce7f0a4"
+    },
+    {
+      "claim_id": "3117cb46-5734-4be8-a716-8061138c9387",
+      "result_id": "774b8f03-113e-4c6e-bad5-a30f398241a5"
+    },
+    {
+      "claim_id": "794deb5e-d665-4ff2-9cf5-d8bb8817f55c",
+      "result_id": "774b8f03-113e-4c6e-bad5-a30f398241a5"
+    },
+    {
+      "claim_id": "6ad7236d-9738-46ee-9cc0-9d6c6439448b",
+      "result_id": "774b8f03-113e-4c6e-bad5-a30f398241a5"
+    },
+    {
+      "claim_id": "e3435e1e-5c53-40bd-80bc-ce79c916217e",
+      "result_id": "774b8f03-113e-4c6e-bad5-a30f398241a5"
+    },
+    {
+      "claim_id": "a3fffd67-91c0-43fd-8b93-3b19a47f8dd6",
+      "result_id": "774b8f03-113e-4c6e-bad5-a30f398241a5"
+    },
+    {
+      "claim_id": "eac7ff52-f91e-4b2a-8e55-dbcd583ff20e",
+      "result_id": "774b8f03-113e-4c6e-bad5-a30f398241a5"
+    },
+    {
+      "claim_id": "972c6f08-8a3e-4d45-b275-5f809df1d009",
+      "result_id": "774b8f03-113e-4c6e-bad5-a30f398241a5"
+    },
+    {
+      "claim_id": "15ad88e0-b592-40b5-949a-6452f2eea213",
+      "result_id": "774b8f03-113e-4c6e-bad5-a30f398241a5"
+    },
+    {
+      "claim_id": "113df79d-8094-4258-9b04-23c1a080b267",
+      "result_id": "2c1289b3-8920-4eac-a8ce-220e5b07a7c8"
+    },
+    {
+      "claim_id": "17b11d37-7afb-47a2-afa0-29e7f4a26c42",
+      "result_id": "2c1289b3-8920-4eac-a8ce-220e5b07a7c8"
+    },
+    {
+      "claim_id": "d9a0e29a-f815-47e9-8fa8-e032b90d67b0",
+      "result_id": "c4091899-f263-4a80-8ea4-14d904aa5397"
+    },
+    {
+      "claim_id": "afd124c7-e9cc-4de2-891e-5bcc7e5f380b",
+      "result_id": "c4091899-f263-4a80-8ea4-14d904aa5397"
+    },
+    {
+      "claim_id": "a6eb4d67-ec9e-49fa-afbe-a6edb0881ea3",
+      "result_id": "c4091899-f263-4a80-8ea4-14d904aa5397"
+    },
+    {
+      "claim_id": "b3c1d3f2-62ca-44bb-bb25-ef8c49fec547",
+      "result_id": "c4091899-f263-4a80-8ea4-14d904aa5397"
+    },
+    {
+      "claim_id": "8f544b81-b59d-47a3-8921-8c02f92b91c5",
+      "result_id": "c4091899-f263-4a80-8ea4-14d904aa5397"
+    },
+    {
+      "claim_id": "23cd76c0-db52-45a0-b582-65f4b17486d7",
+      "result_id": "c4091899-f263-4a80-8ea4-14d904aa5397"
+    },
+    {
+      "claim_id": "32629ead-c402-4024-9e30-9c1dc11110ad",
+      "result_id": "c4091899-f263-4a80-8ea4-14d904aa5397"
+    },
+    {
+      "claim_id": "19c2e540-5177-48c4-bcb7-31fbca9a634d",
+      "result_id": "c4091899-f263-4a80-8ea4-14d904aa5397"
+    },
+    {
+      "claim_id": "76b06b50-1560-41f8-8db6-124b70cf833f",
+      "result_id": "85620242-ea87-4945-90fc-212afecfc53d"
+    },
+    {
+      "claim_id": "92a6bb71-209d-4e34-9c11-55472e57d5fd",
+      "result_id": "85620242-ea87-4945-90fc-212afecfc53d"
+    },
+    {
+      "claim_id": "7ae06692-7bd6-4a9e-819b-48a387419796",
+      "result_id": "85620242-ea87-4945-90fc-212afecfc53d"
+    },
+    {
+      "claim_id": "d0ab0dc4-ab5e-4387-97e5-f1983a63e756",
+      "result_id": "85620242-ea87-4945-90fc-212afecfc53d"
+    },
+    {
+      "claim_id": "a2772af7-4b9c-4c12-821d-4b1af3d0e5b1",
+      "result_id": "85620242-ea87-4945-90fc-212afecfc53d"
+    },
+    {
+      "claim_id": "68a73961-cd00-4c3f-adde-58103c659220",
+      "result_id": "7a8994b8-1f57-4895-ac32-b1764d4d2980"
+    },
+    {
+      "claim_id": "afc0722e-95f0-41a1-9357-978b071f6a75",
+      "result_id": "7a8994b8-1f57-4895-ac32-b1764d4d2980"
+    },
+    {
+      "claim_id": "b455d8a7-4113-4300-b612-37188cade23a",
+      "result_id": "7a8994b8-1f57-4895-ac32-b1764d4d2980"
+    },
+    {
+      "claim_id": "3b2112be-b987-4fcb-b532-de22e8bbe0fc",
+      "result_id": "7a8994b8-1f57-4895-ac32-b1764d4d2980"
+    },
+    {
+      "claim_id": "33585322-9548-48d2-9ad4-071a3fe79407",
+      "result_id": "8e226ee9-17d7-4e48-9e18-36d859ccc348"
+    },
+    {
+      "claim_id": "71d0ea0c-238b-4eb9-af08-9e8b8ebcb701",
+      "result_id": "8e226ee9-17d7-4e48-9e18-36d859ccc348"
+    },
+    {
+      "claim_id": "d3f03b19-2dfb-4d8c-9cdd-dab407d8fb8e",
+      "result_id": "8e226ee9-17d7-4e48-9e18-36d859ccc348"
+    },
+    {
+      "claim_id": "4e84e83d-72fa-45d2-8138-6f76c6bcb5b1",
+      "result_id": "8e226ee9-17d7-4e48-9e18-36d859ccc348"
+    },
+    {
+      "claim_id": "565c6ece-af28-48a4-af1a-1c340ba048c4",
+      "result_id": "8e226ee9-17d7-4e48-9e18-36d859ccc348"
+    },
+    {
+      "claim_id": "6b72ac47-11da-40fd-bdc8-fdc8219f4d71",
+      "result_id": "8e226ee9-17d7-4e48-9e18-36d859ccc348"
+    },
+    {
+      "claim_id": "a619d10d-722d-4afd-9326-97bb35305bf1",
+      "result_id": "8e226ee9-17d7-4e48-9e18-36d859ccc348"
+    },
+    {
+      "claim_id": "9e18a99e-4a53-45ef-8400-93530c0c2e62",
+      "result_id": "8e226ee9-17d7-4e48-9e18-36d859ccc348"
+    },
+    {
+      "claim_id": "c2a77173-de3c-4b28-9be6-41582da8e9d1",
+      "result_id": "8e226ee9-17d7-4e48-9e18-36d859ccc348"
+    },
+    {
+      "claim_id": "60ddbf1a-4003-43ac-a475-611c5d32aa38",
+      "result_id": "8e226ee9-17d7-4e48-9e18-36d859ccc348"
+    },
+    {
+      "claim_id": "e96d4547-bc9b-423f-902a-0e8cfa7d64d4",
+      "result_id": "8e226ee9-17d7-4e48-9e18-36d859ccc348"
+    },
+    {
+      "claim_id": "660d8138-d115-4400-add4-33c0d32387e3",
+      "result_id": "8e226ee9-17d7-4e48-9e18-36d859ccc348"
+    },
+    {
+      "claim_id": "70db3590-ea80-4a3c-8094-57bf92e52ac5",
+      "result_id": "8e226ee9-17d7-4e48-9e18-36d859ccc348"
+    },
+    {
+      "claim_id": "56d1ca26-6741-408a-b46d-1fedb7bbc84b",
+      "result_id": "8e226ee9-17d7-4e48-9e18-36d859ccc348"
+    },
+    {
+      "claim_id": "c0a34834-41e1-48ed-8db7-8d59a4a16f90",
+      "result_id": "8e226ee9-17d7-4e48-9e18-36d859ccc348"
+    },
+    {
+      "claim_id": "8d2bb427-60d6-4f6b-af7b-2edb2c609f74",
+      "result_id": "8e226ee9-17d7-4e48-9e18-36d859ccc348"
+    },
+    {
+      "claim_id": "34174337-4498-4747-8f20-f8af391c2d43",
+      "result_id": "8e226ee9-17d7-4e48-9e18-36d859ccc348"
+    },
+    {
+      "claim_id": "05d720d9-2e0c-4b67-9fb3-bf5a3072a157",
+      "result_id": "660b6c2a-f428-44d5-b7f4-fa1abf02491b"
+    },
+    {
+      "claim_id": "11bc4431-7907-4419-bd32-a0726d939974",
+      "result_id": "660b6c2a-f428-44d5-b7f4-fa1abf02491b"
+    },
+    {
+      "claim_id": "ae5e92a5-f7b1-49d3-ac3a-22c1964723c7",
+      "result_id": "660b6c2a-f428-44d5-b7f4-fa1abf02491b"
+    },
+    {
+      "claim_id": "a798b951-999e-4a1e-ac3e-c4bf8d5398de",
+      "result_id": "acea3efc-b597-4fad-ad8a-385942e80d65"
+    },
+    {
+      "claim_id": "e3b7a4b7-c525-4204-b360-178fb70136c2",
+      "result_id": "acea3efc-b597-4fad-ad8a-385942e80d65"
+    },
+    {
+      "claim_id": "8e3f6910-9456-41cf-90b8-ba4de594a8a3",
+      "result_id": "acea3efc-b597-4fad-ad8a-385942e80d65"
+    },
+    {
+      "claim_id": "4c7d025c-83c6-440b-81da-4b0613a8085a",
+      "result_id": "acea3efc-b597-4fad-ad8a-385942e80d65"
+    },
+    {
+      "claim_id": "1cab7eef-3dee-430c-801b-21a526564920",
+      "result_id": "64e9f1f7-8264-4dd5-8b71-189438ff874a"
+    }
+  ],
+  "comparisons": []
+}

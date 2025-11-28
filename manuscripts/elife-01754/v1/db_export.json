@@ -1,0 +1,2484 @@
+{
+  "submission": {
+    "id": "e3e6bbb2-feb3-4d8b-ad57-1107e8ec1b5e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:07:16.524316Z",
+    "updated_at": "2025-11-28T20:07:16.524316Z"
+  },
+  "content": [
+    {
+      "id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "submission_id": "e3e6bbb2-feb3-4d8b-ad57-1107e8ec1b5e",
+      "content_type": "manuscript",
+      "content_text": "# How HIV-1 Nef hijacks the AP-2 clathrin adaptor to downregulate CD4\n\n## Authors\n\n- Xuefeng Ren<sup>1</sup>\n- Sang Yoon Park<sup>3</sup>\n- Juan S Bonifacino<sup>3</sup> \u2020\n- James H Hurley<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n2. California Institute for Quantitative Biosciences University of California, Berkeley Berkeley United States\n3. Cell Biology and Metabolism Program Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health Bethesda United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Nef protein of HIV-1 downregulates the cell surface co-receptor CD4 by hijacking the clathrin adaptor complex AP-2. The structural basis for the hijacking of AP-2 by Nef is revealed by a 2.9 \u00c5 crystal structure of Nef bound to the \u03b1 and \u03c32 subunits of AP-2. Nef binds to AP-2 via its central loop (residues 149\u2013179) and its core. The determinants for Nef binding include residues that directly contact AP-2 and others that stabilize the binding-competent conformation of the central loop. Residues involved in both direct and indirect interactions are required for the binding of Nef to AP-2 and for downregulation of CD4. These results lead to a model for the docking of the full AP-2 tetramer to membranes as bound to Nef, such that the cytosolic tail of CD4 is situated to interact with its binding site on Nef.\n\n## Introduction\n\nThe human immunodeficiency virus type 1 (HIV-1) is a lentivirus that causes acquired immunodeficiency syndrome (AIDS). HIV-1 has a small genome encoding the main structural proteins Gag, Pol and Env, the regulatory proteins Tat and Rev, and the accessory proteins Nef, Vif, Vpr, and Vpu (Frankel and Young, 1998). During viral maturation, Pol is proteolytically cleaved to generate three proteins with enzymatic activity: the viral protease, integrase, and reverse transcriptase. These enzymes are the main targets for chemotherapeutic agents currently in use for the prevention and treatment of AIDS. Combination therapies with these agents have dramatically reduced HIV-1 transmission as well as HIV-1-associated morbidity and mortality. However, concerns about the development of drug resistance in addition to their side effects have fueled a continued search for additional targets. The accessory protein Nef was recognized early on as a potential target for inhibition of the pathogenic effects of HIV-1 (Coleman et al., 2001; Foster and Garcia, 2008). Although not essential for infection in cell culture, Nef enhances viral replication and disease progression in vivo. The pathogenic effects of Nef are underscored by the observation that patients infected with Nef-deficient strains of HIV-1 often do not develop AIDS for over 10 years even if untreated (these patients are referred to as \u2018long-term non-progressors\u2019 or \u2018slow progressors\u2019) (Deacon et al., 1995; Kirchhoff et al., 1995; Gorry et al., 2007). Inhibition of Nef thus holds the promise to have a similarly beneficial effect. To date, however, this potential has not been realized mainly because Nef has no enzymatic activity and its mechanisms of action are insufficiently understood.\n\nAt the cellular level, Nef has been ascribed multiple functions, of which the best characterized and most critical for pathogenesis is the downregulation of CD4 from the surface of infected cells (Guy et al., 1987; Garcia and Miller, 1991; Carl et al., 2000; Glushakova et al., 2001). CD4 is a transmembrane protein that acts as a co-receptor in both the host\u2019s immune response and the initial binding of HIV-1 to their target cells (Bowers et al., 1997). Nef-induced CD4 downregulation interferes with the immune system (Skowronski et al., 1993), prevents superinfection (Benson et al., 1993) and promotes virion release (Lama et al., 1999; Ross et al., 1999), all of which contribute to enhanced HIV-1 propagation. HIV-1 Nef is a small, polymorphic protein of 200\u2013215 amino acids having a myristoylated N-terminus. X-ray crystallography (Lee et al., 1996; Arold et al., 1997; Horenkamp et al., 2011; Jia et al., 2012) and NMR (Grzesiek et al., 1996a, 1997) have shown that Nef has a folded core (residues 55\u201365 and 84\u2013203), with flexible N-terminal (residues 1\u201354) and C-terminal (residues 204\u2013206) segments, and a central flexible loop (residues 149\u2013179) (residue numbers correspond to the NL4-3 strain of HIV-1). CD4 downregulation depends on both Nef myristoylation (Aiken et al., 1994) and specific residues in the loop, including Leu164 and Leu165 (Bresnahan et al., 1998; Craig et al., 1998; Greenberg et al., 1998; Janvier et al., 2003), which are in a sequence context fitting the [DE]XXXL[LI] motif for dileucine-based sorting signals (Bonifacino and Traub, 2003), and the diacidic motif, Asp174-Asp175 (Aiken et al., 1996; Lindwasser et al., 2008). Myristoylation allows recruitment of Nef from the cytosol to the inner leaflet of the plasma membrane (Yu and Felsted, 1992) while the loop engages the clathrin-associated adaptor protein 2 (AP-2) complex (Jin et al., 2005; Chaudhuri et al., 2007; Doray et al., 2007; Lindwasser et al., 2008; Mattera et al., 2011; Jin et al., 2013). The Nef:AP-2 complex interacts with the cytosolic tail of CD4, leading to the cooperative assembly of a tripartite Nef:AP-2:CD4 complex (Chaudhuri et al., 2009). This complex nucleates the formation of clathrin-coated pits (Foti et al., 1997; Greenberg et al., 1997; Burtey et al., 2007) that mediate rapid internalization of CD4, followed by its delivery to lysosomes via the multivesicular body pathway (Aiken et al., 1994; Rhee and Marsh, 1994; daSilva et al., 2009).\n\nBiochemical analyses have demonstrated that binding of Nef to AP-2 is direct and dependent on the dileucine and diacidic motifs, and other residues, in the Nef loop (Chaudhuri et al., 2007; Doray et al., 2007; Lindwasser et al., 2008; Chaudhuri et al., 2009; Mattera et al., 2011). AP-2 is a heterotetramer composed of \u03b1, \u03b22, \u03bc2 and \u03c32 subunits. The N-terminal \u2018trunk\u2019 domains of \u03b1 and \u03b22 together with the whole \u03bc2 and \u03c32 subunits constitute the core of the complex, whereas the C-terminal \u2018hinge\u2019 and \u2018ear\u2019 domains of \u03b1 and \u03b22 form long projections that extend from the core (Owen et al., 2004). The AP-2 core undergoes a large conformation change from a \u2018locked\u2019 to an \u2018open\u2019 conformation that allows it to bind sorting signals and to be recruited to membranes via interaction with the phosphatidylinositol lipid PI(4,5)P2 (Jackson et al., 2010). Nef has been shown to bind to the \u03b1\u2013\u03c32 \u2018hemicomplex\u2019 (Chaudhuri et al., 2007; Doray et al., 2007). The \u03c32 subunit (with a small contribution from the \u03b1 subunit), harbors a binding site for [DE]XXXL[LI]-type signals from host cell proteins (Kelly et al., 2008; Jackson et al., 2010; Mattera et al., 2011). Mutational analyses have shown that this site is also required for Nef binding, most likely through recognition of the Nef dileucine motif (Mattera et al., 2011). The \u03b1 subunit has an additional site, comprising Lys298 and Arg341, which is also required for Nef binding and CD4 downregulation (Chaudhuri et al., 2009). Although it is tempting to hypothesize that these basic residues interact with the Nef diacidic motif, there is currently no direct evidence for such an interaction. Importantly, this second site on \u03b1 is not known to participate in any host cell function, making it a possible target for selective interference.\n\nDespite progress in the identification of determinants of the Nef-AP-2 interaction, the conformation of the Nef loop when bound to AP-2 and the molecular details of the interaction are not known. To elucidate the structural basis for this interaction, we have solved the crystal structure at 2.9 \u00c5 resolution of Nef (residues 54\u2013203) in complex with the \u03b1 (residues 1\u2013396) and \u03c32 (full-length) subunits of AP-2. The structure reveals that the entire central loop is well ordered, and that most of it contacts the \u03b1\u2212\u03c32 hemicomplex. The Nef core is directly involved in contacts as well as serves as a scaffold to position the central loop. The structure leads to a model for the docking of HIV-1 Nef onto the plasma membrane in conjunction with AP-2, and suggests how the AP-2:Nef complex binds to the CD4 cytosolic tail in the membrane setting.\n\n## Results\n\n### High-affinity binding of HIV-1 Nef to the \u03b1\u2013\u03c32 hemicomplex\n\nIn the absence of PI(4,5)P2-containing membranes, the AP-2 core is in a locked conformation that has low affinity for both physiological cargoes and Nef. Previously, we assayed a version of the AP-2 core in which the \u03bc2 C-terminal domain was deleted so as to destabilize the locked conformation. This construct bound to HIV-1 Nef with Kd = 6 \u03bcM as judged by surface plasmon resonance (Chaudhuri et al., 2007). However, the conformational lability introduced into this construct made it unsuitable for crystallization. We built on the finding that Nef interacts with the \u03b1\u2013\u03c32 hemicomplex as judged by yeast three hybrid (Y3H) (Chaudhuri et al., 2007) and pulldown assays (Doray et al., 2007). Hemicomplex constructs including the full \u03b1 trunk domain are poorly stable, because a large amount of hydrophobic surface area is exposed on the C-terminal part of the trunk domain when the hemicomplex is excised from the intact AP-2 core. A truncated version of the homologous \u03b3-\u03b6 hemicomplex of COPI including the first 17 helices of the \u03b3 trunk domain was found to be suitable for crystallography (Yu et al., 2012). We designed a construct comprising the first 19 helices (residues 1\u2013396) of the \u03b1 trunk domain and co-expressed it with full-length \u03c32 (Figure 1A,B). This portion of the \u03b1 trunk includes all of the Nef-interacting residues of \u03b1 that have been documented to date. This construct bound to the HIV-1 NL4-3 Nef (54\u2013203) (hereafter, \u2018Nef\u2019) with Kd = 1.8 \u03bcM and 1:1 stoichiometry, as determined by isothermal titration calorimetry (ITC) (Figure 1C). The comparatively high affinity of the interaction and the congruence with previous results with the tetrameric construct led us to conclude that this hemicomplex included all the major determinants of the AP-2:Nef interaction.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/01754/elife-01754-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic representation of AP-2 \u03b1\u2013\u03c32 and Nef protein constructs. AP-2 \u03b1 (1\u2013396) (cyan) and full-length \u03c32 (magenta) were generated as a stable subcomplex and the interaction with the indicated Nef construct (54\u2013203) (orange) was analyzed. (B) SDS gel of recombinant AP-2 \u03b1\u2013\u03c32 and Nef proteins. (C) Isothermal titration calorimetry of the titration of His-tagged Nef (54\u2013203) to the AP-2 \u03b1\u2013\u03c32 hemicomplex. The upper panel shows the differential heat released when Nef (0.6 mM) was injected into AP-2 \u03b1\u2013\u03c32 solution (40 \u03bcM) in 2.1 \u03bcl aliquots.\n\n### Crystal structure of the \u03b1\u2013\u03c32:Nef complex\n\nNef was co-crystallized with the \u03b11\u2013396 form of the AP-2 \u03b1\u2013\u03c32 hemicomplex (hereafter, \u2018\u03b1\u2013\u03c32\u2019). The structure was determined by molecular replacement at 2.9 \u00c5 resolution (Figure 2A,B; Table 1). The asymmetric unit contains four Nef:\u03b1\u2013\u03c32 complexes, all in similar conformations, with small variations in the quality of the electron density. The description will focus on the B, C, and D chains, for which the Nef:\u03b1\u2013\u03c32 interface is most clearly visualized. Nef buries 1170 \u00c52 in this interface, of which two-thirds is buried against \u03c32 and the remainder against \u03b1. The \u03b1\u2013\u03c32 unit is essentially rigid, in a conformation identical to that seen in other structures of the AP-2 complex (Collins et al., 2002; Kelly et al., 2008; Jackson et al., 2010). The Nef core (excluding the central loop 149\u2013179) contains the five \u03b1-helices (H2, H3, H6, H7, H8) and five-stranded \u03b2-sheet visualized in other Nef crystal structures (Lee et al., 1996; Figure 2C). The core also manifests a poorly ordered N-terminal helix (H1) spanning residues 55\u201365, which was not visualized in all of the chains. The identity of this helix was provisionally assigned on the basis of the only other crystal structure in which this region was visualized (Breuer et al., 2011). This helix was first identified by solution NMR and contains the primary binding site for CD4 (Grzesiek et al., 1996a). In contrast to most other crystal structures, the central loop from residues 149\u2013179 was visualized in its entirety (Figure 2A). The central loop contains two additional helices, one from residues 150\u2013157 (H4), and the other a single turn from 167\u2013170 (H5). The central loop interacts extensively both with the \u03b1 and \u03c32 subunits (Figure 2D), with the greatest contact surface involving \u03c32. The core interacts primarily via a network of interactions between helix H3 and the \u03b1 subunit.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/01754/elife-01754-fig2-v1.jpg)\n\n**Figure 2.:** (A) F0-Fc omit map of Nef loop (149\u2013179) with the final model superimposed. The map is contoured at 2.0 \u03c3. (B) Overall ribbon representation of AP-2 \u03b1 (cyan) and AP-2 \u03c32 subunits (magenta) in complex with Nef (orange). (C) Detailed ribbon model of Nef (orange) with the secondary structures indicated. (D) Ribbon model of the Nef central loop (149\u2013179), which includes helix H4 (150\u2013157), the acidic-dileucine motif (160ExxxLL165), helix H5 (167\u2013170), and the C-terminal turn-rich segment (171\u2013179).\n\n**Table 1.**\n Statistics of crystallographic data collection and refinement\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>Construct</td>\n      <td>AP-2: \u03c32 (1\u2013143), \u03b1 (1\u2013396); Nef (54\u2013203)</td>\n    </tr>\n    <tr>\n      <td>Data collection</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>X-ray source</td>\n      <td>APS 22-ID</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>1.0000</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P212121</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td>a = 109.56 \u00c5, b = 168.03 \u00c5, c = 200.20 \u00c5, \u03b1 = \u03b2 = \u03b3 = 90\u00b0</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5) (last shell)</td>\n      <td>50.00\u20132.90 (3.00\u20132.90)</td>\n    </tr>\n    <tr>\n      <td>Unique reflections</td>\n      <td>80,188</td>\n    </tr>\n    <tr>\n      <td>Rsym* (%)</td>\n      <td>18.4 (53.9)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3</td>\n      <td>7.4 (1.9)</td>\n    </tr>\n    <tr>\n      <td>Completeness</td>\n      <td>95.8 (80.2)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>5.2 (3.2)</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree (%)</td>\n      <td>21.9/26.7</td>\n    </tr>\n    <tr>\n      <td>Average B values (\u00c52)</td>\n      <td>39.5</td>\n    </tr>\n    <tr>\n      <td>Number of protein atoms</td>\n      <td>21,588</td>\n    </tr>\n    <tr>\n      <td>R.m.s. bond length deviation (\u00c5)</td>\n      <td>0.015</td>\n    </tr>\n    <tr>\n      <td>R.m.s. bond angle deviation (\u00b0)</td>\n      <td>1.16</td>\n    </tr>\n    <tr>\n      <td>Ramachandran Plot (%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored</td>\n      <td>98.4</td>\n    </tr>\n    <tr>\n      <td>allowed</td>\n      <td>1.2</td>\n    </tr>\n    <tr>\n      <td>outlier</td>\n      <td>0.4</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Rsym = \u03a3h\u03a3i|Ii(h)\u2212<I>|/\u03a3h\u03a3iIi(h), where I is the observed intensity and <I> is the average intensity of multiple observations of symmetry-related reflections._\n\nThe landmarks within the central loop are helix H4 (150\u2013157), the acidic-dileucine motif (160\u2013165), helix H5 (167\u2013170), and finally a series of turns centered on Met173 (171\u2013179) (Figure 2D). The intramolecular interactions of H4 are with other sections of the central loop, explaining why this helix has not been observed in other structures of Nef. The Leu164-Leu165 pair of the dileucine motif anchors the loop in a pocket on \u03c32 just as seen for a dileucine peptide bound to the unlatched AP-2 tetramer (Kelly et al., 2008; Figure 3A). The dileucine peptide in the unlatched structure (Kelly et al., 2008) used for comparison is derived from CD4, but it is important to emphasize that this binding mode is dependent on phosphorylation and is unrelated to Nef-dependent downregulation. The pocket walls are formed by hydrophobic residues of \u03c32. Nef Glu160 of the motif binds to basic residues on both \u03c32 and \u03b1 (Figure 3B). Residues of H4, notably Glu154, make electrostatic interactions with a second basic patch on \u03c32 (Figure 3C). H4 and the dileucine motif have little or no interaction with the Nef core, and their conformation seems to be specified by their interactions with \u03b1\u2013\u03c32.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/01754/elife-01754-fig3-v1.jpg)\n\n**Figure 3.:** (A) Stick representation of the Nef dileucine motif (Leu164 and Leu165, orange) interacting with AP-2 \u03c32 (magenta), compared with a bound dileucine peptide (blue, PDB id: 2JKR) (Kelly et al., 2008). (B) Nef Glu160 of the acidic-dileucine motif forms hydrogen bonds with AP-2 \u03b1 R21 and \u03c32 R15. The hydrogen bond is listed as a purple dashed line. (C) Nef Glu154 in helix H4 (orange) forms hydrogen bonds with AP-2 \u03c32 R10 and R61 (magenta). (D) The C-terminal part of Nef loop (171\u2013178) interacts with both AP-2 \u03b1 and \u03c32 (magenta). (E) The key Nef diacidic motif Asp174 and Asp175 forms intramolecular hydrogen bonds that stabilize the loop conformation. Hydrogen bonds occur between the side chain of Asp174 and the main-chain amide NH of Gln104, and between the side-chains of Nef Asp175 and Arg134. (F) A salt bridge between Asp108 of Nef helix H3 bridges the Nef core to a basic patch on \u03b1.\n\nIn contrast, helix H5 and the C-terminal turn segment are sandwiched between \u03b1\u2013\u03c32 and the Nef core. Their structure clearly depends on the interactions with \u03b1\u2013\u03c32, since they are not otherwise visualized in this conformation. However, the Nef core also seems to have an important role in organizing this segment. H5 packs against the \u03b2-sheet of the core, and serves primarily to orient the hydrophobic loop with respect to the dileucine motif. The tight turns of the C-terminal part of the loop serve to project a number of charged and hydrophobic side chains into complementary interactions with both \u03b1 and \u03c32 (Figure 3D). This unusual sequence of turns is anchored at its ends by H5 and by the strand \u03b25 of the core. The whole turn-rich section of the loop from 171\u2013179 is anchored internally by a hydrogen bond between Nef Asp174 and the main-chain amide of Gln104, and by a partially buried salt bridge between Nef Asp175 of the loop and Nef Arg134 of the core \u03b2 sheet (Figure 3E).\n\nThe structure also reveals that residues of Nef helix H3 of the core directly contact AP-2. In particular, Gln104, Arg105, and Asp108 bind to a basic patch on \u03b1 (Figure 3F). This polar interface adjoins the mixed polar and hydrophobic interface created by the C-terminal turn segment of the central loop. There is one other minor interaction with the core region, involving Nef Pro129 of the \u03b22-\u03b23 loop. The Pro side-chain forms van der Waals interactions with atoms of the \u03b1 Arg341 side-chain. While the central loop clearly dominates the interactions overall, the Nef core interactions are also significant, and represents one of the completely unexpected findings from the structural analysis.\n\n### Nef residues in AP-2 binding and CD4 downregulation\n\nThe Nef-AP-2 interaction is so central to CD4 downregulation that it has inspired exhaustive mutational analyses (Aiken et al., 1996; Hua et al., 1997; Craig et al., 1998; Janvier et al., 2003; Lindwasser et al., 2008; Chaudhuri et al., 2009; Mattera et al., 2011; Jin et al., 2013). These results can now be mapped onto the structure (Figure 4). We performed additional mutagenesis to test for the functional importance of residues that were newly identified by the structure determination (Figures 5 and 6). Mutations in the regions of AP-2 that were already known to bind dileucine signals had the expected loss of interaction. These include \u03c32 Y62A and A63D (Figure 5C). Mutations in regions unique to Nef binding, notably \u03c32 R60E (Figure 5C) and \u03b1 E342K (Figure 5D), also eliminated binding. Other nearby residues with more peripheral interactions, including \u03c32 N48A, H85A, and C99A and \u03b1 V300A, Q301A, and N344A, had lesser mutational phenotypes, if any (Figure 5C,D). The results of these analyses are represented in Figure 4 together with previously published data. The collective body of work and its structural mapping are summarized in Table 2. The large majority of the mutational hits map to residues that directly participate in Nef-AP-2 contacts. The consistency validates both the previous mutational approach and the structural findings.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/01754/elife-01754-fig4-v1.jpg)\n\n**Figure 4.:** (A) The surface representation shows the contact between AP-2 \u03b1\u2212\u03c32 and Nef. (B) AP-2 \u03b1\u2212\u03c32 or Nef interfaces are rotated by 90\u00b0 to expose the interaction surfaces directly to view. Interacting residues in AP-2 \u03b1 are colored in yellow, residues in AP-2 \u03c32 are colored in pink, and residues in HIV-1 Nef are highlighted in light blue.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/01754/elife-01754-fig5-v1.jpg)\n\n**Figure 5.:** Y3H analysis of HIV-1 Nef and AP-2 \u03b1\u2013\u03c32 hemicomplexes with mutations of residues revealed in the crystal structure. (A) Diagram of the plasmids used in Y3H analysis. NL4-3 Nef or mouse Tyrosinase cytosolic tail was cloned into MCS1 of pBridge and expressed as a GAL4BD fusion protein. AP-2 \u03c32 or AP-1 \u03c31 was cloned into MCS2 of pBridge and expressed without Met. AP-2 \u03b1 or AP-3 \u03b4 was cloned into MCS of pGADT7 and expressed as a GAL4AD fusion protein. (B\u2013D). The indicated combinations of double transformants were plated in media lacking Leu, Trp, Met and His (\u2212HIS),\u2212HIS with 3-AT (1 mM or 5 mM) or Leu, Trp and Met (+HIS). mTyr, mouse Tyrosinase cytosolic domain.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/01754/elife-01754-fig6-v1.jpg)\n\n**Figure 6.:** Nef Asp108, Arg134, and Glu177 are required for the Nef-induced CD4 downregulation. (A) HeLa cells were cotransfected with pCMV-CD4 and pIRES-eGFP-Nef wild-type or mutant plasmids for 24 hr. The cells were then stained with APC-conjugated anti-CD4 antibody and PE-conjugated anti-Transferrin receptor (TfR) antibody. GFP was used as an indicator for transfected cells. The D174A, D175A mutant Nef was used as a negative control (Shaded curves in all plots). Data shown are representative of three independent experiments. (B) The graph shows the relative number of CD4 positive cells from Figure 6A (mean \u00b1 SD; N = 3; asterisks: p<0.001 compared with wild-type Nef).\n\n**Table 2.**\n Functional importance of Nef-AP-2 interacting residues\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Nef residue</th>\n      <th>References</th>\n      <th>Interacting residues</th>\n      <th>Interactions</th>\n      <th>References</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Q104</td>\n      <td>This study</td>\n      <td>\u03b1 K298*, K299</td>\n      <td>Hydrogen bond</td>\n      <td>(Chaudhuri et al., 2009)</td>\n    </tr>\n    <tr>\n      <td>D108*</td>\n      <td>This study</td>\n      <td>\u03b1 K298*, K299</td>\n      <td>Salt bridge</td>\n      <td>(Chaudhuri et al., 2009)</td>\n    </tr>\n    <tr>\n      <td>P129</td>\n      <td>This study</td>\n      <td>\u03b1 R341*</td>\n      <td>Van der Waals</td>\n      <td>(Chaudhuri et al., 2009)</td>\n    </tr>\n    <tr>\n      <td>R134*</td>\n      <td>This study</td>\n      <td>Nef D175*</td>\n      <td>Nef core-to-loop internal salt bridge</td>\n      <td>This study; (Mattera et al., 2011)</td>\n    </tr>\n    <tr>\n      <td>E154</td>\n      <td>(Lindwasser et al., 2008)</td>\n      <td>\u03c32 R61, R10</td>\n      <td>Salt bridge</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>N157</td>\n      <td>(Lindwasser et al., 2008)</td>\n      <td>\u03c32 A63</td>\n      <td>Van der Waals</td>\n      <td>(Mattera et al., 2011)</td>\n    </tr>\n    <tr>\n      <td>E160</td>\n      <td>(Lindwasser et al., 2008)</td>\n      <td>\u03c32 R15, \u03b1 R21</td>\n      <td>Salt bridge</td>\n      <td>(Mattera et al., 2011)</td>\n    </tr>\n    <tr>\n      <td>N161</td>\n      <td>(Lindwasser et al., 2008)</td>\n      <td>\u03c32 C99, L101</td>\n      <td>Van der Waals</td>\n      <td>This study; (Mattera et al., 2011)</td>\n    </tr>\n    <tr>\n      <td>S163</td>\n      <td>(Lindwasser et al., 2008)</td>\n      <td>\u03c32 N97</td>\n      <td>Weak hydrogen bonds</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>L164*</td>\n      <td>(Janvier et al., 2003; Lindwasser et al., 2008)</td>\n      <td>\u03c32 Y62, A63, L65, F67, V88, L91, V98, L103</td>\n      <td>Hydrophobic</td>\n      <td>This study; (Mattera et al., 2011)</td>\n    </tr>\n    <tr>\n      <td>L165*</td>\n      <td>(Janvier et al., 2003; Lindwasser et al., 2008)</td>\n      <td>\u03c32 Y62, H85, V88, E89, N92</td>\n      <td>Hydrophobic</td>\n      <td>This study; (Mattera et al., 2011)</td>\n    </tr>\n    <tr>\n      <td>S169</td>\n      <td>(Lindwasser et al., 2008)</td>\n      <td>\u03c32 A63</td>\n      <td>Van der Waals</td>\n      <td>(Mattera et al., 2011)</td>\n    </tr>\n    <tr>\n      <td>L170*</td>\n      <td>(Lindwasser et al., 2008; Jin et al., 2013)</td>\n      <td>\u03c32 Y62</td>\n      <td>Hydrophobic</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>H171</td>\n      <td>This study; (Lindwasser et al., 2008)</td>\n      <td>\u03c32 A63</td>\n      <td>Hydrogen bond to main chain carbonyl</td>\n      <td>This study; (Mattera et al., 2011)</td>\n    </tr>\n    <tr>\n      <td>M173</td>\n      <td>(Lindwasser et al., 2008)</td>\n      <td>\u03b1 Q301, V300; \u03c32 R60, Y62, H85</td>\n      <td>Hydrophobic and nitrogen-sulfur hydrogen bond</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>D174*</td>\n      <td>(Lindwasser et al., 2008)</td>\n      <td>Nef Q104</td>\n      <td>Nef core-to-loop internal hydrogen bond to main chain amide</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>D175*</td>\n      <td>(Lindwasser et al., 2008)</td>\n      <td>Nef R134*</td>\n      <td>Nef core-to-loop internal salt bridge</td>\n      <td>This study; (Chaudhuri et al., 2009)</td>\n    </tr>\n    <tr>\n      <td>P176</td>\n      <td>(Lindwasser et al., 2008)</td>\n      <td>\u03b1 R341*, E342</td>\n      <td>Van der Waals</td>\n      <td>This study; (Chaudhuri et al., 2009)</td>\n    </tr>\n    <tr>\n      <td>E177*</td>\n      <td>This study; (Lindwasser et al., 2008)</td>\n      <td>\u03b1 R341*</td>\n      <td>Salt bridge</td>\n      <td>This study; (Chaudhuri et al., 2009)</td>\n    </tr>\n    <tr>\n      <td>R178</td>\n      <td>(Lindwasser et al., 2008)</td>\n      <td>\u03b1 E342, \u03c32 N48</td>\n      <td>Strong hydrogen bond, weak salt bridge</td>\n      <td>This study</td>\n    </tr>\n  </tbody>\n</table>\n\n_Bold: mutation inhibits binding. Italics: mutation has no effect on binding. Plain text: not tested. Only residues tested as single amino acid substitutions are included.*Mutation inhibits CD4 downregulation activity. All residues tested as single amino acid substitutions except for K298/R341, which were tested together._\n\nPrevious analyses had highlighted the importance of a basic patch on \u03b1 comprising both Lys298-Lys299 and Arg341. The present structure revealed that Nef Glu177 is the primary interaction partner for \u03b1 Arg341. The Nef E177K mutant manifested a reduction in both \u03b1\u2013\u03c32 binding (Figure 5B) and CD4 downregulation (Figure 6A,B), consistent with its structural role. The deepened insight obtained from the crystal structure shows that this patch is better conceived of as a polar, rather than basic, patch. For example, the side chain of \u03b1 Glu342 has a close approach to Nef Arg178.\n\nThe finding that Nef Asp174 and Asp175 do not contact AP-2 directly was a surprise. These two residues are required for AP-2 binding (Figure 5B) and CD4 downregulation (Lindwasser et al., 2008), and had been expected to interact with a basic patch on \u03b1. They are, in fact, in the general vicinity of a basic patch, close to \u03b1 Lys298 and Lys299. Nevertheless, Asp174, while close to the interface, is not in direct contact with AP-2. Its key role appears to be to anchor the turn section to the N-terminus of helix H3. The partial positive charge at the helix N-terminus can form an interaction with Asp side-chains that is almost as energetically favorable as a salt bridge. In this case, a short hydrogen bond is formed with the main-chain amide group of Nef Gln104. Asp175 has a similar role in conformational stabilization. Asp175 is partially buried in a contact with the Nef core, and forms a salt bridge with Arg134. We hypothesized that the internal Nef Arg134-Asp175 internal salt bridge is important for stabilizing the C-terminal turn portion of the central loop in its AP-2 binding conformation. Indeed, mutation of Arg134 to Glu abrogated interaction of Nef with \u03b1\u2013\u03c32 (Figure 5B). Moreover, co-expression in HeLa cells of CD4 with Nef R134E followed by FACS analysis showed that this Nef mutant almost completely lost its ability to downregulate CD4 (Figure 6A,B). These results phenocopy the D175A change (Lindwasser et al., 2008) and are consistent with a critical role for the salt bridge in stabilizing the conformation of the Nef loop required for AP-2 binding and CD4 downregulation.\n\nWhile most mutational studies of the Nef-AP-2 interaction focused on the Nef central loop, one face of helix H3, including residues Gln104 and Asp108, contacts AP-2. The Nef mutant Q104A behaves like wild type in both binding to \u03b1\u2013\u03c32 (Figure 5B) and CD4 downregulation (Figure 6A,B). This mutation does not alter the main-chain, and so will not affect the ability of the main-chain of residue 104 to help anchor the central loop via Asp174. The charge-reversal mutant D108K, however, eliminates \u03b1\u2013\u03c32 binding as judged by Y3H (Figure 5B) and CD4 downregulation (Figure 6A,B). This finding is consistent with the salt bridge seen between \u03b1 Lys299 and Nef Asp108 in the structure. Another core residue, Pro129, has limited van der Waals interactions with \u03b1, thus it was not surprising that its mutation has no effect on the interaction (Figure 5B). These results corroborate the importance of core helix H3 in the AP-2 interaction and CD4 downregulation.\n\n### The membrane-bound AP-2:Nef complex\n\nAP complexes function as membrane-bound, tetrameric assemblies. A consensus view of the structure and membrane-docking mode of AP complexes has emerged from the structures of active conformations of the tetrameric AP-1 and AP-2 cores (Jackson et al., 2010; Canagarajah et al., 2013; Ren et al., 2013). A model for the membrane-bound AP-2:Nef complex in the consensus docking geometry was generated by superposition of the \u03b1\u2013\u03c32 hemicomplex on the full open tetramer (PDB 2XA7) (Jackson et al., 2010). A steric clash was observed with helix 1 of the \u03b22 subunit. \u03b22 helix 1 was previously shown to be conformationally labile in the unlatching (partial activation) of AP-2 (Kelly et al., 2008), and it seems reasonable to expect that it pivots in the full AP-2:Nef complex to prevent a collision.\n\nThe consensus docking of the AP-2:Nef complex places Nef proximal to the membrane such that the N-terminal helix H1 is aligned parallel and in contact with the membrane (Figure 7A,B). The C-terminus of helix H2 and parts of the central loop also align such that they would contact the membrane surface. The N-terminus of H1 is exposed to solvent such that there would be nothing to impede contact of the myristoylated N-terminus with the membrane. Indeed, the exposed face of H1 conjoins with H2 and parts of the central loop of Nef and the membrane-proximal parts of AP-2 to form a bowl that is 30 \u00d7 30 \u00c5 across, with a clearance of \u223c10 \u00c5 from the membrane (Figure 7C). Strikingly, the exposed face of H1 contains residues Trp57 and Leu58 that have been implicated in direct binding to CD4 (Grzesiek et al., 1996a; Figure 7D). Other residues implicated in CD4 binding, including Leu97, Arg106, and Leu110, also project into the bowl (Grzesiek et al., 1996a). The edge of the bowl includes residues from \u03b1, \u03c32, and \u03b22 (Figure 7C,D). This suggests that multivalent interactions between Nef, CD4, and AP-2 likely drive cooperativity in the formation of the ternary complex.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/01754/elife-01754-fig7-v1.jpg)\n\n**Figure 7.:** (A) The unlocked conformation of AP-2 core bound to myristoylated Nef (orange). The AP-2 \u03b1\u2013\u03c32:Nef structure was first aligned with the open conformation of AP-2 core structure (2XA7), and then docked on the membrane. The second view (B) is shown by rotating the first by 90\u00b0. Schematics are shown to the right of (A) and (B). (C) The surface of the AP-2:Nef complex as viewed from the membrane. Nef residues that are mapped by CD4 binding (Grzesiek et al., 1996b) are colored in blue. (D) Stick representation of Nef residues (blue) that interact with the CD4 cytosolic tail.\n\n## Discussion\n\nThe structure of the AP-2:Nef complex provides a framework to unify nearly two decades\u2019 worth of research of the molecular basis for CD4 downregulation by Nef. The large majority of Nef residues that have been implicated in CD4 downregulation reside in the central loop. The structure shows that all of these residues are well ordered in the complex, in contrast to all previous structures of Nef\u2013effector complexes. Nearly all of these Nef residues directly contact AP-2. One notable exception is Asp175, which had been anticipated to bind to a basic patch on the surface of the \u03b1 subunit. The structure revealed an unexpected role for Asp175 in stabilizing the conformation of the central loop. The structure also shows that the Nef core has both a direct role in forming polar interactions with AP-2 and an indirect role in scaffolding the conformation of the central loop. The role of Asp174 and Asp175 amounts to the formation of an effector-specific polar core within Nef. This provides insight into the underlying reason for the unusual architecture of Nef, as a single domain protein with disproportionately large internal loops. This architecture gives Nef an exceptional degree of plasticity, allowing multiple functions to be encoded within a relatively small structure.\n\nThe structure is beautifully consistent with the emerging consensus picture that all activated AP complexes seem to bind to membranes in the same conformation and the same geometry (Jackson et al., 2010; Canagarajah et al., 2013; Ren et al., 2013). The membrane-docking geometry suggested by the unlocked states of AP-1 and AP-2 places Nef such that it is touching the membrane, with its N-terminal region membrane proximal. This is consistent with its essential N-terminal myristoylation. One question still to be resolved is the disposition of the first helix of the \u03b22-adaptin trunk, which collides sterically with Nef in the modeled conformation. It seems straightforward that this helix could pivot out of the way, but this has yet to be directly tested. The general proximity of Nef, and its N-terminal region in particular, to the membrane is similar to the model proposed for the AP-1:Nef complex that functions in MHC-I downregulation (Jia et al., 2012). However, the details of the molecular contacts between Nef and the membrane surface differ (Figure 8). This suggests that Nef has more than one way to interact with membrane surfaces.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/01754/elife-01754-fig8-v1.jpg)\n\n**Figure 8.:** (A) Nef binds to different subunits of AP-2 (top) and AP-1 (bottom), but docks onto the membrane in both cases. The MHC-I cytoplasmic domain (CD):Nef complex binds to the \u03bc1 C-terminal domain (CTD) of the AP-1 core. One copy of AP-1 \u03bc1-CTD:MHC-I-CD:Nef complex (Jia et al., 2012) (pdb: 4EN2) was aligned with the open conformation of AP-1 core structure (Ren et al., 2013) (pdb: 4HMY), and then the AP-1 complex was docked onto the membrane in the same orientation as shown for AP-2 in Figure 7 and in the top panel. (B) Structural superposition of Nef (blue) as bound to the \u03bc1 subunit of AP-1 upon Nef (orange) bound to the \u03b1\u2013\u03c32 hemicomplex of AP-2 in this study.\n\nThe structural model, taken together with previous mapping of the CD4 binding site on Nef (Grzesiek et al., 1996b), suggests how CD4 binds to the AP-2 Nef complex on membranes. Residues of Nef helices H1 and H3 that are implicated in CD4 binding form one edge of a cavern 10 \u00c5 high and 30 \u00d7 30 \u00c5 across, with the membrane serving as the floor. The Nef binding site on CD4 comprises an approximate 17-residue tract (Preusser et al., 2001) that begins \u223c10 residues C-terminal to the end of the transmembrane helix. The entirety of the cavern is within 10 \u00c5 of the membrane surface. Thus localization of the CD4 tail within the cavern would be completely consistent with the proximity of the Nef binding site and transmembrane domain of CD4. The N-terminal loop of Nef is required for high-affinity binding to the CD4 cytosolic tail (Preusser et al., 2001). We therefore propose that the N-terminal loop of Nef folds around the CD4 tail within or at the edge of the cavern. The dissociation constants for CD4:Nef and AP-2:Nef are known separately, and both are approximately 1 \u03bcM. The affinity and kinetics of CD4 binding to the AP-2:Nef complex are unknown, but this model suggests that the binding would likely be tighter than for these isolated components, and the off rate correspondingly slower. This would contribute to delivery of CD4 to the ESCRT machinery and its ultimate degradation in the lysosome (daSilva et al., 2009).\n\nThe search for ways to combat the emergence of resistance to antiretrovirals, and to ultimately eradicate HIV, has led to an intense interest in targeting the interactions of HIV and host proteins (Jaeger et al., 2011). Host proteins, unlike viral proteins, are not susceptible to rapid mutation nor are they under selective pressure to resist therapy. The ideal host protein target site would be essential for the viral replication cycle, yet dispensable for host function. Such a site would also be \u2018groovy\u2019, that is to say, highly invaginated and capable of binding small molecules. The interaction surface complementary to the C-terminal turn segment of the Nef central loop would appear to fit this criterion. Indeed, a deep pocket in AP-2 directly below the binding site for Nef Arg178 appears to be under-utilized by Nef (Figure 9). Future analysis of the ternary AP-2:Nef:CD4 tail complex may reveal additional promising sites.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/01754/elife-01754-fig9-v1.jpg)\n\n**Figure 9.:** Nef is shown in a stick model and the highly concave AP-2 surface is shown in the vicinity of Nef Arg178. This region has no known interactions with physiological cargoes.\n\n## Materials and methods\n\n### Plasmid construction\n\nProtein expression plasmids were constructed by restriction cloning. Rat \u03b1-adaptin (1\u2013396) was subcloned as an N-terminal GST fusion together with rat \u03c32-adaptin into the pST39 polycistronic vector (Tan, 2001). A TEV protease cleavage site was introduced between the GST tag and \u03b1-adaptin. HIV-1 Nef (54\u2013203) was subcloned into pHis2 (Sheffield et al., 1999) and expressed as a fusion with an N-terminal His6 tag and a TEV cleavage site. All plasmids were verified by DNA sequencing.\n\n### Protein expression and purification\n\nThe AP-2 \u03b1\u2013\u03c32 hemicomplex was expressed in Rosetta2 cells (Novagen) and induced with 0.3 mM IPTG at 20\u00b0C overnight. The cells were lysed by sonication in PBS buffer, pH 7.4, 10% glycerol, 5 mM \u03b2-mercaptoethanol (BME), 5 mM EDTA, and a protease inhibitor cocktail (Sigma, St. Louis, MO). The clarified supernatant was first purified on GST Sepharose 4B resin (GE healthcare). After His6-TEV cleavage at 4\u00b0C overnight, the sample was diluted in SP buffer A: 30 mM HEPES pH 7.4, 3 mM BME and then loaded onto a HiTrap SP HP 5 ml column (GE healthcare, Piscataway, NJ). Elution from the SP column was performed with a 70 ml linear gradient from 0\u2013500 mM NaCl in SP buffer A. After each fraction was analyzed by SDS gel, the fractions were pooled and passed through 1 ml of GST resin and a Ni-NTA column (Qiagen, Valencia, CA) to capture the GST and His6-TEV. This sample was further purified on a HiLoad 16/60 Superdex 200 column (GE healthcare) in 20 mM Tris pH 7.4, 200 mM NaCl, and 0.3 mM TCEP.\n\nHIV-1 Nef constructs were expressed in BL21 (DE3) star cells (Invitrogen, Carlsbad, CA), and induced at 25\u00b0C overnight. The cell pellet was lysed by sonication and the lysate was loaded onto a Ni-NTA column in 50 mM Tris pH 7.4, 300 mM NaCl, 20 mM imidazole, 3 mM BME, 10% glycerol and protease inhibitor cocktail. The protein was eluted with 0.1 M imidazole, followed by TEV cleavage at 4\u00b0C overnight. After passing through Ni-NTA column to capture the cleaved His6 tag, the sample was loaded to HiLoad 16/60 Superdex 75 column (GE healthcare) in the sample buffer.\n\n### Isothermal titration calorimetry\n\nBoth TEV cleaved \u03b1\u2013\u03c32 hemicomplex and His6-tagged Nef(54-203) were purified by size-exclusion chromatography in the same ITC buffer of 20 mM Tris pH 7.4, 200 mM NaCl, 0.3 mM TCEP. The sample cell contained 0.2 ml of 40 \u03bcM \u03b1\u2013\u03c32 hemicomplex, and Nef (600 \u03bcM) was added in 18 injections of 2.1 \u03bcl each. Data from Nef injections into buffer blanks were subtracted from sample data before analysis. Measurements were repeated three times and carried out on an itc200 instrument (MicroCal, Northampton, MA). The data were processed using Origin software (MicroCal). The binding constant (Kd) was fitted using a one-site model.\n\n### Crystallization and crystallographic analysis\n\nThe \u03b1\u2013\u03c32 hemicomplex was mixed with Nef (54\u2013203) at a molar ratio of 1:1.2 in 20 mM Tris pH 7.4, 200 mM NaCl, 0.3 mM TCEP. Crystallization was carried out by sitting-drop vapor diffusion using an automated liquid-handling system (Mosquito, TTP LabTech, UK) at 288 K in 96-well plates. The optimized reservoir solution contained a mixture of 49 \u03bcl of Wizard I #29 (100 mM CHES pH 9.5, 200 mM NaCl, 10% PEG 8000, Emerald Bio, Bedford, MA) and 21 \u03bcl of 70% glycerol, adjusted to 0.2 mM inositol hexakisphosphate. The ratio of protein/precipitant in the drop was set at 2:1. The final crystal was obtained in 2\u20134 days by micro-seeding at 5 mg/ml \u03b1\u2013\u03c32 hemicomplex. The crystals were soaked in the cryprotectant paratone-N (Hampton research, Aliso Viejo, CA) and frozen in liquid N2.\n\nNative data were collected from a single frozen crystal using a MAR CCD detector at beamline 22-ID, Advanced Photon Source. All data were processed and scaled using HKL2000 (HKL research, Charlottesville, VA). The crystal diffracted to 2.9 \u00c5 resolution, and belonged to space group P212121 with unit cell dimensions a = 109.56 \u00c5, b = 168.03 \u00c5, c = 200.20 \u00c5, \u03b1 = \u03b2 = \u03b3 = 90\u00b0. A molecular replacement solution was found using partial structures derived from the locked AP-2 core (PDB: 2VGL) (Collins et al., 2002) and from Nef/Hck-SH3 (PDB: 3REA) (Breuer et al., 2011) as search models with Phaser (McCoy et al., 2007). Model building and refinement were carried out using Coot (Emsley et al., 2010) and Phenix (Adams et al., 2010; Table 1). Structural figures were generated with PyMol (DeLano, 2002).\n\n### Yeast 3-hybrid analysis\n\nY3H analysis was performed as previously described (Chaudhuri et al., 2007, 2009). NL4-3 Nef or mouse tyrosinase cytosolic tail DNAs were subcloned into the pBridge vector (Clontech, CA) along with rat \u03c31 or \u03c32. Rat \u03b1 and \u03b4 subunit DNAs were subcloned into the pGADT7 vector (Clonetech, CA). All the point mutants used in this study were generated by site-directed mutagenesis, using the QuikChange II XL (Agilent technologies, Santa Clara, CA). The canonical dileucine-containing tyrosinase tail construct was included as a positive control for the formation of a functional complex, and the \u03c31 subunit of AP-1 and the \u03b4 subunit of AP-3 were included as negative controls for self-activation. The mutations were verified by DNA sequencing. The Saccharomyces cerevisiae HF7c strain was cotransformed with the indicated pairs of pBridge and pGADT7 constructs, using EZ Yeast Transformation Kit (MP biomedicals, Solon, OH). Double transformants were selected and grown on plates lacking Leu, Trp, and Met (+HIS) for 3 days, then the colonies from each transformant were normalized and plated on + HIS plates and plates lacking Leu, Trp, Met, and HIS (\u2212HIS) with/without 3-AT (3-amino-1,2,4-triazole) for 4 days.\n\n### Fluorescence-activated cell sorting analysis\n\nFACS analysis was performed as described before (Chaudhuri et al., 2009). Wild-type or mutant NL4-3 Nef was subcloned into the pIRES2-eGFP vector (Clontech, CA). HeLa cells were co-transfected with pCMV-human CD4 and pIRES2-eGFP Nef wild-type or each mutant for 24 hr. The cells were then collected and stained with APC-conjugated anti-CD4 antibody and PE-conjugated anti-Transferrin receptor (TfR) antibody. The fluorescence was measured on a FACScalibur flow cytometer and analyzed by using CellQuest software (Becton Dickinson, Franklin Lakes, NJ). Only GFP positive cells were counted, and the inactive D174A, D175A Nef mutant was used as a negative control.\n",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "e179463f-29b3-4067-8450-265e99329fb4",
+      "submission_id": "e3e6bbb2-feb3-4d8b-ad57-1107e8ec1b5e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wesley Sundquist, University of Utah , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.01754.014](https://doi.org/10.7554/eLife.01754.014)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cHow HIV-1 Nef Hijacks the AP-2 Clathrin Adaptor to Downregulate CD4\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 peer reviewers, one of whom is a member of the Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewer discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe authors describe the structure and associated biochemistry of the complex between HIV Nef and the AP-2 \u201chemi-core\u201d \u2013 i.e., the first 396 residues of \u03b1 with \u03c3 tucked into its right-angle bend. Overall, this work is straightforward, of high technical quality, and represents an important advance.\n\nThe crystal structure reveals how an otherwise unstructured loop within Nef contacts both of the two AP-2 subunits and it nicely explains a large body of mutagenesis data, both published and performed within this study. Several aspects of the work are of particular interest and importance, including:\n\n1) The structure provides the first ordered picture of the large internal Nef loop, presumably because the structure only becomes ordered when it binds AP-2.\n\n2) As the authors note, CD4 downregulation is the \u201cclassic\u201d function of Nef, and this study explains the molecular basis for half of that interaction, explaining how Nef recruits the AP-2 complex to initiate assembly of a clathrin coated pit. The Nef interaction with CD4 remains to be characterized, but the current structure is a very nice step forward and the Nef-AP-2 interaction interface is sufficiently complex that it could not have been understood without a crystal structure.\n\n3) The supporting biochemistry, together with previous mutational analyses, makes a compelling case for the relevance and completeness of the structure.\n\n4) Knowledge of adaptor complex structures and membrane binding interactions enables a sensible model for the entire Nef-AP-2 complex, revealing how an ancillary cargo adaptor like Nef can cooperate with a generalized heterotetrameric adaptor.\n\n5) The authors also make a \u201cgroovy\u201d suggestion about an inhibitor site on AP-2 that might, if occupied, selectively interfere with Nef association.\n\nThe work is generally of high technical quality and no changes are required for publication in eLife, but we suggest that the authors consider the following issues.\n\n1) Between the structure description and the descriptions of the mutations, the text is overly dense. For example, the comprehensive list of residues that line the \u201cpocket walls\u201d, the guided tour along the Nef loop and similar passages may prevent the more general reader from enjoying the paper. Figure 4 doesn't really help much because it shows the Nef interaction footprint, but doesn't show the positions of any residues. Table 2 is a nice summary of the different mutational analyses, but it doesn't explain the structural role of any of the mutated residues. The authors should consider expanding/modifying Figure 4 and Table 2 to highlight the relevant mutation sites (Figure 4) and briefly explaining the interactions that they make (Table 2). That would make the information more accessible, and also allow the authors to remove detailed descriptions of interfaces and contacts from the text.\n\n2) In place of some of the structure description, the authors should consider adding a more sophisticated comparative analysis (and perhaps even a comparison figure) of the two Nef-AP complexes that have now been characterized structurally, i.e., their structure and the ternary complex of Nef with the MHC-I cytoplasmic domain and the \u03bc1 subunit of AP-1 (Jia et al. NSMB 2012 19, 701).\n\n3) A schematic version of Figure 7A and B, placed alongside the current versions, based on real molecular surfaces (not replacing them), would be helpful.\n\n4) The interaction between R178 of Nef and E342 of \u03b1-adaptin is interesting in part because it is specific for Nef; the mutation E342K in alpha adaptin affects the binding to Nef but not to the cellular protein tyrosinase, and this interaction is emphasized in Figure 8. Consequently, the authors should consider whether analyzing the effects of mutating R178 of Nef in the yeast three hybrid and CD4 downregulation assays would make a more complete story.\n\n5) The authors have reported previously that the presence of the CD4 cytoplasmic tail stimulates Nef binding to the hemi-complex. Although the current structure does not include CD4, can the authors speculate further on how binding to CD4 might have this affect?\n",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "09cc7f4e-d3ae-43c5-927c-8bf03bff11dc",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C1",
+      "claim": "HIV-1 is a lentivirus that causes acquired immunodeficiency syndrome (AIDS).",
+      "claim_type": "EXPLICIT",
+      "source": "The human immunodeficiency virus type 1 (HIV-1) is a lentivirus that causes acquired immunodeficiency syndrome (AIDS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about HIV-1 classification and disease causation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "6614ce6f-bcfa-4fde-8465-ea8cb99ee2b4",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C2",
+      "claim": "HIV-1 has a small genome encoding the main structural proteins Gag, Pol and Env, the regulatory proteins Tat and Rev, and the accessory proteins Nef, Vif, Vpr, and Vpu.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV-1 has a small genome encoding the main structural proteins Gag, Pol and Env, the regulatory proteins Tat and Rev, and the accessory proteins Nef, Vif, Vpr, and Vpu (Frankel and Young, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Frankel and Young, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "5e08d761-4d92-4cfe-ad45-fdd472cb9d35",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C3",
+      "claim": "During viral maturation, Pol is proteolytically cleaved to generate three proteins with enzymatic activity: the viral protease, integrase, and reverse transcriptase.",
+      "claim_type": "EXPLICIT",
+      "source": "During viral maturation, Pol is proteolytically cleaved to generate three proteins with enzymatic activity: the viral protease, integrase, and reverse transcriptase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HIV-1 viral maturation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "5b8a4aa4-c1d9-4176-ae43-7c5f6ca215dc",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C4",
+      "claim": "The viral protease, integrase, and reverse transcriptase are the main targets for chemotherapeutic agents currently in use for the prevention and treatment of AIDS.",
+      "claim_type": "EXPLICIT",
+      "source": "These enzymes are the main targets for chemotherapeutic agents currently in use for the prevention and treatment of AIDS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about current AIDS treatment strategies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "e87cac7b-a23d-421d-9eb9-1152f1765dc8",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C5",
+      "claim": "Combination therapies with these agents have dramatically reduced HIV-1 transmission as well as HIV-1-associated morbidity and mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Combination therapies with these agents have dramatically reduced HIV-1 transmission as well as HIV-1-associated morbidity and mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the effectiveness of combination antiretroviral therapy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "446b6679-4126-4557-8a20-9e5c89eaf122",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C6",
+      "claim": "Nef is not essential for infection in cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Although not essential for infection in cell culture, Nef enhances viral replication and disease progression in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Nef function in different contexts.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "ef35638d-3bbb-4293-880c-5f470037f388",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C7",
+      "claim": "Nef enhances viral replication and disease progression in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Although not essential for infection in cell culture, Nef enhances viral replication and disease progression in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Nef function in vivo.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "3135ff3b-f1c2-4c68-a94a-3ba4d1d05680",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C8",
+      "claim": "Patients infected with Nef-deficient strains of HIV-1 often do not develop AIDS for over 10 years even if untreated.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathogenic effects of Nef are underscored by the observation that patients infected with Nef-deficient strains of HIV-1 often do not develop AIDS for over 10 years even if untreated (these patients are referred to as 'long-term non-progressors' or 'slow progressors') (Deacon et al., 1995; Kirchhoff et al., 1995; Gorry et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Deacon et al., 1995; Kirchhoff et al., 1995; Gorry et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "c0677a12-4133-4e00-81f8-07d751b8bc4a",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C9",
+      "claim": "Nef has no enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, however, this potential has not been realized mainly because Nef has no enzymatic activity and its mechanisms of action are insufficiently understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Nef's biochemical properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "17dd2d35-ec31-4f0a-850d-4153fe0650dc",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C10",
+      "claim": "The best characterized and most critical function of Nef for pathogenesis is the downregulation of CD4 from the surface of infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At the cellular level, Nef has been ascribed multiple functions, of which the best characterized and most critical for pathogenesis is the downregulation of CD4 from the surface of infected cells (Guy et al., 1987; Garcia and Miller, 1991; Carl et al., 2000; Glushakova et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Guy et al., 1987; Garcia and Miller, 1991; Carl et al., 2000; Glushakova et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "f9864e67-d7b7-488e-89f6-dcf26b871f92",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C11",
+      "claim": "CD4 is a transmembrane protein that acts as a co-receptor in both the host's immune response and the initial binding of HIV-1 to their target cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CD4 is a transmembrane protein that acts as a co-receptor in both the host's immune response and the initial binding of HIV-1 to their target cells (Bowers et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bowers et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "adf0234b-1ee5-4809-a970-4305a5dcb659",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C12",
+      "claim": "Nef-induced CD4 downregulation interferes with the immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "Nef-induced CD4 downregulation interferes with the immune system (Skowronski et al., 1993), prevents superinfection (Benson et al., 1993) and promotes virion release (Lama et al., 1999; Ross et al., 1999), all of which contribute to enhanced HIV-1 propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Skowronski et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "e88658ff-d737-45c7-9438-a8911ddba50d",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C13",
+      "claim": "Nef-induced CD4 downregulation prevents superinfection.",
+      "claim_type": "EXPLICIT",
+      "source": "Nef-induced CD4 downregulation interferes with the immune system (Skowronski et al., 1993), prevents superinfection (Benson et al., 1993) and promotes virion release (Lama et al., 1999; Ross et al., 1999), all of which contribute to enhanced HIV-1 propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Benson et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "97021175-9866-40c3-815f-9080eb30458f",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C14",
+      "claim": "Nef-induced CD4 downregulation promotes virion release.",
+      "claim_type": "EXPLICIT",
+      "source": "Nef-induced CD4 downregulation interferes with the immune system (Skowronski et al., 1993), prevents superinfection (Benson et al., 1993) and promotes virion release (Lama et al., 1999; Ross et al., 1999), all of which contribute to enhanced HIV-1 propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lama et al., 1999; Ross et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "d1a517f4-27fb-4191-8e08-e7cc1ed6a275",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C15",
+      "claim": "HIV-1 Nef is a small, polymorphic protein of 200\u2013215 amino acids having a myristoylated N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV-1 Nef is a small, polymorphic protein of 200\u2013215 amino acids having a myristoylated N-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Nef structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "68278ad4-4910-4d9a-87a2-8b4acdfb0291",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C16",
+      "claim": "Nef has a folded core (residues 55\u201365 and 84\u2013203), with flexible N-terminal (residues 1\u201354) and C-terminal (residues 204\u2013206) segments, and a central flexible loop (residues 149\u2013179).",
+      "claim_type": "EXPLICIT",
+      "source": "X-ray crystallography (Lee et al., 1996; Arold et al., 1997; Horenkamp et al., 2011; Jia et al., 2012) and NMR (Grzesiek et al., 1996a, 1997) have shown that Nef has a folded core (residues 55\u201365 and 84\u2013203), with flexible N-terminal (residues 1\u201354) and C-terminal (residues 204\u2013206) segments, and a central flexible loop (residues 149\u2013179) (residue numbers correspond to the NL4-3 strain of HIV-1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lee et al., 1996; Arold et al., 1997; Horenkamp et al., 2011; Jia et al., 2012; Grzesiek et al., 1996a, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "900bb062-736b-4707-8a63-a383a1cd58af",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C17",
+      "claim": "CD4 downregulation depends on Nef myristoylation.",
+      "claim_type": "EXPLICIT",
+      "source": "CD4 downregulation depends on both Nef myristoylation (Aiken et al., 1994) and specific residues in the loop, including Leu164 and Leu165 (Bresnahan et al., 1998; Craig et al., 1998; Greenberg et al., 1998; Janvier et al., 2003), which are in a sequence context fitting the [DE]XXXL[LI] motif for dileucine-based sorting signals (Bonifacino and Traub, 2003), and the diacidic motif, Asp174-Asp175 (Aiken et al., 1996; Lindwasser et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Aiken et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "73a6f012-1881-48bb-8ee5-99e47e162905",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C18",
+      "claim": "CD4 downregulation depends on specific residues in the Nef loop, including Leu164 and Leu165.",
+      "claim_type": "EXPLICIT",
+      "source": "CD4 downregulation depends on both Nef myristoylation (Aiken et al., 1994) and specific residues in the loop, including Leu164 and Leu165 (Bresnahan et al., 1998; Craig et al., 1998; Greenberg et al., 1998; Janvier et al., 2003), which are in a sequence context fitting the [DE]XXXL[LI] motif for dileucine-based sorting signals (Bonifacino and Traub, 2003), and the diacidic motif, Asp174-Asp175 (Aiken et al., 1996; Lindwasser et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bresnahan et al., 1998; Craig et al., 1998; Greenberg et al., 1998; Janvier et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "6ca4804b-224c-42bc-8306-2e38e07eba88",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C19",
+      "claim": "Nef Leu164 and Leu165 are in a sequence context fitting the [DE]XXXL[LI] motif for dileucine-based sorting signals.",
+      "claim_type": "EXPLICIT",
+      "source": "CD4 downregulation depends on both Nef myristoylation (Aiken et al., 1994) and specific residues in the loop, including Leu164 and Leu165 (Bresnahan et al., 1998; Craig et al., 1998; Greenberg et al., 1998; Janvier et al., 2003), which are in a sequence context fitting the [DE]XXXL[LI] motif for dileucine-based sorting signals (Bonifacino and Traub, 2003), and the diacidic motif, Asp174-Asp175 (Aiken et al., 1996; Lindwasser et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bonifacino and Traub, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "097e76af-cd48-4f75-8c6f-9bb27a166793",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C20",
+      "claim": "CD4 downregulation depends on the diacidic motif Asp174-Asp175 in Nef.",
+      "claim_type": "EXPLICIT",
+      "source": "CD4 downregulation depends on both Nef myristoylation (Aiken et al., 1994) and specific residues in the loop, including Leu164 and Leu165 (Bresnahan et al., 1998; Craig et al., 1998; Greenberg et al., 1998; Janvier et al., 2003), which are in a sequence context fitting the [DE]XXXL[LI] motif for dileucine-based sorting signals (Bonifacino and Traub, 2003), and the diacidic motif, Asp174-Asp175 (Aiken et al., 1996; Lindwasser et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Aiken et al., 1996; Lindwasser et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "924f04e6-9221-4258-ab6c-0803c9e8f710",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C21",
+      "claim": "Myristoylation allows recruitment of Nef from the cytosol to the inner leaflet of the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Myristoylation allows recruitment of Nef from the cytosol to the inner leaflet of the plasma membrane (Yu and Felsted, 1992) while the loop engages the clathrin-associated adaptor protein 2 (AP-2) complex (Jin et al., 2005; Chaudhuri et al., 2007; Doray et al., 2007; Lindwasser et al., 2008; Mattera et al., 2011; Jin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yu and Felsted, 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "741a4fb7-8aa0-48c0-b0fe-f14943ea157d",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C22",
+      "claim": "The Nef loop engages the clathrin-associated adaptor protein 2 (AP-2) complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Myristoylation allows recruitment of Nef from the cytosol to the inner leaflet of the plasma membrane (Yu and Felsted, 1992) while the loop engages the clathrin-associated adaptor protein 2 (AP-2) complex (Jin et al., 2005; Chaudhuri et al., 2007; Doray et al., 2007; Lindwasser et al., 2008; Mattera et al., 2011; Jin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jin et al., 2005; Chaudhuri et al., 2007; Doray et al., 2007; Lindwasser et al., 2008; Mattera et al., 2011; Jin et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "3efe6f1c-4a03-46ba-b95e-1874240d2a87",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C23",
+      "claim": "The Nef:AP-2 complex interacts with the cytosolic tail of CD4, leading to the cooperative assembly of a tripartite Nef:AP-2:CD4 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The Nef:AP-2 complex interacts with the cytosolic tail of CD4, leading to the cooperative assembly of a tripartite Nef:AP-2:CD4 complex (Chaudhuri et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chaudhuri et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "c96c1ecf-dd7b-4ed7-86ae-59c643b17d16",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C24",
+      "claim": "The Nef:AP-2:CD4 complex nucleates the formation of clathrin-coated pits.",
+      "claim_type": "EXPLICIT",
+      "source": "This complex nucleates the formation of clathrin-coated pits (Foti et al., 1997; Greenberg et al., 1997; Burtey et al., 2007) that mediate rapid internalization of CD4, followed by its delivery to lysosomes via the multivesicular body pathway (Aiken et al., 1994; Rhee and Marsh, 1994; daSilva et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Foti et al., 1997; Greenberg et al., 1997; Burtey et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "1bb81828-7b53-4beb-a46f-c912c1654298",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C25",
+      "claim": "Clathrin-coated pits mediate rapid internalization of CD4, followed by its delivery to lysosomes via the multivesicular body pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This complex nucleates the formation of clathrin-coated pits (Foti et al., 1997; Greenberg et al., 1997; Burtey et al., 2007) that mediate rapid internalization of CD4, followed by its delivery to lysosomes via the multivesicular body pathway (Aiken et al., 1994; Rhee and Marsh, 1994; daSilva et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Aiken et al., 1994; Rhee and Marsh, 1994; daSilva et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "c2f837a9-248c-4ef0-9c86-56576ed17181",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C26",
+      "claim": "Binding of Nef to AP-2 is direct and dependent on the dileucine and diacidic motifs, and other residues, in the Nef loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical analyses have demonstrated that binding of Nef to AP-2 is direct and dependent on the dileucine and diacidic motifs, and other residues, in the Nef loop (Chaudhuri et al., 2007; Doray et al., 2007; Lindwasser et al., 2008; Chaudhuri et al., 2009; Mattera et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chaudhuri et al., 2007; Doray et al., 2007; Lindwasser et al., 2008; Chaudhuri et al., 2009; Mattera et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "c4fdf1e1-ed24-4f1e-a3c1-32ae66e360ff",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C27",
+      "claim": "AP-2 is a heterotetramer composed of \u03b1, \u03b22, \u03bc2 and \u03c32 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "AP-2 is a heterotetramer composed of \u03b1, \u03b22, \u03bc2 and \u03c32 subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about AP-2 structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "1c1f1896-d3bb-42cb-8eb1-b8a53c6ef043",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C28",
+      "claim": "The N-terminal 'trunk' domains of \u03b1 and \u03b22 together with the whole \u03bc2 and \u03c32 subunits constitute the core of the AP-2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal 'trunk' domains of \u03b1 and \u03b22 together with the whole \u03bc2 and \u03c32 subunits constitute the core of the complex, whereas the C-terminal 'hinge' and 'ear' domains of \u03b1 and \u03b22 form long projections that extend from the core (Owen et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Owen et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "5d4628ef-e262-4efe-8847-c224e057ea8e",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C29",
+      "claim": "The C-terminal 'hinge' and 'ear' domains of \u03b1 and \u03b22 form long projections that extend from the AP-2 core.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal 'trunk' domains of \u03b1 and \u03b22 together with the whole \u03bc2 and \u03c32 subunits constitute the core of the complex, whereas the C-terminal 'hinge' and 'ear' domains of \u03b1 and \u03b22 form long projections that extend from the core (Owen et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Owen et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "c5bad165-f52f-4438-a7bd-2ff0fe3f575b",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C30",
+      "claim": "The AP-2 core undergoes a large conformation change from a 'locked' to an 'open' conformation that allows it to bind sorting signals and to be recruited to membranes via interaction with the phosphatidylinositol lipid PI(4,5)P2.",
+      "claim_type": "EXPLICIT",
+      "source": "The AP-2 core undergoes a large conformation change from a 'locked' to an 'open' conformation that allows it to bind sorting signals and to be recruited to membranes via interaction with the phosphatidylinositol lipid PI(4,5)P2 (Jackson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jackson et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "552c1f98-5220-4965-bc79-8280ed65a844",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C31",
+      "claim": "Nef binds to the \u03b1\u2013\u03c32 'hemicomplex' of AP-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Nef has been shown to bind to the \u03b1\u2013\u03c32 'hemicomplex' (Chaudhuri et al., 2007; Doray et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chaudhuri et al., 2007; Doray et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "cde6ceae-b2b8-4ac0-9454-d07239da2e65",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C32",
+      "claim": "The \u03c32 subunit (with a small contribution from the \u03b1 subunit) harbors a binding site for [DE]XXXL[LI]-type signals from host cell proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03c32 subunit (with a small contribution from the \u03b1 subunit), harbors a binding site for [DE]XXXL[LI]-type signals from host cell proteins (Kelly et al., 2008; Jackson et al., 2010; Mattera et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kelly et al., 2008; Jackson et al., 2010; Mattera et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "c1d87d18-e65c-461c-8697-4b06508bef73",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C33",
+      "claim": "The \u03c32 binding site for [DE]XXXL[LI]-type signals is required for Nef binding, most likely through recognition of the Nef dileucine motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutational analyses have shown that this site is also required for Nef binding, most likely through recognition of the Nef dileucine motif (Mattera et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mattera et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "8865b582-963f-420c-a9a0-fd6034ebe2b0",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C34",
+      "claim": "The \u03b1 subunit has an additional site, comprising Lys298 and Arg341, which is required for Nef binding and CD4 downregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b1 subunit has an additional site, comprising Lys298 and Arg341, which is also required for Nef binding and CD4 downregulation (Chaudhuri et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chaudhuri et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "41781034-a162-4d18-837b-683fd6842f8d",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C35",
+      "claim": "The second Nef-binding site on \u03b1 (Lys298 and Arg341) is not known to participate in any host cell function.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this second site on \u03b1 is not known to participate in any host cell function, making it a possible target for selective interference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the lack of known host cell function for this site.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "0c43b341-8c33-4db9-a9b9-39561c0f30f3",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C36",
+      "claim": "The crystal structure of Nef (residues 54\u2013203) in complex with the \u03b1 (residues 1\u2013396) and \u03c32 (full-length) subunits of AP-2 was solved at 2.9 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To elucidate the structural basis for this interaction, we have solved the crystal structure at 2.9 \u00c5 resolution of Nef (residues 54\u2013203) in complex with the \u03b1 (residues 1\u2013396) and \u03c32 (full-length) subunits of AP-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental work reported in this manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "b7ac211a-657d-4816-81ff-56aaff5d85ac",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C37",
+      "claim": "The entire central loop of Nef is well ordered in the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure reveals that the entire central loop is well ordered, and that most of it contacts the \u03b1\u2212\u03c32 hemicomplex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "fc194a9f-e75d-4d91-b2d6-ea1beb87808b",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C38",
+      "claim": "Most of the Nef central loop contacts the \u03b1\u2212\u03c32 hemicomplex.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure reveals that the entire central loop is well ordered, and that most of it contacts the \u03b1\u2212\u03c32 hemicomplex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "2119c215-5349-44e0-bfa0-d2ae906c3d52",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C39",
+      "claim": "The Nef core is directly involved in contacts with AP-2.",
+      "claim_type": "EXPLICIT",
+      "source": "The Nef core is directly involved in contacts as well as serves as a scaffold to position the central loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "98146e2d-7324-4513-b9d6-7201c98fddb1",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C40",
+      "claim": "The Nef core serves as a scaffold to position the central loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The Nef core is directly involved in contacts as well as serves as a scaffold to position the central loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "a92a8882-c0bd-4b94-9db5-50b32fbba7f6",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C41",
+      "claim": "The \u03b11\u2013396 form of the AP-2 \u03b1\u2013\u03c32 hemicomplex bound to HIV-1 NL4-3 Nef (54\u2013203) with Kd = 1.8 \u03bcM and 1:1 stoichiometry, as determined by isothermal titration calorimetry (ITC).",
+      "claim_type": "EXPLICIT",
+      "source": "This construct bound to the HIV-1 NL4-3 Nef (54\u2013203) (hereafter, 'Nef') with Kd = 1.8 \u03bcM and 1:1 stoichiometry, as determined by isothermal titration calorimetry (ITC) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from ITC experiments shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "1abe468a-5c38-4053-b2c9-8b488430d83c",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C42",
+      "claim": "The asymmetric unit of the crystal contains four Nef:\u03b1\u2013\u03c32 complexes, all in similar conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetric unit contains four Nef:\u03b1\u2013\u03c32 complexes, all in similar conformations, with small variations in the quality of the electron density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "77bd90fa-53fe-4b09-bbe7-e3003ac1c7a6",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C43",
+      "claim": "Nef buries 1170 \u00c52 in the interface with AP-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Nef buries 1170 \u00c52 in this interface, of which two-thirds is buried against \u03c32 and the remainder against \u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "ed5f07dc-8422-46fc-a93e-abef72328011",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C44",
+      "claim": "Two-thirds of the Nef-AP-2 interface is buried against \u03c32 and the remainder against \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Nef buries 1170 \u00c52 in this interface, of which two-thirds is buried against \u03c32 and the remainder against \u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "1a1b2ff1-f989-4f6b-9364-73242992bb8b",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C45",
+      "claim": "The \u03b1\u2013\u03c32 unit is essentially rigid, in a conformation identical to that seen in other structures of the AP-2 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b1\u2013\u03c32 unit is essentially rigid, in a conformation identical to that seen in other structures of the AP-2 complex (Collins et al., 2002; Kelly et al., 2008; Jackson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis, supported by comparison to previous structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "341c100f-2126-403e-85a3-5577eaf1cb36",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C46",
+      "claim": "The Nef core (excluding the central loop 149\u2013179) contains five \u03b1-helices (H2, H3, H6, H7, H8) and a five-stranded \u03b2-sheet.",
+      "claim_type": "EXPLICIT",
+      "source": "The Nef core (excluding the central loop 149\u2013179) contains the five \u03b1-helices (H2, H3, H6, H7, H8) and five-stranded \u03b2-sheet visualized in other Nef crystal structures (Lee et al., 1996; Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the crystal structure, consistent with previous structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "44988eaa-4130-43fb-9713-1d9af1c5e8c0",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C47",
+      "claim": "The Nef core manifests a poorly ordered N-terminal helix (H1) spanning residues 55\u201365.",
+      "claim_type": "EXPLICIT",
+      "source": "The core also manifests a poorly ordered N-terminal helix (H1) spanning residues 55\u201365, which was not visualized in all of the chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "3af80284-6e33-451e-a8bc-5a1f69ed02f4",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C48",
+      "claim": "Nef helix H1 (residues 55\u201365) contains the primary binding site for CD4.",
+      "claim_type": "EXPLICIT",
+      "source": "This helix was first identified by solution NMR and contains the primary binding site for CD4 (Grzesiek et al., 1996a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Grzesiek et al., 1996a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "70594cf2-ca10-415e-9ee3-5970eb97e392",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C49",
+      "claim": "The central loop from residues 149\u2013179 was visualized in its entirety in the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to most other crystal structures, the central loop from residues 149\u2013179 was visualized in its entirety (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the crystal structure, shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "7dd27497-afc5-4447-8e80-8b6ad590b142",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C50",
+      "claim": "The central loop of Nef contains two additional helices, one from residues 150\u2013157 (H4), and the other a single turn from 167\u2013170 (H5).",
+      "claim_type": "EXPLICIT",
+      "source": "The central loop contains two additional helices, one from residues 150\u2013157 (H4), and the other a single turn from 167\u2013170 (H5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "230e57c9-30e5-46e9-94dc-5213659c5398",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C51",
+      "claim": "The central loop of Nef interacts extensively both with the \u03b1 and \u03c32 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The central loop interacts extensively both with the \u03b1 and \u03c32 subunits (Figure 2D), with the greatest contact surface involving \u03c32.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the crystal structure, shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "38baa932-69ef-4604-a19a-a362126a6229",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C52",
+      "claim": "The greatest contact surface of the Nef central loop involves \u03c32.",
+      "claim_type": "EXPLICIT",
+      "source": "The central loop interacts extensively both with the \u03b1 and \u03c32 subunits (Figure 2D), with the greatest contact surface involving \u03c32.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "91e13803-94bb-4410-908d-23612bef29f8",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C53",
+      "claim": "The Nef core interacts primarily via a network of interactions between helix H3 and the \u03b1 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The core interacts primarily via a network of interactions between helix H3 and the \u03b1 subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "1c0b689a-17a9-4cb8-835a-03a2d6a80673",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C54",
+      "claim": "The Leu164-Leu165 pair of the dileucine motif anchors the loop in a pocket on \u03c32 just as seen for a dileucine peptide bound to the unlatched AP-2 tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "The Leu164-Leu165 pair of the dileucine motif anchors the loop in a pocket on \u03c32 just as seen for a dileucine peptide bound to the unlatched AP-2 tetramer (Kelly et al., 2008; Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the crystal structure, compared to a previous structure from Kelly et al., 2008, shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "6e0e2def-6817-4e74-894a-b04a19275e94",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C55",
+      "claim": "The pocket walls for the dileucine binding site on \u03c32 are formed by hydrophobic residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The pocket walls are formed by hydrophobic residues of \u03c32.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "334c962a-ebcc-4acc-b80f-7c9ee770c3a7",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C56",
+      "claim": "Nef Glu160 of the motif binds to basic residues on both \u03c32 and \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Nef Glu160 of the motif binds to basic residues on both \u03c32 and \u03b1 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the crystal structure, shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "88fb6617-272a-4d92-9369-54ba781eba4b",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C57",
+      "claim": "Nef Glu154 makes electrostatic interactions with a second basic patch on \u03c32.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues of H4, notably Glu154, make electrostatic interactions with a second basic patch on \u03c32 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the crystal structure, shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "3a953138-439b-4d0a-887c-b3e8279d64f9",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C58",
+      "claim": "H4 and the dileucine motif have little or no interaction with the Nef core.",
+      "claim_type": "EXPLICIT",
+      "source": "H4 and the dileucine motif have little or no interaction with the Nef core, and their conformation seems to be specified by their interactions with \u03b1\u2013\u03c32.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "e4d20587-c14e-46c3-91b0-c98e7b89c3d5",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C59",
+      "claim": "The conformation of H4 and the dileucine motif seems to be specified by their interactions with \u03b1\u2013\u03c32.",
+      "claim_type": "EXPLICIT",
+      "source": "H4 and the dileucine motif have little or no interaction with the Nef core, and their conformation seems to be specified by their interactions with \u03b1\u2013\u03c32.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "99f220fb-455a-4013-b0b5-18105725f480",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C60",
+      "claim": "Helix H5 and the C-terminal turn segment of the Nef loop are sandwiched between \u03b1\u2013\u03c32 and the Nef core.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, helix H5 and the C-terminal turn segment are sandwiched between \u03b1\u2013\u03c32 and the Nef core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "d9cd337e-2102-4561-b1f5-6426498d4390",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C61",
+      "claim": "The structure of helix H5 and the C-terminal turn segment clearly depends on the interactions with \u03b1\u2013\u03c32.",
+      "claim_type": "EXPLICIT",
+      "source": "Their structure clearly depends on the interactions with \u03b1\u2013\u03c32, since they are not otherwise visualized in this conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the crystal structure analysis and comparison to other structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "78199701-d35b-41ed-bc67-58432ed20bdf",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C62",
+      "claim": "The Nef core has an important role in organizing the H5 and C-terminal turn segment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Nef core also seems to have an important role in organizing this segment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "bf95c9b0-e706-43e9-a147-e1b18841cf83",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C63",
+      "claim": "H5 packs against the \u03b2-sheet of the Nef core.",
+      "claim_type": "EXPLICIT",
+      "source": "H5 packs against the \u03b2-sheet of the core, and serves primarily to orient the hydrophobic loop with respect to the dileucine motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "19512a6e-5dbc-45ed-b1f5-99158cd0695c",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C64",
+      "claim": "H5 serves primarily to orient the hydrophobic loop with respect to the dileucine motif.",
+      "claim_type": "EXPLICIT",
+      "source": "H5 packs against the \u03b2-sheet of the core, and serves primarily to orient the hydrophobic loop with respect to the dileucine motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "31b5a85c-e239-4890-af56-b6adc761fcbb",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C65",
+      "claim": "The tight turns of the C-terminal part of the Nef loop serve to project a number of charged and hydrophobic side chains into complementary interactions with both \u03b1 and \u03c32.",
+      "claim_type": "EXPLICIT",
+      "source": "The tight turns of the C-terminal part of the loop serve to project a number of charged and hydrophobic side chains into complementary interactions with both \u03b1 and \u03c32 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the crystal structure, shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "d7f4a4fc-50d8-4f4e-bd8e-cc02a43d94a5",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C66",
+      "claim": "The turn-rich section of the Nef loop from 171\u2013179 is anchored at its ends by H5 and by the strand \u03b25 of the core.",
+      "claim_type": "EXPLICIT",
+      "source": "This unusual sequence of turns is anchored at its ends by H5 and by the strand \u03b25 of the core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "8943d601-1fbe-4c78-abc2-8fcf0ab836e8",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C67",
+      "claim": "The turn-rich section of the Nef loop from 171\u2013179 is anchored internally by a hydrogen bond between Nef Asp174 and the main-chain amide of Gln104.",
+      "claim_type": "EXPLICIT",
+      "source": "The whole turn-rich section of the loop from 171\u2013179 is anchored internally by a hydrogen bond between Nef Asp174 and the main-chain amide of Gln104, and by a partially buried salt bridge between Nef Asp175 of the loop and Nef Arg134 of the core \u03b2 sheet (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the crystal structure, shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "3406aac5-e831-4850-b335-83e40d6eb844",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C68",
+      "claim": "The turn-rich section of the Nef loop from 171\u2013179 is anchored internally by a partially buried salt bridge between Nef Asp175 of the loop and Nef Arg134 of the core \u03b2 sheet.",
+      "claim_type": "EXPLICIT",
+      "source": "The whole turn-rich section of the loop from 171\u2013179 is anchored internally by a hydrogen bond between Nef Asp174 and the main-chain amide of Gln104, and by a partially buried salt bridge between Nef Asp175 of the loop and Nef Arg134 of the core \u03b2 sheet (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the crystal structure, shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "3def7fe1-ad75-479a-ba31-cec9d02f8bc7",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C69",
+      "claim": "Residues of Nef helix H3 of the core directly contact AP-2.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure also reveals that residues of Nef helix H3 of the core directly contact AP-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "3042f47d-a632-493d-92a1-0aa8d28bc305",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C70",
+      "claim": "Nef Gln104, Arg105, and Asp108 bind to a basic patch on \u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Gln104, Arg105, and Asp108 bind to a basic patch on \u03b1 (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the crystal structure, shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "1bd8e58a-dffb-4a0e-aaa2-3cdd04b7bed7",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C71",
+      "claim": "Nef Pro129 of the \u03b22-\u03b23 loop forms van der Waals interactions with atoms of the \u03b1 Arg341 side-chain.",
+      "claim_type": "EXPLICIT",
+      "source": "There is one other minor interaction with the core region, involving Nef Pro129 of the \u03b22-\u03b23 loop. The Pro side-chain forms van der Waals interactions with atoms of the \u03b1 Arg341 side-chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "84ae6f47-6c6a-4cdc-b5c6-894da86a15fe",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C72",
+      "claim": "AP-2 \u03c32 Y62A and A63D mutations eliminated binding to Nef.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the regions of AP-2 that were already known to bind dileucine signals had the expected loss of interaction. These include \u03c32 Y62A and A63D (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Y3H experiments shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "19b0b15e-8f0a-42b8-a771-15118f6f2273",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C73",
+      "claim": "AP-2 \u03c32 R60E mutation eliminated binding to Nef.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in regions unique to Nef binding, notably \u03c32 R60E (Figure 5C) and \u03b1 E342K (Figure 5D), also eliminated binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Y3H experiments shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "a73e9df1-8cfa-4b7c-ab30-b339acaa6210",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C74",
+      "claim": "AP-2 \u03b1 E342K mutation eliminated binding to Nef.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in regions unique to Nef binding, notably \u03c32 R60E (Figure 5C) and \u03b1 E342K (Figure 5D), also eliminated binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Y3H experiments shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "115881ef-512c-4c4e-b1fe-ee68ac315656",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C75",
+      "claim": "AP-2 \u03c32 N48A, H85A, and C99A and \u03b1 V300A, Q301A, and N344A mutations had lesser mutational phenotypes, if any.",
+      "claim_type": "EXPLICIT",
+      "source": "Other nearby residues with more peripheral interactions, including \u03c32 N48A, H85A, and C99A and \u03b1 V300A, Q301A, and N344A, had lesser mutational phenotypes, if any (Figure 5C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Y3H experiments shown in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "4c5896e4-6937-45d1-b7a3-de5dd42b2761",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C76",
+      "claim": "The Nef mutant Q104A behaves like wild type in both binding to \u03b1\u2013\u03c32 and CD4 downregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Nef mutant Q104A behaves like wild type in both binding to \u03b1\u2013\u03c32 (Figure 5B) and CD4 downregulation (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Y3H and FACS experiments shown in Figures 5B and 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "c5ea9d1c-4420-4d4e-a062-885055e158f9",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C77",
+      "claim": "The Nef charge-reversal mutant D108K eliminates \u03b1\u2013\u03c32 binding as judged by Y3H.",
+      "claim_type": "EXPLICIT",
+      "source": "The charge-reversal mutant D108K, however, eliminates \u03b1\u2013\u03c32 binding as judged by Y3H (Figure 5B) and CD4 downregulation (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Y3H experiments shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "9558ce6c-2f28-4563-a172-7f80d631d007",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C78",
+      "claim": "The Nef charge-reversal mutant D108K eliminates CD4 downregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The charge-reversal mutant D108K, however, eliminates \u03b1\u2013\u03c32 binding as judged by Y3H (Figure 5B) and CD4 downregulation (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from FACS experiments shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "db5644dd-7244-46af-841f-b188b247fc0a",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C79",
+      "claim": "The Nef D108K mutation is consistent with the salt bridge seen between \u03b1 Lys299 and Nef Asp108 in the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with the salt bridge seen between \u03b1 Lys299 and Nef Asp108 in the structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the mutational data to the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "243ce447-4a31-41a1-a3aa-8aa6423e2b79",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C80",
+      "claim": "Nef Pro129 mutation has no effect on the interaction with AP-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Another core residue, Pro129, has limited van der Waals interactions with \u03b1, thus it was not surprising that its mutation has no effect on the interaction (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Y3H experiments shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "60a26b2c-2e6b-4e00-9ddd-8039341301ce",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C81",
+      "claim": "The structure of the AP-2:Nef complex places Nef proximal to the membrane such that the N-terminal helix H1 is aligned parallel and in contact with the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The consensus docking of the AP-2:Nef complex places Nef proximal to the membrane such that the N-terminal helix H1 is aligned parallel and in contact with the membrane (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the structural model shown in Figures 7A and 7B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "e2e75622-d296-48b4-9c55-b9194ff3722f",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C82",
+      "claim": "The C-terminus of helix H2 and parts of the central loop of Nef align such that they would contact the membrane surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminus of helix H2 and parts of the central loop also align such that they would contact the membrane surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the structural model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "5f3d85b8-70d6-4042-bc9a-bbb8ebe33760",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C83",
+      "claim": "The N-terminus of H1 is exposed to solvent such that there would be nothing to impede contact of the myristoylated N-terminus with the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminus of H1 is exposed to solvent such that there would be nothing to impede contact of the myristoylated N-terminus with the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the structural model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "8a770106-58c6-49e9-8ca0-af16d1df61c0",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C84",
+      "claim": "The exposed face of H1 conjoins with H2 and parts of the central loop of Nef and the membrane-proximal parts of AP-2 to form a bowl that is 30 \u00d7 30 \u00c5 across, with a clearance of \u223c10 \u00c5 from the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the exposed face of H1 conjoins with H2 and parts of the central loop of Nef and the membrane-proximal parts of AP-2 to form a bowl that is 30 \u00d7 30 \u00c5 across, with a clearance of \u223c10 \u00c5 from the membrane (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the structural model shown in Figure 7C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "3eda4a6d-4782-418c-8082-dd3fe259ed20",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C85",
+      "claim": "The exposed face of H1 contains residues Trp57 and Leu58 that have been implicated in direct binding to CD4.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the exposed face of H1 contains residues Trp57 and Leu58 that have been implicated in direct binding to CD4 (Grzesiek et al., 1996a; Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the structural model shown in Figure 7D, supported by citation to Grzesiek et al., 1996a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "e3f22ab6-1501-4d90-97e5-ef7018d34f3c",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C86",
+      "claim": "Nef residues Leu97, Arg106, and Leu110 project into the bowl formed by the AP-2:Nef complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Other residues implicated in CD4 binding, including Leu97, Arg106, and Leu110, also project into the bowl (Grzesiek et al., 1996a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the structural model, supported by citation to Grzesiek et al., 1996a.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "13e07600-5e06-43ae-b062-78184c3f620b",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C87",
+      "claim": "Multivalent interactions between Nef, CD4, and AP-2 likely drive cooperativity in the formation of the ternary complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that multivalent interactions between Nef, CD4, and AP-2 likely drive cooperativity in the formation of the ternary complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the structural model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "08495273-5d2b-44ce-9ce5-ceed947e649c",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C88",
+      "claim": "The structure of the AP-2:Nef complex provides a framework to unify nearly two decades' worth of research of the molecular basis for CD4 downregulation by Nef.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the AP-2:Nef complex provides a framework to unify nearly two decades' worth of research of the molecular basis for CD4 downregulation by Nef.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the significance of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "685d4177-5e22-4bc0-b126-6f6310e8130b",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C89",
+      "claim": "The large majority of Nef residues that have been implicated in CD4 downregulation reside in the central loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The large majority of Nef residues that have been implicated in CD4 downregulation reside in the central loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of previous research findings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "a3ce150c-8c7e-4092-9a61-27e1a19e6b5b",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C90",
+      "claim": "All of the Nef central loop residues implicated in CD4 downregulation are well ordered in the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure shows that all of these residues are well ordered in the complex, in contrast to all previous structures of Nef\u2013effector complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "26af31d5-8f12-4069-a69d-e4362c4c945e",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C91",
+      "claim": "Nearly all of the Nef central loop residues implicated in CD4 downregulation directly contact AP-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly all of these Nef residues directly contact AP-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "e58bc844-ac99-4614-be43-6b2ba751b96f",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C92",
+      "claim": "Asp175 had been anticipated to bind to a basic patch on the surface of the \u03b1 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "One notable exception is Asp175, which had been anticipated to bind to a basic patch on the surface of the \u03b1 subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous expectations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "907194e7-5a82-420a-a7de-ea66dd5467c3",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C93",
+      "claim": "The structure revealed an unexpected role for Asp175 in stabilizing the conformation of the central loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure revealed an unexpected role for Asp175 in stabilizing the conformation of the central loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "9c255fbd-025a-407c-8c07-fc39ccce35c5",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C94",
+      "claim": "The Nef core has both a direct role in forming polar interactions with AP-2 and an indirect role in scaffolding the conformation of the central loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure also shows that the Nef core has both a direct role in forming polar interactions with AP-2 and an indirect role in scaffolding the conformation of the central loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "9c879059-5d4a-4d88-a7ce-067dad6b071f",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C95",
+      "claim": "The role of Asp174 and Asp175 amounts to the formation of an effector-specific polar core within Nef.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of Asp174 and Asp175 amounts to the formation of an effector-specific polar core within Nef.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the structural findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "27acffff-6e94-4971-929d-012a3aa3167c",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C96",
+      "claim": "The unusual architecture of Nef, as a single domain protein with disproportionately large internal loops, gives Nef an exceptional degree of plasticity, allowing multiple functions to be encoded within a relatively small structure.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides insight into the underlying reason for the unusual architecture of Nef, as a single domain protein with disproportionately large internal loops. This architecture gives Nef an exceptional degree of plasticity, allowing multiple functions to be encoded within a relatively small structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the structural findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "fa8ec42f-f868-4ac6-aef1-e8207899bb9a",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C97",
+      "claim": "The structure is consistent with the emerging consensus picture that all activated AP complexes seem to bind to membranes in the same conformation and the same geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure is beautifully consistent with the emerging consensus picture that all activated AP complexes seem to bind to membranes in the same conformation and the same geometry (Jackson et al., 2010; Canagarajah et al., 2013; Ren et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the structural findings, supported by citations to Jackson et al., 2010; Canagarajah et al., 2013; Ren et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "ee8eae08-aada-467d-b490-ea55accfe79d",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C98",
+      "claim": "The membrane-docking geometry suggested by the unlocked states of AP-1 and AP-2 places Nef such that it is touching the membrane, with its N-terminal region membrane proximal.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane-docking geometry suggested by the unlocked states of AP-1 and AP-2 places Nef such that it is touching the membrane, with its N-terminal region membrane proximal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the structural model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "ac1baa67-ec0b-4751-88f2-b3a201228039",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C99",
+      "claim": "The membrane-docking geometry is consistent with Nef's essential N-terminal myristoylation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with its essential N-terminal myristoylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the structural model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "a5b0489f-81df-405a-a846-9673087aba32",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C100",
+      "claim": "The first helix of the \u03b22-adaptin trunk collides sterically with Nef in the modeled conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "One question still to be resolved is the disposition of the first helix of the \u03b22-adaptin trunk, which collides sterically with Nef in the modeled conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the structural model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "38a5a1fd-51e6-4eb9-9a8f-54e61530f1a6",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C101",
+      "claim": "The first helix of the \u03b22-adaptin trunk could pivot out of the way to avoid steric collision with Nef.",
+      "claim_type": "EXPLICIT",
+      "source": "It seems straightforward that this helix could pivot out of the way, but this has yet to be directly tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about how the steric collision could be resolved.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "7601502b-ccd4-4219-924b-162008885ef6",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C102",
+      "claim": "The general proximity of Nef, and its N-terminal region in particular, to the membrane is similar to the model proposed for the AP-1:Nef complex that functions in MHC-I downregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The general proximity of Nef, and its N-terminal region in particular, to the membrane is similar to the model proposed for the AP-1:Nef complex that functions in MHC-I downregulation (Jia et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to a previous model, supported by citation to Jia et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "f10625ed-3516-44a5-ad99-a28a7d2e54dd",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C103",
+      "claim": "The details of the molecular contacts between Nef and the membrane surface differ between the AP-2:Nef and AP-1:Nef complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the details of the molecular contacts between Nef and the membrane surface differ (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparison of the structural models, shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "c9a86ecf-2894-4574-88a2-255f80f779c5",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C104",
+      "claim": "Nef has more than one way to interact with membrane surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Nef has more than one way to interact with membrane surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the comparison of the AP-2:Nef and AP-1:Nef structural models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "c931c67c-8bf6-4f26-8ddc-71f8f5cf6bd2",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C105",
+      "claim": "Residues of Nef helices H1 and H3 that are implicated in CD4 binding form one edge of a cavern 10 \u00c5 high and 30 \u00d7 30 \u00c5 across, with the membrane serving as the floor.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues of Nef helices H1 and H3 that are implicated in CD4 binding form one edge of a cavern 10 \u00c5 high and 30 \u00d7 30 \u00c5 across, with the membrane serving as the floor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the structural model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "9098f2ce-a001-41b0-9f29-dac5c0ce8316",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C106",
+      "claim": "The Nef binding site on CD4 comprises an approximate 17-residue tract that begins \u223c10 residues C-terminal to the end of the transmembrane helix.",
+      "claim_type": "EXPLICIT",
+      "source": "The Nef binding site on CD4 comprises an approximate 17-residue tract (Preusser et al., 2001) that begins \u223c10 residues C-terminal to the end of the transmembrane helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Preusser et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "33f5cc4f-b15c-47c7-af82-f9861a36a058",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C107",
+      "claim": "The entirety of the cavern formed by the AP-2:Nef complex is within 10 \u00c5 of the membrane surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The entirety of the cavern is within 10 \u00c5 of the membrane surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the structural model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "dd6390eb-8eb7-42e5-8d77-744c3ed660aa",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C108",
+      "claim": "Localization of the CD4 tail within the cavern would be completely consistent with the proximity of the Nef binding site and transmembrane domain of CD4.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus localization of the CD4 tail within the cavern would be completely consistent with the proximity of the Nef binding site and transmembrane domain of CD4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the structural model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "4a71e992-5989-4866-b65c-0bde285e1cf5",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C109",
+      "claim": "The N-terminal loop of Nef is required for high-affinity binding to the CD4 cytosolic tail.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal loop of Nef is required for high-affinity binding to the CD4 cytosolic tail (Preusser et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Preusser et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "4c837395-16b3-4ab2-8f48-2db9337c9c38",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C110",
+      "claim": "The N-terminal loop of Nef folds around the CD4 tail within or at the edge of the cavern.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose that the N-terminal loop of Nef folds around the CD4 tail within or at the edge of the cavern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the structural model and previous findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "faeb62fd-e75b-4eef-87d4-ac4f7602fa70",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C111",
+      "claim": "The dissociation constants for CD4:Nef and AP-2:Nef are both approximately 1 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "The dissociation constants for CD4:Nef and AP-2:Nef are known separately, and both are approximately 1 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "f2fb2d12-fe98-4efb-9db6-feb3faf4e514",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C112",
+      "claim": "The affinity and kinetics of CD4 binding to the AP-2:Nef complex are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The affinity and kinetics of CD4 binding to the AP-2:Nef complex are unknown, but this model suggests that the binding would likely be tighter than for these isolated components, and the off rate correspondingly slower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the lack of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "94d5da2c-b20c-405a-916b-6fb01d562e69",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C113",
+      "claim": "The binding of CD4 to the AP-2:Nef complex would likely be tighter than for the isolated components, and the off rate correspondingly slower.",
+      "claim_type": "EXPLICIT",
+      "source": "The affinity and kinetics of CD4 binding to the AP-2:Nef complex are unknown, but this model suggests that the binding would likely be tighter than for these isolated components, and the off rate correspondingly slower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the structural model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "d8363ad8-cfe5-409c-9f1b-640fd40b552b",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C114",
+      "claim": "Tighter binding of CD4 to the AP-2:Nef complex would contribute to delivery of CD4 to the ESCRT machinery and its ultimate degradation in the lysosome.",
+      "claim_type": "EXPLICIT",
+      "source": "This would contribute to delivery of CD4 to the ESCRT machinery and its ultimate degradation in the lysosome (daSilva et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural model, supported by citation to daSilva et al., 2009.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "3853a300-fcf8-4b69-89b4-d0b6b1193997",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C115",
+      "claim": "The search for ways to combat the emergence of resistance to antiretrovirals, and to ultimately eradicate HIV, has led to an intense interest in targeting the interactions of HIV and host proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The search for ways to combat the emergence of resistance to antiretrovirals, and to ultimately eradicate HIV, has led to an intense interest in targeting the interactions of HIV and host proteins (Jaeger et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jaeger et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "b88cb9b6-3482-459f-aa89-7f8bf99f94b9",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C116",
+      "claim": "The ideal host protein target site would be essential for the viral replication cycle, yet dispensable for host function.",
+      "claim_type": "EXPLICIT",
+      "source": "The ideal host protein target site would be essential for the viral replication cycle, yet dispensable for host function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the criteria for an ideal drug target.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "1ff5fd94-15bf-4618-aa4d-19cd9f7d3a99",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C117",
+      "claim": "The ideal host protein target site would be highly invaginated and capable of binding small molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a site would also be 'groovy', that is to say, highly invaginated and capable of binding small molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the criteria for an ideal drug target.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "a25e855c-257e-493b-82b4-a862c16ee6a6",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C118",
+      "claim": "The interaction surface complementary to the C-terminal turn segment of the Nef central loop would appear to fit the criterion for an ideal drug target.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction surface complementary to the C-terminal turn segment of the Nef central loop would appear to fit this criterion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential for drug targeting based on the structural findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "2a92f83f-e3e8-45e3-b32e-297343c3cdc1",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C119",
+      "claim": "A deep pocket in AP-2 directly below the binding site for Nef Arg178 appears to be under-utilized by Nef.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a deep pocket in AP-2 directly below the binding site for Nef Arg178 appears to be under-utilized by Nef (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the crystal structure, shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "d6b449f9-86c0-47f3-97ec-1053964db690",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C120",
+      "claim": "Future analysis of the ternary AP-2:Nef:CD4 tail complex may reveal additional promising sites for drug targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "Future analysis of the ternary AP-2:Nef:CD4 tail complex may reveal additional promising sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "a6d8d037-4d62-456e-8916-6f6e686dafde",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C121",
+      "claim": "Nef Glu177 is the primary interaction partner for \u03b1 Arg341.",
+      "claim_type": "EXPLICIT",
+      "source": "The present structure revealed that Nef Glu177 is the primary interaction partner for \u03b1 Arg341.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "8c96d0fd-0d7c-4c5e-b75a-045001a82d7a",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C122",
+      "claim": "The Nef E177K mutant manifested a reduction in both \u03b1\u2013\u03c32 binding and CD4 downregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Nef E177K mutant manifested a reduction in both \u03b1\u2013\u03c32 binding (Figure 5B) and CD4 downregulation (Figure 6A,B), consistent with its structural role.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Y3H and FACS experiments shown in Figures 5B and 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "289fa1e1-e3f9-4e83-a875-4a79fb6d1225",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C123",
+      "claim": "The basic patch on \u03b1 is better conceived of as a polar, rather than basic, patch.",
+      "claim_type": "EXPLICIT",
+      "source": "The deepened insight obtained from the crystal structure shows that this patch is better conceived of as a polar, rather than basic, patch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the structural findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "e346c30d-32b4-4fd3-a8ff-8e5e042dba8f",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C124",
+      "claim": "The side chain of \u03b1 Glu342 has a close approach to Nef Arg178.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the side chain of \u03b1 Glu342 has a close approach to Nef Arg178.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "271660e3-a84b-432a-b495-f96a57926a64",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C125",
+      "claim": "Nef Asp174 and Asp175 do not contact AP-2 directly.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that Nef Asp174 and Asp175 do not contact AP-2 directly was a surprise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "42df6b82-5a54-4ea8-b307-e676d2738903",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C126",
+      "claim": "Nef Asp174 and Asp175 are required for AP-2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "These two residues are required for AP-2 binding (Figure 5B) and CD4 downregulation (Lindwasser et al., 2008), and had been expected to interact with a basic patch on \u03b1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Y3H experiments shown in Figure 5B, and supported by citation to Lindwasser et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "23204c99-52e1-4d8e-aaf7-ccfb0bb43d3e",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C127",
+      "claim": "Nef Asp174 and Asp175 are required for CD4 downregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These two residues are required for AP-2 binding (Figure 5B) and CD4 downregulation (Lindwasser et al., 2008), and had been expected to interact with a basic patch on \u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lindwasser et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "5692e32c-e8d8-495a-a827-a7ec8562ccdb",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C128",
+      "claim": "Nef Asp174 is close to the interface with AP-2, but is not in direct contact.",
+      "claim_type": "EXPLICIT",
+      "source": "They are, in fact, in the general vicinity of a basic patch, close to \u03b1 Lys298 and Lys299. Nevertheless, Asp174, while close to the interface, is not in direct contact with AP-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "d78bb08d-5445-4605-91fc-87f1df9682d8",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C129",
+      "claim": "The key role of Nef Asp174 is to anchor the turn section to the N-terminus of helix H3.",
+      "claim_type": "EXPLICIT",
+      "source": "Its key role appears to be to anchor the turn section to the N-terminus of helix H3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "892ad25b-7874-41ae-8c84-77cc8ff87ad9",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C130",
+      "claim": "The partial positive charge at the helix N-terminus can form an interaction with Asp side-chains that is almost as energetically favorable as a salt bridge.",
+      "claim_type": "EXPLICIT",
+      "source": "The partial positive charge at the helix N-terminus can form an interaction with Asp side-chains that is almost as energetically favorable as a salt bridge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about helix-dipole interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "4ce6e14d-b005-48bf-9f9f-1b8d02d69ec1",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C131",
+      "claim": "Nef Asp174 forms a short hydrogen bond with the main-chain amide group of Nef Gln104.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, a short hydrogen bond is formed with the main-chain amide group of Nef Gln104.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "190079c2-7548-4c49-8951-1eb9c38bcffe",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C132",
+      "claim": "Nef Asp175 has a similar role in conformational stabilization as Asp174.",
+      "claim_type": "EXPLICIT",
+      "source": "Asp175 has a similar role in conformational stabilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "e671a6d3-78bf-4221-8af6-fd27e6430ff1",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C133",
+      "claim": "Nef Asp175 is partially buried in a contact with the Nef core, and forms a salt bridge with Arg134.",
+      "claim_type": "EXPLICIT",
+      "source": "Asp175 is partially buried in a contact with the Nef core, and forms a salt bridge with Arg134.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "eed08167-1cd6-4e46-8694-c4b8f3be1a60",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C134",
+      "claim": "The internal Nef Arg134-Asp175 salt bridge is important for stabilizing the C-terminal turn portion of the central loop in its AP-2 binding conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that the internal Nef Arg134-Asp175 internal salt bridge is important for stabilizing the C-terminal turn portion of the central loop in its AP-2 binding conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the crystal structure analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "e6bae350-0229-4c5c-aa1a-f9124f5526d1",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C135",
+      "claim": "Mutation of Nef Arg134 to Glu abrogated interaction of Nef with \u03b1\u2013\u03c32.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, mutation of Arg134 to Glu abrogated interaction of Nef with \u03b1\u2013\u03c32 (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Y3H experiments shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "b67f277a-5223-4f16-93fa-386a44b1ea66",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C136",
+      "claim": "Co-expression in HeLa cells of CD4 with Nef R134E showed that this Nef mutant almost completely lost its ability to downregulate CD4.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, co-expression in HeLa cells of CD4 with Nef R134E followed by FACS analysis showed that this Nef mutant almost completely lost its ability to downregulate CD4 (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from FACS experiments shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "fe54bc54-3145-43bb-804f-59017c3ae919",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C137",
+      "claim": "The Nef R134E mutational phenotype phenocopies the D175A change.",
+      "claim_type": "EXPLICIT",
+      "source": "These results phenocopy the D175A change (Lindwasser et al., 2008) and are consistent with a critical role for the salt bridge in stabilizing the conformation of the Nef loop required for AP-2 binding and CD4 downregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the mutational data, supported by citation to Lindwasser et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "d7bb918e-c096-46b3-b910-32f3a504314d",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C138",
+      "claim": "The Nef R134E and D175A mutational results are consistent with a critical role for the salt bridge in stabilizing the conformation of the Nef loop required for AP-2 binding and CD4 downregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results phenocopy the D175A change (Lindwasser et al., 2008) and are consistent with a critical role for the salt bridge in stabilizing the conformation of the Nef loop required for AP-2 binding and CD4 downregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the mutational data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "bd898231-1d2e-4411-be69-134ce51f2198",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C139",
+      "claim": "One face of Nef helix H3, including residues Gln104 and Asp108, contacts AP-2.",
+      "claim_type": "EXPLICIT",
+      "source": "While most mutational studies of the Nef-AP-2 interaction focused on the Nef central loop, one face of helix H3, including residues Gln104 and Asp108, contacts AP-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "cf4bc404-8a39-4290-91e8-046ef9bb569b",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C140",
+      "claim": "A steric clash was observed between Nef and helix 1 of the \u03b22 subunit in the model of the membrane-bound AP-2:Nef complex.",
+      "claim_type": "EXPLICIT",
+      "source": "A steric clash was observed with helix 1 of the \u03b22 subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the structural model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "bff8e48e-0ce9-4a9d-859b-b428b210ba39",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C141",
+      "claim": "\u03b22 helix 1 was previously shown to be conformationally labile in the unlatching (partial activation) of AP-2.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b22 helix 1 was previously shown to be conformationally labile in the unlatching (partial activation) of AP-2 (Kelly et al., 2008), and it seems reasonable to expect that it pivots in the full AP-2:Nef complex to prevent a collision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kelly et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "13d9c9e0-cc4e-4ee6-b77e-a622ad4c7227",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "claim_id": "C142",
+      "claim": "It seems reasonable to expect that \u03b22 helix 1 pivots in the full AP-2:Nef complex to prevent a collision with Nef.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b22 helix 1 was previously shown to be conformationally labile in the unlatching (partial activation) of AP-2 (Kelly et al., 2008), and it seems reasonable to expect that it pivots in the full AP-2:Nef complex to prevent a collision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the structural model and previous findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The crystal structure of the Nef:AP-2 \u03b1-\u03c32 complex was solved at 2.9 \u00c5 resolution, revealing that the entire central loop of Nef (residues 149-179) is well-ordered and extensively contacts the AP-2 \u03b1-\u03c32 hemicomplex. The structure shows that both the Nef central loop and core directly interact with AP-2, with specific molecular contacts identified throughout the interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The crystal structure determination is well-documented with appropriate resolution (2.9 \u00c5), crystallographic statistics (Table 1), and electron density maps (Figure 2A). The structural findings are supported by multiple lines of evidence including ITC binding data (C41), detailed interface analysis (C43-C44), and comparison to previous structures (C45, C54). The molecular contacts are clearly visualized in the provided figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "bb3e1152-d6c0-4fcd-8583-18efe79ac396",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mutagenesis studies using yeast three-hybrid (Y3H) assays validated key structural findings, showing that mutations in AP-2 residues predicted to contact Nef (\u03c32 Y62A, A63D, R60E; \u03b1 E342K) eliminated binding, while mutations in Nef residues (D108K, E177K) also disrupted AP-2 binding and were consistent with observed structural interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The Y3H mutagenesis data (Figures 5B-D) systematically validate the structural findings by showing that mutations at predicted contact residues disrupt binding. The results are internally consistent, with strong effects for direct contact residues and weaker or no effects for peripheral residues (C75). The data directly support the structural model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "f59f0bd6-75ca-49c1-a1b3-ee2d5084cd55",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Functional CD4 downregulation assays in HeLa cells demonstrated that Nef mutants D108K, R134E, and E177K lose the ability to downregulate CD4 from the cell surface, confirming that these residues are critical for both AP-2 binding and biological function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The FACS-based CD4 downregulation assays (Figures 6A-B) provide functional validation of the structural and binding data. The mutational phenotypes correlate well with the Y3H binding data and structural predictions. Multiple independent mutants show consistent loss-of-function phenotypes, and appropriate controls (D174A/D175A negative control, TfR as loading control) are included.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "ac7ca172-5de6-4917-b3cd-d40e52ba40a8",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The structure revealed an unexpected role for the diacidic motif residues Asp174 and Asp175: rather than directly contacting AP-2 as previously hypothesized, these residues stabilize the conformation of the Nef central loop through intramolecular interactions. Asp174 forms a hydrogen bond with the main-chain of Gln104, while Asp175 forms a salt bridge with Arg134 of the Nef core.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is well-supported by the crystal structure showing the intramolecular interactions (C67, C68, C131, C133, Figure 3E) and validated by mutagenesis. The R134E mutation phenocopies the D175A mutation in both Y3H binding (C135) and CD4 downregulation assays (C136), providing strong functional evidence for the importance of this salt bridge. The interpretation reconciles previous mutational data with the new structural insights.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "df275ad7-49ca-4f80-a9f2-9edbc4a529cf",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A structural model of the membrane-bound AP-2:Nef complex was generated by docking the \u03b1-\u03c32:Nef structure onto the full AP-2 tetramer in its open, membrane-bound conformation. This model places Nef proximal to the membrane with helix H1 aligned parallel to the membrane surface, forming a bowl-shaped cavity (30 \u00d7 30 \u00c5 across, ~10 \u00c5 clearance from membrane) that contains CD4-binding residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The membrane-docking model is based on superposition of the experimentally determined \u03b1-\u03c32:Nef structure onto the well-characterized open AP-2 structure (C97, supported by Jackson et al., 2010; Canagarajah et al., 2013; Ren et al., 2013). The model is consistent with known requirements for Nef myristoylation (C99) and previously mapped CD4-binding residues (C85, C86, supported by Grzesiek et al., 1996a). The geometric measurements are clearly stated and visualized in Figure 7.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "bd906da1-50bd-41e4-8941-14125c9a29de",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The structural model suggests that multivalent interactions between Nef, CD4, and AP-2 drive cooperative assembly of the ternary complex, with the N-terminal loop of Nef proposed to fold around the CD4 tail within the membrane-proximal cavity, potentially resulting in tighter binding than observed for isolated binary complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the structural model provides a plausible framework for CD4 binding (C105, C107, C108), the specific proposal about N-terminal loop folding (C110) and enhanced binding affinity (C113) are speculative inferences not directly tested. The authors acknowledge that 'the affinity and kinetics of CD4 binding to the AP-2:Nef complex are unknown' (C112). These are reasonable hypotheses based on the structure, but require experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "a44cfc3f-9e68-461e-b1c8-4f76a5fb171f",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The structure provides a unifying framework for understanding nearly two decades of research on Nef-mediated CD4 downregulation, revealing that the central loop residues implicated in CD4 downregulation are well-ordered and directly contact AP-2, while the Nef core has both direct and indirect (scaffolding) roles in the interaction. This architecture provides insight into Nef's plasticity and ability to encode multiple functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structure successfully integrates extensive prior mutational data (summarized in Table 2) with new structural insights. The finding that previously disordered loop residues are now well-ordered (C90) and make direct AP-2 contacts (C91) is clearly demonstrated. The dual role of the core (C94) and the concept of an effector-specific polar core (C95) are well-supported by the structural data. The broader interpretation about Nef's architecture (C96) is a reasonable inference from the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "c33f1e01-51d8-4a7f-ba98-2fdf1ca2558a",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The membrane-docking model reveals a steric clash between Nef and helix 1 of the \u03b22 subunit, which the authors propose could be resolved by pivoting of this helix, consistent with its known conformational lability during AP-2 activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The steric clash is identified in the model (C100, C140), and the proposed resolution by helix pivoting (C101, C142) is supported by prior evidence of \u03b22 helix 1 lability (C141, Kelly et al., 2008). However, this remains a modeling prediction that 'has yet to be directly tested' as the authors acknowledge. The proposal is reasonable but requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "055768d0-1e84-461a-b0dc-b660be5d8d33",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Comparison of the AP-2:Nef structure with the previously determined AP-1:Nef complex shows that while the general membrane-proximal positioning of Nef is similar, the molecular details of membrane contacts differ, suggesting Nef has multiple modes of membrane interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison to the AP-1:Nef structure (Jia et al., 2012) is appropriate and the differences in molecular contacts are documented (C103, Figure 8). The inference that Nef has multiple membrane interaction modes (C104) is a reasonable conclusion from the structural comparison. This represents a valid comparative structural analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "712a45e7-7a67-4433-b9e8-a7ad8c3da4ec",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The structure identifies potential drug targeting sites, particularly the interaction surface complementary to the C-terminal turn segment of the Nef central loop, which includes an under-utilized deep pocket near Nef Arg178 that is essential for viral function but dispensable for host cell processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the structural identification of a deep pocket (C119, Figure 9) is valid, the assessment of this site as an ideal drug target (C116-C118) involves speculation about druggability and selectivity that is not experimentally validated. The statement that this site is 'dispensable for host function' relies on the earlier claim about \u03b1 Lys298/Arg341 (C35), which is based on absence of known function rather than positive evidence. The suggestion for future ternary complex analysis (C120) is reasonable but speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "47913f09-d55c-4915-b2a0-cf8b732e801f",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The AP-2:Nef structure is consistent with the emerging consensus that all activated AP complexes bind to membranes in the same conformation and geometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This conclusion is well-supported by comparison to multiple recent structures of AP complexes in their activated states (Jackson et al., 2010; Canagarajah et al., 2013; Ren et al., 2013). The consistency strengthens confidence in the membrane-docking model and places the findings in the broader context of AP complex biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    },
+    {
+      "id": "0f988749-a9b8-4bf2-bb39-286fbad6f418",
+      "content_id": "42cde1d1-f980-4aca-bdc4-676e2041d33a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The structure reveals that the basic patch on AP-2 \u03b1 subunit (Lys298, Lys299, Arg341) is better conceived as a polar patch rather than purely basic, with both basic and acidic residues contributing to Nef binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This reinterpretation is supported by the structural observation that \u03b1 Glu342 has a close approach to Nef Arg178 (C124), in addition to the salt bridges with basic residues. This represents a refinement of understanding based on detailed structural analysis and is consistent with the mutagenesis data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:07:16.524316Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0c43b341-8c33-4db9-a9b9-39561c0f30f3",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "b7ac211a-657d-4816-81ff-56aaff5d85ac",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "fc194a9f-e75d-4d91-b2d6-ea1beb87808b",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "2119c215-5349-44e0-bfa0-d2ae906c3d52",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "98146e2d-7324-4513-b9d6-7201c98fddb1",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "a92a8882-c0bd-4b94-9db5-50b32fbba7f6",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "1abe468a-5c38-4053-b2c9-8b488430d83c",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "77bd90fa-53fe-4b09-bbe7-e3003ac1c7a6",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "ed5f07dc-8422-46fc-a93e-abef72328011",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "1a1b2ff1-f989-4f6b-9364-73242992bb8b",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "341c100f-2126-403e-85a3-5577eaf1cb36",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "44988eaa-4130-43fb-9713-1d9af1c5e8c0",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "70594cf2-ca10-415e-9ee3-5970eb97e392",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "7dd27497-afc5-4447-8e80-8b6ad590b142",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "230e57c9-30e5-46e9-94dc-5213659c5398",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "38baa932-69ef-4604-a19a-a362126a6229",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "91e13803-94bb-4410-908d-23612bef29f8",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "1c0b689a-17a9-4cb8-835a-03a2d6a80673",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "6e0e2def-6817-4e74-894a-b04a19275e94",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "334c962a-ebcc-4acc-b80f-7c9ee770c3a7",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "88fb6617-272a-4d92-9369-54ba781eba4b",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "3a953138-439b-4d0a-887c-b3e8279d64f9",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "e4d20587-c14e-46c3-91b0-c98e7b89c3d5",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "99f220fb-455a-4013-b0b5-18105725f480",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "d9cd337e-2102-4561-b1f5-6426498d4390",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "78199701-d35b-41ed-bc67-58432ed20bdf",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "bf95c9b0-e706-43e9-a147-e1b18841cf83",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "19512a6e-5dbc-45ed-b1f5-99158cd0695c",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "31b5a85c-e239-4890-af56-b6adc761fcbb",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "d7f4a4fc-50d8-4f4e-bd8e-cc02a43d94a5",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "8943d601-1fbe-4c78-abc2-8fcf0ab836e8",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "3406aac5-e831-4850-b335-83e40d6eb844",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "3def7fe1-ad75-479a-ba31-cec9d02f8bc7",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "3042f47d-a632-493d-92a1-0aa8d28bc305",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "1bd8e58a-dffb-4a0e-aaa2-3cdd04b7bed7",
+      "result_id": "da9d67cb-25a3-4e79-9292-f0a7b87b2e0d"
+    },
+    {
+      "claim_id": "84ae6f47-6c6a-4cdc-b5c6-894da86a15fe",
+      "result_id": "bb3e1152-d6c0-4fcd-8583-18efe79ac396"
+    },
+    {
+      "claim_id": "19b0b15e-8f0a-42b8-a771-15118f6f2273",
+      "result_id": "bb3e1152-d6c0-4fcd-8583-18efe79ac396"
+    },
+    {
+      "claim_id": "a73e9df1-8cfa-4b7c-ab30-b339acaa6210",
+      "result_id": "bb3e1152-d6c0-4fcd-8583-18efe79ac396"
+    },
+    {
+      "claim_id": "115881ef-512c-4c4e-b1fe-ee68ac315656",
+      "result_id": "bb3e1152-d6c0-4fcd-8583-18efe79ac396"
+    },
+    {
+      "claim_id": "4c5896e4-6937-45d1-b7a3-de5dd42b2761",
+      "result_id": "bb3e1152-d6c0-4fcd-8583-18efe79ac396"
+    },
+    {
+      "claim_id": "c5ea9d1c-4420-4d4e-a062-885055e158f9",
+      "result_id": "bb3e1152-d6c0-4fcd-8583-18efe79ac396"
+    },
+    {
+      "claim_id": "9558ce6c-2f28-4563-a172-7f80d631d007",
+      "result_id": "bb3e1152-d6c0-4fcd-8583-18efe79ac396"
+    },
+    {
+      "claim_id": "db5644dd-7244-46af-841f-b188b247fc0a",
+      "result_id": "bb3e1152-d6c0-4fcd-8583-18efe79ac396"
+    },
+    {
+      "claim_id": "243ce447-4a31-41a1-a3aa-8aa6423e2b79",
+      "result_id": "bb3e1152-d6c0-4fcd-8583-18efe79ac396"
+    },
+    {
+      "claim_id": "a6d8d037-4d62-456e-8916-6f6e686dafde",
+      "result_id": "bb3e1152-d6c0-4fcd-8583-18efe79ac396"
+    },
+    {
+      "claim_id": "8c96d0fd-0d7c-4c5e-b75a-045001a82d7a",
+      "result_id": "bb3e1152-d6c0-4fcd-8583-18efe79ac396"
+    },
+    {
+      "claim_id": "e346c30d-32b4-4fd3-a8ff-8e5e042dba8f",
+      "result_id": "bb3e1152-d6c0-4fcd-8583-18efe79ac396"
+    },
+    {
+      "claim_id": "4c5896e4-6937-45d1-b7a3-de5dd42b2761",
+      "result_id": "f59f0bd6-75ca-49c1-a1b3-ee2d5084cd55"
+    },
+    {
+      "claim_id": "c5ea9d1c-4420-4d4e-a062-885055e158f9",
+      "result_id": "f59f0bd6-75ca-49c1-a1b3-ee2d5084cd55"
+    },
+    {
+      "claim_id": "9558ce6c-2f28-4563-a172-7f80d631d007",
+      "result_id": "f59f0bd6-75ca-49c1-a1b3-ee2d5084cd55"
+    },
+    {
+      "claim_id": "8c96d0fd-0d7c-4c5e-b75a-045001a82d7a",
+      "result_id": "f59f0bd6-75ca-49c1-a1b3-ee2d5084cd55"
+    },
+    {
+      "claim_id": "e6bae350-0229-4c5c-aa1a-f9124f5526d1",
+      "result_id": "f59f0bd6-75ca-49c1-a1b3-ee2d5084cd55"
+    },
+    {
+      "claim_id": "b67f277a-5223-4f16-93fa-386a44b1ea66",
+      "result_id": "f59f0bd6-75ca-49c1-a1b3-ee2d5084cd55"
+    },
+    {
+      "claim_id": "271660e3-a84b-432a-b495-f96a57926a64",
+      "result_id": "ac7ca172-5de6-4917-b3cd-d40e52ba40a8"
+    },
+    {
+      "claim_id": "42df6b82-5a54-4ea8-b307-e676d2738903",
+      "result_id": "ac7ca172-5de6-4917-b3cd-d40e52ba40a8"
+    },
+    {
+      "claim_id": "23204c99-52e1-4d8e-aaf7-ccfb0bb43d3e",
+      "result_id": "ac7ca172-5de6-4917-b3cd-d40e52ba40a8"
+    },
+    {
+      "claim_id": "5692e32c-e8d8-495a-a827-a7ec8562ccdb",
+      "result_id": "ac7ca172-5de6-4917-b3cd-d40e52ba40a8"
+    },
+    {
+      "claim_id": "d78bb08d-5445-4605-91fc-87f1df9682d8",
+      "result_id": "ac7ca172-5de6-4917-b3cd-d40e52ba40a8"
+    },
+    {
+      "claim_id": "4ce6e14d-b005-48bf-9f9f-1b8d02d69ec1",
+      "result_id": "ac7ca172-5de6-4917-b3cd-d40e52ba40a8"
+    },
+    {
+      "claim_id": "190079c2-7548-4c49-8951-1eb9c38bcffe",
+      "result_id": "ac7ca172-5de6-4917-b3cd-d40e52ba40a8"
+    },
+    {
+      "claim_id": "e671a6d3-78bf-4221-8af6-fd27e6430ff1",
+      "result_id": "ac7ca172-5de6-4917-b3cd-d40e52ba40a8"
+    },
+    {
+      "claim_id": "eed08167-1cd6-4e46-8694-c4b8f3be1a60",
+      "result_id": "ac7ca172-5de6-4917-b3cd-d40e52ba40a8"
+    },
+    {
+      "claim_id": "e6bae350-0229-4c5c-aa1a-f9124f5526d1",
+      "result_id": "ac7ca172-5de6-4917-b3cd-d40e52ba40a8"
+    },
+    {
+      "claim_id": "b67f277a-5223-4f16-93fa-386a44b1ea66",
+      "result_id": "ac7ca172-5de6-4917-b3cd-d40e52ba40a8"
+    },
+    {
+      "claim_id": "fe54bc54-3145-43bb-804f-59017c3ae919",
+      "result_id": "ac7ca172-5de6-4917-b3cd-d40e52ba40a8"
+    },
+    {
+      "claim_id": "d7bb918e-c096-46b3-b910-32f3a504314d",
+      "result_id": "ac7ca172-5de6-4917-b3cd-d40e52ba40a8"
+    },
+    {
+      "claim_id": "60a26b2c-2e6b-4e00-9ddd-8039341301ce",
+      "result_id": "df275ad7-49ca-4f80-a9f2-9edbc4a529cf"
+    },
+    {
+      "claim_id": "e2e75622-d296-48b4-9c55-b9194ff3722f",
+      "result_id": "df275ad7-49ca-4f80-a9f2-9edbc4a529cf"
+    },
+    {
+      "claim_id": "5f3d85b8-70d6-4042-bc9a-bbb8ebe33760",
+      "result_id": "df275ad7-49ca-4f80-a9f2-9edbc4a529cf"
+    },
+    {
+      "claim_id": "8a770106-58c6-49e9-8ca0-af16d1df61c0",
+      "result_id": "df275ad7-49ca-4f80-a9f2-9edbc4a529cf"
+    },
+    {
+      "claim_id": "3eda4a6d-4782-418c-8082-dd3fe259ed20",
+      "result_id": "df275ad7-49ca-4f80-a9f2-9edbc4a529cf"
+    },
+    {
+      "claim_id": "e3f22ab6-1501-4d90-97e5-ef7018d34f3c",
+      "result_id": "df275ad7-49ca-4f80-a9f2-9edbc4a529cf"
+    },
+    {
+      "claim_id": "ee8eae08-aada-467d-b490-ea55accfe79d",
+      "result_id": "df275ad7-49ca-4f80-a9f2-9edbc4a529cf"
+    },
+    {
+      "claim_id": "ac1baa67-ec0b-4751-88f2-b3a201228039",
+      "result_id": "df275ad7-49ca-4f80-a9f2-9edbc4a529cf"
+    },
+    {
+      "claim_id": "c931c67c-8bf6-4f26-8ddc-71f8f5cf6bd2",
+      "result_id": "df275ad7-49ca-4f80-a9f2-9edbc4a529cf"
+    },
+    {
+      "claim_id": "33f5cc4f-b15c-47c7-af82-f9861a36a058",
+      "result_id": "df275ad7-49ca-4f80-a9f2-9edbc4a529cf"
+    },
+    {
+      "claim_id": "dd6390eb-8eb7-42e5-8d77-744c3ed660aa",
+      "result_id": "df275ad7-49ca-4f80-a9f2-9edbc4a529cf"
+    },
+    {
+      "claim_id": "13e07600-5e06-43ae-b062-78184c3f620b",
+      "result_id": "bd906da1-50bd-41e4-8941-14125c9a29de"
+    },
+    {
+      "claim_id": "4c837395-16b3-4ab2-8f48-2db9337c9c38",
+      "result_id": "bd906da1-50bd-41e4-8941-14125c9a29de"
+    },
+    {
+      "claim_id": "94d5da2c-b20c-405a-916b-6fb01d562e69",
+      "result_id": "bd906da1-50bd-41e4-8941-14125c9a29de"
+    },
+    {
+      "claim_id": "d8363ad8-cfe5-409c-9f1b-640fd40b552b",
+      "result_id": "bd906da1-50bd-41e4-8941-14125c9a29de"
+    },
+    {
+      "claim_id": "08495273-5d2b-44ce-9ce5-ceed947e649c",
+      "result_id": "a44cfc3f-9e68-461e-b1c8-4f76a5fb171f"
+    },
+    {
+      "claim_id": "685d4177-5e22-4bc0-b126-6f6310e8130b",
+      "result_id": "a44cfc3f-9e68-461e-b1c8-4f76a5fb171f"
+    },
+    {
+      "claim_id": "a3ce150c-8c7e-4092-9a61-27e1a19e6b5b",
+      "result_id": "a44cfc3f-9e68-461e-b1c8-4f76a5fb171f"
+    },
+    {
+      "claim_id": "26af31d5-8f12-4069-a69d-e4362c4c945e",
+      "result_id": "a44cfc3f-9e68-461e-b1c8-4f76a5fb171f"
+    },
+    {
+      "claim_id": "907194e7-5a82-420a-a7de-ea66dd5467c3",
+      "result_id": "a44cfc3f-9e68-461e-b1c8-4f76a5fb171f"
+    },
+    {
+      "claim_id": "9c255fbd-025a-407c-8c07-fc39ccce35c5",
+      "result_id": "a44cfc3f-9e68-461e-b1c8-4f76a5fb171f"
+    },
+    {
+      "claim_id": "9c879059-5d4a-4d88-a7ce-067dad6b071f",
+      "result_id": "a44cfc3f-9e68-461e-b1c8-4f76a5fb171f"
+    },
+    {
+      "claim_id": "27acffff-6e94-4971-929d-012a3aa3167c",
+      "result_id": "a44cfc3f-9e68-461e-b1c8-4f76a5fb171f"
+    },
+    {
+      "claim_id": "a5b0489f-81df-405a-a846-9673087aba32",
+      "result_id": "c33f1e01-51d8-4a7f-ba98-2fdf1ca2558a"
+    },
+    {
+      "claim_id": "38a5a1fd-51e6-4eb9-9a8f-54e61530f1a6",
+      "result_id": "c33f1e01-51d8-4a7f-ba98-2fdf1ca2558a"
+    },
+    {
+      "claim_id": "cf4bc404-8a39-4290-91e8-046ef9bb569b",
+      "result_id": "c33f1e01-51d8-4a7f-ba98-2fdf1ca2558a"
+    },
+    {
+      "claim_id": "bff8e48e-0ce9-4a9d-859b-b428b210ba39",
+      "result_id": "c33f1e01-51d8-4a7f-ba98-2fdf1ca2558a"
+    },
+    {
+      "claim_id": "13d9c9e0-cc4e-4ee6-b77e-a622ad4c7227",
+      "result_id": "c33f1e01-51d8-4a7f-ba98-2fdf1ca2558a"
+    },
+    {
+      "claim_id": "7601502b-ccd4-4219-924b-162008885ef6",
+      "result_id": "055768d0-1e84-461a-b0dc-b660be5d8d33"
+    },
+    {
+      "claim_id": "f10625ed-3516-44a5-ad99-a28a7d2e54dd",
+      "result_id": "055768d0-1e84-461a-b0dc-b660be5d8d33"
+    },
+    {
+      "claim_id": "c9a86ecf-2894-4574-88a2-255f80f779c5",
+      "result_id": "055768d0-1e84-461a-b0dc-b660be5d8d33"
+    },
+    {
+      "claim_id": "3853a300-fcf8-4b69-89b4-d0b6b1193997",
+      "result_id": "712a45e7-7a67-4433-b9e8-a7ad8c3da4ec"
+    },
+    {
+      "claim_id": "b88cb9b6-3482-459f-aa89-7f8bf99f94b9",
+      "result_id": "712a45e7-7a67-4433-b9e8-a7ad8c3da4ec"
+    },
+    {
+      "claim_id": "1ff5fd94-15bf-4618-aa4d-19cd9f7d3a99",
+      "result_id": "712a45e7-7a67-4433-b9e8-a7ad8c3da4ec"
+    },
+    {
+      "claim_id": "a25e855c-257e-493b-82b4-a862c16ee6a6",
+      "result_id": "712a45e7-7a67-4433-b9e8-a7ad8c3da4ec"
+    },
+    {
+      "claim_id": "2a92f83f-e3e8-45e3-b32e-297343c3cdc1",
+      "result_id": "712a45e7-7a67-4433-b9e8-a7ad8c3da4ec"
+    },
+    {
+      "claim_id": "d6b449f9-86c0-47f3-97ec-1053964db690",
+      "result_id": "712a45e7-7a67-4433-b9e8-a7ad8c3da4ec"
+    },
+    {
+      "claim_id": "fa8ec42f-f868-4ac6-aef1-e8207899bb9a",
+      "result_id": "47913f09-d55c-4915-b2a0-cf8b732e801f"
+    },
+    {
+      "claim_id": "289fa1e1-e3f9-4e83-a875-4a79fb6d1225",
+      "result_id": "0f988749-a9b8-4bf2-bb39-286fbad6f418"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "MLL3 and MLL4 are major H3K4 mono- and di-methyltransferases in mammalian cells. In vitro HMT assays show MLL3/4 complexes carry predominantly H3K4me1/2 activity with weak H3K4me3 activity. Deletion of Mll4 from Mll3\u2212/\u2212 cells leads to global decreases in H3K4me1/2 but not H3K4me3, though significant residual H3K4me1/2 remains, indicating other methyltransferases contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C46, C47, C50 are strongly supported by converging in vitro enzymatic assays and Western blot analyses in knockout cells. The partial redundancy between MLL3 and MLL4 (C1) is demonstrated by moderate H3K4me1 decrease in Mll3 single KO (C91) and more severe decreases in double KO (C47, C48). The observation of residual H3K4me1/2 in double KO cells (C92, C93) appropriately acknowledges the contribution of other methyltransferases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C88",
+      "C89"
+    ],
+    "result": "MLL4 is essential for embryonic development and cell differentiation in vivo. Mll4 knockout mice show early embryonic lethality around E9.5, while Mll3 knockout mice are perinatal lethal. Conditional deletion of Mll4 using Myf5-Cre results in marked decreases in BAT and muscle mass in E18.5 embryos, with pups dying immediately after birth due to breathing malfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 are supported by genotyping data, histological analyses, and immunohistochemistry showing tissue-specific defects. The use of Myf5-Cre for conditional deletion (C88) is appropriately cited and validated. The phenotypic observations (C14, C15) are consistent with the proposed roles in adipogenesis and myogenesis. The lethality phenotypes provide strong in vivo evidence for MLL4's essential developmental functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "MLL3 and MLL4 exhibit functional redundancy in adipogenesis, with MLL4 playing a more prominent role. Single knockout of Mll4 causes moderate adipogenesis defects with transient Mll3 upregulation, while Mll3 knockout has no effect. Double knockout of Mll3/Mll4 causes severe adipogenesis defects that cannot be rescued by ectopic expression of PPAR\u03b3 or C/EBP\u03b2. This redundancy is observed in brown preadipocytes, 3T3-L1 cells, and MEFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 are well-supported by Oil Red O staining, qRT-PCR, and cell growth assays across multiple cell types. The functional redundancy (C20, C106) is demonstrated by comparing single versus double knockout phenotypes. The failure of master regulators to rescue the phenotype (C22) strengthens the conclusion that MLL4 acts upstream or independently of these factors. The in vivo observations (C107-C109) are consistent with the in vitro findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C9"
+    ],
+    "result": "MLL4 selectively regulates induction of cell-type-specific genes during differentiation. RNA-Seq analysis reveals that among genes upregulated during adipogenesis (1,302 genes) or myogenesis (2,774 genes), significant numbers (588 and 836, respectively) show MLL4-dependent induction. Gene ontology analysis shows only MLL4-dependent upregulated genes are enriched for cell-type-specific differentiation terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are supported by RNA-Seq data with appropriate statistical testing (hypergeometric tests with p<1E-268 and p<1E-300). The GO analysis provides strong evidence for selective regulation of differentiation genes. However, the threshold of 2.5-fold for defining up/down-regulation is somewhat arbitrary and not justified. The selectivity claim (C25, C28) is well-supported by the GO enrichment being specific to MLL4-dependent genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C90"
+    ],
+    "result": "MLL4 exhibits cell-type- and differentiation-stage-specific genomic binding. ChIP-Seq identifies 6,937, 14,581, and 25,005 MLL4 binding regions at days 0, 2, and 7 of adipogenesis respectively, with dramatic changes from day 0 to day 2. MLL4 binding regions in adipocytes and myocytes are largely non-overlapping. MLL4 is notably absent from the Cebpb locus encoding pioneer factor C/EBP\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29, C30 are strongly supported by ChIP-Seq data with appropriate controls (filtering against MLL4-deficient cells). The stage-specific binding (C29) is demonstrated by Venn diagram analysis showing limited overlap between time points. The cell-type specificity (C30) is clearly shown by minimal overlap between adipocytes and myocytes. The observation about Cebpb (C31) is interesting and well-documented. The average binding region length (C90) is a straightforward measurement from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Gene ontology analysis of MLL4-associated genes reveals cell-type and stage-specific functional enrichment. Brown fat cell differentiation and fat cell differentiation are top categories at days 2 and 7 of adipogenesis but not at day 0 or in myocytes. Muscle organ/tissue development and muscle cell differentiation are top categories specifically in myocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C33 are supported by GO analysis of genes associated with top 2,000 emergent MLL4 binding regions. The stage- and cell-type-specific enrichment patterns are consistent with the proposed role of MLL4 in cell differentiation. However, the choice to analyze only the top 2,000 regions is somewhat arbitrary and could introduce bias. The p-values for GO enrichment are not provided in the claims but should be significant given the statement of 'top' categories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41"
+    ],
+    "result": "MLL4 is predominantly localized on enhancers, particularly active enhancers. At day 2 of adipogenesis, 66.1% of MLL4 binding regions are on active enhancers while only 3.1% are on active promoters. Statistical analysis shows significant enrichment on active enhancers (p<1E-300, binomial test) compared to genome-wide distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C40, C41 are well-supported by genomic distribution analysis using histone marks to define regulatory elements. The statistical test (binomial test, p<1E-300) is appropriate for testing enrichment. The definitions of active/silent enhancers and promoters based on histone modifications (H3K4me1/2/3, H3K27ac) are standard in the field. The preferential localization on active enhancers is a key finding supporting MLL4's role in enhancer activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "MLL4 co-localizes with lineage-determining transcription factors on enhancers during differentiation. Motif analysis shows enrichment for adipogenic TF motifs (C/EBP\u03b1/\u03b2, PPAR\u03b3, EBF1, GR) at days 2 and 7 of adipogenesis, and myogenic TF motifs (MyoD, TCF3, Runx1, TEAD4) in myocytes. ChIP-Seq confirms ~64% of MLL4 regions overlap with C/EBP\u03b1/\u03b2 or PPAR\u03b3 in adipogenesis, and 40% overlap with MyoD in myocytes. Physical interactions between MLL4 and C/EBP\u03b2, and between PPAR\u03b3 and MLL3/4 complex, are demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34-C39 are strongly supported by converging evidence from motif analysis, ChIP-Seq overlap analysis, and co-immunoprecipitation experiments. The motif enrichment provides predictive evidence, while ChIP-Seq overlap provides genome-wide validation. The physical interactions (C38, C39) provide mechanistic support. The PPAR\u03b3-MLL3/4 interaction (C39) is additionally supported by prior literature citation. The percentages of overlap are substantial but not complete, appropriately indicating that co-localization is common but not universal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "MLL4 preferentially co-localizes with lineage-determining TFs on active enhancers compared to genome-wide. On active enhancers, 57.3% of C/EBP-binding and 80.0% of PPAR\u03b3-binding sites are MLL4+, significantly higher than genome-wide co-localization rates (31.3% and 56.3% respectively, p<1E-300). Remarkably, 91.3% of C/EBP+PPAR\u03b3+ adipogenic enhancers are MLL4+. In myocytes, 64.6% of myogenic enhancers are MLL4+ (p<1E-300).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are well-supported by statistical analysis of ChIP-Seq data using hypergeometric tests. The comparison between active enhancer co-localization rates and genome-wide rates is appropriate and demonstrates preferential association. The very high co-localization rate on C/EBP+PPAR\u03b3+ enhancers (C44, 91.3%) is particularly striking and suggests these represent high-confidence regulatory elements. The statistical significance (p<1E-300) is extremely strong, though such extreme p-values should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Deletion of Mll4 prevents increases in H3K4me1/2, H3K27ac, Mediator (MED1), and Pol II on MLL4+ adipogenic enhancers during differentiation. On 6,342 MLL4+ adipogenic enhancers, all these marks fail to increase from day 0 to day 2 in Mll4-deleted cells. On MLL4+ promoters, MLL4 is required for H3K4me1/2 but not H3K4me3, though the effect is less severe than on enhancers. Similar effects are observed on myogenic enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C51-C54 are strongly supported by ChIP-Seq average profile plots comparing control and MLL4-deficient cells. The requirement for multiple enhancer activation marks (H3K27ac, Mediator, Pol II) in addition to H3K4me1/2 suggests MLL4 is essential for enhancer activation, not just H3K4 methylation. The differential effect on promoters versus enhancers (C52, C53) is interesting and well-documented. The consistency across adipogenesis and myogenesis (C54) strengthens the generality of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C55",
+      "C56",
+      "C62",
+      "C112"
+    ],
+    "result": "MLL4 is essential for enhancer activation during cell differentiation. MLL4 is the major H3K4 mono- and di-methyltransferase on adipogenic and myogenic enhancers, and is required for H3K27ac (active enhancer mark), Mediator, and Pol II recruitment. This indicates MLL4 is required for activation of cell-type-specific enhancers and suggests MLL4 exerts its function through H3K4me1/2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C55, C56, C62, C112 represent the major conclusions of the paper and are well-supported by the collective evidence from ChIP-Seq showing MLL4 is required for multiple enhancer activation marks. The inference that MLL4 'exerts its function through H3K4me1/2' (C112) is reasonable but not definitively proven\u2014it remains possible that MLL4 has additional functions beyond its methyltransferase activity. The temporal relationship (H3K4me1/2 preceding H3K27ac) supports the proposed mechanism but does not prove causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "MLL4 is required for expression of genes associated with MLL4+ enhancers during differentiation. Genes associated with MLL4+ adipogenic enhancers are better induced than those with MLL4\u2212 enhancers (p=1.5E-22). Deletion of Mll4 significantly decreases expression of genes associated with MLL4+ adipogenic enhancers (p=2.2E-10), with stronger effects for C/EBP+PPAR\u03b3+ enhancers (p=1.8E-31), but has little effect on genes associated with MLL4\u2212 enhancers. Similar patterns are observed in myocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by RNA-Seq data with appropriate statistical testing (Wilcoxon tests). The correlation between MLL4 binding on enhancers and gene expression changes is strong. However, the assignment of enhancers to genes (nearest TSS within 1,000 kb) is a limitation\u2014enhancers can regulate distant genes and the nearest gene may not be the target. The differential effect on MLL4+ versus MLL4\u2212 enhancer-associated genes (C60) is important for specificity. The consistency across adipogenesis and myogenesis (C61) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Lineage-determining TF C/EBP\u03b2 recruits and requires MLL4 to establish adipogenic enhancers. Ectopic C/EBP\u03b2 expression in preadipocytes recovers 666 of 4,965 endogenous C/EBP\u03b2+MLL4+ active enhancers, with 591 showing characteristics of active enhancers. Among these, 375 show de novo MLL4 binding and 216 show enhanced MLL4 binding. Deletion of Mll4 markedly decreases H3K4me1 and H3K27ac on over 90% of recovered enhancers. Time-course ChIP shows sequential enrichment of C/EBP\u03b2, MLL4, H3K4me1/2, and H3K27ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 provide strong evidence for TF-mediated recruitment of MLL4. The ectopic expression experiment (C63-C68) is well-designed, showing both necessity (MLL4 deletion) and sufficiency (ectopic C/EBP\u03b2) for enhancer establishment. The time-course ChIP (C70) provides temporal evidence supporting the proposed sequential model. However, only a subset of endogenous enhancers are recovered (666/4,965, 13.4%), indicating additional factors are required, which is appropriately acknowledged in other claims. The heat map analysis distinguishing de novo versus premarked enhancers (C66, C67) adds mechanistic detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Recruitment of MLL4 to enhancers involves multiple mechanisms beyond individual lineage-determining TFs. Ectopic C/EBP\u03b2 recovers only a subset of endogenous C/EBP\u03b2+MLL4+ enhancers, and MLL4 is absent from many genomic regions occupied by C/EBP\u03b1/\u03b2, PPAR\u03b3, or MyoD. The optimal genomic binding of C/EBP\u03b2 and subsequent MLL4 recruitment are likely dependent on differentiation induction. PPAR\u03b3 and C/EBP\u03b1 also play critical roles in recruiting MLL4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C101 appropriately acknowledge the complexity of MLL4 recruitment. The observation that ectopic C/EBP\u03b2 only partially recapitulates endogenous binding (C94) is important for understanding mechanism. The inference about differentiation-dependent phosphorylation (C96) is reasonable based on known C/EBP\u03b2 biology but is not directly tested. The suggestion that additional mechanisms and factors are involved (C95, C100, C101) is well-supported by the incomplete overlap between TF and MLL4 binding sites (C99). The role of PPAR\u03b3 and C/EBP\u03b1 (C98) is supported by co-IP and ChIP-Seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "A model for MLL4 regulation of adipogenesis: Pioneer TF C/EBP\u03b2 recruits MLL4 to activate adipogenic enhancers on Pparg and Cebpa loci, leading to induction of these master regulators. After PPAR\u03b3 and C/EBP\u03b1 are induced, they cooperate to recruit MLL4 to establish the downstream enhancer landscape critical for adipocyte gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 represent an integrative model supported by multiple lines of evidence: C/EBP\u03b2-MLL4 co-localization on Pparg and Cebpa loci (C102), known C/EBP\u03b2 functions from literature (C103), and the ectopic expression and time-course experiments. However, this is largely an inferential model (C104, C105) rather than directly demonstrated causality. The model is consistent with the data but alternative explanations (e.g., parallel pathways, additional factors) are not fully excluded. The model appropriately integrates prior knowledge about C/EBP\u03b2 as a pioneer factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Prior work establishes the context for MLL4 function. In Drosophila, Trr (MLL3/4 homolog) regulates H3K4me1 while dSet1 regulates H3K4me3. In mammals, SET1A/B are major H3K4 tri-methyltransferases. Enhancers are marked by H3K4me1/2 and active enhancers by H3K27ac, with H3K4me1 often preceding H3K27ac. PPAR\u03b3 is the master regulator of adipogenesis, working cooperatively with C/EBP\u03b1, while C/EBP\u03b2 acts as a pioneer factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C79 accurately represent prior work based on the citations provided. These claims establish the scientific context and are appropriately cited. The characterization of enhancer chromatin signatures (C77-C79) is well-established in the field. The roles of adipogenic transcription factors (C74-C76) are well-documented. These contextual claims are important for interpreting the current findings but are not novel results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Frequent loss-of-function mutations in MLL4 and MLL3 have been identified in developmental diseases (Kabuki syndrome, congenital heart disease) and cancers (medulloblastoma, non-Hodgkin lymphomas, breast cancer, prostate cancer).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 accurately cite published studies identifying MLL3/MLL4 mutations in various diseases. These are factual statements about prior work and are appropriately cited. This information provides important context for the significance of understanding MLL3/MLL4 function but does not represent novel findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Loss-of-function mutations in MLL3 and MLL4 would impair H3K4me1/2 on enhancers, leading to defects in enhancer activation, cell-type-specific gene expression and cell differentiation. This mechanism may contribute to the pathogenesis of developmental diseases and cancers with MLL3/MLL4 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86 and C87 are speculative extrapolations from the experimental findings to human disease. While the inference is reasonable based on the demonstrated role of MLL3/MLL4 in enhancer activation and differentiation, this has not been directly tested in disease contexts. The use of 'would' and 'may' appropriately indicates speculation. To support these claims, analysis of enhancer function in patient-derived cells or disease models with MLL3/MLL4 mutations would be needed. The speculation is reasonable but remains unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Discussion of MLL4 function in enhancer biology: H3K4me1 broadly defines future active enhancers. MLL4 appears to perform the opposite function of LSD1 (enhancer commissioning vs. decommissioning). Lineage-determining TFs may induce physical proximity of neighboring nucleosomes to MLL4, enabling broad H3K4me1/2 distribution. Prior work shows PU.1 leads to H3K4me1 in macrophages and B cells, suggesting TFs recruit H3K4me1/2 methyltransferases to prime enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111, C115, C116 accurately represent prior work and established concepts. Claim C113 makes a reasonable comparison between MLL4 and LSD1 functions based on the current findings and cited work. Claim C114 is speculative (appropriately indicated by 'we speculate') to explain the broad distribution of H3K4me1/2 beyond TF binding sites\u2014this is a reasonable hypothesis but not directly tested. Claim C117 is an inference integrating current and prior work. These discussion points appropriately contextualize the findings but include speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "Deletion of Mll4 leads to severe defects in cell differentiation, as shown by Oil Red O staining and microscopy in Mll3/Mll4 double KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is supported by Oil Red O staining showing defects in adipogenesis and microscopy showing defects in myogenesis. This is a direct observation from the experiments and is well-documented in the figures. However, this claim is somewhat redundant with C16 and C17 which make the same point more specifically for adipogenesis and myogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Among the 14,581 MLL4 binding sites during adipogenesis, 12,783 (87.7%) are marked by both H3K4me1 and H3K4me2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is a straightforward quantification from ChIP-Seq overlap analysis. The high percentage (87.7%) of MLL4 binding sites marked by both H3K4me1 and H3K4me2 is consistent with MLL4's role as a mono- and di-methyltransferase. This is a descriptive finding that supports the broader conclusions about MLL4 function.",
+    "result_type": "MINOR"
+  }
+]

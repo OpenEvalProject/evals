@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C130"
+    ],
+    "result": "The authors successfully purified and reconstituted mammalian GIRK2 channels in planar lipid bilayers. Mouse GIRK2 (residues 52-380) was expressed in Pichia pastoris, extracted with detergent, and purified using established protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C130 describe the successful reconstitution of GIRK2 in bilayers, supported by detailed methods and functional recordings shown throughout the manuscript. The approach is well-documented and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Both G\u03b2\u03b3 and PIP2 must be present simultaneously to robustly activate GIRK2 channels. Neither ligand alone is sufficient to elicit robust channel activation in the bilayer system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 provide direct experimental evidence from Figure 2 showing that PIP2 alone (C38) or G\u03b2\u03b3 alone (C39) fail to activate channels, while both together (C40) produce robust activation. This demonstrates an AND-gate requirement for both ligands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C49"
+    ],
+    "result": "The lipid anchor on G\u03b2\u03b3 is essential for GIRK2 activation by mediating membrane partitioning and achieving sufficiently high local concentrations of G\u03b2\u03b3 near the channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is directly supported by experimental data in Figure 2F showing non-lipidated G\u03b2\u03b3 fails to robustly activate GIRK2 while lipidated G\u03b2\u03b3 succeeds. The mechanistic interpretation (C46) is reasonable given the membrane-delimited nature of G protein signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Short chain C8-PIP2 activates only one orientation of GIRK2 channels in bilayers\u2014those with their intracellular surface facing the chamber to which PIP2 was added, as demonstrated using the extracellular blocker TPNQ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by experiments in Figure 3 using TPNQ to identify channel orientation. The sidedness experiments clearly demonstrate that C8-PIP2 activates channels from the intracellular side only.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C54",
+      "C55",
+      "C56",
+      "C84",
+      "C85"
+    ],
+    "result": "G\u03b1i1(GTP\u03b3S) has no effect on GIRK2 channel activity and does not influence activation by G\u03b2\u03b3 and PIP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 and C84-C85 are supported by experimental data in Figures 4 and 5A-B showing no activation or modulation by G\u03b1i1(GTP\u03b3S). This clearly demonstrates that the GTP-bound form of G\u03b1i1 does not directly regulate GIRK2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C57",
+      "C58",
+      "C60",
+      "C87"
+    ],
+    "result": "G\u03b1i1(GDP) closes activated GIRK2 channels by sequestering G\u03b2\u03b3, consistent with the canonical G protein cycle where GDP-bound G\u03b1 binds G\u03b2\u03b3 with high affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are directly supported by experimental data in Figures 5C-D. The mechanistic interpretation (C60, C87) that G\u03b1i1(GDP) sequesters G\u03b2\u03b3 is well-supported by the data and consistent with established G protein biochemistry (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "G\u03b2\u03b3 binds to GIRK2 with low affinity (~250 \u03bcM) and rapid exchange kinetics, while G\u03b2\u03b3 binds G\u03b1i1(GDP) with high affinity (~3-10 nM). This differential affinity explains why soluble G\u03b1i1(GDP) can close channels while soluble G\u03b2\u03b3 cannot open them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The affinity interpretation (C91-C92) is well-supported by multiple lines of evidence: failure to detect GIRK2-G\u03b2\u03b3 complex by gel filtration (C94), published NMR affinity measurements (C95), calculated dwell times (C96), and small interaction surface area (C97). The mechanistic model (C93) logically follows from these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "GIRK2 activation by PIP2 follows a sigmoid concentration dependence with Hill coefficient ~2.5 and apparent Kd ~0.8% mole fraction, consistent with multiple PIP2 binding events required for activation. This affinity positions GIRK2 to respond to physiological variations in membrane PIP2 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 are directly supported by quantitative dose-response data in Figure 6. The sigmoid shape (C69) and Hill coefficient (C72-C73) clearly indicate multiple binding events. The physiological relevance (C74-C75) is supported by comparison to known cellular PIP2 concentrations from cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C113",
+      "C114",
+      "C115",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Na+ is not essential for GIRK2 activation but modulates channel opening in the presence of G\u03b2\u03b3 and PIP2. Na+ steepens the PIP2 dose-response curve and increases activation most steeply in the 0-10 mM range (Kd ~9 mM), matching physiological Na+ changes during excessive excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 and C113-C114 are directly supported by quantitative data in Figure 7 showing Na+ modulation. The dose-response relationships (C131-C133) are clearly documented. The physiological relevance (C82, C118) is supported by citations to studies of cellular Na+ dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The dual requirement for G\u03b2\u03b3 and PIP2 explains GPCR selectivity: Gi/o-coupled GPCRs activate GIRK by releasing G\u03b2\u03b3 without depleting PIP2, while Gq-coupled GPCRs fail to activate GIRK because G\u03b1q activates PLC, which depletes PIP2 through hydrolysis. This AND-gate mechanism provides selectivity in G protein signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic explanation (C126-C128) logically follows from the demonstrated dual requirement (C7, C42) and established knowledge of Gq signaling (C123). The interpretation is supported by cited studies showing Gq-coupled GPCR stimulation inhibits GIRK activation (C125). This represents a well-reasoned integration of the experimental findings with prior knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors propose that GIRK channels and GPCRs may be co-localized in membrane patches to achieve sufficient local G\u03b2\u03b3 concentration for activation, exploiting 2D diffusion properties. They acknowledge this hypothesis raises challenges for replicating cell-like signaling in bilayers and may require additional cellular elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C107 are speculative hypotheses (marked as SPECULATION in evidence_type) proposed to explain how GIRK activation occurs in cells given the low G\u03b2\u03b3-GIRK affinity. While the reasoning is logical and based on sound biophysical principles (C103), these claims lack direct experimental support and represent future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors propose that PIP2 strengthens allosteric communication between the cytoplasmic and transmembrane domains of GIRK2, allowing G\u03b2\u03b3-induced conformational changes to open the gate. This hypothesis is based on structural studies showing PIP2 binds at the domain interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 cite prior structural studies showing different gate conformations with PIP2 alone versus PIP2+G\u03b2\u03b3. The mechanistic hypothesis (C111-C112) is reasonable given the structural location of PIP2 binding (C110) and the functional requirement for both ligands demonstrated in this study. However, the allosteric mechanism itself is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Na+ binds between G\u03b2\u03b3 and PIP2 binding sites in the crystal structure, providing a structural basis for coupling between ligands. The substantial effect of Na+ over physiological concentration ranges supports the hypothesis that Na+ modulation renders GIRK2 a negative feedback safety element during excessive excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural location of Na+ binding (C116) is supported by cited crystal structures. The functional coupling interpretation (C117) is reasonable given this location and the demonstrated non-additive effects (C114-C115). The physiological interpretation (C118-C119) is supported by the quantitative Na+ dependence data and citations to studies of cellular Na+ dynamics during excitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "GIRK channels are inward rectifier K+ channels that regulate cellular electrical activity in cardiovascular and nervous systems by modulating K+ conductance near resting membrane potential in response to GPCR stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C14-C21 represent established background knowledge supported by multiple citations to prior literature. These claims provide context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Prior work established that G\u03b2\u03b3 is the major mediator of GIRK activation, PIP2 regulates channel opening, Na+ modulates certain GIRK channels, and crystal structures have revealed atomic-level details of GIRK2 with bound ligands. Some studies suggested G\u03b1 may also interact with GIRK channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C33 summarize established prior knowledge supported by extensive citations. These provide the scientific context and motivation for the current study's questions about G\u03b1 function, PIP2 quantitation, and ligand interdependence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C70"
+    ],
+    "result": "Crystal structures show four binding sites each for PIP2, Na+, and G\u03b2\u03b3 on each GIRK2 homotetramer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C70 are supported by cited crystal structures (Whorton and MacKinnon 2011, 2013) and shown in Figure 1A. This structural information provides important context for interpreting the functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Previous cell-based studies concluded that G\u03b2\u03b3 and PIP2 are both important for GIRK activation, with one ligand enhancing the affinity of the other, but the complexity of cell membranes obscured the simple conclusion that both are necessary. Prior approaches yielded only qualitative data on PIP2 dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 and C65-C67 accurately characterize limitations of prior cell-based studies, supported by appropriate citations. This provides justification for the reconstituted bilayer approach used in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C50"
+    ],
+    "result": "The membrane-delimited nature of G protein activation of GIRK channels, where G\u03b2\u03b3 remains membrane-anchored via its lipid modification, is replicated in the bilayer system and consistent with the crystal structure orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 cite established terminology from prior electrophysiology literature. Claim C50 connects the functional requirement for the lipid anchor (C45) to structural data, providing a coherent picture of membrane-delimited signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Physical interactions between G\u03b1i1(GTP) and GIRK2, if they exist, are without direct functional consequence for channel gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is a reasonable inference from the lack of functional effects of G\u03b1i1(GTP\u03b3S) demonstrated in C54-C56 and C84-C85. This addresses a key question about whether prior biochemical evidence of G\u03b1-GIRK interactions (C31-C32, C83) has functional significance.",
+    "result_type": "MAJOR"
+  }
+]

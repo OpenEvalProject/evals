@@ -1,0 +1,850 @@
+{
+  "submission": {
+    "id": "044bd290-34a9-41a6-9aa8-d1159572275e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:18:41.823762Z",
+    "updated_at": "2025-11-28T22:18:41.823762Z"
+  },
+  "content": [
+    {
+      "id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "submission_id": "044bd290-34a9-41a6-9aa8-d1159572275e",
+      "content_type": "manuscript",
+      "content_text": "# Registered report: Transcriptional amplification in tumor cells with elevated c-Myc\n\n## Authors\n\n- David Blum<sup>1</sup>\n- Haiping Hao<sup>2</sup>\n- Michael McCarthy<sup>3</sup>\n\n### Affiliations\n\n1. Bioexpression and Fermentation Facility University of Georgia Athens Georgia\n2. JHMI Deep Sequencing and Microarray Core Facility Johns Hopkins University Baltimore Maryland\n3. University of Oxford Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of 50 papers in the field of cancer biology published between 2010 and 2012. This Registered report describes the proposed replication plan of key experiments from \u2018Transcriptional amplification in tumor cells with elevated c-Myc\u2019 by Lin et al. (2012), published in Cell in 2012. The experiments that will be replicated are those reported in Figures 3E and 3F. In these experiments, elevated levels of c-Myc in the P493-6 cell model of Burkitt's lymphoma results in an increase of the total level of RNA using UV/VIS spectrophotometry (Figure 3E; Lin et al., 2012) and on the mRNA levels/cell for a large set of genes using digital gene expression technology (Figure 3F; Lin et al., 2012). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange, and the results of the replications will be published in eLife.\n\n## Introduction\n\nThe proto-oncogene MYC is frequently amplified in human cancers and encodes the transcription factor c-Myc, which is associated with a variety of cellular processes such as cell growth and proliferation (Dang, 2013). While overexpressed c-Myc is known to contribute to tumorigenesis, an understanding of how this process occurs is complicated by a number of issues, including the large number of binding sites and the diversity between systems. While this was thought to occur by regulation of a specific subset of genes, Lin et al. (2012) present findings that c-Myc functions by globally amplifying the expression of actively transcribed genes.\n\nThe system used is the human P493-6 B cell model of Burkitt's lymphoma, which contains a tetracycline-repressible MYC transgene, allowing for titration of c-Myc protein (Schuhmacher et al., 1999; Pajic et al., 2000). The levels of c-Myc can be reduced and subsequently re-induced in a gradual time-dependent manner, as determined by western blot, which is shown in Figure 1B (Lin et al., 2012). As soon as 1 hr after re-induction, the protein levels of c-Myc increased above the repressed levels, which by 24 hr were similar to the tetracycline-free condition (Lin et al., 2012). This system has been used in other studies with similar results observed (Schuhmacher et al., 1999; Pajic et al., 2000). This experiment is important to replicate because it assesses the level of c-Myc re-induction with this system that will be used in the following experiments. This experiment is replicated in Protocol 1.\n\nIn Figure 3E the total levels of RNA, in P493-6 cells before and after re-induction of c-Myc, was determined by UV/VIS spectrophotometry (Lin et al., 2012). Lin et al. (2012) reported an increase in levels of absolute RNA over the timecourse of c-Myc re-induction. This experiment shows that c-Myc increases RNA content per cell, indicating c-Myc functions primarily in transcriptional amplification. Related experiments, using mouse B cells, also observed the same c-Myc-dependent amplification of cellular RNA content (Nie et al., 2012; Sab\u00f2 et al., 2014). However, similar experiments in 3T9 fibroblasts or U2OS cells expressing an inducible c-Myc did not observe an increase in cellular RNA content (Sab\u00f2 et al., 2014; Walz et al., 2014). Interestingly, an increase in total cellular RNA content was observed in 3T9 fibroblasts following serum stimulation, which was not observed when c-Myc was deleted in these cells (Sab\u00f2 et al., 2014). This experiment is replicated in Protocol 2.\n\nIn Figure 3F, Lin et al. (2012) examined the transcriptional profile of a large number of genes from multiple functional categories in cells before and after re-induction of c-Myc using digital gene expression. Re-induction of c-Myc increased the number of active genes (defined as greater than 1 transcript/cell), but did not alter silent genes (defined as less than 0.5 transcript/cell) (Lin et al., 2012). This key finding suggests that elevated c-Myc levels lead to an amplification of the existing transcriptional profile. This finding was observed in other experiments using mouse B cells treated with the Myc-Max dimerization inhibitor 10058-F4 and analyzed by ChIP-Seq (Nie et al., 2012). Another report using P493-6 cells also found an increase in transcription of c-Myc target genes when c-Myc re-induction was titrated to different concentrations by microarray analysis (Schuhmacher and Eick, 2013). This experiment is replicated in Protocols 3 and 4. Recently, two papers were published that used primarily RNA-seq and ChIP-seq to focus on assessing if the transcriptional effects of c-Myc are direct or indirect (Alderton, 2014). These studies found that RNA amplification and promoter/enhancer invasion by c-Myc were separable events in 3T9 fibroblasts and U2OS cells, suggesting that c-Myc regulates a distinct subset of genes, which indirectly lead to RNA amplification (Sab\u00f2 et al., 2014; Walz et al., 2014).\n\n## Materials and methods\n\n### Protocol 1: Western blot of c-Myc reactivation in tetracyclin-repressible system\n\nThis experiment tests the expression of the tetracycline (tet)-repressible Myc transgene after repression by tet and re-induction by removal into tet-free medium. This is a replication of the data presented in Figure 1B and assesses the levels of c-Myc protein. One major variable in this system is serum, which has been reported to stimulate the expression of a majority of genes independently from c-Myc (Schlosser et al., 2005). P493-6 cells will be cultured with two separate lots of serum that will be maintained throughout all the experiments to assess if there is variability between different batches of serum.\n\n#### Sampling\n\nExperiment to be repeated a total of three times.This replication attempt will be repeated three times to analyze if this effect is detected and to assess the variance of this system, since it will be repeated three times in the other replication protocols.Each experiment has two cohorts:Cohort 1: P493-6 cells cultured in FBS lot #1.Cohort 2: P493-6 cells cultured in FBS lot #2.Each cohort has four conditions:Cells cultured in tet-free media.Cells cultured 0 hr after tet induction.Cells cultured 1 hr after tet induction.Cells cultured 24 hr after tet induction.\n\n#### Materials and reagents\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent</th>\n      <th>Type</th>\n      <th>Manufacturer</th>\n      <th>Catalog #</th>\n      <th>Comments</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>P493-6 modified Burkitt's lymphoma cells</td>\n      <td>Cell line</td>\n      <td>Original lab</td>\n      <td></td>\n      <td>From original lab</td>\n    </tr>\n    <tr>\n      <td>RPMI 1640 medium with sodium bicarbonate, without L-glutamine</td>\n      <td>Cell culture</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>R0883</td>\n      <td>No catalog # listed in original paper</td>\n    </tr>\n    <tr>\n      <td>Tetracycline system approved FBS</td>\n      <td>Serum</td>\n      <td>Clontech</td>\n      <td>631105</td>\n      <td>Two separate lots will be used</td>\n    </tr>\n    <tr>\n      <td>Ala-Gln (L-glutamine substitute)</td>\n      <td>Cell culture</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>G8541</td>\n      <td>Original lab used GlutaMAX from Invitrogen</td>\n    </tr>\n    <tr>\n      <td>T75 flask</td>\n      <td>Labware</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>Z707503</td>\n      <td>Originally not specified</td>\n    </tr>\n    <tr>\n      <td>Tetracycline</td>\n      <td>Pharmacological agent</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>T7660</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>C-chip disposable hemocytometer</td>\n      <td>Labware</td>\n      <td>Digital Bio</td>\n      <td>DHC-N01</td>\n      <td>No catalog # listed in original paper</td>\n    </tr>\n    <tr>\n      <td>Refrigerated centrifuge</td>\n      <td>Equipment</td>\n      <td>Eppendorf</td>\n      <td>5810R</td>\n      <td>Original lab used a Sorvall Legend centrifuge</td>\n    </tr>\n    <tr>\n      <td>PBS, without MgCl2 and CaCl2</td>\n      <td>Buffers</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>D8537</td>\n      <td>Originally not specified</td>\n    </tr>\n    <tr>\n      <td>RIPA lysis buffer</td>\n      <td>Buffers</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>R0278</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SIGMAFAST Protease Inhibitor Tablets</td>\n      <td>Inhibitors</td>\n      <td>Sigma-Aldrich</td>\n      <td>S8820</td>\n      <td>Original lab used Halt Protease Inhibitor cocktail from Thermo-Fisher</td>\n    </tr>\n    <tr>\n      <td>Phosphatase inhibitor cocktail 2</td>\n      <td>Inhibitors</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>P5726</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Phosphatase inhibitor cocktail 3</td>\n      <td>Inhibitors</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>P0044</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bradford Reagent</td>\n      <td>Reporter assay</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>B6916</td>\n      <td>Original lab used Bradford Reagent from Bio-Rad</td>\n    </tr>\n    <tr>\n      <td>TruPAGE LDS sample buffer (4X)</td>\n      <td>Buffers</td>\n      <td>Sigma-Aldrich</td>\n      <td>PCG3009</td>\n      <td>Originally not specified</td>\n    </tr>\n    <tr>\n      <td>\u00df-mercaptoethanol</td>\n      <td>Chemicals</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>M3148</td>\n      <td>Originally not specified</td>\n    </tr>\n    <tr>\n      <td>Nuclease-free water</td>\n      <td>Chemicals</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>W4502</td>\n      <td>Original lab used nuclease-free water from Ambion (AM9938)</td>\n    </tr>\n    <tr>\n      <td>Mini-PROTEAN Electrophoresis System</td>\n      <td>Equipment</td>\n      <td>Bio-Rad</td>\n      <td></td>\n      <td>Originally not specified</td>\n    </tr>\n    <tr>\n      <td>TruPAGE Precast Gels 4\u201320%</td>\n      <td>Western materials</td>\n      <td>Sigma-Aldrich</td>\n      <td>PCG2012</td>\n      <td>Original lab used 4\u201312% Bis-Tris Midi gels from Invitrogen</td>\n    </tr>\n    <tr>\n      <td>TruPAGE TEA-Tricine SDS Running Buffer (20X)</td>\n      <td>Buffers</td>\n      <td>Sigma-Aldrich</td>\n      <td>PCG3001</td>\n      <td>Originally not specified</td>\n    </tr>\n    <tr>\n      <td>ECL DualVue Western Markers (15\u2013150 kDa)</td>\n      <td>Western materials</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>GERPN810</td>\n      <td>Originally not specified</td>\n    </tr>\n    <tr>\n      <td>Hybond P Western blotting membranes; PVDF</td>\n      <td>Western materials</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>GE10600029</td>\n      <td>No catalog # listed in original paper</td>\n    </tr>\n    <tr>\n      <td>TruPAGE Transfer Buffer (20X)</td>\n      <td>Buffers</td>\n      <td>Sigma-Aldrich</td>\n      <td>PCG3011</td>\n      <td>Originally not specified</td>\n    </tr>\n    <tr>\n      <td>Methanol</td>\n      <td>Chemicals</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>494437</td>\n      <td>Originally not specified</td>\n    </tr>\n    <tr>\n      <td>Semi-dry TransBlot SD System</td>\n      <td>Equipment</td>\n      <td>Bio-Rad</td>\n      <td>170\u20133940</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>5% milk powder</td>\n      <td>Western materials</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>M7409</td>\n      <td>Originally not specified</td>\n    </tr>\n    <tr>\n      <td>10X TBS buffered saline</td>\n      <td>Buffers</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>T5912</td>\n      <td>Originally not specified</td>\n    </tr>\n    <tr>\n      <td>Tween-20</td>\n      <td>Chemicals</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>P1379</td>\n      <td>Originally not specified</td>\n    </tr>\n    <tr>\n      <td>Rabbit c-Myc</td>\n      <td>Antibodies</td>\n      <td>Epitomics</td>\n      <td>1472-1</td>\n      <td>Dilute 1:5000; 57 kDa</td>\n    </tr>\n    <tr>\n      <td>Mouse \u00df-actin</td>\n      <td>Antibodies</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>A5441</td>\n      <td>Dilute 1:10,000; 42 kDa</td>\n    </tr>\n    <tr>\n      <td>Goat anti-rabbit-HRP</td>\n      <td>Antibodies</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>GERPN2124</td>\n      <td>Originally not specified. Dilute 1:10,000</td>\n    </tr>\n    <tr>\n      <td>Goat anti-mouse-HRP</td>\n      <td>Antibodies</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>GERPN2124</td>\n      <td>Originally not specified. Dilute 1:10,000</td>\n    </tr>\n    <tr>\n      <td>ECL Prime Chemiluminescent reagent</td>\n      <td>Western materials</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>GERPN2232</td>\n      <td>Originally not specified</td>\n    </tr>\n    <tr>\n      <td>G:BOX iChemi XT</td>\n      <td>Equipment</td>\n      <td>Syngene</td>\n      <td></td>\n      <td>Original lab used a Gel Dox XR+ System from Bio-Rad</td>\n    </tr>\n    <tr>\n      <td>GeneSnap</td>\n      <td>Software</td>\n      <td>Syngene</td>\n      <td>Version 6.00.19</td>\n      <td>Original lab used Image Lab software from Bio-Rad</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Procedure\n\n##### Notes\n\nAll cells will be sent for mycoplasma testing and STR profiling.Tet-free media: RPMI1640 supplemented with 10% tet system approved FBS and 1% Ala-Gln.Cells maintained at 37\u00b0C in a humidified atmosphere at 5% CO2.P493-6 cells are maintained in two separate FBS lots (lot #1 and lot #2).Prepare stocks in upright T75 flasks of P493-6 modified Burkitt's lymphoma cells cultured in tet-free media.On day 0, seed Flask A with \u223c1 \u00d7 107 P493-6 cells in 20 ml tet-free media, and Flask B with \u223c2 \u00d7 107 P493-6 cells in 40 ml tet-free media with 0.1 \u00b5g/ml tet for a concentration of 0.5 \u00d7 106 cells/ml.a. Count cells in each flask using a C-chip disposable hemocytometer.72 hr later, spin cells down from flasks, and wash cells three times in tet-free media.From Flask A cells, seed 1 new flask with 1.2 \u00d7 107 in fresh tet-free media.a. Count cells using a C-chip disposable hemocytometer.From Flask B cells, seed three new flasks with 1.2 \u00d7 107 cells in 20 ml of fresh tet-free media.a. Count cells using a C-chip disposable hemocytometer.At time points 0 hr (immediately), 1 hr, and 24 hr, harvest protein lysates from 1 \u00d7 107 cells from a Flask B cell suspension.a. Count cells in each flask using a C-chip disposable hemocytometer.b. To harvest lysates:i. Pellet 1 \u00d7 107 cells at 4\u00b0C at 1200 rpm for 5 min in a Sorvall Legend centrifuge.ii. Wash pellets once with ice-cold 1X PBS.Cell pellets can be snap frozen in liquid nitrogen and stored at \u221280\u00b0C until needed.iii. Resuspend pellets in 100 \u00b5l RIPA lysis buffer containing 2\u00d7 SIGMAFAST Protease inhibitors and 2\u00d7 Phosphatase inhibitor cocktails 2 and 3.At 24 hr, harvest protein lysate from tet-free cells (Flask A) as described in step 6.Quantify total protein concentration in each lysate using the Bradford assay, according to the manufacturer's instructions.a. Use a bovine serum albumin standard curve for the quantification.Run an electrophoresis gel under denaturing conditions, loading the same volume of 50 \u00b5g of total protein lysate, with 1\u00d7 SDS loading buffer, 2.5% \u00df-mercaptoethanol, and nuclease-free water for each condition, on a 4\u201320% TruPAGE precast gel. Run at 200 V until the dye front reaches the reference line following manufacturer's instructions.a. Samples run per gel:i. Protein molecular weight marker.ii. 0 hr from tet release (FBS lot #1).iii. 1 hr from tet release (FBS lot #1).iv. 24 hr from tet release (FBS lot #1).v. tet-free control (FBS lot #1).vi. 0 hr from tet release (FBS lot #2).vii. 1 hr from tet release (FBS lot #2).viii. 24 hr from tet release (FBS lot #2).ix. tet-free control (FBS lot #2).Transfer gel to a PVDF membrane, using the semi-dry TransBlot SD system according to manufacturer's instructions.Block with 5% milk powder in TBST buffer.a. TBST buffer: TBS with 0.2% Tween-20.Probe membrane with the following primary antibodies diluted in 5% milk powder in TBST buffer:a. rabbit c-myc; use at 1:5000; 57 kDa.b. mouse beta-actin; use at 1:10,000; 42 kDa.Wash membranes in TBST buffer.Detect primary antibodies with the following appropriate secondary antibodies diluted in 5% milk powder in TBST buffer.a. goat anti-rabbit-HRP; use at 1:10,000.b. goat anti-mouse-HRP; use at 1:10,000.Detect signal with chemiluminescent reagent.Image the chemiluminescent signal using a charge-coupled device (CCD) detection system.Repeat independently two additional times.\n\n#### Deliverables\n\nData to be collected:STR profile and result of mycoplasma testing of P493-6 cells.Images of the chemiluminescence signal from the c-myc and beta-actin probed membrane (full images with ladder). (Compare to Figure 1B).Raw values and bar graphs of mean signal intensities of the bands normalized for beta-actin levels.\n\n#### Confirmatory analysis plan\n\nThis experiment assesses the relative levels of c-Myc protein after re-induction, which was showed as a representative image in the original paper. The original paper showed an increase in c-Myc as soon as 1 hr after re-induction, which by 24 hr was similar to the tet-free condition. This replication attempt will perform the following statistical analysis listed below for each cohort.Statistical Analysis:\n\nNote: At the time of analysis we will perform the Shapiro\u2013Wilk test and generate a quantile\u2013quantile (q\u2013q) plot to assess the normality of the data and also perform Levene's test to assess homoscedasticity. If the data appear skewed, we will perform an appropriate transformation in order to proceed with the proposed statistical analysis. If this is not possible, we will perform the equivalent non-parametric test.One-way ANOVA comparing the normalized c-Myc levels in cells cultured 0 hr, 1 hr, and 24 hr from tet release and tet-free control.Planned comparisons with the Bonferroni correction:Normalized c-Myc levels in cells cultured 0 hr from tet release compared to cells cultured 24 hr from tet release.Normalized c-Myc levels in cells cultured in tet-free control medium compared to cells cultured 24 hr from tet release.Meta-analysis of effect sizes:Compare the effect sizes of the two cohorts (separate FBS lots) and use a meta-analytic approach to combine the two cohort effects, which will be presented as a forest plot.\n\n#### Known differences from the original study\n\nThe replication will only include the time points used in further studies instead of the full time-course shown in Figure 1B. A separate lot of serum was included to assess if there is variability between different batches of serum. All known differences are listed in the materials and reagents section above, with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.\n\n#### Provisions for quality control\n\nThe cell line used in this experiment will undergo STR profiling to confirm its identity and will be sent for mycoplasma testing to ensure that there is no contamination. All of the raw data, including the image files and quantified bands from the western blot, will be uploaded to the project page on the OSF (https://osf.io/mokeb/) and made publically available. This experiment is also the quality control for the other replication protocols as it assesses the level of c-Myc re-induction with this system.\n\n### Protocol 2: total RNA expression during c-Myc re-activation\n\nThis experiment tests the effect of elevated levels of c-Myc on the total levels of RNA in P493-6 cells. This is a replication of the data presented in Figure 3E, which assess RNA levels by UV/VIS spectrophotometry.\n\n#### Sampling\n\nExperiment to be repeated a total of three times for a minimum power of 96%.See Power calculations section for details.Each experiment has two cohorts:Cohort 1: P493-6 cells cultured in FBS lot #1.Cohort 2: P493-6 cells cultured in FBS lot #2.Each cohort has three conditions:Cells cultured 0 hr after tet induction.Cells cultured 1 hr after tet induction.Cells cultured 24 hr after tet induction.\n\n#### Materials and reagents\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent</th>\n      <th>Type</th>\n      <th>Manufacturer</th>\n      <th>Catalog #</th>\n      <th>Comments</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>P493-6 modified Burkitt's lymphoma cells</td>\n      <td>Cell line</td>\n      <td>Original lab</td>\n      <td></td>\n      <td>From original lab</td>\n    </tr>\n    <tr>\n      <td>RPMI 1640 medium with sodium bicarbonate, without L-glutamine</td>\n      <td>Cell culture</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>R0883</td>\n      <td>No catalog # listed in original paper</td>\n    </tr>\n    <tr>\n      <td>Tetracycline system approved FBS</td>\n      <td>Serum</td>\n      <td>Clontech</td>\n      <td>631105</td>\n      <td>Two separate lots will be used</td>\n    </tr>\n    <tr>\n      <td>Ala-Gln (L-glutamine substitute)</td>\n      <td>Cell culture</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>G8541</td>\n      <td>Original lab used GlutaMAX from Invitrogen</td>\n    </tr>\n    <tr>\n      <td>T75 flask</td>\n      <td>Labware</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>Z707503</td>\n      <td>Originally not specified</td>\n    </tr>\n    <tr>\n      <td>Tetracycline</td>\n      <td>Pharmacological agent</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>T7660</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>C-chip disposable hemocytometer</td>\n      <td>Labware</td>\n      <td>Digital Bio</td>\n      <td>DHC-N01</td>\n      <td>No catalog # listed in original paper</td>\n    </tr>\n    <tr>\n      <td>Refrigerated centrifuge</td>\n      <td>Equipment</td>\n      <td>Eppendorf</td>\n      <td>5810R</td>\n      <td>Original lab used a Sorvall Legend centrifuge</td>\n    </tr>\n    <tr>\n      <td>TRI reagent</td>\n      <td>Chemical</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>T9424</td>\n      <td>Included during communication with original authors. Original lab used Trizol</td>\n    </tr>\n    <tr>\n      <td>1-Bromo-3-chloropropane</td>\n      <td>Chemical</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>B9673</td>\n      <td>Included during communication with original authors</td>\n    </tr>\n    <tr>\n      <td>miRVana miRNA extraction kit</td>\n      <td>Buffer</td>\n      <td>Ambion</td>\n      <td>AM1561</td>\n      <td>Original lab used #AM1560 with phenol, which is not used in protocol</td>\n    </tr>\n    <tr>\n      <td>Nuclease-free water</td>\n      <td>Chemicals</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>W4502</td>\n      <td>Original lab used nuclease-free water from Ambion (AM9938)</td>\n    </tr>\n    <tr>\n      <td>NanoDrop UV/Vis Spectrophotometer</td>\n      <td>Equipment</td>\n      <td>Thermo Scientific</td>\n      <td>ND-1000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NanoDrop Operating</td>\n      <td>Software</td>\n      <td>Thermo Scientific</td>\n      <td>Version 3.3</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n#### Procedure\n\nAll cells will be sent for mycoplasma testing and STR profiling.Tet-free media: RPMI1640 supplemented with 10% tet system approved FBS and 1% Ala-Gln.Cells maintained at 37\u00b0C in a humidified atmosphere at 5% CO2.P493-6 cells are maintained in two separate FBS lots (lot #1 and lot #2).Prepare stocks in upright T75 flask of P493-6 modified Burkitt's lymphoma cells cultured in tet-free media.On day 0, seed a flask with \u223c2 \u00d7 107 P493-6 cells in 40 ml tet-free media with 0.1 \u00b5g/ml tet.a. Count cells in each flask using a C-chip disposable hemocytometer.72 hr later, spin cells down from both flasks, and wash cells three times in tet-free media.Seed three new flasks with 1.2 \u00d7 107 cells in 20 ml of fresh tet-free media.a. Count cells using a C-chip disposable hemocytometer.At time points 0 hr (immediately), 1 hr, and 24 hr, harvest one flask, and prepare an aliquot of 1 \u00d7 107 cells.a. Count cells in each flask using a C-chip disposable hemocytometer.b. Homogenize sample in 1 ml Tri Reagent according to manufacturer's instructions.c. Store at \u221280\u00b0C until further processing.d. Do not exceed 1 \u00d7 107 cells per 1 ml Tri Reagent.For each sample, add 1/10 vol (100 \u00b5l per 1 ml Tri Reagent) miRNA Homogenate Additive, vortex, and incubate on ice for 10 min.Add 100 \u00b5l bromochloropropane per 1 ml Tri Reagent, vortex for 15\u201330 s, incubate the homogenate for 5 min at RT, then centrifuge at 12,000\u00d7g for 10 min at 4\u00b0C.a. Avoid using chloroform containing isoamyl alcohol or water soluble organic solvents (ethanol, DMSO) as this will reduce DNA contamination downstream.Recover the aqueous phase and proceed directly to step F.I (Total RNA Isolation Procedure) in the miRVana isolation kit manufacturer's instructions.a. Expect to take 312 \u00b5l of aqueous phase, add 390 \u00b5l of 100% ethanol, and place the total volume (702 \u00b5l) onto the filter cartridge.b. Resuspend RNA in 100 \u00b5l of nuclease-free water for a total concentration of 100,000 cells/\u00b5l.Quantify RNA concentrations in each sample using a spectrometer.a. Convert total RNA to ng per 1000 cells.b. Record sample purity (A260/280 and A260/280 ratios).Repeat independently two additional times.\n\n#### Deliverables\n\nData to be collected:STR profile and result of mycoplasma testing of P493-6 cells.Nanodrop measurements of RNA concentrations in total RNA preparations for each sample. Include A260/280 and A260/230 ratios.Bar graph of total RNA (ng) per 1000 cells for each condition. (Compare to Figure 3E).\n\n#### Confirmatory analysis plan\n\nThis experiment assesses the relative levels of total RNA before and after re-induction of c-Myc. The original paper reported an increase in levels of absolute RNA over the timecourse of c-Myc re-induction. This replication attempt will perform the following statistical analysis listed below for each cohort.Statistical analysis:\n\nNote: At the time of analysis we will perform the Shapiro\u2013Wilk test and generate a q\u2013q plot to assess the normality of the data and also perform Levene's test to assess homoscedasiticity. If the data appear skewed we will perform an appropriate transformation in order to proceed with the proposed statistical analysis. If this is not possible we will perform the equivalent non-parametric test.One-way ANOVA comparing total RNA (ng/1000 cells) in cells cultured 0 hr, 1 hr, and 24 hr from tet release.a. Planned comparisons:i. Total RNA in cells cultured 0 hr from tet release compared to cells cultured 24 hr from tet release.Meta-analysis of effect sizes:Compare the effect sizes of the original data to the two cohorts (separate FBS lots) and use a meta-analytic approach to combine the original and replication effects, which will be presented as a forest plot.\n\n#### Known differences from the original study\n\nA separate lot of serum was included to assess if there is variability between different batches of serum. All known differences are listed in the materials and reagents section above, with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.\n\n#### Provisions for quality control\n\nThe cell line used in this experiment will undergo STR profiling to confirm its identity and will be sent for mycoplasma testing to ensure there is no contamination. The level of c-Myc re-induction in this system will be established in Protocol 1 as a comparison to the original paper. The sample purity (A260/280 and A260/230 ratios) of the isolated RNA from each sample will be reported. All of the raw data will be uploaded to the project page on the OSF (https://osf.io/mokeb/) and made publically available.\n\n### Protocol 3: transcript levels during c-Myc re-activation\n\nThis experiment, which includes Protocol 3 and 4, tests the effect of elevated levels of c-Myc on the mRNA levels/cell for a large set of genes in P493-6 cells. The data were analyzed to test the effect of c-Myc on transcript levels of genes that were expressed at reliable levels (>1 transcript/cell) or genes that were not expressed (<0.5 transcript/cell). This is a replication of the data presented in Figure 3F and Table S1, which assess the quantified mRNA levels/cells by digital gene expression (NanoString).\n\n#### Sampling\n\nEach experiment has two cohorts:Cohort 1: P493-6 cells cultured in FBS lot #1.Cohort 2: P493-6 cells cultured in FBS lot #2.Each cohort has three conditons:Cells cultured 0 hr after tet induction.Cells cultured 1 hr after tet induction.Cells cultured 24 hr after tet induction.Experiment to be repeated a total of three times.This replication attempt will be repeated three times to obtain averaged values of transcript/cell since it will be repeated three times in the other replication protocols.\n\n#### Materials and reagents\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent</th>\n      <th>Type</th>\n      <th>Manufacturer</th>\n      <th>Catalog #</th>\n      <th>Comments</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>P493-6 modified Burkitt's lymphoma cells</td>\n      <td>Cell line</td>\n      <td>Original lab</td>\n      <td></td>\n      <td>From original lab</td>\n    </tr>\n    <tr>\n      <td>RPMI 1640 medium with sodium bicarbonate, without L-glutamine</td>\n      <td>Cell culture</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>R0883</td>\n      <td>No catalog # listed in original paper</td>\n    </tr>\n    <tr>\n      <td>Tetracycline system approved FBS</td>\n      <td>Serum</td>\n      <td>Clontech</td>\n      <td>631105</td>\n      <td>Two separate lots will be used</td>\n    </tr>\n    <tr>\n      <td>Ala-Gln (L-glutamine substitute)</td>\n      <td>Cell culture</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>G8541</td>\n      <td>Original lab used GlutaMAX from Invitrogen</td>\n    </tr>\n    <tr>\n      <td>T75 flask</td>\n      <td>Labware</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>Z707503</td>\n      <td>Originally not specified</td>\n    </tr>\n    <tr>\n      <td>Tetracycline</td>\n      <td>Pharmacological agent</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>T7660</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>C-chip disposable hemocytometer</td>\n      <td>Labware</td>\n      <td>Digital Bio</td>\n      <td>DHC-N01</td>\n      <td>No catalog # listed in original paper</td>\n    </tr>\n    <tr>\n      <td>Refrigerated centrifuge</td>\n      <td>Equipment</td>\n      <td>Eppendorf</td>\n      <td>5810R</td>\n      <td>Original lab used a Sorvall Legend centrifuge</td>\n    </tr>\n    <tr>\n      <td>Buffer RLT</td>\n      <td>Buffer</td>\n      <td>Qiagen</td>\n      <td>79216</td>\n      <td>Original lab used the Buffer RLT from the RNeasy kit (#74104)</td>\n    </tr>\n    <tr>\n      <td>\u00df-mercaptoethanol</td>\n      <td>Chemicals</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>M3148</td>\n      <td>Included during communication with original authors</td>\n    </tr>\n    <tr>\n      <td>Nuclease-free water</td>\n      <td>Chemicals</td>\n      <td>Sigma\u2013Aldrich</td>\n      <td>W4502</td>\n      <td>Original lab used nuclease-free water from Ambion (AM9938)</td>\n    </tr>\n    <tr>\n      <td>NanoDrop UV/Vis Spectrophotometer</td>\n      <td>Equipment</td>\n      <td>Thermo Scientific</td>\n      <td>ND-1000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NanoDrop Operating</td>\n      <td>Software</td>\n      <td>Thermo Scientific</td>\n      <td>Version 3.3</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n#### Procedure\n\nAll cells will be sent for mycoplasma testing and STR profiling.Tet-free media: RPMI1640 supplemented with 10% tet system approved FBS and 1% Ala-Gln.Cells maintained at 37\u00b0C in a humidified atmosphere at 5% CO2.P493-6 cells are maintained in two separate FBS lots (lot #1 and lot #2).Prepare stocks of upright T75 flask of P493-6 modified Burkitt's lymphoma cells cultured in tet-free media.On day 0, seed a flask with \u223c2 \u00d7 107 P493-6 cells in 40-ml tet-free media with 0.1 \u00b5g/ml tet.a. Count cells in each flask using a C-chip disposable hemocytometer.b. This is performed for cells grown in both lots of FBS.72 hr later, spin cells down from both flasks, and wash cells three times in tet-free media.Seed three new flasks with 1.2 \u00d7 107 cells in 20 ml of fresh tet-free media.a. Count cells using a C-chip disposable hemocytometer.At time points 0 hr (immediately), 1 hr, and 24 hr, harvest one flask, and collect 1 \u00d7 106 cells.a. Count cells in each flask using a C-chip disposable hemocytometer.b. Lyse cells directly in 100 \u00b5l Buffer RLT supplemented with \u00df-mercaptoethanol (10 \u00b5l \u00df-ME per 1 ml Buffer RLT) for a concentration of 10,000 cells per \u00b5l.c. Make multiple 4 \u00b5l aliquots and store RNA at \u221280\u00b0C until shipment. Avoid freeze/thaw cycles. Ship one aliquot/sample and store others for backup.Repeat independently two additional times.Ship cell lysate samples on dry ice to lab for NanoString nCounter gene expression assay (Protocol 4).\n\n#### Deliverables\n\nData to be collected:STR profile and result of mycoplasma testing of P493-6 cells.Sample delivered for further analysis:Cell lysate samples for digital gene expression assay (Protocol 4).\n\n#### Confirmatory analysis plan\n\nThis experiment assesses if c-Myc re-induction alters the number of transcripts/cell in genes that were active (>1 transcript/cell) or silent (<0.5 transcript/cell) in cells with lower levels of c-Myc (0 hr after tet induction). The original paper reported an upregulation of active genes upon c-Myc re-induction, while genes not expressed remained silent. This replication attempt will perform the statistical analysis listed in Protocol 4 for each cohort.\n\n#### Known differences from the original study\n\nA separate lot of serum was included to assess if there is variability between different batches of serum. All known differences are listed in the materials and reagents section above, with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.\n\n#### Provisions for quality control\n\nThe cell line used in this experiment will undergo STR profiling to confirm its identity and will be sent for mycoplasma testing to ensure there is no contamination. The level of c-Myc re-induction in this system will be established in Protocol 1 as a comparison to the original paper. All of the raw data will be uploaded to the project page on the OSF (https://osf.io/mokeb/) and made publically available.\n\n### Protocol 4: NanoString nCounter digital gene expression assay\n\nThis experiment, which includes Protocol 3 and 4, tests the effect of elevated levels of c-Myc on the mRNA levels/cell for a large set of genes in P493-6 cells. The data were analyzed to test the effect of c-Myc on transcript levels of genes that were expressed at reliable levels (>1 transcript/cell) or genes that were not expressed (<0.5 transcript/cell). This is a replication of the data presented in Figure 3F and Table S1, which assess the quantified mRNA levels/cells by digital gene expression (NanoString).\n\n#### Sampling\n\nEach experiment has two cohorts:Cohort 1: P493-6 cells cultured in FBS lot #1.Cohort 2: P493-6 cells cultured in FBS lot #2.Each cohort has three conditons:Cells cultured 0 hr after tet induction.Cells cultured 1 hr after tet induction.Cells cultured 24 hr after tet induction.Experiment will analyze transcript levels from 1409 unique genes for a minimum power of 80%.Based on the estimation of detecting 795 active genes and 541 silent genes, which is 56.5% and 38.4%, respectively, of total unique genes, similar to the original data.See Power Calculations section for details.\n\n#### Materials and reagents\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent</th>\n      <th>Type</th>\n      <th>Manufacturer</th>\n      <th>Catalog #</th>\n      <th>Comments</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>nCounter Custom CodeSet (CS-1, CS-2, CS-MYC combined)</td>\n      <td>Probe</td>\n      <td>NanoString</td>\n      <td></td>\n      <td>See Table S1 of original paper for RefSeq IDs</td>\n    </tr>\n    <tr>\n      <td>nCounter GX Human Immunology Kit</td>\n      <td>Probe</td>\n      <td>NanoString</td>\n      <td>GXA-HIM1-12</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>nCounter GX Human Kinase Kit</td>\n      <td>Probe</td>\n      <td>NanoString</td>\n      <td>GXA-P2K1-12</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>nCounter Analysis System</td>\n      <td>Equipment</td>\n      <td>NanoString</td>\n      <td>NCT-PREP-120</td>\n      <td>Includes Prep Station and Digital Analyzer</td>\n    </tr>\n    <tr>\n      <td>nSolver Analysis</td>\n      <td>Software</td>\n      <td>NanoString</td>\n      <td>Version 1.1</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n#### Procedure\n\nProcess samples (from Protocol 3) according to manufacturer's instructions for \u2018Cell Lysate Protocol\u2019 (nCounter Gene Expression Assay Manual).a. Thaw samples on ice, mix well, and briefly spin down contents of the tubes.b. Incubate 4 \u00b5l of cell lysate overnight at 65\u00b0C in nCounter Reporter CodeSet, Capture ProbeSet and hybridization buffer.c. Following hybridization, process samples immediately with the nCounter PrepStation and subsequently analyze on an nCounter Digital Analyzer.d. Approximately 40,000 cells/hybridization assay.Analyze data for all target genes in all samples/flow cells using the nSolver Analysis Software.a. Normalize the counts for all target genes in all samples/flow cells based on the positive spike-in controls to account for differences in hybridization efficiency and post-hybridization processing.i. Sum the counts for the positive spike-in controls for each sample/flow cell to estimate overall assay efficiency.ii. Calculate a normalization factor for each sample/flow cell based on the relative number of positive control counts.iii. For each sample/flow cell, multiply the counts for each target gene and the control genes by the normalization factor for that sample/flow cell.b. Calculate the average normalized background count for a sample/flow cell from the average of the eight negative control counts. Subtract this value from the normalized count for each gene target in that sample/flow cell to yield normalized, background-subtracted counts for each target gene.c. Average triplicates for each sample.d. For each gene, estimate its transcripts per cell level through linear interpolation of RNA spike-in positive controls using the approximation that the signal detected from a 0.5 femtomolar RNA spike in is equivalent to the signal detected for a transcript expressed at the equivalent of 1 transcript/cell.\n\n#### Deliverables\n\nData to be collected:RCC data output files from nCounter Digital Analyzer before and after normalization, background subtraction, and approximation of transcripts/cell for each gene. Include positive and negative controls for each sample/flow cell.List of all genes with the transcript/cell estimations for each individual sample and the average across the triplicate samples. (Compare to Table S1).Box-and-whisker plot of transcript/cell estimates for the active (>1 transcript/cell) and silent (<0.5 transcript/cell) genes at 0, 1, and 24 hr. (Compare to Figure 3F).\n\n#### Confirmatory analysis plan\n\nTo determine if the normalized, background-subtracted counts are statistically above background, a t-test or Wilcoxon rank-sum test, will be used to test against the average counts of the negative control genes. Genes are defined as transcriptionally active (if average expression across replicates is >1 transcript/cell at 0 hr) or transcriptionally silent (if average expression across replicates is <0.5 transcript/cell). Some genes are represented on multiple nCounter Reporter CodeSets, so the average expression will be computed from replicates of all CodeSets with the same RefSeq ID. Genes with an average expression between 0.5 and 1 transcript/cell at 0 hr will be excluded from the analysis of silent genes, similar to how the original paper analyzed the data, but will be included in an additional analysis of non-active genes.\n\nThis experiment assesses if c-Myc re-induction alters the number of transcripts/cell in genes that were active (>1 transcript/cell) or silent (<0.5 transcript/cell) in cells with lower levels of c-Myc (0 hr after tet induction). The original paper reported an upregulation of active genes upon c-Myc re-induction, while genes not expressed remained silent. This replication attempt will perform the following statistical analysis listed below.Statistical analysis:Two-tailed Wilcoxon signed rank test of transcript levels of active genes in cells for the following comparisons with the Bonferroni correction:a. Cultured 0 hr from tet release compared to 1 hr from tet release.b. Cultured 0 hr from tet release compared to 24 hr from tet release.c. Cultured 1 hr from tet release compared to 24 hr from tet release.Two-tailed Wilcoxon signed rank test of transcript levels of silent genes in cells for the following comparisons with the Bonferroni correction:a. Cultured 0 hr from tet release compared to 1 hr from tet release.b. Cultured 0 hr from tet release compared to 24 hr from tet release.c. Cultured 1 hr from tet release compared to 24 hr from tet release.Meta-analysis of effect sizes:Compare the effect sizes of the original data to the two cohorts (separate FBS lots) and use a meta-analytic approach to combine the original and replication effects, which will be presented as a forest plot.\n\n#### Known differences from the original study\n\nThe original study used three separate custom code sets (CS-1, CS-2, and CS-MYC) and the replication will combine these into one custom code set. The three original custom code sets had a total of 495 genes, of which only 479 were unique, so the replication custom code set will only contain these unique genes. The nCounter GX human immunology kit from NanoString has been updated to a new version. In the second version, there are 106 new genes not present in the first version, of which 101 are unique to all genes examined in this experiment, while 38 genes that were in the first version are excluded in the second version. Thus, 63 unique genes will be added to the total gene set compared with the original study changing the total examined genes from 1346 to 1409. A separate lot of serum was included to assess if there is variability between different batches of serum. The original study analyzed these data using the Wilcoxon sum rank test, however since expressions of the same gene across different conditions are not independent, the Wilcoxon signed rank test, a non-parametric test for comparing two paired samples, will be used instead.\n\n#### Provisions for quality control\n\nEach of the nCounter Reporter CodeSets contain internal positive and negative controls that are used to normalize/plot a regression line to quantify relative levels of expression and to estimate the non-specific background, respectively. Genes will be tested to determine if the average normalized, background-subtracted counts are statistically above background. All of the raw data, including the data output files from the nCounter Digital Analyzer, will be uploaded to the project page on the OSF (https://osf.io/mokeb/) and made publically available.\n\n## Power calculations\n\n### Protocol 1\n\nPower calculations are not applicable.\n\n### Protocol 2\n\nSummary of original data (shared by original authors).\n\n<table>\n  <thead>\n    <tr>\n      <th>Data set being analyzed</th>\n      <th>Mean</th>\n      <th>SD</th>\n      <th>N</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Total RNA 0 hr from tet release</td>\n      <td>4.252</td>\n      <td>0.1617</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Total RNA 1 hr from tet release</td>\n      <td>4.037</td>\n      <td>0.2946</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Total RNA 24 hr from tet release</td>\n      <td>5.471</td>\n      <td>0.3752</td>\n      <td>3</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Test family\n\nANOVA: Fixed effects, omnibus, one-way, alpha error = 0.05.Power calculations were performed with G*Power software (version 3.1.7) (Faul et al., 2007).ANOVA F statistic calculated with Graphpad Prism 6.0.Partial \u03b72 calculated from Lakens (2013).\n\n#### Power calculations for replication\n\n<table>\n  <thead>\n    <tr>\n      <th>Groups</th>\n      <th>F test statistic</th>\n      <th>Partial \u03b72</th>\n      <th>Effect size f</th>\n      <th>A priori power</th>\n      <th>Total sample size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0 hr, 1 hr, 24 hr</td>\n      <td>F(2, 6) = 21.2183</td>\n      <td>0.8761</td>\n      <td>2.65914</td>\n      <td>99.9%</td>\n      <td>9 (3/group)</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Test family\n\nTwo-tailed t-test, difference between two independent means, alpha error = 0.05.Power calculations were performed with G*Power software (version 3.1.7) (Faul et al., 2007).\n\n#### Power calculations for replication\n\n<table>\n  <thead>\n    <tr>\n      <th>Group 1</th>\n      <th>Group 2</th>\n      <th>Effect size d</th>\n      <th>A priori power</th>\n      <th>Group 1 sample size</th>\n      <th>Group 2 sample size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0 hr</td>\n      <td>24 hr</td>\n      <td>4.19268947</td>\n      <td>96.3%</td>\n      <td>3</td>\n      <td>3</td>\n    </tr>\n  </tbody>\n</table>\n\n### Protocol 3 and 4\n\n#### Summary of original data (obtained from Table S1)\n\n<table>\n  <thead>\n    <tr>\n      <th>Data set being analyzed</th>\n      <th>N</th>\n      <th>Mean</th>\n      <th>SD</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Active genes 0 hr from tet release</td>\n      <td>760</td>\n      <td>23.667</td>\n      <td>88.104</td>\n    </tr>\n    <tr>\n      <td>Active genes 1 hr from tet release</td>\n      <td>760</td>\n      <td>30.418</td>\n      <td>117.36</td>\n    </tr>\n    <tr>\n      <td>Active genes 24 hr from tet release</td>\n      <td>760</td>\n      <td>54.959</td>\n      <td>179.67</td>\n    </tr>\n    <tr>\n      <td>Silent genes 0 hr from tet release</td>\n      <td>517</td>\n      <td>0.0646</td>\n      <td>0.1225</td>\n    </tr>\n    <tr>\n      <td>Silent genes 1 hr from tet release</td>\n      <td>517</td>\n      <td>0.0837</td>\n      <td>0.2810</td>\n    </tr>\n    <tr>\n      <td>Silent genes 24 hr from tet release</td>\n      <td>517</td>\n      <td>0.2981</td>\n      <td>1.3787</td>\n    </tr>\n  </tbody>\n</table>\n\n_Note: Active genes and silent genes are defined as >1 transcript/cell and <0.5 transcript/cell as in the original paper._\n\n#### Test family\n\nTwo-tailed Wilcoxon signed rank test, alpha error = 0.01667.Power calculations were performed with G*Power software (version 3.1.7) (Faul et al., 2007).\n\n#### Power calculations for replication (active genes)\n\n<table>\n  <thead>\n    <tr>\n      <th>Group 1</th>\n      <th>Group 2</th>\n      <th>Effect size dz</th>\n      <th>A priori power</th>\n      <th>Total sample size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0 hr from tet release</td>\n      <td>1 hr from tet release</td>\n      <td>0.2231897</td>\n      <td>80.2%*</td>\n      <td>224*</td>\n    </tr>\n    <tr>\n      <td>0 hr from tet release</td>\n      <td>24 hr from tet release</td>\n      <td>0.3031793</td>\n      <td>80.3%*</td>\n      <td>123*</td>\n    </tr>\n    <tr>\n      <td>1 hr from tet release</td>\n      <td>24 hr from tet release</td>\n      <td>0.2898147</td>\n      <td>80.2%*</td>\n      <td>134*</td>\n    </tr>\n  </tbody>\n</table>\n\n_*795 is used based on the estimation of 56.5% of total unique genes being active making the power 99.9%._\n\n#### Test family\n\nTwo-tailed Wilcoxon signed rank test, Bonferroni's correction, alpha error = 0.01667.Power calculations were performed with G*Power software (version 3.1.7) (Faul et al., 2007).\n\n#### Power calculations for replication (silent genes)\n\n<table>\n  <thead>\n    <tr>\n      <th>Group 1</th>\n      <th>Group 2</th>\n      <th>Effect size dz</th>\n      <th>A priori power</th>\n      <th>Total sample size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0 hr from tet release</td>\n      <td>1 hr from tet release</td>\n      <td>0.1427513*</td>\n      <td>80.0%*</td>\n      <td>541*</td>\n    </tr>\n    <tr>\n      <td>0 hr from tet release</td>\n      <td>24 hr from tet release</td>\n      <td>0.1743707</td>\n      <td>80.1%\u2020</td>\n      <td>364\u2020</td>\n    </tr>\n    <tr>\n      <td>1 hr from tet release</td>\n      <td>24 hr from tet release</td>\n      <td>0.1686160</td>\n      <td>80.0%\u2021</td>\n      <td>389\u2021</td>\n    </tr>\n  </tbody>\n</table>\n\n_*This is a sensitivity calculation. The original effect size is 0.0807517.\u2020541 is used based on the estimation of 38.4% of total unique genes being silent making the power 94.0%.\u2021541 is used making the power 92.3%._\n",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "54aec8fc-1666-4315-8eba-ea96b551695a",
+      "submission_id": "044bd290-34a9-41a6-9aa8-d1159572275e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael R Green, Howard Hughes Medical Institute, University of Massachusetts Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04024.002](https://doi.org/10.7554/eLife.04024.002)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cRegistered report: Transcriptional Amplification in Tumor Cells with Elevated c-Myc\u201d for consideration at eLife. Your article has been evaluated by Sean Morrison (Senior editor), a Reviewing editor, and 3 reviewers, one of whom is a biostatistician.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nAs detailed below, the reviewers raised a number of major concerns that need to be addressed in a revised Registered report.\n\nMajor comments:\n\n1) Any replication of the Lin et al. paper needs to include both RNA profiling and ChIP-seq experiments. The Lin et al. paper has been quite controversial and was based in very large part on ChIP-seq data and its interpretation. Many of the conclusions were based on very subtle changes in data profiles. Subsequently, two papers were published in Nature (Walz et al. and Sabo et al.) that challenge the global claims of Lin et al. In both papers, the authors worked hard to accumulate comprehensive ChIP-seq and RNA expression data in carefully designed experimental systems. While some aspects of the Lin et al. paper may be correct, both Nature papers conclude that there is a set of defined target genes that are far more Myc responsive than others. Hence, reproducing only a subset of the Lin et al. experiments is unlikely to add anything new or resolve controversial claims.\n\nThe authors do not propose to reproduce the critical ChIP-seq data and they do not propose any analysis of RNAPII profiles that would support or conflict with the conclusions of the Lin et al. paper, namely that Myc promotes genome-wide transcriptional elongation. The proposal only focuses on RNA profiling without integration with binding of Myc and RNAPII.\n\n2) More comprehensive RNA-seq analysis would determine global RNA expression in response to Myc and not be limited to a subset of genes represented by NanoString.\n\n3) The cell line P493-6 has been established 15 years ago. The proliferation of these cells depends on c-Myc expression and the presence of serum. Serum is a major variable in this system and the majority of genes in stimulated cells are regulated by serum and not by c-Myc (Schlosser et al., Oncogene, 2005). The impact of different serum changes on P493-6 cells is highly significant. In some serum batches the cells barely grow after c-Myc activation. Unfortunately, the impact of various serum batches on P493-6 cells has never been systematically analyzed. Moreover, meanwhile many batches of P493-6 cells are distributed worldwide. These cells have been cultured with different types of serum in different laboratories. Exposure to different sera probably has altered the epigenetic state of P493-6 cells further contributing to variation in gene expression.\n\nFrom the scientific view, it would be more helpful to study the stability of this biological system, e.g. by culturing P493-6 cells over longer periods of time in different batches of serum followed by a subsequent transcriptome analysis +/- Myc. At minimum, the authors should perform their experiments using multiple batches of serum to assess whether this significantly alters their results.\n\nStatistical comments to the authors:\n\n4) For protocol 1 and 2, authors propose to use ANOVA to analyze the data. Please make sure that the data do not violate the assumptions of the ANOVA: normality and homoscedasiticity. If the data do not fit the assumptions well enough, try to find a data transformation that makes them fit. If this doesn't work, you will need to apply a nonparametric counterpart of ANOVA such as Kruskal-Wallis test. In addition, performing contrast within the framework of ANOVA is more powerful than performing a separate t-test if the assumption of ANOVA is valid.\n\n5) Authors used G*Power to calculate the power. I think that power calculation for protocol 3 & 4 is probably based on the test family t-test implemented in G*Power since there is no Wilcoxon sum rank test implemented in the G*Power. I suggest using t-tests as test family and matched pairs as statistical test to recalculate the power for protocol 3 and 4 (see below for justification). You will need to re-compute the effect size by calculating the SD for paired design, although mean difference between two groups will stay the same regardless.\n\n6) Authors propose to use two-tailed Wilcoxon sum rank test, which has been used in the original paper. I suggest use either two-tailed Wilcoxon signed rank test or two-tailed paired t-test. If you prefer use G* Power to calculate power, then you will be left with two-tailed paired t-test option. The reason why paired analysis is needed is that expressions of the same gene across different conditions are not independent.\n\n7) One major conclusion from the original paper (Lin et al., 2012) is that elevated c-Myc in tumor cells leads to amplification of the expression of actively transcribed genes, but has no effect on silent genes. I am wondering whether the authors will perform the same test to the silent genes, as well as the actively transcribed genes, to confirm the results from the original paper.\n\n8) While it is very useful to leverage the previously reported effects to compute minimum power a priori, what you really need is to guarantee a minimum power on your own data. This can be done, a priori, by including some cross-study variation. This will be helpful for you to plan on the number of replicates and so forth. Papers by Giovanni Parmigiani and collaborators at the Dana\u2013Farber provide some estimates about cross-study variation that could be used for this purpose. Worst case, you should budget some additional variability because of cross-study reproducibility, and increase the sample size as appropriate. We also want you to compute and report power post-hoc/on-the-fly on your own data. Some minimum power should be guaranteed using summaries of your own data.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cRegistered report: Transcriptional Amplification in Tumor Cells with Elevated c-Myc\u201d for further consideration at eLife. Your revised article has been favorably evaluated by Sean Morrison (Senior editor), a Reviewing editor, and the original reviewers. As you might expect, there was a mixed response from the reviewers regarding the changes. On balance, we would like to move forward but would ask you to make one additional change. Different serum batches have only been included for the c-Myc off situation. To complete this control, please also include different serum batches for the c-Myc on situation.\n",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8cd1044e-63e1-4c17-a192-72998dbfd378",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C1",
+      "claim": "The Reproducibility Project: Cancer Biology is conducting replications of 50 papers in the field of cancer biology published between 2010 and 2012.",
+      "claim_type": "EXPLICIT",
+      "source": "The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of 50 papers in the field of cancer biology published between 2010 and 2012.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a description of the project scope.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "034af88a-027a-4412-9e64-1ce4bfe3bf8c",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C2",
+      "claim": "Lin et al. (2012) published 'Transcriptional amplification in tumor cells with elevated c-Myc' in Cell in 2012.",
+      "claim_type": "EXPLICIT",
+      "source": "This Registered report describes the proposed replication plan of key experiments from 'Transcriptional amplification in tumor cells with elevated c-Myc' by Lin et al. (2012), published in Cell in 2012.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct citation to the original publication being replicated.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "bd352392-0871-417b-a63f-bd60a8a3dd0d",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C3",
+      "claim": "Elevated levels of c-Myc in the P493-6 cell model of Burkitt's lymphoma results in an increase of the total level of RNA using UV/VIS spectrophotometry.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments, elevated levels of c-Myc in the P493-6 cell model of Burkitt's lymphoma results in an increase of the total level of RNA using UV/VIS spectrophotometry (Figure 3E; Lin et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to Figure 3E from Lin et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "c9813920-8964-4bd5-a295-9a2e3b432223",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C4",
+      "claim": "Elevated c-Myc increases mRNA levels/cell for a large set of genes using digital gene expression technology.",
+      "claim_type": "EXPLICIT",
+      "source": "elevated levels of c-Myc in the P493-6 cell model of Burkitt's lymphoma results in an increase of the total level of RNA using UV/VIS spectrophotometry (Figure 3E; Lin et al., 2012) and on the mRNA levels/cell for a large set of genes using digital gene expression technology (Figure 3F; Lin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to Figure 3F from Lin et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "1241ceae-bf5b-4d62-b41c-85ebc9209232",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C5",
+      "claim": "The proto-oncogene MYC is frequently amplified in human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "The proto-oncogene MYC is frequently amplified in human cancers and encodes the transcription factor c-Myc, which is associated with a variety of cellular processes such as cell growth and proliferation (Dang, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Dang, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "9ba90a71-0847-440b-b59d-cb78e00a202f",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C6",
+      "claim": "MYC encodes the transcription factor c-Myc.",
+      "claim_type": "EXPLICIT",
+      "source": "The proto-oncogene MYC is frequently amplified in human cancers and encodes the transcription factor c-Myc, which is associated with a variety of cellular processes such as cell growth and proliferation (Dang, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biological knowledge cited to Dang, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "fb052921-0118-4d6b-b70e-38bff3b73026",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C7",
+      "claim": "c-Myc is associated with a variety of cellular processes such as cell growth and proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "The proto-oncogene MYC is frequently amplified in human cancers and encodes the transcription factor c-Myc, which is associated with a variety of cellular processes such as cell growth and proliferation (Dang, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Dang, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "f2de3c01-ab37-4990-bd7b-4d8d3849ba86",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C8",
+      "claim": "Overexpressed c-Myc is known to contribute to tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "While overexpressed c-Myc is known to contribute to tumorigenesis, an understanding of how this process occurs is complicated by a number of issues, including the large number of binding sites and the diversity between systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "688ddbcd-ac2b-4b0a-8a20-ae3b4599ac4d",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C9",
+      "claim": "Lin et al. (2012) present findings that c-Myc functions by globally amplifying the expression of actively transcribed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "While this was thought to occur by regulation of a specific subset of genes, Lin et al. (2012) present findings that c-Myc functions by globally amplifying the expression of actively transcribed genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the findings from Lin et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "533e7861-983f-47ed-a14a-d6de42220b1f",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C10",
+      "claim": "The P493-6 human B cell model of Burkitt's lymphoma contains a tetracycline-repressible MYC transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "The system used is the human P493-6 B cell model of Burkitt's lymphoma, which contains a tetracycline-repressible MYC transgene, allowing for titration of c-Myc protein (Schuhmacher et al., 1999; Pajic et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schuhmacher et al., 1999 and Pajic et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "2018d7ec-cb83-4d8e-bc9f-bcb8660c70bf",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C11",
+      "claim": "The tetracycline-repressible MYC transgene in P493-6 cells allows for titration of c-Myc protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The system used is the human P493-6 B cell model of Burkitt's lymphoma, which contains a tetracycline-repressible MYC transgene, allowing for titration of c-Myc protein (Schuhmacher et al., 1999; Pajic et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schuhmacher et al., 1999 and Pajic et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "dddc1c0a-ce60-4477-9cd2-72f935797ef9",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C12",
+      "claim": "The levels of c-Myc can be reduced and subsequently re-induced in a gradual time-dependent manner in P493-6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The levels of c-Myc can be reduced and subsequently re-induced in a gradual time-dependent manner, as determined by western blot, which is shown in Figure 1B (Lin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reference to Figure 1B from Lin et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "d3e003f9-f2fd-4d40-8adb-39f14eeb6f1a",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C13",
+      "claim": "As soon as 1 hr after re-induction, the protein levels of c-Myc increased above the repressed levels.",
+      "claim_type": "EXPLICIT",
+      "source": "As soon as 1 hr after re-induction, the protein levels of c-Myc increased above the repressed levels, which by 24 hr were similar to the tetracycline-free condition (Lin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from Lin et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "e5e6d3e0-a57a-4d68-8dfb-8aab1a341e2b",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C14",
+      "claim": "By 24 hr after re-induction, c-Myc protein levels were similar to the tetracycline-free condition.",
+      "claim_type": "EXPLICIT",
+      "source": "As soon as 1 hr after re-induction, the protein levels of c-Myc increased above the repressed levels, which by 24 hr were similar to the tetracycline-free condition (Lin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from Lin et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "4de9856d-e1e5-4483-91e6-f4b672c432f3",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C15",
+      "claim": "The P493-6 system has been used in other studies with similar results observed.",
+      "claim_type": "EXPLICIT",
+      "source": "This system has been used in other studies with similar results observed (Schuhmacher et al., 1999; Pajic et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schuhmacher et al., 1999 and Pajic et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "c0a6b1f3-6b8c-43f2-b8a5-eeb1f874cd2f",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C16",
+      "claim": "Lin et al. (2012) reported an increase in levels of absolute RNA over the timecourse of c-Myc re-induction in P493-6 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Lin et al. (2012) reported an increase in levels of absolute RNA over the timecourse of c-Myc re-induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about findings from Lin et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "dcb4f857-1e1f-4bba-9aa5-b0d709eda4bb",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C17",
+      "claim": "c-Myc increases RNA content per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment shows that c-Myc increases RNA content per cell, indicating c-Myc functions primarily in transcriptional amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results from Lin et al., 2012.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "d8ad66f2-3f41-483f-ae4d-d839510e1ab6",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C18",
+      "claim": "c-Myc functions primarily in transcriptional amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment shows that c-Myc increases RNA content per cell, indicating c-Myc functions primarily in transcriptional amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "e94b4d70-c7be-4356-a043-7446f73fcfe6",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C19",
+      "claim": "Related experiments using mouse B cells observed the same c-Myc-dependent amplification of cellular RNA content.",
+      "claim_type": "EXPLICIT",
+      "source": "Related experiments, using mouse B cells, also observed the same c-Myc-dependent amplification of cellular RNA content (Nie et al., 2012; Sab\u00f2 et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nie et al., 2012 and Sab\u00f2 et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "c73f453c-2cbe-40a9-a6a8-b991a15f21eb",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C20",
+      "claim": "Similar experiments in 3T9 fibroblasts or U2OS cells expressing an inducible c-Myc did not observe an increase in cellular RNA content.",
+      "claim_type": "EXPLICIT",
+      "source": "However, similar experiments in 3T9 fibroblasts or U2OS cells expressing an inducible c-Myc did not observe an increase in cellular RNA content (Sab\u00f2 et al., 2014; Walz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sab\u00f2 et al., 2014 and Walz et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "77b15134-d2b1-40ed-ad40-3882bdba4c1f",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C21",
+      "claim": "An increase in total cellular RNA content was observed in 3T9 fibroblasts following serum stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, an increase in total cellular RNA content was observed in 3T9 fibroblasts following serum stimulation, which was not observed when c-Myc was deleted in these cells (Sab\u00f2 et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sab\u00f2 et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "8254e8b6-cebb-409b-be3e-4c3e7315fafe",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C22",
+      "claim": "The increase in total cellular RNA content following serum stimulation in 3T9 fibroblasts was not observed when c-Myc was deleted in these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, an increase in total cellular RNA content was observed in 3T9 fibroblasts following serum stimulation, which was not observed when c-Myc was deleted in these cells (Sab\u00f2 et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sab\u00f2 et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "8c04d7a6-01ef-403e-bb2e-6d3be4bf7f98",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C23",
+      "claim": "Re-induction of c-Myc increased the number of active genes (defined as greater than 1 transcript/cell).",
+      "claim_type": "EXPLICIT",
+      "source": "Re-induction of c-Myc increased the number of active genes (defined as greater than 1 transcript/cell), but did not alter silent genes (defined as less than 0.5 transcript/cell) (Lin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from Lin et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "a18ca566-67de-4357-bf9e-a298c8bd0e6c",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C24",
+      "claim": "Re-induction of c-Myc did not alter silent genes (defined as less than 0.5 transcript/cell).",
+      "claim_type": "EXPLICIT",
+      "source": "Re-induction of c-Myc increased the number of active genes (defined as greater than 1 transcript/cell), but did not alter silent genes (defined as less than 0.5 transcript/cell) (Lin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from Lin et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "f4019d2b-6325-4fb3-b360-066b699945ec",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C25",
+      "claim": "Elevated c-Myc levels lead to an amplification of the existing transcriptional profile.",
+      "claim_type": "EXPLICIT",
+      "source": "This key finding suggests that elevated c-Myc levels lead to an amplification of the existing transcriptional profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings from Lin et al., 2012.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "6b5eac9d-f3d5-4caf-a07e-ad29bf08c66a",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C26",
+      "claim": "An increase in transcription of c-Myc target genes was observed in mouse B cells treated with the Myc-Max dimerization inhibitor 10058-F4 and analyzed by ChIP-Seq.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding was observed in other experiments using mouse B cells treated with the Myc-Max dimerization inhibitor 10058-F4 and analyzed by ChIP-Seq (Nie et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Nie et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "2fce6187-0307-422c-ae7c-439d22d220cf",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C27",
+      "claim": "P493-6 cells showed an increase in transcription of c-Myc target genes when c-Myc re-induction was titrated to different concentrations by microarray analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Another report using P493-6 cells also found an increase in transcription of c-Myc target genes when c-Myc re-induction was titrated to different concentrations by microarray analysis (Schuhmacher and Eick, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schuhmacher and Eick, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "18992aca-29df-4777-b266-107868fdee98",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C28",
+      "claim": "RNA amplification and promoter/enhancer invasion by c-Myc were separable events in 3T9 fibroblasts and U2OS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies found that RNA amplification and promoter/enhancer invasion by c-Myc were separable events in 3T9 fibroblasts and U2OS cells, suggesting that c-Myc regulates a distinct subset of genes, which indirectly lead to RNA amplification (Sab\u00f2 et al., 2014; Walz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sab\u00f2 et al., 2014 and Walz et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "6eb42b25-9b7e-4688-b478-6cb7f63cd9f7",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C29",
+      "claim": "c-Myc regulates a distinct subset of genes, which indirectly lead to RNA amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies found that RNA amplification and promoter/enhancer invasion by c-Myc were separable events in 3T9 fibroblasts and U2OS cells, suggesting that c-Myc regulates a distinct subset of genes, which indirectly lead to RNA amplification (Sab\u00f2 et al., 2014; Walz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation from studies cited as Sab\u00f2 et al., 2014 and Walz et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "1e6231d7-4af1-464a-beb4-a08c4b7a7908",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C30",
+      "claim": "Serum has been reported to stimulate the expression of a majority of genes independently from c-Myc.",
+      "claim_type": "EXPLICIT",
+      "source": "One major variable in this system is serum, which has been reported to stimulate the expression of a majority of genes independently from c-Myc (Schlosser et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schlosser et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "694828f4-8069-43ab-972e-a9e53a798812",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C31",
+      "claim": "The replication will use two separate lots of serum to assess if there is variability between different batches of serum.",
+      "claim_type": "EXPLICIT",
+      "source": "P493-6 cells will be cultured with two separate lots of serum that will be maintained throughout all the experiments to assess if there is variability between different batches of serum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the experimental design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "c6303d0c-b045-4ff9-931a-39535ae809bb",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C32",
+      "claim": "The original study used three separate custom code sets (CS-1, CS-2, and CS-MYC) with a total of 495 genes, of which only 479 were unique.",
+      "claim_type": "EXPLICIT",
+      "source": "The original study used three separate custom code sets (CS-1, CS-2, and CS-MYC) and the replication will combine these into one custom code set. The three original custom code sets had a total of 495 genes, of which only 479 were unique, so the replication custom code set will only contain these unique genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known difference from the original study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "b501b102-1cc1-413e-a070-e60f4d7cb77a",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C33",
+      "claim": "The nCounter GX human immunology kit from NanoString has been updated to a new version with 106 new genes not present in the first version, of which 101 are unique to all genes examined in this experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "The nCounter GX human immunology kit from NanoString has been updated to a new version. In the second version, there are 106 new genes not present in the first version, of which 101 are unique to all genes examined in this experiment, while 38 genes that were in the first version are excluded in the second version.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known difference from the original study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "23db8a8d-337a-4c5c-8aba-e04edb99586f",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C34",
+      "claim": "63 unique genes will be added to the total gene set compared with the original study changing the total examined genes from 1346 to 1409.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, 63 unique genes will be added to the total gene set compared with the original study changing the total examined genes from 1346 to 1409.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known difference from the original study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "42a68f6c-c60d-466b-b7e4-ce9078784f46",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C35",
+      "claim": "The original study analyzed data using the Wilcoxon sum rank test.",
+      "claim_type": "EXPLICIT",
+      "source": "The original study analyzed these data using the Wilcoxon sum rank test, however since expressions of the same gene across different conditions are not independent, the Wilcoxon signed rank test, a non-parametric test for comparing two paired samples, will be used instead.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known difference from the original study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "0b8e821e-6bf0-4d2d-b055-7a8b6a09fa1d",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C36",
+      "claim": "The replication will use the Wilcoxon signed rank test because expressions of the same gene across different conditions are not independent.",
+      "claim_type": "EXPLICIT",
+      "source": "The original study analyzed these data using the Wilcoxon sum rank test, however since expressions of the same gene across different conditions are not independent, the Wilcoxon signed rank test, a non-parametric test for comparing two paired samples, will be used instead.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological decision based on statistical reasoning.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "cc1d1196-dc16-4320-9592-e406bd72b6ab",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C37",
+      "claim": "The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange, and the results of the replications will be published in eLife.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "23893b56-8774-4d2e-9e39-99648c7ed3c8",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "claim_id": "C38",
+      "claim": "The results of the replications will be published in eLife.",
+      "claim_type": "EXPLICIT",
+      "source": "The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange, and the results of the replications will be published in eLife.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "de18ea61-bf46-46a5-8580-c0f05e3c7188",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "This manuscript describes a registered replication report for the Reproducibility Project: Cancer Biology, which aims to replicate key experiments from Lin et al. (2012) published in Cell. The project is a collaboration between the Center for Open Science and Science Exchange, with results to be published in eLife.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C37, and C38 are straightforward descriptive statements about the project scope, the original publication being replicated, and the collaborative nature of the work. These are verifiable facts that are consistently stated throughout the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "99299dbd-db94-476e-af4f-6f980d573c34",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The proto-oncogene MYC is frequently amplified in human cancers and encodes the transcription factor c-Myc, which is associated with cellular processes such as cell growth and proliferation and contributes to tumorigenesis when overexpressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 represent well-established background knowledge in cancer biology, appropriately cited to Dang (2013). These are foundational facts that provide context for the replication study and are not controversial.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "97586f80-ddf1-4dce-8955-060cd9fe13fb",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Lin et al. (2012) reported that c-Myc functions by globally amplifying the expression of actively transcribed genes, as evidenced by increased total RNA levels (measured by UV/VIS spectrophotometry) and increased mRNA levels per cell for a large set of genes (measured by digital gene expression technology) in the P493-6 cell model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C9, C16, C17, and C18 accurately describe the key findings from Lin et al. (2012) that are the target of this replication. These claims are supported by direct citations to specific figures (3E and 3F) from the original paper and represent the central hypothesis being tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "5e59497e-3d77-44fe-856d-95ed550d0314",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The P493-6 cell model of Burkitt's lymphoma contains a tetracycline-repressible MYC transgene that allows for controlled titration of c-Myc protein levels. Upon tetracycline removal, c-Myc protein levels increase within 1 hour and reach tetracycline-free levels by 24 hours, as demonstrated by western blot in Lin et al. (2012) and confirmed in other studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 describe the experimental system used in the original study, with appropriate citations to Schuhmacher et al. (1999), Pajic et al. (2000), and Lin et al. (2012). The tetracycline-inducible system is well-characterized and the kinetics of c-Myc re-induction are supported by multiple independent studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "a3e192d8-f356-486f-a534-e58d14fcf93d",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The c-Myc-dependent amplification of cellular RNA content observed in P493-6 cells and mouse B cells was not consistently observed in other cell types (3T9 fibroblasts, U2OS cells), though serum stimulation of 3T9 fibroblasts increased RNA content in a c-Myc-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 accurately describe the context from the literature showing that the RNA amplification effect is cell-type dependent. These claims are appropriately cited to Nie et al. (2012), Sab\u00f2 et al. (2014), and Walz et al. (2014), highlighting important biological variability that contextualizes the replication attempt.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "4b727986-676b-46cc-87de-7335eca8652b",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Re-induction of c-Myc in P493-6 cells increased the expression of active genes (>1 transcript/cell) but did not alter silent genes (<0.5 transcript/cell), suggesting that elevated c-Myc levels amplify the existing transcriptional profile rather than activating new genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 describe a key mechanistic finding from Lin et al. (2012) that distinguishes transcriptional amplification from de novo gene activation. This finding is central to the original paper's conclusions and is appropriately cited with specific reference to the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "26e75e92-68a9-4b47-9cdd-c75f3188d921",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The finding that c-Myc amplifies transcription of target genes has been corroborated in other experimental systems, including mouse B cells treated with a Myc-Max dimerization inhibitor (analyzed by ChIP-Seq) and P493-6 cells with titrated c-Myc levels (analyzed by microarray).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26 and C27 provide supporting evidence from independent studies (Nie et al., 2012; Schuhmacher and Eick, 2013) that corroborate the transcriptional amplification model. These citations appropriately contextualize the original findings within the broader literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "1616d8fc-0af7-4c23-bb34-6b8ecb195f97",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Recent studies in 3T9 fibroblasts and U2OS cells suggest that RNA amplification and promoter/enhancer invasion by c-Myc are separable events, with c-Myc regulating a distinct subset of genes that indirectly lead to RNA amplification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C29 describe an alternative mechanistic model from more recent publications (Sab\u00f2 et al., 2014; Walz et al., 2014). These claims appropriately acknowledge competing interpretations in the literature, though the inference in C29 relies on the authors' interpretation of the cited studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "c9a9e8a5-aebe-4fc1-b117-c21d10486fc6",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Serum is a major variable that can stimulate gene expression independently of c-Myc, and the replication study will use two separate lots of serum to assess batch-to-batch variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C31 identify an important experimental variable (serum batch effects) and describe a methodological improvement in the replication design. The concern about serum variability is appropriately cited (Schlosser et al., 2005), and the two-cohort design is a reasonable quality control measure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "4d75f4fc-8fa2-44cc-aabb-612403cad9cb",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The replication study will examine 1409 unique genes compared to 1346 in the original study, due to combining three custom code sets into one (eliminating 16 duplicates) and using an updated version of the nCounter GX human immunology kit (adding 101 new genes and removing 38 genes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 transparently document known differences between the original and replication studies. The arithmetic is verifiable (479 unique from custom sets + 101 new - 38 removed = net change from 1346 to 1409), and these differences are appropriately disclosed as methodological variations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    },
+    {
+      "id": "ebcf0147-c273-49b9-a462-cac410d7ef1b",
+      "content_id": "fcfda2c9-d57f-4a68-b3f4-096d0a0d0dab",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The replication study will use the Wilcoxon signed rank test instead of the Wilcoxon sum rank test used in the original study, because gene expression measurements across different conditions are paired (not independent) samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C36 identify a statistical error in the original analysis and propose a correction. The reasoning is sound: the Wilcoxon signed rank test is indeed appropriate for paired data (same genes measured under different conditions), while the sum rank test assumes independent samples. This is a legitimate methodological improvement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:41.823762Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8cd1044e-63e1-4c17-a192-72998dbfd378",
+      "result_id": "de18ea61-bf46-46a5-8580-c0f05e3c7188"
+    },
+    {
+      "claim_id": "034af88a-027a-4412-9e64-1ce4bfe3bf8c",
+      "result_id": "de18ea61-bf46-46a5-8580-c0f05e3c7188"
+    },
+    {
+      "claim_id": "cc1d1196-dc16-4320-9592-e406bd72b6ab",
+      "result_id": "de18ea61-bf46-46a5-8580-c0f05e3c7188"
+    },
+    {
+      "claim_id": "23893b56-8774-4d2e-9e39-99648c7ed3c8",
+      "result_id": "de18ea61-bf46-46a5-8580-c0f05e3c7188"
+    },
+    {
+      "claim_id": "1241ceae-bf5b-4d62-b41c-85ebc9209232",
+      "result_id": "99299dbd-db94-476e-af4f-6f980d573c34"
+    },
+    {
+      "claim_id": "9ba90a71-0847-440b-b59d-cb78e00a202f",
+      "result_id": "99299dbd-db94-476e-af4f-6f980d573c34"
+    },
+    {
+      "claim_id": "fb052921-0118-4d6b-b70e-38bff3b73026",
+      "result_id": "99299dbd-db94-476e-af4f-6f980d573c34"
+    },
+    {
+      "claim_id": "f2de3c01-ab37-4990-bd7b-4d8d3849ba86",
+      "result_id": "99299dbd-db94-476e-af4f-6f980d573c34"
+    },
+    {
+      "claim_id": "688ddbcd-ac2b-4b0a-8a20-ae3b4599ac4d",
+      "result_id": "97586f80-ddf1-4dce-8955-060cd9fe13fb"
+    },
+    {
+      "claim_id": "bd352392-0871-417b-a63f-bd60a8a3dd0d",
+      "result_id": "97586f80-ddf1-4dce-8955-060cd9fe13fb"
+    },
+    {
+      "claim_id": "c9813920-8964-4bd5-a295-9a2e3b432223",
+      "result_id": "97586f80-ddf1-4dce-8955-060cd9fe13fb"
+    },
+    {
+      "claim_id": "c0a6b1f3-6b8c-43f2-b8a5-eeb1f874cd2f",
+      "result_id": "97586f80-ddf1-4dce-8955-060cd9fe13fb"
+    },
+    {
+      "claim_id": "dcb4f857-1e1f-4bba-9aa5-b0d709eda4bb",
+      "result_id": "97586f80-ddf1-4dce-8955-060cd9fe13fb"
+    },
+    {
+      "claim_id": "d8ad66f2-3f41-483f-ae4d-d839510e1ab6",
+      "result_id": "97586f80-ddf1-4dce-8955-060cd9fe13fb"
+    },
+    {
+      "claim_id": "533e7861-983f-47ed-a14a-d6de42220b1f",
+      "result_id": "5e59497e-3d77-44fe-856d-95ed550d0314"
+    },
+    {
+      "claim_id": "2018d7ec-cb83-4d8e-bc9f-bcb8660c70bf",
+      "result_id": "5e59497e-3d77-44fe-856d-95ed550d0314"
+    },
+    {
+      "claim_id": "dddc1c0a-ce60-4477-9cd2-72f935797ef9",
+      "result_id": "5e59497e-3d77-44fe-856d-95ed550d0314"
+    },
+    {
+      "claim_id": "d3e003f9-f2fd-4d40-8adb-39f14eeb6f1a",
+      "result_id": "5e59497e-3d77-44fe-856d-95ed550d0314"
+    },
+    {
+      "claim_id": "e5e6d3e0-a57a-4d68-8dfb-8aab1a341e2b",
+      "result_id": "5e59497e-3d77-44fe-856d-95ed550d0314"
+    },
+    {
+      "claim_id": "4de9856d-e1e5-4483-91e6-f4b672c432f3",
+      "result_id": "5e59497e-3d77-44fe-856d-95ed550d0314"
+    },
+    {
+      "claim_id": "e94b4d70-c7be-4356-a043-7446f73fcfe6",
+      "result_id": "a3e192d8-f356-486f-a534-e58d14fcf93d"
+    },
+    {
+      "claim_id": "c73f453c-2cbe-40a9-a6a8-b991a15f21eb",
+      "result_id": "a3e192d8-f356-486f-a534-e58d14fcf93d"
+    },
+    {
+      "claim_id": "77b15134-d2b1-40ed-ad40-3882bdba4c1f",
+      "result_id": "a3e192d8-f356-486f-a534-e58d14fcf93d"
+    },
+    {
+      "claim_id": "8254e8b6-cebb-409b-be3e-4c3e7315fafe",
+      "result_id": "a3e192d8-f356-486f-a534-e58d14fcf93d"
+    },
+    {
+      "claim_id": "8c04d7a6-01ef-403e-bb2e-6d3be4bf7f98",
+      "result_id": "4b727986-676b-46cc-87de-7335eca8652b"
+    },
+    {
+      "claim_id": "a18ca566-67de-4357-bf9e-a298c8bd0e6c",
+      "result_id": "4b727986-676b-46cc-87de-7335eca8652b"
+    },
+    {
+      "claim_id": "f4019d2b-6325-4fb3-b360-066b699945ec",
+      "result_id": "4b727986-676b-46cc-87de-7335eca8652b"
+    },
+    {
+      "claim_id": "6b5eac9d-f3d5-4caf-a07e-ad29bf08c66a",
+      "result_id": "26e75e92-68a9-4b47-9cdd-c75f3188d921"
+    },
+    {
+      "claim_id": "2fce6187-0307-422c-ae7c-439d22d220cf",
+      "result_id": "26e75e92-68a9-4b47-9cdd-c75f3188d921"
+    },
+    {
+      "claim_id": "18992aca-29df-4777-b266-107868fdee98",
+      "result_id": "1616d8fc-0af7-4c23-bb34-6b8ecb195f97"
+    },
+    {
+      "claim_id": "6eb42b25-9b7e-4688-b478-6cb7f63cd9f7",
+      "result_id": "1616d8fc-0af7-4c23-bb34-6b8ecb195f97"
+    },
+    {
+      "claim_id": "1e6231d7-4af1-464a-beb4-a08c4b7a7908",
+      "result_id": "c9a9e8a5-aebe-4fc1-b117-c21d10486fc6"
+    },
+    {
+      "claim_id": "694828f4-8069-43ab-972e-a9e53a798812",
+      "result_id": "c9a9e8a5-aebe-4fc1-b117-c21d10486fc6"
+    },
+    {
+      "claim_id": "c6303d0c-b045-4ff9-931a-39535ae809bb",
+      "result_id": "4d75f4fc-8fa2-44cc-aabb-612403cad9cb"
+    },
+    {
+      "claim_id": "b501b102-1cc1-413e-a070-e60f4d7cb77a",
+      "result_id": "4d75f4fc-8fa2-44cc-aabb-612403cad9cb"
+    },
+    {
+      "claim_id": "23db8a8d-337a-4c5c-8aba-e04edb99586f",
+      "result_id": "4d75f4fc-8fa2-44cc-aabb-612403cad9cb"
+    },
+    {
+      "claim_id": "42a68f6c-c60d-466b-b7e4-ce9078784f46",
+      "result_id": "ebcf0147-c273-49b9-a462-cac410d7ef1b"
+    },
+    {
+      "claim_id": "0b8e821e-6bf0-4d2d-b055-7a8b6a09fa1d",
+      "result_id": "ebcf0147-c273-49b9-a462-cac410d7ef1b"
+    }
+  ],
+  "comparisons": []
+}

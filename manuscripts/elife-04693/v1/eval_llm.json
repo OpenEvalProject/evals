@@ -1,0 +1,417 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C23",
+      "C24",
+      "C100"
+    ],
+    "result": "VIP neurons utilize visual cues to achieve rotation-invariant heading representation, employing both local motion parallax and global perspective distortions present in optic flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C23, C24, and C100 collectively establish the primary finding that VIP neurons use visual cues for rotation-invariant heading. The experimental data from both 3D cloud and fronto-parallel plane stimuli (C44-C50, C67-C72) provide converging evidence for this conclusion, with statistical tests confirming significant rotation tolerance during simulated pursuit conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "During simulated pursuit (visual cues only), 23.6% of VIP neurons showed rotation-invariant heading tuning, with median population shifts of 13.8\u00b0 significantly less than the 20\u00b0 expected without compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 present quantitative findings from the 3D cloud experiment with appropriate statistical tests (bootstrap 95% CI, Wilcoxon signed-rank tests). The data demonstrate that visual cues alone are sufficient for partial rotation compensation in a substantial subset of VIP neurons, though the compensation is less complete than with both visual and non-visual cues present.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "VIP neurons can use global perspective cues alone (fronto-parallel plane stimulus) to achieve partial rotation tolerance, with median shifts of 21.5\u00b0 during simulated pursuit, significantly less than the 37\u00b0 expected without compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 demonstrate that even without local motion parallax cues, VIP neurons show significant rotation tolerance using only global perspective cues. The comparison between 3D cloud and fronto-parallel plane conditions (C71) provides evidence that both types of visual cues contribute to rotation compensation, with appropriate statistical tests supporting the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C98",
+      "C110"
+    ],
+    "result": "VIP neurons show correlated responses to visual and non-visual rotation signals, suggesting multisensory integration of rotation information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C54, C55, and C56 present correlation analyses (Spearman r = 0.50 and 0.39 for rotation responses, r = 0.59 for differential responses) with significant p-values demonstrating that visual and non-visual rotation signals converge in VIP. The interpretation of multisensory integration (C56, C98, C110) is reasonable given the data, though the postulate nature of C110 acknowledges this requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C99"
+    ],
+    "result": "VIP heading representation uses an intermediate reference frame closer to eye-centered than head-centered, with temporal response slopes ~65% as steep as predicted for pure eye-centered representation during both real and simulated pursuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 present temporal response analysis with quantified slopes and 95% confidence intervals showing systematic trends consistent with an eye-centered reference frame. The finding that similar trends occur during simulated pursuit (C91-C92) is particularly compelling. Claim C99 correctly concludes that rotation tolerance is distinct from reference frame, resolving an apparent contradiction in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Rotation-invariance is conceptually and empirically distinct from the reference frame used to represent heading; neurons can discount rotations while representing heading in either eye-centered or head-centered coordinates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C86 provide a clear theoretical framework explaining how rotation compensation and reference frame are independent issues. The logic is sound: during pursuit, the eye-centered reference frame rotates relative to heading (C77-C79), so time-averaged responses cannot distinguish reference frames (C81), but temporal dynamics can (C82-C84). This theoretical insight is validated by the experimental findings in C87-C92.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In 3D environments, rotations produce depth-dependent FOE shifts, with the nearest plane (25 cm) showing ~20\u00b0 shift but planes beyond 45 cm having undefined FOE, requiring more complex analysis than simple global tuning curve shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C37 establish the theoretical foundation for why previous analytical approaches were insufficient. The calculations of FOE shifts at different depths (C30-C32) are based on established optic flow properties (C28-C29), and the insight that rotations cause bandwidth and skew changes rather than simple shifts (C33-C37) is well-supported by the theoretical analysis and illustrated in figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The study employed novel analytical methods that account for bandwidth and shape changes in tuning curves, measuring full heading tuning curves and distinguishing gain changes from shifts, overcoming limitations of cross-correlation methods used in previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 and C132-C136 identify methodological limitations in previous work, while C143-C146 describe the improved methods used in this study. The simulations in Figure 4\u2014figure supplement 1E validate that the new method correctly estimates shifts regardless of heading preference, addressing the specific limitations of cross-correlation methods demonstrated in Figure 4\u2014figure supplement 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Previous electrophysiological studies had ambiguous findings due to lack of visual controls, incorrect simulation of rotations (missing dynamic perspective cues), or insufficient analysis methods (cross-correlation, rank-ordering).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C142 provide a comprehensive critical assessment of previous electrophysiological literature. The critiques are specific and well-supported: Bradley et al. and Shenoy et al. used incorrect visual simulations lacking dynamic perspective cues (C124-C131), while Bremmer et al. and Kaminiarz et al. used insufficient analysis methods (C137-C142). The assessment is fair and identifies specific methodological issues rather than simply dismissing prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The findings are broadly consistent with psychophysical literature showing variable rotation compensation (20-100%) depending on stimulus richness, with the current study observing a continuous range of compensatory effects in VIP neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C117 provide appropriate context by comparing neural findings to behavioral studies. The comparison is fair, acknowledging both studies showing large errors (C111) and accurate perception (C112) based on visual cues alone. The observation that stimulus richness affects compensation (C114-C115) helps explain variability across studies, and the acknowledgment that direct quantitative comparison is difficult (C117) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Optic flow contains two types of visual cues for rotation compensation: local motion parallax (depth-dependent translational flow) and global dynamic perspective cues (depth-independent rotational distortions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 establish the theoretical basis for the two types of visual cues tested in the experiments. The distinction between depth-dependent motion parallax (C57-C60) and depth-independent perspective cues (C61-C65) is well-established in the literature (citations to Longuet-Higgins, Koenderink, etc.) and provides the rationale for comparing 3D cloud vs. fronto-parallel plane stimuli.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Visual cues may provide computational advantages over efference copy signals for rotation compensation because they directly represent total eye-in-world rotation (REW) without requiring summation of multiple noisy efference copy signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C109 present a theoretical argument about the computational advantages of visual cues. While the logic is sound (visual cues represent REW = REH + RHB + RBW directly, avoiding noise accumulation from multiple efference copies), this remains speculative. The study only tested eye rotations (REH), not head or body rotations, so the generalization to other rotation sources (C101) and the claimed advantages (C106) are not directly demonstrated by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Example neurons demonstrate rotation-invariant heading tuning during both real and simulated pursuit, with some neurons showing bandwidth changes consistent with theoretical predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 describe example neurons shown in Figure 3. The examples effectively illustrate the main findings, with one neuron showing rotation invariance in both conditions (C38-C39) and another showing bandwidth changes during simulated pursuit (C41). These examples are representative of the population findings and help visualize the phenomena described quantitatively in the population analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "During self-motion, eye and head rotations add rotational velocity patterns to retinal optic flow that must be discounted to accurately perceive heading, but the mechanisms for achieving rotation-invariance remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 establish the background and motivation for the study. These are well-established facts about visual perception during self-motion (C1-C2, C7-C8, C11-C13) supported by appropriate citations. The identification of the knowledge gap (C9) provides clear motivation for the study. This is standard background material that accurately represents the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The conventional view emphasizes efference copy signals for rotation compensation, but theoretical work suggests visual processing alone could achieve rotation-invariance, and psychophysical studies provide evidence for visual contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C21 accurately characterize the state of the literature, distinguishing between the conventional emphasis on efference copies (C3, C14-C18) and alternative theoretical proposals for visual solutions (C19-C20). The citations to psychophysical evidence (C21) are appropriate. This provides balanced context showing both the dominant view and alternative possibilities that motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "About half of VIP neurons showed significant rotation responses during both pursuit in darkness (50.7%) and simulated rotation (54.2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 report straightforward descriptive statistics about rotation responses. The finding that about half of neurons respond to rotation is clearly stated with appropriate statistical tests (comparison to baseline). The acknowledgment that more neurons might respond to different rotation velocities or axes (C52) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "A subpopulation of VIP neurons represent heading in a rotation-invariant fashion using both visual and non-visual cues, providing novel evidence for visual contributions that were missing from previous neurophysiology literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 summarize the main findings of the study. These are appropriate summary statements supported by the detailed experimental results (C44-C50, C67-C72). The characterization of the literature gap (C96) is accurate based on the critical assessment of previous studies (C22-C142).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The range of rotation compensation observed might reflect different decoding strategies or perceptual ambiguity between path-independent rotations and curved paths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C122 offer speculative explanations for the variability in rotation compensation across neurons. While the speculation is reasonable and cites relevant behavioral literature (C120-C121), these remain untested hypotheses. The study did not manipulate decoding strategies or test curved path stimuli, so these explanations cannot be evaluated with the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The ability of VIP neurons to represent heading using visual cues alone suggests visual mechanisms may contribute broadly to neural computations involving self-generated rotations, particularly when efference copies are unreliable or absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C154 discuss broader implications of the findings. While the general principle is sound (C147-C149 are well-established), the specific implications (C150-C154) are speculative. The example of curvilinear motion (C152-C154) is interesting but untested. These represent reasonable directions for future research rather than conclusions supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Previous studies interpreted rotation-invariant tuning as evidence for head-centered representation, while studies measuring heading at different static eye positions found eye-centered representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 accurately characterize an apparent contradiction in the literature, with appropriate citations. This sets up the conceptual contribution of the current study (resolving this apparent contradiction by showing rotation-invariance and reference frame are independent issues).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Heading representation in VIP is close to eye-centered, consistent with previous findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by the temporal response analysis (C87-C91) showing slopes ~65% as steep as predicted for pure eye-centered representation. The citation to Chen et al. (2013) provides appropriate context. This is a confirmatory finding that supports previous work while clarifying its relationship to rotation-invariance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Visual and non-visual sources of rotation elicit similar responses in VIP, suggesting multisensory combination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is directly supported by the correlation analyses in C53-C56. This is a concise statement of a key finding that is elaborated in more detail in the grouped claims about rotation responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "The brain is capable of performing complex computations to infer eye movements and discount their sensory consequences based solely on visual cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by the simulated pursuit findings (C45, C50, C91-C93) showing that VIP neurons can achieve rotation compensation and even show temporal dynamics consistent with changing eye position using only visual information. This represents a strong interpretation of the data that is justified by the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The temporal dynamics of eye rotation may be inferred from rotational components of optic flow and used to modulate neural responses during simulated pursuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 offers a mechanistic interpretation of how visual signals might produce the observed temporal dynamics during simulated pursuit (C91). While this is a reasonable speculation given the data, the specific mechanism remains untested. The study demonstrates that temporal dynamics occur during simulated pursuit but does not directly test whether rotational optic flow components drive these dynamics.",
+    "result_type": "MINOR"
+  }
+]

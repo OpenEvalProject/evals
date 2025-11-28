@@ -1,0 +1,1764 @@
+{
+  "submission": {
+    "id": "cfbcb7a0-4102-4eb2-ac15-659f51b9812b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:02:47.961632Z",
+    "updated_at": "2025-11-28T22:02:47.961632Z"
+  },
+  "content": [
+    {
+      "id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "submission_id": "cfbcb7a0-4102-4eb2-ac15-659f51b9812b",
+      "content_type": "manuscript",
+      "content_text": "# Genome-wide regulatory dynamics of translation in the Plasmodium falciparum asexual blood stages\n\n## Authors\n\n- Florence Caro<sup>1</sup>\n- Vida Ahyong<sup>1</sup>\n- Miguel Betegon<sup>1</sup>\n- Joseph L DeRisi<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Biophysics University of California, San Francisco San Francisco United States\n2. Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe characterization of the transcriptome and proteome of Plasmodium falciparum has been a tremendous resource for the understanding of the molecular physiology of this parasite. However, the translational dynamics that link steady-state mRNA with protein levels are not well understood. In this study, we bridge this disconnect by measuring genome-wide translation using ribosome profiling, through five stages of the P. falciparum blood phase developmental cycle. Our findings show that transcription and translation are tightly coupled, with overt translational control occurring for less than 10% of the transcriptome. Translationally regulated genes are predominantly associated with merozoite egress functions. We systematically define mRNA 5\u2032 leader sequences, and 3\u2032 UTRs, as well as antisense transcripts, along with ribosome occupancy for each, and establish that accumulation of ribosomes on 5\u2032 leaders is a common transcript feature. This work represents the highest resolution and broadest portrait of gene expression and translation to date for this medically important parasite.\n\n## Introduction\n\nThe transcriptome of the intraerythrocytic developmental cycle (IDC) of P. falciparum is characterized by a continuous cascade wherein the expression of the majority of genes is maximally induced once per cycle and their timing correlates well with the timing for the respective protein's biological function (Bozdech et al., 2003). The apparent lack of dynamic transcriptional regulation suggested that complementary post-transcriptional mechanisms could play an important role in the regulation of parasite gene expression (Hughes et al., 2010). This is a reasonable assumption, given that global or gene-specific translational regulation of gene expression is a mechanism that allows fast adaptations during drastic changes in environmental conditions as well as during rapid transitions in developmental programs. Indeed a few examples of translational control in Plasmodium have been reported. In sporozoites present in the mosquito salivary gland, phosphorylation of the eukaryotic translation initiation factor eIF2\u03b1 by the kinase IK2, inhibits translation and causes accumulation of mRNAs into granules. Translational repression is alleviated by eIF2\u03b1 phosphatase during the transition into the mammalian host, allowing parasites to transform into the liver stages (Zhang et al., 2010). Similarly, PK4 kinase activity leads to the reduction of global protein synthesis through phosphorylation of eIF2\u03b1 in schizonts and gametocytes and is essential for the completion of the parasite's erythrocytic cycle (Zhang et al., 2012). Gene-specific translational regulation has also been observed in P. falciparum and is mediated by cis-acting sequences in combination with RNA-binding proteins. For example, dihydrofolate reductase-thymidylate synthase (DHFR-TS) binds within the coding region of its own cognate mRNA to repress translation (Zhang and Rathod, 2002) and antifolate treatment has been shown to relieve this repressive effect without alteration of mRNA levels (Nirmalan et al., 2004a). In Plasmodium berghei, storage of translationally repressed mRNAs prior to fertilization is mediated by mRNA binding via the RNA helicase DOZI and the Sm-like factor CITH (Mair et al., 2006, 2010). Upstream open reading frames (uORFs) found on 5\u2032 UTRs of transcripts have been reported to regulate the translation of specific genes (Morris and Geballe, 2000). In P. falciparum, the only uORF described and functionally characterized to date is a 120 codon region upstream of the var2csa (PFL0030c) coding region, a unique variant of the surface antigen PfEMP1 that mediates adhesion to placenta in pregnant women (Amulic et al., 2009). In this case, translation of the uORF modulates repression of var2csa translation. Aside from these examples, the extent to which global and gene-specific translational control operates in P. falciparum during the IDC remains sparse.\n\nSince the P. falciparum genome was fully sequenced (Gardner et al., 2002), several large-scale studies have provided detailed insights into the expression of genes and proteins across the parasite's life cycle. Parallel mass spectrometry-based proteomics and genome-wide expression profiling revealed differences between mRNA abundance and the accumulation of the corresponding protein, supporting the notion that post-transcriptional regulation of gene expression is at play in this parasite (Le Roch et al., 2004; Nirmalan et al., 2004b; Foth et al., 2011). These methods, however, are limited in their ability to measure low abundance proteins and do not capture the underlying relationship between transcriptional activity and translational efficiency. More recently, polysome profiling was used to monitor discrepancies between polysome-associated and steady-state mRNAs in 30% of the P. falciparum blood stage transcriptome (Bunnik et al., 2013); however, this approach does not reveal the precise localization of the ribosomes, and thus can not be used to accurately assess the translational efficiency of a given mRNA (Ingolia, 2014).\n\nHere, we adapted the ribosome profiling technique (Ingolia et al., 2009) to describe the translational dynamics of the P. falciparum asexual blood stage transcriptome. We simultaneously evaluate mRNA abundance, gene structure, ribosome positioning, and translational efficiency for genes expressed through five stages of the IDC. We demonstrate that the data are highly reproducible, and we find that the translational efficiency of the majority of mRNAs expressed follows a narrow distribution, exhibiting a tight coupling between transcription and translation. Only 10% of the genes expressed deviate from this trend and are translationally up- or down-regulated. We found a surprising amount of ribosome density associated with 5\u2032 leaders of transcripts particularly in genes with functions associated with merozoite egress and invasion. Overall, the precision and depth of the dataset presented herein add significantly to our understanding of P. falciparum gene expression by linking transcriptional and translational dynamics throughout the blood stages.\n\n## Results\n\n### Overview of ribosome profiling in P. falciparum asexual blood stages\n\nTo create whole-genome, high-resolution profiles of mRNA abundance and translation during in vivo blood stage development of P. falciparum, we adapted the ribosome profiling technique described by Ingolia et al. (2009). Ribosome profiling is based on the deep sequencing of ribosome protected mRNA fragments obtained by nuclease digestion of polysomes, cycloheximide-arrested ribosomes bound to mRNA. These fragments represent the exact location of the ribosome at the moment the sample was harvested. Five stages representative of the 48-hr IDC of P. falciparum were harvested for both mRNA and polysome isolation; ring, early trophozoite, late trophozoite, schizont stages, and purified merozoites. To assess the reproducibility of the data, we harvested independent biological replicates of each stage. Polysomes were isolated in the presence of the translation elongation inhibitor cycloheximide, then nuclease digested to produce monosomes, and sedimented by centrifugation on a sucrose gradient (Figure 1 and Figure 1\u2014figure supplement 1). To minimize isolation of RNA fragments bound by proteins other than 80S ribosomes, RNA was extracted only from the fractions of the sucrose gradient containing the monosome peak. The resulting \u223c30 nt fragments of RNA, corresponding to ribosome footprints, were processed into strand-specific deep sequencing libraries in parallel with the mRNA samples, fragmented to \u223c30 nt for consistency. Despite the unusually high AT content of the P. falciparum genome, over 92% of all 30 nt sequenced reads, derived from coding sequences (CDSs), mapped uniquely to the genome (Figure 1\u2014source data 1 and Figure 1\u2014figure supplement 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig1-v1.jpg)\n\n**Figure 1.:** (A) Synchronized parasite cultures were maintained in hyperflasks at 5% hematocrit and maximum 15% parasitemia. Cycloheximide-treated cultures containing \u223c1010 parasites were harvested at ring, early trophozoite, late trophozoite and schizont stages (11, 21, 31, and 45 hpi, respectively) for total RNA or polysome isolation. Merozoites were purified through magnetic isolation of late stage schizonts (see \u2018Materials and methods\u2019). Nuclease treated polysomes were fractionated on a sucrose gradient. Ribosome footprints (\u223c30 nt) derived from the monosome peak (dashed red line) or chemically fragmented polyA purified mRNA (\u223c30 nt) were used to build sequencing libraries. mRNA and ribosome footprint samples were processed in parallel to create deep sequencing libraries compatible with the Illumina platform. (B) Sucrose gradient A260 absorbance profile of polysome extracts derived from late trophozoites treated with micrococcal nuclease (green, +MNase) or untreated controls (gray, No treatment). Red arrow indicates the 80S monosome peak collected for ribosome footprint library preparation.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Sucrose gradient A260 absorbance profiles of polysome extracts treated with micrococcal nuclease (green, +MNase) and untreated controls (gray, No treatment). Red dotted line indicates monosome peak harvested for ribosome footprint library generation.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Single nucleotide sliding windows ranging from 10 to 50 nt were used to generate in silico libraries of the P. falciparum W2 SNP corrected genome. These were uniquely aligned, allowing no mismatches, to either the whole genome (gray, WG) or the coding sequences (blue, CDS) using Bowtie (Mortazavi et al., 2008) and the percentage of aligned reads were calculated for each window size. The analysis was repeated using sliding windows generated from the coding genome only (red, CDS to WG) for a more representative mappability estimate of an RNA-seq data set. Read sizes of \u226520 nt asymptotically approach maximum mappability percentages.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** mRNA abundance measurements (A) and ribosome footprint densities (B) in terms of rpkM in two fully independent biological replicates of the late trophozoite timepoint. Genes with at least \u226532 total mRNA reads counted (rM) are highly reproducible (r \u2265 0.9) across replicas (A and B red dots, and Figure D) whereas low read counts have a negative effect on rpkM reproducibility (A and B blue dots, and C). (C) Genes were binned based on their rM in replica 1. In each bin Pearson correlations of rpkM values of replica 1 and replica 2 were calculated. At 32 rM, r values were consistently above 0.9 indicating that rpkMs calculated for genes with \u226532 rM are highly reproducible across replicates, and this is independent of the number of genes in the bin. r = Pearson correlation coefficient.\n\nTo quantitatively obtain mRNA abundance and ribosome footprint density measures, we calculated rpkMs (reads per kilobase of exon model per million reads mapped, as in Mortazavi et al. (2008) for each gene. We established the minimum number of mRNA reads sequenced per coding region (rM; reads per million reads mapped) required to confidently include genes in downstream analyses, to be \u2265 32 rM (\u2018Materials and methods\u2019, Figure 1\u2014figure supplement 3). Using this conservative threshold, 3605 genes qualified for further analysis. Between biological replicates, Pearson correlation values were consistently high, ranging from r = 0.94 to r = 0.99 (Figure 2A), highlighting the quality and reproducibility of our data. In addition, we compared the RNA-seq transcriptome of the five stages sampled to our previously published transcriptome data set, originally generated using long oligo microarrays (Bozdech et al., 2003). The RNA-Seq transcription profiles of the set of genes shared by the two data sets (n = 1829) were highly correlated (average r = 0.7) to the corresponding 11, 21, 31, 45, and 2 hr post merozoite invasion time points of the microarray data set, despite the use of different methodologies (microarray vs RNA-seq) and the use of different P. falciparum strains (HB3 vs W2, respectively). Because of the higher sensitivity of RNA-seq, we were able to accommodate an additional 743 genes into the cascade-like transcriptome extending it to a total of 3110 genes (Figure 2B, Figure 2\u2014source data 1). The remaining 495 genes in our RNA-seq data set lacked sufficient variation over the five time points for inclusion within the phaseogram. These genes, referred to as non-phasic genes, are nevertheless included in all analyses.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig2-v1.jpg)\n\n**Figure 2.:** (A) Reproducibility among biological replicates. Two fully independent biological replicas of each stage were sampled for RNA-seq (left panels, blue) and ribosome profiling (right panels, green). Each dot represents the log2 rpkM measured for each gene in each stage. r = Pearson correlation coefficient. (B) Gene expression and translation are tightly coupled during the P. falciparum IDC. Phaseograms of mRNA (left heatmap) and ribosome footprint density (right heatmap) as a function of development for 3110 phasic and 495 non-phasic genes organized in the same order in the left and right heatmap. Data represent mean centered log2 mRNA and ribosome footprint rpkM values for each gene (rows) in each sampled stage (columns). R = rings, ET = early trophozoites, LT = late trophozoites, S = schizonts, M = merozoites. (C) log2 rpkM of mRNA abundance vs ribosome footprint density for all genes expressed (rM \u2265 32) across the IDC. Pearson correlation coefficients r \u2265 85. n = total number of genes.\n\n### Gene expression and translation are tightly coupled during the P. falciparum IDC\n\nWhile RNA-Seq reveals the abundance and architecture of individual mRNAs, ribosome profiling provides a complementary and quantitative measure of mRNA translation. Ribosome occupancy along the CDS results in a profile that indicates the timing and magnitude of translation of a given mRNA, thus quantitatively delineating regions of each mRNA molecule that are actually bound by 80S ribosomes (Ingolia et al., 2009). To inspect translation on a genome-wide scale, ribosome density values of each gene expressed in the data set were organized in the same order as the transcriptome. The translational profile of each gene displayed a cascade-like quality strikingly similar to the transcriptome (Figure 2B). Much like mRNA abundance, translation of phasic genes reaches a single maximum and a single minimum during the IDC. To determine the exact level of correlation between transcription and translation, we directly compared mRNA and ribosome footprint density measurements (Figure 2C). In general, translation is tightly correlated with transcription for all phasic and non-phasic genes in rings (r = 0.85), early trophozoites (r = 0.93), late trophozoites (r = 0.91), schizonts (r = 0.89), and purified merozoites (r = 0.86). This indicates that when an mRNA is detected in one stage it is associated proportionally with ribosomes within the same stage. An example pair of genes is shown in Figure 3A. Here, mRNA abundance profiles of eukaryotic translation initiation factor eIF2 gamma subunit (PF14_0104) and the conserved protein PF14_0105, show that peak mRNA abundance for these two genes occurs at two different stages, early and late, respectively. Examination of ribosome occupancy of both genes reveals a ribosome density accumulation profile within the coding sequence that mirrors their respective mRNA profiles. As for the majority of genes, ribosome footprint density and mRNA abundance for these two genes are highly correlated (r = 0.98 and 0.93 for PF14_0104 and PF14_0105, respectively), indicating that mRNA translation occurs proportionally during the same stages at which these genes are transcribed (Figure 3B; Supplementary file 1). Globally, 77% of genes expressed in at least three stages of the IDC display high Pearson correlation (r \u2265 0.7) between mRNA abundance and translation (Figure 3\u2014figure supplement 1). Thus, our genome-wide analysis of translation establishes that for the majority of genes expressed during the IDC, transcription and translation occur proportionally.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig3-v1.jpg)\n\n**Figure 3.:** (A) Ribosome footprint (green) and mRNA (blue) coverage profiles of two neighbor genes, the eIF2 gamma subunit (PF14_0104) and the conserved protein PF14_0105 (CDS, white boxes; HMM-defined UTRs, black lines) in rings (R), early trophozoites (ET), late trophozoites (LT), schizonts (S), and merozoites (M). Mappability = mappability score at that position; range 0 (white) to 30 (black). rM = coverage (reads per million reads mapped). (B) mRNA and ribosome footprint density of the genes in (A) correlate during development. r = Pearson correlation coefficient between ribosome footprint density and mRNA abundance of each gene.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Pearson correlation of mRNA abundance and ribosome footprint density of every gene expressed in at least three stages (2412 genes).\n\n### Ribosome profiling reveals instances of translational control of gene expression\n\nRibosome profiling allows the monitoring of translation rates through the simultaneous quantitative measure of mRNA abundance and ribosome density on mRNAs. The ratio of the footprint rpkM to the mRNA rpkM for any given gene represents its relative translational efficiency (TE) (Ingolia et al., 2009). To assess the dynamics of translational control and detect variations in control within and between developmental stages, we calculated the relative TE of all expressed genes in our data set (Figure 4A). The shape and the range of TE distributions obtained for each stage sampled is comparable to those seen in other eukaryotes (Ingolia et al., 2009; Dunn et al., 2013). Absolute mean translational efficiencies in all stages (log2TE \u00b5Rings = \u22120.43, log2TE \u00b5E.trophs. = \u22120.56, log2TE \u00b5L.trophs. = \u22120.31, log2TE \u00b5Schizonts = \u22120.16 and log2TE \u00b5Merozoites = \u22120.68) had a maximum difference of 1.47-fold observed between early trophozoites and schizonts. Translational efficiencies display a roughly 100-fold range in absolute values in each of the stages with the exception of the ring and merozoite stages, which exhibit more extreme values. In these stages, the distribution of absolute TE values displays an approximately fourfold larger spread than in early trophozoites, late trophozoites, or schizonts (Figure 4A, Figure 2\u2014source data 1). In rings the gene with the largest TE is the merozoite surface protein 9 (PFL1385c, log2TE = 4.1) and the gene with the lowest TE is the FIKK family serine/threonine protein kinase (PF14_0734, log2TE = \u22125.1). In merozoites the largest and lowest TE values correspond to the serine repeat antigen 5 (SERA5, PFB0340c, log2TE = 4.0) and the alpha adenylyl cyclase (PF14_0788a-c, log2TE = \u22124.7), respectively.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig4-v1.jpg)\n\n**Figure 4.:** (A) Translational efficiency distributions in each stage. Rings and merozoites have most extreme TE values; \u00b1 2 SD above (yellow bars) and below (blue bars) the mean. TE values of translationally up-regulated merozoite surface protein (MSP6) and the eukaryotic initiation factor 2 alpha kinase 1 (IK1) (blue arrowhead) across the time course remain high and low, respectively. \u03bc = mean log2TE, n = total number of genes. (B) mRNA abundance and translational efficiency heatmap of translationally up- and down-regulated genes (upper panel and lower panel, respectively). Note TE is independent of changes in mRNA abundance for all genes including MSP6 and IK1 (C). R = rings, ET = early trophozoites, LT = late trophozoites, S = schizonts, M = merozoites. n = number of genes, \u03bc = mean, SD = standard deviation.\n\nTo determine the contribution of translational efficiency to the dynamic range of gene expression, we examined the genes lying at the extremes of the TE distribution. For the purpose of this analysis, genes with a translational efficiency of two standard deviations above or below the mean in any of the stages were considered translationally up- or down-regulated, respectively. A total of 301 genes, 8.3% of the transcriptome, are translationally regulated by this metric, with 124 genes translationally down-regulated and 177 genes translationally up-regulated (Figure 4B, Figure 2\u2014source data 1). The timing of maximum mRNA expression does not influence TE for either of these two groups. Translational efficiencies remain high for the translationally up-regulated and low for the translationally down-regulated genes in all the stages at which they are expressed, regardless of the stage of peak mRNA abundance, suggesting that translational efficiency is largely, but not completely, programmed by the mRNA sequence itself, rather than global factors. For example, translational efficiency of the merozoite surface protein 6 (MSP6, PF10_0346) remains high (log2TE \u2265 2) across all stages irrespective of variations in its mRNA abundance. In contrast TE values for the eukaryotic initiation factor 2alpha kinase 1 (IK1, PF14_0423) are among the lowest measured despite high mRNA abundance across all stages (Figure 4C).\n\nAn examination of the 124 translationally down-regulated genes yielded some expected, and in some cases, unexpected findings. As would be expected, two pseudogenes, the ring-infected erythrocyte surface antigen 2 (RESA-2, PF11_0512) and reticulocyte binding protein homologue 3 (PfRh3, PFL2520w), represent a clear example of low translational efficiency. The PfRh3 pseudogene ribosome profile shows that translation of the 5\u2032 end of this transcript occurs up until the encounter of several in-frame stop codons, causing the reduction in ribosome density from this point on (Figure 5A, Figure 5\u2014figure supplement 1). This suggests that a truncated version of the PfRh3 protein is being produced in the W2 strain studied here. Evidence for peptides corresponding to the 5\u2032 end of PfRh3 has been found in gametocytes and sporozoites (however not during the asexual stages) using mass spectrometry (Florens et al., 2002; Lasonder et al., 2002). We note that low levels of ribosomes can still be detected along the full length of this transcript in schizonts and merozoites. Whether these footprints derive from a low level of stop-codon read-through or accumulate via another unknown mechanism remains to be determined.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig5-v1.jpg)\n\n**Figure 5.:** (A) Ribosome footprint (green) and mRNA (blue) profiles of the PfRh3 pseudogene (PFL2520w) in merozoites (M). In the detail the bars above the gene model indicate AUG, stop, and any other codon, in green, red, and gray, respectively. Boxes indicate the mapping location of peptides identified by mass spectrometry in gametocytes and sporozoites (Florens et al., 2002; Lasonder et al., 2002). Reduction of ribosome footprint coverage occurs upon encounter of consecutive stop codons (extended red lines). (B) eIF2\u03b1 kinase (PF14_0423) gene in rings (R) showing ribosome footprint accumulation on the 5\u2032 leader, 3\u2032 UTR, and low translational efficiency of the CDS. (CDS, white boxes; HMM-defined UTRs, black lines. Mappability = mappability score at that position; range 0 (white) to 30 (black). rM = coverage (reads per million reads mapped).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Ribosome footprint (green) and mRNA (blue) profiles of the PfRh3 pseudogene (PFL2520w) in rings (R), early trophozoites (ET), late trophozoites (LT), schizonts (S), and merozoites (M). (A) Translation of PfRh3 occurs until ribosomes dissociate upon the encounter of several consecutive in-frame stop codons (visible in B). (B) The vertical bars above the gene model indicate AUG, stop, and any other codon, in green, red, and gray, respectively. Boxes indicate the mapping location of peptides identified by mass spectrometry in gametocytes and sporozoites (Florens et al., 2002; Lasonder et al., 2002).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Ribosome footprint (green) and mRNA (blue) profiles of the ring-infected erythrocyte surface antigen 2, RESA2 pseudogene (PF11_0512) in rings (R) and merozoites (M). Both, the annotated isoform from PlasmoDB version 7.1 and the gene model for the alternate isoform inferred using ribosome profiling and W2 genomic DNA sequencing data from this study is depicted (CDS, white boxes; HMM-defined UTRs, black lines). The red star indicates a homopolymeric tract in which a single base deletion causes a premature stop codon (red triangle), which coincides with the site of ribosome drop off. (B) Ribosome footprint and mRNA profiles of erythrocyte vesicle protein 1, EVP1 (PFD0495c). This gene is transcribed in all stages yet translational efficiencies are relatively low, as evidenced by a depletion of ribosomes on the CDS of the gene particularly in early trophozoites (log2TE = \u22122.6, \u22122.9, \u22121.0, \u22122.1, \u22121.4 in rings, early trophozoites, late trophozoites, schizonts, and merozoites, respectively). (CDS, white boxes; HMM-defined UTRs, black lines. Mappability = mappability score at that position; range 0 (white) to 30 (black). rM = coverage (reads per million reads mapped).\n\nRing-infected erythrocyte surface antigen 2, RESA2 (PF11_0512) was first described as a pseudogene based on the presence of an internal stop codon (Cappai et al., 1992). Since then, transcription of this gene has been demonstrated both in vivo (Vazeux et al., 1993) and in vitro (Bozdech et al., 2003). RESA-2 is transcribed but poorly translated in rings, early trophozoites and merozoites (log2TE \u22123.2, \u22122.7, \u22122.9, respectively). Accordingly, the ribosome profile of this gene in merozoites shows a general depletion of ribosomes along the CDS (Figure 5\u2014figure supplement 2). In rings, ribosome density diminishes at the second exon. To validate the RESA2 gene model, we used genomic DNA sequencing data derived from the P. falciparum W2 strain used in this study. We found that 69% (n = 151) of reads mapping to this locus support a single base deletion that creates a premature stop codon exactly at the site of ribosome footprint drop-off (Supplementary file 2). These data suggest that RESA2 is transcribed and actually translated into a shorter protein product of 461 amino acids. Whether or not the protein product is functional or undergoes post-translational degradation remains to be determined.\n\nIn addition to expected instances of translational regulation, our data permit the discovery of previously uncharacterized translational regulation, especially at the extremes of the TE distributions. One of the most notable examples of translational silencing is the eIF2\u03b1 kinase IK1 (PF14_0423) for which ribosome footprints accumulate at the 5\u2032 leader and 3\u2032 UTR but not on the CDS, resulting in an extremely low translational efficiency (log2TE = \u22123.6) despite relatively high transcript abundance across all stages (Figure 5B). The mechanism by which this gene is maintained in a translationally down-regulated state is unknown. Another example is the erythrocyte vesicle protein 1 (EVP1, PFD0495c) for which abundant transcript levels can be detected across all stages, with peak mRNA abundance occurring in rings and schizonts (Figure 5\u2014figure supplement 2). Protein levels, however, have been shown to be undetectable (Tamez et al., 2008). Here, we find that translational efficiencies of this gene were low across all stages and lowest in rings and early trophozoites (log2TE = \u22122.6 and \u22122.9, respectively) demonstrating that post-transcriptional regulation at the level of translation is, at least in part, responsible for its scarcity as a protein.\n\nThus, our ribosome profiling data set highlights instances of translational control of genes that may not be detected by proteomic methods. Indeed a search for mass spectrometric data showed no evidence for \u223c70% of genes in this category (Aurrecoechea et al., 2009). Including the aforementioned examples, our data set describes a total 124 translationally down-regulated genes (listed in Figure 2\u2014source data 1) for which translational efficiency values lie at the lower extremes of the distribution.\n\nProtein products of translationally up-regulated genes are likely to be abundant and readily detected using mass spectrometry. Previous proteomic studies show protein evidence in the blood stages for almost all (171 of 177) well-translated genes identified here (Aurrecoechea et al., 2009; Pease et al., 2013). Mass spectrometric evidence for the remaining six genes is either absent (PFL0245w, PFL2510w, PF11_0204) or has only been found in sporozoites (PFE1615c, MAL7P1.300, PF13_0069a). Despite the lack of proteomic data, our data indicate that these genes are both transcribed and translated during the blood stages of the parasite. Whether post-translational control points exist for these proteins is unknown.\n\nAmong the top ten most highly translated genes are proteins involved in merozoite egress and invasion MSP3, 6, 7, and 9 (merozoite surface proteins PF10_0345, PF10_0346, PF13_0197, and PFL1385c), serine repeat antigen 5 (SERA5, PFB0340c), and RAP1, 2, and 3 (PF14_0102, PFE0080c, and PFE0075c, respectively) (Figure 2\u2014source data 1). Interestingly, 73 (41%) of all translationally up-regulated genes can be assigned to the repertoire of canonical functions for merozoite egress and invasion described to date (Yeoh et al., 2007; Blackman, 2008; Hu et al., 2010; Farrow et al., 2011). Strikingly, for all genes in this set, maximum mRNA abundance is found during the late stages of the IDC (69 schizont and 4 merozoite stage mRNAs) yet for the majority (50, 70%) peak translational efficiency occurs in rings. Consistent with this, peptides for most of these merozoite function proteins (58 of 73) have been detected in rings (Oehring et al., 2012; Pease et al., 2013). This mode of translational regulation whereby late stage transcripts are highly translated in rings was not exclusively limited to genes related to merozoite egress and invasion. We found evidence for an additional 14 genes with this profile, including, aquaglyceroporin (PF11_0338, log2TE = 3.8), tubulin beta chain (PF10_0084, log2TE = 1.8), and early transcribed membrane protein 2 (PFB0120w, log2TE = 2.5).\n\nTaken together these data demonstrate that transcription and translation are tightly correlated for the majority of genes expressed during the asexual life cycle of P. falciparum with few exceptions. These apply to a small subset of translationally down- and up-regulated genes for which translational efficiencies appear to be inherent properties of the mRNA, independent of changes in mRNA abundance. Genes in this category, especially those that exhibit high translational efficiencies, are enriched with functions associated with merozoite egress and invasion during the transition from late stages into rings.\n\n### Ribosome occupancy of 5\u2032 leaders is commonly found on genes expressed during the IDC\n\nRibosome profiling provides position specific information along each transcript allowing the detection of changes in ribosome distribution on the mRNA and their relationship to translational efficiency. To look for ribosome occupancy features beyond the CDS of transcripts, we first took advantage of the deep coverage and strand specificity of our RNA-seq data to identify 5\u2032 leaders and 3\u2032 UTRs of the P. falciparum transcriptome. We constructed a hidden Markov model (HMM) to automatically delineate the boundaries of both 5\u2032 leaders and 3\u2032 UTRs for known gene models (see \u2018Materials and methods\u2019). Within the limits imposed by our data, we were able to describe 5\u2032 mRNA leaders and/or 3\u2032 UTRs for 3569 genes in at least one of the stages (Figure 6\u2014figure supplement 1, Figure 2\u2014source data 1). 5\u2032 leaders are on average longer than 3\u2032 UTRs in each of the stages and median lengths across stages vary to a larger degree for 5\u2032 leaders (from 607 to 1040 nt) than for 3\u2032 UTRs (518\u2013622 nt). The longest 5\u2032 mRNA leader was measured in late trophozoites (8229 nt) for the Ap2 transcription factor, PF11_0404, and the longest 3\u2032 UTR stretched 4773 nt for 60S ribosomal protein L7-3, PF14_0231, in rings. An example pair of genes with mapped 5\u2032 leaders and 3\u2032 UTRs is shown in Figure 6. Here, our HMM predicts a 636 nt and a 781 nt 5\u2032 leader and a 468 nt and 423 nt 3\u2032 UTR for the Myb2 transcription factor (PF10_0327) and the bromodomain protein (PF10_0328), respectively. These genes, encoded on opposite strands, share a 1536-nt intergenic sequence; however, the span between the region delimited by their 5\u2032 leader sequence is only 120 nt and presumably harbors their respective promoters.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig6-v1.jpg)\n\n**Figure 6.:** 5\u2032 leaders and 3\u2032 UTRs of the gene pair Myb2 (PF10_0327) and bromodomain protein (PF10_0328) were defined using the HMM designed (see \u2018Materials and methods\u2019). The sizes of 5\u2032 leaders and 3\u2032 UTRs of these genes in the schizont stage are indicated. The intergenic region is 1536 nt and the spanning distance separating the 5\u2032 leaders is 120 nt. Mappability = mappability score at that position; range 0 (white) to 30 (black). rM = coverage (reads per million reads mapped).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** 5\u2032 leader (A) and 3\u2032 UTR (B) length distribution and their statistics (C) per stage.\n\nNext, using mRNA boundaries derived from our data, we analyzed ribosome distribution along each transcript during life cycle progression. More than 80% of the ribosome footprints in rings, early trophozoites, late trophozoites, and schizonts, were mapped to CDS regions of the genome, except in merozoites, where only 68% were mapped to the CDS (Figure 7A). On average less than 1% of all reads obtained were mapped to 3\u2032 UTRs in each stage, and most transcripts had no observed footprints past the stop codon. In contrast, footprints were far more common in 5\u2032 leaders (9.1%, 4.8%, 7.5%, and 4.8% in rings, early trophozoites, late trophozoites, and schizonts, respectively) particularly in merozoites (23%). Footprint enrichment is specific to 5\u2032 leaders and not due to non-specific background since this would result in an increase of footprints mapping evenly along the length of the transcript, including the 3\u2032 UTR, and not just the 5\u2032 leader. Furthermore, these footprints most likely represent ribosomes because they derive from the 80S monosome fraction of the sucrose gradient, and their footprint read length distributions are equal to those of CDS mapping footprints, whereas they are significantly divergent from rRNA or tRNA read length distributions (Figure 7\u2014figure supplement 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig7-v1.jpg)\n\n**Figure 7.:** (A) Proportion of mRNA or ribosome footprint reads mapping to CDS, to HMM-defined 5\u2032 leaders and 3\u2032 UTRs, antisense to annotated coding genes or to other regions of the genome such as mitochondria, plastid, tRNA, rRNA, ncRNA, and 5\u2032 leader and 3\u2032 UTR regions not defined by the HMM. (B) Proportion of ribosome footprints mapping inside or outside predicted uORFs in the HMM-defined 5\u2032 leaders. (C) Ribosome footprint (green) and mRNA (blue) profiles of the EBA-175 (MAL7P1.176) gene in rings (R) showing ribosome footprint accumulation on the 5\u2032 leader. In the detail, the bars above the gene model indicate AUG, stop, and any other codon, in green, red, and gray, respectively and in all three possible frames. Gray bars indicate the 9 uORFs present in the 5\u2032 leader, starting with an AUG (green line) and ending with a stop codon (red line). Black bar inside CDS indicates a deletion specific to the W2 strain used in this study. CDS, white boxes; HMM-defined UTRs, black lines. Mappability = mappability score at that position; range 0 (white) to 30 (black). rM = coverage (reads per million reads mapped).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Ribosome footprint read length distributions for reads mapping either to CDSs, 5\u2032 leaders, 3\u2032 UTRs, antisense, rRNAs or tRNAs are plotted. Read lengths of rRNA and tRNA mapping footprints are significantly different than those mapping the 5\u2032 leader, the CDS, or the 3\u2032 UTR of transcripts in all stages. KS = Kolmogorov\u2013Smirnov test. D = KS test statistic. R = rings, ET = early trophozoites, LT = late trophozoites, S = schizonts, M = merozoites.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** The proportion of ribosome footprints mapping inside predicted uORFs was calculated for each gene expressed in each stage. The median of each of these distributions is \u223c0.5.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig7-figsupp3-v1.jpg)\n\n**Figure 7\u2014figure supplement 3.:** Translational efficiency (log2TE) for all genes expressed in each stage is plotted against the proportion of reads mapping within uORFs, the number of predicted uORFs, or the length of predicted uORFs in the 5\u2032 leader. No direct relationship between these parameters can be observed.\n\n![Figure 7\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig7-figsupp4-v1.jpg)\n\n**Figure 7\u2014figure supplement 4.:** (A) Ring stage mRNA (blue) and ribosome footprint (green) profiles of VAR2CSA (PFL0030c) are shown. There is virtually no ribosome density on transcript CDS (log2TERings = \u22124.2). Ribosomes do accumulate on the previously described (Amulic et al., 2009) 360 nt uORF (white box). This region is depicted in more detail in the panel below where the amino acids, AUGs and stop codons of each of the three reading frames are denoted with gray, green, and red bars, respectively. Note that ribosomes start accumulating upstream of the previously described uORF. Mappability at the 3\u2032 end of this antigenic variation gene is poor and therefore no mRNA read coverage can be detected here. (B) Ring stage mRNA (blue) and ribosome footprint (green) profiles of PFE1550w (unknown function) are shown. Translational efficiency of the CDS is log2TERings = \u22123.6 in rings. 90% of ribosome footprints that map to the 5\u2032 leader of this gene accumulate on one of the six predicted uORFs (detailed figure below). The predicted uORF is 168 nt (56 aa). Mappability = mappability score at that position; range 0 (white) to 30 (black). rM = coverage (reads per million reads mapped).\n\n![Figure 7\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig7-figsupp5-v1.jpg)\n\n**Figure 7\u2014figure supplement 5.:** Ribosome density on the 5\u2032 leader (log25\u2032RD) for all genes expressed in each stage is plotted against the proportion of reads mapping within uORFs, the number of predicted uORFs, or the length of predicted uORFs in the 5\u2032 leader. No direct relationship between these parameters can be observed.\n\n![Figure 7\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig7-figsupp6-v1.jpg)\n\n**Figure 7\u2014figure supplement 6.:** Ring stage mRNA (blue) and ribosome footprint (green) profiles of (A) aquaglyceroporin (PF11_0338) and (B) PFC0486c (unknown function) are shown. Both genes display high ribosome density on their 5\u2019 leaders and these are devoid of AUGs. Mappability = mappability score at that position; range 0 (white) to 30 (black). rM = coverage (reads per million reads mapped).\n\nUpstream open reading frames are a major source for 5\u2032 leader ribosome density found from yeast to humans (Ingolia et al., 2009; Brar et al., 2012), and these have been shown to play a role in translational regulation of the downstream ORF in a few well-studied examples (Morris and Geballe, 2000). In P. falciparum, ribosomes have been suggested to accumulate on 5\u2032 leaders of genes displaying a delay in translation presumably due to long uORFs (Bunnik et al., 2013).\n\nWe defined 36,086 possible uORF regions in the 5\u2032 leaders of genes expressed during the P. falciparum IDC using a liberal definition that includes any stretch of at least two amino acids, starting with an AUG codon (Figure 7\u2014source data 1). Regardless of stage, half of the total ribosome footprint coverage in 5\u2032 leaders, in aggregate, or on a gene-by-gene basis did not overlap with these predicted uORFs (Figure 7B, Figure 7\u2014figure supplement 2). We could find no significant correlation between the number of uORFs per gene, the uORF lengths, or the degree to which ribosome density was enriched in uORFs with translational efficiency (Figure 7\u2014figure supplement 3). For example, erythrocyte binding antigen-175 (EBA-175, MAL7P1.176) is well translated in rings (log2TE = 1.4) and displays a large amount of 5\u2032 leader ribosome occupancy. Half (49%) of the reads map within the nine predicted uORFs on the 5\u2032 leader of this gene, the other half maps outside these uORFs (Figure 7C). Using this liberal definition of an uORF, the data do not support an association between ribosome occupancy in these regions, nor does it support an association between the presence of these regions and translational efficiency.\n\nNonetheless, there exist at least two clear exceptions. First, we were able to validate translation of the reported uORF present in the 5\u2032 leader sequence of the var2csa mRNA which is expressed only in rings (Amulic et al., 2009). The majority of ribosome footprint density localizes to this uORF, and to a second one just upstream, while the var2csa coding sequence is largely devoid of footprints (log2TERings = \u22124.2, Figure 7\u2014figure supplement 4), consistent with its translational repression during growth in the absence of plancental tissue. Second, another striking example of uORF translation was found on PFE1550w (unknown function) for which the ratio of uORF to total 5\u2032 leader mapping reads is 0.9 (Figure 7\u2014figure supplement 4). Indeed, ribosome footprint density is concentrated on one of the 6 uORFs predicted in the 5\u2032 leader of this gene, 56 amino acids long. This gene is also translationally down-regulated in all stages (log2TE = \u22122.7 on average). These two genes represent exceptional cases for which uORF translation negatively correlates with translation of the downstream ORF.\n\nAside from these two exceptions, for the vast majority of genes, ribosome occupancy appears spread along 5\u2032 leaders and not preferentially concentrated within possible uORFs. For this reason, we calculated 5\u2032 leader ribosome density (5\u2032RD) for each gene expressed during the IDC, defined as upstream ribosome occupancy normalized for mRNA expression level and size of the leader sequence (5\u2032 leader ribosome footprint rpkM/5\u2032 leader mRNA rpkM) (Figure 2\u2014source data 1). No positive correlation exists between the number of uORFs per gene, the uORF lengths, or the degree to which ribosome density is enriched in uORFs and 5\u2032RD, reinforcing the notion that uORFs are not a requisite for ribosome association to 5\u2032 leaders (Figure 7\u2014figure supplement 5). In fact 5\u2032 ribosome density can be found on transcripts with 5\u2032 leaders completely devoid of AUGs, and thus, without uORFs by definition, such as the highly translated aquaglyceroporin (log2TE = 3.8 and log25\u2019RD = 2.9 in rings), and PFC0486c (unknown function, log2TE = 1.6 and log25\u2032RD = 1.1 in rings) (Figure 7\u2014figure supplement 6).\n\nOverall, rings and merozoite stage parasites were found to express transcripts with the highest 5\u2032RD (mean log25\u2032RD \u22120.03, and 0.11, respectively) relative to early trophozoites, late trophozoites, and schizonts (mean log25\u2032RD \u22121.11, \u22120.26, \u22120.83), where the range of 5\u2032RD values is also narrower (Figure 8A). Interestingly, among genes at the extremes of the 5\u2032RD distributions (mean \u00b1 1 SD), we also found many of our identified translationally up- and down-regulated transcripts (66% and 40%, respectively). On average, 5\u2032RD was enriched on translationally up-regulated transcripts (mean log25\u2032RD = 0.83) and depleted for translationally down-regulated transcripts in all stages (mean log25\u2032RD = \u22121.11), suggesting the possibility that 5\u2032RD is a byproduct of translational efficiency itself (Figure 8B).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig8-v1.jpg)\n\n**Figure 8.:** (A) 5\u2032 RD distributions in each stage. Transcripts in rings and merozoites have on average higher 5\u2032 RD values; \u00b1 2 SD values lie outside gray shade. \u03bc = mean log25\u2032RD, n = total number of genes. (B) 5\u2032RD values of the translationally up-regulated set of genes (yellow boxes) are relatively higher (average log25\u2032RD R = 1.73, ET = \u22120.26, LT = 0.78, S = 0.30, M = 1.16.) than the rest (white boxes) or the set of down-regulated (blue buxes) genes. (C) 5\u2032RD weakly correlates with translational efficiency. The translationally up-regulated gene set (yellow circles) is associated with high 5\u2032RD, particularly in rings. The translationally up-regulated genes merozoite surface protein (MSP6), aquaglyceroporin (AQP), serine repeat antigen (SERA5), and the reticulocyte binding protein homologue 3 (PfRh3) are pointed out. r = Pearson correlation coefficient.\n\nIn order to determine whether a direct relationship between 5\u2032RD and translational efficiency of the downstream ORF exists, we compared these values for each gene. 5\u2032RD positively correlates, albeit moderately, with translational efficiency in all stages, particularly in rings and merozoites (r = 0.51 and 0.49, respectively). We focused on the subset of genes with highest and lowest 5\u2032RD values (mean \u00b1 2 SD) and found that only a fraction of the translationally up- and down-regulated genes overlap with this category of extreme 5\u2032RDs in each stage (Figure 8C). The largest overlap occurred in rings where the highest 5\u2032RD values were found in 43% (31 genes) of the translationally up-regulated genes, including MSP6, AQP, and SERA5. These results indicate that while in general a correspondence between 5\u2032RD and translational efficiency exists, one is not necessarily predictive of the other and exceptions apply. This is the case, for example, of the translationally down-regulated transcript of the pseudogene PfRh3, which in rings has the second highest 5\u2032RD value (log25\u2032RD = 5.1).\n\nIn summary, our data establish ribosome accumulation on 5\u2032 leaders as a common feature of transcripts expressed during the IDC. Ribosome density is not restricted to predicted uORFs present within these regions and, with few exceptions, the uORF number, length, or coverage level, is not a requirement for 5\u2032 ribosome density and has no measurable effects on the translation of the downstream ORF. Even though 5\u2032RD is more commonly found on 5\u2032 leaders of highly translated transcripts, this is not a universal trend since only a moderate correlation exists between 5\u2032RD and the translational efficiency of the downstream ORF.\n\n### 3\u2032 UTR ribosome occupancy is rare\n\nWhile our data showed 3\u2032 UTRs to be relatively depleted of ribosomes, we searched for rare cases of high 3\u2032 UTR ribosome density, possibly arising from stop codon read-through, alternative stop codon usage, or re-initiation of downstream ORFs (Dunn et al., 2013; Guydosh and Green, 2014). We systematically searched for transcripts for which coverage, in a sliding window of 30 nt, was greater in the 3\u2032 UTR than the CDS, and found 19 genes meeting this criterion. These genes could be qualitatively divided into two categories: 14 with putative stop codon read-through and/or alternate stop codon usage and 5 genes for which the origin of the 3\u2032 UTR density is unclear (listed in Figure 9\u2014source data 1). An example of stop codon read-through is the conserved plasmodium protein (PF13_0160), shown in Figure 9A. Ribosomes not only extend beyond the annotated stop codon of this transcript but also skip subsequent in-frame stop codons present on the predicted 644 nt 3\u2032 UTR. Interestingly, ribosome footprints accumulate in a single large peak approximately 130 nt downstream of the annotated stop codon. On the 1290 nt 3\u2032 UTR of the sodium-dependent phosphate transporter (MAL13P1.206), two large peaks of ribosome footprint density, one approximately 560 nt and the other 860 nt from the stop codon, can be observed (Figure 9B). The origin of these footprints is unclear, and it is possible that these are the product of nuclease protection by RNA-binding proteins that co-sediment with the 80S monosome. To confirm that 3\u2032 UTR mapping reads are derived from ribosome footprints, we compared their cumulative read length distributions against a typical CDS footprint read length distribution (Figure 9\u2014figure supplement 1). For the 16 of the 19 genes we observed no significant difference in footprint size distributions localized to the CDS compared with the 3\u2032 UTR. For the remaining three genes, the sodium-dependent phosphate transporter (MAL13P1.206), the acyl-Coa synthetase (PFD0085c), and the conserved plasmodium protein (PF13_0160), 3\u2032 UTR footprint size distributions were divergent from those on the CDS, implying that footprints found on these genes' 3\u2032 UTRs may be produced by nuclease protection of these regions by factors other than ribosomes that co-sediment with 80S ribosomes.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig9-v1.jpg)\n\n**Figure 9.:** (A) Late trophozoite stage mRNA (blue) and ribosome footprint (green) profiles of the conserved plasmodium protein, PF13_0160. Ribosomes can be detected up to \u223c130 nt beyond the stop codon on the 3\u2032 UTR and accumulate in a single large peak. Red lines indicate in-frame stop codons on the 3\u2032 UTR. (B) Two large peaks of ribosome footprint density can be detected 560 nt and 860 nt downstream from the stop codon in the 3\u2032 UTR of the sodium-dependent phosphate transporter, MAL13P1.206.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig9-figsupp1-v1.jpg)\n\n**Figure 9\u2014figure supplement 1.:** Cummulative read length distributions of all reads mapping to the 3\u2032 UTR of the 19 genes with 3\u2032 ribosome density identified compared to the read length distributions of reads mapping to all CDSs in the late trophozoite stage (black line). Footprint length distributions for MAL13P1.206, PF13_0160, and PFD0085c are least similar to the ribosome footprints that map to the CDS.\n\n### Antisense detection\n\nAntisense transcription plays an important role in gene regulation from bacteria to humans, and while its role is increasingly studied in these organisms (Faghihi and Wahlestedt, 2009), less is known about its relevance in P. falciparum. Previous serial analysis of gene expression (SAGE) (Patankar et al., 2001), nuclear run-on experiments (Militello et al., 2005), and more recently antisense splicing events detected by RNA-seq (L\u00f3pez-Barrag\u00e1n et al., 2011; Sorber et al., 2011), suggest that antisense RNAs are synthesized by RNA pol II and may constitute up to \u223c12% of the erythrocytic-stage steady-state RNA (Gunasekera et al., 2004), yet their presence and biological role, if any, remains unclear. A more recent study found no correlation between natural antisense transcript levels and protein abundance (Siegel et al., 2014).\n\nThe 30 nt fragmentation and RNA-ligase-based library preparation method employed here affords exquisite strand specificity by minimizing artifacts associated with random priming during reverse transcription. As evidence of this specificity, the highest expressed gene in our data set, histone h2a (PFF0860c), yielded a total of 765,510 reads on the sense strand, and only two reads on the antisense strand, corresponding to a sense:antisense ratio greater than 105. Furthermore, our HMM mapping of 5\u2032 leaders and 3\u2032 UTRs facilitates the differentiation between independently transcribed antisense RNA and transcripts that occur by virtue of being part of an adjacent gene. We took advantage of the nature of our data set to identify antisense transcripts and looked for effects on sense mRNA translation.\n\nFor this analysis only, we relaxed our stringent coverage threshold from \u226532 rM to \u226516 rM for inclusion of antisense transcripts. We based our threshold on the presence of an antisense transcript to the sexual stage specific gene pfs16 (PFD0310w) confirmed by strand-specific RT-PCR (Figure 10\u2014figure supplement 1). This antisense is predicted by the HMM to be \u223c4 kb, extending over the complete coding sequence and beyond and with a coverage level of 23 rM over the sense CDS. Using the 16 rM threshold, we detected 84 antisense transcripts to several known ORFs (listed in Figure 10\u2014source data 1), including the nucleoside transporter pfNT4 (PFA0160c) depicted in Figure 10A. The merozoite stage contained the highest number of antisense transcripts (46), and the fewest (13) were found in early trophozoites. Manual inspection revealed that in 63% of these instances, the putative antisense transcript actually emanates from the 5\u2032 leader or 3\u2032 UTR of a neighboring gene (not defined by the HMM). Antisense reads for the para-hydroxybenzoate polyprenyltransferase (PFF0370w), for example, are actually derived from the 3\u2032 UTR of the neighboring conserved protein PFF0375c (Figure 10B).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig10-v1.jpg)\n\n**Figure 10.:** (A) Schizont stage mRNA (blue) and ribosome footprint (green) profiles of the nucleoside transporter pfNT4 (PFA0160c). The antisense transcript covers the full extent of the sense transcript and displays ribosome density. (B) An example of antisense reads originating from a neighboring UTR in the schizont stage. The antisense reads in the para-hydroxybenzoate polyprenyltransferase (PFF0370w) stem from the 3\u2032 UTR of the neighboring conserved plasmodium protein (PFF0375c).\n\n![Figure 10\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04106/elife-04106-fig10-figsupp1-v1.jpg)\n\n**Figure 10\u2014figure supplement 1.:** Read coverage on the plus and minus strand of the stage-specific protein precursor Pfs16 (PFD0310w) locus. The gene is encoded on the plus strand and the antisense transcript covers and extends beyond the sense transcript \u223c3.7 kb. The strand-specific primer was used for both reversetranscription and as forward primer for the PCR (blue arrowhead). The 5 PCR primers (black arrowhead) and the expected amplicon sizes are shown next to the strand-specific RT-PCR results. 18S rRNA primers were used in the control reactions. a.u. = arbitrary units.\n\nWe next interrogated the impact of this set of antisense transcripts. Overall, antisense transcripts showed no effect on mRNA abundance and translational efficiencies of the cognate sense transcript. These observations parallel those described for antisense transcripts in yeast (Brar et al., 2012). Thus, at first approximation antisense transcripts do not appear to play a role in translational regulation. However, these observations could be confounded due to the small number of genes in this set, and we cannot exclude the possibility of sense/anti-sense heterogeneity at the single cell level, obscured here at the population level.\n\n## Discussion\n\nHerein we present, for the first time, a comprehensive view of the coupled transcriptional and translational dynamics of the P. falciparum IDC by determination of transcript abundance and architecture together with ribosomal density and positioning. The quality of our data relies on several critical features: (1) high temporal specificity and reproducibility of fully independent biological replicas of five strictly staged cultures; (2) purified merozoites to allow discrete measurements in this stage without confounding contributions from schizonts or rings; (3) monosome isolation from sucrose gradients to specifically enrich for ribosome-derived footprints and avoid potential complications that can arise with methods like sucrose cushions which are prone to mRNA contamination; (4) sufficient sequencing depth of biological replicates to set a statistical threshold for minimum read coverage and to demonstrate reproducibility; (5) stringent strand specificity to facilitate an HMM for the description of transcript boundaries and the detection of antisense transcription.\n\nPrevious studies of the transcript abundance in the malaria blood stages revealed a periodic cascade of gene expression, whereby the majority of expressed genes exhibit one peak of expression per cell cycle (Bozdech et al., 2003). The global profile of transcriptional expression was subsequently found to be highly stereotypical across strains and appeared to lack dynamic responses to perturbation (Llin\u00e1s et al., 2006; Ganesan et al., 2008). It has been suggested that translational control of protein expression could compensate for the lack of transcriptional dynamics. Proteomic studies described delays in peak mRNA and corresponding protein abundance implicating translational or post-translational mechanisms in the modulation of gene expression (Le Roch et al., 2004; Foth et al., 2011).\n\nOur ribosome profiling results reveal a tight coupling of transcription and translation for the majority of expressed genes, indicating that most protein products are translated with highly similar timing and in proportion to their corresponding mRNA transcripts. Synthesized proteins are likely to exert their functions immediately upon translation but post-translational regulation, not captured by our data, could still be at play. Direct correlations of translational efficiencies measured in this study along with proteomic data sets are hampered by the reduced sensitivity of the latter and differences in temporal resolution and staging of the parasites between data sets. However, the available proteomic evidence is largely consistent with the results presented here, particularly for highly translated proteins. The simultaneous capture of mRNA abundance and translation is expected to be a more accurate proxy for protein levels than measurements of mRNA abundance alone (Ingolia et al., 2009) and provides a critical resource for the identification of instances of post-translational regulation of gene expression. However, we note that this data set only provides a direct measure of relative changes in translational efficiencies rather than changes in bulk transcription and translation.\n\nWhile no up- or down-regulation of global translation efficiencies were observed in any particular stage, more extreme translational efficiencies were measured in subsets of genes expressed in rings and merozoites. We find 177 translationally up-regulated genes with functions predominantly related to merozoite egress and invasion, with peak mRNA in schizonts and peak translational efficiency in rings. It is likely that the genes with unknown functions, regulated in an analogous way during the merozoite to ring transition, are also associated with this process. Our data support a model whereby the transcripts of proteins necessary for merozoite structure and function are made in the previous stage in large abundance, are translationally up-regulated during the invasion process, and remain highly translated well into the ring stage despite rapid mRNA decay during this stage (Shock et al., 2007). Whether the accumulation of 5\u2032 leader ribosome density is a mechanism that assists in this process or is it merely a byproduct of more efficient ribosomal initiation on these templates remains to be tested. With the emergence of genome editing tools such as CRISPR/Cas9 (Ghorbal et al., 2014), it may be possible to create versions of genes with altered cis-acting sequences to test for modulation of 5\u2032 ribosome density and its effect on translational efficiency.\n\nThe global nature of ribosome accumulation within the 5\u2032 leader sequences of many transcripts during the IDC and the lack of an association between 5\u2032RD and the number or length of uORFs suggests that ribosomes accumulate on 5\u2032 leaders through means other than a uORF model. For comparison, in yeast under starvation conditions the fraction of ribosome footprints derived from 5\u2032 leaders is increased by sixfold and in some cases no single uORF can account for the entire distribution of ribosomes on the 5\u2032 leader of a gene (Ingolia et al., 2009), much like P. falciparum. What mechanism could account for global ribosome accumulation in the 5\u2032 leader? The presence of apparent 80S ribosomes within the 5\u2032 leader sequence, regardless of whether they cover uORFs or not, suggests an engagement mode in which the fidelity of start codon recognition is altered or suspended. Current models propose that the 43S pre-initiation complex loads onto the mRNA with the assistance of other initiation factors near the 5\u2032 cap and proceeds to scan down the length of the mRNA until it encounters an AUG codon. This is followed by the assembly of the 48S preinitiation complex and then finally the 80S complex (for review, see Hinnebusch, 2011). The AUG that is ultimately chosen is not always the first one encountered, and its sequence context is important for recognition. The factors eIF1, eIF1A, and eIF5 have been implicated in recognition of the \u2018correct\u2019 AUG (Aitken and Lorsch, 2012). In the case of P. falciparum, differential regulation or modification of these factors could plausibly result in altered start codon selection and 80S assembly. Whether prematurely initiated complexes are able to scan without synthesizing a peptide or are required to assemble and reassemble until encountering the right start codon remains an open question. Large 5\u2032 ribosome accumulation on translationally up-regulated genes in the ring stage suggests that premature initiation on these transcripts is not detrimental. The development of an in vitro translation system that recapitulates upstream 80S assembly on P. falciparum 5\u2032 leaders will allow direct testing of premature initiation and its effect on translational efficiency in this parasite.\n\nOur ribosome profiling data add an important component to the rich compendium of genome-wide data, including transcript abundance (Bozdech et al., 2003), mRNA decay (Shock et al., 2007), splicing (Sorber et al., 2011), and proteomics for this parasite (Le Roch et al., 2004; Foth et al., 2011). Features such as 5\u2032 leaders, 3\u2032 UTRs, introns, and antisense transcripts are clearly visible and often well delineated. While experimental validation of transcriptional start sites, terminators, and promoters is required, spanning regions between transcripts, such as the one shown in Figure 6, can be used for the search and identification of such functional sites in a reduced sequence space. The data are available at NCBI GEO (accession #GSE58402) to facilitate future queries and normalized read coverage plots for all 5 timepoints are available packed as a single Mochiview file (Caro et al., 2014). Together our results describe a simplified regulatory architecture of gene translation, albeit one that includes peculiar and potentially unique mechanisms specialized for its highly structured and coordinated lifecycle within erythrocytes. Further biochemical dissection of translational initiation mechanisms and determinants of translational efficiency unique to Plasmodium may reveal weaknesses that could be exploited for possible therapeutic intervention.\n\n## Materials and methods\n\n### Cell culture\n\nW2 strain cultures were maintained in Hyperflasks (Corning, Corning, NY) in 500 ml RPMIc (RPMI 1640 media supplemented with 0.25% Albumax II (GIBCO, Grand Island, NY), 2 g/L sodium bicarbonate, 0.1 mM hypoxanthine, 25 mM HEPES (pH 7.4), and 50 \u03bcg/L gentamycin), at 37\u00b0C, 5% O2, and 5% CO2, to maximum 10\u201315% parasitemia at 5% hematocrit (HC) and frequent media changes (at least every 6\u20138 hr). Cells were synchronized by two consecutive sorbitol treatments for three generations, for a total of six treatments. Maximum invasion, point at which half of the culture is either rings or schizonts, was defined as hour zero and independent time points containing \u223c1010 parasites were harvested 11, 21, 31, and 45 hr later.\n\n### Polysome isolation and library generation\n\nCultures were incubated for 5 min in 500 ml 37\u00b0C RPMIc, 100 \u00b5g/ml cycloheximide (Acros Organics, Bridgewater, NJ) and harvested by centrifugation for 8 min at 3.65\u00d7g at room temperature. An aliquot was removed and flash frozen in liquid nitrogen for total RNA purification, followed by poly(A)-purification and chemical fragmentation with Zn2+ to \u223c30 nt for consistency in mRNA-Seq library preparation. The remaining culture was treated with ice-cold 0.1% saponin in 1X PBS, 100 \u00b5g/ml cycloheximide, for RBC lysis. Parasites were resuspended in ice-cold parasite lysis buffer (15 mM KOAc, 15 mM MgOAc, 10 mM Tris HCl pH 7.4, 0.5 mM DTT, 0.5% Triton X-100, 100 \u03bcg/ml cycloheximide) and dripped into a conical tube filled with, and immersed in, liquid nitrogen. Frozen cells transferred placed in liquid nitrogen pre-chilled chambers and pulverized for 3 min at 15 Hz, on a Retsch MM301 mixer mill. Pulverized cells were thawed on ice, and cell debris was removed by centrifugation at 4\u00b0C, 16,000\u00d7g for 10 min. The supernatant was treated with 2.88 U/\u00b5g Micrococcal nuclease for 30 min at room temperature and immediately loaded onto sucrose gradients for ultracentrifugation at 35,000 rpm for 3 hr at 4\u00b0C in a L8-60 M Beckman centrifuge. Monosome fractions only, were collected to generate ribosome footprint libraries for deep sequencing using the HiSeq 2000 (Illumina, San Diego, CA), as described (Ingolia et al., 2009).\n\n### Merozoite purification\n\nLate stage schizonts (40\u201344 hpi) were magnetically purified using MACS LD columns (Miltenyi Biotec, San Diego, CA) and resuspended in RPMIc without blood addition. After reaching maximum invasion (1:1 schizont to ring ratio), cultures were harvested by centrifugation at 1500 rpm at room temperature for 5 min. Pelleted cultures were resuspended into fresh RPMIc and placed at 37\u00b0C. Merozoites in the supernatant were treated with 100 \u00b5g/ml cycloheximide for 5 min at room temperature, harvested at 4000 rpm at 4\u00b0C for 5 min and resuspended in RPMIc and passaged again through a MACS LD column. Parasite lysis buffer was added to the merozoite-enriched flow-through and flash frozen in liquid nitrogen. This procedure was repeated three times every 45 min using the original culture. The same procedure described above was used for RNA extraction and library preparation.\n\n### SNP-corrected W2 genome\n\nW2 strain genomic DNA was isolated from >90% synchronized ring stage cultures. Paired end libraries were constructed using the Nextera DNA Sample Prep Kit (Epicenter Biotechnologies, Madison, WI) according to the manufacturer's instructions reducing PCR cycles from nine to six and using 80% A/T dNTPs. Libraries were sequenced using the HiSeq 2000 (Illumina). Reads were aligned to the P. falciparum PlasmoDB 3D7 version 7.1 genome using Bowtie 0.12.1 (Langmead et al., 2009) with parameters \u2013v1 \u2013m 1 (one mismatch allowed, unique mapping). A SNP was called when five or more W2 reads supported, with over 90% agreement, a different base than the one found in the P. falciparum 3D7 7.1 genome. 19401 SNPs (0.08% of total bases) were detected and used to produce the SNP-corrected W2 genome based on the 3D7 genome. Fastq files are available for download at NCBI SRA, accession #SRP042946.\n\n### Software pipeline, mappability, and rpkM calculation\n\nQuality-filtered ribosome footprints and mRNA sequencing reads were trimmed to remove library adapter sequence, filtered for P. falciparum rRNA using blast, and aligned uniquely to the W2 SNP-corrected genome using Bowtie 0.12.1 (Langmead et al., 2009) allowing no mismatches. The percentage mappability was calculated using an in silico library of the P. falciparum W2 SNP-corrected genome created using a single nucleotide sliding window of 30 nt. The in silico library was uniquely aligned to the genome allowing no mismatches. The mappability score is given by the number of 30 nt sequences covering each nt position in the genome, such that any position has a score that ranges from 0 to 30. Both mRNA and ribosome footprint rpkMs were calculated as in Mortazavi et al. (2008), excluding the first 50 bases of each gene to eliminate bias introduced by the observed ribosome accumulation peak near the start codon. Genes with fewer than 80% mappable bases (248 genes) or any overlapping non-CDS feature on the same strand (77 genes) were excluded from this calculation. Data are available for download at NCBI GEO, accession #GSE58402. MochiView genome browser data tracks are available in Supplementary file 1 (Homann et al., 2010).\n\n### Extended phaseogram\n\nThe genes of the RNA-seq transcriptome obtained in this work were listed in the same phaseogram order as the previously published microarray transcriptome (Bozdech et al., 2003). The criteria for inclusion of a gene into the phaseogram was mRNA \u2265 32 rM, >2 peak to trough ratios, and Pearson correlation coefficient >0.8 with the expression profiles of the two neighboring genes.\n\n### Hidden Markov model to describe transcript boundaries\n\nThe HMM was built using RNA-Seq data obtained in this study and two states: transcript (t) or intergenic (i) with three possible emissions: (1) read present, (2) read not present but position is unmappable, (3) read not present but the position is mappable. Both state and emission probabilites were calculated using \u223c30 kb training set of manually identified transcript and non-transcript regions. The initial probabilities were set to 0.5. Transition probabilities were estimated from the median length of intergenic regions of (1252 nt) and median lengths of CDS regions (2545 nt), where the Pt->i = (1/2545), P t->t = (2544/2545), Pi->t = (1251/1252), and Pi->i = (1/1252). We applied the Viterbi algorithm to predict the optimal path of transcript tracks per time point with a 10 nt window resolution. HMM-defined 5\u2032 leader and 3\u2032 UTR coordinates are available for download at NCBI GEO, accession #GSE58402.\n\n### Strand-specific RT-PCR\n\nTotal RNA from late stage parasites was isolated and reverse transcribed using SuperScript III (Invitrogen, Carlsbad, CA) according to manufacturer's instructions, using either an antisense-specific primer to Pfs16 (PFD0310w) or a random nonamer. cDNA was amplified using the Pfs16 antisense-specific primer as a forward primer in combination with one of five reverse primers (Supplementary file 3). 18S rRNA primers were used in the control reactions with the random nonamer-derived cDNA.\n",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "a0177f76-c8f8-473b-9b4f-21bd0d9d1129",
+      "submission_id": "cfbcb7a0-4102-4eb2-ac15-659f51b9812b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Thomas R Gingeras, Cold Spring Harbor Laboratory , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04106.036](https://doi.org/10.7554/eLife.04106.036)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cGenome-wide Regulatory Dynamics of Translation in the Plasmodium falciparum Asexual Blood Stages\u201d for consideration at eLife. Your article has been favorably evaluated by Richard Losick (Senior editor) and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis manuscript presents genome-wide transcriptional maps and association of the detected steady-state RNAs to ribosomes as a means of studying the possible use of translation as a post-transcriptional control mechanism during 5 stages of development in P. falciparum. The use of such a regulatory strategy would help to explain why there is a continuous flow of transcription from the majority of genes in P. falciparum throughout the development cycle in place of a more regulated and dynamic gene expression strategy. In addition, the authors seek to enhance our understanding of how this regulatory strategy is enacted in this organism. Thus, this is a timely and potentially and important manuscript. However, overall, the manuscript contains several important issues that require attention to help readers better appreciate the messages communicated.\n\n1) Given the critiques of the riboseq approaches (Chew et al, 2013;119 Guttman et al, 2013) it would be important to firmly establish that the RNAs isolated in the ribosome protocol are part of a productive polysome translation complex and instead of individual monosomes. This concern is given support in Figure 1\u2013figure supplement 1 which shows considerable size 80s peaks in the untreated samples for the Late Troph, Schizonts and merozoites stages. In short, the detection of RNA protected by ribosomes in these footprint experiments cannot always be with associated with RNA destined for translation. Wilson & Masel, 2011 have reported that non-productive binding of single ribosomes to mRNA do not undergo productive translation. Thus, RNAseq results obtained from the 80S peak might be compared to RNAseq results obtained from RNAs isolated from the polysome peak. This would act as a control against this problematic possibility.\n\n2) Since the authors do not generate a proteomic dataset for their samples, it is not convincing that the translation efficiency values that they infer from their ribosomal occupancy profiles are direct indicators of protein synthesis. This is especially true given the delay in protein as compared to transcript detection observed during the P. falciparum IDC (Le Roch et al., Genome Biol., 2004 and Foth et al., Mol. Cell. Proteomics, 2011). It is also important to note that select noncoding RNAs show a translational efficiency similar to coding regions, even though they are not translated (Ingolia et al., Cell, 2011, and Guttman et al., Cell, 2013); these noncoding RNAs can be distinguished from coding regions only by their ribosomal release score, which was not calculated in this study. Together, the translation efficiency measured here is not enough to indicate if a protein product is being made. The authors have to provide additional evidence or analyses to conclusively state that there is a lack of \u201covert\u201d translational control.\n\n3) Another reason for the detection of a transcript in the ribosomal occupancy profile could be due to its presence in other ribonucleoprotein complexes that associate or co-sediment with the 80S monosome fractions. The authors infer the same when they discuss the 3' UTRs of transcripts (Figure 9). Could this be the case for other regions of apparent ribosomal occupancy such as the 5' leader sequence? The authors should discuss this in more detail. A straightforward experiment would be to determine the protein composition of the 80S monosome fractions isolated for ribosome profiling in different stages of the IDC. A related question: Is there a lack of polysomes in merozoite stages? This appears to be the case in Figure 1\u2013figure supplement 1.\n\n4) Another concern is that the authors do not discuss their data in light of the polysome occupancy study published by Bunnik et al., Genome Biology, 2013, and the delayed translation phenomenon that has been observed by Le Roch et al., Genome Biol., 2004, and Foth et al., Mol. Cell. Proteomics, 2011.\n\n5) The antisense RNAs section is not 'up-to-date' with the literature. Three recent studies have detected pervasive transcription of the parasite genome \u2013 L\u00f3pez-Barrag\u00e1n et al., BMC Genomics, 2011; Siegel et al., BMC Genomics, 2014; Wei et al., PLOS One, 2014 \u2013 none of which are referenced and discussed here.\n\n6) The authors establish a threshold read count, in terms of reads per million mapped (rM), for downstream analysis. The threshold chosen here seems reasonable for this data set, but I do think there is an important clarification to be made. There are two separate questions that might be addressed by a read count threshold: a minimum expression level for biologically significant effects and a minimum count for statistically reliable analysis. An rM threshold is reasonable for the former, while a raw read count seems more appropriate for the latter. Doubling sequence coverage would permit statistically reliable detection of lower expression levels.\n\n7) At several points the authors discuss a correlation between mRNA abundance and translation, or between transcription and translation; these seem to be used interchangeably. The authors seem to mean that the amount of protein produced correlates well with the abundance of the mRNA that encodes it \u2013 but this phrase could also suggest that more abundant mRNAs are translated more highly. The authors should clarify this point when it's first mentioned.\n\n8) The authors discuss relative translational efficiency (TE). Measures of overall translation and TE in different samples are all scaled by the per-million-mapped factor to correct for differences in sequencing depth, etc. This correction obscures changes in the bulk mRNA content or translational activity between different stages. These effects are discussed in e.g. Lov\u00e9n et al., Cell 2012. The authors state that \u201cAbsolute mean translational efficiencies were the same in all stages\u201d but this conclusion is almost an arithmetic identity after applying per-million-mapped normalization. The polysome profiles presented in Figure 1\u2013 figure supplement 1 indicate large changes in overall translational activity at different developmental stages.\n\n9) In discussing RESA2 I was confused by Figure 5\u2013figure supplement 2 until I realized that only the truncated reading frame was shown. It would be great to indicate the full-length reading frame on the graph.\n\n10) In discussing the eIF2alpha kinase IK1, the authors note that the gene is translationally silenced, perhaps reflecting one of the few uORF-mediated translational silencing events in Plasmodium. As eIF2alpha phosphorylation can induce a bypass of such silencing, this seems like a potentially interesting auto regulatory system \u2013 in animals, the eIF2alpha phosphatase GADD34 is regulated by uORF silencing in order to provide feedback; here it would seem that positive feedback may act instead.\n\n11) The authors discuss qualitatively the observation that many abundant but poorly translated mRNAs are not detectable by proteomics, in contrast to well-translated messages. It would be valuable to quantify detectability, controlling for mRNA abundance, and test less anecdotally whether detectability, as a proxy for protein abundance, follows translation better than mRNA abundance.\n\n12) It is striking that the 5' UTRs in Plasmodium were longer than the 3' UTRs \u2013 this differs from the situation in other eukaryotes, over a wide range of absolute UTR length. The authors should comment on this.\n",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "991057a3-1f48-4217-9924-552050bea6d2",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C1",
+      "claim": "The transcriptome of the intraerythrocytic developmental cycle (IDC) of P. falciparum is characterized by a continuous cascade wherein the expression of the majority of genes is maximally induced once per cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptome of the intraerythrocytic developmental cycle (IDC) of P. falciparum is characterized by a continuous cascade wherein the expression of the majority of genes is maximally induced once per cycle and their timing correlates well with the timing for the respective protein's biological function (Bozdech et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bozdech et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "013ffe02-6e34-4735-979b-7229f0a2867a",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C2",
+      "claim": "The timing of gene expression correlates well with the timing for the respective protein's biological function in P. falciparum.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptome of the intraerythrocytic developmental cycle (IDC) of P. falciparum is characterized by a continuous cascade wherein the expression of the majority of genes is maximally induced once per cycle and their timing correlates well with the timing for the respective protein's biological function (Bozdech et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bozdech et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "00aa7b6b-3d02-493f-9b0c-20daa5c05dcd",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C3",
+      "claim": "The apparent lack of dynamic transcriptional regulation in P. falciparum suggests that complementary post-transcriptional mechanisms could play an important role in the regulation of parasite gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent lack of dynamic transcriptional regulation suggested that complementary post-transcriptional mechanisms could play an important role in the regulation of parasite gene expression (Hughes et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hughes et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "2703b0d9-bc86-442f-8a81-1727c5c538d4",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C4",
+      "claim": "In sporozoites present in the mosquito salivary gland, phosphorylation of eIF2\u03b1 by the kinase IK2 inhibits translation and causes accumulation of mRNAs into granules.",
+      "claim_type": "EXPLICIT",
+      "source": "In sporozoites present in the mosquito salivary gland, phosphorylation of the eukaryotic translation initiation factor eIF2\u03b1 by the kinase IK2, inhibits translation and causes accumulation of mRNAs into granules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "22822d26-8461-42ec-a618-bf7d586a47ee",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C5",
+      "claim": "Translational repression in sporozoites is alleviated by eIF2\u03b1 phosphatase during the transition into the mammalian host, allowing parasites to transform into the liver stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Translational repression is alleviated by eIF2\u03b1 phosphatase during the transition into the mammalian host, allowing parasites to transform into the liver stages (Zhang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "8037958a-4288-42b5-ac3c-c07d6846a1b9",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C6",
+      "claim": "PK4 kinase activity leads to the reduction of global protein synthesis through phosphorylation of eIF2\u03b1 in schizonts and gametocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, PK4 kinase activity leads to the reduction of global protein synthesis through phosphorylation of eIF2\u03b1 in schizonts and gametocytes and is essential for the completion of the parasite's erythrocytic cycle (Zhang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "8e8f4f3b-2395-4b39-97af-d8b297cb4b43",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C7",
+      "claim": "PK4 kinase is essential for the completion of the parasite's erythrocytic cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, PK4 kinase activity leads to the reduction of global protein synthesis through phosphorylation of eIF2\u03b1 in schizonts and gametocytes and is essential for the completion of the parasite's erythrocytic cycle (Zhang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "d74ae5c7-d4b9-4d85-8738-002f93c4c268",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C8",
+      "claim": "Dihydrofolate reductase-thymidylate synthase (DHFR-TS) binds within the coding region of its own cognate mRNA to repress translation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, dihydrofolate reductase-thymidylate synthase (DHFR-TS) binds within the coding region of its own cognate mRNA to repress translation (Zhang and Rathod, 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang and Rathod, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "348be1e4-2fce-40ac-ab3f-128f845c52ad",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C9",
+      "claim": "Antifolate treatment relieves the repressive effect of DHFR-TS on its own translation without alteration of mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "and antifolate treatment has been shown to relieve this repressive effect without alteration of mRNA levels (Nirmalan et al., 2004a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nirmalan et al., 2004a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "f8b74f8e-9f5d-42fa-8b06-15af927f051d",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C10",
+      "claim": "In Plasmodium berghei, storage of translationally repressed mRNAs prior to fertilization is mediated by mRNA binding via the RNA helicase DOZI and the Sm-like factor CITH.",
+      "claim_type": "EXPLICIT",
+      "source": "In Plasmodium berghei, storage of translationally repressed mRNAs prior to fertilization is mediated by mRNA binding via the RNA helicase DOZI and the Sm-like factor CITH (Mair et al., 2006, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mair et al., 2006, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "3ddd37d0-3b24-47d8-be6b-19f387e10284",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C11",
+      "claim": "Upstream open reading frames (uORFs) found on 5\u2032 UTRs of transcripts have been reported to regulate the translation of specific genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Upstream open reading frames (uORFs) found on 5\u2032 UTRs of transcripts have been reported to regulate the translation of specific genes (Morris and Geballe, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Morris and Geballe, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "8363d95c-cb57-4dcd-85b0-7821c50b3250",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C12",
+      "claim": "In P. falciparum, the only uORF described and functionally characterized to date is a 120 codon region upstream of the var2csa (PFL0030c) coding region.",
+      "claim_type": "EXPLICIT",
+      "source": "In P. falciparum, the only uORF described and functionally characterized to date is a 120 codon region upstream of the var2csa (PFL0030c) coding region, a unique variant of the surface antigen PfEMP1 that mediates adhesion to placenta in pregnant women (Amulic et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Amulic et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "3dc71f77-d448-43ab-beea-f69aac8fd42b",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C13",
+      "claim": "Translation of the uORF modulates repression of var2csa translation.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, translation of the uORF modulates repression of var2csa translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Amulic et al., 2009 in the preceding sentence",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "7bc2a4b9-3ce6-459c-ac7a-8d5279148c52",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C14",
+      "claim": "The P. falciparum genome was fully sequenced.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the P. falciparum genome was fully sequenced (Gardner et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gardner et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "4009266c-4991-42bb-b49e-9a42989ba0fa",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C15",
+      "claim": "Parallel mass spectrometry-based proteomics and genome-wide expression profiling revealed differences between mRNA abundance and the accumulation of the corresponding protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Parallel mass spectrometry-based proteomics and genome-wide expression profiling revealed differences between mRNA abundance and the accumulation of the corresponding protein, supporting the notion that post-transcriptional regulation of gene expression is at play in this parasite (Le Roch et al., 2004; Nirmalan et al., 2004b; Foth et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Le Roch et al., 2004; Nirmalan et al., 2004b; Foth et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "86869a2f-0823-463b-89f2-f7864c153960",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C16",
+      "claim": "Polysome profiling was used to monitor discrepancies between polysome-associated and steady-state mRNAs in 30% of the P. falciparum blood stage transcriptome.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, polysome profiling was used to monitor discrepancies between polysome-associated and steady-state mRNAs in 30% of the P. falciparum blood stage transcriptome (Bunnik et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bunnik et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "f45651c0-73e6-452c-a95b-72c50155d4d9",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C17",
+      "claim": "Polysome profiling does not reveal the precise localization of the ribosomes, and thus cannot be used to accurately assess the translational efficiency of a given mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "however, this approach does not reveal the precise localization of the ribosomes, and thus can not be used to accurately assess the translational efficiency of a given mRNA (Ingolia, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ingolia, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "ad8807e4-e93e-458e-9421-7363e6852969",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C18",
+      "claim": "Ribosome profiling was adapted to describe the translational dynamics of the P. falciparum asexual blood stage transcriptome.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we adapted the ribosome profiling technique (Ingolia et al., 2009) to describe the translational dynamics of the P. falciparum asexual blood stage transcriptome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ingolia et al., 2009 and described in the manuscript",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "fc21dab9-daa7-4f2f-877f-aa23a25e9819",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C19",
+      "claim": "The translational efficiency of the majority of mRNAs expressed follows a narrow distribution, exhibiting a tight coupling between transcription and translation.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that the data are highly reproducible, and we find that the translational efficiency of the majority of mRNAs expressed follows a narrow distribution, exhibiting a tight coupling between transcription and translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data presented in the manuscript, particularly Figure 2C and Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "ddfcc663-9e2b-4cca-b66b-bc1e6d7d4cb0",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C20",
+      "claim": "Only 10% of the genes expressed deviate from the tight coupling between transcription and translation and are translationally up- or down-regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 10% of the genes expressed deviate from this trend and are translationally up- or down-regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data presented in the manuscript, particularly Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "547f9e18-fd6f-4c87-9c54-40cc5aaece06",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C21",
+      "claim": "A surprising amount of ribosome density is associated with 5\u2032 leaders of transcripts particularly in genes with functions associated with merozoite egress and invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a surprising amount of ribosome density associated with 5\u2032 leaders of transcripts particularly in genes with functions associated with merozoite egress and invasion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data presented in the manuscript, particularly Figure 7 and Figure 8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "9fff9737-ba8d-401e-afe3-0da2d8dfa12b",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C22",
+      "claim": "Five stages representative of the 48-hr IDC of P. falciparum were harvested for both mRNA and polysome isolation: ring, early trophozoite, late trophozoite, schizont stages, and purified merozoites.",
+      "claim_type": "EXPLICIT",
+      "source": "Five stages representative of the 48-hr IDC of P. falciparum were harvested for both mRNA and polysome isolation; ring, early trophozoite, late trophozoite, schizont stages, and purified merozoites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the methods and results sections",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "61e990c8-0d6e-462a-b58a-d595195fabb3",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C23",
+      "claim": "Over 92% of all 30 nt sequenced reads, derived from coding sequences (CDSs), mapped uniquely to the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the unusually high AT content of the P. falciparum genome, over 92% of all 30 nt sequenced reads, derived from coding sequences (CDSs), mapped uniquely to the genome (Figure 1\u2014source data 1 and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014source data 1 and Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "11f7bc6a-6f55-41f4-b513-e7f3e80deb06",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C24",
+      "claim": "3605 genes qualified for analysis using a conservative threshold of \u2265 32 rM.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this conservative threshold, 3605 genes qualified for further analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis described in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "3a111cfd-780a-4d41-8111-c518e4b0def4",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C25",
+      "claim": "Between biological replicates, Pearson correlation values were consistently high, ranging from r = 0.94 to r = 0.99.",
+      "claim_type": "EXPLICIT",
+      "source": "Between biological replicates, Pearson correlation values were consistently high, ranging from r = 0.94 to r = 0.99 (Figure 2A), highlighting the quality and reproducibility of our data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "89d7fc2b-724d-455c-8c8a-febc217132bc",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C26",
+      "claim": "The RNA-Seq transcription profiles of the set of genes shared by the two data sets (n = 1829) were highly correlated (average r = 0.7) to the corresponding time points of the microarray data set.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA-Seq transcription profiles of the set of genes shared by the two data sets (n = 1829) were highly correlated (average r = 0.7) to the corresponding 11, 21, 31, 45, and 2 hr post merozoite invasion time points of the microarray data set, despite the use of different methodologies (microarray vs RNA-seq) and the use of different P. falciparum strains (HB3 vs W2, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with previously published microarray data from Bozdech et al., 2003",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "ccf0d613-ab7d-4a8b-864b-79edd1b48aac",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C27",
+      "claim": "An additional 743 genes were accommodated into the cascade-like transcriptome extending it to a total of 3110 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the higher sensitivity of RNA-seq, we were able to accommodate an additional 743 genes into the cascade-like transcriptome extending it to a total of 3110 genes (Figure 2B, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2B and Figure 2\u2014source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "a2932615-f717-489e-9483-4ebfa9442ea5",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C28",
+      "claim": "Translation is tightly correlated with transcription for all phasic and non-phasic genes in rings (r = 0.85), early trophozoites (r = 0.93), late trophozoites (r = 0.91), schizonts (r = 0.89), and purified merozoites (r = 0.86).",
+      "claim_type": "EXPLICIT",
+      "source": "In general, translation is tightly correlated with transcription for all phasic and non-phasic genes in rings (r = 0.85), early trophozoites (r = 0.93), late trophozoites (r = 0.91), schizonts (r = 0.89), and purified merozoites (r = 0.86).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "1179a9fe-af85-4fa3-89f7-a59a7c95e2d7",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C29",
+      "claim": "77% of genes expressed in at least three stages of the IDC display high Pearson correlation (r \u2265 0.7) between mRNA abundance and translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, 77% of genes expressed in at least three stages of the IDC display high Pearson correlation (r \u2265 0.7) between mRNA abundance and translation (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "d6f54f77-9cab-46ba-869a-f129a52bf8e9",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C30",
+      "claim": "The shape and the range of TE distributions obtained for each stage sampled is comparable to those seen in other eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "The shape and the range of TE distributions obtained for each stage sampled is comparable to those seen in other eukaryotes (Ingolia et al., 2009; Dunn et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ingolia et al., 2009; Dunn et al., 2013 and data shown in Figure 4A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "91af8591-6a2b-46e7-9020-2cbba38d8e83",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C31",
+      "claim": "Absolute mean translational efficiencies in all stages had a maximum difference of 1.47-fold observed between early trophozoites and schizonts.",
+      "claim_type": "EXPLICIT",
+      "source": "Absolute mean translational efficiencies in all stages (log2TE \u00b5Rings = \u22120.43, log2TE \u00b5E.trophs. = \u22120.56, log2TE \u00b5L.trophs. = \u22120.31, log2TE \u00b5Schizonts = \u22120.16 and log2TE \u00b5Merozoites = \u22120.68) had a maximum difference of 1.47-fold observed between early trophozoites and schizonts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "624d5ff6-3319-454c-95b8-31cb2c9e0b76",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C32",
+      "claim": "A total of 301 genes, 8.3% of the transcriptome, are translationally regulated, with 124 genes translationally down-regulated and 177 genes translationally up-regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 301 genes, 8.3% of the transcriptome, are translationally regulated by this metric, with 124 genes translationally down-regulated and 177 genes translationally up-regulated (Figure 4B, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4B and Figure 2\u2014source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "ab0a9163-ed39-410d-8e78-891504f37953",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C33",
+      "claim": "Translational efficiencies remain high for the translationally up-regulated and low for the translationally down-regulated genes in all the stages at which they are expressed, regardless of the stage of peak mRNA abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Translational efficiencies remain high for the translationally up-regulated and low for the translationally down-regulated genes in all the stages at which they are expressed, regardless of the stage of peak mRNA abundance, suggesting that translational efficiency is largely, but not completely, programmed by the mRNA sequence itself, rather than global factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 4B and 4C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "858c8d6f-f4f5-4745-bd88-c1aec719de84",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C34",
+      "claim": "The PfRh3 pseudogene ribosome profile shows that translation of the 5\u2032 end of this transcript occurs up until the encounter of several in-frame stop codons, causing the reduction in ribosome density from this point on.",
+      "claim_type": "EXPLICIT",
+      "source": "The PfRh3 pseudogene ribosome profile shows that translation of the 5\u2032 end of this transcript occurs up until the encounter of several in-frame stop codons, causing the reduction in ribosome density from this point on (Figure 5A, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5A and Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "5cd3350a-522a-441a-b77a-15cf95c34fbd",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C35",
+      "claim": "A truncated version of the PfRh3 protein is being produced in the W2 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that a truncated version of the PfRh3 protein is being produced in the W2 strain studied here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ribosome profiling data shown in Figure 5A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "9318333e-3949-4163-9e47-2bc0a93e6859",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C36",
+      "claim": "Evidence for peptides corresponding to the 5\u2032 end of PfRh3 has been found in gametocytes and sporozoites using mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for peptides corresponding to the 5\u2032 end of PfRh3 has been found in gametocytes and sporozoites (however not during the asexual stages) using mass spectrometry (Florens et al., 2002; Lasonder et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Florens et al., 2002; Lasonder et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "5b091060-406d-4c8b-ab1b-90daaf758a53",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C37",
+      "claim": "RESA-2 is transcribed but poorly translated in rings, early trophozoites and merozoites (log2TE \u22123.2, \u22122.7, \u22122.9, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "RESA-2 is transcribed but poorly translated in rings, early trophozoites and merozoites (log2TE \u22123.2, \u22122.7, \u22122.9, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 5\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "a46db6be-d386-41ae-a1bf-4dacaee434bc",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C38",
+      "claim": "69% (n = 151) of reads mapping to the RESA2 locus support a single base deletion that creates a premature stop codon exactly at the site of ribosome footprint drop-off.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 69% (n = 151) of reads mapping to this locus support a single base deletion that creates a premature stop codon exactly at the site of ribosome footprint drop-off (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genomic DNA sequencing data from the W2 strain",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "e8402581-aec9-472e-849a-416311ac6638",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C39",
+      "claim": "RESA2 is transcribed and actually translated into a shorter protein product of 461 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that RESA2 is transcribed and actually translated into a shorter protein product of 461 amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ribosome profiling and genomic sequencing data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "0ff525e1-634e-43da-acb9-4ba85aab2188",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C40",
+      "claim": "The eIF2\u03b1 kinase IK1 (PF14_0423) has ribosome footprints that accumulate at the 5\u2032 leader and 3\u2032 UTR but not on the CDS, resulting in an extremely low translational efficiency (log2TE = \u22123.6).",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most notable examples of translational silencing is the eIF2\u03b1 kinase IK1 (PF14_0423) for which ribosome footprints accumulate at the 5\u2032 leader and 3\u2032 UTR but not on the CDS, resulting in an extremely low translational efficiency (log2TE = \u22123.6) despite relatively high transcript abundance across all stages (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "63c04402-be87-41a9-8176-02f97bbfda9a",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C41",
+      "claim": "Protein levels of EVP1 have been shown to be undetectable.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein levels, however, have been shown to be undetectable (Tamez et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tamez et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "def86988-a595-40b4-b554-e12e9e698798",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C42",
+      "claim": "Translational efficiencies of EVP1 were low across all stages and lowest in rings and early trophozoites (log2TE = \u22122.6 and \u22122.9, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we find that translational efficiencies of this gene were low across all stages and lowest in rings and early trophozoites (log2TE = \u22122.6 and \u22122.9, respectively) demonstrating that post-transcriptional regulation at the level of translation is, at least in part, responsible for its scarcity as a protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 5\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "16a4798c-fc31-4609-af11-2fd8965432a0",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C43",
+      "claim": "A search for mass spectrometric data showed no evidence for \u223c70% of translationally down-regulated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed a search for mass spectrometric data showed no evidence for \u223c70% of genes in this category (Aurrecoechea et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Aurrecoechea et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "38957aa6-26c5-4c5d-8937-050cf44407f0",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C44",
+      "claim": "Previous proteomic studies show protein evidence in the blood stages for almost all (171 of 177) well-translated genes identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous proteomic studies show protein evidence in the blood stages for almost all (171 of 177) well-translated genes identified here (Aurrecoechea et al., 2009; Pease et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Aurrecoechea et al., 2009; Pease et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "8c697ee0-2bd2-4473-9bba-41016a5d9803",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C45",
+      "claim": "Among the top ten most highly translated genes are proteins involved in merozoite egress and invasion MSP3, 6, 7, and 9, serine repeat antigen 5 (SERA5), and RAP1, 2, and 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the top ten most highly translated genes are proteins involved in merozoite egress and invasion MSP3, 6, 7, and 9 (merozoite surface proteins PF10_0345, PF10_0346, PF13_0197, and PFL1385c), serine repeat antigen 5 (SERA5, PFB0340c), and RAP1, 2, and 3 (PF14_0102, PFE0080c, and PFE0075c, respectively) (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "62576f89-abde-4b97-b8cc-c9269c347a6c",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C46",
+      "claim": "73 (41%) of all translationally up-regulated genes can be assigned to the repertoire of canonical functions for merozoite egress and invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 73 (41%) of all translationally up-regulated genes can be assigned to the repertoire of canonical functions for merozoite egress and invasion described to date (Yeoh et al., 2007; Blackman, 2008; Hu et al., 2010; Farrow et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yeoh et al., 2007; Blackman, 2008; Hu et al., 2010; Farrow et al., 2011 and data analysis",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "8f0922a4-ed1b-4b3e-b8a8-b1420fc79118",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C47",
+      "claim": "For all genes in the merozoite egress and invasion set, maximum mRNA abundance is found during the late stages of the IDC (69 schizont and 4 merozoite stage mRNAs) yet for the majority (50, 70%) peak translational efficiency occurs in rings.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, for all genes in this set, maximum mRNA abundance is found during the late stages of the IDC (69 schizont and 4 merozoite stage mRNAs) yet for the majority (50, 70%) peak translational efficiency occurs in rings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "cafb84e2-42e3-4d30-adff-125af413d661",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C48",
+      "claim": "Peptides for most of these merozoite function proteins (58 of 73) have been detected in rings.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, peptides for most of these merozoite function proteins (58 of 73) have been detected in rings (Oehring et al., 2012; Pease et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Oehring et al., 2012; Pease et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "f066f920-eede-475d-bc3a-90b0f3fc2f67",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C49",
+      "claim": "5\u2032 leaders are on average longer than 3\u2032 UTRs in each of the stages.",
+      "claim_type": "EXPLICIT",
+      "source": "5\u2032 leaders are on average longer than 3\u2032 UTRs in each of the stages and median lengths across stages vary to a larger degree for 5\u2032 leaders (from 607 to 1040 nt) than for 3\u2032 UTRs (518\u2013622 nt).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "cf91bd34-0cc2-4229-a29b-557cae520846",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C50",
+      "claim": "The longest 5\u2032 mRNA leader was measured in late trophozoites (8229 nt) for the Ap2 transcription factor, PF11_0404.",
+      "claim_type": "EXPLICIT",
+      "source": "The longest 5\u2032 mRNA leader was measured in late trophozoites (8229 nt) for the Ap2 transcription factor, PF11_0404",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "fda1ae92-c635-46fa-a8cd-253ff06abd59",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C51",
+      "claim": "The longest 3\u2032 UTR stretched 4773 nt for 60S ribosomal protein L7-3, PF14_0231, in rings.",
+      "claim_type": "EXPLICIT",
+      "source": "and the longest 3\u2032 UTR stretched 4773 nt for 60S ribosomal protein L7-3, PF14_0231, in rings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "dcb65f51-68f3-4b6b-ba2b-8946dad3ae2c",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C52",
+      "claim": "More than 80% of the ribosome footprints in rings, early trophozoites, late trophozoites, and schizonts, were mapped to CDS regions of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 80% of the ribosome footprints in rings, early trophozoites, late trophozoites, and schizonts, were mapped to CDS regions of the genome, except in merozoites, where only 68% were mapped to the CDS (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "b40403a7-123a-4335-87f4-9ab8e74aca46",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C53",
+      "claim": "In merozoites, only 68% of ribosome footprints were mapped to the CDS.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 80% of the ribosome footprints in rings, early trophozoites, late trophozoites, and schizonts, were mapped to CDS regions of the genome, except in merozoites, where only 68% were mapped to the CDS (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "46c39b67-1f88-4577-b37c-d9a2a98ace18",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C54",
+      "claim": "On average less than 1% of all reads obtained were mapped to 3\u2032 UTRs in each stage.",
+      "claim_type": "EXPLICIT",
+      "source": "On average less than 1% of all reads obtained were mapped to 3\u2032 UTRs in each stage, and most transcripts had no observed footprints past the stop codon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "e52260db-7ba0-490b-8806-aa72ae29d591",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C55",
+      "claim": "Footprints were far more common in 5\u2032 leaders (9.1%, 4.8%, 7.5%, and 4.8% in rings, early trophozoites, late trophozoites, and schizonts, respectively) particularly in merozoites (23%).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, footprints were far more common in 5\u2032 leaders (9.1%, 4.8%, 7.5%, and 4.8% in rings, early trophozoites, late trophozoites, and schizonts, respectively) particularly in merozoites (23%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "e23b0225-6d9e-4083-b875-07a412194c79",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C56",
+      "claim": "36,086 possible uORF regions were defined in the 5\u2032 leaders of genes expressed during the P. falciparum IDC.",
+      "claim_type": "EXPLICIT",
+      "source": "We defined 36,086 possible uORF regions in the 5\u2032 leaders of genes expressed during the P. falciparum IDC using a liberal definition that includes any stretch of at least two amino acids, starting with an AUG codon (Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in Figure 7\u2014source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "2635bec6-3763-45e7-a25f-8d62c3b6fe5e",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C57",
+      "claim": "Half of the total ribosome footprint coverage in 5\u2032 leaders, in aggregate, or on a gene-by-gene basis did not overlap with predicted uORFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of stage, half of the total ribosome footprint coverage in 5\u2032 leaders, in aggregate, or on a gene-by-gene basis did not overlap with these predicted uORFs (Figure 7B, Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 7B and Figure 7\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "8699553a-049d-4cf8-a5c8-dd0347589251",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C58",
+      "claim": "No significant correlation exists between the number of uORFs per gene, the uORF lengths, or the degree to which ribosome density was enriched in uORFs with translational efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "We could find no significant correlation between the number of uORFs per gene, the uORF lengths, or the degree to which ribosome density was enriched in uORFs with translational efficiency (Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 7\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "8bb79432-98c7-4441-bf2f-52a084f1626f",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C59",
+      "claim": "Translation of the reported uORF present in the 5\u2032 leader sequence of the var2csa mRNA was validated.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, there exist at least two clear exceptions. First, we were able to validate translation of the reported uORF present in the 5\u2032 leader sequence of the var2csa mRNA which is expressed only in rings (Amulic et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 7\u2014figure supplement 4 and citation to Amulic et al., 2009",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "5774a9d1-e88d-4000-936a-7d1e81ec5066",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C60",
+      "claim": "The majority of ribosome footprint density on var2csa localizes to the uORF, while the var2csa coding sequence is largely devoid of footprints (log2TERings = \u22124.2).",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of ribosome footprint density localizes to this uORF, and to a second one just upstream, while the var2csa coding sequence is largely devoid of footprints (log2TERings = \u22124.2, Figure 7\u2014figure supplement 4), consistent with its translational repression during growth in the absence of plancental tissue.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 7\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "f435bd31-ab1c-4eb1-b851-d0f4f4e532fa",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C61",
+      "claim": "Ribosome footprint density on PFE1550w is concentrated on one of the 6 uORFs predicted in the 5\u2032 leader of this gene, 56 amino acids long.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, another striking example of uORF translation was found on PFE1550w (unknown function) for which the ratio of uORF to total 5\u2032 leader mapping reads is 0.9 (Figure 7\u2014figure supplement 4). Indeed, ribosome footprint density is concentrated on one of the 6 uORFs predicted in the 5\u2032 leader of this gene, 56 amino acids long.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 7\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "a3c43e68-cede-43f5-8656-a39758e80084",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C62",
+      "claim": "PFE1550w is translationally down-regulated in all stages (log2TE = \u22122.7 on average).",
+      "claim_type": "EXPLICIT",
+      "source": "This gene is also translationally down-regulated in all stages (log2TE = \u22122.7 on average).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "62ea3ecc-c0e0-4884-a595-6b44383913c4",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C63",
+      "claim": "5\u2032 ribosome density can be found on transcripts with 5\u2032 leaders completely devoid of AUGs, such as the highly translated aquaglyceroporin (log2TE = 3.8 and log25'RD = 2.9 in rings), and PFC0486c (log2TE = 1.6 and log25\u2032RD = 1.1 in rings).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact 5\u2032 ribosome density can be found on transcripts with 5\u2032 leaders completely devoid of AUGs, and thus, without uORFs by definition, such as the highly translated aquaglyceroporin (log2TE = 3.8 and log25'RD = 2.9 in rings), and PFC0486c (unknown function, log2TE = 1.6 and log25\u2032RD = 1.1 in rings) (Figure 7\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 7\u2014figure supplement 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "efec59ee-be7d-4cd8-b129-ff32929c29aa",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C64",
+      "claim": "Rings and merozoite stage parasites were found to express transcripts with the highest 5\u2032RD (mean log25\u2032RD \u22120.03, and 0.11, respectively) relative to early trophozoites, late trophozoites, and schizonts (mean log25\u2032RD \u22121.11, \u22120.26, \u22120.83).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, rings and merozoite stage parasites were found to express transcripts with the highest 5\u2032RD (mean log25\u2032RD \u22120.03, and 0.11, respectively) relative to early trophozoites, late trophozoites, and schizonts (mean log25\u2032RD \u22121.11, \u22120.26, \u22120.83), where the range of 5\u2032RD values is also narrower (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 8A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "7fc15e3a-7af8-4440-802e-ff0142a5044d",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C65",
+      "claim": "Among genes at the extremes of the 5\u2032RD distributions (mean \u00b1 1 SD), 66% of translationally up-regulated and 40% of translationally down-regulated transcripts were found.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, among genes at the extremes of the 5\u2032RD distributions (mean \u00b1 1 SD), we also found many of our identified translationally up- and down-regulated transcripts (66% and 40%, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "5facb8c4-9553-432e-bee9-b961a8dc669c",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C66",
+      "claim": "On average, 5\u2032RD was enriched on translationally up-regulated transcripts (mean log25\u2032RD = 0.83) and depleted for translationally down-regulated transcripts in all stages (mean log25\u2032RD = \u22121.11).",
+      "claim_type": "EXPLICIT",
+      "source": "On average, 5\u2032RD was enriched on translationally up-regulated transcripts (mean log25\u2032RD = 0.83) and depleted for translationally down-regulated transcripts in all stages (mean log25\u2032RD = \u22121.11), suggesting the possibility that 5\u2032RD is a byproduct of translational efficiency itself (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 8B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "95f07ec0-cb7f-4ffc-aee5-3bd3b07a629e",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C67",
+      "claim": "5\u2032RD positively correlates, albeit moderately, with translational efficiency in all stages, particularly in rings and merozoites (r = 0.51 and 0.49, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "In order to determine whether a direct relationship between 5\u2032RD and translational efficiency of the downstream ORF exists, we compared these values for each gene. 5\u2032RD positively correlates, albeit moderately, with translational efficiency in all stages, particularly in rings and merozoites (r = 0.51 and 0.49, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 8C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "b432ee95-b525-48a5-9cf8-49c34512fcbc",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C68",
+      "claim": "The largest overlap between high 5\u2032RD values and translationally up-regulated genes occurred in rings where the highest 5\u2032RD values were found in 43% (31 genes) of the translationally up-regulated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest overlap occurred in rings where the highest 5\u2032RD values were found in 43% (31 genes) of the translationally up-regulated genes, including MSP6, AQP, and SERA5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "50b4dec8-352c-4828-b040-85daa441d153",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C69",
+      "claim": "19 genes were found with coverage in a sliding window of 30 nt that was greater in the 3\u2032 UTR than the CDS.",
+      "claim_type": "EXPLICIT",
+      "source": "We systematically searched for transcripts for which coverage, in a sliding window of 30 nt, was greater in the 3\u2032 UTR than the CDS, and found 19 genes meeting this criterion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "1622e715-9357-4683-95c5-006f53a71477",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C70",
+      "claim": "These 19 genes with 3\u2032 UTR ribosome density could be qualitatively divided into two categories: 14 with putative stop codon read-through and/or alternate stop codon usage and 5 genes for which the origin of the 3\u2032 UTR density is unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes could be qualitatively divided into two categories: 14 with putative stop codon read-through and/or alternate stop codon usage and 5 genes for which the origin of the 3\u2032 UTR density is unclear (listed in Figure 9\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in Figure 9\u2014source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "264ccabb-4011-49c8-a8f1-ba4b3b17a4ef",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C71",
+      "claim": "For 16 of the 19 genes with 3\u2032 UTR ribosome density, no significant difference in footprint size distributions localized to the CDS compared with the 3\u2032 UTR was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 16 of the 19 genes we observed no significant difference in footprint size distributions localized to the CDS compared with the 3\u2032 UTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 9\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "95b7fd3e-7af0-46dc-ae08-958222509d5c",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C72",
+      "claim": "For three genes (MAL13P1.206, PFD0085c, and PF13_0160), 3\u2032 UTR footprint size distributions were divergent from those on the CDS, implying that footprints found on these genes' 3\u2032 UTRs may be produced by nuclease protection of these regions by factors other than ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "For the remaining three genes, the sodium-dependent phosphate transporter (MAL13P1.206), the acyl-Coa synthetase (PFD0085c), and the conserved plasmodium protein (PF13_0160), 3\u2032 UTR footprint size distributions were divergent from those on the CDS, implying that footprints found on these genes' 3\u2032 UTRs may be produced by nuclease protection of these regions by factors other than ribosomes that co-sediment with 80S ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 9\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "1ce68491-a290-41c4-beab-44a0cee06517",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C73",
+      "claim": "84 antisense transcripts to several known ORFs were detected using a 16 rM threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the 16 rM threshold, we detected 84 antisense transcripts to several known ORFs (listed in Figure 10\u2014source data 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in Figure 10\u2014source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "4f959a7b-fe96-4852-93c7-fdf25ddc12eb",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C74",
+      "claim": "The merozoite stage contained the highest number of antisense transcripts (46), and the fewest (13) were found in early trophozoites.",
+      "claim_type": "EXPLICIT",
+      "source": "The merozoite stage contained the highest number of antisense transcripts (46), and the fewest (13) were found in early trophozoites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "f69954cc-09a5-4326-b62f-36916122d396",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C75",
+      "claim": "In 63% of antisense transcript instances, the putative antisense transcript actually emanates from the 5\u2032 leader or 3\u2032 UTR of a neighboring gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Manual inspection revealed that in 63% of these instances, the putative antisense transcript actually emanates from the 5\u2032 leader or 3\u2032 UTR of a neighboring gene (not defined by the HMM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "cff8b7a8-4f54-4139-bfce-247cddcc82f5",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C76",
+      "claim": "Overall, antisense transcripts showed no effect on mRNA abundance and translational efficiencies of the cognate sense transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "We next interrogated the impact of this set of antisense transcripts. Overall, antisense transcripts showed no effect on mRNA abundance and translational efficiencies of the cognate sense transcript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "3638befc-121c-4961-b8a9-dedd0d4f2029",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C78",
+      "claim": "W2 strain cultures were maintained in Hyperflasks at 37\u00b0C, 5% O2, and 5% CO2, to maximum 10\u201315% parasitemia at 5% hematocrit.",
+      "claim_type": "EXPLICIT",
+      "source": "W2 strain cultures were maintained in Hyperflasks (Corning, Corning, NY) in 500 ml RPMIc (RPMI 1640 media supplemented with 0.25% Albumax II (GIBCO, Grand Island, NY), 2 g/L sodium bicarbonate, 0.1 mM hypoxanthine, 25 mM HEPES (pH 7.4), and 50 \u03bcg/L gentamycin), at 37\u00b0C, 5% O2, and 5% CO2, to maximum 10\u201315% parasitemia at 5% hematocrit (HC) and frequent media changes (at least every 6\u20138 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "c916453e-8073-40ec-985d-0bc36597c554",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C79",
+      "claim": "Cells were synchronized by two consecutive sorbitol treatments for three generations, for a total of six treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were synchronized by two consecutive sorbitol treatments for three generations, for a total of six treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "b0cc74ae-d9cc-4d9d-a273-5432dae8872c",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C80",
+      "claim": "Independent time points containing \u223c1010 parasites were harvested 11, 21, 31, and 45 hr after maximum invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximum invasion, point at which half of the culture is either rings or schizonts, was defined as hour zero and independent time points containing \u223c1010 parasites were harvested 11, 21, 31, and 45 hr later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "df719a71-15d9-4777-acd7-6aeae9647834",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C81",
+      "claim": "Polysomes were isolated in the presence of the translation elongation inhibitor cycloheximide.",
+      "claim_type": "EXPLICIT",
+      "source": "Polysomes were isolated in the presence of the translation elongation inhibitor cycloheximide, then nuclease digested to produce monosomes, and sedimented by centrifugation on a sucrose gradient (Figure 1 and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described in Materials and methods and shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "d971ebaa-b3f8-4b9a-9b99-d6383d18ec29",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C82",
+      "claim": "RNA was extracted only from the fractions of the sucrose gradient containing the monosome peak to minimize isolation of RNA fragments bound by proteins other than 80S ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "To minimize isolation of RNA fragments bound by proteins other than 80S ribosomes, RNA was extracted only from the fractions of the sucrose gradient containing the monosome peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "e21ce770-12ad-475e-84f8-7b1053fe5083",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C83",
+      "claim": "The resulting \u223c30 nt fragments of RNA, corresponding to ribosome footprints, were processed into strand-specific deep sequencing libraries in parallel with the mRNA samples, fragmented to \u223c30 nt for consistency.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting \u223c30 nt fragments of RNA, corresponding to ribosome footprints, were processed into strand-specific deep sequencing libraries in parallel with the mRNA samples, fragmented to \u223c30 nt for consistency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "b8017fda-331d-45f4-a335-41d965a0710e",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C85",
+      "claim": "Genes with fewer than 80% mappable bases (248 genes) or any overlapping non-CDS feature on the same strand (77 genes) were excluded from rpkM calculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mRNA and ribosome footprint rpkMs were calculated as in Mortazavi et al. (2008), excluding the first 50 bases of each gene to eliminate bias introduced by the observed ribosome accumulation peak near the start codon. Genes with fewer than 80% mappable bases (248 genes) or any overlapping non-CDS feature on the same strand (77 genes) were excluded from this calculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "613b39cd-eed1-464b-a4c1-93a5dc91e99c",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C86",
+      "claim": "The criteria for inclusion of a gene into the phaseogram was mRNA \u2265 32 rM, >2 peak to trough ratios, and Pearson correlation coefficient >0.8 with the expression profiles of the two neighboring genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The criteria for inclusion of a gene into the phaseogram was mRNA \u2265 32 rM, >2 peak to trough ratios, and Pearson correlation coefficient >0.8 with the expression profiles of the two neighboring genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "52ce50ed-a05a-4a6f-9a4c-e76052a05e1b",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C87",
+      "claim": "The HMM was built using RNA-Seq data obtained in this study and two states: transcript (t) or intergenic (i) with three possible emissions.",
+      "claim_type": "EXPLICIT",
+      "source": "The HMM was built using RNA-Seq data obtained in this study and two states: transcript (t) or intergenic (i) with three possible emissions: (1) read present, (2) read not present but position is unmappable, (3) read not present but the position is mappable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "f1904985-f791-45c0-99b0-407525a24cbf",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C88",
+      "claim": "The Viterbi algorithm was applied to predict the optimal path of transcript tracks per time point with a 10 nt window resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied the Viterbi algorithm to predict the optimal path of transcript tracks per time point with a 10 nt window resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "33eb2305-11ec-452c-b3aa-9b5ca317cff3",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C89",
+      "claim": "Data are available for download at NCBI GEO, accession #GSE58402.",
+      "claim_type": "EXPLICIT",
+      "source": "Data are available for download at NCBI GEO, accession #GSE58402.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "bfc96f5c-2c1d-4e1f-aea8-460a007112a0",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C90",
+      "claim": "Fastq files for genomic DNA sequencing are available for download at NCBI SRA, accession #SRP042946.",
+      "claim_type": "EXPLICIT",
+      "source": "Fastq files are available for download at NCBI SRA, accession #SRP042946.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "1da4aef0-389c-46db-b9e6-a117566a503b",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C91",
+      "claim": "The 30 nt fragmentation and RNA-ligase-based library preparation method employed affords exquisite strand specificity by minimizing artifacts associated with random priming during reverse transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The 30 nt fragmentation and RNA-ligase-based library preparation method employed here affords exquisite strand specificity by minimizing artifacts associated with random priming during reverse transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the methodology described",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "caff12ee-56ee-465a-bd5e-d3e07cd4700c",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C92",
+      "claim": "The highest expressed gene in the data set, histone h2a (PFF0860c), yielded a total of 765,510 reads on the sense strand, and only two reads on the antisense strand, corresponding to a sense:antisense ratio greater than 105.",
+      "claim_type": "EXPLICIT",
+      "source": "As evidence of this specificity, the highest expressed gene in our data set, histone h2a (PFF0860c), yielded a total of 765,510 reads on the sense strand, and only two reads on the antisense strand, corresponding to a sense:antisense ratio greater than 105.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "b5602670-b99a-4b45-acf1-a0b293ba7e8b",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C93",
+      "claim": "The antisense transcript to pfs16 (PFD0310w) was confirmed by strand-specific RT-PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "We based our threshold on the presence of an antisense transcript to the sexual stage specific gene pfs16 (PFD0310w) confirmed by strand-specific RT-PCR (Figure 10\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 10\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "168dc207-a82a-445c-9496-8373ed218397",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "claim_id": "C94",
+      "claim": "The antisense transcript to pfs16 is predicted by the HMM to be \u223c4 kb, extending over the complete coding sequence and beyond and with a coverage level of 23 rM over the sense CDS.",
+      "claim_type": "EXPLICIT",
+      "source": "This antisense is predicted by the HMM to be \u223c4 kb, extending over the complete coding sequence and beyond and with a coverage level of 23 rM over the sense CDS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "68020dfd-2a5b-413a-96ab-564d79d5a02e",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully adapted ribosome profiling to P. falciparum asexual blood stages, generating highly reproducible data across five developmental stages (rings, early trophozoites, late trophozoites, schizonts, and purified merozoites) with >92% unique mapping of 30 nt reads and high correlation between biological replicates (r = 0.94-0.99).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C92 collectively demonstrate rigorous experimental design with appropriate controls, biological replicates, synchronization protocols, and computational methods. The high mapping efficiency (C23), reproducibility (C25), and strand specificity (C91-C92) validate the technical quality. The use of cycloheximide, monosome isolation, and parallel mRNA/ribosome profiling (C81-C83) follows established best practices.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "0411529f-adf7-4dfc-b3f8-1b386dce5c45",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Transcription and translation are tightly coupled during the P. falciparum IDC, with 77% of genes showing high correlation (r \u2265 0.7) between mRNA abundance and ribosome footprint density across all stages (r = 0.85-0.93), extending the transcriptional cascade to 3110 genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C28, and C29 are well-supported by the data shown in Figures 2 and 3, with high Pearson correlations across all stages. The comparison with prior microarray data (C26) and extension of the transcriptome (C27) provide additional validation. The statistical measures are appropriate and reproducible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "2a22665f-51f3-49bb-85fa-86d1d0f00c06",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Only 8.3% (301 genes) of the transcriptome exhibits translational regulation, with 177 genes translationally up-regulated and 124 down-regulated. Translational efficiency distributions are comparable to other eukaryotes and remain stable properties of individual mRNAs across developmental stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C32, and C33 are supported by the TE analysis in Figure 4, using a statistically justified threshold (\u00b12 SD). The comparison to other eukaryotes (C30) and observation that TE remains stable across stages (C33) are well-documented. The 10% figure in C20 is consistent with the 8.3% in C32 (301/3605 genes).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "c5adc429-0635-4625-8a02-7c7613c6ec45",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ribosome profiling identifies specific examples of translational regulation including pseudogenes (PfRh3, RESA2) producing truncated proteins, translationally silenced genes (IK1, EVP1), and validates that translationally down-regulated genes lack proteomic evidence while up-regulated genes show strong proteomic support.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C44 provide multiple well-documented examples with supporting genomic sequencing data (C38), ribosome profiling patterns (C34, C40), and proteomic validation (C36, C41, C43, C44). The integration of ribosome profiling with genomic DNA sequencing for RESA2 (C38-C39) is particularly strong. The proteomic correlations (C43-C44) provide orthogonal validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "b05a23f0-f678-44d3-acb7-0e8e49729657",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Translationally up-regulated genes are enriched for merozoite egress and invasion functions (73 genes, 41% of up-regulated genes), with peak mRNA in schizonts but peak translational efficiency in rings, and corresponding peptide detection in rings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 describe a coherent biological pattern supported by functional enrichment analysis (C46), temporal profiling (C47), and proteomic validation (C48). The observation that 70% of these genes have peak TE in rings despite peak mRNA in schizonts represents a novel finding with strong supporting evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "f34d2a88-b4a5-463a-b35f-67a469ecf88d",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The HMM-based analysis defined 5' leaders and 3' UTRs for 3569 genes, revealing that 5' leaders are longer than 3' UTRs and that ribosome footprints are enriched in 5' leaders (9-23% of reads) compared to 3' UTRs (<1%), particularly in merozoites (23% in 5' leaders, 68% in CDS).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C55 are supported by the HMM analysis and read distribution data in Figures 6-7. The systematic approach to defining UTR boundaries and the quantification of ribosome distribution are methodologically sound. The merozoite-specific enrichment in 5' leaders (C53, C55) is a notable finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "91b96ce9-22ec-4b3c-a04c-77065df4d9b2",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Despite identifying 36,086 predicted uORFs, half of 5' leader ribosome density does not overlap with uORFs, and no significant correlation exists between uORF features and translational efficiency. Only two clear exceptions (var2csa and PFE1550w) show uORF-mediated translational repression, and 5' ribosome density can occur on leaders completely devoid of AUGs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C63 systematically demonstrate that uORFs do not explain 5' ribosome density in P. falciparum, contrary to expectations from other organisms. The lack of correlation (C58), identification of specific exceptions (C59-C62), and examples without AUGs (C63) are well-documented in Figure 7 and supplements. This represents a significant mechanistic finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "e721baf7-bc7b-41da-b913-cda166d9fde9",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "5' ribosome density (5'RD) is highest in rings and merozoites, moderately correlates with translational efficiency (r = 0.49-0.51), is enriched on translationally up-regulated genes and depleted on down-regulated genes, with 43% of up-regulated genes in rings showing high 5'RD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 describe the relationship between 5'RD and TE with appropriate statistical measures shown in Figure 8. The moderate correlation (C67) and enrichment patterns (C66, C68) are clearly documented. The authors appropriately note that correlation is moderate and exceptions exist, avoiding overinterpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "f72ef174-3324-42f2-8949-e5466fab930d",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "3' UTR ribosome occupancy is rare, with only 19 genes showing significant 3' UTR density. Of these, 14 show putative stop codon read-through with ribosome-like footprint distributions, while 3 genes show divergent footprint distributions suggesting non-ribosomal RNA-binding proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 are supported by systematic analysis and footprint size distribution comparisons in Figure 9. The distinction between ribosome-derived and potentially non-ribosomal footprints (C72) based on size distributions is methodologically appropriate and demonstrates careful interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "6632bbf2-fe02-4268-9e19-8601c96cf313",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "84 antisense transcripts were detected using strand-specific sequencing, with 63% emanating from neighboring gene UTRs. Antisense transcripts show no effect on cognate sense transcript abundance or translational efficiency, validated by RT-PCR for pfs16.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76, C93-C94 are supported by the strand-specific library preparation (C91-C92), systematic analysis, and RT-PCR validation (C93). The finding that most antisense reads derive from neighboring UTRs (C75) and show no regulatory effect (C76) is clearly documented, though the authors appropriately note potential single-cell heterogeneity limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    },
+    {
+      "id": "703eac83-263e-4136-96c7-17037e4a5c2f",
+      "content_id": "4a71182f-64fb-42de-89ea-095a741f0cf1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction establishes prior knowledge about P. falciparum transcriptional cascades, post-transcriptional regulation mechanisms, and limitations of previous approaches including polysome profiling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C17 are background claims supported by appropriate citations to prior literature. These establish the context and rationale for the current study. The citations appear accurate and relevant to the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:02:47.961632Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ad8807e4-e93e-458e-9421-7363e6852969",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "9fff9737-ba8d-401e-afe3-0da2d8dfa12b",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "61e990c8-0d6e-462a-b58a-d595195fabb3",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "11f7bc6a-6f55-41f4-b513-e7f3e80deb06",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "3a111cfd-780a-4d41-8111-c518e4b0def4",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "3638befc-121c-4961-b8a9-dedd0d4f2029",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "c916453e-8073-40ec-985d-0bc36597c554",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "b0cc74ae-d9cc-4d9d-a273-5432dae8872c",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "df719a71-15d9-4777-acd7-6aeae9647834",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "d971ebaa-b3f8-4b9a-9b99-d6383d18ec29",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "e21ce770-12ad-475e-84f8-7b1053fe5083",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "b8017fda-331d-45f4-a335-41d965a0710e",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "613b39cd-eed1-464b-a4c1-93a5dc91e99c",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "52ce50ed-a05a-4a6f-9a4c-e76052a05e1b",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "f1904985-f791-45c0-99b0-407525a24cbf",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "33eb2305-11ec-452c-b3aa-9b5ca317cff3",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "bfc96f5c-2c1d-4e1f-aea8-460a007112a0",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "1da4aef0-389c-46db-b9e6-a117566a503b",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "caff12ee-56ee-465a-bd5e-d3e07cd4700c",
+      "result_id": "68020dfd-2a5b-413a-96ab-564d79d5a02e"
+    },
+    {
+      "claim_id": "fc21dab9-daa7-4f2f-877f-aa23a25e9819",
+      "result_id": "0411529f-adf7-4dfc-b3f8-1b386dce5c45"
+    },
+    {
+      "claim_id": "a2932615-f717-489e-9483-4ebfa9442ea5",
+      "result_id": "0411529f-adf7-4dfc-b3f8-1b386dce5c45"
+    },
+    {
+      "claim_id": "1179a9fe-af85-4fa3-89f7-a59a7c95e2d7",
+      "result_id": "0411529f-adf7-4dfc-b3f8-1b386dce5c45"
+    },
+    {
+      "claim_id": "89d7fc2b-724d-455c-8c8a-febc217132bc",
+      "result_id": "0411529f-adf7-4dfc-b3f8-1b386dce5c45"
+    },
+    {
+      "claim_id": "ccf0d613-ab7d-4a8b-864b-79edd1b48aac",
+      "result_id": "0411529f-adf7-4dfc-b3f8-1b386dce5c45"
+    },
+    {
+      "claim_id": "ddfcc663-9e2b-4cca-b66b-bc1e6d7d4cb0",
+      "result_id": "2a22665f-51f3-49bb-85fa-86d1d0f00c06"
+    },
+    {
+      "claim_id": "d6f54f77-9cab-46ba-869a-f129a52bf8e9",
+      "result_id": "2a22665f-51f3-49bb-85fa-86d1d0f00c06"
+    },
+    {
+      "claim_id": "91af8591-6a2b-46e7-9020-2cbba38d8e83",
+      "result_id": "2a22665f-51f3-49bb-85fa-86d1d0f00c06"
+    },
+    {
+      "claim_id": "624d5ff6-3319-454c-95b8-31cb2c9e0b76",
+      "result_id": "2a22665f-51f3-49bb-85fa-86d1d0f00c06"
+    },
+    {
+      "claim_id": "ab0a9163-ed39-410d-8e78-891504f37953",
+      "result_id": "2a22665f-51f3-49bb-85fa-86d1d0f00c06"
+    },
+    {
+      "claim_id": "858c8d6f-f4f5-4745-bd88-c1aec719de84",
+      "result_id": "c5adc429-0635-4625-8a02-7c7613c6ec45"
+    },
+    {
+      "claim_id": "5cd3350a-522a-441a-b77a-15cf95c34fbd",
+      "result_id": "c5adc429-0635-4625-8a02-7c7613c6ec45"
+    },
+    {
+      "claim_id": "9318333e-3949-4163-9e47-2bc0a93e6859",
+      "result_id": "c5adc429-0635-4625-8a02-7c7613c6ec45"
+    },
+    {
+      "claim_id": "5b091060-406d-4c8b-ab1b-90daaf758a53",
+      "result_id": "c5adc429-0635-4625-8a02-7c7613c6ec45"
+    },
+    {
+      "claim_id": "a46db6be-d386-41ae-a1bf-4dacaee434bc",
+      "result_id": "c5adc429-0635-4625-8a02-7c7613c6ec45"
+    },
+    {
+      "claim_id": "e8402581-aec9-472e-849a-416311ac6638",
+      "result_id": "c5adc429-0635-4625-8a02-7c7613c6ec45"
+    },
+    {
+      "claim_id": "0ff525e1-634e-43da-acb9-4ba85aab2188",
+      "result_id": "c5adc429-0635-4625-8a02-7c7613c6ec45"
+    },
+    {
+      "claim_id": "63c04402-be87-41a9-8176-02f97bbfda9a",
+      "result_id": "c5adc429-0635-4625-8a02-7c7613c6ec45"
+    },
+    {
+      "claim_id": "def86988-a595-40b4-b554-e12e9e698798",
+      "result_id": "c5adc429-0635-4625-8a02-7c7613c6ec45"
+    },
+    {
+      "claim_id": "16a4798c-fc31-4609-af11-2fd8965432a0",
+      "result_id": "c5adc429-0635-4625-8a02-7c7613c6ec45"
+    },
+    {
+      "claim_id": "38957aa6-26c5-4c5d-8937-050cf44407f0",
+      "result_id": "c5adc429-0635-4625-8a02-7c7613c6ec45"
+    },
+    {
+      "claim_id": "8c697ee0-2bd2-4473-9bba-41016a5d9803",
+      "result_id": "b05a23f0-f678-44d3-acb7-0e8e49729657"
+    },
+    {
+      "claim_id": "62576f89-abde-4b97-b8cc-c9269c347a6c",
+      "result_id": "b05a23f0-f678-44d3-acb7-0e8e49729657"
+    },
+    {
+      "claim_id": "8f0922a4-ed1b-4b3e-b8a8-b1420fc79118",
+      "result_id": "b05a23f0-f678-44d3-acb7-0e8e49729657"
+    },
+    {
+      "claim_id": "cafb84e2-42e3-4d30-adff-125af413d661",
+      "result_id": "b05a23f0-f678-44d3-acb7-0e8e49729657"
+    },
+    {
+      "claim_id": "f066f920-eede-475d-bc3a-90b0f3fc2f67",
+      "result_id": "f34d2a88-b4a5-463a-b35f-67a469ecf88d"
+    },
+    {
+      "claim_id": "cf91bd34-0cc2-4229-a29b-557cae520846",
+      "result_id": "f34d2a88-b4a5-463a-b35f-67a469ecf88d"
+    },
+    {
+      "claim_id": "fda1ae92-c635-46fa-a8cd-253ff06abd59",
+      "result_id": "f34d2a88-b4a5-463a-b35f-67a469ecf88d"
+    },
+    {
+      "claim_id": "dcb65f51-68f3-4b6b-ba2b-8946dad3ae2c",
+      "result_id": "f34d2a88-b4a5-463a-b35f-67a469ecf88d"
+    },
+    {
+      "claim_id": "b40403a7-123a-4335-87f4-9ab8e74aca46",
+      "result_id": "f34d2a88-b4a5-463a-b35f-67a469ecf88d"
+    },
+    {
+      "claim_id": "46c39b67-1f88-4577-b37c-d9a2a98ace18",
+      "result_id": "f34d2a88-b4a5-463a-b35f-67a469ecf88d"
+    },
+    {
+      "claim_id": "e52260db-7ba0-490b-8806-aa72ae29d591",
+      "result_id": "f34d2a88-b4a5-463a-b35f-67a469ecf88d"
+    },
+    {
+      "claim_id": "e23b0225-6d9e-4083-b875-07a412194c79",
+      "result_id": "91b96ce9-22ec-4b3c-a04c-77065df4d9b2"
+    },
+    {
+      "claim_id": "2635bec6-3763-45e7-a25f-8d62c3b6fe5e",
+      "result_id": "91b96ce9-22ec-4b3c-a04c-77065df4d9b2"
+    },
+    {
+      "claim_id": "8699553a-049d-4cf8-a5c8-dd0347589251",
+      "result_id": "91b96ce9-22ec-4b3c-a04c-77065df4d9b2"
+    },
+    {
+      "claim_id": "8bb79432-98c7-4441-bf2f-52a084f1626f",
+      "result_id": "91b96ce9-22ec-4b3c-a04c-77065df4d9b2"
+    },
+    {
+      "claim_id": "5774a9d1-e88d-4000-936a-7d1e81ec5066",
+      "result_id": "91b96ce9-22ec-4b3c-a04c-77065df4d9b2"
+    },
+    {
+      "claim_id": "f435bd31-ab1c-4eb1-b851-d0f4f4e532fa",
+      "result_id": "91b96ce9-22ec-4b3c-a04c-77065df4d9b2"
+    },
+    {
+      "claim_id": "a3c43e68-cede-43f5-8656-a39758e80084",
+      "result_id": "91b96ce9-22ec-4b3c-a04c-77065df4d9b2"
+    },
+    {
+      "claim_id": "62ea3ecc-c0e0-4884-a595-6b44383913c4",
+      "result_id": "91b96ce9-22ec-4b3c-a04c-77065df4d9b2"
+    },
+    {
+      "claim_id": "efec59ee-be7d-4cd8-b129-ff32929c29aa",
+      "result_id": "e721baf7-bc7b-41da-b913-cda166d9fde9"
+    },
+    {
+      "claim_id": "7fc15e3a-7af8-4440-802e-ff0142a5044d",
+      "result_id": "e721baf7-bc7b-41da-b913-cda166d9fde9"
+    },
+    {
+      "claim_id": "5facb8c4-9553-432e-bee9-b961a8dc669c",
+      "result_id": "e721baf7-bc7b-41da-b913-cda166d9fde9"
+    },
+    {
+      "claim_id": "95f07ec0-cb7f-4ffc-aee5-3bd3b07a629e",
+      "result_id": "e721baf7-bc7b-41da-b913-cda166d9fde9"
+    },
+    {
+      "claim_id": "b432ee95-b525-48a5-9cf8-49c34512fcbc",
+      "result_id": "e721baf7-bc7b-41da-b913-cda166d9fde9"
+    },
+    {
+      "claim_id": "50b4dec8-352c-4828-b040-85daa441d153",
+      "result_id": "f72ef174-3324-42f2-8949-e5466fab930d"
+    },
+    {
+      "claim_id": "1622e715-9357-4683-95c5-006f53a71477",
+      "result_id": "f72ef174-3324-42f2-8949-e5466fab930d"
+    },
+    {
+      "claim_id": "264ccabb-4011-49c8-a8f1-ba4b3b17a4ef",
+      "result_id": "f72ef174-3324-42f2-8949-e5466fab930d"
+    },
+    {
+      "claim_id": "95b7fd3e-7af0-46dc-ae08-958222509d5c",
+      "result_id": "f72ef174-3324-42f2-8949-e5466fab930d"
+    },
+    {
+      "claim_id": "1ce68491-a290-41c4-beab-44a0cee06517",
+      "result_id": "6632bbf2-fe02-4268-9e19-8601c96cf313"
+    },
+    {
+      "claim_id": "4f959a7b-fe96-4852-93c7-fdf25ddc12eb",
+      "result_id": "6632bbf2-fe02-4268-9e19-8601c96cf313"
+    },
+    {
+      "claim_id": "f69954cc-09a5-4326-b62f-36916122d396",
+      "result_id": "6632bbf2-fe02-4268-9e19-8601c96cf313"
+    },
+    {
+      "claim_id": "cff8b7a8-4f54-4139-bfce-247cddcc82f5",
+      "result_id": "6632bbf2-fe02-4268-9e19-8601c96cf313"
+    },
+    {
+      "claim_id": "b5602670-b99a-4b45-acf1-a0b293ba7e8b",
+      "result_id": "6632bbf2-fe02-4268-9e19-8601c96cf313"
+    },
+    {
+      "claim_id": "168dc207-a82a-445c-9496-8373ed218397",
+      "result_id": "6632bbf2-fe02-4268-9e19-8601c96cf313"
+    },
+    {
+      "claim_id": "991057a3-1f48-4217-9924-552050bea6d2",
+      "result_id": "703eac83-263e-4136-96c7-17037e4a5c2f"
+    },
+    {
+      "claim_id": "013ffe02-6e34-4735-979b-7229f0a2867a",
+      "result_id": "703eac83-263e-4136-96c7-17037e4a5c2f"
+    },
+    {
+      "claim_id": "00aa7b6b-3d02-493f-9b0c-20daa5c05dcd",
+      "result_id": "703eac83-263e-4136-96c7-17037e4a5c2f"
+    },
+    {
+      "claim_id": "2703b0d9-bc86-442f-8a81-1727c5c538d4",
+      "result_id": "703eac83-263e-4136-96c7-17037e4a5c2f"
+    },
+    {
+      "claim_id": "22822d26-8461-42ec-a618-bf7d586a47ee",
+      "result_id": "703eac83-263e-4136-96c7-17037e4a5c2f"
+    },
+    {
+      "claim_id": "8037958a-4288-42b5-ac3c-c07d6846a1b9",
+      "result_id": "703eac83-263e-4136-96c7-17037e4a5c2f"
+    },
+    {
+      "claim_id": "8e8f4f3b-2395-4b39-97af-d8b297cb4b43",
+      "result_id": "703eac83-263e-4136-96c7-17037e4a5c2f"
+    },
+    {
+      "claim_id": "d74ae5c7-d4b9-4d85-8738-002f93c4c268",
+      "result_id": "703eac83-263e-4136-96c7-17037e4a5c2f"
+    },
+    {
+      "claim_id": "348be1e4-2fce-40ac-ab3f-128f845c52ad",
+      "result_id": "703eac83-263e-4136-96c7-17037e4a5c2f"
+    },
+    {
+      "claim_id": "f8b74f8e-9f5d-42fa-8b06-15af927f051d",
+      "result_id": "703eac83-263e-4136-96c7-17037e4a5c2f"
+    },
+    {
+      "claim_id": "3ddd37d0-3b24-47d8-be6b-19f387e10284",
+      "result_id": "703eac83-263e-4136-96c7-17037e4a5c2f"
+    },
+    {
+      "claim_id": "8363d95c-cb57-4dcd-85b0-7821c50b3250",
+      "result_id": "703eac83-263e-4136-96c7-17037e4a5c2f"
+    },
+    {
+      "claim_id": "3dc71f77-d448-43ab-beea-f69aac8fd42b",
+      "result_id": "703eac83-263e-4136-96c7-17037e4a5c2f"
+    },
+    {
+      "claim_id": "7bc2a4b9-3ce6-459c-ac7a-8d5279148c52",
+      "result_id": "703eac83-263e-4136-96c7-17037e4a5c2f"
+    },
+    {
+      "claim_id": "4009266c-4991-42bb-b49e-9a42989ba0fa",
+      "result_id": "703eac83-263e-4136-96c7-17037e4a5c2f"
+    },
+    {
+      "claim_id": "86869a2f-0823-463b-89f2-f7864c153960",
+      "result_id": "703eac83-263e-4136-96c7-17037e4a5c2f"
+    },
+    {
+      "claim_id": "f45651c0-73e6-452c-a95b-72c50155d4d9",
+      "result_id": "703eac83-263e-4136-96c7-17037e4a5c2f"
+    }
+  ],
+  "comparisons": []
+}

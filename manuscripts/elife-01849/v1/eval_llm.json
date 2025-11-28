@@ -1,0 +1,402 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C16"
+    ],
+    "result": "The study identifies ppk29 as encoding a Drosophila DEG/ENaC sodium channel and sei as encoding the sole fly homolog of the human hERG potassium channel. These are established facts from prior literature that provide the molecular context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6, and C16 are well-established facts from prior literature (cited appropriately) that correctly identify the molecular nature of the two genes under investigation. These claims provide essential background knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C88",
+      "C89"
+    ],
+    "result": "The genes sei and ppk29 are convergently transcribed on opposite DNA strands with complementary 3'UTRs that overlap by 88 nucleotides, confirmed by cDNA sequence analysis and 3'RACE experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19, C88-C89 are directly supported by genomic data in Figure 1A, including analysis of deposited cDNA sequences and experimental 3'RACE validation. The 88-nucleotide overlap is precisely documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The genes sei and ppk29 are co-expressed in neuronal tissues including cell lines, the central nervous system, brain neurons, and motor neurons in vivo, contradicting prior suggestions that ppk29 function is sensory-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are supported by multiple lines of evidence: modENcode data (Figure 1\u2014figure supplement 1A), FlyExpress data (Figure 1\u2014figure supplement 1B), in situ hybridization (Figure 1B-D), and TRAP experiments (Figure 1E). The convergence of these independent methods provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Temperature adaptation experiments show that sei and ppk29 exhibit opposite transcriptional responses to temperature changes: at 37\u00b0C sei increases while ppk29 decreases, and at 13\u00b0C the pattern reverses, suggesting they play opposing roles in temperature-dependent neuronal regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by qRT-PCR data in Figure 2B showing statistically significant opposite changes in mRNA levels at different temperatures. However, the causal interpretation (C26) is somewhat inferential and would benefit from additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Mutations in sei cause heat sensitivity with rapid seizures and paralysis, while ppk29 mutations confer protection from heat stress, demonstrating that these genes play opposing roles in the neuronal response to heat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are well-supported by behavioral data in Figure 3A and supplementary figures showing opposite phenotypes in multiple independent alleles. The use of multiple alleles and complementation tests (Figure 3\u2014figure supplement 1A-D) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Neurophysiological recordings show that at baseline (25\u00b0C) all genotypes have similar neuronal activity, but at 38\u00b0C wild-type neurons show modest increased activity, sei mutants become hyperexcitable, and ppk29 mutants show hypoexcitability (inability to increase firing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are directly supported by electrophysiological recordings in Figure 3B,C with appropriate statistical analysis. The data clearly demonstrate genotype-specific differences in temperature-dependent neuronal excitability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Larval locomotion assays confirm that sei and ppk29 affect behavioral sensitivity to heat stress through contrasting regulation of neuronal excitability: at 25\u00b0C all genotypes are normal, but at 38\u00b0C wild-type and sei mutants show seizure-like behavior while ppk29 mutants do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by video documentation and quantification in Figure 3\u2014figure supplement 1E,F. The larval data corroborate the adult behavioral and neurophysiological findings, strengthening the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "RNAi-mediated knockdown of sei or ppk29 specifically in neurons recapitulates the mutant phenotypes, demonstrating that the effects are neuron-specific and that quantitative changes in mRNA levels are sufficient to alter heat stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by RNAi experiments using the neuronal elav-GAL4 driver (Figure 3D). The tissue-specific knockdown producing identical phenotypes to mutations strongly supports neuronal specificity and mRNA-level regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The regulatory interaction between sei and ppk29 mRNAs is asymmetric: downregulation of ppk29 increases sei mRNA levels, but changes in sei do not affect ppk29 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by qRT-PCR data in Figure 3E,F showing that ppk29 mutations/knockdown increase sei mRNA but sei manipulations do not affect ppk29 mRNA. This asymmetry is a key finding but the mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The effects of sei and ppk29 on heat stress response are physiological rather than developmental, and mutants show no general locomotion defects at normal temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by adult-specific inducible RNAi experiments (Figure 3\u2014figure supplement 1G) and negative geotaxis assays (Figure 3\u2014figure supplement 2). These controls are important for ruling out developmental compensation and general motor defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Pharmacological blocking of SEI channels with hERG inhibitors phenocopies sei mutation heat sensitivity in wild-type flies and eliminates the protective effect in ppk29 mutants in a dose-dependent manner, indicating that ppk29-mediated protection depends on increased SEI channel activity rather than loss of PPK29 sodium currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by pharmacological experiments in Figure 4A and Figure 4\u2014figure supplement 1 using two different hERG blockers. The dose-dependent reversal of ppk29 protection provides strong evidence that SEI activity mediates the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Transgenic rescue experiments demonstrate that the ppk29 3'UTR alone is sufficient to rescue most of the protective effect of ppk29 mutation, while the coding sequence alone provides incomplete rescue, indicating that the main protective effect is mediated by 3'UTR-dependent regulation of SEI independent of PPK29 channel function, though PPK29 protein may contribute to excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by transgenic rescue data in Figure 4C. The differential rescue by 3'UTR alone versus coding sequence alone is a critical result demonstrating protein-independent regulation. However, the incomplete rescue by 3'UTR suggests additional complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The ppk29 transgenes affect sei function in trans, demonstrating that the two genes can interact at the transcript level independent of their chromosomal proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by the use of transgenes inserted at different chromosomal locations that still affect sei function. This is an important demonstration that the regulatory mechanism does not require cis chromosomal proximity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Unlike ppk29, sei rescue requires the coding sequence (with or without 3'UTR) but not the 3'UTR alone, confirming that sei is the focal physiological element requiring protein function and that the mRNA interaction is asymmetric.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by rescue experiments in Figure 4D. The requirement for sei protein but not ppk29 protein for function confirms the asymmetric relationship and identifies sei as the effector channel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Overexpression experiments show that sei coding sequence (but not 3'UTR alone) confers heat protection, while ppk29 3'UTR alone (but not coding sequence alone) induces heat sensitivity and reduces sei mRNA levels, demonstrating that elevated ppk29 3'UTR is sufficient to downregulate sei and affect physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by overexpression data in Figure 5A-C. The gain-of-function experiments complement the loss-of-function studies and provide strong evidence for 3'UTR-mediated regulation. The qRT-PCR data confirm the molecular mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Adult-specific inducible expression of ppk29 constructs demonstrates that the effects are physiological rather than developmental.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by GeneSwitch experiments in Figure 5D. This temporal control experiment is important for ruling out developmental compensation mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The study demonstrates that sei expression levels determine heat stress sensitivity: downregulation causes heat sensitivity, upregulation provides protection, and ppk29 expression levels control sei transcript abundance in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 synthesize findings from multiple experiments (Figures 3, 5) showing the causal relationship between sei levels and heat sensitivity. The convergence of loss-of-function, gain-of-function, and molecular data strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The regulatory function of ppk29 3'UTR depends on the endogenous siRNA pathway: in Dicer-2 mutants, ppk29 3'UTR overexpression has no effect on heat stress behavior or sei mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by experiments in Dcr-2 mutant background (Figure 5E,F). The complete loss of ppk29 3'UTR function in the absence of Dicer-2 provides strong evidence for an siRNA-mediated mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The asymmetric regulatory relationship suggests that ppk29 3'UTR is the preferred guide strand during RISC loading and target identification, consistent with known mechanisms of RNAi strand selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is established knowledge, but C75 is an inference from the asymmetric regulation. While plausible and consistent with RNAi mechanisms, direct evidence for strand preference (e.g., small RNA sequencing, RISC loading assays) is not provided. This remains a reasonable hypothesis requiring validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "C83"
+    ],
+    "result": "The central finding is that ppk29 regulates neuronal excitability and heat-induced seizures via a protein-independent mechanism: the ppk29 mRNA 3'UTR acts as a natural antisense transcript to regulate sei mRNA levels through the siRNA pathway, demonstrating that mRNAs can serve regulatory functions independent of their protein-coding capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C7, and C83 represent the main conclusions of the study. They are well-supported by the convergence of multiple lines of evidence: genetic, molecular, pharmacological, behavioral, and neurophysiological data. The 3'UTR rescue experiments, Dcr-2 dependence, and trans effects provide particularly strong support for the protein-independent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Bioinformatic analysis reveals that multiple fly and human eag-like potassium channels have similar convergent transcription architecture with overlapping 3'UTRs, suggesting this regulatory mechanism may be conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by bioinformatic analysis in Table 1. However, this is purely computational prediction without experimental validation in other systems. The finding suggests broader significance but requires functional studies to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The regulatory interaction between sei and ppk29 may play a role in homeostatic responses to slow temperature changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 is speculative based on the temperature adaptation data in Figure 2. While the correlation between temperature and expression changes is shown, the causal role in homeostasis and the relative contributions of transcriptional regulation versus mRNA-level interactions are not definitively established. This requires additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C84",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors speculate that the prevalence of convergent transcription in eukaryotic genomes suggests many mRNAs may serve dual functions, that similar RNA-RNA interactions may occur in trans, and that evolutionary changes in mRNAs should be re-evaluated considering potential regulatory functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84, C86-C87 are speculative extrapolations from the findings. While the logic is reasonable, these are hypotheses rather than demonstrated results. The trans effects are partially demonstrated with transgenes (C57-C58), but the broader evolutionary and genomic implications require extensive additional work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The proposed molecular model suggests that complementary 3'UTRs of sei and ppk29 form dsRNA, which is cleaved by Dicer-2 into siRNAs, and the loaded RISC complex targets sei transcripts for degradation via the canonical siRNA pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 represent the mechanistic model shown in Figure 6. The model is well-supported by: (1) documented 3'UTR overlap, (2) Dcr-2 requirement, (3) sei mRNA reduction with ppk29 3'UTR expression, and (4) asymmetric regulation. However, direct detection of the dsRNA intermediate and siRNAs would strengthen the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background claims establish that neuronal action potentials are temperature-sensitive, temperature adaptation involves ion channel regulation through largely unknown mechanisms, and NATs are prevalent in eukaryotes with some known regulatory functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 are background knowledge appropriately cited from prior literature. These provide context for the study's significance and are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The discussion cites other examples of RNA-dependent regulation of ion channels, including mle regulation of para through RNA editing and dao effects on sei transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are appropriately cited examples from prior literature used to contextualize the findings. These are not novel results but provide important comparative context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The protective effect of ppk29 mutations is symptomatic, leading to pre-stress elevation of sei transcripts that enhances the nervous system's ability to handle acute heat stress without prior temperature adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is an interpretive synthesis supported by the data showing elevated sei mRNA in ppk29 mutants (Figure 3E,F) and their heat resistance (Figure 3A). The interpretation is reasonable though the distinction between 'symptomatic' and other mechanisms could be clearer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "The mRNA-dependent interaction between sei and ppk29 occurs in cis based on their chromosomal organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85 is somewhat contradictory given that trans effects are also demonstrated (C57-C58). While the endogenous genes are in cis, the functional interaction can occur in trans. The claim conflates chromosomal organization with mechanism of action.",
+    "result_type": "MINOR"
+  }
+]

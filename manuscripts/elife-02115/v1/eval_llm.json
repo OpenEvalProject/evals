@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "L. y-signata possesses only porous basiconic sensilla as olfactory sensilla, housing 12 OSN types in five functional sensillum types. Seven OSN types responded to tested odors with broad tuning and low spiking activity, responding to acids, alcohols, aldehydes, esters, and ketones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C48 provide converging morphological (SEM) and electrophysiological (SSR) evidence characterizing the olfactory system of L. y-signata. The morphological identification of sensillum types (C36-C37) is supported by Figure 2, and the functional characterization (C38-C48) is supported by Figure 3 and associated data. The broad tuning and low activity patterns are consistently documented across multiple measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "T. domestica exhibits both porous and grooved basiconic sensilla with five functional types. A nascent functional separation emerged where amines and acids primarily elicited responses in grooved sensilla while less polar odors were detected by porous sensilla, though most OSNs showed broad tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 describe morphological and functional characteristics of T. domestica olfactory system supported by Figures 2 and 3. The emergence of functional separation between sensillum types represents an intermediate evolutionary state between L. y-signata and more derived insects, with appropriate morphological and electrophysiological evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "P. siccifolium displays sexual dimorphism in antennal morphology and possesses 23 different functional sensillum types, representing a much broader response repertoire than basal species. This suggests an increased number of olfactory receptors and likely use of ORs in odorant detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 are supported by morphological data (Figure 2) and extensive electrophysiological characterization (Figure 3). The dramatic increase in functional sensillum types (23 vs. 5 in basal species) provides strong evidence for increased receptor diversity. The inference about OR usage (C62) is later confirmed by transcriptome data (C80-C82), validating this prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Extensive transcriptome sequencing was performed generating 99.5 million reads for L. y-signata (including 77 million paired-end reads), 25.2 million reads from whole bodies/heads, 27.7 million reads for T. domestica, and 30.8 million reads for P. siccifolium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 report technical sequencing metrics documented in Table 1. These represent adequate sequencing depth for transcriptome analysis, particularly given the tissue-specific nature of the samples and the successful identification of receptor genes in P. siccifolium (validating the approach).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Neither ORs nor Orco were identified in L. y-signata transcriptomes using BLAST, HMM domain profile searches, or custom HMMR-profiles. Five GR candidates were identified that phylogenetically grouped with GRs rather than ORs. Given the sequencing depth and tissue specificity, ORs/Orco should have been detected if present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 describe comprehensive bioinformatic searches that failed to identify ORs/Orco in L. y-signata. Multiple search strategies were employed (C67-C68), and the phylogenetic placement of identified candidates confirmed they were GRs not ORs (C70, Figure 4A). The logical argument (C71-C72) that sufficient sequencing depth should detect these genes if present is reasonable, especially given successful detection in P. siccifolium using the same methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Three different Orco-related sequences were identified in T. domestica transcriptome, validated by RACE-PCR cloning. These showed 45.8%, 35.1%, and 24.4% amino acid similarity to D. melanogaster Orco, with TdomOrco3 having substitutions in key functional residues. No conventional ORs were identified, but seven GRs were found.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 describe the unusual finding of three Orco variants in T. domestica, supported by transcriptome data, RACE-PCR validation (C74), sequence analysis (C75-C77, Figures 4B and 5), and phylogenetic analysis. The absence of conventional ORs despite presence of Orco variants (C78) is a key finding. The sequence alignments (Figure 5) document the amino acid substitutions in TdomOrco3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "P. siccifolium transcriptome contained both various OR-related sequences (30 gene fragments total) and a single Orco sequence, demonstrating that the transcriptomic approach successfully identifies ORs and Orco when present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 provide positive control validation for the transcriptomic approach. The successful identification of both ORs and Orco in P. siccifolium (documented in Table 2) demonstrates the methodology is capable of detecting these genes, strengthening the conclusion that their absence in L. y-signata is genuine rather than a technical artifact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The presence of three Orco candidates in T. domestica is highly unusual as all other studied insects have only one Orco. All three variants showed antenna-specific expression by RT-PCR. FISH with TdomOrco1 probe labeled single cells below basiconic sensilla, suggesting OSN expression, with appropriate negative controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 document the unusual nature of three Orco variants (C83-C84) and provide expression validation through RT-PCR (C85, Figure 6) and FISH (C86-C89, Figure 7). The single-neuron-per-sensillum labeling pattern (C88) is unexpected but well-documented with appropriate sense probe controls (C89). The tissue-specific expression supports a chemosensory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "L. y-signata transcriptome contained 14 candidate IRs (including orthologues of coreceptors IR25a, IR8a, and IR76b) and 5 iGluRs. These were validated by RACE-PCR, grouped phylogenetically with Drosophila IRs, and showed characteristic absence of key glutamate-binding domain amino acids in non-coreceptor IRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97 describe comprehensive identification and characterization of IRs in L. y-signata. The identification is supported by transcriptome analysis (C90-C91), molecular validation (C92), phylogenetic analysis (C93-C94, Figure 8A), and sequence features characteristic of IRs (C95, Figure 8B). The presence of IR coreceptor orthologues (C94) is particularly significant for functional interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "FISH with antisense probes for IR25a and IR8a labeled 1-3 OSNs beneath basiconic sensilla in L. y-signata, with no staining in negative controls. This expression pattern indicates most OSNs are covered by the IR gene family, leading to the conclusion that the olfactory system is not based on ORs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 provide critical functional localization data through FISH (Figures 9 and supplements). The labeling of OSNs beneath basiconic sensilla (C98) with appropriate negative controls (C99) demonstrates IR expression in olfactory neurons. Combined with the absence of ORs/Orco (C67-C72), this supports the conclusion that L. y-signata olfaction is IR-based (C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "ORs and Orco are with very high probability lacking in Lepismachilis, three Orco candidates were identified in Thermobia, and Phyllium has a fully developed OR/Orco system. This suggests ORs did not arise as an adaptation to terrestrial lifestyle but evolved later in insect evolution, with Orco present before ORs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9 represent the main evolutionary conclusions synthesized from all experimental data. The absence of ORs/Orco in Lepismachilis (C4) is supported by extensive negative evidence (C67-C72, C101). The presence of Orco without conventional ORs in Thermobia (C5) and full OR/Orco system in Phyllium (C6) are supported by transcriptome and expression data. The evolutionary interpretation (C7-C9) logically follows from this phylogenetic distribution pattern shown in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C148",
+      "C149"
+    ],
+    "result": "ORs evolved in insects after the emergence of Archaeognatha and Zygentoma, long after the transition to terrestrial lifestyle. Orco evolved after bristletails split from other insects, but a functional OR/Orco system evolved after the emergence of wings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 and C148-C149 present the core evolutionary conclusions supported by the comparative data across three species at key phylogenetic positions. The phylogenetic distribution (absence in Archaeognatha, Orco-only in Zygentoma, full system in Pterygota) is clearly documented and mapped onto insect phylogeny in Figure 1. This refutes the terrestrial adaptation hypothesis (C3, C35) with direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "In D. melanogaster, IRs are in coeloconic sensilla while ORs are in basiconic/trichoid sensilla. This organization cannot exist with only one sensillum type as in Archaeognatha. In Archaeognatha, IRs are located in basiconic sensilla, suggesting IRs evolved in single-walled sensilla before finding their modern coeloconic environment in neopteran insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C109 present an important insight about sensillum evolution. The established D. melanogaster organization (C102-C103, cited) cannot apply to Archaeognatha with only basiconic sensilla (C104). The FISH localization of IRs to basiconic sensilla in L. y-signata (C108) combined with morphological data supports the inference that IRs originally functioned in single-walled sensilla (C109), though this remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "OSNs in L. y-signata are broadly tuned with low spiking activity. Broadly tuned receptors may have low affinity but could integrate signals over time. The response spectrum is broader than Drosophila IRs, consistent with IRs being the only olfactory receptor type. Mechanisms could involve broad tuning of single receptors or combinatorial IR expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C117 present functional interpretations of the electrophysiological data. The broad tuning observation (C110) is well-supported by Figure 3 data. However, the mechanistic explanations (C111-C113, C116-C117) are largely speculative without direct experimental support. The comparison to Drosophila IRs (C114) and the inference about ligand spectrum (C115) are reasonable but would benefit from more systematic comparative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The three Orco variants in T. domestica are unusual as only one Orco is typical in insects. All three are expressed in antennae suggesting chemosensory involvement. TdomOrco3 has a functionally important D466E substitution that in Drosophila increases receptor sensitivity. The existence of three Orco types remains mysterious.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C136 characterize the unusual T. domestica Orco situation. The uniqueness is well-established by literature (C128). Expression data supports chemosensory function (C129, C135). The D466E substitution in TdomOrco3 (C130) and its functional significance (C131-C134) are documented by sequence alignment (Figure 5) and supported by citations. The acknowledgment that this remains unexplained (C136) is appropriate given the lack of functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "At the time flying insects emerged, vegetation was diversifying. ORs may increase chemical diversity detection and enable rapid assessment of airborne odors, important for flying insects with brief stimulus contact. ORs were present in the last common ancestor of hemi- and holometabolan insects at least 318-300 mya, with Orco in both groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C147 place the findings in ecological and evolutionary context. The timing of plant diversification (C139) is general knowledge. The functional advantages of ORs (C140-C141) are reasonable speculation supported by citation (C141). The dating of OR/Orco presence in neopteran insects (C145-C146) is supported by the current findings plus extensive literature citations, providing a well-constrained evolutionary timeline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background on insect chemoreception systems, including ORs, IRs, and GRs; their distribution across insects and crustaceans; evolutionary relationships; and the hypothesis that ORs are an adaptation to terrestrial lifestyle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C35 provide essential background information establishing the state of knowledge and the hypothesis being tested. These are well-supported by extensive citations to primary literature and represent accurate summaries of established knowledge in the field. This background is necessary to frame the significance of the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "In D. melanogaster, IR64a with IR8a is necessary and sufficient for responses to organic acids and other odors. GRs could contribute to non-neopteran olfaction and are involved in sugar/amino acid detection and contact pheromones in basal insects, but their involvement beyond contact chemosensation is unlikely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C127 discuss alternative receptor systems. The D. melanogaster IR64a data (C118-C121) is well-cited and provides context for understanding broad IR tuning. The discussion of GR involvement (C122-C127) appropriately considers alternatives while concluding their role is likely limited to contact chemosensation based on known functions and the limited number identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The oldest flying insect orders (Odonata and Ephemeroptera) were traditionally considered anosmic, but recent studies show dragonflies have aerial olfaction. However, their small antennae and few sensilla will make identifying ORs/Orco in transcriptomes challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C144 discuss the gap in knowledge about paleopteran insects. The traditional view of anosmy (C142) and recent evidence for dragonfly olfaction (C143) are appropriately cited. The speculation about technical challenges (C144) is reasonable given the authors' experience with the current study, though it remains untested.",
+    "result_type": "MINOR"
+  }
+]

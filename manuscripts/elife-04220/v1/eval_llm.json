@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14"
+    ],
+    "result": "C. elegans exhibits a two-phase foraging behavior after removal from food, consisting of an initial local search characterized by increased turning rate (~15 min duration) followed by a global search with reduced turning rate and extended trajectories. This behavior occurs in the absence of chemical gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 and C14 are well-supported by experimental data shown in Figures 1A-B, which demonstrate the temporal dynamics of turning rate and trajectory patterns. The experimental setup explicitly removes chemical gradients (C14), establishing that this is not simple chemotaxis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "An infotaxis model based on maximizing information about food location, using a Gaussian prior distribution, predicts trajectories that initially move toward the peak probability of food, then spiral outward, and finally transition abruptly to straight outward motion. This transition occurs when the probability that food is elsewhere approaches 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C25 describe the infotaxis model predictions supported by Figures 2A-C. The model assumptions are clearly stated (C16), the predicted trajectory features are shown (C17-C18, C21-C22), and the mechanism for the transition is demonstrated (C24). The qualitative consistency with C. elegans behavior (C19, C23) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Individual C. elegans trajectories exhibit sharp transitions between local and global search states on the order of a few minutes, as revealed by Hidden Markov model analysis, consistent with the abrupt transitions predicted by the infotaxis model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by Hidden Markov model analysis shown in Figures 3A-B. This addresses a potential concern that the gradual appearance of transitions in averaged data (Figure 1B) might reflect gradual individual transitions rather than sharp ones. The HMM analysis provides quantitative evidence for sharp individual transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The infotaxis model with three fitted parameters quantitatively accounts for both the spatial distribution of worm positions at the end of local search and the cumulative distribution of local search durations, with the temporal-spatial conversion set by measured worm speed (~0.17 mm/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are supported by Figures 4A-B showing quantitative fits. Critically, C30 notes that the same parameters fit both spatial and temporal distributions without re-adjustment, and includes a statistical test (K-S test, p=0.45). The worm speed is measured rather than fitted (C31), strengthening the result. This represents strong quantitative validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C41"
+    ],
+    "result": "A chemotaxis model based on adaptation to odorant concentration cannot quantitatively account for C. elegans foraging behavior, failing to explain the long duration of local search, the sharp transition between search phases, and producing broader transitions than observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 systematically rule out chemotaxis explanations through logical analysis and comparison with data (Figures 3B, 5A, Figure 4\u2014figure supplement 1). The reasoning about single time constant adaptation is sound (C33-C35). Claim C36 provides quantitative comparison showing chemotaxis produces broader transitions than observed. This represents appropriate falsification of an alternative hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C39",
+      "C40"
+    ],
+    "result": "The average number of turns during local search is unaffected by food concentration, consistent with infotaxis predictions (which depend on spatial distribution, not concentration) but contradicting chemotaxis predictions (which depend on concentration changes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C39-C40 describe a critical discriminating experiment supported by Figure 5B. The experimental result (C37) matches the infotaxis prediction (C39) but contradicts chemotaxis (C38). This provides strong evidence distinguishing between models based on differential predictions. The logic is sound and the data support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Maximally informative foraging trajectories can be approximated by a drift-diffusion model with a single parameter (drift rate) that scales linearly with the width of the prior distribution (\u03c3) and the diffusion filter length (L), with the drift rate depending primarily on the ratio \u03c3/L.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 and C51-C53 are supported by Figures 6A-F showing systematic relationships between model parameters. The linear scaling relationships (C47, C51) and the dependence on \u03c3/L ratio (C52) are demonstrated empirically. This provides a computationally simpler approximation to the full infotaxis model, which is important for biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C69",
+      "C70",
+      "C78",
+      "C79"
+    ],
+    "result": "The chemotaxis and infotaxis models make opposite predictions about how patch size affects local search duration: infotaxis predicts longer searches for wider patches, while chemotaxis predicts shorter searches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C69-C70, C78-C79 describe contrasting model predictions supported by Figure 6B. This represents a clear differential prediction that could be tested experimentally. The opposite dependencies arise from the different mechanisms: infotaxis depends on spatial variance while chemotaxis depends on concentration gradients. The logic is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "C. elegans exploratory behavior meets quantitative benchmarks for an optimal, maximally informative strategy, which can be implemented with a combination of random confined walk and an internal drift-diffusion variable, demonstrating that animals guide foraging by searching for information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 and C88-C90 represent summary conclusions supported by the collective evidence from the quantitative model fits (C29-C32), the ruling out of chemotaxis (C33-C41), and the drift-diffusion approximation (C44-C53). These are appropriate integrative conclusions given the supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C71",
+      "C72"
+    ],
+    "result": "A neural circuit with sensory neurons (AWC), interneurons (AIB, AIZ), and neuromodulatory signaling could implement the drift-diffusion approximation to infotaxis, with sensory input triggering local search and interneuron state changes encoding time passage, allowing flexible behavior beyond simple chemotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C67 and C71-C72 propose a neural implementation mechanism supported by Figure 7 and citations to C. elegans neuroanatomy. However, these are explicitly hypothetical (C60, C63-C65 use 'hypothesize' or 'may'). While the proposal is plausible and consistent with known anatomy (C59, C61), there is no direct experimental validation of this specific circuit performing these computations. The claims appropriately acknowledge their speculative nature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Emergent discrete decisions (transitions between search states) occur as a result of continuous environmental exploration, extending previous findings that drift-diffusion models support optimal calculations in forced-choice tasks to cases where choices emerge intrinsically from long-term optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 represent conceptual insights supported by the demonstration of sharp transitions (C26-C27) arising from continuous evidence accumulation (C45-C47). Claim C57 appropriately cites prior work (Bogacs et al., 2006), and C58 extends this to the current context. The inference is logical and supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Information maximization principles, particularly maximization of Shannon mutual information, have been proposed to guide animal behavior and have yielded insights into diverse behaviors including human eye movements, animal navigation in turbulent environments, and foraging patterns across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 establish the theoretical and empirical background for the study, all supported by appropriate citations. These represent prior work rather than new findings. The claims accurately represent the cited literature and establish the motivation for applying infotaxis to C. elegans foraging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C15"
+    ],
+    "result": "C. elegans is traditionally considered a chemotactic searcher but performs food search even in the absence of gradients, indicating they must have prior beliefs about food distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C15 are supported by appropriate citations establishing prior knowledge about C. elegans behavior. This sets up the key question of how animals search without gradients and motivates the infotaxis framework. The inference about prior beliefs (C15) is logical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C75",
+      "C76",
+      "C80",
+      "C81",
+      "C82",
+      "C87"
+    ],
+    "result": "Animals could learn appropriate drift-diffusion parameters through experience to perform nearly optimal foraging with minimal computational effort, though estimating spatial variance is computationally demanding for small animals, and they might potentially use higher-order moments of probability distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48, C75-C76, C80-C82, and C87 are speculative inferences about implementation and learning mechanisms. While plausible, these lack direct experimental support. Claims C48 and C87 suggest learning as a solution to computational demands, but no learning experiments are presented. Claims C75-C76 and C82 propose extensions that are not tested. These are appropriate speculations for discussion but lack empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C73",
+      "C74"
+    ],
+    "result": "Infotaxis and chemotaxis strategies converge under conditions of smoothly varying gradients but diverge when transitions between patches are common. Information-maximizing strategies may not always produce maximal yield, particularly when targets are mobile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C73-C74 describe established properties of infotaxis and chemotaxis with appropriate citations (C7, C74). These represent prior knowledge that contextualizes the current findings. The claims accurately represent the cited work and establish when infotaxis provides advantages over chemotaxis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "C. elegans local search exhibits similarities to other invertebrates (crabs, bees, ants), with desert ant search patterns consistent with infotaxis trajectories. The results demonstrate that invertebrates can integrate abstract quantities like probability rather than just spatial position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by appropriate citations comparing C. elegans to other invertebrates. Claim C86 represents an inference from the current results about invertebrate computational capabilities. The comparative context is valuable, though the inference about 'operating directly on probability' (C86) is somewhat strong given that the neural implementation remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The experimental protocol involved growing L4 C. elegans overnight on E. coli OP50 patches, then transferring them to food-free observation plates with CuSO4 barriers, recording movement for 30 minutes at 3 fps, excluding the first 2 minutes of forward movement after handling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 describe the experimental methods. These are clearly stated procedural details that establish the experimental conditions. The exclusion of the first 2 minutes (C93-C94) is justified by observed handling effects. The methods appear sound and adequately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Infotaxis trajectories were modeled using a 128\u00d7128 grid representing position and probability distribution, computing anticipated entropy changes at each step considering both detection and non-detection of odorant hits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 describe the computational modeling approach. These are clearly stated methodological details consistent with the infotaxis framework. The grid-based approach and entropy calculations are standard for this type of model. The methods appear appropriate for the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The drift-diffusion models are fitted to parameters of infotaxis trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 clarifies the relationship between the two models, noting that drift-diffusion parameters are derived from infotaxis simulations. This is an important methodological point that explains why both models can account for the data\u2014the drift-diffusion model is an approximation to infotaxis, not an independent alternative.",
+    "result_type": "MINOR"
+  }
+]

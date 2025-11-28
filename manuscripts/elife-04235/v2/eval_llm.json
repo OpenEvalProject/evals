@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C86",
+      "C87"
+    ],
+    "result": "Mass spectrometry and co-immunoprecipitation analyses identified known REST co-factors (CoREST1, Sin3a, HDAC1/2, Kdm1a, G9a/Glp) and novel factors (CoREST2, Smarca5, Mdc1, D1Pas1) in REST complexes from ESCs. While Suz12 was detected by mass spectrometry and confirmed by co-IP, the enzymatically active PRC2 components Ezh2 and Eed were absent, indicating REST does not interact with an active PRC2 complex in ESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 and C86-C87 are well-supported by complementary mass spectrometry and co-immunoprecipitation data. The identification of known REST co-factors validates the approach, while the absence of Ezh2 and Eed from co-IP despite Suz12 detection provides strong evidence against functional REST-PRC2 interaction. The use of both whole-cell and nuclear extracts strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C88",
+      "C89"
+    ],
+    "result": "ChIP-seq analysis identified 2136 REST-bound genomic regions in mouse ESCs, with 96.6% containing RE1 consensus motifs. Only ~3% of REST-bound sites showed significant H3K27me3 enrichment, and only 0.5% of H3K27me3 domains overlapped with REST binding. PRC2 factors Suz12 and Ezh2 showed minimal binding at REST sites, indicating limited genomic co-localization between REST and PRC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31, C88-C89 are strongly supported by ChIP-seq data with appropriate validation by ChIP-qPCR (C88). The sequence analysis demonstrating RE1 motif prevalence (C26-C27) and the quantitative assessment of REST/H3K27me3 overlap (C28-C30) provide robust evidence. Analysis of published PRC2 ChIP-seq data (C31) corroborates the findings. The conclusions about limited co-localization are well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C69",
+      "C93",
+      "C94"
+    ],
+    "result": "Comparison of H3K27me3 levels between WT and Rest\u2212/\u2212 ESCs showed that >95% of H3K27me3-enriched regions associated with REST sites maintained H3K27me3 in the absence of REST. While a small number of genes showed changes in H3K27me3 (some gaining, some losing), REST was not required for establishment or maintenance of H3K27me3 genome-wide or at REST-targeted loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37, C69, C93-C94 are well-supported by ChIP-seq analysis comparing WT and Rest\u2212/\u2212 ESCs with validation by ChIP-PCR. The high Pearson correlation coefficients (0.53-0.85) and the >95% maintenance of H3K27me3 at REST sites provide strong quantitative evidence. The comparison to published datasets (C93) and EZH2 occupancy analysis (C94) strengthen the conclusions. The small number of exceptions (C35-C36) are appropriately acknowledged without undermining the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "ChIP analysis in Rest\u2212/\u2212 ESCs showed loss of G9a recruitment and significant reduction in H3K9me2 at 12/16 REST target genes, increased H3K9ac at 11/16 genes, and increased H3K4me3 at 8/16 genes. These chromatin changes were independent of H3K27me3 alterations, with no correlation between H3K9me2, H3K9ac, or H3K4me3 changes and H3K27me3 changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 are supported by ChIP analysis with appropriate statistical testing. The data demonstrate REST-dependent chromatin modifications at RE1 sites. The lack of correlation between these marks and H3K27me3 changes (R\u00b2 values of 0.002, 0.056, 0.029) provides quantitative support for the independence of REST and PRC2 pathways. The use of control genes lacking RE1 sites strengthens the specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "Analysis of REST-bound sites revealed three classes based on histone modifications: sites lacking H3K4 or H3K27 trimethylation (preferentially distal to promoters), bivalent sites (H3K4me3 + H3K27me3), and H3K4me3-only sites. The majority of REST-associated regions near promoters were enriched for H3K4me3, with 37% of REST sites within 20 kb of genes and 62% within 5 kb of TSS overlapping with H3K4me3 peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C64-C65, C67 are supported by ChIP-seq analysis. The classification of REST sites by histone modification patterns and their genomic distribution provides important context for understanding REST function. The quantitative data on H3K4me3 overlap at different distances from TSS is clear and well-presented. However, the preliminary nature of enhancer mark analysis (C66) is appropriately noted as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "RNA-seq analysis showed that REST target genes are de-repressed in Rest\u2212/\u2212 ESCs regardless of H3K27me3 or H3K4me3 status, with no correlation between expression changes and H3K27me3 levels. In contrast, REST targets were not de-repressed in Eed\u2212/\u2212 ESCs despite drastic H3K27me3 reduction, demonstrating that REST is the primary repressor of its target genes and that Polycomb/H3K27me3 are functionally dispensable for REST activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are strongly supported by RNA-seq data from Rest\u2212/\u2212 ESCs and comparison to published Eed\u2212/\u2212 data. The lack of correlation between expression changes and H3K27me3 levels (C47) and the de-repression across all chromatin mark categories (C48) provide robust evidence. The comparison to Eed\u2212/\u2212 ESCs (C49) is particularly compelling, showing that loss of H3K27me3 alone does not de-repress REST targets. This constitutes strong functional evidence for the independence of REST and PRC2 pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C77"
+    ],
+    "result": "Multiple regression analysis showed that only H3K4me3 changes correlated significantly with REST target gene expression changes (p < 0.02). REST-occupied genes marked by H3K4me3 (alone or with H3K27me3) showed significantly lower expression than non-REST targets, and deletion of REST increased their expression to levels approaching non-target H3K4me3-marked genes, suggesting REST's primary function is to counter H3K4me3-mediated activation and RNA Pol II recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54, C77 are well-supported by statistical analysis of RNA-seq and ChIP-seq data. The multiple regression analysis (C51) provides rigorous statistical evidence for the specific role of H3K4me3. The comparison of expression levels across different chromatin states (C52-C53) with appropriate statistical testing (p < 0.001, p < 0.05) strengthens the conclusions. The mechanistic interpretation (C54) is appropriately framed as a suggestion based on the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Analysis of REST co-repressor mutants showed that only TSA treatment (HDAC inhibition) significantly increased H3K4me3 at REST sites (p < 0.01) and elevated H3K9ac levels. Gene expression analysis revealed REST targets are de-repressed only with HDAC inhibition, not with G9a or Kdm1a mutation. Expression changes in Rest\u2212/\u2212 ESCs significantly correlated with TSA treatment effects (p < 0.005), indicating REST repression is mediated primarily by recruited HDACs that counterbalance H3K4me3 and basal RNA Pol II activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by ChIP analysis of co-repressor mutants and analysis of published gene expression data. The statistical correlations (p < 0.01 for H3K4me3, p < 0.005 for expression) provide quantitative support. The specificity of the HDAC effect compared to G9a/Kdm1a is compelling. However, the use of TSA as a proxy for HDAC loss due to redundancy is a limitation, and the mechanistic details of HDAC-H3K4me3 crosstalk are appropriately noted as requiring future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C62",
+      "C63",
+      "C70",
+      "C81"
+    ],
+    "result": "The study demonstrates that REST target genes are poised by a mechanism independent of Polycomb, relying on a balance between H3K4me3 and REST-recruited HDAC activity. REST and PRC2 act as two parallel but distinct repressor pathways in ESCs, with REST repressing terminal neuronal genes and PRC2 repressing pro-neural genes required at earlier differentiation stages, establishing chromatin distinctions between these gene classes at the ESC stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C62-C63, C70, C81 represent the major conclusions of the study and are well-supported by the collective evidence from mass spectrometry, ChIP-seq, RNA-seq, and functional analyses. The independence of REST and PRC2 pathways is demonstrated through multiple complementary approaches: lack of physical interaction with active PRC2, minimal genomic co-localization, independence of chromatin marks, and distinct functional consequences of REST vs. Eed deletion. The proposal of parallel pathways for different neuronal gene classes is appropriately supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C71",
+      "C72",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "REST binding in ESCs is determined exclusively by RE1 DNA sequence motifs. Gene ontology analysis showed no functional distinction between genes co-occupied by REST and PRC2 versus REST alone, and no enrichment for specific neurodevelopmental regulators in the dual-occupied subset. Developmental regulators of multiple lineages showed no ontological differences based on REST occupancy, indicating no specific functional class of genes is regulated by REST and Polycomb in tandem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C71-C72, C90-C92 are supported by sequence analysis and gene ontology analysis. The strict correlation between REST binding and RE1 motifs (96.6% of sites) provides strong evidence for sequence-dependent recruitment. The gene ontology analysis appropriately addresses whether REST/PRC2 co-occupancy has functional significance and finds no evidence for specialized regulation of specific gene classes. The conclusions are appropriately conservative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Loss of REST may generate small effects in measured histone modifications due to changes in nucleosome density rather than specific modifications. Nucleosome positioning analysis showed that phasing of nucleosomes at RE1 motifs was displaced in Rest\u2212/\u2212 cells. REST likely counterbalances RNA Pol II activity primarily through HDAC recruitment while also maintaining nucleosome-depleted regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 address important technical considerations about nucleosome positioning effects. C73 appropriately cites prior literature about this potential confound. C74 reports nucleosome positioning data (though noted as 'data not shown'), and C75 integrates this with the HDAC findings. While the nucleosome positioning data would benefit from being shown, the consideration of this mechanism is appropriate and the conclusions about HDAC-mediated repression are well-supported by other data in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C82"
+    ],
+    "result": "The authors propose mechanistic models for how REST/HDAC and Polycomb pathways regulate differentiation: as REST/HDAC levels decrease during neuronal differentiation, H3K4me3-marked genes increase this mark with H3K9 acetylation in a feed-forward mechanism; differential loss of REST or Polycomb from different gene sets allows graded expression changes; and REST may auto-regulate its own expression to ensure unidirectional differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C80, C82 represent speculative mechanistic proposals based on the ESC data but extending to differentiation processes not directly tested in this study. While these models are reasonable extrapolations from the findings and prior literature (C78), they lack direct experimental support in the manuscript. C79 and C80 are explicitly framed as proposals, and C82 is appropriately speculative. These represent hypotheses for future testing rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript provides background on REST as a highly expressed master regulator of terminal neuronal genes in ESCs, the bivalent hypothesis for developmental gene regulation by PRC2-mediated H3K27me3 and H3K4me3, and prior suggestions of potential REST-PRC2 interactions through HOTAIR or biochemical associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C17 represent established knowledge from prior literature that provides context and rationale for the study. These are appropriately cited and accurately represent the state of knowledge. C1-C2 and C11-C15 describe REST biology, C6-C10 describe the bivalent hypothesis and PRC2 function, and C16-C17 describe prior suggestions of REST-PRC2 connections that motivated this investigation. These background claims are well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C83",
+      "C84"
+    ],
+    "result": "The discussion cites prior studies showing that not all inactive promoters in zebrafish embryos are bivalent (36% bivalent, 28% H3K4me3-only), that cardiac structural genes are regulated by activators rather than H3K27me3, and that neuronal direct reprogramming can occur by introducing both pro-neural and terminal genes, supporting the concept of alternative repression mechanisms beyond Polycomb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C83-C84 accurately cite prior literature to contextualize the findings. These citations support the broader significance of identifying REST/HDAC as an alternative poising mechanism. The citations are appropriate and accurately represented. These provide important context but are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C76",
+      "C78"
+    ],
+    "result": "The manuscript notes preliminary evidence that some distal REST sites overlap with enhancer marks H3K4me1/H3K27ac, cites established knowledge about acetylated histones interacting with bromodomains like Brd4 to recruit transcriptional machinery, and notes evidence that H3K4me3 primes genes for acetylation after HDAC loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C76, C78 represent either preliminary observations (C66, appropriately noted as 'data not shown' and requiring future analysis) or established mechanistic knowledge from prior literature (C76, C78) that helps interpret the findings. C66 is appropriately framed as preliminary and speculative. C76 and C78 are well-cited background knowledge that provides mechanistic context for the HDAC and H3K4me3 findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "The stable ESC line expressing biotin-tagged REST expressed approximately five-fold higher REST levels than normal ESCs with no differences in pluripotency markers compared to WT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85 describes a key characteristic of the cell line used for mass spectrometry, but the pluripotency marker data is noted as 'not shown.' While the five-fold overexpression is stated, the lack of shown data for pluripotency markers and the potential effects of REST overexpression on the composition of REST complexes or chromatin occupancy represent limitations. The validation of REST binding by ChIP-seq helps address concerns about overexpression artifacts, but complete characterization would strengthen confidence in the mass spectrometry results.",
+    "result_type": "MINOR"
+  }
+]

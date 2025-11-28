@@ -1,0 +1,1588 @@
+{
+  "submission": {
+    "id": "a54be586-7227-4428-87c0-1b210284c074",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T20:37:26.728689Z",
+    "updated_at": "2025-11-28T20:37:26.728689Z"
+  },
+  "content": [
+    {
+      "id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "submission_id": "a54be586-7227-4428-87c0-1b210284c074",
+      "content_type": "manuscript",
+      "content_text": "# Cell-intrinsic mechanisms of temperature compensation in a grasshopper sensory receptor neuron\n\n## Authors\n\n- Frederic A Roemschied<sup>1</sup>\n- Monika JB Eberhard<sup>3</sup>\n- Jan-Hendrik Schleimer<sup>1</sup>\n- Bernhard Ronacher<sup>2</sup>\n- Susanne Schreiber<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Institute of Theoretical Biology, Department of Biology Humboldt-Universit\u00e4t zu Berlin Berlin Germany\n2. Bernstein Center for Computational Neuroscience Berlin Berlin Germany\n3. Behavioral Physiology Group, Department of Biology Humboldt-Universit\u00e4t zu Berlin Berlin Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nChanges in temperature affect biochemical reaction rates and, consequently, neural processing. The nervous systems of poikilothermic animals must have evolved mechanisms enabling them to retain their functionality under varying temperatures. Auditory receptor neurons of grasshoppers respond to sound in a surprisingly temperature-compensated manner: firing rates depend moderately on temperature, with average Q10 values around 1.5. Analysis of conductance-based neuron models reveals that temperature compensation of spike generation can be achieved solely relying on cell-intrinsic processes and despite a strong dependence of ion conductances on temperature. Remarkably, this type of temperature compensation need not come at an additional metabolic cost of spike generation. Firing rate-based information transfer is likely to increase with temperature and we derive predictions for an optimal temperature dependence of the tympanal transduction process fostering temperature compensation. The example of auditory receptor neurons demonstrates how neurons may exploit single-cell mechanisms to cope with multiple constraints in parallel.\n\n## Introduction\n\nChanges in temperature considerably modulate physico-chemical processes and, consequently, also affect neural processing (Schmidt\u2013Nielsen, 1997; Robertson and Money, 2012). The dependence of neural activity on temperature poses a particular challenge for animals without central heat regulation, like insects, who are permanently exposed to temperature fluctuations. These animals must have evolved intrinsic mechanisms at the behavioral, systems, or cellular level that help to circumvent temperature-induced behavioral modulations. Such compensatory mechanisms, however, may also come into play for homeothermic animals under pathological conditions, like fever or hypothermia in mammals.\n\nNevertheless, our understanding of generic design principles that enhance robustness to temperature fluctuations remains limited. The goal of this study is to identify mechanisms and limitations of cellular temperature compensation at the level of firing rates. We start from a characterization of the temperature dependence of neural responses in an insect auditory system, which we find to be surprisingly robust to temperature changes. The absence of network inputs to these receptor neurons (Vogel and Ronacher, 2007; Clemens et al., 2011) suggests that a cellular mechanism underlies the observed temperature compensation and hence raises the more general question to what extent temperature compensation can be achieved at the level of individual cells. Based on generic conductance-based models of spike generation, we then show that the experimentally observed degree of temperature compensation can be explained by physiological properties intrinsic to single cells despite a substantial dependence of ion channels on temperature.\n\nTemperature dependence is usually quantified by the so-called $Q_{10}$ value, which characterizes the relative change of a variable when temperature rises by 10\u00b0C. Several invertebrate species were found to have firing-rate $Q_{10}$ values above 2 (i.e., to double their neurons' firing rate), which is in line with the fact that many underlying biochemical processes also exhibit $Q_{10}$ values of two or more (French and Kuster, 1982; Pfau et al., 1989; Warzecha et al., 1999; Hille, 2001; Spavieri et al., 2010). In contrast, we found that grasshopper auditory receptor neurons on average increased their firing rate by only \u223c40\u201350% (corresponding to a $Q_{10}$ value of 1.4\u20131.5). Receptor responses are shaped by a cascade of two major steps (Gollisch and Herz, 2005)\u2014(1) auditory transduction, which translates the vibrations of the tympanal membrane into receptor currents and (2) spike generation. Temperature compensation of the response must be achieved by compensatory mechanisms in these individual components or their combined output.\n\nBased on a computational analysis, we first investigate how the second component, that is cellular spike generation in terms of the translation from input current to firing rate, can be temperature compensated in generic model neurons and identify conductances whose temperature dependence favors robustness. As energy efficiency of signaling is an important constraint (Attwell and Laughlin, 2001; Niven and Laughlin, 2008), we also resolve whether the identified mechanisms for temperature compensation come at an additional metabolic cost and identify the key parameters of temperature dependence that increase energy efficiency of action-potential generation as well as of the maintenance of the resting potential. Moreover, we show that information transfer (via spike rates) is fostered by temperature increments.\n\nSecond, we combine spike generation with a phenomenological model of mechanotransduction and predict properties of the temperature dependence of this nonlinear transformation that would allow for an efficient compensation in firing rates to the degree observed in our experimental data. As our model-based approach generalizes beyond the grasshopper system, our findings can be expected to reflect principles that could be implemented in many invertebrate and vertebrate species.\n\n## Results\n\n### Temperature dependence of locust auditory receptor neuron responses to acoustic stimuli\n\nBased on recordings of auditory receptor neurons in the metathoracic ganglion of the grasshopper Locusta migratoria, we quantified the dependence of the firing rate on temperature. Figure 1A shows voltage responses to stimulation at three different sound intensities and two different temperatures, as well as spike shapes. Interestingly, spike rates at a given sound intensity did not differ much between the low and high temperatures and mildly increased from low to high temperature, while spike width decreased. In general, firing rates of grasshopper receptor neurons are relatively high, saturating only at several hundreds of Hz. At a given temperature, the transfer function, that is the firing rate as a function of sound intensity, has a sigmoidal shape (Figure 1B). Three parameters (saturation rate, half-max sound level, and dynamic-range width) are sufficient to capture the experimental transfer functions (R2 >0.95 for all response curves). Comparing transfer functions at the two different temperatures revealed that their temperature dependence was surprisingly low (Figure 1C): all corresponding median Q10 values were below 1.5; the sound intensity at half-maximal response (half-max sound level) remained almost unchanged, as did the median of the slope at half-max sound level. The width of action potentials, in contrast, was lower at the higher temperature.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/02078/elife-02078-fig1-v1.jpg)\n\n**Figure 1.:** (A) Voltage traces at 29 and 21\u00b0C for one neuron (red and blue lines, respectively). Black horizontal lines mark time intervals of stimulus presentation; stimulus intensity as indicated. (B) Firing-rate as a function of sound intensity was well described by sigmoidal functions at both temperatures (same neuron as in A). The three sigmoidal parameters (saturation rate, sound level at half-maximum, and dynamic-range width) were extracted from fits to the experimental data. (C) Statistics of the measured temperature dependence, $Q_{10}(x)=(\\frac{x(T+\u0394T)}{x(T)})^{10/\u0394T}$, were computed for several quantities x. For a population of nine receptor neurons all three parameters of the sigmoidal function, as well as the spike rate and slope at the cold half-maximum were temperature compensated (median $Q_{10}\\in[1,1.5]$, see also Figure 1\u2014figure supplement 2 and Figure 1\u2014figure supplement 3).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02078/elife-02078-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Time course of temperature changes during the cooling-down procedure at the Peltier element (blue) and the tissue close to the tympanal membrane, where auditory receptor neurons attach (red); recordings from four animals. These curves were used as reference to estimate the temperature change during electrophysiological recordings.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02078/elife-02078-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Stimuli at each sound intensity were presented five times (before and after the temperature change). It was tested whether the corresponding firing rates at the two temperatures belong to an identical distribution with equal medians (ranksum test; p-values < 0.05 indicate a significant effect of temperature on firing rate). The figure illustrates the distribution of the test's p-values across all neurons at different levels of sound intensity (the symbol + indicates an outlier). The effect of temperature on firing rate was most significant for high sound intensities. Presumably, a higher relative variability in firing rate obscured the effect of temperature at lower firing rates (i.e., at lower sound intensities).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/02078/elife-02078-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Statistical significance of observables shown in Figure 1C. Based on a Wilcoxon signed rank test the null hypotheses that the median of a distribution was 1, 1.5, or 2 were tested. For values of $p<0.05$ $Q_{10}$ medians were statistically different (from 1, 1.5, or 2.0, respectively). Spike rates both at half-max and at saturation were significantly affected by temperature changes ($Q_{10}>1,p=0.001$), but not significantly different from 1.5 ($p\\geq0.4$), indicating temperature compensation. $Q_{10}$ values of saturation spike rates, in particular, were also significantly lower than 2.0. The median temperature dependencies of half-max sound level and slope at half-max were not significantly different from 1, indicating temperature invariance. Dynamic-range width and action-potential width significantly increased with cooling ($medianQ_{10}<1,p<0.01$).\n\nCompared to the temperature dependencies previously observed in other species like moth auditory receptor neurons, locust stretch receptors, and fly H1 neurons and photoreceptors ($Q_{10}$(spike rate) \u223c2, Pfau et al., 1989; Coro and Perez, 1990; Warzecha et al., 1999; Tatler et al., 2000), the grasshopper responses were temperature compensated; the dependence was similar to what has been referred to as warm-insensitive in hypothalamic neurons of the rat ($Q_{10}$(spike rate) \u223c1.3, Curras and Boulant, 1989). To understand this low dependence of receptor neuron firing rate on temperature, we next turned to mathematical modeling.\n\n### Influence of temperature on spike generation in single-neuron models\n\nThe grasshopper auditory periphery consists of a relatively simple feed-forward network, in which the receptor neurons constitute the first layer. Receptor neurons are known to respond to vibrations of the tympanal membrane, but they do not receive input from the neuronal network. Mechanisms of temperature compensation must hence be cell-intrinsic. To resolve which intrinsic processes can be sufficient to account for the observed degree of temperature compensation, we first focussed on spike generation, leaving mechanotransduction aside. We analyzed in generic model neurons, how the temperature dependence of ionic conductances mediating spike generation can reduce the dependence of firing rate on temperature.\n\nWe used the Connor\u2013Stevens model (Connor et al., 1977; Dayan and Abbott, 2005) to simulate a type I spike generation process (Izhikevich, 2007) as it is assumed for grasshopper receptor neurons (Benda, 2002). Besides a sodium and a leak conductance (gNa and gL), this model comprises a delayed-rectifier and an A-type potassium conductance (gK and gA), which are both known to be present in the grasshopper nervous system (Ramirez et al., 1999). Temperature dependence was assumed to affect the opening and closing rates of all gates of the three ion channel types (i.e., the m and h gates for gNa, n gates for gK, a and b gates for gA), as well as their peak conductances (g\u00afNa, g\u00afK, g\u00afA) and that of the leak conductance, g\u00afL. For a systematic analysis (refers to (Prinz et al., 2003)), we independently varied the temperature dependence of these parameters (comprising a total of nine) within physiologically realistic ranges: Q10(x)\u2208[2.0,4.0] for transition rates and Q10(g\u00afX)\u2208[1.2,2.0] for peak conductances (Partridge and Connor, 1978; Hille, 2001). For each combination of parameters, the transfer function (input current to firing rate; i.e., the f-I curve) was computed at two temperatures: 18 and 28\u00b0C (Figure 2A,B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/02078/elife-02078-fig2-v1.jpg)\n\n**Figure 2.:** (A) Voltage responses to step current stimuli of different amplitudes; blue: 18\u00b0C (the reference temperature), red: 28\u00b0C. Top trace corresponds to a model with strongly temperature-dependent firing rate, middle trace to a temperature-compensated model. (B) f-I curves at both temperatures, corresponding to the examples shown in A. (C) Results of the sensitivity analysis for the RMSD. The largest impact is exerted by temperature dependencies of the potassium conductances ($Q_{10}(n)$, $Q_{10}(g\u00af_{A})$, and $Q_{10}(g\u00af_{K})$). Signs +/\u2212 indicate the qualitative impact (see main text for details). (D) Distribution of the RMSD, across all models. Note that a $Q_{10}$ of 1.5 corresponds to an RMSD of \u223c0.5 (50% relative change). (E) Parameter impacts on RMSD were robust against \u00b120% perturbation of the model's peak conductances at 18\u00b0C (black symbols: perturbations of individual peak conductances; grey symbols: all combinations of \u00b120% changes to the four peak conductances). (F) Results of the sensitivity analysis for the temperature dependence of the slope of f-I curves. (G) Distribution of $Q_{10}$ values of the slope across all models. (H and I) as panels (F) and (G), but for the threshold of the f-I curves. (J and K) Sensitivity analysis of information transfer. For two basic noise models (Poissonian and input-independent Gaussian), the temperature dependence of firing rate-based information transfer J is related to that of the slope of the f-I curve: $Q_{10}(\u2329J\u232a)=[Q_{10}(slope)]^{4}$. The conductance parameters with highest impact were very similar to those of the changes in slope (compare to panel F). Information transfer increased with temperature for all models. (L) Visualization of the RMSD for the parameter space spanned by the temperature dependencies of the Connor-Stevens model based on dimensional stacking. Axes order was chosen according to the impact ranking as presented in (C); color code as in (D).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02078/elife-02078-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Temperature compensation of spike generation is also possible in a structurally different Traub-Miles model despite a realistic temperature dependence of its conductances ($g_{L},g_{K},g_{Na}$). Shown are the model at reference temperature (32\u00b0C for this model, black curve), and the model heated up by 10\u00b0C (red curve) or cooled down by 10\u00b0C (blue curve), with temperature parameters that minimize the RMSD of the corresponding f-I curves within the physiologically realistic range (identical to that explored for the Connor-Stevens model with peak conductances ($Q_{10}(g\u00af)\\in[1.2,2]$) and transition rates of the (in-) activation variables $Q_{10}({\\alpha,\\beta})\\in[2,4]$). Optimal parameters minimizing the RMSD were identified by a genetic algorithm. Relative changes in firing rate were on the order of those observed experimentally ($RMSD=0.34$ for the red curve and $RMSD=0.55$ for the blue curve).\n\nTo estimate the temperature dependence of a whole f-I curve, $Q_{10}$ values are not ideal, as they are defined as the ratio of firing rates at two different temperatures, which will be infinitely large for inputs that only elicit spikes at the higher, but not the lower temperature. To circumvent this bias, we assessed the temperature dependence of a model neuron as the root-mean-squared difference between the firing rates at the two temperatures (mean taken across input currents), normalized by the mean rate elicited at the colder temperature. We refer to this quantity as RMSD. It reflects the average relative change in firing rate with temperature. Note that a $Q_{10}$ value of 1.5 is hence comparable to an RMSD of 0.5 (50% relative change). Across all model combinations, the relative change, RMSD, was distributed between 0.22 and 2.14, with a median of 0.68 (Figure 2D). This means that, intuitively, the median of the average change in firing rate of an f-I curve was 68%. The analysis showed that the effect of temperature on spike generation depended strongly on the specific temperature dependence of the ionic conductances. A fraction of models (18%) exhibited temperature compensation with relative changes in firing rate comparable to those found experimentally (RMSD <0.5). This result shows that a low dependence of firing rate on temperature is feasible despite a substantial (and hence realistic) dependence of the individual conductances on temperature.\n\nNext, we asked which of the nine parameters (i.e., the temperature dependence of peak conductances and transition rates) most affected the dependence of firing rate on temperature. To this end, we performed a systematic sensitivity analysis in the nine-dimensional space of all possible parameter combinations. We created\u2014for each parameter\u2014a distribution of local changes in RMSD induced by changes in that parameter. Specifically, this distribution captured changes in RMSD between all neighboring points along a specific parameter's dimension. Each distribution sampled the whole parameter space (i.e., all possible combinations of the other parameters), also see \u2018Materials and methods\u2019. The impact of a given parameter on the temperature dependence of the f-I curve was then defined as the median of its specific distribution, directly relating the impact of a parameter to its quantitative effect on RMSD. Figure 2C depicts the impact values of all $Q_{10}$ parameters on the RMSD. The sum of all absolute values of impacts is normalized to unity. The impact sign, that is whether an increase in a parameter on average led to an increase or decrease in the observable, is indicated by + and \u2212, respectively. The analysis revealed that the largest impact on the RMSD was exerted by three parameters of potassium channels: temperature dependence of the delayed-rectifier potassium kinetics, $Q_{10}(n)$, and the A-type and delayed-rectifier potassium peak conductances, $Q_{10}(g\u00af_{A})$ and $Q_{10}(g\u00af_{K})$, respectively. The impacts of both potassium channel peak conductances were negative (i.e., increases in their $Q_{10}$ values decreased the $RMSD$), while the potassium activation $Q_{10}(n)$ had a positive impact (i.e., increases in its temperature dependence increased the RMSD).\n\nTo confirm that the results do not strongly depend on the specific choice of peak conductances in the Connor\u2013Stevens model, we tested 24 alternative models with changes of \u00b1 20% in the peak conductances of sodium, both potassium, and leak channels. The impact ranking across those models was highly similar to the ranking in the original Connor\u2013Stevens model (Figure 2E) and we conclude that our results are robust. Moreover, we note that our results are not unique to the Connor\u2013Stevens model. An analysis of a structurally different Traub\u2013Miles model (Traub et al., 1991; Benda, 2002) showed that an equally low temperature dependence is possible (Figure 2\u2014figure supplement 1).\n\nOn a side note, a visualization of the RMSD across the complete nine-dimensional parameter space based on dimensional stacking is shown in Figure 2L, see \u2018Materials and methods\u2019 for details (LeBlanc et al., 1990; Taylor et al., 2006). Dimensional stacking maps the nine-dimensional space onto a two-dimensional representation with nine axes. Ordering of the axes is arbitrary and hence requires optimization to maximize visual information (Taylor et al., 2006). Here, we introduce a new way to determine optimal axes order, defined directly by the ranking of impact scores. Parameters with highest impact on the RMSD are depicted on large-scale axes and parameters with low impact on small-scale axes. The success of the ordering is reflected in the visually structured areas of equal RMSD. As only a subset of all parameters had relevant influence on the RMSD, optimal axes ordering led to a clear visual structure. In contrast, for arbitrary axes ordering visual structure would be hard to recognize.\n\n### Temperature effects on f-I threshold and slope\n\nAs we saw, the temperature dependence of potassium channels plays a crucial role for temperature compensation. For a more detailed and intuitive understanding of the underlying mechanism, we next analyzed the transformation of the shape of f-I curves with temperature. Type I f-I curves, as they are found in the grasshopper, can be described by a square root function (Izhikevich, 2007). Temperature affects an f-I curve by shifting the curve horizontally (i.e., changing its threshold) and by changing its slope (which can also be termed gain). We used fits of the f-I curves by a square root model $f(I)=A\u00b7\\sqrt{I\u2212I_{0}}$, based on the parameters A (slope) and $I_{0}$ (threshold). With heating, the slope always increased (Figure 2G), while we found changes in both directions for the threshold (Figure 2I).\n\nTemperature dependencies of the A-type potassium and leak peak conductances had the strongest influence on the threshold (Figure 2H). In contrast, the slope was most sensitive to the temperature dependence of the delayed-rectifier potassium channel, $Q_{10}(n)$ and $Q_{10}(g\u00af_{K})$, and the sodium channel inactivation, $Q_{10}(h)$ (Figure 2F). Beyond clarifying the specific effect of the aforementioned parameters on changes to the f-I curve, the analysis shows that temperature compensation (i.e., lower RMSD values) was usually achieved by modest increases in threshold balancing the effects of an increase in slope (Figure 2B).\n\nChanges in slope also have direct implications for the ability to infer information about the sound intensity from the firing-rate output of receptor neurons. We hence quantified how the capacity to transmit information from input I to firing rate f changes with temperature. To this end we use Fisher information. Considering the average information transferred for a given interval of firing rates [fmin, fmax], information transfer scales with the slope of the f-I curve and its temperature dependence hence with $Q_{10}(A)^{4}$ (\u2018Materials and methods\u2019). Consequently, the same parameters that had the largest impact on the slope\u2013potassium channel rate ($Q_{10}(n)$) and peak conductances ($Q_{10}(g\u00af_{K})$, $Q_{10}(g\u00af_{A})$) and sodium channel inactivation ($Q_{10}(h)$)\u2014also influenced information transfer most (Figure 2J). Overall, heating was advantageous for information transfer (Figure 2K).\n\n### Influence of temperature on the energy efficiency of spike generation\n\nMetabolic cost is increasingly recognized as an important constraint for neural function (Attwell and Laughlin, 2001; Niven and Laughlin, 2008) and is likely to have shaped the design of neural systems\u2014the more so if firing rates are large. In the grasshopper auditory periphery firing rates often exceed several hundreds of Hz, suggesting that metabolic cost may have played a role in the design of these cells. It is hence interesting to explore whether robustness to temperature changes compromises energy efficiency. To this end, we computed the energetic cost of spike generation and maintenance of the resting potential (Figure 3A). Cost was quantified in terms of the total sodium current (per action potential or per time, respectively). To assess the changes of energy consumption with temperature, energy use was characterized by its Q10 value (i.e., the ratio of energetic cost at 28\u00b0 and 18\u00b0) and averaged across input currents.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/02078/elife-02078-fig3-v1.jpg)\n\n**Figure 3.:** (A) Illustration of the periods during which spiking cost and resting-potential cost were estimated in terms of the Na+ current (two corresponding examples at the higher and lower temperature; red and blue curves, respectively). Energy consumption during spiking was averaged per spike and across the suprathreshold parts of the f-I curve. (B) Distribution of the temperature dependence of the spiking cost $(Q_{10}(spiking\u2009cost))$. Top: all models; middle and bottom: distribution across the 25% of models with lowest and highest temperature dependence of firing rate (RMSD), respectively. Spiking cost decreased at higher temperature for the majority of models. In particular, values of minimal energy consumption at the higher temperature were similar for the subgroups of models with lowest and highest temperature dependence. (C) Distribution of the temperature dependence of the resting cost $(Q_{10}(resting\u2009cost))$, analog to (B). Resting-potential cost decreased for the majority of models; top, middle and bottom panels comprising subgroups of models as in (B). (D) Temperature dependence of firing rate and spiking energy consumption are determined by different sets of conductance parameters. While potassium-channel temperature dependencies have the largest impact on firing rate (Figure 2C), the energy consumption per spike was predominantly determined by sodium-channel temperature dependence. Faster sodium inactivation ($Q_{10}(h)$) and lower peak sodium conductance $(Q_{10}(g\u00af_{Na}))$ fostered energy efficiency at higher temperature. (E) Parameters that reduce resting energy at high temperature also reduce RMSD (same sign of the impact values as in Figure 2C). (F and G) Impacts on energy consumption were robust against \u00b120% perturbations of the model's peak conductances at 18\u00b0C (Figure 2E, \u2018Materials and methods\u2019).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/02078/elife-02078-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Schematic illustration of the measures used (sodium-current-based and potassium-current-based cost, as well as energy efficiency estimated by the separability of sodium and potassium currents either in relation to the sodium current or the potassium current). (B) Impact of the model parameters' $Q_{10}$ values for all four measures. In all cases, temperature dependence of sodium inactivation, $Q_{10}(h)$ had the largest impact on metabolic cost or energy efficiency. In contrast, the temperature dependence of delayed-rectifier potassium activation, $Q_{10}(n)$ (which proved most influential for the temperature dependence of firing rate) exerted a smaller impact on both potassium- and sodium-based energy consumption. (C) The distribution of energy measures across all spike generation models as well as models with particularly high and low RMSD (subgroup of models within the bottom and top 25 percentile of RMSDs).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/02078/elife-02078-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) The distribution of the temperature dependence ($Q_{10}$ values) of the resting cost based on potassium-current across all spike generation models as well as models with particularly high and low RMSD (subgroup of models within the bottom and top 25 percentile of RMSDs). Overall, this type of resting cost increased with larger temperatures because A-type potassium currents were larger. (B) The temperature dependence of the leak conductance influenced this type of resting cost most.\n\nFor the majority of models, the energetic cost of an action potential decreased with heating (93% of models, Figure 3B). On average, temperature-compensated spike generation models (25% of models with lowest RMSD) were slightly more costly than the most temperature-dependent models (25% of models with highest RMSD), see Figure 3B. Nevertheless, the minimum energy consumption was comparable in both groups. Resting cost was substantially lower than spiking cost, this trend increasing with larger firing rates. Sodium-current based resting cost tended to decrease with heating (77% of models). It was slightly lower for temperature-compensated models compared to strongly temperature-dependent models (Figure 3C).\n\nThe sensitivity analysis (performed in analogy to the analysis of temperature dependence of firing rate) revealed that the temperature-dependence of the sodium conductance ($Q_{10}(h)$ and $Q_{10}(g\u00af_{Na})$) influenced energy consumption of spike generation the most (Figure 3D).\n\nThe impacts of conductance parameters on f-I curve temperature dependence and energy consumption were not significantly correlated in this case (\u03c1 = \u22120.23, p=0.56). In particular, the key parameters of largest influence on these features belonged to different channel groups: potassium channels in case of temperature compensation and sodium channels in case of energy efficiency of spike generation. We verified that the large influence of sodium channels was not biased by our sodium-current-based definition of metabolic cost. Three alternative measures\u2014two quantifying energy efficiency based on the separability of sodium and potassium currents (Alle et al., 2009), the other defined by the total potassium current\u2014all confirmed the temperature dependence of sodium channel inactivation $Q_{10}(h)$ as the most influential parameter for spiking cost (Figure 3\u2014figure supplement 1).\n\nThe sodium-current based resting cost was qualitatively influenced in a similar way as temperature dependence of firing rate (Figure 3E): for all four relevant $Q_{10}$ parameters a reduction of resting cost co-occurred with a reduction in temperature dependence of firing rate (same sign of corresponding impacts, Figure 2C). For a potassium-current based resting cost the temperature dependence of leak channels had the dominant impact (Figure 3\u2014figure supplement 2). In contrast to the sodium-current based resting cost, the potassium-current-based cost was larger at higher temperatures. For the majority of models, inactivation of A-type potassium channels was lower at the higher temperature (due to a more negative resting potential) and hence increased the A-type current.\n\nIn summary, striving for temperature compensation does not have to compromise a neuron's energy efficiency. Both results (for spiking and resting cost) generalize beyond the specific choice of peak conductances in the Connor\u2013Stevens model (Figure 3F,G).\n\n### Model-based inference of the auditory transduction function\n\nIn the previous paragraphs, we have shown that spike generation by itself can achieve a remarkably high invariance to temperature changes. The receptor neurons, however, have an additional processing stage involved in transferring the external input signal to a firing-rate response: the so-called transduction mediated by the mechanosensitive channels in the vicinity of the tympanal membrane. Transduction precedes spike generation and translates vibrations of the tympanal membrane caused by the sound pressure wave into receptor currents through these channels, which in turn drive spike generation (Gollisch and Herz, 2005). This mechanism may also contribute to temperature compensation. We therefore explored how temperature compensation can benefit from linking spike generation with the transduction process.\n\nLittle is known about the temperature dependence of transduction in the grasshopper. Here, we combined the computational analysis of spike generation with the experimental findings for the sound-intensity to firing-rate relation in order to predict on a phenomenological level which features of the auditory transduction and its temperature dependence would improve temperature compensation. The experimentally measured receptor neuron responses to sound stimuli $r=\u03c1(I_{dB})$ can be expressed as a cascade of mechanosensory transduction ($I_{C}=\\theta(I_{dB})$, with current $I_{C}$ and sound intensity $I_{dB}$) and spike generation $\u03d5(I_{C}):r=\u03d5(I_{C})=\u03d5(\\theta(I_{dB}))$.\n\nLet us think of the Connor\u2013Stevens spike generation model at the colder temperature (illustrated in Figure 4A, blue curve). When combined with an (upstream) nonlinear translation of sound intensity to current (Figure 4B, blue curve), it yields the full sound-intensity to firing-rate relation (Figure 4C, blue curve), which corresponds to the quantity measured experimentally. Hence, if the receptor neuron response as a function of sound intensity is known from experimental data and we assume a specific spike generation model (i.e., a specific f-I curve), we can mathematically infer the transduction nonlinearity that gives the best match to the experimentally recorded sound-intensity to firing-rate relation by nonlinear regression (Figure 4C, blue curves). We use the term reverse-engineering for this approach. It can be used at the higher temperature as well and enables us to derive for each of the more than 260.000 spike generation models the corresponding ideal transduction curve that best matches the experimentally recorded sound-intensity to firing-rate relation at this higher temperature (Figure 4B,C, red curves). Comparing the reverse-engineered transduction curve at the colder temperature to the reverse-engineered curve at the higher temperature (for each spike generation model), allows us to identify trends in the temperature dependence of mechanotransduction, which would foster a temperature robustness of the firing rate.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/02078/elife-02078-fig4-v1.jpg)\n\n**Figure 4.:** (A) Example of a model-based f-I curve, denoted $r=\u03d5(I_{C})$, at two temperatures. (B) Example of a sigmoidal transduction function converting sound intensity to current, $I_{C}=\\theta(I_{dB})$. (C) Representative receptor neuron responses, $r=\u03c1(I_{dB})$, at two temperatures (dotted lines), as well as a receptor neuron response, $r=\u03d5(\\theta(I_{dB}))$, \u2018constructed\u2019 from the f-I curve in A and the transduction function in B. For each model of spike generation, the optimal transduction function, $I_{C}=\\theta(I_{dB})$, minimizing the error between the corresponding \u2018constructed\u2019 receptor neuron response and the representative receptor neuron response (dotted line in C) was derived. (D) The statistics of temperature dependence of the optimal transduction functions, $I_{C}$, across all models. The width of the dynamic range depended most on temperature and increased with heating for nearly all optimized transduction functions. But the temperature dependence of the saturation current and the half-maximum sound intensity (mainly when decreasing with temperature) were also found to contribute to temperature compensation. Note that the ranges marked by the whiskers cover all data (including outliers) in this plot.\n\nSpecifically, we exploited the fact that experimental response curves (firing rate to sound intensity) were well fitted by a sigmoidal function (Figure 1C) and also assumed a sigmoidal shape for the transduction curves (Hudspeth et al., 2000; Fisch et al., 2012). Accordingly, we reverse-engineered the ideal transduction sigmoid at the warmer temperature for each spike generation model (e.g., those contributing to Figure 2C), so that the resulting sound-intensity to firing-rate relation best matched a representative receptor neuron response (Figure 4C, for details on representative receptor neuron response, \u2018Materials and methods\u2019). The model response curves $r=\u03d5(\\theta(I_{dB}))$ matched the experimental representative response curve very well (R2 >0.98 for 99.5% of all models). Temperature dependence of the reverse-engineered transduction was then quantified based on the $Q_{10}$ values (i.e., the relative changes with temperature) of the three parameters that define each transduction sigmoid: saturation current, half-maximum sound intensity, and dynamic-range width (Figure 4D).\n\nEvaluating the distribution of changes of the ideal transduction curves with temperature across all spike generation models, we found that the largest temperature dependence of these \u2018matching\u2019 transduction curves was to be expected for their dynamic-range width (median $Q_{10}\u223c2$). In addition, changes in saturation current and half-maximum sound level also contributed to fostering temperature compensation of firing rate (Figure 4D). These results show in particular that a suitable temperature dependence of the transduction process can support temperature compensation, even in cases where spike generation is less temperature robust.\n\n## Discussion\n\nWe studied the temperature sensitivity of the firing rate in individual neurons of the grasshopper auditory periphery and found responses to auditory stimulation to be surprisingly temperature compensated. Based on biophysically-motivated neuron models, we identified mechanisms that account for the experimentally observed cell-intrinsic temperature compensation. Our theoretical analysis suggests that spike generation itself can be relatively temperature insensitive, even though the conductances involved are affected by temperature changes. Importantly, mechanisms increasing the robustness to temperature changes need not compromise the energy efficiency of action-potential generation nor the resting cost. In general, the capacity to transmit rate-based information of sound intensity moderately increased with temperature due to the increase in steepness of the f-I curve. We also predict optimal temperature dependencies of the tympanum-mediated transduction process from sound to receptor current that contribute to temperature compensation. On a side note, we introduced a computationally efficient way to optimize visualization of model-derived observables in a high-dimensional parameter space in the context of dimensional stacking (LeBlanc et al., 1990; Taylor et al., 2006).\n\n### Temperature dependence of firing rate in single neurons\n\nNeuronal processing is significantly challenged by variation in temperature due to the changes in chemical and physical processes. In many neurons across invertebrates and vertebrates, firing rate has been observed to at least double with increases of temperature, corresponding to $Q_{10}$ values of two or above (French and Kuster, 1982; Coro and Perez, 1990; Warzecha et al., 1999). It was hence surprising to observe that neurons in the auditory periphery of grasshoppers show $Q_{10}$ values on the order of 1.5 and consequently are remarkably temperature compensated (Hazel and Prosser, 1974; Boulant and Dean, 1986). The temperature robustness of these neurons is hence comparable to that of \u2018warm-insensitive\u2019 neurons in the mammalian brain (Curras and Boulant, 1989).\n\nTemperature compensation has been studied in the context of neurons embedded in a network in a variety of systems (see, e.g., Wechselberger et al., 2006; Tang et al., 2010; Robertson and Money, 2012). Temperature compensation in grasshopper receptor neurons, by comparison, must be based on cell-intrinsic processes. A similar temperature compensation that must be based on a single-cell mechanism has so far\u2014to our knowledge\u2014only been described experimentally for tarsal hairs in the locust (Miles, 1985).\n\nThe cell-intrinsic mechanisms identified in our computational study attribute the observed robustness to a balancing of opposing processes. Phenomenologically, a rise in slope (consistent across the whole parameter range explored) is compensated for by an increase in the threshold of the f-I curve, minimizing the effect of temperature across a broader range of inputs. While alterations in threshold can be produced by changes in peak conductances of ion channels, they have also been described experimentally by heating in invertebrate systems (Burkhardt, 1959; Abrams and Pearson, 1982; Kispersky et al., 2012) in agreement with our observations. Biophysically, a heating-induced increase in the speed of repolarizing gating kinetics is opposed by an increase in peak potassium conductances which promote a more negative resting potential (as can be derived from Equation 2). Although the balancing is not perfect, average deviations on the order of not more than 50% can be easily achieved with strongly temperature-dependent conductances (in particular, $Q_{10}\\in[2;4]$ for all activation- and inactivation rates) for \u223c18% of the models. The temperature dependence of both delayed-rectifier and A-type potassium channels has a particularly large impact on temperature compensation. This matches experimental observations in neurons of the pancreas of mice (Xu et al., 2006) and molluscan neurons as well as previous simulations of an extended Hodgkin\u2013Huxley model (Rush and Rinzel, 1995) and is consistent with the effect of peak conductances on firing rate, for example (Schreiber et al., 2004). Our results also hold for reference models quantitatively different from the original Connor-Stevens model\u2014both for the total fraction of temperature-compensated models RMSD <0.5) and the strong influence of potassium channel dynamics on the temperature dependence of firing rate (Figure 2E), \u2018Materials and methods\u2019 for details. These findings show that our results generalize beyond the specific quantitative choice of peak conductance parameters of the Connor\u2013Stevens model. This is further supported by the fact that a structurally different Traub\u2013Miles model could also exhibit a temperature dependence of firing rate as low as that described for the Connor\u2013Stevens model.\n\n### Energy efficiency and information transfer\n\nFor auditory receptor neurons in the grasshopper energy efficiency of spike generation is likely to be a relevant factor, also see Niven and Farris (2012). Firing rates in these cells approach 400 Hz and likely entail a high total cost of electrical signaling. Our results, however, show that temperature compensation need not impair energy efficiency of spike generation nor of maintenance of the resting potential. The rate of sodium channel inactivation (Figure 3D) proved to be most relevant in setting the energy consumption per spike generated, which is consistent with simulations and dynamic clamp experiments in various model systems (Alle et al., 2009; Hasenstaub et al., 2010; Sengupta et al., 2010). We demonstrated that energy efficiency improved with heating for a wide range of temperature dependencies of ion channels, as was previously described for a model with fixed $Q_{10}$ values (Yu et al., 2012). A fast sodium inactivation limits the duration of the spike; this was consistent with the experimental data, as spike width decreased with heating. Most importantly, the key parameters regulating the energy efficiency of spiking were different from those regulating temperature compensation of firing rate (Figure 2C, Figure 3D). The results could be confirmed for alternative measures of energy (separability of sodium and potassium currents as well as the total potassium current). Apart from confirming the role of sodium channel inactivation, these analyses substantiated that the delayed-rectifier potassium channel kinetics (which were most influential to the robustness of firing rate) did not substantially contribute to metabolic costs based on potassium currents. Overall, our analysis focusses on a major source of metabolic cost: the flow of Na+ and K+ ions which on larger time scales can be compensated by the Na-K-ATPase. For completeness it should be noted, however, that in living cells metabolic costs can also arise from the flow of other ions not included in our study, like Ca2+.\n\nSummarizing the considerations on metabolic cost, we find most noteworthy that from an evolutionary perspective, the relevant features\u2014robustness of firing rate to temperature changes and reduction of metabolic cost\u2014could both be achieved in parallel.\n\nNevertheless, temperature compensation and energy efficiency would be of little use if the fundamental function of information transmission was impaired. Our sensitivity analysis revealed that higher temperatures are also advantageous for the transmission of information about sound intensity. This conclusion is based on our finding that the slope of the f-I curve increased with heating. The capacity to transmit information was affected most by the temperature dependence of the delayed-rectifier potassium conductance. These data, however, need to be interpreted with care. We cannot exclude that channel-type specific stochastic dynamics further influence information transfer in ways not captured by our approach. Implementing the specific stochastic dynamics for the whole parameter space of more than 260.000 models, however, goes beyond the scope of this study and merits future investigation.\n\n### Optimization of the input layer is important\n\nAuditory receptor neurons in the grasshopper constitute the bottom layer of a feedforward network: approximately 80 receptor neurons converge to \u223c15 local neurons, which in turn project to \u223c20 ascending neurons (Vogel and Ronacher, 2007). All auditory input passes through this peripheral network, which preprocesses information and extracts behaviorally-relevant features (Clemens et al., 2011). The large investment into high firing rates and a comparatively high redundancy between neurons in this layer (Machens et al., 2001) also increases the need for energy-efficient spike generation. Optimization of receptor neurons in terms of temperature compensation hence seems a reasonable \u2018strategy\u2019, as all effects of temperature on receptor neurons will be passed on to downstream neurons, where they may multiply. Although we currently do not know to which extent other parts of the auditory system are compensated, it is likely to \u2018pay off\u2019 to constrain the effects of temperature in the initial stages. Downstream neurons, in contrast, may be expected to adopt different strategies, as they can make use of different mechanisms: balancing of inhibition and excitation for robustness to temperature changes (Robertson and Money, 2012) as well as an increase in population and temporal sparseness for energy efficiency and information transfer (Clemens et al., 2012).\n\n### Temperature dependence of the transduction process\n\nWhile the considerations above refer to spike generation, little is known about the temperature dependence of the preceding transduction process. One hypothesis is that a change in the half-maximum sound intensity of the transduction process could foster temperature compensation in firing rate. Our computational analysis shows that, indeed, a slight shift of transduction to lower sound intensities with higher temperatures may be favorable. Such a shift would occur if the amplitude of the tympanal vibration increased with heating and a stimulus of given intensity hence opened more transduction channels. However, the computationally-derived changes are relatively moderate (Figure 4D). This is consistent with the observation that the tympanal vibration in cicadas is relatively temperature independent (Fonseca and Correia, 2007).\n\nThe other two parameters characterizing transduction (saturation current and dynamic-range width) reflect properties of the transduction channels (i.e., their peak conductance and activation range, respectively). The increase in dynamic-range width with heating can be interpreted as a decrease in gating force in a gating-spring model for the transduction as proposed for mechanosensory transduction in bullfrog saccular hair cells (Howard and Hudspeth, 1988). Again, increases in temperature are advantageous, because the gating-force magnitude is inversely related to transduction accuracy (van Netten et al., 2003). Depending on the spike-generation process, increases or decreases in the saturation current foster temperature compensation. The former may directly arise from the temperature dependence of the transduction channels' maximal conductance. The latter may require additional heat-sensitive channels with a modulatory influence on the transduction process, such as thermosensitive transient receptor channels (TRPA) (Kang et al., 2012), which in principle could down-regulate the saturation level of the transduction function via their increased calcium response (Chadha and Cook, 2012).\n\nGenerally, the analysis shows that the transduction process can contribute to temperature compensation. While spike generation alone is sufficient to mediate robustness of the firing rate, a matched temperature dependence of the transduction process may allow for more flexibility in the \u2018choice\u2019 of spike generation parameters, including the possibility to meet additional constraints.\n\n### Conclusions\n\nAltogether, our data show that auditory receptor neurons in the grasshopper represent an example of remarkable cell-intrinsic temperature compensation in the absence of network effects. Our computational analysis clarifies that spike generation alone can achieve this high degree of invariance of firing rate to temperature changes. The identified mechanisms generalize to spike generation in other cell types. Moreover, additional nonlinear processing by static nonlinearities (here interpreted as the transduction process involving the tympanal membrane, but on a wider scope also reflecting properties of synaptic transmission) may foster temperature compensation, if well matched with the temperature dependence of spike generation. Overall, the dependence of neuronal processing on temperature merits further investigation, in particular as temperature fluctuations are an oftentimes underestimated variable in mammalian systems too.\n\n## Materials and methods\n\n### Experimental animals and electrophysiology\n\nExperiments were performed on adult L. migratoria, obtained from a commercial supplier and held at room temperature (22\u201325\u00b0C). Intracellular recordings from auditory neurons within the metathoracic ganglion were conventionally conducted as described elsewhere (Franz and Ronacher, 2002; Wohlgemuth and Ronacher, 2007), using glass microelectrodes filled with a 3\u20135% solution of Lucifer yellow in 0.5 M LiCl. Neuronal responses were amplified (BRAMP-01; npi electronic GmbH, Tamm, Germany) and recorded by a data-acquisition board (BNC-2090A; National Instruments, Austin, TX) with 20 kHz sampling rate. To control for temperature, the preparation was placed directly on a Peltier element connected to a 2 V battery and a potentiometer. Temperature was monitored and recorded with a digital thermometer (GMH 3210, Greisinger electronic GmbH, Regenstauf, Germany) connected to a NiCr-Ni-thermoelement (GTF 300, Type K, Greisinger electronic GmbH, Regenstauf, Germany). For each experiment, recordings were conducted first at a fixed higher tissue temperature (in the range of 28\u201329\u00b0C), then the preparation was cooled down to a lower temperature (in the range of 21\u201323\u00b0) and recordings were repeated.\n\nTo control for differences between the temperatures of the Peltier element and the tissue at the inner side of the tympanal membrane at the attachment site of receptor neurons, the dependence between those variables was measured directly and used for calibration (Figure 1\u2014figure supplement 1). The calibration shows that at the higher Peltier temperature (30\u00b0C) tissue temperature only reached 28\u00b0C (in the steady state) due to heat dissipation. After the cooling process the difference between Peltier and tissue temperature in the steady-state was less than 0.5\u00b0C. Moreover, cooling down proved to be slower in the tissue than at the Peltier element. In order not to underestimate $Q_{10}$ values, we took a conservative approach: Electrophysiological recordings started 3\u20135 min after induction of the temperature change. Tissue temperature was derived from the calibration curve at the onset of a recording (lasting 40 s). Although temperature may still have been subject to small changes during the recording, this procedure ensured that temperature changes (i.e., the difference between high and low temperature) were\u2014at most\u2014slightly underestimated, favoring larger $Q_{10}$ values. Consequently, the estimated $Q_{10}$ values constitute an upper bound. In contrast, we cannot exclude that real $Q_{10}$ values may even be slightly smaller, that is even more temperature compensated.\n\nAfter completion of the recordings, Lucifer yellow was injected into the recorded cell by applying a hyperpolarizing current. Subsequently, the thoracic ganglia were removed, fixed in 4% paraformaldehyde, dehydrated, and cleared in methylsalicylate. The stained cells were identified under a fluorescent microscope according to their characteristic morphology. Altogether, nine receptor neurons were recorded in eight preparations.\n\n### Acoustic stimulation\n\nTo obtain spike rate vs intensity curves (response curves), we used acoustic broad band stimuli (100 ms duration, 1\u201340 kHz bandwidth) repeated five times each at 8 intensities, rising from 32 to 88 dB SPL. Acoustic stimuli were stored digitally and delivered by a custom-made program (LabView 7 Express, National Instruments, Austin, TX). Following a 100 kHz D/A conversion (BNC-2090A; National Instruments, Austin, TX), the stimulus was routed through a computer-controlled attenuator (ATN-01M; npi electronic GmbH, Tamm, Germany) and an audio amplifier (Pioneer stereo amplifier A-207R, Pioneer Electronics Inc., USA). Acoustic stimuli were broadcast unilaterally by speakers (D2905/970000; Scan-Speak, Videb\u00e6k, Denmark) located at \u00b1 90\u00b0 and 30 cm from the preparation. Sound intensity was calibrated with a half inch microphone (type 4133; Br\u00fcel & Kj\u00e6r, N\u00e6rum, Denmark) and a measuring amplifier (type 2209; Br\u00fcel & Kj\u00e6r, N\u00e6rum, Denmark), positioned at the site of the preparation.\n\n### Analysis of experimental data\n\nExperimental spike times were extracted from the digitized recordings by applying a voltage threshold above background noise level. Mean spike rates were calculated for each intensity to obtain response curves (spike rate r vs sound intensity $I_{dB}$) per neuron, stimulation side, and temperature. We fit a three-parameter sigmoid to each response curve, $r=\u03c1(I_{dB})=r_{sat}/(1+exp(\u2212\\frac{I_{dB}\u2212I_{50,\u03c1}}{w_{\u03c1}}))$, with saturation spike rate $r_{sat}$, half-maximum sound intensity $I_{50,\u03c1}$, and dynamic-range width $w_{\u03c1}$.\n\n### Quantification of temperature effects\n\nUnless noted otherwise, temperature dependence of a given observable x was quantified by the temperature coefficient\n\n$$\nQ_{10}(x)=(\\frac{x(T+\u0394T)}{x(T)})^{10/\u0394T}.\n$$\n\n$Q_{10}(x)$ is the factor by which x changes after a temperature increase of 10\u00b0C. $Q_{10}>1$ and $Q_{10}<1$ indicate an increase or decrease, respectively, of x with heating, while $Q_{10}=1$ indicates perfect temperature invariance. For plots of $Q_{10}$ values data points were presented as outliers when they fell outside the interval $[q_{1}1.5\u00b7iqr,q_{3}+1.5\u00b7iqr]$, with the 25th and the 75th percentile defining $q_{1}$ and $q_{3}$ and an interquartile range $iqr=q_{3}\u2212q_{1}$.\n\n### Temperature dependence of action-potential width\n\nWe also quantified the temperature-dependence of action-potential width at half-maximum amplitude, $Q_{10}(AP\u2009width)$, for every neuron during the stimulus period, separately at each stimulus. Figure 1C shows the distribution of $Q_{10}(AP\u2009width)$ pooled across all stimulus amplitudes (median 0.66). Our results qualitatively agree with the finding of broader action potentials at lower temperatures reported for various vertebrate and invertebrate neurons (Thompson et al., 1985; Bestmann and Dippold, 1989; Janssen, 1992; Gabbiani et al., 1999). Further, our results agree quantitatively with those reported for locust motor neurons and locust L-neurons (Burrows, 1989; Simmons, 1990).\n\n### Adaptation\n\nWe checked that our results on the temperature dependence of firing rate were not compromised by the effects of adaptation. To this end, we re-analyzed the experimental data, separately focusing on the early phase of stimulus presentation (10\u201340 ms post stimulus onset), and the late phase (70\u2013100 ms post stimulus onset). Effects of adaptation were reflected in a ratio of the respective parameter values (early-versus-late phase) that differed from one. While individual characteristics of experimentally measured firing-rate curves were subject to adaptation (e.g., the slope at half-maximum sound level was steeper early on and shallower in the later part), the early-to-late ratios did not significantly change with temperature.\n\n### Single-neuron models\n\n#### Model definition\n\nWe performed simulations of neuronal membrane potential dynamics using a single-compartment Connor\u2013Stevens model (original model described in Connor et al., 1977; parameters taken from Dayan and Abbott 2005):\n\n$$\nC_{m}\\frac{dV}{dt}=I_{C}\u2212I_{L}\u2212I_{Na}\u2212I_{K}\u2212I_{A}=I_{C}\u2212g\u00af_{L}\u00b7(V\u2212E_{L})\u2212g\u00af_{Na}\u00b7m^{3}h\u00b7(V\u2212E_{Na})\u2212g\u00af_{K}\u00b7n^{4}\u00b7(V\u2212E_{K})\u2212g\u00af_{A}\u00b7a^{3}b\u00b7(V\u2212E_{A}).\n$$\n\nThe original model was defined at a temperature of 18\u00b0C, where the parameters take the following values: peak conductances $g\u00af_{L}=0.003$, $g\u00af_{Na}=1.2$, $g\u00af_{K}=0.2$, $g\u00af_{A}=0.477$ (mS/mm2), and reversal potentials $E_{L}=\u221217$, $E_{Na}=55$, $E_{K}=\u221272$, $E_{A}=\u221275$ (mV). All gating variables, $x\\in{n,m,h,a,b}$, follow first-order kinetics:\n\n$$\n\\frac{dx}{dt}=\\frac{x_{\u221e}\u2212x}{\\tau_{x}},\u2003x_{\u221e}=\\frac{\\alpha_{x}(V)}{\\alpha_{x}(V)+\\beta_{x}(V)},\u2003\\tau_{x}=\\frac{1}{\\alpha_{x}(V)+\\beta_{x}(V)}.\n$$\n\n$x_{\u221e}$ denotes the steady-state (in-)activation function of x, $\\tau_{x}$ the time constant of (in-)activation, and \u03b1 and $\\beta$ opening and closing rates of x, respectively. Specifically,\n\n$$\n\\alpha_{m}=\\frac{0.38\u00b7(V+29.7)}{1\u2212exp(\u22120.1\u00b7(V+29.7))},\n$$\n\n\n\n$$\n\\beta_{m}=15.2\u00b7exp(\u22120.0556\u00b7(V+54.7)),\n$$\n\n\n\n$$\n\\alpha_{h}=0.266\u00b7exp(\u22120.05\u00b7(V+48)),\n$$\n\n\n\n$$\n\\beta_{h}=\\frac{3.8}{1+exp(\u22120.1\u00b7(V+18))},\n$$\n\n\n\n$$\n\\alpha_{n}=\\frac{0.02\u00b7(V+45.7)}{1\u2212exp(\u22120.1\u00b7(V+45.7))},\n$$\n\n\n\n$$\n\\beta_{n}=0.25\u00b7exp(\u22120.0125\u00b7(V+55.7)),\n$$\n\n\n\n$$\n\\tau_{a}=0.3632+\\frac{1.158}{1+exp(0.0497\u00b7(V+55.96))},\n$$\n\n\n\n$$\na_{\u221e}=(\\frac{0.0761\u00b7exp(0.0314\u00b7(V+94.22))}{1+exp(0.0346\u00b7(V+1.17))})^{1/3},\n$$\n\n\n\n$$\n\\tau_{b}=1.24+\\frac{2.678}{1+exp(0.0624\u00b7(V+50))},\n$$\n\n\n\n$$\nb_{\u221e}=(\\frac{1}{1+exp(0.0688\u00b7(V+53.3))})^{4}.\n$$\n\nAll simulations were performed in Matlab (variable-order solver ode15 s [Shampine and Reichelt, 1997] with time step 0.01 ms).\n\n### Temperature dependence of the model\n\nThe dependence on temperature T(\u00b0C) was introduced to the model at the level of reversal potentials $E(T)$, peak conductances $g\u00af_{X}(T)$, and time constants of (in-)activation $\\tau_{x}(T)$. The Nernst equation defined the temperature dependence of reversal potentials:\n\n$$\nE=\\frac{RT}{zF}ln\\frac{[ion\u2009outside]}{[ion\u2009inside]}\u21d2E(T_{0}+\u0394T)=E(T_{0})\u00b7(1+\\frac{\u0394T}{T_{0}+273.15}).\n$$\n\nR denotes the universal gas constant, z the valence of the considered ion, and F the Faraday constant. T0 = 18\u00b0C sets the reference temperature, $\u0394T$ temperature differences. Temperature dependence of $g\u00af_{X}(T)$ is determined by the choice of the parameter $Q_{10,g\u00af_{X}}$:\n\n$$\ng\u00af_{X}\u2192g\u00af_{X}(\u0394T)=g\u00af_{X}\u00b7Q_{10,g\u00af_{X}}^{\\frac{\u0394T}{10}},\u2003X\\in{Na,K,L,A}.\n$$\n\nFor $\u0394T=0$ each $g\u00af_{X}(T)$ takes the value of its original definition at 18\u00b0C. For a given gating variable, temperature dependence of its opening and closing rates are identical and read:\n\n$$\n\\alpha_{x}\u2192\\alpha_{x}(\u0394T)=\\alpha_{x}\u00b7Q_{10,x}^{\\frac{\u0394T}{10}},\n$$\n\n\n\n$$\n\\beta_{x}\u2192\\beta_{x}(\u0394T)=\\beta_{x}\u00b7Q_{10,x}^{\\frac{\u0394T}{10}},\u2003x\\in{n,m,h,a,b}.\n$$\n\nConsequently,\n\n$$\n\\tau_{x}\u2192\\tau_{x}(\u0394T)=\\tau_{x}/Q_{10,x}.\n$$\n\n#### Exploration of the parameter space\n\nThe model totals nine temperature-dependence parameters which span the parameter range explored: $Q_{10,g\u00af_{X}}$, with $X\\in{L,Na,K,A}$, and $Q_{10,x}$, with $x\\in{n,m,h,a,b}$. Each parameter was sampled in four steps within realistic intervals (Partridge and Connor, 1978; Hille, 2001; Tang et al., 2010): $Q_{10,g\u00af_{X}}\\in[1.2,2.0],Q_{10,x}\\in[2.0,4.0]$, resulting in a total number of 49 models. Step currents of different amplitudes ($I_{C}\\in$ [0.05, 0.6] \u00b5A/mm2, varied in 0.05 \u00b5A/mm2 steps) and 100 ms duration served as stimulus to the model neurons. Preceding and following a stimulus, periods of 50 ms were simulated without current stimulation. For each model, simulations were performed at 28\u00b0C and referenced with model behavior at 18\u00b0C to derive the temperature dependence.\n\n### Quantification of f-I curve temperature dependence\n\nSpike rates f in response to N = 12 current amplitudes $I_{C}$ defined the f-I curve for a given temperature (spike detection threshold \u221230 mV). Temperature dependence of the f-I curve was quantified as the root-mean-squared difference between firing rates at the two temperatures across input currents, normalized by the average spike rate elicited at the lower temperature:\n\n$$\nRMSD=\\frac{\\sqrt{\\frac{1}{N}\\sumi=1N(f_{i,T_{cold}}(I_{C,i})\u2212f_{i,T_{hot}}(I_{C,i}))^{2}}}{\\frac{1}{N}\\sumi=1Nf_{i,T_{cold}}(I_{C,i})},\n$$\n\nwith Tcold = 18\u00b0C and Thot = 28\u00b0C. In agreement with the functional shape of type I spiking (Ermentrout, 1996), f-I curves for each $Q_{10}$ parameter combination were fit to a square root model,\n\n$$\nr=\u03d5(I_{C})=A\u00b7\\sqrt{I_{C}\u2212I_{0}},\n$$\n\nwhere A denotes slope and $I_{0}$ firing threshold of the f-I curve (quality of fit R2 >0.97 for 99% of the models).\n\n### Fisher information\n\nFor a spike generation process $f(I)$, Fisher information $J(I)$ is a measure of how accurately a particular input current I can be decoded from the firing-rate response $f(I)$. It is formally defined as\n\n$$\nJ(I)=\\int(\\frac{\\partial}{\\partialI}lnP(f|I))^{2}P(f|I)df,\n$$\n\nwith the conditional probability density of the spike rate given an input current, $P(f|I)$, characterizing the output noise (i.e., spike-rate variability). We consider two empirical response models for the spike rate density: Poissonian and input-independent Gaussian, reading\n\n$$\nP_{P}(f\u223c|I)=\\frac{(f(I)\u00b7b)^{f\u223c\u00b7b}}{(f\u223cb)!}\u00b7exp(\u2212f(I)b)\u2009and\n$$\n\n\n\n$$\nP_{G}(f\u223c|I)=\\frac{1}{\\sqrt{2\\pi\\sigma^{2}}}\u00b7exp(\u2212\\frac{(f\u223c\u2212f(I))^{2}}{2\u00b7\\sigma^{2}}),\n$$\n\nrespectively. For the Poisson case, b denotes the time bin during which a certain spike count $N_{sp}$ is observed. It is assumed to be sufficiently large so that $N_{sp}/b$ is well approximated by the mean firing rate $f(I)$. \u03c32 denotes the variance of the Gaussian probability density. The corresponding Fisher information is given by\n\n$$\nJ_{P}(I)=\\frac{(f\u2032(I))^{2}}{f(I)}\u2009and\n$$\n\n\n\n$$\nJ_{G}(I)=\\frac{(f\u2032(I))^{2}}{\\sigma^{2}},\n$$\n\nrespectively. To compare Fisher information across different temperatures, it was averaged across a fixed interval of output firing rates [fmin, fmax]. Accordingly, the input current interval [Imin, Imax] was computed for each model and temperature. Average Fisher information reads\n\n$$\n\u2329J\u232a=(I_{max}\u2212I_{min})^{\u22121}\\intI_{min}I_{max}dI\u2009J(I).\n$$\n\nFor low noise, the average Fisher information is a lower bound to the neuron's capacity to transmit information (Kostal et al., 2013),\n\n$$\nC_{low}=ln(\\frac{\\intdI\u2009J(I)}{\\sqrt{2\\pie}}).\n$$\n\nExploiting the square-root shape of firing-rate curves, $f(I)=A\u00b7\\sqrt{I\u2212I_{0}}$, and $f\u2032(I)=A/2\u00b7(I\u2212I_{0})^{\u22121/2}$, it follows that\n\n$$\n\\frac{1}{\u0394I}\u2261\\frac{1}{I_{max}\u2212I_{min}}=\\frac{A^{2}}{f_{max}^{2}\u2212f_{min}^{2}}.\n$$\n\nFor the Poisson probability density Fisher information is given by\n\n$$\n\u2329J_{P}\u232a=\\frac{1}{\u0394I}\\intI_{min}I_{max}dI\u2009A/4\u00b7(I\u2212I_{0})^{\u22123/2}=\\frac{1}{\u0394I}\u00b7(\u2212A/2)[(I\u2212I_{0})^{\u22121/2}]_{I_{min}}^{I_{max}}=\\frac{1}{\u0394I}\u00b7(\u2212A^{2}/2)[(A\\sqrt{I\u2212I_{0}})^{\u22121}]_{I_{min}}^{I_{max}}.\n$$\n\nWith Equation 1 it can be expressed as\n\n$$\n\u2329J_{P}\u232a=\\frac{1}{\u0394I}\u00b7(\u2212A^{2}/2)(1/f_{max}\u22121/f_{min})=\\frac{A^{2}}{f_{max}^{2}\u2212f_{min}^{2}}\u00b7(\u2212A^{2}/2)(1/f_{max}\u22121/f_{min})=A^{4}\u00b7\\frac{1}{2f_{max}f_{min}(f_{max}+f_{min})}.\n$$\n\nFor a Gaussian probability density we get\n\n$$\n\u2329J_{G}\u232a=\\frac{1}{\u0394I}\\intI_{min}I_{max}dIA^{2}/(2\\sigma^{2})\u00b7\\frac{1}{I\u2212I_{0}}=\\frac{A^{2}/(2\\sigma^{2})}{\u0394I}\u00b7[ln(I\u2212I_{0})]_{I_{min}}^{I_{max}}=\\frac{A^{2}/(2\\sigma^{2})}{\u0394I}\u00b7ln(\\frac{I_{max}\u2212I_{0}}{I_{min}\u2212I_{0}})\n$$\n\ninstead. Fisher information in this case reads\n\n$$\n\u2329J_{G}\u232a=\\frac{A^{4}}{\\sigma^{2}(f_{max}^{2}\u2212f_{min}^{2})}\u00b7ln(\\frac{f_{max}}{f_{min}}).\n$$\n\nBecause only the slope of the firing-rate curve, A, is temperature-dependent in $\u2329J_{P}\u232a$ and $\u2329J_{G}\u232a$, the temperature dependence of Fisher information is given by\n\n$$\nQ_{10}(\u2329J_{P}\u232a)=Q_{10}(\u2329J_{G}\u232a)=[Q_{10}(A)]^{4}.\n$$\n\nFor the average value across a fixed output interval [fmin, fmax] Fisher information is invariant to shifts of the threshold. A heating-induced increase in the accuracy of a decoder hence requires an increase in slope of the firing-rate curve, that is $Q_{10}(A)>1$. This is true for all spike-generation models considered.\n\n### Measures of energy consumption during spiking and rest\n\n#### Spiking cost\n\nEnergy consumption per spike was quantified as the total sodium current (also termed sodium load) (Hasenstaub et al., 2010; Sengupta et al., 2010) between stimulus onset $t_{start}$ and 20 ms post stimulus offset $t_{stop}$, divided by the number of spikes elicited during this period, $N_{s}$:\n\n$$\nNa^{+}load/spike=\\intt_{start}t_{stop}+20msI_{Na}dt/N_{s},\n$$\n\nConsidering that the $Na$-K-ATPase consumes one ATP molecule per 3 Na+ ions, this quantity is proportional to the number of ATP molecules per spike. The $Q_{10}$(Na+ load/spike) averaged across all input currents was used for further analysis (and referred to as $Q_{10}$(spiking cost)).\n\nIn addition, a measure of energy efficiency based on the separation of charges, that is the fraction of the sodium current that was not counterbalanced by a simultaneous potassium current (Crotty et al., 2006), was implemented. As for estimation of the sodium-current-based cost, the stimulus period and the following 20 ms were evaluated. Note that the potassium current in the model comprised two components, $I_{K,total}=I_{K}+I_{A}$. Temperature effects on energy efficiency (estimated by the corresponding $Q_{10}$ values) were highly similar to those on (the inverse of) spiking energy consumption. Finally, both measures\u2014the current-based cost and the charge-separation-based energy efficiency\u2014were also implemented based on the potassium current instead of the sodium current. In other words, spiking cost was additionally quantified by the total potassium current, energy efficiency based on the fraction of the potassium current that was not counterbalanced by the sodium current.\n\n#### Resting cost\n\nThe resting potential $V_{r}$ of the Connor\u2013Stevens model is given by\n\n$$\nV_{r}=\\frac{E_{A}\u00b7g_{A}(V_{r})+E_{L}\u00b7g\u00af_{L}+E_{K}\u00b7g_{K}(V_{r})+E_{Na}\u00b7g_{Na}(V_{r})}{g\u00af_{L}+g_{A}(V_{r})+g_{K}(V_{r})+g_{Na}(V_{r})}.\n$$\n\nThe numerical solution of this expression for $V_{r}$ was used to evaluate the sodium current at rest,\n\n$$\nI_{Na,rest}=g_{Na}(V_{r})\u00b7(E_{Na}\u2212V_{r}),\n$$\n\nwhich defines the sodium-current-based cost of the resting potential (assuming the current is proportional to the activity of the Na-K-ATPase at rest). Likewise, the potassium-current-based cost is defined by\n\n$$\nI_{K,rest}=g_{K}(V_{r})\u00b7(E_{K}\u2212V_{r})+g_{A}(V_{r})\u00b7(E_{A}\u2212V_{r}).\n$$\n\nAs the resting state is steady, the cost quantities do not depend on the gating variables' (in-) activation time constants and, consequently, the corresponding $Q_{10}$ values do not have an impact on $Q_{10}(resting\u2009cost)$.\n\n### Sensitivity analysis\n\nSensitivity analysis was performed in the parameter space spanned by the nine temperature-dependence parameters (each dimension sampled by four values). To quantify global impact of one parameter on a given observable (like RMSD), we evaluated the distribution of point-wise changes in the observable along the dimension of a specific parameter. In total, for each parameter, $3\u00b74^{8}$ changes between neighboring points along the corresponding dimension need to be considered. These define a distribution of changes, whose median is indicative of the global impact of this parameter on the observable. The distribution's 25% and 75% percentiles are indicated as error bars (see, e.g., Figure 2C). For each observable, impact values were normalized to give unity when summed across all nine parameters. The sign of the impact provides an estimate of the qualitative influence of the parameter on the observable, that is whether an increase in the parameter value leads to an increase or decrease in the observable. We considered an impact reliable if both percentiles (25% and 75%) had the same sign as the impact.\n\nNote that our impact evaluation constitutes a global sensitivity analysis, comparable to the Morris one-at-a-time method (Morris, 1991). In contrast to the latter approach, we use a full factorial (grid) set of inputs instead of a random one. Moreover, our measure is based on the median instead of the mean of a distribution of differences in the observable. Yet, the interpretation of a high absolute impact is comparable to that of a high (absolute) mean elementary effect (the sensitivity measure in Morris 1991), as is the interpretation of a large interquartile range of the difference distributions to a large standard deviation of the elementary effect.\n\n### RMSD minimization with a genetic algorithm\n\nAlternatively to the coarse parameter grid search, we also used optimization by a genetic algorithm (Mitchell, 1998) to validate the minimum RMSD. To this end, the turboGA function was used (Matlab file exchange; settings: population size 1000, 150 generations, 8 bit discretization, initial conditions uniformly random). For the $Q_{10}$ parameter range used in the main article, the minimum RMSD identified by the genetic algorithm was very close to the minimum value on the grid (0.21 for the genetic algorithm, 0.22 on the grid). On average the coordinates of the grid-based minimum deviated 5% from the coordinates of the genetic algorithm-based minimum.\n\n### Dimensional stacking\n\nDimensional stacking is a method to visualize high-dimensional data, that is an observable f as a function of N parameters, $p_{1},\u2026,p_{N}$, evaluated at a discrete set of parameter values. The method is described in detail, for categoric observables, in LeBlanc et al. (1990) and Taylor et al. (2006). Mainly, the method maps the N-dimensional data to a two-dimensional representation by iteratively slicing the data in one dimension and stacking the slices in 2D (Figure 2L). In this representation, the position of each pixel in the two-dimensional image corresponds to one parameter combination, and its color encodes the value of the observable. The image has N axes of different scales, each associated with one parameter. Visual informativeness of a dimensional stacking image crucially depends on the order in which the dimensions are stacked, that is, the axes order. The parameter dimensions associated with larger variability in the observable should be assigned larger-scale axes; those with lowest variability the small-scale axes. Sorting the axes with respect to their impact on the observable prior to dimensional stacking hence leads to a visually informative image, where color changes can be easily related to changes of the observable with individual parameters. For this study, we used the ranking of absolute impact scores (described above) to define the \u2018optimal\u2019 stack order, extending the optimization method described in LeBlanc et al. (1990) and Taylor et al. (2006).\n\n### Model robustness\n\nThe sensitivity analysis was performed with the Connor\u2013Stevens model with original parameters for peak conductances $g\u00af_{Na}$, $g\u00af_{K}$, $g\u00af_{A}$, and $g\u00af_{L}$ at the colder temperature (Dayan and Abbott, 2005). To test that our results are robust and do not strongly depend on this specific parameter choice, we additionally performed the whole sensitivity analysis for 24 models with peak conductances of the reference model perturbed by \u00b120% (8 models with one individual peak conductance lowered or raised by 20%; 16 models with all combinations of the four conductances either lowered or raised by 20%). The impacts for those models are summarized in Figure 2E and Figure 3F,G (individual changes in peak conductances represented by black symbols, combined changes by gray ones). Note that for computational efficiency only three values per parameter (instead of four) were taken (for perturbed models as well as the reference model, as presented in Figure 2E). The fraction of models with $RMSD<0.5$ (across the temperature dependence parameter space) was 18% in the original Connor\u2013Stevens model. Variations in peak conductances did not change this finding much: for each perturbed model 15\u201319% of its temperature dependence combinations gave $RMSD<0.5$.\n\nFor completeness, we also checked that a structurally different vertebrate model with type I dynamics (Traub-Miles, Traub et al., 1991), as defined in Benda 2002) was able to display temperature compensation despite a substantial temperature dependence of individual conductances (same range of temperature parameters as in the Connor\u2013Stevens models, Figure 2\u2014figure supplement 1). The search for the lowest temperature dependence within the parameter space (sodium and potassium kinetics $Q_{10}(m)$, $Q_{10}(h)$, $Q_{10}(n)$, and the peak conductances of sodium, potassium and leak $Q_{10}(g\u00af_{Na})$, $Q_{10}(g\u00af_{K})$, $Q_{10}(g\u00af_{L})$) was performed based on the genetic algorithm described above. As the model operates at 32\u00b0, we checked both heating and cooling the model by 10\u00b0.\n\n### Reverse-engineering the transduction and its temperature dependence\n\nFor a given pair of a receptor neuron response $r=\u03c1(I_{dB})$ and a spike generation model $r=\u03d5(I_{C})$, the transduction function (current $I_{C}$ vs sound intensity $I_{dB}$) can be inferred. We assumed a sigmoidal shape of the transduction function, $I_{C}=\\theta(I_{dB})=I_{C,sat}/(1+exp(\u2212\\frac{I_{dB}\u2212I_{50,\\theta}}{w_{\\theta}}))$, with transduction saturation current $I_{C,sat}$, half-maximum sound intensity $I_{50,\\theta}$, and dynamic-range width $w_{\\theta}$. Further, we chose representative parameters for the receptor neuron response. To this end, the median cold temperature, $T\u00af_{c}$, the median receptor neuron response parameters at cold temperature, $p\u00af_{\u03c1}\\in{r\u00af_{sat},I\u00af_{50,\u03c1},w\u00af_{\u03c1}}$, and the median temperature dependencies of the three receptor neuron response parameters, $Q\u00af_{10}(p_{\u03c1})$, were determined from the experimental data. Using these, receptor neuron response parameters were inferred for temperatures of 18 and 28\u00b0 (the temperatures at which spike generation simulations were performed), according to $p_{\u03c1,T}=p\u00af_{\u03c1}\u00b7(Q\u00af_{10}(p_{\u03c1}))^{\\frac{T\u2212T\u00af_{c}}{10}}$. The resulting representative receptor neuron responses were used as objective functions for reverse engineering of the transduction curve. To infer the three parameters characterizing the optimal transduction curve for a given spike generation model $r=\u03d5(I_{C})$, we computed\n\n$$\nr=\u03d5(\\theta(I_{dB}))=A\u00b7\\sqrt{I_{C,sat}/(1+exp(\u2212\\frac{I_{dB}\u2212I_{50,\\theta}}{w_{\\theta}}))\u2212I_{0}}.\n$$\n\nThe transduction parameters were chosen such that they minimized the root mean squared error between $\u03d5(\\theta(I_{dB}))$ and the representative receptor neuron response $\u03c1(I_{dB})$:\n\n$$\n\\theta(I_{dB},\u2009optimal)=arg\u2009min_{\\theta(I_{dB})}{\\int|\u03c1(I_{dB})\u2212\u03d5(\\theta(I_{dB}))|^{2}dI_{dB}}\n$$\n\nThis fitting procedure was repeated for all hot and cold spike generation processes, and the temperature coefficients for the three transduction parameters were computed. The transduction parameters at the reference temperature (18\u00b0C) were: $I_{C,cold}(I_{dB})=0.40\\muA/mm^{2}$.\n",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "58ae2218-634b-4650-93ff-12f8a483ac79",
+      "submission_id": "a54be586-7227-4428-87c0-1b210284c074",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.02078.013](https://doi.org/10.7554/eLife.02078.013)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cCell-intrinsic mechanisms of temperature compensation in a sensory receptor neuron\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom, Ronald L Calabrese, is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe authors describe experiments showing temperature insensitivity in locust auditory receptor neurons (Q10< 1.5) and then pursue a modeling approach to explain these results. They concentrate on the spiking mechanisms itself and use an ensemble modeling approach to identify model neurons that will show comparable temperature insensitivity while expressing membrane currents with normal Q10s. These modeling experiments identify key processes (parameters) that give rise to the temperature 'compensation' and show that well-compensated models show a shift in threshold that partially cancels the shift in F-I slope that all models show. They also address the issues of information transfer and metabolic cost as temperature increases and find no restrictions for compensated models. They then use a reverse engineering method to address temperature compensation in the transduction mechanisms (receptor potential). The finding are of general interest because many neurons, including peripheral mammalian neurons, experience temperature changes and these studies show that such changes are easily accommodated/compensated by systems of membrane currents with normal Q10s.\n\nThe three reviewers are from different backgrounds and have different overlapping expertise; their reviews reflect their different backgrounds and expertise, but they all agree that four major revisions are needed.\n\n1) While conciseness is a virtue it should not sacrifice clarity and completeness. We encourage the authors to expand their style in Introduction, Results, and even Methods to add more rationale and fuller explanations of what they did and how the models were constructed and used. In particular the section \u201cModel-based inference of the auditory transduction function\u201d was very difficult to follow. We suggest that the authors expand this section and fully explain what they did, how they did it, and why they did it.\n\n2) Like prior studies by Laughlin and others on the metabolic cost of neuronal signaling, the authors use Na flux as a proxy for ion pump activity and as their measure of metabolic cost during spiking and at rest. The authors should provide clear rationale for why the cost of other ions were excluded. This seems particularly relevant in light of the authors' finding that the properties of Na channels, more than those of other channels, influence energy efficiency in these model neurons. The model used only includes Na and K currents and so other ions cannot be considered and the cost of K is tied to the cost of Na by the Na/K pump but this and the inherent limitations it imposes on the conclusion should be made explicit.\n\n3) One reviewer crystallized concerns about the experimental component of the work: \u201cMy concerns are with the acquisition of the biological data, particularly with respect to temperature control and measurement\u2026\u201d The authors should make their experimental procedures crystal clear (in both Results and in Methods) and should address each of the questions posed by this reviewer. They should also make arguments about how much error there would have to be to affect their conclusion.\n\n4) The authors should apply appropriate statistical tests to the biological data in all cases where temperature appears to affect a characteristic, e.g., spike width, so that the reader is confident that the temperature change is large enough to measure valid Q10s.\n\nOther issues to address:\n\nReviewer #1:\n\nThe section \u201cModel-based inference of the auditory transduction function\u201d was very difficult to follow. This reviewer is a computational neuroscientist but I am unfamiliar with reverse engineering techniques, and I was not given enough help in reasoning through the experiments and data as would be necessary for the general reader in neuroscience. I suggest that the authors expand this section and fully explain what they did, how they did it, and why they did it. The Methods section helps a bit but only very marginally and is very technically written. Think of the general reader here.\n\nReviewer #2:\n\nLike prior studies by Laughlin and others on the metabolic cost of neuronal signaling, the authors use Na flux as a proxy for ion pump activity and as their measure of metabolic cost during spiking and at rest. I have always been puzzled by this choice \u2013 why exclude the cost of other ions? I assume there are good reasons for this choice that I am simply not aware of, so I suggest that the authors include a comment on this question. This seems particularly relevant in light of the authors' finding that the properties of Na channels, more than those of other channels, influence energy efficiency in these model neurons. This result makes me wonder if the outcome would have been different (with other ion channels playing a bigger role in energy efficiency) if metabolic cost had been defined in a less Na-centric way.\n\nAnother comment concerns the tests for robustness of their findings to the particular choice of model neuron that the authors describe in the paper. In the Results section we learn that the authors tested for robustness of their results by checking whether a relatively modest (20%) variation of parameters of the Connors-Stevens model used here changes the overall conclusions, and are assured that it does not. While this test for robustness is laudable, I was much more convinced that the findings are robust by a very short comment, hidden in the Methods section, in which the authors state that they also found temperature compensation of firing properties despite temperature dependence of ion channels in a structurally different Traub-Miles model neuron. I recommend that the authors consider giving this latter result a more prominent place in the paper, because it could potentially (since I don't know the details) make the case for generality of the results much stronger.\n\nReviewer #3:\n\nThe work is novel, interesting and well presented. Though the linkage between the biological neurons and the models is quite tenuous, I have no problems with the computational aspects of the paper. My concerns are with the acquisition of the biological data, particularly with respect to temperature control and measurement. This is important because if the temperature change at the receptor ending is over-estimated then the Q10s will be under-estimated and there may not be an interesting biological phenomenon (the surprisingly low Q10) in need of explanation. The preparation was heated by placing it on a Peltier element i.e. a localized heat source underneath the locust. Heat conduction from that source will vary through the various tissues, cuticle and saline and I would expect that the preparation was not at a uniform temperature throughout. The GTF 300 thermal probe has, according to the manufacturer's website, a diameter of 1mm (assuming that it hadn't been modified) which is relatively large with respect to distances inside the thoracic/abdominal cavity. I wonder if the authors could provide more information in the Methods that might increase confidence that the temperature range reported and used to calculate Q10 was the range that the receptor ending actually experienced. For example, how was the temperature at the attachment site of the receptor neurons measured using the GTF 300 probe? How variable was the temperature at different sites in the preparation (tympanum, saline, ganglion)? What did the calibration curve look like and was a calibration curve generated for every preparation that provided data or from other preparations; how consistent was it between preparations?\n\nAction potential width was measured at the recording site in the metathoracic ganglion but it is being associated with firing frequency generated at the tympanum. Did these two sites experience the same temperature changes? Given that the density and diversity of conductances can be quite different at different locations of a neuron, do we know whether action potential parameters at these two sites are the same?\n\nThe sample size of 9 neurons in 8 preparations is relatively small. I assume that each preparation provided at least one neuronal recording and one provided two, but this is not explicitly stated. According to Figure 1C, one or more of the neurons had a Q10 for spike rate at half max greater than 2.5 suggesting that these measures were quite variable. Did the authors perform any statistical comparisons to test significance?\n\nIt is unsurprising to me that metabolic cost was defined as Na load and then the computational analysis revealed that parameters of the Na conductance had the greatest effect on Q10 of metabolic cost. The authors might comment on this.\n",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "750e3a12-65bd-4745-8374-0a156a701c92",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C1",
+      "claim": "Auditory receptor neurons of grasshoppers respond to sound in a surprisingly temperature-compensated manner with average Q10 values around 1.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Auditory receptor neurons of grasshoppers respond to sound in a surprisingly temperature-compensated manner: firing rates depend moderately on temperature, with average Q10 values around 1.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements of firing rates at different temperatures presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "1efe0148-742a-4c89-8e75-1e884d2a5c13",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C2",
+      "claim": "Temperature compensation of spike generation can be achieved solely relying on cell-intrinsic processes despite a strong dependence of ion conductances on temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of conductance-based neuron models reveals that temperature compensation of spike generation can be achieved solely relying on cell-intrinsic processes and despite a strong dependence of ion conductances on temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational modeling results showing temperature compensation with realistic Q10 values for ion channels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "7f1a8929-1e17-4212-ab15-3ebc2a1c0254",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C3",
+      "claim": "Temperature compensation need not come at an additional metabolic cost of spike generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, this type of temperature compensation need not come at an additional metabolic cost of spike generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational analysis of energy consumption across different model parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "567269a1-1151-44cc-bf17-8ca072725c7e",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C4",
+      "claim": "Firing rate-based information transfer is likely to increase with temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Firing rate-based information transfer is likely to increase with temperature and we derive predictions for an optimal temperature dependence of the tympanal transduction process fostering temperature compensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Fisher information analysis showing that information transfer scales with the slope of the f-I curve, which increases with temperature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "c2f3cd5e-e9bc-4a29-be37-abeac2e2d3ab",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C5",
+      "claim": "Grasshopper auditory receptor neurons do not receive input from the neuronal network.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of network inputs to these receptor neurons (Vogel and Ronacher, 2007; Clemens et al., 2011) suggests that a cellular mechanism underlies the observed temperature compensation and hence raises the more general question to what extent temperature compensation can be achieved at the level of individual cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "d0c36824-d53a-4857-bbdf-eb5faddcef1f",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C6",
+      "claim": "Several invertebrate species have firing-rate Q10 values above 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Several invertebrate species were found to have firing-rate Q10 values above 2 (i.e., to double their neurons' firing rate), which is in line with the fact that many underlying biochemical processes also exhibit Q10 values of two or more (French and Kuster, 1982; Pfau et al., 1989; Warzecha et al., 1999; Hille, 2001; Spavieri et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "dda780c6-72ff-4f42-8424-91c1c0285a47",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C7",
+      "claim": "Grasshopper auditory receptor neurons increased their firing rate by only ~40-50% (corresponding to a Q10 value of 1.4-1.5).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found that grasshopper auditory receptor neurons on average increased their firing rate by only \u223c40\u201350% (corresponding to a Q10 value of 1.4\u20131.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "b525896b-261b-4d73-8bcf-80ededec2217",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C8",
+      "claim": "Receptor responses are shaped by a cascade of two major steps: auditory transduction and spike generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptor responses are shaped by a cascade of two major steps (Gollisch and Herz, 2005)\u2014(1) auditory transduction, which translates the vibrations of the tympanal membrane into receptor currents and (2) spike generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work and represents established knowledge about sensory processing.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "2b081532-e15e-47e5-bf70-6791dd1c8642",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C9",
+      "claim": "Energy efficiency of signaling is an important constraint for neural systems.",
+      "claim_type": "EXPLICIT",
+      "source": "As energy efficiency of signaling is an important constraint (Attwell and Laughlin, 2001; Niven and Laughlin, 2008), we also resolve whether the identified mechanisms for temperature compensation come at an additional metabolic cost and identify the key parameters of temperature dependence that increase energy efficiency of action-potential generation as well as of the maintenance of the resting potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on neural energy efficiency.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "b3a148d6-18d2-41e8-836c-c4715793011f",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C10",
+      "claim": "At a given temperature, the transfer function (firing rate as a function of sound intensity) has a sigmoidal shape.",
+      "claim_type": "EXPLICIT",
+      "source": "At a given temperature, the transfer function, that is the firing rate as a function of sound intensity, has a sigmoidal shape (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "095d8dca-f7ec-4ce7-bcec-4550d3e90b57",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C11",
+      "claim": "Three parameters (saturation rate, half-max sound level, and dynamic-range width) are sufficient to capture the experimental transfer functions with R2 >0.95 for all response curves.",
+      "claim_type": "EXPLICIT",
+      "source": "Three parameters (saturation rate, half-max sound level, and dynamic-range width) are sufficient to capture the experimental transfer functions (R2 >0.95 for all response curves).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the quality of fits to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "a523ca9c-fd67-45c2-90a0-6218f3fbfc16",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C12",
+      "claim": "All corresponding median Q10 values for transfer function parameters were below 1.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing transfer functions at the two different temperatures revealed that their temperature dependence was surprisingly low (Figure 1C): all corresponding median Q10 values were below 1.5",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental measurements shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "efdbf296-991f-47ab-9445-5d71932880e2",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C13",
+      "claim": "The sound intensity at half-maximal response (half-max sound level) remained almost unchanged with temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "the sound intensity at half-maximal response (half-max sound level) remained almost unchanged, as did the median of the slope at half-max sound level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements of transfer function parameters at different temperatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "9567aafc-f975-4fae-9192-7fed85ebd608",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C14",
+      "claim": "The width of action potentials was lower at the higher temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "The width of action potentials, in contrast, was lower at the higher temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "808040d5-0f6e-4c8e-9ea2-4055f2c41517",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C15",
+      "claim": "The grasshopper auditory periphery consists of a relatively simple feed-forward network in which the receptor neurons constitute the first layer.",
+      "claim_type": "EXPLICIT",
+      "source": "The grasshopper auditory periphery consists of a relatively simple feed-forward network, in which the receptor neurons constitute the first layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established anatomical knowledge about the grasshopper auditory system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "11bcd278-3d7c-4949-886b-562fd5448dde",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C16",
+      "claim": "Approximately 80 receptor neurons converge to ~15 local neurons, which in turn project to ~20 ascending neurons in the grasshopper auditory system.",
+      "claim_type": "EXPLICIT",
+      "source": "approximately 80 receptor neurons converge to \u223c15 local neurons, which in turn project to \u223c20 ascending neurons (Vogel and Ronacher, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous anatomical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "b5563b76-ffed-41c8-ad12-73e9248afd58",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C17",
+      "claim": "The Connor-Stevens model was used to simulate a type I spike generation process as assumed for grasshopper receptor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the Connor\u2013Stevens model (Connor et al., 1977; Dayan and Abbott, 2005) to simulate a type I spike generation process (Izhikevich, 2007) as it is assumed for grasshopper receptor neurons (Benda, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the modeling approach and is supported by citations to the model and its application.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "573b908f-9a54-4e42-8b87-6ac37aa48a8e",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C18",
+      "claim": "The Connor-Stevens model comprises a sodium conductance, a leak conductance, a delayed-rectifier potassium conductance, and an A-type potassium conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides a sodium and a leak conductance (gNa and gL), this model comprises a delayed-rectifier and an A-type potassium conductance (gK and gA), which are both known to be present in the grasshopper nervous system (Ramirez et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the model structure and is supported by a citation confirming the presence of these conductances in grasshoppers.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "a99ac10f-7a31-4786-8f51-76f8cf08e97a",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C19",
+      "claim": "Temperature dependence parameters were varied within physiologically realistic ranges: Q10(x)\u2208[2.0,4.0] for transition rates and Q10(\u1e21X)\u2208[1.2,2.0] for peak conductances.",
+      "claim_type": "EXPLICIT",
+      "source": "For a systematic analysis (refers to (Prinz et al., 2003)), we independently varied the temperature dependence of these parameters (comprising a total of nine) within physiologically realistic ranges: Q10(x)\u2208[2.0,4.0] for transition rates and Q10(g\u00afX)\u2208[1.2,2.0] for peak conductances (Partridge and Connor, 1978; Hille, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the parameter ranges used in the modeling study, supported by citations to physiological literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "09b569dc-851b-41b4-8be2-85a3d1eece2e",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C20",
+      "claim": "Across all model combinations, the relative change (RMSD) was distributed between 0.22 and 2.14, with a median of 0.68.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all model combinations, the relative change, RMSD, was distributed between 0.22 and 2.14, with a median of 0.68 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling results shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "7a4c9e77-7b3c-4db0-b143-780c7ac7df7c",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C21",
+      "claim": "18% of models exhibited temperature compensation with relative changes in firing rate comparable to those found experimentally (RMSD <0.5).",
+      "claim_type": "EXPLICIT",
+      "source": "A fraction of models (18%) exhibited temperature compensation with relative changes in firing rate comparable to those found experimentally (RMSD <0.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational modeling results analyzing the distribution of RMSD values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "dfc33529-091e-4209-959e-2db2382eda96",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C22",
+      "claim": "The largest impact on the RMSD was exerted by three parameters of potassium channels: temperature dependence of the delayed-rectifier potassium kinetics (Q10(n)), and the A-type and delayed-rectifier potassium peak conductances (Q10(\u1e21A) and Q10(\u1e21K)).",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis revealed that the largest impact on the RMSD was exerted by three parameters of potassium channels: temperature dependence of the delayed-rectifier potassium kinetics, Q10(n), and the A-type and delayed-rectifier potassium peak conductances, Q10(g\u00afA) and Q10(g\u00afK), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sensitivity analysis results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "76663f49-2b8a-4253-bc51-2ea94648eed2",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C23",
+      "claim": "The impacts of both potassium channel peak conductances were negative (increases in their Q10 values decreased the RMSD), while the potassium activation Q10(n) had a positive impact.",
+      "claim_type": "EXPLICIT",
+      "source": "The impacts of both potassium channel peak conductances were negative (i.e., increases in their Q10 values decreased the RMSD), while the potassium activation Q10(n) had a positive impact (i.e., increases in its temperature dependence increased the RMSD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sensitivity analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "36dd0044-a94f-40bb-8c84-2a4fd5cb8b08",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C24",
+      "claim": "The impact ranking was robust against \u00b120% perturbations of the model's peak conductances at 18\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact ranking across those models was highly similar to the ranking in the original Connor\u2013Stevens model (Figure 2E) and we conclude that our results are robust.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by robustness analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "3c0ef4dd-c446-4521-98db-418e8d432c7c",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C25",
+      "claim": "A structurally different Traub-Miles model showed that an equally low temperature dependence is possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we note that our results are not unique to the Connor\u2013Stevens model. An analysis of a structurally different Traub\u2013Miles model (Traub et al., 1991; Benda, 2002) showed that an equally low temperature dependence is possible (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by additional modeling results shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "9b23b52c-560c-4d9d-8285-fabb14314098",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C26",
+      "claim": "With heating, the slope of the f-I curve always increased.",
+      "claim_type": "EXPLICIT",
+      "source": "With heating, the slope always increased (Figure 2G), while we found changes in both directions for the threshold (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by modeling results shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "4a9f3fe1-1620-4fe4-b5bc-d5233f8bfdc1",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C27",
+      "claim": "Temperature dependencies of the A-type potassium and leak peak conductances had the strongest influence on the threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Temperature dependencies of the A-type potassium and leak peak conductances had the strongest influence on the threshold (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sensitivity analysis results shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "9182518f-0d08-4b80-a8de-1d37367c2f62",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C28",
+      "claim": "The slope was most sensitive to the temperature dependence of the delayed-rectifier potassium channel (Q10(n) and Q10(\u1e21K)) and the sodium channel inactivation (Q10(h)).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the slope was most sensitive to the temperature dependence of the delayed-rectifier potassium channel, Q10(n) and Q10(g\u00afK), and the sodium channel inactivation, Q10(h) (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sensitivity analysis results shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "5b3adc34-2099-4f39-95a5-1a15bf3a5cb7",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C29",
+      "claim": "Temperature compensation was usually achieved by modest increases in threshold balancing the effects of an increase in slope.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond clarifying the specific effect of the aforementioned parameters on changes to the f-I curve, the analysis shows that temperature compensation (i.e., lower RMSD values) was usually achieved by modest increases in threshold balancing the effects of an increase in slope (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of f-I curve changes shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "01b69c61-e5aa-4502-9aec-2a259f60e99a",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C30",
+      "claim": "Information transfer scales with the slope of the f-I curve and its temperature dependence hence with Q10(A)^4.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the average information transferred for a given interval of firing rates [fmin, fmax], information transfer scales with the slope of the f-I curve and its temperature dependence hence with Q10(A)4 ('Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is derived from Fisher information analysis detailed in the Materials and methods section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "d228f84c-8f67-4186-94bd-69250a5dbf1c",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C31",
+      "claim": "Overall, heating was advantageous for information transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, heating was advantageous for information transfer (Figure 2K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Fisher information analysis results shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "649d869c-d31b-456e-9fc0-4ebd8825aed0",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C32",
+      "claim": "In the grasshopper auditory periphery firing rates often exceed several hundreds of Hz, suggesting that metabolic cost may have played a role in the design of these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the grasshopper auditory periphery firing rates often exceed several hundreds of Hz, suggesting that metabolic cost may have played a role in the design of these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim combines experimental observation with inference about evolutionary constraints.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "e7ab8f4f-e1a0-4fb7-af06-65da0fc95c7e",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C33",
+      "claim": "For the majority of models (93%), the energetic cost of an action potential decreased with heating.",
+      "claim_type": "EXPLICIT",
+      "source": "For the majority of models, the energetic cost of an action potential decreased with heating (93% of models, Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational analysis of energy consumption shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "e75d51d5-6d4c-497f-a817-ec2a961d2399",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C34",
+      "claim": "Temperature-compensated spike generation models were slightly more costly than the most temperature-dependent models on average.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, temperature-compensated spike generation models (25% of models with lowest RMSD) were slightly more costly than the most temperature-dependent models (25% of models with highest RMSD), see Figure 3B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational analysis comparing energy costs across model subgroups shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "5c16493b-0dbb-4b0b-8477-4312c3c76ec4",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C35",
+      "claim": "The minimum energy consumption was comparable in both temperature-compensated and strongly temperature-dependent model groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the minimum energy consumption was comparable in both groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational analysis of energy consumption distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "6b76c8c0-7e33-49d7-b2b8-0bfd060831ca",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C36",
+      "claim": "Sodium-current based resting cost tended to decrease with heating (77% of models).",
+      "claim_type": "EXPLICIT",
+      "source": "Sodium-current based resting cost tended to decrease with heating (77% of models).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational analysis of resting potential energy costs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "fa056e38-1e5d-4940-b779-c4213758fb4f",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C37",
+      "claim": "The temperature-dependence of the sodium conductance (Q10(h) and Q10(\u1e21Na)) influenced energy consumption of spike generation the most.",
+      "claim_type": "EXPLICIT",
+      "source": "The sensitivity analysis (performed in analogy to the analysis of temperature dependence of firing rate) revealed that the temperature-dependence of the sodium conductance (Q10(h) and Q10(g\u00afNa)) influenced energy consumption of spike generation the most (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sensitivity analysis results shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "9cb09674-f7dd-4a38-8b15-ecf6e7a7a03a",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C38",
+      "claim": "The key parameters of largest influence on temperature compensation and energy efficiency belonged to different channel groups: potassium channels for temperature compensation and sodium channels for energy efficiency of spike generation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the key parameters of largest influence on these features belonged to different channel groups: potassium channels in case of temperature compensation and sodium channels in case of energy efficiency of spike generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparing sensitivity analysis results for RMSD and energy consumption.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "d21ded1b-dc0a-4ad1-a8dd-c836ca1b4f85",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C39",
+      "claim": "Striving for temperature compensation does not have to compromise a neuron's energy efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, striving for temperature compensation does not have to compromise a neuron's energy efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational analysis showing that temperature compensation and energy efficiency can be achieved simultaneously.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "2b17950c-d569-4f99-8c6d-cb3869271006",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C40",
+      "claim": "Little is known about the temperature dependence of transduction in the grasshopper.",
+      "claim_type": "EXPLICIT",
+      "source": "Little is known about the temperature dependence of transduction in the grasshopper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "9ec8e07e-25ba-4203-8afa-37dcdf532967",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C41",
+      "claim": "The largest temperature dependence of the 'matching' transduction curves was to be expected for their dynamic-range width (median Q10 ~2).",
+      "claim_type": "EXPLICIT",
+      "source": "Evaluating the distribution of changes of the ideal transduction curves with temperature across all spike generation models, we found that the largest temperature dependence of these 'matching' transduction curves was to be expected for their dynamic-range width (median Q10\u223c2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reverse-engineering analysis of transduction curves.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "7554d53b-ac46-4e35-8a56-9467bc41cca8",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C42",
+      "claim": "Changes in saturation current and half-maximum sound level also contributed to fostering temperature compensation of firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, changes in saturation current and half-maximum sound level also contributed to fostering temperature compensation of firing rate (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by reverse-engineering analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "a5a4f0e6-b127-4383-b6e5-cc73974c30ef",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C43",
+      "claim": "A suitable temperature dependence of the transduction process can support temperature compensation, even in cases where spike generation is less temperature robust.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show in particular that a suitable temperature dependence of the transduction process can support temperature compensation, even in cases where spike generation is less temperature robust.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the reverse-engineering analysis of transduction curves.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "7945f1f7-340b-4256-990a-a4ae946dcfd7",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C44",
+      "claim": "Neurons in the auditory periphery of grasshoppers show Q10 values on the order of 1.5 and are remarkably temperature compensated.",
+      "claim_type": "EXPLICIT",
+      "source": "It was hence surprising to observe that neurons in the auditory periphery of grasshoppers show Q10 values on the order of 1.5 and consequently are remarkably temperature compensated (Hazel and Prosser, 1974; Boulant and Dean, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements and citations to literature on temperature compensation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "2e1edddf-a90a-42b6-8f59-ad9c970694b1",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C45",
+      "claim": "The temperature robustness of grasshopper auditory neurons is comparable to that of 'warm-insensitive' neurons in the mammalian brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The temperature robustness of these neurons is hence comparable to that of 'warm-insensitive' neurons in the mammalian brain (Curras and Boulant, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison with cited literature on mammalian neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "ae977aeb-6e0a-4d02-b021-f6b0be1161f0",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C46",
+      "claim": "Temperature compensation in grasshopper receptor neurons must be based on cell-intrinsic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Temperature compensation in grasshopper receptor neurons, by comparison, must be based on cell-intrinsic processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the absence of network inputs to these neurons.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "831355a0-4316-4d8a-a695-b4f3b2fa6537",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C47",
+      "claim": "A similar temperature compensation based on a single-cell mechanism has been described experimentally for tarsal hairs in the locust.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar temperature compensation that must be based on a single-cell mechanism has so far\u2014to our knowledge\u2014only been described experimentally for tarsal hairs in the locust (Miles, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "968d0591-c27e-4b42-b575-a9fd635586c5",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C48",
+      "claim": "Phenomenologically, a rise in slope is compensated for by an increase in the threshold of the f-I curve, minimizing the effect of temperature across a broader range of inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenomenologically, a rise in slope (consistent across the whole parameter range explored) is compensated for by an increase in the threshold of the f-I curve, minimizing the effect of temperature across a broader range of inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational modeling results analyzing f-I curve changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "eab8b1ba-eee5-4d71-a345-eb8c4c8e3577",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C49",
+      "claim": "Alterations in threshold can be produced by changes in peak conductances of ion channels and have been described experimentally by heating in invertebrate systems.",
+      "claim_type": "EXPLICIT",
+      "source": "While alterations in threshold can be produced by changes in peak conductances of ion channels, they have also been described experimentally by heating in invertebrate systems (Burkhardt, 1959; Abrams and Pearson, 1982; Kispersky et al., 2012) in agreement with our observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "c269f712-f8b4-4d56-8296-a05c87791f68",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C50",
+      "claim": "The temperature dependence of both delayed-rectifier and A-type potassium channels has a particularly large impact on temperature compensation, which matches experimental observations in neurons of the pancreas of mice and molluscan neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The temperature dependence of both delayed-rectifier and A-type potassium channels has a particularly large impact on temperature compensation. This matches experimental observations in neurons of the pancreas of mice (Xu et al., 2006) and molluscan neurons as well as previous simulations of an extended Hodgkin\u2013Huxley model (Rush and Rinzel, 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational results and citations to experimental and modeling literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "f1ca79fc-1200-4e8d-b07a-1afa7491fe76",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C51",
+      "claim": "For auditory receptor neurons in the grasshopper energy efficiency of spike generation is likely to be a relevant factor.",
+      "claim_type": "EXPLICIT",
+      "source": "For auditory receptor neurons in the grasshopper energy efficiency of spike generation is likely to be a relevant factor, also see Niven and Farris (2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the high firing rates observed and is supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "bd52823d-790f-4117-922c-7c205a284f15",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C52",
+      "claim": "The rate of sodium channel inactivation proved to be most relevant in setting the energy consumption per spike generated, which is consistent with simulations and dynamic clamp experiments in various model systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of sodium channel inactivation (Figure 3D) proved to be most relevant in setting the energy consumption per spike generated, which is consistent with simulations and dynamic clamp experiments in various model systems (Alle et al., 2009; Hasenstaub et al., 2010; Sengupta et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational results and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "70eaa23a-a027-41c2-b81c-2502682c2f92",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C53",
+      "claim": "Energy efficiency improved with heating for a wide range of temperature dependencies of ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that energy efficiency improved with heating for a wide range of temperature dependencies of ion channels, as was previously described for a model with fixed Q10 values (Yu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational results and a citation to previous modeling work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "4d5d1d06-62a2-4b1e-ad70-27877f261f97",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C54",
+      "claim": "A fast sodium inactivation limits the duration of the spike, which was consistent with the experimental data showing spike width decreased with heating.",
+      "claim_type": "EXPLICIT",
+      "source": "A fast sodium inactivation limits the duration of the spike; this was consistent with the experimental data, as spike width decreased with heating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim connects computational results with experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "9e145fb0-fd18-4acf-a04c-e495140f3642",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C55",
+      "claim": "The key parameters regulating the energy efficiency of spiking were different from those regulating temperature compensation of firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, the key parameters regulating the energy efficiency of spiking were different from those regulating temperature compensation of firing rate (Figure 2C, Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparing sensitivity analysis results shown in Figures 2C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "031fa9e4-3def-4b50-9bbc-6aae20fe4d08",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C56",
+      "claim": "From an evolutionary perspective, the relevant features\u2014robustness of firing rate to temperature changes and reduction of metabolic cost\u2014could both be achieved in parallel.",
+      "claim_type": "EXPLICIT",
+      "source": "Summarizing the considerations on metabolic cost, we find most noteworthy that from an evolutionary perspective, the relevant features\u2014robustness of firing rate to temperature changes and reduction of metabolic cost\u2014could both be achieved in parallel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the computational results showing independent control of these features.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "82a9c839-cd75-402e-bc69-3731768110ae",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C57",
+      "claim": "Higher temperatures are advantageous for the transmission of information about sound intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our sensitivity analysis revealed that higher temperatures are also advantageous for the transmission of information about sound intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Fisher information analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "6d1140ab-6df6-4eda-ab85-e091379bde7f",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C58",
+      "claim": "The capacity to transmit information was affected most by the temperature dependence of the delayed-rectifier potassium conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "This conclusion is based on our finding that the slope of the f-I curve increased with heating. The capacity to transmit information was affected most by the temperature dependence of the delayed-rectifier potassium conductance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sensitivity analysis of Fisher information.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "9b3d6376-bbb9-4582-b96f-1bf879520e7e",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C59",
+      "claim": "All auditory input passes through the peripheral network, which preprocesses information and extracts behaviorally-relevant features.",
+      "claim_type": "EXPLICIT",
+      "source": "All auditory input passes through this peripheral network, which preprocesses information and extracts behaviorally-relevant features (Clemens et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work on the grasshopper auditory system.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "50089bf8-4b71-4e8b-a910-5edbbf1b663d",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C60",
+      "claim": "The large investment into high firing rates and a comparatively high redundancy between neurons in the receptor layer increases the need for energy-efficient spike generation.",
+      "claim_type": "EXPLICIT",
+      "source": "The large investment into high firing rates and a comparatively high redundancy between neurons in this layer (Machens et al., 2001) also increases the need for energy-efficient spike generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the observed properties of the system and is supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "7312c734-858c-4f43-99b3-be04ba10d602",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C61",
+      "claim": "Optimization of receptor neurons in terms of temperature compensation seems a reasonable 'strategy', as all effects of temperature on receptor neurons will be passed on to downstream neurons, where they may multiply.",
+      "claim_type": "EXPLICIT",
+      "source": "Optimization of receptor neurons in terms of temperature compensation hence seems a reasonable 'strategy', as all effects of temperature on receptor neurons will be passed on to downstream neurons, where they may multiply.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculation about evolutionary strategy based on the system architecture.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "466ed4c3-34ea-4883-959b-9e60cc5332fc",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C62",
+      "claim": "Downstream neurons may adopt different strategies including balancing of inhibition and excitation for robustness to temperature changes as well as an increase in population and temporal sparseness for energy efficiency and information transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Downstream neurons, in contrast, may be expected to adopt different strategies, as they can make use of different mechanisms: balancing of inhibition and excitation for robustness to temperature changes (Robertson and Money, 2012) as well as an increase in population and temporal sparseness for energy efficiency and information transfer (Clemens et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculation supported by citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "964337e0-0f7f-4f25-a56e-ffd93bd2413a",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C63",
+      "claim": "A slight shift of transduction to lower sound intensities with higher temperatures may be favorable for temperature compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our computational analysis shows that, indeed, a slight shift of transduction to lower sound intensities with higher temperatures may be favorable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reverse-engineering analysis of transduction curves.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "ba197671-6ecd-44df-ab86-4f7b49801e08",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C64",
+      "claim": "A shift in transduction to lower sound intensities would occur if the amplitude of the tympanal vibration increased with heating and a stimulus of given intensity hence opened more transduction channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a shift would occur if the amplitude of the tympanal vibration increased with heating and a stimulus of given intensity hence opened more transduction channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a mechanistic explanation inferred from the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "a3a19511-3240-49d9-8e15-3d11bf18fd82",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C65",
+      "claim": "The computationally-derived changes in transduction parameters are relatively moderate, which is consistent with the observation that the tympanal vibration in cicadas is relatively temperature independent.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the computationally-derived changes are relatively moderate (Figure 4D). This is consistent with the observation that the tympanal vibration in cicadas is relatively temperature independent (Fonseca and Correia, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim connects computational predictions with experimental observations from cicadas cited in the literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "3aa49f51-5088-47b3-9991-70f8d1ae4625",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C66",
+      "claim": "The increase in dynamic-range width with heating can be interpreted as a decrease in gating force in a gating-spring model for the transduction as proposed for mechanosensory transduction in bullfrog saccular hair cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in dynamic-range width with heating can be interpreted as a decrease in gating force in a gating-spring model for the transduction as proposed for mechanosensory transduction in bullfrog saccular hair cells (Howard and Hudspeth, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an interpretation of modeling results based on a cited mechanistic model.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "0c4d50f6-0343-4623-a316-907464c23992",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C67",
+      "claim": "Increases in temperature are advantageous because the gating-force magnitude is inversely related to transduction accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, increases in temperature are advantageous, because the gating-force magnitude is inversely related to transduction accuracy (van Netten et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on cited literature about transduction accuracy.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "381a0be6-8384-454c-af1e-1069350279f3",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C68",
+      "claim": "Decreases in saturation current with heating may require additional heat-sensitive channels with a modulatory influence on the transduction process, such as thermosensitive transient receptor channels (TRPA).",
+      "claim_type": "EXPLICIT",
+      "source": "The latter may require additional heat-sensitive channels with a modulatory influence on the transduction process, such as thermosensitive transient receptor channels (TRPA) (Kang et al., 2012), which in principle could down-regulate the saturation level of the transduction function via their increased calcium response (Chadha and Cook, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculation about possible mechanisms supported by citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "0d4529d7-0e42-410b-bf28-1fcd188394e0",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C69",
+      "claim": "Spike generation alone is sufficient to mediate robustness of the firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, the analysis shows that the transduction process can contribute to temperature compensation. While spike generation alone is sufficient to mediate robustness of the firing rate, a matched temperature dependence of the transduction process may allow for more flexibility in the 'choice' of spike generation parameters, including the possibility to meet additional constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational modeling results showing temperature compensation with spike generation alone.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "c6c62b30-e6e8-4228-a5d0-717a85bf59f0",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C70",
+      "claim": "A matched temperature dependence of the transduction process may allow for more flexibility in the 'choice' of spike generation parameters, including the possibility to meet additional constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "While spike generation alone is sufficient to mediate robustness of the firing rate, a matched temperature dependence of the transduction process may allow for more flexibility in the 'choice' of spike generation parameters, including the possibility to meet additional constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the reverse-engineering analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "6f4e4ab0-6c3d-4ed1-b8df-4caae8a62c8d",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C71",
+      "claim": "Auditory receptor neurons in the grasshopper represent an example of remarkable cell-intrinsic temperature compensation in the absence of network effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our data show that auditory receptor neurons in the grasshopper represent an example of remarkable cell-intrinsic temperature compensation in the absence of network effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes the main finding supported by experimental and computational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "6f2ecfca-ba3d-42fc-b99c-10ab6ced18c5",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C72",
+      "claim": "The identified mechanisms for temperature compensation generalize to spike generation in other cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "The identified mechanisms generalize to spike generation in other cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the generic nature of the modeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "7147947e-c010-4199-a790-276b7429517f",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C73",
+      "claim": "Additional nonlinear processing by static nonlinearities may foster temperature compensation if well matched with the temperature dependence of spike generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, additional nonlinear processing by static nonlinearities (here interpreted as the transduction process involving the tympanal membrane, but on a wider scope also reflecting properties of synaptic transmission) may foster temperature compensation, if well matched with the temperature dependence of spike generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference from the reverse-engineering analysis that generalizes beyond the specific system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "7926cb28-39f0-4f80-8f84-4c1d1f455491",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C74",
+      "claim": "The dependence of neuronal processing on temperature merits further investigation, in particular as temperature fluctuations are an oftentimes underestimated variable in mammalian systems too.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the dependence of neuronal processing on temperature merits further investigation, in particular as temperature fluctuations are an oftentimes underestimated variable in mammalian systems too.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a statement about the broader significance of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "fc932a12-875a-4f3c-8f97-14d52a175de9",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C75",
+      "claim": "Experiments were performed on adult Locusta migratoria obtained from a commercial supplier and held at room temperature (22\u201325\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were performed on adult L. migratoria, obtained from a commercial supplier and held at room temperature (22\u201325\u00b0C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "86b1f2f2-a210-4aa9-b89b-8c493c851714",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C76",
+      "claim": "Intracellular recordings from auditory neurons within the metathoracic ganglion were conventionally conducted using glass microelectrodes filled with a 3\u20135% solution of Lucifer yellow in 0.5 M LiCl.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular recordings from auditory neurons within the metathoracic ganglion were conventionally conducted as described elsewhere (Franz and Ronacher, 2002; Wohlgemuth and Ronacher, 2007), using glass microelectrodes filled with a 3\u20135% solution of Lucifer yellow in 0.5 M LiCl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methods with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "e2ad6fa6-f612-418f-a598-9858f9a67384",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C77",
+      "claim": "For each experiment, recordings were conducted first at a fixed higher tissue temperature (in the range of 28\u201329\u00b0C), then the preparation was cooled down to a lower temperature (in the range of 21\u201323\u00b0) and recordings were repeated.",
+      "claim_type": "EXPLICIT",
+      "source": "For each experiment, recordings were conducted first at a fixed higher tissue temperature (in the range of 28\u201329\u00b0C), then the preparation was cooled down to a lower temperature (in the range of 21\u201323\u00b0) and recordings were repeated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "ca348eaa-91b5-4f8e-a303-50bb65cfa05c",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C78",
+      "claim": "Electrophysiological recordings started 3\u20135 min after induction of the temperature change.",
+      "claim_type": "EXPLICIT",
+      "source": "In order not to underestimate Q10 values, we took a conservative approach: Electrophysiological recordings started 3\u20135 min after induction of the temperature change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "2ee8bd1f-ccb4-4f72-8133-4f3a186b4011",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C79",
+      "claim": "The estimated Q10 values constitute an upper bound and real Q10 values may be slightly smaller (even more temperature compensated).",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the estimated Q10 values constitute an upper bound. In contrast, we cannot exclude that real Q10 values may even be slightly smaller, that is even more temperature compensated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference about the interpretation of the experimental measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "b1940e54-aecb-42b3-b740-2a5d38a1c571",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C80",
+      "claim": "Nine receptor neurons were recorded in eight preparations.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, nine receptor neurons were recorded in eight preparations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the sample size of the experimental study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "7ed11238-b67b-4723-a1df-5c9d93fc7c50",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C81",
+      "claim": "Acoustic broad band stimuli (100 ms duration, 1\u201340 kHz bandwidth) repeated five times each at 8 intensities, rising from 32 to 88 dB SPL were used to obtain spike rate vs intensity curves.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain spike rate vs intensity curves (response curves), we used acoustic broad band stimuli (100 ms duration, 1\u201340 kHz bandwidth) repeated five times each at 8 intensities, rising from 32 to 88 dB SPL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental stimulation protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "9956f5d8-b0c3-4466-9199-43d9687168d3",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "claim_id": "C82",
+      "claim": "The model response curves r=\u03c6(\u03b8(IdB)) matched the experimental representative response curve very well (R2 >0.98 for 99.5% of all models).",
+      "claim_type": "EXPLICIT",
+      "source": "The model response curves r=\u03d5(\u03b8(IdB)) matched the experimental representative response curve very well (R2 >0.98 for 99.5% of all models).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the quality of fits in the reverse-engineering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0642e9b4-9860-4b66-ae55-b6ca137247cd",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Grasshopper auditory receptor neurons exhibit remarkable temperature compensation with Q10 values around 1.4-1.5, based on experimental recordings from 9 neurons showing that firing rates increased by only ~40-50% when temperature increased from ~21\u00b0C to ~29\u00b0C. Transfer function parameters (saturation rate, half-max sound level, dynamic-range width) all showed median Q10 values below 1.5, while action potential width decreased with heating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7, C10-C14 are well-supported by experimental data from 9 receptor neurons (C80) with appropriate statistical analysis. The sigmoidal fits achieved R\u00b2>0.95 (C11), and multiple transfer function parameters were quantified at two temperatures. The small sample size (n=9) is acknowledged but appears adequate for the observed effect sizes. The conservative experimental approach (C78-C79) suggests the reported Q10 values may be upper bounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "ce32e4d1-8482-4ecd-b239-0263263348cb",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Temperature compensation of spike generation can be achieved through cell-intrinsic mechanisms alone, as demonstrated by Connor-Stevens model simulations showing that 18% of models with physiologically realistic ion channel Q10 values exhibited temperature compensation comparable to experimental observations (RMSD<0.5). The temperature dependence of potassium channels (particularly Q10(n), Q10(\u1e21A), and Q10(\u1e21K)) had the largest impact on firing rate temperature compensation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C17-C25 are supported by systematic computational modeling across >260,000 parameter combinations with physiologically realistic Q10 ranges. The sensitivity analysis (C22-C23) identifies key parameters, and robustness was confirmed with \u00b120% perturbations (C24) and alternative models (C25). The modeling approach is sound, though the 18% success rate (C21) indicates temperature compensation requires specific parameter combinations rather than being a generic property.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "08ae38df-1d41-4457-b369-82e0bc3adb62",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Temperature compensation in the models was mechanistically achieved by modest increases in f-I curve threshold balancing increases in slope with heating. The slope was most sensitive to delayed-rectifier potassium channel parameters (Q10(n), Q10(\u1e21K)) and sodium inactivation (Q10(h)), while threshold was most influenced by A-type potassium and leak conductance temperature dependencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29, C48 are supported by systematic analysis of f-I curve parameters across all models. The square-root fits achieved R\u00b2>0.97 for 99% of models, validating the parameterization. The sensitivity analysis clearly identifies which parameters affect slope vs. threshold, providing mechanistic insight into how temperature compensation is achieved through balancing opposing effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "f5af713b-fded-4e91-861d-eb28b87cff41",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Temperature compensation does not require compromising energy efficiency. For 93% of models, spiking cost decreased with heating, with sodium channel inactivation (Q10(h)) being most influential. Crucially, the parameters controlling temperature compensation (potassium channels) differed from those controlling energy efficiency (sodium channels), allowing both features to be optimized independently.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C33-C39, C51-C56 are well-supported by computational analysis of energy consumption across the model space. The finding that minimum energy consumption was comparable between temperature-compensated and temperature-dependent models (C35) is particularly important. The independence of parameter sets (C38, C55) is demonstrated by comparing sensitivity analyses. Multiple energy metrics were tested (sodium-based, potassium-based, charge separation), all confirming the main conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "71571d95-f09d-40ed-832b-f20a51b0578e",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Firing rate-based information transfer increases with temperature, scaling with the fourth power of the slope's Q10 value (Q10(\u27e8J\u27e9)=[Q10(A)]\u2074). The delayed-rectifier potassium conductance temperature dependence had the largest impact on information transfer capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C30-C31, C57-C58 are supported by Fisher information analysis with clear mathematical derivation. The Q10(A)\u2074 scaling relationship (C30) is rigorously derived in the Methods section for both Poisson and Gaussian noise models. However, the authors appropriately note (C32) that channel-specific stochastic dynamics not captured in the deterministic model could affect information transfer, introducing some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "6f596f57-51f5-474a-ad16-7bb15fd488f1",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Reverse-engineering analysis predicts that transduction temperature dependence can support temperature compensation, with the largest expected change being in dynamic-range width (median Q10~2). Changes in saturation current and half-maximum sound level also contribute. The model-derived transduction curves matched experimental responses well (R\u00b2>0.98 for 99.5% of models).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43, C63-C70, C73, C82 are supported by the reverse-engineering approach that systematically inferred optimal transduction curves for each spike generation model. The high R\u00b2 values (C82) validate the fitting procedure. However, these are predictions rather than direct measurements of transduction (C40), and the mechanistic interpretations (C64, C66-C68) involve speculation about underlying biophysical mechanisms that would require experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "8226da67-f48d-4dac-8df7-b045aed95af2",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The grasshopper auditory system consists of a feedforward network where ~80 receptor neurons (which receive no network input) converge to ~15 local neurons, then to ~20 ascending neurons. Receptor responses are shaped by auditory transduction followed by spike generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C8, C15-C16, C59 are supported by citations to previous anatomical and physiological studies (Vogel and Ronacher 2007; Clemens et al. 2011; Gollisch and Herz 2005). These represent established knowledge about the grasshopper auditory system architecture that provides essential context for interpreting the temperature compensation findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "fd6da097-0d93-4d1b-8525-d35e953fc91a",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The observed temperature compensation in grasshopper receptor neurons (Q10~1.5) is unusual compared to other invertebrate species (Q10>2) but comparable to 'warm-insensitive' mammalian neurons. Similar single-cell temperature compensation has been described in locust tarsal hairs, and the role of potassium channels matches observations in mouse pancreatic neurons and molluscan neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C45, C47, C49-C50 appropriately contextualize the findings within existing literature through multiple citations. The comparisons to other systems are well-supported by the cited references and help establish the significance of the grasshopper findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "b45c2c3c-9c34-4018-8744-e7340f471851",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Experimental methods involved intracellular recordings from 9 receptor neurons in adult Locusta migratoria using standard electrophysiological techniques. Recordings were performed first at 28-29\u00b0C then at 21-23\u00b0C, with a 3-5 min equilibration period. Acoustic stimuli consisted of broadband sounds (1-40 kHz, 100 ms duration) at 8 intensities (32-88 dB SPL), repeated 5 times each.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C81 describe standard, well-established experimental methods with appropriate citations to previous work. The conservative approach to temperature equilibration (C78) and acknowledgment that Q10 values may be upper bounds (C79) demonstrate methodological rigor. The experimental design is appropriate for the research questions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    },
+    {
+      "id": "4c6e4213-a10e-4147-9232-1b4c3daba670",
+      "content_id": "3166018b-4fe3-4a83-badb-2e911c040e01",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Energy efficiency is an important constraint for neural systems, particularly relevant for grasshopper receptor neurons with firing rates exceeding several hundred Hz. The identified mechanisms for temperature compensation likely generalize to other cell types, and temperature dependence of neuronal processing merits further investigation across species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C32, C60-C62, C72, C74 represent reasonable inferences and contextual statements supported by citations (C9) and the modeling results. However, C61-C62 involve speculation about evolutionary strategies and downstream processing that, while plausible, lack direct experimental support. C72 and C74 are appropriate statements about generalizability and future directions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T20:37:26.728689Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "750e3a12-65bd-4745-8374-0a156a701c92",
+      "result_id": "0642e9b4-9860-4b66-ae55-b6ca137247cd"
+    },
+    {
+      "claim_id": "dda780c6-72ff-4f42-8424-91c1c0285a47",
+      "result_id": "0642e9b4-9860-4b66-ae55-b6ca137247cd"
+    },
+    {
+      "claim_id": "b3a148d6-18d2-41e8-836c-c4715793011f",
+      "result_id": "0642e9b4-9860-4b66-ae55-b6ca137247cd"
+    },
+    {
+      "claim_id": "095d8dca-f7ec-4ce7-bcec-4550d3e90b57",
+      "result_id": "0642e9b4-9860-4b66-ae55-b6ca137247cd"
+    },
+    {
+      "claim_id": "a523ca9c-fd67-45c2-90a0-6218f3fbfc16",
+      "result_id": "0642e9b4-9860-4b66-ae55-b6ca137247cd"
+    },
+    {
+      "claim_id": "efdbf296-991f-47ab-9445-5d71932880e2",
+      "result_id": "0642e9b4-9860-4b66-ae55-b6ca137247cd"
+    },
+    {
+      "claim_id": "9567aafc-f975-4fae-9192-7fed85ebd608",
+      "result_id": "0642e9b4-9860-4b66-ae55-b6ca137247cd"
+    },
+    {
+      "claim_id": "7945f1f7-340b-4256-990a-a4ae946dcfd7",
+      "result_id": "0642e9b4-9860-4b66-ae55-b6ca137247cd"
+    },
+    {
+      "claim_id": "b1940e54-aecb-42b3-b740-2a5d38a1c571",
+      "result_id": "0642e9b4-9860-4b66-ae55-b6ca137247cd"
+    },
+    {
+      "claim_id": "1efe0148-742a-4c89-8e75-1e884d2a5c13",
+      "result_id": "ce32e4d1-8482-4ecd-b239-0263263348cb"
+    },
+    {
+      "claim_id": "b5563b76-ffed-41c8-ad12-73e9248afd58",
+      "result_id": "ce32e4d1-8482-4ecd-b239-0263263348cb"
+    },
+    {
+      "claim_id": "573b908f-9a54-4e42-8b87-6ac37aa48a8e",
+      "result_id": "ce32e4d1-8482-4ecd-b239-0263263348cb"
+    },
+    {
+      "claim_id": "a99ac10f-7a31-4786-8f51-76f8cf08e97a",
+      "result_id": "ce32e4d1-8482-4ecd-b239-0263263348cb"
+    },
+    {
+      "claim_id": "09b569dc-851b-41b4-8be2-85a3d1eece2e",
+      "result_id": "ce32e4d1-8482-4ecd-b239-0263263348cb"
+    },
+    {
+      "claim_id": "7a4c9e77-7b3c-4db0-b143-780c7ac7df7c",
+      "result_id": "ce32e4d1-8482-4ecd-b239-0263263348cb"
+    },
+    {
+      "claim_id": "dfc33529-091e-4209-959e-2db2382eda96",
+      "result_id": "ce32e4d1-8482-4ecd-b239-0263263348cb"
+    },
+    {
+      "claim_id": "76663f49-2b8a-4253-bc51-2ea94648eed2",
+      "result_id": "ce32e4d1-8482-4ecd-b239-0263263348cb"
+    },
+    {
+      "claim_id": "36dd0044-a94f-40bb-8c84-2a4fd5cb8b08",
+      "result_id": "ce32e4d1-8482-4ecd-b239-0263263348cb"
+    },
+    {
+      "claim_id": "3c0ef4dd-c446-4521-98db-418e8d432c7c",
+      "result_id": "ce32e4d1-8482-4ecd-b239-0263263348cb"
+    },
+    {
+      "claim_id": "ae977aeb-6e0a-4d02-b021-f6b0be1161f0",
+      "result_id": "ce32e4d1-8482-4ecd-b239-0263263348cb"
+    },
+    {
+      "claim_id": "0d4529d7-0e42-410b-bf28-1fcd188394e0",
+      "result_id": "ce32e4d1-8482-4ecd-b239-0263263348cb"
+    },
+    {
+      "claim_id": "6f4e4ab0-6c3d-4ed1-b8df-4caae8a62c8d",
+      "result_id": "ce32e4d1-8482-4ecd-b239-0263263348cb"
+    },
+    {
+      "claim_id": "9b23b52c-560c-4d9d-8285-fabb14314098",
+      "result_id": "08ae38df-1d41-4457-b369-82e0bc3adb62"
+    },
+    {
+      "claim_id": "4a9f3fe1-1620-4fe4-b5bc-d5233f8bfdc1",
+      "result_id": "08ae38df-1d41-4457-b369-82e0bc3adb62"
+    },
+    {
+      "claim_id": "9182518f-0d08-4b80-a8de-1d37367c2f62",
+      "result_id": "08ae38df-1d41-4457-b369-82e0bc3adb62"
+    },
+    {
+      "claim_id": "5b3adc34-2099-4f39-95a5-1a15bf3a5cb7",
+      "result_id": "08ae38df-1d41-4457-b369-82e0bc3adb62"
+    },
+    {
+      "claim_id": "968d0591-c27e-4b42-b575-a9fd635586c5",
+      "result_id": "08ae38df-1d41-4457-b369-82e0bc3adb62"
+    },
+    {
+      "claim_id": "7f1a8929-1e17-4212-ab15-3ebc2a1c0254",
+      "result_id": "f5af713b-fded-4e91-861d-eb28b87cff41"
+    },
+    {
+      "claim_id": "e7ab8f4f-e1a0-4fb7-af06-65da0fc95c7e",
+      "result_id": "f5af713b-fded-4e91-861d-eb28b87cff41"
+    },
+    {
+      "claim_id": "e75d51d5-6d4c-497f-a817-ec2a961d2399",
+      "result_id": "f5af713b-fded-4e91-861d-eb28b87cff41"
+    },
+    {
+      "claim_id": "5c16493b-0dbb-4b0b-8477-4312c3c76ec4",
+      "result_id": "f5af713b-fded-4e91-861d-eb28b87cff41"
+    },
+    {
+      "claim_id": "6b76c8c0-7e33-49d7-b2b8-0bfd060831ca",
+      "result_id": "f5af713b-fded-4e91-861d-eb28b87cff41"
+    },
+    {
+      "claim_id": "fa056e38-1e5d-4940-b779-c4213758fb4f",
+      "result_id": "f5af713b-fded-4e91-861d-eb28b87cff41"
+    },
+    {
+      "claim_id": "9cb09674-f7dd-4a38-8b15-ecf6e7a7a03a",
+      "result_id": "f5af713b-fded-4e91-861d-eb28b87cff41"
+    },
+    {
+      "claim_id": "d21ded1b-dc0a-4ad1-a8dd-c836ca1b4f85",
+      "result_id": "f5af713b-fded-4e91-861d-eb28b87cff41"
+    },
+    {
+      "claim_id": "f1ca79fc-1200-4e8d-b07a-1afa7491fe76",
+      "result_id": "f5af713b-fded-4e91-861d-eb28b87cff41"
+    },
+    {
+      "claim_id": "bd52823d-790f-4117-922c-7c205a284f15",
+      "result_id": "f5af713b-fded-4e91-861d-eb28b87cff41"
+    },
+    {
+      "claim_id": "70eaa23a-a027-41c2-b81c-2502682c2f92",
+      "result_id": "f5af713b-fded-4e91-861d-eb28b87cff41"
+    },
+    {
+      "claim_id": "4d5d1d06-62a2-4b1e-ad70-27877f261f97",
+      "result_id": "f5af713b-fded-4e91-861d-eb28b87cff41"
+    },
+    {
+      "claim_id": "9e145fb0-fd18-4acf-a04c-e495140f3642",
+      "result_id": "f5af713b-fded-4e91-861d-eb28b87cff41"
+    },
+    {
+      "claim_id": "031fa9e4-3def-4b50-9bbc-6aae20fe4d08",
+      "result_id": "f5af713b-fded-4e91-861d-eb28b87cff41"
+    },
+    {
+      "claim_id": "567269a1-1151-44cc-bf17-8ca072725c7e",
+      "result_id": "71571d95-f09d-40ed-832b-f20a51b0578e"
+    },
+    {
+      "claim_id": "01b69c61-e5aa-4502-9aec-2a259f60e99a",
+      "result_id": "71571d95-f09d-40ed-832b-f20a51b0578e"
+    },
+    {
+      "claim_id": "d228f84c-8f67-4186-94bd-69250a5dbf1c",
+      "result_id": "71571d95-f09d-40ed-832b-f20a51b0578e"
+    },
+    {
+      "claim_id": "82a9c839-cd75-402e-bc69-3731768110ae",
+      "result_id": "71571d95-f09d-40ed-832b-f20a51b0578e"
+    },
+    {
+      "claim_id": "6d1140ab-6df6-4eda-ab85-e091379bde7f",
+      "result_id": "71571d95-f09d-40ed-832b-f20a51b0578e"
+    },
+    {
+      "claim_id": "2b17950c-d569-4f99-8c6d-cb3869271006",
+      "result_id": "6f596f57-51f5-474a-ad16-7bb15fd488f1"
+    },
+    {
+      "claim_id": "9ec8e07e-25ba-4203-8afa-37dcdf532967",
+      "result_id": "6f596f57-51f5-474a-ad16-7bb15fd488f1"
+    },
+    {
+      "claim_id": "7554d53b-ac46-4e35-8a56-9467bc41cca8",
+      "result_id": "6f596f57-51f5-474a-ad16-7bb15fd488f1"
+    },
+    {
+      "claim_id": "a5a4f0e6-b127-4383-b6e5-cc73974c30ef",
+      "result_id": "6f596f57-51f5-474a-ad16-7bb15fd488f1"
+    },
+    {
+      "claim_id": "964337e0-0f7f-4f25-a56e-ffd93bd2413a",
+      "result_id": "6f596f57-51f5-474a-ad16-7bb15fd488f1"
+    },
+    {
+      "claim_id": "ba197671-6ecd-44df-ab86-4f7b49801e08",
+      "result_id": "6f596f57-51f5-474a-ad16-7bb15fd488f1"
+    },
+    {
+      "claim_id": "a3a19511-3240-49d9-8e15-3d11bf18fd82",
+      "result_id": "6f596f57-51f5-474a-ad16-7bb15fd488f1"
+    },
+    {
+      "claim_id": "3aa49f51-5088-47b3-9991-70f8d1ae4625",
+      "result_id": "6f596f57-51f5-474a-ad16-7bb15fd488f1"
+    },
+    {
+      "claim_id": "0c4d50f6-0343-4623-a316-907464c23992",
+      "result_id": "6f596f57-51f5-474a-ad16-7bb15fd488f1"
+    },
+    {
+      "claim_id": "381a0be6-8384-454c-af1e-1069350279f3",
+      "result_id": "6f596f57-51f5-474a-ad16-7bb15fd488f1"
+    },
+    {
+      "claim_id": "0d4529d7-0e42-410b-bf28-1fcd188394e0",
+      "result_id": "6f596f57-51f5-474a-ad16-7bb15fd488f1"
+    },
+    {
+      "claim_id": "c6c62b30-e6e8-4228-a5d0-717a85bf59f0",
+      "result_id": "6f596f57-51f5-474a-ad16-7bb15fd488f1"
+    },
+    {
+      "claim_id": "7147947e-c010-4199-a790-276b7429517f",
+      "result_id": "6f596f57-51f5-474a-ad16-7bb15fd488f1"
+    },
+    {
+      "claim_id": "9956f5d8-b0c3-4466-9199-43d9687168d3",
+      "result_id": "6f596f57-51f5-474a-ad16-7bb15fd488f1"
+    },
+    {
+      "claim_id": "c2f3cd5e-e9bc-4a29-be37-abeac2e2d3ab",
+      "result_id": "8226da67-f48d-4dac-8df7-b045aed95af2"
+    },
+    {
+      "claim_id": "b525896b-261b-4d73-8bcf-80ededec2217",
+      "result_id": "8226da67-f48d-4dac-8df7-b045aed95af2"
+    },
+    {
+      "claim_id": "808040d5-0f6e-4c8e-9ea2-4055f2c41517",
+      "result_id": "8226da67-f48d-4dac-8df7-b045aed95af2"
+    },
+    {
+      "claim_id": "11bcd278-3d7c-4949-886b-562fd5448dde",
+      "result_id": "8226da67-f48d-4dac-8df7-b045aed95af2"
+    },
+    {
+      "claim_id": "9b3d6376-bbb9-4582-b96f-1bf879520e7e",
+      "result_id": "8226da67-f48d-4dac-8df7-b045aed95af2"
+    },
+    {
+      "claim_id": "d0c36824-d53a-4857-bbdf-eb5faddcef1f",
+      "result_id": "fd6da097-0d93-4d1b-8525-d35e953fc91a"
+    },
+    {
+      "claim_id": "2e1edddf-a90a-42b6-8f59-ad9c970694b1",
+      "result_id": "fd6da097-0d93-4d1b-8525-d35e953fc91a"
+    },
+    {
+      "claim_id": "831355a0-4316-4d8a-a695-b4f3b2fa6537",
+      "result_id": "fd6da097-0d93-4d1b-8525-d35e953fc91a"
+    },
+    {
+      "claim_id": "eab8b1ba-eee5-4d71-a345-eb8c4c8e3577",
+      "result_id": "fd6da097-0d93-4d1b-8525-d35e953fc91a"
+    },
+    {
+      "claim_id": "c269f712-f8b4-4d56-8296-a05c87791f68",
+      "result_id": "fd6da097-0d93-4d1b-8525-d35e953fc91a"
+    },
+    {
+      "claim_id": "fc932a12-875a-4f3c-8f97-14d52a175de9",
+      "result_id": "b45c2c3c-9c34-4018-8744-e7340f471851"
+    },
+    {
+      "claim_id": "86b1f2f2-a210-4aa9-b89b-8c493c851714",
+      "result_id": "b45c2c3c-9c34-4018-8744-e7340f471851"
+    },
+    {
+      "claim_id": "e2ad6fa6-f612-418f-a598-9858f9a67384",
+      "result_id": "b45c2c3c-9c34-4018-8744-e7340f471851"
+    },
+    {
+      "claim_id": "ca348eaa-91b5-4f8e-a303-50bb65cfa05c",
+      "result_id": "b45c2c3c-9c34-4018-8744-e7340f471851"
+    },
+    {
+      "claim_id": "2ee8bd1f-ccb4-4f72-8133-4f3a186b4011",
+      "result_id": "b45c2c3c-9c34-4018-8744-e7340f471851"
+    },
+    {
+      "claim_id": "7ed11238-b67b-4723-a1df-5c9d93fc7c50",
+      "result_id": "b45c2c3c-9c34-4018-8744-e7340f471851"
+    },
+    {
+      "claim_id": "2b081532-e15e-47e5-bf70-6791dd1c8642",
+      "result_id": "4c6e4213-a10e-4147-9232-1b4c3daba670"
+    },
+    {
+      "claim_id": "649d869c-d31b-456e-9fc0-4ebd8825aed0",
+      "result_id": "4c6e4213-a10e-4147-9232-1b4c3daba670"
+    },
+    {
+      "claim_id": "50089bf8-4b71-4e8b-a910-5edbbf1b663d",
+      "result_id": "4c6e4213-a10e-4147-9232-1b4c3daba670"
+    },
+    {
+      "claim_id": "7312c734-858c-4f43-99b3-be04ba10d602",
+      "result_id": "4c6e4213-a10e-4147-9232-1b4c3daba670"
+    },
+    {
+      "claim_id": "466ed4c3-34ea-4883-959b-9e60cc5332fc",
+      "result_id": "4c6e4213-a10e-4147-9232-1b4c3daba670"
+    },
+    {
+      "claim_id": "6f2ecfca-ba3d-42fc-b99c-10ab6ced18c5",
+      "result_id": "4c6e4213-a10e-4147-9232-1b4c3daba670"
+    },
+    {
+      "claim_id": "7926cb28-39f0-4f80-8f84-4c1d1f455491",
+      "result_id": "4c6e4213-a10e-4147-9232-1b4c3daba670"
+    }
+  ],
+  "comparisons": []
+}

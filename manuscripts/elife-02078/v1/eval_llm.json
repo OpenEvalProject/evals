@@ -1,0 +1,195 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C44",
+      "C80"
+    ],
+    "result": "Grasshopper auditory receptor neurons exhibit remarkable temperature compensation with Q10 values around 1.4-1.5, based on experimental recordings from 9 neurons showing that firing rates increased by only ~40-50% when temperature increased from ~21\u00b0C to ~29\u00b0C. Transfer function parameters (saturation rate, half-max sound level, dynamic-range width) all showed median Q10 values below 1.5, while action potential width decreased with heating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C10-C14 are well-supported by experimental data from 9 receptor neurons (C80) with appropriate statistical analysis. The sigmoidal fits achieved R\u00b2>0.95 (C11), and multiple transfer function parameters were quantified at two temperatures. The small sample size (n=9) is acknowledged but appears adequate for the observed effect sizes. The conservative experimental approach (C78-C79) suggests the reported Q10 values may be upper bounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C46",
+      "C69",
+      "C71"
+    ],
+    "result": "Temperature compensation of spike generation can be achieved through cell-intrinsic mechanisms alone, as demonstrated by Connor-Stevens model simulations showing that 18% of models with physiologically realistic ion channel Q10 values exhibited temperature compensation comparable to experimental observations (RMSD<0.5). The temperature dependence of potassium channels (particularly Q10(n), Q10(\u1e21A), and Q10(\u1e21K)) had the largest impact on firing rate temperature compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17-C25 are supported by systematic computational modeling across >260,000 parameter combinations with physiologically realistic Q10 ranges. The sensitivity analysis (C22-C23) identifies key parameters, and robustness was confirmed with \u00b120% perturbations (C24) and alternative models (C25). The modeling approach is sound, though the 18% success rate (C21) indicates temperature compensation requires specific parameter combinations rather than being a generic property.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C48"
+    ],
+    "result": "Temperature compensation in the models was mechanistically achieved by modest increases in f-I curve threshold balancing increases in slope with heating. The slope was most sensitive to delayed-rectifier potassium channel parameters (Q10(n), Q10(\u1e21K)) and sodium inactivation (Q10(h)), while threshold was most influenced by A-type potassium and leak conductance temperature dependencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29, C48 are supported by systematic analysis of f-I curve parameters across all models. The square-root fits achieved R\u00b2>0.97 for 99% of models, validating the parameterization. The sensitivity analysis clearly identifies which parameters affect slope vs. threshold, providing mechanistic insight into how temperature compensation is achieved through balancing opposing effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Temperature compensation does not require compromising energy efficiency. For 93% of models, spiking cost decreased with heating, with sodium channel inactivation (Q10(h)) being most influential. Crucially, the parameters controlling temperature compensation (potassium channels) differed from those controlling energy efficiency (sodium channels), allowing both features to be optimized independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33-C39, C51-C56 are well-supported by computational analysis of energy consumption across the model space. The finding that minimum energy consumption was comparable between temperature-compensated and temperature-dependent models (C35) is particularly important. The independence of parameter sets (C38, C55) is demonstrated by comparing sensitivity analyses. Multiple energy metrics were tested (sodium-based, potassium-based, charge separation), all confirming the main conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C57",
+      "C58"
+    ],
+    "result": "Firing rate-based information transfer increases with temperature, scaling with the fourth power of the slope's Q10 value (Q10(\u27e8J\u27e9)=[Q10(A)]\u2074). The delayed-rectifier potassium conductance temperature dependence had the largest impact on information transfer capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30-C31, C57-C58 are supported by Fisher information analysis with clear mathematical derivation. The Q10(A)\u2074 scaling relationship (C30) is rigorously derived in the Methods section for both Poisson and Gaussian noise models. However, the authors appropriately note (C32) that channel-specific stochastic dynamics not captured in the deterministic model could affect information transfer, introducing some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C73",
+      "C82"
+    ],
+    "result": "Reverse-engineering analysis predicts that transduction temperature dependence can support temperature compensation, with the largest expected change being in dynamic-range width (median Q10~2). Changes in saturation current and half-maximum sound level also contribute. The model-derived transduction curves matched experimental responses well (R\u00b2>0.98 for 99.5% of models).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43, C63-C70, C73, C82 are supported by the reverse-engineering approach that systematically inferred optimal transduction curves for each spike generation model. The high R\u00b2 values (C82) validate the fitting procedure. However, these are predictions rather than direct measurements of transduction (C40), and the mechanistic interpretations (C64, C66-C68) involve speculation about underlying biophysical mechanisms that would require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C8",
+      "C15",
+      "C16",
+      "C59"
+    ],
+    "result": "The grasshopper auditory system consists of a feedforward network where ~80 receptor neurons (which receive no network input) converge to ~15 local neurons, then to ~20 ascending neurons. Receptor responses are shaped by auditory transduction followed by spike generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C8, C15-C16, C59 are supported by citations to previous anatomical and physiological studies (Vogel and Ronacher 2007; Clemens et al. 2011; Gollisch and Herz 2005). These represent established knowledge about the grasshopper auditory system architecture that provides essential context for interpreting the temperature compensation findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C45",
+      "C47",
+      "C49",
+      "C50"
+    ],
+    "result": "The observed temperature compensation in grasshopper receptor neurons (Q10~1.5) is unusual compared to other invertebrate species (Q10>2) but comparable to 'warm-insensitive' mammalian neurons. Similar single-cell temperature compensation has been described in locust tarsal hairs, and the role of potassium channels matches observations in mouse pancreatic neurons and molluscan neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C45, C47, C49-C50 appropriately contextualize the findings within existing literature through multiple citations. The comparisons to other systems are well-supported by the cited references and help establish the significance of the grasshopper findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81"
+    ],
+    "result": "Experimental methods involved intracellular recordings from 9 receptor neurons in adult Locusta migratoria using standard electrophysiological techniques. Recordings were performed first at 28-29\u00b0C then at 21-23\u00b0C, with a 3-5 min equilibration period. Acoustic stimuli consisted of broadband sounds (1-40 kHz, 100 ms duration) at 8 intensities (32-88 dB SPL), repeated 5 times each.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 describe standard, well-established experimental methods with appropriate citations to previous work. The conservative approach to temperature equilibration (C78) and acknowledgment that Q10 values may be upper bounds (C79) demonstrate methodological rigor. The experimental design is appropriate for the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C32",
+      "C60",
+      "C61",
+      "C62",
+      "C72",
+      "C74"
+    ],
+    "result": "Energy efficiency is an important constraint for neural systems, particularly relevant for grasshopper receptor neurons with firing rates exceeding several hundred Hz. The identified mechanisms for temperature compensation likely generalize to other cell types, and temperature dependence of neuronal processing merits further investigation across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C32, C60-C62, C72, C74 represent reasonable inferences and contextual statements supported by citations (C9) and the modeling results. However, C61-C62 involve speculation about evolutionary strategies and downstream processing that, while plausible, lack direct experimental support. C72 and C74 are appropriate statements about generalizability and future directions.",
+    "result_type": "MINOR"
+  }
+]

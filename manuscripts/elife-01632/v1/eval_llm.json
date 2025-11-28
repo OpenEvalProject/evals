@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "H3K64ac is a novel histone modification identified by mass spectrometry, located on the lateral surface of the histone octamer near DNA, present ubiquitously across cell types, inducible by HDAC inhibitors, and enriched in euchromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are well-supported by complementary experimental approaches: mass spectrometry identification (C1), structural modeling (C2), immunoblot detection across multiple cell lines (C3), HDAC inhibitor response (C4), and immunofluorescence localization (C5). The antibody characterization is thorough, including peptide competition and trypsin digestion controls. The convergence of multiple independent methods strengthens confidence in the identification and characterization of this modification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C17"
+    ],
+    "result": "H3K64ac and H3K64me3 show opposing localization patterns, with H3K64me3 being a repressive heterochromatic mark and the two modifications defining functionally opposing chromatin states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C17 are supported by immunofluorescence data showing mutually exclusive localization patterns and prior publications establishing H3K64me3 as a repressive mark. However, the inference that these modifications define opposing chromatin states (C17) relies heavily on correlative localization data. Direct functional competition experiments or sequential ChIP would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C54"
+    ],
+    "result": "H3K64ac is enriched at transcriptional start sites of active genes, correlates with RNA Polymerase II occupancy and active histone marks, anti-correlates with repressive marks, is enriched at active enhancers, and defines transcriptionally active chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 and C54 are well-supported by genome-wide ChIP-on-chip data with biological replicates (Pearson correlation 0.825), validated by ChIP-qPCR at individual loci. The correlation with RNA Pol II (Spearman coefficient 0.789) and mRNA levels is strong. The anti-correlation with repressive marks and enrichment at enhancers marked by H3K27ac, H3K4me1, and p300 provide convergent evidence. The conclusion that H3K64ac defines active chromatin (C54) is justified by the comprehensive genomic distribution analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "H3K64ac enrichment shifts from pluripotency genes to differentiation genes during ES cell differentiation, reflecting transcriptional activity changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is supported by ChIP analysis comparing undifferentiated and differentiated ES cells at specific gene loci. The dynamic redistribution of H3K64ac during differentiation provides functional validation of its association with active transcription. However, genome-wide analysis during differentiation time courses would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "H3K64ac is most highly enriched on the H3.3 histone variant compared to H3.1 and H3.2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 is supported by immunoprecipitation of Flag-HA-tagged H3 variants showing highest H3K64ac signal on H3.3, consistent with H3.3's association with transcriptionally active chromatin. The K64R mutant control demonstrates antibody specificity. Quantification shows ~1.4-fold enrichment on H3.3 relative to H3.1, which is modest but statistically significant (n=3 biological replicates).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "Transcriptionally active alleles of imprinting control regions are specifically marked by H3K64ac, while inactive alleles are enriched in H3K64me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is supported by allele-specific ChIP using polymorphic nucleotides to distinguish parental alleles at five ICRs. The SSCP-based approach provides clear separation of maternal and paternal alleles. This elegant experiment demonstrates functional opposition of H3K64ac and H3K64me3 at the same genomic loci, strengthening the model of opposing chromatin states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "p300 and CBP are H3K64 acetyltransferases, as demonstrated by siRNA knockdown reducing H3K64ac levels (especially at p300/CBP target regions), overexpression increasing H3K64ac, and in vitro acetylation of H3K64 by p300/CBP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are well-supported by multiple complementary approaches: systematic siRNA screening of HAT families, genomic localization showing correlation between p300 and H3K64ac (Spearman coefficient 0.764), overexpression experiments, and in vitro HAT assays on both free H3 and chromatin templates. The K64A mutant control in vitro confirms specificity. However, the authors appropriately note that additional H3K64 acetyltransferases may exist, as knockdown does not completely eliminate H3K64ac.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "H3K64 acetylation differentially affects chromatin remodeling enzymes, with Chd1 repositioning H3K64ac nucleosomes faster than unmodified nucleosomes, while RSC shows no differential effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are supported by in vitro remodeling assays showing Chd1 repositions H3K64ac nucleosomes ~1.7-fold faster than unmodified (0.038 vs 0.023 min\u207b\u00b9), while RSC shows minimal difference (0.056 vs 0.083 min\u207b\u00b9). The differential effects suggest specificity in how remodelers recognize H3K64ac. However, the biological significance of these rate differences and whether they occur in vivo requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "H3K64ac decreases nucleosome stability, as shown by increased sensitivity to salt-induced disruption in FRET assays, reduced nucleosome assembly efficiency in competitive reconstitution, and distinction from H3K56ac and H3K9ac which show different effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 are strongly supported by multiple biophysical approaches: ensemble FRET showing ~75 mM decrease in C\u2080.\u2085 (622 vs 697 mM NaCl), single-molecule FRET showing ~62 mM decrease (488 vs 550 mM), and competitive assembly showing ~25% reduction in assembly efficiency. The H3K9ac control showing no effect demonstrates specificity for lateral surface modifications. The convergence of independent methods provides robust evidence for decreased nucleosome stability. Statistical significance is demonstrated (p<0.05 for FRET, p<0.01 for assembly).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "H3K64ac levels dramatically increase in elongating spermatids during nucleosome disassembly and histone replacement, suggesting a role in creating an open chromatin state, while H3K64me3 is enriched in regions undergoing late histone replacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31 and C33 are supported by immunofluorescence and immunohistochemistry on testis sections showing stage-specific enrichment patterns. However, claim C32 regarding H3K64ac's role in histone replacement is speculative, based on temporal correlation rather than functional demonstration. The proposed mechanism is plausible given the nucleosome destabilization data, but direct evidence (e.g., perturbation experiments, histone exchange assays in spermatids) is lacking. The correlation is suggestive but insufficient to establish causation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "H3K64ac promotes histone displacement from chromatin more than H3K64R in in vitro eviction assays, and this difference is not due to differential Nap1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by in vitro histone eviction assays showing increased H3 in the evicted fraction from H3K64ac chromatin compared to H3K64R. The Nap1 pull-down control demonstrates equal binding to all H3 species, ruling out differential chaperone affinity as an explanation. However, the assay uses artificial chromatin templates and may not fully recapitulate in vivo conditions. The biological relevance would be strengthened by in vivo histone exchange measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The acetylation mimic H3K64Q promotes transcription of early-response genes (c-fos, Egr1, c-myc) above levels with wildtype H3.3 or H3.3K64R, while control genes are unaffected, demonstrating H3K64ac's intrinsic ability to impact transcription in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by qPCR analysis in NIH3T3 cells expressing different H3.3 variants following TPA induction. The H3K64Q mimic shows ~2-fold higher expression of specific early-response genes compared to wildtype or K64R, while control genes (Gapdh, Hsp70) are unaffected. The specificity for certain genes and lack of effect on controls strengthens the conclusion. However, the authors' statement that 2-fold is 'biologically important' (C46) is subjective. The use of glutamine as an acetylation mimic is imperfect, and direct measurement of transcription from H3K64ac-containing nucleosomes would be more definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "H3K64 is positioned to interact with DNA through direct contacts and an extensive water-mediated hydrogen bond network, and acetylation would disrupt these interactions, potentially affecting nucleosome stability significantly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by structural analysis of the high-resolution nucleosome crystal structure (PDB 1KX5). The main chain atoms of H3K64 directly contact DNA phosphate backbone, the side chain is ~6.1 \u00c5 from DNA, and H3K64 participates in water-mediated hydrogen bonds. The predictions about acetylation disrupting these interactions (C40, C42) are reasonable inferences based on the chemical properties of acetylation. The citation of Davey et al.'s estimate that water-bridges are as important as direct contacts (C43) provides theoretical support. However, these are structural predictions rather than direct experimental measurements of the acetylated state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The enrichment of H3K64ac at active gene promoters and during spermiogenesis argues for a role in creating an open, permissive chromatin state, and 2-fold transcriptional changes from a single histone mutation are considered biologically important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is a reasonable inference from the genomic distribution data and functional assays, though it remains somewhat speculative without direct chromatin accessibility measurements. Claim C46 is a subjective interpretation of biological significance. While 2-fold changes can be meaningful, the statement lacks context about effect sizes for other histone modifications or comparison to physiological ranges. The evaluation is supported by the data but the interpretation of 'biological importance' is debatable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Different acetylations on the octamer's lateral surface (H3K64ac vs H3K56ac) mediate distinct effects on nucleosomes, demonstrating specificity in how biomechanical properties are affected by acetylation at different sites within the globular domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by comparison with published work on H3K56ac showing that H3K56ac does not significantly affect nucleosome stability under comparable conditions (Neumann et al., 2009), while H3K64ac clearly does. This demonstrates position-specific effects of lateral surface acetylation. The conclusion about specificity is justified, though the mechanistic basis for these differences could be explored further.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "H3K64ac might prevent nucleosomes from adopting a repressive conformation by blocking H3K64me3 deposition, and opposing chromatin states can be defined via mutually exclusive presence of H3K64ac or H3K64me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C50 present a working model based on the cumulative evidence but remain speculative. The mutually exclusive distribution patterns and opposing functional associations support the model, but direct evidence for H3K64ac preventing H3K64me3 deposition is lacking. The model is plausible and consistent with the data, but experiments showing that H3K64ac blocks H3K64 methyltransferases or that removal of H3K64ac leads to increased H3K64me3 would be needed to confirm this mechanism. The model is presented appropriately as a hypothesis rather than established fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Lateral surface modifications play a key role in regulating chromatin function, strengthening concepts initially proposed by others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is a broad conclusion supported by the comprehensive characterization of H3K64ac's effects on nucleosome stability, chromatin remodeling, and transcription. The data provide strong evidence for direct functional roles of lateral surface modifications, extending beyond the reader-based mechanisms typical of tail modifications. This represents a significant conceptual advance in understanding chromatin regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Identification of novel chromatin regulatory pathways has potential to highlight druggable targets for diseases with distorted chromatin states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C52 is highly speculative and represents potential future applications rather than demonstrated results. While p300/CBP are known drug targets and chromatin dysregulation occurs in disease, no evidence is presented linking H3K64ac specifically to disease states or demonstrating therapeutic potential. This is appropriate for a discussion section but should not be considered a supported result of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C53",
+      "C55",
+      "C56"
+    ],
+    "result": "H3K64ac regulates nucleosome stability, facilitates nucleosome eviction and gene expression in vivo, opposes H3K64me3, and demonstrates that lateral surface modifications can define functionally opposing chromatin states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C55, and C56 represent the major conclusions of the study, synthesizing results from multiple experimental approaches. These conclusions are well-supported by the convergent evidence from: (1) biophysical measurements of nucleosome stability, (2) in vitro eviction assays, (3) genome-wide localization at active genes, (4) transcriptional effects of H3K64Q, (5) mutually exclusive distribution with H3K64me3, and (6) allele-specific enrichment at ICRs. The integration of structural, biochemical, genomic, and functional data provides strong support for these major conclusions.",
+    "result_type": "MAJOR"
+  }
+]

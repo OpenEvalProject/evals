@@ -1,0 +1,2029 @@
+{
+  "submission": {
+    "id": "90d3923a-1407-4836-bd77-5b804436ff93",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:02:09.220327Z",
+    "updated_at": "2025-11-28T21:02:09.220327Z"
+  },
+  "content": [
+    {
+      "id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "submission_id": "90d3923a-1407-4836-bd77-5b804436ff93",
+      "content_type": "manuscript",
+      "content_text": "# A structural model of the active ribosome-bound membrane protein insertase YidC\n\n## Authors\n\n- Stephan Wickles<sup>1</sup>\n- Abhishek Singharoy<sup>3</sup>\n- Jessica Andreani<sup>1</sup>\n- Stefan Seemayer<sup>1</sup>\n- Lukas Bischoff<sup>1</sup>\n- Otto Berninghausen<sup>1</sup>\n- Johannes Soeding<sup>1</sup>\n- Klaus Schulten<sup>3</sup>\n- Eli O van der Sluis<sup>1</sup> \u2020\n- Roland Beckmann<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Gene Center Munich, Department of Biochemistry Ludwig-Maximilians-Universit\u00e4t Mu\u0308nchen Munich Germany\n2. Center for Integrated Protein Science Munich, Department of Biochemistry Ludwig-Maximilians-Universit\u00e4t Mu\u0308nchen Munich Germany\n3. Beckman Institute for Advanced Science and Technology University of Illinois at Urbana-Champaign Urbana United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe integration of most membrane proteins into the cytoplasmic membrane of bacteria occurs co-translationally. The universally conserved YidC protein mediates this process either individually as a membrane protein insertase, or in concert with the SecY complex. Here, we present a structural model of YidC based on evolutionary co-variation analysis, lipid-versus-protein-exposure and molecular dynamics simulations. The model suggests a distinctive arrangement of the conserved five transmembrane domains and a helical hairpin between transmembrane segment 2 (TM2) and TM3 on the cytoplasmic membrane surface. The model was used for docking into a cryo-electron microscopy reconstruction of a translating YidC-ribosome complex carrying the YidC substrate FOc. This structure reveals how a single copy of YidC interacts with the ribosome at the ribosomal tunnel exit and identifies a site for membrane protein insertion at the YidC protein-lipid interface. Together, these data suggest a mechanism for the co-translational mode of YidC-mediated membrane protein insertion.\n\n## Introduction\n\nAt present, a mechanistic understanding of the function of YidC, as well as its mitochondrial and chloroplast counterparts Oxa1 and Alb3, respectively, is limited by a lack of structural information (Kol et al., 2008; Dalbey et al., 2011). High resolution structures are available only for the first periplasmic domain (P1) of Escherichia coli YidC (Figure 1A; Oliver and Paetzel, 2008; Ravaud et al., 2008), however, this domain is poorly conserved, only present in Gram-negative bacteria and not essential for functionality (Jiang et al., 2003). Furthermore, the region(s) of YidC mediating the interaction with the ribosome have not been identified, and the oligomeric state of YidC during co-translational translocation remains controversial (Kohler et al., 2009; Herrmann, 2013; Kedrov et al., 2013). Hence, we set out to determine a molecular model of ribosome-bound YidC during co-translational translocation of the substrate FOc (van der Laan et al., 2004), an integral membrane subunit of the ATP synthase complex.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03035/elife-03035-fig1-v2.jpg)\n\n**Figure 1.:** (A) Membrane topology of YidC, with helix coloring as in all subsequent Figures. (B) Matrix of coupling strengths between pairs of YidC residues based on an alignment of 2366 non-redundant sequences. Helix\u2013helix pairs with posterior probabilities higher than 57% are outlined in boxes; the 50 residue\u2013residue pairs with highest coupling coefficients are indicated with red crosses. (C) Overall arrangement of TM helices viewed from the cytoplasm based on the prediction of helix\u2013helix pairs (black lines) and exposure to lipid (yellow) or protein (green). The first residue of each helix is indicated with an asterisk. (D) Linear representation of YidC with the seven most probable helix\u2013helix pairs indicated by arches, with thicknesses approximating posterior probabilities. (E and F) Side view and cytoplasmic view, respectively, of the E. coli YidC model based on covariation analysis, with predicted residue\u2013residue pairs indicated by yellow pseudobonds.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03035/elife-03035-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Calibration plots for the prediction of helix\u2013helix interactions. Calibration plots for dataset #2 (left), dataset #3 (middle) and combined datasets #2 and #3 (right). The empirical fraction of true positives is plotted depending on the uncalibrated probability (raw score) obtained from our method. Points correspond to empirical averages over bins of 60 predictions (ordered by increasing uncalibrated probability). Lines correspond to maximum likelihood fits of the calibration plots using a transformed Bernoulli distribution with 4 parameters. (B) Histogram of posterior probabilities for helix\u2013helix interactions. Distribution of predicted calibrated posterior probabilities for YidC (TM2\u2013TM6) which contains seven predicted helices, thus 21 possible helix\u2013helix contacts. The histogram of predicted probabilities shows the specificity of the predictions: there is a large gap between 15% and 55% probability and most possible contacts have probability <15%.\n\n## Results\n\nIn order to build an initial structural model of YidC, we predicted contacts between pairs of residues based on covariation analysis (Marks et al., 2011; Hopf et al., 2012). For that purpose, we constructed a multiple sequence alignment of E. coli YidC excluding the nonconserved first transmembrane helix (TM1) and the P1 domain (Figure 1A) and computed direct evolutionary couplings between pairs of YidC residues (Kamisetty et al., 2013). The resulting matrix of coupling strengths (Figure 1B) contains several diagonal and anti-diagonal patterns of stronger coupling coefficients, which are indicative of parallel or anti-parallel helix\u2013helix pairs, respectively. We computed probabilities for each possible helix\u2013helix contact by aggregating the evidence of stronger coupling coefficients over the expected interaction patterns and calibrating the resulting raw scores on an independent dataset of helix\u2013helix interactions to obtain accurate interaction probabilities. Seven helix\u2013helix contacts attained probabilities above 57% (Figure 1B\u2013D) while all other possible contacts scored below 15%, demonstrating the specificity of the method (Figure 1\u2014figure supplement 1B).\n\nWe roughly positioned the five TM helices of E. coli YidC relative to each other using the predicted helix\u2013helix contacts as constraints, and rotated them according to their predicted lipid or protein exposure (Lai et al., 2013; Figure 1C). Next, we used MODELLER (Eswar et al., 2008) to create full length models based on the TM core, secondary structure prediction and the 50 residue\u2013residue contacts with the highest coupling coefficients (39 excluding intrahelical contacts, indels and topology violations). In the resulting model (Figure 1E,F), the conserved membrane integrated core of YidC forms a helical bundle arranged like the vertices of a pentagon, in the order 4-5-3-2-6 (clockwise) when viewed from the cytoplasm (Figure 1F). Notably, all the predicted interactions between TM domains can be explained by monomeric YidC suggesting that dimer or oligomer formation may not be strictly required for YidC activity (see also below).\n\nOutside the membrane region, strong helix\u2013helix contacts were predicted within the cytoplasmic loop between TM2 and TM3, which can be explained the by formation of a helical hairpin (Figure 1F). The base of this \u2018helical paddle domain\u2019 (HPD) is structurally constrained by predicted contacts with TM3, its tip on the other hand is more mobile and appears to interact with lipid headgroups (see below).\n\nWhile this manuscript was under review, two crystal structures were published of Bacillus halodurans YidC2 (BhYidC2, 34% sequence identity with E. coli YidC) (Kumazaki et al., 2014), providing us with a unique opportunity to directly assess the accuracy of our model. Overall, the root mean square deviation (RMSD) between the TM helices of our model and those of BhYidC2 is 7.5 \u00c5 (3WO6) and 7.3 \u00c5 (3WO7) (Table 1), which is within the resolution limits of our method. The global arrangement of TM helices is the same as in BhYidC2, yet, their tilt angle relative to the plane of the membrane is slightly different (Figure 2). The tilt angle of the HPD also differs, as well as its side that faces the membrane (Video 1), which may be indicative of a high degree of flexibility of this domain, consistent with its high crystallographic B-factors (Kumazaki et al., 2014). Notably, the HPD is not essential for YidC function in E. coli since the deletion of the entire domain is possible without compromising cell viability (Jiang et al., 2003).\n\n**Table 1.**\n Deviations among YidC structures\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>RMSD (\u00c5)</th>\n      <th>RMSD (\u00c5) (TM core)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>3WO6</td>\n      <td>3WO7</td>\n      <td>3.1</td>\n      <td>1.8</td>\n    </tr>\n    <tr>\n      <td>3WO6</td>\n      <td>model</td>\n      <td>9.4</td>\n      <td>7.5</td>\n    </tr>\n    <tr>\n      <td>3WO7</td>\n      <td>model</td>\n      <td>9.8</td>\n      <td>7.3</td>\n    </tr>\n  </tbody>\n</table>\n\n_Overall root mean square deviations (RMSD) between (the TM helices of) our model of E. coli YidC and the two BhYidC2 crystal forms._\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03035/elife-03035-fig2-v2.jpg)\n\n**Figure 2.:** Comparison of the E. coli YidC covariation-based model (A and B) to a homology model of E. coli YidC based on the crystal structure of BhYidC2 (3WO6) (C and D). Predicted residue\u2013residue pairs are indicated by yellow pseudobonds. Note that extracellular helix 1 (white) was not present in our multiple sequence alignment and is thus not included in the model.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03035/elife-03035-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Smoothed C\u03b1 distances between the two BhYidC2 crystal forms (3WO6 vs 3WO7, red), between our model of E. coli YidC and 3WO6 (green) and between our model and 3WO7 (blue).\n\n![Video 1.](https://cdn.elifesciences.org/articles/03035/elife-03035-media1.mov.jpg)\n\n**Video 1.:** Animation showing conformational differences in YidC starting from BhYidC2 crystal form 1 (3WO6), towards crystal form 2 (3WO7) and ending with our covariation based YidC model. Views are from within the membrane (left) and from the cytoplasm (right). Note the movement of the HPD and the closing of the hydrophilic groove between TM3 (orange) and TM5 (green).\n\nA qualitative difference between our model and BhYidC2 that may have more mechanistic importance is the relative position of TM3. In the structure of BhYidC2 a hydrophilic groove is formed on the cytoplasmic side of the TM bundle that has been proposed to form a binding site for YidC substrates (Kumazaki et al., 2014). Interestingly, the opening state of this groove differs between the two crystal forms, that is it is more open in 3WO6 than in 3WO7 (Video 1), largely due to movement of the N-terminal half of TM3 (Figure 2\u2014figure supplement 1). In our model on the other hand, this hydrophilic groove is even more closed than in 3WO7 because we imposed covariation-based constraints between TM3 and TM5 (Pro425-Pro499) and between TM3 and TM6 (Cys423-Gln528 & Phe433-Thr524) (Figure 2; Video 1). Strikingly, in BhYidC2 the distances between the C\u03b2 atoms of these three pairs are outliers compared to other residue\u2013residue pairs (20.5 \u00c5/20.9 \u00c5/14.9 \u00c5 vs an average of 8.2 \u00c5, Table 2). Thus, given that (i) the position of TM3 differs in the two crystal forms, and (ii) that covariation analysis predicts with high accuracy a closer interaction of TM3 with TM6 and one contact with TM5, we conclude that movement of TM3 is a genuine feature of YidC. This movement and the accompanying dynamics of the hydrophilic groove may represent a crucial step in the functional cycle of the YidC insertase.\n\n**Table 2.**\n Top 50 scoring residue\u2013residue pairs in covariation analysis\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Residue 1</th>\n      <th># Residue 1</th>\n      <th>Region</th>\n      <th></th>\n      <th>Residue 2</th>\n      <th># Residue 2</th>\n      <th>Region</th>\n      <th>dmodel (\u00c5)</th>\n      <th>d3WO6 (\u00c5)</th>\n      <th>Reason for exclusion</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>TRP</td>\n      <td>354</td>\n      <td>TM2</td>\n      <td></td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td></td>\n      <td></td>\n      <td>indel</td>\n    </tr>\n    <tr>\n      <td>GLY</td>\n      <td>355</td>\n      <td>TM2</td>\n      <td></td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td></td>\n      <td></td>\n      <td>indel</td>\n    </tr>\n    <tr>\n      <td>PHE</td>\n      <td>356</td>\n      <td>TM2</td>\n      <td></td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td></td>\n      <td></td>\n      <td>indel</td>\n    </tr>\n    <tr>\n      <td>PHE</td>\n      <td>356</td>\n      <td>TM2</td>\n      <td></td>\n      <td>ARG</td>\n      <td>533</td>\n      <td>c-term</td>\n      <td></td>\n      <td></td>\n      <td>topology violation</td>\n    </tr>\n    <tr>\n      <td>ILE</td>\n      <td>358</td>\n      <td>TM2</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>GLY</td>\n      <td>512</td>\n      <td>Loop5-6</td>\n      <td>9.1</td>\n      <td>6.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ILE</td>\n      <td>359</td>\n      <td>TM2</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>VAL</td>\n      <td>519</td>\n      <td>TM6</td>\n      <td>6.5</td>\n      <td>5.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ILE</td>\n      <td>359</td>\n      <td>TM2</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>LEU</td>\n      <td>515</td>\n      <td>TM6</td>\n      <td>8.5</td>\n      <td>7.9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ILE</td>\n      <td>359</td>\n      <td>TM2</td>\n      <td></td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td></td>\n      <td></td>\n      <td>indel</td>\n    </tr>\n    <tr>\n      <td>ILE</td>\n      <td>361</td>\n      <td>TM2</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>LEU</td>\n      <td>436</td>\n      <td>TM3</td>\n      <td>7.9</td>\n      <td>8.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>THR</td>\n      <td>362</td>\n      <td>TM2</td>\n      <td></td>\n      <td>PRO</td>\n      <td>371</td>\n      <td>TM2</td>\n      <td></td>\n      <td></td>\n      <td>intrahelical</td>\n    </tr>\n    <tr>\n      <td>PHE</td>\n      <td>363</td>\n      <td>TM2</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>VAL</td>\n      <td>523</td>\n      <td>TM6</td>\n      <td>5.2</td>\n      <td>6.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GLY</td>\n      <td>367</td>\n      <td>TM2</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>VAL</td>\n      <td>523</td>\n      <td>TM6</td>\n      <td>6.0</td>\n      <td>8.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MET</td>\n      <td>369</td>\n      <td>TM2</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>ILE</td>\n      <td>432</td>\n      <td>TM3</td>\n      <td>9.9</td>\n      <td>8.4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Leu</td>\n      <td>372</td>\n      <td>Loop2-3</td>\n      <td></td>\n      <td>PRO</td>\n      <td>510</td>\n      <td>Loop5-6</td>\n      <td></td>\n      <td></td>\n      <td>topology violation</td>\n    </tr>\n    <tr>\n      <td>SER</td>\n      <td>379</td>\n      <td>Loop2-3</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>PRO</td>\n      <td>425</td>\n      <td>TM3</td>\n      <td>10.2</td>\n      <td>9.9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>LEU</td>\n      <td>386</td>\n      <td>Loop2-3</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>VAL</td>\n      <td>417</td>\n      <td>Loop2-3</td>\n      <td>7.5</td>\n      <td>7.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>LEU</td>\n      <td>386</td>\n      <td>Loop2-3</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>LEU</td>\n      <td>411</td>\n      <td>Loop2-3</td>\n      <td>6.2</td>\n      <td>6.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>PRO</td>\n      <td>388</td>\n      <td>Loop2-3</td>\n      <td></td>\n      <td>GLN</td>\n      <td>429</td>\n      <td>TM3</td>\n      <td></td>\n      <td></td>\n      <td>topology violation</td>\n    </tr>\n    <tr>\n      <td>LYS</td>\n      <td>389</td>\n      <td>Loop2-3</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>ALA</td>\n      <td>414</td>\n      <td>Loop2-3</td>\n      <td>10.5</td>\n      <td>9.8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>LYS</td>\n      <td>389</td>\n      <td>Loop2-3</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>GLU</td>\n      <td>415</td>\n      <td>Loop2-3</td>\n      <td>11.2</td>\n      <td>10.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ILE</td>\n      <td>390</td>\n      <td>Loop2-3</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>MET</td>\n      <td>408</td>\n      <td>Loop2-3</td>\n      <td>6.8</td>\n      <td>6.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MET</td>\n      <td>393</td>\n      <td>Loop2-3</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>ILE</td>\n      <td>404</td>\n      <td>Loop2-3</td>\n      <td>7.9</td>\n      <td>7.4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MET</td>\n      <td>393</td>\n      <td>Loop2-3</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>LEU</td>\n      <td>411</td>\n      <td>Loop2-3</td>\n      <td>8.2</td>\n      <td>7.7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ARG</td>\n      <td>394</td>\n      <td>Loop2-3</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>ILE</td>\n      <td>404</td>\n      <td>Loop2-3</td>\n      <td>8.5</td>\n      <td>8.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ARG</td>\n      <td>396</td>\n      <td>Loop2-3</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>GLU</td>\n      <td>407</td>\n      <td>Loop2-3</td>\n      <td>8.9</td>\n      <td>8.4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CYS</td>\n      <td>423</td>\n      <td>TM3</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>GLN</td>\n      <td>528</td>\n      <td>TM6</td>\n      <td>16.2</td>\n      <td>20.9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>PRO</td>\n      <td>425</td>\n      <td>TM3</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>PRO</td>\n      <td>499</td>\n      <td>TM5</td>\n      <td>10.2</td>\n      <td>20.5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>PHE</td>\n      <td>433</td>\n      <td>TM3</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>THR</td>\n      <td>524</td>\n      <td>TM6</td>\n      <td>11.0</td>\n      <td>14.9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>LEU</td>\n      <td>436</td>\n      <td>TM3</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>GLY</td>\n      <td>512</td>\n      <td>Loop5-6</td>\n      <td>7.6</td>\n      <td>8.3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>TYR</td>\n      <td>437</td>\n      <td>TM3</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>LEU</td>\n      <td>513</td>\n      <td>Loop5-6</td>\n      <td>9.8</td>\n      <td>6.4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>TRP</td>\n      <td>454</td>\n      <td>Loop3-4</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>ASP</td>\n      <td>462</td>\n      <td>Loop3-4</td>\n      <td>6.6</td>\n      <td>7.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>TRP</td>\n      <td>454</td>\n      <td>Loop3-4</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>PRO</td>\n      <td>468</td>\n      <td>TM4</td>\n      <td>16.0</td>\n      <td>11.5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>TRP</td>\n      <td>454</td>\n      <td>Loop3-4</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>SER</td>\n      <td>511</td>\n      <td>Loop5-6</td>\n      <td>9.8</td>\n      <td>8.3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ILE</td>\n      <td>455</td>\n      <td>Loop3-4</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>LEU</td>\n      <td>467</td>\n      <td>TM4</td>\n      <td>9.8</td>\n      <td>10.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ILE</td>\n      <td>455</td>\n      <td>Loop3-4</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>ILE</td>\n      <td>466</td>\n      <td>TM4</td>\n      <td>11.0</td>\n      <td>8.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ASP</td>\n      <td>462</td>\n      <td>Loop3-4</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>PRO</td>\n      <td>468</td>\n      <td>TM4</td>\n      <td>12.5</td>\n      <td>6.8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ASP</td>\n      <td>462</td>\n      <td>Loop3-4</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>SER</td>\n      <td>511</td>\n      <td>Loop5-6</td>\n      <td>11.1</td>\n      <td>4.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>TYR</td>\n      <td>465</td>\n      <td>TM4</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>LEU</td>\n      <td>507</td>\n      <td>TM5</td>\n      <td>10.4</td>\n      <td>8.7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>LEU</td>\n      <td>467</td>\n      <td>TM4</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>LEU</td>\n      <td>515</td>\n      <td>TM6</td>\n      <td>11.6</td>\n      <td>6.6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>PRO</td>\n      <td>468</td>\n      <td>TM4</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>LEU</td>\n      <td>513</td>\n      <td>TM6</td>\n      <td>14.5</td>\n      <td>8.8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>LEU</td>\n      <td>470</td>\n      <td>TM4</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>ILE</td>\n      <td>518</td>\n      <td>TM6</td>\n      <td>6.3</td>\n      <td>5.4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MET</td>\n      <td>471</td>\n      <td>TM4</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>PHE</td>\n      <td>502</td>\n      <td>TM5</td>\n      <td>8.8</td>\n      <td>4.9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GLY</td>\n      <td>472</td>\n      <td>TM4</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>THR</td>\n      <td>503</td>\n      <td>TM5</td>\n      <td>6.7</td>\n      <td>5.3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GLY</td>\n      <td>472</td>\n      <td>TM4</td>\n      <td></td>\n      <td>GLN</td>\n      <td>479</td>\n      <td>TM4</td>\n      <td></td>\n      <td></td>\n      <td>intrahelical</td>\n    </tr>\n    <tr>\n      <td>THR</td>\n      <td>474</td>\n      <td>TM4</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>ASN</td>\n      <td>521</td>\n      <td>TM6</td>\n      <td>4.7</td>\n      <td>3.7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>THR</td>\n      <td>474</td>\n      <td>TM4</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>ILE</td>\n      <td>525</td>\n      <td>TM6</td>\n      <td>6.7</td>\n      <td>7.8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>ILE</td>\n      <td>478</td>\n      <td>TM4</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>ILE</td>\n      <td>525</td>\n      <td>TM6</td>\n      <td>9.0</td>\n      <td>5.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>THR</td>\n      <td>485</td>\n      <td>Loop4-5</td>\n      <td></td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td></td>\n      <td></td>\n      <td>indel</td>\n    </tr>\n    <tr>\n      <td>PHE</td>\n      <td>506</td>\n      <td>TM5</td>\n      <td>&lt;\u2013&gt;</td>\n      <td>VAL</td>\n      <td>514</td>\n      <td>TM6</td>\n      <td>14.4</td>\n      <td>4.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>GLY</td>\n      <td>512</td>\n      <td>Loop5-6</td>\n      <td></td>\n      <td>GLN</td>\n      <td>532</td>\n      <td>TM6</td>\n      <td></td>\n      <td></td>\n      <td>topology violation</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>\u00d8</td>\n      <td>9.3</td>\n      <td>8.1</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_Table showing the 50 residue\u2013residue pairs with the highest covariation scores, and the distances between the C\u03b2 atoms in the final model of the 39 pairs that were used as constraints for model building. For comparison, the corresponding distances in 3WO6 are also given. The 11 residue\u2013residue pairs that were excluded for model building are in italics, with the reason for their exclusion indicated on the right._\n\nIn summary, the overall structure of our YidC model agrees well with the BhYidC2 crystal structure, and a comparison of both structures reveals dynamic regions in YidC that may be of mechanistic importance. This further illustrates the power of covariation analysis not merely for structure prediction but also for obtaining dynamic insights (Hopf et al., 2012).\n\nNext, in order to further characterize and validate our obtained YidC model, we assessed its stability and biochemical properties in the bacterial membrane by employing traditional molecular dynamics (MD) simulations. Overall, the model was found to be very stable during the simulation. While the five TM helices enable a rigid protein core, the polar loop regions tend to swim on the membrane surface (Figure 3A). An analysis of inter-residue interactions within the TM region (Figure 3B) provides a firm basis to the observed stability of YidC: hydrophobic residues on the exterior of the TM bundle stabilize interactions with the apolar lipid tails. The YidC core, in turn, is stabilized both via short and long-range interactions between the five helices. Residues towards the cytoplasmic side of the core are primarily polar or charged and, therefore, engaged in strong electrostatic or charge\u2013dipole interactions. In contrast, residues on the periplasmic side are primarily aromatic and involved in stacking and other nonpolar dispersion interactions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03035/elife-03035-fig3-v2.jpg)\n\n**Figure 3.:** (A) Side view (left) and cytoplasmic view (right) of the stable YidC model after a 500 ns MD simulation in a lipid bilayer composed of 3:1 POPE:POPG. (B) Ribbon representation of the stable model according to inter-helix energy (in kcal/mol), blue: \u22127.5 to \u22121; white: \u22121 to \u22120.002; red: \u2265 \u22120.00.2. Residues that inactivate YidC upon mutagenesis are indicated by spheres. (C) Ribbon representation of the stable model according to flexibility (in \u00c52), blue: 0.04 to 0.09; white: 0.09\u20131; red: \u22651.0. (D) In vivo complementation assay of YidC mutants T362A (TM2) and Y517A (TM6). (E) Thickness of the cytoplasmic and periplasmic leaflet of the simulated bilayer after 500 ns, highlighting the membrane thinning effect in the vicinity of YidC. The membrane surface is defined by positions of polar head groups in the lipids, and thickness at a given point on the surface is taken to be the shortest distance between the head groups from opposite leaflets. The thickness values are averaged over the MD trajectory and presented as a contour plot on the membrane surface with a color-scale from red, indicating thicker region representing bulk bilayer lipids, to blue showing thinned regions close to YidC suggesting hydrophobic mismatch. (F) Distribution of hydrophobic (red) and hydrophilic residues (blue) in YidC at various heights of the membrane, highlighting the hydrophilic environment in the center of YidC on the cytoplasmic side.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03035/elife-03035-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** In vivo complementation assay of YidC mutants identified as structurally important by MD simulations. Positions in YidC that were also identified by covariation analyses are indicated in the right column.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03035/elife-03035-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Western blot of whole FTL10 cells grown on arabinose or glucose, showing the stable expression of inactive YidC mutants that were identifed by MD simulations.\n\nIn order to verify the functional relevance of residues suggested by the MD simulations, we created alanine mutants and subjected them to an in vivo complementation assay. Some of the most stabilizing residues, T362 in TM2 and Y517 in TM6, both of which are located at the same height in the membrane, completely inactivated YidC when mutated to alanine (Figure 3D, Figure 3\u2014figure supplement 1). Both mutants were stably expressed, indicating that the lack of complementation was not caused by instability of YidC (Figure 3\u2014figure supplement 2). Several residues close to this pair show intermediate activity levels (F433, M471 and F505), whereas residues further away do not show an effect (Figure 3\u2014figure supplement 1). Taken together, we provide a model for the overall arrangement of the conserved domains of YidC that is in good agreement with our covariation analysis, lipid exposure prediction, MD simulation, in vivo complementation analysis as well as the recent crystal structures.\n\nInterestingly, we observed that YidC induces thinning of the lipid bilayer during the MD simulation. A significant thinning of 7\u201310 \u00c5 results from the hydrophobic mismatch between the TM helices and the membrane (Figure 3E). The thinning is similar in the upper and lower leaflet, and the thinnest region is in proximity of TM3 and TM5. Since membrane inserting YidC substrates have been chemically cross-linked to both these helices (Klenner et al., 2008; Yu et al., 2008; Klenner and Kuhn, 2012), we argue that thinning of this region in particular may be relevant for the molecular mechanism of YidC-dependent membrane insertion. In addition, the distribution of hydrophilic and hydrophobic residues within YidC revealed the presence of a hydrophilic environment on the cytoplasmic side of the YidC TM bundle (Figure 3F), which continues into the mentioned hydrophobic cluster of aromatic residues towards the periplasmic side. It is tempting to speculate that this hydrophilic environment may receive the polar termini and loops of YidC substrates during the initiation of translocation, thus facilitating their transfer across the hydrophobic core of the (thinned) lipid bilayer (see below). Notably, essentially the same conclusions have been drawn on the basis of the BhYidC2 crystal structures and accompanying cross-linking studies (Kumazaki et al., 2014).\n\nIn order to provide a molecular model of YidC in its active state, we reconstituted purified full length YidC (extended with the C-terminus of R. baltica YidC [Seitl et al., 2014]) with ribosome nascent chains (RNCs) exposing the first TM helix of FOc, and subjected the complex to cryo-EM and single particle analysis to a resolution of \u223c8 \u00c5 (Figure 4A,B). In agreement with previous structural studies (Kohler et al., 2009; Seitl et al., 2014), YidC binds to the ribosomal exit site, however, the improved resolution now allows for a more detailed interpretation. Firstly, we were able to separate the weaker electron density of the detergent micelle from that of YidC (Figure 4A). Secondly, the presence of elongated structural features (Figure 4D\u2013F) allowed us to dock our molecular model in a distinct orientation (cross correlation coefficient 0.865). Following placement of the YidC-core model, two prominent densities in the membrane region, one next to TM3 and one next to TM5, remained unaccounted for. These could be attributed to either TM1 of YidC or to the TM helix of the nascent chain (NC) FOc. Given that (i) YidC substrates are known to crosslink to TM3 (Klenner et al., 2008; Yu et al., 2008; Klenner and Kuhn, 2012), and (ii) that the density neighboring TM3 is aligned with the ribosomal exit tunnel and (iii) that at the same relative position nascent chains have been observed inside the SecY channel (Frauenfeld et al., 2011) (Figure 4\u2014figure supplement 1), the most plausible assignment to the density near TM3 appeared to be the TM helix of FOc. To verify this, and to exclude that the density neighboring TM5 corresponds to the nascent chain, we reconstituted single cysteine mutants of YidC either in TM3 (M430C and P431C) or in TM5 (V500C and T503C) with RNCs of a single cysteine mutant of FOc(G23C), and exposed them to disulphide crosslinking. Upon exposure to the oxidator 5,5\u2032-dithiobis-(2-nitrobenzoicacid) (DTNB), only in the TM3 mutants a DTT-sensitive \u223c90 kDa product appeared that reacted with antibodies against the nascent chain (NC-tRNA\u223c30 kDa, Figure 4C) as well as YidC (\u223c60 kDa, Figure 4C). Thus, the adduct represented indeed the inserting FOc TM domain crosslinked to TM3 of YidC. RNCs lacking a cysteine in the nascent chain (Figure 4\u2014figure supplement 2) or YidC mutants with cysteines in TM5 did not yield any crosslinks (Figure 4C). Hence, we conclude that the unaccounted electron density next to TM3 represents the TM of the nascent chain, and that the density neighboring TM5 represents TM1 of YidC (Figure 4D\u2013F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03035/elife-03035-fig4-v2.jpg)\n\n**Figure 4.:** (A) Side view of the \u223c8 \u00c5 resolution cryo-EM based electron density of the RNC:YidC complex, with the small subunit depicted in yellow, the large subunit in gray, P-site tRNA and nascent chain in green, YidC in red and the detergent micelle in blue. (B) As in A, but sliced through the ribosomal exit tunnel. (C) Validation of the active state model by disulphide crosslinking. RNCs carrying the mutant FOc(G23C) were reconstituted with the indicated single cysteine YidC mutants, oxidized, applied to a linear sucrose gradient and harvested from the 70S peak before SDS-PAGE and western blotting. Immunodetection was performed with antibodies raised against the HA-tag (located in the nascent chain inside the ribosomal exit tunnel) and anti-YidC antibodies. YidC, nascent chain-tRNA (NC-tRNA) and the expected crosslink product (NC-tRNA x YidC) are indicated. (D\u2013F) Structural model of YidC during membrane protein insertion, viewed from two sides within the membrane (D and E) and from the cytoplasm (F). The detergent micelle was removed for clarity, the TM helix of FOc is depicted in magenta, and the disulphide crosslink between YidC and FOc with -SS-.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03035/elife-03035-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Left: molecular model of YidC during co-translational translocation of FOc, and the contour of active SecY. Middle: composite model of active YidC with FOc replaced by the hydrophilic part of nascent FtsQ as found in active SecY. Right: molecular model of SecY during co-translational translocation of FtsQ. For clarity, the N-terminal signal anchor of FtsQ was omitted.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03035/elife-03035-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Crosslinking was performed with a cysteine-less FOc RNC as described in the legend to Figure 3C. A poorly reproducible unknown product is indicated with an asterisk.\n\nWe attribute the remaining unaccounted electron density in the periplasmic region to the P1 domain; however, because it is substantially smaller than the crystal structure of P1, we did not include it in our molecular model. Flexibility relative to the conserved membrane region of YidC is the most likely explanation for this finding. We did not observe density for the HPD, in agreement with its flexibility observed in both, the crystal structures of BhYidC2 and the MD simulations (Figure 3C).\n\nIn order to validate our molecular model of co-translationally active YidC, we mutated residues that would be in direct contact with the ribosome (Figure 5A,B) and analyzed their effect on functionality in the in vivo complementation test. Indeed, mutation of residues Y370A and Y377A (contacting ribosomal RNA helix 59) and D488K (contacting ribosomal protein uL23) severely interfere with YidC activity (Figure 5C, Figure 5\u2014figure supplement 1) thereby emphasizing their functional significance. All these mutants were stably expressed, indicating that the lack of complementation was not caused by instability of YidC (Figure 5\u2014figure supplement 2). Given that YidC in general is known to be very tolerant to point mutations (Jiang et al., 2003), this provides further support for the overall correctness of our model of ribosome-bound YidC during membrane protein insertion.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03035/elife-03035-fig5-v2.jpg)\n\n**Figure 5.:** (A and B) Close-up views from within the membrane region highlighting the contact between H59 of the ribosome and the 2/3 loop of YidC (A) and ribosomal protein uL23 and the 4/5 loop of YidC (B). Residues that inactivate YidC upon mutagenesis or deletion are indicated by magenta spheres. (C) In vivo complementation assay of YidC point mutants D488A, D488K, deletion mutant \u0394487-489 and the double mutants Y370A/Y377A and Y370F/Y377F. (D) Periplasmic view of the active ribosome-bound YidC model, with the YidC contour outlined in red. The polypeptide exit tunnel is indicated with an asterisk. (E) Cartoon based comparison of active SecY (left) and active YidC (right) during membrane insertion of FtsQ and FOc, respectively. The ribosome is depicted in gray, the aqueous channel in SecY as well as the hydrophilic environment within YidC are shaded blue, hydrophobic TM domains of the substrates are depicted magenta, hydrophilic parts in green and the P1 domain by a dashed oval.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03035/elife-03035-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** In vivo complementation assay of YidC mutants involved in ribosome binding.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03035/elife-03035-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Western blot of whole FTL10 cells grown on arabinose or glucose, showing the stable expression of inactive YidC mutants that interact with the ribosome.\n\n## Discussion\n\nFinally, it is notable that we observe only a single monomer of YidC bound to the active ribosome. This is in agreement with recent literature showing clearly that both YidC (Herrmann, 2013; Kedrov et al., 2013; Seitl et al., 2014) and the SecY complex (Frauenfeld et al., 2011; Park and Rapoport, 2012; Taufik et al., 2013; Park et al., 2014) can be fully active as monomers. However, the comparison of models for active YidC and active SecY (Figure 5E, Figure 4\u2014figure supplement 1) reveals an important difference between the two proteins that has mechanistic implications. While SecY is known to translocate hydrophilic nascent chains through its central aqueous channel (Cannon et al., 2005; Rapoport, 2007; Driessen and Nouwen, 2008) and insert TM domains through a lateral gate (Van den Berg et al., 2004; Gogala et al., 2014), our model suggests that the YidC substrates are inserted at the protein-lipid interface. Two principal findings of our work suggest how YidC may facilitate this process: (i) it provides a hydrophilic environment within the membrane core for receiving the hydrophilic moieties (termini or loops) of a substrate, and (ii) it reduces the thickness of the lipid bilayer: initial interaction of the hydrophilic moieties of YidC substrates with the hydrophilic environment of YidC would allow for a partial insertion into the membrane, while facilitating exposure of the hydrophobic TM domains to the hydrophobic core of the bilayer. The latter in turn may compensate for the energetic penalty of driving the hydrophilic moieties across the (already thinned) bilayer. Further biochemical and structural studies that capture the earlier stages of this translocation process are eagerly awaited to fully elucidate this mechanism.\n\n## Materials and methods\n\n### Covariation analysis\n\nWe constructed a multiple sequence alignment of YidC excluding the unconserved first transmembrane helix (TM1) and the periplasmic P1 domain. We searched for homologous sequences of E. coli YidC starting from the PFAM seed alignment of family PF02096 (Punta et al., 2012) and using the sensitive homology detection software HHblits (Remmert et al., 2012). First, five iterations of HHblits were run against the clustered Uniprot database with no filtering, to retrieve as many homologous sequences as possible. Then, we post-processed the alignment using HHfilter to generate a non-redundant alignment at 90% sequence identity. This resulted in an alignment containing 2366 sequences aligned across YidC helices TM2-TM6. Using this multiple sequence alignment, we computed direct evolutionary couplings between pairs of YidC residues using the method of Kamisetty et al. (2013).\n\nTo compute probabilities for each possible helix\u2013helix contact, we aggregated the evidence of stronger coupling coefficients over the expected interaction patterns for helix\u2013helix contacts, taking into account the expected periodicity of \u223c3.5 residues per alpha helix turn. We built three non-redundant datasets of mainly-alpha proteins from the CATH database (Sillitoe et al., 2013). For each protein, we slid a square pattern (of size 17 \u00d7 17 residues = 289 cells) over the matrix of coupling strengths. For each pattern position, we used Bayes theorem to calculate the raw probability for a helix\u2013helix interaction, given the 289 coupling strengths. The distributions of coupling strengths for interacting and non-interacting helix residues were fitted on dataset #1 (1118 proteins). We assigned different weights to the pattern cells, depending on their position within the pattern and the direction of the helix\u2013helix interaction (parallel or antiparallel); these weights were optimized on dataset #2 (204 proteins). Finally, we calibrated the resulting raw scores on dataset #3 (85 proteins) to obtain accurate interaction probabilities. For cross-validation purposes, we also performed optimization on dataset #3 and calibration on dataset #2. Optimization on either dataset #2 or dataset #3 results in the same choice of weights for the pattern cells. The final posterior probabilities were obtained as the average of the values calibrated on datasets #2 and #3, weighted by dataset size. The calibration plots for datasets #2 and #3 are shown in Figure 1\u2014figure supplement 1A. The histogram of final posterior probabilities obtained for YidC is shown in Figure 1\u2014figure supplement 1B, which illustrates the specificity of the helix\u2013helix predictions.\n\n### YidC initial model building\n\nThe conserved TM helices of E.coli YidC were positioned according to the covariation based helix\u2013helix contact prediction, and rotated based on their predicted lipid or protein exposure (Lai et al., 2013), resulting in a starting model of the conserved TM core of YidC. Additional information based on direct residue\u2013residue interactions (covariance analysis) and secondary structure predictions by Jpred 3 (Cole et al., 2008) were used as structural restraints in MODELLER (Eswar et al., 2008). From a total of 10 output models that differed mainly in the relative orientation of the loop regions, the model that satisfied the imposed constraints best was used for further studies.\n\n### Molecular dynamics simulation\n\n#### System preparation\n\nAll simulations were performed with the MD software NAMD 2.9 using the CHARMM36 force field for the proteins and lipids (Klauda et al., 2010). The TIP3P model is used to simulate water (Jorgensen et al., 1983). The YidC model was inserted into the membrane, solvated, and ionized using the Membrane Builder tools on CHARMM-GUI (Jo et al., 2008). The lipid composition is chosen to be 3 POPE to 1 POPG, as has been successfully used for modeling bacterial membranes in several past MD simulations (Ash et al., 2004; Mondal et al., 2013). An initial membrane surface of area 110 \u00c5 \u00d7 110 \u00c5 was constructed along the XY plane. The protein lipid-construct was solvated with 25 \u00c5 thick layers of water along the Cartesian Z directions, and ionized to charge neutralization using Monte Carlo sampling of Na+ and Cl\u2212 ions at 0.15 M concentration. The overall system size is 0.15 M. Prior to simulation the system was subjected to 10,000 steps of conjugate gradient energy minimization, followed by 100 ps of thermalization and 25 ns of equilibration. During the first 10 ns of the equilibration stage, the protein was kept fixed, allowing the lipids, ions and water molecules to equilibrate. Subsequent 15 ns of equilibration included the protein as well. We then performed 500 ns of MD simulation at 300 K. The final 100 ns was repeated thrice to examine the statistical significance of the result.\n\n#### Simulation parameters\n\nThe systems were kept at constant temperature using Langevin dynamics for all non-hydrogen atoms with a Langevin damping coefficient of 5 ps\u22121. A constant pressure of 1 atm was maintained using the Nose-Hoover Langevin piston with a period of 100 fs and damping timescale of 50 fs. Simulations were performed with an integration time step of 1 fs where bonded interactions were computed every time step, short-range non-bonded interactions every two time steps, and long range electrostatic interactions every four time steps. A cutoff of 12 \u00c5 was used for van der Waals and short-range electrostatic interactions: a switching function was started at 10 \u00c5 for van der Waals interactions to ensure a smooth cutoff. The simulations were performed under periodic boundary conditions, with full-system, long-range electrostatics calculated by using the PME method with a grid point density of 1/\u00c5. The unit cell was large enough so that adjacent copies of the system did not interact via short-range interactions.\n\n#### Flexibility analysis\n\nThe overall flexibility of the transmembrane helices relative to their average configuration was compared. Positional variance of the helix residues was quantified as a measure of their flexibility. Positional variance was computed by summing the deviation of individual backbone atom position and dividing by the number of backbone atoms in the loop. This measure is slightly different from the usual root mean square fluctuation (RMSF) as contributions from overall displacements of the helices and their motions relative to the rotation/translation and internal motions of the protein are included to probe flexibility.\n\n#### Interaction energy, hydrogen bonds, and membrane thickness analysis\n\nTo further understand the details of the structure and dynamics of the YidC model we performed interaction energy, hydrogen bond, and membrane thinning analysis. These analyses were carried out on the MD trajectory using standard tools available on VMD. In particular, interaction energies were computed for each trajectory frame of the final 100 ns simulation using the NAMD Energy plugin on VMD. The numbers were then time averaged over the entire 100 ns, locally averaged for every residue over a cut-off distance of 10 \u00c5, and plotted on the structure in Figure 3B. Hydrogen bonds are defined solely on the basis of geometric parameters (bond angle: 20\u00b0; bond-length: 3.8 \u00c5) between donors and acceptors. Thickness at a given point on the membrane surface was probed by finding the nearest lipid head group and measuring the minimum distance between the phosphate on that lipid head and one on the opposite leaflet.\n\n### Purification of ribosome nascent chain complexes (RNCs)\n\nRNC constructs encoding residues 1\u201346 of FOc (preceded by an N-terminal His-tag and 3C rhinoprotease cleavage site, and followed by an HA-tag and TnaC stalling sequence) were cloned into a pBAD vector (Invitrogen, Life Technologies, Karlsruhe, Germany) by standard molecular biology techniques, and expressed and purified as described before (Bischoff et al., 2014). Briefly, E.coli KC6 \u0394smpB\u0394ssrA (Seidelt et al., 2009) carrying the plasmid for FOc was grown in LB with 100 \u00b5g/ml ampicilin at 37\u00b0C to an OD600 = 0.5 and expression was induced for 1 hr by adding 0.2% arabinose. Cells were lysed and debris was removed by centrifugation for 20 min at 16.000 rpm in a SS34-rotor (Sorvall). The cleared lysate was spun overnight through a sucrose cushion at 45.000 rpm in a Ti45 rotor (Beckmann), the ribosomal pellet was resuspended for 1 hr at 4\u00b0C and RNCs were purified in batch by affinity purification using Talon (Clontech). After washing the Talon beads with high salt buffer the RNCs were eluted and loaded onto a linear 10%\u201340% sucrose gradient. The 70S peak was collected, RNCs were concentrated by pelleting, resuspended in an appropriate volume of RNC Buffer (20 mM HEPES pH 7.2, 100 mM KOAc, 6 mM MgOAc2, 0.05% (wt/vol) dodecyl maltoside), flash frozen in liquid N2 and stored at \u221280\u00b0C. The complete sequence of the nascent chain is:\n\nMGHHHHHHHHDYDIPTTLEVLFQGPGTMENLNMDLLYMAAAVMMGLAAIGAAIGIGILGGKFLEGAARQPDLIYPYDVPDYAGPNILHISVTSKWFNIDNKIVDHRP.\n\n### Purification of YidC\n\nFor purification and reconstitution studies, E.coli YidC extended with the C-terminus from R. baltica (Seitl et al., 2014) was re-cloned into pET-16 (Novagen) with an N-terminal His-tag followed by a 3C rhinovirus protease site. Expression and purification was performed essentially as described (Lotz et al., 2008). Briefly, E.coli C43(DE3) cells (Miroux and Walker, 1996) harboring the YidC construct were grown at 37\u00b0C to an OD600 = 0.6 and expression was induced by adding 0.5 mM IPTG. YidC was solubilized with Cymal-6 (Anatrace) and purified by affinity chromatography using TALON (Clontech). The N-terminal His-tag of the eluted protein was cleaved off with 3C protease during overnight dialysis at 4\u00b0C, followed by gel filtration chromatography (Superdex 200; GE Healthcare). Fractions of the monodisperse peak were pooled, concentrated to \u223c1 mg/ml in YidC Buffer (20 mM NaPO4 pH 6.8, 100 mM KOAc, 10% glycerol, 0.05% Cymal-6) and directly used for further structural or biochemical assays.\n\n### Disulphide crosslinking\n\nFor disulphide crosslink analysis, FOc(G23C)-RNCs and single cysteine mutants of YidC were purified separately and reconstituted by incubating 100 pmol of RNCs with 500 pmol of freshly purified YidC for 30 min at 37\u00b0C. The endogenous cysteine in YidC at position 423 was replaced by serine. Disulphide crosslinking was induced by adding 1 mM 5,5\u2032-dithiobis-(2-nitrobenzoicacid) (DTNB) for 10 min at 4\u00b0C and quenched by adding 20 mM N-Ethylmaleimide (NEM) for 20 min at 4\u00b0C. Crosslinked RNC-YidC complexes were separated from non-crosslinked YidC using a 10%\u201340% linear sucrose gradient, and the 70S peak was harvested and analyzed by SDS-PAGE followed by western blotting.\n\n### Complementation assay\n\nFor in vivo complementation studies, wildtype E. coli YidC was recloned into pTrc99a (Pharmacia), and mutants were created by standard molecular cloning techniques. E.coli FTL10 cells (Hatzixanthis et al., 2003) harboring pTrc99a plasmids encoding the YidC variants were grown overnight at 37\u00b0C in LB medium supplemented with 100 \u00b5g/ml ampiciline, 50 \u00b5g/ml kanamycin and 0.2% arabinose. YidC depletion was carried out by transferring the cells to LB medium supplemented with 100 \u00b5g/ml ampiciline, 50 \u00b5g/ml kanamycin and 0.2% glucose, followed by and additional incubation for 3 hr at 37\u00b0C. Cell suspensions of all constructs were adjusted to OD600 = 0.1 and either loaded onto SDS-PAGE gels for subsequent Western blotting, or further diluted to OD600 = 10\u22125. Each dilution was spotted on LB agar plates supplemented 100 \u00b5g/ml ampiciline, 50 \u00b5g/ml kanamycin and either 0.2% arabinose or 0.2% glucose, and incubated overnight at 37\u00b0C.\n\n### Electron microscopy and image processing\n\nFor cryo-EM analysis, FOc-RNC:YidC complexes were reconstituted by incubating 10 pmol of RNCs with 100 pmol of freshly purified YidC for 30 min at 37\u00b0C in a final volume of 50 \u00b5l of RNC buffer. Samples were applied to carbon-coated holey grids according to standard methods (Wagenknecht et al., 1988). Micrographs were collected under low-dose conditions on a FEI TITAN KRIOS operating at 200 kV using a 4 k \u00d7 4 k TemCam-F416 CMOS camera and a final pixel size of 1.035 \u00c5 on the object scale.\n\nImage processing was done using the SPIDER software package (Shaikh et al., 2008). The defocus was determined using the TF ED command in SPIDER followed by automated particle picking using Signature (Chen and Grigorieff, 2007). The machine-learning algorithm MAPPOS (Norousi et al., 2013) was used to subtract \u2018false positive\u2019 particles from the data set and initial alignment was performed using an empty 70S ribosome as reference. The complete data set (876376 particles) was sorted using competitive projection matching in SPIDER followed by focused sorting for ligand density (Leidig et al., 2013), and refined to a final resolution of \u223c8.0 \u00c5 (Fourier shell correlation [FSC] cut-off 0.5). The final dataset consisted of 58,960 particles showing electron density for P-site tRNA and ligand density at the tunnel exit. We have deposited our cryo-EM map at the EMDB under accession number 2705, and the model of the transmembrane domains at the PDB under accession number 4utq.\n",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "3bc33689-728d-4b13-8467-fd374e72c51f",
+      "submission_id": "90d3923a-1407-4836-bd77-5b804436ff93",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ramanujan S Hegde, MRC Laboratory of Molecular Biology , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03035.019](https://doi.org/10.7554/eLife.03035.019)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cA structural model of the active ribosome-bound membrane protein insertase YidC\u201d for consideration at eLife. Your article has been favorably evaluated by Randy Schekman (Senior editor) and 2 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThis excellent contribution by Beckmann and co-workers develops a structural model of the active ribosome-bound YidC. They derive a structural model of the YidC monomer using co-variation analysis and molecular dynamics. The Beckmann YidC structural model is very good (with a root mean square deviation between the TM helices of their model of 7.5 Angstroms) when compared to the structure of the Bacillus halodurans YidC2 recently published in Nature. Both the B. h structure and Beckmann model possess a hydrophilic groove within the membrane embedded region that is open to the cytoplasm and lipid bilayer. However, the Beckmann model is less open (which makes sense) because they imposed TM3/TM5 interactions at Pro425-Pro499 and TM3/TM6 interactions at both Cys423-Gln528 and Phe 433-Thr524. It may represent a different conformational state of YidC than seen in the B. h structure, and this could reflect some of the differences in the structures.\n\nThe YidC model was then used to reconstruct the structural features of a translating YidC-ribosome complex with a bound subunit c of ATP synthase (Foc), determined by cryo-electron microscopy. The reconstruction model is quite good. Of the two unknown membrane densities in their model, one was suggested to be TM1 of the E. coli YidC (not present in their model) and the other was the hydrophobic TM segment of Foc. Overall, this work presenting a structural model of the active ribosome-bound FoC YidC complex will have a significant impact within the YidC field and the membrane field in general.\n\nThe main essential point for improvement agreed by both referees is the rigorous assignment of TM1 and the TM segment of Foc in their structure. This is an important part of this paper, and is worth nailing down. The crosslinking experiment as presented is incomplete as there is no suitable negative control (i.e., a cysteine position that does not crosslink to substrate). In short, the authors have two extra unaccounted densities (near helix 3 and near helix 5). At a minimum, the authors should place a cysteine in either helix 3 or helix 5, and directly compare substrate crosslinks. As currently depicted, one cannot evaluate the specificity of the crosslink and therefore the validity of the assignment of the nascent chain helix in their structure.\n",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fa688a13-48de-45fa-abb3-5f5da1b2ceac",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C1",
+      "claim": "The integration of most membrane proteins into the cytoplasmic membrane of bacteria occurs co-translationally.",
+      "claim_type": "EXPLICIT",
+      "source": "The integration of most membrane proteins into the cytoplasmic membrane of bacteria occurs co-translationally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about bacterial membrane protein integration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "42c22eaf-06bd-436f-8528-90638f447478",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C2",
+      "claim": "The universally conserved YidC protein mediates membrane protein integration either individually as a membrane protein insertase, or in concert with the SecY complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The universally conserved YidC protein mediates this process either individually as a membrane protein insertase, or in concert with the SecY complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about YidC function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "35218ae1-f670-45ea-8739-32eda0b5a471",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C3",
+      "claim": "A structural model of YidC was developed based on evolutionary co-variation analysis, lipid-versus-protein-exposure and molecular dynamics simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present a structural model of YidC based on evolutionary co-variation analysis, lipid-versus-protein-exposure and molecular dynamics simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the methods used to create the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "bcd500a2-9621-4d0f-b41d-7698cac04c54",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C4",
+      "claim": "The YidC model suggests a distinctive arrangement of the conserved five transmembrane domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The model suggests a distinctive arrangement of the conserved five transmembrane domains and a helical hairpin between transmembrane segment 2 (TM2) and TM3 on the cytoplasmic membrane surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structural modeling described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "82aea404-aa4a-4f4c-9ef4-f297611cf867",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C5",
+      "claim": "The YidC model includes a helical hairpin between transmembrane segment 2 (TM2) and TM3 on the cytoplasmic membrane surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The model suggests a distinctive arrangement of the conserved five transmembrane domains and a helical hairpin between transmembrane segment 2 (TM2) and TM3 on the cytoplasmic membrane surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structural modeling described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "0ca84de3-104c-4118-a3ed-6fd5f6eee36a",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C6",
+      "claim": "The YidC model was docked into a cryo-electron microscopy reconstruction of a translating YidC-ribosome complex carrying the YidC substrate FOc.",
+      "claim_type": "EXPLICIT",
+      "source": "The model was used for docking into a cryo-electron microscopy reconstruction of a translating YidC-ribosome complex carrying the YidC substrate FOc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the cryo-EM reconstruction and docking procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "d852fc1b-2352-4e54-8b58-bc44c41c29e5",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C7",
+      "claim": "A single copy of YidC interacts with the ribosome at the ribosomal tunnel exit.",
+      "claim_type": "EXPLICIT",
+      "source": "This structure reveals how a single copy of YidC interacts with the ribosome at the ribosomal tunnel exit and identifies a site for membrane protein insertion at the YidC protein-lipid interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the cryo-EM structure and analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "03ecef96-e051-4a2d-8aeb-f3e175cecb54",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C8",
+      "claim": "A site for membrane protein insertion exists at the YidC protein-lipid interface.",
+      "claim_type": "EXPLICIT",
+      "source": "This structure reveals how a single copy of YidC interacts with the ribosome at the ribosomal tunnel exit and identifies a site for membrane protein insertion at the YidC protein-lipid interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the cryo-EM structure and analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "081ef016-1407-4195-9fd5-02a841c50512",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C9",
+      "claim": "High resolution structures are available only for the first periplasmic domain (P1) of Escherichia coli YidC.",
+      "claim_type": "EXPLICIT",
+      "source": "High resolution structures are available only for the first periplasmic domain (P1) of Escherichia coli YidC (Figure 1A; Oliver and Paetzel, 2008; Ravaud et al., 2008), however, this domain is poorly conserved, only present in Gram-negative bacteria and not essential for functionality (Jiang et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "204b1f0c-0fba-4c5b-a69e-c57e9c03022a",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C10",
+      "claim": "The P1 domain of YidC is poorly conserved, only present in Gram-negative bacteria and not essential for functionality.",
+      "claim_type": "EXPLICIT",
+      "source": "High resolution structures are available only for the first periplasmic domain (P1) of Escherichia coli YidC (Figure 1A; Oliver and Paetzel, 2008; Ravaud et al., 2008), however, this domain is poorly conserved, only present in Gram-negative bacteria and not essential for functionality (Jiang et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jiang et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "65d21549-9dd5-45d8-b328-9510f7935af5",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C11",
+      "claim": "The region(s) of YidC mediating the interaction with the ribosome have not been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the region(s) of YidC mediating the interaction with the ribosome have not been identified, and the oligomeric state of YidC during co-translational translocation remains controversial (Kohler et al., 2009; Herrmann, 2013; Kedrov et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge at the time of the study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "4edc0a5c-de36-4239-a86e-f111175add3c",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C12",
+      "claim": "The oligomeric state of YidC during co-translational translocation remains controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the region(s) of YidC mediating the interaction with the ribosome have not been identified, and the oligomeric state of YidC during co-translational translocation remains controversial (Kohler et al., 2009; Herrmann, 2013; Kedrov et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "12cb2930-97ab-470f-bd25-5d05aea9c2c3",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C13",
+      "claim": "FOc is an integral membrane subunit of the ATP synthase complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we set out to determine a molecular model of ribosome-bound YidC during co-translational translocation of the substrate FOc (van der Laan et al., 2004), an integral membrane subunit of the ATP synthase complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to van der Laan et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "d7327d6a-fab6-4e6c-9700-18284d52075c",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C14",
+      "claim": "A multiple sequence alignment of 2366 non-redundant YidC sequences was constructed excluding the unconserved first transmembrane helix (TM1) and the periplasmic P1 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We constructed a multiple sequence alignment of E. coli YidC excluding the nonconserved first transmembrane helix (TM1) and the P1 domain (Figure 1A) and computed direct evolutionary couplings between pairs of YidC residues (Kamisetty et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described in the methods section of the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "48cb1996-17c4-4cc5-9548-9717c734bc88",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C15",
+      "claim": "Direct evolutionary couplings between pairs of YidC residues were computed using the method of Kamisetty et al. (2013).",
+      "claim_type": "EXPLICIT",
+      "source": "We constructed a multiple sequence alignment of E. coli YidC excluding the nonconserved first transmembrane helix (TM1) and the P1 domain (Figure 1A) and computed direct evolutionary couplings between pairs of YidC residues (Kamisetty et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the method used.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "502d6a95-b187-4253-8c4e-326533732410",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C16",
+      "claim": "Seven helix\u2013helix contacts attained probabilities above 57%.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven helix\u2013helix contacts attained probabilities above 57% (Figure 1B\u2013D) while all other possible contacts scored below 15%, demonstrating the specificity of the method (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the covariation analysis and shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "524a055b-0afe-4515-9320-c5557852fc5c",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C17",
+      "claim": "All other possible helix-helix contacts scored below 15% probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven helix\u2013helix contacts attained probabilities above 57% (Figure 1B\u2013D) while all other possible contacts scored below 15%, demonstrating the specificity of the method (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the covariation analysis and shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "ab382d96-e0cc-44d5-9586-6f05ea503e84",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C18",
+      "claim": "The conserved membrane integrated core of YidC forms a helical bundle arranged like the vertices of a pentagon, in the order 4-5-3-2-6 (clockwise) when viewed from the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In the resulting model (Figure 1E,F), the conserved membrane integrated core of YidC forms a helical bundle arranged like the vertices of a pentagon, in the order 4-5-3-2-6 (clockwise) when viewed from the cytoplasm (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the structural model shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "61e962a1-8d91-4203-baaa-b369dc0aa461",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C19",
+      "claim": "All the predicted interactions between TM domains can be explained by monomeric YidC.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, all the predicted interactions between TM domains can be explained by monomeric YidC suggesting that dimer or oligomer formation may not be strictly required for YidC activity (see also below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the covariation analysis and structural modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "b353bcca-cb4a-4e09-b452-465059f8c8d4",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C20",
+      "claim": "Dimer or oligomer formation may not be strictly required for YidC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, all the predicted interactions between TM domains can be explained by monomeric YidC suggesting that dimer or oligomer formation may not be strictly required for YidC activity (see also below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "c3873680-5641-466f-9310-4a2ca37fa63e",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C21",
+      "claim": "Strong helix\u2013helix contacts were predicted within the cytoplasmic loop between TM2 and TM3, which can be explained by the formation of a helical hairpin.",
+      "claim_type": "EXPLICIT",
+      "source": "Outside the membrane region, strong helix\u2013helix contacts were predicted within the cytoplasmic loop between TM2 and TM3, which can be explained the by formation of a helical hairpin (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the covariation analysis and structural modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "3a880b1b-0a3f-4edf-bdae-921407f71ed1",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C22",
+      "claim": "The base of the helical paddle domain (HPD) is structurally constrained by predicted contacts with TM3.",
+      "claim_type": "EXPLICIT",
+      "source": "The base of this 'helical paddle domain' (HPD) is structurally constrained by predicted contacts with TM3, its tip on the other hand is more mobile and appears to interact with lipid headgroups (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the covariation analysis and structural modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "0659981e-5def-43a7-8400-49a8c6952785",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C23",
+      "claim": "The tip of the helical paddle domain is more mobile and appears to interact with lipid headgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "The base of this 'helical paddle domain' (HPD) is structurally constrained by predicted contacts with TM3, its tip on the other hand is more mobile and appears to interact with lipid headgroups (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structural modeling and MD simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "4cb4f4b5-198a-4b40-8acc-19606e3069e2",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C24",
+      "claim": "Two crystal structures of Bacillus halodurans YidC2 (BhYidC2, 34% sequence identity with E. coli YidC) were published while this manuscript was under review.",
+      "claim_type": "EXPLICIT",
+      "source": "While this manuscript was under review, two crystal structures were published of Bacillus halodurans YidC2 (BhYidC2, 34% sequence identity with E. coli YidC) (Kumazaki et al., 2014), providing us with a unique opportunity to directly assess the accuracy of our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kumazaki et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "28deaf4a-c273-4dcd-97cd-8235df0c79cb",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C25",
+      "claim": "The root mean square deviation (RMSD) between the TM helices of the E. coli YidC model and those of BhYidC2 is 7.5 \u00c5 (3WO6) and 7.3 \u00c5 (3WO7).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the root mean square deviation (RMSD) between the TM helices of our model and those of BhYidC2 is 7.5 \u00c5 (3WO6) and 7.3 \u00c5 (3WO7) (Table 1), which is within the resolution limits of our method.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of the model to the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "c419f3d6-b9ac-492e-b806-c842176df9fc",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C26",
+      "claim": "The RMSD between the TM helices of the E. coli YidC model and BhYidC2 is within the resolution limits of the covariation method.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the root mean square deviation (RMSD) between the TM helices of our model and those of BhYidC2 is 7.5 \u00c5 (3WO6) and 7.3 \u00c5 (3WO7) (Table 1), which is within the resolution limits of our method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the model accuracy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "589c65db-760d-4219-a96d-cd7ac58da14d",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C27",
+      "claim": "The global arrangement of TM helices in the E. coli YidC model is the same as in BhYidC2.",
+      "claim_type": "EXPLICIT",
+      "source": "The global arrangement of TM helices is the same as in BhYidC2, yet, their tilt angle relative to the plane of the membrane is slightly different (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of the model to the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "e24ef190-7ae3-4be8-aba1-fb12c0c1e6e6",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C28",
+      "claim": "The tilt angle of TM helices relative to the plane of the membrane is slightly different between the E. coli YidC model and BhYidC2.",
+      "claim_type": "EXPLICIT",
+      "source": "The global arrangement of TM helices is the same as in BhYidC2, yet, their tilt angle relative to the plane of the membrane is slightly different (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of the model to the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "d7f10667-c726-4faf-b35f-5e2d4f19efe7",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C29",
+      "claim": "The tilt angle of the HPD differs between the E. coli YidC model and BhYidC2.",
+      "claim_type": "EXPLICIT",
+      "source": "The tilt angle of the HPD also differs, as well as its side that faces the membrane (Video 1), which may be indicative of a high degree of flexibility of this domain, consistent with its high crystallographic B-factors (Kumazaki et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of the model to the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "f920885d-c5a7-4671-ad3a-96650b4ec38a",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C30",
+      "claim": "The side of the HPD that faces the membrane differs between the E. coli YidC model and BhYidC2.",
+      "claim_type": "EXPLICIT",
+      "source": "The tilt angle of the HPD also differs, as well as its side that faces the membrane (Video 1), which may be indicative of a high degree of flexibility of this domain, consistent with its high crystallographic B-factors (Kumazaki et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of the model to the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "6b99324a-b7be-4c72-bc67-f900dbd3808d",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C31",
+      "claim": "The differences in HPD orientation may be indicative of a high degree of flexibility of this domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The tilt angle of the HPD also differs, as well as its side that faces the membrane (Video 1), which may be indicative of a high degree of flexibility of this domain, consistent with its high crystallographic B-factors (Kumazaki et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural comparison and crystallographic data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "4667deff-d524-46f8-ad4c-ae271e6fa543",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C32",
+      "claim": "The HPD has high crystallographic B-factors in the BhYidC2 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The tilt angle of the HPD also differs, as well as its side that faces the membrane (Video 1), which may be indicative of a high degree of flexibility of this domain, consistent with its high crystallographic B-factors (Kumazaki et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kumazaki et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "02d6c8e3-031e-46a7-a467-e042706eb631",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C33",
+      "claim": "The HPD is not essential for YidC function in E. coli since the deletion of the entire domain is possible without compromising cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the HPD is not essential for YidC function in E. coli since the deletion of the entire domain is possible without compromising cell viability (Jiang et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jiang et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "b2dc526a-9528-42e5-ac5a-e30ee90e189f",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C34",
+      "claim": "In the structure of BhYidC2 a hydrophilic groove is formed on the cytoplasmic side of the TM bundle.",
+      "claim_type": "EXPLICIT",
+      "source": "In the structure of BhYidC2 a hydrophilic groove is formed on the cytoplasmic side of the TM bundle that has been proposed to form a binding site for YidC substrates (Kumazaki et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kumazaki et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "bec21405-c580-40a7-8bb8-eaa44235a163",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C35",
+      "claim": "The hydrophilic groove in BhYidC2 has been proposed to form a binding site for YidC substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "In the structure of BhYidC2 a hydrophilic groove is formed on the cytoplasmic side of the TM bundle that has been proposed to form a binding site for YidC substrates (Kumazaki et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kumazaki et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "d932d08e-ecc4-419b-8370-3fb10d51951f",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C36",
+      "claim": "The opening state of the hydrophilic groove differs between the two BhYidC2 crystal forms, being more open in 3WO6 than in 3WO7.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the opening state of this groove differs between the two crystal forms, that is it is more open in 3WO6 than in 3WO7 (Video 1), largely due to movement of the N-terminal half of TM3 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of the two crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "1d32eaa4-56e3-4707-a95c-e4ade9e2be74",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C37",
+      "claim": "The difference in groove opening between the two BhYidC2 crystal forms is largely due to movement of the N-terminal half of TM3.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the opening state of this groove differs between the two crystal forms, that is it is more open in 3WO6 than in 3WO7 (Video 1), largely due to movement of the N-terminal half of TM3 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of the two crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "702154c0-eeb7-4e35-a20b-f9b701c38080",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C38",
+      "claim": "In the E. coli YidC model, the hydrophilic groove is even more closed than in BhYidC2 3WO7.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model on the other hand, this hydrophilic groove is even more closed than in 3WO7 because we imposed covariation-based constraints between TM3 and TM5 (Pro425-Pro499) and between TM3 and TM6 (Cys423-Gln528 & Phe433-Thr524) (Figure 2; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the structural modeling with covariation constraints.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "ec238d12-9453-401d-ace4-0376fbad9113",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C39",
+      "claim": "Covariation-based constraints were imposed between TM3 and TM5 (Pro425-Pro499) and between TM3 and TM6 (Cys423-Gln528 & Phe433-Thr524) in the E. coli YidC model.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model on the other hand, this hydrophilic groove is even more closed than in 3WO7 because we imposed covariation-based constraints between TM3 and TM5 (Pro425-Pro499) and between TM3 and TM6 (Cys423-Gln528 & Phe433-Thr524) (Figure 2; Video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structural modeling procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "d4427662-b914-4aca-ac45-849d1a294dd8",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C40",
+      "claim": "In BhYidC2 the distances between the C\u03b2 atoms of the three covariation-predicted pairs (Pro425-Pro499, Cys423-Gln528, Phe433-Thr524) are outliers compared to other residue\u2013residue pairs (20.5 \u00c5/20.9 \u00c5/14.9 \u00c5 vs an average of 8.2 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in BhYidC2 the distances between the C\u03b2 atoms of these three pairs are outliers compared to other residue\u2013residue pairs (20.5 \u00c5/20.9 \u00c5/14.9 \u00c5 vs an average of 8.2 \u00c5, Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the crystal structure and covariation predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "bd078037-3e0e-4d9d-87f9-89507f366a01",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C41",
+      "claim": "Movement of TM3 is a genuine feature of YidC.",
+      "claim_type": "INFERENCE",
+      "source": "Thus, given that (i) the position of TM3 differs in the two crystal forms, and (ii) that covariation analysis predicts with high accuracy a closer interaction of TM3 with TM6 and one contact with TM5, we conclude that movement of TM3 is a genuine feature of YidC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the crystal structures and covariation analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "1d0d972f-6baf-44ed-936d-7c83f6d0e67b",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C42",
+      "claim": "Movement of TM3 and the accompanying dynamics of the hydrophilic groove may represent a crucial step in the functional cycle of the YidC insertase.",
+      "claim_type": "EXPLICIT",
+      "source": "This movement and the accompanying dynamics of the hydrophilic groove may represent a crucial step in the functional cycle of the YidC insertase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the structural observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "730f4537-7e59-439e-ba2d-42e9b76bce20",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C43",
+      "claim": "The YidC model was found to be very stable during molecular dynamics simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the model was found to be very stable during the simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the MD simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "735f33b2-495d-4fd4-9bf1-3bc22babdb1d",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C44",
+      "claim": "The five TM helices enable a rigid protein core in YidC.",
+      "claim_type": "EXPLICIT",
+      "source": "While the five TM helices enable a rigid protein core, the polar loop regions tend to swim on the membrane surface (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the MD simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "93b9255b-0439-41bf-a85d-947d9bdf582d",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C45",
+      "claim": "The polar loop regions of YidC tend to swim on the membrane surface.",
+      "claim_type": "EXPLICIT",
+      "source": "While the five TM helices enable a rigid protein core, the polar loop regions tend to swim on the membrane surface (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the MD simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "aea9a1cc-18cd-436b-990d-af32cf5cc7ca",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C46",
+      "claim": "Hydrophobic residues on the exterior of the TM bundle stabilize interactions with the apolar lipid tails.",
+      "claim_type": "EXPLICIT",
+      "source": "An analysis of inter-residue interactions within the TM region (Figure 3B) provides a firm basis to the observed stability of YidC: hydrophobic residues on the exterior of the TM bundle stabilize interactions with the apolar lipid tails.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the MD simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "18871377-7e04-4732-94d8-10e1a9de60df",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C47",
+      "claim": "The YidC core is stabilized both via short and long-range interactions between the five helices.",
+      "claim_type": "EXPLICIT",
+      "source": "The YidC core, in turn, is stabilized both via short and long-range interactions between the five helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the MD simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "ff785edf-a8e9-4be4-8b58-4893dc3369ce",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C48",
+      "claim": "Residues towards the cytoplasmic side of the YidC core are primarily polar or charged and engaged in strong electrostatic or charge\u2013dipole interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues towards the cytoplasmic side of the core are primarily polar or charged and, therefore, engaged in strong electrostatic or charge\u2013dipole interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the MD simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "37095cac-afec-499b-bb3b-721060a66379",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C49",
+      "claim": "Residues on the periplasmic side of the YidC core are primarily aromatic and involved in stacking and other nonpolar dispersion interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, residues on the periplasmic side are primarily aromatic and involved in stacking and other nonpolar dispersion interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the MD simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "208b49ce-ba23-4f47-8e60-3452e9a3406b",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C50",
+      "claim": "YidC mutants T362A (TM2) and Y517A (TM6) completely inactivated YidC when mutated to alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the most stabilizing residues, T362 in TM2 and Y517 in TM6, both of which are located at the same height in the membrane, completely inactivated YidC when mutated to alanine (Figure 3D, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the in vivo complementation assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "3600792f-d290-457c-87e8-fd351ca4d060",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C51",
+      "claim": "T362 and Y517 are located at the same height in the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the most stabilizing residues, T362 in TM2 and Y517 in TM6, both of which are located at the same height in the membrane, completely inactivated YidC when mutated to alanine (Figure 3D, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structural model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "73cecb21-29f1-4c40-82de-4378716bf817",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C52",
+      "claim": "YidC mutants T362A and Y517A were stably expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mutants were stably expressed, indicating that the lack of complementation was not caused by instability of YidC (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Western blot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "6d50d499-d92a-46f4-8672-7b1e558fe0d2",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C53",
+      "claim": "The lack of complementation in T362A and Y517A mutants was not caused by instability of YidC.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mutants were stably expressed, indicating that the lack of complementation was not caused by instability of YidC (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the Western blot data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "807deb8f-980a-44f4-8158-f1b62c239f3d",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C54",
+      "claim": "Several residues close to T362 and Y517 show intermediate activity levels (F433, M471 and F505).",
+      "claim_type": "EXPLICIT",
+      "source": "Several residues close to this pair show intermediate activity levels (F433, M471 and F505), whereas residues further away do not show an effect (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the in vivo complementation assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "f9a1d4a3-62fa-4e85-996b-a520a44af8e9",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C55",
+      "claim": "Residues further away from T362 and Y517 do not show an effect on YidC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Several residues close to this pair show intermediate activity levels (F433, M471 and F505), whereas residues further away do not show an effect (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the in vivo complementation assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "27a925d2-f742-4ff3-b67c-6d10c5c97e58",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C56",
+      "claim": "YidC induces thinning of the lipid bilayer during MD simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that YidC induces thinning of the lipid bilayer during the MD simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the MD simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "c54cc0cb-9455-48d7-97ab-7b3be9ef1f49",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C57",
+      "claim": "A significant thinning of 7\u201310 \u00c5 results from the hydrophobic mismatch between the TM helices and the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant thinning of 7\u201310 \u00c5 results from the hydrophobic mismatch between the TM helices and the membrane (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the MD simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "4f174ca6-d523-442e-b156-0af70dc7fd10",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C58",
+      "claim": "The thinning of the membrane is similar in the upper and lower leaflet.",
+      "claim_type": "EXPLICIT",
+      "source": "The thinning is similar in the upper and lower leaflet, and the thinnest region is in proximity of TM3 and TM5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the MD simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "5ca0ad5a-2ce4-4473-b2f6-96c6582c8c44",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C59",
+      "claim": "The thinnest region of the membrane is in proximity of TM3 and TM5.",
+      "claim_type": "EXPLICIT",
+      "source": "The thinning is similar in the upper and lower leaflet, and the thinnest region is in proximity of TM3 and TM5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the MD simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "34dbe51f-b79a-42ab-921d-cb1706b926be",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C60",
+      "claim": "Membrane inserting YidC substrates have been chemically cross-linked to both TM3 and TM5.",
+      "claim_type": "EXPLICIT",
+      "source": "Since membrane inserting YidC substrates have been chemically cross-linked to both these helices (Klenner et al., 2008; Yu et al., 2008; Klenner and Kuhn, 2012), we argue that thinning of this region in particular may be relevant for the molecular mechanism of YidC-dependent membrane insertion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "f9bea793-c93b-41b5-9e2b-ffe0191a0bdf",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C61",
+      "claim": "Thinning of the region near TM3 and TM5 may be relevant for the molecular mechanism of YidC-dependent membrane insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "Since membrane inserting YidC substrates have been chemically cross-linked to both these helices (Klenner et al., 2008; Yu et al., 2008; Klenner and Kuhn, 2012), we argue that thinning of this region in particular may be relevant for the molecular mechanism of YidC-dependent membrane insertion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the MD simulation and cross-linking data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "169c1ee5-3f88-463a-a5ad-4f14ad46e5e3",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C62",
+      "claim": "A hydrophilic environment exists on the cytoplasmic side of the YidC TM bundle.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the distribution of hydrophilic and hydrophobic residues within YidC revealed the presence of a hydrophilic environment on the cytoplasmic side of the YidC TM bundle (Figure 3F), which continues into the mentioned hydrophobic cluster of aromatic residues towards the periplasmic side.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the MD simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "d0a10a0d-45d9-49a7-9929-24f743674981",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C63",
+      "claim": "The hydrophilic environment on the cytoplasmic side of YidC continues into a hydrophobic cluster of aromatic residues towards the periplasmic side.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the distribution of hydrophilic and hydrophobic residues within YidC revealed the presence of a hydrophilic environment on the cytoplasmic side of the YidC TM bundle (Figure 3F), which continues into the mentioned hydrophobic cluster of aromatic residues towards the periplasmic side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the MD simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "90017cd5-b160-4c60-8763-67ca96ddaa8d",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C64",
+      "claim": "The hydrophilic environment in YidC may receive the polar termini and loops of YidC substrates during the initiation of translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is tempting to speculate that this hydrophilic environment may receive the polar termini and loops of YidC substrates during the initiation of translocation, thus facilitating their transfer across the hydrophobic core of the (thinned) lipid bilayer (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the structural features.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "086e29f5-15a6-4644-b55a-1d7d5d53ec0c",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C65",
+      "claim": "Essentially the same conclusions about YidC mechanism have been drawn on the basis of the BhYidC2 crystal structures and accompanying cross-linking studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, essentially the same conclusions have been drawn on the basis of the BhYidC2 crystal structures and accompanying cross-linking studies (Kumazaki et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kumazaki et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "27b72c48-1b29-4292-a6d1-05952304826c",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C66",
+      "claim": "Purified full length YidC (extended with the C-terminus of R. baltica YidC) was reconstituted with ribosome nascent chains (RNCs) exposing the first TM helix of FOc.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to provide a molecular model of YidC in its active state, we reconstituted purified full length YidC (extended with the C-terminus of R. baltica YidC [Seitl et al., 2014]) with ribosome nascent chains (RNCs) exposing the first TM helix of FOc, and subjected the complex to cryo-EM and single particle analysis to a resolution of \u223c8 \u00c5 (Figure 4A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental procedure described.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "f41ae146-41aa-491c-97be-b09853e26a75",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C67",
+      "claim": "The YidC-RNC complex was subjected to cryo-EM and single particle analysis to a resolution of \u223c8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to provide a molecular model of YidC in its active state, we reconstituted purified full length YidC (extended with the C-terminus of R. baltica YidC [Seitl et al., 2014]) with ribosome nascent chains (RNCs) exposing the first TM helix of FOc, and subjected the complex to cryo-EM and single particle analysis to a resolution of \u223c8 \u00c5 (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the cryo-EM analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "ba8464d7-2de0-4366-b885-f055a528cdcd",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C68",
+      "claim": "YidC binds to the ribosomal exit site.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous structural studies (Kohler et al., 2009; Seitl et al., 2014), YidC binds to the ribosomal exit site, however, the improved resolution now allows for a more detailed interpretation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the cryo-EM structure and supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "d58ae9e1-8eaf-486e-b37b-1509cfe7cf27",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C69",
+      "claim": "The weaker electron density of the detergent micelle was separated from that of YidC.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, we were able to separate the weaker electron density of the detergent micelle from that of YidC (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the cryo-EM analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "83d994ff-c1cf-4629-81e5-871600972dd1",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C70",
+      "claim": "The presence of elongated structural features allowed docking of the YidC model in a distinct orientation (cross correlation coefficient 0.865).",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, the presence of elongated structural features (Figure 4D\u2013F) allowed us to dock our molecular model in a distinct orientation (cross correlation coefficient 0.865).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the cryo-EM analysis and model docking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "3f03b730-77ff-458e-ba74-36bdbd097add",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C71",
+      "claim": "Two prominent densities in the membrane region remained unaccounted for after placement of the YidC-core model, one next to TM3 and one next to TM5.",
+      "claim_type": "EXPLICIT",
+      "source": "Following placement of the YidC-core model, two prominent densities in the membrane region, one next to TM3 and one next to TM5, remained unaccounted for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the cryo-EM analysis and model docking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "ded5414a-cc7b-4337-a4bc-7a9f2af0b96f",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C72",
+      "claim": "YidC substrates are known to crosslink to TM3.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that (i) YidC substrates are known to crosslink to TM3 (Klenner et al., 2008; Yu et al., 2008; Klenner and Kuhn, 2012), and (ii) that the density neighboring TM3 is aligned with the ribosomal exit tunnel and (iii) that at the same relative position nascent chains have been observed inside the SecY channel (Frauenfeld et al., 2011) (Figure 4\u2014figure supplement 1), the most plausible assignment to the density near TM3 appeared to be the TM helix of FOc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "37dc31ea-9332-4172-af54-c0620aa85008",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C73",
+      "claim": "The density neighboring TM3 is aligned with the ribosomal exit tunnel.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that (i) YidC substrates are known to crosslink to TM3 (Klenner et al., 2008; Yu et al., 2008; Klenner and Kuhn, 2012), and (ii) that the density neighboring TM3 is aligned with the ribosomal exit tunnel and (iii) that at the same relative position nascent chains have been observed inside the SecY channel (Frauenfeld et al., 2011) (Figure 4\u2014figure supplement 1), the most plausible assignment to the density near TM3 appeared to be the TM helix of FOc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "a35192c9-4e36-4737-a7f9-0c720f5e0249",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C74",
+      "claim": "At the same relative position as the density near TM3, nascent chains have been observed inside the SecY channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that (i) YidC substrates are known to crosslink to TM3 (Klenner et al., 2008; Yu et al., 2008; Klenner and Kuhn, 2012), and (ii) that the density neighboring TM3 is aligned with the ribosomal exit tunnel and (iii) that at the same relative position nascent chains have been observed inside the SecY channel (Frauenfeld et al., 2011) (Figure 4\u2014figure supplement 1), the most plausible assignment to the density near TM3 appeared to be the TM helix of FOc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Frauenfeld et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "273b32b2-eb25-4d05-9e0e-ff145fe1944a",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C75",
+      "claim": "The most plausible assignment to the density near TM3 is the TM helix of FOc.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that (i) YidC substrates are known to crosslink to TM3 (Klenner et al., 2008; Yu et al., 2008; Klenner and Kuhn, 2012), and (ii) that the density neighboring TM3 is aligned with the ribosomal exit tunnel and (iii) that at the same relative position nascent chains have been observed inside the SecY channel (Frauenfeld et al., 2011) (Figure 4\u2014figure supplement 1), the most plausible assignment to the density near TM3 appeared to be the TM helix of FOc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on multiple lines of evidence.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "ad7c2ea5-86cf-4b89-b17b-1f982f799d96",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C76",
+      "claim": "Single cysteine mutants of YidC in TM3 (M430C and P431C) formed DTT-sensitive crosslinks with FOc(G23C) upon exposure to DTNB.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon exposure to the oxidator 5,5\u2032-dithiobis-(2-nitrobenzoicacid) (DTNB), only in the TM3 mutants a DTT-sensitive \u223c90 kDa product appeared that reacted with antibodies against the nascent chain (NC-tRNA\u223c30 kDa, Figure 4C) as well as YidC (\u223c60 kDa, Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the disulphide crosslinking experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "ce4d60c1-3607-47b7-85f5-ea31558e48a7",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C77",
+      "claim": "The crosslink product represented the inserting FOc TM domain crosslinked to TM3 of YidC.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the adduct represented indeed the inserting FOc TM domain crosslinked to TM3 of YidC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the crosslinking experiment.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "511b2bee-7f0e-4df9-9ba9-e3bcc2df103d",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C78",
+      "claim": "YidC mutants with cysteines in TM5 (V500C and T503C) did not yield any crosslinks with FOc(G23C).",
+      "claim_type": "EXPLICIT",
+      "source": "RNCs lacking a cysteine in the nascent chain (Figure 4\u2014figure supplement 2) or YidC mutants with cysteines in TM5 did not yield any crosslinks (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the disulphide crosslinking experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "90182ba7-f755-4966-8625-fbffcd05c981",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C79",
+      "claim": "The unaccounted electron density next to TM3 represents the TM of the nascent chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we conclude that the unaccounted electron density next to TM3 represents the TM of the nascent chain, and that the density neighboring TM5 represents TM1 of YidC (Figure 4D\u2013F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the crosslinking experiment and cryo-EM structure.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "66165651-1986-4ea0-a659-ec3c36a9a948",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C80",
+      "claim": "The density neighboring TM5 represents TM1 of YidC.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we conclude that the unaccounted electron density next to TM3 represents the TM of the nascent chain, and that the density neighboring TM5 represents TM1 of YidC (Figure 4D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the crosslinking experiment and cryo-EM structure.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "f5494f44-90b7-4e1e-816a-6104b8bfe299",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C81",
+      "claim": "The remaining unaccounted electron density in the periplasmic region is attributed to the P1 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We attribute the remaining unaccounted electron density in the periplasmic region to the P1 domain; however, because it is substantially smaller than the crystal structure of P1, we did not include it in our molecular model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cryo-EM structure.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "79db077c-2703-4a63-b945-5a6ad7583973",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C82",
+      "claim": "The P1 domain electron density is substantially smaller than the crystal structure of P1.",
+      "claim_type": "EXPLICIT",
+      "source": "We attribute the remaining unaccounted electron density in the periplasmic region to the P1 domain; however, because it is substantially smaller than the crystal structure of P1, we did not include it in our molecular model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "ffa25a52-5128-4598-9301-76eb89c270f7",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C83",
+      "claim": "Flexibility relative to the conserved membrane region of YidC is the most likely explanation for the smaller P1 domain density.",
+      "claim_type": "EXPLICIT",
+      "source": "Flexibility relative to the conserved membrane region of YidC is the most likely explanation for this finding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cryo-EM structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "6254e251-cadb-4251-8fb3-5be92ef63561",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C84",
+      "claim": "No density was observed for the HPD in the cryo-EM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe density for the HPD, in agreement with its flexibility observed in both, the crystal structures of BhYidC2 and the MD simulations (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "4b2d9696-dacc-4fa4-8e6e-fb1b5ea6366d",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C85",
+      "claim": "The absence of HPD density is in agreement with its flexibility observed in the crystal structures of BhYidC2 and the MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe density for the HPD, in agreement with its flexibility observed in both, the crystal structures of BhYidC2 and the MD simulations (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cryo-EM structure and previous observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "cc5fe2dc-137b-4771-a0c4-cc3f71e49a8f",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C86",
+      "claim": "Mutation of residues Y370A and Y377A (contacting ribosomal RNA helix 59) severely interfere with YidC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, mutation of residues Y370A and Y377A (contacting ribosomal RNA helix 59) and D488K (contacting ribosomal protein uL23) severely interfere with YidC activity (Figure 5C, Figure 5\u2014figure supplement 1) thereby emphasizing their functional significance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the in vivo complementation assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "73c7907e-3496-4908-9a87-a30fccbb76cc",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C87",
+      "claim": "Mutation of residue D488K (contacting ribosomal protein uL23) severely interferes with YidC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, mutation of residues Y370A and Y377A (contacting ribosomal RNA helix 59) and D488K (contacting ribosomal protein uL23) severely interfere with YidC activity (Figure 5C, Figure 5\u2014figure supplement 1) thereby emphasizing their functional significance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the in vivo complementation assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "db65c65f-4120-4b90-a671-503c77cc5ba2",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C88",
+      "claim": "Y370 and Y377 contact ribosomal RNA helix 59.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, mutation of residues Y370A and Y377A (contacting ribosomal RNA helix 59) and D488K (contacting ribosomal protein uL23) severely interfere with YidC activity (Figure 5C, Figure 5\u2014figure supplement 1) thereby emphasizing their functional significance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structural model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "f1888a12-79e9-4145-a9b6-0424b2c28618",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C89",
+      "claim": "D488 contacts ribosomal protein uL23.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, mutation of residues Y370A and Y377A (contacting ribosomal RNA helix 59) and D488K (contacting ribosomal protein uL23) severely interfere with YidC activity (Figure 5C, Figure 5\u2014figure supplement 1) thereby emphasizing their functional significance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structural model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "a1122601-ed9c-439f-90c9-1f13e3f00534",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C90",
+      "claim": "All YidC mutants that severely interfere with activity (Y370A, Y377A, D488K) were stably expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "All these mutants were stably expressed, indicating that the lack of complementation was not caused by instability of YidC (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Western blot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "fa42f733-d6cc-4aac-b83c-3ad71f5ea39c",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C91",
+      "claim": "The lack of complementation in Y370A, Y377A, and D488K mutants was not caused by instability of YidC.",
+      "claim_type": "EXPLICIT",
+      "source": "All these mutants were stably expressed, indicating that the lack of complementation was not caused by instability of YidC (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the Western blot data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "55b8a6b6-47aa-4f3e-a42c-06a8be01f374",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C92",
+      "claim": "YidC in general is known to be very tolerant to point mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that YidC in general is known to be very tolerant to point mutations (Jiang et al., 2003), this provides further support for the overall correctness of our model of ribosome-bound YidC during membrane protein insertion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jiang et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "5b584a66-241c-4adc-bf57-114e09c5aa9e",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C93",
+      "claim": "The functional effects of mutations at ribosome-contacting residues provide further support for the overall correctness of the model of ribosome-bound YidC during membrane protein insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that YidC in general is known to be very tolerant to point mutations (Jiang et al., 2003), this provides further support for the overall correctness of our model of ribosome-bound YidC during membrane protein insertion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mutagenesis data and known tolerance to mutations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "1b9606cf-f42c-4256-89ba-4b8706f4728e",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C94",
+      "claim": "Only a single monomer of YidC is bound to the active ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is notable that we observe only a single monomer of YidC bound to the active ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "fb66ad28-974b-4f61-8508-6bd70af8b37d",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C95",
+      "claim": "Both YidC and the SecY complex can be fully active as monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in agreement with recent literature showing clearly that both YidC (Herrmann, 2013; Kedrov et al., 2013; Seitl et al., 2014) and the SecY complex (Frauenfeld et al., 2011; Park and Rapoport, 2012; Taufik et al., 2013; Park et al., 2014) can be fully active as monomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "847e4c95-00d1-41f6-a006-ef2b4e11bbe9",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C96",
+      "claim": "SecY is known to translocate hydrophilic nascent chains through its central aqueous channel.",
+      "claim_type": "EXPLICIT",
+      "source": "While SecY is known to translocate hydrophilic nascent chains through its central aqueous channel (Cannon et al., 2005; Rapoport, 2007; Driessen and Nouwen, 2008) and insert TM domains through a lateral gate (Van den Berg et al., 2004; Gogala et al., 2014), our model suggests that the YidC substrates are inserted at the protein-lipid interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "9d383a66-7131-48c0-9f0e-cba89b816a0c",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C97",
+      "claim": "SecY inserts TM domains through a lateral gate.",
+      "claim_type": "EXPLICIT",
+      "source": "While SecY is known to translocate hydrophilic nascent chains through its central aqueous channel (Cannon et al., 2005; Rapoport, 2007; Driessen and Nouwen, 2008) and insert TM domains through a lateral gate (Van den Berg et al., 2004; Gogala et al., 2014), our model suggests that the YidC substrates are inserted at the protein-lipid interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "ec6777c8-d0c6-4090-8488-570154e0a3e3",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C98",
+      "claim": "The YidC model suggests that YidC substrates are inserted at the protein-lipid interface.",
+      "claim_type": "EXPLICIT",
+      "source": "While SecY is known to translocate hydrophilic nascent chains through its central aqueous channel (Cannon et al., 2005; Rapoport, 2007; Driessen and Nouwen, 2008) and insert TM domains through a lateral gate (Van den Berg et al., 2004; Gogala et al., 2014), our model suggests that the YidC substrates are inserted at the protein-lipid interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structural model and analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "7b1a38b8-d18a-4416-95ef-7cf54cf38a6c",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C99",
+      "claim": "YidC provides a hydrophilic environment within the membrane core for receiving the hydrophilic moieties (termini or loops) of a substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Two principal findings of our work suggest how YidC may facilitate this process: (i) it provides a hydrophilic environment within the membrane core for receiving the hydrophilic moieties (termini or loops) of a substrate, and (ii) it reduces the thickness of the lipid bilayer: initial interaction of the hydrophilic moieties of YidC substrates with the hydrophilic environment of YidC would allow for a partial insertion into the membrane, while facilitating exposure of the hydrophobic TM domains to the hydrophobic core of the bilayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structural model and MD simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "bef06d49-c61e-4734-939f-cc600f525cd2",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C100",
+      "claim": "YidC reduces the thickness of the lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "Two principal findings of our work suggest how YidC may facilitate this process: (i) it provides a hydrophilic environment within the membrane core for receiving the hydrophilic moieties (termini or loops) of a substrate, and (ii) it reduces the thickness of the lipid bilayer: initial interaction of the hydrophilic moieties of YidC substrates with the hydrophilic environment of YidC would allow for a partial insertion into the membrane, while facilitating exposure of the hydrophobic TM domains to the hydrophobic core of the bilayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "1c4f651a-6378-4cd4-a1a2-b3f27db246b3",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C101",
+      "claim": "Initial interaction of the hydrophilic moieties of YidC substrates with the hydrophilic environment of YidC would allow for a partial insertion into the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Two principal findings of our work suggest how YidC may facilitate this process: (i) it provides a hydrophilic environment within the membrane core for receiving the hydrophilic moieties (termini or loops) of a substrate, and (ii) it reduces the thickness of the lipid bilayer: initial interaction of the hydrophilic moieties of YidC substrates with the hydrophilic environment of YidC would allow for a partial insertion into the membrane, while facilitating exposure of the hydrophobic TM domains to the hydrophobic core of the bilayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic speculation based on the structural features.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "8e318002-fbde-4ac2-beb1-a507a292e47e",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C102",
+      "claim": "Partial insertion of substrates into the membrane would facilitate exposure of the hydrophobic TM domains to the hydrophobic core of the bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "Two principal findings of our work suggest how YidC may facilitate this process: (i) it provides a hydrophilic environment within the membrane core for receiving the hydrophilic moieties (termini or loops) of a substrate, and (ii) it reduces the thickness of the lipid bilayer: initial interaction of the hydrophilic moieties of YidC substrates with the hydrophilic environment of YidC would allow for a partial insertion into the membrane, while facilitating exposure of the hydrophobic TM domains to the hydrophobic core of the bilayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic speculation based on the structural features.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "72fa0260-cfc1-4a49-8c01-cb84effdf3ac",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "claim_id": "C103",
+      "claim": "Exposure of hydrophobic TM domains to the bilayer may compensate for the energetic penalty of driving the hydrophilic moieties across the (already thinned) bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter in turn may compensate for the energetic penalty of driving the hydrophilic moieties across the (already thinned) bilayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic speculation based on the structural features.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2e911af4-93c8-4aed-ad4a-04522f38aa29",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A structural model of E. coli YidC was developed using evolutionary covariation analysis of 2366 sequences, predicting seven helix-helix contacts with >57% probability and revealing a pentagonal arrangement of TM helices (4-5-3-2-6) plus a helical paddle domain (HPD) between TM2 and TM3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 describe a rigorous covariation analysis with clear specificity (C16-C17), and the resulting model (C18) is consistent with the predicted contacts. The HPD structure (C21-C23) is supported by covariation predictions. The methodology is well-documented and the predictions are specific and testable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "b970652b-6898-450d-8b8b-72e9f16fe6cb",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The E. coli YidC model was validated against subsequently published BhYidC2 crystal structures (34% sequence identity), showing RMSD of 7.3-7.5 \u00c5 for TM helices, which is within the resolution limits of the covariation method. The global TM arrangement matches, though helix tilt angles and HPD orientation differ, suggesting flexibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 provide quantitative validation against independent crystal structures. The RMSD values (C25) and assessment that this is within method resolution (C26) are reasonable. The observed differences in HPD orientation (C29-C31) are appropriately interpreted as flexibility, supported by crystallographic B-factors (C32).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "212db45c-c3b2-47c6-aeeb-23c6fa3dd33a",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The E. coli YidC model shows a more closed hydrophilic groove than BhYidC2 crystal structures due to covariation-predicted TM3-TM5 and TM3-TM6 contacts. These predicted residue pairs are outliers (14.9-20.9 \u00c5 vs. 8.2 \u00c5 average) in the BhYidC2 structures, and TM3 position differs between the two crystal forms, indicating that TM3 movement is a genuine feature of YidC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 document structural differences between crystal forms. Claims C39-C40 provide quantitative evidence that covariation predictions are violated in the crystal structures. The conclusion (C41) that TM3 movement is genuine is well-supported by convergent evidence from both crystal structures and covariation analysis. The mechanistic speculation (C42) is appropriately tentative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "f3ec5190-b4d1-4080-9eec-5e387e6406c2",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations (500 ns) show that the YidC model is stable, with a rigid TM core stabilized by hydrophobic interactions with lipids and inter-helix contacts. Cytoplasmic-side residues engage in electrostatic interactions while periplasmic-side residues show aromatic stacking interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C49 describe MD simulation results with appropriate detail about stability and interaction patterns. The 500 ns simulation length is substantial. The analysis of interaction types (hydrophobic, electrostatic, aromatic) is standard and well-supported by the data presented in Figure 3B.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "8cfd916d-3dda-497e-aebb-b5f0317acfb9",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mutagenesis of residues identified by MD simulations as structurally important (T362A in TM2 and Y517A in TM6, located at the same membrane height) completely inactivated YidC in vivo, while nearby residues showed intermediate effects and distant residues had no effect. Both mutants were stably expressed, ruling out protein instability as the cause.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 provide functional validation of the structural model through systematic mutagenesis. The complementation assay (C50, C54-C55) shows a clear spatial pattern of effects. Western blot data (C52) appropriately controls for protein stability (C53). This provides strong experimental support for the model's functional relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "16dd2965-1d3e-4af1-8740-c82cb1602ec7",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MD simulations reveal that YidC induces significant membrane thinning (7-10 \u00c5) due to hydrophobic mismatch, with the thinnest region near TM3 and TM5. This region is where YidC substrates have been shown to crosslink, suggesting membrane thinning may be mechanistically relevant for insertion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 describe a clear MD simulation result with quantitative measurements. The connection to substrate crosslinking data (C60) from prior studies strengthens the mechanistic inference (C61). The speculation is appropriately qualified and based on convergent evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "1b0246d6-5187-4a1b-b799-e3c2d8ba83e4",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MD simulations reveal a hydrophilic environment on the cytoplasmic side of the YidC TM bundle that transitions to a hydrophobic aromatic cluster toward the periplasmic side, potentially serving to receive polar substrate regions during translocation initiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 describe structural features observed in MD simulations and shown in Figure 3F. The mechanistic speculation (C64) is appropriately tentative ('tempting to speculate') and consistent with the structural observations. This is supported by similar conclusions from BhYidC2 studies (C65).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "82e39311-5c82-464e-bd83-06190ba3a6c5",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cryo-EM analysis of YidC-RNC complexes (with FOc substrate) at ~8 \u00c5 resolution shows YidC binding at the ribosomal exit site. The detergent micelle was separated from YidC density, and elongated structural features allowed distinct docking of the YidC model with cross-correlation coefficient 0.865.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C70 describe the cryo-EM structure determination with appropriate technical detail. The ~8 \u00c5 resolution (C67) is reasonable for this type of complex. The cross-correlation coefficient of 0.865 (C70) indicates good model-map agreement. The ability to separate micelle from protein density (C69) demonstrates data quality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "37cd2e4f-851e-4e3f-8998-49bd2bc6dfb0",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Two unaccounted densities in the cryo-EM map were assigned as the FOc TM helix (near TM3) and YidC TM1 (near TM5) based on: alignment with the ribosomal exit tunnel, prior crosslinking data, and comparison to SecY structures. Disulfide crosslinking experiments confirmed that FOc crosslinks to YidC TM3 (M430C, P431C) but not TM5 (V500C, T503C).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75 describe the density assignment logic based on multiple lines of evidence. The disulfide crosslinking experiments (C76-C78) provide direct experimental validation of the assignment. The negative control with TM5 mutants (C78) strengthens the conclusion. The convergent evidence from cryo-EM, prior crosslinking studies, and new experiments strongly supports the assignments (C79-C80).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "c8b363c0-55ff-4ce4-bdaf-8061721473b2",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The P1 domain shows weak, smaller-than-expected density in the cryo-EM structure, attributed to flexibility. The HPD shows no density, consistent with its flexibility observed in both BhYidC2 crystal structures and MD simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 appropriately interpret weak P1 density as flexibility. Claims C84-C85 note the absence of HPD density and correctly connect this to prior observations of flexibility from crystal structures (C32) and MD simulations (C43-C45). The interpretation is reasonable given the ~8 \u00c5 resolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "c397febf-5886-4f3a-a818-8acc2ba3e2fd",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mutations of ribosome-contacting residues (Y370A, Y377A contacting rRNA helix 59; D488K contacting uL23) severely impair YidC activity in vivo. All mutants were stably expressed, ruling out instability. Given YidC's general tolerance to mutations, these functional effects validate the ribosome-bound model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C89 identify specific ribosome contacts and their functional importance through mutagenesis. Western blot controls (C90-C91) rule out stability issues. The argument (C92-C93) that functional effects in a mutation-tolerant protein validate the model is sound and strengthens confidence in the structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "cf096b1f-ee03-4995-b550-fb53453a63da",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Only a single YidC monomer is observed bound to the active ribosome, consistent with recent literature showing both YidC and SecY can be fully active as monomers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 is a direct observation from the cryo-EM structure. Claim C95 provides literature support for monomeric activity. This addresses the controversy mentioned in C12 about YidC oligomeric state and is well-supported by both the structural data and cited literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "cf2d128b-d303-4592-bfae-87625c254cbc",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Unlike SecY, which translocates hydrophilic chains through a central channel and inserts TM domains via a lateral gate, the YidC model suggests substrates are inserted at the protein-lipid interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C97 accurately describe established SecY mechanisms with appropriate citations. Claim C98 presents a mechanistic model for YidC based on the structural data. The contrast with SecY is well-founded and the inference about the protein-lipid interface is supported by the structural observations (C7-C8, C62-C63).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "44889fe7-e2c9-45ed-9e0f-3b47c30ec3f4",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "YidC facilitates membrane protein insertion by: (i) providing a hydrophilic environment within the membrane core for substrate hydrophilic regions, and (ii) reducing bilayer thickness. Initial hydrophilic interactions enable partial membrane insertion while exposing hydrophobic TM domains to the bilayer core, potentially compensating for the energetic cost of driving hydrophilic regions across the thinned bilayer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99-C100 are well-supported by MD simulations (C56-C64). However, claims C101-C103 are explicitly speculative mechanistic proposals ('would allow', 'may compensate') without direct experimental validation. While the model is plausible and consistent with structural observations, the proposed mechanism requires additional experimental validation (e.g., substrate insertion intermediates, energetic measurements). The authors appropriately acknowledge this need for future work in the Discussion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "ca77a734-bf31-4b5a-9d9a-139b1e349e8c",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background knowledge: Most bacterial membrane proteins integrate co-translationally via the universally conserved YidC protein, either alone or with the SecY complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 represent established background knowledge appropriately cited in the introduction. These provide context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "829c9a87-b4e0-46e4-83a5-c7c57e967708",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior to this study, only the P1 domain structure was available (poorly conserved, non-essential), ribosome-binding regions were unidentified, and YidC oligomeric state during translocation was controversial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 accurately describe the state of knowledge prior to this study with appropriate citations. Claim C13 identifies FOc as the substrate used. These establish the knowledge gaps addressed by the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "7a434d99-cf2c-40ae-9b88-abf56bec25a7",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The HPD is not essential for YidC function in E. coli as its deletion does not compromise cell viability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 is supported by citation to Jiang et al., 2003. This prior finding is relevant for interpreting the HPD flexibility observed in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    },
+    {
+      "id": "1ebb0bd8-f14e-4ed7-b77f-cb9ab579ad37",
+      "content_id": "f4033c24-b35a-492d-b4ba-a0d745f27245",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Similar mechanistic conclusions about YidC have been drawn from BhYidC2 crystal structures and crosslinking studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 appropriately acknowledges convergent conclusions from independent work (Kumazaki et al., 2014), strengthening confidence in the mechanistic model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:02:09.220327Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "35218ae1-f670-45ea-8739-32eda0b5a471",
+      "result_id": "2e911af4-93c8-4aed-ad4a-04522f38aa29"
+    },
+    {
+      "claim_id": "d7327d6a-fab6-4e6c-9700-18284d52075c",
+      "result_id": "2e911af4-93c8-4aed-ad4a-04522f38aa29"
+    },
+    {
+      "claim_id": "48cb1996-17c4-4cc5-9548-9717c734bc88",
+      "result_id": "2e911af4-93c8-4aed-ad4a-04522f38aa29"
+    },
+    {
+      "claim_id": "502d6a95-b187-4253-8c4e-326533732410",
+      "result_id": "2e911af4-93c8-4aed-ad4a-04522f38aa29"
+    },
+    {
+      "claim_id": "524a055b-0afe-4515-9320-c5557852fc5c",
+      "result_id": "2e911af4-93c8-4aed-ad4a-04522f38aa29"
+    },
+    {
+      "claim_id": "ab382d96-e0cc-44d5-9586-6f05ea503e84",
+      "result_id": "2e911af4-93c8-4aed-ad4a-04522f38aa29"
+    },
+    {
+      "claim_id": "61e962a1-8d91-4203-baaa-b369dc0aa461",
+      "result_id": "2e911af4-93c8-4aed-ad4a-04522f38aa29"
+    },
+    {
+      "claim_id": "c3873680-5641-466f-9310-4a2ca37fa63e",
+      "result_id": "2e911af4-93c8-4aed-ad4a-04522f38aa29"
+    },
+    {
+      "claim_id": "3a880b1b-0a3f-4edf-bdae-921407f71ed1",
+      "result_id": "2e911af4-93c8-4aed-ad4a-04522f38aa29"
+    },
+    {
+      "claim_id": "0659981e-5def-43a7-8400-49a8c6952785",
+      "result_id": "2e911af4-93c8-4aed-ad4a-04522f38aa29"
+    },
+    {
+      "claim_id": "4cb4f4b5-198a-4b40-8acc-19606e3069e2",
+      "result_id": "b970652b-6898-450d-8b8b-72e9f16fe6cb"
+    },
+    {
+      "claim_id": "28deaf4a-c273-4dcd-97cd-8235df0c79cb",
+      "result_id": "b970652b-6898-450d-8b8b-72e9f16fe6cb"
+    },
+    {
+      "claim_id": "c419f3d6-b9ac-492e-b806-c842176df9fc",
+      "result_id": "b970652b-6898-450d-8b8b-72e9f16fe6cb"
+    },
+    {
+      "claim_id": "589c65db-760d-4219-a96d-cd7ac58da14d",
+      "result_id": "b970652b-6898-450d-8b8b-72e9f16fe6cb"
+    },
+    {
+      "claim_id": "e24ef190-7ae3-4be8-aba1-fb12c0c1e6e6",
+      "result_id": "b970652b-6898-450d-8b8b-72e9f16fe6cb"
+    },
+    {
+      "claim_id": "d7f10667-c726-4faf-b35f-5e2d4f19efe7",
+      "result_id": "b970652b-6898-450d-8b8b-72e9f16fe6cb"
+    },
+    {
+      "claim_id": "f920885d-c5a7-4671-ad3a-96650b4ec38a",
+      "result_id": "b970652b-6898-450d-8b8b-72e9f16fe6cb"
+    },
+    {
+      "claim_id": "6b99324a-b7be-4c72-bc67-f900dbd3808d",
+      "result_id": "b970652b-6898-450d-8b8b-72e9f16fe6cb"
+    },
+    {
+      "claim_id": "4667deff-d524-46f8-ad4c-ae271e6fa543",
+      "result_id": "b970652b-6898-450d-8b8b-72e9f16fe6cb"
+    },
+    {
+      "claim_id": "b2dc526a-9528-42e5-ac5a-e30ee90e189f",
+      "result_id": "212db45c-c3b2-47c6-aeeb-23c6fa3dd33a"
+    },
+    {
+      "claim_id": "bec21405-c580-40a7-8bb8-eaa44235a163",
+      "result_id": "212db45c-c3b2-47c6-aeeb-23c6fa3dd33a"
+    },
+    {
+      "claim_id": "d932d08e-ecc4-419b-8370-3fb10d51951f",
+      "result_id": "212db45c-c3b2-47c6-aeeb-23c6fa3dd33a"
+    },
+    {
+      "claim_id": "1d32eaa4-56e3-4707-a95c-e4ade9e2be74",
+      "result_id": "212db45c-c3b2-47c6-aeeb-23c6fa3dd33a"
+    },
+    {
+      "claim_id": "702154c0-eeb7-4e35-a20b-f9b701c38080",
+      "result_id": "212db45c-c3b2-47c6-aeeb-23c6fa3dd33a"
+    },
+    {
+      "claim_id": "ec238d12-9453-401d-ace4-0376fbad9113",
+      "result_id": "212db45c-c3b2-47c6-aeeb-23c6fa3dd33a"
+    },
+    {
+      "claim_id": "d4427662-b914-4aca-ac45-849d1a294dd8",
+      "result_id": "212db45c-c3b2-47c6-aeeb-23c6fa3dd33a"
+    },
+    {
+      "claim_id": "bd078037-3e0e-4d9d-87f9-89507f366a01",
+      "result_id": "212db45c-c3b2-47c6-aeeb-23c6fa3dd33a"
+    },
+    {
+      "claim_id": "1d0d972f-6baf-44ed-936d-7c83f6d0e67b",
+      "result_id": "212db45c-c3b2-47c6-aeeb-23c6fa3dd33a"
+    },
+    {
+      "claim_id": "730f4537-7e59-439e-ba2d-42e9b76bce20",
+      "result_id": "f3ec5190-b4d1-4080-9eec-5e387e6406c2"
+    },
+    {
+      "claim_id": "735f33b2-495d-4fd4-9bf1-3bc22babdb1d",
+      "result_id": "f3ec5190-b4d1-4080-9eec-5e387e6406c2"
+    },
+    {
+      "claim_id": "93b9255b-0439-41bf-a85d-947d9bdf582d",
+      "result_id": "f3ec5190-b4d1-4080-9eec-5e387e6406c2"
+    },
+    {
+      "claim_id": "aea9a1cc-18cd-436b-990d-af32cf5cc7ca",
+      "result_id": "f3ec5190-b4d1-4080-9eec-5e387e6406c2"
+    },
+    {
+      "claim_id": "18871377-7e04-4732-94d8-10e1a9de60df",
+      "result_id": "f3ec5190-b4d1-4080-9eec-5e387e6406c2"
+    },
+    {
+      "claim_id": "ff785edf-a8e9-4be4-8b58-4893dc3369ce",
+      "result_id": "f3ec5190-b4d1-4080-9eec-5e387e6406c2"
+    },
+    {
+      "claim_id": "37095cac-afec-499b-bb3b-721060a66379",
+      "result_id": "f3ec5190-b4d1-4080-9eec-5e387e6406c2"
+    },
+    {
+      "claim_id": "208b49ce-ba23-4f47-8e60-3452e9a3406b",
+      "result_id": "8cfd916d-3dda-497e-aebb-b5f0317acfb9"
+    },
+    {
+      "claim_id": "3600792f-d290-457c-87e8-fd351ca4d060",
+      "result_id": "8cfd916d-3dda-497e-aebb-b5f0317acfb9"
+    },
+    {
+      "claim_id": "73cecb21-29f1-4c40-82de-4378716bf817",
+      "result_id": "8cfd916d-3dda-497e-aebb-b5f0317acfb9"
+    },
+    {
+      "claim_id": "6d50d499-d92a-46f4-8672-7b1e558fe0d2",
+      "result_id": "8cfd916d-3dda-497e-aebb-b5f0317acfb9"
+    },
+    {
+      "claim_id": "807deb8f-980a-44f4-8158-f1b62c239f3d",
+      "result_id": "8cfd916d-3dda-497e-aebb-b5f0317acfb9"
+    },
+    {
+      "claim_id": "f9a1d4a3-62fa-4e85-996b-a520a44af8e9",
+      "result_id": "8cfd916d-3dda-497e-aebb-b5f0317acfb9"
+    },
+    {
+      "claim_id": "27a925d2-f742-4ff3-b67c-6d10c5c97e58",
+      "result_id": "16dd2965-1d3e-4af1-8740-c82cb1602ec7"
+    },
+    {
+      "claim_id": "c54cc0cb-9455-48d7-97ab-7b3be9ef1f49",
+      "result_id": "16dd2965-1d3e-4af1-8740-c82cb1602ec7"
+    },
+    {
+      "claim_id": "4f174ca6-d523-442e-b156-0af70dc7fd10",
+      "result_id": "16dd2965-1d3e-4af1-8740-c82cb1602ec7"
+    },
+    {
+      "claim_id": "5ca0ad5a-2ce4-4473-b2f6-96c6582c8c44",
+      "result_id": "16dd2965-1d3e-4af1-8740-c82cb1602ec7"
+    },
+    {
+      "claim_id": "34dbe51f-b79a-42ab-921d-cb1706b926be",
+      "result_id": "16dd2965-1d3e-4af1-8740-c82cb1602ec7"
+    },
+    {
+      "claim_id": "f9bea793-c93b-41b5-9e2b-ffe0191a0bdf",
+      "result_id": "16dd2965-1d3e-4af1-8740-c82cb1602ec7"
+    },
+    {
+      "claim_id": "169c1ee5-3f88-463a-a5ad-4f14ad46e5e3",
+      "result_id": "1b0246d6-5187-4a1b-b799-e3c2d8ba83e4"
+    },
+    {
+      "claim_id": "d0a10a0d-45d9-49a7-9929-24f743674981",
+      "result_id": "1b0246d6-5187-4a1b-b799-e3c2d8ba83e4"
+    },
+    {
+      "claim_id": "90017cd5-b160-4c60-8763-67ca96ddaa8d",
+      "result_id": "1b0246d6-5187-4a1b-b799-e3c2d8ba83e4"
+    },
+    {
+      "claim_id": "27b72c48-1b29-4292-a6d1-05952304826c",
+      "result_id": "82e39311-5c82-464e-bd83-06190ba3a6c5"
+    },
+    {
+      "claim_id": "f41ae146-41aa-491c-97be-b09853e26a75",
+      "result_id": "82e39311-5c82-464e-bd83-06190ba3a6c5"
+    },
+    {
+      "claim_id": "ba8464d7-2de0-4366-b885-f055a528cdcd",
+      "result_id": "82e39311-5c82-464e-bd83-06190ba3a6c5"
+    },
+    {
+      "claim_id": "d58ae9e1-8eaf-486e-b37b-1509cfe7cf27",
+      "result_id": "82e39311-5c82-464e-bd83-06190ba3a6c5"
+    },
+    {
+      "claim_id": "83d994ff-c1cf-4629-81e5-871600972dd1",
+      "result_id": "82e39311-5c82-464e-bd83-06190ba3a6c5"
+    },
+    {
+      "claim_id": "3f03b730-77ff-458e-ba74-36bdbd097add",
+      "result_id": "37cd2e4f-851e-4e3f-8998-49bd2bc6dfb0"
+    },
+    {
+      "claim_id": "ded5414a-cc7b-4337-a4bc-7a9f2af0b96f",
+      "result_id": "37cd2e4f-851e-4e3f-8998-49bd2bc6dfb0"
+    },
+    {
+      "claim_id": "37dc31ea-9332-4172-af54-c0620aa85008",
+      "result_id": "37cd2e4f-851e-4e3f-8998-49bd2bc6dfb0"
+    },
+    {
+      "claim_id": "a35192c9-4e36-4737-a7f9-0c720f5e0249",
+      "result_id": "37cd2e4f-851e-4e3f-8998-49bd2bc6dfb0"
+    },
+    {
+      "claim_id": "273b32b2-eb25-4d05-9e0e-ff145fe1944a",
+      "result_id": "37cd2e4f-851e-4e3f-8998-49bd2bc6dfb0"
+    },
+    {
+      "claim_id": "ad7c2ea5-86cf-4b89-b17b-1f982f799d96",
+      "result_id": "37cd2e4f-851e-4e3f-8998-49bd2bc6dfb0"
+    },
+    {
+      "claim_id": "ce4d60c1-3607-47b7-85f5-ea31558e48a7",
+      "result_id": "37cd2e4f-851e-4e3f-8998-49bd2bc6dfb0"
+    },
+    {
+      "claim_id": "511b2bee-7f0e-4df9-9ba9-e3bcc2df103d",
+      "result_id": "37cd2e4f-851e-4e3f-8998-49bd2bc6dfb0"
+    },
+    {
+      "claim_id": "90182ba7-f755-4966-8625-fbffcd05c981",
+      "result_id": "37cd2e4f-851e-4e3f-8998-49bd2bc6dfb0"
+    },
+    {
+      "claim_id": "66165651-1986-4ea0-a659-ec3c36a9a948",
+      "result_id": "37cd2e4f-851e-4e3f-8998-49bd2bc6dfb0"
+    },
+    {
+      "claim_id": "f5494f44-90b7-4e1e-816a-6104b8bfe299",
+      "result_id": "c8b363c0-55ff-4ce4-bdaf-8061721473b2"
+    },
+    {
+      "claim_id": "79db077c-2703-4a63-b945-5a6ad7583973",
+      "result_id": "c8b363c0-55ff-4ce4-bdaf-8061721473b2"
+    },
+    {
+      "claim_id": "ffa25a52-5128-4598-9301-76eb89c270f7",
+      "result_id": "c8b363c0-55ff-4ce4-bdaf-8061721473b2"
+    },
+    {
+      "claim_id": "6254e251-cadb-4251-8fb3-5be92ef63561",
+      "result_id": "c8b363c0-55ff-4ce4-bdaf-8061721473b2"
+    },
+    {
+      "claim_id": "4b2d9696-dacc-4fa4-8e6e-fb1b5ea6366d",
+      "result_id": "c8b363c0-55ff-4ce4-bdaf-8061721473b2"
+    },
+    {
+      "claim_id": "cc5fe2dc-137b-4771-a0c4-cc3f71e49a8f",
+      "result_id": "c397febf-5886-4f3a-a818-8acc2ba3e2fd"
+    },
+    {
+      "claim_id": "73c7907e-3496-4908-9a87-a30fccbb76cc",
+      "result_id": "c397febf-5886-4f3a-a818-8acc2ba3e2fd"
+    },
+    {
+      "claim_id": "db65c65f-4120-4b90-a671-503c77cc5ba2",
+      "result_id": "c397febf-5886-4f3a-a818-8acc2ba3e2fd"
+    },
+    {
+      "claim_id": "f1888a12-79e9-4145-a9b6-0424b2c28618",
+      "result_id": "c397febf-5886-4f3a-a818-8acc2ba3e2fd"
+    },
+    {
+      "claim_id": "a1122601-ed9c-439f-90c9-1f13e3f00534",
+      "result_id": "c397febf-5886-4f3a-a818-8acc2ba3e2fd"
+    },
+    {
+      "claim_id": "fa42f733-d6cc-4aac-b83c-3ad71f5ea39c",
+      "result_id": "c397febf-5886-4f3a-a818-8acc2ba3e2fd"
+    },
+    {
+      "claim_id": "55b8a6b6-47aa-4f3e-a42c-06a8be01f374",
+      "result_id": "c397febf-5886-4f3a-a818-8acc2ba3e2fd"
+    },
+    {
+      "claim_id": "5b584a66-241c-4adc-bf57-114e09c5aa9e",
+      "result_id": "c397febf-5886-4f3a-a818-8acc2ba3e2fd"
+    },
+    {
+      "claim_id": "1b9606cf-f42c-4256-89ba-4b8706f4728e",
+      "result_id": "cf096b1f-ee03-4995-b550-fb53453a63da"
+    },
+    {
+      "claim_id": "fb66ad28-974b-4f61-8508-6bd70af8b37d",
+      "result_id": "cf096b1f-ee03-4995-b550-fb53453a63da"
+    },
+    {
+      "claim_id": "847e4c95-00d1-41f6-a006-ef2b4e11bbe9",
+      "result_id": "cf2d128b-d303-4592-bfae-87625c254cbc"
+    },
+    {
+      "claim_id": "9d383a66-7131-48c0-9f0e-cba89b816a0c",
+      "result_id": "cf2d128b-d303-4592-bfae-87625c254cbc"
+    },
+    {
+      "claim_id": "ec6777c8-d0c6-4090-8488-570154e0a3e3",
+      "result_id": "cf2d128b-d303-4592-bfae-87625c254cbc"
+    },
+    {
+      "claim_id": "7b1a38b8-d18a-4416-95ef-7cf54cf38a6c",
+      "result_id": "44889fe7-e2c9-45ed-9e0f-3b47c30ec3f4"
+    },
+    {
+      "claim_id": "bef06d49-c61e-4734-939f-cc600f525cd2",
+      "result_id": "44889fe7-e2c9-45ed-9e0f-3b47c30ec3f4"
+    },
+    {
+      "claim_id": "1c4f651a-6378-4cd4-a1a2-b3f27db246b3",
+      "result_id": "44889fe7-e2c9-45ed-9e0f-3b47c30ec3f4"
+    },
+    {
+      "claim_id": "8e318002-fbde-4ac2-beb1-a507a292e47e",
+      "result_id": "44889fe7-e2c9-45ed-9e0f-3b47c30ec3f4"
+    },
+    {
+      "claim_id": "72fa0260-cfc1-4a49-8c01-cb84effdf3ac",
+      "result_id": "44889fe7-e2c9-45ed-9e0f-3b47c30ec3f4"
+    },
+    {
+      "claim_id": "fa688a13-48de-45fa-abb3-5f5da1b2ceac",
+      "result_id": "ca77a734-bf31-4b5a-9d9a-139b1e349e8c"
+    },
+    {
+      "claim_id": "42c22eaf-06bd-436f-8528-90638f447478",
+      "result_id": "ca77a734-bf31-4b5a-9d9a-139b1e349e8c"
+    },
+    {
+      "claim_id": "081ef016-1407-4195-9fd5-02a841c50512",
+      "result_id": "829c9a87-b4e0-46e4-83a5-c7c57e967708"
+    },
+    {
+      "claim_id": "204b1f0c-0fba-4c5b-a69e-c57e9c03022a",
+      "result_id": "829c9a87-b4e0-46e4-83a5-c7c57e967708"
+    },
+    {
+      "claim_id": "65d21549-9dd5-45d8-b328-9510f7935af5",
+      "result_id": "829c9a87-b4e0-46e4-83a5-c7c57e967708"
+    },
+    {
+      "claim_id": "4edc0a5c-de36-4239-a86e-f111175add3c",
+      "result_id": "829c9a87-b4e0-46e4-83a5-c7c57e967708"
+    },
+    {
+      "claim_id": "12cb2930-97ab-470f-bd25-5d05aea9c2c3",
+      "result_id": "829c9a87-b4e0-46e4-83a5-c7c57e967708"
+    },
+    {
+      "claim_id": "02d6c8e3-031e-46a7-a467-e042706eb631",
+      "result_id": "7a434d99-cf2c-40ae-9b88-abf56bec25a7"
+    },
+    {
+      "claim_id": "086e29f5-15a6-4644-b55a-1d7d5d53ec0c",
+      "result_id": "1ebb0bd8-f14e-4ed7-b77f-cb9ab579ad37"
+    }
+  ],
+  "comparisons": []
+}

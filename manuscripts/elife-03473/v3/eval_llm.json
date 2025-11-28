@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C81",
+      "C92"
+    ],
+    "result": "Tsr2 is a conserved nuclear protein required for cytoplasmic processing of 20S pre-rRNA to mature 18S rRNA. Tsr2 depletion causes severe growth defects, cytoplasmic accumulation of 20S pre-rRNA, and formation of 80S-like particles that fail to process 20S pre-rRNA, without impairing nuclear export of pre-40S subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 provide convergent evidence from multiple experimental approaches (Western blots, microscopy, FISH, polysome profiling, Northern blots) showing consistent phenotypes upon Tsr2 depletion. The use of functional tagged proteins (C26-C27) and complementation with human Tsr2 (C72) strengthen the conclusions. However, the mechanism linking Tsr2 depletion to 20S processing defects remains indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C2",
+      "C44"
+    ],
+    "result": "Tsr2 directly binds the ribosomal protein eS26 but does not stably associate with pre-ribosomal particles. Tsr2-TAP co-purifies stoichiometric amounts of eS26, and the interaction is confirmed by yeast two-hybrid and in vitro binding assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent methods (TAP-MS, Y2H, in vitro binding) consistently demonstrate Tsr2-eS26 interaction (C33-C35). The absence of Tsr2 from pre-ribosomal particles (C32, C44) is well-documented by sedimentation and TAP experiments. The stoichiometric co-purification (C33) suggests a specific, high-affinity interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "eS26 is essential for yeast viability and required for cytoplasmic processing of 20S pre-rRNA. eS26 depletion phenocopies Tsr2 depletion: cells accumulate 20S pre-rRNA in the cytoplasm, form 80S-like particles, and show reduced 40S subunit levels without impairing nuclear export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The parallel phenotypes between Tsr2 and eS26 depletion (C29-C31 vs C39-C41) strongly support a functional relationship. The use of conditional mutants and multiple readouts (FISH, polysome profiling, Northern blots) provides robust evidence. The essential nature of eS26 (C37) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C82"
+    ],
+    "result": "eS26 is recruited to the earliest pre-ribosomal particle, the 90S, and remains associated throughout the 40S maturation pathway. eS26-GFP accumulates in the nucleus when pre-40S export is blocked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combination of biochemical (Western, SRM-MS on TAP purifications, C42) and cell biological (microscopy in export mutant, C43) approaches provides strong evidence for early eS26 recruitment. The SRM-MS data adds quantitative rigor. However, the precise timing of eS26 incorporation during 90S assembly remains uncertain, as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C83"
+    ],
+    "result": "eS26 is imported into the nucleus primarily by the importins Kap123 and Kap104. eS26 binds these importins in vitro, and nuclear uptake of GFP-eS26 is reduced in kap123\u0394 and kap104\u0394 mutants. Importins do not bind the Tsr2:eS26 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "In vitro binding assays (C45-C46) are complemented by in vivo localization studies (C47) showing consistent results. The use of GFP-eS26 as a reporter is well-validated (functional binding to importins and Tsr2). The observation that importins don't bind Tsr2:eS26 (C46) is critical for the model. However, the GFP-eS26 construct doesn't rescue eS26 depletion, which could complicate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C84"
+    ],
+    "result": "Kap123 targets Tsr2 to the nucleus. Tsr2-3xGFP mislocalizes to the cytoplasm in kap123\u0394 but not in other importin mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the localization data (C48) clearly shows Kap123-dependent nuclear localization of Tsr2, the lack of direct Tsr2-Kap123 interaction in vitro (C46) raises questions about the mechanism. The authors suggest post-translational modification or a 'piggy-back' mechanism, but these remain speculative without additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C3",
+      "C85",
+      "C89"
+    ],
+    "result": "Tsr2 dissociates importin:eS26 complexes via an atypical RanGTP-independent mechanism. RanGTP inefficiently releases eS26 from Kap123 and partially from Pse1, but Tsr2 completely removes eS26 from all three importins (Kap123, Pse1, Kap104) within 1 minute and forms a stable complex with released eS26.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic dissociation assays (C49-C54) provide compelling quantitative evidence for Tsr2's superior efficiency over RanGTP. The specificity is demonstrated by control experiments with other importin:cargo pairs (Pse1:Slx9). The stable Tsr2:eS26 complex formation after release (C54) supports the escort model. The mechanism is unprecedented and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C4",
+      "C86",
+      "C90"
+    ],
+    "result": "Tsr2 shields eS26 from proteolysis and aggregation and promotes its safe transfer to the 90S pre-ribosome. In Tsr2-depleted cells, eS26 protein levels are strongly reduced and eS26 fails to efficiently co-enrich with 90S particles. In vitro, Tsr2 suppresses aggregation of recombinant eS26.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support Tsr2's protective function: reduced eS26 levels upon Tsr2 depletion (C56-C57), failed recruitment to 90S (C55), and direct demonstration of aggregation prevention in vitro (C58-C59). The aggregation assay provides quantitative dose-response data. The time-course experiment (C57) strengthens the proteolysis claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C87",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "DBA-linked eS26 mutants (D33N and C77W) show distinct molecular defects. The C77W mutant is impaired in importin binding and shows severe growth defects, while D33N binds importins normally but shows partial growth rescue. Both mutants accumulate 20S pre-rRNA and have reduced protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of DBA mutants (C63-C70) is thorough, combining growth assays, protein level measurements, FISH, and binding studies. The differential behavior of the two mutants provides mechanistic insight. However, the speculation about TSR2 as a DBA hotspot (C99) is not supported by patient data and remains highly speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "eS26 clamps the 3'-end of mature 18S rRNA at the Nob1 cleavage site. Pre-40S subunits lacking eS26 escape nuclear proofreading, are exported to the cytoplasm, recruit Nob1, form 80S-like particles, but fail to process 20S pre-rRNA, suggesting a cytoplasmic quality control checkpoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural context (C73) combined with functional data (C74-C75) supports the checkpoint model. The observation that eS26-depleted pre-40S subunits are exported but fail to mature (C38-C41) is consistent across multiple experiments. However, the checkpoint model (C76) is somewhat speculative and would benefit from direct mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C104"
+    ],
+    "result": "Other ribosomal proteins (uL14, uS14, eS31a, eS8a) bound to importins are not efficiently released by RanGTP, suggesting they may also require specific escortins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data for yeast r-proteins (C78) directly demonstrates RanGTP-resistant binding to Kap123. The citation for uL14/importin 7 (C77, C104) provides precedent. However, the suggestion that these require escortins is speculative without direct evidence of escort proteins for these r-proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors propose that Tsr2 represents the first identified member of a new class of proteins termed 'escortins' that link nuclear import machinery to assembly pathways. An escortin network is envisaged to connect import and ribosome assembly for multiple r-proteins and potentially other macromolecular complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While Tsr2 clearly functions as described (linking import to assembly), the broader escortin network concept (C103, C107, C108) is highly speculative. The proposal of a new protein class (C102) based on a single example is premature. The hypothesis is reasonable but requires identification of additional escortins to be validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C71",
+      "C16"
+    ],
+    "result": "Ribosome assembly requires massive nucleocytoplasmic transport: a growing yeast cell manufactures ~200,000 ribosomes and imports ~14 million r-proteins per generation, accounting for the major proportion of nucleocytoplasmic transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These quantitative claims (C1, C71) are supported by citations to established literature (C16). The calculations are straightforward (200,000 ribosomes \u00d7 79 r-proteins \u2248 14 million). These provide important context for the study's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C79",
+      "C80"
+    ],
+    "result": "Background claims about ribosome structure, assembly pathway, r-protein properties, and import mechanisms establish the context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts from the literature, appropriately cited. They provide necessary background but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Human Tsr2 can rescue the severe growth defect of yeast Tsr2-depleted strains, suggesting evolutionary conservation of Tsr2 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cross-species complementation experiment (C72) is a strong indicator of functional conservation. This is clearly demonstrated in Figure 1\u2014figure supplement 1C.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C91"
+    ],
+    "result": "The proposed model suggests that newly synthesized eS26 is transported by importins, extracted by Tsr2 in a RanGTP-independent manner, protected from degradation, and delivered to the 90S. In the absence of Tsr2, RanGTP can inefficiently release eS26, but without immediate Tsr2 binding, eS26 is degraded, explaining why Tsr2-deficient cells are viable but severely growth-impaired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative model (C88, C91) is well-supported by the collective experimental evidence. The explanation for Tsr2 mutant viability (C91-C92) is logical and consistent with the data, though somewhat speculative regarding the exact fate of RanGTP-released eS26.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Many macromolecular complexes require nuclear import of individual subunits prior to assembly, suggesting potential broader relevance of escort mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a general statement (C106) that provides context for the potential broader significance of the escortin concept, though it remains speculative without specific examples.",
+    "result_type": "MINOR"
+  }
+]

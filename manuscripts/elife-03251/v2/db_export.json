@@ -1,0 +1,1908 @@
+{
+  "submission": {
+    "id": "63a519cb-8832-4750-901c-2485df5ddca5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T21:27:37.496933Z",
+    "updated_at": "2025-11-28T21:27:37.496933Z"
+  },
+  "content": [
+    {
+      "id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "submission_id": "63a519cb-8832-4750-901c-2485df5ddca5",
+      "content_type": "manuscript",
+      "content_text": "# A distinct tethering step is vital for vacuole membrane fusion\n\n## Authors\n\n- Michael Zick<sup>1</sup> \u2020\n- William T Wickner<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biochemistry Geisel School of Medicine at Dartmouth Hanover United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPast experiments with reconstituted proteoliposomes, employing assays that infer membrane fusion from fluorescent lipid dequenching, have suggested that vacuolar SNAREs alone suffice to catalyze membrane fusion in vitro. While we could replicate these results, we detected very little fusion with the more rigorous assay of lumenal compartment mixing. Exploring the discrepancies between lipid-dequenching and content-mixing assays, we surprisingly found that the disposition of the fluorescent lipids with respect to SNAREs had a striking effect. Without other proteins, the association of SNAREs in trans causes lipid dequenching that cannot be ascribed to fusion or hemifusion. Tethering of the SNARE-bearing proteoliposomes was required for efficient lumenal compartment mixing. While the physiological HOPS tethering complex caused a few-fold increase of trans-SNARE association, the rate of content mixing increased more than 100-fold. Thus tethering has a role in promoting membrane fusion that extends beyond simply increasing the amount of total trans-SNARE complex.\n\n## Introduction\n\nA hallmark of eukaryotic cells is their internal organization by distinct, highly specialized, membrane-enclosed compartments. Vesicular traffic functionally connects these individual compartments while preserving their integrity. The constant vectorial exchange between organelles is ensured by a complex machinery that facilitates the formation of vesicles with selective cargo, vesicle movement, specific tethering of each vesicle at its correct target membrane, and fusion of the vesicle and organelle membranes. Selective tethering and fusion are sequential events, but it remains unclear how tightly they are coupled. Tethering is commonly performed by specific proteins, often in large multi-subunit complexes that bind Rab family GTPases (Stenmark, 2009; Yu and Hughson, 2010). Fusion is mediated by soluble N-ethylmaleimide-sensitive attachment protein receptor (SNARE) proteins (Jahn and Scheller, 2006) and Sec1/Munc18 (SM) proteins (Rizo and Sudhof, 2012).\n\nWe study membrane fusion with the vacuoles (lysosomes) of Saccharomyces cerevisiae (Wickner, 2010). The vacuole is a large organelle that continuously undergoes fission and homotypic fusion with other vacuoles. At steady state, wild-type strains of yeast have just a few large vacuoles, but mutations which block vacuole fusion allow unimpeded fission, resulting in cells with numerous small vacuoles. This phenotype allowed the identification of the genes encoding vacuole fusion proteins (Wada et al., 1992). Vacuoles are readily isolable (Bankaitis et al., 1986), and a simple colorimetric assay of their fusion (Haas et al., 1994) permitted definition of the consecutive stages of fusion and the catalysts of each stage (Ostrowicz et al., 2008).\n\nVacuole tethering requires the Rab family GTPase Ypt7p and the heterohexameric Rab effector complex HOPS (homotypic vacuole fusion and protein sorting), which is comprised of Vps11p, Vps16p, Vps18p, Vps33p, Vps39p, and Vps41p (Seals et al., 2000; Wurmser et al., 2000). Two of these subunits, Vps39p and Vps41p, have direct affinity for Ypt7p, suggesting that one HOPS complex could tether two vacuoles, each bearing Ypt7p (Brett et al., 2008; Ostrowicz et al., 2010). Fusion of tethered membranes requires vacuolar SNAREs. Each vacuole has four SNAREs that are required for homotypic fusion: the R-SNARE Nyv1p, the Qa-SNARE Vam3p, the Qb-SNARE Vti1p, and the Qc-SNARE Vam7p (Nichols et al., 1997; Ungermann et al., 1999). Vam7p has the unusual property of lacking a hydrophobic membrane anchor while having an N-terminal membrane targeting domain with affinity for phosphatidylinositol 3-phosphate, HOPS, and acidic lipid (Cheever et al., 2001; Lee et al., 2006; Stroupe et al., 2006; Karunakaran and Wickner, 2013). Vacuolar cis-SNARE complexes are disassembled by Sec17p and Sec18p in an ATP-dependent manner, allowing the SNAREs to reassemble into trans-complexes, which are essential for fusion (Haas and Wickner, 1996; Mayer et al., 1996). HOPS fulfills several functions: Rab-dependent tethering (Hickey and Wickner, 2010), catalysis of the assembly of Vam7p into trans-SNARE complexes (Zick and Wickner, 2013), and protecting trans-SNARE complexes from Sec17p/Sec18p-mediated disassembly (Xu et al., 2010).\n\nThe reconstitution of vacuolar fusion in vitro has provided an important complementary approach for examining the individual steps of membrane fusion. In an early study, vacuole detergent extracts were reconstituted into proteoliposomes that could fuse with the purified organelle. Both the SNARE complex and vacuolar Rab GTPase Ypt7p were shown to be essential components of such detergent extracts (Sato and Wickner, 1998). Shortly thereafter, it was demonstrated that proteoliposomes bearing the vacuolar R-SNARE and two fluorescent lipids that exhibit fluorescence quenching, NBD-PE and rhodamine-PE, will interact with non-fluorescent proteoliposomes bearing the three Q-SNAREs to give fluorescence dequenching (Fukuda et al., 2000). This finding has since been confirmed in several additional studies (Mima et al., 2008; Izawa et al., 2012; Furukawa and Mima, 2014). A very recent study (Furukawa and Mima, 2014) has shown that vacuolar SNAREs are apparently unique among the yeast SNAREs, in that the purified SNAREs of the other yeast organelles will not mediate the dequenching of fluorescent lipids on proteoliposomes without additional proteins or tethering factors. In striking contrast, when fusion was assayed by the mixing of lumenally entrapped proteins while they remain inaccessible to an external competitor (Zucchi and Zick, 2011), very little fusion was seen without a tethering agent (Zick and Wickner, 2013). Thus, there are apparently contradictory reports as to whether SNAREs alone can efficiently mediate each stage of the fusion process.\n\nWe now report that vacuolar SNAREs alone will only support membrane fusion with an extremely low efficiency. Strikingly, fluorescent lipid dequenching can apparently occur due to trans-SNARE interactions that do not necessarily go on to fusion, emphasizing the pivotal importance of content mixing experiments in membrane fusion studies. A tethering/docking step is strictly required for rapid fusion, whether by the main physiological tethering system of Ypt7p and HOPS or by a vacuole-specific tethering mechanism mediated by the interaction of Vam7p's PX domain and PI(3)P in trans.\n\n## Results\n\nDuring biological membrane fusion, the barrier between the cytosol and the contents of the vesicle and target organelles remains intact while the lipids of two apposed bilayers rearrange to form one continuous membrane and the lumenal contents mix. Two principal types of assays have been employed to study this process in reconstituted systems, one based on the mixing of the bilayer lipids, the other based on the mixing of the vesicles' lumenal contents (Figure 1A). Lipid dequenching (Figure 1A, part 1) has been the most commonly used assay for membrane fusion. In this assay (Struck et al., 1981), one set of proteoliposomes bears two fluorescent lipids while the other has none. The two fluorophores are subject to fluorescence resonance energy transfer (FRET), so that the fluorescence emission of the \u2018donor\u2019 fluorophore is quenched due to its close proximity to the \u2018acceptor\u2019 fluorophore. FRET efficiency varies with the 6th power of the average distance between fluorophores (F\u00f6rster, 1948); thus, fusion to unlabeled proteoliposomes, causing a twofold dilution of fluorescent lipids and thereby an increased average distance between fluorophores, results in a remarkable loss of quenching, and the ensuing increase in donor fluorescence is taken as a measure of fusion. In a modified version of this assay, donor and acceptor fluorophores start out on separate proteoliposome populations, and are brought into close contact when apposed bilayers fuse and their lipids mix (Figure 1A, part 2). The surrogate for fusion in this case is the decrease in fluorescence intensity of the donor fluorophore (due to quenching by the acceptor fluorophore via FRET). The quenching assay primarily reports the initial round of events, while the signal for the dequenching assay keeps increasing with consecutive rounds (Figure 1\u2014figure supplement 2). However, hemifusion (a possible intermediate in which only the outer leaflets of apposed bilayers join) and lysis (disruption of the lipid bilayer with a loss of lumenal integrity) and ensuing re-annealing of bilayer fragments could also lead to lipid mixing which would be detected by these assays. Therefore, alternative assays that measure the mixing of lumenal contents in the continuous presence of an external competitor (Figure 1A, part 3), a strategy that has commonly been used to study the fusion of isolated organelles, are important as well.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig1-v2.jpg)\n\n**Figure 1.:** (A) Assays used to study membrane fusion in vitro and possible outcomes. (B) Description of proteoliposomes as used in the following figures. (C\u2013E) Two populations of 4SNARE-RPLs (with 1.5 mol% Marina-Blue-phosphatidylethanolamine [PE] and NBD-PE containing biotinylated R-phycoerythrin, or with no fluorescent lipids containing Cy5-labeled streptavidin; 250 \u00b5M lipid each) were incubated at 27\u00b0C with combinations of Sec17p, Sec18p, and HOPS, and assayed for 10 min for: lipid dequenching (C), lumenal content mixing protected from 5 \u00b5M external streptavidin (D), and mixing of lumenal content markers in the absence of external streptavidin, thus measuring both fusion and lysis (E). (F\u2013H) Incubations were as in (C\u2013E), but with RPLs bearing either the R-SNARE Nyv1p or the 3Q-SNAREs Vam3p, Vti1p, and Vam7p. Final concentrations of proteins were: Sec17p (600 nM), Sec18p (200 nM), and HOPS (100 nM). The mean and standard deviations of three experiments are shown.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Mixed micellar solutions of DLPC and \u03b2-octylglucoside, containing the fluorescently labeled lipids Marina-Blue-phosphatidylethanolamine (PE) (0.2 mol%) and NBD-PE (1.5 mol%), were mixed with unlabeled mixed micellar solutions prior to liposome formation. To simulate 0, 1, 2, 3, 4, or 5 rounds of fusion, 1 part of labeled lipid solution was mixed with 0, 1, 2, 3, 4, or 5 parts of unlabeled lipid solution. After liposome formation by dialysis, the fluorescence intensity of these liposomes (250 \u00b5M lipid) was determined in the presence or absence of detergent (0.1% [wt/vol] Thesit). The intensity measured in the absence of detergent is expressed as percentage of the signal intensity measured in the presence of detergent. (B) As described in (A), but 1 part of Marina-Blue-PE (0.2 mol%) mixed micellar solution was mixed with 0\u20135 parts of NBD-PE (3 mol%) mixed micellar solution prior to liposome formation.\n\nWe employ a reconstituted fusion assay (Zucchi and Zick, 2011) that allows us to measure both lipid and content mixing simultaneously. Proteoliposomes (Figure 1B) are prepared by dialysis of mixed micellar solutions of detergent, lipids which mimic the reported vacuolar composition (Zinser and Daum, 1995; Schneiter et al., 1999), two reporter fluorescent lipids (Marina-Blue-phosphatidylethanolamine (MB-PE) and/or NBD-PE), and pure recombinant proteins: the four vacuolar SNAREs, the prenylated Rab Ypt7p, and either of two lumenal markers (streptavidin derivatized with the fluorophore Cy5 [Sa-Cy5] or biotinylated R-phycoerythrin [PhycoE]). These proteoliposomes are mixed and incubated with HOPS, Sec17p, Sec18p, Mg2+:ATP, and non-fluorescent streptavidin (to block any extra-lumenal association between biotinylated phycoerythrin and Cy5-streptavidin that might have been released by lysis). To measure both fusion and lysis, assays were also performed without added non-fluorescent streptavidin. In assays in which proteoliposomes bear each of the four SNAREs, as on the organelle itself, dequenching of the lipidic fluorophores (Figure 1C), lumenal compartment mixing which is continuously protected from external streptavidin (Figure 1D), and content mixing plus lysis (Figure 1E) required HOPS, Sec17p, and Sec18p (for this and subsequent figures, the extent of fusion after 10 min was used to estimate fusion activity; representative examples of kinetic data are shown as figure supplements).\n\nPrevious studies of organelle fusion (Ungermann et al., 1998), or dequenching experiments with proteoliposomes bearing SNARE combinations (Fukuda et al., 2000; Mima et al., 2008), have suggested that trans-SNARE complexes form between three Q-SNAREs anchored to one membrane and an R-SNARE (Nyv1p) anchored to the apposed membrane. Such an arrangement has allowed the study of sub-reactions with reduced complexity. We therefore prepared proteoliposomes as before (Figure 1B), but instead of bearing all four SNAREs, one fusion partner had only the R-SNARE Nyv1p and the other bore the 3Q-SNAREs. Surprisingly, these proteoliposomes showed very limited protected lumenal compartment mixing in the absence of other proteins (Figure 1G, column 1), although even this very limited fusion was blocked by Sec17p/Sec18p (column 5) and thus likely required direct trans-SNARE interaction. Substantial fusion only occurred in the presence of HOPS and, as noted before (Mima et al., 2008), was further enhanced by Sec17p/Sec18p in addition to HOPS (columns 4 and 8). In contrast to the dependence of content mixing on HOPS, there was substantial lipid dequenching without the addition of HOPS (Figure 1F, column 1), as reported (Mima et al., 2008). To address this discrepancy, we turned to a more detailed analysis of the lipid dequenching assay.\n\n### Lipid dequenching\n\nDoes the dequenching assay actually measure symmetric lipid mixing between the two proteoliposome populations? Proteoliposomes were prepared with both MB-PE and NBD-PE on the R-SNARE proteoliposomes or on the 3Q-SNARE proteoliposomes. Strikingly, the dequenching signal was seen when the fluorescent lipids were both on the R-SNARE proteoliposomes, but not when they were on the 3Q-SNARE proteoliposomes (Figure 2A, dark gray bars). For these direct comparisons of dequenching when the fluorophores are on one or the other proteoliposome, the proteoliposomes were mixed at a 1:1 ratio (Figure 2A). As in most reported dequenching assays, increasing the proportion of non-fluorescent acceptor 3Q-SNARE proteoliposomes enhances the signal such that up to 60% of maximal dequenching is achieved in 10 min (Figure 2B, light gray columns), whereas little dequenching of fluorescent 3Q-SNARE proteoliposomes is seen when incubated with even a 16-fold excess of non-fluorescent 1R-proteoliposomes (Figure 2B, dark gray columns). Providing an excess of 3Q-RPLs, but not 1R-RPLs, also promoted content mixing (see Figure 5\u2014figure supplement 2) beyond what was seen at a 1:1 ratio of both RPLs, suggesting that only a fraction of the 3Q-RPLs are fusion competent. Dequenching does require trans-SNARE interactions: it is blocked by antibody to Vam3p, by recombinant soluble domain of Nyv1p, or by Sec17p/Sec18p (Figure 2C, light gray columns), which are reported (Xu et al., 2010) to disassemble trans-SNARE complexes. Each of the 14 compositions of SNAREs other than 3Q on the acceptor, non-fluorescent proteoliposomes did not support dequenching (Figure 2C, the average and standard deviation of these is shown for simplicity as a dark gray column). Thus, proteoliposomes can undergo trans-SNARE interactions that lead to asymmetric lipid dequenching without symmetrical lipid mixing or proportionate fusion.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig2-v2.jpg)\n\n**Figure 2.:** (A) Lipid dequenching reactions of 1R- and 3Q-RPLs (250 \u00b5M lipid each), with both fluorescent lipids (Marina-Blue-phosphatidylethanolamine [MB-PE] and NBD-PE, 1.5 mol% each) on either the 1R-RPLs or the 3Q-RPLs. Incubations contained either Sec17p (600 nM) and Sec18p (200 nM) (light gray) or no additional proteins (dark gray). (B) Lipid dequenching reactions of MB/NBD-labeled 1R- (light gray) or 3Q-RPLs (dark gray) with increasing amounts of non-labeled complementary RPLs (3Q or 1R; 1:1 corresponds to 50 \u00b5M lipid of each). No additional proteins were added. (C) Sensitivity of lipid dequenching reactions of 1R(MB/NBD)-RPLs and 3Q-RPLs to various inhibitors that might prevent trans-SNARE complex formation. Incubations received: (1) no addition, (2) Sec17p/Sec18p (400 nM each), (3) antibodies directed against Vam3p (1 \u00b5M), or (4) soluble Nyv1p(1-231) (1 \u00b5M). Column 5: 1R(MB/NBD)-RPLs were incubated with non-fluorescent RPLs bearing various combinations of SNAREs other than 3Q: QabcR, QbcR, QacR, QabR, QcR, QbR, Qbc, QaR, Qac, Qab, R, Qc, Qb, Qa. The extent of these reactions was comparably low for all conditions, and is shown as average for these 14 conditions with standard deviations.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig2-figsupp1-v2.jpg)\n\nDoes the presence of the lipidic probes on the R-SNARE or 3Q-SNARE proteoliposomes affect the actual fusion reaction, as measured by protected lumenal content mixing? The asymmetry of lipid dequenching, controlled by the distribution of the probes (Figure 3A), is not reflected in asymmetry of fusion per se in the very same incubations (Figure 3B). Even lipid quenching assays, in which MB-PE and NBD-PE are initially incorporated separately into R-SNARE or 3Q-SNARE proteoliposomes, show an asymmetry in quenching (Figure 3C) that is not reflected in fusion per se (Figure 3D). This asymmetry could not be attributed to differences in RPL size (Figure 3\u2014figure supplement 2), or fluorophore or protein incorporation (Figure 3\u2014figure supplement 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig3-v2.jpg)\n\n**Figure 3.:** Incubations contained Sec17p (600 nM), Sec18p (200 nM), and HOPS (100 nM), as indicated. (A and B) Incubations contained 1R-RPLs (containing Biotin-PhycoE) and 3Q-RPLs (containing Streptavidin-Cy5) (250 \u00b5M lipid each), with the two fluorescent lipids Marina-Blue-phosphatidylethanolamine (MB-PE) and NBD-PE (1.5 mol% each) being together on either the 1R-RPLs or the 3Q-RPLs. Lipid dequenching (A) and protected lumenal content mixing (B) were recorded from the same reactions. (C and D) Incubations bore 1R-RPLs (containing Biotin-PhycoE) and 3Q-RPLs (containing Streptavidin-Cy5) (250 \u00b5M lipid each), with each RPL bearing a single fluorescent lipid, either Marina-Blue-phosphatidylethanolamine (MB-PE) (1 mol%) or NBD-PE (3 mol%). Lipid quenching (C) and protected lumenal content mixing (D) were recorded from the same reactions.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A\u2013H) The size distribution of various proteoliposome preparations was analyzed by dynamic light scattering with a Zetasizer nano ZS (Malvern Instruments, Westborough, MA) through non-invasive back-scatter at 173\u00b0. Samples of 400 \u03bcl at a lipid concentration of 20 \u03bcM were measured in low volume disposable sizing cuvettes at 25\u00b0C. The Z averages (r.nm) were: 101.5 for 1R(MB/NBD) (A), 90.63 for 1R() (B), 99.18 for 1R(MB) (C), 91.07 for 1R(NBD) (D), 89.78 for 3Q() (E), 95.36 for 3Q(MB/NBD) (F), 86.93 for 3Q(NBD) (G), and 89.40 for 3Q(MB) (H).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Samples (20 \u00b5l) of 1R(MB/NBD) and 3Q(MB/NBD) RPLs (25 \u00b5M lipid) were incubated for 30 min at 27\u00b0C in the presence or absence of Thesit (0.2% [wt/vol]) in 384-well plates in a SpectraMax Gemini XPS, and the fluorescence of Marina-Blue (Ex: 370 nm, Em: 465 nm, cutoff: 420 nm) and NBD (Ex: 460 nm, Em: 538 nm, cutoff: 515 nm) was recorded. The average of three repeats \u00b1 standard deviations is shown. (B) RPLs of various composition were analyzed for their protein composition by SDS-PAGE and Colloidal Coomassie staining.\n\nMight dequenching that does not seem to represent fusion reflect a peculiar physical property of one or the other fluorophore? 3Q- and 1R-proteoliposomes were prepared with three sets of fluorescent PE probes, either MB and NBD, NBD and rhodamine, or Oregon-Green and Texas-Red. In the absence of HOPS or Sec17p/Sec18p, the same asymmetric dequenching signal was seen in each case (Figure 4A\u2013C, no addition). We do not know how trans-SNARE interactions lead to this dequenching, but it is not symmetric, as expected for true lipid mixing, and is not proportionate to the content mixing for each reaction condition; thus, it cannot be relied on as a faithful reporter of fusion.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013C) Lipid dequenching reactions of 1R- and 3Q-RPLs (250 \u00b5M lipid each) had combinations of Sec17p (600 nM), Sec18p (200 nM), and HOPS (100 nM), as indicated. Either the 1R-RPLs (light gray) or the 3Q-RPLs (dark gray) bore pairs of fluorescently labeled lipids (1.5 mol% each): Marina-Blue (MB) and NBD (A), NBD and rhodamine (Rh) (B), or Oregon-Green (OG) and Texas-Red (TR) (C).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig4-figsupp1-v2.jpg)\n\n### A tethering requirement\n\nWhile there was far less protected lumenal content mixing between 3Q- and 1R-SNARE proteoliposomes in the absence of HOPS, Sec17p, and Sec18p than in their presence (Figure 1G, columns 1 vs 8), even this low level (column 1) was suppressed by Sec17p/Sec18p (column 5) and thus presumably relied on the SNAREs. Was this fusion independent of tethering, that is, did it rely on direct formation of stable proteoliposome adherence through 4-SNARE coiled-coil domain assembly, or did another kind of interaction mediate tethering? The Vam7p N-terminal PX domain has direct affinity for PI(3)P (Cheever et al., 2001), which is important for fusion (Fratti and Wickner, 2007). 3Q- and 1R-proteoliposomes were prepared with or without PI(3)P. They were incubated in each combination without further protein addition, with HOPS, with Sec17p/Sec18p, or with HOPS/Sec17p/Sec18p, and their protected lumenal compartment mixing was assayed (Figure 5A). Strikingly, with PI(3)P only on the R-SNARE proteoliposomes, fusion was as vigorous without HOPS as in its presence (Figure 5, columns 5 and 7). This fusion was blocked by Sec17p/Sec18p (column 6) and was not seen when the PI(3)P was entirely absent (column 1) or when PI(3)P was only on the 3Q-SNARE proteoliposomes (column 9). The content mixing that was seen when PI(3)P was on the R-SNARE proteoliposomes alone was strongly suppressed when PI(3)P was present on the 3Q-RPLs as well (columns 5 vs 13), presumably because the PX domain is engaged in an interaction with PI(3)P in cis, rendering a trans interaction less likely. The delay in reaction kinetics for conditions with Sec17, Sec18, and HOPS and no PI(3)P on the 3Q-RPLs (Figure 5\u2014figure supplement 1A,B, purple lines) probably reflects the requirement for phosphoinositides for the synergy between Sec17/Sec18 and HOPS (Mima and Wickner, 2009). The fusion that is supported by the presence of PI(3)P on the R-SNARE proteoliposomes can be ascribed to its binding in trans by the PX domain of Vam7p, as 3Q-SNARE proteoliposomes which were made with Vam7p\u0394PX will not fuse with R-SNARE proteoliposomes which bear PI(3)P (column 17). After 10 min assays, the very low lumenal compartment mixing values observed with the RPLs alone were not significantly above those seen with inhibition by Sec17p and Sec18p (Figure 5A, lower panel, columns 1 and 2). To determine whether SNARE-bearing RPLs alone can undergo any full fusion at all on their own, we performed an extended fusion assay with 3Q- and 1R-proteoliposomes without PI(3)P in the presence or absence of added HOPS (Figure 5B). Detectable fusion could in fact be supported by SNAREs alone (blue), albeit at less than a 100th the rate as seen in the presence of HOPS (red).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig5-v2.jpg)\n\n**Figure 5.:** (A) 1R-RPLs (with 0.5 mol% Marina-Blue-phosphatidylethanolamine [PE], containing biotinylated R-phycoerythrin) and 3Q-RPLs (with 3 mol% NBD-PE, containing Cy5-labeled streptavidin), bearing PI(3)P as indicated, were assayed for protected lumenal compartment mixing. Where indicated (columns 17\u201320), 3Q-RPLs bore a truncated version of the Qc-SNARE Vam7p that lacks the PI(3)P binding PX domain (Xu and Wickner, 2012). Reactions contained Sec17p (600 nM), Sec18p (200 nM), and HOPS (100 nM), as indicated. The lower panel provides a magnified view of the bottom 5% of the data (indicated by dotted box). (B) Kinetics of 1R-3Q content mixing assays with RPLs not bearing PI(3)P. Reactions contained HOPS (100 nM; red curve), Sec17p and Sec18p (600 and 200 nM; gray curve), or no added proteins (blue curve). The averages of five experiments are shown. The reactions containing Sec17p/Sec18p were normalized to zero, and these values were subtracted from all other conditions. Light-colored areas indicate standard deviations.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig5-figsupp1-v2.jpg)\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Protected lumenal compartment mixing was measured as the decrease in fluorescence intensity of Biotin-PhycoE when it binds to Streptavidin-Cy5. Incubations either contained Sec17p (600 nM) and Sec18p (200 nM) (light gray) or no additional proteins (dark gray). All 1R-RPLs contained PI(3)P (1 mol%), while all 3Q-RPLs did not. (A) Content mixing reactions of 1R-RPLs (50 \u00b5M lipid; containing the lumenal marker Biotin-PhycoE) and 3Q-RPLs (0, 50, 150, or 450 \u00b5M lipid; containing the lumenal marker Streptavidin-Cy5). (B) Content mixing reactions of 3Q-RPLs (50 \u00b5M lipid; containing the lumenal marker Biotin-PhycoE) and 1R-RPLs (0, 50, 150, or 450 \u00b5M lipid; containing the lumenal marker Streptavidin-Cy5).\n\n### Fusion and trans-association of SNAREs\n\nDoes this dramatic difference in fusion rates reflect a proportionate inability of the three Q-SNAREs on proteoliposomes to engage with R-SNAREs in the absence of a tether? To study how much trans-interaction occurs between membrane-bound 3Q-SNAREs and membrane-bound R-SNAREs in the presence or absence of HOPS, we performed a content mixing reaction (Figure 6A) and also subjected samples which had been detergent-solubilized to immunoprecipitation with anti-Vam3p antibodies to determine the amount of Nyv1p that co-precipitated as a measure of trans-SNARE interaction (Figure 6B). The detergent bore a large excess of GST-Nyv1p, sufficient to suppress any association between the 3Q-SNAREs and wild-type Nyv1p after detergent-solubilization (Figure 6, Figure 6\u2014figure supplement 1). The presence of HOPS led to an increase in the trans-association of membrane anchored SNAREs (Figure 6B, compare lanes 3 and 4). However, this increase was less than fourfold, and thus insufficient to explain the difference in content mixing rates (Figure 6A). Quantitation of replicate experiments (Figure 6C) shows that about one third as much trans-SNARE complex formed in the absence of HOPS (column 3) as in its presence (column 4), whereas fusion was over 100 times faster in the presence of HOPS (columns 1, 2). Might this reflect an inability of the 3Q-SNAREs to interact with Nyv1p without HOPS? When incubations bore the recombinant soluble domain of Nyv1p at the same 100 nM concentration as was otherwise present on RPLs in our assay, the soluble Nyv1p readily bound to the Q-SNAREs regardless of the presence or absence of HOPS (Figure 6B, compare lanes 7 and 8). Furthermore, 100 nM soluble Nyv1p can suppress most of the content mixing reaction (Figure 6D), just as fusion was blocked by the mixed soluble domains of the three Q-SNAREs (Figure 6\u2014figure supplement 3), and inhibition by added soluble domain of Nyv1p was reversible by including the SNARE complex disassembly chaperones Sec17/Sec18 (Figure 6E). This indicates that the 3Q-SNARE complexes were capable of engaging in complex formation with membrane-bound R-SNAREs, but in a manner that did not lead to fusion. To test whether the highly disproportional increase in trans-SNARE association and content mixing can be attributed to a possible requirement for high cooperativity of SNARE complexes, we examined the levels of content mixing and trans-SNARE interactions when R-RPLs were used that had been reconstituted with lower amounts of Nyv1p (Figure 7). Lower levels of Nyv1p did not lead to a drastic diminution of fusion activity (Figure 7A,C), but resulted in lower amounts of trans-SNARE association (Figure 7B,D). Since the amount of trans-SNARE interaction that was detected at low Nyv1p levels with HOPS was lower than the amount seen with high Nyv1p levels without HOPS (Figure 7B,D, lane 2 vs lane 7), yet the amount of fusion was drastically higher in the sample containing HOPS (Figure 7A,C, lane 2 vs lane 7), the requirement for high cooperativity can be ruled out as an explanation for the observed discrepancy between increases in trans-SNARE interaction and fusion.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig6-v2.jpg)\n\n**Figure 6.:** (A) Kinetics of 1R-3Q content mixing assays. RPLs (reconstituted with a protein:lipid ratio of 1:2500 for SNAREs) were incubated for 30 min at 27\u00b0C before and after the addition of HOPS (100 nM) or its buffer. (B) Additional 40 \u00b5l reactions that were performed in parallel were analyzed for trans-SNARE association by co-immunoprecipitation of Nyv1p (R-SNARE) with Vam3p (Qa-SNARE). Lanes 3 and 4 correspond to the conditions as shown in (A). Lanes 7 and 8 are from equivalent reactions, but containing soluble Nyv1p instead of R-RPLs. For lanes 1, 2, 5, and 6, the components were mixed directly in detergent solution without prior incubation. (C) Quantification of content mixing and trans-SNARE association (as seen in panels A and B) from three independent repeat experiments. The rate of fusion was determined as the slope for the first minute of the content mixing reaction after addition of HOPS or its buffer (between minutes 30 and 31). Trans-SNARE interactions were quantified as the amount of Nyv1p that co-precipitated with Vam3p (lanes 3 and 4 in panel B) using UN-SCAN-IT gel 5.3 software (Silk Scientific, Orem, UT). (D) 1R- and 3Q-RPLs were mixed with increasing concentrations of soluble Nyv1p (sR), and incubated for 30 min at 27\u00b0C. HOPS (100 nM) was added, and the reactions were assayed for protected lumenal compartment mixing. (E) A mixture of 1R- and 3Q-RPLs was pre-incubated with or without 1 \u00b5M soluble Nyv1p for 30 min at 27\u00b0C. Sec17p (600 nM), Sec18p (200 nM), and HOPS (100 nM) or their respective buffers were added as indicated, and the reactions were assayed for protected lumenal compartment mixing.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The 40 \u00b5l fusion reactions were incubated at 27\u00b0C as indicated, and analyzed for trans-SNARE association by co-immunoprecipitation of Nyv1p (R-SNARE) with Vam3p (Qa-SNARE). The co-immunoprecipitation was carried out in the presence of increasing concentrations of GST-Nyv1p. Lanes 1 and 2 contained only R- or 3Q-RPLs. Lanes 3-6 contained R- and 3Q-RPLs. Lanes 7 and 8 contained 3Q-RPLs and soluble Nyv1p.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig6-figsupp2-v2.jpg)\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) 1R- and 3Q-RPLs were mixed with increasing concentrations of soluble Vam3p, Vti1p, and Vam7p, and incubated for 30 min at 27\u00b0C. HOPS (100 nM) was added, and the reactions were assayed for protected lumenal compartment mixing. (B) A mixture of 1R- and 3Q-RPLs was pre-incubated with or without 4 \u00b5M soluble Vam3p, Vti1p, and Vam7p for 30 min at 27\u00b0C. Sec17p (600 nM), Sec18p (200 nM), and HOPS (100 nM) or their respective buffers were added as indicated, and the reactions were assayed for protected lumenal compartment mixing. (C) Reactions as in (A), but with increasing concentrations of either soluble Vam3p, or soluble Vti1p, or Vam7p individually.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/03251/elife-03251-fig7-v2.jpg)\n\n**Figure 7.:** (A) Kinetics of content mixing reactions of 3Q-RPLs (reconstituted with a protein:lipid ratio of 1:2000 for Vam3p, Vti1p, and Vam7p) and 1R-RPLs (reconstituted with a protein:lipid ratio of either 1:2000 [blue], 1:4000 [red], 1:8000 [green], or 1:16,000 [purple] for Nyv1p). RPLs were incubated for 30 min at 27\u00b0C before and HOPS (100 nM) or its buffer were then added. (B) Equivalent 40 \u00b5l reactions were analyzed for trans-SNARE association by co-immunoprecipitation of Nyv1p (R-SNARE) with Vam3p (Qa-SNARE). Lanes 1\u20138 correspond to the conditions as shown in (A) with odd numbers representing conditions with no addition and even numbers representing conditions with HOPS (100 nM). For lanes a, b, c, and d, the components were mixed directly in detergent solution without prior incubation. (C) Quantification of content mixing (as seen in panel A) from three independent repeat experiments. The rate of fusion was determined as the slope for the first 10 min of the content mixing reaction (between minutes 0 and 10) for samples that did not receive HOPS or as the slope for the first minute of the content mixing reaction after addition of HOPS (between minutes 30 and 31). (D) Quantification of trans-SNARE association (as seen in panel B). Trans-SNARE interactions were quantified as the amount of Nyv1p that co-precipitated with Vam3p (lanes 1\u20138 in panel B) using UN-SCAN-IT gel 5.3 software (Silk Scientific, Orem, UT), and are represented as percentage of the amount of Nyv1p that co-precipitated in the reaction that contained HOPS and R-RPLs with a SNARE:lipid ratio of 1:2000 (lane 8 in panel B).\n\n## Discussion\n\nOur knowledge of the initial steps of membrane fusion is limited, and the terminology to describe these processes is vague. \u2018Tethering\u2019 often refers to trans-interactions of membranes that are of low affinity, reversible, or do not involve SNAREs, and \u2018docking\u2019 is reached when trans-SNARE complexes have formed. These terms are used loosely, even interchangeably, and it has remained unclear whether and how the functions of Rab GTPases, their effectors, SM proteins, and SNAREs are coupled or even related. The steps that lead to trans-SNARE complex formation are dynamic and interwoven, and we are only beginning to understand how they lead to membrane fusion.\n\nSeveral biochemical assays have been developed to monitor the fusion process in vitro. Most studies with isolated organelles have assayed fusion as the mixing of lumenal contents. Studies with reconstituted proteoliposomes, in contrast, have relied heavily on lipid dequenching assays to infer the merging of two lipid bilayers. Discrepancies of lipid mixing and content mixing have repeatedly been noted in the past: for example, neuronal SNAREs alone do not produce much content mixing yet readily promote lipid dequenching (Kyoung et al., 2011; Diao et al., 2012), content mixing occurs seconds after initial lipid mixing in influenza virus-induced fusion (Floyd et al., 2008), and content mixing occurs with a delay of several minutes after lipid mixing in vacuolar fusion (Jun and Wickner, 2007).\n\nWe have recently described an assay that allows concurrent measurement of both lipid and content mixing (Zucchi and Zick, 2011). We have reconstituted a fusion reaction that mimics the homotypic fusion of yeast vacuoles, that is, with the four SNAREs in a cis-complex on both membranes, depending on Sec17p/Sec18p for ATP-dependent priming and Ypt7p:HOPS for tethering (see Wickner, 2010 for review). Both content and lipid mixing assays show that this reaction requires Sec17p, Sec18p, and HOPS (Figure 1C,D). A modified reaction scheme, in which one population of RPLs bears the R-SNARE Nyv1p, while the other population bears the three Q-SNAREs Vam3p, Vti1p, and Vam7p, allows study of a sub-reaction that bypasses the need for Sec17p/Sec18p mediated priming. This condition has repeatedly been reported to allow lipid mixing to occur without the need for any additional components (Fukuda et al., 2000; Mima et al., 2008). While we could reproduce this finding (Figure 1F, column 1), we observed a substantially lower amount of content mixing for the same condition (Figure 1G, column 1). Furthermore, among the several sets of SNAREs of yeast organelles, only the vacuolar SNAREs showed a purported fusion signal (Izawa et al., 2012; Furukawa and Mima, 2014). Lipid mixing without proportional content mixing may indicate hemifusion (see Figure 1A). However, the lipid dequenching signal showed an asymmetric character, depending on the two fluorescent lipids being present on the R-SNARE-bearing RPLs (Figure 2A,B). It is nevertheless possible to suppress this signal with well-established inhibitors of fusion that interfere with the formation of trans-SNARE complexes (Figure 2C). The fluorescent lipids did not appear to modulate the capacity of RPLs to fuse, as content mixing was not affected by the presence or distribution of fluorescent lipids (Figure 3). The effect was also not limited to a specific set of fluorescent lipids (Figure 4). We cannot explain this asymmetric behavior, but it may be related to an undefined interaction between vacuolar SNAREs and the fluorescent lipids. The latter might be selectively transferred to another membrane that contains a particular SNARE via an interaction with that SNARE; transfer of lipid dyes between membranes has been reported for rhodamine B lipids (Ohki et al., 1998). Basic residues in the juxtamembrane regions of a Q-SNARE might facilitate transfer of the fluorescent lipids from the R-RPLs when the two membranes are brought into proximity by trans-SNARE complex assembly, thus catalyzing transfer from the R- to the 3Q-RPLs. In any case, the lipid mixing assay needs to be employed with great caution, and should ideally only serve as a complement to content mixing experiments. Lipid dequenching has provided many valuable lessons, but can apparently report events other than true fusion.\n\nA vigorous content mixing signal, which is always accompanied by a lipid mixing signal (dequenching or quenching), is only seen in the presence of HOPS (Figure 3), indicating that tethering is a vital component of the fusion process. The small amount of content mixing in 1R-3Q reactions that was seen without added protein was suppressed by the addition of Sec17p/Sec18p (Figure 1G, compare columns 1 and 5), indicating that it did indeed represent SNARE-dependent true membrane fusion. A previous report has shown that the trans-interaction of PI(3)P and the PX domain of the Qc-SNARE Vam7p could promote tethering (Xu and Wickner, 2010). This interaction was partially responsible for the SNARE-dependent content mixing seen without additional proteins, since the complete absence of PI(3)P, its asymmetric disposition on 3Q-RPLs, or a truncated form of Vam7p lacking its PX domain further reduced the small amount of content mixing seen without HOPS (Figure 5A). In contrast, when PI(3)P was only present on R-SNARE RPLs, rapid fusion did not require HOPS (Figure 5A, columns 5 and 6), establishing a condition with reduced complexity in which an SM function is not absolutely required. It remains to be determined whether the Vam7p:PI(3)P tethering plays any role on intact vacuoles, where priming releases Vam7p early in the fusion reaction (Boeddinghaus et al., 2002), or if it is merely a phenomenon seen in in vitro reconstitutions with purified components. In this context, we note that the content mixing supported by Vam7p:PI(3)P tethering is fully suppressed in the presence of Sec17p/Sec18p (Figure 5A, column 6). The ubiquitous presence of Sec17p/Sec18p in the cell may underlie a strict requirement for HOPS and other large tethering complexes in vivo. HOPS has the capacity to recruit Vam7p (Zick and Wickner, 2013), to proofread trans-SNARE complexes (Starai et al., 2008), and to protect them from disassembly by Sec17p/Sec18p (Hickey and Wickner, 2010; Xu et al., 2010).\n\nWhile the requirement for a tether was not absolute, the addition of HOPS stimulated the rate of the reaction more than 100-fold (Figure 5B, Figure 6C). Colliding SNARE-bearing membranes form spontaneous trans-SNARE complexes (Figure 6D, lane 3). These can occasionally trigger fusion, but the rate achieved under such a condition is of questionable physiological relevance. This uncertainty is reinforced by the fact that mutations in Rab GTPases or tethering complexes have as strong a phenotype as mutations in SNARE proteins (Wada et al., 1992). The addition of HOPS stimulates the fusion reaction more than 100-fold, yet it only increases the amount of trans-SNARE interaction a few-fold (Figure 6C,D). This shows that the role of HOPS and tethering goes beyond merely facilitating trans-SNARE complex formation. The trans-SNARE complexes that form spontaneously are very inefficient in catalyzing membrane fusion. This indicates that it is not just a matter of quantity, but that additional factors are important to produce trans-SNARE interaction of the right quality to facilitate membrane fusion. Fusion-incompetent SNARE complexes have been observed in other systems (reviewed in Brunger, 2005; Rizo and Sudhof, 2012), and it will be crucial to determine what differentiates a productive from a non-productive complex, and what aids the formation of one over the other. Our findings do not vitiate the central role of trans-SNARE complexes in fusion; rather, they reveal that a distinct tethering step is a critical upstream event that substantially increases the rate of SNARE-mediated fusion, as suggested (Smith and Weisshaar, 2011), and its mode of action is not limited to increasing the quantity of trans-SNARE pairings.\n\nReconstitution studies using lipid dequenching assays and endosomal SNAREs have also suggested that SNAREs alone suffice to drive fusion efficiently. Lipid mixing was reported to occur as a result of fairly promiscuous endosomal trans-SNARE pairing (Brandhorst et al., 2006) and in multiple topologies (Zwilling et al., 2007) without auxiliary proteins. However, another study (Ohya et al., 2009), which employed a content mixing assay to measure fusion, found that a Rab GTPase and its effectors are essential for endosomal SNARE-mediated fusion. Neuronal fusion has also been extensively studied through in vitro reconstitution, and led to the concept that SNAREs alone suffice as the machinery of fusion (Jahn and Fasshauer, 2012). While SNAREs are undoubtedly essential components, their spontaneous assembly into a four-helical bundle only occurs very slowly (Pobbati et al., 2006). Vital components that accelerate this assembly are more recently being included in the definition of a core machinery in this system. Rizo's group has provided compelling evidence for the critical roles of Munc18 and Munc13 during neuronal SNARE-mediated fusion, together with NSF/SNAP and the soluble domain of synaptotagmin 1 (Ma et al., 2013), while Brunger's group has shown that complexin has a large effect on Ca2+ triggered synchronized fusion in the presence of neuronal SNAREs and full-length synaptotagmin 1 (Diao et al., 2012; Lai et al., 2014). Further study of these components can broaden our understanding of the complex mechanisms that regulate and facilitate membrane fusion.\n\nTethering may regulate vacuolar and other fusion systems. The highly selective distribution of each Rab GTPase, which serves as a receptor for its cognate tethering complex (Hutagalung and Novick, 2011), could impose specificity on otherwise promiscuous SNARE complex assembly (Yang et al., 1999). Membrane repulsion and the conformation of unpaired, membrane-anchored SNAREs may limit the spontaneous formation of trans-SNARE complexes. Bringing membranes into close apposition and stabilizing such a tethered intermediate drastically enriches the local concentration of SNAREs and facilitates the interactions that promote trans-SNARE complex formation. Recent studies suggested that some multi-subunit tethering complexes could also directly modulate the assembly of functional SNARE complexes (reviewed in Hong and Lev, 2014). Nevertheless, even in a tethered state, only a minor fraction (a few percent) of SNAREs seem to engage in such complexes (Mima et al., 2008) and lowering the SNARE concentration only a few-fold can take a substantial toll on fusion activity (Zick et al., 2014). Other factors that promote fusion, like Sec17p and Sec18p, further stimulate HOPS-dependent reactions (Figure 1G; Mima et al., 2008; Mima and Wickner, 2009), but their mode of action is only poorly understood. The observation that Sec17p/Sec18p relieved the inhibition by soluble SNARE proteins (Figure 6E and Figure 6\u2014figure supplement 3B) demonstrates the importance of dynamic cycling of SNARE interactions, and highlights the ability of HOPS to selectively protect productive trans-SNARE pairs (Starai et al., 2008; Hickey and Wickner, 2010; Xu et al., 2010).\n\nTethering is integral to our working model of vacuolar homotypic fusion. ATP-dependent priming entails phosphoinositide synthesis (Mayer et al., 2000) and the disassembly of cis-SNARE complexes by Sec17p/Sec18p/ATP (Haas and Wickner, 1996; Mayer et al., 1996), providing SNAREs for later assembly of trans-SNARE complexes. HOPS mediates tethering (Hickey and Wickner, 2010), possibly supported by the trans-interaction of the PX domain of Vam7p with PI(3)P (Xu and Wickner, 2010). Neuronal SNAREs can associate in multiple conformations (Weninger et al., 2003) that can participate in docking (Bowen et al., 2004). Similarly, the vacuolar SNAREs may associate in several conformations when pairing in trans. Additional factors that guide the formation of fusion-competent complexes, which might differ from fusion-incompetent complexes in composition, conformation, or associations, are required for rapid fusion. Our data indicate that tethering via HOPS or the binding of the Vam7p PX domain to PI(3)P in trans can provide such guidance. Earlier studies of intact vacuoles have also shown that the rate of fusion is not directly proportional to the level of trans-SNARE complexes (Ungermann et al., 1998), suggesting that only a fraction of trans-SNARE interactions might also contribute to fusion activity in vivo.\n\nIn addition to its role in facilitating the formation of fusion-competent trans-SNARE complexes, tethering may play a direct role in lowering the energy barrier for fusion. Tethering could provide the activation energy required for partially assembled SNARE complexes to fully zipper (Min et al., 2013). It could also contribute by inducing membrane bending at the edges of tightly apposed membranes (Wang et al., 2002). Domains like the vertex ring in vacuole fusion (Wang et al., 2002, 2003; Fratti et al., 2004) require tethering complexes for their formation and stability. Fusogenic lipids, such as the non-bilayer lipids phosphatidylethanolamine, diacylglycerol, and sterol, are required for fusion (Zick et al., 2014) and are dependent on other lipids and docking proteins for their enrichment at the vertex ring (Fratti et al., 2004). We propose that tethering may thus make several direct contributions to fusion, as well as its role in promoting trans-SNARE complexes in conjunction with additional auxiliary proteins.\n\n## Materials and methods\n\n### Proteins and reagents\n\nLipids were obtained from Avanti Polar Lipids (Alabaster, AL), except for ergosterol which was from Sigma-Aldrich (St. Louis, MO), PI(3)P was from Echelon Biosciences (Salt Lake City, UT), and the fluorescent lipids (Marina-Blue-DHPE, NBD-DHPE, Rhodamine-DHPE, Oregon-Green-488-DHPE, Texas-Red-DHPE) were from Life Technologies (Carlsbad, CA). Biotinylated R-phycoerythrin was purchased from Life Technologies, Cy5-derivatized streptavidin from KPL (Gaithersburg, MD), and unlabeled streptavidin from Thermo Scientific (Waltham, MA). Sec18p (Haas and Wickner, 1996), Sec17p (Schwartz and Merz, 2009), Ypt7p (Zick and Wickner, 2013), HOPS (Zick and Wickner, 2013), and vacuolar SNARE proteins (Mima et al., 2008; Schwartz and Merz, 2009; Zucchi and Zick, 2011) were purified as described. Vti1p and Nyv1p were exchanged into octylglucoside buffer as described (Zucchi and Zick, 2011). Soluble Nyv1p (sR) was purified as GST-TEVsite-Nyv1(\u0394tm) as described (Thorngren et al., 2004), and cleaved with TEV protease prior to use. GST-His6-3Csite-Nyv1p was purified as described (Izawa et al., 2012).\n\n### Reconstitution of vacuolar Rab/SNARE proteoliposomes\n\nProteoliposomes were prepared by detergent dialysis (20 kDa cutoff membrane) in RB150/Mg2+ (20 mM HEPES-NaOH, pH 7.4, 150 mM NaCl, 1 mM MgCl2, 10% glycerol [vol/vol]) as described (Zick and Wickner, 2013), with modifications. Lipids dissolved in chloroform were mixed at proportions that mimic the vacuolar lipid composition: 44.6\u201347.6 mol% POPC (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine), 18 mol% POPE (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine), 18 mol% Soy PI (L-\u03b1-phosphatidylinositol), 4.4 mol% POPS (1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-L-serine), 2 mol% POPA (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphate), 1 mol% 16:0 DAG (1,2-dipalmitoyl-sn-glycerol), 8 mol% ergosterol, and 1 mol% (unless specified otherwise) di-C16 PI(3)P (1,2-dipalmitoyl-sn-glycero-3-phospho-(1\u2032-myo-inositol-3\u2032-phosphate)). Different fluorescent lipids (Marina-Blue-DHPE, NBD-DHPE, rhodamine-DHPE, Oregon-Green-488-DHPE, Texas-Red-DHPE) were included to allow assays of lipid dequenching or lipid quenching. Concentrations are indicated in the figure legends of the respective experiments. Molar protein:lipid ratios were 1:1000 for SNAREs and 1:2000 for Ypt7p. Isolation after reconstitution was achieved by floatation on a three-step Histodenz gradient (35%, 25% Histodenz [wt/vol], and RB150/Mg2+); Histodenz (Sigma-Aldrich) solutions were prepared as 70% stock solution in modified RB150/Mg2+ with a reduced concentration (2% [vol/vol]) of glycerol to compensate for the osmotic activity of the density medium; lower concentration solutions were obtained by dilution with RB150/Mg2+. The proteoliposomes used in Figures 6 and 7 were essentially prepared the same way, but with the dilinoleoyl-forms of PC, PE, PS, and PA, and with molar protein:lipid ratios for SNAREs as indicated.\n\n### RPL fusion assays\n\nFusion reactions of 20 \u00b5l were assembled from three pre-mixes: two mixes (5 \u00b5l each) of RPLs (250 \u00b5M lipid each) in RB150/Mg2+ with 5 \u00b5M streptavidin (for content mixing reactions only), and one mix of auxiliary factors (e.g., Sec17p, Sec18p, Mg2+:ATP, HOPS, anti-Vam3p, sNyv1p) or their respective buffers. All components were incubated individually at 27\u00b0C for 10 min, and then combined in wells of 384-well plates to initiate the reaction. The plates were incubated at 27\u00b0C in a fluorescence plate reader for 30\u201390 min and content and/or lipid mixing signals were recorded at intervals of 5\u201360 s in a SpectraMax Gemini XPS (Molecular Devices, Sunnyvale, CA) fluorescent plate reader (PhycoE:Cy5-FRET, Ex: 565 nm; Em: 670 nm; cutoff: 630 nm; Marina-Blue quenching or dequenching, Ex: 370 nm; Em: 465 nm; cutoff: 420 nm; NBD dequenching, Ex: 460 nm; Em: 538 nm; cutoff: 515 nm; Oregon-Green dequenching, Ex: 504 nm; Em: 534 nm; cutoff: 515 nm). For content mixing reactions, maximal values were determined after addition of 0.1% (wt/vol) Thesit to samples that had not received streptavidin. To estimate the extent of lipid mixing, liposomes mimicking 100% fusion were prepared by mixing respective \u2018donor\u2019 and \u2018acceptor\u2019 mixed micellar solutions 1:1 prior to liposome formation by dialysis.\n\n### Determination of trans-SNARE associations by co-immunoprecipitation\n\nTo estimate the amount of trans-SNARE association that formed during a reaction, the amount of Nyv1p that co-immunoprecipitated with Vam3p was determined. A 40 \u03bcl fusion reaction was incubated for 40 min at 27\u00b0C, placed on ice, and diluted 10-fold in RIPA buffer (20 mM HEPES-NaOH, pH 7.4, 150 mM NaCl, 0.2% [wt/vol] bovine serum albumin, 1% [vol/vol] Triton X-100, 1% [wt/vol] sodium cholate, 0.1% [wt/vol] sodium dodecyl sulfate) containing 50 \u03bcg/ml of affinity-purified anti-Vam3p antibody and 10 \u00b5M GST-Nyv1p. After 20 \u03bcl of RIPA-buffer washed protein A magnetic beads (Thermo Scientific, Portsmouth, NH) were added, the mix was incubated while nutating at room temperature for 2 hr. After the beads were washed three times with 1 ml of RIPA buffer, samples were eluted in 100 \u03bcl of reducing SDS sample buffer at 95\u00b0C for 5 min. Aliquots (20 \u03bcl) of each sample were subjected to SDS\u2013PAGE and immunoblotting with anti-Nyv1p antibody.\n",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "f1652023-dc4c-4197-a64b-8df1af2f1b89",
+      "submission_id": "63a519cb-8832-4750-901c-2485df5ddca5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Axel T Brunger, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.03251.022](https://doi.org/10.7554/eLife.03251.022)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cA Distinct Tethering Step is Vital for Vacuole Membrane Fusion\u201d for consideration at eLife. Your article was handled by Randy Schekman as Senior editor and generally favorably evaluated by 3 reviewers, one of whom is a member of our Board of Reviewing Editors. However, there are some significant concerns that require major revision as outlined below.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Axel Brunger (Reviewing editor); Jose Rizo (one of the peer reviewers).\n\nIt has been appreciated for some time now that lipid mixing may not necessarily imply content mixing. This work now adds even more rather unsettling evidence that lipid-dye dequenching assays should be treated with caution. The authors find that lipid-dye dequenching is asymmetric in their system, i.e., (de-) quenching occurs much more extensively when lipid dyes are included with one class of vesicles containing R-SNAREs than when they are included with vesicles containing Q-SNAREs. This asymmetry is not due merely to some unusual property of the particular type of fluorescence lipids chosen, since the authors show that analogous results were obtained with three different types of fluorescent lipids. Moreover, the data suggest that the observed dequenching of the lipid dyes is not due to complete fusion. A second key finding is that the tethering of HOPS on the vacuolar SNARE-bearing proteoliposomes initiates efficient lumenal compartment mixing. However, placing PI3P in the R-SNARE liposomes, vacuolar SNAREs alone can also induce efficient content mixing without HOPS.\n\nMajor comments:\n\n1) The results raise the question if it is lipid dye transfer that depends on the asymmetric vesicle composition? The authors rightfully say \u201cWe do not know how trans-SNARE interactions lead to this dequenching, but it is not symmetric, as expected for true lipid mixing, and is not proportionate to the content mixing for each reaction condition; thus, it cannot be relied on as a faithful reporter of fusion.\u201d What is the origin of the asymmetric lipid dye transfer? The authors should suggest a mechanism, especially since fusion inhibitors suppress the signal. In particular, could this be related to some sort of interaction between some of the vacuolar SNAREs, PI(3)P, and the dyes themselves? In other words, dye-lipids may be transferred to the other membrane that contains a particular SNARE via an interaction with that SNARE? In this context, transfer of lipid dyes between membranes has been previously observed (S. Ohki, T. D. Flanagan, and D. Hoekstra, Biochemistry, 1998, 37, 7496-503) for Rhodamine B lipids. Moreover, is it plausible that positively charged residues in the juxtamembrane regions of the Q SNAREs help to 'extract' the fluorescent lipids from the R-liposomes when the two membranes are brought into proximity by the trans SNARE complexes, thus catalyzing transfer from the R- to the Q-liposomes? Another (albeit, less interesting) possibility that could explain their data is a different size distribution of vesicles and unequal dye partitioning. For example, if the R-SNARE vesicles are much smaller than the Q-SNARE vesicles, then the lipid dyes may partition non-randomly between leaflets in the R-SNARE vesicles but not in the Q-SNARE vesicles (e.g. one could have a much higher concentration of dyes in the outer leaflet of the R-SNARE vesicles than in the Q-SNARE vesicles). Then, upon hemifusion, there would be a greater fluorescence change if the dyes were in the R-SNARE vesicle originally than in the Q-SNARE vesicle. Small amounts of hemi-fusion would appear magnified in that case. Alternatively, there could be some interaction between the R-SNARE proteins and the lipid dye which make it undergo hemifusion more readily than if the dye is on the Q-SNARE vesicles.\n\n2) Relevant to point (1), the authors need to provide some characterization of their proteoliposomes, especially size distribution. This could be using dynamic light scattering or electron microscopy. Also, is there evidence that the protein and lipid dye incorporation is homogeneous?\n\n3) The content mixing assay also shows asymmetry (Figure 1\u2013figure supplement 1, and compare Figure 1 D and 1G, cases with HOPS and Sec18/HOPS). How can this be explained? Since an important aspect of this paper is the asymmetry observed in lipid mixing, it is important to establish whether the differences in the content mixing results constitute a true asymmetry or arise from differences in the amounts of probes trapped in the proteoliposomes in the different configurations. The authors should discuss this point and, ideally, should provide some characterization of the proteoliposomes to distinguish between these possibilities.\n\n4) The effect of asymmetric addition of PI(3)P on vacuolar SNARE-mediated content mixing is also interesting, but perhaps easier to explain. As suggested by the authors, this effect could be explained by a trans interaction between Vamp7p and PI(3)P. In the other vesicle, the effect is due to an increase in \u201ctethering\u201d by this trans interaction. However, upon inclusion of PI(3)P in both vesicle classes does not show such an increase. Could this be explained by \u201cself-interactions\u201d between Vamp7p and PI(3)P in its own membrane?\n\n5) Most of the data (except Figure 5b and Figure 6) only show one time point (fluorescence at ten minutes). Did the authors collect kinetic time traces, i.e. is the 10 min time point a reliable and representative measure in all cases? Or was no kinetic data collected? Because no kinetic data is shown for most figures, the differences in the data could be due to either different rates or different extents of fusion or both. In turn, that might suggest different underlying mechanisms. Showing the kinetic data, even if only in the supporting material, would be very useful. One of the principal advantages of doing bulk phase fusion experiments is that it is much easier and quicker to collect kinetic data, so why not exploit that?\n\n6) The second central claim of the paper is that the tethering action of HOPS is an essential upstream step to the fusion reaction. That may very well be true, but might not the data herein also support the idea that the action of HOPS is merely to stabilize the Q-SNAREs in a fusion-competent configuration such that they can mediate both tethering and fusion? Q-SNAREs in other systems are well known to form dead-end complexes that are not fusion competent (see, for example, reviews by Brunger, A.T. (2006) Quart. Rev. Biophys. 38,1-47. and Rizo, J., and S\u00fcdhof, T.C. (2012). Annual Review of Cell and Developmental Biology 28, 279-308.). Might that be what is going on here? The authors suggest that only a fraction of their Q-SNARE vesicles seem to be fusion-competent (Figure 2, Figure 5\u2013figure supplement 1, and in the text). Perhaps the essential role of HOPS in their experiments is not to tether the two membranes, but rather to stabilize Q-SNARE complexes in a fusion-competent configuration. Or perhaps both mechanisms of action are essential. The PI(3)P experiments in Figure 5 partially address this question, but as the SNAREs are known to interact with PI(3)P, it may be that PI(3)P also stabilizes the fusion-competent configuration. Outside of single vesicle fusion experiments, which can easily visualize the tethering step, what is really needed is an experiment in which the vesicles are tethered in a manner independent of any of the fusion machinery. In a simplistic way, this could be done by using the same streptavidin tethering experiment as was used to collect the data in Figure 6, but using the yeast SNAREs and Ypt7p instead of the rat SNAREs (see note 7 below). Also, content mixing rather than lipid mixing should be used as a fusion readout in that experiment (see note 5).\n\n7) The data presented in Figure 6 are used as evidence that tethering is also important for membrane fusion induced by endosomal SNAREs. However, all the data shown in the figure rely on a lipid-mixing assay. Hence, reliable conclusions from about membrane fusion cannot be drawn, given all problems inherent to interpret lipid mixing data. It is also unclear why the data are presented as rate of fluorescence decrease, in contrast to other figures of the paper. In addition, the data have large error bars and some reactions with an incomplete group of SNAREs (e.g. 1R 1R) yield a substantial effect that is about 30-40% of that obtained with 3Q and 1R. Therefore, these results are far from demonstrating that tethering is required for endosomal membrane fusion. The data could be omitted as they are not central to the key points of this paper, or a proper content mixing assay used, such as Tb3+-DPA or ANTS-DPX that should work nicely.\n\n8) Another concern with the streptavidin tethering experiments (Figure 6) is the physical role of streptavidin. In some ways, it might seem that tethering with streptavidin would inhibit fusion; many streptavidin molecules might attach themselves to the interface between the tethered vesicles, preventing trans-SNARE binding from that interface and only allowing the SNAREs to bind to each other at the periphery of the contact area. In effect, they might clog up the interface. Is streptavidin added at a low enough concentration that this can be ruled out? What do the authors think is going on here?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for sending your work entitled \u201cA Distinct Tethering Step is Vital for Vacuole Membrane Fusion\u201d for consideration at eLife. Your article has been favorably evaluated by Randy Schekman (Senior editor) and 3 reviewers, one of whom is a member of our Board of Reviewing Editors. However, there are some remaining issues that need to be addressed.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Axel Brunger (Reviewing editor); Stephen Boxer and Joseph Rizo (peer reviewers).\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nWe would like to thank the authors for addressing the concerns that were raised in the previous reviews. The new results presented in Figure 6 are indeed very interesting and add to this paper.\n\nComments:\n\n1) The authors should stress in various places (Abstract, Introduction, and Discussion) that the findings of asymmetric lipid mixing add another problem for lipid mixing assays. Thus, they should not be just \u201cemployed with caution\u201d (as stated in the Discussion), but with \u201cgreat caution\u201d, and should always be accompanied by a complete sets of content mixing experiments (not just one as I have seen in some papers).\n\n2) The authors' interpretation of the new data in Figure 6 (that the role of HOPS in fusion is not just its tethering action), seems to be at odds with the data in Figure 5. In Figure 5A, when PI3P is only on the R SNARE vesicles (mimicking the tethering action of HOPS), then similar levels of fusion are observed with and without HOPS. Doesn't this suggest that the central role of HOPS is only to tether the vesicles together? If HOPS is also involved in stabilizing a fusion competent conformation of snare proteins or influencing fusion through some other action, then shouldn't there be an increase in fusion when HOPS is added? The authors should reconcile their interpretation of the data with this point.\n\n3) The authors state that the lipid dequenching signal showed an asymmetric character \u201csuggesting that it arises without the mixing of two bilayers.\u201d We recommend that the authors remove that clause as it seems to suggest a rather unphysical interpretation of the data. The discussion following that statement is sufficient to convey their main point that lipid mixing only experiments should be used with caution.\n\n4) It is good that the authors have included example kinetic traces in the supplementary material. However, upon the inspection of that data, it seems as though the 10 minute time point (which is what is used for the bulk of the data in the main manuscript) is not always a faithful reporter of either the extent or the rate of the fusion reaction. For example, compare the Sec17/Sec18/HOPS trace (purple) to the no addition trace (blue) in Figure 5\u2013figure supplement 1 at t=10 vs. at t=30 min. Why not show the kinetic traces in the main text or represent it in another way?\n\n5) The authors argue that trans-SNARE complexes alone are not sufficient for fusion because some trans SNARE complexes were formed in the absence of HOPS and HOPS increases the amount of trans SNARE complexes three-fold while stimulating fusion 100-fold. Although I think that the authors are most likely right, the results could also be explained if there is high cooperativity in the system so that below a certain threshold in the number of SNARE complexes there is no or little fusion, and fusion becomes much more efficient above this threshold. Perhaps the authors would like to include this in the Discussion.\n\n6) From an editorial perspective, the authors are asked to consider moving most supplemental figures into the main text (except those that are purely \u201cdata\u201d figures). The scattering of figures between main figures and supplemental figures makes it more difficult to read the paper. One of the important features of eLife is that it does not have a limit on the number of figures, which sets it apart from most other journals. Also, subtitles in the Results section would be desirable to separate some of the key findings.\n",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5eae4485-0c2f-4f9e-b844-1dc63734633f",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C1",
+      "claim": "Past experiments with reconstituted proteoliposomes employing lipid dequenching assays have suggested that vacuolar SNAREs alone suffice to catalyze membrane fusion in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Past experiments with reconstituted proteoliposomes, employing assays that infer membrane fusion from fluorescent lipid dequenching, have suggested that vacuolar SNAREs alone suffice to catalyze membrane fusion in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature reporting these findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "f1ff0d27-9f3c-43b5-b8bb-399b3df4cff7",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C2",
+      "claim": "Very little fusion is detected with the lumenal compartment mixing assay when using vacuolar SNAREs alone.",
+      "claim_type": "EXPLICIT",
+      "source": "While we could replicate these results, we detected very little fusion with the more rigorous assay of lumenal compartment mixing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "2c7d869f-93ee-46ca-8a6d-f72ab3189db8",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C3",
+      "claim": "The disposition of fluorescent lipids with respect to SNAREs has a striking effect on lipid dequenching.",
+      "claim_type": "EXPLICIT",
+      "source": "Exploring the discrepancies between lipid-dequenching and content-mixing assays, we surprisingly found that the disposition of the fluorescent lipids with respect to SNAREs had a striking effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing asymmetric dequenching depending on which proteoliposome population contains the fluorescent lipids.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "64d90cb7-e772-426d-813a-b99713266cbc",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C4",
+      "claim": "Without other proteins, the association of SNAREs in trans causes lipid dequenching that cannot be ascribed to fusion or hemifusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Without other proteins, the association of SNAREs in trans causes lipid dequenching that cannot be ascribed to fusion or hemifusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing lipid dequenching without proportional content mixing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "d2dd0808-dad6-4b02-841c-972c6e726a6a",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C5",
+      "claim": "Tethering of SNARE-bearing proteoliposomes is required for efficient lumenal compartment mixing.",
+      "claim_type": "EXPLICIT",
+      "source": "Tethering of the SNARE-bearing proteoliposomes was required for efficient lumenal compartment mixing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing dramatically increased content mixing in the presence of tethering factors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "6f36ae88-6262-4101-a109-aee09060e182",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C6",
+      "claim": "The physiological HOPS tethering complex causes a few-fold increase of trans-SNARE association.",
+      "claim_type": "EXPLICIT",
+      "source": "While the physiological HOPS tethering complex caused a few-fold increase of trans-SNARE association, the rate of content mixing increased more than 100-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from co-immunoprecipitation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "699285f8-b784-4d40-9e5d-e59b1eb90540",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C7",
+      "claim": "The rate of content mixing increases more than 100-fold in the presence of HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "While the physiological HOPS tethering complex caused a few-fold increase of trans-SNARE association, the rate of content mixing increased more than 100-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing fusion rates with and without HOPS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "21dd711c-ad86-4021-b068-56385b85a899",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C8",
+      "claim": "Tethering has a role in promoting membrane fusion that extends beyond simply increasing the amount of total trans-SNARE complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus tethering has a role in promoting membrane fusion that extends beyond simply increasing the amount of total trans-SNARE complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the disproportionate increase in fusion rate compared to trans-SNARE complex formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "c5ac474b-7e32-4506-aadd-f9d8ac05d5be",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C9",
+      "claim": "Eukaryotic cells are organized by distinct, highly specialized, membrane-enclosed compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "A hallmark of eukaryotic cells is their internal organization by distinct, highly specialized, membrane-enclosed compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about eukaryotic cell organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "19c5c7fb-5f2a-451d-aa93-4211477cb648",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C10",
+      "claim": "Vesicular traffic functionally connects individual compartments while preserving their integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "Vesicular traffic functionally connects these individual compartments while preserving their integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about vesicular trafficking.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "9645f35a-6158-45eb-bc68-0f615e620756",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C11",
+      "claim": "Tethering is commonly performed by specific proteins, often in large multi-subunit complexes that bind Rab family GTPases.",
+      "claim_type": "EXPLICIT",
+      "source": "Tethering is commonly performed by specific proteins, often in large multi-subunit complexes that bind Rab family GTPases (Stenmark, 2009; Yu and Hughson, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "776d56ac-35fb-4498-9433-53deefafe9a4",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C12",
+      "claim": "Fusion is mediated by SNARE proteins and Sec1/Munc18 (SM) proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Fusion is mediated by soluble N-ethylmaleimide-sensitive attachment protein receptor (SNARE) proteins (Jahn and Scheller, 2006) and Sec1/Munc18 (SM) proteins (Rizo and Sudhof, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "f9ab6318-6230-427e-a493-dc9b40bbe3b0",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C13",
+      "claim": "The vacuole is a large organelle that continuously undergoes fission and homotypic fusion with other vacuoles.",
+      "claim_type": "EXPLICIT",
+      "source": "The vacuole is a large organelle that continuously undergoes fission and homotypic fusion with other vacuoles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about yeast vacuole biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "f6815966-1b76-4a75-a304-111fd9140ace",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C14",
+      "claim": "Wild-type strains of yeast have just a few large vacuoles at steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "At steady state, wild-type strains of yeast have just a few large vacuoles, but mutations which block vacuole fusion allow unimpeded fission, resulting in cells with numerous small vacuoles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about yeast vacuole morphology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "68067875-715b-44d0-b26d-11434e29c3eb",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C15",
+      "claim": "Mutations which block vacuole fusion result in cells with numerous small vacuoles.",
+      "claim_type": "EXPLICIT",
+      "source": "At steady state, wild-type strains of yeast have just a few large vacuoles, but mutations which block vacuole fusion allow unimpeded fission, resulting in cells with numerous small vacuoles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about yeast vacuole fusion mutants.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "f4fc7548-dee0-42bc-8115-095c4b83ed04",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C16",
+      "claim": "Vacuole tethering requires the Rab family GTPase Ypt7p.",
+      "claim_type": "EXPLICIT",
+      "source": "Vacuole tethering requires the Rab family GTPase Ypt7p and the heterohexameric Rab effector complex HOPS (homotypic vacuole fusion and protein sorting), which is comprised of Vps11p, Vps16p, Vps18p, Vps33p, Vps39p, and Vps41p (Seals et al., 2000; Wurmser et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "1d225553-18b2-4549-9026-82be4bc483a9",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C17",
+      "claim": "Vacuole tethering requires the heterohexameric Rab effector complex HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "Vacuole tethering requires the Rab family GTPase Ypt7p and the heterohexameric Rab effector complex HOPS (homotypic vacuole fusion and protein sorting), which is comprised of Vps11p, Vps16p, Vps18p, Vps33p, Vps39p, and Vps41p (Seals et al., 2000; Wurmser et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "34de64cd-de8d-4df9-b0a5-075f45b7907b",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C18",
+      "claim": "HOPS is comprised of Vps11p, Vps16p, Vps18p, Vps33p, Vps39p, and Vps41p.",
+      "claim_type": "EXPLICIT",
+      "source": "Vacuole tethering requires the Rab family GTPase Ypt7p and the heterohexameric Rab effector complex HOPS (homotypic vacuole fusion and protein sorting), which is comprised of Vps11p, Vps16p, Vps18p, Vps33p, Vps39p, and Vps41p (Seals et al., 2000; Wurmser et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "956df176-8a1d-4a7e-b4cc-e98167b68937",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C19",
+      "claim": "Vps39p and Vps41p have direct affinity for Ypt7p.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of these subunits, Vps39p and Vps41p, have direct affinity for Ypt7p, suggesting that one HOPS complex could tether two vacuoles, each bearing Ypt7p (Brett et al., 2008; Ostrowicz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "8b34a3f4-2a0d-4465-bab5-2c79272cac51",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C20",
+      "claim": "One HOPS complex could tether two vacuoles, each bearing Ypt7p.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of these subunits, Vps39p and Vps41p, have direct affinity for Ypt7p, suggesting that one HOPS complex could tether two vacuoles, each bearing Ypt7p (Brett et al., 2008; Ostrowicz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the binding properties of HOPS subunits.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "c9ade8bd-0825-48e3-800e-ee48848ad180",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C21",
+      "claim": "Each vacuole has four SNAREs required for homotypic fusion: Nyv1p, Vam3p, Vti1p, and Vam7p.",
+      "claim_type": "EXPLICIT",
+      "source": "Each vacuole has four SNAREs that are required for homotypic fusion: the R-SNARE Nyv1p, the Qa-SNARE Vam3p, the Qb-SNARE Vti1p, and the Qc-SNARE Vam7p (Nichols et al., 1997; Ungermann et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "09886b0f-a03c-44a2-ada3-60723c47da8c",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C22",
+      "claim": "Vam7p lacks a hydrophobic membrane anchor.",
+      "claim_type": "EXPLICIT",
+      "source": "Vam7p has the unusual property of lacking a hydrophobic membrane anchor while having an N-terminal membrane targeting domain with affinity for phosphatidylinositol 3-phosphate, HOPS, and acidic lipid (Cheever et al., 2001; Lee et al., 2006; Stroupe et al., 2006; Karunakaran and Wickner, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "19e39eb1-9af9-490f-b1c4-d783ee0e7eec",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C23",
+      "claim": "Vam7p has an N-terminal membrane targeting domain with affinity for phosphatidylinositol 3-phosphate, HOPS, and acidic lipid.",
+      "claim_type": "EXPLICIT",
+      "source": "Vam7p has the unusual property of lacking a hydrophobic membrane anchor while having an N-terminal membrane targeting domain with affinity for phosphatidylinositol 3-phosphate, HOPS, and acidic lipid (Cheever et al., 2001; Lee et al., 2006; Stroupe et al., 2006; Karunakaran and Wickner, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "8a39a7c4-ebcb-4242-8426-995232f28b19",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C24",
+      "claim": "Vacuolar cis-SNARE complexes are disassembled by Sec17p and Sec18p in an ATP-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Vacuolar cis-SNARE complexes are disassembled by Sec17p and Sec18p in an ATP-dependent manner, allowing the SNAREs to reassemble into trans-complexes, which are essential for fusion (Haas and Wickner, 1996; Mayer et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "6f429325-1adf-486e-b0c0-e3823e404d41",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C25",
+      "claim": "Trans-SNARE complexes are essential for fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Vacuolar cis-SNARE complexes are disassembled by Sec17p and Sec18p in an ATP-dependent manner, allowing the SNAREs to reassemble into trans-complexes, which are essential for fusion (Haas and Wickner, 1996; Mayer et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "01088209-2a33-4de2-a8dd-08957ba214c2",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C26",
+      "claim": "HOPS mediates Rab-dependent tethering.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS fulfills several functions: Rab-dependent tethering (Hickey and Wickner, 2010), catalysis of the assembly of Vam7p into trans-SNARE complexes (Zick and Wickner, 2013), and protecting trans-SNARE complexes from Sec17p/Sec18p-mediated disassembly (Xu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "993c0434-9ee4-47b2-a0da-a0ce1a79e7a0",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C27",
+      "claim": "HOPS catalyzes the assembly of Vam7p into trans-SNARE complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS fulfills several functions: Rab-dependent tethering (Hickey and Wickner, 2010), catalysis of the assembly of Vam7p into trans-SNARE complexes (Zick and Wickner, 2013), and protecting trans-SNARE complexes from Sec17p/Sec18p-mediated disassembly (Xu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "dfa65065-7070-42de-8a2a-7de1b5252a00",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C28",
+      "claim": "HOPS protects trans-SNARE complexes from Sec17p/Sec18p-mediated disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "HOPS fulfills several functions: Rab-dependent tethering (Hickey and Wickner, 2010), catalysis of the assembly of Vam7p into trans-SNARE complexes (Zick and Wickner, 2013), and protecting trans-SNARE complexes from Sec17p/Sec18p-mediated disassembly (Xu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "2b8bc51b-c7ab-4719-a3e9-c0a16e5cf314",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C29",
+      "claim": "Proteoliposomes bearing the vacuolar R-SNARE and two fluorescent lipids (NBD-PE and rhodamine-PE) interact with non-fluorescent proteoliposomes bearing the three Q-SNAREs to give fluorescence dequenching.",
+      "claim_type": "EXPLICIT",
+      "source": "Shortly thereafter, it was demonstrated that proteoliposomes bearing the vacuolar R-SNARE and two fluorescent lipids that exhibit fluorescence quenching, NBD-PE and rhodamine-PE, will interact with non-fluorescent proteoliposomes bearing the three Q-SNAREs to give fluorescence dequenching (Fukuda et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "012b8d68-1046-4ded-9616-3dbf02ab1c1a",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C30",
+      "claim": "Vacuolar SNAREs are apparently unique among yeast SNAREs in that purified SNAREs of other yeast organelles will not mediate dequenching of fluorescent lipids on proteoliposomes without additional proteins or tethering factors.",
+      "claim_type": "EXPLICIT",
+      "source": "A very recent study (Furukawa and Mima, 2014) has shown that vacuolar SNAREs are apparently unique among the yeast SNAREs, in that the purified SNAREs of the other yeast organelles will not mediate the dequenching of fluorescent lipids on proteoliposomes without additional proteins or tethering factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "92bf2cd2-c368-46a0-811a-c004e77d67cd",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C31",
+      "claim": "Very little fusion was seen without a tethering agent when fusion was assayed by mixing of lumenally entrapped proteins while they remain inaccessible to an external competitor.",
+      "claim_type": "EXPLICIT",
+      "source": "In striking contrast, when fusion was assayed by the mixing of lumenally entrapped proteins while they remain inaccessible to an external competitor (Zucchi and Zick, 2011), very little fusion was seen without a tethering agent (Zick and Wickner, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "a5bf9d25-7508-4578-b025-503c0c642f21",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C32",
+      "claim": "Vacuolar SNAREs alone will only support membrane fusion with an extremely low efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "We now report that vacuolar SNAREs alone will only support membrane fusion with an extremely low efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "5226440e-45e7-48db-bf08-3224b9a6a877",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C33",
+      "claim": "Fluorescent lipid dequenching can occur due to trans-SNARE interactions that do not necessarily go on to fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, fluorescent lipid dequenching can apparently occur due to trans-SNARE interactions that do not necessarily go on to fusion, emphasizing the pivotal importance of content mixing experiments in membrane fusion studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing dequenching without proportional content mixing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "c79567ea-38b2-4654-9f03-8d95aafd49b5",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C34",
+      "claim": "A tethering/docking step is strictly required for rapid fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "A tethering/docking step is strictly required for rapid fusion, whether by the main physiological tethering system of Ypt7p and HOPS or by a vacuole-specific tethering mechanism mediated by the interaction of Vam7p's PX domain and PI(3)P in trans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing dramatically increased fusion rates with tethering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "29f63ad4-c933-45c8-8212-bccb1189a661",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C35",
+      "claim": "Lipid dequenching has been the most commonly used assay for membrane fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipid dequenching (Figure 1A, part 1) has been the most commonly used assay for membrane fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about membrane fusion assays.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "ee1e8ee7-d05a-4e39-b3ca-c72c7623645b",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C36",
+      "claim": "FRET efficiency varies with the 6th power of the average distance between fluorophores.",
+      "claim_type": "EXPLICIT",
+      "source": "FRET efficiency varies with the 6th power of the average distance between fluorophores (F\u00f6rster, 1948); thus, fusion to unlabeled proteoliposomes, causing a twofold dilution of fluorescent lipids and thereby an increased average distance between fluorophores, results in a remarkable loss of quenching, and the ensuing increase in donor fluorescence is taken as a measure of fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature on FRET physics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "8fcd9c6f-ec78-4a08-b33d-9321c08b8bd7",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C37",
+      "claim": "Hemifusion and lysis with re-annealing of bilayer fragments could lead to lipid mixing detected by dequenching assays.",
+      "claim_type": "EXPLICIT",
+      "source": "However, hemifusion (a possible intermediate in which only the outer leaflets of apposed bilayers join) and lysis (disruption of the lipid bilayer with a loss of lumenal integrity) and ensuing re-annealing of bilayer fragments could also lead to lipid mixing which would be detected by these assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference about possible mechanisms that could produce lipid mixing signals.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "af2efe31-a6e7-410e-99bf-dd991e1838e4",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C38",
+      "claim": "Proteoliposomes bearing all four SNAREs show lipid dequenching that requires HOPS, Sec17p, and Sec18p.",
+      "claim_type": "EXPLICIT",
+      "source": "In assays in which proteoliposomes bear each of the four SNAREs, as on the organelle itself, dequenching of the lipidic fluorophores (Figure 1C), lumenal compartment mixing which is continuously protected from external streptavidin (Figure 1D), and content mixing plus lysis (Figure 1E) required HOPS, Sec17p, and Sec18p",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "d402c5e5-6d20-41aa-9782-44418bac7dd7",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C39",
+      "claim": "Proteoliposomes bearing all four SNAREs show lumenal compartment mixing that requires HOPS, Sec17p, and Sec18p.",
+      "claim_type": "EXPLICIT",
+      "source": "In assays in which proteoliposomes bear each of the four SNAREs, as on the organelle itself, dequenching of the lipidic fluorophores (Figure 1C), lumenal compartment mixing which is continuously protected from external streptavidin (Figure 1D), and content mixing plus lysis (Figure 1E) required HOPS, Sec17p, and Sec18p",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "4e77c66a-2fd9-49cc-92ef-6535ae868427",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C40",
+      "claim": "Trans-SNARE complexes form between three Q-SNAREs anchored to one membrane and an R-SNARE anchored to the apposed membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies of organelle fusion (Ungermann et al., 1998), or dequenching experiments with proteoliposomes bearing SNARE combinations (Fukuda et al., 2000; Mima et al., 2008), have suggested that trans-SNARE complexes form between three Q-SNAREs anchored to one membrane and an R-SNARE (Nyv1p) anchored to the apposed membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "fb3da56f-19ce-4334-ba49-775a3660641a",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C41",
+      "claim": "Proteoliposomes with R-SNARE and 3Q-SNAREs on separate populations show very limited protected lumenal compartment mixing in the absence of other proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, these proteoliposomes showed very limited protected lumenal compartment mixing in the absence of other proteins (Figure 1G, column 1), although even this very limited fusion was blocked by Sec17p/Sec18p (column 5) and thus likely required direct trans-SNARE interaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "9c9c07c6-ddf4-4171-9cd5-c31e2d20bb9f",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C42",
+      "claim": "The very limited fusion between R-SNARE and 3Q-SNARE proteoliposomes without other proteins is blocked by Sec17p/Sec18p.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, these proteoliposomes showed very limited protected lumenal compartment mixing in the absence of other proteins (Figure 1G, column 1), although even this very limited fusion was blocked by Sec17p/Sec18p (column 5) and thus likely required direct trans-SNARE interaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "81795e2d-b5e1-49a8-a10f-205d0bfed821",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C43",
+      "claim": "Substantial fusion between R-SNARE and 3Q-SNARE proteoliposomes only occurs in the presence of HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "Substantial fusion only occurred in the presence of HOPS and, as noted before (Mima et al., 2008), was further enhanced by Sec17p/Sec18p in addition to HOPS (columns 4 and 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "57d0ce85-ab06-4f78-b7c4-37692f099c0e",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C44",
+      "claim": "There is substantial lipid dequenching between R-SNARE and 3Q-SNARE proteoliposomes without the addition of HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the dependence of content mixing on HOPS, there was substantial lipid dequenching without the addition of HOPS (Figure 1F, column 1), as reported (Mima et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "85712a61-1669-45e1-80de-3bbc4fc6daf5",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C45",
+      "claim": "The dequenching signal is seen when fluorescent lipids are on R-SNARE proteoliposomes but not when they are on 3Q-SNARE proteoliposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the dequenching signal was seen when the fluorescent lipids were both on the R-SNARE proteoliposomes, but not when they were on the 3Q-SNARE proteoliposomes (Figure 2A, dark gray bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "a4d9b070-341e-4315-94b9-4b26c99ec243",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C46",
+      "claim": "Increasing the proportion of non-fluorescent acceptor 3Q-SNARE proteoliposomes enhances the dequenching signal.",
+      "claim_type": "EXPLICIT",
+      "source": "As in most reported dequenching assays, increasing the proportion of non-fluorescent acceptor 3Q-SNARE proteoliposomes enhances the signal such that up to 60% of maximal dequenching is achieved in 10 min (Figure 2B, light gray columns), whereas little dequenching of fluorescent 3Q-SNARE proteoliposomes is seen when incubated with even a 16-fold excess of non-fluorescent 1R-proteoliposomes (Figure 2B, dark gray columns).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "e3f15f9f-580d-4842-95f9-099fe71ca399",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C47",
+      "claim": "Dequenching is blocked by antibody to Vam3p.",
+      "claim_type": "EXPLICIT",
+      "source": "Dequenching does require trans-SNARE interactions: it is blocked by antibody to Vam3p, by recombinant soluble domain of Nyv1p, or by Sec17p/Sec18p (Figure 2C, light gray columns), which are reported (Xu et al., 2010) to disassemble trans-SNARE complexes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "b206cc8f-ea8e-4ba2-8c97-a36dec983375",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C48",
+      "claim": "Dequenching is blocked by recombinant soluble domain of Nyv1p.",
+      "claim_type": "EXPLICIT",
+      "source": "Dequenching does require trans-SNARE interactions: it is blocked by antibody to Vam3p, by recombinant soluble domain of Nyv1p, or by Sec17p/Sec18p (Figure 2C, light gray columns), which are reported (Xu et al., 2010) to disassemble trans-SNARE complexes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "a6213cd5-3fae-43db-af38-f11d54f448d4",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C49",
+      "claim": "Dequenching is blocked by Sec17p/Sec18p.",
+      "claim_type": "EXPLICIT",
+      "source": "Dequenching does require trans-SNARE interactions: it is blocked by antibody to Vam3p, by recombinant soluble domain of Nyv1p, or by Sec17p/Sec18p (Figure 2C, light gray columns), which are reported (Xu et al., 2010) to disassemble trans-SNARE complexes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "bc5cc429-d497-41f0-b80a-d4837dd96630",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C50",
+      "claim": "Proteoliposomes with SNARE compositions other than 3Q on the acceptor do not support dequenching.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of the 14 compositions of SNAREs other than 3Q on the acceptor, non-fluorescent proteoliposomes did not support dequenching (Figure 2C, the average and standard deviation of these is shown for simplicity as a dark gray column).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "1c4d5a74-01fe-45a9-8ca8-f54ada138136",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C51",
+      "claim": "Proteoliposomes can undergo trans-SNARE interactions that lead to asymmetric lipid dequenching without symmetrical lipid mixing or proportionate fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, proteoliposomes can undergo trans-SNARE interactions that lead to asymmetric lipid dequenching without symmetrical lipid mixing or proportionate fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data showing asymmetric dequenching.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "7d5352cd-30fe-4a41-8861-8c6f6386dbb8",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C52",
+      "claim": "The asymmetry of lipid dequenching is not reflected in asymmetry of fusion as measured by protected lumenal content mixing.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetry of lipid dequenching, controlled by the distribution of the probes (Figure 3A), is not reflected in asymmetry of fusion per se in the very same incubations (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "76430913-b763-4e15-a25c-4b793388212a",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C53",
+      "claim": "Lipid quenching assays show an asymmetry in quenching that is not reflected in fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Even lipid quenching assays, in which MB-PE and NBD-PE are initially incorporated separately into R-SNARE or 3Q-SNARE proteoliposomes, show an asymmetry in quenching (Figure 3C) that is not reflected in fusion per se (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "1075cd21-b610-46ed-a504-5a808cf37504",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C54",
+      "claim": "The asymmetry in lipid dequenching could not be attributed to differences in RPL size.",
+      "claim_type": "EXPLICIT",
+      "source": "This asymmetry could not be attributed to differences in RPL size (Figure 3\u2014figure supplement 2), or fluorophore or protein incorporation (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "fe5708fc-1176-45dd-8353-09876e956ec3",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C55",
+      "claim": "The asymmetry in lipid dequenching could not be attributed to differences in fluorophore or protein incorporation.",
+      "claim_type": "EXPLICIT",
+      "source": "This asymmetry could not be attributed to differences in RPL size (Figure 3\u2014figure supplement 2), or fluorophore or protein incorporation (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "bd447a0b-274e-494d-be6c-893c2d651146",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C56",
+      "claim": "The asymmetric dequenching behavior is not limited to a specific set of fluorescent lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "3Q- and 1R-proteoliposomes were prepared with three sets of fluorescent PE probes, either MB and NBD, NBD and rhodamine, or Oregon-Green and Texas-Red. In the absence of HOPS or Sec17p/Sec18p, the same asymmetric dequenching signal was seen in each case (Figure 4A\u2013C, no addition).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "ecd28929-0d8a-4d49-9add-2b047f4f77c6",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C57",
+      "claim": "Asymmetric dequenching is not proportionate to content mixing for each reaction condition.",
+      "claim_type": "EXPLICIT",
+      "source": "We do not know how trans-SNARE interactions lead to this dequenching, but it is not symmetric, as expected for true lipid mixing, and is not proportionate to the content mixing for each reaction condition; thus, it cannot be relied on as a faithful reporter of fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data comparing dequenching and content mixing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "25734a3f-366b-4b67-9c1b-82c011180ae7",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C58",
+      "claim": "With PI(3)P only on R-SNARE proteoliposomes, fusion is as vigorous without HOPS as in its presence.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, with PI(3)P only on the R-SNARE proteoliposomes, fusion was as vigorous without HOPS as in its presence (Figure 5, columns 5 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "110fd7ee-cf9f-40d3-8979-79542ebb1d6e",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C59",
+      "claim": "Fusion with PI(3)P on R-SNARE proteoliposomes is blocked by Sec17p/Sec18p.",
+      "claim_type": "EXPLICIT",
+      "source": "This fusion was blocked by Sec17p/Sec18p (column 6) and was not seen when the PI(3)P was entirely absent (column 1) or when PI(3)P was only on the 3Q-SNARE proteoliposomes (column 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "70452be4-f366-4eca-85be-dcbbde2a2209",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C60",
+      "claim": "Content mixing is strongly suppressed when PI(3)P is present on both R-SNARE and 3Q-SNARE proteoliposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The content mixing that was seen when PI(3)P was on the R-SNARE proteoliposomes alone was strongly suppressed when PI(3)P was present on the 3Q-RPLs as well (columns 5 vs 13), presumably because the PX domain is engaged in an interaction with PI(3)P in cis, rendering a trans interaction less likely.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5 and inference about PX domain interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "8bc3c590-62bf-4bc0-9e68-69bcf0b858d1",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C61",
+      "claim": "Fusion supported by PI(3)P on R-SNARE proteoliposomes can be ascribed to its binding in trans by the PX domain of Vam7p.",
+      "claim_type": "EXPLICIT",
+      "source": "The fusion that is supported by the presence of PI(3)P on the R-SNARE proteoliposomes can be ascribed to its binding in trans by the PX domain of Vam7p, as 3Q-SNARE proteoliposomes which were made with Vam7p\u0394PX will not fuse with R-SNARE proteoliposomes which bear PI(3)P (column 17).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5 using Vam7p lacking the PX domain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "3aaa4cea-c3e5-40fa-8ae4-b9f4401d701c",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C62",
+      "claim": "SNARE-bearing RPLs alone can undergo detectable fusion on their own, albeit at less than a 100th the rate as seen in the presence of HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether SNARE-bearing RPLs alone can undergo any full fusion at all on their own, we performed an extended fusion assay with 3Q- and 1R-proteoliposomes without PI(3)P in the presence or absence of added HOPS (Figure 5B). Detectable fusion could in fact be supported by SNAREs alone (blue), albeit at less than a 100th the rate as seen in the presence of HOPS (red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "695ea104-0430-4747-9e2b-f4b1b0a21d6d",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C63",
+      "claim": "The presence of HOPS leads to an increase in trans-association of membrane anchored SNAREs that is less than fourfold.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of HOPS led to an increase in the trans-association of membrane anchored SNAREs (Figure 6B, compare lanes 3 and 4). However, this increase was less than fourfold, and thus insufficient to explain the difference in content mixing rates (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "a0b1abb1-7ae9-4622-b53e-9fd86f3ae804",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C64",
+      "claim": "About one third as much trans-SNARE complex forms in the absence of HOPS as in its presence.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitation of replicate experiments (Figure 6C) shows that about one third as much trans-SNARE complex formed in the absence of HOPS (column 3) as in its presence (column 4), whereas fusion was over 100 times faster in the presence of HOPS (columns 1, 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "285cd73a-e36a-4c43-a0d4-99d7ab4de2e5",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C65",
+      "claim": "Soluble Nyv1p at 100 nM readily binds to Q-SNAREs regardless of the presence or absence of HOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "When incubations bore the recombinant soluble domain of Nyv1p at the same 100 nM concentration as was otherwise present on RPLs in our assay, the soluble Nyv1p readily bound to the Q-SNAREs regardless of the presence or absence of HOPS (Figure 6B, compare lanes 7 and 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "69a7596e-9b1e-494f-ad1f-bc198e14cf6d",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C66",
+      "claim": "100 nM soluble Nyv1p can suppress most of the content mixing reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, 100 nM soluble Nyv1p can suppress most of the content mixing reaction (Figure 6D), just as fusion was blocked by the mixed soluble domains of the three Q-SNAREs (Figure 6\u2014figure supplement 3), and inhibition by added soluble domain of Nyv1p was reversible by including the SNARE complex disassembly chaperones Sec17/Sec18 (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "113f20b0-881f-4d9f-a7b3-af41b826e634",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C67",
+      "claim": "The 3Q-SNARE complexes are capable of engaging in complex formation with membrane-bound R-SNAREs in a manner that does not lead to fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the 3Q-SNARE complexes were capable of engaging in complex formation with membrane-bound R-SNAREs, but in a manner that did not lead to fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data showing SNARE complex formation without proportional fusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "40f338bb-fe86-4dc3-bbc6-d912480bca88",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C68",
+      "claim": "Lower levels of Nyv1p do not lead to a drastic diminution of fusion activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower levels of Nyv1p did not lead to a drastic diminution of fusion activity (Figure 7A,C), but resulted in lower amounts of trans-SNARE association (Figure 7B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 7A and 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "d7eb5f5b-41ca-46eb-980f-b5608c408624",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C69",
+      "claim": "Lower levels of Nyv1p result in lower amounts of trans-SNARE association.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower levels of Nyv1p did not lead to a drastic diminution of fusion activity (Figure 7A,C), but resulted in lower amounts of trans-SNARE association (Figure 7B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 7B and 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "93683888-0330-4d2b-b032-07018eaedc5a",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C70",
+      "claim": "The requirement for high cooperativity of SNARE complexes can be ruled out as an explanation for the discrepancy between increases in trans-SNARE interaction and fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the amount of trans-SNARE interaction that was detected at low Nyv1p levels with HOPS was lower than the amount seen with high Nyv1p levels without HOPS (Figure 7B,D, lane 2 vs lane 7), yet the amount of fusion was drastically higher in the sample containing HOPS (Figure 7A,C, lane 2 vs lane 7), the requirement for high cooperativity can be ruled out as an explanation for the observed discrepancy between increases in trans-SNARE interaction and fusion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the experimental data comparing trans-SNARE association and fusion at different Nyv1p levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "56b61041-df57-4e69-8ff0-6a1a33b28f5c",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C71",
+      "claim": "The role of HOPS and tethering goes beyond merely facilitating trans-SNARE complex formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of HOPS stimulates the fusion reaction more than 100-fold, yet it only increases the amount of trans-SNARE interaction a few-fold (Figure 6C,D). This shows that the role of HOPS and tethering goes beyond merely facilitating trans-SNARE complex formation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the disproportionate effects of HOPS on fusion versus trans-SNARE complex formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "bb655278-eea2-49e1-b02b-ac703340eda3",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C72",
+      "claim": "Trans-SNARE complexes that form spontaneously are very inefficient in catalyzing membrane fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "The trans-SNARE complexes that form spontaneously are very inefficient in catalyzing membrane fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data showing low fusion rates without tethering.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "9608b40a-d3ff-434b-9475-c1669717bd75",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C73",
+      "claim": "Additional factors are important to produce trans-SNARE interaction of the right quality to facilitate membrane fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that it is not just a matter of quantity, but that additional factors are important to produce trans-SNARE interaction of the right quality to facilitate membrane fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data showing disproportionate effects on fusion versus trans-SNARE complex formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "089154ce-f850-45ad-b883-b35f3cfbebbd",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C74",
+      "claim": "Fusion-incompetent SNARE complexes have been observed in other systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Fusion-incompetent SNARE complexes have been observed in other systems (reviewed in Brunger, 2005; Rizo and Sudhof, 2012), and it will be crucial to determine what differentiates a productive from a non-productive complex, and what aids the formation of one over the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "24bce995-8ec8-49e0-b75c-18061a812431",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C75",
+      "claim": "A distinct tethering step is a critical upstream event that substantially increases the rate of SNARE-mediated fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings do not vitiate the central role of trans-SNARE complexes in fusion; rather, they reveal that a distinct tethering step is a critical upstream event that substantially increases the rate of SNARE-mediated fusion, as suggested (Smith and Weisshaar, 2011), and its mode of action is not limited to increasing the quantity of trans-SNARE pairings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data and is supported by citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "7c1c0b2d-d0fa-4109-80d6-21c128f0276a",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C76",
+      "claim": "Lipid mixing was reported to occur as a result of fairly promiscuous endosomal trans-SNARE pairing without auxiliary proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconstitution studies using lipid dequenching assays and endosomal SNAREs have also suggested that SNAREs alone suffice to drive fusion efficiently. Lipid mixing was reported to occur as a result of fairly promiscuous endosomal trans-SNARE pairing (Brandhorst et al., 2006) and in multiple topologies (Zwilling et al., 2007) without auxiliary proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "f38a3ea8-177b-49e5-b63b-9b849674a679",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C77",
+      "claim": "A Rab GTPase and its effectors are essential for endosomal SNARE-mediated fusion as measured by content mixing assay.",
+      "claim_type": "EXPLICIT",
+      "source": "However, another study (Ohya et al., 2009), which employed a content mixing assay to measure fusion, found that a Rab GTPase and its effectors are essential for endosomal SNARE-mediated fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "90e1ad0b-1a93-4f56-81ef-da0335ea0da2",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C78",
+      "claim": "Neuronal SNARE assembly into a four-helical bundle only occurs very slowly without additional factors.",
+      "claim_type": "EXPLICIT",
+      "source": "While SNAREs are undoubtedly essential components, their spontaneous assembly into a four-helical bundle only occurs very slowly (Pobbati et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "fdc02221-f06c-42a0-871f-5fa87bedd5c8",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C79",
+      "claim": "Munc18 and Munc13 play critical roles during neuronal SNARE-mediated fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Rizo's group has provided compelling evidence for the critical roles of Munc18 and Munc13 during neuronal SNARE-mediated fusion, together with NSF/SNAP and the soluble domain of synaptotagmin 1 (Ma et al., 2013), while Brunger's group has shown that complexin has a large effect on Ca2+ triggered synchronized fusion in the presence of neuronal SNAREs and full-length synaptotagmin 1 (Diao et al., 2012; Lai et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "605e883e-6deb-4809-bdaa-cb829c52016d",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C80",
+      "claim": "Complexin has a large effect on Ca2+ triggered synchronized fusion in the presence of neuronal SNAREs and full-length synaptotagmin 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Rizo's group has provided compelling evidence for the critical roles of Munc18 and Munc13 during neuronal SNARE-mediated fusion, together with NSF/SNAP and the soluble domain of synaptotagmin 1 (Ma et al., 2013), while Brunger's group has shown that complexin has a large effect on Ca2+ triggered synchronized fusion in the presence of neuronal SNAREs and full-length synaptotagmin 1 (Diao et al., 2012; Lai et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "17529923-da1e-47c9-b6c0-1f3fafd43320",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C81",
+      "claim": "The highly selective distribution of each Rab GTPase could impose specificity on otherwise promiscuous SNARE complex assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The highly selective distribution of each Rab GTPase, which serves as a receptor for its cognate tethering complex (Hutagalung and Novick, 2011), could impose specificity on otherwise promiscuous SNARE complex assembly (Yang et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference and is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "c3755449-1129-41c2-bc70-cce7110ea39a",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C82",
+      "claim": "Membrane repulsion and the conformation of unpaired, membrane-anchored SNAREs may limit the spontaneous formation of trans-SNARE complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane repulsion and the conformation of unpaired, membrane-anchored SNAREs may limit the spontaneous formation of trans-SNARE complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about mechanisms limiting spontaneous SNARE complex formation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "fcdb8a36-350b-4756-ba7c-02fa138d26d0",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C83",
+      "claim": "Bringing membranes into close apposition and stabilizing a tethered intermediate drastically enriches the local concentration of SNAREs and facilitates interactions that promote trans-SNARE complex formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Bringing membranes into close apposition and stabilizing such a tethered intermediate drastically enriches the local concentration of SNAREs and facilitates the interactions that promote trans-SNARE complex formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference about the mechanism by which tethering promotes SNARE complex formation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "c0146462-9361-4431-8b2b-25c7d9824a38",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C84",
+      "claim": "Some multi-subunit tethering complexes could directly modulate the assembly of functional SNARE complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies suggested that some multi-subunit tethering complexes could also directly modulate the assembly of functional SNARE complexes (reviewed in Hong and Lev, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "084513e0-a508-41e7-9f17-fed2a262dfc8",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C85",
+      "claim": "Only a minor fraction (a few percent) of SNAREs engage in trans-SNARE complexes even in a tethered state.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, even in a tethered state, only a minor fraction (a few percent) of SNAREs seem to engage in such complexes (Mima et al., 2008) and lowering the SNARE concentration only a few-fold can take a substantial toll on fusion activity (Zick et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "8fd7f53d-565c-45b9-98e1-9518984a5311",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C86",
+      "claim": "Sec17p/Sec18p relieved the inhibition by soluble SNARE proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that Sec17p/Sec18p relieved the inhibition by soluble SNARE proteins (Figure 6E and Figure 6\u2014figure supplement 3B) demonstrates the importance of dynamic cycling of SNARE interactions, and highlights the ability of HOPS to selectively protect productive trans-SNARE pairs (Starai et al., 2008; Hickey and Wickner, 2010; Xu et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6E and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "ed502646-e757-41b9-8f01-09534eb0221c",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C87",
+      "claim": "HOPS can selectively protect productive trans-SNARE pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that Sec17p/Sec18p relieved the inhibition by soluble SNARE proteins (Figure 6E and Figure 6\u2014figure supplement 3B) demonstrates the importance of dynamic cycling of SNARE interactions, and highlights the ability of HOPS to selectively protect productive trans-SNARE pairs (Starai et al., 2008; Hickey and Wickner, 2010; Xu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "c0582aff-21dd-475f-bc03-6b1c4c72ff69",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C88",
+      "claim": "ATP-dependent priming entails phosphoinositide synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP-dependent priming entails phosphoinositide synthesis (Mayer et al., 2000) and the disassembly of cis-SNARE complexes by Sec17p/Sec18p/ATP (Haas and Wickner, 1996; Mayer et al., 1996), providing SNAREs for later assembly of trans-SNARE complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "f590c915-7f9e-4329-9848-6ce00a0593b7",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C89",
+      "claim": "Neuronal SNAREs can associate in multiple conformations that can participate in docking.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal SNAREs can associate in multiple conformations (Weninger et al., 2003) that can participate in docking (Bowen et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "7f4cb436-0378-4f7c-aa29-e0d8333ff000",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C90",
+      "claim": "Vacuolar SNAREs may associate in several conformations when pairing in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the vacuolar SNAREs may associate in several conformations when pairing in trans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference by analogy to neuronal SNAREs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "7bafe3e8-6034-44b4-95c4-8f1560e7209d",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C91",
+      "claim": "Additional factors that guide the formation of fusion-competent complexes are required for rapid fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional factors that guide the formation of fusion-competent complexes, which might differ from fusion-incompetent complexes in composition, conformation, or associations, are required for rapid fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "45d39f73-af7b-41bc-97d0-b646c133fd4f",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C92",
+      "claim": "Tethering via HOPS or the binding of the Vam7p PX domain to PI(3)P in trans can provide guidance for formation of fusion-competent complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that tethering via HOPS or the binding of the Vam7p PX domain to PI(3)P in trans can provide such guidance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "467a14a7-a31e-4888-adfa-3bf4c3232a8b",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C93",
+      "claim": "The rate of fusion is not directly proportional to the level of trans-SNARE complexes on intact vacuoles.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier studies of intact vacuoles have also shown that the rate of fusion is not directly proportional to the level of trans-SNARE complexes (Ungermann et al., 1998), suggesting that only a fraction of trans-SNARE interactions might also contribute to fusion activity in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and inference about in vivo relevance.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "40d274a2-ef4c-4a45-99d1-8eef59cc5044",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C94",
+      "claim": "Tethering may play a direct role in lowering the energy barrier for fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its role in facilitating the formation of fusion-competent trans-SNARE complexes, tethering may play a direct role in lowering the energy barrier for fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about additional roles of tethering.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "455aaf52-1e95-4d61-8789-cda35bb62ee6",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C95",
+      "claim": "Tethering could provide the activation energy required for partially assembled SNARE complexes to fully zipper.",
+      "claim_type": "EXPLICIT",
+      "source": "Tethering could provide the activation energy required for partially assembled SNARE complexes to fully zipper (Min et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation supported by citations to prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "a2084981-4014-4e8a-b756-eeed04cb03ab",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C96",
+      "claim": "Tethering could contribute to fusion by inducing membrane bending at the edges of tightly apposed membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "It could also contribute by inducing membrane bending at the edges of tightly apposed membranes (Wang et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation supported by citations to prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "5705d4c2-3b67-4854-a7b9-afb7f7b43ce7",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C97",
+      "claim": "Domains like the vertex ring in vacuole fusion require tethering complexes for their formation and stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Domains like the vertex ring in vacuole fusion (Wang et al., 2002, 2003; Fratti et al., 2004) require tethering complexes for their formation and stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "fc9e3e28-3102-4ede-bb96-9751f020fb1e",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C98",
+      "claim": "Fusogenic lipids such as phosphatidylethanolamine, diacylglycerol, and sterol are required for fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Fusogenic lipids, such as the non-bilayer lipids phosphatidylethanolamine, diacylglycerol, and sterol, are required for fusion (Zick et al., 2014) and are dependent on other lipids and docking proteins for their enrichment at the vertex ring (Fratti et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "a835f80e-32f8-49ae-a98c-941df4186571",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C99",
+      "claim": "Fusogenic lipids are dependent on other lipids and docking proteins for their enrichment at the vertex ring.",
+      "claim_type": "EXPLICIT",
+      "source": "Fusogenic lipids, such as the non-bilayer lipids phosphatidylethanolamine, diacylglycerol, and sterol, are required for fusion (Zick et al., 2014) and are dependent on other lipids and docking proteins for their enrichment at the vertex ring (Fratti et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "bec9f03a-8a8f-42a5-8e03-a01eb59e97c9",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "claim_id": "C100",
+      "claim": "Tethering may make several direct contributions to fusion, as well as its role in promoting trans-SNARE complexes in conjunction with additional auxiliary proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that tethering may thus make several direct contributions to fusion, as well as its role in promoting trans-SNARE complexes in conjunction with additional auxiliary proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation and inference from the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "09a38acb-31e3-49f0-ac26-c4909a270558",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Vacuolar SNAREs alone support minimal membrane fusion. While prior studies using lipid dequenching assays suggested SNAREs alone suffice for fusion (C1), the authors demonstrate using lumenal content mixing assays that SNAREs alone produce very limited fusion (C2, C32, C41). Extended assays show detectable fusion occurs at less than 1/100th the rate compared to when HOPS is present (C62), and substantial fusion only occurs with HOPS (C43).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C32, C41, C42, C43, and C62 are directly supported by experimental data shown in Figures 1G and 5B, demonstrating minimal content mixing without HOPS and dramatic enhancement with HOPS. The contrast with prior literature (C1) is appropriately contextualized. The quantitative comparison (>100-fold difference) is experimentally validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "f36bbb10-498d-4c02-9233-58728ac4a9ff",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Lipid dequenching assays show asymmetric behavior that does not reliably report fusion. The authors demonstrate that lipid dequenching occurs asymmetrically depending on which proteoliposome population contains fluorescent lipids (C45, C46), requires trans-SNARE interactions (C47-C49), but is not proportionate to actual content mixing (C52, C53, C57). This asymmetry is independent of fluorophore type (C56), RPL size, or protein incorporation (C54, C55), indicating that lipid dequenching can occur without true fusion (C4, C33, C51).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The asymmetric dequenching behavior is well-documented across multiple experimental conditions (Figures 2A-C, 3A-D, 4A-C) with appropriate controls ruling out technical artifacts (Figure 3 supplements 2-3). The disconnect between lipid mixing and content mixing is consistently demonstrated. However, the mechanism underlying the asymmetry remains unexplained, which the authors acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "eec94bd1-aa35-41d5-98c5-e479ceadaffc",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Tethering is required for efficient membrane fusion. The authors show that tethering via HOPS or through trans-interaction of Vam7p's PX domain with PI(3)P on R-SNARE proteoliposomes dramatically enhances fusion (C5, C34, C58). When PI(3)P is only on R-SNARE proteoliposomes, fusion is as vigorous without HOPS as with it (C58), but this is blocked by Sec17p/Sec18p (C59) and requires the PX domain of Vam7p (C61). The effect is suppressed when PI(3)P is on both populations (C60).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims are well-supported by experimental data in Figure 5A showing the specific requirement for PI(3)P on R-SNARE proteoliposomes and the necessity of the Vam7p PX domain. The mechanistic interpretation that PX-PI(3)P interaction provides tethering is supported by the asymmetric distribution requirement and the loss of function with Vam7p\u0394PX. Controls with Sec17p/Sec18p confirm SNARE-dependence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "61d79f89-70c2-4879-9ffc-42e6d155fa52",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "HOPS increases fusion rate disproportionately to its effect on trans-SNARE complex formation. HOPS causes a few-fold increase in trans-SNARE association (C6, C63, C64) but increases the rate of content mixing more than 100-fold (C7, C64). This demonstrates that tethering's role extends beyond simply increasing trans-SNARE complex quantity (C8, C71), suggesting that spontaneously formed trans-SNARE complexes are inefficient at catalyzing fusion (C72) and that additional factors are needed to produce fusion-competent complexes (C73).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The disproportionate effects are quantitatively demonstrated in Figure 6C with replicate experiments. The co-immunoprecipitation data (Figure 6B) provides direct measurement of trans-SNARE association, while content mixing assays (Figure 6A) measure fusion. The ~3-fold increase in SNARE association versus >100-fold increase in fusion is clearly documented. The inference about complex quality versus quantity is logical given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "c79ce004-8ab8-4344-ad20-6965b51ab94b",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Trans-SNARE complex formation does not require HOPS, but fusion efficiency does. Soluble Nyv1p readily binds Q-SNAREs regardless of HOPS presence (C65) and can suppress content mixing (C66), indicating 3Q-SNAREs can form complexes with R-SNAREs without leading to fusion (C67). Lowering Nyv1p levels reduces trans-SNARE association (C69) without drastically reducing fusion activity (C68), ruling out high cooperativity as an explanation for the HOPS effect (C70).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims are supported by experimental data in Figures 6B, 6D-E, and 7A-D. The ability of soluble Nyv1p to bind Q-SNAREs and inhibit fusion demonstrates that SNARE complex formation per se is not limiting. The titration experiments with varying Nyv1p levels (Figure 7) provide strong evidence against a cooperativity model, as lower trans-SNARE levels with HOPS still produce more fusion than higher levels without HOPS.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "4acc1370-72c2-4f72-ad9b-ec7eb738ccec",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A distinct tethering step is critical for SNARE-mediated fusion beyond increasing trans-SNARE pairing quantity. The authors conclude that tethering substantially increases fusion rates (C75) and that additional factors guide formation of fusion-competent complexes (C91), with HOPS or Vam7p PX domain-PI(3)P interaction providing such guidance (C92).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This conclusion is well-supported by the collective experimental evidence showing: (1) minimal fusion without tethering, (2) disproportionate effects of HOPS on fusion versus trans-SNARE association, and (3) rescue of fusion by alternative tethering mechanisms (PX-PI(3)P). The inference that tethering guides formation of productive complexes is logical given the data, though the molecular mechanism remains to be determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "2bd2c64e-c00a-47bf-88c8-fed0b0c32ee7",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Proteoliposomes bearing all four SNAREs require HOPS, Sec17p, and Sec18p for both lipid dequenching and lumenal content mixing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims are directly supported by experimental data shown in Figures 1C and 1D. This establishes the baseline requirement for the complete system mimicking intact vacuoles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "5d36b160-282f-4cc8-9a78-3d3e1a83f5aa",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sec17p/Sec18p relieves inhibition by soluble SNARE proteins, demonstrating dynamic cycling of SNARE interactions and HOPS's ability to protect productive trans-SNARE pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C86 is supported by experimental data in Figure 6E and supplementary figures. Claim C87 is supported by citations to prior literature. The interpretation about dynamic cycling is reasonable given the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "646988e3-905d-4123-9fac-cec5be0fe7ec",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background information on eukaryotic cell organization, vesicular trafficking, vacuole biology, and prior reconstitution studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide established background knowledge and citations to prior literature. They are appropriately referenced and provide necessary context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "e688b16e-ea34-4c8b-81a8-c5b9ef47d625",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Discussion of prior work in other fusion systems and related findings from the literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims appropriately cite and discuss prior literature on neuronal SNAREs, endosomal SNAREs, and related fusion systems. They provide important context for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    },
+    {
+      "id": "5d95a14d-7abd-4ed0-88c9-1105a6e815ae",
+      "content_id": "5ea3c311-86b6-42b2-a814-a5a1ede83b8d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Speculative mechanistic proposals for how tethering may facilitate fusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims are explicitly speculative (C82, C94, C95, C96) or based on inference by analogy (C90). While they represent reasonable hypotheses consistent with the data, they are not directly tested in this manuscript. The authors appropriately present them as possibilities rather than established facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T21:27:37.496933Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5eae4485-0c2f-4f9e-b844-1dc63734633f",
+      "result_id": "09a38acb-31e3-49f0-ac26-c4909a270558"
+    },
+    {
+      "claim_id": "f1ff0d27-9f3c-43b5-b8bb-399b3df4cff7",
+      "result_id": "09a38acb-31e3-49f0-ac26-c4909a270558"
+    },
+    {
+      "claim_id": "a5bf9d25-7508-4578-b025-503c0c642f21",
+      "result_id": "09a38acb-31e3-49f0-ac26-c4909a270558"
+    },
+    {
+      "claim_id": "fb3da56f-19ce-4334-ba49-775a3660641a",
+      "result_id": "09a38acb-31e3-49f0-ac26-c4909a270558"
+    },
+    {
+      "claim_id": "9c9c07c6-ddf4-4171-9cd5-c31e2d20bb9f",
+      "result_id": "09a38acb-31e3-49f0-ac26-c4909a270558"
+    },
+    {
+      "claim_id": "81795e2d-b5e1-49a8-a10f-205d0bfed821",
+      "result_id": "09a38acb-31e3-49f0-ac26-c4909a270558"
+    },
+    {
+      "claim_id": "3aaa4cea-c3e5-40fa-8ae4-b9f4401d701c",
+      "result_id": "09a38acb-31e3-49f0-ac26-c4909a270558"
+    },
+    {
+      "claim_id": "2c7d869f-93ee-46ca-8a6d-f72ab3189db8",
+      "result_id": "f36bbb10-498d-4c02-9233-58728ac4a9ff"
+    },
+    {
+      "claim_id": "64d90cb7-e772-426d-813a-b99713266cbc",
+      "result_id": "f36bbb10-498d-4c02-9233-58728ac4a9ff"
+    },
+    {
+      "claim_id": "5226440e-45e7-48db-bf08-3224b9a6a877",
+      "result_id": "f36bbb10-498d-4c02-9233-58728ac4a9ff"
+    },
+    {
+      "claim_id": "57d0ce85-ab06-4f78-b7c4-37692f099c0e",
+      "result_id": "f36bbb10-498d-4c02-9233-58728ac4a9ff"
+    },
+    {
+      "claim_id": "85712a61-1669-45e1-80de-3bbc4fc6daf5",
+      "result_id": "f36bbb10-498d-4c02-9233-58728ac4a9ff"
+    },
+    {
+      "claim_id": "a4d9b070-341e-4315-94b9-4b26c99ec243",
+      "result_id": "f36bbb10-498d-4c02-9233-58728ac4a9ff"
+    },
+    {
+      "claim_id": "e3f15f9f-580d-4842-95f9-099fe71ca399",
+      "result_id": "f36bbb10-498d-4c02-9233-58728ac4a9ff"
+    },
+    {
+      "claim_id": "b206cc8f-ea8e-4ba2-8c97-a36dec983375",
+      "result_id": "f36bbb10-498d-4c02-9233-58728ac4a9ff"
+    },
+    {
+      "claim_id": "a6213cd5-3fae-43db-af38-f11d54f448d4",
+      "result_id": "f36bbb10-498d-4c02-9233-58728ac4a9ff"
+    },
+    {
+      "claim_id": "bc5cc429-d497-41f0-b80a-d4837dd96630",
+      "result_id": "f36bbb10-498d-4c02-9233-58728ac4a9ff"
+    },
+    {
+      "claim_id": "1c4d5a74-01fe-45a9-8ca8-f54ada138136",
+      "result_id": "f36bbb10-498d-4c02-9233-58728ac4a9ff"
+    },
+    {
+      "claim_id": "7d5352cd-30fe-4a41-8861-8c6f6386dbb8",
+      "result_id": "f36bbb10-498d-4c02-9233-58728ac4a9ff"
+    },
+    {
+      "claim_id": "76430913-b763-4e15-a25c-4b793388212a",
+      "result_id": "f36bbb10-498d-4c02-9233-58728ac4a9ff"
+    },
+    {
+      "claim_id": "1075cd21-b610-46ed-a504-5a808cf37504",
+      "result_id": "f36bbb10-498d-4c02-9233-58728ac4a9ff"
+    },
+    {
+      "claim_id": "fe5708fc-1176-45dd-8353-09876e956ec3",
+      "result_id": "f36bbb10-498d-4c02-9233-58728ac4a9ff"
+    },
+    {
+      "claim_id": "bd447a0b-274e-494d-be6c-893c2d651146",
+      "result_id": "f36bbb10-498d-4c02-9233-58728ac4a9ff"
+    },
+    {
+      "claim_id": "ecd28929-0d8a-4d49-9add-2b047f4f77c6",
+      "result_id": "f36bbb10-498d-4c02-9233-58728ac4a9ff"
+    },
+    {
+      "claim_id": "d2dd0808-dad6-4b02-841c-972c6e726a6a",
+      "result_id": "eec94bd1-aa35-41d5-98c5-e479ceadaffc"
+    },
+    {
+      "claim_id": "c79567ea-38b2-4654-9f03-8d95aafd49b5",
+      "result_id": "eec94bd1-aa35-41d5-98c5-e479ceadaffc"
+    },
+    {
+      "claim_id": "25734a3f-366b-4b67-9c1b-82c011180ae7",
+      "result_id": "eec94bd1-aa35-41d5-98c5-e479ceadaffc"
+    },
+    {
+      "claim_id": "110fd7ee-cf9f-40d3-8979-79542ebb1d6e",
+      "result_id": "eec94bd1-aa35-41d5-98c5-e479ceadaffc"
+    },
+    {
+      "claim_id": "70452be4-f366-4eca-85be-dcbbde2a2209",
+      "result_id": "eec94bd1-aa35-41d5-98c5-e479ceadaffc"
+    },
+    {
+      "claim_id": "8bc3c590-62bf-4bc0-9e68-69bcf0b858d1",
+      "result_id": "eec94bd1-aa35-41d5-98c5-e479ceadaffc"
+    },
+    {
+      "claim_id": "6f36ae88-6262-4101-a109-aee09060e182",
+      "result_id": "61d79f89-70c2-4879-9ffc-42e6d155fa52"
+    },
+    {
+      "claim_id": "699285f8-b784-4d40-9e5d-e59b1eb90540",
+      "result_id": "61d79f89-70c2-4879-9ffc-42e6d155fa52"
+    },
+    {
+      "claim_id": "21dd711c-ad86-4021-b068-56385b85a899",
+      "result_id": "61d79f89-70c2-4879-9ffc-42e6d155fa52"
+    },
+    {
+      "claim_id": "695ea104-0430-4747-9e2b-f4b1b0a21d6d",
+      "result_id": "61d79f89-70c2-4879-9ffc-42e6d155fa52"
+    },
+    {
+      "claim_id": "a0b1abb1-7ae9-4622-b53e-9fd86f3ae804",
+      "result_id": "61d79f89-70c2-4879-9ffc-42e6d155fa52"
+    },
+    {
+      "claim_id": "56b61041-df57-4e69-8ff0-6a1a33b28f5c",
+      "result_id": "61d79f89-70c2-4879-9ffc-42e6d155fa52"
+    },
+    {
+      "claim_id": "bb655278-eea2-49e1-b02b-ac703340eda3",
+      "result_id": "61d79f89-70c2-4879-9ffc-42e6d155fa52"
+    },
+    {
+      "claim_id": "9608b40a-d3ff-434b-9475-c1669717bd75",
+      "result_id": "61d79f89-70c2-4879-9ffc-42e6d155fa52"
+    },
+    {
+      "claim_id": "285cd73a-e36a-4c43-a0d4-99d7ab4de2e5",
+      "result_id": "c79ce004-8ab8-4344-ad20-6965b51ab94b"
+    },
+    {
+      "claim_id": "69a7596e-9b1e-494f-ad1f-bc198e14cf6d",
+      "result_id": "c79ce004-8ab8-4344-ad20-6965b51ab94b"
+    },
+    {
+      "claim_id": "113f20b0-881f-4d9f-a7b3-af41b826e634",
+      "result_id": "c79ce004-8ab8-4344-ad20-6965b51ab94b"
+    },
+    {
+      "claim_id": "40f338bb-fe86-4dc3-bbc6-d912480bca88",
+      "result_id": "c79ce004-8ab8-4344-ad20-6965b51ab94b"
+    },
+    {
+      "claim_id": "d7eb5f5b-41ca-46eb-980f-b5608c408624",
+      "result_id": "c79ce004-8ab8-4344-ad20-6965b51ab94b"
+    },
+    {
+      "claim_id": "93683888-0330-4d2b-b032-07018eaedc5a",
+      "result_id": "c79ce004-8ab8-4344-ad20-6965b51ab94b"
+    },
+    {
+      "claim_id": "24bce995-8ec8-49e0-b75c-18061a812431",
+      "result_id": "4acc1370-72c2-4f72-ad9b-ec7eb738ccec"
+    },
+    {
+      "claim_id": "7bafe3e8-6034-44b4-95c4-8f1560e7209d",
+      "result_id": "4acc1370-72c2-4f72-ad9b-ec7eb738ccec"
+    },
+    {
+      "claim_id": "45d39f73-af7b-41bc-97d0-b646c133fd4f",
+      "result_id": "4acc1370-72c2-4f72-ad9b-ec7eb738ccec"
+    },
+    {
+      "claim_id": "af2efe31-a6e7-410e-99bf-dd991e1838e4",
+      "result_id": "2bd2c64e-c00a-47bf-88c8-fed0b0c32ee7"
+    },
+    {
+      "claim_id": "d402c5e5-6d20-41aa-9782-44418bac7dd7",
+      "result_id": "2bd2c64e-c00a-47bf-88c8-fed0b0c32ee7"
+    },
+    {
+      "claim_id": "8fd7f53d-565c-45b9-98e1-9518984a5311",
+      "result_id": "5d36b160-282f-4cc8-9a78-3d3e1a83f5aa"
+    },
+    {
+      "claim_id": "ed502646-e757-41b9-8f01-09534eb0221c",
+      "result_id": "5d36b160-282f-4cc8-9a78-3d3e1a83f5aa"
+    },
+    {
+      "claim_id": "c5ac474b-7e32-4506-aadd-f9d8ac05d5be",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "19c5c7fb-5f2a-451d-aa93-4211477cb648",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "9645f35a-6158-45eb-bc68-0f615e620756",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "776d56ac-35fb-4498-9433-53deefafe9a4",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "f9ab6318-6230-427e-a493-dc9b40bbe3b0",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "f6815966-1b76-4a75-a304-111fd9140ace",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "68067875-715b-44d0-b26d-11434e29c3eb",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "f4fc7548-dee0-42bc-8115-095c4b83ed04",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "1d225553-18b2-4549-9026-82be4bc483a9",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "34de64cd-de8d-4df9-b0a5-075f45b7907b",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "956df176-8a1d-4a7e-b4cc-e98167b68937",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "8b34a3f4-2a0d-4465-bab5-2c79272cac51",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "c9ade8bd-0825-48e3-800e-ee48848ad180",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "09886b0f-a03c-44a2-ada3-60723c47da8c",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "19e39eb1-9af9-490f-b1c4-d783ee0e7eec",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "8a39a7c4-ebcb-4242-8426-995232f28b19",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "6f429325-1adf-486e-b0c0-e3823e404d41",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "01088209-2a33-4de2-a8dd-08957ba214c2",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "993c0434-9ee4-47b2-a0da-a0ce1a79e7a0",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "dfa65065-7070-42de-8a2a-7de1b5252a00",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "2b8bc51b-c7ab-4719-a3e9-c0a16e5cf314",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "012b8d68-1046-4ded-9616-3dbf02ab1c1a",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "92bf2cd2-c368-46a0-811a-c004e77d67cd",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "29f63ad4-c933-45c8-8212-bccb1189a661",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "ee1e8ee7-d05a-4e39-b3ca-c72c7623645b",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "8fcd9c6f-ec78-4a08-b33d-9321c08b8bd7",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "4e77c66a-2fd9-49cc-92ef-6535ae868427",
+      "result_id": "646988e3-905d-4123-9fac-cec5be0fe7ec"
+    },
+    {
+      "claim_id": "089154ce-f850-45ad-b883-b35f3cfbebbd",
+      "result_id": "e688b16e-ea34-4c8b-81a8-c5b9ef47d625"
+    },
+    {
+      "claim_id": "7c1c0b2d-d0fa-4109-80d6-21c128f0276a",
+      "result_id": "e688b16e-ea34-4c8b-81a8-c5b9ef47d625"
+    },
+    {
+      "claim_id": "f38a3ea8-177b-49e5-b63b-9b849674a679",
+      "result_id": "e688b16e-ea34-4c8b-81a8-c5b9ef47d625"
+    },
+    {
+      "claim_id": "90e1ad0b-1a93-4f56-81ef-da0335ea0da2",
+      "result_id": "e688b16e-ea34-4c8b-81a8-c5b9ef47d625"
+    },
+    {
+      "claim_id": "fdc02221-f06c-42a0-871f-5fa87bedd5c8",
+      "result_id": "e688b16e-ea34-4c8b-81a8-c5b9ef47d625"
+    },
+    {
+      "claim_id": "605e883e-6deb-4809-bdaa-cb829c52016d",
+      "result_id": "e688b16e-ea34-4c8b-81a8-c5b9ef47d625"
+    },
+    {
+      "claim_id": "17529923-da1e-47c9-b6c0-1f3fafd43320",
+      "result_id": "e688b16e-ea34-4c8b-81a8-c5b9ef47d625"
+    },
+    {
+      "claim_id": "c0146462-9361-4431-8b2b-25c7d9824a38",
+      "result_id": "e688b16e-ea34-4c8b-81a8-c5b9ef47d625"
+    },
+    {
+      "claim_id": "084513e0-a508-41e7-9f17-fed2a262dfc8",
+      "result_id": "e688b16e-ea34-4c8b-81a8-c5b9ef47d625"
+    },
+    {
+      "claim_id": "ed502646-e757-41b9-8f01-09534eb0221c",
+      "result_id": "e688b16e-ea34-4c8b-81a8-c5b9ef47d625"
+    },
+    {
+      "claim_id": "c0582aff-21dd-475f-bc03-6b1c4c72ff69",
+      "result_id": "e688b16e-ea34-4c8b-81a8-c5b9ef47d625"
+    },
+    {
+      "claim_id": "f590c915-7f9e-4329-9848-6ce00a0593b7",
+      "result_id": "e688b16e-ea34-4c8b-81a8-c5b9ef47d625"
+    },
+    {
+      "claim_id": "467a14a7-a31e-4888-adfa-3bf4c3232a8b",
+      "result_id": "e688b16e-ea34-4c8b-81a8-c5b9ef47d625"
+    },
+    {
+      "claim_id": "5705d4c2-3b67-4854-a7b9-afb7f7b43ce7",
+      "result_id": "e688b16e-ea34-4c8b-81a8-c5b9ef47d625"
+    },
+    {
+      "claim_id": "fc9e3e28-3102-4ede-bb96-9751f020fb1e",
+      "result_id": "e688b16e-ea34-4c8b-81a8-c5b9ef47d625"
+    },
+    {
+      "claim_id": "a835f80e-32f8-49ae-a98c-941df4186571",
+      "result_id": "e688b16e-ea34-4c8b-81a8-c5b9ef47d625"
+    },
+    {
+      "claim_id": "c3755449-1129-41c2-bc70-cce7110ea39a",
+      "result_id": "5d95a14d-7abd-4ed0-88c9-1105a6e815ae"
+    },
+    {
+      "claim_id": "fcdb8a36-350b-4756-ba7c-02fa138d26d0",
+      "result_id": "5d95a14d-7abd-4ed0-88c9-1105a6e815ae"
+    },
+    {
+      "claim_id": "7f4cb436-0378-4f7c-aa29-e0d8333ff000",
+      "result_id": "5d95a14d-7abd-4ed0-88c9-1105a6e815ae"
+    },
+    {
+      "claim_id": "40d274a2-ef4c-4a45-99d1-8eef59cc5044",
+      "result_id": "5d95a14d-7abd-4ed0-88c9-1105a6e815ae"
+    },
+    {
+      "claim_id": "455aaf52-1e95-4d61-8789-cda35bb62ee6",
+      "result_id": "5d95a14d-7abd-4ed0-88c9-1105a6e815ae"
+    },
+    {
+      "claim_id": "a2084981-4014-4e8a-b756-eeed04cb03ab",
+      "result_id": "5d95a14d-7abd-4ed0-88c9-1105a6e815ae"
+    },
+    {
+      "claim_id": "bec9f03a-8a8f-42a5-8e03-a01eb59e97c9",
+      "result_id": "5d95a14d-7abd-4ed0-88c9-1105a6e815ae"
+    }
+  ],
+  "comparisons": []
+}

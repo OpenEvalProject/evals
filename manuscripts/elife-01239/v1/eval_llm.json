@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes the biological context and motivation for the study by noting that diverse timescales are observed across brain areas and within local neural populations, but the underlying circuit mechanisms remain unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C8-C13 establish the biological motivation through citations to experimental observations in various systems (macaque cortex, zebrafish, oculomotor integrators). These are well-supported by appropriate citations to prior experimental work and accurately represent the state of knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C96",
+      "C97"
+    ],
+    "result": "The study demonstrates that local connectivity alone is insufficient to produce localized timescales in linear networks. A ring network with exponentially decaying local connectivity exhibits maximally delocalized eigenvectors despite sharply localized connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are directly supported by numerical simulations shown in Figure 2, demonstrating that translationally invariant connectivity produces delocalized eigenvectors. The theoretical explanation via Fourier analysis (C36) is well-established. This is a key negative result that motivates the rest of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C142",
+      "C143",
+      "C145"
+    ],
+    "result": "The manuscript establishes the theoretical framework relating eigenvector localization to timescale segregation in linear networks, defining key concepts and relationships between network architecture, eigenvectors, eigenvalues, and temporal dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C32 describe fundamental properties of linear dynamical systems that are well-established in the literature and correctly applied here. The definitions (C142-C143) and the connection between eigenvector localization and timescale segregation (C4, C145) are logically sound and form the theoretical foundation for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors develop a theoretical framework based on first-order expansion that predicts which timescales will be localized, yields functional forms for localized eigenvectors, and shows how network parameters affect localization. The eigenvector width \u03b1 depends inversely on local heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The theoretical approach (C39-C41) is clearly described in the Methods section and mathematical appendix. The framework successfully predicts eigenvector shapes that match numerical simulations (shown in Figures 3-6). The relationship between heterogeneity and localization (C43-C44) is mathematically derived and empirically validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C116"
+    ],
+    "result": "A network with a gradient of self-coupling (local connectivity) can produce localized eigenvectors when the gradient is sufficiently strong. The eigenvector width is inversely proportional to the gradient strength, and decay time constants increase monotonically along the chain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C56 are well-supported by both theoretical predictions (Equation 4) and numerical simulations (Figure 3). The analytical predictions match numerical results closely (C54). The relationship between gradient strength and localization (C47, C49-C50) is both theoretically derived and empirically demonstrated. Edge effects (C57-C58) are appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "When feedforward and feedback connection strengths approach each other in the gradient of self-coupling network, eigenvectors become more localized but develop multiple peaks. A second-order expansion using Airy functions accurately predicts this behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The counter-intuitive prediction (C59-C60) is confirmed by simulations in Figure 4. The breakdown of the Gaussian approximation (C61-C63) and the success of the second-order expansion (C66) are clearly demonstrated. This shows the generality and extensibility of the theoretical approach (C68), though the functional forms become more complex (C70-C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C117",
+      "C118"
+    ],
+    "result": "In a network with a gradient of connectivity range (opposing gradients of feedforward and feedback decay lengths), all eigenvectors are localized with approximately constant width. The relationship between timescales and position is non-monotonic, with fastest and slowest timescales at early nodes and intermediate timescales at later nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by Figure 5 and mathematical analysis in the appendix. The non-monotonic relationship (C74, C117) is clearly shown in Figure 5C. The clustering of eigenvector centers (C76-C77) is a limitation that is honestly reported and explained by the network architecture (C78-C79, C118).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C119",
+      "C120",
+      "C121",
+      "C131"
+    ],
+    "result": "Adding small amounts of randomness to the gradient of connectivity range network spreads out eigenvector centers without significantly changing their shape, improving timescale segregation. This approach is more robust than parameter fine-tuning and biologically plausible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by numerical simulations showing that randomness improves the distribution of eigenvector centers while preserving localization. The practical advantages (C81) and biological plausibility (C82) are reasonable arguments. The effect on timescale segregation (C119-C121) is demonstrated in the simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The gradient of connectivity range network produces non-normal matrices with overlapping eigenvectors, leading to transient amplification effects visible as initial growth before decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The non-normality (C84) follows logically from eigenvector overlap. The connection to transient effects (C85) is supported by appropriate citations. The observation of initial growth (C86) is clearly visible in Figure 5D. This is an interesting secondary finding about network dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Sufficient randomness in self-coupling can induce eigenvector localization through Anderson localization. However, unlike gradient-based localization, there is no systematic relationship between eigenvector location and timescale, resulting in a random mixture of timescales at each node.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The connection to Anderson localization (C87-C88, C122) is well-established in physics and appropriately cited. The transition to localization with increasing randomness (C89-C90) is demonstrated numerically. The key distinction from gradient-based localization\u2014the lack of spatial organization of timescales (C92, C124-C127)\u2014is clearly shown in Figure 6 and represents an important contrast between mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C114"
+    ],
+    "result": "Breaking translational invariance through heterogeneity in connectivity profiles enables localized eigenvectors. The study identifies two specific network architectures (gradient of local connectivity and gradient of connectivity range) that achieve timescale localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central finding of the paper, well-supported by the theoretical framework and numerical demonstrations in Figures 3-5. The two architectures are clearly distinct and both successfully produce localized timescales through different mechanisms. The theoretical explanation (C114) for why these architectures work is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C115"
+    ],
+    "result": "The gradient of local connectivity architecture may explain observations in the zebrafish oculomotor system, where neurons show diverse timescales that increase with distance. The theory predicts that gradients and asymmetry should be experimentally observable in systems with diverse timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The connection to zebrafish data (C109-C113) is reasonable and the cited work (Miri et al., 2011) did observe features consistent with the model. However, this is a post-hoc explanation rather than a direct test. The prediction (C115) is speculative and would require experimental validation. The connection is plausible but not definitively established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study clarifies important distinctions: temporal localization does not imply spatial selectivity, and the results are particularly relevant for networks requiring diverse timescales. For fast timescales to be visible at a node in the presence of slow timescales, the slow eigenvectors must have small amplitude at that node.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These clarifications (C104-C105) are important conceptual points that prevent misinterpretation of the results. The computational relevance (C106) is well-argued. The mathematical reasoning about fast and slow timescales (C107-C108) is sound and follows from the exponential decay dynamics of linear systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C132",
+      "C133"
+    ],
+    "result": "The authors predict that biological systems could show localized activity patterns through gradients, randomness, or combinations thereof, given that both mechanisms are common in biology. They suggest exploring computational implications of randomness-induced localization and spatially correlated randomness as future directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are reasonable predictions and suggestions for future work (C130, C132-C133) based on the biological prevalence of gradients and randomness (C128-C129). However, they remain speculative and would require experimental and computational validation. The suggestions are well-motivated but represent future work rather than current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Localized activity patterns provide a mechanism for networks to combine segregation and integration. Adding long-range connections to locally connected networks causes selective delocalization of some eigenvectors while preserving most localized patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The connection to complexity theory (C134-C135) is supported by appropriate citation and represents a valid interpretation of the findings. The properties of localized networks (C136-C138) follow logically from the analysis. The effect of long-range connections (C139) is demonstrated in Figure 7, though the suggestion for future research (C140) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Neural connectivity and activity correlations decay rapidly with distance in cortex, but local connectivity does not always translate into localized temporal dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The empirical observations about cortical connectivity (C14-C16) are well-supported by multiple citations to experimental studies. The key insight that local connectivity doesn't guarantee localized dynamics (C17) is the central motivation for the study and is demonstrated through the ring network example.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Linear networks are appropriate models for studying neural dynamics because they model weighted interactions, emerge from linearization of nonlinear systems, and neurons often show threshold-linear responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The justification for using linear networks (C18-C22) is well-supported by appropriate citations and represents standard practice in computational neuroscience. The limitations of linear approximations are implicitly acknowledged by noting they apply to small perturbations (C20) and threshold-linear regimes (C21).",
+    "result_type": "MINOR"
+  }
+]

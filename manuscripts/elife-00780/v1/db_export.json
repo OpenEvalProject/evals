@@ -1,0 +1,2193 @@
+{
+  "submission": {
+    "id": "7f997a54-3135-4f0e-b997-42dc919215de",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T19:35:52.981080Z",
+    "updated_at": "2025-11-28T19:35:52.981080Z"
+  },
+  "content": [
+    {
+      "id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "submission_id": "7f997a54-3135-4f0e-b997-42dc919215de",
+      "content_type": "manuscript",
+      "content_text": "# Minor introns are embedded molecular switches regulated by highly unstable U6atac snRNA\n\n## Authors\n\n- Ihab Younis<sup>1</sup>\n- Kimberly Dittmar<sup>1</sup>\n- Wei Wang<sup>2</sup>\n- Shawn W Foley<sup>1</sup>\n- Michael G Berg<sup>1</sup>\n- Karen Y Hu<sup>1</sup>\n- Zhi Wei<sup>2</sup>\n- Lili Wan<sup>1</sup>\n- Gideon Dreyfuss<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Biophysics Howard Hughes Medical Institute, University of Pennsylvania School of Medicine Philadelphia United States\n2. Department of Computer Science New Jersey Institute of Technology Newark United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEukaryotes have two types of spliceosomes, comprised of either major (U1, U2, U4, U5, U6) or minor (U11, U12, U4atac, U6atac; <1%) snRNPs. The high conservation of minor introns, typically one amidst many major introns in several hundred genes, despite their poor splicing, has been a long-standing enigma. Here, we discovered that the low abundance minor spliceosome\u2019s catalytic snRNP, U6atac, is strikingly unstable (t\u00bd<2 hr). We show that U6atac level depends on both RNA polymerases II and III and can be rapidly increased by cell stress-activated kinase p38MAPK, which stabilizes it, enhancing mRNA expression of hundreds of minor intron-containing genes that are otherwise suppressed by limiting U6atac. Furthermore, p38MAPK-dependent U6atac modulation can control minor intron-containing tumor suppressor PTEN expression and cytokine production. We propose that minor introns are embedded molecular switches regulated by U6atac abundance, providing a novel post-transcriptional gene expression mechanism and a rationale for the minor spliceosome\u2019s evolutionary conservation.\n\n## Introduction\n\nSmall nuclear RNAs (snRNAs) are a class of non-coding RNAs (ncRNAs) that function in pre-mRNA splicing (Wahl et al., 2009) and in mRNA length regulation (telescripting) (Kaida et al., 2010; Berg et al., 2012). The vast majority of introns (>200,000) in complex eukaryotes are spliced by the major spliceosome (Wahl et al., 2009), consisting of U1, U2, U4, U5 and U6 snRNPs. However, \u223c700 minor introns, also known as U12 introns, are spliced by the much less abundant (<1%) minor spliceosome, consisting of U11, U12, U4atac, U5 and U6atac snRNPs (Hall and Padgett, 1996; Tarn and Steitz, 1996; Patel and Steitz, 2003). Despite their low occurrence, minor introns, typically one amidst many major introns, are found in genes essential for diverse cellular processes (Burge et al., 1998; Sheth et al., 2006). Their splice site sequences, position and the genes in which they reside are all highly conserved (Basu et al., 2008; Turunen et al., 2012). However, previous data suggested that minor introns are generally poorly spliced, and therefore the purpose of the minor splicing pathway has been a long-standing mystery, as it has been difficult to rationalize their remarkable conservation and function in splicing alone. The importance of the minor spliceosome has been recently underscored by reports that mutations in U4atac cause microcephalic osteodysplastic primordial dwarfism type I (MOPD I) or Taybi-Linder syndrome (TALS) (Abdel-Salam et al., 2011; Edery et al., 2011; He et al., 2011). We have previously shown that perturbations in the repertoire of both major and minor snRNPs cause widespread transcriptome and splicing defects in spinal muscular atrophy (Zhang et al., 2008).\n\nUsing a ncRNA microarray that we devised and mRNA sequencing (RNA-Seq), we discovered that U6atac, the minor spliceosome\u2019s low abundance catalytic snRNA, also has a very short half-life and can be rate limiting. We found a wide variation of minor intron dependence on U6atac level and that mRNA production from \u223c200 minor intron-containing genes are strongly suppressed in HeLa cells under normal growth conditions. Importantly, we show that U6atac level can be rapidly up-regulated by activated p38MAPK, which results in enhanced splicing of minor introns and increased expression of these mRNAs. Among these is the tumor suppressor, PTEN, which we show buffers cell response to stress by modulating TNF-\u03b1 and IL-8 cytokine production. We propose that minor introns are control switches that are regulated by U6atac abundance, providing a novel gene expression regulation mechanism and explaining the retention of the minor splicing pathway during evolution.\n\n## Results\n\n### U6atac snRNA turns over rapidly\n\nA deeper understanding of ncRNAs\u2019 diverse and fundamental functions requires quantitative, high-throughput, and systematic profiling in various cell types and physiological conditions. Here, we designed a custom array with probes complementary to 129 human ncRNAs, including snRNAs, rRNAs, snoRNAs, scaRNAs, tRNAs and others (Supplementary file 1A), but excluding miRNAs for which commercial microarrays exist (Davison et al., 2006). Total RNAs were directly labeled, alleviating the need for amplification and reducing the distortion often caused by this step (Hiley et al., 2005). Hybridization conditions were optimized and the reproducibility between biological replicates is shown in Figure 1\u2014figure supplements 1 and 2. Our method allows for the rapid measurement of many ncRNAs over a large dynamic range with high sensitivity and specificity, making it a powerful tool for global analysis of ncRNA levels.\n\nThe ncRNA microarray was used here to monitor global changes in the levels of ncRNAs after transcription and translation inhibition and cell cycle arrest. Interestingly, Pol II transcription inhibition by Actinomycin D (ActD), as well as by the structurally and chemically unrelated Pol II inhibitor 5,6-Dichloro-1-\u03b2-D-ribofuranosylbenzimidazole (DRB), led to a rapid and strong decrease in the levels of three ncRNAs transcribed by Pol III: U6atac and U6 snRNAs, and vault RNAs (Figure 1A). Previous studies have shown co-dependence of Pol III transcription on Pol II, which binds upstream of Pol III at the promoter of these ncRNAs (Listerman et al., 2007). The decrease in vault RNAs after ActD treatment has been previously observed in mouse cells (Kickhoefer et al., 2001), and U6 was noted to have a shorter half-life compared to other major snRNAs (Fury and Zieve, 1996). However, this is the first report of U6atac\u2019s fast turnover. We have not found significant sequence similarity among these ncRNAs to explain their fast turnover. Real-time qPCR validated the short half-life of U6 and U6atac, but not U5, for which the microarray did not predict a change (Figure 1B). In comparison, HeLa cells arrested in mitosis using nocodazole, which causes transcription by all three types of polymerases to cease, showed a moderate U6atac decrease, whereas translation inhibition with cycloheximide (CHX) caused no significant changes in the levels of the ncRNAs tested (Figure 1A). In cells, U6atac mostly exists as part of U4atac/U6atac di-snRNP or U4atac/U6atac/U5 tri-snRNP complexes. To test whether U6atac instability is rate limiting for U4atac/U6atac di-snRNP formation, we immunoprecipitated the di-snRNP specific protein p110/SART3 and measured the associated U4atac/U6atac by real-time PCR in control or ActD-treated cells. This showed that ActD decreased U4atac level by \u223c20% in total RNA, whereas the U4atac/U6atac di-snRNP formation was reduced by >80% (Figure 1\u2014figure supplement 3). These results demonstrate the fast turnover and vulnerability of U6atac to transcriptional inhibition, which makes it rate limiting for di-snRNP formation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/00780/elife-00780-fig1-v1.jpg)\n\n**Figure 1.:** (A) The heat map summarizes data for HeLa cells treated with inhibitors of several cellular processes, including the transcription inhibitors Actinomycin D (ActD) for 2\u20136 hr or DRB for 1\u20138 hr, the cell cycle inhibitor nocodazole for 18 hr, and the translation inhibitor cycloheximide (CHX) for 16 hr. A color scale bar for heat maps (\u221210 to +10 fold change) is indicated. (B) Real time qPCR verification of U5, U6 and U6atac snRNA level after ActD treatment. Absolute snRNA levels were measured in triplicates and normalized to 5S rRNA. Error bars represent standard deviations of three replicates.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00780/elife-00780-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Hybridization of total RNA and in vitro transcribed RNA standards. (A) Representative microarray image of total RNA from HeLa cells, in vitro transcribed U11 and U12 snRNA. Total RNA or in vitro transcribed snRNAs of the same RNA sample, labeled with Alexa647 (red) and Alexa546 (green), were hybridized at 48\u00b0C. Yellow signifies an overlap of green and red fluorescence. Dotted circles indicate the probe locations for U11 and U12 snRNAs. (B) Total RNA labeled with Alexa647 was hybridized at six different amounts: 50, 100, 250, 500, 1000 and 2500 ng. The heat maps are shown for all probes on the array with signals twofold above background. The 250 ng sample signals were set at 1 (black) while the range covered \u221210 fold (green) to +10 fold (red).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/00780/elife-00780-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Total RNA from three HeLa cell cultures were labeled and hybridized as described in \u2018Materials and methods\u2019. The average normalized signals from the three experiments were plotted along with their standard deviations that are presented as error bars.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/00780/elife-00780-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) U4atac level was measured by real time PCR (absolute quantification and normalized to 5S) in total RNA extracted from cells treated with actinomycin D or anisomycin for 4 hr. (B) U4atac and (C) U6atac association with di-snRNP specific protein p110/SART3 was measured after immunoprecipitation of SART3 or control IgG from cells treated as in (A).\n\n### Nascent transcriptome sequencing reveals that U6atac level limits mRNA synthesis from hundreds of minor intron-containing genes\n\nTo determine the effects of U6atac inactivation on the transcriptome, we used an antisense morpholino oligonucleotide (AMO) that targets the 5\u2032 end of U6atac snRNA to rapidly inhibit its activity in cells (Konig et al., 2007). RNase H protection using an antisense DNA probe complementary to the same sequence confirmed the binding of the AMO to U6atac snRNP and its efficient interference following an 8 hr transfection with 15 nmole of U6atac AMO (Figure 2A), which was used for all subsequent experiments. The specificity and efficiency of the AMOs were verified by RT-PCR showing that U6atac AMO, but not control AMO or U6 AMO, resulted in inhibition of minor intron splicing (Figure 2B), whereas U6 AMO inhibited splicing of only the major introns (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/00780/elife-00780-fig2-v1.jpg)\n\n**Figure 2.:** (A) RNase H protection of U6atac snRNA in total cellular RNA after 8 hr treatment with U6atac AMO showing efficient U6atac protection at 15 nmole U6atac AMO. The same RNA sample (15 nmole U6atac AMO) was used for RT-PCR of representative minor (B) and major (C) introns. The diagrams to the right of the gel indicate spliced or unspliced RNA. Arrows show position of the primers used. (D) Representative view on UCSC genome browser for two genes containing highly efficient minor introns (red reads). Numbers on the left represent peak reads count. Gene structures are depicted in blue boxes (exons) and lines (introns). (E) Same as in (D) for low efficiency minor intron. (F) The splicing index is plotted for each expressed minor intron in HeLa cells. The dashed arrows point to minor introns with the lowest (<twofold) and highest (>fourfold) splicing indices.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/00780/elife-00780-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Scatter plot comparing the FPKM values representing differential expression analysis from Cufflinks between U6atac AMO and Control AMO. (B) Volcano plot of fold change vs significance for genes in U6atac AMO and Control AMO samples. Red dots indicate significant genes (p<0.05), whereas blue dots show genes having no changes.\n\nTo identify transcriptome and splicing changes that would be most readily detected in nascent transcripts, we metabolically labeled RNAs in HeLa cells with 4-thiouridine for the last 2 hr of AMO treatment, then selected and sequenced only nascent polyadenylated transcripts produced in the time window during which U6atac was functionally inhibited. More than 120 million RNA-seq reads were obtained for each sample, with \u223c70% of these mapping to 9799 and 8397 genes in control and U6atac AMO-treated cells, respectively (Table 1). Cufflinks (Trapnell et al., 2012) was used to assemble transcripts, estimate their abundance, and score differential expression.\n\n**Table 1.**\n Summary of the RNA-seq statistics\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Control AMO</th>\n      <th>U6atac AMO</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Platform</td>\n      <td>Illumina HiSeq2000</td>\n      <td>Illumina HiSeq2000</td>\n    </tr>\n    <tr>\n      <td>Read length</td>\n      <td>100 base</td>\n      <td>100 base</td>\n    </tr>\n    <tr>\n      <td>Single/paired ends</td>\n      <td>single end</td>\n      <td>single end</td>\n    </tr>\n    <tr>\n      <td>Total number of reads</td>\n      <td>120,274,499</td>\n      <td>121,794,728</td>\n    </tr>\n    <tr>\n      <td>Mapped reads</td>\n      <td>81,198,953</td>\n      <td>85,645,962</td>\n    </tr>\n    <tr>\n      <td>Expressed genes (FPKM &gt; 1)</td>\n      <td>9799</td>\n      <td>8397</td>\n    </tr>\n    <tr>\n      <td>Upregulated genes (&gt; fourfold)</td>\n      <td>ND</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Downregulated genes (&lt; fourfold)</td>\n      <td>ND</td>\n      <td>2088</td>\n    </tr>\n    <tr>\n      <td>Expressed U12-dependent genes (FPKM &gt; 1)</td>\n      <td>429</td>\n      <td>350</td>\n    </tr>\n  </tbody>\n</table>\n\nFocusing first on predicted minor introns (\u223c700) in the minor intron database (U12DB) (Alioto, 2007), we detected 429 that passed the threshold for expressed genes of fragments per kilobase per million mapped reads (FPKM) > 1 in control AMO. Interestingly, 206 (48%) of these were expressed at low levels in control and severely down-regulated (FPKM < 1) in U6atac AMO, suggesting that limiting amount of U6atac suppresses splicing and expression of these genes even under normal growth conditions, and that their unspliced pre-mRNAs are very unstable. On the other hand, unspliced, yet stable pre-mRNAs for the remaining 223 introns were detected. To rank these minor introns according to their relative dependence on U6atac level, we calculated the splicing index for each intron as the ratio of Y/X whereas: X = the reads count in a given intron normalized to the reads count in the surrounding exons in control AMO. Y = the reads count for the same intron normalized to the reads in the surrounding exons in U6atac AMO. This showed that 44 (20%) out of these 223 have little to no intronic reads in control but significant intron accumulation in U6atac AMO (Figure 2D; CHD4, ARPC5). For these minor introns, the level of U6atac snRNP is sufficient for splicing catalysis under normal growth conditions (control AMO), but they are extremely sensitive to U6atac decrease. In contrast, 81 (36%) minor introns were poorly spliced, with their unspliced pre-mRNAs clearly detectable in control and showing minimal additional response to U6atac inactivation (Figure 2E; MTBP). For these introns, U6atac snRNP is limiting under normal growth conditions and they are predicted to splice more efficiently when U6atac level increases. Taken together, these data show a strict dependence on U6atac abundance for minor intron splicing, which actually varied over a wide range (>20-fold; Figure 2F) and thus challenges the accepted view that minor introns typically splice poorly. This wide range could not be explained by analysis of the splice sites (AT-AC vs GT-AG) or their surrounding sequences (data not shown). A list of minor introns with highest and lowest U6atac-dependent splicing indices is shown in Supplementary file 1B.\n\nComparison of mRNA levels (Table 1 and Figure 2\u2014figure supplement 1) showed that U6atac AMO caused >twofold down-regulation in 2088 genes, including all 429 expressed minor intron genes. Only three genes were up-regulated. Splicing analysis revealed 657 alternative splicing changes resulting from U6atac inactivation (Figure 3A), including all 223 minor introns that showed various levels of splicing inhibition. Importantly, the major introns in these same transcripts were spliced normally. In a small number of minor intron-containing genes (<20) U6atac inactivation elicited alternative major intron splicing from cryptic 5\u2032 and 3\u2032 splice sites around the minor introns (e.g., C11ORF10 and ZNF207; Figure 3B). This resulted in mRNA isoform switching without overall transcript level down-regulation. Interestingly, while these effects are likely due to misplicing as a result of U6atac inhibition, they nevertheless resemble the previously described twintrons that utilize either the minor or major spliceosome by switching between adjacent U11-U12 or U1-U2 splice sites, and play an important role in Drosophila development (Scamborova et al., 2004), but has not been previously identified in human cells. U12 AMO, tested on select minor introns (Figure 3), had the same effects as U6atac AMO, confirming that the U6atac AMO effects we observed result from the minor spliceosome inhibition. Although the effect of U6atac inactivation on expression level and alternative splicing in \u223c2000 genes that have no minor introns could be secondary, it nevertheless reflects a significant and immediate biological phenomenon. We conclude that U6atac decrease down-regulates or causes splicing change in all minor intron genes and that minor spliceosome inhibition reverberates widely throughout the transcriptome.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/00780/elife-00780-fig3-v1.jpg)\n\n**Figure 3.:** (A) A summary of the splicing effects in the U6atac AMO treated cells identified using MISO. (B) Representative minor intron-containing genes showing alternative splicing pattern changes after U6atac knockdown. Exon junction reads are presented on top. Red junction reads are unique to U6atac AMO sample. RT-PCR confirmations for U6atac AMO as well as U6 and U12 knockdown for comparison are also shown. Arrows show position of the primers used, which are located in the exons. (C) Representative genes that do not contain a minor intron showing alternative splicing pattern changes after U6atac inactivation.\n\n### p38MAPK activation increases U6atac level and up-regulates minor intron splicing\n\nAs many of the minor intron-containing genes that were significantly affected by U6atac level change have key roles in growth regulation and cell stress signaling (Supplementary file 1B), we explored the possibility that U6atac level might change in response to specific cell stress. For this we tested the effect of anisomycin, a potent activator of stress-induced protein kinase, p38MAPK (Bunyard et al., 2003; Yong et al., 2010), and observed a \u223ctwofold increase in U6atac level within 4 hours (Figure 4A). Because anisomycin activates both p38MAPK and JNK, we pre-treated cells with either SB203580, an inhibitor of p38MAPK activation (Davies et al., 2000), or SP600125, an inhibitor of JNK (Heo et al., 2004). While SB203580 blocked the anisomycin-mediated U6atac increase, SP600125 had only a small effect (Figure 4A), indicating that U6atac increase is predominantly due to p38MAPK activation. To assess whether this increase is transcriptional or post-transcriptional, cells were co-treated with ActD and anisomycin. In contrast to the drastic U6atac decrease after transcription inhibition with ActD (82%), co-treatment with anisomycin resulted in only about half that amount of U6atac decrease (\u223c40%) (Figure 4B), suggesting that cell stress-induced U6atac increase is due, at least in part, to U6atac stabilization. Interestingly, the U6atac increase correlated with enhanced minor intron splicing and gene expression of a splicing reporter (LucI-minor) whose expression is strictly dependent on splicing of a minor intron, showing a twofold increase of its expression after anisomycin treatment (Figure 4C). In contrast, intronless and major intron-containing reporters (Younis et al., 2010) were not affected, indicating that the increased expression is due to enhanced minor intron splicing and not an effect on transcription or translation. A similar U6atac increase was observed in Jurkat T-cells and THP-1 monocytes following anisomycin treatment (Figure 4D), indicating that U6atac increase by activated p38MAPK is a general phenomenon and not limited to HeLa cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/00780/elife-00780-fig4-v1.jpg)\n\n**Figure 4.:** (A) Real time qPCR of U6atac snRNA after treatment with 1 \u03bcg/ml anisomycin (4 hr), a potent p38MAPK activator, in HeLa cells. Cells were treated with 10 \u03bcM of p38MAPK inhibitor, SB203580, or JNK inhibitor, SP600125, 30 min prior to anisomycin. (B) HeLa cells were treated with 5 \u03bcg/ml Actinomycin D (ActD) or ActD plus 1 \u03bcg/ml anisomycin (Aniso) or DMSO as control for 4 hr, followed by measurement of U6atac level. (C) Luciferase activity of the various splicing reporters after cell treatment with DMSO or anisomycin for 4 hr. (D) Real time qPCR of U6atac snRNA after treatment with anisomycin (4 hr) in Jurkat T cells and THP-1 monocytes. Error bars represent the standard deviation of at least three replicates.\n\nSimilarly, p38MAPK activation with anisomycin increased minor intron splicing and mRNA levels of several endogenous genes that contain minor introns (e.g., PTEN and E2F2; Figure 5A). Splicing and mRNA levels of eIF3K, whose minor intron splices with high efficiency in control cells, as well as GAPDH and actin, used as controls because they have no minor introns, were unaffected (Figure 5). Importantly, anisomycin also enhanced splicing and expression from genes whose levels are suppressed in HeLa under normal growth conditions (Figure 5B; e.g., BRMS1L and E2F6). These data are consistent with the idea that limiting U6atac suppresses the expression of several hundred minor intron-containing genes, which can be up-regulated by U6atac increase.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/00780/elife-00780-fig5-v1.jpg)\n\n**Figure 5.:** (A) Real time qPCR for a representative set of minor introns with low splicing indices with or without 1 \u03bcg/ml anisomycin treatment. All primer sets span the splice junction and thus measure spliced mRNAs. (B) Real time qPCR for representative minor intron-containing genes that are normally suppressed in HeLa cells. Error bars represent the standard deviation of three replicates.\n\n### U6atac level change plays a role in cellular stress response\n\nTo determine if the p38MAPK\u2013induced up-regulation of minor intron splicing depends on U6atac increase, we examined, as an example, the splicing of PTEN\u2019s minor intron, which increased by up to fivefold after 4 hr of anisomycin treatment (Figure 6A). This increase was completely blocked after co-treatment with U6atac AMO, even at a low amount (1 nmole) that only partially inactivates U6atac (Figure 6A), confirming that p38MAPK up-regulation of minor intron-containing mRNAs expression is strictly reliant on its ability to increase U6atac level.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/00780/elife-00780-fig6-v1.jpg)\n\n**Figure 6.:** (A) Real time qPCR for PTEN in HeLa cells transfected with control or U6atac AMO followed by treatment with DMSO or 1 \u03bcg/ml anisomycin for 4 hr. (B) and (C) Real time qPCR for TNF-\u03b1 and IL-8 after 4 hr of anisomycin treatment in HeLa cells. (D) Real time qPCR for PTEN in HeLa cells transfected with control or PTEN siRNA followed by treatment with DMSO or anisomycin for 4 hr. (E) and (F) Real time qPCR for TNF-\u03b1 and IL-8 after 4 hr of anisomycin treatment in HeLa cells transfected with control or PTEN siRNA for 48 hr. Error bars represent the standard deviation of three replicates.\n\nWe next asked if U6atac level plays a role in specific physiological downstream effects of p38MAPK activation. Whereas p38MAPK activation increases transcription of several key cell physiology modulators, including up-regulation of the cytokines TNF-\u03b1 and IL-8 (Figure 6B,C), which do not contain minor introns (Chang et al., 2006), production of these cytokines has been shown to be suppressed by PTEN, a minor intron-containing gene (Furumoto et al., 2006; Furgeson et al., 2010). We therefore determined if U6atac inactivation affects p38MAPK-induced TNF-\u03b1 and IL-8. As shown in Figure 6B,C, U6atac inactivation increased the levels of p38MAPK-mediated TNF-\u03b1 and IL-8 production to a much higher level, >twofold compared to control AMO, suggesting that a minor intron-containing gene(s) suppresses production of these cytokines. To test if this is due to loss of PTEN suppression, PTEN was knocked down by siRNA (Figure 6D). This resulted in the same effect on p38MAPK-induced TNF-\u03b1 and IL-8 production as U6atac AMO (Figure 6, compare panels 6E and 6F to 6B and 6C), indicating that PTEN expression, which is regulated by U6atac level, plays a role in p38MAPK-induced cytokine production. We note, however, that while PTEN mRNA level was increased by 2\u20135 fold we have only been able to detect a small (\u223c20%) increase of PTEN protein level by western blot. Nevertheless, previous reports have shown that even very small changes in PTEN level are sufficient to have a strong phenotype (Alimonti et al., 2010). Importantly, our findings establish a role for U6atac in regulation of major signaling pathways.\n\n## Discussion\n\nThe findings we describe reveal a novel mechanism for gene regulation as well as have important implications for cell signaling, and they provide a new perspective to explain the evolutionary conservation of the minor spliceosome. Previous studies using a small number of model minor introns have led to the perception that minor introns generally splice at a slower rate than major introns and could therefore be rate limiting for the production of mRNAs that contain them (Patel et al., 2002; Singh and Padgett, 2009). However, there has been no evidence that minor introns could be regulated. Here we discovered that U6atac is highly unstable relative to other snRNAs and its level can be rapidly up- or down-regulated. Furthermore, modulation of U6atac amount produces a corresponding change in the amount of mRNA from many minor intron-containing genes, thus providing a novel post-transcriptional mechanism for regulating minor intron splicing and the expression of the genes that contain them, as depicted in Figure 7. Interestingly, in growing HeLa cells \u223c50% of minor intron-containing genes are suppressed by the limiting U6atac level and produce very low amounts of mRNA. Many others are strongly down-regulated with U6atac decrease because a retained minor intron causes the pre-mRNA to degrade or switch alternative splicing to make a different isoform. However, their splicing and expression can be strongly and rapidly enhanced by an increase in U6atac level, at least in part due to its stabilization by p38MAPK (Figure 7). Thus, the apparent sluggishness observed for some minor introns can be explained by the rarity of U6atac, rather than an intrinsic inefficiency of minor introns. Furthermore, the rapid turnover of U6atac after attenuation of either RNA polymerases II or III makes the minor spliceosome a real time sensor of transcriptional activity in cells.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/00780/elife-00780-fig7-v1.jpg)\n\n**Figure 7.:** Splicing of minor introns, typically one amidst several major introns, is dependent on the limiting level of U6atac snRNP in cells. Low abundance and fast turnover of U6atac results in incompletely spliced pre-mRNAs that are either degraded or switch into spliced isoforms that do not require the minor spliceosome. While transcription attenuation rapidly lowers U6atac level and limits minor intron-containing gene\u2019s expression, activated p38MAPK rapidly stabilizes U6atac, increasing its level and enhancing minor splicing and production of full-length mRNAs.\n\nThe increased amount of U6atac following p38MAPK activation indicates that U6atac and the many minor intron-containing genes whose expression depends on sufficient U6atac are unexpected downstream targets of p38MAPK. These genes, including PTEN, E2F2, E2F6 and MTBP, play important roles in cell stress physiology such as regulating cytokine production. PTEN, phosphatase and tensin homolog, is a tumor suppressor that plays key roles in cell growth and apoptosis (Tamguney and Stokoe, 2007). We show that U6atac and the minor splicing pathway, through regulation of PTEN expression, play an antagonistic role that buffers p38MAPK-induced production of TNF-\u03b1 and IL-8, two major inflammatory response mediators. TNF-\u03b1 also functions in a wide range of processes including cell proliferation, differentiation, apoptosis, lipid metabolism and coagulation. IL-8 is a chemo-attractant and a potent angiogenic factor. While activated p38MAPK has been shown to phosphorylate the transcription factor ATF2, which in turn activates PTEN transcription (Shen et al., 2006; Qian et al., 2012), our data show that PTEN expression can also be regulated post-transcriptionally by the efficiency of splicing of its minor intron. This illustrates a physiological role for minor splicing pathway in regulating cell signaling response.\n\nIt has been difficult to rationalize the conservation of minor introns and the minor spliceosome on the basis of splicing alone, as with slight sequence variation this function could have simply been relegated to the major spliceosome. Indeed, despite their early evolutionary origin, minor introns and snRNPs have been lost at multiple points during eukaryotic evolution (Bartschat and Samuelsson, 2010), suggesting that, in contrast to the major spliceosome, they are not absolutely essential. We propose a new perspective on the conservation of minor introns and their splicoesome, that they function as a specialized post-transcriptional mechanism to regulate expression of their host genes. Minor intron-containing genes that typically contain a single minor intron amidst many major ones function in diverse cellular processes that are critical for cell growth and organism development (Otake et al., 2002; Alioto, 2007; Abdel-Salam et al., 2011; Edery et al., 2011; He et al., 2011). Fine-tuning the level of the catalytic snRNP, U6atac, allows for a circuit design based on the capacity to completely shut off or rapidly up-regulate the production of the full-length mRNAs from a pool of pre-mRNAs in which all the other major introns have been spliced, without having to affect their transcription (Figure 7). Indeed, as our RNA-seq show, a single minor intron is sufficient to regulate the expression of an entire pre-mRNA. The conservation of this design principle over >500 million years (Burge et al., 1998; Shukla and Padgett, 1999; Russell et al., 2006) demonstrates the effectiveness of this gene regulation mechanism. Thus, minor introns function as control switches that are embedded in hundreds of genes and regulated by U6atac abundance, providing a rationale for evolutionary conservation of the minor spliceosome.\n\n## Materials and methods\n\n### RNA preparation and labeling\n\nTotal RNAs were prepared from HeLa cells using Trizol (Invitrogen, Grand Island, NY). RNA standards (U11 and U12) were transcribed using T7 MegaScript Kit (Ambion, Grand Island, NY) and gel purified. A modified protocol of the ULYSIS nucleic acid labeling kits (Invitrogen) was used to label RNAs with Alexa546 or Alexa647. Total RNA (1 \u03bcg) was combined with 3 pmol each of standard E. coli tRNALys, Escherichia coli tRNAVal, and Saccharomyces cerevisiae tRNAPhe and resuspended in ULYSIS labeling buffer (5 mM Tris, 1 mM EDTA, pH 8.0). The RNAs were denatured at 95\u00b0C for 5 min, added to either Alexa546 or Alexa647 ULYSIS dye and incubated at 90\u00b0C for 10 min. G25 spin columns (GE Healthcare, Pittsburgh, PA) were used to remove excess dye. The labeled RNAs were then precipitated with ethanol for use in microarray hybridization.\n\n### Microarray design, hybridization, and analysis\n\nTwo to four 60-mer DNA probes complementary to different regions of the ncRNAs were designed with a GC content between 35% and 55% and limited secondary structure. The probes were spotted on glass slides in quadruplicate at 200 \u03bcM on Matrix II slides (Full Moon Biosystems, Sunnyvale, CA) and cross-linked by UV irradiation. Before use slides were pre-hybridized in 2X SSC, 0.2% SDS, 0.1% BSA for 20\u201330 min, rinsed in water twice and then dried.\n\nLabeled total RNA samples were resuspended in Oligo Hyb Buffer (Full Moon Biosystems, Sunnyvale, CA) containing 10 \u03bcg polyA RNA and 20 \u03bcg salmon sperm DNA. Samples were applied to the hybridization chamber of the HS4800 Pro hybridzation station (Tecan, Morrisville, NC). The following program for hybridization was used: Wash 1 (54\u00b0C, wash 30 s, soak 30 s, 3 runs), two-step Sample Injecion (54\u00b0C), Hybridization (54\u00b0C, 16 hr), Wash 1 (54\u00b0C, wash 30 s, soak 30 s), Wash 1, 2 and 3 (23\u00b0C, wash 30 s, soak 30 s), Slide drying (30\u00b0C, 5 min). Wash buffers are Wash 1 (2X SSC, 0.2% SDS), Wash 2 (2X SSC), and Wash 3 (0.2X SSC).\n\nMicroarray slides were imaged using GenePix 4000b scanner (Axon Instruments, Molecular Devices, Sunnyvale, CA). The fluorescence intensities were quantified and background was subtracted using the GenePix Pro 6.0 software. Values for the 4 replicate spots on each slide were averaged.\n\nSeveral hybridization temperatures were tested using total RNA and in vitro transcribed snRNAs showing reliable detection of 5 ng of spiked-in U11 and U12 snRNAs without significant cross-hybridization at temperatures ranging from 48\u00b0C to 54\u00b0C (Figure 1\u2014figure supplement 1). Fluorescence from non-specific probes (red dots) was <10% of the signal of the specific probes, demonstrating the specificity of this array. Similar results were obtained for the measurements of other in vitro transcribed ncRNAs, including U1, U2, U4, U5, U6, U7, U85, U90, U93 and hTR (human telomerase RNA).\n\nThe reproducibility between biological replicates was determined on total RNA isolated from three separate HeLa cell cultures, which were labeled with both Alexa546 and Alexa647 and hybridized on the array. For those probes with detectable signals at least twofold above background, the intensity for each probe normalized to the total signal on the chip did not show significant variation among the three biological replicates (Figure 1\u2014figure supplement 2, error bars), indicating that the array can reliably discern ncRNA abundance between replicate samples. The dynamic range of the array was determined by testing the linearity of the signals from the different probes with varying amounts of RNA. Figure 1\u2014figure supplement 1B shows a range of 50\u20132500 ng of total RNA labeled with Alexa647 that was hybridized in the presence of 200 ng of Alexa546-labeled total RNA. Most probes exhibited linearity over the range in which experiments are typically performed (100\u2013500 ng total RNA).\n\n### Quantitative real-time PCR\n\nsnRNA-specific primers and 5S rRNA-specific primers (endogenous control) were used to generate cDNAs using Transcriptor First-strand cDNA synthesis kit (Roche Applied Sciences, Indianapolis, IN) from an input of 100 ng of total RNA according to manufacturer\u2019s instructions. Two and a half percent of the cDNA generated was used for each qPCR reaction (Applied Biosystems 7500 Fast Real-time PCR system) using SYBR Green dye chemistry. The same reverse primers were used for both RT and qPCR. Each reaction was performed in triplicate. For real-time qPCRs and RT-PCRs used to measure splicing of minor and major introns (Figures 2\u20136), 1 \u03bcg total RNA was converted to cDNA using the VILO kit (Invitrogen) according to manufacturers recommendations. cDNA was then diluted to 10 ng/\u03bcl and 20\u201350 ng cDNA was then used as input for qPCR (with SYBR Green as described above) or regular PCR using platinum Taq (Invitrogen). For qPCR, all the primer sets for various genes span the splice junction and thus measure only spliced mRNAs. For RT-PCR, the primers are located in the surrounding exons and thus amplify both spliced and unspliced mRNAs.\n\n### Cell treatments, library preparations and RNA-seq\n\nHeLa cells were grown in DMEM supplemented with 10% fetal bovine serum (FBS), 1% antibiotics and maintained at 37\u00b0C in a 5% CO2 humidified atmosphere. Actinomycin D (5 \u03bcg/ml), cycloheximide (10 \u03bcg/ml), DRB (100 \u03bcM), nocodazole (200 nM), or anisomycin (1 \u03bcg/ml) were added to the media for the indicated time, followed by RNA extraction as indicated above.\n\nLuciferase splicing reporters were generated as previously described (Younis et al., 2010). Briefly, the minor intron of the CHD4 gene was inserted at nucleotide position 571 of firefly luciferase gene. The luciferase protein is destabilized using both a PEST protein degradation sequence as well as a CL1 sequence, and mRNA is destabilized by adding five tandem AUUUA repeats into the 3\u2032UTR. Both intron-containing and intronless luciferase were transcribed from a CMV promoter.\n\nControl (5\u2032-CCT CTT ACC TCA GTT ACA ATT TAT A-3\u2032) and U6atac (5\u2032-AAC CTT CTC TCC TTT CAT ACA ACA C-3\u2032) antisense morpholinos (AMOs) were transfected into cells using the Neon system (Invitrogen). 6 hr post transfection, cells were labeled with 200 \u03bcM 4-thiouridine (4-SU) for an additional 2 hr. Total RNA was extracted using Trizol (Invitrogen) followed by extraction of polyA-containing RNA on oligo-dT columns using Oligotex kit (Qiagen, Germantown, MD). For isolation of 4-SU-labeled nascent transcripts, EZ-Link biotin-HPDP (Thermo Scientific, Waltham, MA) was reacted with the 4-SU and purified on streptavidin Dynabeads (Invitrogen) as previously described (Dolken et al., 2008).\n\nNascent transcripts prepared as described above were used to prepare cDNA libraries using Encore NGS Library System I (Nugen, San Carlos, CA) according to the manufacturer\u2019s recommendations. Briefly, 100 ng RNA was converted to cDNA and amplified using the Ribo-SPIA technology. The cDNA was then fragmented, end repaired, ligated to Illumina adaptors and bead purified according to instructions in the Ovation RNA-seq System (Nugen). Sequencing was performed at the University of Pennsylvania Core Facility on Illumina Hi-Seq2000 platform to generate single end 100 base reads. Raw and processed data is available on GEO under the accession number GSE48263. This link can be used to retrieve the data: http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE48263.\n\n### Data analysis and statistics\n\nRNA-seq reads were aligned to the reference genome (UCSC, hg19) using Tophat by default parameters (Trapnell et al., 2009). Uniquely mapped reads and the best of multiple hits were kept for downstream analysis. BEDTools software (Quinlan and Hall, 2010) was used to generate reads per exon, from which FPKM (read fragments per kilobase of exon model per million mapped reads) values were calculated (Mortazavi et al., 2008). The analysis of differential gene expression was performed using Cufflinks (Trapnell et al., 2010). Significant genes were detected based on FDR level at 0.05 using Benjamini-Hochberg correction for multiple-testing (Trapnell et al., 2012).\n\nTo identify differentially expressed splicing isoforms across samples and quantify the expression level of those alternative spliced genes, MISO (version 0.4.1 with default parameters) was applied to the aligned RNA-seq data (Katz et al., 2010). Briefly, MISO estimates expression at alternative splicing event level by computing PSI (Percent Spliced Isoform) and measures the differential expression by Bayes factors. The MISO results were filtered for alternative splicing events using the following criteria: (a) at least 15 inclusion read, (b) 15 exclusion read, such that (c) the sum of inclusion and exclusion reads is at least 30, and (d) the \u0394\u03a8 is at least 0.30, and (e) the Bayes factor is at least 10, and that (a)\u2013(e) are true in one of the samples.\n\n### RNase H protection assay\n\nTotal cell extract was prepared from AMO-transfected cells using 10 mM Tris-HCl pH 7.5, 2.5 mM MgCl2, 100 mM NaCl and 0.1% NP-40. RNase H along with 5 \u03bcM antisense DNA oligonucleotide for U6atac (5\u2032-TCA TAC AAC AC-3\u2032) was added for 25 min at 30\u00b0C, and RNA was purified and analyzed by northern blotting with a U6atac snRNA probe (5\u2032-CCG TAT GCG TGT TGT CAG GCC CGA GGG CCT-3\u2032).\n",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "e25374c3-f966-4700-bf7d-ae58a35fc187",
+      "submission_id": "7f997a54-3135-4f0e-b997-42dc919215de",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy Nilsen, Case Western Reserve University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.00780.016](https://doi.org/10.7554/eLife.00780.016)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cMinor introns are embedded molecular switches regulated by highly unstable U6atac snRNA\u201d for consideration at eLife. Your article has been favorably evaluated by a Senior editor and 3 reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor, Timothy Nilsen, and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nYour manuscript has been reviewed by three experts in the area of regulated alternative splicing and splicing by the \u201cminor\u201d spliceosome. In general, the reviewers were quite positive and there is a consensus that the work is potentially acceptable for publication in eLife because it provides an interesting rationale for retention of the minor spliceosome as a complex regulatory machine.\n\nNevertheless there are a few issues that need to be addressed before the manuscript can be reconsidered.\n\n1) Previous reports have indicated that U4atac is the least abundant of the minor spliceosomal snRNAs and that there was a considerable excess of free U6atac. Thus, the reviewers would like to see quantitation of the levels of U4atac/U6atac, and U4atac under the conditions you describe. Similarly, it would be important to quantify snRNA levels (and di-snRNP) in the anisomycin experiments.\n\n2) There is a concern that the effects measured on TNF\u03b1 and IL8 may not be a direct consequence of activation (in anisomycin) or repression (U6atac sequestration) of PTEN. This concern derives from the fact that knockdown of PTEN in the absence of anisomycin does not affect cytokine expression. It is suggested that PTEN expression be assayed directly by Western blot as well as measuring phosphorylation status of direct PTEN targets under the conditions described.\n",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2ad17a2b-35ba-40c2-bb8a-84a26cf93c38",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C1",
+      "claim": "Eukaryotes have two types of spliceosomes, comprised of either major (U1, U2, U4, U5, U6) or minor (U11, U12, U4atac, U6atac; <1%) snRNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotes have two types of spliceosomes, comprised of either major (U1, U2, U4, U5, U6) or minor (U11, U12, U4atac, U6atac; <1%) snRNPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about spliceosome composition in eukaryotes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "aae7dc1a-a953-44b1-a3a4-cb920ff048a3",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C2",
+      "claim": "Minor introns are highly conserved despite their poor splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "The high conservation of minor introns, typically one amidst many major introns in several hundred genes, despite their poor splicing, has been a long-standing enigma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established observations in the field that have been previously documented.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "5660fe3c-ded2-4532-8979-48391238488e",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C3",
+      "claim": "U6atac snRNA has a half-life of less than 2 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we discovered that the low abundance minor spliceosome's catalytic snRNP, U6atac, is strikingly unstable (t\u00bd<2 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "2ef1d425-d5ca-4570-b406-cce35abd2af7",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C4",
+      "claim": "U6atac level depends on both RNA polymerases II and III.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that U6atac level depends on both RNA polymerases II and III and can be rapidly increased by cell stress-activated kinase p38MAPK, which stabilizes it, enhancing mRNA expression of hundreds of minor intron-containing genes that are otherwise suppressed by limiting U6atac.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing U6atac decrease after Pol II inhibition (Figure 1A) and discussion of Pol III co-dependence on Pol II.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "496e624d-f059-4f32-9dde-fcea95a58e85",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C5",
+      "claim": "p38MAPK can rapidly increase U6atac level by stabilizing it.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that U6atac level depends on both RNA polymerases II and III and can be rapidly increased by cell stress-activated kinase p38MAPK, which stabilizes it, enhancing mRNA expression of hundreds of minor intron-containing genes that are otherwise suppressed by limiting U6atac.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 4 showing U6atac increase after anisomycin treatment and stabilization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "564a86f0-82d5-488d-9279-affb19a1d586",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C6",
+      "claim": "Hundreds of minor intron-containing genes are suppressed by limiting U6atac under normal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that U6atac level depends on both RNA polymerases II and III and can be rapidly increased by cell stress-activated kinase p38MAPK, which stabilizes it, enhancing mRNA expression of hundreds of minor intron-containing genes that are otherwise suppressed by limiting U6atac.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data showing that 206 out of 429 expressed minor intron-containing genes were severely down-regulated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "a9a5f6b1-fa0f-4a54-9263-a9c894adaf9b",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C7",
+      "claim": "p38MAPK-dependent U6atac modulation can control PTEN expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, p38MAPK-dependent U6atac modulation can control minor intron-containing tumor suppressor PTEN expression and cytokine production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 6A showing PTEN splicing changes with anisomycin treatment and U6atac AMO.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "3e232c34-8910-476a-8c66-d7442ca23b46",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C8",
+      "claim": "p38MAPK-dependent U6atac modulation can control cytokine production.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, p38MAPK-dependent U6atac modulation can control minor intron-containing tumor suppressor PTEN expression and cytokine production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 6B,C showing TNF-\u03b1 and IL-8 changes with U6atac AMO treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "e4ae9e64-27b9-4260-bd1c-050ea3af72b5",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C9",
+      "claim": "Minor introns are embedded molecular switches regulated by U6atac abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that minor introns are embedded molecular switches regulated by U6atac abundance, providing a novel post-transcriptional gene expression mechanism and a rationale for the minor spliceosome's evolutionary conservation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "8ea490a4-7e2b-4dae-a403-24e98a6044e1",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C10",
+      "claim": "The vast majority of introns (>200,000) in complex eukaryotes are spliced by the major spliceosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of introns (>200,000) in complex eukaryotes are spliced by the major spliceosome (Wahl et al., 2009), consisting of U1, U2, U4, U5 and U6 snRNPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wahl et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "b508eaf5-0be4-42f3-9348-0dc172ca8fdf",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C11",
+      "claim": "Approximately 700 minor introns are spliced by the minor spliceosome.",
+      "claim_type": "EXPLICIT",
+      "source": "However, \u223c700 minor introns, also known as U12 introns, are spliced by the much less abundant (<1%) minor spliceosome, consisting of U11, U12, U4atac, U5 and U6atac snRNPs (Hall and Padgett, 1996; Tarn and Steitz, 1996; Patel and Steitz, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hall and Padgett, 1996; Tarn and Steitz, 1996; Patel and Steitz, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "e1c7f816-fede-4575-817c-23f301623087",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C12",
+      "claim": "Minor introns are found in genes essential for diverse cellular processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite their low occurrence, minor introns, typically one amidst many major introns, are found in genes essential for diverse cellular processes (Burge et al., 1998; Sheth et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Burge et al., 1998; Sheth et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "0dc35091-8ded-4a0f-8ad1-a6a82653bd83",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C13",
+      "claim": "Minor intron splice site sequences, position and the genes in which they reside are all highly conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Their splice site sequences, position and the genes in which they reside are all highly conserved (Basu et al., 2008; Turunen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Basu et al., 2008; Turunen et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "cd8823be-b5a3-4011-82a7-129c662dec5c",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C14",
+      "claim": "Previous data suggested that minor introns are generally poorly spliced.",
+      "claim_type": "EXPLICIT",
+      "source": "However, previous data suggested that minor introns are generally poorly spliced, and therefore the purpose of the minor splicing pathway has been a long-standing mystery, as it has been difficult to rationalize their remarkable conservation and function in splicing alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references previous observations in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "1e069771-3581-4ac4-909a-aa8c278030e7",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C15",
+      "claim": "Mutations in U4atac cause microcephalic osteodysplastic primordial dwarfism type I (MOPD I) or Taybi-Linder syndrome (TALS).",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of the minor spliceosome has been recently underscored by reports that mutations in U4atac cause microcephalic osteodysplastic primordial dwarfism type I (MOPD I) or Taybi-Linder syndrome (TALS) (Abdel-Salam et al., 2011; Edery et al., 2011; He et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Abdel-Salam et al., 2011; Edery et al., 2011; He et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "09d3c322-fde4-4929-8cf7-77f683251db9",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C16",
+      "claim": "Perturbations in the repertoire of both major and minor snRNPs cause widespread transcriptome and splicing defects in spinal muscular atrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that perturbations in the repertoire of both major and minor snRNPs cause widespread transcriptome and splicing defects in spinal muscular atrophy (Zhang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Zhang et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "39385182-eb50-494f-951f-c8095baad364",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C17",
+      "claim": "Pol II transcription inhibition by Actinomycin D led to a rapid and strong decrease in U6atac, U6 snRNAs, and vault RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Pol II transcription inhibition by Actinomycin D (ActD), as well as by the structurally and chemically unrelated Pol II inhibitor 5,6-Dichloro-1-\u03b2-D-ribofuranosylbenzimidazole (DRB), led to a rapid and strong decrease in the levels of three ncRNAs transcribed by Pol III: U6atac and U6 snRNAs, and vault RNAs (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "1c0c9b16-6654-497c-af05-6f5264ae6366",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C18",
+      "claim": "DRB led to a rapid and strong decrease in U6atac, U6 snRNAs, and vault RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Pol II transcription inhibition by Actinomycin D (ActD), as well as by the structurally and chemically unrelated Pol II inhibitor 5,6-Dichloro-1-\u03b2-D-ribofuranosylbenzimidazole (DRB), led to a rapid and strong decrease in the levels of three ncRNAs transcribed by Pol III: U6atac and U6 snRNAs, and vault RNAs (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "ee693aaa-177f-4ed7-b566-c4aa70acdb69",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C19",
+      "claim": "Pol III transcription shows co-dependence on Pol II, which binds upstream of Pol III at the promoter of these ncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown co-dependence of Pol III transcription on Pol II, which binds upstream of Pol III at the promoter of these ncRNAs (Listerman et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Listerman et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "c56b41f9-a57c-49c8-8167-d509feb7e26d",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C20",
+      "claim": "The decrease in vault RNAs after ActD treatment has been previously observed in mouse cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in vault RNAs after ActD treatment has been previously observed in mouse cells (Kickhoefer et al., 2001), and U6 was noted to have a shorter half-life compared to other major snRNAs (Fury and Zieve, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kickhoefer et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "f38d38f8-8c7f-415f-8ba1-b727d44c03b8",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C21",
+      "claim": "U6 has a shorter half-life compared to other major snRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in vault RNAs after ActD treatment has been previously observed in mouse cells (Kickhoefer et al., 2001), and U6 was noted to have a shorter half-life compared to other major snRNAs (Fury and Zieve, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Fury and Zieve, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "74b0a987-c09f-4473-927a-56558f4713fd",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C22",
+      "claim": "This is the first report of U6atac's fast turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this is the first report of U6atac's fast turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the finding, based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "c27b05d0-b38c-42aa-bd00-e245233ab60f",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C23",
+      "claim": "Real-time qPCR validated the short half-life of U6 and U6atac, but not U5.",
+      "claim_type": "EXPLICIT",
+      "source": "Real-time qPCR validated the short half-life of U6 and U6atac, but not U5, for which the microarray did not predict a change (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "b7746453-d56d-4bec-a50b-0d40e02ee3d3",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C24",
+      "claim": "HeLa cells arrested in mitosis using nocodazole showed a moderate U6atac decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, HeLa cells arrested in mitosis using nocodazole, which causes transcription by all three types of polymerases to cease, showed a moderate U6atac decrease, whereas translation inhibition with cycloheximide (CHX) caused no significant changes in the levels of the ncRNAs tested (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "1170812e-6f73-4114-a09a-d4888127353d",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C25",
+      "claim": "Translation inhibition with cycloheximide caused no significant changes in the levels of the ncRNAs tested.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, HeLa cells arrested in mitosis using nocodazole, which causes transcription by all three types of polymerases to cease, showed a moderate U6atac decrease, whereas translation inhibition with cycloheximide (CHX) caused no significant changes in the levels of the ncRNAs tested (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "ef802e40-c70b-4b54-9946-d1a3ce60577d",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C26",
+      "claim": "In cells, U6atac mostly exists as part of U4atac/U6atac di-snRNP or U4atac/U6atac/U5 tri-snRNP complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, U6atac mostly exists as part of U4atac/U6atac di-snRNP or U4atac/U6atac/U5 tri-snRNP complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about U6atac snRNP complexes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "759f5e90-0d4d-40e0-b2e0-7930d71f0e79",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C27",
+      "claim": "ActD decreased U4atac level by approximately 20% in total RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This showed that ActD decreased U4atac level by \u223c20% in total RNA, whereas the U4atac/U6atac di-snRNP formation was reduced by >80% (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "ef79b51a-679f-4b85-a3b9-3b6854bec967",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C28",
+      "claim": "ActD reduced U4atac/U6atac di-snRNP formation by more than 80%.",
+      "claim_type": "EXPLICIT",
+      "source": "This showed that ActD decreased U4atac level by \u223c20% in total RNA, whereas the U4atac/U6atac di-snRNP formation was reduced by >80% (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "18615b0d-8ce6-42a9-80aa-e8dcbc754cd7",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C29",
+      "claim": "U6atac instability is rate limiting for U4atac/U6atac di-snRNP formation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate the fast turnover and vulnerability of U6atac to transcriptional inhibition, which makes it rate limiting for di-snRNP formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing disproportionate reduction in di-snRNP formation compared to U4atac levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "b04f6e43-1e4e-4799-b396-3e3ce9f9b525",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C30",
+      "claim": "An antisense morpholino oligonucleotide (AMO) targeting the 5\u2032 end of U6atac snRNA can rapidly inhibit its activity in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the effects of U6atac inactivation on the transcriptome, we used an antisense morpholino oligonucleotide (AMO) that targets the 5\u2032 end of U6atac snRNA to rapidly inhibit its activity in cells (Konig et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Konig et al., 2007 and experimental validation in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "4d72c13c-4d1c-424d-bb12-5e602c958182",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C31",
+      "claim": "RNase H protection confirmed the binding of the AMO to U6atac snRNP and its efficient interference following an 8 hr transfection with 15 nmole of U6atac AMO.",
+      "claim_type": "EXPLICIT",
+      "source": "RNase H protection using an antisense DNA probe complementary to the same sequence confirmed the binding of the AMO to U6atac snRNP and its efficient interference following an 8 hr transfection with 15 nmole of U6atac AMO (Figure 2A), which was used for all subsequent experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "8041b04d-6e8f-4ee1-b09e-294f396a6e05",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C32",
+      "claim": "U6atac AMO, but not control AMO or U6 AMO, resulted in inhibition of minor intron splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity and efficiency of the AMOs were verified by RT-PCR showing that U6atac AMO, but not control AMO or U6 AMO, resulted in inhibition of minor intron splicing (Figure 2B), whereas U6 AMO inhibited splicing of only the major introns (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "b947da0d-f966-45c4-a875-43a7e7f0e7a9",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C33",
+      "claim": "U6 AMO inhibited splicing of only the major introns.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity and efficiency of the AMOs were verified by RT-PCR showing that U6atac AMO, but not control AMO or U6 AMO, resulted in inhibition of minor intron splicing (Figure 2B), whereas U6 AMO inhibited splicing of only the major introns (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "88630b54-f923-4742-a6f7-1a86d154a1fe",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C34",
+      "claim": "429 minor introns passed the threshold for expressed genes (FPKM > 1) in control AMO.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing first on predicted minor introns (\u223c700) in the minor intron database (U12DB) (Alioto, 2007), we detected 429 that passed the threshold for expressed genes of fragments per kilobase per million mapped reads (FPKM) > 1 in control AMO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "985da0f3-4358-497a-b8fb-a2e92b16a50c",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C35",
+      "claim": "206 (48%) of the 429 expressed minor intron-containing genes were expressed at low levels in control and severely down-regulated (FPKM < 1) in U6atac AMO.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 206 (48%) of these were expressed at low levels in control and severely down-regulated (FPKM < 1) in U6atac AMO, suggesting that limiting amount of U6atac suppresses splicing and expression of these genes even under normal growth conditions, and that their unspliced pre-mRNAs are very unstable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "33060fb7-6ca1-4879-acb1-befb4592ff3b",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C36",
+      "claim": "Limiting amount of U6atac suppresses splicing and expression of 206 genes even under normal growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 206 (48%) of these were expressed at low levels in control and severely down-regulated (FPKM < 1) in U6atac AMO, suggesting that limiting amount of U6atac suppresses splicing and expression of these genes even under normal growth conditions, and that their unspliced pre-mRNAs are very unstable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the RNA-seq data showing severe down-regulation of these genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "8bcfc541-c74a-4e94-8d64-6aa650d12336",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C37",
+      "claim": "Unspliced pre-mRNAs for 206 minor intron-containing genes are very unstable.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 206 (48%) of these were expressed at low levels in control and severely down-regulated (FPKM < 1) in U6atac AMO, suggesting that limiting amount of U6atac suppresses splicing and expression of these genes even under normal growth conditions, and that their unspliced pre-mRNAs are very unstable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that these genes are severely down-regulated when U6atac is inhibited.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "3298f20e-ed19-4115-b7e1-414d7408bc0d",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C38",
+      "claim": "44 (20%) out of 223 minor introns have little to no intronic reads in control but significant intron accumulation in U6atac AMO.",
+      "claim_type": "EXPLICIT",
+      "source": "This showed that 44 (20%) out of these 223 have little to no intronic reads in control but significant intron accumulation in U6atac AMO (Figure 2D; CHD4, ARPC5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data analysis and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "0846a59d-4bf9-4f71-b694-57f8531dd556",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C39",
+      "claim": "For 44 minor introns, the level of U6atac snRNP is sufficient for splicing catalysis under normal growth conditions but they are extremely sensitive to U6atac decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "For these minor introns, the level of U6atac snRNP is sufficient for splicing catalysis under normal growth conditions (control AMO), but they are extremely sensitive to U6atac decrease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the RNA-seq data showing efficient splicing in control but accumulation in U6atac AMO.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "adcc2fb2-e944-4876-8a61-427134a4a685",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C40",
+      "claim": "81 (36%) minor introns were poorly spliced, with their unspliced pre-mRNAs clearly detectable in control and showing minimal additional response to U6atac inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 81 (36%) minor introns were poorly spliced, with their unspliced pre-mRNAs clearly detectable in control and showing minimal additional response to U6atac inactivation (Figure 2E; MTBP).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data analysis and shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "af981f43-1ae0-4e11-a942-9f958686193f",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C41",
+      "claim": "For 81 minor introns, U6atac snRNP is limiting under normal growth conditions and they are predicted to splice more efficiently when U6atac level increases.",
+      "claim_type": "EXPLICIT",
+      "source": "For these introns, U6atac snRNP is limiting under normal growth conditions and they are predicted to splice more efficiently when U6atac level increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the RNA-seq data showing poor splicing in control conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "f6543dd6-a87b-4241-8d45-a4ae8c6125be",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C42",
+      "claim": "Minor intron splicing dependence on U6atac abundance varied over a wide range (>20-fold).",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data show a strict dependence on U6atac abundance for minor intron splicing, which actually varied over a wide range (>20-fold; Figure 2F) and thus challenges the accepted view that minor introns typically splice poorly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data analysis and shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "1e5b14f7-c4f9-4fe1-9a2d-244652a1b8f7",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C43",
+      "claim": "The wide range of U6atac-dependent splicing could not be explained by analysis of the splice sites (AT-AC vs GT-AG) or their surrounding sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "This wide range could not be explained by analysis of the splice sites (AT-AC vs GT-AG) or their surrounding sequences (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "d391ca02-7da8-40b1-a584-d5cfd835c1b2",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C44",
+      "claim": "U6atac AMO caused >twofold down-regulation in 2088 genes, including all 429 expressed minor intron genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of mRNA levels (Table 1 and Figure 2\u2014figure supplement 1) showed that U6atac AMO caused >twofold down-regulation in 2088 genes, including all 429 expressed minor intron genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data analysis shown in Table 1 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "ba882103-045c-4bcc-99af-53521cad5355",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C45",
+      "claim": "Only three genes were up-regulated by U6atac AMO.",
+      "claim_type": "EXPLICIT",
+      "source": "Only three genes were up-regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "79b3891a-daa0-4c33-ab51-77035da1aae9",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C46",
+      "claim": "U6atac inactivation resulted in 657 alternative splicing changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Splicing analysis revealed 657 alternative splicing changes resulting from U6atac inactivation (Figure 3A), including all 223 minor introns that showed various levels of splicing inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "7e23178a-bc42-4cf3-bd7e-0f88697b66a8",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C47",
+      "claim": "The major introns in minor intron-containing transcripts were spliced normally after U6atac inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the major introns in these same transcripts were spliced normally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "ed054532-49a6-4ae6-995b-14de5f6f7fa4",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C48",
+      "claim": "In a small number of minor intron-containing genes (<20), U6atac inactivation elicited alternative major intron splicing from cryptic 5\u2032 and 3\u2032 splice sites around the minor introns.",
+      "claim_type": "EXPLICIT",
+      "source": "In a small number of minor intron-containing genes (<20) U6atac inactivation elicited alternative major intron splicing from cryptic 5\u2032 and 3\u2032 splice sites around the minor introns (e.g., C11ORF10 and ZNF207; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data analysis and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "f00929df-41d6-48c2-8378-0590aca1917f",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C49",
+      "claim": "Alternative splicing from cryptic splice sites resulted in mRNA isoform switching without overall transcript level down-regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in mRNA isoform switching without overall transcript level down-regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the RNA-seq data showing alternative splicing patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "0f234797-4374-4715-b31b-46c90185916b",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C50",
+      "claim": "Twintrons that utilize either the minor or major spliceosome by switching between adjacent U11-U12 or U1-U2 splice sites play an important role in Drosophila development.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while these effects are likely due to misplicing as a result of U6atac inhibition, they nevertheless resemble the previously described twintrons that utilize either the minor or major spliceosome by switching between adjacent U11-U12 or U1-U2 splice sites, and play an important role in Drosophila development (Scamborova et al., 2004), but has not been previously identified in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Scamborova et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "2626da68-067d-40d8-947f-7755cb4ce2bf",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C51",
+      "claim": "Twintrons have not been previously identified in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while these effects are likely due to misplicing as a result of U6atac inhibition, they nevertheless resemble the previously described twintrons that utilize either the minor or major spliceosome by switching between adjacent U11-U12 or U1-U2 splice sites, and play an important role in Drosophila development (Scamborova et al., 2004), but has not been previously identified in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the finding based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "46ba8622-0a2f-40b7-b507-a4dc58d1af1e",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C52",
+      "claim": "U12 AMO had the same effects as U6atac AMO on minor intron splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "U12 AMO, tested on select minor introns (Figure 3), had the same effects as U6atac AMO, confirming that the U6atac AMO effects we observed result from the minor spliceosome inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "16698dcb-6186-4cd4-9448-eee5005ebb0f",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C53",
+      "claim": "U6atac inactivation down-regulates or causes splicing change in all minor intron genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that U6atac decrease down-regulates or causes splicing change in all minor intron genes and that minor spliceosome inhibition reverberates widely throughout the transcriptome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "478f8d7f-8af2-43c1-96aa-bd6bdc895ca3",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C54",
+      "claim": "Minor spliceosome inhibition reverberates widely throughout the transcriptome.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that U6atac decrease down-regulates or causes splicing change in all minor intron genes and that minor spliceosome inhibition reverberates widely throughout the transcriptome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the observation that ~2000 genes without minor introns showed expression or splicing changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "c6421dca-a9cd-4e53-beaa-9a93156fa69a",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C55",
+      "claim": "Anisomycin is a potent activator of stress-induced protein kinase p38MAPK.",
+      "claim_type": "EXPLICIT",
+      "source": "As many of the minor intron-containing genes that were significantly affected by U6atac level change have key roles in growth regulation and cell stress signaling (Supplementary file 1B), we explored the possibility that U6atac level might change in response to specific cell stress. For this we tested the effect of anisomycin, a potent activator of stress-induced protein kinase, p38MAPK (Bunyard et al., 2003; Yong et al., 2010), and observed a \u223ctwofold increase in U6atac level within 4 hours (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bunyard et al., 2003; Yong et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "0ee514ca-65c3-4c38-9811-1eeef28a95cd",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C56",
+      "claim": "Anisomycin treatment resulted in approximately twofold increase in U6atac level within 4 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "For this we tested the effect of anisomycin, a potent activator of stress-induced protein kinase, p38MAPK (Bunyard et al., 2003; Yong et al., 2010), and observed a \u223ctwofold increase in U6atac level within 4 hours (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "3d26247c-7cba-45cc-a5a7-2598352f2fe6",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C57",
+      "claim": "SB203580 is an inhibitor of p38MAPK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because anisomycin activates both p38MAPK and JNK, we pre-treated cells with either SB203580, an inhibitor of p38MAPK activation (Davies et al., 2000), or SP600125, an inhibitor of JNK (Heo et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Davies et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "f937b27c-3eb6-4abb-9d68-72b3b5c957d3",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C58",
+      "claim": "SP600125 is an inhibitor of JNK.",
+      "claim_type": "EXPLICIT",
+      "source": "Because anisomycin activates both p38MAPK and JNK, we pre-treated cells with either SB203580, an inhibitor of p38MAPK activation (Davies et al., 2000), or SP600125, an inhibitor of JNK (Heo et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Heo et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "a56519f7-f6b0-4528-90ab-9f51319c3cca",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C59",
+      "claim": "SB203580 blocked the anisomycin-mediated U6atac increase.",
+      "claim_type": "EXPLICIT",
+      "source": "While SB203580 blocked the anisomycin-mediated U6atac increase, SP600125 had only a small effect (Figure 4A), indicating that U6atac increase is predominantly due to p38MAPK activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "344b72d0-0b51-42f4-8d80-ebb9af52c4a4",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C60",
+      "claim": "SP600125 had only a small effect on anisomycin-mediated U6atac increase.",
+      "claim_type": "EXPLICIT",
+      "source": "While SB203580 blocked the anisomycin-mediated U6atac increase, SP600125 had only a small effect (Figure 4A), indicating that U6atac increase is predominantly due to p38MAPK activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "0f83ac66-6efa-4741-884d-3b98b3e5355d",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C61",
+      "claim": "U6atac increase is predominantly due to p38MAPK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "While SB203580 blocked the anisomycin-mediated U6atac increase, SP600125 had only a small effect (Figure 4A), indicating that U6atac increase is predominantly due to p38MAPK activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of p38MAPK and JNK inhibitors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "9ade401a-d18a-487b-a64e-ed1ff85f15c7",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C62",
+      "claim": "ActD treatment resulted in 82% U6atac decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the drastic U6atac decrease after transcription inhibition with ActD (82%), co-treatment with anisomycin resulted in only about half that amount of U6atac decrease (\u223c40%) (Figure 4B), suggesting that cell stress-induced U6atac increase is due, at least in part, to U6atac stabilization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "289e069a-7b59-496a-8662-aae8cc76c7b1",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C63",
+      "claim": "Co-treatment with ActD and anisomycin resulted in approximately 40% U6atac decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the drastic U6atac decrease after transcription inhibition with ActD (82%), co-treatment with anisomycin resulted in only about half that amount of U6atac decrease (\u223c40%) (Figure 4B), suggesting that cell stress-induced U6atac increase is due, at least in part, to U6atac stabilization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "70c4aa19-45ae-4d88-8512-8ec9dbb33ff0",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C64",
+      "claim": "Cell stress-induced U6atac increase is due, at least in part, to U6atac stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the drastic U6atac decrease after transcription inhibition with ActD (82%), co-treatment with anisomycin resulted in only about half that amount of U6atac decrease (\u223c40%) (Figure 4B), suggesting that cell stress-induced U6atac increase is due, at least in part, to U6atac stabilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that anisomycin partially rescues U6atac from ActD-induced degradation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "f7fc81c6-8c51-4bb2-99f7-75bfb53f3626",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C65",
+      "claim": "U6atac increase correlated with enhanced minor intron splicing and gene expression of a splicing reporter (LucI-minor).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the U6atac increase correlated with enhanced minor intron splicing and gene expression of a splicing reporter (LucI-minor) whose expression is strictly dependent on splicing of a minor intron, showing a twofold increase of its expression after anisomycin treatment (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "e0d7a50a-01da-4cb3-987e-418ed531576e",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C66",
+      "claim": "LucI-minor reporter showed a twofold increase of its expression after anisomycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the U6atac increase correlated with enhanced minor intron splicing and gene expression of a splicing reporter (LucI-minor) whose expression is strictly dependent on splicing of a minor intron, showing a twofold increase of its expression after anisomycin treatment (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "a6865b9a-16fe-4a72-81b9-d8664ef252c2",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C67",
+      "claim": "Intronless and major intron-containing reporters were not affected by anisomycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, intronless and major intron-containing reporters (Younis et al., 2010) were not affected, indicating that the increased expression is due to enhanced minor intron splicing and not an effect on transcription or translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and a citation to Younis et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "c22c7d55-32fe-40fe-bcdb-e4b751812b13",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C68",
+      "claim": "The increased expression of LucI-minor is due to enhanced minor intron splicing and not an effect on transcription or translation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, intronless and major intron-containing reporters (Younis et al., 2010) were not affected, indicating that the increased expression is due to enhanced minor intron splicing and not an effect on transcription or translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects on different reporter constructs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "8be0a979-4c09-4cb4-871d-e471eadd3023",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C69",
+      "claim": "A similar U6atac increase was observed in Jurkat T-cells and THP-1 monocytes following anisomycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar U6atac increase was observed in Jurkat T-cells and THP-1 monocytes following anisomycin treatment (Figure 4D), indicating that U6atac increase by activated p38MAPK is a general phenomenon and not limited to HeLa cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "07f2b673-8a54-4291-9a10-0735230f358e",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C70",
+      "claim": "U6atac increase by activated p38MAPK is a general phenomenon and not limited to HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar U6atac increase was observed in Jurkat T-cells and THP-1 monocytes following anisomycin treatment (Figure 4D), indicating that U6atac increase by activated p38MAPK is a general phenomenon and not limited to HeLa cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of similar effects in multiple cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "49921448-d3cf-4f4b-97c9-e260bb5cb591",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C71",
+      "claim": "p38MAPK activation with anisomycin increased minor intron splicing and mRNA levels of PTEN and E2F2.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, p38MAPK activation with anisomycin increased minor intron splicing and mRNA levels of several endogenous genes that contain minor introns (e.g., PTEN and E2F2; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "d4fb0e35-29ec-4a39-ac2d-95383d27d655",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C72",
+      "claim": "Splicing and mRNA levels of eIF3K were unaffected by anisomycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Splicing and mRNA levels of eIF3K, whose minor intron splices with high efficiency in control cells, as well as GAPDH and actin, used as controls because they have no minor introns, were unaffected (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "e5fefa88-ab4f-4186-9c7a-1efc9b51ea31",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C73",
+      "claim": "Anisomycin enhanced splicing and expression from genes whose levels are suppressed in HeLa under normal growth conditions (e.g., BRMS1L and E2F6).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, anisomycin also enhanced splicing and expression from genes whose levels are suppressed in HeLa under normal growth conditions (Figure 5B; e.g., BRMS1L and E2F6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "358089c8-e97f-4b6d-8fe2-612d546339f6",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C74",
+      "claim": "PTEN's minor intron splicing increased by up to fivefold after 4 hr of anisomycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if the p38MAPK\u2013induced up-regulation of minor intron splicing depends on U6atac increase, we examined, as an example, the splicing of PTEN's minor intron, which increased by up to fivefold after 4 hr of anisomycin treatment (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "cb936cc3-0aeb-4fe1-8b43-3314db547455",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C75",
+      "claim": "PTEN splicing increase was completely blocked after co-treatment with U6atac AMO.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase was completely blocked after co-treatment with U6atac AMO, even at a low amount (1 nmole) that only partially inactivates U6atac (Figure 6A), confirming that p38MAPK up-regulation of minor intron-containing mRNAs expression is strictly reliant on its ability to increase U6atac level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "811b6958-a827-4a36-8e91-4c2c70fe64f4",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C76",
+      "claim": "p38MAPK up-regulation of minor intron-containing mRNAs expression is strictly reliant on its ability to increase U6atac level.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase was completely blocked after co-treatment with U6atac AMO, even at a low amount (1 nmole) that only partially inactivates U6atac (Figure 6A), confirming that p38MAPK up-regulation of minor intron-containing mRNAs expression is strictly reliant on its ability to increase U6atac level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the observation that U6atac AMO blocks the anisomycin effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "36cead0e-2094-47b1-9150-ca78270d1f3e",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C77",
+      "claim": "p38MAPK activation increases transcription of TNF-\u03b1 and IL-8.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas p38MAPK activation increases transcription of several key cell physiology modulators, including up-regulation of the cytokines TNF-\u03b1 and IL-8 (Figure 6B,C), which do not contain minor introns (Chang et al., 2006), production of these cytokines has been shown to be suppressed by PTEN, a minor intron-containing gene (Furumoto et al., 2006; Furgeson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B,C and a citation to Chang et al., 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "e0ae44a5-0ad9-4d89-a4cc-5c4ad67793bb",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C78",
+      "claim": "TNF-\u03b1 and IL-8 do not contain minor introns.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas p38MAPK activation increases transcription of several key cell physiology modulators, including up-regulation of the cytokines TNF-\u03b1 and IL-8 (Figure 6B,C), which do not contain minor introns (Chang et al., 2006), production of these cytokines has been shown to be suppressed by PTEN, a minor intron-containing gene (Furumoto et al., 2006; Furgeson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Chang et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "a7e04e05-0c87-44b4-b904-193618734632",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C79",
+      "claim": "Production of TNF-\u03b1 and IL-8 has been shown to be suppressed by PTEN.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas p38MAPK activation increases transcription of several key cell physiology modulators, including up-regulation of the cytokines TNF-\u03b1 and IL-8 (Figure 6B,C), which do not contain minor introns (Chang et al., 2006), production of these cytokines has been shown to be suppressed by PTEN, a minor intron-containing gene (Furumoto et al., 2006; Furgeson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Furumoto et al., 2006; Furgeson et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "7f7fa394-c502-432c-98d2-2c4d6f6b1c84",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C80",
+      "claim": "U6atac inactivation increased the levels of p38MAPK-mediated TNF-\u03b1 and IL-8 production to more than twofold compared to control AMO.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6B,C, U6atac inactivation increased the levels of p38MAPK-mediated TNF-\u03b1 and IL-8 production to a much higher level, >twofold compared to control AMO, suggesting that a minor intron-containing gene(s) suppresses production of these cytokines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "a2f2a758-633f-411c-b362-a93f1e8bd3a6",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C81",
+      "claim": "A minor intron-containing gene(s) suppresses production of TNF-\u03b1 and IL-8.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6B,C, U6atac inactivation increased the levels of p38MAPK-mediated TNF-\u03b1 and IL-8 production to a much higher level, >twofold compared to control AMO, suggesting that a minor intron-containing gene(s) suppresses production of these cytokines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that U6atac inactivation increases cytokine production.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "7c4d04ec-a6fb-4d34-b254-79558d2adf7d",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C82",
+      "claim": "PTEN knockdown by siRNA resulted in the same effect on p38MAPK-induced TNF-\u03b1 and IL-8 production as U6atac AMO.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if this is due to loss of PTEN suppression, PTEN was knocked down by siRNA (Figure 6D). This resulted in the same effect on p38MAPK-induced TNF-\u03b1 and IL-8 production as U6atac AMO (Figure 6, compare panels 6E and 6F to 6B and 6C), indicating that PTEN expression, which is regulated by U6atac level, plays a role in p38MAPK-induced cytokine production.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6D, E, F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "45138a70-e7a4-4d90-8167-2808494368db",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C83",
+      "claim": "PTEN expression, which is regulated by U6atac level, plays a role in p38MAPK-induced cytokine production.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in the same effect on p38MAPK-induced TNF-\u03b1 and IL-8 production as U6atac AMO (Figure 6, compare panels 6E and 6F to 6B and 6C), indicating that PTEN expression, which is regulated by U6atac level, plays a role in p38MAPK-induced cytokine production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the observation that PTEN knockdown phenocopies U6atac AMO effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "e36bf44a-9557-4083-913c-7a4c4a04d0b8",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C84",
+      "claim": "PTEN mRNA level was increased by 2-5 fold after anisomycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that while PTEN mRNA level was increased by 2\u20135 fold we have only been able to detect a small (\u223c20%) increase of PTEN protein level by western blot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "effce133-03fe-4b25-8e1e-6679def6306d",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C85",
+      "claim": "PTEN protein level increased by approximately 20% after anisomycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that while PTEN mRNA level was increased by 2\u20135 fold we have only been able to detect a small (\u223c20%) increase of PTEN protein level by western blot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "0972efbc-9b0e-41fe-aaae-83f429543ff3",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C86",
+      "claim": "Even very small changes in PTEN level are sufficient to have a strong phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, previous reports have shown that even very small changes in PTEN level are sufficient to have a strong phenotype (Alimonti et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Alimonti et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "bd385e1c-992e-4581-88bd-0c85f42c9695",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C87",
+      "claim": "Previous studies using a small number of model minor introns have led to the perception that minor introns generally splice at a slower rate than major introns.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies using a small number of model minor introns have led to the perception that minor introns generally splice at a slower rate than major introns and could therefore be rate limiting for the production of mRNAs that contain them (Patel et al., 2002; Singh and Padgett, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Patel et al., 2002; Singh and Padgett, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "3dca87dd-4b27-4082-80ff-46599690dd21",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C88",
+      "claim": "There has been no evidence that minor introns could be regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there has been no evidence that minor introns could be regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "c6e50c15-4388-4379-a2c0-d6a2f4daa675",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C89",
+      "claim": "U6atac is highly unstable relative to other snRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we discovered that U6atac is highly unstable relative to other snRNAs and its level can be rapidly up- or down-regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "926eeb21-4769-43f6-ac21-01f647a2cb6a",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C90",
+      "claim": "U6atac level can be rapidly up- or down-regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we discovered that U6atac is highly unstable relative to other snRNAs and its level can be rapidly up- or down-regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figures 1 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "39d90033-4e59-4a1c-ae9f-faa9c8c6f4fc",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C91",
+      "claim": "Modulation of U6atac amount produces a corresponding change in the amount of mRNA from many minor intron-containing genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, modulation of U6atac amount produces a corresponding change in the amount of mRNA from many minor intron-containing genes, thus providing a novel post-transcriptional mechanism for regulating minor intron splicing and the expression of the genes that contain them, as depicted in Figure 7.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data throughout the manuscript and summarized in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "e64999e3-92f8-4f1b-abf4-8bc78c61515d",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C92",
+      "claim": "In growing HeLa cells approximately 50% of minor intron-containing genes are suppressed by the limiting U6atac level and produce very low amounts of mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in growing HeLa cells \u223c50% of minor intron-containing genes are suppressed by the limiting U6atac level and produce very low amounts of mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data showing 206 out of 429 genes severely down-regulated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "fc57f7f0-6bbd-40ba-95dc-05c6405a7b7c",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C93",
+      "claim": "The apparent sluggishness observed for some minor introns can be explained by the rarity of U6atac, rather than an intrinsic inefficiency of minor introns.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the apparent sluggishness observed for some minor introns can be explained by the rarity of U6atac, rather than an intrinsic inefficiency of minor introns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that minor introns splice efficiently when U6atac is increased.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "180b6235-eb6c-4874-93d4-7f120908c13c",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C94",
+      "claim": "The rapid turnover of U6atac after attenuation of either RNA polymerases II or III makes the minor spliceosome a real time sensor of transcriptional activity in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the rapid turnover of U6atac after attenuation of either RNA polymerases II or III makes the minor spliceosome a real time sensor of transcriptional activity in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations of U6atac's rapid response to transcriptional changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "93c2d909-7036-4d90-9365-5ba28bf5d87f",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C95",
+      "claim": "U6atac and the many minor intron-containing genes whose expression depends on sufficient U6atac are unexpected downstream targets of p38MAPK.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased amount of U6atac following p38MAPK activation indicates that U6atac and the many minor intron-containing genes whose expression depends on sufficient U6atac are unexpected downstream targets of p38MAPK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental findings showing p38MAPK regulation of U6atac.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "572b0c96-179c-4e79-993a-825b575b1a08",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C96",
+      "claim": "Minor intron-containing genes including PTEN, E2F2, E2F6 and MTBP play important roles in cell stress physiology such as regulating cytokine production.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes, including PTEN, E2F2, E2F6 and MTBP, play important roles in cell stress physiology such as regulating cytokine production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and established knowledge about these genes.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "25a179f5-4c89-4177-b2cc-d8d4459ca589",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C97",
+      "claim": "PTEN is a tumor suppressor that plays key roles in cell growth and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "PTEN, phosphatase and tensin homolog, is a tumor suppressor that plays key roles in cell growth and apoptosis (Tamguney and Stokoe, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Tamguney and Stokoe, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "f1f11923-e43a-4ee6-bce0-22b206f219e0",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C98",
+      "claim": "U6atac and the minor splicing pathway, through regulation of PTEN expression, play an antagonistic role that buffers p38MAPK-induced production of TNF-\u03b1 and IL-8.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that U6atac and the minor splicing pathway, through regulation of PTEN expression, play an antagonistic role that buffers p38MAPK-induced production of TNF-\u03b1 and IL-8, two major inflammatory response mediators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "266bdac5-9914-49f4-9f30-240c01f61e44",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C99",
+      "claim": "TNF-\u03b1 functions in a wide range of processes including cell proliferation, differentiation, apoptosis, lipid metabolism and coagulation.",
+      "claim_type": "EXPLICIT",
+      "source": "TNF-\u03b1 also functions in a wide range of processes including cell proliferation, differentiation, apoptosis, lipid metabolism and coagulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TNF-\u03b1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "5196422a-7861-436b-90f2-8807569a3ade",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C100",
+      "claim": "IL-8 is a chemo-attractant and a potent angiogenic factor.",
+      "claim_type": "EXPLICIT",
+      "source": "IL-8 is a chemo-attractant and a potent angiogenic factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about IL-8 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "1fa1df31-778d-4316-922f-a91a85095a3c",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C101",
+      "claim": "Activated p38MAPK phosphorylates the transcription factor ATF2, which in turn activates PTEN transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "While activated p38MAPK has been shown to phosphorylate the transcription factor ATF2, which in turn activates PTEN transcription (Shen et al., 2006; Qian et al., 2012), our data show that PTEN expression can also be regulated post-transcriptionally by the efficiency of splicing of its minor intron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Shen et al., 2006; Qian et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "c55eda5c-359a-45bb-a68d-27e410a9a7a4",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C102",
+      "claim": "PTEN expression can be regulated post-transcriptionally by the efficiency of splicing of its minor intron.",
+      "claim_type": "EXPLICIT",
+      "source": "While activated p38MAPK has been shown to phosphorylate the transcription factor ATF2, which in turn activates PTEN transcription (Shen et al., 2006; Qian et al., 2012), our data show that PTEN expression can also be regulated post-transcriptionally by the efficiency of splicing of its minor intron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "cd821e02-b996-4840-bb87-b271efa686fa",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C103",
+      "claim": "Minor introns and snRNPs have been lost at multiple points during eukaryotic evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, despite their early evolutionary origin, minor introns and snRNPs have been lost at multiple points during eukaryotic evolution (Bartschat and Samuelsson, 2010), suggesting that, in contrast to the major spliceosome, they are not absolutely essential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bartschat and Samuelsson, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "b4ee308b-be9c-46bd-8455-41d39f9383d0",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C104",
+      "claim": "Minor introns and snRNPs are not absolutely essential, in contrast to the major spliceosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, despite their early evolutionary origin, minor introns and snRNPs have been lost at multiple points during eukaryotic evolution (Bartschat and Samuelsson, 2010), suggesting that, in contrast to the major spliceosome, they are not absolutely essential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that they have been lost in some lineages.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "312c195c-fbb8-438c-b64e-777fe3127e83",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C105",
+      "claim": "Minor intron-containing genes that typically contain a single minor intron amidst many major ones function in diverse cellular processes that are critical for cell growth and organism development.",
+      "claim_type": "EXPLICIT",
+      "source": "Minor intron-containing genes that typically contain a single minor intron amidst many major ones function in diverse cellular processes that are critical for cell growth and organism development (Otake et al., 2002; Alioto, 2007; Abdel-Salam et al., 2011; Edery et al., 2011; He et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Otake et al., 2002; Alioto, 2007; Abdel-Salam et al., 2011; Edery et al., 2011; He et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "8881ea9c-a9f3-42dd-9d0f-10b69381e2bf",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C106",
+      "claim": "A single minor intron is sufficient to regulate the expression of an entire pre-mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, as our RNA-seq show, a single minor intron is sufficient to regulate the expression of an entire pre-mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data showing effects on full-length transcripts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "d8a1d8d4-accd-405b-9668-2963413c7deb",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C107",
+      "claim": "The conservation of minor introns over more than 500 million years demonstrates the effectiveness of this gene regulation mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The conservation of this design principle over >500 million years (Burge et al., 1998; Shukla and Padgett, 1999; Russell et al., 2006) demonstrates the effectiveness of this gene regulation mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Burge et al., 1998; Shukla and Padgett, 1999; Russell et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "df29657c-8ecf-4ce1-8408-38522a707a78",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C108",
+      "claim": "More than 120 million RNA-seq reads were obtained for each sample.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 120 million RNA-seq reads were obtained for each sample, with \u223c70% of these mapping to 9799 and 8397 genes in control and U6atac AMO-treated cells, respectively (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequencing data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "bdef525a-b68a-4cbe-b735-726899477cb3",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "claim_id": "C109",
+      "claim": "Approximately 70% of RNA-seq reads mapped to 9799 genes in control cells and 8397 genes in U6atac AMO-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 120 million RNA-seq reads were obtained for each sample, with \u223c70% of these mapping to 9799 and 8397 genes in control and U6atac AMO-treated cells, respectively (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequencing data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "393a7e37-35d2-4e29-b7f5-a50bc0e55aad",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "U6atac snRNA has a short half-life (<2 hours) and rapidly decreases upon transcription inhibition. This was demonstrated using microarray analysis and qPCR validation showing rapid decrease after treatment with Pol II inhibitors ActD and DRB, distinguishing U6atac from other snRNAs like U5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C17, C18, C23, and C89 collectively demonstrate U6atac instability through multiple experimental approaches (microarray in Figure 1A, qPCR in Figure 1B). The use of two structurally unrelated Pol II inhibitors (ActD and DRB) strengthens the finding, and the specificity is confirmed by showing U5 stability as a control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "b8e29c39-05fe-4617-ab2b-896df34a6804",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "U6atac level depends on both RNA polymerases II and III. Pol II inhibition (ActD, DRB) causes rapid U6atac decrease, while mitotic arrest (nocodazole) shows moderate decrease and translation inhibition (CHX) shows no effect. This co-dependence is consistent with prior reports of Pol II binding upstream of Pol III at these ncRNA promoters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C17, C18, C19, C24, and C25 are well-supported by experimental data in Figure 1A showing differential effects of various inhibitors. The citation to Listerman et al., 2007 (C19) provides mechanistic context. The specificity controls (nocodazole, CHX) strengthen the interpretation that the effect is transcription-dependent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "0b3dd757-37ed-4146-86a2-5bc458c5229d",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "U6atac instability is rate-limiting for U4atac/U6atac di-snRNP formation. ActD treatment decreased U4atac levels by ~20% but reduced di-snRNP formation by >80%, demonstrating disproportionate impact on complex assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C28, and C29 are supported by immunoprecipitation data in Figure 1\u2014figure supplement 3. The disproportionate reduction in di-snRNP formation (>80%) compared to U4atac levels (~20%) provides strong evidence that U6atac is rate-limiting. However, the mechanism of U6atac stabilization within the complex is not explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "8aa54fb0-8fb8-4d35-8a51-ac1d0ea58868",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Antisense morpholino oligonucleotides (AMOs) targeting U6atac or U12 specifically inhibit minor intron splicing without affecting major intron splicing. RNase H protection and RT-PCR confirmed specific binding and functional inhibition of the minor spliceosome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 and C52 are well-supported by experimental validation in Figures 2A-C and Figure 3. The specificity is demonstrated by showing U6atac AMO affects only minor introns (C32), U6 AMO affects only major introns (C33), and U12 AMO phenocopies U6atac AMO effects (C52). The RNase H protection assay (C31) confirms on-target binding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "41c6188b-883f-47a2-bf94-12e4f024372e",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In HeLa cells under normal growth conditions, approximately 48% (206 of 429) of expressed minor intron-containing genes are suppressed by limiting U6atac levels and produce very low amounts of mRNA. These genes are severely down-regulated (FPKM < 1) upon U6atac inhibition, suggesting their unspliced pre-mRNAs are unstable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 and C92 are supported by RNA-seq data analysis showing 206 of 429 expressed minor intron genes are severely down-regulated. The inference that unspliced pre-mRNAs are unstable (C37) is reasonable given the severe down-regulation, though direct measurement of pre-mRNA stability was not performed. The use of nascent RNA labeling (4-thiouridine) strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "9755c187-432c-4029-b06d-930e21db9c29",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Minor introns show a wide range (>20-fold) of U6atac-dependent splicing efficiency. 44 introns (20%) splice efficiently under normal conditions but are sensitive to U6atac decrease, while 81 introns (36%) are poorly spliced under normal conditions and predicted to improve with increased U6atac. This variation cannot be explained by splice site sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 are supported by RNA-seq data and splicing index calculations shown in Figure 2D-F. The >20-fold range in splicing dependence is well-documented. The negative result regarding sequence determinants (C43) is noted but not extensively explored. The classification into sensitive vs. poorly-spliced categories provides important functional insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "24af511a-78d2-4488-a7d9-32d7803136f7",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "U6atac inactivation causes >2-fold down-regulation in 2,088 genes (including all 429 minor intron genes) and 657 alternative splicing changes. Major introns in minor intron-containing transcripts splice normally, but the effects reverberate widely throughout the transcriptome affecting ~2,000 genes without minor introns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47, C53, and C54 are supported by comprehensive RNA-seq analysis (Table 1, Figures 2-3). The specificity for minor introns is demonstrated by normal major intron splicing (C47). The widespread transcriptome effects (C54) on genes without minor introns are acknowledged as potentially secondary but represent significant biological phenomena. Only 3 genes were up-regulated (C45), indicating predominantly suppressive effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "3ba54697-9be5-4751-a2ef-c7fe7440b4c0",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In a small number of genes (<20), U6atac inactivation elicits alternative splicing from cryptic major splice sites around minor introns, resulting in mRNA isoform switching without overall transcript down-regulation. This resembles twintrons previously described in Drosophila but not previously identified in human cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 are supported by RNA-seq data shown in Figure 3B (C11ORF10, ZNF207). The isoform switching without down-regulation (C49) is demonstrated. The comparison to Drosophila twintrons (C50) is appropriately cited. The novelty claim for human cells (C51) appears reasonable based on the authors' literature knowledge, though the effects may be due to misplicing rather than regulated switching.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "f6351c05-3187-43b8-86a5-647f4307c3f9",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Anisomycin treatment activates p38MAPK and results in ~2-fold increase in U6atac levels within 4 hours. This increase is predominantly due to p38MAPK activation, as demonstrated by blocking with p38MAPK inhibitor SB203580 but not JNK inhibitor SP600125.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C61 are well-supported by experimental data in Figure 4A. The use of specific kinase inhibitors (SB203580 for p38MAPK, SP600125 for JNK) provides strong evidence that the effect is p38MAPK-dependent (C61). The ~2-fold increase is consistently observed. The pharmacological approach with appropriate controls is rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "fedfce09-3c9b-4563-bfdf-fada5b5f7616",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cell stress-induced U6atac increase is due, at least in part, to U6atac stabilization. ActD alone causes 82% U6atac decrease, but co-treatment with anisomycin results in only ~40% decrease, suggesting anisomycin partially protects U6atac from degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 are supported by experimental data in Figure 4B. The partial rescue of U6atac levels by anisomycin during ActD treatment provides evidence for stabilization (C64). However, the mechanism of stabilization is not elucidated, and the phrase 'at least in part' appropriately acknowledges that increased transcription may also contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "4b71d230-f7da-48aa-86f5-e0e46931bde8",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "U6atac increase correlates with enhanced minor intron splicing and gene expression. A minor intron-containing luciferase reporter (LucI-minor) showed 2-fold increased expression after anisomycin treatment, while intronless and major intron-containing reporters were unaffected, indicating the effect is due to enhanced minor intron splicing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 are supported by reporter assay data in Figure 4C. The use of three different reporter constructs (intronless, major intron, minor intron) provides strong specificity controls. The selective effect on the minor intron reporter (C66) with no effect on other reporters (C67) supports the interpretation that the mechanism is splicing-dependent rather than transcriptional or translational (C68).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "e8c30786-1ff9-43ac-8760-e18a0117cd71",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "U6atac increase by activated p38MAPK is a general phenomenon observed in multiple cell types (Jurkat T-cells, THP-1 monocytes, HeLa cells), indicating it is not limited to a single cell line.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69 and C70 are supported by experimental data in Figure 4D showing similar U6atac increases in three different cell types. This demonstrates generalizability beyond HeLa cells. However, the magnitude of response and functional consequences in different cell types are not extensively characterized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "09808183-3397-4595-b311-ce0e32122640",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "p38MAPK activation with anisomycin increases minor intron splicing and mRNA levels of endogenous genes (PTEN, E2F2, BRMS1L, E2F6). Genes with efficiently spliced minor introns (eIF3K) and genes without minor introns (GAPDH, actin) are unaffected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 are supported by qPCR data in Figure 5A-B. The selective effects on minor intron-containing genes with appropriate controls (eIF3K, GAPDH, actin) strengthen the conclusion. The inclusion of normally suppressed genes (BRMS1L, E2F6) in C73 demonstrates that U6atac increase can activate previously silent genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "92b1bc47-2419-4602-ad74-d81c1cf55487",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "p38MAPK up-regulation of minor intron-containing mRNAs is strictly dependent on U6atac increase. PTEN minor intron splicing increased 5-fold after anisomycin treatment, but this was completely blocked by co-treatment with U6atac AMO, even at low doses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 are supported by experimental data in Figure 6A. The complete blocking of the anisomycin effect by U6atac AMO (C75) provides strong evidence for strict dependence (C76). The use of a low AMO dose that only partially inactivates U6atac strengthens the conclusion that U6atac is the critical limiting factor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "8fd8021a-030a-4139-a53e-163ae6b59a42",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "U6atac modulation affects p38MAPK-induced cytokine production through regulation of PTEN. U6atac inactivation increased TNF-\u03b1 and IL-8 production >2-fold, and PTEN knockdown phenocopied this effect, indicating PTEN (regulated by U6atac) suppresses cytokine production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C83 are supported by experimental data in Figure 6B-F. The phenocopy experiment with PTEN siRNA (C82) provides strong evidence that PTEN mediates the effect (C83). The prior literature on PTEN suppression of cytokines (C79) is appropriately cited. However, the modest PTEN protein increase (~20%, C85) raises questions about the magnitude of effect needed for functional consequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "3694e0e9-4216-4c87-a079-298d3a81f0b5",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "PTEN mRNA increased 2-5 fold after anisomycin treatment, but protein levels increased only ~20%. However, prior reports indicate even small changes in PTEN levels can have strong phenotypic effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84 and C85 report a discrepancy between mRNA (2-5 fold) and protein (~20%) changes. While C86 cites prior work showing small PTEN changes are sufficient for phenotypes, the disconnect between mRNA and protein raises questions about post-transcriptional regulation or protein stability. The functional data (cytokine production) support a role for PTEN, but the mechanism linking modest protein changes to large functional effects needs further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "4e6c2678-7a69-43ac-bce3-fbfc52614d68",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Minor introns function as embedded molecular switches regulated by U6atac abundance, providing a novel post-transcriptional gene expression mechanism. A single minor intron is sufficient to regulate expression of an entire pre-mRNA, and the rapid U6atac turnover makes the minor spliceosome a real-time sensor of transcriptional activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C91, C93, C94, C95, and C106 represent the central model proposed by the authors. This model is well-supported by the collective experimental evidence showing: (1) U6atac instability and rapid modulation, (2) wide range of minor intron splicing efficiencies dependent on U6atac levels, (3) regulation by p38MAPK, and (4) functional consequences for gene expression. The model provides a unifying explanation for the data and addresses the long-standing question of minor spliceosome conservation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "eb047812-9ebf-4037-9ce0-fa5305de3f36",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "U6atac and the minor splicing pathway play an antagonistic role in p38MAPK signaling by regulating PTEN expression, which buffers p38MAPK-induced TNF-\u03b1 and IL-8 production. PTEN expression can be regulated post-transcriptionally through minor intron splicing efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98, C96, and C102 are supported by the functional data in Figure 6 showing U6atac effects on cytokine production through PTEN. The post-transcriptional regulation of PTEN (C102) is demonstrated by splicing changes. However, the model would be strengthened by more direct evidence of the antagonistic relationship and by addressing the mRNA-protein discrepancy noted in C84-C85.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "af5e4f5a-0a7d-4101-a43e-5ca710ada342",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The conservation of minor introns over >500 million years, despite their loss in some lineages, demonstrates the effectiveness of this gene regulation mechanism. Minor intron-containing genes function in diverse critical cellular processes, and the design principle of using a single minor intron to regulate entire transcripts has been evolutionarily maintained.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C105 and C107 are supported by appropriate citations to evolutionary and functional studies. The argument that conservation demonstrates effectiveness (C107) is reasonable given the experimental evidence for functional regulation. The acknowledgment that minor introns have been lost in some lineages (C103, C104) appropriately qualifies the conservation argument.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "8d1479e7-409d-4c56-b10a-312b67c89e22",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background and context claims establishing the state of knowledge about spliceosomes, minor introns, and related cellular processes. These include established facts about spliceosome composition, minor intron characteristics, disease associations, and prior observations about splicing kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C10-C16, C20-C22, C26, C50-C51, C87-C88, C97, C99-C101) provide necessary context and are appropriately supported by citations to prior literature or represent established knowledge. The novelty claims (C22, C51, C88) appear reasonable based on the authors' literature knowledge. These are primarily background rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    },
+    {
+      "id": "583f8a82-03be-42de-ba27-aaffe4556087",
+      "content_id": "ffd58326-5e66-4716-b933-ab580d74bcb8",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Technical and methodological claims including the enigma of minor intron conservation despite poor splicing, and RNA-seq technical details (>120 million reads, ~70% mapping to genes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C108, and C109 are supported by prior knowledge (C2) and sequencing data shown in Table 1 (C108-C109). The RNA-seq depth and mapping rates are appropriate for the analyses performed. These are primarily methodological details rather than scientific findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T19:35:52.981080Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5660fe3c-ded2-4532-8979-48391238488e",
+      "result_id": "393a7e37-35d2-4e29-b7f5-a50bc0e55aad"
+    },
+    {
+      "claim_id": "39385182-eb50-494f-951f-c8095baad364",
+      "result_id": "393a7e37-35d2-4e29-b7f5-a50bc0e55aad"
+    },
+    {
+      "claim_id": "1c0c9b16-6654-497c-af05-6f5264ae6366",
+      "result_id": "393a7e37-35d2-4e29-b7f5-a50bc0e55aad"
+    },
+    {
+      "claim_id": "c27b05d0-b38c-42aa-bd00-e245233ab60f",
+      "result_id": "393a7e37-35d2-4e29-b7f5-a50bc0e55aad"
+    },
+    {
+      "claim_id": "c6e50c15-4388-4379-a2c0-d6a2f4daa675",
+      "result_id": "393a7e37-35d2-4e29-b7f5-a50bc0e55aad"
+    },
+    {
+      "claim_id": "2ef1d425-d5ca-4570-b406-cce35abd2af7",
+      "result_id": "b8e29c39-05fe-4617-ab2b-896df34a6804"
+    },
+    {
+      "claim_id": "39385182-eb50-494f-951f-c8095baad364",
+      "result_id": "b8e29c39-05fe-4617-ab2b-896df34a6804"
+    },
+    {
+      "claim_id": "1c0c9b16-6654-497c-af05-6f5264ae6366",
+      "result_id": "b8e29c39-05fe-4617-ab2b-896df34a6804"
+    },
+    {
+      "claim_id": "ee693aaa-177f-4ed7-b566-c4aa70acdb69",
+      "result_id": "b8e29c39-05fe-4617-ab2b-896df34a6804"
+    },
+    {
+      "claim_id": "b7746453-d56d-4bec-a50b-0d40e02ee3d3",
+      "result_id": "b8e29c39-05fe-4617-ab2b-896df34a6804"
+    },
+    {
+      "claim_id": "1170812e-6f73-4114-a09a-d4888127353d",
+      "result_id": "b8e29c39-05fe-4617-ab2b-896df34a6804"
+    },
+    {
+      "claim_id": "759f5e90-0d4d-40e0-b2e0-7930d71f0e79",
+      "result_id": "0b3dd757-37ed-4146-86a2-5bc458c5229d"
+    },
+    {
+      "claim_id": "ef79b51a-679f-4b85-a3b9-3b6854bec967",
+      "result_id": "0b3dd757-37ed-4146-86a2-5bc458c5229d"
+    },
+    {
+      "claim_id": "18615b0d-8ce6-42a9-80aa-e8dcbc754cd7",
+      "result_id": "0b3dd757-37ed-4146-86a2-5bc458c5229d"
+    },
+    {
+      "claim_id": "b04f6e43-1e4e-4799-b396-3e3ce9f9b525",
+      "result_id": "8aa54fb0-8fb8-4d35-8a51-ac1d0ea58868"
+    },
+    {
+      "claim_id": "4d72c13c-4d1c-424d-bb12-5e602c958182",
+      "result_id": "8aa54fb0-8fb8-4d35-8a51-ac1d0ea58868"
+    },
+    {
+      "claim_id": "8041b04d-6e8f-4ee1-b09e-294f396a6e05",
+      "result_id": "8aa54fb0-8fb8-4d35-8a51-ac1d0ea58868"
+    },
+    {
+      "claim_id": "b947da0d-f966-45c4-a875-43a7e7f0e7a9",
+      "result_id": "8aa54fb0-8fb8-4d35-8a51-ac1d0ea58868"
+    },
+    {
+      "claim_id": "46ba8622-0a2f-40b7-b507-a4dc58d1af1e",
+      "result_id": "8aa54fb0-8fb8-4d35-8a51-ac1d0ea58868"
+    },
+    {
+      "claim_id": "88630b54-f923-4742-a6f7-1a86d154a1fe",
+      "result_id": "41c6188b-883f-47a2-bf94-12e4f024372e"
+    },
+    {
+      "claim_id": "985da0f3-4358-497a-b8fb-a2e92b16a50c",
+      "result_id": "41c6188b-883f-47a2-bf94-12e4f024372e"
+    },
+    {
+      "claim_id": "33060fb7-6ca1-4879-acb1-befb4592ff3b",
+      "result_id": "41c6188b-883f-47a2-bf94-12e4f024372e"
+    },
+    {
+      "claim_id": "8bcfc541-c74a-4e94-8d64-6aa650d12336",
+      "result_id": "41c6188b-883f-47a2-bf94-12e4f024372e"
+    },
+    {
+      "claim_id": "e64999e3-92f8-4f1b-abf4-8bc78c61515d",
+      "result_id": "41c6188b-883f-47a2-bf94-12e4f024372e"
+    },
+    {
+      "claim_id": "3298f20e-ed19-4115-b7e1-414d7408bc0d",
+      "result_id": "9755c187-432c-4029-b06d-930e21db9c29"
+    },
+    {
+      "claim_id": "0846a59d-4bf9-4f71-b694-57f8531dd556",
+      "result_id": "9755c187-432c-4029-b06d-930e21db9c29"
+    },
+    {
+      "claim_id": "adcc2fb2-e944-4876-8a61-427134a4a685",
+      "result_id": "9755c187-432c-4029-b06d-930e21db9c29"
+    },
+    {
+      "claim_id": "af981f43-1ae0-4e11-a942-9f958686193f",
+      "result_id": "9755c187-432c-4029-b06d-930e21db9c29"
+    },
+    {
+      "claim_id": "f6543dd6-a87b-4241-8d45-a4ae8c6125be",
+      "result_id": "9755c187-432c-4029-b06d-930e21db9c29"
+    },
+    {
+      "claim_id": "1e5b14f7-c4f9-4fe1-9a2d-244652a1b8f7",
+      "result_id": "9755c187-432c-4029-b06d-930e21db9c29"
+    },
+    {
+      "claim_id": "d391ca02-7da8-40b1-a584-d5cfd835c1b2",
+      "result_id": "24af511a-78d2-4488-a7d9-32d7803136f7"
+    },
+    {
+      "claim_id": "ba882103-045c-4bcc-99af-53521cad5355",
+      "result_id": "24af511a-78d2-4488-a7d9-32d7803136f7"
+    },
+    {
+      "claim_id": "79b3891a-daa0-4c33-ab51-77035da1aae9",
+      "result_id": "24af511a-78d2-4488-a7d9-32d7803136f7"
+    },
+    {
+      "claim_id": "7e23178a-bc42-4cf3-bd7e-0f88697b66a8",
+      "result_id": "24af511a-78d2-4488-a7d9-32d7803136f7"
+    },
+    {
+      "claim_id": "16698dcb-6186-4cd4-9448-eee5005ebb0f",
+      "result_id": "24af511a-78d2-4488-a7d9-32d7803136f7"
+    },
+    {
+      "claim_id": "478f8d7f-8af2-43c1-96aa-bd6bdc895ca3",
+      "result_id": "24af511a-78d2-4488-a7d9-32d7803136f7"
+    },
+    {
+      "claim_id": "ed054532-49a6-4ae6-995b-14de5f6f7fa4",
+      "result_id": "3ba54697-9be5-4751-a2ef-c7fe7440b4c0"
+    },
+    {
+      "claim_id": "f00929df-41d6-48c2-8378-0590aca1917f",
+      "result_id": "3ba54697-9be5-4751-a2ef-c7fe7440b4c0"
+    },
+    {
+      "claim_id": "0f234797-4374-4715-b31b-46c90185916b",
+      "result_id": "3ba54697-9be5-4751-a2ef-c7fe7440b4c0"
+    },
+    {
+      "claim_id": "2626da68-067d-40d8-947f-7755cb4ce2bf",
+      "result_id": "3ba54697-9be5-4751-a2ef-c7fe7440b4c0"
+    },
+    {
+      "claim_id": "c6421dca-a9cd-4e53-beaa-9a93156fa69a",
+      "result_id": "f6351c05-3187-43b8-86a5-647f4307c3f9"
+    },
+    {
+      "claim_id": "0ee514ca-65c3-4c38-9811-1eeef28a95cd",
+      "result_id": "f6351c05-3187-43b8-86a5-647f4307c3f9"
+    },
+    {
+      "claim_id": "3d26247c-7cba-45cc-a5a7-2598352f2fe6",
+      "result_id": "f6351c05-3187-43b8-86a5-647f4307c3f9"
+    },
+    {
+      "claim_id": "f937b27c-3eb6-4abb-9d68-72b3b5c957d3",
+      "result_id": "f6351c05-3187-43b8-86a5-647f4307c3f9"
+    },
+    {
+      "claim_id": "a56519f7-f6b0-4528-90ab-9f51319c3cca",
+      "result_id": "f6351c05-3187-43b8-86a5-647f4307c3f9"
+    },
+    {
+      "claim_id": "344b72d0-0b51-42f4-8d80-ebb9af52c4a4",
+      "result_id": "f6351c05-3187-43b8-86a5-647f4307c3f9"
+    },
+    {
+      "claim_id": "0f83ac66-6efa-4741-884d-3b98b3e5355d",
+      "result_id": "f6351c05-3187-43b8-86a5-647f4307c3f9"
+    },
+    {
+      "claim_id": "9ade401a-d18a-487b-a64e-ed1ff85f15c7",
+      "result_id": "fedfce09-3c9b-4563-bfdf-fada5b5f7616"
+    },
+    {
+      "claim_id": "289e069a-7b59-496a-8662-aae8cc76c7b1",
+      "result_id": "fedfce09-3c9b-4563-bfdf-fada5b5f7616"
+    },
+    {
+      "claim_id": "70c4aa19-45ae-4d88-8512-8ec9dbb33ff0",
+      "result_id": "fedfce09-3c9b-4563-bfdf-fada5b5f7616"
+    },
+    {
+      "claim_id": "f7fc81c6-8c51-4bb2-99f7-75bfb53f3626",
+      "result_id": "4b71d230-f7da-48aa-86f5-e0e46931bde8"
+    },
+    {
+      "claim_id": "e0d7a50a-01da-4cb3-987e-418ed531576e",
+      "result_id": "4b71d230-f7da-48aa-86f5-e0e46931bde8"
+    },
+    {
+      "claim_id": "a6865b9a-16fe-4a72-81b9-d8664ef252c2",
+      "result_id": "4b71d230-f7da-48aa-86f5-e0e46931bde8"
+    },
+    {
+      "claim_id": "c22c7d55-32fe-40fe-bcdb-e4b751812b13",
+      "result_id": "4b71d230-f7da-48aa-86f5-e0e46931bde8"
+    },
+    {
+      "claim_id": "8be0a979-4c09-4cb4-871d-e471eadd3023",
+      "result_id": "e8c30786-1ff9-43ac-8760-e18a0117cd71"
+    },
+    {
+      "claim_id": "07f2b673-8a54-4291-9a10-0735230f358e",
+      "result_id": "e8c30786-1ff9-43ac-8760-e18a0117cd71"
+    },
+    {
+      "claim_id": "49921448-d3cf-4f4b-97c9-e260bb5cb591",
+      "result_id": "09808183-3397-4595-b311-ce0e32122640"
+    },
+    {
+      "claim_id": "d4fb0e35-29ec-4a39-ac2d-95383d27d655",
+      "result_id": "09808183-3397-4595-b311-ce0e32122640"
+    },
+    {
+      "claim_id": "e5fefa88-ab4f-4186-9c7a-1efc9b51ea31",
+      "result_id": "09808183-3397-4595-b311-ce0e32122640"
+    },
+    {
+      "claim_id": "358089c8-e97f-4b6d-8fe2-612d546339f6",
+      "result_id": "92b1bc47-2419-4602-ad74-d81c1cf55487"
+    },
+    {
+      "claim_id": "cb936cc3-0aeb-4fe1-8b43-3314db547455",
+      "result_id": "92b1bc47-2419-4602-ad74-d81c1cf55487"
+    },
+    {
+      "claim_id": "811b6958-a827-4a36-8e91-4c2c70fe64f4",
+      "result_id": "92b1bc47-2419-4602-ad74-d81c1cf55487"
+    },
+    {
+      "claim_id": "36cead0e-2094-47b1-9150-ca78270d1f3e",
+      "result_id": "8fd8021a-030a-4139-a53e-163ae6b59a42"
+    },
+    {
+      "claim_id": "e0ae44a5-0ad9-4d89-a4cc-5c4ad67793bb",
+      "result_id": "8fd8021a-030a-4139-a53e-163ae6b59a42"
+    },
+    {
+      "claim_id": "a7e04e05-0c87-44b4-b904-193618734632",
+      "result_id": "8fd8021a-030a-4139-a53e-163ae6b59a42"
+    },
+    {
+      "claim_id": "7f7fa394-c502-432c-98d2-2c4d6f6b1c84",
+      "result_id": "8fd8021a-030a-4139-a53e-163ae6b59a42"
+    },
+    {
+      "claim_id": "a2f2a758-633f-411c-b362-a93f1e8bd3a6",
+      "result_id": "8fd8021a-030a-4139-a53e-163ae6b59a42"
+    },
+    {
+      "claim_id": "7c4d04ec-a6fb-4d34-b254-79558d2adf7d",
+      "result_id": "8fd8021a-030a-4139-a53e-163ae6b59a42"
+    },
+    {
+      "claim_id": "45138a70-e7a4-4d90-8167-2808494368db",
+      "result_id": "8fd8021a-030a-4139-a53e-163ae6b59a42"
+    },
+    {
+      "claim_id": "e36bf44a-9557-4083-913c-7a4c4a04d0b8",
+      "result_id": "3694e0e9-4216-4c87-a079-298d3a81f0b5"
+    },
+    {
+      "claim_id": "effce133-03fe-4b25-8e1e-6679def6306d",
+      "result_id": "3694e0e9-4216-4c87-a079-298d3a81f0b5"
+    },
+    {
+      "claim_id": "0972efbc-9b0e-41fe-aaae-83f429543ff3",
+      "result_id": "3694e0e9-4216-4c87-a079-298d3a81f0b5"
+    },
+    {
+      "claim_id": "e4ae9e64-27b9-4260-bd1c-050ea3af72b5",
+      "result_id": "4e6c2678-7a69-43ac-bce3-fbfc52614d68"
+    },
+    {
+      "claim_id": "39d90033-4e59-4a1c-ae9f-faa9c8c6f4fc",
+      "result_id": "4e6c2678-7a69-43ac-bce3-fbfc52614d68"
+    },
+    {
+      "claim_id": "fc57f7f0-6bbd-40ba-95dc-05c6405a7b7c",
+      "result_id": "4e6c2678-7a69-43ac-bce3-fbfc52614d68"
+    },
+    {
+      "claim_id": "180b6235-eb6c-4874-93d4-7f120908c13c",
+      "result_id": "4e6c2678-7a69-43ac-bce3-fbfc52614d68"
+    },
+    {
+      "claim_id": "93c2d909-7036-4d90-9365-5ba28bf5d87f",
+      "result_id": "4e6c2678-7a69-43ac-bce3-fbfc52614d68"
+    },
+    {
+      "claim_id": "8881ea9c-a9f3-42dd-9d0f-10b69381e2bf",
+      "result_id": "4e6c2678-7a69-43ac-bce3-fbfc52614d68"
+    },
+    {
+      "claim_id": "f1f11923-e43a-4ee6-bce0-22b206f219e0",
+      "result_id": "eb047812-9ebf-4037-9ce0-fa5305de3f36"
+    },
+    {
+      "claim_id": "572b0c96-179c-4e79-993a-825b575b1a08",
+      "result_id": "eb047812-9ebf-4037-9ce0-fa5305de3f36"
+    },
+    {
+      "claim_id": "c55eda5c-359a-45bb-a68d-27e410a9a7a4",
+      "result_id": "eb047812-9ebf-4037-9ce0-fa5305de3f36"
+    },
+    {
+      "claim_id": "cd821e02-b996-4840-bb87-b271efa686fa",
+      "result_id": "af5e4f5a-0a7d-4101-a43e-5ca710ada342"
+    },
+    {
+      "claim_id": "b4ee308b-be9c-46bd-8455-41d39f9383d0",
+      "result_id": "af5e4f5a-0a7d-4101-a43e-5ca710ada342"
+    },
+    {
+      "claim_id": "312c195c-fbb8-438c-b64e-777fe3127e83",
+      "result_id": "af5e4f5a-0a7d-4101-a43e-5ca710ada342"
+    },
+    {
+      "claim_id": "d8a1d8d4-accd-405b-9668-2963413c7deb",
+      "result_id": "af5e4f5a-0a7d-4101-a43e-5ca710ada342"
+    },
+    {
+      "claim_id": "2ad17a2b-35ba-40c2-bb8a-84a26cf93c38",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "8ea490a4-7e2b-4dae-a403-24e98a6044e1",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "b508eaf5-0be4-42f3-9348-0dc172ca8fdf",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "e1c7f816-fede-4575-817c-23f301623087",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "0dc35091-8ded-4a0f-8ad1-a6a82653bd83",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "cd8823be-b5a3-4011-82a7-129c662dec5c",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "1e069771-3581-4ac4-909a-aa8c278030e7",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "09d3c322-fde4-4929-8cf7-77f683251db9",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "c56b41f9-a57c-49c8-8167-d509feb7e26d",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "f38d38f8-8c7f-415f-8ba1-b727d44c03b8",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "74b0a987-c09f-4473-927a-56558f4713fd",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "ef802e40-c70b-4b54-9946-d1a3ce60577d",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "0f234797-4374-4715-b31b-46c90185916b",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "2626da68-067d-40d8-947f-7755cb4ce2bf",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "bd385e1c-992e-4581-88bd-0c85f42c9695",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "3dca87dd-4b27-4082-80ff-46599690dd21",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "25a179f5-4c89-4177-b2cc-d8d4459ca589",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "266bdac5-9914-49f4-9f30-240c01f61e44",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "5196422a-7861-436b-90f2-8807569a3ade",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "1fa1df31-778d-4316-922f-a91a85095a3c",
+      "result_id": "8d1479e7-409d-4c56-b10a-312b67c89e22"
+    },
+    {
+      "claim_id": "aae7dc1a-a953-44b1-a3a4-cb920ff048a3",
+      "result_id": "583f8a82-03be-42de-ba27-aaffe4556087"
+    },
+    {
+      "claim_id": "df29657c-8ecf-4ce1-8408-38522a707a78",
+      "result_id": "583f8a82-03be-42de-ba27-aaffe4556087"
+    },
+    {
+      "claim_id": "bdef525a-b68a-4cbe-b735-726899477cb3",
+      "result_id": "583f8a82-03be-42de-ba27-aaffe4556087"
+    }
+  ],
+  "comparisons": []
+}

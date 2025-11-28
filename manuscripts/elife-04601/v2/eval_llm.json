@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C13",
+      "C63"
+    ],
+    "result": "In C. crescentus and E. coli cells, FtsZ filaments form a continuous, single-layered ring at division sites, located 15-16 nm from the inner membrane. This was demonstrated by electron cryotomography in unmodified cells, with continuous rings detected in 20 out of 28 dividing C. crescentus cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C9, C10, C11, C13, and C63 collectively provide strong evidence from electron cryotomography data (Figures 1A, 1B, 1C) showing continuous, single-layered FtsZ rings in both C. crescentus and E. coli. The quantitative observation (20/28 cells) and consistent distance measurements support the conclusion. The authors address the missing wedge artifact and demonstrate that filaments are visible wherever the technique allows.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Systematic perturbations of FtsZ constructs in E. coli confirm that the observed filaments are FtsZ. Over-expression of FtsZ(D212A) produces wider single-layered bands of filament doublets (6.8 nm apart) at division sites. Modifying the C-terminal linker or FtsA-binding domain predictably alters filament distance from the membrane or localization, and the longitudinal subunit repeat matches the expected 4 nm for FtsZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 describe a comprehensive set of experiments using FtsZ mutants with predictable outcomes (Figures 1D-L, Figure 1\u2014figure supplements 3-4). The systematic perturbations (linker extension, membrane-targeting sequence replacement, C-terminal deletion, linker deletion) all produce expected changes in filament positioning or behavior. The measured 4 nm subunit repeat matches literature values, providing strong validation that the observed structures are FtsZ.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Co-over-expression of FtsZ(D212A) and FtsA at 1:1 ratio produces multiple functional constriction sites in E. coli, making FtsA filaments visible between the inner membrane and FtsZ (8 nm from each). These extra division sites lead to complete cell separation (minicell phenotype), suggesting FtsZ and FtsA are central components of the membrane constriction force generator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 are well-supported by electron cryotomography (Figure 2A-E) and structured illumination microscopy (Figure 2F) showing that over-expression of just FtsZ and FtsA produces functional division sites. The visualization of FtsA filaments at altered stoichiometry, combined with demonstration of complete cell separation, provides strong evidence for the sufficiency of these two proteins in generating constriction force. The inference in C30 is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "TmFtsZ and TmFtsA form spirals with weak doublets on flat lipid monolayers, with material in spiral centers possibly representing lipid pushed up by constriction via a sliding filament mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C31 is supported by Figure 3A showing spirals on lipid monolayers. However, C32 contains speculation about the mechanism ('possibly via a sliding filament mechanism') that is not directly demonstrated. The observation of doublets and central material is descriptive, but the mechanistic interpretation requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C39",
+      "C36"
+    ],
+    "result": "When TmFtsZ and TmFtsA are encapsulated inside liposomes, constriction sites form efficiently and exclusively where complete rings of filaments are present. Constriction is largely nucleotide hydrolysis independent, occurring even without added nucleotide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C34, C37, C38, C39, and C36 are strongly supported by electron cryomicroscopy data (Figure 3C-G). The critical observation that constrictions only occur where rings are present (C34, C38) is repeatedly demonstrated. The nucleotide-independence (C39, C36) is directly shown in Figure 3E. This represents a key mechanistic finding about the minimal requirements for constriction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C70"
+    ],
+    "result": "In liposomes, TmFtsAZ rings are 30-90 nm in diameter with filaments 7.8 nm apart laterally. The rings are always closed and continuous without gaps, with filaments arranged perpendicular to the membrane. The rings are always perfectly round, contrasting with the rest of the liposomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 and C70 are well-supported by high-quality electron cryotomography data (Figure 4, Videos 4-10). The measurements are quantitative (n=16 for lateral spacing), and the observations about ring continuity and filament orientation are consistent across multiple liposomes. The perfect roundness of rings (C70) provides evidence for opposing forces between filaments and membrane.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C4"
+    ],
+    "result": "Constriction requires filaments to slide along each other as the ring decreases in diameter. Given continuous rings with no GTP turnover in vitro, there is no filament shortening, necessitating filament sliding for constriction. This mechanism is likely to occur in vivo as well.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C4 present a logical inference from the observation of continuous rings (C42) combined with nucleotide-independent constriction (C39). The reasoning is sound: if rings are continuous and filaments don't shorten (no GTP hydrolysis), then sliding is required for diameter reduction. The in vitro data (liposomes) and in vivo observations (continuous rings in cells) together support this mechanism. The model is further supported by the spiral structures observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Force generation depends on a closed ring, making the system self-regulating\u2014constriction only commences after a complete ring forms. If the cell is too large or insufficient FtsZ is available, constriction will not begin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C46 are logical inferences from the observation that constrictions only occur where complete rings are present (C34, C38). This self-regulating mechanism is a reasonable interpretation of the data, though C46 contains some speculation about cell size limits. The core principle that ring closure is required for force generation is well-supported by the liposome data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Three possible mechanisms may drive constriction: (A) maximizing filament overlap via sliding, (B) FtsA-FtsZ repeat length mismatch, and (C) GTP hydrolysis-driven filament shortening. Nucleotide binding/hydrolysis may be required solely for maintaining filament dynamics in cells. In vitro and in vivo systems may utilize different combinations of these energetic drivers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C51 present speculative mechanistic models in the Discussion. While C47 cites theoretical support (Lan et al., 2009) and C48 references prior work (Szwedziak et al., 2012), these remain proposed mechanisms rather than demonstrated ones. C49 and C50 are explicitly speculative ('we speculate', 'we suggest'). C51 is a reasonable synthesis but acknowledges uncertainty. These represent plausible hypotheses requiring further testing rather than established results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The change from a flat band of filaments to helical spirals enables inward force development on each side of the constriction, potentially explaining abscission by allowing membrane fusion after the protein ring is no longer in the way.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 presents a speculative model for abscission based on observed intermediate structures (Figure 4A, Video 9, Figure 5D). While the observation of different filament architectures (rings, spirals, domes) is supported, the mechanistic explanation for abscission is inferential and not directly demonstrated. This represents a plausible hypothesis requiring validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "TmFtsZ and TmFtsA over-expression in E. coli produces minicells with FtsZ filaments 12 nm from the inner membrane. TmFtsA binds to the liposome membrane via its amphipathic helix, with FtsZ polymerizing on top via its C-terminal FtsA-binding peptide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by electron cryotomography data (Figure 2G) and are consistent with known protein structures and interactions (citations provided). The 12 nm distance is explained by the shorter linker in TmFtsZ. C67 is a reasonable inference based on known protein domains and prior structural work, though it contains some speculation about polymerization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "GTP addition produces the most bilobed liposomes in reconstitution experiments, though significant GTP hydrolysis is not expected for the hyperthermophilic TmFtsZ at room temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is a direct observation from the results. C69 is a reasonable inference based on the thermophilic nature of the protein and the experimental temperature. Together, these explain why nucleotide presence affects liposome appearance without requiring hydrolysis, supporting the nucleotide-independence of constriction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Lateral spacing between FtsZ filaments varies across studies (6.8 nm in E. coli doublets here, 7.8 nm in liposomes, 9.3 nm in prior C. crescentus work, 12 nm by AFM). This variability suggests filaments interact transiently with direct contact localized to small regions within the ring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 synthesize measurements from this study with prior literature. The conclusion in C73 that filaments interact transiently is a reasonable inference from the observed variability in spacing and the observation that filaments are not exactly equidistant (Figure 4B, Video 1). This interpretation is consistent with a sliding mechanism requiring some freedom of movement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Prior studies show that GTP hydrolysis-deficient FtsZ mutants can generate liposome constrictions in vitro, function in cell division in E. coli, and form condensed structures with non-hydrolysable GTP analogues, supporting that GTP hydrolysis is not required for constriction per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 accurately cite prior literature to support the authors' conclusion that GTP hydrolysis is not required for constriction itself. These citations are used appropriately to contextualize the current findings about nucleotide-independent constriction in the liposome system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Cell wall synthesis in the periplasm likely provides additional force in cells. FtsZ-based division does not function in artificial L-forms, possibly because L-forms are too large for Z-rings to close given available FtsAZ amounts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52 and C53 are speculative ('it is likely', 'we suggest this may be because'). While C53 cites prior work on L-forms (Leaver et al., 2009), the explanation for why FtsZ-based division fails in L-forms is the authors' speculation based on their model. These represent plausible hypotheses but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Background claims about FtsZ and FtsA: FtsZ is a tubulin homologue that polymerizes in a GTP-dependent manner and forms rings that decrease in diameter during constriction. FtsA is an actin-like protein that anchors FtsZ to the membrane via its C-terminal amphipathic helix. Various regulatory proteins control FtsZ function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C8, and C56-C59 present established background knowledge supported by appropriate citations. These are well-established facts in the field and are not novel findings of this study. They provide necessary context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Prior work interpreted tomography data as showing scattered individual FtsZ filaments, and reconstitution experiments showed dynamic behavior and liposome constrictions. The missing wedge problem in electron tomography is caused by inability to tilt specimens beyond ~65\u00b0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 accurately describe prior work and technical limitations. C60 and C61 cite relevant prior studies, while C62 describes a well-known technical limitation of electron tomography. These provide important context for understanding how the current study advances the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C64",
+      "C77",
+      "C78"
+    ],
+    "result": "The normal FtsZ:FtsA ratio in E. coli is 5:1. FtsZ ring dynamics are maintained by continual depolymerization and re-polymerization through nucleotide turnover. FtsZ may leave the septum earlier than previously thought.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C77, and C78 cite prior literature appropriately. These are established or emerging findings from other studies that provide context for the current work. C78 acknowledges uncertainty in the field about FtsZ's role in final abscission.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Membrane constriction with ESCRT-III and dynamin filaments has been suggested to involve sliding helical filaments, with similar arrangements predicted for ESCRT-III as observed here for FtsZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 appropriately cites prior work on other membrane constriction systems (Roux et al., 2006; Guizetti et al., 2011; Fabrikant et al., 2009) to draw parallels with the FtsZ system. This comparison is valid and suggests convergent mechanisms across different membrane remodeling systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Liposomes used were ~300 nm in diameter (similar to small bacterial cells) and contained three distinct filament structures: arcs, spirals, and rings. Co-polymerization of FtsZ and FtsA leads to curvature due to their different repeat lengths (4 vs 5 nm). Liposomes were initially spherical and deformed over 30 minutes after detergent dilution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 describe the in vitro reconstitution system with appropriate detail. The observations are supported by electron cryomicroscopy data (Figures 3, 4) and time-lapse experiments (Figure 3\u2014figure supplement 2). The explanation for curvature based on repeat mismatch (C81) is supported by prior work (Szwedziak et al., 2012) and is consistent with the observed structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Tomography data have been deposited in the EM databank with accession numbers EMD-2814 (C. crescentus) and EMD-2815 (TmFtsAZ liposome constriction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83 and C84 state data deposition information, which is verifiable and represents good scientific practice for data sharing. This is a straightforward factual claim about data availability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "In E. coli B/r H266 cells, FtsZ filaments are located 16 nm from the inner membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by electron cryotomography data (Figure 1C, Figure 1\u2014figure supplement 2). This measurement is consistent with the C. crescentus data (15\u00b12 nm) and represents a key quantitative finding about FtsZ ring architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The distance between TmFtsZ and the membrane in liposomes is 12 nm, resembling that found in over-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by measurements from liposome tomography (Figure 3 inset J) and is consistent with the TmFtsZ over-expression data in E. coli (Figure 2G, C66). The shorter distance compared to E. coli FtsZ (16 nm) is explained by the shorter linker in TmFtsZ.",
+    "result_type": "MINOR"
+  }
+]

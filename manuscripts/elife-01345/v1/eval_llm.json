@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C21",
+      "C79",
+      "C88"
+    ],
+    "result": "The authors demonstrate that high-resolution protein structures can be determined by electron crystallography of 3D microcrystals using MicroED. Lysozyme microcrystals were used to collect electron diffraction data to 1.7 \u00c5 resolution, and the structure was refined to 2.9 \u00c5 resolution using data from three crystals that are up to 6 orders of magnitude smaller in volume than those typically used for X-ray crystallography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8, C21, C79, and C88 collectively demonstrate the core finding. The experimental data show successful structure determination from microcrystals with appropriate resolution (C3, C8), proper methodology (C7), and validation against known structures (C59). The claim of 6 orders of magnitude smaller crystal volume (C21, C24, C79) is supported by crystal size measurements (C99, C31) and comparison to typical X-ray crystallography requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors developed a low-dose data collection protocol that allows collection of up to 90 individual diffraction patterns from a single crystal with tilt angle increments of 0.1-1\u00b0 and total accumulated electron dose below ~9 e\u207b/\u00c5\u00b2. This low dose approach limits radiation damage and enables multiple patterns from a single crystal instead of requiring hundreds of crystals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C37-C44 describe the data collection protocol with specific parameters that are consistently reported. The dose experiment (C38, Figure 3) empirically determined the critical dose threshold of ~9 e\u207b/\u00c5\u00b2, which informed protocol optimization (C39). The ability to collect multiple patterns from a single crystal (C40, C41) represents a key methodological advance over traditional 2D electron crystallography (C18).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C99",
+      "C100"
+    ],
+    "result": "Crystal thickness critically affects diffraction quality in MicroED. Thick crystals (>3 \u03bcm) yielded no diffraction, intermediate thickness crystals (~1.5 \u03bcm) showed tilt-dependent quality variation, while thin crystals (~0.5-1 \u03bcm thick, 1-6 \u03bcm long/wide) provided high-quality diffraction to ~1.7 \u00c5 resolution with no significant adverse tilt effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33, C99-C100 describe systematic observations of crystal thickness effects supported by Figure 2A-D. The observations are internally consistent and provide clear criteria for crystal selection. The finding that 43% of crystals showed useful diffraction (C100) and that thin crystals show tilt-independent quality (C33) are empirical observations from the experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C104"
+    ],
+    "result": "Data processing yielded unit cell dimensions of a=b=77 \u00c5, c=37 \u00c5, \u03b1=\u03b2=\u03b3=90\u00b0 with P43212 symmetry, consistent with previous X-ray structures. The nearly flat Ewald sphere (0.003 \u00c5\u207b\u00b9 deviation at 2 \u00c5) and tight reflections enabled dense reciprocal space sampling with multiplicity of 34, resulting in 2490 unique reflections with ~92% completeness at 2.9 \u00c5 resolution from three crystals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 and C104 describe data processing results with specific numerical values reported in Table 1. The unit cell parameters match literature values (C46), providing validation. The Ewald sphere calculation (C48) is mathematically sound given the electron wavelength (C47). The high multiplicity (C51) and completeness (C52) are direct outcomes of the dense sampling strategy (C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C105",
+      "C106"
+    ],
+    "result": "The lysozyme structure was solved by molecular replacement using PDB 4AXT and refined to 2.9 \u00c5 resolution with Rwork/Rfree=25.5%/27.8%. The initial MR map showed well-defined density, composite-omit maps confirmed lack of model bias, and poly-alanine MR showed density for side chains. The final structure has RMSD of 0.475 \u00c5 (C\u03b1) compared to the reference structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 and C93-C96, C105-C106 describe structure determination and validation with appropriate crystallographic metrics. The Rwork/Rfree values (C58) are reasonable for 2.9 \u00c5 resolution. Multiple validation approaches (composite-omit map C55, poly-alanine test C56-C57) address model bias concerns. The low RMSD (C59) confirms structural accuracy. Electron density maps (Figure 6, 7) visually support the quality claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Validation tests demonstrate that only the correct experimental data yielded an acceptable refined structure. Datasets with randomized intensities, shuffled Miller indices, or replaced with unrelated structure data failed to produce acceptable solutions, and unrelated protein structures failed molecular replacement, confirming data accuracy and absence of model bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 describe rigorous validation experiments (Tables 2-3) that test for model bias and data quality. The experimental design is sound: only the correct dataset (C60) refined successfully while corrupted datasets (C61) and unrelated structures (C62) failed. These negative controls strongly support the conclusion that the structure is determined by the experimental data rather than model bias (C63-C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Unlike 2D electron crystallography which suffers from a missing cone (~13% with 60\u00b0 tilt), the use of three crystals with varied orientations in MicroED allowed coverage of the full reciprocal space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 address completeness concerns. The missing cone problem in 2D crystallography (C65-C66) is established knowledge. The solution of using multiple crystals with different orientations (C67) is logical and supported by Video 3 showing reciprocal space coverage. The 92% completeness achieved (C52) empirically validates this approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Dynamic scattering introduces inaccuracies in electron diffraction data, evidenced by weak reflections (~4.9% intensity) at systematic absence positions. However, comparison with X-ray data shows correlation (Pearson r=0.63 from 6.0-13.5 \u00c5), suggesting multiple scattering contributes at maximum ~10% to intensity values, which appears tolerable at 2.9 \u00c5 resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 address a known limitation of electron diffraction. The observation of weak reflections at systematic absences (C70, Figure 8) provides direct evidence for dynamic scattering (C71). The quantification (~4.9% average, C72) and correlation with X-ray data (C74) support the estimate of ~10% contribution (C75). The successful structure determination validates that this error level is tolerable at 2.9 \u00c5 (C76), though this is resolution-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background context establishes that X-ray crystallography requires large crystals due to radiation damage, femtosecond X-ray crystallography requires millions of crystals, electrons interact more strongly with matter enabling use of smaller crystals, and previous 2D electron crystallography succeeded but 3D attempts failed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C20 provide literature context with appropriate citations (Henderson 1995, Chapman et al. 2011, Boutet et al. 2012, Gonen et al. 2005, etc.). These are established facts in the field that motivate the current work. The claims accurately represent prior knowledge and properly cite sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Lysozyme was chosen as a model protein because it is well-characterized and readily forms crystals. The microcrystals produced were up to 6 orders of magnitude smaller than typical X-ray crystals, with >100 microcrystals per grid ranging from several microns to sub-micron in size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 describe sample selection and characterization. The rationale for using lysozyme (C22-C23) is well-established and properly cited. The size comparison (C24) is supported by Figure 1A showing microcrystals alongside larger crystals. The quantification of crystal numbers and size range (C25-C26) represents direct experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Thin lysozyme crystals (~0.5-1 \u03bcm) contain approximately 55 \u00d7 10\u2076 unit cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C32 provides a calculation of unit cell number but the calculation method is not shown. Given crystal dimensions (~0.5-1 \u03bcm thick, 1-6 \u03bcm long/wide, C31, C99) and unit cell parameters (a=b=77 \u00c5, c=37 \u00c5, C45), the calculation should be verifiable but requires assumptions about crystal shape and exact dimensions. The order of magnitude appears reasonable but cannot be fully verified without the explicit calculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "While 2D electron crystallography suffers from rapid radiation damage, 3D crystals can deliver atomic resolution data with very low doses. Electron scattering deposits ~60 eV per elastic event compared to ~80 keV for X-rays, resulting in much lower overall damage from electrons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C101-C103 compare radiation damage between 2D/3D electron crystallography and X-rays, with appropriate citations (Glaeser 1971, Henderson 1995, Baker et al. 2010). The energy deposition values (C101-C102) are from Henderson 1995. The claim that 3D crystals tolerate low doses better (C35-C36) is supported by the Baker et al. 2010 citation and the current experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "The authors speculate about future developments including: potential limitations of dynamic scattering at higher resolution, broad applicability to soluble and membrane proteins, utility when crystal optimization is difficult, need for better data processing software, potential for crystal oscillation methods, challenges for heavy atom phasing, alternative phasing approaches, and promise for advancing structural biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C89 are explicitly speculative statements about future work and potential applications. These are reasonable extrapolations from the proof-of-principle results but are not experimentally validated. They represent the authors' informed opinions about future directions rather than demonstrated results. As speculation, they cannot be evaluated as supported or unsupported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C97",
+      "C98",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Methods describe equipment (FEI Tecnai F20 TEM at 200 kV with TVIPS F416 CMOS camera), sample preparation (lysozyme crystallization by hanging drop, dilution, grid preparation, vitrification), and data deposition (PDB 3J4G, software on GitHub).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 and C97-C98, C107-C113 provide methodological details. These are straightforward descriptions of equipment specifications, experimental procedures, and data availability. The information is specific and verifiable (e.g., PDB accession code C97, GitHub repository C98). These represent standard methods reporting.",
+    "result_type": "MINOR"
+  }
+]

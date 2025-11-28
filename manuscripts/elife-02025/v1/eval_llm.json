@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C36",
+      "C37",
+      "C38",
+      "C85",
+      "C90",
+      "C117",
+      "C118"
+    ],
+    "result": "C. elegans holocentromeres are organized as dispersed point centromeres consisting of approximately 100 discrete sites per chromosome (707 total), each containing a single cenH3 nucleosome flanked by two well-positioned canonical nucleosomes. The sites are separated by distances ranging from 290 bp to 1.9 Mb (median 83 kb).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C36, C37, C85, C90, C117, and C118 are directly supported by ChIP-seq data (Figure 1), fragment size analysis (Figure 5), and peak calling showing 707 cenH3 peaks. The structural characterization showing single cenH3 nucleosomes flanked by canonical nucleosomes is supported by fragment size distributions (C77-C80, Figure 5E-F). This represents the core finding of the manuscript with converging evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Centromeric sites co-localize with kinetochore components, with CENP-C showing enrichment at cenH3 sites and 163 of 347 CENP-C peaks coinciding with cenH3 peaks, representing an almost 2000-fold enrichment at cenH3 peaks compared to cenH3 domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C63, C64, C65, C67, C68, and C69 are supported by CENP-C ChIP data (Figure 4A, 4C) and insoluble chromatin analysis (Figure 4A, 4B) showing co-localization with cenH3 peaks. The enrichment calculations (C67, C68) are based on peak calling and normalization to genome coverage (Figure 4\u2014figure supplement 2C,D). The data demonstrate functional kinetochore assembly at these sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C57"
+    ],
+    "result": "Centromeric site occupancy depends on the cenH3 loading machinery, as KNL-2 depletion by RNAi causes embryonic lethality (99\u00b11% penetrance), chromosome segregation defects, and much reduced cenH3 occupancy at centromeric sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C47, C48, C49, C50, C52, and C57 are supported by KNL-2 RNAi experiments showing reduced cenH3 ChIP signal at centromeric sites (Figure 3) and reduced insoluble chromatin signal (Figure 4\u2014figure supplement 1A,B). The embryonic lethality phenotype and chromosome segregation defects provide functional validation. The control showing unchanged input chromatin (C51) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "CenH3 peaks are hypersensitive to MNase digestion compared to flanking nucleosomes and +1 nucleosomes, disappearing with progressive MNase digestion even under conditions where nucleosome arrays remain intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C44, C45, and C46 are supported by MNase time-course experiments (Figure 2A-D) showing differential sensitivity of cenH3 nucleosomes versus flanking nucleosomes. The quantification in Figure 2D demonstrates that cenH3 nucleosomes are more sensitive than both flanking and +1 nucleosomes. This is consistent with properties of centromeric nucleosomes in other organisms (C42).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Centromeric sites consist of two well-positioned nucleosomes flanking a single cenH3 nucleosome that protects 60-100 bp of DNA, less than the 147 bp protected by canonical nucleosomes. Fragment size analysis shows peaks at 166 bp for flanking nucleosomes and 60-120 bp for cenH3 nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 are supported by comprehensive fragment size analysis (Figure 5A-F) showing distinct size distributions for cenH3 nucleosomes versus flanking nucleosomes. The 60-100 bp protection estimate is based on multiple lines of evidence including ChIP fragment sizes (C78), insoluble chromatin fragments (C79), and half-height width measurements (C80, Figure 5\u2014figure supplement 3). This confirms findings in other organisms (C71, C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C92",
+      "C93",
+      "C94",
+      "C97",
+      "C100",
+      "C101",
+      "C102",
+      "C104"
+    ],
+    "result": "Centromeric sites coincide with high occupancy target (HOT) sites, with 117 of 248 HOT sites overlapping with cenH3 sites (hypergeometric p=8.6\u00d710\u207b\u00b9\u2076\u00b9). A 15-nt GA-repeat-rich motif is common to centromeric sites and is almost identical to the HOT site motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C92, C93, C94, C97, C100, C101, C102, and C104 are supported by motif analysis (Figure 6A) and overlap analysis (Figure 6\u2014figure supplement 1B). The statistical significance of the overlap is strong (p=8.6\u00d710\u207b\u00b9\u2076\u00b9). HOT sites show high signal for cenH3 ChIP, insoluble chromatin, and CENP-C ChIP (Figure 6B, C102). The interpretation that actual overlap may be larger (C101) is reasonable given limited transcription factor profiling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "When cenH3 is lost in adult muscle cells, centromeric sites become occupied by transcription factors including HLH-1, with sites occupied by MNase-stable sub-nucleosome-size particles rather than canonical nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C103, C105, C106, C107, C108, C109, C112, C113, and C114 are supported by analysis of adult muscle cells where cenH3 protein is below detection (Figure 7A) and cenH3 mRNA is significantly depleted (q=0.0036, C106). MNase-seq shows centromeric sites occupied by sub-nucleosome particles (Figure 7B-C), and HLH-1 ChIP shows enrichment at centromeric sites (Figure 7D). Multiple transcription factors show enrichment (Figure 7E, C113).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C86",
+      "C128"
+    ],
+    "result": "The point centromere is the basic unit of holocentric organization, supporting the classical polycentric model. Individual centromeric sites resemble budding yeast point centromeres with striking similarities in chromatin landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C86, and C128 represent the main conclusion of the study, supported by the structural characterization showing single cenH3 nucleosomes flanked by canonical nucleosomes (Figure 5G-H). The comparison to budding yeast is appropriate given the similar chromatin architecture (C87, C88), though C. elegans sites lack sequence-specific DNA-binding proteins between nucleosomes (C89). This conclusion integrates multiple lines of evidence from the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C23",
+      "C27",
+      "C34"
+    ],
+    "result": "CenH3 is enriched toward chromosome arms and positively correlates with H3K9me3 (r=0.44, p<2.2\u00d710\u207b\u00b9\u2076) and negatively correlates with H3.3 (r=-0.65, p<2.2\u00d710\u207b\u00b9\u2076), suggesting nucleosome turnover excludes cenH3 deposition and shapes the domain-like distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C23, C27, and C34 are supported by correlation analysis (Figure 1\u2014figure supplement 2B) with statistically significant correlations. The interpretation that nucleosome turnover shapes cenH3 distribution (C34) is reasonable given the correlations with H3K9me3 (low turnover marker) and H3.3 (turnover marker). This is consistent with established knowledge about these histone marks (C24, C26, C33).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C40",
+      "C41",
+      "C123"
+    ],
+    "result": "CenH3 occupies broad 10-12 kb domains covering about half the genome, with the current N-ChIP data showing similar domain patterns to previous X-ChIP data (r=0.67, p<2.2\u00d710\u207b\u00b9\u2076). However, 607 of 707 cenH3 peaks reside outside these previously described domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, C31, C40, C41, and C123 are supported by comparison of N-ChIP-seq to previous X-ChIP-chip data (Figure 1B, Figure 1\u2014figure supplement 2B). The high correlation (r=0.67) validates the domain pattern despite methodological differences. The finding that most peaks lie outside domains (C40) is a key observation distinguishing peaks from domains. This reconciles the diffuse and polycentric models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C58",
+      "C59"
+    ],
+    "result": "Insoluble chromatin peaks correspond to cenH3 peaks and are more resistant to MNase than cenH3 nucleosomes in the soluble fraction, persisting after 10 min MNase digestion, suggesting proteins rendering chromatin insoluble protect it from nuclease digestion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C58, and C59 are supported by analysis of insoluble chromatin showing peaks at cenH3 sites (Figure 4A-B) with greater MNase resistance than soluble cenH3 nucleosomes. The interpretation that kinetochore proteins provide protection (C59) is reasonable given the co-localization with CENP-C and the precedent from budding yeast (C54, C55). The reduction in knl-2(RNAi) (C57) supports this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C119",
+      "C120"
+    ],
+    "result": "The number of cenH3 sites (~700) is in the same order of magnitude as the number of microtubules observed during mitosis (~100 for all six chromosomes), suggesting approximately 15% of sites may be attached in each mitotic cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70, C119, and C120 compare the number of cenH3 sites to microtubule attachments. While C70 and C119 are supported by the data (707 peaks identified) and established knowledge (C20), the calculation that ~15% of sites are attached (C120) is speculative without direct evidence. The authors acknowledge analyzing a diverse cell population, but no cell-type-specific or cell-cycle-specific analysis is provided to test this hypothesis. This requires additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "CenH3 nucleosomes in domains protect 135-155 bp of DNA, similar to canonical nucleosomes, suggesting cenH3 can incorporate into canonical-type nucleosomes away from centromeres and that domains may be distributed independently of the centromere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C83, and C84 are supported by fragment size analysis of cenH3 nucleosomes in domains (Figure 5\u2014figure supplement 2B) showing protection similar to canonical nucleosomes. The interpretation that these represent cenH3 incorporation into canonical nucleosomes (C83) is consistent with findings in other organisms (citations provided). The inference that domains are independent of centromeres (C84) is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The overall occupancy and positioning of most canonical nucleosomes and other DNA binding factors remained unchanged in knl-2(RNAi) embryos, with input chromatin showing the same correlation with wildtype as between wildtype replicates (R=0.971 and 0.969 vs R=0.973).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by correlation analysis of input chromatin (Figure 3\u2014figure supplement 1B) showing high correlation between wildtype and knl-2(RNAi) samples. This is an important control demonstrating that the reduced cenH3 signal in knl-2(RNAi) is specific to cenH3 sites and not due to general chromatin changes. The statistical analysis with large sample size (N=7,633,808 bins) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C126",
+      "C127",
+      "C132",
+      "C138",
+      "C139",
+      "C140",
+      "C146"
+    ],
+    "result": "Multiple speculative mechanisms are proposed for centromere site selection and maintenance, including redundancy for faithful segregation, developmental regulation, H3.3-mediated inheritance, cenH3 'reservoirs', gap-filling by cenH3 nucleosomes, and transcription factor binding preventing nucleosome encroachment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121, C122, C126, C127, C132, C138, C139, C140, and C146 are explicitly speculative (using 'might', 'may', 'possibility') and represent hypotheses rather than demonstrated results. While these are reasonable interpretations of the data, they lack direct experimental support. For example, the gap-filling model (C132) and transcription factor role in maintenance (C146) are plausible but untested. These require follow-up experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C39",
+      "C66"
+    ],
+    "result": "CenH3 peaks are enriched in gene-poor regions, and only 174 insoluble chromatin peaks and 26 CENP-C peaks fall within previously defined domains, fewer than expected by chance (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C66 are supported by genomic distribution analysis (Figure 1\u2014figure supplement 3B) and peak overlap analysis. The statistical test showing fewer peaks in domains than expected by chance (p<0.001, C66) is appropriate. This finding reinforces the distinction between the discrete cenH3 peaks and the broad domains, supporting the polycentric model over the diffuse model.",
+    "result_type": "MINOR"
+  }
+]

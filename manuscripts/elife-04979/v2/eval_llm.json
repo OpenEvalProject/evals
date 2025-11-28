@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C22",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Disc1 mice exhibit depression-related behavioral despair characterized by increased immobility in tail-suspension test (35% increase, p=0.015) and forced swim test (18% increase, p=0.049), but show no deficits in sucrose preference (anhedonia) or motor function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 provide statistically significant behavioral data with appropriate controls (C29-C30) ruling out motor impairment. The absence of anhedonia (C22) combined with increased immobility in despair tests supports a specific depression-related phenotype rather than general behavioral impairment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C50"
+    ],
+    "result": "Disc1 mice show impaired theta (6-12 Hz) and low-gamma (30-50 Hz) oscillations in the prelimbic cortex during both TST and home cage exploration, with oscillation power inversely correlating with behavioral despair (theta: p=0.0061; low-gamma: p=0.0007).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 provide statistically significant reductions in theta and low-gamma power with appropriate p-values. The correlation analysis (C41-C42) demonstrates a specific relationship between oscillatory deficits and TST behavior but not general locomotion (C43-C44), supporting a mechanistic link between neural activity and behavioral phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C53",
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "Impaired theta oscillations in Disc1 PrlC are driven by hippocampal dysfunction, as evidenced by reduced theta power in CA1 (p=0.01), preserved ~30ms time lag between CA1 and PrlC, and intact theta coherence between regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 demonstrate preserved hippocampal-prefrontal connectivity (time lag and coherence), while C56 shows reduced hippocampal theta power. This pattern supports the inference (C57) that prefrontal theta deficits originate from hippocampal dysfunction rather than local PrlC pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C67",
+      "C69",
+      "C72",
+      "C76"
+    ],
+    "result": "Disc1 mice exhibit a ~40% reduction in PV-positive fast-spiking interneurons in PrlC (p=0.0037) and CA1 (p=0.022) but not ventro-orbital cortex, with corresponding reductions in PV/VGAT-coexpressing terminals and mIPSC frequency in pyramidal cells (p=0.025).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 provide statistically significant cell counts showing region-specific PV-IN loss. Supporting evidence includes reduced calbindin-positive cells (C67), reduced PV/VGAT terminals (C72), and functional consequences (C69), while controls show no changes in somatostatin-INs (C63) or total cell density (C64), indicating specificity of the deficit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "FS-INs in Disc1 PrlC receive reduced excitatory input, as demonstrated by decreased spontaneous EPSC frequency (p=0.022) with unchanged amplitude and coefficient of variation, suggesting reduced PC-to-FS-IN connectivity rather than changes in synaptic strength parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 provides statistically significant reduction in spEPSC frequency. Claims C93-C94 show unchanged amplitude and coefficient of variation, which appropriately supports the inference (C95) of reduced connectivity rather than altered quantal parameters. The specificity is confirmed by unchanged spEPSC frequency in PCs (C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "FS-INs in Disc1 mice form ~60% fewer release sites (Nr) per target PC (p=0.036) with unchanged quantal size (Qr) or release probability (Pr), resulting in reduced uIPSC amplitude (p=0.012), but show threefold higher connection probability (35.4% vs 11.5%, p<0.001), suggesting synaptic redistribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 provide statistically significant binomial analysis results identifying Nr as the altered parameter. Supporting evidence includes appropriate failure rate and coefficient of variation changes (C80-C81) consistent with Nr reduction (C83), while controls show unchanged paired-pulse behavior and kinetics (C84-C85). The paradoxical increase in connection probability (C89) with decreased individual connection strength supports the redistribution hypothesis (C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C98",
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Computational modeling demonstrates that reduced FS-IN number, diminished feedback excitation, and reduced inhibitory output strength cumulatively impair low-gamma synchrony in Disc1 networks, with redistribution of inhibitory synapses partially mitigating but not fully rescuing the deficit (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 establish that the model generates appropriate gamma oscillations. Claims C101-C102 show reduced synchrony and spike timing fidelity in the Disc1 model. Claim C103 demonstrates cumulative effects of experimentally-defined parameters, while C104 shows that synaptic redistribution provides partial rescue, supporting the mechanistic interpretation (C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "TST increases cFos-positive cells in PrlC of both Disc1 and control mice compared to home cage baseline, with no significant difference between genotypes, indicating that PrlC is activated during behavioral despair testing regardless of genotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C33 provide data showing TST-induced cFos elevation in both genotypes. The lack of genotype difference (C34) is appropriately interpreted as indicating similar gross activation levels, though this does not preclude more subtle functional differences revealed by electrophysiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Low-gamma power in the home cage predicts TST freeze duration (p=0.033) while theta power does not (p=0.114), and low-gamma deficits persist during anesthetized UP states, indicating that low-gamma impairment reflects intrinsic prefrontal network dysfunction independent of behavioral state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 provide appropriate statistical tests showing differential predictive power of low-gamma versus theta. Claim C49 provides independent confirmation that low-gamma deficits persist under anesthesia, supporting the inference (C48) that this reflects intrinsic network properties rather than behavior-dependent modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C68",
+      "C70",
+      "C71"
+    ],
+    "result": "PV immunoreactivity detection in electrophysiologically identified FS-INs does not depend on genotype (9/16 Disc1 vs 10/19 control cells), and reduced mIPSC frequency is consistent with loss of PV-positive cells, suggesting reduced cell quantity rather than downregulated PV expression and lack of compensatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 provides appropriate cell counts showing similar PV detection rates in identified FS-INs, arguing against downregulation of PV expression. Claims C70-C71 provide reasonable inferences about lack of compensation, though these are interpretive rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Three-dimensional reconstructions reveal no differences in bouton density on FS-IN axons in vitro or in vivo, or in total axon lengths from reconstructed cells, indicating that the reduction in total synaptic output is due to reduced cell number rather than altered axonal arborization per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 provide appropriate morphological controls demonstrating that individual FS-INs have normal axonal properties. This supports the interpretation that reduced total inhibitory output results from cell loss rather than altered cellular morphology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Paired-pulse behavior, kinetic properties, and quantal IPSC amplitudes of uIPSCs do not depend on genotype, excluding alterations in release probability or somatodendritic synapse location as explanations for reduced uIPSC amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 provide appropriate control experiments ruling out alternative explanations for reduced uIPSC amplitude. These negative results are important for supporting the conclusion that Nr is the primary altered parameter.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "A Scottish family with c-terminal 1:11 DISC1 translocation shows high penetrance of mental illness (10 depression, 7 schizophrenia, 1 bipolar disorder cases) versus no major psychiatric disease in 48 relatives without the mutation, establishing DISC1 truncation as a major genetic risk factor that has been modeled in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 accurately cite the St Clair et al., 1990 study describing the Scottish family. The inference (C14) about DISC1 being a major risk factor is reasonable given the penetrance data, and C15 correctly cites the mouse model development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Phase-locking between hippocampal and prefrontal regions remains intact in Disc1 mice consistent with preserved working memory, while reduced low-gamma synchrony correlates with and may contribute to enhanced immobility, with high inter-individual behavioral variability explaining the mild but significant mean phenotype difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 provide reasonable interpretations of the data pattern showing selective deficits. Claim C110 appropriately acknowledges the modest effect sizes and high variability, which is consistent with the reported Cohen's d values and the genetic risk model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C18",
+      "C20",
+      "C23",
+      "C26",
+      "C51",
+      "C52",
+      "C55",
+      "C58",
+      "C68",
+      "C91",
+      "C113",
+      "C114",
+      "C119"
+    ],
+    "result": "The manuscript relies on established knowledge about depression-related behaviors, oscillation functions, and FS-IN roles in gamma generation, citing appropriate literature including that TST/forced swim immobility reflects behavioral despair, gamma oscillations support information encoding, and FS-INs are critical for cortical gamma rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite established literature (Porsolt, Steru, Fries, Siapas, Sigurdsson, Tiesinga, Cardin, Bartos, etc.) to provide context for the experimental findings. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C118",
+      "C121",
+      "C122",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors speculate that DISC1 truncation in humans may contribute to depression through effects on prefrontal PV-FS-INs, that reduced excitatory input and impaired synaptic output will result in loss of gamma synchrony, and that understanding these mechanisms could lead to new treatments, while acknowledging regional specificity of PV cell defects and potential developmental mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent speculative interpretations and future directions rather than demonstrated results. While they are reasonable extrapolations from the data, they involve translational inferences (mouse to human), mechanistic assumptions, and therapeutic implications that require additional validation. Claims C112, C130, and C131 are particularly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The discussion cites literature indicating that Disc1 plays roles in developmental processes including morphological differentiation, neuronal migration, axon elongation, and ERK-1/2 phosphorylation, with evidence from hippocampal studies showing effects on axon development and mossy fiber pathfinding, and high expression in developing brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite relevant literature (Ozeki, Duan, Shinoda, Faulkner, Schurov, Steinecke) to provide mechanistic context for the observed PV-IN deficits. The citations appear accurate and relevant to the discussion of potential developmental mechanisms.",
+    "result_type": "MINOR"
+  }
+]

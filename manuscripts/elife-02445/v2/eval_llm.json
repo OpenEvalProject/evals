@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "A gain-of-function screen using two miRNA mimic libraries (Applied Biosystems and Qiagen) identified 13 miRNAs that sensitize MDA-MB231 breast cancer cells to the PARP inhibitor ABT888, with 12 of these validated in the secondary screen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 and C94-C96 describe the screening methodology and results. The screen was performed in triplicate with defined parameters (cell density, transfection conditions, cutoffs), and validation was performed using a second library. The methodological details are clearly stated, and the results show consistent identification of miRNAs across two independent libraries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "11 of 12 validated miRNAs significantly reduced HR-mediated DSB repair as measured by DR-GFP assay, RAD51 foci formation (50-75% reduction), and increased \u03b3-H2AX accumulation after PARP inhibitor treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by multiple complementary assays (DR-GFP, RAD51 foci, \u03b3-H2AX) shown in Figure 2. The convergence of evidence from these independent functional assays strongly supports that these miRNAs impair HR-mediated repair. Statistical significance is indicated in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Of seven miRNAs that reduced HR by \u226530%, only miR-1255b, miR-148b*, and miR-193b* showed detectable endogenous expression in triple negative breast cancer (TNBC) cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by qRT-PCR data in Figure 3A showing expression levels in a panel of breast cancer lines. This prioritization based on endogenous expression is a reasonable approach to identify physiologically relevant miRNAs, though the cutoff for 'detectable' expression is not explicitly defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Over-expression of miR-1255b reduces BRCA1 and BRCA2 protein levels, miR-148b* reduces RAD51, and miR-193b* reduces BRCA1, BRCA2, and RAD51 in MDA-MB231 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by immunoblot data in Figure 3C with quantification showing statistical significance. The specificity of each miRNA for different HR factors is clearly demonstrated, and controls for cell cycle effects are provided in supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Biotinylated miRNA pull-down experiments demonstrate that miR-1255b selectively associates with BRCA1 and BRCA2 transcripts, miR-148b* with RAD51 transcript, and miR-193b* with all three transcripts, with synergistic enrichment when miRNAs with overlapping targets are combined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by immunoprecipitation data in Figure 3F-G. The pull-down assay provides direct evidence of miRNA-mRNA association. The specificity patterns match the protein expression data, and the synergistic effects with combined miRNAs are consistent with cooperative targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "BRCA1, BRCA2, and RAD51 transcripts lack canonical miRNA recognition elements (MREs) with seed regions in their 3'UTRs for miR-1255b, miR-148b*, and miR-193b*, but contain putative non-canonical MREs identified by PITA algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by computational analysis shown in Figure 4A. The absence of canonical sites was verified, and non-canonical MREs were predicted using PITA algorithm. While the evolutionary conservation is moderate to low (Figure 4\u2014supplement 1), the functional validation in subsequent experiments supports the relevance of these sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Luciferase reporter assays demonstrate that predicted MREs mediate miRNA-dependent repression: wild-type MREs show decreased luciferase activity with miRNA mimics and increased activity with antagomirs, while mutant MREs abolish these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are supported by luciferase assay data in Figure 4B-D. The rescue by point mutations (C44) and the reciprocal effects of mimics versus antagomirs provide strong evidence that the predicted MREs are functional. Statistical significance is shown for the relevant comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Expression constructs lacking specific MREs restore target gene expression in the presence of miRNA mimics and rescue the sensitization to PARP inhibitor ABT888.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by rescue experiments in Figure 5A showing both protein restoration and functional rescue of ABT888 sensitivity. This provides strong evidence that the miRNA effects on PARP inhibitor sensitivity are mediated through the identified target genes via the predicted MREs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "BRCA1, BRCA2, and RAD51 mRNA levels are enhanced in S-phase, while miR-1255b, miR-193b*, and miR-148b* are significantly down-regulated during the G1 to S transition, showing inverse correlation with their target transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by qRT-PCR data from synchronized cells in Figure 5B-C, observed in both tumor (MDA-MB231) and non-tumorigenic (MCF10A) breast cell lines. The inverse correlation between miRNA and target mRNA levels across cell cycle phases is consistent and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Inhibition of miR-1255b, miR-148b*, and miR-193b* with antagomirs causes specific increases in their target transcripts and proteins in G1 phase cells, with synergistic effects when miRNAs with overlapping targets are co-inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by qRT-PCR and immunoblot data in Figure 5D-F from synchronized cells. The specificity of each antagomir for its predicted targets is demonstrated, and the synergistic effects with combined antagomirs are consistent with cooperative regulation. Cell cycle profiles confirming G1 enrichment are provided in supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Inhibition of miR-1255b, miR-193b*, and miR-148b* causes increased basal and IR-induced \u03b3-H2AX foci and RPA2 foci specifically in G1 cells, which is rescued by CtIP depletion, indicating that increased BRCA1 promotes CtIP-mediated DNA end resection in G1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 and C64-C67 are supported by immunofluorescence data in Figure 6A-D and supplementary figures. The G1-specific phenotype is demonstrated using cyclin A staining, the CtIP-dependence is shown by rescue experiments with siRNA, and RPA2 foci provide evidence for DNA end resection. The mechanistic interpretation linking BRCA1 to CtIP-mediated resection is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "In RPE-1 cells expressing the Fucci system, inhibition of miR-1255b, miR-193b*, and miR-148b* causes a CtIP-dependent increase in residual DSBs specifically in G1 cells (marked by mKO2-Cdt1) but not in S-phase cells (marked by mAG-Geminin).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by data in Figure 6F-I using the Fucci system to unambiguously identify cell cycle phases. This validates the G1-specific phenotype in a diploid cell line with fewer genomic abnormalities than cancer cell lines, strengthening the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C78"
+    ],
+    "result": "Analysis of TCGA high-grade serous ovarian tumors shows that deletions of miR-148b* and miR-193b* significantly correlate with increased LOH events, while miR-1255b deletion shows moderate correlation (p<0.08), and all three deletions correlate with increased somatic copy number alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 and C78 are supported by analysis of TCGA data shown in Figure 7B-C. Statistical significance is achieved for miR-148b* and miR-193b* using Mann-Whitney U test. The moderate correlation for miR-1255b may reflect its dual genomic loci. The correlation with overall genomic instability (C78) is consistent with the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "In an independent DF/HCC cohort of 47 high-grade serous ovarian tumors, deletions of miR-1255b, miR-148b*, and miR-193b* correlate with higher numbers of LOH events compared to copy-neutral samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is supported by data in Figure 7D showing consistent patterns with the TCGA analysis. However, the authors note that statistical significance is limited due to small sample size. The consistency across two independent cohorts is encouraging, but the lack of statistical power in the validation cohort limits confidence in this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Tumors with deletions in miR-1255b and miR-193b* show significantly increased BRCA1 expression, which the authors speculate is the underlying reason for increased LOH and genomic instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 is supported by expression analysis in Figure 7E showing statistically significant increases in BRCA1 expression. However, C81 is explicitly stated as speculation. While the correlation is consistent with the experimental model, causality cannot be established from correlative tumor data alone. Additional confounding factors in tumors (e.g., other genetic alterations, selection pressures) are not addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The increased \u03b3-H2AX foci phenotype from miRNA inhibition is not observed in BRCA1-mutant ovarian cell line UWB1.289, confirming BRCA1 dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by data in Figure 7\u2014supplement 1. This negative control in BRCA1-deficient cells strengthens the conclusion that the phenotype requires functional BRCA1, supporting the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims about DNA repair pathways: HR is restricted to post-replicative phases and requires homologous templates; NHEJ is error-prone and predominant in G1; initiation of HR in G1 blocks NHEJ and can lead to LOH, which is potentially carcinogenic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C10-C16 represent established knowledge about DNA repair pathways, supported by multiple citations to the literature. These provide the conceptual framework for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background claims about PARP inhibitors and BRCAness: PARP inhibitors show synthetic lethality in BRCA-deficient tumors; epigenetic suppression of HR factors creates a 'BRCAness' phenotype that may respond to PARP inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 represent established knowledge about PARP inhibitor biology and the BRCAness concept, supported by citations. These provide rationale for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims about miRNAs: miRNAs are small non-coding RNAs that dampen gene expression post-transcriptionally, are aberrantly expressed in cancer, and show complex regulation where single miRNAs target multiple mRNAs and vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 represent established knowledge about miRNA biology, supported by citations. These provide context but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Prior work from the authors showed that miR-182 targets BRCA1 and sensitizes triple negative breast cancer cells to PARP inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 describe the authors' previous work, properly cited. This provides proof-of-principle for the current study but is not a novel finding from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C60",
+      "C63",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Background claims supporting the mechanistic model: loss of NHEJ factors allows HR initiation in G1 leading to unrepaired DSBs; BRCA1 promotes end resection via CtIP; LOH can result from mitotic recombination during G1 HR; homologous chromosomes are in proximity at DSB sites in G1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C63, C70-C72 represent established knowledge from cited literature that supports the mechanistic interpretation of the results. These are not novel findings but provide important context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "miR-1255b, miR-148b*, and miR-193b* are detectably expressed in a panel of ovarian tumor cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by qRT-PCR data in Figure 7A. This extends the expression analysis to ovarian cancer, providing rationale for the tumor analysis, but is a relatively minor descriptive finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Mature miR-1255b is encoded from two distinct genomic loci on chromosomes 1 and 4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is a factual statement about miR-1255b genomic organization. This is relevant for interpreting the tumor deletion analysis but is not a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Discussion and interpretation: miRNAs likely impact HR by regulating multiple factors; the three identified miRNAs regulate BRCA1/BRCA2/RAD51 via non-canonical MREs; this represents a physiological system for controlling HR factor expression in G1 to maintain genomic stability; disruption leads to ectopic HR and LOH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 represent the authors' interpretation and synthesis of their findings in the Discussion. These are well-supported by the experimental data and provide a coherent mechanistic model, though some aspects (particularly C87 and C89) involve inference beyond direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Discussion context: single copy loss of BRCA1, BRCA2, or RAD51 impacts genomic stability, supporting the idea that miRNA-mediated alterations in these proteins may significantly impact DNA repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 cite literature showing haploinsufficiency of HR factors and use this to support the physiological relevance of miRNA-mediated regulation. This is appropriate contextualization but not a novel finding.",
+    "result_type": "MINOR"
+  }
+]

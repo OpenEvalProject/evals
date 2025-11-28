@@ -1,0 +1,2079 @@
+{
+  "submission": {
+    "id": "1a564889-a3c7-4df4-b463-9aabe30b140f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-28T22:18:31.432173Z",
+    "updated_at": "2025-11-28T22:18:31.432173Z"
+  },
+  "content": [
+    {
+      "id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "submission_id": "1a564889-a3c7-4df4-b463-9aabe30b140f",
+      "content_type": "manuscript",
+      "content_text": "# Mitochondrial Ca2+ uptake by the voltage-dependent anion channel 2 regulates cardiac rhythmicity\n\n## Authors\n\n- Hirohito Shimizu<sup>1</sup>\n- Johann Schredelseker<sup>1</sup>\n- Jie Huang<sup>1</sup>\n- Kui Lu<sup>2</sup>\n- Shamim Naghdi<sup>3</sup>\n- Fei Lu<sup>1</sup>\n- Sarah Franklin<sup>4</sup>\n- Hannah DG Fiji<sup>2</sup>\n- Kevin Wang<sup>1</sup>\n- Huanqi Zhu<sup>2</sup>\n- Cheng Tian<sup>1</sup>\n- Billy Lin<sup>1</sup>\n- Haruko Nakano<sup>1</sup>\n- Amy Ehrlich<sup>3</sup>\n- Junichi Nakai<sup>6</sup>\n- Adam Z Stieg<sup>7</sup> ([ORCID: 0000-0001-7312-9364](https://orcid.org/0000-0001-7312-9364))\n- James K Gimzewski<sup>2</sup>\n- Atsushi Nakano<sup>1</sup>\n- Joshua I Goldhaber<sup>10</sup>\n- Thomas M Vondriska<sup>4</sup>\n- Gy\u00f6rgy Hajn\u00f3czky<sup>3</sup>\n- Ohyun Kwon<sup>2</sup>\n- Jau-Nian Chen<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular, Cell and Developmental Biology University of California, Los Angeles Los Angeles United States\n2. Department of Chemistry and Biochemistry University of California, Los Angeles Los Angeles United States\n3. MitoCare Center, Department of Pathology, Anatomy and Cell Biology Thomas Jefferson University Philadelphia United States\n4. Department of Anesthesiology University of California, Los Angeles Los Angeles United States\n5. Broad Center of Regenerative Medicine and Stem Cell Research University of California, Los Angeles Los Angeles United States\n6. Brain Science Institute Saitama University Saitama Japan\n7. California NanoSystems Institute University of California, Los Angeles Los Angeles United States\n8. WPI Center for Materials Nanoarchitectonics National Institute for Materials Science Tsukuba Japan\n9. School of Physics, Centre for Nanoscience and Quantum Information University of Bristol Bristol UK\n10. Cedars-Sinai Heart Institute Los Angeles United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTightly regulated Ca2+ homeostasis is a prerequisite for proper cardiac function. To dissect the regulatory network of cardiac Ca2+ handling, we performed a chemical suppressor screen on zebrafish tremblor embryos, which suffer from Ca2+ extrusion defects. Efsevin was identified based on its potent activity to restore coordinated contractions in tremblor. We show that efsevin binds to VDAC2, potentiates mitochondrial Ca2+ uptake and accelerates the transfer of Ca2+ from intracellular stores into mitochondria. In cardiomyocytes, efsevin restricts the temporal and spatial boundaries of Ca2+ sparks and thereby inhibits Ca2+ overload-induced erratic Ca2+ waves and irregular contractions. We further show that overexpression of VDAC2 recapitulates the suppressive effect of efsevin on tremblor embryos whereas VDAC2 deficiency attenuates efsevin's rescue effect and that VDAC2 functions synergistically with MCU to suppress cardiac fibrillation in tremblor. Together, these findings demonstrate a critical modulatory role for VDAC2-dependent mitochondrial Ca2+ uptake in the regulation of cardiac rhythmicity.\n\n## Introduction\n\nDuring development, well-orchestrated cellular processes guide cells from diverse lineages to integrate into the primitive heart tube and establish rhythmic and coordinated contractions. While many genes and pathways important for cardiac morphogenesis have been identified, molecular mechanisms governing embryonic cardiac rhythmicity are poorly understood. The findings that Ca2+ waves traveling across the heart soon after the formation of the primitive heart tube (Chi et al., 2008) and that loss of function of key Ca2+ regulatory proteins, such as the L-type Ca2+ channel, Na/K\u2212ATPase and sodium-calcium exchanger 1 (NCX1), severely impairs normal cardiac function (Rottbauer et al., 2001; Shu et al., 2003; Ebert et al., 2005; Langenbacher et al., 2005), indicate an essential role for Ca2+ handling in the regulation of embryonic cardiac function.\n\nCa2+ homoeostasis in cardiac muscle cells is tightly regulated at the temporal and spatial level by a subcellular network involving multiple proteins, pathways, and organelles. The release and reuptake of Ca2+ by the sarcoplasmic reticulum (SR), the largest Ca2+ store in cardiomyocytes, constitutes the primary mechanism governing the contraction and relaxation of the heart. Ca2+ influx after activation of the L-type Ca2+ channel in the plasma membrane induces the release of Ca2+ from the SR via ryanodine receptor (RyR) channels, which leads to an increase of the intracellular Ca2+ concentration and cardiac contraction. During diastolic relaxation, Ca2+ is transferred back into the SR by the SR Ca2+ pump or extruded from the cell through NCX1. Defects in cardiac Ca2+ handling and Ca2+ overload, for example during cardiac ischemia/reperfusion or in long QT syndrome, are well known causes of contractile dysfunction and many types of arrhythmias including early and delayed afterdepolarizations and Torsade des pointes (Bers, 2002; Choi et al., 2002; Yano et al., 2008; Greiser et al., 2011).\n\nCa2+ crosstalk between mitochondria and ER/SR has been noted in many cell types and the voltage-dependent anion channel (VDAC) and the mitochondrial Ca2+ uniporter (MCU) serve as primary routes for Ca2+ entry through the outer and inner mitochondrial membranes, respectively (Rapizzi et al., 2002; Bathori et al., 2006; Shoshan-Barmatz et al., 2010; Baughman et al., 2011; De Stefani et al., 2011). In the heart, mitochondria are tethered to the SR and are located in close proximity to Ca2+ release sites (Garc\u00eda-P\u00e9rez et al., 2008; Boncompagni et al., 2009; Hayashi et al., 2009). This subcellular architecture exposes the mitochondria near the Ca2+ release sites to a high local Ca2+ concentration that is sufficient to overcome the low Ca2+ affinity of MCU and facilitates Ca2+ crosstalk between SR and mitochondria (Garc\u00eda-P\u00e9rez et al., 2008; Dorn and Scorrano, 2010; Kohlhaas and Maack, 2013). Increase of the mitochondrial Ca2+ concentration enhances energy production during higher workload and dysregulation of SR-mitochondrial Ca2+ signaling results in energetic deficits and oxidative stress in the heart and may trigger programmed cell death (Brandes and Bers, 1997; Maack et al., 2006; Kohlhaas and Maack, 2013). However, whether SR-mitochondrial Ca2+ crosstalk also contributes significantly to cardiac Ca2+ signaling during excitation-contraction coupling requires further investigation.\n\nIn zebrafish, the tremblor (tre) locus encodes a cardiac-specific isoform of the Na+/Ca2+ exchanger 1, NCX1h (also known as slc8a1a) (Ebert et al., 2005; Langenbacher et al., 2005). The tre mutant hearts lack rhythmic Ca2+ transients and display chaotic Ca2+ signals in the myocardium leading to unsynchronized contractions resembling cardiac fibrillation (Langenbacher et al., 2005). In this study, we used tre as an animal model for aberrant Ca2+ handling-induced cardiac dysfunction and took a chemical genetic approach to dissect the Ca2+ regulatory network important for maintaining cardiac rhythmicity. A synthetic compound named efsevin was identified from a suppressor screen due to its potent ability to restore coordinated contractions in tre. Using biochemical and genetic approaches we show that efsevin interacts with VDAC2 and potentiates its mitochondrial Ca2+ transporting activity and spatially and temporally modulates cytosolic Ca2+ signals in cardiomyocytes. The important role of mitochondrial Ca2+ uptake in regulating cardiac rhythmicity is further supported by the suppressive effect of VDAC2 and MCU overexpression on cardiac fibrillation in tre.\n\n## Results and discussion\n\n### Identification of a chemical suppressor of tre cardiac dysfunction\n\nHomozygous tre mutant embryos suffer from Ca2+ extrusion defects and manifest chaotic cardiac contractions resembling fibrillation (Ebert et al., 2005; Langenbacher et al., 2005). To dissect the regulatory network of Ca2+ handling in cardiomyocytes and to identify mechanisms controlling embryonic cardiac rhythmicity, we screened the BioMol library and a collection of synthetic compounds for chemicals that are capable of restoring heartbeat either completely or partially in tre embryos. A dihydropyrrole carboxylic ester compound named efsevin was identified based on its ability to restore persistent and rhythmic cardiac contractions in tre mutant embryos in a dose-dependent manner (Figure 1A,E, and Videos 1\u20134). To validate the effect of efsevin, we assessed cardiac performance of wild type, tre and efsevin-treated tre embryos (Nguyen et al., 2009). Fractional shortening of efsevin treated tre mutant hearts was comparable to that of their wild type siblings and heart rate was restored to approximately 40% of that observed in controls (Figure 1B\u2013D). Periodic local field potentials accompanying each heartbeat were detected in wild type and efsevin-treated tre embryos using a microelectrode array (Figure 1F\u2013H). Furthermore, while only sporadic Ca2+ signals were detected in tre hearts, in vivo Ca2+ imaging revealed steady Ca2+ waves propagating through efsevin-treated tre hearts (Figure 1I, Videos 5\u20137), demonstrating that cardiomyocytes are functionally coupled and that efsevin treatment restores regular Ca2+ transients in tre hearts.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/04801/elife-04801-fig1-v1.jpg)\n\n**Figure 1.:** (A) Line scans across the atria of Tg(myl7:GFP) embryonic hearts at 48 hpf. Rhythmically alternating systoles and diastoles are recorded from vehicle- (upper left) or efsevin- treated wild type (upper right) and efsevin-treated tre (lower right) embryos, while only sporadic unsynchronized contractions are recorded from vehicle-treated tre embryos (lower left). (B, C) Fractional shortening (FS) deduced from the line-scan traces. While cardiac contraction was not observed in tre, efsevin-treated wild type and tre hearts have similar levels of FS to those observed in control hearts. Ventricular FS of wild type v.s. wild type + efsevin vs tre + efsevin: 39 \u00b1 0.6%, n = 8 vs 39 \u00b1 1%, n = 10 vs 35 \u00b1 3%, n = 6; and Atrial FS: 37 \u00b1 1%, n = 11 vs 35 \u00b1 2%, n = 11 vs 33 \u00b1 2%, n = 15. (D) While efsevin restored a heart rate of 46 \u00b1 2 beats per minute (bpm) in tre embryos, same treatment does not affect the heart rate in wild type embryos (126 \u00b1 2 bpm in vehicle-treated embryos vs 123 \u00b1 3 bpm in efsevin-treated wild-type embryos). ***, p < 0.001 by one-way ANOVA. (E) Dose-dependence curve for efsevin. The tre embryos were treated with various concentrations of efsevin from 24 hpf and cardiac contractions were analyzed at 48 hpf. (F\u2013H) Representative time traces of local field potentials for wild type (F), tre (G) and efsevin-treated tre (H) embryos clearly display periods of regular, irregular, and restored periodic electrical activity. (I) In vivo optical maps of Ca2+ activation represented by isochronal lines every 33 ms recorded from 36 hpf wild type (left), tre (center) and efsevin-treated tre (right) embryos.\n\n![Video 1.](https://cdn.elifesciences.org/articles/04801/elife-04801-media1.mov.jpg)\n\n**Video 1.:** Robust rhythmic contractions can be observed in atrium and ventricle.\n\n![Video 2.](https://cdn.elifesciences.org/articles/04801/elife-04801-media2.mov.jpg)\n\n**Video 2.:** Embryos of the mutant line tremblor display only local, unsynchronized contractions, comparable to cardiac fibrillation.\n\n![Video 3.](https://cdn.elifesciences.org/articles/04801/elife-04801-media3.mov.jpg)\n\n**Video 3.:** Treatment of tremblor embryos with efsevin restores rhythmic contractions with comparable atrial fractional shortening compared to wild-type embryos and approximately 40% of wild-type heart rate.\n\n![Video 4.](https://cdn.elifesciences.org/articles/04801/elife-04801-media4.mov.jpg)\n\n**Video 4.:** Treatment of wild-type embryos with efsevin did not affect cardiac performance, indicated by robust, rhythmic contractions comparable to untreated wild-type embryos.\n\n![Video 5.](https://cdn.elifesciences.org/articles/04801/elife-04801-media5.mov.jpg)\n\n![Video 6.](https://cdn.elifesciences.org/articles/04801/elife-04801-media6.mov.jpg)\n\n![Video 7.](https://cdn.elifesciences.org/articles/04801/elife-04801-media7.mov.jpg)\n\n### Efsevin suppresses Ca2+ overload-induced irregular contraction\n\nWe next examined whether efsevin could suppress aberrant Ca2+ homeostasis-induced arrhythmic responses in mammalian cardiomyocytes. Mouse embryonic stem cell-derived cardiomyocytes (mESC-CMs) establish a regular contraction pattern with rhythmic Ca2+ transients (Figure 2A,B,E,F). Mimicking Ca2+ overload by increasing extracellular Ca2+ levels was sufficient to disrupt normal Ca2+ cycling and induce irregular contractions in mESC-CMs (Figure 2C,E,F). Remarkably, efsevin treatment restored rhythmic Ca2+ transients and cardiac contractions in these cells (Figure 2D\u2013F). Similar effect was observed in human embryonic stem cell-derived cardiomyocytes (hESC-CMs) (Figure 2G). Together, these findings suggest that efsevin targets a conserved Ca2+ regulatory mechanism critical for maintaining rhythmic cardiac contraction in fish, mice and humans.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/04801/elife-04801-fig2-v1.jpg)\n\n**Figure 2.:** (A) Line-scan analysis of Ca2+ transients in mESC-CMs after 10 days of differentiation. (B\u2013D) Representative graph of Ca2+ transients detected in mESC-CMs (B). After treatment with 10 mM Ca2+ for 10 min, the EB showed an irregular pattern of Ca2+ transients (C). Efsevin treatment restores regular Ca2+ transients under Ca2+ overload conditions in mESC-CMs (D). (E) Plotted intervals between peaks of Ca2+ signals detected in mESC-CMs prior to treatment (control), in 10 mM Ca2+ext (Ca2+) and in 10 mM Ca2+ext+10 \u03bcM efsevin (Ca2++efsevin). (F, G) Plotted intervals of contractions detected in EBs prior to treatment (control), in 10 mM Ca2+ext (Ca2+) and in 10 mM Ca2+ext + 10 \u03bcM efsevin (Ca2+ + efsevin) for mouse ESC-CMs (F) and 5 mM Ca2+ext (Ca2+) and in 5 mM Ca2+ext + 5 \u03bcM efsevin (Ca2+ + efsevin) for human ESC-CMs (G). ***, p < 0.001 by F-test.\n\n### VDAC2 mediates the suppressive effect of efsevin on tre\n\nTo identify the protein target of efsevin, we generated a N-Boc-protected 2-aminoethoxyethoxyethylamine linker-attached efsevin (efsevinL) (Figure 3A,C). This modified compound retained the activity of efsevin to restore cardiac contractions in ncx1h deficient embryos (Figure 3B,D) and was used to create efsevin-conjugated agarose beads (efsevinLB). A 32kD protein species was detected from zebrafish lysate due to its binding ability to efsevinLB and OK-C125LB, an active efsevin derivative conjugated to beads, but not to beads capped with ethanolamine alone or beads conjugated with an inactive efsevin analog (OK-C19LB) (Figure 3A\u2013E). Furthermore, preincubation of zebrafish lysate with excess efsevin prevented the 32kD protein from binding to efsevinLB or OK-C125LB (Figure 3E). Mass spectrometry analysis revealed that this 32kD band represents a zebrafish homologue of the mitochondrial voltage-dependent anion channel 2 (VDAC2) (Figure 3F and Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/04801/elife-04801-fig3-v1.jpg)\n\n**Figure 3.:** (A) Structures of efsevin and two derivatives, OK-C125 and OK-C19. (B) Efsevin and OK-C125 restored rhythmic contractions in the majority of tremblor embryos, whereas OK-C19 failed to rescue the tremblor phenotype. (C) Structures of linker-attached compounds (indicated by superscript L). (D) Compounds efsevinL and OK-C125L retained their ability to restore rhythmic contractions in NCX1hMO injected embryos, while the inactive derivative OK-C19L was still unable to induce rhythmic contraction. (E) Affinity agarose beads covalently linked with efsevin (efsevinLB) or OK-C125 (OK-C125LB) pulled down 2 protein species from zebrafish embryonic lysate, whereof one, the 32 kD upper band, was sensitive to competition with a 100-fold excess free efsevinL. The 32 kD band was not detected in proteins eluted from beads capped with ethanolamine alone (beadsC) or beads linked to OK-C19 (OK-C19LB). Arrowheads point to the 32kD bands. (F) Mass Spectrometry identifies the 32kD band as VDAC2. Peptides identified by mass spectrometry (underlined) account for 30% of the total sequence.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04801/elife-04801-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Image shows an example of the identification of VDAC2 peptide. Diagnostic b- and y-series ions are shown in red and blue, respectively.\n\nVDAC2 is expressed in the developing zebrafish heart (Figure 4A), making it a good candidate for mediating efsevin\u2019s effect on cardiac Ca2+ handling. To examine this possibility, we injected in vitro synthesized VDAC2 RNA into tre embryos and found that the majority of these embryos had coordinated cardiac contractions similar to those subjected to efsevin treatment (Figure 4B, Videos 8\u201311). In addition, we generated myl7:VDAC2 transgenic fish in which VDAC2 expression can be induced in the heart by tebufenozide (TBF) (Figure 4C). Knocking down NCX1h in myl7:VDAC2 embryos results in chaotic cardiac movement similar to tre. Like efsevin treatment, induction of VDAC2 expression by TBF treatment restored coordinated and rhythmic contractions in myl7:VDAC2;NCX1h MO hearts (Figure 4D, Videos 12,13). Conversely, knocking down VDAC2 in tre hearts attenuated the suppressive effect of efsevin (Figure 4E, Videos 14\u201316). Furthermore, we generated VDAC2 null embryos by the Zinc Finger Nuclease gene targeting approach (Figure 4G). Similar to that observed in morpholino knockdown embryos, homozygous VDAC2LA2256 embryos do not exhibit noticeable morphological defects, but the suppressive effect of efsevin was attenuated in homozygous VDAC2LA2256; NCX1MO embryos (Figure 4F). These findings demonstrate that VDAC2 is a major mediator for efsevin\u2019s effect on ncx1h deficient hearts.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/04801/elife-04801-fig4-v1.jpg)\n\n**Figure 4.:** (A) In situ hybridization analysis showed that VDAC2 is expressed in embryonic hearts at 36 hpf (upper image) and 48 hpf (lower image). (B) Injection of 25 pg in vitro synthesized VDAC2 mRNA restored cardiac contractions in 52.9 \u00b1 12.1% (n = 78) of 1-day-old tre embryos, compared to 21.8 \u00b1 5.1% in uninjected siblings (n = 111). (C) Schematic diagram of myl7:VDAC2 construct (top). In situ hybridization analysis showed that TBF treatment induces VDAC2 expression in the heart (lower panel). (D) While only \u223c20% of myl7:VDAC2;NCX1hMO embryos have coordinated contractions (n = 116), 52.3 \u00b1 2.4% of these embryos established persistent, rhythmic contractions after TBF induction of VDAC2 (n = 154). (E) On average, 71.2 \u00b1 8.8% efsevin treated embryos have coordinated cardiac contractions (n = 131). Morpholino antisense oligonucleotide knockdown of VDAC2 (MOVDAC2) attenuates the ability of efsevin to suppress cardiac fibrillation in tre embryos (45.3 \u00b1 7.4% embryos with coordinated contractions, n = 94). (F) Efsevin treatment restores coordinated cardiac contractions in 76.2 \u00b1 8.7% NCX1MO embryos, only 54.1 \u00b1 3.6% VDAC2zfn/zfn;NCX1MO embryos have coordinated contractions (n = 250). (G) Diagram of Zinc finger target sites. VDAC2zfn/zfn carries a 34 bp deletion in exon 3 which results in a premature stop codon (red asterisk). In situ hybridization analysis showing loss of VDAC2 transcripts in VDAC2zfn/zfn embryos. White arrowheads point to the developing heart.\n\n![Video 8.](https://cdn.elifesciences.org/articles/04801/elife-04801-media8.mov.jpg)\n\n**Video 8.:** Robust rhythmic contractions can be observed in atrium and ventricle.\n\n![Video 9.](https://cdn.elifesciences.org/articles/04801/elife-04801-media9.mov.jpg)\n\n**Video 9.:** Robust rhythmic contractions can be observed in atrium and ventricle.\n\n![Video 10.](https://cdn.elifesciences.org/articles/04801/elife-04801-media10.mov.jpg)\n\n**Video 10.:** Tremblor embryos display only local, unsynchronized contractions, comparable to cardiac fibrillation.\n\n![Video 11.](https://cdn.elifesciences.org/articles/04801/elife-04801-media11.mov.jpg)\n\n**Video 11.:** Overexpression of zebrafish VDAC2 mRNA restores rhythmic contractions in tremblor embryos.\n\n![Video 12.](https://cdn.elifesciences.org/articles/04801/elife-04801-media12.mov.jpg)\n\n**Video 12.:** Morpholino knock-down of NCX1h results in a fibrillating heart.\n\n![Video 13.](https://cdn.elifesciences.org/articles/04801/elife-04801-media13.mov.jpg)\n\n**Video 13.:** TBF treatment induces VDAC2 expression and restores coordinated cardiac contractions.\n\n![Video 14.](https://cdn.elifesciences.org/articles/04801/elife-04801-media14.mov.jpg)\n\n**Video 14.:** Morpholino knockdown of VDAC2 did not have obvious effects on cardiac performance.\n\n![Video 15.](https://cdn.elifesciences.org/articles/04801/elife-04801-media15.mov.jpg)\n\n![Video 16.](https://cdn.elifesciences.org/articles/04801/elife-04801-media16.mov.jpg)\n\n**Video 16.:** Efsevin treatment cannot restore coordinated cardiac contractions in the absence of VDAC2.\n\n### VDAC2-dependent effect of efsevin on mitochondrial Ca2+ uptake\n\nVDAC is an abundant channel located on the outer mitochondrial membrane serving as a primary passageway for metabolites and ions (Figure 5A) (Rapizzi et al., 2002; Bathori et al., 2006; Shoshan-Barmatz et al., 2010). At its close state, VDAC favours Ca2+ flux (Tan and Colombini, 2007). To examine whether efsevin would modulate mitochondrial Ca2+ uptake via VDAC2, we transfected HeLa cells with VDAC2. We noted increased mitochondrial Ca2+ uptake in permeabilized VDAC2 transfected and efsevin-treated cells after the addition of Ca2+ and the combined treatment further enhanced mitochondrial Ca2+ levels (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/04801/elife-04801-fig5-v1.jpg)\n\n**Figure 5.:** (A) HeLa cells were transfected with a flag-tagged zebrafish VDAC2 (VDAC2flag), immunostained against the flag epitope and counterstained for mitochondria with MitoTracker Orange and for nuclei with DAPI. (B) Representative traces of mitochondrial matrix [Ca2+] ([Ca2+]m) detected by Rhod2. Arrows denote the addition of Ca2+. Mitochondrial Ca2+ uptake was assessed when VDAC2 was overexpressed (left), cells were treated with 1 \u00b5M efsevin (middle) and combination of both at suboptimal doses (right). Control-traces with ruthenium red (RuRed) show mitochondrial specificity of the signal. (C) Representative traces of cytosolic [Ca2+] ([Ca2+]c) changes upon the application of 7.5 \u00b5M IP3 in the presence (+) or absence (\u2212) of RuRed. Mitochondrial Ca2+ uptake was assessed by the difference of the \u2013 and + RuRed conditions normalized to the total release (n = 4; mean \u00b1 SE). (D) MEFs overexpressing zebrafish VDAC2 (polycistronic with mCherry) were stimulated with 1 \u03bcM ATP in a nominally Ca2+ free buffer. Changes in [Ca2+]c and [Ca2+]m were imaged using fura2 and mitochondria-targeted inverse pericam, respectively. Black and gray traces show the [Ca2+]c (in nM) and [Ca2+]m (F0/F mtpericam) time courses in the absence (left) or present (right) of efsevin. (E) Bar charts: Cell population averages for the peak [Ca2+]c (left), the corresponding [Ca2+]m (middle), and the coupling time (time interval between the maximal [Ca2+]c and [Ca2+]m responses) in the presence (black, n = 24) or absence (gray, n = 28) of efsevin.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04801/elife-04801-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** V1V3DKO MEFs were stimulated with 100 \u03bcM ATP (left) or 2 \u03bcM thapsigargan (Tg) (right). Changes in [Ca2+]c and [Ca2+]m were imaged using fura2 and mitochondria targeted inverse pericam, respectively. Representative traces obtained in three cells are shown.\n\nMitochondria are located in close proximity to Ca2+ release sites of the ER/SR and an extensive crosstalk between the two organelles exists (Garc\u00eda-P\u00e9rez et al., 2008; Hayashi et al., 2009; Brown and O'Rourke, 2010; Dorn and Scorrano, 2010; Kohlhaas and Maack, 2013). We examined whether Ca2+ released from intracellular stores could be locally transported into mitochondria through VDAC2 in VDAC1/VDAC3 double knockout (V1/V3DKO) MEFs where VDAC2 is the only VDAC isoform being expressed (Roy et al., 2009a). While treatments with ATP, an IP3-linked agonist, and thapsigargin, a SERCA inhibitor, stimulated similar global cytoplasmic [Ca2+] elevation in intact cells, only ATP induced a rapid mitochondrial matrix [Ca2+] rise (Figure 5\u2014figure supplement 1). This finding is consistent with observations obtained in other cell types (Rizzuto et al., 1994; Hajn\u00f3czky et al., 1995) and suggests that Ca2+ was locally transferred from IP3 receptors to mitochondria through VDAC2 at the close ER-mitochondrial associations. We next investigated whether this process could be modulated by efsevin. In permeabilized V1/V3DKO MEFs, treatment with efsevin increased the amount of Ca2+ transferred into mitochondria during IP3-induced Ca2+ release (Figure 5C). Also, in intact V1/V3 DKO MEFs, efsevin accelerated the transfer of Ca2+ released from intracellular stores into mitochondria during stimulation with ATP (Figure 5D,E).\n\n### Efsevin modulates Ca2+ sparks and suppresses erratic Ca2+ waves in cardiomyocytes\n\nWe next examined the effect of efsevin on cytosolic Ca2+ signals in isolated adult murine cardiomyocytes. We found that efsevin treatment induced faster inactivation kinetics without affecting the amplitude or time to peak of paced Ca2+ transients (Figure 6A). Similarly, efsevin treatment did not significantly alter the frequency, amplitude or Ca2+ release flux of spontaneous Ca2+ sparks, local Ca2+ release events, but accelerated the decay phase resulting in sparks with a shorter duration and a narrower width (Figure 6B). These results indicate that by activating mitochondrial Ca2+ uptake, efsevin accelerates Ca2+ removal from the cytosol in cardiomyocytes and thereby restricts local cytosolic Ca2+ sparks to a narrower domain for a shorter period of time without affecting SR Ca2+ load or RyR Ca2+ release. Under conditions of Ca2+ overload, single Ca2+ sparks can trigger opening of neighbouring Ca2+ release units and thus induce the formation of erratic Ca2+ waves (Figure 6C). Efsevin treatment significantly reduced the number of propagating Ca2+ waves in a dosage-dependent manner (Figure 6C,D), demonstrating a potent suppressive effect of efsevin on the propagation of Ca2+ overload-induced Ca2+ waves and suggesting that efsevin could serve as a pharmacological tool to manipulate local Ca2+ signals.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/04801/elife-04801-fig6-v1.jpg)\n\n**Figure 6.:** (A) Electrically paced Ca2+ transients at 0.5 Hz (top). Normalized quantification of Ca2+ transient parameters reveals no difference for transient amplitude (efsevin-treated at 98.6 \u00b1 4.5% of vehicle-treated) and time to peak (95 \u00b1 3.9%), but a significant decrease for the rate of decay (82.8 \u00b1 4% of vehicle- for efsevin-treated) (lower panel). (B) Representation of typical Ca2+ sparks of vehicle- and efsevin treated cardiomyocytes (top). No differences were observed for spark frequency (101.1 \u00b1 7.7% for efsevin- compared to vehicle-treated), maximum spark amplitude (101.6 \u00b1 2.5%) and Ca2+ release flux (98.7 \u00b1 2.8%). In contrast, the decay phase of the single spark was significantly faster in efsevin treated cells (82.5 \u00b1 2.1% of vehicle-treated). Consequently, total duration of the spark was reduced to 85.7 \u00b1 2% and the total width was reduced to 89.5 \u00b1 1.4% of vehicle-treated cells. *, p < 0.05; ***, p < 0.001. (C) Increasing concentrations of extracellular Ca2+ induced a higher frequency of spontaneous propagating Ca2+ waves in isolated adult murine ventricular cardiomyocytes. Efsevin treatment reduced Ca2+ waves in a dose-dependent manner. (D) Quantitative analysis of spontaneous Ca2+ waves spanning more than half of the entire cell. Addition of 1 \u00b5M efsevin reduced Ca2+ waves to approximately half. Increasing the concentration of efsevin to 10 \u00b5M further reduced the number of spontaneous Ca2+ waves and 25 \u00b5M efsevin almost entirely blocked the formation of Ca2+ waves.\n\n### Mitochondrial Ca2+ uptake modulates embryonic cardiac rhythmicity\n\nWe hypothesize that efsevin treatment/VDAC2 overexpression suppresses aberrant Ca2+ handling-associated arrhythmic cardiac contractions by buffering excess Ca2+ into mitochondria. This hypothesis predicts that activating other mitochondrial Ca2+ uptake molecules would likewise restore coordinated contractions in tre. To test this model, we cloned zebrafish MCU and MICU1, an inner mitochondrial membrane Ca2+ transporter and its regulator (Perocchi et al., 2010; Baughman et al., 2011; De Stefani et al., 2011; Mallilankaraman et al., 2012; Csordas et al., 2013). In situ hybridization showed that MCU and MICU1 were expressed in the developing zebrafish heart (Figure 7A) and their expression levels were comparable between the wild type and tre hearts (Figure 7\u2014figure supplement 1). Overexpression of MCU restored coordinated contractions in tre, akin to what was observed with VDAC2 (Figure 7B). In addition, tre embryos injected with suboptimal concentrations of MCU or VDAC2 had a fibrillating heart, but embryos receiving both VDAC2 and MCU at the suboptimal concentration manifested coordinated contractions (Figure 7C), demonstrating a synergistic effect of these proteins. Furthermore, overexpression of MCU failed to suppress the tre phenotype in the absence of VDAC2 activity and VDAC2 could not restore coordinated contractions in tre without functional MCU (Figure 7B,D). Similar results were observed by manipulating MICU1 activity (Figure 7E,F). Together, these findings indicate that mitochondrial Ca2+ uptake mechanisms on outer and inner mitochondrial membranes act cooperatively to regulate cardiac rhythmicity.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/04801/elife-04801-fig7-v1.jpg)\n\n**Figure 7.:** (A) MCU and MICU1 are expressed in the developing zebrafish hearts (arrowhead). (B) Overexpression of MCU is sufficient to restore coordinated cardiac contractions in tre embryos (47.1 \u00b1 1.6% embryos, n = 112 as opposed to 18.3 \u00b1 5.3% of uninjected siblings, n = 64) while this effect is significantly attenuated when co-injected with morpholino antisense oligonucleotide targeted to VDAC2 (27.1 \u00b1 1.9% embryos, n = 135). (C) Suboptimal overexpression of MCU (MCUS) and VDAC2 (VDAC2S) in combination is able to suppress cardiac fibrillation in tre embryos (42.9 \u00b1 2.6% embryos, n = 129). (D) The ability of VDAC2 to restore rhythmic contractions in tre embryos (48.5 \u00b1 3.5% embryos, n = 111) is significantly attenuated when MCU is knocked down by antisense oligonucleotide (MOMCU) (25.6 \u00b1 2.4% embryos, n = 115). (E) Overexpression of MICU1 is sufficient to restore rhythmic cardiac contractions in tre embryos (49.3 \u00b1 3.4% embryos, n = 127 compared to 16.8 \u00b1 1.4% of uninjected siblings, n = 150). This effect is abrogated by VDAC2 knockdown (MOVDAC2, 25.3 \u00b1 5.5% embryos, n = 97). (F) Suboptimal overexpression of MICU1 (MICU1S) and VDAC2 (VDAC2S) in combination is able to restore rhythmic cardiac contractions in tre embryos (48.6 \u00b1 6.0%, n = 106). Error bars represent s.d.; *p < 0.05; ***p < 0.001.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/04801/elife-04801-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** In situ hybridization analysis shows that the expression levels of MCU, MICU1 and VDAC2 are comparable between wild type and tre embryos with and without efsevin treatment.\n\n### Conclusion\n\nIn summary, we conducted a chemical suppressor screen in zebrafish to dissect the regulatory network critical for maintaining rhythmic cardiac contractions and to identify mechanisms underlying aberrant Ca2+ handling-induced cardiac dysfunction. We show that activation of VDAC2 through overexpression or efsevin treatment potently restores rhythmic contractions in NCX1h deficient zebrafish hearts and effectively suppresses Ca2+ overload-induced arrhythmogenic Ca2+ events and irregular contractions in mouse and human cardiomyocytes. We provide evidence that potentiating VDAC2 activity enhances mitochondrial Ca2+ uptake, accelerates Ca2+ transfer from intracellular stores into mitochondria and spatially and temporally restricts single Ca2+ sparks in cardiomyocytes. The crucial role of mitochondria in the regulation of cardiac rhythmicity is further supported by the findings that VDAC2 functions in concert with MCU; these genes have a strong synergistic effect on suppressing cardiac fibrillation and loss of function of either gene abrogates the rescue effect of the other in tre.\n\nThe regulatory roles of mitochondrial Ca2+ in cardiac metabolism, cell survival and fate have been studied extensively (Brown and O'Rourke, 2010; Dorn and Scorrano, 2010; Doenst et al., 2013; Kasahara et al., 2013; Kohlhaas and Maack, 2013; Luo and Anderson, 2013). Our study provides genetic and physiologic evidence supporting an additional role for mitochondria in regulating cardiac rhythmicity and reveals VDAC2 as a modulator of Ca2+ handling in cardiomyocytes. Our findings, together with recent reports of the physical interaction between VDAC2 and RyR2 (Min et al., 2012) and the close proximity of outer and inner mitochondrial membranes at the contact sites between the mitochondria and the SR (Garc\u00eda-P\u00e9rez et al., 2011), suggest an intriguing model. We propose that mitochondria facilitate an efficient clearance mechanism in the Ca2+ microdomain, which modulates Ca2+ handling without affecting global Ca2+ signals in cardiomyocytes. In this model, VDAC facilitates mitochondrial Ca2+ uptake via MCU complex and thereby controls the duration and the diffusion of cytosolic Ca2+ near the Ca2+ release sites to ensure rhythmic cardiac contractions. This model is consistent with our observation that efsevin treatment induces faster inactivation kinetics of cytosolic Ca2+ transients without affecting the amplitude or the time to peak in cardiomyocytes and the reports that blocking mitochondrial Ca2+ uptake has little impact on cytosolic Ca2+ transients (Maack et al., 2006; Kohlhaas et al., 2010). Further support for this model comes from the observation of the Ca2+ peaks on the OMM (Drago et al., 2012) and the finding that downregulating VDAC2 extends Ca2+ sparks (Subedi et al., 2011; Min et al., 2012) and that blocking mitochondrial Ca2+ uptake by Ru360 leads to an increased number of spontaneous propagating Ca2+ waves (Seguchi et al., 2005). Future studies on the kinetics of VDAC2-dependent mitochondrial Ca2+ uptake and exploring potential regulatory molecules for VDAC2 activity will provide insights into how the crosstalk between SR and mitochondria contributes to Ca2+ handling and cardiac rhythmicity.\n\nAberrant Ca2+ handling is associated with many cardiac dysfunctions including arrhythmia. Establishing animal models to study molecular mechanisms and develop new therapeutic strategies are therefore major preclinical needs. Our chemical suppressor screen identified a potent effect of efsevin and its biological target VDAC2 on manipulating cardiac Ca2+ handling and restoring regular cardiac contractions in fish and mouse and human cardiomyocytes. This success indicates that fundamental mechanisms regulating cardiac function are conserved among vertebrates despite the existence of species-specific features and suggests a new paradigm of using zebrafish cardiac disease models for the dissection of critical genetic pathways and the discovery of new therapeutic approaches. Future studies examining the effects of efsevin on other arrhythmia models would further elucidate the potential for efsevin as a pharmacological tool to treat cardiac arrhythmia associated with aberrant Ca2+ handling.\n\n## Materials and methods\n\n### Zebrafish husbandry and transgenic lines\n\nZebrafish of the mutant line tremblor (tretc318) were maintained and bred as described previously (Langenbacher et al., 2005). Transgenic lines, myl7:gCaMP4.1LA2124 and myl7:VDAC2LA2309 were created using the Tol2kit (Esengil et al., 2007; Kwan et al., 2007; Shindo et al., 2010). The VDAC2LA2256 was created using the zinc finger array OZ523 and OZ524 generated by the zebrafish Zinc Finger Consortium (Foley et al., 2009a, 2009b).\n\n### Molecular Biology\n\nFull length VDAC2 cDNA was purchased from Open Biosystems (Huntsville, AL) and cloned into pCS2+ or pCS2+3XFLAG. Full length cDNA fragments of zebrafish MCU (Accession number: JX424822) and MICU1 (JX42823) were amplified from 2 dpf embryos and cloned into pCS2+. For mRNA synthesis, plasmids were linearized and mRNA was synthesized using the SP6 mMESSAGE mMachine kit according to the manufacturers manual (Ambion, Austin, TX.).\n\n### Zebrafish injections\n\nVDAC2 mRNA and morpholino antisense oligos (5\u2032-GGGAACGGCCATTTTATCTGTTAAA-3\u2032) (Genetools, Philomath, OR) were injected into one-cell stage embryos collected from crosses of tretc318 heterozygotes. Cardiac performance was analyzed by visual inspection on 1 dpf. The tre mutant embryos were identified either by observing the fibrillation phenotype at 2\u20133 dpf or by genotyping as previously described (Langenbacher et al., 2005).\n\n### Chemical screen\n\nChemicals from a synthetic library (Castellano et al., 2007; Choi et al., 2011; Cruz et al., 2011) and from Biomol International LP (Farmingdale, NY) were screened for their ability to partially or completely restore persistent heartbeat in tre embryos. 12 embryos collected from crosses of tretc318 heterozygotes were raised in the presence of individual compounds at a concentration of 10 \u00b5M from 4 hpf (Choi et al., 2011). Cardiac function was analyzed by visual inspection at 1 and 2 dpf. The hearts of tretc318 embryos manifest a chaotic movement resembling cardiac fibrillation with intermittent contractions in rare occasion (Ebert et al., 2005; Langenbacher et al., 2005). Compounds that elicit persistent coordinated cardiac contractions were validated on large number of tre mutant embryos and NCX1h morphants (>500 embryos).\n\n### Zebrafish cardiac imaging\n\nVideos of GFP-labelled myl7:GFP hearts were taken at 30 frames per second. Line-scan analysis was performed along a line through the atria or the ventricles of these hearts (Nguyen et al., 2009). Fraction of shortening was deduced from the ratio of diastolic and systolic width and heart rate was determined by beats per minute. Cardiac parameters were analyzed in tremblortc318 and VDAC2LA2256 at 2 dpf.\n\n### Zebrafish optical mapping\n\n36 hpf myl7:gCaMP4.1 embryos were imaged at a frame rate of 30 ms/frame. Electromechanical isolation was achieved by tnnt2MO (Milan et al., 2006). The fluorescence intensity of each pixel in a 2D map was normalize to generate heat maps and isochronal lines at 33 ms intervals were obtained by identifying the maximal spatial gradient for a given time point (Chi et al., 2008).\n\n### Mouse and human embryonic stem cells\n\nThe mouse E14Tg2a ESC and human H9 ESC line were cultured and differentiated as previously described (Blin et al., 2010; Arshi et al., 2013). At day 10 of differentiation, beating mouse EBs were exposed to external solution containing 10 mM CaCl2 for 10 min before DMSO or efsevin (10 \u03bcM) treatment. Human EBs were differentiated for 15 days and treated with 5 mM CaCl2 for 10 min before DMSO or efsevin (5 \u03bcM) treatment. Images of beating EBs were acquired at a rate of 30 frames/s and analyzed by motion-detection software. For calcium recording, the EBs were loaded with 10 \u03bcM fluo-4 AM in culture media for 30 min at 37\u00b0C. Line-scan analysis was performed and fluorescent signals were acquired by a Zeiss LSM510 confocal microscope.\n\n### Microelectrode array measurements\n\n2-day-old wild type, tre, and efsevin-treated tre embryos were placed on uncoated, microelectrode arrays (MEAs) containing 120 integrated TiN electrodes (30 \u03bcm diameter, 200 \u03bcm interelectrode spacing). Local field potentials (LFPs) at each electrode were collected for three trials per embryo type over a period of three minutes at a sampling rate of 1 kHz using the MEA2100-HS120 system (Multichannel Systems, Reutiligen, Germany). Raw data was low-pass filtered at a cutoff frequency of 10 Hz using a third-order Butterworth filter. Data analysis was carried out using the MC_DataTool (Multichannel Systems) and Matlab (MathWorks).\n\n### Ca2+ imaging\n\nMurine ventricular cardiomyocytes were isolated as previously described (Reuter et al., 2004). Cells were loaded with 5 \u00b5M fluo-4 AM in external solution containing: 138.2 mM NaCl, 4.6 mM KCl, 1.2 mM MgCl, 15 mM glucose, 20 mM HEPES for 1 hr and imaged in external solution supplemented with 2, 5 or 10 mM CaCl2. For the recording of Ca2+ sparks and transients, the external solution contained 2 mM CaCl2. For Ca2+ transients, cells were field stimulated at 0.5 Hz with a 5 ms pulse at a voltage of 20% above contraction threshold. For all measurements, efsevin was added 2 hr prior to the actual experiment. Images were recorded on a Zeiss LSM 5 Pascal confocal microscope. Data analysis was carried out using the Zeiss LSM Image Browser and ImageJ with the SparkMaster plugin (Picht et al., 2007). Cells were visually inspected prior to and after each recording. Only those recordings from healthy looking cells with distinct borders, uniform striations and no membrane blebs or granularity were included in the analysis.\n\n### Biochemistry\n\nFor pull down assays mono-N-Boc protected 2,2'-(ethylenedioxy)bis(ethylamine) was attached to the carboxylic ester of efsevin and its derivatives through the amide bond. After removal of the Boc group using TFA, the primary amine was coupled to the carboxylic acid of Affi-Gel 10 Gel (Biorad, Hercules, CA). 2-day-old zebrafish embryos were deyolked by centrifugation before being lysed with Rubinfeld's lysis buffer (Rubinfeld et al., 1993). The lysate was precleaned by incubation with Affi-Gel 10 Gel to eliminate non-specific binding. Precleaned lysate was incubated with affinity beads overnight. Proteins were eluted from the affinity beads and separated on SDS-PAGE. Protein bands of interest were excised. Gel plugs were dehydrated in acetonitrile (ACN) and dried completely in a Speedvac. Samples were reduced and alkylated with 10 mM dithiotreitol and 10 mM TCEP solution in 50 mM NH4HCO3 (30 min at 56\u00b0C) and 100 mM iodoacetamide (45 min in dark), respectively. Gel plugs were washed with 50 mM NH4HCO3, dehydrated with ACN, and dried down in a Speedvac. Gel pieces were then swollen in digestion buffer containing 50 mM NH4HCO3, and 20.0 ng/\u03bcl of chymotrypsin (25\u00b0C, overnight). Peptides were extracted with 0.1% TFA in 50% ACN solution, dried down and resuspended in LC buffer A (0.1% formic acid, 2% ACN).\n\n### Mass spectrometry analyses and database searching\n\nExtracted peptides were analyzed by nano-flow LC/MS/MS on a Thermo Orbitrap with dedicated Eksigent nanopump using a reversed phase column (New Objective, Woburn, MA). The flow rate was 200 nl/min for separation: mobile phase A contained 0.1% formic acid, 2% ACN in water, and mobile phase B contained 0.1% formic acid, 20% water in ACN. The gradient used for analyses was linear from 5% B to 50% B over 60 min, then to 95% B over 15 min, and finally keeping constant 95% B for 10 min. Spectra were acquired in data-dependent mode with dynamic exclusion where the instrument selects the top six most abundant ions in the parent spectra for fragmentation. Data were searched against the Danio rerio IPI database v3.45 using the SEQUEST algorithm in the BioWorks software program version 3.3.1 SP1. All spectra used for identification had deltaCN>0.1 and met the following Xcorr criteria: >2 (+1), >3 (+2), >4 (+3), and >5 (+4). Searches required full cleavage with the enzyme, <4 missed cleavages and were performed with the differential modifications of carbamidomethylation on cysteine and methionine oxidation.\n\n### In situ hybridization\n\nIn situ hybridization was performed as previously described (Chen and Fishman, 1996). DIG-labeled RNA probe was synthesized using the DIG RNA labeling kit (Roche, Indianapolis, IN).\n\n### Immunostaining\n\nHeLa cells were transfected with a C-terminally flag-tagged zebrafish VDAC1 or VDAC2 in plasmid pCS2+ using Lipofectamine 2000 (Invitrogen). After staining with MitoTracker Orange (Invitrogen) cells were fixed in 3.7% formaldehyde and permeabilized with acetone. Immunostaining was performed using primary antibody ANTI-FLAG M2 (Sigma Aldrich, St. Luis, MO) at 1:100 and secondary antibody Anti-Mouse IgG1-FITC (Southern Biotechnology Associates, Birmingham, AL) at 1:200. Cells were mounted and counterstained using Vectashield Hard Set with DAPI (Vector Laboratories, UK).\n\n### Mitochondria Ca2+ uptake assay in HeLa cells\n\nHeLa cells were transfected with zebrafish VDAC2 using Lipofectamine 2000 (Invitrogen, Carlsbad, CA). 36 hrs after transfection, cells were loaded with 5 \u00b5M Rhod2-AM (Invitrogen), a Ca2+ indicator preferentially localized in mitochondria, for 1 hr at 15\u00b0C followed by a 30 min de-esterification period at 37\u00b0C. Subsequently, cells were permeabilized with 100 \u00b5M digitonin for 1 min at room temperature. Fluorescence changes in Rhod2 (ex: 544 nm, em: 590 nm) immediately after the addition of Ca2+ (final free Ca2+ concentration is calculated to be approximately 10 \u00b5M using WEBMAXC at http://web.stanford.edu/\u223ccpatton/webmaxcS.htm) were monitored in internal buffer (5 mM K-EGTA, 20 mM HEPES, 100 mM K-aspartate, 40 mM KCl, 1 mM MgCl2, 2 mM maleic acid, 2 mM glutamic acid, 5 mM pyruvic acid, 0.5 mM KH2PO4, 5 mM MgATP, pH adjusted to 7.2 with Trizma base) using a FLUOSTAR plate reader (BMG Labtech, Germany).\n\n### Mitochondria Ca2+ uptake assay in VDAC1/VDAC3 double knockout (V1/V3 DKO) MEFs\n\nV1/V3 DKO MEFs were cultured as previously described (Roy et al., 2009a). Efsevin-treated (15 \u03bcM for 30 min) or mock-treated MEFs were used for measurements of [Ca2+]c in suspensions of permeabilized cells or imaging of [Ca2+]m simultaneously with [Ca2+]c in intact single cells. Permeabilization of the plasma membrane was performed by digitonin (40 \u03bcM/ml). Changes in [Ca2+] in the cytoplasmic buffer upon IP3 (7.5 \u03bcM) addition in the presence or absence of ruthenium red (3 \u03bcM) was measured by fura2 in a fluorometer (Csord\u00e1s et al., 2006; Roy et al., 2009b). To avoid endoplasmic reticulum Ca2+ uptake 2 \u03bcM thapsigargin was added before IP3. For imaging of [Ca2+]m and [Ca2+]c, MEFs were co-transfected with plasmids encoding polycistronic zebrafish VDAC2 with mCherry and mitochondria-targeted inverse pericam for 40 hr. Cells were sorted to enrich the transfected cells and attached to glass coverslips. In the final 10 min, of the efsevin or mock-treatment, the cells were also loaded with fura2AM (2.5 \u03bcM) and subsequently transferred to the microscope stage. Stimulation with 1 \u03bcM ATP was carried out in a norminally Ca2+ free buffer. Changes in [Ca2+]c and [Ca2+]m were imaged using fura2 (ratio of ex:340 nm\u2013380 nm) and mitochondria-targeted inverse pericam (ex: 495 nm), respectively (Csordas et al., 2010).\n\n### Statistics\n\nAll values are expressed as mean \u00b1 SEM, unless otherwise specified. Significance values are calculated by unpaired student's t-test unless noted otherwise.\n",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "77581f10-2a24-493b-833c-50d189baedd7",
+      "submission_id": "1a564889-a3c7-4df4-b463-9aabe30b140f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jodi Nunnari, University of California, Davis , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.04801.029](https://doi.org/10.7554/eLife.04801.029)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cActivation of VDAC2 regulates mitochondrial Ca2+ uptake and cardiac rhythmicity\u201d for consideration at eLife. Your article has been favorably evaluated by Vivek Malhotra (Senior editor), a Reviewing editor, and 2 reviewers.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Jodi Nunnari (Reviewing editor); Rosario Rizzuto (peer reviewer 1). Reviewer 2 remains anonymous.\n\nThe Reviewing editor and the reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission. All agree that the work is of high quality and represents a significant advance in our understanding of the role of VDAC in calcium handling and cardiac physiology. A majority of the comments pasted below can be addressed by a careful revision of the manuscript. However, as pointed out by reviewer 2, the experiments do not adequately test the authors' conclusion that Ca2+ is directly transferred between the ER and mitochondria. Additional experimentation, for example examining the effect of addition of a Ca2+ chelator.\n\nReviewer #1:\n\nThe authors point to mitochondrial Ca2+ buffering as a protective mechanism against erratic electrical activity, and indicates a prominent role of VDAC2 as a \u201cfacilitator\u201d of Ca2+ transfer through MCU channels. In this respect, the authors could consider investigating whether additional, possibly isoform-specific mechanisms add to the role of VDAC2 in Ca2+ permeation across the outer mitochondrial membrane.\n\n1) Does VDAC 2 interact with MCU and/or with some of its regulators (MICU1/2/3, EMRE or MCUR1)?\n\n2) Is the expression of MCU and its regulators (\u201cMCU complex\u201d) altered in the tre mutants?\n\n3) Does pharmacological or molecular stimulation of VDAC2 affect the expression of the MCU complex?\n\nReviewer #2:\n\nThe manuscript reports exciting results but needs to be improved in the following ways:\n\n1) The results in Figure 3F show a sample of the identification of one VDAC peptide. The mass numbers are not visible and the color code of red and blue is not clear at all especially the blue. The reader is asked to trust the authors and that is not acceptable. If space is a problem then a clear figure should be added to the supplemental file. Further, the authors report the peptides identified that are a match to VDAC 2 but they do not report what peptides were detected that did not match. What fraction of the peptides matched to VDAC2? There is an unfortunate history of attributing action to VDAC that was not due to VDAC and of identifying VDAC as a binding site when another protein was responsible. This manuscript provides other evidence that supports the conclusion that VDAC2 is the target but that does not excuse the failure to honestly report on other proteins present.\n\n2) The authors state \u201c... efsevin restores rhythmic cardiac contraction in tre by potentiating VDAC2 activity.\u201d The authors do not measure VDAC2 activity and thus this conclusion is unnecessary speculation. VDAC2 is not an enzyme and thus its action is not so easily defined in this context. The first part of the last sentence on that page is the appropriate summarizing statement.\n\n3) The authors state: \u201cVDAC is an abundant channel located on the outer mitochondrial membrane serving as a primary passageway for metabolites and ions including Ca2+ (Fig.5A) (Rapizzi et al., 2002; 162 Bathori et al., 2006; Shoshan-Barmatz et al., 2010).\u201c The authors fail to point out that it is the closed state of VDAC that favors Ca++ flux. That seminal publication was not cited. (Biochim Biophys Acta. 2007 Oct;1768(10):2510-5.) The state of VDAC2 as well as its presence is critical.\n\n4) Figure 5 presents some very interesting findings but experimental details are sometimes missing and unclear. In the methods section it talks about perfusion whereas in the figure legend it is called superfusion. It is my understanding that the Fluorostar plate reader does not have perfusion capabilities but rather has the ability to make fluid additions while recording. Is that what was done? Also in the methods section it does not specify the total amount of Ca++ present in the solution, just the presumably calculated free Ca++ concentration. The actual amount of calcium present should be stated and whether the free Ca++ concentration reported is a calculated value of a measured value. Either way it is unclear why the reported value is an exact value. Is this a guess, an approximation?\n\nIn addition, the authors state \u201cWe examined whether Ca2+ released from intracellular stores could be directly transported into mitochondria through VDAC2 and whether this process could be modulated by efsevin...\u201d The experiments reported do not distinguish between Ca++ release into the medium and quickly taken up my mitochondria or Ca++ directly traveling between the ER and the mitochondria. That could have been tested in 3C by having a strong chelator in the medium. Thus, with the current data the authors cannot claim evidence for direct transfer. They can claim a more effective uptake of Ca++ into mitochondria after efsevin treatment.\n\nBased on the results reported in 5B, the authors conclude that Ca++ has been transported into mitochondria in the permeabilized cells, ignoring the ER. The choice of Rhod2 was presumably based on its affinity for Ca++ and its likely saturation with Ca++ in the ER, so that observed changes are likely due to the mitochondria. The authors make no effort to point this out to the reader. It should be addressed.\n\n5) In the conclusions the authors state: \u201cIn this model, VDAC-dependent Ca2+ uptake controls the duration and the diffusion of cytosolic Ca2+ near the Ca2+ release sites...\u201d How, physically, can VDAC control the \u201cduration of cytosolic Ca++\u201d and the \u201cdiffusion of cytosolic Ca++\u201d? VDAC cannot control diffusion nor can it control the duration of diffusion. What I hope the authors want to say is that VDAC2 facilitates Ca++ uptake via MCU thus reducing the local Ca++ concentration more rapidly than otherwise.\n",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d2c8ab52-6485-45c6-8880-3dd81963b0ee",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C1",
+      "claim": "Zebrafish tremblor embryos suffer from Ca2+ extrusion defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygous tre mutant embryos suffer from Ca2+ extrusion defects and manifest chaotic cardiac contractions resembling fibrillation (Ebert et al., 2005; Langenbacher et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ebert et al., 2005 and Langenbacher et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "02ed82f6-6a22-4c16-8c60-b4411f95ca46",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C2",
+      "claim": "Zebrafish tremblor embryos manifest chaotic cardiac contractions resembling fibrillation.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygous tre mutant embryos suffer from Ca2+ extrusion defects and manifest chaotic cardiac contractions resembling fibrillation (Ebert et al., 2005; Langenbacher et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ebert et al., 2005 and Langenbacher et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "842f9624-899a-4cf5-852d-6b7ea63ad80a",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C3",
+      "claim": "Efsevin restores coordinated contractions in tremblor embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "A dihydropyrrole carboxylic ester compound named efsevin was identified based on its ability to restore persistent and rhythmic cardiac contractions in tre mutant embryos in a dose-dependent manner (Figure 1A,E, and Videos 1\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A,E and Videos 1-4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "edbf665e-51bc-49e3-aca4-1aeffca09c5e",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C4",
+      "claim": "Efsevin restores cardiac contractions in tremblor embryos in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "A dihydropyrrole carboxylic ester compound named efsevin was identified based on its ability to restore persistent and rhythmic cardiac contractions in tre mutant embryos in a dose-dependent manner (Figure 1A,E, and Videos 1\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A,E and Videos 1-4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "8193a118-5906-4dec-91ee-c5727a85c3dd",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C5",
+      "claim": "Fractional shortening of efsevin treated tre mutant hearts was comparable to that of their wild type siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "Fractional shortening of efsevin treated tre mutant hearts was comparable to that of their wild type siblings and heart rate was restored to approximately 40% of that observed in controls (Figure 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "68c6b86e-bbe2-450d-b157-ef98bf11d738",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C6",
+      "claim": "Efsevin treatment restored heart rate to approximately 40% of that observed in controls in tre mutant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Fractional shortening of efsevin treated tre mutant hearts was comparable to that of their wild type siblings and heart rate was restored to approximately 40% of that observed in controls (Figure 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "dcb9f802-795f-4f2d-8600-0c3f9fc92252",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C7",
+      "claim": "Periodic local field potentials accompanying each heartbeat were detected in wild type and efsevin-treated tre embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Periodic local field potentials accompanying each heartbeat were detected in wild type and efsevin-treated tre embryos using a microelectrode array (Figure 1F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1F-H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "dac49092-a5c8-4a29-a55b-c76a7ebeda01",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C8",
+      "claim": "Only sporadic Ca2+ signals were detected in tre hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while only sporadic Ca2+ signals were detected in tre hearts, in vivo Ca2+ imaging revealed steady Ca2+ waves propagating through efsevin-treated tre hearts (Figure 1I, Videos 5\u20137), demonstrating that cardiomyocytes are functionally coupled and that efsevin treatment restores regular Ca2+ transients in tre hearts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1I and Videos 5-7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "74f637e3-dbab-4cc0-a44b-1a64762a2f0a",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C9",
+      "claim": "In vivo Ca2+ imaging revealed steady Ca2+ waves propagating through efsevin-treated tre hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while only sporadic Ca2+ signals were detected in tre hearts, in vivo Ca2+ imaging revealed steady Ca2+ waves propagating through efsevin-treated tre hearts (Figure 1I, Videos 5\u20137), demonstrating that cardiomyocytes are functionally coupled and that efsevin treatment restores regular Ca2+ transients in tre hearts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1I and Videos 5-7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "320003df-a4dd-44d0-8b27-abb7cc06183b",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C10",
+      "claim": "Efsevin treatment restores regular Ca2+ transients in tre hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while only sporadic Ca2+ signals were detected in tre hearts, in vivo Ca2+ imaging revealed steady Ca2+ waves propagating through efsevin-treated tre hearts (Figure 1I, Videos 5\u20137), demonstrating that cardiomyocytes are functionally coupled and that efsevin treatment restores regular Ca2+ transients in tre hearts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1I and Videos 5-7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "28af7690-18b9-4983-83db-7ed27c30b2c2",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C11",
+      "claim": "Cardiomyocytes are functionally coupled in efsevin-treated tre hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while only sporadic Ca2+ signals were detected in tre hearts, in vivo Ca2+ imaging revealed steady Ca2+ waves propagating through efsevin-treated tre hearts (Figure 1I, Videos 5\u20137), demonstrating that cardiomyocytes are functionally coupled and that efsevin treatment restores regular Ca2+ transients in tre hearts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the observation of steady Ca2+ waves propagating through the heart",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "3bba005c-0dd4-4bac-83c0-9f5c3370e09a",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C12",
+      "claim": "Mouse embryonic stem cell-derived cardiomyocytes establish a regular contraction pattern with rhythmic Ca2+ transients.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse embryonic stem cell-derived cardiomyocytes (mESC-CMs) establish a regular contraction pattern with rhythmic Ca2+ transients (Figure 2A,B,E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A,B,E,F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "a685a75f-685a-4737-8d6c-6762bc3325d0",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C13",
+      "claim": "Increasing extracellular Ca2+ levels is sufficient to disrupt normal Ca2+ cycling in mESC-CMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mimicking Ca2+ overload by increasing extracellular Ca2+ levels was sufficient to disrupt normal Ca2+ cycling and induce irregular contractions in mESC-CMs (Figure 2C,E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C,E,F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "d03bc2b0-c447-417f-8d56-dfee950ce891",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C14",
+      "claim": "Increasing extracellular Ca2+ levels induces irregular contractions in mESC-CMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Mimicking Ca2+ overload by increasing extracellular Ca2+ levels was sufficient to disrupt normal Ca2+ cycling and induce irregular contractions in mESC-CMs (Figure 2C,E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C,E,F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "71358a0b-90d8-4c1a-bf79-6fca637775c4",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C15",
+      "claim": "Efsevin treatment restored rhythmic Ca2+ transients in mESC-CMs under Ca2+ overload conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, efsevin treatment restored rhythmic Ca2+ transients and cardiac contractions in these cells (Figure 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2D-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "208bb1e4-e6ca-419b-97ee-cfeb1debc883",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C16",
+      "claim": "Efsevin treatment restored cardiac contractions in mESC-CMs under Ca2+ overload conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, efsevin treatment restored rhythmic Ca2+ transients and cardiac contractions in these cells (Figure 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2D-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "4582a59d-1bd9-41de-985f-41f820221a6b",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C17",
+      "claim": "Similar effect of efsevin was observed in human embryonic stem cell-derived cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar effect was observed in human embryonic stem cell-derived cardiomyocytes (hESC-CMs) (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "a2ac0a87-5652-4638-b7b3-61aa831f7102",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C18",
+      "claim": "Efsevin targets a conserved Ca2+ regulatory mechanism critical for maintaining rhythmic cardiac contraction in fish, mice and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings suggest that efsevin targets a conserved Ca2+ regulatory mechanism critical for maintaining rhythmic cardiac contraction in fish, mice and humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that efsevin has similar effects across zebrafish, mouse, and human cardiomyocytes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "1a13721d-b020-40d7-b68c-ffc2175876b6",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C21",
+      "claim": "Preincubation of zebrafish lysate with excess efsevin prevented the 32kD protein from binding to efsevinLB or OK-C125LB.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, preincubation of zebrafish lysate with excess efsevin prevented the 32kD protein from binding to efsevinLB or OK-C125LB (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "a7be7452-de7e-4b88-8013-a3b0d1f47829",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C22",
+      "claim": "Mass spectrometry analysis revealed that the 32kD band represents a zebrafish homologue of the mitochondrial voltage-dependent anion channel 2 (VDAC2).",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry analysis revealed that this 32kD band represents a zebrafish homologue of the mitochondrial voltage-dependent anion channel 2 (VDAC2) (Figure 3F and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mass spectrometry data shown in Figure 3F and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "99695db4-3672-41f5-9edf-f6092186331e",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C23",
+      "claim": "VDAC2 is expressed in the developing zebrafish heart.",
+      "claim_type": "EXPLICIT",
+      "source": "VDAC2 is expressed in the developing zebrafish heart (Figure 4A), making it a good candidate for mediating efsevin's effect on cardiac Ca2+ handling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in situ hybridization data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "1f573eb0-b59b-48fe-ad2d-4c0441f44c1d",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C24",
+      "claim": "Injection of in vitro synthesized VDAC2 RNA into tre embryos resulted in the majority of these embryos having coordinated cardiac contractions similar to those subjected to efsevin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine this possibility, we injected in vitro synthesized VDAC2 RNA into tre embryos and found that the majority of these embryos had coordinated cardiac contractions similar to those subjected to efsevin treatment (Figure 4B, Videos 8\u201311).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4B and Videos 8-11",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "229f38f0-2b57-4314-be5d-c8d8614174ab",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C25",
+      "claim": "Induction of VDAC2 expression by TBF treatment restored coordinated and rhythmic contractions in myl7:VDAC2;NCX1h MO hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "Like efsevin treatment, induction of VDAC2 expression by TBF treatment restored coordinated and rhythmic contractions in myl7:VDAC2;NCX1h MO hearts (Figure 4D, Videos 12,13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4D and Videos 12,13",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "29c97308-2bcc-4f4d-872f-fb7e8fdf22cb",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C26",
+      "claim": "Knocking down VDAC2 in tre hearts attenuated the suppressive effect of efsevin.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, knocking down VDAC2 in tre hearts attenuated the suppressive effect of efsevin (Figure 4E, Videos 14\u201316).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4E and Videos 14-16",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "d816b111-edd2-4ac3-8591-8a9ff1fa5f82",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C27",
+      "claim": "Homozygous VDAC2LA2256 embryos do not exhibit noticeable morphological defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to that observed in morpholino knockdown embryos, homozygous VDAC2LA2256 embryos do not exhibit noticeable morphological defects, but the suppressive effect of efsevin was attenuated in homozygous VDAC2LA2256; NCX1MO embryos (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "abec3521-79d0-41ae-b505-85a12a27c231",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C28",
+      "claim": "The suppressive effect of efsevin was attenuated in homozygous VDAC2LA2256; NCX1MO embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to that observed in morpholino knockdown embryos, homozygous VDAC2LA2256 embryos do not exhibit noticeable morphological defects, but the suppressive effect of efsevin was attenuated in homozygous VDAC2LA2256; NCX1MO embryos (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "12e65f5d-833d-47d9-b426-24255995feb7",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C29",
+      "claim": "VDAC2 is a major mediator for efsevin's effect on ncx1h deficient hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings demonstrate that VDAC2 is a major mediator for efsevin's effect on ncx1h deficient hearts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from genetic experiments showing VDAC2 overexpression mimics efsevin effects and VDAC2 knockdown attenuates efsevin effects",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "d229314a-5c12-47c1-9837-c1645f46459f",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C30",
+      "claim": "VDAC is an abundant channel located on the outer mitochondrial membrane serving as a primary passageway for metabolites and ions.",
+      "claim_type": "EXPLICIT",
+      "source": "VDAC is an abundant channel located on the outer mitochondrial membrane serving as a primary passageway for metabolites and ions (Figure 5A) (Rapizzi et al., 2002; Bathori et al., 2006; Shoshan-Barmatz et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Rapizzi et al., 2002; Bathori et al., 2006; Shoshan-Barmatz et al., 2010",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "ce2ea5eb-2621-4089-8882-2ed7879492f3",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C31",
+      "claim": "At its close state, VDAC favours Ca2+ flux.",
+      "claim_type": "EXPLICIT",
+      "source": "At its close state, VDAC favours Ca2+ flux (Tan and Colombini, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tan and Colombini, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "d48dc9e7-662d-4d29-a260-128733deebdd",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C32",
+      "claim": "VDAC2 overexpression increased mitochondrial Ca2+ uptake in permeabilized HeLa cells after the addition of Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine whether efsevin would modulate mitochondrial Ca2+ uptake via VDAC2, we transfected HeLa cells with VDAC2. We noted increased mitochondrial Ca2+ uptake in permeabilized VDAC2 transfected and efsevin-treated cells after the addition of Ca2+ and the combined treatment further enhanced mitochondrial Ca2+ levels (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "4dfe08c6-6b65-49f1-b0ae-bcf5d896ce4c",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C33",
+      "claim": "Efsevin treatment increased mitochondrial Ca2+ uptake in permeabilized HeLa cells after the addition of Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine whether efsevin would modulate mitochondrial Ca2+ uptake via VDAC2, we transfected HeLa cells with VDAC2. We noted increased mitochondrial Ca2+ uptake in permeabilized VDAC2 transfected and efsevin-treated cells after the addition of Ca2+ and the combined treatment further enhanced mitochondrial Ca2+ levels (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "d9b7da12-6f8a-44c3-8ac6-773560efd420",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C34",
+      "claim": "Combined treatment of VDAC2 overexpression and efsevin further enhanced mitochondrial Ca2+ levels.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine whether efsevin would modulate mitochondrial Ca2+ uptake via VDAC2, we transfected HeLa cells with VDAC2. We noted increased mitochondrial Ca2+ uptake in permeabilized VDAC2 transfected and efsevin-treated cells after the addition of Ca2+ and the combined treatment further enhanced mitochondrial Ca2+ levels (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "82ac76c5-65ea-4664-a4ab-aa799e3fcba8",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C35",
+      "claim": "Mitochondria are located in close proximity to Ca2+ release sites of the ER/SR.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondria are located in close proximity to Ca2+ release sites of the ER/SR and an extensive crosstalk between the two organelles exists (Garc\u00eda-P\u00e9rez et al., 2008; Hayashi et al., 2009; Brown and O'Rourke, 2010; Dorn and Scorrano, 2010; Kohlhaas and Maack, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Garc\u00eda-P\u00e9rez et al., 2008; Hayashi et al., 2009; Brown and O'Rourke, 2010; Dorn and Scorrano, 2010; Kohlhaas and Maack, 2013",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "eeb3ac0e-09a1-45c3-921f-9e3b016e3d1b",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C36",
+      "claim": "An extensive crosstalk between mitochondria and ER/SR exists.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondria are located in close proximity to Ca2+ release sites of the ER/SR and an extensive crosstalk between the two organelles exists (Garc\u00eda-P\u00e9rez et al., 2008; Hayashi et al., 2009; Brown and O'Rourke, 2010; Dorn and Scorrano, 2010; Kohlhaas and Maack, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Garc\u00eda-P\u00e9rez et al., 2008; Hayashi et al., 2009; Brown and O'Rourke, 2010; Dorn and Scorrano, 2010; Kohlhaas and Maack, 2013",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "5161b3e2-87ae-46e3-8e4b-e8769e78c447",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C37",
+      "claim": "ATP induced a rapid mitochondrial matrix [Ca2+] rise in V1/V3DKO MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "While treatments with ATP, an IP3-linked agonist, and thapsigargin, a SERCA inhibitor, stimulated similar global cytoplasmic [Ca2+] elevation in intact cells, only ATP induced a rapid mitochondrial matrix [Ca2+] rise (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "c4aadc90-495f-4745-bb24-4603fb5a9f8a",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C38",
+      "claim": "Ca2+ was locally transferred from IP3 receptors to mitochondria through VDAC2 at the close ER-mitochondrial associations.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with observations obtained in other cell types (Rizzuto et al., 1994; Hajn\u00f3czky et al., 1995) and suggests that Ca2+ was locally transferred from IP3 receptors to mitochondria through VDAC2 at the close ER-mitochondrial associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental observations and supported by citations to Rizzuto et al., 1994; Hajn\u00f3czky et al., 1995",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "5681a0bb-9554-421d-991c-3449c3ad0635",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C39",
+      "claim": "Efsevin increased the amount of Ca2+ transferred into mitochondria during IP3-induced Ca2+ release in permeabilized V1/V3DKO MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "In permeabilized V1/V3DKO MEFs, treatment with efsevin increased the amount of Ca2+ transferred into mitochondria during IP3-induced Ca2+ release (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "ab871af3-ad48-43f9-aae2-40b7c4acead8",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C40",
+      "claim": "Efsevin accelerated the transfer of Ca2+ released from intracellular stores into mitochondria during stimulation with ATP in intact V1/V3 DKO MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, in intact V1/V3 DKO MEFs, efsevin accelerated the transfer of Ca2+ released from intracellular stores into mitochondria during stimulation with ATP (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5D,E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "9e54f09f-0021-4f25-ae81-7da581b2ee25",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C41",
+      "claim": "Efsevin treatment induced faster inactivation kinetics of paced Ca2+ transients in isolated adult murine cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that efsevin treatment induced faster inactivation kinetics without affecting the amplitude or time to peak of paced Ca2+ transients (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "9aeb2eb8-43e0-4af3-8f0d-c2b93964ff41",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C42",
+      "claim": "Efsevin treatment did not affect the amplitude of paced Ca2+ transients in isolated adult murine cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that efsevin treatment induced faster inactivation kinetics without affecting the amplitude or time to peak of paced Ca2+ transients (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "99dcee94-80eb-49b9-a096-558f514583b3",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C43",
+      "claim": "Efsevin treatment did not affect the time to peak of paced Ca2+ transients in isolated adult murine cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that efsevin treatment induced faster inactivation kinetics without affecting the amplitude or time to peak of paced Ca2+ transients (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "fad39e98-a7ec-44a2-91b9-4b631f07cc3c",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C44",
+      "claim": "Efsevin treatment did not significantly alter the frequency of spontaneous Ca2+ sparks in isolated adult murine cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, efsevin treatment did not significantly alter the frequency, amplitude or Ca2+ release flux of spontaneous Ca2+ sparks, local Ca2+ release events, but accelerated the decay phase resulting in sparks with a shorter duration and a narrower width (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "8cb7f1c6-83ec-4257-aa8b-df42215c03c3",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C45",
+      "claim": "Efsevin treatment did not significantly alter the amplitude of spontaneous Ca2+ sparks in isolated adult murine cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, efsevin treatment did not significantly alter the frequency, amplitude or Ca2+ release flux of spontaneous Ca2+ sparks, local Ca2+ release events, but accelerated the decay phase resulting in sparks with a shorter duration and a narrower width (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "d8350959-5aa4-480c-b14f-f3702fdadc85",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C46",
+      "claim": "Efsevin treatment did not significantly alter the Ca2+ release flux of spontaneous Ca2+ sparks in isolated adult murine cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, efsevin treatment did not significantly alter the frequency, amplitude or Ca2+ release flux of spontaneous Ca2+ sparks, local Ca2+ release events, but accelerated the decay phase resulting in sparks with a shorter duration and a narrower width (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "5f8aee20-e489-4b33-ae29-bf2396c8aafa",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C47",
+      "claim": "Efsevin treatment accelerated the decay phase of spontaneous Ca2+ sparks resulting in sparks with a shorter duration and a narrower width.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, efsevin treatment did not significantly alter the frequency, amplitude or Ca2+ release flux of spontaneous Ca2+ sparks, local Ca2+ release events, but accelerated the decay phase resulting in sparks with a shorter duration and a narrower width (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "ae2ddbb9-9c47-404e-876f-d5da017f7691",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C48",
+      "claim": "By activating mitochondrial Ca2+ uptake, efsevin accelerates Ca2+ removal from the cytosol in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that by activating mitochondrial Ca2+ uptake, efsevin accelerates Ca2+ removal from the cytosol in cardiomyocytes and thereby restricts local cytosolic Ca2+ sparks to a narrower domain for a shorter period of time without affecting SR Ca2+ load or RyR Ca2+ release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental observations on Ca2+ transients and sparks",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "470a6cd1-c55d-4518-83a0-f07b4a2e0549",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C49",
+      "claim": "Efsevin restricts local cytosolic Ca2+ sparks to a narrower domain for a shorter period of time without affecting SR Ca2+ load or RyR Ca2+ release.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that by activating mitochondrial Ca2+ uptake, efsevin accelerates Ca2+ removal from the cytosol in cardiomyocytes and thereby restricts local cytosolic Ca2+ sparks to a narrower domain for a shorter period of time without affecting SR Ca2+ load or RyR Ca2+ release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental observations on Ca2+ transients and sparks",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "492b6fef-b6fb-48bc-a52c-1618b9547642",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C50",
+      "claim": "Efsevin treatment significantly reduced the number of propagating Ca2+ waves in a dosage-dependent manner under conditions of Ca2+ overload.",
+      "claim_type": "EXPLICIT",
+      "source": "Efsevin treatment significantly reduced the number of propagating Ca2+ waves in a dosage-dependent manner (Figure 6C,D), demonstrating a potent suppressive effect of efsevin on the propagation of Ca2+ overload-induced Ca2+ waves and suggesting that efsevin could serve as a pharmacological tool to manipulate local Ca2+ signals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "9c477fdc-e734-4a22-91fd-f6122405a595",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C51",
+      "claim": "Efsevin has a potent suppressive effect on the propagation of Ca2+ overload-induced Ca2+ waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Efsevin treatment significantly reduced the number of propagating Ca2+ waves in a dosage-dependent manner (Figure 6C,D), demonstrating a potent suppressive effect of efsevin on the propagation of Ca2+ overload-induced Ca2+ waves and suggesting that efsevin could serve as a pharmacological tool to manipulate local Ca2+ signals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "e9fe96f8-a57e-4a36-bb67-829cf9418275",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C52",
+      "claim": "Efsevin could serve as a pharmacological tool to manipulate local Ca2+ signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Efsevin treatment significantly reduced the number of propagating Ca2+ waves in a dosage-dependent manner (Figure 6C,D), demonstrating a potent suppressive effect of efsevin on the propagation of Ca2+ overload-induced Ca2+ waves and suggesting that efsevin could serve as a pharmacological tool to manipulate local Ca2+ signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on observed effects of efsevin",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "00f346ba-a6f1-4526-bc50-f05dbb6d1cb4",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C53",
+      "claim": "MCU is expressed in the developing zebrafish heart.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ hybridization showed that MCU and MICU1 were expressed in the developing zebrafish heart (Figure 7A) and their expression levels were comparable between the wild type and tre hearts (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in situ hybridization data shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "4783307d-ec6e-4267-a14c-784fc0c1a913",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C54",
+      "claim": "MICU1 is expressed in the developing zebrafish heart.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ hybridization showed that MCU and MICU1 were expressed in the developing zebrafish heart (Figure 7A) and their expression levels were comparable between the wild type and tre hearts (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in situ hybridization data shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "f2033742-02dd-4506-9ea5-ee15f78b1b82",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C55",
+      "claim": "The expression levels of MCU and MICU1 were comparable between the wild type and tre hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ hybridization showed that MCU and MICU1 were expressed in the developing zebrafish heart (Figure 7A) and their expression levels were comparable between the wild type and tre hearts (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in situ hybridization data shown in Figure 7\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "6727d45b-5634-4126-aa79-8e9fc462432c",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C56",
+      "claim": "Overexpression of MCU restored coordinated contractions in tre.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of MCU restored coordinated contractions in tre, akin to what was observed with VDAC2 (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "7639ee5d-7e59-459c-88ff-56f305387da9",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C57",
+      "claim": "Tre embryos injected with suboptimal concentrations of MCU or VDAC2 had a fibrillating heart.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, tre embryos injected with suboptimal concentrations of MCU or VDAC2 had a fibrillating heart, but embryos receiving both VDAC2 and MCU at the suboptimal concentration manifested coordinated contractions (Figure 7C), demonstrating a synergistic effect of these proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "e501b32a-9bc7-4bdf-aa70-e7448b6b388a",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C58",
+      "claim": "Embryos receiving both VDAC2 and MCU at the suboptimal concentration manifested coordinated contractions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, tre embryos injected with suboptimal concentrations of MCU or VDAC2 had a fibrillating heart, but embryos receiving both VDAC2 and MCU at the suboptimal concentration manifested coordinated contractions (Figure 7C), demonstrating a synergistic effect of these proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "1168f052-9fec-443b-b95e-2218dccea2cd",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C59",
+      "claim": "VDAC2 and MCU have a synergistic effect on suppressing cardiac fibrillation in tre.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, tre embryos injected with suboptimal concentrations of MCU or VDAC2 had a fibrillating heart, but embryos receiving both VDAC2 and MCU at the suboptimal concentration manifested coordinated contractions (Figure 7C), demonstrating a synergistic effect of these proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "c8584940-6588-420b-8c6a-14fae8b0a6da",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C60",
+      "claim": "Overexpression of MCU failed to suppress the tre phenotype in the absence of VDAC2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, overexpression of MCU failed to suppress the tre phenotype in the absence of VDAC2 activity and VDAC2 could not restore coordinated contractions in tre without functional MCU (Figure 7B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7B,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "2e486a58-b7cd-4745-8e30-4763a9c1a1d7",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C61",
+      "claim": "VDAC2 could not restore coordinated contractions in tre without functional MCU.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, overexpression of MCU failed to suppress the tre phenotype in the absence of VDAC2 activity and VDAC2 could not restore coordinated contractions in tre without functional MCU (Figure 7B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7B,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "183f9708-65aa-4275-b62c-f2fbc49d0cd2",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C62",
+      "claim": "Similar results were observed by manipulating MICU1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were observed by manipulating MICU1 activity (Figure 7E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7E,F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "dce8145b-61d4-45ae-8593-b77183b5fff4",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C63",
+      "claim": "Mitochondrial Ca2+ uptake mechanisms on outer and inner mitochondrial membranes act cooperatively to regulate cardiac rhythmicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings indicate that mitochondrial Ca2+ uptake mechanisms on outer and inner mitochondrial membranes act cooperatively to regulate cardiac rhythmicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from genetic experiments showing synergistic effects of VDAC2 and MCU/MICU1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "ec1fde9c-960b-492b-a41e-b9c1de04ed4e",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C64",
+      "claim": "Activation of VDAC2 through overexpression or efsevin treatment potently restores rhythmic contractions in NCX1h deficient zebrafish hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we conducted a chemical suppressor screen in zebrafish to dissect the regulatory network critical for maintaining rhythmic cardiac contractions and to identify mechanisms underlying aberrant Ca2+ handling-induced cardiac dysfunction. We show that activation of VDAC2 through overexpression or efsevin treatment potently restores rhythmic contractions in NCX1h deficient zebrafish hearts and effectively suppresses Ca2+ overload-induced arrhythmogenic Ca2+ events and irregular contractions in mouse and human cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "eb7f7b10-900b-42c7-a9cb-f6e4c02a1c5f",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C65",
+      "claim": "Activation of VDAC2 through overexpression or efsevin treatment effectively suppresses Ca2+ overload-induced arrhythmogenic Ca2+ events and irregular contractions in mouse and human cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we conducted a chemical suppressor screen in zebrafish to dissect the regulatory network critical for maintaining rhythmic cardiac contractions and to identify mechanisms underlying aberrant Ca2+ handling-induced cardiac dysfunction. We show that activation of VDAC2 through overexpression or efsevin treatment potently restores rhythmic contractions in NCX1h deficient zebrafish hearts and effectively suppresses Ca2+ overload-induced arrhythmogenic Ca2+ events and irregular contractions in mouse and human cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "5cd64091-57f8-4150-a7cb-27ad76f18676",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C66",
+      "claim": "Potentiating VDAC2 activity enhances mitochondrial Ca2+ uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide evidence that potentiating VDAC2 activity enhances mitochondrial Ca2+ uptake, accelerates Ca2+ transfer from intracellular stores into mitochondria and spatially and temporally restricts single Ca2+ sparks in cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "a92f9ded-3439-4af1-b13a-4818eb0153e4",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C67",
+      "claim": "Potentiating VDAC2 activity accelerates Ca2+ transfer from intracellular stores into mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide evidence that potentiating VDAC2 activity enhances mitochondrial Ca2+ uptake, accelerates Ca2+ transfer from intracellular stores into mitochondria and spatially and temporally restricts single Ca2+ sparks in cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "b0caae9d-9c90-435e-84af-874edc41c544",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C68",
+      "claim": "Potentiating VDAC2 activity spatially and temporally restricts single Ca2+ sparks in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide evidence that potentiating VDAC2 activity enhances mitochondrial Ca2+ uptake, accelerates Ca2+ transfer from intracellular stores into mitochondria and spatially and temporally restricts single Ca2+ sparks in cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "ab1566dd-2f2a-4e07-b6fa-b9a4bcba31ba",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C69",
+      "claim": "VDAC2 functions in concert with MCU.",
+      "claim_type": "EXPLICIT",
+      "source": "The crucial role of mitochondria in the regulation of cardiac rhythmicity is further supported by the findings that VDAC2 functions in concert with MCU; these genes have a strong synergistic effect on suppressing cardiac fibrillation and loss of function of either gene abrogates the rescue effect of the other in tre.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "265dfa18-a23c-45fa-b370-98e5e20cb491",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C70",
+      "claim": "VDAC2 and MCU have a strong synergistic effect on suppressing cardiac fibrillation.",
+      "claim_type": "EXPLICIT",
+      "source": "The crucial role of mitochondria in the regulation of cardiac rhythmicity is further supported by the findings that VDAC2 functions in concert with MCU; these genes have a strong synergistic effect on suppressing cardiac fibrillation and loss of function of either gene abrogates the rescue effect of the other in tre.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "9e05a905-b954-43cc-8812-045c063a99bc",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C71",
+      "claim": "Loss of function of either VDAC2 or MCU abrogates the rescue effect of the other in tre.",
+      "claim_type": "EXPLICIT",
+      "source": "The crucial role of mitochondria in the regulation of cardiac rhythmicity is further supported by the findings that VDAC2 functions in concert with MCU; these genes have a strong synergistic effect on suppressing cardiac fibrillation and loss of function of either gene abrogates the rescue effect of the other in tre.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "0341c767-685c-4709-a75a-7805074c9756",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C72",
+      "claim": "Mitochondria play a crucial role in the regulation of cardiac rhythmicity.",
+      "claim_type": "EXPLICIT",
+      "source": "The crucial role of mitochondria in the regulation of cardiac rhythmicity is further supported by the findings that VDAC2 functions in concert with MCU; these genes have a strong synergistic effect on suppressing cardiac fibrillation and loss of function of either gene abrogates the rescue effect of the other in tre.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental findings on VDAC2 and MCU",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "a8b1fc2e-216e-4916-96ef-e4af22a4b9d4",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C73",
+      "claim": "VDAC2 is a modulator of Ca2+ handling in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study provides genetic and physiologic evidence supporting an additional role for mitochondria in regulating cardiac rhythmicity and reveals VDAC2 as a modulator of Ca2+ handling in cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "5d88920c-9260-4384-a742-e5a454ab0d10",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C74",
+      "claim": "VDAC2 physically interacts with RyR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings, together with recent reports of the physical interaction between VDAC2 and RyR2 (Min et al., 2012) and the close proximity of outer and inner mitochondrial membranes at the contact sites between the mitochondria and the SR (Garc\u00eda-P\u00e9rez et al., 2011), suggest an intriguing model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Min et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "85dbd0b2-9290-48b9-addc-f334337142ed",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C75",
+      "claim": "Outer and inner mitochondrial membranes are in close proximity at the contact sites between the mitochondria and the SR.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings, together with recent reports of the physical interaction between VDAC2 and RyR2 (Min et al., 2012) and the close proximity of outer and inner mitochondrial membranes at the contact sites between the mitochondria and the SR (Garc\u00eda-P\u00e9rez et al., 2011), suggest an intriguing model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Garc\u00eda-P\u00e9rez et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "79f63fdb-fe76-45bb-acf5-a36c3ab9d5d2",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C76",
+      "claim": "Mitochondria facilitate an efficient clearance mechanism in the Ca2+ microdomain, which modulates Ca2+ handling without affecting global Ca2+ signals in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that mitochondria facilitate an efficient clearance mechanism in the Ca2+ microdomain, which modulates Ca2+ handling without affecting global Ca2+ signals in cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model based on experimental findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "11017830-1217-4cd1-8b88-5ca18dcfd862",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C77",
+      "claim": "VDAC facilitates mitochondrial Ca2+ uptake via MCU complex and thereby controls the duration and the diffusion of cytosolic Ca2+ near the Ca2+ release sites to ensure rhythmic cardiac contractions.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, VDAC facilitates mitochondrial Ca2+ uptake via MCU complex and thereby controls the duration and the diffusion of cytosolic Ca2+ near the Ca2+ release sites to ensure rhythmic cardiac contractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model based on experimental findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "fad40c6a-47c1-4204-bdbc-326589205ffc",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C78",
+      "claim": "Blocking mitochondrial Ca2+ uptake has little impact on cytosolic Ca2+ transients.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is consistent with our observation that efsevin treatment induces faster inactivation kinetics of cytosolic Ca2+ transients without affecting the amplitude or the time to peak in cardiomyocytes and the reports that blocking mitochondrial Ca2+ uptake has little impact on cytosolic Ca2+ transients (Maack et al., 2006; Kohlhaas et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Maack et al., 2006; Kohlhaas et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "ae95db7e-fbc4-415c-9f29-be65ddbdca0a",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C79",
+      "claim": "Downregulating VDAC2 extends Ca2+ sparks.",
+      "claim_type": "EXPLICIT",
+      "source": "Further support for this model comes from the observation of the Ca2+ peaks on the OMM (Drago et al., 2012) and the finding that downregulating VDAC2 extends Ca2+ sparks (Subedi et al., 2011; Min et al., 2012) and that blocking mitochondrial Ca2+ uptake by Ru360 leads to an increased number of spontaneous propagating Ca2+ waves (Seguchi et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Subedi et al., 2011; Min et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "0385f7e8-d26c-4ccf-ae36-9d2acf118128",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C80",
+      "claim": "Blocking mitochondrial Ca2+ uptake by Ru360 leads to an increased number of spontaneous propagating Ca2+ waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Further support for this model comes from the observation of the Ca2+ peaks on the OMM (Drago et al., 2012) and the finding that downregulating VDAC2 extends Ca2+ sparks (Subedi et al., 2011; Min et al., 2012) and that blocking mitochondrial Ca2+ uptake by Ru360 leads to an increased number of spontaneous propagating Ca2+ waves (Seguchi et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Seguchi et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "91c71ce5-5ce5-45c1-a6be-3dff61c2c010",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C81",
+      "claim": "Ca2+ peaks have been observed on the outer mitochondrial membrane (OMM).",
+      "claim_type": "EXPLICIT",
+      "source": "Further support for this model comes from the observation of the Ca2+ peaks on the OMM (Drago et al., 2012) and the finding that downregulating VDAC2 extends Ca2+ sparks (Subedi et al., 2011; Min et al., 2012) and that blocking mitochondrial Ca2+ uptake by Ru360 leads to an increased number of spontaneous propagating Ca2+ waves (Seguchi et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Drago et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "1bae6703-e747-4671-a3a6-2632dd86936e",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C82",
+      "claim": "Aberrant Ca2+ handling is associated with many cardiac dysfunctions including arrhythmia.",
+      "claim_type": "EXPLICIT",
+      "source": "Aberrant Ca2+ handling is associated with many cardiac dysfunctions including arrhythmia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "1b54bcb1-fdcf-40bc-8ca6-84360fd3e648",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C83",
+      "claim": "Fundamental mechanisms regulating cardiac function are conserved among vertebrates despite the existence of species-specific features.",
+      "claim_type": "EXPLICIT",
+      "source": "This success indicates that fundamental mechanisms regulating cardiac function are conserved among vertebrates despite the existence of species-specific features and suggests a new paradigm of using zebrafish cardiac disease models for the dissection of critical genetic pathways and the discovery of new therapeutic approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the success of the zebrafish screen and effects in mouse and human cells",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "b1b6e6c6-a099-40f2-8ce0-64db26b30c1f",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C84",
+      "claim": "Zebrafish cardiac disease models can be used for the dissection of critical genetic pathways and the discovery of new therapeutic approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "This success indicates that fundamental mechanisms regulating cardiac function are conserved among vertebrates despite the existence of species-specific features and suggests a new paradigm of using zebrafish cardiac disease models for the dissection of critical genetic pathways and the discovery of new therapeutic approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement based on the success of the current study",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "5654d83c-93d8-463f-be14-fcbdd593c79e",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C85",
+      "claim": "The tremblor (tre) locus encodes a cardiac-specific isoform of the Na+/Ca2+ exchanger 1, NCX1h (also known as slc8a1a).",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, the tremblor (tre) locus encodes a cardiac-specific isoform of the Na+/Ca2+ exchanger 1, NCX1h (also known as slc8a1a) (Ebert et al., 2005; Langenbacher et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ebert et al., 2005; Langenbacher et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "9442b018-bfed-4eef-a676-3fd44dc1b612",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C86",
+      "claim": "The tre mutant hearts lack rhythmic Ca2+ transients and display chaotic Ca2+ signals in the myocardium leading to unsynchronized contractions resembling cardiac fibrillation.",
+      "claim_type": "EXPLICIT",
+      "source": "The tre mutant hearts lack rhythmic Ca2+ transients and display chaotic Ca2+ signals in the myocardium leading to unsynchronized contractions resembling cardiac fibrillation (Langenbacher et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Langenbacher et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "b7cefe5e-1d2a-4f1b-a360-a73eb1c97720",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C87",
+      "claim": "Ca2+ waves traveling across the heart occur soon after the formation of the primitive heart tube.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings that Ca2+ waves traveling across the heart soon after the formation of the primitive heart tube (Chi et al., 2008) and that loss of function of key Ca2+ regulatory proteins, such as the L-type Ca2+ channel, Na/K\u2212ATPase and sodium-calcium exchanger 1 (NCX1), severely impairs normal cardiac function (Rottbauer et al., 2001; Shu et al., 2003; Ebert et al., 2005; Langenbacher et al., 2005), indicate an essential role for Ca2+ handling in the regulation of embryonic cardiac function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chi et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "9904eeb3-2def-4fba-a7fb-20b0c71c73e2",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C88",
+      "claim": "Loss of function of key Ca2+ regulatory proteins, such as the L-type Ca2+ channel, Na/K\u2212ATPase and sodium-calcium exchanger 1 (NCX1), severely impairs normal cardiac function.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings that Ca2+ waves traveling across the heart soon after the formation of the primitive heart tube (Chi et al., 2008) and that loss of function of key Ca2+ regulatory proteins, such as the L-type Ca2+ channel, Na/K\u2212ATPase and sodium-calcium exchanger 1 (NCX1), severely impairs normal cardiac function (Rottbauer et al., 2001; Shu et al., 2003; Ebert et al., 2005; Langenbacher et al., 2005), indicate an essential role for Ca2+ handling in the regulation of embryonic cardiac function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rottbauer et al., 2001; Shu et al., 2003; Ebert et al., 2005; Langenbacher et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "d94fb619-c00d-435b-b5c1-6c5dbc296822",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C89",
+      "claim": "Ca2+ handling plays an essential role in the regulation of embryonic cardiac function.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings that Ca2+ waves traveling across the heart soon after the formation of the primitive heart tube (Chi et al., 2008) and that loss of function of key Ca2+ regulatory proteins, such as the L-type Ca2+ channel, Na/K\u2212ATPase and sodium-calcium exchanger 1 (NCX1), severely impairs normal cardiac function (Rottbauer et al., 2001; Shu et al., 2003; Ebert et al., 2005; Langenbacher et al., 2005), indicate an essential role for Ca2+ handling in the regulation of embryonic cardiac function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from cited findings on Ca2+ waves and Ca2+ regulatory proteins",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "8276bfc2-95b3-434f-b135-0fab681d00a1",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C90",
+      "claim": "The release and reuptake of Ca2+ by the sarcoplasmic reticulum (SR) constitutes the primary mechanism governing the contraction and relaxation of the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "The release and reuptake of Ca2+ by the sarcoplasmic reticulum (SR), the largest Ca2+ store in cardiomyocytes, constitutes the primary mechanism governing the contraction and relaxation of the heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "31e486c1-476a-4227-aae5-3c7067a894f1",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C91",
+      "claim": "The sarcoplasmic reticulum (SR) is the largest Ca2+ store in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The release and reuptake of Ca2+ by the sarcoplasmic reticulum (SR), the largest Ca2+ store in cardiomyocytes, constitutes the primary mechanism governing the contraction and relaxation of the heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "59f7a5cf-e986-4bb9-8d7a-e6be0be0ffba",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C92",
+      "claim": "Ca2+ influx after activation of the L-type Ca2+ channel in the plasma membrane induces the release of Ca2+ from the SR via ryanodine receptor (RyR) channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+ influx after activation of the L-type Ca2+ channel in the plasma membrane induces the release of Ca2+ from the SR via ryanodine receptor (RyR) channels, which leads to an increase of the intracellular Ca2+ concentration and cardiac contraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "fd151486-a44f-4b9d-9acc-285f02b998e4",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C93",
+      "claim": "Ca2+ release from the SR leads to an increase of the intracellular Ca2+ concentration and cardiac contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+ influx after activation of the L-type Ca2+ channel in the plasma membrane induces the release of Ca2+ from the SR via ryanodine receptor (RyR) channels, which leads to an increase of the intracellular Ca2+ concentration and cardiac contraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "cbc51e40-ee53-42d0-8510-ffffcd1955fc",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C94",
+      "claim": "During diastolic relaxation, Ca2+ is transferred back into the SR by the SR Ca2+ pump or extruded from the cell through NCX1.",
+      "claim_type": "EXPLICIT",
+      "source": "During diastolic relaxation, Ca2+ is transferred back into the SR by the SR Ca2+ pump or extruded from the cell through NCX1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "03495033-f2a2-4667-90f5-0f29bee6e90d",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C95",
+      "claim": "Defects in cardiac Ca2+ handling and Ca2+ overload are well known causes of contractile dysfunction and many types of arrhythmias.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in cardiac Ca2+ handling and Ca2+ overload, for example during cardiac ischemia/reperfusion or in long QT syndrome, are well known causes of contractile dysfunction and many types of arrhythmias including early and delayed afterdepolarizations and Torsade des pointes (Bers, 2002; Choi et al., 2002; Yano et al., 2008; Greiser et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bers, 2002; Choi et al., 2002; Yano et al., 2008; Greiser et al., 2011",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "500045b2-514e-492e-8cb3-4cd7a121c692",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C96",
+      "claim": "The voltage-dependent anion channel (VDAC) and the mitochondrial Ca2+ uniporter (MCU) serve as primary routes for Ca2+ entry through the outer and inner mitochondrial membranes, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+ crosstalk between mitochondria and ER/SR has been noted in many cell types and the voltage-dependent anion channel (VDAC) and the mitochondrial Ca2+ uniporter (MCU) serve as primary routes for Ca2+ entry through the outer and inner mitochondrial membranes, respectively (Rapizzi et al., 2002; Bathori et al., 2006; Shoshan-Barmatz et al., 2010; Baughman et al., 2011; De Stefani et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rapizzi et al., 2002; Bathori et al., 2006; Shoshan-Barmatz et al., 2010; Baughman et al., 2011; De Stefani et al., 2011",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "f9f8a2b2-d474-402f-b31b-34997a534461",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C97",
+      "claim": "Ca2+ crosstalk between mitochondria and ER/SR has been noted in many cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Ca2+ crosstalk between mitochondria and ER/SR has been noted in many cell types and the voltage-dependent anion channel (VDAC) and the mitochondrial Ca2+ uniporter (MCU) serve as primary routes for Ca2+ entry through the outer and inner mitochondrial membranes, respectively (Rapizzi et al., 2002; Bathori et al., 2006; Shoshan-Barmatz et al., 2010; Baughman et al., 2011; De Stefani et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rapizzi et al., 2002; Bathori et al., 2006; Shoshan-Barmatz et al., 2010; Baughman et al., 2011; De Stefani et al., 2011",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "1875b1e8-bc0b-4550-a0b3-3054f74601ec",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C98",
+      "claim": "In the heart, mitochondria are tethered to the SR and are located in close proximity to Ca2+ release sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In the heart, mitochondria are tethered to the SR and are located in close proximity to Ca2+ release sites (Garc\u00eda-P\u00e9rez et al., 2008; Boncompagni et al., 2009; Hayashi et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Garc\u00eda-P\u00e9rez et al., 2008; Boncompagni et al., 2009; Hayashi et al., 2009",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "849ccf97-0900-4772-bda9-3babfbbcc3ce",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C99",
+      "claim": "The subcellular architecture of mitochondria near Ca2+ release sites exposes the mitochondria to a high local Ca2+ concentration that is sufficient to overcome the low Ca2+ affinity of MCU and facilitates Ca2+ crosstalk between SR and mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "This subcellular architecture exposes the mitochondria near the Ca2+ release sites to a high local Ca2+ concentration that is sufficient to overcome the low Ca2+ affinity of MCU and facilitates Ca2+ crosstalk between SR and mitochondria (Garc\u00eda-P\u00e9rez et al., 2008; Dorn and Scorrano, 2010; Kohlhaas and Maack, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Garc\u00eda-P\u00e9rez et al., 2008; Dorn and Scorrano, 2010; Kohlhaas and Maack, 2013",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "dfbc3bc4-b609-4dda-9392-69643bb0aeab",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C100",
+      "claim": "Increase of the mitochondrial Ca2+ concentration enhances energy production during higher workload.",
+      "claim_type": "EXPLICIT",
+      "source": "Increase of the mitochondrial Ca2+ concentration enhances energy production during higher workload and dysregulation of SR-mitochondrial Ca2+ signaling results in energetic deficits and oxidative stress in the heart and may trigger programmed cell death (Brandes and Bers, 1997; Maack et al., 2006; Kohlhaas and Maack, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brandes and Bers, 1997; Maack et al., 2006; Kohlhaas and Maack, 2013",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "f8a8fb67-74ee-4e5e-a8ce-70938c625542",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C101",
+      "claim": "Dysregulation of SR-mitochondrial Ca2+ signaling results in energetic deficits and oxidative stress in the heart and may trigger programmed cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Increase of the mitochondrial Ca2+ concentration enhances energy production during higher workload and dysregulation of SR-mitochondrial Ca2+ signaling results in energetic deficits and oxidative stress in the heart and may trigger programmed cell death (Brandes and Bers, 1997; Maack et al., 2006; Kohlhaas and Maack, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brandes and Bers, 1997; Maack et al., 2006; Kohlhaas and Maack, 2013",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "e49f24c5-ab72-4c65-81d7-e73ec4e89476",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C102",
+      "claim": "Efsevin binds to VDAC2.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that efsevin binds to VDAC2, potentiates mitochondrial Ca2+ uptake and accelerates the transfer of Ca2+ from intracellular stores into mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "35c540fc-62fc-4c50-82c1-68be85be2ad9",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C103",
+      "claim": "Efsevin potentiates mitochondrial Ca2+ uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that efsevin binds to VDAC2, potentiates mitochondrial Ca2+ uptake and accelerates the transfer of Ca2+ from intracellular stores into mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "d9630a29-6bcd-4c9a-8a1c-13494ff039de",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C104",
+      "claim": "Efsevin accelerates the transfer of Ca2+ from intracellular stores into mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that efsevin binds to VDAC2, potentiates mitochondrial Ca2+ uptake and accelerates the transfer of Ca2+ from intracellular stores into mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "16c512fa-aba8-4785-86bc-e4e238babb55",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C105",
+      "claim": "In cardiomyocytes, efsevin restricts the temporal and spatial boundaries of Ca2+ sparks.",
+      "claim_type": "EXPLICIT",
+      "source": "In cardiomyocytes, efsevin restricts the temporal and spatial boundaries of Ca2+ sparks and thereby inhibits Ca2+ overload-induced erratic Ca2+ waves and irregular contractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "e6f3e5de-1551-4fe1-877c-f856ad266cc1",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C106",
+      "claim": "Efsevin inhibits Ca2+ overload-induced erratic Ca2+ waves and irregular contractions in cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In cardiomyocytes, efsevin restricts the temporal and spatial boundaries of Ca2+ sparks and thereby inhibits Ca2+ overload-induced erratic Ca2+ waves and irregular contractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "433841f9-64a8-4ae2-b1dc-fcb472d7deb5",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C107",
+      "claim": "Overexpression of VDAC2 recapitulates the suppressive effect of efsevin on tremblor embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that overexpression of VDAC2 recapitulates the suppressive effect of efsevin on tremblor embryos whereas VDAC2 deficiency attenuates efsevin's rescue effect and that VDAC2 functions synergistically with MCU to suppress cardiac fibrillation in tremblor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "a102f944-42f4-41f0-a83f-3ee37d54b805",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C108",
+      "claim": "VDAC2 deficiency attenuates efsevin's rescue effect on tremblor embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that overexpression of VDAC2 recapitulates the suppressive effect of efsevin on tremblor embryos whereas VDAC2 deficiency attenuates efsevin's rescue effect and that VDAC2 functions synergistically with MCU to suppress cardiac fibrillation in tremblor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "4522c924-ae2a-44fe-836d-bb3024d10dca",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "claim_id": "C109",
+      "claim": "VDAC2-dependent mitochondrial Ca2+ uptake plays a critical modulatory role in the regulation of cardiac rhythmicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings demonstrate a critical modulatory role for VDAC2-dependent mitochondrial Ca2+ uptake in the regulation of cardiac rhythmicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from all experimental findings in the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d322e314-e95b-4ada-b86e-c456b3fc3c59",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The tremblor (tre) zebrafish mutant exhibits Ca2+ extrusion defects and chaotic cardiac contractions resembling fibrillation due to loss of NCX1h function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C85, and C86 establish the tre mutant phenotype through citations to prior work (Ebert et al., 2005; Langenbacher et al., 2005). These claims provide the foundational disease model for the study and are well-supported by established literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "c841f69e-f126-4af7-9faa-5b11e0a570df",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Efsevin treatment restores coordinated cardiac contractions, rhythmic Ca2+ transients, and electrical activity in tre mutant zebrafish embryos in a dose-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C11 are supported by multiple experimental approaches including line-scan analysis (Figure 1A-E), fractional shortening measurements (Figure 1B-D), microelectrode array recordings (Figure 1F-H), and in vivo Ca2+ imaging (Figure 1I, Videos 1-7). The convergence of mechanical, electrical, and Ca2+ signaling data provides strong evidence for efsevin's rescue effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "25f0cb68-5b64-4bc3-990c-957a84fdf971",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Efsevin suppresses Ca2+ overload-induced irregular contractions in mouse and human embryonic stem cell-derived cardiomyocytes, suggesting conservation of the targeted mechanism across vertebrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C18 demonstrate efsevin's effects in mammalian systems through Ca2+ imaging and contraction analysis (Figure 2). The observation of similar effects in zebrafish, mouse, and human cardiomyocytes supports the inference of mechanism conservation (C18), though the specific molecular target was not yet identified in these experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "de8c1a59-0508-4645-8c05-6f9416dee60a",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Efsevin binds to VDAC2, identified through affinity pulldown and mass spectrometry analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C22, and C102 are supported by biochemical evidence including competitive binding experiments (Figure 3E) and mass spectrometry identification (Figure 3F, Figure 3\u2014figure supplement 1). The use of active and inactive compound derivatives strengthens the specificity of the interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "192de3ac-0d3b-4cbd-a2c7-0abd22fede1e",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "VDAC2 is the major mediator of efsevin's suppressive effect on cardiac fibrillation, demonstrated through gain-of-function and loss-of-function genetic experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C29 and C107-C108 are supported by multiple genetic approaches: VDAC2 mRNA injection (C24, Figure 4B), inducible transgenic overexpression (C25, Figure 4D), morpholino knockdown (C26, Figure 4E), and zinc finger nuclease knockout (C27-C28, Figure 4F). The bidirectional genetic evidence strongly supports VDAC2 as efsevin's target.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "45032c97-126b-4891-8908-c8d3660e35a0",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Efsevin and VDAC2 overexpression enhance mitochondrial Ca2+ uptake in permeabilized HeLa cells, with synergistic effects when combined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 and C103 are supported by Rhod2 Ca2+ imaging in permeabilized HeLa cells (Figure 5B). The use of ruthenium red controls confirms mitochondrial specificity. However, the experiments use permeabilized cells which may not fully reflect physiological conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "a6513f66-a7a5-4402-b24e-76db850d9d25",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Efsevin accelerates Ca2+ transfer from intracellular stores (ER/SR) to mitochondria through VDAC2 at ER-mitochondrial contact sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40, C67, and C104 are supported by experiments in V1/V3 double knockout MEFs using both permeabilized (Figure 5C) and intact cell preparations (Figure 5D-E, Figure 5\u2014figure supplement 1). The differential response to ATP versus thapsigargin (C37) supports local Ca2+ transfer. The use of VDAC1/3 knockout cells strengthens the specificity for VDAC2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "14799eec-f755-4cae-8dc0-c528a1ba1329",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Efsevin modulates Ca2+ spark kinetics in adult murine cardiomyocytes by accelerating decay without affecting amplitude, thereby spatially and temporally restricting Ca2+ signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C49, C68, and C105 are supported by confocal Ca2+ imaging of isolated adult cardiomyocytes (Figure 6A-B). The selective effect on decay kinetics without affecting amplitude or SR Ca2+ load (C42-C43, C45-C46) is consistent with a local buffering mechanism. Statistical analysis confirms significance for decay parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "2aea1f7a-71f3-4bd4-89c0-28c5a3216ec2",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Efsevin suppresses Ca2+ overload-induced propagating Ca2+ waves in cardiomyocytes in a dose-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 and C106 are supported by Ca2+ wave imaging under high extracellular Ca2+ conditions (Figure 6C-D). The dose-dependent suppression strengthens the conclusion. However, C52 (efsevin as a pharmacological tool) is speculative and represents a future application rather than a demonstrated result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "112cb8f2-6d98-443e-9cfd-d76acaa9bd55",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "VDAC2 functions synergistically with MCU and MICU1 (inner mitochondrial membrane Ca2+ uptake machinery) to suppress cardiac fibrillation, with loss of either component abrogating the rescue effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C63 and C69-C71 are supported by systematic genetic interaction experiments (Figure 7). The synergy experiments with suboptimal doses (C57-C59) and the reciprocal loss-of-function experiments (C60-C62) provide strong evidence for cooperative function. Similar results with MICU1 (C62) strengthen the conclusion about inner membrane machinery.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "070a26f1-cc7d-4e74-aa91-06a2d6c68779",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "VDAC2-dependent mitochondrial Ca2+ uptake plays a critical modulatory role in regulating cardiac rhythmicity across vertebrate species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66, C72-C73, and C109 represent summary conclusions supported by the collective experimental evidence from zebrafish, mouse, and human systems. The convergence of chemical, genetic, and physiological data across multiple model systems provides strong support for this overarching conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "6684eba8-44d7-4207-b1f9-3af2b4501ad8",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose a model where VDAC2 facilitates local Ca2+ clearance in microdomains near SR Ca2+ release sites through cooperation with MCU, controlling Ca2+ duration and diffusion to ensure rhythmic contractions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C77 represent a proposed mechanistic model. While C74 and C75 cite supporting literature, C76 and C77 are speculative interpretations of the data. The model is consistent with the experimental observations but lacks direct evidence for the proposed microdomain clearance mechanism. Spatial resolution experiments would be needed to definitively demonstrate local Ca2+ buffering at release sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "112d3693-861c-4e9f-9b32-4fc5447d8aac",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The proposed model is supported by literature showing that blocking mitochondrial Ca2+ uptake has minimal effects on global Ca2+ transients but extends Ca2+ sparks and increases spontaneous Ca2+ waves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 cite relevant literature (Maack et al., 2006; Kohlhaas et al., 2010; Subedi et al., 2011; Min et al., 2012; Drago et al., 2012; Seguchi et al., 2005) that supports the proposed model. These are appropriately presented as supporting evidence from prior work rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "b045b143-2bad-4411-8d80-33d4ce6874ef",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The success of the zebrafish chemical screen demonstrates conservation of cardiac regulatory mechanisms and suggests zebrafish models can be used for pathway dissection and therapeutic discovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 is established knowledge. Claims C83-C84 are supported by the successful translation of findings from zebrafish to mammalian systems. However, C84 is somewhat speculative regarding future applications. The conservation is demonstrated but the paradigm for therapeutic discovery remains to be fully validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    },
+    {
+      "id": "a057d9e8-6a27-4a6a-a43c-ef0f91f4417c",
+      "content_id": "0e1d705b-8c85-40d1-86cf-aaa4d645830c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background on cardiac Ca2+ handling mechanisms, SR-mitochondrial crosstalk, and the role of VDAC and MCU in mitochondrial Ca2+ uptake.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C101 represent established scientific knowledge supported by appropriate citations. These provide necessary background context for the study but do not constitute new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-28T22:18:31.432173Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d2c8ab52-6485-45c6-8880-3dd81963b0ee",
+      "result_id": "d322e314-e95b-4ada-b86e-c456b3fc3c59"
+    },
+    {
+      "claim_id": "02ed82f6-6a22-4c16-8c60-b4411f95ca46",
+      "result_id": "d322e314-e95b-4ada-b86e-c456b3fc3c59"
+    },
+    {
+      "claim_id": "5654d83c-93d8-463f-be14-fcbdd593c79e",
+      "result_id": "d322e314-e95b-4ada-b86e-c456b3fc3c59"
+    },
+    {
+      "claim_id": "9442b018-bfed-4eef-a676-3fd44dc1b612",
+      "result_id": "d322e314-e95b-4ada-b86e-c456b3fc3c59"
+    },
+    {
+      "claim_id": "842f9624-899a-4cf5-852d-6b7ea63ad80a",
+      "result_id": "c841f69e-f126-4af7-9faa-5b11e0a570df"
+    },
+    {
+      "claim_id": "edbf665e-51bc-49e3-aca4-1aeffca09c5e",
+      "result_id": "c841f69e-f126-4af7-9faa-5b11e0a570df"
+    },
+    {
+      "claim_id": "8193a118-5906-4dec-91ee-c5727a85c3dd",
+      "result_id": "c841f69e-f126-4af7-9faa-5b11e0a570df"
+    },
+    {
+      "claim_id": "68c6b86e-bbe2-450d-b157-ef98bf11d738",
+      "result_id": "c841f69e-f126-4af7-9faa-5b11e0a570df"
+    },
+    {
+      "claim_id": "dcb9f802-795f-4f2d-8600-0c3f9fc92252",
+      "result_id": "c841f69e-f126-4af7-9faa-5b11e0a570df"
+    },
+    {
+      "claim_id": "dac49092-a5c8-4a29-a55b-c76a7ebeda01",
+      "result_id": "c841f69e-f126-4af7-9faa-5b11e0a570df"
+    },
+    {
+      "claim_id": "74f637e3-dbab-4cc0-a44b-1a64762a2f0a",
+      "result_id": "c841f69e-f126-4af7-9faa-5b11e0a570df"
+    },
+    {
+      "claim_id": "320003df-a4dd-44d0-8b27-abb7cc06183b",
+      "result_id": "c841f69e-f126-4af7-9faa-5b11e0a570df"
+    },
+    {
+      "claim_id": "28af7690-18b9-4983-83db-7ed27c30b2c2",
+      "result_id": "c841f69e-f126-4af7-9faa-5b11e0a570df"
+    },
+    {
+      "claim_id": "3bba005c-0dd4-4bac-83c0-9f5c3370e09a",
+      "result_id": "25f0cb68-5b64-4bc3-990c-957a84fdf971"
+    },
+    {
+      "claim_id": "a685a75f-685a-4737-8d6c-6762bc3325d0",
+      "result_id": "25f0cb68-5b64-4bc3-990c-957a84fdf971"
+    },
+    {
+      "claim_id": "d03bc2b0-c447-417f-8d56-dfee950ce891",
+      "result_id": "25f0cb68-5b64-4bc3-990c-957a84fdf971"
+    },
+    {
+      "claim_id": "71358a0b-90d8-4c1a-bf79-6fca637775c4",
+      "result_id": "25f0cb68-5b64-4bc3-990c-957a84fdf971"
+    },
+    {
+      "claim_id": "208bb1e4-e6ca-419b-97ee-cfeb1debc883",
+      "result_id": "25f0cb68-5b64-4bc3-990c-957a84fdf971"
+    },
+    {
+      "claim_id": "4582a59d-1bd9-41de-985f-41f820221a6b",
+      "result_id": "25f0cb68-5b64-4bc3-990c-957a84fdf971"
+    },
+    {
+      "claim_id": "a2ac0a87-5652-4638-b7b3-61aa831f7102",
+      "result_id": "25f0cb68-5b64-4bc3-990c-957a84fdf971"
+    },
+    {
+      "claim_id": "1a13721d-b020-40d7-b68c-ffc2175876b6",
+      "result_id": "de8c1a59-0508-4645-8c05-6f9416dee60a"
+    },
+    {
+      "claim_id": "a7be7452-de7e-4b88-8013-a3b0d1f47829",
+      "result_id": "de8c1a59-0508-4645-8c05-6f9416dee60a"
+    },
+    {
+      "claim_id": "e49f24c5-ab72-4c65-81d7-e73ec4e89476",
+      "result_id": "de8c1a59-0508-4645-8c05-6f9416dee60a"
+    },
+    {
+      "claim_id": "99695db4-3672-41f5-9edf-f6092186331e",
+      "result_id": "192de3ac-0d3b-4cbd-a2c7-0abd22fede1e"
+    },
+    {
+      "claim_id": "1f573eb0-b59b-48fe-ad2d-4c0441f44c1d",
+      "result_id": "192de3ac-0d3b-4cbd-a2c7-0abd22fede1e"
+    },
+    {
+      "claim_id": "229f38f0-2b57-4314-be5d-c8d8614174ab",
+      "result_id": "192de3ac-0d3b-4cbd-a2c7-0abd22fede1e"
+    },
+    {
+      "claim_id": "29c97308-2bcc-4f4d-872f-fb7e8fdf22cb",
+      "result_id": "192de3ac-0d3b-4cbd-a2c7-0abd22fede1e"
+    },
+    {
+      "claim_id": "d816b111-edd2-4ac3-8591-8a9ff1fa5f82",
+      "result_id": "192de3ac-0d3b-4cbd-a2c7-0abd22fede1e"
+    },
+    {
+      "claim_id": "abec3521-79d0-41ae-b505-85a12a27c231",
+      "result_id": "192de3ac-0d3b-4cbd-a2c7-0abd22fede1e"
+    },
+    {
+      "claim_id": "12e65f5d-833d-47d9-b426-24255995feb7",
+      "result_id": "192de3ac-0d3b-4cbd-a2c7-0abd22fede1e"
+    },
+    {
+      "claim_id": "433841f9-64a8-4ae2-b1dc-fcb472d7deb5",
+      "result_id": "192de3ac-0d3b-4cbd-a2c7-0abd22fede1e"
+    },
+    {
+      "claim_id": "a102f944-42f4-41f0-a83f-3ee37d54b805",
+      "result_id": "192de3ac-0d3b-4cbd-a2c7-0abd22fede1e"
+    },
+    {
+      "claim_id": "d229314a-5c12-47c1-9837-c1645f46459f",
+      "result_id": "45032c97-126b-4891-8908-c8d3660e35a0"
+    },
+    {
+      "claim_id": "ce2ea5eb-2621-4089-8882-2ed7879492f3",
+      "result_id": "45032c97-126b-4891-8908-c8d3660e35a0"
+    },
+    {
+      "claim_id": "d48dc9e7-662d-4d29-a260-128733deebdd",
+      "result_id": "45032c97-126b-4891-8908-c8d3660e35a0"
+    },
+    {
+      "claim_id": "4dfe08c6-6b65-49f1-b0ae-bcf5d896ce4c",
+      "result_id": "45032c97-126b-4891-8908-c8d3660e35a0"
+    },
+    {
+      "claim_id": "d9b7da12-6f8a-44c3-8ac6-773560efd420",
+      "result_id": "45032c97-126b-4891-8908-c8d3660e35a0"
+    },
+    {
+      "claim_id": "35c540fc-62fc-4c50-82c1-68be85be2ad9",
+      "result_id": "45032c97-126b-4891-8908-c8d3660e35a0"
+    },
+    {
+      "claim_id": "82ac76c5-65ea-4664-a4ab-aa799e3fcba8",
+      "result_id": "a6513f66-a7a5-4402-b24e-76db850d9d25"
+    },
+    {
+      "claim_id": "eeb3ac0e-09a1-45c3-921f-9e3b016e3d1b",
+      "result_id": "a6513f66-a7a5-4402-b24e-76db850d9d25"
+    },
+    {
+      "claim_id": "5161b3e2-87ae-46e3-8e4b-e8769e78c447",
+      "result_id": "a6513f66-a7a5-4402-b24e-76db850d9d25"
+    },
+    {
+      "claim_id": "c4aadc90-495f-4745-bb24-4603fb5a9f8a",
+      "result_id": "a6513f66-a7a5-4402-b24e-76db850d9d25"
+    },
+    {
+      "claim_id": "5681a0bb-9554-421d-991c-3449c3ad0635",
+      "result_id": "a6513f66-a7a5-4402-b24e-76db850d9d25"
+    },
+    {
+      "claim_id": "ab871af3-ad48-43f9-aae2-40b7c4acead8",
+      "result_id": "a6513f66-a7a5-4402-b24e-76db850d9d25"
+    },
+    {
+      "claim_id": "a92f9ded-3439-4af1-b13a-4818eb0153e4",
+      "result_id": "a6513f66-a7a5-4402-b24e-76db850d9d25"
+    },
+    {
+      "claim_id": "d9630a29-6bcd-4c9a-8a1c-13494ff039de",
+      "result_id": "a6513f66-a7a5-4402-b24e-76db850d9d25"
+    },
+    {
+      "claim_id": "9e54f09f-0021-4f25-ae81-7da581b2ee25",
+      "result_id": "14799eec-f755-4cae-8dc0-c528a1ba1329"
+    },
+    {
+      "claim_id": "9aeb2eb8-43e0-4af3-8f0d-c2b93964ff41",
+      "result_id": "14799eec-f755-4cae-8dc0-c528a1ba1329"
+    },
+    {
+      "claim_id": "99dcee94-80eb-49b9-a096-558f514583b3",
+      "result_id": "14799eec-f755-4cae-8dc0-c528a1ba1329"
+    },
+    {
+      "claim_id": "fad39e98-a7ec-44a2-91b9-4b631f07cc3c",
+      "result_id": "14799eec-f755-4cae-8dc0-c528a1ba1329"
+    },
+    {
+      "claim_id": "8cb7f1c6-83ec-4257-aa8b-df42215c03c3",
+      "result_id": "14799eec-f755-4cae-8dc0-c528a1ba1329"
+    },
+    {
+      "claim_id": "d8350959-5aa4-480c-b14f-f3702fdadc85",
+      "result_id": "14799eec-f755-4cae-8dc0-c528a1ba1329"
+    },
+    {
+      "claim_id": "5f8aee20-e489-4b33-ae29-bf2396c8aafa",
+      "result_id": "14799eec-f755-4cae-8dc0-c528a1ba1329"
+    },
+    {
+      "claim_id": "ae2ddbb9-9c47-404e-876f-d5da017f7691",
+      "result_id": "14799eec-f755-4cae-8dc0-c528a1ba1329"
+    },
+    {
+      "claim_id": "470a6cd1-c55d-4518-83a0-f07b4a2e0549",
+      "result_id": "14799eec-f755-4cae-8dc0-c528a1ba1329"
+    },
+    {
+      "claim_id": "b0caae9d-9c90-435e-84af-874edc41c544",
+      "result_id": "14799eec-f755-4cae-8dc0-c528a1ba1329"
+    },
+    {
+      "claim_id": "16c512fa-aba8-4785-86bc-e4e238babb55",
+      "result_id": "14799eec-f755-4cae-8dc0-c528a1ba1329"
+    },
+    {
+      "claim_id": "492b6fef-b6fb-48bc-a52c-1618b9547642",
+      "result_id": "2aea1f7a-71f3-4bd4-89c0-28c5a3216ec2"
+    },
+    {
+      "claim_id": "9c477fdc-e734-4a22-91fd-f6122405a595",
+      "result_id": "2aea1f7a-71f3-4bd4-89c0-28c5a3216ec2"
+    },
+    {
+      "claim_id": "e9fe96f8-a57e-4a36-bb67-829cf9418275",
+      "result_id": "2aea1f7a-71f3-4bd4-89c0-28c5a3216ec2"
+    },
+    {
+      "claim_id": "e6f3e5de-1551-4fe1-877c-f856ad266cc1",
+      "result_id": "2aea1f7a-71f3-4bd4-89c0-28c5a3216ec2"
+    },
+    {
+      "claim_id": "00f346ba-a6f1-4526-bc50-f05dbb6d1cb4",
+      "result_id": "112cb8f2-6d98-443e-9cfd-d76acaa9bd55"
+    },
+    {
+      "claim_id": "4783307d-ec6e-4267-a14c-784fc0c1a913",
+      "result_id": "112cb8f2-6d98-443e-9cfd-d76acaa9bd55"
+    },
+    {
+      "claim_id": "f2033742-02dd-4506-9ea5-ee15f78b1b82",
+      "result_id": "112cb8f2-6d98-443e-9cfd-d76acaa9bd55"
+    },
+    {
+      "claim_id": "6727d45b-5634-4126-aa79-8e9fc462432c",
+      "result_id": "112cb8f2-6d98-443e-9cfd-d76acaa9bd55"
+    },
+    {
+      "claim_id": "7639ee5d-7e59-459c-88ff-56f305387da9",
+      "result_id": "112cb8f2-6d98-443e-9cfd-d76acaa9bd55"
+    },
+    {
+      "claim_id": "e501b32a-9bc7-4bdf-aa70-e7448b6b388a",
+      "result_id": "112cb8f2-6d98-443e-9cfd-d76acaa9bd55"
+    },
+    {
+      "claim_id": "1168f052-9fec-443b-b95e-2218dccea2cd",
+      "result_id": "112cb8f2-6d98-443e-9cfd-d76acaa9bd55"
+    },
+    {
+      "claim_id": "c8584940-6588-420b-8c6a-14fae8b0a6da",
+      "result_id": "112cb8f2-6d98-443e-9cfd-d76acaa9bd55"
+    },
+    {
+      "claim_id": "2e486a58-b7cd-4745-8e30-4763a9c1a1d7",
+      "result_id": "112cb8f2-6d98-443e-9cfd-d76acaa9bd55"
+    },
+    {
+      "claim_id": "183f9708-65aa-4275-b62c-f2fbc49d0cd2",
+      "result_id": "112cb8f2-6d98-443e-9cfd-d76acaa9bd55"
+    },
+    {
+      "claim_id": "dce8145b-61d4-45ae-8593-b77183b5fff4",
+      "result_id": "112cb8f2-6d98-443e-9cfd-d76acaa9bd55"
+    },
+    {
+      "claim_id": "ab1566dd-2f2a-4e07-b6fa-b9a4bcba31ba",
+      "result_id": "112cb8f2-6d98-443e-9cfd-d76acaa9bd55"
+    },
+    {
+      "claim_id": "265dfa18-a23c-45fa-b370-98e5e20cb491",
+      "result_id": "112cb8f2-6d98-443e-9cfd-d76acaa9bd55"
+    },
+    {
+      "claim_id": "9e05a905-b954-43cc-8812-045c063a99bc",
+      "result_id": "112cb8f2-6d98-443e-9cfd-d76acaa9bd55"
+    },
+    {
+      "claim_id": "ec1fde9c-960b-492b-a41e-b9c1de04ed4e",
+      "result_id": "070a26f1-cc7d-4e74-aa91-06a2d6c68779"
+    },
+    {
+      "claim_id": "eb7f7b10-900b-42c7-a9cb-f6e4c02a1c5f",
+      "result_id": "070a26f1-cc7d-4e74-aa91-06a2d6c68779"
+    },
+    {
+      "claim_id": "5cd64091-57f8-4150-a7cb-27ad76f18676",
+      "result_id": "070a26f1-cc7d-4e74-aa91-06a2d6c68779"
+    },
+    {
+      "claim_id": "0341c767-685c-4709-a75a-7805074c9756",
+      "result_id": "070a26f1-cc7d-4e74-aa91-06a2d6c68779"
+    },
+    {
+      "claim_id": "a8b1fc2e-216e-4916-96ef-e4af22a4b9d4",
+      "result_id": "070a26f1-cc7d-4e74-aa91-06a2d6c68779"
+    },
+    {
+      "claim_id": "4522c924-ae2a-44fe-836d-bb3024d10dca",
+      "result_id": "070a26f1-cc7d-4e74-aa91-06a2d6c68779"
+    },
+    {
+      "claim_id": "5d88920c-9260-4384-a742-e5a454ab0d10",
+      "result_id": "6684eba8-44d7-4207-b1f9-3af2b4501ad8"
+    },
+    {
+      "claim_id": "85dbd0b2-9290-48b9-addc-f334337142ed",
+      "result_id": "6684eba8-44d7-4207-b1f9-3af2b4501ad8"
+    },
+    {
+      "claim_id": "79f63fdb-fe76-45bb-acf5-a36c3ab9d5d2",
+      "result_id": "6684eba8-44d7-4207-b1f9-3af2b4501ad8"
+    },
+    {
+      "claim_id": "11017830-1217-4cd1-8b88-5ca18dcfd862",
+      "result_id": "6684eba8-44d7-4207-b1f9-3af2b4501ad8"
+    },
+    {
+      "claim_id": "fad40c6a-47c1-4204-bdbc-326589205ffc",
+      "result_id": "112d3693-861c-4e9f-9b32-4fc5447d8aac"
+    },
+    {
+      "claim_id": "ae95db7e-fbc4-415c-9f29-be65ddbdca0a",
+      "result_id": "112d3693-861c-4e9f-9b32-4fc5447d8aac"
+    },
+    {
+      "claim_id": "0385f7e8-d26c-4ccf-ae36-9d2acf118128",
+      "result_id": "112d3693-861c-4e9f-9b32-4fc5447d8aac"
+    },
+    {
+      "claim_id": "91c71ce5-5ce5-45c1-a6be-3dff61c2c010",
+      "result_id": "112d3693-861c-4e9f-9b32-4fc5447d8aac"
+    },
+    {
+      "claim_id": "1bae6703-e747-4671-a3a6-2632dd86936e",
+      "result_id": "b045b143-2bad-4411-8d80-33d4ce6874ef"
+    },
+    {
+      "claim_id": "1b54bcb1-fdcf-40bc-8ca6-84360fd3e648",
+      "result_id": "b045b143-2bad-4411-8d80-33d4ce6874ef"
+    },
+    {
+      "claim_id": "b1b6e6c6-a099-40f2-8ce0-64db26b30c1f",
+      "result_id": "b045b143-2bad-4411-8d80-33d4ce6874ef"
+    },
+    {
+      "claim_id": "b7cefe5e-1d2a-4f1b-a360-a73eb1c97720",
+      "result_id": "a057d9e8-6a27-4a6a-a43c-ef0f91f4417c"
+    },
+    {
+      "claim_id": "9904eeb3-2def-4fba-a7fb-20b0c71c73e2",
+      "result_id": "a057d9e8-6a27-4a6a-a43c-ef0f91f4417c"
+    },
+    {
+      "claim_id": "d94fb619-c00d-435b-b5c1-6c5dbc296822",
+      "result_id": "a057d9e8-6a27-4a6a-a43c-ef0f91f4417c"
+    },
+    {
+      "claim_id": "8276bfc2-95b3-434f-b135-0fab681d00a1",
+      "result_id": "a057d9e8-6a27-4a6a-a43c-ef0f91f4417c"
+    },
+    {
+      "claim_id": "31e486c1-476a-4227-aae5-3c7067a894f1",
+      "result_id": "a057d9e8-6a27-4a6a-a43c-ef0f91f4417c"
+    },
+    {
+      "claim_id": "59f7a5cf-e986-4bb9-8d7a-e6be0be0ffba",
+      "result_id": "a057d9e8-6a27-4a6a-a43c-ef0f91f4417c"
+    },
+    {
+      "claim_id": "fd151486-a44f-4b9d-9acc-285f02b998e4",
+      "result_id": "a057d9e8-6a27-4a6a-a43c-ef0f91f4417c"
+    },
+    {
+      "claim_id": "cbc51e40-ee53-42d0-8510-ffffcd1955fc",
+      "result_id": "a057d9e8-6a27-4a6a-a43c-ef0f91f4417c"
+    },
+    {
+      "claim_id": "03495033-f2a2-4667-90f5-0f29bee6e90d",
+      "result_id": "a057d9e8-6a27-4a6a-a43c-ef0f91f4417c"
+    },
+    {
+      "claim_id": "500045b2-514e-492e-8cb3-4cd7a121c692",
+      "result_id": "a057d9e8-6a27-4a6a-a43c-ef0f91f4417c"
+    },
+    {
+      "claim_id": "f9f8a2b2-d474-402f-b31b-34997a534461",
+      "result_id": "a057d9e8-6a27-4a6a-a43c-ef0f91f4417c"
+    },
+    {
+      "claim_id": "1875b1e8-bc0b-4550-a0b3-3054f74601ec",
+      "result_id": "a057d9e8-6a27-4a6a-a43c-ef0f91f4417c"
+    },
+    {
+      "claim_id": "849ccf97-0900-4772-bda9-3babfbbcc3ce",
+      "result_id": "a057d9e8-6a27-4a6a-a43c-ef0f91f4417c"
+    },
+    {
+      "claim_id": "dfbc3bc4-b609-4dda-9392-69643bb0aeab",
+      "result_id": "a057d9e8-6a27-4a6a-a43c-ef0f91f4417c"
+    },
+    {
+      "claim_id": "f8a8fb67-74ee-4e5e-a8ce-70938c625542",
+      "result_id": "a057d9e8-6a27-4a6a-a43c-ef0f91f4417c"
+    }
+  ],
+  "comparisons": []
+}

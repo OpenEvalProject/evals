@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C73",
+      "C74"
+    ],
+    "result": "Brp-Short localizes to endogenous active zones and serves as a valid reporter for quantifying synapses in genetically defined neurons. The construct requires endogenous Brp for proper synaptic localization, with 90.1% of immuno-EM gold particles colocalizing with synaptic densities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent validation approaches (colocalization with DSyd-1 in C9, RNAi dependence on endogenous Brp in C73, and immuno-EM quantification in C74) converge to support that Brp-Short accurately reports endogenous active zones. The 90.1% colocalization rate provides strong quantitative validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C66"
+    ],
+    "result": "ORNs maintain a constant synaptic density of 0.56 puncta per \u03bcm\u00b3 across five different classes (DA1, VA1d, VA1lm, DL4, DM6), despite differences in absolute synapse number that scales with axon volume. This suggests an organizational mechanism controlling synaptic density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C11 are directly supported by quantitative measurements across multiple ORN classes (Figure 1H-I). The inference in C66 about an organizational mechanism is reasonable given the remarkable consistency of density across diverse ORN types, though the specific mechanism remains to be identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Individual ORNs within a class contribute nearly identical numbers of active zones to their glomerulus. MARCM analysis reveals discrete, periodic peaks in synapse distribution that fit Gaussian relationships, with DL4 ORNs contributing ~19 active zones and DM6 ORNs contributing ~29 active zones per neuron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analysis using sum of Gaussians fits (C14) and direct single-cell measurements (C15, C16) provide converging evidence. The low probability (<0.00048 for DL4, <0.05 for DM6) of observing such evenly spaced peaks by chance strengthens the conclusion. The constant density across clone sizes (C17) further supports stereotyped contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The three major neuron classes in the DA1 glomerulus have distinct synaptic architectures. ORNs contribute 1632\u00b122 puncta with 17% clustering, PNs contribute 1182\u00b124 puncta with 7.9% clustering, and LNs contribute 528\u00b154 puncta with 15% clustering. The sum (3342\u00b199) accounts for most synapses compared to endogenous Brp (3849\u00b180).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Quantitative measurements (C18-C21) and nearest neighbor distance analysis (C22-C24) provide detailed characterization of spatial organization. The close agreement between the sum of labeled populations and endogenous Brp (C21) validates the approach, with the ~13% difference reasonably attributed to unlabeled neuron types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Presynaptic Ten-a is required for normal ORN synapse number and density. Loss of ten-a reduces Brp-Short puncta by 23% without affecting axon volume, and this phenotype is rescued by presynaptic Ten-a expression but not by ten-m knockdown in ORNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple genetic manipulations converge: null mutant phenotype (C27), unchanged volume (C28), presynaptic rescue (C30), RNAi phenocopy (C31), and specificity for ten-a over ten-m (C32). The consistency across approaches and the genetic rescue provide strong support for presynaptic Ten-a function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C85",
+      "C87"
+    ],
+    "result": "Ultrastructural analysis confirms that ten-a mutants have 27% fewer T-bars by EM, consistent with the 23% reduction measured by Brp-Short. Additionally, 56% of remaining T-bars display structural defects including misshapen, multiple, or detached T-bars.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Independent validation by EM (C33) closely matches confocal quantification (C85), supporting the validity of both methods (C87). The structural defects (C34) provide additional mechanistic insight beyond simple number changes. The consistency between methods strengthens confidence in both approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Ten-a regulates ORN synapse number via the spectrin cytoskeleton. Spectrin immunofluorescence is reduced in ten-a mutants, RNAi knockdown of \u03b1- or \u03b2-spectrin reduces Brp-Short puncta by 17-18%, and the ten-a phenotype is not enhanced by concurrent \u03b1-spectrin RNAi, indicating they function in the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evidence forms a coherent mechanistic pathway: reduced spectrin in ten-a mutants (C35), phenocopy by spectrin RNAi (C36, C37), and lack of genetic enhancement (C38) indicating epistasis. The convergence of protein level changes, functional phenotypes, and genetic interaction supports the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "D\u03b17-GFP labels postsynaptic acetylcholine receptor clusters that are apposed to endogenous Brp. The number of AChR puncta scales with glomerular size and shows sex-specific differences in DA1. Unlike ORNs, PN AChR density differs between glomeruli (DA1 vs VA1d).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Apposition to endogenous Brp (C39) validates D\u03b17-GFP as a postsynaptic marker. The scaling relationship (C40) and sex differences (C41) parallel ORN findings, supporting biological validity. The variable density between glomeruli (C42) represents a genuine difference from ORN organization, suggesting distinct regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Postsynaptic Ten-m in PNs is required for normal acetylcholine receptor cluster number. Ten-a mutants and ten-m RNAi in PNs both show 23% reduction in D\u03b17-GFP puncta without affecting PN neurite volume, and these manipulations do not enhance each other, indicating they function in the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The parallel phenotypes of ten-a mutation and ten-m PN RNAi (C43, C45), unchanged volume (C44), and lack of genetic enhancement (C46) provide strong evidence for postsynaptic Ten-m function. The magnitude of effect matches the presynaptic phenotype, supporting a coordinated transsynaptic mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C47",
+      "C80",
+      "C81"
+    ],
+    "result": "Ten-m acts transsynaptically to regulate presynaptic ORN active zone number. Postsynaptic ten-m knockdown in PNs reduces presynaptic Brp-Short puncta in ORNs by 20%, demonstrating that the presynaptic Ten-a/postsynaptic Ten-m interaction regulating NMJ synapses is conserved in olfactory synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dual binary expression system experiment (C47) directly demonstrates transsynaptic signaling by showing that postsynaptic manipulation affects presynaptic structures. The similar magnitude of effects across different manipulations (C80) and conservation from NMJ (C81) strengthen the conclusion of a transsynaptic mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C41"
+    ],
+    "result": "Sex-specific differences in synapse number exist for DA1 and VA1lm glomeruli in both ORNs and PNs, coinciding with known sex-specific differences in glomerular volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both presynaptic (C12) and postsynaptic (C41) measurements show sex differences in DA1, with citation to previous anatomical studies (Stockinger et al., 2005) providing independent validation. The consistency across pre- and postsynaptic measures strengthens the finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The constant synaptic density of ORNs and equal contributions from individual neurons suggest that ORNs convey information faithfully without weighting, while variable PN AChR density may contribute to transformation of olfactory representation downstream.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are interpretive claims (C67-C70) that extend beyond the direct data. While the observations of constant ORN density and variable PN density are well-supported, the functional interpretations about information processing require physiological validation. The citations to computational and physiological studies provide some support but don't directly test these specific hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C88",
+      "C89"
+    ],
+    "result": "Ten-a may be required for synapse maturation in the CNS, as T-bar structural defects in ten-a mutants resemble immature synapses. Some defects (continuous electron-dense material) were not previously observed at NMJs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of structural defects is well-documented (C34), and similarity to NMJ defects is supported by citation (C88). However, the interpretation as a maturation defect (C71) is speculative, based on resemblance to immature synapses from other studies. The novel defect type (C89) is interesting but requires further characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "There are differences in how Teneurins function between CNS and PNS synapses. At the NMJ, Teneurin perturbations reduce active zone and bouton numbers without altering density, while in ORNs, density is reduced because neurite volume is unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between CNS (C84, with data in C28, C29) and NMJ (C83, unpublished observations) reveals a genuine difference in phenotypic outcome. The lack of ten-m presynaptic role in CNS (C82, C32) versus minor role at NMJ further supports system-specific differences. However, the NMJ data being unpublished is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C13",
+      "C65"
+    ],
+    "result": "One Brp punctum is equivalent to one active zone based on visual system studies, and the majority of synapses labeled by Brp-Short and D\u03b17-GFP are ORN to PN synapses based on less than twofold difference in counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The 1:1 correspondence (C13) relies on a single citation from a different brain region (visual system), which may not fully generalize to the antennal lobe. The inference about ORN-PN synapses (C65) is reasonable but indirect. The EM validation in this study (C74, C85) provides some support, but complete validation would require full EM reconstruction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The discrepancy between labeled synapses (3342\u00b199) and endogenous Brp (3849\u00b180) may be due to additional unlabeled neuron types or slight underestimation by Brp-Short. The larger number of D\u03b17-GFP puncta compared to ORN Brp-Short may reflect overestimation or labeling of receptors postsynaptic to LNs and PN-PN synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are reasonable interpretations of quantitative discrepancies, supported by citations to studies of additional neuron types (C75) and synaptic connectivity (C78, C79). However, they remain speculative without direct experimental validation. The ~13% difference for Brp-Short is relatively small and could have multiple explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Target choice and synapse organization can be biologically separable processes, as ORNs can be mistargeted but still form the correct number of synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This inference is supported by the observation that partner matching defects (glomerular morphology changes) can occur independently of synapse number defects in certain genetic conditions (e.g., C28, C30). The rescue experiments showing that late Ten-a expression rescues synapse number but not targeting provide direct evidence for separability.",
+    "result_type": "MINOR"
+  }
+]

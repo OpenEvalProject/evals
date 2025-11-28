@@ -1,0 +1,442 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Fam20C phosphorylates enamel matrix proteins AMELX, AMTN, and ENAM (173-277) in vitro at specific SxE motifs (S191 and S216 in ENAM), while the inactive D478A mutant does not. Mutation of both S191 and S216 completely abolishes phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 and C47-C50 are supported by in vitro kinase assays shown in Figure 1A-B with appropriate controls (inactive mutant and site-directed mutagenesis). The data demonstrate time-dependent phosphorylation and site specificity through loss-of-function mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Fam20C is the kinase responsible for phosphorylating enamel matrix proteins in vivo, as demonstrated by complete elimination of AMBN phosphorylation in Fam20C-KO ameloblast-like cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by metabolic labeling experiments in CRISPR/Cas9-generated Fam20C-KO cells (Figure 1C). The complete loss of phosphorylation in knockout cells provides strong evidence for Fam20C as the physiological kinase, though the inference assumes no compensatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C56",
+      "C68"
+    ],
+    "result": "Fam20A lacks intrinsic kinase activity and cannot phosphorylate protein or carbohydrate substrates or hydrolyze ATP, indicating it is not an intrinsically active kinase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C56, and C68 are supported by in vitro kinase assays (Figure 1A) and ATPase assays (Figure 2A) showing no activity. Multiple substrates were tested, providing comprehensive negative evidence. The conclusion that Fam20A is catalytically inactive is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Fam20C exhibits intrinsic ATPase activity and ATP binding increases its thermal stability. Fam20A also shows increased thermal stability in the presence of ATP, suggesting ATP binding despite lacking hydrolytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by ATPase assays (Figure 2A) and thermal stability shift assays (Figure 2B). The inference that Fam20A binds ATP based on thermal stability is reasonable but indirect. Direct binding measurements would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Fam20A lacks a critical catalytic glutamate (E306 in Fam20C, replaced by Q258 in Fam20A) that is essential for Fam20C activity. The reciprocal mutations (Fam20C E306Q and Fam20A Q258E) demonstrate this residue's importance for catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 are supported by sequence alignment (Figure 2C), structural analysis (Figure 2D), and mutagenesis experiments (Figures 2E-F, Figure 2\u2014figure supplement 2). The reciprocal mutations provide strong evidence for the specific role of this residue in catalysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C77"
+    ],
+    "result": "Fam20A deficiency dramatically reduces phosphorylation of AMBN and OPN in ameloblast-like cells, which can be rescued by reintroducing Fam20A. However, Fam20C is absolutely required, as phosphorylation is eliminated in Fam20C-KO cells regardless of Fam20A presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 and C77 are supported by metabolic labeling experiments in CRISPR/Cas9-generated knockout and rescue cell lines (Figures 3A-C). The genetic epistasis experiments clearly demonstrate that Fam20A enhances Fam20C-dependent phosphorylation but cannot function without Fam20C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C75",
+      "C76"
+    ],
+    "result": "Ectopic expression of Fam20A in U2OS cells (which produce Fam20C but not Fam20A) significantly increases phosphorylation of OPN, ENAM, and AMBN without altering Fam20C expression levels. No phosphorylation occurs in Fam20C-KO U2OS cells even with Fam20A overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C75-C76 are supported by metabolic labeling experiments in U2OS cells (Figures 3D-F). The experiments include appropriate controls (Fam20C-KO cells) and demonstrate that Fam20A enhances phosphorylation without changing Fam20C levels, supporting an activation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "In vitro, the combination of Fam20A and Fam20C greatly increases phosphorylation of enamel matrix proteins (ENAM, AMTN, SUMO-AMBN-N). This effect is specific to Fam20C substrates, as Fam20B does not enhance Fam20C activity and Fam20A/C do not affect Fam20B activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by in vitro kinase assays (Figures 4A-C) with appropriate specificity controls using Fam20B. The data demonstrate that Fam20A specifically enhances Fam20C activity toward its substrates without cross-reactivity with other family members.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "In the presence of Fam20A, Fam20C phosphorylation remains specific to SxE motifs, as the ENAM S191A/S216L double mutant is not phosphorylated despite containing 21 additional Ser/Thr/Tyr residues. Fam20C kinase activity is indispensable for this phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by mutagenesis experiments (Figure 4D and Figure 4\u2014figure supplement 1) showing that Fam20A enhances but does not alter the substrate specificity of Fam20C. The use of kinase-dead Fam20C mutants confirms the requirement for Fam20C catalytic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Pre-incubation experiments demonstrate that the enhancement of substrate phosphorylation by Fam20A does not require Fam20C-dependent phosphorylation of Fam20A, as pre-incubation at 30\u00b0C versus ice or with ATP versus AMP-PCP does not affect subsequent ENAM phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are supported by pre-incubation experiments (Figure 4E) with appropriate controls. The experimental design effectively tests whether Fam20A phosphorylation by Fam20C is required for activation, and the negative results support a phosphorylation-independent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Fam20A increases Fam20C kinase activity in a catalytically independent manner, as demonstrated by the ability of catalytically inactive Fam20A mutants (D430A) to enhance Fam20C activity, while the catalytically active Fam20A Q258E is less potent than wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 are supported by rescue experiments in cells (Figure 4F) and in vitro assays (Figures 4G, Figure 4\u2014figure supplement 2-3). The data from multiple mutants consistently demonstrate that Fam20A's catalytic activity is not required for, and may even impair, its ability to enhance Fam20C activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Fam20A and Fam20C form a specific complex in vitro and in cells, as demonstrated by co-elution during gel filtration in nearly equal amounts (1:1 molar ratio) and co-immunoprecipitation. This interaction is specific, as Fam20B does not interact with Fam20C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 are supported by gel filtration analysis (Figures 5A-B) and co-immunoprecipitation experiments (Figure 5C) with appropriate specificity controls using Fam20B. The multiple independent methods provide strong evidence for a specific Fam20A-Fam20C interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Fam20C forms homodimers based on gel filtration elution profile, while Fam20A exists as both monomers and dimers. Fam20A homodimerization is confirmed by co-immunoprecipitation of differentially tagged Fam20A proteins in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 are supported by gel filtration analysis (Figure 5A) and co-immunoprecipitation (Figure 5D). The gel filtration data show heterogeneity for Fam20A, and the co-IP confirms homodimerization in cells. However, the stoichiometry and functional significance of Fam20A homodimers remain unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Analytical ultracentrifugation reveals the Fam20A/Fam20C complex has a molecular mass of 245 kDa, consistent with a heterotetrameric structure composed of two Fam20A and two Fam20C subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 are supported by analytical ultracentrifugation data (Figure 5E). The measured molecular mass is consistent with a 2:2 heterotetramer given the known sizes of Fam20A and Fam20C. This provides strong biophysical evidence for the complex stoichiometry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "In the presence of excess Fam20A, the kcat of Fam20C for ENAM increases 19-fold (from 0.04 to 0.76 s\u207b\u00b9) and the Km decreases ~2.5-fold (from 14.6 to 5.6 \u03bcM), demonstrating that the Fam20A/Fam20C complex catalyzes substrate phosphorylation much more efficiently than Fam20C alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by steady-state kinetic analysis (Figure 5F) using ENAM S191A as substrate. The kinetic parameters were determined under conditions of maximal complex formation (Figure 5\u2014figure supplement 1). The dramatic increase in catalytic efficiency provides strong quantitative evidence for Fam20A's activating role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Both Fam20A and Fam20C localize to the Golgi and are secreted at comparable levels when expressed in mammalian cells. Co-expression with Fam20A does not cause redistribution of Fam20C to intracellular compartments, suggesting Fam20A does not function as a retention mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 are supported by immunoprecipitation from cell lysate and conditioned medium (Figure 5G) and prior work (citation). The data show that complex formation does not alter the subcellular distribution or secretion of Fam20C, ruling out a retention-based mechanism of regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Fam20A and Fam20C mRNAs are dramatically and coordinately upregulated in lactating mammary gland compared to virgin animals, with virtually identical relative increases. Both proteins are detected only in lactating mammary glands. Expression patterns are consistent throughout pregnancy and lactation, with Fam20A peaking just before and Fam20C just after birth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C123 are supported by qRT-PCR analysis (Figures 6A-B) and western blotting (Figure 6C) from multiple animals at different stages. The coordinated expression provides strong correlative evidence that Fam20A and Fam20C function together in the mammary gland, though causality is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Fam20A and Fam20C form a functional complex in the Golgi/ER-enriched fraction of lactating mammary gland, as demonstrated by co-immunoprecipitation of endogenous proteins from tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 are supported by co-immunoprecipitation from fractionated mammary gland tissue (Figure 6D) with appropriate IgG controls. This provides critical in vivo evidence that the Fam20A/Fam20C complex forms in a physiologically relevant tissue, extending the cell culture findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Wild-type Fam20A, but not AI mutants (L173R, G331D, D403N), increases OPN phosphorylation in Fam20A-KO cells. These mutants are poorly secreted when expressed in ameloblast cells, consistent with structural predictions that they interfere with proper Fam20A folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 are supported by metabolic labeling (Figure 7A) and secretion assays (Figure 7B) with multiple AI mutants. The poor secretion is consistent with prior structural modeling (citation). However, it remains unclear whether loss of function is due to misfolding, impaired secretion, or loss of specific functional residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Most Fam20C mutants from Raine syndrome patients cannot efficiently phosphorylate OPN when expressed in U2OS cells. However, co-expression of Fam20A enhances activity of nearly all mutants (except T268M), suggesting Fam20A promotes both Fam20C kinase activity and stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C134 are supported by mobility shift assays (Figure 7C) testing multiple Raine syndrome mutants. The ability of Fam20A to rescue activity of predicted misfolding mutants suggests a chaperone-like function. However, the mechanism (kinetic enhancement vs. protein stabilization) cannot be definitively distinguished from these experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C135"
+    ],
+    "result": "Recapitulating the stabilizing effect of Fam20A by pharmacological means may be of therapeutic benefit to patients harboring Fam20C mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C135 is speculative and not directly tested. While the data show Fam20A can enhance activity of some Fam20C mutants in cell culture, there is no evidence regarding pharmacological approaches, in vivo efficacy, or clinical relevance. This represents a potential future direction rather than a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The authors propose a model where Fam20A functions as a pseudokinase that allosterically activates Fam20C in a complex, dramatically increasing kcat to achieve high stoichiometry phosphorylation of secreted proteins. Loss-of-function mutations in Fam20A result in inefficient phosphorylation of enamel matrix proteins, preventing proper enamel formation and causing amelogenesis imperfecta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 represent the central model supported by the collective experimental evidence: Fam20A lacks catalytic activity (C53-C68), forms a complex with Fam20C (C95-C107), enhances Fam20C activity in a catalytically-independent manner (C87-C94), increases kcat 19-fold (C108-C110), and is required for efficient substrate phosphorylation in cells (C69-C77). The model is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The degree of phosphorylation required for proper enamel formation is unknown, but patients with hypomorphic Fam20C mutations (T268M, P328S) survive infancy yet develop dental defects, indicating optimal Fam20C activity is critical for enamel formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 are supported by citations to clinical studies. The observation that hypomorphic mutations cause dental defects while lethal mutations cause Raine syndrome provides evidence for a dose-dependent requirement. However, the specific threshold of phosphorylation required remains undefined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Fam20C is ubiquitously expressed while Fam20A expression is restricted to dental tissues, lactating mammary gland, parathyroid gland, and kidney. Fam20A deficiency does not cause complete loss of Fam20C-dependent phosphorylation, consistent with patients harboring Fam20A mutations displaying mild, localized biomineralization phenotypes compared to severe Fam20C mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C146 are supported by citations to expression studies and the cellular data showing reduced but not absent phosphorylation in Fam20A-KO cells (C69-C70). The tissue-specific expression pattern and partial loss of function explain the localized phenotypes in Fam20A-deficient patients versus the systemic effects of Fam20C deficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The discovery of the Fam20A-Fam20C pair extends the concept of pseudokinase-kinase regulation to the secretory pathway. Approximately 10% of the human kinome encodes pseudokinases that can regulate active kinases through dimerization, as exemplified by STRAD-LKB1, HER3-EGFR, and inactive BRAF-RAF complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C153 are supported by citations to prior work on pseudokinases and the experimental data demonstrating Fam20A is a pseudokinase that activates Fam20C. The conceptual contribution is valid: this work extends a known regulatory paradigm to a new cellular compartment (secretory pathway) and biological process (extracellular phosphorylation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C154"
+    ],
+    "result": "Fam20A binds ATP, which may stabilize a conformational state required for its allosteric function, similar to other pseudokinases like STRAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C154 is supported by thermal stability shift data (Figure 2B) showing ATP-dependent stabilization of Fam20A, and by analogy to the STRAD-LKB1 system (citation). However, the evidence for ATP binding is indirect (thermal shift rather than direct binding measurement), and the functional importance of ATP binding for Fam20A's allosteric function is inferred rather than directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The architecture of the Fam20A/Fam20C complex and the detailed mechanism of allosteric activation are currently unclear. A crystal structure of the complex would be of paramount importance, and understanding the mechanism may lead to methods to allosterically boost Fam20C activity with therapeutic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C155-C158 acknowledge limitations and propose future directions. These are not results but rather statements about what is unknown and what future work is needed. The therapeutic speculation (C157) is not supported by any data in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Because Fam20A expression is tissue-specific, it is unlikely to function as a global regulator of Fam20C, suggesting additional regulatory mechanisms exist. The dramatic increase in Fam20A and Fam20C mRNA in lactating mammary gland suggests transcriptional regulation, possibly involving pregnancy-related hormones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C162 are supported by the expression data (C143-C144) and qRT-PCR results (C116-C123). The inference that additional regulatory mechanisms exist is logical given Fam20C's ubiquitous expression. However, the speculation about hormonal regulation (C163) is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The authors propose a working model where Fam20A/Fam20C complex formation in co-expressing cells leads to high substrate phosphorylation levels, particularly important when large amounts of substrates need phosphorylation (teeth development, milk production). Fam20A deficiency results in reduced Fam20C activity and basal phosphorylation levels, causing phenotypes like enamel defects when basal phosphorylation is insufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C167 represent the integrated working model supported by all experimental findings: complex formation (C95-C107), kinetic enhancement (C108-C110), tissue-specific co-expression (C116-C126), and phenotypic consequences of Fam20A deficiency (C127-C129, C138-C139). The model is well-supported and provides a coherent explanation for the biological and clinical observations.",
+    "result_type": "MAJOR"
+  }
+]
